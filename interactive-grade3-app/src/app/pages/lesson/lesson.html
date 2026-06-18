@@ -1,0 +1,366 @@
+<main class="page-frame" *ngIf="lesson && module; else lessonMissing" [ngStyle]="moduleThemeVars()">
+  <section class="lesson-header">
+    <div>
+      <a class="crumb" [routerLink]="['/ruchika-grade3', 'modules', module.id]">Module {{ module.number }}</a>
+      <span class="eyebrow">Lesson {{ lesson.lessonNumber }}</span>
+      <h1>{{ lesson.title }}</h1>
+      <p class="lead">{{ lesson.studentGoal }}</p>
+      <div class="lesson-meta">
+        <span>{{ topicTitle }}</span>
+        <span>{{ estimatedFlow }}</span>
+        <span *ngFor="let model of lesson.visualModels">{{ model }}</span>
+        <span *ngFor="let term of lesson.vocabulary">{{ term }}</span>
+      </div>
+    </div>
+    <details class="source-card">
+      <summary>Teacher source</summary>
+      <strong>Teacher-edition objective</strong>
+      <span>{{ lesson.objective }}</span>
+      <small *ngFor="let source of lesson.sourceRefs">
+        {{ source.sourceType }} · PDF pages {{ source.pageStart }}-{{ source.pageEnd }}
+      </small>
+    </details>
+  </section>
+
+  <section class="lesson-layout">
+    <aside class="step-rail" aria-label="Lesson steps">
+      <div class="progress-card">
+        <strong>Progress</strong>
+        <span>{{ progressText }}</span>
+      </div>
+      <button
+        *ngFor="let step of lesson.steps; let index = index"
+        class="step-button"
+        [class.is-active]="index === activeStepIndex"
+        (click)="chooseStep(index)">
+        <span>{{ index + 1 }}</span>
+        {{ step.shortTitle }}
+      </button>
+      <button class="quiet-button reset-button" (click)="resetLesson()">Reset</button>
+    </aside>
+
+    <section class="workspace" *ngIf="activeStep">
+      <div class="step-copy">
+        <span class="eyebrow">{{ activeStep.shortTitle }}</span>
+        <h2>{{ activeStep.title }}</h2>
+        <p>{{ activeStep.studentPrompt }}</p>
+      </div>
+
+      <div [ngSwitch]="activeStep.id">
+        <div *ngSwitchCase="'lesson-focus'" class="activity-grid">
+          <app-equal-groups-model
+            [groupCount]="3"
+            [groupSize]="4"
+            itemLabel="object"
+            [showAddition]="false"
+            [showUnitForm]="false"
+            [showMultiplication]="false" />
+          <div class="activity-card">
+            <h3>Lesson target</h3>
+            <p>
+              The teacher edition starts this lesson by building the meaning of multiplication from equal groups.
+              The symbols come after the picture and words make sense.
+            </p>
+            <div class="bridge-table compact-table" aria-label="Lesson flow">
+              <div class="bridge-row">
+                <strong>First</strong>
+                <span>See equal groups</span>
+              </div>
+              <div class="bridge-row">
+                <strong>Then</strong>
+                <span>Write repeated addition</span>
+              </div>
+              <div class="bridge-row">
+                <strong>Then</strong>
+                <span>Write multiplication</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'skip-count'" class="activity-grid">
+          <app-equal-groups-model
+            [groupCount]="10"
+            [groupSize]="2"
+            itemLabel="arm"
+            [showAddition]="false"
+            [showUnitForm]="false"
+            [showMultiplication]="false" />
+          <div class="activity-card">
+            <h3>Notice</h3>
+            <p>Instead of counting every arm by ones, count by the group size: 2, 4, 6, 8, ...</p>
+            <div class="count-strip" aria-label="Skip count by twos to twenty">
+              <span *ngFor="let value of [2,4,6,8,10,12,14,16,18,20]">{{ value }}</span>
+            </div>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'count-total'" class="activity-grid">
+          <app-equal-groups-model
+            [groupCount]="10"
+            [groupSize]="2"
+            itemLabel="arm"
+            [showAddition]="true"
+            [showUnitForm]="true"
+            [showMultiplication]="false" />
+          <div class="activity-card">
+            <h3>Quick check</h3>
+            <p>Ten equal groups of 2 land on what total?</p>
+            <div class="answer-row">
+              <span class="equation-chip">10 twos = 20</span>
+              <span class="equation-chip">10 groups of two is 20</span>
+            </div>
+            <p class="muted">The lesson uses this to show that group counting tracks the total.</p>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'make-groups'" class="activity-grid">
+          <app-equal-groups-model
+            [groupCount]="groupCount"
+            [groupSize]="groupSize"
+            [showAddition]="false"
+            [showUnitForm]="false"
+            [showMultiplication]="false" />
+          <div class="activity-card">
+            <h3>Quick check</h3>
+            <p>The model uses 12 counters arranged into equal groups of 2. How many groups are there?</p>
+            <div class="answer-row">
+              <input class="answer-input" type="number" [(ngModel)]="groupCountAnswer" aria-label="Number of groups" />
+              <button class="button" (click)="checkGroupCount()">Check</button>
+            </div>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'name-groups'" class="activity-grid">
+          <app-equal-groups-model
+            [groupCount]="groupCount"
+            [groupSize]="groupSize"
+            [showAddition]="false"
+            [showUnitForm]="false"
+            [showMultiplication]="false" />
+          <div class="activity-card">
+            <h3>Say it before writing symbols</h3>
+            <div class="bridge-table compact-table">
+              <div class="bridge-row">
+                <strong>Groups</strong>
+                <span>6 equal groups</span>
+              </div>
+              <div class="bridge-row">
+                <strong>Size</strong>
+                <span>2 counters in each group</span>
+              </div>
+              <div class="bridge-row">
+                <strong>Total</strong>
+                <span>12 counters altogether</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'write-addition'" class="activity-grid">
+          <app-equal-groups-model
+            [groupCount]="groupCount"
+            [groupSize]="groupSize"
+            [showAddition]="true"
+            [showUnitForm]="false"
+            [showMultiplication]="false" />
+          <div class="activity-card">
+            <h3>Write repeated addition</h3>
+            <p>Write the repeated addition sentence for 6 equal groups of 2.</p>
+            <input
+              class="long-input"
+              [(ngModel)]="repeatedBlank"
+              placeholder="2 + 2 + 2 + 2 + 2 + 2 = 12"
+              aria-label="Repeated addition sentence" />
+            <button class="button" (click)="checkRepeatedAddition()">Check</button>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'unit-form'" class="activity-grid">
+          <app-equal-groups-model
+            [groupCount]="groupCount"
+            [groupSize]="groupSize"
+            [showAddition]="true"
+            [showUnitForm]="true"
+            [showMultiplication]="false" />
+          <div class="activity-card">
+            <h3>Unit form</h3>
+            <p>Unit form names the repeated unit.</p>
+            <div class="large-equation">6 twos = 12</div>
+            <p class="muted">This sits between repeated addition and multiplication in the teacher edition.</p>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'multiplication-symbol'" class="activity-grid">
+          <div class="bridge-table" aria-label="Representation bridge">
+            <div class="bridge-row">
+              <strong>Picture</strong>
+              <span>6 equal groups with 2 counters in each group</span>
+            </div>
+            <div class="bridge-row">
+              <strong>Addition</strong>
+              <span>2 + 2 + 2 + 2 + 2 + 2 = 12</span>
+            </div>
+            <div class="bridge-row">
+              <strong>Unit form</strong>
+              <span>6 twos = 12</span>
+            </div>
+            <div class="bridge-row">
+              <strong>Multiplication</strong>
+              <span>6 x 2 = 12</span>
+            </div>
+          </div>
+          <div class="activity-card">
+            <h3>Choose the matching sentence</h3>
+            <select class="answer-select" [(ngModel)]="multiplicationChoice" aria-label="Multiplication sentence">
+              <option value="">Choose</option>
+              <option value="2x6">2 x 6 = 12</option>
+              <option value="6x2">6 x 2 = 12</option>
+              <option value="6plus2">6 + 2 = 8</option>
+            </select>
+            <button class="button" (click)="checkMultiplication()">Check</button>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'equal-example'" class="activity-grid">
+          <app-equal-groups-model [groupCount]="2" [groupSize]="4" />
+          <div class="activity-card">
+            <h3>Equal groups can be multiplied</h3>
+            <div class="bridge-table compact-table">
+              <div class="bridge-row">
+                <strong>Addition</strong>
+                <span>4 + 4 = 8</span>
+              </div>
+              <div class="bridge-row">
+                <strong>Multiplication</strong>
+                <span>2 x 4 = 8</span>
+              </div>
+            </div>
+            <p class="muted">There are 2 groups, and each group has 4.</p>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'unequal-check'" class="activity-grid">
+          <app-equal-groups-model [groupCount]="3" [groupSize]="4" [lastGroupSize]="3" />
+          <div class="activity-card">
+            <h3>Does this show 3 x 4?</h3>
+            <p>Look carefully at every group before multiplying.</p>
+            <select class="answer-select" [(ngModel)]="equalCheckChoice" aria-label="Equal groups choice">
+              <option value="">Choose</option>
+              <option value="equal">Yes, it shows 3 x 4</option>
+              <option value="not-equal">No, the groups are not equal</option>
+            </select>
+            <button class="button" (click)="checkEqualGroups()">Check</button>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'exit-addition'" class="activity-grid">
+          <app-equal-groups-model [groupCount]="4" [groupSize]="2" itemLabel="slice" />
+          <div class="activity-card">
+            <h3>Exit check</h3>
+            <p>Fill in the blanks for 4 groups of 2.</p>
+            <div class="exit-equation">
+              2 +
+              <input [(ngModel)]="exitAdditionA" aria-label="Second addend" />
+              +
+              <input [(ngModel)]="exitAdditionB" aria-label="Third addend" />
+              +
+              <input [(ngModel)]="exitAdditionC" aria-label="Fourth addend" />
+              =
+              <input [(ngModel)]="exitProduct" aria-label="Total" />
+            </div>
+            <div class="exit-equation">
+              4 x
+              <input [(ngModel)]="exitFactor" aria-label="Group size factor" />
+              =
+              8
+            </div>
+            <button class="button" (click)="checkExit()">Check</button>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'lesson-summary'" class="activity-grid">
+          <div class="bridge-table" aria-label="Lesson summary">
+            <div class="bridge-row">
+              <strong>Ask first</strong>
+              <span>Are all groups equal?</span>
+            </div>
+            <div class="bridge-row">
+              <strong>Then ask</strong>
+              <span>How many groups?</span>
+            </div>
+            <div class="bridge-row">
+              <strong>Then ask</strong>
+              <span>How many in each group?</span>
+            </div>
+            <div class="bridge-row">
+              <strong>Then write</strong>
+              <span>Repeated addition and multiplication</span>
+            </div>
+          </div>
+          <div class="activity-card">
+            <h3>Main takeaway</h3>
+            <p>{{ lesson.summary.takeaway }}</p>
+            <p class="muted">{{ lesson.summary.check }}</p>
+          </div>
+        </div>
+
+        <div *ngSwitchDefault class="activity-card">
+          <div class="generic-lesson-panel">
+            <div class="generic-visual" [attr.data-model]="activeStep.visualModel">
+              <span class="generic-dot" *ngFor="let item of [1,2,3,4,5,6,7,8,9]"></span>
+            </div>
+            <div>
+              <h3>{{ activeStep.title }}</h3>
+              <p>{{ activeStep.studentPrompt }}</p>
+              <div class="bridge-table compact-table">
+                <div class="bridge-row">
+                  <strong>Objective</strong>
+                  <span>{{ lesson.objective }}</span>
+                </div>
+                <div class="bridge-row">
+                  <strong>Model</strong>
+                  <span>{{ activeStep.visualModel }}</span>
+                </div>
+                <div class="bridge-row">
+                  <strong>Source</strong>
+                  <span>{{ activeStep.teacherEditionBasis }}</span>
+                </div>
+              </div>
+              <button class="button generic-check" (click)="completeGenericStep()">I can explain this step</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        *ngIf="feedback"
+        class="state-card feedback"
+        [ngClass]="feedback.status === 'correct' ? 'correct' : 'needs-work'"
+        role="status">
+        <strong>{{ feedback.title }}</strong>
+        <span>{{ feedback.body }}</span>
+      </div>
+
+      <div class="lesson-actions">
+        <button class="secondary-button" (click)="previousStep()" [disabled]="activeStepIndex === 0">Previous</button>
+        <button class="button" (click)="nextStep()" [disabled]="activeStepIndex === lesson.steps.length - 1">Next</button>
+      </div>
+
+      <section class="source-note">
+        <strong>Source basis</strong>
+        <p>{{ activeStep.teacherEditionBasis }}</p>
+      </section>
+    </section>
+  </section>
+</main>
+
+<ng-template #lessonMissing>
+  <main class="page-frame">
+    <section class="section-panel">
+      <h1>Lesson route unavailable</h1>
+      <p class="muted">This route could not be matched to the source-backed Grade 3 lesson map.</p>
+      <a class="secondary-button" routerLink="/ruchika-grade3">Return home</a>
+    </section>
+  </main>
+</ng-template>

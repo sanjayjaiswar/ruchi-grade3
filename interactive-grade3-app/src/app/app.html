@@ -1,0 +1,89 @@
+<div class="app-shell" [class.drawer-is-collapsed]="drawerCollapsed">
+  <header class="topbar">
+    <div class="topbar-left">
+      <button
+        class="drawer-toggle"
+        type="button"
+        (click)="toggleDrawer()"
+        [attr.aria-expanded]="!drawerCollapsed"
+        aria-label="Toggle curriculum drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="brand" routerLink="/ruchika-grade3" aria-label="Grade 3 Math home">
+        <span class="brand-mark">3</span>
+        <span>
+          <strong>Grade 3 Math</strong>
+          <small>Eureka-aligned interactive lessons</small>
+        </span>
+      </a>
+    </div>
+
+    <div class="topbar-status">
+      <span>Modules 1-7</span>
+      <strong>152 lessons</strong>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    <aside class="curriculum-drawer" aria-label="Curriculum navigation">
+      <div class="drawer-header">
+        <a class="drawer-home" routerLink="/ruchika-grade3" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">
+          <span class="brand-mark">3</span>
+          <span class="drawer-label">
+            <strong>Home</strong>
+            <small>Year path</small>
+          </span>
+        </a>
+      </div>
+
+      <nav class="drawer-nav" aria-label="Modules and lessons">
+        <section
+          class="module-nav-group"
+          *ngFor="let module of modules"
+          [ngStyle]="moduleThemeVars(module.id)"
+          [class.is-open]="isModuleExpanded(module.id)"
+          [class.is-active]="activeModuleId === module.id">
+          <div class="module-nav-row">
+            <button
+              class="module-expand"
+              type="button"
+              (click)="toggleModule(module.id)"
+              [attr.aria-expanded]="isModuleExpanded(module.id)"
+              [attr.aria-label]="'Toggle Module ' + module.number + ' lessons'">
+              {{ isModuleExpanded(module.id) ? '-' : '+' }}
+            </button>
+            <a
+              class="module-link"
+              [routerLink]="['/ruchika-grade3', 'modules', module.id]"
+              routerLinkActive="is-active">
+              <span class="module-badge">M{{ module.number }}</span>
+              <span class="drawer-label">
+                <strong>{{ module.title }}</strong>
+                <small>{{ moduleLabel(module.id) }} · {{ module.topics.length }} topics</small>
+              </span>
+            </a>
+          </div>
+
+          <div class="lesson-nav-list" *ngIf="isModuleExpanded(module.id)">
+            <ng-container *ngFor="let topic of module.topics">
+              <div class="topic-label">{{ topic.label }}</div>
+              <a
+                class="lesson-link"
+                *ngFor="let lessonId of topic.lessonIds"
+                [class.is-current]="activeLessonId === lessonId"
+                [routerLink]="['/ruchika-grade3', 'modules', module.id, 'lessons', lessonNumber(lessonId)]">
+                {{ lessonLabel(module.id, lessonId) }}
+              </a>
+            </ng-container>
+          </div>
+        </section>
+      </nav>
+    </aside>
+
+    <main class="app-content">
+      <router-outlet />
+    </main>
+  </div>
+</div>

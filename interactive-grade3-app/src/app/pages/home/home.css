@@ -1,0 +1,104 @@
+.flow-board {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(150px, 1fr));
+  gap: 12px;
+  align-items: stretch;
+}
+
+.flow-node {
+  position: relative;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  min-height: 154px;
+  padding: 14px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 28%, var(--color-border) 72%);
+  border-radius: 14px;
+  background: linear-gradient(180deg, var(--module-accent-soft), #ffffff 76%);
+  color: var(--color-text);
+  text-decoration: none;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.flow-node:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--module-accent) 54%, var(--color-border) 46%);
+  box-shadow: var(--shadow-soft);
+}
+
+.flow-node.is-ready {
+  box-shadow: inset 0 4px 0 var(--module-accent);
+}
+
+.flow-node span {
+  color: var(--module-accent-strong);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.flow-node strong {
+  font-size: 14px;
+  line-height: 1.22;
+}
+
+.flow-node small {
+  color: #31415a;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.flow-node b {
+  position: absolute;
+  right: -13px;
+  top: 50%;
+  z-index: 1;
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: var(--module-accent);
+  color: #ffffff;
+  transform: translateY(-50%);
+}
+
+.module-card {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  border-color: color-mix(in srgb, var(--module-accent) 25%, var(--color-border) 75%);
+  box-shadow: inset 0 4px 0 var(--module-accent), var(--shadow-soft);
+}
+
+.module-card p {
+  color: var(--color-text-secondary);
+}
+
+.module-number {
+  color: var(--module-accent-strong);
+  font-size: 12px;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.module-card .secondary-button {
+  justify-self: start;
+  margin-top: 4px;
+}
+
+@media (max-width: 1280px) {
+  .flow-board {
+    grid-template-columns: repeat(4, minmax(160px, 1fr));
+  }
+
+  .flow-node b {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .flow-board {
+    grid-template-columns: 1fr;
+  }
+}

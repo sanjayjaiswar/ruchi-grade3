@@ -1,0 +1,59 @@
+<main class="page-frame">
+  <section class="hero-band">
+    <div>
+      <span class="eyebrow">Grade 3 interactive curriculum</span>
+      <h1>Grade 3 Eureka Math, taught visually one lesson at a time.</h1>
+      <p class="lead">
+        Start with the teacher-edition objective, build the idea visually, try lesson-aligned checks, and get
+        feedback that points back to the model.
+      </p>
+    </div>
+    <a class="button" routerLink="/ruchika-grade3/modules/m1">Start Module 1</a>
+  </section>
+
+  <section class="section-panel">
+    <div class="section-heading">
+      <div>
+        <h2 class="section-title">Curriculum Flow</h2>
+        <p class="muted">Use the module path as a visual map. Each node opens a source-backed module page.</p>
+      </div>
+    </div>
+
+    <div class="flow-board" aria-label="Grade 3 module sequence">
+      <a
+        class="flow-node"
+        *ngFor="let module of modules; let last = last"
+        [ngStyle]="moduleThemeVars(module.id)"
+        [routerLink]="['/ruchika-grade3', 'modules', module.id]"
+        [class.is-ready]="true">
+        <span>Module {{ module.number }}</span>
+        <strong>{{ module.title }}</strong>
+        <small>{{ module.visualModels.join(' · ') }}</small>
+        <b *ngIf="!last" aria-hidden="true">→</b>
+      </a>
+    </div>
+  </section>
+
+  <section class="section-panel">
+    <div class="section-heading">
+      <div>
+        <h2 class="section-title">Year Path</h2>
+        <p class="muted">The modules are visible here, but the learning flow stays focused on one module at a time.</p>
+      </div>
+    </div>
+
+    <div class="grid three">
+      <article class="card module-card" *ngFor="let module of modules" [ngStyle]="moduleThemeVars(module.id)">
+        <span class="module-number">Module {{ module.number }}</span>
+        <h3>{{ module.title }}</h3>
+        <p>{{ module.summary }}</p>
+        <div class="chip-row">
+          <span class="chip" *ngFor="let model of module.visualModels">{{ model }}</span>
+        </div>
+        <a class="secondary-button" [routerLink]="['/ruchika-grade3', 'modules', module.id]">
+          Open module
+        </a>
+      </article>
+    </div>
+  </section>
+</main>

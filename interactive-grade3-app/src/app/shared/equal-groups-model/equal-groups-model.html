@@ -1,0 +1,23 @@
+<figure class="groups-model" [class.compact]="compact">
+  <div class="groups-row" [attr.aria-label]="isEqual ? multiplicationSentence : 'Unequal groups model'">
+    <div class="group" *ngFor="let size of groups; let groupIndex = index">
+      <div class="dots">
+        <span
+          class="dot"
+          *ngFor="let item of items(size)"
+          [attr.aria-label]="itemLabel + ' ' + (item + 1)">
+        </span>
+      </div>
+      <span class="group-label" *ngIf="showLabels">Group {{ groupIndex + 1 }}: {{ size }}</span>
+    </div>
+  </div>
+
+  <figcaption class="model-caption">
+    <span [class.ok]="isEqual" [class.warn]="!isEqual">
+      {{ isEqual ? 'Equal groups' : 'Not equal groups' }}
+    </span>
+    <span *ngIf="showAddition">{{ repeatedAddition }}</span>
+    <span *ngIf="showUnitForm">{{ unitForm }}</span>
+    <span *ngIf="showMultiplication">{{ multiplicationSentence }}</span>
+  </figcaption>
+</figure>

@@ -1,0 +1,88 @@
+<main class="page-frame" *ngIf="module; else missingModule" [ngStyle]="moduleThemeVars(module.id)">
+  <section class="hero-band">
+    <div>
+      <span class="eyebrow">Module {{ module.number }}</span>
+      <h1>{{ module.title }}</h1>
+      <p class="lead">{{ module.summary }}</p>
+    </div>
+    <a class="button" [routerLink]="['/ruchika-grade3', 'modules', module.id, 'lessons', 1]">Open Lesson 1</a>
+  </section>
+
+  <section class="section-panel">
+    <div class="section-heading">
+      <div>
+        <h2 class="section-title">Module Snapshot</h2>
+        <p class="muted">A source-backed map of the module before opening individual lessons.</p>
+      </div>
+    </div>
+    <div class="snapshot-grid">
+      <article class="snapshot-card">
+        <strong>{{ module.topics.length }}</strong>
+        <span>topics</span>
+      </article>
+      <article class="snapshot-card">
+        <strong>{{ lessonCount() }}</strong>
+        <span>lessons</span>
+      </article>
+      <article class="snapshot-card wide">
+        <strong>Assessment</strong>
+        <span>{{ assessmentCheckpoint() }}</span>
+      </article>
+    </div>
+    <div class="chip-row model-row">
+      <span class="chip" *ngFor="let model of module.visualModels">{{ model }}</span>
+    </div>
+  </section>
+
+  <section class="section-panel" *ngIf="module.topics.length; else laterModule">
+    <div class="section-heading">
+      <div>
+        <h2 class="section-title">Topics And Lessons</h2>
+        <p class="muted">Each lesson opens as a separate source-backed flow. Module 1 Lesson 1 includes the deepest worked interaction.</p>
+      </div>
+    </div>
+
+    <div class="topic-stack">
+      <div class="concept-map" aria-label="Topic sequence">
+        <span *ngFor="let topic of module.topics; let last = last">
+          {{ topic.label }}
+          <b *ngIf="!last">→</b>
+        </span>
+      </div>
+      <article class="topic-card" *ngFor="let topic of module.topics">
+        <div class="topic-heading">
+          <div>
+            <span class="eyebrow">{{ topic.label }}</span>
+            <h3>{{ topic.title }}</h3>
+          </div>
+          <span class="days">{{ topic.days }} days</span>
+        </div>
+        <div class="lesson-list">
+          <a
+            *ngFor="let lessonId of topic.lessonIds"
+            [class.ready]="true"
+            [routerLink]="['/ruchika-grade3', 'modules', module.id, 'lessons', lessonNumber(lessonId)]">
+            <strong>{{ lessonLabel(lessonId) }}</strong>
+            <span>{{ lessonObjective(lessonId) }}</span>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<ng-template #laterModule>
+  <section class="section-panel">
+    <h2 class="section-title">Lesson map unavailable</h2>
+    <p class="muted">This route does not have a matching source-backed topic map.</p>
+  </section>
+</ng-template>
+
+<ng-template #missingModule>
+  <main class="page-frame">
+    <section class="section-panel">
+      <h1>Module not found</h1>
+      <a class="secondary-button" routerLink="/ruchika-grade3">Return home</a>
+    </section>
+  </main>
+</ng-template>

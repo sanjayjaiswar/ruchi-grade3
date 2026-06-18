@@ -1,0 +1,18 @@
+# Local runtime and generated artifacts
+tmp/
+**/tmp/
+logs/
+**/logs/
+*.log
+*.pid
+
+# Angular and Node generated artifacts
+interactive-grade3-app/node_modules/
+interactive-grade3-app/dist/
+interactive-grade3-app/.angular/
+interactive-grade3-app/coverage/
+interactive-grade3-app/out-tsc/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
