@@ -62,6 +62,8 @@ For each lesson:
 8. Record source references.
 9. Validate authored content against rendered pages.
 
+No lesson may be marked authored from the module overview table alone. The overview table is sufficient for route metadata and objective labels only.
+
 ## 5. Content Transformation Rules
 
 ### Allowed
@@ -97,6 +99,8 @@ Each lesson should be authored with this structure:
 10. Feedback rules
 11. Summary
 ```
+
+The required operating standard for this template is defined in `lesson-authoring-playbook.md`. If the playbook and this document differ, follow the stricter rule.
 
 ## 7. Source Reference Format
 
@@ -283,4 +287,3 @@ Before marking a lesson source-aligned:
 - Feedback addresses likely misconceptions from the lesson.
 - Source references are recorded.
 - No unsupported external strategy is introduced.
-

@@ -5,7 +5,6 @@
 
 .app-shell {
   --drawer-width: 350px;
-  --drawer-rail-width: 78px;
   min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
@@ -124,22 +123,26 @@
 .app-layout {
   display: grid;
   grid-template-columns: var(--drawer-width) minmax(0, 1fr);
+  align-items: start;
   min-height: calc(100vh - 64px);
   max-width: 100%;
   overflow-x: hidden;
 }
 
 .drawer-is-collapsed .app-layout {
-  grid-template-columns: var(--drawer-rail-width) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.drawer-is-collapsed .curriculum-drawer {
+  display: none;
 }
 
 .curriculum-drawer {
-  position: sticky;
-  top: 64px;
+  position: relative;
   z-index: 15;
   align-self: start;
-  height: calc(100vh - 64px);
-  overflow: hidden;
+  min-height: calc(100vh - 64px);
+  overflow: visible;
   max-width: 100%;
   border-right: 1px solid var(--color-border);
   background: rgba(255, 252, 246, 0.96);
@@ -183,9 +186,8 @@
 .drawer-nav {
   display: grid;
   gap: 10px;
-  height: calc(100vh - 137px);
-  overflow-y: auto;
-  overflow-x: hidden;
+  align-content: start;
+  overflow: visible;
   padding: 10px;
 }
 
@@ -294,43 +296,6 @@
   overflow-x: hidden;
 }
 
-.drawer-is-collapsed .brand > span:not(.brand-mark),
-.drawer-is-collapsed .topbar-status,
-.drawer-is-collapsed .drawer-label,
-.drawer-is-collapsed .module-expand,
-.drawer-is-collapsed .lesson-nav-list {
-  display: none;
-}
-
-.drawer-is-collapsed .topbar {
-  justify-content: flex-start;
-}
-
-.drawer-is-collapsed .drawer-header,
-.drawer-is-collapsed .drawer-nav {
-  padding: 10px;
-}
-
-.drawer-is-collapsed .drawer-home {
-  justify-content: center;
-  padding: 5px;
-}
-
-.drawer-is-collapsed .module-nav-row {
-  grid-template-columns: 1fr;
-  padding: 8px;
-}
-
-.drawer-is-collapsed .module-link {
-  grid-template-columns: 1fr;
-  justify-items: center;
-  padding: 6px;
-}
-
-.drawer-is-collapsed .module-badge {
-  width: 42px;
-}
-
 @media (max-width: 920px) {
   .app-layout,
   .drawer-is-collapsed .app-layout {
@@ -341,6 +306,7 @@
     position: relative;
     top: 0;
     height: auto;
+    min-height: 0;
     max-height: 48vh;
     border-right: 0;
     border-bottom: 1px solid var(--color-border);
@@ -355,13 +321,10 @@
     max-width: min(220px, calc(100vw - 164px));
   }
 
-  .drawer-is-collapsed .curriculum-drawer {
-    display: none;
-  }
-
   .drawer-nav {
     height: auto;
     max-height: calc(48vh - 73px);
+    overflow-y: auto;
   }
 }
 

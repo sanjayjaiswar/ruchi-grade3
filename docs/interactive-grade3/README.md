@@ -24,6 +24,7 @@ The EdZilla projects are references only. Do not edit them for this work:
 - [implementation-plan.md](implementation-plan.md): Technical architecture, phases, source ingestion approach, validation, and delivery plan.
 - [component-reuse-map.md](component-reuse-map.md): Existing reference components and patterns to reuse conceptually.
 - [curriculum-source-spec.md](curriculum-source-spec.md): Rules for extracting and using teacher-edition content.
+- [lesson-authoring-playbook.md](lesson-authoring-playbook.md): Required workflow, rules, restrictions, and acceptance gate for authored lessons.
 - [source-audit.md](source-audit.md): Current source-alignment audit and fixes.
 - [requirements-delivery-audit.md](requirements-delivery-audit.md): Pass/partial/gap audit for content and design delivery.
 - [task-tracker.md](task-tracker.md): Task backlog, phase status, decisions, blockers, and validation log.
@@ -36,5 +37,6 @@ The EdZilla projects are references only. Do not edit them for this work:
 3. EdZilla Angular and design-system projects are read-only references.
 4. Build with existing Angular-style patterns and reusable components; do not reinvent UI primitives.
 5. Every lesson should be visually driven and interactive.
-6. Track work in these docs before and during implementation.
-7. Do not modify `AGENTS.md` or other agent-control files unless explicitly authorized.
+6. A lesson objective is not a lesson; use the lesson authoring playbook before marking any lesson authored.
+7. Track work in these docs before and during implementation.
+8. Do not modify `AGENTS.md` or other agent-control files unless explicitly authorized.

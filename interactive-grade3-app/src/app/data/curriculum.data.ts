@@ -472,6 +472,104 @@ export const LESSONS: LessonContent[] = [
       takeaway: 'Multiplication is a faster way to add equal groups.',
       check: 'Ask: Are the groups equal? How many groups? How many in each group?'
     }
+  },
+  {
+    id: 'm1-l4',
+    moduleId: 'm1',
+    topicId: 'm1-tb',
+    lessonNumber: 4,
+    title: 'Find the Size of the Group in Division',
+    objective: 'Understand the meaning of the unknown as the size of the group in division.',
+    studentGoal:
+      'I can divide when I know the total and the number of equal groups, then explain that the answer is the size of each group.',
+    sourceRefs: [
+      {
+        sourceType: 'teacher-edition',
+        path: 'EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf',
+        pageStart: 63,
+        pageEnd: 74,
+        note: 'Lesson 4 objective, fair-share concept development, pictorial division comparison, problem set, exit ticket, and homework.'
+      }
+    ],
+    vocabulary: ['division', 'divided by', 'unknown factor', 'size of the group', 'equal groups'],
+    visualModels: ['equal-groups', 'array'],
+    steps: [
+      {
+        id: 'l4-goal',
+        title: 'Know what the unknown means',
+        shortTitle: 'Goal',
+        studentPrompt:
+          'In this lesson, the total is known and the number of equal groups is known. The unknown tells how many are in each group.',
+        teacherEditionBasis:
+          'Lesson 4 objective and Concept Development focus on division where the answer represents the size of each group.',
+        visualModel: 'equal-groups'
+      },
+      {
+        id: 'l4-fair-share',
+        title: 'Share 18 markers into 2 equal groups',
+        shortTitle: 'Share',
+        studentPrompt:
+          'Use the fair-share model: 18 markers are divided into 2 equal groups. Find how many markers are in each group.',
+        teacherEditionBasis:
+          'Lesson 4 Concept Development begins with 18 counters divided into 2 equal groups to find 9 in each group.',
+        visualModel: 'equal-groups'
+      },
+      {
+        id: 'l4-equation-meaning',
+        title: 'Read the division sentence',
+        shortTitle: 'Meaning',
+        studentPrompt:
+          'In 18 divided by 2 equals 9, name what each number means before thinking about the answer.',
+        teacherEditionBasis:
+          'Lesson 4 records 18 divided by 2 equals 9 and asks students to identify the total, number of equal groups, and unknown factor.',
+        visualModel: 'equal-groups'
+      },
+      {
+        id: 'l4-sticker-picture',
+        title: 'Choose the sentence that answers group size',
+        shortTitle: 'Picture',
+        studentPrompt:
+          'Diana has 12 stickers in 3 equal groups. Choose the division sentence where the answer tells the size of each group.',
+        teacherEditionBasis:
+          'Lesson 4 compares 12 divided by 3 equals 4 and 12 divided by 4 equals 3 so students distinguish group size from number of groups.',
+        visualModel: 'equal-groups'
+      },
+      {
+        id: 'l4-draw-equation',
+        title: 'Use a picture for 8 divided by 4',
+        shortTitle: 'Draw',
+        studentPrompt:
+          'If 8 is the total and 4 is the number of equal groups, use the picture to find the size of each group.',
+        teacherEditionBasis:
+          'Lesson 4 moves from abstract equation to pictorial representation with 8 divided by 4 equals unknown and repeats with 10 divided by 2.',
+        visualModel: 'equal-groups'
+      },
+      {
+        id: 'l4-exit-check',
+        title: 'Exit check: size of each group',
+        shortTitle: 'Exit',
+        studentPrompt:
+          'Complete the Lesson 4 exit-style checks. Both answers should tell how many are in each group.',
+        teacherEditionBasis:
+          'Lesson 4 Exit Ticket asks students to draw 16 glue sticks divided into 4 equal groups and solve 15 divided by 3.',
+        visualModel: 'equal-groups'
+      },
+      {
+        id: 'l4-summary',
+        title: 'Say the Lesson 4 takeaway',
+        shortTitle: 'Sum',
+        studentPrompt:
+          'When the total and number of equal groups are known, division can find the size of each group.',
+        teacherEditionBasis:
+          'Lesson 4 debrief asks students to compare multiplication and division and use vocabulary such as unknown factor and divided by.',
+        visualModel: 'equal-groups'
+      }
+    ],
+    summary: {
+      takeaway:
+        'Division can find the size of each group when the total and number of equal groups are known.',
+      check: 'Ask: What is the total? How many equal groups? What does the answer represent?'
+    }
   }
 ];
 

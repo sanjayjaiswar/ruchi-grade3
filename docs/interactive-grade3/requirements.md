@@ -24,6 +24,7 @@ The app is not a generic math tutor. It is a structured learning experience grou
 - Provide separate routes for every Grade 3 lesson.
 - Use teacher-edition overview objectives for all lesson routes.
 - Deep-author lesson pages from full teacher-edition lesson pages as the content is extracted and audited.
+- Treat objective-backed generated lesson routes as placeholders only, not as complete lessons.
 
 ### Out Of Scope
 
@@ -167,10 +168,12 @@ Must:
 - Prefer visual-first explanation before symbolic notation.
 - Use Grade 3 language.
 - Align with the teacher-edition concept development.
+- Come from the full teacher-edition lesson pages, not only the module overview objective.
 
 Must not:
 
 - Dump the whole lesson at once.
+- Present a generic objective-backed flow as a completed lesson.
 - Introduce unrelated external examples as if they are curriculum.
 - Use childish simplifications that undercut Grade 3 rigor.
 

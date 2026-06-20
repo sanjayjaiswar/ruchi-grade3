@@ -55,6 +55,13 @@ export class LessonPage implements OnInit {
   exitAdditionC = '';
   exitProduct = '';
   exitFactor = '';
+  l4FairShareAnswer: number | null = null;
+  l4UnknownMeaning = '';
+  l4DianaSentence = '';
+  l4EightDivFour: number | null = null;
+  l4ExitDivisor = '';
+  l4ExitQuotient = '';
+  l4ExitFifteen = '';
   feedback?: Feedback;
 
   constructor(
@@ -152,6 +159,13 @@ export class LessonPage implements OnInit {
     this.exitAdditionC = '';
     this.exitProduct = '';
     this.exitFactor = '';
+    this.l4FairShareAnswer = null;
+    this.l4UnknownMeaning = '';
+    this.l4DianaSentence = '';
+    this.l4EightDivFour = null;
+    this.l4ExitDivisor = '';
+    this.l4ExitQuotient = '';
+    this.l4ExitFifteen = '';
     this.feedback = undefined;
   }
 
@@ -235,6 +249,85 @@ export class LessonPage implements OnInit {
           status: 'needs-work',
           title: 'Use the picture to fill every blank',
           body: 'The picture shows 4 equal groups. Each group has 2 slices, for a total of 8.'
+        };
+  }
+
+  checkL4FairShare(): void {
+    this.feedback =
+      this.l4FairShareAnswer === 9
+        ? {
+            status: 'correct',
+            title: 'Correct: 9 in each group',
+            body: 'The 18 markers are shared into 2 equal groups. The answer tells the size of each group, so each group has 9 markers.'
+          }
+        : {
+            status: 'needs-work',
+            title: 'Share into exactly 2 groups',
+            body: 'The 2 tells how many equal groups there are. Share all 18 markers into those 2 groups, then count one group.'
+          };
+  }
+
+  checkL4UnknownMeaning(): void {
+    this.feedback =
+      this.l4UnknownMeaning === 'size'
+        ? {
+            status: 'correct',
+            title: 'Yes: the answer is group size',
+            body: 'In 18 divided by 2 equals 9, 18 is the total and 2 is the number of equal groups. The 9 tells how many markers are in each group.'
+          }
+        : {
+            status: 'needs-work',
+            title: 'Use the known numbers first',
+            body: 'The number after the division sign is 2, so there are already 2 groups. The unknown is not the number of groups here; it is the size of each group.'
+          };
+  }
+
+  checkL4DianaSentence(): void {
+    this.feedback =
+      this.l4DianaSentence === '12div3'
+        ? {
+            status: 'correct',
+            title: 'Correct: 12 divided by 3 equals 4',
+            body: 'There are 12 stickers total and 3 equal groups. The answer 4 tells the size of each group.'
+          }
+        : {
+            status: 'needs-work',
+            title: 'Choose the sentence that finds group size',
+            body: 'Use the total first, then divide by the number of equal groups. Diana has 3 groups, so divide 12 by 3.'
+          };
+  }
+
+  checkL4EightDivFour(): void {
+    this.feedback =
+      this.l4EightDivFour === 2
+        ? {
+            status: 'correct',
+            title: 'Correct: 8 divided by 4 equals 2',
+            body: 'The 4 tells the number of equal groups. Each group has 2, so the answer is the size of each group.'
+          }
+        : {
+            status: 'needs-work',
+            title: 'Count one equal group',
+            body: 'The picture shows 8 counters split into 4 equal groups. The answer is not the 4 groups; it is how many counters are inside each group.'
+          };
+  }
+
+  checkL4Exit(): void {
+    const exitOk =
+      this.l4ExitDivisor.trim() === '4' &&
+      this.l4ExitQuotient.trim() === '4' &&
+      this.l4ExitFifteen.trim() === '5';
+
+    this.feedback = exitOk
+      ? {
+          status: 'correct',
+          title: 'Lesson 4 takeaway is in place',
+          body: 'Both answers tell the size of each group: 16 glue sticks in 4 groups makes 4 in each group, and 15 divided into 3 groups makes 5 in each group.'
+        }
+      : {
+          status: 'needs-work',
+          title: 'Each answer should mean group size',
+          body: 'For 16 divided by 4, the 4 after the division sign is the number of groups. The quotient is how many glue sticks go in each group. For 15 divided by 3, share 15 into 3 equal groups.'
         };
   }
 

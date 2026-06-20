@@ -305,6 +305,171 @@
           </div>
         </div>
 
+        <div *ngSwitchCase="'l4-goal'" class="activity-grid">
+          <app-equal-groups-model
+            [groupCount]="2"
+            [groupSize]="9"
+            itemLabel="marker"
+            [showAddition]="false"
+            [showUnitForm]="false"
+            [showMultiplication]="false" />
+          <div class="activity-card">
+            <h3>Lesson 4 question</h3>
+            <div class="bridge-table compact-table">
+              <div class="bridge-row">
+                <strong>Total</strong>
+                <span>18 markers</span>
+              </div>
+              <div class="bridge-row">
+                <strong>Groups</strong>
+                <span>2 equal groups</span>
+              </div>
+              <div class="bridge-row">
+                <strong>Unknown</strong>
+                <span>How many markers are in each group?</span>
+              </div>
+            </div>
+            <p class="muted">This lesson uses division to find the size of a group.</p>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l4-fair-share'" class="activity-grid">
+          <app-equal-groups-model
+            [groupCount]="2"
+            [groupSize]="9"
+            itemLabel="marker"
+            [showAddition]="false"
+            [showUnitForm]="false"
+            [showMultiplication]="false" />
+          <div class="activity-card">
+            <h3>Fair-share check</h3>
+            <p>18 markers are shared into 2 equal groups. How many markers are in each group?</p>
+            <div class="answer-row">
+              <input class="answer-input" type="number" [(ngModel)]="l4FairShareAnswer" aria-label="Markers in each group" />
+              <button class="button" (click)="checkL4FairShare()">Check</button>
+            </div>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l4-equation-meaning'" class="activity-grid">
+          <div class="bridge-table" aria-label="18 divided by 2 equals 9 meaning">
+            <div class="bridge-row">
+              <strong>18</strong>
+              <span>Total markers</span>
+            </div>
+            <div class="bridge-row">
+              <strong>&divide; 2</strong>
+              <span>Divide into 2 equal groups</span>
+            </div>
+            <div class="bridge-row">
+              <strong>= 9</strong>
+              <span>9 markers in each group</span>
+            </div>
+          </div>
+          <div class="activity-card">
+            <h3>What does the answer mean?</h3>
+            <p>In 18 &divide; 2 = 9, what does the 9 represent?</p>
+            <select class="answer-select" [(ngModel)]="l4UnknownMeaning" aria-label="Meaning of quotient">
+              <option value="">Choose</option>
+              <option value="groups">The number of groups</option>
+              <option value="size">The size of each group</option>
+              <option value="total">The total number of markers</option>
+            </select>
+            <button class="button" (click)="checkL4UnknownMeaning()">Check</button>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l4-sticker-picture'" class="activity-grid">
+          <app-equal-groups-model
+            [groupCount]="3"
+            [groupSize]="4"
+            itemLabel="sticker"
+            [showAddition]="false"
+            [showUnitForm]="false"
+            [showMultiplication]="false" />
+          <div class="activity-card">
+            <h3>Diana's stickers</h3>
+            <p>The picture shows 12 stickers in 3 equal groups. Choose the division sentence where the answer tells the size of each group.</p>
+            <select class="answer-select" [(ngModel)]="l4DianaSentence" aria-label="Division sentence for Diana's stickers">
+              <option value="">Choose</option>
+              <option value="12div3">12 &divide; 3 = 4</option>
+              <option value="12div4">12 &divide; 4 = 3</option>
+              <option value="3div12">3 &divide; 12 = 4</option>
+            </select>
+            <button class="button" (click)="checkL4DianaSentence()">Check</button>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l4-draw-equation'" class="activity-grid">
+          <app-equal-groups-model
+            [groupCount]="4"
+            [groupSize]="2"
+            itemLabel="counter"
+            [showAddition]="false"
+            [showUnitForm]="false"
+            [showMultiplication]="false" />
+          <div class="activity-card">
+            <h3>Use the model</h3>
+            <p>8 counters are divided into 4 equal groups.</p>
+            <div class="large-equation">8 &divide; 4 = ?</div>
+            <div class="answer-row">
+              <input class="answer-input" type="number" [(ngModel)]="l4EightDivFour" aria-label="8 divided by 4 answer" />
+              <button class="button" (click)="checkL4EightDivFour()">Check</button>
+            </div>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l4-exit-check'" class="activity-grid">
+          <app-equal-groups-model
+            [groupCount]="4"
+            [groupSize]="4"
+            itemLabel="glue stick"
+            [showAddition]="false"
+            [showUnitForm]="false"
+            [showMultiplication]="false" />
+          <div class="activity-card">
+            <h3>Exit check</h3>
+            <p>16 glue sticks are divided into 4 equal groups.</p>
+            <div class="exit-equation">
+              16 &divide;
+              <input [(ngModel)]="l4ExitDivisor" aria-label="Number of equal groups" />
+              =
+              <input [(ngModel)]="l4ExitQuotient" aria-label="Glue sticks in each group" />
+            </div>
+            <div class="exit-equation">
+              15 &divide; 3 =
+              <input [(ngModel)]="l4ExitFifteen" aria-label="15 divided by 3 answer" />
+            </div>
+            <button class="button" (click)="checkL4Exit()">Check</button>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l4-summary'" class="activity-grid">
+          <div class="bridge-table" aria-label="Lesson 4 summary">
+            <div class="bridge-row">
+              <strong>Known</strong>
+              <span>Total amount</span>
+            </div>
+            <div class="bridge-row">
+              <strong>Known</strong>
+              <span>Number of equal groups</span>
+            </div>
+            <div class="bridge-row">
+              <strong>Unknown</strong>
+              <span>Size of each group</span>
+            </div>
+            <div class="bridge-row">
+              <strong>Example</strong>
+              <span>18 &divide; 2 = 9 means 9 in each group</span>
+            </div>
+          </div>
+          <div class="activity-card">
+            <h3>Main takeaway</h3>
+            <p>{{ lesson.summary.takeaway }}</p>
+            <p class="muted">{{ lesson.summary.check }}</p>
+          </div>
+        </div>
+
         <div *ngSwitchDefault class="activity-card">
           <div class="generic-lesson-panel">
             <div class="generic-visual" [attr.data-model]="activeStep.visualModel">

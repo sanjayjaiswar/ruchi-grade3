@@ -178,7 +178,7 @@ const LESSON_SHORT_LABELS: Record<string, string> = {
 })
 export class App {
   readonly modules = MODULES;
-  drawerCollapsed = false;
+  drawerCollapsed = true;
   activeModuleId = 'm1';
   activeLessonId = '';
   private readonly expandedModules = new Set<string>(['m1']);
