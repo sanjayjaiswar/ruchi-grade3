@@ -151,6 +151,16 @@ They must not:
 - Show Goal, Model, Connect, Check as if instruction exists.
 - Include generic validation such as "I can explain this step."
 
+Generated source-backed teacher walk-throughs are allowed only when they have:
+
+- A lesson-specific teacher-edition PDF page range.
+- The exact lesson objective.
+- The lesson topic context.
+- A compact teacher flow that names the source model, example, check, and summary.
+- No claim that the lesson has bespoke interactions or full deep authoring.
+
+These compact routes are acceptable for coverage across modules, but they remain candidates for later deep authoring when the lesson needs a custom number line, clock, area grid, fraction strip, graph, or geometry interaction.
+
 ## 11. Replication Pattern
 
 After one lesson is authored and audited, use it as a structural pattern only.

@@ -46,7 +46,9 @@ Notes:
 - Modules 1-7 each have a module page route.
 - Topic names and day counts are sourced from the teacher-edition overview tables.
 - Full lesson objective text has been entered for all 152 Grade 3 lessons from the teacher-edition overview tables.
-- Lesson routes exist for all 152 lessons. Module 1 Lessons 1-21 now have source-backed lesson records; Lessons 1 and 4-6 have bespoke interactive checks, and the rest use the compact source-authored teacher flow. Other modules remain objective-backed placeholder flows.
+- Lesson routes exist for all 152 lessons.
+- Module 1 Lessons 1-21 have source-backed lesson records; Lessons 1 and 4-6 have bespoke interactive checks, and the rest use the compact source-authored teacher flow.
+- Modules 2-7 now use lesson-specific teacher-edition PDF page ranges and the same compact source-authored teacher flow. These are source-backed teacher walk-throughs, not deep bespoke interactions.
 
 ### Module Summaries
 
@@ -266,7 +268,7 @@ Source page ranges used:
 
 | Lesson | PDF pages | Status |
 | --- | --- | --- |
-| 1 | 19-29 | Bespoke authored before this pass |
+| 1 | 23-33 | Bespoke authored before this pass |
 | 2 | 34-48 | Compact source-authored |
 | 3 | 49-60 | Compact source-authored |
 | 4 | 63-74 | Bespoke authored |
@@ -308,18 +310,18 @@ Known limitations:
 
 ## 4. Current Limitations
 
-### Objective-Backed Lesson Routes
+### Compact Source-Backed Lesson Routes
 
 Modules 1-7 now have source-backed topic/lesson maps and source-backed lesson routes.
 
 Current behavior is intentional:
 
 - The app shows module/topic/lesson structure.
-- Every lesson route displays the teacher-edition objective, topic, module model set, and source reference.
+- Every lesson route displays the teacher-edition objective, topic, module model set, and lesson-specific source reference.
 - Module 1 Lessons 1-21 display source-backed lesson-page flows. Lessons 1 and 4-6 are deeply interactive; Lessons 2-3 and 7-21 are compact teacher-led source-authored flows.
-- Other lesson routes use conservative objective-backed screens rather than invented examples or assessments.
+- Modules 2-7 display compact teacher-led source-authored flows using lesson-specific teacher-edition page ranges.
 
-Before deep-authoring any additional lesson page beyond the objective-backed flow, extract and audit that lesson's teacher-edition pages.
+Before deep-authoring any lesson beyond the compact teacher flow, extract and audit that lesson's concept development, problem set, exit ticket, and required model details.
 
 ### Lesson Objective Labels
 
@@ -358,7 +360,7 @@ Do not add:
 | Date | Check | Result |
 | --- | --- | --- |
 | 2026-06-18 | Module overview tables checked against source PDFs | Pass |
-| 2026-06-18 | Module 1 Lesson 1 checked against teacher-edition pages 19-29 | Pass |
+| 2026-06-18 | Module 1 Lesson 1 checked against teacher-edition pages 23-33 | Pass |
 | 2026-06-18 | Removed transcript from app source references | Pass |
 | 2026-06-18 | Adjusted Lesson 1 visual sequence to match source progression | Pass |
 | 2026-06-18 | `npm run build` | Pass |
@@ -372,3 +374,7 @@ Do not add:
 | 2026-06-20 | Added source-backed records for all Module 1 lessons and compacted visual model sizing | Pass |
 | 2026-06-20 | `npm run build` after full Module 1 pass | Pass |
 | 2026-06-20 | Route audit for all 21 Module 1 lesson URLs | Pass |
+| 2026-06-20 | Audited all 152 lesson page ranges against teacher-edition PDF lesson headers | Pass |
+| 2026-06-20 | Removed generated overview fallback; generated lessons now require lesson-specific page ranges | Pass |
+| 2026-06-20 | `npm run build` after all-module source audit fixes | Pass |
+| 2026-06-20 | Route audit for all 152 Grade 3 lesson URLs after fail-closed source guard | Pass |

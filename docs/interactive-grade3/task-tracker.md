@@ -36,6 +36,10 @@ Status: Active planning
 | Module 1 Lesson 4 calibration | Done | Lesson 4 authored from teacher-edition pages 63-74 and build validation passed. |
 | Module 1 Topic B calibration | Done | Lessons 4-6 authored from teacher-edition pages and build validation passed. |
 | Module 1 full pass | Done | Lessons 1-21 now have source-backed records; build and all-route validation passed. |
+| All modules compact source pass | Done | Generated lessons across Modules 2-7 now use lesson-specific teacher-edition page ranges and the compact teacher flow. |
+| Generated lesson quality correction | Done | Generic source flow replaced with model-specific teacher moves, board setup, questions, misconceptions, and exit evidence. |
+| Generated lesson visual correction | Done | Source-backed lessons now render model-specific figures for equal groups, arrays, tape diagrams, number lines, clocks, measurement, area, fractions, graphs, and geometry. |
+| Lesson 4 benchmark flow | Done | Compact/generated source-backed lessons now follow a 7-step Lesson 4-style flow: Goal, Model, Meaning, Picture, Draw, Exit, Summary. |
 
 ## 3. Phase Tracker
 
@@ -77,6 +81,10 @@ Status: Active planning
 | Add Lesson 5 structured content | Done | Codex | Source-backed lesson content and interactions added; `npm run build` passed. |
 | Add Lesson 6 structured content | Done | Codex | Source-backed lesson content and interactions added; `npm run build` passed. |
 | Add Module 1 compact source-authored lessons | Done | Codex | Lessons 2-3 and 7-21 added with exact PDF page ranges, lesson-specific guidance, and compact source renderer. |
+| Add compact source-backed lessons for Modules 2-7 | Done | Codex | Generated lessons now attach exact teacher-edition PDF page ranges and render Goal, Model, Example, Check, Summary source panels. |
+| Replace weak generated teacher text | Done | Codex | Generated lessons now use model-specific teaching guidance instead of vague objective/model prompts. |
+| Add generated lesson figures | Done | Codex | Source panels render compact model-family visuals instead of blank cue cards. |
+| Apply Lesson 4 benchmark shape globally | Done | Codex | Generated and compact source-backed lessons now use visual model, lesson question/info, explanation, meaning, picture, draw/label, exit evidence, and summary screens. |
 | Add source reference fields | Done | Codex | Lesson data includes teacher-edition source reference. |
 | Add all lesson objectives | Done | Codex | 152 teacher-edition overview objectives entered. |
 | Generate all lesson routes | Done | Codex | 152 lesson URLs return HTTP 200. |
@@ -99,11 +107,12 @@ Status: Active planning
 | Build validation | Done | Codex | `npm run build` passed cleanly. |
 | Responsive QA | Not started | Codex | Browser/screenshot validation requires explicit authorization. |
 | Accessibility pass | In progress | Codex | Labels and role/status basics added; browser pass not run. |
-| Source alignment pass | Done | Codex | Lesson 1 aligned to inspected teacher-edition pages 19-29. |
+| Source alignment pass | Done | Codex | Lesson 1 aligned to inspected teacher-edition pages 23-33. |
 | Module 1 Lesson 4 source alignment pass | Done | Codex | Teacher-edition pages 63-74 extracted/rendered; implementation authored and build validation passed. |
 | Module 1 Lesson 5 source alignment pass | Done | Codex | Teacher-edition pages 75-84 extracted/rendered; implementation authored and build validation passed. |
 | Module 1 Lesson 6 source alignment pass | Done | Codex | Teacher-edition pages 85-94 extracted/rendered; implementation authored and build validation passed. |
 | Module 1 full source-backed pass | Done | Codex | Lessons 1-21 source-backed; build and all-route validation passed. |
+| Modules 2-7 compact source-backed pass | Done | Codex | Lessons use lesson-specific source page ranges and source-authored renderer; bespoke interaction backlog remains by model family. |
 | Source audit doc | Done | Codex | `source-audit.md` added with findings and source rules. |
 | Requirements delivery audit | Done | Codex | `requirements-delivery-audit.md` added with content/design status. |
 | Root README | Done | Codex | `README.md` added at Grade3 workspace root. |
@@ -122,6 +131,7 @@ Status: Active planning
 - Deep-author Module 1 Lesson 2 from its teacher-edition lesson pages.
 - Deep-author Module 1 Lesson 3 from its teacher-edition lesson pages.
 - Upgrade Module 1 compact source-authored lessons to bespoke interactions where needed.
+- Upgrade Modules 2-7 compact source-backed lessons into bespoke interactions by model family.
 - Extract a reusable `ArrayModelComponent` before authoring more array-heavy lessons.
 - Add Module 2 visual number line and clock interactions.
 - Add Module 4 area tile grid.
@@ -183,6 +193,22 @@ Status: Active planning
 | 2026-06-20 | Module 1 Lessons 5-6 route check | Passed | `/ruchika-grade3/modules/m1/lessons/5` and `/ruchika-grade3/modules/m1/lessons/6` returned HTTP 200 after dev-server restart. |
 | 2026-06-20 | Module 1 full pass Angular build | Passed | `npm run build` completed without warnings or errors after source-backed records for Lessons 2-3 and 7-21 and compact visual sizing. |
 | 2026-06-20 | Module 1 full route audit | Passed | `/ruchika-grade3/modules/m1/lessons/1` through `/lessons/21` returned HTTP 200 after dev-server restart. |
+| 2026-06-20 | Modules 2-7 compact source pass Angular build | Passed | `npm run build` completed without warnings or errors after generated lessons were switched to lesson-specific source page ranges and compact source panels. |
+| 2026-06-20 | Full Grade 3 lesson route audit | Passed | All 152 lesson routes across Modules 1-7 returned HTTP 200 from the local Angular dev server. |
+| 2026-06-20 | All-module source range audit | Passed | All 152 lesson ranges were verified against teacher-edition PDF lesson headers; M1 Lesson 1 range corrected to pages 23-33. |
+| 2026-06-20 | Generated lesson guardrail audit | Passed | Generated lessons now fail closed when a lesson-specific source page range is missing. |
+| 2026-06-20 | Generated lesson quality correction build | Passed | `npm run build` completed without warnings or errors after replacing vague generated prompts with model-specific teacher guidance. |
+| 2026-06-20 | Generated lesson quality correction route audit | Passed | All 152 lesson routes returned HTTP 200 after renderer and generated-flow updates. |
+| 2026-06-20 | Generated lesson visual correction build | Passed | `npm run build` completed without warnings or errors after adding model-specific visual figures. |
+| 2026-06-20 | Generated lesson visual correction route audit | Passed | All 152 lesson routes returned HTTP 200 after adding source-panel figures. |
+| 2026-06-20 | Lesson 4 benchmark flow build | Passed | `npm run build` completed without warnings or errors after expanding compact/generated lessons to the 7-step benchmark structure. |
+| 2026-06-20 | Lesson 4 benchmark flow route audit | Passed | All 152 lesson routes returned HTTP 200 after applying the Lesson 4 benchmark flow globally. |
+| 2026-06-20 | Live browser all-lesson benchmark audit | Passed | Browser automation checked all 152 lessons for at least 7 steps, teacher source, source pages, model info, lesson question, and visible figure/model; 0 failures. |
+| 2026-06-20 | Strict Lesson 4-style browser audit | Passed | Browser automation checked all 152 lessons for 7+ steps, visible model/figure, source pages, generated lesson question rows with Unknown and Lesson target, and explanation/evidence tables; 0 failures. |
+| 2026-06-20 | Live browser step-by-step all-module audit | Passed | Clicked and checked all 1,069 active lesson-step screens across Modules 1-7 for 7+ step lesson structure, visible model/table, teacher source, no generic fallback, and non-empty content; 0 failures. |
+| 2026-06-20 | Lesson-specific source context audit | Passed | Generated 152 lesson source notes from teacher PDFs and browser-verified all generated lessons expose a Source context row with visible model content; 0 failures. |
+| 2026-06-20 | M3 Lesson 7 concept/visual alignment audit | Passed | Verified the Eureka source uses Thad's 7 beetles with 6 legs, then selects a tape diagram with 7 parts and unknown b; live browser now shows 7 tape parts labeled 6 legs and b total legs. |
+| 2026-06-20 | Generated source-visual consistency audit | Passed | Live browser checked all 152 lessons; generated lessons with extractable tape, array, or equal-group quantities render matching source-aware figures. The 4 hand-authored M1 benchmark lessons use separate bespoke visual components. |
 
 ## 7. Change Log
 
@@ -199,3 +225,13 @@ Status: Active planning
 | 2026-06-19 | Added lesson authoring playbook and source-authored Module 1 Lesson 4 calibration lesson. |
 | 2026-06-19 | Added source-authored Module 1 Lessons 5 and 6 to complete the Topic B calibration slice. |
 | 2026-06-20 | Added compact source-authored flows for all remaining Module 1 lessons and reduced oversized dot/array visuals. |
+| 2026-06-20 | Added lesson-specific teacher-edition page ranges for Modules 2-7 and switched generated lessons to the compact source-authored teacher flow. |
+| 2026-06-20 | Corrected Module 1 Lesson 1 source range and removed generated overview-page fallback behavior. |
+| 2026-06-20 | Replaced generic compact lesson copy with teacher-usable model-specific board setup, questions, listen-for checks, misconceptions, and exit evidence. |
+| 2026-06-20 | Added compact model-family figures to generated lesson source panels and raised the Angular component style budget to fit the visual layer. |
+| 2026-06-20 | Applied Lesson 4's 7-screen teaching structure to compact/generated source-backed lessons across the app. |
+| 2026-06-20 | Fixed Module 1 Lessons 5 and 6 to meet the same 7-step benchmark and validated all 152 lessons in the live browser. |
+| 2026-06-20 | Added Lesson 4-style known/unknown question tables to generated lessons and smarter primary model selection such as tape diagrams for word-problem lessons. |
+| 2026-06-20 | Completed live step-by-step validation across every module and lesson against the Lesson 4 benchmark gate. |
+| 2026-06-20 | Added teacher-edition extracted source contexts, teacher moves, and exit evidence notes for all lessons, then wired generated lessons to show the source context in the Lesson 4-style question card. |
+| 2026-06-20 | Corrected M3 Lesson 7 source note and made generated source figures parse lesson quantities for equal groups, arrays, and tape diagrams instead of showing disconnected generic counts. |

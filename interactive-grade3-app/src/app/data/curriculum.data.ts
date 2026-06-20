@@ -1,4 +1,5 @@
 import { LessonContent, ModuleMeta } from './curriculum.types';
+import { LESSON_SOURCE_NOTES } from './lesson-source-notes.generated';
 
 export const MODULES: ModuleMeta[] = [
   {
@@ -382,17 +383,33 @@ function module1SourceLesson(seed: Module1LessonSeed): LessonContent {
         visualModel: seed.visualModels[0]
       },
       {
-        id: 'source-example',
-        title: 'Teach the source example',
-        shortTitle: 'Example',
+        id: 'source-meaning',
+        title: 'Name what each part means',
+        shortTitle: 'Meaning',
+        studentPrompt: seed.concept,
+        teacherEditionBasis: 'Ask the student to name what the visual parts, quantities, and unknown represent before solving.',
+        visualModel: seed.visualModels[0]
+      },
+      {
+        id: 'source-picture',
+        title: 'Read the picture',
+        shortTitle: 'Picture',
         studentPrompt: seed.example,
         teacherEditionBasis: seed.teacherMove,
         visualModel: seed.visualModels[0]
       },
       {
-        id: 'source-check',
-        title: 'Check the student explanation',
-        shortTitle: 'Check',
+        id: 'source-draw',
+        title: 'Draw or label the model',
+        shortTitle: 'Draw',
+        studentPrompt: seed.modelFocus,
+        teacherEditionBasis: 'Have the student draw, label, or point to the model before writing the equation or final answer.',
+        visualModel: seed.visualModels[0]
+      },
+      {
+        id: 'source-exit',
+        title: 'Exit check',
+        shortTitle: 'Exit',
         studentPrompt: seed.check,
         teacherEditionBasis:
           'Use this as the teacher-led check before moving to the lesson problem set or exit ticket.',
@@ -704,8 +721,8 @@ export const LESSONS: LessonContent[] = [
       {
         sourceType: 'teacher-edition',
         path: 'EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf',
-        pageStart: 19,
-        pageEnd: 29,
+        pageStart: 23,
+        pageEnd: 33,
         note: 'Lesson 1 objective, concept development, problem set, exit ticket, and homework.'
       }
     ],
@@ -998,6 +1015,16 @@ export const LESSONS: LessonContent[] = [
         visualModel: 'equal-groups'
       },
       {
+        id: 'l5-picture',
+        title: 'Read the group picture',
+        shortTitle: 'Picture',
+        studentPrompt:
+          'Use the picture to confirm that the total is split into groups of the known size. The answer counts how many groups were made.',
+        teacherEditionBasis:
+          'Lesson 5 repeatedly asks students to distinguish the given group size from the unknown number of groups using counters and drawings.',
+        visualModel: 'equal-groups'
+      },
+      {
         id: 'l5-exit-check',
         title: 'Exit check: number of groups',
         shortTitle: 'Exit',
@@ -1073,6 +1100,16 @@ export const LESSONS: LessonContent[] = [
           'Use the same array to connect 15 divided by 3 equals 5 with 3 times 5 equals 15.',
         teacherEditionBasis:
           'Lesson 6 Problem 2 asks students to write both 15 divided by 3 equals 5 and 3 times 5 equals 15 for the same array.',
+        visualModel: 'array'
+      },
+      {
+        id: 'l6-meaning',
+        title: 'Name what the quotient means',
+        shortTitle: 'Meaning',
+        studentPrompt:
+          'In the division equation, the quotient names the missing factor in the related multiplication equation. In the array, it can name the number of rows or groups.',
+        teacherEditionBasis:
+          'Lesson 6 asks students to interpret the unknown in division by connecting the quotient to the unknown factor shown in the array model.',
         visualModel: 'array'
       },
       {
@@ -1286,8 +1323,295 @@ const OVERVIEW_PAGE_RANGES: Record<string, { pageStart: number; pageEnd: number 
   m7: { pageStart: 8, pageEnd: 9 }
 };
 
+const LESSON_PAGE_RANGES: Record<string, Record<number, { pageStart: number; pageEnd: number }>> = {
+  m1: {
+    1: { pageStart: 23, pageEnd: 33 },
+    2: { pageStart: 34, pageEnd: 48 },
+    3: { pageStart: 49, pageEnd: 60 },
+    4: { pageStart: 63, pageEnd: 74 },
+    5: { pageStart: 75, pageEnd: 84 },
+    6: { pageStart: 85, pageEnd: 94 },
+    7: { pageStart: 97, pageEnd: 108 },
+    8: { pageStart: 109, pageEnd: 118 },
+    9: { pageStart: 119, pageEnd: 130 },
+    10: { pageStart: 131, pageEnd: 141 },
+    11: { pageStart: 151, pageEnd: 161 },
+    12: { pageStart: 162, pageEnd: 173 },
+    13: { pageStart: 174, pageEnd: 185 },
+    14: { pageStart: 188, pageEnd: 199 },
+    15: { pageStart: 200, pageEnd: 209 },
+    16: { pageStart: 210, pageEnd: 220 },
+    17: { pageStart: 221, pageEnd: 231 },
+    18: { pageStart: 234, pageEnd: 244 },
+    19: { pageStart: 245, pageEnd: 254 },
+    20: { pageStart: 255, pageEnd: 266 },
+    21: { pageStart: 267, pageEnd: 276 }
+  },
+  m2: {
+    1: { pageStart: 13, pageEnd: 23 },
+    2: { pageStart: 24, pageEnd: 36 },
+    3: { pageStart: 37, pageEnd: 49 },
+    4: { pageStart: 50, pageEnd: 60 },
+    5: { pageStart: 61, pageEnd: 74 },
+    6: { pageStart: 75, pageEnd: 84 },
+    7: { pageStart: 85, pageEnd: 95 },
+    8: { pageStart: 96, pageEnd: 105 },
+    9: { pageStart: 106, pageEnd: 115 },
+    10: { pageStart: 116, pageEnd: 126 },
+    11: { pageStart: 127, pageEnd: 149 },
+    12: { pageStart: 150, pageEnd: 159 },
+    13: { pageStart: 160, pageEnd: 170 },
+    14: { pageStart: 171, pageEnd: 184 },
+    15: { pageStart: 185, pageEnd: 195 },
+    16: { pageStart: 196, pageEnd: 206 },
+    17: { pageStart: 207, pageEnd: 221 },
+    18: { pageStart: 222, pageEnd: 232 },
+    19: { pageStart: 233, pageEnd: 242 },
+    20: { pageStart: 243, pageEnd: 256 },
+    21: { pageStart: 257, pageEnd: 266 }
+  },
+  m3: {
+    1: { pageStart: 14, pageEnd: 25 },
+    2: { pageStart: 26, pageEnd: 37 },
+    3: { pageStart: 38, pageEnd: 50 },
+    4: { pageStart: 51, pageEnd: 61 },
+    5: { pageStart: 62, pageEnd: 72 },
+    6: { pageStart: 73, pageEnd: 84 },
+    7: { pageStart: 85, pageEnd: 96 },
+    8: { pageStart: 97, pageEnd: 107 },
+    9: { pageStart: 108, pageEnd: 118 },
+    10: { pageStart: 119, pageEnd: 129 },
+    11: { pageStart: 130, pageEnd: 149 },
+    12: { pageStart: 150, pageEnd: 163 },
+    13: { pageStart: 164, pageEnd: 175 },
+    14: { pageStart: 176, pageEnd: 186 },
+    15: { pageStart: 187, pageEnd: 199 },
+    16: { pageStart: 200, pageEnd: 211 },
+    17: { pageStart: 212, pageEnd: 224 },
+    18: { pageStart: 225, pageEnd: 237 },
+    19: { pageStart: 238, pageEnd: 247 },
+    20: { pageStart: 248, pageEnd: 257 },
+    21: { pageStart: 258, pageEnd: 269 }
+  },
+  m4: {
+    1: { pageStart: 11, pageEnd: 20 },
+    2: { pageStart: 21, pageEnd: 31 },
+    3: { pageStart: 32, pageEnd: 43 },
+    4: { pageStart: 44, pageEnd: 56 },
+    5: { pageStart: 57, pageEnd: 67 },
+    6: { pageStart: 68, pageEnd: 79 },
+    7: { pageStart: 80, pageEnd: 91 },
+    8: { pageStart: 92, pageEnd: 115 },
+    9: { pageStart: 116, pageEnd: 126 },
+    10: { pageStart: 127, pageEnd: 137 },
+    11: { pageStart: 138, pageEnd: 149 },
+    12: { pageStart: 150, pageEnd: 160 },
+    13: { pageStart: 161, pageEnd: 172 },
+    14: { pageStart: 173, pageEnd: 184 },
+    15: { pageStart: 185, pageEnd: 195 },
+    16: { pageStart: 196, pageEnd: 204 }
+  },
+  m5: {
+    1: { pageStart: 12, pageEnd: 21 },
+    2: { pageStart: 22, pageEnd: 30 },
+    3: { pageStart: 31, pageEnd: 40 },
+    4: { pageStart: 41, pageEnd: 53 },
+    5: { pageStart: 54, pageEnd: 63 },
+    6: { pageStart: 64, pageEnd: 74 },
+    7: { pageStart: 75, pageEnd: 85 },
+    8: { pageStart: 86, pageEnd: 97 },
+    9: { pageStart: 98, pageEnd: 111 },
+    10: { pageStart: 112, pageEnd: 123 },
+    11: { pageStart: 124, pageEnd: 135 },
+    12: { pageStart: 136, pageEnd: 147 },
+    13: { pageStart: 148, pageEnd: 158 },
+    14: { pageStart: 168, pageEnd: 177 },
+    15: { pageStart: 178, pageEnd: 187 },
+    16: { pageStart: 188, pageEnd: 199 },
+    17: { pageStart: 200, pageEnd: 210 },
+    18: { pageStart: 211, pageEnd: 220 },
+    19: { pageStart: 221, pageEnd: 233 },
+    20: { pageStart: 234, pageEnd: 244 },
+    21: { pageStart: 245, pageEnd: 254 },
+    22: { pageStart: 255, pageEnd: 264 },
+    23: { pageStart: 265, pageEnd: 275 },
+    24: { pageStart: 276, pageEnd: 288 },
+    25: { pageStart: 289, pageEnd: 303 },
+    26: { pageStart: 304, pageEnd: 315 },
+    27: { pageStart: 316, pageEnd: 328 },
+    28: { pageStart: 329, pageEnd: 339 },
+    29: { pageStart: 340, pageEnd: 351 },
+    30: { pageStart: 352, pageEnd: 359 }
+  },
+  m6: {
+    1: { pageStart: 10, pageEnd: 21 },
+    2: { pageStart: 22, pageEnd: 32 },
+    3: { pageStart: 33, pageEnd: 49 },
+    4: { pageStart: 50, pageEnd: 65 },
+    5: { pageStart: 66, pageEnd: 77 },
+    6: { pageStart: 78, pageEnd: 92 },
+    7: { pageStart: 93, pageEnd: 105 },
+    8: { pageStart: 106, pageEnd: 119 },
+    9: { pageStart: 120, pageEnd: 134 }
+  },
+  m7: {
+    1: { pageStart: 15, pageEnd: 26 },
+    2: { pageStart: 27, pageEnd: 38 },
+    3: { pageStart: 39, pageEnd: 54 },
+    4: { pageStart: 55, pageEnd: 67 },
+    5: { pageStart: 68, pageEnd: 82 },
+    6: { pageStart: 83, pageEnd: 96 },
+    7: { pageStart: 97, pageEnd: 113 },
+    8: { pageStart: 114, pageEnd: 125 },
+    9: { pageStart: 126, pageEnd: 139 },
+    10: { pageStart: 140, pageEnd: 150 },
+    11: { pageStart: 151, pageEnd: 157 },
+    12: { pageStart: 158, pageEnd: 169 },
+    13: { pageStart: 170, pageEnd: 183 },
+    14: { pageStart: 184, pageEnd: 194 },
+    15: { pageStart: 195, pageEnd: 206 },
+    16: { pageStart: 207, pageEnd: 219 },
+    17: { pageStart: 220, pageEnd: 247 },
+    18: { pageStart: 248, pageEnd: 258 },
+    19: { pageStart: 259, pageEnd: 268 },
+    20: { pageStart: 269, pageEnd: 281 },
+    21: { pageStart: 282, pageEnd: 294 },
+    22: { pageStart: 295, pageEnd: 310 },
+    23: { pageStart: 311, pageEnd: 321 },
+    24: { pageStart: 322, pageEnd: 331 },
+    25: { pageStart: 332, pageEnd: 341 },
+    26: { pageStart: 342, pageEnd: 353 },
+    27: { pageStart: 354, pageEnd: 367 },
+    28: { pageStart: 368, pageEnd: 379 },
+    29: { pageStart: 380, pageEnd: 391 },
+    30: { pageStart: 392, pageEnd: 419 },
+    31: { pageStart: 420, pageEnd: 430 },
+    32: { pageStart: 431, pageEnd: 442 },
+    33: { pageStart: 443, pageEnd: 453 },
+    34: { pageStart: 454, pageEnd: 462 }
+  }
+};
+
 function findTopic(module: ModuleMeta, lessonId: string) {
   return module.topics.find((topic) => topic.lessonIds.includes(lessonId));
+}
+
+function selectPrimaryVisualModel(module: ModuleMeta, objective: string): LessonContent['visualModels'][number] {
+  const text = objective.toLowerCase();
+  const has = (model: LessonContent['visualModels'][number]) => module.visualModels.includes(model);
+
+  if ((text.includes('word problem') || text.includes('two-step') || text.includes('unknown')) && has('tape-diagram')) {
+    return 'tape-diagram';
+  }
+  if ((text.includes('time') || text.includes('clock')) && has('clock')) {
+    return 'clock';
+  }
+  if ((text.includes('number line') || text.includes('round') || text.includes('nearest')) && has('number-line')) {
+    return 'number-line';
+  }
+  if ((text.includes('fraction') || text.includes('whole') || text.includes('unit fraction')) && has('fraction-strip')) {
+    return 'fraction-strip';
+  }
+  if ((text.includes('line plot') || text.includes('graph') || text.includes('data')) && has('graph')) {
+    return 'graph';
+  }
+  if ((text.includes('perimeter') || text.includes('geometry') || text.includes('attribute') || text.includes('figure')) && has('geometry')) {
+    return 'geometry';
+  }
+  if ((text.includes('area') || text.includes('square unit')) && has('area-model')) {
+    return 'area-model';
+  }
+  if ((text.includes('array') || text.includes('multiply') || text.includes('division') || text.includes('factor')) && has('array')) {
+    return 'array';
+  }
+  if ((text.includes('weight') || text.includes('kilogram') || text.includes('gram') || text.includes('liter') || text.includes('milliliter') || text.includes('measure')) && has('measurement')) {
+    return 'measurement';
+  }
+
+  return module.visualModels[0] ?? 'equal-groups';
+}
+
+function modelTeachingGuide(visualModel: LessonContent['visualModels'][number]) {
+  const guides: Record<LessonContent['visualModels'][number], {
+    board: string;
+    ask: string;
+    listen: string;
+    misconception: string;
+    exit: string;
+  }> = {
+    'equal-groups': {
+      board: 'Draw equal groups first. Label number of groups, size of each group, and total before writing an equation.',
+      ask: 'Ask: What is one group? How many groups are there? How many are in each group? What does the total count?',
+      listen: 'The student should connect groups, group size, total, and equation without counting unrelated objects.',
+      misconception: 'Watch for counting by ones without naming the unit, or using multiplication when the groups are not equal.',
+      exit: 'Use the exit ticket to check whether the student can name the unit and write a matching equation.'
+    },
+    array: {
+      board: 'Draw a compact row-and-column array. Label rows, columns, and total; then connect the array to multiplication or division.',
+      ask: 'Ask: What does each row show? What does each column show? Which factor is unknown? How does the same array show a related fact?',
+      listen: 'The student should explain rows and columns as equal groups, not just say the answer.',
+      misconception: 'Watch for swapping row count and row size without explaining what each factor means.',
+      exit: 'Use the exit ticket to check whether the student can read the array and explain the equation it represents.'
+    },
+    'tape-diagram': {
+      board: 'Draw one bar for the whole and partition it into equal units. Label known quantities before solving the unknown.',
+      ask: 'Ask: What does the whole bar represent? What is one unit? How many equal units are known? What is missing?',
+      listen: 'The student should use the diagram to justify the operation and the meaning of the answer.',
+      misconception: 'Watch for choosing an operation from keywords instead of from the relationship in the tape diagram.',
+      exit: 'Use the exit ticket to check whether the student can draw, label, solve, and answer in context.'
+    },
+    'number-line': {
+      board: 'Draw a clean number line with endpoints, benchmarks, and jumps. Label the unit before placing numbers or fractions.',
+      ask: 'Ask: What are the endpoints? What is one unit? What does each jump represent? How far is the point from 0 or from the benchmark?',
+      listen: 'The student should reason from distance and position on the number line.',
+      misconception: 'Watch for counting tick marks instead of intervals, or placing a point without defining the whole/unit.',
+      exit: 'Use the exit ticket to check whether the student labels intervals and explains position or distance.'
+    },
+    clock: {
+      board: 'Draw or use an analog clock. Mark the start time, end time, and elapsed-minute jumps around the clock.',
+      ask: 'Ask: Where does the minute hand start? Where does it end? How many minutes are in each jump? How do the hour and minute hands work together?',
+      listen: 'The student should count elapsed time by useful chunks, not treat the clock like a normal base-ten number line.',
+      misconception: 'Watch for confusing the hour hand with the minute hand or counting by ones around the entire clock.',
+      exit: 'Use the exit ticket to check whether the student can explain elapsed time with clock movement and a written answer.'
+    },
+    measurement: {
+      board: 'Write the measurement unit clearly, draw or show the tool, and keep labels attached to every number.',
+      ask: 'Ask: What unit are we using? What does the tool show? Are we estimating, measuring, rounding, adding, or subtracting?',
+      listen: 'The student should keep the unit with the number and explain whether the answer is exact, rounded, or computed.',
+      misconception: 'Watch for dropping units, mixing units, or computing before deciding what the measurement represents.',
+      exit: 'Use the exit ticket to check whether the student writes a measured or computed answer with the correct unit.'
+    },
+    'area-model': {
+      board: 'Draw a rectangle tiled with square units. Label side lengths, rows, columns, and total square units.',
+      ask: 'Ask: What is one square unit? How many rows? How many in each row? How can the rectangle be decomposed?',
+      listen: 'The student should connect tiling, side lengths, multiplication, and area units.',
+      misconception: 'Watch for counting boundary lengths when the lesson is about area, or writing units without "square".',
+      exit: 'Use the exit ticket to check whether the student can find area from a tiled or labeled rectangle.'
+    },
+    'fraction-strip': {
+      board: 'Draw the whole first, partition into equal parts, shade or mark the fraction, and label the unit fraction.',
+      ask: 'Ask: What is the whole? Are the parts equal? What is one unit fraction? How many unit fractions are named?',
+      listen: 'The student should define the whole before naming or comparing fractions.',
+      misconception: 'Watch for naming a fraction from shaded parts before checking that parts are equal and the whole is clear.',
+      exit: 'Use the exit ticket to check whether the student names the part, the unit, and the whole.'
+    },
+    graph: {
+      board: 'Display the data, choose the scale, label axes or categories, and read values from the graph before comparing.',
+      ask: 'Ask: What does each mark or bar represent? What is the scale? Which category is more or less? What question does the graph answer?',
+      listen: 'The student should read the scale correctly and use graph evidence in the answer.',
+      misconception: 'Watch for counting marks as ones when the graph scale is greater than one.',
+      exit: 'Use the exit ticket to check whether the student can create or read the graph and justify a comparison.'
+    },
+    geometry: {
+      board: 'Draw the figure large enough to mark sides, angles, attributes, area, or perimeter clearly.',
+      ask: 'Ask: What attributes define the figure? Which measurements matter? Are we finding area, perimeter, or classifying shape?',
+      listen: 'The student should use properties and measurements, not visual guessing.',
+      misconception: 'Watch for confusing area with perimeter or naming a shape from appearance instead of attributes.',
+      exit: 'Use the exit ticket to check whether the student labels the figure and explains the property or measurement used.'
+    }
+  };
+
+  return guides[visualModel];
 }
 
 function generatedLesson(module: ModuleMeta, lessonNumber: number): LessonContent | undefined {
@@ -1299,8 +1623,15 @@ function generatedLesson(module: ModuleMeta, lessonNumber: number): LessonConten
     return undefined;
   }
 
-  const overviewPages = OVERVIEW_PAGE_RANGES[module.id] ?? { pageStart: 1, pageEnd: 1 };
-  const visualModel = module.visualModels[0] ?? 'equal-groups';
+  const sourcePages = LESSON_PAGE_RANGES[module.id]?.[lessonNumber];
+  if (!sourcePages) {
+    return undefined;
+  }
+
+  const visualModel = selectPrimaryVisualModel(module, objective);
+  const guide = modelTeachingGuide(visualModel);
+  const note = LESSON_SOURCE_NOTES[lessonId];
+  const sourceNote = `Lesson ${lessonNumber} objective, concept development, problem set, exit ticket, and homework.`;
 
   return {
     id: lessonId,
@@ -1309,55 +1640,79 @@ function generatedLesson(module: ModuleMeta, lessonNumber: number): LessonConten
     lessonNumber,
     title: objective.replace(/\.$/, ''),
     objective,
-    studentGoal: `I can work toward this Eureka Math objective: ${objective}`,
+    studentGoal: `I can teach and explain this Eureka Math objective using the source model: ${objective}`,
     sourceRefs: [
       {
         sourceType: 'teacher-edition',
         path: module.sourcePdf,
-        pageStart: overviewPages.pageStart,
-        pageEnd: overviewPages.pageEnd,
-        note: 'Objective sourced from the module overview table. Lesson-specific deep authoring should use the full lesson pages next.'
+        pageStart: sourcePages.pageStart,
+        pageEnd: sourcePages.pageEnd,
+        note: sourceNote
       }
     ],
-    vocabulary: [topic.label, topic.title],
+    vocabulary: [topic.label, topic.title, ...module.visualModels],
     visualModels: module.visualModels,
     steps: [
       {
-        id: 'source-objective',
-        title: 'Read the Eureka objective',
+        id: 'source-goal',
+        title: 'Know the lesson question',
         shortTitle: 'Goal',
-        studentPrompt: objective,
-        teacherEditionBasis: `${topic.label}: ${topic.title}. Objective from the teacher-edition module overview table.`,
+        studentPrompt: note?.sourceProblem ?? `Student-facing target: ${objective}`,
+        teacherEditionBasis: `Use ${module.sourcePdf}, PDF pages ${sourcePages.pageStart}-${sourcePages.pageEnd}. Start from the concept development, then use the problem set and exit ticket for evidence.`,
         visualModel
       },
       {
-        id: 'model-the-idea',
-        title: 'Choose the lesson model',
+        id: 'source-model',
+        title: 'Put the model on the board',
         shortTitle: 'Model',
-        studentPrompt: `Use the module model for this objective: ${module.visualModels.join(', ')}.`,
-        teacherEditionBasis: `The module overview names the tools and representations used across ${module.title}.`,
+        studentPrompt: guide.board,
+        teacherEditionBasis: note?.teacherMove ?? `${topic.label}: ${topic.title}. Model family for this lesson: ${module.visualModels.join(', ')}.`,
         visualModel
       },
       {
-        id: 'connect-representations',
-        title: 'Connect words, model, and equation',
-        shortTitle: 'Connect',
-        studentPrompt: 'Say what the model shows, then connect it to the lesson objective.',
-        teacherEditionBasis: 'Eureka lessons move between concrete or pictorial models, words, and equations.',
+        id: 'source-meaning',
+        title: 'Name what each part means',
+        shortTitle: 'Meaning',
+        studentPrompt: guide.listen,
+        teacherEditionBasis: note?.teacherMove ?? 'Before solving, make the student name what the labels, units, quantities, and unknown represent.',
         visualModel
       },
       {
-        id: 'lesson-check',
-        title: 'Check your explanation',
-        shortTitle: 'Check',
-        studentPrompt: 'Explain the objective using the visual model and the lesson words.',
-        teacherEditionBasis: 'The check is aligned to the stated teacher-edition objective, not an added outside skill.',
+        id: 'source-picture',
+        title: 'Read the picture',
+        shortTitle: 'Picture',
+        studentPrompt: note?.sourceProblem ?? guide.ask,
+        teacherEditionBasis: 'Run one source-page example slowly. Require the student to explain the model before accepting the numerical answer.',
+        visualModel
+      },
+      {
+        id: 'source-draw',
+        title: 'Draw or label the model',
+        shortTitle: 'Draw',
+        studentPrompt: guide.board,
+        teacherEditionBasis: note?.teacherMove ?? 'Have the student reproduce the model with labels, then connect it to the equation or written answer.',
+        visualModel
+      },
+      {
+        id: 'source-exit',
+        title: 'Exit check',
+        shortTitle: 'Exit',
+        studentPrompt: `${note?.exitEvidence ?? guide.exit} Misconception to catch: ${guide.misconception}`,
+        teacherEditionBasis: 'Use the lesson exit ticket or problem-set pattern as evidence. Do not count a bare numerical answer as enough.',
+        visualModel
+      },
+      {
+        id: 'source-summary',
+        title: 'Say the lesson takeaway',
+        shortTitle: 'Sum',
+        studentPrompt: `The student should explain the model, the lesson words, and the answer in one connected sentence.`,
+        teacherEditionBasis: `Close by asking for one sentence that connects the model to the objective: ${objective}`,
         visualModel
       }
     ],
     summary: {
       takeaway: objective,
-      check: 'Can you explain the lesson objective using the model shown on this page?'
+      check: `${guide.listen} ${guide.exit}`
     }
   };
 }

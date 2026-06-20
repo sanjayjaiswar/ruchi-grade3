@@ -1,4 +1,4 @@
-import { NgClass, NgFor, NgIf, NgStyle, NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
+import { NgClass, NgFor, NgIf, NgStyle, NgSwitch, NgSwitchCase, NgSwitchDefault, NgTemplateOutlet } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
@@ -13,6 +13,22 @@ type Feedback = {
   body: string;
 };
 
+type InfoRow = {
+  label: string;
+  value: string;
+};
+
+type SourceVisualFacts = {
+  groupCount: number;
+  groupSize: number;
+  rowCount: number;
+  columnCount: number;
+  tapePartCount: number;
+  tapePartLabel: string;
+  tapeWholeLabel: string;
+  tapeCaption: string;
+};
+
 @Component({
   selector: 'app-lesson-page',
   imports: [
@@ -25,6 +41,7 @@ type Feedback = {
     NgSwitch,
     NgSwitchCase,
     NgSwitchDefault,
+    NgTemplateOutlet,
     RouterLink
   ],
   templateUrl: './lesson.html',
@@ -74,6 +91,15 @@ export class LessonPage implements OnInit {
   l6ExitFactor = '';
   l6ExitMeaning = '';
   feedback?: Feedback;
+  readonly figureDots = Array.from({ length: 12 });
+  readonly areaCells = Array.from({ length: 20 });
+  readonly fractionParts = Array.from({ length: 6 });
+  readonly graphBars = [
+    { label: 'A', height: 72 },
+    { label: 'B', height: 44 },
+    { label: 'C', height: 96 }
+  ];
+  readonly numberLineTicks = Array.from({ length: 7 });
 
   constructor(
     private readonly route: ActivatedRoute,
@@ -121,6 +147,157 @@ export class LessonPage implements OnInit {
       return '';
     }
     return `${this.lesson.steps.length} small screens`;
+  }
+
+  get sourceLessonQuestionRows(): InfoRow[] {
+    if (!this.lesson || !this.activeStep) {
+      return [];
+    }
+
+    const objective = this.lesson.objective;
+    const model = this.activeStep.visualModel;
+    const rowsByModel: Record<string, InfoRow[]> = {
+      'equal-groups': [
+        { label: 'Total', value: 'The full amount in the lesson situation' },
+        { label: 'Equal groups', value: 'Groups must be the same size before using multiplication or division' },
+        { label: 'Unknown', value: 'The group count, group size, product, or quotient named by the objective' }
+      ],
+      array: [
+        { label: 'Total', value: 'All objects in the array' },
+        { label: 'Rows / columns', value: 'Equal groups shown in a compact picture' },
+        { label: 'Unknown', value: 'The factor, quotient, row count, column count, or product in the objective' }
+      ],
+      'tape-diagram': [
+        { label: 'Whole', value: 'The full quantity or final amount in the word problem' },
+        { label: 'Parts / units', value: 'Known equal or related quantities labeled on the bar' },
+        { label: 'Unknown', value: 'The missing quantity and the operation path needed to solve' }
+      ],
+      'number-line': [
+        { label: 'Start / endpoint', value: 'The benchmark values or interval endpoints' },
+        { label: 'Unit interval', value: 'The equal jump size or partition size' },
+        { label: 'Unknown', value: 'The position, rounded value, elapsed amount, or comparison named by the objective' }
+      ],
+      clock: [
+        { label: 'Start time', value: 'Where the clock begins' },
+        { label: 'Jumps', value: 'Elapsed time counted in useful chunks' },
+        { label: 'Unknown', value: 'The end time, start time, or elapsed minutes' }
+      ],
+      measurement: [
+        { label: 'Quantity', value: 'The measured amount in the lesson situation' },
+        { label: 'Unit', value: 'The gram, kilogram, liter, milliliter, centimeter, or other unit' },
+        { label: 'Unknown', value: 'The estimate, measurement, sum, difference, or rounded value' }
+      ],
+      'area-model': [
+        { label: 'Plane figure', value: 'The shape being measured or tiled' },
+        { label: 'Square unit', value: 'The unit used to cover the figure without gaps or overlaps' },
+        { label: 'Unknown', value: 'The area, side length, or decomposed area named by the objective' }
+      ],
+      'fraction-strip': [
+        { label: 'Whole', value: 'The unit whole must be named first' },
+        { label: 'Equal parts', value: 'The partitions define the fractional unit' },
+        { label: 'Unknown', value: 'The fraction, comparison, equivalent name, or point on the number line' }
+      ],
+      graph: [
+        { label: 'Data', value: 'The counts or measurements collected in the lesson' },
+        { label: 'Scale', value: 'What each mark, bar, picture, or interval represents' },
+        { label: 'Unknown', value: 'The comparison, total, difference, or graph-based answer' }
+      ],
+      geometry: [
+        { label: 'Figure', value: 'The shape, rectangle, polygon, or object in the lesson' },
+        { label: 'Attributes', value: 'Sides, angles, area, perimeter, or classifications marked on the figure' },
+        { label: 'Unknown', value: 'The measure, category, perimeter, area, or explanation required' }
+      ]
+    };
+
+    const rows = [
+      ...(rowsByModel[model] ?? rowsByModel['equal-groups']),
+      { label: 'Lesson target', value: objective }
+    ];
+
+    if (this.activeStep.id === 'source-goal' && this.activeStep.studentPrompt && !this.activeStep.studentPrompt.startsWith('Student-facing target:')) {
+      return [{ label: 'Source context', value: this.activeStep.studentPrompt }, ...rows];
+    }
+
+    return rows;
+  }
+
+  get sourceLessonExplanation(): string {
+    if (!this.lesson || !this.activeStep) {
+      return '';
+    }
+    return `This lesson uses the ${this.activeStep.visualModel} model to make the objective teachable, then asks the student to explain the model before giving a final answer.`;
+  }
+
+  get sourceVisualFacts(): SourceVisualFacts {
+    const text = this.sourceContextText;
+    const lower = text.toLowerCase();
+    const fallback = {
+      groupCount: 3,
+      groupSize: 4,
+      rowCount: 3,
+      columnCount: 4,
+      tapePartCount: 3,
+      tapePartLabel: 'unit',
+      tapeWholeLabel: 'whole',
+      tapeCaption: 'knowns label the bar; unknown is marked'
+    };
+
+    const equalGroupsMatch =
+      text.match(/(\d+)\s+equal\s+groups?\s+of\s+(\d+)/i) ??
+      text.match(/(\d+)\s+groups?\s+of\s+(\d+)/i);
+    const arrayMatch = text.match(/array\s+with\s+(\d+)\s+rows?\s+and\s+(\d+)/i);
+    const tapeMatch = text.match(/tape diagram\s+with\s+(\d+)\s+parts?\s+and\s+(\d+)/i);
+    const equationMatch = text.match(/(\d+)\s*x\s*(\d+)\s*=\s*([a-z])/i);
+    const unknownLetterMatch = text.match(/letter\s+([a-z])\b/i);
+    const groupCount = this.toReasonableCount(equalGroupsMatch?.[1] ?? tapeMatch?.[1] ?? equationMatch?.[1], fallback.groupCount);
+    const groupSize = this.toReasonableCount(equalGroupsMatch?.[2] ?? tapeMatch?.[2] ?? equationMatch?.[2], fallback.groupSize);
+    const rowCount = this.toReasonableCount(arrayMatch?.[1], groupCount);
+    const columnCount = this.toReasonableCount(arrayMatch?.[2], groupSize);
+    const tapePartCount = this.toReasonableCount(tapeMatch?.[1] ?? equationMatch?.[1], groupCount);
+    const tapePartSize = this.toReasonableCount(tapeMatch?.[2] ?? equationMatch?.[2], groupSize);
+    const unit = lower.includes('leg') ? 'legs' : lower.includes('dollar') || lower.includes('money') ? 'dollars' : lower.includes('beetle') ? 'beetle legs' : '';
+    const unknown = equationMatch?.[3] ?? unknownLetterMatch?.[1];
+    const tapePartLabel = unit ? `${tapePartSize} ${unit}` : String(tapePartSize);
+
+    return {
+      groupCount,
+      groupSize,
+      rowCount,
+      columnCount,
+      tapePartCount,
+      tapePartLabel,
+      tapeWholeLabel: unknown ? `${unknown} total${unit ? ` ${unit}` : ''}` : fallback.tapeWholeLabel,
+      tapeCaption: unknown
+        ? `${tapePartCount} parts x ${tapePartLabel} = ${unknown}`
+        : `${tapePartCount} equal parts; unknown total or part is marked`
+    };
+  }
+
+  get sourceGroupSlots(): number[] {
+    return Array.from({ length: Math.min(this.sourceVisualFacts.groupCount, 6) }, (_, index) => index + 1);
+  }
+
+  get sourceGroupItemSlots(): number[] {
+    return Array.from({ length: Math.min(this.sourceVisualFacts.groupSize, 8) }, (_, index) => index + 1);
+  }
+
+  get sourceArrayDots(): number[] {
+    const facts = this.sourceVisualFacts;
+    return Array.from({ length: Math.min(facts.rowCount * facts.columnCount, 64) }, (_, index) => index + 1);
+  }
+
+  get sourceTapeParts(): number[] {
+    return Array.from({ length: Math.min(this.sourceVisualFacts.tapePartCount, 10) }, (_, index) => index + 1);
+  }
+
+  get sourceContextText(): string {
+    if (!this.lesson) {
+      return '';
+    }
+    return [
+      this.lesson.objective,
+      ...this.lesson.steps.flatMap((step) => [step.studentPrompt, step.teacherEditionBasis])
+    ].join(' ');
   }
 
   get total(): number {
@@ -189,6 +366,14 @@ export class LessonPage implements OnInit {
     this.l6ExitFactor = '';
     this.l6ExitMeaning = '';
     this.feedback = undefined;
+  }
+
+  private toReasonableCount(value: string | undefined, fallback: number): number {
+    const parsed = Number(value);
+    if (!Number.isInteger(parsed) || parsed < 1) {
+      return fallback;
+    }
+    return Math.min(parsed, 12);
   }
 
   private setCheckedFeedback(feedback: Feedback): void {

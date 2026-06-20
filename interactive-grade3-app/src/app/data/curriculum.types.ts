@@ -27,6 +27,12 @@ export type LessonStep = {
   visualModel: VisualModelType;
 };
 
+export type LessonSourceNote = {
+  sourceProblem: string;
+  teacherMove: string;
+  exitEvidence: string;
+};
+
 export type LessonContent = {
   id: string;
   moduleId: string;

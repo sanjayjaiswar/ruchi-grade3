@@ -110,8 +110,8 @@ Use this shape in lesson data:
 {
   sourceType: 'teacher-edition',
   path: 'EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf',
-  pageStart: 19,
-  pageEnd: 29,
+  pageStart: 23,
+  pageEnd: 33,
   note: 'Lesson 1 objective, concept development, problem set, exit ticket, and homework'
 }
 ```
@@ -239,7 +239,7 @@ EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf
 Relevant PDF pages already inspected:
 
 ```text
-19-29
+23-33
 ```
 
 Lesson objective:

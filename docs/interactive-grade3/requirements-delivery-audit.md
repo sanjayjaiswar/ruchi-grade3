@@ -37,7 +37,7 @@ The current app delivers:
 - Source-backed module/topic/lesson maps.
 - All 152 Grade 3 lesson routes.
 - Teacher-edition objective labels for every lesson.
-- Objective-backed generated lesson flows for every lesson not yet deeply authored.
+- Compact source-backed generated lesson flows for every lesson not yet deeply authored.
 - Module snapshot panels with topic count, lesson count, assessment checkpoints, visual model tags, and topic sequence map.
 - Module 1 Lesson 1 interactive lesson with 12 small learner-facing screens.
 - Teacher-edition objective and source page range visible on the lesson page.
@@ -48,8 +48,8 @@ The current app delivers:
 
 Remaining limitations:
 
-- Only Module 1 Lesson 1 is deeply authored from its full lesson pages.
-- Other lesson routes are source-backed by teacher-edition overview objectives and module model metadata; they intentionally avoid invented lesson-specific problem details.
+- Module 1 Lessons 1 and 4-6 are deeply authored from full lesson pages.
+- Remaining lesson routes now use lesson-specific teacher-edition page ranges and compact teacher-led source flows; they intentionally avoid invented bespoke interactions until each model family is deeply authored.
 - Browser/screenshot visual QA has not been run because browser/screen inspection needs explicit authorization.
 
 ## 3. Content Requirements Audit
@@ -58,9 +58,9 @@ Remaining limitations:
 | --- | --- | --- | --- |
 | Use Grade3 workspace only | Pass | App lives in `interactive-grade3-app/` under Grade3 | Reference projects were read-only. |
 | Teacher editions are source of truth | Pass | `sourceRefs` point to teacher-edition PDF pages | `tmp/req.txt` removed from app source refs. |
-| Do not invent curriculum facts | Pass | Generated lessons use objective, topic, source page range, and module models only | Deep lesson-specific examples exist only for Lesson 1. |
+| Do not invent curriculum facts | Pass | Generated lessons use objective, topic, source page range, and module models only | Deep bespoke examples exist only where lessons have been explicitly authored. |
 | Separate module pages | Pass | `/modules/m1` through `/modules/m7` return HTTP 200 | Each route renders module-specific title/topic/lesson map. |
-| Full Grade 3 structure | Pass | Modules 1-7 and all 152 lesson routes exist | Generated lesson flows are objective-backed unless deeply authored. |
+| Full Grade 3 structure | Pass | Modules 1-7 and all 152 lesson routes exist | Generated lesson flows are compact source-backed unless deeply authored. |
 | Module 1 overview | Pass | `/modules/m1` | Includes overview, visual model tags, topic map, lesson map, assessment checkpoint. |
 | All lesson routes populated | Pass | `/modules/*/lessons/*` route audit returned 152 OK | No expected Grade 3 lesson route is empty. |
 | Module 1 Lesson 1 complete deep lesson | Pass | `/modules/m1/lessons/1` | 12 small screens, visual model, checks, feedback, summary. |
