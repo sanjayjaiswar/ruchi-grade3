@@ -470,6 +470,362 @@
           </div>
         </div>
 
+        <div *ngSwitchCase="'l5-goal'" class="activity-grid">
+          <app-equal-groups-model
+            [groupCount]="3"
+            [groupSize]="6"
+            itemLabel="person"
+            [showAddition]="false"
+            [showUnitForm]="false"
+            [showMultiplication]="false" />
+          <div class="activity-card">
+            <h3>Lesson 5 question</h3>
+            <div class="bridge-table compact-table">
+              <div class="bridge-row">
+                <strong>Total</strong>
+                <span>18 people</span>
+              </div>
+              <div class="bridge-row">
+                <strong>Group size</strong>
+                <span>6 people at each table</span>
+              </div>
+              <div class="bridge-row">
+                <strong>Unknown</strong>
+                <span>How many tables, or groups?</span>
+              </div>
+            </div>
+            <p class="muted">This lesson uses division to find the number of groups.</p>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l5-make-groups'" class="activity-grid">
+          <app-equal-groups-model
+            [groupCount]="3"
+            [groupSize]="6"
+            itemLabel="person"
+            [showAddition]="false"
+            [showUnitForm]="false"
+            [showMultiplication]="false" />
+          <div class="activity-card">
+            <h3>Make groups of 6</h3>
+            <p>18 people come to the party. Each table seats 6 people. How many tables are needed?</p>
+            <div class="answer-row">
+              <input class="answer-input" type="number" [(ngModel)]="l5TablesAnswer" aria-label="Number of tables" />
+              <button class="button" (click)="checkL5Tables()">Check</button>
+            </div>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l5-meaning'" class="activity-grid">
+          <div class="bridge-table" aria-label="18 divided by 6 equals 3 meaning">
+            <div class="bridge-row">
+              <strong>18</strong>
+              <span>Total people</span>
+            </div>
+            <div class="bridge-row">
+              <strong>&divide; 6</strong>
+              <span>6 people in each group</span>
+            </div>
+            <div class="bridge-row">
+              <strong>= 3</strong>
+              <span>3 groups, or tables</span>
+            </div>
+          </div>
+          <div class="activity-card">
+            <h3>What does the answer mean?</h3>
+            <p>In 18 &divide; 6 = 3, what does the 3 represent?</p>
+            <select class="answer-select" [(ngModel)]="l5UnknownMeaning" aria-label="Meaning of Lesson 5 quotient">
+              <option value="">Choose</option>
+              <option value="size">The size of each group</option>
+              <option value="groups">The number of groups</option>
+              <option value="total">The total number of people</option>
+            </select>
+            <button class="button" (click)="checkL5UnknownMeaning()">Check</button>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l5-count-by'" class="activity-grid">
+          <div class="activity-card">
+            <h3>Count by 3s</h3>
+            <p>Each burger pack adds 3 burgers. Stop when the total reaches 15.</p>
+            <div class="count-strip" aria-label="Count by threes to fifteen">
+              <span *ngFor="let value of [3,6,9,12,15]">{{ value }}</span>
+            </div>
+            <p class="muted">The number of counts is the number of packs.</p>
+          </div>
+          <div class="activity-card">
+            <h3>How many packs?</h3>
+            <p>15 burgers, 3 burgers in each pack.</p>
+            <div class="large-equation">15 &divide; 3 = ?</div>
+            <div class="answer-row">
+              <input class="answer-input" type="number" [(ngModel)]="l5BurgerPacks" aria-label="Number of burger packs" />
+              <button class="button" (click)="checkL5Burgers()">Check</button>
+            </div>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l5-exit-check'" class="activity-grid">
+          <app-equal-groups-model
+            [groupCount]="2"
+            [groupSize]="6"
+            itemLabel="triangle"
+            [showAddition]="false"
+            [showUnitForm]="false"
+            [showMultiplication]="false" />
+          <div class="activity-card">
+            <h3>Exit check</h3>
+            <p>Both answers tell how many groups there are.</p>
+            <div class="exit-equation">
+              12 &divide; 6 =
+              <input [(ngModel)]="l5ExitTriangles" aria-label="12 divided by 6 answer" />
+            </div>
+            <div class="exit-equation">
+              20 &divide; 5 =
+              <input [(ngModel)]="l5ExitSmoothies" aria-label="20 divided by 5 answer" />
+            </div>
+            <button class="button" (click)="checkL5Exit()">Check</button>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l5-summary'" class="activity-grid">
+          <div class="bridge-table" aria-label="Lesson 5 summary">
+            <div class="bridge-row">
+              <strong>Known</strong>
+              <span>Total amount</span>
+            </div>
+            <div class="bridge-row">
+              <strong>Known</strong>
+              <span>Size of each group</span>
+            </div>
+            <div class="bridge-row">
+              <strong>Unknown</strong>
+              <span>Number of groups</span>
+            </div>
+            <div class="bridge-row">
+              <strong>Example</strong>
+              <span>18 &divide; 6 = 3 means 3 groups</span>
+            </div>
+          </div>
+          <div class="activity-card">
+            <h3>Main takeaway</h3>
+            <p>{{ lesson.summary.takeaway }}</p>
+            <p class="muted">{{ lesson.summary.check }}</p>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l6-goal'" class="activity-grid">
+          <div class="array-visual" [style.gridTemplateColumns]="'repeat(5, minmax(20px, 1fr))'" aria-label="Array with 4 rows of 5">
+            <span *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]"></span>
+          </div>
+          <div class="activity-card">
+            <h3>Lesson 6 question</h3>
+            <div class="bridge-table compact-table">
+              <div class="bridge-row">
+                <strong>Total</strong>
+                <span>20 dots</span>
+              </div>
+              <div class="bridge-row">
+                <strong>Each row</strong>
+                <span>5 dots</span>
+              </div>
+              <div class="bridge-row">
+                <strong>Unknown</strong>
+                <span>How many rows?</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l6-teams-array'" class="activity-grid">
+          <div class="array-visual" [style.gridTemplateColumns]="'repeat(5, minmax(20px, 1fr))'" aria-label="20 children in rows of 5">
+            <span *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]"></span>
+          </div>
+          <div class="activity-card">
+            <h3>How many teams?</h3>
+            <p>20 children play a game. There are 5 children on each team.</p>
+            <div class="large-equation">20 &divide; 5 = ?</div>
+            <div class="answer-row">
+              <input class="answer-input" type="number" [(ngModel)]="l6TeamsAnswer" aria-label="Number of teams" />
+              <button class="button" (click)="checkL6Teams()">Check</button>
+            </div>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l6-equation-bridge'" class="activity-grid">
+          <div class="array-visual" [style.gridTemplateColumns]="'repeat(5, minmax(20px, 1fr))'" aria-label="Array with 3 rows of 5">
+            <span *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]"></span>
+          </div>
+          <div class="activity-card">
+            <h3>Same array, two equations</h3>
+            <div class="bridge-table compact-table">
+              <div class="bridge-row">
+                <strong>Division</strong>
+                <span>15 &divide; 3 = 5</span>
+              </div>
+              <div class="bridge-row">
+                <strong>Multiplication</strong>
+                <span>3 x 5 = 15</span>
+              </div>
+            </div>
+            <p>Where does the quotient 5 appear in the multiplication equation?</p>
+            <select class="answer-select" [(ngModel)]="l6QuotientLocation" aria-label="Where quotient appears in multiplication">
+              <option value="">Choose</option>
+              <option value="factor">As a factor</option>
+              <option value="total">As the total</option>
+              <option value="symbol">As the multiplication symbol</option>
+            </select>
+            <button class="button" (click)="checkL6QuotientLocation()">Check</button>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l6-related-equations'" class="activity-grid">
+          <div class="array-visual" [style.gridTemplateColumns]="'repeat(3, minmax(20px, 1fr))'" aria-label="Array with 8 rows of 3">
+            <span *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]"></span>
+          </div>
+          <div class="activity-card">
+            <h3>Related equations</h3>
+            <div class="bridge-table compact-table">
+              <div class="bridge-row">
+                <strong>Multiplication</strong>
+                <span>? x 3 = 24</span>
+              </div>
+              <div class="bridge-row">
+                <strong>Division</strong>
+                <span>24 &divide; 3 = ?</span>
+              </div>
+            </div>
+            <div class="answer-row">
+              <input class="answer-input" type="number" [(ngModel)]="l6RelatedFactor" aria-label="Unknown factor for blank times 3 equals 24" />
+              <button class="button" (click)="checkL6RelatedFactor()">Check</button>
+            </div>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l6-exit-check'" class="activity-grid">
+          <div class="array-visual" [style.gridTemplateColumns]="'repeat(6, minmax(20px, 1fr))'" aria-label="12 notecards in rows of 6">
+            <span *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12]"></span>
+          </div>
+          <div class="activity-card">
+            <h3>Exit check</h3>
+            <p>12 notecards are arranged into rows of 6.</p>
+            <div class="exit-equation">
+              12 &divide; 6 =
+              <input [(ngModel)]="l6ExitQuotient" aria-label="12 divided by 6 answer" />
+            </div>
+            <div class="exit-equation">
+              <input [(ngModel)]="l6ExitFactor" aria-label="Unknown factor for rows of 6" />
+              x 6 = 12
+            </div>
+            <input
+              class="long-input"
+              [(ngModel)]="l6ExitMeaning"
+              placeholder="number of rows"
+              aria-label="Meaning of quotient and unknown factor" />
+            <button class="button" (click)="checkL6Exit()">Check</button>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'l6-summary'" class="activity-grid">
+          <div class="bridge-table" aria-label="Lesson 6 summary">
+            <div class="bridge-row">
+              <strong>Array</strong>
+              <span>Shows equal rows or groups</span>
+            </div>
+            <div class="bridge-row">
+              <strong>Division</strong>
+              <span>24 &divide; 3 = 8</span>
+            </div>
+            <div class="bridge-row">
+              <strong>Multiplication</strong>
+              <span>8 x 3 = 24</span>
+            </div>
+            <div class="bridge-row">
+              <strong>Connection</strong>
+              <span>The quotient 8 is the unknown factor</span>
+            </div>
+          </div>
+          <div class="activity-card">
+            <h3>Main takeaway</h3>
+            <p>{{ lesson.summary.takeaway }}</p>
+            <p class="muted">{{ lesson.summary.check }}</p>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'source-goal'" class="source-authored-panel">
+          <div class="source-model-cue" [attr.data-model]="activeStep.visualModel">
+            <strong>{{ activeStep.visualModel }}</strong>
+            <span>source-backed teacher flow</span>
+          </div>
+          <div class="activity-card">
+            <h3>{{ activeStep.title }}</h3>
+            <p>{{ activeStep.studentPrompt }}</p>
+            <div class="bridge-table compact-table">
+              <div class="bridge-row">
+                <strong>Objective</strong>
+                <span>{{ lesson.objective }}</span>
+              </div>
+              <div class="bridge-row">
+                <strong>Use this</strong>
+                <span>{{ activeStep.teacherEditionBasis }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'source-model'" class="source-authored-panel">
+          <div class="source-model-cue" [attr.data-model]="activeStep.visualModel">
+            <strong>{{ activeStep.visualModel }}</strong>
+            <span>model first, symbols second</span>
+          </div>
+          <div class="activity-card">
+            <h3>{{ activeStep.title }}</h3>
+            <p>{{ activeStep.studentPrompt }}</p>
+            <p class="muted">{{ activeStep.teacherEditionBasis }}</p>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'source-example'" class="source-authored-panel">
+          <div class="source-model-cue" [attr.data-model]="activeStep.visualModel">
+            <strong>{{ activeStep.visualModel }}</strong>
+            <span>teach one example slowly</span>
+          </div>
+          <div class="activity-card">
+            <h3>{{ activeStep.title }}</h3>
+            <p>{{ activeStep.studentPrompt }}</p>
+            <div class="bridge-table compact-table">
+              <div class="bridge-row">
+                <strong>Teacher move</strong>
+                <span>{{ activeStep.teacherEditionBasis }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'source-check'" class="source-authored-panel">
+          <div class="source-model-cue" [attr.data-model]="activeStep.visualModel">
+            <strong>{{ activeStep.visualModel }}</strong>
+            <span>listen for meaning</span>
+          </div>
+          <div class="activity-card">
+            <h3>{{ activeStep.title }}</h3>
+            <p>{{ activeStep.studentPrompt }}</p>
+            <p class="muted">{{ activeStep.teacherEditionBasis }}</p>
+            <button class="button generic-check" (click)="completeGenericStep()">Student can explain this</button>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'source-summary'" class="source-authored-panel">
+          <div class="source-model-cue" [attr.data-model]="activeStep.visualModel">
+            <strong>{{ activeStep.visualModel }}</strong>
+            <span>lesson takeaway</span>
+          </div>
+          <div class="activity-card">
+            <h3>Main takeaway</h3>
+            <p>{{ lesson.summary.takeaway }}</p>
+            <p class="muted">{{ lesson.summary.check }}</p>
+          </div>
+        </div>
+
         <div *ngSwitchDefault class="activity-card">
           <div class="generic-lesson-panel">
             <div class="generic-visual" [attr.data-model]="activeStep.visualModel">

@@ -62,6 +62,17 @@ export class LessonPage implements OnInit {
   l4ExitDivisor = '';
   l4ExitQuotient = '';
   l4ExitFifteen = '';
+  l5TablesAnswer: number | null = null;
+  l5UnknownMeaning = '';
+  l5BurgerPacks: number | null = null;
+  l5ExitTriangles = '';
+  l5ExitSmoothies = '';
+  l6TeamsAnswer: number | null = null;
+  l6QuotientLocation = '';
+  l6RelatedFactor: number | null = null;
+  l6ExitQuotient = '';
+  l6ExitFactor = '';
+  l6ExitMeaning = '';
   feedback?: Feedback;
 
   constructor(
@@ -166,29 +177,126 @@ export class LessonPage implements OnInit {
     this.l4ExitDivisor = '';
     this.l4ExitQuotient = '';
     this.l4ExitFifteen = '';
+    this.l5TablesAnswer = null;
+    this.l5UnknownMeaning = '';
+    this.l5BurgerPacks = null;
+    this.l5ExitTriangles = '';
+    this.l5ExitSmoothies = '';
+    this.l6TeamsAnswer = null;
+    this.l6QuotientLocation = '';
+    this.l6RelatedFactor = null;
+    this.l6ExitQuotient = '';
+    this.l6ExitFactor = '';
+    this.l6ExitMeaning = '';
     this.feedback = undefined;
+  }
+
+  private setCheckedFeedback(feedback: Feedback): void {
+    this.feedback = feedback;
+    this.playCheckSound(feedback.status === 'correct');
+  }
+
+  private playCheckSound(isCorrect: boolean): void {
+    if (isCorrect) {
+      this.playRightChime();
+    } else {
+      this.playWrongBuzz();
+    }
+
+    if (
+      typeof window === 'undefined' ||
+      !('speechSynthesis' in window) ||
+      typeof SpeechSynthesisUtterance === 'undefined'
+    ) {
+      return;
+    }
+
+    window.speechSynthesis.cancel();
+
+    const utterance = new SpeechSynthesisUtterance(isCorrect ? "Yes! That's right!" : 'Oops, wrong. Try again.');
+    utterance.rate = isCorrect ? 1.12 : 0.9;
+    utterance.pitch = isCorrect ? 1.35 : 0.75;
+    window.speechSynthesis.speak(utterance);
+  }
+
+  private playRightChime(): void {
+    this.playToneSequence([
+      { frequency: 523.25, start: 0, duration: 0.11, volume: 0.13 },
+      { frequency: 659.25, start: 0.09, duration: 0.12, volume: 0.13 },
+      { frequency: 783.99, start: 0.19, duration: 0.16, volume: 0.14 }
+    ]);
+  }
+
+  private playWrongBuzz(): void {
+    this.playToneSequence([
+      { frequency: 155, start: 0, duration: 0.16, volume: 0.16, type: 'sawtooth' },
+      { frequency: 105, start: 0.15, duration: 0.2, volume: 0.14, type: 'sawtooth' }
+    ]);
+  }
+
+  private playToneSequence(
+    tones: Array<{ frequency: number; start: number; duration: number; volume: number; type?: OscillatorType }>
+  ): void {
+    if (typeof window === 'undefined') {
+      return;
+    }
+
+    const browserWindow = window as typeof window & { webkitAudioContext?: typeof AudioContext };
+    const AudioContextConstructor = browserWindow.AudioContext ?? browserWindow.webkitAudioContext;
+
+    if (!AudioContextConstructor) {
+      return;
+    }
+
+    const audioContext = new AudioContextConstructor();
+    const now = audioContext.currentTime;
+    let endTime = now;
+
+    tones.forEach((tone) => {
+      const oscillator = audioContext.createOscillator();
+      const gain = audioContext.createGain();
+      const startTime = now + tone.start;
+      const stopTime = startTime + tone.duration;
+
+      oscillator.type = tone.type ?? 'sine';
+      oscillator.frequency.setValueAtTime(tone.frequency, startTime);
+
+      gain.gain.setValueAtTime(0.0001, startTime);
+      gain.gain.exponentialRampToValueAtTime(tone.volume, startTime + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.0001, stopTime);
+
+      oscillator.connect(gain);
+      gain.connect(audioContext.destination);
+      oscillator.start(startTime);
+      oscillator.stop(stopTime);
+      endTime = Math.max(endTime, stopTime);
+    });
+
+    window.setTimeout(() => {
+      void audioContext.close();
+    }, Math.max(0, (endTime - now) * 1000 + 50));
   }
 
   checkGroupCount(): void {
     if (this.groupCountAnswer === this.groupCount) {
-      this.feedback = {
+      this.setCheckedFeedback({
         status: 'correct',
         title: 'Correct',
         body: `There are ${this.groupCount} equal groups. Each group has ${this.groupSize}, so the total is ${this.total}.`
-      };
+      });
       return;
     }
-    this.feedback = {
+    this.setCheckedFeedback({
       status: 'needs-work',
       title: 'Count the groups again',
       body: 'The number of groups is the number of containers, not the number inside one container.'
-    };
+    });
   }
 
   checkRepeatedAddition(): void {
     const normalized = this.repeatedBlank.replace(/\s/g, '');
     const accepted = ['2+2+2+2+2+2=12', '2+2+2+2+2+2'].includes(normalized);
-    this.feedback = accepted
+    this.setCheckedFeedback(accepted
       ? {
           status: 'correct',
           title: 'The addition matches the picture',
@@ -198,11 +306,11 @@ export class LessonPage implements OnInit {
           status: 'needs-work',
           title: 'Match one addend to one group',
           body: 'There are 6 groups of 2, so the repeated addition should show six 2s.'
-        };
+        });
   }
 
   checkMultiplication(): void {
-    this.feedback =
+    this.setCheckedFeedback(
       this.multiplicationChoice === '6x2'
         ? {
             status: 'correct',
@@ -213,11 +321,11 @@ export class LessonPage implements OnInit {
             status: 'needs-work',
             title: 'Use groups first, size second',
             body: 'This lesson reads 6 x 2 as 6 groups of 2, matching the counters.'
-          };
+          });
   }
 
   checkEqualGroups(): void {
-    this.feedback =
+    this.setCheckedFeedback(
       this.equalCheckChoice === 'not-equal'
         ? {
             status: 'correct',
@@ -228,7 +336,7 @@ export class LessonPage implements OnInit {
             status: 'needs-work',
             title: 'Check every group',
             body: 'Multiplication represents equal groups. One group is smaller, so this picture does not match 3 x 4.'
-          };
+          });
   }
 
   checkExit(): void {
@@ -239,7 +347,7 @@ export class LessonPage implements OnInit {
       this.exitProduct.trim() === '8' &&
       this.exitFactor.trim() === '2';
 
-    this.feedback = additionOk
+    this.setCheckedFeedback(additionOk
       ? {
           status: 'correct',
           title: 'Lesson 1 takeaway is in place',
@@ -249,11 +357,11 @@ export class LessonPage implements OnInit {
           status: 'needs-work',
           title: 'Use the picture to fill every blank',
           body: 'The picture shows 4 equal groups. Each group has 2 slices, for a total of 8.'
-        };
+        });
   }
 
   checkL4FairShare(): void {
-    this.feedback =
+    this.setCheckedFeedback(
       this.l4FairShareAnswer === 9
         ? {
             status: 'correct',
@@ -264,11 +372,11 @@ export class LessonPage implements OnInit {
             status: 'needs-work',
             title: 'Share into exactly 2 groups',
             body: 'The 2 tells how many equal groups there are. Share all 18 markers into those 2 groups, then count one group.'
-          };
+          });
   }
 
   checkL4UnknownMeaning(): void {
-    this.feedback =
+    this.setCheckedFeedback(
       this.l4UnknownMeaning === 'size'
         ? {
             status: 'correct',
@@ -279,11 +387,11 @@ export class LessonPage implements OnInit {
             status: 'needs-work',
             title: 'Use the known numbers first',
             body: 'The number after the division sign is 2, so there are already 2 groups. The unknown is not the number of groups here; it is the size of each group.'
-          };
+          });
   }
 
   checkL4DianaSentence(): void {
-    this.feedback =
+    this.setCheckedFeedback(
       this.l4DianaSentence === '12div3'
         ? {
             status: 'correct',
@@ -294,11 +402,11 @@ export class LessonPage implements OnInit {
             status: 'needs-work',
             title: 'Choose the sentence that finds group size',
             body: 'Use the total first, then divide by the number of equal groups. Diana has 3 groups, so divide 12 by 3.'
-          };
+          });
   }
 
   checkL4EightDivFour(): void {
-    this.feedback =
+    this.setCheckedFeedback(
       this.l4EightDivFour === 2
         ? {
             status: 'correct',
@@ -309,7 +417,7 @@ export class LessonPage implements OnInit {
             status: 'needs-work',
             title: 'Count one equal group',
             body: 'The picture shows 8 counters split into 4 equal groups. The answer is not the 4 groups; it is how many counters are inside each group.'
-          };
+          });
   }
 
   checkL4Exit(): void {
@@ -318,7 +426,7 @@ export class LessonPage implements OnInit {
       this.l4ExitQuotient.trim() === '4' &&
       this.l4ExitFifteen.trim() === '5';
 
-    this.feedback = exitOk
+    this.setCheckedFeedback(exitOk
       ? {
           status: 'correct',
           title: 'Lesson 4 takeaway is in place',
@@ -328,7 +436,131 @@ export class LessonPage implements OnInit {
           status: 'needs-work',
           title: 'Each answer should mean group size',
           body: 'For 16 divided by 4, the 4 after the division sign is the number of groups. The quotient is how many glue sticks go in each group. For 15 divided by 3, share 15 into 3 equal groups.'
-        };
+        });
+  }
+
+  checkL5Tables(): void {
+    this.setCheckedFeedback(
+      this.l5TablesAnswer === 3
+        ? {
+            status: 'correct',
+            title: 'Correct: 3 tables',
+            body: 'The 18 people are put into groups of 6. The answer tells the number of groups, so Cynthia needs 3 tables.'
+          }
+        : {
+            status: 'needs-work',
+            title: 'Make groups of 6',
+            body: 'The 6 is the size of each group. Keep making groups of 6 from the 18 people, then count how many groups you made.'
+          });
+  }
+
+  checkL5UnknownMeaning(): void {
+    this.setCheckedFeedback(
+      this.l5UnknownMeaning === 'groups'
+        ? {
+            status: 'correct',
+            title: 'Yes: the answer is number of groups',
+            body: 'In 18 divided by 6 equals 3, 18 is the total and 6 is the size of each group. The 3 tells how many groups there are.'
+          }
+        : {
+            status: 'needs-work',
+            title: 'The group size is already known',
+            body: 'The 6 tells how many are in each group. The unknown is how many groups of 6 fit into 18.'
+          });
+  }
+
+  checkL5Burgers(): void {
+    this.setCheckedFeedback(
+      this.l5BurgerPacks === 5
+        ? {
+            status: 'correct',
+            title: 'Correct: 5 packs',
+            body: 'Counting by 3s lands on 15 after 5 groups: 3, 6, 9, 12, 15.'
+          }
+        : {
+            status: 'needs-work',
+            title: 'Track how many 3s you count',
+            body: 'Each count is one pack. Count 3, 6, 9, 12, 15 and track the number of counts.'
+          });
+  }
+
+  checkL5Exit(): void {
+    const exitOk = this.l5ExitTriangles.trim() === '2' && this.l5ExitSmoothies.trim() === '4';
+
+    this.setCheckedFeedback(exitOk
+      ? {
+          status: 'correct',
+          title: 'Lesson 5 takeaway is in place',
+          body: 'Both answers tell the number of groups: 12 triangles in groups of 6 makes 2 groups, and 20 strawberries with 5 per smoothie makes 4 smoothies.'
+        }
+      : {
+          status: 'needs-work',
+          title: 'Each answer should mean number of groups',
+          body: 'The group size is given in each problem. Count how many groups of that size fit into the total.'
+        });
+  }
+
+  checkL6Teams(): void {
+    this.setCheckedFeedback(
+      this.l6TeamsAnswer === 4
+        ? {
+            status: 'correct',
+            title: 'Correct: 4 teams',
+            body: 'The array shows 20 children arranged with 5 children in each row. There are 4 rows, so there are 4 teams.'
+          }
+        : {
+            status: 'needs-work',
+            title: 'Count the rows',
+            body: 'The 5 tells how many children are on each team. The unknown is how many rows or teams of 5 make 20.'
+          });
+  }
+
+  checkL6QuotientLocation(): void {
+    this.setCheckedFeedback(
+      this.l6QuotientLocation === 'factor'
+        ? {
+            status: 'correct',
+            title: 'Correct: the quotient is a factor',
+            body: 'In 15 divided by 3 equals 5, the quotient 5 appears as the unknown factor in 3 times 5 equals 15.'
+          }
+        : {
+            status: 'needs-work',
+            title: 'Look for the same number',
+            body: 'The same array has 3 groups of 5. The 5 is the quotient in division and a factor in multiplication.'
+          });
+  }
+
+  checkL6RelatedFactor(): void {
+    this.setCheckedFeedback(
+      this.l6RelatedFactor === 8
+        ? {
+            status: 'correct',
+            title: 'Correct: 8 threes make 24',
+            body: 'The related division equation is 24 divided by 3 equals 8, so the unknown factor in blank times 3 equals 24 is 8.'
+          }
+        : {
+            status: 'needs-work',
+            title: 'Use the related division equation',
+            body: 'Ask how many groups of 3 make 24. Count by 3s to 24 or solve 24 divided by 3.'
+          });
+  }
+
+  checkL6Exit(): void {
+    const meaning = this.l6ExitMeaning.trim().toLowerCase();
+    const meaningOk = meaning.includes('row') || meaning.includes('group');
+    const exitOk = this.l6ExitQuotient.trim() === '2' && this.l6ExitFactor.trim() === '2' && meaningOk;
+
+    this.setCheckedFeedback(exitOk
+      ? {
+          status: 'correct',
+          title: 'Lesson 6 takeaway is in place',
+          body: 'The quotient and unknown factor both represent the number of rows, or groups, of 6 notecards.'
+        }
+      : {
+          status: 'needs-work',
+          title: 'Connect both blanks to the array',
+          body: 'There are 12 notecards arranged in rows of 6. Both blanks are 2, and that 2 means the number of rows or groups.'
+        });
   }
 
   completeGenericStep(): void {

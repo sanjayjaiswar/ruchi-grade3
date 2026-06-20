@@ -34,6 +34,8 @@ Status: Active planning
 | Full-width layout pass | Done | Page frame widened, headings reduced, home page curriculum flow added. |
 | Lesson authoring playbook | Done | Rules added to prevent objective-only routes from being treated as authored lessons. |
 | Module 1 Lesson 4 calibration | Done | Lesson 4 authored from teacher-edition pages 63-74 and build validation passed. |
+| Module 1 Topic B calibration | Done | Lessons 4-6 authored from teacher-edition pages and build validation passed. |
+| Module 1 full pass | Done | Lessons 1-21 now have source-backed records; build and all-route validation passed. |
 
 ## 3. Phase Tracker
 
@@ -72,6 +74,9 @@ Status: Active planning
 | Add topic metadata for Modules 1-7 | Done | Codex | Lesson lists render from data for every module. |
 | Add Lesson 1 structured content | Done | Codex | Lesson route renders source-aligned steps. |
 | Add Lesson 4 structured content | Done | Codex | Source-backed lesson content and interactions added; `npm run build` passed. |
+| Add Lesson 5 structured content | Done | Codex | Source-backed lesson content and interactions added; `npm run build` passed. |
+| Add Lesson 6 structured content | Done | Codex | Source-backed lesson content and interactions added; `npm run build` passed. |
+| Add Module 1 compact source-authored lessons | Done | Codex | Lessons 2-3 and 7-21 added with exact PDF page ranges, lesson-specific guidance, and compact source renderer. |
 | Add source reference fields | Done | Codex | Lesson data includes teacher-edition source reference. |
 | Add all lesson objectives | Done | Codex | 152 teacher-edition overview objectives entered. |
 | Generate all lesson routes | Done | Codex | 152 lesson URLs return HTTP 200. |
@@ -96,6 +101,9 @@ Status: Active planning
 | Accessibility pass | In progress | Codex | Labels and role/status basics added; browser pass not run. |
 | Source alignment pass | Done | Codex | Lesson 1 aligned to inspected teacher-edition pages 19-29. |
 | Module 1 Lesson 4 source alignment pass | Done | Codex | Teacher-edition pages 63-74 extracted/rendered; implementation authored and build validation passed. |
+| Module 1 Lesson 5 source alignment pass | Done | Codex | Teacher-edition pages 75-84 extracted/rendered; implementation authored and build validation passed. |
+| Module 1 Lesson 6 source alignment pass | Done | Codex | Teacher-edition pages 85-94 extracted/rendered; implementation authored and build validation passed. |
+| Module 1 full source-backed pass | Done | Codex | Lessons 1-21 source-backed; build and all-route validation passed. |
 | Source audit doc | Done | Codex | `source-audit.md` added with findings and source rules. |
 | Requirements delivery audit | Done | Codex | `requirements-delivery-audit.md` added with content/design status. |
 | Root README | Done | Codex | `README.md` added at Grade3 workspace root. |
@@ -113,7 +121,8 @@ Status: Active planning
 
 - Deep-author Module 1 Lesson 2 from its teacher-edition lesson pages.
 - Deep-author Module 1 Lesson 3 from its teacher-edition lesson pages.
-- Deep-author Module 1 Lessons 5-6 from their teacher-edition lesson pages after Lesson 4 validation.
+- Upgrade Module 1 compact source-authored lessons to bespoke interactions where needed.
+- Extract a reusable `ArrayModelComponent` before authoring more array-heavy lessons.
 - Add Module 2 visual number line and clock interactions.
 - Add Module 4 area tile grid.
 - Add Module 5 fraction strip and number line.
@@ -169,6 +178,11 @@ Status: Active planning
 | 2026-06-19 | Module 1 Lesson 4 PDF extraction/render | Passed | Teacher-edition PDF pages 63-74 extracted and rendered under `tmp/lesson-renders/m1-l4/`. |
 | 2026-06-19 | Module 1 Lesson 4 Angular build | Passed | `npm run build` completed without warnings or errors after Lesson 4 authoring. |
 | 2026-06-19 | Module 1 Lesson 4 route check | Passed | `/ruchika-grade3/modules/m1/lessons/4` returned HTTP 200 after dev-server restart. |
+| 2026-06-19 | Module 1 Lessons 5-6 PDF extraction/render | Passed | Teacher-edition PDF pages 75-94 extracted and rendered under `tmp/lesson-renders/m1-l5/` and `tmp/lesson-renders/m1-l6/`. |
+| 2026-06-20 | Module 1 Lessons 5-6 Angular build | Passed | `npm run build` completed without warnings or errors after Lessons 5-6 authoring. |
+| 2026-06-20 | Module 1 Lessons 5-6 route check | Passed | `/ruchika-grade3/modules/m1/lessons/5` and `/ruchika-grade3/modules/m1/lessons/6` returned HTTP 200 after dev-server restart. |
+| 2026-06-20 | Module 1 full pass Angular build | Passed | `npm run build` completed without warnings or errors after source-backed records for Lessons 2-3 and 7-21 and compact visual sizing. |
+| 2026-06-20 | Module 1 full route audit | Passed | `/ruchika-grade3/modules/m1/lessons/1` through `/lessons/21` returned HTTP 200 after dev-server restart. |
 
 ## 7. Change Log
 
@@ -183,3 +197,5 @@ Status: Active planning
 | 2026-06-18 | Added teacher-edition objective labels and objective-backed routes for all 152 Grade 3 lessons. |
 | 2026-06-18 | Replaced top pill navigation with a collapsible left curriculum drawer for modules and lessons. |
 | 2026-06-19 | Added lesson authoring playbook and source-authored Module 1 Lesson 4 calibration lesson. |
+| 2026-06-19 | Added source-authored Module 1 Lessons 5 and 6 to complete the Topic B calibration slice. |
+| 2026-06-20 | Added compact source-authored flows for all remaining Module 1 lessons and reduced oversized dot/array visuals. |

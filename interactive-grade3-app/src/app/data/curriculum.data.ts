@@ -325,6 +325,371 @@ export const MODULES: ModuleMeta[] = [
   }
 ];
 
+const MODULE_1_PDF = 'EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf';
+
+type Module1LessonSeed = {
+  lessonNumber: number;
+  topicId: string;
+  pageStart: number;
+  pageEnd: number;
+  title: string;
+  objective: string;
+  goal: string;
+  vocabulary: string[];
+  visualModels: LessonContent['visualModels'];
+  modelFocus: string;
+  concept: string;
+  example: string;
+  teacherMove: string;
+  check: string;
+};
+
+function module1SourceLesson(seed: Module1LessonSeed): LessonContent {
+  return {
+    id: `m1-l${seed.lessonNumber}`,
+    moduleId: 'm1',
+    topicId: seed.topicId,
+    lessonNumber: seed.lessonNumber,
+    title: seed.title,
+    objective: seed.objective,
+    studentGoal: seed.goal,
+    sourceRefs: [
+      {
+        sourceType: 'teacher-edition',
+        path: MODULE_1_PDF,
+        pageStart: seed.pageStart,
+        pageEnd: seed.pageEnd,
+        note: `Lesson ${seed.lessonNumber} objective, concept development, problem set, exit ticket, and homework.`
+      }
+    ],
+    vocabulary: seed.vocabulary,
+    visualModels: seed.visualModels,
+    steps: [
+      {
+        id: 'source-goal',
+        title: 'Start with the lesson idea',
+        shortTitle: 'Goal',
+        studentPrompt: seed.goal,
+        teacherEditionBasis: `Lesson ${seed.lessonNumber} objective: ${seed.objective}`,
+        visualModel: seed.visualModels[0]
+      },
+      {
+        id: 'source-model',
+        title: 'Use the lesson model',
+        shortTitle: 'Model',
+        studentPrompt: seed.modelFocus,
+        teacherEditionBasis: seed.concept,
+        visualModel: seed.visualModels[0]
+      },
+      {
+        id: 'source-example',
+        title: 'Teach the source example',
+        shortTitle: 'Example',
+        studentPrompt: seed.example,
+        teacherEditionBasis: seed.teacherMove,
+        visualModel: seed.visualModels[0]
+      },
+      {
+        id: 'source-check',
+        title: 'Check the student explanation',
+        shortTitle: 'Check',
+        studentPrompt: seed.check,
+        teacherEditionBasis:
+          'Use this as the teacher-led check before moving to the lesson problem set or exit ticket.',
+        visualModel: seed.visualModels[0]
+      },
+      {
+        id: 'source-summary',
+        title: 'Say the takeaway',
+        shortTitle: 'Sum',
+        studentPrompt: seed.check,
+        teacherEditionBasis:
+          'The summary is a concise teacher-facing restatement of the lesson target from the inspected lesson pages.',
+        visualModel: seed.visualModels[0]
+      }
+    ],
+    summary: {
+      takeaway: seed.check,
+      check: seed.teacherMove
+    }
+  };
+}
+
+const MODULE_1_SOURCE_LESSONS: LessonContent[] = [
+  module1SourceLesson({
+    lessonNumber: 2,
+    topicId: 'm1-ta',
+    pageStart: 34,
+    pageEnd: 48,
+    title: 'Relate Multiplication to Arrays',
+    objective: 'Relate multiplication to the array model.',
+    goal: 'I can use rows and columns in an array to show equal groups and write a multiplication sentence.',
+    vocabulary: ['array', 'row', 'column', 'equal groups', 'multiplication'],
+    visualModels: ['array'],
+    modelFocus: 'Use an array to show equal rows. The number of rows is one factor, and the number in each row is the other factor.',
+    concept: 'Lesson 2 develops multiplication through rows and columns in the array model.',
+    example: 'Ask: How many rows? How many in each row? Then write the multiplication sentence for the total.',
+    teacherMove: 'Point to rows first, then columns or objects in each row. Keep the factor meanings tied to the picture.',
+    check: 'The student should explain that an array is equal rows and that the factors describe rows and row size.'
+  }),
+  module1SourceLesson({
+    lessonNumber: 3,
+    topicId: 'm1-ta',
+    pageStart: 49,
+    pageEnd: 60,
+    title: 'Interpret the Meaning of Factors',
+    objective: 'Interpret the meaning of factors: the size of the group or the number of groups.',
+    goal: 'I can tell whether a factor means the number of groups or the size of each group.',
+    vocabulary: ['factor', 'number of groups', 'size of group', 'array', 'number bond'],
+    visualModels: ['array', 'equal-groups'],
+    modelFocus: 'Use pictures and arrays to identify which factor counts groups and which factor tells the size of each group.',
+    concept: 'Lesson 3 focuses on interpreting factors, not only finding products.',
+    example: 'Ask what each factor means before solving. For an array, the first factor can represent rows and the second factor the size of each row.',
+    teacherMove: 'Require a sentence such as, "The 4 means 4 groups, and the 2 means 2 in each group."',
+    check: 'The student should name both factor meanings before giving the product.'
+  }),
+  module1SourceLesson({
+    lessonNumber: 7,
+    topicId: 'm1-tc',
+    pageStart: 97,
+    pageEnd: 108,
+    title: 'Use Arrays to Show Commutativity',
+    objective: 'Demonstrate the commutativity of multiplication, and practice related facts by skip-counting objects in array models.',
+    goal: 'I can rotate or read an array two ways to show related multiplication facts.',
+    vocabulary: ['array', 'commutative property', 'related facts', 'row', 'column'],
+    visualModels: ['array'],
+    modelFocus: 'Use one array to see two multiplication facts by reading rows first, then columns first.',
+    concept: 'Lesson 7 begins Topic C by using arrays and skip-counting to show commutativity.',
+    example: 'Ask the student to write one multiplication sentence for rows, then a second sentence for columns.',
+    teacherMove: 'Keep the total fixed. Only the order of the factors changes.',
+    check: 'The student should explain that 2 times 8 and 8 times 2 have the same total because they describe the same array.'
+  }),
+  module1SourceLesson({
+    lessonNumber: 8,
+    topicId: 'm1-tc',
+    pageStart: 109,
+    pageEnd: 118,
+    title: 'Practice Related Facts with Arrays',
+    objective: 'Demonstrate the commutativity of multiplication, and practice related facts by skip-counting objects in array models.',
+    goal: 'I can use arrays and skip-counting to practice related multiplication facts.',
+    vocabulary: ['array', 'commutative property', 'skip-count', 'related facts'],
+    visualModels: ['array'],
+    modelFocus: 'Use arrays with units of 3 to connect facts such as 5 threes and 3 fives.',
+    concept: 'Lesson 8 continues the array and commutativity work with practice using units of 3.',
+    example: 'Ask the student to draw or read a related array pair, then write both multiplication sentences.',
+    teacherMove: 'Have the student skip-count by the unit before writing the product.',
+    check: 'The student should connect the two related facts to the same total and explain the factor order.'
+  }),
+  module1SourceLesson({
+    lessonNumber: 9,
+    topicId: 'm1-tc',
+    pageStart: 119,
+    pageEnd: 130,
+    title: 'Find Related Facts by Adding and Subtracting Groups',
+    objective: 'Find related multiplication facts by adding and subtracting equal groups in array models.',
+    goal: 'I can use a known multiplication fact and add or subtract one equal group to find a related fact.',
+    vocabulary: ['array', 'related facts', 'equal groups', 'add a group', 'subtract a group'],
+    visualModels: ['array'],
+    modelFocus: 'Use an array to see how adding or removing a row changes the total by one equal group.',
+    concept: 'Lesson 9 uses arrays to relate nearby multiplication facts by adding or subtracting equal groups.',
+    example: 'Ask: If I know 5 threes, how can I find 6 threes? Add one more group of 3.',
+    teacherMove: 'Keep attention on the added or removed group, not recounting every object by ones.',
+    check: 'The student should use a known fact plus or minus one equal group to find the new fact.'
+  }),
+  module1SourceLesson({
+    lessonNumber: 10,
+    topicId: 'm1-tc',
+    pageStart: 131,
+    pageEnd: 141,
+    title: 'Use the Distributive Property with Arrays',
+    objective: 'Model the distributive property with arrays to decompose units as a strategy to multiply.',
+    goal: 'I can break an array into two smaller arrays and add the products to find the total.',
+    vocabulary: ['distributive property', 'array', 'decompose', 'unit', 'product'],
+    visualModels: ['array'],
+    modelFocus: 'Split one array into two known parts, then add the two smaller products.',
+    concept: 'Lesson 10 introduces decomposing arrays as a multiplication strategy.',
+    example: 'Ask the student to break a larger array into two easier arrays and write an addition sentence for the partial products.',
+    teacherMove: 'Emphasize that the split changes the strategy, not the total array.',
+    check: 'The student should explain the whole product as the sum of two smaller products.'
+  }),
+  module1SourceLesson({
+    lessonNumber: 11,
+    topicId: 'm1-td',
+    pageStart: 151,
+    pageEnd: 161,
+    title: 'Model Division as an Unknown Factor',
+    objective: 'Model division as the unknown factor in multiplication using arrays and tape diagrams.',
+    goal: 'I can connect a division equation to a related multiplication equation with an unknown factor.',
+    vocabulary: ['division', 'unknown factor', 'array', 'tape diagram', 'quotient'],
+    visualModels: ['array', 'tape-diagram'],
+    modelFocus: 'Use arrays and tape diagrams to show that division finds a missing factor.',
+    concept: 'Lesson 11 starts Topic D by connecting division, arrays, tape diagrams, and unknown factors.',
+    example: 'Ask what multiplication equation matches the division situation, then solve the missing factor.',
+    teacherMove: 'Move between the array, tape diagram, division sentence, and multiplication sentence.',
+    check: 'The student should state the related multiplication equation for a division problem.'
+  }),
+  module1SourceLesson({
+    lessonNumber: 12,
+    topicId: 'm1-td',
+    pageStart: 162,
+    pageEnd: 173,
+    title: 'Interpret Quotients with Units of 2',
+    objective: 'Interpret the quotient as the number of groups or the number of objects in each group using units of 2.',
+    goal: 'I can tell whether a quotient means number of groups or number in each group when working with twos.',
+    vocabulary: ['quotient', 'units of 2', 'number of groups', 'size of group', 'division'],
+    visualModels: ['array', 'tape-diagram'],
+    modelFocus: 'Use units of 2 to decide what the quotient represents in each division situation.',
+    concept: 'Lesson 12 focuses on interpreting quotients using units of 2.',
+    example: 'Ask: Does the answer tell how many groups of 2, or how many objects in each group?',
+    teacherMove: 'Make the student name the meaning of the quotient after solving.',
+    check: 'The student should solve and interpret the quotient in words.'
+  }),
+  module1SourceLesson({
+    lessonNumber: 13,
+    topicId: 'm1-td',
+    pageStart: 174,
+    pageEnd: 185,
+    title: 'Interpret Quotients with Units of 3',
+    objective: 'Interpret the quotient as the number of groups or the number of objects in each group using units of 3.',
+    goal: 'I can tell whether a quotient means number of groups or number in each group when working with threes.',
+    vocabulary: ['quotient', 'units of 3', 'number of groups', 'size of group', 'division'],
+    visualModels: ['array', 'tape-diagram'],
+    modelFocus: 'Use units of 3 to connect division situations to quotient meanings.',
+    concept: 'Lesson 13 extends quotient interpretation from units of 2 to units of 3.',
+    example: 'Ask the student to solve with threes and then say what the quotient represents.',
+    teacherMove: 'Do not accept a number alone; require the meaning of the quotient.',
+    check: 'The student should distinguish between groups of 3 and 3 groups.'
+  }),
+  module1SourceLesson({
+    lessonNumber: 14,
+    topicId: 'm1-te',
+    pageStart: 188,
+    pageEnd: 199,
+    title: 'Build Fluency with Units of 4',
+    objective: 'Skip-count objects in models to build fluency with multiplication facts using units of 4.',
+    goal: 'I can skip-count by fours in a model to build multiplication facts.',
+    vocabulary: ['skip-count', 'units of 4', 'array', 'multiplication fact'],
+    visualModels: ['array', 'equal-groups'],
+    modelFocus: 'Use models with groups of 4 and count 4, 8, 12, 16, and so on.',
+    concept: 'Lesson 14 builds fluency with multiplication facts using units of 4.',
+    example: 'Ask the student to count the groups of 4 and write the matching multiplication fact.',
+    teacherMove: 'Have the student track both the count-by total and the number of groups counted.',
+    check: 'The student should use skip-counting by 4 to find a product and name the fact.'
+  }),
+  module1SourceLesson({
+    lessonNumber: 15,
+    topicId: 'm1-te',
+    pageStart: 200,
+    pageEnd: 209,
+    title: 'Relate Arrays to Tape Diagrams',
+    objective: 'Relate arrays to tape diagrams to model the commutative property of multiplication.',
+    goal: 'I can show the same multiplication fact with an array and a tape diagram.',
+    vocabulary: ['array', 'tape diagram', 'commutative property', 'factor'],
+    visualModels: ['array', 'tape-diagram'],
+    modelFocus: 'Use an array and a tape diagram to show related facts with the same total.',
+    concept: 'Lesson 15 connects arrays and tape diagrams while modeling commutativity.',
+    example: 'Ask the student to read the same model as rows and as equal tape parts.',
+    teacherMove: 'Point out how the same total can be represented in two different models.',
+    check: 'The student should match an array, tape diagram, and related multiplication equations.'
+  }),
+  module1SourceLesson({
+    lessonNumber: 16,
+    topicId: 'm1-te',
+    pageStart: 210,
+    pageEnd: 220,
+    title: 'Use the Distributive Property for Related Facts',
+    objective: 'Use the distributive property as a strategy to find related multiplication facts.',
+    goal: 'I can break a multiplication fact into known facts and add the parts.',
+    vocabulary: ['distributive property', 'related facts', 'decompose', 'array'],
+    visualModels: ['array'],
+    modelFocus: 'Decompose one factor to create easier related facts.',
+    concept: 'Lesson 16 uses the distributive property to find related multiplication facts.',
+    example: 'Ask how a difficult fact can be split into two known facts, then add the products.',
+    teacherMove: 'Keep the decomposition visible in the model or equation.',
+    check: 'The student should explain the original fact as two smaller facts added together.'
+  }),
+  module1SourceLesson({
+    lessonNumber: 17,
+    topicId: 'm1-te',
+    pageStart: 221,
+    pageEnd: 231,
+    title: 'Model the Relationship Between Multiplication and Division',
+    objective: 'Model the relationship between multiplication and division.',
+    goal: 'I can use related multiplication and division equations to describe the same model.',
+    vocabulary: ['multiplication', 'division', 'related facts', 'quotient', 'factor'],
+    visualModels: ['array', 'tape-diagram'],
+    modelFocus: 'Use one model to write related multiplication and division facts.',
+    concept: 'Lesson 17 explicitly models the relationship between multiplication and division.',
+    example: 'Ask the student to write a multiplication equation and a related division equation from the same model.',
+    teacherMove: 'Keep the factor, product, divisor, and quotient meanings tied to the picture.',
+    check: 'The student should explain how multiplication and division undo or relate to each other in the model.'
+  }),
+  module1SourceLesson({
+    lessonNumber: 18,
+    topicId: 'm1-tf',
+    pageStart: 234,
+    pageEnd: 244,
+    title: 'Decompose Units with the Distributive Property',
+    objective: 'Apply the distributive property to decompose units.',
+    goal: 'I can decompose a multiplication problem into easier units and combine the parts.',
+    vocabulary: ['distributive property', 'decompose', 'unit', 'array', 'number bond'],
+    visualModels: ['array'],
+    modelFocus: 'Break a unit into friendlier parts and use the distributive property.',
+    concept: 'Lesson 18 begins Topic F with applying the distributive property to decompose units.',
+    example: 'Ask the student to split one factor, solve the two smaller products, and add them.',
+    teacherMove: 'Use number bonds or array splits to show the decomposition.',
+    check: 'The student should show the original product as the sum of decomposed products.'
+  }),
+  module1SourceLesson({
+    lessonNumber: 19,
+    topicId: 'm1-tf',
+    pageStart: 245,
+    pageEnd: 254,
+    title: 'Continue Decomposing Units',
+    objective: 'Apply the distributive property to decompose units.',
+    goal: 'I can choose a useful decomposition and use it to solve multiplication facts.',
+    vocabulary: ['distributive property', 'decompose', 'related facts', 'array'],
+    visualModels: ['array'],
+    modelFocus: 'Use the distributive property again, now choosing decompositions more flexibly.',
+    concept: 'Lesson 19 continues applying decomposition strategies from Lesson 18.',
+    example: 'Ask which known facts can help solve the new fact, then write the decomposed equation.',
+    teacherMove: 'Have the student justify why the chosen split helps.',
+    check: 'The student should choose a decomposition and combine partial products correctly.'
+  }),
+  module1SourceLesson({
+    lessonNumber: 20,
+    topicId: 'm1-tf',
+    pageStart: 255,
+    pageEnd: 266,
+    title: 'Solve Two-Step Multiplication and Division Word Problems',
+    objective: 'Solve two-step word problems involving multiplication and division, and assess the reasonableness of answers.',
+    goal: 'I can solve a two-step word problem with multiplication or division and check whether my answer makes sense.',
+    vocabulary: ['two-step problem', 'multiplication', 'division', 'reasonableness', 'RDW'],
+    visualModels: ['tape-diagram', 'array'],
+    modelFocus: 'Use Read-Draw-Write, tape diagrams, or arrays to organize a two-step problem.',
+    concept: 'Lesson 20 applies multiplication and division to two-step word problems and reasonableness checks.',
+    example: 'Ask the student to identify step 1, solve it, then use that result in step 2.',
+    teacherMove: 'Require a reasonableness check after the calculation.',
+    check: 'The student should explain both steps and why the final answer is reasonable.'
+  }),
+  module1SourceLesson({
+    lessonNumber: 21,
+    topicId: 'm1-tf',
+    pageStart: 267,
+    pageEnd: 276,
+    title: 'Solve Two-Step Word Problems with All Four Operations',
+    objective: 'Solve two-step word problems involving all four operations, and assess the reasonableness of answers.',
+    goal: 'I can solve two-step word problems using any operation and check that my answer makes sense.',
+    vocabulary: ['two-step problem', 'all four operations', 'reasonableness', 'RDW'],
+    visualModels: ['tape-diagram', 'array'],
+    modelFocus: 'Use the problem context to decide which operation each step needs.',
+    concept: 'Lesson 21 extends two-step problem solving to all four operations.',
+    example: 'Ask the student to read, draw, choose operations for each step, write equations, and check the answer.',
+    teacherMove: 'Focus on operation choice and reasonableness, not only computation.',
+    check: 'The student should solve with two equations and defend why the operations match the story.'
+  })
+];
+
 export const LESSONS: LessonContent[] = [
   {
     id: 'm1-l1',
@@ -570,7 +935,184 @@ export const LESSONS: LessonContent[] = [
         'Division can find the size of each group when the total and number of equal groups are known.',
       check: 'Ask: What is the total? How many equal groups? What does the answer represent?'
     }
-  }
+  },
+  {
+    id: 'm1-l5',
+    moduleId: 'm1',
+    topicId: 'm1-tb',
+    lessonNumber: 5,
+    title: 'Find the Number of Groups in Division',
+    objective: 'Understand the meaning of the unknown as the number of groups in division.',
+    studentGoal:
+      'I can divide when I know the total and the size of each group, then explain that the answer is the number of groups.',
+    sourceRefs: [
+      {
+        sourceType: 'teacher-edition',
+        path: 'EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf',
+        pageStart: 75,
+        pageEnd: 84,
+        note: 'Lesson 5 objective, group-making concept development, count-by strategy, problem set, exit ticket, and homework.'
+      }
+    ],
+    vocabulary: ['division', 'divided by', 'unknown factor', 'number of groups', 'size of the group'],
+    visualModels: ['equal-groups', 'array'],
+    steps: [
+      {
+        id: 'l5-goal',
+        title: 'Know what the unknown means now',
+        shortTitle: 'Goal',
+        studentPrompt:
+          'In this lesson, the total is known and the size of each group is known. The unknown tells how many groups there are.',
+        teacherEditionBasis:
+          'Lesson 5 objective and Concept Development focus on division where the answer represents the number of groups.',
+        visualModel: 'equal-groups'
+      },
+      {
+        id: 'l5-make-groups',
+        title: 'Make groups of 6 from 18 people',
+        shortTitle: 'Group',
+        studentPrompt:
+          'Cynthia has 18 people coming. Each table seats 6 people. Find how many tables, or groups, she needs.',
+        teacherEditionBasis:
+          'Lesson 5 Problem 1 uses 18 counters grouped by 6 to find 3 groups, represented by 18 divided by 6 equals 3.',
+        visualModel: 'equal-groups'
+      },
+      {
+        id: 'l5-meaning',
+        title: 'Name what the answer means',
+        shortTitle: 'Meaning',
+        studentPrompt:
+          'In 18 divided by 6 equals 3, decide whether the 3 means group size or number of groups.',
+        teacherEditionBasis:
+          'Lesson 5 compares the bracelet problem from Lesson 4 with the table problem so students see the unknown changes.',
+        visualModel: 'equal-groups'
+      },
+      {
+        id: 'l5-count-by',
+        title: 'Use count-by to find groups',
+        shortTitle: 'Count',
+        studentPrompt:
+          'Cynthia buys 15 burgers. Each pack has 3 burgers. Count by 3s until 15 to find the number of packs.',
+        teacherEditionBasis:
+          'Lesson 5 Problem 2 connects finding the number of groups to counting by the divisor: 3, 6, 9, 12, 15.',
+        visualModel: 'equal-groups'
+      },
+      {
+        id: 'l5-exit-check',
+        title: 'Exit check: number of groups',
+        shortTitle: 'Exit',
+        studentPrompt:
+          'Complete the Lesson 5 exit-style checks. Both answers should tell the number of groups.',
+        teacherEditionBasis:
+          'Lesson 5 Exit Ticket asks students to divide 12 triangles into groups of 6 and use a count-by for 20 strawberries with 5 per smoothie.',
+        visualModel: 'equal-groups'
+      },
+      {
+        id: 'l5-summary',
+        title: 'Say the Lesson 5 takeaway',
+        shortTitle: 'Sum',
+        studentPrompt:
+          'When the total and size of each group are known, division can find the number of groups.',
+        teacherEditionBasis:
+          'Lesson 5 debrief reviews that division can find either factor and emphasizes the number-of-groups unknown for this lesson.',
+        visualModel: 'equal-groups'
+      }
+    ],
+    summary: {
+      takeaway:
+        'Division can find the number of groups when the total and the size of each group are known.',
+      check: 'Ask: What is the total? How many are in each group? What does the answer represent?'
+    }
+  },
+  {
+    id: 'm1-l6',
+    moduleId: 'm1',
+    topicId: 'm1-tb',
+    lessonNumber: 6,
+    title: 'Use Arrays to Connect Division and Unknown Factors',
+    objective: 'Interpret the unknown in division using the array model.',
+    studentGoal:
+      'I can use an array to connect a division quotient with the unknown factor in a related multiplication equation.',
+    sourceRefs: [
+      {
+        sourceType: 'teacher-edition',
+        path: 'EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf',
+        pageStart: 85,
+        pageEnd: 94,
+        note: 'Lesson 6 objective, array concept development, related multiplication/division equations, problem set, exit ticket, and homework.'
+      }
+    ],
+    vocabulary: ['array', 'division', 'quotient', 'unknown factor', 'rows', 'equal groups'],
+    visualModels: ['array', 'equal-groups'],
+    steps: [
+      {
+        id: 'l6-goal',
+        title: 'Use arrays for division',
+        shortTitle: 'Goal',
+        studentPrompt:
+          'In this lesson, an array helps show the total, the equal rows or groups, and the unknown in a division equation.',
+        teacherEditionBasis:
+          'Lesson 6 introduces division in the context of the array model and begins with 20 children, 5 on each team.',
+        visualModel: 'array'
+      },
+      {
+        id: 'l6-teams-array',
+        title: 'Use an array for 20 children',
+        shortTitle: 'Array',
+        studentPrompt:
+          'There are 20 children and 5 children on each team. Use the array to find how many teams play.',
+        teacherEditionBasis:
+          'Lesson 6 Application Problem and Problem 1 connect 20 children, 5 per team, number of teams, and rows in an array.',
+        visualModel: 'array'
+      },
+      {
+        id: 'l6-equation-bridge',
+        title: 'Connect division to multiplication',
+        shortTitle: 'Bridge',
+        studentPrompt:
+          'Use the same array to connect 15 divided by 3 equals 5 with 3 times 5 equals 15.',
+        teacherEditionBasis:
+          'Lesson 6 Problem 2 asks students to write both 15 divided by 3 equals 5 and 3 times 5 equals 15 for the same array.',
+        visualModel: 'array'
+      },
+      {
+        id: 'l6-related-equations',
+        title: 'Find the unknown factor',
+        shortTitle: 'Factor',
+        studentPrompt:
+          'Use the related division equation to solve the unknown factor in blank times 3 equals 24.',
+        teacherEditionBasis:
+          'Lesson 6 Problem 3 relates blank times 3 equals 24 to 24 divided by 3 equals 8.',
+        visualModel: 'array'
+      },
+      {
+        id: 'l6-exit-check',
+        title: 'Exit check: quotient and unknown factor',
+        shortTitle: 'Exit',
+        studentPrompt:
+          'Complete the Lesson 6 exit-style equations and name what the quotient and unknown factor represent.',
+        teacherEditionBasis:
+          'Lesson 6 Exit Ticket uses 12 notecards arranged into rows of 6, then asks for 12 divided by 6, blank times 6 equals 12, and the meaning of the unknown.',
+        visualModel: 'array'
+      },
+      {
+        id: 'l6-summary',
+        title: 'Say the Lesson 6 takeaway',
+        shortTitle: 'Sum',
+        studentPrompt:
+          'The quotient in division can be the same number as the unknown factor in a related multiplication equation.',
+        teacherEditionBasis:
+          'Lesson 6 debrief asks students to explain the relationship between the quotient in division and the unknown factor in multiplication.',
+        visualModel: 'array'
+      }
+    ],
+    summary: {
+      takeaway:
+        'An array can show that the division quotient and the unknown multiplication factor are the same value in context.',
+      check: 'Ask: What does the array show? Where does the quotient appear in the related multiplication equation?'
+    }
+  },
+  ...MODULE_1_SOURCE_LESSONS
 ];
 
 const LESSON_OBJECTIVES: Record<string, string> = {
