@@ -29,7 +29,7 @@
         <span>{{ progressText }}</span>
       </div>
       <button
-        *ngFor="let step of lesson.steps; let index = index"
+        *ngFor="let step of displaySteps; let index = index"
         class="step-button"
         [class.is-active]="index === activeStepIndex"
         (click)="chooseStep(index)">
@@ -92,6 +92,112 @@
       </section>
 
       <div [ngSwitch]="activeStep.id">
+        <div *ngSwitchCase="'student-work'" class="student-work-panel">
+          <div class="student-work-head">
+            <div>
+              <span class="eyebrow">Problem set</span>
+              <h3>Student solves, draws, writes, and explains</h3>
+            </div>
+            <span class="student-work-count">{{ studentWorkProblems.length }} problems</span>
+          </div>
+
+          <div class="student-source-grid" *ngIf="studentWorkSource as source">
+            <article>
+              <strong>Student workbook</strong>
+              <span>{{ source.studentWorkbookSource }}</span>
+            </article>
+            <article>
+              <strong>Teacher edition reference</strong>
+              <span>{{ source.teacherEditionReference }}</span>
+            </article>
+            <article>
+              <strong>Debrief focus</strong>
+              <span>{{ source.teacherDebrief }}</span>
+            </article>
+          </div>
+
+          <div class="student-work-grid">
+            <article class="student-problem-card" *ngFor="let problem of studentWorkProblems">
+              <div class="student-problem-number">{{ problem.number }}</div>
+              <div class="student-problem-body">
+                <span class="student-problem-source">{{ problem.sourceLabel }}</span>
+                <h4>{{ problem.prompt }}</h4>
+                <div class="student-model-preview" [ngClass]="problem.representation">
+                  <ng-container [ngSwitch]="problem.representation">
+                    <div *ngSwitchCase="'groups'" class="mini-solve-groups" aria-hidden="true">
+                      <span
+                        *ngFor="let group of studentGroupSlots(problem)"
+                        [style.grid-template-columns]="'repeat(' + problem.visual.groupSize + ', 9px)'"
+                        [style.width.px]="problem.visual.groupSize * 13 + 18">
+                        <i *ngFor="let item of studentGroupItemSlots(problem)"></i>
+                      </span>
+                    </div>
+                    <div
+                      *ngSwitchCase="'array'"
+                      class="mini-solve-array"
+                      [style.grid-template-columns]="'repeat(' + problem.visual.columnCount + ', 12px)'"
+                      aria-hidden="true">
+                      <i *ngFor="let item of studentArrayDots(problem)"></i>
+                    </div>
+                    <div *ngSwitchCase="'tape'" class="mini-solve-tape" aria-hidden="true">
+                      <strong>{{ problem.visual.tapeWholeLabel }}</strong>
+                      <span *ngFor="let item of studentTapeParts(problem)"></span>
+                    </div>
+                    <div *ngSwitchCase="'number-line'" class="mini-solve-number-line" aria-hidden="true">
+                      <span *ngFor="let item of [1,2,3,4,5,6]"></span>
+                    </div>
+                    <div *ngSwitchCase="'clock'" class="mini-solve-clock" aria-hidden="true">
+                      <span>12</span><span>3</span><span>6</span><span>9</span>
+                      <i></i><b></b>
+                    </div>
+                    <div *ngSwitchCase="'measurement'" class="mini-solve-measurement" aria-hidden="true">
+                      <span *ngFor="let item of [1,2,3,4,5,6,7]"></span>
+                    </div>
+                    <div
+                      *ngSwitchCase="'area'"
+                      class="mini-solve-area"
+                      [style.grid-template-columns]="'repeat(' + problem.visual.columnCount + ', 32px)'"
+                      aria-hidden="true">
+                      <span *ngFor="let item of studentArrayDots(problem)"></span>
+                    </div>
+                    <div
+                      *ngSwitchCase="'fraction'"
+                      class="mini-solve-fraction"
+                      [style.grid-template-columns]="'repeat(' + problem.visual.fractionPartCount + ', minmax(28px, 1fr))'"
+                      aria-hidden="true">
+                      <span
+                        *ngFor="let item of studentFractionParts(problem); let partIndex = index"
+                        [class.is-shaded]="partIndex < problem.visual.fractionShadedCount"></span>
+                    </div>
+                    <div *ngSwitchCase="'graph'" class="mini-solve-graph" aria-hidden="true">
+                      <span *ngFor="let height of problem.visual.graphHeights" [style.height.px]="height"></span>
+                    </div>
+                    <div *ngSwitchCase="'geometry'" class="mini-solve-geometry" aria-hidden="true">
+                      <span></span><i></i><b></b>
+                    </div>
+                    <div *ngSwitchDefault class="mini-solve-writing" aria-hidden="true">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </ng-container>
+                </div>
+                <div class="student-equation-row" *ngIf="problem.equations.length">
+                  <span *ngFor="let equation of problem.equations">{{ equation }}</span>
+                </div>
+                <div class="student-answer-row">
+                  <strong>Student work</strong>
+                  <span>{{ problem.answer }}</span>
+                </div>
+                <div class="teacher-look-for">
+                  <strong>Teacher checks</strong>
+                  <span>{{ problem.teacherLookFor }}</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
         <div *ngSwitchCase="'lesson-focus'" class="activity-grid">
           <app-equal-groups-model
             [groupCount]="3"
@@ -1126,7 +1232,7 @@
 
       <div class="lesson-actions">
         <button class="secondary-button" (click)="previousStep()" [disabled]="activeStepIndex === 0">Previous</button>
-        <button class="button" (click)="nextStep()" [disabled]="activeStepIndex === lesson.steps.length - 1">Next</button>
+        <button class="button" (click)="nextStep()" [disabled]="activeStepIndex === displaySteps.length - 1">Next</button>
       </div>
 
       <section class="source-note">

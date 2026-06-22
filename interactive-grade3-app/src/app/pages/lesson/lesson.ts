@@ -4,7 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { findLesson, findModule } from '../../data/curriculum.data';
-import { LessonContent, ModuleMeta } from '../../data/curriculum.types';
+import { LESSON_SOURCE_NOTES } from '../../data/lesson-source-notes.generated';
+import { STUDENT_WORK_SOURCE, StudentWorkLessonSource, StudentWorkSourceProblem } from '../../data/student-work-source.generated';
+import { LessonContent, LessonStep, ModuleMeta } from '../../data/curriculum.types';
 import { EqualGroupsModelComponent } from '../../shared/equal-groups-model/equal-groups-model';
 
 type Feedback = {
@@ -31,16 +33,47 @@ type VocabularyComparisonRow = {
   answerName: string;
 };
 
-type SourceVisualFacts = {
+type StudentWorkProblem = {
+  number: number;
+  prompt: string;
+  equations: string[];
+  answer: string;
+  representation:
+    | 'groups'
+    | 'array'
+    | 'tape'
+    | 'number-line'
+    | 'clock'
+    | 'measurement'
+    | 'area'
+    | 'fraction'
+    | 'graph'
+    | 'geometry'
+    | 'written';
+  teacherLookFor: string;
+  sourceLabel: string;
+  visual: StudentWorkVisualFacts;
+};
+
+type StudentWorkVisualFacts = {
   groupCount: number;
   groupSize: number;
   rowCount: number;
   columnCount: number;
+  dotCount: number;
   tapePartCount: number;
   tapePartLabel: string;
   tapeWholeLabel: string;
   tapeCaption: string;
+  fractionPartCount: number;
+  fractionShadedCount: number;
+  graphHeights: number[];
 };
+
+type SourceVisualFacts = Pick<
+  StudentWorkVisualFacts,
+  'groupCount' | 'groupSize' | 'rowCount' | 'columnCount' | 'tapePartCount' | 'tapePartLabel' | 'tapeWholeLabel' | 'tapeCaption'
+>;
 
 @Component({
   selector: 'app-lesson-page',
@@ -363,7 +396,39 @@ export class LessonPage implements OnInit {
   }
 
   get activeStep() {
-    return this.lesson?.steps[this.activeStepIndex];
+    return this.displaySteps[this.activeStepIndex];
+  }
+
+  get displaySteps(): LessonStep[] {
+    if (!this.lesson) {
+      return [];
+    }
+
+    const solveStep: LessonStep = {
+      id: 'student-work',
+      title: 'Student work: solve the lesson problems',
+      shortTitle: 'Solve',
+      studentPrompt:
+        'This is where the student practices the lesson objective with the student workbook problems, drawings, equations, and explanations.',
+      teacherEditionBasis:
+        'Use the lesson Problem Set as the main student work. The teacher supports by checking the drawing, equation, answer, and meaning in context.',
+      visualModel: this.lesson.visualModels[0] ?? 'equal-groups'
+    };
+    const existingSolve = this.lesson.steps.some((step) => step.id === solveStep.id || step.shortTitle === solveStep.shortTitle);
+    if (existingSolve) {
+      return this.lesson.steps;
+    }
+
+    const insertIndex = this.lesson.steps.findIndex((step) => step.shortTitle === 'Exit' || step.id.includes('exit'));
+    if (insertIndex < 0) {
+      return [...this.lesson.steps, solveStep];
+    }
+
+    return [
+      ...this.lesson.steps.slice(0, insertIndex),
+      solveStep,
+      ...this.lesson.steps.slice(insertIndex)
+    ];
   }
 
   get topicTitle(): string {
@@ -375,17 +440,17 @@ export class LessonPage implements OnInit {
   }
 
   get progressText(): string {
-    if (!this.lesson) {
+    if (!this.displaySteps.length) {
       return '';
     }
-    return `${this.activeStepIndex + 1} of ${this.lesson.steps.length}`;
+    return `${this.activeStepIndex + 1} of ${this.displaySteps.length}`;
   }
 
   get estimatedFlow(): string {
-    if (!this.lesson) {
+    if (!this.displaySteps.length) {
       return '';
     }
-    return `${this.lesson.steps.length} small screens`;
+    return `${this.displaySteps.length} small screens`;
   }
 
   get conceptExplanations(): ConceptExplanation[] {
@@ -488,6 +553,374 @@ export class LessonPage implements OnInit {
     return rows;
   }
 
+  get studentWorkProblems(): StudentWorkProblem[] {
+    if (!this.lesson || !this.module) {
+      return [];
+    }
+
+    const lessonKey = `${this.module.id}-l${this.lesson.lessonNumber}`;
+    const source = STUDENT_WORK_SOURCE[lessonKey];
+    const representation = this.studentWorkRepresentation();
+
+    if (source) {
+      return source.problems.map((problem) => this.buildStudentWorkProblem(problem, source.problems, source.studentWorkbookSource));
+    }
+
+    const note = LESSON_SOURCE_NOTES[lessonKey];
+    const modelName = this.studentWorkModelName();
+    const sourcePrompt = this.trimStudentPrompt(
+      note?.sourceProblem,
+      `Use the Lesson ${this.lesson.lessonNumber} Problem Set to solve a problem tied to this objective: ${this.lesson.objective}`
+    );
+    const teacherMove = this.trimStudentPrompt(
+      note?.teacherMove,
+      'Explain how the model, equation, and answer match the problem situation.'
+    );
+    const exitEvidence = this.trimStudentPrompt(
+      note?.exitEvidence,
+      'Use the exit-ticket pattern to check whether the student can solve and explain independently.'
+    );
+
+    return [
+      {
+        number: 1,
+        prompt: sourcePrompt,
+        equations: this.studentWorkEquationSet('source'),
+        answer: 'Solve the source problem and write the answer with the correct unit or context.',
+        representation,
+        teacherLookFor: 'The student identifies the known quantities, the unknown, and the question before solving.',
+        sourceLabel: 'Teacher Edition source note',
+        visual: this.studentWorkVisualFacts(sourcePrompt, this.studentWorkEquationSet('source'))
+      },
+      {
+        number: 2,
+        prompt: `Draw or label the ${modelName} for the lesson objective: ${this.lesson.objective}`,
+        equations: this.studentWorkEquationSet('model'),
+        answer: `A labeled ${modelName} that matches the story, quantities, units, and unknown.`,
+        representation,
+        teacherLookFor: this.studentWorkModelCheck(),
+        sourceLabel: 'Teacher Edition source note',
+        visual: this.studentWorkVisualFacts(this.lesson.objective, this.studentWorkEquationSet('model'))
+      },
+      {
+        number: 3,
+        prompt: teacherMove,
+        equations: this.studentWorkEquationSet('connect'),
+        answer: 'The equation and model should represent the same relationship.',
+        representation,
+        teacherLookFor: 'The student connects each number, label, interval, mark, side length, part, or data value to the model.',
+        sourceLabel: 'Teacher Edition source note',
+        visual: this.studentWorkVisualFacts(teacherMove, this.studentWorkEquationSet('connect'))
+      },
+      {
+        number: 4,
+        prompt: exitEvidence,
+        equations: this.studentWorkEquationSet('exit'),
+        answer: 'Independent answer with a model, equation or written reasoning, and a context sentence.',
+        representation,
+        teacherLookFor: 'Do not count a bare numerical answer as enough; require a model and explanation.',
+        sourceLabel: 'Teacher Edition source note',
+        visual: this.studentWorkVisualFacts(exitEvidence, this.studentWorkEquationSet('exit'))
+      }
+    ];
+  }
+
+  private buildStudentWorkProblem(
+    problem: StudentWorkSourceProblem,
+    allProblems: StudentWorkSourceProblem[],
+    sourceLabel: string
+  ): StudentWorkProblem {
+    const equations = this.studentWorkProblemEquations(problem, allProblems);
+    return {
+      number: problem.number,
+      prompt: problem.prompt,
+      equations,
+      answer: 'Student solves in the workbook, shows the required drawing or model, and writes the answer in context.',
+      representation: this.studentWorkRepresentation(),
+      teacherLookFor: this.studentWorkModelCheck(),
+      sourceLabel,
+      visual: this.studentWorkVisualFacts(problem.prompt, equations)
+    };
+  }
+
+  private studentWorkProblemEquations(problem: StudentWorkSourceProblem, allProblems: StudentWorkSourceProblem[]): string[] {
+    if (problem.equations.length) {
+      return problem.equations;
+    }
+
+    const referenceMatch = problem.prompt.match(/\bProblem\s+(\d+)\b/i);
+    const referencedProblem = referenceMatch
+      ? allProblems.find((item) => item.number === Number(referenceMatch[1]))
+      : undefined;
+    if (referencedProblem?.equations.length) {
+      return referencedProblem.equations;
+    }
+
+    return this.studentWorkEquationSet('source');
+  }
+
+  studentGroupSlots(problem: StudentWorkProblem): number[] {
+    return this.countSlots(problem.visual.groupCount, 12);
+  }
+
+  studentGroupItemSlots(problem: StudentWorkProblem): number[] {
+    return this.countSlots(problem.visual.groupSize, 12);
+  }
+
+  studentArrayDots(problem: StudentWorkProblem): number[] {
+    return this.countSlots(problem.visual.dotCount, 64);
+  }
+
+  studentTapeParts(problem: StudentWorkProblem): number[] {
+    return this.countSlots(problem.visual.tapePartCount, 12);
+  }
+
+  studentFractionParts(problem: StudentWorkProblem): number[] {
+    return this.countSlots(problem.visual.fractionPartCount, 12);
+  }
+
+  private studentWorkVisualFacts(prompt: string, equations: string[]): StudentWorkVisualFacts {
+    const text = `${prompt} ${equations.join(' ')}`.replace(/\s+/g, ' ').trim();
+    const rowsOfMatch = text.match(/(\d+)\s+rows?\s+of\s+(\d+)/i);
+    const rowsColumnsMatch = text.match(/(\d+)\s+rows?\s+(?:and|by)\s+(\d+)\s+columns?/i);
+    const groupsOfMatch = text.match(/(\d+)\s+(?:equal\s+)?groups?\s+of\s+(\d+)/i);
+    const equalGroupsMatch = text.match(/(\d+)\s+equal\s+groups?/i);
+    const divisionMatch = text.match(/(\d+)\s*÷\s*(\d+)\s*=\s*(?:_{2,}|\?|\d+)/);
+    const multiplicationFacts = this.multiplicationFactsFromText(text);
+
+    const explicitRows = rowsOfMatch?.[1] ?? rowsColumnsMatch?.[1];
+    const explicitColumns = rowsOfMatch?.[2] ?? rowsColumnsMatch?.[2];
+    const equationFact = multiplicationFacts[0];
+    const total = equationFact?.total ?? (divisionMatch ? Number(divisionMatch[1]) : undefined);
+    const divisor = divisionMatch ? Number(divisionMatch[2]) : undefined;
+
+    let rowCount = this.toReasonableCount(explicitRows, 0);
+    let columnCount = this.toReasonableCount(explicitColumns, 0);
+
+    if ((!rowCount || !columnCount) && equationFact) {
+      rowCount = equationFact.rows;
+      columnCount = equationFact.columns;
+    }
+
+    if ((!rowCount || !columnCount) && total && divisor && total % divisor === 0) {
+      rowCount = total / divisor;
+      columnCount = divisor;
+    }
+
+    if (!rowCount || !columnCount) {
+      rowCount = 3;
+      columnCount = 4;
+    }
+
+    const explicitGroupCount = groupsOfMatch?.[1] ?? equalGroupsMatch?.[1];
+    const explicitGroupSize = groupsOfMatch?.[2];
+    const groupCount = this.toReasonableCount(explicitGroupCount, rowCount);
+    const groupSize = this.toReasonableCount(explicitGroupSize, columnCount);
+    const dotCount = Math.min(rowCount * columnCount, 64);
+    const tapePartCount = Math.max(1, Math.min(groupCount, 12));
+    const tapePartLabel = String(groupSize);
+    const tapeWholeLabel = total ? String(total) : 'whole';
+
+    return {
+      groupCount,
+      groupSize,
+      rowCount,
+      columnCount,
+      dotCount,
+      tapePartCount,
+      tapePartLabel,
+      tapeWholeLabel,
+      tapeCaption: `${rowCount} rows of ${columnCount}`,
+      fractionPartCount: Math.max(2, Math.min(columnCount, 12)),
+      fractionShadedCount: Math.max(1, Math.min(rowCount, Math.max(2, Math.min(columnCount, 12)))),
+      graphHeights: [groupSize, rowCount, columnCount].map((value) => Math.max(24, Math.min(value * 10, 76)))
+    };
+  }
+
+  private multiplicationFactsFromText(text: string): Array<{ rows: number; columns: number; total?: number }> {
+    const facts: Array<{ rows: number; columns: number; total?: number }> = [];
+    const token = '(\\d+|_{2,}|\\?)';
+    const pattern = new RegExp(`${token}\\s*[×x]\\s*${token}\\s*=\\s*(\\d+)`, 'gi');
+    let match: RegExpExecArray | null;
+    while ((match = pattern.exec(text)) !== null) {
+      const first = this.parseKnownNumber(match[1]);
+      const second = this.parseKnownNumber(match[2]);
+      const total = Number(match[3]);
+      if (first && second) {
+        if (first * second === total) {
+          facts.push({ rows: first, columns: second, total });
+        }
+        continue;
+      }
+      if (first && total % first === 0) {
+        facts.push({ rows: first, columns: total / first, total });
+        continue;
+      }
+      if (second && total % second === 0) {
+        facts.push({ rows: total / second, columns: second, total });
+      }
+    }
+    return facts.map((fact) => ({
+      rows: this.toReasonableCount(String(fact.rows), 3),
+      columns: this.toReasonableCount(String(fact.columns), 4),
+      total: fact.total
+    }));
+  }
+
+  private parseKnownNumber(value: string): number | undefined {
+    const parsed = Number(value);
+    return Number.isInteger(parsed) && parsed > 0 ? parsed : undefined;
+  }
+
+  private countSlots(count: number, max: number): number[] {
+    return Array.from({ length: Math.max(1, Math.min(count, max)) }, (_, index) => index + 1);
+  }
+
+  get studentWorkSource(): StudentWorkLessonSource | undefined {
+    if (!this.lesson || !this.module) {
+      return undefined;
+    }
+    return STUDENT_WORK_SOURCE[`${this.module.id}-l${this.lesson.lessonNumber}`];
+  }
+
+  private trimStudentPrompt(value: string | undefined, fallback: string): string {
+    const cleaned = (value ?? '')
+      .replace(/\s+/g, ' ')
+      .replace(/\bT:\s*/g, '')
+      .replace(/\bS:\s*/g, '')
+      .trim();
+    if (!cleaned) {
+      return fallback;
+    }
+    return cleaned.length > 260 ? `${cleaned.slice(0, 257).trim()}...` : cleaned;
+  }
+
+  private studentWorkRepresentation(): StudentWorkProblem['representation'] {
+    const model = this.lesson?.visualModels[0] ?? 'equal-groups';
+    const map: Record<string, StudentWorkProblem['representation']> = {
+      'equal-groups': 'groups',
+      array: 'array',
+      'tape-diagram': 'tape',
+      'number-line': 'number-line',
+      clock: 'clock',
+      measurement: 'measurement',
+      'area-model': 'area',
+      'fraction-strip': 'fraction',
+      graph: 'graph',
+      geometry: 'geometry'
+    };
+    return map[model] ?? 'written';
+  }
+
+  private studentWorkModelName(): string {
+    const names: Record<StudentWorkProblem['representation'], string> = {
+      groups: 'equal-groups drawing',
+      array: 'array',
+      tape: 'tape diagram',
+      'number-line': 'number line',
+      clock: 'clock or time number line',
+      measurement: 'measurement model',
+      area: 'area model',
+      fraction: 'fraction model',
+      graph: 'graph',
+      geometry: 'geometry diagram',
+      written: 'written model'
+    };
+    return names[this.studentWorkRepresentation()];
+  }
+
+  private studentWorkEquationSet(kind: 'source' | 'model' | 'connect' | 'exit'): string[] {
+    const representation = this.studentWorkRepresentation();
+    const objective = this.lesson?.objective ?? 'lesson objective';
+    const byRepresentation: Record<StudentWorkProblem['representation'], Record<typeof kind, string[]>> = {
+      groups: {
+        source: ['groups x size = total', 'total ÷ one factor = unknown'],
+        model: ['___ groups of ___ = ___'],
+        connect: ['factor x factor = product', 'product ÷ factor = quotient'],
+        exit: ['answer + unit/context sentence']
+      },
+      array: {
+        source: ['rows x columns = total', 'total ÷ known factor = unknown'],
+        model: ['___ x ___ = ___'],
+        connect: ['related multiplication and division equations'],
+        exit: ['explain what the unknown factor or quotient means']
+      },
+      tape: {
+        source: ['whole = parts combined', 'unknown = missing part or whole'],
+        model: ['label whole, parts, and unknown'],
+        connect: ['equation matches the tape diagram'],
+        exit: ['answer in a sentence with labels']
+      },
+      'number-line': {
+        source: ['start, endpoint, and equal intervals'],
+        model: ['count intervals, not tick marks'],
+        connect: ['position or distance explains the answer'],
+        exit: ['label the unit and answer']
+      },
+      clock: {
+        source: ['start time → elapsed time → end time'],
+        model: ['jumps around the clock'],
+        connect: ['minutes in each jump add to elapsed time'],
+        exit: ['time answer with a.m. or p.m. if needed']
+      },
+      measurement: {
+        source: ['quantity + unit'],
+        model: ['measure, estimate, round, add, or subtract'],
+        connect: ['keep the same unit through the work'],
+        exit: ['answer with correct measurement unit']
+      },
+      area: {
+        source: ['rows x columns = square units'],
+        model: ['tile the rectangle without gaps or overlaps'],
+        connect: ['side lengths connect to multiplication'],
+        exit: ['answer in square units']
+      },
+      fraction: {
+        source: ['whole partitioned into equal parts'],
+        model: ['unit fraction and number of parts'],
+        connect: ['fraction names part of the same whole'],
+        exit: ['name the whole and the fraction']
+      },
+      graph: {
+        source: ['data value and scale'],
+        model: ['read each mark, bar, or interval'],
+        connect: ['compare using graph evidence'],
+        exit: ['answer with data evidence']
+      },
+      geometry: {
+        source: ['figure, attributes, and measurements'],
+        model: ['mark sides, angles, area, or perimeter'],
+        connect: ['classification or measurement follows from attributes'],
+        exit: ['explain using shape properties']
+      },
+      written: {
+        source: [objective],
+        model: ['draw, write, or explain the model'],
+        connect: ['model and answer match'],
+        exit: ['answer in context']
+      }
+    };
+
+    return byRepresentation[representation][kind];
+  }
+
+  private studentWorkModelCheck(): string {
+    const checks: Record<StudentWorkProblem['representation'], string> = {
+      groups: 'Check that groups are equal, labels name group count and group size, and the answer matches the unknown.',
+      array: 'Check that rows, columns, and total are labeled and that the related equations match the array.',
+      tape: 'Check that the whole, parts, units, and unknown are placed correctly on the tape diagram.',
+      'number-line': 'Check that endpoints, intervals, and units are labeled; the student should count intervals, not tick marks.',
+      clock: 'Check that start time, end time, and elapsed-minute jumps are shown clearly.',
+      measurement: 'Check that the student keeps units attached and uses the correct measuring, rounding, addition, or subtraction action.',
+      area: 'Check that the student uses square units and connects rows, columns, side lengths, and total area.',
+      fraction: 'Check that the whole is named first and that all parts are equal before naming the fraction.',
+      graph: 'Check that the student reads the scale before comparing or calculating from the graph.',
+      geometry: 'Check that the student uses attributes or measurements, not just visual guessing.',
+      written: 'Check that the student explains the relationship, not just the final answer.'
+    };
+    return checks[this.studentWorkRepresentation()];
+  }
+
   get sourceLessonExplanation(): string {
     if (!this.lesson || !this.activeStep) {
       return '';
@@ -582,10 +1015,10 @@ export class LessonPage implements OnInit {
   }
 
   nextStep(): void {
-    if (!this.lesson) {
+    if (!this.displaySteps.length) {
       return;
     }
-    this.activeStepIndex = Math.min(this.activeStepIndex + 1, this.lesson.steps.length - 1);
+    this.activeStepIndex = Math.min(this.activeStepIndex + 1, this.displaySteps.length - 1);
     this.feedback = undefined;
   }
 
