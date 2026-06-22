@@ -11,7 +11,7 @@
   <section class="section-panel">
     <div class="section-heading">
       <div>
-        <h2 class="section-title">Module Snapshot</h2>
+        <h2 class="section-title">Module snapshot</h2>
         <p class="muted">A source-backed map of the module before opening individual lessons.</p>
       </div>
     </div>
@@ -34,11 +34,56 @@
     </div>
   </section>
 
+  <section class="section-panel" *ngIf="concepts().length">
+    <div class="section-heading">
+      <div>
+        <h2 class="section-title">Module concepts</h2>
+        <p class="muted">Teach these ideas before the lesson sequence, then refer back to them when individual lessons use the idea.</p>
+      </div>
+    </div>
+
+    <div class="module-concept-grid">
+      <article class="module-concept-card" *ngFor="let concept of concepts()">
+        <strong>{{ concept.term }}</strong>
+        <p>{{ concept.meaning }}</p>
+        <small>{{ concept.teacherLookFor }}</small>
+      </article>
+    </div>
+
+    <article class="module-vocabulary-note" *ngIf="showMultiplicationDivisionVocabulary()">
+      <div>
+        <h3>Multiplication and division vocabulary</h3>
+        <p>In multiplication, we say <strong>times</strong>. Example: <strong>3 times 4</strong> means 3 groups of 4.</p>
+        <p>The answer to a multiplication problem is called the <strong>product</strong>. Example: <strong>3 × 4 = 12</strong>, so 12 is the product.</p>
+        <p>In division, we say <strong>divided by</strong>. Example: <strong>12 divided by 3</strong> means 12 is shared into 3 equal groups.</p>
+        <p>The answer to a division problem is called the <strong>quotient</strong>. Example: <strong>12 ÷ 3 = 4</strong>, so 4 is the quotient.</p>
+      </div>
+      <div class="module-vocabulary-table" role="table" aria-label="Multiplication and division vocabulary comparison">
+        <div class="module-vocabulary-row vocabulary-head" role="row">
+          <strong role="columnheader">Operation</strong>
+          <strong role="columnheader">How to say it</strong>
+          <strong role="columnheader">Example</strong>
+          <strong role="columnheader">Answer is called</strong>
+        </div>
+        <div class="module-vocabulary-row" role="row" *ngFor="let row of multiplicationDivisionVocabularyRows">
+          <span role="cell">{{ row.operation }}</span>
+          <span role="cell">{{ row.howToSayIt }}</span>
+          <span role="cell">{{ row.example }}</span>
+          <span role="cell">{{ row.answerName }}</span>
+        </div>
+      </div>
+      <p class="wording-rule">
+        Use <strong>3 times 4</strong> for multiplication and <strong>12 divided by 3</strong> for division.
+        Do not use <strong>3 by 4</strong> as the formal wording for multiplication in Grade 3 Eureka Math instruction.
+      </p>
+    </article>
+  </section>
+
   <section class="section-panel" *ngIf="module.topics.length; else laterModule">
     <div class="section-heading">
       <div>
-        <h2 class="section-title">Topics And Lessons</h2>
-        <p class="muted">Each lesson opens as a separate source-backed flow. Module 1 Lesson 1 includes the deepest worked interaction.</p>
+        <h2 class="section-title">Topics and lessons</h2>
+        <p class="muted">Each lesson opens as a separate source-backed flow. Use the module concepts above as the shared reference.</p>
       </div>
     </div>
 
@@ -51,19 +96,23 @@
       </div>
       <article class="topic-card" *ngFor="let topic of module.topics">
         <div class="topic-heading">
-          <div>
-            <span class="eyebrow">{{ topic.label }}</span>
+          <div class="topic-title-block">
+            <span class="topic-badge">{{ topic.label }}</span>
             <h3>{{ topic.title }}</h3>
           </div>
-          <span class="days">{{ topic.days }} days</span>
+          <span class="days">
+            <span class="days-mark"></span>
+            {{ topic.days }} days
+          </span>
         </div>
         <div class="lesson-list">
           <a
             *ngFor="let lessonId of topic.lessonIds"
             [class.ready]="true"
             [routerLink]="['/ruchika-grade3', 'modules', module.id, 'lessons', lessonNumber(lessonId)]">
-            <strong>{{ lessonLabel(lessonId) }}</strong>
-            <span>{{ lessonObjective(lessonId) }}</span>
+            <span class="lesson-chip">{{ lessonLabel(lessonId) }}</span>
+            <strong>{{ lessonObjective(lessonId) }}</strong>
+            <span class="lesson-open">Open lesson</span>
           </a>
         </div>
       </article>

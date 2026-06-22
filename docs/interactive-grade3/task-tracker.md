@@ -209,6 +209,8 @@ Status: Active planning
 | 2026-06-20 | Lesson-specific source context audit | Passed | Generated 152 lesson source notes from teacher PDFs and browser-verified all generated lessons expose a Source context row with visible model content; 0 failures. |
 | 2026-06-20 | M3 Lesson 7 concept/visual alignment audit | Passed | Verified the Eureka source uses Thad's 7 beetles with 6 legs, then selects a tape diagram with 7 parts and unknown b; live browser now shows 7 tape parts labeled 6 legs and b total legs. |
 | 2026-06-20 | Generated source-visual consistency audit | Passed | Live browser checked all 152 lessons; generated lessons with extractable tape, array, or equal-group quantities render matching source-aware figures. The 4 hand-authored M1 benchmark lessons use separate bespoke visual components. |
+| 2026-06-22 | Concept-first lesson audit | Passed | Added first-screen concept explanations and live-browser checked all 152 lessons for a concept-first panel with student-friendly meaning and teacher-check language; 0 failures. |
+| 2026-06-22 | Multiplication/division vocabulary note audit | Passed | Live-browser checked all 152 lessons; multiplication/division/product/quotient/factor lessons show the vocabulary note with "times", "divided by", product, quotient, examples, comparison table, and the "do not use 3 by 4" rule; 0 failures. |
 
 ## 7. Change Log
 
@@ -235,3 +237,5 @@ Status: Active planning
 | 2026-06-20 | Completed live step-by-step validation across every module and lesson against the Lesson 4 benchmark gate. |
 | 2026-06-20 | Added teacher-edition extracted source contexts, teacher moves, and exit evidence notes for all lessons, then wired generated lessons to show the source context in the Lesson 4-style question card. |
 | 2026-06-20 | Corrected M3 Lesson 7 source note and made generated source figures parse lesson quantities for equal groups, arrays, and tape diagrams instead of showing disconnected generic counts. |
+| 2026-06-22 | Added the concept-first panel and objective-based vocabulary extraction so terms like quotient, factor, unknown, area, perimeter, unit fraction, elapsed time, and scale are explained before the lesson model. |
+| 2026-06-22 | Added a Grade 3 Eureka Math multiplication/division vocabulary note with the product/quotient comparison table and formal wording rule. |

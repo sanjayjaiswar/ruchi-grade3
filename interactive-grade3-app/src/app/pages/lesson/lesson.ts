@@ -18,6 +18,19 @@ type InfoRow = {
   value: string;
 };
 
+type ConceptExplanation = {
+  term: string;
+  meaning: string;
+  teacherCheck: string;
+};
+
+type VocabularyComparisonRow = {
+  operation: string;
+  howToSayIt: string;
+  example: string;
+  answerName: string;
+};
+
 type SourceVisualFacts = {
   groupCount: number;
   groupSize: number;
@@ -60,6 +73,218 @@ export class LessonPage implements OnInit {
     m6: { accent: '#2474a6', strong: '#18577d', soft: '#e5f4ff', muted: '#afd8f2' },
     m7: { accent: '#8a5a28', strong: '#684017', soft: '#fff0dc', muted: '#e8c494' }
   };
+  private readonly conceptGlossary: Record<string, ConceptExplanation> = {
+    'addend': {
+      term: 'addend',
+      meaning: 'A number being added. In a word problem, each addend must match a real part of the situation.',
+      teacherCheck: 'Ask which part of the story each addend represents.'
+    },
+    'angle': {
+      term: 'angle',
+      meaning: 'The corner formed where two sides or rays meet.',
+      teacherCheck: 'Ask the student to point to the corner, not the whole shape.'
+    },
+    'area': {
+      term: 'area',
+      meaning: 'The amount of flat space inside a shape, measured in square units.',
+      teacherCheck: 'Ask whether the student is counting inside squares, not the outside boundary.'
+    },
+    'array': {
+      term: 'array',
+      meaning: 'Objects arranged in equal rows and columns. Arrays make factors visible.',
+      teacherCheck: 'Ask what the rows mean, what the columns mean, and what the total means.'
+    },
+    'attribute': {
+      term: 'attribute',
+      meaning: 'A property you can use to describe or classify a shape, such as sides, angles, or area.',
+      teacherCheck: 'Ask the student to name the property they used, not just the shape name.'
+    },
+    'capacity': {
+      term: 'capacity',
+      meaning: 'How much a container can hold, often measured in liters or milliliters.',
+      teacherCheck: 'Ask for the unit and whether the amount is a capacity, not a weight.'
+    },
+    'commutative property': {
+      term: 'commutative property',
+      meaning: 'Factors can switch order and the product stays the same.',
+      teacherCheck: 'Ask what stayed the same and what changed in the picture or equation.'
+    },
+    'data': {
+      term: 'data',
+      meaning: 'Collected information, such as counts or measurements, that can be organized and compared.',
+      teacherCheck: 'Ask what each number or mark represents before reading the graph.'
+    },
+    'decompose': {
+      term: 'decompose',
+      meaning: 'Break a number or shape into useful parts without changing the total.',
+      teacherCheck: 'Ask how the smaller parts recombine to make the original whole.'
+    },
+    'distributive property': {
+      term: 'distributive property',
+      meaning: 'Break one factor apart, multiply the parts, then add the partial products.',
+      teacherCheck: 'Ask the student to show the split in the model and in the equation.'
+    },
+    'division': {
+      term: 'division',
+      meaning: 'An operation that finds a missing factor: either how many groups or how many are in each group.',
+      teacherCheck: 'Ask what the divisor and quotient mean in the story before solving.'
+    },
+    'dividend': {
+      term: 'dividend',
+      meaning: 'The total amount being divided.',
+      teacherCheck: 'Ask what total is being shared or measured into groups.'
+    },
+    'divisor': {
+      term: 'divisor',
+      meaning: 'The number you divide by. It can tell the number of groups or the size of each group.',
+      teacherCheck: 'Ask what the divisor means in this specific problem before solving.'
+    },
+    'elapsed time': {
+      term: 'elapsed time',
+      meaning: 'The amount of time that passes from a start time to an end time.',
+      teacherCheck: 'Ask the student to show the jumps from start to end.'
+    },
+    'equal groups': {
+      term: 'equal groups',
+      meaning: 'Groups with the same number in each group.',
+      teacherCheck: 'Ask the student to verify every group is the same size before multiplying or dividing.'
+    },
+    'equivalent fractions': {
+      term: 'equivalent fractions',
+      meaning: 'Fractions that name the same amount of the same whole.',
+      teacherCheck: 'Ask the student to use the same whole and show why the amounts match.'
+    },
+    'factor': {
+      term: 'factor',
+      meaning: 'A number that is multiplied. In a model, a factor can mean number of groups or size of each group.',
+      teacherCheck: 'Ask what each factor represents before accepting the product.'
+    },
+    'fraction': {
+      term: 'fraction',
+      meaning: 'A number that names equal parts of a whole.',
+      teacherCheck: 'Ask what the whole is and whether the parts are equal.'
+    },
+    'gram': {
+      term: 'gram',
+      meaning: 'A metric unit for measuring mass; it is useful for lighter objects.',
+      teacherCheck: 'Ask whether grams or kilograms make sense for the object.'
+    },
+    'kilogram': {
+      term: 'kilogram',
+      meaning: 'A metric unit for measuring mass; it is useful for heavier objects.',
+      teacherCheck: 'Ask whether kilograms or grams make sense for the object.'
+    },
+    'line plot': {
+      term: 'line plot',
+      meaning: 'A graph that shows data values on a number line using marks such as Xs.',
+      teacherCheck: 'Ask what one mark means and what the scale shows.'
+    },
+    'liter': {
+      term: 'liter',
+      meaning: 'A metric unit for measuring liquid capacity.',
+      teacherCheck: 'Ask the student to keep the unit attached to the number.'
+    },
+    'milliliter': {
+      term: 'milliliter',
+      meaning: 'A smaller metric unit for liquid capacity; 1,000 milliliters make 1 liter.',
+      teacherCheck: 'Ask whether the answer should be in liters or milliliters.'
+    },
+    'multiplication': {
+      term: 'multiplication',
+      meaning: 'An operation for equal groups. It can find the total when the number of groups and group size are known.',
+      teacherCheck: 'Ask which factor is the number of groups and which factor is the size of each group.'
+    },
+    'number line': {
+      term: 'number line',
+      meaning: 'A line where position and distance show numbers or measurements.',
+      teacherCheck: 'Ask the student to count intervals, not tick marks.'
+    },
+    'perimeter': {
+      term: 'perimeter',
+      meaning: 'The distance around a shape.',
+      teacherCheck: 'Ask whether the student is adding outside side lengths, not inside squares.'
+    },
+    'product': {
+      term: 'product',
+      meaning: 'The answer to a multiplication problem.',
+      teacherCheck: 'Ask what total the product counts in the model.'
+    },
+    'quotient': {
+      term: 'quotient',
+      meaning: 'The answer to a division problem. It can mean how many groups or how many are in each group.',
+      teacherCheck: 'Ask what the quotient means in this problem, not just what number it is.'
+    },
+    'right angle': {
+      term: 'right angle',
+      meaning: 'A square corner angle.',
+      teacherCheck: 'Ask the student to compare the corner to a square corner.'
+    },
+    'round': {
+      term: 'round',
+      meaning: 'Replace a number with a nearby benchmark number that is easier to use.',
+      teacherCheck: 'Ask which benchmark the number is closer to and why.'
+    },
+    'scale': {
+      term: 'scale',
+      meaning: 'What each mark, interval, picture, or bar represents.',
+      teacherCheck: 'Ask what one mark or interval counts before reading the graph.'
+    },
+    'square unit': {
+      term: 'square unit',
+      meaning: 'A square used to measure area without gaps or overlaps.',
+      teacherCheck: 'Ask why the unit is square and where the square units cover the shape.'
+    },
+    'tape diagram': {
+      term: 'tape diagram',
+      meaning: 'A bar model that shows the whole, parts, and unknown in a problem.',
+      teacherCheck: 'Ask what the whole bar means and what each part means.'
+    },
+    'unit fraction': {
+      term: 'unit fraction',
+      meaning: 'One equal part of a whole, such as 1/3 or 1/4.',
+      teacherCheck: 'Ask what one part is called after the whole is partitioned equally.'
+    },
+    'unknown': {
+      term: 'unknown',
+      meaning: 'The quantity we do not know yet. A letter or blank can stand for it.',
+      teacherCheck: 'Ask what the unknown represents in words before solving.'
+    },
+    'unknown factor': {
+      term: 'unknown factor',
+      meaning: 'A missing factor in a multiplication equation. Division can be used to find it.',
+      teacherCheck: 'Ask which factor is missing and what that factor means in the model.'
+    },
+    'whole': {
+      term: 'whole',
+      meaning: 'The complete object, amount, or interval being partitioned or measured.',
+      teacherCheck: 'Ask the student to identify the whole before naming parts or fractions.'
+    }
+  };
+  private readonly lessonConceptTerms: Record<string, string[]> = {
+    'm1-l4': ['division', 'dividend', 'divisor', 'quotient'],
+    'm1-l5': ['division', 'divisor', 'quotient'],
+    'm1-l6': ['array', 'quotient', 'unknown factor'],
+    'm2-l1': ['elapsed time', 'number line'],
+    'm2-l6': ['gram', 'kilogram'],
+    'm2-l8': ['liter', 'milliliter', 'capacity'],
+    'm2-l12': ['round', 'number line'],
+    'm3-l1': ['commutative property', 'factor', 'product'],
+    'm3-l9': ['decompose', 'distributive property'],
+    'm3-l19': ['factor', 'product'],
+    'm4-l1': ['area', 'square unit'],
+    'm4-l5': ['area', 'square unit'],
+    'm4-l9': ['distributive property', 'area'],
+    'm5-l1': ['whole', 'fraction'],
+    'm5-l5': ['unit fraction', 'whole'],
+    'm5-l14': ['fraction', 'number line'],
+    'm5-l20': ['equivalent fractions', 'whole'],
+    'm6-l1': ['data', 'scale'],
+    'm6-l5': ['line plot', 'scale'],
+    'm7-l4': ['attribute', 'angle', 'right angle'],
+    'm7-l10': ['perimeter'],
+    'm7-l18': ['line plot', 'perimeter', 'area'],
+    'm7-l23': ['area', 'perimeter']
+  };
 
   groupCount = 6;
   groupSize = 2;
@@ -100,6 +325,20 @@ export class LessonPage implements OnInit {
     { label: 'C', height: 96 }
   ];
   readonly numberLineTicks = Array.from({ length: 7 });
+  readonly multiplicationDivisionVocabularyRows: VocabularyComparisonRow[] = [
+    {
+      operation: 'Multiplication',
+      howToSayIt: 'times',
+      example: '3 × 4 = 12',
+      answerName: 'product'
+    },
+    {
+      operation: 'Division',
+      howToSayIt: 'divided by',
+      example: '12 ÷ 3 = 4',
+      answerName: 'quotient'
+    }
+  ];
 
   constructor(
     private readonly route: ActivatedRoute,
@@ -147,6 +386,34 @@ export class LessonPage implements OnInit {
       return '';
     }
     return `${this.lesson.steps.length} small screens`;
+  }
+
+  get conceptExplanations(): ConceptExplanation[] {
+    const terms = this.lessonConceptFocusTerms();
+    if (!terms.length) {
+      return [];
+    }
+
+    return terms
+      .map((term) => this.conceptGlossary[term])
+      .filter((concept): concept is ConceptExplanation => Boolean(concept))
+      .slice(0, 4);
+  }
+
+  get showConceptFirstPanel(): boolean {
+    return this.activeStepIndex === 0 && this.conceptExplanations.length > 0;
+  }
+
+  get showMultiplicationDivisionVocabularyNote(): boolean {
+    return false;
+  }
+
+  private lessonConceptFocusTerms(): string[] {
+    if (!this.module || !this.lesson || this.activeStepIndex !== 0) {
+      return [];
+    }
+
+    return this.lessonConceptTerms[`${this.module.id}-l${this.lesson.lessonNumber}`] ?? [];
   }
 
   get sourceLessonQuestionRows(): InfoRow[] {
@@ -329,6 +596,10 @@ export class LessonPage implements OnInit {
 
   chooseStep(index: number): void {
     this.activeStepIndex = index;
+    this.feedback = undefined;
+  }
+
+  clearFeedback(): void {
     this.feedback = undefined;
   }
 
@@ -732,20 +1003,36 @@ export class LessonPage implements OnInit {
 
   checkL6Exit(): void {
     const meaning = this.l6ExitMeaning.trim().toLowerCase();
+    const quotientOk = this.l6ExitQuotient.trim() === '2';
+    const factorOk = this.l6ExitFactor.trim() === '2';
     const meaningOk = meaning.includes('row') || meaning.includes('group');
-    const exitOk = this.l6ExitQuotient.trim() === '2' && this.l6ExitFactor.trim() === '2' && meaningOk;
+    const exitOk = quotientOk && factorOk && meaningOk;
 
-    this.setCheckedFeedback(exitOk
-      ? {
-          status: 'correct',
-          title: 'Lesson 6 takeaway is in place',
-          body: 'The quotient and unknown factor both represent the number of rows, or groups, of 6 notecards.'
-        }
-      : {
-          status: 'needs-work',
-          title: 'Connect both blanks to the array',
-          body: 'There are 12 notecards arranged in rows of 6. Both blanks are 2, and that 2 means the number of rows or groups.'
-        });
+    if (!exitOk) {
+      const guidance: string[] = [];
+      if (!quotientOk) {
+        guidance.push('The division blank is 2 because 12 divided by 6 means two rows of 6.');
+      }
+      if (!factorOk) {
+        guidance.push('The multiplication blank is also 2 because 2 times 6 equals 12.');
+      }
+      if (!meaningOk) {
+        guidance.push('The meaning should say that 2 is the number of rows or groups.');
+      }
+
+      this.setCheckedFeedback({
+        status: 'needs-work',
+        title: quotientOk && factorOk ? 'The 2s are correct; name what they mean' : 'Connect each blank to the array',
+        body: guidance.join(' ')
+      });
+      return;
+    }
+
+    this.setCheckedFeedback({
+      status: 'correct',
+      title: 'Correct: both 2s mean rows',
+      body: 'The quotient and unknown factor both represent the number of rows, or groups, of 6 notecards.'
+    });
   }
 
   completeGenericStep(): void {

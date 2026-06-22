@@ -69,15 +69,26 @@ Do not implement from memory, from only the overview table, or from only another
 Every authored lesson must follow this learner flow:
 
 1. Goal: state the exact lesson objective in student-facing language.
-2. Model: introduce the lesson's real visual model.
-3. Notice: ask the learner to identify what each number or model part means.
-4. Connect: connect picture, words, and equation.
-5. Try: give a guided learner action.
-6. Check: validate the learner's answer and explain the misconception if wrong.
-7. Exit: finish with a lesson-aligned exit check.
-8. Summary: name the durable takeaway.
+2. Concept first: explain any lesson-critical term before modeling, such as quotient, factor, unknown, unit fraction, area, perimeter, elapsed time, scale, or square unit.
+3. Model: introduce the lesson's real visual model.
+4. Notice: ask the learner to identify what each number or model part means.
+5. Connect: connect picture, words, and equation.
+6. Try: give a guided learner action.
+7. Check: validate the learner's answer and explain the misconception if wrong.
+8. Exit: finish with a lesson-aligned exit check.
+9. Summary: name the durable takeaway.
 
 The labels may change, but the learning functions may not be skipped.
+
+Concept-first rule:
+
+- Do not rely on vocabulary chips as explanation.
+- New or lesson-critical math language must be defined in student-friendly words before the first model task.
+- Each concept explanation must include a teacher check: what to ask or listen for before moving on.
+- If a term can mean different things by context, such as quotient or divisor, the explanation must name the possible meanings and require the student to say what it means in this lesson.
+- The concept panel must stay tied to the lesson objective and source model; do not add unrelated glossary terms.
+- Multiplication and division lessons must use the formal Grade 3 wording: say "3 times 4" for multiplication and "12 divided by 3" for division. Do not use "3 by 4" as the formal wording for multiplication.
+- Multiplication/division vocabulary notes must name product as the answer to multiplication and quotient as the answer to division.
 
 ## 7. Visual Model Rules
 

@@ -681,7 +681,7 @@ const MODULE_1_SOURCE_LESSONS: LessonContent[] = [
     title: 'Solve Two-Step Multiplication and Division Word Problems',
     objective: 'Solve two-step word problems involving multiplication and division, and assess the reasonableness of answers.',
     goal: 'I can solve a two-step word problem with multiplication or division and check whether my answer makes sense.',
-    vocabulary: ['two-step problem', 'multiplication', 'division', 'reasonableness', 'RDW'],
+    vocabulary: ['two-step problem', 'multiplication', 'division', 'reasonableness', 'read-draw-write'],
     visualModels: ['tape-diagram', 'array'],
     modelFocus: 'Use Read-Draw-Write, tape diagrams, or arrays to organize a two-step problem.',
     concept: 'Lesson 20 applies multiplication and division to two-step word problems and reasonableness checks.',
@@ -697,7 +697,7 @@ const MODULE_1_SOURCE_LESSONS: LessonContent[] = [
     title: 'Solve Two-Step Word Problems with All Four Operations',
     objective: 'Solve two-step word problems involving all four operations, and assess the reasonableness of answers.',
     goal: 'I can solve two-step word problems using any operation and check that my answer makes sense.',
-    vocabulary: ['two-step problem', 'all four operations', 'reasonableness', 'RDW'],
+    vocabulary: ['two-step problem', 'all four operations', 'reasonableness', 'read-draw-write'],
     visualModels: ['tape-diagram', 'array'],
     modelFocus: 'Use the problem context to decide which operation each step needs.',
     concept: 'Lesson 21 extends two-step problem solving to all four operations.',
@@ -1614,6 +1614,47 @@ function modelTeachingGuide(visualModel: LessonContent['visualModels'][number]) 
   return guides[visualModel];
 }
 
+function conceptVocabularyForObjective(objective: string): string[] {
+  const text = objective.toLowerCase();
+  const terms = new Set<string>();
+  const addIf = (condition: boolean, values: string[]) => {
+    if (condition) {
+      values.forEach((value) => terms.add(value));
+    }
+  };
+
+  addIf(text.includes('add') || text.includes('sum'), ['addend']);
+  addIf(text.includes('array'), ['array', 'row', 'column']);
+  addIf(text.includes('area') || text.includes('square unit'), ['area', 'square unit']);
+  addIf(text.includes('attribute'), ['attribute']);
+  addIf(text.includes('capacity') || text.includes('liquid volume'), ['capacity']);
+  addIf(text.includes('commutative'), ['commutative property']);
+  addIf(text.includes('decompose') || text.includes('break apart'), ['decompose']);
+  addIf(text.includes('distributive'), ['distributive property']);
+  addIf(text.includes('divid'), ['division', 'divisor', 'quotient']);
+  addIf(text.includes('elapsed time') || text.includes('time'), ['elapsed time']);
+  addIf(text.includes('equal group'), ['equal groups']);
+  addIf(text.includes('equivalent fraction'), ['equivalent fractions']);
+  addIf(text.includes('factor') || text.includes('multiply') || text.includes('multiplication'), ['factor', 'product', 'multiplication']);
+  addIf(text.includes('fraction'), ['fraction', 'whole']);
+  addIf(text.includes('gram'), ['gram']);
+  addIf(text.includes('kilogram'), ['kilogram']);
+  addIf(text.includes('line plot'), ['line plot', 'scale']);
+  addIf(text.includes('liter'), ['liter']);
+  addIf(text.includes('milliliter'), ['milliliter']);
+  addIf(text.includes('number line'), ['number line']);
+  addIf(text.includes('perimeter'), ['perimeter']);
+  addIf(text.includes('round') || text.includes('nearest'), ['round']);
+  addIf(text.includes('scale') || text.includes('graph') || text.includes('data'), ['scale']);
+  addIf(text.includes('tape diagram'), ['tape diagram']);
+  addIf(text.includes('unit fraction'), ['unit fraction']);
+  addIf(text.includes('unknown'), ['unknown', 'unknown factor']);
+  addIf(text.includes('angle'), ['angle']);
+  addIf(text.includes('right angle'), ['right angle']);
+
+  return Array.from(terms);
+}
+
 function generatedLesson(module: ModuleMeta, lessonNumber: number): LessonContent | undefined {
   const lessonId = `${module.id}-l${lessonNumber}`;
   const objective = LESSON_OBJECTIVES[lessonId];
@@ -1650,7 +1691,7 @@ function generatedLesson(module: ModuleMeta, lessonNumber: number): LessonConten
         note: sourceNote
       }
     ],
-    vocabulary: [topic.label, topic.title, ...module.visualModels],
+    vocabulary: [...conceptVocabularyForObjective(objective), topic.label, topic.title, ...module.visualModels],
     visualModels: module.visualModels,
     steps: [
       {
@@ -1658,7 +1699,7 @@ function generatedLesson(module: ModuleMeta, lessonNumber: number): LessonConten
         title: 'Know the lesson question',
         shortTitle: 'Goal',
         studentPrompt: note?.sourceProblem ?? `Student-facing target: ${objective}`,
-        teacherEditionBasis: `Use ${module.sourcePdf}, PDF pages ${sourcePages.pageStart}-${sourcePages.pageEnd}. Start from the concept development, then use the problem set and exit ticket for evidence.`,
+        teacherEditionBasis: `Use ${module.sourcePdf}, pdf pages ${sourcePages.pageStart}-${sourcePages.pageEnd}. Start from the concept development, then use the problem set and exit ticket for evidence.`,
         visualModel
       },
       {

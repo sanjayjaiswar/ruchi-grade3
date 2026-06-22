@@ -17,7 +17,7 @@
       <strong>Teacher-edition objective</strong>
       <span>{{ lesson.objective }}</span>
       <small *ngFor="let source of lesson.sourceRefs">
-        {{ source.sourceType }} · PDF pages {{ source.pageStart }}-{{ source.pageEnd }}
+        {{ source.sourceType }} · pdf pages {{ source.pageStart }}-{{ source.pageEnd }}
       </small>
     </details>
   </section>
@@ -45,6 +45,51 @@
         <h2>{{ activeStep.title }}</h2>
         <p>{{ activeStep.studentPrompt }}</p>
       </div>
+
+      <section class="concept-first-panel" *ngIf="showConceptFirstPanel" aria-label="Concept explanation first">
+        <div class="concept-first-head">
+          <span class="eyebrow">Concept first</span>
+          <h3>Explain the lesson words before modeling</h3>
+        </div>
+        <div class="concept-grid">
+          <article class="concept-card" *ngFor="let concept of conceptExplanations">
+            <strong>{{ concept.term }}</strong>
+            <p>{{ concept.meaning }}</p>
+            <small>{{ concept.teacherCheck }}</small>
+          </article>
+        </div>
+        <article class="vocabulary-note" *ngIf="showMultiplicationDivisionVocabularyNote">
+          <div class="vocabulary-copy">
+            <h4>Multiplication and Division Vocabulary</h4>
+            <p>In multiplication, we say <strong>times</strong>.</p>
+            <p>Example: <strong>3 times 4</strong> means 3 groups of 4.</p>
+            <p>The answer to a multiplication problem is called the <strong>product</strong>.</p>
+            <p>Example: <strong>3 × 4 = 12</strong>, so 12 is the product.</p>
+            <p>In division, we say <strong>divided by</strong>.</p>
+            <p>Example: <strong>12 divided by 3</strong> means 12 is shared into 3 equal groups.</p>
+            <p>The answer to a division problem is called the <strong>quotient</strong>.</p>
+            <p>Example: <strong>12 ÷ 3 = 4</strong>, so 4 is the quotient.</p>
+          </div>
+          <div class="vocabulary-table" role="table" aria-label="Multiplication and division vocabulary comparison">
+            <div class="vocabulary-row vocabulary-head" role="row">
+              <strong role="columnheader">Operation</strong>
+              <strong role="columnheader">How to say it</strong>
+              <strong role="columnheader">Example</strong>
+              <strong role="columnheader">Answer is called</strong>
+            </div>
+            <div class="vocabulary-row" role="row" *ngFor="let row of multiplicationDivisionVocabularyRows">
+              <span role="cell">{{ row.operation }}</span>
+              <span role="cell">{{ row.howToSayIt }}</span>
+              <span role="cell">{{ row.example }}</span>
+              <span role="cell">{{ row.answerName }}</span>
+            </div>
+          </div>
+          <p class="wording-rule">
+            Use <strong>3 times 4</strong> for multiplication and <strong>12 divided by 3</strong> for division.
+            Do not use <strong>3 by 4</strong> as the formal wording for multiplication in Grade 3 Eureka Math instruction.
+          </p>
+        </article>
+      </section>
 
       <div [ngSwitch]="activeStep.id">
         <div *ngSwitchCase="'lesson-focus'" class="activity-grid">
@@ -762,15 +807,24 @@
             <p>12 notecards are arranged into rows of 6.</p>
             <div class="exit-equation">
               12 &divide; 6 =
-              <input [(ngModel)]="l6ExitQuotient" aria-label="12 divided by 6 answer" />
+              <input
+                [(ngModel)]="l6ExitQuotient"
+                (ngModelChange)="clearFeedback()"
+                inputmode="numeric"
+                aria-label="12 divided by 6 answer" />
             </div>
             <div class="exit-equation">
-              <input [(ngModel)]="l6ExitFactor" aria-label="Unknown factor for rows of 6" />
+              <input
+                [(ngModel)]="l6ExitFactor"
+                (ngModelChange)="clearFeedback()"
+                inputmode="numeric"
+                aria-label="Unknown factor for rows of 6" />
               x 6 = 12
             </div>
             <input
               class="long-input"
               [(ngModel)]="l6ExitMeaning"
+              (ngModelChange)="clearFeedback()"
               placeholder="number of rows"
               aria-label="Meaning of quotient and unknown factor" />
             <button class="button" (click)="checkL6Exit()">Check</button>

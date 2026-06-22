@@ -32,9 +32,8 @@
 
 .flow-node span {
   color: var(--module-accent-strong);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 900;
-  text-transform: uppercase;
 }
 
 .flow-node strong {
@@ -77,9 +76,8 @@
 
 .module-number {
   color: var(--module-accent-strong);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 850;
-  text-transform: uppercase;
 }
 
 .module-card .secondary-button {

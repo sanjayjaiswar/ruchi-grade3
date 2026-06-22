@@ -104,10 +104,9 @@ p {
   border-radius: 999px;
   background: var(--module-accent-soft);
   color: var(--module-accent-strong);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 850;
   letter-spacing: 0;
-  text-transform: uppercase;
 }
 
 .hero-band h1 {

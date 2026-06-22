@@ -163,7 +163,7 @@ export const LESSON_SOURCE_NOTES: Record<string, LessonSourceNote> = {
   },
   "m2-l12": {
     "sourceProblem": "S: 73 milliliters is less than halfway between 70 and 80 milliliters. I know because 3 is less than 5, and 5 marks not the exact amount. students represent the tens. A third student represents the number that is Continue with the following possible sequence: 61 centimeters, halfway. A fourth student represents 38 minutes, and 25 grams. For each example, show how the the number being rounded.",
-    "teacherMove": "Discuss new vocabulary from today\u2019s lesson: round and about. Lesson 12: Round two-digit measurements to the nearest ten on the vertical 152 number line. G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "teacherMove": "Discuss new vocabulary from today\u2019s lesson: round and about. Connect the discussion to rounding two-digit measurements to the nearest ten on the vertical number line.",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
   "m2-l13": {
@@ -187,7 +187,7 @@ export const LESSON_SOURCE_NOTES: Record<string, LessonSourceNote> = {
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
   "m2-l17": {
-    "sourceProblem": "Estimate the sum of 362 + 159 by rounding. A NOTE ON T: What is 362 rounded to the nearest hundred? STANDARDS S: 400. ALIGNMENT: This problem asks students to round to T: Let\u2019s write it directly below 362. the nearest fifty, which is part of the T: What is 159 rounded to the nearest hundred? Grade 4 standard (4.NBT.3). S: 200. T: Let\u2019s write it directly below 159. T: What is 400 + 200? S: 600.",
+    "sourceProblem": "Estimate the sum of 362 + 159 by rounding. T: What is 362 rounded to the nearest hundred? S: 400. T: Let\u2019s write it directly below 362. T: What is 159 rounded to the nearest hundred? S: 200. T: Let\u2019s write it directly below 159. T: What is 400 + 200? S: 600.",
     "teacherMove": "What were some of your observations about Problem 1(a)? What did the closest estimates have in common?",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
@@ -252,8 +252,8 @@ export const LESSON_SOURCE_NOTES: Record<string, LessonSourceNote> = {
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
   "m3-l9": {
-    "sourceProblem": "T: (Write 16 x 3.) This is a difficult problem for a third grader to solve. Let\u2019s simplify it. Work with your partner to list factors that have a product of 16. A NOTE ON Write them on your personal white board. MULTIPLE MEANS S: 4 times 4 makes 16. -> 8 and 2 also works. OF ACTION AND T: 4, 8, and 2 are much friendlier factors than 16. EXPRESSION: Let\u2019s rewrite 16 as 8 x 2.",
-    "teacherMove": "(Write 16 x 3.) This is a difficult problem for a third grader to solve. Let\u2019s simplify it. Work with your partner to list factors that have a product of 16. A NOTE ON Write them on your personal white board. MULTIPLE MEANS",
+    "sourceProblem": "T: (Write 16 x 3.) This is a difficult problem for a third grader to solve. Let\u2019s simplify it. Work with your partner to list factors that have a product of 16. Write them on your personal white board. S: 4 times 4 makes 16. -> 8 and 2 also works. T: 4, 8, and 2 are much friendlier factors than 16. Let\u2019s rewrite 16 as 8 x 2.",
+    "teacherMove": "(Write 16 x 3.) This is a difficult problem for a third grader to solve. Let\u2019s simplify it. Work with your partner to list factors that have a product of 16. Write them on your personal white board.",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
   "m3-l10": {
@@ -313,7 +313,7 @@ export const LESSON_SOURCE_NOTES: Record<string, LessonSourceNote> = {
   },
   "m3-l21": {
     "sourceProblem": "T: It took you 4 minutes and 13 seconds to find the products and order them from least to greatest. How do we find the total number of seconds it took to complete this activity? S: Add the total seconds in 4 minutes to 13 seconds. -> We need to know how many seconds are in 1 minute first. T: There are 60 seconds in 1 minute. Draw and label a tape diagram to show the total number of seconds in T: Write an equation.",
-    "teacherMove": "In Problem 2, how many more months will Lupe need to save so she has enough to buy the art supplies? How do you know? Lesson 21: Solve two-step word problems involving multiplying single-digit 259 factors and multiples of 10. G3-M3-TE-1.3.0-05.2015",
+    "teacherMove": "In Problem 2, how many more months will Lupe need to save so she has enough to buy the art supplies? How do you know?",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
   "m4-l1": {
@@ -393,7 +393,7 @@ export const LESSON_SOURCE_NOTES: Record<string, LessonSourceNote> = {
   },
   "m4-l16": {
     "sourceProblem": "Option 1: Create a floor plan with different side lengths for given areas. Students work with a partner to create a floor plan with the areas of the rooms that they found. The task is for students to find new side lengths for each room. Students should use their answers from the Problem Set to ensure that they find different side lengths with the same area.",
-    "teacherMove": "Explain to a partner how you found the side lengths of the whole house without using your ruler to measure. Lesson 16: Apply knowledge of area to determine areas of rooms in a given floor 197 plan. G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "teacherMove": "Explain to a partner how you found the side lengths of the whole house without using your ruler to measure.",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
   "m5-l1": {
@@ -482,7 +482,7 @@ export const LESSON_SOURCE_NOTES: Record<string, LessonSourceNote> = {
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
   "m5-l18": {
-    "sourceProblem": "T: Look at the number line I\u2019ve created on the floor. Let\u2019s use it to measure and compare. NOTE ON T: This number line shows the interval from 0 to 1. (Place MATERIALS: sticky notes with 0 and 1 written on them in the appropriate places.) What fractional unit does the Before the lesson, use masking tape to number line show? make a large-scale number line from 0 to 1 on the floor or in the hallway. S: Thirds.",
+    "sourceProblem": "T: Look at the number line I\u2019ve created on the floor. Let\u2019s use it to measure and compare. T: This number line shows the interval from 0 to 1. Place sticky notes with 0 and 1 written on them in the appropriate places. What fractional unit does the number line show? S: Thirds.",
     "teacherMove": "If necessary, review the toss portion of the lesson by having students draw each toss on a separate number line and then place the fractions on the same number line to compare",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
@@ -492,7 +492,7 @@ export const LESSON_SOURCE_NOTES: Record<string, LessonSourceNote> = {
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
   "m5-l20": {
-    "sourceProblem": "T: The whole is all of the cubes. Whisper to your partner the fraction of cubes that are blue. 1 S: (Whisper .) 4 Use linking cubes to create Model 2, as shown to the right. Lesson 20: Recognize and show that equivalent fractions have the same size, 234 though not necessarily the same shape. G 3-M 5-TE-1.3.0 -0 6.2 0 15 T: Again, the whole is all of the cubes.",
+    "sourceProblem": "T: The whole is all of the cubes. Whisper to your partner the fraction of cubes that are blue. S: (Whisper one fourth.) Use linking cubes to create Model 2, as shown to the right. T: Again, the whole is all of the cubes.",
     "teacherMove": "Invite students to share their models for Problems 2(a) expectations for explaining their and 2(b). Although answers will vary, students should reasoning clearly with evidence. MP.6 consistently represent equivalent fractions for each question.",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
@@ -582,7 +582,7 @@ export const LESSON_SOURCE_NOTES: Record<string, LessonSourceNote> = {
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
   "m6-l8": {
-    "sourceProblem": "Plot a large data set to the nearest half inch. Students start with the Heights of Sunflower Plants Template in their personal white boards. T: What data is shown in the chart? S: The heights of sunflower plants. Lesson 8: Represent measurement data with line plots. 107 G 3-M6-TE-1.3.0 -0 8.2 0 15 T: How does the measurement data in this chart compare to the measurement data we plotted data.",
+    "sourceProblem": "Plot a large data set to the nearest half inch. Students start with the Heights of Sunflower Plants Template in their personal white boards. T: What data is shown in the chart? S: The heights of sunflower plants. T: How does the measurement data in this chart compare to the measurement data we plotted?",
     "teacherMove": "Look at Problem (b). With a partner, compare the steps you took to create the line plot",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
@@ -598,11 +598,11 @@ export const LESSON_SOURCE_NOTES: Record<string, LessonSourceNote> = {
   },
   "m7-l2": {
     "sourceProblem": "T: Today, we\u2019re going to work in groups to solve Problem 6. Let\u2019s prepare our chart paper by folding it into three equal parts. (Model for students, and allow them time to fold.) With your group, read Problem 6 now. S: The total amount of rain that fell in New York City in two years was 282 centimeters. In the first year, 185 centimeters of rain fell.",
-    "teacherMove": "How are your models related to your equations in Problem 1? Lesson 2: Solve word problems in varied contexts using a letter to represent the 30 unknown. G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "teacherMove": "How are your models related to your equations in Problem 1?",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
   "m7-l3": {
-    "sourceProblem": "box. She gives each of the 24 students in her class 2 pencils. How many pencils does she have left? T: Use the Read-Draw-Write process to solve this problem. Remember to take a moment to visualize what\u2019s happening in the problem after you read. S: (Use the RDW process to solve.) T: Compare your work with a partner\u2019s. (Allow students time to compare.) How many pencils does Mrs. Mashburn have left? S: 6 pencils!",
+    "sourceProblem": "box. She gives each of the 24 students in her class 2 pencils. How many pencils does she have left? T: Use the Read-Draw-Write process to solve this problem. Remember to take a moment to visualize what\u2019s happening in the problem after you read. S: (Use the read-draw-write process to solve.) T: Compare your work with a partner\u2019s. (Allow students time to compare.) How many pencils does Mrs. Mashburn have left? S: 6 pencils!",
     "teacherMove": "What can you draw to show Problem 2? How can you build equations from those drawings?",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
@@ -613,7 +613,7 @@ export const LESSON_SOURCE_NOTES: Record<string, LessonSourceNote> = {
   },
   "m7-l5": {
     "sourceProblem": "Group polygons by attributes. T: Look at Polygons M\u2013X. Compare them with yesterday\u2019s polygons. What do you notice? S: Now there are many different kinds of polygons. -> All of the polygons aren\u2019t quadrilaterals. I see triangles, some quadrilaterals, hexagons, and funny looking polygons, too. T: Take out your right angle tools and rulers. S: (Take out the tools.) T: Look at the chart on your Problem Set.",
-    "teacherMove": "Share student work for Problem 3, and compare the three quadrilaterals. Which attributes are the same and different? Lesson 5: Compare and classify other polygons. 72 G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "teacherMove": "Share student work for Problem 3, and compare the three quadrilaterals. Which attributes are the same and different?",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
   "m7-l6": {
@@ -628,7 +628,7 @@ export const LESSON_SOURCE_NOTES: Record<string, LessonSourceNote> = {
   },
   "m7-l8": {
     "sourceProblem": "T: First, we need to make a square. Fold your paper so triangle, quadrilateral, trapezoid, or that a shorter side lies along a longer side. Cut off the square, or by gesturing or drawing on extra strip of paper. Unfold the remaining paper. personal white boards. To preserve the lesson, students may be allowed to (Model.) respond in their first languages.",
-    "teacherMove": "How do you know the triangles in Problem 1 have right angles without having to check with your tool? Lesson 8: Create a tangram puzzle and observe relationships among the shapes. 117 G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "teacherMove": "How do you know the triangles in Problem 1 have right angles without having to check with your tool?",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
   "m7-l9": {
@@ -713,7 +713,7 @@ export const LESSON_SOURCE_NOTES: Record<string, LessonSourceNote> = {
   },
   "m7-l25": {
     "sourceProblem": "Finished Robot Sample Students use today\u2019s Problem Set to map out the robot in its environment. Once they have their maps completed, students create just their robots using the widths and lengths they recorded on the Problem Set in Lesson 24. Give them the option of cutting their rectangles out of centimeter grid paper or creating rectangles on construction paper with a right angle tool and ruler.",
-    "teacherMove": "Compare your drawing to a partner\u2019s. What is similar? TO TEACHER: What is different? Students should keep both the",
+    "teacherMove": "Compare your drawing to a partner\u2019s. What is similar? What is different? Students should keep both drawings for comparison.",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
   "m7-l26": {

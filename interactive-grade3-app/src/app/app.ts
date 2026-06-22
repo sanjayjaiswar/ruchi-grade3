@@ -211,7 +211,7 @@ export class App {
   }
 
   lessonLabel(moduleId: string, lessonId: string): string {
-    return `L${this.lessonNumber(lessonId)} ${LESSON_SHORT_LABELS[lessonId] ?? this.shortObjective(moduleId, lessonId)}`;
+    return `Lesson ${this.lessonNumber(lessonId)} ${LESSON_SHORT_LABELS[lessonId] ?? this.shortObjective(moduleId, lessonId)}`;
   }
 
   moduleTheme(moduleId: string) {
