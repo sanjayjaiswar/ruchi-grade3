@@ -1,62 +1,14 @@
 # Grade 3 Eureka Math Interactive App Workspace
 
-This workspace contains the Grade 3 Eureka Math source PDFs, planning docs, and the local Angular app for building interactive module-by-module and lesson-by-lesson learning experiences.
+This workspace contains the Grade 3 Eureka Math source PDFs, generated source-backed lesson data, and the local Angular app used for teacher-led interactive lessons.
 
-## Workspace Root
+## Quick Start On A New Computer
 
-```text
-/Volumes/Data2/Tutorials/Eureka Math Grade 2 - Syllabus Videos Curriculum/Grade3
-```
-
-## What Is In This Workspace
-
-| Path | Purpose |
-| --- | --- |
-| `EurekaMath-Sources/` | Source PDFs. Teacher editions are the curriculum source of truth. |
-| `interactive-grade3-app/` | Local Angular app implementation. |
-| `docs/interactive-grade3/` | Requirements, design spec, implementation plan, source audits, delivery audits, and task tracking. |
-| `tmp/` | Temporary extraction/render outputs and the original chat transcript used only for tone/workflow guidance. |
-
-## Source Of Truth
-
-Curriculum facts, module structure, topic names, lesson objectives, examples, and validation logic must come from the Eureka Math Grade 3 teacher editions:
-
-```text
-EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf
-EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf
-EurekaMath-Sources/Module_3/g3_m3_teacher_edition_v1_3_0.pdf
-EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf
-EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf
-EurekaMath-Sources/Module_6/g3_m6_teacher_edition_v1_3_0.pdf
-EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf
-```
-
-Student workbooks and additional materials can support practice only after the teacher-edition lesson sequence is established.
-
-`tmp/req.txt` is not curriculum truth. It is only pacing, tone, and workflow guidance.
-
-## Reference Projects
-
-These projects are read-only references for architecture, visual components, and design patterns:
-
-```text
-/Volumes/Data/EdZillaPrj/EdZilla/edzilla-gtm/
-/Volumes/Data/EdZillaPrj/EdZilla/scratch-prjs/design-spec/
-```
-
-Do not edit those reference projects for this work.
-
-## App
-
-The app lives here:
-
-```text
-interactive-grade3-app/
-```
-
-Run locally:
+Run these commands from the workspace root:
 
 ```bash
+cd "/path/to/Grade3"
+npm --prefix interactive-grade3-app install
 scripts/grade3_app_start.sh
 ```
 
@@ -66,51 +18,210 @@ Open:
 http://localhost:4220/ruchika-grade3/
 ```
 
-Stop/status/context:
+The start script runs the Angular app on port `4220`, writes logs under `tmp/logs/`, and creates `tmp/grade3-app-context-latest.txt` with the current run context.
+
+## Prerequisites
+
+Required:
+
+- Node.js 20 or newer.
+- npm 10 or newer.
+- A shell with common Unix tools: `bash`, `curl`, `lsof`.
+
+Recommended:
+
+- `screen`, so `scripts/grade3_app_start.sh` can keep the dev server in a named background session. If `screen` is missing, the script falls back to `nohup`.
+- Poppler, for `pdftotext`, only when regenerating source-backed student work data.
+
+Install examples:
 
 ```bash
-scripts/grade3_app_start.sh stop
-scripts/grade3_app_start.sh status
-scripts/grade3_app_start.sh context
+# macOS with Homebrew
+brew install node poppler screen
+
+# Ubuntu/Debian
+sudo apt-get update
+sudo apt-get install -y nodejs npm poppler-utils screen
 ```
 
-The script stops any existing listener on port `4220`, restarts the Angular app in a detached `screen` session, writes logs to `tmp/logs/grade3-app-latest.log`, and writes run context to `tmp/grade3-app-context-latest.txt`.
+Check versions:
 
-Build:
+```bash
+node --version
+npm --version
+pdftotext -v
+```
+
+## Workspace Layout
+
+| Path | Purpose |
+| --- | --- |
+| `EurekaMath-Sources/` | Local Eureka Math PDFs. Teacher editions are the curriculum source of truth. Student workbooks provide the Solve tab problem-set content. |
+| `interactive-grade3-app/` | Angular app. |
+| `interactive-grade3-app/src/app/data/student-work-source.generated.ts` | Generated student workbook and Teacher Edition reference data for all 152 lesson routes. |
+| `scripts/generate-student-work-source.mjs` | Regenerates `student-work-source.generated.ts` from the local PDFs using `pdftotext`. |
+| `scripts/grade3_app_start.sh` | Starts, stops, and reports status for the local Angular app. |
+| `docs/interactive-grade3/` | Requirements, design notes, source rules, audits, and task tracking. |
+| `tmp/` | Local logs and temporary files. Safe to recreate. |
+
+## Source PDFs Required
+
+Keep these files in the same paths and names. The generated data script depends on them.
+
+```text
+EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf
+EurekaMath-Sources/Module_1/g3_m1_student_wkbook_v1_3_1.pdf
+EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf
+EurekaMath-Sources/Module_2/g3_m2_student_wkbook_v1_3_0.pdf
+EurekaMath-Sources/Module_3/g3_m3_teacher_edition_v1_3_0.pdf
+EurekaMath-Sources/Module_3/g3_m3_student_wkbook_v1_3_0.pdf
+EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf
+EurekaMath-Sources/Module_4/g3_m4_student_wkbook_v1_3_0.pdf
+EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf
+EurekaMath-Sources/Module_5/g3_m5_student_wkbook_v1_3_1.pdf
+EurekaMath-Sources/Module_6/g3_m6_teacher_edition_v1_3_0.pdf
+EurekaMath-Sources/Module_6/g3_m6_student_wkbook_v1_3_1.pdf
+EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf
+EurekaMath-Sources/Module_7/g3_m7_student_wkbook_v1_3_1.pdf
+```
+
+Additional materials PDFs are also kept in `EurekaMath-Sources/`, but the current app setup does not require them for startup.
+
+## Run The App
+
+From the workspace root:
+
+```bash
+scripts/grade3_app_start.sh
+```
+
+Useful commands:
+
+```bash
+scripts/grade3_app_start.sh status
+scripts/grade3_app_start.sh context
+scripts/grade3_app_start.sh stop
+```
+
+Environment overrides:
+
+```bash
+GRADE3_PORT=4300 scripts/grade3_app_start.sh
+GRADE3_HOST=0.0.0.0 GRADE3_PUBLIC_HOST="<your-computer-ip>" scripts/grade3_app_start.sh
+```
+
+Use the second form only when you intentionally want another device on the same network to open the app.
+
+Find your local network IP:
+
+```bash
+# macOS, usually Wi-Fi
+ipconfig getifaddr en0
+
+# Linux
+hostname -I | awk '{print $1}'
+```
+
+## Build And Validate
+
+From the Angular app directory:
 
 ```bash
 cd interactive-grade3-app
 npm run build
 ```
 
-## Current Delivered Scope
+Current expected result:
 
-- Angular app inside this Grade3 workspace.
-- Separate module pages for Modules 1-7.
-- Source-backed module/topic/lesson maps.
-- All 152 Grade 3 lesson routes populated.
-- Collapsible left curriculum drawer with expandable module sections and lesson links.
-- Every lesson route uses the teacher-edition overview objective, module topic, module visual models, and source page references.
-- Module 1 Lesson 1 fully authored as the deepest interactive lesson.
-- Lesson flows split into small screens, not a few large panels.
-- Equal-groups visual model and generic model panels for other source-backed lesson flows.
-- Answer validation and feedback for the fully authored Lesson 1 flow; objective-check feedback for generated lesson flows.
-- Source and delivery audit docs.
+- Build succeeds.
+- Angular may warn that the initial bundle and `lesson.css` exceed warning budgets. Those are warnings, not failures.
 
-## Curriculum Flow
+## Regenerate Student Workbook Source Data
 
-```mermaid
-flowchart LR
-  M1["Module 1: Multiplication and division foundations"]
-  M2["Module 2: Measurement and place value"]
-  M3["Module 3: More multiplication and division facts"]
-  M4["Module 4: Area"]
-  M5["Module 5: Fractions"]
-  M6["Module 6: Data"]
-  M7["Module 7: Geometry and measurement word problems"]
+Only do this when the source PDFs change or when you intentionally want to refresh extracted Solve-tab content.
 
-  M1 --> M2 --> M3 --> M4 --> M5 --> M6 --> M7
+From the workspace root:
+
+```bash
+pdftotext -v
+node scripts/generate-student-work-source.mjs
+cd interactive-grade3-app
+npm run build
 ```
+
+Expected generator output:
+
+```text
+Generated 152 lesson student-work entries.
+```
+
+The generator writes:
+
+```text
+interactive-grade3-app/src/app/data/student-work-source.generated.ts
+```
+
+Do not hand-edit that generated file. Update the generator or source PDFs, then rerun the script.
+
+## App Content Contract
+
+- Teacher Edition PDFs are the source of truth for objectives, lesson sequence, teacher guidance, and debrief focus.
+- Student Workbook PDFs provide the Solve tab problem-set content.
+- The app currently covers all 152 Grade 3 lesson routes across Modules 1-7.
+- Lesson Solve visuals must match the workbook prompt/equations. Do not use generic arrays or dots that contradict the problem.
+- Do not use all-caps instructional headings in the UI.
+
+## Troubleshooting
+
+If dependencies are missing:
+
+```bash
+npm --prefix interactive-grade3-app install
+```
+
+If port `4220` is busy:
+
+```bash
+scripts/grade3_app_start.sh stop
+scripts/grade3_app_start.sh
+```
+
+Or use another port:
+
+```bash
+GRADE3_PORT=4300 scripts/grade3_app_start.sh
+```
+
+If the app fails to start, inspect:
+
+```bash
+tail -n 120 tmp/logs/grade3-app-latest.log
+scripts/grade3_app_start.sh context
+```
+
+If source regeneration fails with `pdftotext` not found, install Poppler:
+
+```bash
+brew install poppler
+```
+
+or:
+
+```bash
+sudo apt-get install -y poppler-utils
+```
+
+## Git And Copy Notes
+
+For another computer, copy or clone the full workspace, including:
+
+- `EurekaMath-Sources/`
+- `interactive-grade3-app/`
+- `scripts/`
+- `docs/`
+- root `README.md`
+
+Do not rely on `node_modules/` being copied. Run `npm --prefix interactive-grade3-app install` on the new computer.
 
 ## Key Docs
 
@@ -118,20 +229,9 @@ flowchart LR
 | --- | --- |
 | `docs/interactive-grade3/requirements.md` | Product/content requirements. |
 | `docs/interactive-grade3/design-spec.md` | UI and interaction design requirements. |
-| `docs/interactive-grade3/implementation-plan.md` | Technical implementation plan. |
 | `docs/interactive-grade3/curriculum-source-spec.md` | Rules for extracting and using source content. |
+| `docs/interactive-grade3/lesson-authoring-playbook.md` | Rules for authoring source-backed lessons. |
 | `docs/interactive-grade3/source-audit.md` | Source alignment audit. |
 | `docs/interactive-grade3/requirements-delivery-audit.md` | Content/design delivery audit. |
 | `docs/interactive-grade3/task-tracker.md` | Task status, decisions, validation log. |
 | `docs/interactive-grade3/worktree-and-operations.md` | Local operating rules. |
-
-## Operating Rules
-
-- Keep implementation work inside this Grade3 workspace.
-- Do not alter the EdZilla reference projects.
-- Do not invent lesson content.
-- Keep generated lesson flows tied to teacher-edition objectives and module models.
-- Before deep-authoring a lesson beyond the objective flow, extract and audit the teacher-edition lesson pages.
-- Keep lesson screens small and visual.
-- Run `npm run build` after app changes.
-- Browser/screenshot QA requires explicit authorization for the local app target.

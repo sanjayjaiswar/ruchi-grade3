@@ -1,59 +1,62 @@
-# InteractiveGrade3App
+# Interactive Grade 3 App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.16.
+Angular app for the Grade 3 Eureka Math teacher-led interactive lesson portal.
 
-## Development server
+For full workspace setup, source PDF requirements, and regeneration instructions, see the root [README.md](../README.md).
 
-To start a local development server, run:
+## Run Locally
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+From the workspace root:
 
 ```bash
-ng generate component component-name
+scripts/grade3_app_start.sh
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Open:
+
+```text
+http://localhost:4220/ruchika-grade3/
+```
+
+From this app directory directly:
 
 ```bash
-ng generate --help
+npm install
+npm start
 ```
 
-## Building
+The `npm start` script serves on port `4220`.
 
-To build the project run:
+## Build
 
 ```bash
-ng build
+npm run build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Expected result:
 
-## Running unit tests
+- Build succeeds.
+- Angular may print budget warnings for bundle size and `lesson.css`; those are warnings unless Angular reports an error.
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## Important Generated Data
+
+The app imports source-backed Solve-tab data from:
+
+```text
+src/app/data/student-work-source.generated.ts
+```
+
+That file is generated from local Eureka Math PDFs by the workspace-root script:
 
 ```bash
-ng test
+node scripts/generate-student-work-source.mjs
 ```
 
-## Running end-to-end tests
+Run that command from the workspace root, not from this app directory. It requires `pdftotext` from Poppler.
 
-For end-to-end (e2e) testing, run:
+## Source Content Rules
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Teacher Edition PDFs drive lesson objectives, teacher guidance, and debrief focus.
+- Student Workbook PDFs drive Solve-tab problem-set prompts.
+- Visual previews in the Solve tab must match the prompt and equations.
+- Do not hand-edit `student-work-source.generated.ts`; rerun the generator.
