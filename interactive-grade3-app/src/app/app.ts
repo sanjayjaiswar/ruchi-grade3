@@ -5,7 +5,7 @@ import { filter } from 'rxjs';
 import { lessonTitle, MODULES } from './data/curriculum.data';
 
 const MODULE_THEME: Record<string, { label: string; accent: string; strong: string; soft: string; muted: string }> = {
-  m1: { label: 'Groups', accent: '#c76a22', strong: '#8f470f', soft: '#fff1d8', muted: '#f5d49c' },
+  m1: { label: 'Groups', accent: '#2563eb', strong: '#1d4ed8', soft: '#dbeafe', muted: '#bfdbfe' },
   m2: { label: 'Measure', accent: '#197c72', strong: '#0f5d55', soft: '#e1f6f1', muted: '#a9ddd3' },
   m3: { label: 'Facts', accent: '#6d5bd0', strong: '#4f3aa8', soft: '#eeebff', muted: '#c9c0ff' },
   m4: { label: 'Area', accent: '#4f8a2f', strong: '#35681d', soft: '#ecf7df', muted: '#c3dfa8' },

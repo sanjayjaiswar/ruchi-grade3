@@ -68,7 +68,7 @@
 
           <div class="lesson-nav-list" *ngIf="isModuleExpanded(module.id)">
             <ng-container *ngFor="let topic of module.topics">
-              <div class="topic-label">{{ topic.label }}</div>
+              <div class="topic-label">Teach {{ topic.label }}</div>
               <a
                 class="lesson-link"
                 *ngFor="let lessonId of topic.lessonIds"

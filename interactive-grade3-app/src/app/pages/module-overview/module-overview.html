@@ -34,23 +34,165 @@
     </div>
   </section>
 
-  <section class="section-panel" *ngIf="concepts().length">
+  <nav class="module-overview-tabs" *ngIf="moduleOverviewTabs().length" aria-label="Module overview sections">
+    <button
+      type="button"
+      *ngFor="let tab of moduleOverviewTabs()"
+      [class.is-active]="activeModuleTab === tab.id"
+      [attr.aria-current]="activeModuleTab === tab.id ? 'page' : null"
+      (click)="selectModuleTab(tab.id)">
+      {{ tab.label }}
+    </button>
+  </nav>
+
+  <section class="section-panel" *ngIf="activeModuleTab === 'concepts' && (showModuleOneConceptMap() || concepts().length)">
     <div class="section-heading">
       <div>
+        <span class="section-step">1. Concepts</span>
         <h2 class="section-title">Module concepts</h2>
-        <p class="muted">Teach these ideas before the lesson sequence, then refer back to them when individual lessons use the idea.</p>
+        <p class="muted" *ngIf="!showModuleOneConceptMap()">Teach these ideas before the lesson sequence, then refer back to them when individual lessons use the idea.</p>
+        <p class="muted" *ngIf="showModuleOneConceptMap()">A parent-friendly map of the big ideas students use across multiplication, division, strategies, and word problems.</p>
       </div>
     </div>
 
-    <div class="module-concept-grid">
-      <article class="module-concept-card" *ngFor="let concept of concepts()">
-        <strong>{{ concept.term }}</strong>
-        <p>{{ concept.meaning }}</p>
-        <small>{{ concept.teacherLookFor }}</small>
-      </article>
-    </div>
+    <ng-container *ngIf="showModuleOneConceptMap(); else standardConceptCards">
+      <div class="module-one-map">
+        <article class="concept-chart-panel">
+          <div class="concept-chart-copy">
+            <span>Visual map</span>
+            <h3>Equal groups connect the whole module</h3>
+            <p>
+              Start in the middle, then follow the branches to see how students use equal groups
+              for multiplication, division, arrays, strategies, and word problems.
+            </p>
+          </div>
+          <div
+            #moduleOneConceptChart
+            class="module-one-concept-chart"
+            role="img"
+            aria-label="Concept map connecting equal groups, multiplication, arrays, division, unknown factors, decomposition, tape diagrams, and RDW">
+          </div>
+        </article>
 
-    <article class="module-vocabulary-note" *ngIf="showMultiplicationDivisionVocabulary()">
+        <article class="concept-anchor-card">
+          <div class="anchor-copy">
+            <span class="anchor-kicker">Parent prompts</span>
+            <h3>Ask these four questions again and again</h3>
+          </div>
+          <div class="anchor-questions" aria-label="Parent questions for equal groups">
+            <span *ngFor="let question of moduleOneConceptQuestions">{{ question }}</span>
+          </div>
+        </article>
+
+        <div class="module-one-progression" aria-label="Module 1 concept progression">
+          <span *ngFor="let step of moduleOneConceptProgression; let last = last">
+            <strong>{{ step.label }}</strong>
+            <small>{{ step.detail }}</small>
+            <b *ngIf="!last">→</b>
+          </span>
+        </div>
+
+        <div class="concept-cluster-grid">
+          <article class="concept-cluster-card" *ngFor="let cluster of moduleOneConceptClusters">
+            <div class="concept-cluster-heading">
+              <span>{{ cluster.badge }}</span>
+              <div class="concept-title-row">
+                <h3>{{ cluster.title }}</h3>
+                <button
+                  type="button"
+                  class="concept-audio-button"
+                  [class.is-playing]="speakingConceptTitle === cluster.title"
+                  [attr.aria-label]="(speakingConceptTitle === cluster.title ? 'Stop reading ' : 'Play read-aloud for ') + cluster.title"
+                  (click)="readConcept(cluster)">
+                  <i aria-hidden="true"></i>
+                  {{ speakingConceptTitle === cluster.title ? 'Stop' : 'Play' }}
+                </button>
+              </div>
+            </div>
+
+            <div class="concept-visual" [ngSwitch]="cluster.visual" aria-hidden="true">
+              <div class="visual-groups" *ngSwitchCase="'groups'">
+                <span class="mini-group">
+                  <i></i><i></i><i></i><i></i>
+                </span>
+                <span class="mini-group">
+                  <i></i><i></i><i></i><i></i>
+                </span>
+                <span class="mini-group">
+                  <i></i><i></i><i></i><i></i>
+                </span>
+              </div>
+
+              <div class="visual-array" *ngSwitchCase="'array'">
+                <span *ngFor="let dot of [1,2,3,4,5,6,7,8,9,10,11,12]"></span>
+              </div>
+
+              <div class="visual-division" *ngSwitchCase="'division'">
+                <div class="division-total">
+                  <i *ngFor="let dot of [1,2,3,4,5,6,7,8,9,10,11,12]"></i>
+                </div>
+                <div class="division-arrow">↓</div>
+                <div class="division-shares">
+                  <span><i></i><i></i><i></i><i></i></span>
+                  <span><i></i><i></i><i></i><i></i></span>
+                  <span><i></i><i></i><i></i><i></i></span>
+                </div>
+              </div>
+
+              <div class="visual-connection" *ngSwitchCase="'connection'">
+                <span>3 × ? = 12</span>
+                <b>↔</b>
+                <span>12 ÷ 3 = ?</span>
+              </div>
+
+              <div class="visual-decompose" *ngSwitchCase="'decompose'">
+                <div class="number-bond">
+                  <span>5</span>
+                  <i></i>
+                  <span>2</span>
+                  <span>3</span>
+                </div>
+                <div class="split-array">
+                  <span *ngFor="let dot of [1,2,3,4,5,6,7,8]"></span>
+                  <span class="split-dot" *ngFor="let dot of [1,2,3,4,5,6,7,8,9,10,11,12]"></span>
+                </div>
+                <div class="rdw-mini">
+                  <strong>R</strong><strong>D</strong><strong>W</strong>
+                </div>
+              </div>
+            </div>
+
+            <p class="concept-definition">{{ cluster.definition }}</p>
+            <p class="concept-parent-meaning">{{ cluster.parentMeaning }}</p>
+            <p class="concept-example"><strong>Example:</strong> {{ cluster.example }}</p>
+
+            <div class="concept-vocabulary" *ngIf="cluster.vocabulary.length">
+              <span *ngFor="let item of cluster.vocabulary">
+                <strong>{{ item.term }}</strong>
+                {{ item.meaning }}
+              </span>
+            </div>
+
+            <div class="concept-card-footer">
+              <p>{{ cluster.prompt }}</p>
+              <small>{{ cluster.lessons }}</small>
+            </div>
+          </article>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-template #standardConceptCards>
+      <div class="module-concept-grid">
+        <article class="module-concept-card" *ngFor="let concept of concepts()">
+          <strong>{{ concept.term }}</strong>
+          <p>{{ concept.meaning }}</p>
+          <small>{{ concept.teacherLookFor }}</small>
+        </article>
+      </div>
+    </ng-template>
+
+    <article class="module-vocabulary-note" *ngIf="showMultiplicationDivisionVocabulary() && !showModuleOneConceptMap()">
       <div>
         <h3>Multiplication and division vocabulary</h3>
         <p>In multiplication, we say <strong>times</strong>. Example: <strong>3 times 4</strong> means 3 groups of 4.</p>
@@ -79,22 +221,38 @@
     </article>
   </section>
 
-  <section class="section-panel" *ngIf="module.topics.length; else laterModule">
+  <section class="section-panel" *ngIf="activeModuleTab === 'topics' && module.topics.length">
     <div class="section-heading">
       <div>
+        <span class="section-step">2. Topics and lessons</span>
         <h2 class="section-title">Topics and lessons</h2>
-        <p class="muted">Each lesson opens as a separate source-backed flow. Use the module concepts above as the shared reference.</p>
+        <p class="muted">See the module path first. The teaching cards below open the individual lessons.</p>
       </div>
     </div>
 
-    <div class="topic-stack">
-      <div class="concept-map" aria-label="Topic sequence">
-        <span *ngFor="let topic of module.topics; let last = last">
-          {{ topic.label }}
-          <b *ngIf="!last">→</b>
-        </span>
+    <div class="topic-overview-grid" aria-label="Topic overview">
+      <article class="topic-overview-card" *ngFor="let topic of module.topics; let last = last">
+        <span class="topic-overview-badge">{{ topic.label }}</span>
+        <h3>{{ topic.title }}</h3>
+        <p>{{ topic.lessonIds.length }} lessons · {{ topic.days }} days</p>
+        <small>{{ lessonLabel(topic.lessonIds[0]) }}-{{ lessonNumber(topic.lessonIds[topic.lessonIds.length - 1]) }}</small>
+        <b *ngIf="!last" aria-hidden="true">→</b>
+      </article>
+    </div>
+  </section>
+
+  <ng-container *ngFor="let topic of module.topics">
+    <section class="section-panel" *ngIf="activeModuleTab === teachTopicTabId(topic.id)">
+      <div class="section-heading">
+        <div>
+          <span class="section-step">3. {{ topic.label }}</span>
+          <h2 class="section-title">Teach {{ topic.label }}</h2>
+          <p class="muted">Open a lesson when you are ready to teach. Use the concept map and topic overview tabs as the reference.</p>
+        </div>
       </div>
-      <article class="topic-card" *ngFor="let topic of module.topics">
+
+      <div class="topic-stack">
+        <article class="topic-card">
         <div class="topic-heading">
           <div class="topic-title-block">
             <span class="topic-badge">{{ topic.label }}</span>
@@ -116,8 +274,9 @@
           </a>
         </div>
       </article>
-    </div>
-  </section>
+      </div>
+    </section>
+  </ng-container>
 </main>
 
 <ng-template #laterModule>

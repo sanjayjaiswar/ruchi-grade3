@@ -1,7 +1,9 @@
-import { NgFor, NgIf, NgStyle } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { NgFor, NgIf, NgStyle, NgSwitch, NgSwitchCase } from '@angular/common';
+import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import * as echarts from 'echarts';
+import type { ECharts, EChartsOption } from 'echarts';
 import { findModule, lessonTitle } from '../../data/curriculum.data';
 import { ModuleMeta } from '../../data/curriculum.types';
 
@@ -9,6 +11,28 @@ type ModuleConcept = {
   term: string;
   meaning: string;
   teacherLookFor: string;
+};
+
+type ModuleConceptCluster = {
+  badge: string;
+  title: string;
+  definition: string;
+  parentMeaning: string;
+  example: string;
+  prompt: string;
+  visual: 'groups' | 'array' | 'division' | 'connection' | 'decompose' | 'rdw';
+  vocabulary: { term: string; meaning: string }[];
+  lessons: string;
+};
+
+type ConceptProgressionStep = {
+  label: string;
+  detail: string;
+};
+
+type ModuleOverviewTab = {
+  id: string;
+  label: string;
 };
 
 type VocabularyComparisonRow = {
@@ -20,12 +44,117 @@ type VocabularyComparisonRow = {
 
 @Component({
   selector: 'app-module-overview-page',
-  imports: [NgFor, NgIf, NgStyle, RouterLink],
+  imports: [NgFor, NgIf, NgStyle, NgSwitch, NgSwitchCase, RouterLink],
   templateUrl: './module-overview.html',
   styleUrl: './module-overview.css'
 })
-export class ModuleOverviewPage implements OnInit {
+export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
+  @ViewChild('moduleOneConceptChart') private moduleOneConceptChart?: ElementRef<HTMLDivElement>;
   module?: ModuleMeta;
+  activeModuleTab = 'concepts';
+  speakingConceptTitle?: string;
+  readonly moduleOneConceptQuestions = [
+    'How many groups?',
+    'How many in each group?',
+    'What is the total?',
+    'What number is missing?'
+  ];
+  readonly moduleOneConceptProgression: ConceptProgressionStep[] = [
+    { label: 'Topic A', detail: 'equal groups to multiplication' },
+    { label: 'Topic B', detail: 'division finds an unknown' },
+    { label: 'Topics C-D', detail: 'arrays, skip-counting, units of 2 and 3' },
+    { label: 'Topic E', detail: 'connect multiplication and division' },
+    { label: 'Topic F', detail: 'decompose and solve word problems' }
+  ];
+  readonly moduleOneConceptClusters: ModuleConceptCluster[] = [
+    {
+      badge: 'Start here',
+      title: 'Equal groups and units',
+      definition: 'Equal groups have the same number in each group. The unit is the group size we count by.',
+      parentMeaning: 'Before computing, point to the groups and name the size of one group.',
+      example: '3 groups of 4 makes 12. Count by the unit: 4, 8, 12.',
+      prompt: 'How many groups? How many in each group? What unit are we counting by?',
+      visual: 'groups',
+      vocabulary: [
+        { term: 'unit', meaning: 'the group size' },
+        { term: 'skip-counting', meaning: 'counting by the same unit' }
+      ],
+      lessons: 'Lessons 1, 3, 7-9, 14'
+    },
+    {
+      badge: 'Operation meaning',
+      title: 'Multiplication: groups to total',
+      definition: 'Multiplication is the process of finding the total by combining equal groups.',
+      parentMeaning: 'Times means groups of. Factors name the groups and the group size.',
+      example: '3 × 4 = 12 means 3 times 4, or 3 groups of 4. The factors are 3 and 4. The product is 12.',
+      prompt: 'What does each factor mean in the story?',
+      visual: 'groups',
+      vocabulary: [
+        { term: 'times', meaning: 'the way we read a multiplication sign' },
+        { term: 'factors', meaning: 'the numbers being multiplied' },
+        { term: 'product', meaning: 'the total in a multiplication problem' }
+      ],
+      lessons: 'Lessons 1-3'
+    },
+    {
+      badge: 'Model',
+      title: 'Arrays: rows and columns',
+      definition: 'An array is a way to organize objects into equal rows and columns.',
+      parentMeaning: 'Arrays make factors visible and show the same total in two directions.',
+      example: '3 rows of 4 dots shows 3 × 4 = 12. It can also show 4 columns of 3 dots.',
+      prompt: 'How many rows? How many in each row? How many columns?',
+      visual: 'array',
+      vocabulary: [
+        { term: 'rows', meaning: 'side-to-side equal groups' },
+        { term: 'columns', meaning: 'up-and-down equal groups' }
+      ],
+      lessons: 'Lessons 2, 6-10, 15-16'
+    },
+    {
+      badge: 'Operation meaning',
+      title: 'Division: total to equal groups',
+      definition: 'Division is the process of separating a total into equal groups.',
+      parentMeaning: 'The answer tells how many groups or how many are in each group.',
+      example: '12 ÷ 3 = 4 means 12 divided by 3. The quotient is 4.',
+      prompt: 'Does the quotient tell the number of groups or the number in each group?',
+      visual: 'division',
+      vocabulary: [
+        { term: 'divided by', meaning: 'the way we read a division sign' },
+        { term: 'quotient', meaning: 'the answer to a division problem' }
+      ],
+      lessons: 'Lessons 4-6, 11-13'
+    },
+    {
+      badge: 'Relationship',
+      title: 'Unknown factors connect the operations',
+      definition: 'The unknown is the missing number we need to find. An unknown factor is the missing factor in a multiplication equation.',
+      parentMeaning: 'Division can be read as a related multiplication question.',
+      example: '12 ÷ 3 = ? connects to 3 × ? = 12. The unknown factor is 4.',
+      prompt: 'What multiplication equation matches this division problem?',
+      visual: 'connection',
+      vocabulary: [
+        { term: 'unknown', meaning: 'the missing number' },
+        { term: 'unknown factor', meaning: 'the missing factor in multiplication' }
+      ],
+      lessons: 'Lessons 4-6, 11, 17'
+    },
+    {
+      badge: 'Strategies',
+      title: 'Decompose, draw, and solve',
+      definition: 'Decompose means to break a number or array into smaller parts.',
+      parentMeaning: 'Number bonds, array splits, tape diagrams, and RDW organize the thinking.',
+      example: 'Break 5 × 4 into (2 × 4) + (3 × 4). Read, Draw, Write turns a story into a model and answer sentence.',
+      prompt: 'What can we break apart? What does the tape diagram show?',
+      visual: 'decompose',
+      vocabulary: [
+        { term: 'number bond', meaning: 'a whole broken into parts' },
+        { term: 'distributive property', meaning: 'break a fact apart, multiply the parts, then add' },
+        { term: 'tape diagram', meaning: 'a bar model that shows equal parts and totals' },
+        { term: 'RDW', meaning: 'Read, Draw, Write' }
+      ],
+      lessons: 'Lessons 10, 15-21'
+    }
+  ];
   readonly multiplicationDivisionVocabularyRows: VocabularyComparisonRow[] = [
     {
       operation: 'Multiplication',
@@ -41,28 +170,7 @@ export class ModuleOverviewPage implements OnInit {
     }
   ];
   private readonly moduleConcepts: Record<string, ModuleConcept[]> = {
-    m1: [
-      {
-        term: 'equal groups',
-        meaning: 'Groups must have the same number in each group before multiplication or division makes sense.',
-        teacherLookFor: 'Have the student name the number of groups and the size of each group.'
-      },
-      {
-        term: 'factor and product',
-        meaning: 'Factors are the numbers being multiplied. The product is the total.',
-        teacherLookFor: 'Ask what each factor represents in the story, not only the answer.'
-      },
-      {
-        term: 'division as unknown factor',
-        meaning: 'Division finds a missing factor: either the group size or the number of groups.',
-        teacherLookFor: 'Ask what the quotient means in context before accepting the number.'
-      },
-      {
-        term: 'array',
-        meaning: 'An array shows equal rows and columns, so factors and totals are visible.',
-        teacherLookFor: 'Ask the student to connect rows, columns, and total to the equation.'
-      }
-    ],
+    m1: [],
     m2: [
       {
         term: 'measurement unit',
@@ -197,7 +305,7 @@ export class ModuleOverviewPage implements OnInit {
     ]
   };
   private readonly moduleThemes: Record<string, { accent: string; strong: string; soft: string; muted: string }> = {
-    m1: { accent: '#c76a22', strong: '#8f470f', soft: '#fff1d8', muted: '#f5d49c' },
+    m1: { accent: '#2563eb', strong: '#1d4ed8', soft: '#dbeafe', muted: '#bfdbfe' },
     m2: { accent: '#197c72', strong: '#0f5d55', soft: '#e1f6f1', muted: '#a9ddd3' },
     m3: { accent: '#6d5bd0', strong: '#4f3aa8', soft: '#eeebff', muted: '#c9c0ff' },
     m4: { accent: '#4f8a2f', strong: '#35681d', soft: '#ecf7df', muted: '#c3dfa8' },
@@ -205,10 +313,13 @@ export class ModuleOverviewPage implements OnInit {
     m6: { accent: '#2474a6', strong: '#18577d', soft: '#e5f4ff', muted: '#afd8f2' },
     m7: { accent: '#8a5a28', strong: '#684017', soft: '#fff0dc', muted: '#e8c494' }
   };
+  private conceptChart?: ECharts;
+  private readonly conceptChartResizeHandler = () => this.conceptChart?.resize();
 
   constructor(
     private readonly route: ActivatedRoute,
-    private readonly title: Title
+    private readonly title: Title,
+    private readonly changeDetector: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
@@ -220,7 +331,24 @@ export class ModuleOverviewPage implements OnInit {
       } else {
         this.title.setTitle('Module Not Found | Ruchika Grade 3 Math');
       }
+      this.activeModuleTab = 'concepts';
+      this.scheduleConceptChartRender();
     });
+  }
+
+  ngAfterViewInit(): void {
+    this.scheduleConceptChartRender();
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', this.conceptChartResizeHandler);
+    }
+  }
+
+  ngOnDestroy(): void {
+    this.stopReadingConcept();
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('resize', this.conceptChartResizeHandler);
+    }
+    this.conceptChart?.dispose();
   }
 
   lessonLabel(lessonId: string): string {
@@ -243,8 +371,67 @@ export class ModuleOverviewPage implements OnInit {
     return this.module ? this.moduleConcepts[this.module.id] ?? [] : [];
   }
 
+  showModuleOneConceptMap(): boolean {
+    return this.module?.id === 'm1';
+  }
+
   showMultiplicationDivisionVocabulary(): boolean {
-    return this.module?.id === 'm1' || this.module?.id === 'm3';
+    return this.module?.id === 'm3';
+  }
+
+  moduleOverviewTabs(): ModuleOverviewTab[] {
+    if (!this.module) {
+      return [];
+    }
+    const tabs: ModuleOverviewTab[] = [
+      { id: 'concepts', label: '1. Concepts' },
+      { id: 'topics', label: '2. Topics and lessons' }
+    ];
+    return [
+      ...tabs,
+      ...this.module.topics.map((topic) => ({
+        id: this.teachTopicTabId(topic.id),
+        label: `Teach ${topic.label}`
+      }))
+    ];
+  }
+
+  selectModuleTab(tabId: string): void {
+    this.activeModuleTab = tabId;
+    this.stopReadingConcept();
+    this.scheduleConceptChartRender();
+  }
+
+  teachTopicTabId(topicId: string): string {
+    return `teach-${topicId}`;
+  }
+
+  readConcept(cluster: ModuleConceptCluster): void {
+    if (!this.canReadConcepts()) {
+      return;
+    }
+
+    if (this.speakingConceptTitle === cluster.title) {
+      this.stopReadingConcept();
+      return;
+    }
+
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(this.conceptReadAloudText(cluster));
+    utterance.lang = 'en-US';
+    utterance.rate = 0.9;
+    utterance.pitch = 1.05;
+    utterance.onend = () => this.clearSpeakingConcept(cluster.title);
+    utterance.onerror = () => this.clearSpeakingConcept(cluster.title);
+    this.speakingConceptTitle = cluster.title;
+    window.speechSynthesis.speak(utterance);
+  }
+
+  stopReadingConcept(): void {
+    if (this.canReadConcepts()) {
+      window.speechSynthesis.cancel();
+    }
+    this.speakingConceptTitle = undefined;
   }
 
   moduleThemeVars(moduleId: string) {
@@ -276,5 +463,215 @@ export class ModuleOverviewPage implements OnInit {
       default:
         return 'Assessment checkpoint unavailable for this route.';
     }
+  }
+
+  private scheduleConceptChartRender(): void {
+    setTimeout(() => this.renderModuleOneConceptChart());
+  }
+
+  private canReadConcepts(): boolean {
+    return (
+      typeof window !== 'undefined' &&
+      'speechSynthesis' in window &&
+      typeof SpeechSynthesisUtterance !== 'undefined'
+    );
+  }
+
+  private clearSpeakingConcept(title: string): void {
+    if (this.speakingConceptTitle === title) {
+      this.speakingConceptTitle = undefined;
+      this.changeDetector.detectChanges();
+    }
+  }
+
+  private conceptReadAloudText(cluster: ModuleConceptCluster): string {
+    return this.cleanSpeechText(`${cluster.definition} ${cluster.parentMeaning}`);
+  }
+
+  private cleanSpeechText(text: string): string {
+    return text
+      .replace(/×/g, ' times ')
+      .replace(/÷/g, ' divided by ')
+      .replace(/\?/g, ' blank ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  private renderModuleOneConceptChart(): void {
+    const chartElement = this.moduleOneConceptChart?.nativeElement;
+    if (!chartElement || !this.showModuleOneConceptMap()) {
+      this.conceptChart?.dispose();
+      this.conceptChart = undefined;
+      return;
+    }
+
+    this.conceptChart ??= echarts.init(chartElement);
+    this.conceptChart.setOption(this.moduleOneConceptChartOption(), true);
+    this.conceptChart.resize();
+  }
+
+  private moduleOneConceptChartOption(): EChartsOption {
+    const root = {
+      name: 'Equal groups',
+      description: 'The same number in each group. This is the repeated idea for the whole module.',
+      symbolSize: 96,
+      itemStyle: { color: '#ffd166', borderColor: '#92400e', borderWidth: 4 },
+      label: { fontSize: 16, fontWeight: 900, width: 88 },
+      children: [
+        {
+          name: 'Multiplication\n3 × 4 = 12',
+          description: 'Find the total by combining equal groups. Times means groups of.',
+          itemStyle: { color: '#86efac', borderColor: '#15803d', borderWidth: 3 },
+          children: [
+            {
+              name: 'Factors\nand product',
+              description: 'Factors are the numbers being multiplied. The product is the total.',
+              itemStyle: { color: '#bbf7d0', borderColor: '#16a34a', borderWidth: 2 }
+            },
+            {
+              name: 'Skip-count\nby units',
+              description: 'Count by 2s, 3s, 4s, 5s, or 10s to build facts from equal groups.',
+              itemStyle: { color: '#fde68a', borderColor: '#ca8a04', borderWidth: 2 }
+            }
+          ]
+        },
+        {
+          name: 'Arrays',
+          description: 'Objects organized into equal rows and columns so factors and products are visible.',
+          itemStyle: { color: '#93c5fd', borderColor: '#2563eb', borderWidth: 3 },
+          children: [
+            {
+              name: 'Rows',
+              description: 'Side-to-side equal groups.',
+              itemStyle: { color: '#bfdbfe', borderColor: '#1d4ed8', borderWidth: 2 }
+            },
+            {
+              name: 'Columns',
+              description: 'Up-and-down equal groups.',
+              itemStyle: { color: '#bae6fd', borderColor: '#0284c7', borderWidth: 2 }
+            }
+          ]
+        },
+        {
+          name: 'Division\n12 ÷ 3 = 4',
+          description: 'Separate a total into equal groups. The quotient is the answer.',
+          itemStyle: { color: '#c4b5fd', borderColor: '#7c3aed', borderWidth: 3 },
+          children: [
+            {
+              name: 'Quotient',
+              description: 'The answer to a division problem.',
+              itemStyle: { color: '#ddd6fe', borderColor: '#8b5cf6', borderWidth: 2 }
+            },
+            {
+              name: 'Unknown\nfactor',
+              description: 'The missing factor in a multiplication equation, such as 3 × ? = 12.',
+              itemStyle: { color: '#fbcfe8', borderColor: '#db2777', borderWidth: 2 }
+            }
+          ]
+        },
+        {
+          name: 'Decompose',
+          description: 'Break a number or array into smaller parts.',
+          itemStyle: { color: '#f9a8d4', borderColor: '#be185d', borderWidth: 3 },
+          children: [
+            {
+              name: 'Number\nbond',
+              description: 'Show a whole broken into parts.',
+              itemStyle: { color: '#fbcfe8', borderColor: '#db2777', borderWidth: 2 }
+            },
+            {
+              name: 'Distributive\nproperty',
+              description: 'Break a fact apart, multiply the parts, then add.',
+              itemStyle: { color: '#fecdd3', borderColor: '#e11d48', borderWidth: 2 }
+            }
+          ]
+        },
+        {
+          name: 'Tape diagram\nand RDW',
+          description: 'Read, Draw, Write uses a model to organize word problems before solving.',
+          itemStyle: { color: '#fdba74', borderColor: '#ea580c', borderWidth: 3 },
+          children: [
+            {
+              name: 'Read',
+              description: 'Understand the story and what is known.',
+              itemStyle: { color: '#fed7aa', borderColor: '#f97316', borderWidth: 2 }
+            },
+            {
+              name: 'Draw',
+              description: 'Show equal parts, total, and unknown.',
+              itemStyle: { color: '#ffedd5', borderColor: '#fb923c', borderWidth: 2 }
+            },
+            {
+              name: 'Write',
+              description: 'Write equations and an answer sentence.',
+              itemStyle: { color: '#fef3c7', borderColor: '#f59e0b', borderWidth: 2 }
+            }
+          ]
+        }
+      ]
+    };
+
+    const option = {
+      backgroundColor: 'transparent',
+      tooltip: {
+        trigger: 'item',
+        confine: true,
+        borderColor: '#bfdbfe',
+        formatter: (params: any) => {
+          const name = String(params.data?.name ?? '').replace(/\n/g, ' ');
+          return `<strong>${name}</strong><br>${params.data?.description ?? ''}`;
+        }
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [root],
+          layout: 'radial',
+          top: '8%',
+          bottom: '10%',
+          left: '4%',
+          right: '4%',
+          symbol: 'circle',
+          symbolSize: 70,
+          lineStyle: {
+            color: '#94a3b8',
+            width: 2.4
+          },
+          label: {
+            show: true,
+            position: 'inside',
+            rotate: 0,
+            color: '#172033',
+            fontSize: 12,
+            fontWeight: 900,
+            lineHeight: 15,
+            overflow: 'break',
+            width: 82
+          },
+          leaves: {
+            label: {
+              position: 'inside',
+              rotate: 0,
+              color: '#172033',
+              fontSize: 11,
+              fontWeight: 850,
+              lineHeight: 14,
+              overflow: 'break',
+              width: 76
+            }
+          },
+          expandAndCollapse: false,
+          animationDuration: 450,
+          animationDurationUpdate: 450,
+          emphasis: {
+            focus: 'descendant',
+            lineStyle: {
+              width: 4
+            }
+          }
+        }
+      ]
+    };
+    return option as unknown as EChartsOption;
   }
 }
