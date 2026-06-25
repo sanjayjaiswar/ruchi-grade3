@@ -6,6 +6,7 @@ import * as echarts from 'echarts';
 import type { ECharts, EChartsOption } from 'echarts';
 import { findModule, lessonTitle } from '../../data/curriculum.data';
 import { ModuleMeta } from '../../data/curriculum.types';
+import { preferredReadAloudVoice, READ_ALOUD_VOICE_STORAGE_KEY } from '../../shared/read-aloud-preferences';
 
 type ModuleConcept = {
   term: string;
@@ -62,22 +63,23 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
   readonly moduleOneConceptProgression: ConceptProgressionStep[] = [
     { label: 'Topic A', detail: 'equal groups to multiplication' },
     { label: 'Topic B', detail: 'division finds an unknown' },
-    { label: 'Topics C-D', detail: 'arrays, skip-counting, units of 2 and 3' },
+    { label: 'Topics C-D', detail: 'arrays, skip-counting, group sizes of 2 and 3' },
     { label: 'Topic E', detail: 'connect multiplication and division' },
     { label: 'Topic F', detail: 'decompose and solve word problems' }
   ];
   readonly moduleOneConceptClusters: ModuleConceptCluster[] = [
     {
       badge: 'Start here',
-      title: 'Equal groups and units',
-      definition: 'Equal groups have the same number in each group. The unit is the group size we count by.',
-      parentMeaning: 'Before computing, point to the groups and name the size of one group.',
-      example: '3 groups of 4 makes 12. Count by the unit: 4, 8, 12.',
-      prompt: 'How many groups? How many in each group? What unit are we counting by?',
+      title: 'Equal groups and group size',
+      definition: 'Equal groups are the foundation for multiplication, arrays, and division. Equal groups have the same number in each group.',
+      parentMeaning: 'The group size is how many are in each group. In Eureka Math, this group size is also called the unit.',
+      example: '3 groups of 4 makes 12. Count by the group size: 4, 8, 12.',
+      prompt: 'How many groups? What is the group size? How many total?',
       visual: 'groups',
       vocabulary: [
-        { term: 'unit', meaning: 'the group size' },
-        { term: 'skip-counting', meaning: 'counting by the same unit' }
+        { term: 'group size', meaning: 'how many are in each group' },
+        { term: 'unit', meaning: 'Eureka word for the group size' },
+        { term: 'skip-counting', meaning: 'counting by the same group size' }
       ],
       lessons: 'Lessons 1, 3, 7-9, 14'
     },
@@ -85,9 +87,9 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
       badge: 'Operation meaning',
       title: 'Multiplication: groups to total',
       definition: 'Multiplication is the process of finding the total by combining equal groups.',
-      parentMeaning: 'Times means groups of. Factors name the groups and the group size.',
+      parentMeaning: 'Now that we understand equal groups, multiplication helps us find the total. Times means groups of.',
       example: '3 × 4 = 12 means 3 times 4, or 3 groups of 4. The factors are 3 and 4. The product is 12.',
-      prompt: 'What does each factor mean in the story?',
+      prompt: 'How many groups? What is the group size? What is the total?',
       visual: 'groups',
       vocabulary: [
         { term: 'times', meaning: 'the way we read a multiplication sign' },
@@ -418,6 +420,10 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
 
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(this.conceptReadAloudText(cluster));
+    const voice = this.selectedReadAloudVoice();
+    if (voice) {
+      utterance.voice = voice;
+    }
     utterance.lang = 'en-US';
     utterance.rate = 0.9;
     utterance.pitch = 1.05;
@@ -488,6 +494,15 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
     return this.cleanSpeechText(`${cluster.definition} ${cluster.parentMeaning}`);
   }
 
+  private selectedReadAloudVoice(): SpeechSynthesisVoice | undefined {
+    const voices = window.speechSynthesis.getVoices();
+    return preferredReadAloudVoice(voices, this.storedReadAloudVoiceName());
+  }
+
+  private storedReadAloudVoiceName(): string {
+    return typeof window !== 'undefined' ? window.localStorage.getItem(READ_ALOUD_VOICE_STORAGE_KEY) ?? '' : '';
+  }
+
   private cleanSpeechText(text: string): string {
     return text
       .replace(/×/g, ' times ')
@@ -513,7 +528,7 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
   private moduleOneConceptChartOption(): EChartsOption {
     const root = {
       name: 'Equal groups',
-      description: 'The same number in each group. This is the repeated idea for the whole module.',
+      description: 'Equal groups are the foundation for multiplication, arrays, and division.',
       symbolSize: 96,
       itemStyle: { color: '#ffd166', borderColor: '#92400e', borderWidth: 4 },
       label: { fontSize: 16, fontWeight: 900, width: 88 },
@@ -529,7 +544,7 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
               itemStyle: { color: '#bbf7d0', borderColor: '#16a34a', borderWidth: 2 }
             },
             {
-              name: 'Skip-count\nby units',
+              name: 'Skip-count\nby group size',
               description: 'Count by 2s, 3s, 4s, 5s, or 10s to build facts from equal groups.',
               itemStyle: { color: '#fde68a', borderColor: '#ca8a04', borderWidth: 2 }
             }

@@ -20,9 +20,30 @@
       </a>
     </div>
 
-    <div class="topbar-status">
-      <span>Modules 1-7</span>
-      <strong>152 lessons</strong>
+    <div class="topbar-tools">
+      <label class="app-voice-control" *ngIf="availableReadAloudVoices.length">
+        <span>Voice</span>
+        <select
+          [value]="selectedReadAloudVoiceName"
+          (change)="selectReadAloudVoice($event)"
+          aria-label="Read aloud voice">
+          <option value="">Auto</option>
+          <option *ngFor="let voice of availableReadAloudVoices" [value]="voice.name">
+            {{ voice.name }} · {{ voice.lang }}
+          </option>
+        </select>
+      </label>
+      <button
+        class="voice-test-button"
+        type="button"
+        *ngIf="availableReadAloudVoices.length"
+        (click)="testReadAloudVoice()">
+        {{ isTestingReadAloudVoice ? 'Stop test' : 'Test voice' }}
+      </button>
+      <div class="topbar-status">
+        <span>Modules 1-7</span>
+        <strong>152 lessons</strong>
+      </div>
     </div>
   </header>
 

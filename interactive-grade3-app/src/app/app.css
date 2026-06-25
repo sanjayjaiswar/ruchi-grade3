@@ -116,6 +116,66 @@
   font-weight: 800;
 }
 
+.topbar-tools {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  min-width: 0;
+}
+
+.app-voice-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+}
+
+.app-voice-control span {
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.app-voice-control select {
+  width: min(260px, 24vw);
+  min-height: 34px;
+  padding: 0 9px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: #fffdf8;
+  color: var(--color-text);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.app-voice-control select:focus-visible {
+  border-color: var(--module-accent);
+  outline: none;
+}
+
+.voice-test-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 10px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 32%, var(--color-border) 68%);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--module-accent-strong);
+  font-size: 13px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.voice-test-button:hover,
+.voice-test-button:focus-visible {
+  border-color: var(--module-accent);
+  background: var(--module-accent-soft);
+  outline: none;
+}
+
 .topbar-status strong {
   color: var(--module-accent-strong);
 }
@@ -297,6 +357,20 @@
 }
 
 @media (max-width: 920px) {
+  .topbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .topbar-tools {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .app-voice-control select {
+    width: min(260px, 62vw);
+  }
+
   .app-layout,
   .drawer-is-collapsed .app-layout {
     grid-template-columns: 1fr;

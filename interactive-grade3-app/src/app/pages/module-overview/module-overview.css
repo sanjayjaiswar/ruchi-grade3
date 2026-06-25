@@ -1158,6 +1158,11 @@
     flex: 1 1 150px;
   }
 
+  .section-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
   .concept-anchor-card {
     grid-template-columns: 1fr;
   }

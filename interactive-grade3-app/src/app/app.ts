@@ -1,8 +1,14 @@
 import { NgFor, NgIf, NgStyle } from '@angular/common';
-import { Component, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
 import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs';
 import { lessonTitle, MODULES } from './data/curriculum.data';
+import {
+  preferredReadAloudVoice,
+  READ_ALOUD_TEST_TEXT,
+  READ_ALOUD_VOICE_STORAGE_KEY,
+  sortedReadAloudVoices
+} from './shared/read-aloud-preferences';
 
 const MODULE_THEME: Record<string, { label: string; accent: string; strong: string; soft: string; muted: string }> = {
   m1: { label: 'Groups', accent: '#2563eb', strong: '#1d4ed8', soft: '#dbeafe', muted: '#bfdbfe' },
@@ -176,18 +182,41 @@ const LESSON_SHORT_LABELS: Record<string, string> = {
   styleUrl: './app.css',
   encapsulation: ViewEncapsulation.None
 })
-export class App {
+export class App implements OnInit, OnDestroy {
   readonly modules = MODULES;
   drawerCollapsed = true;
   activeModuleId = 'm1';
   activeLessonId = '';
+  availableReadAloudVoices: SpeechSynthesisVoice[] = [];
+  selectedReadAloudVoiceName = '';
+  isTestingReadAloudVoice = false;
   private readonly expandedModules = new Set<string>(['m1']);
+  private readonly voicesChangedHandler = () => this.loadReadAloudVoices();
 
-  constructor(private readonly router: Router) {
+  constructor(
+    private readonly router: Router,
+    private readonly changeDetector: ChangeDetectorRef
+  ) {
     this.syncActiveRoute(this.router.url);
     this.router.events
       .pipe(filter((event): event is NavigationEnd => event instanceof NavigationEnd))
       .subscribe((event) => this.syncActiveRoute(event.urlAfterRedirects));
+  }
+
+  ngOnInit(): void {
+    this.loadReadAloudVoices();
+    if (this.canReadAloud()) {
+      window.speechSynthesis.addEventListener('voiceschanged', this.voicesChangedHandler);
+    }
+  }
+
+  ngOnDestroy(): void {
+    if (this.canReadAloud()) {
+      window.speechSynthesis.removeEventListener('voiceschanged', this.voicesChangedHandler);
+      if (this.isTestingReadAloudVoice) {
+        window.speechSynthesis.cancel();
+      }
+    }
   }
 
   toggleDrawer(): void {
@@ -232,6 +261,46 @@ export class App {
     return this.moduleTheme(moduleId).label;
   }
 
+  selectReadAloudVoice(event: Event): void {
+    const voiceName = (event.target as HTMLSelectElement).value;
+    this.selectedReadAloudVoiceName = voiceName;
+    this.stopReadAloudTest();
+
+    if (typeof window === 'undefined') {
+      return;
+    }
+    if (voiceName) {
+      window.localStorage.setItem(READ_ALOUD_VOICE_STORAGE_KEY, voiceName);
+    } else {
+      window.localStorage.removeItem(READ_ALOUD_VOICE_STORAGE_KEY);
+    }
+  }
+
+  testReadAloudVoice(): void {
+    if (!this.canReadAloud()) {
+      return;
+    }
+
+    if (this.isTestingReadAloudVoice) {
+      this.stopReadAloudTest();
+      return;
+    }
+
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(READ_ALOUD_TEST_TEXT);
+    const voice = preferredReadAloudVoice(window.speechSynthesis.getVoices(), this.selectedReadAloudVoiceName);
+    if (voice) {
+      utterance.voice = voice;
+    }
+    utterance.lang = 'en-US';
+    utterance.rate = 0.9;
+    utterance.pitch = 1.05;
+    utterance.onend = () => this.clearReadAloudTest();
+    utterance.onerror = () => this.clearReadAloudTest();
+    this.isTestingReadAloudVoice = true;
+    window.speechSynthesis.speak(utterance);
+  }
+
   private shortObjective(moduleId: string, lessonId: string): string {
     return lessonTitle(moduleId, lessonId)
       .replace(/^Lesson\s+\d+:\s*/, '')
@@ -239,6 +308,39 @@ export class App {
       .split(/\s+/)
       .slice(0, 4)
       .join(' ');
+  }
+
+  private canReadAloud(): boolean {
+    return (
+      typeof window !== 'undefined' &&
+      'speechSynthesis' in window &&
+      typeof SpeechSynthesisUtterance !== 'undefined'
+    );
+  }
+
+  private loadReadAloudVoices(): void {
+    if (!this.canReadAloud()) {
+      return;
+    }
+
+    const voices = sortedReadAloudVoices(window.speechSynthesis.getVoices());
+    const storedVoiceName = window.localStorage.getItem(READ_ALOUD_VOICE_STORAGE_KEY) ?? '';
+    this.availableReadAloudVoices = voices;
+    this.selectedReadAloudVoiceName =
+      storedVoiceName && voices.some((voice) => voice.name === storedVoiceName) ? storedVoiceName : '';
+    this.changeDetector.detectChanges();
+  }
+
+  private stopReadAloudTest(): void {
+    if (this.canReadAloud() && this.isTestingReadAloudVoice) {
+      window.speechSynthesis.cancel();
+    }
+    this.isTestingReadAloudVoice = false;
+  }
+
+  private clearReadAloudTest(): void {
+    this.isTestingReadAloudVoice = false;
+    this.changeDetector.detectChanges();
   }
 
   private syncActiveRoute(url: string): void {
