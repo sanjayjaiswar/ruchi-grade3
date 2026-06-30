@@ -1,5 +1,6 @@
-import { LessonContent, ModuleMeta } from './curriculum.types';
+import { LessonContent, ModuleMeta, VisualModelType } from './curriculum.types';
 import { LESSON_SOURCE_NOTES } from './lesson-source-notes.generated';
+import { STUDENT_WORK_SOURCE } from './student-work-source.generated';
 
 export const MODULES: ModuleMeta[] = [
   {
@@ -346,6 +347,7 @@ type Module1LessonSeed = {
 };
 
 function module1SourceLesson(seed: Module1LessonSeed): LessonContent {
+  const modelName = modelDisplayName(seed.visualModels[0]);
   return {
     id: `m1-l${seed.lessonNumber}`,
     moduleId: 'm1',
@@ -368,7 +370,7 @@ function module1SourceLesson(seed: Module1LessonSeed): LessonContent {
     steps: [
       {
         id: 'source-goal',
-        title: 'Start with the lesson idea',
+        title: `Lesson ${seed.lessonNumber}: ${shortObjective(seed.objective)}`,
         shortTitle: 'Goal',
         studentPrompt: seed.goal,
         teacherEditionBasis: `Lesson ${seed.lessonNumber} objective: ${seed.objective}`,
@@ -376,7 +378,7 @@ function module1SourceLesson(seed: Module1LessonSeed): LessonContent {
       },
       {
         id: 'source-model',
-        title: 'Use the lesson model',
+        title: `Model with a ${modelName}`,
         shortTitle: 'Model',
         studentPrompt: seed.modelFocus,
         teacherEditionBasis: seed.concept,
@@ -384,7 +386,7 @@ function module1SourceLesson(seed: Module1LessonSeed): LessonContent {
       },
       {
         id: 'source-meaning',
-        title: 'Name what each part means',
+        title: 'Name the lesson quantities',
         shortTitle: 'Meaning',
         studentPrompt: seed.concept,
         teacherEditionBasis: 'Ask the student to name what the visual parts, quantities, and unknown represent before solving.',
@@ -392,7 +394,7 @@ function module1SourceLesson(seed: Module1LessonSeed): LessonContent {
       },
       {
         id: 'source-picture',
-        title: 'Read the picture',
+        title: 'Read the source problem',
         shortTitle: 'Picture',
         studentPrompt: seed.example,
         teacherEditionBasis: seed.teacherMove,
@@ -400,7 +402,7 @@ function module1SourceLesson(seed: Module1LessonSeed): LessonContent {
       },
       {
         id: 'source-draw',
-        title: 'Draw or label the model',
+        title: `Draw and label the ${modelName}`,
         shortTitle: 'Draw',
         studentPrompt: seed.modelFocus,
         teacherEditionBasis: 'Have the student draw, label, or point to the model before writing the equation or final answer.',
@@ -408,7 +410,7 @@ function module1SourceLesson(seed: Module1LessonSeed): LessonContent {
       },
       {
         id: 'source-exit',
-        title: 'Exit check',
+        title: `Check Lesson ${seed.lessonNumber} evidence`,
         shortTitle: 'Exit',
         studentPrompt: seed.check,
         teacherEditionBasis:
@@ -638,7 +640,7 @@ const MODULE_1_SOURCE_LESSONS: LessonContent[] = [
     modelFocus: 'Use one model to write related multiplication and division facts.',
     concept: 'Lesson 17 explicitly models the relationship between multiplication and division.',
     example: 'Ask the student to write a multiplication equation and a related division equation from the same model.',
-    teacherMove: 'Keep the factor, product, divisor, and quotient meanings tied to the picture.',
+    teacherMove: 'Keep the factor, product, unknown, and quotient meanings tied to the picture.',
     check: 'The student should explain how multiplication and division undo or relate to each other in the model.'
   }),
   module1SourceLesson({
@@ -731,10 +733,10 @@ export const LESSONS: LessonContent[] = [
     steps: [
       {
         id: 'lesson-focus',
-        title: 'Start with the lesson goal',
+        title: 'Start with equal groups',
         shortTitle: 'Goal',
         studentPrompt:
-          'Start with equal groups and repeated addition. The multiplication symbol comes after the picture and words make sense.',
+          'Equal groups are the foundation for multiplication. The multiplication symbol comes after the picture and words make sense.',
         teacherEditionBasis:
           'Lesson 1 objective: understand equal groups of as multiplication.',
         visualModel: 'equal-groups'
@@ -851,7 +853,7 @@ export const LESSONS: LessonContent[] = [
       }
     ],
     summary: {
-      takeaway: 'Multiplication is a faster way to add equal groups.',
+      takeaway: 'Multiplication finds a total by combining equal groups.',
       check: 'Ask: Are the groups equal? How many groups? How many in each group?'
     }
   },
@@ -1011,7 +1013,7 @@ export const LESSONS: LessonContent[] = [
         studentPrompt:
           'Cynthia buys 15 burgers. Each pack has 3 burgers. Count by 3s until 15 to find the number of packs.',
         teacherEditionBasis:
-          'Lesson 5 Problem 2 connects finding the number of groups to counting by the divisor: 3, 6, 9, 12, 15.',
+          'Lesson 5 Problem 2 connects finding the number of groups to counting by the group size: 3, 6, 9, 12, 15.',
         visualModel: 'equal-groups'
       },
       {
@@ -1631,7 +1633,7 @@ function conceptVocabularyForObjective(objective: string): string[] {
   addIf(text.includes('commutative'), ['commutative property']);
   addIf(text.includes('decompose') || text.includes('break apart'), ['decompose']);
   addIf(text.includes('distributive'), ['distributive property']);
-  addIf(text.includes('divid'), ['division', 'divisor', 'quotient']);
+  addIf(text.includes('divid'), ['division', 'quotient']);
   addIf(text.includes('elapsed time') || text.includes('time'), ['elapsed time']);
   addIf(text.includes('equal group'), ['equal groups']);
   addIf(text.includes('equivalent fraction'), ['equivalent fractions']);
@@ -1655,6 +1657,42 @@ function conceptVocabularyForObjective(objective: string): string[] {
   return Array.from(terms);
 }
 
+function modelDisplayName(visualModel: VisualModelType): string {
+  const names: Record<VisualModelType, string> = {
+    'equal-groups': 'equal groups',
+    array: 'array',
+    'tape-diagram': 'tape diagram',
+    'number-line': 'number line',
+    clock: 'clock',
+    measurement: 'measurement model',
+    'area-model': 'area model',
+    'fraction-strip': 'fraction strip',
+    graph: 'graph',
+    geometry: 'geometry diagram'
+  };
+  return names[visualModel];
+}
+
+function cleanLessonText(value: string | undefined, fallback: string, maxLength = 220): string {
+  const cleaned = (value ?? '')
+    .replace(/\s+/g, ' ')
+    .replace(/\bT:\s*/g, '')
+    .replace(/\bS:\s*/g, '')
+    .trim();
+
+  const text = cleaned || fallback;
+  return text.length > maxLength ? `${text.slice(0, maxLength - 3).trim()}...` : text;
+}
+
+function shortObjective(objective: string, maxLength = 110): string {
+  return cleanLessonText(objective.replace(/\.$/, ''), objective, maxLength);
+}
+
+function studentGoalForObjective(objective: string): string {
+  const cleaned = objective.replace(/\.$/, '').trim();
+  return `I can ${cleaned.charAt(0).toLowerCase()}${cleaned.slice(1)}.`;
+}
+
 function generatedLesson(module: ModuleMeta, lessonNumber: number): LessonContent | undefined {
   const lessonId = `${module.id}-l${lessonNumber}`;
   const objective = LESSON_OBJECTIVES[lessonId];
@@ -1672,6 +1710,22 @@ function generatedLesson(module: ModuleMeta, lessonNumber: number): LessonConten
   const visualModel = selectPrimaryVisualModel(module, objective);
   const guide = modelTeachingGuide(visualModel);
   const note = LESSON_SOURCE_NOTES[lessonId];
+  const workbook = STUDENT_WORK_SOURCE[lessonId];
+  const workbookProblem = workbook?.problems[0];
+  const workbookPrompt = cleanLessonText(
+    workbookProblem
+      ? [
+          workbookProblem.prompt,
+          workbookProblem.equations.length ? `Equations: ${workbookProblem.equations.join(', ')}` : ''
+        ].join(' ')
+      : undefined,
+    note?.sourceProblem ?? objective
+  );
+  const sourceProblem = cleanLessonText(note?.sourceProblem, workbookPrompt);
+  const teacherMove = cleanLessonText(note?.teacherMove, guide.ask);
+  const exitEvidence = cleanLessonText(note?.exitEvidence, guide.exit);
+  const modelName = modelDisplayName(visualModel);
+  const lessonVisualModels = [visualModel, ...module.visualModels.filter((model) => model !== visualModel)];
   const sourceNote = `Lesson ${lessonNumber} objective, concept development, problem set, exit ticket, and homework.`;
 
   return {
@@ -1681,7 +1735,7 @@ function generatedLesson(module: ModuleMeta, lessonNumber: number): LessonConten
     lessonNumber,
     title: objective.replace(/\.$/, ''),
     objective,
-    studentGoal: `I can teach and explain this Eureka Math objective using the source model: ${objective}`,
+    studentGoal: studentGoalForObjective(objective),
     sourceRefs: [
       {
         sourceType: 'teacher-edition',
@@ -1691,63 +1745,65 @@ function generatedLesson(module: ModuleMeta, lessonNumber: number): LessonConten
         note: sourceNote
       }
     ],
-    vocabulary: [...conceptVocabularyForObjective(objective), topic.label, topic.title, ...module.visualModels],
-    visualModels: module.visualModels,
+    vocabulary: Array.from(new Set([...conceptVocabularyForObjective(objective), topic.label, topic.title, modelName])),
+    visualModels: lessonVisualModels,
     steps: [
       {
         id: 'source-goal',
-        title: 'Know the lesson question',
+        title: `Lesson ${lessonNumber}: ${shortObjective(objective)}`,
         shortTitle: 'Goal',
-        studentPrompt: note?.sourceProblem ?? `Student-facing target: ${objective}`,
-        teacherEditionBasis: `Use ${module.sourcePdf}, pdf pages ${sourcePages.pageStart}-${sourcePages.pageEnd}. Start from the concept development, then use the problem set and exit ticket for evidence.`,
+        studentPrompt: workbookPrompt,
+        teacherEditionBasis: `Use ${module.sourcePdf}, pdf pages ${sourcePages.pageStart}-${sourcePages.pageEnd}. Topic: ${topic.label}, ${topic.title}.`,
         visualModel
       },
       {
         id: 'source-model',
-        title: 'Put the model on the board',
+        title: `Model with a ${modelName}`,
         shortTitle: 'Model',
         studentPrompt: guide.board,
-        teacherEditionBasis: note?.teacherMove ?? `${topic.label}: ${topic.title}. Model family for this lesson: ${module.visualModels.join(', ')}.`,
+        teacherEditionBasis: teacherMove,
         visualModel
       },
       {
         id: 'source-meaning',
-        title: 'Name what each part means',
+        title: 'Name the lesson quantities',
         shortTitle: 'Meaning',
         studentPrompt: guide.listen,
-        teacherEditionBasis: note?.teacherMove ?? 'Before solving, make the student name what the labels, units, quantities, and unknown represent.',
+        teacherEditionBasis: `Connect the ${modelName} to the objective: ${shortObjective(objective, 170)}.`,
         visualModel
       },
       {
         id: 'source-picture',
-        title: 'Read the picture',
+        title: 'Read the source problem',
         shortTitle: 'Picture',
-        studentPrompt: note?.sourceProblem ?? guide.ask,
-        teacherEditionBasis: 'Run one source-page example slowly. Require the student to explain the model before accepting the numerical answer.',
+        studentPrompt: sourceProblem,
+        teacherEditionBasis: guide.ask,
         visualModel
       },
       {
         id: 'source-draw',
-        title: 'Draw or label the model',
+        title: `Draw and label the ${modelName}`,
         shortTitle: 'Draw',
         studentPrompt: guide.board,
-        teacherEditionBasis: note?.teacherMove ?? 'Have the student reproduce the model with labels, then connect it to the equation or written answer.',
+        teacherEditionBasis: teacherMove,
         visualModel
       },
       {
         id: 'source-exit',
-        title: 'Exit check',
+        title: `Check Lesson ${lessonNumber} evidence`,
         shortTitle: 'Exit',
-        studentPrompt: `${note?.exitEvidence ?? guide.exit} Misconception to catch: ${guide.misconception}`,
-        teacherEditionBasis: 'Use the lesson exit ticket or problem-set pattern as evidence. Do not count a bare numerical answer as enough.',
+        studentPrompt: `${exitEvidence} Misconception to catch: ${guide.misconception}`,
+        teacherEditionBasis: workbook?.teacherEditionReference
+          ? cleanLessonText(workbook.teacherEditionReference, exitEvidence, 240)
+          : 'Use the lesson exit ticket or problem-set pattern as evidence. Do not count a bare numerical answer as enough.',
         visualModel
       },
       {
         id: 'source-summary',
         title: 'Say the lesson takeaway',
         shortTitle: 'Sum',
-        studentPrompt: `The student should explain the model, the lesson words, and the answer in one connected sentence.`,
-        teacherEditionBasis: `Close by asking for one sentence that connects the model to the objective: ${objective}`,
+        studentPrompt: `The student should explain how the ${modelName} shows this lesson: ${shortObjective(objective, 150)}.`,
+        teacherEditionBasis: `Close with one sentence that connects the model, labels, and answer to Lesson ${lessonNumber}.`,
         visualModel
       }
     ],

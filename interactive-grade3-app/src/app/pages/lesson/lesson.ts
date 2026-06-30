@@ -7,6 +7,7 @@ import { findLesson, findModule } from '../../data/curriculum.data';
 import { LESSON_SOURCE_NOTES } from '../../data/lesson-source-notes.generated';
 import { STUDENT_WORK_SOURCE, StudentWorkLessonSource, StudentWorkSourceProblem } from '../../data/student-work-source.generated';
 import { LessonContent, LessonStep, ModuleMeta } from '../../data/curriculum.types';
+import { ArrayDecomposerComponent } from '../../shared/array-decomposer/array-decomposer';
 import { EqualGroupsModelComponent } from '../../shared/equal-groups-model/equal-groups-model';
 
 type Feedback = {
@@ -31,6 +32,19 @@ type VocabularyComparisonRow = {
   howToSayIt: string;
   example: string;
   answerName: string;
+};
+
+type ArrayDecompositionExample = {
+  title: string;
+  totalGroups: number;
+  groupSize: number;
+  firstPart: number;
+  secondPart: number;
+  context: string;
+  equation: string;
+  teacherPrompt: string;
+  rows: number[];
+  columns: number[];
 };
 
 type StudentWorkProblem = {
@@ -78,6 +92,7 @@ type SourceVisualFacts = Pick<
 @Component({
   selector: 'app-lesson-page',
   imports: [
+    ArrayDecomposerComponent,
     EqualGroupsModelComponent,
     FormsModule,
     NgClass,
@@ -160,17 +175,7 @@ export class LessonPage implements OnInit {
     'division': {
       term: 'division',
       meaning: 'An operation that finds a missing factor: either how many groups or how many are in each group.',
-      teacherCheck: 'Ask what the divisor and quotient mean in the story before solving.'
-    },
-    'dividend': {
-      term: 'dividend',
-      meaning: 'The total amount being divided.',
-      teacherCheck: 'Ask what total is being shared or measured into groups.'
-    },
-    'divisor': {
-      term: 'divisor',
-      meaning: 'The number you divide by. It can tell the number of groups or the size of each group.',
-      teacherCheck: 'Ask what the divisor means in this specific problem before solving.'
+      teacherCheck: 'Ask what total is being separated and what the quotient means in the story before solving.'
     },
     'elapsed time': {
       term: 'elapsed time',
@@ -294,9 +299,10 @@ export class LessonPage implements OnInit {
     }
   };
   private readonly lessonConceptTerms: Record<string, string[]> = {
-    'm1-l4': ['division', 'dividend', 'divisor', 'quotient'],
-    'm1-l5': ['division', 'divisor', 'quotient'],
+    'm1-l4': ['division', 'unknown', 'quotient'],
+    'm1-l5': ['division', 'unknown', 'quotient'],
     'm1-l6': ['array', 'quotient', 'unknown factor'],
+    'm1-l10': ['array', 'decompose', 'product'],
     'm2-l1': ['elapsed time', 'number line'],
     'm2-l6': ['gram', 'kilogram'],
     'm2-l8': ['liter', 'milliliter', 'capacity'],
@@ -358,6 +364,48 @@ export class LessonPage implements OnInit {
     { label: 'C', height: 96 }
   ];
   readonly numberLineTicks = Array.from({ length: 7 });
+  readonly lesson10TeacherModel: ArrayDecompositionExample = this.makeArrayDecompositionExample({
+    title: 'Teacher Edition model: 3 guitars with 6 strings each',
+    totalGroups: 3,
+    groupSize: 6,
+    firstPart: 1,
+    secondPart: 2,
+    context: 'Split the 3 guitar rows into 1 row and 2 rows.',
+    equation: '3 × 6 = (1 × 6) + (2 × 6) = 6 + 12 = 18',
+    teacherPrompt: 'What does each row mean in the guitar story?'
+  });
+  readonly lesson10ArrayDecompositions: ArrayDecompositionExample[] = [
+    this.makeArrayDecompositionExample({
+      title: 'Problem 1: break 7 rows into 5 rows and 2 rows',
+      totalGroups: 7,
+      groupSize: 3,
+      firstPart: 5,
+      secondPart: 2,
+      context: 'Keep the group size 3. Decompose the 7 rows into 5 rows and 2 rows.',
+      equation: '7 × 3 = (5 × 3) + (2 × 3) = 15 + 6 = 21',
+      teacherPrompt: 'What stayed the same? What did we break apart?'
+    }),
+    this.makeArrayDecompositionExample({
+      title: 'Problem 2: break 8 rows into 4 rows and 4 rows',
+      totalGroups: 8,
+      groupSize: 3,
+      firstPart: 4,
+      secondPart: 4,
+      context: 'Both parts are 4 rows of 3, so the two partial products match.',
+      equation: '8 × 3 = (4 × 3) + (4 × 3) = 12 + 12 = 24',
+      teacherPrompt: 'How do the two smaller arrays make the same whole array?'
+    }),
+    this.makeArrayDecompositionExample({
+      title: "Problem 3: Ruby's album page",
+      totalGroups: 5,
+      groupSize: 3,
+      firstPart: 2,
+      secondPart: 3,
+      context: 'Ruby has 5 rows of 3 photos. The top part has 2 rows and the bottom part has 3 rows.',
+      equation: '5 × 3 = (2 × 3) + (3 × 3) = 6 + 9 = 15',
+      teacherPrompt: 'Where do the 6 and 9 come from in the array?'
+    })
+  ];
   readonly multiplicationDivisionVocabularyRows: VocabularyComparisonRow[] = [
     {
       operation: 'Multiplication',
@@ -404,6 +452,7 @@ export class LessonPage implements OnInit {
       return [];
     }
 
+    const baseSteps = this.isLesson10 ? this.lesson10TeacherEditionSteps : this.lesson.steps;
     const solveStep: LessonStep = {
       id: 'student-work',
       title: 'Student work: solve the lesson problems',
@@ -414,20 +463,92 @@ export class LessonPage implements OnInit {
         'Use the lesson Problem Set as the main student work. The teacher supports by checking the drawing, equation, answer, and meaning in context.',
       visualModel: this.lesson.visualModels[0] ?? 'equal-groups'
     };
-    const existingSolve = this.lesson.steps.some((step) => step.id === solveStep.id || step.shortTitle === solveStep.shortTitle);
+    const existingSolve = baseSteps.some((step) => step.id === solveStep.id || step.shortTitle === solveStep.shortTitle);
     if (existingSolve) {
-      return this.lesson.steps;
+      return baseSteps;
     }
 
-    const insertIndex = this.lesson.steps.findIndex((step) => step.shortTitle === 'Exit' || step.id.includes('exit'));
+    const insertIndex = baseSteps.findIndex((step) => step.shortTitle === 'Exit' || step.id.includes('exit'));
     if (insertIndex < 0) {
-      return [...this.lesson.steps, solveStep];
+      return [...baseSteps, solveStep];
     }
 
     return [
-      ...this.lesson.steps.slice(0, insertIndex),
+      ...baseSteps.slice(0, insertIndex),
       solveStep,
-      ...this.lesson.steps.slice(insertIndex)
+      ...baseSteps.slice(insertIndex)
+    ];
+  }
+
+  get isLesson10(): boolean {
+    return this.module?.id === 'm1' && this.lesson?.lessonNumber === 10;
+  }
+
+  get lesson10TeacherEditionSteps(): LessonStep[] {
+    return [
+      {
+        id: 'source-goal',
+        title: 'Use the guitar string story',
+        shortTitle: 'Goal',
+        studentPrompt: 'A guitar has 6 strings. Use 3 guitars to build 3 rows of 6 and find the total.',
+        teacherEditionBasis:
+          'Lesson 10 Application Problem: A guitar has 6 strings. How many strings are there on 3 guitars? Write a multiplication equation to solve.',
+        visualModel: 'array'
+      },
+      {
+        id: 'source-model',
+        title: 'Draw the whole array first',
+        shortTitle: 'Model',
+        studentPrompt: 'Draw a 3 × 6 array. Let one row show the strings on one guitar.',
+        teacherEditionBasis:
+          'Teacher Edition Concept Development: Draw an array to represent the total number of guitar strings. Let the number of strings on one guitar be 1 row.',
+        visualModel: 'array'
+      },
+      {
+        id: 'source-meaning',
+        title: 'Name what each part means',
+        shortTitle: 'Meaning',
+        studentPrompt: 'The 3 means 3 guitars. The 6 means 6 strings on each guitar. The total is 18 strings.',
+        teacherEditionBasis:
+          'Teacher asks students to connect the rows and group size to the story before using equations.',
+        visualModel: 'array'
+      },
+      {
+        id: 'source-picture',
+        title: 'Put a dotted line through the array',
+        shortTitle: 'Picture',
+        studentPrompt: 'Split the 3 rows into 1 row and 2 rows. The dotted line changes the strategy, not the total.',
+        teacherEditionBasis:
+          'Teacher Edition: Make a dotted line below the first row to show just one guitar.',
+        visualModel: 'array'
+      },
+      {
+        id: 'source-draw',
+        title: 'Write the two smaller products',
+        shortTitle: 'Draw',
+        studentPrompt: 'Write 1 × 6 = 6 and 2 × 6 = 12. Then add 6 + 12 to get 18.',
+        teacherEditionBasis:
+          'Teacher Edition: Write and solve a multiplication sentence to describe each part of the array.',
+        visualModel: 'array'
+      },
+      {
+        id: 'source-exit',
+        title: 'Try the same move with 7 × 3',
+        shortTitle: 'Exit',
+        studentPrompt: 'For 7 × 3, split 7 rows into 5 rows and 2 rows: (5 × 3) + (2 × 3).',
+        teacherEditionBasis:
+          'Lesson 10 Problem Set begins with 7 × 3 = (5 × 3) + (2 × 3).',
+        visualModel: 'array'
+      },
+      {
+        id: 'source-summary',
+        title: 'Say the takeaway',
+        shortTitle: 'Sum',
+        studentPrompt: 'Decompose the rows, multiply each part, and add the partial products to find the same total.',
+        teacherEditionBasis:
+          'Lesson objective: Model the distributive property with arrays to decompose units as a strategy to multiply.',
+        visualModel: 'array'
+      }
     ];
   }
 
@@ -466,11 +587,67 @@ export class LessonPage implements OnInit {
   }
 
   get showConceptFirstPanel(): boolean {
-    return this.activeStepIndex === 0 && this.conceptExplanations.length > 0;
+    return !this.isLesson10 && this.activeStepIndex === 0 && this.conceptExplanations.length > 0;
   }
 
   get showMultiplicationDivisionVocabularyNote(): boolean {
     return false;
+  }
+
+  get arrayDecompositionExamples(): ArrayDecompositionExample[] {
+    if (!this.module || !this.lesson || this.activeStep?.id !== 'student-work') {
+      return [];
+    }
+
+    return this.module.id === 'm1' && this.lesson.lessonNumber === 10 ? this.lesson10ArrayDecompositions : [];
+  }
+
+  get lesson10SourceExample(): ArrayDecompositionExample {
+    return this.lesson10TeacherModel;
+  }
+
+  get lesson10SourceRows(): InfoRow[] {
+    const stepId = this.activeStep?.id ?? '';
+    const common = [
+      { label: 'Whole', value: '3 guitars with 6 strings each: 3 × 6 = 18' },
+      { label: 'Split', value: '1 row of 6 and 2 rows of 6' },
+      { label: 'Recombine', value: '6 + 12 = 18, the same total strings' }
+    ];
+    const byStep: Record<string, InfoRow[]> = {
+      'source-goal': [
+        { label: 'Story', value: 'A guitar has 6 strings. How many strings are on 3 guitars?' },
+        { label: 'Equation', value: '3 × 6 = 18' },
+        { label: 'Why it matters', value: 'The story becomes the array used for the lesson.' }
+      ],
+      'source-model': [
+        { label: 'Rows', value: '3 rows because there are 3 guitars' },
+        { label: 'Row size', value: '6 dots in each row because each guitar has 6 strings' },
+        { label: 'Total', value: '18 strings' }
+      ],
+      'source-meaning': [
+        { label: '3', value: 'number of guitars, shown as rows' },
+        { label: '6', value: 'strings on one guitar, shown in each row' },
+        { label: '18', value: 'total strings across all guitars' }
+      ],
+      'source-picture': [
+        { label: 'Dotted line', value: 'shows 1 guitar above and 2 guitars below' },
+        { label: 'Same whole', value: 'the array still has 3 rows of 6' },
+        { label: 'Purpose', value: 'break a harder fact into easier parts' }
+      ],
+      'source-draw': [
+        { label: 'Top part', value: '1 × 6 = 6' },
+        { label: 'Bottom part', value: '2 × 6 = 12' },
+        { label: 'Add', value: '6 + 12 = 18' }
+      ],
+      'source-exit': [
+        { label: 'Problem Set', value: '7 × 3 = (5 × 3) + (2 × 3)' },
+        { label: 'Rows split', value: '7 rows become 5 rows and 2 rows' },
+        { label: 'Add', value: '15 + 6 = 21' }
+      ],
+      'source-summary': common
+    };
+
+    return byStep[stepId] ?? common;
   }
 
   private lessonConceptFocusTerms(): string[] {
@@ -631,15 +808,49 @@ export class LessonPage implements OnInit {
     sourceLabel: string
   ): StudentWorkProblem {
     const equations = this.studentWorkProblemEquations(problem, allProblems);
+    const support = this.studentWorkProblemSupport(problem.number);
     return {
       number: problem.number,
       prompt: problem.prompt,
       equations,
-      answer: 'Student solves in the workbook, shows the required drawing or model, and writes the answer in context.',
+      answer: support?.answer ?? 'Student solves in the workbook, shows the required drawing or model, and writes the answer in context.',
       representation: this.studentWorkRepresentation(),
-      teacherLookFor: this.studentWorkModelCheck(),
+      teacherLookFor: support?.teacherLookFor ?? this.studentWorkModelCheck(),
       sourceLabel,
       visual: this.studentWorkVisualFacts(problem.prompt, equations)
+    };
+  }
+
+  private studentWorkProblemSupport(problemNumber: number): Pick<StudentWorkProblem, 'answer' | 'teacherLookFor'> | undefined {
+    if (this.module?.id !== 'm1' || this.lesson?.lessonNumber !== 10) {
+      return undefined;
+    }
+
+    const byProblem: Record<number, Pick<StudentWorkProblem, 'answer' | 'teacherLookFor'>> = {
+      1: {
+        answer: 'Show 7 rows of 3 split into 5 rows of 3 and 2 rows of 3. Then add 15 + 6 to get 21.',
+        teacherLookFor: 'The dotted split breaks apart the rows, not the group size. The whole array still shows 7 groups of 3.'
+      },
+      2: {
+        answer: 'Show 8 rows of 3 split into 4 rows of 3 and 4 rows of 3. Then add 12 + 12 to get 24.',
+        teacherLookFor: 'Each partial product matches one side of the split array, and the two parts recombine to the original 8 rows.'
+      },
+      3: {
+        answer: "Show Ruby's page as 5 rows of 3 split into 2 rows and 3 rows. Explain that 6 + 9 is the same total as 5 × 3.",
+        teacherLookFor: 'The explanation names the top and bottom parts of the album page and connects them to 2 × 3 and 3 × 3.'
+      }
+    };
+
+    return byProblem[problemNumber];
+  }
+
+  private makeArrayDecompositionExample(
+    example: Omit<ArrayDecompositionExample, 'rows' | 'columns'>
+  ): ArrayDecompositionExample {
+    return {
+      ...example,
+      rows: this.countSlots(example.totalGroups, 12),
+      columns: this.countSlots(example.groupSize, 12)
     };
   }
 
@@ -758,6 +969,14 @@ export class LessonPage implements OnInit {
       }
       if (second && total % second === 0) {
         facts.push({ rows: total / second, columns: second, total });
+      }
+    }
+    const expressionPattern = /(\d+)\s*[×x]\s*(\d+)/gi;
+    while ((match = expressionPattern.exec(text)) !== null) {
+      const rows = Number(match[1]);
+      const columns = Number(match[2]);
+      if (!facts.some((fact) => fact.rows === rows && fact.columns === columns)) {
+        facts.push({ rows, columns, total: rows * columns });
       }
     }
     return facts.map((fact) => ({
@@ -931,11 +1150,20 @@ export class LessonPage implements OnInit {
   get sourceVisualFacts(): SourceVisualFacts {
     const text = this.sourceContextText;
     const lower = text.toLowerCase();
+    const multiplicationFacts = this.multiplicationFactsFromText(text);
+    const firstFact = multiplicationFacts[0];
+    const divisionMatch = text.match(/(\d+)\s*÷\s*(\d+)\s*=\s*(?:_{2,}|\?|\d+)/);
+    const divisionTotal = divisionMatch ? Number(divisionMatch[1]) : undefined;
+    const divisionGroupSize = divisionMatch ? Number(divisionMatch[2]) : undefined;
+    const divisionGroupCount =
+      divisionTotal && divisionGroupSize && divisionTotal % divisionGroupSize === 0
+        ? divisionTotal / divisionGroupSize
+        : undefined;
     const fallback = {
-      groupCount: 3,
-      groupSize: 4,
-      rowCount: 3,
-      columnCount: 4,
+      groupCount: firstFact?.rows ?? divisionGroupCount ?? 3,
+      groupSize: firstFact?.columns ?? divisionGroupSize ?? 4,
+      rowCount: firstFact?.rows ?? 3,
+      columnCount: firstFact?.columns ?? 4,
       tapePartCount: 3,
       tapePartLabel: 'unit',
       tapeWholeLabel: 'whole',
@@ -944,15 +1172,25 @@ export class LessonPage implements OnInit {
 
     const equalGroupsMatch =
       text.match(/(\d+)\s+equal\s+groups?\s+of\s+(\d+)/i) ??
-      text.match(/(\d+)\s+groups?\s+of\s+(\d+)/i);
-    const arrayMatch = text.match(/array\s+with\s+(\d+)\s+rows?\s+and\s+(\d+)/i);
+      text.match(/(\d+)\s+groups?\s+of\s+(\d+)/i) ??
+      text.match(/(\d+)\s+rows?\s+of\s+(\d+)/i);
+    const arrayMatch =
+      text.match(/array\s+(?:with|shows?)\s+(\d+)\s+rows?\s+(?:and|by|of)\s+(\d+)/i) ??
+      text.match(/(\d+)\s+rows?\s+(?:and|by|of)\s+(\d+)\s+(?:columns?|objects?|dots?|items?)/i) ??
+      text.match(/(\d+)\s*[×x]\s*(\d+)\s+array/i);
     const tapeMatch = text.match(/tape diagram\s+with\s+(\d+)\s+parts?\s+and\s+(\d+)/i);
-    const equationMatch = text.match(/(\d+)\s*x\s*(\d+)\s*=\s*([a-z])/i);
+    const equationMatch = text.match(/(\d+)\s*[×x]\s*(\d+)\s*=\s*([a-z?_{]+)/i);
     const unknownLetterMatch = text.match(/letter\s+([a-z])\b/i);
-    const groupCount = this.toReasonableCount(equalGroupsMatch?.[1] ?? tapeMatch?.[1] ?? equationMatch?.[1], fallback.groupCount);
-    const groupSize = this.toReasonableCount(equalGroupsMatch?.[2] ?? tapeMatch?.[2] ?? equationMatch?.[2], fallback.groupSize);
-    const rowCount = this.toReasonableCount(arrayMatch?.[1], groupCount);
-    const columnCount = this.toReasonableCount(arrayMatch?.[2], groupSize);
+    const groupCount = this.toReasonableCount(
+      equalGroupsMatch?.[1] ?? tapeMatch?.[1] ?? equationMatch?.[1] ?? String(firstFact?.rows ?? divisionGroupCount ?? ''),
+      fallback.groupCount
+    );
+    const groupSize = this.toReasonableCount(
+      equalGroupsMatch?.[2] ?? tapeMatch?.[2] ?? equationMatch?.[2] ?? String(firstFact?.columns ?? divisionGroupSize ?? ''),
+      fallback.groupSize
+    );
+    const rowCount = this.toReasonableCount(arrayMatch?.[1] ?? String(firstFact?.rows ?? ''), groupCount);
+    const columnCount = this.toReasonableCount(arrayMatch?.[2] ?? String(firstFact?.columns ?? ''), groupSize);
     const tapePartCount = this.toReasonableCount(tapeMatch?.[1] ?? equationMatch?.[1], groupCount);
     const tapePartSize = this.toReasonableCount(tapeMatch?.[2] ?? equationMatch?.[2], groupSize);
     const unit = lower.includes('leg') ? 'legs' : lower.includes('dollar') || lower.includes('money') ? 'dollars' : lower.includes('beetle') ? 'beetle legs' : '';
@@ -971,6 +1209,51 @@ export class LessonPage implements OnInit {
         ? `${tapePartCount} parts x ${tapePartLabel} = ${unknown}`
         : `${tapePartCount} equal parts; unknown total or part is marked`
     };
+  }
+
+  get sourceGroupCaption(): string {
+    const facts = this.sourceVisualFacts;
+    return `${facts.groupCount} equal groups of ${facts.groupSize}`;
+  }
+
+  get sourceArrayCaption(): string {
+    const facts = this.sourceVisualFacts;
+    return `${facts.rowCount} rows of ${facts.columnCount}; ${facts.rowCount * facts.columnCount} total`;
+  }
+
+  get sourceModelCaption(): string {
+    const objective = (this.lesson?.objective ?? '').toLowerCase();
+    const lessonLabel = this.lesson ? `Lesson ${this.lesson.lessonNumber}` : 'This lesson';
+    switch (this.activeStep?.visualModel) {
+      case 'number-line':
+        return objective.includes('round') || objective.includes('nearest')
+          ? `${lessonLabel}: locate benchmarks and the nearest value`
+          : `${lessonLabel}: equal intervals show position or distance`;
+      case 'clock':
+        return objective.includes('stopwatch')
+          ? `${lessonLabel}: time is measured as a continuous amount`
+          : `${lessonLabel}: start time, elapsed jumps, and end time`;
+      case 'measurement':
+        return `${lessonLabel}: quantity, unit, and measuring tool stay together`;
+      case 'area-model':
+        return objective.includes('decompose')
+          ? `${lessonLabel}: split the figure, then add the areas`
+          : `${lessonLabel}: square units cover the plane figure`;
+      case 'fraction-strip':
+        return objective.includes('equivalent')
+          ? `${lessonLabel}: different partitions can name the same amount`
+          : `${lessonLabel}: name the whole, then count equal parts`;
+      case 'graph':
+        return objective.includes('line plot')
+          ? `${lessonLabel}: line plot data uses a scale`
+          : `${lessonLabel}: organize data before comparing`;
+      case 'geometry':
+        return objective.includes('perimeter')
+          ? `${lessonLabel}: trace the boundary and label side lengths`
+          : `${lessonLabel}: use attributes and measurements`;
+      default:
+        return `${lessonLabel}: model, labels, and explanation match the objective`;
+    }
   }
 
   get sourceGroupSlots(): number[] {
@@ -994,10 +1277,21 @@ export class LessonPage implements OnInit {
     if (!this.lesson) {
       return '';
     }
+    const sourceKey = `${this.lesson.moduleId}-l${this.lesson.lessonNumber}`;
+    const note = LESSON_SOURCE_NOTES[sourceKey];
+    const studentSource = this.studentWorkSource;
+    const problemText = studentSource?.problems
+      .flatMap((problem) => [problem.prompt, ...problem.equations])
+      .join(' ');
     return [
       this.lesson.objective,
-      ...this.lesson.steps.flatMap((step) => [step.studentPrompt, step.teacherEditionBasis])
-    ].join(' ');
+      ...this.lesson.steps.flatMap((step) => [step.studentPrompt, step.teacherEditionBasis]),
+      note?.sourceProblem,
+      note?.teacherMove,
+      studentSource?.studentWorkbookSource,
+      studentSource?.teacherEditionReference,
+      problemText
+    ].filter(Boolean).join(' ');
   }
 
   get total(): number {

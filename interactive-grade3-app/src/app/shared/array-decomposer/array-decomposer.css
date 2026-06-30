@@ -1,0 +1,253 @@
+.array-decomposer {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+
+.decomposer-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.decomposer-copy {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.decomposer-copy h4 {
+  margin: 0;
+  color: #172033;
+  font-size: 19px;
+  line-height: 1.14;
+}
+
+.decomposer-copy p {
+  margin: 0;
+  color: #3a4a66;
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1.3;
+}
+
+.play-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid #93b7ff;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1d4ed8;
+  font-size: 14px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.play-button:disabled {
+  color: #536076;
+}
+
+.stage-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.stage-strip span {
+  min-height: 30px;
+  padding: 5px 8px;
+  border: 1px solid #ccd7ea;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #536076;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.stage-strip span.is-active {
+  border-color: #2563eb;
+  background: #eaf2ff;
+  color: #1749b9;
+}
+
+.manipulative-shell {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #b8cef6;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+}
+
+.array-stage {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  min-height: 250px;
+  padding: 12px;
+  border: 1px solid #dde8f8;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.whole-label {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: center;
+  color: #172033;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.whole-label span {
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #fff4d9;
+  color: #9a410d;
+}
+
+.array-rows {
+  position: relative;
+  display: grid;
+  gap: 7px;
+  align-content: center;
+}
+
+.array-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(96px, auto) repeat(var(--group-size, 3), 22px) minmax(48px, auto);
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 28px;
+}
+
+.row-product {
+  justify-self: end;
+  color: #1d4ed8;
+  font-size: 14px;
+  font-weight: 950;
+  line-height: 1.1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.row-product.second {
+  color: #087246;
+}
+
+.row-product.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.counter {
+  width: 17px;
+  height: 17px;
+  border-radius: 999px;
+  background: #f97316;
+  box-shadow: inset 0 -2px 0 rgba(15, 23, 42, 0.18);
+}
+
+.array-row.is-first-part .counter {
+  background: #2563eb;
+}
+
+.array-row.is-second-part .counter {
+  background: #16a36a;
+}
+
+.row-label {
+  color: #273955;
+  font-size: 12px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.array-row.has-split-after::after,
+.animated-split-line {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 12%;
+  bottom: -6px;
+  height: 0;
+  border-top: 4px dashed #f97316;
+  transform-origin: left center;
+}
+
+.array-row.has-split-after::after {
+  display: none;
+}
+
+.animated-split-line {
+  top: calc(68px + (var(--split-row) * 35px));
+  left: 27%;
+  right: 18%;
+  z-index: 2;
+}
+
+.decomposer-equation {
+  padding: 10px 12px;
+  border: 1px solid #ffd08a;
+  border-radius: 10px;
+  background: #fff4d9;
+  color: #172033;
+  font-size: 18px;
+  font-weight: 950;
+  line-height: 1.25;
+}
+
+.split-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.split-controls button {
+  min-height: 32px;
+  padding: 0 10px;
+  border: 1px solid #b7c7e4;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #1d3f82;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.split-controls button.is-active {
+  border-color: #2563eb;
+  background: #eaf2ff;
+  color: #1749b9;
+}
+
+@media (max-width: 760px) {
+  .decomposer-head {
+    display: grid;
+  }
+
+  .stage-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .array-row {
+    grid-template-columns: minmax(76px, auto) repeat(var(--group-size, 3), 18px) minmax(42px, auto);
+    gap: 8px;
+  }
+
+  .counter {
+    width: 15px;
+    height: 15px;
+  }
+
+  .decomposer-equation {
+    font-size: 16px;
+  }
+}

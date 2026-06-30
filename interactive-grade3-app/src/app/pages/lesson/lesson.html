@@ -101,7 +101,7 @@
             <span class="student-work-count">{{ studentWorkProblems.length }} problems</span>
           </div>
 
-          <div class="student-source-grid" *ngIf="studentWorkSource as source">
+          <div class="student-source-grid" *ngIf="studentWorkSource as source" [class.is-hidden-for-lesson10]="isLesson10">
             <article>
               <strong>Student workbook</strong>
               <span>{{ source.studentWorkbookSource }}</span>
@@ -115,6 +115,40 @@
               <span>{{ source.teacherDebrief }}</span>
             </article>
           </div>
+
+          <section class="array-decomposition-panel" *ngIf="arrayDecompositionExamples.length" aria-label="Array decomposition teaching model">
+            <div class="array-decomposition-head">
+              <span class="eyebrow">Teacher Edition move</span>
+              <h3>Break apart the array, solve each part, then add the parts</h3>
+              <p>
+                Lesson 10 is not about memorizing a new trick. The student draws the whole array first,
+                places a dotted line to decompose the rows, and uses the two smaller products to find the same total.
+              </p>
+            </div>
+
+            <div class="array-decomposition-flow" aria-label="Lesson 10 array decomposition flow">
+              <span>Whole array</span>
+              <span>Split rows</span>
+              <span>Multiply parts</span>
+              <span>Add products</span>
+            </div>
+
+            <div class="array-decomposition-grid">
+              <article class="array-decomposition-card" *ngFor="let example of arrayDecompositionExamples">
+                <app-array-decomposer
+                  [title]="example.title"
+                  [context]="example.context"
+                  [totalGroups]="example.totalGroups"
+                  [groupSize]="example.groupSize"
+                  [initialSplit]="example.firstPart"
+                  itemLabel="dots" />
+                <div class="decomposition-prompt">
+                  <strong>Ask</strong>
+                  <span>{{ example.teacherPrompt }}</span>
+                </div>
+              </article>
+            </div>
+          </section>
 
           <div class="student-work-grid">
             <article class="student-problem-card" *ngFor="let problem of studentWorkProblems">
@@ -969,13 +1003,25 @@
               <strong>{{ label }}</strong>
               <span>{{ activeStep.visualModel }}</span>
             </div>
-            <div class="source-figure" [ngSwitch]="activeStep.visualModel">
+            <div class="source-figure">
+              <ng-container *ngIf="isLesson10; else standardSourceFigure">
+                <app-array-decomposer
+                  [title]="lesson10SourceExample.title"
+                  [context]="lesson10SourceExample.context"
+                  [totalGroups]="lesson10SourceExample.totalGroups"
+                  [groupSize]="lesson10SourceExample.groupSize"
+                  [initialSplit]="lesson10SourceExample.firstPart"
+                  itemLabel="strings" />
+              </ng-container>
+
+              <ng-template #standardSourceFigure>
+                <ng-container [ngSwitch]="activeStep.visualModel">
               <div *ngSwitchCase="'equal-groups'" class="figure-equal-groups" aria-label="Equal groups figure">
                 <div class="mini-group" *ngFor="let group of sourceGroupSlots">
                   <span *ngFor="let dot of sourceGroupItemSlots"></span>
                   <small>G{{ group }}</small>
                 </div>
-                <p>{{ sourceVisualFacts.groupCount }} equal groups of {{ sourceVisualFacts.groupSize }}</p>
+                <p>{{ sourceGroupCaption }}</p>
               </div>
 
               <div *ngSwitchCase="'array'" class="figure-array" aria-label="Array figure">
@@ -984,7 +1030,7 @@
                   [style.gridTemplateColumns]="'repeat(' + sourceVisualFacts.columnCount + ', 14px)'">
                   <span *ngFor="let dot of sourceArrayDots"></span>
                 </div>
-                <p>{{ sourceVisualFacts.rowCount }} rows x {{ sourceVisualFacts.columnCount }} columns</p>
+                <p>{{ sourceArrayCaption }}</p>
               </div>
 
               <div *ngSwitchCase="'tape-diagram'" class="figure-tape" aria-label="Tape diagram figure">
@@ -1007,6 +1053,7 @@
                   <span>unit intervals</span>
                   <span>1</span>
                 </div>
+                <p>{{ sourceModelCaption }}</p>
               </div>
 
               <div *ngSwitchCase="'clock'" class="figure-clock" aria-label="Clock figure">
@@ -1018,28 +1065,28 @@
                   <span class="clock-hand minute-hand"></span>
                   <span class="clock-hand hour-hand"></span>
                 </div>
-                <p>start, jumps, end time</p>
+                <p>{{ sourceModelCaption }}</p>
               </div>
 
               <div *ngSwitchCase="'measurement'" class="figure-measurement" aria-label="Measurement figure">
                 <div class="measure-scale">
                   <span *ngFor="let tick of [1,2,3,4,5,6,7,8]"></span>
                 </div>
-                <p>number + unit + tool</p>
+                <p>{{ sourceModelCaption }}</p>
               </div>
 
               <div *ngSwitchCase="'area-model'" class="figure-area" aria-label="Area model figure">
                 <div class="area-grid-figure">
                   <span *ngFor="let cell of areaCells"></span>
                 </div>
-                <p>square units tile the plane figure</p>
+                <p>{{ sourceModelCaption }}</p>
               </div>
 
               <div *ngSwitchCase="'fraction-strip'" class="figure-fraction" aria-label="Fraction strip figure">
                 <div class="fraction-whole">
                   <span *ngFor="let part of fractionParts; let i = index" [class.shaded]="i < 2"></span>
                 </div>
-                <p>define the whole, then name the parts</p>
+                <p>{{ sourceModelCaption }}</p>
               </div>
 
               <div *ngSwitchCase="'graph'" class="figure-graph" aria-label="Graph figure">
@@ -1048,7 +1095,7 @@
                     <span>{{ bar.label }}</span>
                   </div>
                 </div>
-                <p>scale tells what each mark means</p>
+                <p>{{ sourceModelCaption }}</p>
               </div>
 
               <div *ngSwitchCase="'geometry'" class="figure-geometry" aria-label="Geometry figure">
@@ -1057,25 +1104,27 @@
                   <span class="shape triangle"></span>
                   <span class="perimeter-line"></span>
                 </div>
-                <p>attributes, side lengths, area or perimeter</p>
+                <p>{{ sourceModelCaption }}</p>
               </div>
 
               <div *ngSwitchDefault class="figure-area" aria-label="Source model figure">
                 <div class="area-grid-figure">
                   <span *ngFor="let cell of areaCells"></span>
                 </div>
-                <p>model, labels, student explanation</p>
+                <p>{{ sourceModelCaption }}</p>
               </div>
+                </ng-container>
+              </ng-template>
             </div>
           </div>
         </ng-template>
 
-        <div *ngSwitchCase="'source-goal'" class="source-authored-panel">
+        <div *ngSwitchCase="'source-goal'" class="source-authored-panel" [class.is-lesson10]="isLesson10">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Teacher plan' }"></ng-container>
           <div class="activity-card">
             <h3>Lesson {{ lesson.lessonNumber }} question</h3>
             <div class="bridge-table compact-table">
-              <div class="bridge-row" *ngFor="let row of sourceLessonQuestionRows">
+              <div class="bridge-row" *ngFor="let row of isLesson10 ? lesson10SourceRows : sourceLessonQuestionRows">
                 <strong>{{ row.label }}</strong>
                 <span>{{ row.value }}</span>
               </div>
@@ -1085,7 +1134,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-model'" class="source-authored-panel">
+        <div *ngSwitchCase="'source-model'" class="source-authored-panel" [class.is-lesson10]="isLesson10">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Board setup' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
@@ -1107,7 +1156,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-meaning'" class="source-authored-panel">
+        <div *ngSwitchCase="'source-meaning'" class="source-authored-panel" [class.is-lesson10]="isLesson10">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Meaning' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
@@ -1129,7 +1178,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-picture'" class="source-authored-panel">
+        <div *ngSwitchCase="'source-picture'" class="source-authored-panel" [class.is-lesson10]="isLesson10">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Picture' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
@@ -1147,7 +1196,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-draw'" class="source-authored-panel">
+        <div *ngSwitchCase="'source-draw'" class="source-authored-panel" [class.is-lesson10]="isLesson10">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Draw' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
@@ -1165,7 +1214,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-exit'" class="source-authored-panel">
+        <div *ngSwitchCase="'source-exit'" class="source-authored-panel" [class.is-lesson10]="isLesson10">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Exit evidence' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
@@ -1184,7 +1233,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-summary'" class="source-authored-panel">
+        <div *ngSwitchCase="'source-summary'" class="source-authored-panel" [class.is-lesson10]="isLesson10">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Summary' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
@@ -1195,9 +1244,7 @@
 
         <div *ngSwitchDefault class="activity-card">
           <div class="generic-lesson-panel">
-            <div class="generic-visual" [attr.data-model]="activeStep.visualModel">
-              <span class="generic-dot" *ngFor="let item of [1,2,3,4,5,6,7,8,9]"></span>
-            </div>
+            <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Lesson model' }"></ng-container>
             <div>
               <h3>{{ activeStep.title }}</h3>
               <p>{{ activeStep.studentPrompt }}</p>
@@ -1215,7 +1262,7 @@
                   <span>{{ activeStep.teacherEditionBasis }}</span>
                 </div>
               </div>
-              <button class="button generic-check" (click)="completeGenericStep()">I can explain this step</button>
+              <button class="button generic-check" (click)="completeGenericStep()">I can explain Lesson {{ lesson.lessonNumber }}</button>
             </div>
           </div>
         </div>

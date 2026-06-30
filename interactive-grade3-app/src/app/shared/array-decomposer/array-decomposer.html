@@ -1,0 +1,66 @@
+<section class="array-decomposer" [class.is-playing]="isPlaying">
+  <div class="decomposer-head">
+    <div class="decomposer-copy">
+      <h4>{{ title }}</h4>
+      <p>{{ context }}</p>
+    </div>
+    <button type="button" class="play-button" (click)="playAnimation()" [disabled]="isPlaying">
+      <span aria-hidden="true">▶</span>
+      {{ playLabel }}
+    </button>
+  </div>
+
+  <div class="stage-strip" aria-label="Animation steps">
+    <span [class.is-active]="stage >= 0">Whole array</span>
+    <span [class.is-active]="stage >= 1">Draw split</span>
+    <span [class.is-active]="stage >= 2">Name parts</span>
+    <span [class.is-active]="stage >= 3">Add products</span>
+  </div>
+
+  <div class="manipulative-shell">
+    <div class="array-stage" [style.--row-count]="totalGroups" [style.--split-row]="split" [style.--group-size]="groupSize">
+      <div class="whole-label">
+        <strong>{{ totalGroups }} rows of {{ groupSize }}</strong>
+        <span>{{ totalProduct }} {{ itemLabel }}</span>
+      </div>
+
+      <div class="array-rows" aria-label="Array rows">
+        <div
+          class="array-row"
+          *ngFor="let row of rows"
+          [ngClass]="rowClass(row)"
+          [class.has-split-after]="stage >= 1 && row === split">
+          <span
+            class="row-product"
+            #partLabelEl
+            [class.is-visible]="stage >= 2 && (row === 1 || row === split + 1)"
+            [class.second]="row === split + 1">
+            <ng-container *ngIf="row === 1">{{ split }} × {{ groupSize }} = {{ firstProduct }}</ng-container>
+            <ng-container *ngIf="row === split + 1">{{ secondPart }} × {{ groupSize }} = {{ secondProduct }}</ng-container>
+          </span>
+          <span
+            class="counter"
+            #dotEl
+            *ngFor="let column of columns"
+            [attr.aria-label]="itemLabel + ' row ' + row + ' column ' + column">
+          </span>
+          <span class="row-label">row {{ row }}</span>
+        </div>
+      </div>
+
+      <span class="animated-split-line" #splitLineEl *ngIf="stage >= 1" aria-hidden="true"></span>
+    </div>
+  </div>
+
+  <div class="decomposer-equation" #equationEl *ngIf="stage >= 3" aria-live="polite">{{ equation }}</div>
+
+  <div class="split-controls" aria-label="Choose where to split the array">
+    <button
+      type="button"
+      *ngFor="let value of splitOptions"
+      [class.is-active]="value === split"
+      (click)="chooseSplit(value)">
+      split {{ value }} + {{ totalGroups - value }}
+    </button>
+  </div>
+</section>
