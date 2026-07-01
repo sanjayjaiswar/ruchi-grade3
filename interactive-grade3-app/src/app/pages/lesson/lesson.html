@@ -101,7 +101,7 @@
             <span class="student-work-count">{{ studentWorkProblems.length }} problems</span>
           </div>
 
-          <div class="student-source-grid" *ngIf="studentWorkSource as source" [class.is-hidden-for-lesson10]="isLesson10">
+          <div class="student-source-grid" *ngIf="studentWorkSource as source" [class.is-hidden-for-array-decomposition]="hasArrayDecompositionRuntime">
             <article>
               <strong>Student workbook</strong>
               <span>{{ source.studentWorkbookSource }}</span>
@@ -157,7 +157,48 @@
                 <span class="student-problem-source">{{ problem.sourceLabel }}</span>
                 <h4>{{ problem.prompt }}</h4>
                 <div class="student-model-preview" [ngClass]="problem.representation">
-                  <ng-container [ngSwitch]="problem.representation">
+                  <div class="source-workspace-model" *ngIf="sourceWorkspaceModel(problem) as sourceWorkspace; else standardStudentModelPreview">
+                    <ng-container [ngSwitch]="sourceWorkspace.kind">
+                      <div *ngSwitchCase="'problem1-guided'" class="source-workspace-problem-one">
+                        <div class="source-workspace-blank-array">
+                          <span>{{ sourceWorkspace.arrayPrompt }}</span>
+                        </div>
+                        <div class="source-workspace-equation">{{ sourceWorkspace.equationTemplate }}</div>
+                        <div class="source-workspace-tape" aria-label="Workbook tape diagram template">
+                          <div class="source-workspace-dashed-label"></div>
+                          <div
+                            class="source-workspace-tape-parts"
+                            [style.grid-template-columns]="'repeat(' + sourceWorkspaceTapeParts(sourceWorkspace).length + ', minmax(28px, 1fr))'">
+                            <span class="is-first-unit">
+                              <i *ngFor="let item of sourceWorkspaceFirstUnitItems(sourceWorkspace)"></i>
+                            </span>
+                            <span *ngFor="let part of sourceWorkspaceTapeParts(sourceWorkspace).slice(1)"></span>
+                          </div>
+                          <div class="source-workspace-bracket"></div>
+                          <div class="source-workspace-dashed-label lower"></div>
+                        </div>
+                        <small>{{ sourceWorkspace.tapePrompt }} {{ sourceWorkspace.lowerLabelPrompt }}</small>
+                      </div>
+
+                      <div *ngSwitchCase="'blank-array-tape'" class="source-workspace-blank-model">
+                        <div class="source-workspace-blank-panel">
+                          <strong>Array</strong>
+                          <span>{{ sourceWorkspace.arrayPrompt }}</span>
+                        </div>
+                        <div class="source-workspace-blank-panel">
+                          <strong>Tape diagram</strong>
+                          <span>Label known and unknown information from the problem.</span>
+                        </div>
+                      </div>
+
+                      <div *ngSwitchDefault class="source-workspace-open">
+                        <span>{{ sourceWorkspace.arrayPrompt }}</span>
+                      </div>
+                    </ng-container>
+                  </div>
+                  <ng-template #standardStudentModelPreview>
+                    <ng-container *ngIf="problem.showModelPreview; else sourceWorkbookWorkspace">
+                      <ng-container [ngSwitch]="problem.representation">
                     <div *ngSwitchCase="'groups'" class="mini-solve-groups" aria-hidden="true">
                       <span
                         *ngFor="let group of studentGroupSlots(problem)"
@@ -214,12 +255,20 @@
                       <span></span>
                       <span></span>
                     </div>
-                  </ng-container>
+                      </ng-container>
+                    </ng-container>
+                    <ng-template #sourceWorkbookWorkspace>
+                      <div class="source-workbook-workspace">
+                        <strong>Workbook workspace</strong>
+                        <span>Use the source page for the drawing, labels, equation blanks, and written reasoning.</span>
+                      </div>
+                    </ng-template>
+                  </ng-template>
                 </div>
                 <div class="student-equation-row" *ngIf="problem.equations.length">
                   <span *ngFor="let equation of problem.equations">{{ equation }}</span>
                 </div>
-                <div class="student-answer-row">
+                <div class="student-answer-row" *ngIf="problem.showAnswer">
                   <strong>Student work</strong>
                   <span>{{ problem.answer }}</span>
                 </div>
@@ -998,19 +1047,23 @@
         </div>
 
         <ng-template #sourceFigure let-label="label">
-          <div class="source-model-cue" [attr.data-model]="activeStep.visualModel">
+          <div
+            class="source-model-cue"
+            *ngIf="hasAuthoredSourceFigure"
+            [class.has-source-visual-runtime]="hasSourceVisualRuntime"
+            [attr.data-model]="activeStep.visualModel">
             <div class="source-figure-head">
               <strong>{{ label }}</strong>
               <span>{{ activeStep.visualModel }}</span>
             </div>
             <div class="source-figure">
-              <ng-container *ngIf="isLesson10; else standardSourceFigure">
+              <ng-container *ngIf="hasArrayDecompositionRuntime; else standardSourceFigure">
                 <app-array-decomposer
-                  [title]="lesson10SourceExample.title"
-                  [context]="lesson10SourceExample.context"
-                  [totalGroups]="lesson10SourceExample.totalGroups"
-                  [groupSize]="lesson10SourceExample.groupSize"
-                  [initialSplit]="lesson10SourceExample.firstPart"
+                  [title]="arrayDecompositionSourceExample.title"
+                  [context]="arrayDecompositionSourceExample.context"
+                  [totalGroups]="arrayDecompositionSourceExample.totalGroups"
+                  [groupSize]="arrayDecompositionSourceExample.groupSize"
+                  [initialSplit]="arrayDecompositionSourceExample.firstPart"
                   itemLabel="strings" />
               </ng-container>
 
@@ -1119,12 +1172,12 @@
           </div>
         </ng-template>
 
-        <div *ngSwitchCase="'source-goal'" class="source-authored-panel" [class.is-lesson10]="isLesson10">
+        <div *ngSwitchCase="'source-goal'" class="source-authored-panel" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Teacher plan' }"></ng-container>
           <div class="activity-card">
             <h3>Lesson {{ lesson.lessonNumber }} question</h3>
             <div class="bridge-table compact-table">
-              <div class="bridge-row" *ngFor="let row of isLesson10 ? lesson10SourceRows : sourceLessonQuestionRows">
+              <div class="bridge-row" *ngFor="let row of runtimeSourceRows.length ? runtimeSourceRows : sourceLessonQuestionRows">
                 <strong>{{ row.label }}</strong>
                 <span>{{ row.value }}</span>
               </div>
@@ -1134,7 +1187,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-model'" class="source-authored-panel" [class.is-lesson10]="isLesson10">
+        <div *ngSwitchCase="'source-model'" class="source-authored-panel" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Board setup' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
@@ -1156,7 +1209,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-meaning'" class="source-authored-panel" [class.is-lesson10]="isLesson10">
+        <div *ngSwitchCase="'source-meaning'" class="source-authored-panel" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Meaning' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
@@ -1178,7 +1231,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-picture'" class="source-authored-panel" [class.is-lesson10]="isLesson10">
+        <div *ngSwitchCase="'source-picture'" class="source-authored-panel" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Picture' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
@@ -1196,7 +1249,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-draw'" class="source-authored-panel" [class.is-lesson10]="isLesson10">
+        <div *ngSwitchCase="'source-draw'" class="source-authored-panel" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Draw' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
@@ -1214,7 +1267,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-exit'" class="source-authored-panel" [class.is-lesson10]="isLesson10">
+        <div *ngSwitchCase="'source-exit'" class="source-authored-panel" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Exit evidence' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
@@ -1233,7 +1286,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-summary'" class="source-authored-panel" [class.is-lesson10]="isLesson10">
+        <div *ngSwitchCase="'source-summary'" class="source-authored-panel" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Summary' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
