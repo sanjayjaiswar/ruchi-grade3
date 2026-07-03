@@ -83,6 +83,14 @@ export type LessonAnimationModel = {
 
 export type ProblemSetAnimationType = 'grouping-by-size' | 'equal-sharing' | 'tape-split' | 'fact-match';
 
+export type ProblemSetBlankVisualType =
+  | 'object-bank'
+  | 'equal-containers'
+  | 'fact-match'
+  | 'tape-diagram'
+  | 'bar-units'
+  | 'share-tape';
+
 export type ProblemSetFactMatch = {
   dividend: number;
   divisor: number;
@@ -92,6 +100,11 @@ export type ProblemSetFactMatch = {
 export type ProblemSetCenteredProblem = {
   number: number;
   sourcePrompt: string;
+  blankPrompts?: string[];
+  blankEquations?: string[];
+  blankAnswerSentence?: string;
+  blankWorkspaceLabel?: string;
+  blankVisualType?: ProblemSetBlankVisualType;
   solvedAnswer: string;
   equations: string[];
   knownTotal?: number;

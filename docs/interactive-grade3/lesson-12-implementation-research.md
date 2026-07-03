@@ -136,6 +136,17 @@ The animation must make the mathematical action visible:
 
 The object artwork is secondary. The grouping structure is primary.
 
+Blank mode still needs the official visual task structure. It is not enough to show the prompt and a generic "student workspace" box. For Lesson 12, Blank mode should render source-style scaffolds:
+
+- Problem 1: 8 objects available to circle into groups of 2.
+- Problem 2: 5 empty bowls/containers and the equation blanks.
+- Problem 3: division facts with blank match targets.
+- Problem 4: a 14-meter tape split into 2 equal unknown parts.
+- Problem 5: 12 bar units with a 2-bars-per-day grouping cue.
+- Problem 6: an 18-dollar share tape split between Sarah and Esther.
+
+Solved mode completes the same visual structure with the answer, explanation, quotient meaning, and validation checks.
+
 ## 5. Problem Animation Matrix
 
 ### Problem 1: Birds In Cages

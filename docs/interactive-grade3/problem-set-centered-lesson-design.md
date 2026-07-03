@@ -92,6 +92,19 @@ It should combine what the current app calls overview, goal, model, meaning, pic
 
 This is the primary section.
 
+The Problem Set section must support two modes:
+
+- `Blank`: official question prompts, source-matching visual workspace, and official blanks/templates where available. This must not be a text-only placeholder.
+- `Solved`: completed source-matching model, solved answer, explanation, quotient meaning, and validation.
+
+Use one Problem Set tab with an internal `Blank | Solved` segmented control. Do not add another top tab for blank work.
+The `Blank | Solved` control is a view mode for the whole Problem Set. Problem 1 through Problem 6 are separate local bookmarks inside that view, not peers of the mode control.
+The visual hierarchy must make those three levels distinct:
+
+- `Concept / Problem Set / Summary`: primary section controls.
+- `Blank / Solved`: Problem Set mode switch, visually separate from problem bookmarks.
+- `Problem 1 / Problem 2 / ...`: lightweight blue underlined local jump links, not blue pill buttons.
+
 Each official Problem Set item must become a solved explanation unit with:
 
 - exact problem reference from the official Problem Set,
@@ -103,6 +116,7 @@ Each official Problem Set item must become a solved explanation unit with:
 - animation concept if animation clarifies the model.
 
 The blank and solved views must match the same official problem. Do not use a parallel invented problem as the main solved problem.
+The blank view should preserve the visual scaffold from the Teacher Edition / Student Workbook problem: objects to circle, empty containers, match lines, tape diagrams, bar units, labels, and response blanks. The solved view may use animated neutral tokens or simplified shapes, but it must complete the same quantities and answer structure.
 
 ### 4.3 Short Summary
 
@@ -206,6 +220,8 @@ The implementation should:
 - use top section tabs only for the real sections: Concept, Problem Set, and Summary,
 - load selected top-tab content on demand instead of rendering every section at once,
 - use local bookmark buttons inside long sections, such as Problem Set problem jumps,
+- provide a `Blank | Solved` mode switch inside the Problem Set tab,
+- keep the blank and solved views tied to the same official Problem Set data,
 - render one lesson concept block,
 - render the official Problem Set as the main content,
 - pair each problem with its solved answer and explanation,
@@ -218,6 +234,7 @@ The implementation should not:
 
 - introduce unrelated problem modes,
 - add extra "try it" workflow around the Problem Set,
+- create a separate top-level tab for blank Problem Set work,
 - create new generic lesson tabs or recreate the old Goal/Model/Meaning/Picture/Draw/Solve/Exit/Sum flow,
 - depend only on text extraction,
 - display broken PDF extraction fragments,
@@ -247,6 +264,13 @@ Replicate the structure:
 - source-backed visuals and animation,
 - short summary.
 
+Replicate the control hierarchy and visual language:
+
+- primary section tabs for Concept, Problem Set, and Summary,
+- warm/yellow Blank mode and green/review Solved mode,
+- blue underlined local Problem links for problem bookmarks,
+- no repeated blue-pill treatment across all controls.
+
 Do not replicate Lesson 12's math content into other lessons. Every lesson must be re-inspected from its Teacher Edition and Student Workbook pages.
 
 ## 8. Acceptance Criteria For Lesson 12
@@ -256,6 +280,7 @@ Lesson 12 is acceptable when:
 - the old 8-tab lesson flow is not the primary experience,
 - the concept section clearly explains quotient meaning,
 - every official Problem Set problem appears in order,
+- the Problem Set tab can show a blank question-only student view,
 - every problem has a solved answer,
 - every problem has a short explanation tied to the lesson concept,
 - every problem identifies what the quotient means where relevant,

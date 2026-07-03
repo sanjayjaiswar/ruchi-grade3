@@ -43,6 +43,8 @@ Status: Active planning
 | Lesson 12 redesign direction | In progress | Supersede the 8-tab benchmark flow for the Lesson 12 pilot with a problem-set-centered lesson experience documented in `problem-set-centered-lesson-design.md`. |
 | Current controlling requirements | In progress | Use `problem-set-centered-lesson-design.md` and `lesson-12-implementation-research.md` as the active requirements. Older tab/step docs are historical unless aligned with these docs. |
 | Problem-set-centered section tabs | Done | Top tabs load real sections on demand: Concept, Problem Set, and Summary. They must not recreate the old Goal/Model/Meaning/Picture/Draw/Solve/Exit/Sum flow or use broken hash-route links. |
+| Problem Set blank/solved mode | Done | Lesson 12 pilot uses one Problem Set tab with internal `Blank | Solved` mode. Blank is source-visual student work with official blanks/templates; Solved is the review/teaching view. |
+| Problem Set control hierarchy | Done | Lesson 12 establishes the global authored-lesson standard: section tabs are primary controls, `Blank/Solved` is a distinct mode switch, and Problem 1-N bookmarks are blue underlined local text links, not blue pill buttons. |
 | CSS architecture for lesson work | Done | Common lesson CSS stays common; reusable problem-set-centered layout belongs in a shared stylesheet; module/lesson-specific CSS exists only for true customization. |
 
 ## 3. Phase Tracker
@@ -169,6 +171,7 @@ Status: Active planning
 - Practice history.
 - Lesson 12 pilot: replace the current 8-tab lesson flow with concept, official Problem Set solved explanations, source-backed visuals/animations, and short summary.
 - After Lesson 12 acceptance, replicate the problem-set-centered pattern lesson by lesson from each official Teacher Edition and Student Workbook source.
+- Replicate the Lesson 12 control hierarchy across future authored modules and lessons: primary section tabs, distinct Blank/Solved mode switch, and blue underlined Problem jump links.
 - Keep `problem-set-centered-lesson-design.md` and `lesson-12-implementation-research.md` as the current source of requirements for this pilot. Do not revive older tab/step requirements unless they directly support the new design.
 - Keep common Problem Set presentation reusable. Add module/lesson CSS only when a real customization requirement appears.
 
@@ -228,6 +231,12 @@ Status: Active planning
 | 2026-07-03 | Lesson 12 on-demand tabs and normal lesson regression check | Passed | Chrome verified Concept/Problem Set/Summary load one section at a time with no hash URL change; Lesson 11 keeps the original one-column header, source card, and step rail. |
 | 2026-07-03 | Lesson 12 Concept/Summary styling correction | Passed | `npm run build` passed; Chrome verified Concept and Summary use larger shared problem-set-centered typography/card styling, while Lesson 11 keeps the existing non-problem-set layout. |
 | 2026-07-03 | Lesson 12 Google-color styling and validation readability | Passed | `npm run build` passed; Chrome verified Concept cards cycle Google blue/green/yellow/red, Summary has gradient/check/meaning-map cards, validation text is larger, and Lesson 11 remains unaffected. |
+| 2026-07-03 | Lesson 12 Problem Set blank/solved mode | Passed | `npm run build` passed; Chrome verified Blank mode shows 6 question/workspace cards with no solution/animation/validation, Solved restores 6 solved cards, and Lesson 11 remains unaffected. |
+| 2026-07-03 | Lesson 12 source-visual blank workspaces | Passed | `npm run build` passed; Chrome verified Blank mode has 6 source-style visual scaffolds and no solved answers/validation; Solved mode has 6 animation cards, solved answers, and validation blocks. |
+| 2026-07-03 | Lesson 12 compact Problem Set controls | Passed | `npm run build` passed; Chrome verified Problem 1-6 bookmarks and `Blank/Solved` share one compact toolbar row, while remaining visually separate controls. |
+| 2026-07-03 | Lesson 12 navigation color hierarchy | Passed | `npm run build` passed; Chrome verified section tabs use distinct colors, Blank mode and blank equation chips use warm/yellow styling, Solved uses green, and Problem 1-6 jumps are lightweight blue text links. |
+| 2026-07-03 | Problem-set-centered global control standard documented | Passed | Worktree, requirements, design, and task docs now require future authored lessons to reuse the Lesson 12 control hierarchy instead of reverting to all-blue pill controls. |
+| 2026-07-03 | Problem jump link color correction | Passed | `npm run build` passed after switching Problem 1-N bookmarks from gray text links to normal blue underlined local links and updating the standard docs. |
 
 ## 7. Change Log
 
@@ -262,3 +271,9 @@ Status: Active planning
 | 2026-07-03 | Changed Lesson 12 section tabs from route/hash links to on-demand content tabs and added local Problem Set bookmarks. Scoped the new two-column header to problem-set-centered lessons only. |
 | 2026-07-03 | Brought Lesson 12 Concept and Summary styling back in line with the Problem Set card scale, typography, and module-accent color treatment. |
 | 2026-07-03 | Added Google-color gradients to Concept/Summary, enlarged Problem Set validation text, and replaced the one-line Summary with validation steps plus a six-problem meaning map. |
+| 2026-07-03 | Added Lesson 12 Problem Set `Blank | Solved` mode using the same official problem data; blank mode renders question prompts, workbook-style blanks, and student workspace without solved content. |
+| 2026-07-03 | Separated the Problem Set view mode from Problem 1-6 bookmarks and added source-style blank visuals for Lesson 12 Problem Set items. |
+| 2026-07-03 | Compacted the Problem Set toolbar so problem bookmarks and `Blank/Solved` are separate controls on one row, and reduced Blank mode card height/padding. |
+| 2026-07-03 | Reworked Lesson 12 control hierarchy so Concept/Problem Set/Summary, Blank/Solved, and Problem 1-6 jumps no longer all look like the same blue pill controls. |
+| 2026-07-03 | Documented the Lesson 12 control hierarchy as the replication standard for all future problem-set-centered modules and lessons. |
+| 2026-07-03 | Corrected the Problem 1-N bookmark standard from gray links to normal blue underlined links without returning to pill styling. |

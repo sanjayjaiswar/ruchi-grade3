@@ -255,10 +255,21 @@ Problem Set handling must:
 
 - use the official Student Workbook and Teacher Edition Problem Set as the matched source,
 - preserve the exact official problem order,
+- support a blank question-only mode for student work,
+- support a solved mode for review/teaching,
+- keep blank and solved modes tied to the same official problem data,
 - provide solved answers and explanations for each Problem Set item,
 - identify the model, equation, answer, and meaning in context,
 - use the Teacher Edition solved or annotated Problem Set references when available,
 - visually inspect source pages when solved work appears as images or handwriting.
+
+For the Lesson 12 pilot, implement blank/solved as an internal segmented control inside the existing Problem Set tab:
+
+```text
+Blank | Solved
+```
+
+Do not add another top-level tab for blank work.
 
 Practice and assessment must:
 
@@ -330,6 +341,13 @@ Required layering:
 Lesson-specific CSS may or may not exist. It should not become the default place for common layout. Module-specific CSS is acceptable when an entire module needs a consistent variation. Lesson-specific CSS is acceptable when a specific lesson needs a true visual/model override.
 
 For the Lesson 12 pilot, use common problem-set-centered styles as the baseline and keep Lesson 12-specific behavior primarily in source-backed lesson data and optional class hooks.
+
+Problem-set-centered lessons across all modules should use the Lesson 12 control hierarchy once that pattern is replicated:
+
+- Concept / Problem Set / Summary are primary lesson-section controls.
+- Blank / Solved is a Problem Set mode switch, with Blank visually distinct from Solved.
+- Problem 1, Problem 2, etc. are blue underlined lightweight local jump links, not blue pill buttons.
+- Do not use the same blue pill styling for section tabs, mode switches, and problem bookmarks.
 
 ### Must Have
 

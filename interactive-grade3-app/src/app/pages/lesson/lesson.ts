@@ -123,6 +123,7 @@ export class LessonPage implements OnInit {
   lesson?: LessonContent;
   activeStepIndex = 0;
   activeProblemSection: 'concept' | 'problem-set' | 'summary' = 'concept';
+  problemSetMode: 'blank' | 'solved' = 'blank';
   private readonly moduleThemes: Record<string, { accent: string; strong: string; soft: string; muted: string }> = {
     m1: { accent: '#4285f4', strong: '#1a73e8', soft: '#e8f0fe', muted: '#d2e3fc' },
     m2: { accent: '#ea4335', strong: '#c5221f', soft: '#fce8e6', muted: '#fad2cf' },
@@ -376,6 +377,7 @@ export class LessonPage implements OnInit {
       this.lesson = findLesson(moduleId, lessonNumber);
       this.activeStepIndex = 0;
       this.activeProblemSection = 'concept';
+      this.problemSetMode = 'blank';
       this.resetLessonState();
 
       if (this.module && this.lesson) {
@@ -500,6 +502,14 @@ export class LessonPage implements OnInit {
     return this.countSlots(count, 12);
   }
 
+  problemBlankContainerSlots(problem: ProblemSetCenteredProblem): number[] {
+    return this.countSlots(problem.knownGroupCount ?? problem.quotient, 12);
+  }
+
+  problemBlankUnitSlots(problem: ProblemSetCenteredProblem): number[] {
+    return this.countSlots(problem.knownTotal ?? problem.quotient, 24);
+  }
+
   problemTapeParts(problem: ProblemSetCenteredProblem): number[] {
     return this.countSlots(problem.knownGroupCount ?? 2, 8);
   }
@@ -510,6 +520,10 @@ export class LessonPage implements OnInit {
 
   showProblemSection(section: 'concept' | 'problem-set' | 'summary'): void {
     this.activeProblemSection = section;
+  }
+
+  setProblemSetMode(mode: 'blank' | 'solved'): void {
+    this.problemSetMode = mode;
   }
 
   scrollToProblem(problemNumber: number): void {

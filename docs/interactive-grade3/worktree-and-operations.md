@@ -229,6 +229,13 @@ For lesson implementation work:
 - Lesson-specific CSS may or may not exist; it is not required for every authored lesson.
 - Do not move reusable layout into a one-off Lesson 12 stylesheet.
 
+Problem-set-centered control hierarchy is now a shared standard for all future authored modules and lessons:
+
+- Top lesson sections, such as `Concept`, `Problem Set`, and `Summary`, are the primary section controls. They may use stronger color treatment and active-state fill.
+- `Blank | Solved` is a mode switch inside the Problem Set, not another top-level section and not a peer of Problem 1, Problem 2, etc. Blank mode should use warm/yellow styling; Solved mode may use green/review styling.
+- Problem bookmarks, such as `Problem 1` through `Problem 6`, are lightweight local jump links. They should read like normal blue underlined browser links, not blue pills or primary buttons.
+- Do not let every control become the same blue pill. The hierarchy must make section controls, mode controls, and local problem jumps visually distinct.
+
 For the current Lesson 12 pilot, the expected implementation shape is:
 
 ```text

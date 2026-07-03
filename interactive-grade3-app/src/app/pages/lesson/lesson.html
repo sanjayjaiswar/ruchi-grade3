@@ -106,18 +106,110 @@
         </section>
 
         <section id="lesson12-problem-set" class="problem-centered-panel problem-set-centered-list" aria-label="Lesson 12 solved problem set" role="tabpanel" *ngSwitchCase="'problem-set'">
-          <nav class="problem-bookmarks" aria-label="Problem bookmarks">
-            <button type="button" *ngFor="let problem of problemLesson.problems" (click)="scrollToProblem(problem.number)">
-              Problem {{ problem.number }}
-            </button>
-          </nav>
+          <div class="problem-set-toolbar">
+            <nav class="problem-bookmarks" aria-label="Problem bookmarks">
+              <button type="button" *ngFor="let problem of problemLesson.problems" (click)="scrollToProblem(problem.number)">
+                Problem {{ problem.number }}
+              </button>
+            </nav>
+            <div class="problem-set-mode" role="group" aria-label="Problem Set mode">
+              <button
+                type="button"
+                [class.is-active]="problemSetMode === 'blank'"
+                [attr.aria-pressed]="problemSetMode === 'blank'"
+                (click)="setProblemSetMode('blank')">Blank</button>
+              <button
+                type="button"
+                [class.is-active]="problemSetMode === 'solved'"
+                [attr.aria-pressed]="problemSetMode === 'solved'"
+                (click)="setProblemSetMode('solved')">Solved</button>
+            </div>
+          </div>
 
-          <article class="problem-solution-card" *ngFor="let problem of problemLesson.problems" [id]="'lesson12-problem-' + problem.number">
+          <article
+            class="problem-solution-card"
+            [class.is-blank-mode]="problemSetMode === 'blank'"
+            *ngFor="let problem of problemLesson.problems"
+            [id]="'lesson12-problem-' + problem.number">
             <div class="problem-solution-head">
               <span class="problem-number">Problem {{ problem.number }}</span>
               <h3>{{ problem.sourcePrompt }}</h3>
+              <ul class="blank-prompt-list" *ngIf="problemSetMode === 'blank' && problem.blankPrompts?.length">
+                <li *ngFor="let prompt of problem.blankPrompts">{{ prompt }}</li>
+              </ul>
             </div>
 
+            <div class="blank-problem-body" *ngIf="problemSetMode === 'blank'; else solvedProblemBody">
+              <div class="blank-workspace-card">
+                <strong>Workbook visual workspace</strong>
+                <div class="blank-source-model" [ngSwitch]="problem.blankVisualType">
+                  <div *ngSwitchCase="'object-bank'" class="blank-object-bank">
+                    <div class="blank-token-row" [attr.aria-label]="problem.knownTotal + ' ' + problem.unitLabel">
+                      <span *ngFor="let token of problemTokenSlots(problem)"></span>
+                    </div>
+                    <small>{{ problem.blankWorkspaceLabel }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'equal-containers'" class="blank-container-model">
+                    <div class="blank-container-row">
+                      <span *ngFor="let container of problemBlankContainerSlots(problem); let containerIndex = index">
+                        <i></i>
+                        <b>{{ problem.groupLabel.slice(0, -1) || problem.groupLabel }} {{ containerIndex + 1 }}</b>
+                      </span>
+                    </div>
+                    <small>{{ problem.blankWorkspaceLabel }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'fact-match'" class="blank-fact-match-source">
+                    <div *ngFor="let fact of problem.facts">
+                      <span>{{ fact.dividend }} divided by {{ fact.divisor }}</span>
+                      <i></i>
+                      <em>____</em>
+                    </div>
+                  </div>
+
+                  <div *ngSwitchCase="'tape-diagram'" class="blank-tape-source">
+                    <strong>{{ problem.knownTotal }} {{ problem.unitLabel }} total</strong>
+                    <div [style.gridTemplateColumns]="'repeat(' + problemTapeParts(problem).length + ', minmax(80px, 1fr))'">
+                      <span *ngFor="let part of problemTapeParts(problem)">
+                        <em>?</em>
+                      </span>
+                    </div>
+                    <small>{{ problem.blankWorkspaceLabel }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'bar-units'" class="blank-bar-units">
+                    <div>
+                      <span *ngFor="let unit of problemBlankUnitSlots(problem)"></span>
+                    </div>
+                    <small>{{ problem.knownGroupSize }} {{ problem.unitLabel }} each {{ problem.groupLabel.slice(0, -1) || problem.groupLabel }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'share-tape'" class="blank-tape-source">
+                    <strong>{{ problem.knownTotal }} {{ problem.unitLabel }} total</strong>
+                    <div [style.gridTemplateColumns]="'repeat(' + problemTapeParts(problem).length + ', minmax(80px, 1fr))'">
+                      <span *ngFor="let part of problemTapeParts(problem); let partIndex = index">
+                        <b>{{ problemShareLabel(problem, partIndex) }}</b>
+                        <em>?</em>
+                      </span>
+                    </div>
+                    <small>{{ problem.blankWorkspaceLabel }}</small>
+                  </div>
+
+                  <div *ngSwitchDefault class="blank-open-workspace">
+                    <span>{{ problem.blankWorkspaceLabel || 'Use the official workbook page for drawing, labels, and written reasoning.' }}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="blank-response-card">
+                <div class="equation-list" *ngIf="problem.blankEquations?.length">
+                  <span *ngFor="let equation of problem.blankEquations">{{ equation }}</span>
+                </div>
+                <strong *ngIf="problem.blankAnswerSentence">{{ problem.blankAnswerSentence }}</strong>
+              </div>
+            </div>
+
+            <ng-template #solvedProblemBody>
             <div class="problem-solution-grid">
               <div class="problem-animation-card" [ngSwitch]="problem.animationType">
                 <div *ngSwitchCase="'grouping-by-size'" class="ps-grouping-model" aria-label="Grouping model">
@@ -180,6 +272,7 @@
                 </div>
               </div>
             </div>
+            </ng-template>
           </article>
         </section>
 
