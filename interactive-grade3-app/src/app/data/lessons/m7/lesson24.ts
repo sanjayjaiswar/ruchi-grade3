@@ -57,7 +57,7 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Use the given perimeters in the chart below to choose the widths and lengths of your robot's rectangular body parts. Write the widths and lengths in the chart below. Use the blank rows if you want to add extra rectangular body parts to your robot. Letter Body Part Perimeter Width and Length A arm 14 cm ____ cm by ____cm B arm 14 cm ____ cm by ____cm C leg 18 cm ____ cm by ____cm D leg 18 cm ____ cm by ____cm Double the perimeter E body of one arm = ____ cm by ____cm ____ cm F head 16 cm ____ cm by ____cm Half the perimeter of G neck the head = ____ cm by ____cm ____ cm H ____ cm by ____cm I ____ cm by ____cm My robot has 7 to 9 rectangular body parts. Number of body parts: ____ measurements, and reason about the different areas that may be produced. Use the information in the chart below to plan an environment for your robot. Write the width and length for each rectangular item. Use the blank rows if you want to add extra circular or rectangular items to your robot's envi...",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 24 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 24 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -97,7 +97,7 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 24 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 24 Problem Set."
       }
     ],
     "source-model": [
@@ -111,7 +111,7 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 24 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 24 Problem Set."
       }
     ],
     "source-meaning": [
@@ -125,13 +125,13 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 24 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 24 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 24 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 24 Problem Set."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 24 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 24 Problem Set."
       }
     ],
     "source-draw": [
@@ -153,7 +153,7 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 24 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 24 Problem Set."
       }
     ],
     "source-exit": [
@@ -167,7 +167,7 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 24 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 24 Problem Set."
       }
     ],
     "source-summary": [
@@ -181,7 +181,7 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 24 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 24 Problem Set."
       }
     ]
   }

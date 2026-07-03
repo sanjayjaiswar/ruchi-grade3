@@ -103,14 +103,133 @@
               </div>
             </article>
           </section>
+
+          <section
+            class="problem-centered-lesson-animation lesson-animation-panel"
+            *ngIf="lessonAnimation as animation"
+            [attr.data-kind]="animation.kind"
+            aria-label="Teacher Edition visual model animation">
+            <div class="lesson-animation-copy">
+              <span class="eyebrow">Teacher Edition visual model</span>
+              <h3>{{ animation.title }}</h3>
+              <p>{{ animation.context }}</p>
+              <div class="lesson-animation-equation">{{ animation.equation }}</div>
+            </div>
+
+            <div class="lesson-animation-stage">
+              <ng-container [ngSwitch]="animation.kind">
+                <div *ngSwitchCase="'equal-groups'" class="lesson-animation-groups" aria-label="Animated equal groups model">
+                  <div class="lesson-animation-group" *ngFor="let group of lessonAnimationGroups">
+                    <span *ngFor="let item of lessonAnimationGroupItems"></span>
+                    <small>Group {{ group }}</small>
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="'array'" class="lesson-animation-array-wrap" aria-label="Animated array model">
+                  <div
+                    class="lesson-animation-array"
+                    [style.gridTemplateColumns]="'repeat(' + (animation.columnCount || 4) + ', minmax(12px, 18px))'">
+                    <span
+                      *ngFor="let dot of lessonAnimationArrayDots; let dotIndex = index"
+                      [ngClass]="lessonAnimationDotClass(dotIndex)"></span>
+                  </div>
+                  <div class="lesson-animation-split-note" *ngIf="animation.firstPart">
+                    {{ animation.firstPart }} rows + {{ animation.secondPart }} rows
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="'tape-diagram'" class="lesson-animation-tape" aria-label="Animated tape diagram model">
+                  <strong>{{ animation.tapeWholeLabel || 'whole' }}</strong>
+                  <div
+                    class="lesson-animation-tape-parts"
+                    [style.gridTemplateColumns]="'repeat(' + lessonAnimationTapeParts.length + ', minmax(34px, 1fr))'">
+                    <span *ngFor="let part of lessonAnimationTapeParts">{{ animation.tapePartLabel || 'unit' }}</span>
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="'number-line'" class="lesson-animation-number-line" aria-label="Animated number line model">
+                  <div class="lesson-animation-line-track">
+                    <span *ngFor="let label of lessonAnimationNumberLineLabels"></span>
+                    <i *ngFor="let jump of lessonAnimationNumberLineJumps">{{ jump }}</i>
+                  </div>
+                  <div class="lesson-animation-line-labels">
+                    <span *ngFor="let label of lessonAnimationNumberLineLabels">{{ label }}</span>
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="'clock'" class="lesson-animation-clock" aria-label="Animated clock model">
+                  <div class="lesson-animation-clock-face">
+                    <span class="clock-mark twelve">12</span>
+                    <span class="clock-mark three">3</span>
+                    <span class="clock-mark six">6</span>
+                    <span class="clock-mark nine">9</span>
+                    <i class="minute-hand"></i>
+                    <b class="hour-hand"></b>
+                  </div>
+                  <div class="lesson-animation-clock-labels">
+                    <span *ngFor="let label of lessonAnimationClockLabels">{{ label }}</span>
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="'measurement'" class="lesson-animation-measurement" aria-label="Animated measurement model">
+                  <div class="lesson-animation-measure-track">
+                    <span *ngFor="let tick of lessonAnimationMeasurementTicks">{{ tick }}</span>
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="'graph'" class="lesson-animation-graph" aria-label="Animated graph model">
+                  <div class="lesson-animation-graph-bars">
+                    <span *ngFor="let bar of lessonAnimationGraphBars">
+                      <i [style.height.px]="lessonAnimationGraphBarHeight(bar.value)"></i>
+                      <small>{{ bar.label }}</small>
+                    </span>
+                  </div>
+                </div>
+
+                <div *ngSwitchDefault class="lesson-animation-geometry" aria-label="Animated model">
+                  <div class="lesson-animation-polygon">
+                    <span *ngFor="let label of lessonAnimationGeometryLabels">{{ label }}</span>
+                  </div>
+                </div>
+              </ng-container>
+            </div>
+
+            <div class="lesson-animation-notes">
+              <strong>{{ animation.teacherPrompt }}</strong>
+              <ul>
+                <li *ngFor="let focus of animation.focus">{{ focus }}</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="problem-source-pages is-teacher-source" *ngIf="conceptSourcePageImages(problemLesson).length" [attr.aria-label]="'Official Teacher Edition Problem Set pages for Module ' + module.number + ' Lesson ' + lesson.lessonNumber">
+            <div class="source-pages-heading">
+              <strong>Official Teacher Edition Problem Set pages</strong>
+              <span>{{ problemLesson.teacherEditionBasis }}</span>
+            </div>
+            <div class="source-page-strip">
+              <a
+                *ngFor="let teacherPageImage of conceptSourcePageImages(problemLesson); let pageIndex = index"
+                [href]="teacherPageImage"
+                target="_blank"
+                rel="noreferrer">
+                <img
+                  [src]="teacherPageImage"
+                  [alt]="'Official Teacher Edition source for Module ' + module.number + ' Lesson ' + lesson.lessonNumber + ', page ' + (pageIndex + 1)" />
+              </a>
+            </div>
+          </section>
         </section>
 
         <section [id]="problemSectionId('problem-set')" class="problem-centered-panel problem-set-centered-list" [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' solved problem set'" role="tabpanel" *ngSwitchCase="'problem-set'">
           <div class="problem-set-toolbar">
             <nav class="problem-bookmarks" aria-label="Problem bookmarks">
-              <button type="button" *ngFor="let problem of problemLesson.problems" (click)="scrollToProblem(problem.number)">
+              <a
+                *ngFor="let problem of problemLesson.problems"
+                [href]="problemHref(problem.number)"
+                (click)="scrollToProblem(problem.number, $event)">
                 Problem {{ problem.number }}
-              </button>
+              </a>
             </nav>
             <div class="problem-set-mode" role="group" aria-label="Problem Set mode">
               <button
@@ -126,8 +245,27 @@
             </div>
           </div>
 
+          <details class="problem-source-pages source-reference-pages" *ngIf="hasProblemSetSourcePages(problemLesson)" [attr.aria-label]="problemSetSourcePageAriaLabel()">
+            <summary class="source-pages-heading">
+              <strong>{{ problemSetSourcePageHeading() }} reference</strong>
+              <span>{{ problemSetSourcePageSourceNote(problemLesson) }}</span>
+            </summary>
+            <div class="source-page-strip">
+              <a
+                *ngFor="let sourcePageImage of problemSetSourcePageImages(problemLesson); let pageIndex = index"
+                [href]="sourcePageImage"
+                target="_blank"
+                rel="noreferrer">
+                <img
+                  [src]="sourcePageImage"
+                  [alt]="problemSetSourcePageHeading() + ' for Module ' + module.number + ' Lesson ' + lesson.lessonNumber + ', page ' + (pageIndex + 1)" />
+              </a>
+            </div>
+          </details>
+
           <article
             class="problem-solution-card"
+            [class.has-source-pages]="hasProblemSourcePages(problem)"
             [class.is-blank-mode]="problemSetMode === 'blank'"
             *ngFor="let problem of problemLesson.problems"
             [id]="problemDomId(problem.number)">
@@ -141,8 +279,20 @@
 
             <div class="blank-problem-body" *ngIf="problemSetMode === 'blank'; else solvedProblemBody">
               <div class="blank-workspace-card">
-                <strong>Workbook visual workspace</strong>
-                <div class="blank-source-model" [ngSwitch]="problem.blankVisualType">
+                <strong>{{ hasProblemSourcePages(problem) ? 'Official Teacher Edition Problem Set workspace' : 'Interactive workspace' }}</strong>
+                <section class="official-problem-source-pages" *ngIf="hasProblemSourcePages(problem)" aria-label="Official Teacher Edition Problem Set pages for this problem">
+                  <a
+                    *ngFor="let sourcePageImage of problemSourcePageImages(problem); let pageIndex = index"
+                    [href]="sourcePageImage"
+                    target="_blank"
+                    rel="noreferrer">
+                    <img
+                      loading="lazy"
+                      [src]="sourcePageImage"
+                      [alt]="problemSetSourcePageHeading() + ' for Module ' + module.number + ' Lesson ' + lesson.lessonNumber + ', Problem ' + problem.number + ', page ' + (pageIndex + 1)" />
+                  </a>
+                </section>
+                <div class="blank-source-model" *ngIf="!hasProblemSourcePages(problem)" [ngSwitch]="problem.blankVisualType">
                   <div *ngSwitchCase="'object-bank'" class="blank-object-bank">
                     <div class="blank-token-row" [attr.aria-label]="problem.knownTotal + ' ' + problem.unitLabel">
                       <span *ngFor="let token of problemTokenSlots(problem)"></span>
@@ -211,17 +361,286 @@
                     <small>{{ problemArrayRows(problem) }} {{ problem.groupLabel }} of {{ problemArrayColumns(problem) }} {{ problem.unitLabel }}</small>
                   </div>
 
+                  <div *ngSwitchCase="'area-models-template'" class="m4-area-models">
+                    <strong>{{ problem.blankWorkspaceLabel }}</strong>
+                    <article *ngFor="let areaModel of problem.areaModels">
+                      <b>{{ areaModel.label }}</b>
+                      <div [style.gridTemplateColumns]="'repeat(' + areaModel.columns + ', minmax(16px, 1fr))'">
+                        <span *ngFor="let tile of areaModelSlots(areaModel)"></span>
+                      </div>
+                      <small>{{ areaModel.rows }} rows of {{ areaModel.columns }} {{ areaModel.unitLabel || problem.unitLabel }}</small>
+                    </article>
+                  </div>
+
+                  <div *ngSwitchCase="'pattern-block-cover-template'" class="m4-pattern-cover">
+                    <strong>{{ problem.blankWorkspaceLabel }}</strong>
+                    <article *ngFor="let target of problem.patternBlockCover?.targets">
+                      <div [class]="'m4-target-shape is-' + target.shape">
+                        <span *ngFor="let block of patternBlockSlots(target.count)" [class]="'m4-pattern-block is-' + problem.patternBlockCover?.unit"></span>
+                      </div>
+                      <small>{{ target.label }}: ______ {{ problem.unitLabel }}</small>
+                    </article>
+                  </div>
+
+                  <div *ngSwitchCase="'floor-plan-template'" class="m4-floor-plan">
+                    <strong>{{ problem.blankWorkspaceLabel }}</strong>
+                    <div>
+                      <span *ngFor="let room of problem.roomAreas">{{ room.label }}: ______ sq cm</span>
+                    </div>
+                  </div>
+
                   <div *ngSwitchCase="'equation-workspace'" class="blank-equation-source">
-                    <strong>{{ problem.blankWorkspaceLabel || 'Use the official workbook equations and blanks.' }}</strong>
+                    <strong>{{ problem.blankWorkspaceLabel || 'Use the official Teacher Edition equations and blanks.' }}</strong>
                     <span *ngFor="let equation of problem.blankEquations">{{ equation }}</span>
                   </div>
 
+                  <div *ngSwitchCase="'fraction-strip-template'" class="blank-fraction-strip-source">
+                    <strong>{{ problem.blankWorkspaceLabel || 'Partition the whole into equal parts.' }}</strong>
+                    <div class="ps-fraction-model-stack" *ngIf="problem.fractionModels?.length; else singleBlankFractionStrip">
+                      <div class="ps-fraction-model-row" *ngFor="let fractionModel of problem.fractionModels">
+                        <b>{{ fractionModel.label }}</b>
+                        <div [style.gridTemplateColumns]="'repeat(' + fractionModel.denominator + ', minmax(30px, 1fr))'">
+                          <span *ngFor="let part of fractionModelPartSlots(fractionModel)"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <ng-template #singleBlankFractionStrip>
+                      <div [style.gridTemplateColumns]="'repeat(' + problemFractionPartSlots(problem).length + ', minmax(36px, 1fr))'">
+                        <span *ngFor="let part of problemFractionPartSlots(problem)"></span>
+                      </div>
+                    </ng-template>
+                    <small>Label the equal parts and shade the fraction from the official problem.</small>
+                  </div>
+
+                  <div *ngSwitchCase="'number-line-template'" class="blank-number-line-source">
+                    <strong>{{ problem.blankWorkspaceLabel || 'Partition and label the number line.' }}</strong>
+                    <div class="ps-number-line-stack" *ngIf="problem.numberLineModels?.length; else singleBlankNumberLine">
+                      <div class="ps-number-line-row" *ngFor="let numberLineModel of problem.numberLineModels">
+                        <b>{{ numberLineModel.label }}</b>
+                        <div>
+                          <span *ngFor="let tick of numberLineModelTicks(numberLineModel)"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <ng-template #singleBlankNumberLine>
+                      <div>
+                        <span *ngFor="let tick of problemNumberLineTicks(problem)"></span>
+                      </div>
+                    </ng-template>
+                    <small>Mark equal intervals, then place or compare the fraction from the official source.</small>
+                  </div>
+
+                  <div *ngSwitchCase="'fraction-concrete-template'" class="m5-concrete-model is-blank" [ngSwitch]="concreteFractionModel(problem)?.kind">
+                    <strong>{{ concreteFractionModel(problem)?.title }}</strong>
+                    <p>{{ concreteFractionModel(problem)?.prompt }}</p>
+
+                    <div *ngSwitchCase="'beaker-set'" class="m5-beaker-row">
+                      <article *ngFor="let item of concreteFractionItems(problem)">
+                        <div class="m5-beaker" aria-label="Beaker">
+                          <span class="m5-beaker-fill-line"></span>
+                          <span class="m5-beaker-water" [style.height.%]="concreteFractionFillPercent(item)"></span>
+                        </div>
+                        <b>{{ item.label }}</b>
+                      </article>
+                    </div>
+
+                    <div *ngSwitchCase="'string-cheese-bars'" class="m5-cheese-stack">
+                      <article *ngFor="let item of concreteFractionItems(problem)">
+                        <div [style.gridTemplateColumns]="'repeat(' + concreteFractionSegments(item).length + ', minmax(34px, 1fr))'">
+                          <span
+                            *ngFor="let segment of concreteFractionSegments(item); let segmentIndex = index"
+                            [class.is-shaded]="segmentIndex < concreteFractionVisibleNumerator(item)"></span>
+                        </div>
+                        <em>________________</em>
+                      </article>
+                    </div>
+
+                    <div *ngSwitchCase="'partition-rectangles'" class="m5-partition-card-grid">
+                      <article *ngFor="let item of concreteFractionItems(problem)">
+                        <b>{{ item.label }}</b>
+                        <div class="m5-open-rectangle">
+                          <span
+                            *ngFor="let guide of concreteFractionLineGuides(item)"
+                            [style.left.%]="guide.left"></span>
+                        </div>
+                        <small>Lines: ____ &nbsp; Unit: ____</small>
+                      </article>
+                    </div>
+
+                    <div *ngSwitchCase="'paper-sheets'" class="m5-sheet-row">
+                      <article *ngFor="let item of concreteFractionItems(problem)">
+                        <div class="m5-paper-sheet">
+                          <span
+                            *ngFor="let guide of concreteFractionLineGuides(item)"
+                            [style.left.%]="guide.left"></span>
+                        </div>
+                        <b>{{ item.label }}</b>
+                      </article>
+                    </div>
+
+                    <div *ngSwitchCase="'measured-strip'" class="m5-wood-strip-model">
+                      <div class="m5-strip-ruler">
+                        <span
+                          *ngFor="let tick of measuredStripTicks(problem); let tickIndex = index"
+                          [class.is-major]="tickIndex % 6 === 0">{{ tickIndex }}</span>
+                      </div>
+                      <div class="m5-wood-strip">
+                        <span
+                          *ngFor="let guide of measuredStripGuides(problem)"
+                          [style.left.%]="guide.left">{{ guide.label }}</span>
+                      </div>
+                      <small>{{ problem.blankWorkspaceLabel }}</small>
+                    </div>
+                  </div>
+
+                  <div *ngSwitchCase="'paper-partition-template'" class="m5-paper-partition m5-paper-partition-blank">
+                    <strong>{{ paperPartitionModel(problem)?.title }}</strong>
+                    <div class="m5-paper-stage" aria-label="Blank lined-paper partition setup">
+                      <div class="m5-lined-paper">
+                        <span
+                          class="m5-paper-space"
+                          *ngFor="let tick of paperPartitionSpaceTicks(problem); let tickIndex = index"
+                          [class.is-major]="tickIndex % (paperPartitionModel(problem)?.paperSpacesPerUnit || 5) === 0"></span>
+                        <div class="m5-base-line"></div>
+                        <span
+                          class="m5-paper-guide"
+                          *ngFor="let guide of paperPartitionGuides(problem)"
+                          [style.left.%]="guide.left">
+                          <b>{{ guide.label }}</b>
+                        </span>
+                        <div class="m5-red-strip-ghost">{{ paperPartitionModel(problem)?.stripLabel }}</div>
+                      </div>
+                    </div>
+                    <small>{{ problem.blankWorkspaceLabel }}</small>
+                    <div class="m5-partition-chips">
+                      <span *ngFor="let unit of paperPartitionChallengeUnits(problem)">{{ unit }}</span>
+                    </div>
+                  </div>
+
+                  <div *ngSwitchCase="'clock-workspace'" class="blank-clock-source">
+                    <strong>{{ problem.blankWorkspaceLabel || 'Draw or read the clock hands from the official source.' }}</strong>
+                    <div>
+                      <span>12</span>
+                      <span>3</span>
+                      <span>6</span>
+                      <span>9</span>
+                    </div>
+                    <small>Use the hour hand, minute hand, and elapsed-minute jumps from the Teacher Edition Problem Set.</small>
+                  </div>
+
+                  <div *ngSwitchCase="'data-table-template'" class="m6-display-card m6-data-table-card">
+                    <strong>{{ activeProblemDisplay(problem)?.title }}</strong>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th *ngFor="let column of displayColumns(activeProblemDisplay(problem))">{{ column }}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let row of displayRows(activeProblemDisplay(problem))">
+                          <td *ngFor="let cell of row">{{ cell }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <small>{{ activeProblemDisplay(problem)?.note }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'tally-picture-graph-template'" class="m6-display-card m6-tally-picture-card">
+                    <strong>{{ activeProblemDisplay(problem)?.title }}</strong>
+                    <table class="m6-mini-data-table" *ngIf="displayRows(activeProblemDisplay(problem)).length">
+                      <thead>
+                        <tr>
+                          <th *ngFor="let column of displayColumns(activeProblemDisplay(problem))">{{ column }}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let row of displayRows(activeProblemDisplay(problem))">
+                          <td *ngFor="let cell of row">{{ cell }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="m6-tally-table">
+                      <span>{{ displayColumns(activeProblemDisplay(problem))[0] || 'Category' }}</span>
+                      <span>{{ displayColumns(activeProblemDisplay(problem))[1] || 'Count' }}</span>
+                      <ng-container *ngFor="let category of displayCategories(activeProblemDisplay(problem))">
+                        <b>{{ category }}</b>
+                        <em>tally marks / count</em>
+                      </ng-container>
+                    </div>
+                    <div class="m6-picture-grid">
+                      <span *ngFor="let category of displayCategories(activeProblemDisplay(problem))">{{ category }}</span>
+                    </div>
+                    <small>{{ activeProblemDisplay(problem)?.keyLabel }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'vertical-tape-display-template'" class="m6-display-card m6-vertical-tape-card">
+                    <strong>{{ activeProblemDisplay(problem)?.title }}</strong>
+                    <div class="m6-vertical-bars">
+                      <div class="m6-vertical-bar" *ngFor="let item of displayValues(activeProblemDisplay(problem))">
+                        <div>
+                          <span *ngFor="let unit of displayVerticalUnits(item, activeProblemDisplay(problem))">{{ activeProblemDisplay(problem)?.unitSize }}</span>
+                        </div>
+                        <b>{{ item.label }}</b>
+                      </div>
+                    </div>
+                    <small>{{ activeProblemDisplay(problem)?.scaleLabel }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'bar-graph-template'" class="m6-display-card m6-bar-graph-card">
+                    <strong>{{ activeProblemDisplay(problem)?.title }}</strong>
+                    <div class="m6-bar-graph">
+                      <div class="m6-bar-row" *ngFor="let item of displayValues(activeProblemDisplay(problem))">
+                        <b>{{ item.label }}</b>
+                        <span>
+                          <i [style.width.%]="displayBarPercent(activeProblemDisplay(problem), item.value)"></i>
+                        </span>
+                        <em>____</em>
+                      </div>
+                    </div>
+                    <small>{{ activeProblemDisplay(problem)?.axisLabel }} {{ activeProblemDisplay(problem)?.scaleLabel }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'ruler-template'" class="m6-display-card m6-ruler-card">
+                    <strong>{{ activeProblemDisplay(problem)?.title }}</strong>
+                    <div class="m6-ruler">
+                      <span *ngFor="let tick of displayTicks(activeProblemDisplay(problem))">{{ tick }}</span>
+                    </div>
+                    <small>{{ activeProblemDisplay(problem)?.note }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'line-plot-template'" class="m6-display-card m6-line-plot-card">
+                    <strong>{{ activeProblemDisplay(problem)?.title }}</strong>
+                    <table class="m6-source-data-table" *ngIf="displaySourceDataRows(activeProblemDisplay(problem)).length; else sourceDataChips">
+                      <caption>Source data</caption>
+                      <tbody>
+                        <tr *ngFor="let row of displaySourceDataRows(activeProblemDisplay(problem))">
+                          <td *ngFor="let value of row">{{ value }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <ng-template #sourceDataChips>
+                      <div class="m6-source-data" *ngIf="displaySourceData(activeProblemDisplay(problem)).length">
+                        <b>Source data</b>
+                        <span *ngFor="let value of displaySourceData(activeProblemDisplay(problem))">{{ value }}</span>
+                      </div>
+                    </ng-template>
+                    <div class="m6-line-plot">
+                      <div class="m6-line-stack" *ngFor="let item of displayValues(activeProblemDisplay(problem))">
+                        <div>
+                          <span *ngFor="let mark of displayBlankLinePlotSlots(item, activeProblemDisplay(problem))">X</span>
+                        </div>
+                        <b>{{ item.label }}</b>
+                      </div>
+                    </div>
+                    <small>{{ activeProblemDisplay(problem)?.keyLabel }} {{ activeProblemDisplay(problem)?.note }}</small>
+                  </div>
+
                   <div *ngSwitchDefault class="blank-open-workspace">
-                    <span>{{ problem.blankWorkspaceLabel || 'Use the official workbook page for drawing, labels, and written reasoning.' }}</span>
+                    <span>{{ problem.blankWorkspaceLabel || 'Use the official Teacher Edition page for drawing, labels, and written reasoning.' }}</span>
                   </div>
                 </div>
               </div>
-              <div class="blank-response-card">
+              <div class="blank-response-card" *ngIf="!hasProblemSourcePages(problem)">
                 <div class="equation-list" *ngIf="problem.blankEquations?.length">
                   <span *ngFor="let equation of problem.blankEquations">{{ equation }}</span>
                 </div>
@@ -231,7 +650,19 @@
 
             <ng-template #solvedProblemBody>
             <div class="problem-solution-grid">
-              <div class="problem-animation-card" [ngSwitch]="problem.animationType">
+              <div class="problem-animation-card" [ngSwitch]="hasProblemSourcePages(problem) ? 'source-page' : problem.animationType">
+                <section class="official-problem-source-pages is-solved" *ngIf="hasProblemSourcePages(problem)" aria-label="Official Teacher Edition Answer Key pages for this solved problem">
+                  <a
+                    *ngFor="let sourcePageImage of problemSourcePageImages(problem); let pageIndex = index"
+                    [href]="sourcePageImage"
+                    target="_blank"
+                    rel="noreferrer">
+                    <img
+                      loading="lazy"
+                      [src]="sourcePageImage"
+                      [alt]="problemSetSourcePageHeading() + ' for Module ' + module.number + ' Lesson ' + lesson.lessonNumber + ', Problem ' + problem.number + ', page ' + (pageIndex + 1)" />
+                  </a>
+                </section>
                 <div *ngSwitchCase="'grouping-by-size'" class="ps-grouping-model" aria-label="Grouping model">
                   <div class="ps-token-bank">
                     <span *ngFor="let token of problemTokenSlots(problem)"></span>
@@ -285,27 +716,334 @@
                   </div>
                 </div>
 
+                <div *ngSwitchCase="'area-models'" class="m4-area-models is-solved" aria-label="Area models">
+                  <strong>{{ problem.solvedAnswer }}</strong>
+                  <article *ngFor="let areaModel of problem.areaModels">
+                    <b>{{ areaModel.label }}</b>
+                    <div [style.gridTemplateColumns]="'repeat(' + areaModel.columns + ', minmax(16px, 1fr))'">
+                      <span *ngFor="let tile of areaModelSlots(areaModel)"></span>
+                    </div>
+                    <small>{{ areaModel.rows }} x {{ areaModel.columns }} = {{ areaModel.total || (areaModel.rows * areaModel.columns) }} {{ areaModel.unitLabel || problem.unitLabel }}</small>
+                  </article>
+                </div>
+
+                <div *ngSwitchCase="'pattern-block-cover'" class="m4-pattern-cover is-solved" aria-label="Pattern block cover model">
+                  <strong>{{ problem.solvedAnswer }}</strong>
+                  <article *ngFor="let target of problem.patternBlockCover?.targets">
+                    <div [class]="'m4-target-shape is-' + target.shape">
+                      <span *ngFor="let block of patternBlockSlots(target.count)" [class]="'m4-pattern-block is-' + problem.patternBlockCover?.unit"></span>
+                    </div>
+                    <small>{{ target.label }}: {{ target.count }} {{ problem.unitLabel }}</small>
+                  </article>
+                </div>
+
+                <div *ngSwitchCase="'floor-plan-model'" class="m4-floor-plan is-solved" aria-label="Floor plan area model">
+                  <strong>{{ problem.solvedAnswer }}</strong>
+                  <div>
+                    <span *ngFor="let room of problem.roomAreas">{{ room.label }}: {{ room.area }} sq cm</span>
+                  </div>
+                </div>
+
                 <div *ngSwitchCase="'decompose-array'" class="ps-decompose-model" aria-label="Decomposed array model">
                   <strong>{{ problem.solvedAnswer }}</strong>
-                  <div class="equation-list">
-                    <span *ngFor="let equation of problem.equations">{{ equation }}</span>
+                  <div class="ps-decompose-array-parts" *ngIf="problemDecomposeParts(problem).length">
+                    <article *ngFor="let part of problemDecomposeParts(problem); let partIndex = index">
+                      <b>{{ partIndex === 0 ? 'First part' : 'Second part' }}</b>
+                      <div
+                        [style.gridTemplateColumns]="'repeat(' + part.columns + ', minmax(18px, 1fr))'"
+                        [attr.aria-label]="part.rows + ' rows of ' + part.columns">
+                        <span *ngFor="let item of problemDecomposeSlots(part)"></span>
+                      </div>
+                      <small>{{ part.label }}</small>
+                    </article>
+                  </div>
+                  <div class="ps-equation-flow">
+                    <span *ngFor="let equation of problem.equations; let equationIndex = index">
+                      <b>Step {{ equationIndex + 1 }}</b>
+                      <em>{{ equation }}</em>
+                    </span>
                   </div>
                 </div>
 
                 <div *ngSwitchCase="'two-step-model'" class="ps-two-step-model" aria-label="Two-step model">
                   <strong>Step-by-step answer</strong>
-                  <div class="equation-list">
-                    <span *ngFor="let equation of problem.equations">{{ equation }}</span>
+                  <div class="ps-equation-flow">
+                    <span *ngFor="let equation of problem.equations; let equationIndex = index">
+                      <b>Step {{ equationIndex + 1 }}</b>
+                      <em>{{ equation }}</em>
+                    </span>
+                  </div>
+                  <small>{{ problem.solvedAnswer }}</small>
+                </div>
+
+                <div *ngSwitchCase="'fraction-strip-model'" class="ps-fraction-strip-model" aria-label="Fraction strip model">
+                  <strong>{{ problem.solvedAnswer }}</strong>
+                  <div class="ps-fraction-model-stack" *ngIf="problem.fractionModels?.length; else singleSolvedFractionStrip">
+                    <div class="ps-fraction-model-row" *ngFor="let fractionModel of problem.fractionModels">
+                      <b>{{ fractionModel.label }}</b>
+                      <div [style.gridTemplateColumns]="'repeat(' + fractionModel.denominator + ', minmax(30px, 1fr))'">
+                        <span
+                          *ngFor="let part of fractionModelPartSlots(fractionModel); let partIndex = index"
+                          [class.is-shaded]="partIndex < fractionModel.numerator">
+                          {{ partIndex < fractionModel.numerator ? fractionModelLabel(fractionModel) : '' }}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <ng-template #singleSolvedFractionStrip>
+                    <div [style.gridTemplateColumns]="'repeat(' + problemFractionPartSlots(problem).length + ', minmax(36px, 1fr))'">
+                      <span
+                        *ngFor="let part of problemFractionPartSlots(problem); let partIndex = index"
+                        [class.is-shaded]="partIndex < problemFractionShadedCount(problem)">
+                        {{ partIndex < problemFractionShadedCount(problem) ? 'shaded' : '' }}
+                      </span>
+                    </div>
+                  </ng-template>
+                </div>
+
+                <div *ngSwitchCase="'number-line-model'" class="ps-number-line-model" aria-label="Number line model">
+                  <strong>{{ problem.solvedAnswer }}</strong>
+                  <div class="ps-number-line-stack" *ngIf="problem.numberLineModels?.length; else singleSolvedNumberLine">
+                    <div class="ps-number-line-row" *ngFor="let numberLineModel of problem.numberLineModels">
+                      <b>{{ numberLineModel.label }}</b>
+                      <div>
+                        <span
+                          *ngFor="let tick of numberLineModelTicks(numberLineModel); let tickIndex = index"
+                          [class.is-target]="numberLineModelTarget(numberLineModel, tickIndex)">
+                          {{ numberLineModelLabel(numberLineModel, tickIndex) }}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <ng-template #singleSolvedNumberLine>
+                    <div>
+                      <span
+                        *ngFor="let tick of problemNumberLineTicks(problem); let tickIndex = index"
+                        [class.is-target]="tickIndex === problemFractionShadedCount(problem)">
+                        {{ problemNumberLineLabel(problem, tickIndex) }}
+                      </span>
+                    </div>
+                  </ng-template>
+                </div>
+
+                <div *ngSwitchCase="'fraction-concrete-model'" class="m5-concrete-model is-solved" [ngSwitch]="concreteFractionModel(problem)?.kind" aria-label="Teacher Edition concrete fraction model">
+                  <strong>{{ problem.solvedAnswer }}</strong>
+                  <p>{{ concreteFractionModel(problem)?.prompt }}</p>
+
+                  <div *ngSwitchCase="'beaker-set'" class="m5-beaker-row">
+                    <article *ngFor="let item of concreteFractionItems(problem)">
+                      <div class="m5-beaker" aria-label="Beaker">
+                        <span class="m5-beaker-fill-line"></span>
+                        <span class="m5-beaker-water" [style.height.%]="concreteFractionFillPercent(item)"></span>
+                      </div>
+                      <b>{{ item.label }}</b>
+                    </article>
+                  </div>
+
+                  <div *ngSwitchCase="'string-cheese-bars'" class="m5-cheese-stack">
+                    <article *ngFor="let item of concreteFractionItems(problem)">
+                      <div [style.gridTemplateColumns]="'repeat(' + concreteFractionSegments(item).length + ', minmax(34px, 1fr))'">
+                        <span
+                          *ngFor="let segment of concreteFractionSegments(item); let segmentIndex = index"
+                          [class.is-shaded]="segmentIndex < concreteFractionVisibleNumerator(item)">
+                          {{ segmentIndex < concreteFractionVisibleNumerator(item) ? concreteFractionAnswer(item) : '' }}
+                        </span>
+                      </div>
+                      <em>{{ concreteFractionAnswer(item) }}</em>
+                    </article>
+                  </div>
+
+                  <div *ngSwitchCase="'partition-rectangles'" class="m5-partition-card-grid">
+                    <article *ngFor="let item of concreteFractionItems(problem)">
+                      <b>{{ item.label }}</b>
+                      <div class="m5-open-rectangle">
+                        <span
+                          *ngFor="let guide of concreteFractionLineGuides(item)"
+                          [style.left.%]="guide.left"></span>
+                      </div>
+                      <small>{{ item.lineCount }} line{{ item.lineCount === 1 ? '' : 's' }}; each part is {{ item.unitName }}</small>
+                    </article>
+                  </div>
+
+                  <div *ngSwitchCase="'paper-sheets'" class="m5-sheet-row is-solved">
+                    <article *ngFor="let item of concreteFractionItems(problem)">
+                      <div class="m5-paper-sheet">
+                        <span
+                          *ngFor="let guide of concreteFractionLineGuides(item)"
+                          [style.left.%]="guide.left"></span>
+                      </div>
+                      <b>{{ item.label }}: {{ item.lineCount }} lines</b>
+                    </article>
+                    <small>{{ concreteFractionModel(problem)?.notice }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'measured-strip'" class="m5-wood-strip-model is-solved">
+                    <div class="m5-strip-ruler">
+                      <span
+                        *ngFor="let tick of measuredStripTicks(problem); let tickIndex = index"
+                        [class.is-major]="tickIndex % 6 === 0">{{ tickIndex }}</span>
+                    </div>
+                    <div class="m5-wood-strip" [style.gridTemplateColumns]="'repeat(' + measuredStripParts(problem).length + ', minmax(72px, 1fr))'">
+                      <b *ngFor="let part of measuredStripParts(problem)">6 inches = 1/2</b>
+                      <span
+                        *ngFor="let guide of measuredStripGuides(problem)"
+                        [style.left.%]="guide.left">{{ guide.label }}</span>
+                    </div>
+                    <small>{{ concreteFractionModel(problem)?.notice }}</small>
                   </div>
                 </div>
 
-                <div class="ps-quotient-label">
-                  <strong>Quotient meaning</strong>
+                <div *ngSwitchCase="'paper-partition-model'" class="m5-paper-partition m5-paper-partition-solved" aria-label="Lined-paper red-strip partition model">
+                  <strong>{{ problem.solvedAnswer }}</strong>
+                  <div class="m5-paper-stage">
+                    <div class="m5-lined-paper">
+                      <span
+                        class="m5-paper-space"
+                        *ngFor="let tick of paperPartitionSpaceTicks(problem); let tickIndex = index"
+                        [class.is-major]="tickIndex % (paperPartitionModel(problem)?.paperSpacesPerUnit || 5) === 0"></span>
+                      <div class="m5-base-line"></div>
+                      <span
+                        class="m5-paper-guide"
+                        *ngFor="let guide of paperPartitionGuides(problem)"
+                        [style.left.%]="guide.left">
+                        <b>{{ guide.label }}</b>
+                      </span>
+                      <div class="m5-red-strip">
+                        <span
+                          *ngFor="let guide of paperPartitionInteriorGuides(problem)"
+                          [style.left.%]="guide.left">
+                          {{ guide.label }}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <ol class="m5-partition-steps">
+                    <li *ngFor="let step of paperPartitionModel(problem)?.steps">{{ step }}</li>
+                  </ol>
+                  <div class="m5-partition-chips">
+                    <span *ngFor="let unit of paperPartitionChallengeUnits(problem)">{{ unit }}</span>
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="'clock-model'" class="ps-clock-model" aria-label="Clock model">
+                  <strong>{{ problem.solvedAnswer }}</strong>
+                  <div>
+                    <span>12</span>
+                    <span>3</span>
+                    <span>6</span>
+                    <span>9</span>
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="'data-display-model'" class="m6-solved-display-model" [ngSwitch]="activeProblemDisplay(problem)?.kind">
+                  <div *ngSwitchCase="'bar-graph'" class="m6-display-card m6-bar-graph-card">
+                    <strong>{{ activeProblemDisplay(problem)?.title }}</strong>
+                    <div class="m6-bar-graph">
+                      <div class="m6-bar-row" *ngFor="let item of displayValues(activeProblemDisplay(problem))">
+                        <b>{{ item.label }}</b>
+                        <span>
+                          <i [style.width.%]="displayBarPercent(activeProblemDisplay(problem), item.value)"></i>
+                        </span>
+                        <em>{{ item.valueLabel || item.value }}</em>
+                      </div>
+                    </div>
+                    <small>{{ activeProblemDisplay(problem)?.scaleLabel }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'vertical-tape'" class="m6-display-card m6-vertical-tape-card">
+                    <strong>{{ activeProblemDisplay(problem)?.title }}</strong>
+                    <div class="m6-vertical-bars">
+                      <div class="m6-vertical-bar" *ngFor="let item of displayValues(activeProblemDisplay(problem))">
+                        <div>
+                          <span *ngFor="let unit of displayVerticalUnits(item, activeProblemDisplay(problem))">{{ activeProblemDisplay(problem)?.unitSize }}</span>
+                        </div>
+                        <b>{{ item.label }}</b>
+                      </div>
+                    </div>
+                    <small>{{ activeProblemDisplay(problem)?.scaleLabel }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'line-plot'" class="m6-display-card m6-line-plot-card">
+                    <strong>{{ activeProblemDisplay(problem)?.title }}</strong>
+                    <div class="m6-line-plot">
+                      <div class="m6-line-stack" *ngFor="let item of displayValues(activeProblemDisplay(problem))">
+                        <div>
+                          <span *ngFor="let mark of displayCountSlots(item.value)">X</span>
+                        </div>
+                        <b>{{ item.label }}</b>
+                      </div>
+                    </div>
+                    <small>{{ activeProblemDisplay(problem)?.keyLabel }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'picture-graph'" class="m6-display-card m6-picture-graph-card">
+                    <strong>{{ activeProblemDisplay(problem)?.title }}</strong>
+                    <table class="m6-mini-data-table" *ngIf="displayRows(activeProblemDisplay(problem)).length">
+                      <thead>
+                        <tr>
+                          <th *ngFor="let column of displayColumns(activeProblemDisplay(problem))">{{ column }}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let row of displayRows(activeProblemDisplay(problem))">
+                          <td *ngFor="let cell of row">{{ cell }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="m6-picture-graph">
+                      <div class="m6-picture-row" *ngFor="let item of displayValues(activeProblemDisplay(problem))">
+                        <b>{{ item.label }}</b>
+                        <span>
+                          <i *ngFor="let symbol of displayPictureSymbols(item, activeProblemDisplay(problem))" aria-hidden="true"></i>
+                        </span>
+                        <em>{{ item.value }}</em>
+                      </div>
+                    </div>
+                    <small>{{ activeProblemDisplay(problem)?.keyLabel }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'tally-picture'" class="m6-display-card m6-tally-picture-card">
+                    <strong>{{ activeProblemDisplay(problem)?.title }}</strong>
+                    <div class="m6-tally-table">
+                      <span>{{ displayColumns(activeProblemDisplay(problem))[0] || 'Category' }}</span>
+                      <span>{{ displayColumns(activeProblemDisplay(problem))[1] || 'Count' }}</span>
+                      <ng-container *ngFor="let category of displayCategories(activeProblemDisplay(problem))">
+                        <b>{{ category }}</b>
+                        <em>class survey count varies</em>
+                      </ng-container>
+                    </div>
+                    <small>{{ activeProblemDisplay(problem)?.keyLabel }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'ruler'" class="m6-display-card m6-ruler-card">
+                    <strong>{{ activeProblemDisplay(problem)?.title }}</strong>
+                    <div class="m6-ruler">
+                      <span *ngFor="let tick of displayTicks(activeProblemDisplay(problem))">{{ tick }}</span>
+                    </div>
+                    <small>{{ activeProblemDisplay(problem)?.note }}</small>
+                  </div>
+
+                  <div *ngSwitchDefault class="m6-display-card m6-data-table-card">
+                    <strong>{{ activeProblemDisplay(problem)?.title }}</strong>
+                    <table>
+                      <tbody>
+                        <tr *ngFor="let item of displayValues(activeProblemDisplay(problem))">
+                          <th>{{ item.label }}</th>
+                          <td>{{ item.valueLabel || item.value || 'varies' }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <small>{{ activeProblemDisplay(problem)?.note }}</small>
+                  </div>
+                </div>
+
+                <div class="ps-quotient-label" *ngIf="!hasProblemSourcePages(problem)">
+                  <strong>Answer meaning</strong>
                   <span>{{ problem.quotientMeaning }}</span>
                 </div>
               </div>
 
-              <div class="problem-explanation-card">
+              <div class="problem-explanation-card" *ngIf="!hasProblemSourcePages(problem); else sourcePageSolvedEvidence">
                 <div class="equation-list">
                   <span *ngFor="let equation of problem.equations">{{ equation }}</span>
                 </div>
@@ -318,6 +1056,20 @@
                   </ul>
                 </div>
               </div>
+              <ng-template #sourcePageSolvedEvidence>
+                <div class="problem-explanation-card source-page-evidence">
+                  <strong class="solved-answer">Official Teacher Edition answer key shown above</strong>
+                  <p>Use the visible Teacher Edition Answer Key page for the exact solved work, diagram evidence, labels, and response values. Do not replace it with a parallel problem or a generated scaffold.</p>
+                  <div class="validation-list">
+                    <strong>Validate the work</strong>
+                    <ul>
+                      <li>The blank view matches the official Module 7 Teacher Edition Problem Set page.</li>
+                      <li>The solved view matches the official Module 7 Teacher Edition Answer Key page.</li>
+                      <li>No generic answer placeholder or invented diagram should appear for this source-backed item.</li>
+                    </ul>
+                  </div>
+                </div>
+              </ng-template>
             </div>
             </ng-template>
           </article>
@@ -332,16 +1084,16 @@
 
           <section class="summary-check-grid" [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' validation checklist'">
             <article>
-              <strong>1. Name the quantities</strong>
-              <span>Identify the groups, row size, total, or story parts before solving.</span>
+              <strong>{{ problemLessonUsesTeacherActivity(problemLesson) ? '1. Use the Teacher Edition activity' : hasProblemSetSourcePages(problemLesson) ? '1. Use the Teacher Edition problem set' : '1. Use the official source prompt' }}</strong>
+              <span>{{ problemLessonUsesTeacherActivity(problemLesson) ? 'Check the activity steps, materials, labels, and challenge units against the official Teacher Edition reference.' : hasProblemSetSourcePages(problemLesson) ? 'Check the prompt, diagram, labels, and blanks against the official Teacher Edition reference.' : 'Check the prompt, diagram, labels, and blanks against the official source reference.' }}</span>
             </article>
             <article>
-              <strong>2. Match the model</strong>
-              <span>The drawing, tape diagram, array, or equation must use the same quantities as the official problem.</span>
+              <strong>2. Match the lesson strategy</strong>
+              <span>Use the Teacher Edition objective and debrief focus to validate the reasoning.</span>
             </article>
             <article>
-              <strong>3. Say what the answer means</strong>
-              <span>The answer is not complete until it names the correct unit in context.</span>
+              <strong>3. Avoid unsupported models</strong>
+              <span>Use an authored model only when the quantities and structure are clear from the source.</span>
             </article>
           </section>
 
@@ -350,8 +1102,14 @@
             <div>
               <article *ngFor="let problem of problemLesson.problems">
                 <span>Problem {{ problem.number }}</span>
-                <strong>{{ problem.solvedAnswer }}</strong>
-                <p>{{ problem.quotientMeaning }}</p>
+                <ng-container *ngIf="!hasProblemSourcePages(problem); else sourcePageSummaryEvidence">
+                  <strong>{{ problem.solvedAnswer }}</strong>
+                  <p>{{ problem.quotientMeaning }}</p>
+                </ng-container>
+                <ng-template #sourcePageSummaryEvidence>
+                  <strong>Official Teacher Edition source</strong>
+                  <p>Use the Problem Set page in Blank mode and the Answer Key page in Solved mode.</p>
+                </ng-template>
               </article>
             </div>
           </section>

@@ -55,7 +55,7 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Find the perimeter of the following shapes. 8 in 4 cm a. b. 4 cm 4 cm 3 in 3 in 4 cm 8 in P = 3 in + 8 in + 3 in + 8 in P = ____ cm + ____ cm + ____ cm + ____ cm = ____ in = ____ cm c. d. 5m 11 cm 6 cm 9m 7m 15 m 9 cm P = ____ m + ____ m + ____ m + ____ m P = ____ cm + ____ cm + ____ cm = ____ m = ____ cm 9 in e. 2 in 3 in P = ____ in + ____ in + ____ in + ____ in + ____ in 2 in = ____ in 9 in Problem 2: Alan's rectangular swimming pool is 10 meters long and 16 meters wide. What is the perimeter? 16 m 10 m 10 m 16 m Problem 3: Lila measures each side of the shape below. 3 in 2 in 6 in 4 in 9 in a. What is the perimeter of the shape? b. Lila says the shape is a pentagon. Is she correct? Explain why or why not.",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 13 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 13 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -95,7 +95,7 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 13 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 13 Problem Set."
       }
     ],
     "source-model": [
@@ -109,7 +109,7 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 13 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 13 Problem Set."
       }
     ],
     "source-meaning": [
@@ -123,13 +123,13 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 13 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 13 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 13 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 13 Problem Set."
       },
       {
         label: "Source text",
@@ -137,7 +137,7 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 13 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 13 Problem Set."
       }
     ],
     "source-draw": [
@@ -151,7 +151,7 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 13 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 13 Problem Set."
       }
     ],
     "source-exit": [
@@ -165,7 +165,7 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 13 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 13 Problem Set."
       }
     ],
     "source-summary": [
@@ -179,7 +179,7 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 13 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 13 Problem Set."
       }
     ]
   }

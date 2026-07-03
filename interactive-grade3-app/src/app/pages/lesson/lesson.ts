@@ -12,7 +12,15 @@ import {
   ArrayDecompositionLessonModel,
   LessonAnimationModel,
   LessonRuntimeConfig,
+  ProblemSetCenteredLesson,
   ProblemSetCenteredProblem,
+  ProblemSetConcreteFractionModel,
+  ProblemSetConcreteFractionItem,
+  ProblemSetFractionModel,
+  ProblemSetNumberLineModel,
+  ProblemSetPaperPartitionModel,
+  ProblemSetDataDisplay,
+  DataDisplayPoint,
   SourceWorkspaceModel
 } from '../../data/lessons/lesson-runtime.types';
 import { ArrayDecomposerComponent } from '../../shared/array-decomposer/array-decomposer';
@@ -403,9 +411,57 @@ export class LessonPage implements OnInit {
     return this.activeLessonRuntime?.problemSetCenteredLesson;
   }
 
+  problemSetSourcePageImages(problemLesson: ProblemSetCenteredLesson): string[] {
+    if (this.problemSetMode === 'solved') {
+      return problemLesson.solvedSourcePageImages ?? problemLesson.sourcePageImages ?? [];
+    }
+    return problemLesson.blankSourcePageImages ?? problemLesson.sourcePageImages ?? [];
+  }
+
+  hasProblemSetSourcePages(problemLesson: ProblemSetCenteredLesson): boolean {
+    return this.problemSetSourcePageImages(problemLesson).length > 0;
+  }
+
+  conceptSourcePageImages(problemLesson: ProblemSetCenteredLesson): string[] {
+    return problemLesson.blankSourcePageImages
+      ?? problemLesson.sourcePageImages
+      ?? problemLesson.solvedSourcePageImages
+      ?? [];
+  }
+
+  problemSourcePageImages(problem: ProblemSetCenteredProblem): string[] {
+    if (this.problemSetMode === 'solved') {
+      return problem.solvedSourcePageImages ?? problem.sourcePageImages ?? [];
+    }
+    return problem.blankSourcePageImages ?? problem.sourcePageImages ?? [];
+  }
+
+  hasProblemSourcePages(problem: ProblemSetCenteredProblem): boolean {
+    return this.problemSourcePageImages(problem).length > 0;
+  }
+
+  problemSetSourcePageHeading(): string {
+    return this.problemSetMode === 'solved'
+      ? 'Official Teacher Edition solved source'
+      : 'Official Teacher Edition Problem Set pages';
+  }
+
+  problemSetSourcePageSourceNote(problemLesson: ProblemSetCenteredLesson): string {
+    return this.problemSetMode === 'solved'
+      ? problemLesson.teacherEditionBasis
+      : problemLesson.sourceNote;
+  }
+
+  problemSetSourcePageAriaLabel(): string {
+    return this.problemSetMode === 'solved'
+      ? 'Official Teacher Edition solved Problem Set source pages'
+      : 'Official Teacher Edition Problem Set pages';
+  }
+
   lessonPageClasses(): Record<string, boolean> {
     return {
-      'lesson-m1-l12': this.module?.id === 'm1' && this.lesson?.lessonNumber === 12
+      'lesson-m1-l12': this.module?.id === 'm1' && this.lesson?.lessonNumber === 12,
+      'lesson-m6-problem-centered': this.module?.id === 'm6'
     };
   }
 
@@ -526,6 +582,348 @@ export class LessonPage implements OnInit {
     return this.countSlots(this.problemArrayRows(problem) * this.problemArrayColumns(problem), 80);
   }
 
+  problemDecomposeParts(problem: ProblemSetCenteredProblem): Array<{ rows: number; columns: number; product: number; label: string }> {
+    const text = [problem.sourcePrompt, problem.solvedAnswer, ...(problem.equations ?? [])].join(' ');
+    const lower = text.toLowerCase();
+    const columns = this.problemArrayColumns(problem);
+
+    const unitPartsMatch = text.match(/(\d+)\s+tens?\s*\+\s*(\d+)\s+tens?/i);
+    if (unitPartsMatch) {
+      return [unitPartsMatch[1], unitPartsMatch[2]].map((value) => {
+        const rows = this.toReasonableCount(value, 1);
+        const product = rows * 10;
+        return { rows, columns: 10, product, label: `${rows} x 10 = ${product}` };
+      });
+    }
+
+    const sumFactMatch = text.match(/(\d+)\s*[×x]\s*(\d+)\s*=\s*(\d+)\s*([+-])\s*(\d+)/i);
+    if (sumFactMatch && sumFactMatch[4] === '+') {
+      const factColumns = this.toReasonableCount(sumFactMatch[2], columns);
+      const products = [Number.parseInt(sumFactMatch[3] ?? '', 10), Number.parseInt(sumFactMatch[5] ?? '', 10)];
+      const parts = products
+        .filter((product) => Number.isFinite(product) && product > 0 && product % factColumns === 0)
+        .map((product) => {
+          const rows = Math.max(1, Math.min(product / factColumns, 12));
+          return { rows, columns: factColumns, product, label: `${rows} x ${factColumns} = ${product}` };
+        });
+      if (parts.length === 2) {
+        return parts;
+      }
+    }
+
+    const explicitParts = (problem.equations ?? [])
+      .map((equation) => equation.match(/(\d+)\s*[×x]\s*(\d+)\s*=\s*(\d+)/i))
+      .filter((match): match is RegExpMatchArray => Boolean(match))
+      .map((match) => {
+        const rows = this.toReasonableCount(match[1], this.problemArrayRows(problem));
+        const columns = this.toReasonableCount(match[2], this.problemArrayColumns(problem));
+        const parsedProduct = Number.parseInt(match[3] ?? '', 10);
+        const product = Number.isFinite(parsedProduct) ? parsedProduct : rows * columns;
+        return {
+          rows,
+          columns,
+          product,
+          label: `${rows} x ${columns} = ${product}`
+        };
+      })
+      .filter((part) => part.rows * part.columns === part.product)
+      .slice(0, 2);
+
+    if (explicitParts.length >= 2) {
+      return explicitParts;
+    }
+
+    if (lower.includes('divided by') || lower.includes('division')) {
+      return [];
+    }
+
+    const totalRows = this.problemArrayRows(problem);
+    const firstRows = Math.max(1, Math.min(totalRows - 1, Math.ceil(totalRows / 2)));
+    const secondRows = Math.max(1, totalRows - firstRows);
+    return [
+      { rows: firstRows, columns, product: firstRows * columns, label: `${firstRows} x ${columns} = ${firstRows * columns}` },
+      { rows: secondRows, columns, product: secondRows * columns, label: `${secondRows} x ${columns} = ${secondRows * columns}` }
+    ];
+  }
+
+  problemDecomposeSlots(part: { rows: number; columns: number }): number[] {
+    return this.countSlots(part.rows * part.columns, 80);
+  }
+
+  areaModelSlots(areaModel: { rows: number; columns: number }): number[] {
+    return this.countSlots(areaModel.rows * areaModel.columns, 120);
+  }
+
+  patternBlockSlots(count: number): number[] {
+    return this.countSlots(count, 24);
+  }
+
+  problemFractionPartSlots(problem: ProblemSetCenteredProblem): number[] {
+    return this.countSlots(problem.knownGroupCount ?? problem.knownGroupSize ?? 4, 12);
+  }
+
+  fractionModelPartSlots(model: ProblemSetFractionModel): number[] {
+    return this.countSlots(model.denominator, 12);
+  }
+
+  fractionModelLabel(model: ProblemSetFractionModel): string {
+    return `${model.numerator}/${model.denominator}`;
+  }
+
+  problemFractionShadedCount(problem: ProblemSetCenteredProblem): number {
+    return Math.max(0, Math.min(problem.quotient ?? 1, this.problemFractionPartSlots(problem).length));
+  }
+
+  concreteFractionModel(problem: ProblemSetCenteredProblem): ProblemSetConcreteFractionModel | undefined {
+    return problem.concreteFractionModel;
+  }
+
+  concreteFractionItems(problem: ProblemSetCenteredProblem): ProblemSetConcreteFractionItem[] {
+    return this.concreteFractionModel(problem)?.items ?? [];
+  }
+
+  concreteFractionSegments(item: ProblemSetConcreteFractionItem): number[] {
+    return this.countSlots(item.denominator ?? item.blankDenominator ?? 1, 24);
+  }
+
+  concreteFractionLineGuides(item: ProblemSetConcreteFractionItem): Array<{ index: number; left: number }> {
+    const visibleLineCount = this.problemSetMode === 'blank'
+      ? item.blankLineCount ?? item.lineCount
+      : item.lineCount;
+    const lineCount = Math.max(0, Math.min(visibleLineCount ?? Math.max((item.denominator ?? 1) - 1, 0), 24));
+    const denominator = Math.max(1, item.denominator ?? lineCount + 1);
+    return Array.from({ length: lineCount }, (_, index) => ({
+      index,
+      left: ((index + 1) / denominator) * 100
+    }));
+  }
+
+  concreteFractionVisibleNumerator(item: ProblemSetConcreteFractionItem): number {
+    const fallback = item.numerator ?? 0;
+    return this.problemSetMode === 'blank'
+      ? Math.max(0, item.blankNumerator ?? fallback)
+      : Math.max(0, fallback);
+  }
+
+  concreteFractionVisibleDenominator(item: ProblemSetConcreteFractionItem): number {
+    const fallback = item.denominator ?? 1;
+    return Math.max(1, this.problemSetMode === 'blank'
+      ? item.blankDenominator ?? fallback
+      : fallback);
+  }
+
+  concreteFractionFillPercent(item: ProblemSetConcreteFractionItem): number {
+    const numerator = this.concreteFractionVisibleNumerator(item);
+    const denominator = this.concreteFractionVisibleDenominator(item);
+    return Math.max(0, Math.min((numerator / denominator) * 100, 100));
+  }
+
+  concreteFractionAnswer(item: ProblemSetConcreteFractionItem): string {
+    const numerator = item.numerator ?? 0;
+    const denominator = Math.max(1, item.denominator ?? 1);
+    return `${numerator}/${denominator}`;
+  }
+
+  measuredStripParts(problem: ProblemSetCenteredProblem): number[] {
+    const model = this.concreteFractionModel(problem);
+    const totalLength = Math.max(1, model?.totalLength ?? 1);
+    const pieceLength = Math.max(1, model?.pieceLength ?? totalLength);
+    const parts = Math.max(1, Math.min(Math.round(totalLength / pieceLength), 24));
+    return Array.from({ length: parts }, (_, index) => index);
+  }
+
+  measuredStripTicks(problem: ProblemSetCenteredProblem): number[] {
+    const totalLength = Math.max(1, Math.min(this.concreteFractionModel(problem)?.totalLength ?? 12, 24));
+    return Array.from({ length: totalLength + 1 }, (_, index) => index);
+  }
+
+  measuredStripGuides(problem: ProblemSetCenteredProblem): Array<{ index: number; left: number; label: string }> {
+    const model = this.concreteFractionModel(problem);
+    const totalLength = Math.max(1, model?.totalLength ?? 1);
+    const pieceLength = Math.max(1, model?.pieceLength ?? totalLength);
+    const parts = Math.max(1, Math.min(Math.round(totalLength / pieceLength), 24));
+    if (this.problemSetMode === 'blank') {
+      return [
+        { index: 0, left: 0, label: '0' },
+        { index: parts, left: 100, label: `${totalLength}` }
+      ];
+    }
+    return Array.from({ length: parts + 1 }, (_, index) => ({
+      index,
+      left: (index / parts) * 100,
+      label: index === parts ? `${totalLength}` : `${index * pieceLength}`
+    }));
+  }
+
+  problemNumberLineTicks(problem: ProblemSetCenteredProblem): number[] {
+    const intervalCount = Math.max(1, Math.min(problem.knownGroupCount ?? problem.knownGroupSize ?? 4, 12));
+    return Array.from({ length: intervalCount + 1 }, (_, index) => index);
+  }
+
+  numberLineModelTicks(model: ProblemSetNumberLineModel): number[] {
+    if (model.tickLabels?.length) {
+      return Array.from({ length: Math.min(model.tickLabels.length, 13) }, (_, index) => index);
+    }
+    const intervalCount = Math.max(1, Math.min(model.denominator, 12));
+    return Array.from({ length: intervalCount + 1 }, (_, index) => index);
+  }
+
+  numberLineModelTarget(model: ProblemSetNumberLineModel, tickIndex: number): boolean {
+    return model.targetNumerators?.includes(tickIndex) ?? tickIndex === model.denominator;
+  }
+
+  numberLineModelLabel(model: ProblemSetNumberLineModel, tickIndex: number): string {
+    const tickLabel = model.tickLabels?.[tickIndex];
+    if (tickLabel) {
+      return tickLabel;
+    }
+    if (tickIndex === 0) {
+      return model.startLabel ?? `0/${model.denominator}`;
+    }
+    if (tickIndex === model.denominator) {
+      return model.endLabel ?? `${model.denominator}/${model.denominator}`;
+    }
+    return `${tickIndex}/${model.denominator}`;
+  }
+
+  paperPartitionModel(problem: ProblemSetCenteredProblem): ProblemSetPaperPartitionModel | undefined {
+    return problem.paperPartitionModel;
+  }
+
+  paperPartitionSpaceTicks(problem: ProblemSetCenteredProblem): number[] {
+    const model = this.paperPartitionModel(problem);
+    const totalSpaces = Math.max(1, Math.min((model?.paperSpacesPerUnit ?? 5) * (model?.denominator ?? 3), 60));
+    return Array.from({ length: totalSpaces + 1 }, (_, index) => index);
+  }
+
+  paperPartitionGuides(problem: ProblemSetCenteredProblem): Array<{ index: number; label: string; left: number }> {
+    const denominator = Math.max(1, Math.min(this.paperPartitionModel(problem)?.denominator ?? 3, 12));
+    return Array.from({ length: denominator + 1 }, (_, index) => ({
+      index,
+      label: this.paperPartitionLabel(index, denominator),
+      left: denominator === 0 ? 0 : (index / denominator) * 100
+    }));
+  }
+
+  paperPartitionInteriorGuides(problem: ProblemSetCenteredProblem): Array<{ index: number; label: string; left: number }> {
+    return this.paperPartitionGuides(problem).filter((guide) => guide.index > 0 && guide.index < (this.paperPartitionModel(problem)?.denominator ?? 3));
+  }
+
+  paperPartitionChallengeUnits(problem: ProblemSetCenteredProblem): string[] {
+    return this.paperPartitionModel(problem)?.challengeUnits ?? [];
+  }
+
+  problemLessonUsesTeacherActivity(problemLesson: ProblemSetCenteredLesson): boolean {
+    return problemLesson.problems.some((problem) => !!problem.paperPartitionModel);
+  }
+
+  private paperPartitionLabel(index: number, denominator: number): string {
+    if (index === 0) {
+      return '0';
+    }
+    if (index === denominator) {
+      return '1';
+    }
+    return `${index}/${denominator}`;
+  }
+
+  problemNumberLineLabel(problem: ProblemSetCenteredProblem, tickIndex: number): string {
+    const denominator = Math.max(1, Math.min(problem.knownGroupCount ?? problem.knownGroupSize ?? 4, 12));
+    if (tickIndex === 0) {
+      return '0';
+    }
+    if (tickIndex === denominator) {
+      return '1';
+    }
+    return `${tickIndex}/${denominator}`;
+  }
+
+  activeProblemDisplay(problem: ProblemSetCenteredProblem): ProblemSetDataDisplay | undefined {
+    return this.problemSetMode === 'solved'
+      ? problem.solvedDataDisplay ?? problem.dataDisplay
+      : problem.dataDisplay;
+  }
+
+  displayCategories(display?: ProblemSetDataDisplay): string[] {
+    if (!display) {
+      return [];
+    }
+    return display.categories ?? display.values?.map((item) => item.label) ?? display.ticks ?? [];
+  }
+
+  displayValues(display?: ProblemSetDataDisplay): DataDisplayPoint[] {
+    return display?.values ?? [];
+  }
+
+  displayRows(display?: ProblemSetDataDisplay): string[][] {
+    return display?.rows ?? [];
+  }
+
+  displayColumns(display?: ProblemSetDataDisplay): string[] {
+    return display?.columns ?? [];
+  }
+
+  displayTicks(display?: ProblemSetDataDisplay): string[] {
+    return display?.ticks ?? [];
+  }
+
+  displaySourceData(display?: ProblemSetDataDisplay): string[] {
+    return display?.sourceData ?? [];
+  }
+
+  displaySourceDataRows(display?: ProblemSetDataDisplay): string[][] {
+    return display?.sourceDataRows ?? [];
+  }
+
+  displayMaxValue(display?: ProblemSetDataDisplay): number {
+    if (display?.maxValue) {
+      return display.maxValue;
+    }
+    const values = display?.values?.map((item) => item.value ?? 0) ?? [1];
+    return Math.max(1, ...values);
+  }
+
+  displayBarPercent(display: ProblemSetDataDisplay | undefined, value?: number): number {
+    if (value === undefined || !display) {
+      return 0;
+    }
+    return Math.max(0, Math.min(100, (value / this.displayMaxValue(display)) * 100));
+  }
+
+  displayCountSlots(count?: number): number[] {
+    if (!count || count <= 0) {
+      return [];
+    }
+    return this.countSlots(count, 24);
+  }
+
+  displayBlankLinePlotSlots(item: DataDisplayPoint, display?: ProblemSetDataDisplay): number[] {
+    if (!display?.showBlankValues) {
+      return [];
+    }
+    return this.displayCountSlots(item.value);
+  }
+
+  displayPictureSymbols(item: DataDisplayPoint, display?: ProblemSetDataDisplay): number[] {
+    const unitSize = display?.unitSize ?? 1;
+    const value = item.value ?? 0;
+    const symbolCount = Math.round(value / unitSize);
+    if (symbolCount <= 0) {
+      return [];
+    }
+    return this.countSlots(symbolCount, 24);
+  }
+
+  displayVerticalUnits(item: DataDisplayPoint, display?: ProblemSetDataDisplay): number[] {
+    const unitSize = display?.unitSize ?? 1;
+    const value = item.value ?? 0;
+    const unitCount = Math.round(value / unitSize);
+    if (unitCount <= 0) {
+      return [];
+    }
+    return this.countSlots(unitCount, 16);
+  }
+
   problemShareLabel(problem: ProblemSetCenteredProblem, index: number): string {
     return problem.shareLabels?.[index] ?? `${problem.groupLabel.slice(0, -1) || 'part'} ${index + 1}`;
   }
@@ -542,6 +940,12 @@ export class LessonPage implements OnInit {
     return `${moduleId}-l${lessonNumber}-problem-${problemNumber}`;
   }
 
+  problemHref(problemNumber: number): string {
+    const moduleId = this.module?.id ?? 'module';
+    const lessonNumber = this.lesson?.lessonNumber ?? 0;
+    return `/ruchika-grade3/modules/${moduleId}/lessons/${lessonNumber}#${this.problemDomId(problemNumber)}`;
+  }
+
   showProblemSection(section: 'concept' | 'problem-set' | 'summary'): void {
     this.activeProblemSection = section;
   }
@@ -550,7 +954,8 @@ export class LessonPage implements OnInit {
     this.problemSetMode = mode;
   }
 
-  scrollToProblem(problemNumber: number): void {
+  scrollToProblem(problemNumber: number, event?: Event): void {
+    event?.preventDefault();
     const target = document.getElementById(this.problemDomId(problemNumber));
     target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }

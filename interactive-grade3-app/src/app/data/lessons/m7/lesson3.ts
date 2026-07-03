@@ -57,7 +57,7 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Monica measures 91 milliliters of water into 9 tiny beakers. She measures an equal amount of water into the first 8 beakers. She pours the remaining water into the ninth beaker. It measures 19 milliliters. How many milliliters of water are in each of the first 8 beakers? Problem 2: Matthew and his dad put up 8 six-foot lengths of fence on Monday and 9 six-foot lengths on Tuesday. What is the total length of the fence? Problem 3: The total weight of Laura's new pencils is 112 grams. One pencil rolls off the scale. Now the scale reads 105 grams. What is the total weight of 7 new pencils?",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 3 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 3 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -97,7 +97,7 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 3 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 3 Problem Set."
       }
     ],
     "source-model": [
@@ -111,7 +111,7 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 3 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 3 Problem Set."
       }
     ],
     "source-meaning": [
@@ -125,13 +125,13 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 3 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 3 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 3 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 3 Problem Set."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 3 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 3 Problem Set."
       }
     ],
     "source-draw": [
@@ -153,7 +153,7 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 3 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 3 Problem Set."
       }
     ],
     "source-exit": [
@@ -167,7 +167,7 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 3 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 3 Problem Set."
       }
     ],
     "source-summary": [
@@ -181,7 +181,7 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 3 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 3 Problem Set."
       }
     ]
   }

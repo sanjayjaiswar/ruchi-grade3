@@ -87,8 +87,17 @@ export type ProblemSetAnimationType =
   | 'tape-split'
   | 'fact-match'
   | 'array-model'
+  | 'area-models'
+  | 'pattern-block-cover'
+  | 'floor-plan-model'
   | 'decompose-array'
-  | 'two-step-model';
+  | 'two-step-model'
+  | 'fraction-strip-model'
+  | 'number-line-model'
+  | 'fraction-concrete-model'
+  | 'paper-partition-model'
+  | 'clock-model'
+  | 'data-display-model';
 
 export type ProblemSetBlankVisualType =
   | 'object-bank'
@@ -98,8 +107,48 @@ export type ProblemSetBlankVisualType =
   | 'bar-units'
   | 'share-tape'
   | 'array-template'
+  | 'area-models-template'
+  | 'pattern-block-cover-template'
+  | 'floor-plan-template'
   | 'equation-workspace'
+  | 'fraction-strip-template'
+  | 'number-line-template'
+  | 'fraction-concrete-template'
+  | 'paper-partition-template'
+  | 'clock-workspace'
+  | 'data-table-template'
+  | 'tally-picture-graph-template'
+  | 'vertical-tape-display-template'
+  | 'bar-graph-template'
+  | 'ruler-template'
+  | 'line-plot-template'
   | 'open-workspace';
+
+export type DataDisplayPoint = {
+  label: string;
+  value?: number;
+  valueLabel?: string;
+};
+
+export type ProblemSetDataDisplay = {
+  kind: 'tally-picture' | 'vertical-tape' | 'bar-graph' | 'ruler' | 'line-plot' | 'picture-graph' | 'data-table';
+  title: string;
+  axisLabel?: string;
+  keyLabel?: string;
+  scaleLabel?: string;
+  categories?: string[];
+  values?: DataDisplayPoint[];
+  ticks?: string[];
+  maxValue?: number;
+  interval?: number;
+  unitSize?: number;
+  showBlankValues?: boolean;
+  sourceData?: string[];
+  sourceDataRows?: string[][];
+  rows?: string[][];
+  columns?: string[];
+  note?: string;
+};
 
 export type ProblemSetFactMatch = {
   dividend: number;
@@ -107,14 +156,94 @@ export type ProblemSetFactMatch = {
   quotient: number;
 };
 
+export type ProblemSetFractionModel = {
+  label: string;
+  numerator: number;
+  denominator: number;
+};
+
+export type ProblemSetNumberLineModel = {
+  label: string;
+  denominator: number;
+  startLabel?: string;
+  endLabel?: string;
+  tickLabels?: string[];
+  targetNumerators?: number[];
+};
+
+export type ProblemSetPaperPartitionModel = {
+  title: string;
+  denominator: number;
+  paperSpacesPerUnit: number;
+  stripLabel: string;
+  challengeUnits: string[];
+  steps: string[];
+};
+
+export type ProblemSetConcreteFractionItem = {
+  label: string;
+  numerator?: number;
+  denominator?: number;
+  blankNumerator?: number;
+  blankDenominator?: number;
+  lineCount?: number;
+  blankLineCount?: number;
+  unitName?: string;
+};
+
+export type ProblemSetConcreteFractionModel = {
+  kind: 'beaker-set' | 'string-cheese-bars' | 'partition-rectangles' | 'paper-sheets' | 'measured-strip';
+  title: string;
+  prompt: string;
+  items?: ProblemSetConcreteFractionItem[];
+  totalLength?: number;
+  pieceLength?: number;
+  unit?: string;
+  notice?: string;
+};
+
+export type ProblemSetAreaModel = {
+  label: string;
+  rows: number;
+  columns: number;
+  unitLabel?: string;
+  total?: number;
+};
+
+export type ProblemSetPatternBlockCover = {
+  unit: 'triangle' | 'rhombus' | 'trapezoid' | 'square';
+  targets: Array<{
+    label: string;
+    shape: 'parallelogram' | 'hexagon' | 'rectangle';
+    count: number;
+  }>;
+};
+
+export type ProblemSetRoomArea = {
+  label: string;
+  area: number;
+};
+
 export type ProblemSetCenteredProblem = {
   number: number;
   sourcePrompt: string;
+  sourcePageImages?: string[];
+  blankSourcePageImages?: string[];
+  solvedSourcePageImages?: string[];
+  fractionModels?: ProblemSetFractionModel[];
+  numberLineModels?: ProblemSetNumberLineModel[];
+  paperPartitionModel?: ProblemSetPaperPartitionModel;
+  concreteFractionModel?: ProblemSetConcreteFractionModel;
+  areaModels?: ProblemSetAreaModel[];
+  patternBlockCover?: ProblemSetPatternBlockCover;
+  roomAreas?: ProblemSetRoomArea[];
   blankPrompts?: string[];
   blankEquations?: string[];
   blankAnswerSentence?: string;
   blankWorkspaceLabel?: string;
   blankVisualType?: ProblemSetBlankVisualType;
+  dataDisplay?: ProblemSetDataDisplay;
+  solvedDataDisplay?: ProblemSetDataDisplay;
   solvedAnswer: string;
   equations: string[];
   knownTotal?: number;
@@ -145,6 +274,9 @@ export type ProblemSetCenteredLesson = {
   contrast: string;
   summary: string;
   sourceNote: string;
+  sourcePageImages?: string[];
+  blankSourcePageImages?: string[];
+  solvedSourcePageImages?: string[];
   conceptSections?: ProblemSetCenteredConceptSection[];
   problems: ProblemSetCenteredProblem[];
 };

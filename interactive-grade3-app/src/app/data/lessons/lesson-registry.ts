@@ -41,6 +41,7 @@ import { M2_LESSON18_RUNTIME } from './m2/lesson18';
 import { M2_LESSON19_RUNTIME } from './m2/lesson19';
 import { M2_LESSON20_RUNTIME } from './m2/lesson20';
 import { M2_LESSON21_RUNTIME } from './m2/lesson21';
+import { M2_PROBLEM_SET_CENTERED_LESSONS } from './m2/problem-set-centered';
 import { M3_LESSON1_RUNTIME } from './m3/lesson1';
 import { M3_LESSON2_RUNTIME } from './m3/lesson2';
 import { M3_LESSON3_RUNTIME } from './m3/lesson3';
@@ -62,6 +63,7 @@ import { M3_LESSON18_RUNTIME } from './m3/lesson18';
 import { M3_LESSON19_RUNTIME } from './m3/lesson19';
 import { M3_LESSON20_RUNTIME } from './m3/lesson20';
 import { M3_LESSON21_RUNTIME } from './m3/lesson21';
+import { M3_PROBLEM_SET_CENTERED_LESSONS } from './m3/problem-set-centered';
 import { M4_LESSON1_RUNTIME } from './m4/lesson1';
 import { M4_LESSON2_RUNTIME } from './m4/lesson2';
 import { M4_LESSON3_RUNTIME } from './m4/lesson3';
@@ -78,6 +80,7 @@ import { M4_LESSON13_RUNTIME } from './m4/lesson13';
 import { M4_LESSON14_RUNTIME } from './m4/lesson14';
 import { M4_LESSON15_RUNTIME } from './m4/lesson15';
 import { M4_LESSON16_RUNTIME } from './m4/lesson16';
+import { M4_PROBLEM_SET_CENTERED_LESSONS } from './m4/problem-set-centered';
 import { M5_LESSON1_RUNTIME } from './m5/lesson1';
 import { M5_LESSON2_RUNTIME } from './m5/lesson2';
 import { M5_LESSON3_RUNTIME } from './m5/lesson3';
@@ -108,6 +111,7 @@ import { M5_LESSON27_RUNTIME } from './m5/lesson27';
 import { M5_LESSON28_RUNTIME } from './m5/lesson28';
 import { M5_LESSON29_RUNTIME } from './m5/lesson29';
 import { M5_LESSON30_RUNTIME } from './m5/lesson30';
+import { M5_PROBLEM_SET_CENTERED_LESSONS } from './m5/problem-set-centered';
 import { M6_LESSON1_RUNTIME } from './m6/lesson1';
 import { M6_LESSON2_RUNTIME } from './m6/lesson2';
 import { M6_LESSON3_RUNTIME } from './m6/lesson3';
@@ -151,7 +155,10 @@ import { M7_LESSON31_RUNTIME } from './m7/lesson31';
 import { M7_LESSON32_RUNTIME } from './m7/lesson32';
 import { M7_LESSON33_RUNTIME } from './m7/lesson33';
 import { M7_LESSON34_RUNTIME } from './m7/lesson34';
-import type { LessonRuntimeConfig } from './lesson-runtime.types';
+import { M7_TEACHER_ANSWER_KEY } from './m7/answer-key';
+import { m7TeacherAnswerKeyImages, m7TeacherProblemSetImages } from './m7/source-pages';
+import { STUDENT_WORK_SOURCE } from '../student-work-source.generated';
+import type { LessonAnimationModel, LessonRuntimeConfig, ProblemSetCenteredLesson, ProblemSetDataDisplay } from './lesson-runtime.types';
 
 const LESSON_RUNTIME_BY_ID: Record<string, LessonRuntimeConfig> = {
   'm1-l1': M1_LESSON1_RUNTIME,
@@ -308,16 +315,613 @@ const LESSON_RUNTIME_BY_ID: Record<string, LessonRuntimeConfig> = {
   'm7-l34': M7_LESSON34_RUNTIME
 };
 
+const M6_OBJECTIVES: Record<number, string> = {
+  1: 'Generate and organize categorical data, then represent the data with tally charts and picture graphs.',
+  2: 'Rotate tape diagrams vertically and reason about unit size when displaying data.',
+  3: 'Draw scaled bar graphs and read comparison questions from the graph scale.',
+  4: 'Create scaled bar graphs from data tables and solve comparison problems from the graph.',
+  5: 'Create rulers with inch, half-inch, and quarter-inch intervals and use them to generate measurement data.',
+  6: 'Read and interpret line plots with halves and fourths as measurement intervals.',
+  7: 'Create a line plot from measurement data recorded to the nearest quarter inch.',
+  8: 'Use measurement data to create a line plot and interpret typical values.',
+  9: 'Represent and analyze data with picture graphs and line plots.'
+};
+
+const M6_VISUAL_FAMILY: Record<number, string> = {
+  1: 'tally chart and picture graph',
+  2: 'vertical tape diagram',
+  3: 'scaled bar graph',
+  4: 'scaled bar graph',
+  5: 'ruler and measurement table',
+  6: 'line plot',
+  7: 'quarter-inch line plot',
+  8: 'quarter-inch line plot',
+  9: 'picture graph and line plot'
+};
+
+const M6_SOLVED_NOTES: Record<string, string> = {
+  '1-4': 'Variable class survey answers. The Teacher Edition answer key shows how to use the key: each full symbol represents 2 students, half a symbol represents 1 student, and the final comparison answer depends on the class data.',
+  '2-1': 'Dana has 4 units of 4, Tanisha has 2 units of 4, Raquel has 6 units of 4, and Anna has 8 units of 4.',
+  '2-3': 'The 4-stamp display has 20 total units of 4; the 8-stamp display has 10 total units of 8. Mattaeus combines Anna and Raquel as 7 units of 8, so 7 x 8 = 56.',
+  '3-1': 'The table total is 56 students. Sports has 6 fewer students than chorus and baking combined.',
+  '3-2': 'Kyle saved $34 in May. February, April, and May are less than $35. June is $17 more than April because $40 - $23 = $17. April is half of March.',
+  '3-5': 'Use the Charlotte reading graph or number line to identify equal reading times and compare Wednesday to Friday.',
+  '4-2': 'The carnival graph comparison answers are 240 fewer visitors and 80 more visitors.',
+  '5-2': '1 inch equals 2 half inches, 1 inch equals 4 quarter inches, and 1 half inch equals 2 quarter inches.',
+  '5-3': '8 half inches equals 4 inches because two half inches make each inch.',
+  '6-1': 'There are 15 children; 6 are less than 53 inches tall; the answer key says No for 53 1/2 inches; 4 children are at least 54 inches tall.',
+  '7-1': 'Bean plant counts by quarter inch: 1 3/4 has 4, 2 has 2, 2 1/4 has 3, 2 1/2 has 3, 2 3/4 has 2, 3 has 3, and 3 1/4 has 3. At least 2 1/4 inches: 14; taller than 2 3/4 inches: 6; most frequent measurement is 1 3/4 inches with 4 plants.',
+  '8-1': 'Leaf-width counts by quarter inch: 5 1/2 has 1, 5 3/4 has 5, 6 has 8, 6 1/4 has 6, 6 1/2 has 4, and 6 3/4 has 1. The three most frequent measurements are 6, 6 1/4, and 5 3/4 inches.',
+  '9-1': 'Roxanne picked 24 apples. The picture graph key should make all table values representable.',
+  '9-2': 'Stewart and Roxanne picked 8 more apples than Philip and Trisha. Stewart and Trisha can make 4 pies.',
+  '9-3': 'There are 24 blades of grass. The line plot has one 2-inch blade and three 3 3/4-inch blades. The most frequent length is 2 3/4 inches with 6 blades, and the comparison answer is 2.'
+};
+
+const M6_SOURCE_PROMPT_OVERRIDES: Record<string, string> = {
+  '5-1': "Use the ruler you made to measure different classmates' straws to the nearest inch, 1/2 inch, and 1/4 inch. Record the measurements in the chart. Draw a star next to measurements that are exact. Then answer: a. Which straw is shortest, and how many inches does it measure? b. Which straw is longest, and how many inches does it measure? c. Choose the straw from your chart that was measured most accurately with the 1/4-inch intervals on your ruler. How do you know the 1/4-inch intervals are the most accurate for measuring this straw?",
+  '5-2': "Jenna marks a 5-inch paper strip into equal parts. a. Label the whole and half inches on the paper strip. b. Estimate to draw the 1/4-inch marks on the paper strip. Then fill in the blanks: 1 inch is equal to ___ half inches; 1 inch is equal to ___ quarter inches; 1 half inch is equal to ___ quarter inches. c. Describe how Jenna could use this paper strip to measure an object that is longer than 5 inches.",
+  '5-3': 'Sari says her pencil measures 8 half inches. Bart disagrees and says it measures 4 inches. Explain to Bart why the two measurements are the same. Use words, pictures, or numbers.',
+  '6-1': "Coach Harris measures the heights of the children on his third-grade basketball team in inches. The line plot is labeled 51, 51 1/2, 52, 52 1/2, 53, 53 1/2, 54, 54 1/2, and 55 inches, with X = 1 child. a. How many children are on the team? How do you know? b. How many children are less than 53 inches tall? c. Coach Harris says that the most common height for the children on his team is 53 1/2 inches. Is he right? Explain your answer. d. The player who does the tip-off has to be at least 54 inches tall. How many children could do the tip-off?",
+  '6-2': "Miss Vernier's class is studying worms. The line plot shows worm lengths at 3, 3 1/4, 3 2/4, 3 3/4, 4, 4 1/4, 4 2/4, 4 3/4, and 5 inches, with X = 1 worm. a. How many worms did the class measure? How do you know? b. Cara says that there are more worms 3 3/4 inches long than worms that are 3 2/4 inches and 4 1/4 inches long combined. Is she right? Explain your answer. c. Madeline finds a worm hiding under a leaf. She measures it, and it is 4 3/4 inches long. Plot the length of the worm on the line plot.",
+  '7-1': "Mrs. Weisse's class grows beans for a science experiment. The students measure the heights of their bean plants to the nearest 1/4 inch and record the measurements shown below. a. Use the data to complete the line plot below. b. How many bean plants are at least 2 1/4 inches tall? c. How many bean plants are taller than 2 3/4 inches? d. What is the most frequent measurement? How many bean plants were plotted for this measurement? e. George says that most of the bean plants are at least 3 inches tall. Is he right? Explain your answer. f. Savannah was absent the day the class measured the heights of their bean plants. When she returns, her plant measures 2 2/4 inches tall. Can Savannah plot the height of her bean plant on the class line plot? Why or why not?",
+  '8-1': "Delilah stops under a silver maple tree and collects leaves. At home, she measures the widths of the leaves to the nearest 1/4 inch and records the measurements shown below. a. Use the data to create a line plot below. b. Explain the steps you took to create the line plot. c. How many more leaves were 6 inches wide than 6 1/2 inches wide? d. Find the three most frequent measurements on the line plot. What does this tell you about the typical width of a silver maple tree leaf?",
+  '9-2': 'Use the chart or graph to answer the following questions. a. How many more apples did Stewart and Roxanne pick than Philip and Trisha? b. Trisha and Stewart combine their apples to make apple pies. Each pie takes 7 apples. How many pies can they make?',
+  '9-3': "Ms. Pacho's science class measured the lengths of blades of grass from their school field to the nearest 1/4 inch. The lengths are shown below. a. Make a line plot of the grass data. Explain your choice of scale. b. How many blades of grass were measured? Explain how you know. c. What was the length measured most frequently on the line plot? How many blades of grass had this length? d. How many more blades of grass measured 2 3/4 inches than both 3 3/4 inches and 2 inches combined?"
+};
+
+const M6_DISPLAY_ROWS: Record<string, string[][]> = {
+  '3-1': [['Baking', '9'], ['Sports', '16'], ['Chorus', '13'], ['Drama', '18']],
+  '4-1': [['Ben', '300'], ['Rachel', '250'], ['Jeff', '100'], ['Stanley', '450'], ['Debbie', '600']],
+  '9-1': [['Stewart', '16'], ['Roxanne', '____'], ['Trisha', '12'], ['Philip', '20'], ['Total', '72']]
+};
+
+function m6DataValues(labels: string[], counts: number[]): string[] {
+  return labels.flatMap((label, index) => Array.from({ length: counts[index] ?? 0 }, () => label));
+}
+
+function m6LinePlot(title: string, labels: string[], counts?: number[], keyLabel = 'X = 1 item', options: Partial<ProblemSetDataDisplay> = {}) {
+  return {
+    kind: 'line-plot' as const,
+    title,
+    values: labels.map((label, index) => ({ label, value: counts?.[index] ?? 0 })),
+    keyLabel,
+    ...options
+  };
+}
+
+function m6BarGraph(title: string, values: Array<{ label: string; value: number }>, maxValue: number, scaleLabel: string) {
+  return {
+    kind: 'bar-graph' as const,
+    title,
+    values,
+    maxValue,
+    scaleLabel
+  };
+}
+
+function m6ProblemDisplay(lessonNumber: number, problemNumber: number) {
+  const key = `${lessonNumber}-${problemNumber}`;
+  if (lessonNumber === 1) {
+    return {
+      kind: problemNumber === 3 || problemNumber === 4 ? 'picture-graph' as const : 'tally-picture' as const,
+      title: 'Favorite Colors',
+      columns: ['Color', 'Number of Students'],
+      categories: ['Green', 'Yellow', 'Red', 'Blue', 'Orange'],
+      keyLabel: problemNumber === 3 || problemNumber === 4 ? 'Each symbol represents 1 student in 3(a) or 2 students in 3(b).' : 'Survey data varies by class.'
+    };
+  }
+  if (lessonNumber === 2) {
+    return {
+      kind: 'vertical-tape' as const,
+      title: 'Stamps by Student',
+      values: [
+        { label: 'Dana', value: 16 },
+        { label: 'Tanisha', value: problemNumber === 1 ? 0 : 8 },
+        { label: 'Raquel', value: problemNumber === 1 ? 0 : 24 },
+        { label: 'Anna', value: problemNumber === 1 ? 0 : 32 }
+      ],
+      unitSize: problemNumber === 3 ? 8 : 4,
+      scaleLabel: problemNumber === 3 ? 'Each unit is 8 stamps in Problem 3(b).' : 'Each unit is 4 stamps.'
+    };
+  }
+  if (key === '3-1') {
+    return { kind: 'data-table' as const, title: 'Number of Students in Each Class', columns: ['Class', 'Number of Students'], rows: M6_DISPLAY_ROWS[key], note: 'Color the bar graph using the table values.' };
+  }
+  if (key === '3-2' || key === '3-3') {
+    return m6BarGraph('Kyle’s Savings', [
+      { label: 'February', value: 30 },
+      { label: 'March', value: 46 },
+      { label: 'April', value: 23 },
+      { label: 'May', value: 34 },
+      { label: 'June', value: 40 }
+    ], 50, 'Scale: dollars from 0 to 50 by 5.');
+  }
+  if (key === '3-4' || key === '3-5') {
+    return m6BarGraph('Charlotte’s Reading Minutes', [
+      { label: 'Monday', value: 50 },
+      { label: 'Tuesday', value: 50 },
+      { label: 'Wednesday', value: 70 },
+      { label: 'Thursday', value: 50 },
+      { label: 'Friday', value: 40 }
+    ], 70, 'Scale: minutes from 0 to 70 by 10.');
+  }
+  if (key === '4-1') {
+    return { kind: 'data-table' as const, title: 'Number of Magazines Sold by Third-Grade Students', columns: ['Student', 'Magazines Sold'], rows: M6_DISPLAY_ROWS[key], note: 'Choose a scale that can show values from 100 to 600.' };
+  }
+  if (key === '4-2') {
+    return m6BarGraph('Carnival Visitors', [
+      { label: 'Monday', value: 340 },
+      { label: 'Tuesday', value: 300 },
+      { label: 'Wednesday', value: 430 },
+      { label: 'Thursday', value: 190 },
+      { label: 'Friday', value: 370 }
+    ], 500, 'Scale: visitors from 0 to 500 by 50; minor tick marks show tens.');
+  }
+  if (lessonNumber === 5) {
+    return {
+      kind: 'ruler' as const,
+      title: problemNumber === 1 ? 'Measurement Chart and Ruler Intervals' : 'Jenna’s 5-inch Paper Strip',
+      ticks: ['0', '1/4', '1/2', '3/4', '1', '1 1/4', '1 1/2', '1 3/4', '2', '2 1/4', '2 1/2', '2 3/4', '3', '3 1/4', '3 1/2', '3 3/4', '4', '4 1/4', '4 1/2', '4 3/4', '5'],
+      note: 'Whole inches, half inches, and quarter inches are marked on the same 5-inch strip.'
+    };
+  }
+  if (key === '6-1') {
+    return m6LinePlot('Heights of Children on Third-Grade Basketball Team', ['51', '51 1/2', '52', '52 1/2', '53', '53 1/2', '54', '54 1/2', '55'], [2, 0, 3, 1, 2, 3, 1, 2, 1], 'X = 1 child', {
+      showBlankValues: true,
+      note: 'This line plot is given in the official Problem Set.'
+    });
+  }
+  if (key === '6-2') {
+    return m6LinePlot('Lengths of Worms', ['3', '3 1/4', '3 2/4', '3 3/4', '4', '4 1/4', '4 2/4', '4 3/4', '5'], [1, 2, 4, 6, 8, 4, 3, 0, 2], 'X = 1 worm', {
+      showBlankValues: true,
+      note: 'This line plot is given in the official Problem Set.'
+    });
+  }
+  if (lessonNumber === 7) {
+    const labels = ['1 3/4', '2', '2 1/4', '2 1/2', '2 3/4', '3', '3 1/4'];
+    const counts = [4, 2, 3, 3, 2, 3, 3];
+    return m6LinePlot('Heights of Bean Plants', labels, problemNumber === 1 ? counts : undefined, 'X = 1 bean plant', {
+      sourceData: m6DataValues(labels, counts),
+      sourceDataRows: [
+        ['2 1/4', '2 3/4', '3 1/4', '1 3/4', '1 3/4'],
+        ['1 3/4', '3', '2 1/2', '3 1/4', '2 1/2'],
+        ['2', '2 1/4', '3', '2 1/4', '3'],
+        ['2 1/2', '3 1/4', '1 3/4', '2 3/4', '2']
+      ],
+      note: 'Use the source data values to complete the blank line plot.'
+    });
+  }
+  if (lessonNumber === 8) {
+    const labels = ['5 1/2', '5 3/4', '6', '6 1/4', '6 1/2', '6 3/4'];
+    const counts = [1, 5, 8, 6, 4, 1];
+    return m6LinePlot('Widths of Silver Maple Tree Leaves', labels, problemNumber === 1 ? counts : undefined, 'X = 1 leaf', {
+      sourceData: m6DataValues(labels, counts),
+      sourceDataRows: [
+        ['5 3/4', '6', '6 1/4', '6', '5 3/4'],
+        ['6 1/2', '6 1/4', '5 1/2', '5 3/4', '6'],
+        ['6 1/4', '6', '6', '6 1/2', '6 1/4'],
+        ['6 1/2', '5 3/4', '6 1/4', '6', '6 3/4'],
+        ['6', '6 1/4', '6', '5 3/4', '6 1/2']
+      ],
+      note: 'Use the source data values to create the blank line plot.'
+    });
+  }
+  if (key === '9-1' || key === '9-2') {
+    return {
+      kind: 'picture-graph' as const,
+      title: 'Apples Picked',
+      columns: ['Name', 'Number of Apples Picked'],
+      rows: M6_DISPLAY_ROWS['9-1'],
+      values: [
+        { label: 'Stewart', value: 16 },
+        { label: 'Roxanne', value: 24 },
+        { label: 'Trisha', value: 12 },
+        { label: 'Philip', value: 20 }
+      ],
+      unitSize: 4,
+      keyLabel: 'Valid key shown: each symbol represents 4 apples.'
+    };
+  }
+  if (key === '9-3') {
+    const labels = ['2', '2 1/4', '2 1/2', '2 3/4', '3', '3 1/4', '3 1/2', '3 3/4'];
+    const counts = [1, 3, 2, 6, 4, 5, 0, 3];
+    return m6LinePlot('Lengths of Blades of Grass', labels, counts, 'X = 1 blade of grass', {
+      sourceData: m6DataValues(labels, counts),
+      sourceDataRows: [
+        ['2 1/4', '2 3/4', '3 1/4', '3', '2 1/2', '2 3/4'],
+        ['2 3/4', '3 3/4', '2', '2 3/4', '3 3/4', '3 1/4'],
+        ['3', '2 1/2', '3 1/4', '2 1/4', '2 3/4', '3'],
+        ['3 1/4', '2 1/4', '3 3/4', '3', '3 1/4', '2 3/4']
+      ],
+      note: 'Use the source data values to make the blank line plot.'
+    });
+  }
+  return {
+    kind: 'data-table' as const,
+    title: M6_VISUAL_FAMILY[lessonNumber] ?? 'Data display',
+    note: 'Complete the official data display from the prompt.'
+  };
+}
+
+function m6BlankVisualType(display: ReturnType<typeof m6ProblemDisplay>): ProblemSetCenteredLesson['problems'][number]['blankVisualType'] {
+  if (display.kind === 'tally-picture' || display.kind === 'picture-graph') {
+    return 'tally-picture-graph-template';
+  }
+  if (display.kind === 'vertical-tape') {
+    return 'vertical-tape-display-template';
+  }
+  if (display.kind === 'ruler') {
+    return 'ruler-template';
+  }
+  if (display.kind === 'line-plot') {
+    return 'line-plot-template';
+  }
+  if (display.kind === 'bar-graph') {
+    return 'bar-graph-template';
+  }
+  return 'data-table-template';
+}
+
+function m6LessonAnimation(lessonNumber: number): LessonAnimationModel | undefined {
+  const animations: Record<number, LessonAnimationModel> = {
+    1: {
+      kind: 'graph',
+      title: 'Teacher Edition move: tally marks become picture-graph units',
+      context: 'The Teacher Edition collects favorite-color survey data, bundles tally marks by fives, then compares picture-graph keys where one symbol is 1 student or 2 students.',
+      equation: 'Example Board: 4 + 2 + 6 + 7 + 3 = 22',
+      teacherPrompt: 'What is different about the keys on these two picture graphs?',
+      graphBars: [
+        { label: 'Green', value: 4 },
+        { label: 'Yellow', value: 2 },
+        { label: 'Red', value: 6 },
+        { label: 'Blue', value: 7 },
+        { label: 'Orange', value: 3 }
+      ],
+      focus: ['tally chart', 'key', '1 symbol = 1 or 2 students', 'half symbol for 1 student']
+    },
+    2: {
+      kind: 'tape-diagram',
+      title: 'Teacher Edition move: rotate tape diagrams vertically',
+      context: 'Students turn horizontal tape diagrams so each stacked unit becomes a vertical display. Changing the unit size changes the number of units, not the total stamps.',
+      equation: '4-unit display: 20 units; 8-unit display: 10 units',
+      teacherPrompt: 'How does multiplication help you interpret the vertical tape diagrams on the Problem Set?',
+      tapePartCount: 8,
+      tapePartLabel: '4 stamps',
+      tapeWholeLabel: 'Anna: 8 units of 4 = 32 stamps',
+      focus: ['unit size', 'vertical tape diagram', 'same total', 'multiplication']
+    },
+    3: {
+      kind: 'graph',
+      title: 'Teacher Edition move: build and read scaled bar graphs',
+      context: 'The Problem Set moves from a table to a scaled bar graph, then asks students to read exact values and compare bars using the graph scale.',
+      equation: 'Baking 9 + Sports 16 + Chorus 13 + Drama 18 = 56',
+      teacherPrompt: 'What is the value of each square in the bar graph?',
+      graphBars: [
+        { label: 'Baking', value: 9 },
+        { label: 'Sports', value: 16 },
+        { label: 'Chorus', value: 13 },
+        { label: 'Drama', value: 18 }
+      ],
+      focus: ['scaled vertical axis', 'bar height', 'straightedge', 'comparison']
+    },
+    4: {
+      kind: 'graph',
+      title: 'Teacher Edition move: solve from graph evidence',
+      context: 'Students choose an appropriate scale for a bar graph and solve one- and two-step comparison questions from the displayed data.',
+      equation: 'Debbie 600; Ben 300; Stanley 450; Jeff 100; Rachel 250',
+      teacherPrompt: 'How does the graph help you solve each comparison problem?',
+      graphBars: [
+        { label: 'Ben', value: 300 },
+        { label: 'Rachel', value: 250 },
+        { label: 'Jeff', value: 100 },
+        { label: 'Stanley', value: 450 },
+        { label: 'Debbie', value: 600 }
+      ],
+      focus: ['appropriate scale', 'read exact value', 'combine', 'compare']
+    },
+    5: {
+      kind: 'measurement',
+      title: 'Teacher Edition move: partition a strip into inch intervals',
+      context: 'The Teacher Edition partitions the same strip into whole inches, half inches, and quarter inches so the ruler can generate more precise measurement data.',
+      equation: '1 inch = 2 half inches = 4 quarter inches',
+      teacherPrompt: 'Which ruler gives the most precise measurement?',
+      measurementTicks: ['0', '1/4', '1/2', '3/4', '1', '1 1/4', '1 1/2', '1 3/4', '2', '2 1/4', '2 1/2', '2 3/4', '3'],
+      focus: ['whole inches', 'half inches', 'quarter inches', 'precision']
+    },
+    6: {
+      kind: 'number-line',
+      title: 'Teacher Edition move: read line plots with fractional intervals',
+      context: 'The Teacher Edition reveals a number line first, labels fractional tick marks, then reads Xs as data counts on a line plot.',
+      equation: 'Each X represents 1 measurement',
+      teacherPrompt: 'When does it make sense to use fractions on a line plot?',
+      numberLineLabels: ['51', '51 1/2', '52', '52 1/2', '53', '53 1/2', '54', '54 1/2', '55'],
+      numberLineJumps: ['halves'],
+      focus: ['fractional intervals', 'measurement data', 'each X = 1', 'frequency']
+    },
+    7: {
+      kind: 'number-line',
+      title: 'Teacher Edition move: choose the line-plot scale from the data',
+      context: 'Students identify the smallest and largest measurement, then count by fourths so every bean-plant measurement can be plotted.',
+      equation: 'Count by fourths from 1 3/4 to 3 1/4 inches',
+      teacherPrompt: 'How do you know what interval to count by to create the scale?',
+      numberLineLabels: ['1 3/4', '2', '2 1/4', '2 1/2', '2 3/4', '3', '3 1/4'],
+      numberLineJumps: ['quarters'],
+      focus: ['smallest value', 'largest value', 'quarter-inch interval', 'cross off data as plotted']
+    },
+    8: {
+      kind: 'number-line',
+      title: 'Teacher Edition move: use a larger data set to describe typical values',
+      context: 'Students plot silver maple leaf widths to the nearest quarter inch, then use the most frequent measurements to describe typical leaf width.',
+      equation: 'Most frequent: 6, 6 1/4, and 5 3/4 inches',
+      teacherPrompt: 'Why does having a large amount of data help us understand what the data means?',
+      numberLineLabels: ['5 1/2', '5 3/4', '6', '6 1/4', '6 1/2', '6 3/4'],
+      numberLineJumps: ['quarters'],
+      focus: ['large data set', 'most frequent measurements', 'typical value', 'shape of data']
+    },
+    9: {
+      kind: 'graph',
+      title: 'Teacher Edition move: choose the right display for the data',
+      context: 'The Teacher Edition compares categorical data on graphs with measurement data on line plots and asks students to justify which display fits the data.',
+      equation: '72 - (16 + 12 + 20) = 24',
+      teacherPrompt: 'When is it best to show data as a picture graph, bar graph, or line plot?',
+      graphBars: [
+        { label: 'Stewart', value: 16 },
+        { label: 'Roxanne', value: 24 },
+        { label: 'Trisha', value: 12 },
+        { label: 'Philip', value: 20 }
+      ],
+      focus: ['picture graph for categories', 'line plot for measurements', 'scale choice', 'problem solving']
+    }
+  };
+
+  return animations[lessonNumber];
+}
+
+const M7_OBJECTIVES: Record<number, string> = {
+  1: 'Solve word problems in varied contexts using a letter to represent the unknown.',
+  2: 'Solve word problems in varied contexts using a letter to represent the unknown.',
+  3: 'Share and critique peer solution strategies to varied word problems.',
+  4: 'Compare and classify quadrilaterals.',
+  5: 'Compare and classify other polygons.',
+  6: 'Draw polygons with specified attributes to solve problems.',
+  7: 'Reason about composing and decomposing polygons using tetrominoes.',
+  8: 'Create a tangram puzzle and observe relationships among the shapes.',
+  9: 'Reason about composing and decomposing polygons using tangrams.',
+  10: 'Decompose quadrilaterals to understand perimeter as the boundary of a shape.',
+  11: 'Tessellate to understand perimeter as the boundary of a shape.',
+  12: 'Measure side lengths in whole number units to determine the perimeter of polygons.',
+  13: 'Explore perimeter as an attribute of plane figures and solve problems.',
+  14: 'Determine the perimeter of regular polygons and rectangles when whole number measurements are unknown.',
+  15: 'Solve word problems to determine perimeter with given side lengths.',
+  16: 'Use string to measure the perimeter of various circles to the nearest quarter inch.',
+  17: 'Use all four operations to solve problems involving perimeter and unknown measurements.',
+  18: 'Construct rectangles from a given number of unit squares and determine the perimeters.',
+  19: 'Use a line plot to record the number of rectangles constructed from a given number of unit squares.',
+  20: 'Construct rectangles with a given perimeter using unit squares and determine their areas.',
+  21: 'Construct rectangles with a given perimeter using unit squares and determine their areas.',
+  22: 'Use a line plot to record the number of rectangles constructed in Lessons 20 and 21.',
+  23: 'Solve a variety of word problems with perimeter.',
+  24: 'Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced.',
+  25: 'Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced.',
+  26: 'Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced.',
+  27: 'Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced.',
+  28: 'Solve a variety of word problems involving area and perimeter using all four operations.',
+  29: 'Solve a variety of word problems involving area and perimeter using all four operations.',
+  30: 'Share and critique peer strategies for problem solving.',
+  31: 'Explore and create unconventional representations of one-half.',
+  32: 'Explore and create unconventional representations of one-half.',
+  33: 'Solidify fluency with Grade 3 skills.',
+  34: 'Create resource booklets to support fluency with Grade 3 skills.'
+};
+
+function m7VisualFamily(lessonNumber: number): string {
+  if (lessonNumber <= 2 || lessonNumber === 15 || lessonNumber === 17 || lessonNumber === 23 || lessonNumber === 28 || lessonNumber === 29) {
+    return 'RDW word-problem model';
+  }
+  if (lessonNumber === 3 || lessonNumber === 30 || lessonNumber >= 33) {
+    return 'critique and reflection tool';
+  }
+  if (lessonNumber <= 6) {
+    return 'polygon attribute workspace';
+  }
+  if (lessonNumber <= 9) {
+    return 'polygon composition workspace';
+  }
+  if (lessonNumber <= 16) {
+    return 'perimeter shape workspace';
+  }
+  if (lessonNumber === 19 || lessonNumber === 22) {
+    return 'line plot workspace';
+  }
+  if (lessonNumber >= 18 && lessonNumber <= 21) {
+    return 'area and perimeter grid workspace';
+  }
+  if (lessonNumber >= 24 && lessonNumber <= 27) {
+    return 'robot measurement project workspace';
+  }
+  if (lessonNumber === 31 || lessonNumber === 32) {
+    return 'one-half representation workspace';
+  }
+  return 'Teacher Edition workspace';
+}
+
+function m7TeacherAnswerEvidence(answer: string | undefined, fallback: string[]): string[] {
+  if (!answer) {
+    return fallback;
+  }
+
+  const evidence = answer
+    .split(/;\s+|(?=\b[a-g]\.\s)/)
+    .map((part) => part.trim())
+    .filter(Boolean)
+    .slice(0, 8);
+
+  return evidence.length ? evidence : [answer];
+}
+
+function m7LastAnswerNumber(answer: string | undefined, fallback: number): number {
+  if (!answer) {
+    return fallback;
+  }
+
+  const numbers = Array.from(answer.matchAll(/\d+(?:\.\d+)?/g)).map((match) => Number(match[0]));
+  return numbers.length ? numbers[numbers.length - 1] : fallback;
+}
+
+function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | undefined {
+  const source = STUDENT_WORK_SOURCE[`m7-l${lessonNumber}`];
+  if (!source) {
+    return undefined;
+  }
+
+  const visualFamily = m7VisualFamily(lessonNumber);
+  const isPerimeter = visualFamily.includes('perimeter');
+  const isGrid = visualFamily.includes('grid') || visualFamily.includes('robot');
+  const isLinePlot = visualFamily.includes('line plot');
+  const isHalf = visualFamily.includes('one-half');
+  const isOpenConstruction = visualFamily.includes('polygon') || visualFamily.includes('project') || visualFamily.includes('critique') || isHalf;
+  const blankSourcePageImages = m7TeacherProblemSetImages(lessonNumber);
+  const solvedSourcePageImages = m7TeacherAnswerKeyImages(lessonNumber);
+  return {
+    title: `Lesson ${lessonNumber}: ${M7_OBJECTIVES[lessonNumber] ?? 'Geometry and measurement problem solving'}`,
+    concept: M7_OBJECTIVES[lessonNumber] ?? 'Use the official Module 7 Problem Set to reason about geometry, measurement, area, perimeter, and word problems.',
+    teacherEditionBasis: source.teacherEditionSource,
+    contrast: `Use the official ${visualFamily}; do not replace it with a parallel problem.`,
+    summary: 'Use the Teacher Edition Problem Set as the source of truth, then check the solved work against the Teacher Edition Answer Key.',
+    sourceNote: `${source.teacherEditionSource} Problem Set pages are rendered from the Teacher Edition PDF.`,
+    blankSourcePageImages,
+    solvedSourcePageImages,
+    problems: source.problems.map((problem) => {
+      const officialAnswer = M7_TEACHER_ANSWER_KEY[lessonNumber]?.[problem.number];
+      const fallbackEquations = problem.equations.length
+        ? problem.equations
+        : isPerimeter
+          ? ['Perimeter = sum of outside side lengths']
+          : isGrid
+            ? ['Area = square units inside', 'Perimeter = boundary units around']
+            : isLinePlot
+              ? ['One X represents one measured rectangle or object']
+              : ['Use the official Teacher Edition source page for the exact model evidence'];
+      const equations = m7TeacherAnswerEvidence(officialAnswer, fallbackEquations);
+      const answerValue = m7LastAnswerNumber(officialAnswer, isGrid ? 24 : isPerimeter ? 16 : 8);
+      return {
+        number: problem.number,
+        sourcePrompt: problem.prompt,
+        blankPrompts: [`Use the authored ${visualFamily} below. Keep the quantities, labels, measurements, and written response aligned to the Teacher Edition source reference above.`],
+        blankEquations: equations,
+        blankWorkspaceLabel: `Complete the Teacher Edition-aligned ${visualFamily}.`,
+        blankVisualType: 'equation-workspace',
+        solvedAnswer: isOpenConstruction
+          ? officialAnswer ?? 'Correct work varies. A valid solution must satisfy every attribute, measurement, drawing, critique, or reflection requirement in the official prompt.'
+          : officialAnswer ?? 'Use the Teacher Edition answer key reference to verify the completed model.',
+        equations,
+        knownTotal: answerValue,
+        knownGroupCount: isHalf ? 2 : isLinePlot ? 8 : 4,
+        knownGroupSize: isGrid ? 6 : 4,
+        quotient: answerValue,
+        quotientMeaning: 'The answer is the shape classification, constructed figure, perimeter, area, data interpretation, critique, or word-problem quantity requested by the official prompt.',
+        animationType: 'two-step-model',
+        unitLabel: isPerimeter ? 'linear units' : isGrid ? 'square units' : isHalf ? 'equal parts' : 'units',
+        groupLabel: isPerimeter ? 'sides' : isGrid ? 'rows' : isHalf ? 'parts' : 'steps',
+        explanation: `Work from the official Teacher Edition ${visualFamily}. The model shown here is the lesson surface; use the collapsible Teacher Edition source reference only to verify exact page evidence.`,
+        validationChecks: [
+          'The prompt text and visual workspace match the Module 7 Teacher Edition Problem Set page.',
+          'The solved work is checked against the Module 7 Teacher Edition Answer Key page.',
+          'The final response uses the correct geometry, measurement, area, perimeter, data, or word-problem unit.'
+        ]
+      };
+    })
+  };
+}
+
+function m6ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | undefined {
+  const source = STUDENT_WORK_SOURCE[`m6-l${lessonNumber}`];
+  if (!source) {
+    return undefined;
+  }
+
+  const visualFamily = M6_VISUAL_FAMILY[lessonNumber] ?? 'data display';
+  return {
+    title: `Lesson ${lessonNumber}: ${M6_OBJECTIVES[lessonNumber] ?? 'Collecting and displaying data'}`,
+    concept: M6_OBJECTIVES[lessonNumber] ?? 'Use the official Module 6 Problem Set data display to organize, read, compare, and explain data.',
+    teacherEditionBasis: source.teacherEditionSource,
+    contrast: `Build and read the ${visualFamily} from the official Problem Set quantities, labels, keys, and intervals.`,
+    summary: 'Use the display as the evidence. Preserve the scale, key, interval size, labels, and units from the Teacher Edition Problem Set, then check fixed answers against the Teacher Edition answer key.',
+    sourceNote: source.teacherEditionSource,
+    conceptSections: [
+      {
+        title: 'Teacher Edition objective',
+        body: M6_OBJECTIVES[lessonNumber] ?? 'Collecting and displaying data',
+        teacherSource: source.teacherEditionSource,
+        checkpoints: [
+          `Use the official ${visualFamily}.`,
+          'Keep graph scales, keys, line-plot intervals, and measurement units exactly aligned to the PDF.',
+          'Use the Teacher Edition answer key for solved work.'
+        ]
+      }
+    ],
+    problems: source.problems.map((problem) => {
+      const solvedNote = M6_SOLVED_NOTES[`${lessonNumber}-${problem.number}`];
+      const dataDisplay = m6ProblemDisplay(lessonNumber, problem.number);
+      const sourcePrompt = M6_SOURCE_PROMPT_OVERRIDES[`${lessonNumber}-${problem.number}`] ?? problem.prompt;
+      return {
+        number: problem.number,
+        sourcePrompt,
+        blankPrompts: ['Complete the authored scaffold using the exact quantities, labels, scale, and intervals from the Teacher Edition Problem Set prompt.'],
+        blankEquations: problem.equations,
+        blankWorkspaceLabel: `Complete the ${visualFamily} scaffold.`,
+        blankVisualType: m6BlankVisualType(dataDisplay),
+        dataDisplay,
+        solvedDataDisplay: dataDisplay,
+        solvedAnswer: solvedNote ?? 'Answers vary when the official Teacher Edition marks the survey, measurement collection, scale choice, or explanation as variable.',
+        equations: problem.equations.length ? problem.equations : solvedNote ? [solvedNote] : ['Use the display evidence and Teacher Edition answer key for fixed values; variable responses must match the student data.'],
+        quotient: 1,
+        quotientMeaning: 'The answer is the count, comparison, total, scale choice, or explanation requested by the Teacher Edition Problem Set item.',
+        animationType: 'data-display-model',
+        unitLabel: 'data values',
+        groupLabel: 'categories',
+        explanation: `Use the ${visualFamily}, read the scale, key, or interval correctly, and write the answer with the requested unit or explanation.`,
+        validationChecks: [
+          'The display uses the Teacher Edition Problem Set quantities and labels.',
+          'Fixed answers match the Teacher Edition answer key.',
+          'The scale, key, interval size, labels, and units are stated in context.'
+        ]
+      };
+    })
+  };
+}
+
 export function findLessonRuntime(moduleId: string, lessonNumber: number): LessonRuntimeConfig | undefined {
   const runtime = LESSON_RUNTIME_BY_ID[`${moduleId}-l${lessonNumber}`];
   if (!runtime) {
     return undefined;
   }
 
-  if (moduleId !== 'm1') {
+  if (moduleId !== 'm1' && moduleId !== 'm2' && moduleId !== 'm3' && moduleId !== 'm4' && moduleId !== 'm5' && moduleId !== 'm6' && moduleId !== 'm7') {
     return runtime;
   }
 
-  const problemSetCenteredLesson = runtime.problemSetCenteredLesson ?? M1_PROBLEM_SET_CENTERED_LESSONS[lessonNumber];
-  return problemSetCenteredLesson ? { ...runtime, problemSetCenteredLesson } : runtime;
+  const problemSetCenteredLesson = runtime.problemSetCenteredLesson
+    ?? (moduleId === 'm1'
+      ? M1_PROBLEM_SET_CENTERED_LESSONS[lessonNumber]
+      : moduleId === 'm2'
+      ? M2_PROBLEM_SET_CENTERED_LESSONS[lessonNumber]
+      : moduleId === 'm3'
+        ? M3_PROBLEM_SET_CENTERED_LESSONS[lessonNumber]
+        : moduleId === 'm4'
+        ? M4_PROBLEM_SET_CENTERED_LESSONS[lessonNumber]
+        : moduleId === 'm5'
+        ? M5_PROBLEM_SET_CENTERED_LESSONS[lessonNumber]
+        : moduleId === 'm6'
+        ? m6ProblemSetLesson(lessonNumber)
+        : m7ProblemSetLesson(lessonNumber));
+  return problemSetCenteredLesson
+    ? {
+        ...runtime,
+        lessonAnimation: moduleId === 'm6'
+          ? m6LessonAnimation(lessonNumber) ?? runtime.lessonAnimation
+          : runtime.lessonAnimation,
+        problemSetCenteredLesson
+      }
+    : runtime;
 }

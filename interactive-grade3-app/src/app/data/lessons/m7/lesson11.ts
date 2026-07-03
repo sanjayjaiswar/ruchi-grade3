@@ -53,7 +53,7 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Follow the directions below using the shape you created yesterday. a. Tessellate your shape on a blank piece of paper. b. Color your tessellation to create a pattern. c. Outline the perimeter of your tessellation with a highlighter. d. Use a string to measure the perimeter of your tessellation. Problem 2: Compare the perimeter of your tessellation to a partner's. Whose tessellation has a greater perimeter? How do you know? Problem 3: How could you increase the perimeter of your tessellation?",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 11 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 11 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -93,7 +93,7 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 11 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 11 Problem Set."
       }
     ],
     "source-model": [
@@ -107,7 +107,7 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 11 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 11 Problem Set."
       }
     ],
     "source-meaning": [
@@ -121,13 +121,13 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 11 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 11 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 11 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 11 Problem Set."
       },
       {
         label: "Source text",
@@ -135,7 +135,7 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 11 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 11 Problem Set."
       }
     ],
     "source-draw": [
@@ -149,7 +149,7 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 11 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 11 Problem Set."
       }
     ],
     "source-exit": [
@@ -163,7 +163,7 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 11 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 11 Problem Set."
       }
     ],
     "source-summary": [
@@ -177,7 +177,7 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 11 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 11 Problem Set."
       }
     ]
   }

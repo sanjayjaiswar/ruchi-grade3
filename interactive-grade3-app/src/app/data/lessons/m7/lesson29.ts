@@ -58,7 +58,7 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Kyle puts two rectangles together to make the L-shaped figure below. He measures some of the side lengths and records them as shown. 8 in 12 in 6 in 16 in a. Find the perimeter of Kyle's shape. b. Find the area of Kyle's shape. c. Kyle makes two copies of the L-shaped figure to create the rectangle shown below. Find the perimeter of the rectangle. 12 in 16 in four operations. Problem 2: Jeremiah and Hayley use a piece of rope to mark a square space for their booth at the science fair. The area of their space is 49 square feet. What is the length of the rope that Jeremiah and Hayley use if they leave a 3-foot opening so they can get in and out of the space? Problem 3: Vivienne draws four identical rectangles as shown below to make a new, larger rectangle. The perimeter of one of the small rectangles is 18 centimeters, and the width is 6 centimeters. What is the perimeter of the new, larger rectangle?",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 29 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 29 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -98,7 +98,7 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 29 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 29 Problem Set."
       }
     ],
     "source-model": [
@@ -112,7 +112,7 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 29 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 29 Problem Set."
       }
     ],
     "source-meaning": [
@@ -126,13 +126,13 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 29 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 29 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 29 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 29 Problem Set."
       },
       {
         label: "Source text",
@@ -140,7 +140,7 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 29 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 29 Problem Set."
       }
     ],
     "source-draw": [
@@ -154,7 +154,7 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 29 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 29 Problem Set."
       }
     ],
     "source-exit": [
@@ -168,7 +168,7 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 29 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 29 Problem Set."
       }
     ],
     "source-summary": [
@@ -182,7 +182,7 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 29 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 29 Problem Set."
       }
     ]
   }

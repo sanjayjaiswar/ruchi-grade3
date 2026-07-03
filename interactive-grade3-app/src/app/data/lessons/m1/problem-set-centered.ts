@@ -41,14 +41,32 @@ type LessonSeed = {
   problems: ProblemSeed[];
 };
 
+function teacherEditionPageImagesFromBasis(basis: string): string[] {
+  const rangeMatch = basis.match(/pages\s+(\d+)-(\d+)/i);
+  if (!rangeMatch) {
+    return [];
+  }
+
+  const start = Number(rangeMatch[1]);
+  const end = Number(rangeMatch[2]);
+  return Array.from({ length: end - start + 1 }, (_, index) => {
+    const page = String(start + index).padStart(3, '0');
+    return `/source-pages/m1-teacher/page-${page}.png`;
+  });
+}
+
+function teacherEditionSourceNote(seed: LessonSeed): string {
+  return `Teacher Edition Lesson ${seed.lessonNumber} pages include the lesson structure, concept development, Problem Set guidance, Student Debrief, Exit Ticket, and official student-facing Problem Set pages.`;
+}
+
 function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
   return {
     number: seed.number,
     sourcePrompt: seed.sourcePrompt,
-    blankPrompts: seed.blankPrompts ?? ['Complete the official workbook drawing, labels, and blanks for this problem.'],
-    blankEquations: seed.blankEquations ?? seed.equations,
+    blankPrompts: seed.blankPrompts ?? ['Complete the official Teacher Edition Problem Set drawing, labels, and blanks for this problem.'],
+    blankEquations: seed.blankEquations ?? seed.equations.map(blankEquation),
     blankAnswerSentence: seed.blankAnswerSentence,
-    blankWorkspaceLabel: seed.blankWorkspaceLabel ?? 'Use the workbook scaffold and label what each number means.',
+    blankWorkspaceLabel: seed.blankWorkspaceLabel ?? 'Use the Teacher Edition scaffold and label what each number means.',
     blankVisualType: seed.blankVisualType ?? 'equation-workspace',
     solvedAnswer: seed.solvedAnswer,
     equations: seed.equations,
@@ -56,11 +74,11 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
     knownGroupSize: seed.knownGroupSize,
     knownGroupCount: seed.knownGroupCount,
     quotient: seed.quotient ?? seed.knownTotal ?? 1,
-    quotientMeaning: seed.quotientMeaning ?? 'The answer names the quantity asked for in the official problem.',
+    quotientMeaning: seed.quotientMeaning ?? seed.solvedAnswer,
     animationType: seed.animationType ?? 'array-model',
     unitLabel: seed.unitLabel ?? 'objects',
     groupLabel: seed.groupLabel ?? 'groups',
-    explanation: seed.explanation ?? 'Use the official workbook model, complete the matching equation, and state the answer with its unit.',
+    explanation: seed.explanation ?? 'Use the official Teacher Edition model, complete the matching equation, and state the answer with its unit.',
     validationChecks: seed.validationChecks ?? [
       'The model matches the official problem quantities.',
       'The equation uses the same quantities as the drawing.',
@@ -71,39 +89,53 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
   };
 }
 
+function blankEquation(equation: string): string {
+  const equalsIndex = equation.indexOf('=');
+  if (equalsIndex < 0) {
+    return equation;
+  }
+
+  return `${equation.slice(0, equalsIndex + 1).trimEnd()} ____`;
+}
+
 function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
+  const teacherEditionImages = teacherEditionPageImagesFromBasis(seed.teacherEditionBasis);
+
   return {
     title: seed.title,
     concept: seed.concept,
     teacherEditionBasis: seed.teacherEditionBasis,
     contrast: seed.contrast,
     summary: seed.summary,
-    sourceNote: seed.sourceNote,
+    sourceNote: teacherEditionSourceNote(seed),
+    sourcePageImages: teacherEditionImages,
+    blankSourcePageImages: teacherEditionImages,
+    solvedSourcePageImages: teacherEditionImages,
     conceptSections: [
       {
-        title: '1. Concept from the Teacher Edition',
+        title: `1. Teacher Edition Lesson ${seed.lessonNumber} concept development`,
         body: seed.concept,
         teacherSource: seed.teacherEditionBasis,
         checkpoints: [
+          'Use the exact lesson page range shown in the Teacher Edition source images.',
           'Name the equal groups, array rows, tape units, or story parts before solving.',
-          'Keep the equation tied to the visual model.',
-          'State what the answer means in words.'
+          'Keep the equation tied to the Teacher Edition visual model.'
         ]
       },
       {
-        title: '2. Problem Set focus',
-        body: 'The official Problem Set is the main student work. Blank mode preserves prompts, blanks, and visual workspace; Solved mode completes the same items with source-backed reasoning.',
-        teacherSource: seed.sourceNote,
+        title: '2. Teacher Edition Problem Set and debrief focus',
+        body: 'The official Teacher Edition Problem Set is the main student work. Blank mode preserves prompts, blanks, and visual workspace; Solved mode completes the same Teacher Edition items with source-backed reasoning.',
+        teacherSource: teacherEditionSourceNote(seed),
         checkpoints: [
-          'Use the official workbook problem as the prompt.',
+          'Use the Teacher Edition Problem Set item as the prompt.',
           'Complete the same blanks or diagram in the solved view.',
-          'Do not replace the workbook item with a parallel invented problem.'
+          'Do not replace the Teacher Edition item with a parallel invented problem.'
         ]
       },
       {
-        title: '3. Validation focus',
+        title: '3. Teacher Edition validation focus',
         body: seed.contrast,
-        teacherSource: 'Student Debrief guidance: review Problem Set solutions, compare models, and explain the lesson target.',
+        teacherSource: 'Teacher Edition Student Debrief guidance: review Problem Set solutions, compare models, and explain the lesson target.',
         checkpoints: [
           'Check the operation against the story.',
           'Check that equal groups are actually equal.',
@@ -123,7 +155,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 1, pages 23-33.',
     contrast: 'Before multiplying, verify the groups are equal and identify how many groups and how many in each group.',
     summary: 'Multiplication is a concise way to add equal groups. The factors describe the number of groups and the size of each group.',
-    sourceNote: 'Student Workbook Lesson 1 Problem Set, printed pages 1-2.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
@@ -196,17 +228,17 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 2, pages 34-48.',
     contrast: 'Read the array by rows first so each factor has a clear meaning before writing the expression.',
     summary: 'Arrays make equal groups visible and connect rows, row size, and total to multiplication.',
-    sourceNote: 'Student Workbook Lesson 2 Problem Set, printed pages 5-6.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
-        sourcePrompt: 'Use the car array to answer: How many rows of cars? How many cars in each row?',
-        solvedAnswer: 'There are 2 rows with 3 cars in each row, for 6 cars total.',
-        equations: ['2 x 3 = 6'],
-        knownTotal: 6,
-        knownGroupCount: 2,
+        sourcePrompt: 'Use the car array to answer: How many rows of cars are there? How many cars are there in each row?',
+        solvedAnswer: 'There are 4 rows with 3 cars in each row, for 12 cars total.',
+        equations: ['4 x 3 = 12'],
+        knownTotal: 12,
+        knownGroupCount: 4,
         knownGroupSize: 3,
-        quotient: 6,
+        quotient: 12,
         unitLabel: 'cars',
         groupLabel: 'rows',
         blankVisualType: 'array-template',
@@ -216,11 +248,12 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       {
         number: 2,
         sourcePrompt: 'Use the object array to answer: What is the number of rows? What is the number of objects in each row?',
-        solvedAnswer: 'The array has equal rows; the row count and row size describe the two factors.',
-        equations: ['rows x objects in each row = total objects'],
+        solvedAnswer: 'There are 3 rows with 6 objects in each row, for 18 objects total.',
+        equations: ['3 x 6 = 18'],
         knownGroupCount: 3,
-        knownGroupSize: 4,
-        quotient: 12,
+        knownGroupSize: 6,
+        knownTotal: 18,
+        quotient: 18,
         unitLabel: 'objects',
         groupLabel: 'rows',
         blankVisualType: 'array-template',
@@ -311,7 +344,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 3, pages 49-60.',
     contrast: 'Do not treat factors as just numbers; say what each factor represents in the picture.',
     summary: 'A multiplication answer is complete when the factors and product are interpreted in context.',
-    sourceNote: 'Student Workbook Lesson 3 Problem Set, printed pages 10-11.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
@@ -331,45 +364,48 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 2,
-        sourcePrompt: 'There are candies in each box. How many candies are in 6 boxes?',
-        solvedAnswer: 'Use the picture to find the candies in one box; multiply that group size by 6 boxes.',
-        equations: ['6 x group size = total candies'],
+        sourcePrompt: 'There are _______ candies in each box. How many candies are in 6 boxes?',
+        solvedAnswer: 'There are 4 candies in each box, so there are 24 candies altogether.',
+        equations: ['6 x 4 = 24'],
         knownGroupCount: 6,
-        knownGroupSize: 3,
-        quotient: 18,
+        knownGroupSize: 4,
+        knownTotal: 24,
+        quotient: 24,
         unitLabel: 'candies',
         groupLabel: 'boxes',
         blankVisualType: 'array-template',
         animationType: 'array-model',
-        explanation: 'The first factor is 6 boxes. The second factor is the number of candies in each box shown in the workbook picture.'
+        explanation: 'The first factor is 6 boxes. The official Teacher Edition picture shows 4 candies in each box.'
       },
       {
         number: 3,
-        sourcePrompt: 'There are 4 oranges in each row. How many oranges are there in the pictured number of rows?',
-        solvedAnswer: 'Use the picture to count the rows; multiply the number of rows by 4 oranges in each row.',
-        equations: ['number of rows x 4 = total oranges'],
+        sourcePrompt: 'There are 4 oranges in each row. How many oranges are there in ______ rows?',
+        solvedAnswer: 'There are 3 rows of 4 oranges, so there are 12 oranges altogether.',
+        equations: ['3 x 4 = 12'],
         knownGroupSize: 4,
         knownGroupCount: 3,
+        knownTotal: 12,
         quotient: 12,
         unitLabel: 'oranges',
         groupLabel: 'rows',
         blankVisualType: 'array-template',
         animationType: 'array-model',
-        explanation: 'The row size is given as 4. The picture supplies the number of rows.'
+        explanation: 'The row size is given as 4. The official Teacher Edition picture shows 3 rows.'
       },
       {
         number: 4,
-        sourcePrompt: 'There are loaves of bread in each row. How many loaves are there in 5 rows?',
-        solvedAnswer: 'Use the picture to find the row size; multiply 5 rows by that row size.',
-        equations: ['5 x row size = total loaves'],
+        sourcePrompt: 'There are ________ loaves of bread in each row. How many loaves of bread are there in 5 rows?',
+        solvedAnswer: 'There are 2 loaves in each row, so there are 10 loaves of bread altogether.',
+        equations: ['5 x 2 = 10'],
         knownGroupCount: 5,
-        knownGroupSize: 3,
-        quotient: 15,
+        knownGroupSize: 2,
+        knownTotal: 10,
+        quotient: 10,
         unitLabel: 'loaves',
         groupLabel: 'rows',
         blankVisualType: 'array-template',
         animationType: 'array-model',
-        explanation: 'The problem gives 5 rows. The picture supplies how many loaves are in each row.'
+        explanation: 'The problem gives 5 rows. The official Teacher Edition picture shows 2 loaves in each row.'
       },
       {
         number: 5,
@@ -410,7 +446,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 4, pages 63-74.',
     contrast: 'The quotient must be interpreted as the size of each group, not just a number.',
     summary: 'Division can find the size of each group when the total and number of groups are known.',
-    sourceNote: 'Student Workbook Lesson 4 Problem Set, printed pages 14-15.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
@@ -443,12 +479,12 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 3,
-        sourcePrompt: '30 apples are divided into equal groups. Use the picture to find the number in each group.',
-        solvedAnswer: 'The workbook picture has 5 equal groups, so there are 6 apples in each group.',
-        equations: ['30 divided by 5 = 6'],
+        sourcePrompt: '30 apples are divided into ______ equal groups. There are _________ apples in each group.',
+        solvedAnswer: 'The official Teacher Edition picture has 3 equal groups, so there are 10 apples in each group.',
+        equations: ['30 divided by 3 = 10'],
         knownTotal: 30,
-        knownGroupCount: 5,
-        quotient: 6,
+        knownGroupCount: 3,
+        quotient: 10,
         unitLabel: 'apples',
         groupLabel: 'groups',
         blankVisualType: 'equal-containers',
@@ -470,7 +506,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 5,
-        sourcePrompt: 'Use the picture to find how many toys are in each group. Solve 15 divided by 3.',
+        sourcePrompt: 'There are _________ toys in each group. 15 divided by 3 = _________.',
         solvedAnswer: 'There are 5 toys in each group.',
         equations: ['15 divided by 3 = 5'],
         knownTotal: 15,
@@ -483,7 +519,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 6,
-        sourcePrompt: 'Solve 9 divided by 3.',
+        sourcePrompt: '9 divided by 3 = __________.',
         solvedAnswer: '9 divided into 3 equal groups gives 3 in each group.',
         equations: ['9 divided by 3 = 3'],
         knownTotal: 9,
@@ -522,17 +558,18 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 9,
-        sourcePrompt: 'Chelsea placed butterfly stickers in equal rows. Write a division sentence for the equal groups.',
-        solvedAnswer: 'Use the picture to count the total butterflies and rows; the quotient is butterflies in each row.',
-        equations: ['total butterflies divided by number of rows = butterflies in each row'],
-        knownGroupCount: 3,
-        knownGroupSize: 4,
-        quotient: 4,
+        sourcePrompt: 'Chelsea collects butterfly stickers. The picture shows how she placed them in her book. Write a division sentence to show how she equally grouped her stickers.',
+        solvedAnswer: 'There are 3 butterflies in each row.',
+        equations: ['15 divided by 5 = 3'],
+        knownTotal: 15,
+        knownGroupCount: 5,
+        knownGroupSize: 3,
+        quotient: 3,
         unitLabel: 'butterflies',
         groupLabel: 'rows',
         blankVisualType: 'array-template',
         animationType: 'array-model',
-        explanation: 'The array shows equal rows. Count the total and divide by the number of rows.'
+        explanation: 'The official Teacher Edition picture shows 15 butterflies arranged in 5 equal rows. Divide 15 by 5 to find 3 butterflies in each row.'
       }
     ]
   }),
@@ -543,7 +580,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 5, pages 75-84.',
     contrast: 'The quotient names the number of groups, because the size of each group is already known.',
     summary: 'Division can find how many equal groups are in a total.',
-    sourceNote: 'Student Workbook Lesson 5 Problem Set, printed pages 18-19.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
@@ -635,7 +672,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 6, pages 85-94.',
     contrast: 'Use the same array to explain both the division equation and the related multiplication equation.',
     summary: 'The quotient in division can be checked as an unknown factor in multiplication.',
-    sourceNote: 'Student Workbook Lesson 6 Problem Set, printed pages 22-23.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
@@ -730,7 +767,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 7, pages 97-108.',
     contrast: 'Keep the total fixed while switching which factor names rows and which names row size.',
     summary: 'Related facts such as 6 x 2 and 2 x 6 describe the same total when read from the same array.',
-    sourceNote: 'Student Workbook Lesson 7 Problem Set, printed pages 26-27.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
@@ -847,7 +884,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 8, pages 109-118.',
     contrast: 'Track both the number of threes and the total while using related facts.',
     summary: 'Facts with units of 3 can be solved and checked with arrays, skip-counting, and commutative pairs.',
-    sourceNote: 'Student Workbook Lesson 8 Problem Set, printed pages 30-31.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
@@ -948,7 +985,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 9, pages 119-130.',
     contrast: 'Use the added or removed equal groups instead of recounting every object by ones.',
     summary: 'Related facts can be found by composing or decomposing arrays into known equal-group parts.',
-    sourceNote: 'Student Workbook Lesson 9 Problem Set, printed pages 34-35.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
@@ -966,7 +1003,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 2,
-        sourcePrompt: 'Use known facts to solve 7 x 2.',
+        sourcePrompt: '7 x 2 = ____.',
         solvedAnswer: '7 x 2 = 14 because 5 x 2 = 10 and 2 x 2 = 4, and 10 + 4 = 14.',
         equations: ['5 x 2 = 10', '2 x 2 = 4', '10 + 4 = 14', '7 x 2 = 14'],
         knownTotal: 14,
@@ -980,7 +1017,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 3,
-        sourcePrompt: 'Use known facts to solve 9 x 2.',
+        sourcePrompt: '9 x 2 = ____.',
         solvedAnswer: '9 x 2 = 18 because 10 x 2 = 20 and 1 x 2 = 2, and 20 - 2 = 18.',
         equations: ['10 x 2 = 20', '1 x 2 = 2', '20 - 2 = 18', '9 x 2 = 18'],
         knownTotal: 18,
@@ -1029,11 +1066,11 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 10, pages 131-141.',
     contrast: 'The split changes the strategy, not the total product.',
     summary: 'A larger multiplication fact can be solved as the sum of two smaller multiplication facts.',
-    sourceNote: 'Student Workbook Lesson 10 Problem Set, printed pages 39-40.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
-        sourcePrompt: 'Solve 7 x 3 by decomposing it as (5 x 3) + (2 x 3).',
+        sourcePrompt: '7 x 3 = (5 x 3) + (2 x 3) = _________.',
         solvedAnswer: '7 x 3 = 21.',
         equations: ['5 x 3 = 15', '2 x 3 = 6', '15 + 6 = 21', '7 x 3 = 21'],
         knownTotal: 21,
@@ -1047,7 +1084,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 2,
-        sourcePrompt: 'Solve 8 x 3 by decomposing it as (4 x 3) + (4 x 3).',
+        sourcePrompt: '8 x 3 = (4 x 3) + (4 x 3) = _________.',
         solvedAnswer: '8 x 3 = 24.',
         equations: ['4 x 3 = 12', '4 x 3 = 12', '12 + 12 = 24', '8 x 3 = 24'],
         knownTotal: 24,
@@ -1082,7 +1119,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 11, pages 151-161.',
     contrast: 'The same quantities should appear in the array, tape diagram, division equation, and answer sentence.',
     summary: 'Use arrays and tape diagrams to connect division to an unknown multiplication factor.',
-    sourceNote: 'Student Workbook Lesson 11 Problem Set, printed pages 43-44.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
@@ -1159,7 +1196,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 13, pages 174-185.',
     contrast: 'After solving, say whether the quotient means groups of 3 or items in each group.',
     summary: 'The story determines the meaning of the quotient when dividing by or into units of 3.',
-    sourceNote: 'Student Workbook Lesson 13 Problem Set, printed pages 51-52.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
@@ -1233,7 +1270,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 14, pages 188-199.',
     contrast: 'Track the number of groups and the running total while skip-counting by 4.',
     summary: 'Facts with units of 4 can be solved by skip-counting, arrays, and tape diagrams.',
-    sourceNote: 'Student Workbook Lesson 14 Problem Set, printed pages 55-56.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
@@ -1297,7 +1334,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 15, pages 200-209.',
     contrast: 'Use labels to show how the same total can be read as different factor orders.',
     summary: 'Arrays and tape diagrams can both represent related multiplication facts with the same product.',
-    sourceNote: 'Student Workbook Lesson 15 Problem Set, printed pages 60-61.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
@@ -1364,7 +1401,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 16, pages 210-220.',
     contrast: 'Keep each partial product visible before adding to the final product.',
     summary: 'Related multiplication facts can be solved by decomposing one factor and adding partial products.',
-    sourceNote: 'Student Workbook Lesson 16 Problem Set, printed pages 64-65.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
@@ -1412,7 +1449,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 17, pages 221-231.',
     contrast: 'Use multiplication to check division and division to find missing factors.',
     summary: 'Related multiplication and division facts describe the same equal-group relationship.',
-    sourceNote: 'Student Workbook Lesson 17 Problem Set, printed pages 68-69.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
@@ -1473,11 +1510,11 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 18, pages 234-244.',
     contrast: 'Break apart one factor, multiply each part by the unit, and add the partial products.',
     summary: 'Decomposing units helps solve multiplication facts such as 8 x 10, 7 x 4, 9 x 10, and 10 x 10.',
-    sourceNote: 'Student Workbook Lesson 18 Problem Set, printed pages 72-73.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
-        sourcePrompt: 'Solve 8 x 10 by decomposing 8 tens into 5 tens and more tens.',
+        sourcePrompt: '8 x 10 = ______. Complete the number bond and equations for 8 tens.',
         solvedAnswer: '8 x 10 = 80.',
         equations: ['5 tens + 3 tens = 8 tens', '(5 x 10) + (3 x 10) = 80', '50 + 30 = 80'],
         knownTotal: 80,
@@ -1491,7 +1528,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 2,
-        sourcePrompt: 'Solve 7 x 4 by decomposing 7 fours into 5 fours and more fours.',
+        sourcePrompt: '7 x 4 = ______. Complete the number bond and equations for 7 fours.',
         solvedAnswer: '7 x 4 = 28.',
         equations: ['5 fours + 2 fours = 7 fours', '(5 x 4) + (2 x 4) = 28', '20 + 8 = 28'],
         knownTotal: 28,
@@ -1505,7 +1542,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 3,
-        sourcePrompt: 'Solve 9 x 10 by decomposing it with a 5 x 10 fact.',
+        sourcePrompt: '9 x 10 = ______. Complete the number bond and equations for 9 x 10.',
         solvedAnswer: '9 x 10 = 90.',
         equations: ['5 x 10 = 50', '4 x 10 = 40', '50 + 40 = 90'],
         knownTotal: 90,
@@ -1519,7 +1556,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 4,
-        sourcePrompt: 'Solve 10 x 10 by decomposing 10 tens.',
+        sourcePrompt: '10 x 10 = ______. Complete the number bond and equations for 10 x 10.',
         solvedAnswer: '10 x 10 = 100.',
         equations: ['5 x 10 = 50', '5 x 10 = 50', '50 + 50 = 100'],
         knownTotal: 100,
@@ -1582,7 +1619,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 19, pages 245-254.',
     contrast: 'Each decomposed part must be divisible by the divisor before adding the partial quotients.',
     summary: 'Division facts can be solved by decomposing the dividend into friendlier parts.',
-    sourceNote: 'Student Workbook Lesson 19 Problem Set, printed pages 76-77.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
@@ -1628,7 +1665,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 20, pages 255-266.',
     contrast: 'Keep step 1 and step 2 separate, and make sure the final answer answers the question asked.',
     summary: 'Read, draw, write, solve, and check whether a two-step multiplication or division answer makes sense.',
-    sourceNote: 'Student Workbook Lesson 20 Problem Set, printed pages 80-81.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
@@ -1703,7 +1740,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     teacherEditionBasis: 'Teacher Edition Lesson 21, pages 267-276.',
     contrast: 'The operation can change from one step to the next, so each equation must match its part of the story.',
     summary: 'Two-step problems require operation choice, labeled models, equations, and a reasonableness check.',
-    sourceNote: 'Student Workbook Lesson 21 Problem Set, printed pages 84-85.',
+    sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,

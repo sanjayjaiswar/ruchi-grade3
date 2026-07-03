@@ -1,5 +1,10 @@
 import type { LessonRuntimeConfig } from '../lesson-runtime.types';
 
+const lesson12TeacherEditionPages = Array.from(
+  { length: 12 },
+  (_, index) => `/source-pages/m1-teacher/page-${String(index + 162).padStart(3, '0')}.png`
+);
+
 export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "quotient",
@@ -11,7 +16,10 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
     teacherEditionBasis: "The Teacher Edition compares two situations for the same division sentence, 8 divided by 2 = 4. In one situation, 4 means objects in each group. In the other situation, 4 means the number of groups.",
     contrast: "Before accepting an answer, name what the quotient means: groups, or objects in each group.",
     summary: "In division, the total is known. Use the story to decide whether the quotient tells how many groups or how many are in each group.",
-    sourceNote: "Teacher Edition pages 160-166 include the concept development, solved/annotated Problem Set thumbnails, and the blank Problem Set. Student Workbook pages 47-48 provide the clean blank Problem Set.",
+    sourceNote: "Teacher Edition Lesson 12 pages 162-173 are the source of truth for the concept development, Problem Set, and Student Debrief.",
+    sourcePageImages: lesson12TeacherEditionPages,
+    blankSourcePageImages: lesson12TeacherEditionPages,
+    solvedSourcePageImages: lesson12TeacherEditionPages,
     conceptSections: [
       {
         title: "1. Quotient as objects in each group",
@@ -48,7 +56,7 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
         body: "The Teacher Edition tells students to solve the Problem Set and use RDW when no method is specified. The Debrief asks students to compare Problems 1 and 2 and explain how quotient meaning affects the tape diagram.",
         teacherSource: "Teacher Edition Problem Set and Student Debrief, printed pages 162-163.",
         checkpoints: [
-          "Read the exact workbook problem first.",
+          "Read the exact Teacher Edition problem first.",
           "Draw or label the model from the known quantities.",
           "Validate that the answer sentence names what the quotient represents."
         ]
@@ -252,10 +260,10 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
     },
     {
       id: "source-picture",
-      title: "Student workbook Problem Set",
+      title: "Teacher Edition Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: There are 8 birds at the pet store. Two birds are in each cage. Circle to show how many cages there are. 8 divided by 2 = ____ There are ____ cages of birds. Problem 2: The pet store sells 10 fish. They equally divide the fish into 5 bowls. Draw fish to find the number in each bowl.? 10 fish, 5 bowls 5 x ____ = 10 10 divided by 5 = ____ There are ____ fish in each bowl. Problem 3: Match. 10 divided by 2 18 divided by 2 12 divided by 2 16 divided by 2 14 divided by 2 objects in each group using units of 2.",
-      teacherEditionBasis: "Module 1 student workbook, Lesson 12 Problem Set.",
+      teacherEditionBasis: "Module 1 Teacher Edition, Lesson 12 Problem Set, pages 162-173.",
       visualModel: "array"
     },
     {
@@ -294,8 +302,8 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
         value: "Interpret the quotient as the number of groups or the number of objects in each group using units of 2."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 12 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 12 Problem Set, pages 162-173."
       }
     ],
     "source-model": [
@@ -308,8 +316,8 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
         value: "The model provides a place aside from crackers does each student get? Draw to model and the words to think about the problem. solve the problem. Then, explain your thinking to your It should guide their understanding of partner. the problem and how to find the S: (Draw and solve.) I gave 1 cracker to each student unknown. They might ask themselves until I drew 8."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 12 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 12 Problem Set, pages 162-173."
       }
     ],
     "source-meaning": [
@@ -322,22 +330,22 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
         value: "Describe how you labeled the tape diagram in Problem 4. The number 2 appears in the problem; where do you see it in the diagram?"
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 12 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 12 Problem Set, pages 162-173."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 1 student workbook, Lesson 12 Problem Set."
+        value: "Module 1 Teacher Edition, Lesson 12 Problem Set, pages 162-173."
       },
       {
         label: "Source text",
         value: "Problem 1: There are 8 birds at the pet store. Two birds are in each cage. Circle to show how many cages there are. 8 divided by 2 = ____ There are ____ cages of birds. Problem 2: The pet store sells 10 fish. They equally divide the fish into 5 bowls. Draw fish to find the number in each bowl.? 10 fish, 5 bowls 5 x ____ = 10 10 divided by 5 = ____ There are ____ fish in each bowl. Problem 3: Match. 10 divided by 2 18 divided by 2 12 divided by 2 16 divided by 2 14 divided by 2 objects in each group using units of 2."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 12 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 12 Problem Set, pages 162-173."
       }
     ],
     "source-draw": [
@@ -350,8 +358,8 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
         value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 12 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 12 Problem Set, pages 162-173."
       }
     ],
     "source-exit": [
@@ -364,8 +372,8 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
         value: "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 12 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 12 Problem Set, pages 162-173."
       }
     ],
     "source-summary": [
@@ -378,8 +386,8 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
         value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (13 minutes) Multiply by 3 Pattern Sheet 3.OA.7 (8 minutes) Group Counting 3.OA.1 (3 minutes) Divide 3.OA.7 (2 minutes) Multiply by 3 Pattern Sheet (8 minutes) Materials: (S) Multiply by 3 (6-10) (Pattern Sheet) Note: This activity builds fluency with multiplication facts using units of 3. It works toward students knowing from memory all products of two one-digit numbers. See Lesson 9 for the directions for administering a Multiply-By Pattern Sheet. T: (Write 6 x 3 = ____.) Let's skip-count up by threes to solve. (Count with fingers to 6..."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 12 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 12 Problem Set, pages 162-173."
       }
     ]
   }

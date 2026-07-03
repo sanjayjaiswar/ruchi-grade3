@@ -55,7 +55,7 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Find the perimeter of 10 circular objects to the nearest quarter inch using string. Record the name and perimeter of each object in the chart below. Perimeter Object (to the nearest quarter inch) a. Explain the steps you used to find the perimeter of the circular objects in the chart above. b. Could the same process be used to find the perimeter of the shape below? Why or why not? quarter inch. Problem 2: Can you find the perimeter of the shape below using just your ruler? Explain your answer. Problem 3: Molly says the perimeter of the shape below is 6 inches. Use your string to check her work. Do you agree with her? Why or why not?",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 16 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 16 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -95,7 +95,7 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 16 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 16 Problem Set."
       }
     ],
     "source-model": [
@@ -109,7 +109,7 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 16 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 16 Problem Set."
       }
     ],
     "source-meaning": [
@@ -123,13 +123,13 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 16 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 16 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 16 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 16 Problem Set."
       },
       {
         label: "Source text",
@@ -137,7 +137,7 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 16 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 16 Problem Set."
       }
     ],
     "source-draw": [
@@ -151,7 +151,7 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 16 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 16 Problem Set."
       }
     ],
     "source-exit": [
@@ -165,7 +165,7 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 16 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 16 Problem Set."
       }
     ],
     "source-summary": [
@@ -179,7 +179,7 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 16 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 16 Problem Set."
       }
     ]
   }

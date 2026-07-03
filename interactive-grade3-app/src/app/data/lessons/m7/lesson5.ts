@@ -52,7 +52,7 @@ export const M7_LESSON5_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Cut out all the polygons (M-X) in the Template. Then, use the polygons to complete the following chart. Attribute List polygons' letters for each group. Sketch 1 polygon from the group. Example: 3 Sides Polygons: Y, Z All Sides Are Polygons: Equal All Sides Are Polygons: Not Equal At Least 1 Polygons: Right Angle At Least 1 Set of Polygons: Parallel Sides Problem 2: Compare Polygon M and Polygon X. What is the same? What is different? Problem 3: Jenny says, \"Polygon N, Polygon R, and Polygon S are all regular quadrilaterals!\" Is she correct? Why or why not?",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 5 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 5 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -92,7 +92,7 @@ export const M7_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 5 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 5 Problem Set."
       }
     ],
     "source-model": [
@@ -106,7 +106,7 @@ export const M7_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 5 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 5 Problem Set."
       }
     ],
     "source-meaning": [
@@ -120,13 +120,13 @@ export const M7_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 5 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 5 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 5 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 5 Problem Set."
       },
       {
         label: "Source text",
@@ -134,7 +134,7 @@ export const M7_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 5 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 5 Problem Set."
       }
     ],
     "source-draw": [
@@ -148,7 +148,7 @@ export const M7_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 5 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 5 Problem Set."
       }
     ],
     "source-exit": [
@@ -162,7 +162,7 @@ export const M7_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 5 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 5 Problem Set."
       }
     ],
     "source-summary": [
@@ -176,7 +176,7 @@ export const M7_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 5 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 5 Problem Set."
       }
     ]
   }

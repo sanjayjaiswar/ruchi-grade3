@@ -59,7 +59,7 @@ export const M7_LESSON14_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Label the unknown side lengths of the regular shapes below. Then, find the perimeter of each shape. a. b. 8 in 7 ft Perimeter = ____ ft Perimeter = ____ in c. d. 9m 6 in Perimeter = ____ m Perimeter = ____ in Problem 2: Label the unknown side lengths of the rectangle below. Then, find the perimeter of the rectangle. 2 cm Perimeter = ____ cm 7 cm whole number measurements are unknown. Problem 3: David draws a regular octagon and labels a side length as shown below. Find the perimeter of David's octagon. 6 cm",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 14 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 14 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -99,7 +99,7 @@ export const M7_LESSON14_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 14 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 14 Problem Set."
       }
     ],
     "source-model": [
@@ -113,7 +113,7 @@ export const M7_LESSON14_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 14 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 14 Problem Set."
       }
     ],
     "source-meaning": [
@@ -127,13 +127,13 @@ export const M7_LESSON14_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 14 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 14 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 14 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 14 Problem Set."
       },
       {
         label: "Source text",
@@ -141,7 +141,7 @@ export const M7_LESSON14_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 14 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 14 Problem Set."
       }
     ],
     "source-draw": [
@@ -155,7 +155,7 @@ export const M7_LESSON14_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 14 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 14 Problem Set."
       }
     ],
     "source-exit": [
@@ -169,7 +169,7 @@ export const M7_LESSON14_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 14 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 14 Problem Set."
       }
     ],
     "source-summary": [
@@ -183,7 +183,7 @@ export const M7_LESSON14_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 14 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 14 Problem Set."
       }
     ]
   }

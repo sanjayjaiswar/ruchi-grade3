@@ -53,10 +53,10 @@ export const M1_LESSON17_RUNTIME: LessonRuntimeConfig = {
     },
     {
       id: "source-picture",
-      title: "Student workbook Problem Set",
+      title: "Teacher Edition Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Use the array to complete the related equations. 1x4= 4 4 divided by4=1 2x4= divided by4=2 x 4 = 12 12 divided by 4 = x 4 = 16 16 divided by 4 = x = 20 20 divided by = x = 24 24 divided by = x4= divided by4= x4= divided by4= x = divided by = x = divided by = Problem 2: The baker packs 36 bran muffins in boxes of 4. Draw and label a tape diagram to find the number of boxes he packs. Problem 3: The waitress arranges 32 glasses into 4 equal rows. How many glasses are in each row?",
-      teacherEditionBasis: "Module 1 student workbook, Lesson 17 Problem Set.",
+      teacherEditionBasis: "Module 1 Teacher Edition, Lesson 17 Problem Set.",
       visualModel: "array"
     },
     {
@@ -95,8 +95,8 @@ export const M1_LESSON17_RUNTIME: LessonRuntimeConfig = {
         value: "Model the relationship between multiplication and division."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 17 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 17 Problem Set."
       }
     ],
     "source-model": [
@@ -109,8 +109,8 @@ export const M1_LESSON17_RUNTIME: LessonRuntimeConfig = {
         value: "Use the number bond to relate multiplication and division. T: (Draw or project the number bond shown to the right.) The number bond represents the division equation you wrote to solve the Application Problem. Turn and tell your partner how it shows 24 divided by 4. S: (Discuss.) T: Look back at the Application Problem. Is the unknown in the number bond the same as the unknown in the division problem?"
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 17 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 17 Problem Set."
       }
     ],
     "source-meaning": [
@@ -123,22 +123,22 @@ export const M1_LESSON17_RUNTIME: LessonRuntimeConfig = {
         value: "In the first problem on the Problem Set, what patterns did you notice in the array?"
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 17 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 17 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 1 student workbook, Lesson 17 Problem Set."
+        value: "Module 1 Teacher Edition, Lesson 17 Problem Set."
       },
       {
         label: "Source text",
         value: "Problem 1: Use the array to complete the related equations. 1x4= 4 4 divided by4=1 2x4= divided by4=2 x 4 = 12 12 divided by 4 = x 4 = 16 16 divided by 4 = x = 20 20 divided by = x = 24 24 divided by = x4= divided by4= x4= divided by4= x = divided by = x = divided by = Problem 2: The baker packs 36 bran muffins in boxes of 4. Draw and label a tape diagram to find the number of boxes he packs. Problem 3: The waitress arranges 32 glasses into 4 equal rows. How many glasses are in each row?"
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 17 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 17 Problem Set."
       }
     ],
     "source-draw": [
@@ -151,8 +151,8 @@ export const M1_LESSON17_RUNTIME: LessonRuntimeConfig = {
         value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 17 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 17 Problem Set."
       }
     ],
     "source-exit": [
@@ -165,8 +165,8 @@ export const M1_LESSON17_RUNTIME: LessonRuntimeConfig = {
         value: "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 17 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 17 Problem Set."
       }
     ],
     "source-summary": [
@@ -179,8 +179,8 @@ export const M1_LESSON17_RUNTIME: LessonRuntimeConfig = {
         value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (9 minutes) Sprint: Multiply or Divide by 4 3.OA.7 (9 minutes) Sprint: Multiply or Divide by 4 (9 minutes) Materials: (S) Multiply or Divide by 4 Sprint Note: Framing division through missing factors in multiplication sentences builds a strong foundation for understanding the relationships between multiplication and division. See Lesson 2 for directions for administering a Sprint. Between Sprints, include the following group counts in place of movement exercises. Count by twos to 20 forward and backward. Count by threes to 30, hum/talk f..."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 17 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 17 Problem Set."
       }
     ]
   }

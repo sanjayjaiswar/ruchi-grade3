@@ -53,7 +53,7 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Use a 2-inch square to answer the questions below. a. Trace the square in the space below with a red crayon. b. Trace the new shape you made with the square in the space below with a red crayon. c. Which shape has a greater perimeter? How do you know? d. Color the inside of the shapes in Problem 1 (a) and (b) with a blue crayon. of a shape. e. Which color represents the perimeters of the shapes? How do you know? f. What does the other color represent? How do you know? g. Which shape has a greater area? How do you know? Problem 2: a. Outline the perimeter of the shapes below with a red crayon. b. Explain how you know you outlined the perimeters of the shapes above. Problem 3: Outline the perimeter of this piece of paper with a highlighter. of a shape.",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 10 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 10 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -93,7 +93,7 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 10 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 10 Problem Set."
       }
     ],
     "source-model": [
@@ -107,7 +107,7 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 10 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 10 Problem Set."
       }
     ],
     "source-meaning": [
@@ -121,13 +121,13 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 10 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 10 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 10 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 10 Problem Set."
       },
       {
         label: "Source text",
@@ -135,7 +135,7 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 10 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 10 Problem Set."
       }
     ],
     "source-draw": [
@@ -149,7 +149,7 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 10 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 10 Problem Set."
       }
     ],
     "source-exit": [
@@ -163,7 +163,7 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 10 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 10 Problem Set."
       }
     ],
     "source-summary": [
@@ -177,7 +177,7 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 10 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 10 Problem Set."
       }
     ]
   }

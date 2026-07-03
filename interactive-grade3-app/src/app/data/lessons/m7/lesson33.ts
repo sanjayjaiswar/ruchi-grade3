@@ -50,7 +50,7 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: List some games we played today in the chart below. Place a check mark in the box that shows how you felt about your level of fluency as you played each activity. Check off the last column if you would like to practice this activity over the summer. I would like to put this I still need some practice Activity I am fluent. in my summer activity with my facts. book. 1. 2. 3. 4. 5. 6. 7. 8.",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 33 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 33 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -90,7 +90,7 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 33 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 33 Problem Set."
       }
     ],
     "source-model": [
@@ -104,7 +104,7 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 33 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 33 Problem Set."
       }
     ],
     "source-meaning": [
@@ -118,13 +118,13 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 33 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 33 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 33 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 33 Problem Set."
       },
       {
         label: "Source text",
@@ -132,7 +132,7 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 33 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 33 Problem Set."
       }
     ],
     "source-draw": [
@@ -146,7 +146,7 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 33 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 33 Problem Set."
       }
     ],
     "source-exit": [
@@ -160,7 +160,7 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 33 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 33 Problem Set."
       }
     ],
     "source-summary": [
@@ -174,7 +174,7 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 33 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 33 Problem Set."
       }
     ]
   }

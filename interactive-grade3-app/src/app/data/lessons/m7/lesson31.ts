@@ -50,7 +50,7 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Use this form to analyze your classmate's representations of one-half shaded. Does this square Square Describe changes to make so the show one-half Explain why or why not. (letter) square shows one-half shaded. shaded?",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 31 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 31 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -90,7 +90,7 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 31 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 31 Problem Set."
       }
     ],
     "source-model": [
@@ -104,7 +104,7 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 31 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 31 Problem Set."
       }
     ],
     "source-meaning": [
@@ -118,13 +118,13 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 31 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 31 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 31 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 31 Problem Set."
       },
       {
         label: "Source text",
@@ -132,7 +132,7 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 31 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 31 Problem Set."
       }
     ],
     "source-draw": [
@@ -146,7 +146,7 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 31 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 31 Problem Set."
       }
     ],
     "source-exit": [
@@ -160,7 +160,7 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 31 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 31 Problem Set."
       }
     ],
     "source-summary": [
@@ -174,7 +174,7 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 31 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 31 Problem Set."
       }
     ]
   }

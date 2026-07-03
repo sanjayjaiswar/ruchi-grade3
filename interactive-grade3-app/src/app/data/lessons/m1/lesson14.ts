@@ -50,10 +50,10 @@ export const M1_LESSON14_RUNTIME: LessonRuntimeConfig = {
     },
     {
       id: "source-picture",
-      title: "Student workbook Problem Set",
+      title: "Teacher Edition Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Skip-count by fours. Match each answer to the appropriate expression. 4 6x4 8 10 x 4 5x4 1x4 4x4 9x4 2x4 8x4 7x4 3x4 using units of 4. Problem 2: Mr. Schmidt replaces each of the 4 wheels on 7 cars. How many wheels does he replace? Draw and label a tape diagram to solve. Mr. Schmidt replaces ____ wheels. Problem 3: Trina makes 4 bracelets. Each bracelet has 6 beads. Draw and label a tape diagram to show the total number of beads Trina uses.",
-      teacherEditionBasis: "Module 1 student workbook, Lesson 14 Problem Set.",
+      teacherEditionBasis: "Module 1 Teacher Edition, Lesson 14 Problem Set.",
       visualModel: "array"
     },
     {
@@ -92,8 +92,8 @@ export const M1_LESSON14_RUNTIME: LessonRuntimeConfig = {
         value: "Skip-count objects in models to build fluency with multiplication facts using units of 4."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 14 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 14 Problem Set."
       }
     ],
     "source-model": [
@@ -106,8 +106,8 @@ export const M1_LESSON14_RUNTIME: LessonRuntimeConfig = {
         value: "to the array out of order, for example, 4 x 4, 9 x 4, etc.) 28 32 S: (Write expressions and equal signs next to each answer.) 36 40 T: I will say the answer; you say the equation. 20. S: 20 = 5 x 4"
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 14 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 14 Problem Set."
       }
     ],
     "source-meaning": [
@@ -120,22 +120,22 @@ export const M1_LESSON14_RUNTIME: LessonRuntimeConfig = {
         value: "Discuss differences between the tape diagrams and unknowns in Problems 2 and 3. (In MP.4 Problem 2, the value of the unit is four, and in Problem 3, the number 4 represents the number of units.)"
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 14 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 14 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 1 student workbook, Lesson 14 Problem Set."
+        value: "Module 1 Teacher Edition, Lesson 14 Problem Set."
       },
       {
         label: "Source text",
         value: "Problem 1: Skip-count by fours. Match each answer to the appropriate expression. 4 6x4 8 10 x 4 5x4 1x4 4x4 9x4 2x4 8x4 7x4 3x4 using units of 4. Problem 2: Mr. Schmidt replaces each of the 4 wheels on 7 cars. How many wheels does he replace? Draw and label a tape diagram to solve. Mr. Schmidt replaces ____ wheels. Problem 3: Trina makes 4 bracelets. Each bracelet has 6 beads. Draw and label a tape diagram to show the total number of beads Trina uses."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 14 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 14 Problem Set."
       }
     ],
     "source-draw": [
@@ -148,8 +148,8 @@ export const M1_LESSON14_RUNTIME: LessonRuntimeConfig = {
         value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. using units of 4."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 14 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 14 Problem Set."
       }
     ],
     "source-exit": [
@@ -162,8 +162,8 @@ export const M1_LESSON14_RUNTIME: LessonRuntimeConfig = {
         value: "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 14 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 14 Problem Set."
       }
     ],
     "source-summary": [
@@ -176,8 +176,8 @@ export const M1_LESSON14_RUNTIME: LessonRuntimeConfig = {
         value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Sprint: Multiply or Divide by 3 3.OA.7 (9 minutes) Read Tape Diagrams 3.OA.3 (3 minutes) Sprint: Multiply or Divide by 3 (9 minutes) Materials: (S) Multiply or Divide by 3 Sprint Note: This activity builds fluency with multiplication and division using units of 3. It works toward students' fluency within 100. See Lesson 2 for the directions for administering a Sprint. Instead of movement exercises between Sprints, have students: Count by twos to 20 forward and backward. Count by fours to 40 forward and backward. Read Tape..."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 14 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 14 Problem Set."
       }
     ]
   }

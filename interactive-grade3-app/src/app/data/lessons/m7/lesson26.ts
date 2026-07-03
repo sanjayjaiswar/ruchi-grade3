@@ -57,7 +57,7 @@ export const M7_LESSON26_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Collect the area measurements of your classmates' robot bodies. Make a line plot using everyone's area measurements. Areas of Robot Bodies Area Measurements of the Robot's Body in Square Centimeters X = 1 Robot Body a. How many different measurements are on the line plot? Why are the measurements different? b. What does this tell you about the relationship between area and perimeter? measurements, and reason about the different areas that may be produced. Problem 2: Measure and calculate the perimeter of your construction paper in inches. Show your work below. Problem 3: Sketch and label two shapes with the same perimeter from the robot's environment. What do you notice about the way they look?",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 26 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 26 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -97,7 +97,7 @@ export const M7_LESSON26_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 26 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 26 Problem Set."
       }
     ],
     "source-model": [
@@ -111,7 +111,7 @@ export const M7_LESSON26_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 26 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 26 Problem Set."
       }
     ],
     "source-meaning": [
@@ -125,13 +125,13 @@ export const M7_LESSON26_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 26 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 26 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 26 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 26 Problem Set."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M7_LESSON26_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 26 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 26 Problem Set."
       }
     ],
     "source-draw": [
@@ -153,7 +153,7 @@ export const M7_LESSON26_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 26 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 26 Problem Set."
       }
     ],
     "source-exit": [
@@ -167,7 +167,7 @@ export const M7_LESSON26_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 26 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 26 Problem Set."
       }
     ],
     "source-summary": [
@@ -181,7 +181,7 @@ export const M7_LESSON26_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 26 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 26 Problem Set."
       }
     ]
   }

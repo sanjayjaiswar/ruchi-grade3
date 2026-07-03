@@ -62,7 +62,7 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Leanne needs 120 tiles for an art project. She has 56 tiles. If tiles are sold in boxes of 8, how many more boxes of tiles does Leanne need to buy? Problem 2: Gwen pours 236 milliliters of water into Ravi's beaker. Henry pours 189 milliliters of water into Ravi's beaker. Ravi's beaker now contains 800 milliliters of water. How much water was in Ravi's beaker to begin with? Problem 3: Maude hung 3 pictures on her wall. Each picture measures 8 inches by 10 inches. What is the total area of the wall covered by the pictures? unknown.",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 2 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 2 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -102,7 +102,7 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 2 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 2 Problem Set."
       }
     ],
     "source-model": [
@@ -116,7 +116,7 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 2 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 2 Problem Set."
       }
     ],
     "source-meaning": [
@@ -130,13 +130,13 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 2 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 2 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 2 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 2 Problem Set."
       },
       {
         label: "Source text",
@@ -144,7 +144,7 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 2 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 2 Problem Set."
       }
     ],
     "source-draw": [
@@ -158,7 +158,7 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 2 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 2 Problem Set."
       }
     ],
     "source-exit": [
@@ -172,7 +172,7 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 2 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 2 Problem Set."
       }
     ],
     "source-summary": [
@@ -186,7 +186,7 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 2 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 2 Problem Set."
       }
     ]
   }

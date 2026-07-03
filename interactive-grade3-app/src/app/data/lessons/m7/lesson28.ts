@@ -58,7 +58,7 @@ export const M7_LESSON28_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Gia measures her rectangular garden and finds the width is 9 yards and the length is 7 yards. a. Estimate to draw Gia's garden, and label the side lengths. b. What is the area of Gia's garden? c. What is the perimeter of Gia's garden? Problem 2: Elijah draws a square that has side lengths of 8 centimeters. a. Estimate to draw Elijah's square, and label the side lengths. b. What is the area of Elijah's square? c. What is the perimeter of Elijah's square? four operations. d. Elijah connects three of these squares to make one long rectangle. What is the perimeter of this rectangle? Problem 3: The area of Mason's rectangular painting is 72 square inches. The width of the painting is 8 inches. a. Estimate to draw Mason's painting, and label the side lengths. b. What is the length of the painting? c. What is the perimeter of Mason's painting? d. Mason's mom hangs the painting on a wall that already has two of Mason's other paintings. The areas of the other paintings are 64 squa...",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 28 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 28 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -98,7 +98,7 @@ export const M7_LESSON28_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 28 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 28 Problem Set."
       }
     ],
     "source-model": [
@@ -112,7 +112,7 @@ export const M7_LESSON28_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 28 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 28 Problem Set."
       }
     ],
     "source-meaning": [
@@ -126,13 +126,13 @@ export const M7_LESSON28_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 28 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 28 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 28 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 28 Problem Set."
       },
       {
         label: "Source text",
@@ -140,7 +140,7 @@ export const M7_LESSON28_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 28 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 28 Problem Set."
       }
     ],
     "source-draw": [
@@ -154,7 +154,7 @@ export const M7_LESSON28_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 28 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 28 Problem Set."
       }
     ],
     "source-exit": [
@@ -168,7 +168,7 @@ export const M7_LESSON28_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 28 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 28 Problem Set."
       }
     ],
     "source-summary": [
@@ -182,7 +182,7 @@ export const M7_LESSON28_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 28 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 28 Problem Set."
       }
     ]
   }

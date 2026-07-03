@@ -55,7 +55,7 @@ export const M7_LESSON15_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Mrs. Kozlow put a border around a 5-foot by 6-foot rectangular bulletin board. How many feet of border did Mrs. Kozlow use? Problem 2: Jason built a model of the Pentagon for a social studies project. He made each outside wall 33 centimeters long. What is the perimeter of Jason's model pentagon? Problem 3: The Holmes family plants a rectangular 8-yard by 9-yard vegetable garden. How many yards of fencing do they need to put a fence around the garden?",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 15 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 15 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -95,7 +95,7 @@ export const M7_LESSON15_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 15 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 15 Problem Set."
       }
     ],
     "source-model": [
@@ -109,7 +109,7 @@ export const M7_LESSON15_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 15 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 15 Problem Set."
       }
     ],
     "source-meaning": [
@@ -123,13 +123,13 @@ export const M7_LESSON15_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 15 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 15 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 15 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 15 Problem Set."
       },
       {
         label: "Source text",
@@ -137,7 +137,7 @@ export const M7_LESSON15_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 15 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 15 Problem Set."
       }
     ],
     "source-draw": [
@@ -151,7 +151,7 @@ export const M7_LESSON15_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 15 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 15 Problem Set."
       }
     ],
     "source-exit": [
@@ -165,7 +165,7 @@ export const M7_LESSON15_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 15 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 15 Problem Set."
       }
     ],
     "source-summary": [
@@ -179,7 +179,7 @@ export const M7_LESSON15_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 15 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 15 Problem Set."
       }
     ]
   }

@@ -53,7 +53,7 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Fold and cut the square on the diagonal. Draw and label your 2 new shapes below. Problem 2: Fold and cut one of the triangles in half. Draw and label your 2 new shapes below. Problem 3: Fold twice, and cut your large triangle. Draw and label your 2 new shapes below.",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 8 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 8 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -93,7 +93,7 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 8 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 8 Problem Set."
       }
     ],
     "source-model": [
@@ -107,7 +107,7 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 8 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 8 Problem Set."
       }
     ],
     "source-meaning": [
@@ -121,13 +121,13 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 8 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 8 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 8 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 8 Problem Set."
       },
       {
         label: "Source text",
@@ -135,7 +135,7 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 8 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 8 Problem Set."
       }
     ],
     "source-draw": [
@@ -149,7 +149,7 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 8 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 8 Problem Set."
       }
     ],
     "source-exit": [
@@ -163,7 +163,7 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 8 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 8 Problem Set."
       }
     ],
     "source-summary": [
@@ -177,7 +177,7 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 8 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 8 Problem Set."
       }
     ]
   }

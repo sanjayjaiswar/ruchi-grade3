@@ -57,7 +57,7 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of 16 centimeters. a. Sketch the rectangles below, and label the side lengths. b. Find the area of each rectangle you drew above. Problem 2: On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of 18 centimeters. a. Sketch the rectangles below, and label the side lengths. b. Find the area of each rectangle you drew above. determine their areas. Problem 3: Use centimeter grid paper to shade in as many rectangles as you can with the given perimeters. a. Use the charts below to show how many rectangles you shaded for each given perimeter. You might not use all the spaces in the charts. Perimeter = 10 cm Perimeter = 20 cm Number of rectangles I made: ____ Number of rectangles I made: ____ Width Length Area Width Length Area 1 cm 4 cm 4 square cm 1 cm 9 cm 9 square cm b. Did you make a square with either of the given perimeters? How do you know?",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 21 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 21 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -97,7 +97,7 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 21 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 21 Problem Set."
       }
     ],
     "source-model": [
@@ -111,7 +111,7 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 21 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 21 Problem Set."
       }
     ],
     "source-meaning": [
@@ -125,13 +125,13 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 21 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 21 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 21 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 21 Problem Set."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 21 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 21 Problem Set."
       }
     ],
     "source-draw": [
@@ -153,7 +153,7 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 21 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 21 Problem Set."
       }
     ],
     "source-exit": [
@@ -167,7 +167,7 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 21 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 21 Problem Set."
       }
     ],
     "source-summary": [
@@ -181,7 +181,7 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 21 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 21 Problem Set."
       }
     ]
   }

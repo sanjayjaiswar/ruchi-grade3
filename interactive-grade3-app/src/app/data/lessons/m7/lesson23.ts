@@ -57,7 +57,7 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Gale makes a miniature stop sign, a regular octagon, with a perimeter of 48 centimeters for the town he built with blocks. What is the length of each side of the stop sign? Problem 2: Travis bends wire to make rectangles. Each rectangle measures 34 inches by 12 inches. What is the total length of the wire needed for two rectangles? Problem 3: The perimeter of a rectangular bathroom is 32 feet. The width of the room is 8 feet. What is the length of the room?",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 23 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 23 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -97,7 +97,7 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 23 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 23 Problem Set."
       }
     ],
     "source-model": [
@@ -111,7 +111,7 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 23 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 23 Problem Set."
       }
     ],
     "source-meaning": [
@@ -125,13 +125,13 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 23 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 23 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 23 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 23 Problem Set."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 23 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 23 Problem Set."
       }
     ],
     "source-draw": [
@@ -153,7 +153,7 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 23 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 23 Problem Set."
       }
     ],
     "source-exit": [
@@ -167,7 +167,7 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 23 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 23 Problem Set."
       }
     ],
     "source-summary": [
@@ -181,7 +181,7 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 23 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 23 Problem Set."
       }
     ]
   }

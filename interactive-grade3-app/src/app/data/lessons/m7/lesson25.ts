@@ -57,7 +57,7 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Draw a picture of your robot in its environment in the space below. Label the widths, lengths, and perimeters of all rectangles. Label the perimeters of all circular shapes. measurements, and reason about the different areas that may be produced.",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 25 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 25 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -97,7 +97,7 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 25 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 25 Problem Set."
       }
     ],
     "source-model": [
@@ -111,7 +111,7 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 25 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 25 Problem Set."
       }
     ],
     "source-meaning": [
@@ -125,13 +125,13 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 25 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 25 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 25 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 25 Problem Set."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 25 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 25 Problem Set."
       }
     ],
     "source-draw": [
@@ -153,7 +153,7 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 25 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 25 Problem Set."
       }
     ],
     "source-exit": [
@@ -167,7 +167,7 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 25 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 25 Problem Set."
       }
     ],
     "source-summary": [
@@ -181,7 +181,7 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 25 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 25 Problem Set."
       }
     ]
   }

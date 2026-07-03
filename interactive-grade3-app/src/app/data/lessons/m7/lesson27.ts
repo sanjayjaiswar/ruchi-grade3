@@ -57,7 +57,7 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Use the chart below to evaluate your friend's robot. Measure the width and length of each rectangle. Then, calculate the perimeter. Record that information in the chart below. If your measurements differ from those listed on the project, put a star by the letter of the rectangle. Required Rectangle Width and Length Student's Perimeter Perimeter A ____ cm by ____cm 14 cm B ____ cm by ____cm 14 cm C ____ cm by ____cm 18 cm D ____ cm by ____cm 18 cm E ____ cm by ____cm 28 cm F ____ cm by ____cm 16 cm G ____ cm by ____cm 8 cm H ____ cm by ____cm I ____ cm by ____cm measurements, and reason about the different areas that may be produced. Problem 2: Is the perimeter of the robot's body double that of the arm? Show calculations below. Problem 3: Is the perimeter of the robot's neck half the perimeter of the head? Show calculations below. measurements, and reason about the different areas that may be produced. Part B: I reviewed ____'s robot environment.",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 27 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 27 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -97,7 +97,7 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 27 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 27 Problem Set."
       }
     ],
     "source-model": [
@@ -111,7 +111,7 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 27 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 27 Problem Set."
       }
     ],
     "source-meaning": [
@@ -125,13 +125,13 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 27 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 27 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 27 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 27 Problem Set."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 27 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 27 Problem Set."
       }
     ],
     "source-draw": [
@@ -153,7 +153,7 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 27 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 27 Problem Set."
       }
     ],
     "source-exit": [
@@ -167,7 +167,7 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 27 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 27 Problem Set."
       }
     ],
     "source-summary": [
@@ -181,7 +181,7 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 27 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 27 Problem Set."
       }
     ]
   }

@@ -57,7 +57,7 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Use your square unit tiles to build as many rectangles as you can with a perimeter of 12 units. a. Estimate to draw your rectangles below. Label the side lengths of each rectangle. b. Explain your strategy for finding rectangles with a perimeter of 12 units. c. Find the areas of all the rectangles in part (a) above. d. The perimeters of all the rectangles are the same. What do you notice about their areas? determine their areas. Problem 2: Use your square unit tiles to build as many rectangles as you can with a perimeter of 14 units. a. Estimate to draw your rectangles below. Label the side lengths of each rectangle. b. Find the areas of all the rectangles in part (a) above. c. Given a rectangle's perimeter, what other information do you need to know about the rectangle to find its area? determine their areas.",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 20 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 20 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -97,7 +97,7 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 20 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 20 Problem Set."
       }
     ],
     "source-model": [
@@ -111,7 +111,7 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 20 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 20 Problem Set."
       }
     ],
     "source-meaning": [
@@ -125,13 +125,13 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 20 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 20 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 20 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 20 Problem Set."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 20 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 20 Problem Set."
       }
     ],
     "source-draw": [
@@ -153,7 +153,7 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 20 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 20 Problem Set."
       }
     ],
     "source-exit": [
@@ -167,7 +167,7 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 20 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 20 Problem Set."
       }
     ],
     "source-summary": [
@@ -181,7 +181,7 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 20 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 20 Problem Set."
       }
     ]
   }

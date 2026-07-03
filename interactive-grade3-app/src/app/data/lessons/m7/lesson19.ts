@@ -65,7 +65,7 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Use unit square tiles to make rectangles for each given number of unit squares. Complete the charts to show how many rectangles Number of unit squares = 12 you can make for each given number of unit squares. The first one is done for you. You might not use all the spaces in each Number of rectangles I made: 3 chart. Width Length 1 12 2 6 3 4 Number of unit squares = 13 Number of unit squares = 14 Number of unit squares = 15 Number of rectangles Number of rectangles Number of rectangles I made: ____ I made: ____ I made: ____ Width Length Width Length Width Length Number of unit squares = 16 Number of unit squares = 17 Number of unit squares = 18 Number of rectangles Number of rectangles Number of rectangles I made: ____ I made: ____ I made: ____ Width Length Width Length Width Length given number of unit squares. Problem 2: Create a line plot with the data you collected in Problem 1. Number of Rectangles Made with Unit Squares 12 18 Number of Unit Squares Used X = 1 Rectan...",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 19 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 19 Problem Set.",
       visualModel: "graph"
     },
     {
@@ -105,7 +105,7 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 19 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 19 Problem Set."
       }
     ],
     "source-model": [
@@ -119,7 +119,7 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 19 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 19 Problem Set."
       }
     ],
     "source-meaning": [
@@ -133,13 +133,13 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 19 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 19 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 19 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 19 Problem Set."
       },
       {
         label: "Source text",
@@ -147,7 +147,7 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 19 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 19 Problem Set."
       }
     ],
     "source-draw": [
@@ -161,7 +161,7 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 19 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 19 Problem Set."
       }
     ],
     "source-exit": [
@@ -175,7 +175,7 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 19 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 19 Problem Set."
       }
     ],
     "source-summary": [
@@ -189,7 +189,7 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 19 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 19 Problem Set."
       }
     ]
   }

@@ -50,7 +50,7 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Look at the circles you shaded today. Glue a circle that is about one-half shaded in the space below. a. Explain the strategy you used to shade in one-half of your circle. b. Is your circle exactly one-half shaded? Explain your answer. Problem 2: Julian shades 4 circles as shown below. Circle A Circle B Circle C Circle D a. Write the letters of the circles that are about one-half shaded. b. Choose one circle from your answer to Part (a), and explain how you know it's about one-half shaded. Circle ____ c. Choose one circle that you did not list in Part (a), and explain how it could be changed so that it is about one-half shaded. Circle ____ Problem 3: Read the clues to help you shade the circle below. a. Divide the circle into 4 equal parts.. b. Shade in 2 parts. c. Erase a small circle from each shaded part. d. Estimate to draw and shade 2 circles in the unshaded parts that are the same size as the circles you erased in Part (c).",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 32 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 32 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -90,7 +90,7 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 32 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 32 Problem Set."
       }
     ],
     "source-model": [
@@ -104,7 +104,7 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 32 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 32 Problem Set."
       }
     ],
     "source-meaning": [
@@ -118,13 +118,13 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 32 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 32 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 32 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 32 Problem Set."
       },
       {
         label: "Source text",
@@ -132,7 +132,7 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 32 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 32 Problem Set."
       }
     ],
     "source-draw": [
@@ -146,7 +146,7 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 32 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 32 Problem Set."
       }
     ],
     "source-exit": [
@@ -160,7 +160,7 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 32 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 32 Problem Set."
       }
     ],
     "source-summary": [
@@ -174,7 +174,7 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 32 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 32 Problem Set."
       }
     ]
   }

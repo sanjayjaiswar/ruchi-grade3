@@ -79,12 +79,12 @@ export const LESSON11_TEACHER_EDITION_STEPS = [
 
 export const LESSON11_STUDENT_WORK_SUPPORT = {
   1: {
-    answer: 'Student completes the workbook drawing and blank equation; the app does not prefill the solution.',
+    answer: 'Student completes the Teacher Edition drawing and blank equation; the app does not prefill the solution.',
     teacherLookFor:
       'The student shows 6 columns or tape units, labels 12 oranges as the whole, 2 oranges in each bag, and ? bags as the unknown.'
   },
   2: {
-    answer: 'Student draws both an array and a labeled tape diagram before writing the answer in the workbook blank.',
+    answer: 'Student draws both an array and a labeled tape diagram before writing the answer in the official response blank.',
     teacherLookFor:
       'The student shows 6 bags or units and names the quotient as the number of plums in each bag, not the number of bags.'
   },
@@ -125,22 +125,22 @@ export const LESSON11_STUDENT_WORK_MODELS = {
   2: {
     problemNumber: 2,
     kind: 'blank-array-tape',
-    arrayPrompt: 'Draw the array and the labeled tape diagram in the workbook space.'
+    arrayPrompt: 'Draw the array and the labeled tape diagram in the official problem space.'
   },
   3: {
     problemNumber: 3,
     kind: 'blank-array-tape',
-    arrayPrompt: 'Draw the array and the labeled tape diagram in the workbook space.'
+    arrayPrompt: 'Draw the array and the labeled tape diagram in the official problem space.'
   },
   4: {
     problemNumber: 4,
     kind: 'blank-array-tape',
-    arrayPrompt: 'Draw the array and the labeled tape diagram in the workbook space.'
+    arrayPrompt: 'Draw the array and the labeled tape diagram in the official problem space.'
   },
   5: {
     problemNumber: 5,
     kind: 'blank-workspace',
-    arrayPrompt: 'Use this space for the workbook drawing or RDW reasoning.'
+    arrayPrompt: 'Use this space for the Teacher Edition problem drawing or RDW reasoning.'
   }
 } satisfies Record<number, SourceWorkspaceModel>;
 

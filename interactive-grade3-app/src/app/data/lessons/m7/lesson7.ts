@@ -50,7 +50,7 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Use tetrominoes to create at least two different rectangles. Then, color the grid below to show how you created your rectangles. You may use the same tetromino more than once. Problem 2: Use tetrominoes to create at least two squares, each with an area of 36 square units. Then, color the grid below to show how you created your squares. You may use the same tetromino more than once. a. Write an equation to show the area of a square above as the sum of the areas of the tetrominoes you used to make the square. b. Write an equation to show the area of a square above as the product of its side lengths. tetrominoes. Problem 3: a. Use tetrominoes to create at least two different rectangles, each with an area of 12 square units. Then, color the grid below to show how you created the rectangles. You may use the same tetromino more than once. b. Explain how you know the area of each rectangle is 12 square units.",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 7 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 7 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -90,7 +90,7 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 7 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 7 Problem Set."
       }
     ],
     "source-model": [
@@ -104,7 +104,7 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 7 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 7 Problem Set."
       }
     ],
     "source-meaning": [
@@ -118,13 +118,13 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 7 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 7 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 7 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 7 Problem Set."
       },
       {
         label: "Source text",
@@ -132,7 +132,7 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 7 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 7 Problem Set."
       }
     ],
     "source-draw": [
@@ -146,7 +146,7 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 7 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 7 Problem Set."
       }
     ],
     "source-exit": [
@@ -160,7 +160,7 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 7 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 7 Problem Set."
       }
     ],
     "source-summary": [
@@ -174,7 +174,7 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 7 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 7 Problem Set."
       }
     ]
   }

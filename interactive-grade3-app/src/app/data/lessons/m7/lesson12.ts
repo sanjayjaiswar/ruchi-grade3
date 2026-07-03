@@ -53,7 +53,7 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Measure and label the side lengths of the shapes below in centimeters. Then, find the perimeter of each shape. a. b. Perimeter = ____cm +____cm +____cm +____cm Perimeter = ____ = ____ cm = ____ cm c. d. Perimeter = ____ = ____ cm Perimeter = ____ = ____ cm e. Perimeter = ____ = ____ cm perimeter of polygons. Problem 2: Carson draws two triangles to create the new shape shown below. Use a ruler to find the side lengths of Carson's shape in centimeters. Then, find the perimeter. Problem 3: Hugh and Daisy draw the shapes shown below. Measure and label the side lengths in centimeters. Whose shape has a greater perimeter? How do you know? Hugh's Shape Daisy's Shape",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 12 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 12 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -93,7 +93,7 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 12 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 12 Problem Set."
       }
     ],
     "source-model": [
@@ -107,7 +107,7 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 12 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 12 Problem Set."
       }
     ],
     "source-meaning": [
@@ -121,13 +121,13 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 12 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 12 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 12 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 12 Problem Set."
       },
       {
         label: "Source text",
@@ -135,7 +135,7 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 12 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 12 Problem Set."
       }
     ],
     "source-draw": [
@@ -149,7 +149,7 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 12 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 12 Problem Set."
       }
     ],
     "source-exit": [
@@ -163,7 +163,7 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 12 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 12 Problem Set."
       }
     ],
     "source-summary": [
@@ -177,7 +177,7 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 12 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 12 Problem Set."
       }
     ]
   }

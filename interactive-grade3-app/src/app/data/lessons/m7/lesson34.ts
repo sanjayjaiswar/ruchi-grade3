@@ -50,7 +50,7 @@ export const M7_LESSON34_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Summer Calendar",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Complete a math activity each day. To track your progress, color the box after you finish. Summer Math Review: Weeks 1-5 Monday Tuesday Wednesday Thursday Friday Do jumping jacks as Play a game from Use your tangram Time how long it Complete a Sprint. you count by twos your Summer pieces to make a takes you to do a Week 1 from 2 to 20 and Practice booklet. picture of your specific chore, like back. summer break. making the bed. See if you can do it faster the next day. Do squats as you Play a game from Collect data about Read a recipe. Complete a Multiply count by threes your Summer your family's or What fractions does by Pattern Sheet. from 3 to 30 and Practice booklet. friends' favorite the recipe use? Week 2 back. type of music. Show it on a bar graph. What did you discover from your graph? Hop on one foot as Create a Measure the widths Read the weight in Complete a Sprint. you count by fours multiplication of different leaves grams of different from 4 to 40 and and/or...",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 34 Summer Calendar.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 34 Summer Calendar.",
       visualModel: "geometry"
     },
     {
@@ -90,7 +90,7 @@ export const M7_LESSON34_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 34 Summer Calendar."
+        value: "Module 7 Teacher Edition, Lesson 34 Summer Calendar."
       }
     ],
     "source-model": [
@@ -104,7 +104,7 @@ export const M7_LESSON34_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 34 Summer Calendar."
+        value: "Module 7 Teacher Edition, Lesson 34 Summer Calendar."
       }
     ],
     "source-meaning": [
@@ -118,13 +118,13 @@ export const M7_LESSON34_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 34 Summer Calendar."
+        value: "Module 7 Teacher Edition, Lesson 34 Summer Calendar."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 34 Summer Calendar."
+        value: "Module 7 Teacher Edition, Lesson 34 Summer Calendar."
       },
       {
         label: "Source text",
@@ -132,7 +132,7 @@ export const M7_LESSON34_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 34 Summer Calendar."
+        value: "Module 7 Teacher Edition, Lesson 34 Summer Calendar."
       }
     ],
     "source-draw": [
@@ -146,7 +146,7 @@ export const M7_LESSON34_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 34 Summer Calendar."
+        value: "Module 7 Teacher Edition, Lesson 34 Summer Calendar."
       }
     ],
     "source-exit": [
@@ -160,7 +160,7 @@ export const M7_LESSON34_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 34 Summer Calendar."
+        value: "Module 7 Teacher Edition, Lesson 34 Summer Calendar."
       }
     ],
     "source-summary": [
@@ -174,7 +174,7 @@ export const M7_LESSON34_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 34 Summer Calendar."
+        value: "Module 7 Teacher Edition, Lesson 34 Summer Calendar."
       }
     ]
   }

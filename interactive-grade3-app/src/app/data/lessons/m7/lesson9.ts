@@ -53,7 +53,7 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Use at least two tangram pieces to make and draw two of each of the following shapes. Draw lines to show where the tangram pieces meet. a. A rectangle that does not have all equal sides. b. A triangle. c. A parallelogram. d. A trapezoid. Problem 2: Use your two smallest triangles to create a square, a parallelogram, and a triangle. Show how you created them below. Problem 3: Create your own shape on a separate sheet of paper using all seven pieces. Describe its attributes below.",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 9 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 9 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -93,7 +93,7 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 9 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 9 Problem Set."
       }
     ],
     "source-model": [
@@ -107,7 +107,7 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 9 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 9 Problem Set."
       }
     ],
     "source-meaning": [
@@ -121,13 +121,13 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 9 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 9 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 9 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 9 Problem Set."
       },
       {
         label: "Source text",
@@ -135,7 +135,7 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 9 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 9 Problem Set."
       }
     ],
     "source-draw": [
@@ -149,7 +149,7 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 9 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 9 Problem Set."
       }
     ],
     "source-exit": [
@@ -163,7 +163,7 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 9 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 9 Problem Set."
       }
     ],
     "source-summary": [
@@ -177,7 +177,7 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 9 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 9 Problem Set."
       }
     ]
   }

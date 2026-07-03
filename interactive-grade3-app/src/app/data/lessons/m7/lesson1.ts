@@ -62,7 +62,7 @@ export const M7_LESSON1_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: The sign below shows information about hayrides at the orchard. Hayrides Adult ticket......... $7 Child ticket......... $4 Leaves every 15 minutes starting at 11:00. a. Lena's family buys 2 adult tickets and 2 child tickets for the hayride. How much does it cost Lena's family to go on the hayride? b. Lena's mom pays for the tickets with $5 bills. She receives $3 in change. How many $5 bills does Lena's mom use to pay for the hayride? c. Lena's family wants to go on the fourth hayride of the day. It's 11:38 now. How many minutes do they have to wait for the fourth hayride? unknown. Problem 2: Lena picked 17 apples, and her brother picked 19. Lena's mom has a pie recipe that requires 9 apples. How many pies can Mom make with the apples that Lena and her brother picked? Problem 3: Lena's dad gives the cashier $30 to pay for 6 liters of apple cider. The cashier gives him $6 in change. How much does each liter of apple cider cost?",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 1 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 1 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -102,7 +102,7 @@ export const M7_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 1 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 1 Problem Set."
       }
     ],
     "source-model": [
@@ -116,7 +116,7 @@ export const M7_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 1 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 1 Problem Set."
       }
     ],
     "source-meaning": [
@@ -130,13 +130,13 @@ export const M7_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 1 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 1 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 1 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 1 Problem Set."
       },
       {
         label: "Source text",
@@ -144,7 +144,7 @@ export const M7_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 1 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 1 Problem Set."
       }
     ],
     "source-draw": [
@@ -158,7 +158,7 @@ export const M7_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 1 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 1 Problem Set."
       }
     ],
     "source-exit": [
@@ -172,7 +172,7 @@ export const M7_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 1 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 1 Problem Set."
       }
     ],
     "source-summary": [
@@ -186,7 +186,7 @@ export const M7_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 1 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 1 Problem Set."
       }
     ]
   }

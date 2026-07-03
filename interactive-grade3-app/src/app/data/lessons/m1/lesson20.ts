@@ -51,10 +51,10 @@ export const M1_LESSON20_RUNTIME: LessonRuntimeConfig = {
     },
     {
       id: "source-picture",
-      title: "Student workbook Problem Set",
+      title: "Teacher Edition Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Ted buys 3 books and a magazine at the book store. Each book costs $8. A magazine costs $4. $4 Magazine Books a. What is the total cost of the books? b. How much does Ted spend altogether? Problem 2: Seven children share 28 silly bands equally. 28 a. How many silly bands does each child get? b. How many silly bands do 3 children get? and assess the reasonableness of answers. Problem 3: Eighteen cups are equally packed into 6 boxes. Two boxes of cups break. How many cups are unbroken?",
-      teacherEditionBasis: "Module 1 student workbook, Lesson 20 Problem Set.",
+      teacherEditionBasis: "Module 1 Teacher Edition, Lesson 20 Problem Set.",
       visualModel: "tape-diagram"
     },
     {
@@ -93,8 +93,8 @@ export const M1_LESSON20_RUNTIME: LessonRuntimeConfig = {
         value: "Solve two-step word problems involving multiplication and division, and assess the reasonableness of answers."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 20 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 20 Problem Set."
       }
     ],
     "source-model": [
@@ -107,8 +107,8 @@ export const M1_LESSON20_RUNTIME: LessonRuntimeConfig = {
         value: "scarves are on sale for $4 each. Nina buys 2 scarves of each Adjust the level of support for each color. She also buys a hat that costs $4. How much does she problem according to the needs spend altogether? students demonstrate. Consider working with a small group to solve T: Compare this new problem with the Application Problem 3. Problem you just solved. What is different?"
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 20 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 20 Problem Set."
       }
     ],
     "source-meaning": [
@@ -121,22 +121,22 @@ export const M1_LESSON20_RUNTIME: LessonRuntimeConfig = {
         value: "Compare the structure of Problems 1 and 2 to the rest of the Problem Set. Problems 1 and 2 explicitly ask two questions to scaffold the two- step word problems. Problems 3-5 still require two steps but only ask one question"
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 20 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 20 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 1 student workbook, Lesson 20 Problem Set."
+        value: "Module 1 Teacher Edition, Lesson 20 Problem Set."
       },
       {
         label: "Source text",
         value: "Problem 1: Ted buys 3 books and a magazine at the book store. Each book costs $8. A magazine costs $4. $4 Magazine Books a. What is the total cost of the books? b. How much does Ted spend altogether? Problem 2: Seven children share 28 silly bands equally. 28 a. How many silly bands does each child get? b. How many silly bands do 3 children get? and assess the reasonableness of answers. Problem 3: Eighteen cups are equally packed into 6 boxes. Two boxes of cups break. How many cups are unbroken?"
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 20 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 20 Problem Set."
       }
     ],
     "source-draw": [
@@ -149,8 +149,8 @@ export const M1_LESSON20_RUNTIME: LessonRuntimeConfig = {
         value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. and assess the reasonableness of answers."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 20 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 20 Problem Set."
       }
     ],
     "source-exit": [
@@ -163,8 +163,8 @@ export const M1_LESSON20_RUNTIME: LessonRuntimeConfig = {
         value: "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 20 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 20 Problem Set."
       }
     ],
     "source-summary": [
@@ -177,8 +177,8 @@ export const M1_LESSON20_RUNTIME: LessonRuntimeConfig = {
         value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (9 minutes) Sprint: Skip-Count by 5 2.NBT.2 (9 minutes) Sprint: Skip-Count by 5 (9 minutes) Materials: (S) Skip-Count by 5 Sprint Note: This activity builds a foundation for multiplication using units of 5 through reviewing skip-counting from Grade 2. See Lesson 2 for the directions for administering a Sprint. Between Sprints, include the following group counting in place of movement exercises: Count by fours to 40, hum/talk forward and backward. (Hum as you think 1, 2, 3; say 4. Hum as you think 5, 6, 7; say 8, etc.) Count by sixes to 4..."
       },
       {
-        label: "Workbook",
-        value: "Module 1 student workbook, Lesson 20 Problem Set."
+        label: "Teacher Edition",
+        value: "Module 1 Teacher Edition, Lesson 20 Problem Set."
       }
     ]
   }

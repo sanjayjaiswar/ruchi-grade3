@@ -58,7 +58,7 @@ export const M7_LESSON17_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: The shapes below are made up of rectangles. Label the unknown side lengths. Then, write and solve an equation to find the perimeter of each shape. 2 cm b. 5 ft a. 2 ft 3 cm 1 ft 2 cm 2 ft 2 ft 4 cm P= P= 2 yd c. d. 2 yd 4 yd 6m 2m 2 yd 2 yd 4m 2 yd 2m 7 yd 2m P= P= unknown measurements. Problem 2: Nathan draws and labels the square and rectangle below. Find the perimeter of the new shape. 6 cm 6 cm 12 cm Problem 3: Label the unknown side lengths. Then, find the perimeter of the shaded rectangle. 8 in a in b in 7 in 2 in 16 in unknown measurements.",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 17 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 17 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -98,7 +98,7 @@ export const M7_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 17 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 17 Problem Set."
       }
     ],
     "source-model": [
@@ -112,7 +112,7 @@ export const M7_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 17 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 17 Problem Set."
       }
     ],
     "source-meaning": [
@@ -126,13 +126,13 @@ export const M7_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 17 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 17 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 17 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 17 Problem Set."
       },
       {
         label: "Source text",
@@ -140,7 +140,7 @@ export const M7_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 17 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 17 Problem Set."
       }
     ],
     "source-draw": [
@@ -154,7 +154,7 @@ export const M7_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 17 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 17 Problem Set."
       }
     ],
     "source-exit": [
@@ -168,7 +168,7 @@ export const M7_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 17 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 17 Problem Set."
       }
     ],
     "source-summary": [
@@ -182,7 +182,7 @@ export const M7_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 17 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 17 Problem Set."
       }
     ]
   }

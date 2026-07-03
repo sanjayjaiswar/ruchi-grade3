@@ -56,7 +56,7 @@ export const M7_LESSON18_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Use unit squares to build as many rectangles as you can with an area of 24 square units. Shade in squares on your grid paper to represent each rectangle that you made with an area of 24 square units. a. Estimate to draw and label the side lengths of each rectangle you built in Problem 1. Then, find the perimeter of each rectangle. One rectangle is done for you. 24 units 1 unit P = 24 units + 1 unit + 24 units + 1 unit = 50 units b. The areas of the rectangles in part (a) above are all the same. What do you notice about the perimeters? determine the perimeters. Problem 2: Use unit square tiles to build as many rectangles as you can with an area of 16 square units. Estimate to draw each rectangle below. Label the side lengths. a. Find the perimeters of the rectangles you built. b. What is the perimeter of the square? Explain how you found your answer. Problem 3: Doug uses square unit tiles to build rectangles with an area of 15 square units. He draws the rectangles as shown...",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 18 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 18 Problem Set.",
       visualModel: "geometry"
     },
     {
@@ -96,7 +96,7 @@ export const M7_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 18 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 18 Problem Set."
       }
     ],
     "source-model": [
@@ -110,7 +110,7 @@ export const M7_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 18 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 18 Problem Set."
       }
     ],
     "source-meaning": [
@@ -124,13 +124,13 @@ export const M7_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 18 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 18 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 18 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 18 Problem Set."
       },
       {
         label: "Source text",
@@ -138,7 +138,7 @@ export const M7_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 18 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 18 Problem Set."
       }
     ],
     "source-draw": [
@@ -152,7 +152,7 @@ export const M7_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 18 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 18 Problem Set."
       }
     ],
     "source-exit": [
@@ -166,7 +166,7 @@ export const M7_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 18 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 18 Problem Set."
       }
     ],
     "source-summary": [
@@ -180,7 +180,7 @@ export const M7_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 18 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 18 Problem Set."
       }
     ]
   }

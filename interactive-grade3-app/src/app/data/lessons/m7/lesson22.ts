@@ -65,7 +65,7 @@ export const M7_LESSON22_RUNTIME: LessonRuntimeConfig = {
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
       studentPrompt: "Problem 1: Use the data you gathered from your Problem Sets to create a line plot for the number of rectangles you created with each given perimeter. Number of Rectangles Made with a Given Perimeter Perimeter Measurements in Units X = 1 Rectangle Problem 2: Why are all of the perimeter measurements even? Do all rectangles have an even perimeter? Lessons 20 and 21. Problem 3: Compare the two line plots we created. Is there any reason to think that knowing only the area of a rectangle would help you to figure out its perimeter or knowing only the perimeter of a rectangle would help you figure out its area?",
-      teacherEditionBasis: "Module 7 student workbook, Lesson 22 Problem Set.",
+      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 22 Problem Set.",
       visualModel: "graph"
     },
     {
@@ -105,7 +105,7 @@ export const M7_LESSON22_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 22 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 22 Problem Set."
       }
     ],
     "source-model": [
@@ -119,7 +119,7 @@ export const M7_LESSON22_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 22 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 22 Problem Set."
       }
     ],
     "source-meaning": [
@@ -133,13 +133,13 @@ export const M7_LESSON22_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 22 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 22 Problem Set."
       }
     ],
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 student workbook, Lesson 22 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 22 Problem Set."
       },
       {
         label: "Source text",
@@ -147,7 +147,7 @@ export const M7_LESSON22_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 22 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 22 Problem Set."
       }
     ],
     "source-draw": [
@@ -161,7 +161,7 @@ export const M7_LESSON22_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 22 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 22 Problem Set."
       }
     ],
     "source-exit": [
@@ -175,7 +175,7 @@ export const M7_LESSON22_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 22 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 22 Problem Set."
       }
     ],
     "source-summary": [
@@ -189,7 +189,7 @@ export const M7_LESSON22_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Workbook",
-        value: "Module 7 student workbook, Lesson 22 Problem Set."
+        value: "Module 7 Teacher Edition, Lesson 22 Problem Set."
       }
     ]
   }
