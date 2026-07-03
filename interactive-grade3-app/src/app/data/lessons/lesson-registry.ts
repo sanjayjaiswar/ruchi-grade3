@@ -19,6 +19,7 @@ import { M1_LESSON18_RUNTIME } from './m1/lesson18';
 import { M1_LESSON19_RUNTIME } from './m1/lesson19';
 import { M1_LESSON20_RUNTIME } from './m1/lesson20';
 import { M1_LESSON21_RUNTIME } from './m1/lesson21';
+import { M1_PROBLEM_SET_CENTERED_LESSONS } from './m1/problem-set-centered';
 import { M2_LESSON1_RUNTIME } from './m2/lesson1';
 import { M2_LESSON2_RUNTIME } from './m2/lesson2';
 import { M2_LESSON3_RUNTIME } from './m2/lesson3';
@@ -308,5 +309,15 @@ const LESSON_RUNTIME_BY_ID: Record<string, LessonRuntimeConfig> = {
 };
 
 export function findLessonRuntime(moduleId: string, lessonNumber: number): LessonRuntimeConfig | undefined {
-  return LESSON_RUNTIME_BY_ID[`${moduleId}-l${lessonNumber}`];
+  const runtime = LESSON_RUNTIME_BY_ID[`${moduleId}-l${lessonNumber}`];
+  if (!runtime) {
+    return undefined;
+  }
+
+  if (moduleId !== 'm1') {
+    return runtime;
+  }
+
+  const problemSetCenteredLesson = runtime.problemSetCenteredLesson ?? M1_PROBLEM_SET_CENTERED_LESSONS[lessonNumber];
+  return problemSetCenteredLesson ? { ...runtime, problemSetCenteredLesson } : runtime;
 }

@@ -1,7 +1,7 @@
 # Problem-Set-Centered Lesson Design
 
 Date: 2026-07-03
-Status: Proposed standard, Lesson 12 pilot first
+Status: Active standard; Lesson 12 pilot replicated across Module 1 runtime data with remaining visual QA gaps
 
 ## 1. Central Idea
 
@@ -28,6 +28,13 @@ Lesson Concept
 Problem Set With Solved Explanation
 Short Summary
 ```
+
+2026-07-03 Module 1 replication note:
+
+- Module 1 Lessons 1-11 and 13-21 now use the problem-set-centered runtime shape through a Module 1-only source-backed data map.
+- Lesson 12 keeps the bespoke pilot data and remains the fidelity benchmark.
+- The shared renderer now handles the additional Module 1 model families needed for replication: arrays, decomposed arrays, equation workspaces, and two-step word-problem solutions.
+- Remaining gap: visual/browser QA and cropped source-thumbnail fidelity are still pending; the current Module 1 pass uses typed solved reconstructions and shared visual scaffolds.
 
 ## 2. Source Of Truth
 

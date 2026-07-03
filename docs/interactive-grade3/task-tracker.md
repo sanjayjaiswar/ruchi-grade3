@@ -46,6 +46,7 @@ Status: Active planning
 | Problem Set blank/solved mode | Done | Lesson 12 pilot uses one Problem Set tab with internal `Blank | Solved` mode. Blank is source-visual student work with official blanks/templates; Solved is the review/teaching view. |
 | Problem Set control hierarchy | Done | Lesson 12 establishes the global authored-lesson standard: section tabs are primary controls, `Blank/Solved` is a distinct mode switch, and Problem 1-N bookmarks are blue underlined local text links, not blue pill buttons. |
 | CSS architecture for lesson work | Done | Common lesson CSS stays common; reusable problem-set-centered layout belongs in a shared stylesheet; module/lesson-specific CSS exists only for true customization. |
+| Module 1 problem-set-centered replication | Done with gaps | Lessons 1-11 and 13-21 now receive Module 1-only problem-set-centered runtime data; Lesson 12 keeps its bespoke pilot data. Remaining gaps: browser/screenshot QA was not run, and some image-heavy workbook items use typed source-backed reconstructions rather than cropped Teacher Edition thumbnails. |
 
 ## 3. Phase Tracker
 
@@ -130,6 +131,7 @@ Status: Active planning
 | Student theme redesign | Done | Codex | Reduced blue usage, improved text contrast, added module colors, shortened drawer labels, collapsed teacher source panel, and recolored math manipulatives. |
 | Task tracker update | Done | Codex | This document updated after implementation. |
 | Lesson 12 pilot docs update | Done | Codex | Requirements, operations, research, design, playbook, README, and task docs updated for top section tabs and shared CSS/customization boundaries. |
+| Module 1 problem-set-centered replication | Done with gaps | Codex | Module 1 lessons now use Concept / Problem Set / Summary with `Blank | Solved` mode; `npm run build` passed and Module 1-only source map validation passed. Browser/screenshot QA remains pending explicit authorization. |
 
 ## 4. Backlog
 
@@ -170,7 +172,7 @@ Status: Active planning
 - PDF export.
 - Practice history.
 - Lesson 12 pilot: replace the current 8-tab lesson flow with concept, official Problem Set solved explanations, source-backed visuals/animations, and short summary.
-- After Lesson 12 acceptance, replicate the problem-set-centered pattern lesson by lesson from each official Teacher Edition and Student Workbook source.
+- After Lesson 12 acceptance, replicate the problem-set-centered pattern lesson by lesson from each official Teacher Edition and Student Workbook source. Module 1 runtime replication is complete with remaining visual QA and source-thumbnail fidelity gaps.
 - Replicate the Lesson 12 control hierarchy across future authored modules and lessons: primary section tabs, distinct Blank/Solved mode switch, and blue underlined Problem jump links.
 - Keep `problem-set-centered-lesson-design.md` and `lesson-12-implementation-research.md` as the current source of requirements for this pilot. Do not revive older tab/step requirements unless they directly support the new design.
 - Keep common Problem Set presentation reusable. Add module/lesson CSS only when a real customization requirement appears.
@@ -237,6 +239,9 @@ Status: Active planning
 | 2026-07-03 | Lesson 12 navigation color hierarchy | Passed | `npm run build` passed; Chrome verified section tabs use distinct colors, Blank mode and blank equation chips use warm/yellow styling, Solved uses green, and Problem 1-6 jumps are lightweight blue text links. |
 | 2026-07-03 | Problem-set-centered global control standard documented | Passed | Worktree, requirements, design, and task docs now require future authored lessons to reuse the Lesson 12 control hierarchy instead of reverting to all-blue pill controls. |
 | 2026-07-03 | Problem jump link color correction | Passed | `npm run build` passed after switching Problem 1-N bookmarks from gray text links to normal blue underlined local links and updating the standard docs. |
+| 2026-07-03 | Module 1 workbook source extraction/render | Passed for authoring | Extracted Module 1 Student Workbook and Teacher Edition layout text under `tmp/module1-problemset-source/`; rendered Student Workbook pages locally for visual checks on image-dependent items. |
+| 2026-07-03 | Module 1 problem-set-centered source map validation | Passed | Local Node validation confirmed Module 1 problem-set-centered runtime map covers Lessons 1-11 and 13-21; Lesson 12 remains the bespoke pilot data. |
+| 2026-07-03 | Module 1 problem-set-centered Angular build | Passed | `npm run build` completed after adding Module 1 problem-set-centered data and generic array/decomposition/two-step renderer support. |
 
 ## 7. Change Log
 
@@ -277,3 +282,5 @@ Status: Active planning
 | 2026-07-03 | Reworked Lesson 12 control hierarchy so Concept/Problem Set/Summary, Blank/Solved, and Problem 1-6 jumps no longer all look like the same blue pill controls. |
 | 2026-07-03 | Documented the Lesson 12 control hierarchy as the replication standard for all future problem-set-centered modules and lessons. |
 | 2026-07-03 | Corrected the Problem 1-N bookmark standard from gray links to normal blue underlined links without returning to pill styling. |
+| 2026-07-03 | Converted Module 1 runtime lessons to the problem-set-centered pattern: Lesson 12 keeps its bespoke pilot data, while Lessons 1-11 and 13-21 use a Module 1-only source-backed Problem Set data map with Blank/Solved support. |
+| 2026-07-03 | Generalized the shared problem-set renderer for Module 1 arrays, decomposed arrays, equation workspaces, and two-step word-problem solved views. |

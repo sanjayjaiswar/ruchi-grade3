@@ -514,8 +514,32 @@ export class LessonPage implements OnInit {
     return this.countSlots(problem.knownGroupCount ?? 2, 8);
   }
 
+  problemArrayRows(problem: ProblemSetCenteredProblem): number {
+    return Math.max(1, Math.min(problem.knownGroupCount ?? problem.quotient ?? 1, 12));
+  }
+
+  problemArrayColumns(problem: ProblemSetCenteredProblem): number {
+    return Math.max(1, Math.min(problem.knownGroupSize ?? problem.quotient ?? 1, 12));
+  }
+
+  problemArraySlots(problem: ProblemSetCenteredProblem): number[] {
+    return this.countSlots(this.problemArrayRows(problem) * this.problemArrayColumns(problem), 80);
+  }
+
   problemShareLabel(problem: ProblemSetCenteredProblem, index: number): string {
     return problem.shareLabels?.[index] ?? `${problem.groupLabel.slice(0, -1) || 'part'} ${index + 1}`;
+  }
+
+  problemSectionId(section: 'concept' | 'problem-set' | 'summary'): string {
+    const moduleId = this.module?.id ?? 'module';
+    const lessonNumber = this.lesson?.lessonNumber ?? 0;
+    return `${moduleId}-l${lessonNumber}-${section}`;
+  }
+
+  problemDomId(problemNumber: number): string {
+    const moduleId = this.module?.id ?? 'module';
+    const lessonNumber = this.lesson?.lessonNumber ?? 0;
+    return `${moduleId}-l${lessonNumber}-problem-${problemNumber}`;
   }
 
   showProblemSection(section: 'concept' | 'problem-set' | 'summary'): void {
@@ -527,7 +551,7 @@ export class LessonPage implements OnInit {
   }
 
   scrollToProblem(problemNumber: number): void {
-    const target = document.getElementById(`lesson12-problem-${problemNumber}`);
+    const target = document.getElementById(this.problemDomId(problemNumber));
     target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 

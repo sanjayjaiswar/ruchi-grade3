@@ -81,7 +81,14 @@ export type LessonAnimationModel = {
   focus: string[];
 };
 
-export type ProblemSetAnimationType = 'grouping-by-size' | 'equal-sharing' | 'tape-split' | 'fact-match';
+export type ProblemSetAnimationType =
+  | 'grouping-by-size'
+  | 'equal-sharing'
+  | 'tape-split'
+  | 'fact-match'
+  | 'array-model'
+  | 'decompose-array'
+  | 'two-step-model';
 
 export type ProblemSetBlankVisualType =
   | 'object-bank'
@@ -89,7 +96,10 @@ export type ProblemSetBlankVisualType =
   | 'fact-match'
   | 'tape-diagram'
   | 'bar-units'
-  | 'share-tape';
+  | 'share-tape'
+  | 'array-template'
+  | 'equation-workspace'
+  | 'open-workspace';
 
 export type ProblemSetFactMatch = {
   dividend: number;

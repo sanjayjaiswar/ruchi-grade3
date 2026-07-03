@@ -17,6 +17,14 @@ docs/interactive-grade3/lesson-12-implementation-research.md
 
 Any older implementation detail in this file that implies continuing the current 8-tab lesson flow is not a requirement for the new work.
 
+2026-07-03 Module 1 replication update:
+
+- Module 1 Lessons 1-11 and 13-21 now receive problem-set-centered runtime data from `interactive-grade3-app/src/app/data/lessons/m1/problem-set-centered.ts`.
+- Module 1 Lesson 12 remains the bespoke pilot implementation in `interactive-grade3-app/src/app/data/lessons/m1/lesson12.ts`.
+- The shared lesson renderer now supports Module 1 array, decomposed-array, equation-workspace, and two-step solved views in addition to the original Lesson 12 quotient/tape/grouping views.
+- Validation completed: `npm run build` passed, and a Module 1-only source map check confirmed coverage for Lessons 1-11 and 13-21.
+- Remaining gaps: browser/screenshot QA was not run; some image-heavy workbook items use typed source-backed reconstructions rather than cropped Teacher Edition solved thumbnails.
+
 ## 1. Implementation Objective
 
 Create a new Angular app inside the Grade3 workspace that uses structured lesson data extracted from the Eureka Math Grade 3 teacher editions and renders visual, interactive lesson experiences. The implementation should reuse architecture and design patterns from the EdZilla reference projects without modifying them.

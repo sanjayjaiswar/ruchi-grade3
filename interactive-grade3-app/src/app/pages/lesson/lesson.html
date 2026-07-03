@@ -71,7 +71,7 @@
 
     <section class="problem-centered-workspace" *ngIf="problemSetCenteredLesson as problemLesson">
       <ng-container [ngSwitch]="activeProblemSection">
-        <section id="lesson12-concept" class="problem-centered-panel" role="tabpanel" *ngSwitchCase="'concept'">
+        <section [id]="problemSectionId('concept')" class="problem-centered-panel" role="tabpanel" *ngSwitchCase="'concept'">
           <div class="problem-centered-concept">
             <div>
               <span class="eyebrow">Lesson concept</span>
@@ -89,7 +89,7 @@
             </aside>
           </div>
 
-          <section class="problem-centered-source-concepts" aria-label="Lesson 12 Teacher Edition concept development">
+          <section class="problem-centered-source-concepts" [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' Teacher Edition concept development'">
             <article *ngFor="let conceptSection of problemLesson.conceptSections">
               <div>
                 <h3>{{ conceptSection.title }}</h3>
@@ -105,7 +105,7 @@
           </section>
         </section>
 
-        <section id="lesson12-problem-set" class="problem-centered-panel problem-set-centered-list" aria-label="Lesson 12 solved problem set" role="tabpanel" *ngSwitchCase="'problem-set'">
+        <section [id]="problemSectionId('problem-set')" class="problem-centered-panel problem-set-centered-list" [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' solved problem set'" role="tabpanel" *ngSwitchCase="'problem-set'">
           <div class="problem-set-toolbar">
             <nav class="problem-bookmarks" aria-label="Problem bookmarks">
               <button type="button" *ngFor="let problem of problemLesson.problems" (click)="scrollToProblem(problem.number)">
@@ -130,7 +130,7 @@
             class="problem-solution-card"
             [class.is-blank-mode]="problemSetMode === 'blank'"
             *ngFor="let problem of problemLesson.problems"
-            [id]="'lesson12-problem-' + problem.number">
+            [id]="problemDomId(problem.number)">
             <div class="problem-solution-head">
               <span class="problem-number">Problem {{ problem.number }}</span>
               <h3>{{ problem.sourcePrompt }}</h3>
@@ -161,8 +161,13 @@
                   </div>
 
                   <div *ngSwitchCase="'fact-match'" class="blank-fact-match-source">
-                    <div *ngFor="let fact of problem.facts">
+                    <div *ngFor="let fact of problem.facts || []">
                       <span>{{ fact.dividend }} divided by {{ fact.divisor }}</span>
+                      <i></i>
+                      <em>____</em>
+                    </div>
+                    <div *ngFor="let equation of !problem.facts?.length ? problem.blankEquations || [] : []">
+                      <span>{{ equation }}</span>
                       <i></i>
                       <em>____</em>
                     </div>
@@ -194,6 +199,21 @@
                       </span>
                     </div>
                     <small>{{ problem.blankWorkspaceLabel }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'array-template'" class="blank-array-source">
+                    <strong>{{ problem.blankWorkspaceLabel || 'Complete the official array.' }}</strong>
+                    <div
+                      [style.gridTemplateColumns]="'repeat(' + problemArrayColumns(problem) + ', minmax(18px, 1fr))'"
+                      [attr.aria-label]="problemArrayRows(problem) + ' rows of ' + problemArrayColumns(problem)">
+                      <span *ngFor="let item of problemArraySlots(problem)"></span>
+                    </div>
+                    <small>{{ problemArrayRows(problem) }} {{ problem.groupLabel }} of {{ problemArrayColumns(problem) }} {{ problem.unitLabel }}</small>
+                  </div>
+
+                  <div *ngSwitchCase="'equation-workspace'" class="blank-equation-source">
+                    <strong>{{ problem.blankWorkspaceLabel || 'Use the official workbook equations and blanks.' }}</strong>
+                    <span *ngFor="let equation of problem.blankEquations">{{ equation }}</span>
                   </div>
 
                   <div *ngSwitchDefault class="blank-open-workspace">
@@ -245,10 +265,37 @@
                 </div>
 
                 <div *ngSwitchCase="'fact-match'" class="ps-fact-match-model" aria-label="Division fact matches">
-                  <div class="ps-fact-row" *ngFor="let fact of problem.facts">
+                  <div class="ps-fact-row" *ngFor="let fact of problem.facts || []">
                     <span>{{ fact.dividend }} divided by {{ fact.divisor }}</span>
                     <i></i>
                     <strong>{{ fact.quotient }}</strong>
+                  </div>
+                  <div class="ps-fact-row" *ngFor="let equation of !problem.facts?.length ? problem.equations : []">
+                    <span>{{ equation }}</span>
+                    <i></i>
+                    <strong>check</strong>
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="'array-model'" class="ps-array-model" aria-label="Array model">
+                  <strong>{{ problemArrayRows(problem) }} {{ problem.groupLabel }} of {{ problemArrayColumns(problem) }} {{ problem.unitLabel }}</strong>
+                  <div
+                    [style.gridTemplateColumns]="'repeat(' + problemArrayColumns(problem) + ', minmax(18px, 1fr))'">
+                    <span *ngFor="let item of problemArraySlots(problem)"></span>
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="'decompose-array'" class="ps-decompose-model" aria-label="Decomposed array model">
+                  <strong>{{ problem.solvedAnswer }}</strong>
+                  <div class="equation-list">
+                    <span *ngFor="let equation of problem.equations">{{ equation }}</span>
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="'two-step-model'" class="ps-two-step-model" aria-label="Two-step model">
+                  <strong>Step-by-step answer</strong>
+                  <div class="equation-list">
+                    <span *ngFor="let equation of problem.equations">{{ equation }}</span>
                   </div>
                 </div>
 
@@ -276,29 +323,29 @@
           </article>
         </section>
 
-        <section id="lesson12-summary" class="problem-centered-panel problem-centered-summary" role="tabpanel" *ngSwitchCase="'summary'">
+        <section [id]="problemSectionId('summary')" class="problem-centered-panel problem-centered-summary" role="tabpanel" *ngSwitchCase="'summary'">
           <div class="summary-hero">
             <span class="eyebrow">Summary</span>
-            <h3>Lesson 12 takeaway</h3>
+            <h3>Lesson {{ lesson.lessonNumber }} takeaway</h3>
             <p>{{ problemLesson.summary }}</p>
           </div>
 
-          <section class="summary-check-grid" aria-label="Lesson 12 validation checklist">
+          <section class="summary-check-grid" [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' validation checklist'">
             <article>
-              <strong>1. Name the total</strong>
-              <span>The total is the amount being divided. The Teacher Edition repeats that the total is known.</span>
+              <strong>1. Name the quantities</strong>
+              <span>Identify the groups, row size, total, or story parts before solving.</span>
             </article>
             <article>
-              <strong>2. Decide what the divisor tells</strong>
-              <span>It may tell how many groups there are, or how many are in each group.</span>
+              <strong>2. Match the model</strong>
+              <span>The drawing, tape diagram, array, or equation must use the same quantities as the official problem.</span>
             </article>
             <article>
-              <strong>3. Say what the quotient means</strong>
-              <span>The answer is not complete until it names groups, objects in each group, length, days, or dollars.</span>
+              <strong>3. Say what the answer means</strong>
+              <span>The answer is not complete until it names the correct unit in context.</span>
             </article>
           </section>
 
-          <section class="summary-meaning-map" aria-label="Problem Set quotient meanings">
+          <section class="summary-meaning-map" aria-label="Problem Set answer meanings">
             <h4>Problem Set meaning map</h4>
             <div>
               <article *ngFor="let problem of problemLesson.problems">
