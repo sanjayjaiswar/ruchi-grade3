@@ -5,6 +5,23 @@ export const M5_LESSON20_RUNTIME: LessonRuntimeConfig = {
     "equivalent fractions",
     "whole"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 20 animation: Recognize and show that equivalent fractions have the s...",
+    context: "T: The whole is all of the cubes.",
+    equation: "2/4; name the whole before naming the fraction",
+    teacherPrompt: "Invite students to share their models for Problems 2(a) expectations for explaining their and 2(b). Although answers will vary, students should reasonin...",
+    focus: [
+      "equivalent fractions",
+      "whole",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 4,
+    fractionShadedCount: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

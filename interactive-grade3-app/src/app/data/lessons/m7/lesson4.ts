@@ -6,6 +6,28 @@ export const M7_LESSON4_RUNTIME: LessonRuntimeConfig = {
     "angle",
     "right angle"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 4 animation: Compare and classify quadrilaterals.",
+    context: "T: We'll use these cards as tools.",
+    equation: "10 units of 20; unknown labeled from the story",
+    teacherPrompt: "How does grouping quadrilaterals by attributes, like you did in Problem 1, help us see the similarities and differences between the polygons?",
+    focus: [
+      "attribute",
+      "angle",
+      "tape diagram",
+      "source labels"
+    ],
+    groupCount: 10,
+    groupSize: 20,
+    rowCount: 10,
+    columnCount: 20,
+    tapePartCount: 10,
+    tapePartLabel: "20 each",
+    tapeWholeLabel: "200 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

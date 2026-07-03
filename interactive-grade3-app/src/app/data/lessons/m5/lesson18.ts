@@ -6,6 +6,33 @@ export const M5_LESSON18_RUNTIME: LessonRuntimeConfig = {
     "whole",
     "number line"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 18 animation: Compare fractions and whole numbers on the number line...",
+    context: "T: Look at the number line I've created on the floor.",
+    equation: "0 to 4 on equal intervals of 1",
+    teacherPrompt: "If necessary, review the toss portion of the lesson by having students draw each toss on a separate number line and then place the fractions on the same...",
+    focus: [
+      "fraction",
+      "whole",
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    numberLineJumps: [
+      "+1",
+      "+1",
+      "+1"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

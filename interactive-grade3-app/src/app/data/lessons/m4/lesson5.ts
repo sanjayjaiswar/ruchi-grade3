@@ -5,6 +5,28 @@ export const M4_LESSON5_RUNTIME: LessonRuntimeConfig = {
     "area",
     "square unit"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 5 animation: Form rectangles by tiling with unit squares to make arr...",
+    context: "Concrete: Understand the relationship between side lengths and area.",
+    equation: "2 x 3 = 6",
+    teacherPrompt: "Use square inch tiles to show this rectangle as an array. What information do we know?",
+    focus: [
+      "area",
+      "square unit",
+      "array",
+      "source labels"
+    ],
+    groupCount: 2,
+    groupSize: 3,
+    rowCount: 2,
+    columnCount: 3,
+    tapePartCount: 2,
+    tapePartLabel: "3",
+    tapeWholeLabel: "6 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

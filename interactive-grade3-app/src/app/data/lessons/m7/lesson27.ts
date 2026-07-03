@@ -7,6 +7,26 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
     "perimeter",
     "angle"
   ],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 27 animation: Use rectangles to draw a robot with specified perimeter...",
+    context: "Lesson 27: Use rectangles to draw a robot with specified perimeter 354 measurements, and reason about the different areas that may be produced",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "How was the student work you checked similar to the design you created? How was it different?",
+    focus: [
+      "area",
+      "square unit",
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "side length",
+      "side length",
+      "perimeter"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

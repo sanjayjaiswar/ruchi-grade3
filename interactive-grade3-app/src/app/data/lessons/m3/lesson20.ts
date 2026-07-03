@@ -7,6 +7,30 @@ export const M3_LESSON20_RUNTIME: LessonRuntimeConfig = {
     "multiplication",
     "array"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 20 animation: Use place value strategies and the associative property...",
+    context: "S: 4. to solve, as well as with the numbers T: Let's rewrite our equation. (Write (10 x 4) x 2.) they choose. Example prompts are Why do you think I put 10 x 4 in parentheses? given...",
+    equation: "10 x 4 = (5 x 4) + (5 x 4)",
+    teacherPrompt: "In Problem 1, which grouping is easier for you to solve? Why?",
+    focus: [
+      "factor",
+      "product",
+      "array",
+      "source labels"
+    ],
+    groupCount: 10,
+    groupSize: 4,
+    rowCount: 10,
+    columnCount: 4,
+    tapePartCount: 10,
+    tapePartLabel: "4",
+    tapeWholeLabel: "40 total",
+    firstPart: 5,
+    secondPart: 5
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

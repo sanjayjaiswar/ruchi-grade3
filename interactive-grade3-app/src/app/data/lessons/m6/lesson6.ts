@@ -5,6 +5,35 @@ export const M6_LESSON6_RUNTIME: LessonRuntimeConfig = {
     "line plot",
     "scale"
   ],
+  lessonAnimation: {
+    kind: "graph",
+    title: "Lesson 6 animation: Interpret measurement data from various line plots.",
+    context: "Use line plots with fractions to display measurement data.",
+    equation: "Read the scale, then compare or calculate from the graph data",
+    teacherPrompt: "(Project the line plot, but only reveal the number line, as shown below. Point to the tick mark between 1 and 2.) What should I label this tick mark on...",
+    focus: [
+      "line plot",
+      "scale",
+      "graph",
+      "source labels"
+    ],
+    graphBars: [
+      {
+        label: "Data A",
+        value: 1
+      },
+      {
+        label: "Data B",
+        value: 2
+      },
+      {
+        label: "Data C",
+        value: 1
+      }
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

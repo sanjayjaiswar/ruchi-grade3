@@ -5,6 +5,26 @@ export const M2_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "elapsed time",
     "number line"
   ],
+  lessonAnimation: {
+    kind: "clock",
+    title: "Lesson 2 animation: Relate skip-counting by fives on the clock and telling...",
+    context: "Part 1: Draw a number line and relate skip-counting by fives to skip-counting intervals of 5 minutes.",
+    equation: "5 sec start -> 5 sec elapsed -> 7 sec end",
+    teacherPrompt: "Model the Application Problem using the tape diagram on the template",
+    focus: [
+      "elapsed time",
+      "number line",
+      "clock",
+      "source labels"
+    ],
+    clockLabels: [
+      "5 sec start",
+      "5 sec elapsed",
+      "7 sec end"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

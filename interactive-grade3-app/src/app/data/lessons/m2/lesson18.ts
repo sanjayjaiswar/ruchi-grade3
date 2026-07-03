@@ -4,6 +4,28 @@ export const M2_LESSON18_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "decompose"
   ],
+  lessonAnimation: {
+    kind: "measurement",
+    title: "Lesson 18 animation: Decompose once to subtract measurements including three...",
+    context: "Part 1: Use the place value chart to model decomposing once to subtract with three-digit minuends.",
+    equation: "Measure and label in kg; keep the unit with the number",
+    teacherPrompt: "What is the relationship between Problems 1(a), 1(b), and 1(c)?",
+    focus: [
+      "decompose",
+      "measurement",
+      "source labels"
+    ],
+    measurementTicks: [
+      "1 kg",
+      "1 kg",
+      "1 kg",
+      "60 kg",
+      "24 kg",
+      "24 kg"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

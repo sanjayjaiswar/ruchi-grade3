@@ -5,6 +5,25 @@ export const M4_LESSON9_RUNTIME: LessonRuntimeConfig = {
     "distributive property",
     "area"
   ],
+  lessonAnimation: {
+    kind: "area-model",
+    title: "Lesson 9 animation: Analyze different rectangles and reason about their area.",
+    context: "Problems 1 and 2 in the Problem Set T: How can we cut this centimeter grid to get 2 equal we can make 2 equal rectangles.",
+    equation: "3 rows x 2 columns = 6 square units",
+    teacherPrompt: "Talk to a partner: In Problem 1(a), how does knowing the side lengths of the grid help you find the side lengths of the small rectangles without counting?",
+    focus: [
+      "distributive property",
+      "area",
+      "area model",
+      "source labels"
+    ],
+    areaRows: 3,
+    areaColumns: 2,
+    rowCount: 3,
+    columnCount: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

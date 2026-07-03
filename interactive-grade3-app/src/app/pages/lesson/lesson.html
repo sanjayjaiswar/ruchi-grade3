@@ -46,6 +46,122 @@
         <p>{{ activeStep.studentPrompt }}</p>
       </div>
 
+      <section
+        class="lesson-animation-panel"
+        *ngIf="lessonAnimation as animation"
+        [attr.data-kind]="animation.kind"
+        aria-label="Lesson animation model">
+        <div class="lesson-animation-copy">
+          <span class="eyebrow">Animation</span>
+          <h3>{{ animation.title }}</h3>
+          <p>{{ animation.context }}</p>
+          <div class="lesson-animation-equation">{{ animation.equation }}</div>
+        </div>
+
+        <div class="lesson-animation-stage">
+          <ng-container [ngSwitch]="animation.kind">
+            <div *ngSwitchCase="'equal-groups'" class="lesson-animation-groups" aria-label="Animated equal groups model">
+              <div class="lesson-animation-group" *ngFor="let group of lessonAnimationGroups">
+                <span *ngFor="let item of lessonAnimationGroupItems"></span>
+                <small>Group {{ group }}</small>
+              </div>
+            </div>
+
+            <div *ngSwitchCase="'array'" class="lesson-animation-array-wrap" aria-label="Animated array model">
+              <div
+                class="lesson-animation-array"
+                [style.gridTemplateColumns]="'repeat(' + (animation.columnCount || 4) + ', minmax(12px, 18px))'">
+                <span
+                  *ngFor="let dot of lessonAnimationArrayDots; let dotIndex = index"
+                  [ngClass]="lessonAnimationDotClass(dotIndex)"></span>
+              </div>
+              <div class="lesson-animation-split-note" *ngIf="animation.firstPart">
+                {{ animation.firstPart }} rows + {{ animation.secondPart }} rows
+              </div>
+            </div>
+
+            <div *ngSwitchCase="'tape-diagram'" class="lesson-animation-tape" aria-label="Animated tape diagram model">
+              <strong>{{ animation.tapeWholeLabel || 'whole' }}</strong>
+              <div
+                class="lesson-animation-tape-parts"
+                [style.gridTemplateColumns]="'repeat(' + lessonAnimationTapeParts.length + ', minmax(34px, 1fr))'">
+                <span *ngFor="let part of lessonAnimationTapeParts">{{ animation.tapePartLabel || 'unit' }}</span>
+              </div>
+            </div>
+
+            <div *ngSwitchCase="'number-line'" class="lesson-animation-number-line" aria-label="Animated number line model">
+              <div class="lesson-animation-line-track">
+                <span *ngFor="let label of lessonAnimationNumberLineLabels"></span>
+                <i *ngFor="let jump of lessonAnimationNumberLineJumps">{{ jump }}</i>
+              </div>
+              <div class="lesson-animation-line-labels">
+                <span *ngFor="let label of lessonAnimationNumberLineLabels">{{ label }}</span>
+              </div>
+            </div>
+
+            <div *ngSwitchCase="'clock'" class="lesson-animation-clock" aria-label="Animated clock model">
+              <div class="lesson-animation-clock-face">
+                <span class="clock-mark twelve">12</span>
+                <span class="clock-mark three">3</span>
+                <span class="clock-mark six">6</span>
+                <span class="clock-mark nine">9</span>
+                <i class="minute-hand"></i>
+                <b class="hour-hand"></b>
+              </div>
+              <div class="lesson-animation-clock-labels">
+                <span *ngFor="let label of lessonAnimationClockLabels">{{ label }}</span>
+              </div>
+            </div>
+
+            <div *ngSwitchCase="'measurement'" class="lesson-animation-measurement" aria-label="Animated measurement model">
+              <div class="lesson-animation-measure-track">
+                <span *ngFor="let tick of lessonAnimationMeasurementTicks">{{ tick }}</span>
+              </div>
+            </div>
+
+            <div *ngSwitchCase="'area-model'" class="lesson-animation-area" aria-label="Animated area model">
+              <div
+                class="lesson-animation-area-grid"
+                [style.gridTemplateColumns]="'repeat(' + (animation.areaColumns || animation.columnCount || 4) + ', minmax(20px, 1fr))'">
+                <span *ngFor="let tile of lessonAnimationAreaTiles"></span>
+              </div>
+            </div>
+
+            <div *ngSwitchCase="'fraction-strip'" class="lesson-animation-fraction" aria-label="Animated fraction strip model">
+              <div
+                class="lesson-animation-fraction-strip"
+                [style.gridTemplateColumns]="'repeat(' + lessonAnimationFractionParts.length + ', minmax(28px, 1fr))'">
+                <span
+                  *ngFor="let part of lessonAnimationFractionParts; let partIndex = index"
+                  [class.is-shaded]="partIndex < (animation.fractionShadedCount || 0)"></span>
+              </div>
+            </div>
+
+            <div *ngSwitchCase="'graph'" class="lesson-animation-graph" aria-label="Animated graph model">
+              <div class="lesson-animation-graph-bars">
+                <span *ngFor="let bar of lessonAnimationGraphBars">
+                  <i [style.height.px]="lessonAnimationGraphBarHeight(bar.value)"></i>
+                  <small>{{ bar.label }}</small>
+                </span>
+              </div>
+            </div>
+
+            <div *ngSwitchDefault class="lesson-animation-geometry" aria-label="Animated geometry model">
+              <div class="lesson-animation-polygon">
+                <span *ngFor="let label of lessonAnimationGeometryLabels">{{ label }}</span>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+
+        <div class="lesson-animation-notes">
+          <strong>{{ animation.teacherPrompt }}</strong>
+          <ul>
+            <li *ngFor="let focus of animation.focus">{{ focus }}</li>
+          </ul>
+        </div>
+      </section>
+
       <section class="concept-first-panel" *ngIf="showConceptFirstPanel" aria-label="Concept explanation first">
         <div class="concept-first-head">
           <span class="eyebrow">Concept first</span>

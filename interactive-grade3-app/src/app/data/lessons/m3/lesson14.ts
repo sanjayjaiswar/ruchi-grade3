@@ -7,6 +7,30 @@ export const M3_LESSON14_RUNTIME: LessonRuntimeConfig = {
     "multiplication",
     "array"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 14 animation: Identify and use arithmetic patterns to multiply.",
+    context: "T: How is the 9 = 10 – 1 strategy, or add ten, subtract 1, from the last lesson used to solve 2 x 9?",
+    equation: "9 x 10 = (5 x 10) + (4 x 10)",
+    teacherPrompt: "Invite students to explain the strategy used in each problem",
+    focus: [
+      "factor",
+      "product",
+      "array",
+      "source labels"
+    ],
+    groupCount: 9,
+    groupSize: 10,
+    rowCount: 9,
+    columnCount: 10,
+    tapePartCount: 9,
+    tapePartLabel: "10",
+    tapeWholeLabel: "90 total",
+    firstPart: 5,
+    secondPart: 4
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

@@ -5,6 +5,23 @@ export const M5_LESSON4_RUNTIME: LessonRuntimeConfig = {
     "fraction",
     "whole"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 4 animation: Represent and identify fractional parts of different wh...",
+    context: "Before the museum walk, chart and review the following points.",
+    equation: "2/3; name the whole before naming the fraction",
+    teacherPrompt: "What was the same at each station? What was different?",
+    focus: [
+      "fraction",
+      "whole",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 3,
+    fractionShadedCount: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

@@ -6,6 +6,25 @@ export const M4_LESSON7_RUNTIME: LessonRuntimeConfig = {
     "area",
     "square unit"
   ],
+  lessonAnimation: {
+    kind: "area-model",
+    title: "Lesson 7 animation: Interpret area models to form rectangular arrays.",
+    context: "Part 1: Explore the relationship between units and area.",
+    equation: "3 rows x 3 columns = 9 square units",
+    teacherPrompt: "One partner will use square inches, and the other will use square centimeters. Work together to decide how to arrange your tiles to make the same shape...",
+    focus: [
+      "array",
+      "area",
+      "area model",
+      "source labels"
+    ],
+    areaRows: 3,
+    areaColumns: 3,
+    rowCount: 3,
+    columnCount: 3
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

@@ -5,6 +5,28 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
     "area",
     "perimeter"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 23 animation: Solve a variety of word problems with perimeter.",
+    context: "Gale makes a miniature stop sign, a regular octagon, with a perimeter of 48 centimeters for the town he built with blocks.",
+    equation: "10 units of 8; unknown labeled from the story",
+    teacherPrompt: "How was setting up the problem to solve Problem 1 different from setting up the other problems? What did you need to know about the stop sign before you...",
+    focus: [
+      "area",
+      "perimeter",
+      "tape diagram",
+      "source labels"
+    ],
+    groupCount: 10,
+    groupSize: 8,
+    rowCount: 10,
+    columnCount: 8,
+    tapePartCount: 10,
+    tapePartLabel: "8 each",
+    tapeWholeLabel: "80 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

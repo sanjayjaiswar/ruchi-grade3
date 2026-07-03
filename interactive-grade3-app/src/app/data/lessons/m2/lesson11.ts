@@ -7,6 +7,29 @@ export const M2_LESSON11_RUNTIME: LessonRuntimeConfig = {
     "liter",
     "milliliter"
   ],
+  lessonAnimation: {
+    kind: "measurement",
+    title: "Lesson 11 animation: Solve mixed word problems involving all four operations...",
+    context: "hamster weighs 126 grams more than the mouse.",
+    equation: "Measure and label in kg; keep the unit with the number",
+    teacherPrompt: "What models did you use to solve the word problems?",
+    focus: [
+      "gram",
+      "kilogram",
+      "measurement",
+      "source labels"
+    ],
+    measurementTicks: [
+      "10 kg",
+      "82 kg",
+      "10 kg",
+      "68 kg",
+      "5 kg",
+      "45 kg"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

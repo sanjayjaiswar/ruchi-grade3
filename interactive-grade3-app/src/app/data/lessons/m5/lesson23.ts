@@ -7,6 +7,33 @@ export const M5_LESSON23_RUNTIME: LessonRuntimeConfig = {
     "whole",
     "number line"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 23 animation: Generate simple equivalent fractions by using visual fr...",
+    context: "Students work in pairs. Each pair receives one sentence strip and an Example Index Cards for Group A index card. The index card designates endpoints on a number line and a unit with...",
+    equation: "0 to 20 on equal intervals of 5",
+    teacherPrompt: "Could you have compared the number line you made in today's lesson to a number line from a different group? What would the result be?",
+    focus: [
+      "equivalent fractions",
+      "fraction",
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "0",
+      "5",
+      "10",
+      "15",
+      "20"
+    ],
+    numberLineJumps: [
+      "+5",
+      "+5",
+      "+5"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

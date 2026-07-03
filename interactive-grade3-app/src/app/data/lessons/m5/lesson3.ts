@@ -7,6 +7,23 @@ export const M5_LESSON3_RUNTIME: LessonRuntimeConfig = {
     "fraction",
     "whole"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 3 animation: Specify and partition a whole into equal parts, identif...",
+    context: "T: I have a rectangle. I want to split it into 4 equal parts. Fold the paper so the parts are not the same size. Then, open it up to draw the lines where it was folded and show the c...",
+    equation: "2/6; name the whole before naming the fraction",
+    teacherPrompt: "What is the same about fair shares of a jug of milk and fair shares of a candy bar? What is different? (Though a fraction of a jug of milk and a fractio...",
+    focus: [
+      "area",
+      "square unit",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 6,
+    fractionShadedCount: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

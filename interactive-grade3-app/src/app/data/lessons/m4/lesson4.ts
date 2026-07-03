@@ -2,6 +2,23 @@ import type { LessonRuntimeConfig } from '../lesson-runtime.types';
 
 export const M4_LESSON4_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
+  lessonAnimation: {
+    kind: "area-model",
+    title: "Lesson 4 animation: Relate side lengths with the number of tiles on a side.",
+    context: "T: Why is it important to avoid gaps or overlaps when we measure area?",
+    equation: "5 rows x 4 columns = 20 square units",
+    teacherPrompt: "Tell a partner how you could use square centimeter tiles to check your work in Problem 1",
+    focus: [
+      "area model",
+      "source labels"
+    ],
+    areaRows: 5,
+    areaColumns: 4,
+    rowCount: 5,
+    columnCount: 4
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

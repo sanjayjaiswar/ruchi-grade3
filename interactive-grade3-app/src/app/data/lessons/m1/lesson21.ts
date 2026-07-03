@@ -2,6 +2,25 @@ import type { LessonRuntimeConfig } from '../lesson-runtime.types';
 
 export const M1_LESSON21_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 21 animation: choose operations for a two-step story",
+    context: "Show a whole, remove a known part, then divide the remaining amount into equal groups.",
+    equation: "(24 - 6) divided by 3 = 6",
+    teacherPrompt: "Why do these operations match the order of the story?",
+    groupCount: 3,
+    groupSize: 6,
+    rowCount: 3,
+    columnCount: 6,
+    tapePartCount: 3,
+    tapePartLabel: "6",
+    tapeWholeLabel: "18 after step 1",
+    focus: [
+      "Operation choice",
+      "Two equations",
+      "Reasonableness"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

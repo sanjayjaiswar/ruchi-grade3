@@ -4,6 +4,25 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "perimeter"
   ],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 11 animation: Tessellate to understand perimeter as the boundary of a...",
+    context: "Use the teacher-edition lesson pages to teach: Tessellate to understand perimeter as the boundary of a shape.",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "Explain to a partner the steps you used to tessellate your shape in Problem 1(a)",
+    focus: [
+      "perimeter",
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "side length",
+      "side length",
+      "perimeter"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

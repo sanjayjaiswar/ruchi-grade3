@@ -5,6 +5,28 @@ export const M3_LESSON9_RUNTIME: LessonRuntimeConfig = {
     "decompose",
     "distributive property"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 9 animation: Model the associative property as a strategy to multiply.",
+    context: "T: (Write 16 x 3.) This is a difficult problem for a third grader to solve.",
+    equation: "10 x 3 = 30",
+    teacherPrompt: "(Write 16 x 3.) This is a difficult problem for a third grader to solve. Let's simplify it. Work with your partner to list factors that have a product o...",
+    focus: [
+      "decompose",
+      "distributive property",
+      "array",
+      "source labels"
+    ],
+    groupCount: 10,
+    groupSize: 3,
+    rowCount: 10,
+    columnCount: 3,
+    tapePartCount: 10,
+    tapePartLabel: "3",
+    tapeWholeLabel: "30 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

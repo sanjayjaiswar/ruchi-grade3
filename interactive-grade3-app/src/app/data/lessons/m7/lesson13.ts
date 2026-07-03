@@ -5,6 +5,26 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
     "attribute",
     "perimeter"
   ],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 13 animation: Explore perimeter as an attribute of plane figures and...",
+    context: "T: (Project the shape to the right.) How can you use the information in this picture to find the perimeter of the shape?",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "Tell a partner the names of the shapes in Problem 1. Be as specific as possible. What information helped you name each shape?",
+    focus: [
+      "attribute",
+      "perimeter",
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "side length",
+      "side length",
+      "perimeter"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

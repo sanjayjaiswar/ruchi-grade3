@@ -4,6 +4,26 @@ export const M3_LESSON18_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "tape diagram"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 18 animation: Solve two-step word problems involving all four operati...",
+    context: "Joe earn each week? T: Draw a model to show the total amount of money Joe has in the bank at the end of the 7 weeks. At my signal, show me your personal white board. (Signal.) T: Do...",
+    equation: "7 units of 6; unknown labeled from the story",
+    teacherPrompt: "Draw a model to show the total amount of money Joe has in the bank at the end of the 7 weeks. At my signal, show me your personal white board. (Signal.)",
+    focus: [
+      "tape diagram",
+      "source labels"
+    ],
+    groupCount: 7,
+    groupSize: 6,
+    rowCount: 7,
+    columnCount: 6,
+    tapePartCount: 7,
+    tapePartLabel: "6 each",
+    tapeWholeLabel: "42 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

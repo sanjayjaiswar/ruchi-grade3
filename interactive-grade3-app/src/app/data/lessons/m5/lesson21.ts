@@ -7,6 +7,33 @@ export const M5_LESSON21_RUNTIME: LessonRuntimeConfig = {
     "whole",
     "number line"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 21 animation: Recognize and show that equivalent fractions refer to t...",
+    context: "T: Glue your fraction strip at the top of a new page in Ask the following: your math journal.",
+    equation: "4 to 24 on equal intervals of 5",
+    teacherPrompt: "After students have checked their work for Problems 4 and 5, ask them to use the fraction strips in their math journals to see if they can 3 name anothe...",
+    focus: [
+      "equivalent fractions",
+      "fraction",
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "4",
+      "9",
+      "14",
+      "19",
+      "24"
+    ],
+    numberLineJumps: [
+      "+5",
+      "+5",
+      "+5"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

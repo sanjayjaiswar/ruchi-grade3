@@ -5,6 +5,25 @@ export const M1_LESSON3_RUNTIME: LessonRuntimeConfig = {
     "factor",
     "array"
   ],
+  lessonAnimation: {
+    kind: "equal-groups",
+    title: "Lesson 3 animation: interpret both factors",
+    context: "Show 4 groups of 3 and pause on each factor before naming the total.",
+    equation: "4 groups of 3 = 12",
+    teacherPrompt: "Does this factor tell the number of groups or the size of each group?",
+    groupCount: 4,
+    groupSize: 3,
+    rowCount: 4,
+    columnCount: 3,
+    tapePartCount: 4,
+    tapePartLabel: "3",
+    tapeWholeLabel: "12 total",
+    focus: [
+      "Number of groups",
+      "Size of each group",
+      "Meaning before product"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

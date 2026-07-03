@@ -5,6 +5,28 @@ export const M3_LESSON19_RUNTIME: LessonRuntimeConfig = {
     "factor",
     "product"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 19 animation: Multiply by multiples of 10 using the place value chart.",
+    context: "Mia has 152 beads. She uses some to make bracelets. Now there are 80 beads. If she uses 8 beads for each bracelet,",
+    equation: "10 x 10 = 100",
+    teacherPrompt: "How do the disks in Problem 1 show the strategy we learned today?",
+    focus: [
+      "factor",
+      "product",
+      "array",
+      "source labels"
+    ],
+    groupCount: 10,
+    groupSize: 10,
+    rowCount: 10,
+    columnCount: 10,
+    tapePartCount: 10,
+    tapePartLabel: "10",
+    tapeWholeLabel: "100 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

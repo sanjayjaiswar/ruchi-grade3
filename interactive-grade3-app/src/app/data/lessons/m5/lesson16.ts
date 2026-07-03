@@ -6,6 +6,33 @@ export const M5_LESSON16_RUNTIME: LessonRuntimeConfig = {
     "whole",
     "number line"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 16 animation: Place whole number fractions and fractions between whol...",
+    context: "T: Draw a number line on your board with the endpoints 1 2 1 and 2.",
+    equation: "1 to 9 on equal intervals of 2",
+    teacherPrompt: "In Problem 1, what fractions are equivalent to, or at the exact same point as, 3 on the number line?",
+    focus: [
+      "fraction",
+      "whole",
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "1",
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    numberLineJumps: [
+      "+2",
+      "+2",
+      "+2"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

@@ -5,6 +5,23 @@ export const M5_LESSON8_RUNTIME: LessonRuntimeConfig = {
     "fraction",
     "whole"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 8 animation: Represent parts of one whole as fractions with number b...",
+    context: "Problem 2: Decompose 1 into fourths.",
+    equation: "2/4; name the whole before naming the fraction",
+    teacherPrompt: "Share different representations for Problem 6 about the hamburger. Guide students to see that the chef's refrigerated meat can be made into 3 1 more bur...",
+    focus: [
+      "fraction",
+      "whole",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 4,
+    fractionShadedCount: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

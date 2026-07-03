@@ -5,6 +5,33 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "unknown",
     "unknown factor"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 2 animation: Solve word problems in varied contexts using a letter t...",
+    context: "T: Today, we're going to work in groups to solve Problem 6.",
+    equation: "56 to 88 on equal intervals of 8",
+    teacherPrompt: "How are your models related to your equations in Problem 1?",
+    focus: [
+      "unknown",
+      "unknown factor",
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "56",
+      "64",
+      "72",
+      "80",
+      "88"
+    ],
+    numberLineJumps: [
+      "+8",
+      "+8",
+      "+8"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

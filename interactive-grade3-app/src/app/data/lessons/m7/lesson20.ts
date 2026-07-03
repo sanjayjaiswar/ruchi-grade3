@@ -7,6 +7,26 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
     "perimeter",
     "angle"
   ],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 20 animation: Construct rectangles with a given perimeter using unit...",
+    context: "Offer students the option of using a find length and width.",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "Share your answers to Problem 1 (c) and (d). Why are the areas of the rectangles different, even though the perimeters are the same?",
+    focus: [
+      "area",
+      "square unit",
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "side length",
+      "side length",
+      "perimeter"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

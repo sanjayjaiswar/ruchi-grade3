@@ -6,6 +6,33 @@ export const M5_LESSON19_RUNTIME: LessonRuntimeConfig = {
     "whole",
     "number line"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 19 animation: Understand distance and position on the number line as...",
+    context: "T: Draw 2 same-sized rectangles on your board, and English language (e.g., extend both 3 arms to demonstrate long).",
+    equation: "2 to 14 on equal intervals of 3",
+    teacherPrompt: "Invite students to share their work on Problems 3–5. Students should have slightly different explanations for Problems 4 and 5. Invite a variety of resp...",
+    focus: [
+      "fraction",
+      "whole",
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "2",
+      "5",
+      "8",
+      "11",
+      "14"
+    ],
+    numberLineJumps: [
+      "+3",
+      "+3",
+      "+3"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

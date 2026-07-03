@@ -6,6 +6,26 @@ export const M2_LESSON3_RUNTIME: LessonRuntimeConfig = {
     "number line",
     "round"
   ],
+  lessonAnimation: {
+    kind: "clock",
+    title: "Lesson 3 animation: Count by fives and ones on the number line as a strateg...",
+    context: "T: Use your ruler to draw a 12-centimeter line on your personal white board.",
+    equation: "12 sec start -> 12 sec elapsed -> 60 sec end",
+    teacherPrompt: "Look at Problem 1. Talk to a partner: How is the number line similar to the analog clock? How is it different?",
+    focus: [
+      "elapsed time",
+      "number line",
+      "clock",
+      "source labels"
+    ],
+    clockLabels: [
+      "12 sec start",
+      "12 sec elapsed",
+      "60 sec end"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

@@ -4,6 +4,27 @@ export const M7_LESSON15_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "perimeter"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 15 animation: Solve word problems to determine perimeter with given s...",
+    context: "Solve perimeter word problems with rectangles.",
+    equation: "5 units of 6; unknown labeled from the story",
+    teacherPrompt: "Share your solution to Problem 3 with a partner. Compare your equations. How are they the same? How are they different?",
+    focus: [
+      "perimeter",
+      "tape diagram",
+      "source labels"
+    ],
+    groupCount: 5,
+    groupSize: 6,
+    rowCount: 5,
+    columnCount: 6,
+    tapePartCount: 5,
+    tapePartLabel: "6 each",
+    tapeWholeLabel: "30 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

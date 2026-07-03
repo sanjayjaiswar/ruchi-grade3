@@ -6,6 +6,23 @@ export const M5_LESSON9_RUNTIME: LessonRuntimeConfig = {
     "whole",
     "unit fraction"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 9 animation: Build and write fractions greater than one whole using...",
+    context: "T: I brought 2 oranges for lunch today.",
+    equation: "1/6; name the whole before naming the fraction",
+    teacherPrompt: "Problem 3 is likely to be challenging and may result in confusion about whether the children 10 10 10 ate or . represents the number of pans of 8 16 8 1...",
+    focus: [
+      "fraction",
+      "whole",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 6,
+    fractionShadedCount: 1
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

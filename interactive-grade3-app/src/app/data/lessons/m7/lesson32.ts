@@ -2,6 +2,24 @@ import type { LessonRuntimeConfig } from '../lesson-runtime.types';
 
 export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 32 animation: Explore and create unconventional representations of on...",
+    context: "Distribute the Template to the students, and instruct them to cut out the circles.",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "Share answers to Problem 1(b). Were any of the circles that we made today exactly one-half shaded? How do you know?",
+    focus: [
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "side",
+      "vertex",
+      "attribute"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

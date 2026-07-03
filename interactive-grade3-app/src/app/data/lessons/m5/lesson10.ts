@@ -6,6 +6,23 @@ export const M5_LESSON10_RUNTIME: LessonRuntimeConfig = {
     "whole",
     "unit fraction"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 10 animation: Compare unit fractions by reasoning about their size us...",
+    context: "questioning. For example, ask the following: \"How much soup does 1 family receive?\" (1 third of the batch of soup.) Extension: What fraction will be left over for Sarah? \"2 families?...",
+    equation: "2/10; name the whole before naming the fraction",
+    teacherPrompt: "Compare Problems 3 and 5. How are they the same? Different?",
+    focus: [
+      "fraction",
+      "whole",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 10,
+    fractionShadedCount: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

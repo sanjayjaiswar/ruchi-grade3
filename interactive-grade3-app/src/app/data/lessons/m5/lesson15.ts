@@ -6,6 +6,33 @@ export const M5_LESSON15_RUNTIME: LessonRuntimeConfig = {
     "whole",
     "number line"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 15 animation: Place any fraction on a number line with endpoints 0 an...",
+    context: "Locate the point 2 thirds on a number line.",
+    equation: "0 to 4 on equal intervals of 1",
+    teacherPrompt: "How does the number bond relate to the number line?",
+    focus: [
+      "fraction",
+      "whole",
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    numberLineJumps: [
+      "+1",
+      "+1",
+      "+1"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

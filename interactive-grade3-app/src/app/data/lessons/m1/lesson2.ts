@@ -6,6 +6,25 @@ export const M1_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "equal groups",
     "multiplication"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 2 animation: rows and columns in an array",
+    context: "Build a 3-row by 4-column array so rows, columns, factors, and total are all visible.",
+    equation: "3 x 4 = 12",
+    teacherPrompt: "Which factor names the rows, and which factor names the number in each row?",
+    groupCount: 3,
+    groupSize: 4,
+    rowCount: 3,
+    columnCount: 4,
+    tapePartCount: 3,
+    tapePartLabel: "4",
+    tapeWholeLabel: "12 total",
+    focus: [
+      "Rows",
+      "Columns",
+      "Array as equal groups"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

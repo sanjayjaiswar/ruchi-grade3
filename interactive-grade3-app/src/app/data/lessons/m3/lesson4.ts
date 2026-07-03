@@ -7,6 +7,30 @@ export const M3_LESSON4_RUNTIME: LessonRuntimeConfig = {
     "quotient",
     "factor"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 4 animation: Count by units of 6 to multiply and divide using number...",
+    context: "Part 1: Use number bonds to decompose and skip-count using units of 6.",
+    equation: "6 x 10 = (3 x 10) + (3 x 10)",
+    teacherPrompt: "With a partner, list the related division facts for each number in the skip-counting sequence in Problem 1",
+    focus: [
+      "decompose",
+      "division",
+      "array",
+      "source labels"
+    ],
+    groupCount: 6,
+    groupSize: 10,
+    rowCount: 6,
+    columnCount: 10,
+    tapePartCount: 6,
+    tapePartLabel: "10",
+    tapeWholeLabel: "60 total",
+    firstPart: 3,
+    secondPart: 3
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

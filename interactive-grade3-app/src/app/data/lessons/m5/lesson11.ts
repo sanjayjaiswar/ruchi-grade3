@@ -6,6 +6,23 @@ export const M5_LESSON11_RUNTIME: LessonRuntimeConfig = {
     "whole",
     "unit fraction"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 11 animation: Compare unit fractions with different-sized models repr...",
+    context: "T: (Write 1 is the same as 1.) Show thumbs up if you agree, thumbs down if you disagree.",
+    equation: "2/6; name the whole before naming the fraction",
+    teacherPrompt: "Problem 10 presents wholes that are clearly different sizes and also different shapes. Students may already have questioned this as they moved through t...",
+    focus: [
+      "fraction",
+      "whole",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 6,
+    fractionShadedCount: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

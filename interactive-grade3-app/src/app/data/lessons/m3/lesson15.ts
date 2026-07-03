@@ -7,6 +7,28 @@ export const M3_LESSON15_RUNTIME: LessonRuntimeConfig = {
     "multiplication",
     "unknown"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 15 animation: Interpret the unknown in multiplication and division to...",
+    context: "Interpret the unknown in multiplication.",
+    equation: "9 units of 4; unknown labeled from the story",
+    teacherPrompt: "In your model for Problem 1, is the unknown the number of units or the size of each unit?",
+    focus: [
+      "factor",
+      "product",
+      "tape diagram",
+      "source labels"
+    ],
+    groupCount: 9,
+    groupSize: 4,
+    rowCount: 9,
+    columnCount: 4,
+    tapePartCount: 9,
+    tapePartLabel: "4 each",
+    tapeWholeLabel: "36 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

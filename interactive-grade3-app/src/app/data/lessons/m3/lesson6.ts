@@ -7,6 +7,30 @@ export const M3_LESSON6_RUNTIME: LessonRuntimeConfig = {
     "quotient",
     "factor"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 6 animation: Use the distributive property as a strategy to multiply...",
+    context: "Part 1: Apply the distributive property to multiply using units of 6 and 7.",
+    equation: "6 x 7 = (3 x 7) + (3 x 7)",
+    teacherPrompt: "What pattern did you notice in Problems 1(a) through 1(d)? What multiplication fact is used in all of these problems? How does this fact help you solve...",
+    focus: [
+      "distributive property",
+      "division",
+      "array",
+      "source labels"
+    ],
+    groupCount: 6,
+    groupSize: 7,
+    rowCount: 6,
+    columnCount: 7,
+    tapePartCount: 6,
+    tapePartLabel: "7",
+    tapeWholeLabel: "42 total",
+    firstPart: 3,
+    secondPart: 3
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

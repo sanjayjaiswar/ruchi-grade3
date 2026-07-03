@@ -5,6 +5,43 @@ export const M6_LESSON1_RUNTIME: LessonRuntimeConfig = {
     "data",
     "scale"
   ],
+  lessonAnimation: {
+    kind: "graph",
+    title: "Lesson 1 animation: Generate and organize data.",
+    context: "T: Today you will collect information, or data.",
+    equation: "Read the scale, then compare or calculate from the graph data",
+    teacherPrompt: "Compare the data in the picture graphs in Problems 3(a) and 3(b)",
+    focus: [
+      "data",
+      "scale",
+      "graph",
+      "source labels"
+    ],
+    graphBars: [
+      {
+        label: "Green",
+        value: 3
+      },
+      {
+        label: "Yellow",
+        value: 3
+      },
+      {
+        label: "Red",
+        value: 1
+      },
+      {
+        label: "Blue",
+        value: 2
+      },
+      {
+        label: "Orange",
+        value: 4
+      }
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

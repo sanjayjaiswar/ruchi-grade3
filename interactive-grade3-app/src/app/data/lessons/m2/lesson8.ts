@@ -6,6 +6,29 @@ export const M2_LESSON8_RUNTIME: LessonRuntimeConfig = {
     "milliliter",
     "capacity"
   ],
+  lessonAnimation: {
+    kind: "measurement",
+    title: "Lesson 8 animation: Solve one-step word problems involving metric weights w...",
+    context: "Solve one-step word problems using addition.",
+    equation: "Measure and label in kg; keep the unit with the number",
+    teacherPrompt: "How did your tape diagrams change in Problems 2(a) and 2(b)?",
+    focus: [
+      "liter",
+      "milliliter",
+      "measurement",
+      "source labels"
+    ],
+    measurementTicks: [
+      "100 kg",
+      "2 kg",
+      "2 kg",
+      "35 kg",
+      "43 kg",
+      "5 kg"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

@@ -6,6 +6,35 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
     "scale",
     "angle"
   ],
+  lessonAnimation: {
+    kind: "graph",
+    title: "Lesson 19 animation: Use a line plot to record the number of rectangles cons...",
+    context: "Part 1: Use unit square tiles to make rectangles with a given number of unit squares.",
+    equation: "Read the scale, then compare or calculate from the graph data",
+    teacherPrompt: "For which number of unit squares in Problem 1 can a square be drawn? How do you know? Can you brainstorm other numbers of unit squares from which a squa...",
+    focus: [
+      "line plot",
+      "scale",
+      "graph",
+      "source labels"
+    ],
+    graphBars: [
+      {
+        label: "Data A",
+        value: 12
+      },
+      {
+        label: "Data B",
+        value: 13
+      },
+      {
+        label: "Data C",
+        value: 14
+      }
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

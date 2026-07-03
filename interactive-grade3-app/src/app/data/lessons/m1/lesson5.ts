@@ -6,6 +6,25 @@ export const M1_LESSON5_RUNTIME: LessonRuntimeConfig = {
     "unknown",
     "quotient"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 5 animation: unknown is the number of groups",
+    context: "Show 18 as the whole, mark groups of 6, and count how many groups fit.",
+    equation: "18 divided by 6 = 3",
+    teacherPrompt: "How is this unknown different from the unknown in Lesson 4?",
+    groupCount: 3,
+    groupSize: 6,
+    rowCount: 3,
+    columnCount: 6,
+    tapePartCount: 3,
+    tapePartLabel: "6 each",
+    tapeWholeLabel: "18 total",
+    focus: [
+      "Whole",
+      "Groups of 6",
+      "Unknown number of groups"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

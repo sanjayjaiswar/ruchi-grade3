@@ -7,6 +7,30 @@ export const M3_LESSON12_RUNTIME: LessonRuntimeConfig = {
     "product",
     "multiplication"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 12 animation: Apply the distributive property and the fact 9 = 10 - 1...",
+    context: "Template Use the 9 = 10 – 1 strategy to solve 9 x n facts.",
+    equation: "9 x 10 = (5 x 10) + (4 x 10)",
+    teacherPrompt: "What does the nine represent in Problem 1? (It represents the value of each unit.) What does the nine represent in Problem 2? (It represents the number...",
+    focus: [
+      "distributive property",
+      "factor",
+      "array",
+      "source labels"
+    ],
+    groupCount: 9,
+    groupSize: 10,
+    rowCount: 9,
+    columnCount: 10,
+    tapePartCount: 9,
+    tapePartLabel: "10",
+    tapeWholeLabel: "90 total",
+    firstPart: 5,
+    secondPart: 4
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

@@ -6,6 +6,25 @@ export const M4_LESSON3_RUNTIME: LessonRuntimeConfig = {
     "square unit",
     "elapsed time"
   ],
+  lessonAnimation: {
+    kind: "area-model",
+    title: "Lesson 3 animation: Model tiling with centimeter and inch unit squares as a...",
+    context: "Jace uses paper squares to create a rectangle.",
+    equation: "10 rows x 4 columns = 40 square units",
+    teacherPrompt: "How are the rectangles in Problems 1(b) and 1(c) the same? How are they different?",
+    focus: [
+      "area",
+      "square unit",
+      "area model",
+      "source labels"
+    ],
+    areaRows: 10,
+    areaColumns: 4,
+    rowCount: 10,
+    columnCount: 4
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

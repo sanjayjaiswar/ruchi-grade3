@@ -6,6 +6,28 @@ export const M7_LESSON28_RUNTIME: LessonRuntimeConfig = {
     "square unit",
     "perimeter"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 28 animation: Solve a variety of word problems involving area and per...",
+    context: "Gia measures her rectangular garden and finds the width is 9 yards and the length is 7 yards.",
+    equation: "9 units of 7; unknown labeled from the story",
+    teacherPrompt: "How was it helpful to have each question broken down into several parts?",
+    focus: [
+      "area",
+      "square unit",
+      "tape diagram",
+      "source labels"
+    ],
+    groupCount: 9,
+    groupSize: 7,
+    rowCount: 9,
+    columnCount: 7,
+    tapePartCount: 9,
+    tapePartLabel: "7 each",
+    tapeWholeLabel: "63 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

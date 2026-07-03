@@ -6,6 +6,28 @@ export const M3_LESSON1_RUNTIME: LessonRuntimeConfig = {
     "factor",
     "product"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 1 animation: Study commutativity to find known facts of 6, 7, 8, and 9.",
+    context: "Part 1: Explore commutativity as it relates to multiplication.",
+    equation: "6 x 7 = 42",
+    teacherPrompt: "How did commutativity help you solve more facts than you thought you knew in Problem 1(a)?",
+    focus: [
+      "commutative property",
+      "factor",
+      "array",
+      "source labels"
+    ],
+    groupCount: 6,
+    groupSize: 7,
+    rowCount: 6,
+    columnCount: 7,
+    tapePartCount: 6,
+    tapePartLabel: "7",
+    tapeWholeLabel: "42 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

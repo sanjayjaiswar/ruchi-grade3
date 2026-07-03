@@ -2,6 +2,21 @@ import type { LessonRuntimeConfig } from '../lesson-runtime.types';
 
 export const M5_LESSON27_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 27 animation: Explain equivalence by manipulating units and reasoning...",
+    context: "The branch of a tree is 2 meters long.",
+    equation: "2/8; name the whole before naming the fraction",
+    teacherPrompt: "How did using the fraction strips help you with Problem 2? Talk about the relationship between them",
+    focus: [
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 8,
+    fractionShadedCount: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

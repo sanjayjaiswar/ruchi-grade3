@@ -4,6 +4,25 @@ export const M1_LESSON14_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "array"
   ],
+  lessonAnimation: {
+    kind: "equal-groups",
+    title: "Lesson 14 animation: skip-count by fours",
+    context: "Show 6 groups of 4 and count 4, 8, 12, 16, 20, 24 while tracking the group count.",
+    equation: "6 x 4 = 24",
+    teacherPrompt: "How many groups of 4 have been counted?",
+    groupCount: 6,
+    groupSize: 4,
+    rowCount: 6,
+    columnCount: 4,
+    tapePartCount: 6,
+    tapePartLabel: "4",
+    tapeWholeLabel: "24 total",
+    focus: [
+      "Units of 4",
+      "Skip-counting",
+      "Fact fluency"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

@@ -6,6 +6,25 @@ export const M4_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "square unit",
     "decompose"
   ],
+  lessonAnimation: {
+    kind: "area-model",
+    title: "Lesson 2 animation: Decompose and recompose shapes to compare areas.",
+    context: "T: How many units make up your strip?",
+    equation: "10 rows x 4 columns = 40 square units",
+    teacherPrompt: "Talk to a partner. What new units did we define today?",
+    focus: [
+      "area",
+      "square unit",
+      "area model",
+      "source labels"
+    ],
+    areaRows: 10,
+    areaColumns: 4,
+    rowCount: 10,
+    columnCount: 4
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

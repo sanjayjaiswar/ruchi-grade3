@@ -6,6 +6,28 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
     "square unit",
     "perimeter"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 29 animation: Solve a variety of word problems involving area and per...",
+    context: "Kyle puts two rectangles together to make the L-shaped figure below.",
+    equation: "10 units of 8; unknown labeled from the story",
+    teacherPrompt: "How were you able to figure out the unknown side lengths in Problem 1(a)?",
+    focus: [
+      "area",
+      "square unit",
+      "tape diagram",
+      "source labels"
+    ],
+    groupCount: 10,
+    groupSize: 8,
+    rowCount: 10,
+    columnCount: 8,
+    tapePartCount: 10,
+    tapePartLabel: "8 each",
+    tapeWholeLabel: "80 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

@@ -2,6 +2,31 @@ import type { LessonRuntimeConfig } from '../lesson-runtime.types';
 
 export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 3 animation: Share and critique peer solution strategies to varied w...",
+    context: "box. She gives each of the 24 students in her class 2 pencils. How many pencils does she have left? T: Use the Read-Draw-Write process to solve this problem. Remember to take a momen...",
+    equation: "24 to 32 on equal intervals of 2",
+    teacherPrompt: "What can you draw to show Problem 2? How can you build equations from those drawings?",
+    focus: [
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "24",
+      "26",
+      "28",
+      "30",
+      "32"
+    ],
+    numberLineJumps: [
+      "+2",
+      "+2",
+      "+2"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

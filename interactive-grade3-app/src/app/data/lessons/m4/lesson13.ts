@@ -6,6 +6,25 @@ export const M4_LESSON13_RUNTIME: LessonRuntimeConfig = {
     "square unit",
     "angle"
   ],
+  lessonAnimation: {
+    kind: "area-model",
+    title: "Lesson 13 animation: Find areas by decomposing into rectangles or completing...",
+    context: "Add using the break apart strategy to find the area of a composite shape.",
+    equation: "10 rows x 4 columns = 40 square units",
+    teacherPrompt: "How did you break apart the rectangles in Figure 4? Did anyone break apart the rectangles in a different way? (A rectangle of 10 by 2.) Lesson 13: Find...",
+    focus: [
+      "area",
+      "square unit",
+      "area model",
+      "source labels"
+    ],
+    areaRows: 10,
+    areaColumns: 4,
+    rowCount: 10,
+    columnCount: 4
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

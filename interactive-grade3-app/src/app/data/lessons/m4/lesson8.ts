@@ -7,6 +7,25 @@ export const M4_LESSON8_RUNTIME: LessonRuntimeConfig = {
     "factor",
     "product"
   ],
+  lessonAnimation: {
+    kind: "area-model",
+    title: "Lesson 8 animation: Find the area of a rectangle through multiplication of...",
+    context: "Part 1: Relate side lengths to area.",
+    equation: "8 rows x 7 columns = 56 square units",
+    teacherPrompt: "In what way is the area of Problem 1(b) related to the area of Problem 1(a)? (It is double.) How could you use the side lengths to help you figure out t...",
+    focus: [
+      "area",
+      "square unit",
+      "area model",
+      "source labels"
+    ],
+    areaRows: 8,
+    areaColumns: 7,
+    rowCount: 8,
+    columnCount: 7
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

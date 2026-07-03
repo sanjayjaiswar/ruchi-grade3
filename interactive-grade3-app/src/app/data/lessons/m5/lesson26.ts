@@ -6,6 +6,23 @@ export const M5_LESSON26_RUNTIME: LessonRuntimeConfig = {
     "fraction",
     "whole"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 26 animation: Decompose whole number fractions greater than 1 using w...",
+    context: "Antonio works on his project for 4 thirds hours.",
+    equation: "1/6; name the whole before naming the fraction",
+    teacherPrompt: "Ask the student to explain what the model shows before accepting the final answer.",
+    focus: [
+      "decompose",
+      "fraction",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 6,
+    fractionShadedCount: 1
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

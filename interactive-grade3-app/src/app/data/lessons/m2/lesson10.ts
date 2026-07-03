@@ -7,6 +7,33 @@ export const M2_LESSON10_RUNTIME: LessonRuntimeConfig = {
     "milliliter",
     "number line"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 10 animation: Estimate and measure liquid volume in liters and millil...",
+    context: "T: (Make groups of three students.) Each group will measure liquid volume to make a measuring bottle that contains 1 liter of water, similar to the one we used yesterday.",
+    equation: "1 to 17 on equal intervals of 4",
+    teacherPrompt: "In Problem 4, describe how the position of the points plotted in Part (a) helped you solve Parts (b) and (c)",
+    focus: [
+      "capacity",
+      "liter",
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "1",
+      "5",
+      "9",
+      "13",
+      "17"
+    ],
+    numberLineJumps: [
+      "+4",
+      "+4",
+      "+4"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

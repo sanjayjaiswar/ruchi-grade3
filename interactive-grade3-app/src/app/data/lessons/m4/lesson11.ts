@@ -6,6 +6,25 @@ export const M4_LESSON11_RUNTIME: LessonRuntimeConfig = {
     "square unit",
     "angle"
   ],
+  lessonAnimation: {
+    kind: "area-model",
+    title: "Lesson 11 animation: Demonstrate the possible whole number side lengths of r...",
+    context: "T: Write an expression to show how to find the area of a rectangle with side lengths 3 and 12.",
+    equation: "10 rows x 10 columns = 100 square units",
+    teacherPrompt: "Turn your paper horizontally and look at Problem 1. What property does this show?",
+    focus: [
+      "area",
+      "square unit",
+      "area model",
+      "source labels"
+    ],
+    areaRows: 10,
+    areaColumns: 10,
+    rowCount: 10,
+    columnCount: 10
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

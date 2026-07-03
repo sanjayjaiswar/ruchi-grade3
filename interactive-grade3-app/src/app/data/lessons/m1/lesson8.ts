@@ -5,6 +5,25 @@ export const M1_LESSON8_RUNTIME: LessonRuntimeConfig = {
     "array",
     "commutative property"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 8 animation: related facts with units of 3",
+    context: "Show 5 rows of 3, skip-count by threes, and connect the related multiplication facts.",
+    equation: "5 x 3 = 15; 3 x 5 = 15",
+    teacherPrompt: "How does skip-counting support the related fact?",
+    groupCount: 5,
+    groupSize: 3,
+    rowCount: 5,
+    columnCount: 3,
+    tapePartCount: 5,
+    tapePartLabel: "3",
+    tapeWholeLabel: "15 total",
+    focus: [
+      "Skip-count by 3",
+      "Commutative property",
+      "Same total"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

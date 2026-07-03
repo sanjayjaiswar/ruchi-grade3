@@ -5,6 +5,35 @@ export const M6_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "gram",
     "tape diagram"
   ],
+  lessonAnimation: {
+    kind: "graph",
+    title: "Lesson 2 animation: Rotate tape diagrams vertically.",
+    context: "Rotate tape diagrams to make vertical tape diagrams with units of 2.",
+    equation: "Read the scale, then compare or calculate from the graph data",
+    teacherPrompt: "How does multiplication help you interpret the vertical tape diagrams on the Problem Set?",
+    focus: [
+      "gram",
+      "tape diagram",
+      "graph",
+      "source labels"
+    ],
+    graphBars: [
+      {
+        label: "Data A",
+        value: 2
+      },
+      {
+        label: "Data B",
+        value: 2
+      },
+      {
+        label: "Data C",
+        value: 2
+      }
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

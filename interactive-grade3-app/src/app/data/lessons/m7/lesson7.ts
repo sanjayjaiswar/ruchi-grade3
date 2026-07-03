@@ -2,6 +2,24 @@ import type { LessonRuntimeConfig } from '../lesson-runtime.types';
 
 export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 7 animation: Reason about composing and decomposing polygons using t...",
+    context: "Use tetrominoes to compose polygons.",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "Compare the rectangles you made in Problem 1 to a partner's. How are they the same? How are they different?",
+    focus: [
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "area",
+      "side",
+      "unit"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

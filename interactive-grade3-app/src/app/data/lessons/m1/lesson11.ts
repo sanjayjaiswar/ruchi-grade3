@@ -219,6 +219,25 @@ export const LESSON11_SOURCE_VISUAL_FACTS = {
 
 export const LESSON11_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: LESSON11_CONCEPT_TERMS,
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 11 animation: division finds a missing factor",
+    context: "Use 8 lemon slices as the whole, units of 2 slices, and the unknown number of cups.",
+    equation: "8 divided by 2 = 4; 4 x 2 = 8",
+    teacherPrompt: "Which multiplication equation matches the division situation?",
+    groupCount: 4,
+    groupSize: 2,
+    rowCount: 2,
+    columnCount: 4,
+    tapePartCount: 4,
+    tapePartLabel: "2 slices",
+    tapeWholeLabel: "8 slices",
+    focus: [
+      "Whole",
+      "Unit size",
+      "Unknown factor"
+    ]
+  },
   showMultiplicationDivisionVocabularyNote: true,
   teacherEditionSteps: LESSON11_TEACHER_EDITION_STEPS,
   studentWorkSupport: LESSON11_STUDENT_WORK_SUPPORT,

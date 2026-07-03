@@ -4,6 +4,34 @@ export const M6_LESSON9_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "scale"
   ],
+  lessonAnimation: {
+    kind: "graph",
+    title: "Lesson 9 animation: Analyze data to problem solve.",
+    context: "Solve problems with categorical data.",
+    equation: "Read the scale, then compare or calculate from the graph data",
+    teacherPrompt: "What scale did you use for Problem 1(b)? Would that scale work if Philip picked 21 apples?",
+    focus: [
+      "scale",
+      "graph",
+      "source labels"
+    ],
+    graphBars: [
+      {
+        label: "Data A",
+        value: 21
+      },
+      {
+        label: "Data B",
+        value: 16
+      },
+      {
+        label: "Data C",
+        value: 12
+      }
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

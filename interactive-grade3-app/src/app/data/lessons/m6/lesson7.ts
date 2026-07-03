@@ -5,6 +5,35 @@ export const M6_LESSON7_RUNTIME: LessonRuntimeConfig = {
     "line plot",
     "scale"
   ],
+  lessonAnimation: {
+    kind: "graph",
+    title: "Lesson 7 animation: Represent measurement data with line plots.",
+    context: "Draw a line plot representing measurement data.",
+    equation: "Read the scale, then compare or calculate from the graph data",
+    teacherPrompt: "What process did you use to complete the line plot in Problem (a)?",
+    focus: [
+      "line plot",
+      "scale",
+      "graph",
+      "source labels"
+    ],
+    graphBars: [
+      {
+        label: "Data A",
+        value: 3
+      },
+      {
+        label: "Data B",
+        value: 2
+      },
+      {
+        label: "Data C",
+        value: 4
+      }
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

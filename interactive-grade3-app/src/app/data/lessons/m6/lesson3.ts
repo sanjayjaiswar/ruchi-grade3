@@ -4,6 +4,34 @@ export const M6_LESSON3_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "scale"
   ],
+  lessonAnimation: {
+    kind: "graph",
+    title: "Lesson 3 animation: Create scaled bar graphs.",
+    context: "T: (Pass out Template 1 pictured to the right.) Draw the vertical tape diagrams from the Application Problem on the grid.",
+    equation: "Read the scale, then compare or calculate from the graph data",
+    teacherPrompt: "(Pass out Template 1 pictured to the right.) Draw the vertical tape diagrams from the Application Problem on the grid. (Allow students time to work.) Ou...",
+    focus: [
+      "scale",
+      "graph",
+      "source labels"
+    ],
+    graphBars: [
+      {
+        label: "Data A",
+        value: 1
+      },
+      {
+        label: "Data B",
+        value: 5
+      },
+      {
+        label: "Data C",
+        value: 1
+      }
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

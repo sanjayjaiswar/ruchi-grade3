@@ -6,6 +6,27 @@ export const M1_LESSON18_RUNTIME: LessonRuntimeConfig = {
     "decompose",
     "array"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 18 animation: decompose units with the distributive property",
+    context: "Show 8 rows of 5, split into 5 rows and 3 rows, and add the products.",
+    equation: "8 x 5 = (5 x 5) + (3 x 5) = 40",
+    teacherPrompt: "Why is this decomposition useful?",
+    groupCount: 8,
+    groupSize: 5,
+    rowCount: 8,
+    columnCount: 5,
+    tapePartCount: 8,
+    tapePartLabel: "5",
+    tapeWholeLabel: "40 total",
+    firstPart: 5,
+    secondPart: 3,
+    focus: [
+      "Decompose units",
+      "Friendly facts",
+      "Combine products"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

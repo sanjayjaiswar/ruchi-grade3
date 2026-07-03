@@ -5,6 +5,25 @@ export const M1_LESSON7_RUNTIME: LessonRuntimeConfig = {
     "array",
     "commutative property"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 7 animation: one array, two facts",
+    context: "Show a 2 by 8 array, then read it by rows and by columns to show commutativity.",
+    equation: "2 x 8 = 16; 8 x 2 = 16",
+    teacherPrompt: "What changed in the two equations, and what stayed the same?",
+    groupCount: 2,
+    groupSize: 8,
+    rowCount: 2,
+    columnCount: 8,
+    tapePartCount: 2,
+    tapePartLabel: "8",
+    tapeWholeLabel: "16 total",
+    focus: [
+      "Same array",
+      "Related facts",
+      "Same product"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

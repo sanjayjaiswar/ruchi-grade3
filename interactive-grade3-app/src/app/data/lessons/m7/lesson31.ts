@@ -2,6 +2,24 @@ import type { LessonRuntimeConfig } from '../lesson-runtime.types';
 
 export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 31 animation: Explore and create unconventional representations of on...",
+    context: "T: Study these images. Estimate to decide which shapes have one-half shaded. Discuss your reasoning with a partner. A B C S: Shape A definitely does because the black and white parts...",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "Look at our class quilt. How is it possible to have so many different ways to show one-half of the same square?",
+    focus: [
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "side",
+      "vertex",
+      "attribute"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

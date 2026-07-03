@@ -6,6 +6,28 @@ export const M7_LESSON17_RUNTIME: LessonRuntimeConfig = {
     "unknown",
     "unknown factor"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 17 animation: Use all four operations to solve problems involving per...",
+    context: "Lesson 17: Use all four operations to solve problems involving perimeter and 221 unknown measurements",
+    equation: "2 units of 5; unknown labeled from the story",
+    teacherPrompt: "Compare strategies for finding the unknown side lengths in Problem 1",
+    focus: [
+      "perimeter",
+      "unknown",
+      "tape diagram",
+      "source labels"
+    ],
+    groupCount: 2,
+    groupSize: 5,
+    rowCount: 2,
+    columnCount: 5,
+    tapePartCount: 2,
+    tapePartLabel: "5 each",
+    tapeWholeLabel: "10 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

@@ -4,6 +4,25 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "perimeter"
   ],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 12 animation: Measure side lengths in whole number units to determine...",
+    context: "T: The sides form the boundary of Shape A.",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "Which shape has the smallest perimeter in Problem 1? How do you know?",
+    focus: [
+      "perimeter",
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "side length",
+      "side length",
+      "perimeter"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

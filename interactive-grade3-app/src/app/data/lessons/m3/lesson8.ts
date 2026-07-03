@@ -4,6 +4,26 @@ export const M3_LESSON8_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "array"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 8 animation: Understand the function of parentheses and apply to sol...",
+    context: "Part 1: Solve equations containing parentheses.",
+    equation: "2 x 6 = 12",
+    teacherPrompt: "Look at Problem 1(j). Would the answer be the same if I solved (12 divided by 2) + (12 divided by 4)? Why not? (Lead students to understand that they ca...",
+    focus: [
+      "array",
+      "source labels"
+    ],
+    groupCount: 2,
+    groupSize: 6,
+    rowCount: 2,
+    columnCount: 6,
+    tapePartCount: 2,
+    tapePartLabel: "6",
+    tapeWholeLabel: "12 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

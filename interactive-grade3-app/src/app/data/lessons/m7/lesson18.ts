@@ -6,6 +6,26 @@ export const M7_LESSON18_RUNTIME: LessonRuntimeConfig = {
     "perimeter",
     "area"
   ],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 18 animation: Construct rectangles from a given number of unit square...",
+    context: "T: With your partner, use unit square tiles to build as many rectangles as you can that have an area of 18 square units.",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "Explain your strategy for finding rectangles with an area of 24 square units in Problem 1",
+    focus: [
+      "line plot",
+      "perimeter",
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "side length",
+      "side length",
+      "perimeter"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

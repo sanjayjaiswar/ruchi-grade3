@@ -5,6 +5,27 @@ export const M1_LESSON9_RUNTIME: LessonRuntimeConfig = {
     "array",
     "equal groups"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 9 animation: add one equal group",
+    context: "Start with 5 rows of 3, add one more row, and show how the related product changes.",
+    equation: "5 x 3 = 15; 6 x 3 = 15 + 3 = 18",
+    teacherPrompt: "Which group was added, and how did that change the product?",
+    groupCount: 6,
+    groupSize: 3,
+    rowCount: 6,
+    columnCount: 3,
+    tapePartCount: 6,
+    tapePartLabel: "3",
+    tapeWholeLabel: "18 total",
+    firstPart: 5,
+    secondPart: 1,
+    focus: [
+      "Known fact",
+      "Added group",
+      "New fact"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

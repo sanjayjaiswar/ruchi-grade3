@@ -2,6 +2,24 @@ import type { LessonRuntimeConfig } from '../lesson-runtime.types';
 
 export const M7_LESSON34_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 34 animation: Create resource booklets to support fluency with Grade...",
+    context: "Use the teacher-edition lesson pages to teach: Create resource booklets to support fluency with Grade 3 skills.",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "What was your favorite math topic in third grade? Why?",
+    focus: [
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "side",
+      "vertex",
+      "attribute"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

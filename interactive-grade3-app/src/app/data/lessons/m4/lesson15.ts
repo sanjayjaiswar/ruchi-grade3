@@ -5,6 +5,25 @@ export const M4_LESSON15_RUNTIME: LessonRuntimeConfig = {
     "area",
     "square unit"
   ],
+  lessonAnimation: {
+    kind: "area-model",
+    title: "Lesson 15 animation: Apply knowledge of area to determine areas of rooms in...",
+    context: "Use the teacher-edition lesson pages to teach: Apply knowledge of area to determine areas of rooms in a given floor plan.",
+    equation: "3 rows x 2 columns = 6 square units",
+    teacherPrompt: "For the next two days, you are going to be architects. refer to the optional activities Today you are going to use a floor plan that your suggested in L...",
+    focus: [
+      "area",
+      "square unit",
+      "area model",
+      "source labels"
+    ],
+    areaRows: 3,
+    areaColumns: 2,
+    rowCount: 3,
+    columnCount: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

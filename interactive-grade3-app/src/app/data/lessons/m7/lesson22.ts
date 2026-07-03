@@ -6,6 +6,35 @@ export const M7_LESSON22_RUNTIME: LessonRuntimeConfig = {
     "scale",
     "angle"
   ],
+  lessonAnimation: {
+    kind: "graph",
+    title: "Lesson 22 animation: Use a line plot to record the number of rectangles cons...",
+    context: "Draw a line plot representing measurement data.",
+    equation: "Read the scale, then compare or calculate from the graph data",
+    teacherPrompt: "How did using a ruler help you partition your number line evenly?",
+    focus: [
+      "line plot",
+      "scale",
+      "graph",
+      "source labels"
+    ],
+    graphBars: [
+      {
+        label: "Data A",
+        value: 20
+      },
+      {
+        label: "Data B",
+        value: 21
+      },
+      {
+        label: "Data C",
+        value: 1
+      }
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

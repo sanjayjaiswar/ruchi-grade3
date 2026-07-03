@@ -4,6 +4,28 @@ export const M2_LESSON19_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "decompose"
   ],
+  lessonAnimation: {
+    kind: "measurement",
+    title: "Lesson 19 animation: Decompose twice to subtract measurements including thre...",
+    context: "Part 1: Decompose twice using the standard algorithm for subtraction.",
+    equation: "Measure and label in kg; keep the unit with the number",
+    teacherPrompt: "Why is it important to unbundle or change all of your language. Making this a partner–share units before subtracting? activity may relieve students of a...",
+    focus: [
+      "decompose",
+      "measurement",
+      "source labels"
+    ],
+    measurementTicks: [
+      "60 kg",
+      "52 kg",
+      "6 kg",
+      "2 kg",
+      "5 kg",
+      "3 kg"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

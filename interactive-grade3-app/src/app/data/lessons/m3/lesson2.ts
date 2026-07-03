@@ -7,6 +7,30 @@ export const M3_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "factor",
     "product"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 2 animation: Apply the distributive and commutative properties to re...",
+    context: "T: (Draw 1 circle with a 7 inside.) This circle represents 1 unit of 7.",
+    equation: "5 x 6 = (3 x 6) + (2 x 6)",
+    teacherPrompt: "What pattern did you notice between Problems 1 and 2?",
+    focus: [
+      "commutative property",
+      "distributive property",
+      "array",
+      "source labels"
+    ],
+    groupCount: 5,
+    groupSize: 6,
+    rowCount: 5,
+    columnCount: 6,
+    tapePartCount: 5,
+    tapePartLabel: "6",
+    tapeWholeLabel: "30 total",
+    firstPart: 3,
+    secondPart: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

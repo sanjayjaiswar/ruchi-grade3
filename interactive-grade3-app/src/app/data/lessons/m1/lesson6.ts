@@ -6,6 +6,25 @@ export const M1_LESSON6_RUNTIME: LessonRuntimeConfig = {
     "quotient",
     "unknown factor"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 6 animation: division as an unknown factor",
+    context: "Use an array for 24 total to connect division to the related unknown-factor multiplication equation.",
+    equation: "24 divided by 3 = 8; 8 x 3 = 24",
+    teacherPrompt: "Where is the unknown factor in the array?",
+    groupCount: 8,
+    groupSize: 3,
+    rowCount: 3,
+    columnCount: 8,
+    tapePartCount: 8,
+    tapePartLabel: "3",
+    tapeWholeLabel: "24 total",
+    focus: [
+      "Array total",
+      "Division quotient",
+      "Related multiplication"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

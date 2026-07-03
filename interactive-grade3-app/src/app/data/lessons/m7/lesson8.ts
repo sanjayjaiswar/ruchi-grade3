@@ -4,6 +4,25 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "gram"
   ],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 8 animation: Create a tangram puzzle and observe relationships among...",
+    context: "T: First, we need to make a square.",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "How do you know the triangles in Problem 1 have right angles without having to check with your tool?",
+    focus: [
+      "gram",
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "angle",
+      "side",
+      "vertex"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

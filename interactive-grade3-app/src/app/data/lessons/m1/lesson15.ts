@@ -7,6 +7,25 @@ export const M1_LESSON15_RUNTIME: LessonRuntimeConfig = {
     "commutative property",
     "factor"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 15 animation: array to tape diagram",
+    context: "Represent 4 units of 3 as a tape diagram and connect it to the matching array and related fact.",
+    equation: "4 x 3 = 12; 3 x 4 = 12",
+    teacherPrompt: "How can the tape diagram and array show the same total?",
+    groupCount: 4,
+    groupSize: 3,
+    rowCount: 4,
+    columnCount: 3,
+    tapePartCount: 4,
+    tapePartLabel: "3",
+    tapeWholeLabel: "12 total",
+    focus: [
+      "Tape units",
+      "Array connection",
+      "Commutative facts"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

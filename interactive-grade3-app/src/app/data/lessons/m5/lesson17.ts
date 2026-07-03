@@ -6,6 +6,33 @@ export const M5_LESSON17_RUNTIME: LessonRuntimeConfig = {
     "whole",
     "number line"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 17 animation: Practice placing various fractions on the number line.",
+    context: "\"Point to and count the wholes with me.",
+    equation: "0 to 24 on equal intervals of 6",
+    teacherPrompt: "What did you think about first to help you place the fractions?",
+    focus: [
+      "fraction",
+      "whole",
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "0",
+      "6",
+      "12",
+      "18",
+      "24"
+    ],
+    numberLineJumps: [
+      "+6",
+      "+6",
+      "+6"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

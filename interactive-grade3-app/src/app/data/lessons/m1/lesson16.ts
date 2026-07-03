@@ -6,6 +6,27 @@ export const M1_LESSON16_RUNTIME: LessonRuntimeConfig = {
     "decompose",
     "array"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 16 animation: use a known fact to solve a related fact",
+    context: "Show 6 rows of 4, split into 5 rows and 1 row, and combine the partial products.",
+    equation: "6 x 4 = (5 x 4) + (1 x 4) = 24",
+    teacherPrompt: "Which known fact makes the new fact easier?",
+    groupCount: 6,
+    groupSize: 4,
+    rowCount: 6,
+    columnCount: 4,
+    tapePartCount: 6,
+    tapePartLabel: "4",
+    tapeWholeLabel: "24 total",
+    firstPart: 5,
+    secondPart: 1,
+    focus: [
+      "Known fact",
+      "One more group",
+      "Partial products"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

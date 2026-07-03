@@ -5,6 +5,23 @@ export const M5_LESSON5_RUNTIME: LessonRuntimeConfig = {
     "unit fraction",
     "whole"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 5 animation: Partition a whole into equal parts and define the equal...",
+    context: "T: (Project or draw a circle, as shown below.) Whisper to discuss definitions of these terms in their first language with the teacher or their peers",
+    equation: "2/10; name the whole before naming the fraction",
+    teacherPrompt: "Are the numbers in Problem 1 unit fractions? How do you know?",
+    focus: [
+      "unit fraction",
+      "whole",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 10,
+    fractionShadedCount: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

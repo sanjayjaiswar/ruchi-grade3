@@ -6,6 +6,33 @@ export const M2_LESSON17_RUNTIME: LessonRuntimeConfig = {
     "round",
     "number line"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 17 animation: Estimate sums by rounding and apply to solve measuremen...",
+    context: "Estimate the sum of 362 + 159 by rounding.",
+    equation: "94 to 114 on equal intervals of 5",
+    teacherPrompt: "What were some of your observations about Problem 1(a)? What did the closest estimates have in common?",
+    focus: [
+      "addend",
+      "round",
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "94",
+      "99",
+      "104",
+      "109",
+      "114"
+    ],
+    numberLineJumps: [
+      "+5",
+      "+5",
+      "+5"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

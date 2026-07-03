@@ -7,6 +7,25 @@ export const M1_LESSON17_RUNTIME: LessonRuntimeConfig = {
     "quotient",
     "factor"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 17 animation: multiplication and division describe one model",
+    context: "Show 24 as 6 units of 4, then read the model with both multiplication and division equations.",
+    equation: "6 x 4 = 24; 24 divided by 4 = 6",
+    teacherPrompt: "How do multiplication and division describe the same tape diagram?",
+    groupCount: 6,
+    groupSize: 4,
+    rowCount: 6,
+    columnCount: 4,
+    tapePartCount: 6,
+    tapePartLabel: "4",
+    tapeWholeLabel: "24 total",
+    focus: [
+      "Factor",
+      "Product",
+      "Quotient"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

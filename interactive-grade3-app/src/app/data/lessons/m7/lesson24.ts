@@ -7,6 +7,26 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
     "perimeter",
     "angle"
   ],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 24 animation: Use rectangles to draw a robot with specified perimeter...",
+    context: "Lesson 24: Use rectangles to draw a robot with specified perimeter 322 measurements, and reason about the different areas that may be produced",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "Which body part has the greatest perimeter? Why? The smallest perimeter? Why?",
+    focus: [
+      "area",
+      "square unit",
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "side length",
+      "side length",
+      "perimeter"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

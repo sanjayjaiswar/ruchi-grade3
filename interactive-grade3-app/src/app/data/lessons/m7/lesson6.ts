@@ -4,6 +4,25 @@ export const M7_LESSON6_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "attribute"
   ],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 6 animation: Draw polygons with specified attributes to solve problems.",
+    context: "Project Template 1 as shown, and give a copy of the shape to each pair of Template 1 students.",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "Besides quadrilateral, what is another name for the shape you drew for Problem 3? (Possible answers are trapezoid, parallelogram, rectangle, square, and...",
+    focus: [
+      "attribute",
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "angle",
+      "side",
+      "vertex"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

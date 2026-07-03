@@ -123,6 +123,530 @@
   font-weight: 750;
 }
 
+.lesson-animation-panel {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.85fr) minmax(280px, 1.2fr) minmax(210px, 0.75fr);
+  gap: 14px;
+  align-items: stretch;
+  margin: 0 0 16px;
+  padding: 14px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 30%, var(--color-border) 70%);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--module-accent-soft) 70%, #ffffff 30%), #ffffff 58%);
+  box-shadow: var(--shadow-soft);
+}
+
+.lesson-animation-copy,
+.lesson-animation-stage,
+.lesson-animation-notes {
+  min-width: 0;
+}
+
+.lesson-animation-copy h3 {
+  margin: 4px 0 6px;
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.lesson-animation-copy p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.lesson-animation-equation {
+  display: inline-flex;
+  max-width: 100%;
+  margin-top: 10px;
+  padding: 8px 10px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 28%, var(--color-border) 72%);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--module-accent-strong);
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.lesson-animation-stage {
+  display: grid;
+  place-items: center;
+  min-height: 174px;
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 18%, var(--color-border) 82%);
+  border-radius: 8px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.lesson-animation-groups {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.lesson-animation-group {
+  display: grid;
+  grid-template-columns: repeat(2, 12px);
+  gap: 5px;
+  justify-content: center;
+  align-content: center;
+  width: 58px;
+  min-height: 58px;
+  padding: 7px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 32%, var(--color-border) 68%);
+  border-radius: 8px;
+  background: var(--module-accent-soft);
+  animation: lessonAnimationGroupBuild 720ms ease-out both;
+}
+
+.lesson-animation-group small {
+  grid-column: 1 / -1;
+  color: var(--module-accent-strong);
+  font-size: 9px;
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.lesson-animation-group span,
+.lesson-animation-array span {
+  width: 12px;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  background: var(--module-accent);
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.2);
+  animation: lessonAnimationDotBuild 680ms ease-out both;
+}
+
+.lesson-animation-group:nth-child(2n) {
+  animation-delay: 70ms;
+}
+
+.lesson-animation-group:nth-child(3n) {
+  animation-delay: 140ms;
+}
+
+.lesson-animation-array-wrap {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+
+.lesson-animation-array {
+  display: grid;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 30%, var(--color-border) 70%);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.lesson-animation-array span:nth-child(3n) {
+  animation-delay: 70ms;
+}
+
+.lesson-animation-array span:nth-child(3n + 1) {
+  animation-delay: 130ms;
+}
+
+.lesson-animation-array span.is-first-part {
+  background: var(--google-green);
+}
+
+.lesson-animation-array span.is-second-part {
+  background: var(--google-yellow);
+}
+
+.lesson-animation-split-note {
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.lesson-animation-tape {
+  display: grid;
+  width: min(440px, 100%);
+  gap: 0;
+}
+
+.lesson-animation-tape strong {
+  padding: 9px;
+  border: 2px solid var(--module-accent-strong);
+  border-radius: 8px 8px 0 0;
+  color: var(--module-accent-strong);
+  font-size: 13px;
+  text-align: center;
+}
+
+.lesson-animation-tape-parts {
+  display: grid;
+}
+
+.lesson-animation-tape-parts span {
+  min-width: 0;
+  padding: 14px 5px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 42%, var(--color-border) 58%);
+  border-top: 0;
+  background: #ffffff;
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  font-weight: 900;
+  text-align: center;
+  overflow-wrap: anywhere;
+  animation: lessonAnimationTapeBuild 760ms ease-out both;
+}
+
+.lesson-animation-tape-parts span:nth-child(2n) {
+  animation-delay: 80ms;
+}
+
+.lesson-animation-tape-parts span:nth-child(3n) {
+  animation-delay: 150ms;
+}
+
+.lesson-animation-number-line,
+.lesson-animation-clock,
+.lesson-animation-measurement,
+.lesson-animation-area,
+.lesson-animation-fraction,
+.lesson-animation-graph,
+.lesson-animation-geometry {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.lesson-animation-line-track {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: min(460px, 100%);
+  padding-top: 42px;
+  border-bottom: 3px solid var(--module-accent-strong);
+}
+
+.lesson-animation-line-track span {
+  width: 3px;
+  height: 18px;
+  background: var(--module-accent-strong);
+  transform: translateY(10px);
+}
+
+.lesson-animation-line-track i {
+  position: relative;
+  min-width: 42px;
+  padding: 4px 7px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 35%, var(--color-border) 65%);
+  border-radius: 999px;
+  background: var(--module-accent-soft);
+  color: var(--module-accent-strong);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  animation: lessonAnimationTapeBuild 760ms ease-out both;
+}
+
+.lesson-animation-line-labels {
+  display: flex;
+  justify-content: space-between;
+  width: min(460px, 100%);
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.lesson-animation-clock-face {
+  position: relative;
+  width: 132px;
+  aspect-ratio: 1;
+  border: 7px solid var(--module-accent);
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--module-accent) 18%, var(--color-border) 82%);
+}
+
+.lesson-animation-clock-face .clock-mark {
+  position: absolute;
+  color: var(--module-accent-strong);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.lesson-animation-clock-face .twelve {
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lesson-animation-clock-face .three {
+  top: 50%;
+  right: 9px;
+  transform: translateY(-50%);
+}
+
+.lesson-animation-clock-face .six {
+  bottom: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lesson-animation-clock-face .nine {
+  top: 50%;
+  left: 9px;
+  transform: translateY(-50%);
+}
+
+.lesson-animation-clock-face i,
+.lesson-animation-clock-face b {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  width: 4px;
+  border-radius: 999px;
+  background: var(--google-red);
+  transform-origin: bottom center;
+  animation: lessonAnimationClockSweep 920ms ease-out both;
+}
+
+.lesson-animation-clock-face i {
+  height: 48px;
+  transform: translateX(-50%) rotate(86deg);
+}
+
+.lesson-animation-clock-face b {
+  height: 34px;
+  background: var(--module-accent-strong);
+  transform: translateX(-50%) rotate(28deg);
+}
+
+.lesson-animation-clock-labels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.lesson-animation-clock-labels span {
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: var(--module-accent-soft);
+  color: var(--module-accent-strong);
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.lesson-animation-measure-track {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: min(460px, 100%);
+  min-height: 70px;
+  padding: 0 8px 8px;
+  border-bottom: 5px solid var(--module-accent-strong);
+  background: linear-gradient(to right, color-mix(in srgb, var(--module-accent-soft) 50%, #ffffff 50%), #ffffff);
+}
+
+.lesson-animation-measure-track span {
+  display: grid;
+  place-items: end center;
+  width: 2px;
+  height: 32px;
+  background: var(--module-accent);
+  color: var(--color-text-secondary);
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.lesson-animation-area-grid {
+  display: grid;
+  gap: 3px;
+  width: min(380px, 100%);
+  padding: 10px;
+  border: 2px solid var(--module-accent-strong);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.lesson-animation-area-grid span {
+  min-width: 20px;
+  aspect-ratio: 1;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 35%, var(--color-border) 65%);
+  background: var(--module-accent-soft);
+  animation: lessonAnimationDotBuild 680ms ease-out both;
+}
+
+.lesson-animation-fraction-strip {
+  display: grid;
+  width: min(440px, 100%);
+  border: 2px solid var(--module-accent-strong);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.lesson-animation-fraction-strip span {
+  min-height: 64px;
+  border-right: 1px solid color-mix(in srgb, var(--module-accent) 42%, var(--color-border) 58%);
+  background: #ffffff;
+  animation: lessonAnimationTapeBuild 760ms ease-out both;
+}
+
+.lesson-animation-fraction-strip span.is-shaded {
+  background: var(--module-accent-soft);
+}
+
+.lesson-animation-graph-bars {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 12px;
+  width: min(420px, 100%);
+  min-height: 140px;
+  padding: 12px 10px 0;
+  border-left: 3px solid var(--module-accent-strong);
+  border-bottom: 3px solid var(--module-accent-strong);
+}
+
+.lesson-animation-graph-bars span {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+}
+
+.lesson-animation-graph-bars i {
+  display: block;
+  width: 34px;
+  border-radius: 6px 6px 0 0;
+  background: var(--module-accent);
+  animation: lessonAnimationGraphBuild 820ms ease-out both;
+}
+
+.lesson-animation-graph-bars small {
+  color: var(--color-text-secondary);
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.lesson-animation-polygon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: min(260px, 100%);
+  aspect-ratio: 1.2;
+  border: 4px solid var(--module-accent-strong);
+  clip-path: polygon(20% 10%, 82% 16%, 94% 70%, 50% 94%, 8% 72%);
+  background: var(--module-accent-soft);
+  animation: lessonAnimationGroupBuild 720ms ease-out both;
+}
+
+.lesson-animation-polygon span {
+  padding: 4px 7px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--module-accent-strong);
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.lesson-animation-polygon span:nth-child(2) {
+  transform: translate(52px, -18px);
+}
+
+.lesson-animation-polygon span:nth-child(3) {
+  transform: translate(-48px, 28px);
+}
+
+.lesson-animation-notes {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding: 10px;
+  border-left: 3px solid var(--module-accent);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--module-accent-soft) 62%, #ffffff 38%);
+}
+
+.lesson-animation-notes strong {
+  color: var(--color-text);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.lesson-animation-notes ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+@keyframes lessonAnimationDotBuild {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.72);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes lessonAnimationGroupBuild {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes lessonAnimationTapeBuild {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes lessonAnimationClockSweep {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) rotate(-22deg);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lessonAnimationGraphBuild {
+  from {
+    opacity: 0;
+    transform: scaleY(0.28);
+    transform-origin: bottom center;
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+    transform-origin: bottom center;
+  }
+}
+
 .lesson-layout {
   display: grid;
   grid-template-columns: minmax(180px, 196px) minmax(0, 1fr);
@@ -2032,6 +2556,7 @@
   .lesson-header,
   .lesson-layout,
   .activity-grid,
+  .lesson-animation-panel,
   .source-authored-panel {
     grid-template-columns: 1fr;
   }

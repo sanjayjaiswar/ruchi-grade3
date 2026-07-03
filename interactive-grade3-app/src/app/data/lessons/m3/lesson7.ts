@@ -7,6 +7,28 @@ export const M3_LESSON7_RUNTIME: LessonRuntimeConfig = {
     "multiplication",
     "unknown"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 7 animation: Interpret the unknown in multiplication and division to...",
+    context: "Thad sees 7 beetles while weeding his garden.",
+    equation: "6 units of 7; unknown labeled from the story",
+    teacherPrompt: "Draw and label a tape diagram to model the beetle problem. Use b to represent the unknown number of beetle legs, then write and solve 7 x 6 = b.",
+    focus: [
+      "factor",
+      "product",
+      "tape diagram",
+      "source labels"
+    ],
+    groupCount: 6,
+    groupSize: 7,
+    rowCount: 6,
+    columnCount: 7,
+    tapePartCount: 6,
+    tapePartLabel: "7 each",
+    tapeWholeLabel: "42 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

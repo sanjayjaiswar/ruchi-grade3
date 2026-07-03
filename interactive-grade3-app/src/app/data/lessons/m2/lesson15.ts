@@ -4,6 +4,28 @@ export const M2_LESSON15_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "addend"
   ],
+  lessonAnimation: {
+    kind: "measurement",
+    title: "Lesson 15 animation: Add measurements using the standard algorithm to compos...",
+    context: "T: (Show Beaker A with 56 milliliters of water and Beaker B with 27 milliliters of water.) Beaker A has 56 milliliters of water, and Beaker B has 27 milliliters of water.",
+    equation: "Measure and label in kg; keep the unit with the number",
+    teacherPrompt: "Notice the units in Problems 1(j) and 1(k). Both problems use both kilograms and grams. Did having two units in the problem change anything about the wa...",
+    focus: [
+      "addend",
+      "measurement",
+      "source labels"
+    ],
+    measurementTicks: [
+      "56 kg",
+      "27 kg",
+      "56 kg",
+      "27 kg",
+      "56 kg",
+      "1 kg"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

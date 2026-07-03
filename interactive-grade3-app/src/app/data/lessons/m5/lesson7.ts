@@ -5,6 +5,23 @@ export const M5_LESSON7_RUNTIME: LessonRuntimeConfig = {
     "fraction",
     "whole"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 7 animation: Identify and represent shaded and non-shaded parts of o...",
+    context: "T: What about the part that is not full?",
+    equation: "1/5; name the whole before naming the fraction",
+    teacherPrompt: "What about the part that is not full? Talk to your partner: Could that be a fraction, too? Why or why not?",
+    focus: [
+      "fraction",
+      "whole",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 5,
+    fractionShadedCount: 1
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

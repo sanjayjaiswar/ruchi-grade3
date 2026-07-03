@@ -6,6 +6,33 @@ export const M5_LESSON25_RUNTIME: LessonRuntimeConfig = {
     "whole",
     "number line"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 25 animation: Express whole number fractions on the number line when...",
+    context: "Note on materials: Template 1 is used again in Lessons 27 and 29.",
+    equation: "1 to 13 on equal intervals of 3",
+    teacherPrompt: "Problem 1 presents a slightly different sequence than the lesson. Invite students to share what they notice about the relationship between the models in...",
+    focus: [
+      "fraction",
+      "whole",
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "1",
+      "4",
+      "7",
+      "10",
+      "13"
+    ],
+    numberLineJumps: [
+      "+3",
+      "+3",
+      "+3"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

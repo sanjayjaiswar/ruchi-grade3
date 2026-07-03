@@ -7,6 +7,30 @@ export const M3_LESSON17_RUNTIME: LessonRuntimeConfig = {
     "multiplication",
     "array"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 17 animation: Identify patterns in multiplication and division facts...",
+    context: "Problems 1(a) and 1(b) Completed Table from Problem 1: T: Write the products to complete the table in Problem 1.",
+    equation: "4 x 2 = (2 x 2) + (2 x 2)",
+    teacherPrompt: "Talk to a partner: How do the patterns you discovered in Problem 1 for odd and even products help you when multiplying?",
+    focus: [
+      "factor",
+      "product",
+      "array",
+      "source labels"
+    ],
+    groupCount: 4,
+    groupSize: 2,
+    rowCount: 4,
+    columnCount: 2,
+    tapePartCount: 4,
+    tapePartLabel: "2",
+    tapeWholeLabel: "8 total",
+    firstPart: 2,
+    secondPart: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

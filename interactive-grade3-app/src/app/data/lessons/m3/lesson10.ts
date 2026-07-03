@@ -7,6 +7,30 @@ export const M3_LESSON10_RUNTIME: LessonRuntimeConfig = {
     "quotient",
     "factor"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 10 animation: Use the distributive property as a strategy to multiply...",
+    context: "which factor do we break apart?",
+    equation: "8 x 9 = (4 x 9) + (4 x 9)",
+    teacherPrompt: "Describe the steps you took to solve for the unknown numbers in Problem 1(a)",
+    focus: [
+      "distributive property",
+      "division",
+      "array",
+      "source labels"
+    ],
+    groupCount: 8,
+    groupSize: 9,
+    rowCount: 8,
+    columnCount: 9,
+    tapePartCount: 8,
+    tapePartLabel: "9",
+    tapeWholeLabel: "72 total",
+    firstPart: 4,
+    secondPart: 4
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

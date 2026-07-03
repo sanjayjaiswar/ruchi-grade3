@@ -2,6 +2,24 @@ import type { LessonRuntimeConfig } from '../lesson-runtime.types';
 
 export const M7_LESSON30_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 30 animation: Share and critique peer strategies for problem solving.",
+    context: "labeled… T: Read Problem 3 from yesterday's Problem Set.",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "How did today's Problem Set or critiquing tool help you analyze your classmates' work?",
+    focus: [
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "area",
+      "side",
+      "unit"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

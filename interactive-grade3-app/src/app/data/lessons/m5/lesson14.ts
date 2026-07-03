@@ -5,6 +5,32 @@ export const M5_LESSON14_RUNTIME: LessonRuntimeConfig = {
     "fraction",
     "number line"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 14 animation: Place fractions on a number line with endpoints 0 and 1.",
+    context: "Part 1: Measure a line of length 1 whole.",
+    equation: "0 to 4 on equal intervals of 1",
+    teacherPrompt: "Look at the number line you made for Problem 3. What does each point on the number line mean? 1 (The following response is possible: \"5 marks the distan...",
+    focus: [
+      "fraction",
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    numberLineJumps: [
+      "+1",
+      "+1",
+      "+1"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

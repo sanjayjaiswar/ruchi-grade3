@@ -7,6 +7,30 @@ export const M3_LESSON5_RUNTIME: LessonRuntimeConfig = {
     "quotient",
     "factor"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 5 animation: Count by units of 7 to multiply and divide using number...",
+    context: "Problem by skip-counting by four 7 times.",
+    equation: "7 x 4 = (4 x 4) + (3 x 4)",
+    teacherPrompt: "Take turns with a partner reading the multiplication facts in Problem 1 and the related division facts",
+    focus: [
+      "decompose",
+      "division",
+      "array",
+      "source labels"
+    ],
+    groupCount: 7,
+    groupSize: 4,
+    rowCount: 7,
+    columnCount: 4,
+    tapePartCount: 7,
+    tapePartLabel: "4",
+    tapeWholeLabel: "28 total",
+    firstPart: 4,
+    secondPart: 3
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

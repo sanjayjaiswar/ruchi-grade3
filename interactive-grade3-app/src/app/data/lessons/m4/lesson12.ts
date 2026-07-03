@@ -5,6 +5,25 @@ export const M4_LESSON12_RUNTIME: LessonRuntimeConfig = {
     "area",
     "square unit"
   ],
+  lessonAnimation: {
+    kind: "area-model",
+    title: "Lesson 12 animation: Solve word problems involving area.",
+    context: "Solve area word problems with 1 side length unknown.",
+    equation: "3 rows x 10 columns = 30 square units",
+    teacherPrompt: "What shape is the sticky note in Problem 1? How do you know?",
+    focus: [
+      "area",
+      "square unit",
+      "area model",
+      "source labels"
+    ],
+    areaRows: 3,
+    areaColumns: 10,
+    rowCount: 3,
+    columnCount: 10
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

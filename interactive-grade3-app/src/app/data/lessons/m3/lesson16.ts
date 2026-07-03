@@ -7,6 +7,28 @@ export const M3_LESSON16_RUNTIME: LessonRuntimeConfig = {
     "multiplication",
     "array"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 16 animation: Reason about and explain arithmetic patterns using unit...",
+    context: "Multiply and divide using units of 1.",
+    equation: "4 x 3 = 12",
+    teacherPrompt: "Discuss with a partner, what patterns for MP.7 multiplying and dividing by 0 and 1 helped you solve Problem 1?",
+    focus: [
+      "factor",
+      "product",
+      "array",
+      "source labels"
+    ],
+    groupCount: 4,
+    groupSize: 3,
+    rowCount: 4,
+    columnCount: 3,
+    tapePartCount: 4,
+    tapePartLabel: "3",
+    tapeWholeLabel: "12 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

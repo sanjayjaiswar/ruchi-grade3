@@ -6,6 +6,23 @@ export const M5_LESSON6_RUNTIME: LessonRuntimeConfig = {
     "whole",
     "unit fraction"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 6 animation: Build non-unit fractions less than one whole from unit...",
+    context: "Shape 1: T: (Project or draw a circle partitioned into thirds.) This is 2 thirds; question, \"What's happening to my 3 parts?\" to \"How are my parts T: What unit is it partitioned into?",
+    equation: "1/6; name the whole before naming the fraction",
+    teacherPrompt: "Through discussion, guide students to articulate the idea that to show non-unit fractions, they create copies of unit fractions. This resembles counting...",
+    focus: [
+      "fraction",
+      "whole",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 6,
+    fractionShadedCount: 1
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

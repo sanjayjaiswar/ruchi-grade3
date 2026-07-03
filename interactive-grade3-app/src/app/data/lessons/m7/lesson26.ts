@@ -7,6 +7,26 @@ export const M7_LESSON26_RUNTIME: LessonRuntimeConfig = {
     "perimeter",
     "angle"
   ],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 26 animation: Use rectangles to draw a robot with specified perimeter...",
+    context: "Part 1: Create a robot environment.",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "(Share student calculations from Problem 2.) Why do you think the problem asked to measure the perimeter in inches instead of centimeters?",
+    focus: [
+      "area",
+      "square unit",
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "side length",
+      "side length",
+      "perimeter"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

@@ -7,6 +7,25 @@ export const M4_LESSON10_RUNTIME: LessonRuntimeConfig = {
     "square unit",
     "distributive property"
   ],
+  lessonAnimation: {
+    kind: "area-model",
+    title: "Lesson 10 animation: Apply the distributive property as a strategy to find t...",
+    context: "T: (Project the tiling template.) There are 3 rectangles we will 6 cm focus on: the large rectangle (trace its boundary line with your finger), the shaded rectangle (trace its bounda...",
+    equation: "3 rows x 6 columns = 18 square units",
+    teacherPrompt: "How is the rectangle in Problem 1(a) similar to the rectangle you tiled in today's lesson? How is it different?",
+    focus: [
+      "addend",
+      "area",
+      "area model",
+      "source labels"
+    ],
+    areaRows: 3,
+    areaColumns: 6,
+    rowCount: 3,
+    columnCount: 6
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

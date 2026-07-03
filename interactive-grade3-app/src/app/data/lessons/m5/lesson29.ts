@@ -5,6 +5,23 @@ export const M5_LESSON29_RUNTIME: LessonRuntimeConfig = {
     "fraction",
     "whole"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 29 animation: Compare fractions with the same numerator using <, >, o...",
+    context: "Seat students in pairs facing each other in a large circle around the room.",
+    equation: "2/8; name the whole before naming the fraction",
+    teacherPrompt: "Today, we'll only use the first rectangle. At my signal, draw and 1 shade a fraction less than 2, and label it below the rectangle. (Signal.)",
+    focus: [
+      "fraction",
+      "whole",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 8,
+    fractionShadedCount: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

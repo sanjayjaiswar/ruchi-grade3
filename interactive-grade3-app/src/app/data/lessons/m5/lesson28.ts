@@ -5,6 +5,23 @@ export const M5_LESSON28_RUNTIME: LessonRuntimeConfig = {
     "fraction",
     "whole"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 28 animation: Compare fractions with the same numerator pictorially.",
+    context: "T: Look again at your models of LaTonya's hotdogs.",
+    equation: "2/10; name the whole before naming the fraction",
+    teacherPrompt: "Look at your answers for Problems 7 and 8. Is 2 parts always equal to 2 parts? Why or why not?",
+    focus: [
+      "fraction",
+      "whole",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 10,
+    fractionShadedCount: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

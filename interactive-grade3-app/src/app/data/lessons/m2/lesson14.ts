@@ -5,6 +5,32 @@ export const M2_LESSON14_RUNTIME: LessonRuntimeConfig = {
     "number line",
     "round"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 14 animation: Round to the nearest hundred on the vertical number line.",
+    context: "Round three-digit numbers to the nearest hundred.",
+    equation: "1 to 13 on equal intervals of 3",
+    teacherPrompt: "Have students share their explanations for Problem 4, particularly if there is disagreement",
+    focus: [
+      "number line",
+      "round",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "1",
+      "4",
+      "7",
+      "10",
+      "13"
+    ],
+    numberLineJumps: [
+      "+3",
+      "+3",
+      "+3"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

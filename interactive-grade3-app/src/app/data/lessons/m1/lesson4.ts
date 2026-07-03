@@ -6,6 +6,25 @@ export const M1_LESSON4_RUNTIME: LessonRuntimeConfig = {
     "unknown",
     "quotient"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 4 animation: unknown is the group size",
+    context: "Show 18 as the whole split into 2 equal groups; the unknown is how many are in each group.",
+    equation: "18 divided by 2 = 9",
+    teacherPrompt: "What does the quotient tell us here: number of groups or size of each group?",
+    groupCount: 2,
+    groupSize: 9,
+    rowCount: 2,
+    columnCount: 9,
+    tapePartCount: 2,
+    tapePartLabel: "? in each group",
+    tapeWholeLabel: "18 total",
+    focus: [
+      "Whole",
+      "2 groups",
+      "Unknown group size"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

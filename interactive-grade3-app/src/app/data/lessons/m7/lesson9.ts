@@ -4,6 +4,25 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "gram"
   ],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 9 animation: Reason about composing and decomposing polygons using t...",
+    context: "Problem 1 Use at least two tangram pieces to make and draw two of each of the following shapes.",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "Which shape was the most challenging for you to make in Problem 1? Why?",
+    focus: [
+      "gram",
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "angle",
+      "side",
+      "vertex"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

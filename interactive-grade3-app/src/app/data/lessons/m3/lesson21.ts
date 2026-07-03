@@ -7,6 +7,28 @@ export const M3_LESSON21_RUNTIME: LessonRuntimeConfig = {
     "multiplication",
     "tape diagram"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 21 animation: Solve two-step word problems involving multiplying sing...",
+    context: "T: It took you 4 minutes and 13 seconds to find the products and order them from least to greatest.",
+    equation: "10 units of 4; unknown labeled from the story",
+    teacherPrompt: "In Problem 2, how many more months will Lupe need to save so she has enough to buy the art supplies? How do you know?",
+    focus: [
+      "factor",
+      "product",
+      "tape diagram",
+      "source labels"
+    ],
+    groupCount: 10,
+    groupSize: 4,
+    rowCount: 10,
+    columnCount: 4,
+    tapePartCount: 10,
+    tapePartLabel: "4 each",
+    tapeWholeLabel: "40 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

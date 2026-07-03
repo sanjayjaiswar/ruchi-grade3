@@ -5,6 +5,23 @@ export const M5_LESSON24_RUNTIME: LessonRuntimeConfig = {
     "fraction",
     "whole"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 24 animation: Express whole numbers as fractions and recognize equiva...",
+    context: "T: Cut out all of the rectangles on the fraction pieces, and initial each rectangle so you know which ones are yours.",
+    equation: "1/6; name the whole before naming the fraction",
+    teacherPrompt: "Invite students to share their thinking about Problem 3",
+    focus: [
+      "fraction",
+      "whole",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 6,
+    fractionShadedCount: 1
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

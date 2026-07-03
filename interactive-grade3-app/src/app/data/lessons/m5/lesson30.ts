@@ -4,6 +4,31 @@ export const M5_LESSON30_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "number line"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 30 animation: Partition various wholes precisely into equal parts usi...",
+    context: "Use the teacher-edition lesson pages to teach: Partition various wholes precisely into equal parts using a number line method.",
+    equation: "0 to 20 on equal intervals of 5",
+    teacherPrompt: "(Possibly present a meter strip.) Could we use this method to partition strips of any length? Talk to your partner about how we could partition this lon...",
+    focus: [
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "0",
+      "5",
+      "10",
+      "15",
+      "20"
+    ],
+    numberLineJumps: [
+      "+5",
+      "+5",
+      "+5"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

@@ -4,6 +4,25 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "perimeter"
   ],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 10 animation: Decompose quadrilaterals to understand perimeter as the...",
+    context: "Problem 1: Decompose a square to define perimeter.",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "Does the shape you drew in Problem 1(a) have the same perimeter as the shape your partner drew for Problem 1(a)? How do you know?",
+    focus: [
+      "perimeter",
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "side length",
+      "side length",
+      "perimeter"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

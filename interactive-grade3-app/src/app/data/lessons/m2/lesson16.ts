@@ -4,6 +4,28 @@ export const M2_LESSON16_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "addend"
   ],
+  lessonAnimation: {
+    kind: "measurement",
+    title: "Lesson 16 animation: Add measurements using the standard algorithm to compos...",
+    context: "Use place value charts, disks, and the standard algorithm to add measurements, composing larger units twice.",
+    equation: "Measure and label in kg; keep the unit with the number",
+    teacherPrompt: "What pattern did you notice between Problems 1(a), 1(b), and 1(c)? How did the pattern help you solve these problems?",
+    focus: [
+      "addend",
+      "measurement",
+      "source labels"
+    ],
+    measurementTicks: [
+      "1 kg",
+      "1 kg",
+      "1 kg",
+      "52 kg",
+      "68 kg",
+      "68 kg"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

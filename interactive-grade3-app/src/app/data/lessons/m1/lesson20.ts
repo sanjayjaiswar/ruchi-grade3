@@ -5,6 +5,25 @@ export const M1_LESSON20_RUNTIME: LessonRuntimeConfig = {
     "multiplication",
     "division"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 20 animation: track two-step multiplication and division reasoning",
+    context: "Use a tape diagram to separate step 1 from step 2 so the answer can be checked for reasonableness.",
+    equation: "(3 x 4) + 6 = 18",
+    teacherPrompt: "What is step 1, and how does that result feed step 2?",
+    groupCount: 3,
+    groupSize: 4,
+    rowCount: 3,
+    columnCount: 4,
+    tapePartCount: 4,
+    tapePartLabel: "step",
+    tapeWholeLabel: "two-step total",
+    focus: [
+      "Read-Draw-Write",
+      "Step 1 result",
+      "Reasonableness"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

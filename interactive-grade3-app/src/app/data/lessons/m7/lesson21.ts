@@ -7,6 +7,26 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
     "perimeter",
     "angle"
   ],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 21 animation: Construct rectangles with a given perimeter using unit...",
+    context: "T: Read the first sentence of Problem 1 on the Problem Set.",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "Compare the rectangles you drew on your grid paper for Problems 1 and 2. What patterns do you see in the side lengths?",
+    focus: [
+      "area",
+      "square unit",
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "side length",
+      "side length",
+      "perimeter"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

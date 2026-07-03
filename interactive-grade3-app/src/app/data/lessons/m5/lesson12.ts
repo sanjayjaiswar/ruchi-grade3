@@ -2,6 +2,21 @@ import type { LessonRuntimeConfig } from '../lesson-runtime.types';
 
 export const M5_LESSON12_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 12 animation: Specify the corresponding whole when presented with one...",
+    context: "Exploration: Designate the following stations for groups of 3 (more than 3 not suggested).",
+    equation: "2/4; name the whole before naming the fraction",
+    teacherPrompt: "What were the different wholes we saw at each station that were the same?",
+    focus: [
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 4,
+    fractionShadedCount: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

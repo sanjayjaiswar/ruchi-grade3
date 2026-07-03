@@ -5,6 +5,25 @@ export const M4_LESSON1_RUNTIME: LessonRuntimeConfig = {
     "area",
     "square unit"
   ],
+  lessonAnimation: {
+    kind: "area-model",
+    title: "Lesson 1 animation: Understand area as an attribute of plane figures.",
+    context: "students discuss, facilitate a whole class discussion.) Partner students so they can work together to cover the shapes.",
+    equation: "5 rows x 4 columns = 20 square units",
+    teacherPrompt: "Talk to a partner. Do you think you can use square pattern blocks to cover Shapes A and B in Problem 1? Explain your answer",
+    focus: [
+      "area",
+      "square unit",
+      "area model",
+      "source labels"
+    ],
+    areaRows: 5,
+    areaColumns: 4,
+    rowCount: 5,
+    columnCount: 4
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

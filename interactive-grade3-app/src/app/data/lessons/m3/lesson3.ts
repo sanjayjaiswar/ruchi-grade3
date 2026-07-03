@@ -7,6 +7,28 @@ export const M3_LESSON3_RUNTIME: LessonRuntimeConfig = {
     "factor",
     "product"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 3 animation: Multiply and divide with familiar facts using a letter...",
+    context: "Use a letter to represent the unknown in multiplication.",
+    equation: "2 units of 4; unknown labeled from the story",
+    teacherPrompt: "Explain to your partner how you solved Problem 3. (Review division as both an unknown factor and an equal groups problem.)",
+    focus: [
+      "division",
+      "quotient",
+      "tape diagram",
+      "source labels"
+    ],
+    groupCount: 2,
+    groupSize: 4,
+    rowCount: 2,
+    columnCount: 4,
+    tapePartCount: 2,
+    tapePartLabel: "4 each",
+    tapeWholeLabel: "8 total"
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

@@ -4,6 +4,42 @@ export const M6_LESSON4_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
     "scale"
   ],
+  lessonAnimation: {
+    kind: "graph",
+    title: "Lesson 4 animation: Solve one- and two-step problems involving graphs.",
+    context: "T: (Pass out the graph Template.) Let's create a bar graph from the data in the Application Problem.",
+    equation: "Read the scale, then compare or calculate from the graph data",
+    teacherPrompt: "Invite students who used different scales for Problem 1 to share their work",
+    focus: [
+      "scale",
+      "graph",
+      "source labels"
+    ],
+    graphBars: [
+      {
+        label: "Monday",
+        value: 7
+      },
+      {
+        label: "Tuesday",
+        value: 5
+      },
+      {
+        label: "Wednesday",
+        value: 8
+      },
+      {
+        label: "Thursday",
+        value: 7
+      },
+      {
+        label: "Friday",
+        value: 7
+      }
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

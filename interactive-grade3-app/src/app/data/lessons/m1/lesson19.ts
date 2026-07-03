@@ -6,6 +6,27 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
     "decompose",
     "array"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 19 animation: choose a decomposition",
+    context: "Show 9 rows of 4, split into 5 rows and 4 rows, and justify the chosen strategy.",
+    equation: "9 x 4 = (5 x 4) + (4 x 4) = 36",
+    teacherPrompt: "Why did this split help solve the fact?",
+    groupCount: 9,
+    groupSize: 4,
+    rowCount: 9,
+    columnCount: 4,
+    tapePartCount: 9,
+    tapePartLabel: "4",
+    tapeWholeLabel: "36 total",
+    firstPart: 5,
+    secondPart: 4,
+    focus: [
+      "Choose split",
+      "Known facts",
+      "Reasonable product"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

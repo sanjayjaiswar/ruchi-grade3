@@ -5,6 +5,26 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
     "perimeter",
     "round"
   ],
+  lessonAnimation: {
+    kind: "geometry",
+    title: "Lesson 16 animation: Use string to measure the perimeter of various circles...",
+    context: "Part 1: Use string and a ruler to find the perimeter of a circle.",
+    equation: "Use attributes, side lengths, and labels from the figure",
+    teacherPrompt: "Look at your answers in the chart in Problem 1. Which circular object has the smallest perimeter? The greatest perimeter?",
+    focus: [
+      "perimeter",
+      "round",
+      "geometry",
+      "source labels"
+    ],
+    geometryLabels: [
+      "side length",
+      "side length",
+      "perimeter"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

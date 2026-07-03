@@ -5,6 +5,25 @@ export const M1_LESSON13_RUNTIME: LessonRuntimeConfig = {
     "quotient",
     "division"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 13 animation: quotient with units of 3",
+    context: "Show units of 3 and name whether the quotient counts groups or the size of a group.",
+    equation: "12 divided by 3 = 4",
+    teacherPrompt: "Is the quotient the number of groups or the size of each group?",
+    groupCount: 4,
+    groupSize: 3,
+    rowCount: 3,
+    columnCount: 4,
+    tapePartCount: 4,
+    tapePartLabel: "3 each",
+    tapeWholeLabel: "12 total",
+    focus: [
+      "Units of 3",
+      "Quotient meaning",
+      "Context label"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

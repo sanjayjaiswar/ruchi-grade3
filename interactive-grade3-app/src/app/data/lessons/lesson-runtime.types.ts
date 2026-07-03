@@ -43,9 +43,48 @@ export type SourceWorkspaceModel = {
   lowerLabelPrompt?: string;
 };
 
+export type LessonAnimationModel = {
+  kind:
+    | 'equal-groups'
+    | 'array'
+    | 'tape-diagram'
+    | 'number-line'
+    | 'clock'
+    | 'measurement'
+    | 'area-model'
+    | 'fraction-strip'
+    | 'graph'
+    | 'geometry';
+  title: string;
+  context: string;
+  equation: string;
+  teacherPrompt: string;
+  groupCount?: number;
+  groupSize?: number;
+  rowCount?: number;
+  columnCount?: number;
+  tapePartCount?: number;
+  tapePartLabel?: string;
+  tapeWholeLabel?: string;
+  firstPart?: number;
+  secondPart?: number;
+  numberLineLabels?: string[];
+  numberLineJumps?: string[];
+  clockLabels?: string[];
+  measurementTicks?: string[];
+  areaRows?: number;
+  areaColumns?: number;
+  fractionPartCount?: number;
+  fractionShadedCount?: number;
+  graphBars?: { label: string; value: number }[];
+  geometryLabels?: string[];
+  focus: string[];
+};
+
 export type LessonRuntimeConfig = {
   conceptTerms?: string[];
   showMultiplicationDivisionVocabularyNote?: boolean;
+  lessonAnimation?: LessonAnimationModel;
   teacherEditionSteps?: LessonStep[];
   studentWorkSupport?: Record<number, StudentWorkSupport>;
   studentWorkEquations?: Record<number, string[]>;

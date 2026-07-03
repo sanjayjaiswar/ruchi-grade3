@@ -5,6 +5,25 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
     "quotient",
     "division"
   ],
+  lessonAnimation: {
+    kind: "tape-diagram",
+    title: "Lesson 12 animation: quotient with units of 2",
+    context: "Show units of 2 and require the answer to be interpreted as groups or objects per group.",
+    equation: "10 divided by 2 = 5",
+    teacherPrompt: "What does the quotient 5 mean in this context?",
+    groupCount: 5,
+    groupSize: 2,
+    rowCount: 2,
+    columnCount: 5,
+    tapePartCount: 5,
+    tapePartLabel: "2 each",
+    tapeWholeLabel: "10 total",
+    focus: [
+      "Units of 2",
+      "Quotient",
+      "Meaning in words"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

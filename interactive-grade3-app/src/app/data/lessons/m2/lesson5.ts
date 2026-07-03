@@ -6,6 +6,26 @@ export const M2_LESSON5_RUNTIME: LessonRuntimeConfig = {
     "elapsed time",
     "number line"
   ],
+  lessonAnimation: {
+    kind: "clock",
+    title: "Lesson 5 animation: Solve word problems involving time intervals within 1 h...",
+    context: "Part 1: Count forward and backward to add and subtract on the number line.",
+    equation: "1 sec start -> 4 sec elapsed -> 4 sec end",
+    teacherPrompt: "Describe the process of drawing the number line for Problem 2. Explain how you labeled it. (Call on students who used different ways of thinking about a...",
+    focus: [
+      "addend",
+      "elapsed time",
+      "clock",
+      "source labels"
+    ],
+    clockLabels: [
+      "1 sec start",
+      "4 sec elapsed",
+      "4 sec end"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

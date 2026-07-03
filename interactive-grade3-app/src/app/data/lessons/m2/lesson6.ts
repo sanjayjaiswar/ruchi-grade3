@@ -5,6 +5,29 @@ export const M2_LESSON6_RUNTIME: LessonRuntimeConfig = {
     "gram",
     "kilogram"
   ],
+  lessonAnimation: {
+    kind: "measurement",
+    title: "Lesson 6 animation: Build and decompose a kilogram to reason about the size...",
+    context: "Lesson 6: Build and decompose a kilogram to reason about the size and weight 75 of 1 kilogram, 100 grams, 10 grams, and 1 gram",
+    equation: "Measure and label in kg; keep the unit with the number",
+    teacherPrompt: "How are the units kilogram and gram similar? How are they different?",
+    focus: [
+      "gram",
+      "kilogram",
+      "measurement",
+      "source labels"
+    ],
+    measurementTicks: [
+      "1 kg",
+      "100 kg",
+      "10 kg",
+      "1 kg",
+      "75 kg",
+      "1 kg"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

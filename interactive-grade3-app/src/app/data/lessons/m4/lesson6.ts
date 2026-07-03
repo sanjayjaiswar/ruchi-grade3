@@ -7,6 +7,25 @@ export const M4_LESSON6_RUNTIME: LessonRuntimeConfig = {
     "square unit",
     "angle"
   ],
+  lessonAnimation: {
+    kind: "area-model",
+    title: "Lesson 6 animation: Draw rows and columns to determine the area of a rectan...",
+    context: "Students have Templates 1 and 2 in their personal white boards, Graduate to a 2 by 3 rectangle in which and are looking at array 1.",
+    equation: "3 rows x 2 columns = 6 square units",
+    teacherPrompt: "How did you know where to draw the columns and rows in Problem 1?",
+    focus: [
+      "array",
+      "area",
+      "area model",
+      "source labels"
+    ],
+    areaRows: 3,
+    areaColumns: 2,
+    rowCount: 3,
+    columnCount: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

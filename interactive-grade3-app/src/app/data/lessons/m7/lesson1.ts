@@ -5,6 +5,33 @@ export const M7_LESSON1_RUNTIME: LessonRuntimeConfig = {
     "unknown",
     "unknown factor"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 1 animation: Solve word problems in varied contexts using a letter t...",
+    context: "T: Let's solve the first problem using our Read-Draw- hayrides and orchard to terms from a Write process.",
+    equation: "7 to 23 on equal intervals of 4",
+    teacherPrompt: "Invite students who used different drawings for the same problem to share their work. Facilitate a comparative discussion",
+    focus: [
+      "unknown",
+      "unknown factor",
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "7",
+      "11",
+      "15",
+      "19",
+      "23"
+    ],
+    numberLineJumps: [
+      "+4",
+      "+4",
+      "+4"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

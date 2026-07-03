@@ -168,6 +168,27 @@ export const LESSON10_SOURCE_ROWS = {
 
 export const LESSON10_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: LESSON10_CONCEPT_TERMS,
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 10 animation: split the array into partial products",
+    context: "Show 7 rows of 3, split after 5 rows, and add the two smaller products.",
+    equation: "7 x 3 = (5 x 3) + (2 x 3) = 21",
+    teacherPrompt: "What does the dotted split change: the total or the strategy?",
+    groupCount: 7,
+    groupSize: 3,
+    rowCount: 7,
+    columnCount: 3,
+    tapePartCount: 7,
+    tapePartLabel: "3",
+    tapeWholeLabel: "21 total",
+    firstPart: 5,
+    secondPart: 2,
+    focus: [
+      "Whole array",
+      "5 rows and 2 rows",
+      "Add partial products"
+    ]
+  },
   teacherEditionSteps: LESSON10_TEACHER_EDITION_STEPS,
   studentWorkSupport: LESSON10_STUDENT_WORK_SUPPORT,
   sourceRows: LESSON10_SOURCE_ROWS,

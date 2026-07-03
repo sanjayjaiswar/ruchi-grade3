@@ -6,6 +6,23 @@ export const M5_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "whole",
     "unit fraction"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 2 animation: Specify and partition a whole into equal parts, identif...",
+    context: "1 1 Students should save the fraction strips they create during this lesson for use in future Module 5 lessons.",
+    equation: "1/2; name the whole before naming the fraction",
+    teacherPrompt: "If the size of the whole stays the same, what happens as you partition it into more and more parts?",
+    focus: [
+      "fraction",
+      "whole",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 2,
+    fractionShadedCount: 1
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

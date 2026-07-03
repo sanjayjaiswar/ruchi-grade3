@@ -5,6 +5,25 @@ export const M1_LESSON1_RUNTIME: LessonRuntimeConfig = {
     "equal groups",
     "multiplication"
   ],
+  lessonAnimation: {
+    kind: "equal-groups",
+    title: "Lesson 1 animation: equal groups become multiplication",
+    context: "Show 4 equal groups with 2 in each group, then connect the picture to repeated addition and a multiplication sentence.",
+    equation: "2 + 2 + 2 + 2 = 8; 4 x 2 = 8",
+    teacherPrompt: "What must be true about the groups before the multiplication sentence is valid?",
+    groupCount: 4,
+    groupSize: 2,
+    rowCount: 4,
+    columnCount: 2,
+    tapePartCount: 4,
+    tapePartLabel: "2",
+    tapeWholeLabel: "8 total",
+    focus: [
+      "Equal groups",
+      "Repeated addition",
+      "4 groups of 2"
+    ]
+  },
   teacherEditionSteps: [
     {
       id: "source-goal",

@@ -5,6 +5,32 @@ export const M2_LESSON12_RUNTIME: LessonRuntimeConfig = {
     "round",
     "number line"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 12 animation: Round two-digit measurements to the nearest ten on the...",
+    context: "S: 73 milliliters is less than halfway between 70 and 80 milliliters.",
+    equation: "73 to 85 on equal intervals of 3",
+    teacherPrompt: "Discuss new vocabulary from today's lesson: round and about. Connect the discussion to rounding two-digit measurements to the nearest ten on the vertica...",
+    focus: [
+      "round",
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "73",
+      "76",
+      "79",
+      "82",
+      "85"
+    ],
+    numberLineJumps: [
+      "+3",
+      "+3",
+      "+3"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

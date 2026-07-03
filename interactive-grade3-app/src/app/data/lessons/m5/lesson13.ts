@@ -5,6 +5,23 @@ export const M5_LESSON13_RUNTIME: LessonRuntimeConfig = {
     "fraction",
     "whole"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 13 animation: Identify a shaded fractional part in different ways dep...",
+    context: "T: Fold your index card to make 4 equal units.",
+    equation: "2/4; name the whole before naming the fraction",
+    teacherPrompt: "Compare Rope C in Problems 6(a) and 6(d). the whole with your finger.\"",
+    focus: [
+      "fraction",
+      "whole",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 4,
+    fractionShadedCount: 2
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

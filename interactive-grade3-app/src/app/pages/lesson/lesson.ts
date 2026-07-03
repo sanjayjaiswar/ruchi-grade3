@@ -8,7 +8,12 @@ import { LESSON_SOURCE_NOTES } from '../../data/lesson-source-notes.generated';
 import { STUDENT_WORK_SOURCE, StudentWorkLessonSource, StudentWorkSourceProblem } from '../../data/student-work-source.generated';
 import { LessonContent, LessonStep, ModuleMeta } from '../../data/curriculum.types';
 import { findLessonRuntime } from '../../data/lessons/lesson-registry';
-import { ArrayDecompositionLessonModel, LessonRuntimeConfig, SourceWorkspaceModel } from '../../data/lessons/lesson-runtime.types';
+import {
+  ArrayDecompositionLessonModel,
+  LessonAnimationModel,
+  LessonRuntimeConfig,
+  SourceWorkspaceModel
+} from '../../data/lessons/lesson-runtime.types';
 import { ArrayDecomposerComponent } from '../../shared/array-decomposer/array-decomposer';
 import { EqualGroupsModelComponent } from '../../shared/equal-groups-model/equal-groups-model';
 
@@ -478,6 +483,81 @@ export class LessonPage implements OnInit {
 
   get showMultiplicationDivisionVocabularyNote(): boolean {
     return Boolean(this.activeLessonRuntime?.showMultiplicationDivisionVocabularyNote);
+  }
+
+  get lessonAnimation(): LessonAnimationModel | undefined {
+    return this.activeLessonRuntime?.lessonAnimation;
+  }
+
+  get lessonAnimationGroups(): number[] {
+    return Array.from({ length: Math.min(this.lessonAnimation?.groupCount ?? 0, 10) }, (_, index) => index + 1);
+  }
+
+  get lessonAnimationGroupItems(): number[] {
+    return Array.from({ length: Math.min(this.lessonAnimation?.groupSize ?? 0, 10) }, (_, index) => index + 1);
+  }
+
+  get lessonAnimationArrayDots(): number[] {
+    const animation = this.lessonAnimation;
+    const dotCount = Math.min((animation?.rowCount ?? 0) * (animation?.columnCount ?? 0), 80);
+    return Array.from({ length: dotCount }, (_, index) => index + 1);
+  }
+
+  get lessonAnimationTapeParts(): number[] {
+    return Array.from({ length: Math.min(this.lessonAnimation?.tapePartCount ?? 0, 10) }, (_, index) => index + 1);
+  }
+
+  get lessonAnimationNumberLineLabels(): string[] {
+    return this.lessonAnimation?.numberLineLabels ?? ['0', 'halfway', 'target'];
+  }
+
+  get lessonAnimationNumberLineJumps(): string[] {
+    return this.lessonAnimation?.numberLineJumps ?? [];
+  }
+
+  get lessonAnimationClockLabels(): string[] {
+    return this.lessonAnimation?.clockLabels ?? ['start', 'elapsed', 'end'];
+  }
+
+  get lessonAnimationMeasurementTicks(): string[] {
+    return this.lessonAnimation?.measurementTicks ?? ['0', '1', '2', '3', '4', '5'];
+  }
+
+  get lessonAnimationAreaTiles(): number[] {
+    const animation = this.lessonAnimation;
+    const rows = animation?.areaRows ?? animation?.rowCount ?? 0;
+    const columns = animation?.areaColumns ?? animation?.columnCount ?? 0;
+    return Array.from({ length: Math.min(rows * columns, 80) }, (_, index) => index + 1);
+  }
+
+  get lessonAnimationFractionParts(): number[] {
+    return Array.from({ length: Math.min(this.lessonAnimation?.fractionPartCount ?? 0, 12) }, (_, index) => index + 1);
+  }
+
+  get lessonAnimationGraphBars(): { label: string; value: number }[] {
+    return this.lessonAnimation?.graphBars ?? [];
+  }
+
+  get lessonAnimationGeometryLabels(): string[] {
+    return this.lessonAnimation?.geometryLabels ?? [];
+  }
+
+  lessonAnimationGraphBarHeight(value: number): number {
+    const max = Math.max(...this.lessonAnimationGraphBars.map((bar) => bar.value), 1);
+    return Math.max(18, Math.round((value / max) * 96));
+  }
+
+  lessonAnimationDotClass(dotIndex: number): Record<string, boolean> {
+    const animation = this.lessonAnimation;
+    if (!animation?.firstPart || !animation.columnCount) {
+      return {};
+    }
+
+    const rowNumber = Math.floor(dotIndex / animation.columnCount) + 1;
+    return {
+      'is-first-part': rowNumber <= animation.firstPart,
+      'is-second-part': rowNumber > animation.firstPart
+    };
   }
 
   get arrayDecompositionExamples(): ArrayDecompositionExample[] {

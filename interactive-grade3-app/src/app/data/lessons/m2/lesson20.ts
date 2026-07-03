@@ -5,6 +5,32 @@ export const M2_LESSON20_RUNTIME: LessonRuntimeConfig = {
     "round",
     "number line"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 20 animation: Estimate differences by rounding and apply to solve mea...",
+    context: "Estimate 362 – 189 by rounding.",
+    equation: "0 to 20 on equal intervals of 5",
+    teacherPrompt: "Share your observations from Problem 1(b). What did you find out? How is this different than rounding when you add?",
+    focus: [
+      "round",
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "0",
+      "5",
+      "10",
+      "15",
+      "20"
+    ],
+    numberLineJumps: [
+      "+5",
+      "+5",
+      "+5"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

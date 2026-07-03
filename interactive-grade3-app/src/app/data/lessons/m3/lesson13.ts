@@ -7,6 +7,30 @@ export const M3_LESSON13_RUNTIME: LessonRuntimeConfig = {
     "multiplication",
     "array"
   ],
+  lessonAnimation: {
+    kind: "array",
+    title: "Lesson 13 animation: Identify and use arithmetic patterns to multiply.",
+    context: "Part 1: Identify patterns in multiples of 9.",
+    equation: "9 x 10 = (5 x 10) + (4 x 10)",
+    teacherPrompt: "During the fluency activity, we group counted nines to say the multiples of 9. When we skip-count by nines, what are we adding each time?",
+    focus: [
+      "factor",
+      "product",
+      "array",
+      "source labels"
+    ],
+    groupCount: 9,
+    groupSize: 10,
+    rowCount: 9,
+    columnCount: 10,
+    tapePartCount: 9,
+    tapePartLabel: "10",
+    tapeWholeLabel: "90 total",
+    firstPart: 5,
+    secondPart: 4
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

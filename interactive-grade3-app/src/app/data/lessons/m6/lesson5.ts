@@ -5,6 +5,35 @@ export const M6_LESSON5_RUNTIME: LessonRuntimeConfig = {
     "line plot",
     "scale"
   ],
+  lessonAnimation: {
+    kind: "graph",
+    title: "Lesson 5 animation: Create ruler with 1-inch, 1/2-inch, and 1/4-inch interv...",
+    context: "Use the teacher-edition lesson pages to teach: Create ruler with 1-inch, 1/2-inch, and 1/4-inch intervals, and generate measurement data.",
+    equation: "Read the scale, then compare or calculate from the graph data",
+    teacherPrompt: "Ask the student to explain what the model shows before accepting the final answer.",
+    focus: [
+      "line plot",
+      "scale",
+      "graph",
+      "source labels"
+    ],
+    graphBars: [
+      {
+        label: "Data A",
+        value: 1
+      },
+      {
+        label: "Data B",
+        value: 1
+      },
+      {
+        label: "Data C",
+        value: 2
+      }
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

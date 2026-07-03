@@ -5,6 +5,32 @@ export const M2_LESSON13_RUNTIME: LessonRuntimeConfig = {
     "number line",
     "round"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 13 animation: Round two- and three-digit numbers to the nearest ten o...",
+    context: "Round two-digit measurements to the nearest ten.",
+    equation: "28 to 68 on equal intervals of 10",
+    teacherPrompt: "What is the same and different about Problems 1(c) and 1(d)? Did you solve the problems differently? Why or why not?",
+    focus: [
+      "number line",
+      "round",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "28",
+      "38",
+      "48",
+      "58",
+      "68"
+    ],
+    numberLineJumps: [
+      "+10",
+      "+10",
+      "+10"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

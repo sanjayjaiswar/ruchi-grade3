@@ -6,6 +6,33 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
     "round",
     "number line"
   ],
+  lessonAnimation: {
+    kind: "number-line",
+    title: "Lesson 21 animation: Estimate sums and differences of measurements by roundi...",
+    context: "behavior norms. For example, how will Next, they round to estimate sums and differences, and then turns be recognized? What can be said use the standard algorithm to solve. Determine...",
+    equation: "3 to 43 on equal intervals of 10",
+    teacherPrompt: "How can you use measurement as a tool for checking whether or not your answers are reasonable?",
+    focus: [
+      "addend",
+      "round",
+      "number line",
+      "source labels"
+    ],
+    numberLineLabels: [
+      "3",
+      "13",
+      "23",
+      "33",
+      "43"
+    ],
+    numberLineJumps: [
+      "+10",
+      "+10",
+      "+10"
+    ]
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",

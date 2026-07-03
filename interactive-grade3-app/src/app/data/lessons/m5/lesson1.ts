@@ -5,6 +5,23 @@ export const M5_LESSON1_RUNTIME: LessonRuntimeConfig = {
     "whole",
     "fraction"
   ],
+  lessonAnimation: {
+    kind: "fraction-strip",
+    title: "Lesson 1 animation: Specify and partition a whole into equal parts, identif...",
+    context: "T: Measure your paper strip using inches.",
+    equation: "1/6; name the whole before naming the fraction",
+    teacherPrompt: "Encourage students to use the words fractional units, equal parts, fraction, whole, halves, fourths, thirds, and sixths",
+    focus: [
+      "whole",
+      "fraction",
+      "fraction strip",
+      "source labels"
+    ],
+    fractionPartCount: 6,
+    fractionShadedCount: 1
+  },
+
+
   teacherEditionSteps: [
     {
       id: "source-goal",
