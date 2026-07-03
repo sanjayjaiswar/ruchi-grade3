@@ -19,7 +19,7 @@ Status: Active planning
 | Reference projects | Done | EdZilla projects are read-only references only. |
 | Curriculum source | Done | Teacher editions are source of truth. |
 | Prior chat role | Done | Tone/workflow guidance only. |
-| Actual git worktree | Deferred | Grade3 is not currently a git repo; do not create git state without explicit approval. |
+| Actual git worktree | Active | Grade3 is a git worktree on `main`; do not stage, commit, branch, push, or create additional worktrees without explicit approval. |
 | First vertical slice | Done | Module 1 overview + Module 1 Lesson 1 implemented in `interactive-grade3-app/`. |
 | App folder | Done | Angular app created at `interactive-grade3-app/`. |
 | Separate module pages | Done | Routes `/modules/m1` through `/modules/m7` render module-specific topic/lesson maps. |
@@ -40,6 +40,10 @@ Status: Active planning
 | Generated lesson quality correction | Done | Generic source flow replaced with model-specific teacher moves, board setup, questions, misconceptions, and exit evidence. |
 | Generated lesson visual correction | Done | Source-backed lessons now render model-specific figures for equal groups, arrays, tape diagrams, number lines, clocks, measurement, area, fractions, graphs, and geometry. |
 | Lesson 4 benchmark flow | Done | Compact/generated source-backed lessons now follow a 7-step Lesson 4-style flow: Goal, Model, Meaning, Picture, Draw, Exit, Summary. |
+| Lesson 12 redesign direction | In progress | Supersede the 8-tab benchmark flow for the Lesson 12 pilot with a problem-set-centered lesson experience documented in `problem-set-centered-lesson-design.md`. |
+| Current controlling requirements | In progress | Use `problem-set-centered-lesson-design.md` and `lesson-12-implementation-research.md` as the active requirements. Older tab/step docs are historical unless aligned with these docs. |
+| Problem-set-centered section tabs | Done | Top tabs load real sections on demand: Concept, Problem Set, and Summary. They must not recreate the old Goal/Model/Meaning/Picture/Draw/Solve/Exit/Sum flow or use broken hash-route links. |
+| CSS architecture for lesson work | Done | Common lesson CSS stays common; reusable problem-set-centered layout belongs in a shared stylesheet; module/lesson-specific CSS exists only for true customization. |
 
 ## 3. Phase Tracker
 
@@ -123,6 +127,7 @@ Status: Active planning
 | Drawer visual QA | Done | Codex | Headless Chrome screenshots verified home and lesson pages render as a real left drawer without raw-link fallback or content overflow. |
 | Student theme redesign | Done | Codex | Reduced blue usage, improved text contrast, added module colors, shortened drawer labels, collapsed teacher source panel, and recolored math manipulatives. |
 | Task tracker update | Done | Codex | This document updated after implementation. |
+| Lesson 12 pilot docs update | Done | Codex | Requirements, operations, research, design, playbook, README, and task docs updated for top section tabs and shared CSS/customization boundaries. |
 
 ## 4. Backlog
 
@@ -162,11 +167,16 @@ Status: Active planning
 - Printable lesson summary.
 - PDF export.
 - Practice history.
+- Lesson 12 pilot: replace the current 8-tab lesson flow with concept, official Problem Set solved explanations, source-backed visuals/animations, and short summary.
+- After Lesson 12 acceptance, replicate the problem-set-centered pattern lesson by lesson from each official Teacher Edition and Student Workbook source.
+- Keep `problem-set-centered-lesson-design.md` and `lesson-12-implementation-research.md` as the current source of requirements for this pilot. Do not revive older tab/step requirements unless they directly support the new design.
+- Keep common Problem Set presentation reusable. Add module/lesson CSS only when a real customization requirement appears.
 
 ## 5. Open Questions
 
-1. For deep-authored lessons after Lesson 1, should each lesson include exact problem-set/exit-ticket structures, or should it use lesson-aligned variants after the sourced examples?
-2. Should learner progress be local-only browser storage, or remain stateless until the full lesson set is deeply authored?
+1. For the Lesson 12 pilot, what level of Teacher Edition solved thumbnail fidelity is required in the app: typed solved reconstruction, cropped source visual reference, custom animation, or a combination?
+2. After Lesson 12 is accepted, should the old 8-step generated flow remain for unauthored lessons, or should it be replaced globally only after each lesson receives a problem-set-centered source pass?
+3. Should learner progress be local-only browser storage, or remain stateless until the full lesson set is deeply authored?
 
 ## 6. Validation Log
 
@@ -211,6 +221,13 @@ Status: Active planning
 | 2026-06-20 | Generated source-visual consistency audit | Passed | Live browser checked all 152 lessons; generated lessons with extractable tape, array, or equal-group quantities render matching source-aware figures. The 4 hand-authored M1 benchmark lessons use separate bespoke visual components. |
 | 2026-06-22 | Concept-first lesson audit | Passed | Added first-screen concept explanations and live-browser checked all 152 lessons for a concept-first panel with student-friendly meaning and teacher-check language; 0 failures. |
 | 2026-06-22 | Multiplication/division vocabulary note audit | Passed | Live-browser checked all 152 lessons; multiplication/division/product/quotient/factor lessons show the vocabulary note with "times", "divided by", product, quotient, examples, comparison table, and the "do not use 3 by 4" rule; 0 failures. |
+| 2026-07-03 | Lesson 12 source/design review | Passed for planning | Verified Teacher Edition contains the blank Lesson 12 Problem Set and solved/annotated Problem Set thumbnails; Student Workbook contains the clean blank Problem Set. Captured new problem-set-centered design standard before implementation. |
+| 2026-07-03 | Lesson 12 implementation research | Passed for planning | Documented current app stack, animation-library decision, per-problem animation matrix, data requirements, LMS/plugin boundaries, and validation baseline in `lesson-12-implementation-research.md`. |
+| 2026-07-03 | Lesson 12 style architecture documentation | Passed for planning | Updated docs to require shared lesson/problem-set styles as the baseline, with module/lesson-specific CSS only for true customization. |
+| 2026-07-03 | Lesson 12 shared Problem Set stylesheet build | Passed | `npm run build` completed after switching from a Lesson 12-only stylesheet to shared `lesson-problem-set.css`. |
+| 2026-07-03 | Lesson 12 on-demand tabs and normal lesson regression check | Passed | Chrome verified Concept/Problem Set/Summary load one section at a time with no hash URL change; Lesson 11 keeps the original one-column header, source card, and step rail. |
+| 2026-07-03 | Lesson 12 Concept/Summary styling correction | Passed | `npm run build` passed; Chrome verified Concept and Summary use larger shared problem-set-centered typography/card styling, while Lesson 11 keeps the existing non-problem-set layout. |
+| 2026-07-03 | Lesson 12 Google-color styling and validation readability | Passed | `npm run build` passed; Chrome verified Concept cards cycle Google blue/green/yellow/red, Summary has gradient/check/meaning-map cards, validation text is larger, and Lesson 11 remains unaffected. |
 
 ## 7. Change Log
 
@@ -239,3 +256,9 @@ Status: Active planning
 | 2026-06-20 | Corrected M3 Lesson 7 source note and made generated source figures parse lesson quantities for equal groups, arrays, and tape diagrams instead of showing disconnected generic counts. |
 | 2026-06-22 | Added the concept-first panel and objective-based vocabulary extraction so terms like quotient, factor, unknown, area, perimeter, unit fraction, elapsed time, and scale are explained before the lesson model. |
 | 2026-06-22 | Added a Grade 3 Eureka Math multiplication/division vocabulary note with the product/quotient comparison table and formal wording rule. |
+| 2026-07-03 | Added the problem-set-centered Lesson 12 pilot design doc and marked the current 8-tab flow as the wrong primary experience for this pilot. |
+| 2026-07-03 | Added Lesson 12 implementation research and marked older docs as historical where they conflict with the new pilot requirements. |
+| 2026-07-03 | Documented the corrected top-tab and CSS architecture decisions: top tabs load sections on demand, common styles stay common, and lesson-specific CSS is optional customization only. |
+| 2026-07-03 | Changed Lesson 12 section tabs from route/hash links to on-demand content tabs and added local Problem Set bookmarks. Scoped the new two-column header to problem-set-centered lessons only. |
+| 2026-07-03 | Brought Lesson 12 Concept and Summary styling back in line with the Problem Set card scale, typography, and module-accent color treatment. |
+| 2026-07-03 | Added Google-color gradients to Concept/Summary, enlarged Problem Set validation text, and replaced the one-line Summary with validation steps plus a six-problem meaning map. |

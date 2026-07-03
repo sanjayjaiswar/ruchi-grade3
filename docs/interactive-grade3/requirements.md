@@ -1,8 +1,23 @@
 # Requirements: Grade 3 Interactive Eureka Math App
 
 Date: 2026-06-18
-Status: Current delivery baseline
+Status: Superseded baseline except where aligned with the 2026-07-03 Lesson 12 pilot docs
 Owner: Grade3 workspace
+
+2026-07-03 update:
+
+The Lesson 12 pilot supersedes the prior tab-heavy lesson shape. The central requirement is now documented in `problem-set-centered-lesson-design.md`: a lesson page should explain the lesson concept, then make the official Problem Set the main surface with solved explanations, source-backed visual models, animation where useful, and a short summary.
+
+Top section tabs are acceptable when they load the real lesson sections on demand. They should not bring back the old Goal/Model/Meaning/Picture/Draw/Solve/Exit/Sum flow.
+
+For current implementation work, use these as the controlling requirements:
+
+```text
+docs/interactive-grade3/problem-set-centered-lesson-design.md
+docs/interactive-grade3/lesson-12-implementation-research.md
+```
+
+Any older requirement in this file that conflicts with those documents is historical context only.
 
 ## 1. Product Summary
 
@@ -140,7 +155,31 @@ Current delivery must include the full route map:
 
 ## 7. Lesson Experience Requirements
 
-Each lesson must include the following sections.
+Each lesson must be centered on the official lesson and its official work. For the Lesson 12 pilot, the page must not use the old Goal/Model/Meaning/Picture/Draw/Solve/Exit/Sum tab sequence as the primary experience. That sequence over-fragments the lesson and hides the Problem Set.
+
+For authored problem-set-centered lessons, top tabs may be used for on-demand section switching:
+
+```text
+Concept | Problem Set | Summary
+```
+
+These are controls for the actual lesson sections, not separate generic curriculum tabs.
+
+Implementation rule:
+
+- Top tabs should switch/render the selected section on demand.
+- Do not use route-changing hash links for these tabs.
+- Long selected sections may include local bookmark buttons for scrolling within that section, such as Problem Set problem jumps.
+
+The preferred authored lesson shape is:
+
+```text
+Lesson Concept
+Problem Set With Solved Explanation
+Short Summary
+```
+
+The detailed standard for this shape is `problem-set-centered-lesson-design.md`.
 
 ### 7.1 Lesson Header
 
@@ -169,6 +208,7 @@ Must:
 - Use Grade 3 language.
 - Align with the teacher-edition concept development.
 - Come from the full teacher-edition lesson pages, not only the module overview objective.
+- Stay compact enough that the official Problem Set remains the main lesson surface when the lesson is problem-set centered.
 
 Must not:
 
@@ -176,6 +216,7 @@ Must not:
 - Present a generic objective-backed flow as a completed lesson.
 - Introduce unrelated external examples as if they are curriculum.
 - Use childish simplifications that undercut Grade 3 rigor.
+- Split one lesson idea across redundant tabs.
 
 ### 7.3 Visual Model
 
@@ -208,9 +249,18 @@ Guided examples must:
 - Show the connection between picture, words, equation, and answer.
 - Use teacher-edition-compatible language.
 
-### 7.5 Practice And Assessment
+### 7.5 Problem Set, Practice, And Assessment
 
-Practice must:
+Problem Set handling must:
+
+- use the official Student Workbook and Teacher Edition Problem Set as the matched source,
+- preserve the exact official problem order,
+- provide solved answers and explanations for each Problem Set item,
+- identify the model, equation, answer, and meaning in context,
+- use the Teacher Edition solved or annotated Problem Set references when available,
+- visually inspect source pages when solved work appears as images or handwriting.
+
+Practice and assessment must:
 
 - Include quick checks after concept steps.
 - Include lesson-end practice aligned to problem set or exit ticket style.
@@ -245,6 +295,8 @@ Must include:
 - One final question or exit check.
 - Optional adult/teacher note sourced from lesson intent.
 
+For the Lesson 12 pilot, the summary should be short and should not expose raw fluency notes, generated source rows, or broken PDF extraction text.
+
 ## 8. Module Experience Requirements
 
 Each module should include:
@@ -264,6 +316,20 @@ Each module must have its own module page. A shared Angular page component may r
 Lesson authoring must avoid a few oversized steps. A lesson may be grouped by concept, but the learner-facing flow should be broken into small screens that each focus on one action or idea.
 
 ## 9. Visual And Interaction Requirements
+
+### 9.1 CSS And Style Architecture
+
+Reusable lesson layout belongs in shared lesson styles, not in one-off lesson files.
+
+Required layering:
+
+- Keep broad lesson shell/layout styles in the common lesson stylesheet.
+- Keep reusable problem-set-centered presentation styles in a shared Problem Set lesson stylesheet.
+- Add module-specific or lesson-specific CSS only for real customization that cannot be expressed through shared classes, data, CSS variables, or module/lesson class hooks.
+
+Lesson-specific CSS may or may not exist. It should not become the default place for common layout. Module-specific CSS is acceptable when an entire module needs a consistent variation. Lesson-specific CSS is acceptable when a specific lesson needs a true visual/model override.
+
+For the Lesson 12 pilot, use common problem-set-centered styles as the baseline and keep Lesson 12-specific behavior primarily in source-backed lesson data and optional class hooks.
 
 ### Must Have
 

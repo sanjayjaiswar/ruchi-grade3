@@ -12,6 +12,7 @@ import {
   ArrayDecompositionLessonModel,
   LessonAnimationModel,
   LessonRuntimeConfig,
+  ProblemSetCenteredProblem,
   SourceWorkspaceModel
 } from '../../data/lessons/lesson-runtime.types';
 import { ArrayDecomposerComponent } from '../../shared/array-decomposer/array-decomposer';
@@ -115,12 +116,13 @@ type SourceVisualFacts = Pick<
     RouterLink
   ],
   templateUrl: './lesson.html',
-  styleUrl: './lesson.css'
+  styleUrls: ['./lesson.css', './lesson-problem-set.css']
 })
 export class LessonPage implements OnInit {
   module?: ModuleMeta;
   lesson?: LessonContent;
   activeStepIndex = 0;
+  activeProblemSection: 'concept' | 'problem-set' | 'summary' = 'concept';
   private readonly moduleThemes: Record<string, { accent: string; strong: string; soft: string; muted: string }> = {
     m1: { accent: '#4285f4', strong: '#1a73e8', soft: '#e8f0fe', muted: '#d2e3fc' },
     m2: { accent: '#ea4335', strong: '#c5221f', soft: '#fce8e6', muted: '#fad2cf' },
@@ -373,6 +375,7 @@ export class LessonPage implements OnInit {
       this.module = findModule(moduleId);
       this.lesson = findLesson(moduleId, lessonNumber);
       this.activeStepIndex = 0;
+      this.activeProblemSection = 'concept';
       this.resetLessonState();
 
       if (this.module && this.lesson) {
@@ -392,6 +395,16 @@ export class LessonPage implements OnInit {
       return undefined;
     }
     return findLessonRuntime(this.module.id, this.lesson.lessonNumber);
+  }
+
+  get problemSetCenteredLesson() {
+    return this.activeLessonRuntime?.problemSetCenteredLesson;
+  }
+
+  lessonPageClasses(): Record<string, boolean> {
+    return {
+      'lesson-m1-l12': this.module?.id === 'm1' && this.lesson?.lessonNumber === 12
+    };
   }
 
   get displaySteps(): LessonStep[] {
@@ -459,10 +472,49 @@ export class LessonPage implements OnInit {
   }
 
   get estimatedFlow(): string {
+    const problemSetLesson = this.problemSetCenteredLesson;
+    if (problemSetLesson) {
+      return `Concept + ${problemSetLesson.problems.length} solved problems`;
+    }
     if (!this.displaySteps.length) {
       return '';
     }
     return `${this.displaySteps.length} small screens`;
+  }
+
+  problemTokenSlots(problem: ProblemSetCenteredProblem): number[] {
+    return this.countSlots(problem.knownTotal ?? problem.quotient, 24);
+  }
+
+  problemGroupSlots(problem: ProblemSetCenteredProblem): number[] {
+    const count = problem.animationType === 'grouping-by-size'
+      ? problem.quotient
+      : problem.knownGroupCount ?? problem.quotient;
+    return this.countSlots(count, 12);
+  }
+
+  problemGroupItemSlots(problem: ProblemSetCenteredProblem): number[] {
+    const count = problem.animationType === 'grouping-by-size'
+      ? problem.knownGroupSize ?? 1
+      : problem.quotient;
+    return this.countSlots(count, 12);
+  }
+
+  problemTapeParts(problem: ProblemSetCenteredProblem): number[] {
+    return this.countSlots(problem.knownGroupCount ?? 2, 8);
+  }
+
+  problemShareLabel(problem: ProblemSetCenteredProblem, index: number): string {
+    return problem.shareLabels?.[index] ?? `${problem.groupLabel.slice(0, -1) || 'part'} ${index + 1}`;
+  }
+
+  showProblemSection(section: 'concept' | 'problem-set' | 'summary'): void {
+    this.activeProblemSection = section;
+  }
+
+  scrollToProblem(problemNumber: number): void {
+    const target = document.getElementById(`lesson12-problem-${problemNumber}`);
+    target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   get conceptExplanations(): ConceptExplanation[] {

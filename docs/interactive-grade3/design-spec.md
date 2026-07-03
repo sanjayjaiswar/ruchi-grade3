@@ -1,7 +1,22 @@
 # Design Spec: Grade 3 Interactive Math App
 
 Date: 2026-06-18
-Status: Draft baseline
+Status: Historical baseline except where aligned with the 2026-07-03 Lesson 12 pilot
+
+2026-07-03 update:
+
+The old lesson-page recommendation with step navigation is not the controlling design for the Lesson 12 pilot. Current design requirements are defined in:
+
+```text
+docs/interactive-grade3/problem-set-centered-lesson-design.md
+docs/interactive-grade3/lesson-12-implementation-research.md
+```
+
+For new Lesson 12 work, use a compact concept section, official Problem Set solved explanations, source-backed visual/animated models, and a short summary. Treat older tab/step navigation guidance as context for the existing app only.
+
+Top tabs are acceptable when they navigate the actual sections of the new shape, such as Concept, Problem Set, and Summary. They should not recreate the previous Goal/Model/Meaning/Picture/Draw/Solve/Exit/Sum rail.
+
+Style reuse rule: common lesson shell styles stay common, reusable problem-set-centered presentation stays shared, and module/lesson-specific CSS is added only for real customization.
 
 ## 1. Design Objective
 

@@ -1,6 +1,6 @@
-<main class="page-frame" *ngIf="lesson && module; else lessonMissing" [ngStyle]="moduleThemeVars()">
-  <section class="lesson-header">
-    <div>
+<main class="page-frame" *ngIf="lesson && module; else lessonMissing" [ngStyle]="moduleThemeVars()" [ngClass]="lessonPageClasses()">
+  <section class="lesson-header" [class.has-problem-centered]="problemSetCenteredLesson">
+    <div class="lesson-header-main">
       <a class="crumb" [routerLink]="['/ruchika-grade3', 'modules', module.id]">Module {{ module.number }}</a>
       <span class="eyebrow">Lesson {{ lesson.lessonNumber }}</span>
       <h1>{{ lesson.title }}</h1>
@@ -12,7 +12,37 @@
         <span *ngFor="let term of lesson.vocabulary">{{ term }}</span>
       </div>
     </div>
-    <details class="source-card">
+    <div class="lesson-header-actions" *ngIf="problemSetCenteredLesson">
+      <nav class="problem-centered-tabs" aria-label="Lesson sections" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          [class.is-active]="activeProblemSection === 'concept'"
+          [attr.aria-selected]="activeProblemSection === 'concept'"
+          (click)="showProblemSection('concept')">Concept</button>
+        <button
+          type="button"
+          role="tab"
+          [class.is-active]="activeProblemSection === 'problem-set'"
+          [attr.aria-selected]="activeProblemSection === 'problem-set'"
+          (click)="showProblemSection('problem-set')">Problem Set</button>
+        <button
+          type="button"
+          role="tab"
+          [class.is-active]="activeProblemSection === 'summary'"
+          [attr.aria-selected]="activeProblemSection === 'summary'"
+          (click)="showProblemSection('summary')">Summary</button>
+      </nav>
+      <details class="source-card">
+        <summary>Teacher source</summary>
+        <strong>Teacher-edition objective</strong>
+        <span>{{ lesson.objective }}</span>
+        <small *ngFor="let source of lesson.sourceRefs">
+          {{ source.sourceType }} · pdf pages {{ source.pageStart }}-{{ source.pageEnd }}
+        </small>
+      </details>
+    </div>
+    <details class="source-card" *ngIf="!problemSetCenteredLesson">
       <summary>Teacher source</summary>
       <strong>Teacher-edition objective</strong>
       <span>{{ lesson.objective }}</span>
@@ -22,8 +52,8 @@
     </details>
   </section>
 
-  <section class="lesson-layout">
-    <aside class="step-rail" aria-label="Lesson steps">
+  <section class="lesson-layout" [class.is-problem-centered]="problemSetCenteredLesson">
+    <aside class="step-rail" aria-label="Lesson steps" *ngIf="!problemSetCenteredLesson">
       <div class="progress-card">
         <strong>Progress</strong>
         <span>{{ progressText }}</span>
@@ -39,7 +69,157 @@
       <button class="quiet-button reset-button" (click)="resetLesson()">Reset</button>
     </aside>
 
-    <section class="workspace" *ngIf="activeStep">
+    <section class="problem-centered-workspace" *ngIf="problemSetCenteredLesson as problemLesson">
+      <ng-container [ngSwitch]="activeProblemSection">
+        <section id="lesson12-concept" class="problem-centered-panel" role="tabpanel" *ngSwitchCase="'concept'">
+          <div class="problem-centered-concept">
+            <div>
+              <span class="eyebrow">Lesson concept</span>
+              <h2>{{ problemLesson.title }}</h2>
+              <p>{{ problemLesson.concept }}</p>
+              <div class="concept-contrast">
+                <strong>Key question</strong>
+                <span>{{ problemLesson.contrast }}</span>
+              </div>
+            </div>
+            <aside>
+              <strong>Teacher Edition basis</strong>
+              <span>{{ problemLesson.teacherEditionBasis }}</span>
+              <small>{{ problemLesson.sourceNote }}</small>
+            </aside>
+          </div>
+
+          <section class="problem-centered-source-concepts" aria-label="Lesson 12 Teacher Edition concept development">
+            <article *ngFor="let conceptSection of problemLesson.conceptSections">
+              <div>
+                <h3>{{ conceptSection.title }}</h3>
+                <p>{{ conceptSection.body }}</p>
+              </div>
+              <div class="concept-source-checks">
+                <strong>{{ conceptSection.teacherSource }}</strong>
+                <ul>
+                  <li *ngFor="let checkpoint of conceptSection.checkpoints">{{ checkpoint }}</li>
+                </ul>
+              </div>
+            </article>
+          </section>
+        </section>
+
+        <section id="lesson12-problem-set" class="problem-centered-panel problem-set-centered-list" aria-label="Lesson 12 solved problem set" role="tabpanel" *ngSwitchCase="'problem-set'">
+          <nav class="problem-bookmarks" aria-label="Problem bookmarks">
+            <button type="button" *ngFor="let problem of problemLesson.problems" (click)="scrollToProblem(problem.number)">
+              Problem {{ problem.number }}
+            </button>
+          </nav>
+
+          <article class="problem-solution-card" *ngFor="let problem of problemLesson.problems" [id]="'lesson12-problem-' + problem.number">
+            <div class="problem-solution-head">
+              <span class="problem-number">Problem {{ problem.number }}</span>
+              <h3>{{ problem.sourcePrompt }}</h3>
+            </div>
+
+            <div class="problem-solution-grid">
+              <div class="problem-animation-card" [ngSwitch]="problem.animationType">
+                <div *ngSwitchCase="'grouping-by-size'" class="ps-grouping-model" aria-label="Grouping model">
+                  <div class="ps-token-bank">
+                    <span *ngFor="let token of problemTokenSlots(problem)"></span>
+                  </div>
+                  <div class="ps-model-arrow">groups of {{ problem.knownGroupSize }}</div>
+                  <div class="ps-groups">
+                    <div class="ps-group" *ngFor="let group of problemGroupSlots(problem); let groupIndex = index">
+                      <span *ngFor="let item of problemGroupItemSlots(problem)"></span>
+                      <small>{{ problem.groupLabel }} {{ groupIndex + 1 }}</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="'equal-sharing'" class="ps-sharing-model" aria-label="Equal sharing model">
+                  <div class="ps-containers">
+                    <div class="ps-container" *ngFor="let group of problemGroupSlots(problem); let groupIndex = index">
+                      <strong>{{ problem.groupLabel }} {{ groupIndex + 1 }}</strong>
+                      <span *ngFor="let item of problemGroupItemSlots(problem)"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="'tape-split'" class="ps-tape-model" aria-label="Tape diagram model">
+                  <strong class="ps-tape-whole">{{ problem.knownTotal }} {{ problem.unitLabel }} total</strong>
+                  <div class="ps-tape-parts" [style.gridTemplateColumns]="'repeat(' + problemTapeParts(problem).length + ', minmax(80px, 1fr))'">
+                    <span *ngFor="let part of problemTapeParts(problem); let partIndex = index">
+                      <b>{{ problemShareLabel(problem, partIndex) }}</b>
+                      {{ problem.quotient }} {{ problem.unitLabel }}
+                    </span>
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="'fact-match'" class="ps-fact-match-model" aria-label="Division fact matches">
+                  <div class="ps-fact-row" *ngFor="let fact of problem.facts">
+                    <span>{{ fact.dividend }} divided by {{ fact.divisor }}</span>
+                    <i></i>
+                    <strong>{{ fact.quotient }}</strong>
+                  </div>
+                </div>
+
+                <div class="ps-quotient-label">
+                  <strong>Quotient meaning</strong>
+                  <span>{{ problem.quotientMeaning }}</span>
+                </div>
+              </div>
+
+              <div class="problem-explanation-card">
+                <div class="equation-list">
+                  <span *ngFor="let equation of problem.equations">{{ equation }}</span>
+                </div>
+                <strong class="solved-answer">{{ problem.solvedAnswer }}</strong>
+                <p>{{ problem.explanation }}</p>
+                <div class="validation-list">
+                  <strong>Validate the work</strong>
+                  <ul>
+                    <li *ngFor="let check of problem.validationChecks">{{ check }}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section id="lesson12-summary" class="problem-centered-panel problem-centered-summary" role="tabpanel" *ngSwitchCase="'summary'">
+          <div class="summary-hero">
+            <span class="eyebrow">Summary</span>
+            <h3>Lesson 12 takeaway</h3>
+            <p>{{ problemLesson.summary }}</p>
+          </div>
+
+          <section class="summary-check-grid" aria-label="Lesson 12 validation checklist">
+            <article>
+              <strong>1. Name the total</strong>
+              <span>The total is the amount being divided. The Teacher Edition repeats that the total is known.</span>
+            </article>
+            <article>
+              <strong>2. Decide what the divisor tells</strong>
+              <span>It may tell how many groups there are, or how many are in each group.</span>
+            </article>
+            <article>
+              <strong>3. Say what the quotient means</strong>
+              <span>The answer is not complete until it names groups, objects in each group, length, days, or dollars.</span>
+            </article>
+          </section>
+
+          <section class="summary-meaning-map" aria-label="Problem Set quotient meanings">
+            <h4>Problem Set meaning map</h4>
+            <div>
+              <article *ngFor="let problem of problemLesson.problems">
+                <span>Problem {{ problem.number }}</span>
+                <strong>{{ problem.solvedAnswer }}</strong>
+                <p>{{ problem.quotientMeaning }}</p>
+              </article>
+            </div>
+          </section>
+        </section>
+      </ng-container>
+    </section>
+
+    <section class="workspace" *ngIf="!problemSetCenteredLesson && activeStep">
       <div class="step-copy">
         <span class="eyebrow">{{ activeStep.shortTitle }}</span>
         <h2>{{ activeStep.title }}</h2>

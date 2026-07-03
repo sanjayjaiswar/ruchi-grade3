@@ -5,6 +5,178 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
     "quotient",
     "division"
   ],
+  problemSetCenteredLesson: {
+    title: "Lesson 12 concept: what the quotient means",
+    concept: "When we divide, the total is known. The quotient can tell how many groups there are, or it can tell how many are in each group. The story tells which meaning is correct.",
+    teacherEditionBasis: "The Teacher Edition compares two situations for the same division sentence, 8 divided by 2 = 4. In one situation, 4 means objects in each group. In the other situation, 4 means the number of groups.",
+    contrast: "Before accepting an answer, name what the quotient means: groups, or objects in each group.",
+    summary: "In division, the total is known. Use the story to decide whether the quotient tells how many groups or how many are in each group.",
+    sourceNote: "Teacher Edition pages 160-166 include the concept development, solved/annotated Problem Set thumbnails, and the blank Problem Set. Student Workbook pages 47-48 provide the clean blank Problem Set.",
+    conceptSections: [
+      {
+        title: "1. Quotient as objects in each group",
+        body: "The Teacher Edition starts with 8 crackers shared equally by 2 students. The total and number of groups are known, so the unknown is the number of crackers in each student part. The matching sentence is 8 divided by 2 = 4.",
+        teacherSource: "Teacher Edition Lesson 12 Concept Development, Problem 1, printed page 160.",
+        checkpoints: [
+          "The whole is 8 crackers.",
+          "The diagram has 2 equal parts for 2 students.",
+          "The quotient 4 names crackers in each part."
+        ]
+      },
+      {
+        title: "2. Quotient as number of groups",
+        body: "The Teacher Edition then changes the situation: there are 8 crackers and each student gets 2. The total and size of each group are known, so the unknown is the number of groups. The matching sentence is still 8 divided by 2 = 4.",
+        teacherSource: "Teacher Edition Lesson 12 Concept Development, Problem 2, printed page 161.",
+        checkpoints: [
+          "The whole is still 8 crackers.",
+          "Each unit is a group of 2 crackers.",
+          "The quotient 4 names how many groups are needed."
+        ]
+      },
+      {
+        title: "3. Same sentence, different meaning",
+        body: "The Teacher Edition reflective dialogue says the same division sentence can have different tape diagrams because the 2 and the 4 represent different things. In division, the total is known; the question is whether division finds group size or number of groups.",
+        teacherSource: "Teacher Edition Lesson 12 reflective dialogue, printed page 162.",
+        checkpoints: [
+          "Say what the 2 means before solving.",
+          "Say what the 4 means after solving.",
+          "Use the story to decide how the tape diagram should be drawn."
+        ]
+      },
+      {
+        title: "4. Problem Set validation focus",
+        body: "The Teacher Edition tells students to solve the Problem Set and use RDW when no method is specified. The Debrief asks students to compare Problems 1 and 2 and explain how quotient meaning affects the tape diagram.",
+        teacherSource: "Teacher Edition Problem Set and Student Debrief, printed pages 162-163.",
+        checkpoints: [
+          "Read the exact workbook problem first.",
+          "Draw or label the model from the known quantities.",
+          "Validate that the answer sentence names what the quotient represents."
+        ]
+      }
+    ],
+    problems: [
+      {
+        number: 1,
+        sourcePrompt: "There are 8 birds at the pet store. Two birds are in each cage. Circle to show how many cages there are.",
+        solvedAnswer: "There are 4 cages of birds.",
+        equations: ["8 divided by 2 = 4"],
+        knownTotal: 8,
+        knownGroupSize: 2,
+        quotient: 4,
+        quotientMeaning: "The quotient 4 means the number of cages, or groups.",
+        animationType: "grouping-by-size",
+        unitLabel: "birds",
+        groupLabel: "cages",
+        explanation: "Start with 8 birds. Each cage must hold 2 birds. Make groups of 2 until all 8 birds are used. There are 4 groups, so the quotient means 4 cages.",
+        validationChecks: [
+          "The work shows 8 total birds.",
+          "Each group has exactly 2 birds.",
+          "The answer sentence says 4 cages, not just 4."
+        ]
+      },
+      {
+        number: 2,
+        sourcePrompt: "The pet store sells 10 fish. They equally divide the fish into 5 bowls. Draw fish to find the number in each bowl.",
+        solvedAnswer: "There are 2 fish in each bowl.",
+        equations: ["5 times 2 = 10", "10 divided by 5 = 2"],
+        knownTotal: 10,
+        knownGroupCount: 5,
+        quotient: 2,
+        quotientMeaning: "The quotient 2 means the number of fish in each bowl.",
+        animationType: "equal-sharing",
+        unitLabel: "fish",
+        groupLabel: "bowls",
+        explanation: "Start with 5 bowls because the number of groups is known. Share 10 fish equally across the bowls. Each bowl gets 2 fish, so the quotient means the size of each group.",
+        validationChecks: [
+          "The work shows 5 bowls.",
+          "All 10 fish are used.",
+          "Each bowl has 2 fish."
+        ]
+      },
+      {
+        number: 3,
+        sourcePrompt: "Match the division facts: 10 divided by 2, 18 divided by 2, 12 divided by 2, 16 divided by 2, and 14 divided by 2.",
+        solvedAnswer: "10 divided by 2 = 5, 18 divided by 2 = 9, 12 divided by 2 = 6, 16 divided by 2 = 8, and 14 divided by 2 = 7.",
+        equations: ["10 divided by 2 = 5", "18 divided by 2 = 9", "12 divided by 2 = 6", "16 divided by 2 = 8", "14 divided by 2 = 7"],
+        quotient: 5,
+        quotientMeaning: "Each quotient is the matching division fact value for units of 2.",
+        animationType: "fact-match",
+        unitLabel: "objects",
+        groupLabel: "matches",
+        explanation: "Each fact asks how many twos are in the total. Count by twos or use known division facts to match each total with its quotient.",
+        validationChecks: [
+          "Every division fact is matched once.",
+          "Each match can be checked by multiplying the quotient by 2.",
+          "The matched quotients are 5, 9, 6, 8, and 7."
+        ],
+        facts: [
+          { dividend: 10, divisor: 2, quotient: 5 },
+          { dividend: 18, divisor: 2, quotient: 9 },
+          { dividend: 12, divisor: 2, quotient: 6 },
+          { dividend: 16, divisor: 2, quotient: 8 },
+          { dividend: 14, divisor: 2, quotient: 7 }
+        ]
+      },
+      {
+        number: 4,
+        sourcePrompt: "Laina buys 14 meters of ribbon. She cuts her ribbon into 2 equal pieces. How many meters long is each piece?",
+        solvedAnswer: "Each piece is 7 meters long.",
+        equations: ["14 divided by 2 = 7"],
+        knownTotal: 14,
+        knownGroupCount: 2,
+        quotient: 7,
+        quotientMeaning: "The quotient 7 means the length of each equal piece.",
+        animationType: "tape-split",
+        unitLabel: "meters",
+        groupLabel: "pieces",
+        explanation: "The whole tape is 14 meters. It is split into 2 equal pieces. Each piece is 7 meters because 7 plus 7 equals 14.",
+        validationChecks: [
+          "The tape diagram labels the whole as 14 meters.",
+          "The tape is split into 2 equal parts.",
+          "Each part is labeled 7 meters."
+        ]
+      },
+      {
+        number: 5,
+        sourcePrompt: "Roy eats 2 cereal bars every morning. Each box has a total of 12 bars. How many days will it take Roy to finish 1 box?",
+        solvedAnswer: "It will take Roy 6 days to finish 1 box.",
+        equations: ["12 divided by 2 = 6"],
+        knownTotal: 12,
+        knownGroupSize: 2,
+        quotient: 6,
+        quotientMeaning: "The quotient 6 means the number of days, or groups of 2 bars.",
+        animationType: "grouping-by-size",
+        unitLabel: "bars",
+        groupLabel: "days",
+        explanation: "Start with 12 bars. Roy eats 2 bars each day. Make groups of 2 bars; each group is one day. There are 6 groups, so it takes 6 days.",
+        validationChecks: [
+          "The work shows 12 total bars.",
+          "Each day uses 2 bars.",
+          "The answer says 6 days."
+        ]
+      },
+      {
+        number: 6,
+        sourcePrompt: "Sarah and Esther equally share the cost of a present. The present costs 18 dollars. How much does Sarah pay?",
+        solvedAnswer: "Sarah pays 9 dollars.",
+        equations: ["18 divided by 2 = 9"],
+        knownTotal: 18,
+        knownGroupCount: 2,
+        quotient: 9,
+        quotientMeaning: "The quotient 9 means the size of each person's share.",
+        animationType: "tape-split",
+        unitLabel: "dollars",
+        groupLabel: "shares",
+        explanation: "The total cost is 18 dollars. Sarah and Esther make 2 equal shares. Each share is 9 dollars, so Sarah pays 9 dollars.",
+        validationChecks: [
+          "The model shows 18 dollars total.",
+          "The cost is split into 2 equal shares.",
+          "Sarah's share is labeled 9 dollars."
+        ],
+        shareLabels: ["Sarah", "Esther"]
+      }
+    ]
+  },
   lessonAnimation: {
     kind: "tape-diagram",
     title: "Lesson 12 animation: quotient with units of 2",

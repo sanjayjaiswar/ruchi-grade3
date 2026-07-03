@@ -3,6 +3,10 @@
 Date: 2026-06-18
 Status: Draft baseline
 
+2026-07-03 update:
+
+For problem-set-centered lessons, the Teacher Edition and Student Workbook must be compared visually and textually. The Teacher Edition may contain the same blank Problem Set pages plus solved or annotated thumbnails that are not fully captured by text extraction. Do not rely only on `pdftotext` for solved Problem Set content.
+
 ## 1. Purpose
 
 This document defines how curriculum content should be extracted, transformed, cited, and validated for the Grade 3 interactive math app.
@@ -45,6 +49,8 @@ Recommended use:
 - `pdfinfo` for page counts.
 - `pdftotext -layout` for rough text extraction.
 - `pdftoppm` for visual verification of source pages.
+- Render Teacher Edition pages that include solved or annotated Problem Set thumbnails.
+- Render Student Workbook pages that include the clean blank Problem Set.
 
 Do not rely only on text extraction when visual layout matters.
 
@@ -84,7 +90,7 @@ No lesson may be marked authored from the module overview table alone. The overv
 
 ## 6. Lesson Authoring Template
 
-Each lesson should be authored with this structure:
+Each lesson should be authored with this source structure:
 
 ```text
 1. Source references
@@ -93,11 +99,12 @@ Each lesson should be authored with this structure:
 4. Vocabulary
 5. Visual models
 6. Concept steps
-7. Guided examples
-8. Practice items
-9. Exit ticket
-10. Feedback rules
-11. Summary
+7. Official Problem Set mapping
+8. Solved explanation per Problem Set item
+9. Visual/animation model per item where useful
+10. Exit ticket or validation evidence
+11. Feedback/validation rules
+12. Summary
 ```
 
 The required operating standard for this template is defined in `lesson-authoring-playbook.md`. If the playbook and this document differ, follow the stricter rule.

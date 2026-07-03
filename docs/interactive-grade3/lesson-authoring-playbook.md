@@ -3,6 +3,14 @@
 Date: 2026-06-18
 Status: Required standard for all authored lessons
 
+2026-07-03 update:
+
+The Lesson 12 pilot uses the problem-set-centered standard in `problem-set-centered-lesson-design.md`. Where this playbook's older required lesson shape implies a tab-heavy Goal/Model/Meaning/Picture/Draw/Exit/Summary sequence, the Lesson 12 pilot should follow the newer standard: concept first, official Problem Set as the main surface, solved explanation per problem, and short summary.
+
+Top tabs may be used when they load the actual authored lesson sections on demand, such as Concept, Problem Set, and Summary. Do not use them to recreate generic curriculum tabs or route-changing hash links.
+
+Style authoring rule: shared lesson and problem-set-centered styles should stay shared. Add module or lesson-specific CSS only for real customization that cannot be handled through shared components, data, CSS variables, or class hooks.
+
 ## 1. Purpose
 
 This playbook prevents lesson drift. It defines the required workflow, evidence, content rules, and acceptance gate for turning Eureka Math Grade 3 source pages into interactive app lessons.
@@ -66,7 +74,7 @@ Do not implement from memory, from only the overview table, or from only another
 
 ## 6. Required Lesson Shape
 
-Every authored lesson must follow this learner flow:
+Every authored lesson must cover these learning functions:
 
 1. Goal: state the exact lesson objective in student-facing language.
 2. Concept first: explain any lesson-critical term before modeling, such as quotient, factor, unknown, unit fraction, area, perimeter, elapsed time, scale, or square unit.
@@ -78,7 +86,7 @@ Every authored lesson must follow this learner flow:
 8. Exit: finish with a lesson-aligned exit check.
 9. Summary: name the durable takeaway.
 
-The labels may change, but the learning functions may not be skipped.
+The labels may change, and these functions should not be forced into separate tabs when that creates duplication. For problem-set-centered lessons, combine the concept/model/meaning functions into a compact lesson concept section and put the official Problem Set solved explanations at the center of the page.
 
 Concept-first rule:
 
@@ -193,6 +201,12 @@ Not allowed to replicate without re-extraction:
 - Exit checks.
 - Vocabulary emphasis.
 - Source page ranges.
+
+Problem-set-centered replication:
+
+- Lesson 12 is the first pilot for this pattern.
+- Replicate concept first, official Problem Set centered, solved explanation per problem, source-backed visuals/animation, and short summary.
+- Do not replicate the Lesson 12 quotient examples, answers, animations, or wording into other lessons without inspecting that lesson's own source pages.
 
 ## 12. Module 1 Lessons 4-6 Standard Slice
 

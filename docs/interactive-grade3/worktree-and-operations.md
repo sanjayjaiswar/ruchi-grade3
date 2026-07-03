@@ -1,7 +1,7 @@
 # Worktree And Operations Guide
 
 Date: 2026-06-18
-Status: Draft baseline
+Status: Active operations baseline, updated 2026-07-03
 
 ## 1. Purpose
 
@@ -26,36 +26,30 @@ Do not alter the reference projects.
 
 ## 3. Current Git/Worktree Status
 
-The Grade3 workspace is currently not a git repository.
+The Grade3 workspace is currently an active git worktree.
 
-Observed result:
+Observed 2026-07-03:
 
 ```text
-fatal: not a git repository
+git rev-parse --show-toplevel
+/Volumes/Data2/Tutorials/Eureka Math Grade 2 - Syllabus Videos Curriculum/Grade3
+
+git branch --show-current
+main
 ```
 
 Therefore:
 
-- There is no current branch.
-- There is no current git worktree.
-- There is no git status to preserve.
-- Do not run `git add`, `git commit`, `git push`, `git merge`, `git rebase`, or `git worktree` commands unless the user explicitly requests git setup.
+- Current branch: `main`.
+- Current worktree root: `/Volumes/Data2/Tutorials/Eureka Math Grade 2 - Syllabus Videos Curriculum/Grade3`.
+- Use `git status --short` before and after implementation work to understand the local change set.
+- Do not run `git add`, `git commit`, `git push`, `git merge`, `git rebase`, or `git worktree` commands unless the user explicitly requests that git action.
 
 ## 4. Recommended Future Git Setup
 
-Only if the user explicitly asks to initialize git or create a worktree:
+Only if the user explicitly asks to create a new worktree or branch:
 
-Option A: Initialize this Grade3 folder as a repo.
-
-```bash
-git init
-```
-
-Option B: Create a separate implementation repo elsewhere.
-
-Requires explicit path approval.
-
-Option C: Create a git worktree from an existing repo.
+Option A: Create a git worktree from this existing repo.
 
 Requires:
 
@@ -64,7 +58,11 @@ Requires:
 - target worktree path,
 - explicit approval.
 
-Until then, treat "worktree" as an operational planning concept, not an active git mechanism.
+Option B: Create a branch in this worktree.
+
+Requires explicit branch name or approval to choose one.
+
+Until then, use the existing `main` worktree for local edits and documentation updates without staging or committing.
 
 ## 5. Task Docs
 
@@ -81,6 +79,8 @@ Update these docs as work proceeds:
 - `requirements.md`: requirement changes.
 - `design-spec.md`: design decisions.
 - `curriculum-source-spec.md`: source extraction rules.
+- `problem-set-centered-lesson-design.md`: active lesson shape and source-backed Problem Set requirements.
+- `lesson-12-implementation-research.md`: Lesson 12 pilot research, animation baseline, and implementation constraints.
 
 Do not store task plans in `AGENTS.md`.
 
@@ -217,6 +217,25 @@ Generated extraction/render artifacts should go under:
 
 ```text
 tmp/
+```
+
+## 11. Style Architecture Operations
+
+For lesson implementation work:
+
+- Keep common lesson shell CSS in the common lesson styles.
+- Keep reusable problem-set-centered CSS in a shared Problem Set lesson stylesheet.
+- Add module-specific or lesson-specific CSS only when there is a real customization requirement.
+- Lesson-specific CSS may or may not exist; it is not required for every authored lesson.
+- Do not move reusable layout into a one-off Lesson 12 stylesheet.
+
+For the current Lesson 12 pilot, the expected implementation shape is:
+
+```text
+lesson.css                  shared lesson shell and existing lesson flows
+lesson-problem-set.css      shared problem-set-centered concept/problem/summary styles
+lesson runtime data         Lesson 12-specific source-backed content and problem data
+module/lesson class hooks   optional customization hook, used only when needed
 ```
 
 Long-lived project docs should go under:

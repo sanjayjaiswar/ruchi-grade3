@@ -81,10 +81,56 @@ export type LessonAnimationModel = {
   focus: string[];
 };
 
+export type ProblemSetAnimationType = 'grouping-by-size' | 'equal-sharing' | 'tape-split' | 'fact-match';
+
+export type ProblemSetFactMatch = {
+  dividend: number;
+  divisor: number;
+  quotient: number;
+};
+
+export type ProblemSetCenteredProblem = {
+  number: number;
+  sourcePrompt: string;
+  solvedAnswer: string;
+  equations: string[];
+  knownTotal?: number;
+  knownGroupSize?: number;
+  knownGroupCount?: number;
+  quotient: number;
+  quotientMeaning: string;
+  animationType: ProblemSetAnimationType;
+  unitLabel: string;
+  groupLabel: string;
+  explanation: string;
+  validationChecks: string[];
+  facts?: ProblemSetFactMatch[];
+  shareLabels?: string[];
+};
+
+export type ProblemSetCenteredConceptSection = {
+  title: string;
+  body: string;
+  teacherSource: string;
+  checkpoints: string[];
+};
+
+export type ProblemSetCenteredLesson = {
+  title: string;
+  concept: string;
+  teacherEditionBasis: string;
+  contrast: string;
+  summary: string;
+  sourceNote: string;
+  conceptSections?: ProblemSetCenteredConceptSection[];
+  problems: ProblemSetCenteredProblem[];
+};
+
 export type LessonRuntimeConfig = {
   conceptTerms?: string[];
   showMultiplicationDivisionVocabularyNote?: boolean;
   lessonAnimation?: LessonAnimationModel;
+  problemSetCenteredLesson?: ProblemSetCenteredLesson;
   teacherEditionSteps?: LessonStep[];
   studentWorkSupport?: Record<number, StudentWorkSupport>;
   studentWorkEquations?: Record<number, string[]>;

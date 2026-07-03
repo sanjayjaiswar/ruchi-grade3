@@ -15,7 +15,11 @@
   max-width: 100%;
 }
 
-.lesson-header > div,
+.lesson-header.has-problem-centered {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 390px);
+}
+
+.lesson-header > .lesson-header-main,
 .source-card {
   min-width: 0;
   border: 1px solid color-mix(in srgb, var(--module-accent) 24%, var(--color-border) 76%);
@@ -24,9 +28,16 @@
   box-shadow: var(--shadow-soft);
 }
 
-.lesson-header > div:first-child {
+.lesson-header-main {
   padding: clamp(18px, 2.2vw, 28px);
   box-shadow: inset 0 5px 0 var(--module-accent), var(--shadow-soft);
+}
+
+.lesson-header-actions {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  min-width: 0;
 }
 
 .lesson-header h1 {

@@ -1,11 +1,33 @@
 # Implementation Plan: Grade 3 Interactive Math App
 
 Date: 2026-06-18
-Status: Draft baseline
+Status: Historical baseline; current implementation plan is the Lesson 12 pilot addendum and research docs
+
+2026-07-03 addendum:
+
+Before further implementation, use `problem-set-centered-lesson-design.md` as the controlling plan for the Lesson 12 pilot. The next implementation phase is not a broad redesign across all lessons. It is a Lesson 12 vertical slice that replaces the current tab-heavy lesson experience with a compact concept section, official Problem Set solved explanations, source-backed visuals/animations, and a short summary.
+
+Top section tabs may be used for Concept, Problem Set, and Summary. They should load the selected section on demand, not return to the old generic tab rail.
+
+Also use:
+
+```text
+docs/interactive-grade3/lesson-12-implementation-research.md
+```
+
+Any older implementation detail in this file that implies continuing the current 8-tab lesson flow is not a requirement for the new work.
 
 ## 1. Implementation Objective
 
 Create a new Angular app inside the Grade3 workspace that uses structured lesson data extracted from the Eureka Math Grade 3 teacher editions and renders visual, interactive lesson experiences. The implementation should reuse architecture and design patterns from the EdZilla reference projects without modifying them.
+
+For the Lesson 12 pilot, the implementation objective is narrower:
+
+- prove the problem-set-centered lesson experience on one lesson,
+- use the Teacher Edition and Student Workbook as matched sources,
+- visually inspect solved/annotated Teacher Edition Problem Set references,
+- make the official Problem Set the main lesson surface,
+- avoid extending the current 8-tab generated flow.
 
 ## 2. Current Workspace Reality
 
@@ -24,8 +46,8 @@ Current contents:
 
 Important note:
 
-- This folder is not currently a git repository.
-- No actual git worktree should be created unless explicitly requested.
+- This folder is currently a git worktree on branch `main`.
+- Do not create branches, additional worktrees, stage files, commit, or push unless explicitly requested.
 
 ## 3. Reference Architecture
 
@@ -87,6 +109,15 @@ Alternative:
 - For now, prefer a contained app folder to avoid mixing generated Angular files with PDFs and docs.
 
 ## 4. Data Architecture
+
+For problem-set-centered lessons, the data architecture must support one concept section plus a list of official Problem Set items. Each item needs source reference, solved answer, explanation, model/animation notes, and validation meaning. This is different from treating a lesson as a flat list of generic steps.
+
+Style architecture for the Lesson 12 pilot:
+
+- Keep common lesson shell CSS in the shared lesson stylesheet.
+- Keep reusable problem-set-centered concept/problem/summary styling in a shared Problem Set lesson stylesheet.
+- Use module or lesson-specific CSS only when there is real customization beyond the shared pattern.
+- Lesson-specific CSS is optional; it should not become the default container for common layout.
 
 ### 4.1 Curriculum Metadata
 
