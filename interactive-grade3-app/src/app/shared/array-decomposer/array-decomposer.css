@@ -19,14 +19,14 @@
 
 .decomposer-copy h4 {
   margin: 0;
-  color: #172033;
+  color: #202124;
   font-size: 19px;
   line-height: 1.14;
 }
 
 .decomposer-copy p {
   margin: 0;
-  color: #3a4a66;
+  color: #5f6368;
   font-size: 14px;
   font-weight: 750;
   line-height: 1.3;
@@ -38,17 +38,17 @@
   gap: 7px;
   min-height: 36px;
   padding: 0 12px;
-  border: 1px solid #93b7ff;
+  border: 1px solid #d2e3fc;
   border-radius: 10px;
   background: #ffffff;
-  color: #1d4ed8;
+  color: #1a73e8;
   font-size: 14px;
   font-weight: 900;
   white-space: nowrap;
 }
 
 .play-button:disabled {
-  color: #536076;
+  color: #5f6368;
 }
 
 .stage-strip {
@@ -60,10 +60,10 @@
 .stage-strip span {
   min-height: 30px;
   padding: 5px 8px;
-  border: 1px solid #ccd7ea;
+  border: 1px solid #d2e3fc;
   border-radius: 999px;
   background: #ffffff;
-  color: #536076;
+  color: #5f6368;
   font-size: 12px;
   font-weight: 900;
   line-height: 1.1;
@@ -71,17 +71,17 @@
 }
 
 .stage-strip span.is-active {
-  border-color: #2563eb;
-  background: #eaf2ff;
-  color: #1749b9;
+  border-color: #4285f4;
+  background: #e8f0fe;
+  color: #174ea6;
 }
 
 .manipulative-shell {
   min-width: 0;
   padding: 12px;
-  border: 1px solid #b8cef6;
+  border: 1px solid #d2e3fc;
   border-radius: 12px;
-  background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
 }
 
 .array-stage {
@@ -90,7 +90,7 @@
   gap: 12px;
   min-height: 250px;
   padding: 12px;
-  border: 1px solid #dde8f8;
+  border: 1px solid #d2e3fc;
   border-radius: 10px;
   background: #ffffff;
 }
@@ -100,7 +100,7 @@
   flex-wrap: wrap;
   gap: 7px;
   align-items: center;
-  color: #172033;
+  color: #202124;
   font-size: 15px;
   font-weight: 900;
 }
@@ -108,8 +108,8 @@
 .whole-label span {
   padding: 4px 8px;
   border-radius: 999px;
-  background: #fff4d9;
-  color: #9a410d;
+  background: #fef7e0;
+  color: #b06000;
 }
 
 .array-rows {
@@ -131,7 +131,7 @@
 
 .row-product {
   justify-self: end;
-  color: #1d4ed8;
+  color: #1a73e8;
   font-size: 14px;
   font-weight: 950;
   line-height: 1.1;
@@ -140,7 +140,7 @@
 }
 
 .row-product.second {
-  color: #087246;
+  color: #188038;
 }
 
 .row-product.is-visible {
@@ -152,20 +152,20 @@
   width: 17px;
   height: 17px;
   border-radius: 999px;
-  background: #f97316;
+  background: #ea4335;
   box-shadow: inset 0 -2px 0 rgba(15, 23, 42, 0.18);
 }
 
 .array-row.is-first-part .counter {
-  background: #2563eb;
+  background: #4285f4;
 }
 
 .array-row.is-second-part .counter {
-  background: #16a36a;
+  background: #34a853;
 }
 
 .row-label {
-  color: #273955;
+  color: #3c4043;
   font-size: 12px;
   font-weight: 900;
   white-space: nowrap;
@@ -179,7 +179,7 @@
   right: 12%;
   bottom: -6px;
   height: 0;
-  border-top: 4px dashed #f97316;
+  border-top: 4px dashed #ea4335;
   transform-origin: left center;
 }
 
@@ -196,10 +196,10 @@
 
 .decomposer-equation {
   padding: 10px 12px;
-  border: 1px solid #ffd08a;
+  border: 1px solid #feefc3;
   border-radius: 10px;
-  background: #fff4d9;
-  color: #172033;
+  background: #fef7e0;
+  color: #202124;
   font-size: 18px;
   font-weight: 950;
   line-height: 1.25;
@@ -214,18 +214,18 @@
 .split-controls button {
   min-height: 32px;
   padding: 0 10px;
-  border: 1px solid #b7c7e4;
+  border: 1px solid #d2e3fc;
   border-radius: 999px;
   background: #ffffff;
-  color: #1d3f82;
+  color: #174ea6;
   font-size: 13px;
   font-weight: 900;
 }
 
 .split-controls button.is-active {
-  border-color: #2563eb;
-  background: #eaf2ff;
-  color: #1749b9;
+  border-color: #4285f4;
+  background: #e8f0fe;
+  color: #174ea6;
 }
 
 @media (max-width: 760px) {

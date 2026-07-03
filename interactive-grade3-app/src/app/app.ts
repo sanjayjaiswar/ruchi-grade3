@@ -11,13 +11,13 @@ import {
 } from './shared/read-aloud-preferences';
 
 const MODULE_THEME: Record<string, { label: string; accent: string; strong: string; soft: string; muted: string }> = {
-  m1: { label: 'Groups', accent: '#2563eb', strong: '#1d4ed8', soft: '#dbeafe', muted: '#bfdbfe' },
-  m2: { label: 'Measure', accent: '#197c72', strong: '#0f5d55', soft: '#e1f6f1', muted: '#a9ddd3' },
-  m3: { label: 'Facts', accent: '#6d5bd0', strong: '#4f3aa8', soft: '#eeebff', muted: '#c9c0ff' },
-  m4: { label: 'Area', accent: '#4f8a2f', strong: '#35681d', soft: '#ecf7df', muted: '#c3dfa8' },
-  m5: { label: 'Fractions', accent: '#c44f73', strong: '#943555', soft: '#ffedf2', muted: '#f4bfd0' },
-  m6: { label: 'Data', accent: '#2474a6', strong: '#18577d', soft: '#e5f4ff', muted: '#afd8f2' },
-  m7: { label: 'Shapes', accent: '#8a5a28', strong: '#684017', soft: '#fff0dc', muted: '#e8c494' }
+  m1: { label: 'Groups', accent: '#4285f4', strong: '#1a73e8', soft: '#e8f0fe', muted: '#d2e3fc' },
+  m2: { label: 'Measure', accent: '#ea4335', strong: '#c5221f', soft: '#fce8e6', muted: '#fad2cf' },
+  m3: { label: 'Facts', accent: '#fbbc04', strong: '#b06000', soft: '#fef7e0', muted: '#feefc3' },
+  m4: { label: 'Area', accent: '#34a853', strong: '#188038', soft: '#e6f4ea', muted: '#ceead6' },
+  m5: { label: 'Fractions', accent: '#4285f4', strong: '#174ea6', soft: '#e8f0fe', muted: '#d2e3fc' },
+  m6: { label: 'Data', accent: '#ea4335', strong: '#a50e0e', soft: '#fce8e6', muted: '#fad2cf' },
+  m7: { label: 'Shapes', accent: '#34a853', strong: '#0d652d', soft: '#e6f4ea', muted: '#ceead6' }
 };
 
 const LESSON_SHORT_LABELS: Record<string, string> = {

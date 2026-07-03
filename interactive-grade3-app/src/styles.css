@@ -1,24 +1,41 @@
 :root {
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --primary: #2563eb;
-  --primary-strong: #1749b9;
-  --positive: #1f8f4d;
-  --warning: #b45309;
-  --negative: #b91c1c;
-  --color-bg: #fbf6ea;
+  --google-blue: #4285f4;
+  --google-blue-strong: #1a73e8;
+  --google-blue-deep: #174ea6;
+  --google-red: #ea4335;
+  --google-red-strong: #c5221f;
+  --google-red-soft: #fce8e6;
+  --google-red-muted: #fad2cf;
+  --google-yellow: #fbbc04;
+  --google-yellow-strong: #b06000;
+  --google-yellow-soft: #fef7e0;
+  --google-yellow-muted: #feefc3;
+  --google-green: #34a853;
+  --google-green-strong: #188038;
+  --google-green-soft: #e6f4ea;
+  --google-green-muted: #ceead6;
+  --google-blue-soft: #e8f0fe;
+  --google-blue-muted: #d2e3fc;
+  --primary: var(--google-blue);
+  --primary-strong: var(--google-blue-strong);
+  --positive: var(--google-green-strong);
+  --warning: var(--google-yellow-strong);
+  --negative: var(--google-red-strong);
+  --color-bg: #f8fbff;
   --color-surface: #ffffff;
-  --color-surface-muted: #f6efe1;
-  --color-text: #172033;
-  --color-text-secondary: #34445f;
-  --color-border: #e5d9c5;
-  --color-border-strong: #cdbb9e;
-  --module-accent: #c76a22;
-  --module-accent-strong: #994c12;
-  --module-accent-soft: #fff1d8;
-  --module-accent-muted: #f8dfb9;
-  --shadow-soft: 0 8px 18px rgba(78, 58, 32, 0.08);
-  --shadow-card: 0 18px 32px rgba(78, 58, 32, 0.12);
-  --radius-card: 16px;
+  --color-surface-muted: #f1f3f4;
+  --color-text: #202124;
+  --color-text-secondary: #5f6368;
+  --color-border: #dadce0;
+  --color-border-strong: #bdc1c6;
+  --module-accent: var(--google-blue);
+  --module-accent-strong: var(--google-blue-strong);
+  --module-accent-soft: #e8f0fe;
+  --module-accent-muted: #d2e3fc;
+  --shadow-soft: 0 8px 18px rgba(32, 33, 36, 0.08);
+  --shadow-card: 0 18px 32px rgba(32, 33, 36, 0.1);
+  --radius-card: 8px;
 }
 
 * {
@@ -39,9 +56,10 @@ body {
   font-size: 17px;
   line-height: 1.58;
   background:
-    radial-gradient(circle at 15% 18%, rgba(250, 204, 21, 0.12), transparent 48%),
-    radial-gradient(circle at 84% 6%, rgba(45, 148, 116, 0.1), transparent 44%),
-    linear-gradient(160deg, #fffaf0 0%, #f5ecd9 58%, #e9f3ed 100%);
+    radial-gradient(circle at 15% 18%, rgba(66, 133, 244, 0.2), transparent 42%),
+    radial-gradient(circle at 82% 8%, rgba(52, 168, 83, 0.16), transparent 38%),
+    radial-gradient(circle at 84% 78%, rgba(251, 188, 4, 0.14), transparent 32%),
+    linear-gradient(160deg, #ffffff 0%, #f8fbff 48%, #e8f0fe 100%);
 }
 
 button,
@@ -120,7 +138,7 @@ p {
 .lead {
   max-width: none;
   margin-bottom: 0;
-  color: #2f3e56;
+  color: var(--color-text-secondary);
   font-size: clamp(15px, 1vw, 18px);
   font-weight: 650;
   overflow-wrap: anywhere;

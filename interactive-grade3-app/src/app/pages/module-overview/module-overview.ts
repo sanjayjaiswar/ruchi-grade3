@@ -307,14 +307,22 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
     ]
   };
   private readonly moduleThemes: Record<string, { accent: string; strong: string; soft: string; muted: string }> = {
-    m1: { accent: '#2563eb', strong: '#1d4ed8', soft: '#dbeafe', muted: '#bfdbfe' },
-    m2: { accent: '#197c72', strong: '#0f5d55', soft: '#e1f6f1', muted: '#a9ddd3' },
-    m3: { accent: '#6d5bd0', strong: '#4f3aa8', soft: '#eeebff', muted: '#c9c0ff' },
-    m4: { accent: '#4f8a2f', strong: '#35681d', soft: '#ecf7df', muted: '#c3dfa8' },
-    m5: { accent: '#c44f73', strong: '#943555', soft: '#ffedf2', muted: '#f4bfd0' },
-    m6: { accent: '#2474a6', strong: '#18577d', soft: '#e5f4ff', muted: '#afd8f2' },
-    m7: { accent: '#8a5a28', strong: '#684017', soft: '#fff0dc', muted: '#e8c494' }
+    m1: { accent: '#4285f4', strong: '#1a73e8', soft: '#e8f0fe', muted: '#d2e3fc' },
+    m2: { accent: '#ea4335', strong: '#c5221f', soft: '#fce8e6', muted: '#fad2cf' },
+    m3: { accent: '#fbbc04', strong: '#b06000', soft: '#fef7e0', muted: '#feefc3' },
+    m4: { accent: '#34a853', strong: '#188038', soft: '#e6f4ea', muted: '#ceead6' },
+    m5: { accent: '#4285f4', strong: '#174ea6', soft: '#e8f0fe', muted: '#d2e3fc' },
+    m6: { accent: '#ea4335', strong: '#a50e0e', soft: '#fce8e6', muted: '#fad2cf' },
+    m7: { accent: '#34a853', strong: '#0d652d', soft: '#e6f4ea', muted: '#ceead6' }
   };
+  private readonly topicThemes = [
+    { accent: '#4285f4', strong: '#1a73e8', soft: '#e8f0fe', muted: '#d2e3fc' },
+    { accent: '#ea4335', strong: '#c5221f', soft: '#fce8e6', muted: '#fad2cf' },
+    { accent: '#fbbc04', strong: '#b06000', soft: '#fef7e0', muted: '#feefc3' },
+    { accent: '#34a853', strong: '#188038', soft: '#e6f4ea', muted: '#ceead6' },
+    { accent: '#4285f4', strong: '#174ea6', soft: '#e8f0fe', muted: '#d2e3fc' },
+    { accent: '#ea4335', strong: '#a50e0e', soft: '#fce8e6', muted: '#fad2cf' }
+  ];
   private conceptChart?: ECharts;
   private readonly conceptChartResizeHandler = () => this.conceptChart?.resize();
 
@@ -450,6 +458,22 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
     };
   }
 
+  topicThemeVars(topicId: string) {
+    const theme = this.topicTheme(topicId);
+    return {
+      '--topic-color': theme.accent,
+      '--topic-strong': theme.strong,
+      '--topic-soft': theme.soft,
+      '--topic-muted': theme.muted
+    };
+  }
+
+  topicTheme(topicId: string) {
+    const topicIndex = this.module?.topics.findIndex((topic) => topic.id === topicId) ?? 0;
+    const theme = this.topicThemes[Math.max(0, topicIndex) % this.topicThemes.length];
+    return theme;
+  }
+
   assessmentCheckpoint(): string {
     switch (this.module?.id) {
       case 'm1':
@@ -530,96 +554,96 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
       name: 'Equal groups',
       description: 'Equal groups are the foundation for multiplication, arrays, and division.',
       symbolSize: 96,
-      itemStyle: { color: '#ffd166', borderColor: '#92400e', borderWidth: 4 },
+      itemStyle: { color: '#fbbc04', borderColor: '#b06000', borderWidth: 4 },
       label: { fontSize: 16, fontWeight: 900, width: 88 },
       children: [
         {
           name: 'Multiplication\n3 × 4 = 12',
           description: 'Find the total by combining equal groups. Times means groups of.',
-          itemStyle: { color: '#86efac', borderColor: '#15803d', borderWidth: 3 },
+          itemStyle: { color: '#ceead6', borderColor: '#188038', borderWidth: 3 },
           children: [
             {
               name: 'Factors\nand product',
               description: 'Factors are the numbers being multiplied. The product is the total.',
-              itemStyle: { color: '#bbf7d0', borderColor: '#16a34a', borderWidth: 2 }
+              itemStyle: { color: '#ceead6', borderColor: '#34a853', borderWidth: 2 }
             },
             {
               name: 'Skip-count\nby group size',
               description: 'Count by 2s, 3s, 4s, 5s, or 10s to build facts from equal groups.',
-              itemStyle: { color: '#fde68a', borderColor: '#ca8a04', borderWidth: 2 }
+              itemStyle: { color: '#feefc3', borderColor: '#b06000', borderWidth: 2 }
             }
           ]
         },
         {
           name: 'Arrays',
           description: 'Objects organized into equal rows and columns so factors and products are visible.',
-          itemStyle: { color: '#93c5fd', borderColor: '#2563eb', borderWidth: 3 },
+          itemStyle: { color: '#d2e3fc', borderColor: '#4285f4', borderWidth: 3 },
           children: [
             {
               name: 'Rows',
               description: 'Side-to-side equal groups.',
-              itemStyle: { color: '#bfdbfe', borderColor: '#1d4ed8', borderWidth: 2 }
+              itemStyle: { color: '#d2e3fc', borderColor: '#1a73e8', borderWidth: 2 }
             },
             {
               name: 'Columns',
               description: 'Up-and-down equal groups.',
-              itemStyle: { color: '#bae6fd', borderColor: '#0284c7', borderWidth: 2 }
+              itemStyle: { color: '#d2e3fc', borderColor: '#174ea6', borderWidth: 2 }
             }
           ]
         },
         {
           name: 'Division\n12 ÷ 3 = 4',
           description: 'Separate a total into equal groups. The quotient is the answer.',
-          itemStyle: { color: '#c4b5fd', borderColor: '#7c3aed', borderWidth: 3 },
+          itemStyle: { color: '#d2e3fc', borderColor: '#4285f4', borderWidth: 3 },
           children: [
             {
               name: 'Quotient',
               description: 'The answer to a division problem.',
-              itemStyle: { color: '#ddd6fe', borderColor: '#8b5cf6', borderWidth: 2 }
+              itemStyle: { color: '#e8f0fe', borderColor: '#1a73e8', borderWidth: 2 }
             },
             {
               name: 'Unknown\nfactor',
               description: 'The missing factor in a multiplication equation, such as 3 × ? = 12.',
-              itemStyle: { color: '#fbcfe8', borderColor: '#db2777', borderWidth: 2 }
+              itemStyle: { color: '#fad2cf', borderColor: '#c5221f', borderWidth: 2 }
             }
           ]
         },
         {
           name: 'Decompose',
           description: 'Break a number or array into smaller parts.',
-          itemStyle: { color: '#f9a8d4', borderColor: '#be185d', borderWidth: 3 },
+          itemStyle: { color: '#fad2cf', borderColor: '#c5221f', borderWidth: 3 },
           children: [
             {
               name: 'Number\nbond',
               description: 'Show a whole broken into parts.',
-              itemStyle: { color: '#fbcfe8', borderColor: '#db2777', borderWidth: 2 }
+              itemStyle: { color: '#fad2cf', borderColor: '#c5221f', borderWidth: 2 }
             },
             {
               name: 'Distributive\nproperty',
               description: 'Break a fact apart, multiply the parts, then add.',
-              itemStyle: { color: '#fecdd3', borderColor: '#e11d48', borderWidth: 2 }
+              itemStyle: { color: '#fad2cf', borderColor: '#ea4335', borderWidth: 2 }
             }
           ]
         },
         {
           name: 'Tape diagram\nand RDW',
           description: 'Read, Draw, Write uses a model to organize word problems before solving.',
-          itemStyle: { color: '#fdba74', borderColor: '#ea580c', borderWidth: 3 },
+          itemStyle: { color: '#feefc3', borderColor: '#fbbc04', borderWidth: 3 },
           children: [
             {
               name: 'Read',
               description: 'Understand the story and what is known.',
-              itemStyle: { color: '#fed7aa', borderColor: '#f97316', borderWidth: 2 }
+              itemStyle: { color: '#feefc3', borderColor: '#fbbc04', borderWidth: 2 }
             },
             {
               name: 'Draw',
               description: 'Show equal parts, total, and unknown.',
-              itemStyle: { color: '#ffedd5', borderColor: '#fb923c', borderWidth: 2 }
+              itemStyle: { color: '#fef7e0', borderColor: '#fbbc04', borderWidth: 2 }
             },
             {
               name: 'Write',
               description: 'Write equations and an answer sentence.',
-              itemStyle: { color: '#fef3c7', borderColor: '#f59e0b', borderWidth: 2 }
+              itemStyle: { color: '#fef7e0', borderColor: '#b06000', borderWidth: 2 }
             }
           ]
         }
@@ -631,7 +655,7 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
       tooltip: {
         trigger: 'item',
         confine: true,
-        borderColor: '#bfdbfe',
+        borderColor: '#d2e3fc',
         formatter: (params: any) => {
           const name = String(params.data?.name ?? '').replace(/\n/g, ' ');
           return `<strong>${name}</strong><br>${params.data?.description ?? ''}`;
@@ -649,14 +673,14 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
           symbol: 'circle',
           symbolSize: 70,
           lineStyle: {
-            color: '#94a3b8',
+            color: '#5f6368',
             width: 2.4
           },
           label: {
             show: true,
             position: 'inside',
             rotate: 0,
-            color: '#172033',
+            color: '#202124',
             fontSize: 12,
             fontWeight: 900,
             lineHeight: 15,
@@ -667,7 +691,7 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
             label: {
               position: 'inside',
               rotate: 0,
-              color: '#172033',
+              color: '#202124',
               fontSize: 11,
               fontWeight: 850,
               lineHeight: 14,

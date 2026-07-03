@@ -11,7 +11,7 @@
   gap: 8px;
   align-content: start;
   min-height: 154px;
-  padding: 14px;
+  padding: 14px 40px 14px 14px;
   border: 1px solid color-mix(in srgb, var(--module-accent) 28%, var(--color-border) 72%);
   border-radius: 14px;
   background: linear-gradient(180deg, var(--module-accent-soft), #ffffff 76%);
@@ -42,14 +42,14 @@
 }
 
 .flow-node small {
-  color: #31415a;
+  color: #5f6368;
   font-size: 12px;
   font-weight: 750;
 }
 
 .flow-node b {
   position: absolute;
-  right: -13px;
+  right: 10px;
   top: 50%;
   z-index: 1;
   display: inline-grid;

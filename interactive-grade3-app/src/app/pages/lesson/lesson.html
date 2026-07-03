@@ -1172,9 +1172,9 @@
           </div>
         </ng-template>
 
-        <div *ngSwitchCase="'source-goal'" class="source-authored-panel" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
+        <div *ngSwitchCase="'source-goal'" class="source-authored-panel" [class.has-source-figure]="hasAuthoredSourceFigure" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Teacher plan' }"></ng-container>
-          <div class="activity-card">
+          <div class="activity-card source-question-card">
             <h3>Lesson {{ lesson.lessonNumber }} question</h3>
             <div class="bridge-table compact-table">
               <div class="bridge-row" *ngFor="let row of runtimeSourceRows.length ? runtimeSourceRows : sourceLessonQuestionRows">
@@ -1182,12 +1182,10 @@
                 <span>{{ row.value }}</span>
               </div>
             </div>
-            <p class="muted">{{ sourceLessonExplanation }}</p>
-            <p class="muted">{{ activeStep.teacherEditionBasis }}</p>
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-model'" class="source-authored-panel" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
+        <div *ngSwitchCase="'source-model'" class="source-authored-panel" [class.has-source-figure]="hasAuthoredSourceFigure" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Board setup' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
@@ -1209,7 +1207,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-meaning'" class="source-authored-panel" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
+        <div *ngSwitchCase="'source-meaning'" class="source-authored-panel" [class.has-source-figure]="hasAuthoredSourceFigure" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Meaning' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
@@ -1231,7 +1229,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-picture'" class="source-authored-panel" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
+        <div *ngSwitchCase="'source-picture'" class="source-authored-panel" [class.has-source-figure]="hasAuthoredSourceFigure" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Picture' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
@@ -1249,7 +1247,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-draw'" class="source-authored-panel" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
+        <div *ngSwitchCase="'source-draw'" class="source-authored-panel" [class.has-source-figure]="hasAuthoredSourceFigure" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Draw' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
@@ -1267,7 +1265,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-exit'" class="source-authored-panel" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
+        <div *ngSwitchCase="'source-exit'" class="source-authored-panel" [class.has-source-figure]="hasAuthoredSourceFigure" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Exit evidence' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
@@ -1286,7 +1284,7 @@
           </div>
         </div>
 
-        <div *ngSwitchCase="'source-summary'" class="source-authored-panel" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
+        <div *ngSwitchCase="'source-summary'" class="source-authored-panel" [class.has-source-figure]="hasAuthoredSourceFigure" [class.has-array-decomposition-runtime]="hasArrayDecompositionRuntime">
           <ng-container *ngTemplateOutlet="sourceFigure; context: { label: 'Summary' }"></ng-container>
           <div class="activity-card">
             <h3>{{ activeStep.title }}</h3>
