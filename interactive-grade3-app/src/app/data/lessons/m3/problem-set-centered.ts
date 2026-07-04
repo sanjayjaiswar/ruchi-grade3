@@ -454,6 +454,143 @@ const PROBLEM_METADATA: Record<string, Partial<ProblemSetCenteredProblem>> = {
     explanation: 'Aunt Deena, Uncle Chris, and 7 friends make 9 people. The Teacher Edition Answer Key gives $7 each.',
     validationChecks: ['The model uses 9 equal shares.', 'The whole cost is 63 dollars.', 'Each share is 7 dollars.']
   },
+  '16-2': {
+    blankWorkspaceLabel: 'Match each zero-and-one equation to its solution for n.',
+    blankVisualType: 'fact-match',
+    blankEquations: [
+      '1 x n = 3 -> n = ____',
+      'n divided by 4 = 0 -> n = ____',
+      '1 x 6 = n -> n = ____',
+      '7 divided by 7 = n -> n = ____',
+      'n x 1 = 9 -> n = ____',
+      'n divided by 1 = 8 -> n = ____'
+    ],
+    equations: [
+      '1 x 3 = 3',
+      '0 divided by 4 = 0',
+      '1 x 6 = 6',
+      '7 divided by 7 = 1',
+      '9 x 1 = 9',
+      '8 divided by 1 = 8'
+    ],
+    quotient: 1,
+    quotientMeaning: 'Each solution is the value of n that makes the matched equation true.',
+    animationType: 'fact-match',
+    explanation: 'Use the identity property of multiplication and the division rules for 0 and 1 to match each equation to its solution.',
+    validationChecks: [
+      'Multiplying by 1 leaves the number unchanged.',
+      'Zero divided into equal groups gives 0 in each group.',
+      'A number divided by itself equals 1.',
+      'A number divided by 1 equals the same number.'
+    ]
+  },
+  '16-3': {
+    blankWorkspaceLabel: 'Complete the n x 1 pattern table.',
+    blankVisualType: 'equation-workspace',
+    blankEquations: [
+      '1 x 1 = ____',
+      '2 x 1 = ____',
+      '3 x 1 = ____',
+      '4 x 1 = ____',
+      '5 x 1 = ____',
+      '6 x 1 = ____',
+      '7 x 1 = ____',
+      '8 x 1 = ____',
+      '9 x 1 = ____',
+      'n x 1 = ____'
+    ],
+    equations: [
+      '1 x 1 = 1',
+      '2 x 1 = 2',
+      '3 x 1 = 3',
+      '4 x 1 = 4',
+      '5 x 1 = 5',
+      '6 x 1 = 6',
+      '7 x 1 = 7',
+      '8 x 1 = 8',
+      '9 x 1 = 9',
+      'n x 1 = n'
+    ],
+    quotient: 1,
+    quotientMeaning: 'The product is the same as the factor multiplied by 1.',
+    animationType: 'two-step-model',
+    explanation: 'The official table shows that every number multiplied by 1 keeps its value, so n x 1 = n.',
+    validationChecks: [
+      'Every row keeps the same factor as the product.',
+      'The final row uses n to state the general pattern.',
+      'The pattern is multiplication by 1, not skip-counting by a new unit.'
+    ]
+  },
+  '18-1': {
+    blankWorkspaceLabel: 'Find the known yarn length first, then subtract from the total.',
+    blankVisualType: 'tape-diagram',
+    equations: ['6 x 9 = 54', '81 - 54 = 27'],
+    knownGroupCount: 6,
+    knownGroupSize: 9,
+    quotient: 27,
+    quotientMeaning: 'Sasha gives Rose a 27-centimeter piece of yarn.',
+    animationType: 'two-step-model',
+    unitLabel: 'centimeters',
+    groupLabel: 'yarn pieces',
+    explanation: 'Rose starts with 6 pieces of 9 centimeters, or 54 centimeters. The total after Sasha gives her yarn is 81 centimeters, so the new piece is 27 centimeters.',
+    validationChecks: ['The 6 equal pieces are each 9 cm.', 'The starting yarn total is subtracted from 81 cm.', 'The answer is in centimeters.']
+  },
+  '18-2': {
+    blankWorkspaceLabel: 'Add spelling-homework time and math-homework time.',
+    blankVisualType: 'array-template',
+    equations: ['7 x 4 = 28', '29 + 28 = 57'],
+    knownGroupCount: 7,
+    knownGroupSize: 4,
+    quotient: 57,
+    quotientMeaning: 'Julio spends 57 minutes on homework in all.',
+    animationType: 'two-step-model',
+    unitLabel: 'minutes',
+    groupLabel: 'math problems',
+    explanation: 'Seven math problems at 4 minutes each take 28 minutes. Add the 29 spelling minutes for 57 minutes total.',
+    validationChecks: ['The model uses 7 math problems.', 'Each problem takes 4 minutes.', 'The spelling time is added after the math time is found.']
+  },
+  '18-3': {
+    blankWorkspaceLabel: 'Subtract given-away stickers, then divide remaining stickers by page size.',
+    blankVisualType: 'bar-units',
+    equations: ['125 - 53 = 72', '72 divided by 9 = 8'],
+    knownTotal: 72,
+    knownGroupSize: 9,
+    quotient: 8,
+    quotientMeaning: 'Pearl puts stickers on 8 pages.',
+    animationType: 'grouping-by-size',
+    unitLabel: 'stickers',
+    groupLabel: 'pages',
+    explanation: 'Pearl has 72 stickers left after giving away 53. Nine stickers fit on each page, so 72 divided by 9 gives 8 pages.',
+    validationChecks: ['The 53 stickers are removed first.', 'Each page gets 9 stickers.', 'All remaining stickers are used.']
+  },
+  '18-4': {
+    blankWorkspaceLabel: 'Find the added water, then divide by 8 milliliters per friend.',
+    blankVisualType: 'bar-units',
+    equations: ['93 - 45 = 48', '48 divided by 8 = 6'],
+    knownTotal: 48,
+    knownGroupSize: 8,
+    quotient: 6,
+    quotientMeaning: 'Six friends poured water into the beaker.',
+    animationType: 'grouping-by-size',
+    unitLabel: 'milliliters',
+    groupLabel: 'friends',
+    explanation: 'The water increased by 48 milliliters. Each friend added 8 milliliters, so 6 friends added water.',
+    validationChecks: ['The starting 45 mL is subtracted from 93 mL.', 'Each group is 8 mL.', 'The answer names friends, not milliliters.']
+  },
+  '18-5': {
+    blankWorkspaceLabel: 'Subtract the ruler weight, then share the pencil weight equally.',
+    blankVisualType: 'share-tape',
+    equations: ['55 - 19 = 36', '36 divided by 4 = 9'],
+    knownTotal: 36,
+    knownGroupCount: 4,
+    quotient: 9,
+    quotientMeaning: 'Each pencil weighs 9 grams.',
+    animationType: 'equal-sharing',
+    unitLabel: 'grams',
+    groupLabel: 'pencils',
+    explanation: 'The pencils together weigh 36 grams after subtracting the 19-gram ruler. Four identical pencils share 36 grams equally, so each weighs 9 grams.',
+    validationChecks: ['The ruler weight is removed first.', 'The remaining weight is split across 4 identical pencils.', 'The answer is in grams.']
+  },
   '19-4': {
     blankWorkspaceLabel: 'Show 6 buses with 40 students on each bus.',
     blankVisualType: 'equation-workspace',

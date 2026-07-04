@@ -93,6 +93,50 @@ const M5_OVERRIDES: Record<number, Record<number, {
   solvedAnswer?: string;
   quotientMeaning?: string;
 }>> = {
+  2: {
+    3: {
+      fractionModels: [
+        { label: 'Sharon gets 1 third', numerator: 1, denominator: 3 }
+      ],
+      solvedAnswer: 'Use the thirds fraction strip. Sharon gets 1/3 of the whole candy bar.',
+      quotientMeaning: 'Three children share one whole candy bar fairly, so each equal share is 1 third.'
+    },
+    4: {
+      fractionModels: [
+        { label: 'Cardboard folded into fourths', numerator: 1, denominator: 4 },
+        { label: 'Cardboard folded into sixths', numerator: 1, denominator: 6 }
+      ],
+      solvedAnswer: 'Half and half again makes fourths, so each part is 1/4. Thirds and then each third in half makes sixths, so each part is 1/6.',
+      quotientMeaning: 'Repeated folding creates equal parts of the same original cardboard whole.'
+    }
+  },
+  5: {
+    3: {
+      fractionModels: [
+        { label: 'Andre and 9 friends', numerator: 1, denominator: 10 }
+      ],
+      solvedAnswer: 'Andre and his 9 friends make 10 people, so each person receives 1/10 of the second cake.',
+      quotientMeaning: 'The whole cake is shared by 10 people, so one equal share is 1 tenth.'
+    },
+    4: {
+      fractionModels: [
+        { label: '1 tenth cake slice', numerator: 1, denominator: 10 },
+        { label: '1 eighth cake slice', numerator: 1, denominator: 8 }
+      ],
+      solvedAnswer: 'One eighth is larger than one tenth when the cakes are the same size because eighths are larger equal parts.',
+      quotientMeaning: 'Both cakes are the same-size whole, so the unit with fewer equal parts is larger.'
+    }
+  },
+  6: {
+    2: {
+      fractionModels: [
+        { label: 'Soda guests drank', numerator: 1, denominator: 8 },
+        { label: 'Soda left', numerator: 7, denominator: 8 }
+      ],
+      solvedAnswer: 'The guests drank 1/8 of the soda, and 7/8 of the soda was left.',
+      quotientMeaning: 'Each liter is 1 eighth of the 8-liter whole.'
+    }
+  },
   10: {
     1: {
       fractionModels: [2, 4, 8, 3, 6].map((denominator) => ({

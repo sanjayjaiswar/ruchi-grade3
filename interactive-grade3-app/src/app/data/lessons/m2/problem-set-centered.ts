@@ -26,6 +26,7 @@ type ProblemSeed = {
   meaning?: string;
   shareLabels?: string[];
   dataDisplay?: ProblemSetDataDisplay;
+  solvedDataDisplay?: ProblemSetDataDisplay;
   numberLineModels?: ProblemSetNumberLineModel[];
 };
 
@@ -430,7 +431,7 @@ function problem(seed: ProblemSeed): ProblemSetCenteredProblem {
     blankWorkspaceLabel: seed.blankWorkspaceLabel ?? 'Use the Teacher Edition Problem Set visual model and keep the measurement units attached.',
     blankVisualType: seed.blankVisualType ?? (seed.dataDisplay ? 'data-table-template' : seed.numberLineModels ? 'number-line-template' : 'equation-workspace'),
     dataDisplay: seed.dataDisplay,
-    solvedDataDisplay: seed.dataDisplay,
+    solvedDataDisplay: seed.solvedDataDisplay ?? seed.dataDisplay,
     numberLineModels: seed.numberLineModels,
     solvedAnswer: seed.solvedAnswer,
     equations: seed.equations ?? [seed.solvedAnswer],
@@ -630,8 +631,20 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     summary: 'Liquid volume can be read, estimated, compared, and subtracted on a vertical scale.',
     problems: [
       problem({ number: 1, sourcePrompt: 'Label the container number line; explain halfway and pouring; find what remains after pouring out 300 mL.', solvedAnswer: 'For a 1-liter container, halfway is 500 mL; 700 mL remain after pouring out 300 mL.', equations: ['1,000 mL - 300 mL = 700 mL'], numberLineModels: [numberLine('container scale', ['0', '100', '200', '300', '400', '500', '600', '700', '800', '900', '1,000'], [7])] }),
-      problem({ number: 2, sourcePrompt: 'Read how much liquid is in each container.', solvedAnswer: 'Read each amount from the Teacher Edition container visuals.', numberLineModels: [numberLine('container readings', ['empty', 'half', 'full'])] }),
-      problem({ number: 3, sourcePrompt: 'Estimate each container to the nearest hundred milliliters.', solvedAnswer: 'Round each official container reading to the nearest 100 mL.', numberLineModels: [numberLine('nearest 100 mL', ['0', '100', '200', '300', '400', '500', '600', '700', '800', '900', '1,000'])] }),
+      problem({
+        number: 2,
+        sourcePrompt: 'Read how much liquid is in each container.',
+        solvedAnswer: 'Container readings are 3 L, 6 L, 4 L, and 0 L.',
+        dataDisplay: dataTable('Container readings', ['Container', 'Liquid volume'], [['A', '____ L'], ['B', '____ L'], ['C', '____ L'], ['D', '____ L']]),
+        solvedDataDisplay: dataTable('Container readings', ['Container', 'Liquid volume'], [['A', '3 L'], ['B', '6 L'], ['C', '4 L'], ['D', '0 L']])
+      }),
+      problem({
+        number: 3,
+        sourcePrompt: 'Estimate each container to the nearest hundred milliliters.',
+        solvedAnswer: 'The nearest-hundred estimates are 400 mL, 200 mL, 1,000 mL, and 700 mL.',
+        dataDisplay: dataTable('Nearest hundred milliliters', ['Container', 'Rounded volume'], [['A', '____ mL'], ['B', '____ mL'], ['C', '____ mL'], ['D', '____ mL']]),
+        solvedDataDisplay: dataTable('Nearest hundred milliliters', ['Container', 'Rounded volume'], [['A', '400 mL'], ['B', '200 mL'], ['C', '1,000 mL'], ['D', '700 mL']])
+      }),
       problem({ number: 4, sourcePrompt: 'Use barrel capacities A 75 L, B 68 L, C 96 L, D 52 L.', solvedAnswer: 'C has the greatest capacity, D the smallest, Ben most likely bought B, and C holds 28 L more than B.', equations: ['96 L - 68 L = 28 L'], dataDisplay: dataTable('Barrel capacity', ['Barrel', 'Capacity'], [['A', '75 L'], ['B', '68 L'], ['C', '96 L'], ['D', '52 L']]) })
     ]
   }),
@@ -773,7 +786,14 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       problem({ number: 1, sourcePrompt: 'Weigh beans and rice, estimate and find total and difference.', solvedAnswer: 'Answers vary by measured weights; complete estimated and actual sum and difference.', dataDisplay: dataTable('Beans and rice', ['Item', 'Actual', 'Rounded'], [['Beans', '____ g', '____ g'], ['Rice', '____ g', '____ g'], ['Sum', '____ g', '____ g'], ['Difference', '____ g', '____ g']]) }),
       problem({ number: 2, sourcePrompt: 'Measure three pieces of yarn, estimate total of A and C, then compare with B.', solvedAnswer: 'Answers vary; exact comparison is Yarn A + Yarn C - Yarn B.', equations: ['Yarn A + Yarn C = total', 'total - Yarn B = difference'], dataDisplay: dataTable('Yarn lengths', ['Yarn', 'Actual', 'Rounded'], [['A', '____ cm', '____ cm'], ['B', '____ cm', '____ cm'], ['C', '____ cm', '____ cm']]) }),
-      problem({ number: 3, sourcePrompt: 'Plot liquid in Containers D, E, F, round to nearest 10 mL, then find total and difference.', solvedAnswer: 'Answers depend on official container readings; plot, round, then compute actual total and difference.', numberLineModels: [numberLine('nearest 10 mL', ['0', '10', '20', '30', '40', '50', '60', '70', '80', '90', '100'])] }),
+      problem({
+        number: 3,
+        sourcePrompt: 'Plot liquid in Containers D, E, F, round to nearest 10 mL, then find total and difference.',
+        solvedAnswer: 'Container D is 212 mL ≈ 210 mL, Container E is 238 mL ≈ 240 mL, and Container F is 195 mL ≈ 200 mL. The actual total is 645 mL, and D to E differs by 26 mL.',
+        equations: ['212 + 238 + 195 = 645', '238 - 212 = 26'],
+        dataDisplay: dataTable('Container rounding', ['Container', 'Actual volume', 'Rounded to nearest 10 mL'], [['D', '____ mL', '____ mL'], ['E', '____ mL', '____ mL'], ['F', '____ mL', '____ mL']]),
+        solvedDataDisplay: dataTable('Container rounding', ['Container', 'Actual volume', 'Rounded to nearest 10 mL'], [['D', '212 mL', '210 mL'], ['E', '238 mL', '240 mL'], ['F', '195 mL', '200 mL']])
+      }),
       problem({ number: 4, sourcePrompt: 'Movie is 115 minutes including trailers of 5, 4, 3, 5, and 4 minutes.', solvedAnswer: 'Trailers total 21 minutes; movie without trailers is 94 minutes, about 100 minutes.', equations: ['5 + 4 + 3 + 5 + 4 = 21', '115 - 21 = 94'], quotient: 94, unitLabel: 'minutes', dataDisplay: dataTable('Trailer lengths', ['Trailer', 'Minutes'], [['1', '5'], ['2', '4'], ['3', '3'], ['4', '5'], ['5', '4'], ['Total', '21']]) })
     ]
   })

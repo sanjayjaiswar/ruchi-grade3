@@ -158,7 +158,14 @@ import { M7_LESSON34_RUNTIME } from './m7/lesson34';
 import { M7_TEACHER_ANSWER_KEY } from './m7/answer-key';
 import { m7TeacherAnswerKeyImages, m7TeacherProblemSetImages } from './m7/source-pages';
 import { STUDENT_WORK_SOURCE } from '../student-work-source.generated';
-import type { LessonAnimationModel, LessonRuntimeConfig, ProblemSetCenteredLesson, ProblemSetDataDisplay } from './lesson-runtime.types';
+import type {
+  LessonAnimationModel,
+  LessonRuntimeConfig,
+  ProblemSetAnimationType,
+  ProblemSetBlankVisualType,
+  ProblemSetCenteredLesson,
+  ProblemSetDataDisplay
+} from './lesson-runtime.types';
 
 const LESSON_RUNTIME_BY_ID: Record<string, LessonRuntimeConfig> = {
   'm1-l1': M1_LESSON1_RUNTIME,
@@ -808,6 +815,298 @@ function m7LastAnswerNumber(answer: string | undefined, fallback: number): numbe
   return numbers.length ? numbers[numbers.length - 1] : fallback;
 }
 
+function m7AreaModels(lessonNumber: number, problemNumber: number): ProblemSetCenteredLesson['problems'][number]['areaModels'] {
+  const areaRectangles: Record<string, Array<{ label: string; rows: number; columns: number }>> = {
+    '18-1': [
+      { label: '1 x 24', rows: 1, columns: 24 },
+      { label: '2 x 12', rows: 2, columns: 12 },
+      { label: '3 x 8', rows: 3, columns: 8 },
+      { label: '4 x 6', rows: 4, columns: 6 }
+    ],
+    '18-2': [
+      { label: '1 x 16', rows: 1, columns: 16 },
+      { label: '2 x 8', rows: 2, columns: 8 },
+      { label: '4 x 4', rows: 4, columns: 4 }
+    ],
+    '18-3': [
+      { label: '1 x 15', rows: 1, columns: 15 },
+      { label: '3 x 5', rows: 3, columns: 5 }
+    ],
+    '20-1': [
+      { label: '1 x 5', rows: 1, columns: 5 },
+      { label: '2 x 4', rows: 2, columns: 4 },
+      { label: '3 x 3', rows: 3, columns: 3 }
+    ],
+    '20-2': [
+      { label: '1 x 6', rows: 1, columns: 6 },
+      { label: '2 x 5', rows: 2, columns: 5 },
+      { label: '3 x 4', rows: 3, columns: 4 }
+    ],
+    '21-1': [
+      { label: '1 cm x 7 cm', rows: 1, columns: 7 },
+      { label: '2 cm x 6 cm', rows: 2, columns: 6 },
+      { label: '3 cm x 5 cm', rows: 3, columns: 5 },
+      { label: '4 cm x 4 cm', rows: 4, columns: 4 }
+    ],
+    '21-2': [
+      { label: '1 cm x 8 cm', rows: 1, columns: 8 },
+      { label: '2 cm x 7 cm', rows: 2, columns: 7 },
+      { label: '3 cm x 6 cm', rows: 3, columns: 6 },
+      { label: '4 cm x 5 cm', rows: 4, columns: 5 }
+    ],
+    '28-1': [{ label: 'Gia garden', rows: 9, columns: 7 }],
+    '28-2': [
+      { label: 'Elijah square', rows: 8, columns: 8 },
+      { label: 'Three squares connected', rows: 8, columns: 24 }
+    ],
+    '28-3': [{ label: 'Mason painting', rows: 8, columns: 9 }],
+    '28-4': [
+      { label: 'Jillian bedroom', rows: 8, columns: 9 },
+      { label: 'Rug', rows: 4, columns: 6 }
+    ],
+    '29-2': [{ label: 'Science fair booth', rows: 7, columns: 7 }],
+    '29-3': [
+      { label: 'Small rectangle A', rows: 3, columns: 6 },
+      { label: 'Small rectangle B', rows: 3, columns: 6 },
+      { label: 'Small rectangle C', rows: 3, columns: 6 },
+      { label: 'Small rectangle D', rows: 3, columns: 6 }
+    ]
+  };
+
+  return areaRectangles[`${lessonNumber}-${problemNumber}`]?.map((model) => ({
+    ...model,
+    total: model.rows * model.columns,
+    unitLabel: lessonNumber >= 21 || lessonNumber >= 28 ? 'square units' : 'square units'
+  }));
+}
+
+function m7TableDisplay(
+  title: string,
+  columns: string[],
+  rows: string[][],
+  note: string
+): ProblemSetDataDisplay {
+  return {
+    kind: 'data-table',
+    title,
+    columns,
+    rows,
+    note
+  };
+}
+
+function m7DataDisplay(lessonNumber: number, problemNumber: number): ProblemSetDataDisplay | undefined {
+  if (lessonNumber === 19 && problemNumber === 1) {
+    return m7TableDisplay(
+      'Rectangles Made with Unit Squares',
+      ['Unit squares', 'Number of rectangles', 'Width and length'],
+      [
+        ['12', '3', '1 x 12; 2 x 6; 3 x 4'],
+        ['13', '____', '____'],
+        ['14', '____', '____'],
+        ['15', '____', '____'],
+        ['16', '____', '____'],
+        ['17', '____', '____'],
+        ['18', '____', '____']
+      ],
+      'The first chart is completed in the official source; complete the remaining charts from unit-square rectangles.'
+    );
+  }
+
+  if (lessonNumber === 19 && problemNumber === 2) {
+    return {
+      kind: 'line-plot',
+      title: 'Number of Rectangles Made with Unit Squares',
+      keyLabel: 'X = 1 rectangle',
+      values: [
+        { label: '12', value: 2 },
+        { label: '13', value: 1 },
+        { label: '14', value: 2 },
+        { label: '15', value: 2 },
+        { label: '16', value: 3 },
+        { label: '17', value: 1 },
+        { label: '18', value: 3 }
+      ],
+      note: 'Use the rectangles recorded in Problem 1 to make the official line plot.'
+    };
+  }
+
+  if (lessonNumber === 22 && problemNumber === 1) {
+    return {
+      kind: 'line-plot',
+      title: 'Number of Rectangles Made with a Given Perimeter',
+      keyLabel: 'X = 1 rectangle',
+      values: [
+        { label: '12', value: 3 },
+        { label: '14', value: 3 },
+        { label: '16', value: 4 },
+        { label: '18', value: 4 }
+      ],
+      note: 'Use the perimeter data from Lessons 20 and 21 to build the line plot.'
+    };
+  }
+
+  if (lessonNumber === 21 && problemNumber === 3) {
+    return m7TableDisplay(
+      'Rectangles from Given Perimeters',
+      ['Perimeter', 'Number made', 'Width', 'Length', 'Area'],
+      [
+        ['10 cm', '____', '1 cm', '4 cm', '4 square cm'],
+        ['10 cm', '____', '____', '____', '____'],
+        ['20 cm', '____', '1 cm', '9 cm', '9 square cm'],
+        ['20 cm', '____', '____', '____', '____'],
+        ['20 cm', '____', '____', '____', '____'],
+        ['20 cm', '____', '____', '____', '____']
+      ],
+      'Keep the source chart structure and complete only the missing rectangle dimensions and areas.'
+    );
+  }
+
+  if (lessonNumber === 24 && problemNumber === 1) {
+    return m7TableDisplay(
+      'Robot Body-Part Planning Chart',
+      ['Letter', 'Body part', 'Perimeter', 'Width and length'],
+      [
+        ['A', 'arm', '14 cm', '____ cm by ____ cm'],
+        ['B', 'arm', '14 cm', '____ cm by ____ cm'],
+        ['C', 'leg', '18 cm', '____ cm by ____ cm'],
+        ['D', 'leg', '18 cm', '____ cm by ____ cm'],
+        ['E', 'body', 'Double one arm', '____ cm by ____ cm'],
+        ['F', 'head', '16 cm', '____ cm by ____ cm'],
+        ['G', 'neck', 'Half the head', '____ cm by ____ cm'],
+        ['H/I', 'extra body parts', 'student choice', '____ cm by ____ cm']
+      ],
+      'Use this official planning chart before drawing the 7 to 9 rectangular robot body parts.'
+    );
+  }
+
+  if (lessonNumber === 26 && problemNumber === 1) {
+    return {
+      kind: 'line-plot',
+      title: 'Area Measurements of Robot Bodies',
+      keyLabel: 'X = 1 robot body',
+      values: [
+        { label: 'varies', value: 0 }
+      ],
+      note: 'Class data varies; keep the official line-plot scale and plot classmates robot-body areas.'
+    };
+  }
+
+  if (lessonNumber === 27 && problemNumber === 1) {
+    return m7TableDisplay(
+      'Robot Evaluation: Required Rectangles',
+      ['Letter', 'Measured width and length', 'Student perimeter', 'Required perimeter'],
+      [
+        ['A', '____ cm by ____ cm', '____ cm', '14 cm'],
+        ['B', '____ cm by ____ cm', '____ cm', '14 cm'],
+        ['C', '____ cm by ____ cm', '____ cm', '18 cm'],
+        ['D', '____ cm by ____ cm', '____ cm', '18 cm'],
+        ['E', '____ cm by ____ cm', '____ cm', '28 cm'],
+        ['F', '____ cm by ____ cm', '____ cm', '16 cm'],
+        ['G', '____ cm by ____ cm', '____ cm', '8 cm'],
+        ['H/I', '____ cm by ____ cm', '____ cm', 'student choice']
+      ],
+      'Measure each rectangle from the classmate project and star any row where the measurement differs.'
+    );
+  }
+
+  if (lessonNumber === 27 && problemNumber === 4) {
+    return m7TableDisplay(
+      'Robot Environment Evaluation',
+      ['Letter', 'Item', 'Measured width and length or string measure', 'Required perimeter'],
+      [
+        ['J', 'sun', 'about ____ cm', 'about 25 cm'],
+        ['K', 'house rectangle', '____ cm by ____ cm', '82 cm'],
+        ['L', 'tree top', 'about ____ cm', 'about 30 cm'],
+        ['M', 'tree trunk rectangle', '____ cm by ____ cm', '30 cm'],
+        ['N', 'tree top', 'about ____ cm', 'about 20 cm'],
+        ['O', 'tree trunk rectangle', '____ cm by ____ cm', '20 cm'],
+        ['P/Q', 'extra environment items', '____', 'student choice']
+      ],
+      'Use a ruler for rectangles and string for nonrectangular items, matching the official evaluation chart.'
+    );
+  }
+
+  return undefined;
+}
+
+function m7SolvedDataDisplay(lessonNumber: number, problemNumber: number): ProblemSetDataDisplay | undefined {
+  if (lessonNumber === 19 && problemNumber === 1) {
+    return m7TableDisplay(
+      'Rectangles Made with Unit Squares',
+      ['Unit squares', 'Number of rectangles', 'Width and length'],
+      [
+        ['12', '3', '1 x 12; 2 x 6; 3 x 4'],
+        ['13', '1', '1 x 13'],
+        ['14', '2', '1 x 14; 2 x 7'],
+        ['15', '2', '1 x 15; 3 x 5'],
+        ['16', '3', '1 x 16; 2 x 8; 4 x 4'],
+        ['17', '1', '1 x 17'],
+        ['18', '3', '1 x 18; 2 x 9; 3 x 6']
+      ],
+      'Teacher Edition answer key values for the completed rectangle charts.'
+    );
+  }
+
+  if (lessonNumber === 21 && problemNumber === 3) {
+    return m7TableDisplay(
+      'Rectangles from Given Perimeters',
+      ['Perimeter', 'Number made', 'Width', 'Length', 'Area'],
+      [
+        ['10 cm', '2', '1 cm', '4 cm', '4 square cm'],
+        ['10 cm', '2', '2 cm', '3 cm', '6 square cm'],
+        ['20 cm', '5', '1 cm', '9 cm', '9 square cm'],
+        ['20 cm', '5', '2 cm', '8 cm', '16 square cm'],
+        ['20 cm', '5', '3 cm', '7 cm', '21 square cm'],
+        ['20 cm', '5', '4 cm', '6 cm', '24 square cm'],
+        ['20 cm', '5', '5 cm', '5 cm', '25 square cm']
+      ],
+      'Teacher Edition answer key values for the completed perimeter charts.'
+    );
+  }
+
+  return undefined;
+}
+
+function m7BlankVisualType(
+  lessonNumber: number,
+  problemNumber: number,
+  visualFamily: string,
+  areaModels?: ProblemSetCenteredLesson['problems'][number]['areaModels'],
+  dataDisplay?: ProblemSetDataDisplay
+): ProblemSetBlankVisualType {
+  if (dataDisplay) {
+    return dataDisplay.kind === 'line-plot' ? 'line-plot-template' : 'data-table-template';
+  }
+  if (areaModels?.length) {
+    return 'area-models-template';
+  }
+  if (visualFamily.includes('polygon') || visualFamily.includes('project') || visualFamily.includes('critique') || visualFamily.includes('one-half')) {
+    return 'open-workspace';
+  }
+  if (visualFamily.includes('perimeter')) {
+    return 'open-workspace';
+  }
+  return 'equation-workspace';
+}
+
+function m7AnimationType(
+  visualFamily: string,
+  areaModels?: ProblemSetCenteredLesson['problems'][number]['areaModels'],
+  dataDisplay?: ProblemSetDataDisplay
+): ProblemSetAnimationType {
+  if (dataDisplay) {
+    return 'data-display-model';
+  }
+  if (areaModels?.length) {
+    return 'area-models';
+  }
+  if (visualFamily.includes('polygon') || visualFamily.includes('project') || visualFamily.includes('critique') || visualFamily.includes('one-half')) {
+    return 'two-step-model';
+  }
+  return 'two-step-model';
+}
+
 function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | undefined {
   const source = STUDENT_WORK_SOURCE[`m7-l${lessonNumber}`];
   if (!source) {
@@ -833,6 +1132,9 @@ function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
     solvedSourcePageImages,
     problems: source.problems.map((problem) => {
       const officialAnswer = M7_TEACHER_ANSWER_KEY[lessonNumber]?.[problem.number];
+      const areaModels = m7AreaModels(lessonNumber, problem.number);
+      const dataDisplay = m7DataDisplay(lessonNumber, problem.number);
+      const solvedDataDisplay = m7SolvedDataDisplay(lessonNumber, problem.number) ?? dataDisplay;
       const fallbackEquations = problem.equations.length
         ? problem.equations
         : isPerimeter
@@ -850,7 +1152,10 @@ function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
         blankPrompts: [`Use the authored ${visualFamily} below. Keep the quantities, labels, measurements, and written response aligned to the Teacher Edition source reference above.`],
         blankEquations: m7BlankEquationTemplates(problem.equations, visualFamily),
         blankWorkspaceLabel: `Complete the Teacher Edition-aligned ${visualFamily}.`,
-        blankVisualType: 'equation-workspace',
+        blankVisualType: m7BlankVisualType(lessonNumber, problem.number, visualFamily, areaModels, dataDisplay),
+        areaModels,
+        dataDisplay,
+        solvedDataDisplay,
         solvedAnswer: isOpenConstruction
           ? officialAnswer ?? 'Correct work varies. A valid solution must satisfy every attribute, measurement, drawing, critique, or reflection requirement in the official prompt.'
           : officialAnswer ?? 'Use the Teacher Edition answer key reference to verify the completed model.',
@@ -860,7 +1165,7 @@ function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
         knownGroupSize: isGrid ? 6 : 4,
         quotient: answerValue,
         quotientMeaning: 'The answer is the shape classification, constructed figure, perimeter, area, data interpretation, critique, or word-problem quantity requested by the official prompt.',
-        animationType: 'two-step-model',
+        animationType: m7AnimationType(visualFamily, areaModels, dataDisplay),
         unitLabel: isPerimeter ? 'linear units' : isGrid ? 'square units' : isHalf ? 'equal parts' : 'units',
         groupLabel: isPerimeter ? 'sides' : isGrid ? 'rows' : isHalf ? 'parts' : 'steps',
         explanation: `Work from the official Teacher Edition ${visualFamily}. The model shown here is the lesson surface; use the collapsible Teacher Edition source reference only to verify exact page evidence.`,

@@ -140,13 +140,25 @@
   white-space: nowrap;
 }
 
-.topbar-module-info strong {
+.topbar-module-info select {
+  width: 100%;
+  min-width: 0;
+  min-height: 32px;
+  overflow: hidden;
+  padding: 0 24px 0 0;
+  border: 0;
+  background: transparent;
   overflow: hidden;
   color: var(--module-accent-strong);
   font-size: 16px;
   font-weight: 950;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.topbar-module-info select:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--module-accent) 34%, transparent 66%);
+  outline-offset: 3px;
 }
 
 .topbar-lesson-nav {

@@ -5,23 +5,17 @@ export const M7_LESSON15_RUNTIME: LessonRuntimeConfig = {
     "perimeter"
   ],
   lessonAnimation: {
-    kind: "tape-diagram",
-    title: "Lesson 15 animation: Solve word problems to determine perimeter with given s...",
+    kind: "geometry",
+    title: "Lesson 15 animation: Solve perimeter word problems with source shapes",
     context: "Solve perimeter word problems with rectangles.",
-    equation: "5 units of 6; unknown labeled from the story",
+    equation: "Add the outside side lengths of each source shape",
     teacherPrompt: "Share your solution to Problem 3 with a partner. Compare your equations. How are they the same? How are they different?",
     focus: [
       "perimeter",
-      "tape diagram",
+      "word problem",
       "source labels"
     ],
-    groupCount: 5,
-    groupSize: 6,
-    rowCount: 5,
-    columnCount: 6,
-    tapePartCount: 5,
-    tapePartLabel: "6 each",
-    tapeWholeLabel: "30 total"
+    geometryLabels: ["rectangle", "regular pentagon", "star", "triangle"]
   },
 
 

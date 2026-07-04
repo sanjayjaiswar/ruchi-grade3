@@ -3,22 +3,23 @@ import type { LessonRuntimeConfig } from '../lesson-runtime.types';
 export const M7_LESSON5_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
   lessonAnimation: {
-    kind: "tape-diagram",
-    title: "Lesson 5 animation: Compare and classify other polygons.",
-    context: "Group polygons by attributes.",
-    equation: "4 units of 3; unknown labeled from the story",
+    kind: "geometry",
+    title: "Lesson 5 animation: Classify polygons M-X.",
+    context: "Use the official M-X polygon cards to compare equal sides, right angles, and parallel sides.",
+    equation: "Polygon attributes -> source chart groups",
     teacherPrompt: "Share student work for Problem 3, and compare the three quadrilaterals. Which attributes are the same and different?",
     focus: [
-      "tape diagram",
+      "equal sides",
+      "right angles",
+      "parallel sides",
       "source labels"
     ],
-    groupCount: 4,
-    groupSize: 3,
-    rowCount: 4,
-    columnCount: 3,
-    tapePartCount: 4,
-    tapePartLabel: "3 each",
-    tapeWholeLabel: "12 total"
+    geometryLabels: [
+      "all sides equal",
+      "not all equal",
+      "right angle",
+      "parallel sides"
+    ]
   },
 
 

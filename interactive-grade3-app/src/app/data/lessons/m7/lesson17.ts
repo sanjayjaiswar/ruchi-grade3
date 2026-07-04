@@ -7,24 +7,18 @@ export const M7_LESSON17_RUNTIME: LessonRuntimeConfig = {
     "unknown factor"
   ],
   lessonAnimation: {
-    kind: "tape-diagram",
-    title: "Lesson 17 animation: Use all four operations to solve problems involving per...",
+    kind: "geometry",
+    title: "Lesson 17 animation: Find unknown sides in compound rectangles",
     context: "Lesson 17: Use all four operations to solve problems involving perimeter and 221 unknown measurements",
-    equation: "2 units of 5; unknown labeled from the story",
+    equation: "Use rectangle relationships to label missing sides, then add the outside boundary",
     teacherPrompt: "Compare strategies for finding the unknown side lengths in Problem 1",
     focus: [
       "perimeter",
       "unknown",
-      "tape diagram",
+      "compound rectangles",
       "source labels"
     ],
-    groupCount: 2,
-    groupSize: 5,
-    rowCount: 2,
-    columnCount: 5,
-    tapePartCount: 2,
-    tapePartLabel: "5 each",
-    tapeWholeLabel: "10 total"
+    geometryLabels: ["compound shape", "unknown side", "outside boundary", "perimeter"]
   },
 
 

@@ -8,24 +8,18 @@ export const M7_LESSON14_RUNTIME: LessonRuntimeConfig = {
     "angle"
   ],
   lessonAnimation: {
-    kind: "tape-diagram",
-    title: "Lesson 14 animation: Determine the perimeter of regular polygons and rectang...",
+    kind: "geometry",
+    title: "Lesson 14 animation: Label unknown sides to find perimeter",
     context: "T: (Project or draw the rectangle as shown.) This shape is a rectangle.",
-    equation: "6 units of 9; unknown labeled from the story",
+    equation: "Use equal side lengths in regular polygons and opposite side lengths in rectangles",
     teacherPrompt: "Compare your work for Problem 1 with a partner's work. Did you add or multiply to find the perimeters? Why?",
     focus: [
       "perimeter",
       "unknown",
-      "tape diagram",
+      "regular polygons",
       "source labels"
     ],
-    groupCount: 6,
-    groupSize: 9,
-    rowCount: 6,
-    columnCount: 9,
-    tapePartCount: 6,
-    tapePartLabel: "9 each",
-    tapeWholeLabel: "54 total"
+    geometryLabels: ["regular shape", "unknown side", "rectangle", "perimeter"]
   },
 
 

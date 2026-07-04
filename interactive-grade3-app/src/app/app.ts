@@ -275,6 +275,14 @@ export class App {
     return this.moduleTheme(moduleId).label;
   }
 
+  selectTopbarModule(event: Event): void {
+    const moduleId = (event.target as HTMLSelectElement).value;
+    const firstLesson = this.lessonNavItems.find((lesson) => lesson.moduleId === moduleId);
+    if (firstLesson) {
+      this.goToLesson(firstLesson);
+    }
+  }
+
   selectTopbarLesson(event: Event): void {
     const lessonId = (event.target as HTMLSelectElement).value;
     const lesson = this.lessonNavItems.find((candidate) => candidate.lessonId === lessonId);
