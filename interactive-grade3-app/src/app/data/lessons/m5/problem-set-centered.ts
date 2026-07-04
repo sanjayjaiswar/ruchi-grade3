@@ -520,7 +520,12 @@ function makeLesson1(): ProblemSetCenteredLesson {
         ]
       }
     ],
-    problems
+    problems: problems.map((problem) => ({
+      ...problem,
+      sourcePageImages: problem.sourcePageImages ?? sourcePageImages,
+      blankSourcePageImages: problem.blankSourcePageImages ?? sourcePageImages,
+      solvedSourcePageImages: problem.solvedSourcePageImages ?? sourcePageImages
+    }))
   };
 }
 
@@ -618,7 +623,12 @@ function makeLesson30(): ProblemSetCenteredLesson {
         ]
       }
     ],
-    problems: [problem]
+    problems: [{
+      ...problem,
+      sourcePageImages: problem.sourcePageImages ?? sourcePageImages,
+      blankSourcePageImages: problem.blankSourcePageImages ?? sourcePageImages,
+      solvedSourcePageImages: problem.solvedSourcePageImages ?? sourcePageImages
+    }]
   };
 }
 
@@ -837,14 +847,22 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
   const sourceProblems = M5_WORKBOOK_PROBLEMS[lessonNumber]?.length
     ? M5_WORKBOOK_PROBLEMS[lessonNumber]
     : (source?.problems ?? []);
+  const sourcePageImages = teacherEditionLessonPages(source?.teacherEditionSource ?? '');
   const problems = (sourceProblems.length ? sourceProblems : [
     {
       number: 1,
       prompt: source?.teacherEditionReference ?? objective,
       equations: []
     }
-  ]).map((problem) => makeProblem(lessonNumber, problem));
-  const sourcePageImages = teacherEditionLessonPages(source?.teacherEditionSource ?? '');
+  ]).map((problem) => {
+    const centeredProblem = makeProblem(lessonNumber, problem);
+    return {
+      ...centeredProblem,
+      sourcePageImages: centeredProblem.sourcePageImages ?? sourcePageImages,
+      blankSourcePageImages: centeredProblem.blankSourcePageImages ?? sourcePageImages,
+      solvedSourcePageImages: centeredProblem.solvedSourcePageImages ?? sourcePageImages
+    };
+  });
   return {
     title: `Lesson ${lessonNumber} concept: ${objective}`,
     concept: `Build the official Problem Set with interactive fraction models. The workbook prompt supplies the task; the model below preserves the lesson focus on equal parts, named wholes, fraction strips, and number lines.`,

@@ -590,6 +590,42 @@ function m6BlankEquationTemplates(sourceEquations: string[], visualFamily: strin
     : [`Use the official ${visualFamily} blanks and explain from the display evidence.`];
 }
 
+const M6_SOURCE_PAGE_BASE = '/source-pages/m6';
+
+const M6_WORKBOOK_PAGE_NUMBERS: Record<number, number[]> = {
+  1: [2, 3, 4],
+  2: [7, 8],
+  3: [11, 12, 13],
+  4: [19, 20],
+  5: [24, 25],
+  6: [29, 30],
+  7: [34, 35],
+  8: [39, 40],
+  9: [44, 45, 46]
+};
+
+const M6_TEACHER_ANSWER_PAGE_NUMBERS: Record<number, number[]> = {
+  1: [147, 148],
+  2: [149],
+  3: [150, 151],
+  4: [152],
+  5: [153, 154],
+  6: [155, 156],
+  7: [157],
+  8: [158],
+  9: [159, 160]
+};
+
+function m6WorkbookPageImages(lessonNumber: number): string[] {
+  return (M6_WORKBOOK_PAGE_NUMBERS[lessonNumber] ?? [])
+    .map((page) => `${M6_SOURCE_PAGE_BASE}/workbook-page-${String(page).padStart(2, '0')}.png`);
+}
+
+function m6TeacherAnswerPageImages(lessonNumber: number): string[] {
+  return (M6_TEACHER_ANSWER_PAGE_NUMBERS[lessonNumber] ?? [])
+    .map((page) => `${M6_SOURCE_PAGE_BASE}/teacher-answer-page-${page}.png`);
+}
+
 function m6LessonAnimation(lessonNumber: number): LessonAnimationModel | undefined {
   const animations: Record<number, LessonAnimationModel> = {
     1: {
@@ -1120,7 +1156,7 @@ function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
   const isHalf = visualFamily.includes('one-half');
   const isOpenConstruction = visualFamily.includes('polygon') || visualFamily.includes('project') || visualFamily.includes('critique') || isHalf;
   const blankSourcePageImages = m7TeacherProblemSetImages(lessonNumber);
-  const solvedSourcePageImages = m7TeacherAnswerKeyImages(lessonNumber);
+  const solvedSourcePageImages = [...blankSourcePageImages, ...m7TeacherAnswerKeyImages(lessonNumber)];
   return {
     title: `Lesson ${lessonNumber}: ${M7_OBJECTIVES[lessonNumber] ?? 'Geometry and measurement problem solving'}`,
     concept: M7_OBJECTIVES[lessonNumber] ?? 'Use the official Module 7 Problem Set to reason about geometry, measurement, area, perimeter, and word problems.',
@@ -1128,6 +1164,7 @@ function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
     contrast: `Use the official ${visualFamily}; do not replace it with a parallel problem.`,
     summary: 'Use the Teacher Edition Problem Set as the source of truth, then check the solved work against the Teacher Edition Answer Key.',
     sourceNote: `${source.teacherEditionSource} Problem Set pages are rendered from the Teacher Edition PDF.`,
+    sourcePageImages: blankSourcePageImages,
     blankSourcePageImages,
     solvedSourcePageImages,
     problems: source.problems.map((problem) => {
@@ -1149,6 +1186,9 @@ function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
       return {
         number: problem.number,
         sourcePrompt: problem.prompt,
+        sourcePageImages: blankSourcePageImages,
+        blankSourcePageImages,
+        solvedSourcePageImages,
         blankPrompts: [`Use the authored ${visualFamily} below. Keep the quantities, labels, measurements, and written response aligned to the Teacher Edition source reference above.`],
         blankEquations: m7BlankEquationTemplates(problem.equations, visualFamily),
         blankWorkspaceLabel: `Complete the Teacher Edition-aligned ${visualFamily}.`,
@@ -1186,6 +1226,8 @@ function m6ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
   }
 
   const visualFamily = M6_VISUAL_FAMILY[lessonNumber] ?? 'data display';
+  const sourcePageImages = m6WorkbookPageImages(lessonNumber);
+  const answerKeyImages = m6TeacherAnswerPageImages(lessonNumber);
   return {
     title: `Lesson ${lessonNumber}: ${M6_OBJECTIVES[lessonNumber] ?? 'Collecting and displaying data'}`,
     concept: M6_OBJECTIVES[lessonNumber] ?? 'Use the official Module 6 Problem Set data display to organize, read, compare, and explain data.',
@@ -1193,6 +1235,9 @@ function m6ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
     contrast: `Build and read the ${visualFamily} from the official Problem Set quantities, labels, keys, and intervals.`,
     summary: 'Use the display as the evidence. Preserve the scale, key, interval size, labels, and units from the Teacher Edition Problem Set, then check fixed answers against the Teacher Edition answer key.',
     sourceNote: source.teacherEditionSource,
+    sourcePageImages,
+    blankSourcePageImages: sourcePageImages,
+    solvedSourcePageImages: [...sourcePageImages, ...answerKeyImages],
     conceptSections: [
       {
         title: 'Teacher Edition objective',
@@ -1212,6 +1257,9 @@ function m6ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
       return {
         number: problem.number,
         sourcePrompt,
+        sourcePageImages,
+        blankSourcePageImages: sourcePageImages,
+        solvedSourcePageImages: [...sourcePageImages, ...answerKeyImages],
         blankPrompts: ['Complete the authored scaffold using the exact quantities, labels, scale, and intervals from the Teacher Edition Problem Set prompt.'],
         blankEquations: m6BlankEquationTemplates(problem.equations, visualFamily),
         blankWorkspaceLabel: `Complete the ${visualFamily} scaffold.`,

@@ -5,10 +5,14 @@ import type {
   ProblemSetCenteredProblem,
   ProblemSetFactMatch
 } from '../lesson-runtime.types';
+import { STUDENT_WORK_SOURCE } from '../../student-work-source.generated';
 
 type ProblemSeed = {
   number: number;
   sourcePrompt: string;
+  sourcePageImages?: string[];
+  blankSourcePageImages?: string[];
+  solvedSourcePageImages?: string[];
   solvedAnswer: string;
   equations: string[];
   explanation?: string;
@@ -41,6 +45,72 @@ type LessonSeed = {
   problems: ProblemSeed[];
 };
 
+const GENERATED_SOURCE_PROMPT_LESSONS = new Set([1, 2, 3, 6, 7, 8, 9, 11, 14, 15, 17, 18, 19, 20, 21]);
+
+const M1_PROBLEM_SET_SOURCE_PAGES: Record<number, string[]> = {
+  1: teacherEditionPageImages(29, 30),
+  2: teacherEditionPageImages(43, 44),
+  3: teacherEditionPageImages(56, 57),
+  4: teacherEditionPageImages(70, 71),
+  5: teacherEditionPageImages(80, 81),
+  6: teacherEditionPageImages(90, 91),
+  7: teacherEditionPageImages(103, 104),
+  8: teacherEditionPageImages(114, 115),
+  9: teacherEditionPageImages(125, 126),
+  10: teacherEditionPageImages(137, 138),
+  11: teacherEditionPageImages(157, 158),
+  12: teacherEditionPageImages(169, 170),
+  13: teacherEditionPageImages(181, 182),
+  14: teacherEditionPageImages(194, 195),
+  15: teacherEditionPageImages(205, 206),
+  16: teacherEditionPageImages(216, 217),
+  17: teacherEditionPageImages(227, 228),
+  18: teacherEditionPageImages(240, 241),
+  19: teacherEditionPageImages(250, 251),
+  20: teacherEditionPageImages(262, 263),
+  21: teacherEditionPageImages(272, 273)
+};
+
+function teacherEditionPageImages(start: number, end: number): string[] {
+  return Array.from({ length: end - start + 1 }, (_, index) => {
+    const page = String(start + index).padStart(3, '0');
+    return `/source-pages/m1-teacher/page-${page}.png`;
+  });
+}
+
+function sourcePromptFromWorkbook(lessonNumber: number, problem: ProblemSeed): ProblemSeed {
+  if (!GENERATED_SOURCE_PROMPT_LESSONS.has(lessonNumber)) {
+    return problem;
+  }
+
+  const generatedPrompt = STUDENT_WORK_SOURCE[`m1-l${lessonNumber}`]?.problems.find(
+    (sourceProblem) => sourceProblem.number === problem.number
+  )?.prompt;
+
+  if (!generatedPrompt) {
+    return problem;
+  }
+
+  return {
+    ...problem,
+    sourcePrompt: cleanGeneratedSourcePrompt(generatedPrompt)
+  };
+}
+
+function cleanGeneratedSourcePrompt(prompt: string): string {
+  return prompt
+    .replace(/\s*Quality Control Guide\b/gi, '')
+    .replace(/\s+facts by skip-counting objects in array models\.?$/i, '')
+    .replace(/\s+groups in array models\.?$/i, '')
+    .replace(/\s+using units of 4\.?$/i, '')
+    .replace(/\s+and assess the reasonableness of answers\.?$/i, '')
+    .replace(/\s+strategy to multiply\.?$/i, '')
+    .replace(/\s+of groups\.?$/i, '')
+    .replace(/\s+(and tape diagrams|multiplication|division|facts)\.$/i, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function teacherEditionPageImagesFromBasis(basis: string): string[] {
   const rangeMatch = basis.match(/pages\s+(\d+)-(\d+)/i);
   if (!rangeMatch) {
@@ -49,10 +119,7 @@ function teacherEditionPageImagesFromBasis(basis: string): string[] {
 
   const start = Number(rangeMatch[1]);
   const end = Number(rangeMatch[2]);
-  return Array.from({ length: end - start + 1 }, (_, index) => {
-    const page = String(start + index).padStart(3, '0');
-    return `/source-pages/m1-teacher/page-${page}.png`;
-  });
+  return teacherEditionPageImages(start, end);
 }
 
 function teacherEditionSourceNote(seed: LessonSeed): string {
@@ -63,6 +130,9 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
   return {
     number: seed.number,
     sourcePrompt: seed.sourcePrompt,
+    sourcePageImages: seed.sourcePageImages,
+    blankSourcePageImages: seed.blankSourcePageImages,
+    solvedSourcePageImages: seed.solvedSourcePageImages,
     blankPrompts: seed.blankPrompts ?? ['Complete the official Teacher Edition Problem Set drawing, labels, and blanks for this problem.'],
     blankEquations: seed.blankEquations ?? seed.equations.map(blankEquation),
     blankAnswerSentence: seed.blankAnswerSentence,
@@ -100,6 +170,7 @@ function blankEquation(equation: string): string {
 
 function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
   const teacherEditionImages = teacherEditionPageImagesFromBasis(seed.teacherEditionBasis);
+  const problemSetImages = M1_PROBLEM_SET_SOURCE_PAGES[seed.lessonNumber] ?? teacherEditionImages;
 
   return {
     title: seed.title,
@@ -143,7 +214,12 @@ function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
         ]
       }
     ],
-    problems: seed.problems.map(makeProblem)
+    problems: seed.problems.map((problem) =>
+      makeProblem({
+        sourcePageImages: problemSetImages,
+        ...sourcePromptFromWorkbook(seed.lessonNumber, problem)
+      })
+    )
   };
 }
 
@@ -450,7 +526,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       {
         number: 1,
-        sourcePrompt: '14 flowers are divided into 2 equal groups. How many flowers are in each group?',
+        sourcePrompt: '14 flowers are divided into 2 equal groups. There are _________ flowers in each group.',
         solvedAnswer: 'There are 7 flowers in each group.',
         equations: ['14 divided by 2 = 7'],
         knownTotal: 14,
@@ -465,7 +541,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 2,
-        sourcePrompt: '28 books are divided into 4 equal groups. How many books are in each group?',
+        sourcePrompt: '28 books are divided into 4 equal groups. There are _________ books in each group.',
         solvedAnswer: 'There are 7 books in each group.',
         equations: ['28 divided by 4 = 7'],
         knownTotal: 28,
@@ -493,7 +569,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 4,
-        sourcePrompt: 'Cups are divided into equal groups. Complete the groups and solve 12 divided by 2.',
+        sourcePrompt: '_______ cups are divided into _______ equal groups. There are _________ cups in each group. 12 divided by 2 = _________.',
         solvedAnswer: '12 cups divided into 2 equal groups gives 6 cups in each group.',
         equations: ['12 divided by 2 = 6'],
         knownTotal: 12,
@@ -532,7 +608,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 7,
-        sourcePrompt: 'Audrina has 24 colored pencils. She puts them in 4 equal groups. How many are in each group?',
+        sourcePrompt: 'Audrina has 24 colored pencils. She puts them in 4 equal groups. How many colored pencils are in each group? There are _______ colored pencils in each group. 24 divided by 4 = _______.',
         solvedAnswer: 'There are 6 colored pencils in each group.',
         equations: ['24 divided by 4 = 6'],
         knownTotal: 24,
@@ -545,7 +621,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 8,
-        sourcePrompt: 'Charlie picks 20 apples and divides them equally between 5 baskets. Draw the apples in each basket.',
+        sourcePrompt: 'Charlie picks 20 apples. He divides them equally between 5 baskets. Draw the apples in each basket. There are ___________ apples in each basket. 20 divided by ________ = __________.',
         solvedAnswer: 'There are 4 apples in each basket.',
         equations: ['20 divided by 5 = 4'],
         knownTotal: 20,
@@ -558,7 +634,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 9,
-        sourcePrompt: 'Chelsea collects butterfly stickers. The picture shows how she placed them in her book. Write a division sentence to show how she equally grouped her stickers.',
+        sourcePrompt: 'Chelsea collects butterfly stickers. The picture shows how she placed them in her book. Write a division sentence to show how she equally grouped her stickers. There are ____________ butterflies in each row. __________ divided by __________ = __________.',
         solvedAnswer: 'There are 3 butterflies in each row.',
         equations: ['15 divided by 5 = 3'],
         knownTotal: 15,
@@ -584,7 +660,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       {
         number: 1,
-        sourcePrompt: 'Divide 6 tomatoes into groups of 3.',
+        sourcePrompt: 'Divide 6 tomatoes into groups of 3. There are _________ groups of 3 tomatoes. 6 divided by 3 = 2.',
         solvedAnswer: 'There are 2 groups of 3 tomatoes.',
         equations: ['6 divided by 3 = 2'],
         knownTotal: 6,
@@ -598,7 +674,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 2,
-        sourcePrompt: 'Divide 8 lollipops into groups of 2.',
+        sourcePrompt: 'Divide 8 lollipops into groups of 2. There are _______ groups. 8 divided by 2 = _______.',
         solvedAnswer: 'There are 4 groups.',
         equations: ['8 divided by 2 = 4'],
         knownTotal: 8,
@@ -611,7 +687,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 3,
-        sourcePrompt: 'Divide 10 stars into groups of 5.',
+        sourcePrompt: 'Divide 10 stars into groups of 5. 10 divided by 5 = _______.',
         solvedAnswer: 'There are 2 groups of 5 stars.',
         equations: ['10 divided by 5 = 2'],
         knownTotal: 10,
@@ -624,7 +700,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 4,
-        sourcePrompt: 'Divide the shells to show 12 divided by 3, where the unknown represents the number of groups.',
+        sourcePrompt: 'Divide the shells to show 12 divided by 3 = ________, where the unknown represents the number of groups. How many groups are there? ________.',
         solvedAnswer: 'There are 4 groups.',
         equations: ['12 divided by 3 = 4'],
         knownTotal: 12,
@@ -637,7 +713,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 5,
-        sourcePrompt: 'Rachel has 9 crackers. She puts 3 crackers in each bag. Circle the crackers, write a division sentence, and draw a number bond.',
+        sourcePrompt: 'Rachel has 9 crackers. She puts 3 crackers in each bag. Circle the crackers to show Rachel\'s bags. a. Write a division sentence where the answer represents the number of Rachel\'s bags. b. Draw a number bond to represent the problem.',
         solvedAnswer: 'Rachel makes 3 bags.',
         equations: ['9 divided by 3 = 3', '3 + 3 + 3 = 9'],
         knownTotal: 9,
@@ -651,7 +727,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 6,
-        sourcePrompt: 'Jameisha has 16 wheels. She uses 4 wheels for each toy car. Count by 4s, draw, and write a division sentence.',
+        sourcePrompt: 'Jameisha has 16 wheels to make toy cars. She uses 4 wheels for each car. a. Use a count-by to find the number of cars Jameisha can build. Make a drawing to match your counting. b. Write a division sentence to represent the problem.',
         solvedAnswer: 'Jameisha can build 4 cars.',
         equations: ['4, 8, 12, 16', '16 divided by 4 = 4'],
         knownTotal: 16,
@@ -1204,7 +1280,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       {
         number: 1,
-        sourcePrompt: 'Fill in multiplication and division facts for units of 3 from 1 x 3 through 10 x 3.',
+        sourcePrompt: 'Fill in the blanks to make true number sentences. 1 x 3 = 3; 2 x 3 = 6; 3 x 3 = 9; 4 x 3 = ______; 5 x 3 = ______; 6 x 3 = ______; 7 x 3 = ______; 8 x 3 = ______; 9 x 3 = ______; 10 x 3 = ______. 3 divided by 3 = ______; 6 divided by 3 = ______; ______ divided by 3 = 3; ______ divided by 3 = 4; ______ divided by 3 = 5; ______ divided by 3 = 6; ______ divided by 3 = 7; ______ divided by 3 = 8; ______ divided by 3 = 9; ______ divided by 3 = 10.',
         solvedAnswer: 'The multiplication products are 3, 6, 9, 12, 15, 18, 21, 24, 27, and 30; the matching division quotients are 1 through 10.',
         equations: ['5 x 3 = 15', '15 divided by 3 = 5', '10 x 3 = 30', '30 divided by 3 = 10'],
         quotient: 10,
@@ -1215,7 +1291,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 2,
-        sourcePrompt: 'Mr. Lawton divides tomatoes into bags of 3. Circle bags, skip-count the total, draw a tape diagram, and solve.',
+        sourcePrompt: 'Mr. Lawton picks tomatoes from his garden. He divides the tomatoes into bags of 3. a. Circle to show how many bags he packs. Then, skip-count to show the total number of tomatoes. b. Draw and label a tape diagram to represent the problem. ______ divided by 3 = ______. Mr. Lawton packs ______ bags of tomatoes.',
         solvedAnswer: 'Mr. Lawton packs 5 bags of tomatoes.',
         equations: ['15 divided by 3 = 5', '5 x 3 = 15'],
         knownTotal: 15,
@@ -1228,7 +1304,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 3,
-        sourcePrompt: 'Camille buys a 15-centimeter sheet of stamps. Each stamp is 3 centimeters long. How many stamps?',
+        sourcePrompt: 'Camille buys a sheet of stamps that measures 15 centimeters long. Each stamp is 3 centimeters long. How many stamps does Camille buy? Draw and label a tape diagram to solve. Camille buys ______ stamps.',
         solvedAnswer: 'Camille buys 5 stamps.',
         equations: ['15 divided by 3 = 5'],
         knownTotal: 15,
@@ -1241,7 +1317,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 4,
-        sourcePrompt: 'Thirty third-graders are equally divided into 3 vans. How many students are in each van?',
+        sourcePrompt: 'Thirty third-graders go on a field trip. They are equally divided into 3 vans. How many students are in each van?',
         solvedAnswer: 'There are 10 students in each van.',
         equations: ['30 divided by 3 = 10'],
         knownTotal: 30,
@@ -1254,7 +1330,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 5,
-        sourcePrompt: 'Friends spend $24 on frozen yogurt. Each person pays $3. How many people buy frozen yogurt?',
+        sourcePrompt: 'Some friends spend $24 altogether on frozen yogurt. Each person pays $3. How many people buy frozen yogurt?',
         solvedAnswer: '8 people buy frozen yogurt.',
         equations: ['24 divided by 3 = 8'],
         knownTotal: 24,
@@ -1409,7 +1485,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       {
         number: 1,
-        sourcePrompt: 'Label arrays and complete number sentences for 6 x 4, 7 x 4, 8 x 4, and 9 x 4.',
+        sourcePrompt: 'Label the array. Then, fill in the blanks below to make true number sentences. a. 6 x 4 = ______. (6 x 4) = (5 x 4) + (1 x 4) = 20 + ______ = ______. b. 7 x 4 = ______. (7 x 4) = (5 x 4) + (2 x 4) = ______ + ______ = 28. c. 8 x 4 = ______. (5 x 4) = ______. (______ x 4) = ______. (8 x 4) = (5 x 4) + (______ x 4) = ______ + ______ = ______. d. 9 x 4 = ______. (5 x 4) = ______. (______ x 4) = ______. (9 x 4) = (5 x 4) + (______ x 4) = ______ + ______ = ______.',
         solvedAnswer: '6 x 4 = 24, 7 x 4 = 28, 8 x 4 = 32, and 9 x 4 = 36.',
         equations: ['6 x 4 = 20 + 4 = 24', '7 x 4 = 20 + 8 = 28', '8 x 4 = 20 + 12 = 32', '9 x 4 = 20 + 16 = 36'],
         knownGroupSize: 4,
@@ -1421,7 +1497,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 2,
-        sourcePrompt: 'Match equal expressions such as (5 x 4) + (3 x 4), 8 x 4, and 32.',
+        sourcePrompt: 'Match the equal expressions: (5 x 4) + (1 x 4), (5 x 4) + (2 x 4), (5 x 4) + (3 x 4), (5 x 4) + (4 x 4), 6 x 4, 7 x 4, 8 x 4, 9 x 4, 24, 28, 32, and 36.',
         solvedAnswer: '(5 x 4) + (1 x 4) = 6 x 4 = 24; + (2 x 4) = 7 x 4 = 28; + (3 x 4) = 8 x 4 = 32; + (4 x 4) = 9 x 4 = 36.',
         equations: ['6 x 4 = 24', '7 x 4 = 28', '8 x 4 = 32', '9 x 4 = 36'],
         quotient: 32,
@@ -1432,7 +1508,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 3,
-        sourcePrompt: 'Nolan says 10 x 4 is double 5 x 4. Explain his strategy.',
+        sourcePrompt: 'Nolan draws the array below to find the answer to the multiplication expression 10 x 4. He says, "10 x 4 is just double 5 x 4." Explain Nolan\'s strategy.',
         solvedAnswer: 'Nolan splits 10 groups of 4 into 5 groups of 4 and 5 groups of 4. Since 5 x 4 = 20, double it is 40.',
         equations: ['5 x 4 = 20', '5 x 4 = 20', '20 + 20 = 40', '10 x 4 = 40'],
         knownTotal: 40,

@@ -219,6 +219,24 @@
               </a>
             </div>
           </section>
+
+          <section class="problem-source-pages is-student-source" *ngIf="conceptStudentWorkbookPageImages().length" [attr.aria-label]="'Official Student Workbook pages for Module ' + module.number + ' Lesson ' + lesson.lessonNumber">
+            <div class="source-pages-heading">
+              <strong>Official Student Workbook pages</strong>
+              <span>Module {{ module.number }} Student Edition, Lesson {{ lesson.lessonNumber }} student-facing work.</span>
+            </div>
+            <div class="source-page-strip">
+              <a
+                *ngFor="let studentPageImage of conceptStudentWorkbookPageImages(); let pageIndex = index"
+                [href]="studentPageImage"
+                target="_blank"
+                rel="noreferrer">
+                <img
+                  [src]="studentPageImage"
+                  [alt]="'Official Student Workbook source for Module ' + module.number + ' Lesson ' + lesson.lessonNumber + ', page ' + (pageIndex + 1)" />
+              </a>
+            </div>
+          </section>
         </section>
 
         <section [id]="problemSectionId('problem-set')" class="problem-centered-panel problem-set-centered-list" [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' solved problem set'" role="tabpanel" *ngSwitchCase="'problem-set'">
@@ -279,20 +297,8 @@
 
             <div class="blank-problem-body" *ngIf="problemSetMode === 'blank'; else solvedProblemBody">
               <div class="blank-workspace-card">
-                <strong>{{ hasProblemSourcePages(problem) ? 'Official Teacher Edition Problem Set workspace' : 'Interactive workspace' }}</strong>
-                <section class="official-problem-source-pages" *ngIf="hasProblemSourcePages(problem)" aria-label="Official Teacher Edition Problem Set pages for this problem">
-                  <a
-                    *ngFor="let sourcePageImage of problemSourcePageImages(problem); let pageIndex = index"
-                    [href]="sourcePageImage"
-                    target="_blank"
-                    rel="noreferrer">
-                    <img
-                      loading="lazy"
-                      [src]="sourcePageImage"
-                      [alt]="problemSetSourcePageHeading() + ' for Module ' + module.number + ' Lesson ' + lesson.lessonNumber + ', Problem ' + problem.number + ', page ' + (pageIndex + 1)" />
-                  </a>
-                </section>
-                <div class="blank-source-model" *ngIf="!hasProblemSourcePages(problem)" [ngSwitch]="problem.blankVisualType">
+                <strong>Interactive workspace</strong>
+                <div class="blank-source-model" [ngSwitch]="problem.blankVisualType">
                   <div *ngSwitchCase="'object-bank'" class="blank-object-bank">
                     <div class="blank-token-row" [attr.aria-label]="problem.knownTotal + ' ' + problem.unitLabel">
                       <span *ngFor="let token of problemTokenSlots(problem)"></span>
@@ -637,10 +643,16 @@
 
                   <div *ngSwitchDefault class="blank-open-workspace">
                     <span>{{ problem.blankWorkspaceLabel || 'Use the official Teacher Edition page for drawing, labels, and written reasoning.' }}</span>
+                    <div class="blank-open-workspace-canvas" aria-hidden="true">
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="blank-response-card" *ngIf="!hasProblemSourcePages(problem)">
+              <div class="blank-response-card" *ngIf="problem.blankEquations?.length || problem.blankAnswerSentence">
                 <div class="equation-list" *ngIf="problem.blankEquations?.length">
                   <span *ngFor="let equation of problem.blankEquations">{{ equation }}</span>
                 </div>
@@ -650,19 +662,7 @@
 
             <ng-template #solvedProblemBody>
             <div class="problem-solution-grid">
-              <div class="problem-animation-card" [ngSwitch]="hasProblemSourcePages(problem) ? 'source-page' : problem.animationType">
-                <section class="official-problem-source-pages is-solved" *ngIf="hasProblemSourcePages(problem)" aria-label="Official Teacher Edition Answer Key pages for this solved problem">
-                  <a
-                    *ngFor="let sourcePageImage of problemSourcePageImages(problem); let pageIndex = index"
-                    [href]="sourcePageImage"
-                    target="_blank"
-                    rel="noreferrer">
-                    <img
-                      loading="lazy"
-                      [src]="sourcePageImage"
-                      [alt]="problemSetSourcePageHeading() + ' for Module ' + module.number + ' Lesson ' + lesson.lessonNumber + ', Problem ' + problem.number + ', page ' + (pageIndex + 1)" />
-                  </a>
-                </section>
+              <div class="problem-animation-card" [ngSwitch]="problem.animationType">
                 <div *ngSwitchCase="'grouping-by-size'" class="ps-grouping-model" aria-label="Grouping model">
                   <div class="ps-token-bank">
                     <span *ngFor="let token of problemTokenSlots(problem)"></span>
@@ -1037,13 +1037,13 @@
                   </div>
                 </div>
 
-                <div class="ps-quotient-label" *ngIf="!hasProblemSourcePages(problem)">
+                <div class="ps-quotient-label">
                   <strong>Answer meaning</strong>
                   <span>{{ problem.quotientMeaning }}</span>
                 </div>
               </div>
 
-              <div class="problem-explanation-card" *ngIf="!hasProblemSourcePages(problem); else sourcePageSolvedEvidence">
+              <div class="problem-explanation-card">
                 <div class="equation-list">
                   <span *ngFor="let equation of problem.equations">{{ equation }}</span>
                 </div>
@@ -1056,20 +1056,6 @@
                   </ul>
                 </div>
               </div>
-              <ng-template #sourcePageSolvedEvidence>
-                <div class="problem-explanation-card source-page-evidence">
-                  <strong class="solved-answer">Official Teacher Edition answer key shown above</strong>
-                  <p>Use the visible Teacher Edition Answer Key page for the exact solved work, diagram evidence, labels, and response values. Do not replace it with a parallel problem or a generated scaffold.</p>
-                  <div class="validation-list">
-                    <strong>Validate the work</strong>
-                    <ul>
-                      <li>The blank view matches the official Module 7 Teacher Edition Problem Set page.</li>
-                      <li>The solved view matches the official Module 7 Teacher Edition Answer Key page.</li>
-                      <li>No generic answer placeholder or invented diagram should appear for this source-backed item.</li>
-                    </ul>
-                  </div>
-                </div>
-              </ng-template>
             </div>
             </ng-template>
           </article>

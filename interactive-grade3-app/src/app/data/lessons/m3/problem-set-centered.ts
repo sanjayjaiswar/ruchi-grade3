@@ -764,6 +764,7 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
   const source = STUDENT_WORK_SOURCE[`m3-l${lessonNumber}`];
   const objective = LESSON_OBJECTIVES[lessonNumber];
   const summary = LESSON_SUMMARIES[lessonNumber];
+  const sourcePageImages = WORKBOOK_PAGE_IMAGES[lessonNumber].map((imageName) => `/source-pages/m3/${imageName}`);
   return {
     title: `Lesson ${lessonNumber}: ${objective}`,
     concept: summary,
@@ -771,7 +772,7 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
     contrast: 'Use the Teacher Edition objective and the official Problem Set pages as the source of truth before accepting a solved answer.',
     summary,
     sourceNote: `${source.teacherEditionSource} Module 3 Teacher Edition Problem Set and Answer Key, printed pages 279-316. Matching official workbook pages are collapsed as visual source references only.`,
-    sourcePageImages: WORKBOOK_PAGE_IMAGES[lessonNumber].map((imageName) => `/source-pages/m3/${imageName}`),
+    sourcePageImages,
     conceptSections: [
       {
         title: '1. Teacher Edition objective',
@@ -804,7 +805,15 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
         ]
       }
     ],
-    problems: source.problems.map((_, problemIndex) => makeProblem(lessonNumber, problemIndex))
+    problems: source.problems.map((_, problemIndex) => {
+      const centeredProblem = makeProblem(lessonNumber, problemIndex);
+      return {
+        ...centeredProblem,
+        sourcePageImages: centeredProblem.sourcePageImages ?? sourcePageImages,
+        blankSourcePageImages: centeredProblem.blankSourcePageImages ?? sourcePageImages,
+        solvedSourcePageImages: centeredProblem.solvedSourcePageImages ?? sourcePageImages
+      };
+    })
   };
 }
 

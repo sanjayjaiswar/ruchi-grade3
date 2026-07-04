@@ -6,6 +6,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { findLesson, findModule } from '../../data/curriculum.data';
 import { LESSON_SOURCE_NOTES } from '../../data/lesson-source-notes.generated';
 import { STUDENT_WORK_SOURCE, StudentWorkLessonSource, StudentWorkSourceProblem } from '../../data/student-work-source.generated';
+import { STUDENT_WORKBOOK_SOURCE_PAGES } from '../../data/student-workbook-source-pages.generated';
 import { LessonContent, LessonStep, ModuleMeta } from '../../data/curriculum.types';
 import { findLessonRuntime } from '../../data/lessons/lesson-registry';
 import {
@@ -427,6 +428,13 @@ export class LessonPage implements OnInit {
       ?? problemLesson.sourcePageImages
       ?? problemLesson.solvedSourcePageImages
       ?? [];
+  }
+
+  conceptStudentWorkbookPageImages(): string[] {
+    if (!this.module || !this.lesson) {
+      return [];
+    }
+    return STUDENT_WORKBOOK_SOURCE_PAGES[`${this.module.id}-l${this.lesson.lessonNumber}`] ?? [];
   }
 
   problemSourcePageImages(problem: ProblemSetCenteredProblem): string[] {

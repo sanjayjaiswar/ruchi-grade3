@@ -487,7 +487,19 @@ function lesson(seed: LessonSeed): ProblemSetCenteredLesson {
         checkpoints: ['Estimate when the lesson asks for it.', 'Compute exactly when the problem asks for actual measurement.', 'Use units in every final answer.']
       }
     ],
-    problems: seed.problems.map((item) => applyTeacherAnswerKey(seed.lessonNumber, applyTeacherPrompt(seed.lessonNumber, 'validationChecks' in item ? item : problem(item))))
+    problems: seed.problems.map((item) => {
+      const centeredProblem = applyTeacherAnswerKey(
+        seed.lessonNumber,
+        applyTeacherPrompt(seed.lessonNumber, 'validationChecks' in item ? item : problem(item))
+      );
+
+      return {
+        ...centeredProblem,
+        sourcePageImages: centeredProblem.sourcePageImages ?? sourcePageImages,
+        blankSourcePageImages: centeredProblem.blankSourcePageImages ?? sourcePageImages,
+        solvedSourcePageImages: centeredProblem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages]
+      };
+    })
   };
 }
 

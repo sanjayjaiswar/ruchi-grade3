@@ -11,6 +11,9 @@ import type {
 type ProblemSeed = {
   number: number;
   sourcePrompt: string;
+  sourcePageImages?: string[];
+  blankSourcePageImages?: string[];
+  solvedSourcePageImages?: string[];
   solvedAnswer: string;
   equations?: string[];
   blankEquations?: string[];
@@ -168,6 +171,9 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
   return {
     number: seed.number,
     sourcePrompt: seed.sourcePrompt,
+    sourcePageImages: seed.sourcePageImages,
+    blankSourcePageImages: seed.blankSourcePageImages,
+    solvedSourcePageImages: seed.solvedSourcePageImages,
     blankPrompts: [
       seed.patternBlockCover
         ? `Cover each Teacher Edition target with ${seed.patternBlockCover.unit} pattern blocks, then write the count for each target.`
@@ -248,7 +254,12 @@ function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
         checkpoints: ['Check side lengths before multiplying.', 'Check decomposed parts against the whole.', 'Check written units and answer meaning.']
       }
     ],
-    problems: seed.problems.map(makeProblem)
+    problems: seed.problems.map((problemSeed) => makeProblem({
+      ...problemSeed,
+      sourcePageImages: problemSeed.sourcePageImages ?? sourcePageImages,
+      blankSourcePageImages: problemSeed.blankSourcePageImages ?? sourcePageImages,
+      solvedSourcePageImages: problemSeed.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages]
+    }))
   };
 }
 
