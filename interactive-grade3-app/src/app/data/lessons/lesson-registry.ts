@@ -562,6 +562,27 @@ function m6BlankVisualType(display: ReturnType<typeof m6ProblemDisplay>): Proble
   return 'data-table-template';
 }
 
+function m6MaskBlankEquation(equation: string): string {
+  return equation
+    .replace(/×/g, 'x')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/\b\d[\d,]*(?:\.\d+)?\b/g, '____');
+}
+
+function m6BlankEquationTemplates(sourceEquations: string[], visualFamily: string): string[] {
+  const templates = sourceEquations
+    .map((equation) => {
+      const normalized = equation.replace(/×/g, 'x').replace(/\s+/g, ' ').trim();
+      return normalized.includes('____') ? normalized : m6MaskBlankEquation(normalized);
+    })
+    .filter(Boolean);
+
+  return templates.length
+    ? Array.from(new Set(templates))
+    : [`Use the official ${visualFamily} blanks and explain from the display evidence.`];
+}
+
 function m6LessonAnimation(lessonNumber: number): LessonAnimationModel | undefined {
   const animations: Record<number, LessonAnimationModel> = {
     1: {
@@ -759,6 +780,25 @@ function m7TeacherAnswerEvidence(answer: string | undefined, fallback: string[])
   return evidence.length ? evidence : [answer];
 }
 
+function m7MaskBlankEquation(equation: string): string {
+  return equation
+    .replace(/×/g, 'x')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/\$\s*\d[\d,]*(?:\.\d+)?/g, '$____')
+    .replace(/\b\d[\d,]*(?:\.\d+)?\b/g, '____');
+}
+
+function m7BlankEquationTemplates(sourceEquations: string[], visualFamily: string): string[] {
+  const templates = sourceEquations
+    .map((equation) => equation.includes('____') ? equation.replace(/×/g, 'x').replace(/\s+/g, ' ').trim() : m7MaskBlankEquation(equation))
+    .filter(Boolean);
+
+  return templates.length
+    ? Array.from(new Set(templates))
+    : [`Use the official ${visualFamily} blanks, labels, units, and response lines.`];
+}
+
 function m7LastAnswerNumber(answer: string | undefined, fallback: number): number {
   if (!answer) {
     return fallback;
@@ -808,7 +848,7 @@ function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
         number: problem.number,
         sourcePrompt: problem.prompt,
         blankPrompts: [`Use the authored ${visualFamily} below. Keep the quantities, labels, measurements, and written response aligned to the Teacher Edition source reference above.`],
-        blankEquations: equations,
+        blankEquations: m7BlankEquationTemplates(problem.equations, visualFamily),
         blankWorkspaceLabel: `Complete the Teacher Edition-aligned ${visualFamily}.`,
         blankVisualType: 'equation-workspace',
         solvedAnswer: isOpenConstruction
@@ -868,7 +908,7 @@ function m6ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
         number: problem.number,
         sourcePrompt,
         blankPrompts: ['Complete the authored scaffold using the exact quantities, labels, scale, and intervals from the Teacher Edition Problem Set prompt.'],
-        blankEquations: problem.equations,
+        blankEquations: m6BlankEquationTemplates(problem.equations, visualFamily),
         blankWorkspaceLabel: `Complete the ${visualFamily} scaffold.`,
         blankVisualType: m6BlankVisualType(dataDisplay),
         dataDisplay,

@@ -24,7 +24,7 @@ export class HomePage {
   };
 
   constructor(private readonly title: Title) {
-    this.title.setTitle('Ruchika Grade 3 Math | Home');
+    this.title.setTitle('Ruchika Grade 3 Maths | Home');
   }
 
   moduleThemeVars(moduleId: string) {

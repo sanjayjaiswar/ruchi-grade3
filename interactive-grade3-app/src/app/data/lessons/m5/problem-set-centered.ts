@@ -85,6 +85,8 @@ const DENOMINATOR_LABELS: Record<number, string> = {
   12: 'twelfths'
 };
 
+const m5TeacherPageBase = '/source-pages/m5-teacher';
+
 const M5_OVERRIDES: Record<number, Record<number, {
   fractionModels?: ProblemSetFractionModel[];
   numberLineModels?: ProblemSetNumberLineModel[];
@@ -157,6 +159,43 @@ const M5_OVERRIDES: Record<number, Record<number, {
   }
 };
 
+function pageRange(start: number, end: number): number[] {
+  return Array.from({ length: Math.max(0, end - start + 1) }, (_, index) => start + index);
+}
+
+function pageImages(pages: number[]): string[] {
+  return pages.map((page) => `${m5TeacherPageBase}/page-${page}.png`);
+}
+
+function teacherEditionLessonPages(source: string): string[] {
+  const match = source.match(/lesson pages?\s+(\d+)(?:-(\d+))?/i);
+  if (!match) {
+    return [];
+  }
+  const start = Number(match[1]);
+  const end = Number(match[2] ?? match[1]);
+  return pageImages(pageRange(start, end));
+}
+
+function maskFractionText(text: string): string {
+  return text
+    .replace(/\b\d+\s*\/\s*\d+\b/g, '____')
+    .replace(/\b\d+\s+(halves|half|thirds|fourths|quarters|fifths|sixths|sevenths|eighths|ninths|tenths|elevenths|twelfths)\b/gi, '____ $1')
+    .replace(/\b\d+\s+out of\s+\d+\b/gi, '____ out of ____')
+    .replace(/\b\d+\s+equal parts?\b/gi, '____ equal parts')
+    .replace(/\b\d+\s+shaded parts?\b/gi, '____ shaded parts')
+    .replace(/\b\d+\s+spaces?\b/gi, '____ spaces');
+}
+
+function blankEquationTemplates(equations: string[]): string[] | undefined {
+  const templates = equations
+    .map((equation) => maskFractionText(equation).trim())
+    .filter(Boolean)
+    .map((equation) => equation.includes('____') ? equation : `${equation}: ____`);
+
+  return templates.length ? templates : undefined;
+}
+
 const LESSON1_BEAKER_MODEL: ProblemSetConcreteFractionModel = {
   kind: 'beaker-set',
   title: 'Problem 1: beakers filled to the named unit fractions',
@@ -227,6 +266,7 @@ const LESSON30_PAPER_PARTITION_MODEL: ProblemSetPaperPartitionModel = {
 };
 
 function makeLesson1(): ProblemSetCenteredLesson {
+  const sourcePageImages = pageImages(pageRange(12, 21));
   const problems: ProblemSetCenteredProblem[] = [
     {
       number: 1,
@@ -236,7 +276,7 @@ function makeLesson1(): ProblemSetCenteredLesson {
         'The first beaker is already shaded to 1 half, as shown in the Teacher Edition Problem Set.',
         'Estimate and shade the second beaker to 1 fourth and the third beaker to 1 third.'
       ],
-      blankEquations: ['1/2', '1/4', '1/3'],
+      blankEquations: ['____', '____', '____'],
       blankAnswerSentence: 'Shade each beaker to show the named fraction of the full amount.',
       blankWorkspaceLabel: 'Use the fill line near the top as the whole amount.',
       blankVisualType: 'fraction-concrete-template',
@@ -266,7 +306,11 @@ function makeLesson1(): ProblemSetCenteredLesson {
         'Keep the whole string cheese the same in each row.',
         'Use the number of equal pieces in the row as the denominator.'
       ],
-      blankEquations: ['1 shaded part out of 3 equal parts', '1 shaded part out of 6 equal parts', '1 shaded part out of 4 equal parts'],
+      blankEquations: [
+        '____ shaded part out of ____ equal parts',
+        '____ shaded part out of ____ equal parts',
+        '____ shaded part out of ____ equal parts'
+      ],
       blankAnswerSentence: 'The shaded parts are ____, ____, and ____ of the whole string cheese.',
       blankWorkspaceLabel: 'Name the fraction represented by the shaded part in each official rectangle.',
       blankVisualType: 'fraction-concrete-template',
@@ -387,6 +431,9 @@ function makeLesson1(): ProblemSetCenteredLesson {
     contrast: 'The whole must be fixed before a fraction is named: the whole strip, the full beaker amount at the fill line, the whole string cheese, the whole sheet of paper, or the 12-inch wood strip.',
     summary: 'A unit fraction is one equal part of a named whole. Lesson 1 uses measurement, shading, and estimated partitions to connect concrete models to fraction names.',
     sourceNote: 'Teacher Edition Lesson 1 Concept Development and Problem Set, printed pages 12-18. Problem Set pages 16-17 supply the five official problem prompts and diagrams.',
+    sourcePageImages,
+    blankSourcePageImages: sourcePageImages,
+    solvedSourcePageImages: sourcePageImages,
     conceptSections: [
       {
         title: '1. Partition 12-inch strips',
@@ -434,6 +481,7 @@ function makeLesson1(): ProblemSetCenteredLesson {
 }
 
 function makeLesson30(): ProblemSetCenteredLesson {
+  const sourcePageImages = pageImages(pageRange(351, 355));
   const problem: ProblemSetCenteredProblem = {
     number: 1,
     sourcePrompt: 'There is no Problem Set sheet for this lesson. Use the same process to precisely mark off red strips into halves, fourths, fifths, sevenths, ninths, and tenths.',
@@ -444,8 +492,8 @@ function makeLesson30(): ProblemSetCenteredLesson {
       'Then use the same process for the cooperative-group challenge units.'
     ],
     blankEquations: [
-      '0, 1/3, 2/3, 3/3 = 1',
-      '1 third = 5 equal paper spaces in the Teacher Edition demonstration'
+      '0, ____, ____, 1',
+      '1 third = ____ equal paper spaces in the Teacher Edition demonstration'
     ],
     blankAnswerSentence: 'The strip is partitioned into ____ equal parts because the guide marks are equally spaced.',
     blankWorkspaceLabel: 'Teacher Edition setup: lined paper, base number line, extended guide lines, and a red strip.',
@@ -481,6 +529,9 @@ function makeLesson30(): ProblemSetCenteredLesson {
     contrast: 'The equal parts come from the lined-paper number line first; the red strip is marked only after it is angled from 0 to 1.',
     summary: 'A precise number line can be used as a transfer tool. If the guide marks on the paper are equal, the marks transferred to the angled strip partition that strip into equal fractional parts.',
     sourceNote: 'Teacher Edition pages 353-354 show Steps 1-5 with lined paper, vertical extensions, the red strip, and the no-sheet Problem Set challenge. Student Workbook page 120 is a written homework reflection, not a Problem Set sheet.',
+    sourcePageImages,
+    blankSourcePageImages: sourcePageImages,
+    solvedSourcePageImages: sourcePageImages,
     conceptSections: [
       {
         title: '1. Build the base number line',
@@ -704,7 +755,7 @@ function makeProblem(lessonNumber: number, sourceProblem: M5WorkbookProblem & { 
       'Complete the official workbook prompt, drawing, labels, and blanks for this item using the model below.',
       'Name the whole before naming or comparing the fraction.'
     ],
-    blankEquations: equations,
+    blankEquations: blankEquationTemplates(equations),
     blankAnswerSentence: 'Answer in a complete sentence with the fraction unit and whole named.',
     blankWorkspaceLabel: `Use the workbook scaffold to build the ${model}.`,
     blankVisualType,
@@ -749,6 +800,7 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
       equations: []
     }
   ]).map((problem) => makeProblem(lessonNumber, problem));
+  const sourcePageImages = teacherEditionLessonPages(source?.teacherEditionSource ?? '');
   return {
     title: `Lesson ${lessonNumber} concept: ${objective}`,
     concept: `Build the official Problem Set with interactive fraction models. The workbook prompt supplies the task; the model below preserves the lesson focus on equal parts, named wholes, fraction strips, and number lines.`,
@@ -756,6 +808,9 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
     contrast: 'Before solving, identify the whole and the equal parts. When comparing or finding equivalence, keep the whole and unit interval consistent.',
     summary: 'A fraction only makes sense after the whole is named and partitioned into equal parts. Use the official Problem Set model to justify the fraction, comparison, equivalence, or number-line location.',
     sourceNote: source?.studentWorkbookSource ?? `Module 5 student workbook, Lesson ${lessonNumber}.`,
+    sourcePageImages,
+    blankSourcePageImages: sourcePageImages,
+    solvedSourcePageImages: sourcePageImages,
     conceptSections: [
       {
         title: '1. Teacher Edition concept',

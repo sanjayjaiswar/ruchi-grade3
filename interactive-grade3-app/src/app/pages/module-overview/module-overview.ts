@@ -1,12 +1,11 @@
 import { NgFor, NgIf, NgStyle, NgSwitch, NgSwitchCase } from '@angular/common';
-import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import * as echarts from 'echarts';
 import type { ECharts, EChartsOption } from 'echarts';
 import { findModule, lessonTitle } from '../../data/curriculum.data';
 import { ModuleMeta } from '../../data/curriculum.types';
-import { preferredReadAloudVoice, READ_ALOUD_VOICE_STORAGE_KEY } from '../../shared/read-aloud-preferences';
 
 type ModuleConcept = {
   term: string;
@@ -53,7 +52,6 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('moduleOneConceptChart') private moduleOneConceptChart?: ElementRef<HTMLDivElement>;
   module?: ModuleMeta;
   activeModuleTab = 'concepts';
-  speakingConceptTitle?: string;
   readonly moduleOneConceptQuestions = [
     'How many groups?',
     'How many in each group?',
@@ -328,8 +326,7 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
 
   constructor(
     private readonly route: ActivatedRoute,
-    private readonly title: Title,
-    private readonly changeDetector: ChangeDetectorRef
+    private readonly title: Title
   ) {}
 
   ngOnInit(): void {
@@ -337,9 +334,9 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
       const moduleId = params.get('moduleId') ?? 'm1';
       this.module = findModule(moduleId);
       if (this.module) {
-        this.title.setTitle(`Module ${this.module.number}: ${this.module.title} | Ruchika Grade 3 Math`);
+        this.title.setTitle(`Module ${this.module.number}: ${this.module.title} | Ruchika Grade 3 Maths`);
       } else {
-        this.title.setTitle('Module Not Found | Ruchika Grade 3 Math');
+        this.title.setTitle('Module Not Found | Ruchika Grade 3 Maths');
       }
       this.activeModuleTab = 'concepts';
       this.scheduleConceptChartRender();
@@ -354,7 +351,6 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.stopReadingConcept();
     if (typeof window !== 'undefined') {
       window.removeEventListener('resize', this.conceptChartResizeHandler);
     }
@@ -408,44 +404,11 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
 
   selectModuleTab(tabId: string): void {
     this.activeModuleTab = tabId;
-    this.stopReadingConcept();
     this.scheduleConceptChartRender();
   }
 
   teachTopicTabId(topicId: string): string {
     return `teach-${topicId}`;
-  }
-
-  readConcept(cluster: ModuleConceptCluster): void {
-    if (!this.canReadConcepts()) {
-      return;
-    }
-
-    if (this.speakingConceptTitle === cluster.title) {
-      this.stopReadingConcept();
-      return;
-    }
-
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(this.conceptReadAloudText(cluster));
-    const voice = this.selectedReadAloudVoice();
-    if (voice) {
-      utterance.voice = voice;
-    }
-    utterance.lang = 'en-US';
-    utterance.rate = 0.9;
-    utterance.pitch = 1.05;
-    utterance.onend = () => this.clearSpeakingConcept(cluster.title);
-    utterance.onerror = () => this.clearSpeakingConcept(cluster.title);
-    this.speakingConceptTitle = cluster.title;
-    window.speechSynthesis.speak(utterance);
-  }
-
-  stopReadingConcept(): void {
-    if (this.canReadConcepts()) {
-      window.speechSynthesis.cancel();
-    }
-    this.speakingConceptTitle = undefined;
   }
 
   moduleThemeVars(moduleId: string) {
@@ -497,43 +460,6 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
 
   private scheduleConceptChartRender(): void {
     setTimeout(() => this.renderModuleOneConceptChart());
-  }
-
-  private canReadConcepts(): boolean {
-    return (
-      typeof window !== 'undefined' &&
-      'speechSynthesis' in window &&
-      typeof SpeechSynthesisUtterance !== 'undefined'
-    );
-  }
-
-  private clearSpeakingConcept(title: string): void {
-    if (this.speakingConceptTitle === title) {
-      this.speakingConceptTitle = undefined;
-      this.changeDetector.detectChanges();
-    }
-  }
-
-  private conceptReadAloudText(cluster: ModuleConceptCluster): string {
-    return this.cleanSpeechText(`${cluster.definition} ${cluster.parentMeaning}`);
-  }
-
-  private selectedReadAloudVoice(): SpeechSynthesisVoice | undefined {
-    const voices = window.speechSynthesis.getVoices();
-    return preferredReadAloudVoice(voices, this.storedReadAloudVoiceName());
-  }
-
-  private storedReadAloudVoiceName(): string {
-    return typeof window !== 'undefined' ? window.localStorage.getItem(READ_ALOUD_VOICE_STORAGE_KEY) ?? '' : '';
-  }
-
-  private cleanSpeechText(text: string): string {
-    return text
-      .replace(/×/g, ' times ')
-      .replace(/÷/g, ' divided by ')
-      .replace(/\?/g, ' blank ')
-      .replace(/\s+/g, ' ')
-      .trim();
   }
 
   private renderModuleOneConceptChart(): void {

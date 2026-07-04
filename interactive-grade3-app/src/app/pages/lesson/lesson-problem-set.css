@@ -1664,6 +1664,19 @@ summary.source-pages-heading {
   border: 1px solid color-mix(in srgb, var(--module-accent) 28%, var(--color-border) 72%);
   border-radius: 8px;
   background: #ffffff;
+  animation: psGroupBuild 520ms ease-out both;
+}
+
+.m4-area-models article:nth-of-type(2),
+.m4-pattern-cover article:nth-of-type(2),
+.m4-floor-plan span:nth-child(2n) {
+  animation-delay: 80ms;
+}
+
+.m4-area-models article:nth-of-type(3),
+.m4-pattern-cover article:nth-of-type(3),
+.m4-floor-plan span:nth-child(3n) {
+  animation-delay: 140ms;
 }
 
 .m4-area-models b,
@@ -1686,6 +1699,7 @@ summary.source-pages-heading {
   aspect-ratio: 1;
   border: 1px solid color-mix(in srgb, var(--module-accent) 42%, #ffffff 58%);
   background: color-mix(in srgb, var(--module-accent-soft) 72%, #ffffff 28%);
+  animation: psTokenPop 420ms ease-out both;
 }
 
 .m4-area-models.is-solved article span,
@@ -1715,6 +1729,7 @@ summary.source-pages-heading {
   border: 1px solid color-mix(in srgb, var(--google-yellow) 34%, var(--color-border) 66%);
   border-radius: 8px;
   background: #ffffff;
+  animation: psGroupBuild 520ms ease-out both;
 }
 
 .m4-target-shape {
@@ -1749,6 +1764,7 @@ summary.source-pages-heading {
   border: 1px solid #3c4043;
   background: var(--google-blue-soft);
   transform: skewX(16deg);
+  animation: m4PatternBlockDrop 520ms ease-out both;
 }
 
 .m4-pattern-block.is-triangle {
@@ -1789,6 +1805,7 @@ summary.source-pages-heading {
   border: 1px solid color-mix(in srgb, var(--module-accent) 40%, var(--color-border) 60%);
   background: color-mix(in srgb, var(--module-accent-soft) 58%, #ffffff 42%);
   text-align: center;
+  animation: psGroupBuild 520ms ease-out both;
 }
 
 .m4-floor-plan span:nth-child(1),
@@ -2041,6 +2058,15 @@ summary.source-pages-heading {
   color: var(--color-text);
   font-size: 15px;
   font-weight: 900;
+  animation: psGroupBuild 420ms ease-out both;
+}
+
+.blank-equation-source span:nth-child(2n) {
+  animation-delay: 70ms;
+}
+
+.blank-equation-source span:nth-child(3n) {
+  animation-delay: 120ms;
 }
 
 .problem-solution-grid {
@@ -2361,6 +2387,22 @@ summary.source-pages-heading {
   animation-delay: 330ms;
 }
 
+.ps-equation-flow span:nth-child(5) {
+  animation-delay: 440ms;
+}
+
+.ps-equation-flow span:nth-child(6) {
+  animation-delay: 550ms;
+}
+
+.ps-equation-flow span:nth-child(7) {
+  animation-delay: 660ms;
+}
+
+.ps-equation-flow span:nth-child(8) {
+  animation-delay: 770ms;
+}
+
 .ps-measurement-table tbody tr {
   animation: psGroupBuild 520ms ease-out both;
 }
@@ -2562,6 +2604,15 @@ summary.source-pages-heading {
 .is-blank-mode .equation-list span {
   background: var(--blank-soft);
   color: var(--blank-strong);
+  animation: psGroupBuild 420ms ease-out both;
+}
+
+.is-blank-mode .equation-list span:nth-child(2n) {
+  animation-delay: 70ms;
+}
+
+.is-blank-mode .equation-list span:nth-child(3n) {
+  animation-delay: 120ms;
 }
 
 .solved-answer {
@@ -2783,6 +2834,17 @@ summary.source-pages-heading {
   }
 }
 
+@keyframes m4PatternBlockDrop {
+  from {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.8) skewX(16deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1) skewX(16deg);
+  }
+}
+
 @keyframes psTapeReveal {
   from {
     opacity: 0;
@@ -2837,6 +2899,25 @@ summary.source-pages-heading {
   }
 }
 
+@media (max-width: 620px) {
+  .problem-centered-concept {
+    max-width: 100%;
+    padding: 18px;
+  }
+
+  .problem-centered-concept h2 {
+    max-width: 100%;
+    font-size: 22px;
+    line-height: 1.18;
+    overflow-wrap: anywhere;
+  }
+
+  .problem-centered-concept p {
+    font-size: 16px;
+    overflow-wrap: anywhere;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .ps-token-bank span,
   .ps-group,
@@ -2851,7 +2932,7 @@ summary.source-pages-heading {
   .ps-clock-model > div,
   .ps-clock-model > div::before,
   .ps-clock-model > div::after,
-  .ps-two-step-model .equation-list span,
+  .ps-two-step-model .ps-equation-flow span,
   .ps-measurement-table tbody tr {
     animation-duration: 1ms;
     animation-iteration-count: 1;

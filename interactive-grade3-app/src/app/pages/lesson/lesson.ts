@@ -389,9 +389,9 @@ export class LessonPage implements OnInit {
       this.resetLessonState();
 
       if (this.module && this.lesson) {
-        this.title.setTitle(`M${this.module.number} L${this.lesson.lessonNumber}: ${this.lesson.title} | Ruchika Grade 3 Math`);
+        this.title.setTitle(`M${this.module.number} L${this.lesson.lessonNumber}: ${this.lesson.title} | Ruchika Grade 3 Maths`);
       } else {
-        this.title.setTitle('Lesson Not Found | Ruchika Grade 3 Math');
+        this.title.setTitle('Lesson Not Found | Ruchika Grade 3 Maths');
       }
     });
   }
@@ -568,6 +568,11 @@ export class LessonPage implements OnInit {
 
   problemTapeParts(problem: ProblemSetCenteredProblem): number[] {
     return this.countSlots(problem.knownGroupCount ?? 2, 8);
+  }
+
+  problemTapePartLabel(problem: ProblemSetCenteredProblem): string {
+    const partSize = problem.knownGroupSize ?? problem.quotient;
+    return `${partSize} ${problem.unitLabel}`;
   }
 
   problemArrayRows(problem: ProblemSetCenteredProblem): number {
@@ -1834,21 +1839,6 @@ export class LessonPage implements OnInit {
     } else {
       this.playWrongBuzz();
     }
-
-    if (
-      typeof window === 'undefined' ||
-      !('speechSynthesis' in window) ||
-      typeof SpeechSynthesisUtterance === 'undefined'
-    ) {
-      return;
-    }
-
-    window.speechSynthesis.cancel();
-
-    const utterance = new SpeechSynthesisUtterance(isCorrect ? "Yes! That's right!" : 'Oops, wrong. Try again.');
-    utterance.rate = isCorrect ? 1.12 : 0.9;
-    utterance.pitch = isCorrect ? 1.35 : 0.75;
-    window.speechSynthesis.speak(utterance);
   }
 
   private playRightChime(): void {

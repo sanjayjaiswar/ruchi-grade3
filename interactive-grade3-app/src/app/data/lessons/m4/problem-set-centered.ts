@@ -13,6 +13,7 @@ type ProblemSeed = {
   sourcePrompt: string;
   solvedAnswer: string;
   equations?: string[];
+  blankEquations?: string[];
   knownTotal?: number;
   knownGroupSize?: number;
   knownGroupCount?: number;
@@ -40,6 +41,7 @@ type LessonSeed = {
 
 const te = 'EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf';
 const sw = 'EurekaMath-Sources/Module_4/g3_m4_student_wkbook_v1_3_0.pdf';
+const m4TeacherPageBase = '/source-pages/m4-teacher';
 
 function sourceFactorPair(equations?: string[]): { rows: number; columns: number } | undefined {
   for (const equation of equations ?? []) {
@@ -70,6 +72,70 @@ function sourceAreaModels(equations?: string[], unitLabel = 'square units'): Pro
     }
     return [{ label: `Rectangle ${index + 1}`, rows, columns, total, unitLabel }];
   });
+}
+
+function maskNumbers(text: string): string {
+  return text.replace(/\d+(?:,\d{3})*(?:\.\d+)?/g, '____');
+}
+
+function blankEquationTemplate(equation: string): string | undefined {
+  const trimmed = equation.trim();
+  if (!trimmed) {
+    return undefined;
+  }
+
+  if (!trimmed.includes('=')) {
+    if (/divided by|[x×]/i.test(trimmed)) {
+      return `${trimmed} = ____`;
+    }
+    return undefined;
+  }
+
+  const [leftRaw, ...rightParts] = trimmed.split('=');
+  const left = leftRaw.trim();
+  const right = rightParts.join('=').trim();
+  const leftHasAdditiveWork = /[+-]/.test(left);
+  const leftIsAnswerLabel = /area|shape|figure|side lengths|factor pair product|bedroom|kitchen|hallway|bathroom|dining room|living room|missing tiles|shaded/i.test(left);
+  const leftTemplate = leftHasAdditiveWork || leftIsAnswerLabel ? maskNumbers(left) : left;
+  const rightTemplate = maskNumbers(right);
+
+  return `${leftTemplate} = ${rightTemplate === right ? '____' : rightTemplate}`;
+}
+
+function blankEquationTemplates(seed: ProblemSeed): string[] | undefined {
+  const templates = (seed.blankEquations ?? seed.equations ?? [])
+    .map(blankEquationTemplate)
+    .filter((template): template is string => Boolean(template));
+
+  return templates.length ? templates : undefined;
+}
+
+function pageRange(start: number, end = start): number[] {
+  return Array.from({ length: Math.max(0, end - start + 1) }, (_, index) => start + index);
+}
+
+function pageImages(pages: number[]): string[] {
+  return pages.map((page) => `${m4TeacherPageBase}/page-${String(page).padStart(3, '0')}.png`);
+}
+
+function teacherEditionLessonPages(source: string): string[] {
+  const match = source.match(/pages?\s+(\d+)(?:-(\d+))?/i);
+  if (!match) {
+    return [];
+  }
+  const start = Number(match[1]);
+  const end = Number(match[2] ?? match[1]);
+  return pageImages(pageRange(start, end));
+}
+
+function teacherEditionAnswerKeyPages(source: string): string[] {
+  const match = source.match(/Answer Key,\s*printed pages?\s+(\d+)(?:-(\d+))?/i);
+  if (!match) {
+    return [];
+  }
+  const start = Number(match[1]);
+  const end = Number(match[2] ?? match[1]);
+  return pageImages(pageRange(start, end));
 }
 
 function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
@@ -113,7 +179,7 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
         ? `Build the source rectangle as ${factorPair.rows} rows of ${factorPair.columns} unit squares, then complete the workbook labels and area blanks.`
         : 'Use the official workbook prompt to complete the drawing, labels, equations, and response blanks.'
     ],
-    blankEquations: seed.equations ?? [seed.solvedAnswer],
+    blankEquations: blankEquationTemplates(seed),
     blankWorkspaceLabel: seed.patternBlockCover
       ? 'Target outlines and block counts come from the Teacher Edition Problem Set and answer key.'
       : seed.roomAreas
@@ -149,6 +215,9 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
 }
 
 function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
+  const sourcePageImages = teacherEditionLessonPages(seed.teacherEditionBasis);
+  const answerKeyImages = teacherEditionAnswerKeyPages(seed.sourceNote);
+
   return {
     title: seed.title,
     concept: seed.concept,
@@ -156,6 +225,9 @@ function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
     contrast: seed.contrast,
     summary: seed.summary,
     sourceNote: seed.sourceNote,
+    sourcePageImages,
+    blankSourcePageImages: sourcePageImages,
+    solvedSourcePageImages: [...sourcePageImages, ...answerKeyImages],
     conceptSections: [
       {
         title: '1. Teacher Edition concept',

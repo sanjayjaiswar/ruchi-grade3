@@ -376,6 +376,20 @@ function teacherAnswerKeyPageImages(lessonNumber: number): string[] {
   return (TEACHER_ANSWER_KEY_PAGES[lessonNumber] ?? []).map((page) => `/source-pages/m2-answer-key/page-${String(page).padStart(3, '0')}.png`);
 }
 
+function maskMeasurementEquation(text: string): string {
+  return text
+    .replace(/\b\d{1,2}:\d{2}\s*(?:a\.m\.|p\.m\.)?/gi, '____')
+    .replace(/\$\s*\d[\d,]*(?:\.\d+)?/g, '$____')
+    .replace(/\b\d[\d,]*(?:\.\d+)?\b/g, '____');
+}
+
+function blankEquationTemplates(equations: string[] | undefined): string[] {
+  return (equations ?? [])
+    .map((equation) => maskMeasurementEquation(equation).trim())
+    .filter(Boolean)
+    .map((equation) => equation.includes('____') ? equation : `${equation}: ____`);
+}
+
 function applyTeacherAnswerKey(lessonNumber: number, item: ProblemSetCenteredProblem): ProblemSetCenteredProblem {
   const officialAnswer = TEACHER_ANSWER_KEY[lessonNumber]?.[item.number];
   if (!officialAnswer) {
@@ -412,7 +426,7 @@ function problem(seed: ProblemSeed): ProblemSetCenteredProblem {
     number: seed.number,
     sourcePrompt: seed.sourcePrompt,
     blankPrompts: ['Complete the official Teacher Edition Problem Set scaffold, labels, units, and answer blanks.'],
-    blankEquations: seed.equations ?? [],
+    blankEquations: blankEquationTemplates(seed.equations),
     blankWorkspaceLabel: seed.blankWorkspaceLabel ?? 'Use the Teacher Edition Problem Set visual model and keep the measurement units attached.',
     blankVisualType: seed.blankVisualType ?? (seed.dataDisplay ? 'data-table-template' : seed.numberLineModels ? 'number-line-template' : 'equation-workspace'),
     dataDisplay: seed.dataDisplay,

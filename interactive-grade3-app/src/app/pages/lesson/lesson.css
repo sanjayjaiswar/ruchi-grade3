@@ -2565,6 +2565,7 @@
 
 @media (max-width: 1020px) {
   .lesson-header,
+  .lesson-header.has-problem-centered,
   .lesson-layout,
   .activity-grid,
   .lesson-animation-panel,
@@ -2586,6 +2587,32 @@
 @media (max-width: 620px) {
   .page-frame {
     padding: 18px 10px 36px;
+  }
+
+  .lesson-header-main {
+    padding: 18px;
+  }
+
+  .lesson-header-main,
+  .lesson-meta,
+  .lesson-meta span {
+    max-width: 100%;
+  }
+
+  .lesson-meta {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .lesson-meta span {
+    width: 100%;
+    justify-content: flex-start;
+    border-radius: 8px;
+  }
+
+  .lesson-header h1 {
+    font-size: 22px;
+    line-height: 1.18;
   }
 
   .step-rail {

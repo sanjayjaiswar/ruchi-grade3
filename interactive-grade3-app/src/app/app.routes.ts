@@ -4,7 +4,7 @@ import { LessonPage } from './pages/lesson/lesson';
 import { ModuleOverviewPage } from './pages/module-overview/module-overview';
 
 const grade3Routes: Routes = [
-  { path: '', component: HomePage, title: 'Ruchika Grade 3 Math' },
+  { path: '', component: HomePage, title: 'Ruchika Grade 3 Maths' },
   { path: 'modules/:moduleId/lessons/:lessonNumber', component: LessonPage },
   { path: 'modules/:moduleId', component: ModuleOverviewPage }
 ];

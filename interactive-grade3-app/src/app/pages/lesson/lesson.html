@@ -690,7 +690,7 @@
                   <div class="ps-tape-parts" [style.gridTemplateColumns]="'repeat(' + problemTapeParts(problem).length + ', minmax(80px, 1fr))'">
                     <span *ngFor="let part of problemTapeParts(problem); let partIndex = index">
                       <b>{{ problemShareLabel(problem, partIndex) }}</b>
-                      {{ problem.quotient }} {{ problem.unitLabel }}
+                      {{ problemTapePartLabel(problem) }}
                     </span>
                   </div>
                 </div>

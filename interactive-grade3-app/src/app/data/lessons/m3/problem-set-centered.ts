@@ -222,6 +222,35 @@ function normalizeEquation(equation: string): string {
   return equation.replace(/×/g, 'x').replace(/\s+/g, ' ').trim();
 }
 
+function maskBlankEquation(equation: string): string {
+  return normalizeEquation(equation)
+    .replace(/\$\s*\d[\d,]*(?:\.\d+)?/g, '$____')
+    .replace(/\b\d[\d,]*(?:\.\d+)?\b/g, '____');
+}
+
+function blankEquationTemplates(equations: string[]): string[] {
+  const templates = equations
+    .map((equation) => {
+      const normalized = normalizeEquation(equation);
+      return normalized.includes('____') ? normalized : maskBlankEquation(normalized);
+    })
+    .filter((equation) => equation.length > 0)
+    .map((equation) => equation.includes('____') ? equation : `${equation}: ____`);
+
+  return templates.length > 0 ? Array.from(new Set(templates)) : ['Use the workbook blanks for this problem.'];
+}
+
+function maskPromptMathFragment(fragment: string): string {
+  return fragment.replace(/\b\d[\d,]*(?:\.\d+)?\b/g, '____');
+}
+
+function maskExtractedPromptEquations(prompt: string): string {
+  return prompt
+    .replace(/\b(?:\d+|n|[a-z])\s*(?:×|x|÷|divided by|\+|[-–])\s*(?:\d+|n|[a-z])(?:\s*=\s*(?:\d+|n|[a-z]))?/gi, maskPromptMathFragment)
+    .replace(/\b(?:n|[a-z])\s*=\s*\d+\b/gi, maskPromptMathFragment)
+    .replace(/\b\d+\s*=\s*(?:n|[a-z]|\d+)\b/gi, maskPromptMathFragment);
+}
+
 const PROBLEM_METADATA: Record<string, Partial<ProblemSetCenteredProblem>> = {
   '1-2': {
     blankWorkspaceLabel: 'Use the 4-by-6 array from the workbook to write both commutative facts.',
@@ -545,9 +574,9 @@ function cleanSourcePrompt(prompt: string, lessonNumber: number, problemNumber: 
   const normalizedPrompt = prompt.replace(/\s+/g, ' ').trim();
   const extractedTail = EXTRACTED_PROMPT_TAILS[`${lessonNumber}-${problemNumber}`];
   if (extractedTail && normalizedPrompt.endsWith(extractedTail)) {
-    return normalizedPrompt.slice(0, -extractedTail.length).trim();
+    return maskExtractedPromptEquations(normalizedPrompt.slice(0, -extractedTail.length).trim());
   }
-  return normalizedPrompt;
+  return maskExtractedPromptEquations(normalizedPrompt);
 }
 
 function equationsFromAnswer(answer: string, sourceEquations: string[]): string[] {
@@ -573,9 +602,7 @@ function makeProblem(lessonNumber: number, problemIndex: number): ProblemSetCent
     number: sourceProblem.number,
     sourcePrompt: cleanSourcePrompt(sourceProblem.prompt, lessonNumber, sourceProblem.number),
     blankPrompts: ['Complete the official Problem Set prompt, labels, equation blanks, table entries, or answer sentence.'],
-    blankEquations: sourceProblem.equations.length > 0
-      ? sourceProblem.equations.map(normalizeEquation)
-      : ['Use the workbook blanks for this problem.'],
+    blankEquations: blankEquationTemplates(sourceProblem.equations),
     blankWorkspaceLabel: 'Use the official source reference for any printed table, array, picture, or workspace not redrawn here.',
     blankVisualType: visualType(sourceProblem.prompt),
     solvedAnswer,

@@ -1070,9 +1070,10 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       {
         number: 1,
-        sourcePrompt: '7 x 3 = (5 x 3) + (2 x 3) = _________.',
+        sourcePrompt: '7 x 3 = (5 x 3) + (2 x 3) = _________. Use the split array to complete the partial-product equations: (5 x 3) = 15, (2 x 3) = __________, (5 x 3) + (2 x 3) = 15 + __________, and 15 + ______ = _____________.',
         solvedAnswer: '7 x 3 = 21.',
         equations: ['5 x 3 = 15', '2 x 3 = 6', '15 + 6 = 21', '7 x 3 = 21'],
+        blankEquations: ['7 x 3 = (5 x 3) + (2 x 3) = ____', '(5 x 3) = 15', '(2 x 3) = ____', '(5 x 3) + (2 x 3) = 15 + ____', '15 + ____ = ____'],
         knownTotal: 21,
         knownGroupCount: 7,
         knownGroupSize: 3,
@@ -1084,9 +1085,10 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 2,
-        sourcePrompt: '8 x 3 = (4 x 3) + (4 x 3) = _________.',
+        sourcePrompt: '8 x 3 = (4 x 3) + (4 x 3) = ______. Use the two equal split arrays to complete: (______ x 3) = _______, (______ x 3) = ________, (4 x 3) + (4 x 3) = _________ + _________, and _________ x 3 = __________.',
         solvedAnswer: '8 x 3 = 24.',
         equations: ['4 x 3 = 12', '4 x 3 = 12', '12 + 12 = 24', '8 x 3 = 24'],
+        blankEquations: ['8 x 3 = (4 x 3) + (4 x 3) = ____', '(____ x 3) = ____', '(____ x 3) = ____', '(4 x 3) + (4 x 3) = ____ + ____', '____ x 3 = ____'],
         knownTotal: 24,
         knownGroupCount: 8,
         knownGroupSize: 3,
@@ -1098,9 +1100,11 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 3,
-        sourcePrompt: 'Ruby puts 3 photos in each row on a page. Use top and bottom arrays to explain 5 x 3 = 6 + 9 = 15.',
-        solvedAnswer: 'The top part is 2 x 3 = 6, the bottom part is 3 x 3 = 9, and the total is 15 photos.',
+        sourcePrompt: "Ruby makes a photo album. One page is shown below. Ruby puts 3 photos in each row. a. Fill in the equations on the right. Use them to help you draw arrays that show the photos on the top and bottom parts of the page: ______ x 3 = 6 and ______ x 3 = 9. b. Ruby calculates the total number of photos as shown below. Use the array you drew to help explain Ruby's calculation: 5 x 3 = 6 + 9 = 15.",
+        solvedAnswer: 'a. The upper album shows an array of 2 rows of 3, so 2 x 3 = 6. The lower album shows an array of 3 rows of 3, so 3 x 3 = 9. b. Ruby breaks 5 x 3 into two smaller facts, 2 x 3 = 6 and 3 x 3 = 9, then adds 6 + 9 to show 5 x 3 = 15.',
         equations: ['2 x 3 = 6', '3 x 3 = 9', '6 + 9 = 15', '5 x 3 = 15'],
+        blankPrompts: ["Draw the top and bottom photo arrays from Ruby's album page, complete the two source equation blanks, then explain Ruby's calculation."],
+        blankEquations: ['____ x 3 = 6', '____ x 3 = 9', '5 x 3 = 6 + 9 = 15'],
         knownTotal: 15,
         knownGroupCount: 5,
         knownGroupSize: 3,
@@ -1295,7 +1299,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         unitLabel: 'wheels',
         groupLabel: 'cars',
         blankVisualType: 'tape-diagram',
-        animationType: 'array-model'
+        animationType: 'tape-split'
       },
       {
         number: 3,

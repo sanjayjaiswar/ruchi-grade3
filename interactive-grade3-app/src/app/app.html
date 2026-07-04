@@ -11,39 +11,49 @@
         <span></span>
         <span></span>
       </button>
-      <a class="brand" routerLink="/ruchika-grade3" aria-label="Grade 3 Math home">
+      <a class="brand" routerLink="/ruchika-grade3" aria-label="Ruchika Grade 3 Maths home">
         <span class="brand-mark">3</span>
         <span>
-          <strong>Grade 3 Math</strong>
+          <strong>Ruchika Grade 3 Maths</strong>
           <small>Eureka-aligned interactive lessons</small>
         </span>
       </a>
     </div>
 
-    <div class="topbar-tools">
-      <label class="app-voice-control" *ngIf="availableReadAloudVoices.length">
-        <span>Voice</span>
-        <select
-          [value]="selectedReadAloudVoiceName"
-          (change)="selectReadAloudVoice($event)"
-          aria-label="Read aloud voice">
-          <option value="">Auto</option>
-          <option *ngFor="let voice of availableReadAloudVoices" [value]="voice.name">
-            {{ voice.name }} · {{ voice.lang }}
-          </option>
-        </select>
-      </label>
-      <button
-        class="voice-test-button"
-        type="button"
-        *ngIf="availableReadAloudVoices.length"
-        (click)="testReadAloudVoice()">
-        {{ isTestingReadAloudVoice ? 'Stop test' : 'Test voice' }}
-      </button>
-      <div class="topbar-status">
-        <span>Modules 1-7</span>
-        <strong>152 lessons</strong>
-      </div>
+    <div class="topbar-tools" [ngStyle]="moduleThemeVars(activeModuleId)">
+      <nav class="topbar-lesson-nav" aria-label="Quick lesson navigation">
+        <div class="topbar-module-info" aria-label="Current module">
+          <span>Module {{ activeModuleNumber }}</span>
+          <strong>&nbsp;·&nbsp;{{ moduleLabel(activeModuleId) }}</strong>
+        </div>
+
+        <button
+          class="lesson-step-button"
+          type="button"
+          [disabled]="!previousLesson"
+          (click)="goToPreviousLesson()">
+          <span aria-hidden="true">‹</span>
+          Previous
+        </button>
+
+        <label class="topbar-select-field">
+          <span>Lesson</span>
+          <select [value]="selectedLessonValue" (change)="selectTopbarLesson($event)" aria-label="Choose lesson">
+            <option *ngFor="let lesson of lessonNavItems" [value]="lesson.lessonId">
+              M{{ lesson.moduleNumber }} L{{ lesson.lessonNumber }}: {{ lesson.shortLabel }}
+            </option>
+          </select>
+        </label>
+
+        <button
+          class="lesson-step-button"
+          type="button"
+          [disabled]="!nextLesson"
+          (click)="goToNextLesson()">
+          Next
+          <span aria-hidden="true">›</span>
+        </button>
+      </nav>
     </div>
   </header>
 

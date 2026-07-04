@@ -1,14 +1,8 @@
 import { NgFor, NgIf, NgStyle } from '@angular/common';
-import { ChangeDetectorRef, Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs';
 import { lessonTitle, MODULES } from './data/curriculum.data';
-import {
-  preferredReadAloudVoice,
-  READ_ALOUD_TEST_TEXT,
-  READ_ALOUD_VOICE_STORAGE_KEY,
-  sortedReadAloudVoices
-} from './shared/read-aloud-preferences';
 
 const MODULE_THEME: Record<string, { label: string; accent: string; strong: string; soft: string; muted: string }> = {
   m1: { label: 'Groups', accent: '#4285f4', strong: '#1a73e8', soft: '#e8f0fe', muted: '#d2e3fc' },
@@ -175,6 +169,14 @@ const LESSON_SHORT_LABELS: Record<string, string> = {
   'm7-l34': 'Resource Booklet'
 };
 
+type LessonNavItem = {
+  moduleId: string;
+  moduleNumber: number;
+  lessonId: string;
+  lessonNumber: string;
+  shortLabel: string;
+};
+
 @Component({
   selector: 'app-root',
   imports: [NgFor, NgIf, NgStyle, RouterLink, RouterLinkActive, RouterOutlet],
@@ -182,41 +184,53 @@ const LESSON_SHORT_LABELS: Record<string, string> = {
   styleUrl: './app.css',
   encapsulation: ViewEncapsulation.None
 })
-export class App implements OnInit, OnDestroy {
+export class App {
   readonly modules = MODULES;
+  readonly lessonNavItems: LessonNavItem[] = this.modules.flatMap((module) =>
+    module.topics.flatMap((topic) =>
+      topic.lessonIds.map((lessonId) => ({
+        moduleId: module.id,
+        moduleNumber: module.number,
+        lessonId,
+        lessonNumber: this.lessonNumber(lessonId),
+        shortLabel: LESSON_SHORT_LABELS[lessonId] ?? this.shortObjective(module.id, lessonId)
+      }))
+    )
+  );
   drawerCollapsed = true;
   activeModuleId = 'm1';
   activeLessonId = '';
-  availableReadAloudVoices: SpeechSynthesisVoice[] = [];
-  selectedReadAloudVoiceName = '';
-  isTestingReadAloudVoice = false;
   private readonly expandedModules = new Set<string>(['m1']);
-  private readonly voicesChangedHandler = () => this.loadReadAloudVoices();
 
-  constructor(
-    private readonly router: Router,
-    private readonly changeDetector: ChangeDetectorRef
-  ) {
+  constructor(private readonly router: Router) {
     this.syncActiveRoute(this.router.url);
     this.router.events
       .pipe(filter((event): event is NavigationEnd => event instanceof NavigationEnd))
       .subscribe((event) => this.syncActiveRoute(event.urlAfterRedirects));
   }
 
-  ngOnInit(): void {
-    this.loadReadAloudVoices();
-    if (this.canReadAloud()) {
-      window.speechSynthesis.addEventListener('voiceschanged', this.voicesChangedHandler);
-    }
+  get activeModuleLessons(): LessonNavItem[] {
+    return this.lessonNavItems.filter((lesson) => lesson.moduleId === this.activeModuleId);
   }
 
-  ngOnDestroy(): void {
-    if (this.canReadAloud()) {
-      window.speechSynthesis.removeEventListener('voiceschanged', this.voicesChangedHandler);
-      if (this.isTestingReadAloudVoice) {
-        window.speechSynthesis.cancel();
-      }
-    }
+  get activeModuleNumber(): number {
+    return Number(this.activeModuleId.replace('m', '')) || 1;
+  }
+
+  get selectedLessonValue(): string {
+    return this.activeLessonId || this.activeModuleLessons[0]?.lessonId || '';
+  }
+
+  get previousLesson(): LessonNavItem | undefined {
+    const currentIndex = this.currentLessonIndex();
+    return currentIndex > 0 ? this.lessonNavItems[currentIndex - 1] : undefined;
+  }
+
+  get nextLesson(): LessonNavItem | undefined {
+    const currentIndex = this.currentLessonIndex();
+    return currentIndex >= 0 && currentIndex < this.lessonNavItems.length - 1
+      ? this.lessonNavItems[currentIndex + 1]
+      : undefined;
   }
 
   toggleDrawer(): void {
@@ -261,44 +275,26 @@ export class App implements OnInit, OnDestroy {
     return this.moduleTheme(moduleId).label;
   }
 
-  selectReadAloudVoice(event: Event): void {
-    const voiceName = (event.target as HTMLSelectElement).value;
-    this.selectedReadAloudVoiceName = voiceName;
-    this.stopReadAloudTest();
-
-    if (typeof window === 'undefined') {
-      return;
-    }
-    if (voiceName) {
-      window.localStorage.setItem(READ_ALOUD_VOICE_STORAGE_KEY, voiceName);
-    } else {
-      window.localStorage.removeItem(READ_ALOUD_VOICE_STORAGE_KEY);
+  selectTopbarLesson(event: Event): void {
+    const lessonId = (event.target as HTMLSelectElement).value;
+    const lesson = this.lessonNavItems.find((candidate) => candidate.lessonId === lessonId);
+    if (lesson) {
+      this.goToLesson(lesson);
     }
   }
 
-  testReadAloudVoice(): void {
-    if (!this.canReadAloud()) {
-      return;
+  goToPreviousLesson(): void {
+    const lesson = this.previousLesson;
+    if (lesson) {
+      this.goToLesson(lesson);
     }
+  }
 
-    if (this.isTestingReadAloudVoice) {
-      this.stopReadAloudTest();
-      return;
+  goToNextLesson(): void {
+    const lesson = this.nextLesson;
+    if (lesson) {
+      this.goToLesson(lesson);
     }
-
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(READ_ALOUD_TEST_TEXT);
-    const voice = preferredReadAloudVoice(window.speechSynthesis.getVoices(), this.selectedReadAloudVoiceName);
-    if (voice) {
-      utterance.voice = voice;
-    }
-    utterance.lang = 'en-US';
-    utterance.rate = 0.9;
-    utterance.pitch = 1.05;
-    utterance.onend = () => this.clearReadAloudTest();
-    utterance.onerror = () => this.clearReadAloudTest();
-    this.isTestingReadAloudVoice = true;
-    window.speechSynthesis.speak(utterance);
   }
 
   private shortObjective(moduleId: string, lessonId: string): string {
@@ -310,37 +306,17 @@ export class App implements OnInit, OnDestroy {
       .join(' ');
   }
 
-  private canReadAloud(): boolean {
-    return (
-      typeof window !== 'undefined' &&
-      'speechSynthesis' in window &&
-      typeof SpeechSynthesisUtterance !== 'undefined'
-    );
-  }
-
-  private loadReadAloudVoices(): void {
-    if (!this.canReadAloud()) {
-      return;
+  private currentLessonIndex(): number {
+    const activeIndex = this.lessonNavItems.findIndex((lesson) => lesson.lessonId === this.activeLessonId);
+    if (activeIndex >= 0) {
+      return activeIndex;
     }
-
-    const voices = sortedReadAloudVoices(window.speechSynthesis.getVoices());
-    const storedVoiceName = window.localStorage.getItem(READ_ALOUD_VOICE_STORAGE_KEY) ?? '';
-    this.availableReadAloudVoices = voices;
-    this.selectedReadAloudVoiceName =
-      storedVoiceName && voices.some((voice) => voice.name === storedVoiceName) ? storedVoiceName : '';
-    this.changeDetector.detectChanges();
+    return this.lessonNavItems.findIndex((lesson) => lesson.moduleId === this.activeModuleId);
   }
 
-  private stopReadAloudTest(): void {
-    if (this.canReadAloud() && this.isTestingReadAloudVoice) {
-      window.speechSynthesis.cancel();
-    }
-    this.isTestingReadAloudVoice = false;
-  }
-
-  private clearReadAloudTest(): void {
-    this.isTestingReadAloudVoice = false;
-    this.changeDetector.detectChanges();
+  private goToLesson(lesson: LessonNavItem): void {
+    this.expandedModules.add(lesson.moduleId);
+    void this.router.navigate(['/ruchika-grade3', 'modules', lesson.moduleId, 'lessons', lesson.lessonNumber]);
   }
 
   private syncActiveRoute(url: string): void {

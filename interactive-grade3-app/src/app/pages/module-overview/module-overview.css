@@ -437,7 +437,7 @@
 
 .concept-title-row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr);
   gap: 10px;
   align-items: center;
 }
@@ -447,47 +447,6 @@
   color: #202124;
   font-size: 20px;
   line-height: 1.15;
-}
-
-.concept-audio-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-  min-width: 78px;
-  min-height: 34px;
-  padding: 0 10px;
-  border: 1px solid color-mix(in srgb, var(--cluster-color) 48%, #ffffff 52%);
-  border-radius: 8px;
-  background: var(--cluster-soft);
-  color: var(--cluster-strong);
-  font-size: 13px;
-  font-weight: 900;
-  line-height: 1;
-  box-shadow: 0 4px 10px rgba(30, 64, 175, 0.07);
-}
-
-.concept-audio-button i {
-  width: 0;
-  height: 0;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
-  border-left: 9px solid currentColor;
-}
-
-.concept-audio-button.is-playing i {
-  width: 10px;
-  height: 10px;
-  border: 0;
-  border-radius: 2px;
-  background: currentColor;
-}
-
-.concept-audio-button:hover,
-.concept-audio-button:focus-visible {
-  border-color: var(--cluster-color);
-  background: #ffffff;
-  outline: none;
 }
 
 .concept-visual {

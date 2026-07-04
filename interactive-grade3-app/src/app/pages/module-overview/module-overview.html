@@ -98,15 +98,6 @@
               <span>{{ cluster.badge }}</span>
               <div class="concept-title-row">
                 <h3>{{ cluster.title }}</h3>
-                <button
-                  type="button"
-                  class="concept-audio-button"
-                  [class.is-playing]="speakingConceptTitle === cluster.title"
-                  [attr.aria-label]="(speakingConceptTitle === cluster.title ? 'Stop reading ' : 'Play read-aloud for ') + cluster.title"
-                  (click)="readConcept(cluster)">
-                  <i aria-hidden="true"></i>
-                  {{ speakingConceptTitle === cluster.title ? 'Stop' : 'Play' }}
-                </button>
               </div>
             </div>
 
