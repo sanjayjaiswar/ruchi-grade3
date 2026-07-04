@@ -117,12 +117,12 @@
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   min-width: 0;
-  min-height: 40px;
-  padding: 0 12px;
-  border: 1px solid color-mix(in srgb, var(--module-accent) 26%, var(--color-border) 74%);
-  border-radius: 8px;
+  min-height: 34px;
+  padding: 0 10px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 18%, var(--color-border) 82%);
+  border-radius: 7px;
   background: #ffffff;
 }
 
@@ -130,12 +130,12 @@
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
-  min-height: 24px;
-  padding: 0 8px;
+  min-height: 26px;
+  padding: 0 9px;
   border-radius: 999px;
   background: var(--google-yellow);
   color: #202124;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 950;
   white-space: nowrap;
 }
@@ -143,8 +143,8 @@
 .topbar-module-info strong {
   overflow: hidden;
   color: var(--module-accent-strong);
-  font-size: 14px;
-  font-weight: 900;
+  font-size: 16px;
+  font-weight: 950;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -152,14 +152,14 @@
 .topbar-lesson-nav {
   display: grid;
   flex: 1 1 auto;
-  grid-template-columns: minmax(260px, 0.44fr) 116px minmax(360px, 1fr) 92px;
+  grid-template-columns: minmax(250px, 0.4fr) 106px minmax(360px, 1fr) 100px;
   align-items: center;
   justify-content: stretch;
-  gap: 8px;
+  gap: 6px;
   width: 100%;
   max-width: 1220px;
   min-width: 0;
-  padding: 8px 10px;
+  padding: 6px 8px;
   border: 1px solid color-mix(in srgb, var(--module-accent) 34%, var(--color-border) 66%);
   border-top: 3px solid var(--module-accent);
   border-radius: 8px;
@@ -171,31 +171,32 @@
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   min-width: 0;
   min-height: 40px;
   padding: 0 10px;
-  border: 1px solid color-mix(in srgb, var(--google-blue) 24%, var(--color-border) 76%);
-  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--google-blue) 18%, var(--color-border) 82%);
+  border-radius: 7px;
   background: #ffffff;
 }
 
 .topbar-select-field span {
   color: var(--color-text-secondary);
-  font-size: 12px;
-  font-weight: 900;
+  font-size: 13px;
+  font-weight: 950;
+  text-transform: uppercase;
 }
 
 .topbar-select-field select {
   width: 100%;
   min-width: 0;
-  min-height: 38px;
+  min-height: 36px;
   padding: 0 30px 0 0;
   border: 0;
   background: transparent;
   color: var(--color-text);
-  font-size: 15px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 900;
 }
 
 .topbar-select-field select:focus-visible {
@@ -208,14 +209,14 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  min-height: 40px;
-  padding: 0 12px;
-  border: 1px solid color-mix(in srgb, var(--google-blue) 28%, var(--color-border) 72%);
+  min-height: 38px;
+  padding: 0 10px;
+  border: 1px solid color-mix(in srgb, var(--google-blue) 18%, var(--color-border) 82%);
   border-radius: 8px;
   background: #ffffff;
   color: var(--google-blue-strong);
-  font-size: 13px;
-  font-weight: 900;
+  font-size: 15px;
+  font-weight: 950;
   white-space: nowrap;
 }
 
@@ -223,6 +224,7 @@
   border-color: var(--google-blue);
   background: var(--google-blue);
   color: #ffffff;
+  font-size: 15px;
 }
 
 .lesson-step-button:hover,
@@ -241,7 +243,7 @@
 
 .lesson-step-button:disabled {
   cursor: not-allowed;
-  border-color: var(--color-border);
+  border-color: color-mix(in srgb, var(--color-border) 82%, #ffffff 18%);
   background: var(--color-surface-muted);
   color: #80868b;
   opacity: 0.48;
