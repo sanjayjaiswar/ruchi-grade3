@@ -8,6 +8,7 @@ The active implementation direction is the problem-set-centered Lesson 12 pilot.
 
 1. `problem-set-centered-lesson-design.md`
 2. `lesson-12-implementation-research.md`
+3. `problem-set-source-requirements.md`
 
 Older documents in this folder remain useful for workspace rules, source rules, app history, and reusable implementation patterns. They are not controlling when they conflict with the new Lesson 12 pilot requirement.
 
@@ -29,6 +30,7 @@ The EdZilla projects are references only. Do not edit them for this work:
 ## Documents
 
 - [requirements.md](requirements.md): Product, curriculum, interaction, scope, and acceptance requirements.
+- [problem-set-source-requirements.md](problem-set-source-requirements.md): Source-of-truth requirements for Concept source pages, Problem Set Blank/Solved authored visuals, no visible PDF/source pages in Blank/Solved, Summary source mapping, and live UI validation.
 - [design-spec.md](design-spec.md): UI, UX, visual component, lesson screen, and interaction design requirements.
 - [implementation-plan.md](implementation-plan.md): Technical architecture, phases, source ingestion approach, validation, and delivery plan.
 - [component-reuse-map.md](component-reuse-map.md): Existing reference components and patterns to reuse conceptually.

@@ -15,6 +15,7 @@ For current implementation work, use these as the controlling requirements:
 ```text
 docs/interactive-grade3/problem-set-centered-lesson-design.md
 docs/interactive-grade3/lesson-12-implementation-research.md
+docs/interactive-grade3/problem-set-source-requirements.md
 ```
 
 Any older requirement in this file that conflicts with those documents is historical context only.
@@ -262,6 +263,14 @@ Problem Set handling must:
 - identify the model, equation, answer, and meaning in context,
 - use the Teacher Edition solved or annotated Problem Set references when available,
 - visually inspect source pages when solved work appears as images or handwriting.
+
+The detailed source, PDF, blank, solved, summary, and live UI validation requirements are controlled by `problem-set-source-requirements.md`. In short:
+
+- `Concept` may and should show Teacher Edition and Student Workbook/Student Edition source images.
+- `Problem Set > Blank` must be authored student-facing visuals/workspace, with `0` visible raw PDF/source-page images.
+- `Problem Set > Solved` must be authored solved visuals/answers backed by Teacher Edition source, with `0` visible raw PDF/source-page images.
+- `Summary` must map Problem Set items to official Teacher Edition source.
+- Review must scroll each required surface to the end before marking pass/fail.
 
 For the Lesson 12 pilot, implement blank/solved as an internal segmented control inside the existing Problem Set tab:
 
