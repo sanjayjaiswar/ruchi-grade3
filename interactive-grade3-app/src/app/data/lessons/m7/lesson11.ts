@@ -45,7 +45,7 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Explain to a partner the steps you used to tessellate your shape in Problem 1(a)",
-      teacherEditionBasis: "Problem Set (5 minutes) include the following: measure string more Students should do their personal best to complete Problems 3 shorter tessellate row and 4 of the Problem Set within the allotted 5 minutes. (Optional.) G 3-M7-TE-1.3.0 -0 8.2 0 15",
+      teacherEditionBasis: "Problem Set (5 minutes): Students complete tessellation perimeter Problems 3 and 4 as appropriate, measuring with string and comparing perimeter.",
       visualModel: "geometry"
     },
     {
@@ -60,7 +60,7 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (5 minutes) include the following: measure string more Students should do their personal best to complete Problems 3 shorter tessellate row and 4 of the Problem Set within the allotted 5 minutes. (Optional.) G 3-M7-TE-1.3.0 -0 8.2 0 15",
+      studentPrompt: "Problem Set (5 minutes): Students complete tessellation perimeter Problems 3 and 4 as appropriate, measuring with string and comparing perimeter.",
       teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 151-157.",
       visualModel: "geometry"
     },
@@ -113,7 +113,7 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (5 minutes) include the following: measure string more Students should do their personal best to complete Problems 3 shorter tessellate row and 4 of the Problem Set within the allotted 5 minutes. (Optional.) G 3-M7-TE-1.3.0 -0 8.2 0 15"
+        value: "Problem Set (5 minutes): Students complete tessellation perimeter Problems 3 and 4 as appropriate, measuring with string and comparing perimeter."
       },
       {
         label: "Source text",
@@ -145,7 +145,7 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (5 minutes) include the following: measure string more Students should do their personal best to complete Problems 3 shorter tessellate row and 4 of the Problem Set within the allotted 5 minutes. (Optional.) G 3-M7-TE-1.3.0 -0 8.2 0 15"
+        value: "Problem Set (5 minutes): Students complete tessellation perimeter Problems 3 and 4 as appropriate, measuring with string and comparing perimeter."
       },
       {
         label: "Workbook",

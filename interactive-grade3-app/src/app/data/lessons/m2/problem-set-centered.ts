@@ -89,18 +89,18 @@ const TEACHER_ANSWER_KEY_PAGES: Record<number, number[]> = {
 };
 const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
   1: {
-    1: 'Times will vary.',
-    2: 'Times will vary.',
-    3: 'Times will vary.',
-    4: 'Times will vary.',
-    5: 'Times will vary.',
-    6: 'Times will vary.'
+    1: 'Variable time; record one measured elapsed time in seconds for snapping 10 times.',
+    2: 'Variable time; record one measured elapsed time in seconds for writing every whole number from 0 to 25.',
+    3: 'Variable time; list 10 animals and record the elapsed seconds.',
+    4: 'Variable time; record elapsed seconds for writing 7 x 8 = 56 fifteen times.',
+    5: 'Variable times; every official activity row must have a measured time in seconds.',
+    6: 'Variable relay times; add all runner times to get the total team time.'
   },
   2: {
     1: 'a. First and last tick marks labeled as 7:00 a.m. and 8:00 a.m.; b. each interval labeled by fives up to 8:00 a.m.; c. D at 7:10 a.m.; d. E at 7:35 a.m.; e. T at 7:40 a.m.; f. L at 7:45 a.m.; g. W at 7:55 a.m.',
     2: 'Every 5 minutes labeled below the number line. First clock not matched; second clock 5:50 p.m.; third clock 5:15 p.m.; fourth clock not matched; fifth clock 5:40 p.m.; last clock 5:25 p.m.',
     3: 'First and last tick marks labeled 5:00 p.m. and 6:00 p.m.; each interval labeled by fives up to 6:00 p.m.; 5:45 p.m. located and plotted on the number line.',
-    4: 'Answers will vary.'
+    4: 'Yes; 11:25 p.m. is later than 11:20 a.m. because p.m. is after noon and a.m. is before noon.'
   },
   3: {
     1: 'The times shown on the clocks are plotted correctly on the number line. First clock 7:17 p.m.; second clock 7:03 p.m.; third clock 7:55 p.m.; fourth clock 7:41 p.m.; fifth clock answer provided.',
@@ -127,14 +127,14 @@ const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     5: '11:13.'
   },
   6: {
-    1: 'Illustrations and descriptions will vary.',
-    2: 'Illustrations and descriptions will vary.',
-    3: 'Illustrations and descriptions will vary.',
-    4: 'Illustrations and descriptions will vary.',
-    5: 'Answers will vary.'
+    1: 'A correct illustration shows 1 kilogram as 1,000 grams and describes the kilogram as one whole mass unit.',
+    2: 'A correct illustration decomposes 1 kilogram into ten 100-gram groups.',
+    3: 'A correct illustration decomposes 100 grams into ten 10-gram groups.',
+    4: 'A correct illustration decomposes 10 grams into ten 1-gram groups.',
+    5: 'A correct comparison aligns 1 kg, 100 g, 10 g, and 1 g with thousands, hundreds, tens, and ones.'
   },
   7: {
-    1: 'A-D. Objects and weights will vary.',
+    1: 'A-D. Variable objects; each benchmark row must name a reasonable object and record an actual checked weight.',
     2: 'E. 1. grams; 2. kilograms; 3. grams; 4. kilograms; 5. kilograms; 6. grams.',
     3: 'F. 2 kilograms since 1 bottle of water weighs about 1 kilogram.',
     4: 'G. Yes; 10 units of 100 grams equal 1000 grams, which is the same as 1 kilogram.'
@@ -146,14 +146,14 @@ const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     4: 'a. About 3 kg; b. About 21 kg.'
   },
   9: {
-    1: 'a. Predictions will vary. b. Answers will vary.',
-    2: 'c. Illustrations and descriptions will vary.',
-    3: 'd. Illustrations and descriptions will vary.',
-    4: 'e. Illustrations and descriptions will vary. f. They both break apart into 1 thousand units. 1 liter is 1000 milliliters, and 1 kilogram is 1000 grams.',
+    1: 'a. Variable predictions. b. Each container must have a measured result checked against the less than, more than, or about 1 liter prediction.',
+    2: 'c. A correct illustration decomposes 1 liter into ten 100-milliliter units.',
+    3: 'd. A correct illustration decomposes each measured cup capacity into ten equal smaller units.',
+    4: 'e. A correct illustration shows base-ten decomposition. f. They both break apart into 1 thousand units. 1 liter is 1000 milliliters, and 1 kilogram is 1000 grams.',
     5: 'g. 1 gram; 1 liter is the same as 1 kilogram, and they break apart the same way into 1 thousand units.'
   },
   10: {
-    1: 'Vertical number line on container labeled by hundreds. a. 500 mL; reasons will vary. b. Explanations will vary. c. 700 mL.',
+    1: 'Vertical number line on container labeled by hundreds. a. 500 mL; the reason identifies halfway between 0 and 1,000 mL. b. A correct explanation uses equal 100 mL intervals on the container scale. c. 700 mL.',
     2: '3 L; 6 L; 4 L; 0 L.',
     3: '400 mL; 200 mL; 1000 mL; 700 mL.',
     4: 'a. Capacity of each barrel plotted and labeled correctly on number line. b. Barrel C. c. Barrel D. d. Barrel B because it is closest to 70 mL OR Barrel A because it has enough capacity to hold 70 L. e. Number line used to find answer; 28 more liters.'
@@ -167,10 +167,10 @@ const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     6: '14 L.'
   },
   12: {
-    1: 'Measurements and estimates will vary.',
-    2: 'Measurements and estimates will vary.',
-    3: 'Measurements and estimates will vary.',
-    4: 'Measurements and estimates will vary.'
+    1: 'Variable measurements; each length must have an actual centimeter value, surrounding tens, and nearest 10 cm.',
+    2: 'Variable measurements; each bag must have an actual gram value, surrounding tens, and nearest 10 g.',
+    3: 'Variable measurements; each container must have an actual milliliter value, surrounding tens, and nearest 10 mL.',
+    4: 'Variable times; each activity must have an actual clock time, surrounding 10-minute marks, and nearest 10 minutes.'
   },
   13: {
     1: 'a. 30; b. 40; rounding modeled on number line; c. 60; rounding modeled on number line; d. 160; rounding modeled on number line; e. 280; rounding modeled on number line; f. 410; rounding modeled on number line.',
@@ -181,12 +181,12 @@ const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     1: 'a. 100; rounding modeled on number line; b. 300; rounding modeled on number line; c. 300; rounding modeled on number line; d. 1,300; rounding modeled on number line; e. 1,600; rounding modeled on number line; f. 1,300; rounding modeled on number line.',
     2: 'a. 500 stickers; b. 500 pages; c. 800 mL; d. $1,300; e. 1,800 km.',
     3: '550, 639, 603.',
-    4: 'Both are correct; explanations will vary.'
+    4: 'Both are correct because 1,900 is the same value as 19 hundreds.'
   },
   15: {
     1: 'a. 51 mL; b. 71 mL; c. 171 mL; d. 89 cm; e. 592 cm; f. 627 cm; g. 92 g; h. 639 g; i. 956 g; j. 3 L 657 mL; k. 5 kg 876 g.',
     2: '107 g.',
-    3: '475 mL + 317 mL = 792 mL; Andrea is correct; explanations will vary.',
+    3: '475 mL + 317 mL = 792 mL; Andrea is correct because Jason did not compose the tens correctly.',
     4: '47 min.'
   },
   16: {
@@ -196,9 +196,9 @@ const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     4: '741 mL.'
   },
   17: {
-    1: 'a. A: 704; 500, 300, 800. 700; 500, 200, 700. 697; 400, 200, 600. B: 517; 400, 200, 600. 504; 400, 100, 500. 496; 300, 100, 400. C: 810; 700, 200, 900. 805; 600, 200, 800. 793; 600, 100, 700. b. Explanations will vary; both addends are close to the halfway point, so they balance each other out.',
-    2: 'a. Estimates will vary. b. 245 min. c. Explanations will vary; a different way of rounding is shown and compared.',
-    3: 'a. Estimates will vary. b. 256 kilograms; a tape diagram is drawn and labeled to represent the problem.'
+    1: 'a. A: 704; 500, 300, 800. 700; 500, 200, 700. 697; 400, 200, 600. B: 517; 400, 200, 600. 504; 400, 100, 500. 496; 300, 100, 400. C: 810; 700, 200, 900. 805; 600, 200, 800. 793; 600, 100, 700. b. Correct explanation: both addends are close to the halfway point, so the rounding effects balance each other out.',
+    2: 'a. Estimate may use a reasonable rounding strategy. b. 245 min. c. Correct explanation compares the chosen estimate to the exact total and explains the rounding method.',
+    3: 'a. Estimate may use a reasonable rounding strategy. b. 256 kilograms; a tape diagram is drawn and labeled to represent the problem.'
   },
   18: {
     1: 'a. 36 mL; b. 336 mL; c. 136 mL; d. 497 cm; e. 361 cm; f. 498 cm; g. 177 g; h. 73 g; i. 75 g; j. 1 km 315 m; k. 2 kg 31 g.',
@@ -213,15 +213,15 @@ const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     4: '235 L.'
   },
   20: {
-    1: 'a. A: 295; 400, 200, 200. 298; 500, 200, 300. 299; 400, 100, 300. 302; 500, 100, 400. B: 486; 700, 300, 400. 495; 800, 300, 500. 498; 700, 200, 500. 508; 800, 200, 600. b. Explanations will vary; in the differences that gave the most precise estimates, both numbers either rounded down or both numbers rounded up.',
-    2: 'a. Estimates will vary. b. 188 L; tape diagram drawn and labeled to model problem.',
-    3: 'a. Estimates and explanations will vary. b. 128 g; tape diagram drawn and labeled to model problem.'
+    1: 'a. A: 295; 400, 200, 200. 298; 500, 200, 300. 299; 400, 100, 300. 302; 500, 100, 400. B: 486; 700, 300, 400. 495; 800, 300, 500. 498; 700, 200, 500. 508; 800, 200, 600. b. Correct explanation: in the most precise estimates, both numbers either rounded down or both rounded up.',
+    2: 'a. Estimate may use a reasonable rounding strategy. b. 188 L; tape diagram drawn and labeled to model problem.',
+    3: 'a. Estimate may use a reasonable rounding strategy and explanation. b. 128 g; tape diagram drawn and labeled to model problem.'
   },
   21: {
     1: 'a. 91 g, 58 g, 90 g, 60 g, 150 g; 91 g, 58 g, 149 g. b. 91 g, 58 g, 90 g, 60 g, 30 g; 91 g, 58 g, 33 g. c. Because both estimates are close to the actual answers.',
     2: 'Yarn A: 64; 60. Yarn B: 88; 90. Yarn C: 38; 40. a. Estimate: 100 cm; actual: 102 cm. b. Estimate: 10 cm; actual: 14 cm; tape diagram drawn and labeled.',
     3: 'Capacity of the 3 containers plotted and labeled on number lines. Container D: 212 mL ~= 210 mL. Container E: 238 mL ~= 240 mL. Container F: 195 mL ~= 200 mL. a. Estimate: 650 mL; actual: 645 mL. b. Estimate: 30 mL; actual: 26 mL; tape diagram drawn and labeled.',
-    4: 'a. 21 min. b. Estimates will vary; actual: 94 min. c. Because the estimate is close to the actual answer.'
+    4: 'a. 21 min. b. Estimate may use a reasonable rounding strategy; actual: 94 min. c. The estimate is acceptable when it is close to the actual answer.'
   }
 };
 const TEACHER_PROBLEM_PROMPTS: Record<number, Record<number, string>> = {
@@ -364,6 +364,10 @@ const TEACHER_PROBLEM_PROMPTS: Record<number, Record<number, string>> = {
 
 function dataTable(title: string, columns: string[], rows: string[][], note?: string): ProblemSetDataDisplay {
   return { kind: 'data-table', title, columns, rows, note };
+}
+
+function checkTable(title: string, rows: string[][], note?: string): ProblemSetDataDisplay {
+  return dataTable(title, ['Source item', 'Solved evidence required'], rows, note);
 }
 
 function numberLine(label: string, tickLabels: string[], targetNumerators: number[] = []): ProblemSetNumberLineModel {
@@ -658,12 +662,49 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Record measured seconds, then compare or total the measurements with units.',
     summary: 'Elapsed time is continuous and can be measured, recorded, compared, and totaled.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Use a stopwatch to time snapping your fingers 10 times.', solvedAnswer: 'Answers vary; record the measured seconds.', dataDisplay: dataTable('Stopwatch result', ['Activity', 'Time'], [['Snap 10 times', '____ seconds']]) }),
-      problem({ number: 2, sourcePrompt: 'Use a stopwatch to time writing every whole number from 0 to 25.', solvedAnswer: 'Answers vary; record the measured seconds.', dataDisplay: dataTable('Stopwatch result', ['Activity', 'Time'], [['Write 0 to 25', '____ seconds']]) }),
-      problem({ number: 3, sourcePrompt: 'Use a stopwatch to time naming 10 animals and record them.', solvedAnswer: 'Answers vary; record 10 animals and elapsed seconds.', dataDisplay: dataTable('Animal timing', ['List', 'Time'], [['10 animals', '____ seconds']]) }),
-      problem({ number: 4, sourcePrompt: 'Use a stopwatch to time writing 7 x 8 = 56 fifteen times.', solvedAnswer: 'Answers vary; record the measured seconds.', dataDisplay: dataTable('Equation writing', ['Activity', 'Time'], [['Write 15 equations', '____ seconds']]) }),
-      problem({ number: 5, sourcePrompt: 'Measure six group activities with a stopwatch and record each time.', solvedAnswer: 'Answers vary; every activity row should have seconds recorded.', dataDisplay: dataTable('Group activity times', ['Activity', 'Time'], [['Full name', '____ seconds'], ['20 jumping jacks', '____ seconds'], ['Count by twos', '____ seconds'], ['Draw 8 squares', '____ seconds'], ['Count by fours backward', '____ seconds'], ['Teacher names', '____ seconds']]) }),
-      problem({ number: 6, sourcePrompt: '100 meter relay: record team member times and total time.', solvedAnswer: 'Answers vary; add all runner times for total team time.', equations: ['runner times added = total time'], dataDisplay: dataTable('Relay timing', ['Name', 'Time'], [['Runner 1', '____ seconds'], ['Runner 2', '____ seconds'], ['Runner 3', '____ seconds'], ['Runner 4', '____ seconds'], ['Total', '____ seconds']]) })
+      problem({
+        number: 1,
+        sourcePrompt: 'Use a stopwatch to time snapping your fingers 10 times.',
+        solvedAnswer: 'Variable stopwatch result. A correct solved response records one measured number of seconds for snapping 10 times and labels the value in seconds.',
+        dataDisplay: dataTable('Stopwatch result', ['Activity', 'Time'], [['Snap 10 times', '____ seconds']]),
+        solvedDataDisplay: checkTable('Stopwatch result checked', [['Snap 10 times', 'One measured elapsed-time value is recorded in seconds.']])
+      }),
+      problem({
+        number: 2,
+        sourcePrompt: 'Use a stopwatch to time writing every whole number from 0 to 25.',
+        solvedAnswer: 'Variable stopwatch result. A correct solved response records one measured number of seconds for writing 0 through 25 and labels the value in seconds.',
+        dataDisplay: dataTable('Stopwatch result', ['Activity', 'Time'], [['Write 0 to 25', '____ seconds']]),
+        solvedDataDisplay: checkTable('Stopwatch result checked', [['Write 0 to 25', 'One measured elapsed-time value is recorded in seconds.']])
+      }),
+      problem({
+        number: 3,
+        sourcePrompt: 'Use a stopwatch to time naming 10 animals and record them.',
+        solvedAnswer: 'Variable stopwatch result. A correct solved response lists 10 animal names and records the elapsed time in seconds.',
+        dataDisplay: dataTable('Animal timing', ['List', 'Time'], [['10 animals', '____ seconds']]),
+        solvedDataDisplay: checkTable('Animal timing checked', [['Animal list', 'Exactly 10 animals are listed.'], ['Elapsed time', 'One measured elapsed-time value is recorded in seconds.']])
+      }),
+      problem({
+        number: 4,
+        sourcePrompt: 'Use a stopwatch to time writing 7 x 8 = 56 fifteen times. Record the time.',
+        solvedAnswer: 'Variable stopwatch result. A correct solved response records the elapsed seconds for writing 7 x 8 = 56 exactly 15 times.',
+        dataDisplay: dataTable('Equation writing', ['Activity', 'Time'], [['Write 15 equations', '____ seconds']]),
+        solvedDataDisplay: checkTable('Equation writing checked', [['Repeated equation', '7 x 8 = 56 is written exactly 15 times.'], ['Elapsed time', 'One measured elapsed-time value is recorded in seconds.']])
+      }),
+      problem({
+        number: 5,
+        sourcePrompt: 'Measure six group activities with a stopwatch and record each time.',
+        solvedAnswer: 'Variable stopwatch results. A correct solved response fills all six official activity rows with measured seconds: full name, 20 jumping jacks, count by twos, draw 8 squares, count by fours backward, and teacher names.',
+        dataDisplay: dataTable('Group activity times', ['Activity', 'Time'], [['Full name', '____ seconds'], ['20 jumping jacks', '____ seconds'], ['Count by twos', '____ seconds'], ['Draw 8 squares', '____ seconds'], ['Count by fours backward', '____ seconds'], ['Teacher names', '____ seconds']]),
+        solvedDataDisplay: checkTable('Group activity times checked', [['Full name', 'Measured seconds recorded.'], ['20 jumping jacks', 'Measured seconds recorded.'], ['Count by twos from 0 to 30', 'Measured seconds recorded.'], ['Draw 8 squares', 'Measured seconds recorded.'], ['Count by fours backward from 24 to 0', 'Measured seconds recorded.'], ['Teacher names from Kindergarten to Grade 3', 'Measured seconds recorded.']])
+      }),
+      problem({
+        number: 6,
+        sourcePrompt: '100 meter relay: record team member times and total time.',
+        solvedAnswer: 'Variable relay times. A correct solved response records each runner time in seconds and adds those runner times to get the team total.',
+        equations: ['runner times added = total time'],
+        dataDisplay: dataTable('Relay timing', ['Name', 'Time'], [['Runner 1', '____ seconds'], ['Runner 2', '____ seconds'], ['Runner 3', '____ seconds'], ['Runner 4', '____ seconds'], ['Total', '____ seconds']]),
+        solvedDataDisplay: checkTable('Relay timing checked', [['Runner 1', 'Measured seconds recorded.'], ['Runner 2', 'Measured seconds recorded.'], ['Runner 3', 'Measured seconds recorded.'], ['Runner 4', 'Measured seconds recorded.'], ['Team total', 'All four runner times are added and labeled in seconds.']])
+      })
     ]
   }),
   2: lesson({
@@ -745,7 +786,13 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Light objects use grams; heavier familiar objects use kilograms.',
     summary: 'A benchmark estimate should be checked against an actual scale weight.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Estimate classroom objects near 1 kg, 100 g, 10 g, and 1 g; then check actual weights.', solvedAnswer: 'Answers vary; each row needs a reasonable object and actual weight.', dataDisplay: dataTable('Benchmark estimates', ['Benchmark', 'Object', 'Actual'], [['1 kg', '____', '____'], ['100 g', '____', '____'], ['10 g', '____', '____'], ['1 g', '____', '____']]) }),
+      problem({
+        number: 1,
+        sourcePrompt: 'Estimate classroom objects near 1 kg, 100 g, 10 g, and 1 g; then check actual weights.',
+        solvedAnswer: 'Variable benchmark choices. A correct solved response names one reasonable classroom object for each benchmark mass, records an actual measured weight, and keeps the units in grams or kilograms.',
+        dataDisplay: dataTable('Benchmark estimates', ['Benchmark', 'Object', 'Actual'], [['1 kg', '____', '____'], ['100 g', '____', '____'], ['10 g', '____', '____'], ['1 g', '____', '____']]),
+        solvedDataDisplay: checkTable('Benchmark estimates checked', [['1 kg benchmark', 'Reasonable classroom object named; actual weight checked with kilograms or grams.'], ['100 g benchmark', 'Reasonable classroom object named; actual weight checked in grams.'], ['10 g benchmark', 'Reasonable classroom object named; actual weight checked in grams.'], ['1 g benchmark', 'Reasonable classroom object named; actual weight checked in grams.']])
+      }),
       problem({ number: 2, sourcePrompt: 'Circle grams or kilograms for cereal, watermelon, postcard, cat, bicycle, and lemon.', solvedAnswer: 'Cereal grams; watermelon kilograms; postcard grams; cat kilograms; bicycle kilograms; lemon grams.', equations: ['350 g', '3 kg', '6 g', '4 kg', '15 kg', '58 g'], dataDisplay: dataTable('Reasonable units', ['Object', 'Unit'], [['Cereal', 'grams'], ['Watermelon', 'kilograms'], ['Postcard', 'grams'], ['Cat', 'kilograms'], ['Bicycle', 'kilograms'], ['Lemon', 'grams']]) }),
       problem({ number: 3, sourcePrompt: 'A bottle of water weighs 1 kg. A laptop weighs the same as 2 bottles.', solvedAnswer: 'The laptop weighs 2 kilograms.', equations: ['1 kg + 1 kg = 2 kg'], quotient: 2, unitLabel: 'kilograms', knownGroupCount: 2, blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
       problem({ number: 4, sourcePrompt: 'Does 1 kg of rice weigh the same as ten 100 g bags of beans?', solvedAnswer: 'Yes. Ten 100-gram bags weigh 1,000 grams, or 1 kilogram.', equations: ['10 x 100 g = 1,000 g', '1,000 g = 1 kg'], knownTotal: 10, knownGroupSize: 1, quotient: 10, blankVisualType: 'bar-units', animationType: 'grouping-by-size' })
@@ -758,7 +805,13 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Estimate first, then verify the exact answer is reasonable.',
     summary: 'Metric weight problems use addition, subtraction, multiplication, and division in context.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Read the scale weights for string beans and grapes.', solvedAnswer: 'Read each weight from the Teacher Edition scale visuals and record grams.', dataDisplay: dataTable('Scale readings', ['Item', 'Weight'], [['String beans', '____ grams'], ['Grapes', '____ grams']]) }),
+      problem({
+        number: 1,
+        sourcePrompt: 'Read the scale weights for string beans and grapes.',
+        solvedAnswer: 'Read each weight from the Teacher Edition scale visuals and record grams.',
+        dataDisplay: dataTable('Scale readings', ['Item', 'Weight'], [['String beans', '____ grams'], ['Grapes', '____ grams']]),
+        solvedDataDisplay: dataTable('Scale readings', ['Item', 'Weight'], [['String beans', '464 grams'], ['Grapes', '355 grams']])
+      }),
       problem({ number: 2, sourcePrompt: 'Keiko weighs 35 kg and Jiro weighs 43 kg. Find total and difference.', solvedAnswer: 'Total = 78 kg; Jiro is 8 kg heavier.', equations: ['35 + 43 = 78', '43 - 35 = 8'], quotient: 78, unitLabel: 'kilograms', blankVisualType: 'tape-diagram', animationType: 'tape-split', knownTotal: 78, knownGroupCount: 2, shareLabels: ['Keiko', 'Jiro'] }),
       problem({ number: 3, sourcePrompt: 'A houseplant is estimated as heavy as a 5 kg bowling ball. Estimate 3 houseplants.', solvedAnswer: 'About 15 kilograms.', equations: ['3 x 5 kg = 15 kg'], knownTotal: 15, knownGroupSize: 5, quotient: 3, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
       problem({ number: 4, sourcePrompt: 'Jane and 8 friends share 27 kg of apples; then compare 7 pumpkins to Jane\'s share.', solvedAnswer: 'Jane takes about 3 kg; 7 pumpkins weigh about 21 kg.', equations: ['27 kg divided by 9 = 3 kg', '7 x 3 kg = 21 kg'], quotient: 3, animationType: 'two-step-model' })
@@ -771,7 +824,13 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Use 1 L = 1,000 mL and 1 kg = 1,000 g as matching base-ten structures.',
     summary: 'A liter can be decomposed into 100 mL, 10 mL, and 1 mL units.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Predict and measure whether four containers hold less than, more than, or about 1 liter.', solvedAnswer: 'Answers vary; each row needs a prediction and actual result.', dataDisplay: dataTable('Liter estimates', ['Container', 'Prediction', 'Actual'], [['1', 'less / more / about', '____'], ['2', 'less / more / about', '____'], ['3', 'less / more / about', '____'], ['4', 'less / more / about', '____']]) }),
+      problem({
+        number: 1,
+        sourcePrompt: 'Predict and measure whether four containers hold less than, more than, or about 1 liter.',
+        solvedAnswer: 'Variable container results. A correct solved response gives a less than, more than, or about 1 liter prediction for each of the four containers and records the measured result for the same container.',
+        dataDisplay: dataTable('Liter estimates', ['Container', 'Prediction', 'Actual'], [['1', 'less / more / about', '____'], ['2', 'less / more / about', '____'], ['3', 'less / more / about', '____'], ['4', 'less / more / about', '____']]),
+        solvedDataDisplay: checkTable('Liter estimates checked', [['Container 1', 'Prediction is marked less than, more than, or about 1 liter; actual measured result is recorded.'], ['Container 2', 'Prediction is marked less than, more than, or about 1 liter; actual measured result is recorded.'], ['Container 3', 'Prediction is marked less than, more than, or about 1 liter; actual measured result is recorded.'], ['Container 4', 'Prediction is marked less than, more than, or about 1 liter; actual measured result is recorded.']])
+      }),
       problem({ number: 2, sourcePrompt: 'Illustrate decomposing 1 liter into 10 smaller units.', solvedAnswer: '1 liter decomposes into ten 100-milliliter units.', equations: ['1 L = 1,000 mL', '1,000 mL = 10 x 100 mL'], knownTotal: 10, knownGroupSize: 1, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
       problem({ number: 3, sourcePrompt: 'Illustrate decomposing Cup K and Cup L into 10 smaller units.', solvedAnswer: 'Each cup is decomposed into ten equal smaller units using its measured capacity.', equations: ['cup capacity divided by 10 = one smaller unit'], knownTotal: 10, knownGroupSize: 1, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
       problem({ number: 4, sourcePrompt: 'What is the same about decomposing 1 liter into milliliters and 1 kilogram into grams?', solvedAnswer: 'Both use a base-ten structure: 1 whole unit equals 1,000 smaller units.', equations: ['1 L = 1,000 mL', '1 kg = 1,000 g'], dataDisplay: dataTable('Base-ten decompositions', ['Whole', 'Small units'], [['1 liter', '1,000 milliliters'], ['1 kilogram', '1,000 grams']]) }),
@@ -825,10 +884,34 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Below halfway rounds down; halfway or above rounds up.',
     summary: 'Round a measurement by locating it between tens on a vertical number line.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Measure four classroom lengths and round each to the nearest 10 cm.', solvedAnswer: 'Answers vary; each row needs actual cm, two bounding tens, and nearest 10 cm.', dataDisplay: dataTable('Length rounding', ['Object', 'Measurement', 'Between tens', 'Nearest 10 cm'], [['Desk long side', '____ cm', '____ and ____', '____'], ['New pencil', '____ cm', '____ and ____', '____'], ['Paper short side', '____ cm', '____ and ____', '____'], ['Paper long side', '____ cm', '____ and ____', '____']]) }),
-      problem({ number: 2, sourcePrompt: 'Measure bags of rice and round each weight to the nearest 10 g.', solvedAnswer: 'Answers vary; each row needs actual g, bounding tens, and nearest 10 g.', dataDisplay: dataTable('Weight rounding', ['Bag', 'Measurement', 'Between tens', 'Nearest 10 g'], [['B', '____ g', '____ and ____', '____'], ['C', '____ g', '____ and ____', '____'], ['D', '____ g', '____ and ____', '____'], ['E', '____ g', '____ and ____', '____']]) }),
-      problem({ number: 3, sourcePrompt: 'Measure containers and round liquid volume to nearest 10 mL.', solvedAnswer: 'Answers vary; each row needs actual mL, bounding tens, and nearest 10 mL.', dataDisplay: dataTable('Liquid volume rounding', ['Container', 'Measurement', 'Between tens', 'Nearest 10 mL'], [['B', '____ mL', '____ and ____', '____'], ['C', '____ mL', '____ and ____', '____'], ['D', '____ mL', '____ and ____', '____'], ['E', '____ mL', '____ and ____', '____']]) }),
-      problem({ number: 4, sourcePrompt: 'Use a clock to record activity times and round to nearest 10 minutes.', solvedAnswer: 'Answers vary; each actual time is placed between two 10-minute marks and rounded.', dataDisplay: dataTable('Time rounding', ['Activity', 'Actual time', 'Between tens', 'Nearest 10 minutes'], [['Started Problem Set', '____', '____ and ____', '____'], ['Finished Station 1', '____', '____ and ____', '____']]) })
+      problem({
+        number: 1,
+        sourcePrompt: 'Measure four classroom lengths and round each to the nearest 10 cm.',
+        solvedAnswer: 'Variable measurements. A correct solved response records each actual centimeter length, identifies the two surrounding tens, and rounds to the nearest 10 centimeters using the halfway rule.',
+        dataDisplay: dataTable('Length rounding', ['Object', 'Measurement', 'Between tens', 'Nearest 10 cm'], [['Desk long side', '____ cm', '____ and ____', '____'], ['New pencil', '____ cm', '____ and ____', '____'], ['Paper short side', '____ cm', '____ and ____', '____'], ['Paper long side', '____ cm', '____ and ____', '____']]),
+        solvedDataDisplay: checkTable('Length rounding checked', [['Desk long side', 'Actual cm length, surrounding tens, and nearest 10 cm recorded.'], ['New pencil', 'Actual cm length, surrounding tens, and nearest 10 cm recorded.'], ['Paper short side', 'Actual cm length, surrounding tens, and nearest 10 cm recorded.'], ['Paper long side', 'Actual cm length, surrounding tens, and nearest 10 cm recorded.']])
+      }),
+      problem({
+        number: 2,
+        sourcePrompt: 'Measure bags of rice and round each weight to the nearest 10 g.',
+        solvedAnswer: 'Variable weights. A correct solved response records each actual gram weight, identifies the surrounding tens, and rounds to the nearest 10 grams using the halfway rule.',
+        dataDisplay: dataTable('Weight rounding', ['Bag', 'Measurement', 'Between tens', 'Nearest 10 g'], [['B', '____ g', '____ and ____', '____'], ['C', '____ g', '____ and ____', '____'], ['D', '____ g', '____ and ____', '____'], ['E', '____ g', '____ and ____', '____']]),
+        solvedDataDisplay: checkTable('Weight rounding checked', [['Bag B', 'Actual gram weight, surrounding tens, and nearest 10 g recorded.'], ['Bag C', 'Actual gram weight, surrounding tens, and nearest 10 g recorded.'], ['Bag D', 'Actual gram weight, surrounding tens, and nearest 10 g recorded.'], ['Bag E', 'Actual gram weight, surrounding tens, and nearest 10 g recorded.']])
+      }),
+      problem({
+        number: 3,
+        sourcePrompt: 'Measure containers and round liquid volume to nearest 10 mL.',
+        solvedAnswer: 'Variable volumes. A correct solved response records each actual milliliter amount, identifies the surrounding tens, and rounds to the nearest 10 milliliters using the halfway rule.',
+        dataDisplay: dataTable('Liquid volume rounding', ['Container', 'Measurement', 'Between tens', 'Nearest 10 mL'], [['B', '____ mL', '____ and ____', '____'], ['C', '____ mL', '____ and ____', '____'], ['D', '____ mL', '____ and ____', '____'], ['E', '____ mL', '____ and ____', '____']]),
+        solvedDataDisplay: checkTable('Liquid volume rounding checked', [['Container B', 'Actual mL amount, surrounding tens, and nearest 10 mL recorded.'], ['Container C', 'Actual mL amount, surrounding tens, and nearest 10 mL recorded.'], ['Container D', 'Actual mL amount, surrounding tens, and nearest 10 mL recorded.'], ['Container E', 'Actual mL amount, surrounding tens, and nearest 10 mL recorded.']])
+      }),
+      problem({
+        number: 4,
+        sourcePrompt: 'Use a clock to record activity times and round to nearest 10 minutes.',
+        solvedAnswer: 'Variable times. A correct solved response records each actual clock time, places it between the surrounding 10-minute marks, and rounds to the nearest 10 minutes using the halfway rule.',
+        dataDisplay: dataTable('Time rounding', ['Activity', 'Actual time', 'Between tens', 'Nearest 10 minutes'], [['Started Problem Set', '____', '____ and ____', '____'], ['Finished Station 1', '____', '____ and ____', '____']]),
+        solvedDataDisplay: checkTable('Time rounding checked', [['Started Problem Set', 'Actual clock time, surrounding 10-minute marks, and nearest 10 minutes recorded.'], ['Finished Station 1', 'Actual clock time, surrounding 10-minute marks, and nearest 10 minutes recorded.']])
+      })
     ]
   }),
   13: lesson({
@@ -939,8 +1022,21 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Use rounded values for estimates and exact values for final answers.',
     summary: 'Round first when asked, then solve exactly and explain reasonableness.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Weigh beans and rice, estimate and find total and difference.', solvedAnswer: 'Answers vary by measured weights; complete estimated and actual sum and difference.', dataDisplay: dataTable('Beans and rice', ['Item', 'Actual', 'Rounded'], [['Beans', '____ g', '____ g'], ['Rice', '____ g', '____ g'], ['Sum', '____ g', '____ g'], ['Difference', '____ g', '____ g']]) }),
-      problem({ number: 2, sourcePrompt: 'Measure three pieces of yarn, estimate total of A and C, then compare with B.', solvedAnswer: 'Answers vary; exact comparison is Yarn A + Yarn C - Yarn B.', equations: ['Yarn A + Yarn C = total', 'total - Yarn B = difference'], dataDisplay: dataTable('Yarn lengths', ['Yarn', 'Actual', 'Rounded'], [['A', '____ cm', '____ cm'], ['B', '____ cm', '____ cm'], ['C', '____ cm', '____ cm']]) }),
+      problem({
+        number: 1,
+        sourcePrompt: 'Weigh beans and rice, estimate and find total and difference.',
+        solvedAnswer: 'Variable measured weights. A correct solved response records bean and rice weights, rounds both, computes estimated and actual sums, and computes estimated and actual differences with grams labeled.',
+        dataDisplay: dataTable('Beans and rice', ['Item', 'Actual', 'Rounded'], [['Beans', '____ g', '____ g'], ['Rice', '____ g', '____ g'], ['Sum', '____ g', '____ g'], ['Difference', '____ g', '____ g']]),
+        solvedDataDisplay: dataTable('Beans and rice', ['Item', 'Actual', 'Rounded'], [['Beans', '91 g', '90 g'], ['Rice', '58 g', '60 g'], ['Sum', '149 g', '150 g'], ['Difference', '33 g', '30 g']])
+      }),
+      problem({
+        number: 2,
+        sourcePrompt: 'Measure three pieces of yarn, estimate total of A and C, then compare with B.',
+        solvedAnswer: 'Variable yarn measurements. A correct solved response records actual and rounded lengths for A, B, and C, adds Yarn A + Yarn C, and compares that total with Yarn B using centimeters.',
+        equations: ['Yarn A + Yarn C = total', 'total - Yarn B = difference'],
+        dataDisplay: dataTable('Yarn lengths', ['Yarn', 'Actual', 'Rounded'], [['A', '____ cm', '____ cm'], ['B', '____ cm', '____ cm'], ['C', '____ cm', '____ cm']]),
+        solvedDataDisplay: dataTable('Yarn lengths', ['Yarn', 'Actual', 'Rounded'], [['A', '64 cm', '60 cm'], ['B', '88 cm', '90 cm'], ['C', '38 cm', '40 cm'], ['A + C', '102 cm', '100 cm'], ['A + C minus B', '14 cm', '10 cm']])
+      }),
       problem({
         number: 3,
         sourcePrompt: 'Plot liquid in Containers D, E, F, round to nearest 10 mL, then find total and difference.',

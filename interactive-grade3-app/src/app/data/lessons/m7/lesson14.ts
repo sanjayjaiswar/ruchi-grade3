@@ -45,7 +45,7 @@ export const M7_LESSON14_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Compare your work for Problem 1 with a partner's work. Did you add or multiply to find the perimeters? Why?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. whole number measurements are unknown. G 3-M7-TE-1.3.0 -0 8.2 0 15",
+      teacherEditionBasis: "Problem Set (10 minutes): Students label unknown side lengths and determine perimeters of regular polygons and rectangles.",
       visualModel: "geometry"
     },
     {
@@ -60,7 +60,7 @@ export const M7_LESSON14_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. whole number measurements are unknown. G 3-M7-TE-1.3.0 -0 8.2 0 15",
+      studentPrompt: "Problem Set (10 minutes): Students label unknown side lengths and determine perimeters of regular polygons and rectangles.",
       teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 184-194.",
       visualModel: "geometry"
     },
@@ -113,7 +113,7 @@ export const M7_LESSON14_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. whole number measurements are unknown. G 3-M7-TE-1.3.0 -0 8.2 0 15"
+        value: "Problem Set (10 minutes): Students label unknown side lengths and determine perimeters of regular polygons and rectangles."
       },
       {
         label: "Source text",
@@ -145,7 +145,7 @@ export const M7_LESSON14_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. whole number measurements are unknown. G 3-M7-TE-1.3.0 -0 8.2 0 15"
+        value: "Problem Set (10 minutes): Students label unknown side lengths and determine perimeters of regular polygons and rectangles."
       },
       {
         label: "Workbook",

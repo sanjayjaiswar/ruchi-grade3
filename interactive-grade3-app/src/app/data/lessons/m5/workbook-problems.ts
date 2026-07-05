@@ -456,7 +456,7 @@ export const M5_WORKBOOK_PROBLEMS: Record<number, M5WorkbookProblem[]> = {
     },
     {
       "number": 5,
-      "prompt": "Why does it take 10 copies of 1 sixth to make the same amount as 5 copies of 1 third? Explain your answer in words and pictures. and the number line."
+      "prompt": "Why does it take 10 copies of 1 sixth to make the same amount as 5 copies of 1 third? Explain your answer in words and pictures."
     }
   ],
   "23": [
@@ -474,7 +474,7 @@ export const M5_WORKBOOK_PROBLEMS: Record<number, M5WorkbookProblem[]> = {
     },
     {
       "number": 4,
-      "prompt": "Using your number line to help, what red fraction and what blue fraction would be equal to? Draw the part of the number line below that would include these fractions, and label it. and the number line. G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      "prompt": "Using your number line to help, what red fraction and what blue fraction would be equal? Draw the part of the number line below that would include these fractions, and label it."
     },
     {
       "number": 5,
@@ -482,7 +482,7 @@ export const M5_WORKBOOK_PROBLEMS: Record<number, M5WorkbookProblem[]> = {
     },
     {
       "number": 6,
-      "prompt": "Cameron and Terrance plan to run in the city race on Saturday. Cameron has decided that he will divide his race into 3 equal parts and will stop to rest after running 2 of them. Terrance divides his race into 6 equal parts and will stop and rest after running 2 of them. Will the boys rest at the same spot in the race? Why or why not? Draw a number line to explain your answer. and the number line."
+      "prompt": "Cameron and Terrance plan to run in the city race on Saturday. Cameron has decided that he will divide his race into 3 equal parts and will stop to rest after running 2 of them. Terrance divides his race into 6 equal parts and will stop and rest after running 2 of them. Will the boys rest at the same spot in the race? Why or why not? Draw a number line to explain your answer."
     }
   ],
   "24": [

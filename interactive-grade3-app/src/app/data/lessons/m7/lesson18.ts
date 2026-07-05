@@ -48,7 +48,7 @@ export const M7_LESSON18_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Explain your strategy for finding rectangles with an area of 24 square units in Problem 1",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. Example of Problem 1 Grid Paper Note: Students need 24 unit square tiles and grid paper to complete the Problem Set. determine the perimeters. G 3-M7-TE-1.3.0 -0 8.2 0 15",
+      teacherEditionBasis: "Problem Set (10 minutes): Students use unit square tiles and grid paper to construct rectangles with given areas and determine their perimeters.",
       visualModel: "geometry"
     },
     {
@@ -63,7 +63,7 @@ export const M7_LESSON18_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. Example of Problem 1 Grid Paper Note: Students need 24 unit square tiles and grid paper to complete the Problem Set. determine the perimeters. G 3-M7-TE-1.3.0 -0 8.2 0 15",
+      studentPrompt: "Problem Set (10 minutes): Students use unit square tiles and grid paper to construct rectangles with given areas and determine their perimeters.",
       teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 248-258.",
       visualModel: "geometry"
     },
@@ -116,7 +116,7 @@ export const M7_LESSON18_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. Example of Problem 1 Grid Paper Note: Students need 24 unit square tiles and grid paper to complete the Problem Set. determine the perimeters. G 3-M7-TE-1.3.0 -0 8.2 0 15"
+        value: "Problem Set (10 minutes): Students use unit square tiles and grid paper to construct rectangles with given areas and determine their perimeters."
       },
       {
         label: "Source text",
@@ -148,7 +148,7 @@ export const M7_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. Example of Problem 1 Grid Paper Note: Students need 24 unit square tiles and grid paper to complete the Problem Set. determine the perimeters. G 3-M7-TE-1.3.0 -0 8.2 0 15"
+        value: "Problem Set (10 minutes): Students use unit square tiles and grid paper to construct rectangles with given areas and determine their perimeters."
       },
       {
         label: "Workbook",

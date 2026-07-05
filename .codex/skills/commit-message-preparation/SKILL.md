@@ -11,9 +11,25 @@ Use this when preparing commit text.
 
 - Never run `git commit`, `git push`, `git merge`, `git rebase`, or any command that writes git history.
 - Review the actual current diff before preparing commit text.
+- Before emitting a commit message, scan staged Angular component `.ts` files for inline `template:` / `styles:` blocks. If presentation markup or CSS is substantially embedded in a `.ts` component, do not provide the normal commit-message wrapper. Instead, clearly block the commit message and tell the user to split the component into external `.html` and `.scss`/`.css` files first, unless the user explicitly overrides this gate for the current turn.
 - Summarize the real changed files and validation, not memory from earlier conversation.
-- Do not include raw credentials, private identifiers, or unrelated sensitive data.
+- Do not include raw credentials, private identifiers, student data, financial data, screenshots, appshots, or unrelated sensitive data.
 - Do not frame tracker files as the main shipped work.
+
+## Structural Commit Gate
+
+This gate exists to prevent committing mixed logic, markup, and styles as if it were acceptable structure.
+
+When preparing a commit message:
+
+1. Inspect staged files with `git diff --cached --name-only`.
+2. For staged Angular component `.ts` files, check whether the staged version contains substantial inline `template: \`` or `styles: [\`` content.
+3. If a component mixes TypeScript logic with large inline HTML or CSS, stop before the required wrapper and respond with:
+   - `Commit message blocked: Angular component mixes logic, template, and styles.`
+   - The offending file path(s).
+   - A direct instruction to move HTML to `*.component.html` and styles to `*.component.scss` or `*.component.css` before preparing the commit message.
+4. Do not soften this as a recommendation. Treat it as a commit-message gate.
+5. If the user explicitly says to override this gate for the current turn, mention the override in the commit message verification section.
 
 ## Required Wrapper
 
@@ -57,6 +73,7 @@ Useful area names:
 - `Scripts And Tooling`
 - `Docs And Instructions`
 - `Browser Safety`
+- `Student Data Safety`
 - `Validation`
 
 ## Content

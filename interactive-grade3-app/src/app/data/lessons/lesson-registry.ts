@@ -348,16 +348,25 @@ const M6_VISUAL_FAMILY: Record<number, string> = {
 };
 
 const M6_SOLVED_NOTES: Record<string, string> = {
+  '1-1': 'Variable class survey data. The completed tally chart must include Green, Yellow, Red, Blue, and Orange, with one tally recorded for each surveyed student and no student counted twice.',
+  '1-2': 'Variable class tally chart. Each answer must be read directly from Problem 1; the most/least color comparison and total equation must use the same tally counts.',
+  '1-3': 'Variable class tally chart. Problem 3(a) uses one symbol for 1 student; Problem 3(b) uses one symbol for 2 students, with half-symbols used when needed for odd counts.',
   '1-4': 'Variable class survey answers. The Teacher Edition answer key shows how to use the key: each full symbol represents 2 students, half a symbol represents 1 student, and the final comparison answer depends on the class data.',
   '2-1': 'Dana has 4 units of 4, Tanisha has 2 units of 4, Raquel has 6 units of 4, and Anna has 8 units of 4.',
+  '2-2': 'Create the vertical tape diagrams by turning the horizontal tape diagrams upright, keeping the same student labels and using equal units of 4 stamps for each stacked box.',
   '2-3': 'The 4-stamp display has 20 total units of 4; the 8-stamp display has 10 total units of 8. Mattaeus combines Anna and Raquel as 7 units of 8, so 7 x 8 = 56.',
   '3-1': 'The table total is 56 students. Sports has 6 fewer students than chorus and baking combined.',
   '3-2': 'Kyle saved $34 in May. February, April, and May are less than $35. June is $17 more than April because $40 - $23 = $17. April is half of March.',
+  '3-3': 'The table must show Kyle’s savings from the graph: February $30, March $46, April $23, May $34, and June $40.',
+  '3-4': 'Use the graph lines as a ruler to mark the number line from 0 to 70 by tens; plot Monday 50, Tuesday 50, Wednesday 70, Thursday 50, and Friday 40.',
   '3-5': 'Use the Charlotte reading graph or number line to identify equal reading times and compare Wednesday to Friday.',
+  '4-1': 'A valid scale shows all table values from 100 to 600. Debbie sold 150 fewer magazines than Ben and Stanley combined because 300 + 450 - 600 = 150. Debbie and Jeff sold 150 more than Ben and Rachel because 600 + 100 - (300 + 250) = 150.',
   '4-2': 'The carnival graph comparison answers are 240 fewer visitors and 80 more visitors.',
+  '5-1': 'Variable measurement data. The chart must record each straw measured to the nearest inch, nearest 1/2 inch, and nearest 1/4 inch, mark exact measurements with a star, identify shortest and longest straws from the chart, and explain why the 1/4-inch interval is most precise for the chosen straw.',
   '5-2': '1 inch equals 2 half inches, 1 inch equals 4 quarter inches, and 1 half inch equals 2 quarter inches.',
   '5-3': '8 half inches equals 4 inches because two half inches make each inch.',
   '6-1': 'There are 15 children; 6 are less than 53 inches tall; the answer key says No for 53 1/2 inches; 4 children are at least 54 inches tall.',
+  '6-2': 'There are 30 worms. Cara is not right because 3 3/4 inches has 6 worms, while 3 2/4 inches and 4 1/4 inches together have 8 worms. Add Madeline’s new worm with one X at 4 3/4 inches.',
   '7-1': 'Bean plant counts by quarter inch: 1 3/4 has 4, 2 has 2, 2 1/4 has 3, 2 1/2 has 3, 2 3/4 has 2, 3 has 3, and 3 1/4 has 3. At least 2 1/4 inches: 14; taller than 2 3/4 inches: 6; most frequent measurement is 1 3/4 inches with 4 plants.',
   '8-1': 'Leaf-width counts by quarter inch: 5 1/2 has 1, 5 3/4 has 5, 6 has 8, 6 1/4 has 6, 6 1/2 has 4, and 6 3/4 has 1. The three most frequent measurements are 6, 6 1/4, and 5 3/4 inches.',
   '9-1': 'Roxanne picked 24 apples. The picture graph key should make all table values representable.',
@@ -415,7 +424,7 @@ function m6ProblemDisplay(lessonNumber: number, problemNumber: number) {
       title: 'Favorite Colors',
       columns: ['Color', 'Number of Students'],
       categories: ['Green', 'Yellow', 'Red', 'Blue', 'Orange'],
-      keyLabel: problemNumber === 3 || problemNumber === 4 ? 'Each symbol represents 1 student in 3(a) or 2 students in 3(b).' : 'Survey data varies by class.'
+      keyLabel: problemNumber === 3 || problemNumber === 4 ? 'Each symbol represents 1 student in 3(a) or 2 students in 3(b).' : 'Survey data is variable by class.'
     };
   }
   if (lessonNumber === 2) {
@@ -549,6 +558,22 @@ function m6ProblemDisplay(lessonNumber: number, problemNumber: number) {
     title: M6_VISUAL_FAMILY[lessonNumber] ?? 'Data display',
     note: 'Complete the official data display from the prompt.'
   };
+}
+
+function m6SolvedProblemDisplay(lessonNumber: number, problemNumber: number, display: ProblemSetDataDisplay): ProblemSetDataDisplay {
+  if (lessonNumber === 6 && problemNumber === 2) {
+    return m6LinePlot('Lengths of Worms after Madeline Adds Her Worm', ['3', '3 1/4', '3 2/4', '3 3/4', '4', '4 1/4', '4 2/4', '4 3/4', '5'], [1, 2, 4, 6, 8, 4, 3, 1, 2], 'X = 1 worm', {
+      showBlankValues: true,
+      note: 'Solved line plot includes Madeline’s new 4 3/4-inch worm.'
+    });
+  }
+  if (lessonNumber === 9 && (problemNumber === 1 || problemNumber === 2) && display.rows?.length) {
+    return {
+      ...display,
+      rows: display.rows.map((row) => row.map((cell) => cell === '____' ? '24' : cell))
+    };
+  }
+  return display;
 }
 
 function m6BlankVisualType(display: ReturnType<typeof m6ProblemDisplay>): ProblemSetCenteredLesson['problems'][number]['blankVisualType'] {
@@ -1035,6 +1060,25 @@ function m7BlankEquationTemplates(sourceEquations: string[], visualFamily: strin
     : [`Use the official ${visualFamily} blanks, labels, units, and response lines.`];
 }
 
+const M7_SOURCE_PROMPT_OVERRIDES: Record<string, string> = {
+  '10-1': 'Use a 2-inch square to answer the questions below. a. Trace the square in the space below with a red crayon. b. Trace the new shape you made with the square in the space below with a red crayon. c. Which shape has a greater perimeter? How do you know? d. Color the inside of the shapes in Problem 1 (a) and (b) with a blue crayon. e. Which color represents the perimeters of the shapes? How do you know? f. What does the other color represent? How do you know? g. Which shape has a greater area? How do you know?',
+  '10-3': 'Outline the perimeter of this piece of paper with a highlighter.',
+  '14-2': 'Label the unknown side lengths of the rectangle below. Then, find the perimeter of the rectangle. 2 cm Perimeter = ____ cm 7 cm.',
+  '14-5': "Mr. Spooner draws a regular hexagon on the board. One of the sides measures 4 centimeters. Giles and Xander find the perimeter. Their work is shown below. Whose work is correct? Explain your answer. Giles's Work: Perimeter = 4 cm + 4 cm + 4 cm + 4 cm + 4 cm + 4 cm; Perimeter = 24 cm. Xander's Work: Perimeter = 6 x 4 cm; Perimeter = 24 cm.",
+  '24-1': "Use the given perimeters in the chart below to choose the widths and lengths of your robot's rectangular body parts. Write the widths and lengths in the chart. Use the blank rows if you want to add extra rectangular body parts. Your robot should have 7 to 9 rectangular body parts. Then use the environment chart to plan 6 to 8 items for your robot's environment, including rectangular and circular items with the listed perimeter requirements.",
+  '25-1': 'Draw a picture of your robot in its environment in the space below. Label the widths, lengths, and perimeters of all rectangles. Label the perimeters of all circular shapes.',
+  '26-1': "Collect the area measurements of your classmates' robot bodies. Make a line plot using everyone's area measurements. a. How many different measurements are on the line plot? Why are the measurements different? b. What does this tell you about the relationship between area and perimeter?",
+  '26-4': 'Write two or three sentences describing your robot and the environment in which it lives.',
+  '27-1': "Use the chart below to evaluate your friend's robot. Measure the width and length of each rectangle. Then, calculate the perimeter. Record that information in the chart below. If your measurements differ from those listed on the project, put a star by the letter of the rectangle.",
+  '27-3': "Is the perimeter of the robot's neck half the perimeter of the head? Show calculations below. Part B: I reviewed ____'s robot environment.",
+  '27-4': "Use the chart below to evaluate your friend's robot environment. Measure the width and length of each rectangle. Then, calculate the perimeter. Use your string to measure the perimeters of nonrectangular items. Record that information in the chart below. If your measurements differ from those listed on the project, put a star by the letter of the shape.",
+  '28-2': "Elijah draws a square that has side lengths of 8 centimeters. a. Estimate to draw Elijah's square, and label the side lengths. b. What is the area of Elijah's square? c. What is the perimeter of Elijah's square? d. Elijah connects three of these squares to make one long rectangle. What is the perimeter of this rectangle?",
+  '28-3': "The area of Mason's rectangular painting is 72 square inches. The width of the painting is 8 inches. a. Estimate to draw Mason's painting, and label the side lengths. b. What is the length of the painting? c. What is the perimeter of Mason's painting? d. Mason's mom hangs the painting on a wall that already has two of Mason's other paintings. The areas of the other paintings are 64 square inches and 81 square inches. What is the total area of the wall that is covered with Mason's paintings?",
+  '28-4': "The perimeter of Jillian's rectangular bedroom is 34 feet. The length of her bedroom is 9 feet. a. Estimate to draw Jillian's bedroom, and label the side lengths. b. What is the width of Jillian's bedroom? c. What is the area of Jillian's bedroom? d. Jillian has a 4-foot by 6-foot rug in her room. What is the area of the floor that is not covered by the rug?",
+  '29-1': "Kyle puts two rectangles together to make the L-shaped figure below. He measures some of the side lengths and records them as shown. a. Find the perimeter of Kyle's shape. b. Find the area of Kyle's shape. c. Kyle makes two copies of the L-shaped figure to create the rectangle shown below. Find the perimeter of the rectangle.",
+  '29-4': 'A jogging path around the outside edges of a rectangular playground measures 48 yards by 52 yards. Maya runs 3 laps on the jogging path. What is the total number of yards Maya runs?'
+};
+
 function m7LastAnswerNumber(answer: string | undefined, fallback: number): number {
   if (!answer) {
     return fallback;
@@ -1194,7 +1238,7 @@ function m7DataDisplay(lessonNumber: number, problemNumber: number): ProblemSetD
   if (lessonNumber === 24 && problemNumber === 1) {
     return m7TableDisplay(
       'Robot Body-Part Planning Chart',
-      ['Letter', 'Body part', 'Perimeter', 'Width and length'],
+      ['Letter', 'Body part', 'Required perimeter', 'Width and length'],
       [
         ['A', 'arm', '14 cm', '____ cm by ____ cm'],
         ['B', 'arm', '14 cm', '____ cm by ____ cm'],
@@ -1209,16 +1253,71 @@ function m7DataDisplay(lessonNumber: number, problemNumber: number): ProblemSetD
     );
   }
 
+  if (lessonNumber === 25 && problemNumber === 1) {
+    return m7TableDisplay(
+      'Robot-in-Environment Drawing Checklist',
+      ['Source requirement', 'Student drawing evidence'],
+      [
+        ['Robot body parts from Lesson 24', 'Draw each planned rectangular part.'],
+        ['Rectangle labels', 'Label width, length, and perimeter on every rectangle.'],
+        ['Circular/nonrectangular labels', 'Label perimeter measured with string.'],
+        ['Environment items from Lesson 24', 'Draw 6 to 8 planned environment items.'],
+        ['Measurement reasoning', 'Keep the drawing tied to the perimeter requirements.']
+      ],
+      'The official workspace is an open drawing area; these checklist rows preserve what must appear in the drawing.'
+    );
+  }
+
   if (lessonNumber === 26 && problemNumber === 1) {
     return {
       kind: 'line-plot',
       title: 'Area Measurements of Robot Bodies',
       keyLabel: 'X = 1 robot body',
       values: [
-        { label: 'varies', value: 0 }
+        { label: 'class data', value: 0 }
       ],
-      note: 'Class data varies; keep the official line-plot scale and plot classmates robot-body areas.'
+      note: 'Class data is variable; keep the official line-plot scale and plot classmates robot-body areas.'
     };
+  }
+
+  if (lessonNumber === 26 && problemNumber === 2) {
+    return m7TableDisplay(
+      'Construction Paper Perimeter Workspace',
+      ['Measurement or calculation', 'Student work'],
+      [
+        ['length', '____ in'],
+        ['width', '____ in'],
+        ['perimeter equation', '____ + ____ + ____ + ____ = ____ in'],
+        ['answer sentence', 'The construction paper perimeter is ____ inches.']
+      ],
+      'Measure the construction paper and calculate the perimeter in inches.'
+    );
+  }
+
+  if (lessonNumber === 26 && problemNumber === 3) {
+    return m7TableDisplay(
+      'Same-Perimeter Environment Shapes',
+      ['Shape', 'Perimeter evidence', 'What the shape looks like'],
+      [
+        ['Shape 1', '____ + ____ + ____ + ____ = ____', '____'],
+        ['Shape 2', '____ + ____ + ____ + ____ = ____', '____'],
+        ['Comparison', 'same perimeter?', '____']
+      ],
+      'Sketch and label two environment shapes with the same perimeter, then compare their appearance.'
+    );
+  }
+
+  if (lessonNumber === 26 && problemNumber === 4) {
+    return m7TableDisplay(
+      'Robot and Environment Description Organizer',
+      ['Sentence focus', 'Student description'],
+      [
+        ['Robot shape and body', '____'],
+        ['Environment details', '____'],
+        ['Measurement or perimeter detail', '____']
+      ],
+      'Write two or three sentences that describe the completed robot and its environment with measurement evidence.'
+    );
   }
 
   if (lessonNumber === 27 && problemNumber === 1) {
@@ -1239,6 +1338,34 @@ function m7DataDisplay(lessonNumber: number, problemNumber: number): ProblemSetD
     );
   }
 
+  if (lessonNumber === 27 && problemNumber === 2) {
+    return m7TableDisplay(
+      'Robot Body Double-Arm Check',
+      ['Check step', 'Student calculation'],
+      [
+        ['arm perimeter', '____ cm'],
+        ['double the arm perimeter', '2 x ____ cm = ____ cm'],
+        ['body perimeter', '____ cm'],
+        ['conclusion', 'body perimeter is / is not double one arm']
+      ],
+      'Use the measured arm and body perimeters from the robot evaluation chart.'
+    );
+  }
+
+  if (lessonNumber === 27 && problemNumber === 3) {
+    return m7TableDisplay(
+      'Robot Neck Half-Head Check',
+      ['Check step', 'Student calculation'],
+      [
+        ['head perimeter', '____ cm'],
+        ['half the head perimeter', '____ cm / 2 = ____ cm'],
+        ['neck perimeter', '____ cm'],
+        ['conclusion', 'neck perimeter is / is not half the head perimeter']
+      ],
+      'Use the measured head and neck perimeters from the robot evaluation chart.'
+    );
+  }
+
   if (lessonNumber === 27 && problemNumber === 4) {
     return m7TableDisplay(
       'Robot Environment Evaluation',
@@ -1253,6 +1380,122 @@ function m7DataDisplay(lessonNumber: number, problemNumber: number): ProblemSetD
         ['P/Q', 'extra environment items', '____', 'student choice']
       ],
       'Use a ruler for rectangles and string for nonrectangular items, matching the official evaluation chart.'
+    );
+  }
+
+  if (lessonNumber === 32 && problemNumber === 1) {
+    return m7TableDisplay(
+      'About One-Half Circle Check',
+      ['Prompt part', 'Student evidence'],
+      [
+        ['circle glued', 'circle that is about one-half shaded'],
+        ['strategy', 'fold / ruler / center-dot estimate / other precise method'],
+        ['exactly one-half?', 'yes / no'],
+        ['explanation', 'compare shaded and unshaded areas']
+      ],
+      'Use the circle representation from the official workspace and explain how close it is to one-half.'
+    );
+  }
+
+  if (lessonNumber === 32 && problemNumber === 2) {
+    return m7TableDisplay(
+      'Julian’s Four Circles Analysis',
+      ['Circle', 'About one-half shaded?', 'Evidence or change'],
+      [
+        ['A', 'yes', 'explain why it is about one-half'],
+        ['B', 'no', 'describe how to change it'],
+        ['C', 'yes', 'explain why it is about one-half'],
+        ['D', 'yes', 'explain why it is about one-half']
+      ],
+      'Analyze each of Julian’s source circles, then explain one example and one non-example.'
+    );
+  }
+
+  if (lessonNumber === 32 && problemNumber === 3) {
+    return m7TableDisplay(
+      'Circle Shading Construction Steps',
+      ['Step', 'Workspace evidence'],
+      [
+        ['divide circle', '4 equal parts'],
+        ['shade', '2 parts shaded'],
+        ['erase', 'small circle erased from each shaded part'],
+        ['replace', '2 equal small circles drawn in unshaded parts']
+      ],
+      'Follow the official construction clues so the shaded and unshaded areas remain balanced.'
+    );
+  }
+
+  if (lessonNumber === 32 && problemNumber === 4) {
+    return m7TableDisplay(
+      'One-Half Justification',
+      ['Evidence', 'Student explanation'],
+      [
+        ['shaded area', '2 fourths minus 2 small circles'],
+        ['unshaded area', '2 fourths plus 2 matching small circles'],
+        ['conclusion', '____']
+      ],
+      'Use the Problem 3 construction to justify whether the circle shows one-half shaded.'
+    );
+  }
+
+  if (lessonNumber === 30 && problemNumber === 1) {
+    return m7TableDisplay(
+      'Classmate Problem-Solving Critique Form',
+      ['Form field', 'Response'],
+      [
+        ['Classmate', '____'],
+        ['Problem number', '____'],
+        ['Strategies my classmate used', '____'],
+        ['Things my classmate did well', '____'],
+        ['Suggestions for improvement', '____'],
+        ['Strategies I would like to try', '____']
+      ],
+      'Use the official critique form to record source-specific peer feedback.'
+    );
+  }
+
+  if (lessonNumber === 31 && problemNumber === 1) {
+    return m7TableDisplay(
+      'One-Half Representation Analysis Form',
+      ['Square letter', 'Does it show one-half shaded?', 'Why or why not?', 'Change needed'],
+      [
+        ['____', 'yes / no', '____', '____'],
+        ['____', 'yes / no', '____', '____'],
+        ['____', 'yes / no', '____', '____'],
+        ['____', 'yes / no', '____', '____']
+      ],
+      'Use this official analysis tool to evaluate classmate squares for one-half shaded.'
+    );
+  }
+
+  if (lessonNumber === 33 && problemNumber === 1) {
+    return m7TableDisplay(
+      'Fluency Game Reflection Chart',
+      ['Activity', 'I am fluent', 'I still need practice', 'Put in summer activity book'],
+      [
+        ['1', '____', '____', '____'],
+        ['2', '____', '____', '____'],
+        ['3', '____', '____', '____'],
+        ['4', '____', '____', '____'],
+        ['5', '____', '____', '____'],
+        ['6', '____', '____', '____'],
+        ['7', '____', '____', '____'],
+        ['8', '____', '____', '____']
+      ],
+      'Use the official fluency reflection chart to record games and practice needs.'
+    );
+  }
+
+  if (lessonNumber === 34 && problemNumber === 1) {
+    return m7TableDisplay(
+      'Summer Math Review Calendar Tracker',
+      ['Week', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      [
+        ['1-5', 'counting/fluency', 'summer practice game', 'hands-on math task', 'measurement/data task', 'Sprint or pattern sheet'],
+        ['6-10', 'counting/fluency', 'summer practice game', 'story/model task', 'measurement/data task', 'Sprint or pattern sheet'],
+        ['Completion mark', 'color box', 'color box', 'color box', 'color box', 'color box']
+      ],
+      'Use the official two-page summer calendar as a completion tracker for daily practice.'
     );
   }
 
@@ -1291,6 +1534,264 @@ function m7SolvedDataDisplay(lessonNumber: number, problemNumber: number): Probl
         ['20 cm', '5', '5 cm', '5 cm', '25 square cm']
       ],
       'Teacher Edition answer key values for the completed perimeter charts.'
+    );
+  }
+
+  if (lessonNumber === 24 && problemNumber === 1) {
+    return m7TableDisplay(
+      'Robot Planning Requirements Checked',
+      ['Part/item', 'Teacher Edition check'],
+      [
+        ['Robot body parts', '7 to 9 rectangular body parts planned.'],
+        ['Arms', 'A and B each have perimeter 14 cm.'],
+        ['Legs', 'C and D each have perimeter 18 cm.'],
+        ['Body', 'E has perimeter double one arm.'],
+        ['Head and neck', 'F has perimeter 16 cm; G has half the head perimeter.'],
+        ['Environment', '6 to 8 items planned with listed rectangle or string perimeters.']
+      ],
+      'Teacher Edition accepts varied dimensions when every listed perimeter relationship is satisfied.'
+    );
+  }
+
+  if (lessonNumber === 25 && problemNumber === 1) {
+    return m7TableDisplay(
+      'Robot Drawing Requirements Checked',
+      ['Drawing requirement', 'Teacher Edition check'],
+      [
+        ['Robot body parts', 'Drawn from the Lesson 24 plan.'],
+        ['Rectangles', 'Widths, lengths, and perimeters labeled.'],
+        ['Circular/nonrectangular shapes', 'Perimeters labeled from string measurement.'],
+        ['Environment', 'Planned environment items included.'],
+        ['Measurement reasoning', 'Labels match the planned perimeter requirements.']
+      ],
+      'Teacher Edition checks the completed robot/environment drawing against the Lesson 24 measurements.'
+    );
+  }
+
+  if (lessonNumber === 26 && problemNumber === 1) {
+    return m7TableDisplay(
+      'Robot Body Area Line Plot Checked',
+      ['Teacher Edition check', 'Required evidence'],
+      [
+        ['line plot scale', 'Uses the class robot-body area measurements in square centimeters.'],
+        ['different measurements', 'Counts how many distinct area values appear on the line plot.'],
+        ['why measurements differ', 'Explains that equal perimeter can enclose different areas.'],
+        ['relationship conclusion', 'Area is not fixed by perimeter alone.']
+      ],
+      'Class data varies, but the solved work must answer both prompts from the completed line plot.'
+    );
+  }
+
+  if (lessonNumber === 26 && problemNumber === 2) {
+    return m7TableDisplay(
+      'Construction Paper Perimeter Checked',
+      ['Teacher Edition check', 'Required evidence'],
+      [
+        ['measurements', 'Length and width are measured in inches.'],
+        ['perimeter equation', 'Adds all four side lengths or uses 2 x length + 2 x width.'],
+        ['answer', 'Perimeter is stated in inches.'],
+        ['work shown', 'Calculation is visible below the prompt.']
+      ],
+      'The exact value depends on the construction paper used; the measurement method and perimeter calculation must be correct.'
+    );
+  }
+
+  if (lessonNumber === 26 && problemNumber === 3) {
+    return m7TableDisplay(
+      'Same-Perimeter Shapes Checked',
+      ['Teacher Edition check', 'Required evidence'],
+      [
+        ['Shape 1', 'Labeled side lengths produce the chosen perimeter.'],
+        ['Shape 2', 'Labeled side lengths produce the same perimeter.'],
+        ['comparison', 'Explains how the shapes can look different while perimeter is equal.']
+      ],
+      'Teacher Edition accepts varied sketches when both shapes come from the robot environment and perimeter evidence is shown.'
+    );
+  }
+
+  if (lessonNumber === 26 && problemNumber === 4) {
+    return m7TableDisplay(
+      'Robot Description Checked',
+      ['Teacher Edition check', 'Required evidence'],
+      [
+        ['sentence count', 'Two or three sentences are written.'],
+        ['robot description', 'Description names visible robot features.'],
+        ['environment description', 'Description names the robot environment.'],
+        ['measurement connection', 'Description uses project measurement or perimeter evidence.']
+      ],
+      'Teacher Edition uses the completed project as the source for the written description.'
+    );
+  }
+
+  if (lessonNumber === 27 && problemNumber === 1) {
+    return m7TableDisplay(
+      'Robot Evaluation Checked',
+      ['Rectangle', 'Teacher Edition check'],
+      [
+        ['A and B arms', 'Measured perimeters check against 14 cm; star any mismatch.'],
+        ['C and D legs', 'Measured perimeters check against 18 cm; star any mismatch.'],
+        ['E body', 'Measured perimeter checks against 28 cm.'],
+        ['F head', 'Measured perimeter checks against 16 cm.'],
+        ['G neck', 'Measured perimeter checks against 8 cm.'],
+        ['H and I', 'Student-choice rectangles are measured and calculated.']
+      ],
+      'Solved evidence is the completed evaluation chart and starred discrepancies, not a fixed class-wide answer.'
+    );
+  }
+
+  if (lessonNumber === 27 && problemNumber === 2) {
+    return m7TableDisplay(
+      'Body Double-Arm Check Completed',
+      ['Teacher Edition check', 'Required evidence'],
+      [
+        ['arm perimeter', 'Uses the measured arm perimeter from the chart.'],
+        ['body perimeter', 'Uses the measured body perimeter from the chart.'],
+        ['comparison', 'Shows whether body perimeter equals 2 x arm perimeter.'],
+        ['conclusion', 'Answers yes or no with the calculation.']
+      ],
+      'The conclusion depends on the evaluated project, but the double-arm calculation must be explicit.'
+    );
+  }
+
+  if (lessonNumber === 27 && problemNumber === 3) {
+    return m7TableDisplay(
+      'Neck Half-Head Check Completed',
+      ['Teacher Edition check', 'Required evidence'],
+      [
+        ['head perimeter', 'Uses the measured head perimeter from the chart.'],
+        ['neck perimeter', 'Uses the measured neck perimeter from the chart.'],
+        ['comparison', 'Shows whether neck perimeter equals one-half of head perimeter.'],
+        ['conclusion', 'Answers yes or no with the calculation.']
+      ],
+      'The conclusion depends on the evaluated project, but the half-head calculation must be explicit.'
+    );
+  }
+
+  if (lessonNumber === 27 && problemNumber === 4) {
+    return m7TableDisplay(
+      'Robot Environment Evaluation Checked',
+      ['Item', 'Teacher Edition check'],
+      [
+        ['J sun', 'String perimeter is checked against about 25 cm.'],
+        ['K house', 'Rectangle perimeter is checked against 82 cm.'],
+        ['L tree top', 'String perimeter is checked against about 30 cm.'],
+        ['M trunk', 'Rectangle perimeter is checked against 30 cm.'],
+        ['N tree top', 'String perimeter is checked against about 20 cm.'],
+        ['O trunk', 'Rectangle perimeter is checked against 20 cm.'],
+        ['P and Q', 'Student-choice items are measured and calculated.']
+      ],
+      'Solved evidence is the completed environment evaluation chart and starred discrepancies.'
+    );
+  }
+
+  if (lessonNumber === 30 && problemNumber === 1) {
+    return m7TableDisplay(
+      'Critique Form Requirements Checked',
+      ['Form field', 'Teacher Edition check'],
+      [
+        ['Classmate and problem number', 'Identified.'],
+        ['Strategies used', 'Specific strategies from the classmate work are named.'],
+        ['Things done well', 'Feedback cites concrete strengths.'],
+        ['Suggestions for improvement', 'Suggestion is actionable and tied to the work.'],
+        ['Strategies to try', 'Student records a useful strategy to apply later.']
+      ],
+      'Teacher Edition uses this as a peer critique tool; responses vary but every field must be completed with source-specific feedback.'
+    );
+  }
+
+  if (lessonNumber === 31 && problemNumber === 1) {
+    return m7TableDisplay(
+      'One-Half Analysis Requirements Checked',
+      ['Requirement', 'Teacher Edition check'],
+      [
+        ['Square identified', 'Each analyzed representation is labeled by letter.'],
+        ['Half decision', 'Response says whether the shaded region is one-half.'],
+        ['Explanation', 'Reasoning compares equal area, not just appearance.'],
+        ['Revision', 'Needed changes make the shaded and unshaded areas equal.']
+      ],
+      'Teacher Edition accepts varied analyses when each one-half decision is justified by equal-area reasoning.'
+    );
+  }
+
+  if (lessonNumber === 32 && problemNumber === 1) {
+    return m7TableDisplay(
+      'About One-Half Circle Checked',
+      ['Prompt part', 'Teacher Edition check'],
+      [
+        ['circle glued', 'Circle is about one-half shaded.'],
+        ['strategy', 'Explanation names a precise method such as folding, ruler use, or center-dot estimation.'],
+        ['exactness answer', 'Answer says whether it is exactly one-half.'],
+        ['evidence', 'Explanation compares shaded and unshaded areas.']
+      ],
+      'Teacher Edition accepts approximate circle work when the strategy and area comparison are clear.'
+    );
+  }
+
+  if (lessonNumber === 32 && problemNumber === 2) {
+    return m7TableDisplay(
+      'Julian’s Circles Checked',
+      ['Part', 'Teacher Edition answer/check'],
+      [
+        ['a', 'A, C, and D are about one-half shaded.'],
+        ['b', 'Chosen circle explanation identifies why it is about one-half.'],
+        ['c', 'Chosen non-example revision makes the shaded and unshaded areas about equal.']
+      ],
+      'Solved evidence must use Julian’s source circles, not a generic half model.'
+    );
+  }
+
+  if (lessonNumber === 32 && problemNumber === 3) {
+    return m7TableDisplay(
+      'Circle Construction Checked',
+      ['Step', 'Teacher Edition answer/check'],
+      [
+        ['a', 'Circle divided into 4 equal parts.'],
+        ['b', '2 parts shaded.'],
+        ['c', 'A small circle erased from each shaded part.'],
+        ['d', '2 matching small circles drawn in the unshaded parts.']
+      ],
+      'The final picture keeps equal shaded and unshaded total area.'
+    );
+  }
+
+  if (lessonNumber === 32 && problemNumber === 4) {
+    return m7TableDisplay(
+      'One-Half Justification Checked',
+      ['Evidence', 'Teacher Edition check'],
+      [
+        ['answer', 'Yes.'],
+        ['reason', 'The two erased shaded circles are replaced by two matching circles in the unshaded parts.'],
+        ['area comparison', 'Shaded and unshaded areas remain equal.']
+      ],
+      'The explanation must refer back to the specific construction in Problem 3.'
+    );
+  }
+
+  if (lessonNumber === 33 && problemNumber === 1) {
+    return m7TableDisplay(
+      'Fluency Reflection Requirements Checked',
+      ['Requirement', 'Teacher Edition check'],
+      [
+        ['Activities listed', 'Games played in class are recorded.'],
+        ['Fluency column', 'Student marks activities where facts are fluent.'],
+        ['Practice column', 'Student marks activities needing more practice.'],
+        ['Summer activity column', 'Student chooses activities for summer practice.']
+      ],
+      'Teacher Edition uses the chart to prepare summer fluency practice based on student reflection.'
+    );
+  }
+
+  if (lessonNumber === 34 && problemNumber === 1) {
+    return m7TableDisplay(
+      'Summer Calendar Requirements Checked',
+      ['Requirement', 'Teacher Edition check'],
+      [
+        ['Weeks 1-10 calendar', 'Daily activity boxes are used as the completion tracker.'],
+        ['Activity variety', 'Fluency, games, data, measurement, geometry, and modeling tasks are included.'],
+        ['Completion evidence', 'Student colors or marks each box after finishing.'],
+        ['Cut-out packet', 'Summer practice resources are included with the calendar.']
+      ],
+      'Teacher Edition uses this calendar and cut-out packet to support summer Grade 3 practice.'
     );
   }
 
@@ -1460,7 +1961,7 @@ function m7ProblemVisual(
     kind: 'note',
     label: solved ? 'Solved check' : 'Source workspace direction',
     text: solved
-      ? officialAnswer ?? 'Correct work varies; the Teacher Edition requires the drawing, attributes, measurements, labels, and written explanation to satisfy the official prompt.'
+      ? officialAnswer ?? 'Variable correct work must satisfy the Teacher Edition drawing, attributes, measurements, labels, and written explanation required by the official prompt.'
       : `Complete the official ${visualFamily} with authored work only; do not use a source-page image as the workspace.`
   });
 
@@ -1485,7 +1986,7 @@ function m7VisualColumns(display: ProblemSetDataDisplay): string[] {
 
 function m7VisualRows(display: ProblemSetDataDisplay, solved: boolean): string[][] {
   if (display.rows?.length) {
-    return solved ? display.rows.map((row) => row.map((cell) => cell.replace(/____/g, 'Teacher Edition value'))) : display.rows;
+    return solved ? display.rows.map((row) => row.map((cell) => cell.replace(/____/g, 'checked in solved evidence'))) : display.rows;
   }
   if (display.values?.length) {
     return display.values.map((item) => [
@@ -1539,6 +2040,7 @@ function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
       const areaModels = m7AreaModels(lessonNumber, problem.number);
       const dataDisplay = m7DataDisplay(lessonNumber, problem.number);
       const solvedDataDisplay = m7SolvedDataDisplay(lessonNumber, problem.number) ?? dataDisplay;
+      const sourcePrompt = M7_SOURCE_PROMPT_OVERRIDES[`${lessonNumber}-${problem.number}`] ?? problem.prompt;
       const fallbackEquations = problem.equations.length
         ? problem.equations
         : isPerimeter
@@ -1552,7 +2054,7 @@ function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
       const answerValue = m7LastAnswerNumber(officialAnswer, isGrid ? 24 : isPerimeter ? 16 : 8);
       return {
         number: problem.number,
-        sourcePrompt: problem.prompt,
+        sourcePrompt,
         sourcePageImages: blankSourcePageImages,
         blankSourcePageImages,
         solvedSourcePageImages,
@@ -1566,7 +2068,7 @@ function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
         dataDisplay,
         solvedDataDisplay,
         solvedAnswer: isOpenConstruction
-          ? officialAnswer ?? 'Correct work varies. A valid solution must satisfy every attribute, measurement, drawing, critique, or reflection requirement in the official prompt.'
+          ? officialAnswer ?? 'Variable correct work must satisfy every attribute, measurement, drawing, critique, or reflection requirement in the official prompt.'
           : officialAnswer ?? 'Use the Teacher Edition answer key reference to verify the completed model.',
         equations,
         knownTotal: answerValue,
@@ -1622,6 +2124,7 @@ function m6ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
     problems: source.problems.map((problem) => {
       const solvedNote = M6_SOLVED_NOTES[`${lessonNumber}-${problem.number}`];
       const dataDisplay = m6ProblemDisplay(lessonNumber, problem.number);
+      const solvedDataDisplay = m6SolvedProblemDisplay(lessonNumber, problem.number, dataDisplay);
       const sourcePrompt = M6_SOURCE_PROMPT_OVERRIDES[`${lessonNumber}-${problem.number}`] ?? problem.prompt;
       return {
         number: problem.number,
@@ -1634,10 +2137,10 @@ function m6ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
         blankWorkspaceLabel: `Complete the ${visualFamily} scaffold.`,
         blankVisualType: m6BlankVisualType(dataDisplay),
         blankVisual: m6ProblemVisual(lessonNumber, problem.number, visualFamily, dataDisplay, problem.equations, solvedNote, false),
-        solvedVisual: m6ProblemVisual(lessonNumber, problem.number, visualFamily, dataDisplay, problem.equations, solvedNote, true),
+        solvedVisual: m6ProblemVisual(lessonNumber, problem.number, visualFamily, solvedDataDisplay, problem.equations, solvedNote, true),
         dataDisplay,
-        solvedDataDisplay: dataDisplay,
-        solvedAnswer: solvedNote ?? 'Answers vary when the official Teacher Edition marks the survey, measurement collection, scale choice, or explanation as variable.',
+        solvedDataDisplay,
+        solvedAnswer: solvedNote ?? 'Variable responses must include the Teacher Edition criteria for the survey, measurement collection, scale choice, or explanation.',
         equations: problem.equations.length ? problem.equations : solvedNote ? [solvedNote] : ['Use the display evidence and Teacher Edition answer key for fixed values; variable responses must match the student data.'],
         quotient: 1,
         quotientMeaning: 'The answer is the count, comparison, total, scale choice, or explanation requested by the Teacher Edition Problem Set item.',

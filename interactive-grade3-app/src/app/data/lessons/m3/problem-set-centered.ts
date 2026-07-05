@@ -114,16 +114,16 @@ function answerKeyPageImages(start: number, end: number): string[] {
 
 const SOLVED_ANSWERS: Record<number, string[]> = {
   1: [
-    'Teacher Edition Answer Key: a. Answers will vary. b. 14; 3; 28; 35; 6.',
+    'Teacher Edition Answer Key: a. Variable array/model must show the same factor pair relationship. b. 14; 3; 28; 35; 6.',
     'Teacher Edition Answer Key: 24, 4, 6; 24, 6, 4.',
     'Teacher Edition Answer Key: a. 7; b. sixes; 18; c. tens; 80; d. 6; 24; e. 5; 40; f. 4; 4; g. 1; 27; h. 9; 36; i. 3; 32; j. 5; 30; k. 7; 3; 21; l. 5; 5; 20.'
   ],
   2: [
     'Teacher Edition Answer Key: Sevens; 7, 7; 35; 5, 1; 7; 42; 6, 7, 42; 7, 6, 42.',
-    'Teacher Edition Answer Key: a. Eights; 8, 8; 40. b. 48; answers will vary.',
+    'Teacher Edition Answer Key: a. Eights; 8, 8; 40. b. 48; explanation must connect 5 eights plus 1 more eight to 6 eights.',
     'Teacher Edition Answer Key: 63.',
     'Teacher Edition Answer Key: 4.',
-    'Teacher Edition Answer Key: No; explanations will vary.'
+    'Teacher Edition Answer Key: No; explanation must show the proposed fact or strategy does not match the multiplication relationship in the source item.'
   ],
   3: [
     'Teacher Edition Answer Key: e = 20; l = 7; i = 6; c = 3; s = 4; n = 10; t = 70; k = 9; b = 2; a = 24; h = 5; kitchen tables.',
@@ -136,20 +136,20 @@ const SOLVED_ANSWERS: Record<number, string[]> = {
     'Teacher Edition Answer Key: 12, 18, 24; 4, 24; 24, 4.',
     'Teacher Edition Answer Key: 12, 18, 24, 30, 36, 42; 7, 42; 42, 7.',
     'Teacher Edition Answer Key: a. 12, 24, 18, 18, 36, 18, 30, 42. b. 8; 8.',
-    'Teacher Edition Answer Key: No; explanations will vary.'
+    'Teacher Edition Answer Key: No; explanation must use the source equation or model to show why the statement is false.'
   ],
   5: [
     'Teacher Edition Answer Key: 14, 28, 35, 56, 63, 70.',
     'Teacher Edition Answer Key: 21, 35, 49, 56, 70.',
-    'Teacher Edition Answer Key: Explanations will vary.',
-    'Teacher Edition Answer Key: Both are correct; explanations will vary.'
+    'Teacher Edition Answer Key: Explanation must connect the count-by-sevens pattern to the matching multiplication or division fact.',
+    'Teacher Edition Answer Key: Both are correct; explanation must show the same total can be represented by the related multiplication and division facts.'
   ],
   6: [
     'Teacher Edition Answer Key: a. 36; 30; 1, 6; 6; 36. b. 42; 30; 2, 12; 12; 42. c. 48; 30; 3, 18; 3; 3; 18; 48. d. 54; 30; 4, 24; 4; 4; 24; 54.',
     'Teacher Edition Answer Key: 24; 4; 9.',
     'Teacher Edition Answer Key: 14 divided by 7; 14; 2; 7.',
-    'Teacher Edition Answer Key: Yes; explanations will vary.',
-    'Teacher Edition Answer Key: Answers will vary.'
+    'Teacher Edition Answer Key: Yes; explanation must show the decomposed facts add back to the original 6 or 7 fact.',
+    'Teacher Edition Answer Key: Response must use a valid decomposition strategy and keep the product or quotient equivalent to the original fact.'
   ],
   7: [
     'Teacher Edition Answer Key: Words matched to corresponding equations.',
@@ -166,8 +166,8 @@ const SOLVED_ANSWERS: Record<number, string[]> = {
   9: [
     'Teacher Edition Answer Key: a. 36; b. 9; 36; c. 42; d. 3, 2; 6, 7; 42.',
     'Teacher Edition Answer Key: a. Answer provided. b. 4; 28. c. 9, 4; 36. d. 6, 7; 42. e. 5, 9; 45. f. 5, 6; 30.',
-    'Teacher Edition Answer Key: Explanations will vary.',
-    'Teacher Edition Answer Key: Explanations will vary.'
+    'Teacher Edition Answer Key: Explanation must identify which operation is inside the parentheses and how that changes the value.',
+    'Teacher Edition Answer Key: Explanation must compare the two parenthesized expressions and show why their values differ.'
   ],
   10: [
     'Teacher Edition Answer Key: a. Array accurately labeled; 64; 40; 3, 24; 3; 3; 24; 64. b. Array accurately labeled; 72; 40; 4, 32; 4; 4; 32; 72.',
@@ -188,20 +188,20 @@ const SOLVED_ANSWERS: Record<number, string[]> = {
   12: [
     'Teacher Edition Answer Key: a. 54; 9; 9; 54. b. 63; 18; 2; 9; 63. c. 72; 27; 3; 9; 72. d. 81; 36; 4; 9; 81.',
     'Teacher Edition Answer Key: a. 54; 60; 54. b. 63; 70; 63. c. 72; 80; 72. d. 81; 90; 81.',
-    'Teacher Edition Answer Key: 36; answers will vary.',
+    'Teacher Edition Answer Key: 36; explanation must show 9 groups of 4, 4 groups of 9, or an equivalent associative grouping.',
     'Teacher Edition Answer Key: Products and quotients matched.'
   ],
   13: [
     'Teacher Edition Answer Key: a. 18, 27, 45, 54, 63, 81, 90. b. +1. c. -1.',
     'Teacher Edition Answer Key: a. Answer provided. b. 18. c. 28; 27; 27. d. 37; 36; 36. e. 46; 45; 45. f. 55; 54; 54. g. 64; 63; 63. h. 73; 72; 72. i. 82; 81; 81. j. 91; 90; 90.',
-    'Teacher Edition Answer Key: a. +10, -1. b. 99; 108; 117; 126. c. 54; 63; strategy accurately used to solve. d. Answers will vary.',
+    'Teacher Edition Answer Key: a. +10, -1. b. 99; 108; 117; 126. c. 54; 63; strategy accurately used to solve. d. Explanation must describe the nines pattern used.',
     'Teacher Edition Answer Key: a = 6; g = 9; d = 8; o = 90; e = 7; n = 3; s = 4; t = 2; i = 45. Add a “g” and it’s gone!'
   ],
   14: [
-    'Teacher Edition Answer Key: a. Answer provided; 9; 27, 2, 7, 9; 36, 3, 6, 9; 45, 4, 5, 9; 54, 5, 4, 9; 63, 6, 3, 9; 72, 7, 2, 9; 81, 8, 1, 9; 90, 9, 0, 9. b. 9; answers will vary. c. Incorrect; answers will vary.',
-    'Teacher Edition Answer Key: Answers will vary.',
-    'Teacher Edition Answer Key: Explanations will vary.',
-    'Teacher Edition Answer Key: 63; explanations will vary.'
+    'Teacher Edition Answer Key: a. Answer provided; 9; 27, 2, 7, 9; 36, 3, 6, 9; 45, 4, 5, 9; 54, 5, 4, 9; 63, 6, 3, 9; 72, 7, 2, 9; 81, 8, 1, 9; 90, 9, 0, 9. b. 9; explanation must identify the nines digit pattern. c. Incorrect; explanation must show the product pattern does not support the claim.',
+    'Teacher Edition Answer Key: Response must use a valid nines pattern from the source table or finger strategy.',
+    'Teacher Edition Answer Key: Explanation must connect the chosen nines strategy to the product.',
+    'Teacher Edition Answer Key: 63; explanation must show the matching 9 x 7 or 7 x 9 fact.'
   ],
   15: [
     'Teacher Edition Answer Key: 4; solution includes equation and an unknown.',
@@ -214,12 +214,12 @@ const SOLVED_ANSWERS: Record<number, string[]> = {
   16: [
     'Teacher Edition Answer Key: a. 6; b. 0; c. 1; d. 1; e. 0; f. Any number; g. 4; h. 3.',
     'Teacher Edition Answer Key: Equations matched to solutions.',
-    'Teacher Edition Answer Key: 1, 2, 3, 4, 5, 6, 7, 8, 9, n. Answers will vary.',
+    'Teacher Edition Answer Key: 1, 2, 3, 4, 5, 6, 7, 8, 9, n. Explanation must describe the pattern for multiplying by 1 or dividing by 1.',
     'Teacher Edition Answer Key: a. n divided by 1 = n. b. 6 divided by 1 = 6; picture drawn. c. 6 x 1 = 6.',
-    'Teacher Edition Answer Key: a. Explanations may vary. b. Explanations may vary. c. Explanations may vary.'
+    'Teacher Edition Answer Key: a. Explanation must use the 0 or 1 multiplication pattern. b. Explanation must use the 0 or 1 division pattern. c. Explanation must connect the equation to the pattern.'
   ],
   17: [
-    'Teacher Edition Answer Key: Products accurately recorded; answers to parts a-d vary by explanation.',
+    'Teacher Edition Answer Key: Products accurately recorded; answers to parts a-d must explain the observed multiplication-table patterns.',
     'Teacher Edition Answer Key: Products accurately labeled; arrays drawn and labeled.'
   ],
   18: [
@@ -238,11 +238,11 @@ const SOLVED_ANSWERS: Record<number, string[]> = {
   20: [
     'Teacher Edition Answer Key: a. Answer provided. b. 80. c. 15; 150. d. 5; 150.',
     'Teacher Edition Answer Key: Answer provided; 9; 90; 6; 60; 10; 100.',
-    'Teacher Edition Answer Key: Explanations will vary.'
+    'Teacher Edition Answer Key: Explanation must use place value to show why multiplying ones facts by 10 gives tens facts.'
   ],
   21: [
     'Teacher Edition Answer Key: 345 seconds; tape diagram models equation.',
-    'Teacher Edition Answer Key: No; explanations will vary; solution includes model and equation with unknown.',
+    'Teacher Edition Answer Key: No; solution includes a model and equation with an unknown and explains why the proposed answer is not reasonable.',
     'Teacher Edition Answer Key: 400 cents; solution includes model and equation with unknown.',
     'Teacher Edition Answer Key: 9 g; solution includes model and equation with unknown.',
     'Teacher Edition Answer Key: 41; solution includes model and equation with unknown.',

@@ -45,14 +45,14 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Does the shape you drew in Problem 1(a) have the same perimeter as the shape your partner drew for Problem 1(a)? How do you know?",
-      teacherEditionBasis: "Problem Set (5 minutes) Students should do their personal best to complete Problems 2 and 3 of the Problem Set within the allotted 5 minutes. of a shape. G 3-M7-TE-1.3.0 -0 8.2 0 15",
+      teacherEditionBasis: "Problem Set (5 minutes): Students complete Problems 2 and 3 and explain perimeter as the boundary of a shape.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use a 2-inch square to answer the questions below. a. Trace the square in the space below with a red crayon. b. Trace the new shape you made with the square in the space below with a red crayon. c. Which shape has a greater perimeter? How do you know? d. Color the inside of the shapes in Problem 1 (a) and (b) with a blue crayon. of a shape. e. Which color represents the perimeters of the shapes? How do you know? f. What does the other color represent? How do you know? g. Which shape has a greater area? How do you know? Problem 2: a. Outline the perimeter of the shapes below with a red crayon. b. Explain how you know you outlined the perimeters of the shapes above. Problem 3: Outline the perimeter of this piece of paper with a highlighter. of a shape.",
+      studentPrompt: "Problem 1: Use a 2-inch square to answer the questions below. a. Trace the square in the space below with a red crayon. b. Trace the new shape you made with the square in the space below with a red crayon. c. Which shape has a greater perimeter? How do you know? d. Color the inside of the shapes in Problem 1 (a) and (b) with a blue crayon. e. Which color represents the perimeters of the shapes? How do you know? f. What does the other color represent? How do you know? g. Which shape has a greater area? How do you know? Problem 2: a. Outline the perimeter of the shapes below with a red crayon. b. Explain how you know you outlined the perimeters of the shapes above. Problem 3: Outline the perimeter of this piece of paper with a highlighter.",
       teacherEditionBasis: "Module 7 Teacher Edition, Lesson 10 Problem Set.",
       visualModel: "geometry"
     },
@@ -60,7 +60,7 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (5 minutes) Students should do their personal best to complete Problems 2 and 3 of the Problem Set within the allotted 5 minutes. of a shape. G 3-M7-TE-1.3.0 -0 8.2 0 15",
+      studentPrompt: "Problem Set (5 minutes): Students complete Problems 2 and 3 and explain perimeter as the boundary of a shape.",
       teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 140-150.",
       visualModel: "geometry"
     },
@@ -113,7 +113,7 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (5 minutes) Students should do their personal best to complete Problems 2 and 3 of the Problem Set within the allotted 5 minutes. of a shape. G 3-M7-TE-1.3.0 -0 8.2 0 15"
+        value: "Problem Set (5 minutes): Students complete Problems 2 and 3 and explain perimeter as the boundary of a shape."
       },
       {
         label: "Source text",
@@ -131,7 +131,7 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Use a 2-inch square to answer the questions below. a. Trace the square in the space below with a red crayon. b. Trace the new shape you made with the square in the space below with a red crayon. c. Which shape has a greater perimeter? How do you know? d. Color the inside of the shapes in Problem 1 (a) and (b) with a blue crayon. of a shape. e. Which color represents the perimeters of the shapes? How do you know? f. What does the other color represent? How do you know? g. Which shape has a greater area? How do you know? Problem 2: a. Outline the perimeter of the shapes below with a red crayon. b. Explain how you know you outlined the perimeters of the shapes above. Problem 3: Outline the perimeter of this piece of paper with a highlighter. of a shape."
+        value: "Problem 1: Use a 2-inch square to answer the questions below. a. Trace the square in the space below with a red crayon. b. Trace the new shape you made with the square in the space below with a red crayon. c. Which shape has a greater perimeter? How do you know? d. Color the inside of the shapes in Problem 1 (a) and (b) with a blue crayon. e. Which color represents the perimeters of the shapes? How do you know? f. What does the other color represent? How do you know? g. Which shape has a greater area? How do you know? Problem 2: a. Outline the perimeter of the shapes below with a red crayon. b. Explain how you know you outlined the perimeters of the shapes above. Problem 3: Outline the perimeter of this piece of paper with a highlighter."
       },
       {
         label: "Workbook",
@@ -145,7 +145,7 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (5 minutes) Students should do their personal best to complete Problems 2 and 3 of the Problem Set within the allotted 5 minutes. of a shape. G 3-M7-TE-1.3.0 -0 8.2 0 15"
+        value: "Problem Set (5 minutes): Students complete Problems 2 and 3 and explain perimeter as the boundary of a shape."
       },
       {
         label: "Workbook",
