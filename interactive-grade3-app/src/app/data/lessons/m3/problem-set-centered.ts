@@ -80,6 +80,37 @@ const WORKBOOK_PAGE_IMAGES: Record<number, string[]> = {
   21: ['lesson-21-page-91.png', 'lesson-21-page-92.png']
 };
 
+const ANSWER_KEY_PAGE_IMAGES: Record<number, string[]> = {
+  1: answerKeyPageImages(281, 282),
+  2: answerKeyPageImages(283, 284),
+  3: answerKeyPageImages(285, 285),
+  4: answerKeyPageImages(286, 286),
+  5: answerKeyPageImages(287, 288),
+  6: answerKeyPageImages(289, 290),
+  7: answerKeyPageImages(291, 292),
+  8: answerKeyPageImages(293, 295),
+  9: answerKeyPageImages(296, 297),
+  10: answerKeyPageImages(298, 298),
+  11: answerKeyPageImages(299, 300),
+  12: answerKeyPageImages(301, 302),
+  13: answerKeyPageImages(303, 304),
+  14: answerKeyPageImages(305, 306),
+  15: answerKeyPageImages(307, 308),
+  16: answerKeyPageImages(309, 310),
+  17: answerKeyPageImages(311, 311),
+  18: answerKeyPageImages(312, 313),
+  19: answerKeyPageImages(314, 314),
+  20: answerKeyPageImages(315, 315),
+  21: answerKeyPageImages(316, 317)
+};
+
+function answerKeyPageImages(start: number, end: number): string[] {
+  return Array.from({ length: end - start + 1 }, (_, index) => {
+    const page = String(start + index).padStart(3, '0');
+    return `/source-pages/m3-answer-key/page-${page}.png`;
+  });
+}
+
 const SOLVED_ANSWERS: Record<number, string[]> = {
   1: [
     'Teacher Edition Answer Key: a. Answers will vary. b. 14; 3; 28; 35; 6.',
@@ -765,6 +796,7 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
   const objective = LESSON_OBJECTIVES[lessonNumber];
   const summary = LESSON_SUMMARIES[lessonNumber];
   const sourcePageImages = WORKBOOK_PAGE_IMAGES[lessonNumber].map((imageName) => `/source-pages/m3/${imageName}`);
+  const answerKeyImages = ANSWER_KEY_PAGE_IMAGES[lessonNumber] ?? [];
   return {
     title: `Lesson ${lessonNumber}: ${objective}`,
     concept: summary,
@@ -773,6 +805,8 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
     summary,
     sourceNote: `${source.teacherEditionSource} Module 3 Teacher Edition Problem Set and Answer Key, printed pages 279-316. Matching official workbook pages are collapsed as visual source references only.`,
     sourcePageImages,
+    blankSourcePageImages: sourcePageImages,
+    solvedSourcePageImages: [...sourcePageImages, ...answerKeyImages],
     conceptSections: [
       {
         title: '1. Teacher Edition objective',
@@ -811,7 +845,7 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
         ...centeredProblem,
         sourcePageImages: centeredProblem.sourcePageImages ?? sourcePageImages,
         blankSourcePageImages: centeredProblem.blankSourcePageImages ?? sourcePageImages,
-        solvedSourcePageImages: centeredProblem.solvedSourcePageImages ?? sourcePageImages
+        solvedSourcePageImages: centeredProblem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages]
       };
     })
   };

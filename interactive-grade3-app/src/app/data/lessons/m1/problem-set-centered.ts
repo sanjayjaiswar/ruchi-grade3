@@ -71,6 +71,30 @@ const M1_PROBLEM_SET_SOURCE_PAGES: Record<number, string[]> = {
   21: teacherEditionPageImages(272, 273)
 };
 
+const M1_ANSWER_KEY_SOURCE_PAGES: Record<number, string[]> = {
+  1: teacherEditionPageImages(292, 292),
+  2: teacherEditionPageImages(293, 294),
+  3: teacherEditionPageImages(295, 296),
+  4: teacherEditionPageImages(297, 298),
+  5: teacherEditionPageImages(299, 299),
+  6: teacherEditionPageImages(300, 300),
+  7: teacherEditionPageImages(301, 302),
+  8: teacherEditionPageImages(303, 304),
+  9: teacherEditionPageImages(305, 306),
+  10: teacherEditionPageImages(307, 308),
+  11: teacherEditionPageImages(309, 310),
+  12: teacherEditionPageImages(311, 312),
+  13: teacherEditionPageImages(313, 314),
+  14: teacherEditionPageImages(315, 316),
+  15: teacherEditionPageImages(317, 318),
+  16: teacherEditionPageImages(319, 320),
+  17: teacherEditionPageImages(321, 322),
+  18: teacherEditionPageImages(323, 324),
+  19: teacherEditionPageImages(325, 325),
+  20: teacherEditionPageImages(326, 327),
+  21: teacherEditionPageImages(328, 329)
+};
+
 function teacherEditionPageImages(start: number, end: number): string[] {
   return Array.from({ length: end - start + 1 }, (_, index) => {
     const page = String(start + index).padStart(3, '0');
@@ -171,6 +195,7 @@ function blankEquation(equation: string): string {
 function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
   const teacherEditionImages = teacherEditionPageImagesFromBasis(seed.teacherEditionBasis);
   const problemSetImages = M1_PROBLEM_SET_SOURCE_PAGES[seed.lessonNumber] ?? teacherEditionImages;
+  const answerKeyImages = M1_ANSWER_KEY_SOURCE_PAGES[seed.lessonNumber] ?? [];
 
   return {
     title: seed.title,
@@ -181,7 +206,7 @@ function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
     sourceNote: teacherEditionSourceNote(seed),
     sourcePageImages: teacherEditionImages,
     blankSourcePageImages: teacherEditionImages,
-    solvedSourcePageImages: teacherEditionImages,
+    solvedSourcePageImages: [...teacherEditionImages, ...answerKeyImages],
     conceptSections: [
       {
         title: `1. Teacher Edition Lesson ${seed.lessonNumber} concept development`,
@@ -217,6 +242,8 @@ function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
     problems: seed.problems.map((problem) =>
       makeProblem({
         sourcePageImages: problemSetImages,
+        blankSourcePageImages: problemSetImages,
+        solvedSourcePageImages: [...problemSetImages, ...answerKeyImages],
         ...sourcePromptFromWorkbook(seed.lessonNumber, problem)
       })
     )

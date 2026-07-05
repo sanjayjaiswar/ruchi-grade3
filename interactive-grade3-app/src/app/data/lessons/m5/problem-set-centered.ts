@@ -87,6 +87,39 @@ const DENOMINATOR_LABELS: Record<number, string> = {
 
 const m5TeacherPageBase = '/source-pages/m5-teacher';
 
+const M5_ANSWER_KEY_SOURCE_PAGES: Record<number, string[]> = {
+  1: pageImages(pageRange(368, 368)),
+  2: pageImages(pageRange(369, 369)),
+  3: pageImages(pageRange(370, 371)),
+  4: pageImages(pageRange(372, 373)),
+  5: pageImages(pageRange(374, 374)),
+  6: pageImages(pageRange(375, 376)),
+  7: pageImages(pageRange(377, 378)),
+  8: pageImages(pageRange(379, 381)),
+  9: pageImages(pageRange(382, 383)),
+  10: pageImages(pageRange(384, 385)),
+  11: pageImages(pageRange(386, 386)),
+  12: pageImages(pageRange(387, 388)),
+  13: pageImages(pageRange(389, 389)),
+  14: pageImages(pageRange(390, 391)),
+  15: pageImages(pageRange(392, 393)),
+  16: pageImages(pageRange(394, 395)),
+  17: pageImages(pageRange(396, 397)),
+  18: pageImages(pageRange(398, 399)),
+  19: pageImages(pageRange(400, 401)),
+  20: pageImages(pageRange(402, 403)),
+  21: pageImages(pageRange(404, 404)),
+  22: pageImages(pageRange(405, 405)),
+  23: pageImages(pageRange(406, 407)),
+  24: pageImages(pageRange(408, 409)),
+  25: pageImages(pageRange(410, 411)),
+  26: pageImages(pageRange(412, 413)),
+  27: pageImages(pageRange(414, 415)),
+  28: pageImages(pageRange(416, 417)),
+  29: pageImages(pageRange(418, 419)),
+  30: pageImages(pageRange(420, 420))
+};
+
 const M5_OVERRIDES: Record<number, Record<number, {
   fractionModels?: ProblemSetFractionModel[];
   numberLineModels?: ProblemSetNumberLineModel[];
@@ -311,6 +344,7 @@ const LESSON30_PAPER_PARTITION_MODEL: ProblemSetPaperPartitionModel = {
 
 function makeLesson1(): ProblemSetCenteredLesson {
   const sourcePageImages = pageImages(pageRange(12, 21));
+  const answerKeyImages = M5_ANSWER_KEY_SOURCE_PAGES[1] ?? [];
   const problems: ProblemSetCenteredProblem[] = [
     {
       number: 1,
@@ -477,7 +511,7 @@ function makeLesson1(): ProblemSetCenteredLesson {
     sourceNote: 'Teacher Edition Lesson 1 Concept Development and Problem Set, printed pages 12-18. Problem Set pages 16-17 supply the five official problem prompts and diagrams.',
     sourcePageImages,
     blankSourcePageImages: sourcePageImages,
-    solvedSourcePageImages: sourcePageImages,
+    solvedSourcePageImages: [...sourcePageImages, ...answerKeyImages],
     conceptSections: [
       {
         title: '1. Partition 12-inch strips',
@@ -524,13 +558,14 @@ function makeLesson1(): ProblemSetCenteredLesson {
       ...problem,
       sourcePageImages: problem.sourcePageImages ?? sourcePageImages,
       blankSourcePageImages: problem.blankSourcePageImages ?? sourcePageImages,
-      solvedSourcePageImages: problem.solvedSourcePageImages ?? sourcePageImages
+      solvedSourcePageImages: problem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages]
     }))
   };
 }
 
 function makeLesson30(): ProblemSetCenteredLesson {
   const sourcePageImages = pageImages(pageRange(351, 355));
+  const answerKeyImages = M5_ANSWER_KEY_SOURCE_PAGES[30] ?? [];
   const problem: ProblemSetCenteredProblem = {
     number: 1,
     sourcePrompt: 'There is no Problem Set sheet for this lesson. Use the same process to precisely mark off red strips into halves, fourths, fifths, sevenths, ninths, and tenths.',
@@ -580,7 +615,7 @@ function makeLesson30(): ProblemSetCenteredLesson {
     sourceNote: 'Teacher Edition pages 353-354 show Steps 1-5 with lined paper, vertical extensions, the red strip, and the no-sheet Problem Set challenge. Student Workbook page 120 is a written homework reflection, not a Problem Set sheet.',
     sourcePageImages,
     blankSourcePageImages: sourcePageImages,
-    solvedSourcePageImages: sourcePageImages,
+    solvedSourcePageImages: [...sourcePageImages, ...answerKeyImages],
     conceptSections: [
       {
         title: '1. Build the base number line',
@@ -627,7 +662,7 @@ function makeLesson30(): ProblemSetCenteredLesson {
       ...problem,
       sourcePageImages: problem.sourcePageImages ?? sourcePageImages,
       blankSourcePageImages: problem.blankSourcePageImages ?? sourcePageImages,
-      solvedSourcePageImages: problem.solvedSourcePageImages ?? sourcePageImages
+      solvedSourcePageImages: problem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages]
     }]
   };
 }
@@ -848,6 +883,7 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
     ? M5_WORKBOOK_PROBLEMS[lessonNumber]
     : (source?.problems ?? []);
   const sourcePageImages = teacherEditionLessonPages(source?.teacherEditionSource ?? '');
+  const answerKeyImages = M5_ANSWER_KEY_SOURCE_PAGES[lessonNumber] ?? [];
   const problems = (sourceProblems.length ? sourceProblems : [
     {
       number: 1,
@@ -860,7 +896,7 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
       ...centeredProblem,
       sourcePageImages: centeredProblem.sourcePageImages ?? sourcePageImages,
       blankSourcePageImages: centeredProblem.blankSourcePageImages ?? sourcePageImages,
-      solvedSourcePageImages: centeredProblem.solvedSourcePageImages ?? sourcePageImages
+      solvedSourcePageImages: centeredProblem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages]
     };
   });
   return {
@@ -872,7 +908,7 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
     sourceNote: source?.studentWorkbookSource ?? `Module 5 student workbook, Lesson ${lessonNumber}.`,
     sourcePageImages,
     blankSourcePageImages: sourcePageImages,
-    solvedSourcePageImages: sourcePageImages,
+    solvedSourcePageImages: [...sourcePageImages, ...answerKeyImages],
     conceptSections: [
       {
         title: '1. Teacher Edition concept',

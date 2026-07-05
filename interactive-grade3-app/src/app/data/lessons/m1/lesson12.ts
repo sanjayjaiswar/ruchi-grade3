@@ -5,6 +5,8 @@ const lesson12TeacherEditionPages = Array.from(
   (_, index) => `/source-pages/m1-teacher/page-${String(index + 162).padStart(3, '0')}.png`
 );
 const lesson12ProblemSetPages = ['/source-pages/m1-teacher/page-169.png', '/source-pages/m1-teacher/page-170.png'];
+const lesson12AnswerKeyPages = ['/source-pages/m1-teacher/page-311.png', '/source-pages/m1-teacher/page-312.png'];
+const lesson12SolvedSourcePages = [...lesson12ProblemSetPages, ...lesson12AnswerKeyPages];
 
 export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
@@ -20,7 +22,7 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
     sourceNote: "Teacher Edition Lesson 12 pages 162-173 are the source of truth for the concept development, Problem Set, and Student Debrief.",
     sourcePageImages: lesson12TeacherEditionPages,
     blankSourcePageImages: lesson12TeacherEditionPages,
-    solvedSourcePageImages: lesson12TeacherEditionPages,
+    solvedSourcePageImages: [...lesson12TeacherEditionPages, ...lesson12AnswerKeyPages],
     conceptSections: [
       {
         title: "1. Quotient as objects in each group",
@@ -67,6 +69,8 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
       {
         number: 1,
         sourcePageImages: lesson12ProblemSetPages,
+        blankSourcePageImages: lesson12ProblemSetPages,
+        solvedSourcePageImages: lesson12SolvedSourcePages,
         sourcePrompt: "There are 8 birds at the pet store. Two birds are in each cage. Circle to show how many cages there are.",
         blankPrompts: ["Circle to show how many cages there are."],
         blankEquations: ["8 divided by 2 = ____"],
@@ -92,6 +96,8 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
       {
         number: 2,
         sourcePageImages: lesson12ProblemSetPages,
+        blankSourcePageImages: lesson12ProblemSetPages,
+        solvedSourcePageImages: lesson12SolvedSourcePages,
         sourcePrompt: "The pet store sells 10 fish. They equally divide the fish into 5 bowls. Draw fish to find the number in each bowl.",
         blankPrompts: ["Draw fish to find the number in each bowl."],
         blankEquations: ["5 times ____ = 10", "10 divided by 5 = ____"],
@@ -117,6 +123,8 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
       {
         number: 3,
         sourcePageImages: lesson12ProblemSetPages,
+        blankSourcePageImages: lesson12ProblemSetPages,
+        solvedSourcePageImages: lesson12SolvedSourcePages,
         sourcePrompt: "Match the division facts: 10 divided by 2, 18 divided by 2, 12 divided by 2, 16 divided by 2, and 14 divided by 2.",
         blankPrompts: ["Match each division fact to its quotient."],
         blankEquations: ["10 divided by 2", "18 divided by 2", "12 divided by 2", "16 divided by 2", "14 divided by 2"],
@@ -146,6 +154,8 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
       {
         number: 4,
         sourcePageImages: lesson12ProblemSetPages,
+        blankSourcePageImages: lesson12ProblemSetPages,
+        solvedSourcePageImages: lesson12SolvedSourcePages,
         sourcePrompt: "Laina buys 14 meters of ribbon. She cuts her ribbon into 2 equal pieces. How many meters long is each piece?",
         blankPrompts: ["Label the tape diagram to represent the problem, including the unknown."],
         blankEquations: ["14 divided by 2 = ____"],
@@ -171,6 +181,8 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
       {
         number: 5,
         sourcePageImages: lesson12ProblemSetPages,
+        blankSourcePageImages: lesson12ProblemSetPages,
+        solvedSourcePageImages: lesson12SolvedSourcePages,
         sourcePrompt: "Roy eats 2 cereal bars every morning. Each box has a total of 12 bars. How many days will it take Roy to finish 1 box?",
         blankPrompts: ["Show or explain how many groups of 2 bars are in 12 bars."],
         blankEquations: ["12 divided by 2 = ____"],
@@ -196,6 +208,8 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
       {
         number: 6,
         sourcePageImages: lesson12ProblemSetPages,
+        blankSourcePageImages: lesson12ProblemSetPages,
+        solvedSourcePageImages: lesson12SolvedSourcePages,
         sourcePrompt: "Sarah and Esther equally share the cost of a present. The present costs 18 dollars. How much does Sarah pay?",
         blankPrompts: ["Draw or label two equal shares of the 18-dollar cost."],
         blankEquations: ["18 divided by 2 = ____"],
