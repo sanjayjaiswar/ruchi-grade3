@@ -17,6 +17,7 @@ import {
   ProblemSetCenteredProblem,
   ProblemSetConcreteFractionModel,
   ProblemSetConcreteFractionItem,
+  ProblemSetRelatedFact,
   ProblemSetFractionModel,
   ProblemSetNumberLineModel,
   ProblemSetPaperPartitionModel,
@@ -661,6 +662,89 @@ export class LessonPage implements OnInit {
 
   problemDecomposeSlots(part: { rows: number; columns: number }): number[] {
     return this.countSlots(part.rows * part.columns, 80);
+  }
+
+  relatedFactKnownSlots(fact: ProblemSetRelatedFact): number[] {
+    return this.countSlots(fact.firstPart * fact.groupSize, 80);
+  }
+
+  relatedFactExtraSlots(fact: ProblemSetRelatedFact): number[] {
+    return this.countSlots(fact.secondPart * fact.groupSize, 80);
+  }
+
+  relatedFactRows(fact: ProblemSetRelatedFact): Array<{ row: number; isKnown: boolean; columns: number[] }> {
+    return Array.from({ length: fact.totalGroups }, (_, index) => ({
+      row: index + 1,
+      isKnown: index < fact.firstPart,
+      columns: this.countSlots(fact.groupSize, 12)
+    }));
+  }
+
+  lesson16KnownLine(fact: ProblemSetRelatedFact): string {
+    return this.problemSetMode === 'solved'
+      ? fact.knownFact
+      : fact.label === 'a'
+        ? '5 x 4 = 20'
+        : '5 x 4 = ____';
+  }
+
+  lesson16ExtraLine(fact: ProblemSetRelatedFact): string {
+    if (this.problemSetMode === 'solved') {
+      return fact.extraFact;
+    }
+    return fact.label === 'a' || fact.label === 'b'
+      ? `${fact.secondPart} x 4 = ____`
+      : '____ x 4 = ____';
+  }
+
+  lesson16TargetAnswer(fact: ProblemSetRelatedFact): string {
+    return this.problemSetMode === 'solved' ? `${fact.targetFact} = ${fact.product}` : `${fact.targetFact} = ____`;
+  }
+
+  lesson16EquationBox(fact: ProblemSetRelatedFact): string {
+    return this.problemSetMode === 'solved' ? fact.solvedEquation : fact.blankEquation;
+  }
+
+  lesson16EquationLines(fact: ProblemSetRelatedFact): string[] {
+    if (this.problemSetMode === 'solved') {
+      return [
+        `${fact.targetFact} = (5 x 4) + (${fact.secondPart} x 4)`,
+        `= 20 + ${fact.secondPart * fact.groupSize}`,
+        `= ${fact.product}`
+      ];
+    }
+
+    if (fact.label === 'a') {
+      return [
+        `${fact.targetFact} = (5 x 4) + (1 x 4)`,
+        '= 20 + ______',
+        '= ______'
+      ];
+    }
+
+    if (fact.label === 'b') {
+      return [
+        `${fact.targetFact} = (5 x 4) + (2 x 4)`,
+        '= ______ + ______',
+        '= 28'
+      ];
+    }
+
+    return [
+      `${fact.targetFact} = (5 x 4) + (____ x 4)`,
+      '= ______ + ______',
+      '= ______'
+    ];
+  }
+
+  lesson16CloudFacts(problem: ProblemSetCenteredProblem): ProblemSetRelatedFact[] {
+    const facts = problem.relatedFacts ?? [];
+    return [facts[2], facts[0], facts[3], facts[1]].filter((fact): fact is ProblemSetRelatedFact => Boolean(fact));
+  }
+
+  lesson16BalloonFacts(problem: ProblemSetCenteredProblem): ProblemSetRelatedFact[] {
+    const facts = problem.relatedFacts ?? [];
+    return [facts[3], facts[2], facts[0], facts[1]].filter((fact): fact is ProblemSetRelatedFact => Boolean(fact));
   }
 
   areaModelSlots(areaModel: { rows: number; columns: number }): number[] {

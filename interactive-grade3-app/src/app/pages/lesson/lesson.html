@@ -202,6 +202,91 @@
             </div>
           </section>
 
+          <section
+            class="lesson16-concept-review"
+            *ngIf="module.id === 'm1' && lesson.lessonNumber === 16"
+            aria-label="Lesson 16 full concept review">
+            <div class="lesson16-review-head">
+              <span class="eyebrow">Full lesson review</span>
+              <h3>Use one known fact to build the whole Problem Set</h3>
+              <p>Every item in Lesson 16 starts with the same idea: keep 5 rows of 4 visible, add the remaining rows of 4, then write the total as a sum of partial products.</p>
+            </div>
+
+            <div class="lesson16-source-walkthrough">
+              <article>
+                <div>
+                  <strong>Problem 1 figure</strong>
+                  <p>The worksheet repeats the same visual move four times: grey 5 x 4 rows first, white extra rows second, dashed split line between the two facts.</p>
+                </div>
+                <div class="lesson16-array-worksheet is-concept">
+                  <article *ngFor="let fact of problemLesson.problems[0].relatedFacts">
+                    <h4>{{ fact.label }}. {{ fact.targetFact }} = {{ fact.product }}</h4>
+                    <div class="lesson16-array-work">
+                      <div class="lesson16-source-array" [attr.aria-label]="fact.targetFact + ' concept source array'">
+                        <span
+                          *ngFor="let row of relatedFactRows(fact)"
+                          class="lesson16-source-row"
+                          [class.is-known]="row.isKnown"
+                          [class.is-extra]="!row.isKnown"
+                          [class.has-split]="row.row === fact.firstPart">
+                          <i *ngFor="let column of row.columns"></i>
+                        </span>
+                      </div>
+                      <div class="lesson16-array-labels">
+                        <span>{{ fact.knownFact }}</span>
+                        <span>{{ fact.extraFact }}</span>
+                      </div>
+                    </div>
+                    <div class="lesson16-equation-box">
+                      <span>{{ fact.solvedEquation }}</span>
+                    </div>
+                  </article>
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <strong>Problem 2 figure</strong>
+                  <p>The clouds are decomposed expressions. The balloons are the matching facts and products. The answer key gives the match order.</p>
+                </div>
+                <div class="lesson16-match-board is-concept">
+                  <div class="lesson16-cloud-row">
+                    <span class="lesson16-cloud" *ngFor="let fact of lesson16CloudFacts(problemLesson.problems[1])">{{ fact.knownFact }}</span>
+                  </div>
+                  <div class="lesson16-balloon-row">
+                    <span class="lesson16-balloon" *ngFor="let fact of lesson16BalloonFacts(problemLesson.problems[1])">
+                      <b>{{ fact.targetFact }}</b>
+                      <em>{{ fact.product }}</em>
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <strong>Problem 3 figure</strong>
+                  <p>Nolan's 10 x 4 array is two 5 x 4 arrays. The debrief language is “10 fours broken into two smaller facts.”</p>
+                </div>
+                <div class="lesson16-nolan-work is-concept" *ngFor="let fact of problemLesson.problems[2].relatedFacts">
+                  <div class="lesson16-source-array is-nolan" aria-label="Concept Nolan 10 by 4 split array">
+                    <span
+                      *ngFor="let row of relatedFactRows(fact)"
+                      class="lesson16-source-row"
+                      [class.is-known]="row.isKnown"
+                      [class.is-extra]="!row.isKnown"
+                      [class.has-split]="row.row === fact.firstPart">
+                      <i *ngFor="let column of row.columns"></i>
+                    </span>
+                  </div>
+                  <div class="lesson16-equation-box">
+                    <b>{{ fact.targetFact }}</b>
+                    <span>{{ fact.solvedEquation }}</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
           <section class="problem-source-pages is-teacher-source" *ngIf="conceptSourcePageImages(problemLesson).length" [attr.aria-label]="'Official Teacher Edition Problem Set pages for Module ' + module.number + ' Lesson ' + lesson.lessonNumber">
             <div class="source-pages-heading">
               <strong>Official Teacher Edition Problem Set pages</strong>
@@ -285,6 +370,7 @@
             class="problem-solution-card"
             [class.has-source-pages]="hasProblemSourcePages(problem)"
             [class.is-blank-mode]="problemSetMode === 'blank'"
+            [class.is-lesson16-source]="module.id === 'm1' && lesson.lessonNumber === 16 && problem.relatedFacts?.length"
             *ngFor="let problem of problemLesson.problems"
             [id]="problemDomId(problem.number)">
             <div class="problem-solution-head">
@@ -296,7 +382,9 @@
             </div>
 
             <div class="blank-problem-body" *ngIf="problemSetMode === 'blank'; else solvedProblemBody">
-              <div class="blank-workspace-card">
+              <div
+                class="blank-workspace-card"
+                [class.is-lesson16-source-card]="module.id === 'm1' && lesson.lessonNumber === 16 && problem.relatedFacts?.length">
                 <strong>Interactive workspace</strong>
                 <div class="blank-source-model" [ngSwitch]="problem.blankVisualType">
                   <div *ngSwitchCase="'object-bank'" class="blank-object-bank">
@@ -317,16 +405,31 @@
                   </div>
 
                   <div *ngSwitchCase="'fact-match'" class="blank-fact-match-source">
-                    <div *ngFor="let fact of problem.facts || []">
-                      <span>{{ fact.dividend }} divided by {{ fact.divisor }}</span>
-                      <i></i>
-                      <em>____</em>
-                    </div>
-                    <div *ngFor="let equation of !problem.facts?.length ? problem.blankEquations || [] : []">
-                      <span>{{ equation }}</span>
-                      <i></i>
-                      <em>____</em>
-                    </div>
+                    <ng-container *ngIf="problem.relatedFacts?.length; else blankFactMatchDefault">
+                      <div class="lesson16-match-board is-blank">
+                        <div class="lesson16-cloud-row">
+                          <span class="lesson16-cloud" *ngFor="let fact of lesson16CloudFacts(problem)">{{ fact.knownFact }}</span>
+                        </div>
+                        <div class="lesson16-balloon-row">
+                          <span class="lesson16-balloon" *ngFor="let fact of lesson16BalloonFacts(problem)">
+                            <b>{{ fact.targetFact }}</b>
+                            <em>____</em>
+                          </span>
+                        </div>
+                      </div>
+                    </ng-container>
+                    <ng-template #blankFactMatchDefault>
+                      <div *ngFor="let fact of problem.facts || []">
+                        <span>{{ fact.dividend }} divided by {{ fact.divisor }}</span>
+                        <i></i>
+                        <em>____</em>
+                      </div>
+                      <div *ngFor="let equation of !problem.facts?.length ? problem.blankEquations || [] : []">
+                        <span>{{ equation }}</span>
+                        <i></i>
+                        <em>____</em>
+                      </div>
+                    </ng-template>
                   </div>
 
                   <div *ngSwitchCase="'tape-diagram'" class="blank-tape-source">
@@ -358,13 +461,60 @@
                   </div>
 
                   <div *ngSwitchCase="'array-template'" class="blank-array-source">
-                    <strong>{{ problem.blankWorkspaceLabel || 'Complete the official array.' }}</strong>
-                    <div
-                      [style.gridTemplateColumns]="'repeat(' + problemArrayColumns(problem) + ', minmax(18px, 1fr))'"
-                      [attr.aria-label]="problemArrayRows(problem) + ' rows of ' + problemArrayColumns(problem)">
-                      <span *ngFor="let item of problemArraySlots(problem)"></span>
-                    </div>
-                    <small>{{ problemArrayRows(problem) }} {{ problem.groupLabel }} of {{ problemArrayColumns(problem) }} {{ problem.unitLabel }}</small>
+                    <ng-container *ngIf="problem.relatedFacts?.length; else blankArrayDefault">
+                      <strong>{{ problem.blankWorkspaceLabel || 'Complete the official array.' }}</strong>
+                      <div class="lesson16-array-worksheet" *ngIf="problem.number === 1; else lesson16SingleArrayBlank">
+                        <article *ngFor="let fact of problem.relatedFacts">
+                          <h4>{{ fact.label }}. {{ lesson16TargetAnswer(fact) }}</h4>
+                          <div class="lesson16-array-work">
+                            <div class="lesson16-source-array" [attr.aria-label]="fact.targetFact + ' source-style array'">
+                              <span
+                                *ngFor="let row of relatedFactRows(fact)"
+                                class="lesson16-source-row"
+                                [class.is-known]="row.isKnown"
+                                [class.is-extra]="!row.isKnown"
+                                [class.has-split]="row.row === fact.firstPart">
+                                <i *ngFor="let column of row.columns"></i>
+                              </span>
+                            </div>
+                            <div class="lesson16-array-labels">
+                              <span>{{ lesson16KnownLine(fact) }}</span>
+                              <span>{{ lesson16ExtraLine(fact) }}</span>
+                            </div>
+                          </div>
+                          <div class="lesson16-equation-box">
+                            <span *ngFor="let line of lesson16EquationLines(fact)">{{ line }}</span>
+                          </div>
+                        </article>
+                      </div>
+                      <ng-template #lesson16SingleArrayBlank>
+                        <div class="lesson16-nolan-work" *ngFor="let fact of problem.relatedFacts">
+                          <div class="lesson16-source-array is-nolan" aria-label="Nolan 10 by 4 split array">
+                            <span
+                              *ngFor="let row of relatedFactRows(fact)"
+                              class="lesson16-source-row"
+                              [class.is-known]="row.isKnown"
+                              [class.is-extra]="!row.isKnown"
+                              [class.has-split]="row.row === fact.firstPart">
+                              <i *ngFor="let column of row.columns"></i>
+                            </span>
+                          </div>
+                        <div class="lesson16-equation-box">
+                          <b>Explain Nolan's strategy.</b>
+                          <span>{{ fact.blankEquation }}</span>
+                        </div>
+                      </div>
+                      </ng-template>
+                    </ng-container>
+                    <ng-template #blankArrayDefault>
+                      <strong>{{ problem.blankWorkspaceLabel || 'Complete the official array.' }}</strong>
+                      <div
+                        [style.gridTemplateColumns]="'repeat(' + problemArrayColumns(problem) + ', minmax(18px, 1fr))'"
+                        [attr.aria-label]="problemArrayRows(problem) + ' rows of ' + problemArrayColumns(problem)">
+                        <span *ngFor="let item of problemArraySlots(problem)"></span>
+                      </div>
+                      <small>{{ problemArrayRows(problem) }} {{ problem.groupLabel }} of {{ problemArrayColumns(problem) }} {{ problem.unitLabel }}</small>
+                    </ng-template>
                   </div>
 
                   <div *ngSwitchCase="'area-models-template'" class="m4-area-models">
@@ -652,7 +802,7 @@
                   </div>
                 </div>
               </div>
-              <div class="blank-response-card" *ngIf="problem.blankEquations?.length || problem.blankAnswerSentence">
+              <div class="blank-response-card" *ngIf="!problem.relatedFacts?.length && (problem.blankEquations?.length || problem.blankAnswerSentence)">
                 <div class="equation-list" *ngIf="problem.blankEquations?.length">
                   <span *ngFor="let equation of problem.blankEquations">{{ equation }}</span>
                 </div>
@@ -695,17 +845,35 @@
                   </div>
                 </div>
 
-                <div *ngSwitchCase="'fact-match'" class="ps-fact-match-model" aria-label="Division fact matches">
-                  <div class="ps-fact-row" *ngFor="let fact of problem.facts || []">
-                    <span>{{ fact.dividend }} divided by {{ fact.divisor }}</span>
-                    <i></i>
-                    <strong>{{ fact.quotient }}</strong>
-                  </div>
-                  <div class="ps-fact-row" *ngFor="let equation of !problem.facts?.length ? problem.equations : []">
-                    <span>{{ equation }}</span>
-                    <i></i>
-                    <strong>check</strong>
-                  </div>
+                <div *ngSwitchCase="'fact-match'" class="ps-fact-match-model" aria-label="Related fact matches">
+                  <ng-container *ngIf="problem.relatedFacts?.length; else solvedFactMatchDefault">
+                    <div class="lesson16-match-board is-solved">
+                      <div class="lesson16-cloud-row">
+                        <span class="lesson16-cloud" *ngFor="let fact of lesson16CloudFacts(problem)">{{ fact.knownFact }}</span>
+                      </div>
+                      <div class="lesson16-balloon-row">
+                        <span class="lesson16-balloon" *ngFor="let fact of lesson16BalloonFacts(problem)">
+                          <b>{{ fact.targetFact }}</b>
+                          <em>{{ fact.product }}</em>
+                        </span>
+                      </div>
+                      <div class="lesson16-match-key">
+                        <span *ngFor="let fact of lesson16CloudFacts(problem)">{{ fact.knownFact }} matched to {{ fact.targetFact }}</span>
+                      </div>
+                    </div>
+                  </ng-container>
+                  <ng-template #solvedFactMatchDefault>
+                    <div class="ps-fact-row" *ngFor="let fact of problem.facts || []">
+                      <span>{{ fact.dividend }} divided by {{ fact.divisor }}</span>
+                      <i></i>
+                      <strong>{{ fact.quotient }}</strong>
+                    </div>
+                    <div class="ps-fact-row" *ngFor="let equation of !problem.facts?.length ? problem.equations : []">
+                      <span>{{ equation }}</span>
+                      <i></i>
+                      <strong>check</strong>
+                    </div>
+                  </ng-template>
                 </div>
 
                 <div *ngSwitchCase="'array-model'" class="ps-array-model" aria-label="Array model">
@@ -746,17 +914,64 @@
 
                 <div *ngSwitchCase="'decompose-array'" class="ps-decompose-model" aria-label="Decomposed array model">
                   <strong>{{ problem.solvedAnswer }}</strong>
-                  <div class="ps-decompose-array-parts" *ngIf="problemDecomposeParts(problem).length">
-                    <article *ngFor="let part of problemDecomposeParts(problem); let partIndex = index">
-                      <b>{{ partIndex === 0 ? 'First part' : 'Second part' }}</b>
-                      <div
-                        [style.gridTemplateColumns]="'repeat(' + part.columns + ', minmax(18px, 1fr))'"
-                        [attr.aria-label]="part.rows + ' rows of ' + part.columns">
-                        <span *ngFor="let item of problemDecomposeSlots(part)"></span>
+                  <ng-container *ngIf="problem.relatedFacts?.length; else solvedDecomposeDefault">
+                    <div class="lesson16-array-worksheet is-solved" *ngIf="problem.number === 1; else lesson16SingleArraySolved">
+                      <article *ngFor="let fact of problem.relatedFacts">
+                        <h4>{{ fact.label }}. {{ lesson16TargetAnswer(fact) }}</h4>
+                        <div class="lesson16-array-work">
+                          <div class="lesson16-source-array" [attr.aria-label]="fact.targetFact + ' solved source-style array'">
+                            <span
+                              *ngFor="let row of relatedFactRows(fact)"
+                              class="lesson16-source-row"
+                              [class.is-known]="row.isKnown"
+                              [class.is-extra]="!row.isKnown"
+                              [class.has-split]="row.row === fact.firstPart">
+                              <i *ngFor="let column of row.columns"></i>
+                            </span>
+                          </div>
+                          <div class="lesson16-array-labels">
+                            <span>{{ lesson16KnownLine(fact) }}</span>
+                            <span>{{ lesson16ExtraLine(fact) }}</span>
+                          </div>
+                        </div>
+                        <div class="lesson16-equation-box">
+                          <span *ngFor="let line of lesson16EquationLines(fact)">{{ line }}</span>
+                        </div>
+                      </article>
+                    </div>
+                    <ng-template #lesson16SingleArraySolved>
+                      <div class="lesson16-nolan-work is-solved" *ngFor="let fact of problem.relatedFacts">
+                        <div class="lesson16-source-array is-nolan" aria-label="Solved Nolan 10 by 4 split array">
+                          <span
+                            *ngFor="let row of relatedFactRows(fact)"
+                            class="lesson16-source-row"
+                            [class.is-known]="row.isKnown"
+                            [class.is-extra]="!row.isKnown"
+                            [class.has-split]="row.row === fact.firstPart">
+                            <i *ngFor="let column of row.columns"></i>
+                          </span>
+                        </div>
+                        <div class="lesson16-equation-box">
+                          <b>Answer-key explanation</b>
+                          <span>{{ fact.solvedEquation }}</span>
+                          <span>10 fours broken into two smaller facts: 5 fours and 5 fours.</span>
+                        </div>
                       </div>
-                      <small>{{ part.label }}</small>
-                    </article>
-                  </div>
+                    </ng-template>
+                  </ng-container>
+                  <ng-template #solvedDecomposeDefault>
+                    <div class="ps-decompose-array-parts" *ngIf="problemDecomposeParts(problem).length">
+                      <article *ngFor="let part of problemDecomposeParts(problem); let partIndex = index">
+                        <b>{{ partIndex === 0 ? 'First part' : 'Second part' }}</b>
+                        <div
+                          [style.gridTemplateColumns]="'repeat(' + part.columns + ', minmax(18px, 1fr))'"
+                          [attr.aria-label]="part.rows + ' rows of ' + part.columns">
+                          <span *ngFor="let item of problemDecomposeSlots(part)"></span>
+                        </div>
+                        <small>{{ part.label }}</small>
+                      </article>
+                    </div>
+                  </ng-template>
                   <div class="ps-equation-flow">
                     <span *ngFor="let equation of problem.equations; let equationIndex = index">
                       <b>Step {{ equationIndex + 1 }}</b>
@@ -1067,6 +1282,32 @@
             <h3>Lesson {{ lesson.lessonNumber }} takeaway</h3>
             <p>{{ problemLesson.summary }}</p>
           </div>
+
+          <section
+            class="lesson16-summary-source"
+            *ngIf="module.id === 'm1' && lesson.lessonNumber === 16"
+            aria-label="Lesson 16 source summary">
+            <article>
+              <strong>Problem 1 source pattern</strong>
+              <div>
+                <span *ngFor="let fact of problemLesson.problems[0].relatedFacts">
+                  {{ fact.targetFact }} = 20 + {{ fact.secondPart * fact.groupSize }} = {{ fact.product }}
+                </span>
+              </div>
+            </article>
+            <article>
+              <strong>Problem 2 answer-key matches</strong>
+              <div>
+                <span *ngFor="let fact of lesson16CloudFacts(problemLesson.problems[1])">
+                  {{ fact.knownFact }} -> {{ fact.targetFact }} -> {{ fact.product }}
+                </span>
+              </div>
+            </article>
+            <article>
+              <strong>Problem 3 debrief</strong>
+              <p>10 fours are broken into 5 fours and 5 fours; 20 + 20 answers the larger fact.</p>
+            </article>
+          </section>
 
           <section class="summary-check-grid" [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' validation checklist'">
             <article>

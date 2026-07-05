@@ -1536,6 +1536,17 @@ summary.source-pages-heading {
     #ffffff;
 }
 
+.problem-solution-card.is-lesson16-source {
+  border-color: #b8bdc7;
+  background: #ffffff;
+}
+
+.problem-solution-card.is-lesson16-source .problem-number {
+  border-radius: 0;
+  background: #ffffff;
+  color: #202124;
+}
+
 .problem-solution-head {
   display: grid;
   gap: 8px;
@@ -1586,6 +1597,10 @@ summary.source-pages-heading {
   gap: 10px;
 }
 
+.blank-problem-body:has(.blank-workspace-card:only-child) {
+  grid-template-columns: 1fr;
+}
+
 .blank-workspace-card,
 .blank-response-card {
   display: grid;
@@ -1597,6 +1612,18 @@ summary.source-pages-heading {
   border-radius: 8px;
   background:
     linear-gradient(180deg, color-mix(in srgb, var(--blank-soft) 62%, #ffffff 38%) 0 30px, #ffffff 30px 100%);
+}
+
+.blank-workspace-card.is-lesson16-source-card {
+  min-height: 0;
+  padding: 18px;
+  border: 1px solid #3c4043;
+  border-radius: 0;
+  background: #ffffff;
+}
+
+.blank-workspace-card.is-lesson16-source-card > strong {
+  display: none;
 }
 
 .blank-workspace-card strong,
@@ -1929,6 +1956,10 @@ summary.source-pages-heading {
   grid-template-columns: repeat(2, minmax(180px, 1fr));
 }
 
+.blank-fact-match-source:has(.lesson16-match-board) {
+  display: block;
+}
+
 .blank-fact-match-source div {
   display: grid;
   grid-template-columns: minmax(130px, 1fr) 42px 52px;
@@ -1941,11 +1972,34 @@ summary.source-pages-heading {
   background: #ffffff;
 }
 
+.blank-fact-match-source .related-match-row {
+  grid-template-columns: minmax(150px, 1fr) 28px 64px 28px 64px;
+}
+
 .blank-fact-match-source span {
   color: var(--color-text);
   font-size: 15px;
   font-weight: 900;
 }
+
+.blank-fact-match-source .lesson16-match-board,
+.blank-fact-match-source .lesson16-match-board div {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.blank-fact-match-source .lesson16-match-board {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 58px;
+}
+
+.blank-fact-match-source .lesson16-match-board div {
+  min-height: 0;
+  padding: 0;
+}
+
 
 .blank-fact-match-source i {
   height: 2px;
@@ -2045,6 +2099,262 @@ summary.source-pages-heading {
   background: color-mix(in srgb, var(--blank-soft) 54%, #ffffff 46%);
 }
 
+.blank-array-source > .related-fact-stack,
+.blank-array-source > .related-fact-stack article,
+.blank-array-source > .related-fact-stack .related-array-pair,
+.blank-array-source > .related-fact-stack .related-array-pair > div {
+  max-width: none;
+}
+
+.blank-array-source > .related-fact-stack {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.blank-array-source > .related-fact-stack span {
+  border: 0;
+}
+
+.related-fact-stack {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+
+.related-fact-stack article {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 24%, var(--color-border) 76%);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.related-fact-stack.is-blank article {
+  border-style: dashed;
+  border-color: color-mix(in srgb, var(--blank-color) 42%, var(--color-border) 58%);
+}
+
+.related-fact-stack article > div:last-child {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.related-fact-stack b,
+.related-fact-stack span,
+.related-fact-stack em {
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.related-fact-stack b {
+  color: var(--module-accent-strong);
+  font-size: 14px;
+  font-weight: 950;
+}
+
+.related-fact-stack span {
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.related-fact-stack em {
+  color: var(--color-text);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.related-array-pair {
+  display: grid;
+  justify-items: center;
+  min-width: 94px;
+  padding: 8px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 28%, var(--color-border) 72%);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--module-accent-soft) 42%, #ffffff 58%);
+}
+
+.related-array-pair > div {
+  display: grid;
+  gap: 4px;
+  width: fit-content;
+}
+
+.related-array-pair span {
+  width: 12px;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  animation: psTokenPop 520ms ease-out both;
+}
+
+.related-array-pair span.is-known {
+  background: var(--google-blue);
+}
+
+.related-array-pair span.is-extra {
+  background: var(--google-green);
+}
+
+.related-array-pair.is-large {
+  width: fit-content;
+  padding: 12px;
+}
+
+.related-array-pair.is-large span {
+  width: 16px;
+}
+
+.lesson16-array-worksheet {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 0;
+  width: 100%;
+  padding: 0;
+  border: 1px solid #3c4043;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.blank-array-source > .lesson16-array-worksheet,
+.blank-array-source > .lesson16-nolan-work {
+  max-width: none;
+  padding: 0;
+  border: 1px solid #3c4043;
+  background: #ffffff;
+}
+
+.blank-array-source > .lesson16-array-worksheet span,
+.blank-array-source > .lesson16-nolan-work span {
+  width: auto;
+  aspect-ratio: auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.lesson16-array-worksheet article {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  padding: 14px 16px 16px;
+  border-right: 1px solid #3c4043;
+  border-bottom: 1px solid #3c4043;
+}
+
+.lesson16-array-worksheet article:nth-child(2n) {
+  border-right: 0;
+}
+
+.lesson16-array-worksheet article:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.lesson16-array-worksheet h4 {
+  margin: 0;
+  color: #202124;
+  font-size: 16px;
+  font-weight: 950;
+  line-height: 1.2;
+}
+
+.lesson16-array-work {
+  display: grid;
+  grid-template-columns: auto minmax(94px, 1fr);
+  gap: 12px;
+  align-items: center;
+}
+
+.lesson16-source-array {
+  display: grid;
+  gap: 5px;
+  width: fit-content;
+  padding: 2px 0;
+}
+
+.lesson16-source-row {
+  display: grid;
+  grid-template-columns: repeat(4, 18px);
+  gap: 6px;
+  position: relative;
+}
+
+.lesson16-source-row.has-split {
+  padding-bottom: 8px;
+  margin-bottom: 2px;
+  border-bottom: 2px dashed #202124;
+}
+
+.lesson16-source-row i {
+  display: block;
+  width: 18px;
+  aspect-ratio: 1;
+  border: 1.5px solid #202124;
+  border-radius: 999px;
+  background: #ffffff;
+}
+
+.lesson16-source-row.is-known i {
+  background: #b7b7b7;
+}
+
+.lesson16-array-labels {
+  display: grid;
+  gap: 28px;
+  align-content: center;
+  color: #202124;
+  font-size: 14px;
+  font-weight: 850;
+  line-height: 1.2;
+}
+
+.lesson16-equation-box {
+  display: grid;
+  gap: 8px;
+  width: min(280px, 100%);
+  justify-self: center;
+  padding: 14px 16px;
+  border: 1.5px solid #202124;
+  background: #ffffff;
+  color: #202124;
+  text-align: center;
+}
+
+.lesson16-equation-box b,
+.lesson16-equation-box span {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.lesson16-equation-box span + span {
+  padding-top: 2px;
+}
+
+.lesson16-nolan-work {
+  display: grid;
+  grid-template-columns: auto minmax(220px, 1fr);
+  gap: 18px;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #3c4043;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.lesson16-source-array.is-nolan {
+  justify-self: center;
+}
+
 .blank-fraction-strip-source > div {
   gap: 0;
   width: min(520px, 100%);
@@ -2122,6 +2432,30 @@ summary.source-pages-heading {
   grid-template-columns: minmax(320px, 1fr) minmax(280px, 0.82fr);
   gap: 14px;
   align-items: stretch;
+}
+
+.problem-solution-card.is-lesson16-source .problem-solution-grid {
+  grid-template-columns: 1fr;
+}
+
+.problem-solution-card.is-lesson16-source .problem-explanation-card,
+.problem-solution-card.is-lesson16-source .ps-quotient-label {
+  display: none;
+}
+
+.problem-solution-card.is-lesson16-source .problem-animation-card {
+  padding: 18px;
+  border: 1px solid #3c4043;
+  border-radius: 0;
+  background: #ffffff;
+}
+
+.problem-solution-card.is-lesson16-source .ps-decompose-model > strong {
+  display: none;
+}
+
+.problem-solution-card.is-lesson16-source .ps-equation-flow {
+  display: none;
 }
 
 .problem-animation-card,
@@ -2588,6 +2922,11 @@ summary.source-pages-heading {
   animation: psGroupBuild 620ms ease-out both;
 }
 
+.ps-fact-row.is-related {
+  grid-template-columns: minmax(150px, 1fr) minmax(38px, 0.32fr) minmax(74px, auto) minmax(38px, 0.32fr) minmax(42px, auto);
+  background: #ffffff;
+}
+
 .ps-fact-row span,
 .ps-fact-row strong {
   color: var(--module-accent-strong);
@@ -2600,6 +2939,307 @@ summary.source-pages-heading {
   background: var(--module-accent);
   transform-origin: left center;
   animation: psLineDraw 620ms ease-out both;
+}
+
+.lesson16-match-board {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 58px;
+  width: 100%;
+  min-height: 380px;
+  padding: 28px clamp(16px, 4vw, 56px) 22px;
+  border: 0;
+  border-radius: 0;
+  background: #ffffff;
+}
+
+.lesson16-cloud-row,
+.lesson16-balloon-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 180px));
+  justify-content: space-between;
+  gap: clamp(14px, 2vw, 28px);
+  align-items: center;
+}
+
+.blank-fact-match-source .lesson16-cloud-row,
+.blank-fact-match-source .lesson16-balloon-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 180px));
+  justify-content: space-between;
+  gap: clamp(14px, 2vw, 28px);
+  align-items: center;
+}
+
+.lesson16-cloud {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 172px;
+  min-height: 58px;
+  padding: 9px 10px;
+  border: 3px solid #202124;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #202124;
+  font-size: 13px;
+  font-weight: 950;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.lesson16-cloud:nth-child(1) {
+  transform: translateY(18px);
+}
+
+.lesson16-cloud:nth-child(2) {
+  transform: translateY(62px);
+}
+
+.lesson16-cloud:nth-child(3) {
+  transform: translateY(-8px);
+}
+
+.lesson16-cloud:nth-child(4) {
+  transform: translateY(24px);
+}
+
+.lesson16-cloud::before,
+.lesson16-cloud::after {
+  content: "";
+  position: absolute;
+  top: -17px;
+  width: 36px;
+  height: 28px;
+  border: 3px solid #202124;
+  border-bottom: 0;
+  border-radius: 999px 999px 0 0;
+  background: #ffffff;
+}
+
+.lesson16-cloud::before {
+  left: 18px;
+}
+
+.lesson16-cloud::after {
+  right: 20px;
+}
+
+.lesson16-balloon {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  width: 128px;
+  min-height: 174px;
+  padding-top: 10px;
+  color: #202124;
+  font-weight: 950;
+}
+
+.lesson16-balloon:nth-child(1) {
+  transform: translateY(-2px);
+}
+
+.lesson16-balloon:nth-child(2) {
+  transform: translateY(54px);
+}
+
+.lesson16-balloon:nth-child(3) {
+  transform: translateY(-8px);
+}
+
+.lesson16-balloon:nth-child(4) {
+  transform: translateY(24px);
+}
+
+.lesson16-balloon::before {
+  content: "";
+  width: 86px;
+  height: 116px;
+  border: 3px solid #202124;
+  border-radius: 48% 48% 44% 44%;
+  background:
+    radial-gradient(ellipse at center, rgba(189, 189, 189, 0.45) 0 38%, transparent 39%),
+    repeating-radial-gradient(ellipse at center, transparent 0 18px, rgba(32, 33, 36, 0.16) 19px 22px);
+}
+
+.lesson16-balloon b {
+  position: absolute;
+  top: 58px;
+  display: inline-grid;
+  place-items: center;
+  min-width: 48px;
+  min-height: 28px;
+  padding: 3px 8px;
+  background: #ffffff;
+  color: #202124;
+  font-size: 14px;
+  font-weight: 950;
+}
+
+.lesson16-balloon em {
+  display: inline-grid;
+  place-items: center;
+  min-width: 42px;
+  min-height: 28px;
+  border: 2px solid #202124;
+  background: #ffffff;
+  color: #202124;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 950;
+}
+
+.lesson16-match-board.is-solved {
+  min-height: 430px;
+}
+
+.lesson16-match-key {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 8px;
+}
+
+.lesson16-match-key span {
+  padding: 8px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 24%, var(--color-border) 76%);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--module-accent-soft) 50%, #ffffff 50%);
+  color: var(--module-accent-strong);
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.lesson16-concept-review {
+  display: grid;
+  gap: 14px;
+  margin: 0 0 16px;
+  padding: 16px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 28%, var(--color-border) 72%);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--google-blue-soft) 65%, #ffffff 35%), #ffffff 42%, color-mix(in srgb, var(--google-green-soft) 56%, #ffffff 44%));
+}
+
+.lesson16-review-head {
+  display: grid;
+  gap: 6px;
+}
+
+.lesson16-review-head h3 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 22px;
+  line-height: 1.16;
+}
+
+.lesson16-review-head p {
+  max-width: 980px;
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 15px;
+  font-weight: 750;
+  line-height: 1.42;
+}
+
+.lesson16-review-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.lesson16-source-walkthrough {
+  display: grid;
+  gap: 14px;
+}
+
+.lesson16-source-walkthrough > article {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 24%, var(--color-border) 76%);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.lesson16-source-walkthrough > article > div:first-child {
+  display: grid;
+  gap: 5px;
+}
+
+.lesson16-source-walkthrough strong {
+  color: var(--module-accent-strong);
+  font-size: 16px;
+  font-weight: 950;
+}
+
+.lesson16-source-walkthrough p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  font-weight: 760;
+  line-height: 1.4;
+}
+
+.lesson16-review-grid > article {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 22%, var(--color-border) 78%);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.lesson16-review-grid strong {
+  color: var(--module-accent-strong);
+  font-size: 16px;
+  font-weight: 950;
+  line-height: 1.2;
+}
+
+.lesson16-review-grid p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  font-weight: 760;
+  line-height: 1.4;
+}
+
+.lesson16-review-grid em {
+  color: var(--color-text);
+  font-style: normal;
+  font-weight: 950;
+  line-height: 1.3;
+}
+
+.lesson16-mini-facts,
+.lesson16-match-preview {
+  display: grid;
+  gap: 7px;
+}
+
+.lesson16-mini-facts span,
+.lesson16-match-preview span {
+  display: grid;
+  gap: 3px;
+  padding: 8px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 20%, var(--color-border) 80%);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--module-accent-soft) 46%, #ffffff 54%);
+  color: var(--color-text);
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.25;
+}
+
+.lesson16-mini-facts b {
+  color: var(--module-accent-strong);
+  font-size: 14px;
 }
 
 .ps-quotient-label {
@@ -2744,6 +3384,52 @@ summary.source-pages-heading {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
+}
+
+.lesson16-summary-source {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.15fr) minmax(0, 0.9fr);
+  gap: 12px;
+}
+
+.lesson16-summary-source article {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #3c4043;
+  border-radius: 0;
+  background: #ffffff;
+}
+
+.lesson16-summary-source strong {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 950;
+  line-height: 1.25;
+}
+
+.lesson16-summary-source div {
+  display: grid;
+  gap: 7px;
+}
+
+.lesson16-summary-source span {
+  display: block;
+  padding: 7px 9px;
+  border: 1px solid #d0d4dc;
+  background: #f8f9fa;
+  color: #202124;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.lesson16-summary-source p {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 850;
+  line-height: 1.35;
 }
 
 .summary-check-grid article {
@@ -2942,8 +3628,38 @@ summary.source-pages-heading {
   .blank-problem-body,
   .problem-centered-source-concepts,
   .summary-check-grid,
-  .summary-meaning-map > div {
+  .summary-meaning-map > div,
+  .lesson16-summary-source,
+  .lesson16-review-grid {
     grid-template-columns: 1fr;
+  }
+
+  .ps-fact-row.is-related,
+  .blank-fact-match-source .related-match-row {
+    grid-template-columns: 1fr;
+  }
+
+  .ps-fact-row.is-related i,
+  .blank-fact-match-source .related-match-row i {
+    width: 42px;
+  }
+
+  .lesson16-array-worksheet,
+  .lesson16-cloud-row,
+  .lesson16-balloon-row,
+  .lesson16-match-key {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson16-array-worksheet article,
+  .lesson16-array-worksheet article:nth-child(2n),
+  .lesson16-array-worksheet article:nth-last-child(-n + 2) {
+    border-right: 0;
+    border-bottom: 1px solid #3c4043;
+  }
+
+  .lesson16-array-worksheet article:last-child {
+    border-bottom: 0;
   }
 }
 
@@ -2963,6 +3679,19 @@ summary.source-pages-heading {
   .problem-centered-concept p {
     font-size: 16px;
     overflow-wrap: anywhere;
+  }
+
+  .related-fact-stack article {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson16-array-work,
+  .lesson16-nolan-work {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson16-array-labels {
+    gap: 8px;
   }
 }
 

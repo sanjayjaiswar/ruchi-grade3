@@ -3,7 +3,8 @@ import type {
   ProblemSetBlankVisualType,
   ProblemSetCenteredLesson,
   ProblemSetCenteredProblem,
-  ProblemSetFactMatch
+  ProblemSetFactMatch,
+  ProblemSetRelatedFact
 } from '../lesson-runtime.types';
 import { STUDENT_WORK_SOURCE } from '../../student-work-source.generated';
 
@@ -17,6 +18,7 @@ type ProblemSeed = {
   equations: string[];
   explanation?: string;
   validationChecks?: string[];
+  relatedFacts?: ProblemSetRelatedFact[];
   blankPrompts?: string[];
   blankEquations?: string[];
   blankAnswerSentence?: string;
@@ -178,6 +180,7 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
       'The equation uses the same quantities as the drawing.',
       'The answer sentence names the unit in context.'
     ],
+    relatedFacts: seed.relatedFacts,
     facts: seed.facts,
     shareLabels: seed.shareLabels
   };
@@ -1507,37 +1510,184 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     concept: 'Students use the distributive property to decompose facts with units of 4 into known 5 x 4 facts plus extra groups.',
     teacherEditionBasis: 'Teacher Edition Lesson 16, pages 210-220.',
     contrast: 'Keep each partial product visible before adding to the final product.',
-    summary: 'Related multiplication facts can be solved by decomposing one factor and adding partial products.',
+    summary: 'Use 5 x 4 = 20 as the anchor fact, add the extra rows of 4, and keep the array split visible while solving 6 x 4 through 10 x 4.',
     sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
-        sourcePrompt: 'Label the array. Then, fill in the blanks below to make true number sentences. a. 6 x 4 = ______. (6 x 4) = (5 x 4) + (1 x 4) = 20 + ______ = ______. b. 7 x 4 = ______. (7 x 4) = (5 x 4) + (2 x 4) = ______ + ______ = 28. c. 8 x 4 = ______. (5 x 4) = ______. (______ x 4) = ______. (8 x 4) = (5 x 4) + (______ x 4) = ______ + ______ = ______. d. 9 x 4 = ______. (5 x 4) = ______. (______ x 4) = ______. (9 x 4) = (5 x 4) + (______ x 4) = ______ + ______ = ______.',
+        sourcePrompt: 'Label the array. Then, fill in the blanks below to make true number sentences.',
         solvedAnswer: '6 x 4 = 24, 7 x 4 = 28, 8 x 4 = 32, and 9 x 4 = 36.',
         equations: ['6 x 4 = 20 + 4 = 24', '7 x 4 = 20 + 8 = 28', '8 x 4 = 20 + 12 = 32', '9 x 4 = 20 + 16 = 36'],
+        relatedFacts: [
+          {
+            label: 'a',
+            targetFact: '6 x 4',
+            totalGroups: 6,
+            groupSize: 4,
+            firstPart: 5,
+            secondPart: 1,
+            knownFact: '5 x 4 = 20',
+            extraFact: '1 x 4 = 4',
+            blankEquation: '(6 x 4) = (5 x 4) + (1 x 4) = 20 + ____ = ____',
+            solvedEquation: '(6 x 4) = (5 x 4) + (1 x 4) = 20 + 4 = 24',
+            product: 24
+          },
+          {
+            label: 'b',
+            targetFact: '7 x 4',
+            totalGroups: 7,
+            groupSize: 4,
+            firstPart: 5,
+            secondPart: 2,
+            knownFact: '5 x 4 = 20',
+            extraFact: '2 x 4 = 8',
+            blankEquation: '(7 x 4) = (5 x 4) + (2 x 4) = ____ + ____ = 28',
+            solvedEquation: '(7 x 4) = (5 x 4) + (2 x 4) = 20 + 8 = 28',
+            product: 28
+          },
+          {
+            label: 'c',
+            targetFact: '8 x 4',
+            totalGroups: 8,
+            groupSize: 4,
+            firstPart: 5,
+            secondPart: 3,
+            knownFact: '5 x 4 = 20',
+            extraFact: '3 x 4 = 12',
+            blankEquation: '(8 x 4) = (5 x 4) + (____ x 4) = ____ + ____ = ____',
+            solvedEquation: '(8 x 4) = (5 x 4) + (3 x 4) = 20 + 12 = 32',
+            product: 32
+          },
+          {
+            label: 'd',
+            targetFact: '9 x 4',
+            totalGroups: 9,
+            groupSize: 4,
+            firstPart: 5,
+            secondPart: 4,
+            knownFact: '5 x 4 = 20',
+            extraFact: '4 x 4 = 16',
+            blankEquation: '(9 x 4) = (5 x 4) + (____ x 4) = ____ + ____ = ____',
+            solvedEquation: '(9 x 4) = (5 x 4) + (4 x 4) = 20 + 16 = 36',
+            product: 36
+          }
+        ],
         knownGroupSize: 4,
         quotient: 36,
         unitLabel: 'objects',
         groupLabel: 'rows',
         blankVisualType: 'array-template',
-        animationType: 'decompose-array'
+        animationType: 'decompose-array',
+        blankWorkspaceLabel: 'Complete each array split using the known 5 x 4 fact and the extra rows.',
+        blankPrompts: [
+          'Shade or mark the 5 rows of 4 first.',
+          'Add 1, 2, 3, or 4 more rows of 4.',
+          'Complete the same number sentences from the Teacher Edition Problem Set.'
+        ],
+        explanation: 'Each fact keeps 5 x 4 = 20 visible, then adds the extra rows of 4: 4, 8, 12, or 16.',
+        validationChecks: [
+          'The 5-row part represents 5 x 4 = 20.',
+          'The extra row part matches 1 x 4, 2 x 4, 3 x 4, or 4 x 4.',
+          'The final products are 24, 28, 32, and 36.'
+        ]
       },
       {
         number: 2,
-        sourcePrompt: 'Match the equal expressions: (5 x 4) + (1 x 4), (5 x 4) + (2 x 4), (5 x 4) + (3 x 4), (5 x 4) + (4 x 4), 6 x 4, 7 x 4, 8 x 4, 9 x 4, 24, 28, 32, and 36.',
+        sourcePrompt: 'Match the equal expressions.',
         solvedAnswer: '(5 x 4) + (1 x 4) = 6 x 4 = 24; + (2 x 4) = 7 x 4 = 28; + (3 x 4) = 8 x 4 = 32; + (4 x 4) = 9 x 4 = 36.',
         equations: ['6 x 4 = 24', '7 x 4 = 28', '8 x 4 = 32', '9 x 4 = 36'],
+        relatedFacts: [
+          {
+            label: 'match 1',
+            targetFact: '6 x 4',
+            totalGroups: 6,
+            groupSize: 4,
+            firstPart: 5,
+            secondPart: 1,
+            knownFact: '(5 x 4) + (1 x 4)',
+            extraFact: '6 x 4',
+            blankEquation: '(5 x 4) + (1 x 4) -> ____ -> ____',
+            solvedEquation: '(5 x 4) + (1 x 4) = 6 x 4 = 24',
+            product: 24
+          },
+          {
+            label: 'match 2',
+            targetFact: '7 x 4',
+            totalGroups: 7,
+            groupSize: 4,
+            firstPart: 5,
+            secondPart: 2,
+            knownFact: '(5 x 4) + (2 x 4)',
+            extraFact: '7 x 4',
+            blankEquation: '(5 x 4) + (2 x 4) -> ____ -> ____',
+            solvedEquation: '(5 x 4) + (2 x 4) = 7 x 4 = 28',
+            product: 28
+          },
+          {
+            label: 'match 3',
+            targetFact: '8 x 4',
+            totalGroups: 8,
+            groupSize: 4,
+            firstPart: 5,
+            secondPart: 3,
+            knownFact: '(5 x 4) + (3 x 4)',
+            extraFact: '8 x 4',
+            blankEquation: '(5 x 4) + (3 x 4) -> ____ -> ____',
+            solvedEquation: '(5 x 4) + (3 x 4) = 8 x 4 = 32',
+            product: 32
+          },
+          {
+            label: 'match 4',
+            targetFact: '9 x 4',
+            totalGroups: 9,
+            groupSize: 4,
+            firstPart: 5,
+            secondPart: 4,
+            knownFact: '(5 x 4) + (4 x 4)',
+            extraFact: '9 x 4',
+            blankEquation: '(5 x 4) + (4 x 4) -> ____ -> ____',
+            solvedEquation: '(5 x 4) + (4 x 4) = 9 x 4 = 36',
+            product: 36
+          }
+        ],
         quotient: 32,
         unitLabel: 'facts',
         groupLabel: 'matches',
         blankVisualType: 'fact-match',
-        animationType: 'fact-match'
+        animationType: 'fact-match',
+        blankWorkspaceLabel: 'Match each decomposed expression to its multiplication fact and product.',
+        blankPrompts: [
+          'Match each (5 x 4) + extra expression.',
+          'Then match it to 6 x 4, 7 x 4, 8 x 4, or 9 x 4.',
+          'Then match the product 24, 28, 32, or 36.'
+        ],
+        explanation: 'Each decomposed expression names the same total as one related multiplication fact.',
+        validationChecks: [
+          'Each expression keeps the 5 x 4 part.',
+          'The extra part determines whether the match is 6 x 4, 7 x 4, 8 x 4, or 9 x 4.',
+          'Products match the completed answer key values.'
+        ]
       },
       {
         number: 3,
         sourcePrompt: 'Nolan draws the array below to find the answer to the multiplication expression 10 x 4. He says, "10 x 4 is just double 5 x 4." Explain Nolan\'s strategy.',
         solvedAnswer: 'Nolan splits 10 groups of 4 into 5 groups of 4 and 5 groups of 4. Since 5 x 4 = 20, double it is 40.',
         equations: ['5 x 4 = 20', '5 x 4 = 20', '20 + 20 = 40', '10 x 4 = 40'],
+        relatedFacts: [
+          {
+            label: 'Nolan',
+            targetFact: '10 x 4',
+            totalGroups: 10,
+            groupSize: 4,
+            firstPart: 5,
+            secondPart: 5,
+            knownFact: '5 x 4 = 20',
+            extraFact: '5 x 4 = 20',
+            blankEquation: '10 x 4 = (5 x 4) + (____ x 4) = ____ + ____ = ____',
+            solvedEquation: '10 x 4 = (5 x 4) + (5 x 4) = 20 + 20 = 40',
+            product: 40
+          }
+        ],
         knownTotal: 40,
         knownGroupCount: 10,
         knownGroupSize: 4,
@@ -1545,7 +1695,19 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         unitLabel: 'objects',
         groupLabel: 'rows',
         blankVisualType: 'array-template',
-        animationType: 'decompose-array'
+        animationType: 'decompose-array',
+        blankWorkspaceLabel: 'Break Nolan\'s 10-row array into two 5 x 4 parts.',
+        blankPrompts: [
+          'Show the first 5 rows of 4.',
+          'Show the second 5 rows of 4.',
+          'Explain how the two 20s make 40.'
+        ],
+        explanation: 'Nolan can split the 10 x 4 array into two equal 5 x 4 arrays. Each part is 20, so the total is 40.',
+        validationChecks: [
+          'The array has 10 rows of 4.',
+          'The split shows 5 rows and 5 rows.',
+          'The solved equation is 20 + 20 = 40.'
+        ]
       }
     ]
   }),

@@ -156,6 +156,26 @@ export type ProblemSetFactMatch = {
   quotient: number;
 };
 
+export type ProblemSetRelatedFact = {
+  label: string;
+  targetFact: string;
+  totalGroups: number;
+  groupSize: number;
+  firstPart: number;
+  secondPart: number;
+  knownFact: string;
+  extraFact: string;
+  blankEquation: string;
+  solvedEquation: string;
+  product: number;
+};
+
+export type ProblemSetRelatedFactMatch = {
+  expression: string;
+  fact: string;
+  product: number;
+};
+
 export type ProblemSetFractionModel = {
   label: string;
   numerator: number;
@@ -257,6 +277,8 @@ export type ProblemSetCenteredProblem = {
   explanation: string;
   validationChecks: string[];
   facts?: ProblemSetFactMatch[];
+  relatedFacts?: ProblemSetRelatedFact[];
+  relatedFactMatches?: ProblemSetRelatedFactMatch[];
   shareLabels?: string[];
 };
 

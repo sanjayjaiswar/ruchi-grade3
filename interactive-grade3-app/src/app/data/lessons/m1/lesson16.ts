@@ -8,23 +8,23 @@ export const M1_LESSON16_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 16 animation: use a known fact to solve a related fact",
-    context: "Show 6 rows of 4, split into 5 rows and 1 row, and combine the partial products.",
-    equation: "6 x 4 = (5 x 4) + (1 x 4) = 24",
-    teacherPrompt: "Which known fact makes the new fact easier?",
-    groupCount: 6,
+    title: "Lesson 16 animation: build related facts from 5 x 4",
+    context: "Show 9 rows of 4, keep the known 5 x 4 part visible, then add 4 more rows of 4.",
+    equation: "9 x 4 = (5 x 4) + (4 x 4) = 20 + 16 = 36",
+    teacherPrompt: "Which rows are the known 5 x 4 fact, and which rows are the extra groups?",
+    groupCount: 9,
     groupSize: 4,
-    rowCount: 6,
+    rowCount: 9,
     columnCount: 4,
-    tapePartCount: 6,
+    tapePartCount: 9,
     tapePartLabel: "4",
-    tapeWholeLabel: "24 total",
+    tapeWholeLabel: "36 total",
     firstPart: 5,
-    secondPart: 1,
+    secondPart: 4,
     focus: [
-      "Known fact",
-      "One more group",
-      "Partial products"
+      "Known 5 x 4 = 20",
+      "Extra 4 x 4 = 16",
+      "20 + 16 = 36"
     ]
   },
   teacherEditionSteps: [
