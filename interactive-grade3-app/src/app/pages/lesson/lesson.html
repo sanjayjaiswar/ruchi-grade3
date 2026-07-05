@@ -287,6 +287,66 @@
             </div>
           </section>
 
+          <section
+            class="lesson17-concept-review"
+            *ngIf="module.id === 'm1' && lesson.lessonNumber === 17"
+            aria-label="Lesson 17 full concept review">
+            <div class="lesson16-review-head">
+              <span class="eyebrow">Full lesson review</span>
+              <h3>Read one model with multiplication and division</h3>
+              <p>The Teacher Edition Problem Set starts with a 10-row array. Each row of 4 gives a multiplication fact, and the same product divided by 4 gives the row count.</p>
+            </div>
+
+            <div class="lesson17-source-walkthrough">
+              <article>
+                <div>
+                  <strong>Problem 1 figure</strong>
+                  <p>Use the butterfly rows to complete both related equations for each product from 4 through 40.</p>
+                </div>
+                <div class="lesson17-fact-sheet is-solved">
+                  <div class="lesson17-butterfly-array" aria-label="10 rows of 4 butterflies">
+                    <span *ngFor="let butterfly of lesson17Butterflies()"></span>
+                  </div>
+                  <div class="lesson17-equation-table">
+                    <div *ngFor="let row of lesson17FactRows()">
+                      <span>{{ row }} x 4 = {{ row * 4 }}</span>
+                      <span>{{ row * 4 }} divided by 4 = {{ row }}</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <strong>Problems 2-4 models</strong>
+                  <p>Use a tape for boxes of muffins, an equal-row array for glasses, and a 4-unit money tape for notebooks.</p>
+                </div>
+                <div class="lesson17-model-strip">
+                  <div class="lesson17-tape is-solved">
+                    <b>36 muffins</b>
+                    <div>
+                      <span *ngFor="let box of lesson17TapeBoxes()">4</span>
+                    </div>
+                    <small>9 boxes</small>
+                  </div>
+                  <div class="lesson17-glass-array is-solved">
+                    <div *ngFor="let row of lesson17RowsOfGlasses()">
+                      <span *ngFor="let glass of lesson17GlassesPerRow()"></span>
+                    </div>
+                    <small>4 rows of 8 glasses</small>
+                  </div>
+                  <div class="lesson17-notebook-tape is-solved">
+                    <b>$28 total</b>
+                    <div>
+                      <span *ngFor="let notebook of lesson17NotebookUnits(); let notebookIndex = index" [class.is-target]="notebookIndex < 2">$7</span>
+                    </div>
+                    <small>2 notebooks = $14</small>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
           <section class="problem-source-pages is-teacher-source" *ngIf="conceptSourcePageImages(problemLesson).length" [attr.aria-label]="'Official Teacher Edition Problem Set pages for Module ' + module.number + ' Lesson ' + lesson.lessonNumber">
             <div class="source-pages-heading">
               <strong>Official Teacher Edition Problem Set pages</strong>
@@ -371,6 +431,7 @@
             [class.has-source-pages]="hasProblemSourcePages(problem)"
             [class.is-blank-mode]="problemSetMode === 'blank'"
             [class.is-lesson16-source]="module.id === 'm1' && lesson.lessonNumber === 16 && problem.relatedFacts?.length"
+            [class.is-lesson17-source]="module.id === 'm1' && lesson.lessonNumber === 17"
             *ngFor="let problem of problemLesson.problems"
             [id]="problemDomId(problem.number)">
             <div class="problem-solution-head">
@@ -384,7 +445,8 @@
             <div class="blank-problem-body" *ngIf="problemSetMode === 'blank'; else solvedProblemBody">
               <div
                 class="blank-workspace-card"
-                [class.is-lesson16-source-card]="module.id === 'm1' && lesson.lessonNumber === 16 && problem.relatedFacts?.length">
+                [class.is-lesson16-source-card]="module.id === 'm1' && lesson.lessonNumber === 16 && problem.relatedFacts?.length"
+                [class.is-lesson17-source-card]="module.id === 'm1' && lesson.lessonNumber === 17">
                 <strong>Interactive workspace</strong>
                 <div class="blank-source-model" [ngSwitch]="problem.blankVisualType">
                   <div *ngSwitchCase="'object-bank'" class="blank-object-bank">
@@ -405,6 +467,20 @@
                   </div>
 
                   <div *ngSwitchCase="'fact-match'" class="blank-fact-match-source">
+                    <ng-container *ngIf="module.id === 'm1' && lesson.lessonNumber === 17 && problem.number === 1; else lesson17BlankFactDefault">
+                      <div class="lesson17-fact-sheet">
+                        <div class="lesson17-butterfly-array" aria-label="Teacher Edition butterfly array, 10 rows of 4">
+                          <span *ngFor="let butterfly of lesson17Butterflies()"></span>
+                        </div>
+                        <div class="lesson17-equation-table">
+                          <div *ngFor="let row of lesson17FactRows()">
+                            <span>{{ lesson17MultiplicationLine(row) }}</span>
+                            <span>{{ lesson17DivisionLine(row) }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-container>
+                    <ng-template #lesson17BlankFactDefault>
                     <ng-container *ngIf="problem.relatedFacts?.length; else blankFactMatchDefault">
                       <div class="lesson16-match-board is-blank">
                         <div class="lesson16-cloud-row">
@@ -430,23 +506,50 @@
                         <em>____</em>
                       </div>
                     </ng-template>
+                    </ng-template>
                   </div>
 
                   <div *ngSwitchCase="'tape-diagram'" class="blank-tape-source">
-                    <strong>{{ problem.knownTotal }} {{ problem.unitLabel }} total</strong>
-                    <div [style.gridTemplateColumns]="'repeat(' + problemTapeParts(problem).length + ', minmax(80px, 1fr))'">
-                      <span *ngFor="let part of problemTapeParts(problem)">
-                        <em>?</em>
-                      </span>
-                    </div>
-                    <small>{{ problem.blankWorkspaceLabel }}</small>
+                    <ng-container *ngIf="module.id === 'm1' && lesson.lessonNumber === 17 && problem.number === 4; else blankTapeDefault">
+                      <div class="lesson17-notebook-tape is-blank">
+                        <b>$28 total</b>
+                        <div>
+                          <span *ngFor="let notebook of lesson17NotebookUnits(); let notebookIndex = index" [class.is-target]="notebookIndex < 2">?</span>
+                        </div>
+                        <small>4 notebooks. Find 2 notebooks.</small>
+                      </div>
+                    </ng-container>
+                    <ng-template #blankTapeDefault>
+                      <strong>{{ problem.knownTotal }} {{ problem.unitLabel }} total</strong>
+                      <div [style.gridTemplateColumns]="'repeat(' + problemTapeParts(problem).length + ', minmax(80px, 1fr))'">
+                        <span *ngFor="let part of problemTapeParts(problem)">
+                          <em>?</em>
+                        </span>
+                      </div>
+                      <small>{{ problem.blankWorkspaceLabel }}</small>
+                    </ng-template>
                   </div>
 
                   <div *ngSwitchCase="'bar-units'" class="blank-bar-units">
-                    <div>
-                      <span *ngFor="let unit of problemBlankUnitSlots(problem)"></span>
-                    </div>
-                    <small>{{ problem.knownGroupSize }} {{ problem.unitLabel }} each {{ problem.groupLabel.slice(0, -1) || problem.groupLabel }}</small>
+                    <ng-container *ngIf="module.id === 'm1' && lesson.lessonNumber === 17 && problem.number === 2; else blankBarUnitsDefault">
+                      <div class="lesson17-open-tape">
+                        <b>36 muffins total</b>
+                        <div>
+                          <span>4</span>
+                          <span>4</span>
+                          <span>4</span>
+                          <span>...</span>
+                          <span>?</span>
+                        </div>
+                        <small>4 muffins in each box. How many boxes?</small>
+                      </div>
+                    </ng-container>
+                    <ng-template #blankBarUnitsDefault>
+                      <div>
+                        <span *ngFor="let unit of problemBlankUnitSlots(problem)"></span>
+                      </div>
+                      <small>{{ problem.knownGroupSize }} {{ problem.unitLabel }} each {{ problem.groupLabel.slice(0, -1) || problem.groupLabel }}</small>
+                    </ng-template>
                   </div>
 
                   <div *ngSwitchCase="'share-tape'" class="blank-tape-source">
@@ -461,6 +564,16 @@
                   </div>
 
                   <div *ngSwitchCase="'array-template'" class="blank-array-source">
+                    <ng-container *ngIf="module.id === 'm1' && lesson.lessonNumber === 17 && problem.number === 3; else nonLesson17ArrayBlank">
+                      <div class="lesson17-glass-array is-blank">
+                        <b>32 glasses total</b>
+                        <div *ngFor="let row of lesson17RowsOfGlasses()">
+                          <span>?</span>
+                        </div>
+                        <small>4 equal rows. How many glasses in each row?</small>
+                      </div>
+                    </ng-container>
+                    <ng-template #nonLesson17ArrayBlank>
                     <ng-container *ngIf="problem.relatedFacts?.length; else blankArrayDefault">
                       <strong>{{ problem.blankWorkspaceLabel || 'Complete the official array.' }}</strong>
                       <div class="lesson16-array-worksheet" *ngIf="problem.number === 1; else lesson16SingleArrayBlank">
@@ -514,6 +627,7 @@
                         <span *ngFor="let item of problemArraySlots(problem)"></span>
                       </div>
                       <small>{{ problemArrayRows(problem) }} {{ problem.groupLabel }} of {{ problemArrayColumns(problem) }} {{ problem.unitLabel }}</small>
+                    </ng-template>
                     </ng-template>
                   </div>
 
@@ -814,16 +928,27 @@
             <div class="problem-solution-grid">
               <div class="problem-animation-card" [ngSwitch]="problem.animationType">
                 <div *ngSwitchCase="'grouping-by-size'" class="ps-grouping-model" aria-label="Grouping model">
-                  <div class="ps-token-bank">
-                    <span *ngFor="let token of problemTokenSlots(problem)"></span>
-                  </div>
-                  <div class="ps-model-arrow">groups of {{ problem.knownGroupSize }}</div>
-                  <div class="ps-groups">
-                    <div class="ps-group" *ngFor="let group of problemGroupSlots(problem); let groupIndex = index">
-                      <span *ngFor="let item of problemGroupItemSlots(problem)"></span>
-                      <small>{{ problem.groupLabel }} {{ groupIndex + 1 }}</small>
+                  <ng-container *ngIf="module.id === 'm1' && lesson.lessonNumber === 17 && problem.number === 2; else solvedGroupingDefault">
+                    <div class="lesson17-tape is-solved">
+                      <b>36 muffins</b>
+                      <div>
+                        <span *ngFor="let box of lesson17TapeBoxes()">4</span>
+                      </div>
+                      <small>36 divided by 4 = 9 boxes</small>
                     </div>
-                  </div>
+                  </ng-container>
+                  <ng-template #solvedGroupingDefault>
+                    <div class="ps-token-bank">
+                      <span *ngFor="let token of problemTokenSlots(problem)"></span>
+                    </div>
+                    <div class="ps-model-arrow">groups of {{ problem.knownGroupSize }}</div>
+                    <div class="ps-groups">
+                      <div class="ps-group" *ngFor="let group of problemGroupSlots(problem); let groupIndex = index">
+                        <span *ngFor="let item of problemGroupItemSlots(problem)"></span>
+                        <small>{{ problem.groupLabel }} {{ groupIndex + 1 }}</small>
+                      </div>
+                    </div>
+                  </ng-template>
                 </div>
 
                 <div *ngSwitchCase="'equal-sharing'" class="ps-sharing-model" aria-label="Equal sharing model">
@@ -846,6 +971,20 @@
                 </div>
 
                 <div *ngSwitchCase="'fact-match'" class="ps-fact-match-model" aria-label="Related fact matches">
+                  <ng-container *ngIf="module.id === 'm1' && lesson.lessonNumber === 17 && problem.number === 1; else nonLesson17SolvedFact">
+                    <div class="lesson17-fact-sheet is-solved">
+                      <div class="lesson17-butterfly-array" aria-label="Solved Teacher Edition butterfly array, 10 rows of 4">
+                        <span *ngFor="let butterfly of lesson17Butterflies()"></span>
+                      </div>
+                      <div class="lesson17-equation-table">
+                        <div *ngFor="let row of lesson17FactRows()">
+                          <span>{{ lesson17MultiplicationLine(row) }}</span>
+                          <span>{{ lesson17DivisionLine(row) }}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </ng-container>
+                  <ng-template #nonLesson17SolvedFact>
                   <ng-container *ngIf="problem.relatedFacts?.length; else solvedFactMatchDefault">
                     <div class="lesson16-match-board is-solved">
                       <div class="lesson16-cloud-row">
@@ -874,14 +1013,26 @@
                       <strong>check</strong>
                     </div>
                   </ng-template>
+                  </ng-template>
                 </div>
 
                 <div *ngSwitchCase="'array-model'" class="ps-array-model" aria-label="Array model">
-                  <strong>{{ problemArrayRows(problem) }} {{ problem.groupLabel }} of {{ problemArrayColumns(problem) }} {{ problem.unitLabel }}</strong>
-                  <div
-                    [style.gridTemplateColumns]="'repeat(' + problemArrayColumns(problem) + ', minmax(18px, 1fr))'">
-                    <span *ngFor="let item of problemArraySlots(problem)"></span>
-                  </div>
+                  <ng-container *ngIf="module.id === 'm1' && lesson.lessonNumber === 17 && problem.number === 3; else solvedArrayDefault">
+                    <div class="lesson17-glass-array is-solved">
+                      <b>32 glasses total</b>
+                      <div *ngFor="let row of lesson17RowsOfGlasses()">
+                        <span *ngFor="let glass of lesson17GlassesPerRow()"></span>
+                      </div>
+                      <small>4 equal rows. 32 divided by 4 = 8 glasses in each row.</small>
+                    </div>
+                  </ng-container>
+                  <ng-template #solvedArrayDefault>
+                    <strong>{{ problemArrayRows(problem) }} {{ problem.groupLabel }} of {{ problemArrayColumns(problem) }} {{ problem.unitLabel }}</strong>
+                    <div
+                      [style.gridTemplateColumns]="'repeat(' + problemArrayColumns(problem) + ', minmax(18px, 1fr))'">
+                      <span *ngFor="let item of problemArraySlots(problem)"></span>
+                    </div>
+                  </ng-template>
                 </div>
 
                 <div *ngSwitchCase="'area-models'" class="m4-area-models is-solved" aria-label="Area models">
@@ -981,14 +1132,25 @@
                 </div>
 
                 <div *ngSwitchCase="'two-step-model'" class="ps-two-step-model" aria-label="Two-step model">
-                  <strong>Step-by-step answer</strong>
-                  <div class="ps-equation-flow">
-                    <span *ngFor="let equation of problem.equations; let equationIndex = index">
-                      <b>Step {{ equationIndex + 1 }}</b>
-                      <em>{{ equation }}</em>
-                    </span>
-                  </div>
-                  <small>{{ problem.solvedAnswer }}</small>
+                  <ng-container *ngIf="module.id === 'm1' && lesson.lessonNumber === 17 && problem.number === 4; else solvedTwoStepDefault">
+                    <div class="lesson17-notebook-tape is-solved">
+                      <b>$28 total</b>
+                      <div>
+                        <span *ngFor="let notebook of lesson17NotebookUnits(); let notebookIndex = index" [class.is-target]="notebookIndex < 2">$7</span>
+                      </div>
+                      <small>2 notebooks = $14</small>
+                    </div>
+                  </ng-container>
+                  <ng-template #solvedTwoStepDefault>
+                    <strong>Step-by-step answer</strong>
+                    <div class="ps-equation-flow">
+                      <span *ngFor="let equation of problem.equations; let equationIndex = index">
+                        <b>Step {{ equationIndex + 1 }}</b>
+                        <em>{{ equation }}</em>
+                      </span>
+                    </div>
+                    <small>{{ problem.solvedAnswer }}</small>
+                  </ng-template>
                 </div>
 
                 <div *ngSwitchCase="'fraction-strip-model'" class="ps-fraction-strip-model" aria-label="Fraction strip model">
@@ -1306,6 +1468,32 @@
             <article>
               <strong>Problem 3 debrief</strong>
               <p>10 fours are broken into 5 fours and 5 fours; 20 + 20 answers the larger fact.</p>
+            </article>
+          </section>
+
+          <section
+            class="lesson17-summary-source"
+            *ngIf="module.id === 'm1' && lesson.lessonNumber === 17"
+            aria-label="Lesson 17 source summary">
+            <article>
+              <strong>Problem 1 answer-key facts</strong>
+              <div>
+                <span *ngFor="let row of lesson17FactRows()">
+                  {{ row }} x 4 = {{ row * 4 }}; {{ row * 4 }} divided by 4 = {{ row }}
+                </span>
+              </div>
+            </article>
+            <article>
+              <strong>Problem 2 tape</strong>
+              <p>36 muffins divided into boxes of 4 makes 9 boxes.</p>
+            </article>
+            <article>
+              <strong>Problem 3 equal rows</strong>
+              <p>32 glasses arranged in 4 equal rows gives 8 glasses in each row.</p>
+            </article>
+            <article>
+              <strong>Problem 4 money tape</strong>
+              <p>$28 divided by 4 notebooks is $7 per notebook, so 2 notebooks cost $14.</p>
             </article>
           </section>
 

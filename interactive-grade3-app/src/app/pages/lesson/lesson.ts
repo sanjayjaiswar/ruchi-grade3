@@ -747,6 +747,80 @@ export class LessonPage implements OnInit {
     return [facts[3], facts[2], facts[0], facts[1]].filter((fact): fact is ProblemSetRelatedFact => Boolean(fact));
   }
 
+  lesson17FactRows(): number[] {
+    return this.countSlots(10, 10);
+  }
+
+  lesson17FactColumns(): number[] {
+    return this.countSlots(4, 4);
+  }
+
+  lesson17Butterflies(): number[] {
+    return this.countSlots(40, 40);
+  }
+
+  lesson17MultiplicationLine(row: number): string {
+    if (this.problemSetMode === 'solved') {
+      return `${row} x 4 = ${row * 4}`;
+    }
+
+    if (row === 1) {
+      return '1 x 4 = 4';
+    }
+    if (row === 2) {
+      return '2 x 4 = ______';
+    }
+    if (row === 3 || row === 4) {
+      return `______ x 4 = ${row * 4}`;
+    }
+    if (row === 5 || row === 6) {
+      return `______ x ______ = ${row * 4}`;
+    }
+    if (row === 7 || row === 8) {
+      return `______ x 4 = ______`;
+    }
+    return `______ x ______ = ______`;
+  }
+
+  lesson17DivisionLine(row: number): string {
+    if (this.problemSetMode === 'solved') {
+      return `${row * 4} divided by 4 = ${row}`;
+    }
+
+    if (row === 1) {
+      return '4 divided by 4 = 1';
+    }
+    if (row === 2) {
+      return '______ divided by 4 = 2';
+    }
+    if (row === 3 || row === 4) {
+      return `${row * 4} divided by 4 = ______`;
+    }
+    if (row === 5 || row === 6) {
+      return `${row * 4} divided by ______ = ______`;
+    }
+    if (row === 7 || row === 8) {
+      return `______ divided by 4 = ______`;
+    }
+    return `______ divided by ______ = ______`;
+  }
+
+  lesson17TapeBoxes(): number[] {
+    return this.countSlots(9, 9);
+  }
+
+  lesson17RowsOfGlasses(): number[] {
+    return this.countSlots(4, 4);
+  }
+
+  lesson17GlassesPerRow(): number[] {
+    return this.countSlots(8, 8);
+  }
+
+  lesson17NotebookUnits(): number[] {
+    return this.countSlots(4, 4);
+  }
+
   areaModelSlots(areaModel: { rows: number; columns: number }): number[] {
     return this.countSlots(areaModel.rows * areaModel.columns, 120);
   }

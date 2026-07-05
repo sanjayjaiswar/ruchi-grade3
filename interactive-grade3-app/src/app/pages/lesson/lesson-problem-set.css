@@ -1541,7 +1541,18 @@ summary.source-pages-heading {
   background: #ffffff;
 }
 
+.problem-solution-card.is-lesson17-source {
+  border-color: #b8bdc7;
+  background: #ffffff;
+}
+
 .problem-solution-card.is-lesson16-source .problem-number {
+  border-radius: 0;
+  background: #ffffff;
+  color: #202124;
+}
+
+.problem-solution-card.is-lesson17-source .problem-number {
   border-radius: 0;
   background: #ffffff;
   color: #202124;
@@ -1622,7 +1633,27 @@ summary.source-pages-heading {
   background: #ffffff;
 }
 
+.blank-workspace-card.is-lesson17-source-card {
+  min-height: 0;
+  padding: 18px;
+  border: 1px solid #3c4043;
+  border-radius: 0;
+  background: #ffffff;
+}
+
 .blank-workspace-card.is-lesson16-source-card > strong {
+  display: none;
+}
+
+.blank-workspace-card.is-lesson17-source-card > strong {
+  display: none;
+}
+
+.blank-problem-body:has(.blank-workspace-card.is-lesson17-source-card) {
+  grid-template-columns: 1fr;
+}
+
+.problem-solution-card.is-lesson17-source .blank-response-card {
   display: none;
 }
 
@@ -2438,8 +2469,17 @@ summary.source-pages-heading {
   grid-template-columns: 1fr;
 }
 
+.problem-solution-card.is-lesson17-source .problem-solution-grid {
+  grid-template-columns: 1fr;
+}
+
 .problem-solution-card.is-lesson16-source .problem-explanation-card,
 .problem-solution-card.is-lesson16-source .ps-quotient-label {
+  display: none;
+}
+
+.problem-solution-card.is-lesson17-source .problem-explanation-card,
+.problem-solution-card.is-lesson17-source .ps-quotient-label {
   display: none;
 }
 
@@ -2450,8 +2490,24 @@ summary.source-pages-heading {
   background: #ffffff;
 }
 
+.problem-solution-card.is-lesson17-source .problem-animation-card {
+  padding: 18px;
+  border: 1px solid #3c4043;
+  border-radius: 0;
+  background: #ffffff;
+}
+
 .problem-solution-card.is-lesson16-source .ps-decompose-model > strong {
   display: none;
+}
+
+.problem-solution-card.is-lesson17-source .ps-grouping-model,
+.problem-solution-card.is-lesson17-source .ps-array-model,
+.problem-solution-card.is-lesson17-source .ps-two-step-model,
+.problem-solution-card.is-lesson17-source .ps-fact-match-model {
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 .problem-solution-card.is-lesson16-source .ps-equation-flow {
@@ -3217,6 +3273,402 @@ summary.source-pages-heading {
   line-height: 1.3;
 }
 
+.lesson17-concept-review {
+  display: grid;
+  gap: 14px;
+  margin: 0 0 16px;
+  padding: 16px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 28%, var(--color-border) 72%);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--google-blue-soft) 65%, #ffffff 35%), #ffffff 46%, color-mix(in srgb, var(--google-yellow-soft) 50%, #ffffff 50%));
+}
+
+.lesson17-source-walkthrough {
+  display: grid;
+  gap: 14px;
+}
+
+.lesson17-source-walkthrough > article {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 24%, var(--color-border) 76%);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.lesson17-source-walkthrough > article > div:first-child {
+  display: grid;
+  gap: 5px;
+}
+
+.lesson17-source-walkthrough strong {
+  color: var(--module-accent-strong);
+  font-size: 16px;
+  font-weight: 950;
+}
+
+.lesson17-source-walkthrough p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  font-weight: 760;
+  line-height: 1.4;
+}
+
+.lesson17-fact-sheet {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(420px, 1.3fr);
+  gap: 22px;
+  align-items: start;
+  width: 100%;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #3c4043;
+  background: #ffffff;
+}
+
+.lesson17-butterfly-array {
+  display: grid;
+  grid-template-columns: repeat(4, 34px);
+  grid-auto-rows: 30px;
+  gap: 8px 12px;
+  justify-content: center;
+  padding: 12px;
+  border: 1px solid #d0d4dc;
+  background: #f8f9fa;
+}
+
+.lesson17-butterfly-array span {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 24px;
+  margin: auto;
+  color: #202124;
+  animation: psTokenPop 520ms ease-out both;
+}
+
+.lesson17-butterfly-array span::before,
+.lesson17-butterfly-array span::after {
+  position: absolute;
+  top: 3px;
+  width: 14px;
+  height: 18px;
+  border: 2px solid #202124;
+  border-radius: 80% 16% 80% 16%;
+  background: #ffffff;
+  content: "";
+}
+
+.lesson17-butterfly-array span::before {
+  left: 1px;
+  transform: rotate(-24deg);
+}
+
+.lesson17-butterfly-array span::after {
+  right: 1px;
+  transform: scaleX(-1) rotate(-24deg);
+}
+
+.lesson17-equation-table {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+
+.lesson17-equation-table div {
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) minmax(190px, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 7px 9px;
+  border-bottom: 1px solid #d0d4dc;
+}
+
+.lesson17-equation-table div:last-child {
+  border-bottom: 0;
+}
+
+.lesson17-equation-table span {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.lesson17-model-strip {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) minmax(220px, 0.8fr) minmax(240px, 1fr);
+  gap: 12px;
+  align-items: stretch;
+}
+
+.lesson17-open-tape,
+.lesson17-tape,
+.lesson17-glass-array,
+.lesson17-notebook-tape {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #3c4043;
+  background: #ffffff;
+  color: #202124;
+}
+
+.lesson17-open-tape b,
+.lesson17-tape b,
+.lesson17-glass-array b,
+.lesson17-notebook-tape b {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 950;
+  line-height: 1.25;
+}
+
+.lesson17-open-tape div,
+.lesson17-tape div,
+.lesson17-notebook-tape div {
+  display: grid;
+  gap: 0;
+  min-height: 58px;
+  border: 2px solid #202124;
+  background: #ffffff;
+}
+
+.lesson17-open-tape div {
+  grid-template-columns: repeat(5, minmax(54px, 1fr));
+}
+
+.lesson17-tape div {
+  grid-template-columns: repeat(9, minmax(38px, 1fr));
+}
+
+.lesson17-notebook-tape div {
+  grid-template-columns: repeat(4, minmax(56px, 1fr));
+}
+
+.lesson17-open-tape span,
+.lesson17-tape span,
+.lesson17-notebook-tape span {
+  display: grid;
+  place-items: center;
+  min-height: 58px;
+  border-right: 2px solid #202124;
+  color: #202124;
+  font-size: 16px;
+  font-weight: 950;
+  line-height: 1.1;
+  animation: psTapeReveal 520ms ease-out both;
+}
+
+.lesson17-open-tape span {
+  min-width: 0;
+  padding: 0 6px;
+  font-size: 14px;
+}
+
+.lesson17-open-tape span:last-child,
+.lesson17-tape span:last-child,
+.lesson17-notebook-tape span:last-child {
+  border-right: 0;
+}
+
+.lesson17-notebook-tape span.is-target {
+  background: color-mix(in srgb, var(--google-yellow-soft) 62%, #ffffff 38%);
+}
+
+.lesson17-glass-array {
+  justify-content: start;
+}
+
+.lesson17-glass-array div {
+  display: grid;
+  grid-template-columns: repeat(8, 20px);
+  gap: 6px;
+  align-items: center;
+  width: fit-content;
+}
+
+.lesson17-glass-array.is-blank div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-template-columns: none;
+  width: min(420px, 100%);
+  min-height: 42px;
+  border-bottom: 2px solid #202124;
+}
+
+.lesson17-glass-array span {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  aspect-ratio: 1;
+  border: 2px solid #202124;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #202124;
+  font-size: 13px;
+  font-weight: 950;
+  animation: psTokenPop 520ms ease-out both;
+}
+
+.lesson17-glass-array.is-blank span {
+  display: inline-grid;
+  width: auto;
+  min-width: 28px;
+  min-height: 28px;
+  aspect-ratio: auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  justify-self: end;
+  box-shadow: none;
+}
+
+.lesson17-open-tape small,
+.lesson17-tape small,
+.lesson17-glass-array small,
+.lesson17-notebook-tape small {
+  display: inline-grid;
+  justify-self: start;
+  width: fit-content;
+  padding: 5px 8px;
+  border: 1px solid #202124;
+  background: #ffffff;
+  color: #202124;
+  font-size: 14px;
+  font-weight: 950;
+  line-height: 1.3;
+}
+
+.blank-fact-match-source:has(.lesson17-fact-sheet) {
+  display: block;
+}
+
+.blank-fact-match-source .lesson17-fact-sheet {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.7fr) minmax(420px, 1.3fr);
+  gap: 22px;
+  align-items: start;
+  min-height: 0;
+  padding: 16px;
+  border: 1px solid #3c4043;
+  border-radius: 0;
+  background: #ffffff;
+}
+
+.blank-fact-match-source .lesson17-butterfly-array {
+  display: grid;
+  grid-template-columns: repeat(4, 34px);
+  grid-auto-rows: 30px;
+  gap: 8px 12px;
+  justify-content: center;
+  min-height: 0;
+  padding: 12px;
+  border: 1px solid #d0d4dc;
+  border-radius: 0;
+  background: #f8f9fa;
+}
+
+.blank-fact-match-source .lesson17-equation-table {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.blank-fact-match-source .lesson17-equation-table div {
+  display: grid;
+  grid-template-columns: minmax(130px, 1fr) minmax(180px, 1fr);
+  gap: 12px;
+  align-items: center;
+  min-height: 0;
+  padding: 7px 9px;
+  border: 0;
+  border-bottom: 1px solid #d0d4dc;
+  border-radius: 0;
+  background: transparent;
+}
+
+.blank-fact-match-source .lesson17-equation-table div:last-child {
+  border-bottom: 0;
+}
+
+.blank-fact-match-source .lesson17-equation-table span {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.blank-bar-units > .lesson17-open-tape {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  justify-items: stretch;
+  min-height: 0;
+  padding: 14px;
+  border: 1px solid #3c4043;
+  border-radius: 0;
+  background: #ffffff;
+}
+
+.blank-bar-units .lesson17-open-tape > div {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(54px, 1fr));
+  gap: 0;
+  min-height: 58px;
+  padding: 0;
+  border: 2px solid #202124;
+  border-radius: 0;
+  background: #ffffff;
+}
+
+.blank-array-source > .lesson17-glass-array.is-blank {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  width: min(520px, 100%);
+  min-height: 0;
+  padding: 14px;
+  border: 1px solid #3c4043;
+  border-radius: 0;
+  background: #ffffff;
+}
+
+.blank-array-source > .lesson17-glass-array.is-blank > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 42px;
+  padding: 0;
+  border: 0;
+  border-bottom: 2px solid #202124;
+  border-radius: 0;
+  background: transparent;
+}
+
+.blank-array-source > .lesson17-glass-array.is-blank > div > span {
+  display: inline-grid;
+  place-items: center;
+  width: auto;
+  min-width: 28px;
+  min-height: 28px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
 .lesson16-mini-facts,
 .lesson16-match-preview {
   display: grid;
@@ -3392,9 +3844,26 @@ summary.source-pages-heading {
   gap: 12px;
 }
 
+.lesson17-summary-source {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) repeat(3, minmax(0, 0.78fr));
+  gap: 12px;
+}
+
 .lesson16-summary-source article {
   display: grid;
   gap: 10px;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #3c4043;
+  border-radius: 0;
+  background: #ffffff;
+}
+
+.lesson17-summary-source article {
+  display: grid;
+  gap: 10px;
+  align-content: start;
   min-width: 0;
   padding: 14px;
   border: 1px solid #3c4043;
@@ -3409,7 +3878,19 @@ summary.source-pages-heading {
   line-height: 1.25;
 }
 
+.lesson17-summary-source strong {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 950;
+  line-height: 1.25;
+}
+
 .lesson16-summary-source div {
+  display: grid;
+  gap: 7px;
+}
+
+.lesson17-summary-source div {
   display: grid;
   gap: 7px;
 }
@@ -3425,7 +3906,25 @@ summary.source-pages-heading {
   line-height: 1.25;
 }
 
+.lesson17-summary-source span {
+  display: block;
+  padding: 7px 9px;
+  border: 1px solid #d0d4dc;
+  background: #f8f9fa;
+  color: #202124;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
 .lesson16-summary-source p {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+.lesson17-summary-source p {
   color: #202124;
   font-size: 16px;
   font-weight: 850;
@@ -3630,7 +4129,10 @@ summary.source-pages-heading {
   .summary-check-grid,
   .summary-meaning-map > div,
   .lesson16-summary-source,
-  .lesson16-review-grid {
+  .lesson17-summary-source,
+  .lesson16-review-grid,
+  .lesson17-fact-sheet,
+  .lesson17-model-strip {
     grid-template-columns: 1fr;
   }
 

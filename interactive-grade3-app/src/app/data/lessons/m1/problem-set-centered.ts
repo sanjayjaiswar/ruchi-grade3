@@ -47,7 +47,7 @@ type LessonSeed = {
   problems: ProblemSeed[];
 };
 
-const GENERATED_SOURCE_PROMPT_LESSONS = new Set([1, 2, 3, 6, 7, 8, 9, 11, 14, 15, 17, 18, 19, 20, 21]);
+const GENERATED_SOURCE_PROMPT_LESSONS = new Set([1, 2, 3, 6, 7, 8, 9, 11, 14, 15, 18, 19, 20, 21]);
 
 const M1_PROBLEM_SET_SOURCE_PAGES: Record<number, string[]> = {
   1: teacherEditionPageImages(29, 30),
@@ -1717,19 +1717,31 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     concept: 'The same array can generate related multiplication and division equations, showing products, factors, and quotients together.',
     teacherEditionBasis: 'Teacher Edition Lesson 17, pages 221-231.',
     contrast: 'Use multiplication to check division and division to find missing factors.',
-    summary: 'Related multiplication and division facts describe the same equal-group relationship.',
+    summary: 'One array, tape diagram, or equal-row model can be read with multiplication and division; use the known product, factor, and quotient to complete the related facts.',
     sourceNote: 'Teacher Edition Problem Set and Student Debrief, see Teacher Edition page range.',
     problems: [
       {
         number: 1,
-        sourcePrompt: 'Use the array to complete related multiplication and division equations for units of 4.',
-        solvedAnswer: 'The facts include 1 x 4 = 4, 2 x 4 = 8, 3 x 4 = 12, 4 x 4 = 16, 5 x 4 = 20, and 6 x 4 = 24, with matching division facts.',
-        equations: ['3 x 4 = 12', '12 divided by 4 = 3', '6 x 4 = 24', '24 divided by 4 = 6'],
-        quotient: 6,
+        sourcePrompt: 'Use the array to complete the related equations.',
+        solvedAnswer: 'Rows 1 through 10 give related facts from 1 x 4 = 4 through 10 x 4 = 40, with matching division facts.',
+        equations: ['1 x 4 = 4', '2 x 4 = 8', '3 x 4 = 12', '4 x 4 = 16', '5 x 4 = 20', '6 x 4 = 24', '7 x 4 = 28', '8 x 4 = 32', '9 x 4 = 36', '10 x 4 = 40'],
+        quotient: 10,
         unitLabel: 'facts',
         groupLabel: 'matches',
         blankVisualType: 'fact-match',
-        animationType: 'fact-match'
+        animationType: 'fact-match',
+        blankWorkspaceLabel: 'Use each row of 4 butterflies to complete the multiplication fact and matching division fact.',
+        blankPrompts: [
+          'Count rows of 4 from the butterfly array.',
+          'Use the product from multiplication as the dividend in division.',
+          'Leave only the Teacher Edition blanks empty in Blank mode.'
+        ],
+        explanation: 'Each row adds one group of 4. The product in n x 4 becomes the dividend in the related division equation.',
+        validationChecks: [
+          'The array has 10 rows of 4 butterflies.',
+          'Each multiplication product matches the row count times 4.',
+          'Each division fact divides the product by 4 to recover the row count.'
+        ]
       },
       {
         number: 2,
@@ -1742,7 +1754,19 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         unitLabel: 'muffins',
         groupLabel: 'boxes',
         blankVisualType: 'bar-units',
-        animationType: 'grouping-by-size'
+        animationType: 'grouping-by-size',
+        blankWorkspaceLabel: 'Draw a tape diagram with 36 muffins total, 4 muffins in each box, and an unknown number of boxes.',
+        blankPrompts: [
+          'Label the total as 36 muffins.',
+          'Show each equal box as 4 muffins.',
+          'Find how many boxes are needed.'
+        ],
+        explanation: '36 muffins divided into groups of 4 makes 9 boxes. The solved tape has 9 equal units labeled 4.',
+        validationChecks: [
+          'The tape represents 36 muffins total.',
+          'Each unit is labeled 4 muffins.',
+          'There are 9 equal units, so the baker packs 9 boxes.'
+        ]
       },
       {
         number: 3,
@@ -1755,7 +1779,19 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         unitLabel: 'glasses',
         groupLabel: 'rows',
         blankVisualType: 'array-template',
-        animationType: 'array-model'
+        animationType: 'array-model',
+        blankWorkspaceLabel: 'Use 4 equal rows to represent 32 glasses, then find the number in each row.',
+        blankPrompts: [
+          'Show 4 equal rows.',
+          'Use 32 glasses total.',
+          'Find the unknown number in each row.'
+        ],
+        explanation: '32 glasses shared across 4 equal rows gives 8 glasses in each row.',
+        validationChecks: [
+          'The model has 4 rows.',
+          'The total is 32 glasses.',
+          'Each row has 8 glasses.'
+        ]
       },
       {
         number: 4,
@@ -1768,7 +1804,19 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         unitLabel: 'dollars',
         groupLabel: 'notebooks',
         blankVisualType: 'tape-diagram',
-        animationType: 'two-step-model'
+        animationType: 'two-step-model',
+        blankWorkspaceLabel: 'Draw a 4-unit tape for $28 total, find 1 notebook, then find 2 notebooks.',
+        blankPrompts: [
+          'Split $28 into 4 equal notebook units.',
+          'Find the cost of 1 notebook.',
+          'Use 2 units to answer the question.'
+        ],
+        explanation: '$28 divided by 4 notebooks is $7 per notebook. Two notebooks cost 2 x $7 = $14.',
+        validationChecks: [
+          'The tape has 4 equal notebook units.',
+          'Each notebook is $7.',
+          'Two notebooks total $14.'
+        ]
       }
     ]
   }),
