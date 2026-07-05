@@ -284,6 +284,30 @@ export type ProblemVisualEquationsSection = {
   lines: string[];
 };
 
+export type ProblemVisualDataTableSection = {
+  kind: 'data-table';
+  label?: string;
+  columns: string[];
+  rows: string[][];
+};
+
+export type ProblemVisualNumberLineSection = {
+  kind: 'number-line';
+  label?: string;
+  ticks: Array<{
+    label: string;
+    target?: boolean;
+  }>;
+  caption?: string;
+};
+
+export type ProblemVisualClockSection = {
+  kind: 'clock';
+  label?: string;
+  timeLabel: string;
+  caption?: string;
+};
+
 export type ProblemVisualNoteSection = {
   kind: 'note';
   label?: string;
@@ -294,6 +318,9 @@ export type ProblemVisualSection =
   | ProblemVisualArraySection
   | ProblemVisualRelatedFactsSection
   | ProblemVisualTapeSection
+  | ProblemVisualDataTableSection
+  | ProblemVisualNumberLineSection
+  | ProblemVisualClockSection
   | ProblemVisualEquationsSection
   | ProblemVisualNoteSection;
 

@@ -3,7 +3,8 @@ import type {
   ProblemSetAnimationType,
   ProblemSetBlankVisualType,
   ProblemSetCenteredLesson,
-  ProblemSetCenteredProblem
+  ProblemSetCenteredProblem,
+  ProblemVisualSpec
 } from '../lesson-runtime.types';
 
 const MODULE_3_TITLE = 'Multiplication and Division with Units of 0, 1, 6-9, and Multiples of 10';
@@ -760,6 +761,150 @@ function quotientFromAnswer(answer: string): number {
   return firstNumber ? Number(firstNumber[0]) : 1;
 }
 
+function createM3ProblemVisual(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec {
+  const sections: ProblemVisualSpec['sections'] = [];
+  const sourceNote = solved
+    ? 'Solved view uses the Module 3 Teacher Edition Answer Key, authored model, and validation checks.'
+    : 'Blank view keeps the official student Problem Set workspace open without source-page images or answer leakage.';
+
+  if (problem.blankVisualType === 'fact-match' || problem.animationType === 'fact-match') {
+    sections.push({
+      kind: 'related-facts',
+      label: solved ? 'Solved fact matches' : 'Fact-match workspace',
+      rows: factRows(problem, solved)
+    });
+  } else if (usesM3Tape(problem)) {
+    sections.push(makeM3Tape(problem, solved));
+  } else if (problem.blankVisualType === 'array-template' || problem.animationType === 'array-model' || problem.animationType === 'decompose-array') {
+    sections.push(makeM3ArrayOrWorkspace(problem, solved));
+  } else {
+    sections.push(makeM3WorkspaceTable(problem, solved));
+  }
+
+  const equations = problem.equations?.length ? problem.equations : [problem.solvedAnswer];
+  sections.push({
+    kind: 'equations',
+    label: solved ? 'Solved equations' : 'Student equation blanks',
+    lines: solved ? equations : problem.blankEquations?.length ? problem.blankEquations : blankEquationTemplates(equations)
+  });
+
+  sections.push({
+    kind: 'note',
+    label: solved ? 'Teacher Edition answer' : 'Source workspace direction',
+    text: solved ? problem.solvedAnswer : problem.blankWorkspaceLabel ?? 'Complete the official Problem Set item with labels, equations, and answer sentence.'
+  });
+
+  return {
+    title: `Problem ${problem.number}: ${m3VisualTitle(problem)}`,
+    sourceNote,
+    sections
+  };
+}
+
+function factRows(problem: ProblemSetCenteredProblem, solved: boolean): Array<{ left: string; right: string }> {
+  const blanks = problem.blankEquations?.length ? problem.blankEquations : blankEquationTemplates(problem.equations);
+  const solvedRows = problem.equations?.length ? problem.equations : [problem.solvedAnswer];
+  const rowCount = Math.max(blanks.length, solvedRows.length, 1);
+  return Array.from({ length: rowCount }, (_, index) => ({
+    left: solved ? solvedRows[index % solvedRows.length] : blanks[index % blanks.length],
+    right: solved ? problem.solvedAnswer : 'match or solve: ____'
+  }));
+}
+
+function makeM3ArrayOrWorkspace(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'][number] {
+  const rows = boundedM3Count(problem.knownGroupCount ?? inferM3Factor(problem.equations, 0), 1, 12);
+  const columns = boundedM3Count(problem.knownGroupSize ?? inferM3Factor(problem.equations, 1), 1, 12);
+
+  if ((problem.knownGroupSize ?? columns) > 12) {
+    return makeM3WorkspaceTable(problem, solved);
+  }
+
+  return {
+    kind: 'array',
+    label: solved
+      ? `${rows} ${problem.groupLabel || 'groups'} of ${columns} ${problem.unitLabel || 'units'}`
+      : `${rows} ${problem.groupLabel || 'groups'} workspace`,
+    rows,
+    columns,
+    item: 'dot',
+    placeholder: solved ? undefined : undefined
+  };
+}
+
+function makeM3Tape(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'][number] {
+  const partCount = boundedM3Count(problem.knownGroupCount ?? inferM3Factor(problem.equations, 0) ?? problem.quotient, 1, 12);
+  const partLabel = solved
+    ? String(problem.knownGroupSize ?? problem.quotient ?? '?')
+    : problem.knownGroupSize
+      ? String(problem.knownGroupSize)
+      : '?';
+  const total = problem.knownTotal ?? problem.quotient;
+  return {
+    kind: 'tape',
+    label: solved ? 'Solved equal-unit model' : 'Blank equal-unit model',
+    totalLabel: total ? `${total} ${problem.unitLabel || 'units'}` : `${problem.unitLabel || 'units'} total`,
+    parts: Array.from({ length: partCount }, (_, index) => ({
+      label: partLabel,
+      emphasize: index < Math.min(2, partCount)
+    })),
+    caption: solved ? problem.solvedAnswer : problem.blankWorkspaceLabel ?? 'Use the source quantities to label the equal parts.'
+  };
+}
+
+function makeM3WorkspaceTable(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'][number] {
+  const equations = problem.equations?.length ? problem.equations : [problem.solvedAnswer];
+  return {
+    kind: 'data-table',
+    label: solved ? 'Solved problem workspace' : 'Blank problem workspace',
+    columns: ['Prompt', 'Work', 'Answer'],
+    rows: [
+      [
+        problem.sourcePrompt,
+        solved ? equations.join('; ') : problem.blankEquations?.join('; ') || blankEquationTemplates(equations).join('; '),
+        solved ? problem.solvedAnswer : '____'
+      ]
+    ]
+  };
+}
+
+function usesM3Tape(problem: ProblemSetCenteredProblem): boolean {
+  return (
+    problem.blankVisualType === 'tape-diagram' ||
+    problem.blankVisualType === 'bar-units' ||
+    problem.blankVisualType === 'share-tape' ||
+    problem.animationType === 'equal-sharing' ||
+    problem.animationType === 'grouping-by-size' ||
+    problem.animationType === 'two-step-model'
+  );
+}
+
+function inferM3Factor(equations: string[] | undefined, index: 0 | 1): number | undefined {
+  const equation = equations?.find((line) => /\d+\s*x\s*\d+/i.test(line));
+  const match = equation?.match(/(\d+)\s*x\s*(\d+)/i);
+  return match ? Number(match[index + 1]) : undefined;
+}
+
+function boundedM3Count(value: number | undefined, min: number, max: number): number {
+  if (!value || !Number.isFinite(value)) {
+    return min;
+  }
+
+  return Math.max(min, Math.min(max, Math.round(value)));
+}
+
+function m3VisualTitle(problem: ProblemSetCenteredProblem): string {
+  if (problem.knownGroupCount && problem.knownGroupSize) {
+    return `${problem.knownGroupCount} ${problem.groupLabel || 'groups'} of ${problem.knownGroupSize}`;
+  }
+  if (problem.knownTotal && problem.knownGroupSize) {
+    return `${problem.knownTotal} ${problem.unitLabel || 'units'} in groups of ${problem.knownGroupSize}`;
+  }
+  if (problem.quotient && problem.unitLabel) {
+    return `${problem.quotient} ${problem.unitLabel}`;
+  }
+  return problem.sourcePrompt;
+}
+
 function makeProblem(lessonNumber: number, problemIndex: number): ProblemSetCenteredProblem {
   const source = STUDENT_WORK_SOURCE[`m3-l${lessonNumber}`];
   const sourceProblem = source.problems[problemIndex];
@@ -845,7 +990,9 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
         ...centeredProblem,
         sourcePageImages: centeredProblem.sourcePageImages ?? sourcePageImages,
         blankSourcePageImages: centeredProblem.blankSourcePageImages ?? sourcePageImages,
-        solvedSourcePageImages: centeredProblem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages]
+        solvedSourcePageImages: centeredProblem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages],
+        blankVisual: createM3ProblemVisual(centeredProblem, false),
+        solvedVisual: createM3ProblemVisual(centeredProblem, true)
       };
     })
   };

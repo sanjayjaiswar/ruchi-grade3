@@ -4,7 +4,8 @@ import type {
   ProblemSetCenteredLesson,
   ProblemSetCenteredProblem,
   ProblemSetDataDisplay,
-  ProblemSetNumberLineModel
+  ProblemSetNumberLineModel,
+  ProblemVisualSpec
 } from '../lesson-runtime.types';
 
 type ProblemSeed = {
@@ -422,6 +423,146 @@ function applyTeacherPrompt(lessonNumber: number, item: ProblemSetCenteredProble
   };
 }
 
+function createM2ProblemVisual(seed: ProblemSetCenteredProblem | ProblemSeed, solved: boolean): ProblemVisualSpec {
+  const sections: ProblemVisualSpec['sections'] = [];
+  const sourceNote = solved
+    ? 'Solved view uses the Module 2 Teacher Edition answer key, authored visuals, and unit checks.'
+    : 'Blank view keeps the student Problem Set workspace visual and leaves the official answer work open.';
+
+  const dataDisplay = solved ? seed.solvedDataDisplay ?? seed.dataDisplay : seed.dataDisplay;
+  if (dataDisplay) {
+    sections.push({
+      kind: 'data-table',
+      label: dataDisplay.title,
+      columns: dataDisplay.columns ?? ['Label', 'Value'],
+      rows: dataDisplay.rows ?? dataDisplay.values?.map((value) => [value.label, value.valueLabel ?? String(value.value ?? '____')]) ?? []
+    });
+  }
+
+  if (seed.numberLineModels?.length) {
+    seed.numberLineModels.forEach((line) => {
+      sections.push({
+        kind: 'number-line',
+        label: line.label,
+        ticks: (line.tickLabels ?? []).map((label, index) => ({
+          label,
+          target: solved && (line.targetNumerators ?? []).includes(index)
+        })),
+        caption: solved ? seed.solvedAnswer : seed.blankWorkspaceLabel ?? 'Label the official number line and mark the requested point.'
+      });
+    });
+  }
+
+  if (seed.blankVisualType === 'clock-workspace' || seed.animationType === 'clock-model') {
+    sections.push({
+      kind: 'clock',
+      label: solved ? 'Solved clock model' : 'Blank clock workspace',
+      timeLabel: solved ? clockAnswerLabel(seed) : 'Draw or read the hands from the official clock prompt.',
+      caption: solved ? seed.solvedAnswer : seed.blankWorkspaceLabel ?? 'Use the official clock face and keep a.m./p.m. when given.'
+    });
+  }
+
+  if (!dataDisplay && !seed.numberLineModels?.length && seed.blankVisualType !== 'clock-workspace') {
+    sections.push(makeM2TapeOrWorkspace(seed, solved));
+  } else if (usesM2Tape(seed)) {
+    sections.push(makeM2TapeOrWorkspace(seed, solved));
+  }
+
+  const equations = seed.equations?.length ? seed.equations : [seed.solvedAnswer];
+  sections.push({
+    kind: 'equations',
+    label: solved ? 'Solved work' : 'Student work blanks',
+    lines: solved ? equations : blankEquationTemplates(equations)
+  });
+
+  sections.push({
+    kind: 'note',
+    label: solved ? 'Answer meaning' : 'Source workspace direction',
+    text: solved ? seed.solvedAnswer : seed.blankWorkspaceLabel ?? 'Complete the official Problem Set scaffold with labels, units, and reasoning.'
+  });
+
+  return {
+    title: `Problem ${seed.number}: ${m2VisualTitle(seed)}`,
+    sourceNote,
+    sections
+  };
+}
+
+function makeM2TapeOrWorkspace(seed: ProblemSetCenteredProblem | ProblemSeed, solved: boolean): ProblemVisualSpec['sections'][number] {
+  const unit = seed.unitLabel ?? 'units';
+  const total = seed.knownTotal ?? seed.quotient;
+  const partCount = boundedM2Count(seed.knownGroupCount ?? (seed.knownGroupSize ? seed.quotient : 3), 1, 10);
+  const partLabel = solved
+    ? String(seed.knownGroupSize ?? seed.quotient ?? seed.solvedAnswer)
+    : seed.knownGroupSize
+      ? String(seed.knownGroupSize)
+      : '?';
+
+  if (usesM2Tape(seed)) {
+    return {
+      kind: 'tape',
+      label: solved ? 'Solved measurement model' : 'Blank measurement model',
+      totalLabel: total ? `${total} ${unit}` : `${unit} total`,
+      parts: Array.from({ length: partCount }, (_, index) => ({
+        label: partLabel,
+        emphasize: index < Math.min(2, partCount)
+      })),
+      caption: solved ? seed.solvedAnswer : seed.blankWorkspaceLabel ?? 'Draw and label the matching measurement model.'
+    };
+  }
+
+  return {
+    kind: 'data-table',
+    label: solved ? 'Solved measurement workspace' : 'Blank measurement workspace',
+    columns: ['Known', 'Work', 'Answer'],
+    rows: [
+      [
+        seed.sourcePrompt,
+        solved ? (seed.equations?.join('; ') ?? seed.solvedAnswer) : blankEquationTemplates(seed.equations).join('; ') || '____',
+        solved ? seed.solvedAnswer : '____'
+      ]
+    ]
+  };
+}
+
+function usesM2Tape(seed: ProblemSetCenteredProblem | ProblemSeed): boolean {
+  return (
+    seed.blankVisualType === 'tape-diagram' ||
+    seed.blankVisualType === 'bar-units' ||
+    seed.blankVisualType === 'share-tape' ||
+    seed.animationType === 'tape-split' ||
+    seed.animationType === 'two-step-model' ||
+    seed.animationType === 'grouping-by-size'
+  );
+}
+
+function clockAnswerLabel(seed: ProblemSetCenteredProblem | ProblemSeed): string {
+  const text = [seed.solvedAnswer, ...(seed.equations ?? [])].join(' ');
+  const timeMatch = text.match(/\b\d{1,2}:\d{2}\s*(?:a\.m\.|p\.m\.)?/i);
+  return timeMatch ? timeMatch[0] : seed.solvedAnswer;
+}
+
+function m2VisualTitle(seed: ProblemSetCenteredProblem | ProblemSeed): string {
+  if (seed.unitLabel && seed.quotient) {
+    return `${seed.quotient} ${seed.unitLabel}`;
+  }
+  if (seed.dataDisplay?.title) {
+    return seed.dataDisplay.title;
+  }
+  if (seed.numberLineModels?.[0]?.label) {
+    return seed.numberLineModels[0].label;
+  }
+  return seed.sourcePrompt;
+}
+
+function boundedM2Count(value: number | undefined, min: number, max: number): number {
+  if (!value || !Number.isFinite(value)) {
+    return min;
+  }
+
+  return Math.max(min, Math.min(max, Math.round(value)));
+}
+
 function problem(seed: ProblemSeed): ProblemSetCenteredProblem {
   return {
     number: seed.number,
@@ -497,7 +638,9 @@ function lesson(seed: LessonSeed): ProblemSetCenteredLesson {
         ...centeredProblem,
         sourcePageImages: centeredProblem.sourcePageImages ?? sourcePageImages,
         blankSourcePageImages: centeredProblem.blankSourcePageImages ?? sourcePageImages,
-        solvedSourcePageImages: centeredProblem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages]
+        solvedSourcePageImages: centeredProblem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages],
+        blankVisual: createM2ProblemVisual(centeredProblem, false),
+        solvedVisual: createM2ProblemVisual(centeredProblem, true)
       };
     })
   };

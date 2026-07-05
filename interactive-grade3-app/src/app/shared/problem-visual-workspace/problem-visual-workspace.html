@@ -43,6 +43,48 @@
       </div>
     </ng-container>
 
+    <ng-container *ngIf="dataTableSection(section) as table">
+      <strong *ngIf="table.label">{{ table.label }}</strong>
+      <div class="visual-data-table" role="table">
+        <div class="visual-data-row is-head" role="row">
+          <span *ngFor="let column of table.columns" role="columnheader">{{ column }}</span>
+        </div>
+        <div class="visual-data-row" *ngFor="let row of table.rows" role="row">
+          <span *ngFor="let cell of row" role="cell">{{ cell }}</span>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="numberLineSection(section) as line">
+      <strong *ngIf="line.label">{{ line.label }}</strong>
+      <div class="visual-number-line">
+        <div>
+          <span
+            *ngFor="let tick of line.ticks"
+            [class.is-target]="tick.target">
+            {{ tick.label }}
+          </span>
+        </div>
+        <small *ngIf="line.caption">{{ line.caption }}</small>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="clockSection(section) as clock">
+      <strong *ngIf="clock.label">{{ clock.label }}</strong>
+      <div class="visual-clock">
+        <div aria-hidden="true">
+          <span class="clock-twelve">12</span>
+          <span class="clock-three">3</span>
+          <span class="clock-six">6</span>
+          <span class="clock-nine">9</span>
+          <i></i>
+          <b></b>
+        </div>
+        <p>{{ clock.timeLabel }}</p>
+        <small *ngIf="clock.caption">{{ clock.caption }}</small>
+      </div>
+    </ng-container>
+
     <ng-container *ngIf="equationsSection(section) as equations">
       <strong *ngIf="equations.label">{{ equations.label }}</strong>
       <div class="visual-equations">

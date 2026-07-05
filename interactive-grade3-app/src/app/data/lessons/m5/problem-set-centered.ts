@@ -7,7 +7,8 @@ import type {
   ProblemSetConcreteFractionModel,
   ProblemSetFractionModel,
   ProblemSetNumberLineModel,
-  ProblemSetPaperPartitionModel
+  ProblemSetPaperPartitionModel,
+  ProblemVisualSpec
 } from '../lesson-runtime.types';
 import { M5_WORKBOOK_PROBLEMS, type M5WorkbookProblem } from './workbook-problems';
 
@@ -554,12 +555,20 @@ function makeLesson1(): ProblemSetCenteredLesson {
         ]
       }
     ],
-    problems: problems.map((problem) => ({
-      ...problem,
-      sourcePageImages: problem.sourcePageImages ?? sourcePageImages,
-      blankSourcePageImages: problem.blankSourcePageImages ?? sourcePageImages,
-      solvedSourcePageImages: problem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages]
-    }))
+    problems: problems.map((problem) => {
+      const centeredProblem = {
+        ...problem,
+        sourcePageImages: problem.sourcePageImages ?? sourcePageImages,
+        blankSourcePageImages: problem.blankSourcePageImages ?? sourcePageImages,
+        solvedSourcePageImages: problem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages]
+      };
+
+      return {
+        ...centeredProblem,
+        blankVisual: createM5ProblemVisual(centeredProblem, false),
+        solvedVisual: createM5ProblemVisual(centeredProblem, true)
+      };
+    })
   };
 }
 
@@ -662,7 +671,9 @@ function makeLesson30(): ProblemSetCenteredLesson {
       ...problem,
       sourcePageImages: problem.sourcePageImages ?? sourcePageImages,
       blankSourcePageImages: problem.blankSourcePageImages ?? sourcePageImages,
-      solvedSourcePageImages: problem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages]
+      solvedSourcePageImages: problem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages],
+      blankVisual: createM5ProblemVisual(problem, false),
+      solvedVisual: createM5ProblemVisual(problem, true)
     }]
   };
 }
@@ -869,6 +880,211 @@ function makeProblem(lessonNumber: number, sourceProblem: M5WorkbookProblem & { 
   };
 }
 
+function createM5ProblemVisual(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec {
+  const sections: ProblemVisualSpec['sections'] = [];
+  const sourceNote = solved
+    ? 'Solved view uses the Module 5 Teacher Edition answer key with authored fraction visuals and whole/unit checks.'
+    : 'Blank view keeps the official Problem Set fraction workspace open with no source-page images or solved answer leakage.';
+
+  if (problem.concreteFractionModel) {
+    sections.push(...m5ConcreteFractionSections(problem.concreteFractionModel, solved));
+  } else if (problem.paperPartitionModel) {
+    sections.push(...m5PaperPartitionSections(problem.paperPartitionModel, solved));
+  } else if (problem.numberLineModels?.length) {
+    sections.push(...problem.numberLineModels.map((model) => m5NumberLineSection(model, solved)));
+  } else if (problem.fractionModels?.length) {
+    sections.push(...problem.fractionModels.map((model) => m5FractionTapeSection(model, solved)));
+  } else {
+    sections.push(m5OpenFractionWorkspace(problem, solved));
+  }
+
+  sections.push({
+    kind: 'equations',
+    label: solved ? 'Solved fraction work' : 'Student fraction blanks',
+    lines: solved ? problem.equations : problem.blankEquations?.length ? problem.blankEquations : blankEquationTemplates(problem.equations) ?? ['____ = ____']
+  });
+
+  sections.push({
+    kind: 'note',
+    label: solved ? 'Teacher Edition answer' : 'Source workspace direction',
+    text: solved ? problem.solvedAnswer : problem.blankWorkspaceLabel ?? 'Complete the official workbook fraction model, labels, and answer sentence.'
+  });
+
+  return {
+    title: `Problem ${problem.number}: ${m5VisualTitle(problem)}`,
+    sourceNote,
+    sections
+  };
+}
+
+function m5ConcreteFractionSections(model: ProblemSetConcreteFractionModel, solved: boolean): ProblemVisualSpec['sections'] {
+  const sections: ProblemVisualSpec['sections'] = [
+    {
+      kind: 'data-table',
+      label: model.title,
+      columns: ['Official model', 'Whole', 'Fraction work'],
+      rows: m5ConcreteRows(model, solved)
+    }
+  ];
+
+  if (model.kind === 'measured-strip' && model.totalLength && model.pieceLength) {
+    const partCount = boundedM5Count(Math.round(model.totalLength / model.pieceLength), 1, 12);
+    sections.push({
+      kind: 'tape',
+      label: solved ? 'Solved strip model' : 'Blank strip model',
+      totalLabel: `${model.totalLength} ${model.unit ?? 'units'} whole`,
+      parts: Array.from({ length: partCount }, (_, index) => ({
+        label: solved ? `${model.pieceLength} ${model.unit ?? 'units'}` : '?',
+        emphasize: index === 0
+      })),
+      caption: solved ? model.notice : model.prompt
+    });
+  }
+
+  if (model.items?.length) {
+    const firstDrawable = model.items.find((item) => item.denominator || item.blankDenominator);
+    if (firstDrawable?.denominator || firstDrawable?.blankDenominator) {
+      sections.push(m5FractionTapeSection({
+        label: firstDrawable.label,
+        numerator: firstDrawable.numerator ?? firstDrawable.blankNumerator ?? 1,
+        denominator: firstDrawable.denominator ?? firstDrawable.blankDenominator ?? 2
+      }, solved));
+    }
+  }
+
+  return sections;
+}
+
+function m5ConcreteRows(model: ProblemSetConcreteFractionModel, solved: boolean): string[][] {
+  if (model.kind === 'measured-strip') {
+    return [[
+      model.prompt,
+      `${model.totalLength ?? '____'} ${model.unit ?? 'units'} whole`,
+      solved ? model.notice ?? 'One equal piece is named as a fraction of the whole.' : `one piece = ____ of the ${model.totalLength ?? '____'} ${model.unit ?? 'unit'} whole`
+    ]];
+  }
+
+  return (model.items ?? []).map((item) => {
+    const denominator = item.denominator ?? item.blankDenominator;
+    const numerator = item.numerator ?? item.blankNumerator;
+    const lineWork = item.lineCount !== undefined || item.blankLineCount !== undefined
+      ? solved ? `${item.lineCount ?? 0} lines make ${item.denominator} equal parts` : `____ lines make ${item.denominator ?? item.blankDenominator ?? '____'} equal parts`
+      : solved ? `${numerator}/${denominator}` : `____/${denominator ?? '____'}`;
+    return [
+      item.label,
+      model.kind.replace(/-/g, ' '),
+      lineWork
+    ];
+  });
+}
+
+function m5PaperPartitionSections(model: ProblemSetPaperPartitionModel, solved: boolean): ProblemVisualSpec['sections'] {
+  return [
+    {
+      kind: 'data-table',
+      label: model.title,
+      columns: ['Step', 'Source action', 'Check'],
+      rows: model.steps.map((step, index) => [
+        `Step ${index + 1}`,
+        step,
+        solved ? 'completed with equal guide spacing' : 'verify: ____'
+      ])
+    },
+    {
+      kind: 'number-line',
+      label: solved ? `${model.denominator} equal ${model.stripLabel} parts` : `${model.stripLabel} partition guide`,
+      ticks: m5NumberLineTicks({
+        label: model.stripLabel,
+        denominator: model.denominator,
+        startLabel: '0',
+        endLabel: '1',
+        targetNumerators: Array.from({ length: model.denominator + 1 }, (_, index) => index)
+      }, solved),
+      caption: solved
+        ? `${model.paperSpacesPerUnit} paper spaces per unit fraction transfer to the strip.`
+        : `Use ${model.paperSpacesPerUnit} paper spaces per unit fraction before marking the strip.`
+    }
+  ];
+}
+
+function m5NumberLineSection(model: ProblemSetNumberLineModel, solved: boolean): ProblemVisualSpec['sections'][number] {
+  return {
+    kind: 'number-line',
+    label: solved ? `Solved ${model.label}` : `Blank ${model.label} number line`,
+    ticks: m5NumberLineTicks(model, solved),
+    caption: solved
+      ? 'Equal intervals are labeled from 0 to the endpoint, with requested fractions marked.'
+      : 'Partition the interval into equal parts and label the fraction marks.'
+  };
+}
+
+function m5NumberLineTicks(model: ProblemSetNumberLineModel, solved: boolean): Array<{ label: string; target?: boolean }> {
+  const denominator = boundedM5Count(model.denominator, 1, 12);
+  return Array.from({ length: denominator + 1 }, (_, numerator) => {
+    const endpoint = numerator === 0 ? model.startLabel ?? '0' : numerator === denominator ? model.endLabel ?? '1' : undefined;
+    return {
+      label: solved ? endpoint ?? `${numerator}/${denominator}` : endpoint ?? '____',
+      target: solved && (model.targetNumerators ?? []).includes(numerator)
+    };
+  });
+}
+
+function m5FractionTapeSection(model: ProblemSetFractionModel, solved: boolean): ProblemVisualSpec['sections'][number] {
+  const denominator = boundedM5Count(model.denominator, 1, 12);
+  const numerator = boundedM5Count(model.numerator, 0, denominator);
+  return {
+    kind: 'tape',
+    label: solved ? `Solved ${model.label}` : `Blank ${model.label} fraction model`,
+    totalLabel: '1 whole',
+    parts: Array.from({ length: denominator }, (_, index) => ({
+      label: solved ? index < numerator ? `1/${denominator}` : '' : '?',
+      emphasize: solved && index < numerator,
+      muted: solved && index >= numerator
+    })),
+    caption: solved
+      ? `${numerator}/${denominator} is ${numerator} of ${denominator} equal parts.`
+      : `Partition the same whole into ${denominator} equal parts before naming or shading the fraction.`
+  };
+}
+
+function m5OpenFractionWorkspace(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'][number] {
+  return {
+    kind: 'data-table',
+    label: solved ? 'Solved fraction workspace' : 'Blank fraction workspace',
+    columns: ['Official prompt', 'Model work', 'Answer'],
+    rows: [
+      [
+        problem.sourcePrompt,
+        solved ? problem.equations.join('; ') || problem.solvedAnswer : problem.blankEquations?.join('; ') || '____',
+        solved ? problem.solvedAnswer : '____'
+      ]
+    ]
+  };
+}
+
+function boundedM5Count(value: number | undefined, min: number, max: number): number {
+  if (value === undefined || !Number.isFinite(value)) {
+    return min;
+  }
+  return Math.max(min, Math.min(max, Math.round(value)));
+}
+
+function m5VisualTitle(problem: ProblemSetCenteredProblem): string {
+  if (problem.concreteFractionModel?.title) {
+    return problem.concreteFractionModel.title;
+  }
+  if (problem.paperPartitionModel?.title) {
+    return problem.paperPartitionModel.title;
+  }
+  if (problem.numberLineModels?.[0]?.label) {
+    return `${problem.numberLineModels[0].label} number line`;
+  }
+  if (problem.fractionModels?.[0]?.label) {
+    return problem.fractionModels[0].label;
+  }
+  return 'fraction workspace';
+}
+
 function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
   if (lessonNumber === 1) {
     return makeLesson1();
@@ -896,7 +1112,9 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
       ...centeredProblem,
       sourcePageImages: centeredProblem.sourcePageImages ?? sourcePageImages,
       blankSourcePageImages: centeredProblem.blankSourcePageImages ?? sourcePageImages,
-      solvedSourcePageImages: centeredProblem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages]
+      solvedSourcePageImages: centeredProblem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages],
+      blankVisual: createM5ProblemVisual(centeredProblem, false),
+      solvedVisual: createM5ProblemVisual(centeredProblem, true)
     };
   });
   return {

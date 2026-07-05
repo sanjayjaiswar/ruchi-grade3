@@ -218,6 +218,187 @@
   font-weight: 900;
 }
 
+.visual-data-table {
+  display: grid;
+  width: min(100%, 900px);
+  border: 1px solid #c7ceda;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.visual-data-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  border-bottom: 1px solid #d2d9e6;
+}
+
+.visual-data-row:last-child {
+  border-bottom: 0;
+}
+
+.visual-data-row span {
+  min-width: 0;
+  padding: 9px 10px;
+  border-right: 1px solid #d2d9e6;
+  color: #202124;
+  font-size: 14px;
+  font-weight: 850;
+  overflow-wrap: anywhere;
+}
+
+.visual-data-row span:last-child {
+  border-right: 0;
+}
+
+.visual-data-row.is-head span {
+  background: #e8f0fe;
+  color: #174ea6;
+  font-size: 13px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.visual-number-line {
+  display: grid;
+  gap: 12px;
+  width: min(100%, 900px);
+}
+
+.visual-number-line > div {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(54px, 1fr);
+  align-items: end;
+  min-height: 76px;
+  padding-top: 22px;
+  border-bottom: 4px solid #3c4043;
+}
+
+.visual-number-line span {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  justify-content: center;
+  padding-top: 18px;
+  color: #202124;
+  font-size: 13px;
+  font-weight: 900;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.visual-number-line span::before {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 3px;
+  height: 18px;
+  border-radius: 999px;
+  background: #3c4043;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.visual-number-line span.is-target::after {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #4285f4;
+  border-radius: 999px;
+  background: #ffffff;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.visual-clock {
+  display: grid;
+  grid-template-columns: auto minmax(140px, 1fr);
+  gap: 12px 16px;
+  align-items: center;
+  width: min(100%, 520px);
+}
+
+.visual-clock > div {
+  position: relative;
+  width: 126px;
+  height: 126px;
+  border: 4px solid #3c4043;
+  border-radius: 999px;
+  background: #ffffff;
+}
+
+.visual-clock span {
+  position: absolute;
+  color: #202124;
+  font-size: 13px;
+  font-weight: 950;
+}
+
+.visual-clock .clock-twelve {
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.visual-clock .clock-three {
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+}
+
+.visual-clock .clock-six {
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.visual-clock .clock-nine {
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+}
+
+.visual-clock i,
+.visual-clock b {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 4px;
+  border-radius: 999px;
+  background: #4285f4;
+  transform-origin: bottom center;
+  content: "";
+}
+
+.visual-clock i {
+  height: 46px;
+  transform: translateX(-50%) rotate(30deg);
+}
+
+.visual-clock b {
+  height: 34px;
+  background: #202124;
+  transform: translateX(-50%) rotate(310deg);
+}
+
+.visual-clock p {
+  margin: 0;
+  color: #202124;
+  font-size: 17px;
+  font-weight: 950;
+  line-height: 1.35;
+}
+
+.visual-clock small,
+.visual-number-line small {
+  color: var(--color-text-secondary, #5f6368);
+  font-size: 13px;
+  font-weight: 800;
+}
+
 @media (max-width: 680px) {
   .problem-visual-workspace {
     padding: 12px;
@@ -235,5 +416,14 @@
   .visual-tape span {
     min-height: 50px;
     font-size: 15px;
+  }
+
+  .visual-clock {
+    grid-template-columns: 1fr;
+  }
+
+  .visual-number-line > div {
+    grid-auto-columns: minmax(42px, 1fr);
+    overflow-x: auto;
   }
 }

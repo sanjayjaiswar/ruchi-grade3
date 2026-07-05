@@ -164,7 +164,8 @@ import type {
   ProblemSetAnimationType,
   ProblemSetBlankVisualType,
   ProblemSetCenteredLesson,
-  ProblemSetDataDisplay
+  ProblemSetDataDisplay,
+  ProblemVisualSpec
 } from './lesson-runtime.types';
 
 const LESSON_RUNTIME_BY_ID: Record<string, LessonRuntimeConfig> = {
@@ -588,6 +589,198 @@ function m6BlankEquationTemplates(sourceEquations: string[], visualFamily: strin
   return templates.length
     ? Array.from(new Set(templates))
     : [`Use the official ${visualFamily} blanks and explain from the display evidence.`];
+}
+
+function m6ProblemVisual(
+  lessonNumber: number,
+  problemNumber: number,
+  visualFamily: string,
+  display: ProblemSetDataDisplay,
+  equations: string[],
+  solvedAnswer: string | undefined,
+  solved: boolean
+): ProblemVisualSpec {
+  const sections: ProblemVisualSpec['sections'] = [];
+  const displayRows = m6VisualRows(lessonNumber, problemNumber, display, solved);
+  if (displayRows.length) {
+    sections.push({
+      kind: 'data-table',
+      label: `${display.title} source data`,
+      columns: m6VisualColumns(display),
+      rows: displayRows
+    });
+  }
+
+  if (display.kind === 'line-plot') {
+    sections.push({
+      kind: 'number-line',
+      label: display.title,
+      ticks: (display.values ?? []).map((item) => ({
+        label: `${item.label}${solved && item.value !== undefined ? ` (${item.value} X${item.value === 1 ? '' : 's'})` : ''}`,
+        target: solved && Boolean(item.value)
+      })),
+      caption: solved
+        ? display.keyLabel ?? 'Read each X as one measurement.'
+        : 'Use the source data to place Xs above the correct measurement labels.'
+    });
+  } else if (display.kind === 'ruler') {
+    sections.push({
+      kind: 'number-line',
+      label: display.title,
+      ticks: (display.ticks ?? []).map((tick) => ({
+        label: tick,
+        target: solved && (tick.includes('/2') || tick.includes('/4'))
+      })),
+      caption: solved
+        ? 'Whole inches, half inches, and quarter inches are labeled on the same strip.'
+        : 'Label the whole, half, and quarter-inch marks before measuring.'
+    });
+  } else if (display.kind === 'bar-graph' || display.kind === 'picture-graph' || display.kind === 'vertical-tape') {
+    for (const item of display.values ?? []) {
+      const units = m6VisualUnitCount(item.value, display);
+      sections.push({
+        kind: 'tape',
+        label: item.label,
+        totalLabel: solved && item.value !== undefined ? `${item.value} ${m6DisplayUnitLabel(display)}` : `${item.label}: ____`,
+        parts: Array.from({ length: units }, (_, index) => ({
+          label: solved ? String(display.unitSize ?? display.interval ?? index + 1) : '',
+          emphasize: solved && index < units
+        })),
+        caption: solved
+          ? `${item.label} is represented by ${item.value} using the stated scale/key.`
+          : `Use the stated scale/key to complete ${item.label}.`
+      });
+    }
+  } else if (display.kind === 'tally-picture') {
+    sections.push({
+      kind: 'data-table',
+      label: 'Tally and picture graph workspace',
+      columns: ['Category', solved ? 'Count or symbol count' : 'Tally / count'],
+      rows: (display.categories ?? []).map((category) => [category, solved ? 'Use class survey data' : '____'])
+    });
+  }
+
+  const equationLines = solved
+    ? m6SolvedVisualEquations(equations, solvedAnswer)
+    : m6BlankEquationTemplates(equations, visualFamily);
+  sections.push({
+    kind: 'equations',
+    label: solved ? 'Teacher Edition answer work' : 'Student work blanks',
+    lines: equationLines
+  });
+  sections.push({
+    kind: 'note',
+    label: solved ? 'Solved check' : 'Source workspace direction',
+    text: solved
+      ? solvedAnswer ?? 'Teacher Edition accepts variable student data when the display, scale, labels, and explanation match the official problem.'
+      : `Complete the official ${visualFamily} with no source-page image and no solved answer leakage.`
+  });
+
+  return {
+    title: `${display.title}: ${visualFamily}`,
+    sourceNote: solved
+      ? 'Solved view uses authored data visuals and Teacher Edition answer-key meaning, not raw source-page images.'
+      : 'Blank view keeps the official data-display workspace open with no source-page images or solved answer leakage.',
+    sections
+  };
+}
+
+function m6VisualColumns(display: ProblemSetDataDisplay): string[] {
+  if (display.columns?.length) {
+    return display.columns;
+  }
+  if (display.kind === 'line-plot') {
+    return ['Measurement', 'Number of Xs'];
+  }
+  if (display.kind === 'ruler') {
+    return ['Mark', 'Measurement interval'];
+  }
+  return ['Label', 'Value'];
+}
+
+function m6VisualRows(
+  lessonNumber: number,
+  problemNumber: number,
+  display: ProblemSetDataDisplay,
+  solved: boolean
+): string[][] {
+  if (display.rows?.length) {
+    return display.rows.map((row) => row.map((cell) => m6SolvedCell(lessonNumber, problemNumber, cell, solved)));
+  }
+  if (display.sourceDataRows?.length) {
+    return display.sourceDataRows;
+  }
+  if (display.values?.length) {
+    return display.values.map((item) => [
+      item.label,
+      solved && item.value !== undefined ? String(item.value) : item.valueLabel ?? '____'
+    ]);
+  }
+  if (display.ticks?.length) {
+    return display.ticks.map((tick) => [tick, solved ? m6RulerMarkMeaning(tick) : '____']);
+  }
+  if (display.categories?.length) {
+    return display.categories.map((category) => [category, '____']);
+  }
+  return [[display.title, solved ? 'Complete from Teacher Edition answer evidence.' : 'Complete from the official source prompt.']];
+}
+
+function m6SolvedCell(lessonNumber: number, problemNumber: number, cell: string, solved: boolean): string {
+  if (!solved) {
+    return cell;
+  }
+  if (lessonNumber === 9 && (problemNumber === 1 || problemNumber === 2) && cell === '____') {
+    return '24';
+  }
+  return cell;
+}
+
+function m6VisualUnitCount(value: number | undefined, display: ProblemSetDataDisplay): number {
+  if (!value) {
+    return 4;
+  }
+  const unit = display.unitSize ?? display.interval ?? 1;
+  return Math.max(1, Math.min(16, Math.ceil(value / unit)));
+}
+
+function m6DisplayUnitLabel(display: ProblemSetDataDisplay): string {
+  if (display.title.includes('Apples')) {
+    return 'apples';
+  }
+  if (display.title.includes('Visitors')) {
+    return 'visitors';
+  }
+  if (display.title.includes('Savings')) {
+    return 'dollars';
+  }
+  if (display.title.includes('Students')) {
+    return 'students';
+  }
+  if (display.title.includes('Stamps')) {
+    return 'stamps';
+  }
+  return 'units';
+}
+
+function m6SolvedVisualEquations(equations: string[], solvedAnswer: string | undefined): string[] {
+  const lines = equations.length ? equations : [];
+  if (solvedAnswer) {
+    return Array.from(new Set([...lines, ...solvedAnswer.split(/;\s+/).map((line) => line.trim()).filter(Boolean)])).slice(0, 8);
+  }
+  return lines.length ? lines : ['Variable answer: verify the display, scale, labels, and written explanation against the Teacher Edition.'];
+}
+
+function m6RulerMarkMeaning(tick: string): string {
+  if (tick === '0') {
+    return 'start';
+  }
+  if (tick.includes('/4')) {
+    return 'quarter-inch mark';
+  }
+  if (tick.includes('/2')) {
+    return 'half-inch mark';
+  }
+  return 'whole-inch mark';
 }
 
 const M6_SOURCE_PAGE_BASE = '/source-pages/m6';
@@ -1143,6 +1336,180 @@ function m7AnimationType(
   return 'two-step-model';
 }
 
+function m7ProblemVisual(
+  visualFamily: string,
+  problemNumber: number,
+  dataDisplay: ProblemSetDataDisplay | undefined,
+  areaModels: ProblemSetCenteredLesson['problems'][number]['areaModels'],
+  equations: string[],
+  officialAnswer: string | undefined,
+  solved: boolean
+): ProblemVisualSpec {
+  const sections: ProblemVisualSpec['sections'] = [];
+
+  if (dataDisplay) {
+    sections.push({
+      kind: 'data-table',
+      label: `${dataDisplay.title} source workspace`,
+      columns: m7VisualColumns(dataDisplay),
+      rows: m7VisualRows(dataDisplay, solved)
+    });
+    if (dataDisplay.kind === 'line-plot') {
+      sections.push({
+        kind: 'number-line',
+        label: dataDisplay.title,
+        ticks: (dataDisplay.values ?? []).map((item) => ({
+          label: solved && item.value !== undefined ? `${item.label} (${item.value} X${item.value === 1 ? '' : 's'})` : item.label,
+          target: solved && Boolean(item.value)
+        })),
+        caption: solved
+          ? dataDisplay.keyLabel ?? 'Read each X as one item.'
+          : 'Use the source table/data to place Xs above the correct labels.'
+      });
+    }
+  } else if (areaModels?.length) {
+    for (const model of areaModels.slice(0, 6)) {
+      sections.push({
+        kind: 'array',
+        label: solved
+          ? `${model.label}: ${model.rows} x ${model.columns} = ${model.total ?? model.rows * model.columns}`
+          : `${model.label}: build this rectangle`,
+        rows: Math.max(1, Math.min(model.rows, 12)),
+        columns: Math.max(1, Math.min(model.columns, 16)),
+        item: 'dot',
+        placeholder: solved ? undefined : '?',
+        caption: solved
+          ? `${model.total ?? model.rows * model.columns} ${model.unitLabel ?? 'square units'}`
+          : 'Use unit squares to make the rectangle and record area/perimeter evidence.'
+      });
+    }
+  } else if (visualFamily.includes('perimeter')) {
+    sections.push({
+      kind: 'tape',
+      label: 'Perimeter workspace',
+      totalLabel: solved ? 'Perimeter from all outside sides' : 'Perimeter = ____',
+      parts: ['side 1', 'side 2', 'side 3', 'side 4'].map((label) => ({
+        label: solved ? label : '',
+        sublabel: solved ? 'outside boundary' : undefined,
+        emphasize: solved
+      })),
+      caption: solved
+        ? 'Add only the outside side lengths required by the Teacher Edition problem.'
+        : 'Measure or label each outside side before adding.'
+    });
+  } else if (visualFamily.includes('polygon')) {
+    sections.push({
+      kind: 'data-table',
+      label: 'Polygon attribute workspace',
+      columns: ['Source requirement', solved ? 'Verified attribute' : 'Student work'],
+      rows: [
+        ['shape name or class', solved ? 'matches the official attribute rule' : '____'],
+        ['number of sides', solved ? 'counted from the drawing' : '____'],
+        ['number of angles', solved ? 'counted from the drawing' : '____'],
+        ['special attribute', solved ? 'parallel/equal/right-angle evidence stated' : '____']
+      ]
+    });
+  } else if (visualFamily.includes('robot')) {
+    sections.push({
+      kind: 'data-table',
+      label: 'Robot measurement workspace',
+      columns: ['Body part or object', solved ? 'Checked measurement' : 'Required measurement'],
+      rows: [
+        ['arms', solved ? 'perimeter checked against 14 cm each' : '14 cm each'],
+        ['legs', solved ? 'perimeter checked against 18 cm each' : '18 cm each'],
+        ['body', solved ? 'perimeter checked against double one arm' : 'double one arm'],
+        ['head and neck', solved ? '16 cm and half-head perimeter checked' : '16 cm and half of head'],
+        ['environment', solved ? 'rectangle and string measurements checked' : 'record width/length or string measure']
+      ]
+    });
+  } else if (visualFamily.includes('one-half')) {
+    sections.push({
+      kind: 'tape',
+      label: 'One-half representation workspace',
+      totalLabel: solved ? '1 whole' : '1 whole',
+      parts: [
+        { label: solved ? '1/2' : '', emphasize: solved },
+        { label: solved ? '1/2' : '', emphasize: solved }
+      ],
+      caption: solved
+        ? 'Both parts must be equal in area, even if the shapes look different.'
+        : 'Create two equal parts and justify why each part is one half.'
+    });
+  } else {
+    sections.push({
+      kind: 'tape',
+      label: 'RDW word-problem workspace',
+      totalLabel: solved ? 'Known total / comparison from source' : 'Known and unknown quantities',
+      parts: [
+        { label: solved ? 'given' : '', emphasize: solved },
+        { label: solved ? 'unknown' : '', emphasize: solved },
+        { label: solved ? 'answer' : '', emphasize: solved }
+      ],
+      caption: solved
+        ? 'The solved quantities are checked against the Teacher Edition answer key.'
+        : 'Read, draw, write, and label the unknown from the official prompt.'
+    });
+  }
+
+  sections.push({
+    kind: 'equations',
+    label: solved ? 'Teacher Edition answer evidence' : 'Student work blanks',
+    lines: solved ? m7SolvedVisualLines(equations, officialAnswer) : m7BlankEquationTemplates(equations, visualFamily)
+  });
+  sections.push({
+    kind: 'note',
+    label: solved ? 'Solved check' : 'Source workspace direction',
+    text: solved
+      ? officialAnswer ?? 'Correct work varies; the Teacher Edition requires the drawing, attributes, measurements, labels, and written explanation to satisfy the official prompt.'
+      : `Complete the official ${visualFamily} with authored work only; do not use a source-page image as the workspace.`
+  });
+
+  return {
+    title: `Problem ${problemNumber}: ${visualFamily}`,
+    sourceNote: solved
+      ? 'Solved view uses authored geometry/measurement/data visuals and Teacher Edition answer-key meaning, not raw source-page images.'
+      : 'Blank view keeps the official Module 7 workspace open with no source-page images or solved answer leakage.',
+    sections
+  };
+}
+
+function m7VisualColumns(display: ProblemSetDataDisplay): string[] {
+  if (display.columns?.length) {
+    return display.columns;
+  }
+  if (display.kind === 'line-plot') {
+    return ['Label', 'Number of Xs'];
+  }
+  return ['Label', 'Value'];
+}
+
+function m7VisualRows(display: ProblemSetDataDisplay, solved: boolean): string[][] {
+  if (display.rows?.length) {
+    return solved ? display.rows.map((row) => row.map((cell) => cell.replace(/____/g, 'Teacher Edition value'))) : display.rows;
+  }
+  if (display.values?.length) {
+    return display.values.map((item) => [
+      item.label,
+      solved && item.value !== undefined ? String(item.value) : item.valueLabel ?? '____'
+    ]);
+  }
+  if (display.sourceDataRows?.length) {
+    return display.sourceDataRows;
+  }
+  if (display.sourceData?.length) {
+    return display.sourceData.map((value) => [value, solved ? 'plotted' : '____']);
+  }
+  return [[display.title, solved ? 'checked against source' : 'complete from source']];
+}
+
+function m7SolvedVisualLines(equations: string[], officialAnswer: string | undefined): string[] {
+  const answerLines = officialAnswer
+    ? officialAnswer.split(/;\s+|(?=\b[a-z]\.\s)/).map((line) => line.trim()).filter(Boolean)
+    : [];
+  const merged = Array.from(new Set([...equations, ...answerLines])).filter(Boolean);
+  return merged.length ? merged.slice(0, 8) : ['Verify the constructed work against the Teacher Edition answer key.'];
+}
+
 function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | undefined {
   const source = STUDENT_WORK_SOURCE[`m7-l${lessonNumber}`];
   if (!source) {
@@ -1193,6 +1560,8 @@ function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
         blankEquations: m7BlankEquationTemplates(problem.equations, visualFamily),
         blankWorkspaceLabel: `Complete the Teacher Edition-aligned ${visualFamily}.`,
         blankVisualType: m7BlankVisualType(lessonNumber, problem.number, visualFamily, areaModels, dataDisplay),
+        blankVisual: m7ProblemVisual(visualFamily, problem.number, dataDisplay, areaModels, problem.equations, officialAnswer, false),
+        solvedVisual: m7ProblemVisual(visualFamily, problem.number, solvedDataDisplay, areaModels, equations, officialAnswer, true),
         areaModels,
         dataDisplay,
         solvedDataDisplay,
@@ -1264,6 +1633,8 @@ function m6ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
         blankEquations: m6BlankEquationTemplates(problem.equations, visualFamily),
         blankWorkspaceLabel: `Complete the ${visualFamily} scaffold.`,
         blankVisualType: m6BlankVisualType(dataDisplay),
+        blankVisual: m6ProblemVisual(lessonNumber, problem.number, visualFamily, dataDisplay, problem.equations, solvedNote, false),
+        solvedVisual: m6ProblemVisual(lessonNumber, problem.number, visualFamily, dataDisplay, problem.equations, solvedNote, true),
         dataDisplay,
         solvedDataDisplay: dataDisplay,
         solvedAnswer: solvedNote ?? 'Answers vary when the official Teacher Edition marks the survey, measurement collection, scale choice, or explanation as variable.',

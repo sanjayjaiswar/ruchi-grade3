@@ -2,8 +2,11 @@ import { NgClass, NgFor, NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import type {
   ProblemVisualArraySection,
+  ProblemVisualClockSection,
+  ProblemVisualDataTableSection,
   ProblemVisualEquationsSection,
   ProblemVisualNoteSection,
+  ProblemVisualNumberLineSection,
   ProblemVisualRelatedFactsSection,
   ProblemVisualSection,
   ProblemVisualSpec,
@@ -30,6 +33,18 @@ export class ProblemVisualWorkspaceComponent {
 
   tapeSection(section: ProblemVisualSection): ProblemVisualTapeSection | undefined {
     return section.kind === 'tape' ? section : undefined;
+  }
+
+  dataTableSection(section: ProblemVisualSection): ProblemVisualDataTableSection | undefined {
+    return section.kind === 'data-table' ? section : undefined;
+  }
+
+  numberLineSection(section: ProblemVisualSection): ProblemVisualNumberLineSection | undefined {
+    return section.kind === 'number-line' ? section : undefined;
+  }
+
+  clockSection(section: ProblemVisualSection): ProblemVisualClockSection | undefined {
+    return section.kind === 'clock' ? section : undefined;
   }
 
   equationsSection(section: ProblemVisualSection): ProblemVisualEquationsSection | undefined {

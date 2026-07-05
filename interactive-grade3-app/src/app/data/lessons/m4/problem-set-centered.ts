@@ -5,7 +5,8 @@ import type {
   ProblemSetCenteredLesson,
   ProblemSetCenteredProblem,
   ProblemSetPatternBlockCover,
-  ProblemSetRoomArea
+  ProblemSetRoomArea,
+  ProblemVisualSpec
 } from '../lesson-runtime.types';
 
 type ProblemSeed = {
@@ -220,6 +221,173 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
   };
 }
 
+function createM4ProblemVisual(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec {
+  const sections: ProblemVisualSpec['sections'] = [];
+  const sourceNote = solved
+    ? 'Solved view uses the Module 4 Teacher Edition answer key with authored area visuals and unit checks.'
+    : 'Blank view keeps the official Problem Set workspace open with authored visuals and no source-page images.';
+
+  if (problem.patternBlockCover) {
+    sections.push(...m4PatternBlockSections(problem, solved));
+  } else if (problem.roomAreas?.length) {
+    sections.push(m4RoomAreaSection(problem, solved));
+  } else if (problem.areaModels?.length) {
+    sections.push(...m4AreaModelSections(problem, solved));
+  } else if (problem.blankVisualType === 'array-template' || problem.animationType === 'array-model') {
+    sections.push(...m4ArraySections(problem, solved));
+  } else {
+    sections.push(m4OpenWorkspaceSection(problem, solved));
+  }
+
+  sections.push({
+    kind: 'equations',
+    label: solved ? 'Solved area work' : 'Student work blanks',
+    lines: solved ? problem.equations : problem.blankEquations?.length ? problem.blankEquations : blankEquationTemplatesFromLines(problem.equations)
+  });
+
+  sections.push({
+    kind: 'note',
+    label: solved ? 'Teacher Edition answer' : 'Source workspace direction',
+    text: solved ? problem.solvedAnswer : problem.blankWorkspaceLabel ?? 'Complete the official Problem Set figure, labels, equations, and answer sentence.'
+  });
+
+  return {
+    title: `Problem ${problem.number}: ${m4VisualTitle(problem)}`,
+    sourceNote,
+    sections
+  };
+}
+
+function m4PatternBlockSections(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'] {
+  const cover = problem.patternBlockCover;
+  if (!cover) {
+    return [m4OpenWorkspaceSection(problem, solved)];
+  }
+
+  const rows = cover.targets.map((target) => [
+    target.label,
+    target.shape,
+    solved ? `${target.count} ${m4PatternBlockUnitLabel(cover.unit, target.count)}` : `____ ${m4PatternBlockUnitLabel(cover.unit, target.count)}`
+  ]);
+
+  return [
+    {
+      kind: 'data-table',
+      label: solved ? `${cover.unit} cover counts` : `${cover.unit} cover workspace`,
+      columns: ['Target', 'Official outline', 'Unit count'],
+      rows
+    },
+    {
+      kind: 'array',
+      label: solved ? 'Visible unit count model' : 'Unit-count workspace',
+      rows: cover.targets.length,
+      columns: boundedM4Count(Math.max(...cover.targets.map((target) => target.count)), 1, 12),
+      item: 'dot',
+      placeholder: solved ? undefined : ''
+    }
+  ];
+}
+
+function m4PatternBlockUnitLabel(unit: ProblemSetPatternBlockCover['unit'], count: number): string {
+  if (count === 1) {
+    return unit;
+  }
+  return unit === 'rhombus' ? 'rhombuses' : `${unit}s`;
+}
+
+function m4RoomAreaSection(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'][number] {
+  const rooms = problem.roomAreas ?? [];
+  const total = rooms.reduce((sum, room) => sum + room.area, 0);
+  return {
+    kind: 'data-table',
+    label: solved ? 'Solved floor-plan room areas' : 'Blank floor-plan room area table',
+    columns: ['Room', 'Area', 'Check'],
+    rows: rooms.map((room) => [
+      room.label,
+      solved ? `${room.area} sq cm` : '____ sq cm',
+      solved ? `${room.label} contributes to ${total} sq cm total` : 'length x width = ____'
+    ])
+  };
+}
+
+function m4AreaModelSections(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'] {
+  return (problem.areaModels ?? []).flatMap((model) => [
+    {
+      kind: 'array' as const,
+      label: solved
+        ? `${model.label}: ${model.rows} x ${model.columns} = ${model.total ?? model.rows * model.columns}`
+        : `${model.label}: ${model.rows} by ${model.columns} area model`,
+      rows: boundedM4Count(model.rows, 1, 12),
+      columns: boundedM4Count(model.columns, 1, 12),
+      item: 'dot' as const,
+      placeholder: solved ? undefined : ''
+    }
+  ]);
+}
+
+function m4ArraySections(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'] {
+  const factorPair = sourceFactorPair(problem.equations);
+  const rows = boundedM4Count(problem.knownGroupCount ?? factorPair?.rows, 1, 12);
+  const columns = boundedM4Count(problem.knownGroupSize ?? factorPair?.columns, 1, 12);
+
+  return [
+    {
+      kind: 'array',
+      label: solved
+        ? `${rows} by ${columns} rectangle area`
+        : `${rows} by ${columns} rectangle workspace`,
+      rows,
+      columns,
+      item: 'dot',
+      placeholder: solved ? undefined : ''
+    }
+  ];
+}
+
+function m4OpenWorkspaceSection(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'][number] {
+  return {
+    kind: 'data-table',
+    label: solved ? 'Solved area workspace' : 'Blank area workspace',
+    columns: ['Official prompt', 'Work', 'Answer'],
+    rows: [
+      [
+        problem.sourcePrompt,
+        solved ? problem.equations.join('; ') : problem.blankEquations?.join('; ') || blankEquationTemplatesFromLines(problem.equations).join('; ') || '____',
+        solved ? problem.solvedAnswer : '____'
+      ]
+    ]
+  };
+}
+
+function blankEquationTemplatesFromLines(equations?: string[]): string[] {
+  const templates = (equations ?? []).map(blankEquationTemplate).filter((template): template is string => Boolean(template));
+  return templates.length ? templates : ['____ = ____'];
+}
+
+function boundedM4Count(value: number | undefined, min: number, max: number): number {
+  if (!value || !Number.isFinite(value)) {
+    return min;
+  }
+
+  return Math.max(min, Math.min(max, Math.round(value)));
+}
+
+function m4VisualTitle(problem: ProblemSetCenteredProblem): string {
+  if (problem.patternBlockCover) {
+    return `${problem.patternBlockCover.unit} pattern-block area`;
+  }
+  if (problem.roomAreas?.length) {
+    return 'floor-plan area';
+  }
+  if (problem.areaModels?.length) {
+    return `${problem.areaModels.length} area model${problem.areaModels.length === 1 ? '' : 's'}`;
+  }
+  if (problem.quotient && problem.unitLabel) {
+    return `${problem.quotient} ${problem.unitLabel}`;
+  }
+  return problem.sourcePrompt;
+}
+
 function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
   const sourcePageImages = teacherEditionLessonPages(seed.teacherEditionBasis);
   const answerKeyImages = teacherEditionAnswerKeyPages(seed.sourceNote);
@@ -254,12 +422,20 @@ function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
         checkpoints: ['Check side lengths before multiplying.', 'Check decomposed parts against the whole.', 'Check written units and answer meaning.']
       }
     ],
-    problems: seed.problems.map((problemSeed) => makeProblem({
-      ...problemSeed,
-      sourcePageImages: problemSeed.sourcePageImages ?? sourcePageImages,
-      blankSourcePageImages: problemSeed.blankSourcePageImages ?? sourcePageImages,
-      solvedSourcePageImages: problemSeed.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages]
-    }))
+    problems: seed.problems.map((problemSeed) => {
+      const centeredProblem = makeProblem({
+        ...problemSeed,
+        sourcePageImages: problemSeed.sourcePageImages ?? sourcePageImages,
+        blankSourcePageImages: problemSeed.blankSourcePageImages ?? sourcePageImages,
+        solvedSourcePageImages: problemSeed.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages]
+      });
+
+      return {
+        ...centeredProblem,
+        blankVisual: createM4ProblemVisual(centeredProblem, false),
+        solvedVisual: createM4ProblemVisual(centeredProblem, true)
+      };
+    })
   };
 }
 
