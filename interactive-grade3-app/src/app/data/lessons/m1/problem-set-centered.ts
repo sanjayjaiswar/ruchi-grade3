@@ -4,24 +4,18 @@ import type {
   ProblemSetCenteredLesson,
   ProblemSetCenteredProblem,
   ProblemSetFactMatch,
+  ProblemVisualSpec,
   ProblemSetRelatedFact
 } from '../lesson-runtime.types';
 import { STUDENT_WORK_SOURCE } from '../../student-work-source.generated';
 
-type ProblemSeed = {
+export type M1ProblemVisualSeed = {
   number: number;
   sourcePrompt: string;
-  sourcePageImages?: string[];
-  blankSourcePageImages?: string[];
-  solvedSourcePageImages?: string[];
   solvedAnswer: string;
   equations: string[];
-  explanation?: string;
-  validationChecks?: string[];
   relatedFacts?: ProblemSetRelatedFact[];
-  blankPrompts?: string[];
   blankEquations?: string[];
-  blankAnswerSentence?: string;
   blankWorkspaceLabel?: string;
   blankVisualType?: ProblemSetBlankVisualType;
   animationType?: ProblemSetAnimationType;
@@ -33,6 +27,18 @@ type ProblemSeed = {
   unitLabel?: string;
   groupLabel?: string;
   facts?: ProblemSetFactMatch[];
+};
+
+type ProblemSeed = M1ProblemVisualSeed & {
+  sourcePageImages?: string[];
+  blankSourcePageImages?: string[];
+  solvedSourcePageImages?: string[];
+  explanation?: string;
+  validationChecks?: string[];
+  blankPrompts?: string[];
+  blankAnswerSentence?: string;
+  blankVisual?: ProblemVisualSpec;
+  solvedVisual?: ProblemVisualSpec;
   shareLabels?: string[];
 };
 
@@ -152,6 +158,310 @@ function teacherEditionSourceNote(seed: LessonSeed): string {
   return `Teacher Edition Lesson ${seed.lessonNumber} pages include the lesson structure, concept development, Problem Set guidance, Student Debrief, Exit Ticket, and official student-facing Problem Set pages.`;
 }
 
+function lesson17Visual(problemNumber: 1 | 2 | 3 | 4, solved: boolean): ProblemVisualSpec {
+  const sourceNote = solved
+    ? 'Solved view matches the Teacher Edition answer key quantities for Lesson 17.'
+    : 'Blank view preserves the student-facing work structure without filling the final answer.';
+
+  if (problemNumber === 1) {
+    return {
+      title: 'Problem 1: array and related facts',
+      sourceNote,
+      sections: [
+        {
+          kind: 'array',
+          label: '10 rows of 4 butterflies',
+          rows: 10,
+          columns: 4,
+          item: 'butterfly'
+        },
+        {
+          kind: 'related-facts',
+          label: 'Complete the multiplication fact and matching division fact for each row.',
+          rows: Array.from({ length: 10 }, (_, index) => {
+            const row = index + 1;
+            const product = row * 4;
+            if (solved) {
+              return {
+                left: `${row} x 4 = ${product}`,
+                right: `${product} divided by 4 = ${row}`
+              };
+            }
+            if (row <= 2) {
+              return {
+                left: `${row} x 4 = ____`,
+                right: `____ divided by 4 = ${row}`
+              };
+            }
+            if (row <= 4) {
+              return {
+                left: `____ x 4 = ${product}`,
+                right: `${product} divided by 4 = ____`
+              };
+            }
+            if (row <= 6) {
+              return {
+                left: `____ x ____ = ${product}`,
+                right: `${product} divided by ____ = ____`
+              };
+            }
+            if (row <= 8) {
+              return {
+                left: `____ x 4 = ____`,
+                right: `____ divided by 4 = ____`
+              };
+            }
+            return {
+              left: `____ x ____ = ____`,
+              right: `____ divided by ____ = ____`
+            };
+          })
+        }
+      ]
+    };
+  }
+
+  if (problemNumber === 2) {
+    return {
+      title: 'Problem 2: tape diagram for boxes of muffins',
+      sourceNote,
+      sections: [
+        {
+          kind: 'tape',
+          label: '36 bran muffins, 4 muffins in each box',
+          totalLabel: '36 muffins total',
+          parts: solved
+            ? Array.from({ length: 9 }, () => ({ label: '4' }))
+            : [
+                { label: '4' },
+                { label: '4' },
+                { label: '4' },
+                { label: '...' },
+                { label: '?' }
+              ],
+          caption: solved ? '36 divided by 4 = 9 boxes.' : 'Each part is 4 muffins. Find the number of equal boxes.'
+        },
+        {
+          kind: 'equations',
+          lines: solved ? ['36 divided by 4 = 9', '9 x 4 = 36'] : ['36 divided by 4 = ____', '____ x 4 = 36']
+        }
+      ]
+    };
+  }
+
+  if (problemNumber === 3) {
+    return {
+      title: 'Problem 3: equal rows of glasses',
+      sourceNote,
+      sections: [
+        solved
+          ? {
+              kind: 'array',
+              label: '32 glasses arranged in 4 equal rows',
+              rows: 4,
+              columns: 8,
+              item: 'glass'
+            }
+          : {
+              kind: 'array',
+              label: '4 equal rows, unknown number in each row',
+              rows: 4,
+              columns: 1,
+              item: 'circle',
+              placeholder: '?'
+            },
+        {
+          kind: 'equations',
+          lines: solved ? ['32 divided by 4 = 8', '4 x 8 = 32'] : ['32 divided by 4 = ____', '4 x ____ = 32']
+        }
+      ]
+    };
+  }
+
+  return {
+    title: 'Problem 4: money tape for notebooks',
+    sourceNote,
+    sections: [
+      {
+        kind: 'tape',
+        label: '$28 split into 4 equal notebook units',
+        totalLabel: '$28 total',
+        parts: solved
+          ? [
+              { label: '$7', emphasize: true },
+              { label: '$7', emphasize: true },
+              { label: '$7' },
+              { label: '$7' }
+            ]
+          : [
+              { label: '?', emphasize: true },
+              { label: '?', emphasize: true },
+              { label: '?' },
+              { label: '?' }
+            ],
+        caption: solved ? 'Two highlighted notebooks cost $14.' : 'Find 1 notebook first, then use 2 equal units.'
+      },
+      {
+        kind: 'equations',
+        lines: solved ? ['28 divided by 4 = 7', '2 x 7 = 14'] : ['28 divided by 4 = ____', '2 x ____ = ____']
+      }
+    ]
+  };
+}
+
+export function createM1ProblemVisual(seed: M1ProblemVisualSeed, solved: boolean): ProblemVisualSpec {
+  const sections: ProblemVisualSpec['sections'] = [];
+  const title = `Problem ${seed.number}: ${visualTitle(seed)}`;
+  const sourceNote = solved
+    ? 'Solved view uses the authored Module 1 Teacher Edition answer quantities and equations.'
+    : 'Blank view keeps the student Problem Set workspace visual and leaves the answer work open.';
+
+  if (seed.relatedFacts?.length) {
+    sections.push({
+      kind: 'related-facts',
+      label: 'Related multiplication and division facts',
+      rows: seed.relatedFacts.map((fact) => ({
+        left: solved ? fact.targetFact : fact.blankEquation,
+        right: solved ? fact.solvedEquation : fact.knownFact
+      }))
+    });
+  } else if (seed.facts?.length) {
+    sections.push({
+      kind: 'related-facts',
+      label: 'Complete the division fact table',
+      rows: seed.facts.map((fact) => ({
+        left: solved
+          ? `${fact.dividend} divided by ${fact.divisor} = ${fact.quotient}`
+          : `${fact.dividend} divided by ${fact.divisor} = ____`,
+        right: solved ? `${fact.quotient} groups` : '____ groups'
+      }))
+    });
+  } else if (usesTapeVisual(seed)) {
+    sections.push(makeTapeSection(seed, solved));
+  } else {
+    sections.push(makeArraySection(seed, solved));
+  }
+
+  if (!usesTapeVisual(seed) && seed.animationType && ['equal-sharing', 'tape-split', 'two-step-model'].includes(seed.animationType)) {
+    sections.push(makeTapeSection(seed, solved));
+  }
+
+  sections.push({
+    kind: 'equations',
+    label: solved ? 'Teacher Edition solved equations' : 'Student work equation blanks',
+    lines: solved ? seed.equations : seed.blankEquations ?? seed.equations.map(blankEquation)
+  });
+
+  sections.push({
+    kind: 'note',
+    label: solved ? 'Answer sentence' : 'Workspace direction',
+    text: solved ? seed.solvedAnswer : seed.blankWorkspaceLabel ?? 'Use the visual model to complete the source problem blanks.'
+  });
+
+  return { title, sourceNote, sections };
+}
+
+function visualTitle(seed: ProblemSeed): string {
+  if (seed.knownTotal && seed.knownGroupCount && seed.knownGroupSize) {
+    return `${seed.knownGroupCount} ${seed.groupLabel ?? 'groups'} of ${seed.knownGroupSize} ${seed.unitLabel ?? 'objects'}`;
+  }
+  if (seed.knownTotal && seed.knownGroupCount) {
+    return `${seed.knownTotal} ${seed.unitLabel ?? 'objects'} shared into ${seed.knownGroupCount} ${seed.groupLabel ?? 'groups'}`;
+  }
+  if (seed.knownTotal && seed.knownGroupSize) {
+    return `${seed.knownTotal} ${seed.unitLabel ?? 'objects'} in groups of ${seed.knownGroupSize}`;
+  }
+  return seed.sourcePrompt;
+}
+
+function usesTapeVisual(seed: ProblemSeed): boolean {
+  return (
+    seed.blankVisualType === 'tape-diagram' ||
+    seed.blankVisualType === 'bar-units' ||
+    seed.blankVisualType === 'share-tape' ||
+    seed.animationType === 'tape-split' ||
+    seed.animationType === 'two-step-model' ||
+    seed.animationType === 'equal-sharing'
+  );
+}
+
+function makeArraySection(seed: ProblemSeed, solved: boolean): ProblemVisualSpec['sections'][number] {
+  const groupCount = boundedCount(seed.knownGroupCount ?? inferGroupCount(seed), 1, 12);
+  const groupSize = boundedCount(seed.knownGroupSize ?? seed.quotient ?? inferGroupSize(seed), 1, 12);
+  const item = seed.unitLabel?.toLowerCase().includes('glass') ? 'glass' : 'dot';
+  const rows = Math.max(1, groupCount);
+  const columns = Math.max(1, groupSize);
+
+  return {
+    kind: 'array',
+    label: solved
+      ? `${rows} ${seed.groupLabel ?? 'groups'} of ${columns} ${seed.unitLabel ?? 'objects'}`
+      : `${rows} ${seed.groupLabel ?? 'groups'} workspace`,
+    rows,
+    columns,
+    item,
+    placeholder: solved ? undefined : seed.blankVisualType === 'open-workspace' ? '?' : undefined
+  };
+}
+
+function makeTapeSection(seed: ProblemSeed, solved: boolean): ProblemVisualSpec['sections'][number] {
+  const partCount = boundedCount(seed.knownGroupCount ?? inferGroupCount(seed), 1, 12);
+  const partValue = seed.knownGroupSize ?? seed.quotient;
+  const totalLabel = seed.knownTotal
+    ? `${seed.knownTotal} ${seed.unitLabel ?? 'objects'} total`
+    : `${seed.unitLabel ?? 'objects'} total`;
+  const blankLabel = seed.knownGroupSize && !seed.knownGroupCount ? String(seed.knownGroupSize) : '?';
+  const solvedLabel = partValue ? String(partValue) : '?';
+
+  return {
+    kind: 'tape',
+    label: solved ? 'Solved equal-part model' : 'Blank equal-part model',
+    totalLabel,
+    parts: Array.from({ length: partCount }, (_, index) => ({
+      label: solved ? solvedLabel : blankLabel,
+      emphasize: index < Math.min(2, partCount)
+    })),
+    caption: solved ? seed.solvedAnswer : seed.blankWorkspaceLabel ?? 'Use the equal parts to complete the source problem.'
+  };
+}
+
+function inferGroupCount(seed: ProblemSeed): number {
+  const equation = seed.equations[0] ?? '';
+  const multiplicationMatch = equation.match(/(\d+)\s*x\s*(\d+)\s*=/i);
+  if (multiplicationMatch) {
+    return Number(multiplicationMatch[1]);
+  }
+
+  const divisionMatch = equation.match(/(\d+)\s*divided by\s*(\d+)\s*=/i);
+  if (divisionMatch) {
+    return Number(divisionMatch[2]);
+  }
+
+  return seed.knownGroupCount ?? 3;
+}
+
+function inferGroupSize(seed: ProblemSeed): number {
+  const equation = seed.equations[0] ?? '';
+  const multiplicationMatch = equation.match(/(\d+)\s*x\s*(\d+)\s*=/i);
+  if (multiplicationMatch) {
+    return Number(multiplicationMatch[2]);
+  }
+
+  if (seed.knownTotal && seed.knownGroupCount) {
+    return Math.max(1, Math.round(seed.knownTotal / seed.knownGroupCount));
+  }
+
+  return seed.knownGroupSize ?? seed.quotient ?? 4;
+}
+
+function boundedCount(value: number | undefined, min: number, max: number): number {
+  if (!value || !Number.isFinite(value)) {
+    return min;
+  }
+
+  return Math.max(min, Math.min(max, Math.round(value)));
+}
+
 function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
   return {
     number: seed.number,
@@ -164,6 +474,8 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
     blankAnswerSentence: seed.blankAnswerSentence,
     blankWorkspaceLabel: seed.blankWorkspaceLabel ?? 'Use the Teacher Edition scaffold and label what each number means.',
     blankVisualType: seed.blankVisualType ?? 'equation-workspace',
+    blankVisual: seed.blankVisual ?? createM1ProblemVisual(seed, false),
+    solvedVisual: seed.solvedVisual ?? createM1ProblemVisual(seed, true),
     solvedAnswer: seed.solvedAnswer,
     equations: seed.equations,
     knownTotal: seed.knownTotal,
@@ -1728,6 +2040,8 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         quotient: 10,
         unitLabel: 'facts',
         groupLabel: 'matches',
+        blankVisual: lesson17Visual(1, false),
+        solvedVisual: lesson17Visual(1, true),
         blankVisualType: 'fact-match',
         animationType: 'fact-match',
         blankWorkspaceLabel: 'Use each row of 4 butterflies to complete the multiplication fact and matching division fact.',
@@ -1753,6 +2067,8 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         quotient: 9,
         unitLabel: 'muffins',
         groupLabel: 'boxes',
+        blankVisual: lesson17Visual(2, false),
+        solvedVisual: lesson17Visual(2, true),
         blankVisualType: 'bar-units',
         animationType: 'grouping-by-size',
         blankWorkspaceLabel: 'Draw a tape diagram with 36 muffins total, 4 muffins in each box, and an unknown number of boxes.',
@@ -1778,6 +2094,8 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         quotient: 8,
         unitLabel: 'glasses',
         groupLabel: 'rows',
+        blankVisual: lesson17Visual(3, false),
+        solvedVisual: lesson17Visual(3, true),
         blankVisualType: 'array-template',
         animationType: 'array-model',
         blankWorkspaceLabel: 'Use 4 equal rows to represent 32 glasses, then find the number in each row.',
@@ -1803,6 +2121,8 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         quotient: 14,
         unitLabel: 'dollars',
         groupLabel: 'notebooks',
+        blankVisual: lesson17Visual(4, false),
+        solvedVisual: lesson17Visual(4, true),
         blankVisualType: 'tape-diagram',
         animationType: 'two-step-model',
         blankWorkspaceLabel: 'Draw a 4-unit tape for $28 total, find 1 notebook, then find 2 notebooks.',

@@ -1,0 +1,60 @@
+<section class="problem-visual-workspace" *ngIf="spec" [class.is-solved]="mode === 'solved'">
+  <header class="visual-header">
+    <strong>{{ spec.title }}</strong>
+    <span>{{ mode === 'solved' ? 'Solved visual' : 'Blank visual' }}</span>
+  </header>
+
+  <article class="visual-section" *ngFor="let section of spec.sections">
+    <ng-container *ngIf="arraySection(section) as array">
+      <strong *ngIf="array.label">{{ array.label }}</strong>
+      <div class="visual-array" [ngClass]="'is-' + array.item" [style.gridTemplateColumns]="arrayColumns(array)">
+        <span
+          *ngFor="let cell of range(array.rows * array.columns)"
+          [class.has-placeholder]="array.placeholder"
+          [attr.aria-hidden]="!array.placeholder">
+          {{ array.placeholder || '' }}
+        </span>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="relatedFactsSection(section) as facts">
+      <strong *ngIf="facts.label">{{ facts.label }}</strong>
+      <div class="visual-related-facts">
+        <div *ngFor="let row of facts.rows">
+          <span>{{ row.left }}</span>
+          <span>{{ row.right }}</span>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="tapeSection(section) as tape">
+      <strong *ngIf="tape.label">{{ tape.label }}</strong>
+      <div class="visual-tape">
+        <b>{{ tape.totalLabel }}</b>
+        <div [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
+          <span
+            *ngFor="let part of tape.parts"
+            [class.is-emphasis]="part.emphasize"
+            [class.is-blank]="!part.label">
+            {{ part.label || '?' }}
+          </span>
+        </div>
+        <small *ngIf="tape.caption">{{ tape.caption }}</small>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="equationsSection(section) as equations">
+      <strong *ngIf="equations.label">{{ equations.label }}</strong>
+      <div class="visual-equations">
+        <span *ngFor="let line of equations.lines">{{ line }}</span>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="noteSection(section) as note">
+      <strong *ngIf="note.label">{{ note.label }}</strong>
+      <p class="visual-note">{{ note.text }}</p>
+    </ng-container>
+  </article>
+
+  <footer *ngIf="spec.sourceNote">{{ spec.sourceNote }}</footer>
+</section>

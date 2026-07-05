@@ -21,12 +21,14 @@ import {
   ProblemSetFractionModel,
   ProblemSetNumberLineModel,
   ProblemSetPaperPartitionModel,
+  ProblemVisualSpec,
   ProblemSetDataDisplay,
   DataDisplayPoint,
   SourceWorkspaceModel
 } from '../../data/lessons/lesson-runtime.types';
 import { ArrayDecomposerComponent } from '../../shared/array-decomposer/array-decomposer';
 import { EqualGroupsModelComponent } from '../../shared/equal-groups-model/equal-groups-model';
+import { ProblemVisualWorkspaceComponent } from '../../shared/problem-visual-workspace/problem-visual-workspace';
 
 type Feedback = {
   status: 'correct' | 'needs-work';
@@ -115,6 +117,7 @@ type SourceVisualFacts = Pick<
     ArrayDecomposerComponent,
     EqualGroupsModelComponent,
     FormsModule,
+    ProblemVisualWorkspaceComponent,
     NgClass,
     NgFor,
     NgIf,
@@ -447,6 +450,10 @@ export class LessonPage implements OnInit {
 
   hasProblemSourcePages(problem: ProblemSetCenteredProblem): boolean {
     return this.problemSourcePageImages(problem).length > 0;
+  }
+
+  problemVisualSpec(problem: ProblemSetCenteredProblem): ProblemVisualSpec | undefined {
+    return this.problemSetMode === 'solved' ? problem.solvedVisual : problem.blankVisual;
   }
 
   problemSetSourcePageHeading(): string {

@@ -244,6 +244,65 @@ export type ProblemSetRoomArea = {
   area: number;
 };
 
+export type ProblemVisualArraySection = {
+  kind: 'array';
+  label?: string;
+  rows: number;
+  columns: number;
+  item: 'dot' | 'butterfly' | 'circle' | 'glass';
+  mode?: 'blank' | 'solved';
+  placeholder?: string;
+  rowLabels?: string[];
+  caption?: string;
+};
+
+export type ProblemVisualRelatedFactsSection = {
+  kind: 'related-facts';
+  label?: string;
+  rows: Array<{
+    left: string;
+    right: string;
+  }>;
+};
+
+export type ProblemVisualTapeSection = {
+  kind: 'tape';
+  label?: string;
+  totalLabel: string;
+  parts: Array<{
+    label: string;
+    sublabel?: string;
+    emphasize?: boolean;
+    muted?: boolean;
+  }>;
+  caption?: string;
+};
+
+export type ProblemVisualEquationsSection = {
+  kind: 'equations';
+  label?: string;
+  lines: string[];
+};
+
+export type ProblemVisualNoteSection = {
+  kind: 'note';
+  label?: string;
+  text: string;
+};
+
+export type ProblemVisualSection =
+  | ProblemVisualArraySection
+  | ProblemVisualRelatedFactsSection
+  | ProblemVisualTapeSection
+  | ProblemVisualEquationsSection
+  | ProblemVisualNoteSection;
+
+export type ProblemVisualSpec = {
+  title: string;
+  sourceNote?: string;
+  sections: ProblemVisualSection[];
+};
+
 export type ProblemSetCenteredProblem = {
   number: number;
   sourcePrompt: string;
@@ -262,6 +321,8 @@ export type ProblemSetCenteredProblem = {
   blankAnswerSentence?: string;
   blankWorkspaceLabel?: string;
   blankVisualType?: ProblemSetBlankVisualType;
+  blankVisual?: ProblemVisualSpec;
+  solvedVisual?: ProblemVisualSpec;
   dataDisplay?: ProblemSetDataDisplay;
   solvedDataDisplay?: ProblemSetDataDisplay;
   solvedAnswer: string;

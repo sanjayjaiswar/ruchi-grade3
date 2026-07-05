@@ -1608,6 +1608,24 @@ summary.source-pages-heading {
   gap: 10px;
 }
 
+.problem-solution-card.has-visual-spec .blank-problem-body,
+.problem-solution-card.has-visual-spec .problem-solution-grid {
+  grid-template-columns: 1fr;
+}
+
+.problem-solution-card.has-visual-spec app-problem-visual-workspace {
+  display: block;
+  min-width: 0;
+}
+
+.problem-solution-card.has-visual-spec .blank-workspace-card,
+.problem-solution-card.has-visual-spec .blank-response-card,
+.problem-solution-card.has-visual-spec .problem-animation-card,
+.problem-solution-card.has-visual-spec .problem-explanation-card,
+.problem-solution-card.has-visual-spec .ps-quotient-label {
+  display: none;
+}
+
 .blank-problem-body:has(.blank-workspace-card:only-child) {
   grid-template-columns: 1fr;
 }

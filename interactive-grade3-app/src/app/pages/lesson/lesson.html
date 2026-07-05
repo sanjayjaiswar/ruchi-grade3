@@ -429,6 +429,7 @@
           <article
             class="problem-solution-card"
             [class.has-source-pages]="hasProblemSourcePages(problem)"
+            [class.has-visual-spec]="problemVisualSpec(problem)"
             [class.is-blank-mode]="problemSetMode === 'blank'"
             [class.is-lesson16-source]="module.id === 'm1' && lesson.lessonNumber === 16 && problem.relatedFacts?.length"
             [class.is-lesson17-source]="module.id === 'm1' && lesson.lessonNumber === 17"
@@ -443,6 +444,10 @@
             </div>
 
             <div class="blank-problem-body" *ngIf="problemSetMode === 'blank'; else solvedProblemBody">
+              <app-problem-visual-workspace
+                *ngIf="problemVisualSpec(problem) as visualSpec"
+                [spec]="visualSpec"
+                mode="blank"></app-problem-visual-workspace>
               <div
                 class="blank-workspace-card"
                 [class.is-lesson16-source-card]="module.id === 'm1' && lesson.lessonNumber === 16 && problem.relatedFacts?.length"
@@ -926,6 +931,10 @@
 
             <ng-template #solvedProblemBody>
             <div class="problem-solution-grid">
+              <app-problem-visual-workspace
+                *ngIf="problemVisualSpec(problem) as visualSpec"
+                [spec]="visualSpec"
+                mode="solved"></app-problem-visual-workspace>
               <div class="problem-animation-card" [ngSwitch]="problem.animationType">
                 <div *ngSwitchCase="'grouping-by-size'" class="ps-grouping-model" aria-label="Grouping model">
                   <ng-container *ngIf="module.id === 'm1' && lesson.lessonNumber === 17 && problem.number === 2; else solvedGroupingDefault">

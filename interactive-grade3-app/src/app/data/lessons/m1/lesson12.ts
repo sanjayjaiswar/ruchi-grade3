@@ -1,4 +1,5 @@
-import type { LessonRuntimeConfig } from '../lesson-runtime.types';
+import type { LessonRuntimeConfig, ProblemSetCenteredProblem } from '../lesson-runtime.types';
+import { createM1ProblemVisual } from './problem-set-centered';
 
 const lesson12TeacherEditionPages = Array.from(
   { length: 12 },
@@ -7,6 +8,14 @@ const lesson12TeacherEditionPages = Array.from(
 const lesson12ProblemSetPages = ['/source-pages/m1-teacher/page-169.png', '/source-pages/m1-teacher/page-170.png'];
 const lesson12AnswerKeyPages = ['/source-pages/m1-teacher/page-311.png', '/source-pages/m1-teacher/page-312.png'];
 const lesson12SolvedSourcePages = [...lesson12ProblemSetPages, ...lesson12AnswerKeyPages];
+
+function withLesson12Visuals(problem: ProblemSetCenteredProblem): ProblemSetCenteredProblem {
+  return {
+    ...problem,
+    blankVisual: problem.blankVisual ?? createM1ProblemVisual(problem, false),
+    solvedVisual: problem.solvedVisual ?? createM1ProblemVisual(problem, true)
+  };
+}
 
 export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
@@ -65,7 +74,7 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
         ]
       }
     ],
-    problems: [
+    problems: ([
       {
         number: 1,
         sourcePageImages: lesson12ProblemSetPages,
@@ -233,7 +242,7 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
         ],
         shareLabels: ["Sarah", "Esther"]
       }
-    ]
+    ] as ProblemSetCenteredProblem[]).map(withLesson12Visuals)
   },
   lessonAnimation: {
     kind: "tape-diagram",
