@@ -32,6 +32,23 @@
               </div>
             </ng-container>
 
+            <ng-container *ngIf="tapeSection(child) as tape">
+              <strong *ngIf="tape.label">{{ tape.label }}</strong>
+              <div class="visual-tape">
+                <b>{{ tape.totalLabel }}</b>
+                <div [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
+                  <span
+                    *ngFor="let part of tape.parts"
+                    [class.is-emphasis]="part.emphasize"
+                    [class.is-muted]="part.muted"
+                    [class.is-blank]="!part.label">
+                    {{ part.label || '?' }}
+                  </span>
+                </div>
+                <small *ngIf="tape.caption">{{ tape.caption }}</small>
+              </div>
+            </ng-container>
+
             <ng-container *ngIf="noteSection(child) as note">
               <strong *ngIf="note.label">{{ note.label }}</strong>
               <p class="visual-note">{{ note.text }}</p>
@@ -73,6 +90,7 @@
           <span
             *ngFor="let part of tape.parts"
             [class.is-emphasis]="part.emphasize"
+            [class.is-muted]="part.muted"
             [class.is-blank]="!part.label">
             {{ part.label || '?' }}
           </span>
@@ -90,6 +108,52 @@
         <div class="visual-data-row" *ngFor="let row of table.rows" role="row">
           <span *ngFor="let cell of row" role="cell">{{ cell }}</span>
         </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="stopwatchSection(section) as stopwatch">
+      <strong *ngIf="stopwatch.label">{{ stopwatch.label }}</strong>
+      <div class="visual-stopwatch" [class.has-rows]="stopwatch.rows?.length">
+        <div class="visual-stopwatch-main">
+          <div class="visual-stopwatch-face" [ngClass]="'is-' + (stopwatch.icon || 'activity')" aria-hidden="true">
+            <span class="tick tick-0">0</span>
+            <span class="tick tick-15">15</span>
+            <span class="tick tick-30">30</span>
+            <span class="tick tick-45">45</span>
+            <i></i>
+            <b></b>
+          </div>
+          <div class="visual-stopwatch-copy">
+            <p>{{ stopwatch.prompt }}</p>
+            <div class="visual-stopwatch-line" *ngIf="stopwatch.answerLine || stopwatch.sampleAnswer">
+              <span>{{ stopwatch.sampleAnswer || stopwatch.answerLine }}</span>
+            </div>
+            <div class="visual-stopwatch-elapsed" *ngIf="stopwatch.startLabel || stopwatch.elapsedLabel || stopwatch.stopLabel">
+              <span>{{ stopwatch.startLabel || '0 sec' }}</span>
+              <i>{{ stopwatch.elapsedLabel || 'time passes' }}</i>
+              <span>{{ stopwatch.stopLabel || 'stop' }}</span>
+            </div>
+            <ul *ngIf="stopwatch.sampleWork?.length">
+              <li *ngFor="let work of stopwatch.sampleWork">{{ work }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="visual-stopwatch-table" *ngIf="stopwatch.rows?.length" role="table">
+          <div class="visual-stopwatch-row is-head" role="row">
+            <span *ngFor="let column of stopwatch.columns || ['Activity', 'Time']" role="columnheader">{{ column }}</span>
+          </div>
+          <div class="visual-stopwatch-row" *ngFor="let row of stopwatch.rows" role="row">
+            <span role="cell">{{ row.label }}</span>
+            <span role="cell">{{ row.sample || row.blank }}</span>
+          </div>
+          <div class="visual-stopwatch-row is-total" *ngIf="stopwatch.totalLabel" role="row">
+            <span role="cell">{{ stopwatch.totalLabel }}</span>
+            <span role="cell">{{ stopwatch.totalSample || stopwatch.totalBlank }}</span>
+          </div>
+        </div>
+
+        <small *ngIf="stopwatch.note">{{ stopwatch.note }}</small>
       </div>
     </ng-container>
 

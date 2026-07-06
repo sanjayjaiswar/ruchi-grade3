@@ -40,6 +40,36 @@ type LessonSeed = {
   problems: Array<ProblemSeed | ProblemSetCenteredProblem>;
 };
 
+type StopwatchSentenceSeed = {
+  number: number;
+  sourcePrompt: string;
+  blankSentence: string;
+  sampleResponse: string;
+  sampleWork?: string[];
+  blankWorkspaceLabel: string;
+  solvedAnswer: string;
+  meaning: string;
+  explanation: string;
+  checks: string[];
+};
+
+type StopwatchTableSeed = {
+  number: number;
+  sourcePrompt: string;
+  title: string;
+  columns: string[];
+  blankRows: string[][];
+  solvedRows: string[][];
+  blankNote: string;
+  solvedNote: string;
+  blankWorkspaceLabel: string;
+  solvedAnswer: string;
+  meaning: string;
+  explanation: string;
+  checks: string[];
+  equations?: string[];
+};
+
 const TEACHER_SOURCE = 'EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf';
 const TEACHER_PROBLEM_SET_PAGES: Record<number, number[]> = {
   1: [19, 20],
@@ -89,12 +119,12 @@ const TEACHER_ANSWER_KEY_PAGES: Record<number, number[]> = {
 };
 const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
   1: {
-    1: 'Variable time; record one measured elapsed time in seconds for snapping 10 times.',
-    2: 'Variable time; record one measured elapsed time in seconds for writing every whole number from 0 to 25.',
-    3: 'Variable time; list 10 animals and record the elapsed seconds.',
-    4: 'Variable time; record elapsed seconds for writing 7 x 8 = 56 fifteen times.',
-    5: 'Variable times; every official activity row must have a measured time in seconds.',
-    6: 'Variable relay times; add all runner times to get the total team time.'
+    1: 'Times will vary. A complete response records one measured stopwatch time and writes it in the sentence blank as a number of seconds.',
+    2: 'Times will vary. A complete response records one measured stopwatch time for writing every whole number from 0 to 25 and labels the result in seconds.',
+    3: 'Times will vary. A complete response lists 10 animals, records one measured stopwatch time, and labels the result in seconds.',
+    4: 'Times will vary. A complete response times writing 7 x 8 = 56 fifteen times, records the elapsed time, and labels it in seconds.',
+    5: 'Times will vary. Each of the six official group activity rows needs a measured stopwatch time recorded in seconds.',
+    6: 'Times will vary. Each relay runner needs a measured time in seconds, and the total time is the sum of the runner times.'
   },
   2: {
     1: 'a. First and last tick marks labeled as 7:00 a.m. and 8:00 a.m.; b. each interval labeled by fives up to 8:00 a.m.; c. D at 7:10 a.m.; d. E at 7:35 a.m.; e. T at 7:40 a.m.; f. L at 7:45 a.m.; g. W at 7:55 a.m.',
@@ -406,7 +436,7 @@ function applyTeacherAnswerKey(lessonNumber: number, item: ProblemSetCenteredPro
     ...item,
     solvedAnswer: officialAnswer,
     equations: item.equations?.length ? item.equations : [officialAnswer],
-    explanation: `Teacher Edition Answer Key: ${officialAnswer}`,
+    explanation: item.explanation,
     validationChecks: [
       `Solved answer is checked against ${TEACHER_SOURCE}, Lesson ${lessonNumber} Answer Key, Problem Set ${item.number}.`,
       ...item.validationChecks
@@ -423,7 +453,7 @@ function applyTeacherPrompt(lessonNumber: number, item: ProblemSetCenteredProble
   return {
     ...item,
     sourcePrompt: officialPrompt,
-    blankPrompts: [officialPrompt]
+    blankPrompts: item.blankPrompts?.length ? item.blankPrompts : [officialPrompt]
   };
 }
 
@@ -547,14 +577,14 @@ function clockAnswerLabel(seed: ProblemSetCenteredProblem | ProblemSeed): string
 }
 
 function m2VisualTitle(seed: ProblemSetCenteredProblem | ProblemSeed): string {
-  if (seed.unitLabel && seed.quotient) {
-    return `${seed.quotient} ${seed.unitLabel}`;
-  }
   if (seed.dataDisplay?.title) {
     return seed.dataDisplay.title;
   }
   if (seed.numberLineModels?.[0]?.label) {
     return seed.numberLineModels[0].label;
+  }
+  if (seed.unitLabel && seed.quotient) {
+    return `${seed.quotient} ${seed.unitLabel}`;
   }
   return seed.sourcePrompt;
 }
@@ -596,6 +626,114 @@ function problem(seed: ProblemSeed): ProblemSetCenteredProblem {
     ],
     shareLabels: seed.shareLabels
   };
+}
+
+function stopwatchSentenceProblem(seed: StopwatchSentenceSeed): ProblemSetCenteredProblem {
+  const centered = problem({
+    number: seed.number,
+    sourcePrompt: seed.sourcePrompt,
+    solvedAnswer: seed.solvedAnswer,
+    equations: [seed.sampleResponse],
+    blankVisualType: 'clock-workspace',
+    animationType: 'clock-model',
+    blankWorkspaceLabel: seed.blankWorkspaceLabel,
+    meaning: seed.meaning,
+    explanation: seed.explanation,
+    checks: seed.checks,
+    unitLabel: 'seconds',
+    groupLabel: 'elapsed time'
+  });
+
+  return {
+    ...centered,
+    blankPrompts: ['Use the stopwatch, then complete the answer line with a measured number of seconds.'],
+    blankEquations: [],
+    blankVisual: stopwatchSentenceVisual(seed, false),
+    solvedVisual: stopwatchSentenceVisual(seed, true)
+  };
+}
+
+function stopwatchTableProblem(seed: StopwatchTableSeed): ProblemSetCenteredProblem {
+  const centered = problem({
+    number: seed.number,
+    sourcePrompt: seed.sourcePrompt,
+    solvedAnswer: seed.solvedAnswer,
+    equations: seed.equations ?? [],
+    blankVisualType: 'clock-workspace',
+    animationType: 'clock-model',
+    blankWorkspaceLabel: seed.blankWorkspaceLabel,
+    meaning: seed.meaning,
+    explanation: seed.explanation,
+    checks: seed.checks,
+    unitLabel: 'seconds',
+    groupLabel: 'elapsed time'
+  });
+
+  return {
+    ...centered,
+    blankPrompts: ['Use the stopwatch for each row, then record seconds in the official chart.'],
+    blankEquations: [],
+    dataDisplay: undefined,
+    solvedDataDisplay: undefined,
+    blankVisual: stopwatchTableVisual(seed, false),
+    solvedVisual: stopwatchTableVisual(seed, true)
+  };
+}
+
+function stopwatchSentenceVisual(seed: StopwatchSentenceSeed, solved: boolean): ProblemVisualSpec {
+  const duration = solved ? stopwatchDurationLabel(seed.sampleResponse) : '____ seconds';
+  return {
+    title: solved ? `Problem ${seed.number}: sample variable response` : `Problem ${seed.number}: Teacher Edition worksheet panel`,
+    sections: [
+      {
+        kind: 'stopwatch-workspace',
+        label: solved ? 'Sample measured response' : 'Stopwatch measurement workspace',
+        prompt: seed.sourcePrompt,
+        answerLine: seed.blankSentence,
+        sampleAnswer: solved ? seed.sampleResponse : undefined,
+        startLabel: '0 seconds',
+        elapsedLabel: solved ? duration : 'measure',
+        stopLabel: solved ? duration : '____ seconds',
+        sampleWork: solved ? seed.sampleWork : undefined,
+        icon: seed.number === 1 ? 'snap' : seed.number === 2 ? 'numbers' : seed.number === 3 ? 'animals' : 'equation',
+        note: solved
+          ? 'The number can vary. The important evidence is that the activity was timed and the answer is written in seconds.'
+          : seed.blankWorkspaceLabel
+      }
+    ]
+  };
+}
+
+function stopwatchTableVisual(seed: StopwatchTableSeed, solved: boolean): ProblemVisualSpec {
+  return {
+    title: solved ? `${seed.title}: sample filled response` : `${seed.title}: Teacher Edition chart`,
+    sections: [
+      {
+        kind: 'stopwatch-workspace',
+        label: solved ? 'Sample stopwatch data' : 'Official stopwatch chart',
+        prompt: seed.sourcePrompt,
+        icon: seed.number === 6 ? 'relay' : 'activity',
+        startLabel: '0 seconds',
+        elapsedLabel: solved ? (seed.number === 6 ? 'add runner times' : 'time each task') : 'measure each row',
+        stopLabel: solved ? (seed.number === 6 ? '63 seconds total' : 'record seconds') : '____ seconds',
+        columns: seed.columns,
+        rows: seed.blankRows.slice(0, seed.number === 6 ? 4 : undefined).map((row, index) => ({
+          label: row[0],
+          blank: row[1],
+          sample: solved ? seed.solvedRows[index]?.[1] : undefined
+        })),
+        totalLabel: seed.number === 6 ? 'Total time' : undefined,
+        totalBlank: seed.number === 6 ? '________ seconds' : undefined,
+        totalSample: solved && seed.number === 6 ? '63 seconds' : undefined,
+        note: solved ? seed.solvedNote : seed.blankNote
+      }
+    ]
+  };
+}
+
+function stopwatchDurationLabel(text: string): string {
+  const match = text.match(/\b\d+\s+seconds\b/i);
+  return match?.[0] ?? 'measured seconds';
 }
 
 function lesson(seed: LessonSeed): ProblemSetCenteredLesson {
@@ -643,8 +781,8 @@ function lesson(seed: LessonSeed): ProblemSetCenteredLesson {
         sourcePageImages: centeredProblem.sourcePageImages ?? sourcePageImages,
         blankSourcePageImages: centeredProblem.blankSourcePageImages ?? sourcePageImages,
         solvedSourcePageImages: centeredProblem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages],
-        blankVisual: createM2ProblemVisual(centeredProblem, false),
-        solvedVisual: createM2ProblemVisual(centeredProblem, true)
+        blankVisual: centeredProblem.blankVisual ?? createM2ProblemVisual(centeredProblem, false),
+        solvedVisual: centeredProblem.solvedVisual ?? createM2ProblemVisual(centeredProblem, true)
       };
     })
   };
@@ -657,53 +795,140 @@ const hundredTicks = ['lower hundred', 'halfway', 'upper hundred'];
 export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredLesson> = {
   1: lesson({
     lessonNumber: 1,
-    title: 'time is measured in seconds',
-    concept: 'A stopwatch measures elapsed seconds for real activities. Times vary, but every answer needs a number and the unit seconds.',
-    contrast: 'Record measured seconds, then compare or total the measurements with units.',
-    summary: 'Elapsed time is continuous and can be measured, recorded, compared, and totaled.',
+    title: 'time is a continuous measurement',
+    concept: 'A stopwatch measures a short slice of time in seconds or minutes. The Teacher Edition concept sequence has students feel 1 second, 5 seconds, and 40 seconds, then use the stopwatch to measure real activities. Stopping the stopwatch stops the measurement, not time itself.',
+    contrast: 'Estimate first when useful, measure the activity with the stopwatch, record the elapsed number, attach seconds, and explain why time keeps moving even after the stopwatch stops.',
+    summary: 'Seconds measure short activities, minutes measure longer ones, and time is continuous. A correct Lesson 1 Problem Set keeps each official stopwatch blank open until a real measurement is recorded in seconds; the relay also totals the measured runner times.',
     problems: [
-      problem({
+      stopwatchSentenceProblem({
         number: 1,
         sourcePrompt: 'Use a stopwatch to time snapping your fingers 10 times.',
-        solvedAnswer: 'Variable stopwatch result. A correct solved response records one measured number of seconds for snapping 10 times and labels the value in seconds.',
-        dataDisplay: dataTable('Stopwatch result', ['Activity', 'Time'], [['Snap 10 times', '____ seconds']]),
-        solvedDataDisplay: checkTable('Stopwatch result checked', [['Snap 10 times', 'One measured elapsed-time value is recorded in seconds.']])
+        blankSentence: 'It takes __________ to snap 10 times.',
+        sampleResponse: 'It takes 9 seconds to snap 10 times.',
+        sampleWork: ['Sample variable response: 9 seconds.'],
+        solvedAnswer: 'Times will vary. A complete response records one measured stopwatch time and writes it in the sentence blank as a number of seconds.',
+        blankWorkspaceLabel: 'Time the exact snapping task, then fill the sentence blank with the measured number of seconds.',
+        meaning: 'The answer tells how many seconds passed while snapping 10 times.',
+        explanation: 'Use the stopwatch to measure the activity once. Write the measured elapsed time in the sentence blank and attach seconds.',
+        checks: [
+          'The official snapping task is unchanged.',
+          'The answer is a measured stopwatch result, not an invented fixed answer.',
+          'The unit seconds is attached to the number.'
+        ]
       }),
-      problem({
+      stopwatchSentenceProblem({
         number: 2,
         sourcePrompt: 'Use a stopwatch to time writing every whole number from 0 to 25.',
-        solvedAnswer: 'Variable stopwatch result. A correct solved response records one measured number of seconds for writing 0 through 25 and labels the value in seconds.',
-        dataDisplay: dataTable('Stopwatch result', ['Activity', 'Time'], [['Write 0 to 25', '____ seconds']]),
-        solvedDataDisplay: checkTable('Stopwatch result checked', [['Write 0 to 25', 'One measured elapsed-time value is recorded in seconds.']])
+        blankSentence: 'It takes __________ to write every whole number from 0 to 25.',
+        sampleResponse: 'It takes 37 seconds to write every whole number from 0 to 25.',
+        sampleWork: ['Sample work writes 0, 1, 2, 3, ... 25 before recording the elapsed time.'],
+        solvedAnswer: 'Times will vary. A complete response records one measured stopwatch time for writing every whole number from 0 to 25 and labels the result in seconds.',
+        blankWorkspaceLabel: 'Write 0 through 25 while timed, then complete the sentence blank with the measured seconds.',
+        meaning: 'The answer tells how many seconds passed while writing the whole-number sequence.',
+        explanation: 'Measure the actual writing task and record the elapsed seconds in the official sentence blank.',
+        checks: [
+          'The student writes every whole number from 0 to 25.',
+          'The response records one measured elapsed time.',
+          'The final entry includes seconds.'
+        ]
       }),
-      problem({
+      stopwatchSentenceProblem({
         number: 3,
         sourcePrompt: 'Use a stopwatch to time naming 10 animals and record them.',
-        solvedAnswer: 'Variable stopwatch result. A correct solved response lists 10 animal names and records the elapsed time in seconds.',
-        dataDisplay: dataTable('Animal timing', ['List', 'Time'], [['10 animals', '____ seconds']]),
-        solvedDataDisplay: checkTable('Animal timing checked', [['Animal list', 'Exactly 10 animals are listed.'], ['Elapsed time', 'One measured elapsed-time value is recorded in seconds.']])
+        blankSentence: 'It takes __________ to name 10 animals.',
+        sampleResponse: 'It takes 40 seconds to name 10 animals.',
+        sampleWork: ['Sample animal list: dog, cat, horse, turtle, fish, hamster, rabbit, cow, pig, mouse.'],
+        solvedAnswer: 'Times will vary. A complete response lists 10 animals, records one measured stopwatch time, and labels the result in seconds.',
+        blankWorkspaceLabel: 'Name and record 10 animals, time the naming task, and complete the elapsed-time sentence.',
+        meaning: 'The answer tells how many seconds passed while naming the 10 recorded animals.',
+        explanation: 'The content of the animal list can vary, but the list must contain 10 animals and the elapsed time must be measured in seconds.',
+        checks: [
+          'The list has 10 animals.',
+          'The timing result comes from a stopwatch.',
+          'The measured value is written with seconds.'
+        ]
       }),
-      problem({
+      stopwatchSentenceProblem({
         number: 4,
         sourcePrompt: 'Use a stopwatch to time writing 7 x 8 = 56 fifteen times. Record the time.',
-        solvedAnswer: 'Variable stopwatch result. A correct solved response records the elapsed seconds for writing 7 x 8 = 56 exactly 15 times.',
-        dataDisplay: dataTable('Equation writing', ['Activity', 'Time'], [['Write 15 equations', '____ seconds']]),
-        solvedDataDisplay: checkTable('Equation writing checked', [['Repeated equation', '7 x 8 = 56 is written exactly 15 times.'], ['Elapsed time', 'One measured elapsed-time value is recorded in seconds.']])
+        blankSentence: 'It takes __________ to write 7 x 8 = 56 fifteen times.',
+        sampleResponse: 'It takes 53 seconds to write 7 x 8 = 56 fifteen times.',
+        sampleWork: ['Sample work repeats 7 x 8 = 56 fifteen times before recording the elapsed time.'],
+        solvedAnswer: 'Times will vary. A complete response times writing 7 x 8 = 56 fifteen times, records the elapsed time, and labels it in seconds.',
+        blankWorkspaceLabel: 'Write the equation 15 times while timed, then fill the official sentence blank with seconds.',
+        meaning: 'The answer tells how many seconds passed while writing the multiplication sentence 15 times.',
+        explanation: 'The Teacher Edition gives a variable answer because different students will record different elapsed times.',
+        checks: [
+          'The repeated equation is 7 x 8 = 56.',
+          'The equation is written 15 times.',
+          'The measured elapsed time is labeled in seconds.'
+        ]
       }),
-      problem({
+      stopwatchTableProblem({
         number: 5,
         sourcePrompt: 'Measure six group activities with a stopwatch and record each time.',
-        solvedAnswer: 'Variable stopwatch results. A correct solved response fills all six official activity rows with measured seconds: full name, 20 jumping jacks, count by twos, draw 8 squares, count by fours backward, and teacher names.',
-        dataDisplay: dataTable('Group activity times', ['Activity', 'Time'], [['Full name', '____ seconds'], ['20 jumping jacks', '____ seconds'], ['Count by twos', '____ seconds'], ['Draw 8 squares', '____ seconds'], ['Count by fours backward', '____ seconds'], ['Teacher names', '____ seconds']]),
-        solvedDataDisplay: checkTable('Group activity times checked', [['Full name', 'Measured seconds recorded.'], ['20 jumping jacks', 'Measured seconds recorded.'], ['Count by twos from 0 to 30', 'Measured seconds recorded.'], ['Draw 8 squares', 'Measured seconds recorded.'], ['Count by fours backward from 24 to 0', 'Measured seconds recorded.'], ['Teacher names from Kindergarten to Grade 3', 'Measured seconds recorded.']])
+        title: 'Problem 5 activity chart',
+        columns: ['Activity', 'Time'],
+        blankRows: [
+          ['Write your full name.', '________ seconds'],
+          ['Do 20 jumping jacks.', '________ seconds'],
+          ['Whisper count by twos from 0 to 30.', '________ seconds'],
+          ['Draw 8 squares.', '________ seconds'],
+          ['Skip-count out loud by fours from 24 to 0.', '________ seconds'],
+          ['Say the names of your teachers from Kindergarten to Grade 3.', '________ seconds']
+        ],
+        solvedRows: [
+          ['Write your full name.', '5 seconds'],
+          ['Do 20 jumping jacks.', '25 seconds'],
+          ['Whisper count by twos from 0 to 30.', '16 seconds'],
+          ['Draw 8 squares.', '20 seconds'],
+          ['Skip-count out loud by fours from 24 to 0.', '15 seconds'],
+          ['Say the names of your teachers from Kindergarten to Grade 3.', '11 seconds']
+        ],
+        blankNote: 'Use a stopwatch for each row. Leave the time blank until the group measures the activity.',
+        solvedNote: 'Sample variable response: every official row has a measured number of seconds.',
+        solvedAnswer: 'Times will vary. Each of the six official group activity rows needs a measured stopwatch time recorded in seconds.',
+        equations: ['each activity row = measured seconds'],
+        blankWorkspaceLabel: 'Measure each official group activity and fill every chart row with elapsed seconds.',
+        meaning: 'The chart compares several short activities by the number of seconds each one takes.',
+        explanation: 'The solved work is complete only when all six official chart rows have measured stopwatch times in seconds.',
+        checks: [
+          'All six official activity rows are present.',
+          'Every row has a measured elapsed time.',
+          'Every time is labeled in seconds.'
+        ]
       }),
-      problem({
+      stopwatchTableProblem({
         number: 6,
         sourcePrompt: '100 meter relay: record team member times and total time.',
-        solvedAnswer: 'Variable relay times. A correct solved response records each runner time in seconds and adds those runner times to get the team total.',
-        equations: ['runner times added = total time'],
-        dataDisplay: dataTable('Relay timing', ['Name', 'Time'], [['Runner 1', '____ seconds'], ['Runner 2', '____ seconds'], ['Runner 3', '____ seconds'], ['Runner 4', '____ seconds'], ['Total', '____ seconds']]),
-        solvedDataDisplay: checkTable('Relay timing checked', [['Runner 1', 'Measured seconds recorded.'], ['Runner 2', 'Measured seconds recorded.'], ['Runner 3', 'Measured seconds recorded.'], ['Runner 4', 'Measured seconds recorded.'], ['Team total', 'All four runner times are added and labeled in seconds.']])
+        title: 'Problem 6 relay table',
+        columns: ['Name', 'Time'],
+        blankRows: [
+          ['Runner 1', '________ seconds'],
+          ['Runner 2', '________ seconds'],
+          ['Runner 3', '________ seconds'],
+          ['Runner 4', '________ seconds'],
+          ['Total time', '________ seconds']
+        ],
+        solvedRows: [
+          ['Gina', '18 seconds'],
+          ['Tom', '15 seconds'],
+          ['Carlos', '20 seconds'],
+          ['Runner 4', '10 seconds'],
+          ['Total time', '63 seconds']
+        ],
+        blankNote: 'Record each runner time in seconds. Add the runner times to complete the total time.',
+        solvedNote: 'Sample variable response: 18 + 15 + 20 + 10 = 63 seconds.',
+        solvedAnswer: 'Times will vary. Each relay runner needs a measured time in seconds, and the total time is the sum of the runner times.',
+        equations: ['first runner time + second runner time + third runner time + fourth runner time = total time'],
+        blankWorkspaceLabel: 'Record each relay runner time, then add the runner times to complete the total time.',
+        meaning: 'The total time tells how many seconds the whole relay team took altogether.',
+        explanation: 'Unlike Problems 1-5, this chart also needs an addition check: the total must equal the sum of the runner times.',
+        checks: [
+          'The relay table records each team member time.',
+          'The total time is computed by adding the runner times.',
+          'Runner times and total time are labeled in seconds.'
+        ]
       })
     ]
   }),

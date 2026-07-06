@@ -315,6 +315,29 @@ export type ProblemVisualNoteSection = {
   text: string;
 };
 
+export type ProblemVisualStopwatchSection = {
+  kind: 'stopwatch-workspace';
+  label?: string;
+  prompt: string;
+  answerLine?: string;
+  sampleAnswer?: string;
+  startLabel?: string;
+  elapsedLabel?: string;
+  stopLabel?: string;
+  sampleWork?: string[];
+  icon?: 'snap' | 'numbers' | 'animals' | 'equation' | 'activity' | 'relay';
+  columns?: string[];
+  rows?: Array<{
+    label: string;
+    blank: string;
+    sample?: string;
+  }>;
+  totalLabel?: string;
+  totalBlank?: string;
+  totalSample?: string;
+  note?: string;
+};
+
 export type ProblemVisualCardGridSection = {
   kind: 'card-grid';
   label?: string;
@@ -333,6 +356,7 @@ export type ProblemVisualSection =
   | ProblemVisualClockSection
   | ProblemVisualEquationsSection
   | ProblemVisualNoteSection
+  | ProblemVisualStopwatchSection
   | ProblemVisualCardGridSection;
 
 export type ProblemVisualSpec = {

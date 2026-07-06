@@ -2,25 +2,28 @@ import type { LessonRuntimeConfig } from '../lesson-runtime.types';
 
 export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
+    "seconds",
+    "minutes",
     "elapsed time",
-    "number line"
+    "continuous",
+    "stopwatch"
   ],
   lessonAnimation: {
     kind: "clock",
-    title: "Lesson 1 animation: Explore time as a continuous measurement using a stopwa",
-    context: "Part 1: Explore seconds as a unit of time.",
-    equation: "5 sec start -> 5 sec elapsed -> 10 sec end",
-    teacherPrompt: "Explain to your partner why the activities in Problem 5 did not take that long to complete",
+    title: "Lesson 1 animation: stopwatch seconds measure continuous time",
+    context: "The Teacher Edition uses a stopwatch to feel 1 second, 5 seconds, and 40 seconds before students measure their own short activities.",
+    equation: "8 shoes x 5 seconds = 40 seconds",
+    teacherPrompt: "Does time stop when we stop the stopwatch, or do we only stop measuring?",
     focus: [
-      "elapsed time",
-      "number line",
-      "clock",
-      "source labels"
+      "Seconds measure short amounts of time.",
+      "Minutes are longer than seconds.",
+      "A stopwatch starts and stops measurement, not time.",
+      "Every recorded answer needs a number and the unit seconds."
     ],
     clockLabels: [
-      "5 sec start",
-      "5 sec elapsed",
-      "10 sec end"
+      "1 sec",
+      "5 sec",
+      "40 sec"
     ]
   },
 
@@ -38,7 +41,7 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Part 1: Explore seconds as a unit of time. T: It takes Ms. Bower 5 seconds to tie one shoe. Does it take a very long time to tie a shoe?",
+      studentPrompt: "Part 1 explores seconds as a unit of time: students watch 1 second, 5 seconds, and 40 seconds on a stopwatch, then time short partner activities.",
       teacherEditionBasis: "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 13-23. Lesson 1 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "clock"
     },
@@ -46,23 +49,23 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Explain to your partner why the activities in Problem 5 did not take that long to complete",
-      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 1 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
+      studentPrompt: "Students learn that time is continuous: the stopwatch can start and stop measuring, but time keeps moving forward.",
+      teacherEditionBasis: "Concept Development Part 3 and Student Debrief: use the word continuous to explain why time does not stop when the stopwatch stops.",
       visualModel: "clock"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Use the official Module 2 Lesson 1 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
-      teacherEditionBasis: "Module 2 student workbook, Lesson 1 Problem Set.",
+      studentPrompt: "Problems 1-4 each have one sentence blank for a measured number of seconds. Problem 3 also needs ten animal names. Problem 5 is a six-row activity chart. Problem 6 is a relay table with runner times and total time.",
+      teacherEditionBasis: "Module 2 Teacher Edition, Lesson 1 Problem Set pages 19-20.",
       visualModel: "clock"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Use the official Lesson 1 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
+      studentPrompt: "Blank mode keeps the official stopwatch blanks open. Solved mode does not invent fixed times; it checks that each required timing entry is measured, labeled in seconds, and totaled when the relay asks for a total.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 13-23.",
       visualModel: "clock"
     },
@@ -70,7 +73,7 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
       id: "source-exit",
       title: "Exit evidence from source",
       shortTitle: "Exit",
-      studentPrompt: "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context.",
+      studentPrompt: "The Answer Key marks all six Problem Set answers as variable. The evidence is complete stopwatch data, seconds labels, and a correct total for the relay.",
       teacherEditionBasis: "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 13-23. Lesson 1 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "clock"
     },
@@ -78,7 +81,7 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 1 objective: Explore time as a continuous measurement using a stopwatch.",
+      studentPrompt: "Debrief focus: compare short activity times, explain why Problem 5 activities did not take long, distinguish seconds from minutes, and use continuous to explain that time keeps going.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 13-23.",
       visualModel: "clock"
     }
@@ -105,7 +108,7 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Part 1: Explore seconds as a unit of time. T: It takes Ms. Bower 5 seconds to tie one shoe. Does it take a very long time to tie a shoe?"
+        value: "Part 1 explores seconds as a unit of time: students watch 1 second, 5 seconds, and 40 seconds on a stopwatch, then time short partner activities."
       },
       {
         label: "Workbook",
@@ -115,11 +118,11 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes): Students complete the Lesson 1 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
+        value: "Concept Development Part 3 and Student Debrief: use the word continuous to explain why time does not stop when the stopwatch stops."
       },
       {
         label: "Source text",
-        value: "Explain to your partner why the activities in Problem 5 did not take that long to complete"
+        value: "Students learn that time is continuous: the stopwatch can start and stop measuring, but time keeps moving forward."
       },
       {
         label: "Workbook",
@@ -129,11 +132,11 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 2 student workbook, Lesson 1 Problem Set."
+        value: "Module 2 Teacher Edition, Lesson 1 Problem Set pages 19-20."
       },
       {
         label: "Source text",
-        value: "Use the official Module 2 Lesson 1 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
+        value: "Problems 1-4 each have one sentence blank for a measured number of seconds. Problem 3 also needs ten animal names. Problem 5 is a six-row activity chart. Problem 6 is a relay table with runner times and total time."
       },
       {
         label: "Workbook",
@@ -147,7 +150,7 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Use the official Lesson 1 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
+        value: "Blank mode keeps the official stopwatch blanks open. Solved mode does not invent fixed times; it checks that each required timing entry is measured, labeled in seconds, and totaled when the relay asks for a total."
       },
       {
         label: "Workbook",
@@ -161,7 +164,7 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+        value: "The Answer Key marks all six Problem Set answers as variable. The evidence is complete stopwatch data, seconds labels, and a correct total for the relay."
       },
       {
         label: "Workbook",
@@ -175,7 +178,7 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 1 objective: Explore time as a continuous measurement using a stopwatch."
+        value: "Debrief focus: compare short activity times, explain why Problem 5 activities did not take long, distinguish seconds from minutes, and use continuous to explain that time keeps going."
       },
       {
         label: "Workbook",

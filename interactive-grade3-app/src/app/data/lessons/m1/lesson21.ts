@@ -6,7 +6,7 @@ export const M1_LESSON21_RUNTIME: LessonRuntimeConfig = {
     kind: "tape-diagram",
     title: "Lesson 21 animation: choose operations for a two-step story",
     context: "Show a whole, remove a known part, then divide the remaining amount into equal groups.",
-    equation: "(24 - 6) divided by 3 = 6",
+    equation: "(24 - 6) ÷ 3 = 6",
     teacherPrompt: "Why do these operations match the order of the story?",
     groupCount: 3,
     groupSize: 6,

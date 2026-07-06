@@ -4,6 +4,7 @@ import type {
   ProblemSetCenteredLesson,
   ProblemSetCenteredProblem,
   ProblemSetFactMatch,
+  ProblemVisualSection,
   ProblemVisualSpec,
   ProblemSetRelatedFact
 } from '../lesson-runtime.types';
@@ -375,10 +376,24 @@ function twoStepVisual(
       : 'Blank view preserves the two-step structure without filling the final answer.',
     sections: [
       {
-        kind: 'data-table',
+        kind: 'card-grid',
         label: 'Two-step RDW model',
-        columns: ['Step', 'Model', 'Work'],
-        rows: rows.map((row) => [row.step, row.model, solved ? row.solved : row.blank])
+        cards: rows.map((row) => ({
+          label: `Step ${row.step}`,
+          sections: [
+            {
+              kind: 'note',
+              label: 'Model',
+              text: row.model
+            },
+            twoStepTapeSection(row, solved),
+            {
+              kind: 'equations',
+              label: solved ? 'Solved work' : 'Work blank',
+              lines: [solved ? row.solved : row.blank]
+            }
+          ].filter(Boolean) as ProblemVisualSection[]
+        }))
       },
       {
         kind: 'equations',
@@ -392,6 +407,86 @@ function twoStepVisual(
       }
     ]
   };
+}
+
+function twoStepTapeSection(
+  row: { model: string; blank: string; solved: string },
+  solved: boolean
+): ProblemVisualSection | undefined {
+  const multiplication = row.solved.match(/(\d+)\s*x\s*(\d+)\s*=\s*(\d+)/i);
+  if (multiplication) {
+    const groupCount = boundedCount(Number(multiplication[1]), 1, 12);
+    const groupSize = multiplication[2];
+    const total = multiplication[3];
+
+    return {
+      kind: 'tape',
+      label: 'Tape model',
+      totalLabel: solved ? `${total} total` : '? total',
+      parts: Array.from({ length: groupCount }, (_, index) => ({
+        label: solved ? groupSize : row.blank.includes('____') ? '?' : groupSize,
+        emphasize: index < Math.min(2, groupCount)
+      })),
+      caption: row.model
+    };
+  }
+
+  const division = row.solved.match(/(\d+)\s*÷\s*(\d+)\s*=\s*(\d+)/);
+  if (division) {
+    const total = division[1];
+    const groupCount = boundedCount(Number(division[2]), 1, 12);
+    const quotient = division[3];
+
+    return {
+      kind: 'tape',
+      label: 'Tape model',
+      totalLabel: `${total} total`,
+      parts: Array.from({ length: groupCount }, (_, index) => ({
+        label: solved ? quotient : '?',
+        emphasize: index < Math.min(2, groupCount)
+      })),
+      caption: row.model
+    };
+  }
+
+  const addition = row.solved.match(/(\d+)\s*\+\s*(\d+)\s*=\s*(\d+)/);
+  if (addition) {
+    const first = addition[1];
+    const second = addition[2];
+    const total = addition[3];
+    const blankStartsWithUnknown = row.blank.trim().startsWith('____');
+
+    return {
+      kind: 'tape',
+      label: 'Tape model',
+      totalLabel: solved ? `${total} total` : '? total',
+      parts: [
+        { label: solved || !blankStartsWithUnknown ? first : '?', emphasize: true },
+        { label: second, emphasize: true }
+      ],
+      caption: row.model
+    };
+  }
+
+  const subtraction = row.solved.match(/(\d+)\s*-\s*(\d+)\s*=\s*(\d+)/);
+  if (subtraction) {
+    const total = subtraction[1];
+    const removed = subtraction[2];
+    const remaining = subtraction[3];
+
+    return {
+      kind: 'tape',
+      label: 'Tape model',
+      totalLabel: solved ? `${total} total` : '? total',
+      parts: [
+        { label: removed, muted: true },
+        { label: solved ? remaining : '?', emphasize: true }
+      ],
+      caption: row.model
+    };
+  }
+
+  return undefined;
 }
 
 function lesson19Problem1Visual(solved: boolean): ProblemVisualSpec {
@@ -2595,7 +2690,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         number: 2,
         sourcePrompt: 'Seven children share 28 silly bands equally. Find each child\'s share and the amount for 3 children.',
         solvedAnswer: 'Each child gets 4 silly bands. Three children get 12 silly bands.',
-        equations: ['28 divided by 7 = 4', '3 x 4 = 12'],
+        equations: ['28 ÷ 7 = 4', '3 x 4 = 12'],
         knownTotal: 28,
         knownGroupCount: 7,
         quotient: 12,
@@ -2604,13 +2699,13 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         blankVisualType: 'tape-diagram',
         animationType: 'two-step-model',
         blankVisual: twoStepVisual('Problem 2: silly bands for 3 children', [
-          { step: '1', model: '28 silly bands shared by 7 children', blank: '28 divided by 7 = ____', solved: '28 divided by 7 = 4' },
+          { step: '1', model: '28 silly bands shared by 7 children', blank: '28 ÷ 7 = ____', solved: '28 ÷ 7 = 4' },
           { step: '2', model: '3 children each get 4', blank: '3 x ____ = ____', solved: '3 x 4 = 12' }
-        ], ['28 divided by 7 = 4', '3 x 4 = 12'], 'Each child gets 4 silly bands. Three children get 12 silly bands.', false),
+        ], ['28 ÷ 7 = 4', '3 x 4 = 12'], 'Each child gets 4 silly bands. Three children get 12 silly bands.', false),
         solvedVisual: twoStepVisual('Problem 2: silly bands for 3 children', [
-          { step: '1', model: '28 silly bands shared by 7 children', blank: '28 divided by 7 = ____', solved: '28 divided by 7 = 4' },
+          { step: '1', model: '28 silly bands shared by 7 children', blank: '28 ÷ 7 = ____', solved: '28 ÷ 7 = 4' },
           { step: '2', model: '3 children each get 4', blank: '3 x ____ = ____', solved: '3 x 4 = 12' }
-        ], ['28 divided by 7 = 4', '3 x 4 = 12'], 'Each child gets 4 silly bands. Three children get 12 silly bands.', true),
+        ], ['28 ÷ 7 = 4', '3 x 4 = 12'], 'Each child gets 4 silly bands. Three children get 12 silly bands.', true),
         blankWorkspaceLabel: 'Find one child’s share first, then use 3 children.',
         blankPrompts: [
           'Partition 28 into 7 equal child units.',
@@ -2628,7 +2723,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         number: 3,
         sourcePrompt: 'Eighteen cups are equally packed into 6 boxes. Two boxes break. How many cups are unbroken?',
         solvedAnswer: 'Each box has 3 cups. Four boxes are unbroken, so 12 cups are unbroken.',
-        equations: ['18 divided by 6 = 3', '6 - 2 = 4', '4 x 3 = 12'],
+        equations: ['18 ÷ 6 = 3', '6 - 2 = 4', '4 x 3 = 12'],
         knownTotal: 18,
         knownGroupCount: 6,
         quotient: 12,
@@ -2637,13 +2732,13 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         blankVisualType: 'tape-diagram',
         animationType: 'two-step-model',
         blankVisual: twoStepVisual('Problem 3: unbroken cups', [
-          { step: '1', model: '18 cups in 6 equal boxes', blank: '18 divided by 6 = ____', solved: '18 divided by 6 = 3' },
+          { step: '1', model: '18 cups in 6 equal boxes', blank: '18 ÷ 6 = ____', solved: '18 ÷ 6 = 3' },
           { step: '2', model: '2 boxes break, so 4 boxes remain', blank: '(6 - 2) x ____ = ____', solved: '4 x 3 = 12' }
-        ], ['18 divided by 6 = 3', '6 - 2 = 4', '4 x 3 = 12'], 'Each box has 3 cups. Four boxes are unbroken, so 12 cups are unbroken.', false),
+        ], ['18 ÷ 6 = 3', '6 - 2 = 4', '4 x 3 = 12'], 'Each box has 3 cups. Four boxes are unbroken, so 12 cups are unbroken.', false),
         solvedVisual: twoStepVisual('Problem 3: unbroken cups', [
-          { step: '1', model: '18 cups in 6 equal boxes', blank: '18 divided by 6 = ____', solved: '18 divided by 6 = 3' },
+          { step: '1', model: '18 cups in 6 equal boxes', blank: '18 ÷ 6 = ____', solved: '18 ÷ 6 = 3' },
           { step: '2', model: '2 boxes break, so 4 boxes remain', blank: '(6 - 2) x ____ = ____', solved: '4 x 3 = 12' }
-        ], ['18 divided by 6 = 3', '6 - 2 = 4', '4 x 3 = 12'], 'Each box has 3 cups. Four boxes are unbroken, so 12 cups are unbroken.', true),
+        ], ['18 ÷ 6 = 3', '6 - 2 = 4', '4 x 3 = 12'], 'Each box has 3 cups. Four boxes are unbroken, so 12 cups are unbroken.', true),
         blankWorkspaceLabel: 'Find cups per box, then remove the broken boxes.',
         blankPrompts: [
           'Divide 18 cups by 6 boxes.',
@@ -2661,7 +2756,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         number: 4,
         sourcePrompt: 'There are 25 blue balloons and 15 red balloons. Five children get equal numbers of each color. How many blue and red balloons does each child get?',
         solvedAnswer: 'Each child gets 5 blue balloons and 3 red balloons, 8 balloons total.',
-        equations: ['25 divided by 5 = 5', '15 divided by 5 = 3', '5 + 3 = 8'],
+        equations: ['25 ÷ 5 = 5', '15 ÷ 5 = 3', '5 + 3 = 8'],
         knownTotal: 40,
         knownGroupCount: 5,
         quotient: 8,
@@ -2670,13 +2765,13 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         blankVisualType: 'tape-diagram',
         animationType: 'two-step-model',
         blankVisual: twoStepVisual('Problem 4: blue and red balloons per child', [
-          { step: '1', model: '25 blue balloons shared by 5 children', blank: '25 divided by 5 = ____', solved: '25 divided by 5 = 5' },
-          { step: '2', model: '15 red balloons shared by 5 children', blank: '15 divided by 5 = ____; ____ + ____ = ____', solved: '15 divided by 5 = 3; 5 + 3 = 8' }
-        ], ['25 divided by 5 = 5', '15 divided by 5 = 3', '5 + 3 = 8'], 'Each child gets 5 blue balloons and 3 red balloons, 8 balloons total.', false),
+          { step: '1', model: '25 blue balloons shared by 5 children', blank: '25 ÷ 5 = ____', solved: '25 ÷ 5 = 5' },
+          { step: '2', model: '15 red balloons shared by 5 children', blank: '15 ÷ 5 = ____; ____ + ____ = ____', solved: '15 ÷ 5 = 3; 5 + 3 = 8' }
+        ], ['25 ÷ 5 = 5', '15 ÷ 5 = 3', '5 + 3 = 8'], 'Each child gets 5 blue balloons and 3 red balloons, 8 balloons total.', false),
         solvedVisual: twoStepVisual('Problem 4: blue and red balloons per child', [
-          { step: '1', model: '25 blue balloons shared by 5 children', blank: '25 divided by 5 = ____', solved: '25 divided by 5 = 5' },
-          { step: '2', model: '15 red balloons shared by 5 children', blank: '15 divided by 5 = ____; ____ + ____ = ____', solved: '15 divided by 5 = 3; 5 + 3 = 8' }
-        ], ['25 divided by 5 = 5', '15 divided by 5 = 3', '5 + 3 = 8'], 'Each child gets 5 blue balloons and 3 red balloons, 8 balloons total.', true),
+          { step: '1', model: '25 blue balloons shared by 5 children', blank: '25 ÷ 5 = ____', solved: '25 ÷ 5 = 5' },
+          { step: '2', model: '15 red balloons shared by 5 children', blank: '15 ÷ 5 = ____; ____ + ____ = ____', solved: '15 ÷ 5 = 3; 5 + 3 = 8' }
+        ], ['25 ÷ 5 = 5', '15 ÷ 5 = 3', '5 + 3 = 8'], 'Each child gets 5 blue balloons and 3 red balloons, 8 balloons total.', true),
         blankWorkspaceLabel: 'Divide each color separately, then combine one child’s shares.',
         blankPrompts: [
           'Find blue balloons per child.',
@@ -2694,7 +2789,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         number: 5,
         sourcePrompt: 'Twenty-seven pears are packed in bags of 3. Five bags are sold. How many bags are left?',
         solvedAnswer: 'There are 9 bags at first. After 5 bags are sold, 4 bags are left.',
-        equations: ['27 divided by 3 = 9', '9 - 5 = 4'],
+        equations: ['27 ÷ 3 = 9', '9 - 5 = 4'],
         knownTotal: 27,
         knownGroupSize: 3,
         quotient: 4,
@@ -2703,13 +2798,13 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         blankVisualType: 'bar-units',
         animationType: 'two-step-model',
         blankVisual: twoStepVisual('Problem 5: pear bags left', [
-          { step: '1', model: '27 pears packed in bags of 3', blank: '27 divided by 3 = ____', solved: '27 divided by 3 = 9' },
+          { step: '1', model: '27 pears packed in bags of 3', blank: '27 ÷ 3 = ____', solved: '27 ÷ 3 = 9' },
           { step: '2', model: '5 bags are sold', blank: '____ - 5 = ____', solved: '9 - 5 = 4' }
-        ], ['27 divided by 3 = 9', '9 - 5 = 4'], 'There are 9 bags at first. After 5 bags are sold, 4 bags are left.', false),
+        ], ['27 ÷ 3 = 9', '9 - 5 = 4'], 'There are 9 bags at first. After 5 bags are sold, 4 bags are left.', false),
         solvedVisual: twoStepVisual('Problem 5: pear bags left', [
-          { step: '1', model: '27 pears packed in bags of 3', blank: '27 divided by 3 = ____', solved: '27 divided by 3 = 9' },
+          { step: '1', model: '27 pears packed in bags of 3', blank: '27 ÷ 3 = ____', solved: '27 ÷ 3 = 9' },
           { step: '2', model: '5 bags are sold', blank: '____ - 5 = ____', solved: '9 - 5 = 4' }
-        ], ['27 divided by 3 = 9', '9 - 5 = 4'], 'There are 9 bags at first. After 5 bags are sold, 4 bags are left.', true),
+        ], ['27 ÷ 3 = 9', '9 - 5 = 4'], 'There are 9 bags at first. After 5 bags are sold, 4 bags are left.', true),
         blankWorkspaceLabel: 'Find the starting number of bags, then subtract the sold bags.',
         blankPrompts: [
           'Use groups of 3 pears to find the number of bags.',
@@ -2804,7 +2899,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         number: 3,
         sourcePrompt: 'Orlando buys 18 fruit snacks equally split among strawberry, cherry, and grape. He eats all grape snacks. How many are left?',
         solvedAnswer: 'Each flavor has 6 snacks. After eating the 6 grape snacks, Orlando has 12 snacks left.',
-        equations: ['18 divided by 3 = 6', '18 - 6 = 12'],
+        equations: ['18 ÷ 3 = 6', '18 - 6 = 12'],
         knownTotal: 18,
         knownGroupCount: 3,
         quotient: 12,
@@ -2813,13 +2908,13 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         blankVisualType: 'tape-diagram',
         animationType: 'two-step-model',
         blankVisual: twoStepVisual('Problem 3: fruit snacks left', [
-          { step: '1', model: '18 snacks split equally among 3 flavors', blank: '18 divided by 3 = ____', solved: '18 divided by 3 = 6' },
+          { step: '1', model: '18 snacks split equally among 3 flavors', blank: '18 ÷ 3 = ____', solved: '18 ÷ 3 = 6' },
           { step: '2', model: 'Remove the grape-flavored part', blank: '18 - ____ = ____', solved: '18 - 6 = 12' }
-        ], ['18 divided by 3 = 6', '18 - 6 = 12'], 'Each flavor has 6 snacks. After eating the 6 grape snacks, Orlando has 12 snacks left.', false),
+        ], ['18 ÷ 3 = 6', '18 - 6 = 12'], 'Each flavor has 6 snacks. After eating the 6 grape snacks, Orlando has 12 snacks left.', false),
         solvedVisual: twoStepVisual('Problem 3: fruit snacks left', [
-          { step: '1', model: '18 snacks split equally among 3 flavors', blank: '18 divided by 3 = ____', solved: '18 divided by 3 = 6' },
+          { step: '1', model: '18 snacks split equally among 3 flavors', blank: '18 ÷ 3 = ____', solved: '18 ÷ 3 = 6' },
           { step: '2', model: 'Remove the grape-flavored part', blank: '18 - ____ = ____', solved: '18 - 6 = 12' }
-        ], ['18 divided by 3 = 6', '18 - 6 = 12'], 'Each flavor has 6 snacks. After eating the 6 grape snacks, Orlando has 12 snacks left.', true),
+        ], ['18 ÷ 3 = 6', '18 - 6 = 12'], 'Each flavor has 6 snacks. After eating the 6 grape snacks, Orlando has 12 snacks left.', true),
         blankWorkspaceLabel: 'Split the snacks into 3 equal flavor parts, then remove the grape part.',
         blankPrompts: [
           'Partition 18 into 3 equal flavor units.',
@@ -2837,7 +2932,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         number: 4,
         sourcePrompt: 'Eudora buys 21 meters of ribbon and cuts pieces 3 meters long. How many pieces does she have, and how many more to reach 12 pieces?',
         solvedAnswer: 'She has 7 pieces and needs 5 more pieces.',
-        equations: ['21 divided by 3 = 7', '12 - 7 = 5'],
+        equations: ['21 ÷ 3 = 7', '12 - 7 = 5'],
         knownTotal: 21,
         knownGroupSize: 3,
         quotient: 5,
@@ -2846,13 +2941,13 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         blankVisualType: 'bar-units',
         animationType: 'two-step-model',
         blankVisual: twoStepVisual('Problem 4: ribbon pieces needed', [
-          { step: '1', model: '21 meters cut into 3-meter pieces', blank: '21 divided by 3 = ____', solved: '21 divided by 3 = 7' },
+          { step: '1', model: '21 meters cut into 3-meter pieces', blank: '21 ÷ 3 = ____', solved: '21 ÷ 3 = 7' },
           { step: '2', model: 'Compare 7 pieces to 12 pieces', blank: '12 - ____ = ____', solved: '12 - 7 = 5' }
-        ], ['21 divided by 3 = 7', '12 - 7 = 5'], 'She has 7 pieces and needs 5 more pieces.', false),
+        ], ['21 ÷ 3 = 7', '12 - 7 = 5'], 'She has 7 pieces and needs 5 more pieces.', false),
         solvedVisual: twoStepVisual('Problem 4: ribbon pieces needed', [
-          { step: '1', model: '21 meters cut into 3-meter pieces', blank: '21 divided by 3 = ____', solved: '21 divided by 3 = 7' },
+          { step: '1', model: '21 meters cut into 3-meter pieces', blank: '21 ÷ 3 = ____', solved: '21 ÷ 3 = 7' },
           { step: '2', model: 'Compare 7 pieces to 12 pieces', blank: '12 - ____ = ____', solved: '12 - 7 = 5' }
-        ], ['21 divided by 3 = 7', '12 - 7 = 5'], 'She has 7 pieces and needs 5 more pieces.', true),
+        ], ['21 ÷ 3 = 7', '12 - 7 = 5'], 'She has 7 pieces and needs 5 more pieces.', true),
         blankWorkspaceLabel: 'Find how many 3-meter pieces she has, then compare to 12 pieces.',
         blankPrompts: [
           'Divide 21 meters by 3 meters per piece.',

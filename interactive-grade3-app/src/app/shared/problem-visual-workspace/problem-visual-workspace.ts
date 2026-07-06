@@ -11,6 +11,7 @@ import type {
   ProblemVisualRelatedFactsSection,
   ProblemVisualSection,
   ProblemVisualSpec,
+  ProblemVisualStopwatchSection,
   ProblemVisualTapeSection
 } from '../../data/lessons/lesson-runtime.types';
 
@@ -58,6 +59,10 @@ export class ProblemVisualWorkspaceComponent {
 
   noteSection(section: ProblemVisualSection): ProblemVisualNoteSection | undefined {
     return section.kind === 'note' ? section : undefined;
+  }
+
+  stopwatchSection(section: ProblemVisualSection): ProblemVisualStopwatchSection | undefined {
+    return section.kind === 'stopwatch-workspace' ? section : undefined;
   }
 
   range(count: number, max = 160): number[] {
