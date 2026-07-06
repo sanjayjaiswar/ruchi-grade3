@@ -1,9 +1,11 @@
 import { STUDENT_WORK_SOURCE } from '../../student-work-source.generated';
+import { evaluate } from 'mathjs/number';
 import type {
   ProblemSetAnimationType,
   ProblemSetBlankVisualType,
   ProblemSetCenteredLesson,
   ProblemSetCenteredProblem,
+  ProblemVisualSection,
   ProblemVisualSpec
 } from '../lesson-runtime.types';
 
@@ -269,7 +271,7 @@ function blankEquationTemplates(equations: string[]): string[] {
     .filter((equation) => equation.length > 0)
     .map((equation) => equation.includes('____') ? equation : `${equation}: ____`);
 
-  return templates.length > 0 ? Array.from(new Set(templates)) : ['Use the workbook blanks for this problem.'];
+  return templates.length > 0 ? Array.from(new Set(templates)) : [];
 }
 
 function maskPromptMathFragment(fragment: string): string {
@@ -281,6 +283,58 @@ function maskExtractedPromptEquations(prompt: string): string {
     .replace(/\b(?:\d+|n|[a-z])\s*(?:×|x|÷|divided by|\+|[-–])\s*(?:\d+|n|[a-z])(?:\s*=\s*(?:\d+|n|[a-z]))?/gi, maskPromptMathFragment)
     .replace(/\b(?:n|[a-z])\s*=\s*\d+\b/gi, maskPromptMathFragment)
     .replace(/\b\d+\s*=\s*(?:n|[a-z]|\d+)\b/gi, maskPromptMathFragment);
+}
+
+function mathExpressionFromSource(expression: string): string | undefined {
+  const sourceSide = expression.split('=')[0] ?? expression;
+  const normalized = sourceSide
+    .replace(/\$/g, '')
+    .replace(/×/g, '*')
+    .replace(/\bx\b/gi, '*')
+    .replace(/÷/g, '/')
+    .replace(/\bdivided by\b/gi, '/')
+    .replace(/[–—]/g, '-')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  if (!/^\s*[\d\s().+\-*/]+\s*$/.test(normalized) || !/\d/.test(normalized)) {
+    return undefined;
+  }
+
+  return normalized;
+}
+
+function evaluateM3Expression(expression: string): string | undefined {
+  const mathExpression = mathExpressionFromSource(expression);
+  if (!mathExpression) {
+    return undefined;
+  }
+
+  try {
+    const value = evaluate(mathExpression);
+    if (typeof value !== 'number' || !Number.isFinite(value)) {
+      return undefined;
+    }
+    return Number.isInteger(value) ? String(value) : String(Math.round(value * 100) / 100);
+  } catch {
+    return undefined;
+  }
+}
+
+function equationLibraryCheck(equation: string): string | undefined {
+  if (!equation.includes('=')) {
+    return evaluateM3Expression(equation);
+  }
+
+  const [left, right] = equation.split('=').map((part) => part.trim());
+  const leftValue = evaluateM3Expression(left);
+  const rightValue = evaluateM3Expression(right);
+
+  if (leftValue && rightValue) {
+    return leftValue === rightValue ? `${leftValue} = ${rightValue}` : `${leftValue} != ${rightValue}`;
+  }
+
+  return leftValue ?? rightValue;
 }
 
 const PROBLEM_METADATA: Record<string, Partial<ProblemSetCenteredProblem>> = {
@@ -751,12 +805,13 @@ function cleanSourcePrompt(prompt: string, lessonNumber: number, problemNumber: 
   return maskExtractedPromptEquations(normalizedPrompt);
 }
 
-function equationsFromAnswer(answer: string, sourceEquations: string[]): string[] {
-  const answerEquations = answer.match(/\d+\s*(?:x|\+|-|divided by)\s*\d+\s*=\s*\d+/g) ?? [];
-  const equations = [...sourceEquations.map(normalizeEquation), ...answerEquations.map(normalizeEquation)]
-    .filter((equation) => equation.length > 0 && !equation.includes('____'));
+function equationsFromAnswer(answer: string, _sourceEquations: string[]): string[] {
+  const answerEquations = answer.match(/\d+\s*(?:x|×|\+|-|divided by|÷)\s*\d+\s*=\s*\d+/g) ?? [];
+  const equations = answerEquations
+    .map(normalizeEquation)
+    .filter((equation) => equation.length > 0 && !equation.includes('____') && !/^Teacher Edition Answer Key:/i.test(equation));
   const unique = Array.from(new Set(equations));
-  return unique.length > 0 ? unique.slice(0, 8) : [answer];
+  return unique.length > 0 ? unique.slice(0, 8) : [];
 }
 
 function quotientFromAnswer(answer: string): number {
@@ -764,43 +819,220 @@ function quotientFromAnswer(answer: string): number {
   return firstNumber ? Number(firstNumber[0]) : 1;
 }
 
-function createM3ProblemVisual(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec {
+function createM3ProblemVisual(problem: ProblemSetCenteredProblem, solved: boolean, lessonNumber: number): ProblemVisualSpec {
   const sections: ProblemVisualSpec['sections'] = [];
   const sourceNote = solved
-    ? 'Solved view uses the Module 3 Teacher Edition Answer Key, authored model, and validation checks.'
-    : 'Blank view keeps the official student Problem Set workspace open without source-page images or answer leakage.';
+    ? 'Solved view uses the Module 3 Teacher Edition Answer Key and shows the reasoning needed to make that answer understandable.'
+    : 'Blank view preserves the official student Problem Set structure without answer leakage.';
 
-  if (problem.blankVisualType === 'fact-match' || problem.animationType === 'fact-match') {
-    sections.push({
-      kind: 'related-facts',
-      label: solved ? 'Solved fact matches' : 'Fact-match workspace',
-      rows: factRows(problem, solved)
-    });
-  } else if (usesM3Tape(problem)) {
-    sections.push(makeM3Tape(problem, solved));
-  } else if (problem.blankVisualType === 'array-template' || problem.animationType === 'array-model' || problem.animationType === 'decompose-array') {
-    sections.push(makeM3ArrayOrWorkspace(problem, solved));
-  } else {
-    sections.push(makeM3WorkspaceTable(problem, solved));
+  const equations = problem.equations?.length ? problem.equations : [];
+
+  sections.push(makeM3PrimaryModel(problem, solved));
+
+  const strategyFrame = makeM3StrategyFrame(problem, solved, lessonNumber, equations);
+  if (strategyFrame) {
+    sections.push(strategyFrame);
   }
 
-  const equations = problem.equations?.length ? problem.equations : [problem.solvedAnswer];
-  sections.push({
-    kind: 'equations',
-    label: solved ? 'Solved equations' : 'Student equation blanks',
-    lines: solved ? equations : problem.blankEquations?.length ? problem.blankEquations : blankEquationTemplates(equations)
-  });
+  const mathCheck = makeM3MathLibraryCheck(problem, solved, equations);
+  if (mathCheck) {
+    sections.push(mathCheck);
+  }
+
+  sections.push(makeM3SourceWorkspace(problem, solved));
+
+  if (solved) {
+    sections.push(makeM3ReasoningPath(problem, equations));
+  }
+
+  const equationLines = solved
+    ? equations
+    : problem.blankEquations?.length
+      ? problem.blankEquations
+      : equations.length
+        ? blankEquationTemplates(equations)
+        : [];
+
+  if (equationLines.length) {
+    sections.push({
+      kind: 'equations',
+      label: solved ? 'Solved equations' : 'Student equation blanks',
+      lines: equationLines
+    });
+  }
 
   sections.push({
     kind: 'note',
-    label: solved ? 'Teacher Edition answer' : 'Source workspace direction',
+    label: solved ? 'Teacher Edition answer evidence' : 'Source workspace direction',
     text: solved ? problem.solvedAnswer : problem.blankWorkspaceLabel ?? sourceSpecificBlankWorkspaceLabel(problem)
   });
 
   return {
-    title: `Problem ${problem.number}: ${m3VisualTitle(problem)}`,
+    title: `Problem ${problem.number}: ${m3VisualTitle(problem, solved)}`,
     sourceNote,
     sections
+  };
+}
+
+function makeM3PrimaryModel(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSection {
+  if (problem.blankVisualType === 'fact-match' || problem.animationType === 'fact-match') {
+    return makeM3FactMatch(problem, solved);
+  }
+
+  if (usesM3Tape(problem)) {
+    return makeM3Tape(problem, solved);
+  }
+
+  if (problem.blankVisualType === 'array-template' || problem.animationType === 'array-model' || problem.animationType === 'decompose-array') {
+    return makeM3ArrayOrWorkspace(problem, solved);
+  }
+
+  if (looksLikeMultiplicationTable(problem)) {
+    return makeM3PatternTable(problem, solved);
+  }
+
+  return makeM3WorkspaceTable(problem, solved);
+}
+
+function makeM3StrategyFrame(
+  problem: ProblemSetCenteredProblem,
+  solved: boolean,
+  lessonNumber: number,
+  equations: string[]
+): ProblemVisualSection | undefined {
+  if ([2, 6, 10, 12].includes(lessonNumber)) {
+    const groupSize = problem.knownGroupSize ?? inferM3Factor(equations, 1) ?? m3LikelyUnitSize(problem);
+    const totalGroups = problem.knownGroupCount ?? inferM3Factor(equations, 0) ?? 6;
+    const firstPart = Math.min(5, Math.max(1, totalGroups - 1));
+    const secondPart = Math.max(1, totalGroups - firstPart);
+    return {
+      kind: 'card-grid',
+      label: solved ? 'Solved distributive property model' : 'Distributive property workspace',
+      cards: [
+        {
+          label: `${firstPart} groups`,
+          sections: [
+            {
+              kind: 'array',
+              rows: firstPart,
+              columns: boundedM3Count(groupSize, 1, 10),
+              item: 'dot',
+              caption: solved ? `${firstPart} x ${groupSize} = ${firstPart * groupSize}` : `Known fact: ${firstPart} groups of ${groupSize}`
+            }
+          ]
+        },
+        {
+          label: `${secondPart} more`,
+          sections: [
+            {
+              kind: 'array',
+              rows: secondPart,
+              columns: boundedM3Count(groupSize, 1, 10),
+              item: 'circle',
+              caption: solved ? `${secondPart} x ${groupSize} = ${secondPart * groupSize}` : `Add the extra ${secondPart} group${secondPart === 1 ? '' : 's'}`
+            }
+          ]
+        },
+        {
+          label: 'Add parts',
+          sections: [
+            {
+              kind: 'equations',
+              lines: solved
+                ? [`${totalGroups} x ${groupSize} = (${firstPart} x ${groupSize}) + (${secondPart} x ${groupSize})`, `${firstPart * groupSize} + ${secondPart * groupSize} = ${totalGroups * groupSize}`]
+                : [`${totalGroups} x ${groupSize} = (${firstPart} x ${groupSize}) + (${secondPart} x ${groupSize})`, '____ + ____ = ____']
+            }
+          ]
+        }
+      ]
+    };
+  }
+
+  if (lessonNumber === 1) {
+    const rows = problem.knownGroupCount ?? inferM3Factor(equations, 0) ?? 4;
+    const columns = problem.knownGroupSize ?? inferM3Factor(equations, 1) ?? 6;
+    return {
+      kind: 'card-grid',
+      label: solved ? 'Commutative property check' : 'Commutative property model',
+      cards: [
+        {
+          label: 'Read rows',
+          sections: [{ kind: 'equations', lines: solved ? [`${rows} x ${columns} = ${rows * columns}`] : [`${rows} x ${columns} = ____`] }]
+        },
+        {
+          label: 'Read columns',
+          sections: [{ kind: 'equations', lines: solved ? [`${columns} x ${rows} = ${rows * columns}`] : [`${columns} x ${rows} = ____`] }]
+        },
+        {
+          label: 'Same total',
+          sections: [{ kind: 'note', text: 'Turning the array does not change the number of objects; it changes the order of the factors.' }]
+        }
+      ]
+    };
+  }
+
+  if ([4, 5].includes(lessonNumber)) {
+    const unit = lessonNumber === 4 ? 6 : 7;
+    return {
+      kind: 'number-line',
+      label: solved ? `Solved count-by-${unit}s line` : `Count by ${unit}s`,
+      ticks: Array.from({ length: 11 }, (_, index) => ({
+        label: String(index * unit),
+        target: solved && index > 0 && index % 2 === 0
+      })),
+      caption: `The Teacher Edition strategy counts equal units of ${unit}, then connects the count to multiplication and division facts.`
+    };
+  }
+
+  if (lessonNumber === 17) {
+    return makeM3PatternTable(problem, solved);
+  }
+
+  if ([19, 20].includes(lessonNumber)) {
+    return {
+      kind: 'data-table',
+      label: solved ? 'Place value multiplication bridge' : 'Ones fact to tens fact',
+      columns: ['Ones fact', 'Tens fact', 'Why it works'],
+      rows: [
+        solved
+          ? ['4 x 3 = 12', '4 x 30 = 120', '3 tens multiplied by 4 makes 12 tens.']
+          : ['____ x ____ = ____', '____ x ____ tens = ____ tens', 'Use the same basic fact, then attach tens.'],
+        solved
+          ? ['2 x 4 = 8', '2 x 40 = 80', 'The unit changes from ones to tens.']
+          : ['(n x m) x 10', 'n x (m x 10)', 'Associative property keeps the product equivalent.']
+      ]
+    };
+  }
+
+  return undefined;
+}
+
+function makeM3SourceWorkspace(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSection {
+  const blankStructure = problem.blankEquations?.length
+    ? problem.blankEquations.slice(0, 6).join('; ')
+    : problem.equations.length
+      ? blankEquationTemplates(problem.equations).slice(0, 6).join('; ')
+      : 'Official table, model, or written-response blanks';
+
+  return {
+    kind: 'data-table',
+    label: solved ? 'Teacher Edition source check' : 'Official Problem Set workspace',
+    columns: solved
+      ? ['Source request', 'Teacher Edition answer evidence', 'What the model must prove']
+      : ['Source request', 'Student response structure', 'What to work out'],
+    rows: [
+      solved
+        ? [
+            cleanLongText(problem.sourcePrompt),
+            teacherAnswerEvidence(problem.solvedAnswer),
+            problem.quotientMeaning
+          ]
+        : [
+            cleanLongText(problem.sourcePrompt),
+            blankStructure,
+            problem.blankWorkspaceLabel ?? sourceSpecificBlankWorkspaceLabel(problem)
+          ]
+    ]
   };
 }
 
@@ -810,7 +1042,7 @@ function sourceSpecificBlankWorkspaceLabel(problem: ProblemSetCenteredProblem): 
   const equations = problem.blankEquations?.length
     ? ` Equation blanks: ${problem.blankEquations.slice(0, 4).join('; ')}.`
     : '';
-  return `Use this official Problem ${problem.number} workspace: ${firstSentence}${equations}`;
+  return `Use this official Problem ${problem.number} workspace: ${usefulPromptLead(firstSentence, prompt)}${equations}`;
 }
 
 function firstPromptSentence(prompt: string): string {
@@ -821,14 +1053,236 @@ function firstPromptSentence(prompt: string): string {
   return prompt.slice(0, end).trim();
 }
 
-function factRows(problem: ProblemSetCenteredProblem, solved: boolean): Array<{ left: string; right: string }> {
-  const blanks = problem.blankEquations?.length ? problem.blankEquations : blankEquationTemplates(problem.equations);
-  const solvedRows = problem.equations?.length ? problem.equations : [problem.solvedAnswer];
-  const rowCount = Math.max(blanks.length, solvedRows.length, 1);
-  return Array.from({ length: rowCount }, (_, index) => ({
-    left: solved ? solvedRows[index % solvedRows.length] : blanks[index % blanks.length],
-    right: solved ? problem.solvedAnswer : 'match or solve: ____'
-  }));
+function usefulPromptLead(firstSentence: string, fullPrompt: string): string {
+  if (firstSentence.replace(/[^\w]/g, '').length >= 5) {
+    return firstSentence;
+  }
+  return `${fullPrompt.split(/\s+/).slice(0, 14).join(' ')}...`;
+}
+
+function makeM3FactMatch(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSection {
+  const blankItems = problem.blankEquations?.length ? problem.blankEquations : blankEquationTemplates(problem.equations);
+  const solvedItems = problem.equations?.length ? problem.equations : [problem.solvedAnswer];
+  const topItems = solved ? solvedItems.slice(0, 10) : blankItems.slice(0, 10);
+  const bottomItems = solved
+    ? topItems.map((item, index) => equationLibraryCheck(item) ?? `answer ${index + 1}`)
+    : topItems.map(() => '____');
+
+  return {
+    kind: 'expression-match',
+    label: solved ? 'Solved fact matches' : 'Fact-match workspace',
+    topLabel: 'Official equations',
+    bottomLabel: solved ? 'Values' : 'Solution choices',
+    topItems,
+    bottomItems,
+    showMatches: solved,
+    matches: solved ? topItems.map((item, index) => ({
+      topIndex: index,
+      bottomIndex: index,
+      label: m3FactMatchReason(item)
+    })) : undefined,
+    note: solved
+      ? 'Each match names the value that makes the official equation true.'
+      : 'Use the official equation structure. Keep the solution cards blank until Solved mode.'
+  };
+}
+
+function makeM3MathLibraryCheck(
+  problem: ProblemSetCenteredProblem,
+  solved: boolean,
+  equations: string[]
+): ProblemVisualSection | undefined {
+  const sourceEquations = solved ? equations : problem.blankEquations?.length ? problem.blankEquations : blankEquationTemplates(equations);
+  const rows = sourceEquations
+    .slice(0, 8)
+    .map((equation) => {
+      const value = solved ? equationLibraryCheck(equation) : undefined;
+      const isUsefulBlank = !solved && /____|×|x|÷|divided by|\+|-|=/.test(equation);
+      const isUsefulSolved = solved && Boolean(value);
+      if (!isUsefulBlank && !isUsefulSolved) {
+        return undefined;
+      }
+      return [
+        equation,
+        solved ? value ?? 'Teacher check needed' : '____',
+        solved ? m3EquationReason(equation, value) : 'Fill the official blank before checking the answer.'
+      ];
+    })
+    .filter((row): row is string[] => Boolean(row));
+
+  if (!rows.length) {
+    return undefined;
+  }
+
+  return {
+    kind: 'data-table',
+    label: solved ? 'Equation value check' : 'Math expression workspace',
+    columns: solved ? ['Expression', 'Value', 'Why it is true'] : ['Expression', 'Value', 'Student action'],
+    rows
+  };
+}
+
+function makeM3ReasoningPath(problem: ProblemSetCenteredProblem, equations: string[]): ProblemVisualSection {
+  const steps = m3SolvedSteps(problem, equations);
+  return {
+    kind: 'data-table',
+    label: 'How the solved answer is found',
+    columns: ['Step', 'Work', 'Meaning'],
+    rows: steps
+  };
+}
+
+function m3SolvedSteps(problem: ProblemSetCenteredProblem, equations: string[]): string[][] {
+  const rows: string[][] = [
+    ['1. Read', m3GivenText(problem), 'Name the quantities and the unknown before calculating.'],
+    ['2. Model', m3ModelText(problem), 'Use the same structure as the official Problem Set item.']
+  ];
+
+  const computedEquations = equations
+    .map((equation) => {
+      const value = equationLibraryCheck(equation);
+      return value ? `${equation} -> ${value}` : equation;
+    })
+    .filter((equation) => !equation.startsWith('Teacher Edition Answer Key'))
+    .slice(0, 4);
+
+  if (computedEquations.length) {
+    rows.push(['3. Calculate', computedEquations.join('; '), 'Each equation completes part of the official problem.']);
+  }
+
+  rows.push(['4. Answer', teacherAnswerEvidence(problem.solvedAnswer), problem.quotientMeaning]);
+  rows.push(['5. Check', problem.validationChecks.join(' '), 'The answer is accepted only if these Teacher Edition checks are visible.']);
+  return rows;
+}
+
+function m3GivenText(problem: ProblemSetCenteredProblem): string {
+  const facts: string[] = [];
+  if (problem.knownTotal !== undefined) {
+    facts.push(`total ${problem.knownTotal} ${problem.unitLabel || 'units'}`);
+  }
+  if (problem.knownGroupCount !== undefined) {
+    facts.push(`${problem.knownGroupCount} ${problem.groupLabel || 'groups'}`);
+  }
+  if (problem.knownGroupSize !== undefined) {
+    facts.push(`${problem.knownGroupSize} ${problem.unitLabel || 'units'} in each ${singularLabel(problem.groupLabel || 'group')}`);
+  }
+
+  return facts.length ? facts.join('; ') : firstPromptSentence(problem.sourcePrompt);
+}
+
+function m3ModelText(problem: ProblemSetCenteredProblem): string {
+  if (problem.blankVisualType === 'fact-match' || problem.animationType === 'fact-match') {
+    return 'Match each official equation to the value of n that makes the equation true.';
+  }
+  if (usesM3Tape(problem)) {
+    return problem.knownTotal !== undefined
+      ? `Use an equal-unit tape: whole ${problem.knownTotal}, equal parts determined by ${problem.knownGroupSize ?? problem.knownGroupCount ?? 'the source'}.`
+      : `Use an equal-unit tape with ${problem.knownGroupCount ?? 'the source number of'} equal parts.`;
+  }
+  if (problem.blankVisualType === 'array-template' || problem.animationType === 'array-model' || problem.animationType === 'decompose-array') {
+    return `Use an array with ${problem.knownGroupCount ?? 'source'} rows/groups and ${problem.knownGroupSize ?? 'source'} in each group.`;
+  }
+  return 'Use the official table, equation blanks, or written response space from the Problem Set.';
+}
+
+function teacherAnswerEvidence(answer: string): string {
+  return answer.replace(/^Teacher Edition Answer Key:\s*/i, '').trim();
+}
+
+function cleanLongText(text: string): string {
+  return text.replace(/\s+/g, ' ').trim();
+}
+
+function singularLabel(label: string): string {
+  return label.endsWith('s') ? label.slice(0, -1) : label;
+}
+
+function m3EquationReason(equation: string, value?: string): string {
+  if (/divided by 1|÷\s*1/.test(equation)) {
+    return 'Dividing by 1 keeps the number unchanged.';
+  }
+  if (/0\s*(?:divided by|÷)/.test(equation)) {
+    return 'Zero shared into equal groups gives 0 in each group.';
+  }
+  if (/\b1\s*(?:x|×)|(?:x|×)\s*1\b/i.test(equation)) {
+    return 'Multiplying by 1 keeps the other factor unchanged.';
+  }
+  if (value?.includes('!=')) {
+    return 'The two sides do not have the same value, so the equation is not true.';
+  }
+  return 'The expression value matches the Teacher Edition answer evidence.';
+}
+
+function m3FactMatchReason(equation: string): string {
+  if (/divided by 1|÷\s*1/.test(equation)) {
+    return 'divide by 1: same number';
+  }
+  if (/0\s*(?:divided by|÷)|(?:divided by|÷)\s*\d+\s*=\s*0/.test(equation)) {
+    return 'zero divided: 0';
+  }
+  if (/\b1\s*(?:x|×)|(?:x|×)\s*1\b/i.test(equation)) {
+    return 'multiply by 1: same number';
+  }
+  if (/(\d+)\s*(?:divided by|÷)\s*\1/.test(equation)) {
+    return 'number divided by itself: 1';
+  }
+  return 'value makes the equation true';
+}
+
+function looksLikeMultiplicationTable(problem: ProblemSetCenteredProblem): boolean {
+  const text = `${problem.sourcePrompt} ${problem.solvedAnswer}`.toLowerCase();
+  return text.includes('multiplication table') ||
+    text.includes('diagonal') ||
+    text.includes('pattern') ||
+    text.includes('shade in the multiplication facts') ||
+    text.includes('complete the chart');
+}
+
+function m3LikelyUnitSize(problem: ProblemSetCenteredProblem): number {
+  const text = `${problem.sourcePrompt} ${problem.solvedAnswer} ${problem.equations.join(' ')}`;
+  const facts = Array.from(text.matchAll(/(\d+)\s*(?:x|×)\s*(\d+)/gi))
+    .map((match) => [Number(match[1]), Number(match[2])])
+    .filter(([a, b]) => Number.isFinite(a) && Number.isFinite(b));
+  const preferred = facts.find(([, b]) => b >= 6 && b <= 10) ?? facts.find(([a]) => a >= 6 && a <= 10);
+  if (!preferred) {
+    return 6;
+  }
+  return preferred[1] >= 6 && preferred[1] <= 10 ? preferred[1] : preferred[0];
+}
+
+function makeM3PatternTable(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSection {
+  const lessonTable = /multiplication table|diagonal/i.test(problem.sourcePrompt);
+  const columns = lessonTable ? ['Factor', 'x 6', 'x 7', 'x 8', 'x 9'] : ['Step', 'Pattern', 'Result'];
+  const rows = lessonTable
+    ? Array.from({ length: 9 }, (_, index) => {
+        const factor = index + 1;
+        return solved
+          ? [String(factor), String(factor * 6), String(factor * 7), String(factor * 8), String(factor * 9)]
+          : [String(factor), '____', '____', '____', '____'];
+      })
+    : [
+        solved
+          ? ['Known fact', 'Use a familiar product.', firstUsefulSolvedNumber(problem.solvedAnswer) ?? 'check source']
+          : ['Known fact', 'Start from the official table, chart, or pattern.', '____'],
+        solved
+          ? ['Pattern', 'Compare factors, digits, or place value units.', teacherAnswerEvidence(problem.solvedAnswer)]
+          : ['Pattern', 'Write what changes and what stays the same.', '____'],
+        solved
+          ? ['Answer', 'State the completed fact or explanation.', problem.quotientMeaning]
+          : ['Answer', 'Complete the official blank or written explanation.', '____']
+      ];
+
+  return {
+    kind: 'data-table',
+    label: solved ? 'Solved pattern table' : 'Pattern workspace',
+    columns,
+    rows
+  };
+}
+
+function firstUsefulSolvedNumber(answer: string): string | undefined {
+  const match = answer.match(/\b\d+\b/);
+  return match?.[0];
 }
 
 function makeM3ArrayOrWorkspace(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'][number] {
@@ -847,7 +1301,12 @@ function makeM3ArrayOrWorkspace(problem: ProblemSetCenteredProblem, solved: bool
     rows,
     columns,
     item: 'dot',
-    placeholder: solved ? undefined : undefined
+    splitAfterRows: problem.animationType === 'decompose-array' ? Math.min(5, Math.max(1, rows - 1)) : undefined,
+    caption: solved
+      ? `${rows} x ${columns} = ${rows * columns}; checked against the lesson fact.`
+      : problem.animationType === 'decompose-array'
+        ? `Break the array into a known part and an extra part, then add the partial products.`
+        : `Use the array rows and columns to write the matching fact.`
   };
 }
 
@@ -862,7 +1321,7 @@ function makeM3Tape(problem: ProblemSetCenteredProblem, solved: boolean): Proble
   return {
     kind: 'tape',
     label: solved ? 'Solved equal-unit model' : 'Blank equal-unit model',
-    totalLabel: total ? `${total} ${problem.unitLabel || 'units'}` : `${problem.unitLabel || 'units'} total`,
+    totalLabel: solved && total ? `${total} ${problem.unitLabel || 'units'}` : `${problem.unitLabel || 'units'} total`,
     parts: Array.from({ length: partCount }, (_, index) => ({
       label: partLabel,
       emphasize: index < Math.min(2, partCount)
@@ -872,8 +1331,12 @@ function makeM3Tape(problem: ProblemSetCenteredProblem, solved: boolean): Proble
 }
 
 function makeM3WorkspaceTable(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'][number] {
-  const equations = problem.equations?.length ? problem.equations : [problem.solvedAnswer];
-  const blankWork = problem.blankEquations?.length ? problem.blankEquations.join('; ') : blankEquationTemplates(equations).join('; ');
+  const equations = problem.equations?.length ? problem.equations : [];
+  const blankWork = problem.blankEquations?.length
+    ? problem.blankEquations.join('; ')
+    : equations.length
+      ? blankEquationTemplates(equations).join('; ')
+      : 'Official table, model, or written-response blanks';
   return {
     kind: 'data-table',
     label: solved ? 'Solved problem workspace' : 'Blank problem workspace',
@@ -881,7 +1344,7 @@ function makeM3WorkspaceTable(problem: ProblemSetCenteredProblem, solved: boolea
     rows: [
       [
         problem.sourcePrompt,
-        solved ? equations.join('; ') : blankWork,
+        solved ? equations.length ? equations.join('; ') : problem.solvedAnswer : blankWork,
         solved ? problem.solvedAnswer : '____'
       ]
     ]
@@ -894,8 +1357,7 @@ function usesM3Tape(problem: ProblemSetCenteredProblem): boolean {
     problem.blankVisualType === 'bar-units' ||
     problem.blankVisualType === 'share-tape' ||
     problem.animationType === 'equal-sharing' ||
-    problem.animationType === 'grouping-by-size' ||
-    problem.animationType === 'two-step-model'
+    problem.animationType === 'grouping-by-size'
   );
 }
 
@@ -913,17 +1375,33 @@ function boundedM3Count(value: number | undefined, min: number, max: number): nu
   return Math.max(min, Math.min(max, Math.round(value)));
 }
 
-function m3VisualTitle(problem: ProblemSetCenteredProblem): string {
+function m3VisualTitle(problem: ProblemSetCenteredProblem, solved: boolean): string {
+  if (!solved) {
+    if (looksLikeMultiplicationTable(problem)) {
+      return 'official fact-pattern workspace';
+    }
+    if (problem.blankVisualType === 'equation-workspace') {
+      return 'official equation workspace';
+    }
+    return usefulPromptLead(firstPromptSentence(problem.sourcePrompt), problem.sourcePrompt);
+  }
+
   if (problem.knownGroupCount && problem.knownGroupSize) {
     return `${problem.knownGroupCount} ${problem.groupLabel || 'groups'} of ${problem.knownGroupSize}`;
   }
-  if (problem.knownTotal && problem.knownGroupSize) {
+  if (solved && problem.knownTotal && problem.knownGroupSize) {
     return `${problem.knownTotal} ${problem.unitLabel || 'units'} in groups of ${problem.knownGroupSize}`;
   }
-  if (problem.quotient && problem.unitLabel) {
+  if (solved && problem.quotient && problem.unitLabel && problem.unitLabel !== 'units') {
     return `${problem.quotient} ${problem.unitLabel}`;
   }
-  return problem.sourcePrompt;
+  if (looksLikeMultiplicationTable(problem)) {
+    return 'official fact-pattern workspace';
+  }
+  if (problem.blankVisualType === 'equation-workspace') {
+    return 'official equation workspace';
+  }
+  return usefulPromptLead(firstPromptSentence(problem.sourcePrompt), problem.sourcePrompt);
 }
 
 function makeProblem(lessonNumber: number, problemIndex: number): ProblemSetCenteredProblem {
@@ -936,8 +1414,8 @@ function makeProblem(lessonNumber: number, problemIndex: number): ProblemSetCent
     number: sourceProblem.number,
     sourcePrompt: cleanSourcePrompt(sourceProblem.prompt, lessonNumber, sourceProblem.number),
     blankPrompts: ['Complete the official Problem Set prompt, labels, equation blanks, table entries, or answer sentence.'],
-    blankEquations: blankEquationTemplates(sourceProblem.equations),
-    blankWorkspaceLabel: `Use this official Problem ${sourceProblem.number} workspace: ${firstPromptSentence(cleanSourcePrompt(sourceProblem.prompt, lessonNumber, sourceProblem.number))}.`,
+    blankEquations: sourceProblem.equations.length ? blankEquationTemplates(sourceProblem.equations) : [],
+    blankWorkspaceLabel: `Use this official Problem ${sourceProblem.number} workspace: ${usefulPromptLead(firstPromptSentence(cleanSourcePrompt(sourceProblem.prompt, lessonNumber, sourceProblem.number)), cleanSourcePrompt(sourceProblem.prompt, lessonNumber, sourceProblem.number))}.`,
     blankVisualType: visualType(sourceProblem.prompt),
     solvedAnswer,
     equations: equationsFromAnswer(solvedAnswer, sourceProblem.equations),
@@ -1012,8 +1490,8 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
         sourcePageImages: centeredProblem.sourcePageImages ?? sourcePageImages,
         blankSourcePageImages: centeredProblem.blankSourcePageImages ?? sourcePageImages,
         solvedSourcePageImages: centeredProblem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages],
-        blankVisual: createM3ProblemVisual(centeredProblem, false),
-        solvedVisual: createM3ProblemVisual(centeredProblem, true)
+        blankVisual: createM3ProblemVisual(centeredProblem, false, lessonNumber),
+        solvedVisual: createM3ProblemVisual(centeredProblem, true, lessonNumber)
       };
     })
   };

@@ -29,9 +29,6 @@
         <span>{{ assessmentCheckpoint() }}</span>
       </article>
     </div>
-    <div class="chip-row model-row">
-      <span class="chip" *ngFor="let model of module.visualModels">{{ model }}</span>
-    </div>
   </section>
 
   <nav class="module-overview-tabs" *ngIf="moduleOverviewTabs().length" aria-label="Module overview sections">
@@ -54,6 +51,64 @@
         <p class="muted" *ngIf="showModuleOneConceptMap()">A parent-friendly map of the big ideas students use across multiplication, division, strategies, and word problems.</p>
       </div>
     </div>
+
+    <article class="module-spine-panel" *ngIf="moduleConceptFrame() as frame" [attr.data-visual]="frame.visual">
+      <div class="module-spine-copy">
+        <span class="section-step">Module spine</span>
+        <h3>{{ frame.title }}</h3>
+        <p>{{ frame.bigIdea }}</p>
+        <div>
+          <strong>Ask first</strong>
+          <span>{{ frame.studentQuestion }}</span>
+        </div>
+      </div>
+
+      <div class="module-spine-visual" [ngSwitch]="frame.visual" [attr.aria-label]="frame.modelLabel">
+        <div *ngSwitchCase="'groups'" class="spine-array">
+          <span *ngFor="let dot of moduleFrameSlots(24)" [class.is-split]="dot > 8"></span>
+        </div>
+        <div *ngSwitchCase="'measurement'" class="spine-measure">
+          <div class="spine-clock" data-hour="7" data-minute="35" aria-hidden="true"></div>
+          <div class="spine-scale">
+            <span *ngFor="let tick of moduleFrameSlots(7)">{{ (tick - 1) * 10 }}</span>
+          </div>
+        </div>
+        <div *ngSwitchCase="'facts'" class="spine-facts">
+          <div class="spine-array">
+            <span *ngFor="let dot of moduleFrameSlots(42)" [class.is-split]="dot > 35"></span>
+          </div>
+          <strong>35 + 7 = 42</strong>
+        </div>
+        <div *ngSwitchCase="'area'" class="spine-area">
+          <span *ngFor="let tile of moduleFrameSlots(24)" [class.is-split]="tile % 6 > 4 || tile % 6 === 0"></span>
+        </div>
+        <div *ngSwitchCase="'fractions'" class="spine-fractions">
+          <span *ngFor="let part of moduleFrameSlots(4)" [class.is-shaded]="part <= 3"></span>
+        </div>
+        <div *ngSwitchCase="'data'" class="spine-data">
+          <span *ngFor="let bar of moduleFrameSlots(5)" [style.height.%]="32 + bar * 11"><i></i><small>{{ bar }}</small></span>
+        </div>
+        <div *ngSwitchCase="'shapes'" class="spine-shapes">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="spine-transform">
+          <b>{{ frame.transform.from }}</b>
+          <i>{{ frame.transform.action }}</i>
+          <b>{{ frame.transform.to }}</b>
+        </div>
+      </div>
+
+      <div class="module-spine-sequence">
+        <strong>{{ frame.modelLabel }}</strong>
+        <ol>
+          <li *ngFor="let band of frame.lessonBands">
+            <b>{{ band.label }}</b>
+            <span>{{ band.lessons }}</span>
+            <em>{{ band.focus }}</em>
+          </li>
+        </ol>
+      </div>
+    </article>
 
     <ng-container *ngIf="showModuleOneConceptMap(); else standardConceptCards">
       <div class="module-one-map">

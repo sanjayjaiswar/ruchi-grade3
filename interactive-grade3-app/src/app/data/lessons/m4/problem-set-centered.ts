@@ -6,8 +6,10 @@ import type {
   ProblemSetCenteredProblem,
   ProblemSetPatternBlockCover,
   ProblemSetRoomArea,
+  ProblemVisualFloorPlanSection,
   ProblemVisualSpec
 } from '../lesson-runtime.types';
+import { evaluate } from 'mathjs/number';
 
 type ProblemSeed = {
   number: number;
@@ -49,7 +51,7 @@ const m4TeacherPageBase = '/source-pages/m4-teacher';
 
 function sourceFactorPair(equations?: string[]): { rows: number; columns: number } | undefined {
   for (const equation of equations ?? []) {
-    const match = equation.match(/\b(\d+)\s*x\s*(\d+)\s*=\s*(\d+)\b/);
+    const match = equation.match(/\b(\d+)\s*(?:x|×)\s*(\d+)\s*=\s*(\d+)\b/i);
     if (!match) {
       continue;
     }
@@ -64,7 +66,7 @@ function sourceFactorPair(equations?: string[]): { rows: number; columns: number
 
 function sourceAreaModels(equations?: string[], unitLabel = 'square units'): ProblemSetAreaModel[] {
   return (equations ?? []).flatMap((equation, index) => {
-    const match = equation.match(/\b(\d+)\s*x\s*(\d+)\s*=\s*(\d+)\b/);
+    const match = equation.match(/\b(\d+)\s*(?:x|×)\s*(\d+)\s*=\s*(\d+)\b/i);
     if (!match) {
       return [];
     }
@@ -90,7 +92,7 @@ function blankEquationTemplate(equation: string): string | undefined {
 
   if (!trimmed.includes('=')) {
     if (/divided by|[x×]/i.test(trimmed)) {
-      return `${trimmed} = ____`;
+      return `${maskNumbers(trimmed)} = ____`;
     }
     return undefined;
   }
@@ -98,9 +100,7 @@ function blankEquationTemplate(equation: string): string | undefined {
   const [leftRaw, ...rightParts] = trimmed.split('=');
   const left = leftRaw.trim();
   const right = rightParts.join('=').trim();
-  const leftHasAdditiveWork = /[+-]/.test(left);
-  const leftIsAnswerLabel = /area|shape|figure|side lengths|factor pair product|bedroom|kitchen|hallway|bathroom|dining room|living room|missing tiles|shaded/i.test(left);
-  const leftTemplate = leftHasAdditiveWork || leftIsAnswerLabel ? maskNumbers(left) : left;
+  const leftTemplate = maskNumbers(left);
   const rightTemplate = maskNumbers(right);
 
   return `${leftTemplate} = ${rightTemplate === right ? '____' : rightTemplate}`;
@@ -121,6 +121,33 @@ function pageRange(start: number, end = start): number[] {
 function pageImages(pages: number[]): string[] {
   return pages.map((page) => `${m4TeacherPageBase}/page-${String(page).padStart(3, '0')}.png`);
 }
+
+const M4_LESSON15_ROOM_AREAS: ProblemSetRoomArea[] = [
+  { label: 'Bedroom 1', area: 60 },
+  { label: 'Bedroom 2', area: 56 },
+  { label: 'Kitchen', area: 42 },
+  { label: 'Hallway', area: 24 },
+  { label: 'Bathroom', area: 25 },
+  { label: 'Dining Room', area: 28 },
+  { label: 'Living Room', area: 88 }
+];
+
+const M4_LESSON15_FLOOR_PLAN: ProblemVisualFloorPlanSection = {
+  kind: 'floor-plan',
+  label: 'Teacher Edition floor-plan area model',
+  widthUnits: 19,
+  heightUnits: 17,
+  rooms: [
+    { label: 'Living Room', x: 0, y: 0, width: 8, height: 11, area: 88, lengthLabel: '11 cm', widthLabel: '8 cm', tone: 'answer' },
+    { label: 'Bedroom 2', x: 8, y: 0, width: 4, height: 14, area: 56, lengthLabel: '14 cm', widthLabel: '4 cm' },
+    { label: 'Dining Room', x: 12, y: 0, width: 2, height: 14, area: 28, lengthLabel: '14 cm', widthLabel: '2 cm' },
+    { label: 'Bedroom 1', x: 14, y: 0, width: 5, height: 12, area: 60, lengthLabel: '12 cm', widthLabel: '5 cm' },
+    { label: 'Hallway', x: 0, y: 11, width: 8, height: 3, area: 24, lengthLabel: '8 cm', widthLabel: '3 cm' },
+    { label: 'Bathroom', x: 14, y: 12, width: 5, height: 5, area: 25, lengthLabel: '5 cm', widthLabel: '5 cm' },
+    { label: 'Kitchen', x: 0, y: 14, width: 14, height: 3, area: 42, lengthLabel: '14 cm', widthLabel: '3 cm' }
+  ],
+  caption: 'The whole house is 19 cm by 17 cm. Room areas are found by multiplying each rectangular room side length, then adding all room areas.'
+};
 
 function teacherEditionLessonPages(source: string): string[] {
   const match = source.match(/pages?\s+(\d+)(?:-(\d+))?/i);
@@ -144,7 +171,7 @@ function teacherEditionAnswerKeyPages(source: string): string[] {
 
 function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
   const factorPair = sourceFactorPair(seed.equations);
-  const areaModels = seed.areaModels ?? sourceAreaModels(seed.equations, seed.unitLabel ?? 'square units');
+  const areaModels = seed.areaModels ?? [];
   const hasMultipleAreaModels = areaModels.length > 1;
   const blankVisualType = seed.blankVisualType
     ?? (seed.patternBlockCover
@@ -153,7 +180,7 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
       ? 'floor-plan-template'
       : hasMultipleAreaModels
       ? 'area-models-template'
-      : factorPair
+      : seed.knownGroupCount && seed.knownGroupSize
       ? 'array-template'
       : 'open-workspace');
   const animationType = seed.animationType
@@ -163,11 +190,11 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
       ? 'floor-plan-model'
       : hasMultipleAreaModels
       ? 'area-models'
-      : factorPair
+      : seed.knownGroupCount && seed.knownGroupSize
       ? 'array-model'
       : 'two-step-model');
-  const knownGroupCount = seed.knownGroupCount ?? factorPair?.rows;
-  const knownGroupSize = seed.knownGroupSize ?? factorPair?.columns;
+  const knownGroupCount = seed.knownGroupCount;
+  const knownGroupSize = seed.knownGroupSize;
 
   return {
     number: seed.number,
@@ -182,8 +209,8 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
         ? 'Use the official floor-plan labels to compute each room area, compare the rooms, and add the room areas for the whole floor plan.'
         : hasMultipleAreaModels
         ? 'Complete each official rectangle model, label the side lengths, and write the matching area equation.'
-        : factorPair
-        ? `Build the source rectangle as ${factorPair.rows} rows of ${factorPair.columns} unit squares, then complete the workbook labels and area blanks.`
+        : seed.knownGroupCount && seed.knownGroupSize
+        ? 'Use the source rectangle workspace, measure or label the side lengths, then complete the workbook labels and area blanks.'
         : sourceSpecificBlankWorkspaceLabel({ number: seed.number, sourcePrompt: seed.sourcePrompt } as ProblemSetCenteredProblem)
     ],
     blankEquations: blankEquationTemplates(seed),
@@ -193,8 +220,8 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
       ? 'Use the official floor-plan side lengths; leave room areas blank until each rectangle is computed.'
       : hasMultipleAreaModels
       ? 'Each rectangle below represents one official area model from the problem.'
-      : factorPair
-      ? `Show ${factorPair.rows} rows and ${factorPair.columns} columns from the official area model.`
+      : seed.knownGroupCount && seed.knownGroupSize
+      ? 'Use the source rectangle workspace; students measure or label the side lengths before multiplying.'
       : sourceSpecificBlankWorkspaceLabel({ number: seed.number, sourcePrompt: seed.sourcePrompt } as ProblemSetCenteredProblem),
     blankVisualType,
     areaModels,
@@ -225,15 +252,17 @@ function createM4ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
   const sections: ProblemVisualSpec['sections'] = [];
   const sourceNote = solved
     ? 'Solved view uses the Module 4 Teacher Edition answer key with authored area visuals and unit checks.'
-    : 'Blank view keeps the official Problem Set workspace open with authored visuals and no source-page images.';
+    : 'Blank view keeps the authored area workspace open with the required figures, dimensions, and response blanks.';
 
   if (problem.patternBlockCover) {
     sections.push(...m4PatternBlockSections(problem, solved));
   } else if (problem.roomAreas?.length) {
-    sections.push(m4RoomAreaSection(problem, solved));
+    sections.push(...m4RoomAreaSections(problem, solved));
   } else if (problem.areaModels?.length) {
     sections.push(...m4AreaModelSections(problem, solved));
-  } else if (problem.blankVisualType === 'array-template' || problem.animationType === 'array-model') {
+  } else if (solved && sourceAreaModels(problem.equations, problem.unitLabel).length) {
+    sections.push(...m4SolvedEquationAreaSections(problem));
+  } else if (solved && (problem.blankVisualType === 'array-template' || problem.animationType === 'array-model')) {
     sections.push(...m4ArraySections(problem, solved));
   } else {
     sections.push(m4OpenWorkspaceSection(problem, solved));
@@ -252,7 +281,7 @@ function createM4ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
   });
 
   return {
-    title: `Problem ${problem.number}: ${m4VisualTitle(problem)}`,
+    title: `Problem ${problem.number}: ${m4VisualTitle(problem, solved)}`,
     sourceNote,
     sections
   };
@@ -280,23 +309,27 @@ function m4PatternBlockSections(problem: ProblemSetCenteredProblem, solved: bool
   const rows = cover.targets.map((target) => [
     target.label,
     target.shape,
-    solved ? `${target.count} ${m4PatternBlockUnitLabel(cover.unit, target.count)}` : `____ ${m4PatternBlockUnitLabel(cover.unit, target.count)}`
+    solved ? `${target.count} ${m4PatternBlockUnitLabel(cover.unit, target.count)}` : `____ ${m4PatternBlockUnitLabel(cover.unit, target.count)}`,
+    solved ? 'No gaps or overlaps' : 'Trace where blocks meet'
   ]);
 
   return [
     {
       kind: 'data-table',
       label: solved ? `${cover.unit} cover counts` : `${cover.unit} cover workspace`,
-      columns: ['Target', 'Official outline', 'Unit count'],
+      columns: ['Target', 'Official outline', 'Unit count', 'Area rule'],
       rows
     },
     {
       kind: 'array',
-      label: solved ? 'Visible unit count model' : 'Unit-count workspace',
+      label: solved ? 'Unit-count model' : 'Pattern-block count workspace',
       rows: cover.targets.length,
-      columns: boundedM4Count(Math.max(...cover.targets.map((target) => target.count)), 1, 12),
-      item: 'dot',
-      placeholder: solved ? undefined : ''
+      columns: solved ? Math.max(1, Math.min(12, Math.max(...cover.targets.map((target) => target.count)))) : 4,
+      item: 'pattern',
+      placeholder: solved ? undefined : '',
+      caption: solved
+        ? 'Each colored tile stands for one same-size pattern block covering the official outline.'
+        : 'Use the official outline, place same-size pattern blocks with no gaps or overlaps, then write the count.'
     }
   ];
 }
@@ -308,56 +341,132 @@ function m4PatternBlockUnitLabel(unit: ProblemSetPatternBlockCover['unit'], coun
   return unit === 'rhombus' ? 'rhombuses' : `${unit}s`;
 }
 
-function m4RoomAreaSection(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'][number] {
+function m4RoomAreaSections(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'] {
   const rooms = problem.roomAreas ?? [];
   const total = rooms.reduce((sum, room) => sum + room.area, 0);
-  return {
+  const floorPlan = {
+    ...M4_LESSON15_FLOOR_PLAN,
+    rooms: M4_LESSON15_FLOOR_PLAN.rooms.map((room) => ({
+      ...room,
+      tone: solved ? room.tone ?? 'given' : 'unknown'
+    })),
+    caption: solved
+      ? `Add the source-known room areas: ${rooms.map((room) => room.area).join(' + ')} = ${total} sq cm.`
+      : 'Use the room rectangles to write length x width for each room before filling the table.'
+  };
+  const table: ProblemVisualSpec['sections'][number] = {
     kind: 'data-table',
     label: solved ? 'Solved floor-plan room areas' : 'Blank floor-plan room area table',
-    columns: ['Room', 'Area', 'Check'],
-    rows: rooms.map((room) => [
-      room.label,
-      solved ? `${room.area} sq cm` : '____ sq cm',
-      solved ? `${room.label} contributes to ${total} sq cm total` : 'length x width = ____'
-    ])
+    columns: ['Room', 'Area', 'Strategy'],
+    rows: rooms.map((room) => {
+      const sourceRoom = M4_LESSON15_FLOOR_PLAN.rooms.find((candidate) => candidate.label === room.label);
+      const strategy = sourceRoom
+        ? `${sourceRoom.lengthLabel} x ${sourceRoom.widthLabel} = ${evaluate(`${sourceRoom.width} * ${sourceRoom.height}`)}`
+        : 'length x width';
+      return [
+        room.label,
+        solved ? `${room.area} sq cm` : '____ sq cm',
+        solved ? strategy : 'length x width = ____'
+      ];
+    })
   };
+  return [floorPlan, table];
 }
 
 function m4AreaModelSections(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'] {
-  return (problem.areaModels ?? []).flatMap((model) => [
-    {
-      kind: 'array' as const,
-      label: solved
-        ? `${model.label}: ${model.rows} x ${model.columns} = ${model.total ?? model.rows * model.columns}`
-        : `${model.label}: ${model.rows} by ${model.columns} area model`,
-      rows: boundedM4Count(model.rows, 1, 12),
-      columns: boundedM4Count(model.columns, 1, 12),
-      item: 'dot' as const,
-      placeholder: solved ? undefined : ''
-    }
-  ]);
+  const models = problem.areaModels ?? [];
+  if (models.length > 1) {
+    return [{
+      kind: 'card-grid',
+      label: solved ? 'Solved source area models' : 'Source rectangle workspaces',
+      cards: models.map((model) => ({
+        label: model.label,
+        sections: [m4AreaArraySection(model, solved)]
+      }))
+    }];
+  }
+
+  return models.map((model) => m4AreaArraySection(model, solved));
+}
+
+function m4SolvedEquationAreaSections(problem: ProblemSetCenteredProblem): ProblemVisualSpec['sections'] {
+  const models = sourceAreaModels(problem.equations, problem.unitLabel);
+  if (models.length > 1) {
+    return [{
+      kind: 'card-grid',
+      label: 'Teacher Edition equation models',
+      cards: models.map((model) => ({
+        label: model.label,
+        sections: [m4AreaArraySection(model, true)]
+      }))
+    }];
+  }
+
+  return models.map((model) => m4AreaArraySection(model, true));
 }
 
 function m4ArraySections(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'] {
   const factorPair = sourceFactorPair(problem.equations);
-  const rows = boundedM4Count(problem.knownGroupCount ?? factorPair?.rows, 1, 12);
-  const columns = boundedM4Count(problem.knownGroupSize ?? factorPair?.columns, 1, 12);
+  const rows = problem.knownGroupCount ?? factorPair?.rows ?? 1;
+  const columns = problem.knownGroupSize ?? factorPair?.columns ?? 1;
 
   return [
-    {
-      kind: 'array',
-      label: solved
-        ? `${rows} by ${columns} rectangle area`
-        : `${rows} by ${columns} rectangle workspace`,
+    m4AreaArraySection({
+      label: 'Rectangle',
       rows,
       columns,
-      item: 'dot',
-      placeholder: solved ? undefined : ''
-    }
+      unitLabel: problem.unitLabel,
+      total: rows * columns
+    }, solved)
   ];
 }
 
+function m4AreaArraySection(model: ProblemSetAreaModel, solved: boolean): ProblemVisualSpec['sections'][number] {
+  const total = model.total ?? model.rows * model.columns;
+  const display = m4DisplayDimensions(model.rows, model.columns);
+  const caption = display.compact
+    ? `Compact view of a ${model.rows} by ${model.columns} rectangle; use the side lengths and equation for the exact area.`
+    : solved
+    ? `${model.rows} rows x ${model.columns} columns = ${total} ${model.unitLabel ?? 'square units'}.`
+    : 'Each square tile is one area unit. Count rows and columns, then write the matching equation.';
+
+  return {
+    kind: 'array',
+    label: solved
+      ? `${model.label}: ${model.rows} x ${model.columns} = ${total}`
+      : `${model.label}: square-unit rectangle`,
+    rows: display.rows,
+    columns: display.columns,
+    item: 'square',
+    placeholder: solved ? undefined : '',
+    caption
+  };
+}
+
 function m4OpenWorkspaceSection(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'][number] {
+  const factorProduct = m4FactorProduct(problem.equations);
+  if (factorProduct) {
+    const dimensions = m4SampleFactorPair(factorProduct);
+    return {
+      kind: 'geometry-diagram',
+      label: solved ? `One valid rectangle for ${factorProduct} square units` : `Choose side lengths for ${factorProduct} square units`,
+      diagram: 'rectangle',
+      shapes: [{
+        label: solved ? `${dimensions.width} cm by ${dimensions.height} cm` : 'new room rectangle',
+        shape: 'rectangle',
+        x: 12,
+        y: 18,
+        width: 72,
+        height: 54,
+        sideLabels: solved ? [`${dimensions.width} cm`, `${dimensions.height} cm`] : ['____ cm', '____ cm'],
+        valueLabel: solved ? `${dimensions.width} x ${dimensions.height} = ${factorProduct} sq cm` : '____ x ____ = area',
+        tone: solved ? 'answer' : 'unknown'
+      }],
+      caption: solved
+        ? 'Teacher Edition accepts varied whole-number side lengths when their product matches the required room area.'
+        : 'Pick whole-number side lengths whose product equals the required area, then label the rectangle.'
+    };
+  }
   return {
     kind: 'data-table',
     label: solved ? 'Solved area workspace' : 'Blank area workspace',
@@ -372,20 +481,44 @@ function m4OpenWorkspaceSection(problem: ProblemSetCenteredProblem, solved: bool
   };
 }
 
+function m4FactorProduct(equations?: string[]): number | undefined {
+  for (const equation of equations ?? []) {
+    const match = equation.match(/product\s*=\s*(\d+)/i) ?? equation.match(/=\s*(\d+)\s*sq\s*cm/i);
+    if (match) {
+      return Number(match[1]);
+    }
+  }
+  return undefined;
+}
+
+function m4SampleFactorPair(product: number): { width: number; height: number } {
+  for (let factor = Math.floor(Math.sqrt(product)); factor >= 1; factor -= 1) {
+    if (product % factor === 0) {
+      return { width: product / factor, height: factor };
+    }
+  }
+  return { width: product, height: 1 };
+}
+
 function blankEquationTemplatesFromLines(equations?: string[]): string[] {
   const templates = (equations ?? []).map(blankEquationTemplate).filter((template): template is string => Boolean(template));
   return templates.length ? templates : ['____ = ____'];
 }
 
-function boundedM4Count(value: number | undefined, min: number, max: number): number {
-  if (!value || !Number.isFinite(value)) {
-    return min;
+function m4DisplayDimensions(rows: number, columns: number): { rows: number; columns: number; compact: boolean } {
+  if (rows > 0 && columns > 0 && rows * columns <= 160) {
+    return { rows, columns, compact: false };
   }
 
-  return Math.max(min, Math.min(max, Math.round(value)));
+  const scale = Math.sqrt(160 / Math.max(1, rows * columns));
+  return {
+    rows: Math.max(1, Math.round(rows * scale)),
+    columns: Math.max(1, Math.round(columns * scale)),
+    compact: true
+  };
 }
 
-function m4VisualTitle(problem: ProblemSetCenteredProblem): string {
+function m4VisualTitle(problem: ProblemSetCenteredProblem, solved: boolean): string {
   if (problem.patternBlockCover) {
     return `${problem.patternBlockCover.unit} pattern-block area`;
   }
@@ -395,10 +528,10 @@ function m4VisualTitle(problem: ProblemSetCenteredProblem): string {
   if (problem.areaModels?.length) {
     return `${problem.areaModels.length} area model${problem.areaModels.length === 1 ? '' : 's'}`;
   }
-  if (problem.quotient && problem.unitLabel) {
+  if (solved && problem.quotient && problem.unitLabel) {
     return `${problem.quotient} ${problem.unitLabel}`;
   }
-  return problem.sourcePrompt;
+  return 'source area workspace';
 }
 
 function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
@@ -663,11 +796,11 @@ export const M4_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     summary: 'Use rectangle area strategies to find each room and the whole floor plan.',
     sourceNote: `${sw}, Lesson 15 Problem Set, printed pages 65-67; ${te}, Lesson 15 Answer Key, printed pages 231-232.`,
     problems: [
-      { number: 1, sourcePrompt: 'Make a prediction: Which room looks like it has the biggest area?', solvedAnswer: 'Variable prediction. A correct response names one room from the official floor plan and is later checked against the measured room areas.', quotient: 1 },
-      { number: 2, sourcePrompt: 'Record the areas and show the strategy you used to find each area.', solvedAnswer: '60; 56; 42; 24; 25; 28; 88. Each strategy must decompose or multiply source room side lengths to produce the listed area.', equations: ['60 + 56 + 42 + 24 + 25 + 28 + 88 = 323'], quotient: 323, roomAreas: [{ label: 'Bedroom 1', area: 60 }, { label: 'Bedroom 2', area: 56 }, { label: 'Kitchen', area: 42 }, { label: 'Hallway', area: 24 }, { label: 'Bathroom', area: 25 }, { label: 'Dining Room', area: 28 }, { label: 'Living Room', area: 88 }] },
-      { number: 3, sourcePrompt: 'Which room has the biggest area? Was your prediction right? Why or why not?', solvedAnswer: 'The living room has the biggest area at 88 square centimeters. The prediction check is correct only if the original prediction named the living room.', quotient: 88 },
-      { number: 4, sourcePrompt: 'Find the side lengths of the house without using your ruler to measure them, and explain the process you used.', solvedAnswer: 'The house side lengths are 19 centimeters and 17 centimeters; the explanation must infer them from shared room side lengths in the official floor plan instead of measuring.', equations: ['side lengths = 19 cm and 17 cm'], quotient: 19 },
-      { number: 5, sourcePrompt: 'What is the area of the whole floor plan? How do you know?', solvedAnswer: 'The whole floor plan area is 323 square centimeters because the room areas add to 60 + 56 + 42 + 24 + 25 + 28 + 88 = 323.', equations: ['60 + 56 + 42 + 24 + 25 + 28 + 88 = 323'], quotient: 323 }
+      { number: 1, sourcePrompt: 'Make a prediction: Which room looks like it has the biggest area?', solvedAnswer: 'Variable prediction. A correct response names one room from the official floor plan and is later checked against the measured room areas.', quotient: 1, roomAreas: M4_LESSON15_ROOM_AREAS },
+      { number: 2, sourcePrompt: 'Record the areas and show the strategy you used to find each area.', solvedAnswer: '60; 56; 42; 24; 25; 28; 88. Each strategy must decompose or multiply source room side lengths to produce the listed area.', equations: ['60 + 56 + 42 + 24 + 25 + 28 + 88 = 323'], quotient: 323, roomAreas: M4_LESSON15_ROOM_AREAS },
+      { number: 3, sourcePrompt: 'Which room has the biggest area? Was your prediction right? Why or why not?', solvedAnswer: 'The living room has the biggest area at 88 square centimeters. The prediction check is correct only if the original prediction named the living room.', quotient: 88, roomAreas: M4_LESSON15_ROOM_AREAS },
+      { number: 4, sourcePrompt: 'Find the side lengths of the house without using your ruler to measure them, and explain the process you used.', solvedAnswer: 'The house side lengths are 19 centimeters and 17 centimeters; the explanation must infer them from shared room side lengths in the official floor plan instead of measuring.', equations: ['side lengths = 19 cm and 17 cm'], quotient: 19, roomAreas: M4_LESSON15_ROOM_AREAS },
+      { number: 5, sourcePrompt: 'What is the area of the whole floor plan? How do you know?', solvedAnswer: 'The whole floor plan area is 323 square centimeters because the room areas add to 60 + 56 + 42 + 24 + 25 + 28 + 88 = 323.', equations: ['60 + 56 + 42 + 24 + 25 + 28 + 88 = 323'], quotient: 323, roomAreas: M4_LESSON15_ROOM_AREAS }
     ]
   }),
   16: makeLesson({

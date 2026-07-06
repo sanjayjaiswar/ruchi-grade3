@@ -6,6 +6,7 @@
     "start": "ng serve --port 4220",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "validate:no-pdf-problem-tabs": "node scripts/validate-no-pdf-problem-tabs.mjs",
     "test": "ng test"
   },
   "private": true,
@@ -17,8 +18,11 @@
     "@angular/forms": "^21.2.0",
     "@angular/platform-browser": "^21.2.0",
     "@angular/router": "^21.2.0",
+    "@browser.style/analog-clock": "^1.0.4",
     "animejs": "^4.5.0",
+    "d3-scale": "^4.0.2",
     "echarts": "^6.1.0",
+    "mathjs": "^15.2.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
@@ -26,6 +30,7 @@
     "@angular/build": "^21.2.16",
     "@angular/cli": "^21.2.16",
     "@angular/compiler-cli": "^21.2.0",
+    "@types/d3-scale": "^4.0.9",
     "prettier": "^3.8.1",
     "typescript": "~5.9.2"
   }

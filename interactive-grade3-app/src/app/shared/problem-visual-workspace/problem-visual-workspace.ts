@@ -1,29 +1,59 @@
+import '@browser.style/analog-clock';
 import { NgClass, NgFor, NgIf } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { AfterViewChecked, Component, ElementRef, Input } from '@angular/core';
+import { animate, stagger } from 'animejs';
+import { scaleLinear } from 'd3-scale';
+import { TimeBoardComponent } from '../time-board/time-board';
 import type {
   ProblemVisualArraySection,
   ProblemVisualCardGridSection,
   ProblemVisualClockSection,
+  ProblemVisualDataChartSection,
   ProblemVisualDataTableSection,
   ProblemVisualEquationsSection,
+  ProblemVisualExpressionMatchSection,
+  ProblemVisualFractionStripSection,
+  ProblemVisualFloorPlanSection,
+  ProblemVisualGeometryDiagramSection,
+  ProblemVisualLinePlotSection,
+  ProblemVisualMeasurementModelSection,
   ProblemVisualNoteSection,
   ProblemVisualNumberLineSection,
   ProblemVisualRelatedFactsSection,
   ProblemVisualSection,
   ProblemVisualSpec,
   ProblemVisualStopwatchSection,
-  ProblemVisualTapeSection
+  ProblemVisualTapeSection,
+  ProblemVisualTimeLineSection
 } from '../../data/lessons/lesson-runtime.types';
 
 @Component({
   selector: 'app-problem-visual-workspace',
-  imports: [NgClass, NgFor, NgIf],
+  imports: [TimeBoardComponent, NgClass, NgFor, NgIf],
   templateUrl: './problem-visual-workspace.html',
   styleUrl: './problem-visual-workspace.css'
 })
-export class ProblemVisualWorkspaceComponent {
+export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
   @Input({ required: true }) spec?: ProblemVisualSpec;
   @Input() mode: 'blank' | 'solved' = 'blank';
+  private animationSignature = '';
+
+  constructor(private readonly elementRef: ElementRef<HTMLElement>) {}
+
+  visibleSections(sections: ProblemVisualSection[] = []): ProblemVisualSection[] {
+    return sections;
+  }
+
+  ngAfterViewChecked(): void {
+    this.updateLibraryClocks();
+    const signature = `${this.mode}|${this.spec?.title ?? ''}|${this.spec?.sections.map((section) => section.kind).join(',') ?? ''}`;
+    if (signature === this.animationSignature) {
+      return;
+    }
+
+    this.animationSignature = signature;
+    queueMicrotask(() => this.playWorkspaceAnimation());
+  }
 
   arraySection(section: ProblemVisualSection): ProblemVisualArraySection | undefined {
     return section.kind === 'array' ? section : undefined;
@@ -33,8 +63,28 @@ export class ProblemVisualWorkspaceComponent {
     return section.kind === 'related-facts' ? section : undefined;
   }
 
+  floorPlanSection(section: ProblemVisualSection): ProblemVisualFloorPlanSection | undefined {
+    return section.kind === 'floor-plan' ? section : undefined;
+  }
+
+  linePlotSection(section: ProblemVisualSection): ProblemVisualLinePlotSection | undefined {
+    return section.kind === 'line-plot' ? section : undefined;
+  }
+
+  dataChartSection(section: ProblemVisualSection): ProblemVisualDataChartSection | undefined {
+    return section.kind === 'data-chart' ? section : undefined;
+  }
+
+  geometryDiagramSection(section: ProblemVisualSection): ProblemVisualGeometryDiagramSection | undefined {
+    return section.kind === 'geometry-diagram' ? section : undefined;
+  }
+
   tapeSection(section: ProblemVisualSection): ProblemVisualTapeSection | undefined {
     return section.kind === 'tape' ? section : undefined;
+  }
+
+  fractionStripSection(section: ProblemVisualSection): ProblemVisualFractionStripSection | undefined {
+    return section.kind === 'fraction-strip' ? section : undefined;
   }
 
   cardGridSection(section: ProblemVisualSection): ProblemVisualCardGridSection | undefined {
@@ -45,12 +95,28 @@ export class ProblemVisualWorkspaceComponent {
     return section.kind === 'data-table' ? section : undefined;
   }
 
+  expressionMatchSection(section: ProblemVisualSection): ProblemVisualExpressionMatchSection | undefined {
+    return section.kind === 'expression-match' ? section : undefined;
+  }
+
   numberLineSection(section: ProblemVisualSection): ProblemVisualNumberLineSection | undefined {
     return section.kind === 'number-line' ? section : undefined;
   }
 
   clockSection(section: ProblemVisualSection): ProblemVisualClockSection | undefined {
     return section.kind === 'clock' ? section : undefined;
+  }
+
+  clockHasTime(clock: ProblemVisualClockSection): boolean {
+    return this.clockTimeParts(clock) !== undefined;
+  }
+
+  clockHour(clock: ProblemVisualClockSection): number {
+    return this.clockTimeParts(clock)?.hour ?? 12;
+  }
+
+  clockMinute(clock: ProblemVisualClockSection): number {
+    return this.clockTimeParts(clock)?.minute ?? 0;
   }
 
   equationsSection(section: ProblemVisualSection): ProblemVisualEquationsSection | undefined {
@@ -63,6 +129,14 @@ export class ProblemVisualWorkspaceComponent {
 
   stopwatchSection(section: ProblemVisualSection): ProblemVisualStopwatchSection | undefined {
     return section.kind === 'stopwatch-workspace' ? section : undefined;
+  }
+
+  timeLineSection(section: ProblemVisualSection): ProblemVisualTimeLineSection | undefined {
+    return section.kind === 'time-number-line' ? section : undefined;
+  }
+
+  measurementModelSection(section: ProblemVisualSection): ProblemVisualMeasurementModelSection | undefined {
+    return section.kind === 'measurement-model' ? section : undefined;
   }
 
   range(count: number, max = 160): number[] {
@@ -81,4 +155,234 @@ export class ProblemVisualWorkspaceComponent {
     const row = Math.floor(index / section.columns);
     return row === section.splitAfterRows;
   }
+
+  tapeBraceGridColumn(brace: NonNullable<ProblemVisualTapeSection['braces']>[number]): string {
+    const start = Math.max(0, Math.round(brace.startPart));
+    const span = Math.max(1, Math.round(brace.partCount));
+    return `${start + 1} / span ${span}`;
+  }
+
+  fractionStripColumns(section: ProblemVisualFractionStripSection): string {
+    return `repeat(${Math.max(1, section.denominator)}, minmax(42px, 1fr))`;
+  }
+
+  fractionStripIsShaded(section: ProblemVisualFractionStripSection, index: number): boolean {
+    return this.mode === 'solved' && index < Math.max(0, Math.min(section.numerator, section.denominator));
+  }
+
+  fractionStripCellLabel(section: ProblemVisualFractionStripSection, index: number): string {
+    if (!this.fractionStripIsShaded(section, index)) {
+      return '';
+    }
+    return section.unitLabel ?? `1/${section.denominator}`;
+  }
+
+
+  expressionMatchColumns(count: number): string {
+    return `repeat(${Math.max(1, count)}, minmax(110px, 1fr))`;
+  }
+
+  expressionMatchTop(
+    section: ProblemVisualExpressionMatchSection,
+    match: NonNullable<ProblemVisualExpressionMatchSection['matches']>[number]
+  ): string {
+    return section.topItems[match.topIndex] ?? '';
+  }
+
+  expressionMatchBottom(
+    section: ProblemVisualExpressionMatchSection,
+    match: NonNullable<ProblemVisualExpressionMatchSection['matches']>[number]
+  ): string {
+    return section.bottomItems[match.bottomIndex] ?? '';
+  }
+
+  measurementFill(section: ProblemVisualMeasurementModelSection, value: NonNullable<ProblemVisualMeasurementModelSection['values']>[number]): string {
+    if (value.value === undefined) {
+      return '0%';
+    }
+
+    const max = section.maxValue && section.maxValue > 0 ? section.maxValue : Math.max(1, value.value);
+    return `${Math.max(0, Math.min(100, value.value / max * 100))}%`;
+  }
+
+  floorRoomLeft(plan: ProblemVisualFloorPlanSection, room: ProblemVisualFloorPlanSection['rooms'][number]): number {
+    return this.percentScale(plan.widthUnits)(room.x);
+  }
+
+  floorRoomTop(plan: ProblemVisualFloorPlanSection, room: ProblemVisualFloorPlanSection['rooms'][number]): number {
+    return this.percentScale(plan.heightUnits)(room.y);
+  }
+
+  floorRoomWidth(plan: ProblemVisualFloorPlanSection, room: ProblemVisualFloorPlanSection['rooms'][number]): number {
+    return this.percentScale(plan.widthUnits)(room.width);
+  }
+
+  floorRoomHeight(plan: ProblemVisualFloorPlanSection, room: ProblemVisualFloorPlanSection['rooms'][number]): number {
+    return this.percentScale(plan.heightUnits)(room.height);
+  }
+
+  linePlotColumns(section: ProblemVisualLinePlotSection): string {
+    return `repeat(${Math.max(1, section.values.length)}, minmax(42px, 1fr))`;
+  }
+
+  linePlotXs(section: ProblemVisualLinePlotSection, item: ProblemVisualLinePlotSection['values'][number]): number[] {
+    if (this.mode === 'blank' && !section.showBlankValues) {
+      return [0];
+    }
+    const maxValue = Math.max(1, ...section.values.map((value) => value.value ?? 0));
+    const scale = scaleLinear().domain([0, maxValue]).range([0, Math.min(maxValue, 12)]);
+    const count = Math.round(scale(item.value ?? 0));
+    return this.range(Math.max(this.mode === 'blank' ? 1 : 0, count), 12);
+  }
+
+  chartValueLabel(section: ProblemVisualDataChartSection, item: ProblemVisualDataChartSection['values'][number]): string {
+    if (this.mode === 'blank' && !section.showBlankValues) {
+      return item.valueLabel ?? '____';
+    }
+    if (item.value !== undefined) {
+      return String(item.value);
+    }
+    return item.valueLabel ?? '____';
+  }
+
+  chartBarWidth(section: ProblemVisualDataChartSection, item: ProblemVisualDataChartSection['values'][number]): string {
+    if (this.mode === 'blank' && !section.showBlankValues) {
+      return '18%';
+    }
+    const max = section.maxValue && section.maxValue > 0
+      ? section.maxValue
+      : Math.max(1, ...section.values.map((value) => value.value ?? 0));
+    return `${Math.max(6, Math.min(100, ((item.value ?? 0) / max) * 100))}%`;
+  }
+
+  chartSymbols(section: ProblemVisualDataChartSection, item: ProblemVisualDataChartSection['values'][number]): number[] {
+    if (this.mode === 'blank' && !section.showBlankValues) {
+      return [0, 1, 2];
+    }
+    const unit = Math.max(1, section.unitSize ?? 1);
+    const count = item.value === undefined ? 0 : Math.ceil(item.value / unit);
+    return this.range(Math.max(this.mode === 'blank' ? 1 : 0, count), 24);
+  }
+
+  chartTallyGroups(section: ProblemVisualDataChartSection, item: ProblemVisualDataChartSection['values'][number]): number[] {
+    if (this.mode === 'blank' && !section.showBlankValues) {
+      return [0];
+    }
+    return this.range(Math.max(this.mode === 'blank' ? 1 : 0, Math.ceil((item.value ?? 0) / 5)), 8);
+  }
+
+  geometryShapeLeft(shape: ProblemVisualGeometryDiagramSection['shapes'][number]): number {
+    return shape.x;
+  }
+
+  geometryShapeTop(shape: ProblemVisualGeometryDiagramSection['shapes'][number]): number {
+    return shape.y;
+  }
+
+  geometryShapeWidth(shape: ProblemVisualGeometryDiagramSection['shapes'][number]): number {
+    return shape.width;
+  }
+
+  geometryShapeHeight(shape: ProblemVisualGeometryDiagramSection['shapes'][number]): number {
+    return shape.height;
+  }
+
+  private playWorkspaceAnimation(): void {
+    const host = this.elementRef.nativeElement;
+    const sections = Array.from(host.querySelectorAll<HTMLElement>('.visual-section'));
+    const arrayCells = Array.from(host.querySelectorAll<HTMLElement>('.visual-array span'));
+    const tapeParts = Array.from(host.querySelectorAll<HTMLElement>('.visual-tape span, .visual-fraction-strip span'));
+    const matchCards = Array.from(host.querySelectorAll<HTMLElement>('.visual-expression-match-row span, .visual-expression-match-key span'));
+    const tableRows = Array.from(host.querySelectorAll<HTMLElement>('.visual-data-row:not(.is-head)'));
+    const equations = Array.from(host.querySelectorAll<HTMLElement>('.visual-equations span'));
+    const measurementItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-measurement .measurement-bars span, .visual-measurement .measurement-liquid .liquid-vessel, .visual-measurement .measurement-conversion span, .visual-measurement .measurement-rounding span, .visual-measurement .measurement-operation span'));
+    const diagramItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-floor-room, .visual-line-plot-x, .visual-geometry-shape'));
+
+    animate(sections, {
+      opacity: [0, 1],
+      translateY: [10, 0],
+      duration: 320,
+      delay: stagger(45),
+      ease: 'out(2)'
+    });
+
+    animate(arrayCells, {
+      opacity: [0, 1],
+      scale: [0.6, 1],
+      duration: 420,
+      delay: stagger(16, { from: 'first' }),
+      ease: 'out(3)'
+    });
+
+    animate(tapeParts, {
+      opacity: [0, 1],
+      scaleX: [0.72, 1],
+      duration: 360,
+      delay: stagger(28),
+      ease: 'out(2)'
+    });
+
+    animate(matchCards, {
+      opacity: [0, 1],
+      translateY: [8, 0],
+      duration: 340,
+      delay: stagger(24),
+      ease: 'out(2)'
+    });
+
+    animate([...tableRows, ...equations, ...measurementItems], {
+      opacity: [0, 1],
+      translateX: [-8, 0],
+      duration: 320,
+      delay: stagger(24),
+      ease: 'out(2)'
+    });
+
+    animate(diagramItems, {
+      opacity: [0, 1],
+      scale: [0.82, 1],
+      duration: 420,
+      delay: stagger(22),
+      ease: 'out(3)'
+    });
+  }
+
+  private percentScale(max: number): (value: number) => number {
+    return scaleLinear().domain([0, Math.max(1, max)]).range([0, 100]).clamp(true);
+  }
+
+  private updateLibraryClocks(): void {
+    this.elementRef.nativeElement.querySelectorAll<HTMLElement>('.workspace-library-clock[data-hour][data-minute]').forEach((host) => {
+      if (!host.querySelector('analog-clock')) {
+        host.innerHTML = '<analog-clock aria-hidden="true" indices marker="·" marker-hour="●" numerals="12"></analog-clock>';
+      }
+      const clock = host.querySelector<HTMLElement>('analog-clock');
+      if (!clock) {
+        return;
+      }
+      clock.style.setProperty('--_dh', this.clockHourDelay(Number(host.dataset['hour'] ?? 12), Number(host.dataset['minute'] ?? 0)));
+      clock.style.setProperty('--_dm', this.clockMinuteDelay(Number(host.dataset['minute'] ?? 0)));
+      clock.style.setProperty('--_ds', '0s');
+    });
+  }
+
+  private clockTimeParts(clock: ProblemVisualClockSection): { hour: number; minute: number } | undefined {
+    const match = clock.timeLabel.match(/\b(\d{1,2}):(\d{2})\b/);
+    if (!match) {
+      return undefined;
+    }
+    return {
+      hour: Number(match[1]),
+      minute: Number(match[2])
+    };
+  }
+
+  private clockHourDelay(hour: number, minute: number): string {
+    return `${-3600 * (hour % 12) - 60 * minute}s`;
+  }
+
+  private clockMinuteDelay(minute: number): string {
+    return `${-60 * minute}s`;
+  }
+
 }

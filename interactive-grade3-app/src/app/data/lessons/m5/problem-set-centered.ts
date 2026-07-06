@@ -825,7 +825,7 @@ function solvedAnswerFromModels(prompt: string, fractionModels: ProblemSetFracti
     const model = fractionModels[0];
     return `Partition the whole into ${model.denominator} equal parts and shade ${model.numerator} ${DENOMINATOR_LABELS[model.denominator] ?? 'fractional units'}.`;
   }
-  return `Use the official prompt structure to partition the whole, label the requested fractional unit, and answer this item: ${firstPromptSentence(prompt)}`;
+  return `Build the fraction model named in the prompt, identify the whole, partition it into equal parts, and answer this item: ${firstPromptSentence(prompt)}`;
 }
 
 function firstPromptSentence(prompt: string): string {
@@ -841,6 +841,85 @@ function sourceSpecificBlankWorkspaceLabel(problemNumber: number, prompt: string
   return `Use this official Problem ${problemNumber} ${model} workspace: ${firstPromptSentence(prompt)}`;
 }
 
+function m5FallbackFractionModels(lessonNumber: number, problemNumber: number, prompt: string): ProblemSetFractionModel[] {
+  if (lessonNumber === 2 && problemNumber === 1) {
+    return [
+      { label: 'folded into equal halves', numerator: 1, denominator: 2 },
+      { label: 'folded into equal thirds', numerator: 1, denominator: 3 },
+      { label: 'folded into equal fourths', numerator: 1, denominator: 4 }
+    ];
+  }
+
+  if (lessonNumber === 2 && problemNumber === 2) {
+    return [
+      { label: 'strip a: equal parts shaded', numerator: 1, denominator: 2 },
+      { label: 'strip b: equal parts shaded', numerator: 1, denominator: 3 },
+      { label: 'strip c: equal parts shaded', numerator: 1, denominator: 4 },
+      { label: 'strip d: equal parts shaded', numerator: 1, denominator: 6 }
+    ];
+  }
+
+  if (lessonNumber === 3) {
+    if (problemNumber === 1) {
+      return [
+        { label: 'fourths: 2 shaded', numerator: 2, denominator: 4 },
+        { label: 'thirds: count shaded units', numerator: 1, denominator: 3 },
+        { label: 'sixths: count shaded units', numerator: 1, denominator: 6 }
+      ];
+    }
+    if (problemNumber === 4) {
+      return [
+        { label: '1 half', numerator: 1, denominator: 2 },
+        { label: '1 sixth', numerator: 1, denominator: 6 },
+        { label: '1 third', numerator: 1, denominator: 3 }
+      ];
+    }
+    if (problemNumber === 6) {
+      return [{ label: 'Charlotte and 4 friends: each share', numerator: 1, denominator: 5 }];
+    }
+    return [
+      { label: 'area model halves', numerator: 1, denominator: 2 },
+      { label: 'area model thirds', numerator: 1, denominator: 3 },
+      { label: 'area model fourths', numerator: 1, denominator: 4 }
+    ];
+  }
+
+  if (lessonNumber >= 4 && lessonNumber <= 9) {
+    const denominator = inferDenominator(prompt, lessonNumber);
+    const numerator = inferNumerator(prompt, denominator);
+    return [
+      {
+        label: `${numerator} ${DENOMINATOR_LABELS[denominator] ?? `${denominator} equal parts`}`,
+        numerator,
+        denominator
+      }
+    ];
+  }
+
+  if (lessonNumber >= 10 && lessonNumber <= 13) {
+    return [
+      { label: 'first unit fraction', numerator: 1, denominator: 3 },
+      { label: 'second unit fraction', numerator: 1, denominator: 6 }
+    ];
+  }
+
+  if (lessonNumber >= 20 && lessonNumber <= 27) {
+    return [
+      { label: '1 half', numerator: 1, denominator: 2 },
+      { label: '2 fourths', numerator: 2, denominator: 4 }
+    ];
+  }
+
+  if (lessonNumber >= 28 && lessonNumber <= 29) {
+    return [
+      { label: 'same numerator: 2 thirds', numerator: 2, denominator: 3 },
+      { label: 'same numerator: 2 sixths', numerator: 2, denominator: 6 }
+    ];
+  }
+
+  return [];
+}
+
 function makeProblem(lessonNumber: number, sourceProblem: M5WorkbookProblem & { equations?: string[] }): ProblemSetCenteredProblem {
   const override = M5_OVERRIDES[lessonNumber]?.[sourceProblem.number];
   const denominator = inferDenominator(sourceProblem.prompt, lessonNumber);
@@ -852,7 +931,9 @@ function makeProblem(lessonNumber: number, sourceProblem: M5WorkbookProblem & { 
     ? 'number-line-template'
     : 'fraction-strip-template';
   const model = modelName(animationType);
-  const fractionModels = override?.fractionModels ?? fractionsFromPrompt(sourceProblem.prompt);
+  const parsedFractionModels = fractionsFromPrompt(sourceProblem.prompt);
+  const fractionModels = override?.fractionModels
+    ?? (parsedFractionModels.length ? parsedFractionModels : m5FallbackFractionModels(lessonNumber, sourceProblem.number, sourceProblem.prompt));
   const numberLineModels = override?.numberLineModels ?? numberLineModelsFromPrompt(sourceProblem.prompt, lessonNumber, fractionModels);
   const equations = sourceProblem.equations?.length
     ? sourceProblem.equations
@@ -897,7 +978,7 @@ function createM5ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
   const sections: ProblemVisualSpec['sections'] = [];
   const sourceNote = solved
     ? 'Solved view uses the Module 5 Teacher Edition answer key with authored fraction visuals and whole/unit checks.'
-    : 'Blank view keeps the official Problem Set fraction workspace open with no source-page images or solved answer leakage.';
+    : 'Blank view keeps the authored fraction workspace open with the whole, equal-part structure, labels, and response blanks.';
 
   if (problem.concreteFractionModel) {
     sections.push(...m5ConcreteFractionSections(problem.concreteFractionModel, solved));
@@ -1046,14 +1127,12 @@ function m5FractionTapeSection(model: ProblemSetFractionModel, solved: boolean):
   const denominator = boundedM5Count(model.denominator, 1, 12);
   const numerator = boundedM5Count(model.numerator, 0, denominator);
   return {
-    kind: 'tape',
+    kind: 'fraction-strip',
     label: solved ? `Solved ${model.label}` : `Blank ${model.label} fraction model`,
-    totalLabel: '1 whole',
-    parts: Array.from({ length: denominator }, (_, index) => ({
-      label: solved ? index < numerator ? `1/${denominator}` : '' : '?',
-      emphasize: solved && index < numerator,
-      muted: solved && index >= numerator
-    })),
+    wholeLabel: '1 whole',
+    numerator,
+    denominator,
+    unitLabel: `1/${denominator}`,
     caption: solved
       ? `${numerator}/${denominator} is ${numerator} of ${denominator} equal parts.`
       : `Partition the same whole into ${denominator} equal parts before naming or shading the fraction.`
@@ -1098,6 +1177,63 @@ function m5VisualTitle(problem: ProblemSetCenteredProblem): string {
   return 'fraction workspace';
 }
 
+function m5LessonConceptCopy(lessonNumber: number, objective: string): Pick<ProblemSetCenteredLesson, 'concept' | 'contrast' | 'summary'> {
+  if (lessonNumber <= 2) {
+    return {
+      concept: `Use the Lesson ${lessonNumber} fraction-strip and concrete-whole work to make equal parts before naming any fraction.`,
+      contrast: 'First name the whole strip, beaker amount, paper, or object; then check that the parts are equal.',
+      summary: 'Fractions in this lesson come from a fixed whole that is partitioned into equal parts.'
+    };
+  }
+  if (lessonNumber <= 9) {
+    return {
+      concept: `Use the Lesson ${lessonNumber} area models to partition whole shapes, shade or count unit fractions, and name the fractional amount.`,
+      contrast: 'The whole shape must be visible, and equal areas must be shown before the fraction is named.',
+      summary: 'Pictorial area models prove how many equal parts make the whole and how many are selected.'
+    };
+  }
+  if (lessonNumber <= 13) {
+    return {
+      concept: `Use the Lesson ${lessonNumber} models to specify the whole and compare unit fractions within that same whole.`,
+      contrast: 'Keep the whole fixed; changing the whole changes the meaning of the unit fraction.',
+      summary: 'Unit fractions are only comparable when the whole and the equal-part structure are clear.'
+    };
+  }
+  if (lessonNumber <= 15) {
+    return {
+      concept: `Use the Lesson ${lessonNumber} number-line work to partition the 0-to-1 interval and place fractions by counting equal intervals from 0.`,
+      contrast: 'Count intervals, not tick marks, and label 0 and 1 before placing the fraction.',
+      summary: 'Fractions on the number line are distances from 0 across one unit interval.'
+    };
+  }
+  if (lessonNumber <= 17) {
+    return {
+      concept: `Use the Lesson ${lessonNumber} extended number-line work to place whole-number fractions and fractions between whole numbers.`,
+      contrast: 'Repeat the same fractional unit across each whole interval before placing fractions greater than 1.',
+      summary: 'Fractions beyond 1 are located by counting equal units across multiple whole intervals.'
+    };
+  }
+  if (lessonNumber <= 19) {
+    return {
+      concept: `Use the Lesson ${lessonNumber} number-line comparison work to compare positions by distance from 0.`,
+      contrast: 'Place both values on the same number line before writing <, >, or =.',
+      summary: 'The fraction farther to the right on the same number line is greater.'
+    };
+  }
+  if (lessonNumber <= 27) {
+    return {
+      concept: `Use the Lesson ${lessonNumber} equivalence models to show the same amount with different fractional units.`,
+      contrast: 'Equivalent fractions must use the same whole and line up at the same amount or point.',
+      summary: 'Different fraction names can describe the same amount when the unit is changed consistently.'
+    };
+  }
+  return {
+    concept: `Use the Lesson ${lessonNumber} comparison model to prove the relationship in the Problem Set.`,
+    contrast: 'Use the same whole or same number line before comparing fraction sizes.',
+    summary: objective
+  };
+}
+
 function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
   if (lessonNumber === 1) {
     return makeLesson1();
@@ -1113,6 +1249,7 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
     : (source?.problems ?? []);
   const sourcePageImages = teacherEditionLessonPages(source?.teacherEditionSource ?? '');
   const answerKeyImages = M5_ANSWER_KEY_SOURCE_PAGES[lessonNumber] ?? [];
+  const conceptCopy = m5LessonConceptCopy(lessonNumber, objective);
   const problems = (sourceProblems.length ? sourceProblems : [
     {
       number: 1,
@@ -1132,10 +1269,10 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
   });
   return {
     title: `Lesson ${lessonNumber} concept: ${objective}`,
-    concept: `Build the official Problem Set with interactive fraction models. The workbook prompt supplies the task; the model below preserves the lesson focus on equal parts, named wholes, fraction strips, and number lines.`,
+    concept: conceptCopy.concept,
     teacherEditionBasis: source?.teacherEditionSource ?? `Module 5 Teacher Edition, Lesson ${lessonNumber}.`,
-    contrast: 'Before solving, identify the whole and the equal parts. When comparing or finding equivalence, keep the whole and unit interval consistent.',
-    summary: 'A fraction only makes sense after the whole is named and partitioned into equal parts. Use the official Problem Set model to justify the fraction, comparison, equivalence, or number-line location.',
+    contrast: conceptCopy.contrast,
+    summary: conceptCopy.summary,
     sourceNote: source?.studentWorkbookSource ?? `Module 5 student workbook, Lesson ${lessonNumber}.`,
     sourcePageImages,
     blankSourcePageImages: sourcePageImages,

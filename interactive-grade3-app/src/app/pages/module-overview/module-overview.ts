@@ -1,11 +1,14 @@
+import '@browser.style/analog-clock';
 import { NgFor, NgIf, NgStyle, NgSwitch, NgSwitchCase } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { AfterViewChecked, AfterViewInit, Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { animate, stagger } from 'animejs';
 import * as echarts from 'echarts';
 import type { ECharts, EChartsOption } from 'echarts';
 import { findModule, lessonTitle } from '../../data/curriculum.data';
 import { ModuleMeta } from '../../data/curriculum.types';
+import { MODULE_CONCEPT_FRAMES, ModuleConceptFrame } from '../../data/module-concept-frames';
 
 type ModuleConcept = {
   term: string;
@@ -45,10 +48,11 @@ type VocabularyComparisonRow = {
 @Component({
   selector: 'app-module-overview-page',
   imports: [NgFor, NgIf, NgStyle, NgSwitch, NgSwitchCase, RouterLink],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './module-overview.html',
   styleUrl: './module-overview.css'
 })
-export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
+export class ModuleOverviewPage implements OnInit, AfterViewInit, AfterViewChecked, OnDestroy {
   @ViewChild('moduleOneConceptChart') private moduleOneConceptChart?: ElementRef<HTMLDivElement>;
   module?: ModuleMeta;
   activeModuleTab = 'concepts';
@@ -169,6 +173,7 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
       answerName: 'quotient'
     }
   ];
+  readonly moduleConceptFrames: Record<string, ModuleConceptFrame> = MODULE_CONCEPT_FRAMES;
   private readonly moduleConcepts: Record<string, ModuleConcept[]> = {
     m1: [],
     m2: [
@@ -323,10 +328,12 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
   ];
   private conceptChart?: ECharts;
   private readonly conceptChartResizeHandler = () => this.conceptChart?.resize();
+  private animationSignature = '';
 
   constructor(
     private readonly route: ActivatedRoute,
-    private readonly title: Title
+    private readonly title: Title,
+    private readonly elementRef: ElementRef<HTMLElement>
   ) {}
 
   ngOnInit(): void {
@@ -348,6 +355,35 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
     if (typeof window !== 'undefined') {
       window.addEventListener('resize', this.conceptChartResizeHandler);
     }
+  }
+
+  ngAfterViewChecked(): void {
+    this.updateModuleSpineClocks();
+
+    const signature = `${this.module?.id ?? ''}|${this.activeModuleTab}`;
+    if (signature === this.animationSignature) {
+      return;
+    }
+
+    this.animationSignature = signature;
+    queueMicrotask(() => this.playModuleConceptAnimation());
+  }
+
+  private updateModuleSpineClocks(): void {
+    this.elementRef.nativeElement.querySelectorAll<HTMLElement>('.spine-clock').forEach((host) => {
+      if (!host.querySelector('analog-clock')) {
+        host.innerHTML = '<analog-clock aria-hidden="true" indices marker="." marker-hour="●" numerals="12"></analog-clock>';
+      }
+      const clock = host.querySelector<HTMLElement>('analog-clock');
+      if (!clock) {
+        return;
+      }
+      const hour = Number(host.dataset['hour'] ?? 7);
+      const minute = Number(host.dataset['minute'] ?? 35);
+      clock.style.setProperty('--_dh', `${-3600 * (hour % 12) - 60 * minute}s`);
+      clock.style.setProperty('--_dm', `${-60 * minute}s`);
+      clock.style.setProperty('--_ds', '0s');
+    });
   }
 
   ngOnDestroy(): void {
@@ -375,6 +411,14 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
 
   concepts(): ModuleConcept[] {
     return this.module ? this.moduleConcepts[this.module.id] ?? [] : [];
+  }
+
+  moduleConceptFrame(): ModuleConceptFrame | undefined {
+    return this.module ? this.moduleConceptFrames[this.module.id] : undefined;
+  }
+
+  moduleFrameSlots(count: number, max = 42): number[] {
+    return Array.from({ length: Math.min(Math.max(0, count), max) }, (_, index) => index + 1);
   }
 
   showModuleOneConceptMap(): boolean {
@@ -473,6 +517,37 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
     this.conceptChart ??= echarts.init(chartElement);
     this.conceptChart.setOption(this.moduleOneConceptChartOption(), true);
     this.conceptChart.resize();
+  }
+
+  private playModuleConceptAnimation(): void {
+    const host = this.elementRef.nativeElement;
+    const panels = Array.from(host.querySelectorAll<HTMLElement>('.section-panel, .hero-band'));
+    const concepts = Array.from(host.querySelectorAll<HTMLElement>('.module-spine-panel, .module-concept-card, .concept-cluster-card, .topic-overview-card, .topic-card'));
+    const visuals = Array.from(host.querySelectorAll<HTMLElement>('.module-spine-visual span, .module-spine-visual i, .module-spine-visual b, .concept-visual i, .concept-visual span, .concept-visual strong, .snapshot-card, .chip'));
+
+    animate(panels, {
+      opacity: [0, 1],
+      translateY: [12, 0],
+      duration: 340,
+      delay: stagger(40),
+      ease: 'out(2)'
+    });
+
+    animate(concepts, {
+      opacity: [0, 1],
+      translateY: [14, 0],
+      duration: 380,
+      delay: stagger(55),
+      ease: 'out(3)'
+    });
+
+    animate(visuals, {
+      opacity: [0, 1],
+      scale: [0.75, 1],
+      duration: 360,
+      delay: stagger(18),
+      ease: 'out(2)'
+    });
   }
 
   private moduleOneConceptChartOption(): EChartsOption {
@@ -626,8 +701,10 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, OnDestroy {
             }
           },
           expandAndCollapse: false,
-          animationDuration: 450,
-          animationDurationUpdate: 450,
+          animation: true,
+          animationEasing: 'cubicOut',
+          animationDuration: 900,
+          animationDurationUpdate: 650,
           emphasis: {
             focus: 'descendant',
             lineStyle: {

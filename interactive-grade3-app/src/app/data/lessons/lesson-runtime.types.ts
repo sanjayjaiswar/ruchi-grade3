@@ -78,6 +78,11 @@ export type LessonAnimationModel = {
   fractionShadedCount?: number;
   graphBars?: { label: string; value: number }[];
   geometryLabels?: string[];
+  conceptSteps?: Array<{
+    label: string;
+    action: string;
+    result: string;
+  }>;
   focus: string[];
 };
 
@@ -244,12 +249,82 @@ export type ProblemSetRoomArea = {
   area: number;
 };
 
+export type ProblemVisualFloorPlanSection = {
+  kind: 'floor-plan';
+  label?: string;
+  widthUnits: number;
+  heightUnits: number;
+  rooms: Array<{
+    label: string;
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+    area?: number;
+    lengthLabel?: string;
+    widthLabel?: string;
+    tone?: 'given' | 'target' | 'answer' | 'unknown';
+  }>;
+  caption?: string;
+};
+
+export type ProblemVisualLinePlotSection = {
+  kind: 'line-plot';
+  label?: string;
+  values: Array<{
+    label: string;
+    value?: number;
+    valueLabel?: string;
+    target?: boolean;
+  }>;
+  axisLabel?: string;
+  keyLabel?: string;
+  showBlankValues?: boolean;
+  caption?: string;
+};
+
+export type ProblemVisualDataChartSection = {
+  kind: 'data-chart';
+  chart: 'bar' | 'picture' | 'tally';
+  label?: string;
+  values: Array<{
+    label: string;
+    value?: number;
+    valueLabel?: string;
+    target?: boolean;
+  }>;
+  maxValue?: number;
+  unitSize?: number;
+  scaleLabel?: string;
+  keyLabel?: string;
+  showBlankValues?: boolean;
+  caption?: string;
+};
+
+export type ProblemVisualGeometryDiagramSection = {
+  kind: 'geometry-diagram';
+  label?: string;
+  diagram: 'rectangle' | 'polygon' | 'perimeter' | 'circle-string' | 'robot' | 'one-half' | 'composite';
+  shapes: Array<{
+    label: string;
+    shape: 'rectangle' | 'square' | 'circle' | 'polygon' | 'l-shape' | 'triangle';
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+    sideLabels?: string[];
+    valueLabel?: string;
+    tone?: 'given' | 'target' | 'answer' | 'unknown';
+  }>;
+  caption?: string;
+};
+
 export type ProblemVisualArraySection = {
   kind: 'array';
   label?: string;
   rows: number;
   columns: number;
-  item: 'dot' | 'butterfly' | 'circle' | 'glass';
+  item: 'dot' | 'butterfly' | 'circle' | 'glass' | 'square' | 'pattern';
   mode?: 'blank' | 'solved';
   placeholder?: string;
   rowLabels?: string[];
@@ -276,6 +351,21 @@ export type ProblemVisualTapeSection = {
     emphasize?: boolean;
     muted?: boolean;
   }>;
+  braces?: Array<{
+    label: string;
+    startPart: number;
+    partCount: number;
+  }>;
+  caption?: string;
+};
+
+export type ProblemVisualFractionStripSection = {
+  kind: 'fraction-strip';
+  label?: string;
+  wholeLabel: string;
+  numerator: number;
+  denominator: number;
+  unitLabel?: string;
   caption?: string;
 };
 
@@ -290,6 +380,22 @@ export type ProblemVisualDataTableSection = {
   label?: string;
   columns: string[];
   rows: string[][];
+};
+
+export type ProblemVisualExpressionMatchSection = {
+  kind: 'expression-match';
+  label?: string;
+  topLabel?: string;
+  bottomLabel?: string;
+  topItems: string[];
+  bottomItems: string[];
+  matches?: Array<{
+    topIndex: number;
+    bottomIndex: number;
+    label?: string;
+  }>;
+  showMatches?: boolean;
+  note?: string;
 };
 
 export type ProblemVisualNumberLineSection = {
@@ -338,6 +444,59 @@ export type ProblemVisualStopwatchSection = {
   note?: string;
 };
 
+export type ProblemVisualTimeLinePoint = {
+  label: string;
+  minute: number;
+  detail?: string;
+  open?: boolean;
+};
+
+export type ProblemVisualTimeLineJump = {
+  label: string;
+  fromMinute: number;
+  toMinute: number;
+};
+
+export type ProblemVisualTimeLineSourceItem = {
+  label: string;
+  minute?: number;
+  detail?: string;
+  kind?: 'digital' | 'analog' | 'note';
+  status?: 'matched' | 'unmatched' | 'provided';
+};
+
+export type ProblemVisualTimeLineSection = {
+  kind: 'time-number-line';
+  label?: string;
+  startLabel: string;
+  endLabel: string;
+  displayStartMinute?: number;
+  displayEndMinute?: number;
+  tickLabels: string[];
+  sourceItems?: ProblemVisualTimeLineSourceItem[];
+  points?: ProblemVisualTimeLinePoint[];
+  jumps?: ProblemVisualTimeLineJump[];
+  note?: string;
+};
+
+export type ProblemVisualMeasurementModelSection = {
+  kind: 'measurement-model';
+  label?: string;
+  model: 'mass' | 'liquid' | 'conversion' | 'rounding' | 'operation';
+  unitLabel?: string;
+  referenceLabel?: string;
+  equation?: string;
+  maxValue?: number;
+  values?: Array<{
+    label: string;
+    value?: number;
+    valueLabel?: string;
+    tone?: 'given' | 'target' | 'answer' | 'estimate' | 'benchmark';
+  }>;
+  steps?: string[];
+  note?: string;
+};
+
 export type ProblemVisualCardGridSection = {
   kind: 'card-grid';
   label?: string;
@@ -349,14 +508,22 @@ export type ProblemVisualCardGridSection = {
 
 export type ProblemVisualSection =
   | ProblemVisualArraySection
+  | ProblemVisualFloorPlanSection
+  | ProblemVisualLinePlotSection
+  | ProblemVisualDataChartSection
+  | ProblemVisualGeometryDiagramSection
   | ProblemVisualRelatedFactsSection
   | ProblemVisualTapeSection
+  | ProblemVisualFractionStripSection
   | ProblemVisualDataTableSection
+  | ProblemVisualExpressionMatchSection
   | ProblemVisualNumberLineSection
   | ProblemVisualClockSection
   | ProblemVisualEquationsSection
   | ProblemVisualNoteSection
   | ProblemVisualStopwatchSection
+  | ProblemVisualTimeLineSection
+  | ProblemVisualMeasurementModelSection
   | ProblemVisualCardGridSection;
 
 export type ProblemVisualSpec = {

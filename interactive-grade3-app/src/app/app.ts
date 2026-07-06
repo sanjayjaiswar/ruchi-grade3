@@ -1,5 +1,6 @@
 import { NgFor, NgIf, NgStyle } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs';
 import { lessonTitle, MODULES } from './data/curriculum.data';
@@ -179,7 +180,7 @@ type LessonNavItem = {
 
 @Component({
   selector: 'app-root',
-  imports: [NgFor, NgIf, NgStyle, RouterLink, RouterLinkActive, RouterOutlet],
+  imports: [FormsModule, NgFor, NgIf, NgStyle, RouterLink, RouterLinkActive, RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css',
   encapsulation: ViewEncapsulation.None
@@ -275,16 +276,14 @@ export class App {
     return this.moduleTheme(moduleId).label;
   }
 
-  selectTopbarModule(event: Event): void {
-    const moduleId = (event.target as HTMLSelectElement).value;
+  selectTopbarModule(moduleId: string): void {
     const firstLesson = this.lessonNavItems.find((lesson) => lesson.moduleId === moduleId);
     if (firstLesson) {
       this.goToLesson(firstLesson);
     }
   }
 
-  selectTopbarLesson(event: Event): void {
-    const lessonId = (event.target as HTMLSelectElement).value;
+  selectTopbarLesson(lessonId: string): void {
     const lesson = this.lessonNavItems.find((candidate) => candidate.lessonId === lessonId);
     if (lesson) {
       this.goToLesson(lesson);

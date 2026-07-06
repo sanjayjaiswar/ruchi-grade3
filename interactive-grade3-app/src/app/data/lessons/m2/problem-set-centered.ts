@@ -5,6 +5,7 @@ import type {
   ProblemSetCenteredProblem,
   ProblemSetDataDisplay,
   ProblemSetNumberLineModel,
+  ProblemVisualMeasurementModelSection,
   ProblemVisualSpec
 } from '../lesson-runtime.types';
 
@@ -70,6 +71,48 @@ type StopwatchTableSeed = {
   equations?: string[];
 };
 
+type TimeLinePointSeed = {
+  label: string;
+  minute: number;
+  detail?: string;
+  open?: boolean;
+};
+
+type TimeLineJumpSeed = {
+  label: string;
+  fromMinute: number;
+  toMinute: number;
+};
+
+type TimeLineSourceItemSeed = {
+  label: string;
+  minute?: number;
+  detail?: string;
+  kind?: 'digital' | 'analog' | 'note';
+  status?: 'matched' | 'unmatched' | 'provided';
+};
+
+type TimeLineProblemSeed = {
+  number: number;
+  sourcePrompt: string;
+  startLabel: string;
+  endLabel: string;
+  displayStartMinute?: number;
+  displayEndMinute?: number;
+  tickLabels?: string[];
+  sourceItems?: TimeLineSourceItemSeed[];
+  points: TimeLinePointSeed[];
+  jumps?: TimeLineJumpSeed[];
+  blankNote: string;
+  solvedNote: string;
+  solvedAnswer: string;
+  equations: string[];
+  blankWorkspaceLabel: string;
+  meaning: string;
+  explanation: string;
+  checks: string[];
+};
+
 const TEACHER_SOURCE = 'EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf';
 const TEACHER_PROBLEM_SET_PAGES: Record<number, number[]> = {
   1: [19, 20],
@@ -130,7 +173,7 @@ const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     1: 'a. First and last tick marks labeled as 7:00 a.m. and 8:00 a.m.; b. each interval labeled by fives up to 8:00 a.m.; c. D at 7:10 a.m.; d. E at 7:35 a.m.; e. T at 7:40 a.m.; f. L at 7:45 a.m.; g. W at 7:55 a.m.',
     2: 'Every 5 minutes labeled below the number line. First clock not matched; second clock 5:50 p.m.; third clock 5:15 p.m.; fourth clock not matched; fifth clock 5:40 p.m.; last clock 5:25 p.m.',
     3: 'First and last tick marks labeled 5:00 p.m. and 6:00 p.m.; each interval labeled by fives up to 6:00 p.m.; 5:45 p.m. located and plotted on the number line.',
-    4: 'Yes; 11:25 p.m. is later than 11:20 a.m. because p.m. is after noon and a.m. is before noon.'
+    4: 'Answers will vary. A complete explanation distinguishes a.m. from p.m. and uses the story context to decide whether Tanner meant a morning or night meeting time.'
   },
   3: {
     1: 'The times shown on the clocks are plotted correctly on the number line. First clock 7:17 p.m.; second clock 7:03 p.m.; third clock 7:55 p.m.; fourth clock 7:41 p.m.; fifth clock answer provided.',
@@ -431,17 +474,26 @@ function applyTeacherAnswerKey(lessonNumber: number, item: ProblemSetCenteredPro
   if (!officialAnswer) {
     return item;
   }
+  const answerEquations = item.equations?.length
+    ? item.equations
+    : teacherAnswerLooksLikeWork(officialAnswer)
+      ? [officialAnswer]
+      : [];
 
   return {
     ...item,
     solvedAnswer: officialAnswer,
-    equations: item.equations?.length ? item.equations : [officialAnswer],
+    equations: answerEquations,
     explanation: item.explanation,
     validationChecks: [
       `Solved answer is checked against ${TEACHER_SOURCE}, Lesson ${lessonNumber} Answer Key, Problem Set ${item.number}.`,
       ...item.validationChecks
     ]
   };
+}
+
+function teacherAnswerLooksLikeWork(answer: string): boolean {
+  return /[=+\-x×÷]|->|≈|~=/u.test(answer) || /^\s*(?:\$?\d|[a-z]\.)/i.test(answer) && answer.length < 80;
 }
 
 function applyTeacherPrompt(lessonNumber: number, item: ProblemSetCenteredProblem): ProblemSetCenteredProblem {
@@ -462,6 +514,11 @@ function createM2ProblemVisual(seed: ProblemSetCenteredProblem | ProblemSeed, so
   const sourceNote = solved
     ? 'Solved view uses the Module 2 Teacher Edition answer key, authored visuals, and unit checks.'
     : 'Blank view keeps the student Problem Set workspace visual and leaves the official answer work open.';
+
+  const measurementModel = makeM2MeasurementModel(seed, solved);
+  if (measurementModel) {
+    sections.push(measurementModel);
+  }
 
   const dataDisplay = solved ? seed.solvedDataDisplay ?? seed.dataDisplay : seed.dataDisplay;
   if (dataDisplay) {
@@ -502,7 +559,7 @@ function createM2ProblemVisual(seed: ProblemSetCenteredProblem | ProblemSeed, so
     sections.push(makeM2TapeOrWorkspace(seed, solved));
   }
 
-  const equations = seed.equations?.length ? seed.equations : [seed.solvedAnswer];
+  const equations = seed.equations?.length ? seed.equations : solved ? [seed.solvedAnswer] : [];
   sections.push({
     kind: 'equations',
     label: solved ? 'Solved work' : 'Student work blanks',
@@ -522,14 +579,208 @@ function createM2ProblemVisual(seed: ProblemSetCenteredProblem | ProblemSeed, so
   };
 }
 
+function makeM2MeasurementModel(seed: ProblemSetCenteredProblem | ProblemSeed, solved: boolean): ProblemVisualMeasurementModelSection | undefined {
+  const text = [seed.sourcePrompt, seed.solvedAnswer, ...(seed.equations ?? []), seed.unitLabel ?? ''].join(' ');
+  const lower = text.toLowerCase();
+  const isTimeNumberLine = !!seed.numberLineModels?.length && /a\.m\.|p\.m\.|minute|minutes|\d{1,2}:\d{2}/i.test(text);
+  const hasMass = /\bkg\b|kilogram|gram|weigh|weight|mass|scale|rice|bean|pumpkin|turkey|piano|bench|apple|pear|peach/i.test(text);
+  const hasLiquid = /\bl\b|\bml\b|liter|milliliter|liquid|container|barrel|beaker|water|milk|bucket|tank|gas/i.test(text);
+  const hasRounding = /round|nearest|estimate|about|halfway|surrounding/i.test(text);
+  const hasOperation = !!seed.equations?.length && /[+\-x×÷]/.test(seed.equations.join(' '));
+  const hasLabeledMeasurement = /\b\d{1,3}(?:,\d{3})*\s*(?:kg|kilograms?|g|grams?|mL|milliliters?|L|liters?|cm|centimeters?|minutes?|mins?)\b/i.test(text);
+  const isBenchmarkWorkspace = /work with a partner|objects that weigh about|classroom object|corresponding weights|benchmark/i.test(text);
+  const isUnitChoiceWorkspace = /circle the correct unit|reasonable unit/i.test(text);
+
+  if (seed.blankVisualType === 'tape-diagram') {
+    return undefined;
+  }
+
+  if (isTimeNumberLine || seed.blankVisualType === 'clock-workspace') {
+    return undefined;
+  }
+
+  if (!solved && (isBenchmarkWorkspace || isUnitChoiceWorkspace) && seed.dataDisplay?.rows?.length) {
+    return undefined;
+  }
+
+  if (!hasOperation && !hasLiquid && !hasRounding && !hasLabeledMeasurement && seed.dataDisplay?.rows?.length) {
+    return undefined;
+  }
+
+  if (!hasMass && !hasLiquid && !hasRounding && !hasOperation) {
+    return undefined;
+  }
+
+  const model: ProblemVisualMeasurementModelSection['model'] =
+    hasRounding ? 'rounding' :
+      (hasMass && hasLiquid) || /\b1,?000\b|decompos/.test(lower) ? 'conversion' :
+        hasLiquid ? 'liquid' :
+          hasMass ? 'mass' :
+            'operation';
+
+  const unitLabel = measurementUnitLabel(text, seed.unitLabel);
+  const values = measurementValues(seed, solved, unitLabel);
+
+  return {
+    kind: 'measurement-model',
+    label: solved ? 'Solved measurement model' : 'Source measurement model',
+    model,
+    unitLabel,
+    referenceLabel: measurementReferenceLabel(model, unitLabel),
+    equation: solved ? seed.equations?.join(' | ') : blankEquationTemplates(seed.equations).join(' | '),
+    maxValue: measurementMax(values),
+    values,
+    steps: measurementSteps(model, solved),
+    note: solved
+      ? seed.solvedAnswer
+      : seed.blankWorkspaceLabel ?? 'Use the Teacher Edition quantities, units, and model before calculating.'
+  };
+}
+
+function measurementValues(seed: ProblemSetCenteredProblem | ProblemSeed, solved: boolean, unitLabel?: string): NonNullable<ProblemVisualMeasurementModelSection['values']> {
+  const values: NonNullable<ProblemVisualMeasurementModelSection['values']> = [];
+  const equationText = seed.equations?.join(' ') ?? '';
+  const labeledValues = Array.from([equationText, seed.sourcePrompt, seed.solvedAnswer].join(' ').matchAll(/\b\d{1,3}(?:,\d{3})*\s*(?:kg|kilograms?|g|grams?|mL|milliliters?|L|liters?|cm|centimeters?|minutes?|mins?)\b/gi));
+  const seenLabels = new Set<string>();
+
+  labeledValues.slice(0, 5).forEach((match, index) => {
+    const valueLabel = normalizeMeasurementLabel(match[0]);
+    if (seenLabels.has(valueLabel)) {
+      return;
+    }
+    seenLabels.add(valueLabel);
+    const value = Number(match[0].match(/\d{1,3}(?:,\d{3})*/)?.[0].replace(/,/g, '') ?? NaN);
+    values.push({
+      label: index === labeledValues.length - 1 && solved ? 'answer' : `given ${values.length + 1}`,
+      value: Number.isFinite(value) ? value : undefined,
+      valueLabel,
+      tone: index === labeledValues.length - 1 && solved ? 'answer' : 'given'
+    });
+  });
+
+  if (values.length) {
+    return values;
+  }
+
+  const equationNumbers = Array.from(equationText.matchAll(/\b\d{1,3}(?:,\d{3})*\b/g))
+    .map((match) => Number(match[0].replace(/,/g, '')))
+    .filter((value) => Number.isFinite(value));
+  const promptNumbers = Array.from(seed.sourcePrompt.matchAll(/\b\d{1,3}(?:,\d{3})*\b/g))
+    .map((match) => Number(match[0].replace(/,/g, '')))
+    .filter((value) => Number.isFinite(value));
+  const sourceNumbers = equationNumbers.length ? equationNumbers : promptNumbers;
+  const uniqueNumbers = Array.from(new Set(sourceNumbers)).slice(0, 4);
+
+  uniqueNumbers.forEach((value, index) => {
+    values.push({
+      label: index === uniqueNumbers.length - 1 && solved ? 'answer' : `given ${index + 1}`,
+      value,
+      valueLabel: `${value.toLocaleString()}${unitLabel ? ` ${unitLabel}` : ''}`,
+      tone: index === uniqueNumbers.length - 1 && solved ? 'answer' : 'given'
+    });
+  });
+
+  if (!values.length && seed.dataDisplay?.rows?.length) {
+    seed.dataDisplay.rows.slice(0, 4).forEach((row, index) => {
+      values.push({
+        label: row[0] ?? `item ${index + 1}`,
+        valueLabel: solved ? row.at(-1) ?? 'check' : '____',
+        tone: solved ? 'answer' : 'given'
+      });
+    });
+  }
+
+  return values.length ? values : [
+    { label: 'given measurement', valueLabel: solved ? seed.solvedAnswer : '____', tone: solved ? 'answer' : 'given' }
+  ];
+}
+
+function normalizeMeasurementLabel(label: string): string {
+  return label
+    .replace(/\bkilograms?\b/gi, 'kg')
+    .replace(/\bgrams?\b/gi, 'g')
+    .replace(/\bmilliliters?\b/gi, 'mL')
+    .replace(/\bliters?\b/gi, 'L')
+    .replace(/\bcentimeters?\b/gi, 'cm')
+    .replace(/\bminutes?\b|\bmins?\b/gi, 'min')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function measurementUnitLabel(text: string, seedUnit?: string): string | undefined {
+  if (seedUnit && seedUnit !== 'units') {
+    return seedUnit;
+  }
+  if (/\bml\b|milliliter/i.test(text)) {
+    return 'mL';
+  }
+  if (/\bl\b|liter/i.test(text)) {
+    return 'L';
+  }
+  if (/\bkg\b|kilogram/i.test(text)) {
+    return 'kg';
+  }
+  if (/\bg\b|gram/i.test(text)) {
+    return 'g';
+  }
+  if (/minute/i.test(text)) {
+    return 'min';
+  }
+  if (/centimeter|\bcm\b/i.test(text)) {
+    return 'cm';
+  }
+  return undefined;
+}
+
+function measurementReferenceLabel(model: ProblemVisualMeasurementModelSection['model'], unitLabel?: string): string {
+  if (model === 'rounding') {
+    return 'lower mark - halfway - upper mark';
+  }
+  if (model === 'conversion') {
+    return '1 whole unit = 1,000 smaller units';
+  }
+  if (model === 'liquid') {
+    return `marked container${unitLabel ? ` (${unitLabel})` : ''}`;
+  }
+  if (model === 'mass') {
+    return `scale model${unitLabel ? ` (${unitLabel})` : ''}`;
+  }
+  return 'known parts -> answer';
+}
+
+function measurementMax(values: NonNullable<ProblemVisualMeasurementModelSection['values']>): number | undefined {
+  const numericValues = values.map((value) => value.value).filter((value): value is number => value !== undefined);
+  return numericValues.length ? Math.max(...numericValues, 1) : undefined;
+}
+
+function measurementSteps(model: ProblemVisualMeasurementModelSection['model'], solved: boolean): string[] {
+  if (model === 'rounding') {
+    return solved
+      ? ['Place the measurement between two marks.', 'Compare it to halfway.', 'Choose the nearer mark and keep the unit.']
+      : ['Mark the two surrounding values.', 'Find halfway.', 'Decide which mark is closer.'];
+  }
+  if (model === 'conversion') {
+    return ['Keep the whole unit attached.', 'Decompose into equal metric units.', 'Check the base-ten relationship.'];
+  }
+  if (model === 'operation') {
+    return solved
+      ? ['Identify the known parts.', 'Add or subtract with the same unit.', 'Label the final answer.']
+      : ['Label the known measurements.', 'Choose addition or subtraction.', 'Keep units in the answer.'];
+  }
+  return solved
+    ? ['Read the measurement.', 'Model the quantity.', 'Write the answer with units.']
+    : ['Use the source measurement tool.', 'Record the quantity.', 'Keep the unit label attached.'];
+}
+
 function makeM2TapeOrWorkspace(seed: ProblemSetCenteredProblem | ProblemSeed, solved: boolean): ProblemVisualSpec['sections'][number] {
   const unit = seed.unitLabel ?? 'units';
   const total = seed.knownTotal ?? seed.quotient;
-  const partCount = boundedM2Count(seed.knownGroupCount ?? (seed.knownGroupSize ? seed.quotient : 3), 1, 10);
+  const equationPartLabels = m2EquationPartLabels(seed, unit);
+  const partCount = equationPartLabels?.length ?? boundedM2Count(seed.knownGroupCount ?? (seed.knownGroupSize ? seed.quotient : 3), 1, 10);
   const partLabel = solved
-    ? String(seed.knownGroupSize ?? seed.quotient ?? seed.solvedAnswer)
+    ? m2QuantityLabel(seed.knownGroupSize ?? seed.quotient, unit) ?? seed.solvedAnswer
     : seed.knownGroupSize
-      ? String(seed.knownGroupSize)
+      ? m2QuantityLabel(seed.knownGroupSize, unit) ?? String(seed.knownGroupSize)
       : '?';
 
   if (usesM2Tape(seed)) {
@@ -538,7 +789,8 @@ function makeM2TapeOrWorkspace(seed: ProblemSetCenteredProblem | ProblemSeed, so
       label: solved ? 'Solved measurement model' : 'Blank measurement model',
       totalLabel: total ? `${total} ${unit}` : `${unit} total`,
       parts: Array.from({ length: partCount }, (_, index) => ({
-        label: partLabel,
+        label: equationPartLabels?.[index] ?? partLabel,
+        sublabel: seed.shareLabels?.[index],
         emphasize: index < Math.min(2, partCount)
       })),
       caption: solved ? seed.solvedAnswer : seed.blankWorkspaceLabel ?? 'Draw and label the matching measurement model.'
@@ -557,6 +809,33 @@ function makeM2TapeOrWorkspace(seed: ProblemSetCenteredProblem | ProblemSeed, so
       ]
     ]
   };
+}
+
+function m2QuantityLabel(value: number | undefined, unit: string): string | undefined {
+  if (value === undefined) {
+    return undefined;
+  }
+
+  return unit === 'units' ? String(value) : `${value.toLocaleString()} ${unit}`;
+}
+
+function m2EquationPartLabels(seed: ProblemSetCenteredProblem | ProblemSeed, unit: string): string[] | undefined {
+  const firstEquation = seed.equations?.find((equation) => /[+]/.test(equation));
+  if (!firstEquation) {
+    return undefined;
+  }
+
+  const leftSide = firstEquation.split('=')[0] ?? '';
+  const addends = leftSide
+    .split('+')
+    .map((part) => Number(part.match(/\b\d{1,3}(?:,\d{3})*\b/)?.[0].replace(/,/g, '')))
+    .filter((value) => Number.isFinite(value));
+
+  if (addends.length < 2 || addends.length > 10) {
+    return undefined;
+  }
+
+  return addends.map((value) => m2QuantityLabel(value, unit) ?? String(value));
 }
 
 function usesM2Tape(seed: ProblemSetCenteredProblem | ProblemSeed): boolean {
@@ -583,7 +862,13 @@ function m2VisualTitle(seed: ProblemSetCenteredProblem | ProblemSeed): string {
   if (seed.numberLineModels?.[0]?.label) {
     return seed.numberLineModels[0].label;
   }
-  if (seed.unitLabel && seed.quotient) {
+  if (seed.blankVisualType === 'clock-workspace') {
+    return 'official clock interval';
+  }
+  if (seed.unitLabel && seed.unitLabel !== 'units' && seed.knownTotal) {
+    return `${seed.knownTotal} ${seed.unitLabel}`;
+  }
+  if (seed.unitLabel && seed.unitLabel !== 'units' && seed.quotient) {
     return `${seed.quotient} ${seed.unitLabel}`;
   }
   return seed.sourcePrompt;
@@ -609,7 +894,7 @@ function problem(seed: ProblemSeed): ProblemSetCenteredProblem {
     solvedDataDisplay: seed.solvedDataDisplay ?? seed.dataDisplay,
     numberLineModels: seed.numberLineModels,
     solvedAnswer: seed.solvedAnswer,
-    equations: seed.equations ?? [seed.solvedAnswer],
+    equations: seed.equations ?? [],
     knownTotal: seed.knownTotal,
     knownGroupCount: seed.knownGroupCount,
     knownGroupSize: seed.knownGroupSize,
@@ -734,6 +1019,70 @@ function stopwatchTableVisual(seed: StopwatchTableSeed, solved: boolean): Proble
 function stopwatchDurationLabel(text: string): string {
   const match = text.match(/\b\d+\s+seconds\b/i);
   return match?.[0] ?? 'measured seconds';
+}
+
+function timeLineProblem(seed: TimeLineProblemSeed): ProblemSetCenteredProblem {
+  const centered = problem({
+    number: seed.number,
+    sourcePrompt: seed.sourcePrompt,
+    solvedAnswer: seed.solvedAnswer,
+    equations: seed.equations,
+    blankVisualType: 'number-line-template',
+    animationType: 'number-line-model',
+    blankWorkspaceLabel: seed.blankWorkspaceLabel,
+    meaning: seed.meaning,
+    explanation: seed.explanation,
+    checks: seed.checks,
+    unitLabel: 'minutes',
+    groupLabel: 'time'
+  });
+
+  return {
+    ...centered,
+    blankPrompts: ['Use the official time number line. Label the hour endpoints, count intervals by fives, then plot or read the requested time.'],
+    blankEquations: blankEquationTemplates(seed.equations),
+    numberLineModels: undefined,
+    blankVisual: timeLineVisual(seed, false),
+    solvedVisual: timeLineVisual(seed, true)
+  };
+}
+
+function timeLineVisual(seed: TimeLineProblemSeed, solved: boolean): ProblemVisualSpec {
+  return {
+    title: solved ? `Problem ${seed.number}: time number line solved` : `Problem ${seed.number}: source number line workspace`,
+    sections: [
+      {
+        kind: 'time-number-line',
+        label: solved ? `Solved ${timeLineRangeLabel(seed)} minute line` : `Blank ${timeLineRangeLabel(seed)} minute line`,
+        startLabel: seed.startLabel,
+        endLabel: seed.endLabel,
+        displayStartMinute: seed.displayStartMinute,
+        displayEndMinute: seed.displayEndMinute,
+        tickLabels: seed.tickLabels ?? timeTicks,
+        sourceItems: seed.sourceItems,
+        points: solved ? seed.points : seed.points.filter((point) => point.open),
+        jumps: solved ? seed.jumps : undefined,
+        note: solved ? seed.solvedNote : seed.blankNote
+      },
+      {
+        kind: 'equations',
+        label: solved ? 'Source-backed reasoning' : 'Student work blanks',
+        lines: solved ? seed.equations : blankEquationTemplates(seed.equations)
+      },
+      {
+        kind: 'note',
+        label: solved ? 'Answer meaning' : 'Source workspace direction',
+        text: solved ? seed.explanation : seed.blankWorkspaceLabel
+      }
+    ]
+  };
+}
+
+function timeLineRangeLabel(seed: TimeLineProblemSeed): string {
+  const ticks = seed.tickLabels ?? timeTicks;
+  const start = seed.displayStartMinute ?? ticks[0] ?? '0';
+  const end = seed.displayEndMinute ?? ticks.at(-1) ?? '60';
+  return `${start}-${end}`;
 }
 
 function lesson(seed: LessonSeed): ProblemSetCenteredLesson {
@@ -935,28 +1284,249 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
   2: lesson({
     lessonNumber: 2,
     title: 'clocks connect to 5-minute number lines',
-    concept: 'A one-hour number line can be partitioned into 5-minute intervals to locate clock times.',
-    contrast: 'First check the hour interval, then count by fives to the minute mark.',
-    summary: 'Use 0-60 minute intervals to connect clock times and number-line positions.',
+    concept: 'The Teacher Edition moves from a one-hour tape diagram to a straight number line: 12 equal intervals of 5 minutes make 60 minutes. A clock can then be read as the same 0-60 minute line wrapped into a circle.',
+    contrast: 'The important count is the interval count, not the tick-mark count. First name the hour span, then count five-minute intervals from the start of the hour and plot the matching clock time.',
+    summary: 'Lesson 2 uses continuous time lines to connect 7:00-8:00 and 5:00-6:00 clock times to minute positions. Solved work must show endpoints, fives, plotted points, and whether a clock belongs in the hour interval.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Label Ingrid\'s 7:00 a.m. to 8:00 a.m. number line and plot D, E, T, L, and W.', solvedAnswer: 'D = 7:10, E = 7:35, T = 7:40, L = 7:45, W = 7:55.', equations: ['7:00 + 10 = 7:10', '7:00 + 35 = 7:35', '7:00 + 55 = 7:55'], numberLineModels: [numberLine('7:00 a.m. to 8:00 a.m.', timeTicks, [2, 7, 8, 9, 11])] }),
-      problem({ number: 2, sourcePrompt: 'Label 5:00 p.m. to 6:00 p.m. by fives and match clocks. Not all clocks match.', solvedAnswer: '5:15 and 5:40 match the number line; 8:35 does not belong in the 5:00-6:00 interval.', equations: ['5:15 = 15 minutes after 5:00', '5:40 = 40 minutes after 5:00'], numberLineModels: [numberLine('5:00 p.m. to 6:00 p.m.', timeTicks, [3, 8])] }),
-      problem({ number: 3, sourcePrompt: 'Label Noah\'s number line to locate 5:45 p.m.', solvedAnswer: '5:45 p.m. is 45 minutes after 5:00 p.m.', equations: ['5:00 + 45 minutes = 5:45'], numberLineModels: [numberLine('5:00 p.m. to 6:00 p.m.', timeTicks, [9])] }),
-      problem({ number: 4, sourcePrompt: 'Tanner says 11:25 p.m. comes after 11:20 a.m. Do you agree?', solvedAnswer: 'Yes. 11:25 p.m. is later in the day than 11:20 a.m.', equations: ['a.m. before noon', 'p.m. after noon'], blankVisualType: 'clock-workspace', animationType: 'clock-model', meaning: 'The comparison depends on a.m. and p.m., not only the minute numbers.' })
+      timeLineProblem({
+        number: 1,
+        sourcePrompt: 'Label Ingrid\'s 7:00 a.m. to 8:00 a.m. number line and plot D, E, T, L, and W.',
+        startLabel: '7:00 a.m.',
+        endLabel: '8:00 a.m.',
+        points: [
+          { label: 'D', minute: 10, detail: '7:10' },
+          { label: 'E', minute: 35, detail: '7:35' },
+          { label: 'T', minute: 40, detail: '7:40' },
+          { label: 'L', minute: 45, detail: '7:45' },
+          { label: 'W', minute: 55, detail: '7:55' }
+        ],
+        blankNote: 'Label the first tick 7:00 a.m., the last tick 8:00 a.m., and the intervals 0, 5, 10, ... 60 before plotting letters.',
+        solvedNote: 'Each plotted letter is a minute position after 7:00: D 10, E 35, T 40, L 45, W 55.',
+        solvedAnswer: 'D = 7:10, E = 7:35, T = 7:40, L = 7:45, W = 7:55.',
+        equations: ['D: 7:00 + 10 min = 7:10', 'E: 7:00 + 35 min = 7:35', 'W: 7:00 + 55 min = 7:55'],
+        blankWorkspaceLabel: 'Use the official Ingrid number line. Count by fives from 7:00 to 8:00, then plot each letter above the correct minute mark.',
+        meaning: 'The letters name events between 7:00 and 8:00 a.m.',
+        explanation: 'The number line measures the 60 minutes after 7:00 a.m.; each letter sits at its elapsed-minute position.',
+        checks: [
+          'The endpoints are labeled 7:00 a.m. and 8:00 a.m.',
+          'The intervals are counted by fives from 0 to 60.',
+          'D, E, T, L, and W match the Teacher Edition answer-key positions.'
+        ]
+      }),
+      timeLineProblem({
+        number: 2,
+        sourcePrompt: 'Label 5:00 p.m. to 6:00 p.m. by fives and match clocks. Not all clocks match.',
+        startLabel: '5:00 p.m.',
+        endLabel: '6:00 p.m.',
+        sourceItems: [
+          { label: '8:35', detail: 'outside 5:00-6:00', kind: 'digital', status: 'unmatched' },
+          { label: 'analog clock', minute: 50, detail: '5:50', kind: 'analog', status: 'matched' },
+          { label: '5:15', minute: 15, detail: '5:15', kind: 'digital', status: 'matched' },
+          { label: 'analog clock', detail: 'outside 5:00-6:00', kind: 'analog', status: 'unmatched' },
+          { label: '5:40', minute: 40, detail: '5:40', kind: 'digital', status: 'matched' },
+          { label: 'analog clock', minute: 25, detail: '5:25', kind: 'analog', status: 'matched' }
+        ],
+        points: [
+          { label: '5:15', minute: 15, detail: 'matches 15 minutes after 5:00' },
+          { label: '5:25', minute: 25, detail: 'matches 25 minutes after 5:00' },
+          { label: '5:40', minute: 40, detail: 'matches 40 minutes after 5:00' },
+          { label: '5:50', minute: 50, detail: 'matches 50 minutes after 5:00' }
+        ],
+        blankNote: 'The source gives six clock/digital items above the line. Label every 5-minute interval, then connect only items that fall between 5:00 p.m. and 6:00 p.m.',
+        solvedNote: 'The source answer key says: first clock not matched, second clock 5:50, third 5:15, fourth not matched, fifth 5:40, last 5:25.',
+        solvedAnswer: 'Every 5 minutes is labeled; clocks at 5:50, 5:15, 5:40, and 5:25 match. The first and fourth clocks do not match.',
+        equations: ['5:15 = 15 min after 5:00', '5:25 = 25 min after 5:00', '5:40 = 40 min after 5:00', '5:50 = 50 min after 5:00'],
+        blankWorkspaceLabel: 'Recreate the source task: read each item above the line, label the 0-60 minute scale, and leave unmatched items off the number line.',
+        meaning: 'A matching clock must show a time in the same hour interval as the number line.',
+        explanation: 'The source asks students to reject nonmatching clocks, so solved work needs both matched and unmatched evidence.',
+        checks: [
+          'The 5:00-6:00 line is labeled by fives.',
+          'Four matching clock times are plotted.',
+          'The nonmatching clocks are explicitly left off the line.'
+        ]
+      }),
+      timeLineProblem({
+        number: 3,
+        sourcePrompt: 'Label Noah\'s number line to locate 5:45 p.m.',
+        startLabel: '5:00 p.m.',
+        endLabel: '6:00 p.m.',
+        points: [{ label: '5:45', minute: 45, detail: 'Noah' }],
+        jumps: [{ label: '9 fives', fromMinute: 0, toMinute: 45 }],
+        blankNote: 'Use the 5:00 to 6:00 line. Count 5, 10, 15, ... until the 45-minute mark.',
+        solvedNote: '5:45 is 45 minutes after 5:00, so it is the ninth five-minute interval.',
+        solvedAnswer: '5:45 p.m. is 45 minutes after 5:00 p.m.',
+        equations: ['9 x 5 min = 45 min', '5:00 + 45 min = 5:45'],
+        blankWorkspaceLabel: 'Label each five-minute interval and plot 5:45 at the 45-minute mark.',
+        meaning: 'The plotted point shows Noah\'s target time in the hour from 5:00 to 6:00 p.m.',
+        explanation: 'Counting nine five-minute intervals from the start of the hour lands on 5:45 p.m.',
+        checks: [
+          'The line starts at 5:00 p.m. and ends at 6:00 p.m.',
+          'The tick labels increase by 5 minutes.',
+          'The point for 5:45 is plotted at 45 minutes.'
+        ]
+      }),
+      timeLineProblem({
+        number: 4,
+        sourcePrompt: 'Tanner says 11:25 p.m. comes after 11:20 a.m. Do you agree?',
+        startLabel: '11:00 p.m.',
+        endLabel: '12:00 a.m.',
+        sourceItems: [
+          { label: '11:25 p.m.', minute: 25, detail: 'source number-line point', kind: 'note', status: 'matched' },
+          { label: '11:20 a.m.', detail: 'morning, not on this night line', kind: 'note', status: 'unmatched' }
+        ],
+        points: [{ label: '11:25 p.m.', minute: 25, detail: 'night' }],
+        jumps: [{ label: '25 min after 11:00 p.m.', fromMinute: 0, toMinute: 25 }],
+        blankNote: 'The source sample uses a line from 11:00 p.m. to 12:00 a.m. to place 11:25 p.m. Then compare that night time to 11:20 a.m.',
+        solvedNote: 'Answer key: answers vary. A complete answer must explain that p.m. is night and a.m. is morning, not just compare 25 and 20.',
+        solvedAnswer: 'Answers will vary. A complete explanation distinguishes a.m. from p.m. and uses the story context to decide whether Tanner meant a morning or night meeting time.',
+        equations: ['11:25 p.m. = 25 min after 11:00 p.m.', '11:20 a.m. is morning', 'p.m. and a.m. are different parts of the day'],
+        blankWorkspaceLabel: 'Use the source idea: locate 11:25 p.m. on the night hour line, then explain why 11:20 a.m. is a morning time.',
+        meaning: 'The comparison depends on a.m. and p.m., not only the minute numbers.',
+        explanation: 'A complete response explains why p.m. is a night time and a.m. is a morning time, then answers Tanner\'s story question.',
+        checks: [
+          'The explanation names a.m. and p.m.',
+          'The response uses the park/sleeping context.',
+          'The final answer is not based only on 25 being greater than 20.'
+        ]
+      })
     ]
   }),
   3: lesson({
     lessonNumber: 3,
     title: 'tell time to the nearest minute',
-    concept: 'Count by fives and then ones to read or draw exact minute times.',
-    contrast: 'Use the nearest five-minute mark as a benchmark, then count individual minutes.',
-    summary: 'Exact time combines the hour, five-minute groups, and extra ones.',
+    concept: 'The Teacher Edition starts with the 0-60 number line from Lesson 2, then inserts the small one-minute ticks inside each 5-minute interval. Students count by fives to the nearest five-minute benchmark and then count ones to the exact minute.',
+    contrast: 'Lesson 2 stops on five-minute marks. Lesson 3 reads between the fives: for 7:37, count seven fives to 35 and two more ones to 37.',
+    summary: 'Exact clock times are modeled as five-minute groups plus extra one-minute ticks. Solved work should show the hour, the five-minute benchmark, the leftover ones, and the final clock time.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Plot points for the clock times and match the clocks to the number line.', solvedAnswer: 'First clock 7:17 p.m.; second clock 7:03 p.m.; third clock 7:55 p.m.; fourth clock 7:41 p.m.; fifth clock answer provided.', equations: ['7:17 p.m.', '7:03 p.m.', '7:55 p.m.', '7:41 p.m.'], numberLineModels: [numberLine('7:00 p.m. to 8:00 p.m.', ['7:00', '10', '20', '30', '40', '50', '8:00'])] }),
-      problem({ number: 2, sourcePrompt: 'Draw hands for 6:48 a.m.', solvedAnswer: 'Minute hand at 48 minutes; hour hand close to 7.', equations: ['6:48 = 48 minutes after 6:00'], blankVisualType: 'clock-workspace', animationType: 'clock-model' }),
-      problem({ number: 3, sourcePrompt: 'Draw hands for 8:23 a.m.', solvedAnswer: 'Minute hand at 23 minutes; hour hand a little past 8.', equations: ['8:23 = 23 minutes after 8:00'], blankVisualType: 'clock-workspace', animationType: 'clock-model' }),
-      problem({ number: 4, sourcePrompt: 'Read the clock showing when Rebecca finishes homework.', solvedAnswer: 'Rebecca finishes her homework at 5:27.', equations: ['Rebecca finishes at 5:27'], blankVisualType: 'clock-workspace', animationType: 'clock-model' }),
-      problem({ number: 5, sourcePrompt: 'Read Mason\'s drop-off clock and find the coach arrival time 11 minutes before.', solvedAnswer: 'Mason is dropped off at 3:56; the coach arrives at 3:45.', equations: ['3:56 - 11 minutes = 3:45'], blankVisualType: 'clock-workspace', animationType: 'clock-model' })
+      timeLineProblem({
+        number: 1,
+        sourcePrompt: 'Plot points for the clock times and match the clocks to the number line.',
+        startLabel: '7:00 p.m.',
+        endLabel: '8:00 p.m.',
+        sourceItems: [
+          { label: 'analog clock', minute: 17, detail: 'first clock - 7:17', kind: 'analog', status: 'matched' },
+          { label: '7:03', minute: 3, detail: 'second clock', kind: 'digital', status: 'matched' },
+          { label: 'analog clock', minute: 55, detail: 'third clock - 7:55', kind: 'analog', status: 'matched' },
+          { label: 'analog clock', minute: 41, detail: 'fourth clock - 7:41', kind: 'analog', status: 'matched' },
+          { label: '7:28', minute: 28, detail: 'fifth clock - provided example', kind: 'digital', status: 'provided' }
+        ],
+        points: [
+          { label: 'clock 1', minute: 17, detail: '7:17' },
+          { label: 'clock 2', minute: 3, detail: '7:03' },
+          { label: 'clock 3', minute: 55, detail: '7:55' },
+          { label: 'clock 4', minute: 41, detail: '7:41' },
+          { label: 'provided', minute: 28, detail: '7:28', open: true }
+        ],
+        jumps: [
+          { label: '15 + 2', fromMinute: 15, toMinute: 17 },
+          { label: '25 + 3', fromMinute: 25, toMinute: 28 },
+          { label: '40 + 1', fromMinute: 40, toMinute: 41 }
+        ],
+        blankNote: 'The source page already shows the 7:28 digital clock connected to minute 28 as an example. Use that model to match the remaining clocks.',
+        solvedNote: 'The answer key identifies 7:17, 7:03, 7:55, and 7:41, with the fifth 7:28 item already provided in the source visual.',
+        solvedAnswer: 'First clock 7:17 p.m.; second clock 7:03 p.m.; third clock 7:55 p.m.; fourth clock 7:41 p.m.; fifth clock answer provided.',
+        equations: ['7:17 = 15 + 2 min after 7:00', '7:03 = 0 + 3 min after 7:00', '7:28 = 25 + 3 min after 7:00', '7:55 = 11 x 5 min', '7:41 = 40 + 1 min after 7:00'],
+        blankWorkspaceLabel: 'Use the provided 7:28 example, then match each remaining clock to the exact minute on the 7:00-8:00 number line.',
+        meaning: 'Each clock time is an exact minute position in the hour after 7:00 p.m.',
+        explanation: 'The solved model shows why exact times between five-minute marks still belong on the continuous time line.',
+        checks: [
+          'The hour interval is 7:00 p.m. to 8:00 p.m.',
+          'Clock times are plotted to the nearest minute, not rounded to fives.',
+          'Known answer-key times are labeled on the line.'
+        ]
+      }),
+      timeLineProblem({
+        number: 2,
+        sourcePrompt: 'Draw hands for 6:48 a.m.',
+        startLabel: '6:00 a.m.',
+        endLabel: '7:00 a.m.',
+        points: [{ label: '6:48', minute: 48, detail: 'Jessie' }],
+        jumps: [
+          { label: '9 fives = 45', fromMinute: 0, toMinute: 45 },
+          { label: '+3 ones', fromMinute: 45, toMinute: 48 }
+        ],
+        blankNote: 'Count by fives to 45, then count three one-minute ticks to 48 before drawing the clock hands.',
+        solvedNote: '6:48 means the minute hand points to the 48th minute and the hour hand is close to 7.',
+        solvedAnswer: 'Hands on the clock drawn to show 6:48 a.m.',
+        equations: ['9 x 5 = 45', '45 + 3 = 48', '6:00 + 48 min = 6:48'],
+        blankWorkspaceLabel: 'Use the number line to locate 48 minutes after 6:00, then transfer that minute position to the clock.',
+        meaning: 'The time Jessie woke up is 48 minutes after 6:00 a.m.',
+        explanation: 'The five-minute benchmark is 45; three extra one-minute ticks make 48.',
+        checks: [
+          'The minute count reaches 48.',
+          'The five-minute and one-minute parts are both visible.',
+          'The final time is labeled 6:48 a.m.'
+        ]
+      }),
+      timeLineProblem({
+        number: 3,
+        sourcePrompt: 'Draw hands for 8:23 a.m.',
+        startLabel: '8:00 a.m.',
+        endLabel: '9:00 a.m.',
+        points: [{ label: '8:23', minute: 23, detail: 'Mrs. Barnes' }],
+        jumps: [
+          { label: '4 fives = 20', fromMinute: 0, toMinute: 20 },
+          { label: '+3 ones', fromMinute: 20, toMinute: 23 }
+        ],
+        blankNote: 'Count 5, 10, 15, 20, then three more one-minute ticks to find 23.',
+        solvedNote: '8:23 is 23 minutes after 8:00, so the minute hand is at 23 and the hour hand is a little past 8.',
+        solvedAnswer: 'Hands on the clock drawn to show 8:23 a.m.',
+        equations: ['4 x 5 = 20', '20 + 3 = 23', '8:00 + 23 min = 8:23'],
+        blankWorkspaceLabel: 'Locate 23 minutes on the line before drawing the clock hands.',
+        meaning: 'Mrs. Barnes starts teaching 23 minutes after 8:00 a.m.',
+        explanation: 'The exact minute comes from four groups of five minutes and three extra minutes.',
+        checks: [
+          'The five-minute benchmark is 20.',
+          'Three one-minute ticks are counted after 20.',
+          'The final time is 8:23 a.m.'
+        ]
+      }),
+      timeLineProblem({
+        number: 4,
+        sourcePrompt: 'Read the clock showing when Rebecca finishes homework.',
+        startLabel: '5:00',
+        endLabel: '6:00',
+        points: [{ label: '5:27', minute: 27, detail: 'Rebecca' }],
+        jumps: [
+          { label: '5 fives = 25', fromMinute: 0, toMinute: 25 },
+          { label: '+2 ones', fromMinute: 25, toMinute: 27 }
+        ],
+        blankNote: 'Read the clock by counting fives to the nearest benchmark and ones to the exact minute.',
+        solvedNote: 'The clock reads 5:27: five groups of five minutes make 25, then two more minutes make 27.',
+        solvedAnswer: 'Rebecca finishes her homework at 5:27.',
+        equations: ['5 x 5 = 25', '25 + 2 = 27', 'Rebecca finishes at 5:27'],
+        blankWorkspaceLabel: 'Use fives and ones to translate the clock hands into an exact time.',
+        meaning: 'The answer names Rebecca\'s homework finish time.',
+        explanation: 'The minute hand is two minutes after the 25-minute benchmark, so the time is 5:27.',
+        checks: [
+          'The answer is not rounded to 5:25 or 5:30.',
+          'The exact minute 27 is shown.',
+          'The final sentence answers Rebecca\'s finish-time question.'
+        ]
+      }),
+      timeLineProblem({
+        number: 5,
+        sourcePrompt: 'Read Mason\'s drop-off clock and find the coach arrival time 11 minutes before.',
+        startLabel: '3:00',
+        endLabel: '4:00',
+        points: [
+          { label: 'drop-off', minute: 56, detail: '3:56' },
+          { label: 'coach', minute: 45, detail: '3:45' }
+        ],
+        jumps: [{ label: 'count back 11 min', fromMinute: 56, toMinute: 45 }],
+        blankNote: 'First read Mason\'s drop-off time. Then count back 11 minutes on the same hour line.',
+        solvedNote: 'Mason is dropped off at 3:56. Counting back 11 minutes lands on 3:45.',
+        solvedAnswer: 'Mason is dropped off at 3:56; the coach arrives at 3:45.',
+        equations: ['3:56 - 11 min = 3:45', '56 - 11 = 45'],
+        blankWorkspaceLabel: 'Mark the drop-off time first, then move backward 11 minutes to find the coach arrival time.',
+        meaning: 'The two points show Mason\'s drop-off time and the earlier coach arrival time.',
+        explanation: 'This problem extends the clock-reading strategy into a short elapsed-time count-back.',
+        checks: [
+          'Part a identifies 3:56.',
+          'Part b counts back exactly 11 minutes.',
+          'The coach time is earlier than the drop-off time.'
+        ]
+      })
     ]
   }),
   4: lesson({
@@ -983,11 +1553,135 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Use addition for total time and subtraction for missing or comparison time.',
     summary: 'Time interval stories use the same part-whole logic as other measurement stories.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Cole reads 25 minutes yesterday and 28 minutes today.', solvedAnswer: 'Cole read for 53 minutes.', equations: ['25 + 28 = 53'], quotient: 53, unitLabel: 'minutes', numberLineModels: [numberLine('0 to 60 minutes', ['0', '10', '20', '30', '40', '50', '60'], [5])] }),
-      problem({ number: 2, sourcePrompt: 'Tessa spends 34 minutes washing her dog; 12 minutes are shampoo and rinse.', solvedAnswer: 'She spends 22 minutes getting the dog in the bathtub.', equations: ['34 - 12 = 22'], quotient: 22, unitLabel: 'minutes', animationType: 'two-step-model' }),
-      problem({ number: 3, sourcePrompt: 'Tessa walks 47 minutes and Jeremiah walks 30 minutes.', solvedAnswer: 'Tessa walks 17 more minutes.', equations: ['47 - 30 = 17'], quotient: 17, unitLabel: 'minutes', animationType: 'two-step-model' }),
-      problem({ number: 4, sourcePrompt: 'Austin does chores for 4, 12, and 13 minutes, then compares to a 7:55 bus after starting at 7:30.', solvedAnswer: 'Chores take 29 minutes; he finishes at 7:59 a.m. and is not done in time.', equations: ['4 + 12 + 13 = 29', '7:30 + 29 minutes = 7:59'], quotient: 29, unitLabel: 'minutes', animationType: 'two-step-model' }),
-      problem({ number: 5, sourcePrompt: 'Gilberto\'s cat sleeps 23 minutes and wakes at the time shown on the clock.', solvedAnswer: 'Use the source clock wake time and subtract 23 minutes to find the start time.', equations: ['wake time - 23 minutes = sleep time'], blankVisualType: 'clock-workspace', animationType: 'clock-model' })
+      timeLineProblem({
+        number: 1,
+        sourcePrompt: 'Cole reads 25 minutes yesterday and 28 minutes today.',
+        startLabel: '0 minutes',
+        endLabel: '60 minutes',
+        points: [
+          { label: 'yesterday', minute: 25, detail: '25 min', open: true },
+          { label: 'total', minute: 53, detail: '53 min' }
+        ],
+        jumps: [
+          { label: '25 min', fromMinute: 0, toMinute: 25 },
+          { label: '+28 min', fromMinute: 25, toMinute: 53 }
+        ],
+        blankNote: 'Use the source 0-60 minute line. Mark 25 minutes first, then add today\'s 28 minutes.',
+        solvedNote: 'The two reading intervals land at 53 minutes altogether.',
+        solvedAnswer: 'Cole read for 53 minutes.',
+        equations: ['25 + 28 = 53'],
+        blankWorkspaceLabel: 'Model 25 minutes and 28 more minutes on the number line, then write the addition equation.',
+        meaning: 'The total point shows how many minutes Cole read across both days.',
+        explanation: 'Start at 0, move 25 minutes for yesterday, then move 28 more minutes for today. The endpoint is 53 minutes.',
+        checks: [
+          'Both official intervals, 25 and 28 minutes, are used.',
+          'The movement is addition because the question asks altogether.',
+          'The final answer is labeled minutes.'
+        ]
+      }),
+      timeLineProblem({
+        number: 2,
+        sourcePrompt: 'Tessa spends 34 minutes washing her dog; 12 minutes are shampoo and rinse.',
+        startLabel: '0 minutes',
+        endLabel: '60 minutes',
+        points: [
+          { label: 'bathtub', minute: 22, detail: '22 min' },
+          { label: 'total', minute: 34, detail: '34 min', open: true }
+        ],
+        jumps: [
+          { label: 'unknown', fromMinute: 0, toMinute: 22 },
+          { label: '+12 min', fromMinute: 22, toMinute: 34 }
+        ],
+        blankNote: 'The total is 34 minutes. The known shampoo-and-rinse part is 12 minutes; the missing first part ends at 22.',
+        solvedNote: '34 minutes total minus 12 known minutes leaves 22 minutes.',
+        solvedAnswer: 'She spends 22 minutes getting the dog in the bathtub.',
+        equations: ['34 - 12 = 22'],
+        blankWorkspaceLabel: 'Show the 34-minute total and separate the 12-minute known part from the unknown bathtub time.',
+        meaning: 'The 22-minute point is the missing part of the washing time.',
+        explanation: 'Subtract the known shampoo-and-rinse time from the total washing time: 34 - 12 = 22.',
+        checks: [
+          'The total time is 34 minutes.',
+          'The known part is 12 minutes.',
+          'The unknown part plus 12 minutes returns to 34 minutes.'
+        ]
+      }),
+      timeLineProblem({
+        number: 3,
+        sourcePrompt: 'Tessa walks 47 minutes and Jeremiah walks 30 minutes.',
+        startLabel: '0 minutes',
+        endLabel: '60 minutes',
+        points: [
+          { label: 'Jeremiah', minute: 30, detail: '30 min', open: true },
+          { label: 'Tessa', minute: 47, detail: '47 min', open: true }
+        ],
+        jumps: [{ label: '17 more', fromMinute: 30, toMinute: 47 }],
+        blankNote: 'Plot both walking times on the same minute line. The distance between the points is the comparison difference.',
+        solvedNote: 'The gap from 30 minutes to 47 minutes is 17 minutes.',
+        solvedAnswer: 'Tessa walks 17 more minutes.',
+        equations: ['47 - 30 = 17'],
+        blankWorkspaceLabel: 'Model the two walking times and mark the gap between Jeremiah\'s 30 minutes and Tessa\'s 47 minutes.',
+        meaning: 'The jump between the two points shows how many more minutes Tessa walks.',
+        explanation: 'A comparison problem asks for the distance between the two times: 47 - 30 = 17.',
+        checks: [
+          'Jeremiah is plotted at 30 minutes.',
+          'Tessa is plotted at 47 minutes.',
+          'The answer is the gap, not the total of both walks.'
+        ]
+      }),
+      timeLineProblem({
+        number: 4,
+        sourcePrompt: 'Austin does chores for 4, 12, and 13 minutes, then compares to a 7:55 bus after starting at 7:30.',
+        startLabel: '7:30 a.m.',
+        endLabel: '8:00 a.m.',
+        displayEndMinute: 30,
+        tickLabels: ['0', '5', '10', '15', '20', '25', '30'],
+        points: [
+          { label: 'bus', minute: 25, detail: '7:55', open: true },
+          { label: 'finish', minute: 29, detail: '7:59' }
+        ],
+        jumps: [
+          { label: '4 + 12 + 13 = 29', fromMinute: 0, toMinute: 29 },
+          { label: '4 min late', fromMinute: 25, toMinute: 29 }
+        ],
+        blankNote: 'Start at 7:30. Add Austin\'s three chore intervals, then compare the finish point with the 7:55 bus point.',
+        solvedNote: 'Chores take 29 minutes, so Austin finishes at 7:59, which is 4 minutes after the bus arrives.',
+        solvedAnswer: 'Chores take 29 minutes; he finishes at 7:59 a.m. and is not done in time.',
+        equations: ['4 + 12 + 13 = 29', '7:30 + 29 minutes = 7:59'],
+        blankWorkspaceLabel: 'Use the line as minutes after 7:30. Mark the bus at 25 minutes and Austin\'s finish time at 29 minutes.',
+        meaning: 'The bus and finish points show whether Austin is done before 7:55.',
+        explanation: 'Austin needs 29 minutes after 7:30, so he finishes at 7:59. That is 4 minutes after 7:55.',
+        checks: [
+          'The three chore intervals add to 29 minutes.',
+          'The bus is 25 minutes after 7:30.',
+          'The finish point is after the bus point.'
+        ]
+      }),
+      timeLineProblem({
+        number: 5,
+        sourcePrompt: 'Gilberto\'s cat sleeps 23 minutes and wakes at the time shown on the clock.',
+        startLabel: '11:00',
+        endLabel: '12:00',
+        sourceItems: [
+          { label: 'wake clock', minute: 36, detail: 'wake clock - 11:36', kind: 'analog', status: 'provided' }
+        ],
+        points: [
+          { label: 'sleep start', minute: 13, detail: '11:13' },
+          { label: 'wake', minute: 36, detail: '11:36', open: true }
+        ],
+        jumps: [{ label: 'count back 23 min', fromMinute: 36, toMinute: 13 }],
+        blankNote: 'Read the source wake-up clock, then count back 23 minutes on the same hour line.',
+        solvedNote: 'The answer key gives 11:13, so the source wake-up clock is 23 minutes later.',
+        solvedAnswer: 'Gilberto\'s cat went to sleep at 11:13.',
+        equations: ['11:36 - 23 minutes = 11:13'],
+        blankWorkspaceLabel: 'Mark the wake-up time from the official clock, then move backward 23 minutes to find when the cat went to sleep.',
+        meaning: 'The start point is 23 minutes before the wake-up time.',
+        explanation: 'Counting back from 11:36 by 23 minutes lands on 11:13.',
+        checks: [
+          'The interval is 23 minutes.',
+          'The count moves backward because the start time is unknown.',
+          'The final time matches the Teacher Edition answer key.'
+        ]
+      })
     ]
   }),
   6: lesson({
@@ -1018,8 +1712,29 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         dataDisplay: dataTable('Benchmark estimates', ['Benchmark', 'Object', 'Actual'], [['1 kg', '____', '____'], ['100 g', '____', '____'], ['10 g', '____', '____'], ['1 g', '____', '____']]),
         solvedDataDisplay: checkTable('Benchmark estimates checked', [['1 kg benchmark', 'Reasonable classroom object named; actual weight checked with kilograms or grams.'], ['100 g benchmark', 'Reasonable classroom object named; actual weight checked in grams.'], ['10 g benchmark', 'Reasonable classroom object named; actual weight checked in grams.'], ['1 g benchmark', 'Reasonable classroom object named; actual weight checked in grams.']])
       }),
-      problem({ number: 2, sourcePrompt: 'Circle grams or kilograms for cereal, watermelon, postcard, cat, bicycle, and lemon.', solvedAnswer: 'Cereal grams; watermelon kilograms; postcard grams; cat kilograms; bicycle kilograms; lemon grams.', equations: ['350 g', '3 kg', '6 g', '4 kg', '15 kg', '58 g'], dataDisplay: dataTable('Reasonable units', ['Object', 'Unit'], [['Cereal', 'grams'], ['Watermelon', 'kilograms'], ['Postcard', 'grams'], ['Cat', 'kilograms'], ['Bicycle', 'kilograms'], ['Lemon', 'grams']]) }),
-      problem({ number: 3, sourcePrompt: 'A bottle of water weighs 1 kg. A laptop weighs the same as 2 bottles.', solvedAnswer: 'The laptop weighs 2 kilograms.', equations: ['1 kg + 1 kg = 2 kg'], quotient: 2, unitLabel: 'kilograms', knownGroupCount: 2, blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
+      problem({
+        number: 2,
+        sourcePrompt: 'Circle grams or kilograms for cereal, watermelon, postcard, cat, bicycle, and lemon.',
+        solvedAnswer: 'Cereal grams; watermelon kilograms; postcard grams; cat kilograms; bicycle kilograms; lemon grams.',
+        equations: ['350 g', '3 kg', '6 g', '4 kg', '15 kg', '58 g'],
+        dataDisplay: dataTable('Reasonable units', ['Object', 'Teacher Edition choice'], [
+          ['A box of cereal weighs about 350', 'grams / kilograms'],
+          ['A watermelon weighs about 3', 'grams / kilograms'],
+          ['A postcard weighs about 6', 'grams / kilograms'],
+          ['A cat weighs about 4', 'grams / kilograms'],
+          ['A bicycle weighs about 15', 'grams / kilograms'],
+          ['A lemon weighs about 58', 'grams / kilograms']
+        ]),
+        solvedDataDisplay: dataTable('Reasonable units checked', ['Object', 'Correct unit'], [
+          ['Cereal', 'grams'],
+          ['Watermelon', 'kilograms'],
+          ['Postcard', 'grams'],
+          ['Cat', 'kilograms'],
+          ['Bicycle', 'kilograms'],
+          ['Lemon', 'grams']
+        ])
+      }),
+      problem({ number: 3, sourcePrompt: 'A bottle of water weighs 1 kg. A laptop weighs the same as 2 bottles.', solvedAnswer: 'The laptop weighs 2 kilograms.', equations: ['1 kg + 1 kg = 2 kg'], knownTotal: 2, knownGroupCount: 2, knownGroupSize: 1, quotient: 2, unitLabel: 'kg', blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
       problem({ number: 4, sourcePrompt: 'Does 1 kg of rice weigh the same as ten 100 g bags of beans?', solvedAnswer: 'Yes. Ten 100-gram bags weigh 1,000 grams, or 1 kilogram.', equations: ['10 x 100 g = 1,000 g', '1,000 g = 1 kg'], knownTotal: 10, knownGroupSize: 1, quotient: 10, blankVisualType: 'bar-units', animationType: 'grouping-by-size' })
     ]
   }),
@@ -1037,9 +1752,9 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         dataDisplay: dataTable('Scale readings', ['Item', 'Weight'], [['String beans', '____ grams'], ['Grapes', '____ grams']]),
         solvedDataDisplay: dataTable('Scale readings', ['Item', 'Weight'], [['String beans', '464 grams'], ['Grapes', '355 grams']])
       }),
-      problem({ number: 2, sourcePrompt: 'Keiko weighs 35 kg and Jiro weighs 43 kg. Find total and difference.', solvedAnswer: 'Total = 78 kg; Jiro is 8 kg heavier.', equations: ['35 + 43 = 78', '43 - 35 = 8'], quotient: 78, unitLabel: 'kilograms', blankVisualType: 'tape-diagram', animationType: 'tape-split', knownTotal: 78, knownGroupCount: 2, shareLabels: ['Keiko', 'Jiro'] }),
-      problem({ number: 3, sourcePrompt: 'A houseplant is estimated as heavy as a 5 kg bowling ball. Estimate 3 houseplants.', solvedAnswer: 'About 15 kilograms.', equations: ['3 x 5 kg = 15 kg'], knownTotal: 15, knownGroupSize: 5, quotient: 3, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
-      problem({ number: 4, sourcePrompt: 'Jane and 8 friends share 27 kg of apples; then compare 7 pumpkins to Jane\'s share.', solvedAnswer: 'Jane takes about 3 kg; 7 pumpkins weigh about 21 kg.', equations: ['27 kg divided by 9 = 3 kg', '7 x 3 kg = 21 kg'], quotient: 3, animationType: 'two-step-model' })
+      problem({ number: 2, sourcePrompt: 'Keiko weighs 35 kg and Jiro weighs 43 kg. Find total and difference.', solvedAnswer: 'Total = 78 kg; Jiro is 8 kg heavier.', equations: ['35 + 43 = 78 kg', '43 - 35 = 8 kg'], quotient: 78, unitLabel: 'kg', blankVisualType: 'tape-diagram', animationType: 'tape-split', knownTotal: 78, knownGroupCount: 2, shareLabels: ['Keiko', 'Jiro'] }),
+      problem({ number: 3, sourcePrompt: 'A houseplant is estimated as heavy as a 5 kg bowling ball. Estimate 3 houseplants.', solvedAnswer: 'About 15 kilograms.', equations: ['3 x 5 kg = 15 kg'], knownTotal: 15, knownGroupCount: 3, knownGroupSize: 5, quotient: 3, unitLabel: 'kg', blankVisualType: 'tape-diagram', animationType: 'grouping-by-size' }),
+      problem({ number: 4, sourcePrompt: 'Jane and 8 friends share 27 kg of apples; then compare 7 pumpkins to Jane\'s share.', solvedAnswer: 'Jane takes about 3 kg; 7 pumpkins weigh about 21 kg.', equations: ['27 kg divided by 9 = 3 kg', '7 x 3 kg = 21 kg'], knownTotal: 27, knownGroupCount: 9, knownGroupSize: 3, quotient: 3, unitLabel: 'kg', blankVisualType: 'tape-diagram', animationType: 'two-step-model' })
     ]
   }),
   9: lesson({

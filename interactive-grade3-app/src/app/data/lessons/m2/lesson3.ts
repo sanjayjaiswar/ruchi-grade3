@@ -2,186 +2,124 @@ import type { LessonRuntimeConfig } from '../lesson-runtime.types';
 
 export const M2_LESSON3_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
-    "elapsed time",
-    "number line",
-    "round"
+    'fives',
+    'ones',
+    'nearest minute',
+    'number line',
+    'clock'
   ],
   lessonAnimation: {
-    kind: "clock",
-    title: "Lesson 3 animation: Count by fives and ones on the number line as a strateg",
-    context: "T: Use your ruler to draw a 12-centimeter line on your personal white board.",
-    equation: "12 sec start -> 12 sec elapsed -> 60 sec end",
-    teacherPrompt: "Look at Problem 1. Talk to a partner: How is the number line similar to the analog clock? How is it different?",
+    kind: 'clock',
+    title: 'Lesson 3 animation: count fives, then ones',
+    context: 'Use the 0-60 minute line from Lesson 2, then count the small one-minute ticks between the fives to tell exact clock times.',
+    equation: '(7 x 5) + 2 = 37 minutes',
+    teacherPrompt: 'Count by fives to the benchmark minute, then count ones to the exact minute. Transfer that exact minute position to the clock.',
     focus: [
-      "elapsed time",
-      "number line",
-      "clock",
-      "source labels"
+      '5-minute benchmarks',
+      'one-minute ticks',
+      'exact clock time',
+      'continuous number line'
     ],
     clockLabels: [
-      "12 sec start",
-      "12 sec elapsed",
-      "60 sec end"
+      '35 min',
+      '+1',
+      '+2',
+      '37 min'
     ]
   },
-
-
   teacherEditionSteps: [
     {
-      id: "source-goal",
-      title: "Lesson 3: source objective",
-      shortTitle: "Goal",
-      studentPrompt: "Count by fives and ones on the number line as a strategy to tell time to the nearest minute on the clock.",
-      teacherEditionBasis: "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 37-49. Lesson 3 objective, concept development, problem set, exit ticket, and homework.",
-      visualModel: "clock"
+      id: 'source-goal',
+      title: 'Lesson 3: source objective',
+      shortTitle: 'Goal',
+      studentPrompt: 'Count by fives and ones on the number line as a strategy to tell time to the nearest minute on the clock.',
+      teacherEditionBasis: 'EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 37-49. Lesson 3 objective, Concept Development, Problem Set, and Student Debrief.',
+      visualModel: 'number-line'
     },
     {
-      id: "source-model",
-      title: "Teacher source excerpt",
-      shortTitle: "Model",
-      studentPrompt: "T: Use your ruler to draw a 12-centimeter line on your personal white board. Start at the 0 mark, and make a tick mark at each centimeter up to the number 12. Label the first tick mark 0 and the last tick mark 60. Then, count by fives from 0 to 60 to label each interval, like we did in the last lesson. S: (Draw and label a number line as shown.) 0 5 10 15 20 25 30 35 40 45 50 55 60 T: Put your finger on 0.",
-      teacherEditionBasis: "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 37-49. Lesson 3 objective, concept development, problem set, exit ticket, and homework.",
-      visualModel: "clock"
+      id: 'source-model',
+      title: 'Teacher source concept',
+      shortTitle: 'Model',
+      studentPrompt: 'Draw a 0-60 minute number line, label the fives, then imagine or mark the one-minute ticks inside each five-minute interval.',
+      teacherEditionBasis: 'Teacher Edition Lesson 3 Concept Development, Problem 1.',
+      visualModel: 'number-line'
     },
     {
-      id: "source-meaning",
-      title: "Teacher move from source",
-      shortTitle: "Meaning",
-      studentPrompt: "Look at Problem 1. Talk to a partner: How is the number line similar to the analog clock? How is it different?",
-      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 3 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
-      visualModel: "clock"
+      id: 'source-meaning',
+      title: 'Key teaching move',
+      shortTitle: 'Meaning',
+      studentPrompt: 'For 7:37, count seven fives to 35 and two ones to 37. The equation (7 x 5) + 2 = 37 explains the minute position.',
+      teacherEditionBasis: 'Teacher Edition Lesson 3 Concept Development, Problem 2.',
+      visualModel: 'number-line'
     },
     {
-      id: "source-picture",
-      title: "Student workbook Problem Set",
-      shortTitle: "Picture",
-      studentPrompt: "Use the official Module 2 Lesson 3 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
-      teacherEditionBasis: "Module 2 student workbook, Lesson 3 Problem Set.",
-      visualModel: "clock"
+      id: 'source-picture',
+      title: 'Problem Set reference',
+      shortTitle: 'Set',
+      studentPrompt: 'The Problem Set asks students to match clocks to exact-minute points, draw hands for 6:48 and 8:23, read Rebecca\'s 5:27 clock, and count back 11 minutes for Mason.',
+      teacherEditionBasis: 'Module 2 Lesson 3 Problem Set, pages 44-45.',
+      visualModel: 'clock'
     },
     {
-      id: "source-draw",
-      title: "Teacher edition reference",
-      shortTitle: "Draw",
-      studentPrompt: "Use the official Lesson 3 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
-      teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 37-49.",
-      visualModel: "clock"
+      id: 'source-draw',
+      title: 'Clock connection',
+      shortTitle: 'Clock',
+      studentPrompt: 'The clock is a circular number line. The large numbers mark fives, and the small marks between them are ones.',
+      teacherEditionBasis: 'Teacher Edition Lesson 3 Concept Development, Problem 3.',
+      visualModel: 'clock'
     },
     {
-      id: "source-exit",
-      title: "Exit evidence from source",
-      shortTitle: "Exit",
-      studentPrompt: "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context.",
-      teacherEditionBasis: "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 37-49. Lesson 3 objective, concept development, problem set, exit ticket, and homework.",
-      visualModel: "clock"
+      id: 'source-exit',
+      title: 'Answer-key evidence',
+      shortTitle: 'Check',
+      studentPrompt: 'Solved work must preserve exact minutes: 7:17, 7:03, 7:55, 7:41, 6:48, 8:23, 5:27, 3:56, and 3:45.',
+      teacherEditionBasis: 'Teacher Edition Lesson 3 Answer Key, Problem Set.',
+      visualModel: 'number-line'
     },
     {
-      id: "source-summary",
-      title: "Debrief focus from source",
-      shortTitle: "Sum",
-      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 3 objective: Count by fives and ones on the number line as a strategy to tell time to the nearest minute on the clock.",
-      teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 37-49.",
-      visualModel: "clock"
+      id: 'source-summary',
+      title: 'Debrief focus from source',
+      shortTitle: 'Sum',
+      studentPrompt: 'Compare the number line and analog clock, then explain which strategy helps draw hands or read a clock to the nearest minute.',
+      teacherEditionBasis: 'Teacher Edition Lesson 3 Student Debrief.',
+      visualModel: 'number-line'
     }
   ],
   sourceRows: {
-    "source-goal": [
-      {
-        label: "Source",
-        value: "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 37-49. Lesson 3 objective, concept development, problem set, exit ticket, and homework."
-      },
-      {
-        label: "Source text",
-        value: "Count by fives and ones on the number line as a strategy to tell time to the nearest minute on the clock."
-      },
-      {
-        label: "Workbook",
-        value: "Module 2 student workbook, Lesson 3 Problem Set."
-      }
+    'source-goal': [
+      { label: 'Source', value: 'EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 37-49.' },
+      { label: 'Source text', value: 'Count by fives and ones on the number line as a strategy to tell time to the nearest minute on the clock.' },
+      { label: 'Workbook', value: 'Module 2 student workbook, Lesson 3 Problem Set.' }
     ],
-    "source-model": [
-      {
-        label: "Source",
-        value: "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 37-49. Lesson 3 objective, concept development, problem set, exit ticket, and homework."
-      },
-      {
-        label: "Source text",
-        value: "T: Use your ruler to draw a 12-centimeter line on your personal white board. Start at the 0 mark, and make a tick mark at each centimeter up to the number 12. Label the first tick mark 0 and the last tick mark 60. Then, count by fives from 0 to 60 to label each interval, like we did in the last lesson. S: (Draw and label a number line as shown.) 0 5 10 15 20 25 30 35 40 45 50 55 60 T: Put your finger on 0."
-      },
-      {
-        label: "Workbook",
-        value: "Module 2 student workbook, Lesson 3 Problem Set."
-      }
+    'source-model': [
+      { label: 'Source', value: 'Lesson 3 Concept Development, Problem 1.' },
+      { label: 'Source text', value: 'Students draw a 12-centimeter line, label 0 and 60, count by fives, and then use one-minute ticks to locate 58, 22, and 4.' },
+      { label: 'Presentation rule', value: 'Show both levels of structure: the fives as anchors and the ones inside each interval.' }
     ],
-    "source-meaning": [
-      {
-        label: "Source",
-        value: "Problem Set (10 minutes): Students complete the Lesson 3 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
-      },
-      {
-        label: "Source text",
-        value: "Look at Problem 1. Talk to a partner: How is the number line similar to the analog clock? How is it different?"
-      },
-      {
-        label: "Workbook",
-        value: "Module 2 student workbook, Lesson 3 Problem Set."
-      }
+    'source-meaning': [
+      { label: 'Source', value: 'Lesson 3 Concept Development, Problem 2.' },
+      { label: 'Source text', value: 'The teacher models 7:37 as seven fives plus two ones, then repeats with 7:13, 7:49, and 7:02.' },
+      { label: 'Equation', value: '(7 x 5) + 2 = 37 minutes.' }
     ],
-    "source-picture": [
-      {
-        label: "Source",
-        value: "Module 2 student workbook, Lesson 3 Problem Set."
-      },
-      {
-        label: "Source text",
-        value: "Use the official Module 2 Lesson 3 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
-      },
-      {
-        label: "Workbook",
-        value: "Module 2 student workbook, Lesson 3 Problem Set."
-      }
+    'source-picture': [
+      { label: 'Source', value: 'Module 2 Lesson 3 Problem Set, pages 44-45.' },
+      { label: 'Source text', value: 'Students match clock faces to exact points, draw clock hands, read a clock, and count back 11 minutes from Mason\'s drop-off time.' },
+      { label: 'Solved view requirement', value: 'Do not round exact minutes to the nearest five; show the leftover one-minute count.' }
     ],
-    "source-draw": [
-      {
-        label: "Source",
-        value: "Module 2 Teacher Edition, lesson pages 37-49."
-      },
-      {
-        label: "Source text",
-        value: "Use the official Lesson 3 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
-      },
-      {
-        label: "Workbook",
-        value: "Module 2 student workbook, Lesson 3 Problem Set."
-      }
+    'source-draw': [
+      { label: 'Source', value: 'Lesson 3 Concept Development, Problem 3.' },
+      { label: 'Source text', value: 'The analog clock is treated as a circular number line with small tick marks for one-minute counts.' },
+      { label: 'Visual', value: 'Use a straight line to make the minute count visible before students interpret the circular clock.' }
     ],
-    "source-exit": [
-      {
-        label: "Source",
-        value: "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 37-49. Lesson 3 objective, concept development, problem set, exit ticket, and homework."
-      },
-      {
-        label: "Source text",
-        value: "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
-      },
-      {
-        label: "Workbook",
-        value: "Module 2 student workbook, Lesson 3 Problem Set."
-      }
+    'source-exit': [
+      { label: 'Source', value: 'Lesson 3 Teacher Edition Answer Key.' },
+      { label: 'Source text', value: 'Problem Set answers include exact times such as 6:48, 8:23, 5:27, 3:56, and 3:45.' },
+      { label: 'Check', value: 'Every solved response should include the exact minute and the correct hour context.' }
     ],
-    "source-summary": [
-      {
-        label: "Source",
-        value: "Module 2 Teacher Edition, lesson pages 37-49."
-      },
-      {
-        label: "Source text",
-        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 3 objective: Count by fives and ones on the number line as a strategy to tell time to the nearest minute on the clock."
-      },
-      {
-        label: "Workbook",
-        value: "Module 2 student workbook, Lesson 3 Problem Set."
-      }
+    'source-summary': [
+      { label: 'Source', value: 'Lesson 3 Student Debrief.' },
+      { label: 'Source text', value: 'Students compare the number line and analog clock and discuss strategies for drawing clock hands.' },
+      { label: 'Summary', value: 'Fives give fast benchmarks; ones finish the exact minute.' }
     ]
   }
 };

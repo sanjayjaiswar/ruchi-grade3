@@ -489,6 +489,192 @@ function twoStepTapeSection(
   return undefined;
 }
 
+function lesson20Visual(problemNumber: 1 | 2 | 3 | 4 | 5, solved: boolean): ProblemVisualSpec {
+  const sourceNote = solved
+    ? 'Solved view follows the Lesson 20 Teacher Edition sample work: find the first unknown, then use it to answer the second question.'
+    : 'Blank view keeps the Teacher Edition RDW structure and marks the first unknown before the final answer.';
+
+  if (problemNumber === 1) {
+    return {
+      title: 'Problem 1: books plus magazine',
+      sourceNote,
+      sections: [
+        {
+          kind: 'tape',
+          label: 'Tape model',
+          totalLabel: solved ? '$28 total spent' : '? total spent',
+          parts: [
+            { label: '$8', sublabel: 'book' },
+            { label: '$8', sublabel: 'book' },
+            { label: '$8', sublabel: 'book' },
+            { label: '$4', sublabel: 'magazine' }
+          ],
+          braces: [
+            { label: solved ? 'Find first: $24 book cost' : 'Find first: ? book cost', startPart: 0, partCount: 3 }
+          ],
+          caption: '3 books at $8 each, then add the $4 magazine.'
+        },
+        {
+          kind: 'equations',
+          label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
+          lines: solved ? ['3 x 8 = 24', '24 + 4 = 28'] : ['3 x 8 = ____', '____ + 4 = ____']
+        },
+        {
+          kind: 'note',
+          label: solved ? 'Answer sentence' : 'Workspace direction',
+          text: solved
+            ? 'The books cost $24. Ted spends $28 altogether.'
+            : 'Find the book cost first. Then add the magazine cost to find how much Ted spends altogether.'
+        }
+      ]
+    };
+  }
+
+  if (problemNumber === 2) {
+    return {
+      title: 'Problem 2: silly bands for 3 children',
+      sourceNote,
+      sections: [
+        {
+          kind: 'tape',
+          label: 'Tape model',
+          totalLabel: '28 silly bands',
+          parts: Array.from({ length: 7 }, () => ({ label: solved ? '4' : '?' })),
+          braces: [
+            { label: solved ? 'Find first: 4 for 1 child' : 'Find first: ? for 1 child', startPart: 0, partCount: 1 },
+            { label: solved ? 'Then 3 children: 12' : 'Then 3 children: ?', startPart: 0, partCount: 3 }
+          ],
+          caption: 'Seven children share 28 silly bands equally.'
+        },
+        {
+          kind: 'equations',
+          label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
+          lines: solved ? ['28 ÷ 7 = 4', '3 x 4 = 12'] : ['28 ÷ 7 = ____', '3 x ____ = ____']
+        },
+        {
+          kind: 'note',
+          label: solved ? 'Answer sentence' : 'Workspace direction',
+          text: solved
+            ? 'Each child gets 4 silly bands. Three children get 12 silly bands.'
+            : 'Find one child’s share first. Then use 3 equal shares to answer the second question.'
+        }
+      ]
+    };
+  }
+
+  if (problemNumber === 3) {
+    return {
+      title: 'Problem 3: unbroken cups',
+      sourceNote,
+      sections: [
+        {
+          kind: 'tape',
+          label: 'Tape model',
+          totalLabel: '18 cups',
+          parts: Array.from({ length: 6 }, (_, index) => ({
+            label: solved ? '3' : '?',
+            sublabel: `box ${index + 1}`,
+            emphasize: index >= 2,
+            muted: index < 2
+          })),
+          braces: [
+            { label: solved ? '4 unbroken boxes: 12 cups' : '4 unbroken boxes: ? cups', startPart: 2, partCount: 4 }
+          ],
+          caption: 'Two boxes break, so the unbroken cups are in the 4 remaining boxes.'
+        },
+        {
+          kind: 'equations',
+          label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
+          lines: solved ? ['18 ÷ 6 = 3', '6 - 2 = 4', '4 x 3 = 12'] : ['18 ÷ 6 = ____', '6 - 2 = ____', '____ x ____ = ____']
+        },
+        {
+          kind: 'note',
+          label: solved ? 'Answer sentence' : 'Workspace direction',
+          text: solved
+            ? 'Each box has 3 cups. Four boxes are unbroken, so 12 cups are unbroken.'
+            : 'Find cups per box first. Then count only the 4 boxes that did not break.'
+        }
+      ]
+    };
+  }
+
+  if (problemNumber === 4) {
+    return {
+      title: 'Problem 4: blue and red balloons per child',
+      sourceNote,
+      sections: [
+        {
+          kind: 'tape',
+          label: 'Blue balloons',
+          totalLabel: '25 blue balloons',
+          parts: Array.from({ length: 5 }, () => ({ label: solved ? '5' : '?' })),
+          braces: [
+            { label: solved ? '1 child gets 5 blue' : '1 child gets ? blue', startPart: 0, partCount: 1 }
+          ],
+          caption: 'Five children share the blue balloons equally.'
+        },
+        {
+          kind: 'tape',
+          label: 'Red balloons',
+          totalLabel: '15 red balloons',
+          parts: Array.from({ length: 5 }, () => ({ label: solved ? '3' : '?' })),
+          braces: [
+            { label: solved ? '1 child gets 3 red' : '1 child gets ? red', startPart: 0, partCount: 1 }
+          ],
+          caption: 'The same five children share the red balloons equally.'
+        },
+        {
+          kind: 'equations',
+          label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
+          lines: solved ? ['25 ÷ 5 = 5', '15 ÷ 5 = 3', '5 + 3 = 8'] : ['25 ÷ 5 = ____', '15 ÷ 5 = ____', '____ + ____ = ____']
+        },
+        {
+          kind: 'note',
+          label: solved ? 'Answer sentence' : 'Workspace direction',
+          text: solved
+            ? 'Each child gets 5 blue balloons and 3 red balloons, 8 balloons total.'
+            : 'Find one child’s blue share and red share separately. Then combine those two shares.'
+        }
+      ]
+    };
+  }
+
+  return {
+    title: 'Problem 5: pear bags left',
+    sourceNote,
+    sections: [
+      {
+        kind: 'tape',
+        label: 'Tape model',
+        totalLabel: '27 pears',
+        parts: Array.from({ length: 9 }, (_, index) => ({
+          label: '3',
+          sublabel: `bag ${index + 1}`,
+          muted: index < 5,
+          emphasize: index >= 5
+        })),
+        braces: [
+          { label: '5 bags sold', startPart: 0, partCount: 5 },
+          { label: solved ? '4 bags left' : '? bags left', startPart: 5, partCount: 4 }
+        ],
+        caption: 'Each bag has 3 pears. Five bags are sold.'
+      },
+      {
+        kind: 'equations',
+        label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
+        lines: solved ? ['27 ÷ 3 = 9', '9 - 5 = 4'] : ['27 ÷ 3 = ____', '____ - 5 = ____']
+      },
+      {
+        kind: 'note',
+        label: solved ? 'Answer sentence' : 'Workspace direction',
+        text: solved
+          ? 'There are 9 bags at first. After 5 bags are sold, 4 bags are left.'
+          : 'Find the starting number of bags first. Then subtract the 5 sold bags.'
+      }
+    ]
+  };
+}
+
 function lesson19Problem1Visual(solved: boolean): ProblemVisualSpec {
   const rows = [
     {
@@ -590,11 +776,13 @@ function lesson19Problem1Visual(solved: boolean): ProblemVisualSpec {
 }
 
 function lesson19Problem2Visual(solved: boolean): ProblemVisualSpec {
+  const buckets = ['24 ÷ 2', '36 ÷ 3', '39 ÷ 3', '26 ÷ 2'];
+  const balls = ['(30 ÷ 3) + (6 ÷ 3)', '(30 ÷ 3) + (9 ÷ 3)', '(20 ÷ 2) + (6 ÷ 2)', '(20 ÷ 2) + (4 ÷ 2)'];
   const matches = [
-    { bucket: '24 ÷ 2', ball: '(20 ÷ 2) + (4 ÷ 2)', answer: '12', sourceMatch: 'first bucket to fourth ball' },
-    { bucket: '36 ÷ 3', ball: '(30 ÷ 3) + (6 ÷ 3)', answer: '12', sourceMatch: 'second bucket to first ball' },
-    { bucket: '39 ÷ 3', ball: '(30 ÷ 3) + (9 ÷ 3)', answer: '13', sourceMatch: 'third bucket to second ball' },
-    { bucket: '26 ÷ 2', ball: '(20 ÷ 2) + (6 ÷ 2)', answer: '13', sourceMatch: 'fourth bucket to third ball' }
+    { topIndex: 0, bottomIndex: 3, label: 'quotient 12' },
+    { topIndex: 1, bottomIndex: 0, label: 'quotient 12' },
+    { topIndex: 2, bottomIndex: 1, label: 'quotient 13' },
+    { topIndex: 3, bottomIndex: 2, label: 'quotient 13' }
   ];
 
   return {
@@ -604,15 +792,17 @@ function lesson19Problem2Visual(solved: boolean): ProblemVisualSpec {
       : 'Blank view keeps the bucket expressions and ball expressions separate for matching.',
     sections: [
       {
-        kind: 'data-table',
-        label: solved ? 'Teacher Edition answer-key matches' : 'Bucket expressions and ball choices',
-        columns: solved ? ['Bucket', 'Matching ball', 'Quotient', 'Answer-key order'] : ['Bucket expression', 'Ball choices'],
-        rows: solved
-          ? matches.map((match) => [match.bucket, match.ball, match.answer, match.sourceMatch])
-          : matches.map((match, index) => [
-              match.bucket,
-              ['(30 ÷ 3) + (6 ÷ 3)', '(30 ÷ 3) + (9 ÷ 3)', '(20 ÷ 2) + (6 ÷ 2)', '(20 ÷ 2) + (4 ÷ 2)'][index]
-            ])
+        kind: 'expression-match',
+        label: solved ? 'Teacher Edition answer-key matches' : 'Match the equal expressions',
+        topLabel: 'Buckets',
+        bottomLabel: 'Balls',
+        topItems: buckets,
+        bottomItems: balls,
+        matches,
+        showMatches: solved,
+        note: solved
+          ? 'Answer key order: first bucket to fourth ball; second to first; third to second; fourth to third.'
+          : 'Match each bucket to the ball expression with the same quotient.'
       },
       {
         kind: 'note',
@@ -2665,14 +2855,8 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         groupLabel: 'steps',
         blankVisualType: 'tape-diagram',
         animationType: 'two-step-model',
-        blankVisual: twoStepVisual('Problem 1: books plus magazine', [
-          { step: '1', model: '3 books at $8 each', blank: '3 x 8 = ____', solved: '3 x 8 = 24' },
-          { step: '2', model: '$24 books plus $4 magazine', blank: '____ + 4 = ____', solved: '24 + 4 = 28' }
-        ], ['3 x 8 = 24', '24 + 4 = 28'], 'The books cost $24. Ted spends $28 altogether.', false),
-        solvedVisual: twoStepVisual('Problem 1: books plus magazine', [
-          { step: '1', model: '3 books at $8 each', blank: '3 x 8 = ____', solved: '3 x 8 = 24' },
-          { step: '2', model: '$24 books plus $4 magazine', blank: '____ + 4 = ____', solved: '24 + 4 = 28' }
-        ], ['3 x 8 = 24', '24 + 4 = 28'], 'The books cost $24. Ted spends $28 altogether.', true),
+        blankVisual: lesson20Visual(1, false),
+        solvedVisual: lesson20Visual(1, true),
         blankWorkspaceLabel: 'Find the book cost first, then add the magazine.',
         blankPrompts: [
           'Use 3 equal $8 book units.',
@@ -2698,14 +2882,8 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         groupLabel: 'children',
         blankVisualType: 'tape-diagram',
         animationType: 'two-step-model',
-        blankVisual: twoStepVisual('Problem 2: silly bands for 3 children', [
-          { step: '1', model: '28 silly bands shared by 7 children', blank: '28 ÷ 7 = ____', solved: '28 ÷ 7 = 4' },
-          { step: '2', model: '3 children each get 4', blank: '3 x ____ = ____', solved: '3 x 4 = 12' }
-        ], ['28 ÷ 7 = 4', '3 x 4 = 12'], 'Each child gets 4 silly bands. Three children get 12 silly bands.', false),
-        solvedVisual: twoStepVisual('Problem 2: silly bands for 3 children', [
-          { step: '1', model: '28 silly bands shared by 7 children', blank: '28 ÷ 7 = ____', solved: '28 ÷ 7 = 4' },
-          { step: '2', model: '3 children each get 4', blank: '3 x ____ = ____', solved: '3 x 4 = 12' }
-        ], ['28 ÷ 7 = 4', '3 x 4 = 12'], 'Each child gets 4 silly bands. Three children get 12 silly bands.', true),
+        blankVisual: lesson20Visual(2, false),
+        solvedVisual: lesson20Visual(2, true),
         blankWorkspaceLabel: 'Find one child’s share first, then use 3 children.',
         blankPrompts: [
           'Partition 28 into 7 equal child units.',
@@ -2731,14 +2909,8 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         groupLabel: 'boxes',
         blankVisualType: 'tape-diagram',
         animationType: 'two-step-model',
-        blankVisual: twoStepVisual('Problem 3: unbroken cups', [
-          { step: '1', model: '18 cups in 6 equal boxes', blank: '18 ÷ 6 = ____', solved: '18 ÷ 6 = 3' },
-          { step: '2', model: '2 boxes break, so 4 boxes remain', blank: '(6 - 2) x ____ = ____', solved: '4 x 3 = 12' }
-        ], ['18 ÷ 6 = 3', '6 - 2 = 4', '4 x 3 = 12'], 'Each box has 3 cups. Four boxes are unbroken, so 12 cups are unbroken.', false),
-        solvedVisual: twoStepVisual('Problem 3: unbroken cups', [
-          { step: '1', model: '18 cups in 6 equal boxes', blank: '18 ÷ 6 = ____', solved: '18 ÷ 6 = 3' },
-          { step: '2', model: '2 boxes break, so 4 boxes remain', blank: '(6 - 2) x ____ = ____', solved: '4 x 3 = 12' }
-        ], ['18 ÷ 6 = 3', '6 - 2 = 4', '4 x 3 = 12'], 'Each box has 3 cups. Four boxes are unbroken, so 12 cups are unbroken.', true),
+        blankVisual: lesson20Visual(3, false),
+        solvedVisual: lesson20Visual(3, true),
         blankWorkspaceLabel: 'Find cups per box, then remove the broken boxes.',
         blankPrompts: [
           'Divide 18 cups by 6 boxes.',
@@ -2764,14 +2936,8 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         groupLabel: 'children',
         blankVisualType: 'tape-diagram',
         animationType: 'two-step-model',
-        blankVisual: twoStepVisual('Problem 4: blue and red balloons per child', [
-          { step: '1', model: '25 blue balloons shared by 5 children', blank: '25 ÷ 5 = ____', solved: '25 ÷ 5 = 5' },
-          { step: '2', model: '15 red balloons shared by 5 children', blank: '15 ÷ 5 = ____; ____ + ____ = ____', solved: '15 ÷ 5 = 3; 5 + 3 = 8' }
-        ], ['25 ÷ 5 = 5', '15 ÷ 5 = 3', '5 + 3 = 8'], 'Each child gets 5 blue balloons and 3 red balloons, 8 balloons total.', false),
-        solvedVisual: twoStepVisual('Problem 4: blue and red balloons per child', [
-          { step: '1', model: '25 blue balloons shared by 5 children', blank: '25 ÷ 5 = ____', solved: '25 ÷ 5 = 5' },
-          { step: '2', model: '15 red balloons shared by 5 children', blank: '15 ÷ 5 = ____; ____ + ____ = ____', solved: '15 ÷ 5 = 3; 5 + 3 = 8' }
-        ], ['25 ÷ 5 = 5', '15 ÷ 5 = 3', '5 + 3 = 8'], 'Each child gets 5 blue balloons and 3 red balloons, 8 balloons total.', true),
+        blankVisual: lesson20Visual(4, false),
+        solvedVisual: lesson20Visual(4, true),
         blankWorkspaceLabel: 'Divide each color separately, then combine one child’s shares.',
         blankPrompts: [
           'Find blue balloons per child.',
@@ -2797,14 +2963,8 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         groupLabel: 'steps',
         blankVisualType: 'bar-units',
         animationType: 'two-step-model',
-        blankVisual: twoStepVisual('Problem 5: pear bags left', [
-          { step: '1', model: '27 pears packed in bags of 3', blank: '27 ÷ 3 = ____', solved: '27 ÷ 3 = 9' },
-          { step: '2', model: '5 bags are sold', blank: '____ - 5 = ____', solved: '9 - 5 = 4' }
-        ], ['27 ÷ 3 = 9', '9 - 5 = 4'], 'There are 9 bags at first. After 5 bags are sold, 4 bags are left.', false),
-        solvedVisual: twoStepVisual('Problem 5: pear bags left', [
-          { step: '1', model: '27 pears packed in bags of 3', blank: '27 ÷ 3 = ____', solved: '27 ÷ 3 = 9' },
-          { step: '2', model: '5 bags are sold', blank: '____ - 5 = ____', solved: '9 - 5 = 4' }
-        ], ['27 ÷ 3 = 9', '9 - 5 = 4'], 'There are 9 bags at first. After 5 bags are sold, 4 bags are left.', true),
+        blankVisual: lesson20Visual(5, false),
+        solvedVisual: lesson20Visual(5, true),
         blankWorkspaceLabel: 'Find the starting number of bags, then subtract the sold bags.',
         blankPrompts: [
           'Use groups of 3 pears to find the number of bags.',

@@ -4,13 +4,13 @@
     <span>{{ mode === 'solved' ? 'Solved visual' : 'Blank visual' }}</span>
   </header>
 
-  <article class="visual-section" *ngFor="let section of spec.sections">
+  <article class="visual-section" *ngFor="let section of visibleSections(spec.sections)">
     <ng-container *ngIf="cardGridSection(section) as cardGrid">
       <strong *ngIf="cardGrid.label">{{ cardGrid.label }}</strong>
       <div class="visual-card-grid">
         <article class="visual-sub-card" *ngFor="let card of cardGrid.cards">
           <strong>{{ card.label }}</strong>
-          <ng-container *ngFor="let child of card.sections">
+          <ng-container *ngFor="let child of visibleSections(card.sections)">
             <ng-container *ngIf="arraySection(child) as array">
               <strong *ngIf="array.label">{{ array.label }}</strong>
               <div class="visual-array" [ngClass]="'is-' + array.item" [style.gridTemplateColumns]="arrayColumns(array)">
@@ -35,7 +35,7 @@
             <ng-container *ngIf="tapeSection(child) as tape">
               <strong *ngIf="tape.label">{{ tape.label }}</strong>
               <div class="visual-tape">
-                <b>{{ tape.totalLabel }}</b>
+                <b class="visual-tape-whole-label">{{ tape.totalLabel }}</b>
                 <div [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
                   <span
                     *ngFor="let part of tape.parts"
@@ -43,9 +43,36 @@
                     [class.is-muted]="part.muted"
                     [class.is-blank]="!part.label">
                     {{ part.label || '?' }}
+                    <em *ngIf="part.sublabel">{{ part.sublabel }}</em>
+                  </span>
+                </div>
+                <div
+                  class="visual-tape-braces"
+                  *ngIf="tape.braces?.length"
+                  [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
+                  <span
+                    *ngFor="let brace of tape.braces"
+                    [style.gridColumn]="tapeBraceGridColumn(brace)">
+                    <i></i>
+                    <b>{{ brace.label }}</b>
                   </span>
                 </div>
                 <small *ngIf="tape.caption">{{ tape.caption }}</small>
+              </div>
+            </ng-container>
+
+            <ng-container *ngIf="fractionStripSection(child) as fractionStrip">
+              <strong *ngIf="fractionStrip.label">{{ fractionStrip.label }}</strong>
+              <div class="visual-fraction-strip">
+                <b>{{ fractionStrip.wholeLabel }}</b>
+                <div [style.gridTemplateColumns]="fractionStripColumns(fractionStrip)">
+                  <span
+                    *ngFor="let part of range(fractionStrip.denominator); let partIndex = index"
+                    [class.is-shaded]="fractionStripIsShaded(fractionStrip, partIndex)">
+                    {{ fractionStripCellLabel(fractionStrip, partIndex) }}
+                  </span>
+                </div>
+                <small *ngIf="fractionStrip.caption">{{ fractionStrip.caption }}</small>
               </div>
             </ng-container>
 
@@ -72,6 +99,89 @@
       <small *ngIf="array.caption" class="visual-array-caption">{{ array.caption }}</small>
     </ng-container>
 
+    <ng-container *ngIf="floorPlanSection(section) as plan">
+      <strong *ngIf="plan.label">{{ plan.label }}</strong>
+      <div class="visual-floor-plan" [style.aspectRatio]="plan.widthUnits + ' / ' + plan.heightUnits">
+        <span
+          class="visual-floor-room"
+          *ngFor="let room of plan.rooms"
+          [ngClass]="'is-' + (room.tone || 'given')"
+          [style.left.%]="floorRoomLeft(plan, room)"
+          [style.top.%]="floorRoomTop(plan, room)"
+          [style.width.%]="floorRoomWidth(plan, room)"
+          [style.height.%]="floorRoomHeight(plan, room)">
+          <b>{{ room.label }}</b>
+          <em>{{ mode === 'solved' && room.area !== undefined ? room.area + ' sq cm' : 'area = ____' }}</em>
+          <small *ngIf="mode === 'solved' && (room.lengthLabel || room.widthLabel)">
+            {{ room.lengthLabel }} x {{ room.widthLabel }}
+          </small>
+        </span>
+      </div>
+      <small *ngIf="plan.caption" class="visual-array-caption">{{ plan.caption }}</small>
+    </ng-container>
+
+    <ng-container *ngIf="linePlotSection(section) as plot">
+      <strong *ngIf="plot.label">{{ plot.label }}</strong>
+      <div class="visual-line-plot">
+        <div class="visual-line-plot-stacks" [style.gridTemplateColumns]="linePlotColumns(plot)">
+          <div
+            *ngFor="let item of plot.values"
+            class="visual-line-plot-stack"
+            [class.is-target]="item.target">
+            <span class="visual-line-plot-x" *ngFor="let x of linePlotXs(plot, item)">
+              {{ mode === 'blank' && !plot.showBlankValues ? '?' : 'X' }}
+            </span>
+          </div>
+        </div>
+        <div class="visual-line-plot-axis" [style.gridTemplateColumns]="linePlotColumns(plot)">
+          <span *ngFor="let item of plot.values">{{ item.label }}</span>
+        </div>
+        <p *ngIf="plot.axisLabel">{{ plot.axisLabel }}</p>
+        <small>{{ plot.keyLabel || plot.caption || 'Each X represents one source data value.' }}</small>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="dataChartSection(section) as chart">
+      <strong *ngIf="chart.label">{{ chart.label }}</strong>
+      <div class="visual-data-chart" [ngClass]="'is-' + chart.chart">
+        <div class="visual-data-chart-row" *ngFor="let item of chart.values" [class.is-target]="item.target">
+          <b>{{ item.label }}</b>
+          <div class="visual-data-chart-bar" *ngIf="chart.chart === 'bar'">
+            <span [style.width]="chartBarWidth(chart, item)"></span>
+          </div>
+          <div class="visual-data-chart-symbols" *ngIf="chart.chart === 'picture'">
+            <span class="visual-data-chart-symbol" *ngFor="let symbol of chartSymbols(chart, item)"></span>
+          </div>
+          <div class="visual-data-chart-tallies" *ngIf="chart.chart === 'tally'">
+            <span class="visual-data-chart-tally-group" *ngFor="let group of chartTallyGroups(chart, item)">
+              <i></i><i></i><i></i><i></i><i></i>
+            </span>
+          </div>
+          <em>{{ chartValueLabel(chart, item) }}</em>
+        </div>
+        <small>{{ chart.scaleLabel || chart.keyLabel || chart.caption || 'Read the display using the source scale or key.' }}</small>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="geometryDiagramSection(section) as diagram">
+      <strong *ngIf="diagram.label">{{ diagram.label }}</strong>
+      <div class="visual-geometry-diagram" [ngClass]="'is-' + diagram.diagram">
+        <span
+          class="visual-geometry-shape"
+          *ngFor="let shape of diagram.shapes"
+          [ngClass]="['is-' + shape.shape, 'is-' + (shape.tone || 'given')]"
+          [style.left.%]="geometryShapeLeft(shape)"
+          [style.top.%]="geometryShapeTop(shape)"
+          [style.width.%]="geometryShapeWidth(shape)"
+          [style.height.%]="geometryShapeHeight(shape)">
+          <b>{{ shape.label }}</b>
+          <em *ngIf="shape.valueLabel">{{ shape.valueLabel }}</em>
+          <small *ngIf="shape.sideLabels?.length">{{ shape.sideLabels?.join(' | ') }}</small>
+        </span>
+      </div>
+      <small *ngIf="diagram.caption" class="visual-array-caption">{{ diagram.caption }}</small>
+    </ng-container>
+
     <ng-container *ngIf="relatedFactsSection(section) as facts">
       <strong *ngIf="facts.label">{{ facts.label }}</strong>
       <div class="visual-related-facts">
@@ -85,7 +195,7 @@
     <ng-container *ngIf="tapeSection(section) as tape">
       <strong *ngIf="tape.label">{{ tape.label }}</strong>
       <div class="visual-tape">
-        <b>{{ tape.totalLabel }}</b>
+        <b class="visual-tape-whole-label">{{ tape.totalLabel }}</b>
         <div [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
           <span
             *ngFor="let part of tape.parts"
@@ -93,9 +203,36 @@
             [class.is-muted]="part.muted"
             [class.is-blank]="!part.label">
             {{ part.label || '?' }}
+            <em *ngIf="part.sublabel">{{ part.sublabel }}</em>
+          </span>
+        </div>
+        <div
+          class="visual-tape-braces"
+          *ngIf="tape.braces?.length"
+          [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
+          <span
+            *ngFor="let brace of tape.braces"
+            [style.gridColumn]="tapeBraceGridColumn(brace)">
+            <i></i>
+            <b>{{ brace.label }}</b>
           </span>
         </div>
         <small *ngIf="tape.caption">{{ tape.caption }}</small>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="fractionStripSection(section) as fractionStrip">
+      <strong *ngIf="fractionStrip.label">{{ fractionStrip.label }}</strong>
+      <div class="visual-fraction-strip">
+        <b>{{ fractionStrip.wholeLabel }}</b>
+        <div [style.gridTemplateColumns]="fractionStripColumns(fractionStrip)">
+          <span
+            *ngFor="let part of range(fractionStrip.denominator); let partIndex = index"
+            [class.is-shaded]="fractionStripIsShaded(fractionStrip, partIndex)">
+            {{ fractionStripCellLabel(fractionStrip, partIndex) }}
+          </span>
+        </div>
+        <small *ngIf="fractionStrip.caption">{{ fractionStrip.caption }}</small>
       </div>
     </ng-container>
 
@@ -108,6 +245,33 @@
         <div class="visual-data-row" *ngFor="let row of table.rows" role="row">
           <span *ngFor="let cell of row" role="cell">{{ cell }}</span>
         </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="expressionMatchSection(section) as match">
+      <strong *ngIf="match.label">{{ match.label }}</strong>
+      <div class="visual-expression-match" [class.is-solved]="match.showMatches">
+        <div class="visual-expression-match-labels">
+          <span>{{ match.topLabel || 'Expressions' }}</span>
+          <span>{{ match.bottomLabel || 'Choices' }}</span>
+        </div>
+        <div
+          class="visual-expression-match-row is-top"
+          [style.gridTemplateColumns]="expressionMatchColumns(match.topItems.length)">
+          <span *ngFor="let item of match.topItems">{{ item }}</span>
+        </div>
+        <div
+          class="visual-expression-match-row is-bottom"
+          [style.gridTemplateColumns]="expressionMatchColumns(match.bottomItems.length)">
+          <span *ngFor="let item of match.bottomItems">{{ item }}</span>
+        </div>
+        <div class="visual-expression-match-key" *ngIf="match.showMatches && match.matches?.length">
+          <span *ngFor="let pair of match.matches">
+            {{ expressionMatchTop(match, pair) }} -> {{ expressionMatchBottom(match, pair) }}
+            <b *ngIf="pair.label">{{ pair.label }}</b>
+          </span>
+        </div>
+        <small *ngIf="match.note">{{ match.note }}</small>
       </div>
     </ng-container>
 
@@ -157,6 +321,84 @@
       </div>
     </ng-container>
 
+    <ng-container *ngIf="timeLineSection(section) as timeLine">
+      <strong *ngIf="timeLine.label">{{ timeLine.label }}</strong>
+      <div class="visual-time-line">
+        <app-time-board [timeLine]="timeLine" [mode]="mode"></app-time-board>
+        <small *ngIf="timeLine.note">{{ timeLine.note }}</small>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="measurementModelSection(section) as measure">
+      <strong *ngIf="measure.label">{{ measure.label }}</strong>
+      <div class="visual-measurement" [ngClass]="'is-' + measure.model">
+        <span class="measurement-reference" *ngIf="measure.referenceLabel">{{ measure.referenceLabel }}</span>
+        <div class="measurement-hero">
+          <div class="measurement-mass" *ngIf="measure.model === 'mass'">
+            <div class="measurement-scale">
+              <span></span>
+              <i></i>
+              <b></b>
+            </div>
+            <div class="measurement-bars">
+              <span
+                *ngFor="let value of measure.values"
+                [ngClass]="'is-' + (value.tone || 'given')">
+                <i [style.width]="measurementFill(measure, value)"></i>
+                <b>{{ value.label }}</b>
+                <em>{{ value.valueLabel || (value.value !== undefined ? value.value + ' ' + (measure.unitLabel || '') : '____') }}</em>
+              </span>
+            </div>
+          </div>
+
+          <div class="measurement-liquid" *ngIf="measure.model === 'liquid'">
+            <div
+              class="liquid-vessel"
+              *ngFor="let value of measure.values"
+              [ngClass]="'is-' + (value.tone || 'given')">
+              <div class="liquid-fill" [style.height]="measurementFill(measure, value)"></div>
+              <span>{{ value.valueLabel || (value.value !== undefined ? value.value + ' ' + (measure.unitLabel || '') : '____') }}</span>
+              <b>{{ value.label }}</b>
+            </div>
+          </div>
+
+          <div class="measurement-conversion" *ngIf="measure.model === 'conversion'">
+            <span
+              *ngFor="let value of measure.values"
+              [ngClass]="'is-' + (value.tone || 'given')">
+              <b>{{ value.label }}</b>
+              <em>{{ value.valueLabel || (value.value !== undefined ? value.value + ' ' + (measure.unitLabel || '') : '____') }}</em>
+            </span>
+          </div>
+
+          <div class="measurement-rounding" *ngIf="measure.model === 'rounding'">
+            <span
+              *ngFor="let value of measure.values"
+              [ngClass]="'is-' + (value.tone || 'given')">
+              <i></i>
+              <b>{{ value.label }}</b>
+              <em>{{ value.valueLabel || (value.value !== undefined ? value.value + ' ' + (measure.unitLabel || '') : '____') }}</em>
+            </span>
+          </div>
+
+          <div class="measurement-operation" *ngIf="measure.model === 'operation'">
+            <span
+              *ngFor="let value of measure.values"
+              [ngClass]="'is-' + (value.tone || 'given')">
+              <b>{{ value.label }}</b>
+              <em>{{ value.valueLabel || (value.value !== undefined ? value.value + ' ' + (measure.unitLabel || '') : '____') }}</em>
+            </span>
+          </div>
+        </div>
+
+        <p class="measurement-equation" *ngIf="measure.equation">{{ measure.equation }}</p>
+        <ol *ngIf="measure.steps?.length">
+          <li *ngFor="let step of measure.steps">{{ step }}</li>
+        </ol>
+        <small *ngIf="measure.note">{{ measure.note }}</small>
+      </div>
+    </ng-container>
+
     <ng-container *ngIf="numberLineSection(section) as line">
       <strong *ngIf="line.label">{{ line.label }}</strong>
       <div class="visual-number-line">
@@ -174,14 +416,18 @@
     <ng-container *ngIf="clockSection(section) as clock">
       <strong *ngIf="clock.label">{{ clock.label }}</strong>
       <div class="visual-clock">
-        <div aria-hidden="true">
-          <span class="clock-twelve">12</span>
-          <span class="clock-three">3</span>
-          <span class="clock-six">6</span>
-          <span class="clock-nine">9</span>
-          <i></i>
-          <b></b>
+        <div
+          *ngIf="clockHasTime(clock); else sourceClockPrompt"
+          class="workspace-library-clock"
+          aria-hidden="true"
+          [attr.data-hour]="clockHour(clock)"
+          [attr.data-minute]="clockMinute(clock)">
         </div>
+        <ng-template #sourceClockPrompt>
+          <div class="workspace-clock-prompt" aria-hidden="true">
+            <span>source clock</span>
+          </div>
+        </ng-template>
         <p>{{ clock.timeLabel }}</p>
         <small *ngIf="clock.caption">{{ clock.caption }}</small>
       </div>

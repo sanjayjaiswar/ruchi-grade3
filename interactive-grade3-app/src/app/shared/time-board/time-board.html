@@ -1,0 +1,69 @@
+<div class="time-board" *ngIf="timeLine as section">
+  <div class="source-row" *ngIf="section.sourceItems?.length" aria-label="Source time cards">
+    <article
+      class="time-card"
+      *ngFor="let item of sourceItems(section)"
+      [ngClass]="['is-' + (item.kind || 'digital'), 'is-' + (item.status || 'matched')]"
+      [style.left.%]="item.x">
+      <div
+        *ngIf="item.kind === 'analog'"
+        class="library-clock"
+        [attr.data-label]="item.detail || item.label"
+        [attr.data-hour]="item.hour || 12"
+        [attr.data-minute]="item.minute || 0">
+      </div>
+      <strong *ngIf="item.kind !== 'analog'">{{ item.label }}</strong>
+      <span>{{ item.statusLabel }}</span>
+    </article>
+  </div>
+
+  <div class="time-line-wrap">
+    <svg
+      class="match-lines"
+      *ngIf="matchLines(section).length"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+      aria-hidden="true">
+      <line
+        *ngFor="let line of matchLines(section)"
+        [attr.x1]="line.sourceX"
+        y1="0"
+        [attr.x2]="line.targetX"
+        y2="100"
+        [class.is-provided]="line.provided">
+      </line>
+    </svg>
+    <span class="endpoint start">{{ section.startLabel }}</span>
+    <span class="endpoint end">{{ section.endLabel }}</span>
+    <div class="time-line">
+      <span
+        class="tick"
+        *ngFor="let tick of ticks(section)"
+        [class.is-major]="tick % 5 === 0"
+        [style.left.%]="pointX(tick, section)">
+      </span>
+      <span
+        class="tick-label"
+        *ngFor="let tick of majorTicks(section)"
+        [style.left.%]="pointX(tick, section)">
+        {{ tick }}
+      </span>
+      <span
+        class="jump"
+        *ngFor="let jump of section.jumps || []"
+        [class.is-backward]="jumpIsBackward(jump)"
+        [style.left.%]="jumpLeft(jump, section)"
+        [style.width.%]="jumpWidth(jump, section)">
+        <em>{{ jump.label }}</em>
+      </span>
+      <span
+        class="point"
+        *ngFor="let point of visiblePoints(section)"
+        [class.is-open]="point.open"
+        [style.left.%]="pointX(point.minute, section)">
+        <b>{{ point.label }}</b>
+        <small>{{ point.detail || point.minute }}</small>
+      </span>
+    </div>
+  </div>
+</div>

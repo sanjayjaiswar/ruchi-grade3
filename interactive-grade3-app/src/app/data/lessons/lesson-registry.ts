@@ -636,14 +636,36 @@ function m6ProblemVisual(
     });
   }
 
-  if (display.kind === 'line-plot') {
+  if (display.kind === 'data-table' && /bar graph|picture graph|scaled/i.test(visualFamily)) {
     sections.push({
-      kind: 'number-line',
+      kind: 'data-chart',
+      chart: /picture/i.test(visualFamily) ? 'picture' : 'bar',
+      label: `${display.title} graph workspace`,
+      values: displayRows.slice(0, 8).map((row) => ({
+        label: row[0] ?? 'category',
+        value: Number.isFinite(Number(row[1])) ? Number(row[1]) : undefined,
+        valueLabel: solved ? row[1] : '____',
+        target: solved
+      })),
+      maxValue: Math.max(1, ...displayRows.map((row) => Number(row[1]) || 0)),
+      scaleLabel: display.scaleLabel ?? 'Use the stated equal-interval scale.',
+      keyLabel: display.keyLabel,
+      showBlankValues: solved,
+      caption: solved ? 'Bars match the table values and scale.' : 'Draw each bar from the source table using equal intervals.'
+    });
+  } else if (display.kind === 'line-plot') {
+    sections.push({
+      kind: 'line-plot',
       label: display.title,
-      ticks: (display.values ?? []).map((item) => ({
-        label: `${item.label}${solved && item.value !== undefined ? ` (${item.value} X${item.value === 1 ? '' : 's'})` : ''}`,
+      values: (display.values ?? []).map((item) => ({
+        label: item.label,
+        value: item.value,
+        valueLabel: item.valueLabel,
         target: solved && Boolean(item.value)
       })),
+      axisLabel: display.axisLabel,
+      keyLabel: display.keyLabel,
+      showBlankValues: solved || display.showBlankValues,
       caption: solved
         ? display.keyLabel ?? 'Read each X as one measurement.'
         : 'Use the source data to place Xs above the correct measurement labels.'
@@ -678,18 +700,33 @@ function m6ProblemVisual(
     }
   } else if (display.kind === 'bar-graph' || display.kind === 'picture-graph') {
     sections.push({
-      kind: 'note',
-      label: solved ? 'Source-shaped display evidence' : 'Source-shaped display workspace',
-      text: solved
-        ? `${display.scaleLabel ?? display.keyLabel ?? 'Use the source scale/key'}; fixed answers must match the Teacher Edition answer key.`
-        : `${display.scaleLabel ?? display.keyLabel ?? 'Use the official scale/key'}; preserve the source graph labels, categories, and response blanks.`
+      kind: 'data-chart',
+      chart: display.kind === 'bar-graph' ? 'bar' : 'picture',
+      label: display.title,
+      values: (display.values ?? []).map((item) => ({
+        label: item.label,
+        value: item.value,
+        valueLabel: item.valueLabel,
+        target: solved && item.value !== undefined
+      })),
+      maxValue: display.maxValue,
+      unitSize: display.unitSize,
+      scaleLabel: display.scaleLabel,
+      keyLabel: display.keyLabel,
+      showBlankValues: solved || display.showBlankValues,
+      caption: solved
+        ? display.scaleLabel ?? display.keyLabel ?? 'Read each category with the official scale/key.'
+        : display.scaleLabel ?? display.keyLabel ?? 'Preserve the source graph labels, categories, and response blanks.'
     });
   } else if (display.kind === 'tally-picture') {
     sections.push({
-      kind: 'data-table',
-      label: 'Tally and picture graph workspace',
-      columns: ['Category', solved ? 'Count or symbol count' : 'Tally / count'],
-      rows: (display.categories ?? []).map((category) => [category, solved ? 'Use class survey data' : '____'])
+      kind: 'data-chart',
+      chart: 'tally',
+      label: display.title,
+      values: (display.categories ?? []).map((category) => ({ label: category, valueLabel: solved ? 'class data' : '____' })),
+      keyLabel: display.keyLabel,
+      showBlankValues: false,
+      caption: 'Use the class survey data, bundle tallies by fives, then convert counts to picture-graph symbols.'
     });
   }
 
@@ -706,14 +743,14 @@ function m6ProblemVisual(
     label: solved ? 'Solved check' : 'Source workspace direction',
     text: solved
       ? solvedAnswer ?? 'Teacher Edition accepts variable student data when the display, scale, labels, and explanation match the official problem.'
-      : `Complete the official ${visualFamily} with no source-page image and no solved answer leakage.`
+      : `Complete the ${visualFamily}: keep the labels, scale/key, intervals, and answer blanks ready for student work.`
   });
 
   return {
     title: `${display.title}: ${visualFamily}`,
     sourceNote: solved
-      ? 'Solved view uses authored data visuals and Teacher Edition answer-key meaning, not raw source-page images.'
-      : 'Blank view keeps the official data-display workspace open with no source-page images or solved answer leakage.',
+      ? 'Solved view shows the completed data display, scale/key, and answer evidence with authored visuals.'
+      : 'Blank view keeps the authored data-display scaffold open with labels, scale/key, intervals, and response blanks.',
     sections
   };
 }
@@ -753,14 +790,29 @@ function m6VisualRows(
     return display.ticks.map((tick) => [tick, solved ? m6RulerMarkMeaning(tick) : '____']);
   }
   if (display.categories?.length) {
-    return display.categories.map((category) => [category, '____']);
+    return display.categories.map((category) => [
+      category,
+      solved ? m6SolvedCell(lessonNumber, problemNumber, '____', true) : '____'
+    ]);
   }
-  return [[display.title, solved ? 'Complete from Teacher Edition answer evidence.' : 'Complete from the official source prompt.']];
+  return [[display.title, solved ? 'Use the completed display to explain the answer.' : 'Set up the display labels, scale/key, and answer blanks.']];
 }
 
 function m6SolvedCell(lessonNumber: number, problemNumber: number, cell: string, solved: boolean): string {
   if (!solved) {
     return cell;
+  }
+  if (lessonNumber === 1 && cell === '____') {
+    if (problemNumber === 1) {
+      return 'class tally count';
+    }
+    if (problemNumber === 2) {
+      return 'read from Problem 1';
+    }
+    return 'converted from class data';
+  }
+  if (lessonNumber === 5 && cell === '____') {
+    return problemNumber === 1 ? 'student measurement' : 'unit equivalence';
   }
   if (lessonNumber === 9 && (problemNumber === 1 || problemNumber === 2) && cell === '____') {
     return '24';
@@ -1864,6 +1916,7 @@ function m7AnimationType(
 }
 
 function m7ProblemVisual(
+  lessonNumber: number,
   visualFamily: string,
   problemNumber: number,
   dataDisplay: ProblemSetDataDisplay | undefined,
@@ -1883,16 +1936,24 @@ function m7ProblemVisual(
     });
     if (dataDisplay.kind === 'line-plot') {
       sections.push({
-        kind: 'number-line',
+        kind: 'line-plot',
         label: dataDisplay.title,
-        ticks: (dataDisplay.values ?? []).map((item) => ({
-          label: solved && item.value !== undefined ? `${item.label} (${item.value} X${item.value === 1 ? '' : 's'})` : item.label,
+        values: (dataDisplay.values ?? []).map((item) => ({
+          label: item.label,
+          value: item.value,
+          valueLabel: item.valueLabel,
           target: solved && Boolean(item.value)
         })),
+        axisLabel: dataDisplay.axisLabel,
+        keyLabel: dataDisplay.keyLabel,
+        showBlankValues: solved || dataDisplay.showBlankValues,
         caption: solved
           ? dataDisplay.keyLabel ?? 'Read each X as one item.'
           : 'Use the source table/data to place Xs above the correct labels.'
       });
+    }
+    if (visualFamily.includes('robot') || visualFamily.includes('one-half')) {
+      sections.push(m7SourceEvidenceVisualSection(lessonNumber, problemNumber, visualFamily, officialAnswer, solved));
     }
   } else if (areaModels?.length) {
     for (const model of areaModels.slice(0, 6)) {
@@ -1910,72 +1971,20 @@ function m7ProblemVisual(
           : 'Use unit squares to make the rectangle and record area/perimeter evidence.'
       });
     }
+  } else if (visualFamily.includes('critique') || visualFamily.includes('reflection')) {
+    sections.push(m7ReflectionVisualSection(visualFamily, solved));
   } else if (visualFamily.includes('perimeter')) {
-    sections.push({
-      kind: 'tape',
-      label: 'Perimeter workspace',
-      totalLabel: solved ? 'Perimeter from all outside sides' : 'Perimeter = ____',
-      parts: ['side 1', 'side 2', 'side 3', 'side 4'].map((label) => ({
-        label: solved ? label : '',
-        sublabel: solved ? 'outside boundary' : undefined,
-        emphasize: solved
-      })),
-      caption: solved
-        ? 'Add only the outside side lengths required by the Teacher Edition problem.'
-        : 'Measure or label each outside side before adding.'
-    });
+    sections.push(m7SourceEvidenceVisualSection(lessonNumber, problemNumber, visualFamily, officialAnswer, solved));
+  } else if (visualFamily.includes('composition')) {
+    sections.push(m7CompositionEvidenceVisualSection(lessonNumber, problemNumber, officialAnswer, solved));
   } else if (visualFamily.includes('polygon')) {
-    sections.push({
-      kind: 'data-table',
-      label: 'Polygon attribute workspace',
-      columns: ['Source requirement', solved ? 'Verified attribute' : 'Student work'],
-      rows: [
-        ['shape name or class', solved ? 'matches the official attribute rule' : '____'],
-        ['number of sides', solved ? 'counted from the drawing' : '____'],
-        ['number of angles', solved ? 'counted from the drawing' : '____'],
-        ['special attribute', solved ? 'parallel/equal/right-angle evidence stated' : '____']
-      ]
-    });
+    sections.push(m7PolygonEvidenceVisualSection(lessonNumber, problemNumber, officialAnswer, solved));
   } else if (visualFamily.includes('robot')) {
-    sections.push({
-      kind: 'data-table',
-      label: 'Robot measurement workspace',
-      columns: ['Body part or object', solved ? 'Checked measurement' : 'Required measurement'],
-      rows: [
-        ['arms', solved ? 'perimeter checked against 14 cm each' : '14 cm each'],
-        ['legs', solved ? 'perimeter checked against 18 cm each' : '18 cm each'],
-        ['body', solved ? 'perimeter checked against double one arm' : 'double one arm'],
-        ['head and neck', solved ? '16 cm and half-head perimeter checked' : '16 cm and half of head'],
-        ['environment', solved ? 'rectangle and string measurements checked' : 'record width/length or string measure']
-      ]
-    });
+    sections.push(m7SourceEvidenceVisualSection(lessonNumber, problemNumber, visualFamily, officialAnswer, solved));
   } else if (visualFamily.includes('one-half')) {
-    sections.push({
-      kind: 'tape',
-      label: 'One-half representation workspace',
-      totalLabel: solved ? '1 whole' : '1 whole',
-      parts: [
-        { label: solved ? '1/2' : '', emphasize: solved },
-        { label: solved ? '1/2' : '', emphasize: solved }
-      ],
-      caption: solved
-        ? 'Both parts must be equal in area, even if the shapes look different.'
-        : 'Create two equal parts and justify why each part is one half.'
-    });
+    sections.push(m7SourceEvidenceVisualSection(lessonNumber, problemNumber, visualFamily, officialAnswer, solved));
   } else {
-    sections.push({
-      kind: 'tape',
-      label: 'RDW word-problem workspace',
-      totalLabel: solved ? 'Known total / comparison from source' : 'Known and unknown quantities',
-      parts: [
-        { label: solved ? 'given' : '', emphasize: solved },
-        { label: solved ? 'unknown' : '', emphasize: solved },
-        { label: solved ? 'answer' : '', emphasize: solved }
-      ],
-      caption: solved
-        ? 'The solved quantities are checked against the Teacher Edition answer key.'
-        : 'Read, draw, write, and label the unknown from the official prompt.'
-    });
+    sections.push(m7RdwVisualSection(visualFamily, equations, officialAnswer, solved));
   }
 
   sections.push({
@@ -1988,14 +1997,14 @@ function m7ProblemVisual(
     label: solved ? 'Solved check' : 'Source workspace direction',
     text: solved
       ? officialAnswer ?? 'Variable correct work must satisfy the Teacher Edition drawing, attributes, measurements, labels, and written explanation required by the official prompt.'
-      : `Complete the official ${visualFamily} with authored work only; do not use a source-page image as the workspace.`
+      : `Complete the ${visualFamily}: draw, label, measure, and leave the required response blanks for student work.`
   });
 
   return {
     title: `Problem ${problemNumber}: ${visualFamily}`,
     sourceNote: solved
-      ? 'Solved view uses authored geometry/measurement/data visuals and Teacher Edition answer-key meaning, not raw source-page images.'
-      : 'Blank view keeps the official Module 7 workspace open with no source-page images or solved answer leakage.',
+      ? 'Solved view shows authored geometry, measurement, or data evidence with the checked answer meaning.'
+      : 'Blank view keeps the authored Module 7 workspace open with diagrams, labels, measurements, and response blanks.',
     sections
   };
 }
@@ -2029,12 +2038,368 @@ function m7VisualRows(display: ProblemSetDataDisplay, solved: boolean): string[]
   return [[display.title, solved ? 'checked against source' : 'complete from source']];
 }
 
+function m7AnswerParts(answer: string | undefined): string[] {
+  return (answer ?? '')
+    .split(/;\s+|(?=\b[a-g]\.\s)|(?=\bPart\s+[A-Z]:)|(?=\bPart\s+[a-z]:)/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+}
+
+function m7SourceTaskRows(
+  lessonNumber: number,
+  problemNumber: number,
+  visualFamily: string
+): string[][] {
+  if (lessonNumber === 10) {
+    return [
+      ['Trace boundary', 'Use red to outline the perimeter requested in the source.'],
+      ['Color inside', 'Use blue to show area only where the prompt asks.'],
+      ['Compare', 'Write whether perimeter or area changes, using the source shapes.']
+    ];
+  }
+  if (lessonNumber >= 12 && lessonNumber <= 14) {
+    return [
+      ['Label side lengths', 'Copy or infer each missing side length from the source polygon/rectangle.'],
+      ['Add outside sides', 'Write a perimeter equation using only boundary side lengths.'],
+      ['Unit', 'Keep cm, in, ft, or m attached to the answer.']
+    ];
+  }
+  if (lessonNumber === 16) {
+    return [
+      ['Wrap string', 'Follow the curved boundary once.'],
+      ['Measure string', 'Straighten the string and measure to the nearest quarter inch.'],
+      ['Explain method', 'Say whether the process works efficiently for the source shape.']
+    ];
+  }
+  if (lessonNumber === 17) {
+    return [
+      ['Find missing lengths', 'Use opposite sides and composed rectangles to label unknown sides.'],
+      ['Perimeter equation', 'Add every outside side length exactly once.'],
+      ['Check unit', 'Use the source unit for the final perimeter.']
+    ];
+  }
+  if (lessonNumber >= 24 && lessonNumber <= 27) {
+    return [
+      ['Project chart', 'Use the official robot/environment rows and required perimeters.'],
+      ['Measure or choose dimensions', 'Widths, lengths, and string measures must satisfy each source requirement.'],
+      ['Evaluate', 'Star or explain mismatches when the measured project differs from the listed requirement.']
+    ];
+  }
+  if (lessonNumber === 31 || lessonNumber === 32) {
+    return [
+      ['Representation', 'Use the exact source square/circle representation.'],
+      ['Area comparison', 'Compare shaded and unshaded areas, not just appearance.'],
+      ['Revision or proof', 'Describe the change or proof required by the source prompt.']
+    ];
+  }
+  if (visualFamily.includes('perimeter')) {
+    return [
+      ['Boundary', 'Trace or identify the outside boundary only.'],
+      ['Lengths', 'Label every source side length needed for the perimeter.'],
+      ['Equation', 'Add the outside side lengths with the correct unit.']
+    ];
+  }
+  return [
+    ['Problem requirement', 'Use the stated model, measurements, labels, and response format.'],
+    ['Visual work', 'Draw, label, measure, or explain only what the source asks for.'],
+    ['Answer evidence', 'Write the equation or statement with the required unit and check it against the drawn model.']
+  ];
+}
+
+function m7SourceEvidenceVisualSection(
+  lessonNumber: number,
+  problemNumber: number,
+  visualFamily: string,
+  officialAnswer: string | undefined,
+  solved: boolean
+): ProblemVisualSpec['sections'][number] {
+  const answerParts = m7AnswerParts(officialAnswer);
+  if (lessonNumber === 16) {
+    return {
+      kind: 'geometry-diagram',
+      label: solved ? 'String perimeter evidence' : 'Circle-string measurement workspace',
+      diagram: 'circle-string',
+      shapes: [
+        {
+          label: solved ? 'measured string' : 'wrap string once',
+          shape: 'circle',
+          x: 27,
+          y: 10,
+          width: 42,
+          height: 56,
+          valueLabel: solved ? (answerParts[0] ?? 'nearest 1/4 inch') : 'nearest 1/4 in.',
+          tone: solved ? 'answer' : 'unknown'
+        },
+        {
+          label: 'straightened string on ruler',
+          shape: 'rectangle',
+          x: 14,
+          y: 74,
+          width: 72,
+          height: 10,
+          sideLabels: ['0', '1/4', '1/2', '3/4', '1 in.'],
+          tone: 'given'
+        }
+      ],
+      caption: solved ? 'String follows the circular boundary once, then is measured on the ruler.' : 'Wrap, straighten, read the nearest quarter-inch mark, and explain whether the method works.'
+    };
+  }
+  if (lessonNumber >= 12 && lessonNumber <= 14) {
+    return {
+      kind: 'geometry-diagram',
+      label: solved ? 'Measured perimeter evidence' : 'Measured perimeter workspace',
+      diagram: 'perimeter',
+      shapes: [
+        {
+          label: lessonNumber === 14 ? 'regular or opposite sides' : 'polygon side lengths',
+          shape: 'rectangle',
+          x: 20,
+          y: 14,
+          width: 60,
+          height: 58,
+          sideLabels: solved ? m7AnswerParts(officialAnswer).slice(0, 4) : ['____ units', '____ units', '____ units', '____ units'],
+          valueLabel: solved ? 'perimeter checked' : 'measure or infer first',
+          tone: solved ? 'answer' : 'unknown'
+        }
+      ],
+      caption: lessonNumber === 14
+        ? 'Use equal sides, opposite sides, or regular-polygon structure before adding the perimeter.'
+        : 'Measure every outside side in whole-number units before adding.'
+    };
+  }
+  if (lessonNumber === 17 || visualFamily.includes('perimeter')) {
+    return {
+      kind: 'geometry-diagram',
+      label: solved ? 'Perimeter model evidence' : 'Perimeter model workspace',
+      diagram: 'perimeter',
+      shapes: [
+        {
+          label: lessonNumber === 17 ? 'missing side model' : 'labeled boundary',
+          shape: lessonNumber === 17 ? 'l-shape' : 'rectangle',
+          x: 20,
+          y: 14,
+          width: 60,
+          height: 62,
+          sideLabels: solved ? m7AnswerParts(officialAnswer).slice(0, 5) : ['given', '____', 'given', '____'],
+          valueLabel: lessonNumber === 17 ? 'solve missing side, then check perimeter' : 'add outside sides once',
+          tone: solved ? 'answer' : 'unknown'
+        }
+      ],
+      caption: solved ? 'Completed labels support the equation and answer statement.' : 'Label knowns and unknowns on the boundary before writing the equation.'
+    };
+  }
+  if (lessonNumber >= 24 && lessonNumber <= 27 || visualFamily.includes('robot')) {
+    return {
+      kind: 'geometry-diagram',
+      label: solved ? 'Robot perimeter evidence' : 'Robot rectangle planning workspace',
+      diagram: 'robot',
+      shapes: [
+        { label: 'head', shape: 'rectangle', x: 42, y: 6, width: 16, height: 14, valueLabel: solved ? 'P checked' : 'P = ____', tone: 'given' },
+        { label: 'body', shape: 'rectangle', x: 35, y: 24, width: 30, height: 28, valueLabel: solved ? 'area + perimeter' : 'choose dimensions', tone: solved ? 'answer' : 'unknown' },
+        { label: 'left arm', shape: 'rectangle', x: 18, y: 28, width: 14, height: 20, valueLabel: 'P = ____', tone: 'unknown' },
+        { label: 'right arm', shape: 'rectangle', x: 68, y: 28, width: 14, height: 20, valueLabel: 'P = ____', tone: 'unknown' },
+        { label: 'legs', shape: 'rectangle', x: 38, y: 58, width: 24, height: 22, valueLabel: solved ? 'requirements checked' : 'measure', tone: 'given' }
+      ],
+      caption: 'Each rectangle needs width, length, perimeter, and area evidence.'
+    };
+  }
+  if (lessonNumber === 31 || lessonNumber === 32 || visualFamily.includes('one-half')) {
+    return {
+      kind: 'geometry-diagram',
+      label: solved ? 'One-half proof evidence' : 'One-half representation workspace',
+      diagram: 'one-half',
+      shapes: [
+        { label: 'whole square', shape: 'square', x: 14, y: 18, width: 30, height: 48, valueLabel: solved ? 'equal areas' : 'shade one half', tone: solved ? 'answer' : 'unknown' },
+        { label: 'whole circle', shape: 'circle', x: 56, y: 18, width: 30, height: 48, valueLabel: solved ? 'one half proved' : 'prove equal area', tone: solved ? 'answer' : 'unknown' }
+      ],
+      caption: 'The proof must show equal area, not just similar appearance.'
+    };
+  }
+  return {
+    kind: 'data-table',
+    label: solved ? 'Teacher Edition visual evidence' : 'Source-aligned visual workspace',
+    columns: ['Source part', solved ? 'Teacher Edition evidence' : 'Student visual work'],
+    rows: solved && answerParts.length
+      ? answerParts.map((part, index) => [`${lessonNumber}.${problemNumber}${answerParts.length > 1 ? ` part ${index + 1}` : ''}`, part])
+      : m7SourceTaskRows(lessonNumber, problemNumber, visualFamily)
+  };
+}
+
+function m7PolygonEvidenceVisualSection(
+  lessonNumber: number,
+  problemNumber: number,
+  officialAnswer: string | undefined,
+  solved: boolean
+): ProblemVisualSpec['sections'][number] {
+  if (solved) {
+    return m7SourceEvidenceVisualSection(lessonNumber, problemNumber, 'polygon attribute workspace', officialAnswer, true);
+  }
+
+  if (lessonNumber === 4 && problemNumber === 1) {
+    return {
+      kind: 'data-table',
+      label: 'Polygon A-L attribute sort',
+      columns: ['Chart row from source', 'Letters / sketch space'],
+      rows: [
+        ['3 sides', 'Polygons: ____; sketch 1'],
+        ['4 sides', 'Polygons: ____; sketch 1'],
+        ['at least 1 set of parallel sides', 'Polygons: ____; sketch 1'],
+        ['2 sets of parallel sides', 'Polygons: ____; sketch 1'],
+        ['4 right angles', 'Polygons: ____; sketch 1'],
+        ['4 right angles and 4 equal sides', 'Polygons: ____; sketch 1']
+      ]
+    };
+  }
+
+  if (lessonNumber === 5 && problemNumber === 1) {
+    return {
+      kind: 'data-table',
+      label: 'Polygon M-X attribute sort',
+      columns: ['Chart row from source', 'Letters / sketch space'],
+      rows: [
+        ['all sides are equal', 'Polygons: ____; sketch 1'],
+        ['all sides are not equal', 'Polygons: ____; sketch 1'],
+        ['at least 1 right angle', 'Polygons: ____; sketch 1'],
+        ['at least 1 set of parallel sides', 'Polygons: ____; sketch 1']
+      ]
+    };
+  }
+
+  if (lessonNumber === 6) {
+    const prompts: Record<number, string[]> = {
+      1: ['draw', 'triangle with 1 right angle'],
+      2: ['draw', 'quadrilateral/square with four 2-inch sides and 4 right angles'],
+      3: ['draw and trace', 'quadrilateral with at least 1 set of parallel sides; trace parallel sides green'],
+      4: ['draw and label', 'pentagon with at least 2 equal sides'],
+      5: ['draw and label', 'hexagon with at least 2 equal sides'],
+      6: ['explain', 'why a polygon cannot have only 2 sides and 2 angles']
+    };
+    const [action, evidence] = prompts[problemNumber] ?? ['draw', 'source polygon attributes'];
+    return {
+      kind: 'data-table',
+      label: 'Requested polygon construction',
+      columns: ['Source action', 'Required visual evidence'],
+      rows: [[action, evidence], ['attribute check', 'sides, angles, equal sides, parallel sides, or right angle evidence must be visible']]
+    };
+  }
+
+  return m7SourceEvidenceVisualSection(lessonNumber, problemNumber, 'polygon attribute workspace', officialAnswer, false);
+}
+
+function m7CompositionEvidenceVisualSection(
+  lessonNumber: number,
+  problemNumber: number,
+  officialAnswer: string | undefined,
+  solved: boolean
+): ProblemVisualSpec['sections'][number] {
+  if (lessonNumber === 7) {
+    if (problemNumber === 2) {
+      return {
+        kind: 'card-grid',
+        label: solved ? 'Tetromino square evidence' : 'Tetromino square workspace',
+        cards: [
+          {
+            label: '36 square-unit square',
+            sections: [{ kind: 'array', rows: 6, columns: 6, item: 'square', placeholder: solved ? undefined : '?', caption: solved ? '6 x 6 = 36 square units' : 'Use tetrominoes to fill a 6 by 6 square.' }]
+          },
+          {
+            label: 'Equations',
+            sections: [{ kind: 'equations', lines: solved ? ['9 tetrominoes x 4 square units = 36 square units', '6 x 6 = 36'] : ['____ tetrominoes x 4 = 36', '____ x ____ = 36'] }]
+          }
+        ]
+      };
+    }
+    if (problemNumber === 3) {
+      return {
+        kind: 'card-grid',
+        label: solved ? 'Area-12 rectangle evidence' : 'Area-12 rectangle workspace',
+        cards: [
+          {
+            label: '3 by 4 rectangle',
+            sections: [{ kind: 'array', rows: 3, columns: 4, item: 'square', placeholder: solved ? undefined : '?', caption: solved ? '3 x 4 = 12 square units' : 'Compose a rectangle with area 12 square units.' }]
+          },
+          {
+            label: '2 by 6 rectangle',
+            sections: [{ kind: 'array', rows: 2, columns: 6, item: 'square', placeholder: solved ? undefined : '?', caption: solved ? '2 x 6 = 12 square units' : 'Make a second different rectangle with area 12 square units.' }]
+          }
+        ]
+      };
+    }
+    return {
+      kind: 'data-table',
+      label: solved ? 'Tetromino composition checked' : 'Tetromino composition workspace',
+      columns: ['Source requirement', solved ? 'Teacher Edition evidence' : 'Student visual work'],
+      rows: solved && officialAnswer
+        ? m7AnswerParts(officialAnswer).map((part, index) => [`part ${index + 1}`, part])
+        : [
+            ['use tetrominoes', 'compose the requested rectangles/squares on the source grid'],
+            ['same pieces allowed', 'repeat tetrominoes only where the source says it is allowed'],
+            ['show joins', 'color or draw internal lines so the pieces can be checked']
+          ]
+    };
+  }
+
+  if (lessonNumber === 8 || lessonNumber === 9) {
+    return {
+      kind: 'data-table',
+      label: lessonNumber === 8 ? 'Tangram cut-and-label workspace' : 'Tangram composition workspace',
+      columns: ['Source step', solved ? 'Teacher Edition evidence' : 'Student visual work'],
+      rows: solved && officialAnswer
+        ? m7AnswerParts(officialAnswer).map((part, index) => [`step ${index + 1}`, part])
+        : [
+            ['use the official tangram pieces', 'draw/label the exact pieces requested by the prompt'],
+            ['show joins or cut lines', 'internal lines must show how the pieces make the figure'],
+            ['describe attributes', 'name the composed shapes and explain the relationship']
+          ]
+    };
+  }
+
+  return m7SourceEvidenceVisualSection(lessonNumber, problemNumber, 'polygon composition workspace', officialAnswer, solved);
+}
+
+function m7ReflectionVisualSection(
+  visualFamily: string,
+  solved: boolean
+): ProblemVisualSpec['sections'][number] {
+  return {
+    kind: 'data-table',
+    label: solved ? 'Completed critique/reflection evidence' : 'Critique/reflection organizer',
+    columns: ['Source field', solved ? 'Completed evidence' : 'Student response'],
+    rows: [
+      ['work or activity being reviewed', solved ? 'specific source item identified' : '____'],
+      ['strategy or evidence noticed', solved ? 'specific strategy/evidence named' : '____'],
+      ['strength or fluent skill', solved ? 'evidence-based strength recorded' : '____'],
+      ['next step or practice plan', solved ? 'actionable improvement/practice step recorded' : '____']
+    ]
+  };
+}
+
+function m7RdwVisualSection(
+  visualFamily: string,
+  equations: string[],
+  officialAnswer: string | undefined,
+  solved: boolean
+): ProblemVisualSpec['sections'][number] {
+  const knownLines = solved ? m7SolvedVisualLines(equations, officialAnswer).slice(0, 4) : m7BlankEquationTemplates(equations, visualFamily).slice(0, 4);
+  return {
+    kind: 'data-table',
+    label: solved ? 'RDW solved evidence' : 'RDW problem-solving mat',
+    columns: ['Step', solved ? 'Evidence from the work' : 'Workspace'],
+    rows: [
+      ['Read', solved ? 'Known quantities and question are identified.' : 'Underline known quantities; circle what is unknown.'],
+      ['Draw', solved ? 'Diagram/model matches the source situation.' : 'Draw and label a model from the prompt.'],
+      ['Write', knownLines[0] ?? (solved ? 'Equation checked against answer key.' : 'Equation: ____')],
+      ['Answer', solved ? officialAnswer ?? 'Answer statement uses the requested unit.' : 'Sentence answer with units: ____']
+    ]
+  };
+}
+
 function m7SolvedVisualLines(equations: string[], officialAnswer: string | undefined): string[] {
   const answerLines = officialAnswer
     ? officialAnswer.split(/;\s+|(?=\b[a-z]\.\s)/).map((line) => line.trim()).filter(Boolean)
     : [];
   const merged = Array.from(new Set([...equations, ...answerLines])).filter(Boolean);
-  return merged.length ? merged.slice(0, 8) : ['Verify the constructed work against the Teacher Edition answer key.'];
+  return merged.length ? merged.slice(0, 8) : ['Completed work matches the required model, labels, measurements, and answer statement.'];
 }
 
 function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | undefined {
@@ -2055,9 +2420,9 @@ function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
     title: `Lesson ${lessonNumber}: ${M7_OBJECTIVES[lessonNumber] ?? 'Geometry and measurement problem solving'}`,
     concept: M7_OBJECTIVES[lessonNumber] ?? 'Use the official Module 7 Problem Set to reason about geometry, measurement, area, perimeter, and word problems.',
     teacherEditionBasis: source.teacherEditionSource,
-    contrast: `Use the official ${visualFamily}; do not replace it with a parallel problem.`,
+    contrast: `Use the official ${visualFamily}: keep the same quantities, labels, measurements, and written response.`,
     summary: 'Use the Teacher Edition Problem Set as the source of truth, then check the solved work against the Teacher Edition Answer Key.',
-    sourceNote: `${source.teacherEditionSource} Problem Set pages are rendered from the Teacher Edition PDF.`,
+    sourceNote: `${source.teacherEditionSource} Teacher source pages support the authored Blank and Solved workspaces.`,
     sourcePageImages: blankSourcePageImages,
     blankSourcePageImages,
     solvedSourcePageImages,
@@ -2075,7 +2440,7 @@ function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
             ? ['Area = square units inside', 'Perimeter = boundary units around']
             : isLinePlot
               ? ['One X represents one measured rectangle or object']
-              : ['Use the official Teacher Edition source page for the exact model evidence'];
+              : ['Read: identify knowns and unknowns', 'Draw: label the required model', 'Write: equation and answer statement'];
       const equations = m7TeacherAnswerEvidence(officialAnswer, fallbackEquations);
       const answerValue = m7LastAnswerNumber(officialAnswer, isGrid ? 24 : isPerimeter ? 16 : 8);
       return {
@@ -2088,14 +2453,14 @@ function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
         blankEquations: m7BlankEquationTemplates(problem.equations, visualFamily),
         blankWorkspaceLabel: `Complete the Teacher Edition-aligned ${visualFamily}.`,
         blankVisualType: m7BlankVisualType(lessonNumber, problem.number, visualFamily, areaModels, dataDisplay),
-        blankVisual: m7ProblemVisual(visualFamily, problem.number, dataDisplay, areaModels, problem.equations, officialAnswer, false),
-        solvedVisual: m7ProblemVisual(visualFamily, problem.number, solvedDataDisplay, areaModels, equations, officialAnswer, true),
+        blankVisual: m7ProblemVisual(lessonNumber, visualFamily, problem.number, dataDisplay, areaModels, problem.equations, officialAnswer, false),
+        solvedVisual: m7ProblemVisual(lessonNumber, visualFamily, problem.number, solvedDataDisplay, areaModels, equations, officialAnswer, true),
         areaModels,
         dataDisplay,
         solvedDataDisplay,
         solvedAnswer: isOpenConstruction
           ? officialAnswer ?? 'Variable correct work must satisfy every attribute, measurement, drawing, critique, or reflection requirement in the official prompt.'
-          : officialAnswer ?? 'Use the Teacher Edition answer key reference to verify the completed model.',
+          : officialAnswer ?? 'Completed work must match the required model, labels, units, and written explanation.',
         equations,
         knownTotal: answerValue,
         knownGroupCount: isHalf ? 2 : isLinePlot ? 8 : 4,
@@ -2142,8 +2507,8 @@ function m6ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
         teacherSource: source.teacherEditionSource,
         checkpoints: [
           `Use the official ${visualFamily}.`,
-          'Keep graph scales, keys, line-plot intervals, and measurement units exactly aligned to the PDF.',
-          'Use the Teacher Edition answer key for solved work.'
+          'Keep graph scales, keys, line-plot intervals, and measurement units exactly aligned to the source.',
+          'Solved work must show the display evidence and answer statement.'
         ]
       }
     ],
@@ -2167,7 +2532,7 @@ function m6ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
         dataDisplay,
         solvedDataDisplay,
         solvedAnswer: solvedNote ?? 'Variable responses must include the Teacher Edition criteria for the survey, measurement collection, scale choice, or explanation.',
-        equations: problem.equations.length ? problem.equations : solvedNote ? [solvedNote] : ['Use the display evidence and Teacher Edition answer key for fixed values; variable responses must match the student data.'],
+        equations: problem.equations.length ? problem.equations : solvedNote ? [solvedNote] : ['Use the display evidence for fixed values; variable responses must match the collected data.'],
         quotient: 1,
         quotientMeaning: 'The answer is the count, comparison, total, scale choice, or explanation requested by the Teacher Edition Problem Set item.',
         animationType: 'data-display-model',
@@ -2182,6 +2547,562 @@ function m6ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
       };
     })
   };
+}
+
+function lessonAnimationForRuntime(
+  moduleId: string,
+  lessonNumber: number,
+  runtime: LessonRuntimeConfig,
+  problemSetCenteredLesson: ProblemSetCenteredLesson | undefined
+): LessonAnimationModel {
+  const authoredAnimation = moduleId === 'm6'
+    ? m6LessonAnimation(lessonNumber) ?? runtime.lessonAnimation
+    : runtime.lessonAnimation;
+  const sourceText = lessonAnimationSourceText(runtime, problemSetCenteredLesson);
+  const baseAnimation = authoredAnimation
+    ? refineAuthoredLessonAnimation(moduleId, authoredAnimation, sourceText)
+    : generatedLessonConceptAnimation(moduleId, lessonNumber, runtime, problemSetCenteredLesson);
+
+  return withConceptSteps(
+    completeLessonAnimationVisualDefaults(baseAnimation, sourceText),
+    moduleId,
+    lessonNumber,
+    problemSetCenteredLesson
+  );
+}
+
+function lessonAnimationSourceText(
+  runtime: LessonRuntimeConfig,
+  problemSetCenteredLesson: ProblemSetCenteredLesson | undefined
+): string {
+  return [
+    runtime.lessonAnimation?.title,
+    runtime.lessonAnimation?.context,
+    runtime.lessonAnimation?.teacherPrompt,
+    runtime.lessonAnimation?.focus.join(' '),
+    problemSetCenteredLesson?.title,
+    problemSetCenteredLesson?.concept,
+    problemSetCenteredLesson?.contrast,
+    problemSetCenteredLesson?.summary,
+    problemSetCenteredLesson?.problems.map((problem) => `${problem.sourcePrompt} ${problem.blankVisualType ?? ''} ${problem.animationType}`).join(' '),
+    runtime.teacherEditionSteps?.map((step) => `${step.title} ${step.studentPrompt} ${step.teacherEditionBasis}`).join(' ')
+  ].filter(Boolean).join(' ');
+}
+
+function refineAuthoredLessonAnimation(
+  moduleId: string,
+  animation: LessonAnimationModel,
+  sourceText: string
+): LessonAnimationModel {
+  if (moduleId !== 'm4' && moduleId !== 'm5' && moduleId !== 'm6' && moduleId !== 'm7') {
+    return animation;
+  }
+
+  const inferredKind = inferLessonAnimationKind(moduleId, sourceText.toLowerCase(), animation.title.toLowerCase());
+  if (animation.kind === inferredKind) {
+    return animation;
+  }
+
+  return {
+    ...animation,
+    kind: inferredKind
+  };
+}
+
+function completeLessonAnimationVisualDefaults(
+  animation: LessonAnimationModel,
+  sourceText: string
+): LessonAnimationModel {
+  switch (animation.kind) {
+    case 'equal-groups':
+      return {
+        groupCount: 4,
+        groupSize: 6,
+        ...animation
+      };
+    case 'array':
+      return {
+        rowCount: 4,
+        columnCount: 6,
+        firstPart: animation.firstPart ?? 2,
+        secondPart: animation.secondPart ?? 2,
+        ...animation
+      };
+    case 'tape-diagram':
+      return {
+        tapePartCount: 4,
+        tapePartLabel: 'unit',
+        tapeWholeLabel: 'whole',
+        ...animation
+      };
+    case 'number-line':
+      return {
+        numberLineLabels: animation.numberLineLabels ?? ['0', '1/4', '1/2', '3/4', '1'],
+        numberLineJumps: animation.numberLineJumps ?? ['equal part', 'equal part', 'target'],
+        ...animation
+      };
+    case 'clock':
+      return {
+        clockLabels: animation.clockLabels ?? ['start', 'elapsed jump', 'end'],
+        ...animation
+      };
+    case 'measurement':
+      return {
+        ...animation,
+        measurementTicks: animation.measurementTicks ?? measurementTicksForSource(sourceText),
+        conceptSteps: animation.conceptSteps ?? measurementConceptStepsForSource(sourceText),
+        equation: animation.equation || 'add outside sides = perimeter'
+      };
+    case 'area-model':
+      return {
+        areaRows: animation.areaRows ?? animation.rowCount ?? 5,
+        areaColumns: animation.areaColumns ?? animation.columnCount ?? 4,
+        rowCount: animation.rowCount ?? animation.areaRows ?? 5,
+        columnCount: animation.columnCount ?? animation.areaColumns ?? 4,
+        ...animation
+      };
+    case 'fraction-strip':
+      return {
+        fractionPartCount: animation.fractionPartCount ?? fractionPartCountForSource(sourceText),
+        fractionShadedCount: animation.fractionShadedCount ?? 1,
+        ...animation
+      };
+    case 'graph':
+      return {
+        graphBars: animation.graphBars?.length ? animation.graphBars : graphBarsForSource(sourceText),
+        ...animation
+      };
+    case 'geometry':
+    default:
+      return {
+        geometryLabels: animation.geometryLabels?.length ? animation.geometryLabels : geometryLabelsForSource(sourceText),
+        ...animation
+      };
+  }
+}
+
+function measurementTicksForSource(sourceText: string): string[] {
+  const text = sourceText.toLowerCase();
+  if (/perimeter/.test(text)) {
+    return ['side 1', 'side 2', 'side 3', 'side 4', 'total'];
+  }
+  if (/quarter|1\/4/.test(text)) {
+    return ['0', '1/4', '1/2', '3/4', '1', '1 1/4', '1 1/2'];
+  }
+  if (/centimeter|cm/.test(text)) {
+    return ['0 cm', '1 cm', '2 cm', '3 cm', '4 cm', '5 cm'];
+  }
+  return ['0', '1', '2', '3', '4', '5'];
+}
+
+function measurementConceptStepsForSource(sourceText: string): LessonAnimationModel['conceptSteps'] | undefined {
+  if (!/perimeter/i.test(sourceText)) {
+    return undefined;
+  }
+
+  return [
+    { label: 'Trace boundary', action: 'Only the outside edges are included.', result: 'Perimeter measures around the figure, not inside area.' },
+    { label: 'Use side facts', action: 'Known, equal, or opposite side lengths are labeled.', result: 'Missing sides are found from the shape evidence.' },
+    { label: 'Add all sides', action: 'Every outside side length is added once.', result: 'The perimeter answer keeps the linear unit.' }
+  ];
+}
+
+function fractionPartCountForSource(sourceText: string): number {
+  const text = sourceText.toLowerCase();
+  if (/eighth|8 equal|\/8/.test(text)) {
+    return 8;
+  }
+  if (/sixth|6 equal|\/6/.test(text)) {
+    return 6;
+  }
+  if (/fourth|quarter|4 equal|\/4/.test(text)) {
+    return 4;
+  }
+  if (/third|3 equal|\/3/.test(text)) {
+    return 3;
+  }
+  if (/half|2 equal|\/2/.test(text)) {
+    return 2;
+  }
+  return 6;
+}
+
+function graphBarsForSource(sourceText: string): Array<{ label: string; value: number }> {
+  const text = sourceText.toLowerCase();
+  if (/line plot|quarter-inch|quarter inch|measurement data/.test(text)) {
+    return [
+      { label: '1/4', value: 2 },
+      { label: '1/2', value: 5 },
+      { label: '3/4', value: 3 },
+      { label: '1', value: 4 }
+    ];
+  }
+  if (/rectangle/.test(text)) {
+    return [
+      { label: '12', value: 3 },
+      { label: '14', value: 2 },
+      { label: '16', value: 3 },
+      { label: '18', value: 1 }
+    ];
+  }
+  return [
+    { label: 'A', value: 4 },
+    { label: 'B', value: 7 },
+    { label: 'C', value: 5 },
+    { label: 'D', value: 9 }
+  ];
+}
+
+function geometryLabelsForSource(sourceText: string): string[] {
+  const text = sourceText.toLowerCase();
+  if (/one-half|half shaded|equal-area/.test(text)) {
+    return ['whole', '1/2', 'equal area', 'explain'];
+  }
+  if (/polygon|quadrilateral|parallel|angle/.test(text)) {
+    return ['sides', 'angles', 'parallel sides', 'equal sides'];
+  }
+  if (/robot|rectangle/.test(text)) {
+    return ['rectangle', 'width', 'length', 'perimeter'];
+  }
+  return ['sides', 'angles', 'attributes'];
+}
+
+function generatedLessonConceptAnimation(
+  moduleId: string,
+  lessonNumber: number,
+  runtime: LessonRuntimeConfig,
+  problemSetCenteredLesson: ProblemSetCenteredLesson | undefined
+): LessonAnimationModel {
+  const text = lessonAnimationSourceText(runtime, problemSetCenteredLesson).toLowerCase();
+  const kind = inferLessonAnimationKind(moduleId, text, (problemSetCenteredLesson?.title ?? '').toLowerCase());
+  const title = problemSetCenteredLesson?.title ?? `Lesson ${lessonNumber} concept`;
+  const context = problemSetCenteredLesson?.concept
+    ?? runtime.teacherEditionSteps?.[0]?.studentPrompt
+    ?? 'Use the Teacher Edition lesson focus to connect the model, equation, and answer meaning.';
+
+  switch (kind) {
+    case 'clock':
+      return {
+        kind,
+        title: `Animated concept: ${shortLessonTitle(title)}`,
+        context,
+        equation: 'start time + elapsed time = end time',
+        teacherPrompt: 'What changes on the clock, and what amount of time stays accounted for?',
+        clockLabels: ['start', 'elapsed jump', 'end'],
+        focus: ['start time', 'elapsed time', 'minute hand movement', 'end time']
+      };
+    case 'measurement':
+      return {
+        kind,
+        title: `Animated concept: ${shortLessonTitle(title)}`,
+        context,
+        equation: 'measure -> choose unit -> compare or convert',
+        teacherPrompt: 'Which unit or interval makes this measurement precise enough?',
+        measurementTicks: ['0', '1/4', '1/2', '3/4', '1', '1 1/4', '1 1/2', '2'],
+        focus: ['unit choice', 'tick marks', 'precision', 'comparison']
+      };
+    case 'area-model':
+      return {
+        kind,
+        title: `Animated concept: ${shortLessonTitle(title)}`,
+        context,
+        equation: 'rows x columns = square units',
+        teacherPrompt: 'How do the rows and columns account for every square unit inside the shape?',
+        areaRows: 4,
+        areaColumns: 6,
+        rowCount: 4,
+        columnCount: 6,
+        focus: ['inside squares', 'rows', 'columns', 'total area']
+      };
+    case 'fraction-strip':
+      return {
+        kind,
+        title: `Animated concept: ${shortLessonTitle(title)}`,
+        context,
+        equation: 'equal parts of the same whole',
+        teacherPrompt: 'What is the whole, and are all parts equal?',
+        fractionPartCount: 6,
+        fractionShadedCount: 2,
+        focus: ['same whole', 'equal parts', 'unit fraction', 'shaded amount']
+      };
+    case 'graph':
+      return {
+        kind,
+        title: `Animated concept: ${shortLessonTitle(title)}`,
+        context,
+        equation: 'data -> scale/key -> display -> comparison',
+        teacherPrompt: 'What does each mark, symbol, or bar unit represent?',
+        graphBars: [
+          { label: 'A', value: 4 },
+          { label: 'B', value: 7 },
+          { label: 'C', value: 5 },
+          { label: 'D', value: 9 }
+        ],
+        focus: ['data value', 'scale or key', 'bar height / X count', 'comparison']
+      };
+    case 'geometry':
+      return {
+        kind,
+        title: `Animated concept: ${shortLessonTitle(title)}`,
+        context,
+        equation: 'attributes identify and classify the shape',
+        teacherPrompt: 'Which sides, angles, or equal parts prove the classification?',
+        geometryLabels: ['sides', 'angles', 'attributes'],
+        focus: ['side count', 'angle count', 'parallel/equal evidence', 'classification']
+      };
+    case 'tape-diagram':
+      return {
+        kind,
+        title: `Animated concept: ${shortLessonTitle(title)}`,
+        context,
+        equation: 'whole = equal parts or known part + unknown part',
+        teacherPrompt: 'What does each tape part represent, and what is the unknown?',
+        tapePartCount: 6,
+        tapePartLabel: 'unit',
+        tapeWholeLabel: 'whole',
+        focus: ['whole', 'equal parts', 'known quantity', 'unknown quantity']
+      };
+    case 'number-line':
+      return {
+        kind,
+        title: `Animated concept: ${shortLessonTitle(title)}`,
+        context,
+        equation: 'start -> equal jumps -> target',
+        teacherPrompt: 'What does each jump mean, and where does the target land?',
+        numberLineLabels: ['0', '1', '2', '3', '4', '5', '6'],
+        numberLineJumps: ['jump', 'jump', 'target'],
+        focus: ['start value', 'equal intervals', 'jumps', 'target value']
+      };
+    case 'array':
+      return {
+        kind,
+        title: `Animated concept: ${shortLessonTitle(title)}`,
+        context,
+        equation: 'known part + new part = full fact',
+        teacherPrompt: 'How does the split array preserve the total while making friendlier facts?',
+        rowCount: 6,
+        columnCount: 6,
+        firstPart: 5,
+        secondPart: 1,
+        focus: ['rows', 'columns', 'decompose', 'combine partial products']
+      };
+    case 'equal-groups':
+    default:
+      return {
+        kind: 'equal-groups',
+        title: `Animated concept: ${shortLessonTitle(title)}`,
+        context,
+        equation: 'groups x size of each group = total',
+        teacherPrompt: 'How many groups, how many in each group, and what total do they make?',
+        groupCount: 4,
+        groupSize: 6,
+        focus: ['number of groups', 'size of each group', 'total', 'related division']
+      };
+  }
+}
+
+function inferLessonAnimationKind(moduleId: string, text: string, titleText = text): LessonAnimationModel['kind'] {
+  if (/\bclock\b|elapsed time|time interval|minute hand|hour hand/.test(text)) {
+    return 'clock';
+  }
+  if (moduleId === 'm4') {
+    return 'area-model';
+  }
+  if (moduleId === 'm5') {
+    return /number line|endpoint|unit interval|distance from 0|point on the line/.test(titleText)
+      ? 'number-line'
+      : 'fraction-strip';
+  }
+  if (moduleId === 'm7') {
+    if (/line plot|data plot|record the number of rectangles|fluency|resource booklet|calendar|critique|reflection/.test(titleText)) {
+      return 'graph';
+    }
+    if (/area and perimeter|areas? that may be produced|determine their areas|unit squares|rectangles? from a given number/.test(titleText)) {
+      return 'area-model';
+    }
+    if (/perimeter|measure side lengths|string to measure|unknown measurements/.test(titleText)) {
+      return 'measurement';
+    }
+    if (/word problems?|letter to represent the unknown|varied contexts/.test(titleText)) {
+      return 'tape-diagram';
+    }
+    if (/one-half|half/.test(titleText)) {
+      return 'fraction-strip';
+    }
+    return 'geometry';
+  }
+  if (/line plot|picture graph|bar graph|graph|data|tally|scale|key/.test(text) || moduleId === 'm6') {
+    return 'graph';
+  }
+  if (/number line|nearest quarter|nearest half|skip-count|count by/.test(text)) {
+    return 'number-line';
+  }
+  if (/measure|measurement|ruler|length|mass|weight|gram|kilogram|liter|milliliter|inch|centimeter|perimeter/.test(text)) {
+    return 'measurement';
+  }
+  if (/area|square unit|rectangle|floor plan|tile/.test(text) || moduleId === 'm4') {
+    return 'area-model';
+  }
+  if (/fraction|third|fourth|half|sixth|eighth|equivalent|partition|unit fraction/.test(text) || moduleId === 'm5') {
+    return 'fraction-strip';
+  }
+  if (/shape|polygon|quadrilateral|angle|parallel|attribute|tetromino|tangram|geometry/.test(text) || moduleId === 'm7') {
+    return 'geometry';
+  }
+  if (/tape|diagram|share|unknown|word problem|rdw/.test(text)) {
+    return 'tape-diagram';
+  }
+  if (/array|commutative|distributive|associative|decompose|factor|multiple|multiply|division|quotient|product/.test(text) || moduleId === 'm3') {
+    return 'array';
+  }
+  return 'equal-groups';
+}
+
+function withConceptSteps(
+  animation: LessonAnimationModel,
+  moduleId: string,
+  lessonNumber: number,
+  problemSetCenteredLesson: ProblemSetCenteredLesson | undefined
+): LessonAnimationModel {
+  const animationWithSteps: LessonAnimationModel = {
+    ...animation,
+    title: animation.title || `Lesson ${lessonNumber} concept animation`,
+    context: animation.context || problemSetCenteredLesson?.concept || `Module ${moduleId.slice(1)} Lesson ${lessonNumber} concept`,
+    conceptSteps: animation.conceptSteps?.length ? animation.conceptSteps : conceptStepsForAnimation(animation)
+  };
+
+  return normalizeLessonAnimationCopy(animationWithSteps);
+}
+
+function normalizeLessonAnimationCopy(animation: LessonAnimationModel): LessonAnimationModel {
+  return {
+    ...animation,
+    title: trimPanelText(stripFinalPunctuation(cleanPanelText(animation.title)), 130),
+    context: trimPanelText(cleanPanelText(animation.context), 190),
+    teacherPrompt: trimPanelText(cleanTeacherPrompt(animation.teacherPrompt), 190)
+  };
+}
+
+function cleanTeacherPrompt(prompt: string): string {
+  const cleaned = cleanPanelText(prompt);
+  const areaPrompt = cleaned.match(/^How does the official area model show\s+(.+?)\??$/i);
+  if (areaPrompt) {
+    return `What does the area model make visible about ${removeLeadingObjectiveVerb(areaPrompt[1])}?`;
+  }
+
+  const fractionPrompt = cleaned.match(/^How does the official fraction model show\s+(.+?)\??$/i);
+  if (fractionPrompt) {
+    return `What does the fraction model make visible about ${removeLeadingObjectiveVerb(fractionPrompt[1])}?`;
+  }
+
+  const sourceWorkspacePrompt = cleaned.match(/^Use the source Lesson (\d+) (.+?) workspace\b.*$/i);
+  if (sourceWorkspacePrompt) {
+    return `Use the source Lesson ${sourceWorkspacePrompt[1]} ${sourceWorkspacePrompt[2]} workspace. What visual evidence, labels, quantities, and check evidence prove the answer?`;
+  }
+
+  return cleaned;
+}
+
+function cleanPanelText(value: string): string {
+  return value
+    .replace(/\s+/g, ' ')
+    .replace(/\s+([,.;:!?])/g, '$1')
+    .replace(/\.\?/g, '?')
+    .trim();
+}
+
+function stripFinalPunctuation(value: string): string {
+  return cleanPanelText(value).replace(/[.!?]+$/g, '').trim();
+}
+
+function decapitalize(value: string): string {
+  return value ? value.charAt(0).toLowerCase() + value.slice(1) : value;
+}
+
+function removeLeadingObjectiveVerb(value: string): string {
+  return decapitalize(stripFinalPunctuation(value))
+    .replace(/^(understand|solve|apply|find|relate|form|draw|interpret|analyze|model|decompose|demonstrate|compare|place|practice|recognize|show|generate|express|explain|identify|represent|partition|specify|build)\s+/i, '')
+    .trim();
+}
+
+function trimPanelText(value: string, maxLength: number): string {
+  const cleaned = cleanPanelText(value);
+  if (cleaned.length <= maxLength) {
+    return cleaned;
+  }
+  const clipped = cleaned.slice(0, maxLength - 3);
+  const lastSpace = clipped.lastIndexOf(' ');
+  return `${clipped.slice(0, lastSpace > 72 ? lastSpace : clipped.length).trim()}...`;
+}
+
+function conceptStepsForAnimation(animation: LessonAnimationModel): NonNullable<LessonAnimationModel['conceptSteps']> {
+  switch (animation.kind) {
+    case 'equal-groups':
+      return [
+        { label: 'Build groups', action: `${animation.groupCount ?? 4} equal groups appear.`, result: 'Every group must have the same size.' },
+        { label: 'Count each group', action: `${animation.groupSize ?? 6} items fill each group.`, result: 'The group size becomes the second factor.' },
+        { label: 'Total / divide', action: 'The full set is counted, then can be split back into equal groups.', result: 'Multiplication and division describe the same structure.' }
+      ];
+    case 'array':
+      return [
+        { label: 'Rows and columns', action: 'Dots enter in rows and columns.', result: 'Each row has the same number of items.' },
+        { label: 'Split if useful', action: animation.firstPart ? `${animation.firstPart} rows are separated from ${animation.secondPart ?? 1} row(s).` : 'The array can be read by rows or columns.', result: 'The total stays the same.' },
+        { label: 'Write facts', action: 'The model connects to a multiplication or division equation.', result: 'The equation names what the picture proves.' }
+      ];
+    case 'tape-diagram':
+      return [
+        { label: 'Name the whole', action: 'The full tape names the total or comparison.', result: 'The whole is visible before solving.' },
+        { label: 'Partition', action: `${animation.tapePartCount ?? 4} equal parts build across the tape.`, result: 'Each part has a meaning and label.' },
+        { label: 'Find unknown', action: 'Known parts and the missing part are compared.', result: 'The answer names the unknown in context.' }
+      ];
+    case 'number-line':
+      return [
+        { label: 'Set scale', action: 'Tick marks establish equal intervals.', result: 'Every jump has the same size.' },
+        { label: 'Jump', action: 'Jumps move from the start toward the target.', result: 'The path shows addition, subtraction, elapsed time, or data intervals.' },
+        { label: 'Land', action: 'The final tick is labeled and checked.', result: 'The target value is justified by the jumps.' }
+      ];
+    case 'clock':
+      return [
+        { label: 'Start', action: 'The hands show the start time.', result: 'The start is fixed before elapsed time is counted.' },
+        { label: 'Move minutes', action: 'The minute hand sweeps forward by equal minute intervals.', result: 'Elapsed time is visible as movement.' },
+        { label: 'Read end', action: 'The hands stop at the end time.', result: 'The final time follows from the elapsed jumps.' }
+      ];
+    case 'measurement':
+      return [
+        { label: 'Choose unit', action: 'The ruler or scale shows equal units.', result: 'The unit determines what each tick means.' },
+        { label: 'Mark precisely', action: 'Ticks reveal whole, half, quarter, or metric intervals.', result: 'Precision comes from the interval size.' },
+        { label: 'Compare / convert', action: 'Measured values are read against the scale.', result: 'The answer keeps the correct unit.' }
+      ];
+    case 'area-model':
+      return [
+        { label: 'Cover inside', action: 'Square units tile the inside of the rectangle.', result: 'Area counts inside space, not the boundary.' },
+        { label: 'Rows by columns', action: 'Rows and columns organize the count.', result: 'Multiplication replaces one-by-one counting.' },
+        { label: 'Total area', action: 'All tiles are counted once.', result: 'The product is the area in square units.' }
+      ];
+    case 'fraction-strip':
+      return [
+        { label: 'Same whole', action: 'One strip is fixed as the whole.', result: 'Fractions must refer to the same whole.' },
+        { label: 'Equal parts', action: `${animation.fractionPartCount ?? 4} equal parts partition the strip.`, result: 'The denominator names the number of equal parts.' },
+        { label: 'Name amount', action: `${animation.fractionShadedCount ?? 1} part(s) are highlighted.`, result: 'The numerator names how many equal parts are used.' }
+      ];
+    case 'graph':
+      return [
+        { label: 'Organize data', action: 'Categories or measurements are placed on the display.', result: 'Each mark belongs to a label.' },
+        { label: 'Apply scale/key', action: 'Bars or Xs grow using the stated unit value.', result: 'The display value depends on the scale or key.' },
+        { label: 'Interpret', action: 'Heights, counts, or clusters are compared.', result: 'The answer must come from display evidence.' }
+      ];
+    case 'geometry':
+    default:
+      return [
+        { label: 'Inspect shape', action: 'The shape appears with its visible sides and corners.', result: 'Attributes must be seen, not guessed.' },
+        { label: 'Mark attributes', action: 'Sides, angles, parallel lines, or equal parts are named.', result: 'The classification depends on evidence.' },
+        { label: 'Classify / compose', action: 'The shape is grouped, decomposed, or recomposed.', result: 'The answer follows from the attributes.' }
+      ];
+  }
+}
+
+function shortLessonTitle(title: string): string {
+  return trimPanelText(stripFinalPunctuation(title.replace(/^Lesson\s+\d+:\s*/i, '')), 92);
 }
 
 export function findLessonRuntime(moduleId: string, lessonNumber: number): LessonRuntimeConfig | undefined {
@@ -2211,10 +3132,11 @@ export function findLessonRuntime(moduleId: string, lessonNumber: number): Lesso
   return problemSetCenteredLesson
     ? {
         ...runtime,
-        lessonAnimation: moduleId === 'm6'
-          ? m6LessonAnimation(lessonNumber) ?? runtime.lessonAnimation
-          : runtime.lessonAnimation,
+        lessonAnimation: lessonAnimationForRuntime(moduleId, lessonNumber, runtime, problemSetCenteredLesson),
         problemSetCenteredLesson
       }
-    : runtime;
+    : {
+        ...runtime,
+        lessonAnimation: lessonAnimationForRuntime(moduleId, lessonNumber, runtime, undefined)
+      };
 }

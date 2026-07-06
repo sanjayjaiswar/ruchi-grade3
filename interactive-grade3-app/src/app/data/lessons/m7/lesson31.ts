@@ -57,7 +57,7 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Use the source-backed Lesson 31 workspace and one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      studentPrompt: "Use the Lesson 31 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to model and solve the student-facing problems with authored diagrams, labels, measurements, and response blanks.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 31; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
@@ -142,7 +142,7 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Use the source-backed Lesson 31 workspace and one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
+        value: "Use the Lesson 31 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to model and solve the student-facing problems with authored diagrams, labels, measurements, and response blanks."
       },
       {
         label: "Workbook",

@@ -24,7 +24,7 @@
       <nav class="topbar-lesson-nav" aria-label="Quick lesson navigation">
         <label class="topbar-module-info" aria-label="Choose module">
           <span>Module</span>
-          <select [value]="activeModuleId" (change)="selectTopbarModule($event)">
+          <select [ngModel]="activeModuleId" (ngModelChange)="selectTopbarModule($event)">
             <option *ngFor="let module of modules" [value]="module.id">
               {{ module.number }} · {{ moduleLabel(module.id) }}
             </option>
@@ -42,8 +42,10 @@
 
         <label class="topbar-select-field">
           <span>Lesson</span>
-          <select [value]="selectedLessonValue" (change)="selectTopbarLesson($event)" aria-label="Choose lesson">
-            <option *ngFor="let lesson of activeModuleLessons" [value]="lesson.lessonId">
+          <select [ngModel]="selectedLessonValue" (ngModelChange)="selectTopbarLesson($event)" aria-label="Choose lesson">
+            <option
+              *ngFor="let lesson of activeModuleLessons"
+              [value]="lesson.lessonId">
               L{{ lesson.lessonNumber }}: {{ lesson.shortLabel }}
             </option>
           </select>

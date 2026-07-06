@@ -5,12 +5,6 @@
       <span class="eyebrow">Lesson {{ lesson.lessonNumber }}</span>
       <h1>{{ lesson.title }}</h1>
       <p class="lead">{{ lesson.studentGoal }}</p>
-      <div class="lesson-meta">
-        <span>{{ topicTitle }}</span>
-        <span>{{ estimatedFlow }}</span>
-        <span *ngFor="let model of lesson.visualModels">{{ model }}</span>
-        <span *ngFor="let term of lesson.vocabulary">{{ term }}</span>
-      </div>
     </div>
     <div class="lesson-header-actions" *ngIf="problemSetCenteredLesson">
       <nav class="problem-centered-tabs" aria-label="Lesson sections" role="tablist">
@@ -33,7 +27,7 @@
           [attr.aria-selected]="activeProblemSection === 'summary'"
           (click)="showProblemSection('summary')">Summary</button>
       </nav>
-      <details class="source-card">
+      <details class="source-card" *ngIf="activeProblemSection !== 'problem-set'">
         <summary>Teacher source</summary>
         <strong>Teacher-edition objective</strong>
         <span>{{ lesson.objective }}</span>
@@ -82,12 +76,857 @@
                 <span>{{ problemLesson.contrast }}</span>
               </div>
             </div>
-            <aside>
-              <strong>Teacher Edition basis</strong>
-              <span>{{ problemLesson.teacherEditionBasis }}</span>
-              <small>{{ problemLesson.sourceNote }}</small>
-            </aside>
           </div>
+
+          <section class="module-concept-frame" *ngIf="moduleConceptFrame as frame" [attr.data-visual]="frame.visual">
+            <div class="module-frame-copy">
+              <span class="eyebrow">{{ moduleConceptFrameEyebrow }}</span>
+              <h3>{{ frame.title }}</h3>
+              <p>{{ frame.bigIdea }}</p>
+              <div class="module-frame-question">
+                <strong>Ask first</strong>
+                <span>{{ frame.studentQuestion }}</span>
+              </div>
+            </div>
+
+            <div class="module-frame-stage" [ngSwitch]="frame.visual" [attr.aria-label]="frame.modelLabel">
+              <div *ngSwitchCase="'groups'" class="module-frame-groups">
+                <div class="module-frame-array">
+                  <span
+                    *ngFor="let dot of moduleFrameSlots(24)"
+                    [class.is-split]="dot > 8"></span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'equal-groups'" class="module-frame-equal-groups">
+                <div class="module-frame-group-bags" aria-hidden="true">
+                  <span *ngFor="let group of moduleFrameSlots(4)">
+                    <i *ngFor="let dot of moduleFrameSlots(3)"></i>
+                    <b>group {{ group + 1 }}</b>
+                  </span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'array-rows-columns'" class="module-frame-array-rows-columns">
+                <div class="module-frame-row-column-array" aria-hidden="true">
+                  <span *ngFor="let dot of moduleFrameSlots(20)" [class.is-column]="dot % 5 === 0"></span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'division-tape'" class="module-frame-division-tape">
+                <div class="module-frame-division-bar" aria-hidden="true">
+                  <span *ngFor="let part of moduleFrameSlots(6)">{{ part < 5 ? '4' : '?' }}</span>
+                  <b>24 total</b>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'distributive-array'" class="module-frame-distributive-array">
+                <div class="module-frame-split-array" aria-hidden="true">
+                  <span *ngFor="let dot of moduleFrameSlots(42)" [class.is-second-part]="dot >= 30"></span>
+                </div>
+                <div class="module-frame-equations">
+                  <span>5 x 6 = 30</span>
+                  <span>2 x 6 = 12</span>
+                  <strong>30 + 12 = 42</strong>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'measurement'" class="module-frame-measurement">
+                <div class="module-frame-clock lesson-library-clock" data-hour="7" data-minute="35" aria-hidden="true"></div>
+                <div class="module-frame-scale">
+                  <span *ngFor="let tick of moduleFrameSlots(7)">{{ (tick - 1) * 10 }}</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'clock-time'" class="module-frame-clock-time">
+                <div class="module-frame-clock lesson-library-clock" data-hour="3" data-minute="45" aria-hidden="true"></div>
+                <div class="module-frame-time-jumps" aria-hidden="true">
+                  <span>3:00</span><span>+30 min</span><span>+15 min</span><span>3:45</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'elapsed-time-line'" class="module-frame-elapsed-time-line">
+                <div class="module-frame-clock lesson-library-clock" data-hour="2" data-minute="20" aria-hidden="true"></div>
+                <div class="module-frame-elapsed-line" aria-hidden="true">
+                  <span>2:20</span><span>+10</span><span>+15</span><span>2:45</span>
+                </div>
+                <strong class="module-frame-point-callout">count intervals, not tick marks</strong>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'metric-measure'" class="module-frame-metric-measure">
+                <div class="module-frame-metric-tools" aria-hidden="true">
+                  <span class="is-scale"><b>kg / g</b><i></i></span>
+                  <span class="is-beaker"><b>L</b><i></i></span>
+                  <span class="is-beaker is-small"><b>mL</b><i></i></span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'rounding-number-line'" class="module-frame-rounding-number-line">
+                <div class="module-frame-rounding-line" aria-hidden="true">
+                  <span>340</span><span class="is-target">347</span><span>350</span><span>360</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'vertical-rounding-line'" class="module-frame-vertical-rounding-line">
+                <div class="module-frame-vertical-line" aria-hidden="true">
+                  <span>300</span><span>340</span><span class="is-target">347</span><span>350</span><span>400</span>
+                </div>
+                <strong class="module-frame-point-callout">nearest benchmark is chosen by distance</strong>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'measurement-operation'" class="module-frame-measurement-operation">
+                <div class="module-frame-measurement-bars" aria-hidden="true">
+                  <span><b>450 g</b></span><span><b>275 g</b></span><span class="is-answer"><b>?</b></span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'measurement-compose'" class="module-frame-measurement-compose">
+                <div class="module-frame-compose-algorithm" aria-hidden="true">
+                  <span>486 g</span><span>+ 379 g</span><b>865 g</b><i>compose 10 ones, then 10 tens</i>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'measurement-decompose'" class="module-frame-measurement-decompose">
+                <div class="module-frame-compose-algorithm is-subtract" aria-hidden="true">
+                  <span>405 mL</span><span>- 178 mL</span><b>227 mL</b><i>decompose hundreds and tens before subtracting</i>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'facts'" class="module-frame-facts">
+                <div class="module-frame-array">
+                  <span
+                    *ngFor="let dot of moduleFrameSlots(42)"
+                    [class.is-split]="dot > 35"></span>
+                </div>
+                <div class="module-frame-equations">
+                  <span>5 x 7 = 35</span>
+                  <span>1 x 7 = 7</span>
+                  <strong>35 + 7 = 42</strong>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'commutative-array'" class="module-frame-commutative-array">
+                <div class="module-frame-commute-pair" aria-hidden="true">
+                  <span *ngFor="let dot of moduleFrameSlots(12)"></span>
+                  <span *ngFor="let dot of moduleFrameSlots(12)"></span>
+                </div>
+                <div class="module-frame-equations">
+                  <span>3 x 4 = 12</span>
+                  <span>4 x 3 = 12</span>
+                  <strong>same total</strong>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'distributive-facts'" class="module-frame-distributive-facts">
+                <div class="module-frame-split-array is-facts" aria-hidden="true">
+                  <span *ngFor="let dot of moduleFrameSlots(48)" [class.is-second-part]="dot >= 30"></span>
+                </div>
+                <div class="module-frame-equations">
+                  <span>5 x 8 = 40</span>
+                  <span>1 x 8 = 8</span>
+                  <strong>6 x 8 = 48</strong>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'pattern-facts'" class="module-frame-pattern-facts">
+                <div class="module-frame-ten-minus" aria-hidden="true">
+                  <span *ngFor="let dot of moduleFrameSlots(60)" [class.is-removed]="dot >= 54"></span>
+                </div>
+                <div class="module-frame-equations">
+                  <span>10 x 6 = 60</span>
+                  <span>remove 1 x 6</span>
+                  <strong>9 x 6 = 54</strong>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'fluency-facts'" class="module-frame-fluency-facts">
+                <div class="module-frame-fact-wheel" aria-hidden="true">
+                  <span>0 x n = 0</span>
+                  <span>1 x n = n</span>
+                  <span>10 x n</span>
+                  <span>n x 10</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'unknown-factor'" class="module-frame-unknown-factor">
+                <div class="module-frame-unknown-factor-card" aria-hidden="true">
+                  <span>6 x n = 42</span>
+                  <b>42 total</b>
+                  <i>n groups or n in each group?</i>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'place-value-facts'" class="module-frame-place-value-facts">
+                <div class="module-frame-place-value-chart" aria-hidden="true">
+                  <span>tens</span><span>ones</span>
+                  <b>4</b><b>0</b>
+                  <i>3 x 4 tens = 12 tens</i>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'area'" class="module-frame-area">
+                <span
+                  *ngFor="let tile of moduleFrameSlots(24)"
+                  [class.is-split]="tile % 6 > 4 || tile % 6 === 0"></span>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'tile-area'" class="module-frame-tile-area">
+                <div class="module-frame-tile-figure" aria-hidden="true">
+                  <span *ngFor="let tile of moduleFrameSlots(12)"></span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'area-array'" class="module-frame-area-array">
+                <div class="module-frame-array-rectangle" aria-hidden="true">
+                  <span *ngFor="let tile of moduleFrameSlots(24)" [class.is-ghost]="tile > 14"></span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'area-decompose'" class="module-frame-area-decompose">
+                <div class="module-frame-decompose-figure" aria-hidden="true">
+                  <span>A</span>
+                  <span>B</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'area-floor-plan'" class="module-frame-area-floor-plan">
+                <div class="module-frame-floor-plan" aria-hidden="true">
+                  <span>bedroom</span>
+                  <span>hall</span>
+                  <span>kitchen</span>
+                  <span>bath</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'fractions'" class="module-frame-fractions">
+                <span
+                  *ngFor="let part of moduleFrameSlots(4)"
+                  [class.is-shaded]="part <= 3"></span>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'fraction-folds'" class="module-frame-fraction-folds">
+                <div class="module-frame-fold-strip is-halves" aria-hidden="true"><span></span><span></span></div>
+                <div class="module-frame-fold-strip is-thirds" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="module-frame-fold-strip is-fourths" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'fraction-area'" class="module-frame-fraction-area">
+                <div class="module-frame-area-models" aria-hidden="true">
+                  <span class="is-rectangle"><i></i><i></i><i></i><i></i></span>
+                  <span class="is-circle"><i></i><i></i><i></i><i></i></span>
+                  <span class="is-square"><i></i><i></i><i></i><i></i></span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'fraction-number-bond'" class="module-frame-fraction-number-bond">
+                <div class="module-frame-fraction-bond" aria-hidden="true">
+                  <strong>1 whole</strong>
+                  <span>3/5 shaded</span>
+                  <span>2/5 unshaded</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'fraction-greater-one'" class="module-frame-fraction-greater-one">
+                <div class="module-frame-more-than-one" aria-hidden="true">
+                  <span>1</span><span>1</span><span>1/3</span>
+                  <b>7 thirds = 2 wholes and 1 third</b>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'fraction-whole-unit'" class="module-frame-fraction-whole-unit">
+                <div class="module-frame-whole-unit" aria-hidden="true">
+                  <span class="is-large">1/3 of a large whole</span>
+                  <span class="is-small">1/3 of a small whole</span>
+                  <b>same unit name, different whole</b>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'fraction-number-line'" class="module-frame-fraction-number-line">
+                <div class="module-frame-number-line" aria-hidden="true">
+                  <span>0</span><span>1/4</span><span>1/2</span><span>3/4</span><span>1</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'fraction-beyond-one'" class="module-frame-fraction-beyond-one">
+                <div class="module-frame-extended-number-line" aria-hidden="true">
+                  <span>0</span><span>1/4</span><span>2/4</span><span>3/4</span><span>4/4<br>1</span><span>5/4</span><span>6/4</span><span>7/4</span><span>8/4<br>2</span>
+                </div>
+                <strong class="module-frame-point-callout">7/4 = 1 3/4</strong>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'fraction-number-line-compare'" class="module-frame-fraction-number-line-compare">
+                <div class="module-frame-compare-number-line" aria-hidden="true">
+                  <span>0</span><span>1/4</span><span>2/4</span><span>3/4</span><span>1</span>
+                </div>
+                <strong class="module-frame-point-callout">3/4 is farther from 0 than 2/4</strong>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'fraction-number-line-equivalence'" class="module-frame-fraction-number-line-equivalence">
+                <div class="module-frame-equivalent-number-lines" aria-hidden="true">
+                  <div>
+                    <strong>halves</strong>
+                    <span>0</span><span>1/2</span><span>1</span>
+                  </div>
+                  <div>
+                    <strong>fourths</strong>
+                    <span>0</span><span>1/4</span><span>2/4</span><span>3/4</span><span>1</span>
+                  </div>
+                  <b>1/2 = 2/4</b>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'fraction-equivalence'" class="module-frame-fraction-equivalence">
+                <div class="module-frame-equivalent-strips" aria-hidden="true">
+                  <div><span></span><span></span></div>
+                  <div><span></span><span></span><span></span><span></span></div>
+                  <strong>1/2 = 2/4</strong>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'fraction-whole-equivalence'" class="module-frame-fraction-whole-equivalence">
+                <div class="module-frame-whole-fraction-stack" aria-hidden="true">
+                  <span>1 = 2/2</span>
+                  <span>1 = 3/3</span>
+                  <span>2 = 8/4</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'fraction-compare'" class="module-frame-fraction-compare">
+                <div class="module-frame-compare-strips" aria-hidden="true">
+                  <div>
+                    <strong>2 thirds</strong>
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div>
+                    <strong>2 fourths</strong>
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                  <b>same numerator, different unit size</b>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'fraction-precise-partition'" class="module-frame-fraction-precise-partition">
+                <div class="module-frame-precise-partition" aria-hidden="true">
+                  <span *ngFor="let tick of moduleFrameSlots(9)">{{ tick === 0 ? '0' : tick === 8 ? '1' : '' }}</span>
+                  <b>use lined-paper spacing to partition evenly</b>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'one-half-area'" class="module-frame-one-half-area">
+                <div class="module-frame-halves" aria-hidden="true">
+                  <span><i></i><i></i></span>
+                  <span><i></i><i></i></span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'data'" class="module-frame-data">
+                <span *ngFor="let bar of moduleFrameSlots(5)" [style.height.%]="32 + bar * 11">
+                  <i></i>
+                  <small>{{ bar }}</small>
+                </span>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'scaled-bar-graph'" class="module-frame-scaled-bar-graph">
+                <div class="module-frame-scaled-bars" aria-hidden="true">
+                  <strong>scale: 1 interval = 2 students</strong>
+                  <span><i style="height: 72px"></i><b>Baking</b><small>9</small></span>
+                  <span><i style="height: 128px"></i><b>Sports</b><small>16</small></span>
+                  <span><i style="height: 104px"></i><b>Chorus</b><small>13</small></span>
+                  <span><i style="height: 144px"></i><b>Drama</b><small>18</small></span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'tally-data'" class="module-frame-tally-data">
+                <div class="module-frame-tally-table" aria-hidden="true">
+                  <span>Color</span><span>Tallies</span><span>Picture graph</span>
+                  <b>Green</b><i>||||</i><em>● ●</em>
+                  <b>Yellow</b><i>||||/ |</i><em>● ● ●</em>
+                  <b>Red</b><i>|||</i><em>● ◐</em>
+                  <b>Blue</b><i>||||/</i><em>● ● ◐</em>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'vertical-tape-data'" class="module-frame-vertical-tape-data">
+                <div class="module-frame-vertical-tapes" aria-hidden="true">
+                  <span style="height: 88px">A</span><span style="height: 132px">B</span><span style="height: 66px">C</span>
+                  <b>same tape units, rotated vertically</b>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'measurement-line-plot'" class="module-frame-measurement-line-plot">
+                <div class="module-frame-measurement-axis" aria-hidden="true">
+                  <span>1 1/2</span><span>1 3/4</span><span>2</span><span>2 1/4</span><span>2 1/2</span><span>2 3/4</span><span>3</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'ruler-intervals'" class="module-frame-ruler-intervals">
+                <div class="module-frame-ruler" aria-hidden="true">
+                  <span *ngFor="let tick of moduleFrameSlots(9)" [class.is-major]="tick % 4 === 0">{{ tick === 0 ? '0' : tick === 4 ? '1/2' : tick === 8 ? '1' : '' }}</span>
+                </div>
+                <strong class="module-frame-point-callout">whole, half, and quarter inch intervals</strong>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'line-plot-interpret'" class="module-frame-line-plot-interpret">
+                <div class="module-frame-measurement-axis is-interpret" aria-hidden="true">
+                  <span>1 1/2</span><span>1 3/4</span><span>2</span><span>2 1/4</span><span>2 1/2</span><span>2 3/4</span><span>3</span>
+                </div>
+                <strong class="module-frame-point-callout">each X is one measured object</strong>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'line-plot'" class="module-frame-line-plot">
+                <div class="module-frame-line-plot-axis" aria-hidden="true">
+                  <span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'rdw'" class="module-frame-rdw">
+                <div class="module-frame-rdw-card" aria-hidden="true">
+                  <strong>Read</strong>
+                  <span>known + unknown</span>
+                  <strong>Draw</strong>
+                  <div><b>known</b><b>?</b></div>
+                  <strong>Write</strong>
+                  <span>k + m = total</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'strategy-critique'" class="module-frame-strategy-critique">
+                <div class="module-frame-critique-cards" aria-hidden="true">
+                  <span>Strategy A<br>area model</span>
+                  <span>Strategy B<br>perimeter equation</span>
+                  <b>Does each model answer the question?</b>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'fluency-book'" class="module-frame-fluency-book">
+                <div class="module-frame-booklet" aria-hidden="true">
+                  <span>fact</span><span>model</span><span>explain</span>
+                  <b>resource booklet page</b>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'geometry-attributes'" class="module-frame-geometry-attributes">
+                <div class="module-frame-attribute-shapes" aria-hidden="true">
+                  <span>4 sides</span>
+                  <span>parallel</span>
+                  <span>right angles</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'geometry-compose'" class="module-frame-geometry-compose">
+                <div class="module-frame-tangram" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'perimeter'" class="module-frame-perimeter">
+                <div class="module-frame-perimeter-shape" aria-hidden="true">
+                  <span>trace starts</span><span>outside only</span><span>inside not counted</span><span>trace ends</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'perimeter-tessellate'" class="module-frame-perimeter-tessellate">
+                <div class="module-frame-tessellation" aria-hidden="true">
+                  <span *ngFor="let tile of moduleFrameSlots(8)"></span>
+                  <b>trace only the outside boundary</b>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'perimeter-measure'" class="module-frame-perimeter-measure">
+                <div class="module-frame-measured-polygon" aria-hidden="true">
+                  <span class="is-top">6 cm</span>
+                  <span class="is-right">4 cm</span>
+                  <span class="is-bottom">6 cm</span>
+                  <span class="is-left">4 cm</span>
+                  <b>6 + 4 + 6 + 4</b>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'perimeter-side-measure'" class="module-frame-perimeter-side-measure">
+                <div class="module-frame-side-ruler" aria-hidden="true">
+                  <span class="is-shape">polygon</span>
+                  <span class="is-ruler">0 1 2 3 4 5 6</span>
+                  <b>measure each side in whole units</b>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'perimeter-unknown'" class="module-frame-perimeter-unknown">
+                <div class="module-frame-unknown-polygon" aria-hidden="true">
+                  <span class="is-top">9 cm</span>
+                  <span class="is-right">?</span>
+                  <span class="is-bottom">9 cm</span>
+                  <span class="is-left">4 cm</span>
+                  <b>opposite sides match</b>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'circle-perimeter'" class="module-frame-circle-perimeter">
+                <div class="module-frame-string-circle" aria-hidden="true">
+                  <span>string around circle</span>
+                  <b>nearest 1/4 in.</b>
+                </div>
+                <div class="module-frame-string-ruler" aria-hidden="true">
+                  <span>0</span><span>1/4</span><span>1/2</span><span>3/4</span><span>1 in.</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'perimeter-rdw'" class="module-frame-perimeter-rdw">
+                <div class="module-frame-octagon" aria-hidden="true">
+                  <span>48 cm</span>
+                  <b>8 sides</b>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'robot-project'" class="module-frame-robot-project">
+                <div class="module-frame-robot" aria-hidden="true">
+                  <span>head<br>2 x 4</span>
+                  <span>body<br>P = 20</span>
+                  <span>arm<br>P = 14</span>
+                  <span>arm<br>P = 14</span>
+                  <span>legs<br>A = 18</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'rectangle-unit-squares'" class="module-frame-rectangle-unit-squares">
+                <div class="module-frame-rectangle-builds" aria-hidden="true">
+                  <span>1 x 12<br>P = 26</span>
+                  <span>2 x 6<br>P = 16</span>
+                  <span>3 x 4<br>P = 14</span>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchCase="'rectangle-given-perimeter'" class="module-frame-rectangle-given-perimeter">
+                <div class="module-frame-perimeter-rectangles" aria-hidden="true">
+                  <span>1 x 7<br>P = 16</span>
+                  <span>2 x 6<br>P = 16</span>
+                  <span>3 x 5<br>P = 16</span>
+                  <b>same perimeter, different areas</b>
+                </div>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+
+              <div *ngSwitchDefault class="module-frame-shapes">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="module-frame-transform">
+                  <b>{{ frame.transform.from }}</b>
+                  <i>{{ frame.transform.action }}</i>
+                  <b>{{ frame.transform.to }}</b>
+                </div>
+              </div>
+            </div>
+
+            <div class="module-frame-progression">
+              <strong>{{ frame.modelLabel }}</strong>
+              <ol>
+                <li
+                  *ngFor="let band of frame.lessonBands"
+                  [class.is-active]="moduleConceptBandIsActive(band)">
+                  <b>{{ band.label }}</b>
+                  <span>{{ band.lessons }}</span>
+                  <em>{{ band.focus }}</em>
+                </li>
+              </ol>
+              <ul>
+                <li *ngFor="let lookFor of frame.teacherLookFor">{{ lookFor }}</li>
+              </ul>
+            </div>
+          </section>
 
           <section class="problem-centered-source-concepts" [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' Teacher Edition concept development'">
             <article *ngFor="let conceptSection of problemLesson.conceptSections">
@@ -158,14 +997,7 @@
                 </div>
 
                 <div *ngSwitchCase="'clock'" class="lesson-animation-clock" aria-label="Animated clock model">
-                  <div class="lesson-animation-clock-face">
-                    <span class="clock-mark twelve">12</span>
-                    <span class="clock-mark three">3</span>
-                    <span class="clock-mark six">6</span>
-                    <span class="clock-mark nine">9</span>
-                    <i class="minute-hand"></i>
-                    <b class="hour-hand"></b>
-                  </div>
+                  <div class="lesson-animation-clock-face lesson-library-clock" data-hour="7" data-minute="35"></div>
                   <div class="lesson-animation-clock-labels">
                     <span *ngFor="let label of lessonAnimationClockLabels">{{ label }}</span>
                   </div>
@@ -174,6 +1006,24 @@
                 <div *ngSwitchCase="'measurement'" class="lesson-animation-measurement" aria-label="Animated measurement model">
                   <div class="lesson-animation-measure-track">
                     <span *ngFor="let tick of lessonAnimationMeasurementTicks">{{ tick }}</span>
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="'area-model'" class="lesson-animation-area" aria-label="Animated area model">
+                  <div
+                    class="lesson-animation-area-grid"
+                    [style.gridTemplateColumns]="'repeat(' + (animation.areaColumns || animation.columnCount || 4) + ', minmax(20px, 1fr))'">
+                    <span *ngFor="let tile of lessonAnimationAreaTiles"></span>
+                  </div>
+                </div>
+
+                <div *ngSwitchCase="'fraction-strip'" class="lesson-animation-fraction" aria-label="Animated fraction strip model">
+                  <div
+                    class="lesson-animation-fraction-strip"
+                    [style.gridTemplateColumns]="'repeat(' + lessonAnimationFractionParts.length + ', minmax(28px, 1fr))'">
+                    <span
+                      *ngFor="let part of lessonAnimationFractionParts; let partIndex = index"
+                      [class.is-shaded]="partIndex < (animation.fractionShadedCount || 0)"></span>
                   </div>
                 </div>
 
@@ -196,6 +1046,13 @@
 
             <div class="lesson-animation-notes">
               <strong>{{ animation.teacherPrompt }}</strong>
+              <ol class="lesson-animation-steps" *ngIf="animation.conceptSteps?.length">
+                <li *ngFor="let step of animation.conceptSteps">
+                  <b>{{ step.label }}</b>
+                  <span>{{ step.action }}</span>
+                  <em>{{ step.result }}</em>
+                </li>
+              </ol>
               <ul>
                 <li *ngFor="let focus of animation.focus">{{ focus }}</li>
               </ul>
@@ -477,27 +1334,10 @@
             </div>
           </div>
 
-          <details class="problem-source-pages source-reference-pages" *ngIf="hasProblemSetSourcePages(problemLesson)" [attr.aria-label]="problemSetSourcePageAriaLabel()">
-            <summary class="source-pages-heading">
-              <strong>{{ problemSetSourcePageHeading() }} reference</strong>
-              <span>{{ problemSetSourcePageSourceNote(problemLesson) }}</span>
-            </summary>
-            <div class="source-page-strip">
-              <a
-                *ngFor="let sourcePageImage of problemSetSourcePageImages(problemLesson); let pageIndex = index"
-                [href]="sourcePageImage"
-                target="_blank"
-                rel="noreferrer">
-                <img
-                  [src]="sourcePageImage"
-                  [alt]="problemSetSourcePageHeading() + ' for Module ' + module.number + ' Lesson ' + lesson.lessonNumber + ', page ' + (pageIndex + 1)" />
-              </a>
-            </div>
-          </details>
+          <!-- Guardrail: Blank/Solved problem tabs must not render PDF or Teacher Edition source-page screenshots. -->
 
           <article
             class="problem-solution-card"
-            [class.has-source-pages]="hasProblemSourcePages(problem)"
             [class.has-visual-spec]="problemVisualSpec(problem)"
             [class.is-blank-mode]="problemSetMode === 'blank'"
             [class.is-lesson16-source]="module.id === 'm1' && lesson.lessonNumber === 16 && problem.relatedFacts?.length"
@@ -506,7 +1346,10 @@
             [id]="problemDomId(problem.number)">
             <div class="problem-solution-head">
               <span class="problem-number">Problem {{ problem.number }}</span>
-              <h3>{{ problem.sourcePrompt }}</h3>
+              <h3 *ngIf="!isLongProblemPrompt(problem.sourcePrompt); else compactProblemPrompt">{{ problem.sourcePrompt }}</h3>
+              <ng-template #compactProblemPrompt>
+                <p class="problem-source-prompt">{{ problem.sourcePrompt }}</p>
+              </ng-template>
               <ul class="blank-prompt-list" *ngIf="problemSetMode === 'blank' && problem.blankPrompts?.length">
                 <li *ngFor="let prompt of problem.blankPrompts">{{ prompt }}</li>
               </ul>
@@ -518,6 +1361,7 @@
                 [spec]="visualSpec"
                 mode="blank"></app-problem-visual-workspace>
               <div
+                *ngIf="!problemVisualSpec(problem)"
                 class="blank-workspace-card"
                 [class.is-lesson16-source-card]="module.id === 'm1' && lesson.lessonNumber === 16 && problem.relatedFacts?.length"
                 [class.is-lesson17-source-card]="module.id === 'm1' && lesson.lessonNumber === 17">
@@ -863,11 +1707,9 @@
 
                   <div *ngSwitchCase="'clock-workspace'" class="blank-clock-source">
                     <strong>{{ problem.blankWorkspaceLabel || 'Draw or read the clock hands from the official source.' }}</strong>
-                    <div>
-                      <span>12</span>
-                      <span>3</span>
-                      <span>6</span>
-                      <span>9</span>
+                    <div class="clock-source-card">
+                      <span>source clock</span>
+                      <small>Use the official clock face.</small>
                     </div>
                     <small>Use the hour hand, minute hand, and elapsed-minute jumps from the Teacher Edition Problem Set.</small>
                   </div>
@@ -1004,7 +1846,7 @@
                 *ngIf="problemVisualSpec(problem) as visualSpec"
                 [spec]="visualSpec"
                 mode="solved"></app-problem-visual-workspace>
-              <div class="problem-animation-card" [ngSwitch]="problem.animationType">
+              <div class="problem-animation-card" *ngIf="!problemVisualSpec(problem)" [ngSwitch]="problem.animationType">
                 <div *ngSwitchCase="'grouping-by-size'" class="ps-grouping-model" aria-label="Grouping model">
                   <ng-container *ngIf="module.id === 'm1' && lesson.lessonNumber === 17 && problem.number === 2; else solvedGroupingDefault">
                     <div class="lesson17-tape is-solved">
@@ -1382,11 +2224,9 @@
 
                 <div *ngSwitchCase="'clock-model'" class="ps-clock-model" aria-label="Clock model">
                   <strong>{{ problem.solvedAnswer }}</strong>
-                  <div>
-                    <span>12</span>
-                    <span>3</span>
-                    <span>6</span>
-                    <span>9</span>
+                  <div class="clock-source-card">
+                    <span>official clock evidence</span>
+                    <small>Exact hands are shown in the source-backed visual above.</small>
                   </div>
                 </div>
 
@@ -1602,8 +2442,8 @@
 
           <section class="summary-check-grid" [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' validation checklist'">
             <article>
-              <strong>{{ problemLessonUsesTeacherActivity(problemLesson) ? '1. Use the Teacher Edition activity' : hasProblemSetSourcePages(problemLesson) ? '1. Use the Teacher Edition problem set' : '1. Use the official source prompt' }}</strong>
-              <span>{{ problemLessonUsesTeacherActivity(problemLesson) ? 'Check the activity steps, materials, labels, and challenge units against the official Teacher Edition reference.' : hasProblemSetSourcePages(problemLesson) ? 'Check the prompt, diagram, labels, and blanks against the official Teacher Edition reference.' : 'Check the prompt, diagram, labels, and blanks against the official source reference.' }}</span>
+              <strong>{{ problemLessonUsesTeacherActivity(problemLesson) ? '1. Use the Teacher Edition activity' : hasConceptSourcePages(problemLesson) ? '1. Use the Teacher Edition problem set' : '1. Use the official source prompt' }}</strong>
+              <span>{{ problemLessonUsesTeacherActivity(problemLesson) ? 'Check the activity steps, materials, labels, and challenge units against the official Teacher Edition reference.' : hasConceptSourcePages(problemLesson) ? 'Check the prompt, diagram, labels, and blanks against the official Teacher Edition reference.' : 'Check the prompt, diagram, labels, and blanks against the official source reference.' }}</span>
             </article>
             <article>
               <strong>2. Match the lesson strategy</strong>
@@ -1697,14 +2537,7 @@
             </div>
 
             <div *ngSwitchCase="'clock'" class="lesson-animation-clock" aria-label="Animated clock model">
-              <div class="lesson-animation-clock-face">
-                <span class="clock-mark twelve">12</span>
-                <span class="clock-mark three">3</span>
-                <span class="clock-mark six">6</span>
-                <span class="clock-mark nine">9</span>
-                <i class="minute-hand"></i>
-                <b class="hour-hand"></b>
-              </div>
+              <div class="lesson-animation-clock-face lesson-library-clock" data-hour="7" data-minute="35"></div>
               <div class="lesson-animation-clock-labels">
                 <span *ngFor="let label of lessonAnimationClockLabels">{{ label }}</span>
               </div>
@@ -1753,6 +2586,13 @@
 
         <div class="lesson-animation-notes">
           <strong>{{ animation.teacherPrompt }}</strong>
+          <ol class="lesson-animation-steps" *ngIf="animation.conceptSteps?.length">
+            <li *ngFor="let step of animation.conceptSteps">
+              <b>{{ step.label }}</b>
+              <span>{{ step.action }}</span>
+              <em>{{ step.result }}</em>
+            </li>
+          </ol>
           <ul>
             <li *ngFor="let focus of animation.focus">{{ focus }}</li>
           </ul>
@@ -1934,10 +2774,7 @@
                     <div *ngSwitchCase="'number-line'" class="mini-solve-number-line" aria-hidden="true">
                       <span *ngFor="let item of [1,2,3,4,5,6]"></span>
                     </div>
-                    <div *ngSwitchCase="'clock'" class="mini-solve-clock" aria-hidden="true">
-                      <span>12</span><span>3</span><span>6</span><span>9</span>
-                      <i></i><b></b>
-                    </div>
+                    <div *ngSwitchCase="'clock'" class="mini-solve-clock lesson-library-clock" data-hour="7" data-minute="35" aria-hidden="true"></div>
                     <div *ngSwitchCase="'measurement'" class="mini-solve-measurement" aria-hidden="true">
                       <span *ngFor="let item of [1,2,3,4,5,6,7]"></span>
                     </div>
@@ -2823,14 +3660,7 @@
               </div>
 
               <div *ngSwitchCase="'clock'" class="figure-clock" aria-label="Clock figure">
-                <div class="clock-face">
-                  <span class="clock-mark twelve">12</span>
-                  <span class="clock-mark three">3</span>
-                  <span class="clock-mark six">6</span>
-                  <span class="clock-mark nine">9</span>
-                  <span class="clock-hand minute-hand"></span>
-                  <span class="clock-hand hour-hand"></span>
-                </div>
+                <div class="clock-face lesson-library-clock" data-hour="7" data-minute="35"></div>
                 <p>{{ sourceModelCaption }}</p>
               </div>
 
