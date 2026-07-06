@@ -397,54 +397,54 @@ function twoStepVisual(
 function lesson19Problem1Visual(solved: boolean): ProblemVisualSpec {
   const rows = [
     {
-      label: 'a. 36 divided by 3',
+      label: 'a. 36 ÷ 3',
       total: 36,
       divisor: 3,
       quotient: 12,
       columns: 3,
       firstRows: 10,
       secondRows: 2,
-      firstExpression: '(30 divided by 3)',
-      secondExpression: '(6 divided by 3)',
+      firstExpression: '(30 ÷ 3)',
+      secondExpression: '(6 ÷ 3)',
       firstQuotient: 10,
       secondQuotient: 2
     },
     {
-      label: 'b. 25 divided by 5',
+      label: 'b. 25 ÷ 5',
       total: 25,
       divisor: 5,
       quotient: 5,
       columns: 5,
       firstRows: 4,
       secondRows: 1,
-      firstExpression: '(20 divided by 5)',
-      secondExpression: '(5 divided by 5)',
+      firstExpression: '(20 ÷ 5)',
+      secondExpression: '(5 ÷ 5)',
       firstQuotient: 4,
       secondQuotient: 1
     },
     {
-      label: 'c. 28 divided by 4',
+      label: 'c. 28 ÷ 4',
       total: 28,
       divisor: 4,
       quotient: 7,
       columns: 4,
       firstRows: 5,
       secondRows: 2,
-      firstExpression: '(20 divided by 4)',
-      secondExpression: '(8 divided by 4)',
+      firstExpression: '(20 ÷ 4)',
+      secondExpression: '(8 ÷ 4)',
       firstQuotient: 5,
       secondQuotient: 2
     },
     {
-      label: 'd. 32 divided by 4',
+      label: 'd. 32 ÷ 4',
       total: 32,
       divisor: 4,
       quotient: 8,
       columns: 4,
       firstRows: 5,
       secondRows: 3,
-      firstExpression: '(20 divided by 4)',
-      secondExpression: '(12 divided by 4)',
+      firstExpression: '(20 ÷ 4)',
+      secondExpression: '(12 ÷ 4)',
       firstQuotient: 5,
       secondQuotient: 3
     }
@@ -455,43 +455,51 @@ function lesson19Problem1Visual(solved: boolean): ProblemVisualSpec {
     sourceNote: solved
       ? 'Solved view follows the Lesson 19 Teacher Edition answer key: each array is split into friendly dividends and partial quotients.'
       : 'Blank view preserves the Teacher Edition four-part array split without filling the partial quotients.',
-    sections: rows.flatMap((row) => [
+    sections: [
       {
-        kind: 'array' as const,
-        label: row.label,
-        rows: row.firstRows + row.secondRows,
-        columns: row.columns,
-        item: 'dot' as const,
-        splitAfterRows: row.firstRows,
-        caption: solved
-          ? `${row.firstExpression} = ${row.firstQuotient}; ${row.secondExpression} = ${row.secondQuotient}`
-          : `${row.firstExpression} = ____; ${row.secondExpression} = ____`
-      },
-      {
-        kind: 'equations' as const,
-        label: solved ? 'Answer-key sentence' : 'Equation blanks',
-        lines: solved
-          ? [
-              `${row.total} divided by ${row.divisor} = ${row.quotient}`,
-              `(${row.total} divided by ${row.divisor}) = ${row.firstExpression} + ${row.secondExpression}`,
-              `${row.firstQuotient} + ${row.secondQuotient} = ${row.quotient}`
-            ]
-          : [
-              `${row.total} divided by ${row.divisor} = ____`,
-              `(${row.total} divided by ${row.divisor}) = ${row.firstExpression} + ${row.secondExpression}`,
-              `____ + ____ = ____`
-            ]
+        kind: 'card-grid' as const,
+        label: solved ? 'Teacher Edition answer-key parts' : 'Teacher Edition blank parts',
+        cards: rows.map((row) => ({
+          label: row.label,
+          sections: [
+            {
+              kind: 'array' as const,
+              rows: row.firstRows + row.secondRows,
+              columns: row.columns,
+              item: 'dot' as const,
+              splitAfterRows: row.firstRows,
+              caption: solved
+                ? `${row.firstExpression} = ${row.firstQuotient}; ${row.secondExpression} = ${row.secondQuotient}`
+                : `${row.firstExpression} = ____; ${row.secondExpression} = ____`
+            },
+            {
+              kind: 'equations' as const,
+              label: solved ? 'Answer-key sentence' : 'Equation blanks',
+              lines: solved
+                ? [
+                    `${row.total} ÷ ${row.divisor} = ${row.quotient}`,
+                    `(${row.total} ÷ ${row.divisor}) = ${row.firstExpression} + ${row.secondExpression}`,
+                    `${row.firstQuotient} + ${row.secondQuotient} = ${row.quotient}`
+                  ]
+                : [
+                    `${row.total} ÷ ${row.divisor} = ____`,
+                    `(${row.total} ÷ ${row.divisor}) = ${row.firstExpression} + ${row.secondExpression}`,
+                    `____ + ____ = ____`
+                  ]
+            }
+          ]
+        }))
       }
-    ])
+    ]
   };
 }
 
 function lesson19Problem2Visual(solved: boolean): ProblemVisualSpec {
   const matches = [
-    { bucket: '24 divided by 2', ball: '(20 divided by 2) + (4 divided by 2)', answer: '12', sourceMatch: 'first bucket to fourth ball' },
-    { bucket: '36 divided by 3', ball: '(30 divided by 3) + (6 divided by 3)', answer: '12', sourceMatch: 'second bucket to first ball' },
-    { bucket: '39 divided by 3', ball: '(30 divided by 3) + (9 divided by 3)', answer: '13', sourceMatch: 'third bucket to second ball' },
-    { bucket: '26 divided by 2', ball: '(20 divided by 2) + (6 divided by 2)', answer: '13', sourceMatch: 'fourth bucket to third ball' }
+    { bucket: '24 ÷ 2', ball: '(20 ÷ 2) + (4 ÷ 2)', answer: '12', sourceMatch: 'first bucket to fourth ball' },
+    { bucket: '36 ÷ 3', ball: '(30 ÷ 3) + (6 ÷ 3)', answer: '12', sourceMatch: 'second bucket to first ball' },
+    { bucket: '39 ÷ 3', ball: '(30 ÷ 3) + (9 ÷ 3)', answer: '13', sourceMatch: 'third bucket to second ball' },
+    { bucket: '26 ÷ 2', ball: '(20 ÷ 2) + (6 ÷ 2)', answer: '13', sourceMatch: 'fourth bucket to third ball' }
   ];
 
   return {
@@ -508,7 +516,7 @@ function lesson19Problem2Visual(solved: boolean): ProblemVisualSpec {
           ? matches.map((match) => [match.bucket, match.ball, match.answer, match.sourceMatch])
           : matches.map((match, index) => [
               match.bucket,
-              ['(30 divided by 3) + (6 divided by 3)', '(30 divided by 3) + (9 divided by 3)', '(20 divided by 2) + (6 divided by 2)', '(20 divided by 2) + (4 divided by 2)'][index]
+              ['(30 ÷ 3) + (6 ÷ 3)', '(30 ÷ 3) + (9 ÷ 3)', '(20 ÷ 2) + (6 ÷ 2)', '(20 ÷ 2) + (4 ÷ 2)'][index]
             ])
       },
       {
@@ -2421,13 +2429,13 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       {
         number: 1,
-        sourcePrompt: 'Label arrays and complete decomposed division sentences for 36 divided by 3, 25 divided by 5, 28 divided by 4, and 32 divided by 4.',
+        sourcePrompt: 'Label arrays and complete decomposed division sentences for 36 ÷ 3, 25 ÷ 5, 28 ÷ 4, and 32 ÷ 4.',
         solvedAnswer: 'Answer key: a. 12; 10; 2; 2. b. 5; 1; 1; 5. c. 7; 5; 8; 2; 8; 5, 2, 7. d. 8; 20, 5; 12, 3; 20, 12, 5, 3, 8.',
         equations: [
-          '36 divided by 3 = 12; 10 + 2 = 12',
-          '25 divided by 5 = 5; 4 + 1 = 5',
-          '28 divided by 4 = 7; 5 + 2 = 7',
-          '32 divided by 4 = 8; 5 + 3 = 8'
+          '36 ÷ 3 = 12; 10 + 2 = 12',
+          '25 ÷ 5 = 5; 4 + 1 = 5',
+          '28 ÷ 4 = 7; 5 + 2 = 7',
+          '32 ÷ 4 = 8; 5 + 3 = 8'
         ],
         quotient: 12,
         unitLabel: 'objects',
@@ -2452,8 +2460,8 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       {
         number: 2,
         sourcePrompt: 'Match equal division expressions.',
-        solvedAnswer: '24 divided by 2 matches (20 divided by 2) + (4 divided by 2); 36 divided by 3 matches (30 divided by 3) + (6 divided by 3); 39 divided by 3 matches (30 divided by 3) + (9 divided by 3); 26 divided by 2 matches (20 divided by 2) + (6 divided by 2).',
-        equations: ['24 divided by 2 = 12', '36 divided by 3 = 12', '39 divided by 3 = 13', '26 divided by 2 = 13'],
+        solvedAnswer: '24 ÷ 2 matches (20 ÷ 2) + (4 ÷ 2); 36 ÷ 3 matches (30 ÷ 3) + (6 ÷ 3); 39 ÷ 3 matches (30 ÷ 3) + (9 ÷ 3); 26 ÷ 2 matches (20 ÷ 2) + (6 ÷ 2).',
+        equations: ['24 ÷ 2 = 12', '36 ÷ 3 = 12', '39 ÷ 3 = 13', '26 ÷ 2 = 13'],
         quotient: 12,
         unitLabel: 'facts',
         groupLabel: 'matches',
@@ -2476,9 +2484,9 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 3,
-        sourcePrompt: 'Nell draws an array to find 24 divided by 2. Explain Nell\'s strategy.',
-        solvedAnswer: '24 divided by 2 is broken into two smaller facts: 12 divided by 2 and 12 divided by 2; the sum of the two smaller facts is found to answer the larger fact.',
-        equations: ['12 divided by 2 = 6', '12 divided by 2 = 6', '6 + 6 = 12', '24 divided by 2 = 12'],
+        sourcePrompt: 'Nell draws an array to find 24 ÷ 2. Explain Nell\'s strategy.',
+        solvedAnswer: '24 ÷ 2 is broken into two smaller facts: 12 ÷ 2 and 12 ÷ 2; the sum of the two smaller facts is found to answer the larger fact.',
+        equations: ['12 ÷ 2 = 6', '12 ÷ 2 = 6', '6 + 6 = 12', '24 ÷ 2 = 12'],
         knownTotal: 24,
         knownGroupCount: 12,
         knownGroupSize: 2,
@@ -2488,7 +2496,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         blankVisualType: 'array-template',
         animationType: 'decompose-array',
         blankVisual: {
-          title: 'Problem 3: Nell decomposes 24 divided by 2',
+          title: 'Problem 3: Nell decomposes 24 ÷ 2',
           sourceNote: 'Blank view shows Nell’s 24-dot array split into 12 and 12 without filling the explanation.',
           sections: [
             {
@@ -2498,17 +2506,17 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
               columns: 2,
               item: 'dot',
               splitAfterRows: 6,
-              caption: '(12 divided by 2) + (12 divided by 2)'
+              caption: '(12 ÷ 2) + (12 ÷ 2)'
             },
             {
               kind: 'equations',
               label: 'Explanation blanks',
-              lines: ['12 divided by 2 = ____', '12 divided by 2 = ____', '____ + ____ = ____']
+              lines: ['12 ÷ 2 = ____', '12 ÷ 2 = ____', '____ + ____ = ____']
             }
           ]
         },
         solvedVisual: {
-          title: 'Problem 3: Nell decomposes 24 divided by 2',
+          title: 'Problem 3: Nell decomposes 24 ÷ 2',
           sourceNote: 'Solved view follows the Lesson 19 Teacher Edition answer key: split 24 into 12 and 12, then add the partial quotients.',
           sections: [
             {
@@ -2518,12 +2526,12 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
               columns: 2,
               item: 'dot',
               splitAfterRows: 6,
-              caption: '12 divided by 2 = 6; 12 divided by 2 = 6'
+              caption: '12 ÷ 2 = 6; 12 ÷ 2 = 6'
             },
             {
               kind: 'equations',
               label: 'Answer-key explanation',
-              lines: ['12 divided by 2 = 6', '12 divided by 2 = 6', '6 + 6 = 12', '24 divided by 2 = 12']
+              lines: ['12 ÷ 2 = 6', '12 ÷ 2 = 6', '6 + 6 = 12', '24 ÷ 2 = 12']
             }
           ]
         },
@@ -2533,7 +2541,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
           'Split the array into 12 and 12.',
           'Explain why 6 twos plus 6 twos makes 12 twos.'
         ],
-        explanation: 'Nell decomposes the dividend 24 into 12 and 12. Since 12 divided by 2 is 6 and 12 divided by 2 is 6, the two smaller quotients add to 12.',
+        explanation: 'Nell decomposes the dividend 24 into 12 and 12. Since 12 ÷ 2 is 6 and 12 ÷ 2 is 6, the two smaller quotients add to 12.',
         validationChecks: [
           'The array still represents 24 total objects.',
           'The split shows 12 objects and 12 objects.',

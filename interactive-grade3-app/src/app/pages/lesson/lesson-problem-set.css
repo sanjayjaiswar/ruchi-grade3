@@ -3383,7 +3383,7 @@ summary.source-pages-heading {
 
 .lesson19-array-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 12px;
 }
 
@@ -3393,8 +3393,10 @@ summary.source-pages-heading {
   align-content: start;
   min-width: 0;
   padding: 12px;
-  border: 1px solid #3c4043;
-  background: #ffffff;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 28%, #d2d9e6 72%);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  box-shadow: var(--shadow-soft);
 }
 
 .lesson19-array-grid header {

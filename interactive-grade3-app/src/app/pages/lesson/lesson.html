@@ -366,9 +366,9 @@
                 <div class="lesson19-array-grid">
                   <article *ngFor="let part of lesson19Problem1Parts()">
                     <header>
-                      <b>{{ part.label }}. {{ part.total }} divided by {{ part.divisor }} = {{ part.quotient }}</b>
-                      <span>{{ part.topDividend }} divided by {{ part.divisor }} = {{ part.topQuotient }}</span>
-                      <span>{{ part.bottomDividend }} divided by {{ part.divisor }} = {{ part.bottomQuotient }}</span>
+                      <b>{{ part.label }}. {{ part.total }} ÷ {{ part.divisor }} = {{ part.quotient }}</b>
+                      <span>{{ part.topDividend }} ÷ {{ part.divisor }} = {{ part.topQuotient }}</span>
+                      <span>{{ part.bottomDividend }} ÷ {{ part.divisor }} = {{ part.bottomQuotient }}</span>
                     </header>
                     <div class="lesson19-dot-array" [style.gridTemplateColumns]="'repeat(' + part.columns + ', 18px)'">
                       <span
@@ -398,7 +398,7 @@
               <article>
                 <div>
                   <strong>Problem 3 Nell array</strong>
-                  <p>The answer key says 24 divided by 2 is broken into two smaller facts: 12 divided by 2 and 12 divided by 2.</p>
+                  <p>The answer key says 24 ÷ 2 is broken into two smaller facts: 12 ÷ 2 and 12 ÷ 2.</p>
                 </div>
                 <div class="lesson19-nell-model">
                   <div class="lesson19-dot-array is-nell">
@@ -407,8 +407,8 @@
                       [class.is-split-row]="lesson19NellIsSplitCell(cellIndex)"></span>
                   </div>
                   <div>
-                    <strong>12 divided by 2 = 6</strong>
-                    <strong>12 divided by 2 = 6</strong>
+                    <strong>12 ÷ 2 = 6</strong>
+                    <strong>12 ÷ 2 = 6</strong>
                     <b>6 + 6 = 12</b>
                   </div>
                 </div>
@@ -1596,7 +1596,7 @@
             </article>
             <article>
               <strong>Problem 3 source explanation</strong>
-              <p>24 divided by 2 is broken into two smaller facts: 12 divided by 2 and 12 divided by 2; the two quotients are added to answer the larger fact.</p>
+              <p>24 ÷ 2 is broken into two smaller facts: 12 ÷ 2 and 12 ÷ 2; the two quotients are added to answer the larger fact.</p>
             </article>
           </section>
 

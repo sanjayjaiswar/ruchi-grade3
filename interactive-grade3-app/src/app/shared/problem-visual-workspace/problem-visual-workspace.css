@@ -41,6 +41,50 @@
   min-width: 0;
 }
 
+.visual-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  min-width: 0;
+}
+
+.visual-sub-card {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+}
+
+.problem-visual-workspace.is-solved .visual-sub-card {
+  border-color: color-mix(in srgb, var(--module-accent, #4285f4) 28%, #d2d9e6 72%);
+}
+
+.visual-sub-card > strong {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  padding: 5px 8px;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--module-accent-soft, #e8f0fe) 72%, #ffffff 28%);
+  color: var(--module-accent-strong, #174ea6);
+  font-size: 14px;
+  font-weight: 950;
+  line-height: 1.25;
+}
+
+.visual-sub-card .visual-array {
+  justify-self: start;
+}
+
+.visual-sub-card .visual-equations {
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
 .visual-array {
   display: grid;
   width: fit-content;

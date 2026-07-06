@@ -862,10 +862,10 @@ export class LessonPage implements OnInit {
 
   lesson19Problem2Matches(): Array<{ bucket: string; ball: string; answer: string; order: string }> {
     return [
-      { bucket: '24 divided by 2', ball: '(20 divided by 2) + (4 divided by 2)', answer: '12', order: '1st bucket -> 4th ball' },
-      { bucket: '36 divided by 3', ball: '(30 divided by 3) + (6 divided by 3)', answer: '12', order: '2nd bucket -> 1st ball' },
-      { bucket: '39 divided by 3', ball: '(30 divided by 3) + (9 divided by 3)', answer: '13', order: '3rd bucket -> 2nd ball' },
-      { bucket: '26 divided by 2', ball: '(20 divided by 2) + (6 divided by 2)', answer: '13', order: '4th bucket -> 3rd ball' }
+      { bucket: '24 ÷ 2', ball: '(20 ÷ 2) + (4 ÷ 2)', answer: '12', order: '1st bucket -> 4th ball' },
+      { bucket: '36 ÷ 3', ball: '(30 ÷ 3) + (6 ÷ 3)', answer: '12', order: '2nd bucket -> 1st ball' },
+      { bucket: '39 ÷ 3', ball: '(30 ÷ 3) + (9 ÷ 3)', answer: '13', order: '3rd bucket -> 2nd ball' },
+      { bucket: '26 ÷ 2', ball: '(20 ÷ 2) + (6 ÷ 2)', answer: '13', order: '4th bucket -> 3rd ball' }
     ];
   }
 

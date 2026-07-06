@@ -315,6 +315,15 @@ export type ProblemVisualNoteSection = {
   text: string;
 };
 
+export type ProblemVisualCardGridSection = {
+  kind: 'card-grid';
+  label?: string;
+  cards: Array<{
+    label: string;
+    sections: ProblemVisualSection[];
+  }>;
+};
+
 export type ProblemVisualSection =
   | ProblemVisualArraySection
   | ProblemVisualRelatedFactsSection
@@ -323,7 +332,8 @@ export type ProblemVisualSection =
   | ProblemVisualNumberLineSection
   | ProblemVisualClockSection
   | ProblemVisualEquationsSection
-  | ProblemVisualNoteSection;
+  | ProblemVisualNoteSection
+  | ProblemVisualCardGridSection;
 
 export type ProblemVisualSpec = {
   title: string;

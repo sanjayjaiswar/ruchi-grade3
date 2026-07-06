@@ -5,6 +5,42 @@
   </header>
 
   <article class="visual-section" *ngFor="let section of spec.sections">
+    <ng-container *ngIf="cardGridSection(section) as cardGrid">
+      <strong *ngIf="cardGrid.label">{{ cardGrid.label }}</strong>
+      <div class="visual-card-grid">
+        <article class="visual-sub-card" *ngFor="let card of cardGrid.cards">
+          <strong>{{ card.label }}</strong>
+          <ng-container *ngFor="let child of card.sections">
+            <ng-container *ngIf="arraySection(child) as array">
+              <strong *ngIf="array.label">{{ array.label }}</strong>
+              <div class="visual-array" [ngClass]="'is-' + array.item" [style.gridTemplateColumns]="arrayColumns(array)">
+                <span
+                  *ngFor="let cell of range(array.rows * array.columns); let cellIndex = index"
+                  [class.is-after-split]="arrayCellIsAfterSplit(array, cellIndex)"
+                  [class.has-placeholder]="array.placeholder"
+                  [attr.aria-hidden]="!array.placeholder">
+                  {{ array.placeholder || '' }}
+                </span>
+              </div>
+              <small *ngIf="array.caption" class="visual-array-caption">{{ array.caption }}</small>
+            </ng-container>
+
+            <ng-container *ngIf="equationsSection(child) as equations">
+              <strong *ngIf="equations.label">{{ equations.label }}</strong>
+              <div class="visual-equations">
+                <span *ngFor="let line of equations.lines">{{ line }}</span>
+              </div>
+            </ng-container>
+
+            <ng-container *ngIf="noteSection(child) as note">
+              <strong *ngIf="note.label">{{ note.label }}</strong>
+              <p class="visual-note">{{ note.text }}</p>
+            </ng-container>
+          </ng-container>
+        </article>
+      </div>
+    </ng-container>
+
     <ng-container *ngIf="arraySection(section) as array">
       <strong *ngIf="array.label">{{ array.label }}</strong>
       <div class="visual-array" [ngClass]="'is-' + array.item" [style.gridTemplateColumns]="arrayColumns(array)">

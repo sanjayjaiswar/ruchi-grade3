@@ -10,7 +10,7 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
     kind: "array",
     title: "Lesson 19 animation: decompose a division fact",
     context: "Show 24 as 12 rows of 2, split the array into two equal 12-dot parts, then divide each part by 2.",
-    equation: "24 divided by 2 = (12 divided by 2) + (12 divided by 2) = 6 + 6 = 12",
+    equation: "24 ÷ 2 = (12 ÷ 2) + (12 ÷ 2) = 6 + 6 = 12",
     teacherPrompt: "How does splitting the dividend into two friendly parts help find the quotient?",
     groupCount: 12,
     groupSize: 2,
@@ -40,7 +40,7 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Use the array to solve 24 divided by 2 by breaking the dividend into two smaller facts, dividing each part by 2, and adding the partial quotients.",
+      studentPrompt: "Use the array to solve 24 ÷ 2 by breaking the dividend into two smaller facts, dividing each part by 2, and adding the partial quotients.",
       teacherEditionBasis: "EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf, pages 245-254. Lesson 19 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "array"
     },
@@ -48,7 +48,7 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Compare Nell's strategy in Problem 3 to the strategy for solving 24 divided by 2 in the Concept Development",
+      studentPrompt: "Compare Nell's strategy in Problem 3 to the strategy for solving 24 ÷ 2 in the Concept Development",
       teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 19 Problem Set using the lesson models from the Teacher Edition.",
       visualModel: "array"
     },
@@ -56,7 +56,7 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-picture",
       title: "Teacher Edition Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1 uses four arrays to decompose division facts: 36 divided by 3, 25 divided by 5, 28 divided by 4, and 32 divided by 4. Problem 2 matches each division fact to an equal decomposed expression. Problem 3 explains Nell's 24 divided by 2 array split.",
+      studentPrompt: "Problem 1 uses four arrays to decompose division facts: 36 ÷ 3, 25 ÷ 5, 28 ÷ 4, and 32 ÷ 4. Problem 2 matches each division fact to an equal decomposed expression. Problem 3 explains Nell's 24 ÷ 2 array split.",
       teacherEditionBasis: "Module 1 Teacher Edition, Lesson 19 Problem Set.",
       visualModel: "array"
     },
@@ -107,7 +107,7 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Use the array to solve 24 divided by 2 by breaking the dividend into two smaller facts, dividing each part by 2, and adding the partial quotients."
+        value: "Use the array to solve 24 ÷ 2 by breaking the dividend into two smaller facts, dividing each part by 2, and adding the partial quotients."
       },
       {
         label: "Teacher Edition",
@@ -121,7 +121,7 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Compare Nell's strategy in Problem 3 to the strategy for solving 24 divided by 2 in the Concept Development"
+        value: "Compare Nell's strategy in Problem 3 to the strategy for solving 24 ÷ 2 in the Concept Development"
       },
       {
         label: "Teacher Edition",
@@ -135,7 +135,7 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1 uses four arrays to decompose division facts: 36 divided by 3, 25 divided by 5, 28 divided by 4, and 32 divided by 4. Problem 2 matches each division fact to an equal decomposed expression. Problem 3 explains Nell's 24 divided by 2 array split."
+        value: "Problem 1 uses four arrays to decompose division facts: 36 ÷ 3, 25 ÷ 5, 28 ÷ 4, and 32 ÷ 4. Problem 2 matches each division fact to an equal decomposed expression. Problem 3 explains Nell's 24 ÷ 2 array split."
       },
       {
         label: "Teacher Edition",
