@@ -47,7 +47,7 @@ export const M1_LESSON5_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Review the relationship between multiplication and division. Guide students to observe that division is used to find either factor-the unknown can be the size of groups (learned yesterday) or the number of groups (learned today)",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 5 Problem Set using the lesson models from the Teacher Edition.",
       visualModel: "equal-groups"
     },
     {
@@ -62,7 +62,7 @@ export const M1_LESSON5_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 5 Problem Set workspace and source-backed visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 75-84.",
       visualModel: "equal-groups"
     },
@@ -78,7 +78,7 @@ export const M1_LESSON5_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (8 minutes) Group Counting 3.OA.1 (3 minutes) Divide Equal Groups 3.OA.2 (5 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by twos and threes in this activity supports work with those factors in Topic B. T: Let's count by twos. (Direct students to count forward and backward to 20, emphasizing the 8 to 10, 10 to 12, and 18 to 20 transitions.) T: Let's count by threes. (Direct students to count forward and backward to 27, changing directions. Emphasize the 9 to 12 a...",
+      studentPrompt: "Debrief focus: connect the Problem Set models and answers to the Lesson 5 objective: Understand the meaning of the unknown as the number of groups in division.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 75-84.",
       visualModel: "equal-groups"
     }
@@ -115,7 +115,7 @@ export const M1_LESSON5_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 5 Problem Set using the lesson models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -147,7 +147,7 @@ export const M1_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 5 Problem Set workspace and source-backed visuals to model and solve the student-facing problems."
       },
       {
         label: "Teacher Edition",
@@ -175,7 +175,7 @@ export const M1_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (8 minutes) Group Counting 3.OA.1 (3 minutes) Divide Equal Groups 3.OA.2 (5 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by twos and threes in this activity supports work with those factors in Topic B. T: Let's count by twos. (Direct students to count forward and backward to 20, emphasizing the 8 to 10, 10 to 12, and 18 to 20 transitions.) T: Let's count by threes. (Direct students to count forward and backward to 27, changing directions. Emphasize the 9 to 12 a..."
+        value: "Debrief focus: connect the Problem Set models and answers to the Lesson 5 objective: Understand the meaning of the unknown as the number of groups in division."
       },
       {
         label: "Teacher Edition",

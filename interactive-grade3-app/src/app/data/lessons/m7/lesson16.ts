@@ -7,10 +7,10 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 16 animation: Use string to measure the perimeter of various circles...",
-    context: "Part 1: Use string and a ruler to find the perimeter of a circle.",
+    title: "Lesson 16 animation: Use string to measure the perimeter of various circles to the nearest quarter inch.",
+    context: "Use the Teacher Edition Lesson 16 circular-object perimeter workspace with string measurement, nearest quarter-inch units, and yes/no check evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "Look at your answers in the chart in Problem 1. Which circular object has the smallest perimeter? The greatest perimeter?",
+    teacherPrompt: "Use the source Lesson 16 circular-object perimeter workspace with string measurement, nearest quarter-inch units, and yes/no check evidence; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "perimeter",
       "round",
@@ -38,7 +38,7 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Part 1: Use string and a ruler to find the perimeter of a circle. T: (Pass out a circle to each pair of students.) Talk to your partner. Does this circle have a perimeter? S: I don't think so because it doesn't have straight lines. -> Remember when we made tessellations? Those shapes didn't have straight lines, but they still had perimeters.",
+      studentPrompt: "Use the Teacher Edition Lesson 16 circular-object perimeter workspace with string measurement, nearest quarter-inch units, and yes/no check evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 207-219. Lesson 16 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -46,24 +46,24 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Look at your answers in the chart in Problem 1. Which circular object has the smallest perimeter? The greatest perimeter?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 16 work using the official Module 7 circular-object perimeter workspace with string measurement, nearest quarter-inch units, and yes/no check evidence from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 16 work using the official Module 7 circular-object perimeter workspace with string measurement, nearest quarter-inch units, and yes/no check evidence from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Find the perimeter of 10 circular objects to the nearest quarter inch using string. Record the name and perimeter of each object in the chart below. Perimeter Object (to the nearest quarter inch) a. Explain the steps you used to find the perimeter of the circular objects in the chart above. b. Could the same process be used to find the perimeter of the shape below? Why or why not? quarter inch. Problem 2: Can you find the perimeter of the shape below using just your ruler? Explain your answer. Problem 3: Molly says the perimeter of the shape below is 6 inches. Use your string to check her work. Do you agree with her? Why or why not?",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 16 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 16 Problem Set prompts in order. Blank mode preserves the student-facing circular-object perimeter workspace with string measurement, nearest quarter-inch units, and yes/no check evidence; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 16 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 207-219.",
+      studentPrompt: "Use the source-backed Lesson 16 workspace and circular-object perimeter workspace with string measurement, nearest quarter-inch units, and yes/no check evidence to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 16; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -78,8 +78,8 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (16 minutes) Multiply by 9 3.OA.7 (8 minutes) Equivalent Counting with Units of 6 3.OA.7 (4 minutes) Find the Perimeter 3.MD.8 (4 minutes) Multiply by 9 (8 minutes) Materials: (S) Multiply by 9 (6-10) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 9. It works toward students knowing from memory all the products of two one-digit numbers. See Lesson 1 for the directions for administration of a Multiply-By Pattern Sheet. T: (Write 5 x 9 = ____.) Let's skip-count up by nine to find the answer. (Rais...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 207-219.",
+      studentPrompt: "Debrief focus: connect the Problem Set circular-object perimeter workspace with string measurement, nearest quarter-inch units, and yes/no check evidence to the Lesson 16 objective: Use string to measure the perimeter of various circles to the nearest quarter inch.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 16; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -105,7 +105,7 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Part 1: Use string and a ruler to find the perimeter of a circle. T: (Pass out a circle to each pair of students.) Talk to your partner. Does this circle have a perimeter? S: I don't think so because it doesn't have straight lines. -> Remember when we made tessellations? Those shapes didn't have straight lines, but they still had perimeters."
+        value: "Use the Teacher Edition Lesson 16 circular-object perimeter workspace with string measurement, nearest quarter-inch units, and yes/no check evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -115,11 +115,11 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set source focus: students complete the Lesson 16 work using the official Module 7 circular-object perimeter workspace with string measurement, nearest quarter-inch units, and yes/no check evidence from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "Look at your answers in the chart in Problem 1. Which circular object has the smallest perimeter? The greatest perimeter?"
+        value: "Teacher Edition check: preserve the Lesson 16 circular-object perimeter workspace with string measurement, nearest quarter-inch units, and yes/no check evidence."
       },
       {
         label: "Workbook",
@@ -129,11 +129,11 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 16 Problem Set."
+        value: "Module 7 student workbook, Lesson 16 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Find the perimeter of 10 circular objects to the nearest quarter inch using string. Record the name and perimeter of each object in the chart below. Perimeter Object (to the nearest quarter inch) a. Explain the steps you used to find the perimeter of the circular objects in the chart above. b. Could the same process be used to find the perimeter of the shape below? Why or why not? quarter inch. Problem 2: Can you find the perimeter of the shape below using just your ruler? Explain your answer. Problem 3: Molly says the perimeter of the shape below is 6 inches. Use your string to check her work. Do you agree with her? Why or why not?"
+        value: "Use the official Module 7 Lesson 16 Problem Set prompts in order. Blank mode preserves the student-facing circular-object perimeter workspace with string measurement, nearest quarter-inch units, and yes/no check evidence; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -143,11 +143,11 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 207-219."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 16; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the source-backed Lesson 16 workspace and circular-object perimeter workspace with string measurement, nearest quarter-inch units, and yes/no check evidence to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -171,11 +171,11 @@ export const M7_LESSON16_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 207-219."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 16; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (16 minutes) Multiply by 9 3.OA.7 (8 minutes) Equivalent Counting with Units of 6 3.OA.7 (4 minutes) Find the Perimeter 3.MD.8 (4 minutes) Multiply by 9 (8 minutes) Materials: (S) Multiply by 9 (6-10) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 9. It works toward students knowing from memory all the products of two one-digit numbers. See Lesson 1 for the directions for administration of a Multiply-By Pattern Sheet. T: (Write 5 x 9 = ____.) Let's skip-count up by nine to find the answer. (Rais..."
+        value: "Debrief focus: connect the Problem Set circular-object perimeter workspace with string measurement, nearest quarter-inch units, and yes/no check evidence to the Lesson 16 objective: Use string to measure the perimeter of various circles to the nearest quarter inch."
       },
       {
         label: "Workbook",

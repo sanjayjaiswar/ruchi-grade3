@@ -53,7 +53,7 @@ type LessonSeed = {
   problems: ProblemSeed[];
 };
 
-const GENERATED_SOURCE_PROMPT_LESSONS = new Set([1, 2, 3, 6, 7, 8, 9, 11, 14, 15, 18, 19, 20, 21]);
+const GENERATED_SOURCE_PROMPT_LESSONS = new Set([1, 2, 3, 6, 7, 8, 9, 11, 14, 15, 18]);
 
 const M1_PROBLEM_SET_SOURCE_PAGES: Record<number, string[]> = {
   1: teacherEditionPageImages(29, 30),
@@ -236,7 +236,7 @@ function lesson17Visual(problemNumber: 1 | 2 | 3 | 4, solved: boolean): ProblemV
                 { label: '4' },
                 { label: '4' },
                 { label: '4' },
-                { label: '...' },
+                { label: '4' },
                 { label: '?' }
               ],
           caption: solved ? '36 divided by 4 = 9 boxes.' : 'Each part is 4 muffins. Find the number of equal boxes.'
@@ -359,6 +359,167 @@ export function createM1ProblemVisual(seed: M1ProblemVisualSeed, solved: boolean
   });
 
   return { title, sourceNote, sections };
+}
+
+function twoStepVisual(
+  title: string,
+  rows: Array<{ step: string; model: string; blank: string; solved: string }>,
+  equations: string[],
+  answer: string,
+  solved: boolean
+): ProblemVisualSpec {
+  return {
+    title,
+    sourceNote: solved
+      ? 'Solved view follows the Teacher Edition two-step answer and keeps each step visible.'
+      : 'Blank view preserves the two-step structure without filling the final answer.',
+    sections: [
+      {
+        kind: 'data-table',
+        label: 'Two-step RDW model',
+        columns: ['Step', 'Model', 'Work'],
+        rows: rows.map((row) => [row.step, row.model, solved ? row.solved : row.blank])
+      },
+      {
+        kind: 'equations',
+        label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
+        lines: solved ? equations : equations.map(blankEquation)
+      },
+      {
+        kind: 'note',
+        label: solved ? 'Answer sentence' : 'Reasonableness check',
+        text: solved ? answer : 'Use the first result in the second step, then check that the final sentence answers the question.'
+      }
+    ]
+  };
+}
+
+function lesson19Problem1Visual(solved: boolean): ProblemVisualSpec {
+  const rows = [
+    {
+      label: 'a. 36 divided by 3',
+      total: 36,
+      divisor: 3,
+      quotient: 12,
+      columns: 3,
+      firstRows: 10,
+      secondRows: 2,
+      firstExpression: '(30 divided by 3)',
+      secondExpression: '(6 divided by 3)',
+      firstQuotient: 10,
+      secondQuotient: 2
+    },
+    {
+      label: 'b. 25 divided by 5',
+      total: 25,
+      divisor: 5,
+      quotient: 5,
+      columns: 5,
+      firstRows: 4,
+      secondRows: 1,
+      firstExpression: '(20 divided by 5)',
+      secondExpression: '(5 divided by 5)',
+      firstQuotient: 4,
+      secondQuotient: 1
+    },
+    {
+      label: 'c. 28 divided by 4',
+      total: 28,
+      divisor: 4,
+      quotient: 7,
+      columns: 4,
+      firstRows: 5,
+      secondRows: 2,
+      firstExpression: '(20 divided by 4)',
+      secondExpression: '(8 divided by 4)',
+      firstQuotient: 5,
+      secondQuotient: 2
+    },
+    {
+      label: 'd. 32 divided by 4',
+      total: 32,
+      divisor: 4,
+      quotient: 8,
+      columns: 4,
+      firstRows: 5,
+      secondRows: 3,
+      firstExpression: '(20 divided by 4)',
+      secondExpression: '(12 divided by 4)',
+      firstQuotient: 5,
+      secondQuotient: 3
+    }
+  ];
+
+  return {
+    title: 'Problem 1: decomposed division arrays',
+    sourceNote: solved
+      ? 'Solved view follows the Lesson 19 Teacher Edition answer key: each array is split into friendly dividends and partial quotients.'
+      : 'Blank view preserves the Teacher Edition four-part array split without filling the partial quotients.',
+    sections: rows.flatMap((row) => [
+      {
+        kind: 'array' as const,
+        label: row.label,
+        rows: row.firstRows + row.secondRows,
+        columns: row.columns,
+        item: 'dot' as const,
+        splitAfterRows: row.firstRows,
+        caption: solved
+          ? `${row.firstExpression} = ${row.firstQuotient}; ${row.secondExpression} = ${row.secondQuotient}`
+          : `${row.firstExpression} = ____; ${row.secondExpression} = ____`
+      },
+      {
+        kind: 'equations' as const,
+        label: solved ? 'Answer-key sentence' : 'Equation blanks',
+        lines: solved
+          ? [
+              `${row.total} divided by ${row.divisor} = ${row.quotient}`,
+              `(${row.total} divided by ${row.divisor}) = ${row.firstExpression} + ${row.secondExpression}`,
+              `${row.firstQuotient} + ${row.secondQuotient} = ${row.quotient}`
+            ]
+          : [
+              `${row.total} divided by ${row.divisor} = ____`,
+              `(${row.total} divided by ${row.divisor}) = ${row.firstExpression} + ${row.secondExpression}`,
+              `____ + ____ = ____`
+            ]
+      }
+    ])
+  };
+}
+
+function lesson19Problem2Visual(solved: boolean): ProblemVisualSpec {
+  const matches = [
+    { bucket: '24 divided by 2', ball: '(20 divided by 2) + (4 divided by 2)', answer: '12', sourceMatch: 'first bucket to fourth ball' },
+    { bucket: '36 divided by 3', ball: '(30 divided by 3) + (6 divided by 3)', answer: '12', sourceMatch: 'second bucket to first ball' },
+    { bucket: '39 divided by 3', ball: '(30 divided by 3) + (9 divided by 3)', answer: '13', sourceMatch: 'third bucket to second ball' },
+    { bucket: '26 divided by 2', ball: '(20 divided by 2) + (6 divided by 2)', answer: '13', sourceMatch: 'fourth bucket to third ball' }
+  ];
+
+  return {
+    title: 'Problem 2: bucket-to-ball expression matches',
+    sourceNote: solved
+      ? 'Solved view follows the Lesson 19 Teacher Edition answer key match order.'
+      : 'Blank view keeps the bucket expressions and ball expressions separate for matching.',
+    sections: [
+      {
+        kind: 'data-table',
+        label: solved ? 'Teacher Edition answer-key matches' : 'Bucket expressions and ball choices',
+        columns: solved ? ['Bucket', 'Matching ball', 'Quotient', 'Answer-key order'] : ['Bucket expression', 'Ball choices'],
+        rows: solved
+          ? matches.map((match) => [match.bucket, match.ball, match.answer, match.sourceMatch])
+          : matches.map((match, index) => [
+              match.bucket,
+              ['(30 divided by 3) + (6 divided by 3)', '(30 divided by 3) + (9 divided by 3)', '(20 divided by 2) + (6 divided by 2)', '(20 divided by 2) + (4 divided by 2)'][index]
+            ])
+      },
+      {
+        kind: 'note',
+        label: solved ? 'Match check' : 'Workspace direction',
+        text: solved
+          ? 'The match is correct when the decomposed expression has the same divisor and the same quotient as the bucket expression.'
+          : 'Compute each bucket and each ball expression, then match equal quotients.'
+      }
+    ]
+  };
 }
 
 function visualTitle(seed: ProblemSeed): string {
@@ -1906,7 +2067,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       {
         number: 2,
         sourcePrompt: 'Match the equal expressions.',
-        solvedAnswer: '(5 x 4) + (1 x 4) = 6 x 4 = 24; + (2 x 4) = 7 x 4 = 28; + (3 x 4) = 8 x 4 = 32; + (4 x 4) = 9 x 4 = 36.',
+        solvedAnswer: '(5 x 4) + (1 x 4) = 6 x 4 = 24; (5 x 4) + (2 x 4) = 7 x 4 = 28; (5 x 4) + (3 x 4) = 8 x 4 = 32; (5 x 4) + (4 x 4) = 9 x 4 = 36.',
         equations: ['6 x 4 = 24', '7 x 4 = 28', '8 x 4 = 32', '9 x 4 = 36'],
         relatedFacts: [
           {
@@ -2261,13 +2422,32 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       {
         number: 1,
         sourcePrompt: 'Label arrays and complete decomposed division sentences for 36 divided by 3, 25 divided by 5, 28 divided by 4, and 32 divided by 4.',
-        solvedAnswer: '36 divided by 3 = 12, 25 divided by 5 = 5, 28 divided by 4 = 7, and 32 divided by 4 = 8.',
-        equations: ['36 divided by 3 = 12', '25 divided by 5 = 5', '28 divided by 4 = 7', '32 divided by 4 = 8'],
+        solvedAnswer: 'Answer key: a. 12; 10; 2; 2. b. 5; 1; 1; 5. c. 7; 5; 8; 2; 8; 5, 2, 7. d. 8; 20, 5; 12, 3; 20, 12, 5, 3, 8.',
+        equations: [
+          '36 divided by 3 = 12; 10 + 2 = 12',
+          '25 divided by 5 = 5; 4 + 1 = 5',
+          '28 divided by 4 = 7; 5 + 2 = 7',
+          '32 divided by 4 = 8; 5 + 3 = 8'
+        ],
         quotient: 12,
         unitLabel: 'objects',
         groupLabel: 'groups',
+        blankVisual: lesson19Problem1Visual(false),
+        solvedVisual: lesson19Problem1Visual(true),
         blankVisualType: 'array-template',
-        animationType: 'decompose-array'
+        animationType: 'decompose-array',
+        blankWorkspaceLabel: 'Complete each decomposed division sentence from the Teacher Edition array split.',
+        blankPrompts: [
+          'Label the array with the total and divisor.',
+          'Divide each friendly part first.',
+          'Add the partial quotients to complete the original division fact.'
+        ],
+        explanation: 'The solved blanks match the Teacher Edition Answer Key sequence. Each division fact is split into friendly dividends, and the partial quotients are added.',
+        validationChecks: [
+          'Each decomposed dividend adds back to the original dividend.',
+          'Each part is divisible by the same divisor.',
+          'The partial quotients add to the Teacher Edition answer.'
+        ]
       },
       {
         number: 2,
@@ -2277,21 +2457,88 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         quotient: 12,
         unitLabel: 'facts',
         groupLabel: 'matches',
+        blankVisual: lesson19Problem2Visual(false),
+        solvedVisual: lesson19Problem2Visual(true),
         blankVisualType: 'fact-match',
-        animationType: 'fact-match'
+        animationType: 'fact-match',
+        blankWorkspaceLabel: 'Match each original division expression to the decomposed expression with the same quotient.',
+        blankPrompts: [
+          'Compute each decomposed expression by parts.',
+          'Match expressions only when the total quotient is the same.',
+          'Keep the divisor consistent across each decomposed expression.'
+        ],
+        explanation: 'Teacher Edition Answer Key match order: first bucket to fourth ball; second bucket to first ball; third bucket to second ball; fourth bucket to third ball.',
+        validationChecks: [
+          'Each original expression has exactly one equal decomposed expression.',
+          'The decomposed parts add to the original dividend.',
+          'The solved match preserves the same divisor and quotient.'
+        ]
       },
       {
         number: 3,
         sourcePrompt: 'Nell draws an array to find 24 divided by 2. Explain Nell\'s strategy.',
-        solvedAnswer: 'Nell can split 24 into 20 and 4, divide each part by 2, then add 10 and 2 to get 12.',
-        equations: ['20 divided by 2 = 10', '4 divided by 2 = 2', '10 + 2 = 12', '24 divided by 2 = 12'],
+        solvedAnswer: '24 divided by 2 is broken into two smaller facts: 12 divided by 2 and 12 divided by 2; the sum of the two smaller facts is found to answer the larger fact.',
+        equations: ['12 divided by 2 = 6', '12 divided by 2 = 6', '6 + 6 = 12', '24 divided by 2 = 12'],
         knownTotal: 24,
-        knownGroupCount: 2,
+        knownGroupCount: 12,
+        knownGroupSize: 2,
         quotient: 12,
         unitLabel: 'objects',
-        groupLabel: 'groups',
+        groupLabel: 'twos',
         blankVisualType: 'array-template',
-        animationType: 'decompose-array'
+        animationType: 'decompose-array',
+        blankVisual: {
+          title: 'Problem 3: Nell decomposes 24 divided by 2',
+          sourceNote: 'Blank view shows Nell’s 24-dot array split into 12 and 12 without filling the explanation.',
+          sections: [
+            {
+              kind: 'array',
+              label: '24 objects arranged as 12 twos',
+              rows: 12,
+              columns: 2,
+              item: 'dot',
+              splitAfterRows: 6,
+              caption: '(12 divided by 2) + (12 divided by 2)'
+            },
+            {
+              kind: 'equations',
+              label: 'Explanation blanks',
+              lines: ['12 divided by 2 = ____', '12 divided by 2 = ____', '____ + ____ = ____']
+            }
+          ]
+        },
+        solvedVisual: {
+          title: 'Problem 3: Nell decomposes 24 divided by 2',
+          sourceNote: 'Solved view follows the Lesson 19 Teacher Edition answer key: split 24 into 12 and 12, then add the partial quotients.',
+          sections: [
+            {
+              kind: 'array',
+              label: '24 objects arranged as 12 twos',
+              rows: 12,
+              columns: 2,
+              item: 'dot',
+              splitAfterRows: 6,
+              caption: '12 divided by 2 = 6; 12 divided by 2 = 6'
+            },
+            {
+              kind: 'equations',
+              label: 'Answer-key explanation',
+              lines: ['12 divided by 2 = 6', '12 divided by 2 = 6', '6 + 6 = 12', '24 divided by 2 = 12']
+            }
+          ]
+        },
+        blankWorkspaceLabel: 'Use Nell\'s array split: 12 objects above the line and 12 objects below the line.',
+        blankPrompts: [
+          'Show 24 as 12 groups of 2.',
+          'Split the array into 12 and 12.',
+          'Explain why 6 twos plus 6 twos makes 12 twos.'
+        ],
+        explanation: 'Nell decomposes the dividend 24 into 12 and 12. Since 12 divided by 2 is 6 and 12 divided by 2 is 6, the two smaller quotients add to 12.',
+        validationChecks: [
+          'The array still represents 24 total objects.',
+          'The split shows 12 objects and 12 objects.',
+          'The explanation names 6 twos plus 6 twos as 12 twos.'
+        ]
       }
     ]
   }),
@@ -2314,7 +2561,27 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         unitLabel: 'dollars',
         groupLabel: 'steps',
         blankVisualType: 'tape-diagram',
-        animationType: 'two-step-model'
+        animationType: 'two-step-model',
+        blankVisual: twoStepVisual('Problem 1: books plus magazine', [
+          { step: '1', model: '3 books at $8 each', blank: '3 x 8 = ____', solved: '3 x 8 = 24' },
+          { step: '2', model: '$24 books plus $4 magazine', blank: '____ + 4 = ____', solved: '24 + 4 = 28' }
+        ], ['3 x 8 = 24', '24 + 4 = 28'], 'The books cost $24. Ted spends $28 altogether.', false),
+        solvedVisual: twoStepVisual('Problem 1: books plus magazine', [
+          { step: '1', model: '3 books at $8 each', blank: '3 x 8 = ____', solved: '3 x 8 = 24' },
+          { step: '2', model: '$24 books plus $4 magazine', blank: '____ + 4 = ____', solved: '24 + 4 = 28' }
+        ], ['3 x 8 = 24', '24 + 4 = 28'], 'The books cost $24. Ted spends $28 altogether.', true),
+        blankWorkspaceLabel: 'Find the book cost first, then add the magazine.',
+        blankPrompts: [
+          'Use 3 equal $8 book units.',
+          'Carry the book total into part b.',
+          'Add the $4 magazine only after finding the book total.'
+        ],
+        explanation: 'The Teacher Edition scaffold separates the two questions: first 3 books cost $24, then $24 plus the $4 magazine makes $28.',
+        validationChecks: [
+          'Part a answers only the total cost of the books.',
+          'Part b uses the part a result and adds $4.',
+          'The final sentence answers how much Ted spends altogether.'
+        ]
       },
       {
         number: 2,
@@ -2327,7 +2594,27 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         unitLabel: 'silly bands',
         groupLabel: 'children',
         blankVisualType: 'tape-diagram',
-        animationType: 'two-step-model'
+        animationType: 'two-step-model',
+        blankVisual: twoStepVisual('Problem 2: silly bands for 3 children', [
+          { step: '1', model: '28 silly bands shared by 7 children', blank: '28 divided by 7 = ____', solved: '28 divided by 7 = 4' },
+          { step: '2', model: '3 children each get 4', blank: '3 x ____ = ____', solved: '3 x 4 = 12' }
+        ], ['28 divided by 7 = 4', '3 x 4 = 12'], 'Each child gets 4 silly bands. Three children get 12 silly bands.', false),
+        solvedVisual: twoStepVisual('Problem 2: silly bands for 3 children', [
+          { step: '1', model: '28 silly bands shared by 7 children', blank: '28 divided by 7 = ____', solved: '28 divided by 7 = 4' },
+          { step: '2', model: '3 children each get 4', blank: '3 x ____ = ____', solved: '3 x 4 = 12' }
+        ], ['28 divided by 7 = 4', '3 x 4 = 12'], 'Each child gets 4 silly bands. Three children get 12 silly bands.', true),
+        blankWorkspaceLabel: 'Find one child’s share first, then use 3 children.',
+        blankPrompts: [
+          'Partition 28 into 7 equal child units.',
+          'Name one child’s share.',
+          'Multiply that share by 3 for the second question.'
+        ],
+        explanation: 'The first answer is 4 silly bands per child. The second answer uses 3 groups of 4, so 3 children get 12 silly bands.',
+        validationChecks: [
+          'The first quotient is 4, not the final answer to part b.',
+          'The second step uses 3 children.',
+          'The answer sentence distinguishes one child from 3 children.'
+        ]
       },
       {
         number: 3,
@@ -2340,7 +2627,27 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         unitLabel: 'cups',
         groupLabel: 'boxes',
         blankVisualType: 'tape-diagram',
-        animationType: 'two-step-model'
+        animationType: 'two-step-model',
+        blankVisual: twoStepVisual('Problem 3: unbroken cups', [
+          { step: '1', model: '18 cups in 6 equal boxes', blank: '18 divided by 6 = ____', solved: '18 divided by 6 = 3' },
+          { step: '2', model: '2 boxes break, so 4 boxes remain', blank: '(6 - 2) x ____ = ____', solved: '4 x 3 = 12' }
+        ], ['18 divided by 6 = 3', '6 - 2 = 4', '4 x 3 = 12'], 'Each box has 3 cups. Four boxes are unbroken, so 12 cups are unbroken.', false),
+        solvedVisual: twoStepVisual('Problem 3: unbroken cups', [
+          { step: '1', model: '18 cups in 6 equal boxes', blank: '18 divided by 6 = ____', solved: '18 divided by 6 = 3' },
+          { step: '2', model: '2 boxes break, so 4 boxes remain', blank: '(6 - 2) x ____ = ____', solved: '4 x 3 = 12' }
+        ], ['18 divided by 6 = 3', '6 - 2 = 4', '4 x 3 = 12'], 'Each box has 3 cups. Four boxes are unbroken, so 12 cups are unbroken.', true),
+        blankWorkspaceLabel: 'Find cups per box, then remove the broken boxes.',
+        blankPrompts: [
+          'Divide 18 cups by 6 boxes.',
+          'Subtract the 2 broken boxes from 6 boxes.',
+          'Multiply the 4 unbroken boxes by the cups per box.'
+        ],
+        explanation: 'The Teacher Edition answer uses 3 cups per box and 4 unbroken boxes, so 4 x 3 = 12 cups are unbroken.',
+        validationChecks: [
+          'The model starts with 6 equal boxes.',
+          'Only 4 boxes remain after 2 break.',
+          'The final answer counts cups, not boxes.'
+        ]
       },
       {
         number: 4,
@@ -2353,7 +2660,27 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         unitLabel: 'balloons',
         groupLabel: 'children',
         blankVisualType: 'tape-diagram',
-        animationType: 'two-step-model'
+        animationType: 'two-step-model',
+        blankVisual: twoStepVisual('Problem 4: blue and red balloons per child', [
+          { step: '1', model: '25 blue balloons shared by 5 children', blank: '25 divided by 5 = ____', solved: '25 divided by 5 = 5' },
+          { step: '2', model: '15 red balloons shared by 5 children', blank: '15 divided by 5 = ____; ____ + ____ = ____', solved: '15 divided by 5 = 3; 5 + 3 = 8' }
+        ], ['25 divided by 5 = 5', '15 divided by 5 = 3', '5 + 3 = 8'], 'Each child gets 5 blue balloons and 3 red balloons, 8 balloons total.', false),
+        solvedVisual: twoStepVisual('Problem 4: blue and red balloons per child', [
+          { step: '1', model: '25 blue balloons shared by 5 children', blank: '25 divided by 5 = ____', solved: '25 divided by 5 = 5' },
+          { step: '2', model: '15 red balloons shared by 5 children', blank: '15 divided by 5 = ____; ____ + ____ = ____', solved: '15 divided by 5 = 3; 5 + 3 = 8' }
+        ], ['25 divided by 5 = 5', '15 divided by 5 = 3', '5 + 3 = 8'], 'Each child gets 5 blue balloons and 3 red balloons, 8 balloons total.', true),
+        blankWorkspaceLabel: 'Divide each color separately, then combine one child’s shares.',
+        blankPrompts: [
+          'Find blue balloons per child.',
+          'Find red balloons per child.',
+          'Add one child’s blue and red shares.'
+        ],
+        explanation: 'Each child gets 5 blue and 3 red balloons, so each child gets 8 balloons total.',
+        validationChecks: [
+          'Blue and red balloon totals are divided separately.',
+          'Both divisions use 5 children.',
+          'The final answer combines one child’s two shares.'
+        ]
       },
       {
         number: 5,
@@ -2366,7 +2693,27 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         unitLabel: 'bags',
         groupLabel: 'steps',
         blankVisualType: 'bar-units',
-        animationType: 'two-step-model'
+        animationType: 'two-step-model',
+        blankVisual: twoStepVisual('Problem 5: pear bags left', [
+          { step: '1', model: '27 pears packed in bags of 3', blank: '27 divided by 3 = ____', solved: '27 divided by 3 = 9' },
+          { step: '2', model: '5 bags are sold', blank: '____ - 5 = ____', solved: '9 - 5 = 4' }
+        ], ['27 divided by 3 = 9', '9 - 5 = 4'], 'There are 9 bags at first. After 5 bags are sold, 4 bags are left.', false),
+        solvedVisual: twoStepVisual('Problem 5: pear bags left', [
+          { step: '1', model: '27 pears packed in bags of 3', blank: '27 divided by 3 = ____', solved: '27 divided by 3 = 9' },
+          { step: '2', model: '5 bags are sold', blank: '____ - 5 = ____', solved: '9 - 5 = 4' }
+        ], ['27 divided by 3 = 9', '9 - 5 = 4'], 'There are 9 bags at first. After 5 bags are sold, 4 bags are left.', true),
+        blankWorkspaceLabel: 'Find the starting number of bags, then subtract the sold bags.',
+        blankPrompts: [
+          'Use groups of 3 pears to find the number of bags.',
+          'Subtract 5 bags sold.',
+          'Answer in bags left.'
+        ],
+        explanation: 'The first step finds 9 bags. The second step subtracts 5 sold bags, leaving 4 bags.',
+        validationChecks: [
+          'The first result is bags, not pears.',
+          'The subtraction uses bags sold.',
+          'The final answer is 4 bags left.'
+        ]
       }
     ]
   }),
@@ -2389,7 +2736,27 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         unitLabel: 'dollars',
         groupLabel: 'weeks',
         blankVisualType: 'tape-diagram',
-        animationType: 'two-step-model'
+        animationType: 'two-step-model',
+        blankVisual: twoStepVisual('Problem 1: Jason earns for 5 weeks', [
+          { step: '1', model: '4 full weeks at $6', blank: '4 x 6 = ____', solved: '4 x 6 = 24' },
+          { step: '2', model: 'Add the $4 fifth week', blank: '____ + 4 = ____', solved: '24 + 4 = 28' }
+        ], ['4 x 6 = 24', '24 + 4 = 28'], 'Jason earns $28.', false),
+        solvedVisual: twoStepVisual('Problem 1: Jason earns for 5 weeks', [
+          { step: '1', model: '4 full weeks at $6', blank: '4 x 6 = ____', solved: '4 x 6 = 24' },
+          { step: '2', model: 'Add the $4 fifth week', blank: '____ + 4 = ____', solved: '24 + 4 = 28' }
+        ], ['4 x 6 = 24', '24 + 4 = 28'], 'Jason earns $28.', true),
+        blankWorkspaceLabel: 'Represent four $6 weeks and one $4 week before writing the total.',
+        blankPrompts: [
+          'Show 4 equal $6 weeks.',
+          'Show the fifth week as $4, not $6.',
+          'Add the two parts for Jason’s total earnings.'
+        ],
+        explanation: 'Jason earns $6 for 4 weeks and $4 in the fifth week. The total is 24 + 4 = 28.',
+        validationChecks: [
+          'Only 4 weeks use the $6 rate.',
+          'The fifth week is represented as $4.',
+          'The final answer is total dollars earned in 5 weeks.'
+        ]
       },
       {
         number: 2,
@@ -2403,7 +2770,27 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         unitLabel: 'markers',
         groupLabel: 'packs',
         blankVisualType: 'tape-diagram',
-        animationType: 'two-step-model'
+        animationType: 'two-step-model',
+        blankVisual: twoStepVisual('Problem 2: markers and students', [
+          { step: '1', model: '4 packs of 7 markers', blank: '4 x 7 = ____', solved: '4 x 7 = 28' },
+          { step: '2', model: '6 markers left after passing out one each', blank: '____ - 6 = ____', solved: '28 - 6 = 22' }
+        ], ['4 x 7 = 28', '28 - 6 = 22'], 'There are 22 students in Miss Lianto’s class.', false),
+        solvedVisual: twoStepVisual('Problem 2: markers and students', [
+          { step: '1', model: '4 packs of 7 markers', blank: '4 x 7 = ____', solved: '4 x 7 = 28' },
+          { step: '2', model: '6 markers left after passing out one each', blank: '____ - 6 = ____', solved: '28 - 6 = 22' }
+        ], ['4 x 7 = 28', '28 - 6 = 22'], 'There are 22 students in Miss Lianto’s class.', true),
+        blankWorkspaceLabel: 'Find the total markers, then subtract the 6 left over to get the number handed out.',
+        blankPrompts: [
+          'Use 4 packs of 7 markers.',
+          'Subtract the 6 markers left.',
+          'Because each student got 1 marker, the markers handed out equal the number of students.'
+        ],
+        explanation: 'Four packs contain 28 markers. If 6 are left, 22 were handed out, so there are 22 students.',
+        validationChecks: [
+          'The total marker count is 28.',
+          'The leftover 6 is subtracted, not added.',
+          'The answer is students because each student received 1 marker.'
+        ]
       },
       {
         number: 3,
@@ -2416,7 +2803,27 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         unitLabel: 'fruit snacks',
         groupLabel: 'flavors',
         blankVisualType: 'tape-diagram',
-        animationType: 'two-step-model'
+        animationType: 'two-step-model',
+        blankVisual: twoStepVisual('Problem 3: fruit snacks left', [
+          { step: '1', model: '18 snacks split equally among 3 flavors', blank: '18 divided by 3 = ____', solved: '18 divided by 3 = 6' },
+          { step: '2', model: 'Remove the grape-flavored part', blank: '18 - ____ = ____', solved: '18 - 6 = 12' }
+        ], ['18 divided by 3 = 6', '18 - 6 = 12'], 'Each flavor has 6 snacks. After eating the 6 grape snacks, Orlando has 12 snacks left.', false),
+        solvedVisual: twoStepVisual('Problem 3: fruit snacks left', [
+          { step: '1', model: '18 snacks split equally among 3 flavors', blank: '18 divided by 3 = ____', solved: '18 divided by 3 = 6' },
+          { step: '2', model: 'Remove the grape-flavored part', blank: '18 - ____ = ____', solved: '18 - 6 = 12' }
+        ], ['18 divided by 3 = 6', '18 - 6 = 12'], 'Each flavor has 6 snacks. After eating the 6 grape snacks, Orlando has 12 snacks left.', true),
+        blankWorkspaceLabel: 'Split the snacks into 3 equal flavor parts, then remove the grape part.',
+        blankPrompts: [
+          'Partition 18 into 3 equal flavor units.',
+          'Identify the grape unit.',
+          'Subtract the grape unit from the whole.'
+        ],
+        explanation: 'Each flavor has 6 snacks. Orlando eats the grape unit of 6, leaving 12 snacks.',
+        validationChecks: [
+          'The tape has 3 equal flavor parts.',
+          'The removed part is exactly 6 grape snacks.',
+          'The final answer is snacks left.'
+        ]
       },
       {
         number: 4,
@@ -2429,7 +2836,27 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         unitLabel: 'pieces',
         groupLabel: 'steps',
         blankVisualType: 'bar-units',
-        animationType: 'two-step-model'
+        animationType: 'two-step-model',
+        blankVisual: twoStepVisual('Problem 4: ribbon pieces needed', [
+          { step: '1', model: '21 meters cut into 3-meter pieces', blank: '21 divided by 3 = ____', solved: '21 divided by 3 = 7' },
+          { step: '2', model: 'Compare 7 pieces to 12 pieces', blank: '12 - ____ = ____', solved: '12 - 7 = 5' }
+        ], ['21 divided by 3 = 7', '12 - 7 = 5'], 'She has 7 pieces and needs 5 more pieces.', false),
+        solvedVisual: twoStepVisual('Problem 4: ribbon pieces needed', [
+          { step: '1', model: '21 meters cut into 3-meter pieces', blank: '21 divided by 3 = ____', solved: '21 divided by 3 = 7' },
+          { step: '2', model: 'Compare 7 pieces to 12 pieces', blank: '12 - ____ = ____', solved: '12 - 7 = 5' }
+        ], ['21 divided by 3 = 7', '12 - 7 = 5'], 'She has 7 pieces and needs 5 more pieces.', true),
+        blankWorkspaceLabel: 'Find how many 3-meter pieces she has, then compare to 12 pieces.',
+        blankPrompts: [
+          'Divide 21 meters by 3 meters per piece.',
+          'Use 12 pieces as the target.',
+          'Subtract to find how many more pieces are needed.'
+        ],
+        explanation: 'Twenty-one meters makes 7 pieces. To reach 12 pieces, Eudora needs 12 - 7 = 5 more pieces.',
+        validationChecks: [
+          'The first answer is pieces, not meters.',
+          'The comparison target is 12 pieces.',
+          'The final answer is 5 more pieces.'
+        ]
       }
     ]
   })

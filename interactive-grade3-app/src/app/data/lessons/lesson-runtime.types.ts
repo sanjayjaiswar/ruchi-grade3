@@ -253,6 +253,7 @@ export type ProblemVisualArraySection = {
   mode?: 'blank' | 'solved';
   placeholder?: string;
   rowLabels?: string[];
+  splitAfterRows?: number;
   caption?: string;
 };
 

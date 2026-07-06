@@ -9,7 +9,7 @@ export const M3_LESSON2_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 2 animation: Apply the distributive and commutative properties to re...",
+    title: "Lesson 2 animation: Apply the distributive and commutative properties to relate multiplication facts 5 x n + n to 6 x n and n x 6 where n is the size of the unit.",
     context: "T: (Draw 1 circle with a 7 inside.) This circle represents 1 unit of 7.",
     equation: "5 x 6 = (3 x 6) + (2 x 6)",
     teacherPrompt: "What pattern did you notice between Problems 1 and 2?",
@@ -53,14 +53,14 @@ export const M3_LESSON2_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "What pattern did you notice between Problems 1 and 2?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. multiplication facts 5 x n + n to 6 x n and n x 6 where n is the size of the unit. G3-M3-TE-1.3.0-05.2015",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 2 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition.",
       visualModel: "array"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Each has a value of 7. Unit form: 5 ____ Facts: 5 x ____ = ____ x 5 Total = ____ Unit form: 6 sevens = ____ sevens + ____ seven = 35 + ____ = ____ Facts: ____ x ____ = ____ ____ x ____ = ____ multiplication facts 5 x n + n to 6 x n and n x 6 where n is the size of the unit. Problem 2: a. Each dot has a value of 8 Unit form: 5 ____ Facts: 5 x ____ = ____x 5 Total = ____ b. Use the fact above to find 8 x 6. Show your work using pictures, numbers, or words. multiplication facts 5 x n + n to 6 x n and n x 6 where n is the size of the unit. Problem 3: An author writes 9 pages of her book each week. How many pages does she write in 7 weeks? Use a fives fact to solve.",
+      studentPrompt: "Use the official Module 3 Lesson 2 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 3 student workbook, Lesson 2 Problem Set.",
       visualModel: "array"
     },
@@ -68,7 +68,7 @@ export const M3_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. multiplication facts 5 x n + n to 6 x n and n x 6 where n is the size of the unit. G3-M3-TE-1.3.0-05.2015",
+      studentPrompt: "Use the official Lesson 2 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 26-37.",
       visualModel: "array"
     },
@@ -84,7 +84,7 @@ export const M3_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Sprint: Use the Commutative Property to Multiply 3.OA.5 (9 minutes) Group Counting 3.OA.1 (4 minutes) Make Ten 3.OA.5 (2 minutes) Sprint: Use the Commutative Property to Multiply (9 minutes) Materials: (S) Use the Commutative Property to Multiply Sprint Note: This Sprint reviews Lesson 1. Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by sixes, sevens, eights, and nines in this activity anticipates multiplication using those units later in the module. Focusi...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 2 objective: Apply the distributive and commutative properties to relate multiplication facts 5 x n + n to 6 x n and n x 6 where n is the size of the unit.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 26-37.",
       visualModel: "array"
     }
@@ -121,7 +121,7 @@ export const M3_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. multiplication facts 5 x n + n to 6 x n and n x 6 where n is the size of the unit. G3-M3-TE-1.3.0-05.2015"
+        value: "Problem Set (10 minutes): Students complete the Lesson 2 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M3_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Each has a value of 7. Unit form: 5 ____ Facts: 5 x ____ = ____ x 5 Total = ____ Unit form: 6 sevens = ____ sevens + ____ seven = 35 + ____ = ____ Facts: ____ x ____ = ____ ____ x ____ = ____ multiplication facts 5 x n + n to 6 x n and n x 6 where n is the size of the unit. Problem 2: a. Each dot has a value of 8 Unit form: 5 ____ Facts: 5 x ____ = ____x 5 Total = ____ b. Use the fact above to find 8 x 6. Show your work using pictures, numbers, or words. multiplication facts 5 x n + n to 6 x n and n x 6 where n is the size of the unit. Problem 3: An author writes 9 pages of her book each week. How many pages does she write in 7 weeks? Use a fives fact to solve."
+        value: "Use the official Module 3 Lesson 2 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -153,7 +153,7 @@ export const M3_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. multiplication facts 5 x n + n to 6 x n and n x 6 where n is the size of the unit. G3-M3-TE-1.3.0-05.2015"
+        value: "Use the official Lesson 2 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -181,7 +181,7 @@ export const M3_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Sprint: Use the Commutative Property to Multiply 3.OA.5 (9 minutes) Group Counting 3.OA.1 (4 minutes) Make Ten 3.OA.5 (2 minutes) Sprint: Use the Commutative Property to Multiply (9 minutes) Materials: (S) Use the Commutative Property to Multiply Sprint Note: This Sprint reviews Lesson 1. Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by sixes, sevens, eights, and nines in this activity anticipates multiplication using those units later in the module. Focusi..."
+        value: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 2 objective: Apply the distributive and commutative properties to relate multiplication facts 5 x n + n to 6 x n and n x 6 where n is the size of the unit."
       },
       {
         label: "Workbook",

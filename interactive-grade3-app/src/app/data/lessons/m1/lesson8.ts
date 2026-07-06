@@ -29,7 +29,7 @@ export const M1_LESSON8_RUNTIME: LessonRuntimeConfig = {
       id: "source-goal",
       title: "Lesson 8: source objective",
       shortTitle: "Goal",
-      studentPrompt: "Demonstrate the commutativity of multiplication, and practice related facts by skip-counting objects in array models.",
+      studentPrompt: "Demonstrate the commutativity of multiplication, and practice related",
       teacherEditionBasis: "EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf, pages 109-118. Lesson 8 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "array"
     },
@@ -46,7 +46,7 @@ export const M1_LESSON8_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Share your answers to Problem 7 with a partner. Do your multiplication sentences look the same, or are they different? Why?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 8 Problem Set using the lesson models from the Teacher Edition.",
       visualModel: "array"
     },
     {
@@ -61,7 +61,7 @@ export const M1_LESSON8_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 8 Problem Set workspace and source-backed visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 109-118.",
       visualModel: "array"
     },
@@ -77,7 +77,7 @@ export const M1_LESSON8_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (6 minutes) Group Counting 3.OA.1 (3 minutes) Commutative Multiplying 3.OA.5 (3 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by twos, threes, and fours in this activity supports work with units of 2 and 3 in this topic and anticipates work using units of 4 in Topic E. T: Let's count by twos to 20. Whisper the numbers, and then speak them. T: Let's count by twos to 20 again. This time, hum the first number, and then speak it. As you hum, think of the number. T: L...",
+      studentPrompt: "Debrief focus: connect the Problem Set models and answers to the Lesson 8 objective: Demonstrate the commutativity of multiplication, and practice related",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 109-118.",
       visualModel: "array"
     }
@@ -90,7 +90,7 @@ export const M1_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Demonstrate the commutativity of multiplication, and practice related facts by skip-counting objects in array models."
+        value: "Demonstrate the commutativity of multiplication, and practice related"
       },
       {
         label: "Teacher Edition",
@@ -114,7 +114,7 @@ export const M1_LESSON8_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 8 Problem Set using the lesson models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -146,7 +146,7 @@ export const M1_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 8 Problem Set workspace and source-backed visuals to model and solve the student-facing problems."
       },
       {
         label: "Teacher Edition",
@@ -174,7 +174,7 @@ export const M1_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (6 minutes) Group Counting 3.OA.1 (3 minutes) Commutative Multiplying 3.OA.5 (3 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by twos, threes, and fours in this activity supports work with units of 2 and 3 in this topic and anticipates work using units of 4 in Topic E. T: Let's count by twos to 20. Whisper the numbers, and then speak them. T: Let's count by twos to 20 again. This time, hum the first number, and then speak it. As you hum, think of the number. T: L..."
+        value: "Debrief focus: connect the Problem Set models and answers to the Lesson 8 objective: Demonstrate the commutativity of multiplication, and practice related"
       },
       {
         label: "Teacher Edition",

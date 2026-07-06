@@ -9,10 +9,10 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 21 animation: Construct rectangles with a given perimeter using unit...",
-    context: "T: Read the first sentence of Problem 1 on the Problem Set.",
+    title: "Lesson 21 animation: Construct rectangles with a given perimeter using unit squares and determine their areas.",
+    context: "Use the Teacher Edition Lesson 21 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "Compare the rectangles you drew on your grid paper for Problems 1 and 2. What patterns do you see in the side lengths?",
+    teacherPrompt: "Use the source Lesson 21 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "area",
       "square unit",
@@ -40,7 +40,7 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: Read the first sentence of Problem 1 on the Problem Set. S: (Read: On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of 16 centimeters.) T: Tell a partner the strategy you will use to find rectangles with a perimeter of 16 centimeters. MP.5 S: I'll start by finding half of the perimeter, which is 8. Then, I'll write addition sentences that equal 8.",
+      studentPrompt: "Use the Teacher Edition Lesson 21 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 282-294. Lesson 21 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -48,24 +48,24 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Compare the rectangles you drew on your grid paper for Problems 1 and 2. What patterns do you see in the side lengths?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete Problems 3 and 4 on the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. To prepare for Lesson 22, students should add their data from today's lesson to the sheet shown to the right. (A master copy is included at the end of this les...",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 21 work using the official Module 7 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 21 work using the official Module 7 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of 16 centimeters. a. Sketch the rectangles below, and label the side lengths. b. Find the area of each rectangle you drew above. Problem 2: On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of 18 centimeters. a. Sketch the rectangles below, and label the side lengths. b. Find the area of each rectangle you drew above. determine their areas. Problem 3: Use centimeter grid paper to shade in as many rectangles as you can with the given perimeters. a. Use the charts below to show how many rectangles you shaded for each given perimeter. You might not use all the spaces in the charts. Perimeter = 10 cm Perimeter = 20 cm Number of rectangles I made: ____ Number of rectangles I made: ____ Width Length Area Width Length Area 1 cm 4 cm 4 square cm 1 cm 9 cm 9 square cm b. Did you make a square with either of the given perimeters? How do you know?",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 21 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 21 Problem Set prompts in order. Blank mode preserves the student-facing rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 21 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete Problems 3 and 4 on the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. To prepare for Lesson 22, students should add their data from today's lesson to the sheet shown to the right. (A master copy is included at the end of this les...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 282-294.",
+      studentPrompt: "Use the source-backed Lesson 21 workspace and rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 21; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -80,8 +80,8 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (10 minutes) Sprint: Multiply or Divide by 3 3.OA.7 (10 minutes) Sprint: Multiply or Divide by 3 (10 minutes) Materials: (S) Multiply or Divide by 3 Sprint Note: This Sprint builds fluency with multiplication and division facts using units of 3. Application Problem (5 minutes) NOTES ON MULTIPLE MEANS Mrs. Zeck will use 14 feet of tape to mark a rectangle on the gym wall. Draw several rectangles that Mrs. Zeck could make OF ACTION AND with her tape. Label the width and length of each rectangle. EXPRESSION: Scaffold the Application Problem for...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 282-294.",
+      studentPrompt: "Debrief focus: connect the Problem Set rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to the Lesson 21 objective: Construct rectangles with a given perimeter using unit squares and determine their areas.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 21; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -107,7 +107,7 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: Read the first sentence of Problem 1 on the Problem Set. S: (Read: On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of 16 centimeters.) T: Tell a partner the strategy you will use to find rectangles with a perimeter of 16 centimeters. MP.5 S: I'll start by finding half of the perimeter, which is 8. Then, I'll write addition sentences that equal 8."
+        value: "Use the Teacher Edition Lesson 21 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -117,11 +117,11 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete Problems 3 and 4 on the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. To prepare for Lesson 22, students should add their data from today's lesson to the sheet shown to the right. (A master copy is included at the end of this les..."
+        value: "Problem Set source focus: students complete the Lesson 21 work using the official Module 7 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "Compare the rectangles you drew on your grid paper for Problems 1 and 2. What patterns do you see in the side lengths?"
+        value: "Teacher Edition check: preserve the Lesson 21 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence."
       },
       {
         label: "Workbook",
@@ -131,11 +131,11 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 21 Problem Set."
+        value: "Module 7 student workbook, Lesson 21 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of 16 centimeters. a. Sketch the rectangles below, and label the side lengths. b. Find the area of each rectangle you drew above. Problem 2: On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of 18 centimeters. a. Sketch the rectangles below, and label the side lengths. b. Find the area of each rectangle you drew above. determine their areas. Problem 3: Use centimeter grid paper to shade in as many rectangles as you can with the given perimeters. a. Use the charts below to show how many rectangles you shaded for each given perimeter. You might not use all the spaces in the charts. Perimeter = 10 cm Perimeter = 20 cm Number of rectangles I made: ____ Number of rectangles I made: ____ Width Length Area Width Length Area 1 cm 4 cm 4 square cm 1 cm 9 cm 9 square cm b. Did you make a square with either of the given perimeters? How do you know?"
+        value: "Use the official Module 7 Lesson 21 Problem Set prompts in order. Blank mode preserves the student-facing rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -145,11 +145,11 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 282-294."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 21; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete Problems 3 and 4 on the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. To prepare for Lesson 22, students should add their data from today's lesson to the sheet shown to the right. (A master copy is included at the end of this les..."
+        value: "Use the source-backed Lesson 21 workspace and rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -173,11 +173,11 @@ export const M7_LESSON21_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 282-294."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 21; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (10 minutes) Sprint: Multiply or Divide by 3 3.OA.7 (10 minutes) Sprint: Multiply or Divide by 3 (10 minutes) Materials: (S) Multiply or Divide by 3 Sprint Note: This Sprint builds fluency with multiplication and division facts using units of 3. Application Problem (5 minutes) NOTES ON MULTIPLE MEANS Mrs. Zeck will use 14 feet of tape to mark a rectangle on the gym wall. Draw several rectangles that Mrs. Zeck could make OF ACTION AND with her tape. Label the width and length of each rectangle. EXPRESSION: Scaffold the Application Problem for..."
+        value: "Debrief focus: connect the Problem Set rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to the Lesson 21 objective: Construct rectangles with a given perimeter using unit squares and determine their areas."
       },
       {
         label: "Workbook",

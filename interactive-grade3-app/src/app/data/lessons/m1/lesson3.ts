@@ -46,7 +46,7 @@ export const M1_LESSON3_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Why do you think I started the lesson by asking you to divide yourselves into equal groups in the corners of the room?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 3 Problem Set using the lesson models from the Teacher Edition.",
       visualModel: "array"
     },
     {
@@ -61,7 +61,7 @@ export const M1_LESSON3_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 3 Problem Set workspace and source-backed visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 49-60.",
       visualModel: "array"
     },
@@ -77,7 +77,7 @@ export const M1_LESSON3_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Sprint: Add Equal Groups 3.OA.1 (9 minutes) Group Counting 3.OA.1 (3 minutes) Add to Multiply 3.OA.1 (3 minutes) Sprint: Add Equal Groups (9 minutes) Materials: (S) Add Equal Groups Sprint Note: This Sprint reviews Lesson 1. See Lesson 2 for the directions for administering a Sprint. Group Counting (3 minutes) Note: Basic skip-counting skills from Grade 2 shift focus in this Grade 3 activity. Group counting reviews interpreting multiplication as repeated addition. Counting by twos and threes in this activity anticipates work...",
+      studentPrompt: "Debrief focus: connect the Problem Set models and answers to the Lesson 3 objective: Interpret the meaning of factors: the size of the group or the number of groups.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 49-60.",
       visualModel: "array"
     }
@@ -114,7 +114,7 @@ export const M1_LESSON3_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 3 Problem Set using the lesson models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -146,7 +146,7 @@ export const M1_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 3 Problem Set workspace and source-backed visuals to model and solve the student-facing problems."
       },
       {
         label: "Teacher Edition",
@@ -174,7 +174,7 @@ export const M1_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Sprint: Add Equal Groups 3.OA.1 (9 minutes) Group Counting 3.OA.1 (3 minutes) Add to Multiply 3.OA.1 (3 minutes) Sprint: Add Equal Groups (9 minutes) Materials: (S) Add Equal Groups Sprint Note: This Sprint reviews Lesson 1. See Lesson 2 for the directions for administering a Sprint. Group Counting (3 minutes) Note: Basic skip-counting skills from Grade 2 shift focus in this Grade 3 activity. Group counting reviews interpreting multiplication as repeated addition. Counting by twos and threes in this activity anticipates work..."
+        value: "Debrief focus: connect the Problem Set models and answers to the Lesson 3 objective: Interpret the meaning of factors: the size of the group or the number of groups."
       },
       {
         label: "Teacher Edition",

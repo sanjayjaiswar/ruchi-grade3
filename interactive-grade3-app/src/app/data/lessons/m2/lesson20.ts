@@ -7,7 +7,7 @@ export const M2_LESSON20_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 20 animation: Estimate differences by rounding and apply to solve mea...",
+    title: "Lesson 20 animation: Estimate differences by rounding and apply to solve mea",
     context: "Estimate 362 – 189 by rounding.",
     equation: "0 to 20 on equal intervals of 5",
     teacherPrompt: "Share your observations from Problem 1(b). What did you find out? How is this different than rounding when you add?",
@@ -53,14 +53,14 @@ export const M2_LESSON20_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Share your observations from Problem 1(b). What did you find out? How is this different than rounding when you add?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 20 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "number-line"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: a. Find the actual differences either on paper or using mental math. Round each total and part to the nearest hundred and find the estimated differences. A B 448 153 = ____ 747 261 = ____ ____ ____ = ____ ____ ____ = ____ 451 153 = ____ 756 261 = ____ ____ ____ = ____ ____ ____ = ____ 448 149 = ____ 747 249 = ____ ____ ____ = ____ ____ ____ = ____ 451 149 = ____ 756 248 = ____ ____ ____ = ____ ____ ____ = ____ Circle the estimated Circle the estimated differences that are the closest differences that are the closest to the actual differences. to the actual differences. b. Look at the differences that gave the most precise estimates. Explain below what they have in common. You might use a number line to support your explanation. word problems. Camden uses a total of 372 liters of gas in two months. He uses 184 liters of gas in the first month. How many liters of gas does he use in the second month? a. Estimate the amount of gas Camden uses in the second month by rounding e...",
+      studentPrompt: "Use the official Module 2 Lesson 20 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 20 Problem Set.",
       visualModel: "number-line"
     },
@@ -68,7 +68,7 @@ export const M2_LESSON20_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 20 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 243-256.",
       visualModel: "number-line"
     },
@@ -84,7 +84,7 @@ export const M2_LESSON20_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Sprint: Round to the Nearest Hundred 3.NBT.1 (9 minutes) Use Subtraction Algorithm with Measurements 3.MD.2 (3 minutes) Sprint: Round to the Nearest Hundred (9 minutes) Materials: (S) Round to the Nearest Hundred Sprint Note: This activity builds automaticity with rounding to the nearest hundred from Lesson 14. Use Subtraction Algorithm with Measurements (3 minutes) Materials: (S) Personal white board Note: This activity reviews the standard algorithm taught in Module 2. T: (Write 50 L - 28 L = ___.) On your personal white boa...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 20 objective: Estimate differences by rounding and apply to solve measurement word problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 243-256.",
       visualModel: "number-line"
     }
@@ -121,7 +121,7 @@ export const M2_LESSON20_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 20 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M2_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: a. Find the actual differences either on paper or using mental math. Round each total and part to the nearest hundred and find the estimated differences. A B 448 153 = ____ 747 261 = ____ ____ ____ = ____ ____ ____ = ____ 451 153 = ____ 756 261 = ____ ____ ____ = ____ ____ ____ = ____ 448 149 = ____ 747 249 = ____ ____ ____ = ____ ____ ____ = ____ 451 149 = ____ 756 248 = ____ ____ ____ = ____ ____ ____ = ____ Circle the estimated Circle the estimated differences that are the closest differences that are the closest to the actual differences. to the actual differences. b. Look at the differences that gave the most precise estimates. Explain below what they have in common. You might use a number line to support your explanation. word problems. Camden uses a total of 372 liters of gas in two months. He uses 184 liters of gas in the first month. How many liters of gas does he use in the second month? a. Estimate the amount of gas Camden uses in the second month by rounding e..."
+        value: "Use the official Module 2 Lesson 20 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -153,7 +153,7 @@ export const M2_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 20 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -181,7 +181,7 @@ export const M2_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Sprint: Round to the Nearest Hundred 3.NBT.1 (9 minutes) Use Subtraction Algorithm with Measurements 3.MD.2 (3 minutes) Sprint: Round to the Nearest Hundred (9 minutes) Materials: (S) Round to the Nearest Hundred Sprint Note: This activity builds automaticity with rounding to the nearest hundred from Lesson 14. Use Subtraction Algorithm with Measurements (3 minutes) Materials: (S) Personal white board Note: This activity reviews the standard algorithm taught in Module 2. T: (Write 50 L - 28 L = ___.) On your personal white boa..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 20 objective: Estimate differences by rounding and apply to solve measurement word problems."
       },
       {
         label: "Workbook",

@@ -8,10 +8,10 @@ export const M5_LESSON2_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "fraction-strip",
-    title: "Lesson 2 animation: Specify and partition a whole into equal parts, identif...",
-    context: "1 1 Students should save the fraction strips they create during this lesson for use in future Module 5 lessons.",
+    title: "Lesson 2 animation: Specify and partition a whole into equal parts, identifying and counting unit fractions by folding fraction strips.",
+    context: "Use the Teacher Edition Lesson 2 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
     equation: "1/2; name the whole before naming the fraction",
-    teacherPrompt: "If the size of the whole stays the same, what happens as you partition it into more and more parts?",
+    teacherPrompt: "How does the official fraction model show specify and partition a whole into equal parts, identifying and counting unit fractions by folding fraction strips.?",
     focus: [
       "fraction",
       "whole",
@@ -36,7 +36,7 @@ export const M5_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "1 1 Students should save the fraction strips they create during this lesson for use in future Module 5 lessons. S: Two. English language acquisition. Students T: What fraction of the whole is 1 part? are able to form complete sentences while providing details about the S: 1 half. fraction they are analyzing. T: Draw a line to show where you folded your paper.",
+      studentPrompt: "Use the Teacher Edition Lesson 2 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf, pages 22-30. Lesson 2 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "fraction-strip"
     },
@@ -45,14 +45,14 @@ export const M5_LESSON2_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "If the size of the whole stays the same, what happens as you partition it into more and more parts?",
-      teacherEditionBasis: "Problem Set (10 minutes) NOTES ON Students should do their personal best to complete the Problem MULTIPLE MEANS Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which OF REPRESENTATION: problems they work on first. Some problems do not specify a Acting out word problems on the method for solving. Students should solve these problems using Problem Set using concrete materials the RDW approach used for Application Problems. may increase student understanding.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 2 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition.",
       visualModel: "fraction-strip"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Circle the strips that are folded to make equal parts. Problem 2: a. There are ____ equal parts in all. ____ are shaded. b. There are ____ equal parts in all. ____ are shaded. c. There are ____ equal parts in all. ____ are shaded. d. There are ____ equal parts in all. ____ are shaded. counting unit fractions by folding fraction strips. Use your fraction strips as tools to help you solve the following problems. Problem 3: Noah, Pedro, and Sharon share a whole candy bar fairly. Which of your fraction strips shows how they each get an equal part? Draw the candy bar below. Then, label Sharon's fraction of the candy bar.",
+      studentPrompt: "Use the official Module 5 Lesson 2 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 5 student workbook, Lesson 2 Problem Set.",
       visualModel: "fraction-strip"
     },
@@ -60,7 +60,7 @@ export const M5_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) NOTES ON Students should do their personal best to complete the Problem MULTIPLE MEANS Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which OF REPRESENTATION: problems they work on first. Some problems do not specify a Acting out word problems on the method for solving. Students should solve these problems using Problem Set using concrete materials the RDW approach used for Application Problems. may increase student understanding.",
+      studentPrompt: "Use the official Lesson 2 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 22-30.",
       visualModel: "fraction-strip"
     },
@@ -76,7 +76,7 @@ export const M5_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (8 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (6 minutes) Multiplication by Three and Six 3.OA.4 (6 minutes) Group Counting (6 minutes) Materials: (S) Personal white board Note: Group counting reviews interpreting multiplication as repeated addition. Count forward and backward by threes twice. Pause between each counting sequence so that students see improvement on the second try. After doing the threes twice, have students underline the multiples of 6 (e. g., 0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 27, 24, 21, 18, 15, 12, 9, 6, 3, 0.) Then, count for...",
+      studentPrompt: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 2 objective: Specify and partition a whole into equal parts, identifying and counting unit fractions by folding fraction strips.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 22-30.",
       visualModel: "fraction-strip"
     }
@@ -103,7 +103,7 @@ export const M5_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "1 1 Students should save the fraction strips they create during this lesson for use in future Module 5 lessons. S: Two. English language acquisition. Students T: What fraction of the whole is 1 part? are able to form complete sentences while providing details about the S: 1 half. fraction they are analyzing. T: Draw a line to show where you folded your paper."
+        value: "Use the Teacher Edition Lesson 2 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence."
       },
       {
         label: "Workbook",
@@ -113,7 +113,7 @@ export const M5_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) NOTES ON Students should do their personal best to complete the Problem MULTIPLE MEANS Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which OF REPRESENTATION: problems they work on first. Some problems do not specify a Acting out word problems on the method for solving. Students should solve these problems using Problem Set using concrete materials the RDW approach used for Application Problems. may increase student understanding."
+        value: "Problem Set (10 minutes): Students complete the Lesson 2 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -131,7 +131,7 @@ export const M5_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Circle the strips that are folded to make equal parts. Problem 2: a. There are ____ equal parts in all. ____ are shaded. b. There are ____ equal parts in all. ____ are shaded. c. There are ____ equal parts in all. ____ are shaded. d. There are ____ equal parts in all. ____ are shaded. counting unit fractions by folding fraction strips. Use your fraction strips as tools to help you solve the following problems. Problem 3: Noah, Pedro, and Sharon share a whole candy bar fairly. Which of your fraction strips shows how they each get an equal part? Draw the candy bar below. Then, label Sharon's fraction of the candy bar."
+        value: "Use the official Module 5 Lesson 2 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -145,7 +145,7 @@ export const M5_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) NOTES ON Students should do their personal best to complete the Problem MULTIPLE MEANS Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which OF REPRESENTATION: problems they work on first. Some problems do not specify a Acting out word problems on the method for solving. Students should solve these problems using Problem Set using concrete materials the RDW approach used for Application Problems. may increase student understanding."
+        value: "Use the official Lesson 2 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -173,7 +173,7 @@ export const M5_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (8 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (6 minutes) Multiplication by Three and Six 3.OA.4 (6 minutes) Group Counting (6 minutes) Materials: (S) Personal white board Note: Group counting reviews interpreting multiplication as repeated addition. Count forward and backward by threes twice. Pause between each counting sequence so that students see improvement on the second try. After doing the threes twice, have students underline the multiples of 6 (e. g., 0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 27, 24, 21, 18, 15, 12, 9, 6, 3, 0.) Then, count for..."
+        value: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 2 objective: Specify and partition a whole into equal parts, identifying and counting unit fractions by folding fraction strips."
       },
       {
         label: "Workbook",

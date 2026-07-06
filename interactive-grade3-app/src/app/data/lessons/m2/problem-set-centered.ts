@@ -727,11 +727,11 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Use the nearest five-minute mark as a benchmark, then count individual minutes.',
     summary: 'Exact time combines the hour, five-minute groups, and extra ones.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Plot points for the clock times and match the clocks to the number line.', solvedAnswer: 'Read each Teacher Edition clock visual, plot its minute count, and match it to the same point.', numberLineModels: [numberLine('7:00 p.m. to 8:00 p.m.', ['7:00', '10', '20', '30', '40', '50', '8:00'])] }),
+      problem({ number: 1, sourcePrompt: 'Plot points for the clock times and match the clocks to the number line.', solvedAnswer: 'First clock 7:17 p.m.; second clock 7:03 p.m.; third clock 7:55 p.m.; fourth clock 7:41 p.m.; fifth clock answer provided.', equations: ['7:17 p.m.', '7:03 p.m.', '7:55 p.m.', '7:41 p.m.'], numberLineModels: [numberLine('7:00 p.m. to 8:00 p.m.', ['7:00', '10', '20', '30', '40', '50', '8:00'])] }),
       problem({ number: 2, sourcePrompt: 'Draw hands for 6:48 a.m.', solvedAnswer: 'Minute hand at 48 minutes; hour hand close to 7.', equations: ['6:48 = 48 minutes after 6:00'], blankVisualType: 'clock-workspace', animationType: 'clock-model' }),
       problem({ number: 3, sourcePrompt: 'Draw hands for 8:23 a.m.', solvedAnswer: 'Minute hand at 23 minutes; hour hand a little past 8.', equations: ['8:23 = 23 minutes after 8:00'], blankVisualType: 'clock-workspace', animationType: 'clock-model' }),
-      problem({ number: 4, sourcePrompt: 'Read the clock showing when Rebecca finishes homework.', solvedAnswer: 'Read the exact time from the Teacher Edition clock visual.', blankVisualType: 'clock-workspace', animationType: 'clock-model' }),
-      problem({ number: 5, sourcePrompt: 'Read Mason\'s drop-off clock and find the coach arrival time 11 minutes before.', solvedAnswer: 'Read Mason\'s official drop-off time, then subtract 11 minutes.', equations: ['drop-off time - 11 minutes = coach arrival'], blankVisualType: 'clock-workspace', animationType: 'clock-model' })
+      problem({ number: 4, sourcePrompt: 'Read the clock showing when Rebecca finishes homework.', solvedAnswer: 'Rebecca finishes her homework at 5:27.', equations: ['Rebecca finishes at 5:27'], blankVisualType: 'clock-workspace', animationType: 'clock-model' }),
+      problem({ number: 5, sourcePrompt: 'Read Mason\'s drop-off clock and find the coach arrival time 11 minutes before.', solvedAnswer: 'Mason is dropped off at 3:56; the coach arrives at 3:45.', equations: ['3:56 - 11 minutes = 3:45'], blankVisualType: 'clock-workspace', animationType: 'clock-model' })
     ]
   }),
   4: lesson({
@@ -746,7 +746,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       problem({ number: 3, sourcePrompt: 'Genevieve works from 11:27 a.m. to 11:58 a.m.', solvedAnswer: 'She works for 31 minutes.', equations: ['11:58 - 11:27 = 31 minutes'], quotient: 31, unitLabel: 'minutes', numberLineModels: [numberLine('11:27 to 11:58', ['11:27', '+31', '11:58'], [2])] }),
       problem({ number: 4, sourcePrompt: 'Nate finishes at 4:47 p.m. after 38 minutes.', solvedAnswer: 'Nate started at 4:09 p.m.', equations: ['4:47 - 38 minutes = 4:09'], numberLineModels: [numberLine('count back 38 minutes', ['4:09', '+38', '4:47'], [0])] }),
       problem({ number: 5, sourcePrompt: 'Andrea fishes from 9:03 a.m. for 49 minutes.', solvedAnswer: 'Andrea is done at 9:52 a.m.', equations: ['9:03 + 49 minutes = 9:52'], numberLineModels: [numberLine('9:03 plus 49', ['9:03', '+49', '9:52'], [2])] }),
-      problem({ number: 6, sourcePrompt: 'Use the clocks to find Dion\'s walk time to school.', solvedAnswer: 'Read the official leave and arrival clocks, then count the elapsed minutes.', blankVisualType: 'clock-workspace', animationType: 'clock-model' }),
+      problem({ number: 6, sourcePrompt: 'Use the clocks to find Dion\'s walk time to school.', solvedAnswer: 'Dion takes 19 minutes to walk to school.', equations: ['arrival time - leave time = 19 minutes'], blankVisualType: 'clock-workspace', animationType: 'clock-model' }),
       problem({ number: 7, sourcePrompt: 'Sydney cleans for 45 minutes starting at 11:13 a.m.', solvedAnswer: 'Sydney finishes at 11:58 a.m.', equations: ['11:13 + 45 minutes = 11:58'], numberLineModels: [numberLine('11:13 plus 45', ['11:13', '+45', '11:58'], [2])] }),
       problem({ number: 8, sourcePrompt: 'A musical lasts 42 minutes and ends at 1:59 p.m.', solvedAnswer: 'The musical started at 1:17 p.m.', equations: ['1:59 - 42 minutes = 1:17'], numberLineModels: [numberLine('count back 42 minutes', ['1:17', '+42', '1:59'], [0])] })
     ]
@@ -762,7 +762,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       problem({ number: 2, sourcePrompt: 'Tessa spends 34 minutes washing her dog; 12 minutes are shampoo and rinse.', solvedAnswer: 'She spends 22 minutes getting the dog in the bathtub.', equations: ['34 - 12 = 22'], quotient: 22, unitLabel: 'minutes', animationType: 'two-step-model' }),
       problem({ number: 3, sourcePrompt: 'Tessa walks 47 minutes and Jeremiah walks 30 minutes.', solvedAnswer: 'Tessa walks 17 more minutes.', equations: ['47 - 30 = 17'], quotient: 17, unitLabel: 'minutes', animationType: 'two-step-model' }),
       problem({ number: 4, sourcePrompt: 'Austin does chores for 4, 12, and 13 minutes, then compares to a 7:55 bus after starting at 7:30.', solvedAnswer: 'Chores take 29 minutes; he finishes at 7:59 a.m. and is not done in time.', equations: ['4 + 12 + 13 = 29', '7:30 + 29 minutes = 7:59'], quotient: 29, unitLabel: 'minutes', animationType: 'two-step-model' }),
-      problem({ number: 5, sourcePrompt: 'Gilberto\'s cat sleeps 23 minutes and wakes at the time shown on the clock.', solvedAnswer: 'Read the official wake time, then subtract 23 minutes.', equations: ['wake time - 23 minutes = sleep time'], blankVisualType: 'clock-workspace', animationType: 'clock-model' })
+      problem({ number: 5, sourcePrompt: 'Gilberto\'s cat sleeps 23 minutes and wakes at the time shown on the clock.', solvedAnswer: 'Use the source clock wake time and subtract 23 minutes to find the start time.', equations: ['wake time - 23 minutes = sleep time'], blankVisualType: 'clock-workspace', animationType: 'clock-model' })
     ]
   }),
   6: lesson({

@@ -53,14 +53,14 @@ export const M3_LESSON13_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "During the fluency activity, we group counted nines to say the multiples of 9. When we skip-count by nines, what are we adding each time?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the NOTES ON Problem Set within the allotted 10 minutes. For some MULTIPLE MEANS classes, it may be appropriate to modify the assignment by OF REPRESENTATION: specifying which problems they work on first. Some Consider adjusting the Problem Set to problems do not specify a method for solving. Students assist learners with perceptual should solve these problems using the RDW approach used disabilities. Provide a table for for Application Problems. students to record the nine skip...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 13 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition.",
       visualModel: "array"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: a. Skip-count by nine. ____, 36 ____, ____, ____, 72 ____, ____ ____, ____, ____, ____, b. Look at the tens place in the count-by. What is the pattern? c. Look at the ones place in the count-by. What is the pattern? Problem 2: Complete to make true statements. a. 10 more than 0 is ____, f. 10 more than 45 is ____, 1 less is ____. 1 less is ____. 1 x 9 = ____ 6 x 9 = ____ b. 10 more than 9 is ____, 19 g. 10 more than 54 is ____, 1 less is ____. 18 1 less is ____. 2 x 9 = ____ 7 x 9 = ____ c. 10 more than 18 is ____, h. 10 more than 63 is ____, 1 less is ____. 1 less is ____. 3 x 9 = ____ 8 x 9 = ____ d. 10 more than 27 is ____, i. 10 more than 72 is ____, 1 less is ____. 1 less is ____. 4 x 9 = ____ 9 x 9 = ____ e. 10 more than 36 is ____, j. 10 more than 81 is ____, 1 less is ____. 1 less is ____. 5 x 9 = ____ 10 x 9 = ____ Problem 3: a. Analyze the equations in Problem 2. What is the pattern? b. Use the pattern to find the next 4 facts. Show your work. 11 x 9 = 12 x 9 =...",
+      studentPrompt: "Use the official Module 3 Lesson 13 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 3 student workbook, Lesson 13 Problem Set.",
       visualModel: "array"
     },
@@ -68,7 +68,7 @@ export const M3_LESSON13_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the NOTES ON Problem Set within the allotted 10 minutes. For some MULTIPLE MEANS classes, it may be appropriate to modify the assignment by OF REPRESENTATION: specifying which problems they work on first. Some Consider adjusting the Problem Set to problems do not specify a method for solving. Students assist learners with perceptual should solve these problems using the RDW approach used disabilities. Provide a table for for Application Problems. students to record the nine skip...",
+      studentPrompt: "Use the official Lesson 13 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 164-175.",
       visualModel: "array"
     },
@@ -84,7 +84,7 @@ export const M3_LESSON13_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) helpful to write the nines fact for each given product (e.g., in Problem 2(f), Lesson Objective: Identify and use arithmetic patterns to have students write 5 x 9 above 45). multiply. The Student Debrief is intended to invite reflection and active processing of the total lesson experience. Invite students to review their solutions for the Problem Set. They should check work by comparing answers with a partner before going over answers as a class. Look for misconceptions or misunderstandings that can be addressed in the Debrief. Guide students in a conversation to debrief the Problem...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 13 objective: Identify and use arithmetic patterns to multiply.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 164-175.",
       visualModel: "array"
     }
@@ -121,7 +121,7 @@ export const M3_LESSON13_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the NOTES ON Problem Set within the allotted 10 minutes. For some MULTIPLE MEANS classes, it may be appropriate to modify the assignment by OF REPRESENTATION: specifying which problems they work on first. Some Consider adjusting the Problem Set to problems do not specify a method for solving. Students assist learners with perceptual should solve these problems using the RDW approach used disabilities. Provide a table for for Application Problems. students to record the nine skip..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 13 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M3_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: a. Skip-count by nine. ____, 36 ____, ____, ____, 72 ____, ____ ____, ____, ____, ____, b. Look at the tens place in the count-by. What is the pattern? c. Look at the ones place in the count-by. What is the pattern? Problem 2: Complete to make true statements. a. 10 more than 0 is ____, f. 10 more than 45 is ____, 1 less is ____. 1 less is ____. 1 x 9 = ____ 6 x 9 = ____ b. 10 more than 9 is ____, 19 g. 10 more than 54 is ____, 1 less is ____. 18 1 less is ____. 2 x 9 = ____ 7 x 9 = ____ c. 10 more than 18 is ____, h. 10 more than 63 is ____, 1 less is ____. 1 less is ____. 3 x 9 = ____ 8 x 9 = ____ d. 10 more than 27 is ____, i. 10 more than 72 is ____, 1 less is ____. 1 less is ____. 4 x 9 = ____ 9 x 9 = ____ e. 10 more than 36 is ____, j. 10 more than 81 is ____, 1 less is ____. 1 less is ____. 5 x 9 = ____ 10 x 9 = ____ Problem 3: a. Analyze the equations in Problem 2. What is the pattern? b. Use the pattern to find the next 4 facts. Show your work. 11 x 9 = 12 x 9 =..."
+        value: "Use the official Module 3 Lesson 13 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -153,7 +153,7 @@ export const M3_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the NOTES ON Problem Set within the allotted 10 minutes. For some MULTIPLE MEANS classes, it may be appropriate to modify the assignment by OF REPRESENTATION: specifying which problems they work on first. Some Consider adjusting the Problem Set to problems do not specify a method for solving. Students assist learners with perceptual should solve these problems using the RDW approach used disabilities. Provide a table for for Application Problems. students to record the nine skip..."
+        value: "Use the official Lesson 13 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -181,7 +181,7 @@ export const M3_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) helpful to write the nines fact for each given product (e.g., in Problem 2(f), Lesson Objective: Identify and use arithmetic patterns to have students write 5 x 9 above 45). multiply. The Student Debrief is intended to invite reflection and active processing of the total lesson experience. Invite students to review their solutions for the Problem Set. They should check work by comparing answers with a partner before going over answers as a class. Look for misconceptions or misunderstandings that can be addressed in the Debrief. Guide students in a conversation to debrief the Problem..."
+        value: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 13 objective: Identify and use arithmetic patterns to multiply."
       },
       {
         label: "Workbook",

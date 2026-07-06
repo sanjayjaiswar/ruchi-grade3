@@ -9,7 +9,7 @@ export const M3_LESSON10_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 10 animation: Use the distributive property as a strategy to multiply...",
+    title: "Lesson 10 animation: Use the distributive property as a strategy to multiply and divide.",
     context: "which factor do we break apart?",
     equation: "8 x 9 = (4 x 9) + (4 x 9)",
     teacherPrompt: "Describe the steps you took to solve for the unknown numbers in Problem 1(a)",
@@ -53,14 +53,14 @@ export const M3_LESSON10_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Describe the steps you took to solve for the unknown numbers in Problem 1(a)",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 10 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition.",
       visualModel: "array"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Label the arrays. Then, fill in the blanks below to make the statements true. a. 8 x 8 = ____ b. 8 x 9 = 9 x 8 =____ (8 x 5) = _ __ (8 x ____) = ____ (8 x 5) = _ __ (8 x ____) = ____ 8 x 8 = 8 x (5 + ____) 9 x 8 = 8 x (5 + ____) = (8 x 5) + (8 x ____) = (8 x 5) + (8 x ____) = 40 + ____ = 40 + ____ = ____ = ____ Problem 2: Break apart and distribute to solve 56 divided by 8. Problem 3: Break apart and distribute to solve 72 divided by 8. 56divided by8 72divided by8 40divided by8 16divided by8 40divided by8 72 divided by 8 = (40 divided by 8) + (____divided by 8) 56 divided by 8 = (40 divided by 8) + (____divided by 8) = 5 + ____ = 5 + ____ = ____ = ____",
+      studentPrompt: "Use the official Module 3 Lesson 10 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 3 student workbook, Lesson 10 Problem Set.",
       visualModel: "array"
     },
@@ -68,7 +68,7 @@ export const M3_LESSON10_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 10 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 119-129.",
       visualModel: "array"
     },
@@ -84,7 +84,7 @@ export const M3_LESSON10_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (7 minutes) Group Counting 3.OA.1 (4 minutes) Decompose Multiples of 8 3.OA.5 (3 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by sixes and sevens reviews multiplication using those units in Topic B. Group counting by eights prepares students for multiplication in this topic. Group counting nines anticipates multiplication using units of nine later in the module. Direct students to count forward and backward, occasionally changing the direction of the count: Si...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 10 objective: Use the distributive property as a strategy to multiply and divide.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 119-129.",
       visualModel: "array"
     }
@@ -121,7 +121,7 @@ export const M3_LESSON10_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 10 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M3_LESSON10_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Label the arrays. Then, fill in the blanks below to make the statements true. a. 8 x 8 = ____ b. 8 x 9 = 9 x 8 =____ (8 x 5) = _ __ (8 x ____) = ____ (8 x 5) = _ __ (8 x ____) = ____ 8 x 8 = 8 x (5 + ____) 9 x 8 = 8 x (5 + ____) = (8 x 5) + (8 x ____) = (8 x 5) + (8 x ____) = 40 + ____ = 40 + ____ = ____ = ____ Problem 2: Break apart and distribute to solve 56 divided by 8. Problem 3: Break apart and distribute to solve 72 divided by 8. 56divided by8 72divided by8 40divided by8 16divided by8 40divided by8 72 divided by 8 = (40 divided by 8) + (____divided by 8) 56 divided by 8 = (40 divided by 8) + (____divided by 8) = 5 + ____ = 5 + ____ = ____ = ____"
+        value: "Use the official Module 3 Lesson 10 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -153,7 +153,7 @@ export const M3_LESSON10_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 10 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -181,7 +181,7 @@ export const M3_LESSON10_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (7 minutes) Group Counting 3.OA.1 (4 minutes) Decompose Multiples of 8 3.OA.5 (3 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by sixes and sevens reviews multiplication using those units in Topic B. Group counting by eights prepares students for multiplication in this topic. Group counting nines anticipates multiplication using units of nine later in the module. Direct students to count forward and backward, occasionally changing the direction of the count: Si..."
+        value: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 10 objective: Use the distributive property as a strategy to multiply and divide."
       },
       {
         label: "Workbook",

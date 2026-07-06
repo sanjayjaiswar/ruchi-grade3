@@ -9,10 +9,10 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 25 animation: Use rectangles to draw a robot with specified perimeter...",
-    context: "Finished Robot Sample Students use today's Problem Set to map out the robot in its environment.",
+    title: "Lesson 25 animation: Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced.",
+    context: "Use the Teacher Edition Lesson 25 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "Compare your drawing to a partner's. What is similar? What is different? Students should keep both drawings for comparison.",
+    teacherPrompt: "Use the source Lesson 25 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "area",
       "square unit",
@@ -40,7 +40,7 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Finished Robot Sample Students use today's Problem Set to map out the robot in its environment. Once they have their maps completed, students create just their robots using the widths and lengths they recorded on the Problem Set in Lesson 24. Give them the option of cutting their rectangles out of centimeter grid paper or creating rectangles on construction paper with a right angle tool and ruler.",
+      studentPrompt: "Use the Teacher Edition Lesson 25 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 332-341. Lesson 25 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -48,24 +48,24 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Compare your drawing to a partner's. What is similar? What is different? Students should keep both drawings for comparison.",
-      teacherEditionBasis: "Use the Teacher Edition lesson pages 332-341 for the exact teacher explanation and support sequence.",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 25 work using the official Module 7 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 25 work using the official Module 7 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Draw a picture of your robot in its environment in the space below. Label the widths, lengths, and perimeters of all rectangles. Label the perimeters of all circular shapes. measurements, and reason about the different areas that may be produced.",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 25 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 25 Problem Set prompts in order. Blank mode preserves the student-facing robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 25 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Use the Teacher Edition lesson pages 332-341 for the exact teacher explanation and support sequence.",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 332-341.",
+      studentPrompt: "Use the source-backed Lesson 25 workspace and robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 25; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -80,8 +80,8 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (10 minutes) Sprint: Multiply or Divide by 6 3.OA.7 (10 minutes) Sprint: Multiply or Divide by 6 (10 minutes) Materials: (S) Multiply or Divide by 6 Sprint Note: This Sprint builds fluency with multiplication and division facts using units of 6. Concept Development (40 minutes) Finished Robot Sample Materials: (S) Problem Sets from Lessons 24 and 25, Evaluation Rubric, centimeter grid paper, glue, ruler, right angle tool, crayons, assorted colors of construction paper, 1 piece of 12 x 18 construction paper, string, scissors Students use to...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 332-341.",
+      studentPrompt: "Debrief focus: connect the Problem Set robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to the Lesson 25 objective: Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 25; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -107,7 +107,7 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Finished Robot Sample Students use today's Problem Set to map out the robot in its environment. Once they have their maps completed, students create just their robots using the widths and lengths they recorded on the Problem Set in Lesson 24. Give them the option of cutting their rectangles out of centimeter grid paper or creating rectangles on construction paper with a right angle tool and ruler."
+        value: "Use the Teacher Edition Lesson 25 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -117,11 +117,11 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Use the Teacher Edition lesson pages 332-341 for the exact teacher explanation and support sequence."
+        value: "Problem Set source focus: students complete the Lesson 25 work using the official Module 7 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "Compare your drawing to a partner's. What is similar? What is different? Students should keep both drawings for comparison."
+        value: "Teacher Edition check: preserve the Lesson 25 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships."
       },
       {
         label: "Workbook",
@@ -131,11 +131,11 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 25 Problem Set."
+        value: "Module 7 student workbook, Lesson 25 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Draw a picture of your robot in its environment in the space below. Label the widths, lengths, and perimeters of all rectangles. Label the perimeters of all circular shapes. measurements, and reason about the different areas that may be produced."
+        value: "Use the official Module 7 Lesson 25 Problem Set prompts in order. Blank mode preserves the student-facing robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -145,11 +145,11 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 332-341."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 25; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Use the Teacher Edition lesson pages 332-341 for the exact teacher explanation and support sequence."
+        value: "Use the source-backed Lesson 25 workspace and robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -173,11 +173,11 @@ export const M7_LESSON25_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 332-341."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 25; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (10 minutes) Sprint: Multiply or Divide by 6 3.OA.7 (10 minutes) Sprint: Multiply or Divide by 6 (10 minutes) Materials: (S) Multiply or Divide by 6 Sprint Note: This Sprint builds fluency with multiplication and division facts using units of 6. Concept Development (40 minutes) Finished Robot Sample Materials: (S) Problem Sets from Lessons 24 and 25, Evaluation Rubric, centimeter grid paper, glue, ruler, right angle tool, crayons, assorted colors of construction paper, 1 piece of 12 x 18 construction paper, string, scissors Students use to..."
+        value: "Debrief focus: connect the Problem Set robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to the Lesson 25 objective: Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced."
       },
       {
         label: "Workbook",

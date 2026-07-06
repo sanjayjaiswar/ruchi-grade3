@@ -9,7 +9,7 @@ export const M3_LESSON4_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 4 animation: Count by units of 6 to multiply and divide using number...",
+    title: "Lesson 4 animation: Count by units of 6 to multiply and divide using number bonds to decompose.",
     context: "Part 1: Use number bonds to decompose and skip-count using units of 6.",
     equation: "6 x 10 = (3 x 10) + (3 x 10)",
     teacherPrompt: "With a partner, list the related division facts for each number in the skip-counting sequence in Problem 1",
@@ -53,14 +53,14 @@ export const M3_LESSON4_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "With a partner, list the related division facts for each number in the skip-counting sequence in Problem 1",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. to decompose. G3-M3-TE-1.3.0-05.2015",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 4 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition.",
       visualModel: "array"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Skip-count by six to fill in the blanks. Match each number in the count-by with its multiplication fact. 6 9x6 ____ 6x6 4x6 ____ 7x6 2x6 1x6 ____ 3x6 10 x 6 ____ 5x6 60 8x6 to decompose. Problem 2: Count by six to fill in the blanks below. Problem 3: Count by six to fill in the blanks below. 6, ____, ____, ____ 6, ____, ____, ____, ____, ____, ____ Complete the multiplication equation that Complete the multiplication equation that represents the final number in your count-by. represents the final number in your count-by. 6 x ____ = ____ 6 x ____ = ____ Complete the division equation that Complete the division equation that represents represents your count-by. your count-by. ____ divided by 6 = ____ ____ divided by 6 = ____",
+      studentPrompt: "Use the official Module 3 Lesson 4 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 3 student workbook, Lesson 4 Problem Set.",
       visualModel: "array"
     },
@@ -68,7 +68,7 @@ export const M3_LESSON4_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. to decompose. G3-M3-TE-1.3.0-05.2015",
+      studentPrompt: "Use the official Lesson 4 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 51-61.",
       visualModel: "array"
     },
@@ -84,7 +84,7 @@ export const M3_LESSON4_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Group Counting 3.OA.1 (4 minutes) Familiar Facts 3.OA.4 (4 minutes) Multiply Using the Distributive Property 3.OA.5 (4 minutes) Make Ten Game 3.OA.5 (3 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by sixes and sevens prepares students for multiplication using those units in this topic. Group counting by eights and nines anticipates multiplication using those units later in the module. Direct students to count forward and backward, occasionally c...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 4 objective: Count by units of 6 to multiply and divide using number bonds to decompose.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 51-61.",
       visualModel: "array"
     }
@@ -121,7 +121,7 @@ export const M3_LESSON4_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. to decompose. G3-M3-TE-1.3.0-05.2015"
+        value: "Problem Set (10 minutes): Students complete the Lesson 4 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M3_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Skip-count by six to fill in the blanks. Match each number in the count-by with its multiplication fact. 6 9x6 ____ 6x6 4x6 ____ 7x6 2x6 1x6 ____ 3x6 10 x 6 ____ 5x6 60 8x6 to decompose. Problem 2: Count by six to fill in the blanks below. Problem 3: Count by six to fill in the blanks below. 6, ____, ____, ____ 6, ____, ____, ____, ____, ____, ____ Complete the multiplication equation that Complete the multiplication equation that represents the final number in your count-by. represents the final number in your count-by. 6 x ____ = ____ 6 x ____ = ____ Complete the division equation that Complete the division equation that represents represents your count-by. your count-by. ____ divided by 6 = ____ ____ divided by 6 = ____"
+        value: "Use the official Module 3 Lesson 4 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -153,7 +153,7 @@ export const M3_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. to decompose. G3-M3-TE-1.3.0-05.2015"
+        value: "Use the official Lesson 4 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -181,7 +181,7 @@ export const M3_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Group Counting 3.OA.1 (4 minutes) Familiar Facts 3.OA.4 (4 minutes) Multiply Using the Distributive Property 3.OA.5 (4 minutes) Make Ten Game 3.OA.5 (3 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by sixes and sevens prepares students for multiplication using those units in this topic. Group counting by eights and nines anticipates multiplication using those units later in the module. Direct students to count forward and backward, occasionally c..."
+        value: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 4 objective: Count by units of 6 to multiply and divide using number bonds to decompose."
       },
       {
         label: "Workbook",

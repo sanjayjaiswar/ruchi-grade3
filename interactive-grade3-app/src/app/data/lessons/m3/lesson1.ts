@@ -50,14 +50,14 @@ export const M3_LESSON1_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "How did commutativity help you solve more facts than you thought you knew in Problem 1(a)?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Some problems do not specify a method for solving. This is an intentional reduction of scaffolding that invokes MP.5, Use Appropriate Tools Strategically. Students should solve these problems using the RDW approach used for Application Problems. For some classes, it may be appropriate to modify the assignment by specifying which problems students should work on first. With this option, let the purposeful sequencing of the Problem S...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 1 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition.",
       visualModel: "array"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: a. Solve. Shade in the multiplication facts that you already know. Then, shade in the facts for sixes, sevens, eights, and nines that you can solve using the commutative property. x 1 2 3 4 5 6 7 8 9 10 1 2 3 2 4 8 16 3 18 4 20 5 50 6 12 b. Complete the chart. Each bag contains 7 apples. Number of Bags 2 4 5 Total Number of Apples 21 42 Problem 2: Use the array to write two different multiplication sentences. ____ = ____ x ____ ____ = ____ x ____ Problem 3: Complete the equations. a. 2 sevens = ____ twos g. 3 x 9 = 10 threes - ____ three = ____ = ____ b. 3 ____ = 6 threes h. 10 fours - 1 four = ____ x 4 = ____ = ____ c. 10 eights = 8 ____ i. 8 x 4 = 5 fours + ____ fours = ____ = ____ d. 4 x ____ = 6 x 4 j. ____ fives + 1 five = 6 x 5 = ____ = ____ e. 8 x 5 = ____ x 8 k. 5 threes + 2 threes = ____ x ____ = ____ = ____ f. ____ x 7 = 7 x ____ l. ____ twos + ____ twos = 10 twos = ____ = ____",
+      studentPrompt: "Use the official Module 3 Lesson 1 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 3 student workbook, Lesson 1 Problem Set.",
       visualModel: "array"
     },
@@ -65,7 +65,7 @@ export const M3_LESSON1_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Some problems do not specify a method for solving. This is an intentional reduction of scaffolding that invokes MP.5, Use Appropriate Tools Strategically. Students should solve these problems using the RDW approach used for Application Problems. For some classes, it may be appropriate to modify the assignment by specifying which problems students should work on first. With this option, let the purposeful sequencing of the Problem S...",
+      studentPrompt: "Use the official Lesson 1 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 14-25.",
       visualModel: "array"
     },
@@ -81,7 +81,7 @@ export const M3_LESSON1_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Sprint: Mixed Multiplication 3.OA.7 (9 minutes) Group Counting 3.OA.1 (3 minutes) Commutative Property of Multiplication 3.OA.5 (3 minutes) Sprint: Mixed Multiplication (9 minutes) Materials: (S) Mixed Multiplication Sprint Note: This Sprint reviews familiar multiplication facts from Module 1 and prepares students for today's lesson on using commutativity with known facts to find unknown facts. Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as NOTES ON repeated addition. Counting by sixes...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 1 objective: Study commutativity to find known facts of 6, 7, 8, and 9.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 14-25.",
       visualModel: "array"
     }
@@ -118,7 +118,7 @@ export const M3_LESSON1_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Some problems do not specify a method for solving. This is an intentional reduction of scaffolding that invokes MP.5, Use Appropriate Tools Strategically. Students should solve these problems using the RDW approach used for Application Problems. For some classes, it may be appropriate to modify the assignment by specifying which problems students should work on first. With this option, let the purposeful sequencing of the Problem S..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 1 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -136,7 +136,7 @@ export const M3_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: a. Solve. Shade in the multiplication facts that you already know. Then, shade in the facts for sixes, sevens, eights, and nines that you can solve using the commutative property. x 1 2 3 4 5 6 7 8 9 10 1 2 3 2 4 8 16 3 18 4 20 5 50 6 12 b. Complete the chart. Each bag contains 7 apples. Number of Bags 2 4 5 Total Number of Apples 21 42 Problem 2: Use the array to write two different multiplication sentences. ____ = ____ x ____ ____ = ____ x ____ Problem 3: Complete the equations. a. 2 sevens = ____ twos g. 3 x 9 = 10 threes - ____ three = ____ = ____ b. 3 ____ = 6 threes h. 10 fours - 1 four = ____ x 4 = ____ = ____ c. 10 eights = 8 ____ i. 8 x 4 = 5 fours + ____ fours = ____ = ____ d. 4 x ____ = 6 x 4 j. ____ fives + 1 five = 6 x 5 = ____ = ____ e. 8 x 5 = ____ x 8 k. 5 threes + 2 threes = ____ x ____ = ____ = ____ f. ____ x 7 = 7 x ____ l. ____ twos + ____ twos = 10 twos = ____ = ____"
+        value: "Use the official Module 3 Lesson 1 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -150,7 +150,7 @@ export const M3_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Some problems do not specify a method for solving. This is an intentional reduction of scaffolding that invokes MP.5, Use Appropriate Tools Strategically. Students should solve these problems using the RDW approach used for Application Problems. For some classes, it may be appropriate to modify the assignment by specifying which problems students should work on first. With this option, let the purposeful sequencing of the Problem S..."
+        value: "Use the official Lesson 1 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -178,7 +178,7 @@ export const M3_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Sprint: Mixed Multiplication 3.OA.7 (9 minutes) Group Counting 3.OA.1 (3 minutes) Commutative Property of Multiplication 3.OA.5 (3 minutes) Sprint: Mixed Multiplication (9 minutes) Materials: (S) Mixed Multiplication Sprint Note: This Sprint reviews familiar multiplication facts from Module 1 and prepares students for today's lesson on using commutativity with known facts to find unknown facts. Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as NOTES ON repeated addition. Counting by sixes..."
+        value: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 1 objective: Study commutativity to find known facts of 6, 7, 8, and 9."
       },
       {
         label: "Workbook",

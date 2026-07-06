@@ -6,7 +6,7 @@ export const M2_LESSON16_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 16 animation: Add measurements using the standard algorithm to compos...",
+    title: "Lesson 16 animation: Add measurements using the standard algorithm to compos",
     context: "Use place value charts, disks, and the standard algorithm to add measurements, composing larger units twice.",
     equation: "Measure and label in kg; keep the unit with the number",
     teacherPrompt: "What pattern did you notice between Problems 1(a), 1(b), and 1(c)? How did the pattern help you solve these problems?",
@@ -48,14 +48,14 @@ export const M2_LESSON16_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "What pattern did you notice between Problems 1(a), 1(b), and 1(c)? How did the pattern help you solve these problems?",
-      teacherEditionBasis: "Problem Set (5 minutes) NOTES ON Students should do their personal best to complete page 2 of MULTIPLE MEANS the Problem Set within the allotted 5 minutes. For some OF ACTION AND classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems EXPRESSION: do not specify a method for solving. Students should solve Help students prepare for successful these problems using the RDW approach used for Application participation in the Student Debrief. Some may need guidance and support Problems. to discover...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 16 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "measurement"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Find the sums below. a. 52 mL + 68 mL b. 352 mL + 68 mL c. 352 mL + 468 mL d. 56 cm + 94 cm e. 506 cm + 94 cm f. 506 cm + 394 cm g. 697 g + 138 g h. 345 g + 597 g i. 486 g + 497 g j. 3 L 251 mL + 1 L 549 mL k. 4 kg 384 g + 2 kg 467 g units twice. Lane makes sauerkraut. He weighs the amounts of cabbage and salt he uses. Draw and label a tape diagram to find the total weight of the cabbage and salt Lane uses. 907 g 93 g 3. Sue bakes mini-muffins for the school bake sale. After wrapping 86 muffins, she still has 58 muffins left cooling on the table. How many muffins did she bake altogether? 4. The milk carton to the right holds 183 milliliters more liquid than the juice box. What is the total capacity of the juice Juice Box box and milk carton? Milk Carton 279 mL? mL units twice.",
+      studentPrompt: "Use the official Module 2 Lesson 16 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 16 Problem Set.",
       visualModel: "measurement"
     },
@@ -63,7 +63,7 @@ export const M2_LESSON16_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (5 minutes) NOTES ON Students should do their personal best to complete page 2 of MULTIPLE MEANS the Problem Set within the allotted 5 minutes. For some OF ACTION AND classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems EXPRESSION: do not specify a method for solving. Students should solve Help students prepare for successful these problems using the RDW approach used for Application participation in the Student Debrief. Some may need guidance and support Problems. to discover...",
+      studentPrompt: "Use the official Lesson 16 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 196-206.",
       visualModel: "measurement"
     },
@@ -79,7 +79,7 @@ export const M2_LESSON16_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Part-Whole with Measurement Units 3.MD.2 (3 minutes) Round Three- and Four-Digit Numbers 3.NBT.1 (5 minutes) Group Counting 3.OA.1 (4 minutes) Part-Whole with Measurement Units (3 minutes) Materials: (S) Personal white board Note: This activity reviews part-whole thinking using measurement units. T: There are 100 centimeters in 1 meter. How many centimeters are in 4 meters? S: 400 centimeters. T: 5 meters? S: 500 centimeters. T: 7 meters? S: 700 centimeters. T: (Write 30 minutes + ____ minutes = 1 hour.) There are 60 minutes...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 16 objective: Add measurements using the standard algorithm to compose larger units twice.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 196-206.",
       visualModel: "measurement"
     }
@@ -116,7 +116,7 @@ export const M2_LESSON16_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (5 minutes) NOTES ON Students should do their personal best to complete page 2 of MULTIPLE MEANS the Problem Set within the allotted 5 minutes. For some OF ACTION AND classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems EXPRESSION: do not specify a method for solving. Students should solve Help students prepare for successful these problems using the RDW approach used for Application participation in the Student Debrief. Some may need guidance and support Problems. to discover..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 16 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -134,7 +134,7 @@ export const M2_LESSON16_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Find the sums below. a. 52 mL + 68 mL b. 352 mL + 68 mL c. 352 mL + 468 mL d. 56 cm + 94 cm e. 506 cm + 94 cm f. 506 cm + 394 cm g. 697 g + 138 g h. 345 g + 597 g i. 486 g + 497 g j. 3 L 251 mL + 1 L 549 mL k. 4 kg 384 g + 2 kg 467 g units twice. Lane makes sauerkraut. He weighs the amounts of cabbage and salt he uses. Draw and label a tape diagram to find the total weight of the cabbage and salt Lane uses. 907 g 93 g 3. Sue bakes mini-muffins for the school bake sale. After wrapping 86 muffins, she still has 58 muffins left cooling on the table. How many muffins did she bake altogether? 4. The milk carton to the right holds 183 milliliters more liquid than the juice box. What is the total capacity of the juice Juice Box box and milk carton? Milk Carton 279 mL? mL units twice."
+        value: "Use the official Module 2 Lesson 16 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -148,7 +148,7 @@ export const M2_LESSON16_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (5 minutes) NOTES ON Students should do their personal best to complete page 2 of MULTIPLE MEANS the Problem Set within the allotted 5 minutes. For some OF ACTION AND classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems EXPRESSION: do not specify a method for solving. Students should solve Help students prepare for successful these problems using the RDW approach used for Application participation in the Student Debrief. Some may need guidance and support Problems. to discover..."
+        value: "Use the official Lesson 16 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -176,7 +176,7 @@ export const M2_LESSON16_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Part-Whole with Measurement Units 3.MD.2 (3 minutes) Round Three- and Four-Digit Numbers 3.NBT.1 (5 minutes) Group Counting 3.OA.1 (4 minutes) Part-Whole with Measurement Units (3 minutes) Materials: (S) Personal white board Note: This activity reviews part-whole thinking using measurement units. T: There are 100 centimeters in 1 meter. How many centimeters are in 4 meters? S: 400 centimeters. T: 5 meters? S: 500 centimeters. T: 7 meters? S: 700 centimeters. T: (Write 30 minutes + ____ minutes = 1 hour.) There are 60 minutes..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 16 objective: Add measurements using the standard algorithm to compose larger units twice."
       },
       {
         label: "Workbook",

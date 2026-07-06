@@ -7,10 +7,10 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 13 animation: Explore perimeter as an attribute of plane figures and...",
-    context: "T: (Project the shape to the right.) How can you use the information in this picture to find the perimeter of the shape?",
+    title: "Lesson 13 animation: Explore perimeter as an attribute of plane figures and solve problems.",
+    context: "Use the Teacher Edition Lesson 13 perimeter workspace with the source side lengths, labels, units, and boundary reasoning to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "Tell a partner the names of the shapes in Problem 1. Be as specific as possible. What information helped you name each shape?",
+    teacherPrompt: "Use the source Lesson 13 perimeter workspace with the source side lengths, labels, units, and boundary reasoning; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "attribute",
       "perimeter",
@@ -38,7 +38,7 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: (Project the shape to the right.) How can you use the information in this picture to find the perimeter of the shape? Talk to a partner. S: I can just add the side lengths! -> Side lengths are given, so I 4 in 4 in can add them to find the perimeter. T: Write and solve an equation that shows the perimeter as the sum of the given side lengths.",
+      studentPrompt: "Use the Teacher Edition Lesson 13 perimeter workspace with the source side lengths, labels, units, and boundary reasoning to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 170-183. Lesson 13 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -46,24 +46,24 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Tell a partner the names of the shapes in Problem 1. Be as specific as possible. What information helped you name each shape?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 13 work using the official Module 7 perimeter workspace with the source side lengths, labels, units, and boundary reasoning from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 13 work using the official Module 7 perimeter workspace with the source side lengths, labels, units, and boundary reasoning from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Find the perimeter of the following shapes. 8 in 4 cm a. b. 4 cm 4 cm 3 in 3 in 4 cm 8 in P = 3 in + 8 in + 3 in + 8 in P = ____ cm + ____ cm + ____ cm + ____ cm = ____ in = ____ cm c. d. 5m 11 cm 6 cm 9m 7m 15 m 9 cm P = ____ m + ____ m + ____ m + ____ m P = ____ cm + ____ cm + ____ cm = ____ m = ____ cm 9 in e. 2 in 3 in P = ____ in + ____ in + ____ in + ____ in + ____ in 2 in = ____ in 9 in Problem 2: Alan's rectangular swimming pool is 10 meters long and 16 meters wide. What is the perimeter? 16 m 10 m 10 m 16 m Problem 3: Lila measures each side of the shape below. 3 in 2 in 6 in 4 in 9 in a. What is the perimeter of the shape? b. Lila says the shape is a pentagon. Is she correct? Explain why or why not.",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 13 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 13 Problem Set prompts in order. Blank mode preserves the student-facing perimeter workspace with the source side lengths, labels, units, and boundary reasoning; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 13 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 170-183.",
+      studentPrompt: "Use the source-backed Lesson 13 workspace and perimeter workspace with the source side lengths, labels, units, and boundary reasoning to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 13; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -78,8 +78,8 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (16 minutes) Multiply by 8 3.OA.7 (8 minutes) Equivalent Counting with Units of 4 3.OA.7 (4 minutes) Find the Perimeter 3.MD.8 (4 minutes) Multiply by 8 (8 minutes) Materials: (S) Multiply by 8 (1-5) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 8. It works toward students knowing from memory all the products of two one-digit numbers. See Lesson 1 for the directions for administration of a Multiply-By Pattern Sheet. T: (Write 5 x 8 = ____.) Let's skip-count up by eights to find the answer. (Rai...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 170-183.",
+      studentPrompt: "Debrief focus: connect the Problem Set perimeter workspace with the source side lengths, labels, units, and boundary reasoning to the Lesson 13 objective: Explore perimeter as an attribute of plane figures and solve problems.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 13; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -105,7 +105,7 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: (Project the shape to the right.) How can you use the information in this picture to find the perimeter of the shape? Talk to a partner. S: I can just add the side lengths! -> Side lengths are given, so I 4 in 4 in can add them to find the perimeter. T: Write and solve an equation that shows the perimeter as the sum of the given side lengths."
+        value: "Use the Teacher Edition Lesson 13 perimeter workspace with the source side lengths, labels, units, and boundary reasoning to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -115,11 +115,11 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set source focus: students complete the Lesson 13 work using the official Module 7 perimeter workspace with the source side lengths, labels, units, and boundary reasoning from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "Tell a partner the names of the shapes in Problem 1. Be as specific as possible. What information helped you name each shape?"
+        value: "Teacher Edition check: preserve the Lesson 13 perimeter workspace with the source side lengths, labels, units, and boundary reasoning."
       },
       {
         label: "Workbook",
@@ -129,11 +129,11 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 13 Problem Set."
+        value: "Module 7 student workbook, Lesson 13 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Find the perimeter of the following shapes. 8 in 4 cm a. b. 4 cm 4 cm 3 in 3 in 4 cm 8 in P = 3 in + 8 in + 3 in + 8 in P = ____ cm + ____ cm + ____ cm + ____ cm = ____ in = ____ cm c. d. 5m 11 cm 6 cm 9m 7m 15 m 9 cm P = ____ m + ____ m + ____ m + ____ m P = ____ cm + ____ cm + ____ cm = ____ m = ____ cm 9 in e. 2 in 3 in P = ____ in + ____ in + ____ in + ____ in + ____ in 2 in = ____ in 9 in Problem 2: Alan's rectangular swimming pool is 10 meters long and 16 meters wide. What is the perimeter? 16 m 10 m 10 m 16 m Problem 3: Lila measures each side of the shape below. 3 in 2 in 6 in 4 in 9 in a. What is the perimeter of the shape? b. Lila says the shape is a pentagon. Is she correct? Explain why or why not."
+        value: "Use the official Module 7 Lesson 13 Problem Set prompts in order. Blank mode preserves the student-facing perimeter workspace with the source side lengths, labels, units, and boundary reasoning; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -143,11 +143,11 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 170-183."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 13; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the source-backed Lesson 13 workspace and perimeter workspace with the source side lengths, labels, units, and boundary reasoning to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -171,11 +171,11 @@ export const M7_LESSON13_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 170-183."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 13; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (16 minutes) Multiply by 8 3.OA.7 (8 minutes) Equivalent Counting with Units of 4 3.OA.7 (4 minutes) Find the Perimeter 3.MD.8 (4 minutes) Multiply by 8 (8 minutes) Materials: (S) Multiply by 8 (1-5) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 8. It works toward students knowing from memory all the products of two one-digit numbers. See Lesson 1 for the directions for administration of a Multiply-By Pattern Sheet. T: (Write 5 x 8 = ____.) Let's skip-count up by eights to find the answer. (Rai..."
+        value: "Debrief focus: connect the Problem Set perimeter workspace with the source side lengths, labels, units, and boundary reasoning to the Lesson 13 objective: Explore perimeter as an attribute of plane figures and solve problems."
       },
       {
         label: "Workbook",

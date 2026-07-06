@@ -8,10 +8,10 @@ export const M4_LESSON3_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "area-model",
-    title: "Lesson 3 animation: Model tiling with centimeter and inch unit squares as a...",
-    context: "Jace uses paper squares to create a rectangle.",
+    title: "Lesson 3 animation: Model tiling with centimeter and inch unit squares as a strategy to measure area.",
+    context: "Use the Teacher Edition Lesson 3 area model to connect the official figure, side lengths, unit squares, and area equation.",
     equation: "10 rows x 4 columns = 40 square units",
-    teacherPrompt: "How are the rectangles in Problems 1(b) and 1(c) the same? How are they different?",
+    teacherPrompt: "How does the official area model show model tiling with centimeter and inch unit squares as a strategy to measure area.?",
     focus: [
       "area",
       "square unit",
@@ -38,7 +38,7 @@ export const M4_LESSON3_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Jace uses paper squares to create a rectangle. Clary cuts all of Jace's squares in half to create triangles. She uses all the triangles to make a rectangle. There are 16 triangles in Clary's rectangle. How many squares were in Jace's shape? The following are possible student solutions: Dividing",
+      studentPrompt: "Use the Teacher Edition Lesson 3 area model to connect the official figure, side lengths, unit squares, and area equation.",
       teacherEditionBasis: "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf, pages 32-43. Lesson 3 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "area-model"
     },
@@ -47,14 +47,14 @@ export const M4_LESSON3_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "How are the rectangles in Problems 1(b) and 1(c) the same? How are they different?",
-      teacherEditionBasis: "Problem Set (10 minutes) Inch and centimeter grid paper are required for some of these problems. Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 3 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition.",
       visualModel: "area-model"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Each is 1 square unit. What is the area of each of the following rectangles? A: square units A B B: ____ C: ____ C D D: ____ Problem 2: Each is 1 square unit. What is the area of each of the following rectangles? a. b. ____ ____ c. d. ____ ____ measure area. a. How would the rectangles in Problem 1 be different if they were composed of square inches? b. Select one rectangle from Problem 1 and recreate it on square inch and square centimeter grid paper. 4. Use a separate piece of square centimeter grid paper. Draw four different rectangles that each has an area of 8 square centimeters. measure area.",
+      studentPrompt: "Use the official Module 4 Lesson 3 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 4 student workbook, Lesson 3 Problem Set.",
       visualModel: "area-model"
     },
@@ -62,7 +62,7 @@ export const M4_LESSON3_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Inch and centimeter grid paper are required for some of these problems. Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 3 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 32-43.",
       visualModel: "area-model"
     },
@@ -78,7 +78,7 @@ export const M4_LESSON3_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (13 minutes) Find the Common Products 3.OA.7 (7 minutes) Count the Square Units 3.MD.6 (6 minutes) Find the Common Products (7 minutes) Materials: (S) Blank paper Note: This fluency activity reviews multiplication patterns from Module 3. T: Fold your paper in half vertically. Unfold your paper. On the left half, count by threes to 30 down the side of your paper. On the right half, count by sixes to 60 down the side of your paper. Draw a line to match the products that appear in both columns. S: (Match 6, 12, 18, 24, and 30.) T: (Write x 3...",
+      studentPrompt: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 3 objective: Model tiling with centimeter and inch unit squares as a strategy to measure area.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 32-43.",
       visualModel: "area-model"
     }
@@ -105,7 +105,7 @@ export const M4_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Jace uses paper squares to create a rectangle. Clary cuts all of Jace's squares in half to create triangles. She uses all the triangles to make a rectangle. There are 16 triangles in Clary's rectangle. How many squares were in Jace's shape? The following are possible student solutions: Dividing"
+        value: "Use the Teacher Edition Lesson 3 area model to connect the official figure, side lengths, unit squares, and area equation."
       },
       {
         label: "Workbook",
@@ -115,7 +115,7 @@ export const M4_LESSON3_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Inch and centimeter grid paper are required for some of these problems. Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 3 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -133,7 +133,7 @@ export const M4_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Each is 1 square unit. What is the area of each of the following rectangles? A: square units A B B: ____ C: ____ C D D: ____ Problem 2: Each is 1 square unit. What is the area of each of the following rectangles? a. b. ____ ____ c. d. ____ ____ measure area. a. How would the rectangles in Problem 1 be different if they were composed of square inches? b. Select one rectangle from Problem 1 and recreate it on square inch and square centimeter grid paper. 4. Use a separate piece of square centimeter grid paper. Draw four different rectangles that each has an area of 8 square centimeters. measure area."
+        value: "Use the official Module 4 Lesson 3 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -147,7 +147,7 @@ export const M4_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Inch and centimeter grid paper are required for some of these problems. Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 3 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -175,7 +175,7 @@ export const M4_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (13 minutes) Find the Common Products 3.OA.7 (7 minutes) Count the Square Units 3.MD.6 (6 minutes) Find the Common Products (7 minutes) Materials: (S) Blank paper Note: This fluency activity reviews multiplication patterns from Module 3. T: Fold your paper in half vertically. Unfold your paper. On the left half, count by threes to 30 down the side of your paper. On the right half, count by sixes to 60 down the side of your paper. Draw a line to match the products that appear in both columns. S: (Match 6, 12, 18, 24, and 30.) T: (Write x 3..."
+        value: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 3 objective: Model tiling with centimeter and inch unit squares as a strategy to measure area."
       },
       {
         label: "Workbook",

@@ -8,10 +8,10 @@ export const M4_LESSON13_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "area-model",
-    title: "Lesson 13 animation: Find areas by decomposing into rectangles or completing...",
-    context: "Add using the break apart strategy to find the area of a composite shape.",
+    title: "Lesson 13 animation: Find areas by decomposing into rectangles or completing composite figures to form rectangles.",
+    context: "Use the Teacher Edition Lesson 13 area model to connect the official figure, side lengths, unit squares, and area equation.",
     equation: "10 rows x 4 columns = 40 square units",
-    teacherPrompt: "How did you break apart the rectangles in Figure 4? Did anyone break apart the rectangles in a different way? (A rectangle of 10 by 2.) Lesson 13: Find...",
+    teacherPrompt: "How does the official area model show find areas by decomposing into rectangles or completing composite figures to form rectangles.?",
     focus: [
       "area",
       "square unit",
@@ -38,7 +38,7 @@ export const M4_LESSON13_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Add using the break apart strategy to find the area of a composite shape. Distribute one large grid to each student. Draw or project the shaded shape shown to the right. T: Draw and shade the shape on your grid. S: (Draw and shade.) T: How do you find the area of a rectangle? S: Multiply the side lengths! Lesson 13: Find areas by decomposing into rectangles or completing composite 161 figures to form rectangles.",
+      studentPrompt: "Use the Teacher Edition Lesson 13 area model to connect the official figure, side lengths, unit squares, and area equation.",
       teacherEditionBasis: "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf, pages 161-172. Lesson 13 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "area-model"
     },
@@ -47,14 +47,14 @@ export const M4_LESSON13_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "How did you break apart the rectangles in Figure 4? Did anyone break apart the rectangles in a different way? (A rectangle of 10 by 2.) Lesson 13: Find areas by decomposing into rectangles or completing composite 164 figures to form rectangles.",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 13 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition.",
       visualModel: "area-model"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Each of the following figures is made up of 2 rectangles. Find the total area of each figure. Figure 1 Figure 2 A C B D E Figure 4 Figure 3 F G H Figure 1: Area of A + Area of B: ____ sq units + ____ sq units = ____ sq units Figure 2: Area of C + Area of D: ____ sq units + ____ sq units = ____ sq units Figure 3: Area of E + Area of F: ____ sq units + ____ sq units = ____ sq units Figure 4: Area of G + Area of H: ____ sq units + ____ sq units = ____sq units figures to form rectangles. The figure shows a small rectangle cut out of a bigger rectangle. Find the area of the shaded figure. 9 cm Area of the shaded figure: ____ - ____ = ____ 10 cm Area of the shaded figure: ____ square centimeters 3 cm 4 cm 3. The figure shows a small rectangle cut out of a big rectangle. a. Label the unknown measurements. 4 cm ____ cm b. Area of the big rectangle: ____ cm ____ cm x ____ cm = ____ sq cm 7 cm c. Area of the small rectangle: 3 cm ____ cm x ____ cm = ____ sq cm 9 cm d. Find the area...",
+      studentPrompt: "Use the official Module 4 Lesson 13 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 4 student workbook, Lesson 13 Problem Set.",
       visualModel: "area-model"
     },
@@ -62,7 +62,7 @@ export const M4_LESSON13_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 13 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 161-172.",
       visualModel: "area-model"
     },
@@ -78,7 +78,7 @@ export const M4_LESSON13_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (4 minutes) Find the Common Products 3.OA.7 (8 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Instruct students to count forward and backward, occasionally changing the direction of the count. Threes to 30 Sixes to 60 Eights to 80 Nines to 90 Find the Common Products (8 minutes) Materials: (S) Blank paper Note: This fluency activity reviews multiplication patterns. After listing the products of 4 and 8, guide students through the...",
+      studentPrompt: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 13 objective: Find areas by decomposing into rectangles or completing composite figures to form rectangles.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 161-172.",
       visualModel: "area-model"
     }
@@ -105,7 +105,7 @@ export const M4_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Add using the break apart strategy to find the area of a composite shape. Distribute one large grid to each student. Draw or project the shaded shape shown to the right. T: Draw and shade the shape on your grid. S: (Draw and shade.) T: How do you find the area of a rectangle? S: Multiply the side lengths! Lesson 13: Find areas by decomposing into rectangles or completing composite 161 figures to form rectangles."
+        value: "Use the Teacher Edition Lesson 13 area model to connect the official figure, side lengths, unit squares, and area equation."
       },
       {
         label: "Workbook",
@@ -115,7 +115,7 @@ export const M4_LESSON13_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 13 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -133,7 +133,7 @@ export const M4_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Each of the following figures is made up of 2 rectangles. Find the total area of each figure. Figure 1 Figure 2 A C B D E Figure 4 Figure 3 F G H Figure 1: Area of A + Area of B: ____ sq units + ____ sq units = ____ sq units Figure 2: Area of C + Area of D: ____ sq units + ____ sq units = ____ sq units Figure 3: Area of E + Area of F: ____ sq units + ____ sq units = ____ sq units Figure 4: Area of G + Area of H: ____ sq units + ____ sq units = ____sq units figures to form rectangles. The figure shows a small rectangle cut out of a bigger rectangle. Find the area of the shaded figure. 9 cm Area of the shaded figure: ____ - ____ = ____ 10 cm Area of the shaded figure: ____ square centimeters 3 cm 4 cm 3. The figure shows a small rectangle cut out of a big rectangle. a. Label the unknown measurements. 4 cm ____ cm b. Area of the big rectangle: ____ cm ____ cm x ____ cm = ____ sq cm 7 cm c. Area of the small rectangle: 3 cm ____ cm x ____ cm = ____ sq cm 9 cm d. Find the area..."
+        value: "Use the official Module 4 Lesson 13 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -147,7 +147,7 @@ export const M4_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 13 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -175,7 +175,7 @@ export const M4_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (4 minutes) Find the Common Products 3.OA.7 (8 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Instruct students to count forward and backward, occasionally changing the direction of the count. Threes to 30 Sixes to 60 Eights to 80 Nines to 90 Find the Common Products (8 minutes) Materials: (S) Blank paper Note: This fluency activity reviews multiplication patterns. After listing the products of 4 and 8, guide students through the..."
+        value: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 13 objective: Find areas by decomposing into rectangles or completing composite figures to form rectangles."
       },
       {
         label: "Workbook",

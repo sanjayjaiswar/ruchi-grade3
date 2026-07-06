@@ -5,9 +5,9 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
   lessonAnimation: {
     kind: "geometry",
     title: "Lesson 33 animation: Solidify fluency with Grade 3 skills.",
-    context: "Use the teacher-edition lesson pages to teach: Solidify fluency with Grade 3 skills.",
+    context: "Use the Teacher Edition Lesson 33 critique, reflection, or fluency workspace with the official response structure to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "What is something you did today that you could not do before you came to the third grade?",
+    teacherPrompt: "Use the source Lesson 33 critique, reflection, or fluency workspace with the official response structure; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "geometry",
       "source labels"
@@ -33,7 +33,7 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Use the teacher-edition lesson pages to teach: Solidify fluency with Grade 3 skills.",
+      studentPrompt: "Use the Teacher Edition Lesson 33 critique, reflection, or fluency workspace with the official response structure to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 443-453. Lesson 33 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -41,24 +41,24 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "What is something you did today that you could not do before you came to the third grade?",
-      teacherEditionBasis: "Use the Teacher Edition lesson pages 443-453 for the exact teacher explanation and support sequence.",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 33 work using the official Module 7 critique, reflection, or fluency workspace with the official response structure from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 33 work using the official Module 7 critique, reflection, or fluency workspace with the official response structure from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: List some games we played today in the chart below. Place a check mark in the box that shows how you felt about your level of fluency as you played each activity. Check off the last column if you would like to practice this activity over the summer. I would like to put this I still need some practice Activity I am fluent. in my summer activity with my facts. book. 1. 2. 3. 4. 5. 6. 7. 8.",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 33 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 33 Problem Set prompts in order. Blank mode preserves the student-facing critique, reflection, or fluency workspace with the official response structure; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 33 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Use the Teacher Edition lesson pages 443-453 for the exact teacher explanation and support sequence.",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 443-453.",
+      studentPrompt: "Use the source-backed Lesson 33 workspace and critique, reflection, or fluency workspace with the official response structure to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 33; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -73,8 +73,8 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (50 minutes) Sprint: Mixed Division 3.OA.7 (10 minutes) Multiply 3.OA.7 (3 minutes) Mixed Review Games (37 minutes) Sprint: Mixed Division (10 minutes) Materials: (S) Mixed Division Sprint Note: This Sprint focuses on student mastery of all quotients within 100. Multiply (3 minutes) Materials: (S) Personal white board Note: This activity focuses on student mastery of all products of two one-digit numbers. T: (Write 4 x 2 = ___.) Say the multiplication sentence. S: 4 x 2 = 8. Continue with the following possible sequence: 3 x 4, NOTES ON...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 443-453.",
+      studentPrompt: "Debrief focus: connect the Problem Set critique, reflection, or fluency workspace with the official response structure to the Lesson 33 objective: Solidify fluency with Grade 3 skills.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 33; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -100,7 +100,7 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Use the teacher-edition lesson pages to teach: Solidify fluency with Grade 3 skills."
+        value: "Use the Teacher Edition Lesson 33 critique, reflection, or fluency workspace with the official response structure to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -110,11 +110,11 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Use the Teacher Edition lesson pages 443-453 for the exact teacher explanation and support sequence."
+        value: "Problem Set source focus: students complete the Lesson 33 work using the official Module 7 critique, reflection, or fluency workspace with the official response structure from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "What is something you did today that you could not do before you came to the third grade?"
+        value: "Teacher Edition check: preserve the Lesson 33 critique, reflection, or fluency workspace with the official response structure."
       },
       {
         label: "Workbook",
@@ -124,11 +124,11 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 33 Problem Set."
+        value: "Module 7 student workbook, Lesson 33 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: List some games we played today in the chart below. Place a check mark in the box that shows how you felt about your level of fluency as you played each activity. Check off the last column if you would like to practice this activity over the summer. I would like to put this I still need some practice Activity I am fluent. in my summer activity with my facts. book. 1. 2. 3. 4. 5. 6. 7. 8."
+        value: "Use the official Module 7 Lesson 33 Problem Set prompts in order. Blank mode preserves the student-facing critique, reflection, or fluency workspace with the official response structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -138,11 +138,11 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 443-453."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 33; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Use the Teacher Edition lesson pages 443-453 for the exact teacher explanation and support sequence."
+        value: "Use the source-backed Lesson 33 workspace and critique, reflection, or fluency workspace with the official response structure to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -166,11 +166,11 @@ export const M7_LESSON33_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 443-453."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 33; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (50 minutes) Sprint: Mixed Division 3.OA.7 (10 minutes) Multiply 3.OA.7 (3 minutes) Mixed Review Games (37 minutes) Sprint: Mixed Division (10 minutes) Materials: (S) Mixed Division Sprint Note: This Sprint focuses on student mastery of all quotients within 100. Multiply (3 minutes) Materials: (S) Personal white board Note: This activity focuses on student mastery of all products of two one-digit numbers. T: (Write 4 x 2 = ___.) Say the multiplication sentence. S: 4 x 2 = 8. Continue with the following possible sequence: 3 x 4, NOTES ON..."
+        value: "Debrief focus: connect the Problem Set critique, reflection, or fluency workspace with the official response structure to the Lesson 33 objective: Solidify fluency with Grade 3 skills."
       },
       {
         label: "Workbook",

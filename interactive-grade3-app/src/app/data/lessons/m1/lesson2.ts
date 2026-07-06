@@ -47,7 +47,7 @@ export const M1_LESSON2_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "In Problems 5 and 6, how do the arrays represent equal groups?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. Directions on this Problem Set include the words expression and equation. Remind students that while an answer is not required with an expression, it should be included with an eq...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 2 Problem Set using the lesson models from the Teacher Edition.",
       visualModel: "array"
     },
     {
@@ -62,7 +62,7 @@ export const M1_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. Directions on this Problem Set include the words expression and equation. Remind students that while an answer is not required with an expression, it should be included with an eq...",
+      studentPrompt: "Use the official Lesson 2 Problem Set workspace and source-backed visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 34-48.",
       visualModel: "array"
     },
@@ -78,7 +78,7 @@ export const M1_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Sprint: Add or Subtract Using 2 3.OA.1 (9 minutes) Group Counting 3.OA.1 (3 minutes) Add Equal Groups 3.OA.1 (3 minutes) Sprint: Add or Subtract Using 2 (9 minutes) Materials: (S) Add or Subtract Using 2 Sprint Note: This Sprint supports group counting skills that are foundational to interpreting multiplication as repeated addition. Directions for Administration of Sprints A Sprint has two parts, A and B, with closely related problems on each. Each part is organized into four quadrants that move from simple to complex. This...",
+      studentPrompt: "Debrief focus: connect the Problem Set models and answers to the Lesson 2 objective: Relate multiplication to the array model.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 34-48.",
       visualModel: "array"
     }
@@ -115,7 +115,7 @@ export const M1_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. Directions on this Problem Set include the words expression and equation. Remind students that while an answer is not required with an expression, it should be included with an eq..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 2 Problem Set using the lesson models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -147,7 +147,7 @@ export const M1_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. Directions on this Problem Set include the words expression and equation. Remind students that while an answer is not required with an expression, it should be included with an eq..."
+        value: "Use the official Lesson 2 Problem Set workspace and source-backed visuals to model and solve the student-facing problems."
       },
       {
         label: "Teacher Edition",
@@ -175,7 +175,7 @@ export const M1_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Sprint: Add or Subtract Using 2 3.OA.1 (9 minutes) Group Counting 3.OA.1 (3 minutes) Add Equal Groups 3.OA.1 (3 minutes) Sprint: Add or Subtract Using 2 (9 minutes) Materials: (S) Add or Subtract Using 2 Sprint Note: This Sprint supports group counting skills that are foundational to interpreting multiplication as repeated addition. Directions for Administration of Sprints A Sprint has two parts, A and B, with closely related problems on each. Each part is organized into four quadrants that move from simple to complex. This..."
+        value: "Debrief focus: connect the Problem Set models and answers to the Lesson 2 objective: Relate multiplication to the array model."
       },
       {
         label: "Teacher Edition",

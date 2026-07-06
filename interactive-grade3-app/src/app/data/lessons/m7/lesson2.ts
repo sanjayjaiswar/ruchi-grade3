@@ -7,10 +7,10 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 2 animation: Solve word problems in varied contexts using a letter t...",
-    context: "T: Today, we're going to work in groups to solve Problem 6.",
+    title: "Lesson 2 animation: Solve word problems in varied contexts using a letter to represent the unknown.",
+    context: "Use the Teacher Edition Lesson 2 RDW word-problem model with quantities, labels, units, and written answer evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "56 to 88 on equal intervals of 8",
-    teacherPrompt: "How are your models related to your equations in Problem 1?",
+    teacherPrompt: "Use the source Lesson 2 RDW word-problem model with quantities, labels, units, and written answer evidence; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "unknown",
       "unknown factor",
@@ -45,7 +45,7 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: Today, we're going to work in groups to solve Problem 6. Let's prepare our chart paper by folding it into three equal parts. (Model for students, and allow them time to fold.) With your group, read Problem 6 now. S: The total amount of rain that fell in New York City in two years was 282 centimeters. In the first year, 185 centimeters of rain fell.",
+      studentPrompt: "Use the Teacher Edition Lesson 2 RDW word-problem model with quantities, labels, units, and written answer evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 27-38. Lesson 2 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -53,24 +53,24 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "How are your models related to your equations in Problem 1?",
-      teacherEditionBasis: "Use the Teacher Edition lesson pages 27-38 for the exact teacher explanation and support sequence.",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 2 work using the official Module 7 RDW word-problem model with quantities, labels, units, and written answer evidence from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 2 work using the official Module 7 RDW word-problem model with quantities, labels, units, and written answer evidence from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Leanne needs 120 tiles for an art project. She has 56 tiles. If tiles are sold in boxes of 8, how many more boxes of tiles does Leanne need to buy? Problem 2: Gwen pours 236 milliliters of water into Ravi's beaker. Henry pours 189 milliliters of water into Ravi's beaker. Ravi's beaker now contains 800 milliliters of water. How much water was in Ravi's beaker to begin with? Problem 3: Maude hung 3 pictures on her wall. Each picture measures 8 inches by 10 inches. What is the total area of the wall covered by the pictures? unknown.",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 2 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 2 Problem Set prompts in order. Blank mode preserves the student-facing RDW word-problem model with quantities, labels, units, and written answer evidence; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 2 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Use the Teacher Edition lesson pages 27-38 for the exact teacher explanation and support sequence.",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 27-38.",
+      studentPrompt: "Use the source-backed Lesson 2 workspace and RDW word-problem model with quantities, labels, units, and written answer evidence to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 2; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -85,8 +85,8 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) the Exit Ticket, and Problems 1 and 5 Total Time (60 minutes) on the Homework are two-step word problems involving milliliters and grams. The masses and volumes are Fluency Practice (15 minutes) given in the same units in each problem. Standard 3.MD.2 specifically states that students \"solve one-step Name the Shape 2.G.1 (3 minutes) problems involving masses or volumes Multiply by 3 3.OA.7 (8 minutes) that are given in the same units.\" However, these problems look ahead Equivalent Counting with Units of 4 3.OA.7 (4 minutes) to 4.MD.2. Students working above grade level might en...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 27-38.",
+      studentPrompt: "Debrief focus: connect the Problem Set RDW word-problem model with quantities, labels, units, and written answer evidence to the Lesson 2 objective: Solve word problems in varied contexts using a letter to represent the unknown.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 2; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -112,7 +112,7 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: Today, we're going to work in groups to solve Problem 6. Let's prepare our chart paper by folding it into three equal parts. (Model for students, and allow them time to fold.) With your group, read Problem 6 now. S: The total amount of rain that fell in New York City in two years was 282 centimeters. In the first year, 185 centimeters of rain fell."
+        value: "Use the Teacher Edition Lesson 2 RDW word-problem model with quantities, labels, units, and written answer evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -122,11 +122,11 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Use the Teacher Edition lesson pages 27-38 for the exact teacher explanation and support sequence."
+        value: "Problem Set source focus: students complete the Lesson 2 work using the official Module 7 RDW word-problem model with quantities, labels, units, and written answer evidence from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "How are your models related to your equations in Problem 1?"
+        value: "Teacher Edition check: preserve the Lesson 2 RDW word-problem model with quantities, labels, units, and written answer evidence."
       },
       {
         label: "Workbook",
@@ -136,11 +136,11 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 2 Problem Set."
+        value: "Module 7 student workbook, Lesson 2 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Leanne needs 120 tiles for an art project. She has 56 tiles. If tiles are sold in boxes of 8, how many more boxes of tiles does Leanne need to buy? Problem 2: Gwen pours 236 milliliters of water into Ravi's beaker. Henry pours 189 milliliters of water into Ravi's beaker. Ravi's beaker now contains 800 milliliters of water. How much water was in Ravi's beaker to begin with? Problem 3: Maude hung 3 pictures on her wall. Each picture measures 8 inches by 10 inches. What is the total area of the wall covered by the pictures? unknown."
+        value: "Use the official Module 7 Lesson 2 Problem Set prompts in order. Blank mode preserves the student-facing RDW word-problem model with quantities, labels, units, and written answer evidence; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -150,11 +150,11 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 27-38."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 2; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Use the Teacher Edition lesson pages 27-38 for the exact teacher explanation and support sequence."
+        value: "Use the source-backed Lesson 2 workspace and RDW word-problem model with quantities, labels, units, and written answer evidence to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -178,11 +178,11 @@ export const M7_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 27-38."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 2; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) the Exit Ticket, and Problems 1 and 5 Total Time (60 minutes) on the Homework are two-step word problems involving milliliters and grams. The masses and volumes are Fluency Practice (15 minutes) given in the same units in each problem. Standard 3.MD.2 specifically states that students \"solve one-step Name the Shape 2.G.1 (3 minutes) problems involving masses or volumes Multiply by 3 3.OA.7 (8 minutes) that are given in the same units.\" However, these problems look ahead Equivalent Counting with Units of 4 3.OA.7 (4 minutes) to 4.MD.2. Students working above grade level might en..."
+        value: "Debrief focus: connect the Problem Set RDW word-problem model with quantities, labels, units, and written answer evidence to the Lesson 2 objective: Solve word problems in varied contexts using a letter to represent the unknown."
       },
       {
         label: "Workbook",

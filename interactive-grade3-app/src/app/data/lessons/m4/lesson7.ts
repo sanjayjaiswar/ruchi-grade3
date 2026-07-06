@@ -9,9 +9,9 @@ export const M4_LESSON7_RUNTIME: LessonRuntimeConfig = {
   lessonAnimation: {
     kind: "area-model",
     title: "Lesson 7 animation: Interpret area models to form rectangular arrays.",
-    context: "Part 1: Explore the relationship between units and area.",
+    context: "Use the Teacher Edition Lesson 7 area model to connect the official figure, side lengths, unit squares, and area equation.",
     equation: "3 rows x 3 columns = 9 square units",
-    teacherPrompt: "One partner will use square inches, and the other will use square centimeters. Work together to decide how to arrange your tiles to make the same shape...",
+    teacherPrompt: "How does the official area model show interpret area models to form rectangular arrays.?",
     focus: [
       "array",
       "area",
@@ -38,7 +38,7 @@ export const M4_LESSON7_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Part 1: Explore the relationship between units and area. T: One partner will use square inches, and the other will use square centimeters. Work together to decide how to arrange your tiles to make the same shape rectangle. Then, create that rectangle with your pieces. S: (Decide on a rectangle and represent it using square inches and square centimeters.)",
+      studentPrompt: "Use the Teacher Edition Lesson 7 area model to connect the official figure, side lengths, unit squares, and area equation.",
       teacherEditionBasis: "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf, pages 80-91. Lesson 7 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "area-model"
     },
@@ -47,14 +47,14 @@ export const M4_LESSON7_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "One partner will use square inches, and the other will use square centimeters. Work together to decide how to arrange your tiles to make the same shape rectangle. Then, create that rectangle with your pieces",
-      teacherEditionBasis: "Problem Set (10 minutes) NOTES ON Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be MULTIPLE MEANS appropriate to modify the assignment by specifying which FOR ACTION AND problems they work on first. Some problems do not specify a EXPRESSION: method for solving. Students should solve these problems using Consider offering the following the RDW approach used for Application Problems. adaptations to the Problem Set: Prompt students to approach Rectangle E first. Offer practice...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 7 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition.",
       visualModel: "area-model"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use a straight edge to draw a grid of equal size squares within the rectangle. Find and label the side lengths. Then, multiply the side lengths to find the area. C A E D B F a. Area A: d. Area D: ____ units x ____ units = ____ square units ____ units x ____ units = ____ square units b. Area B: e. Area E: ____ units x ____ units = ____ square units ____ unit x ____ units = ____ square units c. Area C: f. Area F: ____ units x ____ units = ____ square units ____ units x ____ units = ____ square units The area of Benjamin's bedroom floor is shown on the grid to the right. Each represents 1 square foot. How many total square feet is Benjamin's floor? a. Label the side lengths. Benjamin's b. Use a straight edge to draw a grid of equal Bedroom Floor size squares within the rectangle. c. Find the total number of squares. 3. Mrs. Young's art class needs to create a mural that covers exactly 35 square feet. Mrs. Young marks the area for the mural as shown on the grid. Each represen...",
+      studentPrompt: "Use the official Module 4 Lesson 7 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 4 student workbook, Lesson 7 Problem Set.",
       visualModel: "area-model"
     },
@@ -62,7 +62,7 @@ export const M4_LESSON7_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) NOTES ON Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be MULTIPLE MEANS appropriate to modify the assignment by specifying which FOR ACTION AND problems they work on first. Some problems do not specify a EXPRESSION: method for solving. Students should solve these problems using Consider offering the following the RDW approach used for Application Problems. adaptations to the Problem Set: Prompt students to approach Rectangle E first. Offer practice...",
+      studentPrompt: "Use the official Lesson 7 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 80-91.",
       visualModel: "area-model"
     },
@@ -78,7 +78,7 @@ export const M4_LESSON7_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (4 minutes) Draw Rectangles 3.MD.5 (4 minutes) Draw Rectangular Arrays 3.MD.5 (4 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Instruct students to count forward and backward, occasionally changing the direction of the count. Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 Draw Rectangles (4 minutes) Materials: (S) Grid paper Note: This fluency activity reviews drawing a rectangle from a known area. Show student work that is...",
+      studentPrompt: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 7 objective: Interpret area models to form rectangular arrays.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 80-91.",
       visualModel: "area-model"
     }
@@ -105,7 +105,7 @@ export const M4_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Part 1: Explore the relationship between units and area. T: One partner will use square inches, and the other will use square centimeters. Work together to decide how to arrange your tiles to make the same shape rectangle. Then, create that rectangle with your pieces. S: (Decide on a rectangle and represent it using square inches and square centimeters.)"
+        value: "Use the Teacher Edition Lesson 7 area model to connect the official figure, side lengths, unit squares, and area equation."
       },
       {
         label: "Workbook",
@@ -115,7 +115,7 @@ export const M4_LESSON7_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) NOTES ON Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be MULTIPLE MEANS appropriate to modify the assignment by specifying which FOR ACTION AND problems they work on first. Some problems do not specify a EXPRESSION: method for solving. Students should solve these problems using Consider offering the following the RDW approach used for Application Problems. adaptations to the Problem Set: Prompt students to approach Rectangle E first. Offer practice..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 7 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -133,7 +133,7 @@ export const M4_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Use a straight edge to draw a grid of equal size squares within the rectangle. Find and label the side lengths. Then, multiply the side lengths to find the area. C A E D B F a. Area A: d. Area D: ____ units x ____ units = ____ square units ____ units x ____ units = ____ square units b. Area B: e. Area E: ____ units x ____ units = ____ square units ____ unit x ____ units = ____ square units c. Area C: f. Area F: ____ units x ____ units = ____ square units ____ units x ____ units = ____ square units The area of Benjamin's bedroom floor is shown on the grid to the right. Each represents 1 square foot. How many total square feet is Benjamin's floor? a. Label the side lengths. Benjamin's b. Use a straight edge to draw a grid of equal Bedroom Floor size squares within the rectangle. c. Find the total number of squares. 3. Mrs. Young's art class needs to create a mural that covers exactly 35 square feet. Mrs. Young marks the area for the mural as shown on the grid. Each represen..."
+        value: "Use the official Module 4 Lesson 7 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -147,7 +147,7 @@ export const M4_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) NOTES ON Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be MULTIPLE MEANS appropriate to modify the assignment by specifying which FOR ACTION AND problems they work on first. Some problems do not specify a EXPRESSION: method for solving. Students should solve these problems using Consider offering the following the RDW approach used for Application Problems. adaptations to the Problem Set: Prompt students to approach Rectangle E first. Offer practice..."
+        value: "Use the official Lesson 7 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -175,7 +175,7 @@ export const M4_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (4 minutes) Draw Rectangles 3.MD.5 (4 minutes) Draw Rectangular Arrays 3.MD.5 (4 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Instruct students to count forward and backward, occasionally changing the direction of the count. Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 Draw Rectangles (4 minutes) Materials: (S) Grid paper Note: This fluency activity reviews drawing a rectangle from a known area. Show student work that is..."
+        value: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 7 objective: Interpret area models to form rectangular arrays."
       },
       {
         label: "Workbook",

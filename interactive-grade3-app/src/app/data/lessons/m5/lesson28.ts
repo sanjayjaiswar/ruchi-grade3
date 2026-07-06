@@ -8,9 +8,9 @@ export const M5_LESSON28_RUNTIME: LessonRuntimeConfig = {
   lessonAnimation: {
     kind: "fraction-strip",
     title: "Lesson 28 animation: Compare fractions with the same numerator pictorially.",
-    context: "T: Look again at your models of LaTonya's hotdogs.",
+    context: "Use the Teacher Edition Lesson 28 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
     equation: "2/10; name the whole before naming the fraction",
-    teacherPrompt: "Look at your answers for Problems 7 and 8. Is 2 parts always equal to 2 parts? Why or why not?",
+    teacherPrompt: "How does the official fraction model show compare fractions with the same numerator pictorially.?",
     focus: [
       "fraction",
       "whole",
@@ -35,7 +35,7 @@ export const M5_LESSON28_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: Look again at your models of LaTonya's hotdogs. Let's change the problem slightly. What if LaTonya eats 2 pieces of each hotdog? Figure out what fraction of each hotdog she eats. 2 2 S: (Work.) She eats of the first one and of the second one. 3 6 T: Did LaTonya eat the same amount of the first hotdog and second hotdog? S: (Use models for help.) No. T: But she ate 2 pieces of each hotdog.",
+      studentPrompt: "Use the Teacher Edition Lesson 28 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf, pages 329-339. Lesson 28 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "fraction-strip"
     },
@@ -44,14 +44,14 @@ export const M5_LESSON28_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Look at your answers for Problems 7 and 8. Is 2 parts always equal to 2 parts? Why or why not?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 28 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition.",
       visualModel: "fraction-strip"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: 2 fifths 2 thirds Problem 2: 2 tenths 2 eighths 3 fourths Problem 3: 3 eighths",
+      studentPrompt: "Use the official Module 5 Lesson 28 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 5 student workbook, Lesson 28 Problem Set.",
       visualModel: "fraction-strip"
     },
@@ -59,7 +59,7 @@ export const M5_LESSON28_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 28 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 329-339.",
       visualModel: "fraction-strip"
     },
@@ -75,7 +75,7 @@ export const M5_LESSON28_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Sprint: Subtract by Eight 2.NBT.5 (8 minutes) Recognize Equal Fractions 3.NF.3b (4 minutes) Sprint: Subtract by Eight (8 minutes) Materials: (S) Subtract by Eight Sprint Note: This Sprint supports fluency with subtraction by 8. Recognize Equal Fractions (4 minutes) Materials: (S) Personal white board Note: This activity reviews the concepts of representing and naming equivalent fractions. T: (Project or draw a rectangle partitioned into 2 equal units with the first unit shaded.) Say the fraction that's shaded. S: 1 half. 1 T:...",
+      studentPrompt: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 28 objective: Compare fractions with the same numerator pictorially.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 329-339.",
       visualModel: "fraction-strip"
     }
@@ -102,7 +102,7 @@ export const M5_LESSON28_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: Look again at your models of LaTonya's hotdogs. Let's change the problem slightly. What if LaTonya eats 2 pieces of each hotdog? Figure out what fraction of each hotdog she eats. 2 2 S: (Work.) She eats of the first one and of the second one. 3 6 T: Did LaTonya eat the same amount of the first hotdog and second hotdog? S: (Use models for help.) No. T: But she ate 2 pieces of each hotdog."
+        value: "Use the Teacher Edition Lesson 28 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence."
       },
       {
         label: "Workbook",
@@ -112,7 +112,7 @@ export const M5_LESSON28_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 28 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -130,7 +130,7 @@ export const M5_LESSON28_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: 2 fifths 2 thirds Problem 2: 2 tenths 2 eighths 3 fourths Problem 3: 3 eighths"
+        value: "Use the official Module 5 Lesson 28 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -144,7 +144,7 @@ export const M5_LESSON28_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 28 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -172,7 +172,7 @@ export const M5_LESSON28_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Sprint: Subtract by Eight 2.NBT.5 (8 minutes) Recognize Equal Fractions 3.NF.3b (4 minutes) Sprint: Subtract by Eight (8 minutes) Materials: (S) Subtract by Eight Sprint Note: This Sprint supports fluency with subtraction by 8. Recognize Equal Fractions (4 minutes) Materials: (S) Personal white board Note: This activity reviews the concepts of representing and naming equivalent fractions. T: (Project or draw a rectangle partitioned into 2 equal units with the first unit shaded.) Say the fraction that's shaded. S: 1 half. 1 T:..."
+        value: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 28 objective: Compare fractions with the same numerator pictorially."
       },
       {
         label: "Workbook",

@@ -9,10 +9,10 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 27 animation: Use rectangles to draw a robot with specified perimeter...",
-    context: "Lesson 27: Use rectangles to draw a robot with specified perimeter 354 measurements, and reason about the different areas that may be produced",
+    title: "Lesson 27 animation: Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced.",
+    context: "Use the Teacher Edition Lesson 27 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "How was the student work you checked similar to the design you created? How was it different?",
+    teacherPrompt: "Use the source Lesson 27 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "area",
       "square unit",
@@ -40,7 +40,7 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Lesson 27: Use rectangles to draw a robot with specified perimeter 354 measurements, and reason about the different areas that may be produced",
+      studentPrompt: "Use the Teacher Edition Lesson 27 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 354-367. Lesson 27 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -48,24 +48,24 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "How was the student work you checked similar to the design you created? How was it different?",
-      teacherEditionBasis: "Problem Set (Template) (per pair), Problem Set Note: Students may analyze one another's work anonymously. If that is best for the class, be sure that work is labeled with a number or symbol rather than with student names. Sample Robot Part A: Robot Evaluation T: (Project a sample robot as shown to the right. Consider using blank paper to cover the environment to help students focus on the robot.) Here is a finished robot. Let's analyze the work. How can we check the measurements and perimeter calculations? S: We can use rulers to check the measurements...",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 27 work using the official Module 7 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 27 work using the official Module 7 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use the chart below to evaluate your friend's robot. Measure the width and length of each rectangle. Then, calculate the perimeter. Record that information in the chart below. If your measurements differ from those listed on the project, put a star by the letter of the rectangle. Required Rectangle Width and Length Student's Perimeter Perimeter A ____ cm by ____cm 14 cm B ____ cm by ____cm 14 cm C ____ cm by ____cm 18 cm D ____ cm by ____cm 18 cm E ____ cm by ____cm 28 cm F ____ cm by ____cm 16 cm G ____ cm by ____cm 8 cm H ____ cm by ____cm I ____ cm by ____cm measurements, and reason about the different areas that may be produced. Problem 2: Is the perimeter of the robot's body double that of the arm? Show calculations below. Problem 3: Is the perimeter of the robot's neck half the perimeter of the head? Show calculations below. measurements, and reason about the different areas that may be produced. Part B: I reviewed ____'s robot environment.",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 27 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 27 Problem Set prompts in order. Blank mode preserves the student-facing robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 27 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (Template) (per pair), Problem Set Note: Students may analyze one another's work anonymously. If that is best for the class, be sure that work is labeled with a number or symbol rather than with student names. Sample Robot Part A: Robot Evaluation T: (Project a sample robot as shown to the right. Consider using blank paper to cover the environment to help students focus on the robot.) Here is a finished robot. Let's analyze the work. How can we check the measurements and perimeter calculations? S: We can use rulers to check the measurements...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 354-367.",
+      studentPrompt: "Use the source-backed Lesson 27 workspace and robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 27; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -80,8 +80,8 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (14 minutes) NOTES ON Sprint: Multiply or Divide by 7 3.OA.7 (10 minutes) MULTIPLE MEANS Find the Area 3.MD.7 (4 minutes) OF ENGAGEMENT: One way to differentiate the Multiply Sprint: Multiply or Divide by 7 (10 minutes) or Divide by 7 Sprint for students working above grade level is to make Materials: (S) Multiply or Divide by 7 Sprint individualized performance goals. Students may enjoy recording and Note: This Sprint builds fluency with multiplication and division charting their completion time, seeking facts using units of seven. to imp...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 354-367.",
+      studentPrompt: "Debrief focus: connect the Problem Set robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to the Lesson 27 objective: Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 27; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -107,7 +107,7 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Lesson 27: Use rectangles to draw a robot with specified perimeter 354 measurements, and reason about the different areas that may be produced"
+        value: "Use the Teacher Edition Lesson 27 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -117,11 +117,11 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (Template) (per pair), Problem Set Note: Students may analyze one another's work anonymously. If that is best for the class, be sure that work is labeled with a number or symbol rather than with student names. Sample Robot Part A: Robot Evaluation T: (Project a sample robot as shown to the right. Consider using blank paper to cover the environment to help students focus on the robot.) Here is a finished robot. Let's analyze the work. How can we check the measurements and perimeter calculations? S: We can use rulers to check the measurements..."
+        value: "Problem Set source focus: students complete the Lesson 27 work using the official Module 7 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "How was the student work you checked similar to the design you created? How was it different?"
+        value: "Teacher Edition check: preserve the Lesson 27 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships."
       },
       {
         label: "Workbook",
@@ -131,11 +131,11 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 27 Problem Set."
+        value: "Module 7 student workbook, Lesson 27 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Use the chart below to evaluate your friend's robot. Measure the width and length of each rectangle. Then, calculate the perimeter. Record that information in the chart below. If your measurements differ from those listed on the project, put a star by the letter of the rectangle. Required Rectangle Width and Length Student's Perimeter Perimeter A ____ cm by ____cm 14 cm B ____ cm by ____cm 14 cm C ____ cm by ____cm 18 cm D ____ cm by ____cm 18 cm E ____ cm by ____cm 28 cm F ____ cm by ____cm 16 cm G ____ cm by ____cm 8 cm H ____ cm by ____cm I ____ cm by ____cm measurements, and reason about the different areas that may be produced. Problem 2: Is the perimeter of the robot's body double that of the arm? Show calculations below. Problem 3: Is the perimeter of the robot's neck half the perimeter of the head? Show calculations below. measurements, and reason about the different areas that may be produced. Part B: I reviewed ____'s robot environment."
+        value: "Use the official Module 7 Lesson 27 Problem Set prompts in order. Blank mode preserves the student-facing robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -145,11 +145,11 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 354-367."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 27; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem Set (Template) (per pair), Problem Set Note: Students may analyze one another's work anonymously. If that is best for the class, be sure that work is labeled with a number or symbol rather than with student names. Sample Robot Part A: Robot Evaluation T: (Project a sample robot as shown to the right. Consider using blank paper to cover the environment to help students focus on the robot.) Here is a finished robot. Let's analyze the work. How can we check the measurements and perimeter calculations? S: We can use rulers to check the measurements..."
+        value: "Use the source-backed Lesson 27 workspace and robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -173,11 +173,11 @@ export const M7_LESSON27_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 354-367."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 27; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (14 minutes) NOTES ON Sprint: Multiply or Divide by 7 3.OA.7 (10 minutes) MULTIPLE MEANS Find the Area 3.MD.7 (4 minutes) OF ENGAGEMENT: One way to differentiate the Multiply Sprint: Multiply or Divide by 7 (10 minutes) or Divide by 7 Sprint for students working above grade level is to make Materials: (S) Multiply or Divide by 7 Sprint individualized performance goals. Students may enjoy recording and Note: This Sprint builds fluency with multiplication and division charting their completion time, seeking facts using units of seven. to imp..."
+        value: "Debrief focus: connect the Problem Set robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to the Lesson 27 objective: Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced."
       },
       {
         label: "Workbook",

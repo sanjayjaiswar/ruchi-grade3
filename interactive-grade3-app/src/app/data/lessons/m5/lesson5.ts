@@ -7,10 +7,10 @@ export const M5_LESSON5_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "fraction-strip",
-    title: "Lesson 5 animation: Partition a whole into equal parts and define the equal...",
-    context: "T: (Project or draw a circle, as shown below.) Whisper to discuss definitions of these terms in their first language with the teacher or their peers",
+    title: "Lesson 5 animation: Partition a whole into equal parts and define the equal parts to identify the unit fraction numerically.",
+    context: "Use the Teacher Edition Lesson 5 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
     equation: "2/10; name the whole before naming the fraction",
-    teacherPrompt: "Are the numbers in Problem 1 unit fractions? How do you know?",
+    teacherPrompt: "How does the official fraction model show partition a whole into equal parts and define the equal parts to identify the unit fraction numerically.?",
     focus: [
       "unit fraction",
       "whole",
@@ -35,7 +35,7 @@ export const M5_LESSON5_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: (Project or draw a circle, as shown below.) Whisper to discuss definitions of these terms in their first language with the teacher or their peers",
+      studentPrompt: "Use the Teacher Edition Lesson 5 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf, pages 54-63. Lesson 5 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "fraction-strip"
     },
@@ -44,14 +44,14 @@ export const M5_LESSON5_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Are the numbers in Problem 1 unit fractions? How do you know?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. identify the unit fraction numerically. G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 5 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition.",
       visualModel: "fraction-strip"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Fill in the chart. Each image is one whole. Total Number Total Number of Equal Parts Unit Form Fraction Form of Equal Parts Shaded a. b. c. d. e. f. identify the unit fraction numerically. Andre's mom baked his 2 favorite cakes for his birthday party. The cakes were the exact same size. Andre cut his first cake into 8 pieces for him and his 7 friends. The picture below shows how he cut it. Did Andre cut the cake into eighths? Explain your answer. 3. Two of Andre's friends came late to his party. They decide they will all share the second cake. Show how Andre can slice the second cake so that he and his nine friends can each get an equal amount with none leftover. What fraction of the second cake will they each receive? 1 1 4. Andre thinks it's strange that of the cake would be less than of the cake since ten is bigger than eight. 10 8 To explain to Andre, draw 2 identical rectangles to represent the cakes. Show 1 tenth shaded on one and 1 eighth shaded on the other. Label...",
+      studentPrompt: "Use the official Module 5 Lesson 5 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 5 student workbook, Lesson 5 Problem Set.",
       visualModel: "fraction-strip"
     },
@@ -59,7 +59,7 @@ export const M5_LESSON5_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. identify the unit fraction numerically. G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+      studentPrompt: "Use the official Lesson 5 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 54-63.",
       visualModel: "fraction-strip"
     },
@@ -75,7 +75,7 @@ export const M5_LESSON5_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Count by Eight 3.OA.7 (5 minutes) Write the Fractional Unit 3.NF.1 (5 minutes) Partition Shapes 3.NF.1 (5 minutes) Count by Eight (5 minutes) Materials: (S) Personal white board Note: This activity supports fluency with multiplication using units of 8. 1. Students count by eight as high as they can for 90 seconds. 0, 8, 16, 24, 32, 40, 48, 56, etc. 2. Correct by reading the multiples. Students practice for an additional minute after correction. 3. Students count by eight once again. Quickly celebrate improvement. Write the F...",
+      studentPrompt: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 5 objective: Partition a whole into equal parts and define the equal parts to identify the unit fraction numerically.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 54-63.",
       visualModel: "fraction-strip"
     }
@@ -102,7 +102,7 @@ export const M5_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: (Project or draw a circle, as shown below.) Whisper to discuss definitions of these terms in their first language with the teacher or their peers"
+        value: "Use the Teacher Edition Lesson 5 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence."
       },
       {
         label: "Workbook",
@@ -112,7 +112,7 @@ export const M5_LESSON5_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. identify the unit fraction numerically. G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+        value: "Problem Set (10 minutes): Students complete the Lesson 5 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -130,7 +130,7 @@ export const M5_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Fill in the chart. Each image is one whole. Total Number Total Number of Equal Parts Unit Form Fraction Form of Equal Parts Shaded a. b. c. d. e. f. identify the unit fraction numerically. Andre's mom baked his 2 favorite cakes for his birthday party. The cakes were the exact same size. Andre cut his first cake into 8 pieces for him and his 7 friends. The picture below shows how he cut it. Did Andre cut the cake into eighths? Explain your answer. 3. Two of Andre's friends came late to his party. They decide they will all share the second cake. Show how Andre can slice the second cake so that he and his nine friends can each get an equal amount with none leftover. What fraction of the second cake will they each receive? 1 1 4. Andre thinks it's strange that of the cake would be less than of the cake since ten is bigger than eight. 10 8 To explain to Andre, draw 2 identical rectangles to represent the cakes. Show 1 tenth shaded on one and 1 eighth shaded on the other. Label..."
+        value: "Use the official Module 5 Lesson 5 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -144,7 +144,7 @@ export const M5_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. identify the unit fraction numerically. G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+        value: "Use the official Lesson 5 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -172,7 +172,7 @@ export const M5_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Count by Eight 3.OA.7 (5 minutes) Write the Fractional Unit 3.NF.1 (5 minutes) Partition Shapes 3.NF.1 (5 minutes) Count by Eight (5 minutes) Materials: (S) Personal white board Note: This activity supports fluency with multiplication using units of 8. 1. Students count by eight as high as they can for 90 seconds. 0, 8, 16, 24, 32, 40, 48, 56, etc. 2. Correct by reading the multiples. Students practice for an additional minute after correction. 3. Students count by eight once again. Quickly celebrate improvement. Write the F..."
+        value: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 5 objective: Partition a whole into equal parts and define the equal parts to identify the unit fraction numerically."
       },
       {
         label: "Workbook",

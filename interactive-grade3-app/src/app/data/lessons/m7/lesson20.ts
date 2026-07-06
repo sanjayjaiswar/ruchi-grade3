@@ -9,10 +9,10 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 20 animation: Construct rectangles with a given perimeter using unit...",
-    context: "Offer students the option of using a find length and width.",
+    title: "Lesson 20 animation: Construct rectangles with a given perimeter using unit squares and determine their areas.",
+    context: "Use the Teacher Edition Lesson 20 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "Share your answers to Problem 1 (c) and (d). Why are the areas of the rectangles different, even though the perimeters are the same?",
+    teacherPrompt: "Use the source Lesson 20 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "area",
       "square unit",
@@ -40,7 +40,7 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Offer students the option of using a find length and width. Now we need to use the 12-centimeter or 12-inch piece of string perimeter to find the length and width. or wire (rather than square tiles) to T: When we knew the area, we used pairs of factors to build rectangles with a perimeter of 12 help us find length and width. What strategy might we units in Problem 1 of the Problem Set.",
+      studentPrompt: "Use the Teacher Edition Lesson 20 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 269-281. Lesson 20 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -48,24 +48,24 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Share your answers to Problem 1 (c) and (d). Why are the areas of the rectangles different, even though the perimeters are the same?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. To prepare for Lesson 22, students should add their data from today's lesson to the sheet shown to the right. (A master copy is included at the end of this lesson.) Data will need...",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 20 work using the official Module 7 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 20 work using the official Module 7 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use your square unit tiles to build as many rectangles as you can with a perimeter of 12 units. a. Estimate to draw your rectangles below. Label the side lengths of each rectangle. b. Explain your strategy for finding rectangles with a perimeter of 12 units. c. Find the areas of all the rectangles in part (a) above. d. The perimeters of all the rectangles are the same. What do you notice about their areas? determine their areas. Problem 2: Use your square unit tiles to build as many rectangles as you can with a perimeter of 14 units. a. Estimate to draw your rectangles below. Label the side lengths of each rectangle. b. Find the areas of all the rectangles in part (a) above. c. Given a rectangle's perimeter, what other information do you need to know about the rectangle to find its area? determine their areas.",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 20 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 20 Problem Set prompts in order. Blank mode preserves the student-facing rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 20 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. To prepare for Lesson 22, students should add their data from today's lesson to the sheet shown to the right. (A master copy is included at the end of this lesson.) Data will need...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 269-281.",
+      studentPrompt: "Use the source-backed Lesson 20 workspace and rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 20; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -80,8 +80,8 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (10 minutes) Sprint: Multiply or Divide by 2 3.OA.7 (10 minutes) Sprint: Multiply or Divide by 2 (10 minutes) Materials: (S) Multiply or Divide by 2 Sprint Note: This Sprint builds fluency with multiplication and division facts using units of 2. Application Problem (7 minutes) Molly builds a rectangular playpen for her pet rabbit. The playpen has an area of 15 square yards. a. Estimate to draw and label as many possibilities as you can for the playpen. b. Find the perimeters of the rectangles in part (a). c. What other information do you nee...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 269-281.",
+      studentPrompt: "Debrief focus: connect the Problem Set rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to the Lesson 20 objective: Construct rectangles with a given perimeter using unit squares and determine their areas.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 20; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -107,7 +107,7 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Offer students the option of using a find length and width. Now we need to use the 12-centimeter or 12-inch piece of string perimeter to find the length and width. or wire (rather than square tiles) to T: When we knew the area, we used pairs of factors to build rectangles with a perimeter of 12 help us find length and width. What strategy might we units in Problem 1 of the Problem Set."
+        value: "Use the Teacher Edition Lesson 20 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -117,11 +117,11 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. To prepare for Lesson 22, students should add their data from today's lesson to the sheet shown to the right. (A master copy is included at the end of this lesson.) Data will need..."
+        value: "Problem Set source focus: students complete the Lesson 20 work using the official Module 7 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "Share your answers to Problem 1 (c) and (d). Why are the areas of the rectangles different, even though the perimeters are the same?"
+        value: "Teacher Edition check: preserve the Lesson 20 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence."
       },
       {
         label: "Workbook",
@@ -131,11 +131,11 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 20 Problem Set."
+        value: "Module 7 student workbook, Lesson 20 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Use your square unit tiles to build as many rectangles as you can with a perimeter of 12 units. a. Estimate to draw your rectangles below. Label the side lengths of each rectangle. b. Explain your strategy for finding rectangles with a perimeter of 12 units. c. Find the areas of all the rectangles in part (a) above. d. The perimeters of all the rectangles are the same. What do you notice about their areas? determine their areas. Problem 2: Use your square unit tiles to build as many rectangles as you can with a perimeter of 14 units. a. Estimate to draw your rectangles below. Label the side lengths of each rectangle. b. Find the areas of all the rectangles in part (a) above. c. Given a rectangle's perimeter, what other information do you need to know about the rectangle to find its area? determine their areas."
+        value: "Use the official Module 7 Lesson 20 Problem Set prompts in order. Blank mode preserves the student-facing rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -145,11 +145,11 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 269-281."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 20; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. To prepare for Lesson 22, students should add their data from today's lesson to the sheet shown to the right. (A master copy is included at the end of this lesson.) Data will need..."
+        value: "Use the source-backed Lesson 20 workspace and rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -173,11 +173,11 @@ export const M7_LESSON20_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 269-281."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 20; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (10 minutes) Sprint: Multiply or Divide by 2 3.OA.7 (10 minutes) Sprint: Multiply or Divide by 2 (10 minutes) Materials: (S) Multiply or Divide by 2 Sprint Note: This Sprint builds fluency with multiplication and division facts using units of 2. Application Problem (7 minutes) Molly builds a rectangular playpen for her pet rabbit. The playpen has an area of 15 square yards. a. Estimate to draw and label as many possibilities as you can for the playpen. b. Find the perimeters of the rectangles in part (a). c. What other information do you nee..."
+        value: "Debrief focus: connect the Problem Set rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to the Lesson 20 objective: Construct rectangles with a given perimeter using unit squares and determine their areas."
       },
       {
         label: "Workbook",

@@ -8,10 +8,10 @@ export const M2_LESSON5_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "clock",
-    title: "Lesson 5 animation: Solve word problems involving time intervals within 1 h...",
+    title: "Lesson 5 animation: Solve word problems involving time intervals within 1 h",
     context: "Part 1: Count forward and backward to add and subtract on the number line.",
     equation: "1 sec start -> 4 sec elapsed -> 4 sec end",
-    teacherPrompt: "Describe the process of drawing the number line for Problem 2. Explain how you labeled it. (Call on students who used different ways of thinking about a...",
+    teacherPrompt: "Describe the process of drawing the number line for Problem 2. Explain how you labeled it. (Call on students who used different ways of thinking about a.",
     focus: [
       "addend",
       "elapsed time",
@@ -48,14 +48,14 @@ export const M2_LESSON5_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Describe the process of drawing the number line for Problem 2. Explain how you labeled it. (Call on students who used different ways of thinking about and labeling parts and wholes to share.)",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Depending on your class, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 5 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "clock"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Cole read his book for 25 minutes yesterday and for 28 minutes today. How many minutes did Cole read altogether? Model the problem on the number line, and write an equation to solve. 0 10 20 30 40 50 60 Cole read for ____ minutes. Problem 2: Tessa spends 34 minutes washing her dog. It takes her 12 minutes to shampoo and rinse and the rest of the time to get the dog in the bathtub! How many minutes does Tessa spend getting her dog in the bathtub? Draw a number line to model the problem, and write an equation to solve. Problem 3: Tessa walks her dog for 47 minutes. Jeremiah walks his dog for 30 minutes. How many more minutes does Tessa walk her dog than Jeremiah? and subtracting on the number line. a. It takes Austin 4 minutes to take out the garbage, 12 minutes to wash the dishes, and 13 minutes to mop the kitchen floor. How long does it take Austin to do his chores? b. Austin's bus arrives at 7:55 a.m. If he starts his chores at 7:30 a.m., will he be done in time to meet...",
+      studentPrompt: "Use the official Module 2 Lesson 5 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 5 Problem Set.",
       visualModel: "clock"
     },
@@ -63,7 +63,7 @@ export const M2_LESSON5_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Depending on your class, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 5 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 61-74.",
       visualModel: "clock"
     },
@@ -79,7 +79,7 @@ export const M2_LESSON5_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (3 minutes) Tell Time on the Clock 3.MD.1 (3 minutes) Minute Counting 3.MD.1 (6 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by sevens, eights, and nines in this activity anticipates multiplication using those units in Module 3. Direct students to count forward and backward, occasionally changing the direction of the count, using the following suggested sequence: Sevens to 56, emphasizing the transition from 49 to 56 Eigh...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 5 objective: Solve word problems involving time intervals within 1 hour by adding and subtracting on the number line.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 61-74.",
       visualModel: "clock"
     }
@@ -116,7 +116,7 @@ export const M2_LESSON5_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Depending on your class, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 5 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -134,7 +134,7 @@ export const M2_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Cole read his book for 25 minutes yesterday and for 28 minutes today. How many minutes did Cole read altogether? Model the problem on the number line, and write an equation to solve. 0 10 20 30 40 50 60 Cole read for ____ minutes. Problem 2: Tessa spends 34 minutes washing her dog. It takes her 12 minutes to shampoo and rinse and the rest of the time to get the dog in the bathtub! How many minutes does Tessa spend getting her dog in the bathtub? Draw a number line to model the problem, and write an equation to solve. Problem 3: Tessa walks her dog for 47 minutes. Jeremiah walks his dog for 30 minutes. How many more minutes does Tessa walk her dog than Jeremiah? and subtracting on the number line. a. It takes Austin 4 minutes to take out the garbage, 12 minutes to wash the dishes, and 13 minutes to mop the kitchen floor. How long does it take Austin to do his chores? b. Austin's bus arrives at 7:55 a.m. If he starts his chores at 7:30 a.m., will he be done in time to meet..."
+        value: "Use the official Module 2 Lesson 5 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -148,7 +148,7 @@ export const M2_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Depending on your class, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 5 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -176,7 +176,7 @@ export const M2_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (3 minutes) Tell Time on the Clock 3.MD.1 (3 minutes) Minute Counting 3.MD.1 (6 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by sevens, eights, and nines in this activity anticipates multiplication using those units in Module 3. Direct students to count forward and backward, occasionally changing the direction of the count, using the following suggested sequence: Sevens to 56, emphasizing the transition from 49 to 56 Eigh..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 5 objective: Solve word problems involving time intervals within 1 hour by adding and subtracting on the number line."
       },
       {
         label: "Workbook",

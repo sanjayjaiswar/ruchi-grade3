@@ -29,7 +29,7 @@ export const M1_LESSON7_RUNTIME: LessonRuntimeConfig = {
       id: "source-goal",
       title: "Lesson 7: source objective",
       shortTitle: "Goal",
-      studentPrompt: "Demonstrate the commutativity of multiplication, and practice related facts by skip-counting objects in array models.",
+      studentPrompt: "Demonstrate the commutativity of multiplication, and practice related",
       teacherEditionBasis: "EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf, pages 97-108. Lesson 7 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "array"
     },
@@ -46,7 +46,7 @@ export const M1_LESSON7_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "How did rotating our boards help us see rows as columns and columns as rows?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. facts by skip-counting objects in array models.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 7 Problem Set using the lesson models from the Teacher Edition.",
       visualModel: "array"
     },
     {
@@ -61,7 +61,7 @@ export const M1_LESSON7_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. facts by skip-counting objects in array models.",
+      studentPrompt: "Use the official Lesson 7 Problem Set workspace and source-backed visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 97-108.",
       visualModel: "array"
     },
@@ -77,7 +77,7 @@ export const M1_LESSON7_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (13 minutes) Group Counting 3.OA.1 (3 minutes) Divide Equal Groups 3.OA.2 (5 minutes) Multiply with Twos 3.OA.7 (5 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by twos and threes in this activity anticipates work with those factors in Topic C. T: Let's count by twos. (Direct students to count forward and backward to 20, emphasizing the 8 to 10, 10 to 12, and 18 to 20 transitions.) T: Let's count by threes. (Direct students to count forward and backward to 30,...",
+      studentPrompt: "Debrief focus: connect the Problem Set models and answers to the Lesson 7 objective: Demonstrate the commutativity of multiplication, and practice related",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 97-108.",
       visualModel: "array"
     }
@@ -90,7 +90,7 @@ export const M1_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Demonstrate the commutativity of multiplication, and practice related facts by skip-counting objects in array models."
+        value: "Demonstrate the commutativity of multiplication, and practice related"
       },
       {
         label: "Teacher Edition",
@@ -114,7 +114,7 @@ export const M1_LESSON7_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. facts by skip-counting objects in array models."
+        value: "Problem Set (10 minutes): Students complete the Lesson 7 Problem Set using the lesson models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -146,7 +146,7 @@ export const M1_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. facts by skip-counting objects in array models."
+        value: "Use the official Lesson 7 Problem Set workspace and source-backed visuals to model and solve the student-facing problems."
       },
       {
         label: "Teacher Edition",
@@ -174,7 +174,7 @@ export const M1_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (13 minutes) Group Counting 3.OA.1 (3 minutes) Divide Equal Groups 3.OA.2 (5 minutes) Multiply with Twos 3.OA.7 (5 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by twos and threes in this activity anticipates work with those factors in Topic C. T: Let's count by twos. (Direct students to count forward and backward to 20, emphasizing the 8 to 10, 10 to 12, and 18 to 20 transitions.) T: Let's count by threes. (Direct students to count forward and backward to 30,..."
+        value: "Debrief focus: connect the Problem Set models and answers to the Lesson 7 objective: Demonstrate the commutativity of multiplication, and practice related"
       },
       {
         label: "Teacher Edition",

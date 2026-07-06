@@ -7,10 +7,10 @@ export const M6_LESSON5_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "graph",
-    title: "Lesson 5 animation: Create ruler with 1-inch, 1/2-inch, and 1/4-inch interv...",
-    context: "Use the teacher-edition lesson pages to teach: Create ruler with 1-inch, 1/2-inch, and 1/4-inch intervals, and generate measurement data.",
+    title: "Lesson 5 animation: Create rulers with 1-inch, 1/2-inch, and 1/4-inch intervals.",
+    context: "Use the Teacher Edition Lesson 5 ruler, inch intervals, and measurement table model to connect the official data context, labels, scale or interval, and answer evidence.",
     equation: "Read the scale, then compare or calculate from the graph data",
-    teacherPrompt: "Ask the student to explain what the model shows before accepting the final answer.",
+    teacherPrompt: "Use the official Lesson 5 ruler, inch intervals, and measurement table: read the source quantities, preserve the scale or interval, and justify each answer from the display.",
     focus: [
       "line plot",
       "scale",
@@ -47,7 +47,7 @@ export const M6_LESSON5_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Use the teacher-edition lesson pages to teach: Create ruler with 1-inch, 1/2-inch, and 1/4-inch intervals, and generate measurement data.",
+      studentPrompt: "Use the Teacher Edition Lesson 5 ruler, inch intervals, and measurement table model to connect the official data context, labels, scale or interval, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_6/g3_m6_teacher_edition_v1_3_0.pdf, pages 66-77. Lesson 5 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "graph"
     },
@@ -56,14 +56,14 @@ export const M6_LESSON5_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Ask the student to explain what the model shows before accepting the final answer.",
-      teacherEditionBasis: "Problem Set (10 minutes) OF ACTION AND EXPRESSION: Students should do their personal best to complete the Support English language learners as remainder of the Problem Set within the allotted 10 minutes. they write their responses on the For some classes, it may be appropriate to modify the Problem Set. Allow students to discuss assignment by specifying which problems they work on first. their thoughts in their language of Some problems do not specify a method for solving. Students choice before writing. Provide should solve these problems using the RDW...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 5 Problem Set using the official Module 6 ruler, inch intervals, and measurement table quantities, labels, units, scale, and comparison structures from the Teacher Edition.",
       visualModel: "graph"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use the ruler you made to measure different classmates' straws to the nearest inch, inch, and inch. 2 4 Record the measurements in the chart below. Draw a star next to measurements that are exact. Measured to the Measured to the Measured to the Straw Owner nearest inch nearest inch nearest inch My straw a. ____ 's straw is the shortest straw I measured. It measures ____ inch(es). b. ____ 's straw is the longest straw I measured. It measures ____ inches. c. Choose the straw from your chart that was most accurately measured with the -inch intervals on your ruler. How do you know the -inch intervals are the most accurate for measuring this straw? measurement data. Problem 2: Jenna marks a 5-inch paper strip into equal parts as shown below. a. Label the whole and half inches on the paper strip. b. Estimate to draw the -inch marks on the paper strip. Then, fill in the blanks below. 1 inch is equal to ____ half inches. 1 inch is equal to ____ quarter inches. 1 half inch is equa...",
+      studentPrompt: "Use the official Module 6 Lesson 5 Problem Set prompts in order. Blank mode preserves the student-facing ruler, inch intervals, and measurement table workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 6 student workbook, Lesson 5 Problem Set.",
       visualModel: "graph"
     },
@@ -71,7 +71,7 @@ export const M6_LESSON5_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) OF ACTION AND EXPRESSION: Students should do their personal best to complete the Support English language learners as remainder of the Problem Set within the allotted 10 minutes. they write their responses on the For some classes, it may be appropriate to modify the Problem Set. Allow students to discuss assignment by specifying which problems they work on first. their thoughts in their language of Some problems do not specify a method for solving. Students choice before writing. Provide should solve these problems using the RDW...",
+      studentPrompt: "Use the official Lesson 5 Problem Set workspace and source-backed ruler, inch intervals, and measurement table visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 6 Teacher Edition, lesson pages 66-77.",
       visualModel: "graph"
     },
@@ -87,7 +87,7 @@ export const M6_LESSON5_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (10 minutes) Group Counting 3.OA.1 (6 minutes) Factors of 12 3.MD.4 (4 minutes) Group Counting (6 minutes) Materials: (S) Personal white board Note: This group counting activity reviews units of 6 and the relationship between multiplication and division. T: Count by sixes to 60. (Write on the board as students count.) S: 6, 12, 18, 24, 30, 36, 42, 48, 54, 60. 6 12 18 24 30 36 42 48 54 60 1 six 2 sixes 3 sixes 4 sixes 5 sixes 6 sixes 7 sixes 8 sixes 9 sixes 10 sixes 6divided by6 12 divided by 6 18 divided by 6 24 divided by 6 30 divided by 6 36 divided by 6 42 divided by 6 48 divided by 6 54 divided by 6 60 divided by 6 T: (Bene...",
+      studentPrompt: "Debrief focus: connect the Problem Set ruler, inch intervals, and measurement table displays, scales, labels, comparisons, and answers to the Lesson 5 objective: Create ruler with 1-inch, 1/2-inch, and 1/4-inch intervals, and generate measurement data.",
       teacherEditionBasis: "Module 6 Teacher Edition, lesson pages 66-77.",
       visualModel: "graph"
     }
@@ -114,7 +114,7 @@ export const M6_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Use the teacher-edition lesson pages to teach: Create ruler with 1-inch, 1/2-inch, and 1/4-inch intervals, and generate measurement data."
+        value: "Use the Teacher Edition Lesson 5 ruler, inch intervals, and measurement table model to connect the official data context, labels, scale or interval, and answer evidence."
       },
       {
         label: "Workbook",
@@ -124,7 +124,7 @@ export const M6_LESSON5_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) OF ACTION AND EXPRESSION: Students should do their personal best to complete the Support English language learners as remainder of the Problem Set within the allotted 10 minutes. they write their responses on the For some classes, it may be appropriate to modify the Problem Set. Allow students to discuss assignment by specifying which problems they work on first. their thoughts in their language of Some problems do not specify a method for solving. Students choice before writing. Provide should solve these problems using the RDW..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 5 Problem Set using the official Module 6 ruler, inch intervals, and measurement table quantities, labels, units, scale, and comparison structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -142,7 +142,7 @@ export const M6_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Use the ruler you made to measure different classmates' straws to the nearest inch, inch, and inch. 2 4 Record the measurements in the chart below. Draw a star next to measurements that are exact. Measured to the Measured to the Measured to the Straw Owner nearest inch nearest inch nearest inch My straw a. ____ 's straw is the shortest straw I measured. It measures ____ inch(es). b. ____ 's straw is the longest straw I measured. It measures ____ inches. c. Choose the straw from your chart that was most accurately measured with the -inch intervals on your ruler. How do you know the -inch intervals are the most accurate for measuring this straw? measurement data. Problem 2: Jenna marks a 5-inch paper strip into equal parts as shown below. a. Label the whole and half inches on the paper strip. b. Estimate to draw the -inch marks on the paper strip. Then, fill in the blanks below. 1 inch is equal to ____ half inches. 1 inch is equal to ____ quarter inches. 1 half inch is equa..."
+        value: "Use the official Module 6 Lesson 5 Problem Set prompts in order. Blank mode preserves the student-facing ruler, inch intervals, and measurement table workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -156,7 +156,7 @@ export const M6_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) OF ACTION AND EXPRESSION: Students should do their personal best to complete the Support English language learners as remainder of the Problem Set within the allotted 10 minutes. they write their responses on the For some classes, it may be appropriate to modify the Problem Set. Allow students to discuss assignment by specifying which problems they work on first. their thoughts in their language of Some problems do not specify a method for solving. Students choice before writing. Provide should solve these problems using the RDW..."
+        value: "Use the official Lesson 5 Problem Set workspace and source-backed ruler, inch intervals, and measurement table visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -184,7 +184,7 @@ export const M6_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (10 minutes) Group Counting 3.OA.1 (6 minutes) Factors of 12 3.MD.4 (4 minutes) Group Counting (6 minutes) Materials: (S) Personal white board Note: This group counting activity reviews units of 6 and the relationship between multiplication and division. T: Count by sixes to 60. (Write on the board as students count.) S: 6, 12, 18, 24, 30, 36, 42, 48, 54, 60. 6 12 18 24 30 36 42 48 54 60 1 six 2 sixes 3 sixes 4 sixes 5 sixes 6 sixes 7 sixes 8 sixes 9 sixes 10 sixes 6divided by6 12 divided by 6 18 divided by 6 24 divided by 6 30 divided by 6 36 divided by 6 42 divided by 6 48 divided by 6 54 divided by 6 60 divided by 6 T: (Bene..."
+        value: "Debrief focus: connect the Problem Set ruler, inch intervals, and measurement table displays, scales, labels, comparisons, and answers to the Lesson 5 objective: Create ruler with 1-inch, 1/2-inch, and 1/4-inch intervals, and generate measurement data."
       },
       {
         label: "Workbook",

@@ -6,10 +6,10 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 9 animation: Reason about composing and decomposing polygons using t...",
-    context: "Problem 1 Use at least two tangram pieces to make and draw two of each of the following shapes.",
+    title: "Lesson 9 animation: Reason about composing and decomposing polygons using tangrams.",
+    context: "Use the Teacher Edition Lesson 9 polygon composition workspace with source pieces, joins, outlines, and labels to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "Which shape was the most challenging for you to make in Problem 1? Why?",
+    teacherPrompt: "Use the source Lesson 9 polygon composition workspace with source pieces, joins, outlines, and labels; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "gram",
       "geometry",
@@ -36,7 +36,7 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Problem 1 Use at least two tangram pieces to make and draw two of each of the following shapes. Draw lines to show where the tangram may be easier for some students to T: Use the square and the two small triangles to make a manipulate. Alternatively, tangram rectangle. (Allow students time to work.) Estimate to pieces (from Lesson 8) can be copied draw your rectangle in Problem 1(a).",
+      studentPrompt: "Use the Teacher Edition Lesson 9 polygon composition workspace with source pieces, joins, outlines, and labels to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 126-139. Lesson 9 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -44,24 +44,24 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Which shape was the most challenging for you to make in Problem 1? Why?",
-      teacherEditionBasis: "Use the Teacher Edition lesson pages 126-139 for the exact teacher explanation and support sequence.",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 9 work using the official Module 7 polygon composition workspace with source pieces, joins, outlines, and labels from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 9 work using the official Module 7 polygon composition workspace with source pieces, joins, outlines, and labels from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use at least two tangram pieces to make and draw two of each of the following shapes. Draw lines to show where the tangram pieces meet. a. A rectangle that does not have all equal sides. b. A triangle. c. A parallelogram. d. A trapezoid. Problem 2: Use your two smallest triangles to create a square, a parallelogram, and a triangle. Show how you created them below. Problem 3: Create your own shape on a separate sheet of paper using all seven pieces. Describe its attributes below.",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 9 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 9 Problem Set prompts in order. Blank mode preserves the student-facing polygon composition workspace with source pieces, joins, outlines, and labels; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 9 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Use the Teacher Edition lesson pages 126-139 for the exact teacher explanation and support sequence.",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 126-139.",
+      studentPrompt: "Use the source-backed Lesson 9 workspace and polygon composition workspace with source pieces, joins, outlines, and labels to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 9; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -76,8 +76,8 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Multiply by 6 3.OA.7 (8 minutes) Equivalent Counting with Units of 9 3.OA.7 (4 minutes) Multiply by 6 (8 minutes) Materials: (S) Multiply by 6 (6-10) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 6. It works toward students knowing from memory all products of two one-digit numbers. See Lesson 1 for the directions for administration of a Multiply-By Pattern Sheet. T: (Write 7 x 6 = ____.) Let's skip-count up by sixes. I'll raise a finger for each six. (Raise a finger for each number t...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 126-139.",
+      studentPrompt: "Debrief focus: connect the Problem Set polygon composition workspace with source pieces, joins, outlines, and labels to the Lesson 9 objective: Reason about composing and decomposing polygons using tangrams.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 9; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -103,7 +103,7 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1 Use at least two tangram pieces to make and draw two of each of the following shapes. Draw lines to show where the tangram may be easier for some students to T: Use the square and the two small triangles to make a manipulate. Alternatively, tangram rectangle. (Allow students time to work.) Estimate to pieces (from Lesson 8) can be copied draw your rectangle in Problem 1(a)."
+        value: "Use the Teacher Edition Lesson 9 polygon composition workspace with source pieces, joins, outlines, and labels to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -113,11 +113,11 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Use the Teacher Edition lesson pages 126-139 for the exact teacher explanation and support sequence."
+        value: "Problem Set source focus: students complete the Lesson 9 work using the official Module 7 polygon composition workspace with source pieces, joins, outlines, and labels from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "Which shape was the most challenging for you to make in Problem 1? Why?"
+        value: "Teacher Edition check: preserve the Lesson 9 polygon composition workspace with source pieces, joins, outlines, and labels."
       },
       {
         label: "Workbook",
@@ -127,11 +127,11 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 9 Problem Set."
+        value: "Module 7 student workbook, Lesson 9 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Use at least two tangram pieces to make and draw two of each of the following shapes. Draw lines to show where the tangram pieces meet. a. A rectangle that does not have all equal sides. b. A triangle. c. A parallelogram. d. A trapezoid. Problem 2: Use your two smallest triangles to create a square, a parallelogram, and a triangle. Show how you created them below. Problem 3: Create your own shape on a separate sheet of paper using all seven pieces. Describe its attributes below."
+        value: "Use the official Module 7 Lesson 9 Problem Set prompts in order. Blank mode preserves the student-facing polygon composition workspace with source pieces, joins, outlines, and labels; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -141,11 +141,11 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 126-139."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 9; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Use the Teacher Edition lesson pages 126-139 for the exact teacher explanation and support sequence."
+        value: "Use the source-backed Lesson 9 workspace and polygon composition workspace with source pieces, joins, outlines, and labels to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -169,11 +169,11 @@ export const M7_LESSON9_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 126-139."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 9; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Multiply by 6 3.OA.7 (8 minutes) Equivalent Counting with Units of 9 3.OA.7 (4 minutes) Multiply by 6 (8 minutes) Materials: (S) Multiply by 6 (6-10) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 6. It works toward students knowing from memory all products of two one-digit numbers. See Lesson 1 for the directions for administration of a Multiply-By Pattern Sheet. T: (Write 7 x 6 = ____.) Let's skip-count up by sixes. I'll raise a finger for each six. (Raise a finger for each number t..."
+        value: "Debrief focus: connect the Problem Set polygon composition workspace with source pieces, joins, outlines, and labels to the Lesson 9 objective: Reason about composing and decomposing polygons using tangrams."
       },
       {
         label: "Workbook",

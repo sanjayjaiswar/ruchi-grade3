@@ -4,10 +4,10 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 32 animation: Explore and create unconventional representations of on...",
-    context: "Distribute the Template to the students, and instruct them to cut out the circles.",
+    title: "Lesson 32 animation: Explore and create unconventional representations of one-half.",
+    context: "Use the Teacher Edition Lesson 32 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "Share answers to Problem 1(b). Were any of the circles that we made today exactly one-half shaded? How do you know?",
+    teacherPrompt: "Use the source Lesson 32 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "geometry",
       "source labels"
@@ -33,7 +33,7 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Distribute the Template to the students, and instruct them to cut out the circles. T: Let's represent one-half using our circles. They don't have a grid like",
+      studentPrompt: "Use the Teacher Edition Lesson 32 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 431-442. Lesson 32 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -41,24 +41,24 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Share answers to Problem 1(b). Were any of the circles that we made today exactly one-half shaded? How do you know?",
-      teacherEditionBasis: "Problem Set (analyzing tool) (S) Circles with dots (Template), ruler, crayons, scissors, Problem Set Distribute the Template to the students, and instruct them to cut out the circles. T: Let's represent one-half using our circles. They don't have a grid like MP.6 yesterday's squares did. Talk with your partner about what tools or strategies you might use to help you be precise as you show one-half. . S: We can fold the circle in half and use the fold line for help. -> Or we could use rulers. -> That little dot looks like it's in the middle. If we fold o...",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 32 work using the official Module 7 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 32 work using the official Module 7 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Look at the circles you shaded today. Glue a circle that is about one-half shaded in the space below. a. Explain the strategy you used to shade in one-half of your circle. b. Is your circle exactly one-half shaded? Explain your answer. Problem 2: Julian shades 4 circles as shown below. Circle A Circle B Circle C Circle D a. Write the letters of the circles that are about one-half shaded. b. Choose one circle from your answer to Part (a), and explain how you know it's about one-half shaded. Circle ____ c. Choose one circle that you did not list in Part (a), and explain how it could be changed so that it is about one-half shaded. Circle ____ Problem 3: Read the clues to help you shade the circle below. a. Divide the circle into 4 equal parts.. b. Shade in 2 parts. c. Erase a small circle from each shaded part. d. Estimate to draw and shade 2 circles in the unshaded parts that are the same size as the circles you erased in Part (c).",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 32 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 32 Problem Set prompts in order. Blank mode preserves the student-facing one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 32 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (analyzing tool) (S) Circles with dots (Template), ruler, crayons, scissors, Problem Set Distribute the Template to the students, and instruct them to cut out the circles. T: Let's represent one-half using our circles. They don't have a grid like MP.6 yesterday's squares did. Talk with your partner about what tools or strategies you might use to help you be precise as you show one-half. . S: We can fold the circle in half and use the fold line for help. -> Or we could use rulers. -> That little dot looks like it's in the middle. If we fold o...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 431-442.",
+      studentPrompt: "Use the source-backed Lesson 32 workspace and one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 32; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -73,8 +73,8 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (13 minutes) Sprint: Mixed Multiplication 3.OA.7 (10 minutes) Divide 3.OA.7 (3 minutes) Sprint: Mixed Multiplication (10 minutes) Materials: (S) Mixed Multiplication Sprint Note: This Sprint focuses on student mastery of all products of one-digit numbers. Divide (3 minutes) Materials: (S) Personal white board Note: This activity focuses on student mastery of all quotients within 100. T: (Write 10 divided by 2 = ____.) Say the division sentence. S: 10 divided by 2 = 5. Continue with the following possible sequence: 4 divided by 2, 8 divided by 4, and 15 divided by 3. T: (Write 24 divided by 4...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 431-442.",
+      studentPrompt: "Debrief focus: connect the Problem Set one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to the Lesson 32 objective: Explore and create unconventional representations of one-half.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 32; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -100,7 +100,7 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Distribute the Template to the students, and instruct them to cut out the circles. T: Let's represent one-half using our circles. They don't have a grid like"
+        value: "Use the Teacher Edition Lesson 32 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -110,11 +110,11 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (analyzing tool) (S) Circles with dots (Template), ruler, crayons, scissors, Problem Set Distribute the Template to the students, and instruct them to cut out the circles. T: Let's represent one-half using our circles. They don't have a grid like MP.6 yesterday's squares did. Talk with your partner about what tools or strategies you might use to help you be precise as you show one-half. . S: We can fold the circle in half and use the fold line for help. -> Or we could use rulers. -> That little dot looks like it's in the middle. If we fold o..."
+        value: "Problem Set source focus: students complete the Lesson 32 work using the official Module 7 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "Share answers to Problem 1(b). Were any of the circles that we made today exactly one-half shaded? How do you know?"
+        value: "Teacher Edition check: preserve the Lesson 32 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations."
       },
       {
         label: "Workbook",
@@ -124,11 +124,11 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 32 Problem Set."
+        value: "Module 7 student workbook, Lesson 32 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Look at the circles you shaded today. Glue a circle that is about one-half shaded in the space below. a. Explain the strategy you used to shade in one-half of your circle. b. Is your circle exactly one-half shaded? Explain your answer. Problem 2: Julian shades 4 circles as shown below. Circle A Circle B Circle C Circle D a. Write the letters of the circles that are about one-half shaded. b. Choose one circle from your answer to Part (a), and explain how you know it's about one-half shaded. Circle ____ c. Choose one circle that you did not list in Part (a), and explain how it could be changed so that it is about one-half shaded. Circle ____ Problem 3: Read the clues to help you shade the circle below. a. Divide the circle into 4 equal parts.. b. Shade in 2 parts. c. Erase a small circle from each shaded part. d. Estimate to draw and shade 2 circles in the unshaded parts that are the same size as the circles you erased in Part (c)."
+        value: "Use the official Module 7 Lesson 32 Problem Set prompts in order. Blank mode preserves the student-facing one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -138,11 +138,11 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 431-442."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 32; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem Set (analyzing tool) (S) Circles with dots (Template), ruler, crayons, scissors, Problem Set Distribute the Template to the students, and instruct them to cut out the circles. T: Let's represent one-half using our circles. They don't have a grid like MP.6 yesterday's squares did. Talk with your partner about what tools or strategies you might use to help you be precise as you show one-half. . S: We can fold the circle in half and use the fold line for help. -> Or we could use rulers. -> That little dot looks like it's in the middle. If we fold o..."
+        value: "Use the source-backed Lesson 32 workspace and one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -166,11 +166,11 @@ export const M7_LESSON32_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 431-442."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 32; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (13 minutes) Sprint: Mixed Multiplication 3.OA.7 (10 minutes) Divide 3.OA.7 (3 minutes) Sprint: Mixed Multiplication (10 minutes) Materials: (S) Mixed Multiplication Sprint Note: This Sprint focuses on student mastery of all products of one-digit numbers. Divide (3 minutes) Materials: (S) Personal white board Note: This activity focuses on student mastery of all quotients within 100. T: (Write 10 divided by 2 = ____.) Say the division sentence. S: 10 divided by 2 = 5. Continue with the following possible sequence: 4 divided by 2, 8 divided by 4, and 15 divided by 3. T: (Write 24 divided by 4..."
+        value: "Debrief focus: connect the Problem Set one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to the Lesson 32 objective: Explore and create unconventional representations of one-half."
       },
       {
         label: "Workbook",

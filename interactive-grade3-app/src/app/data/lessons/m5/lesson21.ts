@@ -9,10 +9,10 @@ export const M5_LESSON21_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 21 animation: Recognize and show that equivalent fractions refer to t...",
-    context: "T: Glue your fraction strip at the top of a new page in Ask the following: your math journal.",
+    title: "Lesson 21 animation: Recognize and show that equivalent fractions refer to the same point on the number line.",
+    context: "Use the Teacher Edition Lesson 21 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
     equation: "4 to 24 on equal intervals of 5",
-    teacherPrompt: "After students have checked their work for Problems 4 and 5, ask them to use the fraction strips in their math journals to see if they can 3 name anothe...",
+    teacherPrompt: "How does the official fraction model show recognize and show that equivalent fractions refer to the same point on the number line.?",
     focus: [
       "equivalent fractions",
       "fraction",
@@ -47,7 +47,7 @@ export const M5_LESSON21_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: Glue your fraction strip at the top of a new page in Ask the following: your math journal. How are these equivalent fractions S: (Glue fraction strip.) related? T: Fold another fraction strip to make fourths. Label each What particular property do they part with a unit fraction. Then, glue your fraction strip have in common? directly below the first one in your math journal.",
+      studentPrompt: "Use the Teacher Edition Lesson 21 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf, pages 245-254. Lesson 21 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "number-line"
     },
@@ -56,14 +56,14 @@ export const M5_LESSON21_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "After students have checked their work for Problems 4 and 5, ask them to use the fraction strips in their math journals to see if they can 3 name another equivalent fraction.",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 21 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition.",
       visualModel: "number-line"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use the fractional units on the left to count up on the number line. Label the missing fractions on the blanks. 1 2 4 2 2 2 halves 0 1 2 0 3 5 7 fourths 4 4 4 4 halves 0 1 2 sixths 6 Problem 2: Use the number lines above to: Color fractions equal to 1 half blue. Color fractions equal to 1 yellow. Color fractions equal to 3 halves green. Color fractions equal to 2 red. Problem 3: Use the number lines above to make the number sentences true. 2 6 2 3 6 = = = = = 4 6 6 2 6 on the number line. Jack and Jill use rain gauges the same size and shape to measure rain on the top of a hill. Jack uses a rain gauge marked in fourths of an inch. Jill's gauge measures rain in eighths of an inch. On Thursday, Jack's gauge measured inches of rain. They both had the same amount of water, so what was the reading on Jill's gauge Thursday? Draw a number line to help explain your thinking. 5. Jack and Jill's baby brother Rosco also had a gauge the same size and shape on the same hill. He told J...",
+      studentPrompt: "Use the official Module 5 Lesson 21 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 5 student workbook, Lesson 21 Problem Set.",
       visualModel: "number-line"
     },
@@ -71,7 +71,7 @@ export const M5_LESSON21_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 21 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 245-254.",
       visualModel: "number-line"
     },
@@ -87,7 +87,7 @@ export const M5_LESSON21_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Whole Number Division 3.OA.7 (8 minutes) 1 Whole Expressed as Unit Fractions 3.NF.1 (4 minutes) Whole Number Division (8 minutes) Materials: (S) Blank paper Note: This activity supports fluency with division. Steps 1 and 2 are timed for two minutes. Step 3 is timed for 1 minute of testing for each partner. Step 4 is timed for two minutes. 1. Students self-select a number and write a set of multiples up to that number's multiple of 10 vertically down the left-hand side of the page (e.g., 6, 12, 18, 24, 30, 36, 42, 48, 54, 60)....",
+      studentPrompt: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 21 objective: Recognize and show that equivalent fractions refer to the same point on the number line.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 245-254.",
       visualModel: "number-line"
     }
@@ -114,7 +114,7 @@ export const M5_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: Glue your fraction strip at the top of a new page in Ask the following: your math journal. How are these equivalent fractions S: (Glue fraction strip.) related? T: Fold another fraction strip to make fourths. Label each What particular property do they part with a unit fraction. Then, glue your fraction strip have in common? directly below the first one in your math journal."
+        value: "Use the Teacher Edition Lesson 21 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence."
       },
       {
         label: "Workbook",
@@ -124,7 +124,7 @@ export const M5_LESSON21_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 21 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -142,7 +142,7 @@ export const M5_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Use the fractional units on the left to count up on the number line. Label the missing fractions on the blanks. 1 2 4 2 2 2 halves 0 1 2 0 3 5 7 fourths 4 4 4 4 halves 0 1 2 sixths 6 Problem 2: Use the number lines above to: Color fractions equal to 1 half blue. Color fractions equal to 1 yellow. Color fractions equal to 3 halves green. Color fractions equal to 2 red. Problem 3: Use the number lines above to make the number sentences true. 2 6 2 3 6 = = = = = 4 6 6 2 6 on the number line. Jack and Jill use rain gauges the same size and shape to measure rain on the top of a hill. Jack uses a rain gauge marked in fourths of an inch. Jill's gauge measures rain in eighths of an inch. On Thursday, Jack's gauge measured inches of rain. They both had the same amount of water, so what was the reading on Jill's gauge Thursday? Draw a number line to help explain your thinking. 5. Jack and Jill's baby brother Rosco also had a gauge the same size and shape on the same hill. He told J..."
+        value: "Use the official Module 5 Lesson 21 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -156,7 +156,7 @@ export const M5_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 21 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -184,7 +184,7 @@ export const M5_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Whole Number Division 3.OA.7 (8 minutes) 1 Whole Expressed as Unit Fractions 3.NF.1 (4 minutes) Whole Number Division (8 minutes) Materials: (S) Blank paper Note: This activity supports fluency with division. Steps 1 and 2 are timed for two minutes. Step 3 is timed for 1 minute of testing for each partner. Step 4 is timed for two minutes. 1. Students self-select a number and write a set of multiples up to that number's multiple of 10 vertically down the left-hand side of the page (e.g., 6, 12, 18, 24, 30, 36, 42, 48, 54, 60)...."
+        value: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 21 objective: Recognize and show that equivalent fractions refer to the same point on the number line."
       },
       {
         label: "Workbook",

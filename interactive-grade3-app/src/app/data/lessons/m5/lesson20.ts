@@ -7,10 +7,10 @@ export const M5_LESSON20_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "fraction-strip",
-    title: "Lesson 20 animation: Recognize and show that equivalent fractions have the s...",
-    context: "T: The whole is all of the cubes.",
+    title: "Lesson 20 animation: Recognize and show that equivalent fractions have the same size, though not necessarily the same shape.",
+    context: "Use the Teacher Edition Lesson 20 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
     equation: "2/4; name the whole before naming the fraction",
-    teacherPrompt: "Invite students to share their models for Problems 2(a) expectations for explaining their and 2(b). Although answers will vary, students should reasonin...",
+    teacherPrompt: "How does the official fraction model show recognize and show that equivalent fractions have the same size, though not necessarily the same shape.?",
     focus: [
       "equivalent fractions",
       "whole",
@@ -35,7 +35,7 @@ export const M5_LESSON20_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: The whole is all of the cubes. Whisper to your partner the fraction of cubes that are blue. S: (Whisper one fourth.) Use linking cubes to create Model 2, as shown to the right. T: Again, the whole is all of the cubes.",
+      studentPrompt: "Use the Teacher Edition Lesson 20 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf, pages 234-244. Lesson 20 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "fraction-strip"
     },
@@ -44,14 +44,14 @@ export const M5_LESSON20_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Invite students to share their models for Problems 2(a) expectations for explaining their and 2(b). Although answers will vary, students should reasoning clearly with evidence. MP.6 consistently represent equivalent fractions for each question.",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 20 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition.",
       visualModel: "fraction-strip"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Label what fraction of each shape is shaded. Then, circle the fractions that are equal. a. b. c. Problem 2: Label the shaded fraction. Draw 2 different representations of the same fractional amount. a. b. though not necessarily the same shape. Ann has 6 small square pieces of paper. 2 squares are grey. Ann cuts the 2 grey squares in half with a diagonal line from one corner to the other. a. What shapes does she have now? b. How many of each shape does she have? c. Use all the shapes with no overlaps. Draw at least 2 different ways Ann's set of shapes might look. What fraction of the figure is grey? 4. Laura has 2 different beakers that hold exactly 1 liter. She pours liter of blue liquid into Beaker A. She pours liter of orange liquid into Beaker B. Susan says the amounts are not equal. Cristina says they are. Explain who you think is correct and why. A B though not necessarily the same shape.",
+      studentPrompt: "Use the official Module 5 Lesson 20 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 5 student workbook, Lesson 20 Problem Set.",
       visualModel: "fraction-strip"
     },
@@ -59,7 +59,7 @@ export const M5_LESSON20_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 20 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 234-244.",
       visualModel: "fraction-strip"
     },
@@ -75,7 +75,7 @@ export const M5_LESSON20_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (9 minutes) Multiply by 7 3.OA.4 (9 minutes) Multiply by 7 (9 minutes) Materials: (S) Multiply by 7 (1-5) Pattern Sheet Note: This Pattern Sheet supports fluency with multiplication using units of 7. T: Skip-count by sevens. (Write multiples horizontally as students count.) S: 7, 14, 21, 28, 35, 42, 49, 56, 63, 70. T: (Write 5 x 7 = ____.) Let's skip-count by sevens to find the answer. (Count with fingers to 5 as students count.) S: 7, 14, 21, 28, 35. T: (Circle 35 and write 5 x 7 = 35 above it. Write 3 x 7 = ____.) Let's skip-count up by se...",
+      studentPrompt: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 20 objective: Recognize and show that equivalent fractions have the same size, though not necessarily the same shape.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 234-244.",
       visualModel: "fraction-strip"
     }
@@ -102,7 +102,7 @@ export const M5_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: The whole is all of the cubes. Whisper to your partner the fraction of cubes that are blue. S: (Whisper one fourth.) Use linking cubes to create Model 2, as shown to the right. T: Again, the whole is all of the cubes."
+        value: "Use the Teacher Edition Lesson 20 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence."
       },
       {
         label: "Workbook",
@@ -112,7 +112,7 @@ export const M5_LESSON20_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 20 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -130,7 +130,7 @@ export const M5_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Label what fraction of each shape is shaded. Then, circle the fractions that are equal. a. b. c. Problem 2: Label the shaded fraction. Draw 2 different representations of the same fractional amount. a. b. though not necessarily the same shape. Ann has 6 small square pieces of paper. 2 squares are grey. Ann cuts the 2 grey squares in half with a diagonal line from one corner to the other. a. What shapes does she have now? b. How many of each shape does she have? c. Use all the shapes with no overlaps. Draw at least 2 different ways Ann's set of shapes might look. What fraction of the figure is grey? 4. Laura has 2 different beakers that hold exactly 1 liter. She pours liter of blue liquid into Beaker A. She pours liter of orange liquid into Beaker B. Susan says the amounts are not equal. Cristina says they are. Explain who you think is correct and why. A B though not necessarily the same shape."
+        value: "Use the official Module 5 Lesson 20 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -144,7 +144,7 @@ export const M5_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 20 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -172,7 +172,7 @@ export const M5_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (9 minutes) Multiply by 7 3.OA.4 (9 minutes) Multiply by 7 (9 minutes) Materials: (S) Multiply by 7 (1-5) Pattern Sheet Note: This Pattern Sheet supports fluency with multiplication using units of 7. T: Skip-count by sevens. (Write multiples horizontally as students count.) S: 7, 14, 21, 28, 35, 42, 49, 56, 63, 70. T: (Write 5 x 7 = ____.) Let's skip-count by sevens to find the answer. (Count with fingers to 5 as students count.) S: 7, 14, 21, 28, 35. T: (Circle 35 and write 5 x 7 = 35 above it. Write 3 x 7 = ____.) Let's skip-count up by se..."
+        value: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 20 objective: Recognize and show that equivalent fractions have the same size, though not necessarily the same shape."
       },
       {
         label: "Workbook",

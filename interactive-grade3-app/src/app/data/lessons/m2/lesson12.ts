@@ -7,10 +7,10 @@ export const M2_LESSON12_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 12 animation: Round two-digit measurements to the nearest ten on the...",
+    title: "Lesson 12 animation: Round two-digit measurements to the nearest ten on the",
     context: "S: 73 milliliters is less than halfway between 70 and 80 milliliters.",
     equation: "73 to 85 on equal intervals of 3",
-    teacherPrompt: "Discuss new vocabulary from today's lesson: round and about. Connect the discussion to rounding two-digit measurements to the nearest ten on the vertica...",
+    teacherPrompt: "Discuss new vocabulary from today's lesson: round and about. Connect the discussion to rounding two-digit measurements to the nearest ten on the vertica.",
     focus: [
       "round",
       "number line",
@@ -53,14 +53,14 @@ export const M2_LESSON12_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Discuss new vocabulary from today's lesson: round and about. Connect the discussion to rounding two-digit measurements to the nearest ten on the vertical number line.",
-      teacherEditionBasis: "Problem Set (21 minutes) Materials: (S) Problem Set, 4 bags of rice (pre-measured at four different weights within 100 g), 4 containers of water (pre-measured with four different liquid NOTES ON volumes within 100 mL), ruler, meter stick, blank MATERIALS: paper, new pencil, digital scale measuring grams, Adjust the number of measurement 100 mL beaker, demonstration clock, classroom wall materials at each station (ruler, meter clock stick, digital scale, beaker, demonstration clock) depending both Description: Students move through different stations to...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 12 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "number-line"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Work with a partner. Use a ruler or a meter stick to complete the chart below. Length Measurement The object measures between rounded to Object (in cm) (which two tens)... the nearest 10 cm Example: My shoe 23 cm 20 and 30 cm 20 cm Long side of a desk ____ and ____ cm A new pencil ____ and ____ cm Short side of a piece of paper ____ and ____ cm Long side of a piece of paper ____ and ____ cm Problem 2: Work with a partner. Use a digital scale to complete the chart below. Weight rounded Measurement The bag of rice measures between Bag (in g) to the nearest (which two tens)... 10 g Example: Bag A 8g 0 and 10 g 10 g Bag B ____ and ____ g Bag C ____ and ____ g Bag D ____ and ____ g Bag E ____ and ____ g number line. Work with a partner. Use a beaker to complete the chart below. Liquid volume Measurement The container measures between Container rounded to the (in mL) (which two tens)... nearest 10 mL Example: Container A 33 mL 30 and 40 mL 30 mL Container B ____ and ____ mL Con...",
+      studentPrompt: "Use the official Module 2 Lesson 12 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 12 Problem Set.",
       visualModel: "number-line"
     },
@@ -68,7 +68,7 @@ export const M2_LESSON12_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (21 minutes) Materials: (S) Problem Set, 4 bags of rice (pre-measured at four different weights within 100 g), 4 containers of water (pre-measured with four different liquid NOTES ON volumes within 100 mL), ruler, meter stick, blank MATERIALS: paper, new pencil, digital scale measuring grams, Adjust the number of measurement 100 mL beaker, demonstration clock, classroom wall materials at each station (ruler, meter clock stick, digital scale, beaker, demonstration clock) depending both Description: Students move through different stations to...",
+      studentPrompt: "Use the official Lesson 12 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 150-159.",
       visualModel: "number-line"
     },
@@ -84,7 +84,7 @@ export const M2_LESSON12_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Application Problem but rather uses an Total Time (60 minutes) extended amount of time for the Problem Set. The Problem Set provides an opportunity for students to Fluency Practice (9 minutes) apply their newly acquired rounding skills to measurement. Rename the Tens 3.NBT.3 (4 minutes) Halfway on the Number Line 3.NBT.1 (5 minutes) Rename the Tens (4 minutes) Materials: (S) Personal white board Note: This activity anticipates rounding in Lessons 13 and 14 by reviewing unit form. T: (Write 9 tens = ____.) Say the number. S: 90. Continue with the following possible sequence: 10 te...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 12 objective: Round two-digit measurements to the nearest ten on the vertical number line.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 150-159.",
       visualModel: "number-line"
     }
@@ -121,7 +121,7 @@ export const M2_LESSON12_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (21 minutes) Materials: (S) Problem Set, 4 bags of rice (pre-measured at four different weights within 100 g), 4 containers of water (pre-measured with four different liquid NOTES ON volumes within 100 mL), ruler, meter stick, blank MATERIALS: paper, new pencil, digital scale measuring grams, Adjust the number of measurement 100 mL beaker, demonstration clock, classroom wall materials at each station (ruler, meter clock stick, digital scale, beaker, demonstration clock) depending both Description: Students move through different stations to..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 12 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M2_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Work with a partner. Use a ruler or a meter stick to complete the chart below. Length Measurement The object measures between rounded to Object (in cm) (which two tens)... the nearest 10 cm Example: My shoe 23 cm 20 and 30 cm 20 cm Long side of a desk ____ and ____ cm A new pencil ____ and ____ cm Short side of a piece of paper ____ and ____ cm Long side of a piece of paper ____ and ____ cm Problem 2: Work with a partner. Use a digital scale to complete the chart below. Weight rounded Measurement The bag of rice measures between Bag (in g) to the nearest (which two tens)... 10 g Example: Bag A 8g 0 and 10 g 10 g Bag B ____ and ____ g Bag C ____ and ____ g Bag D ____ and ____ g Bag E ____ and ____ g number line. Work with a partner. Use a beaker to complete the chart below. Liquid volume Measurement The container measures between Container rounded to the (in mL) (which two tens)... nearest 10 mL Example: Container A 33 mL 30 and 40 mL 30 mL Container B ____ and ____ mL Con..."
+        value: "Use the official Module 2 Lesson 12 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -153,7 +153,7 @@ export const M2_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (21 minutes) Materials: (S) Problem Set, 4 bags of rice (pre-measured at four different weights within 100 g), 4 containers of water (pre-measured with four different liquid NOTES ON volumes within 100 mL), ruler, meter stick, blank MATERIALS: paper, new pencil, digital scale measuring grams, Adjust the number of measurement 100 mL beaker, demonstration clock, classroom wall materials at each station (ruler, meter clock stick, digital scale, beaker, demonstration clock) depending both Description: Students move through different stations to..."
+        value: "Use the official Lesson 12 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -181,7 +181,7 @@ export const M2_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Application Problem but rather uses an Total Time (60 minutes) extended amount of time for the Problem Set. The Problem Set provides an opportunity for students to Fluency Practice (9 minutes) apply their newly acquired rounding skills to measurement. Rename the Tens 3.NBT.3 (4 minutes) Halfway on the Number Line 3.NBT.1 (5 minutes) Rename the Tens (4 minutes) Materials: (S) Personal white board Note: This activity anticipates rounding in Lessons 13 and 14 by reviewing unit form. T: (Write 9 tens = ____.) Say the number. S: 90. Continue with the following possible sequence: 10 te..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 12 objective: Round two-digit measurements to the nearest ten on the vertical number line."
       },
       {
         label: "Workbook",

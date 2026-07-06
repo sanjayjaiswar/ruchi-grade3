@@ -8,8 +8,8 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 21 animation: Estimate sums and differences of measurements by roundi...",
-    context: "behavior norms. For example, how will Next, they round to estimate sums and differences, and then turns be recognized? What can be said use the standard algorithm to solve. Determine...",
+    title: "Lesson 21 animation: Estimate sums and differences of measurements by roundi",
+    context: "behavior norms. For example, how will Next, they round to estimate sums and differences, and then turns be recognized? What can be said use the standard algorithm to solve. Determine.",
     equation: "3 to 43 on equal intervals of 10",
     teacherPrompt: "How can you use measurement as a tool for checking whether or not your answers are reasonable?",
     focus: [
@@ -55,14 +55,14 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "How can you use measurement as a tool for checking whether or not your answers are reasonable?",
-      teacherEditionBasis: "Problem 1: 1 digital scale, 1 bag of rice pre-measured at 58 grams, 1 bag of beans pre-measured at 91 grams",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 21 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "number-line"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Weigh the bags of beans and rice on the scale. Then, write the weight on the scales below. Beans Rice a. Estimate, and then find the total weight of the beans and rice. Estimate: ____ + ____ ____ + ____ = ____ Actual: ____ + ____ = ____ b. Estimate, and then find the difference between the weight of the beans and rice. Estimate: ____ - ____ ____ - ____ = ____ Actual: ____ - ____ = ____ c. Are your answers reasonable? Explain why. then solve mixed word problems. Measure the lengths of the three pieces of yarn. Yarn A ____ cm ____ cm a. Estimate the total length of Yarn A and Yarn C. Then, find the actual total length. Yarn B ____ cm ____ cm Yarn C ____ cm ____ cm b. Subtract to estimate the difference between the total length of Yarns A and C, and the length of Yarn B. Then, find the actual difference. Model the problem with a tape diagram. 3. Plot the amount of liquid in the three containers on the number lines below. Then, round to the nearest 10 milliliters. Container D...",
+      studentPrompt: "Use the official Module 2 Lesson 21 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 21 Problem Set.",
       visualModel: "number-line"
     },
@@ -70,7 +70,7 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem 1: 1 digital scale, 1 bag of rice pre-measured at 58 grams, 1 bag of beans pre-measured at 91 grams",
+      studentPrompt: "Use the official Lesson 21 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 257-266.",
       visualModel: "number-line"
     },
@@ -86,7 +86,7 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (13 minutes) Group Counting 3.OA.1 (4 minutes) Use Algorithms with Different Units 3.MD.2 (5 minutes) Estimate and Subtract 3.NBT.2 (4 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. It reviews foundational strategies for multiplication from Module 1 and anticipates Module 3. Direct students to count forward and backward, occasionally changing the direction of the count: Threes to 30 Fours to 40 Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 As students' fl...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 21 objective: Estimate sums and differences of measurements by rounding, and then solve mixed word problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 257-266.",
       visualModel: "number-line"
     }
@@ -123,7 +123,7 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem 1: 1 digital scale, 1 bag of rice pre-measured at 58 grams, 1 bag of beans pre-measured at 91 grams"
+        value: "Problem Set (10 minutes): Students complete the Lesson 21 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -141,7 +141,7 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Weigh the bags of beans and rice on the scale. Then, write the weight on the scales below. Beans Rice a. Estimate, and then find the total weight of the beans and rice. Estimate: ____ + ____ ____ + ____ = ____ Actual: ____ + ____ = ____ b. Estimate, and then find the difference between the weight of the beans and rice. Estimate: ____ - ____ ____ - ____ = ____ Actual: ____ - ____ = ____ c. Are your answers reasonable? Explain why. then solve mixed word problems. Measure the lengths of the three pieces of yarn. Yarn A ____ cm ____ cm a. Estimate the total length of Yarn A and Yarn C. Then, find the actual total length. Yarn B ____ cm ____ cm Yarn C ____ cm ____ cm b. Subtract to estimate the difference between the total length of Yarns A and C, and the length of Yarn B. Then, find the actual difference. Model the problem with a tape diagram. 3. Plot the amount of liquid in the three containers on the number lines below. Then, round to the nearest 10 milliliters. Container D..."
+        value: "Use the official Module 2 Lesson 21 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -155,7 +155,7 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: 1 digital scale, 1 bag of rice pre-measured at 58 grams, 1 bag of beans pre-measured at 91 grams"
+        value: "Use the official Lesson 21 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -183,7 +183,7 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (13 minutes) Group Counting 3.OA.1 (4 minutes) Use Algorithms with Different Units 3.MD.2 (5 minutes) Estimate and Subtract 3.NBT.2 (4 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. It reviews foundational strategies for multiplication from Module 1 and anticipates Module 3. Direct students to count forward and backward, occasionally changing the direction of the count: Threes to 30 Fours to 40 Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 As students' fl..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 21 objective: Estimate sums and differences of measurements by rounding, and then solve mixed word problems."
       },
       {
         label: "Workbook",

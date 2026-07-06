@@ -9,9 +9,9 @@ export const M4_LESSON2_RUNTIME: LessonRuntimeConfig = {
   lessonAnimation: {
     kind: "area-model",
     title: "Lesson 2 animation: Decompose and recompose shapes to compare areas.",
-    context: "T: How many units make up your strip?",
+    context: "Use the Teacher Edition Lesson 2 area model to connect the official figure, side lengths, unit squares, and area equation.",
     equation: "10 rows x 4 columns = 40 square units",
-    teacherPrompt: "Talk to a partner. What new units did we define today?",
+    teacherPrompt: "How does the official area model show decompose and recompose shapes to compare areas.?",
     focus: [
       "area",
       "square unit",
@@ -38,7 +38,7 @@ export const M4_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: How many units make up your strip? S: 12 units. T: What shape are they? S: They're squares. Each of the 4 sides is 1 inch. T: What is the area of the paper strip in square units? S: 12 square units! T: Because the sides of the squares each measure 1 inch, we call one of these squares a square inch. What is the area of your paper strip in square inches? MP.6 S: 12 square inches.",
+      studentPrompt: "Use the Teacher Edition Lesson 2 area model to connect the official figure, side lengths, unit squares, and area equation.",
       teacherEditionBasis: "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf, pages 21-31. Lesson 2 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "area-model"
     },
@@ -47,14 +47,14 @@ export const M4_LESSON2_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Talk to a partner. What new units did we define today?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Some problems do not specify a method for solving. This is an intentional reduction of scaffolding that invokes MP.5, Use Appropriate Tools Strategically. Students should solve these problems using the RDW approach used for Application Problems. For some classes, it may be appropriate to modify the assignment by specifying which problems students should work on first. With this option, let the purposeful sequencing of the Problem S...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 2 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition.",
       visualModel: "area-model"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use all of Paper Strip 1, which you cut into 12 square inches, to complete the chart below. Drawing Area Rectangle A Rectangle B Rectangle C Problem 2: Use all of Paper Strip 2, which you cut into 12 square centimeters, to complete the chart below. Drawing Area Rectangle A Rectangle B Rectangle C Compare the areas of the rectangles you made with Paper Strip 1 and Paper Strip 2. What changed? Why did it change? 4. Maggie uses square units to create these two rectangles. Do the two rectangles have the same area? How do you know? Shape B Shape A 5. Count to find the area of the rectangle below. Then, draw a different rectangle that has the same area.",
+      studentPrompt: "Use the official Module 4 Lesson 2 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 4 student workbook, Lesson 2 Problem Set.",
       visualModel: "area-model"
     },
@@ -62,7 +62,7 @@ export const M4_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Some problems do not specify a method for solving. This is an intentional reduction of scaffolding that invokes MP.5, Use Appropriate Tools Strategically. Students should solve these problems using the RDW approach used for Application Problems. For some classes, it may be appropriate to modify the assignment by specifying which problems students should work on first. With this option, let the purposeful sequencing of the Problem S...",
+      studentPrompt: "Use the official Lesson 2 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 21-31.",
       visualModel: "area-model"
     },
@@ -78,7 +78,7 @@ export const M4_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (11 minutes) Group Counting 3.OA.1 (4 minutes) Multiply by 4 3.OA.7 (7 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Instruct students to count forward and backward, occasionally changing the direction of the count. Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 Multiply by 4 (7 minutes) Materials: (S) Multiply by 4 (6-10) Pattern Sheet Note: This activity builds fluency with respect to multiplication facts using units of 4. It works toward students knowing fro...",
+      studentPrompt: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 2 objective: Decompose and recompose shapes to compare areas.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 21-31.",
       visualModel: "area-model"
     }
@@ -105,7 +105,7 @@ export const M4_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: How many units make up your strip? S: 12 units. T: What shape are they? S: They're squares. Each of the 4 sides is 1 inch. T: What is the area of the paper strip in square units? S: 12 square units! T: Because the sides of the squares each measure 1 inch, we call one of these squares a square inch. What is the area of your paper strip in square inches? MP.6 S: 12 square inches."
+        value: "Use the Teacher Edition Lesson 2 area model to connect the official figure, side lengths, unit squares, and area equation."
       },
       {
         label: "Workbook",
@@ -115,7 +115,7 @@ export const M4_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Some problems do not specify a method for solving. This is an intentional reduction of scaffolding that invokes MP.5, Use Appropriate Tools Strategically. Students should solve these problems using the RDW approach used for Application Problems. For some classes, it may be appropriate to modify the assignment by specifying which problems students should work on first. With this option, let the purposeful sequencing of the Problem S..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 2 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -133,7 +133,7 @@ export const M4_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Use all of Paper Strip 1, which you cut into 12 square inches, to complete the chart below. Drawing Area Rectangle A Rectangle B Rectangle C Problem 2: Use all of Paper Strip 2, which you cut into 12 square centimeters, to complete the chart below. Drawing Area Rectangle A Rectangle B Rectangle C Compare the areas of the rectangles you made with Paper Strip 1 and Paper Strip 2. What changed? Why did it change? 4. Maggie uses square units to create these two rectangles. Do the two rectangles have the same area? How do you know? Shape B Shape A 5. Count to find the area of the rectangle below. Then, draw a different rectangle that has the same area."
+        value: "Use the official Module 4 Lesson 2 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -147,7 +147,7 @@ export const M4_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Some problems do not specify a method for solving. This is an intentional reduction of scaffolding that invokes MP.5, Use Appropriate Tools Strategically. Students should solve these problems using the RDW approach used for Application Problems. For some classes, it may be appropriate to modify the assignment by specifying which problems students should work on first. With this option, let the purposeful sequencing of the Problem S..."
+        value: "Use the official Lesson 2 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -175,7 +175,7 @@ export const M4_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (11 minutes) Group Counting 3.OA.1 (4 minutes) Multiply by 4 3.OA.7 (7 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Instruct students to count forward and backward, occasionally changing the direction of the count. Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 Multiply by 4 (7 minutes) Materials: (S) Multiply by 4 (6-10) Pattern Sheet Note: This activity builds fluency with respect to multiplication facts using units of 4. It works toward students knowing fro..."
+        value: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 2 objective: Decompose and recompose shapes to compare areas."
       },
       {
         label: "Workbook",

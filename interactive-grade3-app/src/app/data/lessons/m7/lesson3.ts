@@ -4,10 +4,10 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 3 animation: Share and critique peer solution strategies to varied w...",
-    context: "box. She gives each of the 24 students in her class 2 pencils. How many pencils does she have left? T: Use the Read-Draw-Write process to solve this problem. Remember to take a momen...",
+    title: "Lesson 3 animation: Share and critique peer solution strategies to varied word problems.",
+    context: "Use the Teacher Edition Lesson 3 critique, reflection, or fluency workspace with the official response structure to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "24 to 32 on equal intervals of 2",
-    teacherPrompt: "What can you draw to show Problem 2? How can you build equations from those drawings?",
+    teacherPrompt: "Use the source Lesson 3 critique, reflection, or fluency workspace with the official response structure; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "number line",
       "source labels"
@@ -40,7 +40,7 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "box. She gives each of the 24 students in her class 2 pencils. How many pencils does she have left? T: Use the Read-Draw-Write process to solve this problem. Remember to take a moment to visualize what's happening in the problem after you read. S: (Use the read-draw-write process to solve.) T: Compare your work with a partner's. (Allow students time to compare.) How many pencils does Mrs. Mashburn have left? S: 6 pencils!",
+      studentPrompt: "Use the Teacher Edition Lesson 3 critique, reflection, or fluency workspace with the official response structure to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 39-54. Lesson 3 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -48,24 +48,24 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "What can you draw to show Problem 2? How can you build equations from those drawings?",
-      teacherEditionBasis: "Problem 1: Assess sample student work for accuracy and efficiency. Write or project the following problem: Mrs. Mashburn buys 6 boxes of pencils. Nine pencils come in each box. She gives each of the 24 students in her class 2 pencils. How many pencils does she have left? T: Use the Read-Draw-Write process to solve this problem. Remember to take a moment to visualize what's happening in the problem after you read. S: (Use the RDW process to solve.) T: Compare your work with a partner's. (Allow students time to compare.) How many pencils does Mrs. Mashbur...",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 3 work using the official Module 7 critique, reflection, or fluency workspace with the official response structure from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 3 work using the official Module 7 critique, reflection, or fluency workspace with the official response structure from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Monica measures 91 milliliters of water into 9 tiny beakers. She measures an equal amount of water into the first 8 beakers. She pours the remaining water into the ninth beaker. It measures 19 milliliters. How many milliliters of water are in each of the first 8 beakers? Problem 2: Matthew and his dad put up 8 six-foot lengths of fence on Monday and 9 six-foot lengths on Tuesday. What is the total length of the fence? Problem 3: The total weight of Laura's new pencils is 112 grams. One pencil rolls off the scale. Now the scale reads 105 grams. What is the total weight of 7 new pencils?",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 3 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 3 Problem Set prompts in order. Blank mode preserves the student-facing critique, reflection, or fluency workspace with the official response structure; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 3 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem 1: Assess sample student work for accuracy and efficiency. Write or project the following problem: Mrs. Mashburn buys 6 boxes of pencils. Nine pencils come in each box. She gives each of the 24 students in her class 2 pencils. How many pencils does she have left? T: Use the Read-Draw-Write process to solve this problem. Remember to take a moment to visualize what's happening in the problem after you read. S: (Use the RDW process to solve.) T: Compare your work with a partner's. (Allow students time to compare.) How many pencils does Mrs. Mashbur...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 39-54.",
+      studentPrompt: "Use the source-backed Lesson 3 workspace and critique, reflection, or fluency workspace with the official response structure to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 3; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -80,8 +80,8 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Name the Shape 2.G.1 (3 minutes) Multiply by 4 3.OA.7 (8 minutes) Equivalent Counting with Units of 3 3.OA.7 (4 minutes) Name the Shape (3 minutes) Note: This activity reviews Grade 2 geometry concepts in preparation for Topic B. T: (Project the trapezoid.) How many sides does this shape have? S: Four sides. T: What's the name for all four-sided figures? S: Quadrilateral. T: (Project the pentagon.) How many sides does this shape have? S: Five. T: What's the name for all five-sided figures? S: Pentagon. Continue the process f...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 39-54.",
+      studentPrompt: "Debrief focus: connect the Problem Set critique, reflection, or fluency workspace with the official response structure to the Lesson 3 objective: Share and critique peer solution strategies to varied word problems.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 3; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -107,7 +107,7 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "box. She gives each of the 24 students in her class 2 pencils. How many pencils does she have left? T: Use the Read-Draw-Write process to solve this problem. Remember to take a moment to visualize what's happening in the problem after you read. S: (Use the read-draw-write process to solve.) T: Compare your work with a partner's. (Allow students time to compare.) How many pencils does Mrs. Mashburn have left? S: 6 pencils!"
+        value: "Use the Teacher Edition Lesson 3 critique, reflection, or fluency workspace with the official response structure to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -117,11 +117,11 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem 1: Assess sample student work for accuracy and efficiency. Write or project the following problem: Mrs. Mashburn buys 6 boxes of pencils. Nine pencils come in each box. She gives each of the 24 students in her class 2 pencils. How many pencils does she have left? T: Use the Read-Draw-Write process to solve this problem. Remember to take a moment to visualize what's happening in the problem after you read. S: (Use the RDW process to solve.) T: Compare your work with a partner's. (Allow students time to compare.) How many pencils does Mrs. Mashbur..."
+        value: "Problem Set source focus: students complete the Lesson 3 work using the official Module 7 critique, reflection, or fluency workspace with the official response structure from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "What can you draw to show Problem 2? How can you build equations from those drawings?"
+        value: "Teacher Edition check: preserve the Lesson 3 critique, reflection, or fluency workspace with the official response structure."
       },
       {
         label: "Workbook",
@@ -131,11 +131,11 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 3 Problem Set."
+        value: "Module 7 student workbook, Lesson 3 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Monica measures 91 milliliters of water into 9 tiny beakers. She measures an equal amount of water into the first 8 beakers. She pours the remaining water into the ninth beaker. It measures 19 milliliters. How many milliliters of water are in each of the first 8 beakers? Problem 2: Matthew and his dad put up 8 six-foot lengths of fence on Monday and 9 six-foot lengths on Tuesday. What is the total length of the fence? Problem 3: The total weight of Laura's new pencils is 112 grams. One pencil rolls off the scale. Now the scale reads 105 grams. What is the total weight of 7 new pencils?"
+        value: "Use the official Module 7 Lesson 3 Problem Set prompts in order. Blank mode preserves the student-facing critique, reflection, or fluency workspace with the official response structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -145,11 +145,11 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 39-54."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 3; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem 1: Assess sample student work for accuracy and efficiency. Write or project the following problem: Mrs. Mashburn buys 6 boxes of pencils. Nine pencils come in each box. She gives each of the 24 students in her class 2 pencils. How many pencils does she have left? T: Use the Read-Draw-Write process to solve this problem. Remember to take a moment to visualize what's happening in the problem after you read. S: (Use the RDW process to solve.) T: Compare your work with a partner's. (Allow students time to compare.) How many pencils does Mrs. Mashbur..."
+        value: "Use the source-backed Lesson 3 workspace and critique, reflection, or fluency workspace with the official response structure to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -173,11 +173,11 @@ export const M7_LESSON3_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 39-54."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 3; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Name the Shape 2.G.1 (3 minutes) Multiply by 4 3.OA.7 (8 minutes) Equivalent Counting with Units of 3 3.OA.7 (4 minutes) Name the Shape (3 minutes) Note: This activity reviews Grade 2 geometry concepts in preparation for Topic B. T: (Project the trapezoid.) How many sides does this shape have? S: Four sides. T: What's the name for all four-sided figures? S: Quadrilateral. T: (Project the pentagon.) How many sides does this shape have? S: Five. T: What's the name for all five-sided figures? S: Pentagon. Continue the process f..."
+        value: "Debrief focus: connect the Problem Set critique, reflection, or fluency workspace with the official response structure to the Lesson 3 objective: Share and critique peer solution strategies to varied word problems."
       },
       {
         label: "Workbook",

@@ -7,7 +7,7 @@ export const M2_LESSON13_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 13 animation: Round two- and three-digit numbers to the nearest ten o...",
+    title: "Lesson 13 animation: Round two- and three-digit numbers to the nearest ten o",
     context: "Round two-digit measurements to the nearest ten.",
     equation: "28 to 68 on equal intervals of 10",
     teacherPrompt: "What is the same and different about Problems 1(c) and 1(d)? Did you solve the problems differently? Why or why not?",
@@ -53,14 +53,14 @@ export const M2_LESSON13_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "What is the same and different about Problems 1(c) and 1(d)? Did you solve the problems differently? Why or why not?",
-      teacherEditionBasis: "Problem Set (10 minutes) NOTES ON Students should do their personal best to complete the Problem SYMBOLS: Set within the allotted 10 minutes. Depending on your class, it may be appropriate to modify the assignment by specifying This symbol is used to show that the which problems they work on first. Some problems do not answer is an approximate: . Before specify a method for solving. Students should solve these students start work on the Problem problems using the RDW approach used for Application Set, call their attention to it and point Problems. out...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 13 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "number-line"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Round to the nearest ten. Use the number line to model your thinking. a. 32 ____ b. 36 ____ 35 35 c. 62 ____ d. 162 ____ e. 278 ____ f. 405 ____ number line. Round the weight of each item to the nearest 10 grams. Draw number lines to model your thinking. Item Number Line Round to the nearest 10 grams 36 grams 52 grams 142 grams 3. Carl's basketball game begins at 3:03 p.m. and ends at 3:51 p.m. a. How many minutes did Carl's basketball game last? b. Round the total number of minutes in the game to the nearest 10 minutes. number line.",
+      studentPrompt: "Use the official Module 2 Lesson 13 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 13 Problem Set.",
       visualModel: "number-line"
     },
@@ -68,7 +68,7 @@ export const M2_LESSON13_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) NOTES ON Students should do their personal best to complete the Problem SYMBOLS: Set within the allotted 10 minutes. Depending on your class, it may be appropriate to modify the assignment by specifying This symbol is used to show that the which problems they work on first. Some problems do not answer is an approximate: . Before specify a method for solving. Students should solve these students start work on the Problem problems using the RDW approach used for Application Set, call their attention to it and point Problems. out...",
+      studentPrompt: "Use the official Lesson 13 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 160-170.",
       visualModel: "number-line"
     },
@@ -84,7 +84,7 @@ export const M2_LESSON13_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (13 minutes) Group Counting 3.OA.1 (4 minutes) Rename the Tens 3.NBT.3 (4 minutes) Halfway on the Number Line 3.NBT.1 (5 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. It reviews foundational strategies for multiplication from Module 1 and anticipates Module 3. Direct students to count forward and backward, occasionally changing the direction of the count: Threes to 30 Fours to 40 Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 As students' fluency with ski...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 13 objective: Round two- and three-digit numbers to the nearest ten on the vertical number line.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 160-170.",
       visualModel: "number-line"
     }
@@ -121,7 +121,7 @@ export const M2_LESSON13_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) NOTES ON Students should do their personal best to complete the Problem SYMBOLS: Set within the allotted 10 minutes. Depending on your class, it may be appropriate to modify the assignment by specifying This symbol is used to show that the which problems they work on first. Some problems do not answer is an approximate: . Before specify a method for solving. Students should solve these students start work on the Problem problems using the RDW approach used for Application Set, call their attention to it and point Problems. out..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 13 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M2_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Round to the nearest ten. Use the number line to model your thinking. a. 32 ____ b. 36 ____ 35 35 c. 62 ____ d. 162 ____ e. 278 ____ f. 405 ____ number line. Round the weight of each item to the nearest 10 grams. Draw number lines to model your thinking. Item Number Line Round to the nearest 10 grams 36 grams 52 grams 142 grams 3. Carl's basketball game begins at 3:03 p.m. and ends at 3:51 p.m. a. How many minutes did Carl's basketball game last? b. Round the total number of minutes in the game to the nearest 10 minutes. number line."
+        value: "Use the official Module 2 Lesson 13 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -153,7 +153,7 @@ export const M2_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) NOTES ON Students should do their personal best to complete the Problem SYMBOLS: Set within the allotted 10 minutes. Depending on your class, it may be appropriate to modify the assignment by specifying This symbol is used to show that the which problems they work on first. Some problems do not answer is an approximate: . Before specify a method for solving. Students should solve these students start work on the Problem problems using the RDW approach used for Application Set, call their attention to it and point Problems. out..."
+        value: "Use the official Lesson 13 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -181,7 +181,7 @@ export const M2_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (13 minutes) Group Counting 3.OA.1 (4 minutes) Rename the Tens 3.NBT.3 (4 minutes) Halfway on the Number Line 3.NBT.1 (5 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. It reviews foundational strategies for multiplication from Module 1 and anticipates Module 3. Direct students to count forward and backward, occasionally changing the direction of the count: Threes to 30 Fours to 40 Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 As students' fluency with ski..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 13 objective: Round two- and three-digit numbers to the nearest ten on the vertical number line."
       },
       {
         label: "Workbook",

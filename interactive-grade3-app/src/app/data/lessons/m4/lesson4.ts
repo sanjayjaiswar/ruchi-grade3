@@ -5,9 +5,9 @@ export const M4_LESSON4_RUNTIME: LessonRuntimeConfig = {
   lessonAnimation: {
     kind: "area-model",
     title: "Lesson 4 animation: Relate side lengths with the number of tiles on a side.",
-    context: "T: Why is it important to avoid gaps or overlaps when we measure area?",
+    context: "Use the Teacher Edition Lesson 4 area model to connect the official figure, side lengths, unit squares, and area equation.",
     equation: "5 rows x 4 columns = 20 square units",
-    teacherPrompt: "Tell a partner how you could use square centimeter tiles to check your work in Problem 1",
+    teacherPrompt: "How does the official area model show relate side lengths with the number of tiles on a side.?",
     focus: [
       "area model",
       "source labels"
@@ -32,7 +32,7 @@ export const M4_LESSON4_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: Why is it important to avoid gaps or overlaps when we measure area? S: If there are gaps or overlaps, the amount of space the rectangle takes up changes. -> The square unit would be wrong because some area is taken away if there are overlaps, or some is added if there are gaps. T: Use your ruler to measure across the top of your rectangle in inches. What is the length of this side? S: 5 inches.",
+      studentPrompt: "Use the Teacher Edition Lesson 4 area model to connect the official figure, side lengths, unit squares, and area equation.",
       teacherEditionBasis: "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf, pages 44-56. Lesson 4 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "area-model"
     },
@@ -41,14 +41,14 @@ export const M4_LESSON4_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Tell a partner how you could use square centimeter tiles to check your work in Problem 1",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 4 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition.",
       visualModel: "area-model"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use a ruler to measure the side lengths of the rectangle in centimeters. Mark each centimeter with a point and connect the points to show the square units. Then, count the squares you drew to find the total area. Total area: ____ Problem 2: Use a ruler to measure the side lengths of the rectangle in inches. Mark each inch with a point and connect the points to show the square units. Then, count the squares you drew to find the total area. Total area: ____ Problem 3: Mariana uses square centimeter tiles to find the side lengths of the rectangle below. Label each side length. Then, count the tiles to find the total area. Total area: ____ Each is 1 square centimeter. Saffron says that the side length of the rectangle below is 4 centimeters. Kevin says the side length is 5 centimeters. Who is correct? Explain how you know. 5. Use both square centimeter and square inch tiles to find the area of the rectangle below. Which works best? Explain why. 6. How does knowing side length...",
+      studentPrompt: "Use the official Module 4 Lesson 4 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 4 student workbook, Lesson 4 Problem Set.",
       visualModel: "area-model"
     },
@@ -56,7 +56,7 @@ export const M4_LESSON4_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 4 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 44-56.",
       visualModel: "area-model"
     },
@@ -72,7 +72,7 @@ export const M4_LESSON4_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (3 minutes) Products in an Array 3.OA.3 (3 minutes) Count the Square Units 3.MD.6 (6 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Instruct students to count forward and backward, occasionally changing the direction of the count. Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 Products in an Array (3 minutes) Materials: (S) Personal white board Note: This fluency activity anticipates relating multiplication with area in Topic...",
+      studentPrompt: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 4 objective: Relate side lengths with the number of tiles on a side.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 44-56.",
       visualModel: "area-model"
     }
@@ -99,7 +99,7 @@ export const M4_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: Why is it important to avoid gaps or overlaps when we measure area? S: If there are gaps or overlaps, the amount of space the rectangle takes up changes. -> The square unit would be wrong because some area is taken away if there are overlaps, or some is added if there are gaps. T: Use your ruler to measure across the top of your rectangle in inches. What is the length of this side? S: 5 inches."
+        value: "Use the Teacher Edition Lesson 4 area model to connect the official figure, side lengths, unit squares, and area equation."
       },
       {
         label: "Workbook",
@@ -109,7 +109,7 @@ export const M4_LESSON4_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 4 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -127,7 +127,7 @@ export const M4_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Use a ruler to measure the side lengths of the rectangle in centimeters. Mark each centimeter with a point and connect the points to show the square units. Then, count the squares you drew to find the total area. Total area: ____ Problem 2: Use a ruler to measure the side lengths of the rectangle in inches. Mark each inch with a point and connect the points to show the square units. Then, count the squares you drew to find the total area. Total area: ____ Problem 3: Mariana uses square centimeter tiles to find the side lengths of the rectangle below. Label each side length. Then, count the tiles to find the total area. Total area: ____ Each is 1 square centimeter. Saffron says that the side length of the rectangle below is 4 centimeters. Kevin says the side length is 5 centimeters. Who is correct? Explain how you know. 5. Use both square centimeter and square inch tiles to find the area of the rectangle below. Which works best? Explain why. 6. How does knowing side length..."
+        value: "Use the official Module 4 Lesson 4 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -141,7 +141,7 @@ export const M4_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 4 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -169,7 +169,7 @@ export const M4_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (3 minutes) Products in an Array 3.OA.3 (3 minutes) Count the Square Units 3.MD.6 (6 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Instruct students to count forward and backward, occasionally changing the direction of the count. Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 Products in an Array (3 minutes) Materials: (S) Personal white board Note: This fluency activity anticipates relating multiplication with area in Topic..."
+        value: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 4 objective: Relate side lengths with the number of tiles on a side."
       },
       {
         label: "Workbook",

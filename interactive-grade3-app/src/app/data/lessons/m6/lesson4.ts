@@ -7,9 +7,9 @@ export const M6_LESSON4_RUNTIME: LessonRuntimeConfig = {
   lessonAnimation: {
     kind: "graph",
     title: "Lesson 4 animation: Solve one- and two-step problems involving graphs.",
-    context: "T: (Pass out the graph Template.) Let's create a bar graph from the data in the Application Problem.",
+    context: "Use the Teacher Edition Lesson 4 scaled bar graph model to connect the official data context, labels, scale or interval, and answer evidence.",
     equation: "Read the scale, then compare or calculate from the graph data",
-    teacherPrompt: "Invite students who used different scales for Problem 1 to share their work",
+    teacherPrompt: "Use the official Lesson 4 scaled bar graph: read the source quantities, preserve the scale or interval, and justify each answer from the display.",
     focus: [
       "scale",
       "graph",
@@ -53,7 +53,7 @@ export const M6_LESSON4_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: (Pass out the graph Template.) Let's create a bar graph from the data in the Application Problem. We need to choose a scale that works for the data the graph represents. Talk to a partner: What scale would be best for this data? Why? S: We could count by fives or tens. -> The numbers are big, so that would be a lot of tick marks to draw. -> We could do it by hundreds since the numbers all end in zero.",
+      studentPrompt: "Use the Teacher Edition Lesson 4 scaled bar graph model to connect the official data context, labels, scale or interval, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_6/g3_m6_teacher_edition_v1_3_0.pdf, pages 50-65. Lesson 4 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "graph"
     },
@@ -62,14 +62,14 @@ export const M6_LESSON4_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Invite students who used different scales for Problem 1 to share their work",
-      teacherEditionBasis: "Problem Set (10 minutes) NOTES ON Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be THE PROBLEM SET: appropriate to modify the assignment by specifying which Problem 1(a) on the Problem Set may problems they work on first. Some problems do not specify a be the first time your students create method for solving. Students should solve these problems using a bar graph without the scaffold of a the RDW approach used for Application Problems. grid. Bring this to students' attention,...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 4 Problem Set using the official Module 6 scaled bar graph quantities, labels, units, scale, and comparison structures from the Teacher Edition.",
       visualModel: "graph"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: The chart below shows the number of magazines sold by each student. Student Ben Rachel Jeff Stanley Debbie Magazines 300 250 100 450 600 Sold a. Use the chart to draw a bar graph below. Create an appropriate scale for the graph. Number of Magazines Sold by Third-Grade Students Magazines Sold Student b. Explain why you chose the scale for the graph. c. How many fewer magazines did Debbie sell than Ben and Stanley combined? d. How many more magazines did Debbie and Jeff sell than Ben and Rachel? Problem 2: The bar graph shows the number of visitors to a carnival from Monday through Friday. Carnival Visitors Number of 300 Visitors Monday Tuesday Wednesday Thursday Friday Day a. How many fewer visitors were there on the least busy day than on the busiest day? b. How many more visitors attended the carnival on Monday and Tuesday combined than on Thursday and Friday combined?",
+      studentPrompt: "Use the official Module 6 Lesson 4 Problem Set prompts in order. Blank mode preserves the student-facing scaled bar graph workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 6 student workbook, Lesson 4 Problem Set.",
       visualModel: "graph"
     },
@@ -77,7 +77,7 @@ export const M6_LESSON4_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) NOTES ON Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be THE PROBLEM SET: appropriate to modify the assignment by specifying which Problem 1(a) on the Problem Set may problems they work on first. Some problems do not specify a be the first time your students create method for solving. Students should solve these problems using a bar graph without the scaffold of a the RDW approach used for Application Problems. grid. Bring this to students' attention,...",
+      studentPrompt: "Use the official Lesson 4 Problem Set workspace and source-backed scaled bar graph visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 6 Teacher Edition, lesson pages 50-65.",
       visualModel: "graph"
     },
@@ -93,7 +93,7 @@ export const M6_LESSON4_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (10 minutes) Read Line Plots 2.MD.9 (5 minutes) Read Bar Graphs 3.MD.3 (5 minutes) Read Line Plots (5 minutes) Materials: (T) Line plot (Fluency Template 1) pictured to the right (S) Personal white board Note: This activity reviews Grade 2 concepts about line plots in preparation for Topic B. T: (Project the line plot.) This line plot shows how many children are in the families of students in a third-grade class. How many students only have one child in their family? Let's count to find the answer. (Point to the X's as students count.) S:...",
+      studentPrompt: "Debrief focus: connect the Problem Set scaled bar graph displays, scales, labels, comparisons, and answers to the Lesson 4 objective: Solve one- and two-step problems involving graphs.",
       teacherEditionBasis: "Module 6 Teacher Edition, lesson pages 50-65.",
       visualModel: "graph"
     }
@@ -120,7 +120,7 @@ export const M6_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: (Pass out the graph Template.) Let's create a bar graph from the data in the Application Problem. We need to choose a scale that works for the data the graph represents. Talk to a partner: What scale would be best for this data? Why? S: We could count by fives or tens. -> The numbers are big, so that would be a lot of tick marks to draw. -> We could do it by hundreds since the numbers all end in zero."
+        value: "Use the Teacher Edition Lesson 4 scaled bar graph model to connect the official data context, labels, scale or interval, and answer evidence."
       },
       {
         label: "Workbook",
@@ -130,7 +130,7 @@ export const M6_LESSON4_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) NOTES ON Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be THE PROBLEM SET: appropriate to modify the assignment by specifying which Problem 1(a) on the Problem Set may problems they work on first. Some problems do not specify a be the first time your students create method for solving. Students should solve these problems using a bar graph without the scaffold of a the RDW approach used for Application Problems. grid. Bring this to students' attention,..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 4 Problem Set using the official Module 6 scaled bar graph quantities, labels, units, scale, and comparison structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -148,7 +148,7 @@ export const M6_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: The chart below shows the number of magazines sold by each student. Student Ben Rachel Jeff Stanley Debbie Magazines 300 250 100 450 600 Sold a. Use the chart to draw a bar graph below. Create an appropriate scale for the graph. Number of Magazines Sold by Third-Grade Students Magazines Sold Student b. Explain why you chose the scale for the graph. c. How many fewer magazines did Debbie sell than Ben and Stanley combined? d. How many more magazines did Debbie and Jeff sell than Ben and Rachel? Problem 2: The bar graph shows the number of visitors to a carnival from Monday through Friday. Carnival Visitors Number of 300 Visitors Monday Tuesday Wednesday Thursday Friday Day a. How many fewer visitors were there on the least busy day than on the busiest day? b. How many more visitors attended the carnival on Monday and Tuesday combined than on Thursday and Friday combined?"
+        value: "Use the official Module 6 Lesson 4 Problem Set prompts in order. Blank mode preserves the student-facing scaled bar graph workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -162,7 +162,7 @@ export const M6_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) NOTES ON Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be THE PROBLEM SET: appropriate to modify the assignment by specifying which Problem 1(a) on the Problem Set may problems they work on first. Some problems do not specify a be the first time your students create method for solving. Students should solve these problems using a bar graph without the scaffold of a the RDW approach used for Application Problems. grid. Bring this to students' attention,..."
+        value: "Use the official Lesson 4 Problem Set workspace and source-backed scaled bar graph visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -190,7 +190,7 @@ export const M6_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (10 minutes) Read Line Plots 2.MD.9 (5 minutes) Read Bar Graphs 3.MD.3 (5 minutes) Read Line Plots (5 minutes) Materials: (T) Line plot (Fluency Template 1) pictured to the right (S) Personal white board Note: This activity reviews Grade 2 concepts about line plots in preparation for Topic B. T: (Project the line plot.) This line plot shows how many children are in the families of students in a third-grade class. How many students only have one child in their family? Let's count to find the answer. (Point to the X's as students count.) S:..."
+        value: "Debrief focus: connect the Problem Set scaled bar graph displays, scales, labels, comparisons, and answers to the Lesson 4 objective: Solve one- and two-step problems involving graphs."
       },
       {
         label: "Workbook",

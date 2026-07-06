@@ -177,25 +177,25 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
     solvedSourcePageImages: seed.solvedSourcePageImages,
     blankPrompts: [
       seed.patternBlockCover
-        ? `Cover each Teacher Edition target with ${seed.patternBlockCover.unit} pattern blocks, then write the count for each target.`
+        ? `Cover each official Problem Set target with ${seed.patternBlockCover.unit} pattern blocks, then write the count for each target.`
         : seed.roomAreas
-        ? 'Use the Teacher Edition floor plan to compute each room area, compare the rooms, and add the room areas for the whole floor plan.'
+        ? 'Use the official floor-plan labels to compute each room area, compare the rooms, and add the room areas for the whole floor plan.'
         : hasMultipleAreaModels
-        ? 'Complete each Teacher Edition rectangle model, label the side lengths, and write the matching area equation.'
+        ? 'Complete each official rectangle model, label the side lengths, and write the matching area equation.'
         : factorPair
         ? `Build the source rectangle as ${factorPair.rows} rows of ${factorPair.columns} unit squares, then complete the workbook labels and area blanks.`
-        : 'Use the official workbook prompt to complete the drawing, labels, equations, and response blanks.'
+        : sourceSpecificBlankWorkspaceLabel({ number: seed.number, sourcePrompt: seed.sourcePrompt } as ProblemSetCenteredProblem)
     ],
     blankEquations: blankEquationTemplates(seed),
     blankWorkspaceLabel: seed.patternBlockCover
-      ? 'Target outlines and block counts come from the Teacher Edition Problem Set and answer key.'
+      ? 'Use the official Problem Set target outlines and leave the block counts blank for student work.'
       : seed.roomAreas
-      ? 'Use the Teacher Edition room areas and side lengths; the floor plan is solved by decomposing rooms into rectangles.'
+      ? 'Use the official floor-plan side lengths; leave room areas blank until each rectangle is computed.'
       : hasMultipleAreaModels
-      ? 'Each rectangle below represents one Teacher Edition area model from the problem.'
+      ? 'Each rectangle below represents one official area model from the problem.'
       : factorPair
       ? `Show ${factorPair.rows} rows and ${factorPair.columns} columns from the official area model.`
-      : 'Use the official workbook scaffold or figure; preserve its labels, blanks, and units.',
+      : sourceSpecificBlankWorkspaceLabel({ number: seed.number, sourcePrompt: seed.sourcePrompt } as ProblemSetCenteredProblem),
     blankVisualType,
     areaModels,
     patternBlockCover: seed.patternBlockCover,
@@ -248,7 +248,7 @@ function createM4ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
   sections.push({
     kind: 'note',
     label: solved ? 'Teacher Edition answer' : 'Source workspace direction',
-    text: solved ? problem.solvedAnswer : problem.blankWorkspaceLabel ?? 'Complete the official Problem Set figure, labels, equations, and answer sentence.'
+    text: solved ? problem.solvedAnswer : problem.blankWorkspaceLabel ?? sourceSpecificBlankWorkspaceLabel(problem)
   });
 
   return {
@@ -256,6 +256,19 @@ function createM4ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
     sourceNote,
     sections
   };
+}
+
+function sourceSpecificBlankWorkspaceLabel(problem: ProblemSetCenteredProblem): string {
+  const prompt = problem.sourcePrompt.replace(/\s+/g, ' ').trim();
+  return `Use this official Problem ${problem.number} area workspace: ${firstPromptSentence(prompt)}`;
+}
+
+function firstPromptSentence(prompt: string): string {
+  const endIndexes = ['.', '?', '!']
+    .map((mark) => prompt.indexOf(mark))
+    .filter((index) => index >= 0);
+  const end = endIndexes.length ? Math.min(...endIndexes) + 1 : prompt.length;
+  return prompt.slice(0, end).trim();
 }
 
 function m4PatternBlockSections(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'] {

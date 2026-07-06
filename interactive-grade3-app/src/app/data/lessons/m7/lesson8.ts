@@ -6,10 +6,10 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 8 animation: Create a tangram puzzle and observe relationships among...",
-    context: "T: First, we need to make a square.",
+    title: "Lesson 8 animation: Create a tangram puzzle and observe relationships among the shapes.",
+    context: "Use the Teacher Edition Lesson 8 polygon composition workspace with source pieces, joins, outlines, and labels to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "How do you know the triangles in Problem 1 have right angles without having to check with your tool?",
+    teacherPrompt: "Use the source Lesson 8 polygon composition workspace with source pieces, joins, outlines, and labels; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "gram",
       "geometry",
@@ -36,7 +36,7 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: First, we need to make a square. Fold your paper so triangle, quadrilateral, trapezoid, or that a shorter side lies along a longer side. Cut off the square, or by gesturing or drawing on extra strip of paper. Unfold the remaining paper. personal white boards. To preserve the lesson, students may be allowed to (Model.) respond in their first languages.",
+      studentPrompt: "Use the Teacher Edition Lesson 8 polygon composition workspace with source pieces, joins, outlines, and labels to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 114-125. Lesson 8 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -44,24 +44,24 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "How do you know the triangles in Problem 1 have right angles without having to check with your tool?",
-      teacherEditionBasis: "Use the Teacher Edition lesson pages 114-125 for the exact teacher explanation and support sequence.",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 8 work using the official Module 7 polygon composition workspace with source pieces, joins, outlines, and labels from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 8 work using the official Module 7 polygon composition workspace with source pieces, joins, outlines, and labels from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Fold and cut the square on the diagonal. Draw and label your 2 new shapes below. Problem 2: Fold and cut one of the triangles in half. Draw and label your 2 new shapes below. Problem 3: Fold twice, and cut your large triangle. Draw and label your 2 new shapes below.",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 8 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 8 Problem Set prompts in order. Blank mode preserves the student-facing polygon composition workspace with source pieces, joins, outlines, and labels; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 8 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Use the Teacher Edition lesson pages 114-125 for the exact teacher explanation and support sequence.",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 114-125.",
+      studentPrompt: "Use the source-backed Lesson 8 workspace and polygon composition workspace with source pieces, joins, outlines, and labels to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 8; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -76,8 +76,8 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Multiply by 6 3.OA.7 (7 minutes) Equivalent Counting with Units of 8 3.OA.7 (4 minutes) Shade Rectangles of Equal Area 3.G.2 (4 minutes) Multiply by 6 (7 minutes) Materials: (S) Multiply by 6 (1-5) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 6. It works toward students knowing from memory all products of two one-digit numbers. See Lesson 1 for the directions for administration of a Multiply-By Pattern Sheet. T: (Write 5 x 6 = ____.) Let's skip-count up by sixes to find the answer...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 114-125.",
+      studentPrompt: "Debrief focus: connect the Problem Set polygon composition workspace with source pieces, joins, outlines, and labels to the Lesson 8 objective: Create a tangram puzzle and observe relationships among the shapes.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 8; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -103,7 +103,7 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: First, we need to make a square. Fold your paper so triangle, quadrilateral, trapezoid, or that a shorter side lies along a longer side. Cut off the square, or by gesturing or drawing on extra strip of paper. Unfold the remaining paper. personal white boards. To preserve the lesson, students may be allowed to (Model.) respond in their first languages."
+        value: "Use the Teacher Edition Lesson 8 polygon composition workspace with source pieces, joins, outlines, and labels to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -113,11 +113,11 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Use the Teacher Edition lesson pages 114-125 for the exact teacher explanation and support sequence."
+        value: "Problem Set source focus: students complete the Lesson 8 work using the official Module 7 polygon composition workspace with source pieces, joins, outlines, and labels from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "How do you know the triangles in Problem 1 have right angles without having to check with your tool?"
+        value: "Teacher Edition check: preserve the Lesson 8 polygon composition workspace with source pieces, joins, outlines, and labels."
       },
       {
         label: "Workbook",
@@ -127,11 +127,11 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 8 Problem Set."
+        value: "Module 7 student workbook, Lesson 8 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Fold and cut the square on the diagonal. Draw and label your 2 new shapes below. Problem 2: Fold and cut one of the triangles in half. Draw and label your 2 new shapes below. Problem 3: Fold twice, and cut your large triangle. Draw and label your 2 new shapes below."
+        value: "Use the official Module 7 Lesson 8 Problem Set prompts in order. Blank mode preserves the student-facing polygon composition workspace with source pieces, joins, outlines, and labels; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -141,11 +141,11 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 114-125."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 8; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Use the Teacher Edition lesson pages 114-125 for the exact teacher explanation and support sequence."
+        value: "Use the source-backed Lesson 8 workspace and polygon composition workspace with source pieces, joins, outlines, and labels to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -169,11 +169,11 @@ export const M7_LESSON8_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 114-125."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 8; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Multiply by 6 3.OA.7 (7 minutes) Equivalent Counting with Units of 8 3.OA.7 (4 minutes) Shade Rectangles of Equal Area 3.G.2 (4 minutes) Multiply by 6 (7 minutes) Materials: (S) Multiply by 6 (1-5) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 6. It works toward students knowing from memory all products of two one-digit numbers. See Lesson 1 for the directions for administration of a Multiply-By Pattern Sheet. T: (Write 5 x 6 = ____.) Let's skip-count up by sixes to find the answer..."
+        value: "Debrief focus: connect the Problem Set polygon composition workspace with source pieces, joins, outlines, and labels to the Lesson 8 objective: Create a tangram puzzle and observe relationships among the shapes."
       },
       {
         label: "Workbook",

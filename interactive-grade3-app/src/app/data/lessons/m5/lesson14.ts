@@ -8,9 +8,9 @@ export const M5_LESSON14_RUNTIME: LessonRuntimeConfig = {
   lessonAnimation: {
     kind: "number-line",
     title: "Lesson 14 animation: Place fractions on a number line with endpoints 0 and 1.",
-    context: "Part 1: Measure a line of length 1 whole.",
+    context: "Use the Teacher Edition Lesson 14 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
     equation: "0 to 4 on equal intervals of 1",
-    teacherPrompt: "Look at the number line you made for Problem 3. What does each point on the number line mean? 1 (The following response is possible: \"5 marks the distan...",
+    teacherPrompt: "How does the official fraction model show place fractions on a number line with endpoints 0 and 1.?",
     focus: [
       "fraction",
       "number line",
@@ -44,7 +44,7 @@ export const M5_LESSON14_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Part 1: Measure a line of length 1 whole. T: (Model the steps below as students follow along on their personal white boards.) 1. Draw a horizontal line with your ruler that is a bit longer than one of your fraction strips. 2. Place a whole fraction strip just above the line you drew. 3. Make a small mark on your line that is even with the left end of your strip. 4. Label that mark 0 above the line.",
+      studentPrompt: "Use the Teacher Edition Lesson 14 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf, pages 168-177. Lesson 14 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "number-line"
     },
@@ -53,14 +53,14 @@ export const M5_LESSON14_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Look at the number line you made for Problem 3. What does each point on the number line mean? 1 (The following response is possible: \"5 marks the distance from 0-the end of the ribbon-to where Mrs.",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 14 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition.",
       visualModel: "number-line"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Draw a number bond for each fractional unit. Partition the fraction strip to show the unit fractions of the number bond. Use the fraction strip to help you label the fractions on the number line. Be sure to label the fractions at 0 and 1. a. Halves 0 1 b. Thirds 0 1 c. Fourths 0 1 d. Fifths 0 1 Trevor needs to let his puppy outside every quarter (1 fourth) hour to potty train him. Draw and label a number line from 0 hours to 1 hour to show every 1 fourth hour. Include 0 fourths and 4 fourths hour. Label 0 hours and 1 hour, too. 1 1 3. A ribbon is 1 meter long. Mrs. Lee wants to sew a bead every meter. The first bead is at meter. The 5 5 last bead is at 1 meter. Draw and label a number line from 0 meters to 1 meter to show where Mrs. Lee will sew beads. Label all the fractions, including 0 fifths and 5 fifths. Label 0 meters and 1 meter, too.",
+      studentPrompt: "Use the official Module 5 Lesson 14 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 5 student workbook, Lesson 14 Problem Set.",
       visualModel: "number-line"
     },
@@ -68,7 +68,7 @@ export const M5_LESSON14_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 14 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 168-177.",
       visualModel: "number-line"
     },
@@ -84,7 +84,7 @@ export const M5_LESSON14_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (8 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Division 3.OA.2 (8 minutes) Counting by Fractional Units 3.NF.1, 3.NF.3 (3 minutes) Unit Fractions in 1 Whole 3.NF.1 (1 minute) Division (8 minutes) Materials: (T) Timer (S) Personal white board or paper Note: This activity supports fluency with division facts. T: Write as many different division facts as you can in the next three minutes. Take your mark, get set, go! S: (Work independently.) T: (At three minutes.) Share your work with your partner. Check to see if your partner's problems are correct. S: (Work with a partner....",
+      studentPrompt: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 14 objective: Place fractions on a number line with endpoints 0 and 1.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 168-177.",
       visualModel: "number-line"
     }
@@ -111,7 +111,7 @@ export const M5_LESSON14_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Part 1: Measure a line of length 1 whole. T: (Model the steps below as students follow along on their personal white boards.) 1. Draw a horizontal line with your ruler that is a bit longer than one of your fraction strips. 2. Place a whole fraction strip just above the line you drew. 3. Make a small mark on your line that is even with the left end of your strip. 4. Label that mark 0 above the line."
+        value: "Use the Teacher Edition Lesson 14 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence."
       },
       {
         label: "Workbook",
@@ -121,7 +121,7 @@ export const M5_LESSON14_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 14 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M5_LESSON14_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Draw a number bond for each fractional unit. Partition the fraction strip to show the unit fractions of the number bond. Use the fraction strip to help you label the fractions on the number line. Be sure to label the fractions at 0 and 1. a. Halves 0 1 b. Thirds 0 1 c. Fourths 0 1 d. Fifths 0 1 Trevor needs to let his puppy outside every quarter (1 fourth) hour to potty train him. Draw and label a number line from 0 hours to 1 hour to show every 1 fourth hour. Include 0 fourths and 4 fourths hour. Label 0 hours and 1 hour, too. 1 1 3. A ribbon is 1 meter long. Mrs. Lee wants to sew a bead every meter. The first bead is at meter. The 5 5 last bead is at 1 meter. Draw and label a number line from 0 meters to 1 meter to show where Mrs. Lee will sew beads. Label all the fractions, including 0 fifths and 5 fifths. Label 0 meters and 1 meter, too."
+        value: "Use the official Module 5 Lesson 14 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -153,7 +153,7 @@ export const M5_LESSON14_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 14 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -181,7 +181,7 @@ export const M5_LESSON14_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (8 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Division 3.OA.2 (8 minutes) Counting by Fractional Units 3.NF.1, 3.NF.3 (3 minutes) Unit Fractions in 1 Whole 3.NF.1 (1 minute) Division (8 minutes) Materials: (T) Timer (S) Personal white board or paper Note: This activity supports fluency with division facts. T: Write as many different division facts as you can in the next three minutes. Take your mark, get set, go! S: (Work independently.) T: (At three minutes.) Share your work with your partner. Check to see if your partner's problems are correct. S: (Work with a partner...."
+        value: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 14 objective: Place fractions on a number line with endpoints 0 and 1."
       },
       {
         label: "Workbook",

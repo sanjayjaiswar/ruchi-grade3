@@ -5,9 +5,9 @@ export const M7_LESSON30_RUNTIME: LessonRuntimeConfig = {
   lessonAnimation: {
     kind: "geometry",
     title: "Lesson 30 animation: Share and critique peer strategies for problem solving.",
-    context: "labeled… T: Read Problem 3 from yesterday's Problem Set.",
+    context: "Use the Teacher Edition Lesson 30 critique, reflection, or fluency workspace with the official response structure to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "How did today's Problem Set or critiquing tool help you analyze your classmates' work?",
+    teacherPrompt: "Use the source Lesson 30 critique, reflection, or fluency workspace with the official response structure; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "geometry",
       "source labels"
@@ -33,7 +33,7 @@ export const M7_LESSON30_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "labeled... T: Read Problem 3 from yesterday's Problem Set. He wrote the equation ____, which S: (Read: Jeremiah and Hayley use a piece of rope to makes sense because ... mark a square space for their booth at the science fair. He found the length of the rope The area of their space is 49 square feet.",
+      studentPrompt: "Use the Teacher Edition Lesson 30 critique, reflection, or fluency workspace with the official response structure to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 392-419. Lesson 30 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -41,24 +41,24 @@ export const M7_LESSON30_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "How did today's Problem Set or critiquing tool help you analyze your classmates' work?",
-      teacherEditionBasis: "Problem Set (critiquing tool) to establish expectations for the group members who are critiquing their classmate's solution. Remind students to show their appreciation to classmates, both for sharing their work and for providing feedback about their work. Inform students that a timer will be set to let them know when they should transition to a new presenter, if appropriate for the class. Provide each group with a talking tool (e.g., a craft stick) to establish a protocol for only one student in the group to talk while the others listen, if approp...",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 30 work using the official Module 7 critique, reflection, or fluency workspace with the official response structure from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 30 work using the official Module 7 critique, reflection, or fluency workspace with the official response structure from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use this form to critique your classmate's problem-solving work. Classmate: Problem Number: Strategies My Classmate Used: Things My Classmate Did Well: Suggestions for Improvement: Strategies I Would Like to Try Based on My Classmate's Work:",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 30 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 30 Problem Set prompts in order. Blank mode preserves the student-facing critique, reflection, or fluency workspace with the official response structure; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 30 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (critiquing tool) to establish expectations for the group members who are critiquing their classmate's solution. Remind students to show their appreciation to classmates, both for sharing their work and for providing feedback about their work. Inform students that a timer will be set to let them know when they should transition to a new presenter, if appropriate for the class. Provide each group with a talking tool (e.g., a craft stick) to establish a protocol for only one student in the group to talk while the others listen, if approp...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 392-419.",
+      studentPrompt: "Use the source-backed Lesson 30 workspace and critique, reflection, or fluency workspace with the official response structure to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 30; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -73,8 +73,8 @@ export const M7_LESSON30_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Multiply by 9 3.OA.7 (8 minutes) Multiply and Divide 3.OA.7 (4 minutes) Multiply by 9 (8 minutes) Materials: (S) Multiply by 9 (6-10) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 9. It works toward students knowing from memory all products of two one-digit numbers. See Lesson 1 for the directions for administration of a Multiply-By Pattern Sheet. T: (Write 7 x 9 = ____.) Let's skip-count up by nines. I'll raise a finger for each nine. (Raise a finger for each number to track the cou...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 392-419.",
+      studentPrompt: "Debrief focus: connect the Problem Set critique, reflection, or fluency workspace with the official response structure to the Lesson 30 objective: Share and critique peer strategies for problem solving.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 30; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -100,7 +100,7 @@ export const M7_LESSON30_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "labeled... T: Read Problem 3 from yesterday's Problem Set. He wrote the equation ____, which S: (Read: Jeremiah and Hayley use a piece of rope to makes sense because ... mark a square space for their booth at the science fair. He found the length of the rope The area of their space is 49 square feet."
+        value: "Use the Teacher Edition Lesson 30 critique, reflection, or fluency workspace with the official response structure to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -110,11 +110,11 @@ export const M7_LESSON30_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (critiquing tool) to establish expectations for the group members who are critiquing their classmate's solution. Remind students to show their appreciation to classmates, both for sharing their work and for providing feedback about their work. Inform students that a timer will be set to let them know when they should transition to a new presenter, if appropriate for the class. Provide each group with a talking tool (e.g., a craft stick) to establish a protocol for only one student in the group to talk while the others listen, if approp..."
+        value: "Problem Set source focus: students complete the Lesson 30 work using the official Module 7 critique, reflection, or fluency workspace with the official response structure from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "How did today's Problem Set or critiquing tool help you analyze your classmates' work?"
+        value: "Teacher Edition check: preserve the Lesson 30 critique, reflection, or fluency workspace with the official response structure."
       },
       {
         label: "Workbook",
@@ -124,11 +124,11 @@ export const M7_LESSON30_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 30 Problem Set."
+        value: "Module 7 student workbook, Lesson 30 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Use this form to critique your classmate's problem-solving work. Classmate: Problem Number: Strategies My Classmate Used: Things My Classmate Did Well: Suggestions for Improvement: Strategies I Would Like to Try Based on My Classmate's Work:"
+        value: "Use the official Module 7 Lesson 30 Problem Set prompts in order. Blank mode preserves the student-facing critique, reflection, or fluency workspace with the official response structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -138,11 +138,11 @@ export const M7_LESSON30_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 392-419."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 30; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem Set (critiquing tool) to establish expectations for the group members who are critiquing their classmate's solution. Remind students to show their appreciation to classmates, both for sharing their work and for providing feedback about their work. Inform students that a timer will be set to let them know when they should transition to a new presenter, if appropriate for the class. Provide each group with a talking tool (e.g., a craft stick) to establish a protocol for only one student in the group to talk while the others listen, if approp..."
+        value: "Use the source-backed Lesson 30 workspace and critique, reflection, or fluency workspace with the official response structure to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -166,11 +166,11 @@ export const M7_LESSON30_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 392-419."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 30; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Multiply by 9 3.OA.7 (8 minutes) Multiply and Divide 3.OA.7 (4 minutes) Multiply by 9 (8 minutes) Materials: (S) Multiply by 9 (6-10) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 9. It works toward students knowing from memory all products of two one-digit numbers. See Lesson 1 for the directions for administration of a Multiply-By Pattern Sheet. T: (Write 7 x 9 = ____.) Let's skip-count up by nines. I'll raise a finger for each nine. (Raise a finger for each number to track the cou..."
+        value: "Debrief focus: connect the Problem Set critique, reflection, or fluency workspace with the official response structure to the Lesson 30 objective: Share and critique peer strategies for problem solving."
       },
       {
         label: "Workbook",

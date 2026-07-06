@@ -7,10 +7,10 @@ export const M4_LESSON16_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "area-model",
-    title: "Lesson 16 animation: Apply knowledge of area to determine areas of rooms in...",
-    context: "Option 1: Create a floor plan with different side lengths for given areas.",
+    title: "Lesson 16 animation: Apply knowledge of area to determine areas of rooms in a given floor plan.",
+    context: "Use the Teacher Edition Lesson 16 area model to connect the official figure, side lengths, unit squares, and area equation.",
     equation: "3 rows x 10 columns = 30 square units",
-    teacherPrompt: "Explain to a partner how you found the side lengths of the whole house without using your ruler to measure.",
+    teacherPrompt: "How does the official area model show apply knowledge of area to determine areas of rooms in a given floor plan.?",
     focus: [
       "area",
       "square unit",
@@ -37,7 +37,7 @@ export const M4_LESSON16_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Option 1: Create a floor plan with different side lengths for given areas. Students work with a partner to create a floor plan with the areas of the rooms that they found. The task is for students to find new side lengths for each room. Students should use their answers from the Problem Set to ensure that they find different side lengths with the same area.",
+      studentPrompt: "Use the Teacher Edition Lesson 16 area model to connect the official figure, side lengths, unit squares, and area equation.",
       teacherEditionBasis: "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf, pages 196-204. Lesson 16 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "area-model"
     },
@@ -46,14 +46,14 @@ export const M4_LESSON16_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Explain to a partner how you found the side lengths of the whole house without using your ruler to measure.",
-      teacherEditionBasis: "Use the Teacher Edition lesson pages 196-204 for the exact teacher explanation and support sequence.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 16 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition.",
       visualModel: "area-model"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Record the new side lengths you have chosen for each of the rooms and show that these side lengths equal the required area. For non-rectangular rooms, record the side lengths and areas of the small rectangles. Then, show how the areas of the small rectangles equal the required area. Room New Side Lengths Bedroom 1: 60 sq cm Bedroom 2: 56 sq cm Kitchen: 42 sq cm plan. Room New Side Lengths Hallway: 24 sq cm Bathroom: 25 sq cm Dining Room: 28 sq cm Living Room: 88 sq cm plan.",
+      studentPrompt: "Use the official Module 4 Lesson 16 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 4 student workbook, Lesson 16 Problem Set.",
       visualModel: "area-model"
     },
@@ -61,7 +61,7 @@ export const M4_LESSON16_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Use the Teacher Edition lesson pages 196-204 for the exact teacher explanation and support sequence.",
+      studentPrompt: "Use the official Lesson 16 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 196-204.",
       visualModel: "area-model"
     },
@@ -77,7 +77,7 @@ export const M4_LESSON16_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Group Counting 3.OA.1 (3 minutes) Multiply by 9 3.OA.7 (7 minutes) Find the Area 3.MD.7 (5 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Instruct students to count forward and backward, occasionally changing the direction of the count. Sixes to 60 Sevens to 70 Eights to 80 Multiply by 9 (7 minutes) Materials: (S) Multiply by 9 (6-10) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 9. It works toward students k...",
+      studentPrompt: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 16 objective: Apply knowledge of area to determine areas of rooms in a given floor plan.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 196-204.",
       visualModel: "area-model"
     }
@@ -104,7 +104,7 @@ export const M4_LESSON16_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Option 1: Create a floor plan with different side lengths for given areas. Students work with a partner to create a floor plan with the areas of the rooms that they found. The task is for students to find new side lengths for each room. Students should use their answers from the Problem Set to ensure that they find different side lengths with the same area."
+        value: "Use the Teacher Edition Lesson 16 area model to connect the official figure, side lengths, unit squares, and area equation."
       },
       {
         label: "Workbook",
@@ -114,7 +114,7 @@ export const M4_LESSON16_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Use the Teacher Edition lesson pages 196-204 for the exact teacher explanation and support sequence."
+        value: "Problem Set (10 minutes): Students complete the Lesson 16 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -132,7 +132,7 @@ export const M4_LESSON16_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Record the new side lengths you have chosen for each of the rooms and show that these side lengths equal the required area. For non-rectangular rooms, record the side lengths and areas of the small rectangles. Then, show how the areas of the small rectangles equal the required area. Room New Side Lengths Bedroom 1: 60 sq cm Bedroom 2: 56 sq cm Kitchen: 42 sq cm plan. Room New Side Lengths Hallway: 24 sq cm Bathroom: 25 sq cm Dining Room: 28 sq cm Living Room: 88 sq cm plan."
+        value: "Use the official Module 4 Lesson 16 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -146,7 +146,7 @@ export const M4_LESSON16_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Use the Teacher Edition lesson pages 196-204 for the exact teacher explanation and support sequence."
+        value: "Use the official Lesson 16 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -174,7 +174,7 @@ export const M4_LESSON16_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Group Counting 3.OA.1 (3 minutes) Multiply by 9 3.OA.7 (7 minutes) Find the Area 3.MD.7 (5 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Instruct students to count forward and backward, occasionally changing the direction of the count. Sixes to 60 Sevens to 70 Eights to 80 Multiply by 9 (7 minutes) Materials: (S) Multiply by 9 (6-10) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 9. It works toward students k..."
+        value: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 16 objective: Apply knowledge of area to determine areas of rooms in a given floor plan."
       },
       {
         label: "Workbook",

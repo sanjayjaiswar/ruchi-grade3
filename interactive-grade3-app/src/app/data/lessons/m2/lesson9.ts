@@ -8,10 +8,10 @@ export const M2_LESSON9_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 9 animation: Decompose a liter to reason about the size of 1 liter,...",
+    title: "Lesson 9 animation: Decompose a liter to reason about the size of 1 liter,",
     context: "Use the teacher-edition lesson pages to teach: Decompose a liter to reason about the size of 1 liter, 100 milliliters, 10 milliliters, and 1 milliliter.",
     equation: "Measure and label in kg; keep the unit with the number",
-    teacherPrompt: "Revisit predictions from Part 1. Lead a discussion about why students may have thought taller containers had larger capacities. Guide students to articu...",
+    teacherPrompt: "Revisit predictions from Part 1. Lead a discussion about why students may have thought taller containers had larger capacities. Guide students to articu.",
     focus: [
       "decompose",
       "liter",
@@ -51,14 +51,14 @@ export const M2_LESSON9_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Revisit predictions from Part 1. Lead a discussion about why students may have thought taller containers had larger capacities. Guide students to articulate understanding about conservation and capacity",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should only need to complete Problems F and G. You may choose to work through these problems as a class, have students work in pairs, or have students work individually. Students should do their personal best to complete the remaining problems within the allotted 10 minutes.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 9 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "measurement"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Part 1 a. Predict whether each container holds less than, more than, or about the same as 1 liter. Container 1 holds less than / more than / about the same as 1 liter. Actual: Container 2 holds less than / more than / about the same as 1 liter. Actual: Container 3 holds less than / more than / about the same as 1 liter. Actual: Container 4 holds less than / more than / about the same as 1 liter. Actual: b. After measuring, what surprised you? Why? Part 2 c. Illustrate and describe the process of decomposing 1 liter of water into 10 smaller units. 10 milliliters, and 1 milliliter. d. Illustrate and describe the process of decomposing Cup K into 10 smaller units. e. Illustrate and describe the process of decomposing Cup L into 10 smaller units. f. What is the same about decomposing 1 liter into milliliters and decomposing 1 kilogram into grams? g. One liter of water weighs 1 kilogram. How much does 1 milliliter of water weigh? Explain how you know. 10 milliliters, and 1 mil...",
+      studentPrompt: "Use the official Module 2 Lesson 9 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 9 Problem Set.",
       visualModel: "measurement"
     },
@@ -66,7 +66,7 @@ export const M2_LESSON9_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should only need to complete Problems F and G. You may choose to work through these problems as a class, have students work in pairs, or have students work individually. Students should do their personal best to complete the remaining problems within the allotted 10 minutes.",
+      studentPrompt: "Use the official Lesson 9 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 106-115.",
       visualModel: "measurement"
     },
@@ -82,7 +82,7 @@ export const M2_LESSON9_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) 1 liter into milliliters following the same Total Time (60 minutes) procedure used to decompose 1 kilogram into grams used in Lesson 6. They make connections between Fluency Practice (4 minutes) metric units and the base ten place value system. The opportunity to make these connections comes from Decompose 1 Kilogram 3.MD.2 (4 minutes) introducing milliliters, which the standards do not include until Grade 4 Decompose 1 Kilogram (4 minutes) (4.MD.1). Although milliliters are used in Module 2, they are not assessed. Materials: (S) Personal white board Note: Decomposing 1 kilogram us...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 9 objective: Decompose a liter to reason about the size of 1 liter, 100 milliliters, 10 milliliters, and 1 milliliter.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 106-115.",
       visualModel: "measurement"
     }
@@ -119,7 +119,7 @@ export const M2_LESSON9_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should only need to complete Problems F and G. You may choose to work through these problems as a class, have students work in pairs, or have students work individually. Students should do their personal best to complete the remaining problems within the allotted 10 minutes."
+        value: "Problem Set (10 minutes): Students complete the Lesson 9 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -137,7 +137,7 @@ export const M2_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Part 1 a. Predict whether each container holds less than, more than, or about the same as 1 liter. Container 1 holds less than / more than / about the same as 1 liter. Actual: Container 2 holds less than / more than / about the same as 1 liter. Actual: Container 3 holds less than / more than / about the same as 1 liter. Actual: Container 4 holds less than / more than / about the same as 1 liter. Actual: b. After measuring, what surprised you? Why? Part 2 c. Illustrate and describe the process of decomposing 1 liter of water into 10 smaller units. 10 milliliters, and 1 milliliter. d. Illustrate and describe the process of decomposing Cup K into 10 smaller units. e. Illustrate and describe the process of decomposing Cup L into 10 smaller units. f. What is the same about decomposing 1 liter into milliliters and decomposing 1 kilogram into grams? g. One liter of water weighs 1 kilogram. How much does 1 milliliter of water weigh? Explain how you know. 10 milliliters, and 1 mil..."
+        value: "Use the official Module 2 Lesson 9 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -151,7 +151,7 @@ export const M2_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should only need to complete Problems F and G. You may choose to work through these problems as a class, have students work in pairs, or have students work individually. Students should do their personal best to complete the remaining problems within the allotted 10 minutes."
+        value: "Use the official Lesson 9 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -179,7 +179,7 @@ export const M2_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) 1 liter into milliliters following the same Total Time (60 minutes) procedure used to decompose 1 kilogram into grams used in Lesson 6. They make connections between Fluency Practice (4 minutes) metric units and the base ten place value system. The opportunity to make these connections comes from Decompose 1 Kilogram 3.MD.2 (4 minutes) introducing milliliters, which the standards do not include until Grade 4 Decompose 1 Kilogram (4 minutes) (4.MD.1). Although milliliters are used in Module 2, they are not assessed. Materials: (S) Personal white board Note: Decomposing 1 kilogram us..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 9 objective: Decompose a liter to reason about the size of 1 liter, 100 milliliters, 10 milliliters, and 1 milliliter."
       },
       {
         label: "Workbook",

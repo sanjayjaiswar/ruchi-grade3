@@ -8,10 +8,10 @@ export const M4_LESSON14_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "area-model",
-    title: "Lesson 14 animation: Find areas by decomposing into rectangles or completing...",
-    context: "Choose an appropriate method for finding the area of a composite shape.",
+    title: "Lesson 14 animation: Find areas by decomposing into rectangles or completing composite figures to form rectangles.",
+    context: "Use the Teacher Edition Lesson 14 area model to connect the official figure, side lengths, unit squares, and area equation.",
     equation: "2 rows x 3 columns = 6 square units",
-    teacherPrompt: "Lead a discussion about the strategy choice for Problems 1(a) and 1(b). Could the strategies have been reversed for these two problems?",
+    teacherPrompt: "How does the official area model show find areas by decomposing into rectangles or completing composite figures to form rectangles.?",
     focus: [
       "area",
       "square unit",
@@ -38,7 +38,7 @@ export const M4_LESSON14_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Choose an appropriate method for finding the area of a composite shape. Distribute one Problem Set to each student. Project the shape on the right. 2 cm 3 cm T: What two strategies did we learn yesterday to find the area of a non-rectangular shape? S: We can break the shape apart into smaller rectangles, S: 5 centimeters! -> 2 centimeters plus 3 centimeters is written support, if necessary: 5 centimeters.",
+      studentPrompt: "Use the Teacher Edition Lesson 14 area model to connect the official figure, side lengths, unit squares, and area equation.",
       teacherEditionBasis: "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf, pages 173-184. Lesson 14 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "area-model"
     },
@@ -47,14 +47,14 @@ export const M4_LESSON14_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Lead a discussion about the strategy choice for Problems 1(a) and 1(b). Could the strategies have been reversed for these two problems?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 14 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition.",
       visualModel: "area-model"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Find the area of each of the following figures. All figures are made up of rectangles. a. 2 cm 3 cm 2 cm 3 cm b. 1m 4m 1m 2m 1m Problem 2: The figure below shows a small rectangle in a big rectangle. Find the area of the shaded part of the figure. 1m 2m 1m 5m 2m 6m figures to form rectangles. A paper rectangle has a length of 6 inches and a width of 8 inches. A square with a side length of 3 inches was cut out of it. What is the area of the remaining paper? 4. Tila and Evan both have paper rectangles measuring 6 cm by 9 cm. Tila cuts a 3 cm by 4 cm rectangle out of hers, and Evan cuts a 2 cm by 6 cm rectangle out of his. Tila says she has more paper left over. Evan says they have the same amount. Who is correct? Show your work below. figures to form rectangles.",
+      studentPrompt: "Use the official Module 4 Lesson 14 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 4 student workbook, Lesson 14 Problem Set.",
       visualModel: "area-model"
     },
@@ -62,7 +62,7 @@ export const M4_LESSON14_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 14 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 173-184.",
       visualModel: "area-model"
     },
@@ -78,7 +78,7 @@ export const M4_LESSON14_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Group Counting 3.OA.1 (3 minutes) Multiply by 8 3.OA.7 (7 minutes) Find the Area 3.MD.7 (5 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Direct students to count forward and backward, occasionally changing the direction of the count. Fours to 40 Sixes to 60 Sevens to 70 Nines to 90 Multiply by 8 (7 minutes) Materials: (S) Multiply by 8 (6-10) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 8. It works toward...",
+      studentPrompt: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 14 objective: Find areas by decomposing into rectangles or completing composite figures to form rectangles.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 173-184.",
       visualModel: "area-model"
     }
@@ -105,7 +105,7 @@ export const M4_LESSON14_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Choose an appropriate method for finding the area of a composite shape. Distribute one Problem Set to each student. Project the shape on the right. 2 cm 3 cm T: What two strategies did we learn yesterday to find the area of a non-rectangular shape? S: We can break the shape apart into smaller rectangles, S: 5 centimeters! -> 2 centimeters plus 3 centimeters is written support, if necessary: 5 centimeters."
+        value: "Use the Teacher Edition Lesson 14 area model to connect the official figure, side lengths, unit squares, and area equation."
       },
       {
         label: "Workbook",
@@ -115,7 +115,7 @@ export const M4_LESSON14_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 14 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -133,7 +133,7 @@ export const M4_LESSON14_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Find the area of each of the following figures. All figures are made up of rectangles. a. 2 cm 3 cm 2 cm 3 cm b. 1m 4m 1m 2m 1m Problem 2: The figure below shows a small rectangle in a big rectangle. Find the area of the shaded part of the figure. 1m 2m 1m 5m 2m 6m figures to form rectangles. A paper rectangle has a length of 6 inches and a width of 8 inches. A square with a side length of 3 inches was cut out of it. What is the area of the remaining paper? 4. Tila and Evan both have paper rectangles measuring 6 cm by 9 cm. Tila cuts a 3 cm by 4 cm rectangle out of hers, and Evan cuts a 2 cm by 6 cm rectangle out of his. Tila says she has more paper left over. Evan says they have the same amount. Who is correct? Show your work below. figures to form rectangles."
+        value: "Use the official Module 4 Lesson 14 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -147,7 +147,7 @@ export const M4_LESSON14_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 14 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -175,7 +175,7 @@ export const M4_LESSON14_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Group Counting 3.OA.1 (3 minutes) Multiply by 8 3.OA.7 (7 minutes) Find the Area 3.MD.7 (5 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Direct students to count forward and backward, occasionally changing the direction of the count. Fours to 40 Sixes to 60 Sevens to 70 Nines to 90 Multiply by 8 (7 minutes) Materials: (S) Multiply by 8 (6-10) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 8. It works toward..."
+        value: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 14 objective: Find areas by decomposing into rectangles or completing composite figures to form rectangles."
       },
       {
         label: "Workbook",

@@ -6,8 +6,8 @@ export const M3_LESSON18_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "tape-diagram",
-    title: "Lesson 18 animation: Solve two-step word problems involving all four operati...",
-    context: "Joe earn each week? T: Draw a model to show the total amount of money Joe has in the bank at the end of the 7 weeks. At my signal, show me your personal white board. (Signal.) T: Do...",
+    title: "Lesson 18 animation: Solve two-step word problems involving all four operations and assess the reasonableness of solutions.",
+    context: "Use the Lesson 18 source model to connect the official Problem Set structure to solve two-step word problems involving all four operations and assess the reasonableness of solutions.",
     equation: "7 units of 6; unknown labeled from the story",
     teacherPrompt: "Draw a model to show the total amount of money Joe has in the bank at the end of the 7 weeks. At my signal, show me your personal white board. (Signal.)",
     focus: [
@@ -46,14 +46,14 @@ export const M3_LESSON18_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Draw a model to show the total amount of money Joe has in the bank at the end of the 7 weeks. At my signal, show me your personal white board. (Signal.)",
-      teacherEditionBasis: "Problem Set (20 minutes) Students should do their personal best to complete the Problem NOTES ON Set within the allotted 20 minutes. For some classes, it may be MULTIPLE MEANS appropriate to modify the assignment by specifying which OF ENGAGEMENT: problems they work on first. Some problems do not specify a When completing the Problem Set, method for solving. Students should solve these problems using students working above grade level the RDW approach used for Application Problems. may enjoy an open-ended extension. Offer students an option to choose on...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 18 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition.",
       visualModel: "tape-diagram"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Rose has 6 pieces of yarn that are each 9 centimeters long. Sasha gives Rose a piece of yarn. Now, Rose has a total of 81 centimeters of yarn. What is the length of the yarn that Sasha gives Rose? Problem 2: Julio spends 29 minutes doing his spelling homework. He then completes each math problem in 4 minutes. There are 7 math problems. How many minutes does Julio spend on his homework in all? the reasonableness of solutions. Problem 3: Pearl buys 125 stickers. She gives 53 stickers to her little sister. Pearl then puts 9 stickers on each page of her album. If she uses all of her remaining stickers, on how many pages does Pearl put stickers?",
+      studentPrompt: "Use the official Module 3 Lesson 18 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 3 student workbook, Lesson 18 Problem Set.",
       visualModel: "tape-diagram"
     },
@@ -61,7 +61,7 @@ export const M3_LESSON18_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (20 minutes) Students should do their personal best to complete the Problem NOTES ON Set within the allotted 20 minutes. For some classes, it may be MULTIPLE MEANS appropriate to modify the assignment by specifying which OF ENGAGEMENT: problems they work on first. Some problems do not specify a When completing the Problem Set, method for solving. Students should solve these problems using students working above grade level the RDW approach used for Application Problems. may enjoy an open-ended extension. Offer students an option to choose on...",
+      studentPrompt: "Use the official Lesson 18 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 225-237.",
       visualModel: "tape-diagram"
     },
@@ -77,7 +77,7 @@ export const M3_LESSON18_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Sprint: Multiply and Divide with 1 and 0 3.OA.5 (8 minutes) Multiply with 10 3.NBT.3 (3 minutes) Group Counting 3.OA.1 (4 minutes) Sprint: Multiply and Divide with 1 and 0 (8 minutes) Materials: (S) Multiply and divide with 1 and 0 Sprint Note: This Sprint reviews Lesson 16, which involves rules and properties when multiplying and dividing with 1 and 0. Multiply with 10 (3 minutes) Note: This fluency activity anticipates Lesson 19, which involves multiplying by multiples of 10 using the place value chart. T: I'll say a fact....",
+      studentPrompt: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 18 objective: Solve two-step word problems involving all four operations and assess the reasonableness of solutions.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 225-237.",
       visualModel: "tape-diagram"
     }
@@ -114,7 +114,7 @@ export const M3_LESSON18_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (20 minutes) Students should do their personal best to complete the Problem NOTES ON Set within the allotted 20 minutes. For some classes, it may be MULTIPLE MEANS appropriate to modify the assignment by specifying which OF ENGAGEMENT: problems they work on first. Some problems do not specify a When completing the Problem Set, method for solving. Students should solve these problems using students working above grade level the RDW approach used for Application Problems. may enjoy an open-ended extension. Offer students an option to choose on..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 18 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -132,7 +132,7 @@ export const M3_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Rose has 6 pieces of yarn that are each 9 centimeters long. Sasha gives Rose a piece of yarn. Now, Rose has a total of 81 centimeters of yarn. What is the length of the yarn that Sasha gives Rose? Problem 2: Julio spends 29 minutes doing his spelling homework. He then completes each math problem in 4 minutes. There are 7 math problems. How many minutes does Julio spend on his homework in all? the reasonableness of solutions. Problem 3: Pearl buys 125 stickers. She gives 53 stickers to her little sister. Pearl then puts 9 stickers on each page of her album. If she uses all of her remaining stickers, on how many pages does Pearl put stickers?"
+        value: "Use the official Module 3 Lesson 18 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -146,7 +146,7 @@ export const M3_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (20 minutes) Students should do their personal best to complete the Problem NOTES ON Set within the allotted 20 minutes. For some classes, it may be MULTIPLE MEANS appropriate to modify the assignment by specifying which OF ENGAGEMENT: problems they work on first. Some problems do not specify a When completing the Problem Set, method for solving. Students should solve these problems using students working above grade level the RDW approach used for Application Problems. may enjoy an open-ended extension. Offer students an option to choose on..."
+        value: "Use the official Lesson 18 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -174,7 +174,7 @@ export const M3_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Sprint: Multiply and Divide with 1 and 0 3.OA.5 (8 minutes) Multiply with 10 3.NBT.3 (3 minutes) Group Counting 3.OA.1 (4 minutes) Sprint: Multiply and Divide with 1 and 0 (8 minutes) Materials: (S) Multiply and divide with 1 and 0 Sprint Note: This Sprint reviews Lesson 16, which involves rules and properties when multiplying and dividing with 1 and 0. Multiply with 10 (3 minutes) Note: This fluency activity anticipates Lesson 19, which involves multiplying by multiples of 10 using the place value chart. T: I'll say a fact...."
+        value: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 18 objective: Solve two-step word problems involving all four operations and assess the reasonableness of solutions."
       },
       {
         label: "Workbook",

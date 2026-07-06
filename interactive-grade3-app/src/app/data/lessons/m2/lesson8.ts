@@ -8,7 +8,7 @@ export const M2_LESSON8_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 8 animation: Solve one-step word problems involving metric weights w...",
+    title: "Lesson 8 animation: Solve one-step word problems involving metric weights w",
     context: "Solve one-step word problems using addition.",
     equation: "Measure and label in kg; keep the unit with the number",
     teacherPrompt: "How did your tape diagrams change in Problems 2(a) and 2(b)?",
@@ -51,14 +51,14 @@ export const M2_LESSON8_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "How did your tape diagrams change in Problems 2(a) and 2(b)?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. estimate to reason about solutions. G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 8 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "measurement"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Tim goes to the market to buy fruits and vegetables. He weighs some string beans and some grapes. List the weights for both the string beans and grapes. The string beans weigh ____ grams. The grapes weigh ____ grams. Problem 2: Use tape diagrams to model the following problems. Keiko and her brother Jiro get weighed at the doctor's office. Keiko weighs 35 kilograms, and Jiro weighs 43 kilograms. a. What is Keiko and Jiro's total weight? Keiko and Jiro weigh ____ kilograms. b. How much heavier is Jiro than Keiko? Jiro is ____ kilograms heavier than Keiko. estimate to reason about solutions. Jared estimates that his houseplant is as heavy as a 5-kilogram bowling ball. Draw a tape diagram to estimate the weight of 3 houseplants. 4. Jane and her 8 friends go apple picking. They share what they pick equally. The total weight of the apples they pick is shown to the right. a. About how many kilograms of apples will Jane take home? 27 kg b. Jane estimates that a pumpkin weighs ab...",
+      studentPrompt: "Use the official Module 2 Lesson 8 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 8 Problem Set.",
       visualModel: "measurement"
     },
@@ -66,7 +66,7 @@ export const M2_LESSON8_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. estimate to reason about solutions. G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+      studentPrompt: "Use the official Lesson 8 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 96-105.",
       visualModel: "measurement"
     },
@@ -82,7 +82,7 @@ export const M2_LESSON8_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (8 minutes) Divide Grams and Kilograms 3.MD.2 (2 minutes) Determine the Unit of Measure 3.MD.2 (2 minutes) Group Counting 3.OA.1 (4 minutes) Divide Grams and Kilograms (2 minutes) Note: This activity reviews the decomposition of 1 kg, 100 g, and 10 g from Lesson 6, as well as division skills using units of 10 from Module 1. T: (Project 10 g divided by 10 = ___.) Read the division sentence. S: 10 grams divided by 10 = 1 gram. Continue with the following possible sequence: 100 g divided by 10 and 1,000 g divided by 10. NOTES ON MULTIPLE MEANS Determine the Unit of Measure (2...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 8 objective: Solve one-step word problems involving metric weights within 100 and estimate to reason about solutions.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 96-105.",
       visualModel: "measurement"
     }
@@ -119,7 +119,7 @@ export const M2_LESSON8_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. estimate to reason about solutions. G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+        value: "Problem Set (10 minutes): Students complete the Lesson 8 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -137,7 +137,7 @@ export const M2_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Tim goes to the market to buy fruits and vegetables. He weighs some string beans and some grapes. List the weights for both the string beans and grapes. The string beans weigh ____ grams. The grapes weigh ____ grams. Problem 2: Use tape diagrams to model the following problems. Keiko and her brother Jiro get weighed at the doctor's office. Keiko weighs 35 kilograms, and Jiro weighs 43 kilograms. a. What is Keiko and Jiro's total weight? Keiko and Jiro weigh ____ kilograms. b. How much heavier is Jiro than Keiko? Jiro is ____ kilograms heavier than Keiko. estimate to reason about solutions. Jared estimates that his houseplant is as heavy as a 5-kilogram bowling ball. Draw a tape diagram to estimate the weight of 3 houseplants. 4. Jane and her 8 friends go apple picking. They share what they pick equally. The total weight of the apples they pick is shown to the right. a. About how many kilograms of apples will Jane take home? 27 kg b. Jane estimates that a pumpkin weighs ab..."
+        value: "Use the official Module 2 Lesson 8 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -151,7 +151,7 @@ export const M2_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. estimate to reason about solutions. G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+        value: "Use the official Lesson 8 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -179,7 +179,7 @@ export const M2_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (8 minutes) Divide Grams and Kilograms 3.MD.2 (2 minutes) Determine the Unit of Measure 3.MD.2 (2 minutes) Group Counting 3.OA.1 (4 minutes) Divide Grams and Kilograms (2 minutes) Note: This activity reviews the decomposition of 1 kg, 100 g, and 10 g from Lesson 6, as well as division skills using units of 10 from Module 1. T: (Project 10 g divided by 10 = ___.) Read the division sentence. S: 10 grams divided by 10 = 1 gram. Continue with the following possible sequence: 100 g divided by 10 and 1,000 g divided by 10. NOTES ON MULTIPLE MEANS Determine the Unit of Measure (2..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 8 objective: Solve one-step word problems involving metric weights within 100 and estimate to reason about solutions."
       },
       {
         label: "Workbook",

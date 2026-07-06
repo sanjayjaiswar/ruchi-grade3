@@ -29,7 +29,7 @@ export const M1_LESSON1_RUNTIME: LessonRuntimeConfig = {
       id: "source-goal",
       title: "Lesson 1: source objective",
       shortTitle: "Goal",
-      studentPrompt: "Understand equal groups of as multiplication.",
+      studentPrompt: "Understand equal groups of as.",
       teacherEditionBasis: "EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf, pages 23-33. Lesson 1 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "equal-groups"
     },
@@ -46,7 +46,7 @@ export const M1_LESSON1_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "On the first page, what did you notice about the answers to your problems?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Some problems do not specify a method for solving. This is an intentional reduction of scaffolding that invokes MP.5, Use Appropriate Tools Strategically. Students should solve these problems using the RDW approach used for Application Problems. For some classes, it may be appropriate to modify the assignment by specifying which problems students should work on first. With this option, let the purposeful sequencing of the Problem S...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 1 Problem Set using the lesson models from the Teacher Edition.",
       visualModel: "equal-groups"
     },
     {
@@ -61,7 +61,7 @@ export const M1_LESSON1_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Some problems do not specify a method for solving. This is an intentional reduction of scaffolding that invokes MP.5, Use Appropriate Tools Strategically. Students should solve these problems using the RDW approach used for Application Problems. For some classes, it may be appropriate to modify the assignment by specifying which problems students should work on first. With this option, let the purposeful sequencing of the Problem S...",
+      studentPrompt: "Use the official Lesson 1 Problem Set workspace and source-backed visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 23-33.",
       visualModel: "equal-groups"
     },
@@ -77,7 +77,7 @@ export const M1_LESSON1_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (5 minutes) Group Counting 3.OA.1 (5 minutes) NOTES ON FLUENCY PRACTICE: Group Counting (5 minutes) Think of fluency as having three goals: 1. Maintenance (staying sharp on Note: Basic skip-counting skills from Grade 2 shift focus in this previously learned skills). Grade 3 activity. Group counting lays a foundation for 2. Preparation (targeted practice for interpreting multiplication as repeated addition. When the current lesson). students count groups in this activity, they add and subtract 3. Anticipation (skills that ensure that groups o...",
+      studentPrompt: "Debrief focus: connect the Problem Set models and answers to the Lesson 1 objective: Understand equal groups of as.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 23-33.",
       visualModel: "equal-groups"
     }
@@ -90,7 +90,7 @@ export const M1_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Understand equal groups of as multiplication."
+        value: "Understand equal groups of as."
       },
       {
         label: "Teacher Edition",
@@ -114,7 +114,7 @@ export const M1_LESSON1_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Some problems do not specify a method for solving. This is an intentional reduction of scaffolding that invokes MP.5, Use Appropriate Tools Strategically. Students should solve these problems using the RDW approach used for Application Problems. For some classes, it may be appropriate to modify the assignment by specifying which problems students should work on first. With this option, let the purposeful sequencing of the Problem S..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 1 Problem Set using the lesson models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -146,7 +146,7 @@ export const M1_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Some problems do not specify a method for solving. This is an intentional reduction of scaffolding that invokes MP.5, Use Appropriate Tools Strategically. Students should solve these problems using the RDW approach used for Application Problems. For some classes, it may be appropriate to modify the assignment by specifying which problems students should work on first. With this option, let the purposeful sequencing of the Problem S..."
+        value: "Use the official Lesson 1 Problem Set workspace and source-backed visuals to model and solve the student-facing problems."
       },
       {
         label: "Teacher Edition",
@@ -174,7 +174,7 @@ export const M1_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (5 minutes) Group Counting 3.OA.1 (5 minutes) NOTES ON FLUENCY PRACTICE: Group Counting (5 minutes) Think of fluency as having three goals: 1. Maintenance (staying sharp on Note: Basic skip-counting skills from Grade 2 shift focus in this previously learned skills). Grade 3 activity. Group counting lays a foundation for 2. Preparation (targeted practice for interpreting multiplication as repeated addition. When the current lesson). students count groups in this activity, they add and subtract 3. Anticipation (skills that ensure that groups o..."
+        value: "Debrief focus: connect the Problem Set models and answers to the Lesson 1 objective: Understand equal groups of as."
       },
       {
         label: "Teacher Edition",

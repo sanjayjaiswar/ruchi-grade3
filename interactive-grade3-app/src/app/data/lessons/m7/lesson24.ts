@@ -9,10 +9,10 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 24 animation: Use rectangles to draw a robot with specified perimeter...",
-    context: "Lesson 24: Use rectangles to draw a robot with specified perimeter 322 measurements, and reason about the different areas that may be produced",
+    title: "Lesson 24 animation: Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced.",
+    context: "Use the Teacher Edition Lesson 24 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "Which body part has the greatest perimeter? Why? The smallest perimeter? Why?",
+    teacherPrompt: "Use the source Lesson 24 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "area",
       "square unit",
@@ -40,7 +40,7 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Lesson 24: Use rectangles to draw a robot with specified perimeter 322 measurements, and reason about the different areas that may be produced",
+      studentPrompt: "Use the Teacher Edition Lesson 24 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 322-331. Lesson 24 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -48,24 +48,24 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Which body part has the greatest perimeter? Why? The smallest perimeter? Why?",
-      teacherEditionBasis: "Problem Set (23 minutes) Students should do their personal best to complete the Problem Set within the allotted 23 minutes. Students who do not finish planning during this time can finish for homework, possibly instead of the Homework provided. Students who finish early may begin constructing their robots.",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 24 work using the official Module 7 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 24 work using the official Module 7 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use the given perimeters in the chart below to choose the widths and lengths of your robot's rectangular body parts. Write the widths and lengths in the chart below. Use the blank rows if you want to add extra rectangular body parts to your robot. Letter Body Part Perimeter Width and Length A arm 14 cm ____ cm by ____cm B arm 14 cm ____ cm by ____cm C leg 18 cm ____ cm by ____cm D leg 18 cm ____ cm by ____cm Double the perimeter E body of one arm = ____ cm by ____cm ____ cm F head 16 cm ____ cm by ____cm Half the perimeter of G neck the head = ____ cm by ____cm ____ cm H ____ cm by ____cm I ____ cm by ____cm My robot has 7 to 9 rectangular body parts. Number of body parts: ____ measurements, and reason about the different areas that may be produced. Use the information in the chart below to plan an environment for your robot. Write the width and length for each rectangular item. Use the blank rows if you want to add extra circular or rectangular items to your robot's envi...",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 24 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 24 Problem Set prompts in order. Blank mode preserves the student-facing robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 24 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (23 minutes) Students should do their personal best to complete the Problem Set within the allotted 23 minutes. Students who do not finish planning during this time can finish for homework, possibly instead of the Homework provided. Students who finish early may begin constructing their robots.",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 322-331.",
+      studentPrompt: "Use the source-backed Lesson 24 workspace and robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 24; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -80,8 +80,8 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Multiply by 6 3.OA.7 (8 minutes) Find the Side Lengths 3.MD.8 (4 minutes) Multiply by 6 (8 minutes) Materials: (S) Multiply by 6 (6-10) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 6. It works toward students knowing from memory all products of two one-digit numbers. See Lesson 1 for the directions for administration of a Multiply-By Pattern Sheet. T: (Write 7 x 6 = ____.) Let's skip-count up by sixes. I'll raise a finger for each six. (Raise a finger for each number to track the co...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 322-331.",
+      studentPrompt: "Debrief focus: connect the Problem Set robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to the Lesson 24 objective: Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 24; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -107,7 +107,7 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Lesson 24: Use rectangles to draw a robot with specified perimeter 322 measurements, and reason about the different areas that may be produced"
+        value: "Use the Teacher Edition Lesson 24 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -117,11 +117,11 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (23 minutes) Students should do their personal best to complete the Problem Set within the allotted 23 minutes. Students who do not finish planning during this time can finish for homework, possibly instead of the Homework provided. Students who finish early may begin constructing their robots."
+        value: "Problem Set source focus: students complete the Lesson 24 work using the official Module 7 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "Which body part has the greatest perimeter? Why? The smallest perimeter? Why?"
+        value: "Teacher Edition check: preserve the Lesson 24 robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships."
       },
       {
         label: "Workbook",
@@ -131,11 +131,11 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 24 Problem Set."
+        value: "Module 7 student workbook, Lesson 24 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Use the given perimeters in the chart below to choose the widths and lengths of your robot's rectangular body parts. Write the widths and lengths in the chart below. Use the blank rows if you want to add extra rectangular body parts to your robot. Letter Body Part Perimeter Width and Length A arm 14 cm ____ cm by ____cm B arm 14 cm ____ cm by ____cm C leg 18 cm ____ cm by ____cm D leg 18 cm ____ cm by ____cm Double the perimeter E body of one arm = ____ cm by ____cm ____ cm F head 16 cm ____ cm by ____cm Half the perimeter of G neck the head = ____ cm by ____cm ____ cm H ____ cm by ____cm I ____ cm by ____cm My robot has 7 to 9 rectangular body parts. Number of body parts: ____ measurements, and reason about the different areas that may be produced. Use the information in the chart below to plan an environment for your robot. Write the width and length for each rectangular item. Use the blank rows if you want to add extra circular or rectangular items to your robot's envi..."
+        value: "Use the official Module 7 Lesson 24 Problem Set prompts in order. Blank mode preserves the student-facing robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -145,11 +145,11 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 322-331."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 24; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem Set (23 minutes) Students should do their personal best to complete the Problem Set within the allotted 23 minutes. Students who do not finish planning during this time can finish for homework, possibly instead of the Homework provided. Students who finish early may begin constructing their robots."
+        value: "Use the source-backed Lesson 24 workspace and robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -173,11 +173,11 @@ export const M7_LESSON24_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 322-331."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 24; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Multiply by 6 3.OA.7 (8 minutes) Find the Side Lengths 3.MD.8 (4 minutes) Multiply by 6 (8 minutes) Materials: (S) Multiply by 6 (6-10) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 6. It works toward students knowing from memory all products of two one-digit numbers. See Lesson 1 for the directions for administration of a Multiply-By Pattern Sheet. T: (Write 7 x 6 = ____.) Let's skip-count up by sixes. I'll raise a finger for each six. (Raise a finger for each number to track the co..."
+        value: "Debrief focus: connect the Problem Set robot planning, drawing, measurement, and evaluation workspace with the official chart rows and perimeter relationships to the Lesson 24 objective: Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced."
       },
       {
         label: "Workbook",

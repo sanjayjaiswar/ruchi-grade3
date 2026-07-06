@@ -9,7 +9,7 @@ export const M3_LESSON17_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 17 animation: Identify patterns in multiplication and division facts...",
+    title: "Lesson 17 animation: Identify patterns in multiplication and division facts using the multiplication table.",
     context: "Problems 1(a) and 1(b) Completed Table from Problem 1: T: Write the products to complete the table in Problem 1.",
     equation: "4 x 2 = (2 x 2) + (2 x 2)",
     teacherPrompt: "Talk to a partner: How do the patterns you discovered in Problem 1 for odd and even products help you when multiplying?",
@@ -53,14 +53,14 @@ export const M3_LESSON17_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Talk to a partner: How do the patterns you discovered in Problem 1 for odd and even products help you when multiplying?",
-      teacherEditionBasis: "Problem 1: T: Write the products to complete the table in Problem 1. Then, color all the squares that have even products orange. T: Let's look at the first orange square in the table. Write the multiplication equation on your board for the product in this square. (Students write.) Are the factors 2 and 1 odd or even? S: 2 is even and 1 is odd. T: Look at the orange square below this one. Write the multiplication equation on your board for the product in this square. (Students write.) Are the factors 2 and 2 odd or even? S: They're both even! T: Work wit...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 17 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition.",
       visualModel: "array"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Write the products into the squares as fast as you can. 1x1 2x1 3x1 4x1 5x1 6x1 7x1 8x1 1x2 2x2 3x2 4x2 5x2 6x2 7x2 8x2 1x3 2x3 3x3 4x3 5x3 6x3 7x3 8x3 1x4 2x4 3x4 4x4 5x4 6x4 7x4 8x4 1x5 2x5 3x5 4x5 5x5 6x5 7x5 8x5 1x6 2x6 3x6 4x6 5x6 6x6 7x6 8x6 1x7 2x7 3x7 4x7 5x7 6x7 7x7 8x7 1x8 2x8 3x8 4x8 5x8 6x8 7x8 8x8 a. Color all the squares with even products orange. Can an even product ever have an odd factor? b. Can an odd product ever have an even factor? c. Everyone knows that 7 x 4 = (5 x 4) + (2 x 4). Explain how this is shown in the table. d. Use what you know to find the product of 7 x 16 or 8 sevens + 8 sevens. multiplication table. Problem 2: In the table, only the products on the diagonal are shown. 1x1 a. Label each product on the diagonal. 2x2 3x3 4x4 b. Draw an array to match each expression in the table below. Then, label 5x5 the number of squares you added to make each new array. The first multiplication table. two arrays have been done for you. 6 x6 1x1 2x2 3x3...",
+      studentPrompt: "Use the official Module 3 Lesson 17 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 3 student workbook, Lesson 17 Problem Set.",
       visualModel: "array"
     },
@@ -68,7 +68,7 @@ export const M3_LESSON17_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem 1: T: Write the products to complete the table in Problem 1. Then, color all the squares that have even products orange. T: Let's look at the first orange square in the table. Write the multiplication equation on your board for the product in this square. (Students write.) Are the factors 2 and 1 odd or even? S: 2 is even and 1 is odd. T: Look at the orange square below this one. Write the multiplication equation on your board for the product in this square. (Students write.) Are the factors 2 and 2 odd or even? S: They're both even! T: Work wit...",
+      studentPrompt: "Use the official Lesson 17 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 212-224.",
       visualModel: "array"
     },
@@ -84,7 +84,7 @@ export const M3_LESSON17_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (11 minutes) Multiply By 10 3.NBT.3 (3 minutes) Multiply or Divide 3.OA.7 (4 minutes) Complete the Number Sentence 3.OA.5 (4 minutes) Multiply with 10 (3 minutes) Note: This fluency activity anticipates Lesson 19, which involves multiplying by multiples of 10 using the place value chart. T: I'll say a fact. You say the whole equation. 10 x 1. S: 10 x 1 = 10. Continue with the following possible sequence: 10 x 2, 10 x 3, 10 x 8, and 10 x 5. T: I'll say a product that is a multiple of 10. You say the multiplication fact starting with 10. 2...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 17 objective: Identify patterns in multiplication and division facts using the multiplication table.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 212-224.",
       visualModel: "array"
     }
@@ -121,7 +121,7 @@ export const M3_LESSON17_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem 1: T: Write the products to complete the table in Problem 1. Then, color all the squares that have even products orange. T: Let's look at the first orange square in the table. Write the multiplication equation on your board for the product in this square. (Students write.) Are the factors 2 and 1 odd or even? S: 2 is even and 1 is odd. T: Look at the orange square below this one. Write the multiplication equation on your board for the product in this square. (Students write.) Are the factors 2 and 2 odd or even? S: They're both even! T: Work wit..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 17 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M3_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Write the products into the squares as fast as you can. 1x1 2x1 3x1 4x1 5x1 6x1 7x1 8x1 1x2 2x2 3x2 4x2 5x2 6x2 7x2 8x2 1x3 2x3 3x3 4x3 5x3 6x3 7x3 8x3 1x4 2x4 3x4 4x4 5x4 6x4 7x4 8x4 1x5 2x5 3x5 4x5 5x5 6x5 7x5 8x5 1x6 2x6 3x6 4x6 5x6 6x6 7x6 8x6 1x7 2x7 3x7 4x7 5x7 6x7 7x7 8x7 1x8 2x8 3x8 4x8 5x8 6x8 7x8 8x8 a. Color all the squares with even products orange. Can an even product ever have an odd factor? b. Can an odd product ever have an even factor? c. Everyone knows that 7 x 4 = (5 x 4) + (2 x 4). Explain how this is shown in the table. d. Use what you know to find the product of 7 x 16 or 8 sevens + 8 sevens. multiplication table. Problem 2: In the table, only the products on the diagonal are shown. 1x1 a. Label each product on the diagonal. 2x2 3x3 4x4 b. Draw an array to match each expression in the table below. Then, label 5x5 the number of squares you added to make each new array. The first multiplication table. two arrays have been done for you. 6 x6 1x1 2x2 3x3..."
+        value: "Use the official Module 3 Lesson 17 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -153,7 +153,7 @@ export const M3_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: T: Write the products to complete the table in Problem 1. Then, color all the squares that have even products orange. T: Let's look at the first orange square in the table. Write the multiplication equation on your board for the product in this square. (Students write.) Are the factors 2 and 1 odd or even? S: 2 is even and 1 is odd. T: Look at the orange square below this one. Write the multiplication equation on your board for the product in this square. (Students write.) Are the factors 2 and 2 odd or even? S: They're both even! T: Work wit..."
+        value: "Use the official Lesson 17 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -181,7 +181,7 @@ export const M3_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (11 minutes) Multiply By 10 3.NBT.3 (3 minutes) Multiply or Divide 3.OA.7 (4 minutes) Complete the Number Sentence 3.OA.5 (4 minutes) Multiply with 10 (3 minutes) Note: This fluency activity anticipates Lesson 19, which involves multiplying by multiples of 10 using the place value chart. T: I'll say a fact. You say the whole equation. 10 x 1. S: 10 x 1 = 10. Continue with the following possible sequence: 10 x 2, 10 x 3, 10 x 8, and 10 x 5. T: I'll say a product that is a multiple of 10. You say the multiplication fact starting with 10. 2..."
+        value: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 17 objective: Identify patterns in multiplication and division facts using the multiplication table."
       },
       {
         label: "Workbook",

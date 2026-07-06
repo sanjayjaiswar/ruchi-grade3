@@ -9,10 +9,10 @@ export const M4_LESSON6_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "area-model",
-    title: "Lesson 6 animation: Draw rows and columns to determine the area of a rectan...",
-    context: "Students have Templates 1 and 2 in their personal white boards, Graduate to a 2 by 3 rectangle in which and are looking at array 1.",
+    title: "Lesson 6 animation: Draw rows and columns to determine the area of a rectangle given an incomplete array.",
+    context: "Use the Teacher Edition Lesson 6 area model to connect the official figure, side lengths, unit squares, and area equation.",
     equation: "3 rows x 2 columns = 6 square units",
-    teacherPrompt: "How did you know where to draw the columns and rows in Problem 1?",
+    teacherPrompt: "How does the official area model show draw rows and columns to determine the area of a rectangle given an incomplete array.?",
     focus: [
       "array",
       "area",
@@ -39,7 +39,7 @@ export const M4_LESSON6_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Students have Templates 1 and 2 in their personal white boards, Graduate to a 2 by 3 rectangle in which and are looking at array 1. tiles or lines are missing. Continue step T: How can an array of square units help you find the area by step until students are ready for of a rectangle? rectangles with larger areas.",
+      studentPrompt: "Use the Teacher Edition Lesson 6 area model to connect the official figure, side lengths, unit squares, and area equation.",
       teacherEditionBasis: "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf, pages 68-79. Lesson 6 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "area-model"
     },
@@ -48,14 +48,14 @@ export const M4_LESSON6_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "How did you know where to draw the columns and rows in Problem 1?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 6 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition.",
       visualModel: "area-model"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Each represents 1 square centimeter. Draw to find the number of rows and columns in each array. Match it to its completed array. Then, fill in the blanks to make a true equation to find each array's area. a. ____ cm x ____ cm = ____ sq cm b. ____ cm x ____ cm = ____ sq cm c. ____ cm x ____ cm = ____ sq cm d. ____ cm x ____ cm = ____ sq cm e. ____ cm x ____ cm = ____ sq cm f. ____ cm x ____ cm = ____ sq cm incomplete array. Sheena skip-counts by sixes to find the total square units in the rectangle below. She says there are 42 square units. Is she right? Explain your answer. 3. The tile floor in Brandon's living room has a rug on it as shown below. How many square tiles are on the floor, including the tiles under the rug? 4. Abdul is creating a stained glass window with square inch glass tiles as shown below. How many more square inch glass tiles does Abdul need to finish his glass window? Explain your answer. incomplete array.",
+      studentPrompt: "Use the official Module 4 Lesson 6 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 4 student workbook, Lesson 6 Problem Set.",
       visualModel: "area-model"
     },
@@ -63,7 +63,7 @@ export const M4_LESSON6_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 6 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 68-79.",
       visualModel: "area-model"
     },
@@ -79,7 +79,7 @@ export const M4_LESSON6_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (4 minutes) Write the Multiplication Fact 3.MD.7 (4 minutes) Products in an Array 3.OA.3 (4 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Instruct students to count forward and backward, occasionally changing the direction of the count. Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 Write the Multiplication Fact (4 minutes) Materials: (S) Personal white board Note: This fluency activity reviews relating multiplication with a...",
+      studentPrompt: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 6 objective: Draw rows and columns to determine the area of a rectangle given an incomplete array.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 68-79.",
       visualModel: "area-model"
     }
@@ -106,7 +106,7 @@ export const M4_LESSON6_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Students have Templates 1 and 2 in their personal white boards, Graduate to a 2 by 3 rectangle in which and are looking at array 1. tiles or lines are missing. Continue step T: How can an array of square units help you find the area by step until students are ready for of a rectangle? rectangles with larger areas."
+        value: "Use the Teacher Edition Lesson 6 area model to connect the official figure, side lengths, unit squares, and area equation."
       },
       {
         label: "Workbook",
@@ -116,7 +116,7 @@ export const M4_LESSON6_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 6 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -134,7 +134,7 @@ export const M4_LESSON6_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Each represents 1 square centimeter. Draw to find the number of rows and columns in each array. Match it to its completed array. Then, fill in the blanks to make a true equation to find each array's area. a. ____ cm x ____ cm = ____ sq cm b. ____ cm x ____ cm = ____ sq cm c. ____ cm x ____ cm = ____ sq cm d. ____ cm x ____ cm = ____ sq cm e. ____ cm x ____ cm = ____ sq cm f. ____ cm x ____ cm = ____ sq cm incomplete array. Sheena skip-counts by sixes to find the total square units in the rectangle below. She says there are 42 square units. Is she right? Explain your answer. 3. The tile floor in Brandon's living room has a rug on it as shown below. How many square tiles are on the floor, including the tiles under the rug? 4. Abdul is creating a stained glass window with square inch glass tiles as shown below. How many more square inch glass tiles does Abdul need to finish his glass window? Explain your answer. incomplete array."
+        value: "Use the official Module 4 Lesson 6 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -148,7 +148,7 @@ export const M4_LESSON6_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 6 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -176,7 +176,7 @@ export const M4_LESSON6_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (4 minutes) Write the Multiplication Fact 3.MD.7 (4 minutes) Products in an Array 3.OA.3 (4 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Instruct students to count forward and backward, occasionally changing the direction of the count. Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 Write the Multiplication Fact (4 minutes) Materials: (S) Personal white board Note: This fluency activity reviews relating multiplication with a..."
+        value: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 6 objective: Draw rows and columns to determine the area of a rectangle given an incomplete array."
       },
       {
         label: "Workbook",

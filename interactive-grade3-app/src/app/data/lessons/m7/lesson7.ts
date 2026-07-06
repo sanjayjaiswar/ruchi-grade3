@@ -4,10 +4,10 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 7 animation: Reason about composing and decomposing polygons using t...",
-    context: "Use tetrominoes to compose polygons.",
+    title: "Lesson 7 animation: Reason about composing and decomposing polygons using tetrominoes.",
+    context: "Use the Teacher Edition Lesson 7 polygon composition workspace with source pieces, joins, outlines, and labels to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "Compare the rectangles you made in Problem 1 to a partner's. How are they the same? How are they different?",
+    teacherPrompt: "Use the source Lesson 7 polygon composition workspace with source pieces, joins, outlines, and labels; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "geometry",
       "source labels"
@@ -33,7 +33,7 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Use tetrominoes to compose polygons. T: (Project or hold up the tetrominoes.) Each of these shapes is called a tetromino. The area of each tetromino is measured in square units. What is the area of each one in square units? S: 4 square units. T: Notice that each square unit shares a whole side with another square.",
+      studentPrompt: "Use the Teacher Edition Lesson 7 polygon composition workspace with source pieces, joins, outlines, and labels to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 97-113. Lesson 7 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -41,24 +41,24 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Compare the rectangles you made in Problem 1 to a partner's. How are they the same? How are they different?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 7 work using the official Module 7 polygon composition workspace with source pieces, joins, outlines, and labels from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 7 work using the official Module 7 polygon composition workspace with source pieces, joins, outlines, and labels from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use tetrominoes to create at least two different rectangles. Then, color the grid below to show how you created your rectangles. You may use the same tetromino more than once. Problem 2: Use tetrominoes to create at least two squares, each with an area of 36 square units. Then, color the grid below to show how you created your squares. You may use the same tetromino more than once. a. Write an equation to show the area of a square above as the sum of the areas of the tetrominoes you used to make the square. b. Write an equation to show the area of a square above as the product of its side lengths. tetrominoes. Problem 3: a. Use tetrominoes to create at least two different rectangles, each with an area of 12 square units. Then, color the grid below to show how you created the rectangles. You may use the same tetromino more than once. b. Explain how you know the area of each rectangle is 12 square units.",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 7 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 7 Problem Set prompts in order. Blank mode preserves the student-facing polygon composition workspace with source pieces, joins, outlines, and labels; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 7 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 97-113.",
+      studentPrompt: "Use the source-backed Lesson 7 workspace and polygon composition workspace with source pieces, joins, outlines, and labels to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 7; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -73,8 +73,8 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Multiply by 5 3.OA.7 (8 minutes) Physiometry 3.G.1 (3 minutes) Classify the Shape 3.G.1 (4 minutes) Multiply by 5 (8 minutes) Materials: (S) Multiply by 5 (610) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 5. It works toward students knowing from memory all products of two one-digit numbers. See Lesson 1 for directions for administration of a Multiply-By Pattern Sheet. T: (Write 7 x 5 = ____.) Let's skip-count up by fives. I'll raise a finger for each five. (Raise a finger for ea...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 97-113.",
+      studentPrompt: "Debrief focus: connect the Problem Set polygon composition workspace with source pieces, joins, outlines, and labels to the Lesson 7 objective: Reason about composing and decomposing polygons using tetrominoes.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 7; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -100,7 +100,7 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Use tetrominoes to compose polygons. T: (Project or hold up the tetrominoes.) Each of these shapes is called a tetromino. The area of each tetromino is measured in square units. What is the area of each one in square units? S: 4 square units. T: Notice that each square unit shares a whole side with another square."
+        value: "Use the Teacher Edition Lesson 7 polygon composition workspace with source pieces, joins, outlines, and labels to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -110,11 +110,11 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set source focus: students complete the Lesson 7 work using the official Module 7 polygon composition workspace with source pieces, joins, outlines, and labels from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "Compare the rectangles you made in Problem 1 to a partner's. How are they the same? How are they different?"
+        value: "Teacher Edition check: preserve the Lesson 7 polygon composition workspace with source pieces, joins, outlines, and labels."
       },
       {
         label: "Workbook",
@@ -124,11 +124,11 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 7 Problem Set."
+        value: "Module 7 student workbook, Lesson 7 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Use tetrominoes to create at least two different rectangles. Then, color the grid below to show how you created your rectangles. You may use the same tetromino more than once. Problem 2: Use tetrominoes to create at least two squares, each with an area of 36 square units. Then, color the grid below to show how you created your squares. You may use the same tetromino more than once. a. Write an equation to show the area of a square above as the sum of the areas of the tetrominoes you used to make the square. b. Write an equation to show the area of a square above as the product of its side lengths. tetrominoes. Problem 3: a. Use tetrominoes to create at least two different rectangles, each with an area of 12 square units. Then, color the grid below to show how you created the rectangles. You may use the same tetromino more than once. b. Explain how you know the area of each rectangle is 12 square units."
+        value: "Use the official Module 7 Lesson 7 Problem Set prompts in order. Blank mode preserves the student-facing polygon composition workspace with source pieces, joins, outlines, and labels; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -138,11 +138,11 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 97-113."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 7; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the source-backed Lesson 7 workspace and polygon composition workspace with source pieces, joins, outlines, and labels to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -166,11 +166,11 @@ export const M7_LESSON7_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 97-113."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 7; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Multiply by 5 3.OA.7 (8 minutes) Physiometry 3.G.1 (3 minutes) Classify the Shape 3.G.1 (4 minutes) Multiply by 5 (8 minutes) Materials: (S) Multiply by 5 (610) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 5. It works toward students knowing from memory all products of two one-digit numbers. See Lesson 1 for directions for administration of a Multiply-By Pattern Sheet. T: (Write 7 x 5 = ____.) Let's skip-count up by fives. I'll raise a finger for each five. (Raise a finger for ea..."
+        value: "Debrief focus: connect the Problem Set polygon composition workspace with source pieces, joins, outlines, and labels to the Lesson 7 objective: Reason about composing and decomposing polygons using tetrominoes."
       },
       {
         label: "Workbook",

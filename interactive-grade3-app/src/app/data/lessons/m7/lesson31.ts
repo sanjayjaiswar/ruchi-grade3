@@ -4,10 +4,10 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 31 animation: Explore and create unconventional representations of on...",
-    context: "T: Study these images. Estimate to decide which shapes have one-half shaded. Discuss your reasoning with a partner. A B C S: Shape A definitely does because the black and white parts...",
+    title: "Lesson 31 animation: Explore and create unconventional representations of one-half.",
+    context: "Use the Teacher Edition Lesson 31 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "Look at our class quilt. How is it possible to have so many different ways to show one-half of the same square?",
+    teacherPrompt: "Use the source Lesson 31 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "geometry",
       "source labels"
@@ -33,7 +33,7 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: Study these images. Estimate to decide which shapes have one-half shaded. Discuss your reasoning with a partner. A B C S: Shape A definitely does because the black and white parts look like they are the same size. -> I think Shape C does, too, because that little black trapezoid just got cut out and flipped over. The black and white parts still look equal. -> I do not think Shape B shows one-half shaded.",
+      studentPrompt: "Use the Teacher Edition Lesson 31 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 420-430. Lesson 31 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -41,24 +41,24 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Look at our class quilt. How is it possible to have so many different ways to show one-half of the same square?",
-      teacherEditionBasis: "Problem Set (analyzing tool) to MULTIPLE MEANS establish your expectation for student analysis. OF ACTION AND Once every student has made at least four representations, EXPRESSION: guide an analysis of the representations to confirm that they If the 36-square-unit square is too accurately represent one-half. Students may work in pairs to do small or otherwise challenging for this or participate in a gallery walk. Students can use the some learners, magnify it, and present Problem Set as a tool to record their analyses. it on an interactive board or a co...",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 31 work using the official Module 7 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 31 work using the official Module 7 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use this form to analyze your classmate's representations of one-half shaded. Does this square Square Describe changes to make so the show one-half Explain why or why not. (letter) square shows one-half shaded. shaded?",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 31 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 31 Problem Set prompts in order. Blank mode preserves the student-facing one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 31 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (analyzing tool) to MULTIPLE MEANS establish your expectation for student analysis. OF ACTION AND Once every student has made at least four representations, EXPRESSION: guide an analysis of the representations to confirm that they If the 36-square-unit square is too accurately represent one-half. Students may work in pairs to do small or otherwise challenging for this or participate in a gallery walk. Students can use the some learners, magnify it, and present Problem Set as a tool to record their analyses. it on an interactive board or a co...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 420-430.",
+      studentPrompt: "Use the source-backed Lesson 31 workspace and one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 31; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -73,8 +73,8 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (14 minutes) Sprint: Multiply or Divide by 9 3.OA.7 (10 minutes) Multiply and Divide 3.OA.7 (4 minutes) Sprint: Multiply or Divide by 9 (10 minutes) Materials: (S) Multiply or Divide by 9 Sprint Note: This Sprint builds fluency with multiplication and division facts using units of 9. Multiply and Divide (4 minutes) Materials: (S) Personal white board NOTES ON MULTIPLE MEANS Note: This activity focuses on student mastery of all products OF ACTION AND and quotients within 100. EXPRESSION: T: (Write 5 x 4 = ___.) Write the multiplication sent...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 420-430.",
+      studentPrompt: "Debrief focus: connect the Problem Set one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to the Lesson 31 objective: Explore and create unconventional representations of one-half.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 31; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -100,7 +100,7 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: Study these images. Estimate to decide which shapes have one-half shaded. Discuss your reasoning with a partner. A B C S: Shape A definitely does because the black and white parts look like they are the same size. -> I think Shape C does, too, because that little black trapezoid just got cut out and flipped over. The black and white parts still look equal. -> I do not think Shape B shows one-half shaded."
+        value: "Use the Teacher Edition Lesson 31 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -110,11 +110,11 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (analyzing tool) to MULTIPLE MEANS establish your expectation for student analysis. OF ACTION AND Once every student has made at least four representations, EXPRESSION: guide an analysis of the representations to confirm that they If the 36-square-unit square is too accurately represent one-half. Students may work in pairs to do small or otherwise challenging for this or participate in a gallery walk. Students can use the some learners, magnify it, and present Problem Set as a tool to record their analyses. it on an interactive board or a co..."
+        value: "Problem Set source focus: students complete the Lesson 31 work using the official Module 7 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "Look at our class quilt. How is it possible to have so many different ways to show one-half of the same square?"
+        value: "Teacher Edition check: preserve the Lesson 31 one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations."
       },
       {
         label: "Workbook",
@@ -124,11 +124,11 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 31 Problem Set."
+        value: "Module 7 student workbook, Lesson 31 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Use this form to analyze your classmate's representations of one-half shaded. Does this square Square Describe changes to make so the show one-half Explain why or why not. (letter) square shows one-half shaded. shaded?"
+        value: "Use the official Module 7 Lesson 31 Problem Set prompts in order. Blank mode preserves the student-facing one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -138,11 +138,11 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 420-430."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 31; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem Set (analyzing tool) to MULTIPLE MEANS establish your expectation for student analysis. OF ACTION AND Once every student has made at least four representations, EXPRESSION: guide an analysis of the representations to confirm that they If the 36-square-unit square is too accurately represent one-half. Students may work in pairs to do small or otherwise challenging for this or participate in a gallery walk. Students can use the some learners, magnify it, and present Problem Set as a tool to record their analyses. it on an interactive board or a co..."
+        value: "Use the source-backed Lesson 31 workspace and one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -166,11 +166,11 @@ export const M7_LESSON31_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 420-430."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 31; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (14 minutes) Sprint: Multiply or Divide by 9 3.OA.7 (10 minutes) Multiply and Divide 3.OA.7 (4 minutes) Sprint: Multiply or Divide by 9 (10 minutes) Materials: (S) Multiply or Divide by 9 Sprint Note: This Sprint builds fluency with multiplication and division facts using units of 9. Multiply and Divide (4 minutes) Materials: (S) Personal white board NOTES ON MULTIPLE MEANS Note: This activity focuses on student mastery of all products OF ACTION AND and quotients within 100. EXPRESSION: T: (Write 5 x 4 = ___.) Write the multiplication sent..."
+        value: "Debrief focus: connect the Problem Set one-half representation workspace with the official shapes, partitions, shaded regions, and equal-area explanations to the Lesson 31 objective: Explore and create unconventional representations of one-half."
       },
       {
         label: "Workbook",

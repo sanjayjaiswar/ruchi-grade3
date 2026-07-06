@@ -6,10 +6,10 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 11 animation: Tessellate to understand perimeter as the boundary of a...",
-    context: "Use the teacher-edition lesson pages to teach: Tessellate to understand perimeter as the boundary of a shape.",
+    title: "Lesson 11 animation: Tessellate to understand perimeter as the boundary of a shape.",
+    context: "Use the Teacher Edition Lesson 11 perimeter workspace with the source side lengths, labels, units, and boundary reasoning to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "Explain to a partner the steps you used to tessellate your shape in Problem 1(a)",
+    teacherPrompt: "Use the source Lesson 11 perimeter workspace with the source side lengths, labels, units, and boundary reasoning; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "perimeter",
       "geometry",
@@ -36,7 +36,7 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Use the teacher-edition lesson pages to teach: Tessellate to understand perimeter as the boundary of a shape.",
+      studentPrompt: "Use the Teacher Edition Lesson 11 perimeter workspace with the source side lengths, labels, units, and boundary reasoning to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 151-157. Lesson 11 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -44,24 +44,24 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Explain to a partner the steps you used to tessellate your shape in Problem 1(a)",
-      teacherEditionBasis: "Problem Set (5 minutes): Students complete tessellation perimeter Problems 3 and 4 as appropriate, measuring with string and comparing perimeter.",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 11 work using the official Module 7 perimeter workspace with the source side lengths, labels, units, and boundary reasoning from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 11 work using the official Module 7 perimeter workspace with the source side lengths, labels, units, and boundary reasoning from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Follow the directions below using the shape you created yesterday. a. Tessellate your shape on a blank piece of paper. b. Color your tessellation to create a pattern. c. Outline the perimeter of your tessellation with a highlighter. d. Use a string to measure the perimeter of your tessellation. Problem 2: Compare the perimeter of your tessellation to a partner's. Whose tessellation has a greater perimeter? How do you know? Problem 3: How could you increase the perimeter of your tessellation?",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 11 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 11 Problem Set prompts in order. Blank mode preserves the student-facing perimeter workspace with the source side lengths, labels, units, and boundary reasoning; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 11 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (5 minutes): Students complete tessellation perimeter Problems 3 and 4 as appropriate, measuring with string and comparing perimeter.",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 151-157.",
+      studentPrompt: "Use the source-backed Lesson 11 workspace and perimeter workspace with the source side lengths, labels, units, and boundary reasoning to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 11; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -76,8 +76,8 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) OF REPRESENTATION: Total Time (60 minutes) Topic C presents two possible optional lessons related to perimeter, including this lesson. The second option is a culminating lesson using the text below, along with the lesson plan Concept Development (50 minutes) found at the end of that text. Burns, Marilyn. Spaghetti and Materials: (T) Shape created in Lesson 10 (S) Shape created in Meatballs for All! A Mathematical Lesson 10, blank piece of paper, crayons, white Story. New York: Scholastic Press, string, black marker, Problem Set 1997. With the Marilyn Burns option, the Problem 1(a-c):...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 151-157.",
+      studentPrompt: "Debrief focus: connect the Problem Set perimeter workspace with the source side lengths, labels, units, and boundary reasoning to the Lesson 11 objective: Tessellate to understand perimeter as the boundary of a shape.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 11; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -103,7 +103,7 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Use the teacher-edition lesson pages to teach: Tessellate to understand perimeter as the boundary of a shape."
+        value: "Use the Teacher Edition Lesson 11 perimeter workspace with the source side lengths, labels, units, and boundary reasoning to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -113,11 +113,11 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (5 minutes): Students complete tessellation perimeter Problems 3 and 4 as appropriate, measuring with string and comparing perimeter."
+        value: "Problem Set source focus: students complete the Lesson 11 work using the official Module 7 perimeter workspace with the source side lengths, labels, units, and boundary reasoning from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "Explain to a partner the steps you used to tessellate your shape in Problem 1(a)"
+        value: "Teacher Edition check: preserve the Lesson 11 perimeter workspace with the source side lengths, labels, units, and boundary reasoning."
       },
       {
         label: "Workbook",
@@ -127,11 +127,11 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 11 Problem Set."
+        value: "Module 7 student workbook, Lesson 11 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Follow the directions below using the shape you created yesterday. a. Tessellate your shape on a blank piece of paper. b. Color your tessellation to create a pattern. c. Outline the perimeter of your tessellation with a highlighter. d. Use a string to measure the perimeter of your tessellation. Problem 2: Compare the perimeter of your tessellation to a partner's. Whose tessellation has a greater perimeter? How do you know? Problem 3: How could you increase the perimeter of your tessellation?"
+        value: "Use the official Module 7 Lesson 11 Problem Set prompts in order. Blank mode preserves the student-facing perimeter workspace with the source side lengths, labels, units, and boundary reasoning; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -141,11 +141,11 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 151-157."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 11; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem Set (5 minutes): Students complete tessellation perimeter Problems 3 and 4 as appropriate, measuring with string and comparing perimeter."
+        value: "Use the source-backed Lesson 11 workspace and perimeter workspace with the source side lengths, labels, units, and boundary reasoning to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -169,11 +169,11 @@ export const M7_LESSON11_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 151-157."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 11; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) OF REPRESENTATION: Total Time (60 minutes) Topic C presents two possible optional lessons related to perimeter, including this lesson. The second option is a culminating lesson using the text below, along with the lesson plan Concept Development (50 minutes) found at the end of that text. Burns, Marilyn. Spaghetti and Materials: (T) Shape created in Lesson 10 (S) Shape created in Meatballs for All! A Mathematical Lesson 10, blank piece of paper, crayons, white Story. New York: Scholastic Press, string, black marker, Problem Set 1997. With the Marilyn Burns option, the Problem 1(a-c):..."
+        value: "Debrief focus: connect the Problem Set perimeter workspace with the source side lengths, labels, units, and boundary reasoning to the Lesson 11 objective: Tessellate to understand perimeter as the boundary of a shape."
       },
       {
         label: "Workbook",

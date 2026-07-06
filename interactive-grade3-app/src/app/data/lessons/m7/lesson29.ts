@@ -8,10 +8,10 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 29 animation: Solve composite area and perimeter problems",
-    context: "Kyle puts two rectangles together to make the L-shaped figure below.",
+    title: "Lesson 29 animation: Solve a variety of word problems involving area and perimeter using all four operations.",
+    context: "Use the Teacher Edition Lesson 29 RDW word-problem model with quantities, labels, units, and written answer evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use composite-rectangle dimensions to find outside perimeter and area",
-    teacherPrompt: "How were you able to figure out the unknown side lengths in Problem 1(a)?",
+    teacherPrompt: "Use the source Lesson 29 RDW word-problem model with quantities, labels, units, and written answer evidence; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "area",
       "square unit",
@@ -35,7 +35,7 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Kyle puts two rectangles together to make the L-shaped figure below. He measures some of the side lengths and records them as shown. 12 in a. Find the perimeter of Kyle's shape. 8 in b. Find the area of Kyle's shape. 6 in c. Kyle makes two copies of the L-shaped 16 in figure to create the rectangle shown below. Find the perimeter of the rectangle.",
+      studentPrompt: "Use the Teacher Edition Lesson 29 RDW word-problem model with quantities, labels, units, and written answer evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 380-391. Lesson 29 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -43,24 +43,24 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "How were you able to figure out the unknown side lengths in Problem 1(a)?",
-      teacherEditionBasis: "Problem 1: Kyle puts two rectangles together to make the L-shaped figure below. He measures some of the side lengths and records them as shown. 12 in a. Find the perimeter of Kyle's shape. 8 in b. Find the area of Kyle's shape. 6 in c. Kyle makes two copies of the L-shaped 16 in figure to create the rectangle shown below. Find the perimeter of the rectangle. In part (a), students apply knowledge of rectangles (opposite sides have equal lengths) to find the information necessary to solve. In part (b), students might estimate to draw lines showing the two...",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 29 work using the official Module 7 RDW word-problem model with quantities, labels, units, and written answer evidence from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 29 work using the official Module 7 RDW word-problem model with quantities, labels, units, and written answer evidence from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Kyle puts two rectangles together to make the L-shaped figure below. He measures some of the side lengths and records them as shown. 8 in 12 in 6 in 16 in a. Find the perimeter of Kyle's shape. b. Find the area of Kyle's shape. c. Kyle makes two copies of the L-shaped figure to create the rectangle shown below. Find the perimeter of the rectangle. 12 in 16 in four operations. Problem 2: Jeremiah and Hayley use a piece of rope to mark a square space for their booth at the science fair. The area of their space is 49 square feet. What is the length of the rope that Jeremiah and Hayley use if they leave a 3-foot opening so they can get in and out of the space? Problem 3: Vivienne draws four identical rectangles as shown below to make a new, larger rectangle. The perimeter of one of the small rectangles is 18 centimeters, and the width is 6 centimeters. What is the perimeter of the new, larger rectangle?",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 29 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 29 Problem Set prompts in order. Blank mode preserves the student-facing RDW word-problem model with quantities, labels, units, and written answer evidence; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 29 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem 1: Kyle puts two rectangles together to make the L-shaped figure below. He measures some of the side lengths and records them as shown. 12 in a. Find the perimeter of Kyle's shape. 8 in b. Find the area of Kyle's shape. 6 in c. Kyle makes two copies of the L-shaped 16 in figure to create the rectangle shown below. Find the perimeter of the rectangle. In part (a), students apply knowledge of rectangles (opposite sides have equal lengths) to find the information necessary to solve. In part (b), students might estimate to draw lines showing the two...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 380-391.",
+      studentPrompt: "Use the source-backed Lesson 29 workspace and RDW word-problem model with quantities, labels, units, and written answer evidence to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 29; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -75,8 +75,8 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (14 minutes) Sprint: Multiply or Divide by 8 3.OA.7 (10 minutes) Find the Perimeter 3.MD.8 (4 minutes) Sprint: Multiply or Divide by 8 (10 minutes) Materials: (S) Multiply or Divide by 8 Sprint Note: This Sprint builds fluency with multiplication and division facts using units of 8. Find the Perimeter (4 minutes) Materials: (S) Personal white board Note: This activity reviews finding perimeter using multiple steps. 3m Area = 24 square m T: (Project the rectangle with a width of 3 m. Inside the rectangle, write Area = 24 square m.) On your...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 380-391.",
+      studentPrompt: "Debrief focus: connect the Problem Set RDW word-problem model with quantities, labels, units, and written answer evidence to the Lesson 29 objective: Solve a variety of word problems involving area and perimeter using all four operations.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 29; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -102,7 +102,7 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Kyle puts two rectangles together to make the L-shaped figure below. He measures some of the side lengths and records them as shown. 12 in a. Find the perimeter of Kyle's shape. 8 in b. Find the area of Kyle's shape. 6 in c. Kyle makes two copies of the L-shaped 16 in figure to create the rectangle shown below. Find the perimeter of the rectangle."
+        value: "Use the Teacher Edition Lesson 29 RDW word-problem model with quantities, labels, units, and written answer evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -112,11 +112,11 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem 1: Kyle puts two rectangles together to make the L-shaped figure below. He measures some of the side lengths and records them as shown. 12 in a. Find the perimeter of Kyle's shape. 8 in b. Find the area of Kyle's shape. 6 in c. Kyle makes two copies of the L-shaped 16 in figure to create the rectangle shown below. Find the perimeter of the rectangle. In part (a), students apply knowledge of rectangles (opposite sides have equal lengths) to find the information necessary to solve. In part (b), students might estimate to draw lines showing the two..."
+        value: "Problem Set source focus: students complete the Lesson 29 work using the official Module 7 RDW word-problem model with quantities, labels, units, and written answer evidence from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "How were you able to figure out the unknown side lengths in Problem 1(a)?"
+        value: "Teacher Edition check: preserve the Lesson 29 RDW word-problem model with quantities, labels, units, and written answer evidence."
       },
       {
         label: "Workbook",
@@ -126,11 +126,11 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 29 Problem Set."
+        value: "Module 7 student workbook, Lesson 29 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Kyle puts two rectangles together to make the L-shaped figure below. He measures some of the side lengths and records them as shown. 8 in 12 in 6 in 16 in a. Find the perimeter of Kyle's shape. b. Find the area of Kyle's shape. c. Kyle makes two copies of the L-shaped figure to create the rectangle shown below. Find the perimeter of the rectangle. 12 in 16 in four operations. Problem 2: Jeremiah and Hayley use a piece of rope to mark a square space for their booth at the science fair. The area of their space is 49 square feet. What is the length of the rope that Jeremiah and Hayley use if they leave a 3-foot opening so they can get in and out of the space? Problem 3: Vivienne draws four identical rectangles as shown below to make a new, larger rectangle. The perimeter of one of the small rectangles is 18 centimeters, and the width is 6 centimeters. What is the perimeter of the new, larger rectangle?"
+        value: "Use the official Module 7 Lesson 29 Problem Set prompts in order. Blank mode preserves the student-facing RDW word-problem model with quantities, labels, units, and written answer evidence; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -140,11 +140,11 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 380-391."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 29; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem 1: Kyle puts two rectangles together to make the L-shaped figure below. He measures some of the side lengths and records them as shown. 12 in a. Find the perimeter of Kyle's shape. 8 in b. Find the area of Kyle's shape. 6 in c. Kyle makes two copies of the L-shaped 16 in figure to create the rectangle shown below. Find the perimeter of the rectangle. In part (a), students apply knowledge of rectangles (opposite sides have equal lengths) to find the information necessary to solve. In part (b), students might estimate to draw lines showing the two..."
+        value: "Use the source-backed Lesson 29 workspace and RDW word-problem model with quantities, labels, units, and written answer evidence to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -168,11 +168,11 @@ export const M7_LESSON29_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 380-391."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 29; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (14 minutes) Sprint: Multiply or Divide by 8 3.OA.7 (10 minutes) Find the Perimeter 3.MD.8 (4 minutes) Sprint: Multiply or Divide by 8 (10 minutes) Materials: (S) Multiply or Divide by 8 Sprint Note: This Sprint builds fluency with multiplication and division facts using units of 8. Find the Perimeter (4 minutes) Materials: (S) Personal white board Note: This activity reviews finding perimeter using multiple steps. 3m Area = 24 square m T: (Project the rectangle with a width of 3 m. Inside the rectangle, write Area = 24 square m.) On your..."
+        value: "Debrief focus: connect the Problem Set RDW word-problem model with quantities, labels, units, and written answer evidence to the Lesson 29 objective: Solve a variety of word problems involving area and perimeter using all four operations."
       },
       {
         label: "Workbook",

@@ -48,14 +48,14 @@ export const M1_LESSON17_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "In the first problem on the Problem Set, what patterns did you notice in the array?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 17 Problem Set using the lesson models from the Teacher Edition.",
       visualModel: "array"
     },
     {
       id: "source-picture",
       title: "Teacher Edition Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use the array to complete the related equations. 1x4= 4 4 divided by4=1 2x4= divided by4=2 x 4 = 12 12 divided by 4 = x 4 = 16 16 divided by 4 = x = 20 20 divided by = x = 24 24 divided by = x4= divided by4= x4= divided by4= x = divided by = x = divided by = Problem 2: The baker packs 36 bran muffins in boxes of 4. Draw and label a tape diagram to find the number of boxes he packs. Problem 3: The waitress arranges 32 glasses into 4 equal rows. How many glasses are in each row?",
+      studentPrompt: "Problem 1: Use the array to complete related multiplication and division equations from 1 x 4 through 10 x 4. Problem 2: The baker packs 36 bran muffins in boxes of 4; draw and label a tape diagram to find the number of boxes. Problem 3: The waitress arranges 32 glasses into 4 equal rows; find the number of glasses in each row. Problem 4: Janet paid $28 for 4 notebooks; find the cost of 2 notebooks.",
       teacherEditionBasis: "Module 1 Teacher Edition, Lesson 17 Problem Set.",
       visualModel: "array"
     },
@@ -63,7 +63,7 @@ export const M1_LESSON17_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 17 Problem Set array, tape diagrams, and number bond contexts to connect multiplication and division.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 221-231.",
       visualModel: "array"
     },
@@ -79,7 +79,7 @@ export const M1_LESSON17_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (9 minutes) Sprint: Multiply or Divide by 4 3.OA.7 (9 minutes) Sprint: Multiply or Divide by 4 (9 minutes) Materials: (S) Multiply or Divide by 4 Sprint Note: Framing division through missing factors in multiplication sentences builds a strong foundation for understanding the relationships between multiplication and division. See Lesson 2 for directions for administering a Sprint. Between Sprints, include the following group counts in place of movement exercises. Count by twos to 20 forward and backward. Count by threes to 30, hum/talk f...",
+      studentPrompt: "Debrief focus: discuss the patterns in the array, how multiplication and division equations describe the same model, and how division can be understood as an unknown factor problem.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 221-231.",
       visualModel: "array"
     }
@@ -116,7 +116,7 @@ export const M1_LESSON17_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students use arrays, tape diagrams, and number bonds to model the relationship between multiplication and division."
       },
       {
         label: "Source text",
@@ -134,7 +134,7 @@ export const M1_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Use the array to complete the related equations. 1x4= 4 4 divided by4=1 2x4= divided by4=2 x 4 = 12 12 divided by 4 = x 4 = 16 16 divided by 4 = x = 20 20 divided by = x = 24 24 divided by = x4= divided by4= x4= divided by4= x = divided by = x = divided by = Problem 2: The baker packs 36 bran muffins in boxes of 4. Draw and label a tape diagram to find the number of boxes he packs. Problem 3: The waitress arranges 32 glasses into 4 equal rows. How many glasses are in each row?"
+        value: "Problem 1: Use the array to complete related multiplication and division equations from 1 x 4 through 10 x 4. Problem 2: The baker packs 36 bran muffins in boxes of 4; draw and label a tape diagram to find the number of boxes. Problem 3: The waitress arranges 32 glasses into 4 equal rows; find the number of glasses in each row. Problem 4: Janet paid $28 for 4 notebooks; find the cost of 2 notebooks."
       },
       {
         label: "Teacher Edition",
@@ -148,7 +148,7 @@ export const M1_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 17 Problem Set array, tape diagrams, and number bond contexts to connect multiplication and division."
       },
       {
         label: "Teacher Edition",
@@ -176,7 +176,7 @@ export const M1_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (9 minutes) Sprint: Multiply or Divide by 4 3.OA.7 (9 minutes) Sprint: Multiply or Divide by 4 (9 minutes) Materials: (S) Multiply or Divide by 4 Sprint Note: Framing division through missing factors in multiplication sentences builds a strong foundation for understanding the relationships between multiplication and division. See Lesson 2 for directions for administering a Sprint. Between Sprints, include the following group counts in place of movement exercises. Count by twos to 20 forward and backward. Count by threes to 30, hum/talk f..."
+        value: "Debrief focus: discuss the patterns in the array, how multiplication and division equations describe the same model, and how division can be understood as an unknown factor problem."
       },
       {
         label: "Teacher Edition",

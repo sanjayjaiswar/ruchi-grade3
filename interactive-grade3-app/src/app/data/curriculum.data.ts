@@ -666,14 +666,14 @@ const MODULE_1_SOURCE_LESSONS: LessonContent[] = [
     pageEnd: 254,
     title: 'Continue Decomposing Units',
     objective: 'Apply the distributive property to decompose units.',
-    goal: 'I can choose a useful decomposition and use it to solve multiplication facts.',
+    goal: 'I can decompose a dividend into friendly parts to solve division facts.',
     vocabulary: ['distributive property', 'decompose', 'related facts', 'array'],
     visualModels: ['array'],
-    modelFocus: 'Use the distributive property again, now choosing decompositions more flexibly.',
-    concept: 'Lesson 19 continues applying decomposition strategies from Lesson 18.',
-    example: 'Ask which known facts can help solve the new fact, then write the decomposed equation.',
-    teacherMove: 'Have the student justify why the chosen split helps.',
-    check: 'The student should choose a decomposition and combine partial products correctly.'
+    modelFocus: 'Split the dividend into friendly parts, divide each part by the same divisor, and add the partial quotients.',
+    concept: 'Lesson 19 applies decomposition to division facts such as 36 divided by 3 and 24 divided by 2.',
+    example: 'Ask which friendly dividends can help solve the division fact, then write the decomposed division equation.',
+    teacherMove: 'Have the student justify why both decomposed parts use the same divisor.',
+    check: 'The student should choose a valid dividend split and combine partial quotients correctly.'
   }),
   module1SourceLesson({
     lessonNumber: 20,

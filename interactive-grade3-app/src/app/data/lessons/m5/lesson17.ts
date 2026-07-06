@@ -9,9 +9,9 @@ export const M5_LESSON17_RUNTIME: LessonRuntimeConfig = {
   lessonAnimation: {
     kind: "number-line",
     title: "Lesson 17 animation: Practice placing various fractions on the number line.",
-    context: "\"Point to and count the wholes with me.",
+    context: "Use the Teacher Edition Lesson 17 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
     equation: "0 to 24 on equal intervals of 6",
-    teacherPrompt: "What did you think about first to help you place the fractions?",
+    teacherPrompt: "How does the official fraction model show practice placing various fractions on the number line.?",
     focus: [
       "fraction",
       "whole",
@@ -46,7 +46,7 @@ export const M5_LESSON17_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "\"Point to and count the wholes with me. How many wholes? Into what fractional unit are we partitioning the whole? Label as we count the fractions.\"",
+      studentPrompt: "Use the Teacher Edition Lesson 17 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf, pages 200-210. Lesson 17 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "number-line"
     },
@@ -55,14 +55,14 @@ export const M5_LESSON17_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "What did you think about first to help you place the fractions?",
-      teacherEditionBasis: "Problem Set (10 minutes) they construct written responses. Read the prompt aloud or have students Students should do their personal best to complete the Problem read chorally. Provide sentence Set within the allotted 10 minutes. For some classes, it may be starters and a word bank. appropriate to modify the assignment by specifying which Sentence starters may include the problems they work on first. Some problems do not specify a following: method for solving. Students should solve these problems using \"I think ____ has a longer pinky the RDW approach...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 17 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition.",
       visualModel: "number-line"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Locate and label the following fractions on the number line. 0 6 12 3 9 6 6 6 6 6 0 1 2 3 Problem 2: Locate and label the following fractions on the number line. 8 6 12 16 4 4 4 4 4 4 1 2 3 4 Problem 3: Locate and label the following fractions on the number line. 18 14 9 11 6 3 3 3 3 3 2 3 4 5 6 For a measurement project in math class, students measured the lengths of their pinky fingers. Alex's measured 2 inches long. Jerimiah's pinky finger was 4 inches long. Whose finger is longer? Draw a number line to help prove your answer. 5. Marcy ran 4 kilometers after school. She stopped to tie her shoelace at kilometers. Then, she stopped to switch songs on her iPod at 5 kilometers. Draw a number line showing Marcy's run. Include her starting and finishing points and the 2 places where she stopped.",
+      studentPrompt: "Use the official Module 5 Lesson 17 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 5 student workbook, Lesson 17 Problem Set.",
       visualModel: "number-line"
     },
@@ -70,7 +70,7 @@ export const M5_LESSON17_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) they construct written responses. Read the prompt aloud or have students Students should do their personal best to complete the Problem read chorally. Provide sentence Set within the allotted 10 minutes. For some classes, it may be starters and a word bank. appropriate to modify the assignment by specifying which Sentence starters may include the problems they work on first. Some problems do not specify a following: method for solving. Students should solve these problems using \"I think ____ has a longer pinky the RDW approach...",
+      studentPrompt: "Use the official Lesson 17 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 200-210.",
       visualModel: "number-line"
     },
@@ -86,7 +86,7 @@ export const M5_LESSON17_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Sprint: Division 3.OA.2 (8 minutes) Place Fractions on a Number Line 3.NF.2b (3 minutes) Compare Unit Fractions 3.NF.3d (1 minutes) Sprint: Division (8 minutes) Materials: (S) Division Sprint Note: This Sprint supports fluency with division using various units. Place Fractions on a Number Line (3 minutes) Materials: (S) Personal white board Note: This activity reviews the concept of placing fractions on a number line from Lesson 16. T: (Draw a number line marked at 0, 1, 2, and 3.) Draw my number line on your personal white...",
+      studentPrompt: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 17 objective: Practice placing various fractions on the number line.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 200-210.",
       visualModel: "number-line"
     }
@@ -113,7 +113,7 @@ export const M5_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "\"Point to and count the wholes with me. How many wholes? Into what fractional unit are we partitioning the whole? Label as we count the fractions.\""
+        value: "Use the Teacher Edition Lesson 17 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence."
       },
       {
         label: "Workbook",
@@ -123,7 +123,7 @@ export const M5_LESSON17_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) they construct written responses. Read the prompt aloud or have students Students should do their personal best to complete the Problem read chorally. Provide sentence Set within the allotted 10 minutes. For some classes, it may be starters and a word bank. appropriate to modify the assignment by specifying which Sentence starters may include the problems they work on first. Some problems do not specify a following: method for solving. Students should solve these problems using \"I think ____ has a longer pinky the RDW approach..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 17 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -141,7 +141,7 @@ export const M5_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Locate and label the following fractions on the number line. 0 6 12 3 9 6 6 6 6 6 0 1 2 3 Problem 2: Locate and label the following fractions on the number line. 8 6 12 16 4 4 4 4 4 4 1 2 3 4 Problem 3: Locate and label the following fractions on the number line. 18 14 9 11 6 3 3 3 3 3 2 3 4 5 6 For a measurement project in math class, students measured the lengths of their pinky fingers. Alex's measured 2 inches long. Jerimiah's pinky finger was 4 inches long. Whose finger is longer? Draw a number line to help prove your answer. 5. Marcy ran 4 kilometers after school. She stopped to tie her shoelace at kilometers. Then, she stopped to switch songs on her iPod at 5 kilometers. Draw a number line showing Marcy's run. Include her starting and finishing points and the 2 places where she stopped."
+        value: "Use the official Module 5 Lesson 17 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -155,7 +155,7 @@ export const M5_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) they construct written responses. Read the prompt aloud or have students Students should do their personal best to complete the Problem read chorally. Provide sentence Set within the allotted 10 minutes. For some classes, it may be starters and a word bank. appropriate to modify the assignment by specifying which Sentence starters may include the problems they work on first. Some problems do not specify a following: method for solving. Students should solve these problems using \"I think ____ has a longer pinky the RDW approach..."
+        value: "Use the official Lesson 17 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -183,7 +183,7 @@ export const M5_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Sprint: Division 3.OA.2 (8 minutes) Place Fractions on a Number Line 3.NF.2b (3 minutes) Compare Unit Fractions 3.NF.3d (1 minutes) Sprint: Division (8 minutes) Materials: (S) Division Sprint Note: This Sprint supports fluency with division using various units. Place Fractions on a Number Line (3 minutes) Materials: (S) Personal white board Note: This activity reviews the concept of placing fractions on a number line from Lesson 16. T: (Draw a number line marked at 0, 1, 2, and 3.) Draw my number line on your personal white..."
+        value: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 17 objective: Practice placing various fractions on the number line."
       },
       {
         label: "Workbook",

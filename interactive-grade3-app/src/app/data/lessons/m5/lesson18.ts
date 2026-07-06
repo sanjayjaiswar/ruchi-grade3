@@ -8,10 +8,10 @@ export const M5_LESSON18_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 18 animation: Compare fractions and whole numbers on the number line...",
-    context: "T: Look at the number line I've created on the floor.",
+    title: "Lesson 18 animation: Compare fractions and whole numbers on the number line by reasoning about their distance from 0.",
+    context: "Use the Teacher Edition Lesson 18 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
     equation: "0 to 4 on equal intervals of 1",
-    teacherPrompt: "If necessary, review the toss portion of the lesson by having students draw each toss on a separate number line and then place the fractions on the same...",
+    teacherPrompt: "How does the official fraction model show compare fractions and whole numbers on the number line by reasoning about their distance from 0.?",
     focus: [
       "fraction",
       "whole",
@@ -46,7 +46,7 @@ export const M5_LESSON18_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: Look at the number line I've created on the floor. Let's use it to measure and compare. T: This number line shows the interval from 0 to 1. Place sticky notes with 0 and 1 written on them in the appropriate places. What fractional unit does the number line show? S: Thirds.",
+      studentPrompt: "Use the Teacher Edition Lesson 18 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf, pages 211-220. Lesson 18 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "number-line"
     },
@@ -55,14 +55,14 @@ export const M5_LESSON18_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "If necessary, review the toss portion of the lesson by having students draw each toss on a separate number line and then place the fractions on the same number line to compare",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 18 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition.",
       visualModel: "number-line"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: 4 < 4 0 1 2 3 Problem 2: 6 6 0 1 1 1 Problem 3: 2 4 0 1 2 2",
+      studentPrompt: "Use the official Module 5 Lesson 18 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 5 student workbook, Lesson 18 Problem Set.",
       visualModel: "number-line"
     },
@@ -70,7 +70,7 @@ export const M5_LESSON18_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 18 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 211-220.",
       visualModel: "number-line"
     },
@@ -86,7 +86,7 @@ export const M5_LESSON18_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (8 minutes) Draw Number Bonds of 1 Whole 3.NF.1 (4 minutes) Place Fractions on the Number Line 3.NF.2b (4 minutes) Draw Number Bonds of 1 Whole (4 minutes) Materials: (S) Personal white board Note: This activity reviews the concept of making copies of a unit fraction to build a whole. 1 T: On your personal white board, draw a number bond to partition 1 whole into halves. S: (Draw a number bond.) T: How many copies of 1 half did you draw to make 1 whole? S: 2 copies. Continue with the following possible sequence: thirds,...",
+      studentPrompt: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 18 objective: Compare fractions and whole numbers on the number line by reasoning about their distance from 0.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 211-220.",
       visualModel: "number-line"
     }
@@ -113,7 +113,7 @@ export const M5_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: Look at the number line I've created on the floor. Let's use it to measure and compare. T: This number line shows the interval from 0 to 1. Place sticky notes with 0 and 1 written on them in the appropriate places. What fractional unit does the number line show? S: Thirds."
+        value: "Use the Teacher Edition Lesson 18 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence."
       },
       {
         label: "Workbook",
@@ -123,7 +123,7 @@ export const M5_LESSON18_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 18 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -141,7 +141,7 @@ export const M5_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: 4 < 4 0 1 2 3 Problem 2: 6 6 0 1 1 1 Problem 3: 2 4 0 1 2 2"
+        value: "Use the official Module 5 Lesson 18 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -155,7 +155,7 @@ export const M5_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 18 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -183,7 +183,7 @@ export const M5_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (8 minutes) Draw Number Bonds of 1 Whole 3.NF.1 (4 minutes) Place Fractions on the Number Line 3.NF.2b (4 minutes) Draw Number Bonds of 1 Whole (4 minutes) Materials: (S) Personal white board Note: This activity reviews the concept of making copies of a unit fraction to build a whole. 1 T: On your personal white board, draw a number bond to partition 1 whole into halves. S: (Draw a number bond.) T: How many copies of 1 half did you draw to make 1 whole? S: 2 copies. Continue with the following possible sequence: thirds,..."
+        value: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 18 objective: Compare fractions and whole numbers on the number line by reasoning about their distance from 0."
       },
       {
         label: "Workbook",

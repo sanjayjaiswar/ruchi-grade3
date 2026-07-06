@@ -9,7 +9,7 @@ export const M3_LESSON21_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "tape-diagram",
-    title: "Lesson 21 animation: Solve two-step word problems involving multiplying sing...",
+    title: "Lesson 21 animation: Solve two-step word problems involving multiplying single-digit factors and multiples of 10.",
     context: "T: It took you 4 minutes and 13 seconds to find the products and order them from least to greatest.",
     equation: "10 units of 4; unknown labeled from the story",
     teacherPrompt: "In Problem 2, how many more months will Lupe need to save so she has enough to buy the art supplies? How do you know?",
@@ -51,14 +51,14 @@ export const M3_LESSON21_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "In Problem 2, how many more months will Lupe need to save so she has enough to buy the art supplies? How do you know?",
-      teacherEditionBasis: "Problem Set (15 minutes) Students should do their personal best to complete the Problem Set within the allotted 15 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 21 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition.",
       visualModel: "tape-diagram"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: There are 60 seconds in 1 minute. Use a tape diagram to find the total number of seconds in 5 minutes and 45 seconds. Problem 2: Lupe saves $30 each month for 4 months. Does she have enough money to buy the art supplies below? Explain why or why not. Art Supplies $142 Problem 3: Brad receives 5 cents for each can or bottle he recycles. How many cents does Brad earn if he recycles 48 cans and 32 bottles? factors and multiples of 10.",
+      studentPrompt: "Use the official Module 3 Lesson 21 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 3 student workbook, Lesson 21 Problem Set.",
       visualModel: "tape-diagram"
     },
@@ -66,7 +66,7 @@ export const M3_LESSON21_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (15 minutes) Students should do their personal best to complete the Problem Set within the allotted 15 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 21 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 258-269.",
       visualModel: "tape-diagram"
     },
@@ -82,7 +82,7 @@ export const M3_LESSON21_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) NOTES ON Total Time (60 minutes) STANDARDS ALIGNMENT: Fluency Practice (15 minutes) This lesson incorporates the use of seconds in both the Concept Development and Problem Set. Sprint: Multiply by Multiples of 10 3.NBT.3 (9 minutes) Although seconds are included in the Group Counting 3.OA.1 (3 minutes) Grade 4 standard 4.MD.1, students are familiar with them from Grade 3 Write in the Parentheses 3.OA.7 (3 minutes) Module 2 Lesson 1. In this lesson, the conversion between minutes and Sprint: Multiply by Multiples of 10 (9 minutes) seconds is always provided when needed. Material...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 21 objective: Solve two-step word problems involving multiplying single-digit factors and multiples of 10.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 258-269.",
       visualModel: "tape-diagram"
     }
@@ -119,7 +119,7 @@ export const M3_LESSON21_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (15 minutes) Students should do their personal best to complete the Problem Set within the allotted 15 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 21 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -137,7 +137,7 @@ export const M3_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: There are 60 seconds in 1 minute. Use a tape diagram to find the total number of seconds in 5 minutes and 45 seconds. Problem 2: Lupe saves $30 each month for 4 months. Does she have enough money to buy the art supplies below? Explain why or why not. Art Supplies $142 Problem 3: Brad receives 5 cents for each can or bottle he recycles. How many cents does Brad earn if he recycles 48 cans and 32 bottles? factors and multiples of 10."
+        value: "Use the official Module 3 Lesson 21 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -151,7 +151,7 @@ export const M3_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (15 minutes) Students should do their personal best to complete the Problem Set within the allotted 15 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 21 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -179,7 +179,7 @@ export const M3_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) NOTES ON Total Time (60 minutes) STANDARDS ALIGNMENT: Fluency Practice (15 minutes) This lesson incorporates the use of seconds in both the Concept Development and Problem Set. Sprint: Multiply by Multiples of 10 3.NBT.3 (9 minutes) Although seconds are included in the Group Counting 3.OA.1 (3 minutes) Grade 4 standard 4.MD.1, students are familiar with them from Grade 3 Write in the Parentheses 3.OA.7 (3 minutes) Module 2 Lesson 1. In this lesson, the conversion between minutes and Sprint: Multiply by Multiples of 10 (9 minutes) seconds is always provided when needed. Material..."
+        value: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 21 objective: Solve two-step word problems involving multiplying single-digit factors and multiples of 10."
       },
       {
         label: "Workbook",

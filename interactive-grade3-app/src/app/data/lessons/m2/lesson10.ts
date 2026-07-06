@@ -9,7 +9,7 @@ export const M2_LESSON10_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 10 animation: Estimate and measure liquid volume in liters and millil...",
+    title: "Lesson 10 animation: Estimate and measure liquid volume in liters and millil",
     context: "T: (Make groups of three students.) Each group will measure liquid volume to make a measuring bottle that contains 1 liter of water, similar to the one we used yesterday.",
     equation: "1 to 17 on equal intervals of 4",
     teacherPrompt: "In Problem 4, describe how the position of the points plotted in Part (a) helped you solve Parts (b) and (c)",
@@ -56,14 +56,14 @@ export const M2_LESSON10_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "In Problem 4, describe how the position of the points plotted in Part (a) helped you solve Parts (b) and (c)",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their best to complete Problems 2-4 within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 10 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "number-line"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Label the vertical number line on the container to the right. Answer the questions below. a. What did you label as the halfway mark? Why? b. Explain how pouring each plastic cup of water helped you create a vertical number line. c. If you pour out 300 mL of water, how many mL are left in the container? 100 mL Problem 2: How much liquid is in each container? vertical number line. Estimate the amount of liquid in each container to the nearest hundred milliliters. 4. The chart below shows the capacity of 4 barrels. Barrel A 75 liters 100 L Barrel B 68 liters Barrel C 96 liters 90 L Barrel D 52 liters a. Label the number line to show the capacity of each 80 L barrel. Barrel A has been done for you. Barrel A 75 L b. Which barrel has the greatest capacity? 70 L c. Which barrel has the smallest capacity? 60 L d. Ben buys a barrel that holds about 70 liters. Which barrel did he most likely buy? Explain why. 50 L e. Use the number line to find how many more liters Barrel C can hol...",
+      studentPrompt: "Use the official Module 2 Lesson 10 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 10 Problem Set.",
       visualModel: "number-line"
     },
@@ -71,7 +71,7 @@ export const M2_LESSON10_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their best to complete Problems 2-4 within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first.",
+      studentPrompt: "Use the official Lesson 10 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 116-126.",
       visualModel: "number-line"
     },
@@ -87,7 +87,7 @@ export const M2_LESSON10_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (10 minutes) Milliliter Counting 3.MD.2 (2 minutes) Decompose 1 Liter 3.MD.2 (4 minutes) Group Counting 3.OA.1 (4 minutes) Milliliter Counting (2 minutes) Note: This activity reviews Lesson 9 and lays the foundation for eventually composing compound units of liters and milliliters in Grade 4. T: There are 1,000 milliliters in 1 liter. Count by 100 milliliters to 1 liter. S: 100 milliliters, 200 milliliters, 300 milliliters, 400 milliliters, 500 milliliters, 600 milliliters, 700 milliliters, 800 milliliters, 900 milliliters, 1 liter. Deco...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 10 objective: Estimate and measure liquid volume in liters and milliliters using the vertical number line.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 116-126.",
       visualModel: "number-line"
     }
@@ -124,7 +124,7 @@ export const M2_LESSON10_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their best to complete Problems 2-4 within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first."
+        value: "Problem Set (10 minutes): Students complete the Lesson 10 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -142,7 +142,7 @@ export const M2_LESSON10_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Label the vertical number line on the container to the right. Answer the questions below. a. What did you label as the halfway mark? Why? b. Explain how pouring each plastic cup of water helped you create a vertical number line. c. If you pour out 300 mL of water, how many mL are left in the container? 100 mL Problem 2: How much liquid is in each container? vertical number line. Estimate the amount of liquid in each container to the nearest hundred milliliters. 4. The chart below shows the capacity of 4 barrels. Barrel A 75 liters 100 L Barrel B 68 liters Barrel C 96 liters 90 L Barrel D 52 liters a. Label the number line to show the capacity of each 80 L barrel. Barrel A has been done for you. Barrel A 75 L b. Which barrel has the greatest capacity? 70 L c. Which barrel has the smallest capacity? 60 L d. Ben buys a barrel that holds about 70 liters. Which barrel did he most likely buy? Explain why. 50 L e. Use the number line to find how many more liters Barrel C can hol..."
+        value: "Use the official Module 2 Lesson 10 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -156,7 +156,7 @@ export const M2_LESSON10_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their best to complete Problems 2-4 within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first."
+        value: "Use the official Lesson 10 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -184,7 +184,7 @@ export const M2_LESSON10_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (10 minutes) Milliliter Counting 3.MD.2 (2 minutes) Decompose 1 Liter 3.MD.2 (4 minutes) Group Counting 3.OA.1 (4 minutes) Milliliter Counting (2 minutes) Note: This activity reviews Lesson 9 and lays the foundation for eventually composing compound units of liters and milliliters in Grade 4. T: There are 1,000 milliliters in 1 liter. Count by 100 milliliters to 1 liter. S: 100 milliliters, 200 milliliters, 300 milliliters, 400 milliliters, 500 milliliters, 600 milliliters, 700 milliliters, 800 milliliters, 900 milliliters, 1 liter. Deco..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 10 objective: Estimate and measure liquid volume in liters and milliliters using the vertical number line."
       },
       {
         label: "Workbook",

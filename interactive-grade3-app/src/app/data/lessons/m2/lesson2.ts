@@ -7,7 +7,7 @@ export const M2_LESSON2_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "clock",
-    title: "Lesson 2 animation: Relate skip-counting by fives on the clock and telling...",
+    title: "Lesson 2 animation: Relate skip-counting by fives on the clock and telling",
     context: "Part 1: Draw a number line and relate skip-counting by fives to skip-counting intervals of 5 minutes.",
     equation: "5 sec start -> 5 sec elapsed -> 7 sec end",
     teacherPrompt: "Model the Application Problem using the tape diagram on the template",
@@ -47,14 +47,14 @@ export const M2_LESSON2_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Model the Application Problem using the tape diagram on the template",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be NOTES ON appropriate to modify the assignment by specifying which MULTIPLE MEANS problems they work on first. Some problems do not specify a OF REPRESENTATION: method for solving. Students should solve these problems using Problem 4 is likely to pose the biggest the RDW approach used for Application Problems. challenge. It requires understanding the difference between a.m. and p.m. This concept was intro...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 2 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "clock"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Follow the directions to label the number line below. a. Ingrid gets ready for school between 7:00 a.m. and 8:00 a.m. Label the first and last tick marks as 7:00 a.m. and 8:00 a.m. b. Each interval represents 5 minutes. Count by fives starting at 0, or 7:00 a.m. Label each 5-minute interval below the number line up to 8:00 a.m. c. Ingrid starts getting dressed at 7:10 a.m. Plot a point on the number line to represent this time. Above the point, write D. d. Ingrid starts eating breakfast at 7:35 a.m. Plot a point on the number line to represent this time. Above the point, write E. e. Ingrid starts brushing her teeth at 7:40 a.m. Plot a point on the number line to represent this time. Above the point, write T. f. Ingrid starts packing her lunch at 7:45 a.m. Plot a point on the number line to represent this time. Above the point, write L. g. Ingrid starts waiting for the bus at 7:55 a.m. Plot a point on the number line to represent this time. Above the point, write W. contin...",
+      studentPrompt: "Use the official Module 2 Lesson 2 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 2 Problem Set.",
       visualModel: "clock"
     },
@@ -62,7 +62,7 @@ export const M2_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be NOTES ON appropriate to modify the assignment by specifying which MULTIPLE MEANS problems they work on first. Some problems do not specify a OF REPRESENTATION: method for solving. Students should solve these problems using Problem 4 is likely to pose the biggest the RDW approach used for Application Problems. challenge. It requires understanding the difference between a.m. and p.m. This concept was intro...",
+      studentPrompt: "Use the official Lesson 2 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 24-36.",
       visualModel: "clock"
     },
@@ -78,7 +78,7 @@ export const M2_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (3 minutes) Tell Time on the Clock 2.MD.7 (3 minutes) Minute Counting 3.MD.1 (6 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by sevens and eights in this activity anticipates multiplication using those units in Module 3. Direct students to count forward and backward using the following suggested sequence, occasionally changing the direction of the count: Sevens to 35, emphasizing the transition from 28 to 35 Eights to 40,...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 2 objective: Relate skip-counting by fives on the clock and telling time to a continuous measurement model, the number line.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 24-36.",
       visualModel: "clock"
     }
@@ -115,7 +115,7 @@ export const M2_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be NOTES ON appropriate to modify the assignment by specifying which MULTIPLE MEANS problems they work on first. Some problems do not specify a OF REPRESENTATION: method for solving. Students should solve these problems using Problem 4 is likely to pose the biggest the RDW approach used for Application Problems. challenge. It requires understanding the difference between a.m. and p.m. This concept was intro..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 2 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -133,7 +133,7 @@ export const M2_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Follow the directions to label the number line below. a. Ingrid gets ready for school between 7:00 a.m. and 8:00 a.m. Label the first and last tick marks as 7:00 a.m. and 8:00 a.m. b. Each interval represents 5 minutes. Count by fives starting at 0, or 7:00 a.m. Label each 5-minute interval below the number line up to 8:00 a.m. c. Ingrid starts getting dressed at 7:10 a.m. Plot a point on the number line to represent this time. Above the point, write D. d. Ingrid starts eating breakfast at 7:35 a.m. Plot a point on the number line to represent this time. Above the point, write E. e. Ingrid starts brushing her teeth at 7:40 a.m. Plot a point on the number line to represent this time. Above the point, write T. f. Ingrid starts packing her lunch at 7:45 a.m. Plot a point on the number line to represent this time. Above the point, write L. g. Ingrid starts waiting for the bus at 7:55 a.m. Plot a point on the number line to represent this time. Above the point, write W. contin..."
+        value: "Use the official Module 2 Lesson 2 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -147,7 +147,7 @@ export const M2_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be NOTES ON appropriate to modify the assignment by specifying which MULTIPLE MEANS problems they work on first. Some problems do not specify a OF REPRESENTATION: method for solving. Students should solve these problems using Problem 4 is likely to pose the biggest the RDW approach used for Application Problems. challenge. It requires understanding the difference between a.m. and p.m. This concept was intro..."
+        value: "Use the official Lesson 2 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -175,7 +175,7 @@ export const M2_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (3 minutes) Tell Time on the Clock 2.MD.7 (3 minutes) Minute Counting 3.MD.1 (6 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by sevens and eights in this activity anticipates multiplication using those units in Module 3. Direct students to count forward and backward using the following suggested sequence, occasionally changing the direction of the count: Sevens to 35, emphasizing the transition from 28 to 35 Eights to 40,..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 2 objective: Relate skip-counting by fives on the clock and telling time to a continuous measurement model, the number line."
       },
       {
         label: "Workbook",

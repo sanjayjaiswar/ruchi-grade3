@@ -7,9 +7,9 @@ export const M7_LESSON6_RUNTIME: LessonRuntimeConfig = {
   lessonAnimation: {
     kind: "geometry",
     title: "Lesson 6 animation: Draw polygons with specified attributes to solve problems.",
-    context: "Project Template 1 as shown, and give a copy of the shape to each pair of Template 1 students.",
+    context: "Use the Teacher Edition Lesson 6 polygon attribute workspace with source shapes, labels, sides, angles, and classification evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "Besides quadrilateral, what is another name for the shape you drew for Problem 3? (Possible answers are trapezoid, parallelogram, rectangle, square, and...",
+    teacherPrompt: "Use the source Lesson 6 polygon attribute workspace with source shapes, labels, sides, angles, and classification evidence; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "attribute",
       "geometry",
@@ -36,7 +36,7 @@ export const M7_LESSON6_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Project Template 1 as shown, and give a copy of the shape to each pair of Template 1 students. T: Work with a partner to analyze this shape, and list as many attributes as you can on your personal white board. Use your right angle tools and rulers to help you. S: (Work in pairs.",
+      studentPrompt: "Use the Teacher Edition Lesson 6 polygon attribute workspace with source shapes, labels, sides, angles, and classification evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 83-96. Lesson 6 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -44,24 +44,24 @@ export const M7_LESSON6_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Besides quadrilateral, what is another name for the shape you drew for Problem 3? (Possible answers are trapezoid, parallelogram, rectangle, square, and rhombus.) How can it be that so many names describe our shape?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 6 work using the official Module 7 polygon attribute workspace with source shapes, labels, sides, angles, and classification evidence from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 6 work using the official Module 7 polygon attribute workspace with source shapes, labels, sides, angles, and classification evidence from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Draw a triangle with 1 right angle. Problem 2: Draw a quadrilateral with 4 right angles and sides that are all 2 inches long. Problem 3: Draw a quadrilateral with at least 1 set of parallel sides. Trace the parallel sides green.",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 6 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 6 Problem Set prompts in order. Blank mode preserves the student-facing polygon attribute workspace with source shapes, labels, sides, angles, and classification evidence; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 6 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 83-96.",
+      studentPrompt: "Use the source-backed Lesson 6 workspace and polygon attribute workspace with source shapes, labels, sides, angles, and classification evidence to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 6; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -76,8 +76,8 @@ export const M7_LESSON6_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Equivalent Counting with Units of 7 3.OA.7 (4 minutes) Classify the Polygon 3.G.1 (5 minutes) Physiometry 3.G.1 (3 minutes) Equivalent Counting with Units of 7 (4 minutes) Note: This activity builds fluency with multiplication facts using units of 7. The progression builds in complexity. Work students up to the highest level of complexity where they can confidently participate. T: Count to 10. (Write as students count. See the chart below.) S: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. 1 2 3 4 5 6 7 8 9 10 1 seven 2 sevens 3 sevens 4 se...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 83-96.",
+      studentPrompt: "Debrief focus: connect the Problem Set polygon attribute workspace with source shapes, labels, sides, angles, and classification evidence to the Lesson 6 objective: Draw polygons with specified attributes to solve problems.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 6; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -103,7 +103,7 @@ export const M7_LESSON6_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Project Template 1 as shown, and give a copy of the shape to each pair of Template 1 students. T: Work with a partner to analyze this shape, and list as many attributes as you can on your personal white board. Use your right angle tools and rulers to help you. S: (Work in pairs."
+        value: "Use the Teacher Edition Lesson 6 polygon attribute workspace with source shapes, labels, sides, angles, and classification evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -113,11 +113,11 @@ export const M7_LESSON6_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set source focus: students complete the Lesson 6 work using the official Module 7 polygon attribute workspace with source shapes, labels, sides, angles, and classification evidence from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "Besides quadrilateral, what is another name for the shape you drew for Problem 3? (Possible answers are trapezoid, parallelogram, rectangle, square, and rhombus.) How can it be that so many names describe our shape?"
+        value: "Teacher Edition check: preserve the Lesson 6 polygon attribute workspace with source shapes, labels, sides, angles, and classification evidence."
       },
       {
         label: "Workbook",
@@ -127,11 +127,11 @@ export const M7_LESSON6_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 6 Problem Set."
+        value: "Module 7 student workbook, Lesson 6 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Draw a triangle with 1 right angle. Problem 2: Draw a quadrilateral with 4 right angles and sides that are all 2 inches long. Problem 3: Draw a quadrilateral with at least 1 set of parallel sides. Trace the parallel sides green."
+        value: "Use the official Module 7 Lesson 6 Problem Set prompts in order. Blank mode preserves the student-facing polygon attribute workspace with source shapes, labels, sides, angles, and classification evidence; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -141,11 +141,11 @@ export const M7_LESSON6_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 83-96."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 6; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the source-backed Lesson 6 workspace and polygon attribute workspace with source shapes, labels, sides, angles, and classification evidence to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -169,11 +169,11 @@ export const M7_LESSON6_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 83-96."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 6; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Equivalent Counting with Units of 7 3.OA.7 (4 minutes) Classify the Polygon 3.G.1 (5 minutes) Physiometry 3.G.1 (3 minutes) Equivalent Counting with Units of 7 (4 minutes) Note: This activity builds fluency with multiplication facts using units of 7. The progression builds in complexity. Work students up to the highest level of complexity where they can confidently participate. T: Count to 10. (Write as students count. See the chart below.) S: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. 1 2 3 4 5 6 7 8 9 10 1 seven 2 sevens 3 sevens 4 se..."
+        value: "Debrief focus: connect the Problem Set polygon attribute workspace with source shapes, labels, sides, angles, and classification evidence to the Lesson 6 objective: Draw polygons with specified attributes to solve problems."
       },
       {
         label: "Workbook",

@@ -3336,6 +3336,187 @@ summary.source-pages-heading {
   line-height: 1.4;
 }
 
+.lesson19-concept-review {
+  display: grid;
+  gap: 14px;
+  margin: 0 0 16px;
+  padding: 16px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 28%, var(--color-border) 72%);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--google-blue-soft) 62%, #ffffff 38%), #ffffff 42%, color-mix(in srgb, var(--google-green-soft) 50%, #ffffff 50%));
+}
+
+.lesson19-source-walkthrough {
+  display: grid;
+  gap: 14px;
+}
+
+.lesson19-source-walkthrough > article {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--module-accent) 24%, var(--color-border) 76%);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.lesson19-source-walkthrough > article > div:first-child {
+  display: grid;
+  gap: 5px;
+}
+
+.lesson19-source-walkthrough strong {
+  color: var(--module-accent-strong);
+  font-size: 16px;
+  font-weight: 950;
+}
+
+.lesson19-source-walkthrough p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  font-weight: 760;
+  line-height: 1.4;
+}
+
+.lesson19-array-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.lesson19-array-grid article {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #3c4043;
+  background: #ffffff;
+}
+
+.lesson19-array-grid header {
+  display: grid;
+  gap: 5px;
+}
+
+.lesson19-array-grid b,
+.lesson19-array-grid footer {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 950;
+  line-height: 1.25;
+}
+
+.lesson19-array-grid header span {
+  color: #5f6368;
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.25;
+}
+
+.lesson19-dot-array {
+  display: grid;
+  grid-auto-rows: 18px;
+  gap: 5px 7px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid #d0d4dc;
+  background: #f8fbff;
+}
+
+.lesson19-dot-array span {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #5f6368;
+  border-radius: 999px;
+  background: #c9d7e2;
+}
+
+.lesson19-dot-array span.is-split-row {
+  background: #ffffff;
+}
+
+.lesson19-dot-array span.is-split-row::before {
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  right: -5px;
+  height: 2px;
+  background: #202124;
+  content: "";
+}
+
+.lesson19-match-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.lesson19-match-strip div {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #3c4043;
+  background: #ffffff;
+}
+
+.lesson19-match-strip b,
+.lesson19-match-strip span,
+.lesson19-match-strip em {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.lesson19-match-strip i {
+  width: 100%;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--module-accent);
+}
+
+.lesson19-match-strip em {
+  color: #5f6368;
+  font-style: normal;
+  font-size: 13px;
+}
+
+.lesson19-nell-model {
+  display: grid;
+  grid-template-columns: auto minmax(220px, 1fr);
+  gap: 16px;
+  align-items: center;
+}
+
+.lesson19-dot-array.is-nell {
+  grid-template-columns: repeat(2, 18px);
+}
+
+.lesson19-nell-model > div:last-child {
+  display: grid;
+  gap: 8px;
+}
+
+.lesson19-nell-model > div:last-child strong,
+.lesson19-nell-model > div:last-child b {
+  display: block;
+  width: fit-content;
+  padding: 8px 10px;
+  border: 1px solid #d0d4dc;
+  background: #f8f9fa;
+  color: #202124;
+  font-size: 15px;
+  font-weight: 950;
+}
+
 .lesson17-fact-sheet {
   display: grid;
   grid-template-columns: minmax(220px, 0.7fr) minmax(420px, 1.3fr);
@@ -3868,6 +4049,12 @@ summary.source-pages-heading {
   gap: 12px;
 }
 
+.lesson19-summary-source {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1.35fr) minmax(0, 0.9fr);
+  gap: 12px;
+}
+
 .lesson16-summary-source article {
   display: grid;
   gap: 10px;
@@ -3879,6 +4066,17 @@ summary.source-pages-heading {
 }
 
 .lesson17-summary-source article {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #3c4043;
+  border-radius: 0;
+  background: #ffffff;
+}
+
+.lesson19-summary-source article {
   display: grid;
   gap: 10px;
   align-content: start;
@@ -3903,12 +4101,24 @@ summary.source-pages-heading {
   line-height: 1.25;
 }
 
+.lesson19-summary-source strong {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 950;
+  line-height: 1.25;
+}
+
 .lesson16-summary-source div {
   display: grid;
   gap: 7px;
 }
 
 .lesson17-summary-source div {
+  display: grid;
+  gap: 7px;
+}
+
+.lesson19-summary-source div {
   display: grid;
   gap: 7px;
 }
@@ -3935,6 +4145,17 @@ summary.source-pages-heading {
   line-height: 1.25;
 }
 
+.lesson19-summary-source span {
+  display: block;
+  padding: 7px 9px;
+  border: 1px solid #d0d4dc;
+  background: #f8f9fa;
+  color: #202124;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
 .lesson16-summary-source p {
   color: #202124;
   font-size: 16px;
@@ -3943,6 +4164,13 @@ summary.source-pages-heading {
 }
 
 .lesson17-summary-source p {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+.lesson19-summary-source p {
   color: #202124;
   font-size: 16px;
   font-weight: 850;
@@ -4148,7 +4376,11 @@ summary.source-pages-heading {
   .summary-meaning-map > div,
   .lesson16-summary-source,
   .lesson17-summary-source,
+  .lesson19-summary-source,
   .lesson16-review-grid,
+  .lesson19-array-grid,
+  .lesson19-match-strip,
+  .lesson19-nell-model,
   .lesson17-fact-sheet,
   .lesson17-model-strip {
     grid-template-columns: 1fr;

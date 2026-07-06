@@ -9,10 +9,10 @@ export const M5_LESSON22_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 22 animation: Generate simple equivalent fractions by using visual fr...",
-    context: "T: Take out your math journal, and turn to the page other partitioned into fourths—to where you glued your fraction strips yesterday.",
+    title: "Lesson 22 animation: Generate simple equivalent fractions by using visual fraction models and the number line.",
+    context: "Use the Teacher Edition Lesson 22 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
     equation: "3 to 11 on equal intervals of 2",
-    teacherPrompt: "What did you notice about the models in Problem 1?",
+    teacherPrompt: "How does the official fraction model show generate simple equivalent fractions by using visual fraction models and the number line.?",
     focus: [
       "equivalent fractions",
       "fraction",
@@ -47,7 +47,7 @@ export const M5_LESSON22_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: Take out your math journal, and turn to the page other partitioned into fourths-to where you glued your fraction strips yesterday. compare 3 sixths and 2 fourths. Or, Name the fraction that is equivalent to 1 third. have students draw number lines on 2 personal white boards so that they may S: . erase partitioned sixths before 6 partitioning fourths. T: Now, name the fractions that are equivalent to 1 half.",
+      studentPrompt: "Use the Teacher Edition Lesson 22 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf, pages 255-264. Lesson 22 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "number-line"
     },
@@ -56,14 +56,14 @@ export const M5_LESSON22_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "What did you notice about the models in Problem 1?",
-      teacherEditionBasis: "Problem Set (10 minutes) unit fraction, whisper count the shaded units, and whisper the shaded fraction Students should do their personal best to complete the as they write. Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 22 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition.",
       visualModel: "number-line"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Write the shaded fraction of each figure on the blank. Then, draw a line to match the equivalent fractions. ____ ____ ____ ____ ____ ____ ____ ____ and the number line. Write the missing parts of the fractions. 1 2 1 4 8 = = = 3 6 4 8 1 1 3. Why does it take 2 copies of to show the same amount as 1 copy of? Explain your answer in words 8 4 and pictures. 4. How many sixths does it take to make the same amount as? Explain your answer in words and pictures. 5. Why does it take 10 copies of 1 sixth to make the same amount as 5 copies of 1 third? Explain your answer in words and pictures. and the number line.",
+      studentPrompt: "Use the official Module 5 Lesson 22 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 5 student workbook, Lesson 22 Problem Set.",
       visualModel: "number-line"
     },
@@ -71,7 +71,7 @@ export const M5_LESSON22_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) unit fraction, whisper count the shaded units, and whisper the shaded fraction Students should do their personal best to complete the as they write. Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 22 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 255-264.",
       visualModel: "number-line"
     },
@@ -87,7 +87,7 @@ export const M5_LESSON22_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Whole Number Division 3.OA.7 (8 minutes) Counting by Fractions Equal to Whole Numbers on the Number Line 3.NF.3a (4 minutes) Whole Number Division (8 minutes) Materials: (S) Blank paper Note: This activity supports fluency with division. Steps 1 and 2 are timed for two minutes each. Step 3 is timed for one minute of testing for each partner. Step 4 is timed for two minutes. 1. Students self-select a number and write a set of multiples up to that number's multiple of 10 vertically down the left-hand side of the page (e.g., 6, 1...",
+      studentPrompt: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 22 objective: Generate simple equivalent fractions by using visual fraction models and the number line.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 255-264.",
       visualModel: "number-line"
     }
@@ -114,7 +114,7 @@ export const M5_LESSON22_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: Take out your math journal, and turn to the page other partitioned into fourths-to where you glued your fraction strips yesterday. compare 3 sixths and 2 fourths. Or, Name the fraction that is equivalent to 1 third. have students draw number lines on 2 personal white boards so that they may S: . erase partitioned sixths before 6 partitioning fourths. T: Now, name the fractions that are equivalent to 1 half."
+        value: "Use the Teacher Edition Lesson 22 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence."
       },
       {
         label: "Workbook",
@@ -124,7 +124,7 @@ export const M5_LESSON22_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) unit fraction, whisper count the shaded units, and whisper the shaded fraction Students should do their personal best to complete the as they write. Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 22 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -142,7 +142,7 @@ export const M5_LESSON22_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Write the shaded fraction of each figure on the blank. Then, draw a line to match the equivalent fractions. ____ ____ ____ ____ ____ ____ ____ ____ and the number line. Write the missing parts of the fractions. 1 2 1 4 8 = = = 3 6 4 8 1 1 3. Why does it take 2 copies of to show the same amount as 1 copy of? Explain your answer in words 8 4 and pictures. 4. How many sixths does it take to make the same amount as? Explain your answer in words and pictures. 5. Why does it take 10 copies of 1 sixth to make the same amount as 5 copies of 1 third? Explain your answer in words and pictures. and the number line."
+        value: "Use the official Module 5 Lesson 22 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -156,7 +156,7 @@ export const M5_LESSON22_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) unit fraction, whisper count the shaded units, and whisper the shaded fraction Students should do their personal best to complete the as they write. Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 22 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -184,7 +184,7 @@ export const M5_LESSON22_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Whole Number Division 3.OA.7 (8 minutes) Counting by Fractions Equal to Whole Numbers on the Number Line 3.NF.3a (4 minutes) Whole Number Division (8 minutes) Materials: (S) Blank paper Note: This activity supports fluency with division. Steps 1 and 2 are timed for two minutes each. Step 3 is timed for one minute of testing for each partner. Step 4 is timed for two minutes. 1. Students self-select a number and write a set of multiples up to that number's multiple of 10 vertically down the left-hand side of the page (e.g., 6, 1..."
+        value: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 22 objective: Generate simple equivalent fractions by using visual fraction models and the number line."
       },
       {
         label: "Workbook",

@@ -660,7 +660,7 @@ function m6ProblemVisual(
         ? 'Whole inches, half inches, and quarter inches are labeled on the same strip.'
         : 'Label the whole, half, and quarter-inch marks before measuring.'
     });
-  } else if (display.kind === 'bar-graph' || display.kind === 'picture-graph' || display.kind === 'vertical-tape') {
+  } else if (display.kind === 'vertical-tape') {
     for (const item of display.values ?? []) {
       const units = m6VisualUnitCount(item.value, display);
       sections.push({
@@ -676,6 +676,14 @@ function m6ProblemVisual(
           : `Use the stated scale/key to complete ${item.label}.`
       });
     }
+  } else if (display.kind === 'bar-graph' || display.kind === 'picture-graph') {
+    sections.push({
+      kind: 'note',
+      label: solved ? 'Source-shaped display evidence' : 'Source-shaped display workspace',
+      text: solved
+        ? `${display.scaleLabel ?? display.keyLabel ?? 'Use the source scale/key'}; fixed answers must match the Teacher Edition answer key.`
+        : `${display.scaleLabel ?? display.keyLabel ?? 'Use the official scale/key'}; preserve the source graph labels, categories, and response blanks.`
+    });
   } else if (display.kind === 'tally-picture') {
     sections.push({
       kind: 'data-table',
@@ -1009,6 +1017,9 @@ function m7VisualFamily(lessonNumber: number): string {
   if (lessonNumber <= 9) {
     return 'polygon composition workspace';
   }
+  if (lessonNumber === 16) {
+    return 'circular-object perimeter workspace';
+  }
   if (lessonNumber <= 16) {
     return 'perimeter shape workspace';
   }
@@ -1065,6 +1076,10 @@ const M7_SOURCE_PROMPT_OVERRIDES: Record<string, string> = {
   '10-3': 'Outline the perimeter of this piece of paper with a highlighter.',
   '14-2': 'Label the unknown side lengths of the rectangle below. Then, find the perimeter of the rectangle. 2 cm Perimeter = ____ cm 7 cm.',
   '14-5': "Mr. Spooner draws a regular hexagon on the board. One of the sides measures 4 centimeters. Giles and Xander find the perimeter. Their work is shown below. Whose work is correct? Explain your answer. Giles's Work: Perimeter = 4 cm + 4 cm + 4 cm + 4 cm + 4 cm + 4 cm; Perimeter = 24 cm. Xander's Work: Perimeter = 6 x 4 cm; Perimeter = 24 cm.",
+  '16-1': 'Find the perimeter of 10 circular objects to the nearest quarter inch using string. Record the name and perimeter of each object in the chart below. a. Explain the steps you used to find the perimeter of the circular objects in the chart above. b. Could the same process be used to find the perimeter of the shape below? Why or why not?',
+  '16-4': 'Is the process you used to find the perimeter of a circular object an efficient method to find the perimeter of a rectangle? Why or why not?',
+  '17-1': 'The shapes below are made up of rectangles. Label the unknown side lengths. Then, write and solve an equation to find the perimeter of each shape.',
+  '17-3': 'Label the unknown side lengths. Then, find the perimeter of the shaded rectangle.',
   '24-1': "Use the given perimeters in the chart below to choose the widths and lengths of your robot's rectangular body parts. Write the widths and lengths in the chart. Use the blank rows if you want to add extra rectangular body parts. Your robot should have 7 to 9 rectangular body parts. Then use the environment chart to plan 6 to 8 items for your robot's environment, including rectangular and circular items with the listed perimeter requirements.",
   '25-1': 'Draw a picture of your robot in its environment in the space below. Label the widths, lengths, and perimeters of all rectangles. Label the perimeters of all circular shapes.',
   '26-1': "Collect the area measurements of your classmates' robot bodies. Make a line plot using everyone's area measurements. a. How many different measurements are on the line plot? Why are the measurements different? b. What does this tell you about the relationship between area and perimeter?",
@@ -1078,6 +1093,17 @@ const M7_SOURCE_PROMPT_OVERRIDES: Record<string, string> = {
   '29-1': "Kyle puts two rectangles together to make the L-shaped figure below. He measures some of the side lengths and records them as shown. a. Find the perimeter of Kyle's shape. b. Find the area of Kyle's shape. c. Kyle makes two copies of the L-shaped figure to create the rectangle shown below. Find the perimeter of the rectangle.",
   '29-4': 'A jogging path around the outside edges of a rectangular playground measures 48 yards by 52 yards. Maya runs 3 laps on the jogging path. What is the total number of yards Maya runs?'
 };
+
+function m7CleanSourcePrompt(prompt: string): string {
+  return prompt
+    .replace(/\s+unknown\.$/i, '.')
+    .replace(/\s+unknown measurements\.$/i, '.')
+    .replace(/\s+whole number measurements are unknown\.$/i, '.')
+    .replace(/\s+quarter inch\.$/i, '.')
+    .replace(/\.\.+/g, '.')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 
 function m7LastAnswerNumber(answer: string | undefined, fallback: number): number {
   if (!answer) {
@@ -2040,7 +2066,7 @@ function m7ProblemSetLesson(lessonNumber: number): ProblemSetCenteredLesson | un
       const areaModels = m7AreaModels(lessonNumber, problem.number);
       const dataDisplay = m7DataDisplay(lessonNumber, problem.number);
       const solvedDataDisplay = m7SolvedDataDisplay(lessonNumber, problem.number) ?? dataDisplay;
-      const sourcePrompt = M7_SOURCE_PROMPT_OVERRIDES[`${lessonNumber}-${problem.number}`] ?? problem.prompt;
+      const sourcePrompt = m7CleanSourcePrompt(M7_SOURCE_PROMPT_OVERRIDES[`${lessonNumber}-${problem.number}`] ?? problem.prompt);
       const fallbackEquations = problem.equations.length
         ? problem.equations
         : isPerimeter

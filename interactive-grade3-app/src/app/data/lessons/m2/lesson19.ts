@@ -6,10 +6,10 @@ export const M2_LESSON19_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 19 animation: Decompose twice to subtract measurements including thre...",
+    title: "Lesson 19 animation: Decompose twice to subtract measurements including thre",
     context: "Part 1: Decompose twice using the standard algorithm for subtraction.",
     equation: "Measure and label in kg; keep the unit with the number",
-    teacherPrompt: "Why is it important to unbundle or change all of your language. Making this a partner–share units before subtracting? activity may relieve students of a...",
+    teacherPrompt: "Why is it important to unbundle or change all of your language. Making this a partner–share units before subtracting? activity may relieve students of a.",
     focus: [
       "decompose",
       "measurement",
@@ -48,14 +48,14 @@ export const M2_LESSON19_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Why is it important to unbundle or change all of your language. Making this a partner-share units before subtracting? activity may relieve students of anxiety in front of a large group. Some",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. minuends with zeros in the tens and ones places. G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 19 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "measurement"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Solve the subtraction problems below. a. 340 cm - 60 cm b. 340 cm - 260 cm c. 513 g - 148 g d. 641 g - 387 g e. 700 mL - 52 mL f. 700 mL - 452 mL g. 6 km 802 m - 2 km 569 m h. 5 L 920 mL - 3 L 869 mL minuends with zeros in the tens and ones places. David is driving from Los Angeles to San Francisco. The total distance is 617 kilometers. He has 468 kilometers left to drive. How many kilometers has he driven so far? 3. The piano weighs 289 kilograms more than the piano bench. How much does the bench weigh? Piano 297 kg Bench? kg 4. Tank A holds 165 fewer liters of water than Tank B. Tank B holds 400 liters of water. How much water does Tank A hold? minuends with zeros in the tens and ones places.",
+      studentPrompt: "Use the official Module 2 Lesson 19 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 19 Problem Set.",
       visualModel: "measurement"
     },
@@ -63,7 +63,7 @@ export const M2_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. minuends with zeros in the tens and ones places. G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+      studentPrompt: "Use the official Lesson 19 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 233-242.",
       visualModel: "measurement"
     },
@@ -79,7 +79,7 @@ export const M2_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Subtract Mentally 3.NBT.2 (4 minutes) Use Subtraction Algorithm with Measurements 3.MD.2 (4 minutes) Round Three- and Four-Digit Numbers 3.NBT.1 (4 minutes) Subtract Mentally (4 minutes) Note: This activity emphasizes the role of place value in the subtraction algorithm. T: (Write 10 - 5 = ___.) Say the number sentence in units of one. S: 10 ones - 5 ones = 5 ones. Repeat the process outlined in Lesson 18. Use the following suggested sequence: 12 ones - 5 ones, 42 ones - 5 ones, 10 tens - 5 tens, 12 tens - 5 tens, and 42 ten...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 19 objective: Decompose twice to subtract measurements including three-digit minuends with zeros in the tens and ones places.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 233-242.",
       visualModel: "measurement"
     }
@@ -116,7 +116,7 @@ export const M2_LESSON19_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. minuends with zeros in the tens and ones places. G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+        value: "Problem Set (10 minutes): Students complete the Lesson 19 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -134,7 +134,7 @@ export const M2_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Solve the subtraction problems below. a. 340 cm - 60 cm b. 340 cm - 260 cm c. 513 g - 148 g d. 641 g - 387 g e. 700 mL - 52 mL f. 700 mL - 452 mL g. 6 km 802 m - 2 km 569 m h. 5 L 920 mL - 3 L 869 mL minuends with zeros in the tens and ones places. David is driving from Los Angeles to San Francisco. The total distance is 617 kilometers. He has 468 kilometers left to drive. How many kilometers has he driven so far? 3. The piano weighs 289 kilograms more than the piano bench. How much does the bench weigh? Piano 297 kg Bench? kg 4. Tank A holds 165 fewer liters of water than Tank B. Tank B holds 400 liters of water. How much water does Tank A hold? minuends with zeros in the tens and ones places."
+        value: "Use the official Module 2 Lesson 19 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -148,7 +148,7 @@ export const M2_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. minuends with zeros in the tens and ones places. G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+        value: "Use the official Lesson 19 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -176,7 +176,7 @@ export const M2_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Subtract Mentally 3.NBT.2 (4 minutes) Use Subtraction Algorithm with Measurements 3.MD.2 (4 minutes) Round Three- and Four-Digit Numbers 3.NBT.1 (4 minutes) Subtract Mentally (4 minutes) Note: This activity emphasizes the role of place value in the subtraction algorithm. T: (Write 10 - 5 = ___.) Say the number sentence in units of one. S: 10 ones - 5 ones = 5 ones. Repeat the process outlined in Lesson 18. Use the following suggested sequence: 12 ones - 5 ones, 42 ones - 5 ones, 10 tens - 5 tens, 12 tens - 5 tens, and 42 ten..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 19 objective: Decompose twice to subtract measurements including three-digit minuends with zeros in the tens and ones places."
       },
       {
         label: "Workbook",

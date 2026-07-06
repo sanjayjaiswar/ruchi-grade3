@@ -453,6 +453,9 @@ export class LessonPage implements OnInit {
   }
 
   problemVisualSpec(problem: ProblemSetCenteredProblem): ProblemVisualSpec | undefined {
+    if (this.module?.id === 'm1' && this.lesson?.lessonNumber === 16) {
+      return undefined;
+    }
     return this.problemSetMode === 'solved' ? problem.solvedVisual : problem.blankVisual;
   }
 
@@ -826,6 +829,52 @@ export class LessonPage implements OnInit {
 
   lesson17NotebookUnits(): number[] {
     return this.countSlots(4, 4);
+  }
+
+  lesson19Problem1Parts(): Array<{
+    label: string;
+    total: number;
+    divisor: number;
+    columns: number;
+    topRows: number;
+    bottomRows: number;
+    topDividend: number;
+    bottomDividend: number;
+    topQuotient: number;
+    bottomQuotient: number;
+    quotient: number;
+  }> {
+    return [
+      { label: 'a', total: 36, divisor: 3, columns: 3, topRows: 10, bottomRows: 2, topDividend: 30, bottomDividend: 6, topQuotient: 10, bottomQuotient: 2, quotient: 12 },
+      { label: 'b', total: 25, divisor: 5, columns: 5, topRows: 4, bottomRows: 1, topDividend: 20, bottomDividend: 5, topQuotient: 4, bottomQuotient: 1, quotient: 5 },
+      { label: 'c', total: 28, divisor: 4, columns: 4, topRows: 5, bottomRows: 2, topDividend: 20, bottomDividend: 8, topQuotient: 5, bottomQuotient: 2, quotient: 7 },
+      { label: 'd', total: 32, divisor: 4, columns: 4, topRows: 5, bottomRows: 3, topDividend: 20, bottomDividend: 12, topQuotient: 5, bottomQuotient: 3, quotient: 8 }
+    ];
+  }
+
+  lesson19ArrayCells(part: { topRows: number; bottomRows: number; columns: number }): number[] {
+    return this.countSlots((part.topRows + part.bottomRows) * part.columns, 80);
+  }
+
+  lesson19IsSplitCell(part: { topRows: number; columns: number }, cellIndex: number): boolean {
+    return Math.floor(cellIndex / part.columns) === part.topRows;
+  }
+
+  lesson19Problem2Matches(): Array<{ bucket: string; ball: string; answer: string; order: string }> {
+    return [
+      { bucket: '24 divided by 2', ball: '(20 divided by 2) + (4 divided by 2)', answer: '12', order: '1st bucket -> 4th ball' },
+      { bucket: '36 divided by 3', ball: '(30 divided by 3) + (6 divided by 3)', answer: '12', order: '2nd bucket -> 1st ball' },
+      { bucket: '39 divided by 3', ball: '(30 divided by 3) + (9 divided by 3)', answer: '13', order: '3rd bucket -> 2nd ball' },
+      { bucket: '26 divided by 2', ball: '(20 divided by 2) + (6 divided by 2)', answer: '13', order: '4th bucket -> 3rd ball' }
+    ];
+  }
+
+  lesson19NellCells(): number[] {
+    return this.countSlots(24, 24);
+  }
+
+  lesson19NellIsSplitCell(cellIndex: number): boolean {
+    return Math.floor(cellIndex / 2) === 6;
   }
 
   areaModelSlots(areaModel: { rows: number; columns: number }): number[] {

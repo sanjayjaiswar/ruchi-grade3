@@ -62,4 +62,13 @@ export class ProblemVisualWorkspaceComponent {
   arrayColumns(section: ProblemVisualArraySection): string {
     return `repeat(${Math.max(1, section.columns)}, minmax(18px, 1fr))`;
   }
+
+  arrayCellIsAfterSplit(section: ProblemVisualArraySection, index: number): boolean {
+    if (!section.splitAfterRows) {
+      return false;
+    }
+
+    const row = Math.floor(index / section.columns);
+    return row === section.splitAfterRows;
+  }
 }

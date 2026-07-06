@@ -7,10 +7,10 @@ export const M5_LESSON8_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "fraction-strip",
-    title: "Lesson 8 animation: Represent parts of one whole as fractions with number b...",
-    context: "Problem 2: Decompose 1 into fourths.",
+    title: "Lesson 8 animation: Represent parts of one whole as fractions with number bonds.",
+    context: "Use the Teacher Edition Lesson 8 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
     equation: "2/4; name the whole before naming the fraction",
-    teacherPrompt: "Share different representations for Problem 6 about the hamburger. Guide students to see that the chef's refrigerated meat can be made into 3 1 more bur...",
+    teacherPrompt: "How does the official fraction model show represent parts of one whole as fractions with number bonds.?",
     focus: [
       "fraction",
       "whole",
@@ -35,7 +35,7 @@ export const M5_LESSON8_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Problem 2: Decompose 1 into fourths. T: Draw a number bond decomposing 1 into 4 unit fractions. S: (Draw a number bond.) T: Now, work with your partner to show a number bond decomposing 1 into 2 parts. One part should be MP.7 composed of 3 copies of the unit fraction. S: (Work with a partner to draw the number bond.) T: What unit fraction did we copy to make the number 3 fourths? S: 1 fourth.",
+      studentPrompt: "Use the Teacher Edition Lesson 8 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf, pages 86-97. Lesson 8 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "fraction-strip"
     },
@@ -44,14 +44,14 @@ export const M5_LESSON8_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Share different representations for Problem 6 about the hamburger. Guide students to see that the chef's refrigerated meat can be made into 3 1 more burgers and that each of those burgers is 4 of the meat",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 8 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition.",
       visualModel: "fraction-strip"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 5: Draw a number bond with 2 parts showing the shaded and unshaded fractions of each figure. Decompose both parts of the number bond into unit fractions. a. b. c. d. Problem 6: The chef put of the ground beef on the grill to make one hamburger and put the rest in the refrigerator. Draw a 2-part number bond showing the fraction of the ground beef on the grill and the fraction in the refrigerator. Draw a visual model of all the ground beef. Shade what is in the refrigerator. a. What fraction of the ground beef was in the refrigerator? b. How many more hamburgers can the chef make if he makes them all the same size as the first one? c. Show the refrigerated ground beef broken into unit fractions on your number bond above.",
+      studentPrompt: "Use the official Module 5 Lesson 8 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 5 student workbook, Lesson 8 Problem Set.",
       visualModel: "fraction-strip"
     },
@@ -59,7 +59,7 @@ export const M5_LESSON8_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 8 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 86-97.",
       visualModel: "fraction-strip"
     },
@@ -75,7 +75,7 @@ export const M5_LESSON8_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Unit and Non-Unit Fractions of 1 Whole 3.NF.1 (2 minutes) Sprint: Identify Fractions 3.G.2, 3.NF.2 (10 minutes) Unit and Non-Unit Fractions of 1 Whole (2 minutes) Materials: (S) Personal white board Note: This activity reviews naming the shaded and unshaded equal parts of a whole. T: (Draw a shape partitioned in halves with 1 half shaded.) Write the fraction that is shaded. 1 S: (Write .) 2 T: Write the fraction that is not shaded. 1 S: (Write .) 2 2 1 4 1 9 1 Continue with the following possible sequence of shaded and non-sha...",
+      studentPrompt: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 8 objective: Represent parts of one whole as fractions with number bonds.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 86-97.",
       visualModel: "fraction-strip"
     }
@@ -102,7 +102,7 @@ export const M5_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 2: Decompose 1 into fourths. T: Draw a number bond decomposing 1 into 4 unit fractions. S: (Draw a number bond.) T: Now, work with your partner to show a number bond decomposing 1 into 2 parts. One part should be MP.7 composed of 3 copies of the unit fraction. S: (Work with a partner to draw the number bond.) T: What unit fraction did we copy to make the number 3 fourths? S: 1 fourth."
+        value: "Use the Teacher Edition Lesson 8 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence."
       },
       {
         label: "Workbook",
@@ -112,7 +112,7 @@ export const M5_LESSON8_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 8 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -130,7 +130,7 @@ export const M5_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 5: Draw a number bond with 2 parts showing the shaded and unshaded fractions of each figure. Decompose both parts of the number bond into unit fractions. a. b. c. d. Problem 6: The chef put of the ground beef on the grill to make one hamburger and put the rest in the refrigerator. Draw a 2-part number bond showing the fraction of the ground beef on the grill and the fraction in the refrigerator. Draw a visual model of all the ground beef. Shade what is in the refrigerator. a. What fraction of the ground beef was in the refrigerator? b. How many more hamburgers can the chef make if he makes them all the same size as the first one? c. Show the refrigerated ground beef broken into unit fractions on your number bond above."
+        value: "Use the official Module 5 Lesson 8 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -144,7 +144,7 @@ export const M5_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 8 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -172,7 +172,7 @@ export const M5_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Unit and Non-Unit Fractions of 1 Whole 3.NF.1 (2 minutes) Sprint: Identify Fractions 3.G.2, 3.NF.2 (10 minutes) Unit and Non-Unit Fractions of 1 Whole (2 minutes) Materials: (S) Personal white board Note: This activity reviews naming the shaded and unshaded equal parts of a whole. T: (Draw a shape partitioned in halves with 1 half shaded.) Write the fraction that is shaded. 1 S: (Write .) 2 T: Write the fraction that is not shaded. 1 S: (Write .) 2 2 1 4 1 9 1 Continue with the following possible sequence of shaded and non-sha..."
+        value: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 8 objective: Represent parts of one whole as fractions with number bonds."
       },
       {
         label: "Workbook",

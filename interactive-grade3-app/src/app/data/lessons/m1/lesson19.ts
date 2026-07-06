@@ -8,23 +8,23 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 19 animation: choose a decomposition",
-    context: "Show 9 rows of 4, split into 5 rows and 4 rows, and justify the chosen strategy.",
-    equation: "9 x 4 = (5 x 4) + (4 x 4) = 36",
-    teacherPrompt: "Why did this split help solve the fact?",
-    groupCount: 9,
-    groupSize: 4,
-    rowCount: 9,
-    columnCount: 4,
-    tapePartCount: 9,
-    tapePartLabel: "4",
-    tapeWholeLabel: "36 total",
-    firstPart: 5,
-    secondPart: 4,
+    title: "Lesson 19 animation: decompose a division fact",
+    context: "Show 24 as 12 rows of 2, split the array into two equal 12-dot parts, then divide each part by 2.",
+    equation: "24 divided by 2 = (12 divided by 2) + (12 divided by 2) = 6 + 6 = 12",
+    teacherPrompt: "How does splitting the dividend into two friendly parts help find the quotient?",
+    groupCount: 12,
+    groupSize: 2,
+    rowCount: 12,
+    columnCount: 2,
+    tapePartCount: 12,
+    tapePartLabel: "2",
+    tapeWholeLabel: "24 total",
+    firstPart: 6,
+    secondPart: 6,
     focus: [
-      "Choose split",
-      "Known facts",
-      "Reasonable product"
+      "Split dividend",
+      "Same divisor",
+      "Add partial quotients"
     ]
   },
   teacherEditionSteps: [
@@ -40,7 +40,7 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: Let's use the array to help us solve 24 divided by 2 = ____. There are 24 dots total. (Draw a line after the tenth row.) This shows one way to break apart the array. T: Write division equations to represent the part of the array above the line and the part of the array below the line. S: (Write 20 divided by 2 = 10 and 4 divided by 2 = 2.) T: How many twos are above the line? S: 10 twos.",
+      studentPrompt: "Use the array to solve 24 divided by 2 by breaking the dividend into two smaller facts, dividing each part by 2, and adding the partial quotients.",
       teacherEditionBasis: "EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf, pages 245-254. Lesson 19 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "array"
     },
@@ -49,14 +49,14 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Compare Nell's strategy in Problem 3 to the strategy for solving 24 divided by 2 in the Concept Development",
-      teacherEditionBasis: "Problem Set (10 minutes) If appropriate, encourage the class or individual students to solve 33 divided by 3 Students should do their personal best to complete the without using an array. Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 19 Problem Set using the lesson models from the Teacher Edition.",
       visualModel: "array"
     },
     {
       id: "source-picture",
       title: "Teacher Edition Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Label the array. Then, fill in the blanks to make true number sentences. a. 36 divided by 3 = b. 25 divided by 5 = (30 divided by 3) = (20 divided by 5) = 4 (5 divided by 5) = (6 divided by 3) = (36 divided by 3) = (30 divided by 3) + (6 divided by 3) (25 divided by 5) = (20 divided by 5) + (5 divided by 5) = 10 + = 4 + = 12 = c. 28 divided by 4 = ____ d. 32 divided by 4 = ____ (20 divided by 4) = (divided by 4) = (divided by 4) = (divided by 4) = (28 divided by 4) = (20 divided by 4) + (____ divided by 4) (32 divided by 4) = (____ divided by 4) + (____ divided by 4) = + = + = = Problem 2: Match the equal expressions. 24 divided by 2 36 divided by 3 39 divided by 3 26 divided by 2 (30 divided by 3) + (6 divided by 3) (30 divided by 3) + (9 divided by 3) (20 divided by 2) + (6 divided by 2) (20 divided by 2) + (4 divided by 2) Problem 3: Nell draws the array below to find the answer to 24 divided by 2. Explain Nell's strategy.",
+      studentPrompt: "Problem 1 uses four arrays to decompose division facts: 36 divided by 3, 25 divided by 5, 28 divided by 4, and 32 divided by 4. Problem 2 matches each division fact to an equal decomposed expression. Problem 3 explains Nell's 24 divided by 2 array split.",
       teacherEditionBasis: "Module 1 Teacher Edition, Lesson 19 Problem Set.",
       visualModel: "array"
     },
@@ -64,7 +64,7 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) If appropriate, encourage the class or individual students to solve 33 divided by 3 Students should do their personal best to complete the without using an array. Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 19 Problem Set workspace and source-backed visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 245-254.",
       visualModel: "array"
     },
@@ -80,7 +80,7 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (14 minutes) Group Counting 3.OA.1 (3 minutes) Commutative Multiplying 3.OA.7 (3 minutes) Decompose and Multiply 3.OA.5 (4 minutes) Compose and Multiply 3.OA.5 (4 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by threes, fours, fives, and sixes in this activity reviews multiplication with units of 3, 4, and 5 and anticipates multiplication with units of 6 in Module 3. T: Let's count by fives. (Direct students to count forward and backward to 50.) T: Let's coun...",
+      studentPrompt: "Debrief focus: connect the Problem Set models and answers to the Lesson 19 objective: Apply the distributive property to decompose units.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 245-254.",
       visualModel: "array"
     }
@@ -107,7 +107,7 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: Let's use the array to help us solve 24 divided by 2 = ____. There are 24 dots total. (Draw a line after the tenth row.) This shows one way to break apart the array. T: Write division equations to represent the part of the array above the line and the part of the array below the line. S: (Write 20 divided by 2 = 10 and 4 divided by 2 = 2.) T: How many twos are above the line? S: 10 twos."
+        value: "Use the array to solve 24 divided by 2 by breaking the dividend into two smaller facts, dividing each part by 2, and adding the partial quotients."
       },
       {
         label: "Teacher Edition",
@@ -117,7 +117,7 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) If appropriate, encourage the class or individual students to solve 33 divided by 3 Students should do their personal best to complete the without using an array. Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set focus: students solve decomposed division problems, matching each divided part to the total quotient and using RDW when a method is not specified."
       },
       {
         label: "Source text",
@@ -135,7 +135,7 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Label the array. Then, fill in the blanks to make true number sentences. a. 36 divided by 3 = b. 25 divided by 5 = (30 divided by 3) = (20 divided by 5) = 4 (5 divided by 5) = (6 divided by 3) = (36 divided by 3) = (30 divided by 3) + (6 divided by 3) (25 divided by 5) = (20 divided by 5) + (5 divided by 5) = 10 + = 4 + = 12 = c. 28 divided by 4 = ____ d. 32 divided by 4 = ____ (20 divided by 4) = (divided by 4) = (divided by 4) = (divided by 4) = (28 divided by 4) = (20 divided by 4) + (____ divided by 4) (32 divided by 4) = (____ divided by 4) + (____ divided by 4) = + = + = = Problem 2: Match the equal expressions. 24 divided by 2 36 divided by 3 39 divided by 3 26 divided by 2 (30 divided by 3) + (6 divided by 3) (30 divided by 3) + (9 divided by 3) (20 divided by 2) + (6 divided by 2) (20 divided by 2) + (4 divided by 2) Problem 3: Nell draws the array below to find the answer to 24 divided by 2. Explain Nell's strategy."
+        value: "Problem 1 uses four arrays to decompose division facts: 36 divided by 3, 25 divided by 5, 28 divided by 4, and 32 divided by 4. Problem 2 matches each division fact to an equal decomposed expression. Problem 3 explains Nell's 24 divided by 2 array split."
       },
       {
         label: "Teacher Edition",
@@ -149,7 +149,7 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) If appropriate, encourage the class or individual students to solve 33 divided by 3 Students should do their personal best to complete the without using an array. Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 19 Problem Set workspace and source-backed visuals to model and solve the student-facing problems."
       },
       {
         label: "Teacher Edition",
@@ -177,7 +177,7 @@ export const M1_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (14 minutes) Group Counting 3.OA.1 (3 minutes) Commutative Multiplying 3.OA.7 (3 minutes) Decompose and Multiply 3.OA.5 (4 minutes) Compose and Multiply 3.OA.5 (4 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by threes, fours, fives, and sixes in this activity reviews multiplication with units of 3, 4, and 5 and anticipates multiplication with units of 6 in Module 3. T: Let's count by fives. (Direct students to count forward and backward to 50.) T: Let's coun..."
+        value: "Debrief focus: connect the Problem Set models and answers to the Lesson 19 objective: Apply the distributive property to decompose units."
       },
       {
         label: "Teacher Edition",

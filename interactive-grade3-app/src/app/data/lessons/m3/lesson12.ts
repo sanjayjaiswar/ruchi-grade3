@@ -9,10 +9,10 @@ export const M3_LESSON12_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 12 animation: Apply the distributive property and the fact 9 = 10 - 1...",
+    title: "Lesson 12 animation: Apply the distributive property and the fact 9 = 10 - 1 as a strategy to multiply.",
     context: "Template Use the 9 = 10 – 1 strategy to solve 9 x n facts.",
     equation: "9 x 10 = (5 x 10) + (4 x 10)",
-    teacherPrompt: "What does the nine represent in Problem 1? (It represents the value of each unit.) What does the nine represent in Problem 2? (It represents the number...",
+    teacherPrompt: "How does the official Problem Set model show apply the distributive property and the fact 9 = 10 - 1 as a strategy to multiply.?",
     focus: [
       "distributive property",
       "factor",
@@ -53,14 +53,14 @@ export const M3_LESSON12_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "What does the nine represent in Problem 1? (It represents the value of each unit.) What does the nine represent in Problem 2? (It represents the number of units.)",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 12 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition.",
       visualModel: "array"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Each has a value of 9. Find the value of each row. Then, add the rows to find the total. a. 6 x 9 = ____ b. 7 x 9 = ____ 5 x 9 = 45 5 x 9 = 45 1 x 9 = ____ ____ x 9 = ____ 6 x 9 = (5 + 1) x 9 7 x 9 = (5 + ____) x 9 = (5 x 9) + (1 x 9) = (5 x 9) + (____ x 9) = 45 + ____ = 45 + ____ = ____ = ____ c. 8 x 9 = ____ d. 9 x 9 = ____ 5 x 9 = ____ 5 x 9 = ____ ____ x 9 = ____ ____ x 9 = ____ 8 x 9 = (5 + ____) x 9 9 x 9 = (5 + ____) x 9 = (5 x 9) + (____ x ____) = (5 x 9) + (____ x ____) = 45 + ____ = 45 + ____ = ____ = ____ to multiply. Problem 2: Find the total value of the shaded blocks. a. 9 x 6 = b. 9 x 7 = 6 7 9 sixes = 10 sixes - 1 six 9 sevens = 10 sevens - 1 seven =____ - 6 = ____ - 7 = ____ = ____ c. 9 x 8 = d. 9 x 9 = 8 9 9 eights = 10 eights - 1 eight 9 nines = 10 nines - 1 nine = ____ - 8 = ____ - ____ = ____ = ____ Problem 3: Matt buys a pack of postage stamps. He counts 9 rows of 4 stamps. He thinks of 10 fours to find the total number of stamps. Show the strategy t...",
+      studentPrompt: "Use the official Module 3 Lesson 12 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 3 student workbook, Lesson 12 Problem Set.",
       visualModel: "array"
     },
@@ -68,7 +68,7 @@ export const M3_LESSON12_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 12 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 150-163.",
       visualModel: "array"
     },
@@ -84,7 +84,7 @@ export const M3_LESSON12_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (11 minutes) Multiply By 8 3.OA.7 (7 minutes) Take from the Ten 3.OA.5 (4 minutes) Multiply by 8 (7 minutes) Materials: (S) Multiply By 8 (6-10) (Pattern Sheet) Note: This activity builds fluency with respect to multiplication facts using units of 8. It supports students knowing from memory all products of two one-digit numbers. See Lesson 5 for the directions regarding administration of a Multiply By Pattern Sheet. T: (Write 6 x 8 = ____.) Let's skip-count up by eights to solve. (Count with fingers to 6 as students count.) S: 8, 16, 24, 3...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 12 objective: Apply the distributive property and the fact 9 = 10 - 1 as a strategy to multiply.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 150-163.",
       visualModel: "array"
     }
@@ -121,7 +121,7 @@ export const M3_LESSON12_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 12 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M3_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Each has a value of 9. Find the value of each row. Then, add the rows to find the total. a. 6 x 9 = ____ b. 7 x 9 = ____ 5 x 9 = 45 5 x 9 = 45 1 x 9 = ____ ____ x 9 = ____ 6 x 9 = (5 + 1) x 9 7 x 9 = (5 + ____) x 9 = (5 x 9) + (1 x 9) = (5 x 9) + (____ x 9) = 45 + ____ = 45 + ____ = ____ = ____ c. 8 x 9 = ____ d. 9 x 9 = ____ 5 x 9 = ____ 5 x 9 = ____ ____ x 9 = ____ ____ x 9 = ____ 8 x 9 = (5 + ____) x 9 9 x 9 = (5 + ____) x 9 = (5 x 9) + (____ x ____) = (5 x 9) + (____ x ____) = 45 + ____ = 45 + ____ = ____ = ____ to multiply. Problem 2: Find the total value of the shaded blocks. a. 9 x 6 = b. 9 x 7 = 6 7 9 sixes = 10 sixes - 1 six 9 sevens = 10 sevens - 1 seven =____ - 6 = ____ - 7 = ____ = ____ c. 9 x 8 = d. 9 x 9 = 8 9 9 eights = 10 eights - 1 eight 9 nines = 10 nines - 1 nine = ____ - 8 = ____ - ____ = ____ = ____ Problem 3: Matt buys a pack of postage stamps. He counts 9 rows of 4 stamps. He thinks of 10 fours to find the total number of stamps. Show the strategy t..."
+        value: "Use the official Module 3 Lesson 12 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -153,7 +153,7 @@ export const M3_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 12 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -181,7 +181,7 @@ export const M3_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (11 minutes) Multiply By 8 3.OA.7 (7 minutes) Take from the Ten 3.OA.5 (4 minutes) Multiply by 8 (7 minutes) Materials: (S) Multiply By 8 (6-10) (Pattern Sheet) Note: This activity builds fluency with respect to multiplication facts using units of 8. It supports students knowing from memory all products of two one-digit numbers. See Lesson 5 for the directions regarding administration of a Multiply By Pattern Sheet. T: (Write 6 x 8 = ____.) Let's skip-count up by eights to solve. (Count with fingers to 6 as students count.) S: 8, 16, 24, 3..."
+        value: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 12 objective: Apply the distributive property and the fact 9 = 10 - 1 as a strategy to multiply."
       },
       {
         label: "Workbook",

@@ -7,10 +7,10 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 23 animation: Solve perimeter word problems with source shapes",
-    context: "Gale makes a miniature stop sign, a regular octagon, with a perimeter of 48 centimeters for the town he built with blocks.",
+    title: "Lesson 23 animation: Solve a variety of word problems with perimeter.",
+    context: "Use the Teacher Edition Lesson 23 RDW word-problem model with quantities, labels, units, and written answer evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use the outside boundary and given side lengths for each source problem",
-    teacherPrompt: "How was setting up the problem to solve Problem 1 different from setting up the other problems? What did you need to know about the stop sign before you...",
+    teacherPrompt: "Use the source Lesson 23 RDW word-problem model with quantities, labels, units, and written answer evidence; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "area",
       "perimeter",
@@ -34,7 +34,7 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Gale makes a miniature stop sign, a regular octagon, with a perimeter of 48 centimeters for the town he built with blocks. What is the length of each side of the stop sign? Students might solve by first drawing an octagon, then labeling a side length with a letter, and dividing the perimeter (48 cm) by the number of sides on an octagon (8)",
+      studentPrompt: "Use the Teacher Edition Lesson 23 RDW word-problem model with quantities, labels, units, and written answer evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 311-321. Lesson 23 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -42,24 +42,24 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "How was setting up the problem to solve Problem 1 different from setting up the other problems? What did you need to know about the stop sign before you could solve?",
-      teacherEditionBasis: "Problem 1: Gale makes a miniature stop sign, a regular octagon, with a perimeter of 48 centimeters for the town he built with blocks. What is the length of each side of the stop sign? Students might solve by first drawing an octagon, then labeling a side length with a letter, and dividing the perimeter (48 cm) by the number of sides on an octagon (8).",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 23 work using the official Module 7 RDW word-problem model with quantities, labels, units, and written answer evidence from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 23 work using the official Module 7 RDW word-problem model with quantities, labels, units, and written answer evidence from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Gale makes a miniature stop sign, a regular octagon, with a perimeter of 48 centimeters for the town he built with blocks. What is the length of each side of the stop sign? Problem 2: Travis bends wire to make rectangles. Each rectangle measures 34 inches by 12 inches. What is the total length of the wire needed for two rectangles? Problem 3: The perimeter of a rectangular bathroom is 32 feet. The width of the room is 8 feet. What is the length of the room?",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 23 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 23 Problem Set prompts in order. Blank mode preserves the student-facing RDW word-problem model with quantities, labels, units, and written answer evidence; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 23 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem 1: Gale makes a miniature stop sign, a regular octagon, with a perimeter of 48 centimeters for the town he built with blocks. What is the length of each side of the stop sign? Students might solve by first drawing an octagon, then labeling a side length with a letter, and dividing the perimeter (48 cm) by the number of sides on an octagon (8).",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 311-321.",
+      studentPrompt: "Use the source-backed Lesson 23 workspace and RDW word-problem model with quantities, labels, units, and written answer evidence to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 23; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -74,8 +74,8 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (10 minutes) Sprint: Multiply or Divide by 5 3.OA.7 (10 minutes) Sprint: Multiply or Divide by 5 (10 minutes) Materials: (S) Multiply or Divide by 5 Sprint Note: This Sprint builds fluency with multiplication and division facts using units of 5. Concept Development (40 minutes) NOTES ON Materials: (S) Problem Set MULTIPLE MEANS OF ENGAGEMENT: In this problem-solving lesson, students work in pairs or Give everyone a fair chance to be independently to solve the six problems on the Problem Set. successful by providing appropriate MP.1 The teach...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 311-321.",
+      studentPrompt: "Debrief focus: connect the Problem Set RDW word-problem model with quantities, labels, units, and written answer evidence to the Lesson 23 objective: Solve a variety of word problems with perimeter.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 23; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -101,7 +101,7 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Gale makes a miniature stop sign, a regular octagon, with a perimeter of 48 centimeters for the town he built with blocks. What is the length of each side of the stop sign? Students might solve by first drawing an octagon, then labeling a side length with a letter, and dividing the perimeter (48 cm) by the number of sides on an octagon (8)"
+        value: "Use the Teacher Edition Lesson 23 RDW word-problem model with quantities, labels, units, and written answer evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -111,11 +111,11 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem 1: Gale makes a miniature stop sign, a regular octagon, with a perimeter of 48 centimeters for the town he built with blocks. What is the length of each side of the stop sign? Students might solve by first drawing an octagon, then labeling a side length with a letter, and dividing the perimeter (48 cm) by the number of sides on an octagon (8)."
+        value: "Problem Set source focus: students complete the Lesson 23 work using the official Module 7 RDW word-problem model with quantities, labels, units, and written answer evidence from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "How was setting up the problem to solve Problem 1 different from setting up the other problems? What did you need to know about the stop sign before you could solve?"
+        value: "Teacher Edition check: preserve the Lesson 23 RDW word-problem model with quantities, labels, units, and written answer evidence."
       },
       {
         label: "Workbook",
@@ -125,11 +125,11 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 23 Problem Set."
+        value: "Module 7 student workbook, Lesson 23 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Gale makes a miniature stop sign, a regular octagon, with a perimeter of 48 centimeters for the town he built with blocks. What is the length of each side of the stop sign? Problem 2: Travis bends wire to make rectangles. Each rectangle measures 34 inches by 12 inches. What is the total length of the wire needed for two rectangles? Problem 3: The perimeter of a rectangular bathroom is 32 feet. The width of the room is 8 feet. What is the length of the room?"
+        value: "Use the official Module 7 Lesson 23 Problem Set prompts in order. Blank mode preserves the student-facing RDW word-problem model with quantities, labels, units, and written answer evidence; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -139,11 +139,11 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 311-321."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 23; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem 1: Gale makes a miniature stop sign, a regular octagon, with a perimeter of 48 centimeters for the town he built with blocks. What is the length of each side of the stop sign? Students might solve by first drawing an octagon, then labeling a side length with a letter, and dividing the perimeter (48 cm) by the number of sides on an octagon (8)."
+        value: "Use the source-backed Lesson 23 workspace and RDW word-problem model with quantities, labels, units, and written answer evidence to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -167,11 +167,11 @@ export const M7_LESSON23_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 311-321."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 23; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (10 minutes) Sprint: Multiply or Divide by 5 3.OA.7 (10 minutes) Sprint: Multiply or Divide by 5 (10 minutes) Materials: (S) Multiply or Divide by 5 Sprint Note: This Sprint builds fluency with multiplication and division facts using units of 5. Concept Development (40 minutes) NOTES ON Materials: (S) Problem Set MULTIPLE MEANS OF ENGAGEMENT: In this problem-solving lesson, students work in pairs or Give everyone a fair chance to be independently to solve the six problems on the Problem Set. successful by providing appropriate MP.1 The teach..."
+        value: "Debrief focus: connect the Problem Set RDW word-problem model with quantities, labels, units, and written answer evidence to the Lesson 23 objective: Solve a variety of word problems with perimeter."
       },
       {
         label: "Workbook",

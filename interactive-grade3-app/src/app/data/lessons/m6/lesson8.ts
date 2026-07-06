@@ -8,9 +8,9 @@ export const M6_LESSON8_RUNTIME: LessonRuntimeConfig = {
   lessonAnimation: {
     kind: "graph",
     title: "Lesson 8 animation: Represent measurement data with line plots.",
-    context: "Plot a large data set to the nearest half inch.",
+    context: "Use the Teacher Edition Lesson 8 quarter-inch line plot model to connect the official data context, labels, scale or interval, and answer evidence.",
     equation: "Read the scale, then compare or calculate from the graph data",
-    teacherPrompt: "Look at Problem (b). With a partner, compare the steps you took to create the line plot",
+    teacherPrompt: "Use the official Lesson 8 quarter-inch line plot: read the source quantities, preserve the scale or interval, and justify each answer from the display.",
     focus: [
       "line plot",
       "scale",
@@ -47,7 +47,7 @@ export const M6_LESSON8_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Plot a large data set to the nearest half inch. Students start with the Heights of Sunflower Plants Template in their personal white boards. T: What data is shown in the chart? S: The heights of sunflower plants. T: How does the measurement data in this chart compare to the measurement data we plotted?",
+      studentPrompt: "Use the Teacher Edition Lesson 8 quarter-inch line plot model to connect the official data context, labels, scale or interval, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_6/g3_m6_teacher_edition_v1_3_0.pdf, pages 106-119. Lesson 8 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "graph"
     },
@@ -56,14 +56,14 @@ export const M6_LESSON8_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Look at Problem (b). With a partner, compare the steps you took to create the line plot",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 8 Problem Set using the official Module 6 quarter-inch line plot quantities, labels, units, scale, and comparison structures from the Teacher Edition.",
       visualModel: "graph"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Delilah stops under a silver maple tree and collects leaves. At home, she measures the widths of the leaves to the nearest 4 inch and records the measurements as shown below. Widths of Silver Maple Tree Leaves (in Inches) 3 1 3 5 6 6 6 5 4 4 4 1 1 1 3 6 6 5 5 6 2 4 2 4 1 1 1 6 6 6 6 6 4 2 4 1 3 1 3 6 5 6 6 6 2 4 4 4 1 3 1 6 6 6 5 6 4 4 2 a. Use the data to create a line plot below. b. Explain the steps you took to create the line plot. c. How many more leaves were 6 inches wide than 6 inches wide? d. Find the three most frequent measurements on the line plot. What does this tell you about the typical width of a silver maple tree leaf?",
+      studentPrompt: "Use the official Module 6 Lesson 8 Problem Set prompts in order. Blank mode preserves the student-facing quarter-inch line plot workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 6 student workbook, Lesson 8 Problem Set.",
       visualModel: "graph"
     },
@@ -71,7 +71,7 @@ export const M6_LESSON8_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 8 Problem Set workspace and source-backed quarter-inch line plot visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 6 Teacher Edition, lesson pages 106-119.",
       visualModel: "graph"
     },
@@ -87,7 +87,7 @@ export const M6_LESSON8_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (14 minutes) Group Counting 3.OA.1 (3 minutes) Multiply by 7 3.OA.7 (7 minutes) Count by Halves and Fourths 3.MD.4 (4 minutes) Group Counting (3 minutes) Note: This group counting activity reviews the relationship between counting by a unit and multiplying and dividing with that unit. T: Count by eights to 80. S: 8, 16, 24, 32, 40, 48, 56, 64, 72, 80. T: (Write 4 x 8 = .) What is the value of 4 eights? Count by eights if you are unsure. S: 32. T: Say the multiplication sentence. S: 4 x 8 = 32. Continue the process for 7 x 8 and 9 x 8. T:...",
+      studentPrompt: "Debrief focus: connect the Problem Set quarter-inch line plot displays, scales, labels, comparisons, and answers to the Lesson 8 objective: Represent measurement data with line plots.",
       teacherEditionBasis: "Module 6 Teacher Edition, lesson pages 106-119.",
       visualModel: "graph"
     }
@@ -114,7 +114,7 @@ export const M6_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Plot a large data set to the nearest half inch. Students start with the Heights of Sunflower Plants Template in their personal white boards. T: What data is shown in the chart? S: The heights of sunflower plants. T: How does the measurement data in this chart compare to the measurement data we plotted?"
+        value: "Use the Teacher Edition Lesson 8 quarter-inch line plot model to connect the official data context, labels, scale or interval, and answer evidence."
       },
       {
         label: "Workbook",
@@ -124,7 +124,7 @@ export const M6_LESSON8_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 8 Problem Set using the official Module 6 quarter-inch line plot quantities, labels, units, scale, and comparison structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -142,7 +142,7 @@ export const M6_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Delilah stops under a silver maple tree and collects leaves. At home, she measures the widths of the leaves to the nearest 4 inch and records the measurements as shown below. Widths of Silver Maple Tree Leaves (in Inches) 3 1 3 5 6 6 6 5 4 4 4 1 1 1 3 6 6 5 5 6 2 4 2 4 1 1 1 6 6 6 6 6 4 2 4 1 3 1 3 6 5 6 6 6 2 4 4 4 1 3 1 6 6 6 5 6 4 4 2 a. Use the data to create a line plot below. b. Explain the steps you took to create the line plot. c. How many more leaves were 6 inches wide than 6 inches wide? d. Find the three most frequent measurements on the line plot. What does this tell you about the typical width of a silver maple tree leaf?"
+        value: "Use the official Module 6 Lesson 8 Problem Set prompts in order. Blank mode preserves the student-facing quarter-inch line plot workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -156,7 +156,7 @@ export const M6_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 8 Problem Set workspace and source-backed quarter-inch line plot visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -184,7 +184,7 @@ export const M6_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (14 minutes) Group Counting 3.OA.1 (3 minutes) Multiply by 7 3.OA.7 (7 minutes) Count by Halves and Fourths 3.MD.4 (4 minutes) Group Counting (3 minutes) Note: This group counting activity reviews the relationship between counting by a unit and multiplying and dividing with that unit. T: Count by eights to 80. S: 8, 16, 24, 32, 40, 48, 56, 64, 72, 80. T: (Write 4 x 8 = .) What is the value of 4 eights? Count by eights if you are unsure. S: 32. T: Say the multiplication sentence. S: 4 x 8 = 32. Continue the process for 7 x 8 and 9 x 8. T:..."
+        value: "Debrief focus: connect the Problem Set quarter-inch line plot displays, scales, labels, comparisons, and answers to the Lesson 8 objective: Represent measurement data with line plots."
       },
       {
         label: "Workbook",

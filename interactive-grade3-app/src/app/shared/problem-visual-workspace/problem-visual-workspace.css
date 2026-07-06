@@ -76,6 +76,30 @@
   box-shadow: none;
 }
 
+.visual-array span.is-after-split {
+  position: relative;
+  background: #ffffff;
+  border: 2px solid #5f6368;
+}
+
+.visual-array span.is-after-split::before {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  height: 3px;
+  border-radius: 999px;
+  background: #3c4043;
+  content: "";
+}
+
+.visual-array-caption {
+  color: var(--color-text-secondary, #5f6368);
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
 .visual-array.is-butterfly span {
   position: relative;
   border-radius: 4px;

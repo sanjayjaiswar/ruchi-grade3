@@ -7,10 +7,10 @@ export const M5_LESSON4_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "fraction-strip",
-    title: "Lesson 4 animation: Represent and identify fractional parts of different wh...",
-    context: "Before the museum walk, chart and review the following points.",
+    title: "Lesson 4 animation: Represent and identify fractional parts of different wholes.",
+    context: "Use the Teacher Edition Lesson 4 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
     equation: "2/3; name the whole before naming the fraction",
-    teacherPrompt: "What was the same at each station? What was different?",
+    teacherPrompt: "How does the official fraction model show represent and identify fractional parts of different wholes.?",
     focus: [
       "fraction",
       "whole",
@@ -35,7 +35,7 @@ export const M5_LESSON4_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Before the museum walk, chart and review the following points. If the analysis dwindles during the tour, circulate and refer students back to the chart. Students complete their Problem station. gently pick up the materials to Compare the yarn to the yellow strip. encourage better analysis. This encourages more conversation, too. Compare the yellow strip to the brown paper or candy bar. Compare the water to the clay.",
+      studentPrompt: "Use the Teacher Edition Lesson 4 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf, pages 41-53. Lesson 4 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "fraction-strip"
     },
@@ -44,14 +44,14 @@ export const M5_LESSON4_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "What was the same at each station? What was different?",
-      teacherEditionBasis: "Use the Teacher Edition lesson pages 41-53 for the exact teacher explanation and support sequence.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 4 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition.",
       visualModel: "fraction-strip"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Draw a picture of the yellow strip at 3 (or 4) different stations. Shade and label 1 fractional unit of each. Problem 2: Draw a picture of the brown bar at 3 (or 4) different stations. Shade and label 1 fractional unit of each. Problem 3: Draw a picture of the square at 3 (or 4) different stations. Shade and label 1 fractional unit of each. Draw a picture of the clay at 3 (or 4) different stations. Shade and label 1 fractional unit of each. 5. Draw a picture of the water at 3 (or 4) different stations. Shade and label 1 fractional unit of each. 6. Extension: Draw a picture of the yarn at 3 (or 4) different stations.",
+      studentPrompt: "Use the official Module 5 Lesson 4 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 5 student workbook, Lesson 4 Problem Set.",
       visualModel: "fraction-strip"
     },
@@ -59,7 +59,7 @@ export const M5_LESSON4_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Use the Teacher Edition lesson pages 41-53 for the exact teacher explanation and support sequence.",
+      studentPrompt: "Use the official Lesson 4 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 41-53.",
       visualModel: "fraction-strip"
     },
@@ -75,7 +75,7 @@ export const M5_LESSON4_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (11 minutes) Sprint: Multiply and Divide by Six 3.OA.4 (9 minutes) Group Counting 3.OA.1 (2 minutes) Sprint: Multiply and Divide by Six (9 minutes) Materials: (S) Multiply and Divide by Six Sprint NOTES ON Note: This Sprint supports fluency with multiplication and MULTIPLE MEANS division using units of 6. OF ACTION AND Group Counting (2 minutes) EXPRESSION: If students struggle with higher Note: Group counting reviews interpreting multiplication as multiples, have them work with the repeated addition. first 3 or 4 multiples of each number...",
+      studentPrompt: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 4 objective: Represent and identify fractional parts of different wholes.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 41-53.",
       visualModel: "fraction-strip"
     }
@@ -102,7 +102,7 @@ export const M5_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Before the museum walk, chart and review the following points. If the analysis dwindles during the tour, circulate and refer students back to the chart. Students complete their Problem station. gently pick up the materials to Compare the yarn to the yellow strip. encourage better analysis. This encourages more conversation, too. Compare the yellow strip to the brown paper or candy bar. Compare the water to the clay."
+        value: "Use the Teacher Edition Lesson 4 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence."
       },
       {
         label: "Workbook",
@@ -112,7 +112,7 @@ export const M5_LESSON4_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Use the Teacher Edition lesson pages 41-53 for the exact teacher explanation and support sequence."
+        value: "Problem Set (10 minutes): Students complete the Lesson 4 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -130,7 +130,7 @@ export const M5_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Draw a picture of the yellow strip at 3 (or 4) different stations. Shade and label 1 fractional unit of each. Problem 2: Draw a picture of the brown bar at 3 (or 4) different stations. Shade and label 1 fractional unit of each. Problem 3: Draw a picture of the square at 3 (or 4) different stations. Shade and label 1 fractional unit of each. Draw a picture of the clay at 3 (or 4) different stations. Shade and label 1 fractional unit of each. 5. Draw a picture of the water at 3 (or 4) different stations. Shade and label 1 fractional unit of each. 6. Extension: Draw a picture of the yarn at 3 (or 4) different stations."
+        value: "Use the official Module 5 Lesson 4 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -144,7 +144,7 @@ export const M5_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Use the Teacher Edition lesson pages 41-53 for the exact teacher explanation and support sequence."
+        value: "Use the official Lesson 4 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -172,7 +172,7 @@ export const M5_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (11 minutes) Sprint: Multiply and Divide by Six 3.OA.4 (9 minutes) Group Counting 3.OA.1 (2 minutes) Sprint: Multiply and Divide by Six (9 minutes) Materials: (S) Multiply and Divide by Six Sprint NOTES ON Note: This Sprint supports fluency with multiplication and MULTIPLE MEANS division using units of 6. OF ACTION AND Group Counting (2 minutes) EXPRESSION: If students struggle with higher Note: Group counting reviews interpreting multiplication as multiples, have them work with the repeated addition. first 3 or 4 multiples of each number..."
+        value: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 4 objective: Represent and identify fractional parts of different wholes."
       },
       {
         label: "Workbook",

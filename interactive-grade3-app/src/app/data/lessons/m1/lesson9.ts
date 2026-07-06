@@ -48,14 +48,14 @@ export const M1_LESSON9_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Review the strategy of adding and subtracting the totals of known \"easy\" facts for solving unknown facts",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. groups in array models. Quality Control Guide",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 9 Problem Set using the lesson models from the Teacher Edition.",
       visualModel: "array"
     },
     {
       id: "source-picture",
       title: "Teacher Edition Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: The team organizes soccer balls into 2 rows of 5. The coach adds 3 rows of 5 soccer balls. Complete the equations to describe the total array. a. (5 + 5) + (5 + 5 + 5) = ____ b. 2 fives + ____ fives = ____ fives c. ____ x 5 = ____ Problem 2: 7 x 2 = ____ Problem 3: 9 x 2 = ____ 5 x 2 = ____ 10 x 2 = ____ 2 x 2 = ____ 10 + 4 = ____ ____ x 2 = 14 1 x 2 = ____ 20 - ____ = 18 9 x 2 = ____ groups in array models. Quality Control Guide",
+      studentPrompt: "Problem 1: The team organizes soccer balls into 2 rows of 5. The coach adds 3 rows of 5 soccer balls. Complete the equations to describe the total array. a. (5 + 5) + (5 + 5 + 5) = ____ b. 2 fives + ____ fives = ____ fives c. ____ x 5 = ____ Problem 2: 7 x 2 = ____ Problem 3: 9 x 2 = ____ 5 x 2 = ____ 10 x 2 = ____ 2 x 2 = ____ 10 + 4 = ____ ____ x 2 = 14 1 x 2 = ____ 20 - ____ = 18 9 x 2 = ____",
       teacherEditionBasis: "Module 1 Teacher Edition, Lesson 9 Problem Set.",
       visualModel: "array"
     },
@@ -63,7 +63,7 @@ export const M1_LESSON9_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. groups in array models. Quality Control Guide",
+      studentPrompt: "Use the official Lesson 9 Problem Set workspace and source-backed visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 119-130.",
       visualModel: "array"
     },
@@ -79,7 +79,7 @@ export const M1_LESSON9_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Multiply by 2 Pattern Sheet 3.OA.7 (8 minutes) Group Counting 3.OA.1 (3 minutes) Forms of Multiplication 3.OA.1 (4 minutes) Multiply by 2 Pattern Sheet (8 minutes) Materials: (S) Multiply by 2 (1-5) (Pattern Sheet) Note: This activity builds fluency with multiplication facts using units of 2. It works toward students knowing from memory all products of two one-digit numbers. T: (Write 5 x 2 = ____.) Let's skip-count by twos to find the answer. (Count with fingers to 5 as students count. Record skip-count on the board.) S: 2,...",
+      studentPrompt: "Debrief focus: connect the Problem Set models and answers to the Lesson 9 objective: Find related multiplication facts by adding and subtracting equal groups in array models.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 119-130.",
       visualModel: "array"
     }
@@ -116,7 +116,7 @@ export const M1_LESSON9_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. groups in array models. Quality Control Guide"
+        value: "Problem Set (10 minutes): Students complete the Lesson 9 Problem Set using the lesson models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -134,7 +134,7 @@ export const M1_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: The team organizes soccer balls into 2 rows of 5. The coach adds 3 rows of 5 soccer balls. Complete the equations to describe the total array. a. (5 + 5) + (5 + 5 + 5) = ____ b. 2 fives + ____ fives = ____ fives c. ____ x 5 = ____ Problem 2: 7 x 2 = ____ Problem 3: 9 x 2 = ____ 5 x 2 = ____ 10 x 2 = ____ 2 x 2 = ____ 10 + 4 = ____ ____ x 2 = 14 1 x 2 = ____ 20 - ____ = 18 9 x 2 = ____ groups in array models. Quality Control Guide"
+        value: "Problem 1: The team organizes soccer balls into 2 rows of 5. The coach adds 3 rows of 5 soccer balls. Complete the equations to describe the total array. a. (5 + 5) + (5 + 5 + 5) = ____ b. 2 fives + ____ fives = ____ fives c. ____ x 5 = ____ Problem 2: 7 x 2 = ____ Problem 3: 9 x 2 = ____ 5 x 2 = ____ 10 x 2 = ____ 2 x 2 = ____ 10 + 4 = ____ ____ x 2 = 14 1 x 2 = ____ 20 - ____ = 18 9 x 2 = ____"
       },
       {
         label: "Teacher Edition",
@@ -148,7 +148,7 @@ export const M1_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. groups in array models. Quality Control Guide"
+        value: "Use the official Lesson 9 Problem Set workspace and source-backed visuals to model and solve the student-facing problems."
       },
       {
         label: "Teacher Edition",
@@ -176,7 +176,7 @@ export const M1_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Multiply by 2 Pattern Sheet 3.OA.7 (8 minutes) Group Counting 3.OA.1 (3 minutes) Forms of Multiplication 3.OA.1 (4 minutes) Multiply by 2 Pattern Sheet (8 minutes) Materials: (S) Multiply by 2 (1-5) (Pattern Sheet) Note: This activity builds fluency with multiplication facts using units of 2. It works toward students knowing from memory all products of two one-digit numbers. T: (Write 5 x 2 = ____.) Let's skip-count by twos to find the answer. (Count with fingers to 5 as students count. Record skip-count on the board.) S: 2,..."
+        value: "Debrief focus: connect the Problem Set models and answers to the Lesson 9 objective: Find related multiplication facts by adding and subtracting equal groups in array models."
       },
       {
         label: "Teacher Edition",

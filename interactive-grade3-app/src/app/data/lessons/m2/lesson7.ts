@@ -7,7 +7,7 @@ export const M2_LESSON7_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 7 animation: Develop estimation strategies by reasoning about the we...",
+    title: "Lesson 7 animation: Develop estimation strategies by reasoning about the we",
     context: "T: (Pass out spring scales that measure in grams.) This scale is labeled in intervals of 200.",
     equation: "Measure and label in kg; keep the unit with the number",
     teacherPrompt: "How did you use the 1-kilogram, 100-gram, 10-gram, and 1-gram weights to help you estimate the weights of objects in the classroom?",
@@ -50,22 +50,22 @@ export const M2_LESSON7_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "How did you use the 1-kilogram, 100-gram, 10-gram, and 1-gram weights to help you estimate the weights of objects in the classroom?",
-      teacherEditionBasis: "Problem Set (20 minutes) NOTES ON Materials: (S) 1 kg, 100 g, 10 g, and 1 g weights MULTIPLE MEANS (or pre-measured and labeled bags of rice OF REPRESENTATION: corresponding to each measurement), spring scale Review directions with students before that measures up to 2,000 grams, metric digital they begin. Use prompts to get them scale to stop and think before moving to the next step, e.g., \"Who remembers the Side 1 of the Problem Set is used for the lesson's exploration. next step?\" Students should complete Side 2 independently or with a partner. kilog...",
+      teacherEditionBasis: "Problem Set (20 minutes): Students use benchmark weights, spring scales, and metric units to estimate and check classroom object weights.",
       visualModel: "measurement"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: A box of cereal weighs about 350 (grams / kilograms). Problem 2: A watermelon weighs about 3 (grams / kilograms). Problem 3: A postcard weighs about 6 (grams / kilograms).",
-      teacherEditionBasis: "Module 2 student workbook, Lesson 7 Problem Set.",
+      studentPrompt: "Use the official Module 2 Lesson 7 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 7 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "measurement"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (20 minutes) NOTES ON Materials: (S) 1 kg, 100 g, 10 g, and 1 g weights MULTIPLE MEANS (or pre-measured and labeled bags of rice OF REPRESENTATION: corresponding to each measurement), spring scale Review directions with students before that measures up to 2,000 grams, metric digital they begin. Use prompts to get them scale to stop and think before moving to the next step, e.g., \"Who remembers the Side 1 of the Problem Set is used for the lesson's exploration. next step?\" Students should complete Side 2 independently or with a partner. kilog...",
+      studentPrompt: "Use the official Lesson 7 benchmark-weight table and source-backed scale contexts to estimate and check weights in grams and kilograms.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 85-95.",
       visualModel: "measurement"
     },
@@ -73,7 +73,7 @@ export const M2_LESSON7_RUNTIME: LessonRuntimeConfig = {
       id: "source-exit",
       title: "Exit evidence from source",
       shortTitle: "Exit",
-      studentPrompt: "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context.",
+      studentPrompt: "Use the official Lesson 7 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 85-95. Lesson 7 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "measurement"
     },
@@ -81,7 +81,7 @@ export const M2_LESSON7_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (10 minutes) Group Counting 3.OA.1 (4 minutes) Decompose 1 Kilogram 3.MD.2 (4 minutes) Gram Counting 3.MD.2 (2 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. The counting by groups in this activity reviews foundational strategies for multiplication from Module 1 and anticipates Module 3. Direct students to count forward and backward, occasionally changing the direction of the count using the following suggested sequence: Threes to 30 Fours to 40 Sixes to 60 Seven...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 7 objective: Develop estimation strategies by reasoning about the weight in kilograms of a series of familiar objects to establish mental benchmark measures.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 85-95.",
       visualModel: "measurement"
     }
@@ -118,7 +118,7 @@ export const M2_LESSON7_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (20 minutes) NOTES ON Materials: (S) 1 kg, 100 g, 10 g, and 1 g weights MULTIPLE MEANS (or pre-measured and labeled bags of rice OF REPRESENTATION: corresponding to each measurement), spring scale Review directions with students before that measures up to 2,000 grams, metric digital they begin. Use prompts to get them scale to stop and think before moving to the next step, e.g., \"Who remembers the Side 1 of the Problem Set is used for the lesson's exploration. next step?\" Students should complete Side 2 independently or with a partner. kilog..."
+        value: "Problem Set (20 minutes): Students use benchmark weights, spring scales, and metric units to estimate and check classroom object weights."
       },
       {
         label: "Source text",
@@ -136,7 +136,7 @@ export const M2_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: A box of cereal weighs about 350 (grams / kilograms). Problem 2: A watermelon weighs about 3 (grams / kilograms). Problem 3: A postcard weighs about 6 (grams / kilograms)."
+        value: "Use the official Module 2 Lesson 7 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -150,7 +150,7 @@ export const M2_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (20 minutes) NOTES ON Materials: (S) 1 kg, 100 g, 10 g, and 1 g weights MULTIPLE MEANS (or pre-measured and labeled bags of rice OF REPRESENTATION: corresponding to each measurement), spring scale Review directions with students before that measures up to 2,000 grams, metric digital they begin. Use prompts to get them scale to stop and think before moving to the next step, e.g., \"Who remembers the Side 1 of the Problem Set is used for the lesson's exploration. next step?\" Students should complete Side 2 independently or with a partner. kilog..."
+        value: "Use the official Lesson 7 benchmark-weight table and source-backed scale contexts to estimate and check weights in grams and kilograms."
       },
       {
         label: "Workbook",
@@ -178,7 +178,7 @@ export const M2_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (10 minutes) Group Counting 3.OA.1 (4 minutes) Decompose 1 Kilogram 3.MD.2 (4 minutes) Gram Counting 3.MD.2 (2 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. The counting by groups in this activity reviews foundational strategies for multiplication from Module 1 and anticipates Module 3. Direct students to count forward and backward, occasionally changing the direction of the count using the following suggested sequence: Threes to 30 Fours to 40 Sixes to 60 Seven..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 7 objective: Develop estimation strategies by reasoning about the weight in kilograms of a series of familiar objects to establish mental benchmark measures."
       },
       {
         label: "Workbook",

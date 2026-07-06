@@ -9,7 +9,7 @@ export const M3_LESSON7_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "tape-diagram",
-    title: "Lesson 7 animation: Interpret the unknown in multiplication and division to...",
+    title: "Lesson 7 animation: Interpret the unknown in multiplication and division to model and solve problems using units of 6 and 7.",
     context: "Thad sees 7 beetles while weeding his garden.",
     equation: "6 units of 7; unknown labeled from the story",
     teacherPrompt: "Draw and label a tape diagram to model the beetle problem. Use b to represent the unknown number of beetle legs, then write and solve 7 x 6 = b.",
@@ -51,14 +51,14 @@ export const M3_LESSON7_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Draw and label a tape diagram to model the beetle problem. Use b to represent the unknown number of beetle legs, then write and solve 7 x 6 = b.",
-      teacherEditionBasis: "Problem Set (Page 2) of work, provide sentence frames for discussion, and/or read the words in During this time, students work together in groups to complete Problem 1 as students match it to the the second page of the Problem Set. When the group work is correct equation. done, they meet with members of other groups to discuss answers and problem solving strategies. MP.1 Divide students into groups of four. Each group is assigned a word problem to model and solve from Page 2 of the Problem Set. Depending on the class size, there may be multiple groups s...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 7 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition.",
       visualModel: "tape-diagram"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Match the words to the correct equation. a number times 6 equals 30 n x 7 = 21 7 times a number equals 42 n x 6 = 30 6 times 7 equals a number 6x7=n 63 divided by a number equals 9 7 x n = 42 36 divided by a number equals 6 36 divided by n = 6 a number times 7 equals 21 63 divided by n = 9 Problem 2: Write an equation to represent the tape diagram below, and solve for the unknown. 8 8 8 8 8 8 Equation: ____ k solve problems using units of 6 and 7. Problem 3: Model each problem with a drawing. Then, write an equation using a letter to represent the unknown, and solve for the unknown. a. Each student gets 3 pencils. There are a total of 21 pencils. How many students are there? b. Henry spends 24 minutes practicing 6 different basketball drills. He spends the same amount of time on each drill. How much time does Henry spend on each drill? c. Jessica has 8 pieces of yarn for a project. Each piece of yarn is 6 centimeters long. What is the total length of the yarn? d. Ginny me...",
+      studentPrompt: "Use the official Module 3 Lesson 7 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 3 student workbook, Lesson 7 Problem Set.",
       visualModel: "tape-diagram"
     },
@@ -66,7 +66,7 @@ export const M3_LESSON7_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (Page 2) of work, provide sentence frames for discussion, and/or read the words in During this time, students work together in groups to complete Problem 1 as students match it to the the second page of the Problem Set. When the group work is correct equation. done, they meet with members of other groups to discuss answers and problem solving strategies. MP.1 Divide students into groups of four. Each group is assigned a word problem to model and solve from Page 2 of the Problem Set. Depending on the class size, there may be multiple groups s...",
+      studentPrompt: "Use the official Lesson 7 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 85-96.",
       visualModel: "tape-diagram"
     },
@@ -82,7 +82,7 @@ export const M3_LESSON7_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Multiply By 7 3.OA.7 (7 minutes) Group Counting 3.OA.1 (4 minutes) Decompose the Multiplication Sentence 3.OA.5 (4 minutes) Multiply By 7 (7 minutes) Materials: (S) Multiply by 7 (1-5) (Pattern Sheet) Note: This activity builds fluency with multiplication facts using units of seven. It supports students knowing from memory all products of two one-digit numbers. See Lesson 5 for the directions for administering a Multiply By Pattern Sheet. T: (Write 5 x 7 = ____.) Let's skip-count by sevens to find the answer. I'll raise a fi...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 7 objective: Interpret the unknown in multiplication and division to model and solve problems using units of 6 and 7.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 85-96.",
       visualModel: "tape-diagram"
     }
@@ -119,7 +119,7 @@ export const M3_LESSON7_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (Page 2) of work, provide sentence frames for discussion, and/or read the words in During this time, students work together in groups to complete Problem 1 as students match it to the the second page of the Problem Set. When the group work is correct equation. done, they meet with members of other groups to discuss answers and problem solving strategies. MP.1 Divide students into groups of four. Each group is assigned a word problem to model and solve from Page 2 of the Problem Set. Depending on the class size, there may be multiple groups s..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 7 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -137,7 +137,7 @@ export const M3_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Match the words to the correct equation. a number times 6 equals 30 n x 7 = 21 7 times a number equals 42 n x 6 = 30 6 times 7 equals a number 6x7=n 63 divided by a number equals 9 7 x n = 42 36 divided by a number equals 6 36 divided by n = 6 a number times 7 equals 21 63 divided by n = 9 Problem 2: Write an equation to represent the tape diagram below, and solve for the unknown. 8 8 8 8 8 8 Equation: ____ k solve problems using units of 6 and 7. Problem 3: Model each problem with a drawing. Then, write an equation using a letter to represent the unknown, and solve for the unknown. a. Each student gets 3 pencils. There are a total of 21 pencils. How many students are there? b. Henry spends 24 minutes practicing 6 different basketball drills. He spends the same amount of time on each drill. How much time does Henry spend on each drill? c. Jessica has 8 pieces of yarn for a project. Each piece of yarn is 6 centimeters long. What is the total length of the yarn? d. Ginny me..."
+        value: "Use the official Module 3 Lesson 7 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -151,7 +151,7 @@ export const M3_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (Page 2) of work, provide sentence frames for discussion, and/or read the words in During this time, students work together in groups to complete Problem 1 as students match it to the the second page of the Problem Set. When the group work is correct equation. done, they meet with members of other groups to discuss answers and problem solving strategies. MP.1 Divide students into groups of four. Each group is assigned a word problem to model and solve from Page 2 of the Problem Set. Depending on the class size, there may be multiple groups s..."
+        value: "Use the official Lesson 7 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -179,7 +179,7 @@ export const M3_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Multiply By 7 3.OA.7 (7 minutes) Group Counting 3.OA.1 (4 minutes) Decompose the Multiplication Sentence 3.OA.5 (4 minutes) Multiply By 7 (7 minutes) Materials: (S) Multiply by 7 (1-5) (Pattern Sheet) Note: This activity builds fluency with multiplication facts using units of seven. It supports students knowing from memory all products of two one-digit numbers. See Lesson 5 for the directions for administering a Multiply By Pattern Sheet. T: (Write 5 x 7 = ____.) Let's skip-count by sevens to find the answer. I'll raise a fi..."
+        value: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 7 objective: Interpret the unknown in multiplication and division to model and solve problems using units of 6 and 7."
       },
       {
         label: "Workbook",

@@ -7,7 +7,7 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "clock",
-    title: "Lesson 1 animation: Explore time as a continuous measurement using a stopwa...",
+    title: "Lesson 1 animation: Explore time as a continuous measurement using a stopwa",
     context: "Part 1: Explore seconds as a unit of time.",
     equation: "5 sec start -> 5 sec elapsed -> 10 sec end",
     teacherPrompt: "Explain to your partner why the activities in Problem 5 did not take that long to complete",
@@ -47,14 +47,14 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Explain to your partner why the activities in Problem 5 did not take that long to complete",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Some problems do not specify a method for solving. This is an intentional reduction of scaffolding that invokes MP.5, Use Appropriate Tools Strategically. Students should solve these problems using the RDW approach used for Application Problems. For some classes, it may be appropriate to modify the assignment by specifying which problems students should work on first. With this option, let the purposeful sequencing of the Problem S...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 1 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "clock"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use a stopwatch. How long does it take you to Problem 2: Use a stopwatch. How long does it take to snap your fingers 10 times? write every whole number from 0 to 25? It takes ____ to snap It takes ____ to write 10 times. every whole number from 0 to 25. Problem 3: Use a stopwatch. How long does it take you to",
+      studentPrompt: "Use the official Module 2 Lesson 1 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 1 Problem Set.",
       visualModel: "clock"
     },
@@ -62,7 +62,7 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Some problems do not specify a method for solving. This is an intentional reduction of scaffolding that invokes MP.5, Use Appropriate Tools Strategically. Students should solve these problems using the RDW approach used for Application Problems. For some classes, it may be appropriate to modify the assignment by specifying which problems students should work on first. With this option, let the purposeful sequencing of the Problem S...",
+      studentPrompt: "Use the official Lesson 1 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 13-23.",
       visualModel: "clock"
     },
@@ -78,7 +78,7 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) understand how to use a stopwatch Total Time (60 minutes) and to begin to conceptualize time as a continuous measurement, students need some familiarity with seconds. Fluency Practice (12 minutes) The introduction of seconds anticipates Grade 4 content (4.MD.1). Tell Time on the Clock 2.MD.7 (3 minutes) Seconds are used as a unit in the Application Problem and also as a unit Minute Counting 3.MD.1 (6 minutes) of measure that students explore in Group Counting 3.OA.1 (3 minutes) Part 1 of the lesson as they familiarize themselves with stopwatches. Tell Time on the Clock (3 minut...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 1 objective: Explore time as a continuous measurement using a stopwatch.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 13-23.",
       visualModel: "clock"
     }
@@ -115,7 +115,7 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Some problems do not specify a method for solving. This is an intentional reduction of scaffolding that invokes MP.5, Use Appropriate Tools Strategically. Students should solve these problems using the RDW approach used for Application Problems. For some classes, it may be appropriate to modify the assignment by specifying which problems students should work on first. With this option, let the purposeful sequencing of the Problem S..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 1 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -133,7 +133,7 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Use a stopwatch. How long does it take you to Problem 2: Use a stopwatch. How long does it take to snap your fingers 10 times? write every whole number from 0 to 25? It takes ____ to snap It takes ____ to write 10 times. every whole number from 0 to 25. Problem 3: Use a stopwatch. How long does it take you to"
+        value: "Use the official Module 2 Lesson 1 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -147,7 +147,7 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. Some problems do not specify a method for solving. This is an intentional reduction of scaffolding that invokes MP.5, Use Appropriate Tools Strategically. Students should solve these problems using the RDW approach used for Application Problems. For some classes, it may be appropriate to modify the assignment by specifying which problems students should work on first. With this option, let the purposeful sequencing of the Problem S..."
+        value: "Use the official Lesson 1 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -175,7 +175,7 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) understand how to use a stopwatch Total Time (60 minutes) and to begin to conceptualize time as a continuous measurement, students need some familiarity with seconds. Fluency Practice (12 minutes) The introduction of seconds anticipates Grade 4 content (4.MD.1). Tell Time on the Clock 2.MD.7 (3 minutes) Seconds are used as a unit in the Application Problem and also as a unit Minute Counting 3.MD.1 (6 minutes) of measure that students explore in Group Counting 3.OA.1 (3 minutes) Part 1 of the lesson as they familiarize themselves with stopwatches. Tell Time on the Clock (3 minut..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 1 objective: Explore time as a continuous measurement using a stopwatch."
       },
       {
         label: "Workbook",

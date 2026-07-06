@@ -47,7 +47,7 @@ export const M1_LESSON4_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Ask students to share their division sentences for Problem 9. Because of the way the question is worded, answers will likely include 15 divided by 5 = 3 (answer is the size of the group) and 15 divided by 3 = 5 (answer is the number of groups).",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 4 Problem Set using the lesson models from the Teacher Edition.",
       visualModel: "equal-groups"
     },
     {
@@ -62,7 +62,7 @@ export const M1_LESSON4_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 4 Problem Set workspace and source-backed visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 63-74.",
       visualModel: "equal-groups"
     },
@@ -78,7 +78,7 @@ export const M1_LESSON4_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (14 minutes) Sprint: Repeated Addition as Multiplication 3.OA.1 (9 minutes) Group Counting 3.OA.1 (3 minutes) Array Multiplication 3.OA.1 (2 minutes) Sprint: Repeated Addition as Multiplication (9 minutes) Materials: (S) Repeated Addition as Multiplication Sprint Note: Students relate repeated addition to multiplication. This reviews Topic A's objectives. See Lesson 2 for the directions for administering a Sprint. Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by twos an...",
+      studentPrompt: "Debrief focus: connect the Problem Set models and answers to the Lesson 4 objective: Understand the meaning of the unknown as the size of the group in division.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 63-74.",
       visualModel: "equal-groups"
     }
@@ -115,7 +115,7 @@ export const M1_LESSON4_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 4 Problem Set using the lesson models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -147,7 +147,7 @@ export const M1_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 4 Problem Set workspace and source-backed visuals to model and solve the student-facing problems."
       },
       {
         label: "Teacher Edition",
@@ -175,7 +175,7 @@ export const M1_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (14 minutes) Sprint: Repeated Addition as Multiplication 3.OA.1 (9 minutes) Group Counting 3.OA.1 (3 minutes) Array Multiplication 3.OA.1 (2 minutes) Sprint: Repeated Addition as Multiplication (9 minutes) Materials: (S) Repeated Addition as Multiplication Sprint Note: Students relate repeated addition to multiplication. This reviews Topic A's objectives. See Lesson 2 for the directions for administering a Sprint. Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by twos an..."
+        value: "Debrief focus: connect the Problem Set models and answers to the Lesson 4 objective: Understand the meaning of the unknown as the size of the group in division."
       },
       {
         label: "Teacher Edition",

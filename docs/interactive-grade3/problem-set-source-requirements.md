@@ -8,12 +8,63 @@ These are requirements, not an audit outcome.
 
 These rules apply to every Grade 3 module and every Grade 3 lesson.
 
+These rules also apply to every future code or data change that can affect lesson rendering, lesson source text, problem prompts, blank visuals, solved visuals, answer evidence, source images, tab behavior, or summary mapping.
+
 Validation and review must proceed:
 
 1. Module by module.
 2. Lesson by lesson.
 3. In lesson order.
 4. Across every required tab/mode before marking the lesson complete.
+
+## Non-Negotiable Change Gate
+
+Every lesson-rendering change must pass this gate before it can be described as complete, fixed, done, good, good to go, or passed.
+
+Required gate:
+
+1. Identify every affected module, lesson, tab, mode, and problem card.
+2. Compare the changed content against the official Teacher Edition and Student Workbook/Student Edition source.
+3. Open the running Grade 3 app and visually validate the affected lesson surfaces.
+4. Scroll every checked surface to the end.
+5. Record what was validated and what was not validated.
+
+If the live app was not opened and visually checked, the only allowed status is `Not live-validated`.
+
+If the source page was not compared, the only allowed status is `Structural pass only` or `Needs source comparison`.
+
+If only code, data, screenshots from a previous run, grep output, typecheck, or DOM checks were used, the result is not a visual/source-fidelity pass.
+
+## False Validation Guardrails
+
+False validation is a failure.
+
+Do not say or imply that a lesson, module, or app is `passed`, `fixed`, `complete`, `done`, `good`, or `good to go` unless all required checks in this document have actually passed.
+
+The following are false validations:
+
+- Saying `passed` after checking only that a page loads.
+- Saying `passed` after checking only that a visual component exists.
+- Saying `passed` after checking only that `/source-pages/` images are absent from `Blank` or `Solved`.
+- Saying `passed` after checking only code or data files.
+- Saying `passed` from a stale screenshot, stale browser state, or previous run.
+- Saying `passed` without scrolling `Concept`, `Blank`, `Solved`, and `Summary` to the end.
+- Saying `passed` without comparing `Problem Set > Solved` against the Teacher Edition answer/check evidence.
+- Saying `passed` when a generic visual, generic answer, generic validation panel, or parallel invented model replaces the official problem structure.
+
+If a later source-fidelity review finds a mismatch, the prior result must be corrected explicitly as `Earlier status was only structural; content quality / visual accuracy was not passed`.
+
+## Required Status Wording
+
+Use exact status language:
+
+- `Pass`: source-compared, live-validated, visually source-faithful, and complete across all required surfaces.
+- `Not live-validated`: code or data changed, but the running app was not visually checked.
+- `Structural pass only`: UI pieces exist, but source-fidelity and visual accuracy were not fully checked.
+- `Needs source comparison`: the app was viewed, but the official source page was not compared.
+- `Fail`: any required surface, problem card, answer evidence, visual match, source map, or OCR cleanup requirement fails.
+
+Do not use casual equivalents such as `looks fine`, `seems okay`, `should be good`, or `probably fixed` as pass language.
 
 ## Required Lesson Surfaces
 
@@ -152,6 +203,43 @@ Required validation flow for every lesson:
 Do not mark a lesson pass until all four required surfaces pass.
 
 Do not mark content quality or visual accuracy as passed unless every problem card has been checked against the Teacher Edition / Student Problem Set source page.
+
+## Visual Match Standard
+
+Visual validation means source-fidelity review, not visual presence.
+
+For `Problem Set > Blank`, validate that the authored visual preserves the official student-facing problem structure:
+
+- Same problem context.
+- Same quantities and units.
+- Same diagram type or workspace type.
+- Same labels and blanks.
+- Same grouping, partitioning, rows, columns, scale, number-line marks, table rows, chart axes, shape layout, measurement markings, or fraction model as the source.
+- No solved answer leakage.
+
+For `Problem Set > Solved`, validate that the authored solved visual preserves the Teacher Edition answer/check evidence:
+
+- Same quantities and units as the Teacher Edition.
+- Same answer values or Teacher Edition acceptance criteria.
+- Same diagram/workspace structure as the blank/source problem.
+- Problem-specific reasoning, not generic validation text.
+- Answer evidence visible in or directly attached to the same problem card.
+
+The visual can be authored in HTML/SVG/canvas/components, but it must still match the official source. A generated or reusable visual is acceptable only when it exactly preserves the official problem structure and evidence.
+
+## Required Final Report After Any Fix
+
+After any lesson/content/rendering fix, the final report must state:
+
+- Affected modules and lessons.
+- Affected surfaces: `Concept`, `Problem Set > Blank`, `Problem Set > Solved`, and/or `Summary`.
+- Whether live app validation was performed.
+- Whether each checked surface was scrolled to the end.
+- Whether Teacher Edition / Student Workbook source comparison was performed.
+- Whether any checks are only structural.
+- Remaining failures or unvalidated areas.
+
+If any part was not validated, say so directly. Do not fill the gap with confidence language.
 
 ## Review Severity
 

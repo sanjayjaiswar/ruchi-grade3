@@ -825,7 +825,20 @@ function solvedAnswerFromModels(prompt: string, fractionModels: ProblemSetFracti
     const model = fractionModels[0];
     return `Partition the whole into ${model.denominator} equal parts and shade ${model.numerator} ${DENOMINATOR_LABELS[model.denominator] ?? 'fractional units'}.`;
   }
-  return 'Complete the official workbook model by partitioning the whole into equal parts, labeling the fractional unit, and answering in words.';
+  return `Use the official prompt structure to partition the whole, label the requested fractional unit, and answer this item: ${firstPromptSentence(prompt)}`;
+}
+
+function firstPromptSentence(prompt: string): string {
+  const normalizedPrompt = prompt.replace(/\s+/g, ' ').trim();
+  const endIndexes = ['.', '?', '!']
+    .map((mark) => normalizedPrompt.indexOf(mark))
+    .filter((index) => index >= 0);
+  const end = endIndexes.length ? Math.min(...endIndexes) + 1 : normalizedPrompt.length;
+  return normalizedPrompt.slice(0, end).trim();
+}
+
+function sourceSpecificBlankWorkspaceLabel(problemNumber: number, prompt: string, model: string): string {
+  return `Use this official Problem ${problemNumber} ${model} workspace: ${firstPromptSentence(prompt)}`;
 }
 
 function makeProblem(lessonNumber: number, sourceProblem: M5WorkbookProblem & { equations?: string[] }): ProblemSetCenteredProblem {
@@ -852,12 +865,12 @@ function makeProblem(lessonNumber: number, sourceProblem: M5WorkbookProblem & { 
     fractionModels,
     numberLineModels,
     blankPrompts: [
-      'Complete the official workbook prompt, drawing, labels, and blanks for this item using the model below.',
+      sourceSpecificBlankWorkspaceLabel(sourceProblem.number, sourceProblem.prompt, model),
       'Name the whole before naming or comparing the fraction.'
     ],
     blankEquations: blankEquationTemplates(equations),
     blankAnswerSentence: 'Answer in a complete sentence with the fraction unit and whole named.',
-    blankWorkspaceLabel: `Use the workbook scaffold to build the ${model}.`,
+    blankWorkspaceLabel: sourceSpecificBlankWorkspaceLabel(sourceProblem.number, sourceProblem.prompt, model),
     blankVisualType,
     solvedAnswer,
     equations,
@@ -907,7 +920,7 @@ function createM5ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
   sections.push({
     kind: 'note',
     label: solved ? 'Teacher Edition answer' : 'Source workspace direction',
-    text: solved ? problem.solvedAnswer : problem.blankWorkspaceLabel ?? 'Complete the official workbook fraction model, labels, and answer sentence.'
+    text: solved ? problem.solvedAnswer : problem.blankWorkspaceLabel ?? sourceSpecificBlankWorkspaceLabel(problem.number, problem.sourcePrompt, 'fraction')
   });
 
   return {
@@ -1130,7 +1143,7 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
     conceptSections: [
       {
         title: '1. Teacher Edition concept',
-        body: source?.teacherEditionReference ?? objective,
+        body: `Teacher Edition concept focus: ${objective}`,
         teacherSource: source?.teacherEditionSource ?? `Module 5 Teacher Edition, Lesson ${lessonNumber}.`,
         checkpoints: [
           'State the whole before naming the fraction.',
@@ -1150,7 +1163,7 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
       },
       {
         title: '3. Debrief and validation',
-        body: source?.teacherDebrief ?? 'Use the Teacher Edition debrief to check the model, fraction language, and answer meaning.',
+        body: `Use the Lesson ${lessonNumber} Teacher Edition debrief to check the model, fraction language, and answer meaning without changing the official Problem Set structure.`,
         teacherSource: source?.teacherEditionSource ?? `Module 5 Teacher Edition, Lesson ${lessonNumber}.`,
         checkpoints: [
           'Explain how the model proves the fraction.',

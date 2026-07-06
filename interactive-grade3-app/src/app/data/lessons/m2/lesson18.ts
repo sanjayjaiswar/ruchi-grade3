@@ -6,7 +6,7 @@ export const M2_LESSON18_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 18 animation: Decompose once to subtract measurements including three...",
+    title: "Lesson 18 animation: Decompose once to subtract measurements including three",
     context: "Part 1: Use the place value chart to model decomposing once to subtract with three-digit minuends.",
     equation: "Measure and label in kg; keep the unit with the number",
     teacherPrompt: "What is the relationship between Problems 1(a), 1(b), and 1(c)?",
@@ -48,14 +48,14 @@ export const M2_LESSON18_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "What is the relationship between Problems 1(a), 1(b), and 1(c)?",
-      teacherEditionBasis: "Problem Set (10 minutes) The problems on the Problem Set are Students should do their personal best to complete the Problem written horizontally so that students do Set within the allotted 10 minutes. For some classes, it may be not assume that they need to use the appropriate to modify the assignment by specifying which standard algorithm to solve. Mental problems they work on first. Some problems do not specify a math may be a more efficient strategy method for solving. Students should solve these problems using in some cases. Invite students to use t...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 18 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "measurement"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Solve the subtraction problems below. a. 60 mL - 24 mL b. 360 mL - 24 mL c. 360 mL - 224 mL d. 518 cm - 21 cm e. 629 cm - 268 cm f. 938 cm - 440 cm g. 307 g - 130 g h. 307 g - 234 g i. 807 g - 732 g j. 2 km 770 m - 1 km 455 m k. 3 kg 924 g - 1 kg 893 g minuends with zeros in the tens or ones place. The total weight of 3 books is shown to the right. If 2 books weigh 233 grams, how much does the third book weigh? Use a tape diagram to model the problem. 405g 3. The chart to the right shows the lengths of three movies. The Lost Ship 117 minutes a. The movie Champions is 22 minutes shorter than The Lost Ship. How long is Champions? Magical Forests 145 minutes Champions? minutes b. How much longer is Magical Forests than Champions? 4. The total length of a rope is 208 centimeters. Scott cuts it into 3 pieces. The first piece is 80 centimeters long. The second piece is 94 centimeters long. How long is the third piece of rope? minuends with zeros in the tens or ones place.",
+      studentPrompt: "Use the official Module 2 Lesson 18 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 18 Problem Set.",
       visualModel: "measurement"
     },
@@ -63,7 +63,7 @@ export const M2_LESSON18_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) The problems on the Problem Set are Students should do their personal best to complete the Problem written horizontally so that students do Set within the allotted 10 minutes. For some classes, it may be not assume that they need to use the appropriate to modify the assignment by specifying which standard algorithm to solve. Mental problems they work on first. Some problems do not specify a math may be a more efficient strategy method for solving. Students should solve these problems using in some cases. Invite students to use t...",
+      studentPrompt: "Use the official Lesson 18 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 222-232.",
       visualModel: "measurement"
     },
@@ -79,7 +79,7 @@ export const M2_LESSON18_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (11 minutes) Group Counting 3.OA.1 (3 minutes) Subtract Mentally 3.NBT.2 (4 minutes) Estimate and Add 3.NBT.2 (4 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. It reviews foundational strategies for multiplication from Module 1 and anticipates Module 3. Direct students to count forward and backward, occasionally changing the direction of the count: Threes to 30 Fours to 40 Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 As students' fluency with skip-counti...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 18 objective: Decompose once to subtract measurements including three-digit minuends with zeros in the tens or ones place.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 222-232.",
       visualModel: "measurement"
     }
@@ -116,7 +116,7 @@ export const M2_LESSON18_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) The problems on the Problem Set are Students should do their personal best to complete the Problem written horizontally so that students do Set within the allotted 10 minutes. For some classes, it may be not assume that they need to use the appropriate to modify the assignment by specifying which standard algorithm to solve. Mental problems they work on first. Some problems do not specify a math may be a more efficient strategy method for solving. Students should solve these problems using in some cases. Invite students to use t..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 18 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -134,7 +134,7 @@ export const M2_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Solve the subtraction problems below. a. 60 mL - 24 mL b. 360 mL - 24 mL c. 360 mL - 224 mL d. 518 cm - 21 cm e. 629 cm - 268 cm f. 938 cm - 440 cm g. 307 g - 130 g h. 307 g - 234 g i. 807 g - 732 g j. 2 km 770 m - 1 km 455 m k. 3 kg 924 g - 1 kg 893 g minuends with zeros in the tens or ones place. The total weight of 3 books is shown to the right. If 2 books weigh 233 grams, how much does the third book weigh? Use a tape diagram to model the problem. 405g 3. The chart to the right shows the lengths of three movies. The Lost Ship 117 minutes a. The movie Champions is 22 minutes shorter than The Lost Ship. How long is Champions? Magical Forests 145 minutes Champions? minutes b. How much longer is Magical Forests than Champions? 4. The total length of a rope is 208 centimeters. Scott cuts it into 3 pieces. The first piece is 80 centimeters long. The second piece is 94 centimeters long. How long is the third piece of rope? minuends with zeros in the tens or ones place."
+        value: "Use the official Module 2 Lesson 18 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -148,7 +148,7 @@ export const M2_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) The problems on the Problem Set are Students should do their personal best to complete the Problem written horizontally so that students do Set within the allotted 10 minutes. For some classes, it may be not assume that they need to use the appropriate to modify the assignment by specifying which standard algorithm to solve. Mental problems they work on first. Some problems do not specify a math may be a more efficient strategy method for solving. Students should solve these problems using in some cases. Invite students to use t..."
+        value: "Use the official Lesson 18 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -176,7 +176,7 @@ export const M2_LESSON18_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (11 minutes) Group Counting 3.OA.1 (3 minutes) Subtract Mentally 3.NBT.2 (4 minutes) Estimate and Add 3.NBT.2 (4 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. It reviews foundational strategies for multiplication from Module 1 and anticipates Module 3. Direct students to count forward and backward, occasionally changing the direction of the count: Threes to 30 Fours to 40 Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 As students' fluency with skip-counti..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 18 objective: Decompose once to subtract measurements including three-digit minuends with zeros in the tens or ones place."
       },
       {
         label: "Workbook",

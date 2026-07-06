@@ -7,10 +7,10 @@ export const M5_LESSON13_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "fraction-strip",
-    title: "Lesson 13 animation: Identify a shaded fractional part in different ways dep...",
-    context: "T: Fold your index card to make 4 equal units.",
+    title: "Lesson 13 animation: Identify a shaded fractional part in different ways depending on the designation of the whole.",
+    context: "Use the Teacher Edition Lesson 13 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
     equation: "2/4; name the whole before naming the fraction",
-    teacherPrompt: "Compare Rope C in Problems 6(a) and 6(d). the whole with your finger.\"",
+    teacherPrompt: "How does the official fraction model show identify a shaded fractional part in different ways depending on the designation of the whole.?",
     focus: [
       "fraction",
       "whole",
@@ -35,7 +35,7 @@ export const M5_LESSON13_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: Fold your index card to make 4 equal units. Shade and label the first unit. Each part is equal to what fraction of the whole? 1 1 card is 1 whole 4 S: 1 fourth. T: What is the whole? S: The index card. T: With a black marker, trace the outside of your card to show the whole. 1 1 card is 1 whole 4 Lesson 13: Identify a shaded fractional part in different ways depending on the 148 designation of the whole.",
+      studentPrompt: "Use the Teacher Edition Lesson 13 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf, pages 148-158. Lesson 13 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "fraction-strip"
     },
@@ -44,14 +44,14 @@ export const M5_LESSON13_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Compare Rope C in Problems 6(a) and 6(d). the whole with your finger.\"",
-      teacherEditionBasis: "Problem Set (10 minutes) or have students read chorally. Provide Students should do their personal best to complete the Problem sentence starters and a word bank. Set within the allotted 10 minutes. For some classes, it may be Sentence starters may include: appropriate to modify the assignment by specifying which \"I agree with...because...\" problems they work on first. Some problems do not specify a \"I think...is right because...\" method for solving. Students should solve these problems using Below are some possible words for the the RDW approach used for A...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 13 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition.",
       visualModel: "fraction-strip"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 5: a. b. designation of the whole. Use the diagram below to complete the following statements. Rope A Rope B Rope C a. Rope ____ is the length of Rope B. b. Rope ____ is the length of Rope A. c. Rope C is the length of Rope ____. d. If Rope B measures 1 m long, then Rope A is ____ m long, and Rope C is ____ m long. e. If Rope A measures 1 m long, Rope B is ____ m long, and Rope C is ____ m long. 7. Ms. Fan drew the figure below on the board. She asked the class to name the shaded fraction. Charlie 3 3 answered 4. Janice answered 2. Jenna thinks they're both right. With whom do you agree? Explain your thinking. designation of the whole.",
+      studentPrompt: "Use the official Module 5 Lesson 13 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 5 student workbook, Lesson 13 Problem Set.",
       visualModel: "fraction-strip"
     },
@@ -59,7 +59,7 @@ export const M5_LESSON13_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) or have students read chorally. Provide Students should do their personal best to complete the Problem sentence starters and a word bank. Set within the allotted 10 minutes. For some classes, it may be Sentence starters may include: appropriate to modify the assignment by specifying which \"I agree with...because...\" problems they work on first. Some problems do not specify a \"I think...is right because...\" method for solving. Students should solve these problems using Below are some possible words for the the RDW approach used for A...",
+      studentPrompt: "Use the official Lesson 13 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 148-158.",
       visualModel: "fraction-strip"
     },
@@ -75,7 +75,7 @@ export const M5_LESSON13_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (11 minutes) Total Time (60 minutes) Fluency Practice (9 minutes) Skip-Count by Fourths on the Clock 3.G.2, 3.NF.1 (3 minutes) Division 3.OA.2 (3 minutes) Draw a Whole 3.NF.3c (3 minutes) Skip-Count by Fourths on the Clock (3 minutes) Materials: (T) Clock Note: This activity reviews counting by fourths on the clock from Module 2. T: (Hold or project a clock.) Let's skip-count by fourths on the clock starting with 1 o'clock. S: 1, quarter past 1, half past 1, quarter 'til 2, 2, quarter past 2, half past 2, quarter 'til 3, 3. T: Stop. From 3:00, skip-count by fourths backward. S: 3, quarter '...",
+      studentPrompt: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 13 objective: Identify a shaded fractional part in different ways depending on the designation of the whole.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 148-158.",
       visualModel: "fraction-strip"
     }
@@ -102,7 +102,7 @@ export const M5_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: Fold your index card to make 4 equal units. Shade and label the first unit. Each part is equal to what fraction of the whole? 1 1 card is 1 whole 4 S: 1 fourth. T: What is the whole? S: The index card. T: With a black marker, trace the outside of your card to show the whole. 1 1 card is 1 whole 4 Lesson 13: Identify a shaded fractional part in different ways depending on the 148 designation of the whole."
+        value: "Use the Teacher Edition Lesson 13 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence."
       },
       {
         label: "Workbook",
@@ -112,7 +112,7 @@ export const M5_LESSON13_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) or have students read chorally. Provide Students should do their personal best to complete the Problem sentence starters and a word bank. Set within the allotted 10 minutes. For some classes, it may be Sentence starters may include: appropriate to modify the assignment by specifying which \"I agree with...because...\" problems they work on first. Some problems do not specify a \"I think...is right because...\" method for solving. Students should solve these problems using Below are some possible words for the the RDW approach used for A..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 13 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -130,7 +130,7 @@ export const M5_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 5: a. b. designation of the whole. Use the diagram below to complete the following statements. Rope A Rope B Rope C a. Rope ____ is the length of Rope B. b. Rope ____ is the length of Rope A. c. Rope C is the length of Rope ____. d. If Rope B measures 1 m long, then Rope A is ____ m long, and Rope C is ____ m long. e. If Rope A measures 1 m long, Rope B is ____ m long, and Rope C is ____ m long. 7. Ms. Fan drew the figure below on the board. She asked the class to name the shaded fraction. Charlie 3 3 answered 4. Janice answered 2. Jenna thinks they're both right. With whom do you agree? Explain your thinking. designation of the whole."
+        value: "Use the official Module 5 Lesson 13 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -144,7 +144,7 @@ export const M5_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) or have students read chorally. Provide Students should do their personal best to complete the Problem sentence starters and a word bank. Set within the allotted 10 minutes. For some classes, it may be Sentence starters may include: appropriate to modify the assignment by specifying which \"I agree with...because...\" problems they work on first. Some problems do not specify a \"I think...is right because...\" method for solving. Students should solve these problems using Below are some possible words for the the RDW approach used for A..."
+        value: "Use the official Lesson 13 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -172,7 +172,7 @@ export const M5_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (11 minutes) Total Time (60 minutes) Fluency Practice (9 minutes) Skip-Count by Fourths on the Clock 3.G.2, 3.NF.1 (3 minutes) Division 3.OA.2 (3 minutes) Draw a Whole 3.NF.3c (3 minutes) Skip-Count by Fourths on the Clock (3 minutes) Materials: (T) Clock Note: This activity reviews counting by fourths on the clock from Module 2. T: (Hold or project a clock.) Let's skip-count by fourths on the clock starting with 1 o'clock. S: 1, quarter past 1, half past 1, quarter 'til 2, 2, quarter past 2, half past 2, quarter 'til 3, 3. T: Stop. From 3:00, skip-count by fourths backward. S: 3, quarter '..."
+        value: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 13 objective: Identify a shaded fractional part in different ways depending on the designation of the whole."
       },
       {
         label: "Workbook",

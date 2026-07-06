@@ -9,7 +9,7 @@ export const M3_LESSON11_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "tape-diagram",
-    title: "Lesson 11 animation: Interpret the unknown in multiplication and division to...",
+    title: "Lesson 11 animation: Interpret the unknown in multiplication and division to model and solve problems.",
     context: "Interpret the unknown in multiplication.",
     equation: "8 units of 9; unknown labeled from the story",
     teacherPrompt: "In Problem 1, did you solve to find the number of groups or the number of items in each group?",
@@ -51,14 +51,14 @@ export const M3_LESSON11_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "In Problem 1, did you solve to find the number of groups or the number of items in each group?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 11 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition.",
       visualModel: "tape-diagram"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Ms. Santor divides 32 students into 8 equal groups for a field trip. Draw a tape diagram, and label the number of students in each group as n. Write an equation, and solve for n. Problem 2: Tara buys 6 packs of printer paper. Each pack of paper costs $8. Draw a tape diagram, and label the total amount she spends as m. Write an equation, and solve for m. Problem 3: Mr. Reed spends $24 on coffee beans. How many kilograms of coffee beans does he buy? Draw a tape diagram, and label the total amount of coffee beans he buys as c. Write an equation, and solve for c. $8 for 1 kg solve problems.",
+      studentPrompt: "Use the official Module 3 Lesson 11 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 3 student workbook, Lesson 11 Problem Set.",
       visualModel: "tape-diagram"
     },
@@ -66,7 +66,7 @@ export const M3_LESSON11_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 11 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 130-149.",
       visualModel: "tape-diagram"
     },
@@ -82,7 +82,7 @@ export const M3_LESSON11_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Multiply By 8 3.OA.7 (7 minutes) Group Counting 3.OA.1 (4 minutes) Decompose the Multiplication Sentence 3.OA.5 (4 minutes) Multiply By 8 (7 minutes) Materials: (S) Multiply By 8 (1-5) (Pattern Sheet) Note: This activity builds fluency with multiplication facts using units of 8. It supports students knowing from memory all products of two one-digit numbers. See Lesson 5 for the directions for administering a Multiply By Pattern Sheet. T: (Write 5 x 8 = ____.) Let's skip-count by eights to find the answer. I'll raise a finger...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 11 objective: Interpret the unknown in multiplication and division to model and solve problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 130-149.",
       visualModel: "tape-diagram"
     }
@@ -119,7 +119,7 @@ export const M3_LESSON11_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 11 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -137,7 +137,7 @@ export const M3_LESSON11_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Ms. Santor divides 32 students into 8 equal groups for a field trip. Draw a tape diagram, and label the number of students in each group as n. Write an equation, and solve for n. Problem 2: Tara buys 6 packs of printer paper. Each pack of paper costs $8. Draw a tape diagram, and label the total amount she spends as m. Write an equation, and solve for m. Problem 3: Mr. Reed spends $24 on coffee beans. How many kilograms of coffee beans does he buy? Draw a tape diagram, and label the total amount of coffee beans he buys as c. Write an equation, and solve for c. $8 for 1 kg solve problems."
+        value: "Use the official Module 3 Lesson 11 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -151,7 +151,7 @@ export const M3_LESSON11_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 11 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -179,7 +179,7 @@ export const M3_LESSON11_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Multiply By 8 3.OA.7 (7 minutes) Group Counting 3.OA.1 (4 minutes) Decompose the Multiplication Sentence 3.OA.5 (4 minutes) Multiply By 8 (7 minutes) Materials: (S) Multiply By 8 (1-5) (Pattern Sheet) Note: This activity builds fluency with multiplication facts using units of 8. It supports students knowing from memory all products of two one-digit numbers. See Lesson 5 for the directions for administering a Multiply By Pattern Sheet. T: (Write 5 x 8 = ____.) Let's skip-count by eights to find the answer. I'll raise a finger..."
+        value: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 11 objective: Interpret the unknown in multiplication and division to model and solve problems."
       },
       {
         label: "Workbook",

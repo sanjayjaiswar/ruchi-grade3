@@ -8,10 +8,10 @@ export const M5_LESSON19_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 19 animation: Understand distance and position on the number line as...",
-    context: "T: Draw 2 same-sized rectangles on your board, and English language (e.g., extend both 3 arms to demonstrate long).",
+    title: "Lesson 19 animation: Understand distance and position on the number line as strategies for comparing fractions.",
+    context: "Use the Teacher Edition Lesson 19 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
     equation: "2 to 14 on equal intervals of 3",
-    teacherPrompt: "Invite students to share their work on Problems 3–5. Students should have slightly different explanations for Problems 4 and 5. Invite a variety of resp...",
+    teacherPrompt: "How does the official fraction model show understand distance and position on the number line as strategies for comparing fractions.?",
     focus: [
       "fraction",
       "whole",
@@ -46,7 +46,7 @@ export const M5_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: Draw 2 same-sized rectangles on your board, and English language (e.g., extend both 3 arms to demonstrate long). 4 Give English language learners a little more time to discuss with a partner T: Compare the models. Which shaded fraction is larger? their math thinking in English. Tell your partner how you know. S: I know 3 fourths is larger because 3 parts is greater than just 1 part of the same size.",
+      studentPrompt: "Use the Teacher Edition Lesson 19 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf, pages 221-233. Lesson 19 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "number-line"
     },
@@ -55,14 +55,14 @@ export const M5_LESSON19_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Invite students to share their work on Problems 3-5. Students should have slightly different explanations for Problems 4 and 5. Invite a variety of responses so that both explanations are heard",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. comparing fractions. (Optional) G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 19 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition.",
       visualModel: "number-line"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Divide each number line into the given fractional unit. Then, place the fractions. Write each whole as a fraction. 3 5 4 a. halves 2 2 2 0 1 2 3 9 11 6 b. fourths 4 4 4 0 3 24 19 16 c. eighths 8 8 8 0 3 Problem 2: Use the number lines above to compare the following fractions using >, <, or =. 6 9 3 5 19 16 4 4 2 2 8 8 16 3 9 19 4 16 8 2 4 8 2 8 6 16 5 9 24 11 4 8 2 4 8 4 comparing fractions. (Optional) Choose a greater than comparison you made in Problem 2. Use pictures, numbers, and words to explain how you made that comparison. 4. Choose a less than comparison you made in Problem 2. Use pictures, numbers, and words to explain a different way of thinking about the comparison than what you wrote in Problem 3. 5. Choose an equal to comparison you made in Problem 2. Use pictures, numbers, and words to explain two ways that you can prove your comparison is true. comparing fractions. (Optional)",
+      studentPrompt: "Use the official Module 5 Lesson 19 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 5 student workbook, Lesson 19 Problem Set.",
       visualModel: "number-line"
     },
@@ -70,7 +70,7 @@ export const M5_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. comparing fractions. (Optional) G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+      studentPrompt: "Use the official Lesson 19 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 221-233.",
       visualModel: "number-line"
     },
@@ -86,7 +86,7 @@ export const M5_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Sprint: Express Fractions as Whole Numbers 3.NF.3c (9 minutes) Place Fractions on the Number Line 3.NF.2b (3 minutes) Sprint: Express Fractions as Whole Numbers (9 minutes) Materials: (S) Express Fractions as Whole Numbers Sprint Note: This Sprint reviews representing whole number fractions as whole numbers. Place Fractions on the Number Line (3 minutes) Materials: (S) Personal white board Note: This activity reviews the concept of placing fractions on a number line from Topic D. T: (Draw a number line marked at 0, 1, 2, and 3...",
+      studentPrompt: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 19 objective: Understand distance and position on the number line as strategies for comparing fractions.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 221-233.",
       visualModel: "number-line"
     }
@@ -113,7 +113,7 @@ export const M5_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: Draw 2 same-sized rectangles on your board, and English language (e.g., extend both 3 arms to demonstrate long). 4 Give English language learners a little more time to discuss with a partner T: Compare the models. Which shaded fraction is larger? their math thinking in English. Tell your partner how you know. S: I know 3 fourths is larger because 3 parts is greater than just 1 part of the same size."
+        value: "Use the Teacher Edition Lesson 19 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence."
       },
       {
         label: "Workbook",
@@ -123,7 +123,7 @@ export const M5_LESSON19_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. comparing fractions. (Optional) G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+        value: "Problem Set (10 minutes): Students complete the Lesson 19 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -141,7 +141,7 @@ export const M5_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Divide each number line into the given fractional unit. Then, place the fractions. Write each whole as a fraction. 3 5 4 a. halves 2 2 2 0 1 2 3 9 11 6 b. fourths 4 4 4 0 3 24 19 16 c. eighths 8 8 8 0 3 Problem 2: Use the number lines above to compare the following fractions using >, <, or =. 6 9 3 5 19 16 4 4 2 2 8 8 16 3 9 19 4 16 8 2 4 8 2 8 6 16 5 9 24 11 4 8 2 4 8 4 comparing fractions. (Optional) Choose a greater than comparison you made in Problem 2. Use pictures, numbers, and words to explain how you made that comparison. 4. Choose a less than comparison you made in Problem 2. Use pictures, numbers, and words to explain a different way of thinking about the comparison than what you wrote in Problem 3. 5. Choose an equal to comparison you made in Problem 2. Use pictures, numbers, and words to explain two ways that you can prove your comparison is true. comparing fractions. (Optional)"
+        value: "Use the official Module 5 Lesson 19 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -155,7 +155,7 @@ export const M5_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. comparing fractions. (Optional) G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+        value: "Use the official Lesson 19 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -183,7 +183,7 @@ export const M5_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Sprint: Express Fractions as Whole Numbers 3.NF.3c (9 minutes) Place Fractions on the Number Line 3.NF.2b (3 minutes) Sprint: Express Fractions as Whole Numbers (9 minutes) Materials: (S) Express Fractions as Whole Numbers Sprint Note: This Sprint reviews representing whole number fractions as whole numbers. Place Fractions on the Number Line (3 minutes) Materials: (S) Personal white board Note: This activity reviews the concept of placing fractions on a number line from Topic D. T: (Draw a number line marked at 0, 1, 2, and 3..."
+        value: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 19 objective: Understand distance and position on the number line as strategies for comparing fractions."
       },
       {
         label: "Workbook",

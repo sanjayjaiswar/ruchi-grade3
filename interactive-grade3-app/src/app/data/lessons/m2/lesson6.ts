@@ -7,7 +7,7 @@ export const M2_LESSON6_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 6 animation: Build and decompose a kilogram to reason about the size...",
+    title: "Lesson 6 animation: Build and decompose a kilogram to reason about the size",
     context: "Lesson 6: Build and decompose a kilogram to reason about the size and weight 75 of 1 kilogram, 100 grams, 10 grams, and 1 gram",
     equation: "Measure and label in kg; keep the unit with the number",
     teacherPrompt: "How are the units kilogram and gram similar? How are they different?",
@@ -50,14 +50,14 @@ export const M2_LESSON6_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "How are the units kilogram and gram similar? How are they different?",
-      teacherEditionBasis: "Problem Set (5 minutes) Problems 1-4 in the Problem Set are intended to be completed during the Concept Development. Students can use this time to complete Problem 5.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 6 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "measurement"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Illustrate and describe the process of making a 1-kilogram weight. Problem 2: Illustrate and describe the process of decomposing 1 kilogram into groups of 100 grams. Problem 3: Illustrate and describe the process of decomposing 100 grams into groups of 10 grams. of 1 kilogram, 100 grams, 10 grams, and 1 gram. Illustrate and describe the process of decomposing 10 grams into groups of 1 gram. 5. Compare the two place value charts below. How does today's exploration using kilograms and grams relate to your understanding of place value? 1 kilogram 100 grams 10 grams 1 gram Thousands Hundreds Tens Ones of 1 kilogram, 100 grams, 10 grams, and 1 gram.",
+      studentPrompt: "Use the official Module 2 Lesson 6 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 6 Problem Set.",
       visualModel: "measurement"
     },
@@ -65,7 +65,7 @@ export const M2_LESSON6_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (5 minutes) Problems 1-4 in the Problem Set are intended to be completed during the Concept Development. Students can use this time to complete Problem 5.",
+      studentPrompt: "Use the official Lesson 6 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 75-84.",
       visualModel: "measurement"
     },
@@ -81,7 +81,7 @@ export const M2_LESSON6_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Lessons 6-8 refer to metric weight rather than mass. This choice was made based Total Time (60 minutes) on the K-5 Geometric Measurement progressions document that accompanies the CCSSM, which suggests that Fluency Practice (3 minutes) elementary school students may treat mass units as weight units. Technically Tell Time on the Clock 3.MD.1 (3 minutes) these are not equivalent, but the units can be used side by side as long as the Tell Time on the Clock (3 minutes) object being measured stays on earth. If students have already been introduced to Materials: (T) Analog clock for demo...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 6 objective: Build and decompose a kilogram to reason about the size and weight of 1 kilogram, 100 grams, 10 grams, and 1 gram.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 75-84.",
       visualModel: "measurement"
     }
@@ -118,7 +118,7 @@ export const M2_LESSON6_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (5 minutes) Problems 1-4 in the Problem Set are intended to be completed during the Concept Development. Students can use this time to complete Problem 5."
+        value: "Problem Set (10 minutes): Students complete the Lesson 6 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -136,7 +136,7 @@ export const M2_LESSON6_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Illustrate and describe the process of making a 1-kilogram weight. Problem 2: Illustrate and describe the process of decomposing 1 kilogram into groups of 100 grams. Problem 3: Illustrate and describe the process of decomposing 100 grams into groups of 10 grams. of 1 kilogram, 100 grams, 10 grams, and 1 gram. Illustrate and describe the process of decomposing 10 grams into groups of 1 gram. 5. Compare the two place value charts below. How does today's exploration using kilograms and grams relate to your understanding of place value? 1 kilogram 100 grams 10 grams 1 gram Thousands Hundreds Tens Ones of 1 kilogram, 100 grams, 10 grams, and 1 gram."
+        value: "Use the official Module 2 Lesson 6 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -150,7 +150,7 @@ export const M2_LESSON6_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (5 minutes) Problems 1-4 in the Problem Set are intended to be completed during the Concept Development. Students can use this time to complete Problem 5."
+        value: "Use the official Lesson 6 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -178,7 +178,7 @@ export const M2_LESSON6_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Lessons 6-8 refer to metric weight rather than mass. This choice was made based Total Time (60 minutes) on the K-5 Geometric Measurement progressions document that accompanies the CCSSM, which suggests that Fluency Practice (3 minutes) elementary school students may treat mass units as weight units. Technically Tell Time on the Clock 3.MD.1 (3 minutes) these are not equivalent, but the units can be used side by side as long as the Tell Time on the Clock (3 minutes) object being measured stays on earth. If students have already been introduced to Materials: (T) Analog clock for demo..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 6 objective: Build and decompose a kilogram to reason about the size and weight of 1 kilogram, 100 grams, 10 grams, and 1 gram."
       },
       {
         label: "Workbook",

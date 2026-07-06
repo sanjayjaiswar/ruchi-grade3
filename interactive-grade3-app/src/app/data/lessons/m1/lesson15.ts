@@ -31,7 +31,7 @@ export const M1_LESSON15_RUNTIME: LessonRuntimeConfig = {
       id: "source-goal",
       title: "Lesson 15: source objective",
       shortTitle: "Goal",
-      studentPrompt: "Relate arrays to tape diagrams to model the commutative property of multiplication.",
+      studentPrompt: "Relate arrays to tape diagrams to model the commutative property of.",
       teacherEditionBasis: "EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf, pages 200-209. Lesson 15 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "array"
     },
@@ -48,7 +48,7 @@ export const M1_LESSON15_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Students may have drawn different arrays for Problems 1(a), 1(b), and 1(c). Compare differences and discuss why both arrays reflect both diagrams",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. multiplication.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 15 Problem Set using the lesson models from the Teacher Edition.",
       visualModel: "array"
     },
     {
@@ -63,7 +63,7 @@ export const M1_LESSON15_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. multiplication.",
+      studentPrompt: "Use the official Lesson 15 Problem Set workspace and source-backed visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 200-209.",
       visualModel: "array"
     },
@@ -79,7 +79,7 @@ export const M1_LESSON15_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (11 minutes) Multiply by 4 Pattern Sheet 3.OA.7 (8 minutes) Group Counting 3.OA.1 (3 minutes) Multiply by 4 (8 minutes) Materials: (S) Multiply by 4 (1-5) (Pattern Sheet) Note: This activity builds fluency with multiplication facts using units of 4. It works toward the goal of students knowing from memory all products of two one-digit numbers. See Lesson 9 for the directions for administering a Multiply-By Pattern Sheet. T: (Write 5 x 4 = ____.) Let's skip-count up by fours to find the answer. (Count with fingers to 5 as students count. Re...",
+      studentPrompt: "Debrief focus: connect the Problem Set models and answers to the Lesson 15 objective: Relate arrays to tape diagrams to model the commutative property of.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 200-209.",
       visualModel: "array"
     }
@@ -92,7 +92,7 @@ export const M1_LESSON15_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Relate arrays to tape diagrams to model the commutative property of multiplication."
+        value: "Relate arrays to tape diagrams to model the commutative property of."
       },
       {
         label: "Teacher Edition",
@@ -116,7 +116,7 @@ export const M1_LESSON15_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. multiplication."
+        value: "Problem Set (10 minutes): Students complete the Lesson 15 Problem Set using the lesson models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -148,7 +148,7 @@ export const M1_LESSON15_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. multiplication."
+        value: "Use the official Lesson 15 Problem Set workspace and source-backed visuals to model and solve the student-facing problems."
       },
       {
         label: "Teacher Edition",
@@ -176,7 +176,7 @@ export const M1_LESSON15_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (11 minutes) Multiply by 4 Pattern Sheet 3.OA.7 (8 minutes) Group Counting 3.OA.1 (3 minutes) Multiply by 4 (8 minutes) Materials: (S) Multiply by 4 (1-5) (Pattern Sheet) Note: This activity builds fluency with multiplication facts using units of 4. It works toward the goal of students knowing from memory all products of two one-digit numbers. See Lesson 9 for the directions for administering a Multiply-By Pattern Sheet. T: (Write 5 x 4 = ____.) Let's skip-count up by fours to find the answer. (Count with fingers to 5 as students count. Re..."
+        value: "Debrief focus: connect the Problem Set models and answers to the Lesson 15 objective: Relate arrays to tape diagrams to model the commutative property of."
       },
       {
         label: "Teacher Edition",

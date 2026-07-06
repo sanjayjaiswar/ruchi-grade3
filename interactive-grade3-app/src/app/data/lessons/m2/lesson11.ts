@@ -9,7 +9,7 @@ export const M2_LESSON11_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 11 animation: Solve mixed word problems involving all four operations...",
+    title: "Lesson 11 animation: Solve mixed word problems involving all four operations",
     context: "hamster weighs 126 grams more than the mouse.",
     equation: "Measure and label in kg; keep the unit with the number",
     teacherPrompt: "What models did you use to solve the word problems?",
@@ -52,14 +52,14 @@ export const M2_LESSON11_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "What models did you use to solve the word problems?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the problem set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. kilograms, liters, and milliliters given in the same units. G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 11 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "measurement"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: The total weight in grams of a can of tomatoes and a jar of baby food is shown to the right. a. The jar of baby food weighs 113 grams. How much does the can of tomatoes weigh? b. How much more does the can of tomatoes weigh than the jar of baby food? 671 Problem 2: The weight of a pen in grams is shown to the right. a. What is the total weight of 10 pens? b. An empty box weighs 82 grams. What is the total weight of a box of 10 pens? Problem 3: The total weight of an apple, lemon, and banana in grams is shown to the right. a. If the apple and lemon together weigh 317 grams, what is the weight of the banana? b. If we know the lemon weighs 68 grams less than the banana, how much does the lemon weigh? c. What is the weight of the apple? kilograms, liters, and milliliters given in the same units. A frozen turkey weighs about 5 kilograms. The chef orders 45 kilograms of turkey. Use a tape diagram to find about how many frozen turkeys he orders. 5. A recipe requires 300 millilit...",
+      studentPrompt: "Use the official Module 2 Lesson 11 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 11 Problem Set.",
       visualModel: "measurement"
     },
@@ -67,7 +67,7 @@ export const M2_LESSON11_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the problem set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. kilograms, liters, and milliliters given in the same units. G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+      studentPrompt: "Use the official Lesson 11 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 127-149.",
       visualModel: "measurement"
     },
@@ -83,7 +83,7 @@ export const M2_LESSON11_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (11 minutes) Rename Tens 3.NBT.3 (3 minutes) Halfway on the Number Line 3.NBT.1 (4 minutes) Read a Beaker 3.MD.1 (4 minutes) Rename Tens (3 minutes) Materials: (T) Place value cards (S) Personal white board Note: This activity anticipates rounding in the next topic. If necessary, use place value cards to quickly review place value with students. T: (Write 7 tens = .) Say the number. S: 70. Continue with the following possible sequence: 8 tens, 9 tens, and 10 tens. T: (Write 11 tens = .) On your personal white board, fill in the number se...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 11 objective: Solve mixed word problems involving all four operations with grams, kilograms, liters, and milliliters given in the same units.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 127-149.",
       visualModel: "measurement"
     }
@@ -120,7 +120,7 @@ export const M2_LESSON11_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the problem set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. kilograms, liters, and milliliters given in the same units. G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+        value: "Problem Set (10 minutes): Students complete the Lesson 11 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -138,7 +138,7 @@ export const M2_LESSON11_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: The total weight in grams of a can of tomatoes and a jar of baby food is shown to the right. a. The jar of baby food weighs 113 grams. How much does the can of tomatoes weigh? b. How much more does the can of tomatoes weigh than the jar of baby food? 671 Problem 2: The weight of a pen in grams is shown to the right. a. What is the total weight of 10 pens? b. An empty box weighs 82 grams. What is the total weight of a box of 10 pens? Problem 3: The total weight of an apple, lemon, and banana in grams is shown to the right. a. If the apple and lemon together weigh 317 grams, what is the weight of the banana? b. If we know the lemon weighs 68 grams less than the banana, how much does the lemon weigh? c. What is the weight of the apple? kilograms, liters, and milliliters given in the same units. A frozen turkey weighs about 5 kilograms. The chef orders 45 kilograms of turkey. Use a tape diagram to find about how many frozen turkeys he orders. 5. A recipe requires 300 millilit..."
+        value: "Use the official Module 2 Lesson 11 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -152,7 +152,7 @@ export const M2_LESSON11_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the problem set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. kilograms, liters, and milliliters given in the same units. G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+        value: "Use the official Lesson 11 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -180,7 +180,7 @@ export const M2_LESSON11_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (11 minutes) Rename Tens 3.NBT.3 (3 minutes) Halfway on the Number Line 3.NBT.1 (4 minutes) Read a Beaker 3.MD.1 (4 minutes) Rename Tens (3 minutes) Materials: (T) Place value cards (S) Personal white board Note: This activity anticipates rounding in the next topic. If necessary, use place value cards to quickly review place value with students. T: (Write 7 tens = .) Say the number. S: 70. Continue with the following possible sequence: 8 tens, 9 tens, and 10 tens. T: (Write 11 tens = .) On your personal white board, fill in the number se..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 11 objective: Solve mixed word problems involving all four operations with grams, kilograms, liters, and milliliters given in the same units."
       },
       {
         label: "Workbook",

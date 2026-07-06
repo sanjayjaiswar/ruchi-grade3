@@ -43,7 +43,7 @@ export const M1_LESSON21_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Ask the student to explain what the model shows before accepting the final answer.",
-      teacherEditionBasis: "Problem Set (5 minutes) groups and partner share the process When all groups have presented, pass out the entire Problem and solution, encouraging the use of Set, and have students solve the problems independently. The precise language (e.g., equation, time allotment is short, as they have just seen and discussed product, and quotient). every problem. the reasonableness of answers.",
+      teacherEditionBasis: "Problem Set focus: groups present the model and solution process, then students solve the complete Problem Set independently using precise equation, product, and quotient language.",
       visualModel: "tape-diagram"
     },
     {
@@ -58,7 +58,7 @@ export const M1_LESSON21_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (5 minutes) groups and partner share the process When all groups have presented, pass out the entire Problem and solution, encouraging the use of Set, and have students solve the problems independently. The precise language (e.g., equation, time allotment is short, as they have just seen and discussed product, and quotient). every problem. the reasonableness of answers.",
+      studentPrompt: "Use the official Lesson 21 Problem Set models to choose the operation for each step, write the matching equations, and check that the final answer is reasonable.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 267-276.",
       visualModel: "tape-diagram"
     },
@@ -74,7 +74,7 @@ export const M1_LESSON21_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (14 minutes) Group Counting 3.OA.1 (3 minutes) Multiply by 5 Pattern Sheet 3.OA.7 (8 minutes) Commutative Multiplying 3.OA.7 (3 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by threes, fours, and sixes in this activity reviews multiplication with units of 3 and 4 and anticipates multiplication with units of 6 in Module 3. T: Let's count by threes. (Direct students to count forward and backward to 30.) T: Let's count by fours, think/talk forward and backward. (D...",
+      studentPrompt: "Debrief focus: connect the Problem Set models and answers to the Lesson 21 objective: Solve two-step word problems involving all four operations, and assess the reasonableness of answers.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 267-276.",
       visualModel: "tape-diagram"
     }
@@ -111,7 +111,7 @@ export const M1_LESSON21_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (5 minutes) groups and partner share the process When all groups have presented, pass out the entire Problem and solution, encouraging the use of Set, and have students solve the problems independently. The precise language (e.g., equation, time allotment is short, as they have just seen and discussed product, and quotient). every problem. the reasonableness of answers."
+        value: "Problem Set focus: groups present the model and solution process, then students solve the complete Problem Set independently using precise equation, product, and quotient language."
       },
       {
         label: "Source text",
@@ -129,7 +129,7 @@ export const M1_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Jason earns $6 per week for doing all his chores. On the fifth week, he forgets to take out the trash, so he only earns $4. Write and solve an equation to show how much Jason earns in 5 weeks. $6 $4 Jason Jason earns ____. Problem 2: Miss Lianto orders 4 packs of 7 markers. After passing out 1 marker to each student in her class, she has 6 left. Label the tape diagram to find how many students are in Miss Lianto's class. ____ 7 ____ 6 markers There are ____ students in Miss Lianto's class. the reasonableness of answers. Problem 3: Orlando buys a box of 18 fruit snacks. Each box comes with an equal number of strawberry-, cherry-, and grape-flavored snacks. He eats all of the grape-flavored snacks. Draw and label a tape diagram to find how many fruit snacks he has left."
+        value: "Problem 1 combines four full $6 weeks with a $4 fifth week. Problem 2 uses 4 packs of 7 markers, subtracts the 6 left over, and names the number of students. Problem 3 partitions 18 snacks into 3 flavors, removes the grape part, and names the snacks left."
       },
       {
         label: "Teacher Edition",
@@ -143,7 +143,7 @@ export const M1_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (5 minutes) groups and partner share the process When all groups have presented, pass out the entire Problem and solution, encouraging the use of Set, and have students solve the problems independently. The precise language (e.g., equation, time allotment is short, as they have just seen and discussed product, and quotient). every problem. the reasonableness of answers."
+        value: "Use the official Lesson 21 Problem Set models to choose the operation for each step, write the matching equations, and check that the final answer is reasonable."
       },
       {
         label: "Teacher Edition",
@@ -171,7 +171,7 @@ export const M1_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (14 minutes) Group Counting 3.OA.1 (3 minutes) Multiply by 5 Pattern Sheet 3.OA.7 (8 minutes) Commutative Multiplying 3.OA.7 (3 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by threes, fours, and sixes in this activity reviews multiplication with units of 3 and 4 and anticipates multiplication with units of 6 in Module 3. T: Let's count by threes. (Direct students to count forward and backward to 30.) T: Let's count by fours, think/talk forward and backward. (D..."
+        value: "Debrief focus: connect the Problem Set models and answers to the Lesson 21 objective: Solve two-step word problems involving all four operations, and assess the reasonableness of answers."
       },
       {
         label: "Teacher Edition",

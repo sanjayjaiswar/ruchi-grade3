@@ -8,10 +8,10 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "graph",
-    title: "Lesson 19 animation: Use a line plot to record the number of rectangles cons...",
-    context: "Part 1: Use unit square tiles to make rectangles with a given number of unit squares.",
+    title: "Lesson 19 animation: Use a line plot to record the number of rectangles constructed from a given number of unit squares.",
+    context: "Use the Teacher Edition Lesson 19 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Read the scale, then compare or calculate from the graph data",
-    teacherPrompt: "For which number of unit squares in Problem 1 can a square be drawn? How do you know? Can you brainstorm other numbers of unit squares from which a squa...",
+    teacherPrompt: "Use the source Lesson 19 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "line plot",
       "scale",
@@ -48,7 +48,7 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Part 1: Use unit square tiles to make rectangles with a given number of unit squares. T: Read the directions for Problem 1 on your Problem Set. S: (Read: Use unit square tiles to make rectangles for each given number of unit squares. Complete the charts to show how many rectangles you can make for each given number of unit squares. [12, 13, 14, 15, 16, 17, 18.] The first one is done for you.",
+      studentPrompt: "Use the Teacher Edition Lesson 19 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 259-268. Lesson 19 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "graph"
     },
@@ -56,24 +56,24 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "For which number of unit squares in Problem 1 can a square be drawn? How do you know? Can you brainstorm other numbers of unit squares from which a square can be drawn?",
-      teacherEditionBasis: "Use the Teacher Edition lesson pages 259-268 for the exact teacher explanation and support sequence.",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 19 work using the official Module 7 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 19 work using the official Module 7 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence from the Teacher Edition and Student Workbook.",
       visualModel: "graph"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use unit square tiles to make rectangles for each given number of unit squares. Complete the charts to show how many rectangles Number of unit squares = 12 you can make for each given number of unit squares. The first one is done for you. You might not use all the spaces in each Number of rectangles I made: 3 chart. Width Length 1 12 2 6 3 4 Number of unit squares = 13 Number of unit squares = 14 Number of unit squares = 15 Number of rectangles Number of rectangles Number of rectangles I made: ____ I made: ____ I made: ____ Width Length Width Length Width Length Number of unit squares = 16 Number of unit squares = 17 Number of unit squares = 18 Number of rectangles Number of rectangles Number of rectangles I made: ____ I made: ____ I made: ____ Width Length Width Length Width Length given number of unit squares. Problem 2: Create a line plot with the data you collected in Problem 1. Number of Rectangles Made with Unit Squares 12 18 Number of Unit Squares Used X = 1 Rectan...",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 19 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 19 Problem Set prompts in order. Blank mode preserves the student-facing rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 19 Problem Set.",
       visualModel: "graph"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Use the Teacher Edition lesson pages 259-268 for the exact teacher explanation and support sequence.",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 259-268.",
+      studentPrompt: "Use the source-backed Lesson 19 workspace and rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 19; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "graph"
     },
     {
@@ -88,8 +88,8 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Draw Tape Diagrams 3.MD.7 (6 minutes) Find the Perimeter 3.MD.8 (6 minutes) Draw Tape Diagrams (6 minutes) Materials: (S) Personal white board 14 Note: This activity prepares students for today's lesson. 4 T: (Project a tape diagram that has a whole of 14 and a given part of 4.) What is the value of the whole? 10 S: 14. 14 T: (Point to the unknown part.) What's the value of the unknown part? 4 S: 10. 10 T: (Write 10 beneath the unknown part. Partition the unit of 10 into 2 equal parts.) Write the value of each unknown unit as...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 259-268.",
+      studentPrompt: "Debrief focus: connect the Problem Set rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to the Lesson 19 objective: Use a line plot to record the number of rectangles constructed from a given number of unit squares.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 19; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "graph"
     }
   ],
@@ -115,7 +115,7 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Part 1: Use unit square tiles to make rectangles with a given number of unit squares. T: Read the directions for Problem 1 on your Problem Set. S: (Read: Use unit square tiles to make rectangles for each given number of unit squares. Complete the charts to show how many rectangles you can make for each given number of unit squares. [12, 13, 14, 15, 16, 17, 18.] The first one is done for you."
+        value: "Use the Teacher Edition Lesson 19 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -125,11 +125,11 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Use the Teacher Edition lesson pages 259-268 for the exact teacher explanation and support sequence."
+        value: "Problem Set source focus: students complete the Lesson 19 work using the official Module 7 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "For which number of unit squares in Problem 1 can a square be drawn? How do you know? Can you brainstorm other numbers of unit squares from which a square can be drawn?"
+        value: "Teacher Edition check: preserve the Lesson 19 rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence."
       },
       {
         label: "Workbook",
@@ -139,11 +139,11 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 19 Problem Set."
+        value: "Module 7 student workbook, Lesson 19 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Use unit square tiles to make rectangles for each given number of unit squares. Complete the charts to show how many rectangles Number of unit squares = 12 you can make for each given number of unit squares. The first one is done for you. You might not use all the spaces in each Number of rectangles I made: 3 chart. Width Length 1 12 2 6 3 4 Number of unit squares = 13 Number of unit squares = 14 Number of unit squares = 15 Number of rectangles Number of rectangles Number of rectangles I made: ____ I made: ____ I made: ____ Width Length Width Length Width Length Number of unit squares = 16 Number of unit squares = 17 Number of unit squares = 18 Number of rectangles Number of rectangles Number of rectangles I made: ____ I made: ____ I made: ____ Width Length Width Length Width Length given number of unit squares. Problem 2: Create a line plot with the data you collected in Problem 1. Number of Rectangles Made with Unit Squares 12 18 Number of Unit Squares Used X = 1 Rectan..."
+        value: "Use the official Module 7 Lesson 19 Problem Set prompts in order. Blank mode preserves the student-facing rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -153,11 +153,11 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 259-268."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 19; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Use the Teacher Edition lesson pages 259-268 for the exact teacher explanation and support sequence."
+        value: "Use the source-backed Lesson 19 workspace and rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -181,11 +181,11 @@ export const M7_LESSON19_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 259-268."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 19; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Draw Tape Diagrams 3.MD.7 (6 minutes) Find the Perimeter 3.MD.8 (6 minutes) Draw Tape Diagrams (6 minutes) Materials: (S) Personal white board 14 Note: This activity prepares students for today's lesson. 4 T: (Project a tape diagram that has a whole of 14 and a given part of 4.) What is the value of the whole? 10 S: 14. 14 T: (Point to the unknown part.) What's the value of the unknown part? 4 S: 10. 10 T: (Write 10 beneath the unknown part. Partition the unit of 10 into 2 equal parts.) Write the value of each unknown unit as..."
+        value: "Debrief focus: connect the Problem Set rectangle, area, perimeter, and line-plot workspace with source dimensions and plotted evidence to the Lesson 19 objective: Use a line plot to record the number of rectangles constructed from a given number of unit squares."
       },
       {
         label: "Workbook",

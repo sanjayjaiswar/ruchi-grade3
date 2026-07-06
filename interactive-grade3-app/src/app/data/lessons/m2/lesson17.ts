@@ -8,7 +8,7 @@ export const M2_LESSON17_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 17 animation: Estimate sums by rounding and apply to solve measuremen...",
+    title: "Lesson 17 animation: Estimate sums by rounding and apply to solve measuremen",
     context: "Estimate the sum of 362 + 159 by rounding.",
     equation: "94 to 114 on equal intervals of 5",
     teacherPrompt: "What were some of your observations about Problem 1(a)? What did the closest estimates have in common?",
@@ -55,14 +55,14 @@ export const M2_LESSON17_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "What were some of your observations about Problem 1(a)? What did the closest estimates have in common?",
-      teacherEditionBasis: "Problem Set (10 minutes) NOTE ON Students should do their personal best to complete the Problem TIMING: Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which The Problem Set in this lesson is problems they work on first. Some problems do not specify a allotted 10 minutes. It directly follows method for solving. Students should solve these problems using the Application Problem, and so the 10 the RDW approach used for Application Problems. minutes are included within the 15 minutes allott...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 17 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "number-line"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: a. Find the actual sum either on paper or using mental math. Round each addend to the nearest hundred, and find the estimated sums. A B C 451 + 253 = ____ 356 + 161 = ____ 652 + 158 = ____ ____ + ____ = ____ ____ + ____ = ____ ____ + ____ = ____ 451 + 249 = ____ 356 + 148 = ____ 647 + 158 = ____ ____ + ____ = ____ ____ + ____ = ____ ____ + ____ = ____ 448 + 249 = ____ 347 + 149 = ____ 647 + 146 = ____ ____ + ____ = ____ ____ + ____ = ____ ____ + ____ = ____ Circle the estimated sum that Circle the estimated sum that is Circle the estimated sum that is is the closest to its real sum. the closest to its real sum. the closest to its real sum. b. Look at the sums that gave the most precise estimates. Explain below what they have in common. You might use a number line to support your explanation. problems. Janet watched a movie that is 94 minutes long on Friday night. She watched a movie that is 151 minutes long on Saturday night. a. Decide how to round the minutes. Then, esti...",
+      studentPrompt: "Use the official Module 2 Lesson 17 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 17 Problem Set.",
       visualModel: "number-line"
     },
@@ -70,7 +70,7 @@ export const M2_LESSON17_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) NOTE ON Students should do their personal best to complete the Problem TIMING: Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which The Problem Set in this lesson is problems they work on first. Some problems do not specify a allotted 10 minutes. It directly follows method for solving. Students should solve these problems using the Application Problem, and so the 10 the RDW approach used for Application Problems. minutes are included within the 15 minutes allott...",
+      studentPrompt: "Use the official Lesson 17 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 207-221.",
       visualModel: "number-line"
     },
@@ -86,7 +86,7 @@ export const M2_LESSON17_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) then analyze the precision of each estimate. When estimating sums, Total Time (60 minutes) students intentionally make choices that lead to reasonably accurate answers and simple arithmetic. Fluency Practice (12 minutes) Rounding to the nearest fifty is not part of Grade 3 standards. Its inclusion here Group Counting 3.OA.1 (3 minutes) combats rigidity in thinking, encouraging students to consider the Sprint: Round to the Nearest Ten 3.NBT.1 (9 minutes) purpose of their estimates and the degree of accuracy needed rather than Group Counting (3 minutes) simply following procedure....",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 17 objective: Estimate sums by rounding and apply to solve measurement word problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 207-221.",
       visualModel: "number-line"
     }
@@ -123,7 +123,7 @@ export const M2_LESSON17_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) NOTE ON Students should do their personal best to complete the Problem TIMING: Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which The Problem Set in this lesson is problems they work on first. Some problems do not specify a allotted 10 minutes. It directly follows method for solving. Students should solve these problems using the Application Problem, and so the 10 the RDW approach used for Application Problems. minutes are included within the 15 minutes allott..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 17 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -141,7 +141,7 @@ export const M2_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: a. Find the actual sum either on paper or using mental math. Round each addend to the nearest hundred, and find the estimated sums. A B C 451 + 253 = ____ 356 + 161 = ____ 652 + 158 = ____ ____ + ____ = ____ ____ + ____ = ____ ____ + ____ = ____ 451 + 249 = ____ 356 + 148 = ____ 647 + 158 = ____ ____ + ____ = ____ ____ + ____ = ____ ____ + ____ = ____ 448 + 249 = ____ 347 + 149 = ____ 647 + 146 = ____ ____ + ____ = ____ ____ + ____ = ____ ____ + ____ = ____ Circle the estimated sum that Circle the estimated sum that is Circle the estimated sum that is is the closest to its real sum. the closest to its real sum. the closest to its real sum. b. Look at the sums that gave the most precise estimates. Explain below what they have in common. You might use a number line to support your explanation. problems. Janet watched a movie that is 94 minutes long on Friday night. She watched a movie that is 151 minutes long on Saturday night. a. Decide how to round the minutes. Then, esti..."
+        value: "Use the official Module 2 Lesson 17 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -155,7 +155,7 @@ export const M2_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) NOTE ON Students should do their personal best to complete the Problem TIMING: Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which The Problem Set in this lesson is problems they work on first. Some problems do not specify a allotted 10 minutes. It directly follows method for solving. Students should solve these problems using the Application Problem, and so the 10 the RDW approach used for Application Problems. minutes are included within the 15 minutes allott..."
+        value: "Use the official Lesson 17 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -183,7 +183,7 @@ export const M2_LESSON17_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) then analyze the precision of each estimate. When estimating sums, Total Time (60 minutes) students intentionally make choices that lead to reasonably accurate answers and simple arithmetic. Fluency Practice (12 minutes) Rounding to the nearest fifty is not part of Grade 3 standards. Its inclusion here Group Counting 3.OA.1 (3 minutes) combats rigidity in thinking, encouraging students to consider the Sprint: Round to the Nearest Ten 3.NBT.1 (9 minutes) purpose of their estimates and the degree of accuracy needed rather than Group Counting (3 minutes) simply following procedure...."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 17 objective: Estimate sums by rounding and apply to solve measurement word problems."
       },
       {
         label: "Workbook",

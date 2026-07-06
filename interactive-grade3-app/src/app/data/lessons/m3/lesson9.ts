@@ -10,7 +10,7 @@ export const M3_LESSON9_RUNTIME: LessonRuntimeConfig = {
     title: "Lesson 9 animation: Model the associative property as a strategy to multiply.",
     context: "T: (Write 16 x 3.) This is a difficult problem for a third grader to solve.",
     equation: "10 x 3 = 30",
-    teacherPrompt: "(Write 16 x 3.) This is a difficult problem for a third grader to solve. Let's simplify it. Work with your partner to list factors that have a product o...",
+    teacherPrompt: "How does the official Problem Set model show model the associative property as a strategy to multiply.?",
     focus: [
       "decompose",
       "distributive property",
@@ -49,14 +49,14 @@ export const M3_LESSON9_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "(Write 16 x 3.) This is a difficult problem for a third grader to solve. Let's simplify it. Work with your partner to list factors that have a product of 16. Write them on your personal white board.",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem NOTES ON Set within the allotted 10 minutes. For some classes, it may be MULTIPLE MEANS appropriate to modify the assignment by specifying which OF ACTION AND problems they work on first. Some problems do not specify a EXPRESSION: method for solving. Students should solve these problems using Learners who have not memorized the RDW approach used for Application Problems. sixes and sevens facts may not benefit from using the associative property to solve 14 x 3 on the...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 9 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition.",
       visualModel: "array"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use the array to complete the equation. a. 3 x 12 = ____ b. (3 x 3) x 4 = ____ x 4 = ____ c. 3 x 14 = ____ d. (____ x ____) x 7 = ____ x ____ = ____ Problem 2: Place parentheses in the equations to simplify. Then, solve. The first one has been done for you. a. 3 x 16 = 3 x (2 x 8) b. 2 x 14 = 2 x (2 x 7) = (3 x 2) x 8 48 = (2 x 2) x 7 = ____6__ x 8 = ____ x 7 c. d. 3 x 12 = 3 x (3 x 4) 3 x 14 = 3 x 2 x 7 =3x3x4 =3x2x7 = ____ x ____ = ____ x ____ e. 15 x 3 = 5 x 3 x 3 f. 15 x 2 = 5 x 3 x 2 =5x3x3 =5x3x2 = ____ x ____ = ____ x ____ Problem 3: Charlotte finds the answer to 16 x 2 by thinking about 8 x",
+      studentPrompt: "Use the official Module 3 Lesson 9 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 3 student workbook, Lesson 9 Problem Set.",
       visualModel: "array"
     },
@@ -64,7 +64,7 @@ export const M3_LESSON9_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem NOTES ON Set within the allotted 10 minutes. For some classes, it may be MULTIPLE MEANS appropriate to modify the assignment by specifying which OF ACTION AND problems they work on first. Some problems do not specify a EXPRESSION: method for solving. Students should solve these problems using Learners who have not memorized the RDW approach used for Application Problems. sixes and sevens facts may not benefit from using the associative property to solve 14 x 3 on the...",
+      studentPrompt: "Use the official Lesson 9 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 108-118.",
       visualModel: "array"
     },
@@ -80,7 +80,7 @@ export const M3_LESSON9_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (11 minutes) Divide by 6 and 7 3.OA.7 (3 minutes) Group Counting 3.OA.1 (4 minutes) Write In the Parentheses 3.OA.7 (4 minutes) Divide by 6 and 7 (3 minutes) Materials: (S) Personal white board Note: This fluency activity reviews using a letter to represent the unknown taught in Lesson 3. T: (Write a x 6 = 12.) On your personal white board, write the value of a. S: (Write a = 2.) T: (Write 12 divided by 6 = a.) Say the division sentence. S: 12 divided by 6 = 2. Continue with the following suggested sequence: a x 6 = 30, b x 6 = 24, c x 6 = 36, d x 6 = 60,...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 9 objective: Model the associative property as a strategy to multiply.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 108-118.",
       visualModel: "array"
     }
@@ -117,7 +117,7 @@ export const M3_LESSON9_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem NOTES ON Set within the allotted 10 minutes. For some classes, it may be MULTIPLE MEANS appropriate to modify the assignment by specifying which OF ACTION AND problems they work on first. Some problems do not specify a EXPRESSION: method for solving. Students should solve these problems using Learners who have not memorized the RDW approach used for Application Problems. sixes and sevens facts may not benefit from using the associative property to solve 14 x 3 on the..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 9 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -135,7 +135,7 @@ export const M3_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Use the array to complete the equation. a. 3 x 12 = ____ b. (3 x 3) x 4 = ____ x 4 = ____ c. 3 x 14 = ____ d. (____ x ____) x 7 = ____ x ____ = ____ Problem 2: Place parentheses in the equations to simplify. Then, solve. The first one has been done for you. a. 3 x 16 = 3 x (2 x 8) b. 2 x 14 = 2 x (2 x 7) = (3 x 2) x 8 48 = (2 x 2) x 7 = ____6__ x 8 = ____ x 7 c. d. 3 x 12 = 3 x (3 x 4) 3 x 14 = 3 x 2 x 7 =3x3x4 =3x2x7 = ____ x ____ = ____ x ____ e. 15 x 3 = 5 x 3 x 3 f. 15 x 2 = 5 x 3 x 2 =5x3x3 =5x3x2 = ____ x ____ = ____ x ____ Problem 3: Charlotte finds the answer to 16 x 2 by thinking about 8 x"
+        value: "Use the official Module 3 Lesson 9 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -149,7 +149,7 @@ export const M3_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem NOTES ON Set within the allotted 10 minutes. For some classes, it may be MULTIPLE MEANS appropriate to modify the assignment by specifying which OF ACTION AND problems they work on first. Some problems do not specify a EXPRESSION: method for solving. Students should solve these problems using Learners who have not memorized the RDW approach used for Application Problems. sixes and sevens facts may not benefit from using the associative property to solve 14 x 3 on the..."
+        value: "Use the official Lesson 9 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -177,7 +177,7 @@ export const M3_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (11 minutes) Divide by 6 and 7 3.OA.7 (3 minutes) Group Counting 3.OA.1 (4 minutes) Write In the Parentheses 3.OA.7 (4 minutes) Divide by 6 and 7 (3 minutes) Materials: (S) Personal white board Note: This fluency activity reviews using a letter to represent the unknown taught in Lesson 3. T: (Write a x 6 = 12.) On your personal white board, write the value of a. S: (Write a = 2.) T: (Write 12 divided by 6 = a.) Say the division sentence. S: 12 divided by 6 = 2. Continue with the following suggested sequence: a x 6 = 30, b x 6 = 24, c x 6 = 36, d x 6 = 60,..."
+        value: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 9 objective: Model the associative property as a strategy to multiply."
       },
       {
         label: "Workbook",

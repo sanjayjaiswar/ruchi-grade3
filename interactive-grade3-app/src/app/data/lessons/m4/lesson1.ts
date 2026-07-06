@@ -8,9 +8,9 @@ export const M4_LESSON1_RUNTIME: LessonRuntimeConfig = {
   lessonAnimation: {
     kind: "area-model",
     title: "Lesson 1 animation: Understand area as an attribute of plane figures.",
-    context: "students discuss, facilitate a whole class discussion.) Partner students so they can work together to cover the shapes.",
+    context: "Use the Teacher Edition Lesson 1 area model to connect the official figure, side lengths, unit squares, and area equation.",
     equation: "5 rows x 4 columns = 20 square units",
-    teacherPrompt: "Talk to a partner. Do you think you can use square pattern blocks to cover Shapes A and B in Problem 1? Explain your answer",
+    teacherPrompt: "How does the official area model show understand area as an attribute of plane figures.?",
     focus: [
       "area",
       "square unit",
@@ -37,7 +37,7 @@ export const M4_LESSON1_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "students discuss, facilitate a whole class discussion.) Partner students so they can work together to cover the shapes. S: Shape A because it's longer than Shape B. -> Shape B Encourage students to hold the because it's taller than Shape A. pattern blocks in place with one T: Use triangle pattern blocks to cover Shapes A and B.",
+      studentPrompt: "Use the Teacher Edition Lesson 1 area model to connect the official figure, side lengths, unit squares, and area equation.",
       teacherEditionBasis: "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf, pages 11-20. Lesson 1 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "area-model"
     },
@@ -46,14 +46,14 @@ export const M4_LESSON1_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Talk to a partner. Do you think you can use square pattern blocks to cover Shapes A and B in Problem 1? Explain your answer",
-      teacherEditionBasis: "Use the Teacher Edition lesson pages 11-20 for the exact teacher explanation and support sequence.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 1 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition.",
       visualModel: "area-model"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use triangle pattern blocks to cover each shape below. Draw lines to show where the triangles meet. Then, write how many triangle pattern blocks it takes to cover each shape. Shape A: ____ triangles Shape B: ____ triangles Problem 2: Use rhombus pattern blocks to cover each shape below. Draw lines to show where the rhombuses meet. Then, write how many rhombus pattern blocks it takes to cover each shape. Shape A: ____ rhombuses Shape B: ____ rhombuses Problem 3: Use trapezoid pattern blocks to cover each shape below. Draw lines to show where the trapezoids meet. Then, write how many trapezoid pattern blocks it requires to cover each shape. Shape A: ____ trapezoids Shape B: ____ trapezoids How is the number of pattern blocks needed to cover the same shape related to the size of the pattern blocks? 5. Use square pattern blocks to cover the rectangle below. Draw lines to show where the squares meet. Then, write how many square pattern blocks it requires to cover the rectangle...",
+      studentPrompt: "Use the official Module 4 Lesson 1 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 4 student workbook, Lesson 1 Problem Set.",
       visualModel: "area-model"
     },
@@ -61,7 +61,7 @@ export const M4_LESSON1_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Use the Teacher Edition lesson pages 11-20 for the exact teacher explanation and support sequence.",
+      studentPrompt: "Use the official Lesson 1 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 11-20.",
       visualModel: "area-model"
     },
@@ -77,7 +77,7 @@ export const M4_LESSON1_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Group Counting 3.OA.1 (4 minutes) Identify the Shape 2.G.1 (3 minutes) Find the Common Products 3.OA.7 (8 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Instruct students to count forward and backward, occasionally changing the direction of the count. Threes to 30 Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 Identify the Shape (3 minutes) Note: This fluency activity reviews properties and vocabulary that are used during today's Concept Develop...",
+      studentPrompt: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 1 objective: Understand area as an attribute of plane figures.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 11-20.",
       visualModel: "area-model"
     }
@@ -104,7 +104,7 @@ export const M4_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "students discuss, facilitate a whole class discussion.) Partner students so they can work together to cover the shapes. S: Shape A because it's longer than Shape B. -> Shape B Encourage students to hold the because it's taller than Shape A. pattern blocks in place with one T: Use triangle pattern blocks to cover Shapes A and B."
+        value: "Use the Teacher Edition Lesson 1 area model to connect the official figure, side lengths, unit squares, and area equation."
       },
       {
         label: "Workbook",
@@ -114,7 +114,7 @@ export const M4_LESSON1_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Use the Teacher Edition lesson pages 11-20 for the exact teacher explanation and support sequence."
+        value: "Problem Set (10 minutes): Students complete the Lesson 1 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -132,7 +132,7 @@ export const M4_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Use triangle pattern blocks to cover each shape below. Draw lines to show where the triangles meet. Then, write how many triangle pattern blocks it takes to cover each shape. Shape A: ____ triangles Shape B: ____ triangles Problem 2: Use rhombus pattern blocks to cover each shape below. Draw lines to show where the rhombuses meet. Then, write how many rhombus pattern blocks it takes to cover each shape. Shape A: ____ rhombuses Shape B: ____ rhombuses Problem 3: Use trapezoid pattern blocks to cover each shape below. Draw lines to show where the trapezoids meet. Then, write how many trapezoid pattern blocks it requires to cover each shape. Shape A: ____ trapezoids Shape B: ____ trapezoids How is the number of pattern blocks needed to cover the same shape related to the size of the pattern blocks? 5. Use square pattern blocks to cover the rectangle below. Draw lines to show where the squares meet. Then, write how many square pattern blocks it requires to cover the rectangle..."
+        value: "Use the official Module 4 Lesson 1 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -146,7 +146,7 @@ export const M4_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Use the Teacher Edition lesson pages 11-20 for the exact teacher explanation and support sequence."
+        value: "Use the official Lesson 1 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -174,7 +174,7 @@ export const M4_LESSON1_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Group Counting 3.OA.1 (4 minutes) Identify the Shape 2.G.1 (3 minutes) Find the Common Products 3.OA.7 (8 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Instruct students to count forward and backward, occasionally changing the direction of the count. Threes to 30 Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 Identify the Shape (3 minutes) Note: This fluency activity reviews properties and vocabulary that are used during today's Concept Develop..."
+        value: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 1 objective: Understand area as an attribute of plane figures."
       },
       {
         label: "Workbook",

@@ -4,10 +4,10 @@ export const M5_LESSON12_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
   lessonAnimation: {
     kind: "fraction-strip",
-    title: "Lesson 12 animation: Specify the corresponding whole when presented with one...",
-    context: "Exploration: Designate the following stations for groups of 3 (more than 3 not suggested).",
+    title: "Lesson 12 animation: Specify the corresponding whole when presented with one equal part.",
+    context: "Use the Teacher Edition Lesson 12 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
     equation: "2/4; name the whole before naming the fraction",
-    teacherPrompt: "What were the different wholes we saw at each station that were the same?",
+    teacherPrompt: "How does the official fraction model show specify the corresponding whole when presented with one equal part.?",
     focus: [
       "fraction strip",
       "source labels"
@@ -30,7 +30,7 @@ export const M5_LESSON12_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Exploration: Designate the following stations for groups of 3 (more than 3 not suggested). Station A: 1 half and 1 fourth Station B: 1 half and 1 third",
+      studentPrompt: "Use the Teacher Edition Lesson 12 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf, pages 136-147. Lesson 12 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "fraction-strip"
     },
@@ -39,14 +39,14 @@ export const M5_LESSON12_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "What were the different wholes we saw at each station that were the same?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 12 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition.",
       visualModel: "fraction-strip"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Draw at least one number bond that matches a drawing. 1 1 1 3 3 3 1 1 1 1 3 3 2 2 1 1 1 1 1 4 4 4 4 1. Yellow strip Problem 2: Brown strip Orange square 4. Yarn 5. Water 6. Clay",
+      studentPrompt: "Use the official Module 5 Lesson 12 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 5 student workbook, Lesson 12 Problem Set.",
       visualModel: "fraction-strip"
     },
@@ -54,7 +54,7 @@ export const M5_LESSON12_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+      studentPrompt: "Use the official Lesson 12 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 136-147.",
       visualModel: "fraction-strip"
     },
@@ -70,7 +70,7 @@ export const M5_LESSON12_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (8 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Sprint: Multiply with Nine 3.OA.4 (6 minutes) Unit and Non-Unit Fractions of 1 Whole 3.G.2, 3.NF.2 (3 minutes) More Units Than 1 Whole 3.NF.2b (3 minutes) Sprint: Multiply with Nine (6 minutes) Materials: (S) Multiply with Nine Sprint Note: This Sprint supports fluency with multiplication using units of 9. Unit and Non-Unit Fractions of 1 Whole (3 minutes) Materials: (S) Personal white board Note: This activity reviews naming the shaded and unshaded equal parts of a whole, as well as drawing number bonds to represent the frac...",
+      studentPrompt: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 12 objective: Specify the corresponding whole when presented with one equal part.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 136-147.",
       visualModel: "fraction-strip"
     }
@@ -97,7 +97,7 @@ export const M5_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Exploration: Designate the following stations for groups of 3 (more than 3 not suggested). Station A: 1 half and 1 fourth Station B: 1 half and 1 third"
+        value: "Use the Teacher Edition Lesson 12 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence."
       },
       {
         label: "Workbook",
@@ -107,7 +107,7 @@ export const M5_LESSON12_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+        value: "Problem Set (10 minutes): Students complete the Lesson 12 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -125,7 +125,7 @@ export const M5_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Draw at least one number bond that matches a drawing. 1 1 1 3 3 3 1 1 1 1 3 3 2 2 1 1 1 1 1 4 4 4 4 1. Yellow strip Problem 2: Brown strip Orange square 4. Yarn 5. Water 6. Clay"
+        value: "Use the official Module 5 Lesson 12 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -139,7 +139,7 @@ export const M5_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+        value: "Use the official Lesson 12 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -167,7 +167,7 @@ export const M5_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (8 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Sprint: Multiply with Nine 3.OA.4 (6 minutes) Unit and Non-Unit Fractions of 1 Whole 3.G.2, 3.NF.2 (3 minutes) More Units Than 1 Whole 3.NF.2b (3 minutes) Sprint: Multiply with Nine (6 minutes) Materials: (S) Multiply with Nine Sprint Note: This Sprint supports fluency with multiplication using units of 9. Unit and Non-Unit Fractions of 1 Whole (3 minutes) Materials: (S) Personal white board Note: This activity reviews naming the shaded and unshaded equal parts of a whole, as well as drawing number bonds to represent the frac..."
+        value: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 12 objective: Specify the corresponding whole when presented with one equal part."
       },
       {
         label: "Workbook",

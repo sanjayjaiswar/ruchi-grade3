@@ -6,10 +6,10 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 12 animation: Measure side lengths in whole number units to determine...",
-    context: "T: The sides form the boundary of Shape A.",
+    title: "Lesson 12 animation: Measure side lengths in whole number units to determine the perimeter of polygons.",
+    context: "Use the Teacher Edition Lesson 12 perimeter workspace with the source side lengths, labels, units, and boundary reasoning to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "Which shape has the smallest perimeter in Problem 1? How do you know?",
+    teacherPrompt: "Use the source Lesson 12 perimeter workspace with the source side lengths, labels, units, and boundary reasoning; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "perimeter",
       "geometry",
@@ -36,7 +36,7 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: The sides form the boundary of Shape A. Trace the perimeter of Shape A with your finger. (Allow students Shapes Template time to trace.) Your finger just traveled around the perimeter of Shape A. What tool can you use to figure out how many centimeters your finger traveled? S: A ruler! T: Measure and label the side lengths of Shape A in centimeters.",
+      studentPrompt: "Use the Teacher Edition Lesson 12 perimeter workspace with the source side lengths, labels, units, and boundary reasoning to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 158-169. Lesson 12 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -44,24 +44,24 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Which shape has the smallest perimeter in Problem 1? How do you know?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 12 work using the official Module 7 perimeter workspace with the source side lengths, labels, units, and boundary reasoning from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 12 work using the official Module 7 perimeter workspace with the source side lengths, labels, units, and boundary reasoning from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Measure and label the side lengths of the shapes below in centimeters. Then, find the perimeter of each shape. a. b. Perimeter = ____cm +____cm +____cm +____cm Perimeter = ____ = ____ cm = ____ cm c. d. Perimeter = ____ = ____ cm Perimeter = ____ = ____ cm e. Perimeter = ____ = ____ cm perimeter of polygons. Problem 2: Carson draws two triangles to create the new shape shown below. Use a ruler to find the side lengths of Carson's shape in centimeters. Then, find the perimeter. Problem 3: Hugh and Daisy draw the shapes shown below. Measure and label the side lengths in centimeters. Whose shape has a greater perimeter? How do you know? Hugh's Shape Daisy's Shape",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 12 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 12 Problem Set prompts in order. Blank mode preserves the student-facing perimeter workspace with the source side lengths, labels, units, and boundary reasoning; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 12 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 158-169.",
+      studentPrompt: "Use the source-backed Lesson 12 workspace and perimeter workspace with the source side lengths, labels, units, and boundary reasoning to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 12; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -76,8 +76,8 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) In this lesson, the Application Problem comes after the Concept Development Total Time (60 minutes) and before independent work time on the Problem Set. This provides students with an opportunity to apply Fluency Practice (15 minutes) their learning from the Concept Development to a word problem and Multiply by 7 3.OA.7 (8 minutes) debrief it as a class before moving on Equivalent Counting with Units of 3 3.OA.7 (4 minutes) to independent application on the Problem Set. As a result, the 15 Area and Perimeter 3.G.2 (3 minutes) minutes for the Application Problem include 10 minut...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 158-169.",
+      studentPrompt: "Debrief focus: connect the Problem Set perimeter workspace with the source side lengths, labels, units, and boundary reasoning to the Lesson 12 objective: Measure side lengths in whole number units to determine the perimeter of polygons.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 12; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -103,7 +103,7 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: The sides form the boundary of Shape A. Trace the perimeter of Shape A with your finger. (Allow students Shapes Template time to trace.) Your finger just traveled around the perimeter of Shape A. What tool can you use to figure out how many centimeters your finger traveled? S: A ruler! T: Measure and label the side lengths of Shape A in centimeters."
+        value: "Use the Teacher Edition Lesson 12 perimeter workspace with the source side lengths, labels, units, and boundary reasoning to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -113,11 +113,11 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set source focus: students complete the Lesson 12 work using the official Module 7 perimeter workspace with the source side lengths, labels, units, and boundary reasoning from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "Which shape has the smallest perimeter in Problem 1? How do you know?"
+        value: "Teacher Edition check: preserve the Lesson 12 perimeter workspace with the source side lengths, labels, units, and boundary reasoning."
       },
       {
         label: "Workbook",
@@ -127,11 +127,11 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 12 Problem Set."
+        value: "Module 7 student workbook, Lesson 12 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Measure and label the side lengths of the shapes below in centimeters. Then, find the perimeter of each shape. a. b. Perimeter = ____cm +____cm +____cm +____cm Perimeter = ____ = ____ cm = ____ cm c. d. Perimeter = ____ = ____ cm Perimeter = ____ = ____ cm e. Perimeter = ____ = ____ cm perimeter of polygons. Problem 2: Carson draws two triangles to create the new shape shown below. Use a ruler to find the side lengths of Carson's shape in centimeters. Then, find the perimeter. Problem 3: Hugh and Daisy draw the shapes shown below. Measure and label the side lengths in centimeters. Whose shape has a greater perimeter? How do you know? Hugh's Shape Daisy's Shape"
+        value: "Use the official Module 7 Lesson 12 Problem Set prompts in order. Blank mode preserves the student-facing perimeter workspace with the source side lengths, labels, units, and boundary reasoning; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -141,11 +141,11 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 158-169."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 12; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the source-backed Lesson 12 workspace and perimeter workspace with the source side lengths, labels, units, and boundary reasoning to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -169,11 +169,11 @@ export const M7_LESSON12_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 158-169."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 12; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) In this lesson, the Application Problem comes after the Concept Development Total Time (60 minutes) and before independent work time on the Problem Set. This provides students with an opportunity to apply Fluency Practice (15 minutes) their learning from the Concept Development to a word problem and Multiply by 7 3.OA.7 (8 minutes) debrief it as a class before moving on Equivalent Counting with Units of 3 3.OA.7 (4 minutes) to independent application on the Problem Set. As a result, the 15 Area and Perimeter 3.G.2 (3 minutes) minutes for the Application Problem include 10 minut..."
+        value: "Debrief focus: connect the Problem Set perimeter workspace with the source side lengths, labels, units, and boundary reasoning to the Lesson 12 objective: Measure side lengths in whole number units to determine the perimeter of polygons."
       },
       {
         label: "Workbook",

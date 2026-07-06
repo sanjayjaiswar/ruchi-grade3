@@ -7,7 +7,7 @@ export const M2_LESSON4_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "clock",
-    title: "Lesson 4 animation: Solve word problems involving time intervals within 1 h...",
+    title: "Lesson 4 animation: Solve word problems involving time intervals within 1 h",
     context: "T: Look back at your work on today's Application Problem.",
     equation: "1 sec start -> 60 sec elapsed -> 5 sec end",
     teacherPrompt: "How are Problems 1 and 2 different? How did it affect the way you solved each problem?",
@@ -47,14 +47,14 @@ export const M2_LESSON4_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "How are Problems 1 and 2 different? How did it affect the way you solved each problem?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. backward and forward using the number line and clock. G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 4 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "clock"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Cole starts reading at 6:23 p.m. He stops at 6:49 p.m. How many minutes does Cole read? Cole reads for ____ minutes. Problem 2: Natalie finishes piano practice at 2:45 p.m. after practicing for 37 minutes. What time did Natalie's practice start? Natalie's practice started at ____ p.m. Problem 3: Genevieve works on her scrapbook from 11:27 a.m. to 11:58 a.m. How many minutes does she work on her scrapbook? Genevieve works on her scrapbook for ____ minutes.",
+      studentPrompt: "Use the official Module 2 Lesson 4 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 4 Problem Set.",
       visualModel: "clock"
     },
@@ -62,7 +62,7 @@ export const M2_LESSON4_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. backward and forward using the number line and clock. G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+      studentPrompt: "Use the official Lesson 4 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 50-60.",
       visualModel: "clock"
     },
@@ -78,7 +78,7 @@ export const M2_LESSON4_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (3 minutes) Tell Time on the Clock 3.MD.1 (3 minutes) Minute Counting 3.MD.1 (6 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by sevens, eights, and nines in this activity anticipates multiplication using those units in Module 3. Direct students to count forward and backward, occasionally changing the direction of the count using the following suggested sequence: Sevens to 49, emphasizing the transition from 35 to 42 Eight...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 4 objective: Solve word problems involving time intervals within 1 hour by counting backward and forward using the number line and clock.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 50-60.",
       visualModel: "clock"
     }
@@ -115,7 +115,7 @@ export const M2_LESSON4_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. backward and forward using the number line and clock. G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+        value: "Problem Set (10 minutes): Students complete the Lesson 4 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -133,7 +133,7 @@ export const M2_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Cole starts reading at 6:23 p.m. He stops at 6:49 p.m. How many minutes does Cole read? Cole reads for ____ minutes. Problem 2: Natalie finishes piano practice at 2:45 p.m. after practicing for 37 minutes. What time did Natalie's practice start? Natalie's practice started at ____ p.m. Problem 3: Genevieve works on her scrapbook from 11:27 a.m. to 11:58 a.m. How many minutes does she work on her scrapbook? Genevieve works on her scrapbook for ____ minutes."
+        value: "Use the official Module 2 Lesson 4 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -147,7 +147,7 @@ export const M2_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. backward and forward using the number line and clock. G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+        value: "Use the official Lesson 4 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -175,7 +175,7 @@ export const M2_LESSON4_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (3 minutes) Tell Time on the Clock 3.MD.1 (3 minutes) Minute Counting 3.MD.1 (6 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Counting by sevens, eights, and nines in this activity anticipates multiplication using those units in Module 3. Direct students to count forward and backward, occasionally changing the direction of the count using the following suggested sequence: Sevens to 49, emphasizing the transition from 35 to 42 Eight..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 4 objective: Solve word problems involving time intervals within 1 hour by counting backward and forward using the number line and clock."
       },
       {
         label: "Workbook",

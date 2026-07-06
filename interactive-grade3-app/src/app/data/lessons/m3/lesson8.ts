@@ -6,10 +6,10 @@ export const M3_LESSON8_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 8 animation: Understand the function of parentheses and apply to sol...",
+    title: "Lesson 8 animation: Understand the function of parentheses and apply to solving problems.",
     context: "Part 1: Solve equations containing parentheses.",
     equation: "2 x 6 = 12",
-    teacherPrompt: "Look at Problem 1(j). Would the answer be the same if I solved (12 divided by 2) + (12 divided by 4)? Why not? (Lead students to understand that they ca...",
+    teacherPrompt: "How does the official Problem Set model show understand the function of parentheses and apply to solving problems.?",
     focus: [
       "array",
       "source labels"
@@ -46,14 +46,14 @@ export const M3_LESSON8_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Look at Problem 1(j). Would the answer be the same if I solved (12 divided by 2) + (12 divided by 4)? Why not? (Lead students to understand that they cannot distribute in this problem.)",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. G3-M3-TE-1.3.0-05.2015",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 8 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition.",
       visualModel: "array"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Solve. a. (12 - 4) + 6 = ____ i. ____ = (12 divided by 2) + 4 b. 12 - (4 + 6) = ____ j. ____ = 12 divided by (2 + 4) c. ____ = 15 - (7 + 3) k. 9 + (15 divided by 3) = ____ d. ____ = (15 - 7) + 3 l. (9 + 15) divided by 3 = ____ e. ____ = (3 + 2) x 6 m. 60 divided by (10 - 4) = ____ f. ____ = 3 + (2 x 6) n. (60 divided by 10) - 4 = ____ g. 4 x (7 - 2) = ____ o. ____ = 35 + (10 divided by 5) h. (4 x 7) - 2 = ____ p. ____ = (35 + 10) divided by 5 Problem 2: Use parentheses to make the equations true. a. 16 - 4 + 7 = 19 b. 16 - 4 + 7 = 5 c. 2 = 22 - 15 + 5 d. 12 = 22 - 15 + 5 e. 3 + 7 x 6 = 60 f. 3 + 7 x 6 = 45 g. 5 = 10 divided by 10 x 5 h. 50 = 100 divided by 10 x 5 i. 26 - 5 divided by 7 = 3 j. 36 = 4 x 25 - 16 Problem 3: The teacher writes 24 divided by 4 + 2 = ____ on the board. Chad says it equals 8. Samir says it equals",
+      studentPrompt: "Use the official Module 3 Lesson 8 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 3 student workbook, Lesson 8 Problem Set.",
       visualModel: "array"
     },
@@ -61,7 +61,7 @@ export const M3_LESSON8_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. G3-M3-TE-1.3.0-05.2015",
+      studentPrompt: "Use the official Lesson 8 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 97-107.",
       visualModel: "array"
     },
@@ -77,7 +77,7 @@ export const M3_LESSON8_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Multiply By 7 3.OA.7 (6 minutes) Group Counting 3.OA.1 (4 minutes) Add 6 and 7 Mentally 2.NBT.5 (5 minutes) Multiply By 7 (6 minutes) Materials: (S) Multiply By 7 (6-10) (Pattern Sheet) NOTES ON Note: This activity builds fluency with multiplication facts using MULTIPLE MEANS units of seven. It supports students knowing from memory all products of two one-digit numbers. See Lesson 5 for the OF ENGAGEMENT: Multiply By 7 is carefully scaffolded to directions for administering a Multiply By Pattern Sheet. support student succes...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 8 objective: Understand the function of parentheses and apply to solving problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 97-107.",
       visualModel: "array"
     }
@@ -114,7 +114,7 @@ export const M3_LESSON8_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. G3-M3-TE-1.3.0-05.2015"
+        value: "Problem Set (10 minutes): Students complete the Lesson 8 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -132,7 +132,7 @@ export const M3_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Solve. a. (12 - 4) + 6 = ____ i. ____ = (12 divided by 2) + 4 b. 12 - (4 + 6) = ____ j. ____ = 12 divided by (2 + 4) c. ____ = 15 - (7 + 3) k. 9 + (15 divided by 3) = ____ d. ____ = (15 - 7) + 3 l. (9 + 15) divided by 3 = ____ e. ____ = (3 + 2) x 6 m. 60 divided by (10 - 4) = ____ f. ____ = 3 + (2 x 6) n. (60 divided by 10) - 4 = ____ g. 4 x (7 - 2) = ____ o. ____ = 35 + (10 divided by 5) h. (4 x 7) - 2 = ____ p. ____ = (35 + 10) divided by 5 Problem 2: Use parentheses to make the equations true. a. 16 - 4 + 7 = 19 b. 16 - 4 + 7 = 5 c. 2 = 22 - 15 + 5 d. 12 = 22 - 15 + 5 e. 3 + 7 x 6 = 60 f. 3 + 7 x 6 = 45 g. 5 = 10 divided by 10 x 5 h. 50 = 100 divided by 10 x 5 i. 26 - 5 divided by 7 = 3 j. 36 = 4 x 25 - 16 Problem 3: The teacher writes 24 divided by 4 + 2 = ____ on the board. Chad says it equals 8. Samir says it equals"
+        value: "Use the official Module 3 Lesson 8 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -146,7 +146,7 @@ export const M3_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems. G3-M3-TE-1.3.0-05.2015"
+        value: "Use the official Lesson 8 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -174,7 +174,7 @@ export const M3_LESSON8_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Multiply By 7 3.OA.7 (6 minutes) Group Counting 3.OA.1 (4 minutes) Add 6 and 7 Mentally 2.NBT.5 (5 minutes) Multiply By 7 (6 minutes) Materials: (S) Multiply By 7 (6-10) (Pattern Sheet) NOTES ON Note: This activity builds fluency with multiplication facts using MULTIPLE MEANS units of seven. It supports students knowing from memory all products of two one-digit numbers. See Lesson 5 for the OF ENGAGEMENT: Multiply By 7 is carefully scaffolded to directions for administering a Multiply By Pattern Sheet. support student succes..."
+        value: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 8 objective: Understand the function of parentheses and apply to solving problems."
       },
       {
         label: "Workbook",

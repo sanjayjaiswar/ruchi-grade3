@@ -46,7 +46,7 @@ export const M1_LESSON13_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Describe how the model in Problem 2(a) helped for drawing a tape diagram in Problem 2(b)",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 13 Problem Set using the lesson models from the Teacher Edition.",
       visualModel: "array"
     },
     {
@@ -61,7 +61,7 @@ export const M1_LESSON13_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 13 Problem Set workspace and source-backed visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 174-185.",
       visualModel: "array"
     },
@@ -77,7 +77,7 @@ export const M1_LESSON13_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (14 minutes) Sprint: Multiply or Divide by 2 3.OA.7 (9 minutes) Group Counting 3.OA.1 (3 minutes) Divide 3.OA.7 (2 minutes) Sprint: Multiply or Divide by 2 (9 minutes) Materials: (S) Multiply or Divide by 2 Sprint Note: This activity builds fluency with multiplication and division using units of 2. It works toward students' ability to multiply and divide fluently within 100. See Lesson 2 for the directions for administering a Sprint. Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition....",
+      studentPrompt: "Debrief focus: connect the Problem Set models and answers to the Lesson 13 objective: Interpret the quotient as the number of groups or the number of objects in each group using units of 3.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 174-185.",
       visualModel: "array"
     }
@@ -114,7 +114,7 @@ export const M1_LESSON13_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 13 Problem Set using the lesson models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -146,7 +146,7 @@ export const M1_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 13 Problem Set workspace and source-backed visuals to model and solve the student-facing problems."
       },
       {
         label: "Teacher Edition",
@@ -174,7 +174,7 @@ export const M1_LESSON13_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (14 minutes) Sprint: Multiply or Divide by 2 3.OA.7 (9 minutes) Group Counting 3.OA.1 (3 minutes) Divide 3.OA.7 (2 minutes) Sprint: Multiply or Divide by 2 (9 minutes) Materials: (S) Multiply or Divide by 2 Sprint Note: This activity builds fluency with multiplication and division using units of 2. It works toward students' ability to multiply and divide fluently within 100. See Lesson 2 for the directions for administering a Sprint. Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition...."
+        value: "Debrief focus: connect the Problem Set models and answers to the Lesson 13 objective: Interpret the quotient as the number of groups or the number of objects in each group using units of 3."
       },
       {
         label: "Teacher Edition",

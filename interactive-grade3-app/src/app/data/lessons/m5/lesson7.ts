@@ -7,10 +7,10 @@ export const M5_LESSON7_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "fraction-strip",
-    title: "Lesson 7 animation: Identify and represent shaded and non-shaded parts of o...",
-    context: "T: What about the part that is not full?",
+    title: "Lesson 7 animation: Identify and represent shaded and non-shaded parts of one whole as fractions.",
+    context: "Use the Teacher Edition Lesson 7 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
     equation: "1/5; name the whole before naming the fraction",
-    teacherPrompt: "What about the part that is not full? Talk to your partner: Could that be a fraction, too? Why or why not?",
+    teacherPrompt: "How does the official fraction model show identify and represent shaded and non-shaded parts of one whole as fractions.?",
     focus: [
       "fraction",
       "whole",
@@ -35,7 +35,7 @@ export const M5_LESSON7_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: What about the part that is not full? Talk to your partner: Could that be a fraction, too? Why or why not? S: No, because there's nothing there. -> I disagree. It's another part. It's just not full. -> It's another half. Because half is full and half is empty. Two halves make one whole. T: Even though parts might not be full or shaded, they are still part of the whole. Let's explore this idea some more.",
+      studentPrompt: "Use the Teacher Edition Lesson 7 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf, pages 75-85. Lesson 7 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "fraction-strip"
     },
@@ -44,14 +44,14 @@ export const M5_LESSON7_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "What about the part that is not full? Talk to your partner: Could that be a fraction, too? Why or why not?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem NOTES ON Set within the allotted 10 minutes. For some classes, it may be MULTIPLE MEANS appropriate to modify the assignment by specifying which OF ENGAGEMENT: problems they work on first. Some problems do not specify a Offer students working above grade method for solving. Students should solve these problems using level a Problem Set alternative of the RDW approach used for Application Problems. constructing a word problem for one of the models (pictured in number...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 7 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition.",
       visualModel: "fraction-strip"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: 2 thirds Problem 2: 6 sevenths Problem 3: 4 fifths",
+      studentPrompt: "Use the official Module 5 Lesson 7 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 5 student workbook, Lesson 7 Problem Set.",
       visualModel: "fraction-strip"
     },
@@ -59,7 +59,7 @@ export const M5_LESSON7_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem NOTES ON Set within the allotted 10 minutes. For some classes, it may be MULTIPLE MEANS appropriate to modify the assignment by specifying which OF ENGAGEMENT: problems they work on first. Some problems do not specify a Offer students working above grade method for solving. Students should solve these problems using level a Problem Set alternative of the RDW approach used for Application Problems. constructing a word problem for one of the models (pictured in number...",
+      studentPrompt: "Use the official Lesson 7 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 75-85.",
       visualModel: "fraction-strip"
     },
@@ -75,7 +75,7 @@ export const M5_LESSON7_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (2 minutes) Sprint: Multiply and Divide by Seven 3.OA.4 (8 minutes) Skip-Count by Halves on the Clock 3.G.2, 3.NF.1 (2 minutes) Group Counting (2 minutes) Materials: (S) Personal white board Note: Group counting reviews interpreting multiplication as repeated addition. Direct students to count forward and backward by nine to 90 on their personal white boards. T: Circle 27. How many nines did you count? S: 3 nines. T: What is 27 divided by 9? S: 3. Continue with the following possible sequence: 18, 81, 4...",
+      studentPrompt: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 7 objective: Identify and represent shaded and non-shaded parts of one whole as fractions.",
       teacherEditionBasis: "Module 5 Teacher Edition, lesson pages 75-85.",
       visualModel: "fraction-strip"
     }
@@ -102,7 +102,7 @@ export const M5_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: What about the part that is not full? Talk to your partner: Could that be a fraction, too? Why or why not? S: No, because there's nothing there. -> I disagree. It's another part. It's just not full. -> It's another half. Because half is full and half is empty. Two halves make one whole. T: Even though parts might not be full or shaded, they are still part of the whole. Let's explore this idea some more."
+        value: "Use the Teacher Edition Lesson 7 fraction model to connect the official whole, partitions, unit fractions, number line, and answer evidence."
       },
       {
         label: "Workbook",
@@ -112,7 +112,7 @@ export const M5_LESSON7_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem NOTES ON Set within the allotted 10 minutes. For some classes, it may be MULTIPLE MEANS appropriate to modify the assignment by specifying which OF ENGAGEMENT: problems they work on first. Some problems do not specify a Offer students working above grade method for solving. Students should solve these problems using level a Problem Set alternative of the RDW approach used for Application Problems. constructing a word problem for one of the models (pictured in number..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 7 Problem Set using the official Module 5 fraction, whole, strip, area model, and number-line structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -130,7 +130,7 @@ export const M5_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: 2 thirds Problem 2: 6 sevenths Problem 3: 4 fifths"
+        value: "Use the official Module 5 Lesson 7 Problem Set prompts in order. Blank mode preserves the student-facing fraction model/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -144,7 +144,7 @@ export const M5_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem NOTES ON Set within the allotted 10 minutes. For some classes, it may be MULTIPLE MEANS appropriate to modify the assignment by specifying which OF ENGAGEMENT: problems they work on first. Some problems do not specify a Offer students working above grade method for solving. Students should solve these problems using level a Problem Set alternative of the RDW approach used for Application Problems. constructing a word problem for one of the models (pictured in number..."
+        value: "Use the official Lesson 7 Problem Set workspace and source-backed fraction visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -172,7 +172,7 @@ export const M5_LESSON7_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (2 minutes) Sprint: Multiply and Divide by Seven 3.OA.4 (8 minutes) Skip-Count by Halves on the Clock 3.G.2, 3.NF.1 (2 minutes) Group Counting (2 minutes) Materials: (S) Personal white board Note: Group counting reviews interpreting multiplication as repeated addition. Direct students to count forward and backward by nine to 90 on their personal white boards. T: Circle 27. How many nines did you count? S: 3 nines. T: What is 27 divided by 9? S: 3. Continue with the following possible sequence: 18, 81, 4..."
+        value: "Debrief focus: connect the Problem Set fraction models, unit intervals, partitions, comparisons, and answers to the Lesson 7 objective: Identify and represent shaded and non-shaded parts of one whole as fractions."
       },
       {
         label: "Workbook",

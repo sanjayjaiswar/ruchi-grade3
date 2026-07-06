@@ -6,10 +6,10 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "geometry",
-    title: "Lesson 10 animation: Decompose quadrilaterals to understand perimeter as the...",
-    context: "Problem 1: Decompose a square to define perimeter.",
+    title: "Lesson 10 animation: Decompose quadrilaterals to understand perimeter as the boundary of a shape.",
+    context: "Use the Teacher Edition Lesson 10 perimeter workspace with the source side lengths, labels, units, and boundary reasoning to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
     equation: "Use attributes, side lengths, and labels from the figure",
-    teacherPrompt: "Does the shape you drew in Problem 1(a) have the same perimeter as the shape your partner drew for Problem 1(a)? How do you know?",
+    teacherPrompt: "Use the source Lesson 10 perimeter workspace with the source side lengths, labels, units, and boundary reasoning; preserve the official quantities, labels, units, diagrams, and check evidence.",
     focus: [
       "perimeter",
       "geometry",
@@ -36,7 +36,7 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Problem 1: Decompose a square to define perimeter. Students should save the shape created here for Lesson 11. Use a 2-inch square to answer the questions below. a. Trace the square in the space below with a red crayon. b. Trace the new shape you made with the square in the space below with a red crayon. c. Which shape has a greater perimeter? How do you know? d.",
+      studentPrompt: "Use the Teacher Edition Lesson 10 perimeter workspace with the source side lengths, labels, units, and boundary reasoning to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, pages 140-150. Lesson 10 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "geometry"
     },
@@ -44,24 +44,24 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Does the shape you drew in Problem 1(a) have the same perimeter as the shape your partner drew for Problem 1(a)? How do you know?",
-      teacherEditionBasis: "Problem Set (5 minutes): Students complete Problems 2 and 3 and explain perimeter as the boundary of a shape.",
+      studentPrompt: "Problem Set source focus: students complete the Lesson 10 work using the official Module 7 perimeter workspace with the source side lengths, labels, units, and boundary reasoning from the Teacher Edition and Student Workbook.",
+      teacherEditionBasis: "Problem Set source focus: students complete the Lesson 10 work using the official Module 7 perimeter workspace with the source side lengths, labels, units, and boundary reasoning from the Teacher Edition and Student Workbook.",
       visualModel: "geometry"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use a 2-inch square to answer the questions below. a. Trace the square in the space below with a red crayon. b. Trace the new shape you made with the square in the space below with a red crayon. c. Which shape has a greater perimeter? How do you know? d. Color the inside of the shapes in Problem 1 (a) and (b) with a blue crayon. e. Which color represents the perimeters of the shapes? How do you know? f. What does the other color represent? How do you know? g. Which shape has a greater area? How do you know? Problem 2: a. Outline the perimeter of the shapes below with a red crayon. b. Explain how you know you outlined the perimeters of the shapes above. Problem 3: Outline the perimeter of this piece of paper with a highlighter.",
-      teacherEditionBasis: "Module 7 Teacher Edition, Lesson 10 Problem Set.",
+      studentPrompt: "Use the official Module 7 Lesson 10 Problem Set prompts in order. Blank mode preserves the student-facing perimeter workspace with the source side lengths, labels, units, and boundary reasoning; Solved mode applies the Teacher Edition answer/check evidence.",
+      teacherEditionBasis: "Module 7 student workbook, Lesson 10 Problem Set.",
       visualModel: "geometry"
     },
     {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (5 minutes): Students complete Problems 2 and 3 and explain perimeter as the boundary of a shape.",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 140-150.",
+      studentPrompt: "Use the source-backed Lesson 10 workspace and perimeter workspace with the source side lengths, labels, units, and boundary reasoning to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 10; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     },
     {
@@ -76,8 +76,8 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Multiply by 7 3.OA.7 (8 minutes) Equivalent Counting with Units of 2 3.OA.7 (4 minutes) Multiply by 7 (8 minutes) Materials: (S) Multiply by 7 (1-5) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 7. It works toward students knowing from memory all the products of two one-digit numbers. See Lesson 1 for the directions for administration of a Multiply-By Pattern Sheet. T: (Write 5 x 7 = ____.) Let's skip-count up by sevens to find the answer. (Raise a finger for each number to track the...",
-      teacherEditionBasis: "Module 7 Teacher Edition, lesson pages 140-150.",
+      studentPrompt: "Debrief focus: connect the Problem Set perimeter workspace with the source side lengths, labels, units, and boundary reasoning to the Lesson 10 objective: Decompose quadrilaterals to understand perimeter as the boundary of a shape.",
+      teacherEditionBasis: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 10; Module 7 Teacher Edition and student workbook Problem Set pages.",
       visualModel: "geometry"
     }
   ],
@@ -103,7 +103,7 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Decompose a square to define perimeter. Students should save the shape created here for Lesson 11. Use a 2-inch square to answer the questions below. a. Trace the square in the space below with a red crayon. b. Trace the new shape you made with the square in the space below with a red crayon. c. Which shape has a greater perimeter? How do you know? d."
+        value: "Use the Teacher Edition Lesson 10 perimeter workspace with the source side lengths, labels, units, and boundary reasoning to connect the official problem context, visual structure, quantities, labels, units, and answer/check evidence."
       },
       {
         label: "Workbook",
@@ -113,11 +113,11 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (5 minutes): Students complete Problems 2 and 3 and explain perimeter as the boundary of a shape."
+        value: "Problem Set source focus: students complete the Lesson 10 work using the official Module 7 perimeter workspace with the source side lengths, labels, units, and boundary reasoning from the Teacher Edition and Student Workbook."
       },
       {
         label: "Source text",
-        value: "Does the shape you drew in Problem 1(a) have the same perimeter as the shape your partner drew for Problem 1(a)? How do you know?"
+        value: "Teacher Edition check: preserve the Lesson 10 perimeter workspace with the source side lengths, labels, units, and boundary reasoning."
       },
       {
         label: "Workbook",
@@ -127,11 +127,11 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
     "source-picture": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, Lesson 10 Problem Set."
+        value: "Module 7 student workbook, Lesson 10 Problem Set."
       },
       {
         label: "Source text",
-        value: "Problem 1: Use a 2-inch square to answer the questions below. a. Trace the square in the space below with a red crayon. b. Trace the new shape you made with the square in the space below with a red crayon. c. Which shape has a greater perimeter? How do you know? d. Color the inside of the shapes in Problem 1 (a) and (b) with a blue crayon. e. Which color represents the perimeters of the shapes? How do you know? f. What does the other color represent? How do you know? g. Which shape has a greater area? How do you know? Problem 2: a. Outline the perimeter of the shapes below with a red crayon. b. Explain how you know you outlined the perimeters of the shapes above. Problem 3: Outline the perimeter of this piece of paper with a highlighter."
+        value: "Use the official Module 7 Lesson 10 Problem Set prompts in order. Blank mode preserves the student-facing perimeter workspace with the source side lengths, labels, units, and boundary reasoning; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -141,11 +141,11 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
     "source-draw": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 140-150."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 10; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Problem Set (5 minutes): Students complete Problems 2 and 3 and explain perimeter as the boundary of a shape."
+        value: "Use the source-backed Lesson 10 workspace and perimeter workspace with the source side lengths, labels, units, and boundary reasoning to model and solve the student-facing problems without inserting raw PDF/source-page images into Blank or Solved cards."
       },
       {
         label: "Workbook",
@@ -169,11 +169,11 @@ export const M7_LESSON10_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 7 Teacher Edition, lesson pages 140-150."
+        value: "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf, Lesson 10; Module 7 Teacher Edition and student workbook Problem Set pages."
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Multiply by 7 3.OA.7 (8 minutes) Equivalent Counting with Units of 2 3.OA.7 (4 minutes) Multiply by 7 (8 minutes) Materials: (S) Multiply by 7 (1-5) Pattern Sheet Note: This activity builds fluency with multiplication facts using units of 7. It works toward students knowing from memory all the products of two one-digit numbers. See Lesson 1 for the directions for administration of a Multiply-By Pattern Sheet. T: (Write 5 x 7 = ____.) Let's skip-count up by sevens to find the answer. (Raise a finger for each number to track the..."
+        value: "Debrief focus: connect the Problem Set perimeter workspace with the source side lengths, labels, units, and boundary reasoning to the Lesson 10 objective: Decompose quadrilaterals to understand perimeter as the boundary of a shape."
       },
       {
         label: "Workbook",

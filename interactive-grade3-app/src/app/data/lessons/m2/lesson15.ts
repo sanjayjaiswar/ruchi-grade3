@@ -6,10 +6,10 @@ export const M2_LESSON15_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 15 animation: Add measurements using the standard algorithm to compos...",
+    title: "Lesson 15 animation: Add measurements using the standard algorithm to compos",
     context: "T: (Show Beaker A with 56 milliliters of water and Beaker B with 27 milliliters of water.) Beaker A has 56 milliliters of water, and Beaker B has 27 milliliters of water.",
     equation: "Measure and label in kg; keep the unit with the number",
-    teacherPrompt: "Notice the units in Problems 1(j) and 1(k). Both problems use both kilograms and grams. Did having two units in the problem change anything about the wa...",
+    teacherPrompt: "Notice the units in Problems 1(j) and 1(k). Both problems use both kilograms and grams. Did having two units in the problem change anything about the wa.",
     focus: [
       "addend",
       "measurement",
@@ -48,14 +48,14 @@ export const M2_LESSON15_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Notice the units in Problems 1(j) and 1(k). Both problems use both kilograms and grams. Did having two units in the problem change anything about the way you solved?",
-      teacherEditionBasis: "Problem Set (10 minutes) not assume that they need to use the standard algorithm to solve. Mental Students should do their personal best to complete the Problem math may be a more efficient strategy Set within the allotted 10 minutes. For some classes, it may be in some cases. Invite students to use appropriate to modify the assignment by specifying which the algorithm as a strategic tool, problems they work on first. Some problems do not specify a purposefully choosing it rather than method for solving. Students should solve these problems using defaul...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 15 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "measurement"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Find the sums below. Choose mental math or the algorithm. a. 46 mL + 5 mL b. 46 mL + 25 mL c. 46 mL + 125 mL d. 59 cm + 30 cm e. 509 cm + 83 cm f. 597 cm + 30 cm g. 29 g + 63 g h. 345 g + 294 g i. 480 g + 476 g j. 1 L 245 mL + 2 L 412 mL k. 2 kg 509 g + 3 kg 367 g units once. Nadine and Jen buy a small bag of popcorn and a pretzel at the movie theater. The pretzel weighs 63 grams more than the popcorn. What is the weight of the pretzel?? grams 44 grams 3. In math class, Jason and Andrea find the total liquid volume of water in their beakers. Jason says the total is 782 Student Liquid Volume milliliters, but Andrea says it is 792 milliliters. The amount of water in each beaker can be found in the table to the Jason 475 mL right. Show whose calculation is correct. Explain the mistake of the other student. Andrea 317 mL 4. It takes Greg 15 minutes to mow the front lawn. It takes him 17 more minutes to mow the back lawn than the front lawn. What is the total amount of time Gr...",
+      studentPrompt: "Use the official Module 2 Lesson 15 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 15 Problem Set.",
       visualModel: "measurement"
     },
@@ -63,7 +63,7 @@ export const M2_LESSON15_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) not assume that they need to use the standard algorithm to solve. Mental Students should do their personal best to complete the Problem math may be a more efficient strategy Set within the allotted 10 minutes. For some classes, it may be in some cases. Invite students to use appropriate to modify the assignment by specifying which the algorithm as a strategic tool, problems they work on first. Some problems do not specify a purposefully choosing it rather than method for solving. Students should solve these problems using defaul...",
+      studentPrompt: "Use the official Lesson 15 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 185-195.",
       visualModel: "measurement"
     },
@@ -79,7 +79,7 @@ export const M2_LESSON15_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (8 minutes) Part-Whole with Measurement Units 3.MD.2 (3 minutes) Round Three- and Four-Digit Numbers 3.NBT.1 (5 minutes) Part-Whole with Measurement Units (3 minutes) Materials: (S) Personal white board Note: This activity reviews part-whole thinking using measurement units. T: There are 100 centimeters in 1 meter. How many centimeters are in 2 meters? S: 200 centimeters. T: 3 meters? S: 300 centimeters. T: 8 meters? S: 800 centimeters. T: (Write 50 minutes + ____ minutes = 1 hour.) There are 60 minutes in 1 hour. On your personal white bo...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 15 objective: Add measurements using the standard algorithm to compose larger units once.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 185-195.",
       visualModel: "measurement"
     }
@@ -116,7 +116,7 @@ export const M2_LESSON15_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) not assume that they need to use the standard algorithm to solve. Mental Students should do their personal best to complete the Problem math may be a more efficient strategy Set within the allotted 10 minutes. For some classes, it may be in some cases. Invite students to use appropriate to modify the assignment by specifying which the algorithm as a strategic tool, problems they work on first. Some problems do not specify a purposefully choosing it rather than method for solving. Students should solve these problems using defaul..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 15 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -134,7 +134,7 @@ export const M2_LESSON15_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Find the sums below. Choose mental math or the algorithm. a. 46 mL + 5 mL b. 46 mL + 25 mL c. 46 mL + 125 mL d. 59 cm + 30 cm e. 509 cm + 83 cm f. 597 cm + 30 cm g. 29 g + 63 g h. 345 g + 294 g i. 480 g + 476 g j. 1 L 245 mL + 2 L 412 mL k. 2 kg 509 g + 3 kg 367 g units once. Nadine and Jen buy a small bag of popcorn and a pretzel at the movie theater. The pretzel weighs 63 grams more than the popcorn. What is the weight of the pretzel?? grams 44 grams 3. In math class, Jason and Andrea find the total liquid volume of water in their beakers. Jason says the total is 782 Student Liquid Volume milliliters, but Andrea says it is 792 milliliters. The amount of water in each beaker can be found in the table to the Jason 475 mL right. Show whose calculation is correct. Explain the mistake of the other student. Andrea 317 mL 4. It takes Greg 15 minutes to mow the front lawn. It takes him 17 more minutes to mow the back lawn than the front lawn. What is the total amount of time Gr..."
+        value: "Use the official Module 2 Lesson 15 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -148,7 +148,7 @@ export const M2_LESSON15_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) not assume that they need to use the standard algorithm to solve. Mental Students should do their personal best to complete the Problem math may be a more efficient strategy Set within the allotted 10 minutes. For some classes, it may be in some cases. Invite students to use appropriate to modify the assignment by specifying which the algorithm as a strategic tool, problems they work on first. Some problems do not specify a purposefully choosing it rather than method for solving. Students should solve these problems using defaul..."
+        value: "Use the official Lesson 15 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -176,7 +176,7 @@ export const M2_LESSON15_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (8 minutes) Part-Whole with Measurement Units 3.MD.2 (3 minutes) Round Three- and Four-Digit Numbers 3.NBT.1 (5 minutes) Part-Whole with Measurement Units (3 minutes) Materials: (S) Personal white board Note: This activity reviews part-whole thinking using measurement units. T: There are 100 centimeters in 1 meter. How many centimeters are in 2 meters? S: 200 centimeters. T: 3 meters? S: 300 centimeters. T: 8 meters? S: 800 centimeters. T: (Write 50 minutes + ____ minutes = 1 hour.) There are 60 minutes in 1 hour. On your personal white bo..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 15 objective: Add measurements using the standard algorithm to compose larger units once."
       },
       {
         label: "Workbook",

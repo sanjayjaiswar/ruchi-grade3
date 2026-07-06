@@ -698,6 +698,9 @@ const PROBLEM_METADATA: Record<string, Partial<ProblemSetCenteredProblem>> = {
 function visualType(prompt: string): ProblemSetBlankVisualType {
   const text = prompt.toLowerCase();
   if (text.includes('match') || text.includes('riddle')) return 'fact-match';
+  if (text.includes('chart') || text.includes('table') || text.includes('pattern') || text.includes('complete')) return 'equation-workspace';
+  if (text.includes('array')) return 'array-template';
+  if (text.includes('draw') || text.includes('model') || text.includes('diagram')) return 'tape-diagram';
   return 'equation-workspace';
 }
 
@@ -791,7 +794,7 @@ function createM3ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
   sections.push({
     kind: 'note',
     label: solved ? 'Teacher Edition answer' : 'Source workspace direction',
-    text: solved ? problem.solvedAnswer : problem.blankWorkspaceLabel ?? 'Complete the official Problem Set item with labels, equations, and answer sentence.'
+    text: solved ? problem.solvedAnswer : problem.blankWorkspaceLabel ?? sourceSpecificBlankWorkspaceLabel(problem)
   });
 
   return {
@@ -799,6 +802,23 @@ function createM3ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
     sourceNote,
     sections
   };
+}
+
+function sourceSpecificBlankWorkspaceLabel(problem: ProblemSetCenteredProblem): string {
+  const prompt = problem.sourcePrompt.replace(/\s+/g, ' ').trim();
+  const firstSentence = firstPromptSentence(prompt);
+  const equations = problem.blankEquations?.length
+    ? ` Equation blanks: ${problem.blankEquations.slice(0, 4).join('; ')}.`
+    : '';
+  return `Use this official Problem ${problem.number} workspace: ${firstSentence}${equations}`;
+}
+
+function firstPromptSentence(prompt: string): string {
+  const endIndexes = ['.', '?', '!']
+    .map((mark) => prompt.indexOf(mark))
+    .filter((index) => index >= 0);
+  const end = endIndexes.length ? Math.min(...endIndexes) + 1 : prompt.length;
+  return prompt.slice(0, end).trim();
 }
 
 function factRows(problem: ProblemSetCenteredProblem, solved: boolean): Array<{ left: string; right: string }> {
@@ -853,14 +873,15 @@ function makeM3Tape(problem: ProblemSetCenteredProblem, solved: boolean): Proble
 
 function makeM3WorkspaceTable(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'][number] {
   const equations = problem.equations?.length ? problem.equations : [problem.solvedAnswer];
+  const blankWork = problem.blankEquations?.length ? problem.blankEquations.join('; ') : blankEquationTemplates(equations).join('; ');
   return {
     kind: 'data-table',
     label: solved ? 'Solved problem workspace' : 'Blank problem workspace',
-    columns: ['Prompt', 'Work', 'Answer'],
+    columns: ['Official prompt structure', 'Work', 'Answer'],
     rows: [
       [
         problem.sourcePrompt,
-        solved ? equations.join('; ') : problem.blankEquations?.join('; ') || blankEquationTemplates(equations).join('; '),
+        solved ? equations.join('; ') : blankWork,
         solved ? problem.solvedAnswer : '____'
       ]
     ]
@@ -916,7 +937,7 @@ function makeProblem(lessonNumber: number, problemIndex: number): ProblemSetCent
     sourcePrompt: cleanSourcePrompt(sourceProblem.prompt, lessonNumber, sourceProblem.number),
     blankPrompts: ['Complete the official Problem Set prompt, labels, equation blanks, table entries, or answer sentence.'],
     blankEquations: blankEquationTemplates(sourceProblem.equations),
-    blankWorkspaceLabel: 'Use the official source reference for any printed table, array, picture, or workspace not redrawn here.',
+    blankWorkspaceLabel: `Use this official Problem ${sourceProblem.number} workspace: ${firstPromptSentence(cleanSourcePrompt(sourceProblem.prompt, lessonNumber, sourceProblem.number))}.`,
     blankVisualType: visualType(sourceProblem.prompt),
     solvedAnswer,
     equations: equationsFromAnswer(solvedAnswer, sourceProblem.equations),

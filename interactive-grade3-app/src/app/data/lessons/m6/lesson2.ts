@@ -8,9 +8,9 @@ export const M6_LESSON2_RUNTIME: LessonRuntimeConfig = {
   lessonAnimation: {
     kind: "graph",
     title: "Lesson 2 animation: Rotate tape diagrams vertically.",
-    context: "Rotate tape diagrams to make vertical tape diagrams with units of 2.",
+    context: "Use the Teacher Edition Lesson 2 vertical tape diagram model to connect the official data context, labels, scale or interval, and answer evidence.",
     equation: "Read the scale, then compare or calculate from the graph data",
-    teacherPrompt: "How does multiplication help you interpret the vertical tape diagrams on the Problem Set?",
+    teacherPrompt: "Use the official Lesson 2 vertical tape diagram: read the source quantities, preserve the scale or interval, and justify each answer from the display.",
     focus: [
       "gram",
       "tape diagram",
@@ -47,7 +47,7 @@ export const M6_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Rotate tape diagrams to make vertical tape diagrams with units of 2. T: Turn your personal white board so your tape diagrams are vertical like mine. (Model.) Erase the brackets and the labels for the number of units and the points. How are these vertical tape diagrams similar to the picture graphs you made yesterday? S: They both show us data. -> Each unit on the vertical tape diagrams represents 2 points.",
+      studentPrompt: "Use the Teacher Edition Lesson 2 vertical tape diagram model to connect the official data context, labels, scale or interval, and answer evidence.",
       teacherEditionBasis: "EurekaMath-Sources/Module_6/g3_m6_teacher_edition_v1_3_0.pdf, pages 22-32. Lesson 2 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "graph"
     },
@@ -56,14 +56,14 @@ export const M6_LESSON2_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "How does multiplication help you interpret the vertical tape diagrams on the Problem Set?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 2 Problem Set using the official Module 6 vertical tape diagram quantities, labels, units, scale, and comparison structures from the Teacher Edition.",
       visualModel: "graph"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Find the total number of stamps each student has. Draw tape diagrams with a unit size of 4 to show the number of stamps each student has. The first one has been done for you. Tanisha Each represents Dana 1 stamp. Raquel Anna Dana: 4 4 4 4 Tanisha: Raquel: Anna: Problem 2: Explain how you can create vertical tape diagrams to show this data. Problem 3: Complete the vertical tape diagrams below using the data from Problem 1. a. b. 4 8 4 8 Dana Tanisha Raquel Anna Dana Tanisha Raquel Anna c. What is a good title for the vertical tape diagrams? d. How many total units of 4 are in the vertical tape diagrams in Problem 3(a)? e. How many total units of 8 are in the vertical tape diagrams in Problem 3(b)? f. Compare your answers to parts (d) and (e). Why does the number of units change? g. Mattaeus looks at the vertical tape diagrams in Problem 3(b) and finds the total number of Anna's and Raquel's stamps by writing the equation 7 x 8 = 56. Explain his thinking.",
+      studentPrompt: "Use the official Module 6 Lesson 2 Problem Set prompts in order. Blank mode preserves the student-facing vertical tape diagram workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 6 student workbook, Lesson 2 Problem Set.",
       visualModel: "graph"
     },
@@ -71,7 +71,7 @@ export const M6_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 2 Problem Set workspace and source-backed vertical tape diagram visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 6 Teacher Edition, lesson pages 22-32.",
       visualModel: "graph"
     },
@@ -87,7 +87,7 @@ export const M6_LESSON2_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (9 minutes) Group Counting on a Vertical Number Line 3.OA.1 (3 minutes) Read Tape Diagrams 3.MD.4 (6 minutes) Group Counting on a Vertical Number Line (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. 80 T: (Project a vertical number line partitioned into intervals of 8, as shown. Cover the number line so that only the numbers 0 and 16 show.) What 64 is halfway between 0 and 16? S: 8. T: (Write 8 on the first hash mark.) 48 Continue for the remaining hashes so that the number line shows increments o...",
+      studentPrompt: "Debrief focus: connect the Problem Set vertical tape diagram displays, scales, labels, comparisons, and answers to the Lesson 2 objective: Rotate tape diagrams vertically.",
       teacherEditionBasis: "Module 6 Teacher Edition, lesson pages 22-32.",
       visualModel: "graph"
     }
@@ -114,7 +114,7 @@ export const M6_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Rotate tape diagrams to make vertical tape diagrams with units of 2. T: Turn your personal white board so your tape diagrams are vertical like mine. (Model.) Erase the brackets and the labels for the number of units and the points. How are these vertical tape diagrams similar to the picture graphs you made yesterday? S: They both show us data. -> Each unit on the vertical tape diagrams represents 2 points."
+        value: "Use the Teacher Edition Lesson 2 vertical tape diagram model to connect the official data context, labels, scale or interval, and answer evidence."
       },
       {
         label: "Workbook",
@@ -124,7 +124,7 @@ export const M6_LESSON2_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 2 Problem Set using the official Module 6 vertical tape diagram quantities, labels, units, scale, and comparison structures from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -142,7 +142,7 @@ export const M6_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Find the total number of stamps each student has. Draw tape diagrams with a unit size of 4 to show the number of stamps each student has. The first one has been done for you. Tanisha Each represents Dana 1 stamp. Raquel Anna Dana: 4 4 4 4 Tanisha: Raquel: Anna: Problem 2: Explain how you can create vertical tape diagrams to show this data. Problem 3: Complete the vertical tape diagrams below using the data from Problem 1. a. b. 4 8 4 8 Dana Tanisha Raquel Anna Dana Tanisha Raquel Anna c. What is a good title for the vertical tape diagrams? d. How many total units of 4 are in the vertical tape diagrams in Problem 3(a)? e. How many total units of 8 are in the vertical tape diagrams in Problem 3(b)? f. Compare your answers to parts (d) and (e). Why does the number of units change? g. Mattaeus looks at the vertical tape diagrams in Problem 3(b) and finds the total number of Anna's and Raquel's stamps by writing the equation 7 x 8 = 56. Explain his thinking."
+        value: "Use the official Module 6 Lesson 2 Problem Set prompts in order. Blank mode preserves the student-facing vertical tape diagram workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -156,7 +156,7 @@ export const M6_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 2 Problem Set workspace and source-backed vertical tape diagram visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -184,7 +184,7 @@ export const M6_LESSON2_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (9 minutes) Group Counting on a Vertical Number Line 3.OA.1 (3 minutes) Read Tape Diagrams 3.MD.4 (6 minutes) Group Counting on a Vertical Number Line (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. 80 T: (Project a vertical number line partitioned into intervals of 8, as shown. Cover the number line so that only the numbers 0 and 16 show.) What 64 is halfway between 0 and 16? S: 8. T: (Write 8 on the first hash mark.) 48 Continue for the remaining hashes so that the number line shows increments o..."
+        value: "Debrief focus: connect the Problem Set vertical tape diagram displays, scales, labels, comparisons, and answers to the Lesson 2 objective: Rotate tape diagrams vertically."
       },
       {
         label: "Workbook",

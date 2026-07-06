@@ -100,10 +100,10 @@ export const M7_TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     "6": "216 in"
   },
   "16": {
-    "1": "Variable design must satisfy the perimeter constraint. a. Explanation must justify the side lengths. b. Yes, if the redesigned shape preserves the required perimeter.",
-    "2": "No; explanation must compare the changed side lengths to the original perimeter.",
-    "3": "No; explanation must show the proposed dimensions do not preserve the required perimeter.",
-    "4": "No; explanation must use perimeter calculation from the source dimensions."
+    "1": "Answers will vary. Part a: explanations will vary. Part b: Yes; explanations will vary.",
+    "2": "No; explanations will vary.",
+    "3": "No; explanations will vary.",
+    "4": "No; explanations will vary."
   },
   "17": {
     "1": "a. Labeled 1 cm, 2 cm; P = (3 × 2 cm) + 1 cm + 3 cm + 4 cm = 14 cm b. Labeled 1 ft, 1 ft, 2 ft; P = (4 × 2 ft) + (3 × 1 ft) + 5 ft = 16 ft c. Labeled 2 m, 2 m, 4 m; P = (5 × 2 m) + (2 × 4 m) + 6 m = 24 m d. Labeled 2 yd, 1 yd, 2 yd; P = (7 × 2 yd) + 7 yd + 1 yd + 4 yd = 26 yd. Equivalent perimeter equations are acceptable when they use the same side lengths.",

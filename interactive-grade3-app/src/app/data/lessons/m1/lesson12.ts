@@ -68,7 +68,7 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
         body: "The Teacher Edition tells students to solve the Problem Set and use RDW when no method is specified. The Debrief asks students to compare Problems 1 and 2 and explain how quotient meaning affects the tape diagram.",
         teacherSource: "Teacher Edition Problem Set and Student Debrief, printed pages 162-163.",
         checkpoints: [
-          "Read the exact Teacher Edition problem first.",
+          "Use the official Problem Set prompt and quantities before drawing.",
           "Draw or label the model from the known quantities.",
           "Validate that the answer sentence names what the quotient represents."
         ]
@@ -285,7 +285,7 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Describe how you labeled the tape diagram in Problem 4. The number 2 appears in the problem; where do you see it in the diagram?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 12 Problem Set using the lesson models from the Teacher Edition.",
       visualModel: "array"
     },
     {
@@ -300,7 +300,7 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 12 Problem Set workspace and source-backed visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 1 Teacher Edition, lesson pages 162-173.",
       visualModel: "array"
     },
@@ -353,7 +353,7 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 12 Problem Set using the lesson models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -385,7 +385,7 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 12 Problem Set workspace and source-backed visuals to model and solve the student-facing problems."
       },
       {
         label: "Teacher Edition",

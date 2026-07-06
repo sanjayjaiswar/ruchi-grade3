@@ -49,14 +49,14 @@ export const M3_LESSON19_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "How do the disks in Problem 1 show the strategy we learned today?",
-      teacherEditionBasis: "Problem Set (10 minutes) Instead of having them complete the Problem Set, give English language Students should do their personal best to complete the Problem learners the option of writing a Set within the allotted 10 minutes. For some classes, it may be response to either of the first two appropriate to modify the assignment by specifying which Debrief questions. This chance to problems they work on first. Some problems do not specify a reflect and prepare their response in method for solving. Students should solve these problems using English may inc...",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 19 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition.",
       visualModel: "array"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use the disks to fill in the blanks in the equations. a. b. 4 x 3 ones = ____ ones 4 x 3 tens = ____ tens 4 x 3 = ____ 4 x 30 = ____ Problem 2: Use the chart to complete the blanks in the equations. tens ones tens ones a. 2 x 4 ones = ____ ones b. 2 x 4 tens = ____ tens 2 x 4 = ____ 2 x 40 = ____ tens ones tens ones c. 3 x 5 ones = ____ ones d. 3 x 5 tens = ____ tens 3 x 5 = ____ 3 x 50 = ____ tens ones tens ones e. 4 x 5 ones = ____ ones f. 4 x 5 tens = ____ tens 4 x 5 = ____ 4 x 50 = ____ Problem 3: Fill in the blank to make the equation true. a. ____ = 7 x 2 b. ____ tens = 7 tens x 2 c. ____ = 8 x 3 d. ____ tens = 8 tens x 3 e. ____ = 60 x 5 f. ____ = 4 x 80 g. 7 x 40 = ____ h. 50 x 8 = ____",
+      studentPrompt: "Use the official Module 3 Lesson 19 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 3 student workbook, Lesson 19 Problem Set.",
       visualModel: "array"
     },
@@ -64,7 +64,7 @@ export const M3_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Instead of having them complete the Problem Set, give English language Students should do their personal best to complete the Problem learners the option of writing a Set within the allotted 10 minutes. For some classes, it may be response to either of the first two appropriate to modify the assignment by specifying which Debrief questions. This chance to problems they work on first. Some problems do not specify a reflect and prepare their response in method for solving. Students should solve these problems using English may inc...",
+      studentPrompt: "Use the official Lesson 19 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 238-247.",
       visualModel: "array"
     },
@@ -80,7 +80,7 @@ export const M3_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) NOTES ON Total Time (60 minutes) TIMING: The Application Problem comes after Fluency Practice (15 minutes) the Concept Development in this lesson. The 15 minutes allotted for the Group Counting 3.OA.1 (4 minutes) Application Problem includes 5 minutes for the Application Problem and Multiply with 10 3.NBT.3 (3 minutes) 10 minutes for the Problem Set. Multiply by Different Units 3.NBT.3 (4 minutes) Exchange Place Value Disks 3.NBT.3 (4 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. These counts review the mult...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 19 objective: Multiply by multiples of 10 using the place value chart.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 238-247.",
       visualModel: "array"
     }
@@ -117,7 +117,7 @@ export const M3_LESSON19_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Instead of having them complete the Problem Set, give English language Students should do their personal best to complete the Problem learners the option of writing a Set within the allotted 10 minutes. For some classes, it may be response to either of the first two appropriate to modify the assignment by specifying which Debrief questions. This chance to problems they work on first. Some problems do not specify a reflect and prepare their response in method for solving. Students should solve these problems using English may inc..."
+        value: "Problem Set (10 minutes): Students complete the Lesson 19 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -135,7 +135,7 @@ export const M3_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Use the disks to fill in the blanks in the equations. a. b. 4 x 3 ones = ____ ones 4 x 3 tens = ____ tens 4 x 3 = ____ 4 x 30 = ____ Problem 2: Use the chart to complete the blanks in the equations. tens ones tens ones a. 2 x 4 ones = ____ ones b. 2 x 4 tens = ____ tens 2 x 4 = ____ 2 x 40 = ____ tens ones tens ones c. 3 x 5 ones = ____ ones d. 3 x 5 tens = ____ tens 3 x 5 = ____ 3 x 50 = ____ tens ones tens ones e. 4 x 5 ones = ____ ones f. 4 x 5 tens = ____ tens 4 x 5 = ____ 4 x 50 = ____ Problem 3: Fill in the blank to make the equation true. a. ____ = 7 x 2 b. ____ tens = 7 tens x 2 c. ____ = 8 x 3 d. ____ tens = 8 tens x 3 e. ____ = 60 x 5 f. ____ = 4 x 80 g. 7 x 40 = ____ h. 50 x 8 = ____"
+        value: "Use the official Module 3 Lesson 19 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -149,7 +149,7 @@ export const M3_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Instead of having them complete the Problem Set, give English language Students should do their personal best to complete the Problem learners the option of writing a Set within the allotted 10 minutes. For some classes, it may be response to either of the first two appropriate to modify the assignment by specifying which Debrief questions. This chance to problems they work on first. Some problems do not specify a reflect and prepare their response in method for solving. Students should solve these problems using English may inc..."
+        value: "Use the official Lesson 19 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -177,7 +177,7 @@ export const M3_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) NOTES ON Total Time (60 minutes) TIMING: The Application Problem comes after Fluency Practice (15 minutes) the Concept Development in this lesson. The 15 minutes allotted for the Group Counting 3.OA.1 (4 minutes) Application Problem includes 5 minutes for the Application Problem and Multiply with 10 3.NBT.3 (3 minutes) 10 minutes for the Problem Set. Multiply by Different Units 3.NBT.3 (4 minutes) Exchange Place Value Disks 3.NBT.3 (4 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. These counts review the mult..."
+        value: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 19 objective: Multiply by multiples of 10 using the place value chart."
       },
       {
         label: "Workbook",

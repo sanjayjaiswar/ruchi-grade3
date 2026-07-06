@@ -347,6 +347,75 @@
             </div>
           </section>
 
+          <section
+            class="lesson19-concept-review"
+            *ngIf="module.id === 'm1' && lesson.lessonNumber === 19"
+            aria-label="Lesson 19 full concept review">
+            <div class="lesson16-review-head">
+              <span class="eyebrow">Full lesson review</span>
+              <h3>Decompose the dividend, keep the divisor fixed</h3>
+              <p>The Teacher Edition work is division, not multiplication. Each visual starts with a total, splits the dividend into friendly parts, divides both parts by the same divisor, then adds the partial quotients.</p>
+            </div>
+
+            <div class="lesson19-source-walkthrough">
+              <article>
+                <div>
+                  <strong>Problem 1 answer-key arrays</strong>
+                  <p>These four panels mirror the Teacher Edition answer key: top part, bottom part, partial quotients, then the final quotient.</p>
+                </div>
+                <div class="lesson19-array-grid">
+                  <article *ngFor="let part of lesson19Problem1Parts()">
+                    <header>
+                      <b>{{ part.label }}. {{ part.total }} divided by {{ part.divisor }} = {{ part.quotient }}</b>
+                      <span>{{ part.topDividend }} divided by {{ part.divisor }} = {{ part.topQuotient }}</span>
+                      <span>{{ part.bottomDividend }} divided by {{ part.divisor }} = {{ part.bottomQuotient }}</span>
+                    </header>
+                    <div class="lesson19-dot-array" [style.gridTemplateColumns]="'repeat(' + part.columns + ', 18px)'">
+                      <span
+                        *ngFor="let cell of lesson19ArrayCells(part); let cellIndex = index"
+                        [class.is-split-row]="lesson19IsSplitCell(part, cellIndex)"></span>
+                    </div>
+                    <footer>{{ part.topQuotient }} + {{ part.bottomQuotient }} = {{ part.quotient }}</footer>
+                  </article>
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <strong>Problem 2 source match</strong>
+                  <p>The answer key is positional: first bucket to fourth ball, second to first, third to second, fourth to third. The match is justified by equal quotients.</p>
+                </div>
+                <div class="lesson19-match-strip">
+                  <div *ngFor="let match of lesson19Problem2Matches()">
+                    <b>{{ match.bucket }}</b>
+                    <i></i>
+                    <span>{{ match.ball }}</span>
+                    <em>{{ match.order }}; quotient {{ match.answer }}</em>
+                  </div>
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <strong>Problem 3 Nell array</strong>
+                  <p>The answer key says 24 divided by 2 is broken into two smaller facts: 12 divided by 2 and 12 divided by 2.</p>
+                </div>
+                <div class="lesson19-nell-model">
+                  <div class="lesson19-dot-array is-nell">
+                    <span
+                      *ngFor="let cell of lesson19NellCells(); let cellIndex = index"
+                      [class.is-split-row]="lesson19NellIsSplitCell(cellIndex)"></span>
+                  </div>
+                  <div>
+                    <strong>12 divided by 2 = 6</strong>
+                    <strong>12 divided by 2 = 6</strong>
+                    <b>6 + 6 = 12</b>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
           <section class="problem-source-pages is-teacher-source" *ngIf="conceptSourcePageImages(problemLesson).length" [attr.aria-label]="'Official Teacher Edition Problem Set pages for Module ' + module.number + ' Lesson ' + lesson.lessonNumber">
             <div class="source-pages-heading">
               <strong>Official Teacher Edition Problem Set pages</strong>
@@ -543,7 +612,7 @@
                           <span>4</span>
                           <span>4</span>
                           <span>4</span>
-                          <span>...</span>
+                          <span>4</span>
                           <span>?</span>
                         </div>
                         <small>4 muffins in each box. How many boxes?</small>
@@ -1506,6 +1575,31 @@
             </article>
           </section>
 
+          <section
+            class="lesson19-summary-source"
+            *ngIf="module.id === 'm1' && lesson.lessonNumber === 19"
+            aria-label="Lesson 19 source summary">
+            <article>
+              <strong>Problem 1 answer-key blanks</strong>
+              <div>
+                <span>a. 12; 10; 2; 2</span>
+                <span>b. 5; 1; 1; 5</span>
+                <span>c. 7; 5; 8; 2; 8; 5, 2, 7</span>
+                <span>d. 8; 20, 5; 12, 3; 20, 12, 5, 3, 8</span>
+              </div>
+            </article>
+            <article>
+              <strong>Problem 2 answer-key matches</strong>
+              <div>
+                <span *ngFor="let match of lesson19Problem2Matches()">{{ match.order }}: {{ match.bucket }} -> {{ match.ball }}</span>
+              </div>
+            </article>
+            <article>
+              <strong>Problem 3 source explanation</strong>
+              <p>24 divided by 2 is broken into two smaller facts: 12 divided by 2 and 12 divided by 2; the two quotients are added to answer the larger fact.</p>
+            </article>
+          </section>
+
           <section class="summary-check-grid" [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' validation checklist'">
             <article>
               <strong>{{ problemLessonUsesTeacherActivity(problemLesson) ? '1. Use the Teacher Edition activity' : hasProblemSetSourcePages(problemLesson) ? '1. Use the Teacher Edition problem set' : '1. Use the official source prompt' }}</strong>
@@ -1532,7 +1626,8 @@
                 </ng-container>
                 <ng-template #sourcePageSummaryEvidence>
                   <strong>Official Teacher Edition source</strong>
-                  <p>Use the Problem Set page in Blank mode and the Answer Key page in Solved mode.</p>
+                  <p>{{ problem.solvedAnswer }}</p>
+                  <p>{{ problem.quotientMeaning }}</p>
                 </ng-template>
               </article>
             </div>

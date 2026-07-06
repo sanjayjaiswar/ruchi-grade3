@@ -8,7 +8,7 @@ export const M2_LESSON3_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "clock",
-    title: "Lesson 3 animation: Count by fives and ones on the number line as a strateg...",
+    title: "Lesson 3 animation: Count by fives and ones on the number line as a strateg",
     context: "T: Use your ruler to draw a 12-centimeter line on your personal white board.",
     equation: "12 sec start -> 12 sec elapsed -> 60 sec end",
     teacherPrompt: "Look at Problem 1. Talk to a partner: How is the number line similar to the analog clock? How is it different?",
@@ -48,14 +48,14 @@ export const M2_LESSON3_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Look at Problem 1. Talk to a partner: How is the number line similar to the analog clock? How is it different?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 3 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "clock"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Plot a point on the number line for the times shown on the clocks below. Then, draw a line to match the clocks to the points. 12 1 12 12 11 11 1 11 1 10 2 10 2 10 2 9 3 9 3 9 3 8 4 8 4 8 4 7 5 7 5 7 5 6 6 6 7:00 p.m. 8:00 p.m. 0 10 20 30 40 50 60 Problem 2: Jessie woke up this morning at 6:48 a.m. Problem 3: Mrs. Barnes starts teaching math at Draw hands on the clock below to show 8:23 a.m. Draw hands on the clock below what time Jessie woke up. to show what time Mrs. Barnes starts teaching math. 11 12 12 1 11 1 10 2 10 2 9 3 9 3 8 4 8 4 7 5 7 5 6 6 the nearest minute on the clock. The clock shows what time Rebecca finishes her homework. What time does Rebecca finish her homework? 11 12 10 2 9 3 8 4 7 5 Rebecca finishes her homework at ____. 5. The clock below shows what time Mason's mom drops him off for practice. a. What time does Mason's mom drop him off? 11 12 10 2 9 3 8 4 7 5 b. Mason's coach arrived 11 minutes before Mason. What time did Mason's coach arrive? the ne...",
+      studentPrompt: "Use the official Module 2 Lesson 3 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 3 Problem Set.",
       visualModel: "clock"
     },
@@ -63,7 +63,7 @@ export const M2_LESSON3_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 3 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 37-49.",
       visualModel: "clock"
     },
@@ -79,7 +79,7 @@ export const M2_LESSON3_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Tell Time on the Clock 2.MD.7 (3 minutes) Decompose 60 Minutes 3.MD.1 (6 minutes) Minute Counting 3.MD.1 (3 minutes) Group Counting 3.OA.1 (3 minutes) Tell Time on the Clock (3 minutes) Materials: (T) Analog clock for demonstration (S) Personal white board Note: This activity reviews the Grade 2 standard of telling and writing time to the nearest 5 minutes. It reviews Lesson 2 and prepares students to count by 5 minutes and some ones in this lesson. T: (Show an analog demonstration clock.) Start at 12 and count by 5 minute...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 3 objective: Count by fives and ones on the number line as a strategy to tell time to the nearest minute on the clock.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 37-49.",
       visualModel: "clock"
     }
@@ -116,7 +116,7 @@ export const M2_LESSON3_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 3 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -134,7 +134,7 @@ export const M2_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Plot a point on the number line for the times shown on the clocks below. Then, draw a line to match the clocks to the points. 12 1 12 12 11 11 1 11 1 10 2 10 2 10 2 9 3 9 3 9 3 8 4 8 4 8 4 7 5 7 5 7 5 6 6 6 7:00 p.m. 8:00 p.m. 0 10 20 30 40 50 60 Problem 2: Jessie woke up this morning at 6:48 a.m. Problem 3: Mrs. Barnes starts teaching math at Draw hands on the clock below to show 8:23 a.m. Draw hands on the clock below what time Jessie woke up. to show what time Mrs. Barnes starts teaching math. 11 12 12 1 11 1 10 2 10 2 9 3 9 3 8 4 8 4 7 5 7 5 6 6 the nearest minute on the clock. The clock shows what time Rebecca finishes her homework. What time does Rebecca finish her homework? 11 12 10 2 9 3 8 4 7 5 Rebecca finishes her homework at ____. 5. The clock below shows what time Mason's mom drops him off for practice. a. What time does Mason's mom drop him off? 11 12 10 2 9 3 8 4 7 5 b. Mason's coach arrived 11 minutes before Mason. What time did Mason's coach arrive? the ne..."
+        value: "Use the official Module 2 Lesson 3 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -148,7 +148,7 @@ export const M2_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 3 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -176,7 +176,7 @@ export const M2_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Tell Time on the Clock 2.MD.7 (3 minutes) Decompose 60 Minutes 3.MD.1 (6 minutes) Minute Counting 3.MD.1 (3 minutes) Group Counting 3.OA.1 (3 minutes) Tell Time on the Clock (3 minutes) Materials: (T) Analog clock for demonstration (S) Personal white board Note: This activity reviews the Grade 2 standard of telling and writing time to the nearest 5 minutes. It reviews Lesson 2 and prepares students to count by 5 minutes and some ones in this lesson. T: (Show an analog demonstration clock.) Start at 12 and count by 5 minute..."
+        value: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 3 objective: Count by fives and ones on the number line as a strategy to tell time to the nearest minute on the clock."
       },
       {
         label: "Workbook",

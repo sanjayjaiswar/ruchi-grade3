@@ -9,8 +9,8 @@ export const M3_LESSON20_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 20 animation: Use place value strategies and the associative property...",
-    context: "S: 4. to solve, as well as with the numbers T: Let's rewrite our equation. (Write (10 x 4) x 2.) they choose. Example prompts are Why do you think I put 10 x 4 in parentheses? given...",
+    title: "Lesson 20 animation: Use place value strategies and the associative property n x (m x 10) = (n x m) x 10 to multiply by multiples of 10.",
+    context: "Use the Lesson 20 source model to connect the official Problem Set structure to use place value strategies and the associative property n x (m x 10) = (n x m) x 10 to multiply by multiples of 10.",
     equation: "10 x 4 = (5 x 4) + (5 x 4)",
     teacherPrompt: "In Problem 1, which grouping is easier for you to solve? Why?",
     focus: [
@@ -53,14 +53,14 @@ export const M3_LESSON20_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "In Problem 1, which grouping is easier for you to solve? Why?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 20 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition.",
       visualModel: "array"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Use the chart to complete the equations. Then, solve. The first one has been done for you. tens ones tens ones x 10 x 10 a. (2 x 4) x 10 b. 2 x (4 x 10) = (8 ones) x 10 = 2 x (4 tens) = ____ = ____ tens ones tens ones x 10 x 10 c. (3 x 5) x 10 d. 3 x (5 x 10) = (____ ones) x 10 = 3 x (____ tens) = ____ = ____ n x (m x 10) = (n x m) x 10 (where n and m are less than 10) to multiply by multiples of 10. Problem 2: Place parentheses in the equations to find the related fact. Then, solve. The first one has been done for you. 2 x 20 = 2 x (2 x 10) 2 x 30 = 2 x (3 x 10) = (2 x 2) x 10 = (2 x 3) x 10 = 4 x 10 = ____ x 10 = 40 = ____ 3 x 30 = 3 x (3 x 10) 2 x 50 = 2 x 5 x 10 = 3 x 3 x 10 = 2 x 5 x 10 = ____ x 10 = ____ x 10 = ____ = ____ Problem 3: Gabriella solves 20 x 4 by thinking about 10 x 8. Explain her strategy. n x (m x 10) = (n x m) x 10 (where n and m are less than 10) to multiply by multiples of 10.",
+      studentPrompt: "Use the official Module 3 Lesson 20 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 3 student workbook, Lesson 20 Problem Set.",
       visualModel: "array"
     },
@@ -68,7 +68,7 @@ export const M3_LESSON20_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 20 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 248-257.",
       visualModel: "array"
     },
@@ -84,7 +84,7 @@ export const M3_LESSON20_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Group Counting 3.OA.1 (3 minutes) Multiply by Different Units 3.NBT.3 (6 minutes) Write in the Parentheses 3.OA.7 (6 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. The counts in these lessons review the multiplication taught previously in the module. Direct students to count forward and backward, occasionally changing the direction of the count: Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 Multiply by Different Units (6 minutes) Materials: (S) P...",
+      studentPrompt: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 20 objective: Use place value strategies and the associative property n x (m x 10) = (n x m) x 10 to multiply by multiples of 10.",
       teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 248-257.",
       visualModel: "array"
     }
@@ -121,7 +121,7 @@ export const M3_LESSON20_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 20 Problem Set using the official Module 3 multiplication, division, pattern, and word-problem models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -139,7 +139,7 @@ export const M3_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Use the chart to complete the equations. Then, solve. The first one has been done for you. tens ones tens ones x 10 x 10 a. (2 x 4) x 10 b. 2 x (4 x 10) = (8 ones) x 10 = 2 x (4 tens) = ____ = ____ tens ones tens ones x 10 x 10 c. (3 x 5) x 10 d. 3 x (5 x 10) = (____ ones) x 10 = 3 x (____ tens) = ____ = ____ n x (m x 10) = (n x m) x 10 (where n and m are less than 10) to multiply by multiples of 10. Problem 2: Place parentheses in the equations to find the related fact. Then, solve. The first one has been done for you. 2 x 20 = 2 x (2 x 10) 2 x 30 = 2 x (3 x 10) = (2 x 2) x 10 = (2 x 3) x 10 = 4 x 10 = ____ x 10 = 40 = ____ 3 x 30 = 3 x (3 x 10) 2 x 50 = 2 x 5 x 10 = 3 x 3 x 10 = 2 x 5 x 10 = ____ x 10 = ____ x 10 = ____ = ____ Problem 3: Gabriella solves 20 x 4 by thinking about 10 x 8. Explain her strategy. n x (m x 10) = (n x m) x 10 (where n and m are less than 10) to multiply by multiples of 10."
+        value: "Use the official Module 3 Lesson 20 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -153,7 +153,7 @@ export const M3_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 20 Problem Set workspace and source-backed arithmetic visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -181,7 +181,7 @@ export const M3_LESSON20_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (15 minutes) Group Counting 3.OA.1 (3 minutes) Multiply by Different Units 3.NBT.3 (6 minutes) Write in the Parentheses 3.OA.7 (6 minutes) Group Counting (3 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. The counts in these lessons review the multiplication taught previously in the module. Direct students to count forward and backward, occasionally changing the direction of the count: Sixes to 60 Sevens to 70 Eights to 80 Nines to 90 Multiply by Different Units (6 minutes) Materials: (S) P..."
+        value: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 20 objective: Use place value strategies and the associative property n x (m x 10) = (n x m) x 10 to multiply by multiples of 10."
       },
       {
         label: "Workbook",

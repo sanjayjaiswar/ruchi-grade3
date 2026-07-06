@@ -9,12 +9,14 @@
       <strong *ngIf="array.label">{{ array.label }}</strong>
       <div class="visual-array" [ngClass]="'is-' + array.item" [style.gridTemplateColumns]="arrayColumns(array)">
         <span
-          *ngFor="let cell of range(array.rows * array.columns)"
+          *ngFor="let cell of range(array.rows * array.columns); let cellIndex = index"
+          [class.is-after-split]="arrayCellIsAfterSplit(array, cellIndex)"
           [class.has-placeholder]="array.placeholder"
           [attr.aria-hidden]="!array.placeholder">
           {{ array.placeholder || '' }}
         </span>
       </div>
+      <small *ngIf="array.caption" class="visual-array-caption">{{ array.caption }}</small>
     </ng-container>
 
     <ng-container *ngIf="relatedFactsSection(section) as facts">

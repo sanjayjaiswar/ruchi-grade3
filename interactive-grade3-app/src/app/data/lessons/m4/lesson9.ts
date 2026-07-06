@@ -8,9 +8,9 @@ export const M4_LESSON9_RUNTIME: LessonRuntimeConfig = {
   lessonAnimation: {
     kind: "area-model",
     title: "Lesson 9 animation: Analyze different rectangles and reason about their area.",
-    context: "Problems 1 and 2 in the Problem Set T: How can we cut this centimeter grid to get 2 equal we can make 2 equal rectangles.",
+    context: "Use the Teacher Edition Lesson 9 area model to connect the official figure, side lengths, unit squares, and area equation.",
     equation: "3 rows x 2 columns = 6 square units",
-    teacherPrompt: "Talk to a partner: In Problem 1(a), how does knowing the side lengths of the grid help you find the side lengths of the small rectangles without counting?",
+    teacherPrompt: "How does the official area model show analyze different rectangles and reason about their area.?",
     focus: [
       "distributive property",
       "area",
@@ -37,7 +37,7 @@ export const M4_LESSON9_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Problems 1 and 2 in the Problem Set T: How can we cut this centimeter grid to get 2 equal we can make 2 equal rectangles. challenge for some learners. Precision T: Do that now, and then answer Problem 1(a). is important to this lesson. Please try the following tips: Provide centimeter grids on cardstock or thicker paper. Darken and thicken the cutting lines.",
+      studentPrompt: "Use the Teacher Edition Lesson 9 area model to connect the official figure, side lengths, unit squares, and area equation.",
       teacherEditionBasis: "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf, pages 116-126. Lesson 9 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "area-model"
     },
@@ -46,14 +46,14 @@ export const M4_LESSON9_RUNTIME: LessonRuntimeConfig = {
       title: "Teacher move from source",
       shortTitle: "Meaning",
       studentPrompt: "Talk to a partner: In Problem 1(a), how does knowing the side lengths of the grid help you find the side lengths of the small rectangles without counting?",
-      teacherEditionBasis: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 9 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition.",
       visualModel: "area-model"
     },
     {
       id: "source-picture",
       title: "Student workbook Problem Set",
       shortTitle: "Picture",
-      studentPrompt: "Problem 1: Cut the grid into 2 equal rectangles. a. Draw and label the side lengths of the 2 rectangles. b. Write an equation to find the area of 1 of the rectangles. c. Write an equation to show the total area of the 2 rectangles. Problem 2: Place your 2 equal rectangles side by side to create a new, longer rectangle. a. Draw an area model to show the new rectangle. Label the side lengths. b. Find the total area of the longer rectangle. Furaha and Rahema use square tiles to make the rectangles shown below. Furaha's Rectangle Rahema's Rectangle a. Label the side lengths on the rectangles above, and find the area of each rectangle. b. Furaha pushes his rectangle next to Rahema's rectangle to form a new, longer rectangle. Draw an area model to show the new rectangle. Label the side lengths. c. Rahema says the area of the new, longer rectangle is 52 square units. Is she right? Explain your answer. 4. Kiera says she can find the area of the long rectangle below by adding the areas of Re...",
+      studentPrompt: "Use the official Module 4 Lesson 9 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 4 student workbook, Lesson 9 Problem Set.",
       visualModel: "area-model"
     },
@@ -61,7 +61,7 @@ export const M4_LESSON9_RUNTIME: LessonRuntimeConfig = {
       id: "source-draw",
       title: "Teacher edition reference",
       shortTitle: "Draw",
-      studentPrompt: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems.",
+      studentPrompt: "Use the official Lesson 9 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 116-126.",
       visualModel: "area-model"
     },
@@ -77,7 +77,7 @@ export const M4_LESSON9_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (4 minutes) Find the Area 3.MD.7 (4 minutes) Decompose the Multiplication Equation 3.OA.5 (4 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Instruct students to count forward and backward, occasionally changing the direction of the count. Fours to 40 Sevens to 70 Eights to 80 Nines to 90 Find the Area (4 minutes) Note: This fluency activity reviews strategies for finding the area of a rectangle. T: (Project a rectangular array w...",
+      studentPrompt: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 9 objective: Analyze different rectangles and reason about their area.",
       teacherEditionBasis: "Module 4 Teacher Edition, lesson pages 116-126.",
       visualModel: "area-model"
     }
@@ -104,7 +104,7 @@ export const M4_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problems 1 and 2 in the Problem Set T: How can we cut this centimeter grid to get 2 equal we can make 2 equal rectangles. challenge for some learners. Precision T: Do that now, and then answer Problem 1(a). is important to this lesson. Please try the following tips: Provide centimeter grids on cardstock or thicker paper. Darken and thicken the cutting lines."
+        value: "Use the Teacher Edition Lesson 9 area model to connect the official figure, side lengths, unit squares, and area equation."
       },
       {
         label: "Workbook",
@@ -114,7 +114,7 @@ export const M4_LESSON9_RUNTIME: LessonRuntimeConfig = {
     "source-meaning": [
       {
         label: "Source",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Problem Set (10 minutes): Students complete the Lesson 9 Problem Set using the official Module 4 area, unit-square, rectangle, decomposition, and floor-plan models from the Teacher Edition."
       },
       {
         label: "Source text",
@@ -132,7 +132,7 @@ export const M4_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem 1: Cut the grid into 2 equal rectangles. a. Draw and label the side lengths of the 2 rectangles. b. Write an equation to find the area of 1 of the rectangles. c. Write an equation to show the total area of the 2 rectangles. Problem 2: Place your 2 equal rectangles side by side to create a new, longer rectangle. a. Draw an area model to show the new rectangle. Label the side lengths. b. Find the total area of the longer rectangle. Furaha and Rahema use square tiles to make the rectangles shown below. Furaha's Rectangle Rahema's Rectangle a. Label the side lengths on the rectangles above, and find the area of each rectangle. b. Furaha pushes his rectangle next to Rahema's rectangle to form a new, longer rectangle. Draw an area model to show the new rectangle. Label the side lengths. c. Rahema says the area of the new, longer rectangle is 52 square units. Is she right? Explain your answer. 4. Kiera says she can find the area of the long rectangle below by adding the areas of Re..."
+        value: "Use the official Module 4 Lesson 9 Problem Set prompts in order. Blank mode preserves the student-facing area figure/workspace; Solved mode applies the Teacher Edition answer/check evidence."
       },
       {
         label: "Workbook",
@@ -146,7 +146,7 @@ export const M4_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem Set (10 minutes) Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems they work on first. Some problems do not specify a method for solving. Students should solve these problems using the RDW approach used for Application Problems."
+        value: "Use the official Lesson 9 Problem Set workspace and source-backed area visuals to model and solve the student-facing problems."
       },
       {
         label: "Workbook",
@@ -174,7 +174,7 @@ export const M4_LESSON9_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Student Debrief (10 minutes) Total Time (60 minutes) Fluency Practice (12 minutes) Group Counting 3.OA.1 (4 minutes) Find the Area 3.MD.7 (4 minutes) Decompose the Multiplication Equation 3.OA.5 (4 minutes) Group Counting (4 minutes) Note: Group counting reviews interpreting multiplication as repeated addition. Instruct students to count forward and backward, occasionally changing the direction of the count. Fours to 40 Sevens to 70 Eights to 80 Nines to 90 Find the Area (4 minutes) Note: This fluency activity reviews strategies for finding the area of a rectangle. T: (Project a rectangular array w..."
+        value: "Debrief focus: connect the Problem Set area models, units, equations, and answers to the Lesson 9 objective: Analyze different rectangles and reason about their area."
       },
       {
         label: "Workbook",
