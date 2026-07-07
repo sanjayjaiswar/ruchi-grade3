@@ -88,6 +88,14 @@ export class TimeBoardComponent implements AfterViewChecked {
     return this.mode === 'solved' ? points : points.filter((point) => point.open);
   }
 
+  hasSourceItems(section: ProblemVisualTimeLineSection): boolean {
+    return Boolean(section.sourceItems?.length);
+  }
+
+  showPointDetail(section: ProblemVisualTimeLineSection): boolean {
+    return section.showPointDetails !== false;
+  }
+
   jumpLeft(jump: ProblemVisualTimeLineJump, section: ProblemVisualTimeLineSection): number {
     return this.pointX(Math.min(jump.fromMinute, jump.toMinute), section);
   }
@@ -152,6 +160,9 @@ export class TimeBoardComponent implements AfterViewChecked {
   }
 
   private itemX(item: ProblemVisualTimeLineSourceItem, index: number, count: number, section: ProblemVisualTimeLineSection, minute?: number): number {
+    if (item.sourceX !== undefined) {
+      return Math.max(0, Math.min(100, item.sourceX));
+    }
     if (this.mode === 'solved' && minute !== undefined && item.status !== 'unmatched') {
       return this.pointX(minute, section);
     }
@@ -164,7 +175,8 @@ export class TimeBoardComponent implements AfterViewChecked {
   private sourceStatus(item: ProblemVisualTimeLineSourceItem): string {
     const sourceOrder = item.detail?.replace(/\s*-\s*\d{1,2}:\d{2}.*$/i, '').trim();
     if (item.status === 'unmatched') {
-      return this.mode === 'solved' ? 'not matched' : sourceOrder || 'source clock';
+      const unmatchedTime = item.detail?.match(/\b\d{1,2}:\d{2}\b/);
+      return this.mode === 'solved' ? (unmatchedTime ? `${unmatchedTime[0]} not matched` : 'not matched') : sourceOrder || 'source clock';
     }
     if (item.status === 'provided') {
       return sourceOrder || 'provided example';

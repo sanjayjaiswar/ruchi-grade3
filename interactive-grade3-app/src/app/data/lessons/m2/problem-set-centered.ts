@@ -47,6 +47,9 @@ type StopwatchSentenceSeed = {
   blankSentence: string;
   sampleResponse: string;
   sampleWork?: string[];
+  sourceWorkLabel?: string;
+  sourceWorkLines?: string[];
+  sourceWorkColumns?: number;
   blankWorkspaceLabel: string;
   solvedAnswer: string;
   meaning: string;
@@ -61,6 +64,9 @@ type StopwatchTableSeed = {
   columns: string[];
   blankRows: string[][];
   solvedRows: string[][];
+  totalLabel?: string;
+  totalBlank?: string;
+  totalSample?: string;
   blankNote: string;
   solvedNote: string;
   blankWorkspaceLabel: string;
@@ -87,6 +93,7 @@ type TimeLineJumpSeed = {
 type TimeLineSourceItemSeed = {
   label: string;
   minute?: number;
+  sourceX?: number;
   detail?: string;
   kind?: 'digital' | 'analog' | 'note';
   status?: 'matched' | 'unmatched' | 'provided';
@@ -103,6 +110,8 @@ type TimeLineProblemSeed = {
   sourceItems?: TimeLineSourceItemSeed[];
   points: TimeLinePointSeed[];
   jumps?: TimeLineJumpSeed[];
+  showPointDetails?: boolean;
+  directions?: string[];
   blankNote: string;
   solvedNote: string;
   solvedAnswer: string;
@@ -173,7 +182,7 @@ const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     1: 'a. First and last tick marks labeled as 7:00 a.m. and 8:00 a.m.; b. each interval labeled by fives up to 8:00 a.m.; c. D at 7:10 a.m.; d. E at 7:35 a.m.; e. T at 7:40 a.m.; f. L at 7:45 a.m.; g. W at 7:55 a.m.',
     2: 'Every 5 minutes labeled below the number line. First clock not matched; second clock 5:50 p.m.; third clock 5:15 p.m.; fourth clock not matched; fifth clock 5:40 p.m.; last clock 5:25 p.m.',
     3: 'First and last tick marks labeled 5:00 p.m. and 6:00 p.m.; each interval labeled by fives up to 6:00 p.m.; 5:45 p.m. located and plotted on the number line.',
-    4: 'Answers will vary. A complete explanation distinguishes a.m. from p.m. and uses the story context to decide whether Tanner meant a morning or night meeting time.'
+    4: 'Answers will vary. A complete explanation says Tanner is correct because 11:25 p.m. is a night time that comes after 11:20 a.m., a morning time.'
   },
   3: {
     1: 'The times shown on the clocks are plotted correctly on the number line. First clock 7:17 p.m.; second clock 7:03 p.m.; third clock 7:55 p.m.; fourth clock 7:41 p.m.; fifth clock answer provided.',
@@ -307,10 +316,10 @@ const TEACHER_PROBLEM_PROMPTS: Record<number, Record<number, string>> = {
     6: '100 meter relay: Use a stopwatch to measure and record your team\'s times, then find the total time.'
   },
   2: {
-    1: 'Follow the directions to label the number line: Ingrid gets ready for school between 7:00 a.m. and 8:00 a.m.; label the endpoints, label each 5-minute interval, and plot D at 7:10, E at 7:35, T at 7:40, L at 7:45, and W at 7:55.',
+    1: 'Follow the directions to label the number line below.',
     2: 'Label every 5 minutes below the 5:00 p.m. to 6:00 p.m. number line. Draw a line from each clock to the point on the number line that shows its time. Not all clocks have matching points.',
     3: 'Noah uses a number line to locate 5:45 p.m. Each interval is 5 minutes. The number line shows the hour from 5 p.m. to 6 p.m. Label the number line to show his work.',
-    4: 'Tanner tells his friend, "Meet me at the park at 11:25 p.m." His friend says, "I can\'t meet you then because I will be sleeping!" Tanner says, "I meant 11:25 a.m." Do you agree with Tanner\'s friend? Explain.'
+    4: 'Tanner tells his little brother that 11:25 p.m. comes after 11:20 a.m. Do you agree with Tanner? Why or why not?'
   },
   3: {
     1: 'Plot a point on the number line for the times shown on the clocks. Then, draw a line to match the clocks to the points.',
@@ -980,6 +989,9 @@ function stopwatchSentenceVisual(seed: StopwatchSentenceSeed, solved: boolean): 
         elapsedLabel: solved ? duration : 'measure',
         stopLabel: solved ? duration : '____ seconds',
         sampleWork: solved ? seed.sampleWork : undefined,
+        sourceWorkLabel: seed.sourceWorkLabel,
+        sourceWorkLines: seed.sourceWorkLines,
+        sourceWorkColumns: seed.sourceWorkColumns,
         icon: seed.number === 1 ? 'snap' : seed.number === 2 ? 'numbers' : seed.number === 3 ? 'animals' : 'equation',
         note: solved
           ? 'The number can vary. The important evidence is that the activity was timed and the answer is written in seconds.'
@@ -1000,16 +1012,16 @@ function stopwatchTableVisual(seed: StopwatchTableSeed, solved: boolean): Proble
         icon: seed.number === 6 ? 'relay' : 'activity',
         startLabel: '0 seconds',
         elapsedLabel: solved ? (seed.number === 6 ? 'add runner times' : 'time each task') : 'measure each row',
-        stopLabel: solved ? (seed.number === 6 ? '63 seconds total' : 'record seconds') : '____ seconds',
+        stopLabel: solved ? (seed.number === 6 ? seed.totalSample ?? 'total seconds' : 'record seconds') : '____ seconds',
         columns: seed.columns,
         rows: seed.blankRows.slice(0, seed.number === 6 ? 4 : undefined).map((row, index) => ({
           label: row[0],
           blank: row[1],
           sample: solved ? seed.solvedRows[index]?.[1] : undefined
         })),
-        totalLabel: seed.number === 6 ? 'Total time' : undefined,
-        totalBlank: seed.number === 6 ? '________ seconds' : undefined,
-        totalSample: solved && seed.number === 6 ? '63 seconds' : undefined,
+        totalLabel: seed.totalLabel,
+        totalBlank: seed.totalBlank,
+        totalSample: solved ? seed.totalSample : undefined,
         note: solved ? seed.solvedNote : seed.blankNote
       }
     ]
@@ -1048,33 +1060,47 @@ function timeLineProblem(seed: TimeLineProblemSeed): ProblemSetCenteredProblem {
 }
 
 function timeLineVisual(seed: TimeLineProblemSeed, solved: boolean): ProblemVisualSpec {
+  const sections: ProblemVisualSpec['sections'] = [
+    {
+      kind: 'time-number-line',
+      label: solved ? `Solved ${timeLineRangeLabel(seed)} minute line` : `Blank ${timeLineRangeLabel(seed)} minute line`,
+      startLabel: seed.startLabel,
+      endLabel: seed.endLabel,
+      displayStartMinute: seed.displayStartMinute,
+      displayEndMinute: seed.displayEndMinute,
+      tickLabels: seed.tickLabels ?? timeTicks,
+      sourceItems: seed.sourceItems,
+      points: solved ? seed.points : seed.points.filter((point) => point.open),
+      jumps: solved ? seed.jumps : undefined,
+      showPointDetails: seed.showPointDetails,
+      note: solved ? seed.solvedNote : seed.blankNote
+    }
+  ];
+
+  if (seed.directions?.length) {
+    sections.push({
+      kind: 'equations',
+      label: solved ? 'Teacher Edition directions checked' : 'Teacher Edition directions',
+      lines: seed.directions
+    });
+  }
+
+  sections.push(
+    {
+      kind: 'equations',
+      label: solved ? 'Source-backed reasoning' : 'Student work blanks',
+      lines: solved ? seed.equations : blankEquationTemplates(seed.equations)
+    },
+    {
+      kind: 'note',
+      label: solved ? 'Answer meaning' : 'Source workspace direction',
+      text: solved ? seed.explanation : seed.blankWorkspaceLabel
+    }
+  );
+
   return {
     title: solved ? `Problem ${seed.number}: time number line solved` : `Problem ${seed.number}: source number line workspace`,
-    sections: [
-      {
-        kind: 'time-number-line',
-        label: solved ? `Solved ${timeLineRangeLabel(seed)} minute line` : `Blank ${timeLineRangeLabel(seed)} minute line`,
-        startLabel: seed.startLabel,
-        endLabel: seed.endLabel,
-        displayStartMinute: seed.displayStartMinute,
-        displayEndMinute: seed.displayEndMinute,
-        tickLabels: seed.tickLabels ?? timeTicks,
-        sourceItems: seed.sourceItems,
-        points: solved ? seed.points : seed.points.filter((point) => point.open),
-        jumps: solved ? seed.jumps : undefined,
-        note: solved ? seed.solvedNote : seed.blankNote
-      },
-      {
-        kind: 'equations',
-        label: solved ? 'Source-backed reasoning' : 'Student work blanks',
-        lines: solved ? seed.equations : blankEquationTemplates(seed.equations)
-      },
-      {
-        kind: 'note',
-        label: solved ? 'Answer meaning' : 'Source workspace direction',
-        text: solved ? seed.explanation : seed.blankWorkspaceLabel
-      }
-    ]
+    sections
   };
 }
 
@@ -1171,6 +1197,12 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         blankSentence: 'It takes __________ to write every whole number from 0 to 25.',
         sampleResponse: 'It takes 37 seconds to write every whole number from 0 to 25.',
         sampleWork: ['Sample work writes 0, 1, 2, 3, ... 25 before recording the elapsed time.'],
+        sourceWorkLabel: 'Source work: numbers written before timing stops',
+        sourceWorkLines: [
+          '0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,',
+          '11, 12, 13, 14, 15, 16, 17, 18,',
+          '19, 20, 21, 22, 23, 24, 25.'
+        ],
         solvedAnswer: 'Times will vary. A complete response records one measured stopwatch time for writing every whole number from 0 to 25 and labels the result in seconds.',
         blankWorkspaceLabel: 'Write 0 through 25 while timed, then complete the sentence blank with the measured seconds.',
         meaning: 'The answer tells how many seconds passed while writing the whole-number sequence.',
@@ -1187,6 +1219,8 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         blankSentence: 'It takes __________ to name 10 animals.',
         sampleResponse: 'It takes 40 seconds to name 10 animals.',
         sampleWork: ['Sample animal list: dog, cat, horse, turtle, fish, hamster, rabbit, cow, pig, mouse.'],
+        sourceWorkLabel: 'Source work: 10 recorded animals',
+        sourceWorkLines: ['dog', 'cat', 'horse', 'turtle', 'fish', 'hamster', 'rabbit', 'cow', 'pig', 'mouse'],
         solvedAnswer: 'Times will vary. A complete response lists 10 animals, records one measured stopwatch time, and labels the result in seconds.',
         blankWorkspaceLabel: 'Name and record 10 animals, time the naming task, and complete the elapsed-time sentence.',
         meaning: 'The answer tells how many seconds passed while naming the 10 recorded animals.',
@@ -1203,6 +1237,9 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         blankSentence: 'It takes __________ to write 7 x 8 = 56 fifteen times.',
         sampleResponse: 'It takes 53 seconds to write 7 x 8 = 56 fifteen times.',
         sampleWork: ['Sample work repeats 7 x 8 = 56 fifteen times before recording the elapsed time.'],
+        sourceWorkLabel: 'Source work: equation written 15 times',
+        sourceWorkLines: Array.from({ length: 15 }, () => '7 x 8 = 56'),
+        sourceWorkColumns: 3,
         solvedAnswer: 'Times will vary. A complete response times writing 7 x 8 = 56 fifteen times, records the elapsed time, and labels it in seconds.',
         blankWorkspaceLabel: 'Write the equation 15 times while timed, then fill the official sentence blank with seconds.',
         meaning: 'The answer tells how many seconds passed while writing the multiplication sentence 15 times.',
@@ -1215,7 +1252,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       stopwatchTableProblem({
         number: 5,
-        sourcePrompt: 'Measure six group activities with a stopwatch and record each time.',
+        sourcePrompt: 'Work with your group. Use a stopwatch to measure the time for each of the following activities.',
         title: 'Problem 5 activity chart',
         columns: ['Activity', 'Time'],
         blankRows: [
@@ -1249,27 +1286,26 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       stopwatchTableProblem({
         number: 6,
-        sourcePrompt: '100 meter relay: record team member times and total time.',
+        sourcePrompt: '100 meter relay: Use a stopwatch to measure and record your team’s times.',
         title: 'Problem 6 relay table',
         columns: ['Name', 'Time'],
         blankRows: [
-          ['Runner 1', '________ seconds'],
-          ['Runner 2', '________ seconds'],
-          ['Runner 3', '________ seconds'],
-          ['Runner 4', '________ seconds'],
-          ['Total time', '________ seconds']
+          ['Gina', '________ seconds'],
+          ['Tom', '________ seconds'],
+          ['Carlos', '________ seconds']
         ],
         solvedRows: [
           ['Gina', '18 seconds'],
           ['Tom', '15 seconds'],
-          ['Carlos', '20 seconds'],
-          ['Runner 4', '10 seconds'],
-          ['Total time', '63 seconds']
+          ['Carlos', '20 seconds']
         ],
+        totalLabel: 'Total time',
+        totalBlank: '________ seconds',
+        totalSample: '53 seconds',
         blankNote: 'Record each runner time in seconds. Add the runner times to complete the total time.',
-        solvedNote: 'Sample variable response: 18 + 15 + 20 + 10 = 63 seconds.',
+        solvedNote: 'Sample variable response: 18 + 15 + 20 = 53 seconds.',
         solvedAnswer: 'Times will vary. Each relay runner needs a measured time in seconds, and the total time is the sum of the runner times.',
-        equations: ['first runner time + second runner time + third runner time + fourth runner time = total time'],
+        equations: ['18 + 15 + 20 = 53 seconds'],
         blankWorkspaceLabel: 'Record each relay runner time, then add the runner times to complete the total time.',
         meaning: 'The total time tells how many seconds the whole relay team took altogether.',
         explanation: 'Unlike Problems 1-5, this chart also needs an addition check: the total must equal the sum of the runner times.',
@@ -1290,7 +1326,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       timeLineProblem({
         number: 1,
-        sourcePrompt: 'Label Ingrid\'s 7:00 a.m. to 8:00 a.m. number line and plot D, E, T, L, and W.',
+        sourcePrompt: 'Follow the directions to label the number line below.',
         startLabel: '7:00 a.m.',
         endLabel: '8:00 a.m.',
         points: [
@@ -1300,10 +1336,20 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
           { label: 'L', minute: 45, detail: '7:45' },
           { label: 'W', minute: 55, detail: '7:55' }
         ],
+        showPointDetails: false,
+        directions: [
+          'Ingrid gets ready for school between 7:00 a.m. and 8:00 a.m. Label the first and last tick marks as 7:00 a.m. and 8:00 a.m.',
+          'Each interval represents 5 minutes. Count by fives starting at 0, or 7:00 a.m. Label each 5 minute interval below the number line up to 8:00 a.m.',
+          'Ingrid starts getting dressed at 7:10 a.m. Plot a point and write D above it.',
+          'Ingrid starts eating breakfast at 7:35 a.m. Plot a point and write E above it.',
+          'Ingrid starts brushing her teeth at 7:40 a.m. Plot a point and write T above it.',
+          'Ingrid starts packing her lunch at 7:45 a.m. Plot a point and write L above it.',
+          'Ingrid starts waiting for the bus at 7:55 a.m. Plot a point and write W above it.'
+        ],
         blankNote: 'Label the first tick 7:00 a.m., the last tick 8:00 a.m., and the intervals 0, 5, 10, ... 60 before plotting letters.',
         solvedNote: 'Each plotted letter is a minute position after 7:00: D 10, E 35, T 40, L 45, W 55.',
         solvedAnswer: 'D = 7:10, E = 7:35, T = 7:40, L = 7:45, W = 7:55.',
-        equations: ['D: 7:00 + 10 min = 7:10', 'E: 7:00 + 35 min = 7:35', 'W: 7:00 + 55 min = 7:55'],
+        equations: ['D: 7:00 + 10 min = 7:10', 'E: 7:00 + 35 min = 7:35', 'T: 7:00 + 40 min = 7:40', 'L: 7:00 + 45 min = 7:45', 'W: 7:00 + 55 min = 7:55'],
         blankWorkspaceLabel: 'Use the official Ingrid number line. Count by fives from 7:00 to 8:00, then plot each letter above the correct minute mark.',
         meaning: 'The letters name events between 7:00 and 8:00 a.m.',
         explanation: 'The number line measures the 60 minutes after 7:00 a.m.; each letter sits at its elapsed-minute position.',
@@ -1319,12 +1365,12 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         startLabel: '5:00 p.m.',
         endLabel: '6:00 p.m.',
         sourceItems: [
-          { label: '8:35', detail: 'outside 5:00-6:00', kind: 'digital', status: 'unmatched' },
-          { label: 'analog clock', minute: 50, detail: '5:50', kind: 'analog', status: 'matched' },
-          { label: '5:15', minute: 15, detail: '5:15', kind: 'digital', status: 'matched' },
-          { label: 'analog clock', detail: 'outside 5:00-6:00', kind: 'analog', status: 'unmatched' },
-          { label: '5:40', minute: 40, detail: '5:40', kind: 'digital', status: 'matched' },
-          { label: 'analog clock', minute: 25, detail: '5:25', kind: 'analog', status: 'matched' }
+          { label: '8:35', sourceX: 4, detail: 'outside 5:00-6:00', kind: 'digital', status: 'unmatched' },
+          { label: 'analog clock', minute: 50, sourceX: 20, detail: '5:50', kind: 'analog', status: 'matched' },
+          { label: '5:15', minute: 15, sourceX: 36, detail: '5:15', kind: 'digital', status: 'matched' },
+          { label: 'analog clock', sourceX: 52, detail: '6:10 outside 5:00-6:00', kind: 'analog', status: 'unmatched' },
+          { label: '5:40', minute: 40, sourceX: 68, detail: '5:40', kind: 'digital', status: 'matched' },
+          { label: 'analog clock', minute: 25, sourceX: 84, detail: '5:25', kind: 'analog', status: 'matched' }
         ],
         points: [
           { label: '5:15', minute: 15, detail: 'matches 15 minutes after 5:00' },
@@ -1367,7 +1413,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 4,
-        sourcePrompt: 'Tanner says 11:25 p.m. comes after 11:20 a.m. Do you agree?',
+        sourcePrompt: 'Tanner tells his little brother that 11:25 p.m. comes after 11:20 a.m. Do you agree with Tanner? Why or why not?',
         startLabel: '11:00 p.m.',
         endLabel: '12:00 a.m.',
         sourceItems: [
@@ -1378,14 +1424,14 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         jumps: [{ label: '25 min after 11:00 p.m.', fromMinute: 0, toMinute: 25 }],
         blankNote: 'The source sample uses a line from 11:00 p.m. to 12:00 a.m. to place 11:25 p.m. Then compare that night time to 11:20 a.m.',
         solvedNote: 'Answer key: answers vary. A complete answer must explain that p.m. is night and a.m. is morning, not just compare 25 and 20.',
-        solvedAnswer: 'Answers will vary. A complete explanation distinguishes a.m. from p.m. and uses the story context to decide whether Tanner meant a morning or night meeting time.',
+        solvedAnswer: 'Yes. 11:25 p.m. comes after 11:20 a.m.; 11:20 a.m. is morning and 11:25 p.m. is night.',
         equations: ['11:25 p.m. = 25 min after 11:00 p.m.', '11:20 a.m. is morning', 'p.m. and a.m. are different parts of the day'],
         blankWorkspaceLabel: 'Use the source idea: locate 11:25 p.m. on the night hour line, then explain why 11:20 a.m. is a morning time.',
         meaning: 'The comparison depends on a.m. and p.m., not only the minute numbers.',
         explanation: 'A complete response explains why p.m. is a night time and a.m. is a morning time, then answers Tanner\'s story question.',
         checks: [
           'The explanation names a.m. and p.m.',
-          'The response uses the park/sleeping context.',
+          'The response answers whether Tanner is correct.',
           'The final answer is not based only on 25 being greater than 20.'
         ]
       })

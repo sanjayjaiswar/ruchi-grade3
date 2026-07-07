@@ -521,24 +521,6 @@ function lesson21Visual(problemNumber: 1 | 2 | 3 | 4, solved: boolean): ProblemV
           caption: 'Four full weeks at $6, then the fifth week is $4.'
         },
         {
-          kind: 'solution-parts',
-          label: 'Worksheet a/b work',
-          parts: [
-            {
-              label: 'a',
-              prompt: 'How much does Jason earn in the 4 full weeks?',
-              equation: solved ? '4 x 6 = 24' : '4 x 6 = ____',
-              answer: solved ? 'Jason earns $24 in the first 4 weeks.' : 'Jason earns $____ in the first 4 weeks.'
-            },
-            {
-              label: 'b',
-              prompt: 'How much does Jason earn in 5 weeks?',
-              equation: solved ? '24 + 4 = 28' : '____ + 4 = ____',
-              answer: solved ? 'Jason earns $28.' : 'Jason earns $____.'
-            }
-          ]
-        },
-        {
           kind: 'equations',
           label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
           lines: solved ? ['4 x 6 = 24', '24 + 4 = 28'] : ['4 x 6 = ____', '____ + 4 = ____']
@@ -581,24 +563,6 @@ function lesson21Visual(problemNumber: 1 | 2 | 3 | 4, solved: boolean): ProblemV
             { label: '6 markers', startPart: 1, partCount: 1 }
           ],
           caption: 'The 6 markers left are not handed out. The handed-out markers match the number of students.'
-        },
-        {
-          kind: 'solution-parts',
-          label: 'Worksheet a/b work',
-          parts: [
-            {
-              label: 'a',
-              prompt: 'How many markers does Miss Lianto order?',
-              equation: solved ? '4 x 7 = 28' : '4 x 7 = ____',
-              answer: solved ? 'Miss Lianto orders 28 markers.' : 'Miss Lianto orders ____ markers.'
-            },
-            {
-              label: 'b',
-              prompt: 'How many students are in the class?',
-              equation: solved ? '28 - 6 = 22' : '____ - 6 = ____',
-              answer: solved ? 'There are 22 students in Miss Lianto’s class.' : 'There are ____ students in Miss Lianto’s class.'
-            }
-          ]
         },
         {
           kind: 'equations',
@@ -648,24 +612,6 @@ function lesson21Visual(problemNumber: 1 | 2 | 3 | 4, solved: boolean): ProblemV
           caption: 'Remove the grape-flavored part from the 18 snacks.'
         },
         {
-          kind: 'solution-parts',
-          label: 'Worksheet a/b work',
-          parts: [
-            {
-              label: 'a',
-              prompt: 'How many snacks are in each flavor?',
-              equation: solved ? '18 ÷ 3 = 6' : '18 ÷ 3 = ____',
-              answer: solved ? 'Each flavor has 6 snacks.' : 'Each flavor has ____ snacks.'
-            },
-            {
-              label: 'b',
-              prompt: 'How many fruit snacks are left?',
-              equation: solved ? '18 - 6 = 12' : '18 - ____ = ____',
-              answer: solved ? 'There are 12 fruit snacks left.' : 'There are ____ fruit snacks left.'
-            }
-          ]
-        },
-        {
           kind: 'equations',
           label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
           lines: solved ? ['18 ÷ 3 = 6', '18 - 6 = 12'] : ['18 ÷ 3 = ____', '18 - ____ = ____']
@@ -709,7 +655,7 @@ function lesson21Visual(problemNumber: 1 | 2 | 3 | 4, solved: boolean): ProblemV
       },
       {
         kind: 'solution-parts',
-        label: 'Worksheet a/b work',
+        label: 'Teacher Edition a/b work',
         parts: [
           {
             label: 'a',
@@ -3369,7 +3315,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       {
         number: 1,
-        sourcePrompt: 'Jason earns $6 per week for chores. On the fifth week he earns $4. Write and solve an equation for 5 weeks.',
+        sourcePrompt: 'Jason earns $6 per week for doing all his chores. On the fifth week, he forgets to take out the trash so he only earns $4. Write and solve an equation to show how much Jason earns in 5 weeks.',
         solvedAnswer: 'Jason earns $28.',
         equations: ['4 x 6 = 24', '24 + 4 = 28'],
         knownTotal: 28,
@@ -3395,7 +3341,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 2,
-        sourcePrompt: 'Miss Lianto orders 4 packs of 7 markers. After giving out 1 marker to each student, she has 6 left. How many students are in her class?',
+        sourcePrompt: 'Miss Lianto orders 4 packs of 7 markers. After passing out 1 marker to each student in her class, she has 6 left. Label the tape diagram to find how many students are in Miss Lianto’s class.',
         solvedAnswer: 'There are 22 students in Miss Lianto\'s class.',
         equations: ['4 x 7 = 28', '28 - 6 = 22'],
         knownTotal: 28,
@@ -3423,7 +3369,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 3,
-        sourcePrompt: 'Orlando buys 18 fruit snacks equally split among strawberry, cherry, and grape. He eats all grape snacks. How many are left?',
+        sourcePrompt: 'Orlando buys a box of 18 fruit snacks. Each box comes with an equal amount of strawberry, cherry, and grape flavored snacks. He eats all of the grape flavored snacks. Draw and label a tape diagram to find how many fruit snacks he has left.',
         solvedAnswer: 'Each flavor has 6 snacks. After eating the 6 grape snacks, Orlando has 12 snacks left.',
         equations: ['18 ÷ 3 = 6', '18 - 6 = 12'],
         knownTotal: 18,
@@ -3450,7 +3396,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 4,
-        sourcePrompt: 'Eudora buys 21 meters of ribbon and cuts pieces 3 meters long. How many pieces does she have, and how many more to reach 12 pieces?',
+        sourcePrompt: 'Eudora buys 21 meters of ribbon. She cuts the ribbon so that each piece measures 3 meters in length. a. How many pieces of ribbon does she have? b. If Eudora needs a total of 12 pieces of the shorter ribbon, how many more pieces of the shorter ribbon does she need?',
         solvedAnswer: 'She has 7 pieces and needs 5 more pieces.',
         equations: ['21 ÷ 3 = 7', '12 - 7 = 5'],
         knownTotal: 21,

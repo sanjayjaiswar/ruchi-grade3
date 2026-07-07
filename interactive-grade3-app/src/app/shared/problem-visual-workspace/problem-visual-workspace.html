@@ -326,6 +326,12 @@
             <ul *ngIf="stopwatch.sampleWork?.length">
               <li *ngFor="let work of stopwatch.sampleWork">{{ work }}</li>
             </ul>
+            <div class="visual-stopwatch-source-work" *ngIf="stopwatch.sourceWorkLines?.length">
+              <b *ngIf="stopwatch.sourceWorkLabel">{{ stopwatch.sourceWorkLabel }}</b>
+              <div [style.gridTemplateColumns]="stopwatchSourceColumns(stopwatch)">
+                <span *ngFor="let line of stopwatch.sourceWorkLines">{{ line }}</span>
+              </div>
+            </div>
           </div>
         </div>
 

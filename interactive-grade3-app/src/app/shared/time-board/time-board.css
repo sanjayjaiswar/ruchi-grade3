@@ -12,6 +12,12 @@
   overflow: hidden;
 }
 
+.time-board.is-plain-line {
+  min-height: 0;
+  padding: 8px 32px 82px;
+  background: #fffdf8;
+}
+
 .source-row {
   position: relative;
   height: 176px;
@@ -104,6 +110,11 @@ analog-clock::part(seconds) {
   padding-top: 42px;
 }
 
+.time-board.is-plain-line .time-line-wrap {
+  margin: 0 72px;
+  padding-top: 62px;
+}
+
 .match-lines {
   position: absolute;
   left: 0;
@@ -146,6 +157,10 @@ analog-clock::part(seconds) {
   right: -76px;
 }
 
+.time-board.is-plain-line .endpoint {
+  display: none;
+}
+
 .time-line {
   position: relative;
   height: 118px;
@@ -162,6 +177,22 @@ analog-clock::part(seconds) {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left: 18px solid #3c4043;
+}
+
+.time-line::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  bottom: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 18px solid #3c4043;
+}
+
+.time-board.is-plain-line .time-line {
+  height: 74px;
 }
 
 .tick {
@@ -189,6 +220,35 @@ analog-clock::part(seconds) {
   font-size: 17px;
   font-weight: 650;
   transform: translateX(-50%);
+}
+
+.endpoint-under {
+  position: absolute;
+  bottom: -75px;
+  color: #202124;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.time-board.is-plain-line .endpoint-under {
+  bottom: -72px;
+  font-size: 17px;
+}
+
+.endpoint-under.start {
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.endpoint-under.end {
+  right: 0;
+  transform: translateX(50%);
+}
+
+.time-board.has-source-items .endpoint-under {
+  display: none;
 }
 
 .jump {
@@ -279,6 +339,14 @@ analog-clock::part(seconds) {
   border-color: #fbbc04;
 }
 
+.time-board.is-plain-line .point::before {
+  bottom: -1px;
+  width: 10px;
+  height: 10px;
+  border: 0;
+  background: #202124;
+}
+
 .point b {
   position: absolute;
   left: 50%;
@@ -291,6 +359,15 @@ analog-clock::part(seconds) {
   line-height: 1;
   white-space: nowrap;
   transform: translateX(-50%);
+}
+
+.time-board.is-plain-line .point b {
+  bottom: 30px;
+  padding: 0;
+  background: transparent;
+  color: #202124;
+  font-size: 24px;
+  font-weight: 800;
 }
 
 .point small {

@@ -1,4 +1,8 @@
-<div class="time-board" *ngIf="timeLine as section">
+<div
+  class="time-board"
+  *ngIf="timeLine as section"
+  [class.has-source-items]="hasSourceItems(section)"
+  [class.is-plain-line]="!hasSourceItems(section)">
   <div class="source-row" *ngIf="section.sourceItems?.length" aria-label="Source time cards">
     <article
       class="time-card"
@@ -48,6 +52,8 @@
         [style.left.%]="pointX(tick, section)">
         {{ tick }}
       </span>
+      <span class="endpoint-under start">{{ section.startLabel }}</span>
+      <span class="endpoint-under end">{{ section.endLabel }}</span>
       <span
         class="jump"
         *ngFor="let jump of section.jumps || []"
@@ -62,7 +68,7 @@
         [class.is-open]="point.open"
         [style.left.%]="pointX(point.minute, section)">
         <b>{{ point.label }}</b>
-        <small>{{ point.detail || point.minute }}</small>
+        <small *ngIf="showPointDetail(section)">{{ point.detail || point.minute }}</small>
       </span>
     </div>
   </div>

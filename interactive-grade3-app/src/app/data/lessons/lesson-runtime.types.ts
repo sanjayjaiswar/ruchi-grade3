@@ -450,6 +450,9 @@ export type ProblemVisualStopwatchSection = {
   elapsedLabel?: string;
   stopLabel?: string;
   sampleWork?: string[];
+  sourceWorkLabel?: string;
+  sourceWorkLines?: string[];
+  sourceWorkColumns?: number;
   icon?: 'snap' | 'numbers' | 'animals' | 'equation' | 'activity' | 'relay';
   columns?: string[];
   rows?: Array<{
@@ -479,6 +482,7 @@ export type ProblemVisualTimeLineJump = {
 export type ProblemVisualTimeLineSourceItem = {
   label: string;
   minute?: number;
+  sourceX?: number;
   detail?: string;
   kind?: 'digital' | 'analog' | 'note';
   status?: 'matched' | 'unmatched' | 'provided';
@@ -495,6 +499,7 @@ export type ProblemVisualTimeLineSection = {
   sourceItems?: ProblemVisualTimeLineSourceItem[];
   points?: ProblemVisualTimeLinePoint[];
   jumps?: ProblemVisualTimeLineJump[];
+  showPointDetails?: boolean;
   note?: string;
 };
 

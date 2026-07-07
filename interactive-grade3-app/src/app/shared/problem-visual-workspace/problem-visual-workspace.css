@@ -1204,6 +1204,36 @@
   font-weight: 500;
 }
 
+.visual-stopwatch-source-work {
+  display: grid;
+  gap: 8px;
+  width: min(100%, 640px);
+  padding: 10px 12px;
+  border: 1px solid #d5dde8;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.visual-stopwatch-source-work b {
+  color: #202124;
+  font-size: 13px;
+  font-weight: 760;
+}
+
+.visual-stopwatch-source-work div {
+  display: grid;
+  gap: 5px 12px;
+}
+
+.visual-stopwatch-source-work span {
+  min-width: 0;
+  color: #202124;
+  font-size: 15px;
+  font-weight: 620;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
 .visual-stopwatch-table {
   display: grid;
   border: 1px solid #c7ceda;
