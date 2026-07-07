@@ -503,16 +503,36 @@ function lesson20Visual(problemNumber: 1 | 2 | 3 | 4 | 5, solved: boolean): Prob
           kind: 'tape',
           label: 'Tape model',
           totalLabel: solved ? '$28 total spent' : '? total spent',
+          topParts: [
+            { label: '$4', sublabel: 'magazine', startPart: 0, partCount: 1 }
+          ],
           parts: [
             { label: '$8', sublabel: 'book' },
             { label: '$8', sublabel: 'book' },
-            { label: '$8', sublabel: 'book' },
-            { label: '$4', sublabel: 'magazine' }
+            { label: '$8', sublabel: 'book' }
           ],
           braces: [
             { label: solved ? 'Find first: $24 book cost' : 'Find first: ? book cost', startPart: 0, partCount: 3 }
           ],
           caption: '3 books at $8 each, then add the $4 magazine.'
+        },
+        {
+          kind: 'solution-parts',
+          label: 'Worksheet a/b work',
+          parts: [
+            {
+              label: 'a',
+              prompt: 'What is the total cost of the books?',
+              equation: solved ? '3 x $8 = $24' : '3 x $8 = ____',
+              answer: solved ? 'The books cost $24.' : 'The books cost ____.'
+            },
+            {
+              label: 'b',
+              prompt: 'How much does Ted spend all together?',
+              equation: solved ? '$24 + $4 = $28' : '____ + $4 = ____',
+              answer: solved ? 'Ted spends $28.' : 'Ted spends ____.'
+            }
+          ]
         },
         {
           kind: 'equations',
@@ -542,9 +562,27 @@ function lesson20Visual(problemNumber: 1 | 2 | 3 | 4 | 5, solved: boolean): Prob
           parts: Array.from({ length: 7 }, () => ({ label: solved ? '4' : '?' })),
           braces: [
             { label: solved ? 'Find first: 4 for 1 child' : 'Find first: ? for 1 child', startPart: 0, partCount: 1 },
-            { label: solved ? 'Then 3 children: 12' : 'Then 3 children: ?', startPart: 0, partCount: 3 }
+            { label: solved ? 'Then 3 children: 12' : 'Then 3 children: ?', startPart: 4, partCount: 3 }
           ],
           caption: 'Seven children share 28 silly bands equally.'
+        },
+        {
+          kind: 'solution-parts',
+          label: 'Worksheet a/b work',
+          parts: [
+            {
+              label: 'a',
+              prompt: 'How many silly bands does each child get?',
+              equation: solved ? '28 ÷ 7 = 4' : '28 ÷ 7 = ____',
+              answer: solved ? 'Each child gets 4 silly bands.' : 'Each child gets ____ silly bands.'
+            },
+            {
+              label: 'b',
+              prompt: 'How many silly bands do 3 children get?',
+              equation: solved ? '3 x 4 = 12' : '3 x ____ = ____',
+              answer: solved ? 'Three children get 12 silly bands.' : 'Three children get ____ silly bands.'
+            }
+          ]
         },
         {
           kind: 'equations',
@@ -578,9 +616,28 @@ function lesson20Visual(problemNumber: 1 | 2 | 3 | 4 | 5, solved: boolean): Prob
             muted: index < 2
           })),
           braces: [
+            { label: '2 broken boxes', startPart: 0, partCount: 2 },
             { label: solved ? '4 unbroken boxes: 12 cups' : '4 unbroken boxes: ? cups', startPart: 2, partCount: 4 }
           ],
           caption: 'Two boxes break, so the unbroken cups are in the 4 remaining boxes.'
+        },
+        {
+          kind: 'solution-parts',
+          label: 'Worksheet a/b work',
+          parts: [
+            {
+              label: 'a',
+              prompt: 'How many cups are in each box?',
+              equation: solved ? '18 ÷ 6 = 3' : '18 ÷ 6 = ____',
+              answer: solved ? 'Each box has 3 cups.' : 'Each box has ____ cups.'
+            },
+            {
+              label: 'b',
+              prompt: 'How many cups are unbroken?',
+              equation: solved ? '6 - 2 = 4, then 4 x 3 = 12' : '6 - 2 = ____, then ____ x ____ = ____',
+              answer: solved ? '12 cups are unbroken.' : '____ cups are unbroken.'
+            }
+          ]
         },
         {
           kind: 'equations',
@@ -624,16 +681,34 @@ function lesson20Visual(problemNumber: 1 | 2 | 3 | 4 | 5, solved: boolean): Prob
           caption: 'The same five children share the red balloons equally.'
         },
         {
+          kind: 'solution-parts',
+          label: 'Worksheet a/b work',
+          parts: [
+            {
+              label: 'a',
+              prompt: 'How many blue balloons does each child get?',
+              equation: solved ? '25 ÷ 5 = 5' : '25 ÷ 5 = ____',
+              answer: solved ? 'Each child gets 5 blue balloons.' : 'Each child gets ____ blue balloons.'
+            },
+            {
+              label: 'b',
+              prompt: 'How many red balloons does each child get?',
+              equation: solved ? '15 ÷ 5 = 3' : '15 ÷ 5 = ____',
+              answer: solved ? 'Each child gets 3 red balloons.' : 'Each child gets ____ red balloons.'
+            }
+          ]
+        },
+        {
           kind: 'equations',
           label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
-          lines: solved ? ['25 ÷ 5 = 5', '15 ÷ 5 = 3', '5 + 3 = 8'] : ['25 ÷ 5 = ____', '15 ÷ 5 = ____', '____ + ____ = ____']
+          lines: solved ? ['25 ÷ 5 = 5', '15 ÷ 5 = 3'] : ['25 ÷ 5 = ____', '15 ÷ 5 = ____']
         },
         {
           kind: 'note',
           label: solved ? 'Answer sentence' : 'Workspace direction',
           text: solved
-            ? 'Each child gets 5 blue balloons and 3 red balloons, 8 balloons total.'
-            : 'Find one child’s blue share and red share separately. Then combine those two shares.'
+            ? 'Each child gets 5 blue balloons and 3 red balloons.'
+            : 'Find one child’s blue share and red share separately.'
         }
       ]
     };
@@ -658,6 +733,24 @@ function lesson20Visual(problemNumber: 1 | 2 | 3 | 4 | 5, solved: boolean): Prob
           { label: solved ? '4 bags left' : '? bags left', startPart: 5, partCount: 4 }
         ],
         caption: 'Each bag has 3 pears. Five bags are sold.'
+      },
+      {
+        kind: 'solution-parts',
+        label: 'Worksheet a/b work',
+        parts: [
+          {
+            label: 'a',
+            prompt: 'How many bags of pears are there at first?',
+            equation: solved ? '27 ÷ 3 = 9' : '27 ÷ 3 = ____',
+            answer: solved ? 'There are 9 bags of pears.' : 'There are ____ bags of pears.'
+          },
+          {
+            label: 'b',
+            prompt: 'How many bags are left?',
+            equation: solved ? '9 - 5 = 4' : '____ - 5 = ____',
+            answer: solved ? 'There are 4 bags left.' : 'There are ____ bags left.'
+          }
+        ]
       },
       {
         kind: 'equations',
@@ -2927,8 +3020,8 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       {
         number: 4,
         sourcePrompt: 'There are 25 blue balloons and 15 red balloons. Five children get equal numbers of each color. How many blue and red balloons does each child get?',
-        solvedAnswer: 'Each child gets 5 blue balloons and 3 red balloons, 8 balloons total.',
-        equations: ['25 ÷ 5 = 5', '15 ÷ 5 = 3', '5 + 3 = 8'],
+        solvedAnswer: 'Each child gets 5 blue balloons and 3 red balloons.',
+        equations: ['25 ÷ 5 = 5', '15 ÷ 5 = 3'],
         knownTotal: 40,
         knownGroupCount: 5,
         quotient: 8,
@@ -2938,17 +3031,17 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         animationType: 'two-step-model',
         blankVisual: lesson20Visual(4, false),
         solvedVisual: lesson20Visual(4, true),
-        blankWorkspaceLabel: 'Divide each color separately, then combine one child’s shares.',
+        blankWorkspaceLabel: 'Divide each color separately.',
         blankPrompts: [
           'Find blue balloons per child.',
           'Find red balloons per child.',
-          'Add one child’s blue and red shares.'
+          'Answer with both color shares.'
         ],
-        explanation: 'Each child gets 5 blue and 3 red balloons, so each child gets 8 balloons total.',
+        explanation: 'Each child gets 5 blue balloons and 3 red balloons because each color is shared equally by the same 5 children.',
         validationChecks: [
           'Blue and red balloon totals are divided separately.',
           'Both divisions use 5 children.',
-          'The final answer combines one child’s two shares.'
+          'The final answer names one child’s blue share and red share.'
         ]
       },
       {

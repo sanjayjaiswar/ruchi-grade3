@@ -35,6 +35,17 @@
             <ng-container *ngIf="tapeSection(child) as tape">
               <strong *ngIf="tape.label">{{ tape.label }}</strong>
               <div class="visual-tape">
+                <div
+                  class="visual-tape-top-parts"
+                  *ngIf="tape.topParts?.length"
+                  [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
+                  <span
+                    *ngFor="let topPart of tape.topParts"
+                    [style.gridColumn]="tapeTopPartGridColumn(topPart)">
+                    <b>{{ topPart.label }}</b>
+                    <em *ngIf="topPart.sublabel">{{ topPart.sublabel }}</em>
+                  </span>
+                </div>
                 <b class="visual-tape-whole-label">{{ tape.totalLabel }}</b>
                 <div [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
                   <span
@@ -195,6 +206,17 @@
     <ng-container *ngIf="tapeSection(section) as tape">
       <strong *ngIf="tape.label">{{ tape.label }}</strong>
       <div class="visual-tape">
+        <div
+          class="visual-tape-top-parts"
+          *ngIf="tape.topParts?.length"
+          [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
+          <span
+            *ngFor="let topPart of tape.topParts"
+            [style.gridColumn]="tapeTopPartGridColumn(topPart)">
+            <b>{{ topPart.label }}</b>
+            <em *ngIf="topPart.sublabel">{{ topPart.sublabel }}</em>
+          </span>
+        </div>
         <b class="visual-tape-whole-label">{{ tape.totalLabel }}</b>
         <div [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
           <span
@@ -437,6 +459,20 @@
       <strong *ngIf="equations.label">{{ equations.label }}</strong>
       <div class="visual-equations">
         <span *ngFor="let line of equations.lines">{{ line }}</span>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="solutionPartsSection(section) as solutionParts">
+      <strong *ngIf="solutionParts.label">{{ solutionParts.label }}</strong>
+      <div class="visual-solution-parts">
+        <article *ngFor="let part of solutionParts.parts">
+          <b>{{ part.label }}</b>
+          <div>
+            <span>{{ part.prompt }}</span>
+            <strong>{{ part.equation }}</strong>
+            <p>{{ part.answer }}</p>
+          </div>
+        </article>
       </div>
     </ng-container>
 

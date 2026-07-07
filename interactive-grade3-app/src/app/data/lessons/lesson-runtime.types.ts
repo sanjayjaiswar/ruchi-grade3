@@ -345,6 +345,12 @@ export type ProblemVisualTapeSection = {
   kind: 'tape';
   label?: string;
   totalLabel: string;
+  topParts?: Array<{
+    label: string;
+    sublabel?: string;
+    startPart: number;
+    partCount?: number;
+  }>;
   parts: Array<{
     label: string;
     sublabel?: string;
@@ -373,6 +379,17 @@ export type ProblemVisualEquationsSection = {
   kind: 'equations';
   label?: string;
   lines: string[];
+};
+
+export type ProblemVisualSolutionPartsSection = {
+  kind: 'solution-parts';
+  label?: string;
+  parts: Array<{
+    label: string;
+    prompt: string;
+    equation: string;
+    answer: string;
+  }>;
 };
 
 export type ProblemVisualDataTableSection = {
@@ -520,6 +537,7 @@ export type ProblemVisualSection =
   | ProblemVisualNumberLineSection
   | ProblemVisualClockSection
   | ProblemVisualEquationsSection
+  | ProblemVisualSolutionPartsSection
   | ProblemVisualNoteSection
   | ProblemVisualStopwatchSection
   | ProblemVisualTimeLineSection

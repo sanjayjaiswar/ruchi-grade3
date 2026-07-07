@@ -21,6 +21,7 @@ import type {
   ProblemVisualNumberLineSection,
   ProblemVisualRelatedFactsSection,
   ProblemVisualSection,
+  ProblemVisualSolutionPartsSection,
   ProblemVisualSpec,
   ProblemVisualStopwatchSection,
   ProblemVisualTapeSection,
@@ -123,6 +124,10 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     return section.kind === 'equations' ? section : undefined;
   }
 
+  solutionPartsSection(section: ProblemVisualSection): ProblemVisualSolutionPartsSection | undefined {
+    return section.kind === 'solution-parts' ? section : undefined;
+  }
+
   noteSection(section: ProblemVisualSection): ProblemVisualNoteSection | undefined {
     return section.kind === 'note' ? section : undefined;
   }
@@ -159,6 +164,12 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
   tapeBraceGridColumn(brace: NonNullable<ProblemVisualTapeSection['braces']>[number]): string {
     const start = Math.max(0, Math.round(brace.startPart));
     const span = Math.max(1, Math.round(brace.partCount));
+    return `${start + 1} / span ${span}`;
+  }
+
+  tapeTopPartGridColumn(topPart: NonNullable<ProblemVisualTapeSection['topParts']>[number]): string {
+    const start = Math.max(0, Math.round(topPart.startPart));
+    const span = Math.max(1, Math.round(topPart.partCount ?? 1));
     return `${start + 1} / span ${span}`;
   }
 
