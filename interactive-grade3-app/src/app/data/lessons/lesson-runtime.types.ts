@@ -431,6 +431,7 @@ export type ProblemVisualClockSection = {
   kind: 'clock';
   label?: string;
   timeLabel: string;
+  timeValue?: string;
   caption?: string;
 };
 
@@ -496,6 +497,7 @@ export type ProblemVisualTimeLineSection = {
   displayStartMinute?: number;
   displayEndMinute?: number;
   tickLabels: string[];
+  labelEvery?: number;
   sourceItems?: ProblemVisualTimeLineSourceItem[];
   points?: ProblemVisualTimeLinePoint[];
   jumps?: ProblemVisualTimeLineJump[];

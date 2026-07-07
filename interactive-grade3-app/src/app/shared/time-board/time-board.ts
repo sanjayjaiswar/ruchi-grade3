@@ -80,7 +80,8 @@ export class TimeBoardComponent implements AfterViewChecked {
   }
 
   majorTicks(section: ProblemVisualTimeLineSection): number[] {
-    return this.ticks(section).filter((minute) => minute % 5 === 0);
+    const labelEvery = Math.max(1, Math.round(section.labelEvery ?? 5));
+    return this.ticks(section).filter((minute) => minute % labelEvery === 0);
   }
 
   visiblePoints(section: ProblemVisualTimeLineSection): NonNullable<ProblemVisualTimeLineSection['points']> {

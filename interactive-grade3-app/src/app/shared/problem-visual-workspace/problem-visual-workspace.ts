@@ -425,7 +425,8 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
   }
 
   private clockTimeParts(clock: ProblemVisualClockSection): { hour: number; minute: number } | undefined {
-    const match = clock.timeLabel.match(/\b(\d{1,2}):(\d{2})\b/);
+    const source = clock.timeValue ?? clock.timeLabel;
+    const match = source.match(/\b(\d{1,2}):(\d{2})\b/);
     if (!match) {
       return undefined;
     }

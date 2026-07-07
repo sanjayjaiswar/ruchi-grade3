@@ -367,11 +367,11 @@ const M6_SOLVED_NOTES: Record<string, string> = {
   '5-3': '8 half inches equals 4 inches because two half inches make each inch.',
   '6-1': 'There are 15 children; 6 are less than 53 inches tall; the answer key says No for 53 1/2 inches; 4 children are at least 54 inches tall.',
   '6-2': 'There are 30 worms. Cara is not right because 3 3/4 inches has 6 worms, while 3 2/4 inches and 4 1/4 inches together have 8 worms. Add Madeline’s new worm with one X at 4 3/4 inches.',
-  '7-1': 'Bean plant counts by quarter inch: 1 3/4 has 4, 2 has 2, 2 1/4 has 3, 2 1/2 has 3, 2 3/4 has 2, 3 has 3, and 3 1/4 has 3. At least 2 1/4 inches: 14; taller than 2 3/4 inches: 6; most frequent measurement is 1 3/4 inches with 4 plants.',
-  '8-1': 'Leaf-width counts by quarter inch: 5 1/2 has 1, 5 3/4 has 5, 6 has 8, 6 1/4 has 6, 6 1/2 has 4, and 6 3/4 has 1. The three most frequent measurements are 6, 6 1/4, and 5 3/4 inches.',
-  '9-1': 'Roxanne picked 24 apples. The picture graph key should make all table values representable.',
+  '7-1': 'Line plot completed with title Heights of Bean Plants, label inches, and values for X may vary. Bean plant counts by quarter inch: 1 3/4 has 4, 2 has 2, 2 1/4 has 3, 2 1/2 has 3, 2 3/4 has 2, 3 has 3, and 3 1/4 has 3. b. 14. c. 6. d. 1 3/4 inches; 4 plants. e. No; explanations will vary. f. Yes; explanations will vary.',
+  '8-1': 'Line plot completed with title Widths of Leaves, label inches, and values for X may vary. Leaf-width counts by quarter inch: 5 1/2 has 1, 5 3/4 has 5, 6 has 8, 6 1/4 has 6, 6 1/2 has 4, and 6 3/4 has 1. b. Answers will vary. c. 4 more leaves. d. The three most frequent measurements are 6, 6 1/4, and 5 3/4 inches; explanations will vary.',
+  '9-1': 'a. Roxanne picked 24 apples. b. Picture graph completed with a scale that makes all table values representable.',
   '9-2': 'Stewart and Roxanne picked 8 more apples than Philip and Trisha. Stewart and Trisha can make 4 pies.',
-  '9-3': 'There are 24 blades of grass. The line plot has one 2-inch blade and three 3 3/4-inch blades. The most frequent length is 2 3/4 inches with 6 blades, and the comparison answer is 2.'
+  '9-3': 'a. Line plot completed; explanations for the scale will vary. b. 24 blades of grass; explanations will vary. c. The most frequent length is 2 3/4 inches with 6 blades. d. 2 more blades.'
 };
 
 const M6_SOURCE_PROMPT_OVERRIDES: Record<string, string> = {
@@ -1060,7 +1060,7 @@ function m7VisualFamily(lessonNumber: number): string {
   if (lessonNumber <= 2 || lessonNumber === 15 || lessonNumber === 17 || lessonNumber === 23 || lessonNumber === 28 || lessonNumber === 29) {
     return 'RDW word-problem model';
   }
-  if (lessonNumber === 3 || lessonNumber === 30 || lessonNumber >= 33) {
+  if (lessonNumber === 30 || lessonNumber >= 33) {
     return 'critique and reflection tool';
   }
   if (lessonNumber <= 6) {

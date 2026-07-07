@@ -121,6 +121,288 @@ const M5_ANSWER_KEY_SOURCE_PAGES: Record<number, string[]> = {
   30: pageImages(pageRange(420, 420))
 };
 
+const M5_TEACHER_ANSWER_OVERRIDES: Record<number, Record<number, string>> = {
+  2: {
+    1: 'Circle the first and last strips; those are folded to make equal parts.',
+    2: 'a. 4 equal parts, 2 shaded. b. 6 equal parts, 5 shaded. c. 7 equal parts, 3 shaded. d. 7 equal parts, 0 shaded.',
+    3: 'Use thirds. Sharon gets 1/3 of the candy bar.',
+    4: 'a. Each part is 1/4 of the original cardboard. b. The matching strip shows sixths, so each part is 1/6 of the original cardboard.'
+  },
+  3: {
+    1: 'Eighths: 5 eighths are shaded. Thirds: 3 thirds are shaded. Halves: 1 half is shaded.',
+    2: 'Circle the first, third, and fifth shapes. Student sentences should explain that equal parts are the same size.',
+    3: 'Each shape is divided into 4 equal parts; the fractional unit is fourths.',
+    4: 'Divide and shade the wholes to show 1 half, 1 sixth, and 1 third.',
+    5: 'Answers will vary, but each whole should be divided into equal parts using a fractional unit other than fourths.',
+    6: 'Divide the candy bar into 5 equal parts. Each person receives 1/5 of the candy bar.'
+  },
+  4: {
+    1: 'Answers will vary.',
+    2: 'Answers will vary.',
+    3: 'Answers will vary.',
+    4: 'Answers will vary.',
+    5: 'Answers will vary.',
+    6: 'Answers will vary.'
+  },
+  5: {
+    1: 'a. 2, 1, 1 half, 1/2. b. 3, 1, 1 third, 1/3. c. 4, 1, 1 fourth, 1/4. d. 5, 1, 1 fifth, 1/5. e. 6, 1, 1 sixth, 1/6. f. 8, 1, 1 eighth, 1/8.',
+    2: 'No; explanations will vary.',
+    3: 'Draw lines to show tenths. There are 10 people, so each person receives 1/10 of the cake.',
+    4: 'Draw and label 1/10 and 1/8. One eighth is bigger than one tenth when the cakes are the same size.'
+  },
+  6: {
+    1: 'Partition, label, and shade correctly: a. 3/4. b. 3/7. c. 4/5. d. 2/6.',
+    2: 'a. 1/8. b. 7/8.',
+    3: 'a. 9, 5, 1/9, 5/9. b. 7, 3, 1/7, 3/7. c. 5, 4, 1/5, 4/5. d. 6, 2, 1/6, 2/6. e. 8, 8, 1/8, 8/8.'
+  },
+  7: {
+    1: '1 half.',
+    2: '3 fourths.',
+    3: '8 ninths.',
+    4: '5 sixths.',
+    5: '4 fifths.',
+    6: '2 thirds.',
+    7: '6 sevenths.',
+    8: '7 eighths.',
+    9: 'a. 8. b. 9. c. 12.',
+    10: 'The shaded and unshaded fractions are 1/5 and 4/5; 1/7 and 6/7; 1/11 and 10/11.',
+    11: 'Avanti has not read 5/6 of her book.'
+  },
+  8: {
+    1: 'Answer key shows 3/2 for the named fraction.',
+    2: 'Number bond showing 2/5 and 3/5 equals 1 whole; draw the second visual model.',
+    3: 'Number bond showing 4/9 and 5/9 equals 1 whole; draw the second visual model.',
+    4: 'Number bond showing 2/7 and 5/7 equals 1 whole; draw the second visual model.',
+    5: 'a. 3/4 and 1/4 make 1 whole; decompose 3/4 into three units of 1/4. b. 2/3 and 1/3 make 1 whole; decompose 2/3 into two units of 1/3. c. 2/4 and 2/4 make 1 whole; decompose both parts into units of 1/4. d. 2/5 and 3/5 make 1 whole; decompose into units of 1/5.',
+    6: 'a. 3/4. b. 3 more hamburgers. c. Draw a number bond showing 3/4 and 1/4 equals 1 whole, decompose 3/4 into three units of 1/4, and draw the second visual model.'
+  },
+  9: {
+    1: 'a. Answer provided. b. 1/8, 15, 15/8. c. 1/6, 14, 14/6. d. 1/5, 8, 8/5. e. 1/4, 9, 9/4. f. 1/3, 7, 7/3.',
+    2: 'a. Partition each whole into sixths; shade 8 sixths, 8/6. b. Partition each whole into fourths; shade 7 fourths, 7/4. c. Partition each whole into fifths; shade 6 fifths. d. Partition each whole into halves; shade 5 halves.',
+    3: 'Draw 2 equivalent wholes, partition each into 8 equal pieces, and shade 10 pieces. The fraction is 10/8.'
+  },
+  10: {
+    1: 'Shade the specified fractional unit in each strip.',
+    2: 'a. Greater than. b. Less than. c. Less than. d. Greater than. e. Less than. f. Less than. g. Greater than. h. Greater than.',
+    3: 'Lily uses more oil; explanations will vary.',
+    4: 'a. >. b. <. c. =. d. >. e. <. f. =. g. =, <, <, <, =.',
+    5: 'No; explanations will vary.'
+  },
+  11: {
+    1: '1/3; answers will vary.',
+    2: '1/5; answers will vary.',
+    3: '1/12; answers will vary.',
+    4: 'Answers will vary; 8.',
+    5: 'Answers will vary; 9.',
+    6: '1/10; answers will vary.',
+    7: 'Answers will vary.',
+    8: 'Answers will vary; 12.',
+    9: 'No; explanations will vary.',
+    10: 'No; explanations will vary.'
+  },
+  12: {
+    1: 'Answers will vary.',
+    2: 'Answers will vary.',
+    3: 'Answers will vary.',
+    4: 'Answers will vary.',
+    5: 'Answers will vary.',
+    6: 'Answers will vary.'
+  },
+  13: {
+    1: 'a. 1/2. b. Divide the shaded part to show 2 equal parts.',
+    2: 'a. 1/4. b. Divide the shaded part to show 4 equal parts.',
+    3: 'a. 1/3. b. Divide the shaded part to show 3 equal parts.',
+    4: 'a. 1/5. b. Divide the shaded part to show 5 equal parts.',
+    5: 'a. 1/6. b. Divide the shaded part to show 6 equal parts.',
+    6: 'a. C. b. B. c. A. d. 2; 1/2. e. 1/2; 1/4.',
+    7: 'Answers will vary.'
+  },
+  14: {
+    1: 'Partition and label the number lines for halves, thirds, fourths, and fifths from 0 to 1.',
+    2: 'The hour number line is labeled from 0/4 to 4/4, with 4/4 equal to 1 hour.',
+    3: 'The meter number line is labeled from 0/5 to 5/5, with 5/5 equal to 1 meter.'
+  },
+  15: {
+    1: 'Partition and label each number line; complete the number bonds to show how much is shaded and how much more makes 1 whole.',
+    2: 'Draw a number line from 0 to 1, partition it into eighths, and label from 0/8 to 8/8.',
+    3: 'a. 4 equal parts; label the rope from 0/4 to 4/4. b. 2/4. c. 1/5.'
+  },
+  16: {
+    1: 'a. Answer provided. b. Partition into thirds; box 3/3 and 6/3. c. Partition into halves; box 4/2, 6/2, and 8/2. d. Partition into fourths; box 12/4, 16/4, and 20/4. e. Partition into thirds; box 18/3, 21/3, 24/3, and 27/3.',
+    2: 'Partition into fifths and label the number line; box 0/5, 5/5, and 10/5.',
+    3: 'Partition into thirds and label the number line; box 3/3, 6/3, 9/3, and 12/3.',
+    4: 'Draw a number line with endpoints 0 and 3, label the wholes, then partition and label the fractional units.'
+  },
+  17: {
+    1: 'Partition the number line into sixths; locate and label the given fractions.',
+    2: 'Partition the number line into fourths; locate and label the given fractions.',
+    3: 'Partition the number line into thirds; locate and label the given fractions.',
+    4: 'Alex; a number line shows 7/4 inches is longer than 2/4 inches.',
+    5: 'Draw a number line from 0 km to 4 km, partitioned into fifths; locate and label 0/5, 20/5, 7/5, and 12/5.'
+  },
+  18: {
+    1: 'Answer provided.',
+    2: 'Use the number line to compare the given fractions.',
+    3: 'Partition into sixths; place 2/6 and 3/6; circle 3/6; write <.',
+    4: 'Partition into halves and fourths; place 1/2 and 2/4; circle 2/4; write >.',
+    5: 'Partition into eighths and fourths; place 7/8 and 7/4; circle 7/8; write <.',
+    6: 'JoAnn; explanations will vary.',
+    7: 'Red thread; explanations will vary.',
+    8: 'Place 7/8, 7/4, and 7/2 on the number line; 7/8 < 7/4 < 7/2; explanations will vary.'
+  },
+  19: {
+    1: 'a. Divide into halves and place the given fractions. b. Divide into fourths and place the given fractions. c. Divide into eighths and place the given fractions. Write each whole as a fraction.',
+    2: 'Row 1: <, <, >. Row 2: >, <, =. Row 3: <, >, >.',
+    3: 'Answers will vary.',
+    4: 'Answers will vary.',
+    5: 'Answers will vary.'
+  },
+  20: {
+    1: 'a. 4/8, 4/8, 3/8, 4/8; circle the first, second, and last shapes. b. 2/5, 1/5, 2/5, 2/5; circle the first, third, and last shapes. c. 2/6, 2/6, 4/6, 3/6; circle the first and second shapes.',
+    2: 'a. 1/4; draw two different representations of 1/4. b. 1/7; draw two different representations of 1/7.',
+    3: 'a. Triangles and squares. b. 4 triangles and 4 squares. c. Draw at least two different representations of Ann\'s set with no overlaps; 2/6.',
+    4: 'Cristina; explanations will vary.'
+  },
+  21: {
+    1: 'Halves and sixths number lines are labeled with equivalent fractions, including 1/2 = 3/6 and 2/2 = 6/6.',
+    2: 'Thirds and sixths number lines are labeled with equivalent fractions.',
+    3: 'Shaded blue: 1/2 and 2/4, 1/2 and 3/6. Shaded yellow: 2/2 and 4/4, 2/2 and 6/6. Shaded red: 3/2 and 6/4, 3/2 and 9/6. Shaded green: 4/2 and 8/4, 4/2 and 12/6.',
+    4: 'Complete the equivalent fractions and number line work; 1/2 = 4/8 is one of the shown relationships.',
+    5: 'Yes; 1/2 = 2/4 = 4/8. Explanations will vary.'
+  },
+  22: {
+    1: '2; 8; 16.',
+    2: 'Match 1/2 to 2/4, 2/6 to 1/3, 6/4 to 12/8, and 3/9 to 1/3.',
+    3: 'Explanations will vary.',
+    4: '2 sixths; explanations will vary.',
+    5: 'Explanations will vary.'
+  },
+  23: {
+    1: 'Divide and label the number line into fourths in red pencil.',
+    2: 'Divide and label the number line into eighths in blue pencil.',
+    3: 'Equivalent labels include 0/4 = 0/8, 1/4 = 2/8, 2/4 = 4/8, 3/4 = 6/8, 4/4 = 8/8, continuing through 12/4 = 24/8.',
+    4: '1/3 and 2/6; 2/4 and 1/2 or 4/8; 2/5 and 4/10; answers will vary.',
+    5: '7/2 = 14/4 = 28/8; draw, divide, and label the number line to show these fractions.',
+    6: 'No; explanations will vary.'
+  },
+  24: {
+    1: 'Complete the number bonds and number lines for halves, thirds, fourths, and fifths; rename 0 and 1 as fractions in each unit.',
+    2: 'Circle the fractions equal to 1: 3/3, 4/4, and 5/5.',
+    3: 'Answers will vary.',
+    4: 'No; explanations will vary.'
+  },
+  25: {
+    1: 'Label the number line 0/1, 1/1, 2/1, 3/1, 4/1, 5/1, and 6/1.',
+    2: 'Complete the equivalent whole-number fractions: 3/3, 4/4, 4/2, 4/1, 6/6, 6/3, and 6/1.',
+    3: 'Explanations will vary.'
+  },
+  26: {
+    1: 'Halves: complete 0, 0; 2, 2; 4 and the number bonds. Thirds: complete 6, 6; 9, 9; 12, 12 and the number bonds.',
+    2: 'Halves: answer provided. Thirds: 6/3, 9/3, 12/3. Fourths: 8/4, 12/4, 16/4. Sixths: 12/6, 18/6, 24/6.',
+    3: 'a. Partition a 1-meter wire into fourths; 4 pieces. b. 12 days.',
+    4: 'a. Partition 1 pound of food into thirds. b. Partition 4 pounds into thirds; 1. c. 2.'
+  },
+  27: {
+    1: '2, 2, bigger, less. 4, 4, smaller, more.',
+    2: 'Explanations will vary.',
+    3: '1/2 of a candy bar; 1/2 = 2/4 = 3/6.',
+    4: '2 sixths; draw a model.',
+    5: 'Answers will vary.'
+  },
+  28: {
+    1: 'Shade the models correctly; circle 2 thirds.',
+    2: 'Shade the models correctly; circle 2 eighths.',
+    3: 'Shade the models correctly; circle 3 fourths.',
+    4: 'Shade the models correctly; circle 4 sixths.',
+    5: 'Shade the models correctly; circle 3 thirds.',
+    6: 'Kelly; draw tape diagrams correctly.',
+    7: 'Becky; draw tape diagrams correctly.',
+    8: 'Doll B, Doll A, Doll C; draw a picture.'
+  },
+  29: {
+    1: 'Answer provided.',
+    2: '3/4 > 3/8.',
+    3: '4/4 > 4/6.',
+    4: '1/4 < 1/2.',
+    5: 'a. <. b. >. c. >.',
+    6: 'Draw models correctly; <.',
+    7: 'Draw models correctly; >.',
+    8: 'Nicholas; draw models correctly.',
+    9: 'Robbie; draw models correctly.'
+  },
+  30: {
+    1: 'Answers will vary.'
+  }
+};
+
+const M5_PROBLEM_LIST_OVERRIDES: Record<number, M5WorkbookProblem[]> = {
+  7: [
+    { number: 1, prompt: 'Write a fraction to name the shaded part shown in the model.' },
+    { number: 2, prompt: 'Write a fraction to name the shaded part shown in the model.' },
+    { number: 3, prompt: 'Write a fraction to name the shaded part shown in the model.' },
+    { number: 4, prompt: 'Write a fraction to name the shaded part shown in the model.' },
+    { number: 5, prompt: 'Write a fraction to name the shaded part shown in the model.' },
+    { number: 6, prompt: 'Write a fraction to name the shaded part shown in the model.' },
+    { number: 7, prompt: 'Write a fraction to name the shaded part shown in the model.' },
+    { number: 8, prompt: 'Write a fraction to name the shaded part shown in the model.' },
+    { number: 9, prompt: 'a. How many eighths are in 1 whole? b. How many ninths are in 1 whole? c. How many twelfths are in 1 whole?' },
+    { number: 10, prompt: 'Each strip represents 1 whole. Write a fraction to label the shaded and unshaded parts.' },
+    { number: 11, prompt: 'Avanti read 1 sixth of her book. What fraction of the book has she not read yet?' }
+  ],
+  8: [
+    { number: 1, prompt: 'Use the model to name the fraction shown.' },
+    { number: 2, prompt: 'Draw a number bond with 2 parts showing the shaded and unshaded fractions. Draw the second visual model.' },
+    { number: 3, prompt: 'Draw a number bond with 2 parts showing the shaded and unshaded fractions. Draw the second visual model.' },
+    { number: 4, prompt: 'Draw a number bond with 2 parts showing the shaded and unshaded fractions. Draw the second visual model.' },
+    { number: 5, prompt: 'Draw a number bond with 2 parts showing the shaded and unshaded fractions of each figure. Decompose both parts of the number bond into unit fractions.' },
+    { number: 6, prompt: 'The chef put 1/4 of the ground beef on the grill to make one hamburger and put the rest in the refrigerator. Draw a number bond and visual model. What fraction was refrigerated, and how many more same-size hamburgers can he make?' }
+  ],
+  12: [
+    { number: 1, prompt: 'Yellow strip: draw at least one number bond that matches the drawing.' },
+    { number: 2, prompt: 'Brown strip: draw at least one number bond that matches the drawing.' },
+    { number: 3, prompt: 'Orange square: draw at least one number bond that matches the drawing.' },
+    { number: 4, prompt: 'Yarn: draw at least one number bond that matches the drawing.' },
+    { number: 5, prompt: 'Water: draw at least one number bond that matches the drawing.' },
+    { number: 6, prompt: 'Clay: draw at least one number bond that matches the drawing.' }
+  ],
+  13: [
+    { number: 1, prompt: 'Name the shaded fractional part. Then divide the shaded part to show the designated whole.' },
+    { number: 2, prompt: 'Name the shaded fractional part. Then divide the shaded part to show the designated whole.' },
+    { number: 3, prompt: 'Name the shaded fractional part. Then divide the shaded part to show the designated whole.' },
+    { number: 4, prompt: 'Name the shaded fractional part. Then divide the shaded part to show the designated whole.' },
+    { number: 5, prompt: 'Name the shaded fractional part. Then divide the shaded part to show the designated whole.' },
+    { number: 6, prompt: 'Use the diagram of Rope A, Rope B, and Rope C to complete the statements about different wholes.' },
+    { number: 7, prompt: 'Ms. Fan drew a figure and asked the class to name the shaded fraction. Explain the answer based on the designated whole.' }
+  ],
+  24: [
+    { number: 1, prompt: 'Complete the number bond as indicated by the fractional unit. Partition the number line, label the fractions, and rename 0 and 1 as fractions of the given unit.' },
+    { number: 2, prompt: 'Circle the fractions equal to 1 whole.' },
+    { number: 3, prompt: 'Write equivalent fractions that name whole numbers.' },
+    { number: 4, prompt: 'Explain whether the given fraction names 1 whole.' }
+  ],
+  28: [
+    { number: 1, prompt: 'Compare 2 fifths and 2 thirds using the models. Circle the larger fraction.' },
+    { number: 2, prompt: 'Compare 2 tenths and 2 eighths using the models. Circle the larger fraction.' },
+    { number: 3, prompt: 'Compare 3 fourths and 3 eighths using the models. Circle the larger fraction.' },
+    { number: 4, prompt: 'Compare 4 eighths and 4 sixths using the models. Circle the larger fraction.' },
+    { number: 5, prompt: 'Compare 3 thirds and 3 sixths using the models. Circle the larger fraction.' },
+    { number: 6, prompt: 'Leslie drinks 3 fourths of her water. Kelly drinks 3 fifths of her water. Who drinks the least amount? Draw a picture.' },
+    { number: 7, prompt: 'Becky fills 2 thirds of her piggy bank. Malory fills 2 fourths. Whose piggy bank has more pennies? Draw a picture.' },
+    { number: 8, prompt: 'Heidi lines up dolls in order from shortest to tallest. Use the fractional heights to order Doll A, Doll B, and Doll C.' }
+  ],
+  29: [
+    { number: 1, prompt: 'Use the provided model to compare fractions with the same numerator.' },
+    { number: 2, prompt: 'Compare 3/4 and 3/8.' },
+    { number: 3, prompt: 'Compare 4/4 and 4/6.' },
+    { number: 4, prompt: 'Compare 1/4 and 1/2.' },
+    { number: 5, prompt: 'Partition each number line into the units labeled on the left. Then use the number lines to compare the fractions.' },
+    { number: 6, prompt: 'Draw your own model to compare the fractions and write <, >, or =.' },
+    { number: 7, prompt: 'Draw your own model to compare the fractions and write <, >, or =.' },
+    { number: 8, prompt: 'John ran 2 thirds of a kilometer after school. Nicholas ran 2 fifths. Who ran the shorter distance? Use the model.' },
+    { number: 9, prompt: 'Erica ate 2 ninths of a licorice stick. Robbie ate 2 fifths of an identical licorice stick. Who ate more? Use the model.' }
+  ]
+};
+
 const M5_OVERRIDES: Record<number, Record<number, {
   fractionModels?: ProblemSetFractionModel[];
   numberLineModels?: ProblemSetNumberLineModel[];
@@ -217,6 +499,93 @@ const M5_OVERRIDES: Record<number, Record<number, {
       numberLineModels: [{ label: 'Fifths of a meter', denominator: 5, startLabel: '0 meters', endLabel: '1 meter', targetNumerators: [0, 1, 2, 3, 4, 5] }],
       solvedAnswer: 'The bead marks are at 1 fifth, 2 fifths, 3 fifths, 4 fifths, and 5 fifths, with 5 fifths equal to 1 meter.',
       quotientMeaning: 'Each bead location is counted by fifths from 0 meters.'
+    }
+  },
+  17: {
+    1: {
+      numberLineModels: [{
+        label: 'Sixths from 0 to 3',
+        denominator: 6,
+        startLabel: '0',
+        endLabel: '3',
+        tickLabels: ['0', '3/6', '6/6 = 1', '9/6', '12/6 = 2', '18/6 = 3'],
+        targetNumerators: [0, 1, 2, 3, 4, 5]
+      }]
+    },
+    2: {
+      numberLineModels: [{
+        label: 'Fourths from 1 to 4',
+        denominator: 4,
+        startLabel: '1',
+        endLabel: '4',
+        tickLabels: ['4/4 = 1', '8/4 = 2', '12/4 = 3', '16/4 = 4'],
+        targetNumerators: [0, 1, 2, 3]
+      }]
+    },
+    3: {
+      numberLineModels: [{
+        label: 'Thirds from 2 to 6',
+        denominator: 3,
+        startLabel: '2',
+        endLabel: '6',
+        tickLabels: ['6/3 = 2', '9/3 = 3', '11/3', '14/3', '18/3 = 6'],
+        targetNumerators: [0, 1, 2, 3, 4]
+      }]
+    },
+    4: {
+      numberLineModels: [{
+        label: 'Pinky-finger fourths',
+        denominator: 4,
+        startLabel: '0 in',
+        endLabel: '2 in',
+        tickLabels: ['0', '2/4 in', '4/4 = 1 in', '7/4 in', '8/4 = 2 in'],
+        targetNumerators: [1, 3]
+      }]
+    },
+    5: {
+      numberLineModels: [{
+        label: 'Marcy run fifths',
+        denominator: 5,
+        startLabel: '0 km',
+        endLabel: '4 km',
+        tickLabels: ['0/5 = 0 km', '5/5 = 1 km', '7/5 km', '10/5 = 2 km', '12/5 km', '15/5 = 3 km', '20/5 = 4 km'],
+        targetNumerators: [0, 2, 4, 6]
+      }]
+    }
+  },
+  18: {
+    3: {
+      numberLineModels: [{
+        label: 'Sixths comparison',
+        denominator: 6,
+        tickLabels: ['0', '2/6', '3/6', '6/6 = 1'],
+        targetNumerators: [1, 2]
+      }]
+    },
+    4: {
+      numberLineModels: [{
+        label: 'Halves and fourths comparison',
+        denominator: 4,
+        tickLabels: ['0', '1/2', '2/4', '1'],
+        targetNumerators: [1, 2]
+      }]
+    },
+    5: {
+      numberLineModels: [{
+        label: 'Eighths and fourths comparison',
+        denominator: 8,
+        tickLabels: ['0', '7/8', '1', '7/4', '2'],
+        targetNumerators: [1, 3]
+      }]
+    }
+  },
+  19: {
+    2: {
+      numberLineModels: [
+        { label: 'Halves comparison line', denominator: 2, targetNumerators: [0, 1, 2] },
+        { label: 'Fourths comparison line', denominator: 4, targetNumerators: [0, 1, 2, 3, 4] },
+        { label: 'Eighths comparison line', denominator: 8, targetNumerators: [0, 1, 2, 3, 4, 5, 6, 7, 8] }
+      ]
     }
   },
   20: {
@@ -359,7 +728,7 @@ function makeLesson1(): ProblemSetCenteredLesson {
       blankAnswerSentence: 'Shade each beaker to show the named fraction of the full amount.',
       blankWorkspaceLabel: 'Use the fill line near the top as the whole amount.',
       blankVisualType: 'fraction-concrete-template',
-      solvedAnswer: 'The beakers show 1/2, 1/4, and 1/3 of the full amount up to the fill line.',
+      solvedAnswer: 'Answer provided for 1 half; shade 1 fourth and 1 third of the full beaker amount.',
       equations: ['1 half = 1/2', '1 fourth = 1/4', '1 third = 1/3'],
       knownTotal: 3,
       knownGroupSize: 1,
@@ -393,7 +762,7 @@ function makeLesson1(): ProblemSetCenteredLesson {
       blankAnswerSentence: 'The shaded parts are ____, ____, and ____ of the whole string cheese.',
       blankWorkspaceLabel: 'Name the fraction represented by the shaded part in each official rectangle.',
       blankVisualType: 'fraction-concrete-template',
-      solvedAnswer: 'The shaded fractions are 1/3, 1/6, and 1/4 of the string cheese.',
+      solvedAnswer: 'The shaded fractions are 1/3, 1/6, and 1/4.',
       equations: ['1 out of 3 equal parts = 1/3', '1 out of 6 equal parts = 1/6', '1 out of 4 equal parts = 1/4'],
       knownTotal: 3,
       knownGroupSize: 1,
@@ -423,7 +792,7 @@ function makeLesson1(): ProblemSetCenteredLesson {
       blankAnswerSentence: 'The number of interior lines is one fewer than the number of equal parts.',
       blankWorkspaceLabel: 'Use open drawing space to estimate the partitions.',
       blankVisualType: 'fraction-concrete-template',
-      solvedAnswer: 'Two equal parts need 1 line and are halves; 3 equal parts need 2 lines and are thirds; 4 equal parts need 3 lines and are fourths.',
+      solvedAnswer: 'a. Draw 1 line to make 2 equal parts, halves. b. Draw 2 lines to make 3 equal parts, thirds. c. Draw 3 lines to make 4 equal parts, fourths.',
       equations: ['2 equal parts -> 1 line -> halves', '3 equal parts -> 2 lines -> thirds', '4 equal parts -> 3 lines -> fourths'],
       knownTotal: 4,
       knownGroupSize: 1,
@@ -453,7 +822,7 @@ function makeLesson1(): ProblemSetCenteredLesson {
       blankAnswerSentence: 'I notice that the number of lines is ____ than the number of equal parts.',
       blankWorkspaceLabel: 'Estimate cut lines inside the two official paper rectangles.',
       blankVisualType: 'fraction-concrete-template',
-      solvedAnswer: 'Sevenths need 6 lines, ninths need 8 lines, and 20 equal parts need 19 lines.',
+      solvedAnswer: 'Show sevenths and ninths. Answers will vary for what students notice; 20 equal parts need 19 lines.',
       equations: ['7 equal parts -> 6 lines', '9 equal parts -> 8 lines', '20 equal parts -> 19 lines'],
       knownTotal: 20,
       knownGroupSize: 1,
@@ -591,7 +960,7 @@ function makeLesson30(): ProblemSetCenteredLesson {
     blankAnswerSentence: 'The strip is partitioned into ____ equal parts because the guide marks are equally spaced.',
     blankWorkspaceLabel: 'Teacher Edition setup: lined paper, base number line, extended guide lines, and a red strip.',
     blankVisualType: 'paper-partition-template',
-    solvedAnswer: 'The red strip is partitioned into 3 equal thirds by transferring the equally spaced guide marks from the lined-paper number line.',
+    solvedAnswer: 'Answers will vary.',
     equations: [
       '3 thirds = 1 whole',
       '5 spaces + 5 spaces + 5 spaces = 15 equal paper spaces',
@@ -796,7 +1165,7 @@ function numberLineModelsFromPrompt(prompt: string, lessonNumber: number, fracti
   if (!denominators.size) {
     denominators.add(lessonNumber >= 24 ? 3 : 4);
   }
-  return Array.from(denominators).slice(0, 5).map((denominator) => ({
+  return Array.from(denominators).slice(0, 8).map((denominator) => ({
     label: DENOMINATOR_LABELS[denominator] ?? `${denominator} equal parts`,
     denominator,
     startLabel: lowerPrompt.includes('meter') ? '0 meters' : lowerPrompt.includes('hour') ? '0 hours' : '0',
@@ -922,6 +1291,8 @@ function m5FallbackFractionModels(lessonNumber: number, problemNumber: number, p
 
 function makeProblem(lessonNumber: number, sourceProblem: M5WorkbookProblem & { equations?: string[] }): ProblemSetCenteredProblem {
   const override = M5_OVERRIDES[lessonNumber]?.[sourceProblem.number];
+  const teacherAnswer = M5_TEACHER_ANSWER_OVERRIDES[lessonNumber]?.[sourceProblem.number];
+  const modelSourceText = `${sourceProblem.prompt} ${teacherAnswer ?? override?.solvedAnswer ?? ''}`;
   const denominator = inferDenominator(sourceProblem.prompt, lessonNumber);
   const numerator = inferNumerator(sourceProblem.prompt, denominator);
   const animationType: ProblemSetAnimationType = usesNumberLine(lessonNumber, sourceProblem.prompt)
@@ -931,14 +1302,14 @@ function makeProblem(lessonNumber: number, sourceProblem: M5WorkbookProblem & { 
     ? 'number-line-template'
     : 'fraction-strip-template';
   const model = modelName(animationType);
-  const parsedFractionModels = fractionsFromPrompt(sourceProblem.prompt);
+  const parsedFractionModels = fractionsFromPrompt(modelSourceText);
   const fractionModels = override?.fractionModels
     ?? (parsedFractionModels.length ? parsedFractionModels : m5FallbackFractionModels(lessonNumber, sourceProblem.number, sourceProblem.prompt));
-  const numberLineModels = override?.numberLineModels ?? numberLineModelsFromPrompt(sourceProblem.prompt, lessonNumber, fractionModels);
+  const numberLineModels = override?.numberLineModels ?? numberLineModelsFromPrompt(modelSourceText, lessonNumber, fractionModels);
   const equations = sourceProblem.equations?.length
     ? sourceProblem.equations
     : fractionModels.map((fractionModel) => `${fractionModel.label} = ${fractionModel.numerator}/${fractionModel.denominator}`);
-  const solvedAnswer = override?.solvedAnswer ?? solvedAnswerFromModels(sourceProblem.prompt, fractionModels, numberLineModels);
+  const solvedAnswer = teacherAnswer ?? override?.solvedAnswer ?? solvedAnswerFromModels(sourceProblem.prompt, fractionModels, numberLineModels);
 
   return {
     number: sourceProblem.number,
@@ -1113,6 +1484,14 @@ function m5NumberLineSection(model: ProblemSetNumberLineModel, solved: boolean):
 }
 
 function m5NumberLineTicks(model: ProblemSetNumberLineModel, solved: boolean): Array<{ label: string; target?: boolean }> {
+  if (model.tickLabels?.length) {
+    const lastIndex = model.tickLabels.length - 1;
+    return model.tickLabels.map((label, index) => ({
+      label: solved || index === 0 || index === lastIndex ? label : '____',
+      target: solved && (model.targetNumerators ?? []).includes(index)
+    }));
+  }
+
   const denominator = boundedM5Count(model.denominator, 1, 12);
   return Array.from({ length: denominator + 1 }, (_, numerator) => {
     const endpoint = numerator === 0 ? model.startLabel ?? '0' : numerator === denominator ? model.endLabel ?? '1' : undefined;
@@ -1244,9 +1623,9 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
 
   const source = sourceForLesson(lessonNumber);
   const objective = M5_OBJECTIVES[lessonNumber];
-  const sourceProblems = M5_WORKBOOK_PROBLEMS[lessonNumber]?.length
+  const sourceProblems = M5_PROBLEM_LIST_OVERRIDES[lessonNumber] ?? (M5_WORKBOOK_PROBLEMS[lessonNumber]?.length
     ? M5_WORKBOOK_PROBLEMS[lessonNumber]
-    : (source?.problems ?? []);
+    : (source?.problems ?? []));
   const sourcePageImages = teacherEditionLessonPages(source?.teacherEditionSource ?? '');
   const answerKeyImages = M5_ANSWER_KEY_SOURCE_PAGES[lessonNumber] ?? [];
   const conceptCopy = m5LessonConceptCopy(lessonNumber, objective);

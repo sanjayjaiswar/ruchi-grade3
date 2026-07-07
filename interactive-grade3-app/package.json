@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "validate:no-pdf-problem-tabs": "node scripts/validate-no-pdf-problem-tabs.mjs",
+    "validate:problem-centered-delivery": "node scripts/validate-problem-centered-delivery.mjs",
     "test": "ng test"
   },
   "private": true,

@@ -1,8 +1,8 @@
 export const M7_TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
   "1": {
-    "1": "a. $22",
-    "2": "4 b. 5",
-    "3": "$4 c. 7 minutes",
+    "1": "a. $22. b. 5 five-dollar bills. c. 7 minutes.",
+    "2": "4 pies",
+    "3": "$4 per liter",
     "4": "24"
   },
   "2": {
@@ -171,9 +171,9 @@ export const M7_TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     "4": "a. Drawing must match the source dimensions for the rectangle design. b. 8 ft c. 72 sq ft d. 48 sq ft"
   },
   "29": {
-    "1": "a. 56 in",
-    "2": "25 ft b. 144 sq in",
-    "3": "36 cm c. 72 in",
+    "1": "a. 56 in. b. 144 sq in. c. 72 in.",
+    "2": "25 ft",
+    "3": "36 cm",
     "4": "700 yd"
   },
   "30": {

@@ -116,16 +116,16 @@ function answerKeyPageImages(start: number, end: number): string[] {
 
 const SOLVED_ANSWERS: Record<number, string[]> = {
   1: [
-    'Teacher Edition Answer Key: a. Variable array/model must show the same factor pair relationship. b. 14; 3; 28; 35; 6.',
+    'Teacher Edition Answer Key: a. Answers will vary. b. 14; 3; 28; 35; 6.',
     'Teacher Edition Answer Key: 24, 4, 6; 24, 6, 4.',
     'Teacher Edition Answer Key: a. 7; b. sixes; 18; c. tens; 80; d. 6; 24; e. 5; 40; f. 4; 4; g. 1; 27; h. 9; 36; i. 3; 32; j. 5; 30; k. 7; 3; 21; l. 5; 5; 20.'
   ],
   2: [
     'Teacher Edition Answer Key: Sevens; 7, 7; 35; 5, 1; 7; 42; 6, 7, 42; 7, 6, 42.',
-    'Teacher Edition Answer Key: a. Eights; 8, 8; 40. b. 48; explanation must connect 5 eights plus 1 more eight to 6 eights.',
+    'Teacher Edition Answer Key: a. Eights; 8, 8; 40. b. 48; answers will vary.',
     'Teacher Edition Answer Key: 63.',
     'Teacher Edition Answer Key: 4.',
-    'Teacher Edition Answer Key: No; explanation must show the proposed fact or strategy does not match the multiplication relationship in the source item.'
+    'Teacher Edition Answer Key: No; explanations will vary.'
   ],
   3: [
     'Teacher Edition Answer Key: e = 20; l = 7; i = 6; c = 3; s = 4; n = 10; t = 70; k = 9; b = 2; a = 24; h = 5; kitchen tables.',
@@ -138,25 +138,25 @@ const SOLVED_ANSWERS: Record<number, string[]> = {
     'Teacher Edition Answer Key: 12, 18, 24; 4, 24; 24, 4.',
     'Teacher Edition Answer Key: 12, 18, 24, 30, 36, 42; 7, 42; 42, 7.',
     'Teacher Edition Answer Key: a. 12, 24, 18, 18, 36, 18, 30, 42. b. 8; 8.',
-    'Teacher Edition Answer Key: No; explanation must use the source equation or model to show why the statement is false.'
+    'Teacher Edition Answer Key: No; explanations will vary.'
   ],
   5: [
-    'Teacher Edition Answer Key: 14, 28, 35, 56, 63, 70.',
-    'Teacher Edition Answer Key: 21, 35, 49, 56, 70.',
-    'Teacher Edition Answer Key: Explanation must connect the count-by-sevens pattern to the matching multiplication or division fact.',
-    'Teacher Edition Answer Key: Both are correct; explanation must show the same total can be represented by the related multiplication and division facts.'
+    'Teacher Edition Answer Key: 14, 28, 35, 56, 63, 70. 42, 6; 21, 3; 56, 8; 49, 7; 7, 1; 70, 10; 63, 9; 28, 4; 14, 2; 35, 5.',
+    'Teacher Edition Answer Key: 21, 35, 49, 56, 70. a. 3, 21; 21, 3. b. 5, 35; 35, 5. c. 7, 49; 49, 7. d. 8, 56; 56, 8. e. 10, 70; 70, 10.',
+    'Teacher Edition Answer Key: Explanations will vary.',
+    'Teacher Edition Answer Key: Both are correct; explanations will vary.'
   ],
   6: [
     'Teacher Edition Answer Key: a. 36; 30; 1, 6; 6; 36. b. 42; 30; 2, 12; 12; 42. c. 48; 30; 3, 18; 3; 3; 18; 48. d. 54; 30; 4, 24; 4; 4; 24; 54.',
     'Teacher Edition Answer Key: 24; 4; 9.',
     'Teacher Edition Answer Key: 14 divided by 7; 14; 2; 7.',
-    'Teacher Edition Answer Key: Yes; explanation must show the decomposed facts add back to the original 6 or 7 fact.',
-    'Teacher Edition Answer Key: Response must use a valid decomposition strategy and keep the product or quotient equivalent to the original fact.'
+    'Teacher Edition Answer Key: Yes; explanations will vary.',
+    'Teacher Edition Answer Key: Answers will vary.'
   ],
   7: [
     'Teacher Edition Answer Key: Words matched to corresponding equations.',
     'Teacher Edition Answer Key: 6 x 8 = k or 8 x 6 = k; k = 48.',
-    'Teacher Edition Answer Key: a. Picture models equation; 7. b. 4. c. 48 cm. d. 9.'
+    'Teacher Edition Answer Key: a. Picture models equation; 7. b. Picture models equation; 4 minutes. c. Picture models equation; 48 cm. d. Picture models equation; 9.'
   ],
   8: [
     'Teacher Edition Answer Key: a. 14; b. 2; c. 5; d. 11; e. 30; f. 15; g. 20; h. 26; i. 10; j. 2; k. 14; l. 8; m. 10; n. 2; o. 37; p. 9.',
@@ -168,8 +168,8 @@ const SOLVED_ANSWERS: Record<number, string[]> = {
   9: [
     'Teacher Edition Answer Key: a. 36; b. 9; 36; c. 42; d. 3, 2; 6, 7; 42.',
     'Teacher Edition Answer Key: a. Answer provided. b. 4; 28. c. 9, 4; 36. d. 6, 7; 42. e. 5, 9; 45. f. 5, 6; 30.',
-    'Teacher Edition Answer Key: Explanation must identify which operation is inside the parentheses and how that changes the value.',
-    'Teacher Edition Answer Key: Explanation must compare the two parenthesized expressions and show why their values differ.'
+    'Teacher Edition Answer Key: Explanations will vary.',
+    'Teacher Edition Answer Key: Explanations will vary.'
   ],
   10: [
     'Teacher Edition Answer Key: a. Array accurately labeled; 64; 40; 3, 24; 3; 3; 24; 64. b. Array accurately labeled; 72; 40; 4, 32; 4; 4; 32; 72.',
@@ -188,9 +188,9 @@ const SOLVED_ANSWERS: Record<number, string[]> = {
     'Teacher Edition Answer Key: $36.'
   ],
   12: [
-    'Teacher Edition Answer Key: a. 54; 9; 9; 54. b. 63; 18; 2; 9; 63. c. 72; 27; 3; 9; 72. d. 81; 36; 4; 9; 81.',
-    'Teacher Edition Answer Key: a. 54; 60; 54. b. 63; 70; 63. c. 72; 80; 72. d. 81; 90; 81.',
-    'Teacher Edition Answer Key: 36; explanation must show 9 groups of 4, 4 groups of 9, or an equivalent associative grouping.',
+    'Teacher Edition Answer Key: a. 54; 9; 9; 54. b. 63; 2, 18; 2; 2; 18; 63. c. 72; 45; 3, 27; 3; 3, 9; 27; 72. d. 81; 45; 4, 36; 4; 4, 9; 36; 81.',
+    'Teacher Edition Answer Key: a. 54; 60; 54. b. 63; 70; 63. c. 72; 80; 72. d. 81; 90, 9; 81.',
+    'Teacher Edition Answer Key: 36; answers will vary.',
     'Teacher Edition Answer Key: Products and quotients matched.'
   ],
   13: [
@@ -200,10 +200,10 @@ const SOLVED_ANSWERS: Record<number, string[]> = {
     'Teacher Edition Answer Key: a = 6; g = 9; d = 8; o = 90; e = 7; n = 3; s = 4; t = 2; i = 45. Add a “g” and it’s gone!'
   ],
   14: [
-    'Teacher Edition Answer Key: a. Answer provided; 9; 27, 2, 7, 9; 36, 3, 6, 9; 45, 4, 5, 9; 54, 5, 4, 9; 63, 6, 3, 9; 72, 7, 2, 9; 81, 8, 1, 9; 90, 9, 0, 9. b. 9; explanation must identify the nines digit pattern. c. Incorrect; explanation must show the product pattern does not support the claim.',
-    'Teacher Edition Answer Key: Response must use a valid nines pattern from the source table or finger strategy.',
-    'Teacher Edition Answer Key: Explanation must connect the chosen nines strategy to the product.',
-    'Teacher Edition Answer Key: 63; explanation must show the matching 9 x 7 or 7 x 9 fact.'
+    'Teacher Edition Answer Key: a. Answer provided; 9; 27, 2, 7, 9; 36, 3, 6, 9; 45, 4, 5, 9; 54, 5, 4, 9; 63, 6, 3, 9; 72, 7, 2, 9; 81, 8, 1, 9; 90, 9, 0, 9. b. 9. c. Incorrect; answers will vary.',
+    'Teacher Edition Answer Key: Answers will vary.',
+    'Teacher Edition Answer Key: Explanations will vary.',
+    'Teacher Edition Answer Key: 63; explanations will vary.'
   ],
   15: [
     'Teacher Edition Answer Key: 4; solution includes equation and an unknown.',
@@ -216,13 +216,13 @@ const SOLVED_ANSWERS: Record<number, string[]> = {
   16: [
     'Teacher Edition Answer Key: a. 6; b. 0; c. 1; d. 1; e. 0; f. Any number; g. 4; h. 3.',
     'Teacher Edition Answer Key: Equations matched to solutions.',
-    'Teacher Edition Answer Key: 1, 2, 3, 4, 5, 6, 7, 8, 9, n. Explanation must describe the pattern for multiplying by 1 or dividing by 1.',
+    'Teacher Edition Answer Key: 1, 2, 3, 4, 5, 6, 7, 8, 9, n. Answers will vary.',
     'Teacher Edition Answer Key: a. n divided by 1 = n. b. 6 divided by 1 = 6; picture drawn. c. 6 x 1 = 6.',
-    'Teacher Edition Answer Key: a. Explanation must use the 0 or 1 multiplication pattern. b. Explanation must use the 0 or 1 division pattern. c. Explanation must connect the equation to the pattern.'
+    'Teacher Edition Answer Key: a. Explanations may vary. b. Explanations may vary. c. Explanations may vary.'
   ],
   17: [
-    'Teacher Edition Answer Key: Products accurately recorded; answers to parts a-d must explain the observed multiplication-table patterns.',
-    'Teacher Edition Answer Key: Products accurately labeled; arrays drawn and labeled.'
+    'Teacher Edition Answer Key: Products accurately recorded. a. Even-product squares colored; Yes. b. No. c. Explanations may vary. d. 112.',
+    'Teacher Edition Answer Key: a. Products accurately labeled. b. Arrays accurately drawn; 5, 7, 9, 11. c. Answers may vary. d. Explanations may vary.'
   ],
   18: [
     'Teacher Edition Answer Key: 27 cm; solution includes model, equation, and explanation.',
@@ -240,11 +240,11 @@ const SOLVED_ANSWERS: Record<number, string[]> = {
   20: [
     'Teacher Edition Answer Key: a. Answer provided. b. 80. c. 15; 150. d. 5; 150.',
     'Teacher Edition Answer Key: Answer provided; 9; 90; 6; 60; 10; 100.',
-    'Teacher Edition Answer Key: Explanation must use place value to show why multiplying ones facts by 10 gives tens facts.'
+    'Teacher Edition Answer Key: Explanations will vary.'
   ],
   21: [
     'Teacher Edition Answer Key: 345 seconds; tape diagram models equation.',
-    'Teacher Edition Answer Key: No; solution includes a model and equation with an unknown and explains why the proposed answer is not reasonable.',
+    'Teacher Edition Answer Key: No; explanations will vary; solution includes model and equation with unknown.',
     'Teacher Edition Answer Key: 400 cents; solution includes model and equation with unknown.',
     'Teacher Edition Answer Key: 9 g; solution includes model and equation with unknown.',
     'Teacher Edition Answer Key: 41; solution includes model and equation with unknown.',
@@ -794,6 +794,206 @@ const EXTRACTED_PROMPT_TAILS: Record<string, string> = {
   '20-3': 'n × (m × 10) = (n × m) × 10 (where n and m are less than 10) to multiply by multiples of 10.',
   '21-3': 'factors and multiples of 10.',
   '21-6': 'factors and multiples of 10.'
+};
+
+const SOURCE_PROMPT_OVERRIDES: Record<string, string> = {
+  '1-1': 'a. Solve. Shade in the multiplication facts that you already know. Then, shade in the facts for sixes, sevens, eights, and nines that you can solve using the commutative property. b. Complete the chart. Each bag contains 7 apples.',
+  '1-2': 'Use the array to write two different multiplication sentences.',
+  '1-3': 'Complete the equations. a. 2 sevens = ____ twos. b. 3 ____ = 6 threes. c. 10 eights = 8 ____. d. 4 x ____ = 6 x 4. e. 8 x 5 = ____ x 8. f. ____ x 7 = 7 x ____. g. 3 x 9 = 10 threes - ____ three. h. 10 fours - 1 four = ____ x 4. i. 8 x 4 = 5 fours + ____ fours. j. ____ fives + 1 five = 6 x 5. k. 5 threes + 2 threes = ____ x ____. l. ____ twos + ____ twos = 10 twos.',
+  '2-1': 'Each unit has a value of 7. Complete the unit form, facts, and totals for 5 sevens and 6 sevens using 5 sevens plus 1 more seven.',
+  '2-2': 'a. Each dot has a value of 8. Complete the unit form, facts, and total for 5 eights. b. Use the fact above to find 8 x 6. Show your work using pictures, numbers, or words.',
+  '2-3': 'An author writes 9 pages of her book each week. How many pages does she write in 7 weeks? Use a fives fact to solve.',
+  '2-4': 'Mrs. Gonzalez buys a total of 32 crayons for her classroom. Each pack contains 8 crayons. How many packs of crayons does Mrs. Gonzalez buy?',
+  '2-5': 'Hannah has $500. She buys a camera for $435 and 4 other items for $9 each. Now Hannah wants to buy speakers for $50. Does she have enough money to buy the speakers? Explain.',
+  '3-1': 'Each equation contains a letter representing the unknown. Find the value of the unknowns, and then write the letters that match the answers to solve the riddle.',
+  '3-2': 'Lonna buys 3 t-shirts for $8 each. a. What is the total amount Lonna spends on 3 t-shirts? Use the letter m to represent the total amount of money Lonna spends, and then solve the problem. b. If Lonna hands the cashier 3 ten dollar bills, how much change will she receive? Use the letter c in an equation to represent the change, and then find the value of c.',
+  '3-3': 'Miss Potts used a total of 28 cups of flour to bake some bread. She used 4 cups of flour for each loaf of bread. How many loaves of bread did she bake? Represent the problem using multiplication and division sentences and a letter for the unknown. Then, solve the problem.',
+  '3-4': 'At a table tennis tournament, two games went on for a total of 32 minutes. One game took 12 minutes longer than the other. How long did it take to complete each game? Use letters to represent the unknowns. Solve the challenge problem.',
+  '4-1': 'Skip-count by six to fill in the blanks. Match each number in the count-by with its multiplication fact.',
+  '4-2': 'Count by six to fill in the blanks below.',
+  '4-3': 'Count by six to fill in the blanks below. Complete the multiplication equation that represents the final number in your count-by. Complete the division equation that represents your count-by.',
+  '4-4': 'Mrs. Byrne\'s class skip-counts by six for a group counting activity. When she points up, they count up by six, and when she points down, they count down by six. The arrows show when she changes direction. a. Fill in the blanks to show the group counting answers. b. Write a multiplication sentence and a division sentence to show the last number is the product of 6 and another number.',
+  '4-5': 'Julie counts by six to solve 6 x 7. She says the answer is 36. Is she right? Explain your answer.',
+  '5-1': 'Skip-count by seven to fill in the blanks in the fish bowls. Match each count-by to its multiplication expression. Then, use the multiplication expression to write the related division fact directly to the right.',
+  '5-2': 'Complete the count-by seven sequence. Then, write a multiplication equation and a division equation to represent each blank you filled in.',
+  '5-3': 'Abe says 3 x 7 = 21 because 1 seven is 7, 2 sevens are 14, and 3 sevens are 14 + 6 + 1, which equals 21. Why did Abe add 6 and 1 to 14 when he is counting by seven?',
+  '5-4': 'Molly says she can count by seven 6 times to solve 7 x 6. James says he can count by six 7 times to solve this problem. Who is right? Explain your answer.',
+  '6-1': 'Label the tape diagrams. Then, fill in the blanks to make the statements true for 6 x 6, 7 x 6, 8 x 6, and 9 x 6 using 5 x 6 plus the remaining groups.',
+  '6-2': 'Break apart 54 to solve 54 divided by 6.',
+  '6-3': 'Break apart 49 to solve 49 divided by 7.',
+  '6-4': 'Robert says that he can solve 6 x 8 by thinking of it as (5 x 8) + 8. Is he right? Draw a picture to help explain your answer.',
+  '6-5': 'Kelly solves 42 divided by 7 by using a number bond to break apart 42 into two parts. Show what her work might look like below.',
+  '7-1': 'Match the words to the correct equation.',
+  '7-2': 'Write an equation to represent the tape diagram, and solve for the unknown. The tape diagram shows six equal parts labeled 8 and a total labeled k.',
+  '7-3': 'Model each problem with a drawing. Then, write an equation using a letter to represent the unknown, and solve for the unknown. a. Each student gets 3 pencils. There are a total of 21 pencils. How many students are there? b. Henry spends 24 minutes practicing 6 different basketball drills. He spends the same amount of time on each drill. How much time does Henry spend on each drill? c. Jessica has 8 pieces of yarn for a project. Each piece of yarn is 6 centimeters long. What is the total length of the yarn? d. Ginny measures 6 milliliters of water into each beaker. She pours a total of 54 milliliters. How many beakers does Ginny use?',
+  '8-1': 'Solve. Complete the expressions with parentheses already shown, including parts a through p.',
+  '8-2': 'Use parentheses to make the equations true.',
+  '8-3': 'The teacher writes 24 divided by 4 plus 2 equals blank on the board. Chad says it equals 8. Samir says it equals 4. Explain how placing the parentheses in the equation can make both answers true.',
+  '8-4': 'Natasha solves 12 + 15 divided by 3 by finding the sum of 5 and 12. Place the parentheses in the equation to show her thinking. Then, solve.',
+  '8-5': 'Find two possible answers to the expression 7 + 3 x 2 by placing the parentheses in different places.',
+  '9-1': 'Use the array to complete the equation. a. 3 x 12 = ____. b. (3 x 3) x 4 = ____ x 4 = ____. c. 3 x 14 = ____. d. (____ x ____) x 7 = ____ x ____ = ____.',
+  '9-2': 'Place parentheses in the equations to simplify. Then, solve. The first one has been done for you.',
+  '9-3': 'Charlotte finds the answer to 16 x 2 by thinking about 8 x 4. Explain her strategy.',
+  '9-4': 'Explain Charlotte\'s associative-property strategy: 16 x 2 can be regrouped as 8 x 4 because 16 is 8 x 2 and (8 x 2) x 2 = 8 x 4.',
+  '10-1': 'Label the arrays. Then, fill in the blanks below to make the statements true for 8 x 8 and 8 x 9 using 8 x 5 plus the remaining columns.',
+  '10-2': 'Break apart and distribute to solve 56 divided by 8.',
+  '10-3': 'Break apart and distribute to solve 72 divided by 8.',
+  '10-4': 'An octagon has 8 sides. Skip-count to find the total number of sides on 9 octagons.',
+  '10-5': 'Multiply: 8 x 6, 3 x 8, 4 x 8, 8 x 10, 8 x 8, and 7 x 8.',
+  '10-6': 'Match each division expression to its quotient: 24 divided by 8, 32 divided by 8, 16 divided by 8, 64 divided by 8, 48 divided by 8, and 72 divided by 8.',
+  '11-1': 'Ms. Santor divides 32 students into 8 equal groups for a field trip. Draw a tape diagram, and label the number of students in each group as n. Write an equation, and solve for n.',
+  '11-2': 'Tara buys 6 packs of printer paper. Each pack of paper costs $8. Draw a tape diagram, and label the total amount she spends as m. Write an equation, and solve for m.',
+  '11-3': 'Mr. Reed spends $24 on coffee beans. How many kilograms of coffee beans does he buy? Draw a tape diagram, and label the total amount of coffee beans he buys as c. Write an equation, and solve for c. The source label is $8 for 1 kg.',
+  '11-4': 'Eight boys equally share 4 packs of baseball cards. Each pack contains 10 cards. How many cards does each boy get?',
+  '11-5': 'There are 8 bags of yellow and green balloons. Each bag contains 7 balloons. If there are 35 yellow balloons, how many green balloons are there?',
+  '11-6': 'The fruit seller packs 72 oranges into bags of 8 each. He sells all the oranges at $4 a bag. How much money did he receive?',
+  '12-1': 'Each unit has a value of 9. Find the value of each row. Then, add the rows to find the total for 6 x 9, 7 x 9, 8 x 9, and 9 x 9.',
+  '12-2': 'Find the total value of the shaded blocks using 9 = 10 - 1 for 9 x 6, 9 x 7, 9 x 8, and 9 x 9.',
+  '12-3': 'Matt buys a pack of postage stamps. He counts 9 rows of 4 stamps. He thinks of 10 fours to find the total number of stamps. Show the strategy that Matt might have used to find the total number of stamps.',
+  '12-4': 'Match the products and quotients for nines facts.',
+  '13-1': 'a. Skip-count by nine. b. Look at the tens place in the count-by. What is the pattern? c. Look at the ones place in the count-by. What is the pattern?',
+  '13-2': 'Complete to make true statements using the add 10, subtract 1 pattern for 1 x 9 through 10 x 9.',
+  '13-3': 'a. Analyze the equations in Problem 2. What is the pattern? b. Use the pattern to find the next 4 facts. c. Use Kent\'s tens-and-ones digit strategy to solve 6 x 9 and 7 x 9. d. Show an example of when Kent\'s pattern does not work.',
+  '13-4': 'Each equation contains a letter representing the unknown. Find the value of each unknown. Then, write the letters that match the answers to solve the riddle.',
+  '14-1': 'a. Multiply. Then, add the tens digit and ones digit of each product. b. What is the sum of the digits in each product? How can this strategy help you check your work with the nines facts? c. Araceli continues to count by nines and says the sum of the digits is still 9. Is she correct? Why or why not?',
+  '14-2': 'Araceli uses the number of groups in 8 x 9 to help her find the product. She uses 8 - 1 = 7 for the tens digit and 10 - 8 = 2 for the ones digit. Use her strategy to find 4 more facts.',
+  '14-3': 'Dennis calculates 9 x 8 by thinking about it as 80 - 8 = 72. Explain Dennis\' strategy.',
+  '14-4': 'Sonya figures out the answer to 7 x 9 by putting down her right index finger. What is the answer? Explain how to use Sonya\'s finger strategy.',
+  '15-1': 'Write an equation, and use a letter to represent the unknown. Mrs. Parson gave each of her grandchildren $9. She gave a total of $36. How many grandchildren does Mrs. Parson have?',
+  '15-2': 'Write an equation, and use a letter to represent the unknown. Shiva pours 27 liters of water equally into 9 containers. How many liters of water are in each container?',
+  '15-3': 'Write an equation, and use a letter to represent the unknown. Derek cuts 7 pieces of wire. Each piece is 9 meters long. What is the total length of the 7 pieces?',
+  '15-4': 'Write an equation, and use a letter to represent the unknown. Aunt Deena and Uncle Chris share the cost of a limousine ride with their 7 friends. The ride cost a total of $63. If everyone shares the cost equally, how much does each person pay?',
+  '15-5': 'Write an equation, and use a letter to represent the unknown. Cara bought 9 packs of beads. There are 10 beads in each pack. She always uses 30 beads to make each necklace. How many necklaces can she make if she uses all the beads?',
+  '15-6': 'Write an equation, and use a letter to represent the unknown. There are 8 erasers in a set. Damon buys 9 sets. After giving some erasers away, Damon has 35 erasers left. How many erasers did he give away?',
+  '16-1': 'Complete the multiplication and division statements using the rules for multiplying and dividing with 0 and 1.',
+  '16-2': 'Match each equation with its solution.',
+  '16-3': 'Let n be a number. Complete the blanks with the products for 1 x 1 through n x 1. What pattern do you notice?',
+  '16-4': 'Josie says that any number divided by 1 equals that number. a. Write a division equation using n to represent Josie\'s statement. b. Let n = 6. Write a new equation, and draw a picture to show that your equation is true. c. Write the related multiplication equation that you can use to check your division equation.',
+  '16-5': 'Matt explains what he learned about dividing with zero to his little sister. a. What might Matt tell his sister about solving 0 divided by 9? b. What might Matt tell his sister about solving 8 divided by 0? c. What might Matt tell his sister about solving 0 divided by 0?',
+  '17-1': 'Write the products into the 1-by-1 through 8-by-8 multiplication table as fast as you can. a. Color all the squares with even products orange. Can an even product ever have an odd factor? b. Can an odd product ever have an even factor? c. Everyone knows that 7 x 4 = (5 x 4) + (2 x 4). Explain how this is shown in the table. d. Use what you know to find the product of 7 x 16, or 8 sevens + 8 sevens.',
+  '17-2': 'In the table, only the products on the diagonal are shown. a. Label each product on the diagonal. b. Draw an array to match each expression in the table, and label the number of squares added to make each new array. c. What pattern do you notice in the number of squares that are added to each new array? d. Use the pattern to prove that 9 x 9 is the sum of the first 9 odd numbers.',
+  '18-1': 'Use the RDW process. Explain why your answer is reasonable. Rose has 6 pieces of yarn that are each 9 centimeters long. Sasha gives Rose a piece of yarn. Now, Rose has a total of 81 centimeters of yarn. What is the length of the yarn that Sasha gives Rose?',
+  '18-2': 'Use the RDW process. Explain why your answer is reasonable. Julio spends 29 minutes doing his spelling homework. He then completes each math problem in 4 minutes. There are 7 math problems. How many minutes does Julio spend on his homework in all?',
+  '18-3': 'Use the RDW process. Explain why your answer is reasonable. Pearl buys 125 stickers. She gives 53 stickers to her little sister. Pearl then puts 9 stickers on each page of her album. If she uses all of her remaining stickers, on how many pages does Pearl put stickers?',
+  '18-4': 'Use the RDW process. Explain why your answer is reasonable. Tanner\'s beaker had 45 milliliters of water in it at first. After each of his friends poured in 8 milliliters, the beaker contained 93 milliliters. How many friends poured water into Tanner\'s beaker?',
+  '18-5': 'Use the RDW process. Explain why your answer is reasonable. Cora weighs 4 new, identical pencils and a ruler. The total weight of these items is 55 grams. She weighs the ruler by itself and it weighs 19 grams. How much does each pencil weigh?',
+  '19-1': 'Use the disks to fill in the blanks in the equations for 4 x 3 ones and 4 x 3 tens.',
+  '19-2': 'Use the chart to complete the blanks in the equations for 2 x 4 ones, 2 x 4 tens, 3 x 5 ones, 3 x 5 tens, 4 x 5 ones, and 4 x 5 tens.',
+  '19-3': 'Fill in the blank to make each equation true: 7 x 2, 7 tens x 2, 8 x 3, 8 tens x 3, 60 x 5, 4 x 80, 7 x 40, and 50 x 8.',
+  '19-4': 'A bus can carry 40 passengers. How many passengers can 6 buses carry? Model with a tape diagram.',
+  '20-1': 'Use the chart to complete the equations. Then, solve. The first one has been done for you: (2 x 4) x 10, 2 x (4 x 10), (3 x 5) x 10, and 3 x (5 x 10).',
+  '20-2': 'Place parentheses in the equations to find the related fact. Then, solve. The first one has been done for you.',
+  '20-3': 'Gabriella solves 20 x 4 by thinking about 10 x 8. Explain her strategy.',
+  '21-1': 'There are 60 seconds in 1 minute. Use a tape diagram to find the total number of seconds in 5 minutes and 45 seconds.',
+  '21-2': 'Lupe saves $30 each month for 4 months. Does she have enough money to buy the art supplies for $142? Explain why or why not.',
+  '21-3': 'Brad receives 5 cents for each can or bottle he recycles. How many cents does Brad earn if he recycles 48 cans and 32 bottles?',
+  '21-4': 'A box of 10 markers weighs 105 grams. If the empty box weighs 15 grams, how much does each marker weigh?',
+  '21-5': 'Mr. Perez buys 3 sets of cards. Each set comes with 18 striped cards and 12 polka dot cards. He uses 49 cards. How many cards does he have left?',
+  '21-6': 'Ezra earns $9 an hour working at a book store. She works for 7 hours each day on Mondays and Wednesdays. How much does Ezra earn each week?'
+};
+
+const EQUATION_OVERRIDES: Record<string, string[]> = {
+  '1-3': [
+    '2 sevens = 7 twos',
+    '3 sixes = 6 threes = 18',
+    '10 eights = 8 tens = 80',
+    '4 x 6 = 6 x 4 = 24',
+    '8 x 5 = 5 x 8 = 40',
+    '4 x 7 = 7 x 4 = 28',
+    '3 x 9 = 27',
+    '10 fours - 1 four = 9 x 4 = 36'
+  ],
+  '1-2': ['24 = 4 x 6', '24 = 6 x 4'],
+  '2-1': ['5 x 7 = 35', '35 + 7 = 42', '6 x 7 = 42', '7 x 6 = 42'],
+  '2-2': ['5 x 8 = 40', '40 + 8 = 48', '8 x 6 = 48'],
+  '2-3': ['7 x 9 = 63'],
+  '2-4': ['32 divided by 8 = 4'],
+  '2-5': ['4 x 9 = 36', '500 - 435 = 65', '65 - 36 = 29'],
+  '3-1': ['5 x 4 = 20', '21 divided by 3 = 7', '24 divided by 6 = 4', '21 divided by 7 = 3', '32 divided by 8 = 4', '70 divided by 10 = 7', '80 divided by 8 = 10', '36 divided by 4 = 9'],
+  '3-2': ['3 x 8 = 24', '30 - 24 = 6'],
+  '3-3': ['4 x 7 = 28', '28 divided by 4 = 7'],
+  '3-4': ['32 - 12 = 20', '20 divided by 2 = 10', '10 + 12 = 22'],
+  '4-1': ['2 x 6 = 12', '4 x 6 = 24', '7 x 6 = 42', '9 x 6 = 54'],
+  '4-2': ['2 x 6 = 12', '3 x 6 = 18', '4 x 6 = 24', '24 divided by 6 = 4'],
+  '4-3': ['7 x 6 = 42', '42 divided by 6 = 7'],
+  '4-4': ['6 x 8 = 48', '48 divided by 6 = 8'],
+  '4-5': ['6 x 7 = 42'],
+  '5-1': ['7 x 6 = 42', '42 divided by 7 = 6', '7 x 3 = 21', '21 divided by 7 = 3', '7 x 8 = 56', '56 divided by 7 = 8', '7 x 10 = 70', '70 divided by 7 = 10'],
+  '5-2': ['3 x 7 = 21', '21 divided by 7 = 3', '5 x 7 = 35', '35 divided by 7 = 5', '7 x 7 = 49', '49 divided by 7 = 7', '8 x 7 = 56', '56 divided by 7 = 8'],
+  '5-3': ['14 + 6 + 1 = 21', '3 x 7 = 21'],
+  '5-4': ['7 x 6 = 42', '6 x 7 = 42'],
+  '6-1': ['6 x 6 = 36', '7 x 6 = 42', '8 x 6 = 48', '9 x 6 = 54'],
+  '6-2': ['54 divided by 6 = 9', '30 divided by 6 = 5', '24 divided by 6 = 4', '5 + 4 = 9'],
+  '6-3': ['49 divided by 7 = 7', '35 divided by 7 = 5', '14 divided by 7 = 2', '5 + 2 = 7'],
+  '6-4': ['5 x 8 = 40', '40 + 8 = 48', '6 x 8 = 48'],
+  '6-5': ['42 divided by 7 = 6'],
+  '7-1': ['n x 6 = 30', '7 x n = 42', '6 x 7 = n', '63 divided by n = 9', '36 divided by n = 6', 'n x 7 = 21'],
+  '7-2': ['6 x 8 = 48', '8 x 6 = 48'],
+  '7-3': ['21 divided by 3 = 7', '24 divided by 6 = 4', '8 x 6 = 48', '54 divided by 6 = 9'],
+  '8-1': ['(12 - 4) + 6 = 14', '12 - (4 + 6) = 2', '15 - (7 + 3) = 5', '(15 - 7) + 3 = 11', '(3 + 2) x 6 = 30', '3 + (2 x 6) = 15', '4 x (7 - 2) = 20', '(4 x 7) - 2 = 26'],
+  '8-2': ['(16 - 4) + 7 = 19', '16 - (4 + 7) = 5', '2 = 22 - (15 + 5)', '12 = (22 - 15) + 5', '(3 + 7) x 6 = 60', '3 + (7 x 6) = 45', '5 = (10 divided by 10) x 5', '50 = (100 divided by 10) x 5'],
+  '8-3': ['(24 divided by 4) + 2 = 8', '24 divided by (4 + 2) = 4'],
+  '8-4': ['12 + (15 divided by 3) = 17'],
+  '8-5': ['(7 + 3) x 2 = 20', '7 + (3 x 2) = 13'],
+  '9-1': ['3 x 12 = 36', '(3 x 3) x 4 = 9 x 4 = 36', '3 x 14 = 42', '(3 x 2) x 7 = 6 x 7 = 42'],
+  '9-2': ['2 x 14 = 4 x 7 = 28', '3 x 12 = 9 x 4 = 36', '3 x 14 = 6 x 7 = 42', '15 x 3 = 5 x 9 = 45', '15 x 2 = 5 x 6 = 30'],
+  '9-3': ['16 x 2 = 32', '8 x 4 = 32'],
+  '9-4': ['16 x 2 = (8 x 2) x 2', '(8 x 2) x 2 = 8 x 4'],
+  '10-1': ['8 x 8 = 64', '8 x 5 = 40', '8 x 3 = 24', '40 + 24 = 64', '8 x 9 = 72', '8 x 4 = 32', '40 + 32 = 72'],
+  '10-2': ['56 divided by 8 = 7', '40 divided by 8 = 5', '16 divided by 8 = 2', '5 + 2 = 7'],
+  '10-3': ['72 divided by 8 = 9', '40 divided by 8 = 5', '32 divided by 8 = 4', '5 + 4 = 9'],
+  '10-4': ['9 x 8 = 72'],
+  '10-5': ['8 x 6 = 48', '3 x 8 = 24', '4 x 8 = 32', '8 x 10 = 80', '8 x 8 = 64', '7 x 8 = 56'],
+  '10-6': ['24 divided by 8 = 3', '32 divided by 8 = 4', '16 divided by 8 = 2', '64 divided by 8 = 8', '48 divided by 8 = 6', '72 divided by 8 = 9'],
+  '11-1': ['32 divided by 8 = 4'],
+  '11-2': ['6 x 8 = 48'],
+  '11-3': ['24 divided by 8 = 3'],
+  '11-4': ['4 x 10 = 40', '40 divided by 8 = 5'],
+  '11-5': ['8 x 7 = 56', '56 - 35 = 21'],
+  '11-6': ['72 divided by 8 = 9', '9 x 4 = 36'],
+  '12-1': ['6 x 9 = 54', '7 x 9 = 63', '8 x 9 = 72', '9 x 9 = 81'],
+  '12-2': ['10 x 6 = 60', '60 - 6 = 54', '10 x 7 = 70', '70 - 7 = 63', '10 x 8 = 80', '80 - 8 = 72', '10 x 9 = 90', '90 - 9 = 81'],
+  '12-3': ['10 x 4 = 40', '40 - 4 = 36', '9 x 4 = 36'],
+  '12-4': ['45 divided by 9 = 5', '3 x 9 = 27', '9 divided by 9 = 1', '9 x 9 = 81', '90 divided by 9 = 10', '8 x 9 = 72', '9 x 4 = 36', '72 divided by 9 = 8'],
+  '13-1': ['2 x 9 = 18', '3 x 9 = 27', '5 x 9 = 45', '6 x 9 = 54', '7 x 9 = 63', '9 x 9 = 81', '10 x 9 = 90'],
+  '13-2': ['1 x 9 = 9', '2 x 9 = 18', '3 x 9 = 27', '4 x 9 = 36', '5 x 9 = 45', '6 x 9 = 54', '7 x 9 = 63', '8 x 9 = 72'],
+  '13-3': ['11 x 9 = 99', '12 x 9 = 108', '13 x 9 = 117', '14 x 9 = 126', '6 x 9 = 54', '7 x 9 = 63'],
+  '13-4': ['54 divided by 9 = 6', '81 divided by 9 = 9', '9 x 8 = 72', '90 divided by 9 = 10', '9 x 7 = 63', '9 x 3 = 27', '9 x 4 = 36', '9 x 2 = 18'],
+  '14-1': ['2 x 9 = 18', '3 x 9 = 27', '4 x 9 = 36', '5 x 9 = 45', '6 x 9 = 54', '7 x 9 = 63', '8 x 9 = 72', '9 x 9 = 81'],
+  '14-2': ['8 x 9 = 72', '4 x 9 = 36', '6 x 9 = 54', '7 x 9 = 63', '9 x 9 = 81'],
+  '14-3': ['9 x 8 = 80 - 8', '80 - 8 = 72'],
+  '14-4': ['7 x 9 = 63'],
+  '15-1': ['36 divided by 9 = 4'],
+  '15-2': ['27 divided by 9 = 3'],
+  '15-3': ['7 x 9 = 63'],
+  '15-4': ['63 divided by 9 = 7'],
+  '15-5': ['9 x 10 = 90', '90 divided by 30 = 3'],
+  '15-6': ['8 x 9 = 72', '72 - 35 = 37'],
+  '16-1': ['6 x 1 = 6', '0 divided by 7 = 0', '8 x 1 = 8', '9 divided by 1 = 9', '0 divided by 5 = 0', '4 divided by 4 = 1', '3 x 1 = 3'],
+  '16-2': ['1 x 3 = 3', '0 divided by 4 = 0', '1 x 6 = 6', '7 divided by 7 = 1', '9 x 1 = 9', '8 divided by 1 = 8'],
+  '16-3': ['1 x 1 = 1', '2 x 1 = 2', '3 x 1 = 3', '4 x 1 = 4', '5 x 1 = 5', '6 x 1 = 6', '7 x 1 = 7', '8 x 1 = 8'],
+  '16-4': ['n divided by 1 = n', '6 divided by 1 = 6', '6 x 1 = 6'],
+  '16-5': ['0 divided by 9 = 0'],
+  '17-1': ['7 x 16 = 112', '8 x 7 = 56', '56 + 56 = 112'],
+  '17-2': ['1 x 1 = 1', '2 x 2 = 4', '3 x 3 = 9', '4 x 4 = 16', '5 x 5 = 25', '6 x 6 = 36', '1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 = 81'],
+  '18-1': ['6 x 9 = 54', '81 - 54 = 27'],
+  '18-2': ['7 x 4 = 28', '29 + 28 = 57'],
+  '18-3': ['125 - 53 = 72', '72 divided by 9 = 8'],
+  '18-4': ['93 - 45 = 48', '48 divided by 8 = 6'],
+  '18-5': ['55 - 19 = 36', '36 divided by 4 = 9'],
+  '19-1': ['4 x 3 = 12', '4 x 30 = 120'],
+  '19-2': ['2 x 4 = 8', '2 x 40 = 80', '3 x 5 = 15', '3 x 50 = 150', '4 x 5 = 20', '4 x 50 = 200'],
+  '19-3': ['7 x 2 = 14', '7 tens x 2 = 14 tens', '8 x 3 = 24', '8 tens x 3 = 24 tens', '60 x 5 = 300', '4 x 80 = 320', '7 x 40 = 280', '50 x 8 = 400'],
+  '19-4': ['6 x 40 = 240'],
+  '20-1': ['(2 x 4) x 10 = 80', '2 x (4 x 10) = 80', '(3 x 5) x 10 = 150', '3 x (5 x 10) = 150'],
+  '20-2': ['2 x 20 = 40', '2 x 30 = 60', '3 x 30 = 90', '2 x 50 = 100'],
+  '20-3': ['20 x 4 = 80', '10 x 8 = 80'],
+  '21-1': ['5 x 60 = 300', '300 + 45 = 345'],
+  '21-2': ['4 x 30 = 120', '120 < 142'],
+  '21-3': ['48 + 32 = 80', '80 x 5 = 400'],
+  '21-4': ['105 - 15 = 90', '90 divided by 10 = 9'],
+  '21-5': ['18 + 12 = 30', '3 x 30 = 90', '90 - 49 = 41'],
+  '21-6': ['7 x 9 = 63', '63 x 2 = 126']
 };
 
 function cleanSourcePrompt(prompt: string, lessonNumber: number, problemNumber: number): string {
@@ -1407,21 +1607,24 @@ function m3VisualTitle(problem: ProblemSetCenteredProblem, solved: boolean): str
 function makeProblem(lessonNumber: number, problemIndex: number): ProblemSetCenteredProblem {
   const source = STUDENT_WORK_SOURCE[`m3-l${lessonNumber}`];
   const sourceProblem = source.problems[problemIndex];
+  const problemKey = `${lessonNumber}-${sourceProblem.number}`;
+  const sourcePrompt = SOURCE_PROMPT_OVERRIDES[problemKey] ?? cleanSourcePrompt(sourceProblem.prompt, lessonNumber, sourceProblem.number);
   const solvedAnswer = SOLVED_ANSWERS[lessonNumber][problemIndex];
-  const metadata = PROBLEM_METADATA[`${lessonNumber}-${sourceProblem.number}`] ?? {};
+  const sourceEquations = EQUATION_OVERRIDES[problemKey] ?? sourceProblem.equations;
+  const metadata = PROBLEM_METADATA[problemKey] ?? {};
 
   const problem: ProblemSetCenteredProblem = {
     number: sourceProblem.number,
-    sourcePrompt: cleanSourcePrompt(sourceProblem.prompt, lessonNumber, sourceProblem.number),
+    sourcePrompt,
     blankPrompts: ['Complete the official Problem Set prompt, labels, equation blanks, table entries, or answer sentence.'],
-    blankEquations: sourceProblem.equations.length ? blankEquationTemplates(sourceProblem.equations) : [],
-    blankWorkspaceLabel: `Use this official Problem ${sourceProblem.number} workspace: ${usefulPromptLead(firstPromptSentence(cleanSourcePrompt(sourceProblem.prompt, lessonNumber, sourceProblem.number)), cleanSourcePrompt(sourceProblem.prompt, lessonNumber, sourceProblem.number))}.`,
-    blankVisualType: visualType(sourceProblem.prompt),
+    blankEquations: sourceEquations.length ? blankEquationTemplates(sourceEquations) : [],
+    blankWorkspaceLabel: `Use this official Problem ${sourceProblem.number} workspace: ${usefulPromptLead(firstPromptSentence(sourcePrompt), sourcePrompt)}.`,
+    blankVisualType: visualType(sourcePrompt),
     solvedAnswer,
-    equations: equationsFromAnswer(solvedAnswer, sourceProblem.equations),
+    equations: EQUATION_OVERRIDES[problemKey] ?? equationsFromAnswer(solvedAnswer, sourceProblem.equations),
     quotient: quotientFromAnswer(solvedAnswer),
     quotientMeaning: 'The answer completes the official Problem Set item and names the requested quantity, pattern, or statement.',
-    animationType: animationType(sourceProblem.prompt),
+    animationType: animationType(sourcePrompt),
     unitLabel: 'units',
     groupLabel: 'groups',
     explanation: 'Solved mode completes the same official Module 3 Problem Set item using the lesson strategy, then checks that the equation and answer match the prompt.',

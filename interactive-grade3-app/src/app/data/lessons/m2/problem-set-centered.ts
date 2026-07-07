@@ -99,6 +99,14 @@ type TimeLineSourceItemSeed = {
   status?: 'matched' | 'unmatched' | 'provided';
 };
 
+type TimeLineClockSeed = {
+  label: string;
+  timeLabel: string;
+  blankTimeLabel?: string;
+  showInBlank?: boolean;
+  caption?: string;
+};
+
 type TimeLineProblemSeed = {
   number: number;
   sourcePrompt: string;
@@ -107,7 +115,9 @@ type TimeLineProblemSeed = {
   displayStartMinute?: number;
   displayEndMinute?: number;
   tickLabels?: string[];
+  labelEvery?: number;
   sourceItems?: TimeLineSourceItemSeed[];
+  clocks?: TimeLineClockSeed[];
   points: TimeLinePointSeed[];
   jumps?: TimeLineJumpSeed[];
   showPointDetails?: boolean;
@@ -209,36 +219,36 @@ const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     5: '11:13.'
   },
   6: {
-    1: 'A correct illustration shows 1 kilogram as 1,000 grams and describes the kilogram as one whole mass unit.',
-    2: 'A correct illustration decomposes 1 kilogram into ten 100-gram groups.',
-    3: 'A correct illustration decomposes 100 grams into ten 10-gram groups.',
-    4: 'A correct illustration decomposes 10 grams into ten 1-gram groups.',
-    5: 'A correct comparison aligns 1 kg, 100 g, 10 g, and 1 g with thousands, hundreds, tens, and ones.'
+    1: 'Illustrations and descriptions will vary. A complete response shows the process of making a 1-kilogram weight.',
+    2: 'Illustrations and descriptions will vary. A complete response decomposes 1 kilogram into groups of 100 grams.',
+    3: 'Illustrations and descriptions will vary. A complete response decomposes 100 grams into groups of 10 grams.',
+    4: 'Illustrations and descriptions will vary. A complete response decomposes 10 grams into groups of 1 gram.',
+    5: 'Answers will vary. A complete comparison connects the kilogram and gram exploration to the place value chart.'
   },
   7: {
-    1: 'A-D. Variable objects; each benchmark row must name a reasonable object and record an actual checked weight.',
+    1: 'A-D. Objects and weights will vary. Each benchmark row should name classroom objects and record actual checked weights.',
     2: 'E. 1. grams; 2. kilograms; 3. grams; 4. kilograms; 5. kilograms; 6. grams.',
     3: 'F. 2 kilograms since 1 bottle of water weighs about 1 kilogram.',
     4: 'G. Yes; 10 units of 100 grams equal 1000 grams, which is the same as 1 kilogram.'
   },
   8: {
-    1: '464; 355.',
-    2: 'a. 78; problem modeled with tape diagram. b. 8; problem modeled with tape diagram.',
-    3: 'Tape diagram drawn correctly; about 15 kg.',
-    4: 'a. About 3 kg; b. About 21 kg.'
+    1: 'The string beans weigh 464 grams. The grapes weigh 355 grams.',
+    2: 'a. Keiko and Jiro weigh 78 kilograms altogether; problem modeled with a tape diagram. b. Jiro is 8 kilograms heavier than Keiko; problem modeled with a tape diagram.',
+    3: 'Tape diagram drawn correctly; 3 houseplants weigh about 15 kilograms.',
+    4: 'a. Jane takes home about 3 kilograms of apples. b. Seven pumpkins weigh about 21 kilograms altogether.'
   },
   9: {
     1: 'a. Variable predictions. b. Each container must have a measured result checked against the less than, more than, or about 1 liter prediction.',
     2: 'c. A correct illustration decomposes 1 liter into ten 100-milliliter units.',
-    3: 'd. A correct illustration decomposes each measured cup capacity into ten equal smaller units.',
-    4: 'e. A correct illustration shows base-ten decomposition. f. They both break apart into 1 thousand units. 1 liter is 1000 milliliters, and 1 kilogram is 1000 grams.',
+    3: 'd-e. Correct illustrations decompose Cup K and Cup L into ten equal smaller units using each cup\'s measured capacity.',
+    4: 'f. They both break apart into 1 thousand units. 1 liter is 1000 milliliters, and 1 kilogram is 1000 grams.',
     5: 'g. 1 gram; 1 liter is the same as 1 kilogram, and they break apart the same way into 1 thousand units.'
   },
   10: {
     1: 'Vertical number line on container labeled by hundreds. a. 500 mL; the reason identifies halfway between 0 and 1,000 mL. b. A correct explanation uses equal 100 mL intervals on the container scale. c. 700 mL.',
     2: '3 L; 6 L; 4 L; 0 L.',
     3: '400 mL; 200 mL; 1000 mL; 700 mL.',
-    4: 'a. Capacity of each barrel plotted and labeled correctly on number line. b. Barrel C. c. Barrel D. d. Barrel B because it is closest to 70 mL OR Barrel A because it has enough capacity to hold 70 L. e. Number line used to find answer; 28 more liters.'
+    4: 'a. Capacity of each barrel plotted and labeled correctly on number line. b. Barrel C. c. Barrel D. d. Barrel B because it is closest to 70 L OR Barrel A because it has enough capacity to hold 70 L. e. Number line used to find answer; 28 more liters.'
   },
   11: {
     1: 'a. 558 g; b. 445 g.',
@@ -263,12 +273,12 @@ const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     1: 'a. 100; rounding modeled on number line; b. 300; rounding modeled on number line; c. 300; rounding modeled on number line; d. 1,300; rounding modeled on number line; e. 1,600; rounding modeled on number line; f. 1,300; rounding modeled on number line.',
     2: 'a. 500 stickers; b. 500 pages; c. 800 mL; d. $1,300; e. 1,800 km.',
     3: '550, 639, 603.',
-    4: 'Both are correct because 1,900 is the same value as 19 hundreds.'
+    4: 'Both are correct; explanations will vary. A complete explanation may say 1,865 rounds to 1,900, and 1,900 is the same value as 19 hundreds.'
   },
   15: {
     1: 'a. 51 mL; b. 71 mL; c. 171 mL; d. 89 cm; e. 592 cm; f. 627 cm; g. 92 g; h. 639 g; i. 956 g; j. 3 L 657 mL; k. 5 kg 876 g.',
     2: '107 g.',
-    3: '475 mL + 317 mL = 792 mL; Andrea is correct because Jason did not compose the tens correctly.',
+    3: '475 mL + 317 mL = 792 mL; Andrea is correct; explanations will vary.',
     4: '47 min.'
   },
   16: {
@@ -278,9 +288,9 @@ const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     4: '741 mL.'
   },
   17: {
-    1: 'a. A: 704; 500, 300, 800. 700; 500, 200, 700. 697; 400, 200, 600. B: 517; 400, 200, 600. 504; 400, 100, 500. 496; 300, 100, 400. C: 810; 700, 200, 900. 805; 600, 200, 800. 793; 600, 100, 700. b. Correct explanation: both addends are close to the halfway point, so the rounding effects balance each other out.',
-    2: 'a. Estimate may use a reasonable rounding strategy. b. 245 min. c. Correct explanation compares the chosen estimate to the exact total and explains the rounding method.',
-    3: 'a. Estimate may use a reasonable rounding strategy. b. 256 kilograms; a tape diagram is drawn and labeled to represent the problem.'
+    1: 'a. A: 704; 500, 300, 800. 700; 500, 200, 700. 697; 400, 200, 600. B: 517; 400, 200, 600. 504; 400, 100, 500. 496; 300, 100, 400. C: 810; 700, 200, 900. 805; 600, 200, 800. 793; 600, 100, 700. b. Explanations will vary; both addends are close to the halfway point, so they balance each other out.',
+    2: 'a. Estimates will vary. b. 245 min. c. Explanations will vary; a different way of rounding is shown and compared.',
+    3: 'a. Estimates will vary. b. 256 kilograms; a tape diagram is drawn and labeled to represent the problem.'
   },
   18: {
     1: 'a. 36 mL; b. 336 mL; c. 136 mL; d. 497 cm; e. 361 cm; f. 498 cm; g. 177 g; h. 73 g; i. 75 g; j. 1 km 315 m; k. 2 kg 31 g.',
@@ -295,9 +305,9 @@ const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     4: '235 L.'
   },
   20: {
-    1: 'a. A: 295; 400, 200, 200. 298; 500, 200, 300. 299; 400, 100, 300. 302; 500, 100, 400. B: 486; 700, 300, 400. 495; 800, 300, 500. 498; 700, 200, 500. 508; 800, 200, 600. b. Correct explanation: in the most precise estimates, both numbers either rounded down or both rounded up.',
-    2: 'a. Estimate may use a reasonable rounding strategy. b. 188 L; tape diagram drawn and labeled to model problem.',
-    3: 'a. Estimate may use a reasonable rounding strategy and explanation. b. 128 g; tape diagram drawn and labeled to model problem.'
+    1: 'a. A: 295; 400, 200, 200. 298; 500, 200, 300. 299; 400, 100, 300. 302; 500, 100, 400. B: 486; 700, 300, 400. 495; 800, 300, 500. 498; 700, 200, 500. 508; 800, 200, 600. b. Explanations will vary; in the differences that gave the most precise estimates, both numbers either rounded down or both numbers rounded up.',
+    2: 'a. Estimates will vary. b. 188 L; tape diagram drawn and labeled to model problem.',
+    3: 'a. Estimates and explanations will vary. b. 128 g; tape diagram drawn and labeled to model problem.'
   },
   21: {
     1: 'a. 91 g, 58 g, 90 g, 60 g, 150 g; 91 g, 58 g, 149 g. b. 91 g, 58 g, 90 g, 60 g, 30 g; 91 g, 58 g, 33 g. c. Because both estimates are close to the actual answers.',
@@ -375,10 +385,10 @@ const TEACHER_PROBLEM_PROMPTS: Record<number, Record<number, string>> = {
     1: 'Label the vertical number line on the container. a. What did you label as the halfway mark? Why? b. Explain how pouring each plastic cup of water helped you create a vertical number line. c. If you pour out 300 mL of water, how many mL are left in the container?',
     2: 'How much liquid is in each container?',
     3: 'Estimate the amount of liquid in each container to the nearest hundred milliliters.',
-    4: 'The chart shows the capacity of 4 barrels: A 75 liters, B 68 liters, C 96 liters, D 52 liters. Label the number line, identify greatest and smallest capacity, decide which barrel Ben most likely bought if it holds about 70 liters, and find how many more liters Barrel C can hold than Barrel B.'
+    4: 'The chart shows the capacity of 4 barrels: A 75 liters, B 68 liters, C 96 liters, D 52 liters. a. Label the number line to show the capacity of each barrel. Barrel A has been done for you. b. Which barrel has the greatest capacity? c. Which barrel has the smallest capacity? d. Ben buys a barrel that holds about 70 liters. Which barrel did he most likely buy? Explain. e. Use the number line to find how many more liters Barrel C can hold than Barrel B.'
   },
   11: {
-    1: 'The total weight of a can of tomatoes and a jar of baby food is 671 grams. a. The jar weighs 113 grams. How much does the can weigh? b. How much more does the can weigh than the jar?',
+    1: 'The total weight of a can of tomatoes and a jar of baby food is 671 grams. a. The jar of baby food weighs 113 grams. How much does the can of tomatoes weigh? b. How much more does the can of tomatoes weigh than the jar of baby food?',
     2: 'The weight of a pen is 6 grams. a. What is the total weight of 10 pens? b. An empty box weighs 82 grams. What is the total weight of a box of 10 pens?',
     3: 'The total weight of an apple, lemon, and banana is 508 grams. a. If the apple and lemon together weigh 317 grams, what is the weight of the banana? b. If the lemon weighs 68 grams less than the banana, how much does the lemon weigh? c. What is the weight of the apple?',
     4: 'A frozen turkey weighs about 5 kilograms. The chef orders 45 kilograms of turkey. About how many frozen turkeys does he order? Draw and label a tape diagram.',
@@ -392,55 +402,55 @@ const TEACHER_PROBLEM_PROMPTS: Record<number, Record<number, string>> = {
     4: 'Work with a partner. Use a clock to complete the activity-time chart and round each time to the nearest 10 minutes.'
   },
   13: {
-    1: 'Round to the nearest ten. Use the number line to model your thinking for 32, 36, 62, 162, 278, and 405.',
+    1: 'Round to the nearest ten. Use the number line to model your thinking. a. 32 b. 36 c. 62 d. 162 e. 278 f. 405.',
     2: 'Round the weight of each item to the nearest 10 grams. Draw number lines to model your thinking for 36 grams, 52 grams, and 142 grams.',
     3: 'Carl\'s basketball game begins at 3:03 p.m. and ends at 3:51 p.m. a. How many minutes did the game last? b. Round the total number of minutes to the nearest 10 minutes.'
   },
   14: {
-    1: 'Round to the nearest hundred. Use the number line to model your thinking for 143, 286, 320, 1,320, 1,572, and 1,250.',
-    2: 'Complete the chart by rounding 480 stickers, 525 pages, 750 milliliters, $1,297, and 1,842 kilometers to the nearest hundred.',
+    1: 'Round to the nearest hundred. Use the number line to model your thinking. a. 143 b. 286 c. 320 d. 1,320 e. 1,572 f. 1,250.',
+    2: 'Complete the chart. a. Julie has 480 stickers in her collection. To the nearest hundred, about how many stickers does Julie have? b. The library has 525 pages in its copy of Charlie and the Chocolate Factory. To the nearest hundred, about how many pages does the book have? c. A container holds 750 milliliters of water. To the nearest hundred, about how many milliliters of water does the container hold? d. Marsha pays $1,297 for a computer. To the nearest hundred dollars, about how much does the computer cost? e. The Nile River is 1,842 kilometers long. To the nearest hundred kilometers, about how long is the Nile River?',
     3: 'Circle the numbers that round to 600 when rounding to the nearest hundred: 527, 550, 639, 681, 713, and 603.',
     4: 'The teacher asks students to round 1,865 to the nearest hundred. Christian says it is one thousand, nine hundred. Alexis says it is 19 hundreds. Who is correct? Explain.'
   },
   15: {
-    1: 'Find the sums. Choose mental math or the algorithm for the eleven measurement addition problems in milliliters, centimeters, grams, liters/milliliters, and kilograms/grams.',
-    2: 'Nadine and Jen buy popcorn and a pretzel. The pretzel weighs 63 grams more than the 44-gram popcorn. What is the weight of the pretzel?',
-    3: 'Jason and Andrea find the total liquid volume in their beakers. Jason says 782 milliliters, but Andrea says 792 milliliters. Jason has 475 mL and Andrea has 317 mL. Show whose calculation is correct and explain the mistake.',
-    4: 'Greg takes 15 minutes to mow the front lawn. The back lawn takes 17 more minutes than the front lawn. What is the total amount of time Greg spends mowing the lawns?'
+    1: 'Find the sums below. Choose mental math or the algorithm. a. 46 mL + 5 mL b. 46 mL + 25 mL c. 46 mL + 125 mL d. 59 cm + 30 cm e. 509 cm + 83 cm f. 597 cm + 30 cm g. 29 g + 63 g h. 345 g + 294 g i. 480 g + 476 g j. 1 L 245 mL + 2 L 412 mL k. 2 kg 509 g + 3 kg 367 g.',
+    2: 'Nadine and Jen buy a small bag of popcorn and a pretzel at the movie theater. The pretzel weighs 63 grams more than the popcorn. What is the weight of the pretzel?',
+    3: 'In math class, Jason and Andrea find the total liquid volume of water in their beakers. Jason says the total is 782 milliliters, but Andrea says it is 792 milliliters. The amount of water in each beaker can be found in the table: Jason 475 mL, Andrea 317 mL. Show whose calculation is correct. Explain the mistake of the other student.',
+    4: 'It takes Greg 15 minutes to mow the front lawn. It takes him 17 more minutes to mow the back lawn than the front lawn. What is the total amount of time Greg spends mowing the lawns?'
   },
   16: {
-    1: 'Find the sums for the eleven measurement addition problems in milliliters, centimeters, grams, liters/milliliters, and kilograms/grams.',
-    2: 'Lane makes sauerkraut. He uses 907 grams of cabbage and 93 grams of salt. Draw and label a tape diagram to find the total weight.',
+    1: 'Find the sums below. a. 52 mL + 68 mL b. 352 mL + 68 mL c. 352 mL + 468 mL d. 56 cm + 94 cm e. 506 cm + 94 cm f. 506 cm + 394 cm g. 697 g + 138 g h. 345 g + 597 g i. 486 g + 497 g j. 3 L 251 mL + 1 L 549 mL k. 4 kg 384 g + 2 kg 467 g.',
+    2: 'Lane makes sauerkraut. He weighs the amounts of cabbage and salt he uses. Draw and label a tape diagram to find the total weight of the cabbage and salt Lane uses.',
     3: 'Sue bakes mini-muffins. After wrapping 86 muffins, she still has 58 muffins cooling. How many muffins did she bake altogether?',
-    4: 'The milk carton holds 183 milliliters more liquid than the 279 mL juice box. What is the total capacity of the juice box and milk carton?'
+    4: 'The milk carton holds 183 milliliters more liquid than the juice box. The juice box holds 279 mL. What is the total capacity of the juice box and milk carton?'
   },
   17: {
-    1: 'a. Find the actual sum either on paper or using mental math. Round each addend to the nearest hundred, and find the estimated sums. Circle the estimated sum that is the closest to its real sum. b. Look at the sums that gave the most precise estimates. Explain what they have in common.',
-    2: 'Janet watched a 94-minute movie on Friday night and a 151-minute movie on Saturday night. a. Decide how to round the minutes and estimate the total. b. How much time did Janet actually spend watching movies? c. Explain whether the estimate is close to the actual sum. Round in a different way and compare.',
-    3: 'Sadie, a bear at the zoo, weighs 182 kilograms. Her cub weighs 74 kilograms. a. Estimate the total weight using the method you think best. b. What is the actual weight? Model the problem with a tape diagram.'
+    1: 'a. Find the actual sum either on paper or using mental math. Round each addend to the nearest hundred, and find the estimated sums. A: 451 + 253, 451 + 249, 448 + 249. B: 356 + 161, 356 + 148, 347 + 149. C: 652 + 158, 647 + 158, 647 + 146. Circle the estimated sum that is the closest to its real sum. b. Look at the sums that gave the most precise estimates. Explain below what they have in common. You might use a number line to support your explanation.',
+    2: 'Janet watched a movie that is 94 minutes long on Friday night. She watched a movie that is 151 minutes long on Saturday night. a. Decide how to round the minutes. Then, estimate the total minutes Janet watched movies on Friday and Saturday. b. How much time did Janet actually spend watching movies? c. Explain whether or not your estimated sum is close to the actual sum. Round in a different way, and see which estimate is closer.',
+    3: 'Sadie, a bear at the zoo, weighs 182 kilograms. Her cub weighs 74 kilograms. a. Estimate the total weight of Sadie and her cub using whatever method you think best. b. What is the actual weight of Sadie and her cub? Model the problem with a tape diagram.'
   },
   18: {
-    1: 'Solve the eleven subtraction problems in milliliters, centimeters, grams, kilometers/meters, and kilograms/grams.',
+    1: 'Solve the subtraction problems below. a. 60 mL - 24 mL b. 360 mL - 24 mL c. 360 mL - 224 mL d. 518 cm - 21 cm e. 629 cm - 268 cm f. 938 cm - 440 cm g. 307 g - 130 g h. 307 g - 234 g i. 807 g - 732 g j. 2 km 770 m - 1 km 455 m k. 3 kg 924 g - 1 kg 893 g.',
     2: 'The total weight of 3 books is 405 grams. If 2 books weigh 233 grams, how much does the third book weigh? Use a tape diagram to model the problem.',
-    3: 'The chart shows movie lengths. Champions is 22 minutes shorter than The Lost Ship at 117 minutes, and Magical Forests is 145 minutes. a. How long is Champions? b. How much longer is Magical Forests than Champions?',
-    4: 'The total length of a rope is 208 centimeters. Scott cuts it into 3 pieces: 80 centimeters, 94 centimeters, and a third piece. How long is the third piece?'
+    3: 'The chart shows the lengths of three movies. The Lost Ship is 117 minutes, Magical Forests is 145 minutes, and Champions is unknown. a. The movie Champions is 22 minutes shorter than The Lost Ship. How long is Champions? b. How much longer is Magical Forests than Champions?',
+    4: 'The total length of a rope is 208 centimeters. Scott cuts it into 3 pieces. The first piece is 80 centimeters long. The second piece is 94 centimeters long. How long is the third piece of rope?'
   },
   19: {
-    1: 'Solve the eight subtraction problems in centimeters, grams, milliliters, kilometers/meters, and liters/milliliters.',
+    1: 'Solve the subtraction problems below. a. 340 cm - 60 cm b. 340 cm - 260 cm c. 513 g - 148 g d. 641 g - 387 g e. 700 mL - 52 mL f. 700 mL - 452 mL g. 6 km 802 m - 2 km 569 m h. 5 L 920 mL - 3 L 869 mL.',
     2: 'David is driving from Los Angeles to San Francisco. The total distance is 617 kilometers, and he has 468 kilometers left. How many kilometers has he driven so far?',
     3: 'The piano weighs 289 kilograms more than the piano bench. The piano weighs 297 kilograms. How much does the bench weigh?',
     4: 'Tank A holds 165 fewer liters of water than Tank B. Tank B holds 400 liters. How much water does Tank A hold?'
   },
   20: {
-    1: 'a. Find the actual differences either on paper or using mental math. Round each total and part to the nearest hundred and find the estimated differences. Circle the estimated differences closest to the actual differences. b. Explain what the most precise estimates have in common.',
-    2: 'Camden uses 372 liters of gas in two months. He uses 184 liters in the first month. a. Estimate the amount used in the second month by rounding each number as you think best. b. How many liters does Camden actually use in the second month? Model with a tape diagram.',
-    3: 'The pear, apple, and peach weigh 500 grams total. The pear and apple together weigh 372 grams. a. Estimate the weight of the peach by rounding each number as you think best and explain your choice. b. How much does the peach actually weigh? Model with a tape diagram.'
+    1: 'a. Find the actual differences either on paper or using mental math. Round each total and part to the nearest hundred and find the estimated differences. A: 448 - 153, 451 - 153, 448 - 149, 451 - 149. B: 747 - 261, 756 - 261, 747 - 249, 756 - 248. Circle the estimated differences that are the closest to the actual differences. b. Look at the differences that gave the most precise estimates. Explain below what they have in common. You might use a number line to support your explanation.',
+    2: 'Camden uses a total of 372 liters of gas in two months. He uses 184 liters of gas in the first month. How many liters of gas does he use in the second month? a. Estimate the amount of gas Camden uses in the second month by rounding each number as you think best. b. How many liters of gas does Camden actually use in the second month? Model the problem with a tape diagram.',
+    3: 'The weight of a pear, apple, and peach is 500 grams total. The pear and apple together weigh 372 grams. How much does the peach weigh? a. Estimate the weight of the peach by rounding each number as you think best. Explain your choice. b. How much does the peach actually weigh? Model the problem with a tape diagram.'
   },
   21: {
-    1: 'Weigh the bags of beans and rice on the scale. Then write the weight on the scales. a. Estimate and find the total weight. b. Estimate and find the difference. c. Are your answers reasonable? Explain why.',
-    2: 'Measure the lengths of the three pieces of yarn. a. Estimate the total length of Yarn A and Yarn C, then find the actual total. b. Estimate the difference between that total and Yarn B, then find the actual difference. Model with a tape diagram.',
-    3: 'Plot the amount of liquid in Containers D, E, and F on the number lines and round to the nearest 10 milliliters. a. Estimate and find the total amount of liquid in the three containers. b. Estimate and find the difference between Containers D and E. Model with a tape diagram.',
-    4: 'Shane watches a 115-minute movie including trailers. The chart gives trailer lengths of 5, 4, 3, 5, and 4 minutes. a. Find the total trailer minutes. b. Estimate and find the movie length without trailers. c. Is your answer reasonable? Explain why.'
+    1: 'Weigh the bags of beans and rice on the scale. Then, write the weight on the scales below. a. Estimate, and then find the total weight of the beans and rice. b. Estimate, and then find the difference between the weight of the beans and rice. c. Are your answers reasonable? Explain why.',
+    2: 'Measure the lengths of the three pieces of yarn. a. Estimate the total length of Yarn A and Yarn C. Then, find the actual total length. b. Subtract to estimate the difference between the total length of Yarns A and C, and the length of Yarn B. Then, find the actual difference. Model the problem with a tape diagram.',
+    3: 'Plot the amount of liquid in the three containers on the number lines below. Then, round to the nearest 10 milliliters. a. Estimate the total amount of liquid in three containers. Then, find the actual amount. b. Estimate to find the difference between the amount of water in Containers D and E. Then, find the actual difference. Model the problem with a tape diagram.',
+    4: 'Shane watches a movie in the theater that is 115 minutes long, including the trailers. The chart shows trailer lengths of 5 minutes, 4 minutes, 3 minutes, 5 minutes, and 4 minutes. a. Find the total number of minutes for all 5 trailers. b. Estimate to find the length of the movie without trailers. Then, find the actual length of the movie by calculating the difference between 115 minutes and the total minutes of trailers. c. Is your answer reasonable? Explain why.'
   }
 };
 
@@ -1061,6 +1071,16 @@ function timeLineProblem(seed: TimeLineProblemSeed): ProblemSetCenteredProblem {
 
 function timeLineVisual(seed: TimeLineProblemSeed, solved: boolean): ProblemVisualSpec {
   const sections: ProblemVisualSpec['sections'] = [
+    ...(seed.clocks ?? []).map((clock) => {
+      const showClockTime = solved || clock.showInBlank;
+      return {
+        kind: 'clock' as const,
+        label: clock.label,
+        timeLabel: showClockTime ? clock.timeLabel : clock.blankTimeLabel ?? 'Draw or read the source clock.',
+        timeValue: showClockTime ? clock.timeLabel : '',
+        caption: clock.caption
+      };
+    }),
     {
       kind: 'time-number-line',
       label: solved ? `Solved ${timeLineRangeLabel(seed)} minute line` : `Blank ${timeLineRangeLabel(seed)} minute line`,
@@ -1069,6 +1089,7 @@ function timeLineVisual(seed: TimeLineProblemSeed, solved: boolean): ProblemVisu
       displayStartMinute: seed.displayStartMinute,
       displayEndMinute: seed.displayEndMinute,
       tickLabels: seed.tickLabels ?? timeTicks,
+      labelEvery: seed.labelEvery,
       sourceItems: seed.sourceItems,
       points: solved ? seed.points : seed.points.filter((point) => point.open),
       jumps: solved ? seed.jumps : undefined,
@@ -1164,6 +1185,7 @@ function lesson(seed: LessonSeed): ProblemSetCenteredLesson {
 }
 
 const timeTicks = ['0', '5', '10', '15', '20', '25', '30', '35', '40', '45', '50', '55', '60'];
+const exactMinuteTicks = Array.from({ length: 61 }, (_, minute) => String(minute));
 const tensTicks = ['lower ten', 'halfway', 'upper ten'];
 const hundredTicks = ['lower hundred', 'halfway', 'upper hundred'];
 
@@ -1446,15 +1468,17 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       timeLineProblem({
         number: 1,
-        sourcePrompt: 'Plot points for the clock times and match the clocks to the number line.',
+        sourcePrompt: 'Plot a point on the number line for the times shown on the clocks below. Then, draw a line to match the clocks to the points.',
         startLabel: '7:00 p.m.',
         endLabel: '8:00 p.m.',
+        tickLabels: exactMinuteTicks,
+        labelEvery: 10,
         sourceItems: [
-          { label: 'analog clock', minute: 17, detail: 'first clock - 7:17', kind: 'analog', status: 'matched' },
-          { label: '7:03', minute: 3, detail: 'second clock', kind: 'digital', status: 'matched' },
-          { label: 'analog clock', minute: 55, detail: 'third clock - 7:55', kind: 'analog', status: 'matched' },
-          { label: 'analog clock', minute: 41, detail: 'fourth clock - 7:41', kind: 'analog', status: 'matched' },
-          { label: '7:28', minute: 28, detail: 'fifth clock - provided example', kind: 'digital', status: 'provided' }
+          { label: 'analog clock', minute: 17, sourceX: 6, detail: 'first clock - 7:17', kind: 'analog', status: 'matched' },
+          { label: '7:03', minute: 3, sourceX: 26, detail: 'second clock - 7:03', kind: 'digital', status: 'matched' },
+          { label: 'analog clock', minute: 55, sourceX: 52, detail: 'third clock - 7:55', kind: 'analog', status: 'matched' },
+          { label: 'analog clock', minute: 41, sourceX: 70, detail: 'fourth clock - 7:41', kind: 'analog', status: 'matched' },
+          { label: '7:28', minute: 28, sourceX: 90, detail: 'fifth clock - provided example', kind: 'digital', status: 'provided' }
         ],
         points: [
           { label: 'clock 1', minute: 17, detail: '7:17' },
@@ -1483,9 +1507,18 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 2,
-        sourcePrompt: 'Draw hands for 6:48 a.m.',
+        sourcePrompt: 'Jessie woke up this morning at 6:48 a.m. Draw hands on the clock below to show what time Jessie woke up.',
         startLabel: '6:00 a.m.',
         endLabel: '7:00 a.m.',
+        tickLabels: exactMinuteTicks,
+        clocks: [
+          {
+            label: 'Clock to draw',
+            timeLabel: '6:48 a.m.',
+            blankTimeLabel: 'Draw hands for 6:48 a.m.',
+            caption: 'Minute hand at 48; hour hand close to 7.'
+          }
+        ],
         points: [{ label: '6:48', minute: 48, detail: 'Jessie' }],
         jumps: [
           { label: '9 fives = 45', fromMinute: 0, toMinute: 45 },
@@ -1506,9 +1539,18 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 3,
-        sourcePrompt: 'Draw hands for 8:23 a.m.',
+        sourcePrompt: 'Mrs. Barnes starts teaching math at 8:23 a.m. Draw hands on the clock below to show what time Mrs. Barnes starts teaching math.',
         startLabel: '8:00 a.m.',
         endLabel: '9:00 a.m.',
+        tickLabels: exactMinuteTicks,
+        clocks: [
+          {
+            label: 'Clock to draw',
+            timeLabel: '8:23 a.m.',
+            blankTimeLabel: 'Draw hands for 8:23 a.m.',
+            caption: 'Minute hand at 23; hour hand a little past 8.'
+          }
+        ],
         points: [{ label: '8:23', minute: 23, detail: 'Mrs. Barnes' }],
         jumps: [
           { label: '4 fives = 20', fromMinute: 0, toMinute: 20 },
@@ -1529,9 +1571,19 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 4,
-        sourcePrompt: 'Read the clock showing when Rebecca finishes homework.',
+        sourcePrompt: 'The clock shows what time Rebecca finishes her homework. What time does Rebecca finish her homework?',
         startLabel: '5:00',
         endLabel: '6:00',
+        tickLabels: exactMinuteTicks,
+        clocks: [
+          {
+            label: 'Source clock',
+            timeLabel: '5:27',
+            blankTimeLabel: '5:27',
+            showInBlank: true,
+            caption: 'Read the source clock: 27 minutes after 5.'
+          }
+        ],
         points: [{ label: '5:27', minute: 27, detail: 'Rebecca' }],
         jumps: [
           { label: '5 fives = 25', fromMinute: 0, toMinute: 25 },
@@ -1552,9 +1604,19 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 5,
-        sourcePrompt: 'Read Mason\'s drop-off clock and find the coach arrival time 11 minutes before.',
+        sourcePrompt: 'The clock shows what time Mason\'s mom drops him off for practice. a. What time does Mason\'s mom drop him off? b. Mason\'s coach arrives 11 minutes before Mason\'s mom drops him off. What time does Mason\'s coach arrive?',
         startLabel: '3:00',
         endLabel: '4:00',
+        tickLabels: exactMinuteTicks,
+        clocks: [
+          {
+            label: 'Source clock',
+            timeLabel: '3:56',
+            blankTimeLabel: '3:56',
+            showInBlank: true,
+            caption: 'Read part a from the clock, then count back 11 minutes for part b.'
+          }
+        ],
         points: [
           { label: 'drop-off', minute: 56, detail: '3:56' },
           { label: 'coach', minute: 45, detail: '3:45' }
@@ -1582,14 +1644,170 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Identify which part is unknown before counting forward or backward.',
     summary: 'A number line supports elapsed-time addition and subtraction.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Cole reads from 6:23 p.m. to 6:49 p.m.', solvedAnswer: 'Cole reads for 26 minutes.', equations: ['6:49 - 6:23 = 26 minutes'], quotient: 26, unitLabel: 'minutes', numberLineModels: [numberLine('6:23 to 6:49', ['6:23', '+7', '+20', '6:49'], [3])] }),
-      problem({ number: 2, sourcePrompt: 'Natalie finishes practice at 2:45 p.m. after 37 minutes.', solvedAnswer: 'Natalie started at 2:08 p.m.', equations: ['2:45 - 37 minutes = 2:08'], numberLineModels: [numberLine('count back 37 minutes', ['2:08', '+37', '2:45'], [0])] }),
-      problem({ number: 3, sourcePrompt: 'Genevieve works from 11:27 a.m. to 11:58 a.m.', solvedAnswer: 'She works for 31 minutes.', equations: ['11:58 - 11:27 = 31 minutes'], quotient: 31, unitLabel: 'minutes', numberLineModels: [numberLine('11:27 to 11:58', ['11:27', '+31', '11:58'], [2])] }),
-      problem({ number: 4, sourcePrompt: 'Nate finishes at 4:47 p.m. after 38 minutes.', solvedAnswer: 'Nate started at 4:09 p.m.', equations: ['4:47 - 38 minutes = 4:09'], numberLineModels: [numberLine('count back 38 minutes', ['4:09', '+38', '4:47'], [0])] }),
-      problem({ number: 5, sourcePrompt: 'Andrea fishes from 9:03 a.m. for 49 minutes.', solvedAnswer: 'Andrea is done at 9:52 a.m.', equations: ['9:03 + 49 minutes = 9:52'], numberLineModels: [numberLine('9:03 plus 49', ['9:03', '+49', '9:52'], [2])] }),
-      problem({ number: 6, sourcePrompt: 'Use the clocks to find Dion\'s walk time to school.', solvedAnswer: 'Dion takes 19 minutes to walk to school.', equations: ['arrival time - leave time = 19 minutes'], blankVisualType: 'clock-workspace', animationType: 'clock-model' }),
-      problem({ number: 7, sourcePrompt: 'Sydney cleans for 45 minutes starting at 11:13 a.m.', solvedAnswer: 'Sydney finishes at 11:58 a.m.', equations: ['11:13 + 45 minutes = 11:58'], numberLineModels: [numberLine('11:13 plus 45', ['11:13', '+45', '11:58'], [2])] }),
-      problem({ number: 8, sourcePrompt: 'A musical lasts 42 minutes and ends at 1:59 p.m.', solvedAnswer: 'The musical started at 1:17 p.m.', equations: ['1:59 - 42 minutes = 1:17'], numberLineModels: [numberLine('count back 42 minutes', ['1:17', '+42', '1:59'], [0])] })
+      timeLineProblem({
+        number: 1,
+        sourcePrompt: 'Use a number line. Cole starts reading at 6:23 p.m. He stops at 6:49 p.m. How many minutes does Cole read?',
+        startLabel: '6:00 p.m.',
+        endLabel: '7:00 p.m.',
+        tickLabels: exactMinuteTicks,
+        points: [
+          { label: 'start', minute: 23, detail: '6:23' },
+          { label: 'stop', minute: 49, detail: '6:49' }
+        ],
+        jumps: [{ label: '26 min', fromMinute: 23, toMinute: 49 }],
+        blankNote: 'Use the source number-line workspace to count from 6:23 to 6:49.',
+        solvedNote: 'Counting forward from 6:23 to 6:49 gives 26 elapsed minutes.',
+        solvedAnswer: 'Cole reads for 26 minutes.',
+        equations: ['49 - 23 = 26', '6:23 p.m. + 26 min = 6:49 p.m.'],
+        blankWorkspaceLabel: 'Mark 6:23 and 6:49 on the same hour line, then count the elapsed minutes between them.',
+        meaning: 'The elapsed interval is Cole’s reading time.',
+        explanation: 'The number line shows the start time, stop time, and the 26 minutes between them.',
+        checks: ['Start time is 6:23 p.m.', 'End time is 6:49 p.m.', 'Answer is in minutes.']
+      }),
+      timeLineProblem({
+        number: 2,
+        sourcePrompt: 'Use a number line. Natalie finishes piano practice at 2:45 p.m. after practicing for 37 minutes. What time did Natalie\'s practice start?',
+        startLabel: '2:00 p.m.',
+        endLabel: '3:00 p.m.',
+        tickLabels: exactMinuteTicks,
+        points: [
+          { label: 'start', minute: 8, detail: '2:08' },
+          { label: 'finish', minute: 45, detail: '2:45' }
+        ],
+        jumps: [{ label: '37 min', fromMinute: 45, toMinute: 8 }],
+        blankNote: 'The finish time and elapsed time are known. Count back 37 minutes from 2:45.',
+        solvedNote: 'Counting back 37 minutes from 2:45 lands on 2:08.',
+        solvedAnswer: 'Natalie’s practice started at 2:08 p.m.',
+        equations: ['45 - 37 = 8', '2:45 p.m. - 37 min = 2:08 p.m.'],
+        blankWorkspaceLabel: 'Mark 2:45, count back 37 minutes, and label the start time.',
+        meaning: 'The unknown is Natalie’s start time.',
+        explanation: 'The number line counts backward from the known finish time to the start time.',
+        checks: ['Finish time is 2:45 p.m.', 'Elapsed time is 37 minutes.', 'Start time is earlier than 2:45.']
+      }),
+      timeLineProblem({
+        number: 3,
+        sourcePrompt: 'Use a number line. Genevieve works on her scrapbook from 11:27 a.m. to 11:58 a.m. How many minutes does she work on her scrapbook?',
+        startLabel: '11:00 a.m.',
+        endLabel: '12:00 p.m.',
+        tickLabels: exactMinuteTicks,
+        points: [
+          { label: 'start', minute: 27, detail: '11:27' },
+          { label: 'stop', minute: 58, detail: '11:58' }
+        ],
+        jumps: [{ label: '31 min', fromMinute: 27, toMinute: 58 }],
+        blankNote: 'Use the source number-line workspace to count from 11:27 to 11:58.',
+        solvedNote: 'Counting forward from 11:27 to 11:58 gives 31 elapsed minutes.',
+        solvedAnswer: 'Genevieve works on her scrapbook for 31 minutes.',
+        equations: ['58 - 27 = 31', '11:27 a.m. + 31 min = 11:58 a.m.'],
+        blankWorkspaceLabel: 'Mark 11:27 and 11:58, then count the elapsed minutes between them.',
+        meaning: 'The elapsed interval is Genevieve’s scrapbook time.',
+        explanation: 'The number line shows 31 minutes from the start time to the stop time.',
+        checks: ['Start time is 11:27 a.m.', 'End time is 11:58 a.m.', 'Answer is in minutes.']
+      }),
+      timeLineProblem({
+        number: 4,
+        sourcePrompt: 'Use a number line. Nate finishes his homework at 4:47 p.m. after working on it for 38 minutes. What time did Nate start his homework?',
+        startLabel: '4:00 p.m.',
+        endLabel: '5:00 p.m.',
+        tickLabels: exactMinuteTicks,
+        points: [
+          { label: 'start', minute: 9, detail: '4:09' },
+          { label: 'finish', minute: 47, detail: '4:47' }
+        ],
+        jumps: [{ label: '38 min', fromMinute: 47, toMinute: 9 }],
+        blankNote: 'The finish time and elapsed time are known. Count back 38 minutes from 4:47.',
+        solvedNote: 'Counting back 38 minutes from 4:47 lands on 4:09.',
+        solvedAnswer: 'Nate started his homework at 4:09 p.m.',
+        equations: ['47 - 38 = 9', '4:47 p.m. - 38 min = 4:09 p.m.'],
+        blankWorkspaceLabel: 'Mark 4:47, count back 38 minutes, and label Nate’s start time.',
+        meaning: 'The unknown is Nate’s homework start time.',
+        explanation: 'The number line counts backward from the known finish time to the start time.',
+        checks: ['Finish time is 4:47 p.m.', 'Elapsed time is 38 minutes.', 'Start time is earlier than 4:47.']
+      }),
+      timeLineProblem({
+        number: 5,
+        sourcePrompt: 'Use a number line. Andrea goes fishing at 9:03 a.m. She fishes for 49 minutes. What time is Andrea done fishing?',
+        startLabel: '9:00 a.m.',
+        endLabel: '10:00 a.m.',
+        tickLabels: exactMinuteTicks,
+        points: [
+          { label: 'start', minute: 3, detail: '9:03' },
+          { label: 'done', minute: 52, detail: '9:52' }
+        ],
+        jumps: [{ label: '49 min', fromMinute: 3, toMinute: 52 }],
+        blankNote: 'The start time and elapsed time are known. Count forward 49 minutes from 9:03.',
+        solvedNote: 'Counting forward 49 minutes from 9:03 lands on 9:52.',
+        solvedAnswer: 'Andrea is done fishing at 9:52 a.m.',
+        equations: ['3 + 49 = 52', '9:03 a.m. + 49 min = 9:52 a.m.'],
+        blankWorkspaceLabel: 'Mark 9:03, count forward 49 minutes, and label the ending time.',
+        meaning: 'The unknown is Andrea’s ending time.',
+        explanation: 'The number line counts forward from the start time to the done time.',
+        checks: ['Start time is 9:03 a.m.', 'Elapsed time is 49 minutes.', 'End time is after 9:03.']
+      }),
+      timeLineProblem({
+        number: 6,
+        sourcePrompt: 'Dion walks to school. The clocks below show when he leaves his house and when he arrives at school. How many minutes does it take Dion to walk to school?',
+        startLabel: '7:00',
+        endLabel: '8:00',
+        tickLabels: exactMinuteTicks,
+        clocks: [
+          { label: 'Dion leaves his house', timeLabel: '7:35', blankTimeLabel: '7:35', showInBlank: true, caption: 'Source clock: Dion leaves.' },
+          { label: 'Dion arrives at school', timeLabel: '7:54', blankTimeLabel: '7:54', showInBlank: true, caption: 'Source clock: Dion arrives.' }
+        ],
+        points: [
+          { label: 'leave', minute: 35, detail: '7:35' },
+          { label: 'arrive', minute: 54, detail: '7:54' }
+        ],
+        jumps: [{ label: '19 min', fromMinute: 35, toMinute: 54 }],
+        blankNote: 'Read both source clocks, then count the minutes from the leave time to the arrival time.',
+        solvedNote: 'Dion leaves at 7:35 and arrives at 7:54. The elapsed time is 19 minutes.',
+        solvedAnswer: 'Dion takes 19 minutes to walk to school.',
+        equations: ['54 - 35 = 19', '7:35 + 19 min = 7:54'],
+        blankWorkspaceLabel: 'Read the two clocks first, then count from the leave time to the arrival time.',
+        meaning: 'The elapsed interval is Dion’s walking time.',
+        explanation: 'The clock pair gives the start and end times; the number line shows the 19-minute walk.',
+        checks: ['Leave clock is 7:35.', 'Arrival clock is 7:54.', 'Answer is 19 minutes.']
+      }),
+      timeLineProblem({
+        number: 7,
+        sourcePrompt: 'Sydney cleans her room for 45 minutes. She starts at 11:13 a.m. What time does Sydney finish cleaning her room?',
+        startLabel: '11:00 a.m.',
+        endLabel: '12:00 p.m.',
+        tickLabels: exactMinuteTicks,
+        points: [
+          { label: 'start', minute: 13, detail: '11:13' },
+          { label: 'finish', minute: 58, detail: '11:58' }
+        ],
+        jumps: [{ label: '45 min', fromMinute: 13, toMinute: 58 }],
+        blankNote: 'The start time and elapsed time are known. Count forward 45 minutes from 11:13.',
+        solvedNote: 'Counting forward 45 minutes from 11:13 lands on 11:58.',
+        solvedAnswer: 'Sydney finishes cleaning her room at 11:58 a.m.',
+        equations: ['13 + 45 = 58', '11:13 a.m. + 45 min = 11:58 a.m.'],
+        blankWorkspaceLabel: 'Mark 11:13, count forward 45 minutes, and label the finish time.',
+        meaning: 'The unknown is Sydney’s finish time.',
+        explanation: 'The number line counts forward from the known start time to the ending time.',
+        checks: ['Start time is 11:13 a.m.', 'Elapsed time is 45 minutes.', 'Finish time is after 11:13.']
+      }),
+      timeLineProblem({
+        number: 8,
+        sourcePrompt: 'The third-grade chorus performs a musical for the school. The musical lasts 42 minutes. It ends at 1:59 p.m. What time did the musical start?',
+        startLabel: '1:00 p.m.',
+        endLabel: '2:00 p.m.',
+        tickLabels: exactMinuteTicks,
+        points: [
+          { label: 'start', minute: 17, detail: '1:17' },
+          { label: 'end', minute: 59, detail: '1:59' }
+        ],
+        jumps: [{ label: '42 min', fromMinute: 59, toMinute: 17 }],
+        blankNote: 'The end time and elapsed time are known. Count back 42 minutes from 1:59.',
+        solvedNote: 'Counting back 42 minutes from 1:59 lands on 1:17.',
+        solvedAnswer: 'The musical started at 1:17 p.m.',
+        equations: ['59 - 42 = 17', '1:59 p.m. - 42 min = 1:17 p.m.'],
+        blankWorkspaceLabel: 'Mark 1:59, count back 42 minutes, and label the start time.',
+        meaning: 'The unknown is the musical start time.',
+        explanation: 'The number line counts backward from the known ending time to the start time.',
+        checks: ['End time is 1:59 p.m.', 'Elapsed time is 42 minutes.', 'Start time is earlier than 1:59.']
+      })
     ]
   }),
   5: lesson({
@@ -1601,7 +1819,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       timeLineProblem({
         number: 1,
-        sourcePrompt: 'Cole reads 25 minutes yesterday and 28 minutes today.',
+        sourcePrompt: 'Cole read his book for 25 minutes yesterday and for 28 minutes today. How many minutes did Cole read altogether? Model the problem on the number line, and write an equation to solve.',
         startLabel: '0 minutes',
         endLabel: '60 minutes',
         points: [
@@ -1627,7 +1845,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 2,
-        sourcePrompt: 'Tessa spends 34 minutes washing her dog; 12 minutes are shampoo and rinse.',
+        sourcePrompt: 'Tessa spends 34 minutes washing her dog. It takes her 12 minutes to shampoo and rinse and the rest of the time to get the dog in the bathtub! How many minutes does Tessa spend getting her dog in the bathtub? Draw a number line to model the problem, and write an equation to solve.',
         startLabel: '0 minutes',
         endLabel: '60 minutes',
         points: [
@@ -1653,7 +1871,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 3,
-        sourcePrompt: 'Tessa walks 47 minutes and Jeremiah walks 30 minutes.',
+        sourcePrompt: 'Tessa walks her dog for 47 minutes. Jeremiah walks his dog for 30 minutes. How many more minutes does Tessa walk her dog than Jeremiah?',
         startLabel: '0 minutes',
         endLabel: '60 minutes',
         points: [
@@ -1676,7 +1894,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 4,
-        sourcePrompt: 'Austin does chores for 4, 12, and 13 minutes, then compares to a 7:55 bus after starting at 7:30.',
+        sourcePrompt: 'a. It takes Austin 4 minutes to take out the garbage, 12 minutes to wash the dishes, and 13 minutes to mop the kitchen floor. How long does it take Austin to do his chores? b. Austin\'s bus arrives at 7:55 a.m. If he starts his chores at 7:30 a.m., will he be done in time to meet his bus? Explain your reasoning.',
         startLabel: '7:30 a.m.',
         endLabel: '8:00 a.m.',
         displayEndMinute: 30,
@@ -1691,7 +1909,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         ],
         blankNote: 'Start at 7:30. Add Austin\'s three chore intervals, then compare the finish point with the 7:55 bus point.',
         solvedNote: 'Chores take 29 minutes, so Austin finishes at 7:59, which is 4 minutes after the bus arrives.',
-        solvedAnswer: 'Chores take 29 minutes; he finishes at 7:59 a.m. and is not done in time.',
+        solvedAnswer: 'a. 29 minutes. b. No; Austin will be 4 minutes late.',
         equations: ['4 + 12 + 13 = 29', '7:30 + 29 minutes = 7:59'],
         blankWorkspaceLabel: 'Use the line as minutes after 7:30. Mark the bus at 25 minutes and Austin\'s finish time at 29 minutes.',
         meaning: 'The bus and finish points show whether Austin is done before 7:55.',
@@ -1704,11 +1922,17 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 5,
-        sourcePrompt: 'Gilberto\'s cat sleeps 23 minutes and wakes at the time shown on the clock.',
+        sourcePrompt: 'Gilberto\'s cat sleeps in the sun for 23 minutes. It wakes up at the time shown on the clock below. What time did the cat go to sleep?',
         startLabel: '11:00',
         endLabel: '12:00',
-        sourceItems: [
-          { label: 'wake clock', minute: 36, detail: 'wake clock - 11:36', kind: 'analog', status: 'provided' }
+        clocks: [
+          {
+            label: 'Source wake-up clock',
+            timeLabel: '11:36',
+            blankTimeLabel: '11:36',
+            showInBlank: true,
+            caption: 'The source clock shows when Gilberto\'s cat wakes up.'
+          }
         ],
         points: [
           { label: 'sleep start', minute: 13, detail: '11:13' },
@@ -1737,11 +1961,25 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Explain every decomposition as ten equal smaller units.',
     summary: 'Kilograms and grams mirror thousands, hundreds, tens, and ones.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Illustrate and describe making a 1-kilogram weight.', solvedAnswer: 'A 1-kilogram weight is 1,000 grams.', equations: ['1 kg = 1,000 g'], dataDisplay: dataTable('Mass equivalence', ['Unit', 'Equivalent'], [['1 kilogram', '1,000 grams']]) }),
-      problem({ number: 2, sourcePrompt: 'Illustrate and describe decomposing 1 kilogram into groups of 100 grams.', solvedAnswer: '1 kilogram decomposes into ten 100-gram groups.', equations: ['1,000 g = 10 x 100 g'], knownTotal: 10, knownGroupSize: 1, quotient: 10, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
-      problem({ number: 3, sourcePrompt: 'Illustrate and describe decomposing 100 grams into groups of 10 grams.', solvedAnswer: '100 grams decomposes into ten 10-gram groups.', equations: ['100 g = 10 x 10 g'], knownTotal: 10, knownGroupSize: 1, quotient: 10, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
-      problem({ number: 4, sourcePrompt: 'Illustrate and describe decomposing 10 grams into groups of 1 gram.', solvedAnswer: '10 grams decomposes into ten 1-gram groups.', equations: ['10 g = 10 x 1 g'], knownTotal: 10, knownGroupSize: 1, quotient: 10, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
-      problem({ number: 5, sourcePrompt: 'Compare kilograms/grams to a place value chart.', solvedAnswer: '1 kg, 100 g, 10 g, and 1 g align with thousands, hundreds, tens, and ones.', dataDisplay: dataTable('Metric mass and place value', ['Mass', 'Place value'], [['1 kilogram', 'Thousands'], ['100 grams', 'Hundreds'], ['10 grams', 'Tens'], ['1 gram', 'Ones']]) })
+      problem({ number: 1, sourcePrompt: 'Illustrate and describe making a 1-kilogram weight.', solvedAnswer: 'Illustrations and descriptions will vary. A valid model shows that a 1-kilogram weight is 1,000 grams.', equations: ['1 kg = 1,000 g'], dataDisplay: dataTable('Mass equivalence', ['Unit', 'Equivalent'], [['1 kilogram', '1,000 grams']]) }),
+      problem({ number: 2, sourcePrompt: 'Illustrate and describe decomposing 1 kilogram into groups of 100 grams.', solvedAnswer: 'Illustrations and descriptions will vary. A valid model shows 1 kilogram decomposed into ten 100-gram groups.', equations: ['1,000 g = 10 x 100 g'], knownTotal: 10, knownGroupSize: 1, quotient: 10, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
+      problem({ number: 3, sourcePrompt: 'Illustrate and describe decomposing 100 grams into groups of 10 grams.', solvedAnswer: 'Illustrations and descriptions will vary. A valid model shows 100 grams decomposed into ten 10-gram groups.', equations: ['100 g = 10 x 10 g'], knownTotal: 10, knownGroupSize: 1, quotient: 10, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
+      problem({ number: 4, sourcePrompt: 'Illustrate and describe decomposing 10 grams into groups of 1 gram.', solvedAnswer: 'Illustrations and descriptions will vary. A valid model shows 10 grams decomposed into ten 1-gram groups.', equations: ['10 g = 10 x 1 g'], knownTotal: 10, knownGroupSize: 1, quotient: 10, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
+      problem({
+        number: 5,
+        sourcePrompt: 'Compare the two place value charts below. How does today\'s exploration using kilograms and grams relate to your understanding of place value?',
+        solvedAnswer: 'Answers will vary. A strong response explains that each mass unit is 10 times the unit to its right, just as each place value is 10 times the place to its right.',
+        equations: ['1 kg = 10 x 100 g', '100 g = 10 x 10 g', '10 g = 10 x 1 g'],
+        dataDisplay: dataTable('Source comparison charts', ['Chart', 'Column 1', 'Column 2', 'Column 3', 'Column 4'], [
+          ['Metric mass', '1 kilogram', '100 grams', '10 grams', '1 gram'],
+          ['Place value', 'Thousands', 'Hundreds', 'Tens', 'Ones']
+        ]),
+        solvedDataDisplay: dataTable('Sample comparison', ['Metric mass idea', 'Place value idea'], [
+          ['1 kilogram is made from ten 100-gram groups', '1 thousand is made from ten hundreds'],
+          ['100 grams is made from ten 10-gram groups', '1 hundred is made from ten tens'],
+          ['10 grams is made from ten 1-gram groups', '1 ten is made from ten ones']
+        ])
+      })
     ]
   }),
   7: lesson({
@@ -1753,17 +1991,22 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       problem({
         number: 1,
-        sourcePrompt: 'Estimate classroom objects near 1 kg, 100 g, 10 g, and 1 g; then check actual weights.',
-        solvedAnswer: 'Variable benchmark choices. A correct solved response names one reasonable classroom object for each benchmark mass, records an actual measured weight, and keeps the units in grams or kilograms.',
-        dataDisplay: dataTable('Benchmark estimates', ['Benchmark', 'Object', 'Actual'], [['1 kg', '____', '____'], ['100 g', '____', '____'], ['10 g', '____', '____'], ['1 g', '____', '____']]),
+        sourcePrompt: 'A-D. Work with a partner. Use the corresponding weights to estimate the weight of objects in the classroom. Then, check your estimate by weighing on a scale.',
+        solvedAnswer: 'Objects and weights will vary. A correct response records classroom objects and actual weights for about 1 kilogram, 100 grams, 10 grams, and 1 gram.',
+        dataDisplay: dataTable('Source benchmark tables', ['Part', 'Objects to estimate', 'Actual weight'], [
+          ['A', 'Objects that weigh about 1 kilogram', '3 blank rows'],
+          ['B', 'Objects that weigh about 100 grams', '3 blank rows'],
+          ['C', 'Objects that weigh about 10 grams', '3 blank rows'],
+          ['D', 'Objects that weigh about 1 gram', '3 blank rows']
+        ]),
         solvedDataDisplay: checkTable('Benchmark estimates checked', [['1 kg benchmark', 'Reasonable classroom object named; actual weight checked with kilograms or grams.'], ['100 g benchmark', 'Reasonable classroom object named; actual weight checked in grams.'], ['10 g benchmark', 'Reasonable classroom object named; actual weight checked in grams.'], ['1 g benchmark', 'Reasonable classroom object named; actual weight checked in grams.']])
       }),
       problem({
         number: 2,
-        sourcePrompt: 'Circle grams or kilograms for cereal, watermelon, postcard, cat, bicycle, and lemon.',
+        sourcePrompt: 'E. Circle the correct unit of weight for each estimation.',
         solvedAnswer: 'Cereal grams; watermelon kilograms; postcard grams; cat kilograms; bicycle kilograms; lemon grams.',
         equations: ['350 g', '3 kg', '6 g', '4 kg', '15 kg', '58 g'],
-        dataDisplay: dataTable('Reasonable units', ['Object', 'Teacher Edition choice'], [
+        dataDisplay: dataTable('Reasonable units', ['Source item', 'Unit options'], [
           ['A box of cereal weighs about 350', 'grams / kilograms'],
           ['A watermelon weighs about 3', 'grams / kilograms'],
           ['A postcard weighs about 6', 'grams / kilograms'],
@@ -1780,8 +2023,8 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
           ['Lemon', 'grams']
         ])
       }),
-      problem({ number: 3, sourcePrompt: 'A bottle of water weighs 1 kg. A laptop weighs the same as 2 bottles.', solvedAnswer: 'The laptop weighs 2 kilograms.', equations: ['1 kg + 1 kg = 2 kg'], knownTotal: 2, knownGroupCount: 2, knownGroupSize: 1, quotient: 2, unitLabel: 'kg', blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
-      problem({ number: 4, sourcePrompt: 'Does 1 kg of rice weigh the same as ten 100 g bags of beans?', solvedAnswer: 'Yes. Ten 100-gram bags weigh 1,000 grams, or 1 kilogram.', equations: ['10 x 100 g = 1,000 g', '1,000 g = 1 kg'], knownTotal: 10, knownGroupSize: 1, quotient: 10, blankVisualType: 'bar-units', animationType: 'grouping-by-size' })
+      problem({ number: 3, sourcePrompt: 'F. During the exploration, Derrick finds that his bottle of water weighs the same as a 1-kilogram bag of rice. He then exclaims, "Our class laptop weighs the same as 2 bottles of water!" How much does the laptop weigh in kilograms? Explain your reasoning.', solvedAnswer: 'The laptop weighs 2 kilograms since 1 bottle of water weighs about 1 kilogram.', equations: ['1 kg + 1 kg = 2 kg'], knownTotal: 2, knownGroupCount: 2, knownGroupSize: 1, quotient: 2, unitLabel: 'kg', blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
+      problem({ number: 4, sourcePrompt: 'G. Nessa tells her brother that 1 kilogram of rice weighs the same as 10 bags containing 100 grams of beans each. Do you agree with her? Explain why or why not.', solvedAnswer: 'Yes. Ten units of 100 grams equal 1,000 grams, which is the same as 1 kilogram.', equations: ['10 x 100 g = 1,000 g', '1,000 g = 1 kg'], knownTotal: 10, knownGroupSize: 1, quotient: 10, blankVisualType: 'bar-units', animationType: 'grouping-by-size' })
     ]
   }),
   8: lesson({
@@ -1793,14 +2036,15 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       problem({
         number: 1,
-        sourcePrompt: 'Read the scale weights for string beans and grapes.',
-        solvedAnswer: 'Read each weight from the Teacher Edition scale visuals and record grams.',
-        dataDisplay: dataTable('Scale readings', ['Item', 'Weight'], [['String beans', '____ grams'], ['Grapes', '____ grams']]),
+        sourcePrompt: 'Tim goes to the market to buy fruits and vegetables. He weighs some string beans and some grapes. List the weights for both the string beans and grapes.',
+        solvedAnswer: 'The string beans weigh 464 grams. The grapes weigh 355 grams.',
+        equations: ['string beans = 464 g', 'grapes = 355 g'],
+        dataDisplay: dataTable('Teacher Edition scale readings', ['Item', 'Weight to list'], [['String beans', '____ grams'], ['Grapes', '____ grams']]),
         solvedDataDisplay: dataTable('Scale readings', ['Item', 'Weight'], [['String beans', '464 grams'], ['Grapes', '355 grams']])
       }),
-      problem({ number: 2, sourcePrompt: 'Keiko weighs 35 kg and Jiro weighs 43 kg. Find total and difference.', solvedAnswer: 'Total = 78 kg; Jiro is 8 kg heavier.', equations: ['35 + 43 = 78 kg', '43 - 35 = 8 kg'], quotient: 78, unitLabel: 'kg', blankVisualType: 'tape-diagram', animationType: 'tape-split', knownTotal: 78, knownGroupCount: 2, shareLabels: ['Keiko', 'Jiro'] }),
-      problem({ number: 3, sourcePrompt: 'A houseplant is estimated as heavy as a 5 kg bowling ball. Estimate 3 houseplants.', solvedAnswer: 'About 15 kilograms.', equations: ['3 x 5 kg = 15 kg'], knownTotal: 15, knownGroupCount: 3, knownGroupSize: 5, quotient: 3, unitLabel: 'kg', blankVisualType: 'tape-diagram', animationType: 'grouping-by-size' }),
-      problem({ number: 4, sourcePrompt: 'Jane and 8 friends share 27 kg of apples; then compare 7 pumpkins to Jane\'s share.', solvedAnswer: 'Jane takes about 3 kg; 7 pumpkins weigh about 21 kg.', equations: ['27 kg divided by 9 = 3 kg', '7 x 3 kg = 21 kg'], knownTotal: 27, knownGroupCount: 9, knownGroupSize: 3, quotient: 3, unitLabel: 'kg', blankVisualType: 'tape-diagram', animationType: 'two-step-model' })
+      problem({ number: 2, sourcePrompt: 'Use tape diagrams to model the following problems. Keiko and her brother Jiro get weighed at the doctor\'s office. Keiko weighs 35 kilograms, and Jiro weighs 43 kilograms. a. What is Keiko and Jiro\'s total weight? b. How much heavier is Jiro than Keiko?', solvedAnswer: 'a. Keiko and Jiro weigh 78 kilograms altogether. b. Jiro is 8 kilograms heavier than Keiko.', equations: ['35 + 43 = 78 kg', '43 - 35 = 8 kg'], quotient: 78, unitLabel: 'kg', blankVisualType: 'tape-diagram', animationType: 'tape-split', knownTotal: 78, knownGroupCount: 2, shareLabels: ['Keiko', 'Jiro'] }),
+      problem({ number: 3, sourcePrompt: 'Jared estimates that his houseplant is as heavy as a 5-kilogram bowling ball. Draw a tape diagram to estimate the weight of 3 houseplants.', solvedAnswer: 'A correct tape diagram shows 3 equal houseplant units of about 5 kilograms each. The 3 houseplants weigh about 15 kilograms.', equations: ['3 x 5 kg = 15 kg'], knownTotal: 15, knownGroupCount: 3, knownGroupSize: 5, quotient: 3, unitLabel: 'kg', blankVisualType: 'tape-diagram', animationType: 'grouping-by-size' }),
+      problem({ number: 4, sourcePrompt: 'Jane and her 8 friends go apple picking. They share what they pick equally. The total weight is 27 kg. a. About how many kilograms of apples will Jane take home? b. Jane estimates that a pumpkin weighs about as much as her share of the apples. About how much do 7 pumpkins weigh altogether?', solvedAnswer: 'a. Jane takes home about 3 kilograms of apples. b. Seven pumpkins weigh about 21 kilograms altogether.', equations: ['Jane + 8 friends = 9 people', '27 kg divided by 9 = 3 kg', '7 x 3 kg = 21 kg'], knownTotal: 27, knownGroupCount: 9, knownGroupSize: 3, quotient: 3, unitLabel: 'kg', blankVisualType: 'tape-diagram', animationType: 'two-step-model' })
     ]
   }),
   9: lesson({
@@ -1812,15 +2056,15 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       problem({
         number: 1,
-        sourcePrompt: 'Predict and measure whether four containers hold less than, more than, or about 1 liter.',
-        solvedAnswer: 'Variable container results. A correct solved response gives a less than, more than, or about 1 liter prediction for each of the four containers and records the measured result for the same container.',
-        dataDisplay: dataTable('Liter estimates', ['Container', 'Prediction', 'Actual'], [['1', 'less / more / about', '____'], ['2', 'less / more / about', '____'], ['3', 'less / more / about', '____'], ['4', 'less / more / about', '____']]),
-        solvedDataDisplay: checkTable('Liter estimates checked', [['Container 1', 'Prediction is marked less than, more than, or about 1 liter; actual measured result is recorded.'], ['Container 2', 'Prediction is marked less than, more than, or about 1 liter; actual measured result is recorded.'], ['Container 3', 'Prediction is marked less than, more than, or about 1 liter; actual measured result is recorded.'], ['Container 4', 'Prediction is marked less than, more than, or about 1 liter; actual measured result is recorded.']])
+        sourcePrompt: 'Part 1. a. Predict whether each container holds less than, more than, or about the same as 1 liter. After measuring, record the actual results. b. What surprised you after measuring? Why?',
+        solvedAnswer: 'a. Predictions and actual measurements will vary. b. A complete response explains one surprise using the measured results.',
+        dataDisplay: dataTable('Part 1a liter estimates', ['Container', 'Prediction', 'Actual'], [['1', 'less than / more than / about 1 L', '____'], ['2', 'less than / more than / about 1 L', '____'], ['3', 'less than / more than / about 1 L', '____'], ['4', 'less than / more than / about 1 L', '____']]),
+        solvedDataDisplay: checkTable('Part 1a-b checked', [['Container 1', 'Prediction is marked less than, more than, or about 1 liter; actual measured result is recorded.'], ['Container 2', 'Prediction is marked less than, more than, or about 1 liter; actual measured result is recorded.'], ['Container 3', 'Prediction is marked less than, more than, or about 1 liter; actual measured result is recorded.'], ['Container 4', 'Prediction is marked less than, more than, or about 1 liter; actual measured result is recorded.'], ['Part 1b', 'A written response tells what surprised the student and why.']])
       }),
-      problem({ number: 2, sourcePrompt: 'Illustrate decomposing 1 liter into 10 smaller units.', solvedAnswer: '1 liter decomposes into ten 100-milliliter units.', equations: ['1 L = 1,000 mL', '1,000 mL = 10 x 100 mL'], knownTotal: 10, knownGroupSize: 1, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
-      problem({ number: 3, sourcePrompt: 'Illustrate decomposing Cup K and Cup L into 10 smaller units.', solvedAnswer: 'Each cup is decomposed into ten equal smaller units using its measured capacity.', equations: ['cup capacity divided by 10 = one smaller unit'], knownTotal: 10, knownGroupSize: 1, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
-      problem({ number: 4, sourcePrompt: 'What is the same about decomposing 1 liter into milliliters and 1 kilogram into grams?', solvedAnswer: 'Both use a base-ten structure: 1 whole unit equals 1,000 smaller units.', equations: ['1 L = 1,000 mL', '1 kg = 1,000 g'], dataDisplay: dataTable('Base-ten decompositions', ['Whole', 'Small units'], [['1 liter', '1,000 milliliters'], ['1 kilogram', '1,000 grams']]) }),
-      problem({ number: 5, sourcePrompt: 'One liter of water weighs 1 kilogram. How much does 1 milliliter weigh?', solvedAnswer: '1 milliliter of water weighs 1 gram.', equations: ['1 L = 1,000 mL', '1 kg = 1,000 g'], quotient: 1, unitLabel: 'gram' })
+      problem({ number: 2, sourcePrompt: 'Part 2c. Illustrate and describe the process of decomposing 1 liter of water into 10 smaller units.', solvedAnswer: 'c. A correct illustration shows 1 liter split into 10 equal units of 100 milliliters each.', equations: ['1 L = 1,000 mL', '1,000 mL = 10 x 100 mL'], knownTotal: 10, knownGroupSize: 1, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
+      problem({ number: 3, sourcePrompt: 'Part 2d-e. Illustrate and describe the process of decomposing Cup K into 10 smaller units, then decomposing Cup L into 10 smaller units.', solvedAnswer: 'd-e. Answers will vary with the measured capacities of Cups K and L. Each illustration should split the cup capacity into 10 equal smaller units.', equations: ['Cup K capacity divided by 10 = one smaller unit', 'Cup L capacity divided by 10 = one smaller unit'], knownTotal: 10, knownGroupSize: 1, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
+      problem({ number: 4, sourcePrompt: 'Part 2f. What is the same about decomposing 1 liter into milliliters and decomposing 1 kilogram into grams?', solvedAnswer: 'f. They both break apart into 1 thousand units. 1 liter is 1,000 milliliters, and 1 kilogram is 1,000 grams.', equations: ['1 L = 1,000 mL', '1 kg = 1,000 g'], dataDisplay: dataTable('Base-ten decompositions', ['Whole', 'Small units'], [['1 liter', '1,000 milliliters'], ['1 kilogram', '1,000 grams']]) }),
+      problem({ number: 5, sourcePrompt: 'Part 2g. One liter of water weighs 1 kilogram. How much does 1 milliliter of water weigh? Explain how you know.', solvedAnswer: 'g. One milliliter of water weighs 1 gram because 1 liter and 1 kilogram each decompose into 1,000 equal smaller units.', equations: ['1 L = 1,000 mL', '1 kg = 1,000 g', '1 mL of water = 1 g'], quotient: 1, unitLabel: 'gram' })
     ]
   }),
   10: lesson({
@@ -1830,7 +2074,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Use equal intervals and halfway marks to read or estimate volume.',
     summary: 'Liquid volume can be read, estimated, compared, and subtracted on a vertical scale.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Label the container number line; explain halfway and pouring; find what remains after pouring out 300 mL.', solvedAnswer: 'For a 1-liter container, halfway is 500 mL; 700 mL remain after pouring out 300 mL.', equations: ['1,000 mL - 300 mL = 700 mL'], numberLineModels: [numberLine('container scale', ['0', '100', '200', '300', '400', '500', '600', '700', '800', '900', '1,000'], [7])] }),
+      problem({ number: 1, sourcePrompt: 'Label the vertical number line on the container to the right. a. What did you label as the halfway mark? Why? b. Explain how pouring each plastic cup of water helped you create a vertical number line. c. If you pour out 300 mL of water, how many mL are left in the container?', solvedAnswer: 'The container number line is labeled by hundreds from 0 mL to 1,000 mL. a. The halfway mark is 500 mL because it is halfway between 0 and 1,000. b. Each plastic cup adds one equal 100 mL interval. c. 700 mL are left.', equations: ['1,000 mL - 300 mL = 700 mL'], numberLineModels: [numberLine('container scale', ['0', '100', '200', '300', '400', '500', '600', '700', '800', '900', '1,000'], [7])] }),
       problem({
         number: 2,
         sourcePrompt: 'Read how much liquid is in each container.',
@@ -1845,7 +2089,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         dataDisplay: dataTable('Nearest hundred milliliters', ['Container', 'Rounded volume'], [['A', '____ mL'], ['B', '____ mL'], ['C', '____ mL'], ['D', '____ mL']]),
         solvedDataDisplay: dataTable('Nearest hundred milliliters', ['Container', 'Rounded volume'], [['A', '400 mL'], ['B', '200 mL'], ['C', '1,000 mL'], ['D', '700 mL']])
       }),
-      problem({ number: 4, sourcePrompt: 'Use barrel capacities A 75 L, B 68 L, C 96 L, D 52 L.', solvedAnswer: 'C has the greatest capacity, D the smallest, Ben most likely bought B, and C holds 28 L more than B.', equations: ['96 L - 68 L = 28 L'], dataDisplay: dataTable('Barrel capacity', ['Barrel', 'Capacity'], [['A', '75 L'], ['B', '68 L'], ['C', '96 L'], ['D', '52 L']]) })
+      problem({ number: 4, sourcePrompt: 'The chart shows the capacity of 4 barrels: A 75 liters, B 68 liters, C 96 liters, D 52 liters. a. Label the number line to show the capacity of each barrel. Barrel A has been done for you. b. Which barrel has the greatest capacity? c. Which barrel has the smallest capacity? d. Ben buys a barrel that holds about 70 liters. Which barrel did he most likely buy? Explain. e. Use the number line to find how many more liters Barrel C can hold than Barrel B.', solvedAnswer: 'a. A, B, C, and D are plotted at 75 L, 68 L, 96 L, and 52 L. b. Barrel C has the greatest capacity. c. Barrel D has the smallest capacity. d. Barrel B is closest to 70 L; Barrel A is also a reasonable answer if the explanation says it has enough capacity to hold 70 L. e. Barrel C can hold 28 more liters than Barrel B.', equations: ['96 L - 68 L = 28 L'], dataDisplay: dataTable('Barrel capacity', ['Barrel', 'Capacity'], [['A', '75 L'], ['B', '68 L'], ['C', '96 L'], ['D', '52 L']]) })
     ]
   }),
   11: lesson({
@@ -1855,12 +2099,12 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Identify total, part, comparison, or equal groups before choosing the operation.',
     summary: 'Model the relationship, compute, and state the unit.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Can and jar weigh 671 g total; jar weighs 113 g. Find can and difference.', solvedAnswer: 'Can = 558 g; can is 445 g heavier.', equations: ['671 - 113 = 558', '558 - 113 = 445'], knownTotal: 671, quotient: 558, unitLabel: 'grams', blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
-      problem({ number: 2, sourcePrompt: 'A pen weighs 6 g. Find 10 pens and then a box of 10 pens with an 82 g empty box.', solvedAnswer: '10 pens = 60 g; box with pens = 142 g.', equations: ['10 x 6 = 60', '60 + 82 = 142'], quotient: 142, unitLabel: 'grams' }),
-      problem({ number: 3, sourcePrompt: 'Apple, lemon, and banana weigh 508 g total; apple and lemon weigh 317 g; lemon is 68 g less than banana.', solvedAnswer: 'Banana = 191 g, lemon = 123 g, apple = 194 g.', equations: ['508 - 317 = 191', '191 - 68 = 123', '317 - 123 = 194'], quotient: 191, unitLabel: 'grams' }),
-      problem({ number: 4, sourcePrompt: 'A frozen turkey is about 5 kg; chef orders 45 kg.', solvedAnswer: 'About 9 turkeys.', equations: ['45 divided by 5 = 9'], quotient: 9, unitLabel: 'turkeys' }),
-      problem({ number: 5, sourcePrompt: 'A recipe needs 300 mL milk; Sara triples it.', solvedAnswer: 'Sara needs 900 mL.', equations: ['3 x 300 = 900'], quotient: 900, unitLabel: 'milliliters' }),
-      problem({ number: 6, sourcePrompt: 'Marian fills 3 buckets of 4 L each and has 2 L left.', solvedAnswer: 'The container holds 14 liters.', equations: ['3 x 4 = 12', '12 + 2 = 14'], quotient: 14, unitLabel: 'liters' })
+      problem({ number: 1, sourcePrompt: 'The total weight of a can of tomatoes and a jar of baby food is 671 grams. a. The jar of baby food weighs 113 grams. How much does the can of tomatoes weigh? b. How much more does the can of tomatoes weigh than the jar of baby food?', solvedAnswer: 'a. The can of tomatoes weighs 558 grams. b. The can weighs 445 grams more than the jar.', equations: ['671 - 113 = 558', '558 - 113 = 445'], knownTotal: 671, quotient: 558, unitLabel: 'grams', blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
+      problem({ number: 2, sourcePrompt: 'The weight of a pen is shown to the right. a. What is the total weight of 10 pens? b. An empty box weighs 82 grams. What is the total weight of a box of 10 pens?', solvedAnswer: 'a. Ten pens weigh 60 grams. b. A box with 10 pens weighs 142 grams.', equations: ['10 x 6 = 60', '60 + 82 = 142'], quotient: 142, unitLabel: 'grams' }),
+      problem({ number: 3, sourcePrompt: 'The total weight of an apple, lemon, and banana is shown to the right. a. If the apple and lemon together weigh 317 grams, what is the weight of the banana? b. If the lemon weighs 68 grams less than the banana, how much does the lemon weigh? c. What is the weight of the apple?', solvedAnswer: 'a. The banana weighs 191 grams. b. The lemon weighs 123 grams. c. The apple weighs 194 grams.', equations: ['508 - 317 = 191', '191 - 68 = 123', '317 - 123 = 194'], quotient: 191, unitLabel: 'grams' }),
+      problem({ number: 4, sourcePrompt: 'A frozen turkey weighs about 5 kilograms. The chef orders 45 kilograms of turkey. About how many frozen turkeys does he order? Draw and label a tape diagram.', solvedAnswer: 'A correct tape diagram shows 45 kilograms split into 5-kilogram units. The chef orders about 9 frozen turkeys.', equations: ['45 divided by 5 = 9'], quotient: 9, unitLabel: 'turkeys', blankVisualType: 'tape-diagram', animationType: 'grouping-by-size' }),
+      problem({ number: 5, sourcePrompt: 'A recipe requires 300 milliliters of milk. Sara triples the recipe. How many milliliters of milk does Sara need?', solvedAnswer: 'Sara needs 900 milliliters of milk.', equations: ['3 x 300 = 900'], quotient: 900, unitLabel: 'milliliters' }),
+      problem({ number: 6, sourcePrompt: 'Marian pours a full container of water equally into buckets. Each bucket has a capacity of 4 liters. After filling 3 buckets, she still has 2 liters left in her container. What is the capacity of her container?', solvedAnswer: 'The container holds 14 liters.', equations: ['3 x 4 = 12', '12 + 2 = 14'], quotient: 14, unitLabel: 'liters' })
     ]
   }),
   12: lesson({
@@ -1872,31 +2116,31 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       problem({
         number: 1,
-        sourcePrompt: 'Measure four classroom lengths and round each to the nearest 10 cm.',
-        solvedAnswer: 'Variable measurements. A correct solved response records each actual centimeter length, identifies the two surrounding tens, and rounds to the nearest 10 centimeters using the halfway rule.',
-        dataDisplay: dataTable('Length rounding', ['Object', 'Measurement', 'Between tens', 'Nearest 10 cm'], [['Desk long side', '____ cm', '____ and ____', '____'], ['New pencil', '____ cm', '____ and ____', '____'], ['Paper short side', '____ cm', '____ and ____', '____'], ['Paper long side', '____ cm', '____ and ____', '____']]),
-        solvedDataDisplay: checkTable('Length rounding checked', [['Desk long side', 'Actual cm length, surrounding tens, and nearest 10 cm recorded.'], ['New pencil', 'Actual cm length, surrounding tens, and nearest 10 cm recorded.'], ['Paper short side', 'Actual cm length, surrounding tens, and nearest 10 cm recorded.'], ['Paper long side', 'Actual cm length, surrounding tens, and nearest 10 cm recorded.']])
+        sourcePrompt: 'Work with a partner. Use a ruler or a meter stick to complete the chart. Measure each object, write the two tens it is between, and round to the nearest 10 centimeters.',
+        solvedAnswer: 'Measurements and estimates will vary. Each official row needs an actual centimeter measurement, the two surrounding tens, and a nearest-10-centimeter estimate.',
+        dataDisplay: dataTable('Length rounding chart', ['Object', 'Measurement', 'Between', 'Estimate'], [['My shoe', '____ cm', '____ and ____ cm', '____ cm'], ['Long side of a desk', '____ cm', '____ and ____ cm', '____ cm'], ['A new pencil', '____ cm', '____ and ____ cm', '____ cm'], ['Short side of a piece of paper', '____ cm', '____ and ____ cm', '____ cm'], ['Long side of a piece of paper', '____ cm', '____ and ____ cm', '____ cm']]),
+        solvedDataDisplay: checkTable('Length rounding checked', [['My shoe', 'Actual cm length, surrounding tens, and nearest 10 cm recorded.'], ['Long side of a desk', 'Actual cm length, surrounding tens, and nearest 10 cm recorded.'], ['A new pencil', 'Actual cm length, surrounding tens, and nearest 10 cm recorded.'], ['Short side of a piece of paper', 'Actual cm length, surrounding tens, and nearest 10 cm recorded.'], ['Long side of a piece of paper', 'Actual cm length, surrounding tens, and nearest 10 cm recorded.']])
       }),
       problem({
         number: 2,
-        sourcePrompt: 'Measure bags of rice and round each weight to the nearest 10 g.',
-        solvedAnswer: 'Variable weights. A correct solved response records each actual gram weight, identifies the surrounding tens, and rounds to the nearest 10 grams using the halfway rule.',
-        dataDisplay: dataTable('Weight rounding', ['Bag', 'Measurement', 'Between tens', 'Nearest 10 g'], [['B', '____ g', '____ and ____', '____'], ['C', '____ g', '____ and ____', '____'], ['D', '____ g', '____ and ____', '____'], ['E', '____ g', '____ and ____', '____']]),
-        solvedDataDisplay: checkTable('Weight rounding checked', [['Bag B', 'Actual gram weight, surrounding tens, and nearest 10 g recorded.'], ['Bag C', 'Actual gram weight, surrounding tens, and nearest 10 g recorded.'], ['Bag D', 'Actual gram weight, surrounding tens, and nearest 10 g recorded.'], ['Bag E', 'Actual gram weight, surrounding tens, and nearest 10 g recorded.']])
+        sourcePrompt: 'Work with a partner. Use a digital scale to complete the chart. Weigh each bag of rice, write the two tens it is between, and round to the nearest 10 grams.',
+        solvedAnswer: 'Measurements and estimates will vary. Each official bag row needs an actual gram weight, the two surrounding tens, and a nearest-10-gram estimate.',
+        dataDisplay: dataTable('Rice-bag rounding chart', ['Bag', 'Measurement', 'Between', 'Estimate'], [['Bag A', '____ g', '____ and ____ g', '____ g'], ['Bag B', '____ g', '____ and ____ g', '____ g'], ['Bag C', '____ g', '____ and ____ g', '____ g'], ['Bag D', '____ g', '____ and ____ g', '____ g'], ['Bag E', '____ g', '____ and ____ g', '____ g']]),
+        solvedDataDisplay: checkTable('Weight rounding checked', [['Bag A', 'Actual gram weight, surrounding tens, and nearest 10 g recorded.'], ['Bag B', 'Actual gram weight, surrounding tens, and nearest 10 g recorded.'], ['Bag C', 'Actual gram weight, surrounding tens, and nearest 10 g recorded.'], ['Bag D', 'Actual gram weight, surrounding tens, and nearest 10 g recorded.'], ['Bag E', 'Actual gram weight, surrounding tens, and nearest 10 g recorded.']])
       }),
       problem({
         number: 3,
-        sourcePrompt: 'Measure containers and round liquid volume to nearest 10 mL.',
-        solvedAnswer: 'Variable volumes. A correct solved response records each actual milliliter amount, identifies the surrounding tens, and rounds to the nearest 10 milliliters using the halfway rule.',
-        dataDisplay: dataTable('Liquid volume rounding', ['Container', 'Measurement', 'Between tens', 'Nearest 10 mL'], [['B', '____ mL', '____ and ____', '____'], ['C', '____ mL', '____ and ____', '____'], ['D', '____ mL', '____ and ____', '____'], ['E', '____ mL', '____ and ____', '____']]),
-        solvedDataDisplay: checkTable('Liquid volume rounding checked', [['Container B', 'Actual mL amount, surrounding tens, and nearest 10 mL recorded.'], ['Container C', 'Actual mL amount, surrounding tens, and nearest 10 mL recorded.'], ['Container D', 'Actual mL amount, surrounding tens, and nearest 10 mL recorded.'], ['Container E', 'Actual mL amount, surrounding tens, and nearest 10 mL recorded.']])
+        sourcePrompt: 'Work with a partner. Use a beaker to complete the chart. Measure each container, write the two tens it is between, and round to the nearest 10 milliliters.',
+        solvedAnswer: 'Measurements and estimates will vary. Each official container row needs an actual milliliter amount, the two surrounding tens, and a nearest-10-milliliter estimate.',
+        dataDisplay: dataTable('Liquid-volume rounding chart', ['Container', 'Measurement', 'Between', 'Estimate'], [['Container A', '____ mL', '____ and ____ mL', '____ mL'], ['Container B', '____ mL', '____ and ____ mL', '____ mL'], ['Container C', '____ mL', '____ and ____ mL', '____ mL'], ['Container D', '____ mL', '____ and ____ mL', '____ mL'], ['Container E', '____ mL', '____ and ____ mL', '____ mL']]),
+        solvedDataDisplay: checkTable('Liquid volume rounding checked', [['Container A', 'Actual mL amount, surrounding tens, and nearest 10 mL recorded.'], ['Container B', 'Actual mL amount, surrounding tens, and nearest 10 mL recorded.'], ['Container C', 'Actual mL amount, surrounding tens, and nearest 10 mL recorded.'], ['Container D', 'Actual mL amount, surrounding tens, and nearest 10 mL recorded.'], ['Container E', 'Actual mL amount, surrounding tens, and nearest 10 mL recorded.']])
       }),
       problem({
         number: 4,
-        sourcePrompt: 'Use a clock to record activity times and round to nearest 10 minutes.',
-        solvedAnswer: 'Variable times. A correct solved response records each actual clock time, places it between the surrounding 10-minute marks, and rounds to the nearest 10 minutes using the halfway rule.',
-        dataDisplay: dataTable('Time rounding', ['Activity', 'Actual time', 'Between tens', 'Nearest 10 minutes'], [['Started Problem Set', '____', '____ and ____', '____'], ['Finished Station 1', '____', '____ and ____', '____']]),
-        solvedDataDisplay: checkTable('Time rounding checked', [['Started Problem Set', 'Actual clock time, surrounding 10-minute marks, and nearest 10 minutes recorded.'], ['Finished Station 1', 'Actual clock time, surrounding 10-minute marks, and nearest 10 minutes recorded.']])
+        sourcePrompt: 'Work with a partner. Use a clock to complete the chart. Record the activity time, write the two 10-minute marks it is between, and round to the nearest 10 minutes.',
+        solvedAnswer: 'Measurements and estimates will vary. Each official activity row needs an actual clock time, the two surrounding 10-minute marks, and a nearest-10-minute estimate.',
+        dataDisplay: dataTable('Time rounding chart', ['Activity', 'Actual time', 'Between', 'Estimate'], [['Time we started math', '____', '____ and ____', '____'], ['Time I started the Problem Set', '____', '____ and ____', '____'], ['Time I finished Station 1', '____', '____ and ____', '____'], ['Time I finished Station 2', '____', '____ and ____', '____'], ['Time I finished Station 3', '____', '____ and ____', '____']]),
+        solvedDataDisplay: checkTable('Time rounding checked', [['Time we started math', 'Actual clock time, surrounding 10-minute marks, and nearest 10 minutes recorded.'], ['Time I started the Problem Set', 'Actual clock time, surrounding 10-minute marks, and nearest 10 minutes recorded.'], ['Time I finished Station 1', 'Actual clock time, surrounding 10-minute marks, and nearest 10 minutes recorded.'], ['Time I finished Station 2', 'Actual clock time, surrounding 10-minute marks, and nearest 10 minutes recorded.'], ['Time I finished Station 3', 'Actual clock time, surrounding 10-minute marks, and nearest 10 minutes recorded.']])
       })
     ]
   }),
@@ -1907,9 +2151,9 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Halfway and above rounds to the upper ten.',
     summary: 'Locate the number between tens, compare to halfway, and round.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Round 32, 36, 62, 162, 278, and 405 to the nearest ten.', solvedAnswer: '32 -> 30, 36 -> 40, 62 -> 60, 162 -> 160, 278 -> 280, 405 -> 410.', equations: ['32 ~= 30', '36 ~= 40', '62 ~= 60', '162 ~= 160', '278 ~= 280', '405 ~= 410'], numberLineModels: [numberLine('nearest ten', tensTicks, [0, 2])] }),
-      problem({ number: 2, sourcePrompt: 'Round 36 g, 52 g, and 142 g to nearest 10 g.', solvedAnswer: '36 g -> 40 g, 52 g -> 50 g, 142 g -> 140 g.', equations: ['36 g ~= 40 g', '52 g ~= 50 g', '142 g ~= 140 g'], numberLineModels: [numberLine('nearest 10 grams', tensTicks, [0, 2])] }),
-      problem({ number: 3, sourcePrompt: 'Carl\'s game starts at 3:03 p.m. and ends at 3:51 p.m.; find and round the duration.', solvedAnswer: 'The game lasted 48 minutes, which rounds to 50 minutes.', equations: ['3:51 - 3:03 = 48', '48 ~= 50'], quotient: 50, unitLabel: 'minutes' })
+      problem({ number: 1, sourcePrompt: 'Round to the nearest ten. Use the number line to model your thinking. a. 32. b. 36. c. 62. d. 162. e. 278. f. 405.', solvedAnswer: 'a. 32 rounds to 30. b. 36 rounds to 40. c. 62 rounds to 60. d. 162 rounds to 160. e. 278 rounds to 280. f. 405 rounds to 410. Each answer is modeled on a vertical number line.', equations: ['32 ~= 30', '36 ~= 40', '62 ~= 60', '162 ~= 160', '278 ~= 280', '405 ~= 410'], numberLineModels: [numberLine('nearest ten', tensTicks, [0, 2])] }),
+      problem({ number: 2, sourcePrompt: 'Round the weight of each item to the nearest 10 grams. Draw number lines to model your thinking: 36 grams, 52 grams, and 142 grams.', solvedAnswer: 'The rounded weights are 40 grams, 50 grams, and 140 grams. Each row also needs a labeled number line model.', equations: ['36 g ~= 40 g', '52 g ~= 50 g', '142 g ~= 140 g'], numberLineModels: [numberLine('nearest 10 grams', tensTicks, [0, 2])] }),
+      problem({ number: 3, sourcePrompt: 'Carl\'s basketball game begins at 3:03 p.m. and ends at 3:51 p.m. a. How many minutes did Carl\'s basketball game last? b. Round the total number of minutes in the game to the nearest 10 minutes.', solvedAnswer: 'a. Carl\'s basketball game lasted 48 minutes. b. 48 minutes rounds to 50 minutes.', equations: ['3:51 - 3:03 = 48', '48 ~= 50'], quotient: 50, unitLabel: 'minutes' })
     ]
   }),
   14: lesson({
@@ -1919,8 +2163,8 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Numbers at halfway or above round to the upper hundred.',
     summary: 'Round to the nearest hundred by comparing to the halfway hundred.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Round 143, 286, 320, 1,320, 1,572, and 1,250 to nearest hundred.', solvedAnswer: '143 -> 100, 286 -> 300, 320 -> 300, 1,320 -> 1,300, 1,572 -> 1,600, 1,250 -> 1,300.', equations: ['143 ~= 100', '286 ~= 300', '320 ~= 300', '1,320 ~= 1,300', '1,572 ~= 1,600', '1,250 ~= 1,300'], numberLineModels: [numberLine('nearest hundred', hundredTicks, [0, 2])] }),
-      problem({ number: 2, sourcePrompt: 'Round 480, 525, 750 mL, $1,297, and 1,842 km to nearest hundred.', solvedAnswer: '480 -> 500, 525 -> 500, 750 mL -> 800 mL, $1,297 -> $1,300, 1,842 km -> 1,800 km.', equations: ['480 ~= 500', '525 ~= 500', '750 ~= 800', '1,297 ~= 1,300', '1,842 ~= 1,800'], dataDisplay: dataTable('Nearest hundred', ['Quantity', 'Rounded'], [['480 stickers', '500'], ['525 pages', '500'], ['750 mL', '800 mL'], ['$1,297', '$1,300'], ['1,842 km', '1,800 km']]) }),
+      problem({ number: 1, sourcePrompt: 'Round to the nearest hundred. Use the number line to model your thinking. a. 143. b. 286. c. 320. d. 1,320. e. 1,572. f. 1,250.', solvedAnswer: 'a. 143 rounds to 100. b. 286 rounds to 300. c. 320 rounds to 300. d. 1,320 rounds to 1,300. e. 1,572 rounds to 1,600. f. 1,250 rounds to 1,300. Each answer is modeled on a vertical number line.', equations: ['143 ~= 100', '286 ~= 300', '320 ~= 300', '1,320 ~= 1,300', '1,572 ~= 1,600', '1,250 ~= 1,300'], numberLineModels: [numberLine('nearest hundred', hundredTicks, [0, 2])] }),
+      problem({ number: 2, sourcePrompt: 'Complete the chart. a. Shauna has 480 stickers. Round the number of stickers to the nearest hundred. b. There are 525 pages in a book. Round the number of pages to the nearest hundred. c. A container holds 750 milliliters of water. Round the capacity to the nearest 100 milliliters. d. Glen spends $1,297 on a new computer. Round the amount Glen spends to the nearest $100. e. The drive between two cities is 1,842 kilometers. Round the distance to the nearest 100 kilometers.', solvedAnswer: 'a. 500 stickers. b. 500 pages. c. 800 mL. d. $1,300. e. 1,800 km.', equations: ['480 ~= 500', '525 ~= 500', '750 ~= 800', '1,297 ~= 1,300', '1,842 ~= 1,800'], dataDisplay: dataTable('Nearest hundred chart', ['Source item', 'Rounded answer'], [['480 stickers', '____ stickers'], ['525 pages', '____ pages'], ['750 mL', '____ mL'], ['$1,297', '$____'], ['1,842 km', '____ km']]), solvedDataDisplay: dataTable('Nearest hundred chart', ['Source item', 'Rounded answer'], [['480 stickers', '500 stickers'], ['525 pages', '500 pages'], ['750 mL', '800 mL'], ['$1,297', '$1,300'], ['1,842 km', '1,800 km']]) }),
       problem({ number: 3, sourcePrompt: 'Circle numbers that round to 600: 527, 550, 639, 681, 713, 603.', solvedAnswer: '550, 639, and 603 round to 600.', equations: ['550 ~= 600', '639 ~= 600', '603 ~= 600'], numberLineModels: [numberLine('500 to 700', ['500', '550', '600', '650', '700'], [1, 2])] }),
       problem({ number: 4, sourcePrompt: 'Christian says 1,865 rounds to one thousand, nine hundred; Alexis says 19 hundreds.', solvedAnswer: 'Both are correct: 1,900 is 19 hundreds.', equations: ['1,865 ~= 1,900', '1,900 = 19 hundreds'] })
     ]
@@ -1932,7 +2176,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Line up units and place values before adding.',
     summary: 'Measurement addition follows place value and keeps units attached.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Find eleven measurement sums from mL, cm, g, L/mL, and kg/g.', solvedAnswer: '51 mL, 71 mL, 171 mL, 89 cm, 592 cm, 627 cm, 92 g, 639 g, 956 g, 3 L 657 mL, 5 kg 876 g.', equations: ['46 + 5 = 51', '509 + 83 = 592', '480 + 476 = 956', '1 L 245 mL + 2 L 412 mL = 3 L 657 mL'] }),
+      problem({ number: 1, sourcePrompt: 'Find the sums below. Choose mental math or the algorithm.', solvedAnswer: '51 mL, 71 mL, 171 mL, 89 cm, 592 cm, 627 cm, 92 g, 639 g, 956 g, 3 L 657 mL, 5 kg 876 g.', equations: ['46 mL + 5 mL = 51 mL', '46 mL + 25 mL = 71 mL', '46 mL + 125 mL = 171 mL', '59 cm + 30 cm = 89 cm', '509 cm + 83 cm = 592 cm', '597 cm + 30 cm = 627 cm', '29 g + 63 g = 92 g', '345 g + 294 g = 639 g', '480 g + 476 g = 956 g', '1 L 245 mL + 2 L 412 mL = 3 L 657 mL', '2 kg 509 g + 3 kg 367 g = 5 kg 876 g'] }),
       problem({ number: 2, sourcePrompt: 'A pretzel weighs 63 g more than a 44 g popcorn.', solvedAnswer: 'The pretzel weighs 107 grams.', equations: ['44 + 63 = 107'], quotient: 107, unitLabel: 'grams', blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
       problem({ number: 3, sourcePrompt: 'Jason and Andrea add 475 mL and 317 mL; Jason says 782, Andrea says 792.', solvedAnswer: 'Andrea is correct: 475 + 317 = 792 mL. Jason is 10 mL too low.', equations: ['475 + 317 = 792'], quotient: 792, unitLabel: 'milliliters' }),
       problem({ number: 4, sourcePrompt: 'Greg mows front lawn for 15 minutes and back lawn for 17 more minutes than front.', solvedAnswer: 'Back lawn = 32 minutes; total = 47 minutes.', equations: ['15 + 17 = 32', '15 + 32 = 47'], quotient: 47, unitLabel: 'minutes' })
@@ -1945,7 +2189,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Regroup each place value as needed and keep compound units separate.',
     summary: 'Compose twice when needed, then write the compound measurement accurately.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Find eleven measurement sums requiring composition.', solvedAnswer: '120 mL, 420 mL, 820 mL, 150 cm, 600 cm, 900 cm, 835 g, 942 g, 983 g, 4 L 800 mL, 6 kg 851 g.', equations: ['52 + 68 = 120', '352 + 468 = 820', '506 + 394 = 900', '486 + 497 = 983'] }),
+      problem({ number: 1, sourcePrompt: 'Find the sums below.', solvedAnswer: '120 mL, 420 mL, 820 mL, 150 cm, 600 cm, 900 cm, 835 g, 942 g, 983 g, 4 L 800 mL, 6 kg 851 g.', equations: ['52 mL + 68 mL = 120 mL', '352 mL + 68 mL = 420 mL', '352 mL + 468 mL = 820 mL', '56 cm + 94 cm = 150 cm', '506 cm + 94 cm = 600 cm', '506 cm + 394 cm = 900 cm', '697 g + 138 g = 835 g', '345 g + 597 g = 942 g', '486 g + 497 g = 983 g', '3 L 251 mL + 1 L 549 mL = 4 L 800 mL', '4 kg 384 g + 2 kg 467 g = 6 kg 851 g'] }),
       problem({ number: 2, sourcePrompt: 'Lane uses 907 g cabbage and 93 g salt.', solvedAnswer: 'Total = 1,000 g, or 1 kg.', equations: ['907 + 93 = 1,000'], quotient: 1000, unitLabel: 'grams', blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
       problem({ number: 3, sourcePrompt: 'Sue wraps 86 muffins and has 58 left cooling.', solvedAnswer: 'Sue baked 144 muffins.', equations: ['86 + 58 = 144'], quotient: 144, unitLabel: 'muffins' }),
       problem({ number: 4, sourcePrompt: 'Milk carton holds 183 mL more than 279 mL juice box; find total capacity.', solvedAnswer: 'Milk carton = 462 mL; total = 741 mL.', equations: ['279 + 183 = 462', '279 + 462 = 741'], quotient: 741, unitLabel: 'milliliters' })
@@ -1958,7 +2202,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Compare the estimate and actual sum to judge closeness.',
     summary: 'Use rounding to estimate, then exact addition to solve.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Find actual sums, round addends to nearest hundred, estimate, and circle closest estimates.', solvedAnswer: 'Close estimates include 451 + 249 = 700, 356 + 148 = 504 estimated as 500, and 647 + 158 = 805 estimated as 800.', equations: ['451 + 249 = 700', '356 + 148 = 504', '647 + 158 = 805'] }),
+      problem({ number: 1, sourcePrompt: 'Find actual sums, round addends to the nearest hundred, estimate, and circle closest estimates. A: 451 + 253, 451 + 249, 448 + 249. B: 356 + 161, 356 + 148, 347 + 149. C: 652 + 158, 647 + 158, 647 + 146.', solvedAnswer: 'Close estimates include 451 + 249 = 700, 356 + 148 = 504 estimated as 500, and 647 + 158 = 805 estimated as 800.', equations: ['451 + 253 = 704; 500 + 300 = 800', '451 + 249 = 700; 500 + 200 = 700', '448 + 249 = 697; 400 + 200 = 600', '356 + 161 = 517; 400 + 200 = 600', '356 + 148 = 504; 400 + 100 = 500', '347 + 149 = 496; 300 + 100 = 400', '652 + 158 = 810; 700 + 200 = 900', '647 + 158 = 805; 600 + 200 = 800', '647 + 146 = 793; 600 + 100 = 700'] }),
       problem({ number: 2, sourcePrompt: 'Janet watches 94 minutes Friday and 151 minutes Saturday.', solvedAnswer: 'Actual total = 245 minutes; 90 + 150 = 240 is a close estimate.', equations: ['94 + 151 = 245', '90 + 150 = 240'], quotient: 245, unitLabel: 'minutes' }),
       problem({ number: 3, sourcePrompt: 'Sadie weighs 182 kg; her cub weighs 74 kg.', solvedAnswer: 'Actual total = 256 kg; a reasonable estimate is about 260 kg or 300 kg depending on rounding.', equations: ['182 + 74 = 256'], quotient: 256, unitLabel: 'kilograms', blankVisualType: 'tape-diagram', animationType: 'tape-split' })
     ]
@@ -1970,7 +2214,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Regroup once only when the minuend digit is too small.',
     summary: 'Decompose, subtract by place value, and keep units attached.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Solve eleven measurement subtraction problems.', solvedAnswer: '36 mL, 336 mL, 136 mL, 497 cm, 361 cm, 498 cm, 177 g, 73 g, 75 g, 1 km 315 m, 2 kg 31 g.', equations: ['60 - 24 = 36', '360 - 224 = 136', '807 - 732 = 75'] }),
+      problem({ number: 1, sourcePrompt: 'Solve the subtraction problems below.', solvedAnswer: '36 mL, 336 mL, 136 mL, 497 cm, 361 cm, 498 cm, 177 g, 73 g, 75 g, 1 km 315 m, 2 kg 31 g.', equations: ['60 mL - 24 mL = 36 mL', '360 mL - 24 mL = 336 mL', '360 mL - 224 mL = 136 mL', '518 cm - 21 cm = 497 cm', '629 cm - 268 cm = 361 cm', '938 cm - 440 cm = 498 cm', '307 g - 130 g = 177 g', '307 g - 234 g = 73 g', '807 g - 732 g = 75 g', '2 km 770 m - 1 km 455 m = 1 km 315 m', '3 kg 924 g - 1 kg 893 g = 2 kg 31 g'] }),
       problem({ number: 2, sourcePrompt: 'Three books weigh 405 g; two weigh 233 g.', solvedAnswer: 'The third book weighs 172 g.', equations: ['405 - 233 = 172'], quotient: 172, unitLabel: 'grams', blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
       problem({ number: 3, sourcePrompt: 'Champions is 22 minutes shorter than The Lost Ship at 117 minutes; Magical Forests is 145 minutes.', solvedAnswer: 'Champions = 95 minutes; Magical Forests is 50 minutes longer.', equations: ['117 - 22 = 95', '145 - 95 = 50'], quotient: 95, unitLabel: 'minutes' }),
       problem({ number: 4, sourcePrompt: 'A 208 cm rope is cut into 80 cm, 94 cm, and an unknown third piece.', solvedAnswer: 'The third piece is 34 cm.', equations: ['80 + 94 = 174', '208 - 174 = 34'], quotient: 34, unitLabel: 'centimeters' })
@@ -1983,10 +2227,10 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Regroup through zeros carefully before subtracting.',
     summary: 'Decompose twice when needed and check the difference.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Solve eight measurement subtraction problems requiring decomposition.', solvedAnswer: '280 cm, 80 cm, 365 g, 254 g, 648 mL, 248 mL, 4 km 233 m, 2 L 51 mL.', equations: ['340 - 60 = 280', '700 - 452 = 248', '5 L 920 mL - 3 L 869 mL = 2 L 51 mL'] }),
-      problem({ number: 2, sourcePrompt: 'David drives 617 km total with 468 km left.', solvedAnswer: 'David has driven 149 km.', equations: ['617 - 468 = 149'], quotient: 149, unitLabel: 'kilometers', blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
-      problem({ number: 3, sourcePrompt: 'Piano weighs 297 kg and is 289 kg more than the bench.', solvedAnswer: 'The bench weighs 8 kg.', equations: ['297 - 289 = 8'], quotient: 8, unitLabel: 'kilograms' }),
-      problem({ number: 4, sourcePrompt: 'Tank A holds 165 fewer liters than Tank B; Tank B holds 400 L.', solvedAnswer: 'Tank A holds 235 L.', equations: ['400 - 165 = 235'], quotient: 235, unitLabel: 'liters' })
+      problem({ number: 1, sourcePrompt: 'Solve the subtraction problems below.', solvedAnswer: '280 cm, 80 cm, 365 g, 254 g, 648 mL, 248 mL, 4 km 233 m, 2 L 51 mL.', equations: ['340 cm - 60 cm = 280 cm', '340 cm - 260 cm = 80 cm', '513 g - 148 g = 365 g', '641 g - 387 g = 254 g', '700 mL - 52 mL = 648 mL', '700 mL - 452 mL = 248 mL', '6 km 802 m - 2 km 569 m = 4 km 233 m', '5 L 920 mL - 3 L 869 mL = 2 L 51 mL'] }),
+      problem({ number: 2, sourcePrompt: 'David is driving from Los Angeles to San Francisco. The total distance is 617 kilometers. He has 468 kilometers left to drive. How many kilometers has he driven so far?', solvedAnswer: 'David has driven 149 km.', equations: ['617 km - 468 km = 149 km'], quotient: 149, unitLabel: 'kilometers', blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
+      problem({ number: 3, sourcePrompt: 'The piano weighs 289 kilograms more than the piano bench. The piano weighs 297 kilograms. How much does the bench weigh?', solvedAnswer: 'The bench weighs 8 kg.', equations: ['297 kg - 289 kg = 8 kg'], quotient: 8, unitLabel: 'kilograms' }),
+      problem({ number: 4, sourcePrompt: 'Tank A holds 165 fewer liters of water than Tank B. Tank B holds 400 liters of water. How much water does Tank A hold?', solvedAnswer: 'Tank A holds 235 L.', equations: ['400 L - 165 L = 235 L'], quotient: 235, unitLabel: 'liters' })
     ]
   }),
   20: lesson({
@@ -1996,9 +2240,9 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'The closest estimate depends on how both numbers round.',
     summary: 'Estimate, solve exactly, and compare for reasonableness.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Find actual differences, round to nearest hundred, estimate, and circle closest estimates.', solvedAnswer: 'Close cases include 451 - 153 = 298 estimated as 300, 448 - 149 = 299 estimated as 300, 756 - 261 = 495 estimated as 500, and 747 - 249 = 498 estimated as 500.', equations: ['451 - 153 = 298', '448 - 149 = 299', '756 - 261 = 495', '747 - 249 = 498'] }),
-      problem({ number: 2, sourcePrompt: 'Camden uses 372 L of gas total and 184 L in the first month.', solvedAnswer: 'Second month = 188 L; about 200 L is reasonable.', equations: ['372 - 184 = 188', '400 - 200 = 200'], quotient: 188, unitLabel: 'liters', blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
-      problem({ number: 3, sourcePrompt: 'Pear, apple, and peach weigh 500 g total; pear and apple weigh 372 g.', solvedAnswer: 'The peach weighs 128 g; about 100 g is reasonable.', equations: ['500 - 372 = 128'], quotient: 128, unitLabel: 'grams', blankVisualType: 'tape-diagram', animationType: 'tape-split' })
+      problem({ number: 1, sourcePrompt: 'Find actual differences, round totals and parts to the nearest hundred, estimate, and circle closest estimates. A: 448 - 153, 451 - 153, 448 - 149, 451 - 149. B: 747 - 261, 756 - 261, 747 - 249, 756 - 248.', solvedAnswer: 'Close cases include 451 - 153 = 298 estimated as 300, 448 - 149 = 299 estimated as 300, 756 - 261 = 495 estimated as 500, and 747 - 249 = 498 estimated as 500.', equations: ['448 - 153 = 295; 400 - 200 = 200', '451 - 153 = 298; 500 - 200 = 300', '448 - 149 = 299; 400 - 100 = 300', '451 - 149 = 302; 500 - 100 = 400', '747 - 261 = 486; 700 - 300 = 400', '756 - 261 = 495; 800 - 300 = 500', '747 - 249 = 498; 700 - 200 = 500', '756 - 248 = 508; 800 - 200 = 600'] }),
+      problem({ number: 2, sourcePrompt: 'Camden uses a total of 372 liters of gas in two months. He uses 184 liters of gas in the first month. How many liters of gas does he use in the second month?', solvedAnswer: 'Second month = 188 L; estimates will vary.', equations: ['372 L - 184 L = 188 L', '400 L - 200 L = 200 L'], quotient: 188, unitLabel: 'liters', blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
+      problem({ number: 3, sourcePrompt: 'The pear, apple, and peach weigh 500 grams total. The pear and apple together weigh 372 grams. How much does the peach weigh?', solvedAnswer: 'The peach weighs 128 g; estimates and explanations will vary.', equations: ['500 g - 372 g = 128 g', '500 g - 400 g = 100 g'], quotient: 128, unitLabel: 'grams', blankVisualType: 'tape-diagram', animationType: 'tape-split' })
     ]
   }),
   21: lesson({
@@ -2010,28 +2254,29 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       problem({
         number: 1,
-        sourcePrompt: 'Weigh beans and rice, estimate and find total and difference.',
-        solvedAnswer: 'Variable measured weights. A correct solved response records bean and rice weights, rounds both, computes estimated and actual sums, and computes estimated and actual differences with grams labeled.',
+        sourcePrompt: 'Weigh the bags of beans and rice on the scale. Then, write the weight on the scales below. Estimate and find the total weight and difference, then explain whether the answers are reasonable.',
+        solvedAnswer: 'Beans weigh 91 g and rice weighs 58 g. The estimated total is 150 g, the actual total is 149 g, the estimated difference is 30 g, and the actual difference is 33 g.',
+        equations: ['91 g + 58 g ~= 90 g + 60 g = 150 g', '91 g + 58 g = 149 g', '91 g - 58 g ~= 90 g - 60 g = 30 g', '91 g - 58 g = 33 g'],
         dataDisplay: dataTable('Beans and rice', ['Item', 'Actual', 'Rounded'], [['Beans', '____ g', '____ g'], ['Rice', '____ g', '____ g'], ['Sum', '____ g', '____ g'], ['Difference', '____ g', '____ g']]),
         solvedDataDisplay: dataTable('Beans and rice', ['Item', 'Actual', 'Rounded'], [['Beans', '91 g', '90 g'], ['Rice', '58 g', '60 g'], ['Sum', '149 g', '150 g'], ['Difference', '33 g', '30 g']])
       }),
       problem({
         number: 2,
-        sourcePrompt: 'Measure three pieces of yarn, estimate total of A and C, then compare with B.',
-        solvedAnswer: 'Variable yarn measurements. A correct solved response records actual and rounded lengths for A, B, and C, adds Yarn A + Yarn C, and compares that total with Yarn B using centimeters.',
-        equations: ['Yarn A + Yarn C = total', 'total - Yarn B = difference'],
+        sourcePrompt: 'Measure the lengths of the three pieces of yarn. Estimate and find the total length of Yarn A and Yarn C. Then subtract to estimate and find the difference between that total and Yarn B.',
+        solvedAnswer: 'Yarn A is 64 cm, Yarn B is 88 cm, and Yarn C is 38 cm. A + C is 102 cm, estimated as 100 cm. The difference from Yarn B is 14 cm, estimated as 10 cm.',
+        equations: ['64 cm ~= 60 cm', '88 cm ~= 90 cm', '38 cm ~= 40 cm', '64 cm + 38 cm = 102 cm', '60 cm + 40 cm = 100 cm', '102 cm - 88 cm = 14 cm', '100 cm - 90 cm = 10 cm'],
         dataDisplay: dataTable('Yarn lengths', ['Yarn', 'Actual', 'Rounded'], [['A', '____ cm', '____ cm'], ['B', '____ cm', '____ cm'], ['C', '____ cm', '____ cm']]),
         solvedDataDisplay: dataTable('Yarn lengths', ['Yarn', 'Actual', 'Rounded'], [['A', '64 cm', '60 cm'], ['B', '88 cm', '90 cm'], ['C', '38 cm', '40 cm'], ['A + C', '102 cm', '100 cm'], ['A + C minus B', '14 cm', '10 cm']])
       }),
       problem({
         number: 3,
-        sourcePrompt: 'Plot liquid in Containers D, E, F, round to nearest 10 mL, then find total and difference.',
+        sourcePrompt: 'Plot the amount of liquid in Containers D, E, and F on the number lines. Then, round to the nearest 10 milliliters. Estimate and find the total amount, then estimate and find the difference between Containers D and E.',
         solvedAnswer: 'Container D is 212 mL ≈ 210 mL, Container E is 238 mL ≈ 240 mL, and Container F is 195 mL ≈ 200 mL. The actual total is 645 mL, and D to E differs by 26 mL.',
-        equations: ['212 + 238 + 195 = 645', '238 - 212 = 26'],
+        equations: ['212 mL ~= 210 mL', '238 mL ~= 240 mL', '195 mL ~= 200 mL', '210 mL + 240 mL + 200 mL = 650 mL', '212 mL + 238 mL + 195 mL = 645 mL', '240 mL - 210 mL = 30 mL', '238 mL - 212 mL = 26 mL'],
         dataDisplay: dataTable('Container rounding', ['Container', 'Actual volume', 'Rounded to nearest 10 mL'], [['D', '____ mL', '____ mL'], ['E', '____ mL', '____ mL'], ['F', '____ mL', '____ mL']]),
         solvedDataDisplay: dataTable('Container rounding', ['Container', 'Actual volume', 'Rounded to nearest 10 mL'], [['D', '212 mL', '210 mL'], ['E', '238 mL', '240 mL'], ['F', '195 mL', '200 mL']])
       }),
-      problem({ number: 4, sourcePrompt: 'Movie is 115 minutes including trailers of 5, 4, 3, 5, and 4 minutes.', solvedAnswer: 'Trailers total 21 minutes; movie without trailers is 94 minutes, about 100 minutes.', equations: ['5 + 4 + 3 + 5 + 4 = 21', '115 - 21 = 94'], quotient: 94, unitLabel: 'minutes', dataDisplay: dataTable('Trailer lengths', ['Trailer', 'Minutes'], [['1', '5'], ['2', '4'], ['3', '3'], ['4', '5'], ['5', '4'], ['Total', '21']]) })
+      problem({ number: 4, sourcePrompt: 'Shane watches a movie in the theater that is 115 minutes long, including the trailers. The trailer lengths are 5, 4, 3, 5, and 4 minutes.', solvedAnswer: 'Trailers total 21 minutes; movie without trailers is 94 minutes. Estimates will vary.', equations: ['5 min + 4 min + 3 min + 5 min + 4 min = 21 min', '115 min - 21 min = 94 min'], quotient: 94, unitLabel: 'minutes', dataDisplay: dataTable('Trailer lengths', ['Trailer', 'Minutes'], [['1', '5'], ['2', '4'], ['3', '3'], ['4', '5'], ['5', '4'], ['Total', '21']]) })
     ]
   })
 };
