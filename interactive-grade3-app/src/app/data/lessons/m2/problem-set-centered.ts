@@ -111,7 +111,7 @@ type TimeLineProblemSeed = {
   points: TimeLinePointSeed[];
   jumps?: TimeLineJumpSeed[];
   showPointDetails?: boolean;
-  directions?: string[];
+  directions?: Array<{ lead?: string; text: string }>;
   blankNote: string;
   solvedNote: string;
   solvedAnswer: string;
@@ -1079,9 +1079,9 @@ function timeLineVisual(seed: TimeLineProblemSeed, solved: boolean): ProblemVisu
 
   if (seed.directions?.length) {
     sections.push({
-      kind: 'equations',
+      kind: 'source-directions',
       label: solved ? 'Teacher Edition directions checked' : 'Teacher Edition directions',
-      lines: seed.directions
+      items: seed.directions
     });
   }
 
@@ -1338,13 +1338,13 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         ],
         showPointDetails: false,
         directions: [
-          'Ingrid gets ready for school between 7:00 a.m. and 8:00 a.m. Label the first and last tick marks as 7:00 a.m. and 8:00 a.m.',
-          'Each interval represents 5 minutes. Count by fives starting at 0, or 7:00 a.m. Label each 5 minute interval below the number line up to 8:00 a.m.',
-          'Ingrid starts getting dressed at 7:10 a.m. Plot a point and write D above it.',
-          'Ingrid starts eating breakfast at 7:35 a.m. Plot a point and write E above it.',
-          'Ingrid starts brushing her teeth at 7:40 a.m. Plot a point and write T above it.',
-          'Ingrid starts packing her lunch at 7:45 a.m. Plot a point and write L above it.',
-          'Ingrid starts waiting for the bus at 7:55 a.m. Plot a point and write W above it.'
+          { lead: 'Endpoints', text: 'Ingrid gets ready for school between 7:00 a.m. and 8:00 a.m. Label the first and last tick marks as 7:00 a.m. and 8:00 a.m.' },
+          { lead: 'Five-minute scale', text: 'Each interval represents 5 minutes. Count by fives starting at 0, or 7:00 a.m. Label each 5 minute interval below the number line up to 8:00 a.m.' },
+          { lead: 'D at 7:10', text: 'Ingrid starts getting dressed at 7:10 a.m. Plot a point and write D above it.' },
+          { lead: 'E at 7:35', text: 'Ingrid starts eating breakfast at 7:35 a.m. Plot a point and write E above it.' },
+          { lead: 'T at 7:40', text: 'Ingrid starts brushing her teeth at 7:40 a.m. Plot a point and write T above it.' },
+          { lead: 'L at 7:45', text: 'Ingrid starts packing her lunch at 7:45 a.m. Plot a point and write L above it.' },
+          { lead: 'W at 7:55', text: 'Ingrid starts waiting for the bus at 7:55 a.m. Plot a point and write W above it.' }
         ],
         blankNote: 'Label the first tick 7:00 a.m., the last tick 8:00 a.m., and the intervals 0, 5, 10, ... 60 before plotting letters.',
         solvedNote: 'Each plotted letter is a minute position after 7:00: D 10, E 35, T 40, L 45, W 55.',

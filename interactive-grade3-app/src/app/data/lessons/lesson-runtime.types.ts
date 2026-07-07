@@ -530,6 +530,15 @@ export type ProblemVisualCardGridSection = {
   }>;
 };
 
+export type ProblemVisualSourceDirectionsSection = {
+  kind: 'source-directions';
+  label?: string;
+  items: Array<{
+    lead?: string;
+    text: string;
+  }>;
+};
+
 export type ProblemVisualSection =
   | ProblemVisualArraySection
   | ProblemVisualFloorPlanSection
@@ -549,7 +558,8 @@ export type ProblemVisualSection =
   | ProblemVisualStopwatchSection
   | ProblemVisualTimeLineSection
   | ProblemVisualMeasurementModelSection
-  | ProblemVisualCardGridSection;
+  | ProblemVisualCardGridSection
+  | ProblemVisualSourceDirectionsSection;
 
 export type ProblemVisualSpec = {
   title: string;

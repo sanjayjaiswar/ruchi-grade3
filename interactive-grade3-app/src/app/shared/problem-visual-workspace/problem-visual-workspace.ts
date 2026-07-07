@@ -23,6 +23,7 @@ import type {
   ProblemVisualSection,
   ProblemVisualSolutionPartsSection,
   ProblemVisualSpec,
+  ProblemVisualSourceDirectionsSection,
   ProblemVisualStopwatchSection,
   ProblemVisualTapeSection,
   ProblemVisualTimeLineSection
@@ -126,6 +127,10 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
 
   solutionPartsSection(section: ProblemVisualSection): ProblemVisualSolutionPartsSection | undefined {
     return section.kind === 'solution-parts' ? section : undefined;
+  }
+
+  sourceDirectionsSection(section: ProblemVisualSection): ProblemVisualSourceDirectionsSection | undefined {
+    return section.kind === 'source-directions' ? section : undefined;
   }
 
   noteSection(section: ProblemVisualSection): ProblemVisualNoteSection | undefined {

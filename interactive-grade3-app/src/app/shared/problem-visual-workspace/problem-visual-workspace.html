@@ -486,6 +486,16 @@
       </div>
     </ng-container>
 
+    <ng-container *ngIf="sourceDirectionsSection(section) as sourceDirections">
+      <strong *ngIf="sourceDirections.label">{{ sourceDirections.label }}</strong>
+      <ol class="visual-source-directions">
+        <li *ngFor="let item of sourceDirections.items">
+          <b *ngIf="item.lead">{{ item.lead }}</b>
+          <span>{{ item.text }}</span>
+        </li>
+      </ol>
+    </ng-container>
+
     <ng-container *ngIf="noteSection(section) as note">
       <strong *ngIf="note.label">{{ note.label }}</strong>
       <p class="visual-note">{{ note.text }}</p>
