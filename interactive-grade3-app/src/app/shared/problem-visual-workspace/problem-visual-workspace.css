@@ -711,16 +711,23 @@
 }
 
 .visual-tape-braces {
-  display: grid;
-  gap: 5px 0;
+  position: relative;
+  display: block;
+  min-height: 68px;
+  margin-top: 4px;
 }
 
 .visual-tape .visual-tape-braces span,
 .visual-tape .visual-tape-braces span:last-child {
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
   display: grid;
+  justify-self: stretch;
   min-height: 0;
   gap: 3px;
-  padding: 0 8px;
+  overflow: visible;
+  padding: 0;
   border: 0;
   background: transparent;
   color: #3c4043;
@@ -730,10 +737,12 @@
 
 .visual-tape-braces i {
   display: block;
-  height: 10px;
-  border-right: 2px solid #5f6368;
-  border-bottom: 2px solid #5f6368;
-  border-left: 2px solid #5f6368;
+  box-sizing: border-box;
+  width: 100%;
+  height: 13px;
+  border-right: 3px solid #5f6368;
+  border-bottom: 3px solid #5f6368;
+  border-left: 3px solid #5f6368;
 }
 
 .visual-tape .visual-tape-braces b {
@@ -745,6 +754,28 @@
   font-size: 13px;
   font-weight: 650;
   line-height: 1.25;
+  text-align: center;
+}
+
+.visual-tape .visual-tape-braces b.is-answer-box {
+  width: fit-content;
+  justify-self: center;
+  min-width: 56px;
+  padding: 4px 8px;
+  border: 2px dashed #5f6368;
+  background: #ffffff;
+  color: #202124;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.visual-tape .visual-tape-braces em {
+  display: block;
+  color: #5f6368;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: 1.2;
   text-align: center;
 }
 

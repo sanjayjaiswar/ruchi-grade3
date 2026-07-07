@@ -345,6 +345,7 @@ export type ProblemVisualTapeSection = {
   kind: 'tape';
   label?: string;
   totalLabel: string;
+  hideTotalLabel?: boolean;
   topParts?: Array<{
     label: string;
     sublabel?: string;
@@ -359,6 +360,7 @@ export type ProblemVisualTapeSection = {
   }>;
   braces?: Array<{
     label: string;
+    boxLabel?: string;
     startPart: number;
     partCount: number;
   }>;

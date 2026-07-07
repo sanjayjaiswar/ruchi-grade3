@@ -167,10 +167,48 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     return `${start + 1} / span ${span}`;
   }
 
+  tapeBraceGridColumnStart(brace: NonNullable<ProblemVisualTapeSection['braces']>[number]): number {
+    return Math.max(0, Math.round(brace.startPart)) + 1;
+  }
+
+  tapeBraceGridColumnEnd(brace: NonNullable<ProblemVisualTapeSection['braces']>[number]): string {
+    return `span ${Math.max(1, Math.round(brace.partCount))}`;
+  }
+
+  tapeBraceOffsetPercent(brace: NonNullable<ProblemVisualTapeSection['braces']>[number], partCount: number): number {
+    const total = Math.max(1, partCount);
+    return (Math.max(0, Math.round(brace.startPart)) / total) * 100;
+  }
+
+  tapeBraceWidthPercent(brace: NonNullable<ProblemVisualTapeSection['braces']>[number], partCount: number): number {
+    const total = Math.max(1, partCount);
+    return (Math.max(1, Math.round(brace.partCount)) / total) * 100;
+  }
+
+  tapeBraceOffsetStyle(brace: NonNullable<ProblemVisualTapeSection['braces']>[number], partCount: number): string {
+    return `${this.tapeBraceOffsetPercent(brace, partCount)}%`;
+  }
+
+  tapeBraceWidthStyle(brace: NonNullable<ProblemVisualTapeSection['braces']>[number], partCount: number): string {
+    return `${this.tapeBraceWidthPercent(brace, partCount)}%`;
+  }
+
+  tapeBraceStyle(brace: NonNullable<ProblemVisualTapeSection['braces']>[number], partCount: number): string {
+    return `left: ${this.tapeBraceOffsetStyle(brace, partCount)}; width: ${this.tapeBraceWidthStyle(brace, partCount)};`;
+  }
+
   tapeTopPartGridColumn(topPart: NonNullable<ProblemVisualTapeSection['topParts']>[number]): string {
     const start = Math.max(0, Math.round(topPart.startPart));
     const span = Math.max(1, Math.round(topPart.partCount ?? 1));
     return `${start + 1} / span ${span}`;
+  }
+
+  tapeTopPartGridColumnStart(topPart: NonNullable<ProblemVisualTapeSection['topParts']>[number]): number {
+    return Math.max(0, Math.round(topPart.startPart)) + 1;
+  }
+
+  tapeTopPartGridColumnEnd(topPart: NonNullable<ProblemVisualTapeSection['topParts']>[number]): string {
+    return `span ${Math.max(1, Math.round(topPart.partCount ?? 1))}`;
   }
 
   fractionStripColumns(section: ProblemVisualFractionStripSection): string {

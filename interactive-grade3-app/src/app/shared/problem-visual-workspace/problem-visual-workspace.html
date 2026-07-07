@@ -41,12 +41,13 @@
                   [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
                   <span
                     *ngFor="let topPart of tape.topParts"
-                    [style.gridColumn]="tapeTopPartGridColumn(topPart)">
+                    [style.gridColumnStart]="tapeTopPartGridColumnStart(topPart)"
+                    [style.gridColumnEnd]="tapeTopPartGridColumnEnd(topPart)">
                     <b>{{ topPart.label }}</b>
                     <em *ngIf="topPart.sublabel">{{ topPart.sublabel }}</em>
                   </span>
                 </div>
-                <b class="visual-tape-whole-label">{{ tape.totalLabel }}</b>
+                <b class="visual-tape-whole-label" *ngIf="!tape.hideTotalLabel">{{ tape.totalLabel }}</b>
                 <div [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
                   <span
                     *ngFor="let part of tape.parts"
@@ -63,9 +64,10 @@
                   [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
                   <span
                     *ngFor="let brace of tape.braces"
-                    [style.gridColumn]="tapeBraceGridColumn(brace)">
+                    [attr.style]="tapeBraceStyle(brace, tape.parts.length)">
                     <i></i>
-                    <b>{{ brace.label }}</b>
+                    <b [class.is-answer-box]="brace.boxLabel">{{ brace.boxLabel || brace.label }}</b>
+                    <em *ngIf="brace.boxLabel">{{ brace.label }}</em>
                   </span>
                 </div>
                 <small *ngIf="tape.caption">{{ tape.caption }}</small>
@@ -212,12 +214,13 @@
           [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
           <span
             *ngFor="let topPart of tape.topParts"
-            [style.gridColumn]="tapeTopPartGridColumn(topPart)">
+            [style.gridColumnStart]="tapeTopPartGridColumnStart(topPart)"
+            [style.gridColumnEnd]="tapeTopPartGridColumnEnd(topPart)">
             <b>{{ topPart.label }}</b>
             <em *ngIf="topPart.sublabel">{{ topPart.sublabel }}</em>
           </span>
         </div>
-        <b class="visual-tape-whole-label">{{ tape.totalLabel }}</b>
+        <b class="visual-tape-whole-label" *ngIf="!tape.hideTotalLabel">{{ tape.totalLabel }}</b>
         <div [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
           <span
             *ngFor="let part of tape.parts"
@@ -234,9 +237,10 @@
           [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
           <span
             *ngFor="let brace of tape.braces"
-            [style.gridColumn]="tapeBraceGridColumn(brace)">
+            [attr.style]="tapeBraceStyle(brace, tape.parts.length)">
             <i></i>
-            <b>{{ brace.label }}</b>
+            <b [class.is-answer-box]="brace.boxLabel">{{ brace.boxLabel || brace.label }}</b>
+            <em *ngIf="brace.boxLabel">{{ brace.label }}</em>
           </span>
         </div>
         <small *ngIf="tape.caption">{{ tape.caption }}</small>

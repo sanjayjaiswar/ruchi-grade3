@@ -489,6 +489,256 @@ function twoStepTapeSection(
   return undefined;
 }
 
+function lesson21Visual(problemNumber: 1 | 2 | 3 | 4, solved: boolean): ProblemVisualSpec {
+  const sourceNote = solved
+    ? 'Solved view follows the Lesson 21 Teacher Edition two-step answer and keeps the worksheet model visible.'
+    : 'Blank view keeps the Lesson 21 worksheet model and marks the unknowns before solving.';
+
+  if (problemNumber === 1) {
+    return {
+      title: 'Problem 1: Jason earns for 5 weeks',
+      sourceNote,
+      sections: [
+        {
+          kind: 'tape',
+          label: 'Tape model',
+          totalLabel: '',
+          hideTotalLabel: true,
+          topParts: [
+            { label: '$6', startPart: 0, partCount: 1 },
+            { label: '$4', startPart: 4, partCount: 1 }
+          ],
+          parts: [
+            { label: '6', sublabel: 'week 1' },
+            { label: '6', sublabel: 'week 2' },
+            { label: '6', sublabel: 'week 3' },
+            { label: '6', sublabel: 'week 4' },
+            { label: '4', sublabel: 'week 5' }
+          ],
+          braces: [
+            { label: 'money', boxLabel: solved ? '? $28' : '?', startPart: 0, partCount: 5 }
+          ],
+          caption: 'Four full weeks at $6, then the fifth week is $4.'
+        },
+        {
+          kind: 'solution-parts',
+          label: 'Worksheet a/b work',
+          parts: [
+            {
+              label: 'a',
+              prompt: 'How much does Jason earn in the 4 full weeks?',
+              equation: solved ? '4 x 6 = 24' : '4 x 6 = ____',
+              answer: solved ? 'Jason earns $24 in the first 4 weeks.' : 'Jason earns $____ in the first 4 weeks.'
+            },
+            {
+              label: 'b',
+              prompt: 'How much does Jason earn in 5 weeks?',
+              equation: solved ? '24 + 4 = 28' : '____ + 4 = ____',
+              answer: solved ? 'Jason earns $28.' : 'Jason earns $____.'
+            }
+          ]
+        },
+        {
+          kind: 'equations',
+          label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
+          lines: solved ? ['4 x 6 = 24', '24 + 4 = 28'] : ['4 x 6 = ____', '____ + 4 = ____']
+        },
+        {
+          kind: 'note',
+          label: solved ? 'Answer sentence' : 'Workspace direction',
+          text: solved ? 'Jason earns $28.' : 'Use four $6 weeks and one $4 week to find the 5-week total.'
+        }
+      ]
+    };
+  }
+
+  if (problemNumber === 2) {
+    return {
+      title: 'Problem 2: markers and students',
+      sourceNote,
+      sections: [
+        {
+          kind: 'tape',
+          label: 'Markers',
+          totalLabel: '',
+          hideTotalLabel: true,
+          parts: Array.from({ length: 4 }, () => ({ label: '7' })),
+          braces: [
+            { label: 'markers', boxLabel: solved ? '? 28' : '?', startPart: 0, partCount: 4 }
+          ],
+          caption: 'Four packs of 7 markers make the total markers.'
+        },
+        {
+          kind: 'tape',
+          label: 'Students',
+          totalLabel: solved ? '28 markers' : '? markers',
+          parts: [
+            { label: solved ? '22' : '?', sublabel: 'students', emphasize: true },
+            { label: '6', sublabel: 'markers left', muted: true }
+          ],
+          braces: [
+            { label: 'students', boxLabel: solved ? '? 22' : '?', startPart: 0, partCount: 1 },
+            { label: '6 markers', startPart: 1, partCount: 1 }
+          ],
+          caption: 'The 6 markers left are not handed out. The handed-out markers match the number of students.'
+        },
+        {
+          kind: 'solution-parts',
+          label: 'Worksheet a/b work',
+          parts: [
+            {
+              label: 'a',
+              prompt: 'How many markers does Miss Lianto order?',
+              equation: solved ? '4 x 7 = 28' : '4 x 7 = ____',
+              answer: solved ? 'Miss Lianto orders 28 markers.' : 'Miss Lianto orders ____ markers.'
+            },
+            {
+              label: 'b',
+              prompt: 'How many students are in the class?',
+              equation: solved ? '28 - 6 = 22' : '____ - 6 = ____',
+              answer: solved ? 'There are 22 students in Miss Lianto’s class.' : 'There are ____ students in Miss Lianto’s class.'
+            }
+          ]
+        },
+        {
+          kind: 'equations',
+          label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
+          lines: solved ? ['4 x 7 = 28', '28 - 6 = 22'] : ['4 x 7 = ____', '____ - 6 = ____']
+        },
+        {
+          kind: 'note',
+          label: solved ? 'Answer sentence' : 'Workspace direction',
+          text: solved ? 'There are 22 students in Miss Lianto’s class.' : 'Find the total markers first. Then subtract the 6 markers left.'
+        }
+      ]
+    };
+  }
+
+  if (problemNumber === 3) {
+    return {
+      title: 'Problem 3: fruit snacks left',
+      sourceNote,
+      sections: [
+        {
+          kind: 'tape',
+          label: 'Flavors',
+          totalLabel: '18 snacks',
+          parts: [
+            { label: solved ? '6' : '?', sublabel: 'strawberry', emphasize: true },
+            { label: solved ? '6' : '?', sublabel: 'cherry', emphasize: true },
+            { label: solved ? '6' : '?', sublabel: 'grape' }
+          ],
+          braces: [
+            { label: 'grape snacks', boxLabel: solved ? '? 6' : '?', startPart: 2, partCount: 1 }
+          ],
+          caption: 'Split 18 fruit snacks equally among 3 flavors.'
+        },
+        {
+          kind: 'tape',
+          label: 'After Orlando eats grape',
+          totalLabel: '18 snacks',
+          parts: [
+            { label: solved ? '12' : '?', sublabel: 'snacks left', emphasize: true },
+            { label: solved ? '6' : '?', sublabel: 'grape eaten', muted: true }
+          ],
+          braces: [
+            { label: 'snacks left', boxLabel: solved ? '? 12' : '?', startPart: 0, partCount: 1 },
+            { label: 'grape', boxLabel: solved ? '? 6' : '?', startPart: 1, partCount: 1 }
+          ],
+          caption: 'Remove the grape-flavored part from the 18 snacks.'
+        },
+        {
+          kind: 'solution-parts',
+          label: 'Worksheet a/b work',
+          parts: [
+            {
+              label: 'a',
+              prompt: 'How many snacks are in each flavor?',
+              equation: solved ? '18 ÷ 3 = 6' : '18 ÷ 3 = ____',
+              answer: solved ? 'Each flavor has 6 snacks.' : 'Each flavor has ____ snacks.'
+            },
+            {
+              label: 'b',
+              prompt: 'How many fruit snacks are left?',
+              equation: solved ? '18 - 6 = 12' : '18 - ____ = ____',
+              answer: solved ? 'There are 12 fruit snacks left.' : 'There are ____ fruit snacks left.'
+            }
+          ]
+        },
+        {
+          kind: 'equations',
+          label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
+          lines: solved ? ['18 ÷ 3 = 6', '18 - 6 = 12'] : ['18 ÷ 3 = ____', '18 - ____ = ____']
+        },
+        {
+          kind: 'note',
+          label: solved ? 'Answer sentence' : 'Workspace direction',
+          text: solved ? 'Each flavor has 6 snacks. After eating the 6 grape snacks, Orlando has 12 snacks left.' : 'Find one flavor first. Then subtract the grape snacks Orlando eats.'
+        }
+      ]
+    };
+  }
+
+  return {
+    title: 'Problem 4: ribbon pieces needed',
+    sourceNote,
+    sections: [
+      {
+        kind: 'tape',
+        label: 'a. Pieces from 21 meters',
+        totalLabel: '21 meters',
+        parts: Array.from({ length: 7 }, () => ({ label: '3', sublabel: 'm' })),
+        braces: [
+          { label: 'pieces', boxLabel: solved ? '? 7' : '?', startPart: 0, partCount: 7 }
+        ],
+        caption: 'Each piece is 3 meters long.'
+      },
+      {
+        kind: 'tape',
+        label: 'b. More pieces to reach 12',
+        totalLabel: '12 pieces',
+        parts: [
+          { label: solved ? '7' : '?', sublabel: 'pieces she has', muted: true },
+          { label: solved ? '5' : '?', sublabel: 'more pieces', emphasize: true }
+        ],
+        braces: [
+          { label: 'pieces she has', boxLabel: solved ? '? 7' : '?', startPart: 0, partCount: 1 },
+          { label: 'more pieces', boxLabel: solved ? '? 5' : '?', startPart: 1, partCount: 1 }
+        ],
+        caption: 'Compare the 7 pieces she has to the 12 pieces she needs.'
+      },
+      {
+        kind: 'solution-parts',
+        label: 'Worksheet a/b work',
+        parts: [
+          {
+            label: 'a',
+            prompt: 'How many pieces of ribbon does Eudora have?',
+            equation: solved ? '21 ÷ 3 = 7' : '21 ÷ 3 = ____',
+            answer: solved ? 'Eudora has 7 pieces of ribbon.' : 'Eudora has ____ pieces of ribbon.'
+          },
+          {
+            label: 'b',
+            prompt: 'How many more pieces does she need to reach 12?',
+            equation: solved ? '12 - 7 = 5' : '12 - ____ = ____',
+            answer: solved ? 'She needs 5 more pieces of the shorter ribbon.' : 'She needs ____ more pieces of the shorter ribbon.'
+          }
+        ]
+      },
+      {
+        kind: 'equations',
+        label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
+        lines: solved ? ['21 ÷ 3 = 7', '12 - 7 = 5'] : ['21 ÷ 3 = ____', '12 - ____ = ____']
+      },
+      {
+        kind: 'note',
+        label: solved ? 'Answer sentence' : 'Workspace direction',
+        text: solved ? 'She has 7 pieces and needs 5 more pieces.' : 'Find the number of 3-meter pieces first. Then compare that count to 12 pieces.'
+      }
+    ]
+  };
+}
+
 function lesson20Visual(problemNumber: 1 | 2 | 3 | 4 | 5, solved: boolean): ProblemVisualSpec {
   const sourceNote = solved
     ? 'Solved view follows the Lesson 20 Teacher Edition sample work: find the first unknown, then use it to answer the second question.'
@@ -512,7 +762,12 @@ function lesson20Visual(problemNumber: 1 | 2 | 3 | 4 | 5, solved: boolean): Prob
             { label: '$8', sublabel: 'book' }
           ],
           braces: [
-            { label: solved ? 'Find first: $24 book cost' : 'Find first: ? book cost', startPart: 0, partCount: 3 }
+            {
+              label: 'book cost',
+              boxLabel: solved ? '? $24' : '?',
+              startPart: 0,
+              partCount: 3
+            }
           ],
           caption: '3 books at $8 each, then add the $4 magazine.'
         },
@@ -561,8 +816,18 @@ function lesson20Visual(problemNumber: 1 | 2 | 3 | 4 | 5, solved: boolean): Prob
           totalLabel: '28 silly bands',
           parts: Array.from({ length: 7 }, () => ({ label: solved ? '4' : '?' })),
           braces: [
-            { label: solved ? 'Find first: 4 for 1 child' : 'Find first: ? for 1 child', startPart: 0, partCount: 1 },
-            { label: solved ? 'Then 3 children: 12' : 'Then 3 children: ?', startPart: 4, partCount: 3 }
+            {
+              label: '1 child',
+              boxLabel: solved ? '? 4' : '?',
+              startPart: 0,
+              partCount: 1
+            },
+            {
+              label: '3 children',
+              boxLabel: solved ? '? 12' : '?',
+              startPart: 4,
+              partCount: 3
+            }
           ],
           caption: 'Seven children share 28 silly bands equally.'
         },
@@ -617,7 +882,12 @@ function lesson20Visual(problemNumber: 1 | 2 | 3 | 4 | 5, solved: boolean): Prob
           })),
           braces: [
             { label: '2 broken boxes', startPart: 0, partCount: 2 },
-            { label: solved ? '4 unbroken boxes: 12 cups' : '4 unbroken boxes: ? cups', startPart: 2, partCount: 4 }
+            {
+              label: '4 unbroken boxes',
+              boxLabel: solved ? '? 12 cups' : '?',
+              startPart: 2,
+              partCount: 4
+            }
           ],
           caption: 'Two boxes break, so the unbroken cups are in the 4 remaining boxes.'
         },
@@ -666,7 +936,12 @@ function lesson20Visual(problemNumber: 1 | 2 | 3 | 4 | 5, solved: boolean): Prob
           totalLabel: '25 blue balloons',
           parts: Array.from({ length: 5 }, () => ({ label: solved ? '5' : '?' })),
           braces: [
-            { label: solved ? '1 child gets 5 blue' : '1 child gets ? blue', startPart: 0, partCount: 1 }
+            {
+              label: '1 child gets blue',
+              boxLabel: solved ? '? 5' : '?',
+              startPart: 0,
+              partCount: 1
+            }
           ],
           caption: 'Five children share the blue balloons equally.'
         },
@@ -676,7 +951,12 @@ function lesson20Visual(problemNumber: 1 | 2 | 3 | 4 | 5, solved: boolean): Prob
           totalLabel: '15 red balloons',
           parts: Array.from({ length: 5 }, () => ({ label: solved ? '3' : '?' })),
           braces: [
-            { label: solved ? '1 child gets 3 red' : '1 child gets ? red', startPart: 0, partCount: 1 }
+            {
+              label: '1 child gets red',
+              boxLabel: solved ? '? 3' : '?',
+              startPart: 0,
+              partCount: 1
+            }
           ],
           caption: 'The same five children share the red balloons equally.'
         },
@@ -730,7 +1010,12 @@ function lesson20Visual(problemNumber: 1 | 2 | 3 | 4 | 5, solved: boolean): Prob
         })),
         braces: [
           { label: '5 bags sold', startPart: 0, partCount: 5 },
-          { label: solved ? '4 bags left' : '? bags left', startPart: 5, partCount: 4 }
+          {
+            label: 'bags left',
+            boxLabel: solved ? '? 4' : '?',
+            startPart: 5,
+            partCount: 4
+          }
         ],
         caption: 'Each bag has 3 pears. Five bags are sold.'
       },
@@ -3093,14 +3378,8 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         groupLabel: 'weeks',
         blankVisualType: 'tape-diagram',
         animationType: 'two-step-model',
-        blankVisual: twoStepVisual('Problem 1: Jason earns for 5 weeks', [
-          { step: '1', model: '4 full weeks at $6', blank: '4 x 6 = ____', solved: '4 x 6 = 24' },
-          { step: '2', model: 'Add the $4 fifth week', blank: '____ + 4 = ____', solved: '24 + 4 = 28' }
-        ], ['4 x 6 = 24', '24 + 4 = 28'], 'Jason earns $28.', false),
-        solvedVisual: twoStepVisual('Problem 1: Jason earns for 5 weeks', [
-          { step: '1', model: '4 full weeks at $6', blank: '4 x 6 = ____', solved: '4 x 6 = 24' },
-          { step: '2', model: 'Add the $4 fifth week', blank: '____ + 4 = ____', solved: '24 + 4 = 28' }
-        ], ['4 x 6 = 24', '24 + 4 = 28'], 'Jason earns $28.', true),
+        blankVisual: lesson21Visual(1, false),
+        solvedVisual: lesson21Visual(1, true),
         blankWorkspaceLabel: 'Represent four $6 weeks and one $4 week before writing the total.',
         blankPrompts: [
           'Show 4 equal $6 weeks.',
@@ -3127,14 +3406,8 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         groupLabel: 'packs',
         blankVisualType: 'tape-diagram',
         animationType: 'two-step-model',
-        blankVisual: twoStepVisual('Problem 2: markers and students', [
-          { step: '1', model: '4 packs of 7 markers', blank: '4 x 7 = ____', solved: '4 x 7 = 28' },
-          { step: '2', model: '6 markers left after passing out one each', blank: '____ - 6 = ____', solved: '28 - 6 = 22' }
-        ], ['4 x 7 = 28', '28 - 6 = 22'], 'There are 22 students in Miss Lianto’s class.', false),
-        solvedVisual: twoStepVisual('Problem 2: markers and students', [
-          { step: '1', model: '4 packs of 7 markers', blank: '4 x 7 = ____', solved: '4 x 7 = 28' },
-          { step: '2', model: '6 markers left after passing out one each', blank: '____ - 6 = ____', solved: '28 - 6 = 22' }
-        ], ['4 x 7 = 28', '28 - 6 = 22'], 'There are 22 students in Miss Lianto’s class.', true),
+        blankVisual: lesson21Visual(2, false),
+        solvedVisual: lesson21Visual(2, true),
         blankWorkspaceLabel: 'Find the total markers, then subtract the 6 left over to get the number handed out.',
         blankPrompts: [
           'Use 4 packs of 7 markers.',
@@ -3160,14 +3433,8 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         groupLabel: 'flavors',
         blankVisualType: 'tape-diagram',
         animationType: 'two-step-model',
-        blankVisual: twoStepVisual('Problem 3: fruit snacks left', [
-          { step: '1', model: '18 snacks split equally among 3 flavors', blank: '18 ÷ 3 = ____', solved: '18 ÷ 3 = 6' },
-          { step: '2', model: 'Remove the grape-flavored part', blank: '18 - ____ = ____', solved: '18 - 6 = 12' }
-        ], ['18 ÷ 3 = 6', '18 - 6 = 12'], 'Each flavor has 6 snacks. After eating the 6 grape snacks, Orlando has 12 snacks left.', false),
-        solvedVisual: twoStepVisual('Problem 3: fruit snacks left', [
-          { step: '1', model: '18 snacks split equally among 3 flavors', blank: '18 ÷ 3 = ____', solved: '18 ÷ 3 = 6' },
-          { step: '2', model: 'Remove the grape-flavored part', blank: '18 - ____ = ____', solved: '18 - 6 = 12' }
-        ], ['18 ÷ 3 = 6', '18 - 6 = 12'], 'Each flavor has 6 snacks. After eating the 6 grape snacks, Orlando has 12 snacks left.', true),
+        blankVisual: lesson21Visual(3, false),
+        solvedVisual: lesson21Visual(3, true),
         blankWorkspaceLabel: 'Split the snacks into 3 equal flavor parts, then remove the grape part.',
         blankPrompts: [
           'Partition 18 into 3 equal flavor units.',
@@ -3193,14 +3460,8 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         groupLabel: 'steps',
         blankVisualType: 'bar-units',
         animationType: 'two-step-model',
-        blankVisual: twoStepVisual('Problem 4: ribbon pieces needed', [
-          { step: '1', model: '21 meters cut into 3-meter pieces', blank: '21 ÷ 3 = ____', solved: '21 ÷ 3 = 7' },
-          { step: '2', model: 'Compare 7 pieces to 12 pieces', blank: '12 - ____ = ____', solved: '12 - 7 = 5' }
-        ], ['21 ÷ 3 = 7', '12 - 7 = 5'], 'She has 7 pieces and needs 5 more pieces.', false),
-        solvedVisual: twoStepVisual('Problem 4: ribbon pieces needed', [
-          { step: '1', model: '21 meters cut into 3-meter pieces', blank: '21 ÷ 3 = ____', solved: '21 ÷ 3 = 7' },
-          { step: '2', model: 'Compare 7 pieces to 12 pieces', blank: '12 - ____ = ____', solved: '12 - 7 = 5' }
-        ], ['21 ÷ 3 = 7', '12 - 7 = 5'], 'She has 7 pieces and needs 5 more pieces.', true),
+        blankVisual: lesson21Visual(4, false),
+        solvedVisual: lesson21Visual(4, true),
         blankWorkspaceLabel: 'Find how many 3-meter pieces she has, then compare to 12 pieces.',
         blankPrompts: [
           'Divide 21 meters by 3 meters per piece.',
