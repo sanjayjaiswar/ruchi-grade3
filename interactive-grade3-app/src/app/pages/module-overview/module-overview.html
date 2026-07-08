@@ -47,8 +47,9 @@
       <div>
         <span class="section-step">1. Concepts</span>
         <h2 class="section-title">Module concepts</h2>
-        <p class="muted" *ngIf="!showModuleOneConceptMap()">Teach these ideas before the lesson sequence, then refer back to them when individual lessons use the idea.</p>
+        <p class="muted" *ngIf="!showModuleOneConceptMap() && !showModuleTwoConceptMap()">Teach these ideas before the lesson sequence, then refer back to them when individual lessons use the idea.</p>
         <p class="muted" *ngIf="showModuleOneConceptMap()">A parent-friendly map of the big ideas students use across multiplication, division, strategies, and word problems.</p>
+        <p class="muted" *ngIf="showModuleTwoConceptMap()">A source-backed map of the module before opening individual lessons.</p>
       </div>
     </div>
 
@@ -69,6 +70,10 @@
         </div>
         <div *ngSwitchCase="'measurement'" class="spine-measure">
           <div class="spine-clock" data-hour="7" data-minute="35" aria-hidden="true"></div>
+          <div class="m2-clock-facts" aria-hidden="true">
+            <span>60 sec = 1 min</span>
+            <span>60 min = 1 hr</span>
+          </div>
           <div class="spine-scale">
             <span *ngFor="let tick of moduleFrameSlots(7)">{{ (tick - 1) * 10 }}</span>
           </div>
@@ -110,7 +115,7 @@
       </div>
     </article>
 
-    <ng-container *ngIf="showModuleOneConceptMap(); else standardConceptCards">
+    <ng-container *ngIf="showModuleOneConceptMap(); else nonModuleOneConceptCards">
       <div class="module-one-map">
         <article class="concept-chart-panel">
           <div class="concept-chart-copy">
@@ -227,6 +232,157 @@
         </div>
       </div>
     </ng-container>
+
+    <ng-template #nonModuleOneConceptCards>
+      <ng-container *ngIf="showModuleTwoConceptMap(); else standardConceptCards">
+        <div class="module-two-map">
+          <section class="module-two-section">
+            <div class="module-two-section-heading">
+              <span>1</span>
+              <div>
+                <h3>Thinking Path</h3>
+                <p>Use this sequence before solving any measurement problem.</p>
+              </div>
+            </div>
+
+            <article class="module-two-anchor">
+              <div class="module-two-anchor-copy">
+                <span class="anchor-kicker">Teacher prompts</span>
+                <h3>Keep the unit attached from the start to the answer.</h3>
+              </div>
+              <div class="module-two-anchor-questions" aria-label="Module 2 measurement prompts">
+                <span *ngFor="let question of moduleTwoConceptQuestions">{{ question }}</span>
+              </div>
+            </article>
+
+            <div class="module-two-flow" aria-label="Module 2 measurement thinking path">
+              <span class="module-two-flow-step" *ngFor="let step of moduleTwoConceptFlow; let last = last">
+                <strong>{{ step.label }}</strong>
+                <small>{{ step.detail }}</small>
+                <b *ngIf="!last">→</b>
+              </span>
+            </div>
+          </section>
+
+          <section class="module-two-section">
+            <div class="module-two-section-heading">
+              <span>2</span>
+              <div>
+                <h3>Unit Categories</h3>
+                <p>Each category names what is being measured and gives examples.</p>
+              </div>
+            </div>
+
+            <div class="module-two-unit-board" aria-label="Categories of measurement units">
+              <article class="module-two-unit-category" *ngFor="let category of moduleTwoUnitCategories">
+                <span aria-hidden="true">{{ category.icon }}</span>
+                <div>
+                  <h3>{{ category.label }}</h3>
+                  <p>{{ category.measures }}</p>
+                  <strong>{{ category.units }}</strong>
+                  <small>{{ category.example }}</small>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="module-two-section">
+            <div class="module-two-section-heading">
+              <span>3</span>
+              <div>
+                <h3>Animated Concept Models</h3>
+                <p>Use these cards to preview the models before opening lessons.</p>
+              </div>
+            </div>
+
+            <div class="module-two-grid">
+              <article class="module-two-card" *ngFor="let cluster of moduleTwoConceptClusters">
+                <div class="module-two-card-heading">
+                  <span><i aria-hidden="true">{{ cluster.icon }}</i>{{ cluster.badge }}</span>
+                  <h3>{{ cluster.title }}</h3>
+                </div>
+
+                <div class="module-two-visual" [ngSwitch]="cluster.visual" aria-hidden="true">
+                  <div class="m2-time-visual" *ngSwitchCase="'elapsed-time'">
+                    <div class="spine-clock m2-card-clock" data-hour="2" data-minute="15"></div>
+                    <div class="m2-clock-facts">
+                      <span>60 sec = 1 min</span>
+                      <span>60 min = 1 hr</span>
+                    </div>
+                    <div class="m2-time-line">
+                      <span>2:15</span>
+                      <i></i>
+                      <strong>+20 min</strong>
+                      <i></i>
+                      <strong>+15 min</strong>
+                      <span>2:50</span>
+                    </div>
+                  </div>
+
+                  <div class="m2-us-visual" *ngSwitchCase="'us-benchmarks'">
+                    <div class="m2-scale-model">
+                      <span>1 oz</span>
+                      <b></b>
+                      <span>1 lb</span>
+                    </div>
+                    <div class="m2-beaker-model">
+                      <i></i>
+                      <strong>1 gal</strong>
+                      <small>4 qt</small>
+                    </div>
+                  </div>
+
+                  <div class="m2-rounding-visual" *ngSwitchCase="'rounding'">
+                    <div class="m2-round-line">
+                      <span>260</span>
+                      <i></i>
+                      <strong>267</strong>
+                      <i></i>
+                      <span>270</span>
+                    </div>
+                    <div class="m2-round-hundreds">
+                      <span>200</span>
+                      <strong>267</strong>
+                      <span>300</span>
+                    </div>
+                  </div>
+
+                  <div class="m2-algorithm-visual" *ngSwitchCase="'measurement-algorithm'">
+                    <div class="m2-place-value">
+                      <span>hundreds</span>
+                      <span>tens</span>
+                      <span>ones</span>
+                      <b>3</b><b>7</b><b>5</b>
+                      <b>2</b><b>4</b><b>8</b>
+                      <strong>6</strong><strong>2</strong><strong>3</strong>
+                    </div>
+                    <small>lb stays with every line</small>
+                  </div>
+                </div>
+
+                <p class="module-two-core">{{ cluster.coreIdea }}</p>
+                <p class="module-two-move">{{ cluster.studentMove }}</p>
+                <p class="module-two-example"><strong>Example:</strong> {{ cluster.example }}</p>
+
+                <div class="module-two-vocabulary" *ngIf="cluster.vocabulary.length">
+                  <span *ngFor="let item of cluster.vocabulary.slice(0, 3)">
+                    <i aria-hidden="true">{{ item.icon }}</i>
+                    <strong>{{ item.term }}</strong>
+                    {{ item.meaning }}
+                    <em>{{ item.example }}</em>
+                  </span>
+                </div>
+
+                <div class="module-two-footer">
+                  <p>{{ cluster.teacherPrompt }}</p>
+                  <small>{{ cluster.lessons }}</small>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </ng-container>
+    </ng-template>
 
     <ng-template #standardConceptCards>
       <div class="module-concept-grid">

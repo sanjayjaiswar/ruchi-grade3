@@ -28,6 +28,27 @@ type ModuleConceptCluster = {
   lessons: string;
 };
 
+type ModuleTwoConceptCluster = {
+  icon: string;
+  badge: string;
+  title: string;
+  coreIdea: string;
+  studentMove: string;
+  example: string;
+  teacherPrompt: string;
+  visual: 'elapsed-time' | 'us-benchmarks' | 'rounding' | 'measurement-algorithm';
+  vocabulary: { icon: string; term: string; meaning: string; example: string }[];
+  lessons: string;
+};
+
+type ModuleTwoUnitCategory = {
+  icon: string;
+  label: string;
+  measures: string;
+  units: string;
+  example: string;
+};
+
 type ConceptProgressionStep = {
   label: string;
   detail: string;
@@ -159,6 +180,139 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, AfterViewCheck
       lessons: 'Lessons 10, 15-21'
     }
   ];
+  readonly moduleTwoConceptQuestions = [
+    'What unit is being counted?',
+    'What does each tick or mark mean?',
+    'Which benchmark is closest?',
+    'Does the answer still name the unit?'
+  ];
+  readonly moduleTwoConceptFlow: ConceptProgressionStep[] = [
+    { label: '1. Name the unit', detail: 'Use each, dozen, sec, min, hr, oz, lb, cup, pt, qt, gal, in, or ft.' },
+    { label: '2. Read the scale', detail: 'Use the clock, number line, ruler, measuring cup, or scale.' },
+    { label: '3. Use a benchmark', detail: 'Compare with a ten, hundred, inch, foot, pound, or gallon.' },
+    { label: '4. Operate', detail: 'Add, subtract, compose, or decompose while keeping the unit.' }
+  ];
+  readonly moduleTwoUnitCategories: ModuleTwoUnitCategory[] = [
+    {
+      icon: '⏱️',
+      label: 'Time',
+      measures: 'Time tells how long something takes.',
+      units: 'Use seconds, minutes, and hours.',
+      example: 'Example: 60 seconds = 1 minute; 60 minutes = 1 hour.'
+    },
+    {
+      icon: '🧮',
+      label: 'Count',
+      measures: 'Count tells how many objects there are.',
+      units: 'Use one, pair, and dozen.',
+      example: 'Example: 🥑 avocado = 1 avocado; 12 eggs = 1 dozen.'
+    },
+    {
+      icon: '⚖️',
+      label: 'Weight',
+      measures: 'Weight tells how heavy something is.',
+      units: 'Use ounces, pounds, and tons.',
+      example: 'Example: A slice of bread is about 1 oz; 🥦 broccoli is about 1 lb.'
+    },
+    {
+      icon: '🥤',
+      label: 'Capacity',
+      measures: 'Capacity tells how much a container holds.',
+      units: 'Use teaspoons, tablespoons, cups, pints, quarts, and gallons.',
+      example: 'Example: 3 tsp = 1 tbsp; 2 cups = 1 pint; 4 quarts = 1 gallon.'
+    },
+    {
+      icon: '📏',
+      label: 'Length',
+      measures: 'Length tells how long or how far.',
+      units: 'Use inches, feet, yards, and miles.',
+      example: 'Example: 12 inches = 1 foot; 3 feet = 1 yard; 1 mile is a long trip.'
+    },
+    {
+      icon: '🎯',
+      label: 'Benchmark',
+      measures: 'A benchmark is a friendly number or unit used for comparison.',
+      units: 'Use the nearest ten, nearest hundred, or common unit size.',
+      example: 'Example: 267 is closer to 270 than 260.'
+    }
+  ];
+  readonly moduleTwoConceptClusters: ModuleTwoConceptCluster[] = [
+    {
+      icon: '⏱️',
+      badge: 'Time model',
+      title: 'Elapsed time is movement on a scale',
+      coreIdea: 'Elapsed time is the amount of time that passes from a start time to an end time. Seconds, minutes, and hours are time units.',
+      studentMove: 'Students show jumps on a clock or number line before writing an answer.',
+      example: 'Start at 2:15, jump 20 minutes to 2:35, then 15 more minutes to 2:50.',
+      teacherPrompt: 'Where did the time start, what jumps did it make, and where did it end?',
+      visual: 'elapsed-time',
+      vocabulary: [
+        { icon: '⏱️', term: 'elapsed time', meaning: 'time that passes', example: '2:15 to 2:50 is 35 minutes.' },
+        { icon: '↔️', term: 'interval', meaning: 'the value between tick marks', example: 'Each tick can show 5 or 10 minutes.' },
+        { icon: '⚡', term: 'second', meaning: 'small time unit', example: '60 seconds make 1 minute.' },
+        { icon: '🕐', term: 'minute', meaning: 'common unit for clock jumps', example: '35 minutes is 20 min + 15 min.' },
+        { icon: '🕒', term: 'hour', meaning: 'larger time unit', example: '60 minutes make 1 hour.' }
+      ],
+      lessons: 'Lessons 1-5'
+    },
+    {
+      icon: '⚖️',
+      badge: 'US units model',
+      title: 'Measurements need a unit and a benchmark',
+      coreIdea: 'Ounces, pounds, cups, pints, quarts, gallons, inches, and feet describe different kinds and sizes of measurement units.',
+      studentMove: 'Students estimate with familiar benchmarks, then read the measuring tool.',
+      example: 'A slice of bread weighs about 1 ounce. A milk jug holds about 1 gallon.',
+      teacherPrompt: 'Is this a weight or capacity question, and what benchmark makes sense?',
+      visual: 'us-benchmarks',
+      vocabulary: [
+        { icon: '🍞', term: 'ounce', meaning: 'small unit of weight', example: 'A slice of bread can be about 1 oz.' },
+        { icon: '🥦', term: 'pound', meaning: 'larger unit of weight', example: 'A head of broccoli can be about 1 lb.' },
+        { icon: '🚗', term: 'ton', meaning: 'very large weight unit', example: 'A small car can weigh about 1 ton.' },
+        { icon: '🥄', term: 'teaspoon', meaning: 'small capacity unit', example: 'A small spoonful is about 1 tsp.' },
+        { icon: '🍯', term: 'tablespoon', meaning: '3 teaspoons', example: 'A spoon of honey can be 1 tbsp.' },
+        { icon: '🥤', term: 'cup', meaning: 'small capacity unit', example: 'A measuring cup holds 1 cup.' },
+        { icon: '🍦', term: 'pint', meaning: '2 cups', example: 'A small ice cream container can be 1 pt.' },
+        { icon: '🥛', term: 'quart', meaning: '4 cups', example: 'A small milk carton can be 1 qt.' },
+        { icon: '🧃', term: 'gallon', meaning: '4 quarts', example: 'A milk jug is 1 gal.' },
+        { icon: '📎', term: 'inch', meaning: 'small length unit', example: 'A paper clip is about 1 in.' },
+        { icon: '📏', term: 'foot', meaning: '12 inches', example: 'A ruler is 1 ft.' },
+        { icon: '🚪', term: 'yard', meaning: '3 feet', example: 'A doorway is about 1 yd wide.' }
+      ],
+      lessons: 'Lessons 6-11'
+    },
+    {
+      icon: '🎯',
+      badge: 'Estimate',
+      title: 'Rounding chooses the nearest benchmark',
+      coreIdea: 'Rounding replaces a number with a nearby ten or hundred that is easier to use.',
+      studentMove: 'Students locate the number, compare its distance to both benchmarks, then choose the closer one.',
+      example: '267 is closer to 270 than 260, and closer to 300 than 200.',
+      teacherPrompt: 'Which two benchmarks surround the number, and which one is closer?',
+      visual: 'rounding',
+      vocabulary: [
+        { icon: '🎯', term: 'benchmark', meaning: 'a friendly number used for comparison', example: '260 and 270 surround 267.' },
+        { icon: '🔟', term: 'nearest ten', meaning: 'closest multiple of 10', example: '267 rounds to 270.' },
+        { icon: '💯', term: 'nearest hundred', meaning: 'closest multiple of 100', example: '267 rounds to 300.' }
+      ],
+      lessons: 'Lessons 12-14'
+    },
+    {
+      icon: '➕',
+      badge: 'Operate',
+      title: 'Add and subtract measurements by place value',
+      coreIdea: 'Measurement word problems use addition and subtraction while keeping units attached.',
+      studentMove: 'Students compose or decompose ones, tens, and hundreds just like place value units.',
+      example: '375 lb + 248 lb becomes 623 lb after composing ones and tens.',
+      teacherPrompt: 'What unit is being bundled or unbundled, and does the answer keep that unit?',
+      visual: 'measurement-algorithm',
+      vocabulary: [
+        { icon: '📦', term: 'compose', meaning: 'bundle smaller units into a larger unit', example: '15 ones become 1 ten and 5 ones.' },
+        { icon: '📤', term: 'decompose', meaning: 'unbundle a larger unit into smaller units', example: '1 ten becomes 10 ones.' },
+        { icon: '🏷️', term: 'unit', meaning: 'the label that must stay with the answer', example: '375 lb + 248 lb = 623 lb.' }
+      ],
+      lessons: 'Lessons 15-21'
+    }
+  ];
   readonly multiplicationDivisionVocabularyRows: VocabularyComparisonRow[] = [
     {
       operation: 'Multiplication',
@@ -179,7 +333,7 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, AfterViewCheck
     m2: [
       {
         term: 'measurement unit',
-        meaning: 'A number must be attached to a unit such as grams, kilograms, liters, milliliters, or minutes.',
+        meaning: 'A number must be attached to a unit such as ounces, pounds, cups, quarts, gallons, or minutes.',
         teacherLookFor: 'Have the student say the unit with every answer.'
       },
       {
@@ -378,6 +532,7 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, AfterViewCheck
       if (!clock) {
         return;
       }
+      host.classList.add('is-analog-ready');
       const hour = Number(host.dataset['hour'] ?? 7);
       const minute = Number(host.dataset['minute'] ?? 35);
       clock.style.setProperty('--_dh', `${-3600 * (hour % 12) - 60 * minute}s`);
@@ -423,6 +578,10 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, AfterViewCheck
 
   showModuleOneConceptMap(): boolean {
     return this.module?.id === 'm1';
+  }
+
+  showModuleTwoConceptMap(): boolean {
+    return this.module?.id === 'm2';
   }
 
   showMultiplicationDivisionVocabulary(): boolean {
@@ -522,11 +681,16 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, AfterViewCheck
   private playModuleConceptAnimation(): void {
     const host = this.elementRef.nativeElement;
     const panels = Array.from(host.querySelectorAll<HTMLElement>('.section-panel, .hero-band'));
-    const concepts = Array.from(host.querySelectorAll<HTMLElement>('.module-spine-panel, .module-concept-card, .concept-cluster-card, .topic-overview-card, .topic-card'));
-    const visuals = Array.from(host.querySelectorAll<HTMLElement>('.module-spine-visual span, .module-spine-visual i, .module-spine-visual b, .concept-visual i, .concept-visual span, .concept-visual strong, .snapshot-card, .chip'));
+    const concepts = Array.from(
+      host.querySelectorAll<HTMLElement>('.module-spine-panel, .module-concept-card, .concept-cluster-card, .module-two-card, .topic-overview-card, .topic-card')
+    );
+    const visuals = Array.from(
+      host.querySelectorAll<HTMLElement>(
+        '.module-spine-visual span, .module-spine-visual i, .module-spine-visual b, .concept-visual i, .concept-visual span, .concept-visual strong, .snapshot-card, .chip'
+      )
+    );
 
     animate(panels, {
-      opacity: [0, 1],
       translateY: [12, 0],
       duration: 340,
       delay: stagger(40),
@@ -534,7 +698,6 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, AfterViewCheck
     });
 
     animate(concepts, {
-      opacity: [0, 1],
       translateY: [14, 0],
       duration: 380,
       delay: stagger(55),
@@ -542,7 +705,6 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, AfterViewCheck
     });
 
     animate(visuals, {
-      opacity: [0, 1],
       scale: [0.75, 1],
       duration: 360,
       delay: stagger(18),

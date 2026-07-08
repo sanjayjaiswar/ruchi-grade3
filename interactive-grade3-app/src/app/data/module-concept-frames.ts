@@ -112,18 +112,18 @@ export const MODULE_CONCEPT_FRAMES: Record<string, ModuleConceptFrame> = {
   m2: {
     moduleId: 'm2',
     title: 'Measurement numbers only make sense with units',
-    bigIdea: 'Time, weight, capacity, and metric word problems all use the same structure: choose the unit, read or model the scale, then operate while keeping units attached.',
+    bigIdea: 'Time, weight, capacity, and measurement word problems all use the same structure: choose the unit, read or model the scale, then operate while keeping units attached.',
     modelLabel: 'unit -> scale -> benchmark -> operation',
     studentQuestion: 'What unit is being counted, and does the answer keep that unit?',
     visual: 'measurement',
     transform: {
       from: 'start value + measured change',
       action: 'mark the scale or tape, then add/subtract/round',
-      to: 'answer with seconds, minutes, kg, g, L, or mL'
+      to: 'answer with seconds, minutes, oz, lb, cups, qt, or gal'
     },
     lessonBands: [
       { label: 'Time', lessons: 'L1-L5', start: 1, end: 5, focus: 'continuous time, clocks, number lines' },
-      { label: 'Metric Units', lessons: 'L6-L11', start: 6, end: 11, focus: 'kg/g and L/mL benchmarks' },
+      { label: 'US Units', lessons: 'L6-L11', start: 6, end: 11, focus: 'oz/lb and cup/qt/gal benchmarks' },
       { label: 'Rounding', lessons: 'L12-L14', start: 12, end: 14, focus: 'nearest ten and hundred' },
       { label: 'Operate', lessons: 'L15-L21', start: 15, end: 21, focus: 'add/subtract measurements with composing' }
     ],
