@@ -176,7 +176,9 @@ export class TimeBoardComponent implements AfterViewChecked {
   private sourceStatus(item: ProblemVisualTimeLineSourceItem): string {
     const sourceOrder = item.detail?.replace(/\s*-\s*\d{1,2}:\d{2}.*$/i, '').trim();
     if (item.status === 'unmatched') {
-      const unmatchedTime = item.detail?.match(/\b\d{1,2}:\d{2}\b/);
+      const unmatchedTime = item.kind === 'digital'
+        ? item.label.match(/\b\d{1,2}:\d{2}\b/)
+        : item.detail?.match(/\b\d{1,2}:\d{2}\b/);
       return this.mode === 'solved' ? (unmatchedTime ? `${unmatchedTime[0]} not matched` : 'not matched') : sourceOrder || 'source clock';
     }
     if (item.status === 'provided') {

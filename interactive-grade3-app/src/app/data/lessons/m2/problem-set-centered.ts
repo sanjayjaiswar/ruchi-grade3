@@ -1381,7 +1381,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 2,
-        sourcePrompt: 'Label 5:00 p.m. to 6:00 p.m. by fives and match clocks. Not all clocks match.',
+        sourcePrompt: 'Label every 5 minutes below the 5:00 p.m. to 6:00 p.m. number line. Draw a line from each clock to the point on the number line that shows its time. Not all clocks have matching points.',
         startLabel: '5:00 p.m.',
         endLabel: '6:00 p.m.',
         sourceItems: [
@@ -1413,11 +1413,12 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 3,
-        sourcePrompt: 'Label Noah\'s number line to locate 5:45 p.m.',
+        sourcePrompt: 'Noah uses a number line to locate 5:45 p.m. Each interval is 5 minutes. The number line shows the hour from 5 p.m. to 6 p.m. Label the number line to show his work.',
         startLabel: '5:00 p.m.',
         endLabel: '6:00 p.m.',
-        points: [{ label: '5:45', minute: 45, detail: 'Noah' }],
+        points: [{ label: '5:45 p.m.', minute: 45 }],
         jumps: [{ label: '9 fives', fromMinute: 0, toMinute: 45 }],
+        showPointDetails: false,
         blankNote: 'Use the 5:00 to 6:00 line. Count 5, 10, 15, ... until the 45-minute mark.',
         solvedNote: '5:45 is 45 minutes after 5:00, so it is the ninth five-minute interval.',
         solvedAnswer: '5:45 p.m. is 45 minutes after 5:00 p.m.',

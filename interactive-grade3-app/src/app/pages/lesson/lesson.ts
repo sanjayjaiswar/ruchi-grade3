@@ -1648,6 +1648,7 @@ export class LessonPage implements OnInit, AfterViewChecked {
     return {
       'lesson-m1-l12': this.module?.id === 'm1' && this.lesson?.lessonNumber === 12,
       'lesson-m2-l1': this.module?.id === 'm2' && this.lesson?.lessonNumber === 1,
+      'lesson-m2-l2': this.module?.id === 'm2' && this.lesson?.lessonNumber === 2,
       'lesson-m6-problem-centered': this.module?.id === 'm6'
     };
   }

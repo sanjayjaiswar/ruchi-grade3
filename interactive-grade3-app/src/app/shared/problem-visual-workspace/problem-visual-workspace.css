@@ -937,6 +937,82 @@
   line-height: 1.35;
 }
 
+:host-context(.lesson-m2-l2) .problem-visual-workspace {
+  padding: 12px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+:host-context(.lesson-m2-l2) .visual-header {
+  display: none;
+}
+
+:host-context(.lesson-m2-l2) .visual-section {
+  gap: 9px;
+}
+
+:host-context(.lesson-m2-l2) .visual-section > strong {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 720;
+}
+
+:host-context(.lesson-m2-l2) .visual-time-line {
+  padding: 12px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m2-l2) .visual-time-line > small {
+  color: #3c4043;
+  font-size: 14px;
+}
+
+:host-context(.lesson-m2-l2) .visual-source-directions {
+  width: min(100%, 980px);
+  gap: 7px;
+}
+
+:host-context(.lesson-m2-l2) .visual-source-directions li {
+  grid-template-columns: 28px minmax(130px, 190px) minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 8px 10px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m2-l2) .problem-visual-workspace.is-solved .visual-source-directions li::before {
+  border-color: #b7dfc2;
+  background: #e6f4ea;
+  color: #188038;
+  content: "✓";
+  font-size: 15px;
+}
+
+:host-context(.lesson-m2-l2) .visual-source-directions b {
+  color: #174ea6;
+  font-size: 14px;
+}
+
+:host-context(.lesson-m2-l2) .visual-source-directions span {
+  color: #202124;
+  font-size: 14px;
+}
+
+:host-context(.lesson-m2-l2) .visual-equations {
+  width: min(100%, 980px);
+}
+
+:host-context(.lesson-m2-l2) .visual-equations span {
+  border-color: #d2d9e6;
+  background: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
 .visual-data-table {
   display: grid;
   width: min(100%, 900px);

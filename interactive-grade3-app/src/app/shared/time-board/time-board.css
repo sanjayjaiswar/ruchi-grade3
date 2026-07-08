@@ -384,3 +384,84 @@ analog-clock::part(seconds) {
   white-space: nowrap;
   transform: translateX(-50%);
 }
+
+:host-context(.lesson-m2-l2) .time-board {
+  min-height: 340px;
+  padding: 18px 36px 62px;
+  border-color: #d2d9e6;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m2-l2) .time-board.is-plain-line {
+  padding: 4px 32px 76px;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m2-l2) .source-row {
+  height: 150px;
+  margin: 0 82px 8px;
+}
+
+:host-context(.lesson-m2-l2) .time-card {
+  width: 116px;
+  min-height: 58px;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(34, 79, 145, .1);
+}
+
+:host-context(.lesson-m2-l2) .time-card.is-analog {
+  width: 138px;
+  min-height: 148px;
+}
+
+:host-context(.lesson-m2-l2) .time-card strong {
+  font-size: 25px;
+}
+
+:host-context(.lesson-m2-l2) .time-card span {
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+:host-context(.lesson-m2-l2) .time-line-wrap {
+  margin: 0 82px;
+  padding-top: 34px;
+}
+
+:host-context(.lesson-m2-l2) .time-board.is-plain-line .time-line-wrap {
+  margin: 0 66px;
+  padding-top: 54px;
+}
+
+:host-context(.lesson-m2-l2) .match-lines {
+  bottom: 108px;
+  height: 128px;
+}
+
+:host-context(.lesson-m2-l2) .match-lines line {
+  stroke-width: 0.65;
+  opacity: .68;
+}
+
+:host-context(.lesson-m2-l2) .time-line {
+  height: 106px;
+}
+
+:host-context(.lesson-m2-l2) .time-board.is-plain-line .time-line {
+  height: 70px;
+}
+
+:host-context(.lesson-m2-l2) .jump {
+  bottom: 50px;
+}
+
+:host-context(.lesson-m2-l2) .point b {
+  font-weight: 760;
+}
+
+:host-context(.lesson-m2-l2) .time-board.is-plain-line .point b {
+  bottom: 31px;
+  font-size: 22px;
+}
