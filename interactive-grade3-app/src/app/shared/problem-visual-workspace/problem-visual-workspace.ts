@@ -142,7 +142,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
   }
 
   stopwatchSourceColumns(section: ProblemVisualStopwatchSection): string {
-    return `repeat(${Math.max(1, Math.min(4, Math.round(section.sourceWorkColumns ?? 1)))}, minmax(0, 1fr))`;
+    return `repeat(${Math.max(1, Math.min(6, Math.round(section.sourceWorkColumns ?? 1)))}, minmax(0, 1fr))`;
   }
 
   timeLineSection(section: ProblemVisualSection): ProblemVisualTimeLineSection | undefined {

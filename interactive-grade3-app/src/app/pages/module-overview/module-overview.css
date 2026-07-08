@@ -1907,7 +1907,6 @@
 
 @media (prefers-reduced-motion: reduce) {
   .spine-clock analog-clock,
-  .clock-unit-label,
   .spine-scale::after,
   .spine-scale span,
   .module-two-anchor-questions span,

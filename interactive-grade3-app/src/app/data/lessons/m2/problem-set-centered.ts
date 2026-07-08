@@ -987,11 +987,11 @@ function stopwatchTableProblem(seed: StopwatchTableSeed): ProblemSetCenteredProb
 function stopwatchSentenceVisual(seed: StopwatchSentenceSeed, solved: boolean): ProblemVisualSpec {
   const duration = solved ? stopwatchDurationLabel(seed.sampleResponse) : '____ seconds';
   return {
-    title: solved ? `Problem ${seed.number}: sample variable response` : `Problem ${seed.number}: Teacher Edition worksheet panel`,
+    title: solved ? 'Sample measured response' : 'Official worksheet panel',
     sections: [
       {
         kind: 'stopwatch-workspace',
-        label: solved ? 'Sample measured response' : 'Stopwatch measurement workspace',
+        label: solved ? 'Completed stopwatch sentence' : 'Stopwatch and answer line',
         prompt: seed.sourcePrompt,
         answerLine: seed.blankSentence,
         sampleAnswer: solved ? seed.sampleResponse : undefined,
@@ -999,9 +999,9 @@ function stopwatchSentenceVisual(seed: StopwatchSentenceSeed, solved: boolean): 
         elapsedLabel: solved ? duration : 'measure',
         stopLabel: solved ? duration : '____ seconds',
         sampleWork: solved ? seed.sampleWork : undefined,
-        sourceWorkLabel: seed.sourceWorkLabel,
-        sourceWorkLines: seed.sourceWorkLines,
-        sourceWorkColumns: seed.sourceWorkColumns,
+        sourceWorkLabel: solved ? seed.sourceWorkLabel : undefined,
+        sourceWorkLines: solved ? seed.sourceWorkLines : undefined,
+        sourceWorkColumns: solved ? seed.sourceWorkColumns : undefined,
         icon: seed.number === 1 ? 'snap' : seed.number === 2 ? 'numbers' : seed.number === 3 ? 'animals' : 'equation',
         note: solved
           ? 'The number can vary. The important evidence is that the activity was timed and the answer is written in seconds.'
@@ -1013,19 +1013,16 @@ function stopwatchSentenceVisual(seed: StopwatchSentenceSeed, solved: boolean): 
 
 function stopwatchTableVisual(seed: StopwatchTableSeed, solved: boolean): ProblemVisualSpec {
   return {
-    title: solved ? `${seed.title}: sample filled response` : `${seed.title}: Teacher Edition chart`,
+    title: solved ? 'Sample filled chart' : 'Official chart',
     sections: [
       {
         kind: 'stopwatch-workspace',
-        label: solved ? 'Sample stopwatch data' : 'Official stopwatch chart',
+        label: solved ? seed.title : seed.title,
         prompt: seed.sourcePrompt,
         icon: seed.number === 6 ? 'relay' : 'activity',
-        startLabel: '0 seconds',
-        elapsedLabel: solved ? (seed.number === 6 ? 'add runner times' : 'time each task') : 'measure each row',
-        stopLabel: solved ? (seed.number === 6 ? seed.totalSample ?? 'total seconds' : 'record seconds') : '____ seconds',
         columns: seed.columns,
         rows: seed.blankRows.slice(0, seed.number === 6 ? 4 : undefined).map((row, index) => ({
-          label: row[0],
+          label: solved ? seed.solvedRows[index]?.[0] || row[0] : row[0],
           blank: row[1],
           sample: solved ? seed.solvedRows[index]?.[1] : undefined
         })),
@@ -1199,23 +1196,23 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       stopwatchSentenceProblem({
         number: 1,
-        sourcePrompt: 'Use a stopwatch to time snapping your fingers 10 times.',
+        sourcePrompt: 'Use a stopwatch. How long does it take you to snap your fingers 10 times?',
         blankSentence: 'It takes __________ to snap 10 times.',
         sampleResponse: 'It takes 9 seconds to snap 10 times.',
         sampleWork: ['Sample variable response: 9 seconds.'],
         solvedAnswer: 'Times will vary. A complete response records one measured stopwatch time and writes it in the sentence blank as a number of seconds.',
-        blankWorkspaceLabel: 'Time the exact snapping task, then fill the sentence blank with the measured number of seconds.',
-        meaning: 'The answer tells how many seconds passed while snapping 10 times.',
+        blankWorkspaceLabel: 'Time the exact snap task, then fill the sentence blank with the measured number of seconds.',
+        meaning: 'The answer tells how many seconds passed while snapping your fingers 10 times.',
         explanation: 'Use the stopwatch to measure the activity once. Write the measured elapsed time in the sentence blank and attach seconds.',
         checks: [
-          'The official snapping task is unchanged.',
+          'The official snap task is unchanged.',
           'The answer is a measured stopwatch result, not an invented fixed answer.',
           'The unit seconds is attached to the number.'
         ]
       }),
       stopwatchSentenceProblem({
         number: 2,
-        sourcePrompt: 'Use a stopwatch to time writing every whole number from 0 to 25.',
+        sourcePrompt: 'Use a stopwatch. How long does it take to write every whole number from 0 to 25?',
         blankSentence: 'It takes __________ to write every whole number from 0 to 25.',
         sampleResponse: 'It takes 37 seconds to write every whole number from 0 to 25.',
         sampleWork: ['Sample work writes 0, 1, 2, 3, ... 25 before recording the elapsed time.'],
@@ -1237,12 +1234,13 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       stopwatchSentenceProblem({
         number: 3,
-        sourcePrompt: 'Use a stopwatch to time naming 10 animals and record them.',
+        sourcePrompt: 'Use a stopwatch. How long does it take you to name 10 animals? Record them below.',
         blankSentence: 'It takes __________ to name 10 animals.',
         sampleResponse: 'It takes 40 seconds to name 10 animals.',
         sampleWork: ['Sample animal list: dog, cat, horse, turtle, fish, hamster, rabbit, cow, pig, mouse.'],
         sourceWorkLabel: 'Source work: 10 recorded animals',
         sourceWorkLines: ['dog', 'cat', 'horse', 'turtle', 'fish', 'hamster', 'rabbit', 'cow', 'pig', 'mouse'],
+        sourceWorkColumns: 5,
         solvedAnswer: 'Times will vary. A complete response lists 10 animals, records one measured stopwatch time, and labels the result in seconds.',
         blankWorkspaceLabel: 'Name and record 10 animals, time the naming task, and complete the elapsed-time sentence.',
         meaning: 'The answer tells how many seconds passed while naming the 10 recorded animals.',
@@ -1255,7 +1253,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       stopwatchSentenceProblem({
         number: 4,
-        sourcePrompt: 'Use a stopwatch to time writing 7 x 8 = 56 fifteen times. Record the time.',
+        sourcePrompt: 'Use a stopwatch. How long does it take you to write 7 x 8 = 56 fifteen times? Record the time.',
         blankSentence: 'It takes __________ to write 7 x 8 = 56 fifteen times.',
         sampleResponse: 'It takes 53 seconds to write 7 x 8 = 56 fifteen times.',
         sampleWork: ['Sample work repeats 7 x 8 = 56 fifteen times before recording the elapsed time.'],
@@ -1308,13 +1306,13 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       stopwatchTableProblem({
         number: 6,
-        sourcePrompt: '100 meter relay: Use a stopwatch to measure and record your team’s times.',
+        sourcePrompt: '100 meter relay: Use a stopwatch to measure and record your team’s times, then find the total time.',
         title: 'Problem 6 relay table',
         columns: ['Name', 'Time'],
         blankRows: [
-          ['Gina', '________ seconds'],
-          ['Tom', '________ seconds'],
-          ['Carlos', '________ seconds']
+          ['', '________ seconds'],
+          ['', '________ seconds'],
+          ['', '________ seconds']
         ],
         solvedRows: [
           ['Gina', '18 seconds'],

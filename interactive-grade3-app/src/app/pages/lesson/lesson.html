@@ -78,6 +78,48 @@
             </div>
           </div>
 
+          <section class="m2-l1-stopwatch-lab" *ngIf="module.id === 'm2' && lesson.lessonNumber === 1" aria-label="Lesson 1 stopwatch concept model">
+            <div class="m2-l1-lab-copy">
+              <span class="eyebrow">Stopwatch lab</span>
+              <h3>Time keeps moving. The stopwatch measures how many seconds passed.</h3>
+              <p>Each Problem Set answer must come from a timed action, then the answer must keep the unit <strong>seconds</strong>.</p>
+            </div>
+            <div class="m2-l1-lab-model" aria-hidden="true">
+              <div class="m2-l1-lab-stopwatch">
+                <span>0</span>
+                <span>15</span>
+                <span>30</span>
+                <span>45</span>
+                <i></i>
+                <b></b>
+              </div>
+              <div class="m2-l1-second-track">
+                <span>start</span>
+                <i></i>
+                <span>seconds pass</span>
+                <i></i>
+                <span>record</span>
+              </div>
+            </div>
+            <div class="m2-l1-lab-steps">
+              <article>
+                <strong>1</strong>
+                <span>Choose the action</span>
+                <p>snap 10 times, write numbers, name animals, or time a relay</p>
+              </article>
+              <article>
+                <strong>2</strong>
+                <span>Measure with stopwatch</span>
+                <p>start at 0 seconds and stop after the action is finished</p>
+              </article>
+              <article>
+                <strong>3</strong>
+                <span>Write seconds</span>
+                <p>the final answer is a number plus the unit seconds</p>
+              </article>
+            </div>
+          </section>
+
           <section class="module-concept-frame" *ngIf="moduleConceptFrame as frame" [attr.data-visual]="frame.visual">
             <div class="module-frame-copy">
               <span class="eyebrow">{{ moduleConceptFrameEyebrow }}</span>
@@ -1310,7 +1352,13 @@
           </section>
         </section>
 
-        <section [id]="problemSectionId('problem-set')" class="problem-centered-panel problem-set-centered-list" [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' solved problem set'" role="tabpanel" *ngSwitchCase="'problem-set'">
+        <section
+          [id]="problemSectionId('problem-set')"
+          class="problem-centered-panel problem-set-centered-list"
+          [class.is-m2-l1-problem-set]="module.id === 'm2' && lesson.lessonNumber === 1"
+          [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' solved problem set'"
+          role="tabpanel"
+          *ngSwitchCase="'problem-set'">
           <div class="problem-set-toolbar">
             <nav class="problem-bookmarks" aria-label="Problem bookmarks">
               <a
@@ -1340,6 +1388,9 @@
             class="problem-solution-card"
             [class.has-visual-spec]="problemVisualSpec(problem)"
             [class.is-blank-mode]="problemSetMode === 'blank'"
+            [class.is-m2-l1-stopwatch]="module.id === 'm2' && lesson.lessonNumber === 1"
+            [class.is-m2-l1-table]="module.id === 'm2' && lesson.lessonNumber === 1 && problem.number >= 5"
+            [attr.data-problem-number]="problem.number"
             [class.is-lesson16-source]="module.id === 'm1' && lesson.lessonNumber === 16 && problem.relatedFacts?.length"
             [class.is-lesson17-source]="module.id === 'm1' && lesson.lessonNumber === 17"
             *ngFor="let problem of problemLesson.problems"
