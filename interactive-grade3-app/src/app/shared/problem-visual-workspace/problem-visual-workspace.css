@@ -1013,6 +1013,79 @@
   font-weight: 600;
 }
 
+:host-context(.lesson-m2-l3) .problem-visual-workspace {
+  padding: 12px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+:host-context(.lesson-m2-l3) .visual-header {
+  display: none;
+}
+
+:host-context(.lesson-m2-l3) .visual-section {
+  gap: 9px;
+}
+
+:host-context(.lesson-m2-l3) .visual-section > strong {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 720;
+}
+
+:host-context(.lesson-m2-l3) .visual-time-line {
+  padding: 12px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m2-l3) .visual-time-line > small {
+  color: #3c4043;
+  font-size: 14px;
+  font-weight: 520;
+}
+
+:host-context(.lesson-m2-l3) .visual-clock {
+  width: fit-content;
+  max-width: min(100%, 430px);
+  grid-template-columns: 138px minmax(150px, max-content);
+  padding: 10px 12px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m2-l3) .workspace-library-clock,
+:host-context(.lesson-m2-l3) .workspace-library-clock analog-clock {
+  width: 132px;
+  height: 132px;
+}
+
+:host-context(.lesson-m2-l3) .visual-clock p {
+  font-size: 20px;
+  font-weight: 720;
+}
+
+:host-context(.lesson-m2-l3) .visual-clock small {
+  grid-column: 1 / -1;
+  color: #3c4043;
+  font-size: 14px;
+  font-weight: 520;
+}
+
+:host-context(.lesson-m2-l3) .visual-equations {
+  width: min(100%, 980px);
+}
+
+:host-context(.lesson-m2-l3) .visual-equations span {
+  border-color: #d2d9e6;
+  background: #ffffff;
+  color: #202124;
+  font-size: 15px;
+  font-weight: 600;
+}
+
 .visual-data-table {
   display: grid;
   width: min(100%, 900px);

@@ -1057,6 +1057,74 @@
   max-width: 100%;
 }
 
+.lesson-m2-l3 .problem-solution-card {
+  gap: 14px;
+  padding: 16px 18px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+.lesson-m2-l3 .problem-solution-card.is-blank-mode {
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+.lesson-m2-l3 .problem-number {
+  min-height: 28px;
+  background: #e8f0fe;
+  color: #174ea6;
+  font-size: 13px;
+  font-weight: 740;
+}
+
+.lesson-m2-l3 .problem-number::before {
+  margin-right: 6px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.lesson-m2-l3 .problem-solution-card[data-problem-number="1"] .problem-number::before {
+  content: "🕖";
+}
+
+.lesson-m2-l3 .problem-solution-card[data-problem-number="2"] .problem-number::before {
+  content: "🌅";
+}
+
+.lesson-m2-l3 .problem-solution-card[data-problem-number="3"] .problem-number::before {
+  content: "🏫";
+}
+
+.lesson-m2-l3 .problem-solution-card[data-problem-number="4"] .problem-number::before {
+  content: "📚";
+}
+
+.lesson-m2-l3 .problem-solution-card[data-problem-number="5"] .problem-number::before {
+  content: "⚽";
+}
+
+.lesson-m2-l3 .problem-solution-head h3 {
+  max-width: 1160px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.lesson-m2-l3 .problem-source-prompt {
+  max-width: 1160px;
+  padding: 10px 12px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+  color: #202124;
+  font-size: 16px;
+  font-weight: 520;
+}
+
+.lesson-m2-l3 .problem-solution-card.has-visual-spec app-problem-visual-workspace {
+  max-width: 100%;
+}
+
 @keyframes m2L1SecondSweep {
   from {
     transform: translateX(-50%) rotate(18deg);

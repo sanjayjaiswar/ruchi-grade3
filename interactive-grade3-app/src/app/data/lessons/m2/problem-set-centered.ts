@@ -1480,17 +1480,14 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
           { label: '7:28', minute: 28, sourceX: 90, detail: 'fifth clock - provided example', kind: 'digital', status: 'provided' }
         ],
         points: [
-          { label: 'clock 1', minute: 17, detail: '7:17' },
-          { label: 'clock 2', minute: 3, detail: '7:03' },
-          { label: 'clock 3', minute: 55, detail: '7:55' },
-          { label: 'clock 4', minute: 41, detail: '7:41' },
-          { label: 'provided', minute: 28, detail: '7:28', open: true }
+          { label: '7:03', minute: 3 },
+          { label: '7:17', minute: 17 },
+          { label: '7:28', minute: 28, open: true },
+          { label: '7:41', minute: 41 },
+          { label: '7:55', minute: 55 }
         ],
-        jumps: [
-          { label: '15 + 2', fromMinute: 15, toMinute: 17 },
-          { label: '25 + 3', fromMinute: 25, toMinute: 28 },
-          { label: '40 + 1', fromMinute: 40, toMinute: 41 }
-        ],
+        jumps: [],
+        showPointDetails: false,
         blankNote: 'The source page already shows the 7:28 digital clock connected to minute 28 as an example. Use that model to match the remaining clocks.',
         solvedNote: 'The answer key identifies 7:17, 7:03, 7:55, and 7:41, with the fifth 7:28 item already provided in the source visual.',
         solvedAnswer: 'First clock 7:17 p.m.; second clock 7:03 p.m.; third clock 7:55 p.m.; fourth clock 7:41 p.m.; fifth clock answer provided.',
@@ -1518,7 +1515,8 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
             caption: 'Minute hand at 48; hour hand close to 7.'
           }
         ],
-        points: [{ label: '6:48', minute: 48, detail: 'Jessie' }],
+        points: [{ label: '6:48 a.m.', minute: 48 }],
+        showPointDetails: false,
         jumps: [
           { label: '9 fives = 45', fromMinute: 0, toMinute: 45 },
           { label: '+3 ones', fromMinute: 45, toMinute: 48 }
@@ -1550,7 +1548,8 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
             caption: 'Minute hand at 23; hour hand a little past 8.'
           }
         ],
-        points: [{ label: '8:23', minute: 23, detail: 'Mrs. Barnes' }],
+        points: [{ label: '8:23 a.m.', minute: 23 }],
+        showPointDetails: false,
         jumps: [
           { label: '4 fives = 20', fromMinute: 0, toMinute: 20 },
           { label: '+3 ones', fromMinute: 20, toMinute: 23 }
@@ -1571,27 +1570,28 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       timeLineProblem({
         number: 4,
         sourcePrompt: 'The clock shows what time Rebecca finishes her homework. What time does Rebecca finish her homework?',
-        startLabel: '5:00',
-        endLabel: '6:00',
+        startLabel: '5:00 p.m.',
+        endLabel: '6:00 p.m.',
         tickLabels: exactMinuteTicks,
         clocks: [
           {
             label: 'Source clock',
-            timeLabel: '5:27',
-            blankTimeLabel: '5:27',
+            timeLabel: '5:27 p.m.',
+            blankTimeLabel: '5:27 p.m.',
             showInBlank: true,
             caption: 'Read the source clock: 27 minutes after 5.'
           }
         ],
-        points: [{ label: '5:27', minute: 27, detail: 'Rebecca' }],
+        points: [{ label: '5:27 p.m.', minute: 27 }],
+        showPointDetails: false,
         jumps: [
           { label: '5 fives = 25', fromMinute: 0, toMinute: 25 },
           { label: '+2 ones', fromMinute: 25, toMinute: 27 }
         ],
         blankNote: 'Read the clock by counting fives to the nearest benchmark and ones to the exact minute.',
-        solvedNote: 'The clock reads 5:27: five groups of five minutes make 25, then two more minutes make 27.',
-        solvedAnswer: 'Rebecca finishes her homework at 5:27.',
-        equations: ['5 x 5 = 25', '25 + 2 = 27', 'Rebecca finishes at 5:27'],
+        solvedNote: 'The clock reads 5:27 p.m.: five groups of five minutes make 25, then two more minutes make 27.',
+        solvedAnswer: 'Rebecca finishes her homework at 5:27 p.m.',
+        equations: ['5 x 5 = 25', '25 + 2 = 27', 'Rebecca finishes at 5:27 p.m.'],
         blankWorkspaceLabel: 'Use fives and ones to translate the clock hands into an exact time.',
         meaning: 'The answer names Rebecca\'s homework finish time.',
         explanation: 'The minute hand is two minutes after the 25-minute benchmark, so the time is 5:27.',
@@ -1604,27 +1604,28 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       timeLineProblem({
         number: 5,
         sourcePrompt: 'The clock shows what time Mason\'s mom drops him off for practice. a. What time does Mason\'s mom drop him off? b. Mason\'s coach arrives 11 minutes before Mason\'s mom drops him off. What time does Mason\'s coach arrive?',
-        startLabel: '3:00',
-        endLabel: '4:00',
+        startLabel: '3:00 p.m.',
+        endLabel: '4:00 p.m.',
         tickLabels: exactMinuteTicks,
         clocks: [
           {
             label: 'Source clock',
-            timeLabel: '3:56',
-            blankTimeLabel: '3:56',
+            timeLabel: '3:56 p.m.',
+            blankTimeLabel: '3:56 p.m.',
             showInBlank: true,
             caption: 'Read part a from the clock, then count back 11 minutes for part b.'
           }
         ],
         points: [
-          { label: 'drop-off', minute: 56, detail: '3:56' },
-          { label: 'coach', minute: 45, detail: '3:45' }
+          { label: '3:56 p.m.', minute: 56 },
+          { label: '3:45 p.m.', minute: 45 }
         ],
+        showPointDetails: false,
         jumps: [{ label: 'count back 11 min', fromMinute: 56, toMinute: 45 }],
         blankNote: 'First read Mason\'s drop-off time. Then count back 11 minutes on the same hour line.',
-        solvedNote: 'Mason is dropped off at 3:56. Counting back 11 minutes lands on 3:45.',
-        solvedAnswer: 'Mason is dropped off at 3:56; the coach arrives at 3:45.',
-        equations: ['3:56 - 11 min = 3:45', '56 - 11 = 45'],
+        solvedNote: 'Mason is dropped off at 3:56 p.m. Counting back 11 minutes lands on 3:45 p.m.',
+        solvedAnswer: 'Mason is dropped off at 3:56 p.m.; the coach arrives at 3:45 p.m.',
+        equations: ['3:56 p.m. - 11 min = 3:45 p.m.', '56 - 11 = 45'],
         blankWorkspaceLabel: 'Mark the drop-off time first, then move backward 11 minutes to find the coach arrival time.',
         meaning: 'The two points show Mason\'s drop-off time and the earlier coach arrival time.',
         explanation: 'This problem extends the clock-reading strategy into a short elapsed-time count-back.',

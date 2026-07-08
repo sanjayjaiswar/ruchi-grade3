@@ -465,3 +465,119 @@ analog-clock::part(seconds) {
   bottom: 31px;
   font-size: 22px;
 }
+
+:host-context(.lesson-m2-l3) .time-board {
+  min-height: 330px;
+  padding: 16px 36px 64px;
+  border-color: #d2d9e6;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m2-l3) .time-board.is-plain-line {
+  min-height: 0;
+  padding: 6px 32px 78px;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m2-l3) .source-row {
+  height: 150px;
+  margin: 0 82px 8px;
+}
+
+:host-context(.lesson-m2-l3) .time-card {
+  width: 116px;
+  min-height: 58px;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(34, 79, 145, .1);
+}
+
+:host-context(.lesson-m2-l3) .time-card.is-analog {
+  width: 138px;
+  min-height: 148px;
+}
+
+:host-context(.lesson-m2-l3) .time-card strong {
+  font-size: 25px;
+}
+
+:host-context(.lesson-m2-l3) .time-card span {
+  color: #174ea6;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+:host-context(.lesson-m2-l3) .time-card.is-digital.is-matched span {
+  display: none;
+}
+
+:host-context(.lesson-m2-l3) .time-card.is-provided {
+  border-color: #d2a100;
+  background: #fff8dd;
+}
+
+:host-context(.lesson-m2-l3) .time-line-wrap {
+  margin: 0 82px;
+  padding-top: 34px;
+}
+
+:host-context(.lesson-m2-l3) .time-board.is-plain-line .time-line-wrap {
+  margin: 0 66px;
+  padding-top: 52px;
+}
+
+:host-context(.lesson-m2-l3) .match-lines {
+  bottom: 108px;
+  height: 128px;
+}
+
+:host-context(.lesson-m2-l3) .match-lines line {
+  stroke-width: 0.65;
+  opacity: .68;
+}
+
+:host-context(.lesson-m2-l3) .time-line {
+  height: 106px;
+}
+
+:host-context(.lesson-m2-l3) .time-board.is-plain-line .time-line {
+  height: 72px;
+}
+
+:host-context(.lesson-m2-l3) .jump {
+  bottom: 50px;
+}
+
+:host-context(.lesson-m2-l3) .jump em {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+:host-context(.lesson-m2-l3) .time-board.is-plain-line .jump {
+  bottom: 48px;
+}
+
+:host-context(.lesson-m2-l3) .point {
+  width: 112px;
+}
+
+:host-context(.lesson-m2-l3) .point b {
+  font-weight: 760;
+}
+
+:host-context(.lesson-m2-l3) .time-board.is-plain-line .point b {
+  bottom: 31px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #202124;
+  font-size: 20px;
+  font-weight: 760;
+  box-shadow: 0 1px 3px rgba(60, 64, 67, .12);
+}
+
+:host-context(.lesson-m2-l3) .point small {
+  color: #202124;
+  font-size: 13px;
+}
