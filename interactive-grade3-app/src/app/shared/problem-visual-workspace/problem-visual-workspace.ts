@@ -17,6 +17,7 @@ import type {
   ProblemVisualGeometryDiagramSection,
   ProblemVisualLinePlotSection,
   ProblemVisualMeasurementModelSection,
+  ProblemVisualMeasurementLabSection,
   ProblemVisualNoteSection,
   ProblemVisualNumberLineSection,
   ProblemVisualRelatedFactsSection,
@@ -151,6 +152,10 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
 
   measurementModelSection(section: ProblemVisualSection): ProblemVisualMeasurementModelSection | undefined {
     return section.kind === 'measurement-model' ? section : undefined;
+  }
+
+  measurementLabSection(section: ProblemVisualSection): ProblemVisualMeasurementLabSection | undefined {
+    return section.kind === 'measurement-lab' ? section : undefined;
   }
 
   range(count: number, max = 160): number[] {
@@ -353,7 +358,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     const matchCards = Array.from(host.querySelectorAll<HTMLElement>('.visual-expression-match-row span, .visual-expression-match-key span'));
     const tableRows = Array.from(host.querySelectorAll<HTMLElement>('.visual-data-row:not(.is-head)'));
     const equations = Array.from(host.querySelectorAll<HTMLElement>('.visual-equations span'));
-    const measurementItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-measurement .measurement-bars span, .visual-measurement .measurement-liquid .liquid-vessel, .visual-measurement .measurement-conversion span, .visual-measurement .measurement-rounding span, .visual-measurement .measurement-operation span'));
+    const measurementItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-measurement .measurement-bars span, .visual-measurement .measurement-liquid .liquid-vessel, .visual-measurement .measurement-conversion span, .visual-measurement .measurement-rounding span, .visual-measurement .measurement-operation span, .visual-measurement-lab .kg-pan, .visual-measurement-lab .kg-ten-frame span, .visual-measurement-lab .kg-place-row'));
     const diagramItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-floor-room, .visual-line-plot-x, .visual-geometry-shape'));
 
     animate(sections, {

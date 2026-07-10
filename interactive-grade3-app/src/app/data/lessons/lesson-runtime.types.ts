@@ -523,6 +523,23 @@ export type ProblemVisualMeasurementModelSection = {
   note?: string;
 };
 
+export type ProblemVisualMeasurementLabSection = {
+  kind: 'measurement-lab';
+  label?: string;
+  model: 'kilogram-balance' | 'kilogram-decompose' | 'kilogram-place-value';
+  wholeLabel?: string;
+  wholeDetail?: string;
+  partLabel?: string;
+  equation?: string;
+  caption?: string;
+  leftLabel?: string;
+  rightLabel?: string;
+  rows?: Array<{
+    left: string;
+    right: string;
+  }>;
+};
+
 export type ProblemVisualCardGridSection = {
   kind: 'card-grid';
   label?: string;
@@ -560,6 +577,7 @@ export type ProblemVisualSection =
   | ProblemVisualStopwatchSection
   | ProblemVisualTimeLineSection
   | ProblemVisualMeasurementModelSection
+  | ProblemVisualMeasurementLabSection
   | ProblemVisualCardGridSection
   | ProblemVisualSourceDirectionsSection;
 

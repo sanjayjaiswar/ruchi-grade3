@@ -434,6 +434,7 @@ export class LessonPage implements OnInit, AfterViewChecked {
     const conceptPanels = host.querySelectorAll<HTMLElement>(
       '.lesson-header-main, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card'
     );
+    const keepTextOpaque = host.classList.contains('lesson-m2-l6');
     const tabs = host.querySelectorAll<HTMLElement>('.problem-centered-tabs button, .step-button');
     const lessonModels = host.querySelectorAll<HTMLElement>(
       [
@@ -455,9 +456,9 @@ export class LessonPage implements OnInit, AfterViewChecked {
     );
 
     animate(conceptPanels, {
-      opacity: [0, 1],
+      opacity: keepTextOpaque ? 1 : [0, 1],
       translateY: [12, 0],
-      duration: 520,
+      duration: keepTextOpaque ? 300 : 520,
       delay: stagger(45),
       ease: 'out(3)'
     });
@@ -1650,6 +1651,7 @@ export class LessonPage implements OnInit, AfterViewChecked {
       'lesson-m2-l1': this.module?.id === 'm2' && this.lesson?.lessonNumber === 1,
       'lesson-m2-l2': this.module?.id === 'm2' && this.lesson?.lessonNumber === 2,
       'lesson-m2-l3': this.module?.id === 'm2' && this.lesson?.lessonNumber === 3,
+      'lesson-m2-l6': this.module?.id === 'm2' && this.lesson?.lessonNumber === 6,
       'lesson-m6-problem-centered': this.module?.id === 'm6'
     };
   }

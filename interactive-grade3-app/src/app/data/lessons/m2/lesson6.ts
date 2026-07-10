@@ -7,23 +7,21 @@ export const M2_LESSON6_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 6 animation: Build and decompose a kilogram to reason about the size",
-    context: "Lesson 6: Build and decompose a kilogram to reason about the size and weight 75 of 1 kilogram, 100 grams, 10 grams, and 1 gram",
-    equation: "Measure and label in kg; keep the unit with the number",
-    teacherPrompt: "How are the units kilogram and gram similar? How are they different?",
+    title: "Lesson 6 animation: build 1 kg, then decompose it",
+    context: "Use the Teacher Edition sequence: balance a rice bag to 1 kilogram, split the kilogram into ten 100-gram parts, split 100 grams into ten 10-gram parts, and split 10 grams into ten 1-gram parts.",
+    equation: "1 kg = 1,000 g; each step makes 10 equal smaller units",
+    teacherPrompt: "How many equal parts are made at each decomposition step, and how does that match place value?",
     focus: [
-      "gram",
-      "kilogram",
-      "measurement",
-      "source labels"
+      "1 kilogram",
+      "100 grams",
+      "10 grams",
+      "1 gram"
     ],
     measurementTicks: [
       "1 kg",
-      "100 kg",
-      "10 kg",
-      "1 kg",
-      "75 kg",
-      "1 kg"
+      "100 g",
+      "10 g",
+      "1 g"
     ]
   },
 
@@ -41,7 +39,7 @@ export const M2_LESSON6_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Lesson 6: Build and decompose a kilogram to reason about the size and weight 75 of 1 kilogram, 100 grams, 10 grams, and 1 gram",
+      studentPrompt: "Build and decompose a kilogram to reason about the size and weight of 1 kilogram, 100 grams, 10 grams, and 1 gram.",
       teacherEditionBasis: "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 75-84. Lesson 6 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "measurement"
     },
@@ -108,7 +106,7 @@ export const M2_LESSON6_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Lesson 6: Build and decompose a kilogram to reason about the size and weight 75 of 1 kilogram, 100 grams, 10 grams, and 1 gram"
+        value: "Build and decompose a kilogram to reason about the size and weight of 1 kilogram, 100 grams, 10 grams, and 1 gram."
       },
       {
         label: "Workbook",

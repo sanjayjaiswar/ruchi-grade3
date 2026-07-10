@@ -120,6 +120,55 @@
             </div>
           </section>
 
+          <section class="m2-l6-kilogram-lab" *ngIf="module.id === 'm2' && lesson.lessonNumber === 6" aria-label="Lesson 6 kilogram decomposition lab">
+            <div class="m2-l6-lab-copy">
+              <span class="eyebrow">Teacher Edition lab path</span>
+              <h3>One kilogram is built, then decomposed by tens.</h3>
+              <p>Students first make a real 1 kg rice bag on a balance. Then they keep asking: what are ten equal parts of this unit?</p>
+            </div>
+
+            <div class="m2-l6-story-card">
+              <ol aria-label="Kilogram lesson sequence">
+                <li><span>⚖️</span><b>Balance</b><em>rice bag = 1 kg benchmark</em></li>
+                <li><span>🍚</span><b>Whole</b><em>1 kg is the starting unit</em></li>
+                <li><span>▦</span><b>Split</b><em>draw 10 equal parts</em></li>
+                <li><span>🔢</span><b>Repeat</b><em>same base-ten idea</em></li>
+              </ol>
+            </div>
+
+            <div class="m2-l6-balance-card" aria-hidden="true">
+              <div class="m2-l6-balance">
+                <span class="is-benchmark"><b>1 kg</b><i>benchmark</i></span>
+                <em></em>
+                <span class="is-rice"><b>1 kg</b><i>rice bag</i></span>
+              </div>
+              <strong>balanced pans mean equal weight</strong>
+            </div>
+
+            <div class="m2-l6-decompose-card" aria-label="Kilogram decomposition sequence">
+              <article>
+                <strong>1 kg</strong>
+                <span>10 equal parts</span>
+                <b>100 g each</b>
+              </article>
+              <article>
+                <strong>100 g</strong>
+                <span>10 equal parts</span>
+                <b>10 g each</b>
+              </article>
+              <article>
+                <strong>10 g</strong>
+                <span>10 equal parts</span>
+                <b>1 g each</b>
+              </article>
+            </div>
+
+            <div class="m2-l6-place-card">
+              <strong>Why it connects to place value</strong>
+              <p>Each larger unit is made from 10 of the next smaller unit, just like 1 thousand -> 10 hundreds -> 10 tens -> 10 ones.</p>
+            </div>
+          </section>
+
           <section class="module-concept-frame" *ngIf="moduleConceptFrame as frame" [attr.data-visual]="frame.visual">
             <div class="module-frame-copy">
               <span class="eyebrow">{{ moduleConceptFrameEyebrow }}</span>

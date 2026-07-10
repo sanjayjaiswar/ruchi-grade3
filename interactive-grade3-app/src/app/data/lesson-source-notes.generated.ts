@@ -132,7 +132,7 @@ export const LESSON_SOURCE_NOTES: Record<string, LessonSourceNote> = {
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
   "m2-l6": {
-    "sourceProblem": "Lesson 6: Build and decompose a kilogram to reason about the size and weight 75 of 1 kilogram, 100 grams, 10 grams, and 1 gram",
+    "sourceProblem": "Lesson 6: Build and decompose a kilogram to reason about the size and weight of 1 kilogram, 100 grams, 10 grams, and 1 gram.",
     "teacherMove": "How are the units kilogram and gram similar? How are they different?",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },

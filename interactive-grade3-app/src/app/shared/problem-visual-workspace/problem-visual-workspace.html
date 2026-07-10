@@ -361,6 +361,61 @@
       </div>
     </ng-container>
 
+    <ng-container *ngIf="measurementLabSection(section) as lab">
+      <strong *ngIf="lab.label">{{ lab.label }}</strong>
+      <div class="visual-measurement-lab" [ngClass]="'is-' + lab.model">
+        <div class="kg-balance-stage" *ngIf="lab.model === 'kilogram-balance'">
+          <div class="kg-balance-beam">
+            <span class="kg-pan is-left">
+              <b>{{ lab.leftLabel || '1 kg benchmark' }}</b>
+              <i></i>
+            </span>
+            <span class="kg-stand"></span>
+            <span class="kg-pan is-right">
+              <b>{{ lab.rightLabel || (mode === 'solved' ? 'rice bag 1 kg' : 'rice bag ____ kg') }}</b>
+              <i></i>
+              <em *ngFor="let grain of range(16)"></em>
+            </span>
+          </div>
+          <p *ngIf="lab.equation">{{ lab.equation }}</p>
+          <div class="kg-lab-steps" *ngIf="lab.rows?.length">
+            <span *ngFor="let row of lab.rows">
+              <b>{{ row.left }}</b>
+              <em>{{ row.right }}</em>
+            </span>
+          </div>
+        </div>
+
+        <div class="kg-decompose-stage" *ngIf="lab.model === 'kilogram-decompose'">
+          <div class="kg-whole-bag">
+            <strong>{{ lab.wholeLabel }}</strong>
+            <span>{{ lab.wholeDetail }}</span>
+          </div>
+          <div class="kg-ten-frame" aria-hidden="true">
+            <span *ngFor="let part of range(10)">
+              {{ mode === 'solved' ? lab.partLabel : '____' }}
+            </span>
+          </div>
+          <p *ngIf="lab.equation">{{ lab.equation }}</p>
+          <div class="kg-lab-steps" *ngIf="lab.rows?.length">
+            <span *ngFor="let row of lab.rows">
+              <b>{{ row.left }}</b>
+              <em>{{ row.right }}</em>
+            </span>
+          </div>
+        </div>
+
+        <div class="kg-place-value-stage" *ngIf="lab.model === 'kilogram-place-value'">
+          <div class="kg-place-row" *ngFor="let row of lab.rows">
+            <strong>{{ row.left }}</strong>
+            <span>{{ row.right }}</span>
+          </div>
+        </div>
+
+        <small *ngIf="lab.caption">{{ lab.caption }}</small>
+      </div>
+    </ng-container>
+
     <ng-container *ngIf="measurementModelSection(section) as measure">
       <strong *ngIf="measure.label">{{ measure.label }}</strong>
       <div class="visual-measurement" [ngClass]="'is-' + measure.model">

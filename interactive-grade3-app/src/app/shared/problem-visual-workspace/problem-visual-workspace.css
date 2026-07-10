@@ -1086,6 +1086,430 @@
   font-weight: 600;
 }
 
+:host-context(.lesson-m2-l6) .problem-visual-workspace {
+  padding: 12px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+:host-context(.lesson-m2-l6) .visual-header {
+  display: none;
+}
+
+:host-context(.lesson-m2-l6) .visual-section {
+  gap: 10px;
+}
+
+:host-context(.lesson-m2-l6) .visual-section > strong {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 720;
+}
+
+:host-context(.lesson-m2-l6) .visual-measurement {
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m2-l6) .visual-measurement-lab {
+  display: grid;
+  width: min(100%, 940px);
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #c7d2e3;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #202124;
+}
+
+:host-context(.lesson-m2-l6) .kg-balance-stage,
+:host-context(.lesson-m2-l6) .kg-decompose-stage,
+:host-context(.lesson-m2-l6) .kg-place-value-stage {
+  min-height: 0;
+  padding: 14px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: #fbfcff;
+}
+
+:host-context(.lesson-m2-l6) .kg-balance-stage {
+  display: grid;
+  align-content: center;
+  gap: 10px;
+}
+
+:host-context(.lesson-m2-l6) .kg-balance-beam {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(130px, 1fr) 46px minmax(130px, 1fr);
+  align-items: end;
+  min-height: 116px;
+}
+
+:host-context(.lesson-m2-l6) .kg-balance-beam::before {
+  position: absolute;
+  left: 9%;
+  right: 9%;
+  top: 40px;
+  height: 6px;
+  border-radius: 999px;
+  background: #3c4043;
+  transform-origin: center;
+  animation: kgBalanceSettle 1700ms ease-in-out both;
+  content: "";
+}
+
+:host-context(.lesson-m2-l6) .kg-stand {
+  justify-self: center;
+  width: 10px;
+  height: 82px;
+  border-radius: 8px 8px 0 0;
+  background: #5f6368;
+}
+
+:host-context(.lesson-m2-l6) .kg-stand::after {
+  display: block;
+  width: 62px;
+  height: 14px;
+  margin: 78px 0 0 -26px;
+  border-radius: 36px 36px 0 0;
+  background: #d2d9e6;
+  content: "";
+}
+
+:host-context(.lesson-m2-l6) .kg-pan {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-self: start;
+  gap: 6px;
+  color: #202124;
+  font-size: 15px;
+  font-weight: 750;
+}
+
+:host-context(.lesson-m2-l6) .kg-pan b {
+  min-height: 31px;
+  padding: 6px 10px;
+  border: 1px solid #c7d2e3;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #202124;
+  text-align: center;
+}
+
+:host-context(.lesson-m2-l6) .kg-pan i {
+  display: block;
+  width: min(86%, 178px);
+  height: 42px;
+  border: 3px solid #5f6368;
+  border-top: 0;
+  border-radius: 0 0 40px 40px;
+  background: #fff8dd;
+}
+
+:host-context(.lesson-m2-l6) .kg-pan.is-right i {
+  background: #e6f4ea;
+}
+
+:host-context(.lesson-m2-l6) .kg-pan em {
+  position: absolute;
+  bottom: 15px;
+  left: calc(20% + (var(--grain-index, 0) * 3.4%));
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #b06000;
+  animation: kgRiceDrop 900ms ease-out both;
+}
+
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(2n) {
+  background: #fbbc04;
+}
+
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(1) { --grain-index: 0; animation-delay: 80ms; }
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(2) { --grain-index: 1; animation-delay: 120ms; }
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(3) { --grain-index: 2; animation-delay: 160ms; }
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(4) { --grain-index: 3; animation-delay: 200ms; }
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(5) { --grain-index: 4; animation-delay: 240ms; }
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(6) { --grain-index: 5; animation-delay: 280ms; }
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(7) { --grain-index: 6; animation-delay: 320ms; }
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(8) { --grain-index: 7; animation-delay: 360ms; }
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(9) { --grain-index: 8; animation-delay: 400ms; }
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(10) { --grain-index: 9; animation-delay: 440ms; }
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(11) { --grain-index: 10; animation-delay: 480ms; }
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(12) { --grain-index: 11; animation-delay: 520ms; }
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(13) { --grain-index: 12; animation-delay: 560ms; }
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(14) { --grain-index: 13; animation-delay: 600ms; }
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(15) { --grain-index: 14; animation-delay: 640ms; }
+:host-context(.lesson-m2-l6) .kg-pan em:nth-of-type(16) { --grain-index: 15; animation-delay: 680ms; }
+
+:host-context(.lesson-m2-l6) .kg-balance-stage p,
+:host-context(.lesson-m2-l6) .kg-decompose-stage p {
+  justify-self: center;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  padding: 8px 12px;
+  border: 1px solid #bfd1ea;
+  border-radius: 8px;
+  background: #f8fbff;
+  color: #174ea6;
+  font-size: 16px;
+  font-weight: 780;
+}
+
+:host-context(.lesson-m2-l6) .kg-decompose-stage {
+  display: grid;
+  grid-template-columns: minmax(128px, 0.38fr) minmax(260px, 1fr);
+  align-items: center;
+  gap: 12px;
+}
+
+:host-context(.lesson-m2-l6) .kg-whole-bag {
+  display: grid;
+  place-items: center;
+  min-height: 112px;
+  padding: 14px;
+  border: 2px solid #fbbc04;
+  border-radius: 18px 18px 28px 28px;
+  background: #fff8dd;
+  color: #202124;
+  text-align: center;
+  animation: kgBagPulse 1600ms ease-in-out infinite alternate;
+}
+
+:host-context(.lesson-m2-l6) .kg-whole-bag strong {
+  font-size: 24px;
+  line-height: 1.05;
+}
+
+:host-context(.lesson-m2-l6) .kg-whole-bag span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+:host-context(.lesson-m2-l6) .kg-ten-frame {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(48px, 1fr));
+  gap: 6px;
+}
+
+:host-context(.lesson-m2-l6) .kg-ten-frame span {
+  display: grid;
+  min-height: 46px;
+  place-items: center;
+  border: 1px solid #34a853;
+  border-radius: 8px;
+  background: #e6f4ea;
+  color: #0d652d;
+  font-size: 15px;
+  font-weight: 800;
+  animation: kgPartPop 620ms ease-out both;
+}
+
+:host-context(.lesson-m2-l6) .kg-ten-frame span:nth-child(1) { animation-delay: 40ms; }
+:host-context(.lesson-m2-l6) .kg-ten-frame span:nth-child(2) { animation-delay: 80ms; }
+:host-context(.lesson-m2-l6) .kg-ten-frame span:nth-child(3) { animation-delay: 120ms; }
+:host-context(.lesson-m2-l6) .kg-ten-frame span:nth-child(4) { animation-delay: 160ms; }
+:host-context(.lesson-m2-l6) .kg-ten-frame span:nth-child(5) { animation-delay: 200ms; }
+:host-context(.lesson-m2-l6) .kg-ten-frame span:nth-child(6) { animation-delay: 240ms; }
+:host-context(.lesson-m2-l6) .kg-ten-frame span:nth-child(7) { animation-delay: 280ms; }
+:host-context(.lesson-m2-l6) .kg-ten-frame span:nth-child(8) { animation-delay: 320ms; }
+:host-context(.lesson-m2-l6) .kg-ten-frame span:nth-child(9) { animation-delay: 360ms; }
+:host-context(.lesson-m2-l6) .kg-ten-frame span:nth-child(10) { animation-delay: 400ms; }
+
+:host-context(.lesson-m2-l6) .kg-decompose-stage p {
+  grid-column: 1 / -1;
+}
+
+:host-context(.lesson-m2-l6) .kg-lab-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+:host-context(.lesson-m2-l6) .kg-decompose-stage .kg-lab-steps {
+  grid-column: 1 / -1;
+}
+
+:host-context(.lesson-m2-l6) .kg-lab-steps span {
+  display: grid;
+  gap: 3px;
+  min-height: 58px;
+  align-content: start;
+  padding: 8px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: #ffffff;
+  animation: kgPartPop 520ms ease-out both;
+}
+
+:host-context(.lesson-m2-l6) .kg-lab-steps b {
+  color: #174ea6;
+  font-size: 14px;
+  font-weight: 760;
+}
+
+:host-context(.lesson-m2-l6) .kg-lab-steps em {
+  color: #202124;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 520;
+  line-height: 1.25;
+}
+
+:host-context(.lesson-m2-l6) .kg-place-value-stage {
+  display: grid;
+  gap: 10px;
+  align-content: center;
+}
+
+:host-context(.lesson-m2-l6) .kg-place-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.34fr) minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #c7d2e3;
+  border-radius: 8px;
+  background: #ffffff;
+  animation: kgPartPop 520ms ease-out both;
+}
+
+:host-context(.lesson-m2-l6) .kg-place-row strong {
+  color: #174ea6;
+  font-size: 16px;
+}
+
+:host-context(.lesson-m2-l6) .kg-place-row span {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 620;
+}
+
+:host-context(.lesson-m2-l6) .visual-measurement-lab small {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 560;
+  line-height: 1.35;
+}
+
+@keyframes kgBalanceSettle {
+  0% { transform: rotate(-5deg); }
+  55% { transform: rotate(4deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes kgRiceDrop {
+  from {
+    opacity: 0;
+    transform: translateY(-38px) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes kgBagPulse {
+  from { transform: scale(0.985); }
+  to { transform: scale(1.015); }
+}
+
+@keyframes kgPartPop {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+:host-context(.lesson-m2-l6) .measurement-reference {
+  border-color: #bfd1ea;
+  background: #f8fbff;
+  color: #174ea6;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+:host-context(.lesson-m2-l6) .measurement-conversion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+  align-items: stretch;
+}
+
+:host-context(.lesson-m2-l6) .measurement-conversion span,
+:host-context(.lesson-m2-l6) .measurement-bars span {
+  border-color: #c7d2e3;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #202124;
+}
+
+:host-context(.lesson-m2-l6) .measurement-conversion span:not(:last-child)::after {
+  display: none;
+}
+
+:host-context(.lesson-m2-l6) .measurement-conversion span::before {
+  color: #174ea6;
+  font-size: 20px;
+  font-weight: 800;
+  content: "10";
+}
+
+:host-context(.lesson-m2-l6) .measurement-conversion span:first-child::before {
+  content: "1";
+}
+
+:host-context(.lesson-m2-l6) .measurement-conversion span:last-child::before {
+  content: "✓";
+}
+
+:host-context(.lesson-m2-l6) .measurement-operation span.is-benchmark,
+:host-context(.lesson-m2-l6) .measurement-conversion span.is-benchmark,
+:host-context(.lesson-m2-l6) .measurement-bars span.is-benchmark,
+:host-context(.lesson-m2-l6) .liquid-vessel.is-benchmark {
+  border-color: #fbbc04;
+  background-color: #fff8dd;
+}
+
+:host-context(.lesson-m2-l6) .measurement-equation {
+  border-color: #d2d9e6;
+  background: #ffffff;
+  color: #202124;
+  font-size: 15px;
+  font-weight: 650;
+}
+
+:host-context(.lesson-m2-l6) .visual-measurement ol,
+:host-context(.lesson-m2-l6) .visual-measurement small {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 520;
+}
+
+:host-context(.lesson-m2-l6) .visual-data-table {
+  width: min(100%, 980px);
+}
+
+:host-context(.lesson-m2-l6) .visual-equations {
+  width: min(100%, 980px);
+}
+
+:host-context(.lesson-m2-l6) .visual-equations span {
+  border-color: #d2d9e6;
+  background: #ffffff;
+  color: #202124;
+  font-size: 15px;
+  font-weight: 600;
+}
+
 .visual-data-table {
   display: grid;
   width: min(100%, 900px);

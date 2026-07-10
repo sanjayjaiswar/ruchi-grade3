@@ -62,7 +62,7 @@ export const MODULES: ModuleMeta[] = [
     title: 'Place Value and Problem Solving with Units of Measure',
     sourcePdf: 'EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf',
     summary:
-      'Module 2 uses time, US weight, liquid volume, rounding, and measurement contexts to strengthen place value and problem solving.',
+      'Module 2 uses time, metric weight, metric liquid volume, rounding, and measurement contexts to strengthen place value and problem solving.',
     visualModels: ['number-line', 'clock', 'measurement'],
     topics: [
       {
@@ -75,7 +75,7 @@ export const MODULES: ModuleMeta[] = [
       {
         id: 'm2-tb',
         label: 'Topic B',
-        title: 'Measuring Weight and Liquid Volume with US Units',
+        title: 'Measuring Weight and Liquid Volume with Metric Units',
         days: 6,
         lessonIds: ['m2-l6', 'm2-l7', 'm2-l8', 'm2-l9', 'm2-l10', 'm2-l11']
       },
@@ -1182,7 +1182,7 @@ const LESSON_OBJECTIVES: Record<string, string> = {
   'm2-l3': 'Count by fives and ones on the number line as a strategy to tell time to the nearest minute on the clock.',
   'm2-l4': 'Solve word problems involving time intervals within 1 hour by counting backward and forward using the number line and clock.',
   'm2-l5': 'Solve word problems involving time intervals within 1 hour by adding and subtracting on the number line.',
-  'm2-l6': 'Build and decompose a pound to reason about the size and weight of 1 pound and 1 ounce.',
+  'm2-l6': 'Build and decompose a kilogram to reason about the size and weight of 1 kilogram, 100 grams, 10 grams, and 1 gram.',
   'm2-l7': 'Develop estimation strategies by reasoning about the weight in pounds of familiar objects to establish mental benchmark measures.',
   'm2-l8': 'Solve one-step word problems involving US customary weights and estimate to reason about solutions.',
   'm2-l9': 'Decompose a gallon to reason about gallons, quarts, pints, and cups.',

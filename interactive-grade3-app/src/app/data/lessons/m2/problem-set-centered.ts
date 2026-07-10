@@ -534,9 +534,15 @@ function createM2ProblemVisual(seed: ProblemSetCenteredProblem | ProblemSeed, so
     ? 'Solved view uses the Module 2 Teacher Edition answer key, authored visuals, and unit checks.'
     : 'Blank view keeps the student Problem Set workspace visual and leaves the official answer work open.';
 
-  const measurementModel = makeM2MeasurementModel(seed, solved);
-  if (measurementModel) {
-    sections.push(measurementModel);
+  const text = [seed.sourcePrompt, seed.solvedAnswer, ...(seed.equations ?? []), seed.unitLabel ?? ''].join(' ');
+  const kilogramLabSections = makeM2KilogramLabSections(seed, solved, text.toLowerCase());
+  if (kilogramLabSections?.length) {
+    sections.push(...kilogramLabSections);
+  } else {
+    const measurementModel = makeM2MeasurementModel(seed, solved);
+    if (measurementModel) {
+      sections.push(measurementModel);
+    }
   }
 
   const dataDisplay = solved ? seed.solvedDataDisplay ?? seed.dataDisplay : seed.dataDisplay;
@@ -598,9 +604,102 @@ function createM2ProblemVisual(seed: ProblemSetCenteredProblem | ProblemSeed, so
   };
 }
 
+function makeM2KilogramLabSections(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean,
+  lower: string
+): ProblemVisualSpec['sections'] | undefined {
+  if (/making a 1-kilogram weight|making a 1 kilogram weight/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Pan balance: solved model' : 'Pan balance: build 1 kilogram',
+        model: 'kilogram-balance',
+        leftLabel: 'benchmark bag 1 kg',
+        rightLabel: solved ? 'rice bag 1 kg' : 'rice bag ____ kg',
+        equation: solved ? 'rice bag = benchmark bag = 1 kg' : 'rice bag = benchmark bag = ____ kg',
+        rows: solved
+          ? [
+              { left: '1. Known weight', right: 'The benchmark bag is 1 kilogram.' },
+              { left: '2. Match it', right: 'Add rice until both pans are level.' },
+              { left: '3. Name the unit', right: 'The rice bag is also 1 kilogram.' }
+            ]
+          : [
+              { left: '1. Put', right: '1 kg benchmark on one pan.' },
+              { left: '2. Add', right: 'rice to the other pan.' },
+              { left: '3. Stop', right: 'when the pans balance, then label kg.' }
+            ],
+        caption: solved
+          ? 'Equal pans show equal weight.'
+          : 'Use the balance to prove the weight, not a guess.'
+      }
+    ];
+  }
+
+  const decomposition = m2KilogramDecomposition(lower);
+  if (decomposition) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Animated ten-frame decomposition' : 'Ten-frame decomposition workspace',
+        model: 'kilogram-decompose',
+        wholeLabel: decomposition.whole,
+        wholeDetail: decomposition.detail,
+        partLabel: decomposition.part,
+        equation: solved ? decomposition.equation : `${decomposition.whole} = 10 equal parts of ____`,
+        rows: solved
+          ? [
+              { left: 'Whole', right: decomposition.whole },
+              { left: 'Action', right: 'Split the whole into 10 equal parts.' },
+              { left: 'Each part', right: decomposition.part }
+            ]
+          : [
+              { left: 'Whole', right: decomposition.whole },
+              { left: 'Draw', right: '10 equal boxes over the whole.' },
+              { left: 'Label', right: 'one smaller part with the correct gram unit.' }
+            ],
+        caption: solved
+          ? `The smaller unit comes from ten equal parts of ${decomposition.whole}.`
+          : 'Do not convert by memory first; show the ten equal parts.'
+      }
+    ];
+  }
+
+  if (/compare the two place value charts|place value/.test(lower) && /1\s*(?:kilogram|kg)|100\s*(?:grams|g)|10\s*(?:grams|g)|1\s*(?:gram|g)/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Kilograms and place value match' : 'Compare the two charts',
+        model: 'kilogram-place-value',
+        rows: solved
+          ? [
+              { left: '1 kilogram', right: '10 groups of 100 grams' },
+              { left: '100 grams', right: '10 groups of 10 grams' },
+              { left: '10 grams', right: '10 groups of 1 gram' },
+              { left: 'Place value', right: '1 thousand -> 10 hundreds -> 10 tens -> 10 ones' }
+            ]
+          : [
+              { left: 'Metric mass', right: '1 kg -> 100 g -> 10 g -> 1 g' },
+              { left: 'Place value', right: 'thousands -> hundreds -> tens -> ones' },
+              { left: 'Shared idea', right: 'each larger unit is ten of the next smaller unit' }
+            ],
+        caption: solved
+          ? 'Both charts use the same base-ten structure: each unit decomposes into ten of the next smaller unit.'
+          : 'Compare one column at a time and name the ten-to-one relationship.'
+      }
+    ];
+  }
+
+  return undefined;
+}
+
 function makeM2MeasurementModel(seed: ProblemSetCenteredProblem | ProblemSeed, solved: boolean): ProblemVisualMeasurementModelSection | undefined {
   const text = [seed.sourcePrompt, seed.solvedAnswer, ...(seed.equations ?? []), seed.unitLabel ?? ''].join(' ');
   const lower = text.toLowerCase();
+  const kilogramLabModel = m2KilogramLabModel(seed, solved, lower);
+  if (kilogramLabModel) {
+    return kilogramLabModel;
+  }
   const isTimeNumberLine = !!seed.numberLineModels?.length && /a\.m\.|p\.m\.|minute|minutes|\d{1,2}:\d{2}/i.test(text);
   const hasMass = /\bkg\b|kilogram|gram|weigh|weight|mass|scale|rice|bean|pumpkin|turkey|piano|bench|apple|pear|peach/i.test(text);
   const hasLiquid = /\bl\b|\bml\b|liter|milliliter|liquid|container|barrel|beaker|water|milk|bucket|tank|gas/i.test(text);
@@ -654,6 +753,83 @@ function makeM2MeasurementModel(seed: ProblemSetCenteredProblem | ProblemSeed, s
       ? seed.solvedAnswer
       : seed.blankWorkspaceLabel ?? 'Use the Teacher Edition quantities, units, and model before calculating.'
   };
+}
+
+function m2KilogramLabModel(seed: ProblemSetCenteredProblem | ProblemSeed, solved: boolean, lower: string): ProblemVisualMeasurementModelSection | undefined {
+  if (/making a 1-kilogram weight|making a 1 kilogram weight/.test(lower)) {
+    return {
+      kind: 'measurement-model',
+      label: solved ? 'Pan balance model' : 'Teacher Edition lab model',
+      model: 'mass',
+      unitLabel: 'kg',
+      referenceLabel: 'balance the rice bag with the 1 kg benchmark',
+      equation: solved ? 'rice bag = benchmark bag = 1 kg' : 'rice bag = benchmark bag = ____ kg',
+      maxValue: 1,
+      values: [
+        { label: 'benchmark bag', value: 1, valueLabel: '1 kg', tone: 'benchmark' },
+        { label: 'rice bag', value: solved ? 1 : undefined, valueLabel: solved ? '1 kg' : '____ kg', tone: solved ? 'answer' : 'target' }
+      ],
+      steps: solved
+        ? ['Place the 1 kg benchmark on one pan.', 'Add rice to the empty bag on the other pan.', 'When the pans balance, the rice bag is 1 kg.']
+        : ['Draw the pan balance.', 'Show rice being added until the pans balance.', 'Label the finished rice bag with kilograms.'],
+      note: solved ? seed.solvedAnswer : seed.blankWorkspaceLabel ?? 'Show how the pan balance proves the rice bag is 1 kilogram.'
+    };
+  }
+
+  const decomposition = m2KilogramDecomposition(lower);
+  if (decomposition) {
+    return {
+      kind: 'measurement-model',
+      label: solved ? 'Ten-frame decomposition' : 'Decomposition workspace',
+      model: 'conversion',
+      unitLabel: 'g',
+      referenceLabel: `${decomposition.whole} -> 10 equal parts`,
+      equation: solved ? decomposition.equation : `${decomposition.whole} = 10 x ____`,
+      values: [
+        { label: 'whole', valueLabel: decomposition.whole, tone: 'benchmark' },
+        { label: 'number of parts', value: 10, valueLabel: '10 equal parts', tone: 'given' },
+        { label: 'each part', valueLabel: solved ? decomposition.part : '____', tone: solved ? 'answer' : 'target' }
+      ],
+      steps: solved
+        ? [`Start with ${decomposition.whole}.`, 'Draw or imagine a ten-frame over that whole.', `Each equal part is ${decomposition.part}.`]
+        : [`Start with ${decomposition.whole}.`, 'Split the whole into ten equal parts.', 'Label each smaller part.'],
+      note: solved ? seed.solvedAnswer : seed.blankWorkspaceLabel ?? 'Use the Teacher Edition ten-frame decomposition.'
+    };
+  }
+
+  if (/compare the two place value charts|place value/.test(lower) && /1\s*(?:kilogram|kg)|100\s*(?:grams|g)|10\s*(?:grams|g)|1\s*(?:gram|g)/.test(lower)) {
+    return {
+      kind: 'measurement-model',
+      label: solved ? 'Base-ten comparison' : 'Chart comparison model',
+      model: 'conversion',
+      referenceLabel: 'each column is 10 of the next smaller column',
+      equation: solved ? '1 kg -> 100 g -> 10 g -> 1 g matches thousands -> hundreds -> tens -> ones' : '1 kg -> ____ -> ____ -> ____',
+      values: [
+        { label: 'metric mass', valueLabel: '1 kg, 100 g, 10 g, 1 g', tone: 'benchmark' },
+        { label: 'place value', valueLabel: 'thousands, hundreds, tens, ones', tone: 'given' },
+        { label: 'relationship', valueLabel: solved ? '10 of the next smaller unit' : '____', tone: solved ? 'answer' : 'target' }
+      ],
+      steps: solved
+        ? ['Read the metric mass chart left to right.', 'Read the place value chart left to right.', 'Match the ten-to-one relationship in both charts.']
+        : ['Compare one column at a time.', 'Ask what each column is made of.', 'Write the shared base-ten pattern.'],
+      note: solved ? seed.solvedAnswer : 'Use the two source charts to explain how kilograms and grams follow place value.'
+    };
+  }
+
+  return undefined;
+}
+
+function m2KilogramDecomposition(lower: string): { whole: string; detail: string; part: string; equation: string } | undefined {
+  if (/decomposing 1 kilogram into groups of 100 grams|decompose 1 kilogram/.test(lower)) {
+    return { whole: '1 kg', detail: '1,000 grams total', part: '100 g', equation: '1,000 g = 10 x 100 g' };
+  }
+  if (/decomposing 100 grams into groups of 10 grams|decompose 100 grams/.test(lower)) {
+    return { whole: '100 g', detail: 'one 100-gram part', part: '10 g', equation: '100 g = 10 x 10 g' };
+  }
+  if (/decomposing 10 grams into groups of 1 gram|decompose 10 grams/.test(lower)) {
+    return { whole: '10 g', detail: 'one 10-gram part', part: '1 g', equation: '10 g = 10 x 1 g' };
+  }
+  return undefined;
 }
 
 function measurementValues(seed: ProblemSetCenteredProblem | ProblemSeed, solved: boolean, unitLabel?: string): NonNullable<ProblemVisualMeasurementModelSection['values']> {
@@ -1957,18 +2133,71 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
   6: lesson({
     lessonNumber: 6,
     title: 'kilograms decompose into grams',
-    concept: 'Metric mass units follow base-ten structure: 1 kg = 1,000 g, 100 g = ten 10 g, and 10 g = ten 1 g.',
-    contrast: 'Explain every decomposition as ten equal smaller units.',
-    summary: 'Kilograms and grams mirror thousands, hundreds, tens, and ones.',
+    concept: 'The Teacher Edition builds the unit with a pan balance first: a bag of rice balances a 1-kilogram benchmark bag. Students then decompose that same kilogram into ten 100-gram parts, decompose 100 grams into ten 10-gram parts, and decompose 10 grams into ten 1-gram parts.',
+    contrast: 'This lesson is a measurement lab, not just a conversion chart. Every answer should name the physical action, the whole unit, the ten equal smaller parts, and the gram label.',
+    summary: 'A kilogram-to-gram decomposition follows the same base-ten pattern as thousands, hundreds, tens, and ones.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Illustrate and describe making a 1-kilogram weight.', solvedAnswer: 'Illustrations and descriptions will vary. A valid model shows that a 1-kilogram weight is 1,000 grams.', equations: ['1 kg = 1,000 g'], dataDisplay: dataTable('Mass equivalence', ['Unit', 'Equivalent'], [['1 kilogram', '1,000 grams']]) }),
-      problem({ number: 2, sourcePrompt: 'Illustrate and describe decomposing 1 kilogram into groups of 100 grams.', solvedAnswer: 'Illustrations and descriptions will vary. A valid model shows 1 kilogram decomposed into ten 100-gram groups.', equations: ['1,000 g = 10 x 100 g'], knownTotal: 10, knownGroupSize: 1, quotient: 10, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
-      problem({ number: 3, sourcePrompt: 'Illustrate and describe decomposing 100 grams into groups of 10 grams.', solvedAnswer: 'Illustrations and descriptions will vary. A valid model shows 100 grams decomposed into ten 10-gram groups.', equations: ['100 g = 10 x 10 g'], knownTotal: 10, knownGroupSize: 1, quotient: 10, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
-      problem({ number: 4, sourcePrompt: 'Illustrate and describe decomposing 10 grams into groups of 1 gram.', solvedAnswer: 'Illustrations and descriptions will vary. A valid model shows 10 grams decomposed into ten 1-gram groups.', equations: ['10 g = 10 x 1 g'], knownTotal: 10, knownGroupSize: 1, quotient: 10, blankVisualType: 'bar-units', animationType: 'grouping-by-size' }),
+      problem({
+        number: 1,
+        sourcePrompt: 'Illustrate and describe the process of making a 1-kilogram weight.',
+        solvedAnswer: 'Illustrations and descriptions will vary. A valid response shows a bag of rice balanced with a 1-kilogram benchmark weight or bag, so the rice bag is 1 kilogram.',
+        equations: ['rice bag = 1 kg', '1 kg = 1,000 g'],
+        blankWorkspaceLabel: 'Draw the pan balance: 1-kilogram benchmark on one side and rice added to the other side until both sides balance.',
+        dataDisplay: dataTable('Teacher Edition lab setup', ['Step', 'Action', 'Result'], [
+          ['1', 'Put the 1 kg benchmark bag on one pan.', 'known 1 kg'],
+          ['2', 'Add rice to the empty bag on the other pan.', 'adjust the amount'],
+          ['3', 'Stop when the pans balance.', 'the rice bag weighs 1 kg']
+        ])
+      }),
+      problem({
+        number: 2,
+        sourcePrompt: 'Illustrate and describe the process of decomposing 1 kilogram into groups of 100 grams.',
+        solvedAnswer: 'Illustrations and descriptions will vary. A valid model shows 1 kilogram decomposed into ten equal 100-gram groups.',
+        equations: ['1 kg = 1,000 g', '1,000 g = 10 x 100 g'],
+        blankWorkspaceLabel: 'Draw a ten-frame over the 1-kilogram bag and label each equal part 100 g.',
+        knownTotal: 10,
+        knownGroupSize: 100,
+        quotient: 10,
+        unitLabel: 'g',
+        blankVisualType: 'open-workspace',
+        dataDisplay: dataTable('Teacher Edition decomposition', ['Whole', 'Action', 'Each part'], [
+          ['1 kg of rice', 'Draw a ten-frame over the whole bag.', '100 g']
+        ])
+      }),
+      problem({
+        number: 3,
+        sourcePrompt: 'Illustrate and describe the process of decomposing 100 grams into groups of 10 grams.',
+        solvedAnswer: 'Illustrations and descriptions will vary. A valid model shows 100 grams decomposed into ten equal 10-gram groups.',
+        equations: ['100 g = 10 x 10 g'],
+        blankWorkspaceLabel: 'Zoom into one 100-gram part, draw a new ten-frame, and label each smaller part 10 g.',
+        knownTotal: 10,
+        knownGroupSize: 10,
+        quotient: 10,
+        unitLabel: 'g',
+        blankVisualType: 'open-workspace',
+        dataDisplay: dataTable('Teacher Edition decomposition', ['Whole', 'Action', 'Each part'], [
+          ['100 g of rice', 'Draw a new ten-frame inside one 100 g part.', '10 g']
+        ])
+      }),
+      problem({
+        number: 4,
+        sourcePrompt: 'Illustrate and describe the process of decomposing 10 grams into groups of 1 gram.',
+        solvedAnswer: 'Illustrations and descriptions will vary. A valid model shows 10 grams decomposed into ten equal 1-gram groups.',
+        equations: ['10 g = 10 x 1 g'],
+        blankWorkspaceLabel: 'Zoom into one 10-gram part, draw ten equal pieces, and label each piece 1 g.',
+        knownTotal: 10,
+        knownGroupSize: 1,
+        quotient: 10,
+        unitLabel: 'g',
+        blankVisualType: 'open-workspace',
+        dataDisplay: dataTable('Teacher Edition decomposition', ['Whole', 'Action', 'Each part'], [
+          ['10 g of rice', 'Draw a new ten-frame inside one 10 g part.', '1 g']
+        ])
+      }),
       problem({
         number: 5,
         sourcePrompt: 'Compare the two place value charts below. How does today\'s exploration using kilograms and grams relate to your understanding of place value?',
-        solvedAnswer: 'Answers will vary. A strong response explains that each mass unit is 10 times the unit to its right, just as each place value is 10 times the place to its right.',
+        solvedAnswer: 'Answers will vary. A strong response explains that each mass unit is decomposed into ten of the next smaller unit, just as each place value is decomposed into ten of the place to its right.',
         equations: ['1 kg = 10 x 100 g', '100 g = 10 x 10 g', '10 g = 10 x 1 g'],
         dataDisplay: dataTable('Source comparison charts', ['Chart', 'Column 1', 'Column 2', 'Column 3', 'Column 4'], [
           ['Metric mass', '1 kilogram', '100 grams', '10 grams', '1 gram'],
