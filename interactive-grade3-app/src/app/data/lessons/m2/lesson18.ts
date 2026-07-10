@@ -6,9 +6,9 @@ export const M2_LESSON18_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 18 animation: Decompose once to subtract measurements including three",
+    title: "Lesson 18 animation: subtract measurements and decompose once",
     context: "Part 1: Use the place value chart to model decomposing once to subtract with three-digit minuends.",
-    equation: "Measure and label in kg; keep the unit with the number",
+    equation: "60 mL - 24 mL = 36 mL",
     teacherPrompt: "What is the relationship between Problems 1(a), 1(b), and 1(c)?",
     focus: [
       "decompose",
@@ -16,12 +16,12 @@ export const M2_LESSON18_RUNTIME: LessonRuntimeConfig = {
       "source labels"
     ],
     measurementTicks: [
-      "1 kg",
-      "1 kg",
-      "1 kg",
-      "60 kg",
-      "24 kg",
-      "24 kg"
+      "60 mL",
+      "-24 mL",
+      "decompose 1 ten",
+      "10 ones - 4 ones",
+      "36 mL",
+      "unit stays mL"
     ]
   },
 

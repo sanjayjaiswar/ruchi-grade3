@@ -1130,6 +1130,268 @@
   background: #ffffff;
 }
 
+.lesson-m3 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li, .m3-facts-lab, .m3-facts-lab article) {
+  opacity: 1 !important;
+}
+
+.lesson-m3 .problem-centered-concept {
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+.lesson-m3 .problem-centered-concept h2 {
+  max-width: 1120px;
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.lesson-m3 .problem-centered-concept p {
+  max-width: 1120px;
+  color: #202124;
+  font-size: 18px;
+  font-weight: 520;
+  line-height: 1.45;
+}
+
+.lesson-m3 .concept-contrast {
+  max-width: 1120px;
+  border-color: #bfd1ea;
+  border-left: 4px solid #1a73e8;
+  background: #ffffff;
+}
+
+.lesson-m3 .concept-contrast span {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 560;
+  line-height: 1.4;
+}
+
+.lesson-m3 .module-concept-frame {
+  display: none;
+}
+
+.lesson-m4 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-tabs button, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li, .m4-area-lab, .m4-area-lab article) {
+  opacity: 1 !important;
+}
+
+.lesson-m4 .problem-centered-lesson-animation {
+  display: none;
+}
+
+.lesson-m4 .problem-centered-concept {
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 18px 20px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+.lesson-m4 .problem-centered-concept h2 {
+  max-width: 1120px;
+  font-size: 28px;
+  line-height: 1.16;
+}
+
+.lesson-m4 .problem-centered-concept p {
+  max-width: 1120px;
+  color: #202124;
+  font-size: 17px;
+  font-weight: 520;
+  line-height: 1.45;
+}
+
+.lesson-m4 .concept-contrast {
+  max-width: 1120px;
+  border-color: #c7d2e3;
+  border-left: 4px solid #34a853;
+  background: #ffffff;
+}
+
+.lesson-m4 .concept-contrast span {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 560;
+  line-height: 1.4;
+}
+
+.lesson-m4 .module-concept-frame {
+  display: none;
+}
+
+.lesson-m4 .lead,
+.lesson-m4 .source-card strong,
+.lesson-m4 .source-card span,
+.lesson-m4 .source-card small {
+  color: #202124;
+}
+
+.lesson-m5 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-tabs button, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li, .m5-fractions-lab, .m5-fractions-lab article) {
+  opacity: 1 !important;
+}
+
+.lesson-m5 .problem-centered-lesson-animation {
+  display: none;
+}
+
+.lesson-m5 .problem-centered-concept {
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 18px 20px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+.lesson-m5 .problem-centered-concept h2 {
+  max-width: 1120px;
+  font-size: 28px;
+  line-height: 1.16;
+}
+
+.lesson-m5 .problem-centered-concept p {
+  max-width: 1120px;
+  color: #202124;
+  font-size: 17px;
+  font-weight: 520;
+  line-height: 1.45;
+}
+
+.lesson-m5 .concept-contrast {
+  max-width: 1120px;
+  border-color: #c7d2e3;
+  border-left: 4px solid #1a73e8;
+  background: #ffffff;
+}
+
+.lesson-m5 .concept-contrast span {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 560;
+  line-height: 1.4;
+}
+
+.lesson-m5 .module-concept-frame {
+  display: none;
+}
+
+.lesson-m5 .lead,
+.lesson-m5 .source-card strong,
+.lesson-m5 .source-card span,
+.lesson-m5 .source-card small {
+  color: #202124;
+}
+
+.lesson-m6 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-tabs button, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li, .m6-data-lab, .m6-data-lab article) {
+  opacity: 1 !important;
+}
+
+.lesson-m6 .problem-centered-lesson-animation {
+  display: none;
+}
+
+.lesson-m6 .problem-centered-concept {
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 18px 20px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+.lesson-m6 .problem-centered-concept h2 {
+  max-width: 1120px;
+  font-size: 28px;
+  line-height: 1.16;
+}
+
+.lesson-m6 .problem-centered-concept p {
+  max-width: 1120px;
+  color: #202124;
+  font-size: 17px;
+  font-weight: 520;
+  line-height: 1.45;
+}
+
+.lesson-m6 .concept-contrast {
+  max-width: 1120px;
+  border-color: #c7d2e3;
+  border-left: 4px solid #ea4335;
+  background: #ffffff;
+}
+
+.lesson-m6 .concept-contrast span {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 560;
+  line-height: 1.4;
+}
+
+.lesson-m6 .module-concept-frame {
+  display: none;
+}
+
+.lesson-m6 .lead,
+.lesson-m6 .source-card strong,
+.lesson-m6 .source-card span,
+.lesson-m6 .source-card small {
+  color: #202124;
+}
+
+.lesson-m7 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-tabs button, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li, .m7-shapes-lab, .m7-shapes-lab article) {
+  opacity: 1 !important;
+}
+
+.lesson-m7 .problem-centered-lesson-animation {
+  display: none;
+}
+
+.lesson-m7 .problem-centered-concept {
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 18px 20px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+.lesson-m7 .problem-centered-concept h2 {
+  max-width: 1120px;
+  font-size: 28px;
+  line-height: 1.16;
+}
+
+.lesson-m7 .problem-centered-concept p {
+  max-width: 1120px;
+  color: #202124;
+  font-size: 17px;
+  font-weight: 520;
+  line-height: 1.45;
+}
+
+.lesson-m7 .concept-contrast {
+  max-width: 1120px;
+  border-color: #c7d2e3;
+  border-left: 4px solid #34a853;
+  background: #ffffff;
+}
+
+.lesson-m7 .concept-contrast span {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 560;
+  line-height: 1.4;
+}
+
+.lesson-m7 .module-concept-frame {
+  display: none;
+}
+
+.lesson-m7 .lead,
+.lesson-m7 .source-card,
+.lesson-m7 .source-card strong,
+.lesson-m7 .source-card span,
+.lesson-m7 .source-card small {
+  color: #202124;
+}
+
 .lesson-m2-l6 .problem-centered-concept h2 {
   max-width: 1120px;
   font-size: 32px;
@@ -1162,6 +1424,146 @@
   display: none;
 }
 
+.lesson-m2-l6 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li),
+.lesson-m2-l7 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li),
+.lesson-m2-l8 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li),
+.lesson-m2-l9 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li),
+.lesson-m2-l10 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li),
+.lesson-m2-l11 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li),
+.lesson-m2-l12 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li),
+.lesson-m2-l13 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li),
+.lesson-m2-l14 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li),
+.lesson-m2-l15 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li),
+.lesson-m2-l16 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li),
+.lesson-m2-l17 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li),
+.lesson-m2-l18 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li),
+.lesson-m2-l19 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li),
+.lesson-m2-l20 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li),
+.lesson-m2-l21 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li) {
+  opacity: 1 !important;
+}
+
+.lesson-m2-l7 .problem-centered-concept,
+.lesson-m2-l8 .problem-centered-concept,
+.lesson-m2-l9 .problem-centered-concept,
+.lesson-m2-l10 .problem-centered-concept,
+.lesson-m2-l11 .problem-centered-concept,
+.lesson-m2-l12 .problem-centered-concept,
+.lesson-m2-l13 .problem-centered-concept,
+.lesson-m2-l14 .problem-centered-concept,
+.lesson-m2-l15 .problem-centered-concept,
+.lesson-m2-l16 .problem-centered-concept,
+.lesson-m2-l17 .problem-centered-concept,
+.lesson-m2-l18 .problem-centered-concept,
+.lesson-m2-l19 .problem-centered-concept,
+.lesson-m2-l20 .problem-centered-concept,
+.lesson-m2-l21 .problem-centered-concept {
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+.lesson-m2-l7 .problem-centered-concept h2,
+.lesson-m2-l8 .problem-centered-concept h2,
+.lesson-m2-l9 .problem-centered-concept h2,
+.lesson-m2-l10 .problem-centered-concept h2,
+.lesson-m2-l11 .problem-centered-concept h2,
+.lesson-m2-l12 .problem-centered-concept h2,
+.lesson-m2-l13 .problem-centered-concept h2,
+.lesson-m2-l14 .problem-centered-concept h2,
+.lesson-m2-l15 .problem-centered-concept h2,
+.lesson-m2-l16 .problem-centered-concept h2,
+.lesson-m2-l17 .problem-centered-concept h2,
+.lesson-m2-l18 .problem-centered-concept h2,
+.lesson-m2-l19 .problem-centered-concept h2,
+.lesson-m2-l20 .problem-centered-concept h2,
+.lesson-m2-l21 .problem-centered-concept h2 {
+  max-width: 1120px;
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.lesson-m2-l7 .problem-centered-concept p,
+.lesson-m2-l8 .problem-centered-concept p,
+.lesson-m2-l9 .problem-centered-concept p,
+.lesson-m2-l10 .problem-centered-concept p,
+.lesson-m2-l11 .problem-centered-concept p,
+.lesson-m2-l12 .problem-centered-concept p,
+.lesson-m2-l13 .problem-centered-concept p,
+.lesson-m2-l14 .problem-centered-concept p,
+.lesson-m2-l15 .problem-centered-concept p,
+.lesson-m2-l16 .problem-centered-concept p,
+.lesson-m2-l17 .problem-centered-concept p,
+.lesson-m2-l18 .problem-centered-concept p,
+.lesson-m2-l19 .problem-centered-concept p,
+.lesson-m2-l20 .problem-centered-concept p,
+.lesson-m2-l21 .problem-centered-concept p {
+  max-width: 1120px;
+  color: #202124;
+  font-size: 18px;
+  font-weight: 520;
+  line-height: 1.45;
+}
+
+.lesson-m2-l7 .concept-contrast,
+.lesson-m2-l8 .concept-contrast,
+.lesson-m2-l9 .concept-contrast,
+.lesson-m2-l10 .concept-contrast,
+.lesson-m2-l11 .concept-contrast,
+.lesson-m2-l12 .concept-contrast,
+.lesson-m2-l13 .concept-contrast,
+.lesson-m2-l14 .concept-contrast,
+.lesson-m2-l15 .concept-contrast,
+.lesson-m2-l16 .concept-contrast,
+.lesson-m2-l17 .concept-contrast,
+.lesson-m2-l18 .concept-contrast,
+.lesson-m2-l19 .concept-contrast,
+.lesson-m2-l20 .concept-contrast,
+.lesson-m2-l21 .concept-contrast {
+  max-width: 1120px;
+  border-color: #bfd1ea;
+  border-left: 4px solid #1a73e8;
+  background: #ffffff;
+}
+
+.lesson-m2-l7 .concept-contrast span,
+.lesson-m2-l8 .concept-contrast span,
+.lesson-m2-l9 .concept-contrast span,
+.lesson-m2-l10 .concept-contrast span,
+.lesson-m2-l11 .concept-contrast span,
+.lesson-m2-l12 .concept-contrast span,
+.lesson-m2-l13 .concept-contrast span,
+.lesson-m2-l14 .concept-contrast span,
+.lesson-m2-l15 .concept-contrast span,
+.lesson-m2-l16 .concept-contrast span,
+.lesson-m2-l17 .concept-contrast span,
+.lesson-m2-l18 .concept-contrast span,
+.lesson-m2-l19 .concept-contrast span,
+.lesson-m2-l20 .concept-contrast span,
+.lesson-m2-l21 .concept-contrast span {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 560;
+  line-height: 1.4;
+}
+
+.lesson-m2-l7 .module-concept-frame,
+.lesson-m2-l8 .module-concept-frame,
+.lesson-m2-l9 .module-concept-frame,
+.lesson-m2-l10 .module-concept-frame,
+.lesson-m2-l11 .module-concept-frame,
+.lesson-m2-l12 .module-concept-frame,
+.lesson-m2-l13 .module-concept-frame,
+.lesson-m2-l14 .module-concept-frame,
+.lesson-m2-l15 .module-concept-frame,
+.lesson-m2-l16 .module-concept-frame,
+.lesson-m2-l17 .module-concept-frame,
+.lesson-m2-l18 .module-concept-frame,
+.lesson-m2-l19 .module-concept-frame,
+.lesson-m2-l20 .module-concept-frame,
+.lesson-m2-l21 .module-concept-frame {
+  display: none;
+}
+
 .m2-l6-kilogram-lab {
   display: grid;
   grid-template-columns: minmax(240px, 0.85fr) minmax(260px, 0.9fr) minmax(300px, 1fr);
@@ -1171,6 +1573,1219 @@
   border: 1px solid #d2d9e6;
   border-radius: 8px;
   background: #ffffff;
+}
+
+.m2-topicb-lab {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.82fr) minmax(280px, 0.92fr) minmax(360px, 1.2fr);
+  gap: 12px;
+  align-items: stretch;
+  padding: 14px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.m2-topicb-story-card,
+.m2-topicb-card-grid,
+.m2-topicb-note-card {
+  min-width: 0;
+}
+
+.m2-topicb-story-card,
+.m2-topicb-card-grid,
+.m2-topicb-note-card {
+  padding: 12px;
+  border: 1px solid #c7d2e3;
+  border-radius: 8px;
+  background: #fbfcff;
+}
+
+.m2-topicb-story-card ol {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.m2-topicb-story-card li {
+  display: grid;
+  grid-template-columns: 34px minmax(76px, 0.34fr) minmax(0, 1fr);
+  gap: 8px;
+  align-items: center;
+  min-height: 44px;
+  padding: 7px 8px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.m2-topicb-story-card span {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: 999px;
+  background: #e8f0fe;
+  font-size: 17px;
+}
+
+.m2-topicb-story-card b {
+  color: #174ea6;
+  font-size: 15px;
+  font-weight: 760;
+}
+
+.m2-topicb-story-card em {
+  color: #202124;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 520;
+  line-height: 1.25;
+}
+
+.m2-topicb-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  background: #ffffff;
+}
+
+.m2-topicb-card-grid article {
+  display: grid;
+  gap: 6px;
+  min-height: 112px;
+  align-content: center;
+  padding: 10px;
+  border: 1px solid #34a853;
+  border-radius: 8px;
+  background: #e6f4ea;
+  animation: m2l6DecomposePop 680ms ease-out both;
+}
+
+.m2-l8-weight-lab .m2-topicb-card-grid article {
+  border-color: #8ab4f8;
+  background: #f8fbff;
+}
+
+.m2-l9-liter-lab .m2-topicb-card-grid article {
+  border-color: #34a853;
+  background: #eaf7ff;
+}
+
+.m2-l10-liquid-scale-lab .m2-topicb-card-grid article {
+  border-color: #1a73e8;
+  background: #eaf7ff;
+}
+
+.m2-l11-mixed-lab .m2-topicb-card-grid article {
+  border-color: #fbbc04;
+  background: #fffdf3;
+}
+
+.m2-l12-rounding-lab .m2-topicb-card-grid article {
+  border-color: #8ab4f8;
+  background: #f8fbff;
+}
+
+.m2-l15-algorithm-lab .m2-topicb-card-grid article {
+  border-color: #8ab4f8;
+  background: #ffffff;
+}
+
+.m2-topicb-card-grid article:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.m2-topicb-card-grid article:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.m2-topicb-card-grid article:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.m2-topicb-card-grid strong {
+  color: #0d652d;
+  font-size: 20px;
+  line-height: 1.05;
+}
+
+.m2-l8-weight-lab .m2-topicb-card-grid strong {
+  color: #174ea6;
+}
+
+.m2-l10-liquid-scale-lab .m2-topicb-card-grid strong,
+.m2-l12-rounding-lab .m2-topicb-card-grid strong,
+.m2-l15-algorithm-lab .m2-topicb-card-grid strong {
+  color: #174ea6;
+}
+
+.m2-l11-mixed-lab .m2-topicb-card-grid strong {
+  color: #b06000;
+}
+
+.m2-topicb-card-grid span {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 680;
+}
+
+.m2-topicb-card-grid b {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 520;
+  line-height: 1.25;
+}
+
+.m2-topicb-note-card {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(180px, 0.22fr) minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  border-color: #fbbc04;
+  background: #fffdf3;
+}
+
+.m2-topicb-note-card strong {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 720;
+}
+
+.m2-topicb-note-card p {
+  margin: 0;
+  color: #202124;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.m3-facts-lab {
+  grid-template-columns: minmax(260px, 0.9fr) minmax(260px, 0.8fr) minmax(420px, 1.35fr);
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+.m3-facts-lab .m2-l6-lab-copy {
+  padding: 12px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.m3-facts-lab .m2-l6-lab-copy h3 {
+  font-size: 24px;
+}
+
+.m3-facts-lab .m2-l6-lab-copy p {
+  font-size: 17px;
+}
+
+.m3-facts-lab .m2-topicb-story-card,
+.m3-facts-lab .m2-topicb-card-grid,
+.m3-facts-lab .m2-topicb-note-card {
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+.m3-facts-lab .m2-topicb-story-card li {
+  border-color: #d2d9e6;
+  background: #fbfcff;
+}
+
+.m3-facts-lab .m2-topicb-story-card span {
+  background: #e8f0fe;
+}
+
+.m3-facts-lab .m2-topicb-card-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-content: stretch;
+}
+
+.m3-facts-lab .m2-topicb-card-grid article {
+  min-height: 118px;
+  border-color: #bfd1ea;
+  background: #ffffff;
+}
+
+.m3-facts-lab .m2-topicb-card-grid article:nth-child(3n + 1) {
+  border-top: 4px solid #4285f4;
+}
+
+.m3-facts-lab .m2-topicb-card-grid article:nth-child(3n + 2) {
+  border-top: 4px solid #34a853;
+}
+
+.m3-facts-lab .m2-topicb-card-grid article:nth-child(3n) {
+  border-top: 4px solid #fbbc04;
+}
+
+.m3-facts-lab .m2-topicb-card-grid strong {
+  color: #174ea6;
+  font-size: 22px;
+}
+
+.m3-facts-lab .m2-topicb-card-grid span {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.m3-facts-lab .m2-topicb-card-grid b {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.m3-facts-lab .m2-topicb-note-card {
+  border-color: #fbbc04;
+  background: #fffdf3;
+}
+
+.m4-area-lab {
+  grid-template-columns: minmax(260px, 0.92fr) minmax(260px, 0.78fr) minmax(420px, 1.35fr);
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+.m4-area-lab .m2-l6-lab-copy {
+  padding: 12px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.m4-area-lab .m2-l6-lab-copy h3 {
+  font-size: 24px;
+}
+
+.m4-area-lab .m2-l6-lab-copy p {
+  font-size: 17px;
+}
+
+.m4-area-lab .m2-topicb-story-card,
+.m4-area-lab .m2-topicb-card-grid,
+.m4-area-lab .m2-topicb-note-card {
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+.m4-area-lab .m2-topicb-story-card li {
+  border-color: #d2d9e6;
+  background: #fbfcff;
+}
+
+.m4-area-lab .m2-topicb-story-card span {
+  background: #e6f4ea;
+}
+
+.m4-area-lab .m2-topicb-story-card b {
+  color: #188038;
+}
+
+.m4-area-lab .m2-topicb-card-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-content: stretch;
+}
+
+.m4-area-lab .m2-topicb-card-grid article {
+  min-height: 118px;
+  border-color: #c7d2e3;
+  background: #ffffff;
+}
+
+.m4-area-lab .m2-topicb-card-grid article:nth-child(3n + 1) {
+  border-top: 4px solid #34a853;
+}
+
+.m4-area-lab .m2-topicb-card-grid article:nth-child(3n + 2) {
+  border-top: 4px solid #4285f4;
+}
+
+.m4-area-lab .m2-topicb-card-grid article:nth-child(3n) {
+  border-top: 4px solid #fbbc04;
+}
+
+.m4-area-lab .m2-topicb-card-grid strong {
+  color: #188038;
+  font-size: 22px;
+}
+
+.m4-area-lab .m2-topicb-card-grid span {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.m4-area-lab .m2-topicb-card-grid b {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.m4-area-lab .m2-topicb-note-card {
+  border-color: #34a853;
+  background: #f1f8f3;
+}
+
+.m5-fractions-lab {
+  grid-template-columns: minmax(260px, 0.72fr) minmax(280px, 0.82fr) minmax(300px, 1fr);
+  align-items: stretch;
+  border-color: #b9c9e4;
+  background: #ffffff;
+}
+
+.m5-fractions-lab .m2-l6-lab-copy {
+  align-content: start;
+  min-height: 0;
+  padding: 12px;
+  border: 1px solid #bfd1ea;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.m5-fractions-lab .m2-l6-lab-copy h3 {
+  max-width: 560px;
+  font-size: 26px;
+}
+
+.m5-fractions-lab .m2-l6-lab-copy p {
+  max-width: 620px;
+  color: #202124;
+  font-size: 17px;
+  font-weight: 520;
+  line-height: 1.46;
+}
+
+.m5-fractions-lab .m2-topicb-story-card,
+.m5-fractions-lab .m2-topicb-card-grid,
+.m5-fractions-lab .m2-topicb-note-card {
+  border-color: #bfd1ea;
+  background: #ffffff;
+}
+
+.m5-fractions-lab .m2-topicb-story-card {
+  grid-column: 2;
+}
+
+.m5-fractions-lab .m2-topicb-story-card li {
+  border-color: #d2d9e6;
+  background: #fbfcff;
+}
+
+.m5-fractions-lab .m2-topicb-story-card span {
+  background: #e8f0fe;
+}
+
+.m5-fractions-lab .m2-topicb-story-card b {
+  color: #174ea6;
+}
+
+.m5-fractions-lab .m5-lab-model {
+  display: grid;
+  min-height: 170px;
+  align-items: center;
+  justify-items: center;
+  padding: 18px;
+  border: 1px solid #bfd1ea;
+  border-radius: 8px;
+  background: #fbfcff;
+}
+
+.m5-lab-strip,
+.m5-lab-equivalent div,
+.m5-lab-compare div {
+  display: grid;
+  width: min(100%, 320px);
+  min-height: 74px;
+  overflow: hidden;
+  border: 2px solid #202124;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.m5-lab-strip {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.m5-lab-equivalent,
+.m5-lab-compare {
+  display: grid;
+  grid-template-columns: minmax(120px, 1fr) auto minmax(120px, 1fr);
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+}
+
+.m5-lab-equivalent div:first-child,
+.m5-lab-compare div:first-child {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.m5-lab-equivalent div:last-child {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.m5-lab-compare div:first-child,
+.m5-lab-compare div:last-child {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.m5-lab-strip span,
+.m5-lab-equivalent span,
+.m5-lab-compare span {
+  border-right: 2px solid #202124;
+  background: #ffffff;
+  animation: m5-lab-pop 680ms ease both;
+}
+
+.m5-lab-strip span:last-child,
+.m5-lab-equivalent span:last-child,
+.m5-lab-compare span:last-child {
+  border-right: 0;
+}
+
+.m5-lab-strip .is-shaded,
+.m5-lab-equivalent .is-shaded,
+.m5-lab-compare .is-shaded {
+  background: #8ab4f8;
+}
+
+.m5-lab-equivalent strong,
+.m5-lab-compare strong {
+  color: #202124;
+  font-size: 34px;
+  font-weight: 760;
+}
+
+.m5-lab-line {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto repeat(4, 1fr) auto;
+  gap: 0;
+  width: min(100%, 440px);
+  min-height: 90px;
+  align-items: end;
+  padding: 0 4px 24px;
+}
+
+.m5-lab-line::before {
+  position: absolute;
+  right: 24px;
+  bottom: 36px;
+  left: 24px;
+  height: 4px;
+  border-radius: 999px;
+  background: #202124;
+  content: "";
+}
+
+.m5-lab-line span {
+  position: relative;
+  z-index: 1;
+  color: #202124;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.m5-lab-line i {
+  position: relative;
+  z-index: 1;
+  align-self: end;
+  justify-self: center;
+  width: 3px;
+  height: 30px;
+  background: #202124;
+}
+
+.m5-lab-line i.is-point::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border: 4px solid #1a73e8;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 5px 12px rgba(26, 115, 232, 0.22);
+  content: "";
+  transform: translateX(-50%);
+  animation: m5-lab-pop 720ms ease both;
+}
+
+.m5-fractions-lab .m2-topicb-card-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.m5-fractions-lab .m2-topicb-card-grid article {
+  gap: 6px;
+  min-height: 112px;
+  border-color: #bfd1ea;
+  border-left: 4px solid #1a73e8;
+  background: #ffffff;
+}
+
+.m5-fractions-lab .m2-topicb-card-grid article:nth-child(4n + 2) {
+  border-left-color: #34a853;
+}
+
+.m5-fractions-lab .m2-topicb-card-grid article:nth-child(4n + 3) {
+  border-left-color: #fbbc04;
+}
+
+.m5-fractions-lab .m2-topicb-card-grid article:nth-child(4n) {
+  border-left-color: #ea4335;
+}
+
+.m5-fractions-lab .m2-topicb-card-grid strong {
+  color: #174ea6;
+  font-size: 18px;
+  font-weight: 760;
+}
+
+.m5-fractions-lab .m2-topicb-card-grid span {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 520;
+  line-height: 1.35;
+}
+
+.m5-fractions-lab .m2-topicb-card-grid b {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.m5-fractions-lab .m2-topicb-note-card {
+  grid-column: 1 / -1;
+}
+
+@keyframes m5-lab-pop {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.m6-data-lab {
+  grid-template-columns: minmax(260px, 0.72fr) minmax(280px, 0.82fr) minmax(300px, 1fr);
+  align-items: stretch;
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+.m6-data-lab .m2-l6-lab-copy {
+  align-content: start;
+  min-height: 0;
+  padding: 12px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.m6-data-lab .m2-l6-lab-copy h3 {
+  max-width: 560px;
+  font-size: 26px;
+}
+
+.m6-data-lab .m2-l6-lab-copy p {
+  max-width: 620px;
+  color: #202124;
+  font-size: 17px;
+  font-weight: 520;
+  line-height: 1.46;
+}
+
+.m6-data-lab .m2-topicb-story-card,
+.m6-data-lab .m2-topicb-card-grid,
+.m6-data-lab .m2-topicb-note-card {
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+.m6-data-lab .m2-topicb-story-card {
+  grid-column: 2;
+}
+
+.m6-data-lab .m2-topicb-story-card li {
+  border-color: #d2d9e6;
+  background: #fbfcff;
+}
+
+.m6-data-lab .m2-topicb-story-card span {
+  background: #fce8e6;
+  color: #a50e0e;
+}
+
+.m6-data-lab .m2-topicb-story-card b {
+  color: #a50e0e;
+}
+
+.m6-data-lab .m6-lab-model {
+  display: grid;
+  min-height: 172px;
+  align-items: center;
+  justify-items: center;
+  padding: 18px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: #fbfcff;
+}
+
+.m6-lab-picture,
+.m6-lab-bars,
+.m6-lab-lineplot {
+  display: grid;
+  gap: 10px;
+  width: min(100%, 430px);
+}
+
+.m6-lab-picture > div {
+  display: grid;
+  grid-template-columns: 58px 1fr 36px;
+  gap: 10px;
+  align-items: center;
+}
+
+.m6-lab-picture b,
+.m6-lab-picture em,
+.m6-lab-bars b,
+.m6-lab-bars em,
+.m6-lab-lineplot b {
+  color: #202124;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 720;
+}
+
+.m6-lab-picture span {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  min-height: 34px;
+  padding: 6px;
+  border: 1px solid #bfd1ea;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.m6-lab-picture i {
+  width: 18px;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  background: #ea4335;
+  animation: m6-token-pop 560ms ease both;
+}
+
+.m6-lab-picture > div:nth-child(2) i {
+  background: #1a73e8;
+}
+
+.m6-lab-picture small,
+.m6-lab-bars small,
+.m6-lab-lineplot small {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.m6-lab-bars > div {
+  display: grid;
+  grid-template-columns: 34px 1fr 40px;
+  gap: 10px;
+  align-items: center;
+}
+
+.m6-lab-bars span {
+  height: 24px;
+  overflow: hidden;
+  border: 1px solid #5f6368;
+  border-radius: 6px;
+  background: repeating-linear-gradient(90deg, #ffffff 0 39px, #e8eaed 39px 40px);
+}
+
+.m6-lab-bars i {
+  display: block;
+  width: var(--bar);
+  height: 100%;
+  background: #ea4335;
+  transform-origin: left center;
+  animation: m6-bar-grow 720ms ease both;
+}
+
+.m6-lab-lineplot {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: end;
+  gap: 8px;
+  border-bottom: 3px solid #202124;
+  padding-bottom: 10px;
+}
+
+.m6-lab-lineplot div {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  min-height: 112px;
+  align-items: end;
+}
+
+.m6-lab-lineplot span {
+  color: #a50e0e;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.05;
+  text-align: center;
+  animation: m6-token-pop 560ms ease both;
+}
+
+.m6-lab-lineplot small {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
+.m6-data-lab .m2-topicb-card-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.m6-data-lab .m2-topicb-card-grid article {
+  gap: 6px;
+  min-height: 112px;
+  border-color: #d2d9e6;
+  border-left: 4px solid #ea4335;
+  background: #ffffff;
+}
+
+.m6-data-lab .m2-topicb-card-grid article:nth-child(4n + 2) {
+  border-left-color: #1a73e8;
+}
+
+.m6-data-lab .m2-topicb-card-grid article:nth-child(4n + 3) {
+  border-left-color: #34a853;
+}
+
+.m6-data-lab .m2-topicb-card-grid article:nth-child(4n) {
+  border-left-color: #fbbc04;
+}
+
+.m6-data-lab .m2-topicb-card-grid strong {
+  color: #a50e0e;
+  font-size: 18px;
+  font-weight: 760;
+}
+
+.m6-data-lab .m2-topicb-card-grid span {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 520;
+  line-height: 1.35;
+}
+
+.m6-data-lab .m2-topicb-card-grid b {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.m6-data-lab .m2-topicb-note-card {
+  grid-column: 1 / -1;
+}
+
+@keyframes m6-token-pop {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.86);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes m6-bar-grow {
+  from {
+    transform: scaleX(0.08);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.m7-shapes-lab {
+  grid-template-columns: minmax(260px, 0.9fr) minmax(260px, 0.75fr) minmax(360px, 1.1fr);
+  border-color: #aecbfa;
+  background: #ffffff;
+}
+
+.m7-shapes-lab .m2-l6-lab-copy h3 {
+  max-width: 620px;
+  font-size: 26px;
+}
+
+.m7-shapes-lab .m2-l6-lab-copy p {
+  max-width: 640px;
+  color: #202124;
+  font-size: 17px;
+  font-weight: 520;
+  line-height: 1.46;
+}
+
+.m7-shapes-lab .m2-topicb-story-card,
+.m7-shapes-lab .m2-topicb-card-grid,
+.m7-shapes-lab .m2-topicb-note-card {
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+.m7-shapes-lab .m2-topicb-story-card {
+  grid-column: 2;
+}
+
+.m7-shapes-lab .m2-topicb-story-card li {
+  border-color: #d2d9e6;
+  background: #fbfcff;
+}
+
+.m7-shapes-lab .m2-topicb-story-card span {
+  background: #e6f4ea;
+  color: #137333;
+}
+
+.m7-shapes-lab .m2-topicb-story-card b {
+  color: #137333;
+}
+
+.m7-lab-model {
+  display: grid;
+  min-height: 184px;
+  align-items: center;
+  justify-items: center;
+  padding: 18px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: #fbfcff;
+}
+
+.m7-lab-rdw,
+.m7-lab-polygons,
+.m7-lab-perimeter,
+.m7-lab-rectangles,
+.m7-lab-robot,
+.m7-lab-review {
+  position: relative;
+  display: grid;
+  width: min(100%, 430px);
+  min-height: 150px;
+  color: #202124;
+}
+
+.m7-lab-rdw {
+  grid-template-columns: 1fr 1fr 0.8fr;
+  align-content: center;
+  gap: 8px;
+}
+
+.m7-lab-rdw span,
+.m7-lab-rdw strong {
+  display: grid;
+  min-height: 54px;
+  place-items: center;
+  border: 2px solid #1a73e8;
+  background: #ffffff;
+  color: #174ea6;
+  font-size: 16px;
+  font-weight: 760;
+  animation: m7-model-pop 560ms ease both;
+}
+
+.m7-lab-rdw strong {
+  border-style: dashed;
+  color: #a50e0e;
+}
+
+.m7-lab-rdw b,
+.m7-lab-polygons b,
+.m7-lab-perimeter b,
+.m7-lab-rectangles b,
+.m7-lab-robot b,
+.m7-lab-review b {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: 10px;
+  color: #202124;
+  font-size: 15px;
+  font-weight: 740;
+  text-align: center;
+}
+
+.m7-lab-polygons {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-content: center;
+  gap: 12px;
+}
+
+.m7-lab-polygons span {
+  display: grid;
+  min-height: 76px;
+  place-items: center;
+  border: 2px solid #1a73e8;
+  background: #ffffff;
+  color: #174ea6;
+  font-size: 15px;
+  font-weight: 760;
+  text-align: center;
+  animation: m7-model-pop 560ms ease both;
+}
+
+.m7-lab-polygons .is-pentagon {
+  clip-path: polygon(50% 0, 96% 34%, 78% 100%, 22% 100%, 4% 34%);
+  padding-top: 18px;
+  border: 0;
+  background: #e8f0fe;
+}
+
+.m7-lab-polygons .is-tangram {
+  clip-path: polygon(0 0, 70% 0, 70% 38%, 100% 38%, 100% 100%, 0 100%);
+  border: 0;
+  background: #e6f4ea;
+  color: #137333;
+}
+
+.m7-lab-perimeter {
+  width: min(100%, 340px);
+  min-height: 164px;
+  border: 4px solid #34a853;
+  border-radius: 8px;
+  background: #ffffff;
+  animation: m7-trace-boundary 1500ms ease-in-out both;
+}
+
+.m7-lab-perimeter span {
+  position: absolute;
+  display: inline-grid;
+  min-width: 54px;
+  min-height: 30px;
+  place-items: center;
+  border: 1px solid #d2d9e6;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #202124;
+  font-size: 15px;
+  font-weight: 760;
+}
+
+.m7-lab-perimeter .is-top {
+  top: -18px;
+  left: calc(50% - 27px);
+}
+
+.m7-lab-perimeter .is-right {
+  top: calc(50% - 15px);
+  right: -34px;
+}
+
+.m7-lab-perimeter .is-bottom {
+  bottom: -18px;
+  left: calc(50% - 27px);
+}
+
+.m7-lab-perimeter .is-left {
+  top: calc(50% - 15px);
+  left: -34px;
+}
+
+.m7-lab-perimeter b {
+  align-self: end;
+  margin-bottom: 12px;
+}
+
+.m7-lab-rectangles {
+  grid-template-columns: repeat(4, minmax(38px, 1fr));
+  gap: 4px;
+  align-content: center;
+  width: min(100%, 340px);
+}
+
+.m7-lab-rectangles span {
+  min-height: 38px;
+  border: 1px solid #34a853;
+  background: #e6f4ea;
+  animation: m7-tile-fill 640ms ease both;
+}
+
+.m7-lab-rectangles span:nth-child(3n) {
+  background: #e8f0fe;
+}
+
+.m7-lab-robot {
+  grid-template-columns: repeat(4, minmax(42px, 1fr));
+  grid-auto-rows: 42px;
+  gap: 6px;
+  align-content: center;
+  width: min(100%, 320px);
+}
+
+.m7-lab-robot span {
+  display: grid;
+  place-items: center;
+  border: 2px solid #1a73e8;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #174ea6;
+  font-size: 14px;
+  font-weight: 760;
+  text-align: center;
+  animation: m7-model-pop 560ms ease both;
+}
+
+.m7-lab-robot .is-head {
+  grid-column: 2 / 4;
+}
+
+.m7-lab-robot .is-body {
+  grid-column: 2 / 4;
+  grid-row: span 2;
+  border-color: #34a853;
+  color: #137333;
+}
+
+.m7-lab-robot .is-arm:first-of-type {
+  grid-column: 1;
+}
+
+.m7-lab-robot .is-leg {
+  border-color: #fbbc04;
+  color: #b06000;
+}
+
+.m7-lab-review {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  align-content: center;
+  width: min(100%, 360px);
+}
+
+.m7-lab-review span {
+  display: grid;
+  min-height: 84px;
+  place-items: center;
+  border: 2px solid #d2d9e6;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #202124;
+  font-size: 15px;
+  font-weight: 760;
+  animation: m7-model-pop 560ms ease both;
+}
+
+.m7-lab-review .is-half {
+  background:
+    linear-gradient(90deg, #e6f4ea 0 50%, #ffffff 50% 100%);
+}
+
+.m7-lab-review .is-half::after {
+  content: "1/2";
+}
+
+.m7-shapes-lab .m2-topicb-card-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.m7-shapes-lab .m2-topicb-card-grid article {
+  gap: 6px;
+  min-height: 112px;
+  border-color: #d2d9e6;
+  border-left: 4px solid #34a853;
+  background: #ffffff;
+}
+
+.m7-shapes-lab .m2-topicb-card-grid article:nth-child(4n + 2) {
+  border-left-color: #1a73e8;
+}
+
+.m7-shapes-lab .m2-topicb-card-grid article:nth-child(4n + 3) {
+  border-left-color: #fbbc04;
+}
+
+.m7-shapes-lab .m2-topicb-card-grid article:nth-child(4n) {
+  border-left-color: #ea4335;
+}
+
+.m7-shapes-lab .m2-topicb-card-grid strong {
+  color: #137333;
+  font-size: 18px;
+  font-weight: 760;
+}
+
+.m7-shapes-lab .m2-topicb-card-grid span {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 520;
+  line-height: 1.35;
+}
+
+.m7-shapes-lab .m2-topicb-card-grid b {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.m7-shapes-lab .m2-topicb-note-card {
+  grid-column: 1 / -1;
+}
+
+@keyframes m7-model-pop {
+  from {
+    transform: translateY(8px) scale(0.92);
+  }
+  to {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes m7-tile-fill {
+  from {
+    transform: scale(0.82);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes m7-trace-boundary {
+  0% {
+    border-color: #c7d2e3;
+  }
+  45% {
+    border-top-color: #ea4335;
+    border-right-color: #fbbc04;
+  }
+  70% {
+    border-bottom-color: #1a73e8;
+    border-left-color: #34a853;
+  }
+  100% {
+    border-color: #34a853;
+  }
 }
 
 .m2-l6-lab-copy,
@@ -1412,21 +3027,80 @@
 }
 
 @media (max-width: 1200px) {
-  .m2-l6-kilogram-lab {
+  .m2-l6-kilogram-lab,
+  .m2-topicb-lab {
     grid-template-columns: 1fr 1fr;
   }
 
   .m2-l6-decompose-card,
-  .m2-l6-place-card {
+  .m2-l6-place-card,
+  .m2-topicb-card-grid,
+  .m2-topicb-note-card {
     grid-column: 1 / -1;
+  }
+
+  .m3-facts-lab .m2-topicb-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .m4-area-lab .m2-topicb-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .m5-fractions-lab .m2-topicb-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .m6-data-lab .m2-topicb-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .m7-shapes-lab .m2-topicb-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 760px) {
   .m2-l6-kilogram-lab,
+  .m2-topicb-lab,
   .m2-l6-decompose-card,
-  .m2-l6-place-card {
+  .m2-l6-place-card,
+  .m2-topicb-card-grid,
+  .m2-topicb-note-card {
     grid-template-columns: 1fr;
+  }
+
+  .m3-facts-lab .m2-topicb-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .m4-area-lab .m2-topicb-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .m5-fractions-lab .m2-topicb-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .m5-lab-equivalent,
+  .m5-lab-compare {
+    grid-template-columns: 1fr;
+  }
+
+  .m6-data-lab .m2-topicb-card-grid,
+  .m6-lab-lineplot {
+    grid-template-columns: 1fr;
+  }
+
+  .m7-shapes-lab .m2-topicb-card-grid,
+  .m7-lab-rdw,
+  .m7-lab-polygons,
+  .m7-lab-review {
+    grid-template-columns: 1fr;
+  }
+
+  .m7-lab-perimeter {
+    width: min(100% - 40px, 300px);
   }
 }
 
@@ -1454,6 +3128,159 @@
   border-color: #d2d9e6;
   background: #ffffff;
   box-shadow: none;
+}
+
+.lesson-m3 .problem-solution-card {
+  gap: 14px;
+  width: min(100%, 1180px);
+  padding: 16px 18px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+.lesson-m3 .problem-solution-card.is-blank-mode {
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+.lesson-m3 .problem-number {
+  min-height: 28px;
+  background: #e8f0fe;
+  color: #174ea6;
+  font-size: 13px;
+  font-weight: 740;
+}
+
+.lesson-m3 .problem-solution-head h3 {
+  max-width: 1160px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.lesson-m3 .problem-solution-intro {
+  max-width: 980px;
+  color: #202124;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.42;
+}
+
+.lesson-m3 .source-backed-reasoning h4,
+.lesson-m3 .answer-meaning h4 {
+  color: #202124;
+  font-size: 18px;
+  font-weight: 720;
+}
+
+.lesson-m3 .source-backed-reasoning li,
+.lesson-m3 .answer-meaning p {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 560;
+  line-height: 1.35;
+}
+
+.lesson-m4 .problem-solution-card {
+  gap: 14px;
+  width: min(100%, 1180px);
+  padding: 16px 18px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+.lesson-m4 .problem-solution-card.is-blank-mode {
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+.lesson-m4 .problem-number {
+  min-height: 28px;
+  background: #e6f4ea;
+  color: #188038;
+  font-size: 13px;
+  font-weight: 740;
+}
+
+.lesson-m4 .problem-solution-head h3 {
+  max-width: 1160px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.lesson-m4 .problem-solution-intro {
+  max-width: 980px;
+  color: #202124;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.42;
+}
+
+.lesson-m4 .problem-source-prompt,
+.lesson-m4 .problem-solution-card p,
+.lesson-m4 .problem-solution-card small,
+.lesson-m4 .problem-solution-card li {
+  color: #202124;
+}
+
+.lesson-m4 .source-backed-reasoning h4,
+.lesson-m4 .answer-meaning h4 {
+  color: #202124;
+  font-size: 18px;
+  font-weight: 720;
+}
+
+.lesson-m4 .source-backed-reasoning li,
+.lesson-m4 .answer-meaning p {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 560;
+  line-height: 1.35;
+}
+
+.lesson-m2-l7 .problem-solution-card,
+.lesson-m2-l8 .problem-solution-card,
+.lesson-m2-l9 .problem-solution-card,
+.lesson-m2-l10 .problem-solution-card,
+.lesson-m2-l11 .problem-solution-card,
+.lesson-m2-l12 .problem-solution-card,
+.lesson-m2-l13 .problem-solution-card,
+.lesson-m2-l14 .problem-solution-card,
+.lesson-m2-l15 .problem-solution-card,
+.lesson-m2-l16 .problem-solution-card,
+.lesson-m2-l17 .problem-solution-card,
+.lesson-m2-l18 .problem-solution-card,
+.lesson-m2-l19 .problem-solution-card,
+.lesson-m2-l20 .problem-solution-card,
+.lesson-m2-l21 .problem-solution-card {
+  gap: 14px;
+  width: min(100%, 1180px);
+  padding: 16px 18px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+.lesson-m2-l7 .problem-solution-card.is-blank-mode,
+.lesson-m2-l8 .problem-solution-card.is-blank-mode,
+.lesson-m2-l9 .problem-solution-card.is-blank-mode,
+.lesson-m2-l10 .problem-solution-card.is-blank-mode,
+.lesson-m2-l11 .problem-solution-card.is-blank-mode,
+.lesson-m2-l12 .problem-solution-card.is-blank-mode,
+.lesson-m2-l13 .problem-solution-card.is-blank-mode,
+.lesson-m2-l14 .problem-solution-card.is-blank-mode,
+.lesson-m2-l15 .problem-solution-card.is-blank-mode,
+.lesson-m2-l16 .problem-solution-card.is-blank-mode,
+.lesson-m2-l17 .problem-solution-card.is-blank-mode,
+.lesson-m2-l18 .problem-solution-card.is-blank-mode,
+.lesson-m2-l19 .problem-solution-card.is-blank-mode,
+.lesson-m2-l20 .problem-solution-card.is-blank-mode,
+.lesson-m2-l21 .problem-solution-card.is-blank-mode {
+  border-color: #d2d9e6;
+  background: #ffffff;
 }
 
 .lesson-m2-l6 .problem-solution-card.is-blank-mode {
@@ -2197,6 +4024,50 @@ summary.source-pages-heading {
   font-weight: 700;
 }
 
+.lesson-m5 :is(.m5-concrete-model > p, .m5-partition-card-grid small, .m5-sheet-row small, .m5-wood-strip-model small, .m5-partition-steps li, .m5-paper-guide b, .m5-red-strip-ghost, .m5-red-strip span, .m5-strip-ruler span, .m5-wood-strip > span, .clock-source-card small) {
+  color: #202124;
+  font-size: 13px;
+  font-weight: 620;
+  line-height: 1.35;
+}
+
+.lesson-m5 :is(.m5-concrete-model > strong, .m5-paper-partition > strong, .clock-source-card span) {
+  color: #174ea6;
+  font-size: 16px;
+  font-weight: 760;
+}
+
+.lesson-m5 :is(.m5-beaker-row b, .m5-sheet-row b, .m5-partition-card-grid b, .m5-cheese-stack em, .m5-wood-strip b) {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 720;
+}
+
+.lesson-m5 .m5-strip-ruler span.is-major {
+  font-size: 14px;
+  font-weight: 760;
+}
+
+.lesson-m5 .m5-cheese-stack span {
+  color: #202124;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.lesson-m5 .m5-cheese-stack span.is-shaded {
+  background: #8ab4f8;
+}
+
+.lesson-m5 .m5-beaker-water {
+  background: linear-gradient(180deg, rgba(66, 133, 244, 0.52), rgba(66, 133, 244, 0.78));
+}
+
+.lesson-m5 .m5-partition-chips span {
+  color: #0d652d;
+  font-size: 13px;
+  font-weight: 720;
+}
+
 @keyframes m5-guide-draw {
   from {
     opacity: 0;
@@ -2636,6 +4507,45 @@ summary.source-pages-heading {
   width: 1px;
   height: 10px;
   background: #3c4043;
+}
+
+.lesson-m6 :is(.m6-display-card > strong, .m6-data-table-card th, .m6-mini-data-table th, .m6-source-data-table caption, .m6-source-data b) {
+  color: #a50e0e;
+  font-size: 16px;
+  font-weight: 760;
+}
+
+.lesson-m6 :is(.m6-display-card small, .m6-tally-table em, .m6-picture-row b, .m6-picture-row em, .m6-vertical-bar b, .m6-bar-row b, .m6-bar-row em, .m6-ruler span, .m6-line-stack b, .m6-source-data span, .m6-data-table-card td, .m6-mini-data-table td, .m6-source-data-table td) {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.lesson-m6 .m6-vertical-bar span {
+  color: #202124;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.lesson-m6 .m6-line-stack span {
+  color: #a50e0e;
+  font-size: 18px;
+  font-weight: 800;
+  opacity: 1 !important;
+}
+
+.lesson-m6 .m6-bar-row i {
+  background: #ea4335;
+}
+
+.lesson-m6 .m6-picture-row > span,
+.lesson-m6 .m6-source-data {
+  background: #ffffff;
+}
+
+.lesson-m6 :is(.m6-lab-picture i, .m6-lab-bars i, .m6-lab-lineplot span, .m6-mini-data-table tbody tr, .m6-data-table-card tbody tr, .m6-source-data-table td, .m6-picture-row i) {
+  opacity: 1 !important;
 }
 
 .problem-solution-card,
@@ -5623,4 +7533,101 @@ summary.source-pages-heading {
     animation-iteration-count: 1;
     transition-duration: 1ms;
   }
+}
+
+.lesson-m4 .lesson-header-main .lead,
+.lesson-m4 .lesson-header-actions .source-card strong,
+.lesson-m4 .lesson-header-actions .source-card span,
+.lesson-m4 .lesson-header-actions .source-card small,
+.lesson-m4 .problem-source-prompt,
+.lesson-m4 .problem-centered-source-concepts p,
+.lesson-m4 .problem-centered-source-concepts li,
+.lesson-m4 .concept-source-checks li,
+.lesson-m4 .problem-solution-card p,
+.lesson-m4 .problem-solution-card small,
+.lesson-m4 .problem-solution-card li {
+  color: #202124 !important;
+}
+
+.lesson-m5 .lesson-header-main .lead,
+.lesson-m5 .lesson-header-actions .source-card strong,
+.lesson-m5 .lesson-header-actions .source-card span,
+.lesson-m5 .lesson-header-actions .source-card small,
+.lesson-m5 .problem-source-prompt,
+.lesson-m5 .problem-centered-source-concepts p,
+.lesson-m5 .problem-centered-source-concepts li,
+.lesson-m5 .concept-source-checks li,
+.lesson-m5 .problem-solution-card p,
+.lesson-m5 .problem-solution-card small,
+.lesson-m5 .problem-solution-card li,
+.lesson-m5 .answer-meaning p,
+.lesson-m5 .source-backed-reasoning li,
+.lesson-m5 .blank-source-model p,
+.lesson-m5 .blank-source-model small,
+.lesson-m5 .blank-source-model em,
+.lesson-m5 .blank-fraction-strip-source p,
+.lesson-m5 .blank-fraction-strip-source small,
+.lesson-m5 .blank-number-line-source p,
+.lesson-m5 .blank-number-line-source small,
+.lesson-m5 app-problem-visual-workspace p,
+.lesson-m5 app-problem-visual-workspace small,
+.lesson-m5 app-problem-visual-workspace footer {
+  color: #202124 !important;
+}
+
+.lesson-m6 .lesson-header-main .lead,
+.lesson-m6 .lesson-header-actions .source-card strong,
+.lesson-m6 .lesson-header-actions .source-card span,
+.lesson-m6 .lesson-header-actions .source-card small,
+.lesson-m6 .problem-source-prompt,
+.lesson-m6 .problem-centered-source-concepts p,
+.lesson-m6 .problem-centered-source-concepts li,
+.lesson-m6 .concept-source-checks li,
+.lesson-m6 .problem-solution-card p,
+.lesson-m6 .problem-solution-card small,
+.lesson-m6 .problem-solution-card li,
+.lesson-m6 .answer-meaning p,
+.lesson-m6 .source-backed-reasoning li,
+.lesson-m6 .blank-source-model p,
+.lesson-m6 .blank-source-model small,
+.lesson-m6 .blank-source-model em {
+  color: #202124 !important;
+}
+
+.lesson-m7 .lesson-header-main .lead,
+.lesson-m7 .lesson-header-actions .source-card strong,
+.lesson-m7 .lesson-header-actions .source-card span,
+.lesson-m7 .lesson-header-actions .source-card small,
+.lesson-m7 .lesson-header-actions .source-card,
+.lesson-m7 .problem-source-prompt,
+.lesson-m7 .problem-centered-source-concepts p,
+.lesson-m7 .problem-centered-source-concepts li,
+.lesson-m7 .concept-source-checks li,
+.lesson-m7 .problem-solution-card p,
+.lesson-m7 .problem-solution-card small,
+.lesson-m7 .problem-solution-card li,
+.lesson-m7 .answer-meaning p,
+.lesson-m7 .source-backed-reasoning li,
+.lesson-m7 .blank-source-model p,
+.lesson-m7 .blank-source-model small,
+.lesson-m7 .blank-source-model em,
+.lesson-m7 app-problem-visual-workspace p,
+.lesson-m7 app-problem-visual-workspace small,
+.lesson-m7 app-problem-visual-workspace footer {
+  color: #202124 !important;
+}
+
+.lesson-m7 :is(.visual-section, .visual-data-row, .visual-note, .visual-array-caption, .visual-evidence-list span, .visual-evidence-list small, .blank-source-model span, .blank-source-model b, .blank-source-model i, app-problem-visual-workspace span, app-problem-visual-workspace b, app-problem-visual-workspace em, app-problem-visual-workspace i) {
+  color: #202124 !important;
+  opacity: 1 !important;
+}
+
+.lesson-m7 :is(.visual-section, .visual-data-row, .visual-note, .visual-array-caption, .visual-evidence-list span, app-problem-visual-workspace span, app-problem-visual-workspace b, app-problem-visual-workspace em, app-problem-visual-workspace i) {
+  animation: none !important;
+  transition-duration: 1ms !important;
+}
+
+.lesson-m7 :is(.visual-array-caption, .visual-note, app-problem-visual-workspace small, app-problem-visual-workspace footer) {
+  font-size: 13px !important;
+  line-height: 1.35 !important;
 }

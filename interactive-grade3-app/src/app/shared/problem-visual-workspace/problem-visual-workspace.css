@@ -1510,6 +1510,1022 @@
   font-weight: 600;
 }
 
+:host-context(.lesson-m3) :is(.problem-visual-workspace, .problem-visual-workspace *, .visual-section, .visual-card-grid, .visual-sub-card, .visual-array, .visual-equations, .visual-related-facts, .visual-solution-parts, .visual-tape, .visual-source-directions li) {
+  opacity: 1 !important;
+}
+
+:host-context(.lesson-m3) .problem-visual-workspace {
+  gap: 12px;
+  padding: 12px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+:host-context(.lesson-m3) .visual-header {
+  display: none;
+}
+
+:host-context(.lesson-m3) .visual-section {
+  gap: 10px;
+}
+
+:host-context(.lesson-m3) .visual-section > strong {
+  color: #202124;
+  font-size: 17px;
+  font-weight: 720;
+}
+
+:host-context(.lesson-m3) .visual-card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+:host-context(.lesson-m3) .visual-sub-card {
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+:host-context(.lesson-m3) .visual-sub-card > strong {
+  background: #e8f0fe;
+  color: #174ea6;
+  font-size: 14px;
+  font-weight: 720;
+}
+
+:host-context(.lesson-m3) .visual-array {
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m3) .visual-array span {
+  color: #202124;
+}
+
+:host-context(.lesson-m3) .visual-array-caption,
+:host-context(.lesson-m3) .visual-tape small,
+:host-context(.lesson-m3) .visual-note,
+:host-context(.lesson-m3) .problem-visual-workspace footer,
+:host-context(.lesson-m3) .visual-source-directions span {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 540;
+}
+
+:host-context(.lesson-m3) .visual-equations {
+  width: min(100%, 980px);
+}
+
+:host-context(.lesson-m3) .visual-equations span,
+:host-context(.lesson-m3) .visual-solution-parts strong {
+  border-color: #d2d9e6;
+  background: #ffffff;
+  color: #202124;
+  font-size: 15px;
+  font-weight: 650;
+}
+
+:host-context(.lesson-m3) .visual-related-facts {
+  width: min(100%, 920px);
+  border-color: #d2d9e6;
+}
+
+:host-context(.lesson-m3) .visual-related-facts span {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 650;
+}
+
+:host-context(.lesson-m3) .visual-related-facts span:first-child {
+  background: #f8fbff;
+}
+
+:host-context(.lesson-m3) .visual-solution-parts {
+  width: min(100%, 920px);
+}
+
+:host-context(.lesson-m3) .visual-solution-parts article {
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m3) .visual-solution-parts span,
+:host-context(.lesson-m3) .visual-solution-parts p {
+  color: #202124;
+  font-size: 14px;
+}
+
+:host-context(.lesson-m3) .visual-tape {
+  width: min(100%, 920px);
+}
+
+:host-context(.lesson-m3) .visual-tape-whole-label {
+  background: #fffdf3;
+  color: #202124;
+}
+
+:host-context(.lesson-m3) .visual-tape span {
+  color: #202124;
+}
+
+:host-context(.lesson-m3) .visual-tape span em,
+:host-context(.lesson-m3) .visual-tape .visual-tape-top-parts em {
+  color: #202124;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+:host-context(.lesson-m3) .visual-source-directions {
+  width: min(100%, 980px);
+  gap: 7px;
+}
+
+:host-context(.lesson-m3) .visual-source-directions li {
+  grid-template-columns: 28px minmax(130px, 190px) minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 8px 10px;
+  border: 1px solid #d2d9e6;
+  border-left: 4px solid #4285f4;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m3) .problem-visual-workspace.is-solved .visual-source-directions li::before {
+  border-color: #b7dfc2;
+  background: #e6f4ea;
+  color: #188038;
+  content: "✓";
+  font-size: 15px;
+}
+
+:host-context(.lesson-m3) .visual-source-directions b {
+  color: #174ea6;
+  font-size: 14px;
+}
+
+:host-context(.lesson-m4) :is(.problem-visual-workspace, .problem-visual-workspace *, .visual-section, .visual-card-grid, .visual-sub-card, .visual-array, .visual-equations, .visual-related-facts, .visual-solution-parts, .visual-tape, .visual-floor-plan, .visual-geometry-diagram, .visual-source-directions li) {
+  opacity: 1 !important;
+}
+
+:host-context(.lesson-m4) .problem-visual-workspace {
+  gap: 12px;
+  padding: 12px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+:host-context(.lesson-m4) .visual-header {
+  display: none;
+}
+
+:host-context(.lesson-m4) .visual-section {
+  gap: 10px;
+}
+
+:host-context(.lesson-m4) .visual-section > strong {
+  color: #202124;
+  font-size: 17px;
+  font-weight: 720;
+}
+
+:host-context(.lesson-m4) .visual-card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+:host-context(.lesson-m4) .visual-sub-card {
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+:host-context(.lesson-m4) .visual-sub-card > strong {
+  background: #e6f4ea;
+  color: #188038;
+  font-size: 14px;
+  font-weight: 720;
+}
+
+:host-context(.lesson-m4) .visual-array {
+  border-color: #d2d9e6;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m4) .visual-array span {
+  color: #202124;
+}
+
+:host-context(.lesson-m4) .visual-array.is-square span {
+  border-color: #81c995;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.74), rgba(230, 244, 234, 0.45)),
+    #e6f4ea;
+}
+
+:host-context(.lesson-m4) .problem-visual-workspace:not(.is-solved) .visual-array.is-square span {
+  border-color: #8aa0b6;
+  border-style: dashed;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m4) .visual-array-caption,
+:host-context(.lesson-m4) .visual-note,
+:host-context(.lesson-m4) .problem-visual-workspace footer,
+:host-context(.lesson-m4) .visual-source-directions span,
+:host-context(.lesson-m4) .visual-data-chart small {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 540;
+}
+
+:host-context(.lesson-m4) .visual-equations {
+  width: min(100%, 980px);
+}
+
+:host-context(.lesson-m4) .visual-equations span,
+:host-context(.lesson-m4) .visual-solution-parts strong {
+  border-color: #d2d9e6;
+  background: #ffffff;
+  color: #202124;
+  font-size: 15px;
+  font-weight: 650;
+}
+
+:host-context(.lesson-m4) .visual-data-table {
+  width: min(100%, 980px);
+}
+
+:host-context(.lesson-m4) .visual-data-row {
+  background: #ffffff;
+}
+
+:host-context(.lesson-m4) .visual-data-row span {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 560;
+}
+
+:host-context(.lesson-m4) .visual-data-row.is-head span {
+  color: #188038;
+  font-weight: 760;
+}
+
+:host-context(.lesson-m4) .visual-floor-plan,
+:host-context(.lesson-m4) .visual-geometry-diagram {
+  border-color: #3c4043;
+  background:
+    linear-gradient(90deg, rgba(52, 168, 83, 0.08) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(52, 168, 83, 0.08) 1px, transparent 1px),
+    #ffffff;
+}
+
+:host-context(.lesson-m4) .visual-floor-room,
+:host-context(.lesson-m4) .visual-geometry-shape {
+  border-color: #188038;
+  background: #e6f4ea;
+  color: #202124;
+}
+
+:host-context(.lesson-m4) .visual-floor-room b,
+:host-context(.lesson-m4) .visual-geometry-shape b {
+  color: #202124;
+  font-size: clamp(12px, 1.3vw, 15px);
+}
+
+:host-context(.lesson-m4) .visual-floor-room em,
+:host-context(.lesson-m4) .visual-floor-room small,
+:host-context(.lesson-m4) .visual-geometry-shape em,
+:host-context(.lesson-m4) .visual-geometry-shape small {
+  color: #202124;
+  font-size: clamp(11px, 1.1vw, 13px);
+  font-weight: 650;
+}
+
+:host-context(.lesson-m4) .visual-tape span em,
+:host-context(.lesson-m4) .visual-tape .visual-tape-top-parts em {
+  color: #202124;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+:host-context(.lesson-m4) .visual-source-directions {
+  width: min(100%, 980px);
+  gap: 7px;
+}
+
+:host-context(.lesson-m4) .visual-source-directions li {
+  grid-template-columns: 28px minmax(130px, 190px) minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 8px 10px;
+  border: 1px solid #d2d9e6;
+  border-left: 4px solid #34a853;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m4) .problem-visual-workspace.is-solved .visual-source-directions li::before {
+  border-color: #b7dfc2;
+  background: #e6f4ea;
+  color: #188038;
+  content: "✓";
+  font-size: 15px;
+}
+
+:host-context(.lesson-m4) .visual-source-directions b {
+  color: #188038;
+  font-size: 14px;
+}
+
+:host-context(.lesson-m2-l7) .problem-visual-workspace,
+:host-context(.lesson-m2-l8) .problem-visual-workspace,
+:host-context(.lesson-m2-l9) .problem-visual-workspace {
+  padding: 12px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+:host-context(.lesson-m2-l7) .visual-header,
+:host-context(.lesson-m2-l8) .visual-header,
+:host-context(.lesson-m2-l9) .visual-header {
+  display: none;
+}
+
+:host-context(.lesson-m2-l7) .visual-section,
+:host-context(.lesson-m2-l8) .visual-section,
+:host-context(.lesson-m2-l9) .visual-section {
+  gap: 10px;
+}
+
+:host-context(.lesson-m2-l7) .visual-section > strong,
+:host-context(.lesson-m2-l8) .visual-section > strong,
+:host-context(.lesson-m2-l9) .visual-section > strong {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 720;
+}
+
+:host-context(.lesson-m2-l7) .visual-measurement-lab,
+:host-context(.lesson-m2-l8) .visual-measurement-lab,
+:host-context(.lesson-m2-l9) .visual-measurement-lab {
+  display: grid;
+  width: min(100%, 940px);
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #c7d2e3;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #202124;
+}
+
+:host-context(.lesson-m2-l7) .kg-place-value-stage,
+:host-context(.lesson-m2-l8) .kg-place-value-stage,
+:host-context(.lesson-m2-l9) .kg-place-value-stage,
+:host-context(.lesson-m2-l7) .kg-decompose-stage,
+:host-context(.lesson-m2-l8) .kg-decompose-stage,
+:host-context(.lesson-m2-l9) .kg-decompose-stage {
+  min-height: 0;
+  padding: 14px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: #fbfcff;
+}
+
+:host-context(.lesson-m2-l7) .kg-place-value-stage,
+:host-context(.lesson-m2-l8) .kg-place-value-stage,
+:host-context(.lesson-m2-l9) .kg-place-value-stage {
+  display: grid;
+  gap: 10px;
+  align-content: center;
+}
+
+:host-context(.lesson-m2-l7) .kg-place-row,
+:host-context(.lesson-m2-l8) .kg-place-row,
+:host-context(.lesson-m2-l9) .kg-place-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.34fr) minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #c7d2e3;
+  border-radius: 8px;
+  background: #ffffff;
+  animation: kgPartPop 520ms ease-out both;
+}
+
+:host-context(.lesson-m2-l7) .kg-place-row strong,
+:host-context(.lesson-m2-l8) .kg-place-row strong,
+:host-context(.lesson-m2-l9) .kg-place-row strong {
+  color: #174ea6;
+  font-size: 16px;
+}
+
+:host-context(.lesson-m2-l7) .kg-place-row span,
+:host-context(.lesson-m2-l8) .kg-place-row span,
+:host-context(.lesson-m2-l9) .kg-place-row span {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 620;
+}
+
+:host-context(.lesson-m2-l7) .kg-place-value-stage p,
+:host-context(.lesson-m2-l8) .kg-place-value-stage p,
+:host-context(.lesson-m2-l9) .kg-place-value-stage p,
+:host-context(.lesson-m2-l7) .kg-decompose-stage p,
+:host-context(.lesson-m2-l8) .kg-decompose-stage p,
+:host-context(.lesson-m2-l9) .kg-decompose-stage p {
+  justify-self: center;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  padding: 8px 12px;
+  border: 1px solid #bfd1ea;
+  border-radius: 8px;
+  background: #f8fbff;
+  color: #174ea6;
+  font-size: 16px;
+  font-weight: 780;
+}
+
+:host-context(.lesson-m2-l7) .kg-decompose-stage,
+:host-context(.lesson-m2-l8) .kg-decompose-stage,
+:host-context(.lesson-m2-l9) .kg-decompose-stage {
+  display: grid;
+  grid-template-columns: minmax(128px, 0.38fr) minmax(260px, 1fr);
+  align-items: center;
+  gap: 12px;
+}
+
+:host-context(.lesson-m2-l9) .liquid-decompose-stage {
+  background: #f8fbff;
+}
+
+:host-context(.lesson-m2-l7) .kg-whole-bag,
+:host-context(.lesson-m2-l8) .kg-whole-bag,
+:host-context(.lesson-m2-l9) .kg-whole-bag {
+  display: grid;
+  place-items: center;
+  min-height: 112px;
+  padding: 14px;
+  border: 2px solid #fbbc04;
+  border-radius: 18px 18px 28px 28px;
+  background: #fff8dd;
+  color: #202124;
+  text-align: center;
+  animation: kgBagPulse 1600ms ease-in-out infinite alternate;
+}
+
+:host-context(.lesson-m2-l9) .liquid-whole {
+  border-color: #1a73e8;
+  background: #eaf7ff;
+}
+
+:host-context(.lesson-m2-l7) .kg-whole-bag strong,
+:host-context(.lesson-m2-l8) .kg-whole-bag strong,
+:host-context(.lesson-m2-l9) .kg-whole-bag strong {
+  font-size: 24px;
+  line-height: 1.05;
+}
+
+:host-context(.lesson-m2-l7) .kg-whole-bag span,
+:host-context(.lesson-m2-l8) .kg-whole-bag span,
+:host-context(.lesson-m2-l9) .kg-whole-bag span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+:host-context(.lesson-m2-l7) .kg-ten-frame,
+:host-context(.lesson-m2-l8) .kg-ten-frame,
+:host-context(.lesson-m2-l9) .kg-ten-frame {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(48px, 1fr));
+  gap: 6px;
+}
+
+:host-context(.lesson-m2-l7) .kg-ten-frame span,
+:host-context(.lesson-m2-l8) .kg-ten-frame span,
+:host-context(.lesson-m2-l9) .kg-ten-frame span {
+  display: grid;
+  min-height: 46px;
+  place-items: center;
+  border: 1px solid #34a853;
+  border-radius: 8px;
+  background: #e6f4ea;
+  color: #0d652d;
+  font-size: 15px;
+  font-weight: 800;
+  animation: kgPartPop 620ms ease-out both;
+}
+
+:host-context(.lesson-m2-l9) .liquid-ten-frame span {
+  border-color: #8ab4f8;
+  background: #eaf7ff;
+  color: #174ea6;
+}
+
+:host-context(.lesson-m2-l7) .kg-decompose-stage p,
+:host-context(.lesson-m2-l8) .kg-decompose-stage p,
+:host-context(.lesson-m2-l9) .kg-decompose-stage p,
+:host-context(.lesson-m2-l7) .kg-lab-steps,
+:host-context(.lesson-m2-l8) .kg-lab-steps,
+:host-context(.lesson-m2-l9) .kg-lab-steps {
+  grid-column: 1 / -1;
+}
+
+:host-context(.lesson-m2-l7) .kg-lab-steps,
+:host-context(.lesson-m2-l8) .kg-lab-steps,
+:host-context(.lesson-m2-l9) .kg-lab-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+:host-context(.lesson-m2-l7) .kg-lab-steps span,
+:host-context(.lesson-m2-l8) .kg-lab-steps span,
+:host-context(.lesson-m2-l9) .kg-lab-steps span {
+  display: grid;
+  gap: 3px;
+  min-height: 58px;
+  align-content: start;
+  padding: 8px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: #ffffff;
+  animation: kgPartPop 520ms ease-out both;
+}
+
+:host-context(.lesson-m2-l7) .kg-lab-steps b,
+:host-context(.lesson-m2-l8) .kg-lab-steps b,
+:host-context(.lesson-m2-l9) .kg-lab-steps b {
+  color: #174ea6;
+  font-size: 14px;
+  font-weight: 760;
+}
+
+:host-context(.lesson-m2-l7) .kg-lab-steps em,
+:host-context(.lesson-m2-l8) .kg-lab-steps em,
+:host-context(.lesson-m2-l9) .kg-lab-steps em {
+  color: #202124;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 520;
+  line-height: 1.25;
+}
+
+:host-context(.lesson-m2-l7) .visual-measurement-lab small,
+:host-context(.lesson-m2-l8) .visual-measurement-lab small,
+:host-context(.lesson-m2-l9) .visual-measurement-lab small {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 560;
+  line-height: 1.35;
+}
+
+:host-context(.lesson-m2-l7) .visual-data-table,
+:host-context(.lesson-m2-l8) .visual-data-table,
+:host-context(.lesson-m2-l9) .visual-data-table,
+:host-context(.lesson-m2-l7) .visual-equations,
+:host-context(.lesson-m2-l8) .visual-equations,
+:host-context(.lesson-m2-l9) .visual-equations {
+  width: min(100%, 980px);
+}
+
+:host-context(.lesson-m2-l7) .visual-equations span,
+:host-context(.lesson-m2-l8) .visual-equations span,
+:host-context(.lesson-m2-l9) .visual-equations span {
+  border-color: #d2d9e6;
+  background: #ffffff;
+  color: #202124;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+:host-context(.lesson-m2-l10) .problem-visual-workspace,
+:host-context(.lesson-m2-l11) .problem-visual-workspace,
+:host-context(.lesson-m2-l12) .problem-visual-workspace,
+:host-context(.lesson-m2-l13) .problem-visual-workspace,
+:host-context(.lesson-m2-l14) .problem-visual-workspace {
+  padding: 12px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+:host-context(.lesson-m2-l10) .visual-header,
+:host-context(.lesson-m2-l11) .visual-header,
+:host-context(.lesson-m2-l12) .visual-header,
+:host-context(.lesson-m2-l13) .visual-header,
+:host-context(.lesson-m2-l14) .visual-header {
+  display: none;
+}
+
+:host-context(.lesson-m2-l10) .visual-section,
+:host-context(.lesson-m2-l11) .visual-section,
+:host-context(.lesson-m2-l12) .visual-section,
+:host-context(.lesson-m2-l13) .visual-section,
+:host-context(.lesson-m2-l14) .visual-section {
+  gap: 10px;
+}
+
+:host-context(.lesson-m2-l10) .visual-section > strong,
+:host-context(.lesson-m2-l11) .visual-section > strong,
+:host-context(.lesson-m2-l12) .visual-section > strong,
+:host-context(.lesson-m2-l13) .visual-section > strong,
+:host-context(.lesson-m2-l14) .visual-section > strong {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 720;
+}
+
+:host-context(.lesson-m2-l10) .visual-measurement-lab,
+:host-context(.lesson-m2-l11) .visual-measurement-lab,
+:host-context(.lesson-m2-l12) .visual-measurement-lab,
+:host-context(.lesson-m2-l13) .visual-measurement-lab,
+:host-context(.lesson-m2-l14) .visual-measurement-lab {
+  display: grid;
+  width: min(100%, 940px);
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #c7d2e3;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #202124;
+}
+
+:host-context(.lesson-m2-l10) .kg-place-value-stage,
+:host-context(.lesson-m2-l11) .kg-place-value-stage,
+:host-context(.lesson-m2-l12) .kg-place-value-stage,
+:host-context(.lesson-m2-l13) .kg-place-value-stage,
+:host-context(.lesson-m2-l14) .kg-place-value-stage {
+  display: grid;
+  gap: 10px;
+  min-height: 0;
+  padding: 14px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: #fbfcff;
+}
+
+:host-context(.lesson-m2-l10) .kg-place-row,
+:host-context(.lesson-m2-l11) .kg-place-row,
+:host-context(.lesson-m2-l12) .kg-place-row,
+:host-context(.lesson-m2-l13) .kg-place-row,
+:host-context(.lesson-m2-l14) .kg-place-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.34fr) minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #c7d2e3;
+  border-radius: 8px;
+  background: #ffffff;
+  animation: kgPartPop 520ms ease-out both;
+}
+
+:host-context(.lesson-m2-l10) .kg-place-row strong,
+:host-context(.lesson-m2-l11) .kg-place-row strong,
+:host-context(.lesson-m2-l12) .kg-place-row strong,
+:host-context(.lesson-m2-l13) .kg-place-row strong,
+:host-context(.lesson-m2-l14) .kg-place-row strong {
+  color: #174ea6;
+  font-size: 16px;
+}
+
+:host-context(.lesson-m2-l11) .kg-place-row strong {
+  color: #b06000;
+}
+
+:host-context(.lesson-m2-l10) .kg-place-row span,
+:host-context(.lesson-m2-l11) .kg-place-row span,
+:host-context(.lesson-m2-l12) .kg-place-row span,
+:host-context(.lesson-m2-l13) .kg-place-row span,
+:host-context(.lesson-m2-l14) .kg-place-row span {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 620;
+}
+
+:host-context(.lesson-m2-l10) .kg-place-value-stage p,
+:host-context(.lesson-m2-l11) .kg-place-value-stage p,
+:host-context(.lesson-m2-l12) .kg-place-value-stage p,
+:host-context(.lesson-m2-l13) .kg-place-value-stage p,
+:host-context(.lesson-m2-l14) .kg-place-value-stage p {
+  justify-self: center;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  padding: 8px 12px;
+  border: 1px solid #bfd1ea;
+  border-radius: 8px;
+  background: #f8fbff;
+  color: #174ea6;
+  font-size: 16px;
+  font-weight: 780;
+}
+
+:host-context(.lesson-m2-l10) .visual-measurement-lab small,
+:host-context(.lesson-m2-l11) .visual-measurement-lab small,
+:host-context(.lesson-m2-l12) .visual-measurement-lab small,
+:host-context(.lesson-m2-l13) .visual-measurement-lab small,
+:host-context(.lesson-m2-l14) .visual-measurement-lab small {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 560;
+  line-height: 1.35;
+}
+
+:host-context(.lesson-m2-l10) .visual-data-table,
+:host-context(.lesson-m2-l11) .visual-data-table,
+:host-context(.lesson-m2-l12) .visual-data-table,
+:host-context(.lesson-m2-l13) .visual-data-table,
+:host-context(.lesson-m2-l14) .visual-data-table,
+:host-context(.lesson-m2-l10) .visual-equations,
+:host-context(.lesson-m2-l11) .visual-equations,
+:host-context(.lesson-m2-l12) .visual-equations,
+:host-context(.lesson-m2-l13) .visual-equations,
+:host-context(.lesson-m2-l14) .visual-equations {
+  width: min(100%, 980px);
+}
+
+:host-context(.lesson-m2-l10) .visual-equations span,
+:host-context(.lesson-m2-l11) .visual-equations span,
+:host-context(.lesson-m2-l12) .visual-equations span,
+:host-context(.lesson-m2-l13) .visual-equations span,
+:host-context(.lesson-m2-l14) .visual-equations span {
+  border-color: #d2d9e6;
+  background: #ffffff;
+  color: #202124;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+:host-context(.lesson-m2-l15) .problem-visual-workspace,
+:host-context(.lesson-m2-l16) .problem-visual-workspace,
+:host-context(.lesson-m2-l17) .problem-visual-workspace,
+:host-context(.lesson-m2-l18) .problem-visual-workspace,
+:host-context(.lesson-m2-l19) .problem-visual-workspace,
+:host-context(.lesson-m2-l20) .problem-visual-workspace,
+:host-context(.lesson-m2-l21) .problem-visual-workspace {
+  padding: 12px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+:host-context(.lesson-m5) .problem-visual-workspace {
+  padding: 12px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+:host-context(.lesson-m2-l6) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span),
+:host-context(.lesson-m2-l7) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span),
+:host-context(.lesson-m2-l8) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span),
+:host-context(.lesson-m2-l9) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span),
+:host-context(.lesson-m2-l10) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span),
+:host-context(.lesson-m2-l11) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span),
+:host-context(.lesson-m2-l12) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span),
+:host-context(.lesson-m2-l13) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span),
+:host-context(.lesson-m2-l14) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span),
+:host-context(.lesson-m2-l15) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span),
+:host-context(.lesson-m2-l16) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span),
+:host-context(.lesson-m2-l17) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span),
+:host-context(.lesson-m2-l18) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span),
+:host-context(.lesson-m2-l19) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span),
+:host-context(.lesson-m2-l20) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span),
+:host-context(.lesson-m2-l21) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span) {
+  opacity: 1 !important;
+}
+
+:host-context(.lesson-m5) :is(.visual-section, .visual-array span, .visual-tape span, .visual-fraction-strip, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-data-row, .visual-equations span, .visual-measurement-lab, .kg-place-row, .kg-pan, .kg-ten-frame span) {
+  opacity: 1 !important;
+}
+
+:host-context(.lesson-m5) :is(.visual-tape small, .visual-fraction-strip small, .problem-visual-workspace footer, .visual-note, .visual-header p, .visual-section > p) {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 560;
+}
+
+:host-context(.lesson-m5) .problem-visual-workspace :is(p, small, footer, li, em) {
+  color: #202124;
+}
+
+:host-context(.lesson-m5) .visual-fraction-strip {
+  border-color: #bfd1ea;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m5) .visual-fraction-strip > b {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+:host-context(.lesson-m5) .visual-fraction-strip span {
+  color: #174ea6;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+:host-context(.lesson-m5) .visual-fraction-strip span.is-shaded {
+  background: #8ab4f8;
+  color: #202124;
+}
+
+:host-context(.lesson-m6) .problem-visual-workspace {
+  padding: 12px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+:host-context(.lesson-m6) :is(.visual-section, .visual-data-row, .visual-array span, .visual-tape span, .visual-fraction-strip, .visual-fraction-strip span, .visual-expression-match-row span, .visual-expression-match-key span, .visual-equations span, .visual-measurement-lab) {
+  opacity: 1 !important;
+}
+
+:host-context(.lesson-m6) :is(.visual-note, .visual-header p, .visual-section > p, .visual-data-row, .problem-visual-workspace footer, .visual-tape small, .visual-fraction-strip small) {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 560;
+  opacity: 1 !important;
+}
+
+:host-context(.lesson-m6) .problem-visual-workspace :is(p, small, footer, li, em) {
+  color: #202124;
+  opacity: 1 !important;
+}
+
+:host-context(.lesson-m7) .problem-visual-workspace {
+  padding: 12px;
+  border-color: #d2d9e6;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+:host-context(.lesson-m7) .problem-visual-workspace,
+:host-context(.lesson-m7) .problem-visual-workspace * {
+  opacity: 1 !important;
+}
+
+:host-context(.lesson-m7) .problem-visual-workspace :is(p, small, footer, li, em, span, b, strong, .visual-note, .visual-array-caption, .visual-header p, .visual-section > p, .visual-data-row, .visual-geometry-shape) {
+  color: #202124;
+}
+
+:host-context(.lesson-m7) .problem-visual-workspace :is(.visual-note, .visual-array-caption, .visual-header p, .visual-section > p, .visual-data-row, footer, small) {
+  font-size: 13px;
+  font-weight: 560;
+  line-height: 1.35;
+}
+
+:host-context(.lesson-m2-l15) .visual-header,
+:host-context(.lesson-m2-l16) .visual-header,
+:host-context(.lesson-m2-l17) .visual-header,
+:host-context(.lesson-m2-l18) .visual-header,
+:host-context(.lesson-m2-l19) .visual-header,
+:host-context(.lesson-m2-l20) .visual-header,
+:host-context(.lesson-m2-l21) .visual-header {
+  display: none;
+}
+
+:host-context(.lesson-m2-l15) .visual-section,
+:host-context(.lesson-m2-l16) .visual-section,
+:host-context(.lesson-m2-l17) .visual-section,
+:host-context(.lesson-m2-l18) .visual-section,
+:host-context(.lesson-m2-l19) .visual-section,
+:host-context(.lesson-m2-l20) .visual-section,
+:host-context(.lesson-m2-l21) .visual-section {
+  gap: 10px;
+}
+
+:host-context(.lesson-m2-l15) .visual-section > strong,
+:host-context(.lesson-m2-l16) .visual-section > strong,
+:host-context(.lesson-m2-l17) .visual-section > strong,
+:host-context(.lesson-m2-l18) .visual-section > strong,
+:host-context(.lesson-m2-l19) .visual-section > strong,
+:host-context(.lesson-m2-l20) .visual-section > strong,
+:host-context(.lesson-m2-l21) .visual-section > strong {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 720;
+}
+
+:host-context(.lesson-m2-l15) .visual-measurement-lab,
+:host-context(.lesson-m2-l16) .visual-measurement-lab,
+:host-context(.lesson-m2-l17) .visual-measurement-lab,
+:host-context(.lesson-m2-l18) .visual-measurement-lab,
+:host-context(.lesson-m2-l19) .visual-measurement-lab,
+:host-context(.lesson-m2-l20) .visual-measurement-lab,
+:host-context(.lesson-m2-l21) .visual-measurement-lab {
+  display: grid;
+  width: min(100%, 940px);
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #c7d2e3;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #202124;
+}
+
+:host-context(.lesson-m2-l15) .kg-place-value-stage,
+:host-context(.lesson-m2-l16) .kg-place-value-stage,
+:host-context(.lesson-m2-l17) .kg-place-value-stage,
+:host-context(.lesson-m2-l18) .kg-place-value-stage,
+:host-context(.lesson-m2-l19) .kg-place-value-stage,
+:host-context(.lesson-m2-l20) .kg-place-value-stage,
+:host-context(.lesson-m2-l21) .kg-place-value-stage {
+  display: grid;
+  gap: 10px;
+  min-height: 0;
+  padding: 14px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: #fbfcff;
+}
+
+:host-context(.lesson-m2-l15) .kg-place-row,
+:host-context(.lesson-m2-l16) .kg-place-row,
+:host-context(.lesson-m2-l17) .kg-place-row,
+:host-context(.lesson-m2-l18) .kg-place-row,
+:host-context(.lesson-m2-l19) .kg-place-row,
+:host-context(.lesson-m2-l20) .kg-place-row,
+:host-context(.lesson-m2-l21) .kg-place-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.34fr) minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #c7d2e3;
+  border-radius: 8px;
+  background: #ffffff;
+  animation: kgPartPop 520ms ease-out both;
+}
+
+:host-context(.lesson-m2-l15) .kg-place-row strong,
+:host-context(.lesson-m2-l16) .kg-place-row strong,
+:host-context(.lesson-m2-l17) .kg-place-row strong,
+:host-context(.lesson-m2-l18) .kg-place-row strong,
+:host-context(.lesson-m2-l19) .kg-place-row strong,
+:host-context(.lesson-m2-l20) .kg-place-row strong,
+:host-context(.lesson-m2-l21) .kg-place-row strong {
+  color: #174ea6;
+  font-size: 16px;
+}
+
+:host-context(.lesson-m2-l18) .kg-place-row strong,
+:host-context(.lesson-m2-l19) .kg-place-row strong,
+:host-context(.lesson-m2-l20) .kg-place-row strong {
+  color: #b06000;
+}
+
+:host-context(.lesson-m2-l15) .kg-place-row span,
+:host-context(.lesson-m2-l16) .kg-place-row span,
+:host-context(.lesson-m2-l17) .kg-place-row span,
+:host-context(.lesson-m2-l18) .kg-place-row span,
+:host-context(.lesson-m2-l19) .kg-place-row span,
+:host-context(.lesson-m2-l20) .kg-place-row span,
+:host-context(.lesson-m2-l21) .kg-place-row span {
+  color: #202124;
+  font-size: 16px;
+  font-weight: 620;
+}
+
+:host-context(.lesson-m2-l15) .kg-place-value-stage p,
+:host-context(.lesson-m2-l16) .kg-place-value-stage p,
+:host-context(.lesson-m2-l17) .kg-place-value-stage p,
+:host-context(.lesson-m2-l18) .kg-place-value-stage p,
+:host-context(.lesson-m2-l19) .kg-place-value-stage p,
+:host-context(.lesson-m2-l20) .kg-place-value-stage p,
+:host-context(.lesson-m2-l21) .kg-place-value-stage p {
+  justify-self: center;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  padding: 8px 12px;
+  border: 1px solid #bfd1ea;
+  border-radius: 8px;
+  background: #f8fbff;
+  color: #174ea6;
+  font-size: 16px;
+  font-weight: 780;
+}
+
+:host-context(.lesson-m2-l15) .visual-measurement-lab small,
+:host-context(.lesson-m2-l16) .visual-measurement-lab small,
+:host-context(.lesson-m2-l17) .visual-measurement-lab small,
+:host-context(.lesson-m2-l18) .visual-measurement-lab small,
+:host-context(.lesson-m2-l19) .visual-measurement-lab small,
+:host-context(.lesson-m2-l20) .visual-measurement-lab small,
+:host-context(.lesson-m2-l21) .visual-measurement-lab small {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 560;
+  line-height: 1.35;
+}
+
 .visual-data-table {
   display: grid;
   width: min(100%, 900px);

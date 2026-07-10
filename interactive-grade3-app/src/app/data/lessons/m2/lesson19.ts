@@ -6,22 +6,22 @@ export const M2_LESSON19_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 19 animation: Decompose twice to subtract measurements including thre",
-    context: "Part 1: Decompose twice using the standard algorithm for subtraction.",
-    equation: "Measure and label in kg; keep the unit with the number",
-    teacherPrompt: "Why is it important to unbundle or change all of your language. Making this a partner–share units before subtracting? activity may relieve students of a.",
+    title: "Lesson 19 animation: subtract measurements and decompose twice",
+    context: "Subtract 700 milliliters minus 452 milliliters. Decompose 1 hundred as 10 tens, then 1 ten as 10 ones before subtracting.",
+    equation: "700 mL - 452 mL = 248 mL",
+    teacherPrompt: "Why is it important to unbundle units before subtracting across zeros?",
     focus: [
       "decompose",
       "measurement",
       "source labels"
     ],
     measurementTicks: [
-      "60 kg",
-      "52 kg",
-      "6 kg",
-      "2 kg",
-      "5 kg",
-      "3 kg"
+      "700 mL",
+      "-452 mL",
+      "0 ones too small",
+      "decompose twice",
+      "248 mL",
+      "unit stays mL"
     ]
   },
 
@@ -47,7 +47,7 @@ export const M2_LESSON19_RUNTIME: LessonRuntimeConfig = {
       id: "source-meaning",
       title: "Teacher move from source",
       shortTitle: "Meaning",
-      studentPrompt: "Why is it important to unbundle or change all of your language. Making this a partner-share units before subtracting? activity may relieve students of anxiety in front of a large group. Some",
+      studentPrompt: "Why is it important to unbundle units before subtracting across zeros?",
       teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 19 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
       visualModel: "measurement"
     },
@@ -120,7 +120,7 @@ export const M2_LESSON19_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Why is it important to unbundle or change all of your language. Making this a partner-share units before subtracting? activity may relieve students of anxiety in front of a large group. Some"
+        value: "Why is it important to unbundle units before subtracting across zeros?"
       },
       {
         label: "Workbook",

@@ -3,7 +3,7 @@ import { NgClass, NgFor, NgIf, NgStyle, NgSwitch, NgSwitchCase, NgSwitchDefault,
 import { AfterViewChecked, Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { animate, stagger } from 'animejs';
 import { scaleLinear } from 'd3-scale';
 import { findLesson, findModule } from '../../data/curriculum.data';
@@ -39,6 +39,9 @@ type Feedback = {
   title: string;
   body: string;
 };
+
+type ProblemSection = 'concept' | 'problem-set' | 'summary';
+type ProblemSetMode = 'blank' | 'solved';
 
 type InfoRow = {
   label: string;
@@ -140,8 +143,9 @@ export class LessonPage implements OnInit, AfterViewChecked {
   module?: ModuleMeta;
   lesson?: LessonContent;
   activeStepIndex = 0;
-  activeProblemSection: 'concept' | 'problem-set' | 'summary' = 'concept';
-  problemSetMode: 'blank' | 'solved' = 'blank';
+  activeProblemSection: ProblemSection = 'concept';
+  problemSetMode: ProblemSetMode = 'blank';
+  private activeLessonRouteKey = '';
   private lessonConceptAnimationSignature = '';
   private readonly moduleThemes: Record<string, { accent: string; strong: string; soft: string; muted: string }> = {
     m1: { accent: '#4285f4', strong: '#1a73e8', soft: '#e8f0fe', muted: '#d2e3fc' },
@@ -386,6 +390,7 @@ export class LessonPage implements OnInit, AfterViewChecked {
 
   constructor(
     private readonly route: ActivatedRoute,
+    private readonly router: Router,
     private readonly title: Title,
     private readonly elementRef: ElementRef<HTMLElement>
   ) {}
@@ -394,12 +399,19 @@ export class LessonPage implements OnInit, AfterViewChecked {
     this.route.paramMap.subscribe((params) => {
       const moduleId = params.get('moduleId') ?? 'm1';
       const lessonNumber = Number(params.get('lessonNumber') ?? '1');
+      const lessonRouteKey = `${moduleId}-l${lessonNumber}`;
+      const section = this.problemSectionFromRoute(params.get('problemSection'), params.get('problemSetMode'));
+      const mode = this.problemSetModeFromRoute(params.get('problemSetMode'));
       this.module = findModule(moduleId);
       this.lesson = findLesson(moduleId, lessonNumber);
-      this.activeStepIndex = 0;
-      this.activeProblemSection = 'concept';
-      this.problemSetMode = 'blank';
-      this.resetLessonState();
+      this.activeProblemSection = section;
+      this.problemSetMode = mode;
+
+      if (lessonRouteKey !== this.activeLessonRouteKey) {
+        this.activeLessonRouteKey = lessonRouteKey;
+        this.activeStepIndex = 0;
+        this.resetLessonState();
+      }
 
       if (this.module && this.lesson) {
         this.title.setTitle(`M${this.module.number} L${this.lesson.lessonNumber}: ${this.lesson.title} | Ruchika Grade 3 Maths`);
@@ -434,7 +446,27 @@ export class LessonPage implements OnInit, AfterViewChecked {
     const conceptPanels = host.querySelectorAll<HTMLElement>(
       '.lesson-header-main, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card'
     );
-    const keepTextOpaque = host.classList.contains('lesson-m2-l6');
+    const keepTextOpaque = host.classList.contains('lesson-m2-l6')
+      || host.classList.contains('lesson-m2-l7')
+      || host.classList.contains('lesson-m2-l8')
+      || host.classList.contains('lesson-m2-l9')
+      || host.classList.contains('lesson-m2-l10')
+      || host.classList.contains('lesson-m2-l11')
+      || host.classList.contains('lesson-m2-l12')
+      || host.classList.contains('lesson-m2-l13')
+      || host.classList.contains('lesson-m2-l14')
+      || host.classList.contains('lesson-m2-l15')
+      || host.classList.contains('lesson-m2-l16')
+      || host.classList.contains('lesson-m2-l17')
+      || host.classList.contains('lesson-m2-l18')
+      || host.classList.contains('lesson-m2-l19')
+      || host.classList.contains('lesson-m2-l20')
+      || host.classList.contains('lesson-m2-l21')
+      || host.classList.contains('lesson-m3')
+      || host.classList.contains('lesson-m4')
+      || host.classList.contains('lesson-m5')
+      || host.classList.contains('lesson-m6')
+      || host.classList.contains('lesson-m7');
     const tabs = host.querySelectorAll<HTMLElement>('.problem-centered-tabs button, .step-button');
     const lessonModels = host.querySelectorAll<HTMLElement>(
       [
@@ -464,7 +496,7 @@ export class LessonPage implements OnInit, AfterViewChecked {
     });
 
     animate(tabs, {
-      opacity: [0.55, 1],
+      opacity: keepTextOpaque ? 1 : [0.55, 1],
       scale: [0.96, 1],
       duration: 360,
       delay: stagger(24),
@@ -472,7 +504,7 @@ export class LessonPage implements OnInit, AfterViewChecked {
     });
 
     animate(lessonModels, {
-      opacity: [0.25, 1],
+      opacity: keepTextOpaque ? 1 : [0.25, 1],
       scale: [0.82, 1],
       translateY: [8, 0],
       duration: 650,
@@ -481,7 +513,7 @@ export class LessonPage implements OnInit, AfterViewChecked {
     });
 
     animate(equations, {
-      opacity: [0, 1],
+      opacity: keepTextOpaque ? 1 : [0, 1],
       translateX: [-8, 0],
       duration: 460,
       delay: stagger(35),
@@ -1652,7 +1684,27 @@ export class LessonPage implements OnInit, AfterViewChecked {
       'lesson-m2-l2': this.module?.id === 'm2' && this.lesson?.lessonNumber === 2,
       'lesson-m2-l3': this.module?.id === 'm2' && this.lesson?.lessonNumber === 3,
       'lesson-m2-l6': this.module?.id === 'm2' && this.lesson?.lessonNumber === 6,
-      'lesson-m6-problem-centered': this.module?.id === 'm6'
+      'lesson-m2-l7': this.module?.id === 'm2' && this.lesson?.lessonNumber === 7,
+      'lesson-m2-l8': this.module?.id === 'm2' && this.lesson?.lessonNumber === 8,
+      'lesson-m2-l9': this.module?.id === 'm2' && this.lesson?.lessonNumber === 9,
+      'lesson-m2-l10': this.module?.id === 'm2' && this.lesson?.lessonNumber === 10,
+      'lesson-m2-l11': this.module?.id === 'm2' && this.lesson?.lessonNumber === 11,
+      'lesson-m2-l12': this.module?.id === 'm2' && this.lesson?.lessonNumber === 12,
+      'lesson-m2-l13': this.module?.id === 'm2' && this.lesson?.lessonNumber === 13,
+      'lesson-m2-l14': this.module?.id === 'm2' && this.lesson?.lessonNumber === 14,
+      'lesson-m2-l15': this.module?.id === 'm2' && this.lesson?.lessonNumber === 15,
+      'lesson-m2-l16': this.module?.id === 'm2' && this.lesson?.lessonNumber === 16,
+      'lesson-m2-l17': this.module?.id === 'm2' && this.lesson?.lessonNumber === 17,
+      'lesson-m2-l18': this.module?.id === 'm2' && this.lesson?.lessonNumber === 18,
+      'lesson-m2-l19': this.module?.id === 'm2' && this.lesson?.lessonNumber === 19,
+      'lesson-m2-l20': this.module?.id === 'm2' && this.lesson?.lessonNumber === 20,
+      'lesson-m2-l21': this.module?.id === 'm2' && this.lesson?.lessonNumber === 21,
+      'lesson-m3': this.module?.id === 'm3',
+      'lesson-m4': this.module?.id === 'm4',
+      'lesson-m5': this.module?.id === 'm5',
+      'lesson-m6': this.module?.id === 'm6',
+      'lesson-m6-problem-centered': this.module?.id === 'm6',
+      'lesson-m7': this.module?.id === 'm7'
     };
   }
 
@@ -2327,7 +2379,7 @@ export class LessonPage implements OnInit, AfterViewChecked {
     return problem.shareLabels?.[index] ?? `${problem.groupLabel.slice(0, -1) || 'part'} ${index + 1}`;
   }
 
-  problemSectionId(section: 'concept' | 'problem-set' | 'summary'): string {
+  problemSectionId(section: ProblemSection): string {
     const moduleId = this.module?.id ?? 'module';
     const lessonNumber = this.lesson?.lessonNumber ?? 0;
     return `${moduleId}-l${lessonNumber}-${section}`;
@@ -2342,15 +2394,56 @@ export class LessonPage implements OnInit, AfterViewChecked {
   problemHref(problemNumber: number): string {
     const moduleId = this.module?.id ?? 'module';
     const lessonNumber = this.lesson?.lessonNumber ?? 0;
-    return `/ruchika-grade3/modules/${moduleId}/lessons/${lessonNumber}#${this.problemDomId(problemNumber)}`;
+    return `/ruchika-grade3/modules/${moduleId}/lessons/${lessonNumber}/problem-set/${this.problemSetMode}#${this.problemDomId(problemNumber)}`;
   }
 
-  showProblemSection(section: 'concept' | 'problem-set' | 'summary'): void {
+  showProblemSection(section: ProblemSection): void {
     this.activeProblemSection = section;
+    const mode = section === 'problem-set' ? this.problemSetMode : undefined;
+    void this.navigateToProblemSection(section, mode);
   }
 
-  setProblemSetMode(mode: 'blank' | 'solved'): void {
+  setProblemSetMode(mode: ProblemSetMode): void {
+    this.activeProblemSection = 'problem-set';
     this.problemSetMode = mode;
+    void this.navigateToProblemSection('problem-set', mode);
+  }
+
+  private problemSectionFromRoute(section: string | null, mode: string | null): ProblemSection {
+    if (mode) {
+      return 'problem-set';
+    }
+
+    if (section === 'problem-set' || section === 'summary') {
+      return section;
+    }
+
+    return 'concept';
+  }
+
+  private problemSetModeFromRoute(mode: string | null): ProblemSetMode {
+    return mode === 'solved' ? 'solved' : 'blank';
+  }
+
+  private navigateToProblemSection(section: ProblemSection, mode?: ProblemSetMode): Promise<boolean> {
+    if (!this.module || !this.lesson) {
+      return Promise.resolve(false);
+    }
+
+    const commands: Array<string | number> = [
+      '/ruchika-grade3',
+      'modules',
+      this.module.id,
+      'lessons',
+      this.lesson.lessonNumber,
+      section
+    ];
+
+    if (section === 'problem-set') {
+      commands.push(mode ?? this.problemSetMode);
+    }
+
+    return this.router.navigate(commands);
   }
 
   scrollToProblem(problemNumber: number, event?: Event): void {

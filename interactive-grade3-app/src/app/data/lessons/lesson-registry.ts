@@ -1143,7 +1143,8 @@ const M7_SOURCE_PROMPT_OVERRIDES: Record<string, string> = {
   '28-3': "The area of Mason's rectangular painting is 72 square inches. The width of the painting is 8 inches. a. Estimate to draw Mason's painting, and label the side lengths. b. What is the length of the painting? c. What is the perimeter of Mason's painting? d. Mason's mom hangs the painting on a wall that already has two of Mason's other paintings. The areas of the other paintings are 64 square inches and 81 square inches. What is the total area of the wall that is covered with Mason's paintings?",
   '28-4': "The perimeter of Jillian's rectangular bedroom is 34 feet. The length of her bedroom is 9 feet. a. Estimate to draw Jillian's bedroom, and label the side lengths. b. What is the width of Jillian's bedroom? c. What is the area of Jillian's bedroom? d. Jillian has a 4-foot by 6-foot rug in her room. What is the area of the floor that is not covered by the rug?",
   '29-1': "Kyle puts two rectangles together to make the L-shaped figure below. He measures some of the side lengths and records them as shown. a. Find the perimeter of Kyle's shape. b. Find the area of Kyle's shape. c. Kyle makes two copies of the L-shaped figure to create the rectangle shown below. Find the perimeter of the rectangle.",
-  '29-4': 'A jogging path around the outside edges of a rectangular playground measures 48 yards by 52 yards. Maya runs 3 laps on the jogging path. What is the total number of yards Maya runs?'
+  '29-4': 'A jogging path around the outside edges of a rectangular playground measures 48 yards by 52 yards. Maya runs 3 laps on the jogging path. What is the total number of yards Maya runs?',
+  '34-1': 'Create a Summer Math Review resource booklet. Complete one activity each day, color the box after finishing, and track your progress across the review weeks.'
 };
 
 function m7CleanSourcePrompt(prompt: string): string {

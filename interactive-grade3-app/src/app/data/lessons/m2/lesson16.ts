@@ -6,9 +6,9 @@ export const M2_LESSON16_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 16 animation: Add measurements using the standard algorithm to compos",
+    title: "Lesson 16 animation: add measurements and compose twice",
     context: "Use place value charts, disks, and the standard algorithm to add measurements, composing larger units twice.",
-    equation: "Measure and label in kg; keep the unit with the number",
+    equation: "266 g + 158 g = 424 g",
     teacherPrompt: "What pattern did you notice between Problems 1(a), 1(b), and 1(c)? How did the pattern help you solve these problems?",
     focus: [
       "addend",
@@ -16,12 +16,12 @@ export const M2_LESSON16_RUNTIME: LessonRuntimeConfig = {
       "source labels"
     ],
     measurementTicks: [
-      "1 kg",
-      "1 kg",
-      "1 kg",
-      "52 kg",
-      "68 kg",
-      "68 kg"
+      "266 g",
+      "+158 g",
+      "14 ones",
+      "12 tens",
+      "424 g",
+      "compose twice"
     ]
   },
 

@@ -7,9 +7,9 @@ export const M2_LESSON12_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 12 animation: Round two-digit measurements to the nearest ten on the",
-    context: "S: 73 milliliters is less than halfway between 70 and 80 milliliters.",
-    equation: "73 to 85 on equal intervals of 3",
+    title: "Lesson 12 animation: round measurements to the nearest ten",
+    context: "Place the measurement between two tens, mark halfway, then choose the closer ten.",
+    equation: "73 mL is between 70 and 80; 73 is below halfway, so 70 mL",
     teacherPrompt: "Discuss new vocabulary from today's lesson: round and about. Connect the discussion to rounding two-digit measurements to the nearest ten on the vertica.",
     focus: [
       "round",
@@ -17,16 +17,15 @@ export const M2_LESSON12_RUNTIME: LessonRuntimeConfig = {
       "source labels"
     ],
     numberLineLabels: [
+      "70",
       "73",
-      "76",
-      "79",
-      "82",
-      "85"
+      "75",
+      "80"
     ],
     numberLineJumps: [
       "+3",
-      "+3",
-      "+3"
+      "+2 to halfway",
+      "+5 to upper ten"
     ]
   },
 

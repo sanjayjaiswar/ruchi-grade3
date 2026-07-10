@@ -8,8 +8,8 @@ export const M2_LESSON14_RUNTIME: LessonRuntimeConfig = {
   lessonAnimation: {
     kind: "number-line",
     title: "Lesson 14 animation: Round to the nearest hundred on the vertical number line.",
-    context: "Round three-digit numbers to the nearest hundred.",
-    equation: "1 to 13 on equal intervals of 3",
+    context: "Use the lower hundred, halfway hundred, and upper hundred to decide the rounded value.",
+    equation: "132 g is between 100 and 200; below 150, so 100 g",
     teacherPrompt: "Have students share their explanations for Problem 4, particularly if there is disagreement",
     focus: [
       "number line",
@@ -17,16 +17,15 @@ export const M2_LESSON14_RUNTIME: LessonRuntimeConfig = {
       "source labels"
     ],
     numberLineLabels: [
-      "1",
-      "4",
-      "7",
-      "10",
-      "13"
+      "100",
+      "132",
+      "150",
+      "200"
     ],
     numberLineJumps: [
-      "+3",
-      "+3",
-      "+3"
+      "+32",
+      "+18 to halfway",
+      "+50 to upper hundred"
     ]
   },
 

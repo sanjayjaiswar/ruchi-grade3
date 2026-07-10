@@ -7,9 +7,9 @@ export const M2_LESSON7_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 7 animation: Develop estimation strategies by reasoning about the we",
-    context: "T: (Pass out spring scales that measure in grams.) This scale is labeled in intervals of 200.",
-    equation: "Measure and label in kg; keep the unit with the number",
+    title: "Lesson 7 animation: estimate with gram and kilogram benchmarks",
+    context: "Use benchmark weights first, then check the estimate on a spring scale.",
+    equation: "estimate -> weigh -> record grams or kilograms",
     teacherPrompt: "How did you use the 1-kilogram, 100-gram, 10-gram, and 1-gram weights to help you estimate the weights of objects in the classroom?",
     focus: [
       "gram",
@@ -19,11 +19,9 @@ export const M2_LESSON7_RUNTIME: LessonRuntimeConfig = {
     ],
     measurementTicks: [
       "1 kg",
-      "0 kg",
-      "1 kg",
-      "1 kg",
-      "1 kg",
-      "1 kg"
+      "100 g",
+      "10 g",
+      "1 g"
     ]
   },
 

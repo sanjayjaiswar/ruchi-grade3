@@ -120,6 +120,374 @@
             </div>
           </section>
 
+          <section class="m2-topicb-lab m3-facts-lab" *ngIf="module.id === 'm3'" aria-label="Module 3 fact strategy lab">
+            <div class="m2-l6-lab-copy">
+              <span class="eyebrow">Teacher Edition strategy path</span>
+              <h3 *ngIf="lesson.lessonNumber <= 3">Known facts make harder facts easier.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 7">Count, decompose, then use related multiplication and division facts.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 8 && lesson.lessonNumber <= 11">Parentheses and properties show which fact is being used.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 12 && lesson.lessonNumber <= 14">Nines facts come from tens minus one group and digit patterns.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 15 && lesson.lessonNumber <= 18">Use the model to locate the unknown, then solve and check.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 19">Ones facts become tens facts by changing the unit.</h3>
+              <p *ngIf="lesson.lessonNumber <= 3">Students turn, split, or name the unknown so a new 6, 7, 8, or 9 fact connects to a fact they already know.</p>
+              <p *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 7">Students count by 6s or 7s, break facts into known parts, and read division as a related multiplication fact.</p>
+              <p *ngIf="lesson.lessonNumber >= 8 && lesson.lessonNumber <= 11">Students use parentheses, associative grouping, distributive arrays, and tape diagrams so the equation matches the story.</p>
+              <p *ngIf="lesson.lessonNumber >= 12 && lesson.lessonNumber <= 14">Students solve 9s by thinking 10 groups minus 1 group, then use digit patterns to check the product.</p>
+              <p *ngIf="lesson.lessonNumber >= 15 && lesson.lessonNumber <= 18">Students write a letter for the unknown, draw the relationship, solve one or two steps, and explain reasonableness.</p>
+              <p *ngIf="lesson.lessonNumber >= 19">Students use place value: 4 x 3 ones gives 12 ones, and 4 x 3 tens gives 12 tens.</p>
+            </div>
+
+            <div class="m2-topicb-story-card">
+              <ol aria-label="Module 3 strategy sequence">
+                <li><span>👀</span><b>Read</b><em *ngIf="lesson.lessonNumber <= 7">find groups, unit size, and total</em><em *ngIf="lesson.lessonNumber >= 8 && lesson.lessonNumber <= 14">notice parentheses, pattern, or property</em><em *ngIf="lesson.lessonNumber >= 15">name the unknown and unit</em></li>
+                <li><span>▦</span><b>Model</b><em *ngIf="lesson.lessonNumber <= 7">array, count-by line, or tape</em><em *ngIf="lesson.lessonNumber >= 8 && lesson.lessonNumber <= 14">break apart or regroup factors</em><em *ngIf="lesson.lessonNumber >= 15">tape diagram, table, or place-value chart</em></li>
+                <li><span>🔢</span><b>Fact</b><em *ngIf="lesson.lessonNumber <= 3">known fact or commutative fact</em><em *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 14">related multiplication or division fact</em><em *ngIf="lesson.lessonNumber >= 15">one-step fact inside the problem</em></li>
+                <li><span>✓</span><b>Check</b><em *ngIf="lesson.lessonNumber <= 14">equivalent expressions have the same value</em><em *ngIf="lesson.lessonNumber >= 15">answer matches the question and unit</em></li>
+              </ol>
+            </div>
+
+            <div class="m2-topicb-card-grid" aria-label="Module 3 lesson examples">
+              <article *ngIf="lesson.lessonNumber <= 3"><strong>4 x 6</strong><span>turn the array</span><b>6 x 4 = 24</b></article>
+              <article *ngIf="lesson.lessonNumber <= 3"><strong>5 x 7 + 7</strong><span>one more group</span><b>6 x 7 = 42</b></article>
+              <article *ngIf="lesson.lessonNumber <= 3"><strong>n</strong><span>letter for unknown</span><b>4 x n = 28</b></article>
+              <article *ngIf="lesson.lessonNumber <= 3"><strong>28 / 4</strong><span>related fact</span><b>n = 7</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 7"><strong>6, 12, 18</strong><span>count by sixes</span><b>6 x 7 = 42</b></article>
+              <article *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 7"><strong>7, 14, 21</strong><span>count by sevens</span><b>7 x 8 = 56</b></article>
+              <article *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 7"><strong>5 + 2</strong><span>break groups</span><b>7 x 6</b></article>
+              <article *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 7"><strong>42 / 7</strong><span>division fact</span><b>6 groups</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 8 && lesson.lessonNumber <= 11"><strong>(24 / 4) + 2</strong><span>parentheses decide</span><b>8</b></article>
+              <article *ngIf="lesson.lessonNumber >= 8 && lesson.lessonNumber <= 11"><strong>(3 x 3) x 4</strong><span>associate</span><b>9 x 4</b></article>
+              <article *ngIf="lesson.lessonNumber >= 8 && lesson.lessonNumber <= 11"><strong>8 x 5 + 8 x 3</strong><span>distribute</span><b>8 x 8</b></article>
+              <article *ngIf="lesson.lessonNumber >= 8 && lesson.lessonNumber <= 11"><strong>32 / 8</strong><span>unknown group size</span><b>4 students</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 12 && lesson.lessonNumber <= 14"><strong>10 x 8</strong><span>friendly fact</span><b>80</b></article>
+              <article *ngIf="lesson.lessonNumber >= 12 && lesson.lessonNumber <= 14"><strong>80 - 8</strong><span>one less group</span><b>9 x 8 = 72</b></article>
+              <article *ngIf="lesson.lessonNumber >= 12 && lesson.lessonNumber <= 14"><strong>7 | 2</strong><span>digit pattern</span><b>7 + 2 = 9</b></article>
+              <article *ngIf="lesson.lessonNumber >= 12 && lesson.lessonNumber <= 14"><strong>63 / 9</strong><span>inverse check</span><b>7</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 15 && lesson.lessonNumber <= 18"><strong>36 / 9</strong><span>unknown groups</span><b>4</b></article>
+              <article *ngIf="lesson.lessonNumber >= 15 && lesson.lessonNumber <= 18"><strong>n x 1</strong><span>same number</span><b>n</b></article>
+              <article *ngIf="lesson.lessonNumber >= 15 && lesson.lessonNumber <= 18"><strong>7 x 16</strong><span>table pattern</span><b>112</b></article>
+              <article *ngIf="lesson.lessonNumber >= 15 && lesson.lessonNumber <= 18"><strong>81 - 54</strong><span>two-step story</span><b>27 cm</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 19"><strong>4 x 3</strong><span>ones fact</span><b>12</b></article>
+              <article *ngIf="lesson.lessonNumber >= 19"><strong>4 x 30</strong><span>tens fact</span><b>120</b></article>
+              <article *ngIf="lesson.lessonNumber >= 19"><strong>2 x (4 x 10)</strong><span>associate</span><b>80</b></article>
+              <article *ngIf="lesson.lessonNumber >= 19"><strong>5 x 60 + 45</strong><span>two-step units</span><b>345 sec</b></article>
+            </div>
+
+            <div class="m2-topicb-note-card">
+              <strong>Teacher check</strong>
+              <p *ngIf="lesson.lessonNumber <= 7">Ask students to name the known fact or count-by pattern before accepting the new fact.</p>
+              <p *ngIf="lesson.lessonNumber >= 8 && lesson.lessonNumber <= 14">Ask students to explain why the changed expression has the same value.</p>
+              <p *ngIf="lesson.lessonNumber >= 15">Ask students to point to the unknown in the model and answer with the requested unit.</p>
+            </div>
+          </section>
+
+          <section class="m2-topicb-lab m4-area-lab" *ngIf="module.id === 'm4'" aria-label="Module 4 area strategy lab">
+            <div class="m2-l6-lab-copy">
+              <span class="eyebrow">Teacher Edition area path</span>
+              <h3 *ngIf="lesson.lessonNumber <= 4">Area is the inside space covered by same-size units.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 8">Rows and columns turn tiles into multiplication.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 9 && lesson.lessonNumber <= 11">Rectangles can be split, recombined, and compared.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 12 && lesson.lessonNumber <= 14">Composite figures are solved by adding rectangle parts.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 15">Floor plans are room rectangles with area labels.</h3>
+              <p *ngIf="lesson.lessonNumber <= 4">Students cover the whole figure with equal square units or pattern blocks, with no gaps and no overlaps, then name the unit.</p>
+              <p *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 8">Students read the rectangle as rows and columns, then use side lengths as factors for area.</p>
+              <p *ngIf="lesson.lessonNumber >= 9 && lesson.lessonNumber <= 11">Students compare same-area rectangles and use decomposition to make partial products.</p>
+              <p *ngIf="lesson.lessonNumber >= 12 && lesson.lessonNumber <= 14">Students split or complete irregular figures into rectangles before adding the areas.</p>
+              <p *ngIf="lesson.lessonNumber >= 15">Students treat each room as a rectangle, find room areas, then combine the rooms in the floor plan.</p>
+            </div>
+
+            <div class="m2-topicb-story-card">
+              <ol aria-label="Module 4 area strategy sequence">
+                <li><span>🔲</span><b>Unit</b><em *ngIf="lesson.lessonNumber <= 4">same-size squares or blocks</em><em *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 11">square unit, row, and column</em><em *ngIf="lesson.lessonNumber >= 12">room or rectangle unit</em></li>
+                <li><span>▦</span><b>Model</b><em *ngIf="lesson.lessonNumber <= 4">cover without gaps or overlaps</em><em *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 8">complete the rectangle array</em><em *ngIf="lesson.lessonNumber >= 9">split into known rectangles</em></li>
+                <li><span>✕</span><b>Calculate</b><em *ngIf="lesson.lessonNumber <= 4">count the units</em><em *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 11">length x width</em><em *ngIf="lesson.lessonNumber >= 12">add the rectangle areas</em></li>
+                <li><span>✓</span><b>Check</b><em>answer uses square units</em></li>
+              </ol>
+            </div>
+
+            <div class="m2-topicb-card-grid" aria-label="Module 4 lesson examples">
+              <article *ngIf="lesson.lessonNumber <= 4"><strong>no gaps</strong><span>tiles touch edge to edge</span><b>valid area count</b></article>
+              <article *ngIf="lesson.lessonNumber <= 4"><strong>same unit</strong><span>all squares match size</span><b>6 square units</b></article>
+              <article *ngIf="lesson.lessonNumber <= 4"><strong>recompose</strong><span>same tiles, new shape</span><b>area stays same</b></article>
+              <article *ngIf="lesson.lessonNumber <= 4"><strong>unit named</strong><span>cm², in², or square units</span><b>not just “6”</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 8"><strong>3 rows</strong><span>each row has 5 squares</span><b>3 x 5 = 15</b></article>
+              <article *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 8"><strong>side lengths</strong><span>length and width are factors</span><b>l x w</b></article>
+              <article *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 8"><strong>missing tiles</strong><span>extend rows and columns</span><b>complete array</b></article>
+              <article *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 8"><strong>area unit</strong><span>each tile is 1 square unit</span><b>15 sq units</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 9 && lesson.lessonNumber <= 11"><strong>same area</strong><span>different side lengths</span><b>2 x 12 = 3 x 8</b></article>
+              <article *ngIf="lesson.lessonNumber >= 9 && lesson.lessonNumber <= 11"><strong>split</strong><span>large rectangle into parts</span><b>6 x 5 + 6 x 3</b></article>
+              <article *ngIf="lesson.lessonNumber >= 9 && lesson.lessonNumber <= 11"><strong>factor pairs</strong><span>whole-number side choices</span><b>24 = 1x24, 2x12, 3x8</b></article>
+              <article *ngIf="lesson.lessonNumber >= 9 && lesson.lessonNumber <= 11"><strong>property</strong><span>partial areas add</span><b>distributive area</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 12 && lesson.lessonNumber <= 14"><strong>draw</strong><span>mark the given side lengths</span><b>know the rectangles</b></article>
+              <article *ngIf="lesson.lessonNumber >= 12 && lesson.lessonNumber <= 14"><strong>split</strong><span>L-shape into rectangles</span><b>A + B</b></article>
+              <article *ngIf="lesson.lessonNumber >= 12 && lesson.lessonNumber <= 14"><strong>complete</strong><span>make one large rectangle</span><b>whole - missing</b></article>
+              <article *ngIf="lesson.lessonNumber >= 12 && lesson.lessonNumber <= 14"><strong>answer</strong><span>add only square units</span><b>total area</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 15"><strong>room</strong><span>each room is a rectangle</span><b>length x width</b></article>
+              <article *ngIf="lesson.lessonNumber >= 15"><strong>label</strong><span>dimensions belong to that room</span><b>not the whole house</b></article>
+              <article *ngIf="lesson.lessonNumber >= 15"><strong>compare</strong><span>larger room has greater area</span><b>sq cm</b></article>
+              <article *ngIf="lesson.lessonNumber >= 15"><strong>total</strong><span>add room areas</span><b>floor-plan area</b></article>
+            </div>
+
+            <div class="m2-topicb-note-card">
+              <strong>Teacher check</strong>
+              <p *ngIf="lesson.lessonNumber <= 4">Ask whether the units are the same size and whether the figure is fully covered.</p>
+              <p *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 11">Ask students to point to rows, columns, and the matching multiplication equation.</p>
+              <p *ngIf="lesson.lessonNumber >= 12">Ask students to name each rectangle part before adding areas.</p>
+            </div>
+          </section>
+
+          <section class="m2-topicb-lab m5-fractions-lab" *ngIf="module.id === 'm5'" aria-label="Module 5 fraction strategy lab">
+            <div class="m2-l6-lab-copy">
+              <span class="eyebrow">Teacher Edition fraction path</span>
+              <h3 *ngIf="lesson.lessonNumber <= 4">Fractions start with one whole split into equal parts.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 13">A fraction names selected equal parts of the whole.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 14 && lesson.lessonNumber <= 19">A fraction on a number line is a distance from zero.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 20 && lesson.lessonNumber <= 27">Equivalent fractions name the same amount or the same point.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 28">Compare fractions by unit size, same numerator, and precise partitions.</h3>
+              <p *ngIf="lesson.lessonNumber <= 4">Students fold, draw, and check that every part is the same size before they count or shade.</p>
+              <p *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 13">Students identify the whole, count equal parts in the denominator, and count selected parts in the numerator.</p>
+              <p *ngIf="lesson.lessonNumber >= 14 && lesson.lessonNumber <= 19">Students partition the interval from 0 to 1, count equal jumps, and place fractions at exact points.</p>
+              <p *ngIf="lesson.lessonNumber >= 20 && lesson.lessonNumber <= 27">Students show that different names can describe the same shaded amount, same point, or same whole number.</p>
+              <p *ngIf="lesson.lessonNumber >= 28">Students compare only after the wholes and partition sizes are clear.</p>
+            </div>
+
+            <div class="m2-topicb-story-card">
+              <ol aria-label="Module 5 fraction strategy sequence">
+                <li><span>▭</span><b>Whole</b><em *ngIf="lesson.lessonNumber <= 13">name the one whole first</em><em *ngIf="lesson.lessonNumber >= 14 && lesson.lessonNumber <= 27">use 0 to 1 as the whole interval</em><em *ngIf="lesson.lessonNumber >= 28">make sure the wholes match</em></li>
+                <li><span>▦</span><b>Partition</b><em *ngIf="lesson.lessonNumber <= 4">equal parts only</em><em *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 19">denominator tells the number of equal parts</em><em *ngIf="lesson.lessonNumber >= 20">refine the parts to match</em></li>
+                <li><span>●</span><b>Name</b><em *ngIf="lesson.lessonNumber <= 13">numerator counts selected parts</em><em *ngIf="lesson.lessonNumber >= 14 && lesson.lessonNumber <= 19">point names a distance from zero</em><em *ngIf="lesson.lessonNumber >= 20">different names can be equal</em></li>
+                <li><span>✓</span><b>Check</b><em *ngIf="lesson.lessonNumber <= 19">unit fraction size and count agree</em><em *ngIf="lesson.lessonNumber >= 20 && lesson.lessonNumber <= 27">models land on the same amount</em><em *ngIf="lesson.lessonNumber >= 28">comparison symbol matches the model</em></li>
+              </ol>
+            </div>
+
+            <div class="m5-lab-model" aria-hidden="true">
+              <div class="m5-lab-strip" *ngIf="lesson.lessonNumber <= 13">
+                <span></span>
+                <span class="is-shaded"></span>
+                <span class="is-shaded"></span>
+                <span></span>
+              </div>
+              <div class="m5-lab-line" *ngIf="lesson.lessonNumber >= 14 && lesson.lessonNumber <= 19">
+                <span>0</span><i></i><i></i><i class="is-point"></i><i></i><span>1</span>
+              </div>
+              <div class="m5-lab-equivalent" *ngIf="lesson.lessonNumber >= 20 && lesson.lessonNumber <= 27">
+                <div><span class="is-shaded"></span><span></span></div>
+                <strong>=</strong>
+                <div><span class="is-shaded"></span><span class="is-shaded"></span><span></span><span></span></div>
+              </div>
+              <div class="m5-lab-compare" *ngIf="lesson.lessonNumber >= 28">
+                <div><span class="is-shaded"></span><span></span><span></span></div>
+                <strong>&lt;</strong>
+                <div><span class="is-shaded"></span><span class="is-shaded"></span><span></span></div>
+              </div>
+            </div>
+
+            <div class="m2-topicb-card-grid" aria-label="Module 5 lesson examples">
+              <article *ngIf="lesson.lessonNumber <= 4"><strong>whole</strong><span>one rectangle, strip, or liquid amount</span><b>same starting amount</b></article>
+              <article *ngIf="lesson.lessonNumber <= 4"><strong>equal parts</strong><span>fold or draw parts the same size</span><b>halves, thirds, fourths</b></article>
+              <article *ngIf="lesson.lessonNumber <= 4"><strong>shade</strong><span>count selected parts</span><b>2 shaded out of 4</b></article>
+              <article *ngIf="lesson.lessonNumber <= 4"><strong>fraction</strong><span>top counts selected parts</span><b>2/4</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 13"><strong>unit fraction</strong><span>one equal part</span><b>1/6</b></article>
+              <article *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 13"><strong>non-unit</strong><span>more than one equal part</span><b>3/6</b></article>
+              <article *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 13"><strong>whole changes</strong><span>same fraction can be different sizes</span><b>1/2 of small vs large</b></article>
+              <article *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 13"><strong>find whole</strong><span>use the given part to rebuild one</span><b>1/4 x 4 = 1 whole</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 14 && lesson.lessonNumber <= 19"><strong>0 to 1</strong><span>the interval is the whole</span><b>partition first</b></article>
+              <article *ngIf="lesson.lessonNumber >= 14 && lesson.lessonNumber <= 19"><strong>jumps</strong><span>equal jumps name unit fractions</span><b>1/5, 2/5, 3/5</b></article>
+              <article *ngIf="lesson.lessonNumber >= 14 && lesson.lessonNumber <= 19"><strong>beyond 1</strong><span>keep counting same-size jumps</span><b>7/4 is past 1</b></article>
+              <article *ngIf="lesson.lessonNumber >= 14 && lesson.lessonNumber <= 19"><strong>distance</strong><span>farther right is greater</span><b>compare points</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 20 && lesson.lessonNumber <= 27"><strong>same amount</strong><span>two models cover equal space</span><b>1/2 = 2/4</b></article>
+              <article *ngIf="lesson.lessonNumber >= 20 && lesson.lessonNumber <= 27"><strong>same point</strong><span>different labels land together</span><b>2/3 = 4/6</b></article>
+              <article *ngIf="lesson.lessonNumber >= 20 && lesson.lessonNumber <= 27"><strong>whole number</strong><span>all parts make the whole</span><b>3/3 = 1</b></article>
+              <article *ngIf="lesson.lessonNumber >= 20 && lesson.lessonNumber <= 27"><strong>decompose</strong><span>split into equal fraction parts</span><b>1 = 4/4</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 28"><strong>same numerator</strong><span>same count, different unit size</span><b>1/3 &gt; 1/6</b></article>
+              <article *ngIf="lesson.lessonNumber >= 28"><strong>same whole</strong><span>compare fair models only</span><b>match the wholes</b></article>
+              <article *ngIf="lesson.lessonNumber >= 28"><strong>symbol</strong><span>write &lt;, &gt;, or = from the model</span><b>model first</b></article>
+              <article *ngIf="lesson.lessonNumber >= 28"><strong>precise parts</strong><span>mark equal distances</span><b>no guessing</b></article>
+            </div>
+
+            <div class="m2-topicb-note-card">
+              <strong>Teacher check</strong>
+              <p *ngIf="lesson.lessonNumber <= 13">Ask: What is the whole, how many equal parts, and how many are selected?</p>
+              <p *ngIf="lesson.lessonNumber >= 14 && lesson.lessonNumber <= 19">Ask: What interval is the whole, and how many equal jumps reach the point?</p>
+              <p *ngIf="lesson.lessonNumber >= 20">Ask: Do the models show the same whole and the same amount before comparing or naming equivalence?</p>
+            </div>
+          </section>
+
+          <section class="m2-topicb-lab m6-data-lab" *ngIf="module.id === 'm6'" aria-label="Module 6 data and graph strategy lab">
+            <div class="m2-l6-lab-copy">
+              <span class="eyebrow">Teacher Edition data path</span>
+              <h3 *ngIf="lesson.lessonNumber <= 2">Data displays must keep the same counts and the same unit.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 3 && lesson.lessonNumber <= 4">Scaled bar graphs use equal intervals to answer comparison questions.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 9">Measurement data uses ruler intervals and one X for each measurement.</h3>
+              <p *ngIf="lesson.lessonNumber <= 2">Students collect each response once, choose what one tally, picture, or tape unit represents, then preserve the counts when the display changes.</p>
+              <p *ngIf="lesson.lessonNumber >= 3 && lesson.lessonNumber <= 4">Students read the table, choose or read the graph scale, draw bars to exact values, and solve using the graph evidence.</p>
+              <p *ngIf="lesson.lessonNumber >= 5 && lesson.lessonNumber <= 9">Students measure to the nearest inch, half inch, or quarter inch, then place one X above the matching measurement on a line plot.</p>
+            </div>
+
+            <div class="m2-topicb-story-card">
+              <ol aria-label="Module 6 data strategy sequence">
+                <li><span>#</span><b>Count</b><em *ngIf="lesson.lessonNumber <= 2">one response per student</em><em *ngIf="lesson.lessonNumber >= 3 && lesson.lessonNumber <= 4">read each table value</em><em *ngIf="lesson.lessonNumber >= 5">measure each object once</em></li>
+                <li><span>1</span><b>Unit</b><em *ngIf="lesson.lessonNumber <= 2">one tally, picture, or tape part</em><em *ngIf="lesson.lessonNumber >= 3 && lesson.lessonNumber <= 4">one tick interval on the axis</em><em *ngIf="lesson.lessonNumber >= 5">inch, 1/2 inch, or 1/4 inch</em></li>
+                <li><span>X</span><b>Display</b><em *ngIf="lesson.lessonNumber <= 2">tally, picture graph, or tape</em><em *ngIf="lesson.lessonNumber >= 3 && lesson.lessonNumber <= 4">bar height matches value</em><em *ngIf="lesson.lessonNumber >= 5">one X per measurement</em></li>
+                <li><span>?</span><b>Answer</b><em *ngIf="lesson.lessonNumber <= 4">compare, total, or difference</em><em *ngIf="lesson.lessonNumber >= 5">typical value, total, or comparison</em></li>
+              </ol>
+            </div>
+
+            <div class="m6-lab-model" aria-hidden="true">
+              <div class="m6-lab-picture" *ngIf="lesson.lessonNumber <= 2">
+                <div><b>red</b><span><i></i><i></i><i></i></span><em>3</em></div>
+                <div><b>blue</b><span><i></i><i></i><i></i><i></i><i></i></span><em>5</em></div>
+                <small>key: 1 symbol = 1 student</small>
+              </div>
+              <div class="m6-lab-bars" *ngIf="lesson.lessonNumber >= 3 && lesson.lessonNumber <= 4">
+                <div><b>A</b><span><i style="--bar: 64%"></i></span><em>32</em></div>
+                <div><b>B</b><span><i style="--bar: 88%"></i></span><em>44</em></div>
+                <div><b>C</b><span><i style="--bar: 52%"></i></span><em>26</em></div>
+                <small>scale: count by equal intervals</small>
+              </div>
+              <div class="m6-lab-lineplot" *ngIf="lesson.lessonNumber >= 5">
+                <div><span>X<br>X</span><b>5 1/2</b></div>
+                <div><span>X<br>X<br>X</span><b>5 3/4</b></div>
+                <div><span>X<br>X<br>X<br>X</span><b>6</b></div>
+                <div><span>X</span><b>6 1/4</b></div>
+                <small>one X = one measurement</small>
+              </div>
+            </div>
+
+            <div class="m2-topicb-card-grid" aria-label="Module 6 lesson examples">
+              <article *ngIf="lesson.lessonNumber <= 2"><strong>survey data</strong><span>record every student once</span><b>total responses match class size</b></article>
+              <article *ngIf="lesson.lessonNumber <= 2"><strong>picture key</strong><span>one symbol can mean 1 or 2</span><b>read the key first</b></article>
+              <article *ngIf="lesson.lessonNumber <= 2"><strong>vertical tape</strong><span>turn the tape upright</span><b>unit size stays the same</b></article>
+              <article *ngIf="lesson.lessonNumber <= 2"><strong>compare</strong><span>subtract counts from the display</span><b>more, fewer, total</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 3 && lesson.lessonNumber <= 4"><strong>table</strong><span>source values become bar heights</span><b>label stays attached</b></article>
+              <article *ngIf="lesson.lessonNumber >= 3 && lesson.lessonNumber <= 4"><strong>scale</strong><span>equal intervals on the axis</span><b>by 5, 10, 50, or 100</b></article>
+              <article *ngIf="lesson.lessonNumber >= 3 && lesson.lessonNumber <= 4"><strong>bar</strong><span>draw to the exact value</span><b>height is evidence</b></article>
+              <article *ngIf="lesson.lessonNumber >= 3 && lesson.lessonNumber <= 4"><strong>problem</strong><span>combine or compare graph values</span><b>answer with units</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 5"><strong>ruler</strong><span>whole, half, and quarter inches</span><b>ticks are equal intervals</b></article>
+              <article *ngIf="lesson.lessonNumber >= 5"><strong>measure</strong><span>nearest 1/4 inch is more precise</span><b>record the unit</b></article>
+              <article *ngIf="lesson.lessonNumber >= 5"><strong>line plot</strong><span>place one X above each value</span><b>X = 1 item</b></article>
+              <article *ngIf="lesson.lessonNumber >= 5"><strong>analyze</strong><span>read totals, common values, and differences</span><b>use the Xs</b></article>
+            </div>
+
+            <div class="m2-topicb-note-card">
+              <strong>Teacher check</strong>
+              <p *ngIf="lesson.lessonNumber <= 2">Ask what one mark, picture, or tape unit represents before students answer questions.</p>
+              <p *ngIf="lesson.lessonNumber >= 3 && lesson.lessonNumber <= 4">Ask students to point to the scale and the two bars or table values used in each answer.</p>
+              <p *ngIf="lesson.lessonNumber >= 5">Ask students to state the measurement interval and show which Xs support the answer.</p>
+            </div>
+          </section>
+
+          <section class="m2-topicb-lab m7-shapes-lab" *ngIf="module.id === 'm7'" aria-label="Module 7 geometry and measurement strategy lab">
+            <div class="m2-l6-lab-copy">
+              <span class="eyebrow">Teacher Edition geometry path</span>
+              <h3 *ngIf="lesson.lessonNumber <= 3">Word problems start with the unknown, not the operation.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 9">Shape work is proved with attributes and pieces.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 10 && lesson.lessonNumber <= 17">Perimeter is the outside boundary measured once.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 18 && lesson.lessonNumber <= 23">Rectangles connect area, perimeter, and line plots.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 24 && lesson.lessonNumber <= 30">Robot and area problems require labeled rectangle evidence.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 31">Review work names the model before solving.</h3>
+              <p *ngIf="lesson.lessonNumber <= 3">Students read the story, draw a labeled model, write an equation with a letter, and answer in context.</p>
+              <p *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 9">Students count sides and angles, name attributes, and compose or decompose pieces without gaps or overlaps.</p>
+              <p *ngIf="lesson.lessonNumber >= 10 && lesson.lessonNumber <= 17">Students trace only the outer edge, label each side, find missing lengths first, then add linear units.</p>
+              <p *ngIf="lesson.lessonNumber >= 18 && lesson.lessonNumber <= 23">Students build rectangles from unit squares, compare area and perimeter, and record rectangle results on line plots.</p>
+              <p *ngIf="lesson.lessonNumber >= 24 && lesson.lessonNumber <= 30">Students choose rectangle dimensions, compute area and perimeter, and explain why the model answers the story.</p>
+              <p *ngIf="lesson.lessonNumber >= 31">Students prove half, fluency, and resource-booklet answers with a visible model and a named unit.</p>
+            </div>
+
+            <div class="m2-topicb-story-card">
+              <ol aria-label="Module 7 geometry strategy sequence">
+                <li><span>1</span><b>Name</b><em *ngIf="lesson.lessonNumber <= 3">what the letter stands for</em><em *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 9">shape, piece, or attribute</em><em *ngIf="lesson.lessonNumber >= 10 && lesson.lessonNumber <= 23">area, perimeter, or time on a line</em><em *ngIf="lesson.lessonNumber >= 24">the model and unit</em></li>
+                <li><span>2</span><b>Model</b><em *ngIf="lesson.lessonNumber <= 3">draw and label the story</em><em *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 9">show sides, angles, or pieces</em><em *ngIf="lesson.lessonNumber >= 10 && lesson.lessonNumber <= 17">trace the outside boundary</em><em *ngIf="lesson.lessonNumber >= 18 && lesson.lessonNumber <= 23">build rectangles or a line plot</em><em *ngIf="lesson.lessonNumber >= 24">draw rectangle parts</em></li>
+                <li><span>3</span><b>Solve</b><em *ngIf="lesson.lessonNumber <= 3">equation matches the drawing</em><em *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 9">classify or compose</em><em *ngIf="lesson.lessonNumber >= 10 && lesson.lessonNumber <= 17">add side lengths once</em><em *ngIf="lesson.lessonNumber >= 18 && lesson.lessonNumber <= 30">compute area or perimeter</em><em *ngIf="lesson.lessonNumber >= 31">prove the answer</em></li>
+                <li><span>4</span><b>Check</b><em *ngIf="lesson.lessonNumber <= 3">answer sentence fits the story</em><em *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 9">all attributes are visible</em><em *ngIf="lesson.lessonNumber >= 10 && lesson.lessonNumber <= 17">no inside edge counted</em><em *ngIf="lesson.lessonNumber >= 18 && lesson.lessonNumber <= 30">units are not mixed</em><em *ngIf="lesson.lessonNumber >= 31">model can teach someone else</em></li>
+              </ol>
+            </div>
+
+            <div class="m7-lab-model" aria-hidden="true">
+              <div class="m7-lab-rdw" *ngIf="lesson.lessonNumber <= 3">
+                <span>known</span><span>known</span><strong>n</strong>
+                <b>drawing -> n + 23 = 61</b>
+              </div>
+              <div class="m7-lab-polygons" *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 9">
+                <span class="is-quad">4 sides</span><span class="is-pentagon">5 sides</span><span class="is-tangram">pieces</span>
+                <b>attributes prove the name</b>
+              </div>
+              <div class="m7-lab-perimeter" *ngIf="lesson.lessonNumber >= 10 && lesson.lessonNumber <= 17">
+                <span class="is-top">8 cm</span><span class="is-right">5 cm</span><span class="is-bottom">8 cm</span><span class="is-left">5 cm</span>
+                <b>outside boundary: 8 + 5 + 8 + 5</b>
+              </div>
+              <div class="m7-lab-rectangles" *ngIf="lesson.lessonNumber >= 18 && lesson.lessonNumber <= 23">
+                <span *ngFor="let tile of moduleFrameSlots(12)"></span>
+                <b>area: 3 x 4; perimeter: 3 + 4 + 3 + 4</b>
+              </div>
+              <div class="m7-lab-robot" *ngIf="lesson.lessonNumber >= 24 && lesson.lessonNumber <= 30">
+                <span class="is-head">P 12</span><span class="is-body">A 24</span><span class="is-arm">P 10</span><span class="is-arm">P 10</span><span class="is-leg">A 8</span><span class="is-leg">A 8</span>
+                <b>each rectangle has dimensions, area, and perimeter</b>
+              </div>
+              <div class="m7-lab-review" *ngIf="lesson.lessonNumber >= 31">
+                <span class="is-half"></span><span class="is-model">model</span><span class="is-unit">unit</span>
+                <b>prove the answer with a picture and words</b>
+              </div>
+            </div>
+
+            <div class="m2-topicb-card-grid" aria-label="Module 7 lesson examples">
+              <article *ngIf="lesson.lessonNumber <= 3"><strong>unknown</strong><span>define the letter before solving</span><b>n = number of pies</b></article>
+              <article *ngIf="lesson.lessonNumber <= 3"><strong>draw</strong><span>model shows the story quantities</span><b>known + unknown</b></article>
+              <article *ngIf="lesson.lessonNumber <= 3"><strong>equation</strong><span>symbols match the model</span><b>n + 23 = 61</b></article>
+              <article *ngIf="lesson.lessonNumber <= 3"><strong>answer</strong><span>write in context</span><b>38 pies</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 9"><strong>attribute</strong><span>count sides and angles</span><b>quadrilateral, pentagon</b></article>
+              <article *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 9"><strong>parallel</strong><span>show lines that never meet</span><b>rectangle, trapezoid</b></article>
+              <article *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 9"><strong>compose</strong><span>pieces build a whole</span><b>tetromino, tangram</b></article>
+              <article *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 9"><strong>prove</strong><span>no gaps, no overlaps</span><b>all pieces accounted for</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 10 && lesson.lessonNumber <= 17"><strong>boundary</strong><span>trace the outside only</span><b>inside lines do not count</b></article>
+              <article *ngIf="lesson.lessonNumber >= 10 && lesson.lessonNumber <= 17"><strong>measure</strong><span>label every side length</span><b>in., cm, ft</b></article>
+              <article *ngIf="lesson.lessonNumber >= 10 && lesson.lessonNumber <= 17"><strong>unknown side</strong><span>use equal or opposite sides</span><b>find blank first</b></article>
+              <article *ngIf="lesson.lessonNumber >= 10 && lesson.lessonNumber <= 17"><strong>perimeter</strong><span>add each outside side once</span><b>linear units</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 18 && lesson.lessonNumber <= 23"><strong>area</strong><span>unit squares cover the inside</span><b>square units</b></article>
+              <article *ngIf="lesson.lessonNumber >= 18 && lesson.lessonNumber <= 23"><strong>perimeter</strong><span>side lengths go around</span><b>linear units</b></article>
+              <article *ngIf="lesson.lessonNumber >= 18 && lesson.lessonNumber <= 23"><strong>rectangles</strong><span>same area can have different perimeters</span><b>1 x 12, 2 x 6, 3 x 4</b></article>
+              <article *ngIf="lesson.lessonNumber >= 18 && lesson.lessonNumber <= 23"><strong>line plot</strong><span>each X records a result</span><b>one X = one rectangle</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 24 && lesson.lessonNumber <= 30"><strong>robot part</strong><span>each part is a rectangle</span><b>length x width</b></article>
+              <article *ngIf="lesson.lessonNumber >= 24 && lesson.lessonNumber <= 30"><strong>same perimeter</strong><span>different dimensions can work</span><b>more than one design</b></article>
+              <article *ngIf="lesson.lessonNumber >= 24 && lesson.lessonNumber <= 30"><strong>area check</strong><span>rows times columns</span><b>square units</b></article>
+              <article *ngIf="lesson.lessonNumber >= 24 && lesson.lessonNumber <= 30"><strong>critique</strong><span>compare model to requirement</span><b>fix missing labels</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 31"><strong>one-half</strong><span>two equal areas</span><b>not just two pieces</b></article>
+              <article *ngIf="lesson.lessonNumber >= 31"><strong>model choice</strong><span>select the proof tool</span><b>array, tape, fraction, area</b></article>
+              <article *ngIf="lesson.lessonNumber >= 31"><strong>fluency</strong><span>solve accurately</span><b>check with a model</b></article>
+              <article *ngIf="lesson.lessonNumber >= 31"><strong>resource</strong><span>explain so another student can use it</span><b>picture + words</b></article>
+            </div>
+
+            <div class="m2-topicb-note-card">
+              <strong>Teacher check</strong>
+              <p *ngIf="lesson.lessonNumber <= 3">Ask what the letter represents, where it appears in the drawing, and whether the answer names the story unit.</p>
+              <p *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 9">Ask students to point to the side, angle, or piece evidence before naming the shape.</p>
+              <p *ngIf="lesson.lessonNumber >= 10 && lesson.lessonNumber <= 17">Ask students to trace the perimeter with a finger and explain why inside lines are not included.</p>
+              <p *ngIf="lesson.lessonNumber >= 18 && lesson.lessonNumber <= 23">Ask whether the answer uses square units for area or linear units for perimeter.</p>
+              <p *ngIf="lesson.lessonNumber >= 24 && lesson.lessonNumber <= 30">Ask which rectangle dimensions satisfy the requirement and how area was checked.</p>
+              <p *ngIf="lesson.lessonNumber >= 31">Ask what model proves the answer and whether the unit is clear.</p>
+            </div>
+          </section>
+
           <section class="m2-l6-kilogram-lab" *ngIf="module.id === 'm2' && lesson.lessonNumber === 6" aria-label="Lesson 6 kilogram decomposition lab">
             <div class="m2-l6-lab-copy">
               <span class="eyebrow">Teacher Edition lab path</span>
@@ -166,6 +534,232 @@
             <div class="m2-l6-place-card">
               <strong>Why it connects to place value</strong>
               <p>Each larger unit is made from 10 of the next smaller unit, just like 1 thousand -> 10 hundreds -> 10 tens -> 10 ones.</p>
+            </div>
+          </section>
+
+          <section class="m2-topicb-lab m2-l7-benchmark-lab" *ngIf="module.id === 'm2' && lesson.lessonNumber === 7" aria-label="Lesson 7 benchmark weight lab">
+            <div class="m2-l6-lab-copy">
+              <span class="eyebrow">Teacher Edition lab path</span>
+              <h3>Estimate with a benchmark, then check on a scale.</h3>
+              <p>The lesson uses 1 kg, 100 g, 10 g, and 1 g weights so students choose a reasonable unit before recording a measured answer.</p>
+            </div>
+            <div class="m2-topicb-story-card">
+              <ol aria-label="Benchmark estimate sequence">
+                <li><span>⚖️</span><b>Feel</b><em>compare with benchmark weights</em></li>
+                <li><span>🧠</span><b>Estimate</b><em>pick grams or kilograms</em></li>
+                <li><span>📏</span><b>Check</b><em>weigh on the scale</em></li>
+                <li><span>✍️</span><b>Record</b><em>number plus unit</em></li>
+              </ol>
+            </div>
+            <div class="m2-topicb-card-grid" aria-label="Benchmark weights">
+              <article><strong>1 kg</strong><span>heavier object</span><b>water bottle, book stack</b></article>
+              <article><strong>100 g</strong><span>small object</span><b>snack pack, marker set</b></article>
+              <article><strong>10 g</strong><span>very light</span><b>eraser, few coins</b></article>
+              <article><strong>1 g</strong><span>tiny mass</span><b>paper clip</b></article>
+            </div>
+            <div class="m2-topicb-note-card">
+              <strong>Teacher check</strong>
+              <p>Ask whether the unit fits the object before accepting the number.</p>
+            </div>
+          </section>
+
+          <section class="m2-topicb-lab m2-l8-weight-lab" *ngIf="module.id === 'm2' && lesson.lessonNumber === 8" aria-label="Lesson 8 metric weight word problem lab">
+            <div class="m2-l6-lab-copy">
+              <span class="eyebrow">Teacher Edition lab path</span>
+              <h3>Read the weight, draw the relationship, then operate.</h3>
+              <p>The lesson moves from scale readings to tape diagrams so students know whether they are joining, comparing, multiplying, or dividing kilograms.</p>
+            </div>
+            <div class="m2-topicb-story-card">
+              <ol aria-label="Weight word problem sequence">
+                <li><span>🥦</span><b>Read</b><em>scale gives grams or kilograms</em></li>
+                <li><span>▭</span><b>Draw</b><em>tape diagram shows the relationship</em></li>
+                <li><span>➕</span><b>Solve</b><em>operation follows the diagram</em></li>
+                <li><span>🏷️</span><b>Label</b><em>answer keeps the unit</em></li>
+              </ol>
+            </div>
+            <div class="m2-topicb-card-grid" aria-label="Weight problem meanings">
+              <article><strong>Total</strong><span>combine weights</span><b>35 kg + 43 kg</b></article>
+              <article><strong>Difference</strong><span>compare weights</span><b>43 kg - 35 kg</b></article>
+              <article><strong>Equal groups</strong><span>same kg repeated</span><b>3 x 5 kg</b></article>
+              <article><strong>Share</strong><span>divide equally</span><b>27 kg / 9</b></article>
+            </div>
+            <div class="m2-topicb-note-card">
+              <strong>Teacher check</strong>
+              <p>Do not choose the operation from a keyword; choose it from the tape diagram.</p>
+            </div>
+          </section>
+
+          <section class="m2-topicb-lab m2-l9-liter-lab" *ngIf="module.id === 'm2' && lesson.lessonNumber === 9" aria-label="Lesson 9 liter decomposition lab">
+            <div class="m2-l6-lab-copy">
+              <span class="eyebrow">Teacher Edition lab path</span>
+              <h3>A liter is capacity that can be decomposed by tens.</h3>
+              <p>Students predict container capacity, measure it, then decompose 1 liter into ten 100 mL parts and connect liters to kilograms for water.</p>
+            </div>
+            <div class="m2-topicb-story-card">
+              <ol aria-label="Liter lesson sequence">
+                <li><span>🥤</span><b>Predict</b><em>less, about, or more than 1 L</em></li>
+                <li><span>💧</span><b>Measure</b><em>actual capacity is evidence</em></li>
+                <li><span>▦</span><b>Split</b><em>1 L makes ten 100 mL parts</em></li>
+                <li><span>⚖️</span><b>Connect</b><em>1 mL water matches 1 g</em></li>
+              </ol>
+            </div>
+            <div class="m2-topicb-card-grid" aria-label="Liter decomposition sequence">
+              <article><strong>1 L</strong><span>whole capacity</span><b>1,000 mL</b></article>
+              <article><strong>100 mL</strong><span>10 equal parts</span><b>1 L = 10 x 100 mL</b></article>
+              <article><strong>10 mL</strong><span>smaller part</span><b>10 x 10 mL = 100 mL</b></article>
+              <article><strong>1 mL</strong><span>tiny unit</span><b>1 mL water = 1 g</b></article>
+            </div>
+            <div class="m2-topicb-note-card">
+              <strong>Teacher check</strong>
+              <p>Container shape can mislead; the measured capacity decides.</p>
+            </div>
+          </section>
+
+          <section class="m2-topicb-lab m2-l10-liquid-scale-lab" *ngIf="module.id === 'm2' && lesson.lessonNumber === 10" aria-label="Lesson 10 vertical liquid scale lab">
+            <div class="m2-l6-lab-copy">
+              <span class="eyebrow">Teacher Edition lab path</span>
+              <h3>A container scale is a vertical number line.</h3>
+              <p>Students pour equal amounts, mark equal intervals, then use the scale to read, estimate, compare, and subtract liquid volume.</p>
+            </div>
+            <div class="m2-topicb-story-card">
+              <ol aria-label="Vertical liquid scale sequence">
+                <li><span>🥤</span><b>Pour</b><em>add equal cup amounts</em></li>
+                <li><span>│</span><b>Mark</b><em>each interval is equal</em></li>
+                <li><span>👀</span><b>Read</b><em>use liters or milliliters</em></li>
+                <li><span>−</span><b>Compare</b><em>distance shows difference</em></li>
+              </ol>
+            </div>
+            <div class="m2-topicb-card-grid" aria-label="Liquid scale ideas">
+              <article><strong>1 L</strong><span>full bottle</span><b>1,000 mL</b></article>
+              <article><strong>500 mL</strong><span>halfway mark</span><b>middle of the scale</b></article>
+              <article><strong>100 mL</strong><span>equal cup</span><b>one interval</b></article>
+              <article><strong>28 L</strong><span>difference</span><b>96 L - 68 L</b></article>
+            </div>
+            <div class="m2-topicb-note-card">
+              <strong>Teacher check</strong>
+              <p>Ask whether the marks are equally spaced before students read or compare the volume.</p>
+            </div>
+          </section>
+
+          <section class="m2-topicb-lab m2-l11-mixed-lab" *ngIf="module.id === 'm2' && lesson.lessonNumber === 11" aria-label="Lesson 11 mixed measurement operation lab">
+            <div class="m2-l6-lab-copy">
+              <span class="eyebrow">Teacher Edition lab path</span>
+              <h3>Choose the operation from the measurement relationship.</h3>
+              <p>The lesson mixes grams, kilograms, liters, and milliliters, but each problem keeps matching units before computing.</p>
+            </div>
+            <div class="m2-topicb-story-card">
+              <ol aria-label="Mixed measurement problem sequence">
+                <li><span>🏷️</span><b>Name unit</b><em>grams, kilograms, liters, or mL</em></li>
+                <li><span>▭</span><b>Model</b><em>total, part, compare, or groups</em></li>
+                <li><span>➗</span><b>Operate</b><em>add, subtract, multiply, divide</em></li>
+                <li><span>✓</span><b>Check</b><em>answer still names the unit</em></li>
+              </ol>
+            </div>
+            <div class="m2-topicb-card-grid" aria-label="Mixed operation meanings">
+              <article><strong>Part</strong><span>missing amount</span><b>671 g - 113 g</b></article>
+              <article><strong>Compare</strong><span>more or less</span><b>558 g - 113 g</b></article>
+              <article><strong>Groups</strong><span>same-size units</span><b>10 x 6 g</b></article>
+              <article><strong>Leftover</strong><span>groups plus extra</span><b>3 x 4 L + 2 L</b></article>
+            </div>
+            <div class="m2-topicb-note-card">
+              <strong>Teacher check</strong>
+              <p>Students should explain why the operation matches the story, not just compute the numbers.</p>
+            </div>
+          </section>
+
+          <section class="m2-topicb-lab m2-l12-rounding-lab" *ngIf="module.id === 'm2' && lesson.lessonNumber >= 12 && lesson.lessonNumber <= 14" aria-label="Lesson 12 to 14 rounding number line lab">
+            <div class="m2-l6-lab-copy">
+              <span class="eyebrow">Teacher Edition lab path</span>
+              <h3>Round by locating the number between two benchmarks.</h3>
+              <p>Lessons 12-14 use vertical number lines: lower benchmark, halfway mark, upper benchmark, then the closest rounded value.</p>
+            </div>
+            <div class="m2-topicb-story-card">
+              <ol aria-label="Rounding sequence">
+                <li><span>↓</span><b>Lower</b><em>nearest ten or hundred below</em></li>
+                <li><span>◇</span><b>Halfway</b><em>5 ones or 50 more</em></li>
+                <li><span>↑</span><b>Upper</b><em>nearest ten or hundred above</em></li>
+                <li><span>🎯</span><b>Round</b><em>choose the closer benchmark</em></li>
+              </ol>
+            </div>
+            <div class="m2-topicb-card-grid" aria-label="Rounding benchmark examples">
+              <article><strong>73 mL</strong><span>nearest ten</span><b>70, 75, 80</b></article>
+              <article><strong>48 min</strong><span>nearest ten</span><b>rounds to 50 min</b></article>
+              <article><strong>132 g</strong><span>nearest hundred</span><b>100, 150, 200</b></article>
+              <article><strong>1,865</strong><span>hundreds</span><b>1,900 = 19 hundreds</b></article>
+            </div>
+            <div class="m2-topicb-note-card">
+              <strong>Teacher check</strong>
+              <p>Do not let students round by memory only; ask them to name the two benchmarks and the halfway point.</p>
+            </div>
+          </section>
+
+          <section class="m2-topicb-lab m2-l15-algorithm-lab" *ngIf="module.id === 'm2' && lesson.lessonNumber >= 15 && lesson.lessonNumber <= 21" aria-label="Lesson 15 to 21 measurement algorithm lab">
+            <div class="m2-l6-lab-copy">
+              <span class="eyebrow">Teacher Edition lab path</span>
+              <h3 *ngIf="lesson.lessonNumber === 15">Add measurements and compose one larger unit.</h3>
+              <h3 *ngIf="lesson.lessonNumber === 16">Add measurements and compose in more than one place.</h3>
+              <h3 *ngIf="lesson.lessonNumber === 17">Estimate sums first, then check with the actual sum.</h3>
+              <h3 *ngIf="lesson.lessonNumber === 18">Subtract measurements and decompose one larger unit.</h3>
+              <h3 *ngIf="lesson.lessonNumber === 19">Subtract measurements and decompose through zeros.</h3>
+              <h3 *ngIf="lesson.lessonNumber === 20">Estimate differences first, then check with exact subtraction.</h3>
+              <h3 *ngIf="lesson.lessonNumber === 21">Use measurement to check mixed word problems.</h3>
+              <p *ngIf="lesson.lessonNumber === 15">Students add matching units, compose when a place reaches 10, and keep compound units such as kg and g separated.</p>
+              <p *ngIf="lesson.lessonNumber === 16">Students track each place value carefully because ones can compose to tens and tens can compose again.</p>
+              <p *ngIf="lesson.lessonNumber === 17">Students round addends to estimate, add exactly, then decide whether the estimate is close to the real sum.</p>
+              <p *ngIf="lesson.lessonNumber === 18">Students subtract by place value, decomposing one larger unit only when the top digit is too small.</p>
+              <p *ngIf="lesson.lessonNumber === 19">Students subtract across zeros by unbundling across two places before writing the measurement difference.</p>
+              <p *ngIf="lesson.lessonNumber === 20">Students round totals and parts to estimate differences, subtract exactly, and compare which estimate is closest.</p>
+              <p *ngIf="lesson.lessonNumber === 21">Students measure, round, estimate, solve exactly, and explain why the exact answer is reasonable.</p>
+            </div>
+            <div class="m2-topicb-story-card">
+              <ol aria-label="Measurement algorithm sequence">
+                <li><span>🏷️</span><b>Unit</b><em *ngIf="lesson.lessonNumber <= 19">mL, cm, g, L/mL, kg/g</em><em *ngIf="lesson.lessonNumber === 20">liters, grams, exact and rounded values</em><em *ngIf="lesson.lessonNumber === 21">g, cm, mL, minutes</em></li>
+                <li><span>▦</span><b>Places</b><em *ngIf="lesson.lessonNumber <= 19">ones, tens, hundreds, compound units</em><em *ngIf="lesson.lessonNumber === 20">nearest hundred, then exact places</em><em *ngIf="lesson.lessonNumber === 21">read mark, round benchmark, exact value</em></li>
+                <li><span *ngIf="lesson.lessonNumber < 18 || lesson.lessonNumber === 21">＋</span><span *ngIf="lesson.lessonNumber >= 18 && lesson.lessonNumber <= 20">−</span><b>Operate</b><em *ngIf="lesson.lessonNumber <= 16">add and compose larger units</em><em *ngIf="lesson.lessonNumber === 17">round, add, compare</em><em *ngIf="lesson.lessonNumber >= 18 && lesson.lessonNumber <= 19">subtract and decompose</em><em *ngIf="lesson.lessonNumber === 20">round, subtract, compare</em><em *ngIf="lesson.lessonNumber === 21">measure, round, estimate, solve</em></li>
+                <li><span>✓</span><b>Check</b><em *ngIf="lesson.lessonNumber <= 19">final answer keeps the unit</em><em *ngIf="lesson.lessonNumber === 20">estimate is close to exact answer</em><em *ngIf="lesson.lessonNumber === 21">exact answer is reasonable</em></li>
+              </ol>
+            </div>
+            <div class="m2-topicb-card-grid" aria-label="Measurement algorithm examples">
+              <article *ngIf="lesson.lessonNumber === 15"><strong>46 + 25</strong><span>compose once</span><b>71 mL</b></article>
+              <article *ngIf="lesson.lessonNumber === 15"><strong>475 + 317</strong><span>check the regroup</span><b>792 mL</b></article>
+              <article *ngIf="lesson.lessonNumber === 15"><strong>15 + 32</strong><span>two-step time</span><b>47 min</b></article>
+              <article *ngIf="lesson.lessonNumber === 15"><strong>kg + g</strong><span>compound unit</span><b>5 kg 876 g</b></article>
+
+              <article *ngIf="lesson.lessonNumber === 16"><strong>52 + 68</strong><span>compose twice path</span><b>120 mL</b></article>
+              <article *ngIf="lesson.lessonNumber === 16"><strong>907 + 93</strong><span>grams become kilogram</span><b>1,000 g = 1 kg</b></article>
+              <article *ngIf="lesson.lessonNumber === 16"><strong>86 + 58</strong><span>muffins total</span><b>144</b></article>
+              <article *ngIf="lesson.lessonNumber === 16"><strong>279 + 462</strong><span>two capacities</span><b>741 mL</b></article>
+
+              <article *ngIf="lesson.lessonNumber === 17"><strong>451 + 249</strong><span>estimate matches</span><b>700</b></article>
+              <article *ngIf="lesson.lessonNumber === 17"><strong>94 + 151</strong><span>estimate first</span><b>245 min actual</b></article>
+              <article *ngIf="lesson.lessonNumber === 17"><strong>182 + 74</strong><span>weight total</span><b>256 kg</b></article>
+              <article *ngIf="lesson.lessonNumber === 17"><strong>Compare</strong><span>estimate vs actual</span><b>close enough?</b></article>
+
+              <article *ngIf="lesson.lessonNumber === 18"><strong>60 - 24</strong><span>decompose once</span><b>36 mL</b></article>
+              <article *ngIf="lesson.lessonNumber === 18"><strong>405 - 233</strong><span>unknown book</span><b>172 g</b></article>
+              <article *ngIf="lesson.lessonNumber === 18"><strong>117 - 22</strong><span>movie time</span><b>95 min</b></article>
+              <article *ngIf="lesson.lessonNumber === 18"><strong>208 - 174</strong><span>rope piece</span><b>34 cm</b></article>
+
+              <article *ngIf="lesson.lessonNumber === 19"><strong>340 - 260</strong><span>through zero</span><b>80 cm</b></article>
+              <article *ngIf="lesson.lessonNumber === 19"><strong>700 - 452</strong><span>decompose twice</span><b>248 mL</b></article>
+              <article *ngIf="lesson.lessonNumber === 19"><strong>617 - 468</strong><span>distance driven</span><b>149 km</b></article>
+              <article *ngIf="lesson.lessonNumber === 19"><strong>400 - 165</strong><span>capacity compare</span><b>235 L</b></article>
+
+              <article *ngIf="lesson.lessonNumber === 20"><strong>451 - 153</strong><span>estimate close</span><b>298 ≈ 300</b></article>
+              <article *ngIf="lesson.lessonNumber === 20"><strong>372 - 184</strong><span>gas remaining</span><b>188 L</b></article>
+              <article *ngIf="lesson.lessonNumber === 20"><strong>500 - 372</strong><span>fruit weight</span><b>128 g</b></article>
+              <article *ngIf="lesson.lessonNumber === 20"><strong>Compare</strong><span>estimate vs actual</span><b>closest?</b></article>
+
+              <article *ngIf="lesson.lessonNumber === 21"><strong>91 + 58</strong><span>beans and rice</span><b>149 g</b></article>
+              <article *ngIf="lesson.lessonNumber === 21"><strong>64 + 38</strong><span>yarn total</span><b>102 cm</b></article>
+              <article *ngIf="lesson.lessonNumber === 21"><strong>mL lines</strong><span>containers</span><b>round to 10</b></article>
+              <article *ngIf="lesson.lessonNumber === 21"><strong>115 - 21</strong><span>movie only</span><b>94 min</b></article>
+            </div>
+            <div class="m2-topicb-note-card">
+              <strong>Teacher check</strong>
+              <p *ngIf="lesson.lessonNumber <= 19">Ask students to say what changed in the place-value chart and to read the final answer with its unit.</p>
+              <p *ngIf="lesson.lessonNumber === 20">Ask students to compare the rounded difference with the exact difference and explain why one estimate is closer.</p>
+              <p *ngIf="lesson.lessonNumber === 21">Ask students to point to the measurement evidence, then use the estimate to check the exact answer.</p>
             </div>
           </section>
 

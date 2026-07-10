@@ -8,9 +8,9 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 21 animation: Estimate sums and differences of measurements by roundi",
-    context: "behavior norms. For example, how will Next, they round to estimate sums and differences, and then turns be recognized? What can be said use the standard algorithm to solve. Determine.",
-    equation: "3 to 43 on equal intervals of 10",
+    title: "Lesson 21 animation: estimate and solve mixed measurements",
+    context: "Measure beans and rice, round to the nearest ten grams, estimate the sum and difference, then check with exact arithmetic.",
+    equation: "91 g + 58 g = 149 g; estimate 90 g + 60 g = 150 g",
     teacherPrompt: "How can you use measurement as a tool for checking whether or not your answers are reasonable?",
     focus: [
       "addend",
@@ -19,16 +19,16 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       "source labels"
     ],
     numberLineLabels: [
-      "3",
-      "13",
-      "23",
-      "33",
-      "43"
+      "58 g",
+      "60 g",
+      "91 g",
+      "90 g",
+      "149 g"
     ],
     numberLineJumps: [
-      "+10",
-      "+10",
-      "+10"
+      "measure",
+      "round",
+      "estimate and check"
     ]
   },
 
@@ -46,7 +46,7 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "behavior norms. For example, how will Next, they round to estimate sums and differences, and then turns be recognized? What can be said use the standard algorithm to solve. Determine whether to request the use of a tool? What is students work in pairs, groups, or individually based on ability. each tool called?",
+      studentPrompt: "Students measure beans and rice, yarn, and liquid volume, then round to estimate sums and differences before using exact arithmetic to solve.",
       teacherEditionBasis: "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 257-266. Lesson 21 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "number-line"
     },
@@ -113,7 +113,7 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "behavior norms. For example, how will Next, they round to estimate sums and differences, and then turns be recognized? What can be said use the standard algorithm to solve. Determine whether to request the use of a tool? What is students work in pairs, groups, or individually based on ability. each tool called?"
+        value: "Students measure beans and rice, yarn, and liquid volume, then round to estimate sums and differences before using exact arithmetic to solve."
       },
       {
         label: "Workbook",

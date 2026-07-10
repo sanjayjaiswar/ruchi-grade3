@@ -1511,6 +1511,48 @@ function makeM3ArrayOrWorkspace(problem: ProblemSetCenteredProblem, solved: bool
 }
 
 function makeM3Tape(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec['sections'][number] {
+  if (problem.sourcePrompt.includes('60 seconds in 1 minute') && problem.sourcePrompt.includes('5 minutes and 45 seconds')) {
+    return {
+      kind: 'tape',
+      label: solved ? 'Solved time tape' : 'Blank time tape',
+      totalLabel: solved ? '345 seconds total' : 'total seconds',
+      topParts: [
+        {
+          label: solved ? '5 minutes' : '5 min',
+          sublabel: solved ? '5 x 60 seconds' : 'five 60-second parts',
+          startPart: 0,
+          partCount: 5
+        },
+        {
+          label: '45 seconds',
+          sublabel: 'extra seconds',
+          startPart: 5,
+          partCount: 1
+        }
+      ],
+      parts: [
+        { label: solved ? '60' : '60', sublabel: 'sec', emphasize: true },
+        { label: solved ? '60' : '60', sublabel: 'sec', emphasize: true },
+        { label: solved ? '60' : '60', sublabel: 'sec' },
+        { label: solved ? '60' : '60', sublabel: 'sec' },
+        { label: solved ? '60' : '60', sublabel: 'sec' },
+        { label: solved ? '45' : '45', sublabel: 'sec', emphasize: true }
+      ],
+      braces: solved
+        ? [
+            { label: '5 minutes converted to seconds', boxLabel: '300 sec', startPart: 0, partCount: 5 },
+            { label: '300 sec + 45 sec', boxLabel: '345 sec', startPart: 0, partCount: 6 }
+          ]
+        : [
+            { label: 'first find 5 x 60', startPart: 0, partCount: 5 },
+            { label: 'then add 45', startPart: 5, partCount: 1 }
+          ],
+      caption: solved
+        ? 'Five full minutes are 5 x 60 = 300 seconds. Add the extra 45 seconds to get 345 seconds.'
+        : 'Show five 60-second minute parts, then one extra 45-second part.'
+    };
+  }
+
   const partCount = boundedM3Count(problem.knownGroupCount ?? inferM3Factor(problem.equations, 0) ?? problem.quotient, 1, 12);
   const partLabel = solved
     ? String(problem.knownGroupSize ?? problem.quotient ?? '?')

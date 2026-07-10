@@ -258,6 +258,17 @@ export class App {
     return `Lesson ${this.lessonNumber(lessonId)} ${LESSON_SHORT_LABELS[lessonId] ?? this.shortObjective(moduleId, lessonId)}`;
   }
 
+  lessonRoute(moduleId: string, lessonId: string): Array<string | number> {
+    return [
+      '/ruchika-grade3',
+      'modules',
+      moduleId,
+      'lessons',
+      this.lessonNumber(lessonId),
+      ...this.currentLessonViewPath()
+    ];
+  }
+
   moduleTheme(moduleId: string) {
     return MODULE_THEME[moduleId] ?? MODULE_THEME['m1'];
   }
@@ -323,7 +334,14 @@ export class App {
 
   private goToLesson(lesson: LessonNavItem): void {
     this.expandedModules.add(lesson.moduleId);
-    void this.router.navigate(['/ruchika-grade3', 'modules', lesson.moduleId, 'lessons', lesson.lessonNumber]);
+    void this.router.navigate([
+      '/ruchika-grade3',
+      'modules',
+      lesson.moduleId,
+      'lessons',
+      lesson.lessonNumber,
+      ...this.currentLessonViewPath()
+    ]);
   }
 
   private syncActiveRoute(url: string): void {
@@ -336,5 +354,21 @@ export class App {
     }
 
     this.activeLessonId = lessonMatch ? `${lessonMatch[1]}-l${lessonMatch[2]}` : '';
+  }
+
+  private currentLessonViewPath(): string[] {
+    const path = this.router.url.split(/[?#]/)[0];
+    const viewMatch = path.match(/\/modules\/m\d+\/lessons\/\d+\/(.+)$/);
+    const viewPath = viewMatch?.[1] ?? '';
+
+    if (viewPath === 'concept' || viewPath === 'summary') {
+      return [viewPath];
+    }
+
+    if (viewPath === 'problem-set/blank' || viewPath === 'problem-set/solved') {
+      return viewPath.split('/');
+    }
+
+    return [];
   }
 }

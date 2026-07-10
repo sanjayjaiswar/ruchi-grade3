@@ -526,7 +526,28 @@ export type ProblemVisualMeasurementModelSection = {
 export type ProblemVisualMeasurementLabSection = {
   kind: 'measurement-lab';
   label?: string;
-  model: 'kilogram-balance' | 'kilogram-decompose' | 'kilogram-place-value';
+  model:
+    | 'kilogram-balance'
+    | 'kilogram-decompose'
+    | 'kilogram-place-value'
+    | 'benchmark-estimate'
+    | 'unit-sort'
+    | 'scale-read'
+    | 'weight-reason'
+    | 'liquid-decompose'
+    | 'capacity-estimate'
+    | 'water-mass-link'
+    | 'vertical-liquid-scale'
+    | 'mixed-operation'
+    | 'rounding-ten'
+    | 'rounding-hundred'
+    | 'compose-once'
+    | 'compose-twice'
+    | 'estimate-sum'
+    | 'decompose-once'
+    | 'decompose-twice'
+    | 'estimate-difference'
+    | 'mixed-measure';
   wholeLabel?: string;
   wholeDetail?: string;
   partLabel?: string;

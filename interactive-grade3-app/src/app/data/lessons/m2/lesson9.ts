@@ -8,9 +8,9 @@ export const M2_LESSON9_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 9 animation: Decompose a liter to reason about the size of 1 liter,",
-    context: "Use the teacher-edition lesson pages to teach: Decompose a liter to reason about the size of 1 liter, 100 milliliters, 10 milliliters, and 1 milliliter.",
-    equation: "Measure and label in kg; keep the unit with the number",
+    title: "Lesson 9 animation: decompose a liter into milliliters",
+    context: "Use container capacity to show 1 liter, then split it into 10 equal 100-milliliter parts.",
+    equation: "1 L = 1,000 mL; 1,000 mL = 10 x 100 mL",
     teacherPrompt: "Revisit predictions from Part 1. Lead a discussion about why students may have thought taller containers had larger capacities. Guide students to articu.",
     focus: [
       "decompose",
@@ -19,12 +19,10 @@ export const M2_LESSON9_RUNTIME: LessonRuntimeConfig = {
       "source labels"
     ],
     measurementTicks: [
-      "1 kg",
-      "100 kg",
-      "10 kg",
-      "1 kg",
-      "1 kg",
-      "100 kg"
+      "1 L",
+      "100 mL",
+      "10 mL",
+      "1 mL"
     ]
   },
 

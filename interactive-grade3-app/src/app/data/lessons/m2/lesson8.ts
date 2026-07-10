@@ -2,29 +2,29 @@ import type { LessonRuntimeConfig } from '../lesson-runtime.types';
 
 export const M2_LESSON8_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [
-    "liter",
-    "milliliter",
-    "capacity"
+    "gram",
+    "kilogram",
+    "tape diagram"
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 8 animation: Solve one-step word problems involving metric weights w",
-    context: "Solve one-step word problems using addition.",
-    equation: "Measure and label in kg; keep the unit with the number",
+    title: "Lesson 8 animation: solve metric weight word problems",
+    context: "Read or estimate the weight, draw the tape diagram, then choose the operation.",
+    equation: "read -> draw -> operate -> label kg or g",
     teacherPrompt: "How did your tape diagrams change in Problems 2(a) and 2(b)?",
     focus: [
-      "liter",
-      "milliliter",
+      "gram",
+      "kilogram",
       "measurement",
       "source labels"
     ],
     measurementTicks: [
-      "100 kg",
-      "2 kg",
-      "2 kg",
+      "464 g",
+      "355 g",
       "35 kg",
       "43 kg",
-      "5 kg"
+      "5 kg",
+      "27 kg"
     ]
   },
 

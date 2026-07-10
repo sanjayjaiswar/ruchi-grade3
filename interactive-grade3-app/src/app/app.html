@@ -110,7 +110,7 @@
                 class="lesson-link"
                 *ngFor="let lessonId of topic.lessonIds"
                 [class.is-current]="activeLessonId === lessonId"
-                [routerLink]="['/ruchika-grade3', 'modules', module.id, 'lessons', lessonNumber(lessonId)]">
+                [routerLink]="lessonRoute(module.id, lessonId)">
                 {{ lessonLabel(module.id, lessonId) }}
               </a>
             </ng-container>

@@ -9,9 +9,9 @@ export const M2_LESSON10_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 10 animation: Estimate and measure liquid volume in liters and millil",
-    context: "T: (Make groups of three students.) Each group will measure liquid volume to make a measuring bottle that contains 1 liter of water, similar to the one we used yesterday.",
-    equation: "1 to 17 on equal intervals of 4",
+    title: "Lesson 10 animation: measure liquid volume on a vertical scale",
+    context: "A measuring bottle is a vertical number line: equal pours make equal milliliter marks.",
+    equation: "1 L = 1,000 mL; halfway = 500 mL",
     teacherPrompt: "In Problem 4, describe how the position of the points plotted in Part (a) helped you solve Parts (b) and (c)",
     focus: [
       "capacity",
@@ -20,16 +20,16 @@ export const M2_LESSON10_RUNTIME: LessonRuntimeConfig = {
       "source labels"
     ],
     numberLineLabels: [
-      "1",
-      "5",
-      "9",
-      "13",
-      "17"
+      "0 mL",
+      "250 mL",
+      "500 mL",
+      "750 mL",
+      "1,000 mL"
     ],
     numberLineJumps: [
-      "+4",
-      "+4",
-      "+4"
+      "+250 mL",
+      "+250 mL",
+      "+250 mL"
     ]
   },
 

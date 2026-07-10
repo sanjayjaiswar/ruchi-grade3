@@ -8,9 +8,9 @@ export const M2_LESSON17_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 17 animation: Estimate sums by rounding and apply to solve measuremen",
-    context: "Estimate the sum of 362 + 159 by rounding.",
-    equation: "94 to 114 on equal intervals of 5",
+    title: "Lesson 17 animation: estimate sums by rounding",
+    context: "Estimate 362 + 159 by rounding each addend to the nearest hundred, then compare with the actual sum.",
+    equation: "362 + 159 is about 400 + 200 = 600",
     teacherPrompt: "What were some of your observations about Problem 1(a)? What did the closest estimates have in common?",
     focus: [
       "addend",
@@ -19,16 +19,16 @@ export const M2_LESSON17_RUNTIME: LessonRuntimeConfig = {
       "source labels"
     ],
     numberLineLabels: [
-      "94",
-      "99",
-      "104",
-      "109",
-      "114"
+      "300",
+      "362",
+      "400",
+      "159",
+      "200"
     ],
     numberLineJumps: [
-      "+5",
-      "+5",
-      "+5"
+      "round 362 to 400",
+      "round 159 to 200",
+      "add estimate"
     ]
   },
 

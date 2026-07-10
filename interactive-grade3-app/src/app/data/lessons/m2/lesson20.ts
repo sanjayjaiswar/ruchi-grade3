@@ -7,9 +7,9 @@ export const M2_LESSON20_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 20 animation: Estimate differences by rounding and apply to solve mea",
-    context: "Estimate 362 – 189 by rounding.",
-    equation: "0 to 20 on equal intervals of 5",
+    title: "Lesson 20 animation: estimate differences by rounding",
+    context: "Estimate 372 liters minus 184 liters by rounding to hundreds, then compare with the exact difference.",
+    equation: "372 L - 184 L is about 400 L - 200 L = 200 L",
     teacherPrompt: "Share your observations from Problem 1(b). What did you find out? How is this different than rounding when you add?",
     focus: [
       "round",
@@ -17,16 +17,16 @@ export const M2_LESSON20_RUNTIME: LessonRuntimeConfig = {
       "source labels"
     ],
     numberLineLabels: [
-      "0",
-      "5",
-      "10",
-      "15",
-      "20"
+      "184",
+      "200",
+      "372",
+      "400",
+      "188 L actual"
     ],
     numberLineJumps: [
-      "+5",
-      "+5",
-      "+5"
+      "round 372 to 400",
+      "round 184 to 200",
+      "subtract estimate"
     ]
   },
 

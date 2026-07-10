@@ -352,6 +352,9 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
 
   private playWorkspaceAnimation(): void {
     const host = this.elementRef.nativeElement;
+    const keepTextOpaque = Boolean(host.closest(
+      '.lesson-m2-l6, .lesson-m2-l7, .lesson-m2-l8, .lesson-m2-l9, .lesson-m2-l10, .lesson-m2-l11, .lesson-m2-l12, .lesson-m2-l13, .lesson-m2-l14, .lesson-m2-l15, .lesson-m2-l16, .lesson-m2-l17, .lesson-m2-l18, .lesson-m2-l19, .lesson-m2-l20, .lesson-m2-l21'
+    ));
     const sections = Array.from(host.querySelectorAll<HTMLElement>('.visual-section'));
     const arrayCells = Array.from(host.querySelectorAll<HTMLElement>('.visual-array span'));
     const tapeParts = Array.from(host.querySelectorAll<HTMLElement>('.visual-tape span, .visual-fraction-strip span'));
@@ -362,7 +365,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     const diagramItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-floor-room, .visual-line-plot-x, .visual-geometry-shape'));
 
     animate(sections, {
-      opacity: [0, 1],
+      opacity: keepTextOpaque ? 1 : [0, 1],
       translateY: [10, 0],
       duration: 320,
       delay: stagger(45),
@@ -370,7 +373,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     });
 
     animate(arrayCells, {
-      opacity: [0, 1],
+      opacity: keepTextOpaque ? 1 : [0, 1],
       scale: [0.6, 1],
       duration: 420,
       delay: stagger(16, { from: 'first' }),
@@ -378,7 +381,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     });
 
     animate(tapeParts, {
-      opacity: [0, 1],
+      opacity: keepTextOpaque ? 1 : [0, 1],
       scaleX: [0.72, 1],
       duration: 360,
       delay: stagger(28),
@@ -386,7 +389,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     });
 
     animate(matchCards, {
-      opacity: [0, 1],
+      opacity: keepTextOpaque ? 1 : [0, 1],
       translateY: [8, 0],
       duration: 340,
       delay: stagger(24),
@@ -394,7 +397,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     });
 
     animate([...tableRows, ...equations, ...measurementItems], {
-      opacity: [0, 1],
+      opacity: keepTextOpaque ? 1 : [0, 1],
       translateX: [-8, 0],
       duration: 320,
       delay: stagger(24),
@@ -402,7 +405,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     });
 
     animate(diagramItems, {
-      opacity: [0, 1],
+      opacity: keepTextOpaque ? 1 : [0, 1],
       scale: [0.82, 1],
       duration: 420,
       delay: stagger(22),

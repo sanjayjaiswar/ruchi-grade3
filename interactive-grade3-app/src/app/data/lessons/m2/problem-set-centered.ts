@@ -312,7 +312,7 @@ const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
   21: {
     1: 'a. 91 g, 58 g, 90 g, 60 g, 150 g; 91 g, 58 g, 149 g. b. 91 g, 58 g, 90 g, 60 g, 30 g; 91 g, 58 g, 33 g. c. Because both estimates are close to the actual answers.',
     2: 'Yarn A: 64; 60. Yarn B: 88; 90. Yarn C: 38; 40. a. Estimate: 100 cm; actual: 102 cm. b. Estimate: 10 cm; actual: 14 cm; tape diagram drawn and labeled.',
-    3: 'Capacity of the 3 containers plotted and labeled on number lines. Container D: 212 mL ~= 210 mL. Container E: 238 mL ~= 240 mL. Container F: 195 mL ~= 200 mL. a. Estimate: 650 mL; actual: 645 mL. b. Estimate: 30 mL; actual: 26 mL; tape diagram drawn and labeled.',
+    3: 'Capacity of the 3 containers plotted and labeled on number lines. Container D: 212 mL ≈ 210 mL. Container E: 238 mL ≈ 240 mL. Container F: 195 mL ≈ 200 mL. a. Estimate: 650 mL; actual: 645 mL. b. Estimate: 30 mL; actual: 26 mL; tape diagram drawn and labeled.',
     4: 'a. 21 min. b. Estimate may use a reasonable rounding strategy; actual: 94 min. c. The estimate is acceptable when it is close to the actual answer.'
   }
 };
@@ -539,9 +539,24 @@ function createM2ProblemVisual(seed: ProblemSetCenteredProblem | ProblemSeed, so
   if (kilogramLabSections?.length) {
     sections.push(...kilogramLabSections);
   } else {
-    const measurementModel = makeM2MeasurementModel(seed, solved);
-    if (measurementModel) {
-      sections.push(measurementModel);
+    const topicDLabSections = makeM2TopicDLabSections(seed, solved, text.toLowerCase());
+    if (topicDLabSections?.length) {
+      sections.push(...topicDLabSections);
+    } else {
+      const topicCLabSections = makeM2TopicCLabSections(seed, solved, text.toLowerCase());
+      if (topicCLabSections?.length) {
+        sections.push(...topicCLabSections);
+      } else {
+        const topicBLabSections = makeM2TopicBLabSections(seed, solved, text.toLowerCase());
+        if (topicBLabSections?.length) {
+          sections.push(...topicBLabSections);
+        } else {
+          const measurementModel = makeM2MeasurementModel(seed, solved);
+          if (measurementModel) {
+            sections.push(measurementModel);
+          }
+        }
+      }
     }
   }
 
@@ -691,6 +706,1009 @@ function makeM2KilogramLabSections(
   }
 
   return undefined;
+}
+
+function makeM2TopicBLabSections(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean,
+  lower: string
+): ProblemVisualSpec['sections'] | undefined {
+  if (/objects that weigh about 1 kilogram|100 grams|10 grams|1 gram/.test(lower) && /classroom|partner|estimate/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Benchmark table: estimate, then check' : 'Benchmark estimate workspace',
+        model: 'benchmark-estimate',
+        rows: [
+          { left: '1 kg', right: 'Heavier classroom object; then check on the scale.' },
+          { left: '100 g', right: 'Small object that is still easy to feel.' },
+          { left: '10 g', right: 'Light object; compare before weighing.' },
+          { left: '1 g', right: 'Very light object; the scale confirms the estimate.' }
+        ],
+        caption: solved
+          ? 'A valid response names real objects and records checked weights.'
+          : 'The estimate is not the answer until it is checked with the scale.'
+      }
+    ];
+  }
+
+  if (/circle the correct unit of weight|cereal|watermelon|postcard|cat|bicycle|lemon/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Reasonable unit sort' : 'Choose grams or kilograms',
+        model: 'unit-sort',
+        rows: solved
+          ? [
+              { left: 'grams', right: 'cereal 350 g, postcard 6 g, lemon 58 g' },
+              { left: 'kilograms', right: 'watermelon 3 kg, cat 4 kg, bicycle 15 kg' },
+              { left: 'unit fit', right: 'small/light objects use grams; heavier objects use kilograms' }
+            ]
+          : [
+              { left: 'Ask', right: 'Can I hold it easily in one hand?' },
+              { left: 'grams', right: 'small or light object' },
+              { left: 'kilograms', right: 'heavier familiar object' }
+            ],
+        caption: 'The unit should fit the object before the number is read.'
+      }
+    ];
+  }
+
+  if (/bottle of water weighs the same as a 1-kilogram bag of rice|laptop weighs the same as 2 bottles/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Benchmark multiplication' : 'Benchmark relationship',
+        model: 'weight-reason',
+        equation: solved ? '2 bottles x 1 kg = 2 kg' : '2 bottles x 1 kg = ____ kg',
+        rows: [
+          { left: '1 bottle', right: 'same weight as a 1 kg bag of rice' },
+          { left: 'laptop', right: 'same weight as 2 bottles' },
+          { left: 'answer', right: solved ? '2 kilograms' : 'kilograms' }
+        ],
+        caption: 'Use the benchmark as one equal unit, then count the number of units.'
+      }
+    ];
+  }
+
+  if (/10 bags containing 100 grams|ten units of 100 grams/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Ten 100-gram bags make 1 kilogram' : 'Check Nessa with ten equal bags',
+        model: 'kilogram-decompose',
+        wholeLabel: '1 kg',
+        wholeDetail: '1,000 grams total',
+        partLabel: '100 g',
+        equation: solved ? '10 x 100 g = 1,000 g = 1 kg' : '10 x 100 g = ____ g = ____ kg',
+        rows: [
+          { left: 'Count bags', right: '10 equal bags' },
+          { left: 'Each bag', right: '100 grams' },
+          { left: 'Total', right: solved ? '1,000 grams, or 1 kilogram' : 'Use grams first, then kilograms.' }
+        ],
+        caption: solved ? 'Nessa is correct because 1,000 grams is 1 kilogram.' : 'Compare using the same unit before deciding.'
+      }
+    ];
+  }
+
+  if (/string beans|grapes|464 grams|355 grams/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Scale readings recorded' : 'Read each scale, then list the weight',
+        model: 'scale-read',
+        rows: solved
+          ? [
+              { left: 'string beans', right: '464 grams' },
+              { left: 'grapes', right: '355 grams' },
+              { left: 'unit check', right: 'both weights are recorded in grams' }
+            ]
+          : [
+              { left: 'Read', right: 'Find the scale mark for each food.' },
+              { left: 'Record', right: 'Write the number and grams.' },
+              { left: 'Check', right: 'The unit stays attached.' }
+            ],
+        caption: 'This problem is about reading the measurement before solving.'
+      }
+    ];
+  }
+
+  if (/keiko|jiro|35 kilograms|43 kilograms/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Two tape diagrams: total and difference' : 'Draw both Keiko and Jiro tape diagrams',
+        model: 'weight-reason',
+        equation: solved ? '35 kg + 43 kg = 78 kg; 43 kg - 35 kg = 8 kg' : '35 kg + 43 kg = ____ kg; 43 kg - 35 kg = ____ kg',
+        rows: solved
+          ? [
+              { left: 'Keiko', right: '35 kg' },
+              { left: 'Jiro', right: '43 kg' },
+              { left: 'total', right: '78 kg altogether' },
+              { left: 'difference', right: 'Jiro is 8 kg heavier' }
+            ]
+          : [
+              { left: 'part 1', right: 'join both weights to find total kg' },
+              { left: 'part 2', right: 'compare the longer tape to the shorter tape' },
+              { left: 'unit', right: 'each answer is in kilograms' }
+            ],
+        caption: 'The source asks for two meanings: altogether and heavier than.'
+      }
+    ];
+  }
+
+  if (/houseplant|bowling ball|3 houseplants/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Equal groups tape diagram' : 'Three equal houseplant units',
+        model: 'weight-reason',
+        equation: solved ? '3 x 5 kg = 15 kg' : '3 x 5 kg = ____ kg',
+        rows: solved
+          ? [
+              { left: '1 plant', right: 'about 5 kg' },
+              { left: '3 plants', right: '3 equal 5 kg units' },
+              { left: 'estimate', right: 'about 15 kg' }
+            ]
+          : [
+              { left: 'draw', right: '3 equal boxes' },
+              { left: 'label', right: '5 kg on each box' },
+              { left: 'answer', right: 'multiply equal groups' }
+            ],
+        caption: 'The bowling ball is the benchmark for one houseplant.'
+      }
+    ];
+  }
+
+  if (/apple picking|pumpkin|27 kg/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Two-step sharing and multiplying' : 'Share apples, then use the pumpkin benchmark',
+        model: 'weight-reason',
+        equation: solved ? '27 kg / 9 = 3 kg; 7 x 3 kg = 21 kg' : '27 kg / 9 = ____ kg; 7 x ____ kg = ____ kg',
+        rows: solved
+          ? [
+              { left: 'people', right: 'Jane + 8 friends = 9 people' },
+              { left: 'share', right: '27 kg shared equally gives 3 kg each' },
+              { left: 'pumpkins', right: '7 pumpkins at about 3 kg each make 21 kg' }
+            ]
+          : [
+              { left: 'step 1', right: 'divide the apple weight among 9 people' },
+              { left: 'step 2', right: 'use Jane\'s share as one pumpkin benchmark' },
+              { left: 'unit', right: 'kilograms stay attached' }
+            ],
+        caption: 'This card keeps the two operations separate so the story is easier to follow.'
+      }
+    ];
+  }
+
+  if (/predict whether each container holds less than, more than, or about the same as 1 liter|container holds less than/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Capacity prediction checked by measuring' : 'Capacity prediction workspace',
+        model: 'capacity-estimate',
+        rows: [
+          { left: 'Predict', right: 'less than 1 L, about 1 L, or more than 1 L' },
+          { left: 'Measure', right: 'pour or read the container result' },
+          { left: 'Explain', right: 'tell what surprised you and why' }
+        ],
+        caption: 'Shape can trick the eye; measured capacity is the evidence.'
+      }
+    ];
+  }
+
+  if (/1 liter into milliliters and decomposing 1 kilogram into grams/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Liter and kilogram use the same base-ten structure' : 'Compare the two decompositions',
+        model: 'water-mass-link',
+        equation: solved ? '1 L = 1,000 mL; 1 kg = 1,000 g' : '1 L = ____ mL; 1 kg = ____ g',
+        rows: solved
+          ? [
+              { left: 'liter', right: 'breaks into 1,000 milliliters' },
+              { left: 'kilogram', right: 'breaks into 1,000 grams' },
+              { left: 'same idea', right: 'both wholes decompose into one thousand smaller units' }
+            ]
+          : [
+              { left: 'compare', right: 'name the whole unit' },
+              { left: 'decompose', right: 'name the thousand smaller units' },
+              { left: 'explain', right: 'tell what is the same' }
+            ],
+        caption: 'The source asks what is the same about the two decompositions.'
+      }
+    ];
+  }
+
+  if (/1 milliliter of water weigh/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Liter and kilogram match by thousands' : 'Compare liquid and mass units',
+        model: 'water-mass-link',
+        equation: solved ? '1 L water = 1 kg, so 1 mL water = 1 g' : '1 L = 1,000 mL and 1 kg = 1,000 g',
+        rows: solved
+          ? [
+              { left: 'capacity', right: '1 liter is 1,000 milliliters' },
+              { left: 'mass', right: '1 kilogram is 1,000 grams' },
+              { left: 'water link', right: '1 milliliter of water weighs 1 gram' }
+            ]
+          : [
+              { left: 'compare wholes', right: '1 L of water matches 1 kg' },
+              { left: 'compare parts', right: 'both split into 1,000 smaller parts' },
+              { left: 'explain', right: 'match mL to g for water' }
+            ],
+        caption: 'The relationship works here because the source says 1 liter of water weighs 1 kilogram.'
+      }
+    ];
+  }
+
+  const literDecomposition = m2LiterDecomposition(lower);
+  if (literDecomposition) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Liter decomposition' : 'Liter decomposition workspace',
+        model: 'liquid-decompose',
+        wholeLabel: literDecomposition.whole,
+        wholeDetail: literDecomposition.detail,
+        partLabel: literDecomposition.part,
+        equation: solved ? literDecomposition.equation : `${literDecomposition.whole} = 10 equal parts of ____`,
+        rows: [
+          { left: 'whole', right: literDecomposition.whole },
+          { left: 'action', right: 'split the capacity into 10 equal parts' },
+          { left: 'each part', right: solved ? literDecomposition.part : 'label the smaller mL unit' }
+        ],
+        caption: solved
+          ? `Each smaller cup is ${literDecomposition.part}.`
+          : 'Use ten equal parts, the same structure as the kilogram lesson.'
+      }
+    ];
+  }
+
+  return undefined;
+}
+
+function m2LiterDecomposition(lower: string): { whole: string; detail: string; part: string; equation: string } | undefined {
+  if (/decomposing 1 liter|1 liter of water into 10 smaller units|1,000 ml|100 milliliters/.test(lower)) {
+    return { whole: '1 L', detail: '1,000 milliliters total', part: '100 mL', equation: '1,000 mL = 10 x 100 mL' };
+  }
+  if (/cup k|cup l|cup capacity divided by 10/.test(lower)) {
+    return { whole: 'cup capacity', detail: 'measured amount', part: 'one tenth', equation: 'cup capacity divided by 10 = one smaller unit' };
+  }
+  return undefined;
+}
+
+function makeM2TopicDLabSections(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean,
+  lower: string
+): ProblemVisualSpec['sections'] | undefined {
+  if (/choose mental math or the algorithm|pretzel weighs|jason and andrea|greg mows/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Add measurements: compose one larger unit when needed' : 'Add same-unit measurements',
+        model: 'compose-once',
+        equation: solved ? topicDEquationSummary(seed, 'add') : 'line up place values, add, compose once if needed',
+        rows: topicDComposeRows(seed, solved, lower, 'once'),
+        caption: 'The unit stays attached while the place-value digits are added.'
+      }
+    ];
+  }
+
+  if (/52 ml \+ 68 ml|352 ml \+ 468 ml|697 g \+ 138 g|compose larger units twice|907 \+ 93|cabbage and salt|wrapping 86 muffins|milk carton holds 183 milliliters|milk carton holds 183 ml/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Add measurements: compose across two places' : 'Add and check each place',
+        model: 'compose-twice',
+        equation: solved ? topicDEquationSummary(seed, 'add') : 'ones compose to tens; tens may compose to hundreds',
+        rows: topicDComposeRows(seed, solved, lower, 'twice'),
+        caption: 'When two places compose, regroup each place before writing the final unit.'
+      }
+    ];
+  }
+
+  if (/actual sum|estimated sums|circle the estimated sum|janet watched|janet watches|sadie, a bear|sadie weighs/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Estimate sums, then compare with the actual sum' : 'Round first, then add exactly',
+        model: 'estimate-sum',
+        equation: solved ? topicDEquationSummary(seed, 'estimate') : 'rounded addends give an estimate; exact addends give the actual sum',
+        rows: topicDEstimateRows(seed, solved, lower),
+        caption: 'A useful estimate is close enough to check whether the exact answer is reasonable.'
+      }
+    ];
+  }
+
+  if (/60 ml - 24 ml|405 - 233|champions is 22 minutes shorter|208 cm rope|decomposing once/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Subtract measurements: decompose once when a digit is too small' : 'Subtract with one regrouping',
+        model: 'decompose-once',
+        equation: solved ? topicDEquationSummary(seed, 'subtract') : 'decompose one larger unit, subtract, keep the unit',
+        rows: topicDSubtractRows(seed, solved, lower),
+        caption: 'Decompose only where the top digit is too small, then subtract by place value.'
+      }
+    ];
+  }
+
+  if (/340 cm - 60 cm|700 ml - 52 ml|decomposing twice|617 kilometers|468 kilometers left|piano weighs 289 kilograms more|tank a holds 165 fewer liters/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Subtract measurements: decompose twice through zeros' : 'Subtract with two regrouping moves',
+        model: 'decompose-twice',
+        equation: solved ? topicDEquationSummary(seed, 'subtract') : 'decompose hundreds to tens, then tens to ones, and keep the unit',
+        rows: topicDDecomposeTwiceRows(seed, solved, lower),
+        caption: 'When a zero blocks subtraction, unbundle across the places before subtracting.'
+      }
+    ];
+  }
+
+  if (/actual differences|estimated differences|camden uses a total of 372 liters|pear, apple, and peach (weighs?|is) 500 grams/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Estimate differences, then compare with the exact difference' : 'Round first, then subtract exactly',
+        model: 'estimate-difference',
+        equation: solved ? topicDEquationSummary(seed, 'estimate') : 'rounded total - rounded part gives an estimate; exact numbers give the actual difference',
+        rows: topicDEstimateDifferenceRows(seed, solved, lower),
+        caption: 'For subtraction, rounding both numbers can move the estimate closer or farther from the exact difference.'
+      }
+    ];
+  }
+
+  if (/beans and rice|three pieces of yarn|container d|container e|container f|trailer length|shane watches a movie/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Mixed measurements: estimate, solve exactly, then explain reasonableness' : 'Measure, round, operate, and check',
+        model: 'mixed-measure',
+        equation: solved ? topicDEquationSummary(seed, 'estimate') : 'measure -> round -> estimate -> exact answer -> reasonable?',
+        rows: topicDMixedMeasureRows(seed, solved, lower),
+        caption: 'Lesson 21 asks students to use measurement as evidence for whether each answer makes sense.'
+      }
+    ];
+  }
+
+  return undefined;
+}
+
+function topicDEquationSummary(seed: ProblemSetCenteredProblem | ProblemSeed, mode: 'add' | 'subtract' | 'estimate'): string {
+  const equations = seed.equations ?? [];
+  if (!equations.length) {
+    return seed.solvedAnswer;
+  }
+  const limit = mode === 'estimate' ? 4 : 3;
+  const summary = equations.slice(0, limit).join('; ');
+  return equations.length > limit ? `${summary}; ...` : summary;
+}
+
+function topicDComposeRows(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean,
+  lower: string,
+  composeMode: 'once' | 'twice'
+): Array<{ left: string; right: string }> {
+  if (/pretzel weighs/.test(lower)) {
+    return solved
+      ? [
+          { left: 'popcorn', right: '44 g' },
+          { left: 'more', right: '63 g more than popcorn' },
+          { left: 'pretzel', right: '44 g + 63 g = 107 g' }
+        ]
+      : [
+          { left: 'start', right: 'popcorn weight' },
+          { left: 'add', right: 'more grams for the pretzel' },
+          { left: 'answer', right: 'write grams' }
+        ];
+  }
+  if (/jason and andrea/.test(lower)) {
+    return solved
+      ? [
+          { left: 'addends', right: '475 mL and 317 mL' },
+          { left: 'compose', right: '5 + 7 makes 12 ones, so compose 1 ten' },
+          { left: 'correct sum', right: '792 mL; Andrea is correct' }
+        ]
+      : [
+          { left: 'check ones', right: 'compose if ones make 10 or more' },
+          { left: 'check tens', right: 'include the composed ten' },
+          { left: 'decide', right: 'compare Jason and Andrea' }
+        ];
+  }
+  if (/greg mows/.test(lower)) {
+    return solved
+      ? [
+          { left: 'front lawn', right: '15 minutes' },
+          { left: 'back lawn', right: '15 + 17 = 32 minutes' },
+          { left: 'total', right: '15 + 32 = 47 minutes' }
+        ]
+      : [
+          { left: 'part 1', right: 'find back lawn time first' },
+          { left: 'part 2', right: 'add front and back' },
+          { left: 'unit', right: 'minutes' }
+        ];
+  }
+  if (/907 \+ 93|lane uses 907 g|cabbage and salt|cabbage and 93 g salt/.test(lower)) {
+    return solved
+      ? [
+          { left: 'cabbage', right: '907 g' },
+          { left: 'salt', right: '93 g' },
+          { left: 'compose', right: '907 g + 93 g = 1,000 g = 1 kg' }
+        ]
+      : [
+          { left: 'add grams', right: '907 g + 93 g' },
+          { left: 'compose', right: '1,000 g becomes 1 kg' },
+          { left: 'answer', right: 'write grams and kilograms' }
+        ];
+  }
+  if (/wrapping 86 muffins|sue wraps 86 muffins/.test(lower)) {
+    return solved
+      ? [
+          { left: 'wrapped', right: '86 muffins' },
+          { left: 'cooling', right: '58 muffins' },
+          { left: 'baked', right: '86 + 58 = 144 muffins' }
+        ]
+      : [
+          { left: 'parts', right: 'wrapped muffins and cooling muffins' },
+          { left: 'add', right: 'compose if needed' },
+          { left: 'answer', right: 'total muffins baked' }
+        ];
+  }
+  if (/milk carton holds 183 milliliters|milk carton holds 183 ml/.test(lower)) {
+    return solved
+      ? [
+          { left: 'juice box', right: '279 mL' },
+          { left: 'milk carton', right: '279 + 183 = 462 mL' },
+          { left: 'total capacity', right: '279 + 462 = 741 mL' }
+        ]
+      : [
+          { left: 'first', right: 'find milk carton capacity' },
+          { left: 'then', right: 'add both containers' },
+          { left: 'unit', right: 'milliliters' }
+        ];
+  }
+
+  const equations = seed.equations ?? [];
+  const examples = composeMode === 'once'
+    ? [
+        { left: 'same unit', right: 'add mL, cm, g, L/mL, or kg/g in aligned places' },
+        { left: 'compose once', right: solved ? '29 g + 63 g = 92 g shows 12 ones compose 1 ten' : 'when a place makes 10 or more, compose one larger unit' },
+        { left: 'compound units', right: solved ? '5 kg 876 g keeps kg and g separate' : 'add kg with kg and g with g' }
+      ]
+    : [
+        { left: 'same unit', right: 'add each place value from right to left' },
+        { left: 'compose twice', right: solved ? '352 mL + 468 mL = 820 mL' : 'ones and tens can both need regrouping' },
+        { left: 'compound units', right: solved ? '6 kg 851 g keeps kg and g separate' : 'compose inside the smaller unit before naming the answer' }
+      ];
+  if (solved && equations.length) {
+    examples.push({ left: 'checked examples', right: equations.slice(0, 3).join('; ') });
+  }
+  return examples;
+}
+
+function topicDEstimateRows(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean,
+  lower: string
+): Array<{ left: string; right: string }> {
+  if (/janet watched|janet watches/.test(lower)) {
+    return solved
+      ? [
+          { left: 'actual', right: '94 + 151 = 245 minutes' },
+          { left: 'estimate', right: '90 + 150 = 240 minutes' },
+          { left: 'check', right: '240 is close to 245' }
+        ]
+      : [
+          { left: 'round', right: 'round each movie length' },
+          { left: 'estimate', right: 'add rounded minutes' },
+          { left: 'actual', right: 'add exact minutes and compare' }
+        ];
+  }
+  if (/sadie, a bear|sadie weighs/.test(lower)) {
+    return solved
+      ? [
+          { left: 'Sadie', right: '182 kg' },
+          { left: 'cub', right: '74 kg' },
+          { left: 'actual', right: '182 + 74 = 256 kg' },
+          { left: 'estimate', right: 'about 260 kg or 300 kg, depending on rounding' }
+        ]
+      : [
+          { left: 'estimate first', right: 'round both weights' },
+          { left: 'actual', right: 'add exact weights' },
+          { left: 'model', right: 'tape diagram for total kilograms' }
+        ];
+  }
+  return solved
+    ? [
+        { left: 'A close case', right: '451 + 249 = 700; 500 + 200 = 700' },
+        { left: 'B close case', right: '356 + 148 = 504; 400 + 100 = 500' },
+        { left: 'C close case', right: '647 + 158 = 805; 600 + 200 = 800' },
+        { left: 'pattern', right: 'closest estimates happen when rounding errors balance' }
+      ]
+    : [
+        { left: '1. actual', right: 'add the exact numbers first' },
+        { left: '2. estimate', right: 'round addends to hundreds and add' },
+        { left: '3. compare', right: 'circle the estimate closest to the actual sum' }
+      ];
+}
+
+function topicDSubtractRows(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean,
+  lower: string
+): Array<{ left: string; right: string }> {
+  if (/405 - 233|three books/.test(lower)) {
+    return solved
+      ? [
+          { left: 'three books', right: '405 g total' },
+          { left: 'two books', right: '233 g' },
+          { left: 'third book', right: '405 g - 233 g = 172 g' }
+        ]
+      : [
+          { left: 'whole', right: 'three-book weight' },
+          { left: 'part', right: 'two-book weight' },
+          { left: 'unknown', right: 'subtract to find the third book' }
+        ];
+  }
+  if (/champions is 22 minutes shorter/.test(lower)) {
+    return solved
+      ? [
+          { left: 'Lost Ship', right: '117 minutes' },
+          { left: 'Champions', right: '117 - 22 = 95 minutes' },
+          { left: 'compare', right: '145 - 95 = 50 minutes longer' }
+        ]
+      : [
+          { left: 'subtract', right: 'find Champions first' },
+          { left: 'compare', right: 'Magical Forests minus Champions' },
+          { left: 'unit', right: 'minutes' }
+        ];
+  }
+  if (/208 cm rope/.test(lower)) {
+    return solved
+      ? [
+          { left: 'known pieces', right: '80 cm + 94 cm = 174 cm' },
+          { left: 'whole rope', right: '208 cm' },
+          { left: 'third piece', right: '208 - 174 = 34 cm' }
+        ]
+      : [
+          { left: 'add first', right: 'combine the two known rope pieces' },
+          { left: 'subtract', right: 'whole rope minus known length' },
+          { left: 'unit', right: 'centimeters' }
+        ];
+  }
+  return solved
+    ? [
+        { left: 'decompose once', right: '60 mL - 24 mL = 36 mL' },
+        { left: 'same structure', right: '360 mL - 24 mL = 336 mL' },
+        { left: 'three digits', right: '360 mL - 224 mL = 136 mL' },
+        { left: 'compound units', right: '3 kg 924 g - 1 kg 893 g = 2 kg 31 g' }
+      ]
+    : [
+        { left: '1. line up', right: 'align place values and units' },
+        { left: '2. decompose', right: 'regroup one larger unit when needed' },
+        { left: '3. subtract', right: 'subtract each place and keep the unit' }
+      ];
+}
+
+function topicDDecomposeTwiceRows(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean,
+  lower: string
+): Array<{ left: string; right: string }> {
+  if (/617 kilometers|468 kilometers left/.test(lower)) {
+    return solved
+      ? [
+          { left: 'whole trip', right: '617 km from Los Angeles to San Francisco' },
+          { left: 'left to drive', right: '468 km' },
+          { left: 'driven so far', right: '617 km - 468 km = 149 km' }
+        ]
+      : [
+          { left: 'whole', right: 'total distance' },
+          { left: 'part', right: 'kilometers left' },
+          { left: 'unknown part', right: 'kilometers already driven' }
+        ];
+  }
+  if (/piano weighs 289 kilograms more/.test(lower)) {
+    return solved
+      ? [
+          { left: 'piano', right: '297 kg' },
+          { left: 'more than bench', right: '289 kg' },
+          { left: 'bench', right: '297 kg - 289 kg = 8 kg' }
+        ]
+      : [
+          { left: 'compare', right: 'piano is the larger amount' },
+          { left: 'difference', right: '289 kg more than bench' },
+          { left: 'bench', right: 'subtract the difference from the piano weight' }
+        ];
+  }
+  if (/tank a holds 165 fewer liters/.test(lower)) {
+    return solved
+      ? [
+          { left: 'Tank B', right: '400 L' },
+          { left: 'fewer', right: 'Tank A has 165 L fewer' },
+          { left: 'Tank A', right: '400 L - 165 L = 235 L' }
+        ]
+      : [
+          { left: 'larger tank', right: 'Tank B holds 400 L' },
+          { left: 'compare', right: 'Tank A is 165 L less' },
+          { left: 'subtract', right: 'find the smaller capacity' }
+        ];
+  }
+  const equations = seed.equations ?? [];
+  const rows = solved
+    ? [
+        { left: 'through zero', right: '340 cm - 260 cm = 80 cm' },
+        { left: 'grams', right: '513 g - 148 g = 365 g' },
+        { left: 'milliliters', right: '700 mL - 452 mL = 248 mL' },
+        { left: 'compound units', right: '5 L 920 mL - 3 L 869 mL = 2 L 51 mL' }
+      ]
+    : [
+        { left: '1. line up', right: 'align place values and units' },
+        { left: '2. unbundle twice', right: 'hundreds to tens, then tens to ones when needed' },
+        { left: '3. subtract', right: 'write the difference with the same unit' }
+      ];
+  if (solved && equations.length) {
+    rows.push({ left: 'checked examples', right: equations.slice(0, 3).join('; ') });
+  }
+  return rows;
+}
+
+function topicDEstimateDifferenceRows(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean,
+  lower: string
+): Array<{ left: string; right: string }> {
+  if (/camden uses a total of 372 liters/.test(lower)) {
+    return solved
+      ? [
+          { left: 'total gas', right: '372 L' },
+          { left: 'first month', right: '184 L' },
+          { left: 'actual', right: '372 L - 184 L = 188 L' },
+          { left: 'estimate', right: '400 L - 200 L = 200 L' }
+        ]
+      : [
+          { left: 'round', right: 'round total and first month' },
+          { left: 'estimate', right: 'subtract rounded liters' },
+          { left: 'actual', right: 'subtract exact liters and compare' }
+        ];
+  }
+  if (/pear, apple, and peach (weighs?|is) 500 grams/.test(lower)) {
+    return solved
+      ? [
+          { left: 'total fruit', right: '500 g' },
+          { left: 'pear + apple', right: '372 g' },
+          { left: 'peach actual', right: '500 g - 372 g = 128 g' },
+          { left: 'estimate', right: '500 g - 400 g = 100 g' }
+        ]
+      : [
+          { left: 'whole', right: 'all three fruits' },
+          { left: 'known part', right: 'pear and apple together' },
+          { left: 'unknown', right: 'estimate and subtract for peach' }
+        ];
+  }
+  return solved
+    ? [
+        { left: 'A close case', right: '451 - 153 = 298; 500 - 200 = 300' },
+        { left: 'A close case', right: '448 - 149 = 299; 400 - 100 = 300' },
+        { left: 'B close case', right: '756 - 261 = 495; 800 - 300 = 500' },
+        { left: 'B close case', right: '747 - 249 = 498; 700 - 200 = 500' }
+      ]
+    : [
+        { left: '1. actual', right: 'subtract the exact numbers' },
+        { left: '2. estimate', right: 'round total and part to hundreds, then subtract' },
+        { left: '3. compare', right: 'circle the estimate closest to the actual difference' }
+      ];
+}
+
+function topicDMixedMeasureRows(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean,
+  lower: string
+): Array<{ left: string; right: string }> {
+  if (/beans and rice/.test(lower)) {
+    return solved
+      ? [
+          { left: 'measure', right: 'beans 91 g; rice 58 g' },
+          { left: 'sum', right: '91 g + 58 g = 149 g; estimate 150 g' },
+          { left: 'difference', right: '91 g - 58 g = 33 g; estimate 30 g' },
+          { left: 'reasonable', right: 'estimates are close to actual answers' }
+        ]
+      : [
+          { left: 'measure', right: 'weigh beans and rice first' },
+          { left: 'round', right: 'nearest ten grams' },
+          { left: 'operate', right: 'find total and difference' }
+        ];
+  }
+  if (/three pieces of yarn/.test(lower)) {
+    return solved
+      ? [
+          { left: 'measure', right: 'Yarn A 64 cm, B 88 cm, C 38 cm' },
+          { left: 'sum', right: 'A + C = 102 cm; estimate 100 cm' },
+          { left: 'difference', right: '102 cm - 88 cm = 14 cm; estimate 10 cm' }
+        ]
+      : [
+          { left: 'measure', right: 'record each yarn length' },
+          { left: 'add first', right: 'Yarn A plus Yarn C' },
+          { left: 'subtract next', right: 'compare that total with Yarn B' }
+        ];
+  }
+  if (/container d|container e|container f/.test(lower)) {
+    return solved
+      ? [
+          { left: 'plot', right: 'place each container on the mL number line' },
+          { left: 'round', right: 'nearest 10 milliliters' },
+          { left: 'operate', right: 'estimate and find actual total and difference' }
+        ]
+      : [
+          { left: 'read', right: 'find each container amount' },
+          { left: 'round', right: 'nearest 10 mL' },
+          { left: 'check', right: 'compare estimates with exact mL answers' }
+        ];
+  }
+  if (/trailer length|shane watches a movie/.test(lower)) {
+    return solved
+      ? [
+          { left: 'trailers', right: '5 + 4 + 3 + 5 + 4 = 21 minutes' },
+          { left: 'movie only', right: '115 min - 21 min = 94 min' },
+          { left: 'estimate', right: '115 min - about 20 min is about 95 min' }
+        ]
+      : [
+          { left: 'add', right: 'find all trailer minutes first' },
+          { left: 'subtract', right: 'theater time minus trailers' },
+          { left: 'explain', right: 'use the estimate to check reasonableness' }
+        ];
+  }
+  return solved
+    ? [
+        { left: 'estimate', right: seed.equations?.slice(0, 2).join('; ') || 'round the measurements' },
+        { left: 'actual', right: seed.equations?.slice(2, 4).join('; ') || seed.solvedAnswer },
+        { left: 'explain', right: 'the rounded answer should be close to the exact answer' }
+      ]
+    : [
+        { left: 'measure', right: 'read the source measurement' },
+        { left: 'round', right: 'make an estimate' },
+        { left: 'solve', right: 'use exact values and check reasonableness' }
+      ];
+}
+
+function makeM2TopicCLabSections(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean,
+  lower: string
+): ProblemVisualSpec['sections'] | undefined {
+  if (/can of tomatoes|10 pens|apple, lemon, and banana|frozen turkey|recipe (requires|needs) 300 milliliters|sara triples|capacity of her container|fills 3 buckets|3 buckets with 4 liters|how many liters of water does the container hold/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Operation selected from the measurement story' : 'Choose the operation from the relationship',
+        model: 'mixed-operation',
+        equation: solved ? (seed.equations ?? []).join('; ') : 'draw the relationship, then compute',
+        rows: topicCMixedRows(seed, solved, lower),
+        caption: 'The unit stays attached while the operation changes.'
+      }
+    ];
+  }
+
+  const isLesson10LiquidScale = /label the vertical number line|how much liquid|estimate each container to the nearest hundred milliliters|capacity of 4 barrels|barrel/.test(lower);
+
+  if (isLesson10LiquidScale) {
+    if (/barrel/.test(lower)) {
+      return [
+        {
+          kind: 'measurement-lab',
+          label: solved ? 'Barrels plotted on a liter scale' : 'Plot each barrel capacity',
+          model: 'vertical-liquid-scale',
+          equation: solved ? '96 L - 68 L = 28 L' : 'greatest, smallest, closest to 70 L, and difference',
+          rows: solved
+            ? [
+                { left: 'D', right: '52 L: smallest' },
+                { left: 'B', right: '68 L: closest to 70 L' },
+                { left: 'A', right: '75 L: given point' },
+                { left: 'C', right: '96 L: greatest' }
+              ]
+            : [
+                { left: 'label', right: 'mark 50, 60, 70, 80, 90, 100 L' },
+                { left: 'plot', right: 'place A, B, C, and D on the same scale' },
+                { left: 'compare', right: 'use position, then subtract liters' }
+              ],
+          caption: 'The number line shows order and distance at the same time.'
+        }
+      ];
+    }
+
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Container as a vertical number line' : 'Build the container scale',
+        model: 'vertical-liquid-scale',
+        equation: solved ? '1,000 mL - 300 mL = 700 mL' : '1 L = 1,000 mL; each cup adds 100 mL',
+        rows: solved
+          ? [
+              { left: 'whole', right: '1,000 mL full container' },
+              { left: 'halfway', right: '500 mL' },
+              { left: 'interval', right: 'each equal cup marks 100 mL' },
+              { left: 'left after pour', right: '700 mL' }
+            ]
+          : [
+              { left: 'pour', right: 'add one equal cup at a time' },
+              { left: 'mark', right: 'label each equal interval' },
+              { left: 'read', right: 'subtract what is poured out' }
+            ],
+        caption: 'A measuring bottle is a number line turned upright.'
+      }
+    ];
+  }
+
+  if (/nearest hundred|round to 600|19 hundreds|1,865|1,250|1,842/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Nearest hundred: lower hundred, halfway, upper hundred' : 'Round to the nearest hundred',
+        model: 'rounding-hundred',
+        equation: solved ? (seed.equations ?? []).slice(0, 6).join('; ') : 'below 50 rounds down; 50 or more rounds up',
+        rows: topicCRoundingRows(seed, solved, 'hundred'),
+        caption: 'The halfway mark decides whether the rounded number moves up.'
+      }
+    ];
+  }
+
+  if (/nearest 10|nearest ten|two tens|basketball game/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Nearest ten: lower ten, halfway, upper ten' : 'Round to the nearest ten',
+        model: 'rounding-ten',
+        equation: solved ? (seed.equations ?? []).slice(0, 6).join('; ') : 'below 5 rounds down; 5 or more rounds up',
+        rows: topicCRoundingRows(seed, solved, 'ten'),
+        caption: 'Locate the number between two tens before naming the rounded answer.'
+      }
+    ];
+  }
+
+  if (/vertical number line|liquid volume/.test(lower)) {
+    return [
+      {
+        kind: 'measurement-lab',
+        label: solved ? 'Container as a vertical number line' : 'Build the container scale',
+        model: 'vertical-liquid-scale',
+        equation: solved ? '1,000 mL - 300 mL = 700 mL' : '1 L = 1,000 mL; each cup adds 100 mL',
+        rows: solved
+          ? [
+              { left: 'whole', right: '1,000 mL full container' },
+              { left: 'halfway', right: '500 mL' },
+              { left: 'interval', right: 'each equal cup marks 100 mL' },
+              { left: 'left after pour', right: '700 mL' }
+            ]
+          : [
+              { left: 'pour', right: 'add one equal cup at a time' },
+              { left: 'mark', right: 'label each equal interval' },
+              { left: 'read', right: 'subtract what is poured out' }
+            ],
+        caption: 'A measuring bottle is a number line turned upright.'
+      }
+    ];
+  }
+
+  return undefined;
+}
+
+function topicCMixedRows(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean,
+  lower: string
+): Array<{ left: string; right: string }> {
+  if (/can of tomatoes/.test(lower)) {
+    return solved
+      ? [
+          { left: 'whole', right: '671 g total' },
+          { left: 'known part', right: 'baby food jar is 113 g' },
+          { left: 'unknown part', right: 'tomatoes are 558 g' },
+          { left: 'compare', right: 'tomatoes are 445 g more' }
+        ]
+      : [
+          { left: 'subtract', right: 'find the missing part from the total' },
+          { left: 'subtract again', right: 'compare can and jar' },
+          { left: 'unit', right: 'grams' }
+        ];
+  }
+  if (/10 pens/.test(lower)) {
+    return solved
+      ? [
+          { left: '1 pen', right: '6 g' },
+          { left: '10 pens', right: '60 g' },
+          { left: 'empty box', right: '82 g' },
+          { left: 'box + pens', right: '142 g' }
+        ]
+      : [
+          { left: 'multiply', right: '10 equal pen weights' },
+          { left: 'add', right: 'include the empty box' },
+          { left: 'unit', right: 'grams' }
+        ];
+  }
+  if (/apple, lemon, and banana/.test(lower)) {
+    return solved
+      ? [
+          { left: 'total fruit', right: '508 g' },
+          { left: 'banana', right: '508 g - 317 g = 191 g' },
+          { left: 'lemon', right: '191 g - 68 g = 123 g' },
+          { left: 'apple', right: '317 g - 123 g = 194 g' }
+        ]
+      : [
+          { left: 'part 1', right: 'find banana from the total' },
+          { left: 'part 2', right: 'find lemon from banana' },
+          { left: 'part 3', right: 'find apple from apple + lemon' }
+        ];
+  }
+  if (/frozen turkey/.test(lower)) {
+    return solved
+      ? [
+          { left: 'one turkey', right: 'about 5 kg' },
+          { left: 'total order', right: '45 kg' },
+          { left: 'groups', right: '9 turkeys' }
+        ]
+      : [
+          { left: 'draw', right: '45 kg split into 5 kg units' },
+          { left: 'divide', right: 'count the groups' },
+          { left: 'answer unit', right: 'turkeys' }
+        ];
+  }
+  if (/recipe (requires|needs) 300 milliliters|sara triples/.test(lower)) {
+    return solved
+      ? [
+          { left: 'one recipe', right: '300 mL milk' },
+          { left: 'triple recipe', right: '3 equal recipes' },
+          { left: 'needed', right: '900 mL milk' }
+        ]
+      : [
+          { left: 'multiply', right: '3 groups of 300 mL' },
+          { left: 'record', right: 'answer in milliliters' }
+        ];
+  }
+  return solved
+    ? [
+        { left: '3 buckets', right: '3 x 4 L = 12 L' },
+        { left: 'left over', right: '2 L' },
+        { left: 'container', right: '14 L total' }
+      ]
+    : [
+        { left: 'multiply', right: 'filled buckets first' },
+        { left: 'add', right: 'include the leftover water' },
+        { left: 'unit', right: 'liters' }
+      ];
+}
+
+function topicCRoundingRows(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean,
+  unit: 'ten' | 'hundred'
+): Array<{ left: string; right: string }> {
+  if (!solved) {
+    return unit === 'ten'
+      ? [
+          { left: '1. lower ten', right: 'write the ten below the number' },
+          { left: '2. halfway', right: 'mark 5 ones after the lower ten' },
+          { left: '3. upper ten', right: 'round to the closer ten' }
+        ]
+      : [
+          { left: '1. lower hundred', right: 'write the hundred below the number' },
+          { left: '2. halfway', right: 'mark 50 after the lower hundred' },
+          { left: '3. upper hundred', right: 'round to the closer hundred' }
+        ];
+  }
+
+  const equations = seed.equations ?? [];
+  const first = equations.slice(0, 6).map((line) => {
+    const [left, right] = line.split(/~=|≈/u).map((part) => part.trim());
+    return { left: left || 'number', right: right || line };
+  });
+  return first.length ? first : [{ left: 'rounded answer', right: seed.solvedAnswer }];
 }
 
 function makeM2MeasurementModel(seed: ProblemSetCenteredProblem | ProblemSeed, solved: boolean): ProblemVisualMeasurementModelSection | undefined {
@@ -2485,7 +3503,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         number: 1,
         sourcePrompt: 'Weigh the bags of beans and rice on the scale. Then, write the weight on the scales below. Estimate and find the total weight and difference, then explain whether the answers are reasonable.',
         solvedAnswer: 'Beans weigh 91 g and rice weighs 58 g. The estimated total is 150 g, the actual total is 149 g, the estimated difference is 30 g, and the actual difference is 33 g.',
-        equations: ['91 g + 58 g ~= 90 g + 60 g = 150 g', '91 g + 58 g = 149 g', '91 g - 58 g ~= 90 g - 60 g = 30 g', '91 g - 58 g = 33 g'],
+        equations: ['91 g + 58 g ≈ 90 g + 60 g = 150 g', '91 g + 58 g = 149 g', '91 g - 58 g ≈ 90 g - 60 g = 30 g', '91 g - 58 g = 33 g'],
         dataDisplay: dataTable('Beans and rice', ['Item', 'Actual', 'Rounded'], [['Beans', '____ g', '____ g'], ['Rice', '____ g', '____ g'], ['Sum', '____ g', '____ g'], ['Difference', '____ g', '____ g']]),
         solvedDataDisplay: dataTable('Beans and rice', ['Item', 'Actual', 'Rounded'], [['Beans', '91 g', '90 g'], ['Rice', '58 g', '60 g'], ['Sum', '149 g', '150 g'], ['Difference', '33 g', '30 g']])
       }),
@@ -2493,7 +3511,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         number: 2,
         sourcePrompt: 'Measure the lengths of the three pieces of yarn. Estimate and find the total length of Yarn A and Yarn C. Then subtract to estimate and find the difference between that total and Yarn B.',
         solvedAnswer: 'Yarn A is 64 cm, Yarn B is 88 cm, and Yarn C is 38 cm. A + C is 102 cm, estimated as 100 cm. The difference from Yarn B is 14 cm, estimated as 10 cm.',
-        equations: ['64 cm ~= 60 cm', '88 cm ~= 90 cm', '38 cm ~= 40 cm', '64 cm + 38 cm = 102 cm', '60 cm + 40 cm = 100 cm', '102 cm - 88 cm = 14 cm', '100 cm - 90 cm = 10 cm'],
+        equations: ['64 cm ≈ 60 cm', '88 cm ≈ 90 cm', '38 cm ≈ 40 cm', '64 cm + 38 cm = 102 cm', '60 cm + 40 cm = 100 cm', '102 cm - 88 cm = 14 cm', '100 cm - 90 cm = 10 cm'],
         dataDisplay: dataTable('Yarn lengths', ['Yarn', 'Actual', 'Rounded'], [['A', '____ cm', '____ cm'], ['B', '____ cm', '____ cm'], ['C', '____ cm', '____ cm']]),
         solvedDataDisplay: dataTable('Yarn lengths', ['Yarn', 'Actual', 'Rounded'], [['A', '64 cm', '60 cm'], ['B', '88 cm', '90 cm'], ['C', '38 cm', '40 cm'], ['A + C', '102 cm', '100 cm'], ['A + C minus B', '14 cm', '10 cm']])
       }),
@@ -2501,7 +3519,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         number: 3,
         sourcePrompt: 'Plot the amount of liquid in Containers D, E, and F on the number lines. Then, round to the nearest 10 milliliters. Estimate and find the total amount, then estimate and find the difference between Containers D and E.',
         solvedAnswer: 'Container D is 212 mL ≈ 210 mL, Container E is 238 mL ≈ 240 mL, and Container F is 195 mL ≈ 200 mL. The actual total is 645 mL, and D to E differs by 26 mL.',
-        equations: ['212 mL ~= 210 mL', '238 mL ~= 240 mL', '195 mL ~= 200 mL', '210 mL + 240 mL + 200 mL = 650 mL', '212 mL + 238 mL + 195 mL = 645 mL', '240 mL - 210 mL = 30 mL', '238 mL - 212 mL = 26 mL'],
+        equations: ['212 mL ≈ 210 mL', '238 mL ≈ 240 mL', '195 mL ≈ 200 mL', '210 mL + 240 mL + 200 mL = 650 mL', '212 mL + 238 mL + 195 mL = 645 mL', '240 mL - 210 mL = 30 mL', '238 mL - 212 mL = 26 mL'],
         dataDisplay: dataTable('Container rounding', ['Container', 'Actual volume', 'Rounded to nearest 10 mL'], [['D', '____ mL', '____ mL'], ['E', '____ mL', '____ mL'], ['F', '____ mL', '____ mL']]),
         solvedDataDisplay: dataTable('Container rounding', ['Container', 'Actual volume', 'Rounded to nearest 10 mL'], [['D', '212 mL', '210 mL'], ['E', '238 mL', '240 mL'], ['F', '195 mL', '200 mL']])
       }),

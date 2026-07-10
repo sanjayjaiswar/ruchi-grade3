@@ -7,9 +7,9 @@ export const M2_LESSON13_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 13 animation: Round two- and three-digit numbers to the nearest ten o",
-    context: "Round two-digit measurements to the nearest ten.",
-    equation: "28 to 68 on equal intervals of 10",
+    title: "Lesson 13 animation: round to the nearest ten",
+    context: "Use the lower ten, halfway point, and upper ten for two- and three-digit numbers.",
+    equation: "48 minutes is between 40 and 50, so it rounds to 50 minutes",
     teacherPrompt: "What is the same and different about Problems 1(c) and 1(d)? Did you solve the problems differently? Why or why not?",
     focus: [
       "number line",
@@ -17,16 +17,15 @@ export const M2_LESSON13_RUNTIME: LessonRuntimeConfig = {
       "source labels"
     ],
     numberLineLabels: [
-      "28",
-      "38",
+      "40",
+      "45",
       "48",
-      "58",
-      "68"
+      "50"
     ],
     numberLineJumps: [
-      "+10",
-      "+10",
-      "+10"
+      "+5 to halfway",
+      "+3",
+      "+2 to upper ten"
     ]
   },
 
