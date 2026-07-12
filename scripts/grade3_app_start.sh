@@ -8,6 +8,8 @@ PORT="${GRADE3_PORT:-4220}"
 HOST="${GRADE3_HOST:-127.0.0.1}"
 PUBLIC_HOST="${GRADE3_PUBLIC_HOST:-localhost}"
 CHECK_HOST="${GRADE3_CHECK_HOST:-$HOST}"
+ALLOWED_HOSTS="${GRADE3_ALLOWED_HOSTS:-}"
+STARTUP_TIMEOUT="${GRADE3_STARTUP_TIMEOUT:-120}"
 LOG_DIR="${GRADE3_LOG_DIR:-$GRADE3_ROOT/tmp/logs}"
 CONTEXT_FILE="${GRADE3_CONTEXT_FILE:-$GRADE3_ROOT/tmp/grade3-app-context-latest.txt}"
 APP_LOG="$LOG_DIR/grade3-app-latest.log"
@@ -91,6 +93,7 @@ Dev server:
   URL: http://${PUBLIC_HOST}:${PORT}/ruchika-grade3/
   Host bind: ${HOST}
   Port: ${PORT}
+  Startup timeout: ${STARTUP_TIMEOUT} seconds
 
 Commands:
   Start/restart: scripts/grade3_app_start.sh
@@ -159,6 +162,8 @@ stop_app() {
 }
 
 start_app() {
+  local start_command
+
   if [[ ! -d "$APP_DIR" ]]; then
     echo "Error: Angular app directory not found: $APP_DIR" >&2
     exit 1
@@ -187,29 +192,36 @@ start_app() {
   : > "$APP_LOG"
 
   echo "Starting Grade 3 Angular app..."
+  start_command=(./node_modules/.bin/ng serve --host "$HOST" --port "$PORT")
+  if [[ -n "$ALLOWED_HOSTS" ]]; then
+    start_command+=("--allowed-hosts=$ALLOWED_HOSTS")
+  fi
+
   if command -v screen >/dev/null 2>&1; then
     screen -dmS "$SCREEN_SESSION" bash -lc \
-      'cd "$1" && exec ./node_modules/.bin/ng serve --host "$2" --port "$3" > "$4" 2>&1' \
-      _ "$APP_DIR" "$HOST" "$PORT" "$APP_LOG"
+      'app_dir=$1; app_log=$2; shift 2; cd "$app_dir" && exec "$@" > "$app_log" 2>&1' \
+      _ "$APP_DIR" "$APP_LOG" "${start_command[@]}"
   else
     (
       cd "$APP_DIR"
-      nohup ./node_modules/.bin/ng serve --host "$HOST" --port "$PORT" > "$APP_LOG" 2>&1 < /dev/null &
+      nohup "${start_command[@]}" > "$APP_LOG" 2>&1 < /dev/null &
       echo $! > "$APP_PID_FILE"
     )
   fi
 
   local app_ok=false
-  for _ in {1..45}; do
+  local waited=0
+  while (( waited < STARTUP_TIMEOUT )); do
     if curl -sf "http://${CHECK_HOST}:${PORT}/ruchika-grade3/" >/dev/null; then
       app_ok=true
       break
     fi
     sleep 1
+    ((waited += 1))
   done
 
   if [[ "$app_ok" != "true" ]]; then
-    echo "Grade 3 app failed to respond on port ${PORT}. Check ${APP_LOG}." >&2
+    echo "Grade 3 app failed to respond on port ${PORT} within ${STARTUP_TIMEOUT} seconds. Check ${APP_LOG}." >&2
     tail -n 80 "$APP_LOG" >&2 || true
     exit 1
   fi
