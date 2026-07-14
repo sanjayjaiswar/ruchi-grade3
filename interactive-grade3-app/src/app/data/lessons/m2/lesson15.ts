@@ -9,7 +9,7 @@ export const M2_LESSON15_RUNTIME: LessonRuntimeConfig = {
     title: "Lesson 15 animation: add measurements and compose once",
     context: "Beaker A has 56 milliliters and Beaker B has 27 milliliters. Add by place value, compose 10 ones as 1 ten, and keep milliliters attached.",
     equation: "56 mL + 27 mL = 83 mL",
-    teacherPrompt: "Notice the units in Problems 1(j) and 1(k). Both problems use both kilograms and grams. Did having two units in the problem change anything about the wa.",
+    teacherPrompt: "Notice the units in Problems 1(j) and 1(k). Did having two units change the way you aligned and added the measurements?",
     focus: [
       "addend",
       "measurement",
@@ -22,6 +22,36 @@ export const M2_LESSON15_RUNTIME: LessonRuntimeConfig = {
       "compose 1 ten",
       "83 mL",
       "unit stays mL"
+    ],
+    placeValueAddition: {
+      unit: "mL",
+      columns: ["tens", "ones"],
+      addends: [
+        { label: "Beaker A", digits: [5, 6] },
+        { label: "Beaker B", digits: [2, 7] }
+      ],
+      resultDigits: ["8", "3"],
+      regroupings: [
+        { fromColumn: 1, toColumn: 0, label: "10 ones → 1 ten" }
+      ],
+      result: "83 mL"
+    },
+    conceptSteps: [
+      {
+        label: "Model addends",
+        action: "Place 56 and 27 into tens and ones columns.",
+        result: "Like units and place values are aligned."
+      },
+      {
+        label: "Compose once",
+        action: "13 ones become 1 ten and 3 ones.",
+        result: "The new ten joins the other tens."
+      },
+      {
+        label: "Name the sum",
+        action: "Read 8 tens and 3 ones with the measurement unit.",
+        result: "56 mL + 27 mL = 83 mL."
+      }
     ]
   },
 

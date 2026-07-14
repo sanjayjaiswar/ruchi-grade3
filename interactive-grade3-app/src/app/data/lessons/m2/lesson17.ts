@@ -8,9 +8,9 @@ export const M2_LESSON17_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 17 animation: estimate sums by rounding",
-    context: "Estimate 362 + 159 by rounding each addend to the nearest hundred, then compare with the actual sum.",
-    equation: "362 + 159 is about 400 + 200 = 600",
+    title: "Compare estimates and choose useful precision",
+    context: "The Teacher Edition compares rounding 362 + 159 to hundreds, tens, and fifties. A useful estimate balances closeness to the actual sum with easy mental math.",
+    equation: "Actual: 362 + 159 = 521",
     teacherPrompt: "What were some of your observations about Problem 1(a)? What did the closest estimates have in common?",
     focus: [
       "addend",
@@ -18,17 +18,47 @@ export const M2_LESSON17_RUNTIME: LessonRuntimeConfig = {
       "number line",
       "source labels"
     ],
-    numberLineLabels: [
-      "300",
-      "362",
-      "400",
-      "159",
-      "200"
-    ],
-    numberLineJumps: [
-      "round 362 to 400",
-      "round 159 to 200",
-      "add estimate"
+    estimateComparison: {
+      expression: "362 + 159",
+      actual: 521,
+      strategies: [
+        {
+          label: "nearest hundred",
+          roundedExpression: "400 + 200",
+          estimate: 600,
+          error: 79
+        },
+        {
+          label: "nearest ten",
+          roundedExpression: "360 + 160",
+          estimate: 520,
+          error: 1,
+          best: true
+        },
+        {
+          label: "nearest fifty",
+          roundedExpression: "350 + 150",
+          estimate: 500,
+          error: 21
+        }
+      ]
+    },
+    conceptSteps: [
+      {
+        label: "Make several estimates",
+        action: "Round the same addends to hundreds, tens, and fifties.",
+        result: "The estimates are 600, 520, and 500."
+      },
+      {
+        label: "Find the actual sum",
+        action: "Add 362 + 159 exactly.",
+        result: "The actual sum is 521."
+      },
+      {
+        label: "Compare error",
+        action: "Measure how far each estimate is from 521.",
+        result: "520 is closest; rounding to fifties is also reasonably close and easy."
+      }
     ]
   },
 

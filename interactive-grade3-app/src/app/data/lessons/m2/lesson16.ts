@@ -22,6 +22,37 @@ export const M2_LESSON16_RUNTIME: LessonRuntimeConfig = {
       "12 tens",
       "424 g",
       "compose twice"
+    ],
+    placeValueAddition: {
+      unit: "g",
+      columns: ["hundreds", "tens", "ones"],
+      addends: [
+        { label: "Bag A", digits: [2, 6, 6] },
+        { label: "Bag B", digits: [1, 5, 8] }
+      ],
+      resultDigits: ["4", "2", "4"],
+      regroupings: [
+        { fromColumn: 2, toColumn: 1, label: "10 ones → 1 ten" },
+        { fromColumn: 1, toColumn: 0, label: "10 tens → 1 hundred" }
+      ],
+      result: "424 g"
+    },
+    conceptSteps: [
+      {
+        label: "Add ones",
+        action: "6 ones + 8 ones = 14 ones.",
+        result: "Compose 10 ones as 1 ten; keep 4 ones."
+      },
+      {
+        label: "Add tens",
+        action: "6 tens + 5 tens + 1 composed ten = 12 tens.",
+        result: "Compose 10 tens as 1 hundred; keep 2 tens."
+      },
+      {
+        label: "Add hundreds",
+        action: "2 hundreds + 1 hundred + 1 composed hundred = 4 hundreds.",
+        result: "266 g + 158 g = 424 g."
+      }
     ]
   },
 

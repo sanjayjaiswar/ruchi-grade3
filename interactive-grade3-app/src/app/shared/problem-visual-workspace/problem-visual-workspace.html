@@ -89,6 +89,27 @@
               </div>
             </ng-container>
 
+            <ng-container *ngIf="numberLineSection(child) as line">
+              <strong *ngIf="line.label">{{ line.label }}</strong>
+              <div class="visual-number-line" [class.is-vertical]="line.orientation === 'vertical'">
+                <div>
+                  <span
+                    *ngFor="let tick of line.ticks"
+                    [class.is-target]="tick.target"
+                    [class.is-rounded]="tick.rounded">
+                    {{ tick.label }}
+                  </span>
+                  <i
+                    *ngIf="line.targetMarker as marker"
+                    class="visual-number-line-target"
+                    [style.bottom.%]="marker.position">
+                    <b>{{ marker.label }}</b>
+                  </i>
+                </div>
+                <small *ngIf="line.caption">{{ line.caption }}</small>
+              </div>
+            </ng-container>
+
             <ng-container *ngIf="noteSection(child) as note">
               <strong *ngIf="note.label">{{ note.label }}</strong>
               <p class="visual-note">{{ note.text }}</p>
@@ -412,6 +433,65 @@
           </div>
         </div>
 
+        <div class="visual-place-value-addition" *ngIf="lab.placeValueAddition as addition">
+          <div class="visual-pv-head" [style.gridTemplateColumns]="'minmax(76px, auto) repeat(' + addition.columns.length + ', minmax(64px, 1fr))'">
+            <span>measurement</span>
+            <b *ngFor="let column of addition.columns">{{ column }}</b>
+          </div>
+          <div
+            class="visual-pv-addend"
+            *ngFor="let addend of addition.addends"
+            [style.gridTemplateColumns]="'minmax(76px, auto) repeat(' + addition.columns.length + ', minmax(64px, 1fr))'">
+            <strong>{{ addend.label }}</strong>
+            <span *ngFor="let digit of addend.digits">
+              <i *ngFor="let disk of range(digit, 9)"></i>
+              <small>{{ digit }}</small>
+            </span>
+          </div>
+          <div class="visual-pv-regroupings">
+            <span *ngFor="let move of addition.regroupings">{{ move.label }}</span>
+          </div>
+          <div class="visual-pv-sum" [style.gridTemplateColumns]="'minmax(76px, auto) repeat(' + addition.columns.length + ', minmax(64px, 1fr))'">
+            <strong>sum</strong>
+            <span *ngFor="let digit of addition.resultDigits">{{ digit }}</span>
+          </div>
+          <p>{{ addition.result }}</p>
+        </div>
+
+        <div class="visual-place-value-addition is-subtraction" *ngIf="lab.placeValueSubtraction as subtraction">
+          <div class="visual-pv-head" [style.gridTemplateColumns]="'minmax(76px, auto) repeat(' + subtraction.columns.length + ', minmax(64px, 1fr))'">
+            <span>state</span>
+            <b *ngFor="let column of subtraction.columns">{{ column }}</b>
+          </div>
+          <div class="visual-pv-addend" [style.gridTemplateColumns]="'minmax(76px, auto) repeat(' + subtraction.columns.length + ', minmax(64px, 1fr))'">
+            <strong>before</strong>
+            <span *ngFor="let digit of subtraction.beforeDigits"><i *ngFor="let disk of range(digit, 13)"></i><small>{{ digit }}</small></span>
+          </div>
+          <div class="visual-pv-regroupings"><span *ngFor="let move of subtraction.decompositions">{{ move.label }}</span></div>
+          <div class="visual-pv-addend is-decomposed" [style.gridTemplateColumns]="'minmax(76px, auto) repeat(' + subtraction.columns.length + ', minmax(64px, 1fr))'">
+            <strong>ready</strong>
+            <span *ngFor="let digit of subtraction.afterDigits"><i *ngFor="let disk of range(digit, 13)"></i><small>{{ digit }}</small></span>
+          </div>
+          <div class="visual-pv-addend is-subtrahend" [style.gridTemplateColumns]="'minmax(76px, auto) repeat(' + subtraction.columns.length + ', minmax(64px, 1fr))'">
+            <strong>- {{ subtraction.subtrahendLabel }}</strong>
+            <span *ngFor="let digit of subtraction.subtrahendDigits"><small>{{ digit }}</small></span>
+          </div>
+          <div class="visual-pv-sum" [style.gridTemplateColumns]="'minmax(76px, auto) repeat(' + subtraction.columns.length + ', minmax(64px, 1fr))'">
+            <strong>difference</strong>
+            <span *ngFor="let digit of subtraction.resultDigits">{{ digit }}</span>
+          </div>
+          <p>{{ subtraction.result }}</p>
+        </div>
+
+        <div class="visual-estimate-comparison" *ngIf="lab.estimateRows?.length">
+          <div class="visual-estimate-row is-head">
+            <span>Set</span><span>Exact expression</span><span>Actual</span><span>Rounded expression</span><span>Estimate</span><span>Error</span>
+          </div>
+          <div class="visual-estimate-row" *ngFor="let row of lab.estimateRows" [class.is-best]="row.best">
+            <span>{{ row.group }}</span><span>{{ row.expression }}</span><span>{{ row.actual }}</span><span>{{ row.roundedExpression }}</span><span>{{ row.estimate }}</span><span>{{ row.error }}</span>
+          </div>
+        </div>
+
         <div class="kg-place-value-stage topic-b-lab-rows" *ngIf="lab.model === 'benchmark-estimate' || lab.model === 'unit-sort' || lab.model === 'scale-read' || lab.model === 'weight-reason' || lab.model === 'capacity-estimate' || lab.model === 'water-mass-link' || lab.model === 'vertical-liquid-scale' || lab.model === 'mixed-operation' || lab.model === 'rounding-ten' || lab.model === 'rounding-hundred' || lab.model === 'compose-once' || lab.model === 'compose-twice' || lab.model === 'estimate-sum' || lab.model === 'decompose-once' || lab.model === 'decompose-twice' || lab.model === 'estimate-difference' || lab.model === 'mixed-measure'">
           <div class="kg-place-row" *ngFor="let row of lab.rows">
             <strong>{{ row.left }}</strong>
@@ -515,13 +595,20 @@
 
     <ng-container *ngIf="numberLineSection(section) as line">
       <strong *ngIf="line.label">{{ line.label }}</strong>
-      <div class="visual-number-line">
+      <div class="visual-number-line" [class.is-vertical]="line.orientation === 'vertical'">
         <div>
           <span
             *ngFor="let tick of line.ticks"
-            [class.is-target]="tick.target">
+            [class.is-target]="tick.target"
+            [class.is-rounded]="tick.rounded">
             {{ tick.label }}
           </span>
+          <i
+            *ngIf="line.targetMarker as marker"
+            class="visual-number-line-target"
+            [style.bottom.%]="marker.position">
+            <b>{{ marker.label }}</b>
+          </i>
         </div>
         <small *ngIf="line.caption">{{ line.caption }}</small>
       </div>

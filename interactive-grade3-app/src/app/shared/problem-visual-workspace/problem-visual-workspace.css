@@ -2526,6 +2526,190 @@
   line-height: 1.35;
 }
 
+.visual-place-value-addition {
+  display: grid;
+  gap: 7px;
+  padding: 12px;
+  border: 1px solid #c7d2e3;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  overflow-x: auto;
+}
+
+.visual-pv-head,
+.visual-pv-addend,
+.visual-pv-sum {
+  display: grid;
+  gap: 6px;
+  min-width: 330px;
+}
+
+.visual-pv-head > * {
+  padding: 7px;
+  border-radius: 6px 6px 0 0;
+  background: #174ea6;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.visual-pv-addend {
+  align-items: stretch;
+}
+
+.visual-pv-addend > strong,
+.visual-pv-sum > strong {
+  display: grid;
+  place-items: center end;
+  color: #3c4043;
+  font-size: 13px;
+  text-align: right;
+}
+
+.visual-pv-addend > span {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  align-content: center;
+  min-height: 60px;
+  padding: 8px;
+  border: 1px solid #c7d2e3;
+  background: #ffffff;
+}
+
+.visual-pv-addend > span i {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #4285f4;
+  box-shadow: inset 0 -3px 0 #1967d2;
+}
+
+.visual-place-value-addition .visual-pv-addend > span small {
+  position: absolute;
+  right: 4px;
+  bottom: 2px;
+  color: #174ea6;
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.visual-pv-regroupings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+  min-width: 330px;
+}
+
+.visual-pv-regroupings span {
+  padding: 6px 10px;
+  border: 1px solid #f9ab00;
+  border-radius: 999px;
+  background: #fef7e0;
+  color: #b06000;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.visual-pv-sum {
+  padding-top: 7px;
+  border-top: 3px solid #174ea6;
+}
+
+.visual-pv-sum span {
+  display: grid;
+  place-items: center;
+  min-height: 42px;
+  border-radius: 6px;
+  background: #e6f4ea;
+  color: #137333;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.visual-place-value-addition > p {
+  margin: 0;
+  color: #137333;
+  font-size: 17px;
+  font-weight: 850;
+  text-align: center;
+}
+
+.visual-place-value-addition.is-subtraction .visual-pv-addend.is-decomposed > span {
+  border-color: #f9ab00;
+  background: #fef7e0;
+}
+
+.visual-place-value-addition.is-subtraction .visual-pv-addend.is-subtrahend > span {
+  display: grid;
+  place-items: center;
+  border-bottom: 3px solid #174ea6;
+}
+
+.visual-place-value-addition.is-subtraction .visual-pv-addend.is-subtrahend > span small {
+  position: static;
+  color: #202124;
+  font-size: 18px;
+  font-weight: 850;
+}
+
+.visual-estimate-comparison {
+  display: grid;
+  min-width: 0;
+  border: 1px solid #c7d2e3;
+  border-radius: 8px;
+  background: #ffffff;
+  overflow-x: auto;
+}
+
+.visual-estimate-row {
+  display: grid;
+  grid-template-columns: 42px minmax(118px, 1fr) 70px minmax(118px, 1fr) 74px 58px;
+  min-width: 650px;
+  border-bottom: 1px solid #d2d9e6;
+}
+
+.visual-estimate-row:last-child {
+  border-bottom: 0;
+}
+
+.visual-estimate-row span {
+  padding: 8px;
+  border-right: 1px solid #e3e7ee;
+  color: #202124;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.visual-estimate-row span:last-child {
+  border-right: 0;
+}
+
+.visual-estimate-row.is-head span {
+  background: #174ea6;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.visual-estimate-row.is-best span {
+  background: #e6f4ea;
+  color: #137333;
+  font-weight: 850;
+}
+
+.visual-estimate-row.is-best span:last-child::after {
+  margin-left: 4px;
+  content: "closest";
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
 .visual-data-table {
   display: grid;
   width: min(100%, 900px);
@@ -3386,6 +3570,128 @@
   background: #ffffff;
   content: "";
   transform: translateX(-50%);
+}
+
+.visual-number-line.is-vertical {
+  justify-items: center;
+  width: 100%;
+}
+
+.visual-number-line.is-vertical > div {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: stretch;
+  width: 172px;
+  min-height: 268px;
+  padding: 0;
+  border-bottom: 0;
+  border-left: 4px solid #3c4043;
+}
+
+.visual-number-line.is-vertical .visual-number-line-target {
+  position: absolute;
+  left: -14px;
+  z-index: 3;
+  width: 24px;
+  height: 24px;
+  border: 4px solid #ffffff;
+  border-radius: 999px;
+  background: #fbbc04;
+  box-shadow: 0 0 0 3px #1a73e8, 0 4px 10px rgba(32, 33, 36, 0.18);
+  transform: translateY(50%);
+}
+
+.visual-number-line.is-vertical .visual-number-line-target b {
+  position: absolute;
+  top: 50%;
+  left: 34px;
+  width: max-content;
+  max-width: 140px;
+  color: #174ea6;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 850;
+  transform: translateY(-50%);
+}
+
+.visual-number-line.is-vertical span {
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 20px;
+  padding: 0 0 0 18px;
+  text-align: left;
+}
+
+.visual-number-line.is-vertical span::before {
+  top: 50%;
+  left: -9px;
+  width: 18px;
+  height: 3px;
+  transform: translateY(-50%);
+}
+
+.visual-number-line.is-vertical span.is-target {
+  color: #174ea6;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.visual-number-line.is-vertical span.is-target::after {
+  top: 50%;
+  left: -2px;
+  width: 18px;
+  height: 18px;
+  border-color: #1a73e8;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.visual-number-line.is-vertical span.is-rounded {
+  color: #137333;
+  font-size: 15px;
+  font-weight: 850;
+}
+
+.visual-number-line.is-vertical span.is-rounded::after {
+  position: absolute;
+  top: 50%;
+  left: -2px;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #188038;
+  border-radius: 4px;
+  background: #e6f4ea;
+  content: "";
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+:host-context(.lesson-m2-l13) .visual-card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+:host-context(.lesson-m2-l13) .visual-sub-card {
+  justify-items: center;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+}
+
+:host-context(.lesson-m2-l13) .visual-sub-card > strong {
+  justify-self: stretch;
+  justify-content: center;
+  background: #e8f0fe;
+  color: #174ea6;
+  text-align: center;
+}
+
+:host-context(.lesson-m2-l13) .visual-number-line.is-vertical small {
+  max-width: 220px;
+  color: #3c4043;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: center;
 }
 
 .visual-clock {

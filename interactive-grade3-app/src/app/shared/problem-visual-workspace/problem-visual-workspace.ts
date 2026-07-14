@@ -361,7 +361,8 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     const matchCards = Array.from(host.querySelectorAll<HTMLElement>('.visual-expression-match-row span, .visual-expression-match-key span'));
     const tableRows = Array.from(host.querySelectorAll<HTMLElement>('.visual-data-row:not(.is-head)'));
     const equations = Array.from(host.querySelectorAll<HTMLElement>('.visual-equations span'));
-    const measurementItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-measurement .measurement-bars span, .visual-measurement .measurement-liquid .liquid-vessel, .visual-measurement .measurement-conversion span, .visual-measurement .measurement-rounding span, .visual-measurement .measurement-operation span, .visual-measurement-lab .kg-pan, .visual-measurement-lab .kg-ten-frame span, .visual-measurement-lab .kg-place-row'));
+    const measurementItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-measurement .measurement-bars span, .visual-measurement .measurement-liquid .liquid-vessel, .visual-measurement .measurement-conversion span, .visual-measurement .measurement-rounding span, .visual-measurement .measurement-operation span, .visual-measurement-lab .kg-pan, .visual-measurement-lab .kg-ten-frame span, .visual-measurement-lab .kg-place-row, .visual-place-value-addition i, .visual-pv-regroupings span, .visual-pv-sum span, .visual-estimate-row:not(.is-head)'));
+    const numberLineItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-number-line span, .visual-number-line-target'));
     const diagramItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-floor-room, .visual-line-plot-x, .visual-geometry-shape'));
 
     animate(sections, {
@@ -402,6 +403,15 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
       duration: 320,
       delay: stagger(24),
       ease: 'out(2)'
+    });
+
+    animate(numberLineItems, {
+      opacity: keepTextOpaque ? 1 : [0, 1],
+      translateX: [-10, 0],
+      scale: [0.88, 1],
+      duration: 360,
+      delay: stagger(34),
+      ease: 'out(3)'
     });
 
     animate(diagramItems, {

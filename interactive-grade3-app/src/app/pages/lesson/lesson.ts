@@ -477,6 +477,9 @@ export class LessonPage implements OnInit, AfterViewChecked {
         '.lesson-animation-line-track i',
         '.lesson-animation-clock-face analog-clock',
         '.lesson-animation-measure-track span',
+        '.lesson-animation-pv-row i',
+        '.lesson-animation-pv-moves span',
+        '.lesson-animation-pv-result span',
         '.lesson-animation-area-grid span',
         '.lesson-animation-fraction-strip span',
         '.lesson-animation-graph-bars i',
@@ -2508,6 +2511,10 @@ export class LessonPage implements OnInit, AfterViewChecked {
 
   get lessonAnimationMeasurementTicks(): string[] {
     return this.lessonAnimation?.measurementTicks ?? ['0', '1', '2', '3', '4', '5'];
+  }
+
+  lessonAnimationPlaceValueDisks(count: number, max = 9): number[] {
+    return Array.from({ length: Math.max(0, Math.min(Math.round(count), max)) }, (_, index) => index + 1);
   }
 
   get lessonAnimationAreaTiles(): number[] {

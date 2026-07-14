@@ -7,25 +7,55 @@ export const M2_LESSON13_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 13 animation: round to the nearest ten",
-    context: "Use the lower ten, halfway point, and upper ten for two- and three-digit numbers.",
-    equation: "48 minutes is between 40 and 50, so it rounds to 50 minutes",
+    title: "Round two- and three-digit numbers on a vertical number line",
+    context: "Find the two bounding tens, mark the halfway number, then move to the closer ten. The same model works when the number has two digits or three digits.",
+    equation: "28 is 2 away from 30; 162 is 2 away from 160",
     teacherPrompt: "What is the same and different about Problems 1(c) and 1(d)? Did you solve the problems differently? Why or why not?",
     focus: [
       "number line",
       "round",
       "source labels"
     ],
-    numberLineLabels: [
-      "40",
-      "45",
-      "48",
-      "50"
+    numberLineExamples: [
+      {
+        label: "Teacher model: 28 minutes",
+        lower: "20",
+        halfway: "25",
+        upper: "30",
+        target: "28",
+        rounded: "30",
+        targetPosition: 80,
+        direction: "up",
+        distance: "2 away"
+      },
+      {
+        label: "Problem Set: 162",
+        lower: "160",
+        halfway: "165",
+        upper: "170",
+        target: "162",
+        rounded: "160",
+        targetPosition: 20,
+        direction: "down",
+        distance: "2 away"
+      }
     ],
-    numberLineJumps: [
-      "+5 to halfway",
-      "+3",
-      "+2 to upper ten"
+    conceptSteps: [
+      {
+        label: "Bound it",
+        action: "Write the lower and upper tens.",
+        result: "28 is between 20 and 30; 162 is between 160 and 170."
+      },
+      {
+        label: "Mark halfway",
+        action: "Add 5 to the lower ten.",
+        result: "25 and 165 split each interval into two equal distances."
+      },
+      {
+        label: "Choose the closer ten",
+        action: "Follow the shorter distance from the target dot.",
+        result: "28 rounds to 30; 162 rounds to 160."
+      }
     ]
   },
 

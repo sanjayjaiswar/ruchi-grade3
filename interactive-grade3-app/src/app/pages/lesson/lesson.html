@@ -1671,14 +1671,60 @@
                   </div>
                 </div>
 
-                <div *ngSwitchCase="'number-line'" class="lesson-animation-number-line" aria-label="Animated number line model">
-                  <div class="lesson-animation-line-track">
-                    <span *ngFor="let label of lessonAnimationNumberLineLabels"></span>
-                    <i *ngFor="let jump of lessonAnimationNumberLineJumps">{{ jump }}</i>
+                <div
+                  *ngSwitchCase="'number-line'"
+                  class="lesson-animation-number-line"
+                  [class.has-rounding-examples]="animation.numberLineExamples?.length"
+                  aria-label="Animated number line model">
+                  <div class="lesson-animation-estimate-comparison" *ngIf="animation.estimateComparison as comparison">
+                    <header>
+                      <strong>{{ comparison.expression }}</strong>
+                      <span>actual = {{ comparison.actual }}</span>
+                    </header>
+                    <article *ngFor="let strategy of comparison.strategies" [class.is-best]="strategy.best">
+                      <div class="lesson-animation-estimate-source" *ngIf="strategy.expression">
+                        <span>{{ strategy.expression }}</span>
+                        <small *ngIf="strategy.actual !== undefined">actual {{ strategy.actual }}</small>
+                      </div>
+                      <strong>{{ strategy.label }}</strong>
+                      <span>{{ strategy.roundedExpression }}</span>
+                      <b>≈ {{ strategy.estimate }}</b>
+                      <div class="lesson-animation-estimate-error">
+                        <i [style.width.%]="strategy.error"></i>
+                      </div>
+                      <small>{{ strategy.movement ? strategy.movement + ' • ' : '' }}error {{ strategy.error }}</small>
+                    </article>
                   </div>
-                  <div class="lesson-animation-line-labels">
-                    <span *ngFor="let label of lessonAnimationNumberLineLabels">{{ label }}</span>
-                  </div>
+                  <ng-container *ngIf="!animation.estimateComparison">
+                    <ng-container *ngIf="animation.numberLineExamples?.length; else problemCenteredNumberLineDefault">
+                      <div class="lesson-animation-rounding-cards">
+                        <article *ngFor="let example of animation.numberLineExamples">
+                          <strong>{{ example.label }}</strong>
+                          <div class="lesson-animation-vertical-line" [class.rounds-up]="example.direction === 'up'" [class.rounds-down]="example.direction === 'down'">
+                            <span class="is-upper">{{ example.upper }}</span>
+                            <span class="is-halfway">{{ example.halfway }} <small>halfway</small></span>
+                            <span class="is-lower">{{ example.lower }}</span>
+                            <i class="is-target" [style.bottom.%]="example.targetPosition"><b>{{ example.target }}</b></i>
+                          </div>
+                          <div class="lesson-animation-rounding-result">
+                            <span>{{ example.target }}</span>
+                            <i aria-hidden="true">→</i>
+                            <strong>{{ example.rounded }}</strong>
+                            <small>{{ example.distance }}</small>
+                          </div>
+                        </article>
+                      </div>
+                    </ng-container>
+                    <ng-template #problemCenteredNumberLineDefault>
+                      <div class="lesson-animation-line-track">
+                        <span *ngFor="let label of lessonAnimationNumberLineLabels"></span>
+                        <i *ngFor="let jump of lessonAnimationNumberLineJumps">{{ jump }}</i>
+                      </div>
+                      <div class="lesson-animation-line-labels">
+                        <span *ngFor="let label of lessonAnimationNumberLineLabels">{{ label }}</span>
+                      </div>
+                    </ng-template>
+                  </ng-container>
                 </div>
 
                 <div *ngSwitchCase="'clock'" class="lesson-animation-clock" aria-label="Animated clock model">
@@ -1688,10 +1734,70 @@
                   </div>
                 </div>
 
-                <div *ngSwitchCase="'measurement'" class="lesson-animation-measurement" aria-label="Animated measurement model">
-                  <div class="lesson-animation-measure-track">
-                    <span *ngFor="let tick of lessonAnimationMeasurementTicks">{{ tick }}</span>
+                <div
+                  *ngSwitchCase="'measurement'"
+                  class="lesson-animation-measurement"
+                  [class.has-place-value-addition]="animation.placeValueAddition"
+                  aria-label="Animated measurement model">
+                  <div class="lesson-animation-place-value is-subtraction" *ngIf="animation.placeValueSubtraction as subtraction">
+                    <div class="lesson-animation-pv-head" [style.gridTemplateColumns]="'auto repeat(' + subtraction.columns.length + ', minmax(54px, 1fr))'">
+                      <span></span>
+                      <b *ngFor="let column of subtraction.columns">{{ column }}</b>
+                    </div>
+                    <div class="lesson-animation-pv-row" [style.gridTemplateColumns]="'auto repeat(' + subtraction.columns.length + ', minmax(54px, 1fr))'">
+                      <strong>before</strong>
+                      <span *ngFor="let digit of subtraction.beforeDigits"><i *ngFor="let disk of lessonAnimationPlaceValueDisks(digit, 13)"></i><small>{{ digit }}</small></span>
+                    </div>
+                    <div class="lesson-animation-pv-moves"><span *ngFor="let move of subtraction.decompositions">{{ move.label }}</span></div>
+                    <div class="lesson-animation-pv-row is-decomposed" [style.gridTemplateColumns]="'auto repeat(' + subtraction.columns.length + ', minmax(54px, 1fr))'">
+                      <strong>ready</strong>
+                      <span *ngFor="let digit of subtraction.afterDigits"><i *ngFor="let disk of lessonAnimationPlaceValueDisks(digit, 13)"></i><small>{{ digit }}</small></span>
+                    </div>
+                    <div class="lesson-animation-pv-row is-subtrahend" [style.gridTemplateColumns]="'auto repeat(' + subtraction.columns.length + ', minmax(54px, 1fr))'">
+                      <strong>- {{ subtraction.subtrahendLabel }}</strong>
+                      <span *ngFor="let digit of subtraction.subtrahendDigits"><small>{{ digit }}</small></span>
+                    </div>
+                    <div class="lesson-animation-pv-result" [style.gridTemplateColumns]="'auto repeat(' + subtraction.columns.length + ', minmax(54px, 1fr))'">
+                      <strong>difference</strong>
+                      <span *ngFor="let digit of subtraction.resultDigits">{{ digit }}</span>
+                    </div>
+                    <p>{{ subtraction.result }}</p>
                   </div>
+                  <ng-container *ngIf="!animation.placeValueSubtraction">
+                    <ng-container *ngIf="animation.placeValueAddition as addition; else problemCenteredMeasurementDefault">
+                      <div class="lesson-animation-place-value">
+                        <div class="lesson-animation-pv-head" [style.gridTemplateColumns]="'auto repeat(' + addition.columns.length + ', minmax(54px, 1fr))'">
+                          <span></span>
+                          <b *ngFor="let column of addition.columns">{{ column }}</b>
+                        </div>
+                        <div class="lesson-animation-pv-row" *ngFor="let addend of addition.addends" [style.gridTemplateColumns]="'auto repeat(' + addition.columns.length + ', minmax(54px, 1fr))'">
+                          <strong>{{ addend.label }}</strong>
+                          <span *ngFor="let digit of addend.digits"><i *ngFor="let disk of lessonAnimationPlaceValueDisks(digit)"></i><small>{{ digit }}</small></span>
+                        </div>
+                        <div class="lesson-animation-pv-moves"><span *ngFor="let move of addition.regroupings">{{ move.label }}</span></div>
+                        <div class="lesson-animation-pv-result" [style.gridTemplateColumns]="'auto repeat(' + addition.columns.length + ', minmax(54px, 1fr))'">
+                          <strong>sum</strong><span *ngFor="let digit of addition.resultDigits">{{ digit }}</span>
+                        </div>
+                        <p>{{ addition.result }}</p>
+                      </div>
+                    </ng-container>
+                    <ng-template #problemCenteredMeasurementDefault>
+                      <div class="lesson-animation-measurement-cycle" *ngIf="animation.measurementChecks as checks; else problemCenteredMeasureTrack">
+                        <div class="lesson-animation-cycle-steps">
+                          <span *ngFor="let step of checks.steps; let stepIndex = index"><b>{{ stepIndex + 1 }}</b>{{ step }}</span>
+                        </div>
+                        <article *ngFor="let row of checks.rows">
+                          <strong>{{ row.label }}</strong>
+                          <span><small>measured</small>{{ row.measured }}</span>
+                          <span><small>rounded</small>{{ row.rounded }}</span>
+                          <b><small>estimate</small>{{ row.estimate }}</b>
+                          <b><small>exact</small>{{ row.exact }}</b>
+                          <em>gap {{ row.gap }}</em>
+                        </article>
+                      </div>
+                      <ng-template #problemCenteredMeasureTrack><div class="lesson-animation-measure-track"><span *ngFor="let tick of lessonAnimationMeasurementTicks">{{ tick }}</span></div></ng-template>
+                    </ng-template>
+                  </ng-container>
                 </div>
 
                 <div *ngSwitchCase="'area-model'" class="lesson-animation-area" aria-label="Animated area model">
@@ -3220,14 +3326,60 @@
               </div>
             </div>
 
-            <div *ngSwitchCase="'number-line'" class="lesson-animation-number-line" aria-label="Animated number line model">
-              <div class="lesson-animation-line-track">
-                <span *ngFor="let label of lessonAnimationNumberLineLabels"></span>
-                <i *ngFor="let jump of lessonAnimationNumberLineJumps">{{ jump }}</i>
+            <div
+              *ngSwitchCase="'number-line'"
+              class="lesson-animation-number-line"
+              [class.has-rounding-examples]="animation.numberLineExamples?.length"
+              aria-label="Animated number line model">
+              <div class="lesson-animation-estimate-comparison" *ngIf="animation.estimateComparison as comparison">
+                <header>
+                  <strong>{{ comparison.expression }}</strong>
+                  <span>actual = {{ comparison.actual }}</span>
+              </header>
+              <article *ngFor="let strategy of comparison.strategies" [class.is-best]="strategy.best">
+                <div class="lesson-animation-estimate-source" *ngIf="strategy.expression">
+                  <span>{{ strategy.expression }}</span>
+                  <small *ngIf="strategy.actual !== undefined">actual {{ strategy.actual }}</small>
+                </div>
+                <strong>{{ strategy.label }}</strong>
+                <span>{{ strategy.roundedExpression }}</span>
+                <b>≈ {{ strategy.estimate }}</b>
+                  <div class="lesson-animation-estimate-error">
+                    <i [style.width.%]="strategy.error"></i>
+                  </div>
+                <small>{{ strategy.movement ? strategy.movement + ' • ' : '' }}error {{ strategy.error }}</small>
+                </article>
               </div>
-              <div class="lesson-animation-line-labels">
-                <span *ngFor="let label of lessonAnimationNumberLineLabels">{{ label }}</span>
-              </div>
+              <ng-container *ngIf="!animation.estimateComparison">
+                <ng-container *ngIf="animation.numberLineExamples?.length; else stepNumberLineDefault">
+                  <div class="lesson-animation-rounding-cards">
+                    <article *ngFor="let example of animation.numberLineExamples">
+                      <strong>{{ example.label }}</strong>
+                      <div class="lesson-animation-vertical-line" [class.rounds-up]="example.direction === 'up'" [class.rounds-down]="example.direction === 'down'">
+                        <span class="is-upper">{{ example.upper }}</span>
+                        <span class="is-halfway">{{ example.halfway }} <small>halfway</small></span>
+                        <span class="is-lower">{{ example.lower }}</span>
+                        <i class="is-target" [style.bottom.%]="example.targetPosition"><b>{{ example.target }}</b></i>
+                      </div>
+                      <div class="lesson-animation-rounding-result">
+                        <span>{{ example.target }}</span>
+                        <i aria-hidden="true">→</i>
+                        <strong>{{ example.rounded }}</strong>
+                        <small>{{ example.distance }}</small>
+                      </div>
+                    </article>
+                  </div>
+                </ng-container>
+                <ng-template #stepNumberLineDefault>
+                  <div class="lesson-animation-line-track">
+                    <span *ngFor="let label of lessonAnimationNumberLineLabels"></span>
+                    <i *ngFor="let jump of lessonAnimationNumberLineJumps">{{ jump }}</i>
+                  </div>
+                  <div class="lesson-animation-line-labels">
+                    <span *ngFor="let label of lessonAnimationNumberLineLabels">{{ label }}</span>
+                  </div>
+                </ng-template>
+              </ng-container>
             </div>
 
             <div *ngSwitchCase="'clock'" class="lesson-animation-clock" aria-label="Animated clock model">
@@ -3237,10 +3389,63 @@
               </div>
             </div>
 
-            <div *ngSwitchCase="'measurement'" class="lesson-animation-measurement" aria-label="Animated measurement model">
-              <div class="lesson-animation-measure-track">
-                <span *ngFor="let tick of lessonAnimationMeasurementTicks">{{ tick }}</span>
+            <div
+              *ngSwitchCase="'measurement'"
+              class="lesson-animation-measurement"
+              [class.has-place-value-addition]="animation.placeValueAddition"
+              aria-label="Animated measurement model">
+              <div class="lesson-animation-place-value is-subtraction" *ngIf="animation.placeValueSubtraction as subtraction">
+                <div class="lesson-animation-pv-head" [style.gridTemplateColumns]="'auto repeat(' + subtraction.columns.length + ', minmax(54px, 1fr))'">
+                  <span></span><b *ngFor="let column of subtraction.columns">{{ column }}</b>
+                </div>
+                <div class="lesson-animation-pv-row" [style.gridTemplateColumns]="'auto repeat(' + subtraction.columns.length + ', minmax(54px, 1fr))'">
+                  <strong>before</strong><span *ngFor="let digit of subtraction.beforeDigits"><i *ngFor="let disk of lessonAnimationPlaceValueDisks(digit, 13)"></i><small>{{ digit }}</small></span>
+                </div>
+                <div class="lesson-animation-pv-moves"><span *ngFor="let move of subtraction.decompositions">{{ move.label }}</span></div>
+                <div class="lesson-animation-pv-row is-decomposed" [style.gridTemplateColumns]="'auto repeat(' + subtraction.columns.length + ', minmax(54px, 1fr))'">
+                  <strong>ready</strong><span *ngFor="let digit of subtraction.afterDigits"><i *ngFor="let disk of lessonAnimationPlaceValueDisks(digit, 13)"></i><small>{{ digit }}</small></span>
+                </div>
+                <div class="lesson-animation-pv-row is-subtrahend" [style.gridTemplateColumns]="'auto repeat(' + subtraction.columns.length + ', minmax(54px, 1fr))'">
+                  <strong>- {{ subtraction.subtrahendLabel }}</strong><span *ngFor="let digit of subtraction.subtrahendDigits"><small>{{ digit }}</small></span>
+                </div>
+                <div class="lesson-animation-pv-result" [style.gridTemplateColumns]="'auto repeat(' + subtraction.columns.length + ', minmax(54px, 1fr))'">
+                  <strong>difference</strong><span *ngFor="let digit of subtraction.resultDigits">{{ digit }}</span>
+                </div>
+                <p>{{ subtraction.result }}</p>
               </div>
+              <ng-container *ngIf="!animation.placeValueSubtraction">
+                <ng-container *ngIf="animation.placeValueAddition as addition; else stepMeasurementDefault">
+                  <div class="lesson-animation-place-value">
+                    <div class="lesson-animation-pv-head" [style.gridTemplateColumns]="'auto repeat(' + addition.columns.length + ', minmax(54px, 1fr))'">
+                      <span></span><b *ngFor="let column of addition.columns">{{ column }}</b>
+                    </div>
+                    <div class="lesson-animation-pv-row" *ngFor="let addend of addition.addends" [style.gridTemplateColumns]="'auto repeat(' + addition.columns.length + ', minmax(54px, 1fr))'">
+                      <strong>{{ addend.label }}</strong><span *ngFor="let digit of addend.digits"><i *ngFor="let disk of lessonAnimationPlaceValueDisks(digit)"></i><small>{{ digit }}</small></span>
+                    </div>
+                    <div class="lesson-animation-pv-moves"><span *ngFor="let move of addition.regroupings">{{ move.label }}</span></div>
+                    <div class="lesson-animation-pv-result" [style.gridTemplateColumns]="'auto repeat(' + addition.columns.length + ', minmax(54px, 1fr))'">
+                      <strong>sum</strong><span *ngFor="let digit of addition.resultDigits">{{ digit }}</span>
+                    </div>
+                    <p>{{ addition.result }}</p>
+                  </div>
+                </ng-container>
+                <ng-template #stepMeasurementDefault>
+                  <div class="lesson-animation-measurement-cycle" *ngIf="animation.measurementChecks as checks; else stepMeasureTrack">
+                    <div class="lesson-animation-cycle-steps">
+                      <span *ngFor="let step of checks.steps; let stepIndex = index"><b>{{ stepIndex + 1 }}</b>{{ step }}</span>
+                    </div>
+                    <article *ngFor="let row of checks.rows">
+                      <strong>{{ row.label }}</strong>
+                      <span><small>measured</small>{{ row.measured }}</span>
+                      <span><small>rounded</small>{{ row.rounded }}</span>
+                      <b><small>estimate</small>{{ row.estimate }}</b>
+                      <b><small>exact</small>{{ row.exact }}</b>
+                      <em>gap {{ row.gap }}</em>
+                    </article>
+                  </div>
+                  <ng-template #stepMeasureTrack><div class="lesson-animation-measure-track"><span *ngFor="let tick of lessonAnimationMeasurementTicks">{{ tick }}</span></div></ng-template>
+                </ng-template>
+              </ng-container>
             </div>
 
             <div *ngSwitchCase="'area-model'" class="lesson-animation-area" aria-label="Animated area model">

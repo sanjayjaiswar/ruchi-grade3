@@ -7,25 +7,55 @@ export const M2_LESSON14_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 14 animation: Round to the nearest hundred on the vertical number line.",
-    context: "Use the lower hundred, halfway hundred, and upper hundred to decide the rounded value.",
-    equation: "132 g is between 100 and 200; below 150, so 100 g",
+    title: "Round to the nearest hundred on a vertical number line",
+    context: "Find the bounding hundreds and the halfway hundred. Then compare the target with halfway and move to the closer hundred.",
+    equation: "132 g → 100 g; 1,250 → 1,300 because halfway rounds up",
     teacherPrompt: "Have students share their explanations for Problem 4, particularly if there is disagreement",
     focus: [
       "number line",
       "round",
       "source labels"
     ],
-    numberLineLabels: [
-      "100",
-      "132",
-      "150",
-      "200"
+    numberLineExamples: [
+      {
+        label: "Teacher model: 132 grams",
+        lower: "100",
+        halfway: "150",
+        upper: "200",
+        target: "132",
+        rounded: "100",
+        targetPosition: 32,
+        direction: "down",
+        distance: "32 away"
+      },
+      {
+        label: "Halfway case: 1,250",
+        lower: "1,200",
+        halfway: "1,250",
+        upper: "1,300",
+        target: "1,250",
+        rounded: "1,300",
+        targetPosition: 50,
+        direction: "up",
+        distance: "halfway rounds up"
+      }
     ],
-    numberLineJumps: [
-      "+32",
-      "+18 to halfway",
-      "+50 to upper hundred"
+    conceptSteps: [
+      {
+        label: "Bound it",
+        action: "Write the hundred below and above the number.",
+        result: "132 is between 100 and 200; 1,250 is between 1,200 and 1,300."
+      },
+      {
+        label: "Mark halfway",
+        action: "Add 50 to the lower hundred.",
+        result: "150 and 1,250 split their intervals equally."
+      },
+      {
+        label: "Round",
+        action: "Choose the closer hundred; at halfway choose the upper hundred.",
+        result: "132 rounds to 100; 1,250 rounds to 1,300."
+      }
     ]
   },
 

@@ -7,10 +7,10 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
     "number line"
   ],
   lessonAnimation: {
-    kind: "number-line",
-    title: "Lesson 21 animation: estimate and solve mixed measurements",
-    context: "Measure beans and rice, round to the nearest ten grams, estimate the sum and difference, then check with exact arithmetic.",
-    equation: "91 g + 58 g = 149 g; estimate 90 g + 60 g = 150 g",
+    kind: "measurement",
+    title: "Lesson 21 animation: measurement reasonableness cycle",
+    context: "Follow the Teacher Edition sequence across weight and liquid volume: measure, round, estimate, solve exactly, and compare the two answers.",
+    equation: "A small estimate-to-exact gap is evidence that the exact measurement answer is reasonable.",
     teacherPrompt: "How can you use measurement as a tool for checking whether or not your answers are reasonable?",
     focus: [
       "addend",
@@ -18,18 +18,35 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       "number line",
       "source labels"
     ],
-    numberLineLabels: [
-      "58 g",
-      "60 g",
-      "91 g",
-      "90 g",
-      "149 g"
-    ],
-    numberLineJumps: [
-      "measure",
-      "round",
-      "estimate and check"
-    ]
+    measurementChecks: {
+      steps: ["measure", "round", "estimate", "solve exactly", "check the gap"],
+      rows: [
+        {
+          label: "beans + rice",
+          measured: "91 g + 58 g",
+          rounded: "90 g + 60 g",
+          estimate: "150 g",
+          exact: "149 g",
+          gap: "1 g"
+        },
+        {
+          label: "beans - rice",
+          measured: "91 g - 58 g",
+          rounded: "90 g - 60 g",
+          estimate: "30 g",
+          exact: "33 g",
+          gap: "3 g"
+        },
+        {
+          label: "containers D + E + F",
+          measured: "212 + 238 + 195 mL",
+          rounded: "210 + 240 + 200 mL",
+          estimate: "650 mL",
+          exact: "645 mL",
+          gap: "5 mL"
+        }
+      ]
+    }
   },
 
 
@@ -40,7 +57,7 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       shortTitle: "Goal",
       studentPrompt: "Estimate sums and differences of measurements by rounding, and then solve mixed word problems.",
       teacherEditionBasis: "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 257-266. Lesson 21 objective, concept development, problem set, exit ticket, and homework.",
-      visualModel: "number-line"
+      visualModel: "measurement"
     },
     {
       id: "source-model",
@@ -48,7 +65,7 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       shortTitle: "Model",
       studentPrompt: "Students measure beans and rice, yarn, and liquid volume, then round to estimate sums and differences before using exact arithmetic to solve.",
       teacherEditionBasis: "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 257-266. Lesson 21 objective, concept development, problem set, exit ticket, and homework.",
-      visualModel: "number-line"
+      visualModel: "measurement"
     },
     {
       id: "source-meaning",
@@ -56,7 +73,7 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       shortTitle: "Meaning",
       studentPrompt: "How can you use measurement as a tool for checking whether or not your answers are reasonable?",
       teacherEditionBasis: "Problem Set (10 minutes): Students complete the Lesson 21 Problem Set using the official Module 2 measurement models, prompts, and units from the Teacher Edition.",
-      visualModel: "number-line"
+      visualModel: "measurement"
     },
     {
       id: "source-picture",
@@ -64,7 +81,7 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       shortTitle: "Picture",
       studentPrompt: "Use the official Module 2 Lesson 21 Problem Set prompts in order. Blank mode preserves the student-facing work structure; Solved mode applies the Teacher Edition answer/check evidence.",
       teacherEditionBasis: "Module 2 student workbook, Lesson 21 Problem Set.",
-      visualModel: "number-line"
+      visualModel: "measurement"
     },
     {
       id: "source-draw",
@@ -72,7 +89,7 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       shortTitle: "Draw",
       studentPrompt: "Use the official Lesson 21 Problem Set workspace and source-backed measurement visuals to model and solve the student-facing problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 257-266.",
-      visualModel: "number-line"
+      visualModel: "measurement"
     },
     {
       id: "source-exit",
@@ -80,7 +97,7 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       shortTitle: "Exit",
       studentPrompt: "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context.",
       teacherEditionBasis: "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 257-266. Lesson 21 objective, concept development, problem set, exit ticket, and homework.",
-      visualModel: "number-line"
+      visualModel: "measurement"
     },
     {
       id: "source-summary",
@@ -88,7 +105,7 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
       shortTitle: "Sum",
       studentPrompt: "Debrief focus: connect the Problem Set models, units, and answers to the Lesson 21 objective: Estimate sums and differences of measurements by rounding, and then solve mixed word problems.",
       teacherEditionBasis: "Module 2 Teacher Edition, lesson pages 257-266.",
-      visualModel: "number-line"
+      visualModel: "measurement"
     }
   ],
   sourceRows: {

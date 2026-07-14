@@ -1,10 +1,13 @@
 import type {
+  PlaceValueAdditionModel,
+  PlaceValueSubtractionModel,
   ProblemSetAnimationType,
   ProblemSetBlankVisualType,
   ProblemSetCenteredLesson,
   ProblemSetCenteredProblem,
   ProblemSetDataDisplay,
   ProblemSetNumberLineModel,
+  ProblemVisualMeasurementLabSection,
   ProblemVisualMeasurementModelSection,
   ProblemVisualSpec
 } from '../lesson-runtime.types';
@@ -466,6 +469,70 @@ function numberLine(label: string, tickLabels: string[], targetNumerators: numbe
   return { label, denominator: Math.max(1, tickLabels.length - 1), tickLabels, targetNumerators };
 }
 
+function nearestTenLine(value: number, unit = ''): ProblemSetNumberLineModel {
+  const lower = Math.floor(value / 10) * 10;
+  const upper = lower + 10;
+  const halfway = lower + 5;
+  const targetIndex = value - lower;
+  const roundedIndex = targetIndex >= 5 ? 10 : 0;
+  const suffix = unit ? ` ${unit}` : '';
+  const tickLabels = Array.from({ length: 11 }, () => '');
+
+  tickLabels[0] = `${lower}${suffix}`;
+  tickLabels[5] = `${halfway}${suffix}`;
+  tickLabels[10] = `${upper}${suffix}`;
+  tickLabels[targetIndex] = `${value}${suffix}`;
+
+  return {
+    label: `${value}${suffix}: ${lower}${suffix} to ${upper}${suffix}`,
+    denominator: 10,
+    tickLabels,
+    targetNumerators: [targetIndex],
+    roundedNumerators: [roundedIndex],
+    orientation: 'vertical'
+  };
+}
+
+function nearestHundredLine(value: number, unit = '', prefix = ''): ProblemSetNumberLineModel {
+  const lower = Math.floor(value / 100) * 100;
+  const upper = lower + 100;
+  const halfway = lower + 50;
+  const position = value - lower;
+  const roundedIndex = position >= 50 ? 10 : 0;
+  const suffix = unit ? ` ${unit}` : '';
+  const format = (amount: number) => `${prefix}${amount.toLocaleString('en-US')}${suffix}`;
+  const tickLabels = Array.from({ length: 11 }, () => '');
+
+  tickLabels[0] = format(lower);
+  tickLabels[5] = format(halfway);
+  tickLabels[10] = format(upper);
+
+  return {
+    label: `${format(value)}: ${format(lower)} to ${format(upper)}`,
+    denominator: 10,
+    tickLabels,
+    roundedNumerators: [roundedIndex],
+    orientation: 'vertical',
+    targetMarker: {
+      label: format(value),
+      position
+    }
+  };
+}
+
+function numberLineCaption(line: ProblemSetNumberLineModel, solved: boolean): string {
+  const targetIndex = line.targetNumerators?.[0];
+  const roundedIndex = line.roundedNumerators?.[0];
+  const target = line.targetMarker?.label ?? (targetIndex === undefined ? undefined : line.tickLabels?.[targetIndex]);
+  const rounded = roundedIndex === undefined ? undefined : line.tickLabels?.[roundedIndex];
+
+  if (solved && target && rounded) {
+    return `${target} rounds to ${rounded}. Follow the shorter distance from the target dot.`;
+  }
+
+  return 'Mark the number, compare it with halfway, and choose the closer ten.';
+}
+
 function teacherProblemSetPageImages(lessonNumber: number): string[] {
   return (TEACHER_PROBLEM_SET_PAGES[lessonNumber] ?? []).map((page) => `/source-pages/m2-teacher/page-${String(page).padStart(3, '0')}.png`);
 }
@@ -571,17 +638,31 @@ function createM2ProblemVisual(seed: ProblemSetCenteredProblem | ProblemSeed, so
   }
 
   if (seed.numberLineModels?.length) {
-    seed.numberLineModels.forEach((line) => {
+    const numberLines = seed.numberLineModels.map((line) => ({
+      kind: 'number-line' as const,
+      label: line.label,
+      orientation: line.orientation,
+      targetMarker: line.targetMarker,
+      ticks: (line.tickLabels ?? []).map((label, index) => ({
+        label,
+        target: (line.orientation === 'vertical' || solved) && (line.targetNumerators ?? []).includes(index),
+        rounded: solved && (line.roundedNumerators ?? []).includes(index)
+      })),
+      caption: numberLineCaption(line, solved)
+    }));
+
+    if (numberLines.length > 1) {
       sections.push({
-        kind: 'number-line',
-        label: line.label,
-        ticks: (line.tickLabels ?? []).map((label, index) => ({
-          label,
-          target: solved && (line.targetNumerators ?? []).includes(index)
-        })),
-        caption: solved ? seed.solvedAnswer : seed.blankWorkspaceLabel ?? 'Label the official number line and mark the requested point.'
+        kind: 'card-grid',
+        label: solved ? 'Solved vertical number lines' : 'Vertical number-line workspaces',
+        cards: numberLines.map((line) => ({
+          label: line.label ?? 'Number line',
+          sections: [{ ...line, label: undefined }]
+        }))
       });
-    });
+    } else {
+      sections.push(numberLines[0]);
+    }
   }
 
   if (seed.blankVisualType === 'clock-workspace' || seed.animationType === 'clock-model') {
@@ -994,6 +1075,7 @@ function makeM2TopicDLabSections(
         model: 'compose-once',
         equation: solved ? topicDEquationSummary(seed, 'add') : 'line up place values, add, compose once if needed',
         rows: topicDComposeRows(seed, solved, lower, 'once'),
+        placeValueAddition: topicDPlaceValueAddition(seed, solved, lower, 'once'),
         caption: 'The unit stays attached while the place-value digits are added.'
       }
     ];
@@ -1007,6 +1089,7 @@ function makeM2TopicDLabSections(
         model: 'compose-twice',
         equation: solved ? topicDEquationSummary(seed, 'add') : 'ones compose to tens; tens may compose to hundreds',
         rows: topicDComposeRows(seed, solved, lower, 'twice'),
+        placeValueAddition: topicDPlaceValueAddition(seed, solved, lower, 'twice'),
         caption: 'When two places compose, regroup each place before writing the final unit.'
       }
     ];
@@ -1020,6 +1103,7 @@ function makeM2TopicDLabSections(
         model: 'estimate-sum',
         equation: solved ? topicDEquationSummary(seed, 'estimate') : 'rounded addends give an estimate; exact addends give the actual sum',
         rows: topicDEstimateRows(seed, solved, lower),
+        estimateRows: topicDEstimateComparisonRows(seed, solved),
         caption: 'A useful estimate is close enough to check whether the exact answer is reasonable.'
       }
     ];
@@ -1033,6 +1117,7 @@ function makeM2TopicDLabSections(
         model: 'decompose-once',
         equation: solved ? topicDEquationSummary(seed, 'subtract') : 'decompose one larger unit, subtract, keep the unit',
         rows: topicDSubtractRows(seed, solved, lower),
+        placeValueSubtraction: topicDPlaceValueSubtraction(seed, solved, lower, 'once'),
         caption: 'Decompose only where the top digit is too small, then subtract by place value.'
       }
     ];
@@ -1042,11 +1127,12 @@ function makeM2TopicDLabSections(
     return [
       {
         kind: 'measurement-lab',
-        label: solved ? 'Subtract measurements: decompose twice through zeros' : 'Subtract with two regrouping moves',
+        label: solved ? 'Subtract measurements: prepare every place before subtracting' : 'Unbundle every place that needs a larger unit',
         model: 'decompose-twice',
         equation: solved ? topicDEquationSummary(seed, 'subtract') : 'decompose hundreds to tens, then tens to ones, and keep the unit',
         rows: topicDDecomposeTwiceRows(seed, solved, lower),
-        caption: 'When a zero blocks subtraction, unbundle across the places before subtracting.'
+        placeValueSubtraction: topicDPlaceValueSubtraction(seed, solved, lower, 'twice'),
+        caption: 'Unbundle only where needed; when a zero blocks the path, one larger unit may travel through two places.'
       }
     ];
   }
@@ -1059,6 +1145,7 @@ function makeM2TopicDLabSections(
         model: 'estimate-difference',
         equation: solved ? topicDEquationSummary(seed, 'estimate') : 'rounded total - rounded part gives an estimate; exact numbers give the actual difference',
         rows: topicDEstimateDifferenceRows(seed, solved, lower),
+        estimateRows: topicDEstimateComparisonRows(seed, solved),
         caption: 'For subtraction, rounding both numbers can move the estimate closer or farther from the exact difference.'
       }
     ];
@@ -1072,6 +1159,7 @@ function makeM2TopicDLabSections(
         model: 'mixed-measure',
         equation: solved ? topicDEquationSummary(seed, 'estimate') : 'measure -> round -> estimate -> exact answer -> reasonable?',
         rows: topicDMixedMeasureRows(seed, solved, lower),
+        estimateRows: topicDMixedMeasurementChecks(solved, lower),
         caption: 'Lesson 21 asks students to use measurement as evidence for whether each answer makes sense.'
       }
     ];
@@ -1088,6 +1176,214 @@ function topicDEquationSummary(seed: ProblemSetCenteredProblem | ProblemSeed, mo
   const limit = mode === 'estimate' ? 4 : 3;
   const summary = equations.slice(0, limit).join('; ');
   return equations.length > limit ? `${summary}; ...` : summary;
+}
+
+function topicDPlaceValueAddition(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean,
+  lower: string,
+  composeMode: 'once' | 'twice'
+): PlaceValueAdditionModel | undefined {
+  let addends: [number, number] | undefined;
+
+  if (composeMode === 'once' && /choose mental math or the algorithm/.test(lower)) {
+    addends = [29, 63];
+  } else if (composeMode === 'twice' && /52 ml \+ 68 ml/.test(lower)) {
+    addends = [352, 468];
+  } else {
+    const equation = seed.equations?.find((line) => /\d[\d,]*[^=]*\+\s*\d/.test(line));
+    const match = equation?.match(/(\d[\d,]*)[^\d+]*\+\s*(\d[\d,]*)/);
+    if (match) {
+      addends = [Number(match[1].replaceAll(',', '')), Number(match[2].replaceAll(',', ''))];
+    }
+  }
+
+  if (!addends || addends.some((value) => !Number.isFinite(value))) {
+    return undefined;
+  }
+
+  const result = addends[0] + addends[1];
+  const width = Math.max(String(result).length, String(addends[0]).length, String(addends[1]).length);
+  const placeNames = ['thousands', 'hundreds', 'tens', 'ones'].slice(-width);
+  const digits = (value: number) => String(value).padStart(width, '0').split('').map(Number);
+  const addendDigits = addends.map(digits) as [number[], number[]];
+  const regroupings: PlaceValueAdditionModel['regroupings'] = [];
+  let carry = 0;
+
+  for (let column = width - 1; column > 0; column -= 1) {
+    const total = addendDigits[0][column] + addendDigits[1][column] + carry;
+    carry = total >= 10 ? 1 : 0;
+    if (carry) {
+      regroupings.push({
+        fromColumn: column,
+        toColumn: column - 1,
+        label: `10 ${placeNames[column]} → 1 ${placeNames[column - 1].replace(/s$/, '')}`
+      });
+    }
+  }
+
+  const unit = /\bml\b|milliliter/.test(lower) ? 'mL'
+    : /\bcm\b|centimeter/.test(lower) ? 'cm'
+      : /\bg\b|gram/.test(lower) ? 'g'
+        : /minute/.test(lower) ? 'minutes'
+          : /muffin/.test(lower) ? 'muffins'
+            : seed.unitLabel === 'units' ? '' : seed.unitLabel ?? '';
+  const unitSuffix = unit ? ` ${unit}` : '';
+
+  return {
+    unit,
+    columns: placeNames,
+    addends: [
+      { label: `${addends[0]}${unitSuffix}`, digits: addendDigits[0] },
+      { label: `${addends[1]}${unitSuffix}`, digits: addendDigits[1] }
+    ],
+    resultDigits: solved ? digits(result).map(String) : Array.from({ length: width }, () => '?'),
+    regroupings,
+    result: solved ? `${result.toLocaleString('en-US')}${unitSuffix}` : `____${unitSuffix}`
+  };
+}
+
+function topicDPlaceValueSubtraction(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean,
+  lower: string,
+  decomposeMode: 'once' | 'twice'
+): PlaceValueSubtractionModel | undefined {
+  let values: [number, number] | undefined;
+
+  if (decomposeMode === 'once' && /60 ml - 24 ml/.test(lower)) {
+    values = [360, 224];
+  } else if (decomposeMode === 'twice' && /340 cm - 60 cm/.test(lower)) {
+    values = [700, 452];
+  } else {
+    const equation = seed.equations?.find((line) => /\d[\d,]*\s*(?:ml|cm|g|l|km|minutes?)?\s*-\s*\d/i.test(line));
+    const match = equation?.match(/(\d[\d,]*)\s*(?:ml|cm|g|l|km|minutes?)?\s*-\s*(\d[\d,]*)/i);
+    if (match) {
+      values = [Number(match[1].replaceAll(',', '')), Number(match[2].replaceAll(',', ''))];
+    }
+  }
+
+  if (!values || values[0] < values[1] || values.some((value) => !Number.isFinite(value))) {
+    return undefined;
+  }
+
+  const difference = values[0] - values[1];
+  const width = Math.max(String(values[0]).length, String(values[1]).length);
+  const placeNames = ['thousands', 'hundreds', 'tens', 'ones'].slice(-width);
+  const digits = (value: number) => String(value).padStart(width, '0').split('').map(Number);
+  const beforeDigits = digits(values[0]);
+  const afterDigits = [...beforeDigits];
+  const subtrahendDigits = digits(values[1]);
+  const decompositions: PlaceValueSubtractionModel['decompositions'] = [];
+
+  for (let column = width - 1; column > 0; column -= 1) {
+    if (afterDigits[column] >= subtrahendDigits[column]) {
+      continue;
+    }
+
+    let donor = column - 1;
+    while (donor >= 0 && afterDigits[donor] === 0) {
+      donor -= 1;
+    }
+    if (donor < 0) {
+      return undefined;
+    }
+
+    for (let move = donor; move < column; move += 1) {
+      afterDigits[move] -= 1;
+      afterDigits[move + 1] += 10;
+      decompositions.push({
+        fromColumn: move,
+        toColumn: move + 1,
+        label: `1 ${placeNames[move].replace(/s$/, '')} -> 10 ${placeNames[move + 1]}`
+      });
+    }
+  }
+
+  const unit = /\bml\b|milliliter/.test(lower) ? 'mL'
+    : /\bcm\b|centimeter/.test(lower) ? 'cm'
+      : /\bkg\b|kilogram/.test(lower) ? 'kg'
+        : /\bg\b|gram/.test(lower) ? 'g'
+          : /\bkm\b|kilometer/.test(lower) ? 'km'
+            : /minute/.test(lower) ? 'minutes'
+              : /\bl\b|liter/.test(lower) ? 'L'
+                : seed.unitLabel === 'units' ? '' : seed.unitLabel ?? '';
+  const unitSuffix = unit ? ` ${unit}` : '';
+  const solvedDigits = String(difference).padStart(width, '0').split('');
+  for (let index = 0; index < solvedDigits.length - 1 && solvedDigits[index] === '0'; index += 1) {
+    solvedDigits[index] = '';
+  }
+
+  return {
+    unit,
+    columns: placeNames,
+    minuendLabel: `${values[0]}${unitSuffix}`,
+    subtrahendLabel: `${values[1]}${unitSuffix}`,
+    beforeDigits,
+    afterDigits,
+    subtrahendDigits,
+    resultDigits: solved ? solvedDigits : Array.from({ length: width }, () => '?'),
+    decompositions,
+    result: solved ? `${difference.toLocaleString('en-US')}${unitSuffix}` : `____${unitSuffix}`
+  };
+}
+
+function topicDEstimateComparisonRows(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean
+): NonNullable<ProblemVisualMeasurementLabSection['estimateRows']> | undefined {
+  const parsed = (seed.equations ?? []).map((line, index) => {
+    const match = line.match(/^(.+?)\s*=\s*([\d,]+);\s*(.+?)\s*=\s*([\d,]+)$/);
+    if (!match) {
+      return undefined;
+    }
+    const actual = Number(match[2].replaceAll(',', ''));
+    const estimate = Number(match[4].replaceAll(',', ''));
+    return {
+      group: String.fromCharCode(65 + Math.floor(index / 3)),
+      expression: match[1].trim(),
+      actual,
+      roundedExpression: match[3].trim(),
+      estimate,
+      error: Math.abs(actual - estimate)
+    };
+  }).filter((row): row is NonNullable<typeof row> => Boolean(row));
+
+  if (!parsed.length) {
+    const exactMatch = seed.equations?.[0]?.match(/^(.+?)\s*=\s*([\d,]+)(?:\s*([A-Za-z]+))?$/);
+    const estimateMatch = seed.equations?.[1]?.match(/^(.+?)\s*=\s*([\d,]+)(?:\s*([A-Za-z]+))?$/);
+    if (!exactMatch || !estimateMatch) {
+      return undefined;
+    }
+    const actual = Number(exactMatch[2].replaceAll(',', ''));
+    const estimate = Number(estimateMatch[2].replaceAll(',', ''));
+    const operator = exactMatch[1].includes('-') ? '-' : '+';
+    const unitSuffix = exactMatch[3] ? ` ${exactMatch[3]}` : '';
+    return [{
+      group: 'story',
+      expression: exactMatch[1].trim(),
+      actual: solved ? `${actual}${unitSuffix}` : '____',
+      roundedExpression: solved ? estimateMatch[1].trim() : `____ ${operator} ____`,
+      estimate: solved ? `${estimate}${estimateMatch[3] ? ` ${estimateMatch[3]}` : unitSuffix}` : '____',
+      error: solved ? `${Math.abs(actual - estimate)}${unitSuffix}` : '____',
+      best: solved
+    }];
+  }
+
+  const groupSize = parsed.length === 8 && parsed.every((row) => row.expression.includes('-')) ? 4 : 3;
+  parsed.forEach((row, index) => row.group = String.fromCharCode(65 + Math.floor(index / groupSize)));
+  const bestErrors = new Map<string, number>();
+  parsed.forEach((row) => bestErrors.set(row.group, Math.min(bestErrors.get(row.group) ?? Number.POSITIVE_INFINITY, row.error)));
+
+  return parsed.map((row, index) => ({
+    group: row.group,
+    expression: row.expression,
+    actual: solved ? String(row.actual) : '____',
+    roundedExpression: solved ? row.roundedExpression : `____ ${row.expression.includes('-') ? '-' : '+'} ____`,
+    estimate: solved ? String(row.estimate) : '____',
+    error: solved ? String(row.error) : '____',
+    best: solved && (groupSize === 4 ? [1, 2, 5, 6].includes(index) : row.error === bestErrors.get(row.group))
+  }));
 }
 
 function topicDComposeRows(
@@ -1395,10 +1691,10 @@ function topicDEstimateDifferenceRows(
   }
   return solved
     ? [
-        { left: 'A close case', right: '451 - 153 = 298; 500 - 200 = 300' },
-        { left: 'A close case', right: '448 - 149 = 299; 400 - 100 = 300' },
-        { left: 'B close case', right: '756 - 261 = 495; 800 - 300 = 500' },
-        { left: 'B close case', right: '747 - 249 = 498; 700 - 200 = 500' }
+        { left: 'both round up', right: '451 - 153 ≈ 500 - 200; 756 - 261 ≈ 800 - 300' },
+        { left: 'both round down', right: '448 - 149 ≈ 400 - 100; 747 - 249 ≈ 700 - 200' },
+        { left: 'why these are precise', right: 'both numbers move in the same direction, so the distance changes very little' },
+        { left: 'contrast', right: 'opposite rounding directions stretch or shrink the estimated difference' }
       ]
     : [
         { left: '1. actual', right: 'subtract the exact numbers' },
@@ -1476,6 +1772,50 @@ function topicDMixedMeasureRows(
         { left: 'round', right: 'make an estimate' },
         { left: 'solve', right: 'use exact values and check reasonableness' }
       ];
+}
+
+function topicDMixedMeasurementChecks(
+  solved: boolean,
+  lower: string
+): NonNullable<ProblemVisualMeasurementLabSection['estimateRows']> | undefined {
+  const row = (
+    group: string,
+    expression: string,
+    actual: string,
+    roundedExpression: string,
+    estimate: string,
+    error: string
+  ) => ({
+    group,
+    expression,
+    actual: solved ? actual : '____',
+    roundedExpression: solved ? roundedExpression : roundedExpression.replace(/[\d,]+/g, '____'),
+    estimate: solved ? estimate : '____',
+    error: solved ? error : '____'
+  });
+
+  if (/beans and rice/.test(lower)) {
+    return [
+      row('sum', '91 g + 58 g', '149 g', '90 g + 60 g', '150 g', '1 g'),
+      row('difference', '91 g - 58 g', '33 g', '90 g - 60 g', '30 g', '3 g')
+    ];
+  }
+  if (/three pieces of yarn/.test(lower)) {
+    return [
+      row('A + C', '64 cm + 38 cm', '102 cm', '60 cm + 40 cm', '100 cm', '2 cm'),
+      row('minus B', '102 cm - 88 cm', '14 cm', '100 cm - 90 cm', '10 cm', '4 cm')
+    ];
+  }
+  if (/container d|container e|container f/.test(lower)) {
+    return [
+      row('total', '212 + 238 + 195 mL', '645 mL', '210 + 240 + 200 mL', '650 mL', '5 mL'),
+      row('E - D', '238 mL - 212 mL', '26 mL', '240 mL - 210 mL', '30 mL', '4 mL')
+    ];
+  }
+  if (/trailer length|shane watches a movie/.test(lower)) {
+    return [row('movie only', '115 min - 21 min', '94 min', '115 min - 20 min', '95 min', '1 min')];
+  }
+  return undefined;
 }
 
 function makeM2TopicCLabSections(
@@ -2377,8 +2717,6 @@ function lesson(seed: LessonSeed): ProblemSetCenteredLesson {
 
 const timeTicks = ['0', '5', '10', '15', '20', '25', '30', '35', '40', '45', '50', '55', '60'];
 const exactMinuteTicks = Array.from({ length: 61 }, (_, minute) => String(minute));
-const tensTicks = ['lower ten', 'halfway', 'upper ten'];
-const hundredTicks = ['lower hundred', 'halfway', 'upper hundred'];
 
 export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredLesson> = {
   1: lesson({
@@ -3398,9 +3736,29 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Halfway and above rounds to the upper ten.',
     summary: 'Locate the number between tens, compare to halfway, and round.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Round to the nearest ten. Use the number line to model your thinking. a. 32. b. 36. c. 62. d. 162. e. 278. f. 405.', solvedAnswer: 'a. 32 rounds to 30. b. 36 rounds to 40. c. 62 rounds to 60. d. 162 rounds to 160. e. 278 rounds to 280. f. 405 rounds to 410. Each answer is modeled on a vertical number line.', equations: ['32 ~= 30', '36 ~= 40', '62 ~= 60', '162 ~= 160', '278 ~= 280', '405 ~= 410'], numberLineModels: [numberLine('nearest ten', tensTicks, [0, 2])] }),
-      problem({ number: 2, sourcePrompt: 'Round the weight of each item to the nearest 10 grams. Draw number lines to model your thinking: 36 grams, 52 grams, and 142 grams.', solvedAnswer: 'The rounded weights are 40 grams, 50 grams, and 140 grams. Each row also needs a labeled number line model.', equations: ['36 g ~= 40 g', '52 g ~= 50 g', '142 g ~= 140 g'], numberLineModels: [numberLine('nearest 10 grams', tensTicks, [0, 2])] }),
-      problem({ number: 3, sourcePrompt: 'Carl\'s basketball game begins at 3:03 p.m. and ends at 3:51 p.m. a. How many minutes did Carl\'s basketball game last? b. Round the total number of minutes in the game to the nearest 10 minutes.', solvedAnswer: 'a. Carl\'s basketball game lasted 48 minutes. b. 48 minutes rounds to 50 minutes.', equations: ['3:51 - 3:03 = 48', '48 ~= 50'], quotient: 50, unitLabel: 'minutes' })
+      problem({
+        number: 1,
+        sourcePrompt: 'Round to the nearest ten. Use the number line to model your thinking. a. 32. b. 36. c. 62. d. 162. e. 278. f. 405.',
+        solvedAnswer: 'a. 32 rounds to 30. b. 36 rounds to 40. c. 62 rounds to 60. d. 162 rounds to 160. e. 278 rounds to 280. f. 405 rounds to 410. Each answer is modeled on a vertical number line.',
+        equations: ['32 ~= 30', '36 ~= 40', '62 ~= 60', '162 ~= 160', '278 ~= 280', '405 ~= 410'],
+        numberLineModels: [32, 36, 62, 162, 278, 405].map((value) => nearestTenLine(value))
+      }),
+      problem({
+        number: 2,
+        sourcePrompt: 'Round the weight of each item to the nearest 10 grams. Draw number lines to model your thinking: 36 grams, 52 grams, and 142 grams.',
+        solvedAnswer: 'The rounded weights are 40 grams, 50 grams, and 140 grams. Each row also needs a labeled number line model.',
+        equations: ['36 g ~= 40 g', '52 g ~= 50 g', '142 g ~= 140 g'],
+        numberLineModels: [36, 52, 142].map((value) => nearestTenLine(value, 'g'))
+      }),
+      problem({
+        number: 3,
+        sourcePrompt: 'Carl\'s basketball game begins at 3:03 p.m. and ends at 3:51 p.m. a. How many minutes did Carl\'s basketball game last? b. Round the total number of minutes in the game to the nearest 10 minutes.',
+        solvedAnswer: 'a. Carl\'s basketball game lasted 48 minutes. b. 48 minutes rounds to 50 minutes.',
+        equations: ['3:51 - 3:03 = 48', '48 ~= 50'],
+        numberLineModels: [nearestTenLine(48, 'min')],
+        quotient: 50,
+        unitLabel: 'minutes'
+      })
     ]
   }),
   14: lesson({
@@ -3410,10 +3768,30 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Numbers at halfway or above round to the upper hundred.',
     summary: 'Round to the nearest hundred by comparing to the halfway hundred.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Round to the nearest hundred. Use the number line to model your thinking. a. 143. b. 286. c. 320. d. 1,320. e. 1,572. f. 1,250.', solvedAnswer: 'a. 143 rounds to 100. b. 286 rounds to 300. c. 320 rounds to 300. d. 1,320 rounds to 1,300. e. 1,572 rounds to 1,600. f. 1,250 rounds to 1,300. Each answer is modeled on a vertical number line.', equations: ['143 ~= 100', '286 ~= 300', '320 ~= 300', '1,320 ~= 1,300', '1,572 ~= 1,600', '1,250 ~= 1,300'], numberLineModels: [numberLine('nearest hundred', hundredTicks, [0, 2])] }),
-      problem({ number: 2, sourcePrompt: 'Complete the chart. a. Shauna has 480 stickers. Round the number of stickers to the nearest hundred. b. There are 525 pages in a book. Round the number of pages to the nearest hundred. c. A container holds 750 milliliters of water. Round the capacity to the nearest 100 milliliters. d. Glen spends $1,297 on a new computer. Round the amount Glen spends to the nearest $100. e. The drive between two cities is 1,842 kilometers. Round the distance to the nearest 100 kilometers.', solvedAnswer: 'a. 500 stickers. b. 500 pages. c. 800 mL. d. $1,300. e. 1,800 km.', equations: ['480 ~= 500', '525 ~= 500', '750 ~= 800', '1,297 ~= 1,300', '1,842 ~= 1,800'], dataDisplay: dataTable('Nearest hundred chart', ['Source item', 'Rounded answer'], [['480 stickers', '____ stickers'], ['525 pages', '____ pages'], ['750 mL', '____ mL'], ['$1,297', '$____'], ['1,842 km', '____ km']]), solvedDataDisplay: dataTable('Nearest hundred chart', ['Source item', 'Rounded answer'], [['480 stickers', '500 stickers'], ['525 pages', '500 pages'], ['750 mL', '800 mL'], ['$1,297', '$1,300'], ['1,842 km', '1,800 km']]) }),
+      problem({
+        number: 1,
+        sourcePrompt: 'Round to the nearest hundred. Use the number line to model your thinking. a. 143. b. 286. c. 320. d. 1,320. e. 1,572. f. 1,250.',
+        solvedAnswer: 'a. 143 rounds to 100. b. 286 rounds to 300. c. 320 rounds to 300. d. 1,320 rounds to 1,300. e. 1,572 rounds to 1,600. f. 1,250 rounds to 1,300. Each answer is modeled on a vertical number line.',
+        equations: ['143 ~= 100', '286 ~= 300', '320 ~= 300', '1,320 ~= 1,300', '1,572 ~= 1,600', '1,250 ~= 1,300'],
+        numberLineModels: [143, 286, 320, 1320, 1572, 1250].map((value) => nearestHundredLine(value))
+      }),
+      problem({
+        number: 2,
+        sourcePrompt: 'Complete the chart. a. Shauna has 480 stickers. Round the number of stickers to the nearest hundred. b. There are 525 pages in a book. Round the number of pages to the nearest hundred. c. A container holds 750 milliliters of water. Round the capacity to the nearest 100 milliliters. d. Glen spends $1,297 on a new computer. Round the amount Glen spends to the nearest $100. e. The drive between two cities is 1,842 kilometers. Round the distance to the nearest 100 kilometers.',
+        solvedAnswer: 'a. 500 stickers. b. 500 pages. c. 800 mL. d. $1,300. e. 1,800 km.',
+        equations: ['480 ~= 500', '525 ~= 500', '750 ~= 800', '1,297 ~= 1,300', '1,842 ~= 1,800'],
+        dataDisplay: dataTable('Nearest hundred chart', ['Source item', 'Rounded answer'], [['480 stickers', '____ stickers'], ['525 pages', '____ pages'], ['750 mL', '____ mL'], ['$1,297', '$____'], ['1,842 km', '____ km']]),
+        solvedDataDisplay: dataTable('Nearest hundred chart', ['Source item', 'Rounded answer'], [['480 stickers', '500 stickers'], ['525 pages', '500 pages'], ['750 mL', '800 mL'], ['$1,297', '$1,300'], ['1,842 km', '1,800 km']]),
+        numberLineModels: [
+          nearestHundredLine(480, 'stickers'),
+          nearestHundredLine(525, 'pages'),
+          nearestHundredLine(750, 'mL'),
+          nearestHundredLine(1297, '', '$'),
+          nearestHundredLine(1842, 'km')
+        ]
+      }),
       problem({ number: 3, sourcePrompt: 'Circle numbers that round to 600: 527, 550, 639, 681, 713, 603.', solvedAnswer: '550, 639, and 603 round to 600.', equations: ['550 ~= 600', '639 ~= 600', '603 ~= 600'], numberLineModels: [numberLine('500 to 700', ['500', '550', '600', '650', '700'], [1, 2])] }),
-      problem({ number: 4, sourcePrompt: 'Christian says 1,865 rounds to one thousand, nine hundred; Alexis says 19 hundreds.', solvedAnswer: 'Both are correct: 1,900 is 19 hundreds.', equations: ['1,865 ~= 1,900', '1,900 = 19 hundreds'] })
+      problem({ number: 4, sourcePrompt: 'Christian says 1,865 rounds to one thousand, nine hundred; Alexis says 19 hundreds.', solvedAnswer: 'Both are correct: 1,900 is 19 hundreds.', equations: ['1,865 ~= 1,900', '1,900 = 19 hundreds'], numberLineModels: [nearestHundredLine(1865)] })
     ]
   }),
   15: lesson({
@@ -3488,8 +3866,8 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     summary: 'Estimate, solve exactly, and compare for reasonableness.',
     problems: [
       problem({ number: 1, sourcePrompt: 'Find actual differences, round totals and parts to the nearest hundred, estimate, and circle closest estimates. A: 448 - 153, 451 - 153, 448 - 149, 451 - 149. B: 747 - 261, 756 - 261, 747 - 249, 756 - 248.', solvedAnswer: 'Close cases include 451 - 153 = 298 estimated as 300, 448 - 149 = 299 estimated as 300, 756 - 261 = 495 estimated as 500, and 747 - 249 = 498 estimated as 500.', equations: ['448 - 153 = 295; 400 - 200 = 200', '451 - 153 = 298; 500 - 200 = 300', '448 - 149 = 299; 400 - 100 = 300', '451 - 149 = 302; 500 - 100 = 400', '747 - 261 = 486; 700 - 300 = 400', '756 - 261 = 495; 800 - 300 = 500', '747 - 249 = 498; 700 - 200 = 500', '756 - 248 = 508; 800 - 200 = 600'] }),
-      problem({ number: 2, sourcePrompt: 'Camden uses a total of 372 liters of gas in two months. He uses 184 liters of gas in the first month. How many liters of gas does he use in the second month?', solvedAnswer: 'Second month = 188 L; estimates will vary.', equations: ['372 L - 184 L = 188 L', '400 L - 200 L = 200 L'], quotient: 188, unitLabel: 'liters', blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
-      problem({ number: 3, sourcePrompt: 'The pear, apple, and peach weigh 500 grams total. The pear and apple together weigh 372 grams. How much does the peach weigh?', solvedAnswer: 'The peach weighs 128 g; estimates and explanations will vary.', equations: ['500 g - 372 g = 128 g', '500 g - 400 g = 100 g'], quotient: 128, unitLabel: 'grams', blankVisualType: 'tape-diagram', animationType: 'tape-split' })
+      problem({ number: 2, sourcePrompt: 'Camden uses a total of 372 liters of gas in two months. He uses 184 liters of gas in the first month. How many liters of gas does he use in the second month?', solvedAnswer: 'Second month = 188 L; estimates will vary.', equations: ['372 L - 184 L = 188 L', '400 L - 200 L = 200 L'], quotient: 188, unitLabel: 'liters', blankVisualType: 'tape-diagram', animationType: 'tape-split', numberLineModels: [nearestHundredLine(372, 'L'), nearestHundredLine(184, 'L')] }),
+      problem({ number: 3, sourcePrompt: 'The pear, apple, and peach weigh 500 grams total. The pear and apple together weigh 372 grams. How much does the peach weigh?', solvedAnswer: 'The peach weighs 128 g; estimates and explanations will vary.', equations: ['500 g - 372 g = 128 g', '500 g - 400 g = 100 g'], quotient: 128, unitLabel: 'grams', blankVisualType: 'tape-diagram', animationType: 'tape-split', numberLineModels: [nearestHundredLine(372, 'g')] })
     ]
   }),
   21: lesson({
@@ -3512,6 +3890,10 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         sourcePrompt: 'Measure the lengths of the three pieces of yarn. Estimate and find the total length of Yarn A and Yarn C. Then subtract to estimate and find the difference between that total and Yarn B.',
         solvedAnswer: 'Yarn A is 64 cm, Yarn B is 88 cm, and Yarn C is 38 cm. A + C is 102 cm, estimated as 100 cm. The difference from Yarn B is 14 cm, estimated as 10 cm.',
         equations: ['64 cm ≈ 60 cm', '88 cm ≈ 90 cm', '38 cm ≈ 40 cm', '64 cm + 38 cm = 102 cm', '60 cm + 40 cm = 100 cm', '102 cm - 88 cm = 14 cm', '100 cm - 90 cm = 10 cm'],
+        quotient: 14,
+        unitLabel: 'centimeters',
+        blankVisualType: 'tape-diagram',
+        animationType: 'tape-split',
         dataDisplay: dataTable('Yarn lengths', ['Yarn', 'Actual', 'Rounded'], [['A', '____ cm', '____ cm'], ['B', '____ cm', '____ cm'], ['C', '____ cm', '____ cm']]),
         solvedDataDisplay: dataTable('Yarn lengths', ['Yarn', 'Actual', 'Rounded'], [['A', '64 cm', '60 cm'], ['B', '88 cm', '90 cm'], ['C', '38 cm', '40 cm'], ['A + C', '102 cm', '100 cm'], ['A + C minus B', '14 cm', '10 cm']])
       }),
@@ -3520,10 +3902,15 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         sourcePrompt: 'Plot the amount of liquid in Containers D, E, and F on the number lines. Then, round to the nearest 10 milliliters. Estimate and find the total amount, then estimate and find the difference between Containers D and E.',
         solvedAnswer: 'Container D is 212 mL ≈ 210 mL, Container E is 238 mL ≈ 240 mL, and Container F is 195 mL ≈ 200 mL. The actual total is 645 mL, and D to E differs by 26 mL.',
         equations: ['212 mL ≈ 210 mL', '238 mL ≈ 240 mL', '195 mL ≈ 200 mL', '210 mL + 240 mL + 200 mL = 650 mL', '212 mL + 238 mL + 195 mL = 645 mL', '240 mL - 210 mL = 30 mL', '238 mL - 212 mL = 26 mL'],
+        quotient: 26,
+        unitLabel: 'milliliters',
+        blankVisualType: 'tape-diagram',
+        animationType: 'tape-split',
+        numberLineModels: [nearestTenLine(212, 'mL'), nearestTenLine(238, 'mL'), nearestTenLine(195, 'mL')],
         dataDisplay: dataTable('Container rounding', ['Container', 'Actual volume', 'Rounded to nearest 10 mL'], [['D', '____ mL', '____ mL'], ['E', '____ mL', '____ mL'], ['F', '____ mL', '____ mL']]),
         solvedDataDisplay: dataTable('Container rounding', ['Container', 'Actual volume', 'Rounded to nearest 10 mL'], [['D', '212 mL', '210 mL'], ['E', '238 mL', '240 mL'], ['F', '195 mL', '200 mL']])
       }),
-      problem({ number: 4, sourcePrompt: 'Shane watches a movie in the theater that is 115 minutes long, including the trailers. The trailer lengths are 5, 4, 3, 5, and 4 minutes.', solvedAnswer: 'Trailers total 21 minutes; movie without trailers is 94 minutes. Estimates will vary.', equations: ['5 min + 4 min + 3 min + 5 min + 4 min = 21 min', '115 min - 21 min = 94 min'], quotient: 94, unitLabel: 'minutes', dataDisplay: dataTable('Trailer lengths', ['Trailer', 'Minutes'], [['1', '5'], ['2', '4'], ['3', '3'], ['4', '5'], ['5', '4'], ['Total', '21']]) })
+      problem({ number: 4, sourcePrompt: 'Shane watches a movie in the theater that is 115 minutes long, including the trailers. The trailer lengths are 5, 4, 3, 5, and 4 minutes.', solvedAnswer: 'Trailers total 21 minutes; movie without trailers is 94 minutes. Estimates will vary.', equations: ['5 min + 4 min + 3 min + 5 min + 4 min = 21 min', '115 min - 21 min = 94 min'], quotient: 94, unitLabel: 'minutes', dataDisplay: dataTable('Trailer lengths', ['Trailer', 'Minutes'], [['1', '5'], ['2', '4'], ['3', '3'], ['4', '5'], ['5', '4'], ['Total', '____']]), solvedDataDisplay: dataTable('Trailer lengths', ['Trailer', 'Minutes'], [['1', '5'], ['2', '4'], ['3', '3'], ['4', '5'], ['5', '4'], ['Total', '21']]) })
     ]
   })
 };

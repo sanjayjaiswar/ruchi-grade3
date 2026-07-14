@@ -6,9 +6,9 @@ export const M2_LESSON18_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 18 animation: subtract measurements and decompose once",
-    context: "Part 1: Use the place value chart to model decomposing once to subtract with three-digit minuends.",
-    equation: "60 mL - 24 mL = 36 mL",
+    title: "Decompose one hundred to subtract 825 mL - 132 mL",
+    context: "The Teacher Edition models Tara's 825 milliliters minus 132 milliliters with place-value disks. Since 2 tens cannot subtract 3 tens, one hundred is unbundled into 10 tens before subtracting.",
+    equation: "825 mL - 132 mL = 693 mL",
     teacherPrompt: "What is the relationship between Problems 1(a), 1(b), and 1(c)?",
     focus: [
       "decompose",
@@ -16,12 +16,43 @@ export const M2_LESSON18_RUNTIME: LessonRuntimeConfig = {
       "source labels"
     ],
     measurementTicks: [
-      "60 mL",
-      "-24 mL",
-      "decompose 1 ten",
-      "10 ones - 4 ones",
-      "36 mL",
+      "825 mL",
+      "-132 mL",
+      "decompose 1 hundred",
+      "12 tens - 3 tens",
+      "693 mL",
       "unit stays mL"
+    ],
+    placeValueSubtraction: {
+      unit: "mL",
+      columns: ["hundreds", "tens", "ones"],
+      minuendLabel: "825 mL",
+      subtrahendLabel: "132 mL",
+      beforeDigits: [8, 2, 5],
+      afterDigits: [7, 12, 5],
+      subtrahendDigits: [1, 3, 2],
+      resultDigits: ["6", "9", "3"],
+      decompositions: [
+        { fromColumn: 0, toColumn: 1, label: "1 hundred -> 10 tens" }
+      ],
+      result: "693 mL"
+    },
+    conceptSteps: [
+      {
+        label: "Inspect every place",
+        action: "Ones can subtract, but 2 tens cannot subtract 3 tens.",
+        result: "The tens place needs one larger unit."
+      },
+      {
+        label: "Decompose once",
+        action: "Unbundle 1 hundred into 10 tens: 825 becomes 7 hundreds, 12 tens, 5 ones.",
+        result: "Every place is now ready to subtract."
+      },
+      {
+        label: "Subtract and label",
+        action: "Subtract ones, tens, then hundreds and keep milliliters.",
+        result: "825 mL - 132 mL = 693 mL."
+      }
     ]
   },
 

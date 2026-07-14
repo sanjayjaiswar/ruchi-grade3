@@ -7,27 +7,59 @@ export const M2_LESSON20_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Lesson 20 animation: estimate differences by rounding",
-    context: "Estimate 372 liters minus 184 liters by rounding to hundreds, then compare with the exact difference.",
-    equation: "372 L - 184 L is about 400 L - 200 L = 200 L",
-    teacherPrompt: "Share your observations from Problem 1(b). What did you find out? How is this different than rounding when you add?",
+    title: "Lesson 20 animation: rounding direction changes the difference",
+    context: "The source keeps the exact differences between 195 and 202, then changes which numbers round up or down. Watch the estimates spread from 100 to 300.",
+    equation: "Same-direction rounding preserves the distance; opposite-direction rounding stretches or shrinks it.",
+    teacherPrompt: "When do both numbers move together? Why does that keep the estimated difference close?",
     focus: [
       "round",
       "number line",
       "source labels"
     ],
-    numberLineLabels: [
-      "184",
-      "200",
-      "372",
-      "400",
-      "188 L actual"
-    ],
-    numberLineJumps: [
-      "round 372 to 400",
-      "round 184 to 200",
-      "subtract estimate"
-    ]
+    estimateComparison: {
+      expression: "Four exact differences",
+      actual: "195–202",
+      strategies: [
+        {
+          label: "opposite directions",
+          expression: "349 - 154 = 195",
+          actual: 195,
+          roundedExpression: "300 - 200",
+          estimate: 100,
+          error: 95,
+          movement: "whole down; part up"
+        },
+        {
+          label: "both round down",
+          expression: "349 - 149 = 200",
+          actual: 200,
+          roundedExpression: "300 - 100",
+          estimate: 200,
+          error: 0,
+          movement: "distance stays the same",
+          best: true
+        },
+        {
+          label: "both round up",
+          expression: "351 - 154 = 197",
+          actual: 197,
+          roundedExpression: "400 - 200",
+          estimate: 200,
+          error: 3,
+          movement: "distance stays nearly the same",
+          best: true
+        },
+        {
+          label: "opposite directions",
+          expression: "351 - 149 = 202",
+          actual: 202,
+          roundedExpression: "400 - 100",
+          estimate: 300,
+          error: 98,
+          movement: "whole up; part down"
+        }
+      ]
+    }
   },
 
 

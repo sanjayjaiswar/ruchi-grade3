@@ -6,9 +6,9 @@ export const M2_LESSON19_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 19 animation: subtract measurements and decompose twice",
-    context: "Subtract 700 milliliters minus 452 milliliters. Decompose 1 hundred as 10 tens, then 1 ten as 10 ones before subtracting.",
-    equation: "700 mL - 452 mL = 248 mL",
+    title: "Decompose twice to subtract 223 g - 194 g",
+    context: "The Teacher Edition begins with Jolene's apple and orange. First unbundle 1 ten for the ones place; then unbundle 1 hundred for the tens place before subtracting.",
+    equation: "223 g - 194 g = 29 g",
     teacherPrompt: "Why is it important to unbundle units before subtracting across zeros?",
     focus: [
       "decompose",
@@ -16,12 +16,44 @@ export const M2_LESSON19_RUNTIME: LessonRuntimeConfig = {
       "source labels"
     ],
     measurementTicks: [
-      "700 mL",
-      "-452 mL",
-      "0 ones too small",
+      "223 g",
+      "-194 g",
+      "3 ones and 2 tens too small",
       "decompose twice",
-      "248 mL",
-      "unit stays mL"
+      "29 g",
+      "unit stays g"
+    ],
+    placeValueSubtraction: {
+      unit: "g",
+      columns: ["hundreds", "tens", "ones"],
+      minuendLabel: "223 g",
+      subtrahendLabel: "194 g",
+      beforeDigits: [2, 2, 3],
+      afterDigits: [1, 11, 13],
+      subtrahendDigits: [1, 9, 4],
+      resultDigits: ["", "2", "9"],
+      decompositions: [
+        { fromColumn: 1, toColumn: 2, label: "1 ten -> 10 ones" },
+        { fromColumn: 0, toColumn: 1, label: "1 hundred -> 10 tens" }
+      ],
+      result: "29 g"
+    },
+    conceptSteps: [
+      {
+        label: "Prepare the ones",
+        action: "3 ones cannot subtract 4 ones, so unbundle 1 ten.",
+        result: "223 becomes 2 hundreds, 1 ten, 13 ones."
+      },
+      {
+        label: "Prepare the tens",
+        action: "1 ten cannot subtract 9 tens, so unbundle 1 hundred.",
+        result: "The minuend becomes 1 hundred, 11 tens, 13 ones."
+      },
+      {
+        label: "Subtract after preparing",
+        action: "Subtract 194 from the decomposed 223 by place value.",
+        result: "223 g - 194 g = 29 g."
+      }
     ]
   },
 

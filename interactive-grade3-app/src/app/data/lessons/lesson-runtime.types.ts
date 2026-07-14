@@ -70,6 +70,44 @@ export type LessonAnimationModel = {
   secondPart?: number;
   numberLineLabels?: string[];
   numberLineJumps?: string[];
+  numberLineExamples?: Array<{
+    label: string;
+    lower: string;
+    halfway: string;
+    upper: string;
+    target: string;
+    rounded: string;
+    targetPosition: number;
+    direction: 'up' | 'down';
+    distance: string;
+  }>;
+  estimateComparison?: {
+    expression: string;
+    actual: number | string;
+    strategies: Array<{
+      label: string;
+      expression?: string;
+      actual?: number | string;
+      roundedExpression: string;
+      estimate: number;
+      error: number;
+      movement?: string;
+      best?: boolean;
+    }>;
+  };
+  measurementChecks?: {
+    steps: string[];
+    rows: Array<{
+      label: string;
+      measured: string;
+      rounded: string;
+      estimate: string;
+      exact: string;
+      gap: string;
+    }>;
+  };
+  placeValueAddition?: PlaceValueAdditionModel;
+  placeValueSubtraction?: PlaceValueSubtractionModel;
   clockLabels?: string[];
   measurementTicks?: string[];
   areaRows?: number;
@@ -84,6 +122,39 @@ export type LessonAnimationModel = {
     result: string;
   }>;
   focus: string[];
+};
+
+export type PlaceValueAdditionModel = {
+  unit: string;
+  columns: string[];
+  addends: Array<{
+    label: string;
+    digits: number[];
+  }>;
+  resultDigits: string[];
+  regroupings: Array<{
+    fromColumn: number;
+    toColumn: number;
+    label: string;
+  }>;
+  result: string;
+};
+
+export type PlaceValueSubtractionModel = {
+  unit: string;
+  columns: string[];
+  minuendLabel: string;
+  subtrahendLabel: string;
+  beforeDigits: number[];
+  afterDigits: number[];
+  subtrahendDigits: number[];
+  resultDigits: string[];
+  decompositions: Array<{
+    fromColumn: number;
+    toColumn: number;
+    label: string;
+  }>;
+  result: string;
 };
 
 export type ProblemSetAnimationType =
@@ -194,6 +265,12 @@ export type ProblemSetNumberLineModel = {
   endLabel?: string;
   tickLabels?: string[];
   targetNumerators?: number[];
+  roundedNumerators?: number[];
+  orientation?: 'horizontal' | 'vertical';
+  targetMarker?: {
+    label: string;
+    position: number;
+  };
 };
 
 export type ProblemSetPaperPartitionModel = {
@@ -420,10 +497,16 @@ export type ProblemVisualExpressionMatchSection = {
 export type ProblemVisualNumberLineSection = {
   kind: 'number-line';
   label?: string;
+  orientation?: 'horizontal' | 'vertical';
   ticks: Array<{
     label: string;
     target?: boolean;
+    rounded?: boolean;
   }>;
+  targetMarker?: {
+    label: string;
+    position: number;
+  };
   caption?: string;
 };
 
@@ -558,6 +641,17 @@ export type ProblemVisualMeasurementLabSection = {
   rows?: Array<{
     left: string;
     right: string;
+  }>;
+  placeValueAddition?: PlaceValueAdditionModel;
+  placeValueSubtraction?: PlaceValueSubtractionModel;
+  estimateRows?: Array<{
+    group: string;
+    expression: string;
+    actual: string;
+    roundedExpression: string;
+    estimate: string;
+    error: string;
+    best?: boolean;
   }>;
 };
 
