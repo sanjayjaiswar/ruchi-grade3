@@ -6,14 +6,14 @@ export const M2_LESSON16_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 16 animation: add measurements and compose twice",
-    context: "Use place value charts, disks, and the standard algorithm to add measurements, composing larger units twice.",
+    title: "Compose twice: ones to tens, then tens to hundreds",
+    context: "The Teacher Edition combines 266 grams and 158 grams. First trade 10 of the 14 ones for 1 ten; then trade 10 of the 12 tens for 1 hundred.",
     equation: "266 g + 158 g = 424 g",
-    teacherPrompt: "What pattern did you notice between Problems 1(a), 1(b), and 1(c)? How did the pattern help you solve these problems?",
+    teacherPrompt: "Pause after each column. Students should name the composed unit before it moves left, then connect both trades to Problem 1(c), 352 mL + 468 mL.",
     focus: [
-      "addend",
-      "measurement",
-      "source labels"
+      "10 ones → 1 ten",
+      "10 tens → 1 hundred",
+      "compose each place before moving left"
     ],
     measurementTicks: [
       "266 g",
@@ -52,6 +52,11 @@ export const M2_LESSON16_RUNTIME: LessonRuntimeConfig = {
         label: "Add hundreds",
         action: "2 hundreds + 1 hundred + 1 composed hundred = 4 hundreds.",
         result: "266 g + 158 g = 424 g."
+      },
+      {
+        label: "Transfer",
+        action: "Use both trades in the official Problem Set.",
+        result: "352 mL + 468 mL composes in the ones and tens columns to make 820 mL."
       }
     ]
   },
@@ -70,7 +75,7 @@ export const M2_LESSON16_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Use place value charts, disks, and the standard algorithm to add measurements, composing larger units twice. Students start with the unlabeled place value chart template in their personal white boards. Lesson 14 Template T: (Show Bags A and B.) Bag A has 266 grams of beans, and Bag B has 158 grams of beans.",
+      studentPrompt: "Bag A has 266 grams of beans, and Bag B has 158 grams of beans. Represent both amounts with place value disks, compose ones into a ten and tens into a hundred, and connect the model to 266 g + 158 g = 424 g.",
       teacherEditionBasis: "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 196-206. Lesson 16 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "measurement"
     },
@@ -137,7 +142,7 @@ export const M2_LESSON16_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Use place value charts, disks, and the standard algorithm to add measurements, composing larger units twice. Students start with the unlabeled place value chart template in their personal white boards. Lesson 14 Template T: (Show Bags A and B.) Bag A has 266 grams of beans, and Bag B has 158 grams of beans."
+        value: "Bag A has 266 grams of beans, and Bag B has 158 grams of beans. Represent both amounts with place value disks, compose ones into a ten and tens into a hundred, and connect the model to 266 g + 158 g = 424 g."
       },
       {
         label: "Workbook",

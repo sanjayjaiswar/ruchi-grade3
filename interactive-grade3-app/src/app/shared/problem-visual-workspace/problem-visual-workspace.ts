@@ -6,6 +6,7 @@ import { scaleLinear } from 'd3-scale';
 import { TimeBoardComponent } from '../time-board/time-board';
 import type {
   ProblemVisualArraySection,
+  ProblemVisualAdditionStudioSection,
   ProblemVisualCardGridSection,
   ProblemVisualClockSection,
   ProblemVisualDataChartSection,
@@ -161,6 +162,10 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
 
   measurementLabSection(section: ProblemVisualSection): ProblemVisualMeasurementLabSection | undefined {
     return section.kind === 'measurement-lab' ? section : undefined;
+  }
+
+  additionStudioSection(section: ProblemVisualSection): ProblemVisualAdditionStudioSection | undefined {
+    return section.kind === 'addition-studio' ? section : undefined;
   }
 
   range(count: number, max = 160): number[] {
@@ -366,7 +371,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     const matchCards = Array.from(host.querySelectorAll<HTMLElement>('.visual-expression-match-row span, .visual-expression-match-key span'));
     const tableRows = Array.from(host.querySelectorAll<HTMLElement>('.visual-data-row:not(.is-head)'));
     const equations = Array.from(host.querySelectorAll<HTMLElement>('.visual-equations span'));
-    const measurementItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-measurement .measurement-bars span, .visual-measurement .measurement-liquid .liquid-vessel, .visual-measurement .measurement-conversion span, .visual-measurement .measurement-rounding span, .visual-measurement .measurement-operation span, .visual-measurement-lab .kg-pan, .visual-measurement-lab .kg-ten-frame span, .visual-measurement-lab .kg-place-row, .visual-place-value-addition i, .visual-pv-regroupings span, .visual-pv-sum span, .visual-estimate-row:not(.is-head)'));
+    const measurementItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-measurement .measurement-bars span, .visual-measurement .measurement-liquid .liquid-vessel, .visual-measurement .measurement-conversion span, .visual-measurement .measurement-rounding span, .visual-measurement .measurement-operation span, .visual-measurement-lab .kg-pan, .visual-measurement-lab .kg-ten-frame span, .visual-measurement-lab .kg-place-row, .visual-place-value-addition i, .visual-pv-regroupings span, .visual-pv-sum span, .visual-estimate-row:not(.is-head), .visual-addition-bridge span, .visual-addition-algorithm span, .visual-addition-compound span'));
     const numberLineItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-number-line span, .visual-number-line-target'));
     const diagramItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-floor-room, .visual-line-plot-x, .visual-geometry-shape'));
 

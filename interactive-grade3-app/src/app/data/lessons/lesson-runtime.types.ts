@@ -732,6 +732,37 @@ export type ProblemVisualMeasurementLabSection = {
   }>;
 };
 
+export type ProblemVisualAdditionStudioSection = {
+  kind: 'addition-studio';
+  label?: string;
+  groups: Array<{
+    label: string;
+    caption: string;
+    tone: 'liquid' | 'length' | 'mass' | 'compound';
+    items: Array<{
+      item: string;
+      expression: string;
+      answer: string;
+      method: 'bridge' | 'algorithm' | 'compound';
+      steps?: string[];
+      bridge?: {
+        start: string;
+        firstJump: string;
+        landing: string;
+        secondJump?: string;
+        finish?: string;
+      };
+      algorithm?: PlaceValueAdditionModel;
+      compoundColumns?: Array<{
+        unit: string;
+        top: string;
+        bottom: string;
+        total: string;
+      }>;
+    }>;
+  }>;
+};
+
 export type ProblemVisualCardGridSection = {
   kind: 'card-grid';
   label?: string;
@@ -771,6 +802,7 @@ export type ProblemVisualSection =
   | ProblemVisualTimeLineSection
   | ProblemVisualMeasurementModelSection
   | ProblemVisualMeasurementLabSection
+  | ProblemVisualAdditionStudioSection
   | ProblemVisualCardGridSection
   | ProblemVisualSourceDirectionsSection;
 

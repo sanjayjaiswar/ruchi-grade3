@@ -444,6 +444,71 @@
       </div>
     </ng-container>
 
+    <ng-container *ngIf="additionStudioSection(section) as studio">
+      <strong *ngIf="studio.label">{{ studio.label }}</strong>
+      <div class="visual-addition-studio">
+        <section
+          class="visual-addition-group"
+          *ngFor="let group of studio.groups"
+          [ngClass]="'is-' + group.tone">
+          <header>
+            <strong>{{ group.label }}</strong>
+            <span>{{ group.caption }}</span>
+          </header>
+          <div class="visual-addition-items">
+            <article
+              class="visual-addition-item"
+              *ngFor="let item of group.items"
+              [ngClass]="'is-' + item.method">
+              <div class="visual-addition-item-head">
+                <b>{{ item.item }}</b>
+                <strong>{{ item.expression }}</strong>
+                <em>{{ mode === 'solved' ? item.answer : 'answer ____' }}</em>
+              </div>
+
+              <div class="visual-addition-bridge" *ngIf="item.bridge as bridge">
+                <span class="is-start">{{ bridge.start }}</span>
+                <i>+</i><span class="is-jump">{{ bridge.firstJump }}</span>
+                <i>→</i><strong>{{ mode === 'solved' ? bridge.landing : '____' }}</strong>
+                <ng-container *ngIf="bridge.secondJump">
+                  <i>+</i><span class="is-jump">{{ bridge.secondJump }}</span>
+                  <i>→</i><strong>{{ mode === 'solved' ? bridge.finish : '____' }}</strong>
+                </ng-container>
+              </div>
+
+              <div class="visual-addition-algorithm" *ngIf="item.algorithm as addition">
+                <div class="is-head" [style.gridTemplateColumns]="'72px repeat(' + addition.columns.length + ', minmax(38px, 1fr))'">
+                  <span></span><b *ngFor="let column of addition.columns">{{ column }}</b>
+                </div>
+                <div *ngFor="let addend of addition.addends" [style.gridTemplateColumns]="'72px repeat(' + addition.columns.length + ', minmax(38px, 1fr))'">
+                  <strong>{{ addend.label }}</strong><span *ngFor="let digit of addend.digits">{{ digit }}</span>
+                </div>
+                <div class="is-carry" *ngIf="addition.regroupings.length">
+                  <span *ngFor="let move of addition.regroupings">{{ mode === 'solved' ? move.label : 'compose if needed' }}</span>
+                </div>
+                <div class="is-sum" [style.gridTemplateColumns]="'72px repeat(' + addition.columns.length + ', minmax(38px, 1fr))'">
+                  <strong>sum</strong><span *ngFor="let digit of addition.resultDigits">{{ mode === 'solved' ? digit : '?' }}</span>
+                </div>
+              </div>
+
+              <div class="visual-addition-compound" *ngIf="item.compoundColumns?.length">
+                <span *ngFor="let column of item.compoundColumns">
+                  <b>{{ column.unit }}</b>
+                  <em>{{ column.top }}</em>
+                  <em>+ {{ column.bottom }}</em>
+                  <strong>{{ mode === 'solved' ? column.total : '____' }}</strong>
+                </span>
+              </div>
+
+              <ol class="visual-addition-steps" *ngIf="item.steps?.length">
+                <li *ngFor="let step of item.steps">{{ mode === 'solved' ? step : 'show your strategy' }}</li>
+              </ol>
+            </article>
+          </div>
+        </section>
+      </div>
+    </ng-container>
+
     <ng-container *ngIf="measurementLabSection(section) as lab">
       <strong *ngIf="lab.label">{{ lab.label }}</strong>
       <div class="visual-measurement-lab" [ngClass]="'is-' + lab.model">

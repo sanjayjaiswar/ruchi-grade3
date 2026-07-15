@@ -2183,7 +2183,7 @@
           [id]="problemSectionId('problem-set')"
           class="problem-centered-panel problem-set-centered-list"
           [class.is-m2-l1-problem-set]="module.id === 'm2' && lesson.lessonNumber === 1"
-          [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' solved problem set'"
+          [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' ' + problemSetMode + ' problem set'"
           role="tabpanel"
           *ngSwitchCase="'problem-set'">
           <div class="problem-set-toolbar">

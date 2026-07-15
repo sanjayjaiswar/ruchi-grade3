@@ -6,14 +6,14 @@ export const M2_LESSON15_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "measurement",
-    title: "Lesson 15 animation: add measurements and compose once",
-    context: "Beaker A has 56 milliliters and Beaker B has 27 milliliters. Add by place value, compose 10 ones as 1 ten, and keep milliliters attached.",
+    title: "Compose once: from place-value disks to the standard algorithm",
+    context: "The Teacher Edition combines 56 milliliters and 27 milliliters. Watch the ones make 13, trade 10 ones for 1 ten, and carry that new ten into the tens column.",
     equation: "56 mL + 27 mL = 83 mL",
-    teacherPrompt: "Notice the units in Problems 1(j) and 1(k). Did having two units change the way you aligned and added the measurements?",
+    teacherPrompt: "Pause after 6 ones + 7 ones. Have students predict the trade before revealing 1 ten and 3 ones, then connect the move to Problem 1(g), 29 g + 63 g.",
     focus: [
-      "addend",
-      "measurement",
-      "source labels"
+      "align equal place values",
+      "10 ones → 1 ten",
+      "keep measurement units attached"
     ],
     measurementTicks: [
       "56 mL",
@@ -51,6 +51,11 @@ export const M2_LESSON15_RUNTIME: LessonRuntimeConfig = {
         label: "Name the sum",
         action: "Read 8 tens and 3 ones with the measurement unit.",
         result: "56 mL + 27 mL = 83 mL."
+      },
+      {
+        label: "Transfer",
+        action: "Use the same trade in the official Problem Set.",
+        result: "29 g + 63 g makes 12 ones, so compose once and write 92 g."
       }
     ]
   },
@@ -69,7 +74,7 @@ export const M2_LESSON15_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "T: (Show Beaker A with 56 milliliters of water and Beaker B with 27 milliliters of water.) Beaker A has 56 milliliters of water, and Beaker B has 27 milliliters of water. Let's use place value charts and place value disks to find the total milliliters of water in both beakers. T: Use place value disks to represent the amount of water from Beaker A on your chart. (Allow time for students them below your model of 56.",
+      studentPrompt: "Beaker A has 56 milliliters of water, and Beaker B has 27 milliliters of water. Represent both amounts with place value disks, compose 10 ones as 1 ten, and connect the model to 56 mL + 27 mL = 83 mL in the standard algorithm.",
       teacherEditionBasis: "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf, pages 185-195. Lesson 15 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "measurement"
     },
@@ -136,7 +141,7 @@ export const M2_LESSON15_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "T: (Show Beaker A with 56 milliliters of water and Beaker B with 27 milliliters of water.) Beaker A has 56 milliliters of water, and Beaker B has 27 milliliters of water. Let's use place value charts and place value disks to find the total milliliters of water in both beakers. T: Use place value disks to represent the amount of water from Beaker A on your chart. (Allow time for students them below your model of 56."
+        value: "Beaker A has 56 milliliters of water, and Beaker B has 27 milliliters of water. Represent both amounts with place value disks, compose 10 ones as 1 ten, and connect the model to 56 mL + 27 mL = 83 mL in the standard algorithm."
       },
       {
         label: "Workbook",

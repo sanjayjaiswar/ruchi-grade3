@@ -7,54 +7,92 @@ export const M2_LESSON14_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "number-line",
-    title: "Round to the nearest hundred on a vertical number line",
-    context: "Find the bounding hundreds and the halfway hundred. Then compare the target with halfway and move to the closer hundred.",
-    equation: "132 g → 100 g; 1,250 → 1,300 because halfway rounds up",
-    teacherPrompt: "Have students share their explanations for Problem 4, particularly if there is disagreement",
+    title: "Animate each Lesson 14 rounding decision",
+    context: "Watch the target land between its two surrounding hundreds. The arrow then moves to the closer endpoint; a target exactly halfway moves to the upper hundred.",
+    equation: "480 ≈ 500 • 525 ≈ 500 • 750 ≈ 800 • 603 ≈ 600 • 1,865 ≈ 1,900 = 19 hundreds",
+    teacherPrompt: "Pause after the target lands. Ask whether it is below, at, or above halfway before revealing the rounded endpoint.",
     focus: [
-      "number line",
-      "round",
-      "source labels"
+      "lower hundred → halfway → upper hundred",
+      "halfway and above round up",
+      "1,900 and 19 hundreds name the same value"
     ],
     numberLineExamples: [
       {
-        label: "Teacher model: 132 grams",
-        lower: "100",
-        halfway: "150",
-        upper: "200",
-        target: "132",
-        rounded: "100",
-        targetPosition: 32,
-        direction: "down",
-        distance: "32 away"
+        label: "Problem 2a: stickers",
+        lower: "400",
+        halfway: "450",
+        upper: "500",
+        target: "480",
+        rounded: "500",
+        targetPosition: 80,
+        direction: "up",
+        distance: "20 from 500"
       },
       {
-        label: "Halfway case: 1,250",
-        lower: "1,200",
-        halfway: "1,250",
-        upper: "1,300",
-        target: "1,250",
-        rounded: "1,300",
+        label: "Problem 2b: pages",
+        lower: "500",
+        halfway: "550",
+        upper: "600",
+        target: "525",
+        rounded: "500",
+        targetPosition: 25,
+        direction: "down",
+        distance: "25 from 500"
+      },
+      {
+        label: "Problem 2c: halfway",
+        lower: "700",
+        halfway: "750",
+        upper: "800",
+        target: "750",
+        rounded: "800",
         targetPosition: 50,
         direction: "up",
         distance: "halfway rounds up"
+      },
+      {
+        label: "Problem 3: circle 603",
+        lower: "600",
+        halfway: "650",
+        upper: "700",
+        target: "603",
+        rounded: "600",
+        targetPosition: 3,
+        direction: "down",
+        distance: "3 from 600"
+      },
+      {
+        label: "Problem 4: unit form",
+        lower: "1,800",
+        halfway: "1,850",
+        upper: "1,900",
+        target: "1,865",
+        rounded: "1,900",
+        targetPosition: 65,
+        direction: "up",
+        distance: "1,900 = 19 hundreds"
       }
     ],
     conceptSteps: [
       {
         label: "Bound it",
         action: "Write the hundred below and above the number.",
-        result: "132 is between 100 and 200; 1,250 is between 1,200 and 1,300."
+        result: "For example, 480 is between 400 and 500."
       },
       {
         label: "Mark halfway",
         action: "Add 50 to the lower hundred.",
-        result: "150 and 1,250 split their intervals equally."
+        result: "450 is halfway between 400 and 500."
       },
       {
-        label: "Round",
-        action: "Choose the closer hundred; at halfway choose the upper hundred.",
-        result: "132 rounds to 100; 1,250 rounds to 1,300."
+        label: "Choose",
+        action: "Below halfway rounds down; halfway or above rounds up.",
+        result: "480 rounds to 500, 525 rounds to 500, and 750 rounds to 800."
+      },
+      {
+        label: "Explain",
+        action: "State the rounded answer in context and check equivalent unit form.",
+        result: "1,865 ≈ 1,900, and 1,900 = 19 × 100 = 19 hundreds."
       }
     ]
   },

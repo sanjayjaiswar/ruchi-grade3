@@ -411,21 +411,21 @@ const TEACHER_PROBLEM_PROMPTS: Record<number, Record<number, string>> = {
   },
   14: {
     1: 'Round to the nearest hundred. Use the number line to model your thinking. a. 143 b. 286 c. 320 d. 1,320 e. 1,572 f. 1,250.',
-    2: 'Complete the chart. a. Julie has 480 stickers in her collection. To the nearest hundred, about how many stickers does Julie have? b. The library has 525 pages in its copy of Charlie and the Chocolate Factory. To the nearest hundred, about how many pages does the book have? c. A container holds 750 milliliters of water. To the nearest hundred, about how many milliliters of water does the container hold? d. Marsha pays $1,297 for a computer. To the nearest hundred dollars, about how much does the computer cost? e. The Nile River is 1,842 kilometers long. To the nearest hundred kilometers, about how long is the Nile River?',
+    2: 'Complete the chart. a. Shauna has 480 stickers. Round the number of stickers to the nearest hundred. b. There are 525 pages in a book. Round the number of pages to the nearest hundred. c. A container holds 750 milliliters of water. Round the capacity to the nearest 100 milliliters. d. Glen spends $1,297 on a new computer. Round the amount Glen spends to the nearest $100. e. The drive between two cities is 1,842 kilometers. Round the distance to the nearest 100 kilometers.',
     3: 'Circle the numbers that round to 600 when rounding to the nearest hundred: 527, 550, 639, 681, 713, and 603.',
-    4: 'The teacher asks students to round 1,865 to the nearest hundred. Christian says it is one thousand, nine hundred. Alexis says it is 19 hundreds. Who is correct? Explain.'
+    4: 'The teacher asks students to round 1,865 to the nearest hundred. Christian says that it is one thousand, nine hundred. Alexis disagrees and says it is 19 hundreds. Who is correct? Explain your thinking.'
   },
   15: {
     1: 'Find the sums below. Choose mental math or the algorithm. a. 46 mL + 5 mL b. 46 mL + 25 mL c. 46 mL + 125 mL d. 59 cm + 30 cm e. 509 cm + 83 cm f. 597 cm + 30 cm g. 29 g + 63 g h. 345 g + 294 g i. 480 g + 476 g j. 1 L 245 mL + 2 L 412 mL k. 2 kg 509 g + 3 kg 367 g.',
     2: 'Nadine and Jen buy a small bag of popcorn and a pretzel at the movie theater. The pretzel weighs 63 grams more than the popcorn. What is the weight of the pretzel?',
-    3: 'In math class, Jason and Andrea find the total liquid volume of water in their beakers. Jason says the total is 782 milliliters, but Andrea says it is 792 milliliters. The amount of water in each beaker can be found in the table: Jason 475 mL, Andrea 317 mL. Show whose calculation is correct. Explain the mistake of the other student.',
+    3: 'In math class, Jason and Andrea find the total liquid volume of water in their beakers. Jason says the total is 782 milliliters, but Andrea says it is 792 milliliters. The amount of water in each beaker can be found in the table to the right. Show whose calculation is correct. Explain the mistake of the other student.',
     4: 'It takes Greg 15 minutes to mow the front lawn. It takes him 17 more minutes to mow the back lawn than the front lawn. What is the total amount of time Greg spends mowing the lawns?'
   },
   16: {
     1: 'Find the sums below. a. 52 mL + 68 mL b. 352 mL + 68 mL c. 352 mL + 468 mL d. 56 cm + 94 cm e. 506 cm + 94 cm f. 506 cm + 394 cm g. 697 g + 138 g h. 345 g + 597 g i. 486 g + 497 g j. 3 L 251 mL + 1 L 549 mL k. 4 kg 384 g + 2 kg 467 g.',
     2: 'Lane makes sauerkraut. He weighs the amounts of cabbage and salt he uses. Draw and label a tape diagram to find the total weight of the cabbage and salt Lane uses.',
-    3: 'Sue bakes mini-muffins. After wrapping 86 muffins, she still has 58 muffins cooling. How many muffins did she bake altogether?',
-    4: 'The milk carton holds 183 milliliters more liquid than the juice box. The juice box holds 279 mL. What is the total capacity of the juice box and milk carton?'
+    3: 'Sue bakes mini-muffins for the school bake sale. After wrapping 86 muffins, she still has 58 muffins left cooling on the table. How many muffins did she bake altogether?',
+    4: 'The milk carton to the right holds 183 milliliters more liquid than the juice box. What is the total capacity of the juice box and milk carton?'
   },
   17: {
     1: 'a. Find the actual sum either on paper or using mental math. Round each addend to the nearest hundred, and find the estimated sums. A: 451 + 253, 451 + 249, 448 + 249. B: 356 + 161, 356 + 148, 347 + 149. C: 652 + 158, 647 + 158, 647 + 146. Circle the estimated sum that is the closest to its real sum. b. Look at the sums that gave the most precise estimates. Explain below what they have in common. You might use a number line to support your explanation.',
@@ -530,7 +530,10 @@ function numberLineCaption(line: ProblemSetNumberLineModel, solved: boolean): st
     return `${target} rounds to ${rounded}. Follow the shorter distance from the target dot.`;
   }
 
-  return 'Mark the number, compare it with halfway, and choose the closer ten.';
+  const roundingUnit = line.orientation === 'vertical'
+    ? line.targetMarker ? 'hundred' : 'ten'
+    : 'benchmark';
+  return `Mark the number, compare it with halfway, and choose the closer ${roundingUnit}.`;
 }
 
 function teacherProblemSetPageImages(lessonNumber: number): string[] {
@@ -596,6 +599,15 @@ function applyTeacherPrompt(lessonNumber: number, item: ProblemSetCenteredProble
 }
 
 function createM2ProblemVisual(seed: ProblemSetCenteredProblem | ProblemSeed, solved: boolean): ProblemVisualSpec {
+  const exactTopicDProblemOne = makeExactTopicDProblemOneVisual(seed, solved);
+  if (exactTopicDProblemOne) {
+    return exactTopicDProblemOne;
+  }
+  const exactTopicDStory = makeExactTopicDStoryVisual(seed, solved);
+  if (exactTopicDStory) {
+    return exactTopicDStory;
+  }
+
   const sections: ProblemVisualSpec['sections'] = [];
   const sourceNote = solved
     ? 'Solved view uses the Module 2 Teacher Edition answer key, authored visuals, and unit checks.'
@@ -697,6 +709,404 @@ function createM2ProblemVisual(seed: ProblemSetCenteredProblem | ProblemSeed, so
     title: `Problem ${seed.number}: ${m2VisualTitle(seed)}`,
     sourceNote,
     sections
+  };
+}
+
+/**
+ * Lesson 15 and 16 Problem 1 each contain eleven separate source items.  A
+ * single representative measurement model is not faithful to those pages, so
+ * these two workspaces deliberately render every item and its own strategy.
+ */
+function makeExactTopicDProblemOneVisual(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean
+): ProblemVisualSpec | undefined {
+  const lower = seed.sourcePrompt.toLowerCase();
+  const lesson15 = /46 ml \+ 5 ml/.test(lower) && /2 kg 509 g \+ 3 kg 367 g/.test(lower);
+  const lesson16 = /52 ml \+ 68 ml/.test(lower) && /4 kg 384 g \+ 2 kg 467 g/.test(lower);
+  if (!lesson15 && !lesson16) {
+    return undefined;
+  }
+
+  return {
+    title: `Problem ${seed.number}: ${lesson15 ? 'choose a useful addition strategy' : 'compose larger units twice'}`,
+    sourceNote: solved
+      ? lesson15
+        ? 'The exact Teacher Edition questions are organized by measurement context. Animated paths show mental-math bridges; place-value boards show the standard algorithm.'
+        : 'The exact Teacher Edition questions are organized by measurement context. Place-value boards animate each composition into the next unit.'
+      : 'The studio preserves all eleven Teacher Edition expressions and leaves the strategy and sum open.',
+    sections: [
+      {
+        kind: 'addition-studio',
+        label: solved ? 'Animated measurement addition studio' : 'Measurement addition studio',
+        groups: lesson15 ? lesson15StrategyGroups(solved) : lesson16StrategyGroups(solved)
+      },
+      {
+        kind: 'note',
+        label: solved ? 'Lesson check' : 'Unit check',
+        text: solved
+          ? lesson15
+            ? 'All eleven source questions are present. The path or algorithm is chosen to fit that question, and the measurement unit remains attached.'
+            : 'All eleven source questions are present. Each place-value board records the actual compositions for its own addends.'
+          : 'Copy the measurement unit into the answer. For j and k, keep the two named units in separate columns.'
+      }
+    ]
+  };
+}
+
+function lesson15StrategyGroups(solved: boolean): Extract<ProblemVisualSpec['sections'][number], { kind: 'addition-studio' }>['groups'] {
+  return [
+    {
+      label: 'a–c · Liquid volume chain',
+      caption: 'Reuse a known landing to solve the next question.',
+      tone: 'liquid',
+      items: [
+        bridgeStudioItem('a', '46 mL + 5 mL', '51 mL', '46', '+4', '50', '+1', '51'),
+        bridgeStudioItem('b', '46 mL + 25 mL', '71 mL', '46', '+5', '51', '+20', '71'),
+        bridgeStudioItem('c', '46 mL + 125 mL', '171 mL', '46', '+25', '71', '+100', '171')
+      ]
+    },
+    {
+      label: 'd–f · Length jumps',
+      caption: 'Land on a friendly ten or hundred, then add what remains.',
+      tone: 'length',
+      items: [
+        bridgeStudioItem('d', '59 cm + 30 cm', '89 cm', '59', '+30', '89'),
+        bridgeStudioItem('e', '509 cm + 83 cm', '592 cm', '509', '+1', '510', '+82', '592'),
+        bridgeStudioItem('f', '597 cm + 30 cm', '627 cm', '597', '+3', '600', '+27', '627')
+      ]
+    },
+    {
+      label: 'g–i · Mass strategy station',
+      caption: 'Make 30 mentally, or compose with aligned place values.',
+      tone: 'mass',
+      items: [
+        bridgeStudioItem('g', '29 g + 63 g', '92 g', '29', '+1', '30', '+62', '92'),
+        algorithmStudioItem('h', '345 g + 294 g', '639 g', 345, 294, 'g', solved),
+        algorithmStudioItem('i', '480 g + 476 g', '956 g', 480, 476, 'g', solved)
+      ]
+    },
+    {
+      label: 'j–k · Compound-unit trays',
+      caption: 'Keep unlike named units in separate columns, then combine.',
+      tone: 'compound',
+      items: [
+        compoundStudioItem('j', '1 L 245 mL + 2 L 412 mL', '3 L 657 mL', [['L', '1', '2', '3'], ['mL', '245', '412', '657']]),
+        compoundStudioItem('k', '2 kg 509 g + 3 kg 367 g', '5 kg 876 g', [['kg', '2', '3', '5'], ['g', '509', '367', '876']])
+      ]
+    }
+  ];
+}
+
+function lesson16StrategyGroups(solved: boolean): Extract<ProblemVisualSpec['sections'][number], { kind: 'addition-studio' }>['groups'] {
+  return [
+    {
+      label: 'a–c · Liquid volume composition',
+      caption: 'Watch the same addends grow from two places to three.',
+      tone: 'liquid',
+      items: [
+        algorithmStudioItem('a', '52 mL + 68 mL', '120 mL', 52, 68, 'mL', solved),
+        algorithmStudioItem('b', '352 mL + 68 mL', '420 mL', 352, 68, 'mL', solved),
+        algorithmStudioItem('c', '352 mL + 468 mL', '820 mL', 352, 468, 'mL', solved)
+      ]
+    },
+    {
+      label: 'd–f · Length composition',
+      caption: 'Compose ones into a ten, then tens into a hundred.',
+      tone: 'length',
+      items: [
+        algorithmStudioItem('d', '56 cm + 94 cm', '150 cm', 56, 94, 'cm', solved),
+        algorithmStudioItem('e', '506 cm + 94 cm', '600 cm', 506, 94, 'cm', solved),
+        algorithmStudioItem('f', '506 cm + 394 cm', '900 cm', 506, 394, 'cm', solved)
+      ]
+    },
+    {
+      label: 'g–i · Mass composition',
+      caption: 'Each board shows the actual carried units for that question.',
+      tone: 'mass',
+      items: [
+        algorithmStudioItem('g', '697 g + 138 g', '835 g', 697, 138, 'g', solved),
+        algorithmStudioItem('h', '345 g + 597 g', '942 g', 345, 597, 'g', solved),
+        algorithmStudioItem('i', '486 g + 497 g', '983 g', 486, 497, 'g', solved)
+      ]
+    },
+    {
+      label: 'j–k · Compound-unit trays',
+      caption: 'Add each named unit in its own tray.',
+      tone: 'compound',
+      items: [
+        compoundStudioItem('j', '3 L 251 mL + 1 L 549 mL', '4 L 800 mL', [['L', '3', '1', '4'], ['mL', '251', '549', '800']]),
+        compoundStudioItem('k', '4 kg 384 g + 2 kg 467 g', '6 kg 851 g', [['kg', '4', '2', '6'], ['g', '384', '467', '851']])
+      ]
+    }
+  ];
+}
+
+function bridgeStudioItem(
+  item: string,
+  expression: string,
+  answer: string,
+  start: string,
+  firstJump: string,
+  landing: string,
+  secondJump?: string,
+  finish?: string
+) {
+  return {
+    item,
+    expression,
+    answer,
+    method: 'bridge' as const,
+    bridge: { start, firstJump, landing, secondJump, finish }
+  };
+}
+
+function algorithmStudioItem(
+  item: string,
+  expression: string,
+  answer: string,
+  top: number,
+  bottom: number,
+  unit: string,
+  solved: boolean
+) {
+  return {
+    item,
+    expression,
+    answer,
+    method: 'algorithm' as const,
+    algorithm: additionStudioModel(top, bottom, unit, solved)
+  };
+}
+
+function compoundStudioItem(
+  item: string,
+  expression: string,
+  answer: string,
+  columns: Array<[string, string, string, string]>
+) {
+  return {
+    item,
+    expression,
+    answer,
+    method: 'compound' as const,
+    compoundColumns: columns.map(([unit, top, bottom, total]) => ({ unit, top, bottom, total }))
+  };
+}
+
+function additionStudioModel(top: number, bottom: number, unit: string, solved: boolean): PlaceValueAdditionModel {
+  const result = top + bottom;
+  const width = Math.max(String(top).length, String(bottom).length, String(result).length);
+  const columns = ['thousands', 'hundreds', 'tens', 'ones'].slice(-width);
+  const digits = (value: number) => String(value).padStart(width, '0').split('').map(Number);
+  const topDigits = digits(top);
+  const bottomDigits = digits(bottom);
+  const regroupings: PlaceValueAdditionModel['regroupings'] = [];
+  let carry = 0;
+  for (let column = width - 1; column > 0; column -= 1) {
+    const total = topDigits[column] + bottomDigits[column] + carry;
+    carry = total >= 10 ? 1 : 0;
+    if (carry) {
+      regroupings.push({
+        fromColumn: column,
+        toColumn: column - 1,
+        label: `10 ${columns[column]} → 1 ${columns[column - 1].replace(/s$/, '')}`
+      });
+    }
+  }
+  return {
+    unit,
+    columns,
+    addends: [
+      { label: `${top}`, digits: topDigits },
+      { label: `+ ${bottom}`, digits: bottomDigits }
+    ],
+    resultDigits: solved ? digits(result).map(String) : Array.from({ length: width }, () => '?'),
+    regroupings,
+    result: solved ? `${result} ${unit}` : `____ ${unit}`
+  };
+}
+
+function makeExactTopicDStoryVisual(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean
+): ProblemVisualSpec | undefined {
+  const lower = seed.sourcePrompt.toLowerCase();
+  const sourceNote = solved
+    ? 'The diagram keeps the source quantities and unknown in the same relationship as the official Problem Set, then reveals each calculation in order.'
+    : 'The diagram keeps the source quantities visible and leaves only the requested unknown open.';
+
+  if (/pretzel weighs 63 grams more/.test(lower)) {
+    return {
+      title: 'Problem 2: compare popcorn and pretzel weights',
+      sourceNote,
+      sections: [
+        {
+          kind: 'data-table',
+          label: 'Source picture labels',
+          columns: ['Item', 'Weight shown'],
+          rows: [['Popcorn', '44 g'], ['Pretzel', solved ? '107 g' : '? g'], ['Difference', '63 g more']]
+        },
+        {
+          kind: 'tape',
+          label: solved ? 'Solved comparison tape' : 'Source comparison tape',
+          totalLabel: solved ? 'pretzel = 107 g' : 'pretzel = ? g',
+          parts: [
+            { label: '44 g', sublabel: 'same as popcorn' },
+            { label: '63 g', sublabel: 'more' }
+          ],
+          caption: solved ? '44 g + 63 g = 107 g' : 'The pretzel is the popcorn weight plus 63 grams.'
+        },
+        {
+          kind: 'equations',
+          label: solved ? 'Worked calculation' : 'Student equation',
+          lines: solved ? ['44 g + 63 g = 107 g', 'The pretzel weighs 107 grams.'] : ['44 g + 63 g = ____ g']
+        }
+      ]
+    };
+  }
+
+  if (/jason says the total is 782 milliliters/.test(lower)) {
+    return {
+      title: 'Problem 3: check Jason and Andrea’s calculations',
+      sourceNote,
+      sections: [
+        {
+          kind: 'data-table',
+          label: 'Official source table',
+          columns: ['Student', 'Liquid volume'],
+          rows: [['Jason', '475 mL'], ['Andrea', '317 mL']]
+        },
+        {
+          kind: 'card-grid',
+          label: solved ? 'Column check and conclusion' : 'Calculation and explanation workspace',
+          cards: [
+            {
+              label: 'Add the two beaker amounts',
+              sections: [{
+                kind: 'equations',
+                lines: solved
+                  ? ['ones: 5 + 7 = 12 → write 2, compose 1 ten', 'tens: 7 + 1 + 1 = 9', 'hundreds: 4 + 3 = 7', '475 mL + 317 mL = 792 mL']
+                  : ['475 mL + 317 mL = ____ mL', 'show the composed ten: __________________']
+              }]
+            },
+            {
+              label: 'Compare the claims',
+              sections: [{
+                kind: 'note',
+                text: solved
+                  ? 'Andrea is correct. Jason’s 782 mL leaves out the 1 ten composed from 12 ones.'
+                  : 'Circle Jason or Andrea. Explain what happens after 5 ones + 7 ones.'
+              }]
+            }
+          ]
+        }
+      ]
+    };
+  }
+
+  if (/greg 15 minutes to mow the front lawn/.test(lower)) {
+    return twoStepPartWholeVisual(
+      4,
+      'Greg’s front lawn, back lawn, and total mowing time',
+      { label: 'Step 1: find the back-lawn time', whole: solved ? 'back lawn = 32 min' : 'back lawn = ? min', parts: [['15 min', 'front-lawn time'], ['17 min', 'more']], equation: solved ? '15 min + 17 min = 32 min' : '15 min + 17 min = ____ min' },
+      { label: 'Step 2: find both lawns', whole: solved ? 'both lawns = 47 min' : 'both lawns = ? min', parts: [['15 min', 'front lawn'], [solved ? '32 min' : '? min', 'back lawn']], equation: solved ? '15 min + 32 min = 47 min' : '15 min + ____ min = ____ min' },
+      solved,
+      sourceNote
+    );
+  }
+
+  if (/lane makes sauerkraut/.test(lower)) {
+    return {
+      title: 'Problem 2: total cabbage and salt weight',
+      sourceNote,
+      sections: [
+        {
+          kind: 'data-table',
+          label: 'Source scale readings',
+          columns: ['Ingredient', 'Weight'],
+          rows: [['Cabbage', '907 g'], ['Salt', '93 g']]
+        },
+        {
+          kind: 'tape',
+          label: solved ? 'Solved labeled tape diagram' : 'Tape diagram workspace',
+          totalLabel: solved ? 'total = 1,000 g' : 'total = ? g',
+          parts: [{ label: '907 g', sublabel: 'cabbage' }, { label: '93 g', sublabel: 'salt' }],
+          caption: solved ? '907 g + 93 g = 1,000 g = 1 kg' : 'Join the two source weights and label the total.'
+        },
+        {
+          kind: 'equations',
+          label: solved ? 'Worked calculation and rename' : 'Student equation',
+          lines: solved ? ['907 g + 93 g = 1,000 g', '1,000 g = 1 kg'] : ['907 g + 93 g = ____ g', '____ g = ____ kg']
+        }
+      ]
+    };
+  }
+
+  if (/after wrapping 86 muffins/.test(lower)) {
+    return {
+      title: 'Problem 3: all of Sue’s mini-muffins',
+      sourceNote,
+      sections: [
+        {
+          kind: 'tape',
+          label: solved ? 'Solved part–whole tape' : 'Part–whole tape workspace',
+          totalLabel: solved ? 'baked altogether = 144 muffins' : 'baked altogether = ? muffins',
+          parts: [{ label: '86', sublabel: 'wrapped' }, { label: '58', sublabel: 'cooling' }],
+          caption: solved ? 'Both groups were baked, so they are parts of one total.' : 'Join wrapped muffins and cooling muffins.'
+        },
+        {
+          kind: 'equations',
+          label: solved ? 'Compose twice' : 'Student calculation',
+          lines: solved
+            ? ['ones: 6 + 8 = 14 → write 4, compose 1 ten', 'tens: 8 + 5 + 1 = 14', '86 + 58 = 144 muffins']
+            : ['86 + 58 = ____ muffins', 'show both composed units: __________________']
+        }
+      ]
+    };
+  }
+
+  if (/milk carton to the right holds 183 milliliters more/.test(lower)) {
+    return twoStepPartWholeVisual(
+      4,
+      'Juice-box and milk-carton capacities',
+      { label: 'Step 1: find the milk carton', whole: solved ? 'milk carton = 462 mL' : 'milk carton = ? mL', parts: [['279 mL', 'same as juice box'], ['183 mL', 'more']], equation: solved ? '279 mL + 183 mL = 462 mL' : '279 mL + 183 mL = ____ mL' },
+      { label: 'Step 2: find the combined capacity', whole: solved ? 'combined = 741 mL' : 'combined = ? mL', parts: [['279 mL', 'juice box'], [solved ? '462 mL' : '? mL', 'milk carton']], equation: solved ? '279 mL + 462 mL = 741 mL' : '279 mL + ____ mL = ____ mL' },
+      solved,
+      sourceNote
+    );
+  }
+
+  return undefined;
+}
+
+function twoStepPartWholeVisual(
+  problemNumber: number,
+  title: string,
+  first: { label: string; whole: string; parts: [string, string][]; equation: string },
+  second: { label: string; whole: string; parts: [string, string][]; equation: string },
+  solved: boolean,
+  sourceNote: string
+): ProblemVisualSpec {
+  return {
+    title: `Problem ${problemNumber}: ${title}`,
+    sourceNote,
+    sections: [{
+      kind: 'card-grid',
+      label: solved ? 'Two-step solved model' : 'Two-step source workspace',
+      cards: [first, second].map((step) => ({
+        label: step.label,
+        sections: [
+          {
+            kind: 'tape',
+            totalLabel: step.whole,
+            parts: step.parts.map(([label, sublabel]) => ({ label, sublabel })),
+            caption: step.equation
+          },
+          { kind: 'equations', lines: [step.equation] }
+        ]
+      }))
+    }]
   };
 }
 
@@ -1067,7 +1477,7 @@ function makeM2TopicDLabSections(
   solved: boolean,
   lower: string
 ): ProblemVisualSpec['sections'] | undefined {
-  if (/choose mental math or the algorithm|pretzel weighs|jason and andrea|greg mows/.test(lower)) {
+  if (/choose mental math or the algorithm|pretzel weighs|jason and andrea|greg mows|mow the front lawn/.test(lower)) {
     return [
       {
         kind: 'measurement-lab',
@@ -1081,7 +1491,7 @@ function makeM2TopicDLabSections(
     ];
   }
 
-  if (/52 ml \+ 68 ml|352 ml \+ 468 ml|697 g \+ 138 g|compose larger units twice|907 \+ 93|cabbage and salt|wrapping 86 muffins|milk carton holds 183 milliliters|milk carton holds 183 ml/.test(lower)) {
+  if (/52 ml \+ 68 ml|352 ml \+ 468 ml|697 g \+ 138 g|compose larger units twice|907 \+ 93|cabbage and salt|wrapping 86 muffins|milk carton(?: to the right)? holds 183 milliliters|milk carton(?: to the right)? holds 183 ml/.test(lower)) {
     return [
       {
         kind: 'measurement-lab',
@@ -1185,11 +1595,14 @@ function topicDPlaceValueAddition(
   composeMode: 'once' | 'twice'
 ): PlaceValueAdditionModel | undefined {
   let addends: [number, number] | undefined;
+  let forcedUnit: string | undefined;
 
   if (composeMode === 'once' && /choose mental math or the algorithm/.test(lower)) {
     addends = [29, 63];
+    forcedUnit = 'g';
   } else if (composeMode === 'twice' && /52 ml \+ 68 ml/.test(lower)) {
     addends = [352, 468];
+    forcedUnit = 'mL';
   } else {
     const equation = seed.equations?.find((line) => /\d[\d,]*[^=]*\+\s*\d/.test(line));
     const match = equation?.match(/(\d[\d,]*)[^\d+]*\+\s*(\d[\d,]*)/);
@@ -1222,12 +1635,12 @@ function topicDPlaceValueAddition(
     }
   }
 
-  const unit = /\bml\b|milliliter/.test(lower) ? 'mL'
+  const unit = forcedUnit ?? (/\bml\b|milliliter/.test(lower) ? 'mL'
     : /\bcm\b|centimeter/.test(lower) ? 'cm'
       : /\bg\b|gram/.test(lower) ? 'g'
         : /minute/.test(lower) ? 'minutes'
           : /muffin/.test(lower) ? 'muffins'
-            : seed.unitLabel === 'units' ? '' : seed.unitLabel ?? '';
+            : seed.unitLabel === 'units' ? '' : seed.unitLabel ?? '');
   const unitSuffix = unit ? ` ${unit}` : '';
 
   return {
@@ -1418,7 +1831,7 @@ function topicDComposeRows(
           { left: 'decide', right: 'compare Jason and Andrea' }
         ];
   }
-  if (/greg mows/.test(lower)) {
+  if (/greg mows|mow the front lawn/.test(lower)) {
     return solved
       ? [
           { left: 'front lawn', right: '15 minutes' },
@@ -1457,7 +1870,7 @@ function topicDComposeRows(
           { left: 'answer', right: 'total muffins baked' }
         ];
   }
-  if (/milk carton holds 183 milliliters|milk carton holds 183 ml/.test(lower)) {
+  if (/milk carton(?: to the right)? holds 183 milliliters|milk carton(?: to the right)? holds 183 ml/.test(lower)) {
     return solved
       ? [
           { left: 'juice box', right: '279 mL' },
@@ -2044,9 +2457,12 @@ function topicCRoundingRows(
   }
 
   const equations = seed.equations ?? [];
-  const first = equations.slice(0, 6).map((line) => {
-    const [left, right] = line.split(/~=|≈/u).map((part) => part.trim());
-    return { left: left || 'number', right: right || line };
+  const first = equations.slice(0, 6).map((line, index) => {
+    const parts = line.split(/~=|≈/u).map((part) => part.trim());
+    if (parts.length < 2) {
+      return { left: `reason ${index + 1}`, right: line };
+    }
+    return { left: parts[0] || 'number', right: parts[1] || line };
   });
   return first.length ? first : [{ left: 'rounded answer', right: seed.solvedAnswer }];
 }
@@ -2193,7 +2609,10 @@ function m2KilogramDecomposition(lower: string): { whole: string; detail: string
 function measurementValues(seed: ProblemSetCenteredProblem | ProblemSeed, solved: boolean, unitLabel?: string): NonNullable<ProblemVisualMeasurementModelSection['values']> {
   const values: NonNullable<ProblemVisualMeasurementModelSection['values']> = [];
   const equationText = seed.equations?.join(' ') ?? '';
-  const labeledValues = Array.from([equationText, seed.sourcePrompt, seed.solvedAnswer].join(' ').matchAll(/\b\d{1,3}(?:,\d{3})*\s*(?:kg|kilograms?|g|grams?|mL|milliliters?|L|liters?|cm|centimeters?|minutes?|mins?)\b/gi));
+  const evidenceText = solved
+    ? [equationText, seed.sourcePrompt, seed.solvedAnswer].join(' ')
+    : seed.sourcePrompt;
+  const labeledValues = Array.from(evidenceText.matchAll(/\b\d{1,3}(?:,\d{3})*\s*(?:kg|kilograms?|g|grams?|mL|milliliters?|L|liters?|cm|centimeters?|minutes?|mins?)\b/gi));
   const seenLabels = new Set<string>();
 
   labeledValues.slice(0, 5).forEach((match, index) => {
@@ -2215,9 +2634,9 @@ function measurementValues(seed: ProblemSetCenteredProblem | ProblemSeed, solved
     return values;
   }
 
-  const equationNumbers = Array.from(equationText.matchAll(/\b\d{1,3}(?:,\d{3})*\b/g))
+  const equationNumbers = solved ? Array.from(equationText.matchAll(/\b\d{1,3}(?:,\d{3})*\b/g))
     .map((match) => Number(match[0].replace(/,/g, '')))
-    .filter((value) => Number.isFinite(value));
+    .filter((value) => Number.isFinite(value)) : [];
   const promptNumbers = Array.from(seed.sourcePrompt.matchAll(/\b\d{1,3}(?:,\d{3})*\b/g))
     .map((match) => Number(match[0].replace(/,/g, '')))
     .filter((value) => Number.isFinite(value));
@@ -2327,7 +2746,7 @@ function measurementSteps(model: ProblemVisualMeasurementModelSection['model'], 
 
 function makeM2TapeOrWorkspace(seed: ProblemSetCenteredProblem | ProblemSeed, solved: boolean): ProblemVisualSpec['sections'][number] {
   const unit = seed.unitLabel ?? 'units';
-  const total = seed.knownTotal ?? seed.quotient;
+  const total = solved ? seed.knownTotal ?? seed.quotient : seed.knownTotal;
   const equationPartLabels = m2EquationPartLabels(seed, unit);
   const partCount = equationPartLabels?.length ?? boundedM2Count(seed.knownGroupCount ?? (seed.knownGroupSize ? seed.quotient : 3), 1, 10);
   const partLabel = solved
@@ -3772,14 +4191,26 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         number: 1,
         sourcePrompt: 'Round to the nearest hundred. Use the number line to model your thinking. a. 143. b. 286. c. 320. d. 1,320. e. 1,572. f. 1,250.',
         solvedAnswer: 'a. 143 rounds to 100. b. 286 rounds to 300. c. 320 rounds to 300. d. 1,320 rounds to 1,300. e. 1,572 rounds to 1,600. f. 1,250 rounds to 1,300. Each answer is modeled on a vertical number line.',
-        equations: ['143 ~= 100', '286 ~= 300', '320 ~= 300', '1,320 ~= 1,300', '1,572 ~= 1,600', '1,250 ~= 1,300'],
+        equations: ['143 ≈ 100', '286 ≈ 300', '320 ≈ 300', '1,320 ≈ 1,300', '1,572 ≈ 1,600', '1,250 ≈ 1,300'],
+        explanation: 'For each number, label the lower hundred, the halfway point, and the upper hundred. A number below halfway rounds down; a number at or above halfway rounds up.',
+        checks: [
+          'All six numbers and rounded answers match the Lesson 14 Answer Key.',
+          'Every answer is supported by its own vertical number line.',
+          'The halfway case 1,250 rounds up to 1,300.'
+        ],
         numberLineModels: [143, 286, 320, 1320, 1572, 1250].map((value) => nearestHundredLine(value))
       }),
       problem({
         number: 2,
         sourcePrompt: 'Complete the chart. a. Shauna has 480 stickers. Round the number of stickers to the nearest hundred. b. There are 525 pages in a book. Round the number of pages to the nearest hundred. c. A container holds 750 milliliters of water. Round the capacity to the nearest 100 milliliters. d. Glen spends $1,297 on a new computer. Round the amount Glen spends to the nearest $100. e. The drive between two cities is 1,842 kilometers. Round the distance to the nearest 100 kilometers.',
         solvedAnswer: 'a. 500 stickers. b. 500 pages. c. 800 mL. d. $1,300. e. 1,800 km.',
-        equations: ['480 ~= 500', '525 ~= 500', '750 ~= 800', '1,297 ~= 1,300', '1,842 ~= 1,800'],
+        equations: ['480 ≈ 500', '525 ≈ 500', '750 ≈ 800', '$1,297 ≈ $1,300', '1,842 km ≈ 1,800 km'],
+        explanation: 'Compare each quantity with the halfway value between its two surrounding hundreds. The halfway values are 450, 550, 750, 1,250, and 1,850.',
+        checks: [
+          'The names, contexts, quantities, and units match the official Lesson 14 Problem Set.',
+          'All five rounded values match the Lesson 14 Answer Key.',
+          'Each chart row is paired with a vertical number line showing lower hundred, halfway, upper hundred, target, and rounded endpoint.'
+        ],
         dataDisplay: dataTable('Nearest hundred chart', ['Source item', 'Rounded answer'], [['480 stickers', '____ stickers'], ['525 pages', '____ pages'], ['750 mL', '____ mL'], ['$1,297', '$____'], ['1,842 km', '____ km']]),
         solvedDataDisplay: dataTable('Nearest hundred chart', ['Source item', 'Rounded answer'], [['480 stickers', '500 stickers'], ['525 pages', '500 pages'], ['750 mL', '800 mL'], ['$1,297', '$1,300'], ['1,842 km', '1,800 km']]),
         numberLineModels: [
@@ -3790,8 +4221,34 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
           nearestHundredLine(1842, 'km')
         ]
       }),
-      problem({ number: 3, sourcePrompt: 'Circle numbers that round to 600: 527, 550, 639, 681, 713, 603.', solvedAnswer: '550, 639, and 603 round to 600.', equations: ['550 ~= 600', '639 ~= 600', '603 ~= 600'], numberLineModels: [numberLine('500 to 700', ['500', '550', '600', '650', '700'], [1, 2])] }),
-      problem({ number: 4, sourcePrompt: 'Christian says 1,865 rounds to one thousand, nine hundred; Alexis says 19 hundreds.', solvedAnswer: 'Both are correct: 1,900 is 19 hundreds.', equations: ['1,865 ~= 1,900', '1,900 = 19 hundreds'], numberLineModels: [nearestHundredLine(1865)] })
+      problem({
+        number: 3,
+        sourcePrompt: 'Circle the numbers that round to 600 when rounding to the nearest hundred: 527, 550, 639, 681, 713, and 603.',
+        solvedAnswer: 'Circle 550, 639, and 603. These—and only these choices—round to 600.',
+        equations: ['527 ≈ 500', '550 ≈ 600', '639 ≈ 600', '681 ≈ 700', '713 ≈ 700', '603 ≈ 600'],
+        explanation: 'Whole numbers from 550 through 649 round to 600. Check each choice against that interval: 550, 639, and 603 are inside it; 527, 681, and 713 are outside it.',
+        checks: [
+          'The six choices match the official Lesson 14 Problem Set.',
+          '550, 639, and 603 match the Lesson 14 Answer Key.',
+          'All six choices have individual number-line evidence, including the three choices that do not round to 600.'
+        ],
+        dataDisplay: dataTable('Which numbers round to 600?', ['Number', 'Circle or leave?'], [['527', '____'], ['550', '____'], ['639', '____'], ['681', '____'], ['713', '____'], ['603', '____']]),
+        solvedDataDisplay: dataTable('Which numbers round to 600?', ['Number', 'Decision'], [['527', 'Leave: rounds to 500'], ['550', 'Circle: rounds to 600'], ['639', 'Circle: rounds to 600'], ['681', 'Leave: rounds to 700'], ['713', 'Leave: rounds to 700'], ['603', 'Circle: rounds to 600']]),
+        numberLineModels: [527, 550, 639, 681, 713, 603].map((value) => nearestHundredLine(value))
+      }),
+      problem({
+        number: 4,
+        sourcePrompt: 'The teacher asks students to round 1,865 to the nearest hundred. Christian says that it is one thousand, nine hundred. Alexis disagrees and says it is 19 hundreds. Who is correct? Explain your thinking.',
+        solvedAnswer: 'Both are correct. Since 1,865 is above the halfway point of 1,850, it rounds to 1,900. The value 1,900 is also 19 hundreds because 19 × 100 = 1,900.',
+        equations: ['1,800 < 1,850 < 1,865 < 1,900', '1,865 ≈ 1,900', '19 × 100 = 1,900', '1,900 = 19 hundreds'],
+        explanation: 'First use the vertical number line to justify the rounded value. Then use place-value unit form to show that Christian and Alexis named the same value in two different ways.',
+        checks: [
+          'The disagreement and question match the official Lesson 14 Problem Set.',
+          'The rounded value and both-correct conclusion match the Lesson 14 Answer Key.',
+          'The explanation proves both the rounding decision and the equivalence of 1,900 and 19 hundreds.'
+        ],
+        numberLineModels: [nearestHundredLine(1865)]
+      })
     ]
   }),
   15: lesson({
@@ -3801,10 +4258,54 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Line up units and place values before adding.',
     summary: 'Measurement addition follows place value and keeps units attached.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Find the sums below. Choose mental math or the algorithm.', solvedAnswer: '51 mL, 71 mL, 171 mL, 89 cm, 592 cm, 627 cm, 92 g, 639 g, 956 g, 3 L 657 mL, 5 kg 876 g.', equations: ['46 mL + 5 mL = 51 mL', '46 mL + 25 mL = 71 mL', '46 mL + 125 mL = 171 mL', '59 cm + 30 cm = 89 cm', '509 cm + 83 cm = 592 cm', '597 cm + 30 cm = 627 cm', '29 g + 63 g = 92 g', '345 g + 294 g = 639 g', '480 g + 476 g = 956 g', '1 L 245 mL + 2 L 412 mL = 3 L 657 mL', '2 kg 509 g + 3 kg 367 g = 5 kg 876 g'] }),
-      problem({ number: 2, sourcePrompt: 'A pretzel weighs 63 g more than a 44 g popcorn.', solvedAnswer: 'The pretzel weighs 107 grams.', equations: ['44 + 63 = 107'], quotient: 107, unitLabel: 'grams', blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
-      problem({ number: 3, sourcePrompt: 'Jason and Andrea add 475 mL and 317 mL; Jason says 782, Andrea says 792.', solvedAnswer: 'Andrea is correct: 475 + 317 = 792 mL. Jason is 10 mL too low.', equations: ['475 + 317 = 792'], quotient: 792, unitLabel: 'milliliters' }),
-      problem({ number: 4, sourcePrompt: 'Greg mows front lawn for 15 minutes and back lawn for 17 more minutes than front.', solvedAnswer: 'Back lawn = 32 minutes; total = 47 minutes.', equations: ['15 + 17 = 32', '15 + 32 = 47'], quotient: 47, unitLabel: 'minutes' })
+      problem({
+        number: 1,
+        sourcePrompt: 'Find the sums below. Choose mental math or the algorithm. a. 46 mL + 5 mL. b. 46 mL + 25 mL. c. 46 mL + 125 mL. d. 59 cm + 30 cm. e. 509 cm + 83 cm. f. 597 cm + 30 cm. g. 29 g + 63 g. h. 345 g + 294 g. i. 480 g + 476 g. j. 1 L 245 mL + 2 L 412 mL. k. 2 kg 509 g + 3 kg 367 g.',
+        solvedAnswer: 'a. 51 mL. b. 71 mL. c. 171 mL. d. 89 cm. e. 592 cm. f. 627 cm. g. 92 g. h. 639 g. i. 956 g. j. 3 L 657 mL. k. 5 kg 876 g.',
+        equations: ['46 mL + 5 mL = 51 mL', '46 mL + 25 mL = 71 mL', '46 mL + 125 mL = 171 mL', '59 cm + 30 cm = 89 cm', '509 cm + 83 cm = 592 cm', '597 cm + 30 cm = 627 cm', '29 g + 63 g = 92 g', '345 g + 294 g = 639 g', '480 g + 476 g = 956 g', '1 L 245 mL + 2 L 412 mL = 3 L 657 mL', '2 kg 509 g + 3 kg 367 g = 5 kg 876 g'],
+        explanation: 'Choose mental math when a friendly benchmark makes the sum immediate. Otherwise align equal place values, add from right to left, and compose one larger unit when a column reaches 10 or more. In j and k, add liters with liters and milliliters with milliliters, or kilograms with kilograms and grams with grams.',
+        checks: ['All eleven expressions match the official Lesson 15 Problem Set.', 'All eleven sums match the Lesson 15 Answer Key.', 'Each final answer preserves the source measurement unit or compound units.'],
+        dataDisplay: dataTable('Lesson 15 addition record', ['Item', 'Source expression', 'Sum'], [['a', '46 mL + 5 mL', '____ mL'], ['b', '46 mL + 25 mL', '____ mL'], ['c', '46 mL + 125 mL', '____ mL'], ['d', '59 cm + 30 cm', '____ cm'], ['e', '509 cm + 83 cm', '____ cm'], ['f', '597 cm + 30 cm', '____ cm'], ['g', '29 g + 63 g', '____ g'], ['h', '345 g + 294 g', '____ g'], ['i', '480 g + 476 g', '____ g'], ['j', '1 L 245 mL + 2 L 412 mL', '____ L ____ mL'], ['k', '2 kg 509 g + 3 kg 367 g', '____ kg ____ g']]),
+        solvedDataDisplay: dataTable('Lesson 15 addition record', ['Item', 'Source expression', 'Checked sum'], [['a', '46 mL + 5 mL', '51 mL'], ['b', '46 mL + 25 mL', '71 mL'], ['c', '46 mL + 125 mL', '171 mL'], ['d', '59 cm + 30 cm', '89 cm'], ['e', '509 cm + 83 cm', '592 cm'], ['f', '597 cm + 30 cm', '627 cm'], ['g', '29 g + 63 g', '92 g'], ['h', '345 g + 294 g', '639 g'], ['i', '480 g + 476 g', '956 g'], ['j', '1 L 245 mL + 2 L 412 mL', '3 L 657 mL'], ['k', '2 kg 509 g + 3 kg 367 g', '5 kg 876 g']])
+      }),
+      problem({
+        number: 2,
+        sourcePrompt: 'Nadine and Jen buy a small bag of popcorn and a pretzel at the movie theater. The pretzel weighs 63 grams more than the popcorn. What is the weight of the pretzel? The source tape diagram labels the popcorn as 44 grams.',
+        solvedAnswer: 'The pretzel weighs 107 grams.',
+        equations: ['44 g + 63 g = 107 g'],
+        explanation: 'The tape shows the pretzel as the 44-gram popcorn plus 63 more grams, so add the two parts.',
+        checks: ['The story wording and 44-gram diagram value match the official Problem Set.', '44 g + 63 g = 107 g matches the Answer Key.', 'The tape diagram keeps both known parts visible.'],
+        quotient: 107,
+        unitLabel: 'grams',
+        blankVisualType: 'tape-diagram',
+        animationType: 'tape-split',
+        knownGroupCount: 2,
+        shareLabels: ['popcorn', 'more']
+      }),
+      problem({
+        number: 3,
+        sourcePrompt: 'In math class, Jason and Andrea find the total liquid volume of water in their beakers. Jason says the total is 782 milliliters, but Andrea says it is 792 milliliters. The amount of water in each beaker can be found in the table to the right. Show whose calculation is correct. Explain the mistake of the other student.',
+        solvedAnswer: 'Andrea is correct: 475 mL + 317 mL = 792 mL. Jason forgot to include the ten composed from 5 ones + 7 ones = 12 ones, so his tens digit is 1 too small.',
+        equations: ['475 mL + 317 mL = 792 mL', '5 ones + 7 ones = 12 ones', '7 tens + 1 ten + 1 composed ten = 9 tens'],
+        explanation: 'Add the ones first, compose 10 ones as 1 ten, and include that new ten when adding the tens column.',
+        checks: ['The two student claims and source table values match the official Problem Set.', '792 mL and Andrea are confirmed by the Answer Key.', 'The explanation identifies Jason’s missed composed ten.'],
+        quotient: 792,
+        unitLabel: 'milliliters',
+        dataDisplay: dataTable('Student liquid-volume table', ['Student', 'Liquid volume'], [['Jason', '475 mL'], ['Andrea', '317 mL']]),
+        solvedDataDisplay: dataTable('Student liquid-volume table', ['Student', 'Liquid volume'], [['Jason', '475 mL'], ['Andrea', '317 mL']], 'The two beaker amounts total 792 mL.')
+      }),
+      problem({
+        number: 4,
+        sourcePrompt: 'It takes Greg 15 minutes to mow the front lawn. It takes him 17 more minutes to mow the back lawn than the front lawn. What is the total amount of time Greg spends mowing the lawns?',
+        solvedAnswer: 'The back lawn takes 32 minutes, and Greg spends 47 minutes mowing both lawns.',
+        equations: ['15 min + 17 min = 32 min', '15 min + 32 min = 47 min'],
+        explanation: 'This is a two-step problem: first find the back-lawn time, then add the front- and back-lawn times.',
+        checks: ['The wording and quantities match the official Problem Set.', '47 minutes matches the Lesson 15 Answer Key.', 'The visual separates the intermediate 32-minute result from the 47-minute total.'],
+        quotient: 47,
+        unitLabel: 'minutes',
+        dataDisplay: dataTable('Greg’s two-step mowing record', ['Quantity', 'Work'], [['Front lawn', '15 min'], ['Back lawn', '15 min + 17 min = ____ min'], ['Both lawns', '15 min + ____ min = ____ min']]),
+        solvedDataDisplay: dataTable('Greg’s two-step mowing record', ['Quantity', 'Checked work'], [['Front lawn', '15 min'], ['Back lawn', '15 min + 17 min = 32 min'], ['Both lawns', '15 min + 32 min = 47 min']])
+      })
     ]
   }),
   16: lesson({
@@ -3814,10 +4315,54 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     contrast: 'Regroup each place value as needed and keep compound units separate.',
     summary: 'Compose twice when needed, then write the compound measurement accurately.',
     problems: [
-      problem({ number: 1, sourcePrompt: 'Find the sums below.', solvedAnswer: '120 mL, 420 mL, 820 mL, 150 cm, 600 cm, 900 cm, 835 g, 942 g, 983 g, 4 L 800 mL, 6 kg 851 g.', equations: ['52 mL + 68 mL = 120 mL', '352 mL + 68 mL = 420 mL', '352 mL + 468 mL = 820 mL', '56 cm + 94 cm = 150 cm', '506 cm + 94 cm = 600 cm', '506 cm + 394 cm = 900 cm', '697 g + 138 g = 835 g', '345 g + 597 g = 942 g', '486 g + 497 g = 983 g', '3 L 251 mL + 1 L 549 mL = 4 L 800 mL', '4 kg 384 g + 2 kg 467 g = 6 kg 851 g'] }),
-      problem({ number: 2, sourcePrompt: 'Lane uses 907 g cabbage and 93 g salt.', solvedAnswer: 'Total = 1,000 g, or 1 kg.', equations: ['907 + 93 = 1,000'], quotient: 1000, unitLabel: 'grams', blankVisualType: 'tape-diagram', animationType: 'tape-split' }),
-      problem({ number: 3, sourcePrompt: 'Sue wraps 86 muffins and has 58 left cooling.', solvedAnswer: 'Sue baked 144 muffins.', equations: ['86 + 58 = 144'], quotient: 144, unitLabel: 'muffins' }),
-      problem({ number: 4, sourcePrompt: 'Milk carton holds 183 mL more than 279 mL juice box; find total capacity.', solvedAnswer: 'Milk carton = 462 mL; total = 741 mL.', equations: ['279 + 183 = 462', '279 + 462 = 741'], quotient: 741, unitLabel: 'milliliters' })
+      problem({
+        number: 1,
+        sourcePrompt: 'Find the sums below. a. 52 mL + 68 mL. b. 352 mL + 68 mL. c. 352 mL + 468 mL. d. 56 cm + 94 cm. e. 506 cm + 94 cm. f. 506 cm + 394 cm. g. 697 g + 138 g. h. 345 g + 597 g. i. 486 g + 497 g. j. 3 L 251 mL + 1 L 549 mL. k. 4 kg 384 g + 2 kg 467 g.',
+        solvedAnswer: 'a. 120 mL. b. 420 mL. c. 820 mL. d. 150 cm. e. 600 cm. f. 900 cm. g. 835 g. h. 942 g. i. 983 g. j. 4 L 800 mL. k. 6 kg 851 g.',
+        equations: ['52 mL + 68 mL = 120 mL', '352 mL + 68 mL = 420 mL', '352 mL + 468 mL = 820 mL', '56 cm + 94 cm = 150 cm', '506 cm + 94 cm = 600 cm', '506 cm + 394 cm = 900 cm', '697 g + 138 g = 835 g', '345 g + 597 g = 942 g', '486 g + 497 g = 983 g', '3 L 251 mL + 1 L 549 mL = 4 L 800 mL', '4 kg 384 g + 2 kg 467 g = 6 kg 851 g'],
+        explanation: 'Align like place values and add from right to left. When the ones total 10 or more, compose a ten; when the tens total 10 or more, compose a hundred. Keep compound units in separate aligned columns.',
+        checks: ['All eleven expressions match the official Lesson 16 Problem Set.', 'All eleven sums match the Lesson 16 Answer Key.', 'The place-value model demonstrates both compositions with 352 mL + 468 mL.'],
+        dataDisplay: dataTable('Lesson 16 addition record', ['Item', 'Source expression', 'Sum'], [['a', '52 mL + 68 mL', '____ mL'], ['b', '352 mL + 68 mL', '____ mL'], ['c', '352 mL + 468 mL', '____ mL'], ['d', '56 cm + 94 cm', '____ cm'], ['e', '506 cm + 94 cm', '____ cm'], ['f', '506 cm + 394 cm', '____ cm'], ['g', '697 g + 138 g', '____ g'], ['h', '345 g + 597 g', '____ g'], ['i', '486 g + 497 g', '____ g'], ['j', '3 L 251 mL + 1 L 549 mL', '____ L ____ mL'], ['k', '4 kg 384 g + 2 kg 467 g', '____ kg ____ g']]),
+        solvedDataDisplay: dataTable('Lesson 16 addition record', ['Item', 'Source expression', 'Checked sum'], [['a', '52 mL + 68 mL', '120 mL'], ['b', '352 mL + 68 mL', '420 mL'], ['c', '352 mL + 468 mL', '820 mL'], ['d', '56 cm + 94 cm', '150 cm'], ['e', '506 cm + 94 cm', '600 cm'], ['f', '506 cm + 394 cm', '900 cm'], ['g', '697 g + 138 g', '835 g'], ['h', '345 g + 597 g', '942 g'], ['i', '486 g + 497 g', '983 g'], ['j', '3 L 251 mL + 1 L 549 mL', '4 L 800 mL'], ['k', '4 kg 384 g + 2 kg 467 g', '6 kg 851 g']])
+      }),
+      problem({
+        number: 2,
+        sourcePrompt: 'Lane makes sauerkraut. He weighs the amounts of cabbage and salt he uses. Draw and label a tape diagram to find the total weight of the cabbage and salt Lane uses. The source tape diagram labels the parts 907 grams and 93 grams.',
+        solvedAnswer: 'Lane uses 1,000 grams in total, which is 1 kilogram.',
+        equations: ['907 g + 93 g = 1,000 g', '1,000 g = 1 kg'],
+        explanation: 'The source tape has two parts. Adding 907 grams and 93 grams completes a full 1,000 grams, which can be renamed as 1 kilogram.',
+        checks: ['The story, tape instruction, and diagram values match the official Problem Set.', '1,000 grams and the labeled tape match the Answer Key.', 'The solution explicitly connects 1,000 g to 1 kg.'],
+        quotient: 1000,
+        unitLabel: 'grams',
+        blankVisualType: 'tape-diagram',
+        animationType: 'tape-split',
+        knownGroupCount: 2,
+        shareLabels: ['cabbage', 'salt']
+      }),
+      problem({
+        number: 3,
+        sourcePrompt: 'Sue bakes mini-muffins for the school bake sale. After wrapping 86 muffins, she still has 58 muffins left cooling on the table. How many muffins did she bake altogether?',
+        solvedAnswer: 'Sue baked 144 muffins altogether.',
+        equations: ['86 muffins + 58 muffins = 144 muffins'],
+        explanation: 'The wrapped muffins and cooling muffins are two parts of the total baked, so add 86 and 58. Compose once in the ones and once in the tens.',
+        checks: ['The complete school-bake-sale wording matches the official Problem Set.', '144 muffins matches the Lesson 16 Answer Key.', 'The two source parts remain visible in the model.'],
+        quotient: 144,
+        unitLabel: 'muffins',
+        knownGroupCount: 2,
+        shareLabels: ['wrapped', 'cooling']
+      }),
+      problem({
+        number: 4,
+        sourcePrompt: 'The milk carton to the right holds 183 milliliters more liquid than the juice box. What is the total capacity of the juice box and milk carton? The source diagram labels the juice box 279 milliliters and the milk carton unknown.',
+        solvedAnswer: 'The milk carton holds 462 milliliters. The juice box and milk carton hold 741 milliliters in total.',
+        equations: ['279 mL + 183 mL = 462 mL', '279 mL + 462 mL = 741 mL'],
+        explanation: 'First add 183 milliliters to the juice-box capacity to find the milk-carton capacity. Then add the two container capacities.',
+        checks: ['The official wording and diagram values are preserved separately.', '741 mL matches the Lesson 16 Answer Key.', 'The visual shows the intermediate 462 mL capacity before the 741 mL total.'],
+        quotient: 741,
+        unitLabel: 'milliliters',
+        dataDisplay: dataTable('Container capacities', ['Container', 'Capacity'], [['Juice box', '279 mL'], ['Milk carton', '____ mL'], ['Combined capacity', '____ mL']]),
+        solvedDataDisplay: dataTable('Container capacities', ['Container', 'Checked capacity'], [['Juice box', '279 mL'], ['Milk carton', '462 mL'], ['Combined capacity', '741 mL']])
+      })
     ]
   }),
   17: lesson({
