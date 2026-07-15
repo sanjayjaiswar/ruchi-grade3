@@ -1650,25 +1650,103 @@
                 </div>
 
                 <div *ngSwitchCase="'array'" class="lesson-animation-array-wrap" aria-label="Animated array model">
-                  <div
-                    class="lesson-animation-array"
-                    [style.gridTemplateColumns]="'repeat(' + (animation.columnCount || 4) + ', minmax(12px, 18px))'">
-                    <span
-                      *ngFor="let dot of lessonAnimationArrayDots; let dotIndex = index"
-                      [ngClass]="lessonAnimationDotClass(dotIndex)"></span>
+                  <div class="lesson-animation-parentheses-compare" *ngIf="animation.parenthesesCompare as comparison">
+                    <strong>{{ comparison.baseExpression }}</strong>
+                    <div>
+                      <article *ngFor="let comparisonCase of comparison.cases">
+                        <span>{{ comparisonCase.label }}</span>
+                        <b>{{ comparisonCase.grouped }}</b>
+                        <i>{{ comparisonCase.firstStep }}</i>
+                        <em>{{ comparisonCase.result }}</em>
+                        <small>{{ comparisonCase.note }}</small>
+                      </article>
+                    </div>
                   </div>
-                  <div class="lesson-animation-split-note" *ngIf="animation.firstPart">
-                    {{ animation.firstPart }} rows + {{ animation.secondPart }} rows
+                  <div class="lesson-animation-associative-build" *ngIf="animation.associativeBuild as build">
+                    <div class="lesson-animation-associative-chain">
+                      <span>{{ build.sourceExpression }}</span><i>→</i><span>{{ build.factorization }}</span><i>→</i><strong>{{ build.regroupedExpression }}</strong>
+                    </div>
+                    <div class="lesson-animation-associative-groups">
+                      <span *ngFor="let group of lessonAnimationGroups">{{ build.groupLabel }}</span>
+                    </div>
+                    <b>{{ build.innerFact }}</b>
+                    <em>{{ build.finalFact }}</em>
+                    <small>{{ build.alternateFact }}</small>
                   </div>
+                  <ng-container *ngIf="!animation.parenthesesCompare && !animation.associativeBuild">
+                  <div class="lesson-animation-count-by" *ngIf="animation.countByMakeTen as countBy">
+                    <div class="lesson-animation-count-sequence">
+                      <span *ngFor="let value of countBy.values">{{ value }}</span>
+                    </div>
+                    <div class="lesson-animation-make-ten-examples">
+                      <article *ngFor="let example of countBy.examples">
+                        <strong>{{ example.start }} + {{ countBy.unit }}</strong>
+                        <div><span>{{ example.start }}</span><i>+</i><span>{{ example.bridgePart }}</span><i>+</i><span>{{ example.leftoverPart }}</span></div>
+                        <b>{{ example.start + example.bridgePart }} + {{ example.leftoverPart }} = {{ example.result }}</b>
+                      </article>
+                    </div>
+                  </div>
+                  <ng-container *ngIf="!animation.countByMakeTen">
+                  <div class="lesson-animation-commutative-turn" *ngIf="animation.commutativeTurn as turn; else problemCenteredNonCommutativeArray">
+                    <article>
+                      <strong>Read the rows</strong>
+                      <div class="lesson-animation-array" [style.gridTemplateColumns]="'repeat(' + turn.columns + ', minmax(12px, 18px))'">
+                        <span *ngFor="let dot of lessonAnimationArrayDots"></span>
+                      </div>
+                      <b>{{ turn.rowEquation }}</b>
+                    </article>
+                    <i>turn</i>
+                    <article>
+                      <strong>Read the columns</strong>
+                      <div class="lesson-animation-array" [style.gridTemplateColumns]="'repeat(' + turn.rows + ', minmax(12px, 18px))'">
+                        <span *ngFor="let dot of lessonAnimationArrayDots"></span>
+                      </div>
+                      <b>{{ turn.columnEquation }}</b>
+                    </article>
+                    <small>{{ turn.factsFilled }} facts filled with known facts and commutative partners; {{ turn.factsLeft }} facts left to learn</small>
+                  </div>
+                  <ng-template #problemCenteredNonCommutativeArray>
+                    <div class="lesson-animation-distributive-build" *ngIf="animation.distributiveBuild as build; else problemCenteredDefaultArray">
+                      <div class="lesson-animation-unit-stack">
+                        <span *ngFor="let group of lessonAnimationGroups; let groupIndex = index" [class.is-extra]="groupIndex >= build.knownGroups">{{ build.unitValue }}</span>
+                      </div>
+                      <div class="lesson-animation-fact-chain">
+                        <span>{{ build.knownFact }}</span><i>+</i><span>{{ build.additionFact }}</span><i>→</i><strong>{{ build.targetFact }}</strong><i>↔</i><strong>{{ build.commutedFact }}</strong>
+                      </div>
+                      <div class="lesson-animation-division-bond" *ngIf="build.divisionBond as bond">
+                        <strong>{{ bond.whole }} divided by {{ bond.divisor }}</strong>
+                        <div><span>{{ bond.firstPart }} divided by {{ bond.divisor }} = {{ bond.firstQuotient }}</span><i>+</i><span>{{ bond.secondPart }} divided by {{ bond.divisor }} = {{ bond.secondQuotient }}</span></div>
+                        <b>{{ bond.firstQuotient }} + {{ bond.secondQuotient }} = {{ bond.totalQuotient }}</b>
+                      </div>
+                    </div>
+                    <ng-template #problemCenteredDefaultArray>
+                      <div class="lesson-animation-array" [style.gridTemplateColumns]="'repeat(' + (animation.columnCount || 4) + ', minmax(12px, 18px))'">
+                        <span *ngFor="let dot of lessonAnimationArrayDots; let dotIndex = index" [ngClass]="lessonAnimationDotClass(dotIndex)"></span>
+                      </div>
+                      <div class="lesson-animation-split-note" *ngIf="animation.firstPart">{{ animation.firstPart }} rows + {{ animation.secondPart }} rows</div>
+                    </ng-template>
+                  </ng-template>
+                  </ng-container>
+                  </ng-container>
                 </div>
 
                 <div *ngSwitchCase="'tape-diagram'" class="lesson-animation-tape" aria-label="Animated tape diagram model">
-                  <strong>{{ animation.tapeWholeLabel || 'whole' }}</strong>
-                  <div
-                    class="lesson-animation-tape-parts"
-                    [style.gridTemplateColumns]="'repeat(' + lessonAnimationTapeParts.length + ', minmax(34px, 1fr))'">
-                    <span *ngFor="let part of lessonAnimationTapeParts">{{ animation.tapePartLabel || 'unit' }}</span>
+                  <div class="lesson-animation-unknown-cases" *ngIf="animation.unknownCases?.length; else problemCenteredDefaultTape">
+                    <article *ngFor="let unknownCase of animation.unknownCases">
+                      <strong>{{ unknownCase.label }}</strong>
+                      <div><span>{{ unknownCase.whole }}</span><i>whole</i></div>
+                      <div><span>{{ unknownCase.known }}</span><i>known</i></div>
+                      <div class="is-unknown"><span>{{ unknownCase.unknown }}</span><i>unknown</i></div>
+                      <b>{{ unknownCase.equation }}</b>
+                      <em>{{ unknownCase.solution }}</em>
+                    </article>
                   </div>
+                  <ng-template #problemCenteredDefaultTape>
+                    <strong>{{ animation.tapeWholeLabel || 'whole' }}</strong>
+                    <div class="lesson-animation-tape-parts" [style.gridTemplateColumns]="'repeat(' + lessonAnimationTapeParts.length + ', minmax(34px, 1fr))'">
+                      <span *ngFor="let part of lessonAnimationTapeParts">{{ animation.tapePartLabel || 'unit' }}</span>
+                    </div>
+                  </ng-template>
                 </div>
 
                 <div
@@ -3305,25 +3383,70 @@
             </div>
 
             <div *ngSwitchCase="'array'" class="lesson-animation-array-wrap" aria-label="Animated array model">
-              <div
-                class="lesson-animation-array"
-                [style.gridTemplateColumns]="'repeat(' + (animation.columnCount || 4) + ', minmax(12px, 18px))'">
-                <span
-                  *ngFor="let dot of lessonAnimationArrayDots; let dotIndex = index"
-                  [ngClass]="lessonAnimationDotClass(dotIndex)"></span>
+              <div class="lesson-animation-parentheses-compare" *ngIf="animation.parenthesesCompare as comparison">
+                <strong>{{ comparison.baseExpression }}</strong>
+                <div><article *ngFor="let comparisonCase of comparison.cases"><span>{{ comparisonCase.label }}</span><b>{{ comparisonCase.grouped }}</b><i>{{ comparisonCase.firstStep }}</i><em>{{ comparisonCase.result }}</em><small>{{ comparisonCase.note }}</small></article></div>
               </div>
-              <div class="lesson-animation-split-note" *ngIf="animation.firstPart">
-                {{ animation.firstPart }} rows + {{ animation.secondPart }} rows
+              <div class="lesson-animation-associative-build" *ngIf="animation.associativeBuild as build">
+                <div class="lesson-animation-associative-chain"><span>{{ build.sourceExpression }}</span><i>→</i><span>{{ build.factorization }}</span><i>→</i><strong>{{ build.regroupedExpression }}</strong></div>
+                <div class="lesson-animation-associative-groups"><span *ngFor="let group of lessonAnimationGroups">{{ build.groupLabel }}</span></div>
+                <b>{{ build.innerFact }}</b><em>{{ build.finalFact }}</em><small>{{ build.alternateFact }}</small>
               </div>
+              <ng-container *ngIf="!animation.parenthesesCompare && !animation.associativeBuild">
+              <div class="lesson-animation-count-by" *ngIf="animation.countByMakeTen as countBy">
+                <div class="lesson-animation-count-sequence"><span *ngFor="let value of countBy.values">{{ value }}</span></div>
+                <div class="lesson-animation-make-ten-examples">
+                  <article *ngFor="let example of countBy.examples">
+                    <strong>{{ example.start }} + {{ countBy.unit }}</strong>
+                    <div><span>{{ example.start }}</span><i>+</i><span>{{ example.bridgePart }}</span><i>+</i><span>{{ example.leftoverPart }}</span></div>
+                    <b>{{ example.start + example.bridgePart }} + {{ example.leftoverPart }} = {{ example.result }}</b>
+                  </article>
+                </div>
+              </div>
+              <ng-container *ngIf="!animation.countByMakeTen">
+              <div class="lesson-animation-commutative-turn" *ngIf="animation.commutativeTurn as turn; else stepNonCommutativeArray">
+                <article>
+                  <strong>Read the rows</strong>
+                  <div class="lesson-animation-array" [style.gridTemplateColumns]="'repeat(' + turn.columns + ', minmax(12px, 18px))'"><span *ngFor="let dot of lessonAnimationArrayDots"></span></div>
+                  <b>{{ turn.rowEquation }}</b>
+                </article>
+                <i>turn</i>
+                <article>
+                  <strong>Read the columns</strong>
+                  <div class="lesson-animation-array" [style.gridTemplateColumns]="'repeat(' + turn.rows + ', minmax(12px, 18px))'"><span *ngFor="let dot of lessonAnimationArrayDots"></span></div>
+                  <b>{{ turn.columnEquation }}</b>
+                </article>
+                <small>{{ turn.factsFilled }} facts filled with known facts and commutative partners; {{ turn.factsLeft }} facts left to learn</small>
+              </div>
+              <ng-template #stepNonCommutativeArray>
+                <div class="lesson-animation-distributive-build" *ngIf="animation.distributiveBuild as build; else stepDefaultArray">
+                  <div class="lesson-animation-unit-stack"><span *ngFor="let group of lessonAnimationGroups; let groupIndex = index" [class.is-extra]="groupIndex >= build.knownGroups">{{ build.unitValue }}</span></div>
+                  <div class="lesson-animation-fact-chain"><span>{{ build.knownFact }}</span><i>+</i><span>{{ build.additionFact }}</span><i>→</i><strong>{{ build.targetFact }}</strong><i>↔</i><strong>{{ build.commutedFact }}</strong></div>
+                  <div class="lesson-animation-division-bond" *ngIf="build.divisionBond as bond"><strong>{{ bond.whole }} divided by {{ bond.divisor }}</strong><div><span>{{ bond.firstPart }} divided by {{ bond.divisor }} = {{ bond.firstQuotient }}</span><i>+</i><span>{{ bond.secondPart }} divided by {{ bond.divisor }} = {{ bond.secondQuotient }}</span></div><b>{{ bond.firstQuotient }} + {{ bond.secondQuotient }} = {{ bond.totalQuotient }}</b></div>
+                </div>
+                <ng-template #stepDefaultArray>
+                  <div class="lesson-animation-array" [style.gridTemplateColumns]="'repeat(' + (animation.columnCount || 4) + ', minmax(12px, 18px))'"><span *ngFor="let dot of lessonAnimationArrayDots; let dotIndex = index" [ngClass]="lessonAnimationDotClass(dotIndex)"></span></div>
+                  <div class="lesson-animation-split-note" *ngIf="animation.firstPart">{{ animation.firstPart }} rows + {{ animation.secondPart }} rows</div>
+                </ng-template>
+              </ng-template>
+              </ng-container>
+              </ng-container>
             </div>
 
             <div *ngSwitchCase="'tape-diagram'" class="lesson-animation-tape" aria-label="Animated tape diagram model">
-              <strong>{{ animation.tapeWholeLabel || 'whole' }}</strong>
-              <div
-                class="lesson-animation-tape-parts"
-                [style.gridTemplateColumns]="'repeat(' + lessonAnimationTapeParts.length + ', minmax(34px, 1fr))'">
-                <span *ngFor="let part of lessonAnimationTapeParts">{{ animation.tapePartLabel || 'unit' }}</span>
+              <div class="lesson-animation-unknown-cases" *ngIf="animation.unknownCases?.length; else stepDefaultTape">
+                <article *ngFor="let unknownCase of animation.unknownCases">
+                  <strong>{{ unknownCase.label }}</strong>
+                  <div><span>{{ unknownCase.whole }}</span><i>whole</i></div>
+                  <div><span>{{ unknownCase.known }}</span><i>known</i></div>
+                  <div class="is-unknown"><span>{{ unknownCase.unknown }}</span><i>unknown</i></div>
+                  <b>{{ unknownCase.equation }}</b><em>{{ unknownCase.solution }}</em>
+                </article>
               </div>
+              <ng-template #stepDefaultTape>
+                <strong>{{ animation.tapeWholeLabel || 'whole' }}</strong>
+                <div class="lesson-animation-tape-parts" [style.gridTemplateColumns]="'repeat(' + lessonAnimationTapeParts.length + ', minmax(34px, 1fr))'"><span *ngFor="let part of lessonAnimationTapeParts">{{ animation.tapePartLabel || 'unit' }}</span></div>
+              </ng-template>
             </div>
 
             <div

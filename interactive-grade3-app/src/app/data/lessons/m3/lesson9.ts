@@ -7,23 +7,38 @@ export const M3_LESSON9_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 9 animation: Model the associative property as a strategy to multiply.",
-    context: "T: (Write 16 x 3.) This is a difficult problem for a third grader to solve.",
-    equation: "10 x 3 = 30",
-    teacherPrompt: "How does the official Problem Set model show model the associative property as a strategy to multiply.?",
+    title: "Regroup three factors to make a friendlier fact",
+    context: "Rewrite 16 as 8 x 2, then move the parentheses so 2 and 3 combine first.",
+    equation: "16 x 3 = (8 x 2) x 3 = 8 x (2 x 3) = 48",
+    teacherPrompt: "Compare 8 x (2 x 3) with 4 x (4 x 3). Which grouping creates the friendlier inner fact?",
     focus: [
       "decompose",
       "distributive property",
       "array",
       "source labels"
     ],
-    groupCount: 10,
-    groupSize: 3,
-    rowCount: 10,
-    columnCount: 3,
-    tapePartCount: 10,
-    tapePartLabel: "3",
-    tapeWholeLabel: "30 total"
+    groupCount: 8,
+    groupSize: 6,
+    rowCount: 8,
+    columnCount: 6,
+    tapePartCount: 8,
+    tapePartLabel: "6",
+    tapeWholeLabel: "48 total",
+    associativeBuild: {
+      sourceExpression: "16 x 3",
+      factorization: "(8 x 2) x 3",
+      regroupedExpression: "8 x (2 x 3)",
+      innerFact: "2 x 3 = 6",
+      finalFact: "8 x 6 = 48",
+      groups: 8,
+      groupLabel: "2 x 3",
+      alternateFact: "4 x (4 x 3) = 4 x 12 is equal, but not as friendly."
+    },
+    conceptSteps: [
+      { label: "Factor", action: "Rewrite 16 as 8 x 2.", result: "The product is still 16 x 3." },
+      { label: "Regroup", action: "Move the parentheses to 2 x 3.", result: "Associativity changes grouping, not factor order." },
+      { label: "Multiply", action: "Solve 2 x 3, then 8 x 6.", result: "The total remains 48." }
+    ]
   },
 
 

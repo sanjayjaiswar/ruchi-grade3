@@ -9,9 +9,9 @@ export const M3_LESSON5_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 5 animation: Count by units of 7 to multiply and divide using number bonds to decompose.",
-    context: "Problem by skip-counting by four 7 times.",
-    equation: "7 x 4 = (4 x 4) + (3 x 4)",
+    title: "Lesson 5 animation: make the next ten while counting by seven",
+    context: "The Teacher Edition counts 7, 14, 21, and 28, using a number bond whenever an added 7 crosses a ten. Each count connects to a multiplication and division fact.",
+    equation: "14 + 7 = 14 + 6 + 1 = 21",
     teacherPrompt: "Take turns with a partner reading the multiplication facts in Problem 1 and the related division facts",
     focus: [
       "decompose",
@@ -27,7 +27,21 @@ export const M3_LESSON5_RUNTIME: LessonRuntimeConfig = {
     tapePartLabel: "4",
     tapeWholeLabel: "28 total",
     firstPart: 4,
-    secondPart: 3
+    secondPart: 3,
+    countByMakeTen: {
+      unit: 7,
+      values: [7, 14, 21, 28, 35, 42, 49, 56, 63, 70],
+      examples: [
+        { start: 14, bridgePart: 6, leftoverPart: 1, result: 21 },
+        { start: 28, bridgePart: 2, leftoverPart: 5, result: 35 },
+        { start: 56, bridgePart: 4, leftoverPart: 3, result: 63 }
+      ]
+    },
+    conceptSteps: [
+      { label: "Count by seven", action: "Build the sequence from 7 through 70.", result: "Each position names how many sevens have been counted." },
+      { label: "Bridge a ten", action: "Break 7 into two parts when the count crosses a multiple of ten.", result: "14 + 6 + 1 reaches 20, then 21." },
+      { label: "Write the fact pair", action: "Use the count to write multiplication and related division facts.", result: "Six sevens is 42, so 7 x 6 = 42 and 42 divided by 7 = 6." }
+    ]
   },
 
 

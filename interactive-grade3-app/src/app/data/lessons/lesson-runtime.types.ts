@@ -68,6 +68,71 @@ export type LessonAnimationModel = {
   tapeWholeLabel?: string;
   firstPart?: number;
   secondPart?: number;
+  commutativeTurn?: {
+    rows: number;
+    columns: number;
+    total: number;
+    rowEquation: string;
+    columnEquation: string;
+    factsFilled: number;
+    factsLeft: number;
+  };
+  distributiveBuild?: {
+    unitValue: number;
+    knownGroups: number;
+    extraGroups: number;
+    knownFact: string;
+    additionFact: string;
+    targetFact: string;
+    commutedFact: string;
+    divisionBond?: {
+      whole: number;
+      divisor: number;
+      firstPart: number;
+      secondPart: number;
+      firstQuotient: number;
+      secondQuotient: number;
+      totalQuotient: number;
+    };
+  };
+  countByMakeTen?: {
+    unit: number;
+    values: number[];
+    examples: Array<{
+      start: number;
+      bridgePart: number;
+      leftoverPart: number;
+      result: number;
+    }>;
+  };
+  parenthesesCompare?: {
+    baseExpression: string;
+    cases: Array<{
+      label: string;
+      grouped: string;
+      firstStep: string;
+      result: string;
+      note: string;
+    }>;
+  };
+  associativeBuild?: {
+    sourceExpression: string;
+    factorization: string;
+    regroupedExpression: string;
+    innerFact: string;
+    finalFact: string;
+    groups: number;
+    groupLabel: string;
+    alternateFact: string;
+  };
+  unknownCases?: Array<{
+    label: string;
+    whole: string;
+    known: string;
+    unknown: string;
+    equation: string;
+    solution: string;
+  }>;
   numberLineLabels?: string[];
   numberLineJumps?: string[];
   numberLineExamples?: Array<{
@@ -444,6 +509,18 @@ export type ProblemVisualTapeSection = {
   caption?: string;
 };
 
+export type ProblemVisualNumberBondSection = {
+  kind: 'number-bond';
+  label?: string;
+  whole: string;
+  parts: Array<{
+    label: string;
+    sublabel?: string;
+  }>;
+  equations?: string[];
+  caption?: string;
+};
+
 export type ProblemVisualFractionStripSection = {
   kind: 'fraction-strip';
   label?: string;
@@ -681,6 +758,7 @@ export type ProblemVisualSection =
   | ProblemVisualGeometryDiagramSection
   | ProblemVisualRelatedFactsSection
   | ProblemVisualTapeSection
+  | ProblemVisualNumberBondSection
   | ProblemVisualFractionStripSection
   | ProblemVisualDataTableSection
   | ProblemVisualExpressionMatchSection

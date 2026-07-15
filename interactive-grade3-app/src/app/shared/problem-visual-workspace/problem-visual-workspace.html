@@ -74,6 +74,24 @@
               </div>
             </ng-container>
 
+            <ng-container *ngIf="numberBondSection(child) as bond">
+              <strong *ngIf="bond.label">{{ bond.label }}</strong>
+              <div class="visual-number-bond">
+                <b class="visual-number-bond-whole">{{ bond.whole }}</b>
+                <div class="visual-number-bond-branches" aria-hidden="true"><i></i><i></i></div>
+                <div class="visual-number-bond-parts">
+                  <span *ngFor="let part of bond.parts">
+                    <b>{{ part.label }}</b>
+                    <em *ngIf="part.sublabel">{{ part.sublabel }}</em>
+                  </span>
+                </div>
+                <div class="visual-equations" *ngIf="bond.equations?.length">
+                  <span *ngFor="let line of bond.equations">{{ line }}</span>
+                </div>
+                <small *ngIf="bond.caption">{{ bond.caption }}</small>
+              </div>
+            </ng-container>
+
             <ng-container *ngIf="fractionStripSection(child) as fractionStrip">
               <strong *ngIf="fractionStrip.label">{{ fractionStrip.label }}</strong>
               <div class="visual-fraction-strip">
@@ -107,6 +125,25 @@
                   </i>
                 </div>
                 <small *ngIf="line.caption">{{ line.caption }}</small>
+              </div>
+            </ng-container>
+
+            <ng-container *ngIf="dataTableSection(child) as table">
+              <strong *ngIf="table.label">{{ table.label }}</strong>
+              <div class="visual-data-table" role="table">
+                <div
+                  class="visual-data-row is-head"
+                  role="row"
+                  [style.gridTemplateColumns]="'repeat(' + table.columns.length + ', minmax(0, 1fr))'">
+                  <span *ngFor="let column of table.columns" role="columnheader">{{ column }}</span>
+                </div>
+                <div
+                  class="visual-data-row"
+                  *ngFor="let row of table.rows"
+                  role="row"
+                  [style.gridTemplateColumns]="'repeat(' + table.columns.length + ', minmax(0, 1fr))'">
+                  <span *ngFor="let cell of row" role="cell">{{ cell }}</span>
+                </div>
               </div>
             </ng-container>
 
@@ -268,6 +305,24 @@
       </div>
     </ng-container>
 
+    <ng-container *ngIf="numberBondSection(section) as bond">
+      <strong *ngIf="bond.label">{{ bond.label }}</strong>
+      <div class="visual-number-bond">
+        <b class="visual-number-bond-whole">{{ bond.whole }}</b>
+        <div class="visual-number-bond-branches" aria-hidden="true"><i></i><i></i></div>
+        <div class="visual-number-bond-parts">
+          <span *ngFor="let part of bond.parts">
+            <b>{{ part.label }}</b>
+            <em *ngIf="part.sublabel">{{ part.sublabel }}</em>
+          </span>
+        </div>
+        <div class="visual-equations" *ngIf="bond.equations?.length">
+          <span *ngFor="let line of bond.equations">{{ line }}</span>
+        </div>
+        <small *ngIf="bond.caption">{{ bond.caption }}</small>
+      </div>
+    </ng-container>
+
     <ng-container *ngIf="fractionStripSection(section) as fractionStrip">
       <strong *ngIf="fractionStrip.label">{{ fractionStrip.label }}</strong>
       <div class="visual-fraction-strip">
@@ -286,10 +341,17 @@
     <ng-container *ngIf="dataTableSection(section) as table">
       <strong *ngIf="table.label">{{ table.label }}</strong>
       <div class="visual-data-table" role="table">
-        <div class="visual-data-row is-head" role="row">
+        <div
+          class="visual-data-row is-head"
+          role="row"
+          [style.gridTemplateColumns]="'repeat(' + table.columns.length + ', minmax(0, 1fr))'">
           <span *ngFor="let column of table.columns" role="columnheader">{{ column }}</span>
         </div>
-        <div class="visual-data-row" *ngFor="let row of table.rows" role="row">
+        <div
+          class="visual-data-row"
+          *ngFor="let row of table.rows"
+          role="row"
+          [style.gridTemplateColumns]="'repeat(' + table.columns.length + ', minmax(0, 1fr))'">
           <span *ngFor="let cell of row" role="cell">{{ cell }}</span>
         </div>
       </div>

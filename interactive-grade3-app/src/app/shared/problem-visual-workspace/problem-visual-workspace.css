@@ -102,6 +102,80 @@
   width: 100%;
 }
 
+.visual-number-bond {
+  display: grid;
+  width: min(100%, 620px);
+  gap: 8px;
+  justify-items: center;
+  padding: 14px;
+  border: 1px solid #d2d9e6;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.visual-number-bond-whole,
+.visual-number-bond-parts span {
+  display: grid;
+  min-width: 112px;
+  min-height: 54px;
+  place-items: center;
+  padding: 8px 12px;
+  border: 2px solid #5f6368;
+  border-radius: 999px;
+  background: #fffdf6;
+  color: #202124;
+  text-align: center;
+}
+
+.visual-number-bond-branches {
+  display: grid;
+  width: 220px;
+  height: 32px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.visual-number-bond-branches i {
+  border-top: 2px solid #5f6368;
+}
+
+.visual-number-bond-branches i:first-child {
+  transform: skewY(-18deg);
+  transform-origin: right top;
+}
+
+.visual-number-bond-branches i:last-child {
+  transform: skewY(18deg);
+  transform-origin: left top;
+}
+
+.visual-number-bond-parts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+}
+
+.visual-number-bond-parts span {
+  border-color: #4285f4;
+  background: #f3f7ff;
+}
+
+.visual-number-bond-parts em {
+  color: #5f6368;
+  font-size: 11px;
+  font-style: normal;
+}
+
+.visual-number-bond > .visual-equations {
+  width: 100%;
+}
+
+.visual-number-bond > small {
+  color: #5f6368;
+  font-weight: 560;
+  text-align: center;
+}
+
 .visual-array {
   display: grid;
   width: fit-content;
@@ -1540,10 +1614,28 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+:host-context(.lesson-m3) .visual-card-grid:has(> .visual-sub-card:nth-child(4):last-child) {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 :host-context(.lesson-m3) .visual-sub-card {
   border-color: #d2d9e6;
   background: #ffffff;
   box-shadow: none;
+}
+
+:host-context(.lesson-m3) .visual-sub-card:has(.visual-data-table) {
+  grid-column: 1 / -1;
+}
+
+:host-context(.lesson-m3) .visual-sub-card .visual-data-table {
+  width: 100%;
+}
+
+:host-context(.lesson-m3) .visual-sub-card .visual-data-table .visual-data-row span {
+  padding: 7px 5px;
+  font-size: 12px;
+  text-align: center;
 }
 
 :host-context(.lesson-m3) .visual-sub-card > strong {
@@ -3773,6 +3865,10 @@
 @media (max-width: 680px) {
   .problem-visual-workspace {
     padding: 12px;
+  }
+
+  :host-context(.lesson-m3) .visual-card-grid:has(> .visual-sub-card:nth-child(4):last-child) {
+    grid-template-columns: 1fr;
   }
 
   .visual-related-facts div {

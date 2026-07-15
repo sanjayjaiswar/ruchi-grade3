@@ -9,10 +9,10 @@ export const M3_LESSON11_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "tape-diagram",
-    title: "Lesson 11 animation: Interpret the unknown in multiplication and division to model and solve problems.",
-    context: "Interpret the unknown in multiplication.",
-    equation: "8 units of 9; unknown labeled from the story",
-    teacherPrompt: "In Problem 1, did you solve to find the number of groups or the number of items in each group?",
+    title: "Use letters to track unknowns through two-step stories",
+    context: "Asmir first finds the total candles, then subtracts the 28 candles left. Maria first finds the meters purchased, then subtracts 3 meters used.",
+    equation: "8 x 9 = c; 72 - 28 = a; a = 44",
+    teacherPrompt: "For each equation, name what the letter represents and whether it is a total, number of groups, group size, or remaining amount.",
     focus: [
       "factor",
       "product",
@@ -25,7 +25,17 @@ export const M3_LESSON11_RUNTIME: LessonRuntimeConfig = {
     columnCount: 9,
     tapePartCount: 8,
     tapePartLabel: "9 each",
-    tapeWholeLabel: "72 total"
+    tapeWholeLabel: "72 total",
+    unknownCases: [
+      { label: "Asmir: total candles", whole: "c candles", known: "8 boxes of 9", unknown: "total c", equation: "8 x 9 = c", solution: "c = 72" },
+      { label: "Asmir: candles used", whole: "72 candles", known: "28 left", unknown: "used a", equation: "72 - 28 = a", solution: "a = 44" },
+      { label: "Maria: cloth left", whole: "$56 at $8/m", known: "3 m used", unknown: "meters left m", equation: "56 divided by 8 = 7; 7 - 3 = m", solution: "m = 4" }
+    ],
+    conceptSteps: [
+      { label: "Plan", action: "Identify the intermediate total needed before the final question.", result: "Use a different letter for each unknown quantity." },
+      { label: "Step 1", action: "Multiply or divide to find the total or number of equal groups.", result: "Label the model with that value." },
+      { label: "Step 2", action: "Use the remaining story relationship.", result: "Answer the exact question with units." }
+    ]
   },
 
 

@@ -9,10 +9,10 @@ export const M3_LESSON10_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 10 animation: Use the distributive property as a strategy to multiply and divide.",
-    context: "which factor do we break apart?",
-    equation: "8 x 9 = (4 x 9) + (4 x 9)",
-    teacherPrompt: "Describe the steps you took to solve for the unknown numbers in Problem 1(a)",
+    title: "Break apart the size of each group: 8 = 5 + 3",
+    context: "The source 6-by-8 array is split after 5 columns, then the same known 5-eights structure supports division by 8.",
+    equation: "6 x 8 = 6 x (5 + 3) = 30 + 18 = 48",
+    teacherPrompt: "Explain why the line splits the columns and how 40 divided by 8 becomes the known part of 56 divided by 8.",
     focus: [
       "distributive property",
       "division",
@@ -20,14 +20,29 @@ export const M3_LESSON10_RUNTIME: LessonRuntimeConfig = {
       "source labels"
     ],
     groupCount: 8,
-    groupSize: 9,
-    rowCount: 8,
-    columnCount: 9,
-    tapePartCount: 8,
-    tapePartLabel: "9",
-    tapeWholeLabel: "72 total",
-    firstPart: 4,
-    secondPart: 4
+    groupSize: 6,
+    rowCount: 6,
+    columnCount: 8,
+    tapePartCount: 6,
+    tapePartLabel: "8",
+    tapeWholeLabel: "48 total",
+    firstPart: 5,
+    secondPart: 3,
+    distributiveBuild: {
+      unitValue: 6,
+      knownGroups: 5,
+      extraGroups: 3,
+      knownFact: "5 x 6 = 30",
+      additionFact: "3 x 6 = 18",
+      targetFact: "8 x 6 = 48",
+      commutedFact: "6 x 8 = 48",
+      divisionBond: { whole: 56, divisor: 8, firstPart: 40, secondPart: 16, firstQuotient: 5, secondQuotient: 2, totalQuotient: 7 }
+    },
+    conceptSteps: [
+      { label: "Split", action: "Decompose 8 into 5 and 3.", result: "The array becomes two easier rectangles." },
+      { label: "Distribute", action: "Multiply 6 by both parts.", result: "30 + 18 represents all 48 dots." },
+      { label: "Divide", action: "Break 56 into 40 and 16, both divisible by 8.", result: "5 + 2 = 7." }
+    ]
   },
 
 

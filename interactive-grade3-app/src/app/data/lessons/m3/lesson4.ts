@@ -9,9 +9,9 @@ export const M3_LESSON4_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 4 animation: Count by units of 6 to multiply and divide using number bonds to decompose.",
-    context: "Part 1: Use number bonds to decompose and skip-count using units of 6.",
-    equation: "6 x 10 = (3 x 10) + (3 x 10)",
+    title: "Lesson 4 animation: make the next ten while counting by six",
+    context: "The Teacher Edition breaks each added 6 into the part that reaches the next ten and the part left over. The count continues from 6 through 60.",
+    equation: "18 + 6 = 18 + 2 + 4 = 24",
     teacherPrompt: "With a partner, list the related division facts for each number in the skip-counting sequence in Problem 1",
     focus: [
       "decompose",
@@ -27,7 +27,21 @@ export const M3_LESSON4_RUNTIME: LessonRuntimeConfig = {
     tapePartLabel: "10",
     tapeWholeLabel: "60 total",
     firstPart: 3,
-    secondPart: 3
+    secondPart: 3,
+    countByMakeTen: {
+      unit: 6,
+      values: [6, 12, 18, 24, 30, 36, 42, 48, 54, 60],
+      examples: [
+        { start: 18, bridgePart: 2, leftoverPart: 4, result: 24 },
+        { start: 36, bridgePart: 4, leftoverPart: 2, result: 42 },
+        { start: 48, bridgePart: 2, leftoverPart: 4, result: 54 }
+      ]
+    },
+    conceptSteps: [
+      { label: "Add one six", action: "Move to the next multiple of 6 in the count-by sequence.", result: "The sequence is 6, 12, 18, 24, ... , 60." },
+      { label: "Make the next ten", action: "Break 6 into the part that reaches a ten and the leftover part.", result: "For 18 + 6, use 2 + 4: 18 + 2 + 4 = 24." },
+      { label: "Name related facts", action: "Connect the count position and total to multiplication and division.", result: "Seven sixes is 42, so 7 x 6 = 42 and 42 divided by 6 = 7." }
+    ]
   },
 
 

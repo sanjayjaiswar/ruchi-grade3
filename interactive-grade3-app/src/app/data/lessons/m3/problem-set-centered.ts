@@ -338,6 +338,51 @@ function equationLibraryCheck(equation: string): string | undefined {
 }
 
 const PROBLEM_METADATA: Record<string, Partial<ProblemSetCenteredProblem>> = {
+  '4-1': { blankEquations: ['____ x 6 = ____'] },
+  '4-2': { blankEquations: ['6 x ____ = ____', '____ divided by 6 = ____'] },
+  '4-3': { blankEquations: ['6 x ____ = ____', '____ divided by 6 = ____'] },
+  '4-4': { blankEquations: ['6 x ____ = 48', '48 divided by 6 = ____'] },
+  '4-5': { blankEquations: ['6 x 7 = ____'] },
+  '5-1': { blankEquations: ['____ x 7 = ____', '____ divided by 7 = ____'] },
+  '5-2': { blankEquations: ['____ x 7 = ____', '____ divided by 7 = ____'] },
+  '5-3': { blankEquations: ['14 + ____ + ____ = 21', '3 x 7 = ____'] },
+  '5-4': { blankEquations: ['7 x 6 = ____', '6 x 7 = ____'] },
+  '6-1': { blankEquations: ['6 x 6 = ____', '7 x 6 = ____', '8 x 6 = ____', '9 x 6 = ____'] },
+  '6-2': { blankEquations: ['54 divided by 6 = (30 divided by 6) + (____ divided by 6)', '5 + ____ = ____'] },
+  '6-3': { blankEquations: ['49 divided by 7 = (35 divided by 7) + (____ divided by 7)', '5 + ____ = ____'] },
+  '6-4': { blankEquations: ['6 x 8 = (5 x 8) + 8', '____ + ____ = ____'] },
+  '6-5': { blankEquations: ['42 divided by 7 = (____ divided by 7) + (____ divided by 7)', '____ + ____ = ____'] },
+  '7-1': {
+    equations: ['n x 6 = 30', '7 x n = 42', '6 x 7 = n', '63 divided by n = 9', '36 divided by n = 6', 'n x 7 = 21'],
+    blankEquations: ['n x 6 = 30', '7 x n = 42', '6 x 7 = n', '63 divided by n = 9', '36 divided by n = 6', 'n x 7 = 21']
+  },
+  '7-3': {
+    equations: ['21 divided by 3 = s; s = 7', '24 divided by 6 = t; t = 4', '8 x 6 = y; y = 48', '54 divided by 6 = b; b = 9'],
+    blankEquations: ['21 divided by 3 = s; s = ____', '24 divided by 6 = t; t = ____', '8 x 6 = y; y = ____', '54 divided by 6 = b; b = ____']
+  },
+  '8-1': {
+    equations: ['(12 - 4) + 6 = 14', '12 - (4 + 6) = 2', '15 - (7 + 3) = 5', '(15 - 7) + 3 = 11', '(3 + 2) x 6 = 30', '3 + (2 x 6) = 15', '4 x (7 - 2) = 20', '(4 x 7) - 2 = 26', '(12 divided by 2) + 4 = 10', '12 divided by (2 + 4) = 2', '9 + (15 divided by 3) = 14', '(9 + 15) divided by 3 = 8', '60 divided by (10 - 4) = 10', '(60 divided by 10) - 4 = 2', '35 + (10 divided by 5) = 37', '(35 + 10) divided by 5 = 9'],
+    blankEquations: ['(12 - 4) + 6 = ____', '12 - (4 + 6) = ____', '____ = 15 - (7 + 3)', '____ = (15 - 7) + 3', '____ = (3 + 2) x 6', '____ = 3 + (2 x 6)', '4 x (7 - 2) = ____', '(4 x 7) - 2 = ____', '____ = (12 divided by 2) + 4', '____ = 12 divided by (2 + 4)', '9 + (15 divided by 3) = ____', '(9 + 15) divided by 3 = ____', '60 divided by (10 - 4) = ____', '(60 divided by 10) - 4 = ____', '____ = 35 + (10 divided by 5)', '____ = (35 + 10) divided by 5']
+  },
+  '8-2': {
+    equations: ['(16 - 4) + 7 = 19', '16 - (4 + 7) = 5', '2 = 22 - (15 + 5)', '12 = (22 - 15) + 5', '(3 + 7) x 6 = 60', '3 + (7 x 6) = 45', '5 = (10 divided by 10) x 5', '50 = (100 divided by 10) x 5', '(26 - 5) divided by 7 = 3', '36 = 4 x (25 - 16)'],
+    blankEquations: ['16 - 4 + 7 = 19; add parentheses', '16 - 4 + 7 = 5; add parentheses', '2 = 22 - 15 + 5; add parentheses', '12 = 22 - 15 + 5; add parentheses', '3 + 7 x 6 = 60; add parentheses', '3 + 7 x 6 = 45; add parentheses', '5 = 10 divided by 10 x 5; add parentheses', '50 = 100 divided by 10 x 5; add parentheses', '26 - 5 divided by 7 = 3; add parentheses', '36 = 4 x 25 - 16; add parentheses']
+  },
+  '8-3': { equations: ['(24 divided by 4) + 2 = 8', '24 divided by (4 + 2) = 4'], blankEquations: ['24 divided by 4 + 2 = ____; place parentheses for Chad', '24 divided by 4 + 2 = ____; place parentheses for Samir'] },
+  '8-4': { equations: ['12 + (15 divided by 3) = 17'], blankEquations: ['12 + 15 divided by 3 = ____; add parentheses'] },
+  '8-5': { equations: ['7 + (3 x 2) = 13', '(7 + 3) x 2 = 20'], blankEquations: ['7 + 3 x 2 = ____; first placement', '7 + 3 x 2 = ____; second placement'] },
+  '9-1': { equations: ['3 x 12 = 36', '(3 x 3) x 4 = 9 x 4 = 36', '3 x 14 = 42', '(3 x 2) x 7 = 6 x 7 = 42'], blankEquations: ['3 x 12 = ____', '(3 x 3) x 4 = ____ x 4 = ____', '3 x 14 = ____', '(____ x ____) x 7 = ____ x 7 = ____'] },
+  '9-2': { equations: ['3 x 16 = 3 x (2 x 8) = (3 x 2) x 8 = 6 x 8 = 48', '2 x 14 = 2 x (2 x 7) = (2 x 2) x 7 = 4 x 7 = 28', '3 x 12 = 3 x (3 x 4) = 9 x 4 = 36', '3 x 14 = 3 x 2 x 7 = 6 x 7 = 42', '15 x 3 = 5 x 3 x 3 = 5 x 9 = 45', '15 x 2 = 5 x 3 x 2 = 5 x 6 = 30'], blankEquations: ['3 x 16 = 3 x (2 x 8) = ____ x 8 = ____', '2 x 14 = 2 x (2 x 7) = ____ x 7 = ____', '3 x 12 = 3 x (3 x 4) = ____ x ____ = ____', '3 x 14 = 3 x 2 x 7 = ____ x ____ = ____', '15 x 3 = 5 x 3 x 3 = ____ x ____ = ____', '15 x 2 = 5 x 3 x 2 = ____ x ____ = ____'] },
+  '9-3': { equations: ['16 x 2 = (8 x 2) x 2 = 8 x (2 x 2) = 8 x 4 = 32'], blankEquations: ['16 x 2 = (8 x 2) x 2 = 8 x (2 x 2) = ____ x ____ = ____'] },
+  '9-4': { equations: ['16 x 2 = (8 x 2) x 2 = 8 x (2 x 2) = 8 x 4 = 32'], blankEquations: ['Explain why regrouping 16 x 2 as 8 x 4 keeps the product equal.'] },
+  '10-1': { equations: ['8 x 8 = 8 x (5 + 3) = (8 x 5) + (8 x 3) = 40 + 24 = 64', '9 x 8 = 8 x (5 + 4) = (8 x 5) + (8 x 4) = 40 + 32 = 72'], blankEquations: ['8 x 8 = 8 x (5 + ____) = 40 + ____ = ____', '9 x 8 = 8 x (5 + ____) = 40 + ____ = ____'] },
+  '10-2': { equations: ['56 divided by 8 = (40 divided by 8) + (16 divided by 8) = 5 + 2 = 7'], blankEquations: ['56 divided by 8 = (40 divided by 8) + (____ divided by 8)', '5 + ____ = ____'] },
+  '10-3': { equations: ['72 divided by 8 = (40 divided by 8) + (32 divided by 8) = 5 + 4 = 9'], blankEquations: ['72 divided by 8 = (40 divided by 8) + (____ divided by 8)', '5 + ____ = ____'] },
+  '10-5': { equations: ['4 x 8 = 32', '8 x 6 = 48', '3 x 8 = 24', '8 x 10 = 80', '8 x 8 = 64', '7 x 8 = 56'], blankEquations: ['4 x 8 = ____', '8 x 6 = ____', '3 x 8 = ____', '8 x 10 = ____', '8 x 8 = ____', '7 x 8 = ____'] },
+  '10-6': { equations: ['24 divided by 8 = 3', '32 divided by 8 = 4', '16 divided by 8 = 2', '64 divided by 8 = 8', '48 divided by 8 = 6', '72 divided by 8 = 9'], blankEquations: ['24 divided by 8 = ____', '32 divided by 8 = ____', '16 divided by 8 = ____', '64 divided by 8 = ____', '48 divided by 8 = ____', '72 divided by 8 = ____'] },
+  '11-4': { equations: ['4 x 10 = 40', '40 divided by 8 = 5'], blankEquations: ['4 x 10 = ____', '____ divided by 8 = ____'] },
+  '11-5': { equations: ['8 x 7 = 56', '56 - 35 = 21'], blankEquations: ['8 x 7 = ____', '____ - 35 = ____'] },
+  '11-6': { equations: ['72 divided by 8 = 9', '9 x 4 = 36'], blankEquations: ['72 divided by 8 = ____', '____ x 4 = ____'] },
   '1-2': {
     blankWorkspaceLabel: 'Use the 4-by-6 array from the workbook to write both commutative facts.',
     blankVisualType: 'array-template',
@@ -403,8 +448,10 @@ const PROBLEM_METADATA: Record<string, Partial<ProblemSetCenteredProblem>> = {
   '3-3': {
     blankWorkspaceLabel: 'Group 28 cups of flour into loaves using 4 cups for each loaf.',
     blankVisualType: 'bar-units',
-    equations: ['4 x 7 = 28', '28 divided by 4 = 7'],
+    blankEquations: ['4 x n = 28', '28 divided by 4 = n'],
+    equations: ['4 x 7 = 28', '28 divided by 4 = 7', 'n = 7'],
     knownTotal: 28,
+    knownGroupCount: 7,
     knownGroupSize: 4,
     quotient: 7,
     quotientMeaning: 'The answer 7 means the number of loaves of bread.',
@@ -414,10 +461,25 @@ const PROBLEM_METADATA: Record<string, Partial<ProblemSetCenteredProblem>> = {
     explanation: 'The prompt gives 28 cups total and 4 cups per loaf. Seven loaves use 28 cups.',
     validationChecks: ['The total is 28 cups.', 'Each loaf uses 4 cups.', 'The answer names 7 loaves.']
   },
+  '3-4': {
+    blankWorkspaceLabel: 'Show two game times totaling 32 minutes, with the longer game 12 minutes more than the shorter game.',
+    blankVisualType: 'tape-diagram',
+    blankEquations: ['s + l = 32', 'l = s + 12'],
+    equations: ['32 - 12 = 20', '20 divided by 2 = 10', '10 + 12 = 22'],
+    knownTotal: 32,
+    quotient: 10,
+    quotientMeaning: 'The shorter game is 10 minutes and the longer game is 22 minutes.',
+    animationType: 'two-step-model',
+    unitLabel: 'minutes',
+    groupLabel: 'games',
+    explanation: 'Remove the 12-minute difference from the 32-minute total, split the remaining 20 minutes equally, and add 12 minutes to the longer game.',
+    validationChecks: ['The two game times total 32 minutes.', 'The longer game is 12 minutes longer.', 'The answers are 10 minutes and 22 minutes.']
+  },
   '7-2': {
     blankWorkspaceLabel: 'Use the six 8-unit parts in the tape diagram.',
     blankVisualType: 'array-template',
-    equations: ['6 x 8 = 48', '8 x 6 = 48'],
+    blankEquations: ['6 x 8 = k', 'k = ____'],
+    equations: ['6 x 8 = k', 'k = 48'],
     knownGroupCount: 6,
     knownGroupSize: 8,
     quotient: 48,
@@ -431,7 +493,8 @@ const PROBLEM_METADATA: Record<string, Partial<ProblemSetCenteredProblem>> = {
   '10-4': {
     blankWorkspaceLabel: 'Show 9 octagons with 8 sides each.',
     blankVisualType: 'array-template',
-    equations: ['9 x 8 = 72'],
+    blankEquations: ['8, 16, ____, ____, ____, ____, ____, ____, ____'],
+    equations: ['8, 16, 24, 32, 40, 48, 56, 64, 72', '9 x 8 = 72'],
     knownGroupCount: 9,
     knownGroupSize: 8,
     quotient: 72,
@@ -445,7 +508,8 @@ const PROBLEM_METADATA: Record<string, Partial<ProblemSetCenteredProblem>> = {
   '11-1': {
     blankWorkspaceLabel: 'Split 32 students into 8 equal field-trip groups.',
     blankVisualType: 'share-tape',
-    equations: ['32 divided by 8 = 4', '8 x 4 = 32'],
+    blankEquations: ['32 divided by 8 = n', 'n = ____'],
+    equations: ['32 divided by 8 = n', 'n = 4'],
     knownTotal: 32,
     knownGroupCount: 8,
     quotient: 4,
@@ -459,7 +523,8 @@ const PROBLEM_METADATA: Record<string, Partial<ProblemSetCenteredProblem>> = {
   '11-2': {
     blankWorkspaceLabel: 'Show 6 packs of printer paper at 8 dollars each.',
     blankVisualType: 'array-template',
-    equations: ['6 x 8 = 48'],
+    blankEquations: ['6 x 8 = m', 'm = ____'],
+    equations: ['6 x 8 = m', 'm = 48'],
     knownGroupCount: 6,
     knownGroupSize: 8,
     quotient: 48,
@@ -473,7 +538,8 @@ const PROBLEM_METADATA: Record<string, Partial<ProblemSetCenteredProblem>> = {
   '11-3': {
     blankWorkspaceLabel: 'Group 24 dollars into 8-dollar kilograms of coffee beans.',
     blankVisualType: 'bar-units',
-    equations: ['24 divided by 8 = 3'],
+    blankEquations: ['24 divided by 8 = c', 'c = ____'],
+    equations: ['24 divided by 8 = c', 'c = 3'],
     knownTotal: 24,
     knownGroupSize: 8,
     quotient: 3,
@@ -901,14 +967,18 @@ const EQUATION_OVERRIDES: Record<string, string[]> = {
     '8 x 5 = 5 x 8 = 40',
     '4 x 7 = 7 x 4 = 28',
     '3 x 9 = 27',
-    '10 fours - 1 four = 9 x 4 = 36'
+    '10 fours - 1 four = 9 x 4 = 36',
+    '8 x 4 = 5 fours + 3 fours = 32',
+    '5 fives + 1 five = 6 x 5 = 30',
+    '5 threes + 2 threes = 7 x 3 = 21',
+    '5 twos + 5 twos = 10 twos = 20'
   ],
   '1-2': ['24 = 4 x 6', '24 = 6 x 4'],
   '2-1': ['5 x 7 = 35', '35 + 7 = 42', '6 x 7 = 42', '7 x 6 = 42'],
-  '2-2': ['5 x 8 = 40', '40 + 8 = 48', '8 x 6 = 48'],
+  '2-2': ['5 x 8 = 40', '40 + 8 = 48', '6 x 8 = 48', '8 x 6 = 48'],
   '2-3': ['7 x 9 = 63'],
   '2-4': ['32 divided by 8 = 4'],
-  '2-5': ['4 x 9 = 36', '500 - 435 = 65', '65 - 36 = 29'],
+  '2-5': ['4 x 9 = 36', '500 - 435 = 65', '65 - 36 = 29', '29 < 50'],
   '3-1': ['5 x 4 = 20', '21 divided by 3 = 7', '24 divided by 6 = 4', '21 divided by 7 = 3', '32 divided by 8 = 4', '70 divided by 10 = 7', '80 divided by 8 = 10', '36 divided by 4 = 9'],
   '3-2': ['3 x 8 = 24', '30 - 24 = 6'],
   '3-3': ['4 x 7 = 28', '28 divided by 4 = 7'],
@@ -1027,7 +1097,7 @@ function createM3ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
 
   const equations = problem.equations?.length ? problem.equations : [];
 
-  sections.push(makeM3PrimaryModel(problem, solved));
+  sections.push(makeM3PrimaryModel(problem, solved, lessonNumber));
 
   const strategyFrame = makeM3StrategyFrame(problem, solved, lessonNumber, equations);
   if (strategyFrame) {
@@ -1074,7 +1144,63 @@ function createM3ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
   };
 }
 
-function makeM3PrimaryModel(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSection {
+function makeM3PrimaryModel(problem: ProblemSetCenteredProblem, solved: boolean, lessonNumber: number): ProblemVisualSection {
+  if (lessonNumber === 4) {
+    return makeM3Lesson4Primary(problem, solved);
+  }
+
+  if (lessonNumber === 5) {
+    return makeM3Lesson5Primary(problem, solved);
+  }
+
+  if (lessonNumber === 6) {
+    return makeM3Lesson6Primary(problem, solved);
+  }
+
+  if (lessonNumber === 7) {
+    return makeM3Lesson7Primary(problem, solved);
+  }
+
+  if (lessonNumber === 8) {
+    return makeM3Lesson8Primary(problem, solved);
+  }
+
+  if (lessonNumber === 9) {
+    return makeM3Lesson9Primary(problem, solved);
+  }
+
+  if (lessonNumber === 10) {
+    return makeM3Lesson10Primary(problem, solved);
+  }
+
+  if (lessonNumber === 11) {
+    return makeM3Lesson11Primary(problem, solved);
+  }
+
+  if (lessonNumber === 1 && /shade in the multiplication facts/.test(problem.sourcePrompt.toLowerCase())) {
+    return makeM3Lesson1FactChart(solved);
+  }
+
+  if (lessonNumber === 1 && /complete the equations/.test(problem.sourcePrompt.toLowerCase())) {
+    return makeM3Lesson1EquationFamilies(solved);
+  }
+
+  if (lessonNumber === 2 && /each unit has a value of 7|each dot has a value of 8/i.test(problem.sourcePrompt)) {
+    return makeM3FivePlusOneModel(problem, solved);
+  }
+
+  if (lessonNumber === 3 && /solve the riddle/i.test(problem.sourcePrompt)) {
+    return makeM3UnknownRiddle(solved);
+  }
+
+  if (lessonNumber === 3 && /lonna buys 3 t-shirts/i.test(problem.sourcePrompt)) {
+    return makeM3LonnaUnknownModel(solved);
+  }
+
+  if (lessonNumber === 3 && /table tennis tournament/i.test(problem.sourcePrompt)) {
+    return makeM3TableTennisModel(solved);
+  }
+
   if (problem.blankVisualType === 'fact-match' || problem.animationType === 'fact-match') {
     return makeM3FactMatch(problem, solved);
   }
@@ -1094,12 +1220,744 @@ function makeM3PrimaryModel(problem: ProblemSetCenteredProblem, solved: boolean)
   return makeM3WorkspaceTable(problem, solved);
 }
 
+function makeM3Lesson1FactChart(solved: boolean): ProblemVisualSection {
+  const factors = Array.from({ length: 10 }, (_, index) => index + 1);
+  return {
+    kind: 'card-grid',
+    label: solved ? 'Solved commutative fact chart and apple pattern' : 'Official commutative fact chart and apple pattern',
+    cards: [
+      {
+        label: '100 multiplication facts',
+        sections: [{
+          kind: 'data-table',
+          columns: ['x', ...factors.map(String)],
+          rows: factors.map((rowFactor) => [
+            String(rowFactor),
+            ...factors.map((columnFactor) => solved ? String(rowFactor * columnFactor) : '____')
+          ])
+        }]
+      },
+      {
+        label: '7 apples in each bag',
+        sections: [{
+          kind: 'data-table',
+          columns: ['Number of bags', '2', '3', '4', '5', '6'],
+          rows: [[
+            'Total apples',
+            solved ? '14' : '____',
+            '21',
+            solved ? '28' : '____',
+            solved ? '35' : '____',
+            '42'
+          ]]
+        }, {
+          kind: 'note',
+          text: solved
+            ? 'The chart has 100 facts. After known facts and commutative partners are used, 16 facts remain to learn.'
+            : 'Shade facts already known, then use the reflected fact across the diagonal to solve its commutative partner.'
+        }]
+      }
+    ]
+  };
+}
+
+function makeM3Lesson1EquationFamilies(solved: boolean): ProblemVisualSection {
+  const rows = [
+    ['2 sevens', '7 twos', '14'],
+    ['3 sixes', '6 threes', '18'],
+    ['10 eights', '8 tens', '80'],
+    ['4 x 6', '6 x 4', '24'],
+    ['8 x 5', '5 x 8', '40'],
+    ['4 x 7', '7 x 4', '28'],
+    ['3 x 9', '10 threes - 1 three', '27'],
+    ['9 x 4', '10 fours - 1 four', '36'],
+    ['8 x 4', '5 fours + 3 fours', '32'],
+    ['6 x 5', '5 fives + 1 five', '30'],
+    ['7 x 3', '5 threes + 2 threes', '21'],
+    ['10 x 2', '5 twos + 5 twos', '20']
+  ];
+  return {
+    kind: 'data-table',
+    label: solved ? 'Completed commutative and make-ten equations' : 'Official equation families',
+    columns: ['One form', 'Related form', 'Product'],
+    rows: rows.map(([left, right, product]) => solved ? [left, right, product] : [left, '____', '____'])
+  };
+}
+
+function makeM3FivePlusOneModel(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSection {
+  const unit = /value of 8/i.test(problem.sourcePrompt) ? 8 : 7;
+  const knownTotal = 5 * unit;
+  const total = 6 * unit;
+  return {
+    kind: 'card-grid',
+    label: solved ? `Solved 5 ${unit}s + 1 ${unit}` : `Build 6 ${unit}s from a known five-fact`,
+    cards: [
+      {
+        label: `5 ${unit}s`,
+        sections: [{ kind: 'array', rows: 5, columns: unit, item: 'circle', caption: solved ? `5 x ${unit} = ${knownTotal}` : `Known fact: 5 x ${unit} = ____` }]
+      },
+      {
+        label: `1 more ${unit}`,
+        sections: [{ kind: 'array', rows: 1, columns: unit, item: 'dot', caption: solved ? `${knownTotal} + ${unit} = ${total}` : `Add one unit of ${unit}.` }]
+      },
+      {
+        label: 'Target and commutative fact',
+        sections: [{
+          kind: 'equations',
+          lines: solved ? [`6 x ${unit} = ${total}`, `${unit} x 6 = ${total}`] : [`6 x ${unit} = ____`, `${unit} x 6 = ____`]
+        }]
+      }
+    ]
+  };
+}
+
+function makeM3UnknownRiddle(solved: boolean): ProblemVisualSection {
+  const rows = [
+    ['e', '5 x 4 = e', '20'], ['l', '21 divided by 3 = l', '7'], ['i', '24 divided by i = 4', '6'],
+    ['c', '21 = c x 7', '3'], ['s', '32 = s x 8', '4'], ['n', '8 = 80 divided by n', '10'],
+    ['t', 't divided by 10 = 7', '70'], ['k', '4 = 36 divided by k', '9'], ['b', '24 divided by b = 12', '2'],
+    ['a', '8 = a divided by 3', '24'], ['h', '35 = 7 x h', '5']
+  ];
+  return {
+    kind: 'card-grid',
+    label: solved ? 'Solved unknown-letter riddle' : 'Unknown-letter equation cards',
+    cards: [
+      {
+        label: 'Find each letter value',
+        sections: [{
+          kind: 'data-table',
+          columns: ['Letter', 'Official equation', 'Value'],
+          rows: rows.map(([letter, equation, value]) => [letter, equation, solved ? value : '____'])
+        }]
+      },
+      {
+        label: 'Use the values to decode',
+        sections: [{
+          kind: 'data-table',
+          columns: ['9', '6', '70', '3', '5', '20', '10', '70', '24', '2', '7', '20', '4'],
+          rows: [[...(solved ? 'kitchen tables'.replace(' ', '').split('') : Array.from({ length: 13 }, () => '____'))]]
+        }, { kind: 'note', text: solved ? 'The riddle answer is “kitchen tables.”' : 'Match each number to the letter whose equation has that value.' }]
+      }
+    ]
+  };
+}
+
+function makeM3LonnaUnknownModel(solved: boolean): ProblemVisualSection {
+  return {
+    kind: 'card-grid',
+    label: solved ? 'Solved unknown totals: purchase and change' : 'Name each unknown before solving',
+    cards: [
+      {
+        label: 'Total cost m',
+        sections: [{
+          kind: 'tape',
+          totalLabel: solved ? 'm = $24' : 'm dollars total',
+          parts: Array.from({ length: 3 }, () => ({ label: '$8' })),
+          caption: solved ? '3 x $8 = m, so m = $24.' : 'Three equal shirt costs make the unknown total m.'
+        }]
+      },
+      {
+        label: 'Change c',
+        sections: [{
+          kind: 'data-table',
+          columns: ['Money paid', 'Amount spent', 'Change'],
+          rows: [[ '$30', solved ? '$24' : 'm = ____', solved ? 'c = $6' : 'c = ____' ]]
+        }, { kind: 'equations', lines: solved ? ['30 - 24 = c', 'c = 6'] : ['30 - m = c', 'c = ____'] }]
+      }
+    ]
+  };
+}
+
+function makeM3TableTennisModel(solved: boolean): ProblemVisualSection {
+  return {
+    kind: 'tape',
+    label: solved ? 'Solved two-game comparison tape' : 'Two-game comparison tape',
+    totalLabel: solved ? '32 minutes total' : '32 minutes total',
+    topParts: [
+      { label: solved ? 'shorter game = 10 min' : 'shorter game = s', startPart: 0, partCount: 1 },
+      { label: solved ? 'longer game = 22 min' : 'longer game = s + 12', startPart: 1, partCount: 2 }
+    ],
+    parts: solved
+      ? [{ label: '10', sublabel: 'shorter' }, { label: '10', sublabel: 'same length' }, { label: '12', sublabel: 'extra' }]
+      : [{ label: 's', sublabel: 'shorter' }, { label: 's', sublabel: 'same length' }, { label: '12', sublabel: 'extra' }],
+    braces: [{ label: solved ? '10 + 22 = 32' : 's + (s + 12) = 32', startPart: 0, partCount: 3 }],
+    caption: solved ? 'Subtract the 12-minute difference, split the remaining 20 minutes equally, then add 12 to the longer game.' : 'Remove the 12-minute difference. The remaining time is two equal shorter-game parts.'
+  };
+}
+
+function makeM3Lesson4Primary(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSection {
+  const number = Number(problem.number);
+  if (number === 1) {
+    return makeM3CountByMatch(6, solved, false, 'sunburst number cards', [9, 6, 4, 7, 2, 1, 3, 10, 5, 8], [2, 4, 7, 9]);
+  }
+  if (number === 2) {
+    return makeM3CountBySequence(6, 4, solved, [1]);
+  }
+  if (number === 3) {
+    return makeM3CountBySequence(6, 7, solved, [1]);
+  }
+  if (number === 4) {
+    const solvedSegments = [
+      ['1', 'up', '0, 6, 12, 18, 24'],
+      ['2', 'down', '18, 12'],
+      ['3', 'up', '18, 24, 30, 36'],
+      ['4', 'down', '30, 24, 18'],
+      ['5', 'up', '24, 30, 36, 42, 48']
+    ];
+    const blankSegments = [
+      ['1', 'up', '0, 6, ____, 18, ____'],
+      ['2', 'down', '____, 12'],
+      ['3', 'up', '____, 24, 30, ____'],
+      ['4', 'down', '30, 24, ____'],
+      ['5', 'up', '24, ____, 36, ____, 48']
+    ];
+    return {
+      kind: 'data-table',
+      label: solved ? 'Solved direction-changing count by six' : 'Follow each arrow and keep counting by six',
+      columns: ['Segment', 'Arrow', 'Count'],
+      rows: solved ? solvedSegments : blankSegments
+    };
+  }
+  return {
+    kind: 'data-table',
+    label: solved ? 'Julie stopped one six too soon' : 'Check Julie’s count-by-six claim',
+    columns: ['Groups of 6', 'Count'],
+    rows: Array.from({ length: 7 }, (_, index) => {
+      const group = index + 1;
+      if (solved) return [String(group), String(group * 6)];
+      return [String(group), group === 6 ? '36 (Julie’s answer)' : group === 7 ? '____ (target)' : 'count by 6'];
+    })
+  };
+}
+
+function makeM3Lesson5Primary(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSection {
+  const number = Number(problem.number);
+  if (number === 1) {
+    return makeM3CountByMatch(7, solved, true, 'fish bowls and fish facts', [6, 3, 8, 7, 1, 10, 9, 4, 2, 5], [2, 4, 5, 8, 9, 10]);
+  }
+  if (number === 2) {
+    return makeM3CountBySequence(7, 10, solved, [1, 2, 4, 6, 9]);
+  }
+  if (number === 3) {
+    return {
+      kind: 'number-bond',
+      label: solved ? 'Solved make-ten number bond' : 'Break the next seven to make 20',
+      whole: '7',
+      parts: [
+        { label: solved ? '6' : '____', sublabel: 'part needed to reach 20' },
+        { label: solved ? '1' : '____', sublabel: 'part left over' }
+      ],
+      equations: solved ? ['14 + 7 = 14 + 6 + 1', '14 + 6 = 20', '20 + 1 = 21'] : ['14 + 7 = 14 + ____ + ____', '14 + ____ = 20', '20 + ____ = ____'],
+      caption: solved ? 'Abe adds 6 to reach 20, then adds the remaining 1.' : 'Choose the two parts of 7 that reach the next ten, then finish the count.'
+    };
+  }
+  return {
+    kind: 'card-grid',
+    label: solved ? 'Both count-by strategies reach 42' : 'Compare Molly’s and James’s arrays',
+    cards: [
+      {
+        label: 'Molly: count by 7 six times',
+        sections: [{ kind: 'array', rows: 6, columns: 7, item: 'dot', caption: solved ? '6 x 7 = 42' : '6 groups of 7 = ____' }]
+      },
+      {
+        label: 'James: count by 6 seven times',
+        sections: [{ kind: 'array', rows: 7, columns: 6, item: 'circle', caption: solved ? '7 x 6 = 42' : '7 groups of 6 = ____' }]
+      },
+      {
+        label: 'Commutative check',
+        sections: [{ kind: 'equations', lines: solved ? ['7 x 6 = 6 x 7', '42 = 42', 'Both are correct.'] : ['7 x 6 = ____', '6 x 7 = ____', 'Who is correct? ____'] }]
+      }
+    ]
+  };
+}
+
+function makeM3Lesson6Primary(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSection {
+  const number = Number(problem.number);
+  if (number === 1) {
+    return {
+      kind: 'card-grid',
+      label: solved ? 'Solved 5-plus-more tape diagrams' : 'Label each tape as 5 groups plus more groups',
+      cards: [6, 7, 8, 9].map((groups) => {
+        const extra = groups - 5;
+        return {
+          label: `${groups} x 6`,
+          sections: [
+            {
+              kind: 'tape',
+              totalLabel: solved ? `${groups * 6}` : '____ total',
+              parts: Array.from({ length: groups }, (_, index) => ({ label: '6', emphasize: index < 5 })),
+              caption: `5 x 6 plus ${extra} x 6`
+            },
+            {
+              kind: 'equations',
+              lines: solved
+                ? [`${groups} x 6 = (5 x 6) + (${extra} x 6)`, `30 + ${extra * 6} = ${groups * 6}`]
+                : [`${groups} x 6 = (5 x 6) + (${extra} x 6)`, '30 + ____ = ____']
+            }
+          ]
+        };
+      })
+    };
+  }
+  if (number === 2) {
+    return makeM3DivisionBond(54, 6, 30, 24, solved, 'Break apart 54 into two parts divisible by 6', [true, true]);
+  }
+  if (number === 3) {
+    return makeM3DivisionBond(49, 7, 35, 14, solved, 'Break apart 49 into two parts divisible by 7', [true, false]);
+  }
+  if (number === 4) {
+    return {
+      kind: 'card-grid',
+      label: solved ? 'Robert’s 5-eights-plus-1-eight strategy' : 'Draw 5 eights and 1 more eight',
+      cards: [
+        { label: 'Known part', sections: [{ kind: 'array', rows: 5, columns: 8, item: 'dot', caption: solved ? '5 x 8 = 40' : '5 x 8 = ____' }] },
+        { label: 'One more group', sections: [{ kind: 'array', rows: 1, columns: 8, item: 'circle', caption: solved ? '1 x 8 = 8' : '1 x 8 = ____' }] },
+        { label: 'Combine', sections: [{ kind: 'equations', lines: solved ? ['6 x 8 = (5 x 8) + 8', '40 + 8 = 48', 'Yes, Robert is right.'] : ['6 x 8 = (5 x 8) + 8', '____ + ____ = ____', 'Is Robert right? ____'] }] }
+      ]
+    };
+  }
+  return makeM3DivisionBond(42, 7, 35, 7, solved, 'One valid number bond; other divisible-by-7 bonds also work');
+}
+
+function makeM3Lesson7Primary(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSection {
+  const number = Number(problem.number);
+  if (number === 1) {
+    const words = [
+      'a number times 6 equals 30',
+      '7 times a number equals 42',
+      '6 times 7 equals a number',
+      '63 divided by a number equals 9',
+      '36 divided by a number equals 6',
+      'a number times 7 equals 21'
+    ];
+    const equations = ['n x 7 = 21', 'n x 6 = 30', '6 x 7 = n', '7 x n = 42', '36 divided by n = 6', '63 divided by n = 9'];
+    return {
+      kind: 'expression-match',
+      label: solved ? 'Solved caterpillar-to-leaf matches' : 'Match each word caterpillar to its equation leaf',
+      topLabel: 'Words',
+      bottomLabel: 'Equation leaves',
+      topItems: words,
+      bottomItems: equations,
+      showMatches: solved,
+      matches: solved ? [1, 3, 2, 5, 4, 0].map((bottomIndex, topIndex) => ({ topIndex, bottomIndex, label: 'same unknown location' })) : undefined,
+      note: solved ? 'Each match keeps the known quantities and the unknown in the same position.' : 'Read “a number” as n. Match without solving the value of n.'
+    };
+  }
+  if (number === 2) {
+    return {
+      kind: 'tape',
+      label: solved ? 'Solved 6-part tape' : 'Write an equation for the official 6-part tape',
+      totalLabel: solved ? 'k = 48' : 'k',
+      parts: Array.from({ length: 6 }, () => ({ label: '8' })),
+      braces: [{ label: solved ? '6 x 8 = k; k = 48' : '6 x 8 = k; k = ____', startPart: 0, partCount: 6 }],
+      caption: 'Six equal units of 8 make the unknown whole k.'
+    };
+  }
+  const stories = [
+    { label: 'a. Pencils', total: '21 pencils', parts: 7, unit: '3 each', equation: '21 divided by 3 = s', answer: 's = 7 students' },
+    { label: 'b. Basketball drills', total: '24 minutes', parts: 6, unit: 'same time', equation: '24 divided by 6 = t', answer: 't = 4 minutes' },
+    { label: 'c. Yarn', total: 'y centimeters', parts: 8, unit: '6 cm', equation: '8 x 6 = y', answer: 'y = 48 cm' },
+    { label: 'd. Beakers', total: '54 mL', parts: 9, unit: '6 mL', equation: '54 divided by 6 = b', answer: 'b = 9 beakers' }
+  ];
+  return {
+    kind: 'card-grid',
+    label: solved ? 'Solved drawing-and-equation story models' : 'Draw, label, and solve each official story',
+    cards: stories.map((story) => ({
+      label: story.label,
+      sections: solved || story.label.startsWith('c.')
+        ? [
+            { kind: 'tape', totalLabel: story.total, parts: Array.from({ length: story.parts }, () => ({ label: story.unit })), caption: solved ? story.answer : 'Eight known pieces each measure 6 centimeters.' },
+            { kind: 'equations', lines: solved ? [story.equation, story.answer] : [story.equation, story.equation.split('=')[1].trim() + ' = ____'] }
+          ]
+        : [
+            { kind: 'note', text: `Draw equal groups for ${story.total}. The number of groups or size of each group is unknown.` },
+            { kind: 'equations', lines: [story.equation, story.equation.split('=')[1].trim() + ' = ____'] }
+          ]
+    }))
+  };
+}
+
+function makeM3Lesson8Primary(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSection {
+  const number = Number(problem.number);
+  if (number === 1) {
+    const items = [
+      ['a', '(12 - 4) + 6', '14'], ['i', '(12 divided by 2) + 4', '10'],
+      ['b', '12 - (4 + 6)', '2'], ['j', '12 divided by (2 + 4)', '2'],
+      ['c', '15 - (7 + 3)', '5'], ['k', '9 + (15 divided by 3)', '14'],
+      ['d', '(15 - 7) + 3', '11'], ['l', '(9 + 15) divided by 3', '8'],
+      ['e', '(3 + 2) x 6', '30'], ['m', '60 divided by (10 - 4)', '10'],
+      ['f', '3 + (2 x 6)', '15'], ['n', '(60 divided by 10) - 4', '2'],
+      ['g', '4 x (7 - 2)', '20'], ['o', '35 + (10 divided by 5)', '37'],
+      ['h', '(4 x 7) - 2', '26'], ['p', '(35 + 10) divided by 5', '9']
+    ];
+    return {
+      kind: 'data-table',
+      label: solved ? 'Solved parentheses expression bank' : 'Solve inside parentheses first',
+      columns: ['Item', 'Expression', 'Value'],
+      rows: items.map(([item, expression, value]) => [item, expression, solved ? value : '____'])
+    };
+  }
+  if (number === 2) {
+    const rows = [
+      ['a', '19', '(16 - 4) + 7 = 19'], ['b', '5', '16 - (4 + 7) = 5'],
+      ['c', '2', '2 = 22 - (15 + 5)'], ['d', '12', '12 = (22 - 15) + 5'],
+      ['e', '60', '(3 + 7) x 6 = 60'], ['f', '45', '3 + (7 x 6) = 45'],
+      ['g', '5', '5 = (10 divided by 10) x 5'], ['h', '50', '50 = (100 divided by 10) x 5'],
+      ['i', '3', '(26 - 5) divided by 7 = 3'], ['j', '36', '36 = 4 x (25 - 16)']
+    ];
+    return {
+      kind: 'data-table',
+      label: solved ? 'Solved parentheses placements' : 'Place parentheses to reach each given target',
+      columns: ['Item', 'Target', 'Equation with parentheses'],
+      rows: rows.map(([item, target, equation]) => [item, target, solved ? equation : 'Add one pair of parentheses: ____________________'])
+    };
+  }
+  if (number === 3) {
+    return makeM3ParenthesesChoice(solved, '24 divided by 4 + 2', [
+      ['Chad', '(24 divided by 4) + 2', '8'],
+      ['Samir', '24 divided by (4 + 2)', '4']
+    ]);
+  }
+  if (number === 4) {
+    return makeM3ParenthesesChoice(solved, '12 + 15 divided by 3', [
+      ['Natasha groups 15 divided by 3', '12 + (15 divided by 3)', '17']
+    ]);
+  }
+  return makeM3ParenthesesChoice(solved, '7 + 3 x 2', [
+    ['Multiply first', '7 + (3 x 2)', '13'],
+    ['Add first', '(7 + 3) x 2', '20']
+  ]);
+}
+
+function makeM3ParenthesesChoice(solved: boolean, source: string, choices: string[][]): ProblemVisualSection {
+  return {
+    kind: 'card-grid',
+    label: solved ? `Solved groupings for ${source}` : `Show each grouping for ${source}`,
+    cards: choices.map(([label, grouped, value]) => ({
+      label,
+      sections: [{ kind: 'equations', lines: solved ? [`${grouped} = ${value}`] : [`${source} = ____`, 'Parentheses: ____________________'] }, { kind: 'note', text: solved ? `The parentheses make ${grouped} the intended expression.` : 'Place parentheses, solve inside them first, then finish.' }]
+    }))
+  };
+}
+
+function makeM3Lesson9Primary(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSection {
+  const number = Number(problem.number);
+  if (number === 1) {
+    const cases = [
+      { label: 'a-b. 3 x 12', columns: 12, chunks: '4 groups of 3 columns', regrouped: '(3 x 3) x 4', inner: '9 x 4', total: 36 },
+      { label: 'c-d. 3 x 14', columns: 14, chunks: '7 groups of 2 columns', regrouped: '(3 x 2) x 7', inner: '6 x 7', total: 42 }
+    ];
+    return {
+      kind: 'card-grid',
+      label: solved ? 'Solved regrouped source arrays' : 'Circle equal chunks in each source array',
+      cards: cases.map((item) => ({
+        label: item.label,
+        sections: [
+          { kind: 'array', rows: 3, columns: item.columns, item: 'dot', caption: item.chunks },
+          { kind: 'equations', lines: solved ? [`${item.regrouped} = ${item.inner} = ${item.total}`] : [`${item.regrouped} = ____ x ____ = ____`] }
+        ]
+      }))
+    };
+  }
+  if (number === 2) {
+    const chains = [
+      ['a', '3 x 16', '3 x (2 x 8)', '(3 x 2) x 8', '6 x 8 = 48'],
+      ['b', '2 x 14', '2 x (2 x 7)', '(2 x 2) x 7', '4 x 7 = 28'],
+      ['c', '3 x 12', '3 x (3 x 4)', '(3 x 3) x 4', '9 x 4 = 36'],
+      ['d', '3 x 14', '3 x (2 x 7)', '(3 x 2) x 7', '6 x 7 = 42'],
+      ['e', '15 x 3', '(5 x 3) x 3', '5 x (3 x 3)', '5 x 9 = 45'],
+      ['f', '15 x 2', '(5 x 3) x 2', '5 x (3 x 2)', '5 x 6 = 30']
+    ];
+    return {
+      kind: 'card-grid',
+      label: solved ? 'Solved associative-property scrolls' : 'Move parentheses to create a friendlier fact',
+      cards: chains.map(([item, source, factored, regrouped, result]) => ({
+        label: `Item ${item}: ${source}`,
+        sections: [{ kind: 'equations', lines: solved ? [factored, regrouped, result] : [factored, 'Regroup: ____________________', 'Friendly fact: ____ x ____ = ____'] }]
+      }))
+    };
+  }
+  return {
+    kind: 'card-grid',
+    label: solved ? 'Charlotte’s 16 x 2 to 8 x 4 strategy' : 'Explain Charlotte’s regrouping',
+    cards: [
+      { label: 'Original array', sections: [{ kind: 'array', rows: 2, columns: 16, item: 'circle', caption: '16 x 2' }] },
+      { label: 'Regrouped array', sections: [{ kind: 'array', rows: 4, columns: 8, item: 'dot', caption: solved ? '8 x 4 = 32' : '8 x 4 = ____' }] },
+      { label: 'Associative chain', sections: [{ kind: 'equations', lines: solved ? ['16 x 2 = (8 x 2) x 2', '= 8 x (2 x 2)', '= 8 x 4 = 32'] : ['16 x 2 = (8 x 2) x 2', '= 8 x (____ x ____)', '= ____ x ____ = ____'] }, { kind: 'note', text: solved ? 'She rewrites 16 as 8 x 2, then groups 2 x 2 to make 4.' : 'Explain what changes and what stays equal.' }]
+      }
+    ]
+  };
+}
+
+function makeM3Lesson10Primary(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSection {
+  const number = Number(problem.number);
+  if (number === 1) {
+    const cases = [
+      { label: 'a. 8 x 8', extra: 3, total: 64 },
+      { label: 'b. 8 x 9 = 9 x 8', extra: 4, total: 72 }
+    ];
+    return {
+      kind: 'card-grid',
+      label: solved ? 'Solved source arrays split after five columns' : 'Label each array as 5 columns plus more columns',
+      cards: cases.map((item) => ({
+        label: item.label,
+        sections: [
+          { kind: 'array', rows: 8, columns: 5, item: 'dot', caption: solved ? '8 x 5 = 40' : 'Known part: 8 x 5 = ____' },
+          { kind: 'array', rows: 8, columns: item.extra, item: 'circle', caption: solved ? `8 x ${item.extra} = ${8 * item.extra}` : `Extra part: 8 x ${item.extra} = ____` },
+          { kind: 'equations', lines: solved ? [`40 + ${8 * item.extra} = ${item.total}`] : ['40 + ____ = ____'] }
+        ]
+      }))
+    };
+  }
+  if (number === 2) {
+    return makeM3DivisionBond(56, 8, 40, 16, solved, 'The source gives both divisible parts; solve each smaller quotient.', [true, true]);
+  }
+  if (number === 3) {
+    return makeM3DivisionBond(72, 8, 40, 32, solved, 'The source gives 40 divided by 8 and leaves the second divisible part blank.', [true, false]);
+  }
+  if (number === 4) {
+    const groups = Array.from({ length: 9 }, (_, index) => index + 1);
+    return {
+      kind: 'data-table',
+      label: solved ? 'Nine octagons: completed skip-count' : 'Skip-count the sides on nine octagons',
+      columns: groups.map((group) => `Octagon ${group}`),
+      rows: [[...groups.map((group) => solved || group <= 2 ? String(group * 8) : '____')], [...groups.map(() => '8 sides')]]
+    };
+  }
+  if (number === 5) {
+    const facts = [['4 x 8', '32'], ['8 x 6', '48'], ['3 x 8', '24'], ['8 x 10', '80'], ['8 x 8', '64'], ['7 x 8', '56']];
+    return { kind: 'data-table', label: solved ? 'Solved fishing-boat facts' : 'Complete each fact on the source boats', columns: ['Boat fact', 'Catch card'], rows: facts.map(([fact, value], index) => [fact, solved || index === 0 ? value : '____']) };
+  }
+  const expressions = ['24 divided by 8', '32 divided by 8', '16 divided by 8', '64 divided by 8', '48 divided by 8', '72 divided by 8'];
+  const values = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const matches = [2, 3, 1, 7, 5, 8];
+  return { kind: 'expression-match', label: solved ? 'Solved umbrella-to-raindrop matches' : 'Match each quotient umbrella to a raindrop', topLabel: 'Division expressions', bottomLabel: 'Quotients', topItems: expressions, bottomItems: values, showMatches: solved, matches: solved ? matches.map((bottomIndex, topIndex) => ({ topIndex, bottomIndex, label: 'quotient' })) : undefined };
+}
+
+function makeM3Lesson11Primary(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSection {
+  const number = Number(problem.number);
+  if (number === 1) {
+    return makeM3StoryTape(solved, '32 students', 8, 'n students', '32 divided by 8 = n', 'n = 4 students per group');
+  }
+  if (number === 2) {
+    return makeM3StoryTape(solved, 'm dollars', 6, '$8 per pack', '6 x 8 = m', 'm = $48');
+  }
+  if (number === 3) {
+    return makeM3StoryTape(solved, '$24 total', 3, '$8 per kg', '24 divided by 8 = c', 'c = 3 kg', false);
+  }
+  if (number === 4) {
+    return makeM3TwoStepStory(solved, 'Baseball cards', '4 packs x 10 cards', '40 cards divided among 8 boys', ['4 x 10 = 40', '40 divided by 8 = 5'], ['4 x 10 = ____', '____ divided by 8 = ____'], 'Each boy gets 5 cards.');
+  }
+  if (number === 5) {
+    return makeM3TwoStepStory(solved, 'Yellow and green balloons', '8 bags x 7 balloons', '56 total - 35 yellow', ['8 x 7 = 56', '56 - 35 = 21'], ['8 x 7 = ____', '____ - 35 = ____'], 'There are 21 green balloons.');
+  }
+  return makeM3TwoStepStory(solved, 'Orange sales', '72 oranges divided by 8 per bag', '9 bags x $4', ['72 divided by 8 = 9', '9 x 4 = 36'], ['72 divided by 8 = ____', '____ x 4 = ____'], 'The fruit seller receives $36.');
+}
+
+function makeM3StoryTape(solved: boolean, total: string, partCount: number, partLabel: string, equation: string, answer: string, showPartCountInBlank = true): ProblemVisualSection {
+  const visiblePartCount = solved || showPartCountInBlank ? partCount : 1;
+  return {
+    kind: 'tape',
+    label: solved ? 'Solved source tape diagram' : 'Draw and label the source tape diagram',
+    totalLabel: total,
+    parts: Array.from({ length: visiblePartCount }, () => ({ label: solved || showPartCountInBlank ? partLabel : `unknown number of ${partLabel} parts` })),
+    braces: [{ label: solved ? `${equation}; ${answer}` : `${equation}; answer = ____`, startPart: 0, partCount: visiblePartCount }],
+    caption: solved ? answer : 'The letter labels the quantity named in the question.'
+  };
+}
+
+function makeM3TwoStepStory(solved: boolean, label: string, firstModel: string, secondModel: string, equations: string[], blankEquations: string[], answer: string): ProblemVisualSection {
+  return {
+    kind: 'card-grid',
+    label: solved ? `Solved two-step model: ${label}` : `Plan both steps: ${label}`,
+    cards: [
+      { label: 'Step 1', sections: [{ kind: 'note', text: firstModel }, { kind: 'equations', lines: [solved ? equations[0] : blankEquations[0]] }] },
+      { label: 'Step 2', sections: [{ kind: 'note', text: solved ? secondModel : 'Use the Step 1 result in the second relationship.' }, { kind: 'equations', lines: [solved ? equations[1] : blankEquations[1]] }] },
+      { label: 'Answer in context', sections: [{ kind: 'note', text: solved ? answer : 'Write a complete sentence with the correct unit: ____________________' }] }
+    ]
+  };
+}
+
+function makeM3CountByMatch(
+  unit: number,
+  solved: boolean,
+  includeDivision: boolean,
+  sourceObjects: string,
+  factOrder: number[],
+  missingGroups: number[]
+): ProblemVisualSection {
+  const groups = Array.from({ length: 10 }, (_, index) => index + 1);
+  return {
+    kind: 'card-grid',
+    label: solved ? `Solved ${sourceObjects}` : `Official ${sourceObjects}`,
+    cards: [
+      {
+        label: `Count-by-${unit} sequence`,
+        sections: [{
+          kind: 'data-table',
+          columns: groups.map((group) => `Count ${group}`),
+          rows: [[...groups.map((group) => solved || !missingGroups.includes(group) ? String(group * unit) : '____')]]
+        }]
+      },
+      {
+        label: includeDivision ? 'Match each fish, then write its division fact' : 'Match each multiplication flag to its number card',
+        sections: [{
+          kind: 'data-table',
+          columns: includeDivision ? ['Source card', 'Multiplication', 'Count-by match', 'Related division'] : ['Source card', 'Multiplication', 'Count-by match'],
+          rows: factOrder.map((factor, index) => {
+            const total = factor * unit;
+            const base = [`${index + 1}`, `${factor} x ${unit}`, solved ? String(total) : 'match'];
+            return includeDivision ? [...base, solved ? `${total} divided by ${unit} = ${factor}` : '____ divided by ____ = ____'] : base;
+          })
+        }]
+      }
+    ]
+  };
+}
+
+function makeM3CountBySequence(unit: number, finalGroup: number, solved: boolean, givenGroups: number[]): ProblemVisualSection {
+  const groups = Array.from({ length: finalGroup }, (_, index) => index + 1);
+  const targetGroups = groups.filter((group) => !givenGroups.includes(group));
+  return {
+    kind: 'card-grid',
+    label: solved ? `Solved count-by-${unit} sequence and fact pairs` : `Complete the count-by-${unit} sequence`,
+    cards: [
+      {
+        label: 'Count-by sequence',
+        sections: [{
+          kind: 'data-table',
+          columns: groups.map((group) => `Count ${group}`),
+          rows: [[...groups.map((group) => solved || givenGroups.includes(group) ? String(group * unit) : '____')]]
+        }]
+      },
+      {
+        label: 'Multiplication and division partners',
+        sections: [{
+          kind: 'data-table',
+          columns: ['Count position', 'Multiplication', 'Division'],
+          rows: targetGroups.map((group) => [
+            String(group),
+            solved ? `${group} x ${unit} = ${group * unit}` : `____ x ${unit} = ____`,
+            solved ? `${group * unit} divided by ${unit} = ${group}` : `____ divided by ${unit} = ____`
+          ])
+        }]
+      }
+    ]
+  };
+}
+
+function makeM3DivisionBond(
+  whole: number,
+  divisor: number,
+  firstPart: number,
+  secondPart: number,
+  solved: boolean,
+  caption: string,
+  blankVisibleParts: [boolean, boolean] = [false, false]
+): ProblemVisualSection {
+  const firstQuotient = firstPart / divisor;
+  const secondQuotient = secondPart / divisor;
+  return {
+    kind: 'number-bond',
+    label: solved ? `Solved ${whole} divided by ${divisor} number bond` : `${whole} divided by ${divisor} number-bond workspace`,
+    whole: `${whole} divided by ${divisor}`,
+    parts: [
+      { label: solved || blankVisibleParts[0] ? `${firstPart} divided by ${divisor}` : `____ divided by ${divisor}`, sublabel: solved ? `quotient ${firstQuotient}` : blankVisibleParts[0] ? 'given source part' : 'choose a divisible part' },
+      { label: solved || blankVisibleParts[1] ? `${secondPart} divided by ${divisor}` : `____ divided by ${divisor}`, sublabel: solved ? `quotient ${secondQuotient}` : blankVisibleParts[1] ? 'given source part' : 'choose a divisible part' }
+    ],
+    equations: solved
+      ? [`${whole} divided by ${divisor} = (${firstPart} divided by ${divisor}) + (${secondPart} divided by ${divisor})`, `${firstQuotient} + ${secondQuotient} = ${firstQuotient + secondQuotient}`]
+      : [`${whole} divided by ${divisor} = (${blankVisibleParts[0] ? firstPart : '____'} divided by ${divisor}) + (____ divided by ${divisor})`, '____ + ____ = ____'],
+    caption
+  };
+}
+
 function makeM3StrategyFrame(
   problem: ProblemSetCenteredProblem,
   solved: boolean,
   lessonNumber: number,
   equations: string[]
 ): ProblemVisualSection | undefined {
+  if ([4, 5, 6, 7, 8, 9, 10, 11].includes(lessonNumber)) {
+    return undefined;
+  }
+
+  if (lessonNumber === 1 && /shade in the multiplication facts/.test(problem.sourcePrompt.toLowerCase())) {
+    return {
+      kind: 'related-facts',
+      label: solved ? 'Solved chart reflections' : 'Reflect known facts across the diagonal',
+      rows: [
+        { left: '3 x 6', right: solved ? '6 x 3 = 18' : '6 x 3 = ____' },
+        { left: '2 x 7', right: solved ? '7 x 2 = 14' : '7 x 2 = ____' },
+        { left: '5 x 8', right: solved ? '8 x 5 = 40' : '8 x 5 = ____' },
+        { left: '4 x 9', right: solved ? '9 x 4 = 36' : '9 x 4 = ____' }
+      ]
+    };
+  }
+
+  if (lessonNumber === 1 && /complete the equations/.test(problem.sourcePrompt.toLowerCase())) {
+    return {
+      kind: 'data-table',
+      label: solved ? 'How each family is solved' : 'Choose the matching strategy',
+      columns: ['Strategy', 'What stays equal', 'Use it when'],
+      rows: solved
+        ? [
+            ['commutative property', 'the product', 'the factors reverse order'],
+            ['make ten, subtract one', 'the unit size', '9 groups are shown as 10 groups - 1 group'],
+            ['five plus more', 'the unit size', 'a known five-fact is extended']
+          ]
+        : [
+            ['reverse factors', '____', 'commutative items'],
+            ['10 groups - 1 group', '____', 'nines items'],
+            ['5 groups + more groups', '____', 'decomposition items']
+          ]
+    };
+  }
+
+  if (lessonNumber === 2 && /each unit has a value of 7|each dot has a value of 8/i.test(problem.sourcePrompt)) {
+    const unit = /value of 8/i.test(problem.sourcePrompt) ? 8 : 7;
+    return {
+      kind: 'related-facts',
+      label: solved ? 'Five-fact to six-fact chain' : 'Use the known five-fact',
+      rows: [
+        { left: `5 x ${unit}`, right: solved ? `${5 * unit}` : '____' },
+        { left: `5 ${unit}s + 1 ${unit}`, right: solved ? `${6 * unit}` : '____' },
+        { left: `6 x ${unit}`, right: solved ? `${6 * unit}` : '____' },
+        { left: `${unit} x 6`, right: solved ? `${6 * unit}` : '____' }
+      ]
+    };
+  }
+
+  if (lessonNumber === 2 && /32 crayons/.test(problem.sourcePrompt)) {
+    return {
+      kind: 'related-facts',
+      label: solved ? 'Multiplication checks the quotient' : 'Use a known eights fact',
+      rows: [
+        { left: '32 divided by 8', right: solved ? '4 packs' : '____ packs' },
+        { left: '4 packs x 8 crayons', right: solved ? '32 crayons' : '____ crayons' }
+      ]
+    };
+  }
+
+  if (lessonNumber === 2 && /hannah has \$500/i.test(problem.sourcePrompt)) {
+    return {
+      kind: 'data-table',
+      label: solved ? 'Solved spending and reasonableness check' : 'Track the money in order',
+      columns: ['Step', 'Calculation', 'Money left'],
+      rows: solved
+        ? [
+            ['camera', '$500 - $435', '$65'],
+            ['4 other items', '4 x $9 = $36', '$65 - $36 = $29'],
+            ['speakers', '$29 < $50', 'No, $21 short']
+          ]
+        : [
+            ['camera', '$500 - $435', '____'],
+            ['4 other items', '4 x $9', '____'],
+            ['compare with speakers', '____ compared with $50', 'yes / no']
+          ]
+    };
+  }
+
   if ([2, 6, 10, 12].includes(lessonNumber)) {
     const groupSize = problem.knownGroupSize ?? inferM3Factor(equations, 1) ?? m3LikelyUnitSize(problem);
     const totalGroups = problem.knownGroupCount ?? inferM3Factor(equations, 0) ?? 6;
@@ -1398,10 +2256,10 @@ function singularLabel(label: string): string {
 }
 
 function m3EquationReason(equation: string, value?: string): string {
-  if (/divided by 1|÷\s*1/.test(equation)) {
+  if (/divided by\s*1\b|÷\s*1\b/.test(equation)) {
     return 'Dividing by 1 keeps the number unchanged.';
   }
-  if (/0\s*(?:divided by|÷)/.test(equation)) {
+  if (/\b0\s*(?:divided by|÷)/.test(equation)) {
     return 'Zero shared into equal groups gives 0 in each group.';
   }
   if (/\b1\s*(?:x|×)|(?:x|×)\s*1\b/i.test(equation)) {
@@ -1414,10 +2272,10 @@ function m3EquationReason(equation: string, value?: string): string {
 }
 
 function m3FactMatchReason(equation: string): string {
-  if (/divided by 1|÷\s*1/.test(equation)) {
+  if (/divided by\s*1\b|÷\s*1\b/.test(equation)) {
     return 'divide by 1: same number';
   }
-  if (/0\s*(?:divided by|÷)|(?:divided by|÷)\s*\d+\s*=\s*0/.test(equation)) {
+  if (/\b0\s*(?:divided by|÷)|(?:divided by|÷)\s*\d+\s*=\s*0\b/.test(equation)) {
     return 'zero divided: 0';
   }
   if (/\b1\s*(?:x|×)|(?:x|×)\s*1\b/i.test(equation)) {

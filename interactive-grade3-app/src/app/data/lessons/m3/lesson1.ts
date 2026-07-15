@@ -8,9 +8,9 @@ export const M3_LESSON1_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 1 animation: Study commutativity to find known facts of 6, 7, 8, and 9.",
-    context: "Part 1: Explore commutativity as it relates to multiplication.",
-    equation: "6 x 7 = 42",
+    title: "Lesson 1 animation: turn one known fact into its commutative partner",
+    context: "The Teacher Edition begins with 3 jugs of 6 liters. Read the same 18 objects as 3 rows of 6, then turn the array and read 6 rows of 3.",
+    equation: "3 x 6 = 18 and 6 x 3 = 18",
     teacherPrompt: "How did commutativity help you solve more facts than you thought you knew in Problem 1(a)?",
     focus: [
       "commutative property",
@@ -18,13 +18,27 @@ export const M3_LESSON1_RUNTIME: LessonRuntimeConfig = {
       "array",
       "source labels"
     ],
-    groupCount: 6,
-    groupSize: 7,
-    rowCount: 6,
-    columnCount: 7,
-    tapePartCount: 6,
-    tapePartLabel: "7",
-    tapeWholeLabel: "42 total"
+    groupCount: 3,
+    groupSize: 6,
+    rowCount: 3,
+    columnCount: 6,
+    tapePartCount: 3,
+    tapePartLabel: "6 liters",
+    tapeWholeLabel: "18 liters total",
+    commutativeTurn: {
+      rows: 3,
+      columns: 6,
+      total: 18,
+      rowEquation: "3 x 6 = 18",
+      columnEquation: "6 x 3 = 18",
+      factsFilled: 84,
+      factsLeft: 16
+    },
+    conceptSteps: [
+      { label: "Read one arrangement", action: "Read 18 as 3 rows of 6.", result: "The first fact is 3 x 6 = 18." },
+      { label: "Turn the array", action: "Read the same 18 dots as 6 rows of 3.", result: "The commutative fact is 6 x 3 = 18." },
+      { label: "Fill the chart", action: "Reflect each known fact across the multiplication-table diagonal.", result: "Known facts and their partners fill 84 cells; 16 facts remain." }
+    ]
   },
 
 

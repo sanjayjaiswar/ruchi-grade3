@@ -19,6 +19,7 @@ import type {
   ProblemVisualMeasurementModelSection,
   ProblemVisualMeasurementLabSection,
   ProblemVisualNoteSection,
+  ProblemVisualNumberBondSection,
   ProblemVisualNumberLineSection,
   ProblemVisualRelatedFactsSection,
   ProblemVisualSection,
@@ -84,6 +85,10 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
 
   tapeSection(section: ProblemVisualSection): ProblemVisualTapeSection | undefined {
     return section.kind === 'tape' ? section : undefined;
+  }
+
+  numberBondSection(section: ProblemVisualSection): ProblemVisualNumberBondSection | undefined {
+    return section.kind === 'number-bond' ? section : undefined;
   }
 
   fractionStripSection(section: ProblemVisualSection): ProblemVisualFractionStripSection | undefined {

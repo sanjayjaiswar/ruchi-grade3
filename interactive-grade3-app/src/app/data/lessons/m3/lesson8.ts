@@ -6,10 +6,10 @@ export const M3_LESSON8_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 8 animation: Understand the function of parentheses and apply to solving problems.",
-    context: "Part 1: Solve equations containing parentheses.",
-    equation: "2 x 6 = 12",
-    teacherPrompt: "How does the official Problem Set model show understand the function of parentheses and apply to solving problems.?",
+    title: "Parentheses tell which operation happens first",
+    context: "Richard has 2 cartons of 6 eggs and drops 2 eggs. Compare multiply-first and subtract-first groupings.",
+    equation: "(2 x 6) - 2 = 10",
+    teacherPrompt: "Read each grouping aloud, solve the parentheses first, and explain why only one grouping matches the egg story.",
     focus: [
       "array",
       "source labels"
@@ -20,7 +20,19 @@ export const M3_LESSON8_RUNTIME: LessonRuntimeConfig = {
     columnCount: 6,
     tapePartCount: 2,
     tapePartLabel: "6",
-    tapeWholeLabel: "12 total"
+    tapeWholeLabel: "12 total",
+    parenthesesCompare: {
+      baseExpression: "2 x 6 - 2",
+      cases: [
+        { label: "Multiply first", grouped: "(2 x 6) - 2", firstStep: "12 - 2", result: "10 eggs", note: "Matches 2 full cartons, then 2 broken eggs." },
+        { label: "Subtract first", grouped: "2 x (6 - 2)", firstStep: "2 x 4", result: "8 eggs", note: "Changes each carton, so it is a different story." }
+      ]
+    },
+    conceptSteps: [
+      { label: "Group", action: "Put parentheses around the operation the story does first.", result: "The grouped expression becomes one quantity." },
+      { label: "Compute", action: "Solve inside the parentheses.", result: "Replace the grouped expression with its value." },
+      { label: "Finish", action: "Complete the remaining operation.", result: "Check that the answer matches the context." }
+    ]
   },
 
 

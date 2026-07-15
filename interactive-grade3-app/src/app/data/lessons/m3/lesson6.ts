@@ -9,25 +9,48 @@ export const M3_LESSON6_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 6 animation: Use the distributive property as a strategy to multiply and divide using units of 6 and 7.",
-    context: "Part 1: Apply the distributive property to multiply using units of 6 and 7.",
-    equation: "6 x 7 = (3 x 7) + (3 x 7)",
-    teacherPrompt: "How does the official Problem Set model show use the distributive property as a strategy to multiply and divide using units of 6 and 7.?",
+    title: "Lesson 6 animation: break apart multiplication and division into known facts",
+    context: "The source tape splits 9 sevens into 5 sevens and 4 sevens. The source number bond splits 48 divided by 6 into 30 divided by 6 and 18 divided by 6.",
+    equation: "9 x 7 = (5 x 7) + (4 x 7) = 63; 48 divided by 6 = 5 + 3 = 8",
+    teacherPrompt: "How do the tape and number bond keep the unit the same while breaking one hard fact into two known facts?",
     focus: [
       "distributive property",
       "division",
       "array",
       "source labels"
     ],
-    groupCount: 6,
+    groupCount: 9,
     groupSize: 7,
-    rowCount: 6,
+    rowCount: 9,
     columnCount: 7,
-    tapePartCount: 6,
+    tapePartCount: 9,
     tapePartLabel: "7",
-    tapeWholeLabel: "42 total",
-    firstPart: 3,
-    secondPart: 3
+    tapeWholeLabel: "63 total",
+    firstPart: 5,
+    secondPart: 4,
+    distributiveBuild: {
+      unitValue: 7,
+      knownGroups: 5,
+      extraGroups: 4,
+      knownFact: "5 x 7 = 35",
+      additionFact: "4 x 7 = 28",
+      targetFact: "9 x 7 = 63",
+      commutedFact: "35 + 28 = 63",
+      divisionBond: {
+        whole: 48,
+        divisor: 6,
+        firstPart: 30,
+        secondPart: 18,
+        firstQuotient: 5,
+        secondQuotient: 3,
+        totalQuotient: 8
+      }
+    },
+    conceptSteps: [
+      { label: "Break apart groups", action: "Split 9 sevens into 5 sevens and 4 sevens.", result: "35 + 28 = 63, so 9 x 7 = 63." },
+      { label: "Keep the divisor", action: "Split 48 into 30 and 18; both parts are divisible by 6.", result: "30 divided by 6 is 5 and 18 divided by 6 is 3." },
+      { label: "Combine partial answers", action: "Add the two products or the two quotients.", result: "The distributive strategy preserves the original total." }
+    ]
   },
 
 

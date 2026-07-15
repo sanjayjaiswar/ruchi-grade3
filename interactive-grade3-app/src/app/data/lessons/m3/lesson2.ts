@@ -9,9 +9,9 @@ export const M3_LESSON2_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "array",
-    title: "Lesson 2 animation: Apply the distributive and commutative properties to relate multiplication facts 5 x n + n to 6 x n and n x 6 where n is the size of the unit.",
-    context: "T: (Draw 1 circle with a 7 inside.) This circle represents 1 unit of 7.",
-    equation: "5 x 6 = (3 x 6) + (2 x 6)",
+    title: "Lesson 2 animation: build a six-fact from five known units and one more",
+    context: "Each source circle is one unit of 7. Start with 5 sevens, add 1 more seven, then turn the factors to name the related fact.",
+    equation: "5 x 7 + 1 x 7 = 6 x 7 = 7 x 6 = 42",
     teacherPrompt: "What pattern did you notice between Problems 1 and 2?",
     focus: [
       "commutative property",
@@ -19,15 +19,29 @@ export const M3_LESSON2_RUNTIME: LessonRuntimeConfig = {
       "array",
       "source labels"
     ],
-    groupCount: 5,
-    groupSize: 6,
-    rowCount: 5,
-    columnCount: 6,
-    tapePartCount: 5,
-    tapePartLabel: "6",
-    tapeWholeLabel: "30 total",
-    firstPart: 3,
-    secondPart: 2
+    groupCount: 6,
+    groupSize: 7,
+    rowCount: 6,
+    columnCount: 7,
+    tapePartCount: 6,
+    tapePartLabel: "7",
+    tapeWholeLabel: "42 total",
+    firstPart: 5,
+    secondPart: 1,
+    distributiveBuild: {
+      unitValue: 7,
+      knownGroups: 5,
+      extraGroups: 1,
+      knownFact: "5 x 7 = 35",
+      additionFact: "35 + 7 = 42",
+      targetFact: "6 x 7 = 42",
+      commutedFact: "7 x 6 = 42"
+    },
+    conceptSteps: [
+      { label: "Start with five units", action: "Use the known fact 5 x 7 = 35.", result: "Five sevens make 35." },
+      { label: "Add one more unit", action: "Add 1 x 7 to the known product: 35 + 7.", result: "Six sevens make 42." },
+      { label: "Turn the factors", action: "Use commutativity to read 6 x 7 as 7 x 6.", result: "Both facts have the product 42." }
+    ]
   },
 
 

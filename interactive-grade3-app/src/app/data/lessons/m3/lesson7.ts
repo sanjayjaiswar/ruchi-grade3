@@ -9,9 +9,9 @@ export const M3_LESSON7_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "tape-diagram",
-    title: "Lesson 7 animation: Interpret the unknown in multiplication and division to model and solve problems using units of 6 and 7.",
-    context: "Thad sees 7 beetles while weeding his garden.",
-    equation: "6 units of 7; unknown labeled from the story",
+    title: "Locate the unknown before choosing multiplication or division",
+    context: "Thad sees 7 beetles. Each beetle has 6 legs. The same tape structure also models an unknown group count or an unknown unit size.",
+    equation: "7 x 6 = b, so b = 42 legs",
     teacherPrompt: "Draw and label a tape diagram to model the beetle problem. Use b to represent the unknown number of beetle legs, then write and solve 7 x 6 = b.",
     focus: [
       "factor",
@@ -19,13 +19,23 @@ export const M3_LESSON7_RUNTIME: LessonRuntimeConfig = {
       "tape diagram",
       "source labels"
     ],
-    groupCount: 6,
-    groupSize: 7,
-    rowCount: 6,
-    columnCount: 7,
-    tapePartCount: 6,
-    tapePartLabel: "7 each",
-    tapeWholeLabel: "42 total"
+    groupCount: 7,
+    groupSize: 6,
+    rowCount: 7,
+    columnCount: 6,
+    tapePartCount: 7,
+    tapePartLabel: "6 legs",
+    tapeWholeLabel: "b legs total",
+    unknownCases: [
+      { label: "Unknown total", whole: "b legs", known: "7 groups of 6", unknown: "product b", equation: "7 x 6 = b", solution: "b = 42" },
+      { label: "Unknown groups", whole: "21 pencils", known: "3 each", unknown: "students s", equation: "21 divided by 3 = s", solution: "s = 7" },
+      { label: "Unknown unit size", whole: "24 minutes", known: "6 drills", unknown: "minutes t", equation: "24 divided by 6 = t", solution: "t = 4" }
+    ],
+    conceptSteps: [
+      { label: "Read", action: "Name the whole, number of groups, and size of each group.", result: "The story reveals which quantity is unknown." },
+      { label: "Model", action: "Place the letter on the matching part of the tape.", result: "The equation follows the model instead of a keyword." },
+      { label: "Solve", action: "Use a known six or seven fact.", result: "State the answer with its story unit." }
+    ]
   },
 
 

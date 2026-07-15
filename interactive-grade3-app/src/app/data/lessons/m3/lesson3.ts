@@ -9,9 +9,9 @@ export const M3_LESSON3_RUNTIME: LessonRuntimeConfig = {
   ],
   lessonAnimation: {
     kind: "tape-diagram",
-    title: "Lesson 3 animation: Multiply and divide with familiar facts using a letter to represent the unknown.",
-    context: "Use a letter to represent the unknown in multiplication.",
-    equation: "2 units of 4; unknown labeled from the story",
+    title: "Lesson 3 animation: the letter names the unknown quantity",
+    context: "Use the source canoe, field-trip, and shopping relationships to see the unknown as a number of groups, a group size, or a total.",
+    equation: "Choose the letter from the story, write the relationship, then solve the familiar fact.",
     teacherPrompt: "Explain to your partner how you solved Problem 3. (Review division as both an unknown factor and an equal groups problem.)",
     focus: [
       "division",
@@ -19,13 +19,44 @@ export const M3_LESSON3_RUNTIME: LessonRuntimeConfig = {
       "tape diagram",
       "source labels"
     ],
-    groupCount: 2,
-    groupSize: 4,
-    rowCount: 2,
-    columnCount: 4,
-    tapePartCount: 2,
-    tapePartLabel: "4 each",
-    tapeWholeLabel: "8 total"
+    groupCount: 8,
+    groupSize: 3,
+    rowCount: 8,
+    columnCount: 3,
+    tapePartCount: 8,
+    tapePartLabel: "3 people",
+    tapeWholeLabel: "24 people total",
+    unknownCases: [
+      {
+        label: "number of groups",
+        whole: "24 people",
+        known: "3 people per canoe",
+        unknown: "c canoes",
+        equation: "3 x c = 24",
+        solution: "c = 8 canoes"
+      },
+      {
+        label: "number of groups",
+        whole: "21 students",
+        known: "3 students per group",
+        unknown: "g groups",
+        equation: "21 divided by 3 = g",
+        solution: "g = 7 groups"
+      },
+      {
+        label: "unknown total",
+        whole: "m dollars",
+        known: "3 shirts at $8 each",
+        unknown: "total cost m",
+        equation: "3 x 8 = m",
+        solution: "m = $24"
+      }
+    ],
+    conceptSteps: [
+      { label: "Name the letter", action: "Choose a letter that matches the story quantity, such as c for canoes.", result: "The letter stands for one specific unknown quantity." },
+      { label: "Write the relationship", action: "Place the letter where the unknown belongs in multiplication or division.", result: "Examples include 3 x c = 24 and 21 divided by 3 = g." },
+      { label: "Solve and label", action: "Use a familiar fact, then attach the story unit.", result: "c = 8 canoes, g = 7 groups, and m = $24." }
+    ]
   },
 
 
