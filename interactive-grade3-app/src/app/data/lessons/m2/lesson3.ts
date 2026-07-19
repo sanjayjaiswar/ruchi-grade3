@@ -9,22 +9,65 @@ export const M2_LESSON3_RUNTIME: LessonRuntimeConfig = {
     'clock'
   ],
   lessonAnimation: {
-    kind: 'clock',
+    kind: 'number-line',
     title: 'Lesson 3 animation: count fives, then ones',
     context: 'Use the 0-60 minute line from Lesson 2, then count the small one-minute ticks between the fives to tell exact clock times.',
     equation: '(7 x 5) + 2 = 37 minutes',
     teacherPrompt: 'Count by fives to the benchmark minute, then count ones to the exact minute. Transfer that exact minute position to the clock.',
+    conceptVisual: {
+      title: 'Count by fives, then by ones, to tell the exact minute',
+      sourceNote: 'Teacher Edition Lesson 3, Concept Development Problems 1-3 (pages 37-42).',
+      sections: [
+        {
+          kind: 'time-number-line',
+          label: 'Locate 37 minutes after 7:00',
+          startLabel: '7:00 a.m. / 0 min',
+          endLabel: '8:00 a.m. / 60 min',
+          displayStartMinute: 0,
+          displayEndMinute: 60,
+          tickLabels: Array.from({ length: 13 }, (_, index) => String(index * 5)),
+          labelEvery: 1,
+          jumps: [
+            { label: '7 × 5 min = 35 min', fromMinute: 0, toMinute: 35 },
+            { label: '+2 one-minute intervals', fromMinute: 35, toMinute: 37 }
+          ],
+          points: [
+            { label: '7:37', minute: 37, detail: 'two more minutes', open: true }
+          ],
+          showPointDetails: false,
+          note: '(7 × 5) + 2 = 37 minutes.'
+        },
+        { kind: 'clock', label: 'Five-minute benchmark', timeLabel: '7:35', timeValue: '7:35', caption: 'The minute hand reaches the 7 after seven 5-minute intervals.' },
+        { kind: 'clock', label: 'Exact minute', timeLabel: '7:37', timeValue: '7:37', caption: 'Two one-minute marks after 7:35.' }
+      ]
+    },
     focus: [
       '5-minute benchmarks',
       'one-minute ticks',
       'exact clock time',
       'continuous number line'
     ],
-    clockLabels: [
-      '35 min',
-      '+1',
-      '+2',
-      '37 min'
+    timeLineModel: {
+      ariaLabel: 'Count seven five-minute intervals and two one-minute intervals to reach 7:37',
+      startLabel: '7:00 a.m.',
+      endLabel: '7:37 a.m.',
+      segments: [
+        ...Array.from({ length: 7 }, (_, index) => ({
+          from: `${index * 5}`,
+          to: `${(index + 1) * 5}`,
+          minutes: 5,
+          label: '+5',
+          unit: 'minutes' as const,
+          emphasis: 'benchmark' as const
+        })),
+        { from: '35', to: '36', minutes: 1, label: '+1', unit: 'minutes' as const, emphasis: 'ones' as const },
+        { from: '36', to: '37', minutes: 1, label: '+1', unit: 'minutes' as const, emphasis: 'ones' as const }
+      ]
+    },
+    conceptSteps: [
+      { label: 'Count fives', action: 'Move seven 5-minute intervals from 7:00 to 7:35.', result: 'Seven fives locate the nearest benchmark below 37.' },
+      { label: 'Count ones', action: 'Use the small minute marks for 36 and 37.', result: 'Two more one-minute intervals reach the exact minute.' },
+      { label: 'Wrap to the clock', action: 'Place the same minute position on the circular clock line.', result: '(7 × 5) + 2 = 37, so the time is 7:37.' }
     ]
   },
   teacherEditionSteps: [

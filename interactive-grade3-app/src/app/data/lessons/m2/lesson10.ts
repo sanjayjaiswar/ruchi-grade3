@@ -21,15 +21,35 @@ export const M2_LESSON10_RUNTIME: LessonRuntimeConfig = {
     ],
     numberLineLabels: [
       "0 mL",
-      "250 mL",
+      "100 mL",
+      "200 mL",
+      "300 mL",
+      "400 mL",
       "500 mL",
-      "750 mL",
+      "600 mL",
+      "700 mL",
+      "800 mL",
+      "900 mL",
       "1,000 mL"
     ],
     numberLineJumps: [
-      "+250 mL",
-      "+250 mL",
-      "+250 mL"
+      "+100 mL", "+100 mL", "+100 mL", "+100 mL", "+100 mL",
+      "+100 mL", "+100 mL", "+100 mL", "+100 mL", "+100 mL"
+    ],
+    containerScaleModel: {
+      capacityLabel: "1 liter measuring bottle",
+      intervalLabel: "10 equal pours × 100 mL = 1,000 mL",
+      ticks: [
+        { value: "1,000 mL / 1 L", major: true }, { value: "900 mL" }, { value: "800 mL" },
+        { value: "700 mL" }, { value: "600 mL" }, { value: "500 mL", major: true },
+        { value: "400 mL" }, { value: "300 mL" }, { value: "200 mL" },
+        { value: "100 mL", major: true }, { value: "0 mL", major: true }
+      ]
+    },
+    conceptSteps: [
+      { label: "Pour equally", action: "Measure and pour 100 mL into the bottle ten times.", result: "Equal pours create equal intervals." },
+      { label: "Mark the scale", action: "Mark 100 mL after each pour; label 500 mL and 1,000 mL.", result: "The container becomes a vertical number line." },
+      { label: "Read and estimate", action: "Locate exact hundreds and judge values between marks, such as 250 mL or 450 mL.", result: "Position on the scale justifies the liquid-volume estimate." }
     ]
   },
 

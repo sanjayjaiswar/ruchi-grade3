@@ -375,62 +375,96 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     const numberLineItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-number-line span, .visual-number-line-target'));
     const diagramItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-floor-room, .visual-line-plot-x, .visual-geometry-shape'));
 
-    animate(sections, {
-      opacity: keepTextOpaque ? 1 : [0, 1],
-      translateY: [10, 0],
-      duration: 320,
-      delay: stagger(45),
-      ease: 'out(2)'
-    });
+    const allAnimatedItems = [
+      ...sections,
+      ...arrayCells,
+      ...tapeParts,
+      ...matchCards,
+      ...tableRows,
+      ...equations,
+      ...measurementItems,
+      ...numberLineItems,
+      ...diagramItems
+    ];
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      allAnimatedItems.forEach((element) => {
+        element.style.opacity = '1';
+        element.style.removeProperty('transform');
+      });
+      return;
+    }
 
-    animate(arrayCells, {
-      opacity: keepTextOpaque ? 1 : [0, 1],
-      scale: [0.6, 1],
-      duration: 420,
-      delay: stagger(16, { from: 'first' }),
-      ease: 'out(3)'
-    });
+    if (sections.length) {
+      animate(sections, {
+        opacity: keepTextOpaque ? 1 : [0, 1],
+        translateY: [10, 0],
+        duration: 320,
+        delay: stagger(45),
+        ease: 'out(2)'
+      });
+    }
 
-    animate(tapeParts, {
-      opacity: keepTextOpaque ? 1 : [0, 1],
-      scaleX: [0.72, 1],
-      duration: 360,
-      delay: stagger(28),
-      ease: 'out(2)'
-    });
+    if (arrayCells.length) {
+      animate(arrayCells, {
+        opacity: keepTextOpaque ? 1 : [0, 1],
+        scale: [0.6, 1],
+        duration: 420,
+        delay: stagger(16, { from: 'first' }),
+        ease: 'out(3)'
+      });
+    }
 
-    animate(matchCards, {
-      opacity: keepTextOpaque ? 1 : [0, 1],
-      translateY: [8, 0],
-      duration: 340,
-      delay: stagger(24),
-      ease: 'out(2)'
-    });
+    if (tapeParts.length) {
+      animate(tapeParts, {
+        opacity: keepTextOpaque ? 1 : [0, 1],
+        scaleX: [0.72, 1],
+        duration: 360,
+        delay: stagger(28),
+        ease: 'out(2)'
+      });
+    }
 
-    animate([...tableRows, ...equations, ...measurementItems], {
-      opacity: keepTextOpaque ? 1 : [0, 1],
-      translateX: [-8, 0],
-      duration: 320,
-      delay: stagger(24),
-      ease: 'out(2)'
-    });
+    if (matchCards.length) {
+      animate(matchCards, {
+        opacity: keepTextOpaque ? 1 : [0, 1],
+        translateY: [8, 0],
+        duration: 340,
+        delay: stagger(24),
+        ease: 'out(2)'
+      });
+    }
 
-    animate(numberLineItems, {
-      opacity: keepTextOpaque ? 1 : [0, 1],
-      translateX: [-10, 0],
-      scale: [0.88, 1],
-      duration: 360,
-      delay: stagger(34),
-      ease: 'out(3)'
-    });
+    const rowItems = [...tableRows, ...equations, ...measurementItems];
+    if (rowItems.length) {
+      animate(rowItems, {
+        opacity: keepTextOpaque ? 1 : [0, 1],
+        translateX: [-8, 0],
+        duration: 320,
+        delay: stagger(24),
+        ease: 'out(2)'
+      });
+    }
 
-    animate(diagramItems, {
-      opacity: keepTextOpaque ? 1 : [0, 1],
-      scale: [0.82, 1],
-      duration: 420,
-      delay: stagger(22),
-      ease: 'out(3)'
-    });
+    if (numberLineItems.length) {
+      animate(numberLineItems, {
+        opacity: keepTextOpaque ? 1 : [0, 1],
+        translateX: [-10, 0],
+        scale: [0.88, 1],
+        duration: 360,
+        delay: stagger(34),
+        ease: 'out(3)'
+      });
+    }
+
+    if (diagramItems.length) {
+      animate(diagramItems, {
+        opacity: keepTextOpaque ? 1 : [0, 1],
+        scale: [0.82, 1],
+        duration: 420,
+        delay: stagger(22),
+        ease: 'out(3)'
+      });
+    }
   }
 
   private percentScale(max: number): (value: number) => number {

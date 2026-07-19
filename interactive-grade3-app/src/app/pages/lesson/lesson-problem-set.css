@@ -589,6 +589,8 @@
 .problem-set-centered-list {
   display: grid;
   gap: 14px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .problem-set-toolbar {
@@ -4560,6 +4562,9 @@ summary.source-pages-heading {
 .problem-solution-card {
   display: grid;
   gap: 14px;
+  width: 100%;
+  max-width: 100%;
+  overflow-wrap: anywhere;
   padding: clamp(14px, 1.7vw, 20px);
 }
 
@@ -7262,6 +7267,8 @@ summary.source-pages-heading {
 .summary-meaning-map {
   display: grid;
   gap: 12px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .summary-meaning-map h4 {
@@ -7275,6 +7282,8 @@ summary.source-pages-heading {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .summary-meaning-map article {

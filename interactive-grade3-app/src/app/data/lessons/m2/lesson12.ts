@@ -6,11 +6,51 @@ export const M2_LESSON12_RUNTIME: LessonRuntimeConfig = {
     "number line"
   ],
   lessonAnimation: {
-    kind: "number-line",
+    kind: "measurement",
     title: "Lesson 12 animation: round measurements to the nearest ten",
     context: "Place the measurement between two tens, mark halfway, then choose the closer ten.",
     equation: "73 mL is between 70 and 80; 73 is below halfway, so 70 mL",
-    teacherPrompt: "Discuss new vocabulary from today's lesson: round and about. Connect the discussion to rounding two-digit measurements to the nearest ten on the vertica.",
+    teacherPrompt: "Discuss round and about. Connect each measured value to its two surrounding tens and the halfway mark on a vertical number line.",
+    conceptVisual: {
+      title: "Measure first, then round the measurement to the nearest ten",
+      sourceNote: "Teacher Edition Lesson 12, measurement stations and debrief (pages 150-152).",
+      sections: [
+        {
+          kind: "measurement-model",
+          label: "Use the correct measurement tool",
+          model: "conversion",
+          values: [
+            { label: "ruler or meter stick", valueLabel: "length in cm", tone: "given" },
+            { label: "digital scale", valueLabel: "mass in g", tone: "target" },
+            { label: "beaker", valueLabel: "liquid volume in mL", tone: "benchmark" }
+          ],
+          steps: ["Measure the object.", "Name the two tens around the measurement.", "Use halfway to round."],
+          note: "The tool supplies the actual measurement; rounding describes it as about a nearby ten."
+        },
+        {
+          kind: "number-line",
+          label: "The Teacher Edition rounding line is vertical",
+          orientation: "vertical",
+          ticks: [
+            { label: "70 mL", rounded: true },
+            { label: "75 mL (halfway)" },
+            { label: "80 mL" }
+          ],
+          targetMarker: { label: "73 mL", position: 30 },
+          caption: "73 mL is below 75 mL, so it rounds to about 70 mL."
+        },
+        {
+          kind: "data-table",
+          label: "Official station recording structure",
+          columns: ["Station", "Measure", "Between", "Nearest ten"],
+          rows: [
+            ["shoe, desk, pencil, paper", "____ cm", "____ and ____ cm", "about ____ cm"],
+            ["rice bags A-E", "____ g", "____ and ____ g", "about ____ g"],
+            ["containers A-E", "____ mL", "____ and ____ mL", "about ____ mL"]
+          ]
+        }
+      ]
+    },
     focus: [
       "round",
       "number line",

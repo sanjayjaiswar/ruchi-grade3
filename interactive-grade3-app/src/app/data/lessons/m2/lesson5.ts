@@ -7,10 +7,10 @@ export const M2_LESSON5_RUNTIME: LessonRuntimeConfig = {
     "number line"
   ],
   lessonAnimation: {
-    kind: "clock",
+    kind: "number-line",
     title: "Lesson 5 animation: Solve word problems involving time intervals within 1 h",
     context: "Part 1: Count forward and backward to add and subtract on the number line.",
-    equation: "1 sec start -> 4 sec elapsed -> 4 sec end",
+    equation: "9:08 + 4 min = 9:12; 30 min − 12 min = 18 min",
     teacherPrompt: "Describe the process of drawing the number line for Problem 2. Explain how you labeled it. (Call on students who used different ways of thinking about a.",
     focus: [
       "addend",
@@ -18,10 +18,24 @@ export const M2_LESSON5_RUNTIME: LessonRuntimeConfig = {
       "clock",
       "source labels"
     ],
-    clockLabels: [
-      "1 sec start",
-      "4 sec elapsed",
-      "4 sec end"
+    timeLineModel: {
+      ariaLabel: "Carlos's arrival, homework, and morning-work intervals from 9:08 to 9:30",
+      startLabel: "9:08 a.m.",
+      endLabel: "9:30 a.m.",
+      segments: [
+        { from: "9:08", to: "9:12", minutes: 4, label: "homework +4", unit: "minutes", emphasis: "benchmark" },
+        { from: "9:12", to: "9:30", minutes: 18, label: "morning work +18", unit: "minutes", emphasis: "unknown" }
+      ],
+      unknownCases: [
+        { label: "Parts make a whole", known: "4 min + 18 min", unknown: "total available", equation: "4 + 18 = 22 min" },
+        { label: "Whole minus part", known: "30 min − 12 min", unknown: "morning work", equation: "30 − 12 = 18 min" },
+        { label: "Two known parts", known: "7 min + 18 min", unknown: "elapsed time", equation: "7 + 18 = 25 min" }
+      ]
+    },
+    conceptSteps: [
+      { label: "Plot known times", action: "Mark 9:08, 9:12, and 9:30 on one hour line.", result: "The intervals show Carlos's task parts." },
+      { label: "Relate parts and whole", action: "Add known parts or subtract a known part from the whole.", result: "12 + 18 = 30 and 30 − 12 = 18 describe the same line." },
+      { label: "Choose direction", action: "Count forward to find an end or backward to find a start or missing part.", result: "The number-line action matches the story unknown." }
     ]
   },
 

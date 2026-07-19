@@ -22,6 +22,17 @@ export const M2_LESSON7_RUNTIME: LessonRuntimeConfig = {
       "100 g",
       "10 g",
       "1 g"
+    ],
+    springScaleModels: [
+      { label: "2 kg spring scale", intervalLabel: "each interval = 500 g", ticks: ["0", "500", "1,000", "1,500", "2,000 g"], pointerIndex: 3, reading: "1,500 g" },
+      { label: "2 kg spring scale", intervalLabel: "each interval = 200 g", ticks: ["0", "200", "400", "600", "800", "1,000", "1,200", "1,400", "1,600", "1,800", "2,000 g"], pointerIndex: 7, reading: "1,400 g" },
+      { label: "1 kg spring scale", intervalLabel: "each interval = 100 g", ticks: ["0", "100", "200", "300", "400", "500", "600", "700", "800", "900", "1,000 g"], pointerIndex: 6, reading: "600 g" },
+      { label: "200 g spring scale", intervalLabel: "each interval = 20 g", ticks: ["0", "20", "40", "60", "80", "100", "120", "140", "160", "180", "200 g"], pointerIndex: 8, reading: "160 g" }
+    ],
+    conceptSteps: [
+      { label: "Read the scale", action: "Find the labeled endpoints and count the equal spaces between them.", result: "The interval may be 500 g, 200 g, 100 g, or 20 g." },
+      { label: "Build a benchmark", action: "Feel 1 kg, 100 g, 10 g, and 1 g masses.", result: "Known weights become mental references for estimation." },
+      { label: "Estimate, then check", action: "Choose grams or kilograms, estimate, and use the spring scale.", result: "The measured value tests the reasonableness of the estimate." }
     ]
   },
 

@@ -11,6 +11,48 @@ export const M2_LESSON6_RUNTIME: LessonRuntimeConfig = {
     context: "Use the Teacher Edition sequence: balance a rice bag to 1 kilogram, split the kilogram into ten 100-gram parts, split 100 grams into ten 10-gram parts, and split 10 grams into ten 1-gram parts.",
     equation: "1 kg = 1,000 g; each step makes 10 equal smaller units",
     teacherPrompt: "How many equal parts are made at each decomposition step, and how does that match place value?",
+    conceptVisual: {
+      title: "Balance one kilogram, then decompose by tens",
+      sourceNote: "Teacher Edition Lesson 6, Concept Development Parts 1-3 (pages 75-78).",
+      sections: [
+        {
+          kind: "measurement-lab",
+          label: "Establish the 1-kilogram benchmark",
+          model: "kilogram-balance",
+          leftLabel: "1 kg standard",
+          rightLabel: "rice bag balanced to 1 kg",
+          equation: "1 kg = 1,000 g",
+          rows: [
+            { left: "Compare", right: "Both pans balance at the same mass." },
+            { left: "Name the whole", right: "The rice bag is one kilogram." }
+          ],
+          caption: "The balance establishes the whole before it is decomposed."
+        },
+        {
+          kind: "measurement-lab",
+          label: "Decompose 1 kilogram",
+          model: "kilogram-decompose",
+          wholeLabel: "1 kg",
+          wholeDetail: "1,000 grams",
+          partLabel: "100 g",
+          equation: "1,000 g = 10 × 100 g",
+          rows: [{ left: "10 equal parts", right: "each part is 100 g" }],
+          caption: "One whole kilogram becomes ten equal 100-gram units."
+        },
+        {
+          kind: "measurement-lab",
+          label: "Keep decomposing by tens",
+          model: "kilogram-place-value",
+          rows: [
+            { left: "100 g", right: "10 × 10 g" },
+            { left: "10 g", right: "10 × 1 g" },
+            { left: "1 kg", right: "1,000 × 1 g" }
+          ],
+          equation: "1 kg → 1,000 g → 10 hundreds → 100 tens → 1,000 ones",
+          caption: "Each split makes ten equal units and mirrors base-ten place value."
+        }
+      ]
+    },
     focus: [
       "1 kilogram",
       "100 grams",

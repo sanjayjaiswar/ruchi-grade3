@@ -599,6 +599,10 @@ function applyTeacherPrompt(lessonNumber: number, item: ProblemSetCenteredProble
 }
 
 function createM2ProblemVisual(seed: ProblemSetCenteredProblem | ProblemSeed, solved: boolean): ProblemVisualSpec {
+  const exactLesson11ProblemOne = makeExactLesson11ProblemOneVisual(seed, solved);
+  if (exactLesson11ProblemOne) {
+    return exactLesson11ProblemOne;
+  }
   const exactTopicDProblemOne = makeExactTopicDProblemOneVisual(seed, solved);
   if (exactTopicDProblemOne) {
     return exactTopicDProblemOne;
@@ -709,6 +713,63 @@ function createM2ProblemVisual(seed: ProblemSetCenteredProblem | ProblemSeed, so
     title: `Problem ${seed.number}: ${m2VisualTitle(seed)}`,
     sourceNote,
     sections
+  };
+}
+
+/**
+ * Lesson 11 Problem 1 is a two-stage tape relationship, not a repeated-groups
+ * tape.  The first subtraction finds the missing part of a 671 g whole; the
+ * second compares that 558 g part with the 113 g jar.  Keeping this exact model
+ * here prevents the generic tape fallback from repeating "558 g" in every box.
+ */
+function makeExactLesson11ProblemOneVisual(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean
+): ProblemVisualSpec | undefined {
+  const lower = seed.sourcePrompt.toLowerCase();
+  if (!/can of tomatoes/.test(lower) || !/671 grams/.test(lower) || !/113 grams/.test(lower)) {
+    return undefined;
+  }
+
+  return {
+    title: 'Problem 1: whole-part and comparison tapes',
+    sourceNote: solved
+      ? 'Solved values follow the Module 2 Teacher Edition Lesson 11 Answer Key.'
+      : 'Blank tapes preserve the two different relationships in the Teacher Edition prompt.',
+    sections: [
+      {
+        kind: 'tape',
+        label: 'a. Find the can weight from the 671 g whole',
+        totalLabel: '671 g total',
+        parts: [
+          { label: '113 g', sublabel: 'baby-food jar' },
+          { label: solved ? '558 g' : '', sublabel: 'can of tomatoes', emphasize: true }
+        ],
+        caption: solved ? '671 g − 113 g = 558 g' : '671 g − 113 g = ____ g'
+      },
+      {
+        kind: 'tape',
+        label: 'b. Compare the 558 g can with the 113 g jar',
+        totalLabel: solved ? 'can: 558 g' : 'can: ____ g',
+        parts: [
+          { label: '113 g', sublabel: 'same as jar' },
+          { label: solved ? '445 g' : '', sublabel: 'how much more', emphasize: true }
+        ],
+        caption: solved ? '558 g − 113 g = 445 g' : '____ g − 113 g = ____ g'
+      },
+      {
+        kind: 'equations',
+        label: solved ? 'Checked equations' : 'Student equations',
+        lines: solved ? ['671 − 113 = 558', '558 − 113 = 445'] : ['671 − 113 = ____', '____ − 113 = ____']
+      },
+      {
+        kind: 'note',
+        label: solved ? 'Answer meaning' : 'Model check',
+        text: solved
+          ? 'The can weighs 558 grams and is 445 grams heavier than the jar.'
+          : 'The first unknown is a missing part. The second unknown is a comparison difference.'
+      }
+    ]
   };
 }
 
@@ -3082,6 +3143,30 @@ function timeLineRangeLabel(seed: TimeLineProblemSeed): string {
   return `${start}-${end}`;
 }
 
+const M2_CONCEPT_CHECKPOINTS: Record<number, string[]> = {
+  1: ['Experience 1, 5, and 40 seconds with a stopwatch.', 'Distinguish seconds from minutes.', 'Explain that stopping the stopwatch stops measurement, not time.'],
+  2: ['Build 60 minutes as 12 equal intervals of 5.', 'Count spaces as intervals rather than tick marks.', 'Connect the straight 0-60 line to the same scale wrapped around a clock.'],
+  3: ['Count by fives to the nearest benchmark below the target.', 'Count the remaining one-minute intervals.', 'Transfer the exact minute position from the line to the circular clock.'],
+  4: ['Identify whether start, end, or elapsed time is unknown.', 'Choose forward or backward counting to match the unknown.', 'Use efficient benchmark jumps on both a number line and a clock.'],
+  5: ['Plot all known times on the same one-hour line.', 'Relate elapsed intervals as parts of a whole.', 'Use addition or subtraction to find the missing part, whole, start, or end.'],
+  6: ['Establish 1 kilogram with a physical pan balance.', 'Decompose 1 kg into 100 g, 10 g, and 1 g units by tens.', 'Connect metric decomposition to base-ten place value.'],
+  7: ['Determine the value of one spring-scale interval before reading.', 'Use 1 kg, 100 g, 10 g, and 1 g as mental benchmarks.', 'Estimate first, then check on the actual scale.'],
+  8: ['Read exact weights from the scales.', 'Draw the weight relationship with a tape diagram.', 'Choose addition, subtraction, multiplication, or division from the relationship.'],
+  9: ['Distinguish container capacity from the liquid volume currently inside.', 'Verify that capacity is conserved across container shapes.', 'Decompose 1 L into 100 mL, 10 mL, and 1 mL units.'],
+  10: ['Build the bottle scale with ten equal 100 mL pours.', 'Treat the calibrated bottle as a vertical number line.', 'Read hundreds exactly and estimate positions between marks.'],
+  11: ['Keep like metric units together.', 'Model the whole, parts, comparison, or equal groups before operating.', 'Use all four operations and check the answer in context.'],
+  12: ['Name the two tens surrounding the measured value.', 'Locate the halfway value and apply the halfway-rounds-up convention.', 'Keep the original measurement separate from its rounded estimate.'],
+  13: ['Use the same nearest-ten structure for two- and three-digit numbers.', 'Label lower ten, halfway, upper ten, and target on a vertical line.', 'Explain the rounded value with distance, not a memorized digit rule alone.'],
+  14: ['Name the two hundreds and the halfway hundred.', 'Round three- and four-digit numbers on a vertical line.', 'Connect standard form with unit form such as 1,900 = 19 hundreds.'],
+  15: ['Model the addends with place-value disks.', 'Compose 10 ones as 1 ten exactly once.', 'Connect the physical trade to the written standard algorithm.'],
+  16: ['Compose ones into a ten.', 'Compose tens into a hundred in the same problem.', 'Record both compositions accurately in the standard algorithm.'],
+  17: ['Compare estimates made with more than one rounding precision.', 'Track whether each addend rounds up or down.', 'Explain how opposing addition errors can balance before checking the actual sum.'],
+  18: ['Identify the one place that needs a larger unit.', 'Unbundle one hundred or ten with place-value disks.', 'Match the decomposition to the written subtraction algorithm.'],
+  19: ['Decompose across two places when necessary.', 'Handle a zero by unbundling from the next available place.', 'Check that every place is ready before subtracting.'],
+  20: ['Compare estimated and actual differences.', 'Explain why same-direction rounding tends to preserve a difference.', 'Contrast subtraction error behavior with the balancing pattern for addition.'],
+  21: ['Measure the source masses, lengths, and liquid volumes.', 'Round, estimate, and then solve using the exact measurements.', 'Use the estimate-to-exact gap to justify reasonableness.']
+};
+
 function lesson(seed: LessonSeed): ProblemSetCenteredLesson {
   const sourcePageImages = teacherProblemSetPageImages(seed.lessonNumber);
   const answerKeyImages = teacherAnswerKeyPageImages(seed.lessonNumber);
@@ -3101,7 +3186,7 @@ function lesson(seed: LessonSeed): ProblemSetCenteredLesson {
         title: '1. Teacher Edition concept',
         body: seed.concept,
         teacherSource: `${TEACHER_SOURCE}, Lesson ${seed.lessonNumber} Concept Development.`,
-        checkpoints: ['Name the measurement unit.', 'Use the lesson model before calculating.', 'Check whether the answer is reasonable.']
+        checkpoints: M2_CONCEPT_CHECKPOINTS[seed.lessonNumber]
       },
       {
         title: '2. Official Problem Set',
@@ -3591,7 +3676,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
   4: lesson({
     lessonNumber: 4,
     title: 'elapsed time within 1 hour',
-    concept: 'Elapsed-time problems ask for start time, end time, or the time interval.',
+    concept: 'Elapsed-time stories vary the unknown: start time, end time, or elapsed minutes. The Teacher Edition first plots 5:31 p.m. and 5:43 p.m., then compares efficient forward and backward counts on both a number line and a clock.',
     contrast: 'Identify which part is unknown before counting forward or backward.',
     summary: 'A number line supports elapsed-time addition and subtraction.',
     problems: [
@@ -3764,7 +3849,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
   5: lesson({
     lessonNumber: 5,
     title: 'add and subtract time intervals',
-    concept: 'Time intervals can be totaled, compared, or used to find a missing part.',
+    concept: 'Time intervals are parts of a one-hour whole. Plot the known times, then add parts to find a total or subtract a known part from the whole to find the missing interval.',
     contrast: 'Use addition for total time and subtraction for missing or comparison time.',
     summary: 'Time interval stories use the same part-whole logic as other measurement stories.',
     problems: [
@@ -3989,7 +4074,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
   7: lesson({
     lessonNumber: 7,
     title: 'estimate weights with benchmarks',
-    concept: 'Use benchmark weights to decide whether grams or kilograms are reasonable.',
+    concept: 'First determine the value of each spring-scale interval; different scales can count by 500 g, 200 g, 100 g, or 20 g. Then use 1 kg, 100 g, 10 g, and 1 g benchmarks to estimate and check familiar objects.',
     contrast: 'Light objects use grams; heavier familiar objects use kilograms.',
     summary: 'A benchmark estimate should be checked against an actual scale weight.',
     problems: [
@@ -4034,7 +4119,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
   8: lesson({
     lessonNumber: 8,
     title: 'metric weight word problems',
-    concept: 'Use scale readings, tape diagrams, and operation meanings to solve weight problems.',
+    concept: 'Read exact scale weights, estimate mentally, and use a tape diagram to distinguish joining, comparing, equal groups, and sharing. The operation follows the weight relationship, not a keyword.',
     contrast: 'Estimate first, then verify the exact answer is reasonable.',
     summary: 'Metric weight problems use addition, subtraction, multiplication, and division in context.',
     problems: [
@@ -4099,7 +4184,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
   11: lesson({
     lessonNumber: 11,
     title: 'mixed metric word problems',
-    concept: 'When units match, metric stories can use all four operations.',
+    concept: 'When metric units match, model the whole, parts, comparison, or equal groups before choosing addition, subtraction, multiplication, or division. Use place-value and mental strategies to simplify the calculation.',
     contrast: 'Identify total, part, comparison, or equal groups before choosing the operation.',
     summary: 'Model the relationship, compute, and state the unit.',
     problems: [
@@ -4368,7 +4453,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
   17: lesson({
     lessonNumber: 17,
     title: 'estimate sums by rounding',
-    concept: 'Rounded addends estimate a sum; actual sums validate the estimate.',
+    concept: 'Compare estimates made by rounding to hundreds, tens, and fifties. For addition, the closest estimate often occurs when one rounding error moves up and the other moves down so the errors balance.',
     contrast: 'Compare the estimate and actual sum to judge closeness.',
     summary: 'Use rounding to estimate, then exact addition to solve.',
     problems: [
@@ -4418,7 +4503,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
   21: lesson({
     lessonNumber: 21,
     title: 'estimate and solve mixed measurement problems',
-    concept: 'Mixed problems combine measuring, rounding, addition, subtraction, and reasonableness checks.',
+    concept: 'Measure real masses, lengths, and liquid volumes; round the measured values; estimate; solve with the exact values; and use the gap between estimate and exact answer as evidence of reasonableness.',
     contrast: 'Use rounded values for estimates and exact values for final answers.',
     summary: 'Round first when asked, then solve exactly and explain reasonableness.',
     problems: [

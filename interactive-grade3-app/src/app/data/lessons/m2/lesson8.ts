@@ -12,6 +12,48 @@ export const M2_LESSON8_RUNTIME: LessonRuntimeConfig = {
     context: "Read or estimate the weight, draw the tape diagram, then choose the operation.",
     equation: "read -> draw -> operate -> label kg or g",
     teacherPrompt: "How did your tape diagrams change in Problems 2(a) and 2(b)?",
+    conceptVisual: {
+      title: "Read the scale, model the relationship, then choose the operation",
+      sourceNote: "Teacher Edition Lesson 8, Concept Development and Problem Set (pages 96-97).",
+      sections: [
+        {
+          kind: "measurement-model",
+          label: "Problem 1: exact scale readings",
+          model: "mass",
+          unitLabel: "g",
+          referenceLabel: "Read the pointer against the gram intervals",
+          maxValue: 500,
+          values: [
+            { label: "string beans", value: 464, valueLabel: "464 g", tone: "target" },
+            { label: "grapes", value: 355, valueLabel: "355 g", tone: "given" }
+          ],
+          steps: ["Estimate before reading.", "Use the scale intervals for the exact value.", "Write grams with each reading."],
+          note: "The scale—not the drawing size—is the evidence."
+        },
+        {
+          kind: "tape",
+          label: "Problem 2a: join two weights",
+          totalLabel: "78 kg altogether",
+          parts: [{ label: "35 kg", sublabel: "Keiko" }, { label: "43 kg", sublabel: "Jiro", emphasize: true }],
+          caption: "35 kg + 43 kg = 78 kg"
+        },
+        {
+          kind: "tape",
+          label: "Problem 2b: compare the same weights",
+          totalLabel: "Jiro: 43 kg",
+          parts: [{ label: "35 kg", sublabel: "same as Keiko" }, { label: "8 kg", sublabel: "how much heavier", emphasize: true }],
+          caption: "43 kg − 35 kg = 8 kg"
+        },
+        {
+          kind: "card-grid",
+          label: "Problems 3-4: estimate equal groups and shares",
+          cards: [
+            { label: "3 houseplants", sections: [{ kind: "tape", totalLabel: "about 15 kg", parts: [{ label: "5 kg" }, { label: "5 kg" }, { label: "5 kg" }], caption: "3 × 5 kg = 15 kg" }] },
+            { label: "Jane's share", sections: [{ kind: "equations", lines: ["27 kg ÷ 9 = 3 kg", "7 × 3 kg = 21 kg"] }, { kind: "note", text: "Share first; then use Jane's share as one pumpkin estimate." }] }
+          ]
+        }
+      ]
+    },
     focus: [
       "gram",
       "kilogram",

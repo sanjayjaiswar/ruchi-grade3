@@ -59,6 +59,13 @@ export type LessonAnimationModel = {
   context: string;
   equation: string;
   teacherPrompt: string;
+  /**
+   * A source-authored concept model rendered by the shared visual workspace.
+   * Use this when the lesson needs more than the legacy single-track animation
+   * (for example a stopwatch plus timeline, a scale plus tape diagram, or a
+   * physical measurement tool plus a vertical rounding line).
+   */
+  conceptVisual?: ProblemVisualSpec;
   groupCount?: number;
   groupSize?: number;
   rowCount?: number;
@@ -135,6 +142,33 @@ export type LessonAnimationModel = {
   }>;
   numberLineLabels?: string[];
   numberLineJumps?: string[];
+  timeLineModel?: {
+    ariaLabel: string;
+    startLabel: string;
+    endLabel: string;
+    segments: Array<{
+      from: string;
+      to: string;
+      minutes: number;
+      label: string;
+      unit: 'seconds' | 'minutes';
+      emphasis?: 'benchmark' | 'ones' | 'unknown';
+    }>;
+    unknownCases?: Array<{
+      label: string;
+      known: string;
+      unknown: string;
+      equation: string;
+    }>;
+  };
+  containerScaleModel?: {
+    capacityLabel: string;
+    intervalLabel: string;
+    ticks: Array<{
+      value: string;
+      major?: boolean;
+    }>;
+  };
   numberLineExamples?: Array<{
     label: string;
     lower: string;
@@ -175,6 +209,13 @@ export type LessonAnimationModel = {
   placeValueSubtraction?: PlaceValueSubtractionModel;
   clockLabels?: string[];
   measurementTicks?: string[];
+  springScaleModels?: Array<{
+    label: string;
+    intervalLabel: string;
+    ticks: string[];
+    pointerIndex: number;
+    reading: string;
+  }>;
   areaRows?: number;
   areaColumns?: number;
   fractionPartCount?: number;

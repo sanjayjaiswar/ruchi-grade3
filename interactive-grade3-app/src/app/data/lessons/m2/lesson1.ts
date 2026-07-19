@@ -9,21 +9,68 @@ export const M2_LESSON1_RUNTIME: LessonRuntimeConfig = {
     "stopwatch"
   ],
   lessonAnimation: {
-    kind: "clock",
+    kind: "number-line",
     title: "Lesson 1 animation: stopwatch seconds measure continuous time",
     context: "The Teacher Edition uses a stopwatch to feel 1 second, 5 seconds, and 40 seconds before students measure their own short activities.",
-    equation: "8 shoes x 5 seconds = 40 seconds",
+    equation: "0 s → 1 s → 5 s → 40 s; stopping the stopwatch does not stop time",
     teacherPrompt: "Does time stop when we stop the stopwatch, or do we only stop measuring?",
+    conceptVisual: {
+      title: "A stopwatch measures an interval while time keeps moving",
+      sourceNote: "Teacher Edition Lesson 1, Concept Development Parts 1-3 (pages 13-15).",
+      sections: [
+        {
+          kind: "stopwatch-workspace",
+          label: "Feel and measure seconds",
+          prompt: "Watch the hand travel continuously. Start and stop the measurement around a short activity.",
+          startLabel: "start: 0 seconds",
+          elapsedLabel: "continuous time",
+          stopLabel: "stop: recorded seconds",
+          sampleWork: ["1 second is a short unit.", "5 seconds is five equal one-second intervals.", "At 40 seconds, the stopwatch can stop measuring but time continues."],
+          note: "Record both a number and the unit seconds."
+        },
+        {
+          kind: "time-number-line",
+          label: "The measured interval is continuous",
+          startLabel: "0 seconds",
+          endLabel: "40 seconds and continuing",
+          displayStartMinute: 0,
+          displayEndMinute: 40,
+          tickLabels: ["0", "5", "10", "15", "20", "25", "30", "35", "40"],
+          labelEvery: 1,
+          points: [
+            { label: "1 s", minute: 1, detail: "feel one second" },
+            { label: "5 s", minute: 5, detail: "feel five seconds" },
+            { label: "40 s", minute: 40, detail: "observe forty seconds" }
+          ],
+          jumps: [
+            { label: "5 one-second intervals", fromMinute: 0, toMinute: 5 },
+            { label: "35 more seconds", fromMinute: 5, toMinute: 40 }
+          ],
+          showPointDetails: false,
+          note: "Stopping the tool ends the recorded interval; it does not stop time."
+        }
+      ]
+    },
     focus: [
       "Seconds measure short amounts of time.",
       "Minutes are longer than seconds.",
       "A stopwatch starts and stops measurement, not time.",
       "Every recorded answer needs a number and the unit seconds."
     ],
-    clockLabels: [
-      "1 sec",
-      "5 sec",
-      "40 sec"
+    timeLineModel: {
+      ariaLabel: "Continuous stopwatch timeline from zero to forty seconds",
+      startLabel: "start measuring",
+      endLabel: "time continues",
+      segments: [
+        { from: "0 s", to: "1 s", minutes: 1, label: "feel 1 second", unit: "seconds", emphasis: "ones" },
+        { from: "1 s", to: "5 s", minutes: 4, label: "feel 5 seconds", unit: "seconds", emphasis: "benchmark" },
+        { from: "5 s", to: "40 s", minutes: 35, label: "observe 40 seconds", unit: "seconds", emphasis: "benchmark" }
+      ]
+    },
+    conceptSteps: [
+      { label: "Feel the unit", action: "Experience 1 second, then 5 seconds, without guessing from a clock face.", result: "A second becomes a measurable unit." },
+      { label: "Measure", action: "Start and stop the stopwatch around a real activity.", result: "The recorded interval is an elapsed amount of time." },
+      { label: "Keep time continuous", action: "Stop the stopwatch after the activity.", result: "Only the measurement stops; time keeps moving." }
     ]
   },
 

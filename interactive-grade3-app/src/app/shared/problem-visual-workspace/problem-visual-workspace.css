@@ -3318,44 +3318,10 @@
   font-weight: 700;
 }
 
+/* The stopwatch face is already the visual asset. Keep it instructional and
+   avoid platform-dependent emoji that change style and size across browsers. */
 .visual-stopwatch-face::after {
-  position: absolute;
-  right: -10px;
-  bottom: -10px;
-  display: grid;
-  width: 38px;
-  aspect-ratio: 1;
-  place-items: center;
-  border: 2px solid #d2d9e6;
-  border-radius: 999px;
-  background: #ffffff;
-  font-size: 21px;
-  line-height: 1;
-  box-shadow: 0 2px 6px rgba(60, 64, 67, 0.14);
-}
-
-.visual-stopwatch-face.is-snap::after {
-  content: "🫰";
-}
-
-.visual-stopwatch-face.is-numbers::after {
-  content: "🔢";
-}
-
-.visual-stopwatch-face.is-animals::after {
-  content: "🐶";
-}
-
-.visual-stopwatch-face.is-equation::after {
-  content: "✏️";
-}
-
-.visual-stopwatch-face.is-activity::after {
-  content: "🏃";
-}
-
-.visual-stopwatch-face.is-relay::after {
-  content: "🏁";
+  content: none !important;
 }
 
 .visual-stopwatch-face .tick-0 {

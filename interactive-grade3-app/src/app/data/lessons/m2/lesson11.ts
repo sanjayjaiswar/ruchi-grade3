@@ -13,6 +13,39 @@ export const M2_LESSON11_RUNTIME: LessonRuntimeConfig = {
     context: "Use the story relationship to choose add, subtract, multiply, or divide while keeping the same unit.",
     equation: "model -> operate -> label grams, kilograms, liters, or milliliters",
     teacherPrompt: "What models did you use to solve the word problems?",
+    conceptVisual: {
+      title: "Use the relationship—not a keyword—to select the operation",
+      sourceNote: "Teacher Edition Lesson 11, Concept Development and Problem Set (pages 127-128).",
+      sections: [
+        {
+          kind: "tape",
+          label: "Problem 1a: find the missing part",
+          totalLabel: "671 g total",
+          parts: [{ label: "113 g", sublabel: "baby-food jar" }, { label: "558 g", sublabel: "can of tomatoes", emphasize: true }],
+          caption: "671 g − 113 g = 558 g"
+        },
+        {
+          kind: "tape",
+          label: "Problem 1b: compare the two parts",
+          totalLabel: "can: 558 g",
+          parts: [{ label: "113 g", sublabel: "same as jar" }, { label: "445 g", sublabel: "how much more", emphasize: true }],
+          caption: "558 g − 113 g = 445 g"
+        },
+        {
+          kind: "measurement-lab",
+          label: "All four operations appear in the lesson",
+          model: "mixed-operation",
+          rows: [
+            { left: "10 pens", right: "10 × 6 g = 60 g; then 60 g + 82 g = 142 g" },
+            { left: "frozen turkeys", right: "45 kg ÷ 5 kg = 9 turkeys" },
+            { left: "triple recipe", right: "3 × 300 mL = 900 mL" },
+            { left: "water container", right: "3 × 4 L + 2 L = 14 L" }
+          ],
+          equation: "whole/part → add or subtract; equal groups → multiply or divide",
+          caption: "Keep the measurement unit attached until the context changes the answer unit."
+        }
+      ]
+    },
     focus: [
       "gram",
       "kilogram",

@@ -11,7 +11,49 @@ export const M2_LESSON9_RUNTIME: LessonRuntimeConfig = {
     title: "Lesson 9 animation: decompose a liter into milliliters",
     context: "Use container capacity to show 1 liter, then split it into 10 equal 100-milliliter parts.",
     equation: "1 L = 1,000 mL; 1,000 mL = 10 x 100 mL",
-    teacherPrompt: "Revisit predictions from Part 1. Lead a discussion about why students may have thought taller containers had larger capacities. Guide students to articu.",
+    teacherPrompt: "Revisit the predictions. Explain why a taller container does not necessarily have a larger capacity; measured volume is the evidence.",
+    conceptVisual: {
+      title: "Measure capacity, then decompose one liter by tens",
+      sourceNote: "Teacher Edition Lesson 9, Concept Development Parts 1-2 (pages 106-107).",
+      sections: [
+        {
+          kind: "measurement-model",
+          label: "Predict, pour, and measure",
+          model: "liquid",
+          unitLabel: "mL",
+          referenceLabel: "Different shapes can hold the same capacity",
+          maxValue: 1200,
+          values: [
+            { label: "short and wide container", value: 1000, valueLabel: "measure actual capacity", tone: "benchmark" },
+            { label: "tall and narrow container", value: 1000, valueLabel: "measure actual capacity", tone: "estimate" },
+            { label: "1-liter benchmark", value: 1000, valueLabel: "1 L", tone: "target" }
+          ],
+          steps: ["Predict less than, about, or more than 1 L.", "Measure the actual capacity.", "Revise the prediction using evidence."],
+          note: "Height alone does not determine capacity."
+        },
+        {
+          kind: "measurement-lab",
+          label: "Decompose 1 liter into ten equal units",
+          model: "liquid-decompose",
+          wholeLabel: "1 L",
+          wholeDetail: "1,000 mL",
+          partLabel: "100 mL",
+          equation: "1,000 mL = 10 × 100 mL",
+          rows: [{ left: "whole", right: "1 liter" }, { left: "ten equal parts", right: "100 milliliters each" }],
+          caption: "The capacity is conserved when the liter is poured into ten equal units."
+        },
+        {
+          kind: "data-table",
+          label: "Parallel base-ten decompositions",
+          columns: ["Whole", "10 equal parts", "100 equal parts", "1,000 equal parts"],
+          rows: [
+            ["1 L", "10 × 100 mL", "100 × 10 mL", "1,000 × 1 mL"],
+            ["1 kg", "10 × 100 g", "100 × 10 g", "1,000 × 1 g"]
+          ]
+        },
+        { kind: "equations", label: "Water link", lines: ["1 L water = 1 kg", "1 mL water = 1 g"] }
+      ]
+    },
     focus: [
       "decompose",
       "liter",

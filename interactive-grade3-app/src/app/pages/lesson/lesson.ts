@@ -483,45 +483,74 @@ export class LessonPage implements OnInit, AfterViewChecked {
         '.lesson-animation-area-grid span',
         '.lesson-animation-fraction-strip span',
         '.lesson-animation-graph-bars i',
-        '.lesson-animation-polygon span'
+        '.lesson-animation-polygon span',
+        '.problem-visual-workspace .visual-section',
+        '.problem-visual-workspace .visual-stopwatch-face',
+        '.problem-visual-workspace .visual-tape span',
+        '.problem-visual-workspace .visual-number-line span',
+        '.problem-visual-workspace .visual-measurement-lab .kg-pan',
+        '.problem-visual-workspace .visual-measurement-lab .kg-ten-frame span',
+        '.problem-visual-workspace .workspace-library-clock'
       ].join(', ')
     );
     const equations = host.querySelectorAll<HTMLElement>(
       '.lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li'
     );
 
-    animate(conceptPanels, {
-      opacity: keepTextOpaque ? 1 : [0, 1],
-      translateY: [12, 0],
-      duration: keepTextOpaque ? 300 : 520,
-      delay: stagger(45),
-      ease: 'out(3)'
-    });
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reducedMotion) {
+      [...conceptPanels, ...tabs, ...lessonModels, ...equations].forEach((element) => {
+        element.style.opacity = '1';
+        element.style.removeProperty('transform');
+      });
+      return;
+    }
 
-    animate(tabs, {
-      opacity: keepTextOpaque ? 1 : [0.55, 1],
-      scale: [0.96, 1],
-      duration: 360,
-      delay: stagger(24),
-      ease: 'out(3)'
-    });
+    if (conceptPanels.length) {
+      animate(conceptPanels, {
+        opacity: keepTextOpaque ? 1 : [0, 1],
+        translateY: [12, 0],
+        duration: keepTextOpaque ? 300 : 520,
+        delay: stagger(45),
+        ease: 'out(3)'
+      });
+    }
 
-    animate(lessonModels, {
-      opacity: keepTextOpaque ? 1 : [0.25, 1],
-      scale: [0.82, 1],
-      translateY: [8, 0],
-      duration: 650,
-      delay: stagger(28, { from: 'first' }),
-      ease: 'out(4)'
-    });
+    if (tabs.length) {
+      animate(tabs, {
+        opacity: keepTextOpaque ? 1 : [0.55, 1],
+        scale: [0.96, 1],
+        duration: 360,
+        delay: stagger(24),
+        ease: 'out(3)'
+      });
+    }
 
-    animate(equations, {
-      opacity: keepTextOpaque ? 1 : [0, 1],
-      translateX: [-8, 0],
-      duration: 460,
-      delay: stagger(35),
-      ease: 'out(3)'
-    });
+    if (lessonModels.length) {
+      animate(lessonModels, {
+        opacity: keepTextOpaque ? 1 : [0.25, 1],
+        scale: [0.82, 1],
+        translateY: [8, 0],
+        duration: 650,
+        delay: stagger(28, { from: 'first' }),
+        ease: 'out(4)'
+      });
+    }
+
+    if (equations.length) {
+      animate(equations, {
+        opacity: keepTextOpaque ? 1 : [0, 1],
+        translateX: [-8, 0],
+        duration: 460,
+        delay: stagger(35),
+        ease: 'out(3)'
+      });
+    }
+  }
+
+  replayLessonConceptAnimation(): void {
+    this.lessonConceptAnimationSignature = '';
+    requestAnimationFrame(() => this.playLessonConceptAnimation());
   }
 
   private updateLessonLibraryClocks(): void {
@@ -654,10 +683,10 @@ export class LessonPage implements OnInit, AfterViewChecked {
     if (this.module.id === 'm2' && lessonNumber >= 1 && lessonNumber <= 5) {
       return {
         ...frame,
-        title: 'Time is measured on clocks and time number lines',
-        bigIdea: 'These lessons read analog clocks, use benchmarks, and show elapsed time as equal jumps from a start time to an end time.',
-        modelLabel: 'clock -> time line -> elapsed time',
-        studentQuestion: 'Where does the time start, and how many minute jumps reach the end?',
+        title: 'Time is continuous and intervals can be represented',
+        bigIdea: 'These lessons connect a running stopwatch, an unwrapped clock, and time number lines so students can measure seconds, compose minutes, and solve for a missing start, end, or elapsed time.',
+        modelLabel: 'stopwatch -> unwrapped clock -> time line -> unknown time',
+        studentQuestion: 'What is known, what time quantity is unknown, and which intervals connect them?',
         visual: lessonNumber <= 3 ? 'clock-time' : 'elapsed-time-line',
         transform: {
           from: 'start time',
@@ -665,14 +694,16 @@ export class LessonPage implements OnInit, AfterViewChecked {
           to: 'end time and elapsed minutes'
         },
         lessonBands: [
-          { label: 'Read', lessons: 'L1-L2', start: 1, end: 2, focus: 'analog clock hands and minutes' },
-          { label: 'Elapsed', lessons: 'L3-L4', start: 3, end: 4, focus: 'jumps on a time line' },
-          { label: 'Solve', lessons: 'L5', start: 5, end: 5, focus: 'time word problems' }
+          { label: 'Seconds', lessons: 'L1', start: 1, end: 1, focus: 'continuous stopwatch intervals' },
+          { label: 'Unwrap', lessons: 'L2', start: 2, end: 2, focus: 'twelve 5-minute intervals' },
+          { label: 'Exact', lessons: 'L3', start: 3, end: 3, focus: 'compose minutes with fives and ones' },
+          { label: 'Elapsed', lessons: 'L4', start: 4, end: 4, focus: 'start, end, and elapsed unknowns' },
+          { label: 'Parts', lessons: 'L5', start: 5, end: 5, focus: 'add and subtract time intervals' }
         ],
         teacherLookFor: [
-          'The hour and minute hands are read together.',
-          'Elapsed time is counted by intervals.',
-          'The answer is written in minutes or clock time as requested.'
+          'Each interval is measured from one endpoint to the next.',
+          'Number-line jumps preserve the actual size of the time intervals.',
+          'The equation and unit match the unknown: start, end, or elapsed time.'
         ]
       };
     }

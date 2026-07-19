@@ -26,20 +26,23 @@ export const M2_LESSON17_RUNTIME: LessonRuntimeConfig = {
           label: "nearest hundred",
           roundedExpression: "400 + 200",
           estimate: 600,
-          error: 79
+          error: 79,
+          movement: "both addends round up; errors combine"
         },
         {
           label: "nearest ten",
           roundedExpression: "360 + 160",
           estimate: 520,
           error: 1,
+          movement: "one down 2 and one up 1; errors nearly balance",
           best: true
         },
         {
           label: "nearest fifty",
           roundedExpression: "350 + 150",
           estimate: 500,
-          error: 21
+          error: 21,
+          movement: "both addends round down; errors combine"
         }
       ]
     },
@@ -55,9 +58,9 @@ export const M2_LESSON17_RUNTIME: LessonRuntimeConfig = {
         result: "The actual sum is 521."
       },
       {
-        label: "Compare error",
-        action: "Measure how far each estimate is from 521.",
-        result: "520 is closest; rounding to fifties is also reasonably close and easy."
+        label: "Explain the error",
+        action: "Track whether each addend rounds up or down before comparing with 521.",
+        result: "The 520 estimate is closest because one error moves down and the other moves up, so the errors nearly balance."
       }
     ]
   },

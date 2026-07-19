@@ -671,7 +671,9 @@
             <div class="m2-l6-lab-copy">
               <span class="eyebrow">Teacher Edition lab path</span>
               <h3>Round by locating the number between two benchmarks.</h3>
-              <p>Lessons 12-14 use vertical number lines: lower benchmark, halfway mark, upper benchmark, then the closest rounded value.</p>
+              <p *ngIf="lesson.lessonNumber === 12">Use two-digit measurements to locate the lower ten, halfway value, and upper ten.</p>
+              <p *ngIf="lesson.lessonNumber === 13">Extend the same nearest-ten structure from two-digit to three-digit numbers.</p>
+              <p *ngIf="lesson.lessonNumber === 14">Change the unit to hundreds: lower hundred, 50 more as halfway, and upper hundred.</p>
             </div>
             <div class="m2-topicb-story-card">
               <ol aria-label="Rounding sequence">
@@ -682,10 +684,24 @@
               </ol>
             </div>
             <div class="m2-topicb-card-grid" aria-label="Rounding benchmark examples">
-              <article><strong>73 mL</strong><span>nearest ten</span><b>70, 75, 80</b></article>
-              <article><strong>48 min</strong><span>nearest ten</span><b>rounds to 50 min</b></article>
-              <article><strong>132 g</strong><span>nearest hundred</span><b>100, 150, 200</b></article>
-              <article><strong>1,865</strong><span>hundreds</span><b>1,900 = 19 hundreds</b></article>
+              <ng-container *ngIf="lesson.lessonNumber === 12">
+                <article><strong>73 mL</strong><span>70, 75, 80</span><b>73 mL ≈ 70 mL</b></article>
+                <article><strong>48 min</strong><span>40, 45, 50</span><b>48 min ≈ 50 min</b></article>
+                <article><strong>61 cm</strong><span>60, 65, 70</span><b>61 cm ≈ 60 cm</b></article>
+                <article><strong>25 g</strong><span>exactly halfway</span><b>25 g ≈ 30 g</b></article>
+              </ng-container>
+              <ng-container *ngIf="lesson.lessonNumber === 13">
+                <article><strong>17</strong><span>10, 15, 20</span><b>17 ≈ 20</b></article>
+                <article><strong>117</strong><span>110, 115, 120</span><b>117 ≈ 120</b></article>
+                <article><strong>162</strong><span>160, 165, 170</span><b>162 ≈ 160</b></article>
+                <article><strong>28</strong><span>20, 25, 30</span><b>28 ≈ 30</b></article>
+              </ng-container>
+              <ng-container *ngIf="lesson.lessonNumber === 14">
+                <article><strong>132</strong><span>100, 150, 200</span><b>132 ≈ 100</b></article>
+                <article><strong>250</strong><span>exactly halfway</span><b>250 ≈ 300</b></article>
+                <article><strong>387</strong><span>300, 350, 400</span><b>387 ≈ 400</b></article>
+                <article><strong>1,865</strong><span>1,800, 1,850, 1,900</span><b>1,900 = 19 hundreds</b></article>
+              </ng-container>
             </div>
             <div class="m2-topicb-note-card">
               <strong>Teacher check</strong>
@@ -1634,13 +1650,21 @@
             [attr.data-kind]="animation.kind"
             aria-label="Teacher Edition visual model animation">
             <div class="lesson-animation-copy">
-              <span class="eyebrow">Teacher Edition visual model</span>
+              <div class="lesson-animation-heading-row">
+                <span class="eyebrow">Teacher Edition visual model</span>
+                <button class="lesson-animation-replay" type="button" (click)="replayLessonConceptAnimation()" aria-label="Replay the Teacher Edition concept animation">Replay animation</button>
+              </div>
               <h3>{{ animation.title }}</h3>
               <p>{{ animation.context }}</p>
               <div class="lesson-animation-equation">{{ animation.equation }}</div>
             </div>
 
             <div class="lesson-animation-stage">
+              <app-problem-visual-workspace
+                *ngIf="animation.conceptVisual as conceptVisual"
+                [spec]="conceptVisual"
+                mode="solved"></app-problem-visual-workspace>
+              <ng-container *ngIf="!animation.conceptVisual">
               <ng-container [ngSwitch]="animation.kind">
                 <div *ngSwitchCase="'equal-groups'" class="lesson-animation-groups" aria-label="Animated equal groups model">
                   <div class="lesson-animation-group" *ngFor="let group of lessonAnimationGroups">
@@ -1754,7 +1778,22 @@
                   class="lesson-animation-number-line"
                   [class.has-rounding-examples]="animation.numberLineExamples?.length"
                   aria-label="Animated number line model">
-                  <div class="lesson-animation-estimate-comparison" *ngIf="animation.estimateComparison as comparison">
+                  <div class="lesson-animation-time-line" *ngIf="animation.timeLineModel as timeModel" [attr.aria-label]="timeModel.ariaLabel">
+                    <div class="lesson-animation-time-endpoints"><strong>{{ timeModel.startLabel }}</strong><strong>{{ timeModel.endLabel }}</strong></div>
+                    <div class="lesson-animation-time-segments">
+                      <article *ngFor="let segment of timeModel.segments" [style.flexGrow]="segment.minutes" [class.is-benchmark]="segment.emphasis === 'benchmark'" [class.is-ones]="segment.emphasis === 'ones'" [class.is-unknown]="segment.emphasis === 'unknown'">
+                        <span>{{ segment.from }}</span><b>{{ segment.label }} {{ segment.unit }}</b><span>{{ segment.to }}</span>
+                      </article>
+                    </div>
+                    <div class="lesson-animation-time-cases" *ngIf="timeModel.unknownCases?.length">
+                      <article *ngFor="let unknownCase of timeModel.unknownCases"><strong>{{ unknownCase.label }}</strong><span>{{ unknownCase.known }}</span><em>{{ unknownCase.unknown }}</em><b>{{ unknownCase.equation }}</b></article>
+                    </div>
+                  </div>
+                  <div class="lesson-animation-container-scale" *ngIf="animation.containerScaleModel as scaleModel" [attr.aria-label]="scaleModel.capacityLabel">
+                    <header><strong>{{ scaleModel.capacityLabel }}</strong><span>{{ scaleModel.intervalLabel }}</span></header>
+                    <div class="lesson-animation-bottle"><span *ngFor="let tick of scaleModel.ticks" [class.is-major]="tick.major"><i></i><b>{{ tick.value }}</b></span></div>
+                  </div>
+                  <div class="lesson-animation-estimate-comparison" *ngIf="!animation.timeLineModel && !animation.containerScaleModel && animation.estimateComparison as comparison">
                     <header>
                       <strong>{{ comparison.expression }}</strong>
                       <span>actual = {{ comparison.actual }}</span>
@@ -1773,7 +1812,7 @@
                       <small>{{ strategy.movement ? strategy.movement + ' • ' : '' }}error {{ strategy.error }}</small>
                     </article>
                   </div>
-                  <ng-container *ngIf="!animation.estimateComparison">
+                  <ng-container *ngIf="!animation.timeLineModel && !animation.containerScaleModel && !animation.estimateComparison">
                     <ng-container *ngIf="animation.numberLineExamples?.length; else problemCenteredNumberLineDefault">
                       <div class="lesson-animation-rounding-cards">
                         <article *ngFor="let example of animation.numberLineExamples">
@@ -1817,7 +1856,14 @@
                   class="lesson-animation-measurement"
                   [class.has-place-value-addition]="animation.placeValueAddition"
                   aria-label="Animated measurement model">
-                  <div class="lesson-animation-place-value is-subtraction" *ngIf="animation.placeValueSubtraction as subtraction">
+                  <div class="lesson-animation-spring-scales" *ngIf="animation.springScaleModels?.length" aria-label="Spring scales with different interval values">
+                    <article *ngFor="let scale of animation.springScaleModels">
+                      <header><strong>{{ scale.label }}</strong><span>{{ scale.intervalLabel }}</span></header>
+                      <div class="lesson-animation-spring-track"><span *ngFor="let tick of scale.ticks; let tickIndex = index" [class.is-reading]="tickIndex === scale.pointerIndex"><i></i><b>{{ tick }}</b></span></div>
+                      <em>pointer reads {{ scale.reading }}</em>
+                    </article>
+                  </div>
+                  <div class="lesson-animation-place-value is-subtraction" *ngIf="!animation.springScaleModels?.length && animation.placeValueSubtraction as subtraction">
                     <div class="lesson-animation-pv-head" [style.gridTemplateColumns]="'auto repeat(' + subtraction.columns.length + ', minmax(54px, 1fr))'">
                       <span></span>
                       <b *ngFor="let column of subtraction.columns">{{ column }}</b>
@@ -1841,7 +1887,7 @@
                     </div>
                     <p>{{ subtraction.result }}</p>
                   </div>
-                  <ng-container *ngIf="!animation.placeValueSubtraction">
+                  <ng-container *ngIf="!animation.springScaleModels?.length && !animation.placeValueSubtraction">
                     <ng-container *ngIf="animation.placeValueAddition as addition; else problemCenteredMeasurementDefault">
                       <div class="lesson-animation-place-value">
                         <div class="lesson-animation-pv-head" [style.gridTemplateColumns]="'auto repeat(' + addition.columns.length + ', minmax(54px, 1fr))'">
@@ -1910,6 +1956,7 @@
                     <span *ngFor="let label of lessonAnimationGeometryLabels">{{ label }}</span>
                   </div>
                 </div>
+              </ng-container>
               </ng-container>
             </div>
 
@@ -2145,7 +2192,7 @@
           <section class="problem-source-pages is-teacher-source" *ngIf="conceptSourcePageImages(problemLesson).length" [attr.aria-label]="'Official Teacher Edition Problem Set pages for Module ' + module.number + ' Lesson ' + lesson.lessonNumber">
             <div class="source-pages-heading">
               <strong>Official Teacher Edition Problem Set pages</strong>
-              <span>{{ problemLesson.teacherEditionBasis }}</span>
+              <span>{{ problemLesson.sourceNote }}</span>
             </div>
             <div class="source-page-strip">
               <a
@@ -3318,18 +3365,18 @@
             </article>
           </section>
 
-          <section class="summary-check-grid" [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' validation checklist'">
+          <section class="summary-check-grid" [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' student takeaway'">
             <article>
-              <strong>{{ problemLessonUsesTeacherActivity(problemLesson) ? '1. Use the Teacher Edition activity' : hasConceptSourcePages(problemLesson) ? '1. Use the Teacher Edition problem set' : '1. Use the official source prompt' }}</strong>
-              <span>{{ problemLessonUsesTeacherActivity(problemLesson) ? 'Check the activity steps, materials, labels, and challenge units against the official Teacher Edition reference.' : hasConceptSourcePages(problemLesson) ? 'Check the prompt, diagram, labels, and blanks against the official Teacher Edition reference.' : 'Check the prompt, diagram, labels, and blanks against the official source reference.' }}</span>
+              <strong>1. Remember</strong>
+              <span>{{ problemLesson.concept }}</span>
             </article>
             <article>
-              <strong>2. Match the lesson strategy</strong>
-              <span>Use the Teacher Edition objective and debrief focus to validate the reasoning.</span>
+              <strong>2. Explain</strong>
+              <span>{{ problemLesson.contrast }}</span>
             </article>
             <article>
-              <strong>3. Avoid unsupported models</strong>
-              <span>Use an authored model only when the quantities and structure are clear from the source.</span>
+              <strong>3. Check</strong>
+              <span>{{ problemLesson.summary }}</span>
             </article>
           </section>
 
@@ -3367,13 +3414,21 @@
         [attr.data-kind]="animation.kind"
         aria-label="Lesson animation model">
         <div class="lesson-animation-copy">
-          <span class="eyebrow">Animation</span>
+          <div class="lesson-animation-heading-row">
+            <span class="eyebrow">Animation</span>
+            <button class="lesson-animation-replay" type="button" (click)="replayLessonConceptAnimation()" aria-label="Replay the lesson concept animation">Replay animation</button>
+          </div>
           <h3>{{ animation.title }}</h3>
           <p>{{ animation.context }}</p>
           <div class="lesson-animation-equation">{{ animation.equation }}</div>
         </div>
 
         <div class="lesson-animation-stage">
+          <app-problem-visual-workspace
+            *ngIf="animation.conceptVisual as conceptVisual"
+            [spec]="conceptVisual"
+            mode="solved"></app-problem-visual-workspace>
+          <ng-container *ngIf="!animation.conceptVisual">
           <ng-container [ngSwitch]="animation.kind">
             <div *ngSwitchCase="'equal-groups'" class="lesson-animation-groups" aria-label="Animated equal groups model">
               <div class="lesson-animation-group" *ngFor="let group of lessonAnimationGroups">
@@ -3454,7 +3509,22 @@
               class="lesson-animation-number-line"
               [class.has-rounding-examples]="animation.numberLineExamples?.length"
               aria-label="Animated number line model">
-              <div class="lesson-animation-estimate-comparison" *ngIf="animation.estimateComparison as comparison">
+              <div class="lesson-animation-time-line" *ngIf="animation.timeLineModel as timeModel" [attr.aria-label]="timeModel.ariaLabel">
+                <div class="lesson-animation-time-endpoints"><strong>{{ timeModel.startLabel }}</strong><strong>{{ timeModel.endLabel }}</strong></div>
+                <div class="lesson-animation-time-segments">
+                  <article *ngFor="let segment of timeModel.segments" [style.flexGrow]="segment.minutes" [class.is-benchmark]="segment.emphasis === 'benchmark'" [class.is-ones]="segment.emphasis === 'ones'" [class.is-unknown]="segment.emphasis === 'unknown'">
+                    <span>{{ segment.from }}</span><b>{{ segment.label }} {{ segment.unit }}</b><span>{{ segment.to }}</span>
+                  </article>
+                </div>
+                <div class="lesson-animation-time-cases" *ngIf="timeModel.unknownCases?.length">
+                  <article *ngFor="let unknownCase of timeModel.unknownCases"><strong>{{ unknownCase.label }}</strong><span>{{ unknownCase.known }}</span><em>{{ unknownCase.unknown }}</em><b>{{ unknownCase.equation }}</b></article>
+                </div>
+              </div>
+              <div class="lesson-animation-container-scale" *ngIf="animation.containerScaleModel as scaleModel" [attr.aria-label]="scaleModel.capacityLabel">
+                <header><strong>{{ scaleModel.capacityLabel }}</strong><span>{{ scaleModel.intervalLabel }}</span></header>
+                <div class="lesson-animation-bottle"><span *ngFor="let tick of scaleModel.ticks" [class.is-major]="tick.major"><i></i><b>{{ tick.value }}</b></span></div>
+              </div>
+              <div class="lesson-animation-estimate-comparison" *ngIf="!animation.timeLineModel && !animation.containerScaleModel && animation.estimateComparison as comparison">
                 <header>
                   <strong>{{ comparison.expression }}</strong>
                   <span>actual = {{ comparison.actual }}</span>
@@ -3473,7 +3543,7 @@
                 <small>{{ strategy.movement ? strategy.movement + ' • ' : '' }}error {{ strategy.error }}</small>
                 </article>
               </div>
-              <ng-container *ngIf="!animation.estimateComparison">
+              <ng-container *ngIf="!animation.timeLineModel && !animation.containerScaleModel && !animation.estimateComparison">
                 <ng-container *ngIf="animation.numberLineExamples?.length; else stepNumberLineDefault">
                   <div class="lesson-animation-rounding-cards">
                     <article *ngFor="let example of animation.numberLineExamples">
@@ -3517,7 +3587,14 @@
               class="lesson-animation-measurement"
               [class.has-place-value-addition]="animation.placeValueAddition"
               aria-label="Animated measurement model">
-              <div class="lesson-animation-place-value is-subtraction" *ngIf="animation.placeValueSubtraction as subtraction">
+              <div class="lesson-animation-spring-scales" *ngIf="animation.springScaleModels?.length" aria-label="Spring scales with different interval values">
+                <article *ngFor="let scale of animation.springScaleModels">
+                  <header><strong>{{ scale.label }}</strong><span>{{ scale.intervalLabel }}</span></header>
+                  <div class="lesson-animation-spring-track"><span *ngFor="let tick of scale.ticks; let tickIndex = index" [class.is-reading]="tickIndex === scale.pointerIndex"><i></i><b>{{ tick }}</b></span></div>
+                  <em>pointer reads {{ scale.reading }}</em>
+                </article>
+              </div>
+              <div class="lesson-animation-place-value is-subtraction" *ngIf="!animation.springScaleModels?.length && animation.placeValueSubtraction as subtraction">
                 <div class="lesson-animation-pv-head" [style.gridTemplateColumns]="'auto repeat(' + subtraction.columns.length + ', minmax(54px, 1fr))'">
                   <span></span><b *ngFor="let column of subtraction.columns">{{ column }}</b>
                 </div>
@@ -3536,7 +3613,7 @@
                 </div>
                 <p>{{ subtraction.result }}</p>
               </div>
-              <ng-container *ngIf="!animation.placeValueSubtraction">
+              <ng-container *ngIf="!animation.springScaleModels?.length && !animation.placeValueSubtraction">
                 <ng-container *ngIf="animation.placeValueAddition as addition; else stepMeasurementDefault">
                   <div class="lesson-animation-place-value">
                     <div class="lesson-animation-pv-head" [style.gridTemplateColumns]="'auto repeat(' + addition.columns.length + ', minmax(54px, 1fr))'">
@@ -3603,6 +3680,7 @@
                 <span *ngFor="let label of lessonAnimationGeometryLabels">{{ label }}</span>
               </div>
             </div>
+          </ng-container>
           </ng-container>
         </div>
 

@@ -6,21 +6,75 @@ export const M2_LESSON4_RUNTIME: LessonRuntimeConfig = {
     "number line"
   ],
   lessonAnimation: {
-    kind: "clock",
+    kind: "number-line",
     title: "Lesson 4 animation: Solve word problems involving time intervals within 1 h",
     context: "T: Look back at your work on today's Application Problem.",
-    equation: "1 sec start -> 60 sec elapsed -> 5 sec end",
+    equation: "5:31 p.m. + 12 minutes = 5:43 p.m.",
     teacherPrompt: "How are Problems 1 and 2 different? How did it affect the way you solved each problem?",
+    conceptVisual: {
+      title: "Match the time-story unknown to a clock and number-line model",
+      sourceNote: "Teacher Edition Lesson 4, Concept Development and Debrief (pages 50-52).",
+      sections: [
+        { kind: "clock", label: "Start time", timeLabel: "5:31 p.m.", timeValue: "5:31", caption: "Begin at the known start." },
+        {
+          kind: "time-number-line",
+          label: "Count 12 minutes forward efficiently",
+          startLabel: "5:31 p.m.",
+          endLabel: "5:43 p.m.",
+          displayStartMinute: 0,
+          displayEndMinute: 12,
+          tickLabels: ["5:31", "5:35", "5:40", "5:43"],
+          labelEvery: 1,
+          points: [
+            { label: "5:35", minute: 4 },
+            { label: "5:40", minute: 9 },
+            { label: "5:43", minute: 12 }
+          ],
+          jumps: [
+            { label: "+4 min", fromMinute: 0, toMinute: 4 },
+            { label: "+5 min", fromMinute: 4, toMinute: 9 },
+            { label: "+3 min", fromMinute: 9, toMinute: 12 }
+          ],
+          showPointDetails: false,
+          note: "4 + 5 + 3 = 12 minutes."
+        },
+        { kind: "clock", label: "End time", timeLabel: "5:43 p.m.", timeValue: "5:43", caption: "The later clock confirms the forward count." },
+        {
+          kind: "card-grid",
+          label: "Three time-story structures",
+          cards: [
+            { label: "End unknown", sections: [{ kind: "equations", lines: ["10:15 + 23 min = 10:38"] }, { kind: "note", text: "Count forward from the start." }] },
+            { label: "Elapsed unknown", sections: [{ kind: "equations", lines: ["11:57 − 11:24 = 33 min"] }, { kind: "note", text: "Find the distance between two times." }] },
+            { label: "Start unknown", sections: [{ kind: "equations", lines: ["5:48 − 32 min = 5:16"] }, { kind: "note", text: "Count backward from the end." }] }
+          ]
+        }
+      ]
+    },
     focus: [
       "elapsed time",
       "number line",
       "clock",
       "source labels"
     ],
-    clockLabels: [
-      "1 sec start",
-      "60 sec elapsed",
-      "5 sec end"
+    timeLineModel: {
+      ariaLabel: "Efficient elapsed-time jumps from 5:31 p.m. to 5:43 p.m.",
+      startLabel: "5:31 p.m.",
+      endLabel: "5:43 p.m.",
+      segments: [
+        { from: "5:31", to: "5:35", minutes: 4, label: "+4", unit: "minutes", emphasis: "ones" },
+        { from: "5:35", to: "5:40", minutes: 5, label: "+5", unit: "minutes", emphasis: "benchmark" },
+        { from: "5:40", to: "5:43", minutes: 3, label: "+3", unit: "minutes", emphasis: "ones" }
+      ],
+      unknownCases: [
+        { label: "End unknown", known: "10:15 + 23 min", unknown: "end time", equation: "10:15 + 23 min = 10:38" },
+        { label: "Elapsed unknown", known: "11:24 to 11:57", unknown: "minutes", equation: "11:57 − 11:24 = 33 min" },
+        { label: "Start unknown", known: "end 5:48; elapsed 32 min", unknown: "start time", equation: "5:48 − 32 min = 5:16" }
+      ]
+    },
+    conceptSteps: [
+      { label: "Name the unknown", action: "Identify whether the story asks for the start, end, or elapsed minutes.", result: "The unknown determines the direction of the count." },
+      { label: "Use efficient jumps", action: "Count to friendly 5-minute marks, then use remaining ones.", result: "4 + 5 + 3 = 12 minutes from 5:31 to 5:43." },
+      { label: "Check direction", action: "Count forward for a later end or backward for an earlier start.", result: "The answer is placed correctly on the clock and number line." }
     ]
   },
 
