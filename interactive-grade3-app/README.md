@@ -27,16 +27,15 @@ npm start
 
 The `npm start` script serves on port `4220`.
 
+The workspace launcher reuses an existing watcher and returns immediately after dispatching a cold launch. Run `scripts/grade3_app_start.sh restart` only for a forced restart. Serving and normal builds use the same fast, unoptimized, non-strict template configuration.
+
 ## Build
 
 ```bash
 npm run build
 ```
 
-Expected result:
-
-- Build succeeds.
-- Angular may print budget warnings for bundle size and `lesson.css`; those are warnings unless Angular reports an error.
+No test target, `.spec.ts` suite, startup benchmark, or MB-scale bundle limit is configured. Angular emits a non-blocking warning only if total build output reaches 1 GB. The launcher returns immediately and writes one log warning only if a cold launch is still not listening after two minutes.
 
 ## Important Generated Data
 

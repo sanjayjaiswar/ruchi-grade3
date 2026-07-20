@@ -46,6 +46,34 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
           note: "Reasonableness comes from a nearby estimate built from the actual measurements."
         },
         {
+          kind: "measurement-model",
+          label: "Length station: three measured yarns",
+          model: "operation",
+          unitLabel: "cm",
+          values: [
+            { label: "Yarn A", value: 64, valueLabel: "64 cm ≈ 60 cm", tone: "given" },
+            { label: "Yarn B", value: 88, valueLabel: "88 cm ≈ 90 cm", tone: "benchmark" },
+            { label: "Yarn C", value: 38, valueLabel: "38 cm ≈ 40 cm", tone: "target" }
+          ],
+          equation: "A + C: 64 + 38 = 102 cm (estimate 100 cm); 102 − 88 = 14 cm (estimate 10 cm)",
+          steps: ["Measure and round each yarn.", "Add Yarn A and Yarn C.", "Compare their total with Yarn B using a tape diagram."],
+          note: "The 2 cm and 4 cm gaps show that both exact answers are reasonable."
+        },
+        {
+          kind: "data-table",
+          label: "Independent problem: Shane's trailers",
+          columns: ["Trailer", "Minutes"],
+          rows: [
+            ["1", "5"],
+            ["2", "4"],
+            ["3", "3"],
+            ["4", "5"],
+            ["5", "4"],
+            ["Total", "21"],
+            ["Movie only", "115 − 21 = 94"]
+          ]
+        },
+        {
           kind: "data-table",
           label: "Reasonableness cycle",
           columns: ["Measured", "Rounded", "Estimate", "Exact", "Gap"],
@@ -89,6 +117,22 @@ export const M2_LESSON21_RUNTIME: LessonRuntimeConfig = {
           estimate: "650 mL",
           exact: "645 mL",
           gap: "5 mL"
+        },
+        {
+          label: "Yarn A + C",
+          measured: "64 cm + 38 cm",
+          rounded: "60 cm + 40 cm",
+          estimate: "100 cm",
+          exact: "102 cm",
+          gap: "2 cm"
+        },
+        {
+          label: "movie without trailers",
+          measured: "115 min − 21 min",
+          rounded: "120 min − 20 min",
+          estimate: "100 min",
+          exact: "94 min",
+          gap: "6 min"
         }
       ]
     }

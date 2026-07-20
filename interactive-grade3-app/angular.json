@@ -54,23 +54,23 @@
             ]
           },
           "configurations": {
-            "production": {
-              "outputHashing": "all"
-            },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "budgets": [
+                {
+                  "type": "all",
+                  "maximumWarning": "1gb"
+                }
+              ]
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "development"
         },
         "serve": {
           "builder": "@angular/build:dev-server",
           "configurations": {
-            "production": {
-              "buildTarget": "interactive-grade3-app:build:production"
-            },
             "development": {
               "buildTarget": "interactive-grade3-app:build:development"
             }

@@ -29,7 +29,7 @@ function walk(dir, visitor) {
 }
 
 const lessonTemplate = readText(lessonTemplatePath);
-const guardrail = 'Guardrail: Blank/Solved problem tabs must not render PDF or Teacher Edition source-page screenshots.';
+const guardrail = 'Guardrail: Blank/Solved problem tabs must not render full PDF or full Teacher Edition source-page screenshots; a tightly cropped source asset is allowed when the pictured object is required by the problem.';
 const problemSetPanelStart = lessonTemplate.indexOf(`*ngSwitchCase="'problem-set'"`);
 const summaryPanelStart = lessonTemplate.indexOf(`*ngSwitchCase="'summary'"`, problemSetPanelStart);
 const problemSetPanel = problemSetPanelStart >= 0 && summaryPanelStart > problemSetPanelStart
@@ -96,11 +96,12 @@ walk(srcRoot, (path) => {
 });
 
 if (failures.length > 0) {
-  console.error('PDF/source screenshots are barred from Blank/Solved problem tabs.');
+  console.error('Full PDF/source pages are barred from Blank/Solved problem tabs.');
   for (const failure of failures) {
     console.error(`- ${failure}`);
   }
   process.exit(1);
 }
 
-console.log('OK: Blank/Solved problem tabs do not render PDF/source screenshots.');
+console.log('OK: Blank/Solved problem tabs do not render full PDF/source pages.');
+console.log('- Tightly cropped source assets remain allowed when the pictured object is part of the official problem.');

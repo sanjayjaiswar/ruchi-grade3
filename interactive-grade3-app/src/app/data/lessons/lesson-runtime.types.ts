@@ -822,6 +822,48 @@ export type ProblemVisualSourceDirectionsSection = {
   }>;
 };
 
+export type ProblemVisualEstimateDifferenceWorkbookSection = {
+  kind: 'estimate-difference-workbook';
+  label?: string;
+  groups: Array<{
+    label: string;
+    rows: Array<{
+      exactExpression: string;
+      actual: string;
+      roundedExpression: string;
+      estimate: string;
+      best?: boolean;
+      movement: 'both-up' | 'both-down' | 'opposite-in' | 'opposite-out';
+    }>;
+  }>;
+  distancePairs: Array<{
+    label: string;
+    left: number;
+    right: number;
+    roundedLeft: number;
+    roundedRight: number;
+    caption: string;
+    precise: boolean;
+  }>;
+  conclusion: string;
+};
+
+export type ProblemVisualSourceCropSection = {
+  kind: 'source-crop';
+  label?: string;
+  src: string;
+  alt: string;
+  imageWidth: number;
+  imageHeight: number;
+  crop: {
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+  };
+  caption?: string;
+};
+
 export type ProblemVisualSection =
   | ProblemVisualArraySection
   | ProblemVisualFloorPlanSection
@@ -845,7 +887,9 @@ export type ProblemVisualSection =
   | ProblemVisualMeasurementLabSection
   | ProblemVisualAdditionStudioSection
   | ProblemVisualCardGridSection
-  | ProblemVisualSourceDirectionsSection;
+  | ProblemVisualSourceDirectionsSection
+  | ProblemVisualEstimateDifferenceWorkbookSection
+  | ProblemVisualSourceCropSection;
 
 export type ProblemVisualSpec = {
   title: string;

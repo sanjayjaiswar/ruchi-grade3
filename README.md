@@ -18,7 +18,15 @@ Open:
 http://localhost:4220/ruchika-grade3/
 ```
 
-The start script runs the Angular app on port `4220`, writes logs under `tmp/logs/`, and creates `tmp/grade3-app-context-latest.txt` with the current run context.
+The start script dispatches the Angular app on port `4220` and returns immediately while Angular compiles in the background. It writes logs under `tmp/logs/` and creates `tmp/grade3-app-context-latest.txt` with the current run context.
+
+Running the start script again reuses a healthy Angular watcher and returns immediately. Use a forced restart only when the watcher itself must be replaced:
+
+```bash
+scripts/grade3_app_start.sh restart
+```
+
+This internal app uses the same fast, unoptimized, non-strict template configuration for serving and normal builds. There are no MB-scale limits: Angular only emits a non-blocking warning if total build output reaches 1 GB.
 
 ## Prerequisites
 
@@ -26,7 +34,7 @@ Required:
 
 - Node.js 20 or newer.
 - npm 10 or newer.
-- A shell with common Unix tools: `bash`, `curl`, `lsof`.
+- A shell with common Unix tools: `bash`, `lsof`.
 
 Recommended:
 
@@ -100,6 +108,7 @@ Useful commands:
 ```bash
 scripts/grade3_app_start.sh status
 scripts/grade3_app_start.sh context
+scripts/grade3_app_start.sh restart
 scripts/grade3_app_start.sh stop
 ```
 
@@ -122,7 +131,7 @@ ipconfig getifaddr en0
 hostname -I | awk '{print $1}'
 ```
 
-## Build And Validate
+## Build
 
 From the Angular app directory:
 
@@ -133,8 +142,9 @@ npm run build
 
 Current expected result:
 
-- Build succeeds.
-- Angular may warn that the initial bundle and `lesson.css` exceed warning budgets. Those are warnings, not failures.
+- Build uses the fast internal-app configuration.
+- There are no MB-scale bundle limits. A build emits a warning, but does not fail, only if total output reaches 1 GB.
+- A cold launch does not wait for a health check. If it is still not listening after two minutes, the launcher writes one warning to `tmp/logs/grade3-app-latest.log`.
 
 ## Regenerate Student Workbook Source Data
 
@@ -170,6 +180,18 @@ Do not hand-edit that generated file. Update the generator or source PDFs, then 
 - The app currently covers all 152 Grade 3 lesson routes across Modules 1-7.
 - Lesson Solve visuals must match the workbook prompt/equations. Do not use generic arrays or dots that contradict the problem.
 - Do not use all-caps instructional headings in the UI.
+
+## Repeatable Teacher Edition Lesson Repair
+
+Use the repository skill whenever a lesson needs the same source-faithful repair and visual acceptance process used for Lessons 20 and 21:
+
+```text
+Use $fix-eureka-lesson to fix Module 2 Lesson 21.
+```
+
+The skill is stored at `.codex/skills/fix-eureka-lesson/`. It requires the Teacher Edition as the source of truth, preserves every official problem and mathematical relationship, implements distinct Blank and Solved states, runs the durable source-contract validator and build, and visually checks Concept, Blank, Solved, and Summary in an isolated authorized Chrome tab. Its Lesson 20 baseline is documented in `.codex/skills/fix-eureka-lesson/references/lesson-20-baseline.md`.
+
+Changing the module and lesson numbers is the only routine input. Do not treat an existing portal lesson, generic component coverage, or a successful build as proof that the lesson is complete.
 
 ## Troubleshooting
 

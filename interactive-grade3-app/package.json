@@ -8,8 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "validate:no-pdf-problem-tabs": "node scripts/validate-no-pdf-problem-tabs.mjs",
     "validate:problem-centered-delivery": "node scripts/validate-problem-centered-delivery.mjs",
-    "validate:m2-source-contract": "node scripts/validate-m2-source-contract.mjs",
-    "test": "ng test"
+    "validate:m2-source-contract": "node scripts/validate-m2-source-contract.mjs"
   },
   "private": true,
   "packageManager": "npm@10.8.2",

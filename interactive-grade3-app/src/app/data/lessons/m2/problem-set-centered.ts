@@ -783,6 +783,77 @@ function makeExactTopicDProblemOneVisual(
   solved: boolean
 ): ProblemVisualSpec | undefined {
   const lower = seed.sourcePrompt.toLowerCase();
+  const lesson21 = /weigh the bags of beans and rice/.test(lower);
+  if (lesson21) {
+    return {
+      title: 'Problem 1: weigh, round, estimate, solve, and check reasonableness',
+      sourceNote: solved
+        ? 'The two source scale readings, both estimates, both exact answers, and the reasonableness statement match the Lesson 21 Teacher Edition answer key.'
+        : 'The official beans-and-rice scale task is preserved. Read the virtual scales before completing the open estimate and actual equations.',
+      sections: [
+        {
+          kind: 'source-crop',
+          label: 'Official Lesson 21 beans-and-rice scale workspace',
+          src: '/source-pages/m2-teacher/page-261.png',
+          alt: 'Official Lesson 21 Problem Set picture of beans and rice on two digital scales',
+          imageWidth: 1143,
+          imageHeight: 1443,
+          crop: { x: 260, y: 315, width: 520, height: 330 },
+          caption: 'The app keeps the two official source objects and scale relationship rather than substituting a generic table.'
+        },
+        {
+          kind: 'measurement-model',
+          label: solved ? 'Measured scale readings' : 'Read both virtual scales',
+          model: 'mass',
+          unitLabel: 'g',
+          maxValue: 100,
+          values: [
+            { label: 'beans', value: 91, valueLabel: solved ? '91 g → 90 g' : 'read and round', tone: 'target' },
+            { label: 'rice', value: 58, valueLabel: solved ? '58 g → 60 g' : 'read and round', tone: 'given' }
+          ],
+          equation: solved ? '91 g ≈ 90 g; 58 g ≈ 60 g' : '____ g ≈ ____ g; ____ g ≈ ____ g',
+          steps: solved
+            ? ['Read 91 g and round to 90 g.', 'Read 58 g and round to 60 g.', 'Use those values in both source equations.']
+            : ['Read each scale.', 'Record each exact mass.', 'Round each mass to the nearest ten.'],
+          note: solved ? 'These are the Teacher Edition’s pre-measured source values.' : 'The bar position is the virtual measurement; the equation remains open.'
+        },
+        {
+          kind: 'solution-parts',
+          label: 'Complete the source sequence',
+          parts: [
+            {
+              label: 'a',
+              prompt: 'Estimate, and then find the total weight of the beans and rice.',
+              equation: solved ? '91 g + 58 g ≈ 90 g + 60 g = 150 g; actual: 91 g + 58 g = 149 g' : '____ g + ____ g ≈ ____ g + ____ g = ____ g; actual: ____ g + ____ g = ____ g',
+              answer: solved ? 'Estimated total: 150 g. Actual total: 149 g.' : 'Estimated total: ____ g. Actual total: ____ g.'
+            },
+            {
+              label: 'b',
+              prompt: 'Estimate, and then find the difference between the weight of the beans and rice.',
+              equation: solved ? '91 g − 58 g ≈ 90 g − 60 g = 30 g; actual: 91 g − 58 g = 33 g' : '____ g − ____ g ≈ ____ g − ____ g = ____ g; actual: ____ g − ____ g = ____ g',
+              answer: solved ? 'Estimated difference: 30 g. Actual difference: 33 g.' : 'Estimated difference: ____ g. Actual difference: ____ g.'
+            },
+            {
+              label: 'c',
+              prompt: 'Are your answers reasonable? Explain why.',
+              equation: solved ? '|150 − 149| = 1 g; |33 − 30| = 3 g' : '|estimate − actual| = ____ g',
+              answer: solved ? 'Yes. Both estimates are close to the actual answers: 150 g is 1 g from 149 g, and 30 g is 3 g from 33 g.' : 'Yes / No: ____. My evidence is ____.'
+            }
+          ]
+        }
+      ]
+    };
+  }
+  const lesson20 = /448\s*-\s*153/.test(lower) && /756\s*-\s*248/.test(lower);
+  if (lesson20) {
+    return {
+      title: 'Problem 1: actual and estimated differences in the source A/B layout',
+      sourceNote: solved
+        ? 'Every value, nearest-hundred estimate, selected closest estimate, and rounding-direction explanation follows the Lesson 20 Teacher Edition worked page.'
+        : 'The two source columns and all eight expressions are preserved. Answers and circles remain open for student work.',
+      sections: [lesson20DifferenceWorkbookSection()]
+    };
+  }
   const lesson15 = /46 ml \+ 5 ml/.test(lower) && /2 kg 509 g \+ 3 kg 367 g/.test(lower);
   const lesson16 = /52 ml \+ 68 ml/.test(lower) && /4 kg 384 g \+ 2 kg 467 g/.test(lower);
   if (!lesson15 && !lesson16) {
@@ -812,6 +883,72 @@ function makeExactTopicDProblemOneVisual(
           : 'Copy the measurement unit into the answer. For j and k, keep the two named units in separate columns.'
       }
     ]
+  };
+}
+
+function lesson20DifferenceWorkbookSection(): Extract<ProblemVisualSpec['sections'][number], { kind: 'estimate-difference-workbook' }> {
+  return {
+    kind: 'estimate-difference-workbook',
+    label: '1a. Find each actual difference, round to the nearest hundred, and circle the closest estimates',
+    groups: [
+      {
+        label: 'A',
+        rows: [
+          { exactExpression: '448 − 153', actual: '295', roundedExpression: '400 − 200', estimate: '200', movement: 'opposite-in' },
+          { exactExpression: '451 − 153', actual: '298', roundedExpression: '500 − 200', estimate: '300', best: true, movement: 'both-up' },
+          { exactExpression: '448 − 149', actual: '299', roundedExpression: '400 − 100', estimate: '300', best: true, movement: 'both-down' },
+          { exactExpression: '451 − 149', actual: '302', roundedExpression: '500 − 100', estimate: '400', movement: 'opposite-out' }
+        ]
+      },
+      {
+        label: 'B',
+        rows: [
+          { exactExpression: '747 − 261', actual: '486', roundedExpression: '700 − 300', estimate: '400', movement: 'opposite-in' },
+          { exactExpression: '756 − 261', actual: '495', roundedExpression: '800 − 300', estimate: '500', best: true, movement: 'both-up' },
+          { exactExpression: '747 − 249', actual: '498', roundedExpression: '700 − 200', estimate: '500', best: true, movement: 'both-down' },
+          { exactExpression: '756 − 248', actual: '508', roundedExpression: '800 − 200', estimate: '600', movement: 'opposite-out' }
+        ]
+      }
+    ],
+    distancePairs: [
+      {
+        label: '451 − 153 → 298',
+        left: 153,
+        right: 451,
+        roundedLeft: 200,
+        roundedRight: 500,
+        caption: 'Both numbers round up. The distance changes from 298 to 300.',
+        precise: true
+      },
+      {
+        label: '448 − 149 → 299',
+        left: 149,
+        right: 448,
+        roundedLeft: 100,
+        roundedRight: 400,
+        caption: 'Both numbers round down. The distance changes from 299 to 300.',
+        precise: true
+      },
+      {
+        label: '448 − 153 → 295',
+        left: 153,
+        right: 448,
+        roundedLeft: 200,
+        roundedRight: 400,
+        caption: 'The numbers round toward each other, shrinking the distance to 200.',
+        precise: false
+      },
+      {
+        label: '451 − 149 → 302',
+        left: 149,
+        right: 451,
+        roundedLeft: 100,
+        roundedRight: 500,
+        caption: 'The numbers round away from each other, stretching the distance to 400.',
+        precise: false
+      }
+    ],
+    conclusion: 'The most precise estimates occur when both numbers round in the same direction. Their movements mostly cancel, so the distance stays about the same. Opposite directions shrink or stretch the distance.'
   };
 }
 
@@ -996,6 +1133,269 @@ function makeExactTopicDStoryVisual(
   const sourceNote = solved
     ? 'The diagram keeps the source quantities and unknown in the same relationship as the official Problem Set, then reveals each calculation in order.'
     : 'The diagram keeps the source quantities visible and leaves only the requested unknown open.';
+
+  if (/measure the lengths of the three pieces of yarn/.test(lower)) {
+    return {
+      title: 'Problem 2: measure and compare the three source yarn lengths',
+      sourceNote: solved
+        ? 'The measured and rounded yarn lengths, 100 cm estimate, 102 cm actual total, 10 cm estimate, 14 cm actual difference, and tape relationship match the Lesson 21 answer key.'
+        : 'The source yarn table, estimate-first order, and tape-diagram workspace are preserved with answers open.',
+      sections: [
+        {
+          kind: 'data-table',
+          label: 'Measure each yarn and round to the nearest ten',
+          columns: ['Yarn', 'Measured length', 'Rounded length'],
+          rows: solved
+            ? [['A', '64 cm', '60 cm'], ['B', '88 cm', '90 cm'], ['C', '38 cm', '40 cm']]
+            : [['A', '____ cm', '____ cm'], ['B', '____ cm', '____ cm'], ['C', '____ cm', '____ cm']]
+        },
+        {
+          kind: 'solution-parts',
+          label: 'Estimate first, then calculate exactly',
+          parts: [
+            {
+              label: 'a',
+              prompt: 'Find the total length of Yarn A and Yarn C.',
+              equation: solved ? '60 cm + 40 cm = 100 cm; 64 cm + 38 cm = 102 cm' : '____ cm + ____ cm = ____ cm; ____ cm + ____ cm = ____ cm',
+              answer: solved ? 'Estimate: 100 cm. Actual total: 102 cm.' : 'Estimate: ____ cm. Actual total: ____ cm.'
+            },
+            {
+              label: 'b',
+              prompt: 'Find the difference between the A + C total and Yarn B.',
+              equation: solved ? '100 cm − 90 cm = 10 cm; 102 cm − 88 cm = 14 cm' : '____ cm − ____ cm = ____ cm; ____ cm − ____ cm = ____ cm',
+              answer: solved ? 'Estimate: 10 cm. Actual difference: 14 cm.' : 'Estimate: ____ cm. Actual difference: ____ cm.'
+            }
+          ]
+        },
+        {
+          kind: 'tape',
+          label: 'Model the actual difference with the source relationship',
+          totalLabel: solved ? 'Yarn A + Yarn C = 102 cm' : 'Yarn A + Yarn C = ____ cm',
+          parts: [
+            { label: solved ? '88 cm' : '', sublabel: 'Yarn B' },
+            { label: solved ? '14 cm' : '', sublabel: 'difference', emphasize: true }
+          ],
+          caption: solved ? '88 cm + 14 cm = 102 cm' : '____ cm + ____ cm = ____ cm'
+        }
+      ]
+    };
+  }
+
+  if (/plot the amount of liquid in the three containers/.test(lower) && /containers d and e/.test(lower)) {
+    const containerLine = (
+      label: string,
+      lowerValue: number,
+      value: number,
+      rounded: number
+    ): Extract<ProblemVisualSpec['sections'][number], { kind: 'number-line' }> => ({
+      kind: 'number-line',
+      label: '',
+      orientation: 'vertical',
+      ticks: Array.from({ length: 11 }, (_, index) => {
+        const tickValue = lowerValue + index;
+        return {
+          label: (index === 0 || index === 5 || index === 10) && tickValue !== value ? `${tickValue} mL` : '',
+          target: tickValue === value,
+          rounded: solved && tickValue === rounded
+        };
+      }),
+      targetMarker: {
+        label: solved ? `${value} mL → ${rounded} mL` : `plot ${label}`,
+        position: value - lowerValue === 10 ? 100 : (value - lowerValue) * 10
+      },
+      caption: solved ? `${value} mL rounds to ${rounded} mL.` : 'Read the container, plot its capacity, and round to the nearest 10 mL.'
+    });
+
+    return {
+      title: 'Problem 3: plot, round, estimate, solve, and model liquid volume',
+      sourceNote: solved
+        ? 'All three plotted capacities, nearest-ten values, the 650 mL/645 mL totals, and the 30 mL/26 mL differences match the Lesson 21 answer key.'
+        : 'The three source container number lines and the estimate-before-exact sequence remain open for student work.',
+      sections: [
+        {
+          kind: 'card-grid',
+          label: 'Plot each measured container on its own number line',
+          cards: [
+            { label: 'Container D', sections: [containerLine('Container D', 210, 212, 210)] },
+            { label: 'Container E', sections: [containerLine('Container E', 230, 238, 240)] },
+            { label: 'Container F', sections: [containerLine('Container F', 190, 195, 200)] }
+          ]
+        },
+        {
+          kind: 'solution-parts',
+          label: 'Use the plotted measurements',
+          parts: [
+            {
+              label: 'a',
+              prompt: 'Estimate and then find the total amount of liquid.',
+              equation: solved ? '210 + 240 + 200 = 650 mL; 212 + 238 + 195 = 645 mL' : '____ + ____ + ____ = ____ mL; ____ + ____ + ____ = ____ mL',
+              answer: solved ? 'Estimate: 650 mL. Actual total: 645 mL.' : 'Estimate: ____ mL. Actual total: ____ mL.'
+            },
+            {
+              label: 'b',
+              prompt: 'Estimate and then find the difference between Containers D and E.',
+              equation: solved ? '240 mL − 210 mL = 30 mL; 238 mL − 212 mL = 26 mL' : '____ mL − ____ mL = ____ mL; ____ mL − ____ mL = ____ mL',
+              answer: solved ? 'Estimate: 30 mL. Actual difference: 26 mL.' : 'Estimate: ____ mL. Actual difference: ____ mL.'
+            }
+          ]
+        },
+        {
+          kind: 'tape',
+          label: 'Model the actual D-to-E difference',
+          totalLabel: solved ? 'Container E = 238 mL' : 'Container E = ____ mL',
+          parts: [
+            { label: solved ? '212 mL' : '', sublabel: 'Container D' },
+            { label: solved ? '26 mL' : '', sublabel: 'difference', emphasize: true }
+          ],
+          caption: solved ? '212 mL + 26 mL = 238 mL' : '____ mL + ____ mL = ____ mL'
+        }
+      ]
+    };
+  }
+
+  if (/shane watches a movie in the theater that is 115 minutes/.test(lower)) {
+    return {
+      title: 'Problem 4: separate trailer time from Shane’s 115-minute theater time',
+      sourceNote: solved
+        ? 'The five source trailer lengths, 21-minute total, 94-minute movie, and reasonableness statement match the Lesson 21 answer key.'
+        : 'The official trailer chart and all three source questions are preserved with the total, estimate, exact answer, and explanation open.',
+      sections: [
+        {
+          kind: 'data-table',
+          label: 'Trailer length chart',
+          columns: ['Trailer', 'Length in minutes'],
+          rows: [
+            ['1', '5 minutes'],
+            ['2', '4 minutes'],
+            ['3', '3 minutes'],
+            ['4', '5 minutes'],
+            ['5', '4 minutes'],
+            ['Total', solved ? '21 minutes' : '____ minutes']
+          ]
+        },
+        {
+          kind: 'solution-parts',
+          label: 'Complete the movie-and-trailers sequence',
+          parts: [
+            {
+              label: 'a',
+              prompt: 'Find the total number of minutes for all 5 trailers.',
+              equation: solved ? '5 + 4 + 3 + 5 + 4 = 21 minutes' : '5 + 4 + 3 + 5 + 4 = ____ minutes',
+              answer: solved ? 'The trailers last 21 minutes altogether.' : 'The trailers last ____ minutes altogether.'
+            },
+            {
+              label: 'b',
+              prompt: 'Estimate and then find the movie length without trailers.',
+              equation: solved ? '115 min ≈ 120 min; 21 min ≈ 20 min; 120 − 20 = 100 min; actual: 115 − 21 = 94 min' : '115 min ≈ ____ min; ____ min ≈ ____ min; ____ − ____ = ____ min; actual: 115 − ____ = ____ min',
+              answer: solved ? 'A reasonable estimate is 100 minutes. The actual movie is 94 minutes.' : 'Estimate: ____ minutes. Actual movie: ____ minutes.'
+            },
+            {
+              label: 'c',
+              prompt: 'Is your answer reasonable? Explain why.',
+              equation: solved ? '|100 − 94| = 6 minutes' : '|estimate − actual| = ____ minutes',
+              answer: solved ? 'Yes. The 100-minute estimate is close to the 94-minute actual answer.' : 'Yes / No: ____. My evidence is ____.'
+            }
+          ]
+        },
+        {
+          kind: 'tape',
+          label: 'Model the theater time as trailers plus movie',
+          totalLabel: '115 minutes including trailers',
+          parts: [
+            { label: solved ? '21 min' : '', sublabel: '5 trailers' },
+            { label: solved ? '94 min' : '', sublabel: 'movie without trailers', emphasize: true }
+          ],
+          caption: solved ? '21 min + 94 min = 115 min' : '____ min + ____ min = 115 min'
+        }
+      ]
+    };
+  }
+
+  if (/camden uses a total of 372 liters/.test(lower)) {
+    return {
+      title: 'Problem 2: estimate and find Camden’s second-month gas use',
+      sourceNote: solved
+        ? 'The estimate, exact tape relationship, subtraction, and answer sentence reproduce the Lesson 20 Teacher Edition worked solution.'
+        : 'The source gives the two-month total and first-month part. The estimate and missing tape part remain open.',
+      sections: [
+        {
+          kind: 'solution-parts',
+          label: 'a. Estimate first',
+          parts: [{
+            label: 'a',
+            prompt: 'Round the total and first-month amount to useful hundreds.',
+            equation: solved ? '372 L ≈ 400 L; 184 L ≈ 200 L; 400 L − 200 L = 200 L' : '372 L ≈ ____ L; 184 L ≈ ____ L; ____ L − ____ L = ____ L',
+            answer: solved ? 'Camden uses about 200 liters in the second month.' : 'Camden uses about ____ liters in the second month.'
+          }]
+        },
+        {
+          kind: 'tape',
+          label: 'b. Model the actual amount with a tape diagram',
+          totalLabel: '372 L total for two months',
+          parts: [
+            { label: '184 L', sublabel: 'first month' },
+            { label: solved ? '188 L' : '', sublabel: 'second month', emphasize: true }
+          ],
+          caption: solved ? '184 L + 188 L = 372 L' : '184 L + ____ L = 372 L'
+        },
+        {
+          kind: 'equations',
+          label: solved ? 'Exact subtraction and answer' : 'Exact subtraction workspace',
+          lines: solved
+            ? ['372 L − 184 L = 188 L', 'Camden actually uses 188 liters of gas in the second month.']
+            : ['372 L − 184 L = ____ L', 'Camden actually uses ____ liters of gas in the second month.']
+        }
+      ]
+    };
+  }
+
+  if (/pear, apple, and peach (?:are shown|weigh|is)/.test(lower) && /372 grams/.test(lower)) {
+    return {
+      title: 'Problem 3: estimate and find the peach’s weight',
+      sourceNote: solved
+        ? 'The 500 g source scale, nearest-ten estimate, tape relationship, exact subtraction, and answer sentence follow the selected Teacher Edition worked page.'
+        : 'The source scale reads 500 g. The known 372 g part and unknown peach part are kept in the same relationship as the Problem Set.',
+      sections: [
+        {
+          kind: 'source-crop',
+          label: 'Official Teacher Edition fruit-scale picture',
+          src: '/source-pages/m2-teacher/page-253.png',
+          alt: 'Pear, apple, and peach on a digital scale that reads 500 grams',
+          imageWidth: 1143,
+          imageHeight: 1443,
+          crop: { x: 725, y: 600, width: 230, height: 270 },
+          caption: 'The source picture shows all three fruits together on a scale reading 500 g.'
+        },
+        {
+          kind: 'solution-parts',
+          label: 'a. Estimate with the Teacher Edition worked choice',
+          parts: [{
+            label: 'a',
+            prompt: 'Round 372 g to the nearest ten. The 500 g total is already a multiple of ten.',
+            equation: solved ? '372 g ≈ 370 g; 500 g − 370 g = 130 g' : '372 g ≈ ____ g; 500 g − ____ g = ____ g',
+            answer: solved ? 'The peach weighs about 130 grams.' : 'The peach weighs about ____ grams.'
+          }]
+        },
+        {
+          kind: 'tape',
+          label: 'b. Model the actual weight with a tape diagram',
+          totalLabel: '500 g total',
+          parts: [
+            { label: '372 g', sublabel: 'pear + apple' },
+            { label: solved ? '128 g' : '', sublabel: 'peach', emphasize: true }
+          ],
+          caption: solved ? '372 g + 128 g = 500 g' : '372 g + ____ g = 500 g'
+        },
+        {
+          kind: 'equations',
+          label: solved ? 'Exact subtraction and answer' : 'Exact subtraction workspace',
+          lines: solved
+            ? ['500 g − 372 g = 128 g', 'The peach weighs 128 grams.']
+            : ['500 g − 372 g = ____ g', 'The peach weighs ____ grams.']
+        }
+      ]
+    };
+  }
 
   if (/pretzel weighs 63 grams more/.test(lower)) {
     return {
@@ -4497,7 +4897,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       problem({ number: 1, sourcePrompt: 'Find actual differences, round totals and parts to the nearest hundred, estimate, and circle closest estimates. A: 448 - 153, 451 - 153, 448 - 149, 451 - 149. B: 747 - 261, 756 - 261, 747 - 249, 756 - 248.', solvedAnswer: 'Close cases include 451 - 153 = 298 estimated as 300, 448 - 149 = 299 estimated as 300, 756 - 261 = 495 estimated as 500, and 747 - 249 = 498 estimated as 500.', equations: ['448 - 153 = 295; 400 - 200 = 200', '451 - 153 = 298; 500 - 200 = 300', '448 - 149 = 299; 400 - 100 = 300', '451 - 149 = 302; 500 - 100 = 400', '747 - 261 = 486; 700 - 300 = 400', '756 - 261 = 495; 800 - 300 = 500', '747 - 249 = 498; 700 - 200 = 500', '756 - 248 = 508; 800 - 200 = 600'] }),
       problem({ number: 2, sourcePrompt: 'Camden uses a total of 372 liters of gas in two months. He uses 184 liters of gas in the first month. How many liters of gas does he use in the second month?', solvedAnswer: 'Second month = 188 L; estimates will vary.', equations: ['372 L - 184 L = 188 L', '400 L - 200 L = 200 L'], quotient: 188, unitLabel: 'liters', blankVisualType: 'tape-diagram', animationType: 'tape-split', numberLineModels: [nearestHundredLine(372, 'L'), nearestHundredLine(184, 'L')] }),
-      problem({ number: 3, sourcePrompt: 'The pear, apple, and peach weigh 500 grams total. The pear and apple together weigh 372 grams. How much does the peach weigh?', solvedAnswer: 'The peach weighs 128 g; estimates and explanations will vary.', equations: ['500 g - 372 g = 128 g', '500 g - 400 g = 100 g'], quotient: 128, unitLabel: 'grams', blankVisualType: 'tape-diagram', animationType: 'tape-split', numberLineModels: [nearestHundredLine(372, 'g')] })
+      problem({ number: 3, sourcePrompt: 'The pear, apple, and peach weigh 500 grams total. The pear and apple together weigh 372 grams. How much does the peach weigh?', solvedAnswer: 'The peach weighs 128 g; estimates and explanations will vary.', equations: ['500 g - 372 g = 128 g', '372 g ≈ 370 g; 500 g - 370 g = 130 g'], quotient: 128, unitLabel: 'grams', blankVisualType: 'tape-diagram', animationType: 'tape-split', numberLineModels: [nearestTenLine(372, 'g')] })
     ]
   }),
   21: lesson({
@@ -4512,8 +4912,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         sourcePrompt: 'Weigh the bags of beans and rice on the scale. Then, write the weight on the scales below. Estimate and find the total weight and difference, then explain whether the answers are reasonable.',
         solvedAnswer: 'Beans weigh 91 g and rice weighs 58 g. The estimated total is 150 g, the actual total is 149 g, the estimated difference is 30 g, and the actual difference is 33 g.',
         equations: ['91 g + 58 g ≈ 90 g + 60 g = 150 g', '91 g + 58 g = 149 g', '91 g - 58 g ≈ 90 g - 60 g = 30 g', '91 g - 58 g = 33 g'],
-        dataDisplay: dataTable('Beans and rice', ['Item', 'Actual', 'Rounded'], [['Beans', '____ g', '____ g'], ['Rice', '____ g', '____ g'], ['Sum', '____ g', '____ g'], ['Difference', '____ g', '____ g']]),
-        solvedDataDisplay: dataTable('Beans and rice', ['Item', 'Actual', 'Rounded'], [['Beans', '91 g', '90 g'], ['Rice', '58 g', '60 g'], ['Sum', '149 g', '150 g'], ['Difference', '33 g', '30 g']])
+        blankWorkspaceLabel: 'Read both virtual scales, then complete the official estimate, actual, and reasonableness sequence.'
       }),
       problem({
         number: 2,
@@ -4524,8 +4923,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         unitLabel: 'centimeters',
         blankVisualType: 'tape-diagram',
         animationType: 'tape-split',
-        dataDisplay: dataTable('Yarn lengths', ['Yarn', 'Actual', 'Rounded'], [['A', '____ cm', '____ cm'], ['B', '____ cm', '____ cm'], ['C', '____ cm', '____ cm']]),
-        solvedDataDisplay: dataTable('Yarn lengths', ['Yarn', 'Actual', 'Rounded'], [['A', '64 cm', '60 cm'], ['B', '88 cm', '90 cm'], ['C', '38 cm', '40 cm'], ['A + C', '102 cm', '100 cm'], ['A + C minus B', '14 cm', '10 cm']])
+        blankWorkspaceLabel: 'Measure and round each yarn before completing the estimate, exact sum, difference, and tape diagram.'
       }),
       problem({
         number: 3,
@@ -4537,10 +4935,9 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         blankVisualType: 'tape-diagram',
         animationType: 'tape-split',
         numberLineModels: [nearestTenLine(212, 'mL'), nearestTenLine(238, 'mL'), nearestTenLine(195, 'mL')],
-        dataDisplay: dataTable('Container rounding', ['Container', 'Actual volume', 'Rounded to nearest 10 mL'], [['D', '____ mL', '____ mL'], ['E', '____ mL', '____ mL'], ['F', '____ mL', '____ mL']]),
-        solvedDataDisplay: dataTable('Container rounding', ['Container', 'Actual volume', 'Rounded to nearest 10 mL'], [['D', '212 mL', '210 mL'], ['E', '238 mL', '240 mL'], ['F', '195 mL', '200 mL']])
+        blankWorkspaceLabel: 'Plot all three measured capacities, round each to the nearest ten, then solve and model both source questions.'
       }),
-      problem({ number: 4, sourcePrompt: 'Shane watches a movie in the theater that is 115 minutes long, including the trailers. The trailer lengths are 5, 4, 3, 5, and 4 minutes.', solvedAnswer: 'Trailers total 21 minutes; movie without trailers is 94 minutes. Estimates will vary.', equations: ['5 min + 4 min + 3 min + 5 min + 4 min = 21 min', '115 min - 21 min = 94 min'], quotient: 94, unitLabel: 'minutes', dataDisplay: dataTable('Trailer lengths', ['Trailer', 'Minutes'], [['1', '5'], ['2', '4'], ['3', '3'], ['4', '5'], ['5', '4'], ['Total', '____']]), solvedDataDisplay: dataTable('Trailer lengths', ['Trailer', 'Minutes'], [['1', '5'], ['2', '4'], ['3', '3'], ['4', '5'], ['5', '4'], ['Total', '21']]) })
+      problem({ number: 4, sourcePrompt: 'Shane watches a movie in the theater that is 115 minutes long, including the trailers. The trailer lengths are 5, 4, 3, 5, and 4 minutes.', solvedAnswer: 'Trailers total 21 minutes; movie without trailers is 94 minutes. Estimates will vary.', equations: ['5 min + 4 min + 3 min + 5 min + 4 min = 21 min', '115 min - 21 min = 94 min'], quotient: 94, unitLabel: 'minutes', blankWorkspaceLabel: 'Total the five source trailer lengths, estimate the movie-only time, solve exactly, and justify reasonableness.' })
     ]
   })
 };

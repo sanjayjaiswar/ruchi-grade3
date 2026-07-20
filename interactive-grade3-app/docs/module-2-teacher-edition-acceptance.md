@@ -30,7 +30,7 @@
 | 17 | 207-211 | Estimate sums by rounding; compare exact and estimated sums; explicitly reason about reinforcing versus balancing rounding errors. |
 | 18 | 222-224 | Measurement subtraction with one decomposition; disks/algorithm alignment and correct measurement units. |
 | 19 | 233-234 | Decompose twice before subtraction; before/ready/subtrahend states; apple-orange comparison context; exact 29 g result. |
-| 20 | 243-248 | Estimate differences by rounding; explain same-direction and opposite-direction rounding effects on the difference. |
+| 20 | 243-253 | Preserve the exact A/B eight-expression workbook; circle only `300, 300, 500, 500`; explain same-direction and opposite-direction effects with distance models; Problem 2 uses `200 L` estimate and `188 L` actual with tape; Problem 3 uses the real fruit-scale source asset, `130 g` estimate, and `128 g` actual with tape. |
 | 21 | 257-259 | Physical measurement evidence for mass and liquid volume; measure-round-estimate-exact-gap cycle; 91 g/58 g and 212/238/195 mL examples. |
 
 ## Interaction and layout requirements
@@ -53,13 +53,25 @@ npm run validate:no-pdf-problem-tabs
 npm run build -- --progress=false
 ```
 
-The source-contract validator enforces the lesson-specific semantic requirements above, the exact Lesson 11 tapes, prompt completeness, replay/reduced-motion support, and guarded Anime.js targets.
+The source-contract validator enforces the lesson-specific semantic requirements above, the exact Lesson 11 tapes, Lesson 20 source workbook and story sequence, prompt completeness, replay/reduced-motion support, and guarded Anime.js targets.
 
 ## Visual acceptance record
 
 Fresh browser captures belong in the temporary audit directory and are not committed. The durable result of the visual pass is recorded here after the final 21-lesson acceptance run.
 
-- Status: **passed on 2026-07-18**.
+- Correction: the 2026-07-18 84-state record verified routes, layout, and runtime, but it did **not** prove source fidelity for every lesson. It must not be cited as a complete Module 2 content pass.
+- Current comprehensive Module 2 source-fidelity status: **not yet re-certified lesson by lesson**.
+- Lesson 20 corrective pass: **passed on 2026-07-19** against the selected Teacher Edition worked pages.
+- Lesson 20 evidence: exact A/B workbook and four closest estimates; source-specific same/opposite direction distance reasoning; Camden estimate/tape/actual sequence; real Teacher Edition fruit-scale crop; peach `130 g` estimate and `128 g` actual; Blank mode answer isolation; Pause/Play control; 0 horizontal overflow; 0 browser warnings/errors.
+- Lesson 20 viewport: 1,860 × 940 CSS pixels in a dedicated agent-owned Chrome tab.
+- Lesson 21 corrective pass: **passed on 2026-07-19** against Teacher Edition lesson pages 257-266 and answer-key page 304.
+- Lesson 21 evidence: official beans-and-rice scale relationship with `91 g` and `58 g`; `150 g`/`149 g` total and `30 g`/`33 g` difference; Yarn A/B/C measurements and rounding with `102 cm` total and `14 cm` difference tape; three distinct container number lines with `645 mL` total and `26 mL` D-to-E difference tape; exact five-trailer chart, `21`-minute total, `100`-minute estimate, `94`-minute actual movie, and reasonableness gap; Blank-mode answer isolation; Concept Replay control; student-facing Summary; 0 horizontal overflow; 0 browser warnings/errors.
+- Lesson 21 viewport: 1,920 × 996 CSS pixels in a dedicated agent-owned Chrome tab in the authorized `Gemini` profile. Concept, Blank, Solved, and Summary were visually inspected after the final corrections.
+- Repeatable repair workflow: `.codex/skills/fix-eureka-lesson/SKILL.md`; Lesson 20 baseline and non-drift criteria: `.codex/skills/fix-eureka-lesson/references/lesson-20-baseline.md`.
+- Startup correction: normal start now dispatches immediately without polling, benchmarking, or running a test; normal builds use the fast internal-app configuration. Only drastic conditions are flagged: a non-blocking warning at 1 GB of build output or one log warning when a cold launch is still not listening after two minutes.
+
+The earlier route/layout record is retained below only as historical evidence, not as a source-fidelity certification.
+
 - Browser: dedicated agent-owned Chrome tab; no existing user tabs were navigated or inspected.
 - Viewport: 1,920 × 996 CSS pixels.
 - Coverage: 21 lessons × 4 states = 84 fresh screenshots (Concept, Blank Problem Set, Solved Problem Set, and Summary).

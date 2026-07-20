@@ -509,6 +509,71 @@
       </div>
     </ng-container>
 
+    <ng-container *ngIf="estimateDifferenceWorkbookSection(section) as workbook">
+      <strong *ngIf="workbook.label">{{ workbook.label }}</strong>
+      <div
+        class="estimate-difference-workbook"
+        [class.is-paused]="continuousMotionPaused"
+        [class.is-solved]="mode === 'solved'">
+        <div class="estimate-workbook-toolbar">
+          <span>Exact difference → rounded difference → closeness check</span>
+          <button type="button" (click)="toggleContinuousMotion()" *ngIf="mode === 'solved'">
+            {{ continuousMotionPaused ? 'Play step-through' : 'Pause step-through' }}
+          </button>
+        </div>
+
+        <div class="estimate-workbook-groups">
+          <section class="estimate-workbook-group" *ngFor="let group of workbook.groups; let groupIndex = index">
+            <h4>{{ group.label }}</h4>
+            <article
+              class="estimate-workbook-row"
+              *ngFor="let row of group.rows; let rowIndex = index"
+              [class.is-best]="mode === 'solved' && row.best"
+              [attr.data-movement]="row.movement"
+              [style.animationDelay]="estimateRowDelay(groupIndex, rowIndex)">
+              <div>
+                <span>{{ row.exactExpression }} =</span>
+                <strong>{{ mode === 'solved' ? row.actual : '____' }}</strong>
+              </div>
+              <div class="is-rounded">
+                <span>{{ mode === 'solved' ? row.roundedExpression : '____ − ____' }} =</span>
+                <strong [class.is-circled]="mode === 'solved' && row.best">{{ mode === 'solved' ? row.estimate : '____' }}</strong>
+              </div>
+              <small *ngIf="mode === 'solved'">
+                {{ row.movement === 'both-up' ? 'both round up' : row.movement === 'both-down' ? 'both round down' : 'opposite directions' }}
+              </small>
+            </article>
+            <p>Circle the estimated differences that are closest to the actual differences.</p>
+          </section>
+        </div>
+
+        <section class="estimate-distance-reasoning">
+          <h4>b. Why are the circled estimates precise?</h4>
+          <ng-container *ngIf="mode === 'solved'; else blankDistanceReasoning">
+            <article *ngFor="let pair of workbook.distancePairs" [class.is-precise]="pair.precise">
+              <strong>{{ pair.label }}</strong>
+              <div class="distance-track is-exact">
+                <span [style.left]="distancePointPosition(workbook, pair.left)"><b>{{ pair.left }}</b></span>
+                <span [style.left]="distancePointPosition(workbook, pair.right)"><b>{{ pair.right }}</b></span>
+              </div>
+              <div class="distance-track is-rounded">
+                <span [style.left]="distancePointPosition(workbook, pair.roundedLeft)"><b>{{ pair.roundedLeft }}</b></span>
+                <span [style.left]="distancePointPosition(workbook, pair.roundedRight)"><b>{{ pair.roundedRight }}</b></span>
+              </div>
+              <p>{{ pair.caption }}</p>
+            </article>
+            <p class="estimate-conclusion">{{ workbook.conclusion }}</p>
+          </ng-container>
+          <ng-template #blankDistanceReasoning>
+            <div class="blank-distance-reasoning">
+              <p>Explain what the most precise estimates have in common. You may draw number lines.</p>
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </ng-template>
+        </section>
+      </div>
+    </ng-container>
+
     <ng-container *ngIf="measurementLabSection(section) as lab">
       <strong *ngIf="lab.label">{{ lab.label }}</strong>
       <div class="visual-measurement-lab" [ngClass]="'is-' + lab.model">
@@ -718,6 +783,21 @@
         </ol>
         <small *ngIf="measure.note">{{ measure.note }}</small>
       </div>
+    </ng-container>
+
+    <ng-container *ngIf="sourceCropSection(section) as sourceCrop">
+      <strong *ngIf="sourceCrop.label">{{ sourceCrop.label }}</strong>
+      <figure class="visual-source-crop">
+        <div [style.aspectRatio]="sourceCropAspect(sourceCrop)">
+          <img
+            [src]="sourceCrop.src"
+            [alt]="sourceCrop.alt"
+            [style.width]="sourceCropImageWidth(sourceCrop)"
+            [style.left]="sourceCropImageLeft(sourceCrop)"
+            [style.top]="sourceCropImageTop(sourceCrop)">
+        </div>
+        <figcaption *ngIf="sourceCrop.caption">{{ sourceCrop.caption }}</figcaption>
+      </figure>
     </ng-container>
 
     <ng-container *ngIf="numberLineSection(section) as line">

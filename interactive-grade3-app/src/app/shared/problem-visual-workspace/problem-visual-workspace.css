@@ -65,6 +65,336 @@
   min-width: 0;
 }
 
+.estimate-difference-workbook {
+  display: grid;
+  gap: 18px;
+  width: min(100%, 980px);
+  padding: clamp(14px, 2vw, 24px);
+  border: 2px solid #3c4043;
+  border-radius: 12px;
+  background: #fffefb;
+}
+
+.visual-source-crop {
+  display: grid;
+  width: min(100%, 330px);
+  gap: 8px;
+  margin: 0;
+  padding: 12px;
+  border: 1px solid #d2d9e6;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.visual-source-crop > div {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.visual-source-crop img {
+  position: absolute;
+  max-width: none;
+  height: auto;
+}
+
+.visual-source-crop figcaption {
+  color: #5f6368;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+:host-context(.lesson-m2-l21) .visual-source-crop {
+  width: min(100%, 760px);
+}
+
+.estimate-workbook-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #c7ceda;
+}
+
+.estimate-workbook-toolbar span {
+  color: #3c4043;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.estimate-workbook-toolbar button {
+  min-height: 34px;
+  padding: 6px 12px;
+  border: 1px solid #174ea6;
+  border-radius: 999px;
+  background: #e8f0fe;
+  color: #174ea6;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.estimate-workbook-toolbar button:focus-visible {
+  outline: 3px solid #fbbc04;
+  outline-offset: 2px;
+}
+
+.estimate-workbook-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 28px);
+  align-items: stretch;
+}
+
+.estimate-workbook-group {
+  display: grid;
+  gap: 0;
+  padding: 0 12px 12px;
+  border: 2px solid #3c4043;
+  background: #ffffff;
+}
+
+.estimate-workbook-group h4,
+.estimate-distance-reasoning h4 {
+  margin: 0;
+  color: #202124;
+  font-size: 15px;
+  font-weight: 850;
+}
+
+.estimate-workbook-group h4 {
+  padding: 10px 0 8px;
+  text-align: center;
+}
+
+.estimate-workbook-row {
+  display: grid;
+  gap: 2px;
+  min-height: 108px;
+  align-content: center;
+  padding: 10px 8px;
+  border-top: 1px solid #e3e7ee;
+  border-radius: 8px;
+}
+
+.estimate-difference-workbook.is-solved .estimate-workbook-row {
+  animation: estimateWorkbookStep 7.2s ease-in-out infinite;
+}
+
+.estimate-workbook-row > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(58px, auto);
+  gap: 8px;
+  align-items: baseline;
+  color: #202124;
+  font-size: clamp(14px, 1.4vw, 17px);
+  font-variant-numeric: tabular-nums;
+}
+
+.estimate-workbook-row > div span {
+  font-weight: 690;
+  white-space: nowrap;
+}
+
+.estimate-workbook-row > div strong {
+  display: inline-grid;
+  min-width: 58px;
+  min-height: 34px;
+  place-items: center;
+  border-bottom: 2px solid #5f6368;
+  color: #202124;
+  font-size: 18px;
+  font-weight: 820;
+}
+
+.estimate-workbook-row .is-rounded {
+  color: #174ea6;
+}
+
+.estimate-workbook-row .is-rounded strong.is-circled {
+  border: 3px solid #188038;
+  border-radius: 999px;
+  background: #e6f4ea;
+  color: #137333;
+}
+
+.estimate-workbook-row small {
+  justify-self: start;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: #f1f3f4;
+  color: #5f6368;
+  font-size: 10px;
+  font-weight: 760;
+}
+
+.estimate-workbook-row.is-best small {
+  background: #e6f4ea;
+  color: #137333;
+}
+
+.estimate-workbook-group > p {
+  margin: 10px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid #c7ceda;
+  color: #3c4043;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.estimate-distance-reasoning {
+  display: grid;
+  gap: 12px;
+  padding-top: 4px;
+}
+
+.estimate-distance-reasoning > article {
+  display: grid;
+  grid-template-columns: minmax(132px, 0.32fr) minmax(240px, 1fr) minmax(170px, 0.55fr);
+  gap: 10px 14px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #d2d9e6;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.estimate-distance-reasoning > article.is-precise {
+  border-color: #81c995;
+  background: #f4fbf5;
+}
+
+.estimate-distance-reasoning > article > strong {
+  color: #202124;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.estimate-distance-reasoning > article > p,
+.estimate-conclusion {
+  margin: 0;
+  color: #3c4043;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.blank-distance-reasoning {
+  display: grid;
+  gap: 15px;
+  min-height: 220px;
+  align-content: start;
+  padding: 14px;
+  border: 1px solid #d2d9e6;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.blank-distance-reasoning p {
+  margin: 0;
+  color: #3c4043;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.blank-distance-reasoning span {
+  display: block;
+  height: 28px;
+  border-bottom: 1px solid #aeb7c4;
+}
+
+.distance-track {
+  position: relative;
+  grid-column: 2;
+  height: 34px;
+  border-top: 3px solid #5f6368;
+}
+
+.distance-track::before {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  color: #5f6368;
+  font-size: 9px;
+  font-weight: 750;
+  content: 'exact';
+  transform: translateY(-100%);
+}
+
+.distance-track.is-rounded::before {
+  content: 'rounded';
+}
+
+.distance-track span {
+  position: absolute;
+  top: -7px;
+  display: grid;
+  width: 14px;
+  height: 14px;
+  place-items: center;
+  border: 2px solid #174ea6;
+  border-radius: 50%;
+  background: #ffffff;
+  transform: translateX(-50%);
+}
+
+.distance-track span b {
+  position: absolute;
+  top: 14px;
+  color: #202124;
+  font-size: 11px;
+  font-weight: 780;
+  white-space: nowrap;
+}
+
+.distance-track.is-rounded span {
+  border-color: #188038;
+  background: #e6f4ea;
+}
+
+.estimate-distance-reasoning > article > p {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.estimate-conclusion {
+  padding: 12px 14px;
+  border-left: 5px solid #188038;
+  border-radius: 8px;
+  background: #e6f4ea;
+  color: #0d652d;
+  font-size: 14px;
+  font-weight: 760;
+}
+
+.estimate-difference-workbook.is-paused .estimate-workbook-row {
+  animation-play-state: paused;
+}
+
+@keyframes estimateWorkbookStep {
+  0%, 72%, 100% { background: #ffffff; box-shadow: none; transform: translateY(0); }
+  80%, 90% { background: #e8f0fe; box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.16); transform: translateY(-2px); }
+}
+
+@media (max-width: 760px) {
+  .estimate-workbook-groups { grid-template-columns: 1fr; }
+  .estimate-distance-reasoning > article { grid-template-columns: 1fr; }
+  .distance-track,
+  .estimate-distance-reasoning > article > p { grid-column: 1; grid-row: auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .estimate-workbook-row { animation: none; }
+  .estimate-workbook-toolbar button { display: none; }
+}
+
 .visual-addition-studio {
   display: grid;
   gap: 14px;

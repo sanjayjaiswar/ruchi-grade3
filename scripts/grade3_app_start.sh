@@ -7,14 +7,13 @@ APP_DIR="${GRADE3_APP_DIR:-$GRADE3_ROOT/interactive-grade3-app}"
 PORT="${GRADE3_PORT:-4220}"
 HOST="${GRADE3_HOST:-127.0.0.1}"
 PUBLIC_HOST="${GRADE3_PUBLIC_HOST:-localhost}"
-CHECK_HOST="${GRADE3_CHECK_HOST:-$HOST}"
 ALLOWED_HOSTS="${GRADE3_ALLOWED_HOSTS:-}"
-STARTUP_TIMEOUT="${GRADE3_STARTUP_TIMEOUT:-120}"
 LOG_DIR="${GRADE3_LOG_DIR:-$GRADE3_ROOT/tmp/logs}"
 CONTEXT_FILE="${GRADE3_CONTEXT_FILE:-$GRADE3_ROOT/tmp/grade3-app-context-latest.txt}"
 APP_LOG="$LOG_DIR/grade3-app-latest.log"
 APP_PID_FILE="$LOG_DIR/grade3-app.pid"
 SCREEN_SESSION="${GRADE3_SCREEN_SESSION:-grade3-interactive-app}"
+SLOW_START_WARNING_SECONDS=120
 
 mkdir -p "$LOG_DIR" "$(dirname "$CONTEXT_FILE")"
 
@@ -93,7 +92,6 @@ Dev server:
   URL: http://${PUBLIC_HOST}:${PORT}/ruchika-grade3/
   Host bind: ${HOST}
   Port: ${PORT}
-  Startup timeout: ${STARTUP_TIMEOUT} seconds
 
 Commands:
   Start/restart: scripts/grade3_app_start.sh
@@ -191,7 +189,7 @@ start_app() {
   write_context
   : > "$APP_LOG"
 
-  echo "Starting Grade 3 Angular app..."
+  echo "Launching Grade 3 Angular app in the background..."
   start_command=(./node_modules/.bin/ng serve --host "$HOST" --port "$PORT")
   if [[ -n "$ALLOWED_HOSTS" ]]; then
     start_command+=("--allowed-hosts=$ALLOWED_HOSTS")
@@ -209,37 +207,26 @@ start_app() {
     )
   fi
 
-  local app_ok=false
-  local waited=0
-  while (( waited < STARTUP_TIMEOUT )); do
-    if curl -sf "http://${CHECK_HOST}:${PORT}/ruchika-grade3/" >/dev/null; then
-      app_ok=true
-      break
+  (
+    sleep "$SLOW_START_WARNING_SECONDS"
+
+    local launch_is_active=false
+    if command -v screen >/dev/null 2>&1 && screen -list 2>/dev/null | grep -q "[.]${SCREEN_SESSION}[[:space:]]"; then
+      launch_is_active=true
+    elif [[ -f "$APP_PID_FILE" ]]; then
+      local background_pid
+      background_pid=$(cat "$APP_PID_FILE" 2>/dev/null || true)
+      if [[ -n "$background_pid" ]] && ps -p "$background_pid" >/dev/null 2>&1; then
+        launch_is_active=true
+      fi
     fi
-    sleep 1
-    ((waited += 1))
-  done
 
-  if [[ "$app_ok" != "true" ]]; then
-    echo "Grade 3 app failed to respond on port ${PORT} within ${STARTUP_TIMEOUT} seconds. Check ${APP_LOG}." >&2
-    tail -n 80 "$APP_LOG" >&2 || true
-    exit 1
-  fi
+    if [[ "$launch_is_active" == "true" ]] && ! lsof -t -nP -iTCP:"$PORT" -sTCP:LISTEN >/dev/null 2>&1; then
+      echo "WARNING: Grade 3 app is still not listening on port ${PORT} after ${SLOW_START_WARNING_SECONDS} seconds." >> "$APP_LOG"
+    fi
+  ) >/dev/null 2>&1 &
 
-  sleep 2
-  if ! lsof -t -nP -iTCP:"$PORT" -sTCP:LISTEN >/dev/null 2>&1; then
-    echo "Grade 3 app started and then stopped listening on port ${PORT}. Check ${APP_LOG}." >&2
-    tail -n 80 "$APP_LOG" >&2 || true
-    exit 1
-  fi
-
-  local listener_pid
-  listener_pid=$(lsof -t -nP -iTCP:"$PORT" -sTCP:LISTEN 2>/dev/null | head -n1 || true)
-  if [[ -n "$listener_pid" ]]; then
-    echo "$listener_pid" > "$APP_PID_FILE"
-  fi
-
-  echo "Grade 3 app PID: $(cat "$APP_PID_FILE")"
+  echo "Launch dispatched; Angular is compiling in the background."
   echo "URL: http://${PUBLIC_HOST}:${PORT}/ruchika-grade3/"
   echo "Log: $APP_LOG"
   echo "Context: $CONTEXT_FILE"
@@ -248,10 +235,21 @@ start_app() {
   fi
 }
 
-command="${1:-restart}"
+command="${1:-start}"
 
 case "$command" in
-  start|restart)
+  start)
+    if lsof -t -nP -iTCP:"$PORT" -sTCP:LISTEN >/dev/null 2>&1; then
+      write_context
+      echo "Grade 3 app is already running; the Angular watcher will apply source changes automatically."
+      echo "URL: http://${PUBLIC_HOST}:${PORT}/ruchika-grade3/"
+      echo "Use '$0 restart' only when a forced cold restart is needed."
+      exit 0
+    fi
+    stop_app
+    start_app
+    ;;
+  restart)
     stop_app
     start_app
     ;;

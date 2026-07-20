@@ -8,8 +8,8 @@ export const M2_LESSON20_RUNTIME: LessonRuntimeConfig = {
   lessonAnimation: {
     kind: "number-line",
     title: "Lesson 20 animation: rounding direction changes the difference",
-    context: "The source keeps the exact differences between 195 and 202, then changes which numbers round up or down. Watch the estimates spread from 100 to 300.",
-    equation: "Same-direction rounding preserves the distance; opposite-direction rounding stretches or shrinks it.",
+    context: "Work through the eight exact source expressions from Problem 1. The closest estimates are selected only after each actual and nearest-hundred difference is visible.",
+    equation: "Same-direction rounding keeps the distance nearly unchanged; opposite-direction rounding stretches or shrinks it.",
     teacherPrompt: "When do both numbers move together? Why does that keep the estimated difference close?",
     focus: [
       "round",
@@ -17,46 +17,84 @@ export const M2_LESSON20_RUNTIME: LessonRuntimeConfig = {
       "source labels"
     ],
     estimateComparison: {
-      expression: "Four exact differences",
-      actual: "195–202",
+      expression: "Eight Lesson 20 Problem Set differences",
+      actual: "295–508",
       strategies: [
         {
           label: "opposite directions",
-          expression: "349 - 154 = 195",
-          actual: 195,
-          roundedExpression: "300 - 200",
-          estimate: 100,
-          error: 95,
-          movement: "whole down; part up"
-        },
-        {
-          label: "both round down",
-          expression: "349 - 149 = 200",
-          actual: 200,
-          roundedExpression: "300 - 100",
+          expression: "448 - 153 = 295",
+          actual: 295,
+          roundedExpression: "400 - 200",
           estimate: 200,
-          error: 0,
-          movement: "distance stays the same",
-          best: true
+          error: 95,
+          movement: "448 down; 153 up"
         },
         {
           label: "both round up",
-          expression: "351 - 154 = 197",
-          actual: 197,
-          roundedExpression: "400 - 200",
-          estimate: 200,
-          error: 3,
+          expression: "451 - 153 = 298",
+          actual: 298,
+          roundedExpression: "500 - 200",
+          estimate: 300,
+          error: 2,
+          movement: "distance stays nearly the same",
+          best: true
+        },
+        {
+          label: "both round down",
+          expression: "448 - 149 = 299",
+          actual: 299,
+          roundedExpression: "400 - 100",
+          estimate: 300,
+          error: 1,
           movement: "distance stays nearly the same",
           best: true
         },
         {
           label: "opposite directions",
-          expression: "351 - 149 = 202",
-          actual: 202,
-          roundedExpression: "400 - 100",
-          estimate: 300,
+          expression: "451 - 149 = 302",
+          actual: 302,
+          roundedExpression: "500 - 100",
+          estimate: 400,
           error: 98,
-          movement: "whole up; part down"
+          movement: "451 up; 149 down"
+        },
+        {
+          label: "opposite directions",
+          expression: "747 - 261 = 486",
+          actual: 486,
+          roundedExpression: "700 - 300",
+          estimate: 400,
+          error: 86,
+          movement: "747 down; 261 up"
+        },
+        {
+          label: "both round up",
+          expression: "756 - 261 = 495",
+          actual: 495,
+          roundedExpression: "800 - 300",
+          estimate: 500,
+          error: 5,
+          movement: "distance stays nearly the same",
+          best: true
+        },
+        {
+          label: "both round down",
+          expression: "747 - 249 = 498",
+          actual: 498,
+          roundedExpression: "700 - 200",
+          estimate: 500,
+          error: 2,
+          movement: "distance stays nearly the same",
+          best: true
+        },
+        {
+          label: "opposite directions",
+          expression: "756 - 248 = 508",
+          actual: 508,
+          roundedExpression: "800 - 200",
+          estimate: 600,
+          error: 92,
+          movement: "756 up; 248 down"
         }
       ]
     }

@@ -12,6 +12,7 @@ import type {
   ProblemVisualDataChartSection,
   ProblemVisualDataTableSection,
   ProblemVisualEquationsSection,
+  ProblemVisualEstimateDifferenceWorkbookSection,
   ProblemVisualExpressionMatchSection,
   ProblemVisualFractionStripSection,
   ProblemVisualFloorPlanSection,
@@ -27,6 +28,7 @@ import type {
   ProblemVisualSolutionPartsSection,
   ProblemVisualSpec,
   ProblemVisualSourceDirectionsSection,
+  ProblemVisualSourceCropSection,
   ProblemVisualStopwatchSection,
   ProblemVisualTapeSection,
   ProblemVisualTimeLineSection
@@ -42,6 +44,7 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
   @Input({ required: true }) spec?: ProblemVisualSpec;
   @Input() mode: 'blank' | 'solved' = 'blank';
   private animationSignature = '';
+  continuousMotionPaused = false;
 
   constructor(private readonly elementRef: ElementRef<HTMLElement>) {}
 
@@ -166,6 +169,51 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
 
   additionStudioSection(section: ProblemVisualSection): ProblemVisualAdditionStudioSection | undefined {
     return section.kind === 'addition-studio' ? section : undefined;
+  }
+
+  estimateDifferenceWorkbookSection(section: ProblemVisualSection): ProblemVisualEstimateDifferenceWorkbookSection | undefined {
+    return section.kind === 'estimate-difference-workbook' ? section : undefined;
+  }
+
+  sourceCropSection(section: ProblemVisualSection): ProblemVisualSourceCropSection | undefined {
+    return section.kind === 'source-crop' ? section : undefined;
+  }
+
+  sourceCropAspect(section: ProblemVisualSourceCropSection): string {
+    return `${section.crop.width} / ${section.crop.height}`;
+  }
+
+  sourceCropImageWidth(section: ProblemVisualSourceCropSection): string {
+    return `${section.imageWidth / section.crop.width * 100}%`;
+  }
+
+  sourceCropImageLeft(section: ProblemVisualSourceCropSection): string {
+    return `${-section.crop.x / section.crop.width * 100}%`;
+  }
+
+  sourceCropImageTop(section: ProblemVisualSourceCropSection): string {
+    return `${-section.crop.y / section.crop.height * 100}%`;
+  }
+
+  toggleContinuousMotion(): void {
+    this.continuousMotionPaused = !this.continuousMotionPaused;
+  }
+
+  estimateRowDelay(groupIndex: number, rowIndex: number): string {
+    return `${(groupIndex * 4 + rowIndex) * 0.85}s`;
+  }
+
+  distanceDomain(section: ProblemVisualEstimateDifferenceWorkbookSection): [number, number] {
+    const values = section.distancePairs.flatMap((pair) => [pair.left, pair.right, pair.roundedLeft, pair.roundedRight]);
+    const min = Math.min(...values);
+    const max = Math.max(...values);
+    const padding = Math.max(10, (max - min) * 0.08);
+    return [min - padding, max + padding];
+  }
+
+  distancePointPosition(section: ProblemVisualEstimateDifferenceWorkbookSection, value: number): string {
+    const [min, max] = this.distanceDomain(section);
+    return `${scaleLinear().domain([min, max]).range([3, 97]).clamp(true)(value)}%`;
   }
 
   range(count: number, max = 160): number[] {

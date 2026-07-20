@@ -174,9 +174,49 @@ for (const tool of ['ruler or meter stick', 'digital scale', 'beaker']) {
 }
 
 const l21Text = JSON.stringify(conceptSections(21));
-for (const required of ['91 g', '58 g', '212 mL', '238 mL', '195 mL', '645 mL', '650 mL']) {
+for (const required of ['91 g', '58 g', '64 cm', '88 cm', '38 cm', '212 mL', '238 mL', '195 mL', '645 mL', '650 mL', '115 − 21 = 94']) {
   if (!l21Text.includes(required)) {
     fail(21, `measurement reasonableness visual must include ${required}`);
+  }
+}
+
+const l21Problems = findLessonRuntime('m2', 21)?.problemSetCenteredLesson?.problems ?? [];
+if (l21Problems.length !== 4) {
+  fail(21, 'must preserve all four official Problem Set problems in order');
+}
+const l21Solved = new Map(l21Problems.map((problem) => [problem.number, JSON.stringify(problem.solvedVisual ?? {})]));
+const l21RequiredByProblem = new Map([
+  [1, ['/source-pages/m2-teacher/page-261.png', '91 g + 58 g', '90 g + 60 g = 150 g', '91 g − 58 g = 33 g', '|150 − 149| = 1 g']],
+  [2, ['64 cm', '88 cm', '38 cm', '60 cm + 40 cm = 100 cm', '64 cm + 38 cm = 102 cm', '102 cm − 88 cm = 14 cm']],
+  [3, ['212 mL', '238 mL', '195 mL', '210 + 240 + 200 = 650 mL', '212 + 238 + 195 = 645 mL', '238 mL − 212 mL = 26 mL']],
+  [4, ['5 + 4 + 3 + 5 + 4 = 21 minutes', '115 − 21 = 94 min', '21 min + 94 min = 115 min', '|100 − 94| = 6 minutes']],
+]);
+for (const [problem, requiredValues] of l21RequiredByProblem) {
+  const visualText = l21Solved.get(problem) ?? '';
+  for (const required of requiredValues) {
+    if (!visualText.includes(required)) {
+      fail(21, `Problem ${problem} solved visual is missing ${required}`);
+    }
+  }
+}
+const l21Problem3 = l21Problems.find((problem) => problem.number === 3);
+const l21ContainerCards = l21Problem3?.solvedVisual?.sections
+  ?.find((section) => section.kind === 'card-grid')?.cards ?? [];
+if (l21ContainerCards.length !== 3 || l21ContainerCards.some((card) => !card.sections.some((section) => section.kind === 'number-line'))) {
+  fail(21, 'Problem 3 must render three distinct source container number lines');
+}
+const l21BlankForbidden = new Map([
+  [1, ['149 g', '33 g', '150 g is 1 g']],
+  [2, ['102 cm', '14 cm']],
+  [3, ['645 mL', '26 mL']],
+  [4, ['21 minutes altogether', '94 minutes']],
+]);
+for (const problem of l21Problems) {
+  const blankText = JSON.stringify(problem.blankVisual ?? {});
+  for (const forbidden of l21BlankForbidden.get(problem.number) ?? []) {
+    if (blankText.includes(forbidden)) {
+      fail(21, `Problem ${problem.number} Blank visual leaks solved evidence ${forbidden}`);
+    }
   }
 }
 
@@ -220,6 +260,50 @@ const l20 = animation(20);
 const l20Text = JSON.stringify(l20);
 if (!/both round down|both round up/i.test(l20Text) || !/distance stays/i.test(l20Text)) {
   fail(20, 'subtraction estimate comparison must explain same-direction rounding');
+}
+const l20Strategies = l20?.estimateComparison?.strategies ?? [];
+if (l20Strategies.length !== 8 || l20Text.includes('349 - 154') || l20Text.includes('351 - 149')) {
+  fail(20, 'concept animation must use all eight Lesson 20 Problem Set expressions and no generic substitute set');
+}
+for (const expression of ['448 - 153 = 295', '451 - 153 = 298', '448 - 149 = 299', '451 - 149 = 302', '747 - 261 = 486', '756 - 261 = 495', '747 - 249 = 498', '756 - 248 = 508']) {
+  if (!l20Strategies.some((strategy) => strategy.expression === expression)) {
+    fail(20, `concept animation is missing source expression ${expression}`);
+  }
+}
+if (l20Strategies.filter((strategy) => strategy.best).length !== 4) {
+  fail(20, 'exactly four source estimates must be identified as closest');
+}
+
+const l20Problems = findLessonRuntime('m2', 20)?.problemSetCenteredLesson?.problems ?? [];
+const l20Problem1 = l20Problems.find((problem) => problem.number === 1);
+const l20Workbook = l20Problem1?.solvedVisual?.sections?.find((section) => section.kind === 'estimate-difference-workbook');
+if (!l20Workbook || l20Workbook.groups.length !== 2 || l20Workbook.groups.flatMap((group) => group.rows).length !== 8) {
+  fail(20, 'Problem 1 must render the exact two-column, eight-row A/B source workbook');
+} else {
+  const workbookRows = l20Workbook.groups.flatMap((group) => group.rows);
+  if (workbookRows.filter((row) => row.best).length !== 4) {
+    fail(20, 'Problem 1 workbook must circle exactly the four Teacher Edition closest estimates');
+  }
+  if (l20Workbook.distancePairs.length < 4 || !/same direction/i.test(l20Workbook.conclusion)) {
+    fail(20, 'Problem 1 must include visible same-direction and opposite-direction distance reasoning');
+  }
+}
+
+const l20Problem2Text = JSON.stringify(l20Problems.find((problem) => problem.number === 2)?.solvedVisual ?? {});
+for (const required of ['372 L ≈ 400 L', '184 L ≈ 200 L', '400 L − 200 L = 200 L', '372 L − 184 L = 188 L', '184 L + 188 L = 372 L']) {
+  if (!l20Problem2Text.includes(required)) {
+    fail(20, `Problem 2 solved visual is missing ${required}`);
+  }
+}
+
+const l20Problem3Text = JSON.stringify(l20Problems.find((problem) => problem.number === 3)?.solvedVisual ?? {});
+for (const required of ['/source-pages/m2-teacher/page-253.png', '372 g ≈ 370 g', '500 g − 370 g = 130 g', '500 g − 372 g = 128 g', '372 g + 128 g = 500 g']) {
+  if (!l20Problem3Text.includes(required)) {
+    fail(20, `Problem 3 solved visual is missing ${required}`);
+  }
+}
+if (!l20Problem3Text.includes('"kind":"source-crop"')) {
+  fail(20, 'Problem 3 must use the real Teacher Edition fruit-scale asset, not a generic scale drawing');
 }
 
 for (let lesson = 1; lesson <= 21; lesson += 1) {
@@ -293,5 +377,7 @@ console.log('- Lesson 7: variable spring-scale intervals');
 console.log('- Lesson 10: ten 100 mL intervals');
 console.log('- Lessons 12-14: rounding scope separation');
 console.log('- Lessons 17 and 20: rounding-error reasoning');
+console.log('- Lesson 20: exact A/B workbook, four closest estimates, source fruit-scale asset, and exact story sequence');
+console.log('- Lesson 21: exact scale, yarn, container-line, trailer, tape, estimate, and reasonableness sequence');
 console.log('- Lessons 1-21: lesson-specific concept checkpoints');
 console.log('- Animation runtime: replay, reduced motion, and guarded Anime.js targets');
