@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m7-l10",
+  "moduleId": "m7",
+  "lessonNumber": 10,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf",
+    "teacherEditionSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+    "teacherEditionBytes": 21553765,
+    "lessonPdfPages": {
+      "start": 140,
+      "end": 150
+    },
+    "problemSetPdfPages": [
+      146,
+      147
+    ],
+    "exitTicketPdfPages": [
+      148
+    ],
+    "homeworkPdfPages": [
+      149,
+      150
+    ],
+    "answerKeyPdfPages": [
+      478,
+      479
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m7-student/workbook-page-040.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m7-teacher/page-146.png",
+      "/source-pages/m7-teacher/page-147.png",
+      "/source-pages/m7-teacher/page-478.png",
+      "/source-pages/m7-teacher/page-479.png"
+    ]
+  },
+  "objective": "Decompose quadrilaterals to understand perimeter as the boundary of a shape.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "with\nshown. One side of the large square is 4 inches long. What is                                           questions such as the following:\nthe total area of the two large triangles? Explain your answer.                                              What do you know about the sides\n                                                                                                              of a square?\n                                                                                                             What other measures can you\n                                                                                                              label?\n                                                                                                             What is the area of the square?\n                   4 in                                                                                      Shade the two large triangles.\n                                                                                                              What is the shaded fraction of the\n                                                                                                              square?\n                                                                                                             What is the area of the two large\n                                                                                                              triangles?\n\n\n                          Lesson 10:                   Decompose quadrilaterals to understand perimeter as the boundary                            140\n                                                       of a shape.\n\n                          ©2015 Great Minds. eureka-math.org\n                            G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                  Lesson 10 3 7\n\n\nNote: This problem reviews the work done with tangrams in Lessons 8 and 9. It also reviews the concept of\narea from Module 4. Students may not immediately recognize that the two large triangles make up half of\nthe square. If necessary, have them use tangram pieces to demonstrate this before solving.",
+    "conceptDevelopmentText": "Materials: (T) 2″ square on cardstock, scissors, tape (S) 2″ square on cardstock, tape, crayons, Problem Set,\n           scissors, black marker, red marker, white string\n\nProblem 1: Decompose a square to define perimeter.\nNote: Students should save the shape created here for Lesson 11.\nUse a 2-inch square to answer the questions below.\n    a.   Trace the square in the space below with a red crayon.\n    b.   Trace the new shape you made with the square in the space below with a red crayon.\n    c.   Which shape has a greater perimeter? How do you know?\n    d.   Color the inside of the shapes in Problem 1 (a) and (b) with a blue crayon.\n    e.   Which color represents the perimeters of the shapes? How do you know?\n    f.   What does the other color represent? How do you know?\n    g.   Which shape has a greater area? How do you know?\n\n    T:   (Give each student a 2-inch square.) Trace your 2-inch square in Problem 1(a) with a red crayon.\n    S:   (Trace the square with a red crayon.)\n    T:   (Distribute the white string.) Work with your partner to wrap the string around the outside edges of\n         your square. (Model.) Partner A, hold the string in place. Partner B, use the black marker to mark\n         the string where it meets the end after going all the way around once.\n    S:   (Mark the string.)\n    T:   Switch roles to help your partner mark his string.\n    S:   (Switch roles and mark the string.)\n\n\n                       Lesson 10:                 Decompose quadrilaterals to understand perimeter as the boundary              141\n                                                  of a shape.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                Lesson 10 3 7\n\n\n       T:   Set your string aside. Draw a path from the top right-hand corner of\n            the square to the bottom right-hand corner. Be creative! Your path\n            shouldn’t be straight, but you will cut along it. Keep that in mind as\n            you draw. (Model.)\n       S:   (Draw the path.)\n       T:   Carefully cut along your path. (Model.)\n       S:   (Cut along the path.)\n       T:   Use your finger to trace around the edge of the piece you cut out. We\n            call the boundary of the shape its perimeter. Say the word to yourself\n            as you trace.\n       S:   Perimeter. (Trace with finger.)\n       T:   Slide the piece that you cut out to the opposite side of your square.\n            Line up the straight edge of the piece that you cut out with the edge of\n            the square. Tape the pieces together, making sure that there aren’t\n            any gaps. (Model.)\n       S:   (Slide and tape.)\n       T:   What happened to the perimeter of the shape you cut out?\n       S:   It got curvy instead of straight.  Two sides changed, and two sides\n            stayed the same.  Part of it is stuck to the square.  The new\n            perimeter is the edge of the whole new shape we made by taping.\n       T:   Work with a partner to wrap your string around your new shape. This time, use the red marker to\n            mark the string where it meets the end after going all the way around once. Then, switch roles so\n            your partner can mark her string.\nMP.3\n       S:   (Mark the string.)\n       T:   The marks on your string represent the perimeters of the square and your new shape. Talk to a\n            partner. Compare the perimeters of the square and your new shape.\n       S:   The perimeter of my new shape is greater than the perimeter of the square.  Yeah! Mine too!\n       T:   Did the area of the square change when you made your new shape? Talk to a partner.\n       S:   We didn’t get rid of any part of the square; we just changed the way it looks.  Yeah. The same\n            amount of space is covered, so the area stays the same.\n       T:   Follow the directions to complete Problem 1(b–g) on your Problem Set. (Allow students time to\n            work.) Which color in Problem 1 (a) and (b) represents the perimeter of the shapes?\n       S:   Red!\n       T:   What does the color blue represent?\n       S:   Area!",
+    "fluencyPracticeText": " Multiply by 7 3.OA.7                                                      (8 minutes)\n Equivalent Counting with Units of 2 3.OA.7                                (4 minutes)\n\nMultiply by 7 (8 minutes)\nMaterials: (S) Multiply by 7 (1–5) Pattern Sheet\n\nNote: This activity builds fluency with multiplication facts using units of 7. It works toward students knowing\nfrom memory all the products of two one-digit numbers. See Lesson 1 for the directions for administration of\na Multiply-By Pattern Sheet.\n    T:   (Write 5 × 7 = ____.) Let’s skip-count up by sevens to find the answer. (Raise a finger for each\n         number to track the count. Record the skip-count answers on the board.)\n    S:   7, 14, 21, 28, 35.\n    T:   (Circle 35, and write 5 × 7 = 35 above it. Write 3 × 7 = ____.) Let’s skip-count up by sevens again.\n         (Track with fingers as students count.)\n    S:   7, 14, 21.\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 35 with 5 fingers, 1 for each\n         seven. (Count down with fingers as students say the numbers.)\n    S:   35 (5 fingers), 28 (4 fingers), 21 (3 fingers).\nRepeat the process for 4 × 7.\n    T:   (Distribute the Multiply by 7 Pattern Sheet.) Let’s practice multiplying by 7. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 10:                Decompose quadrilaterals to understand perimeter as the boundary              139\n                                                   of a shape.\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                      Lesson 10 3 7\n\n\nEquivalent Counting with Units of 2 (4 minutes)\nNote: This activity builds fluency with multiplication facts using units of 2.\n    T:   Count by twos to 20. (Write as students count. See the chart below.)\n    S:   2, 4, 6, 8, 10, 12, 14, 16, 18, 20.\n    T:   (Write 1 two beneath the 2.) Count to 10 twos. (Write as students count.)\n    S:   1 two, 2 twos, 3 twos, 4 twos, 5 twos, 6 twos, 7 twos, 8 twos, 9 twos, 10 twos.\n\n           2       4              6                8           10        12         14        16         18         20\n\n           1 two   2 twos         3 twos           4 twos      5 twos    6 twos     7 twos    8 twos     9 twos     10 twos\n\n\n    T:   Let’s count to 10 twos again. This time, stop when I raise my hand.\n    S:   1 two, 2 twos, 3 twos.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   3 × 2 = 6.\n    T:   Continue.\n    S:   4 twos, 5 twos.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   5 × 2 = 10.\n    T:   Continue.\n    S:   6 twos, 7 twos, 8 twos.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   8 × 2 = 16.\nContinue the process up to 10 twos and down to 1 two.\n\n                                                                                                                  NOTES ON",
+    "problemSetGuidanceText": "Students should do their personal best to complete Problems 2 and 3 of the Problem Set within the allotted\n  5 minutes.\n\n\n                          Lesson 10:                Decompose quadrilaterals to understand perimeter as the boundary              142\n                                                    of a shape.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                  Lesson 10 3 7",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Give each student a 2-inch square.) Trace your 2-inch square in Problem 1(a) with a red crayon."
+      },
+      {
+        "speaker": "students",
+        "text": "(Trace the square with a red crayon.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Distribute the white string.) Work with your partner to wrap the string around the outside edges of your square. (Model.) Partner A, hold the string in place. Partner B, use the black marker to mark the string where it meets the end after going all the way around once."
+      },
+      {
+        "speaker": "students",
+        "text": "(Mark the string.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Switch roles to help your partner mark his string."
+      },
+      {
+        "speaker": "students",
+        "text": "(Switch roles and mark the string.) of a shape. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 10 3 7"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Set your string aside. Draw a path from the top right-hand corner of the square to the bottom right-hand corner. Be creative! Your path shouldn’t be straight, but you will cut along it. Keep that in mind as you draw. (Model.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw the path.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Carefully cut along your path. (Model.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Cut along the path.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your finger to trace around the edge of the piece you cut out. We call the boundary of the shape its perimeter. Say the word to yourself as you trace."
+      },
+      {
+        "speaker": "students",
+        "text": "Perimeter. (Trace with finger.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Slide the piece that you cut out to the opposite side of your square. Line up the straight edge of the piece that you cut out with the edge of the square. Tape the pieces together, making sure that there aren’t any gaps. (Model.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Slide and tape.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What happened to the perimeter of the shape you cut out?"
+      },
+      {
+        "speaker": "students",
+        "text": "It got curvy instead of straight.  Two sides changed, and two sides stayed the same.  Part of it is stuck to the square.  The new perimeter is the edge of the whole new shape we made by taping."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with a partner to wrap your string around your new shape. This time, use the red marker to mark the string where it meets the end after going all the way around once. Then, switch roles so your partner can mark her string. MP.3"
+      },
+      {
+        "speaker": "students",
+        "text": "(Mark the string.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "The marks on your string represent the perimeters of the square and your new shape. Talk to a partner. Compare the perimeters of the square and your new shape."
+      },
+      {
+        "speaker": "students",
+        "text": "The perimeter of my new shape is greater than the perimeter of the square.  Yeah! Mine too!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Did the area of the square change when you made your new shape? Talk to a partner."
+      },
+      {
+        "speaker": "students",
+        "text": "We didn’t get rid of any part of the square; we just changed the way it looks.  Yeah. The same amount of space is covered, so the area stays the same."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Follow the directions to complete Problem 1(b–g) on your Problem Set. (Allow students time to work.) Which color in Problem 1 (a) and (b) represents the perimeter of the shapes?"
+      },
+      {
+        "speaker": "students",
+        "text": "Red!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What does the color blue represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "Area!"
+      }
+    ],
+    "teacherPrompts": [
+      "(Give each student a 2-inch square.) Trace your 2-inch square in Problem 1(a) with a red crayon.",
+      "(Distribute the white string.) Work with your partner to wrap the string around the outside edges of your square. (Model.) Partner A, hold the string in place. Partner B, use the black marker to mark the string where it meets the end after going all the way around once.",
+      "Switch roles to help your partner mark his string.",
+      "Set your string aside. Draw a path from the top right-hand corner of the square to the bottom right-hand corner. Be creative! Your path shouldn’t be straight, but you will cut along it. Keep that in mind as you draw. (Model.)",
+      "Carefully cut along your path. (Model.)",
+      "Use your finger to trace around the edge of the piece you cut out. We call the boundary of the shape its perimeter. Say the word to yourself as you trace.",
+      "Slide the piece that you cut out to the opposite side of your square. Line up the straight edge of the piece that you cut out with the edge of the square. Tape the pieces together, making sure that there aren’t any gaps. (Model.)",
+      "What happened to the perimeter of the shape you cut out?",
+      "Work with a partner to wrap your string around your new shape. This time, use the red marker to mark the string where it meets the end after going all the way around once. Then, switch roles so your partner can mark her string. MP.3",
+      "The marks on your string represent the perimeters of the square and your new shape. Talk to a partner. Compare the perimeters of the square and your new shape.",
+      "Did the area of the square change when you made your new shape? Talk to a partner.",
+      "Follow the directions to complete Problem 1(b–g) on your Problem Set. (Allow students time to work.) Which color in Problem 1 (a) and (b) represents the perimeter of the shapes?",
+      "What does the color blue represent?"
+    ],
+    "debriefPrompt": "Does the shape you drew in Problem 1(a) have the same perimeter as the shape your partner drew for Problem 1(a)? How do you know?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Use a 2-inch square to answer the questions below. a. Trace the square in the space below with a red crayon. b. Trace the new shape you made with the square in the space below with a red crayon. c. Which shape has a greater perimeter? How do you know? d. Color the inside of the shapes in Problem 1 (a) and (b) with a blue crayon. of a shape. e. Which color represents the perimeters of the shapes? How do you know? f. What does the other color represent? How do you know? g. Which shape has a greater area? How do you know?",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "a. Outline the perimeter of the shapes below with a red crayon. b. Explain how you know you outlined the perimeters of the shapes above.",
+        "equations": []
+      },
+      {
+        "number": 3,
+        "prompt": "Outline the perimeter of this piece of paper with a highlighter. of a shape.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                        Lesson 10 Problem Set 3 7\n\n\nName                                                                                          Date\n\n1. Use a 2-inch square to answer the questions below.\n   a. Trace the square in the space below with a red crayon.\n\n\n   b. Trace the new shape you made with the square in the space below with a red crayon.\n\n\n   c. Which shape has a greater perimeter? How do you know?\n\n\n   d. Color the inside of the shapes in Problem 1 (a) and (b) with a blue crayon.\n\n\n                      Lesson 10:                Decompose quadrilaterals to understand perimeter as the boundary   145\n                                                of a shape.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                          Lesson 10 Problem Set 3 7\n\n\n    e. Which color represents the perimeters of the shapes? How do you know?\n\n\n    f.   What does the other color represent? How do you know?\n\n\n    g. Which shape has a greater area? How do you know?\n\n\n2. a. Outline the perimeter of the shapes below with a red crayon.\n\n\n    b. Explain how you know you outlined the perimeters of the shapes above.\n\n\n3. Outline the perimeter of this piece of paper with a highlighter.\n\n\n                       Lesson 10:                 Decompose quadrilaterals to understand perimeter as the boundary   146\n                                                  of a shape.\n\n                       ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "answerKeyProblemSetText": "1.    a. 2-inch square traced with red crayon\n      b. New shape traced with red crayon\n      c. Answers will vary.\n      d. Shapes colored with blue crayon\n      e. Red; explanations will vary.\n      f.   Area; explanations will vary.\n      g. Neither; explanations will vary.\n2.    a. Perimeters of shapes outlined with red crayon\n      b. Explanations will vary.\n3.    Paper outlined with highlighter\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                              477\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                          Lesson 10 Answer Key 3 7",
+    "answerKeyText": "A STORY OF UNITS                                                                               Lesson 10 Answer Key 3 7\n\n\nLesson 10\nPattern Sheet\n             7                                               14                                21                  28\n             35                                              7                                 14                   7\n             21                                              7                                 28                   7\n             35                                              7                                 14                  21\n             14                                              28                                14                  35\n             14                                              7                                 14                  21\n             7                                               21                                14                  21\n             28                                              21                                35                  21\n             28                                              7                                 28                  14\n             28                                              21                                28                  35\n             28                                              35                                7                   35\n             14                                              35                                21                  35\n             28                                              14                                28                  21\n             35                                              21                                14                  28\n             21                                              35                                14                  28\n\n\nProblem Set\n1.    a. 2-inch square traced with red crayon\n      b. New shape traced with red crayon\n      c. Answers will vary.\n      d. Shapes colored with blue crayon\n      e. Red; explanations will vary.\n      f.   Area; explanations will vary.\n      g. Neither; explanations will vary.\n2.    a. Perimeters of shapes outlined with red crayon\n      b. Explanations will vary.\n3.    Paper outlined with highlighter\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                              477\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                          Lesson 10 Answer Key 3 7\n\n\nExit Ticket\n1.    Outside edges colored purple; inside colored yellow\n2.    Purple; explanations will vary.\n\n\nHomework\n1.    Perimeter of each shape traced\n      a. Explanations will vary.\n      b. Explanations will vary.\n2.    Rectangle drawn on grid\n      a. Perimeter traced\n      b. Area shaded\n      c. Explanations will vary.\n3.    Maya; explanations will vary.\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                         478\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "number-bond",
+      "measurement-scale",
+      "table-or-chart",
+      "geometry-diagram",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "number-bond": [
+        "Decompose quadrilaterals to understand perimeter as the boundary of a shape.",
+        "Lesson 10: Decompose quadrilaterals to understand perimeter as the boundary 140",
+        "Problem 1: Decompose a square to define perimeter.",
+        "Lesson 10: Decompose quadrilaterals to understand perimeter as the boundary 141",
+        "Lesson 10: Decompose quadrilaterals to understand perimeter as the boundary 139",
+        "Lesson 10: Decompose quadrilaterals to understand perimeter as the boundary 145",
+        "Lesson 10: Decompose quadrilaterals to understand perimeter as the boundary 146"
+      ],
+      "measurement-scale": [
+        "Note: This problem reviews the work done with tangrams in Lessons 8 and 9. It also reviews the concept of",
+        "the square. If necessary, have them use tangram pieces to demonstrate this before solving."
+      ],
+      "table-or-chart": [
+        "T: Count by twos to 20. (Write as students count. See the chart below.)"
+      ],
+      "geometry-diagram": [
+        "Decompose quadrilaterals to understand perimeter as the boundary of a shape.",
+        "the total area of the two large triangles? Explain your answer.  What do you know about the sides",
+        "4 in  Shade the two large triangles.",
+        "triangles?",
+        "Lesson 10: Decompose quadrilaterals to understand perimeter as the boundary 140",
+        "area from Module 4. Students may not immediately recognize that the two large triangles make up half of",
+        "Problem 1: Decompose a square to define perimeter.",
+        "c. Which shape has a greater perimeter? How do you know?"
+      ],
+      "money-model": [
+        "S: It got curvy instead of straight.  Two sides changed, and two sides",
+        "T: Did the area of the square change when you made your new shape? Talk to a partner.",
+        "S: We didn’t get rid of any part of the square; we just changed the way it looks.  Yeah. The same"
+      ],
+      "picture-or-drawing": [
+        "4 in  Shade the two large triangles.",
+        "What is the shaded fraction of the",
+        "T: Set your string aside. Draw a path from the top right-hand corner of",
+        "you draw. (Model.)",
+        "S: (Draw the path.)"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Distribute the white string.) Work with your partner to wrap the string around the outside edges of your square. (Model.) Partner A, hold the string in place. Partner B, use the black marker to mark the string where it meets the end after going all the way around once."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Set your string aside. Draw a path from the top right-hand corner of the square to the bottom right-hand corner. Be creative! Your path shouldn’t be straight, but you will cut along it. Keep that in mind as you draw. (Model.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw the path.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Carefully cut along your path. (Model.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Slide the piece that you cut out to the opposite side of your square. Line up the straight edge of the piece that you cut out with the edge of the square. Tape the pieces together, making sure that there aren’t any gaps. (Model.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "The marks on your string represent the perimeters of the square and your new shape. Talk to a partner. Compare the perimeters of the square and your new shape."
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 140 (debrief) ---\nA STORY OF UNITS                                                                                                   Lesson 10 3 7\n\n\nLesson 10\nObjective: Decompose quadrilaterals to understand perimeter as the\nboundary of a shape.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (12 minutes)\n Application Problem               (8 minutes)\n Concept Development               (30 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (12 minutes)\n\n Multiply by 7 3.OA.7                                                      (8 minutes)\n Equivalent Counting with Units of 2 3.OA.7                                (4 minutes)\n\nMultiply by 7 (8 minutes)\nMaterials: (S) Multiply by 7 (1–5) Pattern Sheet\n\nNote: This activity builds fluency with multiplication facts using units of 7. It works toward students knowing\nfrom memory all the products of two one-digit numbers. See Lesson 1 for the directions for administration of\na Multiply-By Pattern Sheet.\n    T:   (Write 5 × 7 = ____.) Let’s skip-count up by sevens to find the answer. (Raise a finger for each\n         number to track the count. Record the skip-count answers on the board.)\n    S:   7, 14, 21, 28, 35.\n    T:   (Circle 35, and write 5 × 7 = 35 above it. Write 3 × 7 = ____.) Let’s skip-count up by sevens again.\n         (Track with fingers as students count.)\n    S:   7, 14, 21.\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 35 with 5 fingers, 1 for each\n         seven. (Count down with fingers as students say the numbers.)\n    S:   35 (5 fingers), 28 (4 fingers), 21 (3 fingers).\nRepeat the process for 4 × 7.\n    T:   (Distribute the Multiply by 7 Pattern Sheet.) Let’s practice multiplying by 7. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 10:                Decompose quadrilaterals to understand perimeter as the boundary              139\n                                                   of a shape.\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 141 (application-problem) ---\nA STORY OF UNITS                                                                                                      Lesson 10 3 7\n\n\nEquivalent Counting with Units of 2 (4 minutes)\nNote: This activity builds fluency with multiplication facts using units of 2.\n    T:   Count by twos to 20. (Write as students count. See the chart below.)\n    S:   2, 4, 6, 8, 10, 12, 14, 16, 18, 20.\n    T:   (Write 1 two beneath the 2.) Count to 10 twos. (Write as students count.)\n    S:   1 two, 2 twos, 3 twos, 4 twos, 5 twos, 6 twos, 7 twos, 8 twos, 9 twos, 10 twos.\n\n           2       4              6                8           10        12         14        16         18         20\n\n           1 two   2 twos         3 twos           4 twos      5 twos    6 twos     7 twos    8 twos     9 twos     10 twos\n\n\n    T:   Let’s count to 10 twos again. This time, stop when I raise my hand.\n    S:   1 two, 2 twos, 3 twos.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   3 × 2 = 6.\n    T:   Continue.\n    S:   4 twos, 5 twos.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   5 × 2 = 10.\n    T:   Continue.\n    S:   6 twos, 7 twos, 8 twos.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   8 × 2 = 16.\nContinue the process up to 10 twos and down to 1 two.\n\n                                                                                                                  NOTES ON\nApplication Problem (8 minutes)                                                                                   MULTIPLE MEANS\n                                                                                                                  OF REPRESENTATION:\nTrista uses all seven of her tangram pieces to make a square as                                         Scaffold the Application Problem with\nshown. One side of the large square is 4 inches long. What is                                           questions such as the following:\nthe total area of the two large triangles? Explain your answer.                                              What do you know about the sides\n                                                                                                              of a square?\n                                                                                                             What other measures can you\n                                                                                                              label?\n                                                                                                             What is the area of the square?\n                   4 in                                                                                      Shade the two large triangles.\n                                                                                                              What is the shaded fraction of the\n                                                                                                              square?\n                                                                                                             What is the area of the two large\n                                                                                                              triangles?\n\n\n                          Lesson 10:                   Decompose quadrilaterals to understand perimeter as the boundary                            140\n                                                       of a shape.\n\n                          ©2015 Great Minds. eureka-math.org\n                            G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 142 (concept-development) ---\nA STORY OF UNITS                                                                                                  Lesson 10 3 7\n\n\nNote: This problem reviews the work done with tangrams in Lessons 8 and 9. It also reviews the concept of\narea from Module 4. Students may not immediately recognize that the two large triangles make up half of\nthe square. If necessary, have them use tangram pieces to demonstrate this before solving.\n\n\nConcept Development (30 minutes)\n\nMaterials: (T) 2″ square on cardstock, scissors, tape (S) 2″ square on cardstock, tape, crayons, Problem Set,\n           scissors, black marker, red marker, white string\n\nProblem 1: Decompose a square to define perimeter.\nNote: Students should save the shape created here for Lesson 11.\nUse a 2-inch square to answer the questions below.\n    a.   Trace the square in the space below with a red crayon.\n    b.   Trace the new shape you made with the square in the space below with a red crayon.\n    c.   Which shape has a greater perimeter? How do you know?\n    d.   Color the inside of the shapes in Problem 1 (a) and (b) with a blue crayon.\n    e.   Which color represents the perimeters of the shapes? How do you know?\n    f.   What does the other color represent? How do you know?\n    g.   Which shape has a greater area? How do you know?\n\n    T:   (Give each student a 2-inch square.) Trace your 2-inch square in Problem 1(a) with a red crayon.\n    S:   (Trace the square with a red crayon.)\n    T:   (Distribute the white string.) Work with your partner to wrap the string around the outside edges of\n         your square. (Model.) Partner A, hold the string in place. Partner B, use the black marker to mark\n         the string where it meets the end after going all the way around once.\n    S:   (Mark the string.)\n    T:   Switch roles to help your partner mark his string.\n    S:   (Switch roles and mark the string.)\n\n\n                       Lesson 10:                 Decompose quadrilaterals to understand perimeter as the boundary              141\n                                                  of a shape.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 143 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                Lesson 10 3 7\n\n\n       T:   Set your string aside. Draw a path from the top right-hand corner of\n            the square to the bottom right-hand corner. Be creative! Your path\n            shouldn’t be straight, but you will cut along it. Keep that in mind as\n            you draw. (Model.)\n       S:   (Draw the path.)\n       T:   Carefully cut along your path. (Model.)\n       S:   (Cut along the path.)\n       T:   Use your finger to trace around the edge of the piece you cut out. We\n            call the boundary of the shape its perimeter. Say the word to yourself\n            as you trace.\n       S:   Perimeter. (Trace with finger.)\n       T:   Slide the piece that you cut out to the opposite side of your square.\n            Line up the straight edge of the piece that you cut out with the edge of\n            the square. Tape the pieces together, making sure that there aren’t\n            any gaps. (Model.)\n       S:   (Slide and tape.)\n       T:   What happened to the perimeter of the shape you cut out?\n       S:   It got curvy instead of straight.  Two sides changed, and two sides\n            stayed the same.  Part of it is stuck to the square.  The new\n            perimeter is the edge of the whole new shape we made by taping.\n       T:   Work with a partner to wrap your string around your new shape. This time, use the red marker to\n            mark the string where it meets the end after going all the way around once. Then, switch roles so\n            your partner can mark her string.\nMP.3\n       S:   (Mark the string.)\n       T:   The marks on your string represent the perimeters of the square and your new shape. Talk to a\n            partner. Compare the perimeters of the square and your new shape.\n       S:   The perimeter of my new shape is greater than the perimeter of the square.  Yeah! Mine too!\n       T:   Did the area of the square change when you made your new shape? Talk to a partner.\n       S:   We didn’t get rid of any part of the square; we just changed the way it looks.  Yeah. The same\n            amount of space is covered, so the area stays the same.\n       T:   Follow the directions to complete Problem 1(b–g) on your Problem Set. (Allow students time to\n            work.) Which color in Problem 1 (a) and (b) represents the perimeter of the shapes?\n       S:   Red!\n       T:   What does the color blue represent?\n       S:   Area!\n\n  Problem Set (5 minutes)\n  Students should do their personal best to complete Problems 2 and 3 of the Problem Set within the allotted\n  5 minutes.\n\n\n                          Lesson 10:                Decompose quadrilaterals to understand perimeter as the boundary              142\n                                                    of a shape.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 144 (debrief) ---\nA STORY OF UNITS                                                                                                  Lesson 10 3 7\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Decompose quadrilaterals to\nunderstand perimeter as the boundary of a shape.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Does the shape you drew in Problem 1(a) have\n         the same perimeter as the shape your partner\n         drew for Problem 1(a)? How do you know?\n        Use your string to compare the perimeter of your\n         new shape to your partner’s. Whose shape has a\n         greater perimeter? How do you know?\n        How is area different from perimeter? Why did\n         the perimeter of the shape change but the area\n         stay the same?\n        Explain to a partner how you could use your piece\n         of string to figure out which shape has the\n         greatest perimeter in Problem 2.\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                        Lesson 10:                Decompose quadrilaterals to understand perimeter as the boundary              143\n                                                  of a shape.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 145 (template) ---\nA STORY OF UNITS                                                                      Lesson 10 Pattern Sheet 3 7\n\n\n       Multiply\n\n\nmultiply by 7 (1–5)\n\n\n                      Lesson 10:                Decompose quadrilaterals to understand perimeter as the boundary   144\n                                                of a shape.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 146 (problem-set) ---\nA STORY OF UNITS                                                                        Lesson 10 Problem Set 3 7\n\n\nName                                                                                          Date\n\n1. Use a 2-inch square to answer the questions below.\n   a. Trace the square in the space below with a red crayon.\n\n\n   b. Trace the new shape you made with the square in the space below with a red crayon.\n\n\n   c. Which shape has a greater perimeter? How do you know?\n\n\n   d. Color the inside of the shapes in Problem 1 (a) and (b) with a blue crayon.\n\n\n                      Lesson 10:                Decompose quadrilaterals to understand perimeter as the boundary   145\n                                                of a shape.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 147 (problem-set) ---\nA STORY OF UNITS                                                                          Lesson 10 Problem Set 3 7\n\n\n    e. Which color represents the perimeters of the shapes? How do you know?\n\n\n    f.   What does the other color represent? How do you know?\n\n\n    g. Which shape has a greater area? How do you know?\n\n\n2. a. Outline the perimeter of the shapes below with a red crayon.\n\n\n    b. Explain how you know you outlined the perimeters of the shapes above.\n\n\n3. Outline the perimeter of this piece of paper with a highlighter.\n\n\n                       Lesson 10:                 Decompose quadrilaterals to understand perimeter as the boundary   146\n                                                  of a shape.\n\n                       ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 148 (exit-ticket) ---\nA STORY OF UNITS                                                                              Lesson 10 Exit Ticket 3 7\n\n\nName                                                                                            Date\n\nJason paints the outside edges of a rectangle purple. Celeste paints the inside of the rectangle yellow.\n1. Use your crayons to color the rectangle that Jason and Celeste painted.\n\n\n2. Which color represents the perimeter of the rectangle? How do you know?\n\n\n                        Lesson 10:                Decompose quadrilaterals to understand perimeter as the boundary     147\n                                                  of a shape.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 149 (homework) ---\nA STORY OF UNITS                                                                          Lesson 10 Homework 3 7\n\n\nName                                                                                          Date\n\n1. Trace the perimeter of the shapes below.\n\n\n   a. Explain how you know you traced the perimeters of the shapes above.\n\n\n   b. Explain how you could use a string to figure out which shape above has the greatest perimeter.\n\n\n                      Lesson 10:                Decompose quadrilaterals to understand perimeter as the boundary   148\n                                                of a shape.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 150 (homework) ---\nA STORY OF UNITS                                                                          Lesson 10 Homework 3 7\n\n\n2. Draw a rectangle on the grid below.\n\n\n   a. Trace the perimeter of the rectangle.\n   b. Shade the area of the rectangle.\n   c. How is the perimeter of the rectangle different from the area of the rectangle?\n\n\n3. Maya draws the shape shown below. Noah colors the inside of Maya’s shape as shown. Noah says he\n   colored the perimeter of Maya’s shape. Maya says Noah colored the area of her shape. Who is right?\n   Explain your answer.\n\n\n                      Lesson 10:                Decompose quadrilaterals to understand perimeter as the boundary   149\n                                                of a shape.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 146,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                        Lesson 10 Problem Set 3 7\n\n\nName                                                                                          Date\n\n1. Use a 2-inch square to answer the questions below.\n   a. Trace the square in the space below with a red crayon.\n\n\n   b. Trace the new shape you made with the square in the space below with a red crayon.\n\n\n   c. Which shape has a greater perimeter? How do you know?\n\n\n   d. Color the inside of the shapes in Problem 1 (a) and (b) with a blue crayon.\n\n\n                      Lesson 10:                Decompose quadrilaterals to understand perimeter as the boundary   145\n                                                of a shape.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 147,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                          Lesson 10 Problem Set 3 7\n\n\n    e. Which color represents the perimeters of the shapes? How do you know?\n\n\n    f.   What does the other color represent? How do you know?\n\n\n    g. Which shape has a greater area? How do you know?\n\n\n2. a. Outline the perimeter of the shapes below with a red crayon.\n\n\n    b. Explain how you know you outlined the perimeters of the shapes above.\n\n\n3. Outline the perimeter of this piece of paper with a highlighter.\n\n\n                       Lesson 10:                 Decompose quadrilaterals to understand perimeter as the boundary   146\n                                                  of a shape.\n\n                       ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 478,
+        "text": "A STORY OF UNITS                                                                               Lesson 10 Answer Key 3 7\n\n\nLesson 10\nPattern Sheet\n             7                                               14                                21                  28\n             35                                              7                                 14                   7\n             21                                              7                                 28                   7\n             35                                              7                                 14                  21\n             14                                              28                                14                  35\n             14                                              7                                 14                  21\n             7                                               21                                14                  21\n             28                                              21                                35                  21\n             28                                              7                                 28                  14\n             28                                              21                                28                  35\n             28                                              35                                7                   35\n             14                                              35                                21                  35\n             28                                              14                                28                  21\n             35                                              21                                14                  28\n             21                                              35                                14                  28\n\n\nProblem Set\n1.    a. 2-inch square traced with red crayon\n      b. New shape traced with red crayon\n      c. Answers will vary.\n      d. Shapes colored with blue crayon\n      e. Red; explanations will vary.\n      f.   Area; explanations will vary.\n      g. Neither; explanations will vary.\n2.    a. Perimeters of shapes outlined with red crayon\n      b. Explanations will vary.\n3.    Paper outlined with highlighter\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                              477\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 479,
+        "text": "A STORY OF UNITS                                                                          Lesson 10 Answer Key 3 7\n\n\nExit Ticket\n1.    Outside edges colored purple; inside colored yellow\n2.    Purple; explanations will vary.\n\n\nHomework\n1.    Perimeter of each shape traced\n      a. Explanations will vary.\n      b. Explanations will vary.\n2.    Rectangle drawn on grid\n      a. Perimeter traced\n      b. Area shaded\n      c. Explanations will vary.\n3.    Maya; explanations will vary.\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                         478\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      }
+    ]
+  }
+}

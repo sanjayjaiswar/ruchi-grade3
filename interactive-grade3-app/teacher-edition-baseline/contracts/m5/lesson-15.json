@@ -1,0 +1,453 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m5-l15",
+  "moduleId": "m5",
+  "lessonNumber": 15,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+    "teacherEditionBytes": 17797697,
+    "lessonPdfPages": {
+      "start": 178,
+      "end": 187
+    },
+    "problemSetPdfPages": [
+      183,
+      184
+    ],
+    "exitTicketPdfPages": [
+      185
+    ],
+    "homeworkPdfPages": [
+      186,
+      187
+    ],
+    "answerKeyPdfPages": [
+      392,
+      393
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m5-student/workbook-page-061.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m5-teacher/page-183.png",
+      "/source-pages/m5-teacher/page-184.png",
+      "/source-pages/m5-teacher/page-392.png",
+      "/source-pages/m5-teacher/page-393.png"
+    ]
+  },
+  "objective": "Place any fraction on a number line with endpoints 0 and 1.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.                                                        students working above grade level to\n                                                                                                       complete the entire Problem Set with\n                                                                                                       excellence.",
+    "conceptDevelopmentText": "Materials: (S) Personal white board\n\nProblem 1: Locate the point 2 thirds on a number line.\n    T:   2 thirds. How many equal parts are in the whole?\n    S:   Three.\n    T:   How many of those equal parts have been counted?\n    S:   Two.\n    T:   Count up to 2 thirds, starting at 1 third.\n    S:   1 third, 2 thirds.\n    T:   Draw a 2-part number bond of 1 whole with 1 part as 2 thirds.\n    S:   (Draw a number bond.)\n\n\n                        Lesson 15:                 Place any fraction on a number line with endpoints 0 and 1.                                  178\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                              Lesson 15 3 5\n\n\n    T:   What is the unknown part?\n    S:   1 third.\n    T:   Draw a number line with endpoints of 0 and 1—with 0 thirds\n         and 3 thirds—to match your number bond.\n    S:   (Draw a number line, and label the endpoints.)\n    T:   Mark off your thirds without labeling the fractions.\n    S:   (Mark the thirds.)\n    T:   Slide your finger along the length of the first part of your\n         number bond. Speak the fraction as you do.\n    S:   2 thirds (sliding up to the point 2 thirds).\n    T:   Label that point as 2 thirds.\n    S:   (Label 2 thirds.)\n    T:   Put your finger back on 2 thirds. Slide and speak the next part.\n    S:   1 third.\n    T:   At what point are you now?\n    S:   3 thirds or 1 whole.\n    T:   Our number bond is complete.\n\nProblem 2: Locate the point 3 fifths on a number line.\n    T:   3 fifths. How many equal parts are in the whole?\n    S:   Five.\n    T:   How many of those equal parts have been counted?\n    S:   Three.\n    T:   Count up to 3 fifths, starting at 1 fifth.\n    S:   1 fifth, 2 fifths, 3 fifths.\n    T:   Draw a 2-part number bond of 1 whole with 1 part as 3\n         fifths.\n    S:   (Draw a number bond.)\n    T:   What is the unknown part?\n    S:   2 fifths.\n    T:   Draw a number line with endpoints of 0 and 1—with 0 fifths and 5 fifths—to match your number\n         bond.\n    S:   (Draw a number line, and label the endpoints.)\n    T:   Mark off your fifths without labeling the fractions.\n    S:   (Mark the fifths.)\n    T:   Slide your finger along the length of the first part of your number. Speak the fraction as you do.\n    S:   3 fifths (sliding up to the point 3 fifths).\n\n\n                       Lesson 15:                  Place any fraction on a number line with endpoints 0 and 1.              179\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                    Lesson 15 3 5\n\n\n    T:   Label that point as 3 fifths.\n    S:   (Label 3 fifths.)\n    T:   Put your finger back on 3 fifths. Slide and speak the next part.\n    S:   2 fifths.\n    T:   At what point are you now?\n    S:   5 fifths or 1 whole.\n    T:   Our number bond is complete.\nRepeat the process with other fractions such as 3 fourths, 6 eighths, 2 sixths, and 1 seventh. Release the\nstudents to work independently as they demonstrate their skills and understanding.",
+    "fluencyPracticeText": " Counting by Fractional Units 3.NF.1, 3.NF.3c                                                       (3 minutes)\n Division 3.OA.2                                                                                    (3 minutes)\n Place Unit Fractions on a Number Line Between 0 and 1 3.NF.2a                                      (3 minutes)\n\nCounting by Fractional Units (3 minutes)\nNote: This activity reviews counting by fractional units and supports students as they work with fractions on\nthe number line in Topic D.\n    T: Count by fourths from 1 fourth to 8 fourths and back to 0.\n         1 2 3 4 5 6 7 8 7 6 5 4 3 2 1\n    S:    , , , , , , , , , , , , , , , 0.\n         4 4 4 4 4 4 4 4 4 4 4 4 4 4 4\n\nContinue with the following possible sequence: thirds, halves, and fifths.\n\nDivision (3 minutes)\nNote: This activity supports fluency with division facts.\n    T:   (Write 4 ÷ 4 =     .) Say the number sentence and answer.\n    S:   4 divided by 4 equals 1.\nContinue with the following possible sequence: 4 ÷ 2, 4 ÷ 1, 10 ÷ 10, 10 ÷ 5, 10 ÷ 2, 10 ÷ 1, 6 ÷ 6, 6 ÷ 3, 6 ÷ 1,\n8 ÷ 8, 8 ÷ 4, 8 ÷ 2, 8 ÷ 1, 15 ÷ 15, 15 ÷ 5, 15 ÷ 3, 15 ÷ 1, 12 ÷ 12, 12 ÷ 6, 12 ÷ 4, 12 ÷ 3, 12 ÷ 2, 12 ÷ 1, 16 ÷ 16,\n16 ÷ 8, 16 ÷ 4, 16 ÷ 2, and 16 ÷ 1.\n\n\n                         Lesson 15:                 Place any fraction on a number line with endpoints 0 and 1.               177\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                     Lesson 15 3 5\n\n\nPlace Unit Fractions on a Number Line Between 0 and 1 (3 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews the concept of placing unit fractions\non a number line from Lesson 14.                                                                                 NOTES ON\n    T:   (Draw a number line with endpoints 0 and 1.) Draw my                                                    MULTIPLE MEANS\n         number line on your personal white board.                                                               OF REPRESENTATION:\n    S:   (Draw.)                                                                                       As students estimate to equally\n                                                                                                       partition fourths and eighths on the\n    T:   Estimate to show and label 1 half.                                                            number line, guide them to begin by\n    S:   (Estimate the halfway point between 0 and 1, and                                              finding the midpoint—first by drawing\n               1                                                                                       2 equal parts and then continuing\n         write .)\n               2                                                                                       halving until the desired unit fraction is\n                                                                   1 1 1 1 1                           created.\nContinue with the following possible sequence:                       , , , , ,\n                                                                   10 4 8 3 5\n    1\nand 6.",
+    "problemSetGuidanceText": "Students should do their personal best to complete the Problem                                                   NOTES ON\nSet within the allotted 10 minutes. For some classes, it may be                                                  MULTIPLE MEANS\nappropriate to modify the assignment by specifying which                                                         OF ENGAGEMENT:\nproblems they work on first. Some problems do not specify a                                            The Problem Set offers practice of\nmethod for solving. Students should solve these problems using                                         increasing difficulty. Expect and coach\nthe RDW approach used for Application Problems.                                                        students working above grade level to\n                                                                                                       complete the entire Problem Set with\n                                                                                                       excellence.",
+    "studentDebriefText": ", instruct students to complete the Exit                                      language, build confidence and\nTicket. A review of their work will help with assessing students’                                      comfort, and communicate high\nunderstanding of the concepts that were presented in today’s                                           expectations for English language\nlesson and planning more effectively for future lessons. The                                           learners’ participation.\nquestions may be read aloud to the students.\n\n\n                        Lesson 15:                 Place any fraction on a number line with endpoints 0 and 1.                                 181\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "2 thirds. How many equal parts are in the whole?"
+      },
+      {
+        "speaker": "students",
+        "text": "Three."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many of those equal parts have been counted?"
+      },
+      {
+        "speaker": "students",
+        "text": "Two."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Count up to 2 thirds, starting at 1 third."
+      },
+      {
+        "speaker": "students",
+        "text": "1 third, 2 thirds."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a 2-part number bond of 1 whole with 1 part as 2 thirds."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a number bond.) ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 15 3 5"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the unknown part?"
+      },
+      {
+        "speaker": "students",
+        "text": "1 third."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a number line with endpoints of 0 and 1—with 0 thirds and 3 thirds—to match your number bond."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a number line, and label the endpoints.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Mark off your thirds without labeling the fractions."
+      },
+      {
+        "speaker": "students",
+        "text": "(Mark the thirds.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Slide your finger along the length of the first part of your number bond. Speak the fraction as you do."
+      },
+      {
+        "speaker": "students",
+        "text": "2 thirds (sliding up to the point 2 thirds)."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label that point as 2 thirds."
+      },
+      {
+        "speaker": "students",
+        "text": "(Label 2 thirds.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Put your finger back on 2 thirds. Slide and speak the next part."
+      },
+      {
+        "speaker": "students",
+        "text": "1 third."
+      },
+      {
+        "speaker": "teacher",
+        "text": "At what point are you now?"
+      },
+      {
+        "speaker": "students",
+        "text": "3 thirds or 1 whole."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Our number bond is complete."
+      },
+      {
+        "speaker": "teacher",
+        "text": "3 fifths. How many equal parts are in the whole?"
+      },
+      {
+        "speaker": "students",
+        "text": "Five."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many of those equal parts have been counted?"
+      },
+      {
+        "speaker": "students",
+        "text": "Three."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Count up to 3 fifths, starting at 1 fifth."
+      },
+      {
+        "speaker": "students",
+        "text": "1 fifth, 2 fifths, 3 fifths."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a 2-part number bond of 1 whole with 1 part as 3 fifths."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a number bond.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the unknown part?"
+      },
+      {
+        "speaker": "students",
+        "text": "2 fifths."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a number line with endpoints of 0 and 1—with 0 fifths and 5 fifths—to match your number bond."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a number line, and label the endpoints.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Mark off your fifths without labeling the fractions."
+      },
+      {
+        "speaker": "students",
+        "text": "(Mark the fifths.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Slide your finger along the length of the first part of your number. Speak the fraction as you do."
+      },
+      {
+        "speaker": "students",
+        "text": "3 fifths (sliding up to the point 3 fifths). ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 15 3 5"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label that point as 3 fifths."
+      },
+      {
+        "speaker": "students",
+        "text": "(Label 3 fifths.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Put your finger back on 3 fifths. Slide and speak the next part."
+      },
+      {
+        "speaker": "students",
+        "text": "2 fifths."
+      },
+      {
+        "speaker": "teacher",
+        "text": "At what point are you now?"
+      },
+      {
+        "speaker": "students",
+        "text": "5 fifths or 1 whole."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Our number bond is complete. Repeat the process with other fractions such as 3 fourths, 6 eighths, 2 sixths, and 1 seventh. Release the students to work independently as they demonstrate their skills and understanding."
+      }
+    ],
+    "teacherPrompts": [
+      "2 thirds. How many equal parts are in the whole?",
+      "How many of those equal parts have been counted?",
+      "Count up to 2 thirds, starting at 1 third.",
+      "Draw a 2-part number bond of 1 whole with 1 part as 2 thirds.",
+      "What is the unknown part?",
+      "Draw a number line with endpoints of 0 and 1—with 0 thirds and 3 thirds—to match your number bond.",
+      "Mark off your thirds without labeling the fractions.",
+      "Slide your finger along the length of the first part of your number bond. Speak the fraction as you do.",
+      "Label that point as 2 thirds.",
+      "Put your finger back on 2 thirds. Slide and speak the next part.",
+      "At what point are you now?",
+      "Our number bond is complete.",
+      "3 fifths. How many equal parts are in the whole?",
+      "How many of those equal parts have been counted?",
+      "Count up to 3 fifths, starting at 1 fifth.",
+      "Draw a 2-part number bond of 1 whole with 1 part as 3 fifths.",
+      "What is the unknown part?",
+      "Draw a number line with endpoints of 0 and 1—with 0 fifths and 5 fifths—to match your number bond.",
+      "Mark off your fifths without labeling the fractions.",
+      "Slide your finger along the length of the first part of your number. Speak the fraction as you do.",
+      "Label that point as 3 fifths.",
+      "Put your finger back on 3 fifths. Slide and speak the next part.",
+      "At what point are you now?",
+      "Our number bond is complete. Repeat the process with other fractions such as 3 fourths, 6 eighths, 2 sixths, and 1 seventh. Release the students to work independently as they demonstrate their skills and understanding."
+    ],
+    "debriefPrompt": "How does the number bond relate to the number line?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Estimate to label the given fractions on the number line. Be sure to label the fractions at 0 and 1. Write the fractions above the number line. Draw a number bond to match your number line. 0 3 1 3 3 2 𝟐𝟐 𝟏𝟏 a. 𝟑𝟑 3 𝟑𝟑 0 1 b. 0 1 c. 0 1 d. 0 1 e. 0 1 Draw a number line. Use a fraction strip to locate 0 and 1. Fold the strip to make 8 equal parts. Use the strip to measure and label your number line with eighths. Count up from 0 eighths to 8 eighths on your number line. Touch each number with your finger as you count. 3. For his boat, James stretched out a rope with 5 equally spaced knots as shown. a. Starting at the first knot and ending at the last knot, how many equal parts are formed by the 5 knots? Label each fraction at the knot. b. What fraction of the rope is labeled at the third knot? c. What if the rope had 6 equally spaced knots along the same length? What fraction of the rope would be measured by the first 2 knots?",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                            Lesson 15 Problem Set 3 5\n\n\nName                                                                                                Date\n\n1. Estimate to label the given fractions on the number line. Be sure to label the fractions at 0 and 1.\n   Write the fractions above the number line. Draw a number bond to match your number line.\n\n\n           0                                                                                                     3            1\n           3                                                                                                     3\n\n     2                                                                                                                   𝟐𝟐       𝟏𝟏\na.                                                                                                                       𝟑𝟑\n     3                                                                                                                            𝟑𝟑\n            0                                                                                                    1\n\n\n     3\nb.\n     4\n            0                                                                                                    1\n\n\n     3\nc.\n     5\n            0                                                                                                    1\n\n\n     5\nd.\n     6\n            0                                                                                                    1\n\n\n     3\ne.\n     10\n            0                                                                                                        1\n\n\n                        Lesson 15:                 Place any fraction on a number line with endpoints 0 and 1.                    182\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                             Lesson 15 Problem Set 3 5\n\n\n2. Draw a number line. Use a fraction strip to locate 0 and 1. Fold the strip to make 8 equal parts. Use the\n   strip to measure and label your number line with eighths.\n\n\n    Count up from 0 eighths to 8 eighths on your number line. Touch each number with your finger as you\n    count.\n\n\n3. For his boat, James stretched out a rope with 5 equally spaced knots as shown.\n\n\n    a. Starting at the first knot and ending at the last knot, how many equal parts are formed by the 5\n       knots? Label each fraction at the knot.\n\n\n    b. What fraction of the rope is labeled at the third knot?\n\n\n    c. What if the rope had 6 equally spaced knots along the same length? What fraction of the rope would\n       be measured by the first 2 knots?\n\n\n                       Lesson 15:                 Place any fraction on a number line with endpoints 0 and 1.          183\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "answerKeyProblemSetText": "0 2 3\n1.    a. Number line partitioned into thirds and labeled correctly with 3 , 3 , 3; answer provided\n                                                                                                 0 3 4                    3\n      b. Number line partitioned into fourths and labeled correctly with 4 , 4 , 4; number bond showing 4\n               1\n           and 4 equals 1 whole\n                                                                                                0 3 5                 3           2\n      c. Number line partitioned into fifths and labeled correctly with 5 , 5 , 5; number bond showing 5 and 5\n           equals 1 whole\n                                                                                                0 5 6                 5\n      d. Number line partitioned into sixths and labeled correctly with 6 , 6 , 6; number bond showing 6 and\n           1\n             equals 1 whole\n           6\n                                                                                                 0   3       10               3\n      e. Number line partitioned into tenths and labeled correctly with 10 , 10 , 10; number bond showing 10\n               7\n           and 10 equals 1 whole\n\n2.    Number line drawn with 0 and 1 labeled correctly; fraction strip used appropriately to partition and\n                                                                                                         0    8\n      label a number line to show eighths; number line labeled correctly from 8 to 8\n                                                                          0    4\n3.    a. 4 equal parts; rope labeled correctly from 4 to 4\n           2\n      b.\n           4\n           1\n      c.\n           5",
+    "answerKeyText": "A STORY OF UNITS                                                                           Lesson 15 Answer Key 3 5\n\n\nLesson 15\nProblem Set\n                                                                                                0 2 3\n1.    a. Number line partitioned into thirds and labeled correctly with 3 , 3 , 3; answer provided\n                                                                                                 0 3 4                    3\n      b. Number line partitioned into fourths and labeled correctly with 4 , 4 , 4; number bond showing 4\n               1\n           and 4 equals 1 whole\n                                                                                                0 3 5                 3           2\n      c. Number line partitioned into fifths and labeled correctly with 5 , 5 , 5; number bond showing 5 and 5\n           equals 1 whole\n                                                                                                0 5 6                 5\n      d. Number line partitioned into sixths and labeled correctly with 6 , 6 , 6; number bond showing 6 and\n           1\n             equals 1 whole\n           6\n                                                                                                 0   3       10               3\n      e. Number line partitioned into tenths and labeled correctly with 10 , 10 , 10; number bond showing 10\n               7\n           and 10 equals 1 whole\n\n2.    Number line drawn with 0 and 1 labeled correctly; fraction strip used appropriately to partition and\n                                                                                                         0    8\n      label a number line to show eighths; number line labeled correctly from 8 to 8\n                                                                          0    4\n3.    a. 4 equal parts; rope labeled correctly from 4 to 4\n           2\n      b.\n           4\n           1\n      c.\n           5\n\n\nExit Ticket\n                                                                                             0 3 5                3       2\n1.    Number line partitioned into fifths and labeled correctly with , , ; number bond showing and\n                                                                                             5 5 5                5       5\n\n      equals 1 whole\n                                                             1 3 5\n2.    Number line partitioned into sixths; 6 , 6 , 6 placed correctly on the number line\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                                    391\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                        Lesson 15 Answer Key 3 5\n\n\nHomework\n1.    a. Answer provided\n                                                                                             0 3 6                3           3\n      b. Number line partitioned into sixths and labeled correctly with , , ; number bond showing and\n                                                                                             6 6 6                6           6\n          equals 1 whole\n                                                                                             0 2 5                2           3\n      c. Number line partitioned into fifths and labeled correctly with 5, 5, 5; number bond showing 5 and 5\n          equals 1 whole\n                                                                                              0    7 10                   7\n      d. Number line partitioned into tenths and labeled correctly with 10, 10, 10; number bond showing 10\n               3\n          and 10 equals 1 whole\n                                                                                                  0 3 7               3\n      e. Number line partitioned into sevenths and labeled correctly with 7, 7, 7; number bond showing 7\n               4\n          and 7 equals 1 whole\n                   5                9                  2\n2.    a. Henry: 10; Ben: 10; Tina: 10\n                                                                   2 5 9\n      b. Number line partitioned into tenths;                        , , placed correctly on the number line\n                                                                   10 10 10\n\n3.    a. Number line drawn with 0 and 1 labeled correctly; fraction strip used appropriately to partition and\n                                                                                                          0   8\n           label number line to show eighths; number line labeled correctly from to\n                                                                                                          8   8\n      b. Touched and counted each fraction from 0 eighths to 8 eighths\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                                392\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "number-bond",
+      "number-line",
+      "ruler-or-length",
+      "fraction-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "number-bond": [
+        "T: Draw a 2-part number bond of 1 whole with 1 part as 2 thirds.",
+        "S: (Draw a number bond.)",
+        "and 3 thirds—to match your number bond.",
+        "number bond. Speak the fraction as you do.",
+        "T: Our number bond is complete.",
+        "T: Draw a 2-part number bond of 1 whole with 1 part as 3",
+        "S: (Draw a number bond.)",
+        "T: Our number bond is complete."
+      ],
+      "number-line": [
+        "Place any fraction on a number line with endpoints 0 and 1.",
+        "Problem 1: Locate the point 2 thirds on a number line.",
+        "Lesson 15: Place any fraction on a number line with endpoints 0 and 1. 178",
+        "T: Draw a number line with endpoints of 0 and 1—with 0 thirds",
+        "S: (Draw a number line, and label the endpoints.)",
+        "Problem 2: Locate the point 3 fifths on a number line.",
+        "T: Draw a number line with endpoints of 0 and 1—with 0 fifths and 5 fifths—to match your number",
+        "S: (Draw a number line, and label the endpoints.)"
+      ],
+      "ruler-or-length": [
+        "T: Slide your finger along the length of the first part of your",
+        "T: Slide your finger along the length of the first part of your number. Speak the fraction as you do.",
+        "c. What if the rope had 6 equally spaced knots along the same length? What fraction of the rope would"
+      ],
+      "fraction-model": [
+        "Problem 1: Locate the point 2 thirds on a number line.",
+        "T: 2 thirds. How many equal parts are in the whole?",
+        "T: How many of those equal parts have been counted?",
+        "T: Count up to 2 thirds, starting at 1 third.",
+        "S: 1 third, 2 thirds.",
+        "T: Draw a 2-part number bond of 1 whole with 1 part as 2 thirds.",
+        "T: Draw a number line with endpoints of 0 and 1—with 0 thirds",
+        "and 3 thirds—to match your number bond."
+      ],
+      "picture-or-drawing": [
+        "T: Draw a 2-part number bond of 1 whole with 1 part as 2 thirds.",
+        "S: (Draw a number bond.)",
+        "T: Draw a number line with endpoints of 0 and 1—with 0 thirds",
+        "S: (Draw a number line, and label the endpoints.)",
+        "T: Draw a 2-part number bond of 1 whole with 1 part as 3",
+        "S: (Draw a number bond.)",
+        "T: Draw a number line with endpoints of 0 and 1—with 0 fifths and 5 fifths—to match your number",
+        "S: (Draw a number line, and label the endpoints.)"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "How many of those equal parts have been counted?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Count up to 2 thirds, starting at 1 third."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a 2-part number bond of 1 whole with 1 part as 2 thirds."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a number bond.) ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 15 3 5"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a number line with endpoints of 0 and 1—with 0 thirds and 3 thirds—to match your number bond."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a number line, and label the endpoints.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Mark off your thirds without labeling the fractions."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label that point as 2 thirds."
+      },
+      {
+        "speaker": "students",
+        "text": "(Label 2 thirds.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many of those equal parts have been counted?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Count up to 3 fifths, starting at 1 fifth."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a 2-part number bond of 1 whole with 1 part as 3 fifths."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a number bond.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a number line with endpoints of 0 and 1—with 0 fifths and 5 fifths—to match your number bond."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a number line, and label the endpoints.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Mark off your fifths without labeling the fractions."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label that point as 3 fifths."
+      },
+      {
+        "speaker": "students",
+        "text": "(Label 3 fifths.)"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 178 (debrief) ---\nA STORY OF UNITS                                                                                               Lesson 15 3 5\n\n\nLesson 15\nObjective: Place any fraction on a number line with endpoints 0 and 1.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (9 minutes)\n Application Problem               (7 minutes)\n Concept Development               (35 minutes)\n Student Debrief                   (9 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (9 minutes)\n\n Counting by Fractional Units 3.NF.1, 3.NF.3c                                                       (3 minutes)\n Division 3.OA.2                                                                                    (3 minutes)\n Place Unit Fractions on a Number Line Between 0 and 1 3.NF.2a                                      (3 minutes)\n\nCounting by Fractional Units (3 minutes)\nNote: This activity reviews counting by fractional units and supports students as they work with fractions on\nthe number line in Topic D.\n    T: Count by fourths from 1 fourth to 8 fourths and back to 0.\n         1 2 3 4 5 6 7 8 7 6 5 4 3 2 1\n    S:    , , , , , , , , , , , , , , , 0.\n         4 4 4 4 4 4 4 4 4 4 4 4 4 4 4\n\nContinue with the following possible sequence: thirds, halves, and fifths.\n\nDivision (3 minutes)\nNote: This activity supports fluency with division facts.\n    T:   (Write 4 ÷ 4 =     .) Say the number sentence and answer.\n    S:   4 divided by 4 equals 1.\nContinue with the following possible sequence: 4 ÷ 2, 4 ÷ 1, 10 ÷ 10, 10 ÷ 5, 10 ÷ 2, 10 ÷ 1, 6 ÷ 6, 6 ÷ 3, 6 ÷ 1,\n8 ÷ 8, 8 ÷ 4, 8 ÷ 2, 8 ÷ 1, 15 ÷ 15, 15 ÷ 5, 15 ÷ 3, 15 ÷ 1, 12 ÷ 12, 12 ÷ 6, 12 ÷ 4, 12 ÷ 3, 12 ÷ 2, 12 ÷ 1, 16 ÷ 16,\n16 ÷ 8, 16 ÷ 4, 16 ÷ 2, and 16 ÷ 1.\n\n\n                         Lesson 15:                 Place any fraction on a number line with endpoints 0 and 1.               177\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 179 (concept-development) ---\nA STORY OF UNITS                                                                                                     Lesson 15 3 5\n\n\nPlace Unit Fractions on a Number Line Between 0 and 1 (3 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews the concept of placing unit fractions\non a number line from Lesson 14.                                                                                 NOTES ON\n    T:   (Draw a number line with endpoints 0 and 1.) Draw my                                                    MULTIPLE MEANS\n         number line on your personal white board.                                                               OF REPRESENTATION:\n    S:   (Draw.)                                                                                       As students estimate to equally\n                                                                                                       partition fourths and eighths on the\n    T:   Estimate to show and label 1 half.                                                            number line, guide them to begin by\n    S:   (Estimate the halfway point between 0 and 1, and                                              finding the midpoint—first by drawing\n               1                                                                                       2 equal parts and then continuing\n         write .)\n               2                                                                                       halving until the desired unit fraction is\n                                                                   1 1 1 1 1                           created.\nContinue with the following possible sequence:                       , , , , ,\n                                                                   10 4 8 3 5\n    1\nand 6.\n\n\nApplication Problem (7 minutes)\n\nIn baseball, it is about 30 yards from home plate to first base. The\nbatter got tagged out about halfway to first base. About how many\nyards from home plate was he when he got tagged out? Draw a\nnumber line to show the point where he was when he got tagged out.\nNote: This problem reviews the concept of placing fractions on a\nnumber line from Lesson 14. It also reviews division by units of 2.\nInvite students to share their strategies for dividing 30 by 2.\n\n\nConcept Development (35 minutes)\n\nMaterials: (S) Personal white board\n\nProblem 1: Locate the point 2 thirds on a number line.\n    T:   2 thirds. How many equal parts are in the whole?\n    S:   Three.\n    T:   How many of those equal parts have been counted?\n    S:   Two.\n    T:   Count up to 2 thirds, starting at 1 third.\n    S:   1 third, 2 thirds.\n    T:   Draw a 2-part number bond of 1 whole with 1 part as 2 thirds.\n    S:   (Draw a number bond.)\n\n\n                        Lesson 15:                 Place any fraction on a number line with endpoints 0 and 1.                                  178\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 180 (lesson-instruction) ---\nA STORY OF UNITS                                                                                              Lesson 15 3 5\n\n\n    T:   What is the unknown part?\n    S:   1 third.\n    T:   Draw a number line with endpoints of 0 and 1—with 0 thirds\n         and 3 thirds—to match your number bond.\n    S:   (Draw a number line, and label the endpoints.)\n    T:   Mark off your thirds without labeling the fractions.\n    S:   (Mark the thirds.)\n    T:   Slide your finger along the length of the first part of your\n         number bond. Speak the fraction as you do.\n    S:   2 thirds (sliding up to the point 2 thirds).\n    T:   Label that point as 2 thirds.\n    S:   (Label 2 thirds.)\n    T:   Put your finger back on 2 thirds. Slide and speak the next part.\n    S:   1 third.\n    T:   At what point are you now?\n    S:   3 thirds or 1 whole.\n    T:   Our number bond is complete.\n\nProblem 2: Locate the point 3 fifths on a number line.\n    T:   3 fifths. How many equal parts are in the whole?\n    S:   Five.\n    T:   How many of those equal parts have been counted?\n    S:   Three.\n    T:   Count up to 3 fifths, starting at 1 fifth.\n    S:   1 fifth, 2 fifths, 3 fifths.\n    T:   Draw a 2-part number bond of 1 whole with 1 part as 3\n         fifths.\n    S:   (Draw a number bond.)\n    T:   What is the unknown part?\n    S:   2 fifths.\n    T:   Draw a number line with endpoints of 0 and 1—with 0 fifths and 5 fifths—to match your number\n         bond.\n    S:   (Draw a number line, and label the endpoints.)\n    T:   Mark off your fifths without labeling the fractions.\n    S:   (Mark the fifths.)\n    T:   Slide your finger along the length of the first part of your number. Speak the fraction as you do.\n    S:   3 fifths (sliding up to the point 3 fifths).\n\n\n                       Lesson 15:                  Place any fraction on a number line with endpoints 0 and 1.              179\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 181 (debrief) ---\nA STORY OF UNITS                                                                                                    Lesson 15 3 5\n\n\n    T:   Label that point as 3 fifths.\n    S:   (Label 3 fifths.)\n    T:   Put your finger back on 3 fifths. Slide and speak the next part.\n    S:   2 fifths.\n    T:   At what point are you now?\n    S:   5 fifths or 1 whole.\n    T:   Our number bond is complete.\nRepeat the process with other fractions such as 3 fourths, 6 eighths, 2 sixths, and 1 seventh. Release the\nstudents to work independently as they demonstrate their skills and understanding.\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the Problem                                                   NOTES ON\nSet within the allotted 10 minutes. For some classes, it may be                                                  MULTIPLE MEANS\nappropriate to modify the assignment by specifying which                                                         OF ENGAGEMENT:\nproblems they work on first. Some problems do not specify a                                            The Problem Set offers practice of\nmethod for solving. Students should solve these problems using                                         increasing difficulty. Expect and coach\nthe RDW approach used for Application Problems.                                                        students working above grade level to\n                                                                                                       complete the entire Problem Set with\n                                                                                                       excellence.\nStudent Debrief (9 minutes)\n\nLesson Objective: Place any fraction on a number line\nwith endpoints 0 and 1.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Student Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        How does the number bond relate to the number\n         line?\n        How do the number bond and number line with\n         fractions relate to the number bond and number\n         line with whole numbers?\n\n\n                        Lesson 15:                 Place any fraction on a number line with endpoints 0 and 1.                                   180\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 182 (debrief) ---\nA STORY OF UNITS                                                                                                   Lesson 15 3 5\n\n\n        Part–part–whole thinking has been in your life since\n         kindergarten. When might a kindergartener draw a                                                        NOTES ON\n         number bond? A first grader? Second grader? Third                                                       MULTIPLE MEANS\n         grader?                                                                                                 OF ACTION AND\n        When you think of a number bond, do you usually                                                         EXPRESSION:\n         think of chunks of things? To you, does using it with                                         Facilitate math meaning for English\n         the number line give it a new meaning? It does for me.                                        language learners through discussion.\n         Now, I see it can also be about distances on a line, too.                                     The daily debriefs and frequent Turn\n                                                                                                       and Talks in each lesson enhance the\nExit Ticket (3 minutes)                                                                                English language learners’\n                                                                                                       understanding of math concepts and\nAfter the Student Debrief, instruct students to complete the Exit                                      language, build confidence and\nTicket. A review of their work will help with assessing students’                                      comfort, and communicate high\nunderstanding of the concepts that were presented in today’s                                           expectations for English language\nlesson and planning more effectively for future lessons. The                                           learners’ participation.\nquestions may be read aloud to the students.\n\n\n                        Lesson 15:                 Place any fraction on a number line with endpoints 0 and 1.                                 181\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 183 (problem-set) ---\nA STORY OF UNITS                                                                            Lesson 15 Problem Set 3 5\n\n\nName                                                                                                Date\n\n1. Estimate to label the given fractions on the number line. Be sure to label the fractions at 0 and 1.\n   Write the fractions above the number line. Draw a number bond to match your number line.\n\n\n           0                                                                                                     3            1\n           3                                                                                                     3\n\n     2                                                                                                                   𝟐𝟐       𝟏𝟏\na.                                                                                                                       𝟑𝟑\n     3                                                                                                                            𝟑𝟑\n            0                                                                                                    1\n\n\n     3\nb.\n     4\n            0                                                                                                    1\n\n\n     3\nc.\n     5\n            0                                                                                                    1\n\n\n     5\nd.\n     6\n            0                                                                                                    1\n\n\n     3\ne.\n     10\n            0                                                                                                        1\n\n\n                        Lesson 15:                 Place any fraction on a number line with endpoints 0 and 1.                    182\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 184 (problem-set) ---\nA STORY OF UNITS                                                                             Lesson 15 Problem Set 3 5\n\n\n2. Draw a number line. Use a fraction strip to locate 0 and 1. Fold the strip to make 8 equal parts. Use the\n   strip to measure and label your number line with eighths.\n\n\n    Count up from 0 eighths to 8 eighths on your number line. Touch each number with your finger as you\n    count.\n\n\n3. For his boat, James stretched out a rope with 5 equally spaced knots as shown.\n\n\n    a. Starting at the first knot and ending at the last knot, how many equal parts are formed by the 5\n       knots? Label each fraction at the knot.\n\n\n    b. What fraction of the rope is labeled at the third knot?\n\n\n    c. What if the rope had 6 equally spaced knots along the same length? What fraction of the rope would\n       be measured by the first 2 knots?\n\n\n                       Lesson 15:                 Place any fraction on a number line with endpoints 0 and 1.          183\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 185 (exit-ticket) ---\nA STORY OF UNITS                                                                                 Lesson 15 Exit Ticket 3 5\n\n\nName                                                                                               Date\n\n1. Estimate to label the given fraction on the number line. Be sure to label the fractions at 0 and 1. Write\n   the fractions above the number line. Draw a number bond to match your number line.\n\n\n     3\n     5\n              0                                                                                                          1\n\n\n                                                                                                          3 1      5\n2. Partition the number line. Then, place each fraction on the number line:                                 , , and .\n                                                                                                          6 6      6\n\n\n     0                                                                                                                    1\n\n\n                       Lesson 15:                 Place any fraction on a number line with endpoints 0 and 1.                 184\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 186 (homework) ---\nA STORY OF UNITS                                                                              Lesson 15 Homework     3 5\n\n\nName                                                                                                 Date\n\n1. Estimate to label the given fractions on the number line. Be sure to label the fractions at 0 and 1. Write\n   the fractions above the number line. Draw a number bond to match your number line. The first one is\n   done for you.\n\n\n                                                        1                                                         3\n                  0                                                                                                        1\n                                                        3                                                         3\n                  3\n          1\na.                                                                                                                2   𝟏𝟏       𝟐𝟐\n          3\n                                                                                                                      𝟑𝟑       𝟑𝟑\n                  0                                                                                               1\n\n\n          3\nb.\n          6\n                  0                                                                                               1\n\n\n          2\nc.\n          5\n\n                  0                                                                                               1\n\n\n          7\nd.\n          10\n\n                  0                                                                                               1\n\n\n              3\n     e.\n              7\n\n                  0                                                                                               1\n\n\n                         Lesson 15:                 Place any fraction on a number line with endpoints 0 and 1.                185\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 187 (homework) ---\nA STORY OF UNITS                                                                                     Lesson 15 Homework   3 5\n\n\n2. Henry has 5 dimes. Ben has 9 dimes. Tina has 2 dimes.\n\n    a. Write the value of each person’s money as a fraction of a dollar:\n\n                    Henry:\n\n                    Ben:\n\n                    Tina:\n\n\n    b.        Estimate to place each fraction on the number line.\n\n\n         $0                                                                                                             $1\n\n\n3. Draw a number line. Use a fraction strip to locate 0 and 1. Fold the strip to make 8 equal parts.\n\n    a. Use the strip to measure and label your number line with eighths.\n\n\n    b. Count up from 0 eighths to 8 eighths on your number line. Touch each number with your finger as\n       you count.\n\n\n                             Lesson 15:                 Place any fraction on a number line with endpoints 0 and 1.           186\n\n                             ©2015 Great Minds. eureka-math.org\n                             G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 183,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                            Lesson 15 Problem Set 3 5\n\n\nName                                                                                                Date\n\n1. Estimate to label the given fractions on the number line. Be sure to label the fractions at 0 and 1.\n   Write the fractions above the number line. Draw a number bond to match your number line.\n\n\n           0                                                                                                     3            1\n           3                                                                                                     3\n\n     2                                                                                                                   𝟐𝟐       𝟏𝟏\na.                                                                                                                       𝟑𝟑\n     3                                                                                                                            𝟑𝟑\n            0                                                                                                    1\n\n\n     3\nb.\n     4\n            0                                                                                                    1\n\n\n     3\nc.\n     5\n            0                                                                                                    1\n\n\n     5\nd.\n     6\n            0                                                                                                    1\n\n\n     3\ne.\n     10\n            0                                                                                                        1\n\n\n                        Lesson 15:                 Place any fraction on a number line with endpoints 0 and 1.                    182\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      },
+      {
+        "pdfPage": 184,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                             Lesson 15 Problem Set 3 5\n\n\n2. Draw a number line. Use a fraction strip to locate 0 and 1. Fold the strip to make 8 equal parts. Use the\n   strip to measure and label your number line with eighths.\n\n\n    Count up from 0 eighths to 8 eighths on your number line. Touch each number with your finger as you\n    count.\n\n\n3. For his boat, James stretched out a rope with 5 equally spaced knots as shown.\n\n\n    a. Starting at the first knot and ending at the last knot, how many equal parts are formed by the 5\n       knots? Label each fraction at the knot.\n\n\n    b. What fraction of the rope is labeled at the third knot?\n\n\n    c. What if the rope had 6 equally spaced knots along the same length? What fraction of the rope would\n       be measured by the first 2 knots?\n\n\n                       Lesson 15:                 Place any fraction on a number line with endpoints 0 and 1.          183\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 392,
+        "text": "A STORY OF UNITS                                                                           Lesson 15 Answer Key 3 5\n\n\nLesson 15\nProblem Set\n                                                                                                0 2 3\n1.    a. Number line partitioned into thirds and labeled correctly with 3 , 3 , 3; answer provided\n                                                                                                 0 3 4                    3\n      b. Number line partitioned into fourths and labeled correctly with 4 , 4 , 4; number bond showing 4\n               1\n           and 4 equals 1 whole\n                                                                                                0 3 5                 3           2\n      c. Number line partitioned into fifths and labeled correctly with 5 , 5 , 5; number bond showing 5 and 5\n           equals 1 whole\n                                                                                                0 5 6                 5\n      d. Number line partitioned into sixths and labeled correctly with 6 , 6 , 6; number bond showing 6 and\n           1\n             equals 1 whole\n           6\n                                                                                                 0   3       10               3\n      e. Number line partitioned into tenths and labeled correctly with 10 , 10 , 10; number bond showing 10\n               7\n           and 10 equals 1 whole\n\n2.    Number line drawn with 0 and 1 labeled correctly; fraction strip used appropriately to partition and\n                                                                                                         0    8\n      label a number line to show eighths; number line labeled correctly from 8 to 8\n                                                                          0    4\n3.    a. 4 equal parts; rope labeled correctly from 4 to 4\n           2\n      b.\n           4\n           1\n      c.\n           5\n\n\nExit Ticket\n                                                                                             0 3 5                3       2\n1.    Number line partitioned into fifths and labeled correctly with , , ; number bond showing and\n                                                                                             5 5 5                5       5\n\n      equals 1 whole\n                                                             1 3 5\n2.    Number line partitioned into sixths; 6 , 6 , 6 placed correctly on the number line\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                                    391\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      },
+      {
+        "pdfPage": 393,
+        "text": "A STORY OF UNITS                                                                        Lesson 15 Answer Key 3 5\n\n\nHomework\n1.    a. Answer provided\n                                                                                             0 3 6                3           3\n      b. Number line partitioned into sixths and labeled correctly with , , ; number bond showing and\n                                                                                             6 6 6                6           6\n          equals 1 whole\n                                                                                             0 2 5                2           3\n      c. Number line partitioned into fifths and labeled correctly with 5, 5, 5; number bond showing 5 and 5\n          equals 1 whole\n                                                                                              0    7 10                   7\n      d. Number line partitioned into tenths and labeled correctly with 10, 10, 10; number bond showing 10\n               3\n          and 10 equals 1 whole\n                                                                                                  0 3 7               3\n      e. Number line partitioned into sevenths and labeled correctly with 7, 7, 7; number bond showing 7\n               4\n          and 7 equals 1 whole\n                   5                9                  2\n2.    a. Henry: 10; Ben: 10; Tina: 10\n                                                                   2 5 9\n      b. Number line partitioned into tenths;                        , , placed correctly on the number line\n                                                                   10 10 10\n\n3.    a. Number line drawn with 0 and 1 labeled correctly; fraction strip used appropriately to partition and\n                                                                                                          0   8\n           label number line to show eighths; number line labeled correctly from to\n                                                                                                          8   8\n      b. Touched and counted each fraction from 0 eighths to 8 eighths\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                                392\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      }
+    ]
+  }
+}

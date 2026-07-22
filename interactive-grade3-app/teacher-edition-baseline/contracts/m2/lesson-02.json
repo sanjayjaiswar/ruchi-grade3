@@ -1,0 +1,498 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m2-l2",
+  "moduleId": "m2",
+  "lessonNumber": 2,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+    "teacherEditionBytes": 20015771,
+    "lessonPdfPages": {
+      "start": 24,
+      "end": 36
+    },
+    "problemSetPdfPages": [
+      31,
+      32
+    ],
+    "exitTicketPdfPages": [
+      33
+    ],
+    "homeworkPdfPages": [
+      34
+    ],
+    "answerKeyPdfPages": [
+      282
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m2-student/workbook-page-006.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m2-teacher/page-031.png",
+      "/source-pages/m2-teacher/page-032.png",
+      "/source-pages/m2-answer-key/page-282.png"
+    ]
+  },
+  "objective": "Relate skip-counting by fives on the clock and telling time to a continuous measurement model, the number line.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.                                                                 challenge. It requires understanding\n                                                                                                                the difference between a.m. and p.m.\n                                                                                                                This concept was introduced in Grade",
+    "conceptDevelopmentText": "Materials: (T) Analog clock for demonstration (S) Personal white board, tape diagram (Template 1),\n           two clocks (Template 2), centimeter ruler\n\nPart 1: Draw a number line and relate skip-counting by fives to skip-counting intervals of 5 minutes.\nStudents place the tape diagram template in personal white boards.\n    T:   Model the Application Problem using the tape diagram on the template.\n    S:   (Model.)                                                                                                                  Template 1\nGuide discussion so that students articulate the following: the tape diagram is\ndivided into 12 parts, with each part representing the time it takes Christine to do\none math problem; the whole tape diagram represents a total of 60 minutes.\n    T:A different way to model this problem is to use a number\n      line. Let’s use our tape diagram to help us draw a\n      number line that represents a total of 60 minutes.\n   T: Draw a line a few centimeters below the tape diagram. Make it the same\n      length as the tape diagram. Make tick marks on the number line where\n      units are divided on the tape diagram. (Model each step as students\nMP.4\n      follow along.)\n   T: What do you notice about the relationship between the tape diagram and the number line?\n   S: The lines are in the same place.  They have the same number of parts.\n   T: What part of the tape diagram do the spaces between tick marks represent?\n   S: The units.  The time it takes to do each math problem.  They each represent 5 minutes.\n   T: We know from yesterday that time doesn’t stop. It was happening before Christine started her\n      homework, and it keeps going after she’s finished. To show that time is continuous, we’ll extend\n      our number line on both sides and add arrows to it. (Model.)\n   S: (Extend number lines and add arrows.)\n   T: Let’s label our number lines. The space between 2 tick marks represents a 5-minute interval.\n      Write 0 under the first tick mark on the left. Then, skip-count by fives. As you count, write each\n      number under the next tick mark. Stop when you’ve labeled 60. (Model as students follow along.)\n   T: The space between 2 marks represents one 5-minute interval. How many minutes are in the\n      interval from 0 to 10? From 0 to 60? From 15 to 30?\n    S:   From 0 to 10 is 10 minutes, from 0 to 60 is 60 minutes, and from 15 to 30 is 15 minutes.\n    T:   Let’s use the number line to find how many minutes it takes Christine to do 4 math problems. (Place\n         finger at 0. Move to 5, 10, 15, and 20 as you count 1 problem, 2 problems, 3 problems, 4 problems.)\n         It takes Christine 20 minutes to do 4 math problems. Use the word interval to explain to your\n         partner how we used the number line to figure that out.\n    S:   (Discuss.)\nUse guided practice to find how long it takes Christine to solve 7, 9, and 11 problems.\n\n\n                        Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a                          25\n                                                      continuous measurement model, the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                                      Lesson 2 3 2\n\n\nPart 2: Use a number line to tell time to the nearest 5 minutes within 1 hour.\n    T:   Use your ruler to draw a 12-centimeter number line. (Model as students follow along.)\n    T:   How many 5-minute intervals will the number line need to represent a total of 60 minutes?\n    S:   Twelve!\n    T:   Marking 12 equally spaced intervals is difficult! How can the ruler help do that?\n    S:   It has 12 centimeters.  The centimeters show us where to draw tick marks.\n    T:   Use the centimeters on your ruler to draw tick marks for the number line. (Model.)\n    S:   (Use rulers to draw tick marks.)\n    T:   Just like on the first number line, we’ll need to show that time is continuous. Extend each side of\n         your number line and make arrows. Then skip-count to label each 5-minute interval starting with 0\n         and ending with 60. (Model while students follow along.)\n\n\n                  0     5         10            15          20      25      30       35       40        45       50         55      60\n              minutes                                                                                                             minutes\n\n    T:   How many minutes are labeled on our number line?\n    S:   60 minutes.\n    T:   There are 60 minutes between 1:00 p.m. and 2:00 p.m.\n         Let’s use the number line to model exactly when we                                                                  NOTES ON\n         will do the activities on our class schedule that happen                                                            MULTIPLE MEANS\n         between 1:00 p.m. and 2:00 p.m.                                                                                     OF ACTION AND\n    T:   Below the 0 tick mark, write 1:00 p.m. Below the                                                                    EXPRESSION:\n         60 tick mark, write 2:00 p.m. (Model.)                                                                  You need not use 1 p.m. to 2 p.m. as\n                                                                                                                 the interval; pick an hour that is\n    S:   (Label as shown below.)\n                                                                                                                 relevant to today’s class. As students\n                                                                                                                 determine the number of 5-minute\n                                                                                                                 intervals on the number line, some may\n                                                                                                                 count tick marks instead of spaces and\n                                                                                                                 get an answer of 13. Watch for this\n    T:   Now this number line shows the hour between                                                             misconception and guide students to\n         1:00 p.m. and 2:00 p.m.                                                                                 make a distinction between tick marks\n                                                                                                                 and intervals if necessary.\n    T:   We start recess at 1:10 p.m. Is that time between\n         1:00 p.m. and 2:00 p.m.?\n    S:   (Agree.)\n    T:   To find that spot on the number line, I’ll put my finger on 1:00 and move it to the right as I skip-\n         count intervals until I reach 1:10. Remind me, what are we counting by?\n    S:   Fives!\n    T:   (Model, with students chorally counting along.)\n\n\n                            Lesson 2:                  Relate skip-counting by fives on the clock and telling time to a                               26\n                                                       continuous measurement model, the number line.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 2 3 2\n\n\n    T:   I’ll draw a dot on the spot where the tick mark and\n         number line cross and label it R for recess. (Draw\n         and label as shown on the right.) That dot shows\n         the location of a point. Finding and drawing a\n         point is called plotting a position on the number\n         line.\n    T:   At 1:35 p.m., we’ll start science. Is 1:35 p.m. between\n         1:00 p.m. and 2:00 p.m.?\n                                                                                                                            NOTES ON\n    S:   (Agree.)\n                                                                                                                            MULTIPLE MEANS\n    T:   Plot 1:35 p.m. as a point on your number line. Label it                                                            OF ACTION AND\n         C.\n                                                                                                                            EXPRESSION:\n    S:   (Plot a point on the number line at 1:35.)                                                             Extend the discussion by inviting\nContinue guided practice using the following suggested                                                          students to discuss whether or not\nsequence: 1:45 p.m. and 2:00 p.m.                                                                               12:55 p.m. and 2:15 p.m. can be\n                                                                                                                plotted on this number line. Help them\n    T:   How does the number line you’ve labeled compare to                                                     reason about their answer and think\n         the analog clock on the wall?                                                                          about where the times might be\n    S:   We count the minutes by fives on both.  The clock is                                                  plotted, given the continuity of time.\n         like the number line wrapped in a circle.\n\nPart 3: Relate the number line to the clock and tell time to the\nnearest 5 minutes.\nStudents have Template 2 (two clocks) ready. Display a clock                                                                NOTES ON\nface without hands.                                                                                                         MULTIPLE MEANS\n    T:   We counted by fives to plot minutes on a number line,                                                              OF REPRESENTATION:\n         and we’ll do the same on a clock.                                  Activate prior knowledge about the\n    T:   How many 5-minute intervals show 15 minutes on a                   minute hand and hour hand learned in\n         clock?                                                             Grade 2 Module 2. Review their\n                                                                            difference in purpose, as well as in\n    S:   3 intervals.\n                                                                            length.\n    T:   We started at 0 on the number line, but a clock has\n         no 0. Where is the starting point on a clock?\n    S:   The 12.                                                                                Template 2\n    T:   Let’s count each 5-minute interval and plot a point on the clock to show\n         15 minutes. (Model.)\nOptions for further practice:\n        Plot 30 minutes, 45 minutes, and 55 minutes using the process above.\n        Write 9:15 a.m., 3:30 p.m., and 7:50 a.m. on the board as they would\n         appear on a digital clock, or say the time rather than write it. Students\n         copy each time, plot points, and draw hands to show that time. (Model\n         drawing hands with 10:20 a.m.)\n\n\n                        Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a                                   27\n                                                      continuous measurement model, the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 2 3 2",
+    "fluencyPracticeText": "help you with the\n         rest of the lesson?\n        Look at the number line used for Problem 2. Where do you think 5:38 would be? (This anticipates\n         Lesson 3 by counting by fives and then ones on a number line.)\n\n\n                        Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a                                    28\n                                                      continuous measurement model, the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                             Lesson 2 3 2\n\n\nExit Ticket (3 minutes)\nAfter the",
+    "problemSetGuidanceText": "Students should do their personal best to complete the Problem\nSet within the allotted 10 minutes. For some classes, it may be                                                             NOTES ON\nappropriate to modify the assignment by specifying which                                                                    MULTIPLE MEANS\nproblems they work on first. Some problems do not specify a                                                                 OF REPRESENTATION:\nmethod for solving. Students should solve these problems using\n                                                                                                                Problem 4 is likely to pose the biggest\nthe RDW approach used for Application Problems.                                                                 challenge. It requires understanding\n                                                                                                                the difference between a.m. and p.m.\n                                                                                                                This concept was introduced in Grade",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Model the Application Problem using the tape diagram on the template."
+      },
+      {
+        "speaker": "students",
+        "text": "(Model.) Template 1 Guide discussion so that students articulate the following: the tape diagram is divided into 12 parts, with each part representing the time it takes Christine to do one math problem; the whole tape diagram represents a total of 60 minutes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "A different way to model this problem is to use a number line. Let’s use our tape diagram to help us draw a number line that represents a total of 60 minutes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a line a few centimeters below the tape diagram. Make it the same length as the tape diagram. Make tick marks on the number line where units are divided on the tape diagram. (Model each step as students MP.4 follow along.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do you notice about the relationship between the tape diagram and the number line?"
+      },
+      {
+        "speaker": "students",
+        "text": "The lines are in the same place.  They have the same number of parts."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What part of the tape diagram do the spaces between tick marks represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "The units.  The time it takes to do each math problem.  They each represent 5 minutes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "We know from yesterday that time doesn’t stop. It was happening before Christine started her homework, and it keeps going after she’s finished. To show that time is continuous, we’ll extend our number line on both sides and add arrows to it. (Model.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Extend number lines and add arrows.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s label our number lines. The space between 2 tick marks represents a 5-minute interval. Write 0 under the first tick mark on the left. Then, skip-count by fives. As you count, write each number under the next tick mark. Stop when you’ve labeled 60. (Model as students follow along.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "The space between 2 marks represents one 5-minute interval. How many minutes are in the interval from 0 to 10? From 0 to 60? From 15 to 30?"
+      },
+      {
+        "speaker": "students",
+        "text": "From 0 to 10 is 10 minutes, from 0 to 60 is 60 minutes, and from 15 to 30 is 15 minutes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use the number line to find how many minutes it takes Christine to do 4 math problems. (Place finger at 0. Move to 5, 10, 15, and 20 as you count 1 problem, 2 problems, 3 problems, 4 problems.) It takes Christine 20 minutes to do 4 math problems. Use the word interval to explain to your partner how we used the number line to figure that out."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.) Use guided practice to find how long it takes Christine to solve 7, 9, and 11 problems. continuous measurement model, the number line. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 2 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your ruler to draw a 12-centimeter number line. (Model as students follow along.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many 5-minute intervals will the number line need to represent a total of 60 minutes?"
+      },
+      {
+        "speaker": "students",
+        "text": "Twelve!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Marking 12 equally spaced intervals is difficult! How can the ruler help do that?"
+      },
+      {
+        "speaker": "students",
+        "text": "It has 12 centimeters.  The centimeters show us where to draw tick marks."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use the centimeters on your ruler to draw tick marks for the number line. (Model.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Use rulers to draw tick marks.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Just like on the first number line, we’ll need to show that time is continuous. Extend each side of your number line and make arrows. Then skip-count to label each 5-minute interval starting with 0 and ending with 60. (Model while students follow along.) 0 5 10 15 20 25 30 35 40 45 50 55 60 minutes minutes"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many minutes are labeled on our number line?"
+      },
+      {
+        "speaker": "students",
+        "text": "60 minutes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "There are 60 minutes between 1:00 p.m. and 2:00 p.m. Let’s use the number line to model exactly when we NOTES ON will do the activities on our class schedule that happen MULTIPLE MEANS between 1:00 p.m. and 2:00 p.m. OF ACTION AND"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Below the 0 tick mark, write 1:00 p.m. Below the EXPRESSION: 60 tick mark, write 2:00 p.m. (Model.) You need not use 1 p.m. to 2 p.m. as the interval; pick an hour that is"
+      },
+      {
+        "speaker": "students",
+        "text": "(Label as shown below.) relevant to today’s class. As students determine the number of 5-minute intervals on the number line, some may count tick marks instead of spaces and get an answer of 13. Watch for this"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now this number line shows the hour between misconception and guide students to 1:00 p.m. and 2:00 p.m. make a distinction between tick marks and intervals if necessary."
+      },
+      {
+        "speaker": "teacher",
+        "text": "We start recess at 1:10 p.m. Is that time between 1:00 p.m. and 2:00 p.m.?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Agree.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "To find that spot on the number line, I’ll put my finger on 1:00 and move it to the right as I skip- count intervals until I reach 1:10. Remind me, what are we counting by?"
+      },
+      {
+        "speaker": "students",
+        "text": "Fives!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Model, with students chorally counting along.) continuous measurement model, the number line. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 2 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "I’ll draw a dot on the spot where the tick mark and number line cross and label it R for recess. (Draw and label as shown on the right.) That dot shows the location of a point. Finding and drawing a point is called plotting a position on the number line."
+      },
+      {
+        "speaker": "teacher",
+        "text": "At 1:35 p.m., we’ll start science. Is 1:35 p.m. between 1:00 p.m. and 2:00 p.m.?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Agree.) MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Plot 1:35 p.m. as a point on your number line. Label it OF ACTION AND C. EXPRESSION:"
+      },
+      {
+        "speaker": "students",
+        "text": "(Plot a point on the number line at 1:35.) Extend the discussion by inviting Continue guided practice using the following suggested students to discuss whether or not sequence: 1:45 p.m. and 2:00 p.m. 12:55 p.m. and 2:15 p.m. can be plotted on this number line. Help them"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How does the number line you’ve labeled compare to reason about their answer and think the analog clock on the wall? about where the times might be"
+      },
+      {
+        "speaker": "students",
+        "text": "We count the minutes by fives on both.  The clock is plotted, given the continuity of time. like the number line wrapped in a circle. nearest 5 minutes. Students have Template 2 (two clocks) ready. Display a clock NOTES ON face without hands. MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We counted by fives to plot minutes on a number line, OF REPRESENTATION: and we’ll do the same on a clock. Activate prior knowledge about the"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many 5-minute intervals show 15 minutes on a minute hand and hour hand learned in clock? Grade 2 Module 2. Review their difference in purpose, as well as in"
+      },
+      {
+        "speaker": "students",
+        "text": "3 intervals. length."
+      },
+      {
+        "speaker": "teacher",
+        "text": "We started at 0 on the number line, but a clock has no 0. Where is the starting point on a clock?"
+      },
+      {
+        "speaker": "students",
+        "text": "The 12. Template 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s count each 5-minute interval and plot a point on the clock to show 15 minutes. (Model.) Options for further practice:  Plot 30 minutes, 45 minutes, and 55 minutes using the process above.  Write 9:15 a.m., 3:30 p.m., and 7:50 a.m. on the board as they would appear on a digital clock, or say the time rather than write it. Students copy each time, plot points, and draw hands to show that time. (Model drawing hands with 10:20 a.m.) continuous measurement model, the number line. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 2 3 2"
+      }
+    ],
+    "teacherPrompts": [
+      "Model the Application Problem using the tape diagram on the template.",
+      "A different way to model this problem is to use a number line. Let’s use our tape diagram to help us draw a number line that represents a total of 60 minutes.",
+      "Draw a line a few centimeters below the tape diagram. Make it the same length as the tape diagram. Make tick marks on the number line where units are divided on the tape diagram. (Model each step as students MP.4 follow along.)",
+      "What do you notice about the relationship between the tape diagram and the number line?",
+      "What part of the tape diagram do the spaces between tick marks represent?",
+      "We know from yesterday that time doesn’t stop. It was happening before Christine started her homework, and it keeps going after she’s finished. To show that time is continuous, we’ll extend our number line on both sides and add arrows to it. (Model.)",
+      "Let’s label our number lines. The space between 2 tick marks represents a 5-minute interval. Write 0 under the first tick mark on the left. Then, skip-count by fives. As you count, write each number under the next tick mark. Stop when you’ve labeled 60. (Model as students follow along.)",
+      "The space between 2 marks represents one 5-minute interval. How many minutes are in the interval from 0 to 10? From 0 to 60? From 15 to 30?",
+      "Let’s use the number line to find how many minutes it takes Christine to do 4 math problems. (Place finger at 0. Move to 5, 10, 15, and 20 as you count 1 problem, 2 problems, 3 problems, 4 problems.) It takes Christine 20 minutes to do 4 math problems. Use the word interval to explain to your partner how we used the number line to figure that out.",
+      "Use your ruler to draw a 12-centimeter number line. (Model as students follow along.)",
+      "How many 5-minute intervals will the number line need to represent a total of 60 minutes?",
+      "Marking 12 equally spaced intervals is difficult! How can the ruler help do that?",
+      "Use the centimeters on your ruler to draw tick marks for the number line. (Model.)",
+      "Just like on the first number line, we’ll need to show that time is continuous. Extend each side of your number line and make arrows. Then skip-count to label each 5-minute interval starting with 0 and ending with 60. (Model while students follow along.) 0 5 10 15 20 25 30 35 40 45 50 55 60 minutes minutes",
+      "How many minutes are labeled on our number line?",
+      "There are 60 minutes between 1:00 p.m. and 2:00 p.m. Let’s use the number line to model exactly when we NOTES ON will do the activities on our class schedule that happen MULTIPLE MEANS between 1:00 p.m. and 2:00 p.m. OF ACTION AND",
+      "Below the 0 tick mark, write 1:00 p.m. Below the EXPRESSION: 60 tick mark, write 2:00 p.m. (Model.) You need not use 1 p.m. to 2 p.m. as the interval; pick an hour that is",
+      "Now this number line shows the hour between misconception and guide students to 1:00 p.m. and 2:00 p.m. make a distinction between tick marks and intervals if necessary.",
+      "We start recess at 1:10 p.m. Is that time between 1:00 p.m. and 2:00 p.m.?",
+      "To find that spot on the number line, I’ll put my finger on 1:00 and move it to the right as I skip- count intervals until I reach 1:10. Remind me, what are we counting by?",
+      "(Model, with students chorally counting along.) continuous measurement model, the number line. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 2 3 2",
+      "I’ll draw a dot on the spot where the tick mark and number line cross and label it R for recess. (Draw and label as shown on the right.) That dot shows the location of a point. Finding and drawing a point is called plotting a position on the number line.",
+      "At 1:35 p.m., we’ll start science. Is 1:35 p.m. between 1:00 p.m. and 2:00 p.m.?",
+      "Plot 1:35 p.m. as a point on your number line. Label it OF ACTION AND C. EXPRESSION:",
+      "How does the number line you’ve labeled compare to reason about their answer and think the analog clock on the wall? about where the times might be",
+      "We counted by fives to plot minutes on a number line, OF REPRESENTATION: and we’ll do the same on a clock. Activate prior knowledge about the",
+      "How many 5-minute intervals show 15 minutes on a minute hand and hour hand learned in clock? Grade 2 Module 2. Review their difference in purpose, as well as in",
+      "We started at 0 on the number line, but a clock has no 0. Where is the starting point on a clock?",
+      "Let’s count each 5-minute interval and plot a point on the clock to show 15 minutes. (Model.) Options for further practice:  Plot 30 minutes, 45 minutes, and 55 minutes using the process above.  Write 9:15 a.m., 3:30 p.m., and 7:50 a.m. on the board as they would appear on a digital clock, or say the time rather than write it. Students copy each time, plot points, and draw hands to show that time. (Model drawing hands with 10:20 a.m.) continuous measurement model, the number line. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 2 3 2"
+    ],
+    "debriefPrompt": "Model the Application Problem using the tape diagram on the template",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Follow the directions to label the number line below. a. Ingrid gets ready for school between 7:00 a.m. and 8:00 a.m. Label the first and last tick marks as 7:00 a.m. and 8:00 a.m. b. Each interval represents 5 minutes. Count by fives starting at 0, or 7:00 a.m. Label each 5-minute interval below the number line up to 8:00 a.m. c. Ingrid starts getting dressed at 7:10 a.m. Plot a point on the number line to represent this time. Above the point, write D. d. Ingrid starts eating breakfast at 7:35 a.m. Plot a point on the number line to represent this time. Above the point, write E. e. Ingrid starts brushing her teeth at 7:40 a.m. Plot a point on the number line to represent this time. Above the point, write T. f. Ingrid starts packing her lunch at 7:45 a.m. Plot a point on the number line to represent this time. Above the point, write L. g. Ingrid starts waiting for the bus at 7:55 a.m. Plot a point on the number line to represent this time. Above the point, write W. continuous measurement model, the number line. Label every 5 minutes below the number line shown. Draw a line from each clock to the point on the number line which shows its time. Not all of the clocks have matching points. 12 12 12 1 11 1 11 1 11 10 2 10 2 10 2 8:35 9 3 5:15 9 3 5:40 9 3 8 4 8 4 8 4 7 5 7 5 7 5 6 6 6 0 60 5:00 p.m. 6:00 p.m. 3. Noah uses a number line to locate 5:45 p.m. Each interval is 5 minutes. The number line shows the hour from 5 p.m. to 6 p.m. Label the number line below to show his work. 0 60 5:00 p.m. 6:00 p.m. 4. Tanner tells his little brother that 11:25 p.m. comes after 11:20 a.m. Do you agree with Tanner? Why or why not? continuous measurement model, the number line.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                         Lesson 2 Problem Set 3 2\n\n\nName                                                                                                        Date\n\n1. Follow the directions to label the number line below.\n\n\n   a. Ingrid gets ready for school between 7:00 a.m. and 8:00 a.m. Label the first and last tick marks as\n      7:00 a.m. and 8:00 a.m.\n\n\n   b. Each interval represents 5 minutes. Count by fives starting at 0, or 7:00 a.m. Label each 5-minute\n      interval below the number line up to 8:00 a.m.\n\n\n   c. Ingrid starts getting dressed at 7:10 a.m. Plot a point on the number line to represent this time.\n      Above the point, write D.\n\n\n   d. Ingrid starts eating breakfast at 7:35 a.m. Plot a point on the number line to represent this time.\n      Above the point, write E.\n\n\n   e. Ingrid starts brushing her teeth at 7:40 a.m. Plot a point on the number line to represent this time.\n      Above the point, write T.\n\n\n   f.   Ingrid starts packing her lunch at 7:45 a.m. Plot a point on the number line to represent this time.\n        Above the point, write L.\n\n\n   g. Ingrid starts waiting for the bus at 7:55 a.m. Plot a point on the number line to represent this time.\n      Above the point, write W.\n\n\n                        Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a            30\n                                                      continuous measurement model, the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                        Lesson 2 Problem Set 3 2\n\n\n2. Label every 5 minutes below the number line shown. Draw a line from each clock to the point on the\n   number line which shows its time. Not all of the clocks have matching points.\n\n                                       12                                                                 12                                            12    1\n                                 11            1                                                     11        1                                   11\n                          10                        2                                           10                 2                          10                  2\n\n   8:35               9                                 3            5:15                   9                          3       5:40       9                           3\n\n                          8                         4                                           8                  4                          8                   4\n                                 7             5                                                     7         5                                   7          5\n                                        6                                                                 6                                             6\n\n\n    0                                                                                                                                                             60\n 5:00 p.m.                                                                                                                                                   6:00 p.m.\n\n\n3. Noah uses a number line to locate 5:45 p.m. Each interval is 5 minutes. The number line shows the hour\n   from 5 p.m. to 6 p.m. Label the number line below to show his work.\n\n\n    0                                                                                                                                                             60\n 5:00 p.m.                                                                                                                                                   6:00 p.m.\n\n\n4. Tanner tells his little brother that 11:25 p.m. comes after 11:20 a.m. Do you agree with Tanner?\n   Why or why not?\n\n\n                               Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a                                     31\n                                                             continuous measurement model, the number line.\n\n                              This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                              G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    a. First and last tick marks labeled as 7:00 a.m. and 8:00 a.m.\n      b. Each interval labeled by fives below the number line up to 8:00 a.m.\n      c. Point D plotted and labeled above 7:10 a.m.\n      d. Point E plotted and labeled above 7:35 a.m.\n      e. Point T plotted and labeled above 7:40 a.m.\n      f.   Point L plotted and labeled above 7:45 a.m.\n      g. Point W plotted and labeled above 7:55 a.m.\n2.    Every 5 minutes labeled below the number line\n      First clock not matched to the number line\n      Second clock—5:50 p.m.\n      Third clock—5:15 p.m.\n      Fourth clock not matched to the number line\n      Fifth clock—5:40 p.m.\n      Last clock—5:25 p.m.\n3.    First and last tick marks labeled as 5:00 p.m. and 6:00 p.m.; each interval labeled by fives below the\n      number line up to 6:00 p.m.; 5:45 p.m. located and plotted on the number line\n4.    Answers will vary.",
+    "answerKeyText": "A STORY OF UNITS                                                                                         Lesson 2 Answer Key 3 2\n\n\nLesson 2\nProblem Set\n1.    a. First and last tick marks labeled as 7:00 a.m. and 8:00 a.m.\n      b. Each interval labeled by fives below the number line up to 8:00 a.m.\n      c. Point D plotted and labeled above 7:10 a.m.\n      d. Point E plotted and labeled above 7:35 a.m.\n      e. Point T plotted and labeled above 7:40 a.m.\n      f.   Point L plotted and labeled above 7:45 a.m.\n      g. Point W plotted and labeled above 7:55 a.m.\n2.    Every 5 minutes labeled below the number line\n      First clock not matched to the number line\n      Second clock—5:50 p.m.\n      Third clock—5:15 p.m.\n      Fourth clock not matched to the number line\n      Fifth clock—5:40 p.m.\n      Last clock—5:25 p.m.\n3.    First and last tick marks labeled as 5:00 p.m. and 6:00 p.m.; each interval labeled by fives below the\n      number line up to 6:00 p.m.; 5:45 p.m. located and plotted on the number line\n4.    Answers will vary.\n\n\nExit Ticket\n      a. 10:10 a.m.                                                             c.       10:50 a.m.\n      b. 10:20 a.m.                                                             d.       1 hour\n\n\nHomework\n      a. First and last tick marks labeled as 4:00 p.m. and 5:00 p.m.\n      b. Each interval labeled by fives below the number line up to 5:00 p.m.\n      c. Point W plotted and labeled above 4:05 p.m.\n      d. Point F plotted and labeled above 4:15 p.m.\n      e. Point G plotted and labeled above 4:25 p.m.\n      f. Point B plotted and labeled above 4:50 p.m.\n      g. Point P plotted and labeled above 4:55 p.m.\n\n\n                                                                                                                                   281\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "tape-diagram",
+      "number-line",
+      "clock",
+      "measurement-scale",
+      "ruler-or-length",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "tape-diagram": [
+        "Materials: (T) Analog clock for demonstration (S) Personal white board, tape diagram (Template 1),",
+        "Students place the tape diagram template in personal white boards.",
+        "T: Model the Application Problem using the tape diagram on the template.",
+        "Guide discussion so that students articulate the following: the tape diagram is",
+        "one math problem; the whole tape diagram represents a total of 60 minutes.",
+        "line. Let’s use our tape diagram to help us draw a",
+        "T: Draw a line a few centimeters below the tape diagram. Make it the same",
+        "length as the tape diagram. Make tick marks on the number line where"
+      ],
+      "number-line": [
+        "Relate skip-counting by fives on the clock and telling time to a continuous measurement model, the number line.",
+        "Part 1: Draw a number line and relate skip-counting by fives to skip-counting intervals of 5 minutes.",
+        "number line that represents a total of 60 minutes.",
+        "length as the tape diagram. Make tick marks on the number line where",
+        "T: What do you notice about the relationship between the tape diagram and the number line?",
+        "T: What part of the tape diagram do the spaces between tick marks represent?",
+        "our number line on both sides and add arrows to it. (Model.)",
+        "S: (Extend number lines and add arrows.)"
+      ],
+      "clock": [
+        "Materials: (T) Analog clock for demonstration (S) Personal white board, tape diagram (Template 1),",
+        "the analog clock on the wall? about where the times might be",
+        "T: How many 5-minute intervals show 15 minutes on a minute hand and hour hand learned in"
+      ],
+      "measurement-scale": [
+        "Materials: (T) Analog clock for demonstration (S) Personal white board, tape diagram (Template 1),",
+        "Students place the tape diagram template in personal white boards.",
+        "T: Model the Application Problem using the tape diagram on the template.",
+        "Guide discussion so that students articulate the following: the tape diagram is",
+        "one math problem; the whole tape diagram represents a total of 60 minutes.",
+        "line. Let’s use our tape diagram to help us draw a",
+        "T: Draw a line a few centimeters below the tape diagram. Make it the same",
+        "length as the tape diagram. Make tick marks on the number line where"
+      ],
+      "ruler-or-length": [
+        "two clocks (Template 2), centimeter ruler",
+        "T: Draw a line a few centimeters below the tape diagram. Make it the same",
+        "length as the tape diagram. Make tick marks on the number line where",
+        "T: Use your ruler to draw a 12-centimeter number line. (Model as students follow along.)",
+        "T: Marking 12 equally spaced intervals is difficult! How can the ruler help do that?",
+        "S: It has 12 centimeters.  The centimeters show us where to draw tick marks.",
+        "T: Use the centimeters on your ruler to draw tick marks for the number line. (Model.)",
+        "S: (Use rulers to draw tick marks.)"
+      ],
+      "money-model": [
+        "two clocks (Template 2), centimeter ruler",
+        "T: Draw a line a few centimeters below the tape diagram. Make it the same",
+        "T: Use your ruler to draw a 12-centimeter number line. (Model as students follow along.)",
+        "S: It has 12 centimeters.  The centimeters show us where to draw tick marks.",
+        "T: Use the centimeters on your ruler to draw tick marks for the number line. (Model.)"
+      ],
+      "picture-or-drawing": [
+        "Materials: (T) Analog clock for demonstration (S) Personal white board, tape diagram (Template 1),",
+        "Part 1: Draw a number line and relate skip-counting by fives to skip-counting intervals of 5 minutes.",
+        "Students place the tape diagram template in personal white boards.",
+        "T: Model the Application Problem using the tape diagram on the template.",
+        "Guide discussion so that students articulate the following: the tape diagram is",
+        "one math problem; the whole tape diagram represents a total of 60 minutes.",
+        "line. Let’s use our tape diagram to help us draw a",
+        "T: Draw a line a few centimeters below the tape diagram. Make it the same"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Model the Application Problem using the tape diagram on the template."
+      },
+      {
+        "speaker": "students",
+        "text": "(Model.) Template 1 Guide discussion so that students articulate the following: the tape diagram is divided into 12 parts, with each part representing the time it takes Christine to do one math problem; the whole tape diagram represents a total of 60 minutes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "A different way to model this problem is to use a number line. Let’s use our tape diagram to help us draw a number line that represents a total of 60 minutes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a line a few centimeters below the tape diagram. Make it the same length as the tape diagram. Make tick marks on the number line where units are divided on the tape diagram. (Model each step as students MP.4 follow along.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do you notice about the relationship between the tape diagram and the number line?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We know from yesterday that time doesn’t stop. It was happening before Christine started her homework, and it keeps going after she’s finished. To show that time is continuous, we’ll extend our number line on both sides and add arrows to it. (Model.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s label our number lines. The space between 2 tick marks represents a 5-minute interval. Write 0 under the first tick mark on the left. Then, skip-count by fives. As you count, write each number under the next tick mark. Stop when you’ve labeled 60. (Model as students follow along.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use the number line to find how many minutes it takes Christine to do 4 math problems. (Place finger at 0. Move to 5, 10, 15, and 20 as you count 1 problem, 2 problems, 3 problems, 4 problems.) It takes Christine 20 minutes to do 4 math problems. Use the word interval to explain to your partner how we used the number line to figure that out."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.) Use guided practice to find how long it takes Christine to solve 7, 9, and 11 problems. continuous measurement model, the number line. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 2 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your ruler to draw a 12-centimeter number line. (Model as students follow along.)"
+      },
+      {
+        "speaker": "students",
+        "text": "It has 12 centimeters.  The centimeters show us where to draw tick marks."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use the centimeters on your ruler to draw tick marks for the number line. (Model.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Use rulers to draw tick marks.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Just like on the first number line, we’ll need to show that time is continuous. Extend each side of your number line and make arrows. Then skip-count to label each 5-minute interval starting with 0 and ending with 60. (Model while students follow along.) 0 5 10 15 20 25 30 35 40 45 50 55 60 minutes minutes"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many minutes are labeled on our number line?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "There are 60 minutes between 1:00 p.m. and 2:00 p.m. Let’s use the number line to model exactly when we NOTES ON will do the activities on our class schedule that happen MULTIPLE MEANS between 1:00 p.m. and 2:00 p.m. OF ACTION AND"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Below the 0 tick mark, write 1:00 p.m. Below the EXPRESSION: 60 tick mark, write 2:00 p.m. (Model.) You need not use 1 p.m. to 2 p.m. as the interval; pick an hour that is"
+      },
+      {
+        "speaker": "students",
+        "text": "(Label as shown below.) relevant to today’s class. As students determine the number of 5-minute intervals on the number line, some may count tick marks instead of spaces and get an answer of 13. Watch for this"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now this number line shows the hour between misconception and guide students to 1:00 p.m. and 2:00 p.m. make a distinction between tick marks and intervals if necessary."
+      },
+      {
+        "speaker": "teacher",
+        "text": "To find that spot on the number line, I’ll put my finger on 1:00 and move it to the right as I skip- count intervals until I reach 1:10. Remind me, what are we counting by?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Model, with students chorally counting along.) continuous measurement model, the number line. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 2 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "I’ll draw a dot on the spot where the tick mark and number line cross and label it R for recess. (Draw and label as shown on the right.) That dot shows the location of a point. Finding and drawing a point is called plotting a position on the number line."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Plot 1:35 p.m. as a point on your number line. Label it OF ACTION AND C. EXPRESSION:"
+      },
+      {
+        "speaker": "students",
+        "text": "(Plot a point on the number line at 1:35.) Extend the discussion by inviting Continue guided practice using the following suggested students to discuss whether or not sequence: 1:45 p.m. and 2:00 p.m. 12:55 p.m. and 2:15 p.m. can be plotted on this number line. Help them"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 24 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 2 3 2\n\n\nLesson 2\nObjective: Relate skip-counting by fives on the clock and telling time to a\ncontinuous measurement model, the number line.\n\nSuggested Lesson Structure\n Fluency Practice                  (12 minutes)\n Application Problem               (5 minutes)\n Concept Development               (33 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (12 minutes)\n\n Group Counting 3.OA.1                                    (3 minutes)\n Tell Time on the Clock 2.MD.7                            (3 minutes)\n Minute Counting 3.MD.1                                   (6 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by sevens and\neights in this activity anticipates multiplication using those units in Module 3.\nDirect students to count forward and backward using the following suggested sequence, occasionally\nchanging the direction of the count:\n        Sevens to 35, emphasizing the transition from 28 to 35\n        Eights to 40, emphasizing the transition from 32 to 40\n\nTell Time on the Clock (3 minutes)\nMaterials: (T) Analog clock for demonstration (S) Personal white board\n\nNote: This activity reviews the Grade 2 standard of telling and writing time to the nearest 5 minutes.\nIt prepares students to use the number line and clock to tell time to the nearest 5 minutes in the Concept\nDevelopment.\n    T:   (Show an analog demonstration clock.) Start at 12 and count by 5 minutes on the clock.\n         (Move finger from 12 to 1, 2, 3, 4, etc., as students count.)\n    S:   5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60.\n    T:   I’ll show a time on the clock. Write the time on your personal white board. (Show 3:05.)\n    S:   (Write 3:05.)\n\n\n                        Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a                      23\n                                                      continuous measurement model, the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 25 (concept-development) ---\nA STORY OF UNITS                                                                                                                Lesson 2 3 2\n\n\n    T:   (Show 2:35.)\n    S:   (Write 2:35.)\nRepeat process, varying the hour and 5-minute interval so that students read and write a variety of times to\nthe nearest 5 minutes.\n\nMinute Counting (6 minutes)\nNote: This activity reviews the Grade 2 standard of telling and writing time to the nearest 5 minutes. It\nprepares students to count by 5-minute intervals on the number line and clock in the Concept Development.\nStudents also practice group counting strategies for multiplication in the context of time.\nUse the process outlined for this activity in Lesson 1. Direct students to count by 5 minutes to the hour, the\nhalf hour, and the quarter hour. Repeat the process using the following suggested sequence:\n        6 minutes, counting to the half hour and hour\n        3 minutes, counting to a quarter past the hour and half hour\n        10 minutes, counting up to 1 hour\n        9 minutes, counting to 45 and emphasizing the transition from 36 to 45\n\n\nApplication Problem (5 minutes)\n\nChristine has 12 math problems for homework. It takes her 5 minutes to complete each problem. How many\nminutes does it take Christine to finish all 12 problems?\n\n\nNote: This problem anticipates the Concept Development. It activates prior knowledge from Grade 2 about\nmath with minutes. Twelve is a new factor. If students are unsure about how to multiply 12 groups of 5,\nencourage them to solve by skip-counting. They can also use the distributive property, 10 fives + 2 fives or\n6 fives + 6 fives. Students use the solution to this problem as a springboard for modeling 12 intervals of\n5 minutes on the number line in the Concept Development.\n\n\n                          Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a                     24\n                                                        continuous measurement model, the number line.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 26 (concept-development) ---\nA STORY OF UNITS                                                                                                              Lesson 2 3 2\n\n\nConcept Development (33 minutes)\n\nMaterials: (T) Analog clock for demonstration (S) Personal white board, tape diagram (Template 1),\n           two clocks (Template 2), centimeter ruler\n\nPart 1: Draw a number line and relate skip-counting by fives to skip-counting intervals of 5 minutes.\nStudents place the tape diagram template in personal white boards.\n    T:   Model the Application Problem using the tape diagram on the template.\n    S:   (Model.)                                                                                                                  Template 1\nGuide discussion so that students articulate the following: the tape diagram is\ndivided into 12 parts, with each part representing the time it takes Christine to do\none math problem; the whole tape diagram represents a total of 60 minutes.\n    T:A different way to model this problem is to use a number\n      line. Let’s use our tape diagram to help us draw a\n      number line that represents a total of 60 minutes.\n   T: Draw a line a few centimeters below the tape diagram. Make it the same\n      length as the tape diagram. Make tick marks on the number line where\n      units are divided on the tape diagram. (Model each step as students\nMP.4\n      follow along.)\n   T: What do you notice about the relationship between the tape diagram and the number line?\n   S: The lines are in the same place.  They have the same number of parts.\n   T: What part of the tape diagram do the spaces between tick marks represent?\n   S: The units.  The time it takes to do each math problem.  They each represent 5 minutes.\n   T: We know from yesterday that time doesn’t stop. It was happening before Christine started her\n      homework, and it keeps going after she’s finished. To show that time is continuous, we’ll extend\n      our number line on both sides and add arrows to it. (Model.)\n   S: (Extend number lines and add arrows.)\n   T: Let’s label our number lines. The space between 2 tick marks represents a 5-minute interval.\n      Write 0 under the first tick mark on the left. Then, skip-count by fives. As you count, write each\n      number under the next tick mark. Stop when you’ve labeled 60. (Model as students follow along.)\n   T: The space between 2 marks represents one 5-minute interval. How many minutes are in the\n      interval from 0 to 10? From 0 to 60? From 15 to 30?\n    S:   From 0 to 10 is 10 minutes, from 0 to 60 is 60 minutes, and from 15 to 30 is 15 minutes.\n    T:   Let’s use the number line to find how many minutes it takes Christine to do 4 math problems. (Place\n         finger at 0. Move to 5, 10, 15, and 20 as you count 1 problem, 2 problems, 3 problems, 4 problems.)\n         It takes Christine 20 minutes to do 4 math problems. Use the word interval to explain to your\n         partner how we used the number line to figure that out.\n    S:   (Discuss.)\nUse guided practice to find how long it takes Christine to solve 7, 9, and 11 problems.\n\n\n                        Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a                          25\n                                                      continuous measurement model, the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 27 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                                      Lesson 2 3 2\n\n\nPart 2: Use a number line to tell time to the nearest 5 minutes within 1 hour.\n    T:   Use your ruler to draw a 12-centimeter number line. (Model as students follow along.)\n    T:   How many 5-minute intervals will the number line need to represent a total of 60 minutes?\n    S:   Twelve!\n    T:   Marking 12 equally spaced intervals is difficult! How can the ruler help do that?\n    S:   It has 12 centimeters.  The centimeters show us where to draw tick marks.\n    T:   Use the centimeters on your ruler to draw tick marks for the number line. (Model.)\n    S:   (Use rulers to draw tick marks.)\n    T:   Just like on the first number line, we’ll need to show that time is continuous. Extend each side of\n         your number line and make arrows. Then skip-count to label each 5-minute interval starting with 0\n         and ending with 60. (Model while students follow along.)\n\n\n                  0     5         10            15          20      25      30       35       40        45       50         55      60\n              minutes                                                                                                             minutes\n\n    T:   How many minutes are labeled on our number line?\n    S:   60 minutes.\n    T:   There are 60 minutes between 1:00 p.m. and 2:00 p.m.\n         Let’s use the number line to model exactly when we                                                                  NOTES ON\n         will do the activities on our class schedule that happen                                                            MULTIPLE MEANS\n         between 1:00 p.m. and 2:00 p.m.                                                                                     OF ACTION AND\n    T:   Below the 0 tick mark, write 1:00 p.m. Below the                                                                    EXPRESSION:\n         60 tick mark, write 2:00 p.m. (Model.)                                                                  You need not use 1 p.m. to 2 p.m. as\n                                                                                                                 the interval; pick an hour that is\n    S:   (Label as shown below.)\n                                                                                                                 relevant to today’s class. As students\n                                                                                                                 determine the number of 5-minute\n                                                                                                                 intervals on the number line, some may\n                                                                                                                 count tick marks instead of spaces and\n                                                                                                                 get an answer of 13. Watch for this\n    T:   Now this number line shows the hour between                                                             misconception and guide students to\n         1:00 p.m. and 2:00 p.m.                                                                                 make a distinction between tick marks\n                                                                                                                 and intervals if necessary.\n    T:   We start recess at 1:10 p.m. Is that time between\n         1:00 p.m. and 2:00 p.m.?\n    S:   (Agree.)\n    T:   To find that spot on the number line, I’ll put my finger on 1:00 and move it to the right as I skip-\n         count intervals until I reach 1:10. Remind me, what are we counting by?\n    S:   Fives!\n    T:   (Model, with students chorally counting along.)\n\n\n                            Lesson 2:                  Relate skip-counting by fives on the clock and telling time to a                               26\n                                                       continuous measurement model, the number line.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 28 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                               Lesson 2 3 2\n\n\n    T:   I’ll draw a dot on the spot where the tick mark and\n         number line cross and label it R for recess. (Draw\n         and label as shown on the right.) That dot shows\n         the location of a point. Finding and drawing a\n         point is called plotting a position on the number\n         line.\n    T:   At 1:35 p.m., we’ll start science. Is 1:35 p.m. between\n         1:00 p.m. and 2:00 p.m.?\n                                                                                                                            NOTES ON\n    S:   (Agree.)\n                                                                                                                            MULTIPLE MEANS\n    T:   Plot 1:35 p.m. as a point on your number line. Label it                                                            OF ACTION AND\n         C.\n                                                                                                                            EXPRESSION:\n    S:   (Plot a point on the number line at 1:35.)                                                             Extend the discussion by inviting\nContinue guided practice using the following suggested                                                          students to discuss whether or not\nsequence: 1:45 p.m. and 2:00 p.m.                                                                               12:55 p.m. and 2:15 p.m. can be\n                                                                                                                plotted on this number line. Help them\n    T:   How does the number line you’ve labeled compare to                                                     reason about their answer and think\n         the analog clock on the wall?                                                                          about where the times might be\n    S:   We count the minutes by fives on both.  The clock is                                                  plotted, given the continuity of time.\n         like the number line wrapped in a circle.\n\nPart 3: Relate the number line to the clock and tell time to the\nnearest 5 minutes.\nStudents have Template 2 (two clocks) ready. Display a clock                                                                NOTES ON\nface without hands.                                                                                                         MULTIPLE MEANS\n    T:   We counted by fives to plot minutes on a number line,                                                              OF REPRESENTATION:\n         and we’ll do the same on a clock.                                  Activate prior knowledge about the\n    T:   How many 5-minute intervals show 15 minutes on a                   minute hand and hour hand learned in\n         clock?                                                             Grade 2 Module 2. Review their\n                                                                            difference in purpose, as well as in\n    S:   3 intervals.\n                                                                            length.\n    T:   We started at 0 on the number line, but a clock has\n         no 0. Where is the starting point on a clock?\n    S:   The 12.                                                                                Template 2\n    T:   Let’s count each 5-minute interval and plot a point on the clock to show\n         15 minutes. (Model.)\nOptions for further practice:\n        Plot 30 minutes, 45 minutes, and 55 minutes using the process above.\n        Write 9:15 a.m., 3:30 p.m., and 7:50 a.m. on the board as they would\n         appear on a digital clock, or say the time rather than write it. Students\n         copy each time, plot points, and draw hands to show that time. (Model\n         drawing hands with 10:20 a.m.)\n\n\n                        Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a                                   27\n                                                      continuous measurement model, the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 29 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 2 3 2\n\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the Problem\nSet within the allotted 10 minutes. For some classes, it may be                                                             NOTES ON\nappropriate to modify the assignment by specifying which                                                                    MULTIPLE MEANS\nproblems they work on first. Some problems do not specify a                                                                 OF REPRESENTATION:\nmethod for solving. Students should solve these problems using\n                                                                                                                Problem 4 is likely to pose the biggest\nthe RDW approach used for Application Problems.                                                                 challenge. It requires understanding\n                                                                                                                the difference between a.m. and p.m.\n                                                                                                                This concept was introduced in Grade\nStudent Debrief (10 minutes)                                                                                    2. One option would be to review it\n                                                                                                                with students before they begin the\nLesson Objective: Relate skip-counting by fives on the clock                                                    Problem Set. Another option would be\nand telling time to a continuous measurement model, the                                                         to allow them to grapple with the\nnumber line.                                                                                                    question and support understanding\n                                                                                                                through the Student Debrief.\nThe Student Debrief is intended to invite reflection and active\nprocessing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        In Problem 2, what information was important\n         for plotting the point on the number line that\n         matched the time shown on each clock?\n        Each interval on the analog clock is labeled with\n         the numbers 1–12. Compare those with our\n         labels from 0 to 60 on the number line. What do\n         the labels represent on both tools?\n        How does multiplication using units of 5 help you\n         read or measure time?\n        Students may have different answers for Problem\n         4 (11:25 p.m. may come before or after\n         11:20 a.m.). Allow students with either answer a\n         chance to explain their thinking.\n        How did our minute counting and time telling activities in today’s Fluency Practice help you with the\n         rest of the lesson?\n        Look at the number line used for Problem 2. Where do you think 5:38 would be? (This anticipates\n         Lesson 3 by counting by fives and then ones on a number line.)\n\n\n                        Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a                                    28\n                                                      continuous measurement model, the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 30 (debrief) ---\nA STORY OF UNITS                                                                                                             Lesson 2 3 2\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students\n\n\n                       Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a                      29\n                                                     continuous measurement model, the number line.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 31 (problem-set) ---\nA STORY OF UNITS                                                                                         Lesson 2 Problem Set 3 2\n\n\nName                                                                                                        Date\n\n1. Follow the directions to label the number line below.\n\n\n   a. Ingrid gets ready for school between 7:00 a.m. and 8:00 a.m. Label the first and last tick marks as\n      7:00 a.m. and 8:00 a.m.\n\n\n   b. Each interval represents 5 minutes. Count by fives starting at 0, or 7:00 a.m. Label each 5-minute\n      interval below the number line up to 8:00 a.m.\n\n\n   c. Ingrid starts getting dressed at 7:10 a.m. Plot a point on the number line to represent this time.\n      Above the point, write D.\n\n\n   d. Ingrid starts eating breakfast at 7:35 a.m. Plot a point on the number line to represent this time.\n      Above the point, write E.\n\n\n   e. Ingrid starts brushing her teeth at 7:40 a.m. Plot a point on the number line to represent this time.\n      Above the point, write T.\n\n\n   f.   Ingrid starts packing her lunch at 7:45 a.m. Plot a point on the number line to represent this time.\n        Above the point, write L.\n\n\n   g. Ingrid starts waiting for the bus at 7:55 a.m. Plot a point on the number line to represent this time.\n      Above the point, write W.\n\n\n                        Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a            30\n                                                      continuous measurement model, the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 32 (problem-set) ---\nA STORY OF UNITS                                                                                                        Lesson 2 Problem Set 3 2\n\n\n2. Label every 5 minutes below the number line shown. Draw a line from each clock to the point on the\n   number line which shows its time. Not all of the clocks have matching points.\n\n                                       12                                                                 12                                            12    1\n                                 11            1                                                     11        1                                   11\n                          10                        2                                           10                 2                          10                  2\n\n   8:35               9                                 3            5:15                   9                          3       5:40       9                           3\n\n                          8                         4                                           8                  4                          8                   4\n                                 7             5                                                     7         5                                   7          5\n                                        6                                                                 6                                             6\n\n\n    0                                                                                                                                                             60\n 5:00 p.m.                                                                                                                                                   6:00 p.m.\n\n\n3. Noah uses a number line to locate 5:45 p.m. Each interval is 5 minutes. The number line shows the hour\n   from 5 p.m. to 6 p.m. Label the number line below to show his work.\n\n\n    0                                                                                                                                                             60\n 5:00 p.m.                                                                                                                                                   6:00 p.m.\n\n\n4. Tanner tells his little brother that 11:25 p.m. comes after 11:20 a.m. Do you agree with Tanner?\n   Why or why not?\n\n\n                               Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a                                     31\n                                                             continuous measurement model, the number line.\n\n                              This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                              G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 33 (exit-ticket) ---\nA STORY OF UNITS                                                                                              Lesson 2 Exit Ticket 3 2\n\n\n  Name                                                                                                            Date\n\n  The number line below shows a math class that begins at 10:00 a.m. and ends at 11:00 a.m. Use the number\n  line to answer the following questions.\n\n\n                   Sprints               Application Problem                                                                 Exit Ticket\n\n\n    0         5      10           15                20               25         30          35            40            45             50   55      60\n10:00 a.m.                                                                                                                                       11:00 a.m.\n\n        a. What time do Sprints begin?\n\n\n        b. What time do students begin the Application Problem?\n\n\n        c. What time do students work on the Exit Ticket?\n\n\n        d. How long is math class?\n\n\n                              Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a                                  32\n                                                            continuous measurement model, the number line.\n\n                             This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                             G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 34 (homework) ---\nA STORY OF UNITS                                                                                           Lesson 2 Homework 3 2\n\n\nName                                                                                                        Date\n\nFollow the directions to label the number line below.\n\n\n    a. The basketball team practices between 4:00 p.m. and 5:00 p.m. Label the first and last tick marks as\n       4:00 p.m. and 5:00 p.m.\n\n\n    b. Each interval represents 5 minutes. Count by fives starting at 0, or 4:00 p.m. Label each 5-minute\n       interval below the number line up to 5:00 p.m.\n\n\n    c. The team warms up at 4:05 p.m. Plot a point on the number line to represent this time. Above the\n       point, write W.\n\n\n    d. The team shoots free throws at 4:15 p.m. Plot a point on the number line to represent this time.\n       Above the point, write F.\n\n\n    e. The team plays a practice game at 4:25 p.m. Plot a point on the number line to represent this time.\n       Above the point, write G.\n\n\n    f.   The team has a water break at 4:50 p.m. Plot a point on the number line to represent this time.\n         Above the point, write B.\n\n\n    g. The team reviews their plays at 4:55 p.m. Plot a point on the number line to represent this time.\n       Above the point, write P.\n\n\n                        Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a            33\n                                                      continuous measurement model, the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 35 (template) ---\nA STORY OF UNITS                                                                                          Lesson 2 Template 1 3 2\n\n\ntape diagram\n\n\n                      Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a             34\n                                                    continuous measurement model, the number line.\n\n                     This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                     G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 36 (template) ---\nA STORY OF UNITS                                                                                          Lesson 2 Template 2 3 2\n\n\n                      11                     12                  1\n                 10                                                         2\n\n             9                                                                    3\n\n                 8                                                           4\n                       7                                          5\n                                                6\n\n\n                      11                     12                  1\n                 10                                                         2\n\n             9                                                                    3\n\n                 8                                                           4\n                       7                                          5\n                                                6\n\n\ntwo clocks\n\n\n                       Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a              35\n                                                     continuous measurement model, the number line.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 31,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                         Lesson 2 Problem Set 3 2\n\n\nName                                                                                                        Date\n\n1. Follow the directions to label the number line below.\n\n\n   a. Ingrid gets ready for school between 7:00 a.m. and 8:00 a.m. Label the first and last tick marks as\n      7:00 a.m. and 8:00 a.m.\n\n\n   b. Each interval represents 5 minutes. Count by fives starting at 0, or 7:00 a.m. Label each 5-minute\n      interval below the number line up to 8:00 a.m.\n\n\n   c. Ingrid starts getting dressed at 7:10 a.m. Plot a point on the number line to represent this time.\n      Above the point, write D.\n\n\n   d. Ingrid starts eating breakfast at 7:35 a.m. Plot a point on the number line to represent this time.\n      Above the point, write E.\n\n\n   e. Ingrid starts brushing her teeth at 7:40 a.m. Plot a point on the number line to represent this time.\n      Above the point, write T.\n\n\n   f.   Ingrid starts packing her lunch at 7:45 a.m. Plot a point on the number line to represent this time.\n        Above the point, write L.\n\n\n   g. Ingrid starts waiting for the bus at 7:55 a.m. Plot a point on the number line to represent this time.\n      Above the point, write W.\n\n\n                        Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a            30\n                                                      continuous measurement model, the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 32,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                                        Lesson 2 Problem Set 3 2\n\n\n2. Label every 5 minutes below the number line shown. Draw a line from each clock to the point on the\n   number line which shows its time. Not all of the clocks have matching points.\n\n                                       12                                                                 12                                            12    1\n                                 11            1                                                     11        1                                   11\n                          10                        2                                           10                 2                          10                  2\n\n   8:35               9                                 3            5:15                   9                          3       5:40       9                           3\n\n                          8                         4                                           8                  4                          8                   4\n                                 7             5                                                     7         5                                   7          5\n                                        6                                                                 6                                             6\n\n\n    0                                                                                                                                                             60\n 5:00 p.m.                                                                                                                                                   6:00 p.m.\n\n\n3. Noah uses a number line to locate 5:45 p.m. Each interval is 5 minutes. The number line shows the hour\n   from 5 p.m. to 6 p.m. Label the number line below to show his work.\n\n\n    0                                                                                                                                                             60\n 5:00 p.m.                                                                                                                                                   6:00 p.m.\n\n\n4. Tanner tells his little brother that 11:25 p.m. comes after 11:20 a.m. Do you agree with Tanner?\n   Why or why not?\n\n\n                               Lesson 2:                     Relate skip-counting by fives on the clock and telling time to a                                     31\n                                                             continuous measurement model, the number line.\n\n                              This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                              G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 282,
+        "text": "A STORY OF UNITS                                                                                         Lesson 2 Answer Key 3 2\n\n\nLesson 2\nProblem Set\n1.    a. First and last tick marks labeled as 7:00 a.m. and 8:00 a.m.\n      b. Each interval labeled by fives below the number line up to 8:00 a.m.\n      c. Point D plotted and labeled above 7:10 a.m.\n      d. Point E plotted and labeled above 7:35 a.m.\n      e. Point T plotted and labeled above 7:40 a.m.\n      f.   Point L plotted and labeled above 7:45 a.m.\n      g. Point W plotted and labeled above 7:55 a.m.\n2.    Every 5 minutes labeled below the number line\n      First clock not matched to the number line\n      Second clock—5:50 p.m.\n      Third clock—5:15 p.m.\n      Fourth clock not matched to the number line\n      Fifth clock—5:40 p.m.\n      Last clock—5:25 p.m.\n3.    First and last tick marks labeled as 5:00 p.m. and 6:00 p.m.; each interval labeled by fives below the\n      number line up to 6:00 p.m.; 5:45 p.m. located and plotted on the number line\n4.    Answers will vary.\n\n\nExit Ticket\n      a. 10:10 a.m.                                                             c.       10:50 a.m.\n      b. 10:20 a.m.                                                             d.       1 hour\n\n\nHomework\n      a. First and last tick marks labeled as 4:00 p.m. and 5:00 p.m.\n      b. Each interval labeled by fives below the number line up to 5:00 p.m.\n      c. Point W plotted and labeled above 4:05 p.m.\n      d. Point F plotted and labeled above 4:15 p.m.\n      e. Point G plotted and labeled above 4:25 p.m.\n      f. Point B plotted and labeled above 4:50 p.m.\n      g. Point P plotted and labeled above 4:55 p.m.\n\n\n                                                                                                                                   281\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

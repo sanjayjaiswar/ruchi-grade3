@@ -1,0 +1,444 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m6-l8",
+  "moduleId": "m6",
+  "lessonNumber": 8,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_6/g3_m6_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "74325e3dfcae94e1fe359552d3857a3c929b26c5cca327ee80ef45d651aa7358",
+    "teacherEditionBytes": 6604249,
+    "lessonPdfPages": {
+      "start": 106,
+      "end": 119
+    },
+    "problemSetPdfPages": [
+      114,
+      115
+    ],
+    "exitTicketPdfPages": [
+      116
+    ],
+    "homeworkPdfPages": [
+      117,
+      118
+    ],
+    "answerKeyPdfPages": [
+      157,
+      158
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m6-student/workbook-page-039.png"
+    ],
+    "existingTeacherEditionImages": []
+  },
+  "objective": "Represent measurement data with line plots.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "Template\nMaterials: (S) Heights of Sunflower Plants chart\n           (Template) pictured to the right, personal\n           white board, straightedge\n\nProblem 1: Plot a large data set to the nearest half\ninch.\nStudents start with the Heights of Sunflower Plants\nTemplate in their personal white boards.\n      T:    What data is shown in the chart?\n      S:    The heights of sunflower plants.\n\n\n                          Lesson 8:                     Represent measurement data with line plots.                                       107\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                   Lesson 8 3 6\n\n\n    T:   How does the measurement data in this chart\n         compare to the measurement data we plotted                                                        NOTES ON\n         yesterday?                                                                                        MULTIPLE MEANS\n    S:   There is a lot more data to plot!  The numbers are                                               OF REPRESENTATION:\n         bigger too!                                                                               Give explicit prompts to students\n    T:   Let’s make a line plot to display it. With a partner,                                     working below grade level for each\n         discuss the steps you should take to create a line plot                                   step in the process of making a line plot\n         of the data.                                                                              for the Heights of Sunflower Plants\n                                                                                                   data. Make a poster, or speak the\n    S:   (Discuss.)\n                                                                                                   following:\n    T:   What number does the first tick mark on your line plot                                       Find and record the smallest and\n         represent? How do you know?                                                                   largest measurements as\n    S:   60 inches because it is the smallest measurement.                                             endpoints.\n                                                                                                      Choose the scale. Ask, “What\n    T:   And the last tick mark? How do you know?\n                                                                                                       interval should I use—whole\n    S:   64 inches because it is the biggest measurement.                                              numbers, halves, or quarters?”\n    T:   What interval should you use to draw the tick marks                                          Count by half inches from the\n         between 60 and 64? How do you know?                                                           smallest measurement to the\n                                                                                                       largest measurement to find the\n    S:   Half inches because that is what a lot of the                                                 number of tick marks to draw.\n         measurements are.  I should use half inches                                                  Draw.\n         because it is a common unit in the chart.  Half                                             Plot the data on the line plot.\n         inches because it is the smallest unit in the chart.                                          Check off each point along the way.\n    T:   Go ahead and create your line plot. (Circulate to check                                      Title the line plot (e.g., Heights of\n         student work.)                                                                                Sunflower Plants), and specify the\n                                                                                                       units (e.g., inches).\nProblem 2: Observe and interpret data on a line plot.\n    T:   Tell me a true statement about the heights of the sunflower plants in Mrs. Schaut’s garden.\n                                                         1                                                                                1\n    S:   The most common height is 62 2 inches.  There is only 1 plant that is 60 inches tall.  61, 61 2,\n                1                                                                                                                 1\n         and 63 inches all have the same number of plants.  There are more plants that are 62 inches\n                2                                                                                                                 2\n                        1\n         tall than 60, 60 , and 61 inches combined.\n                        2\n    T:   Are these statements true of the data in the chart?\n    S:   Yes because it is the same data. We just displayed it differently.\n    T:   How does having the data displayed as a line plot help you to think and talk about the data?\n    S:   I can easily see the number of plants for each measurement.  I can quickly see the most common\n         and least common measurements.\n    T:   What are the three most frequent measurements in order from shortest to tallest?\n               1\n    S:   62, 62 , and 63 inches.\n               2\n                                                                                         1\n    T:   What is the total number of plants that measure 62, 62 2, and 63 inches?\n    S:   16 plants!\n\n\n                       Lesson 8:                     Represent measurement data with line plots.                                               108\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                   Lesson 8 3 6\n\n\n       T:   How many plants were measured in all?\n       S:   30 plants.\n                                                                                                      1\n       T:   Write a number sentence to show how many plants do not measure 62, 62 , or 63 inches.\n                                                                                                      2\n       S:   (Write 30 – 16 = 14.)\n       T:   (Write or say, “Most of the sunflower plants measure between 62 and 63 inches.”) True?\n       S:   Yes!  Yes because 16 plants measure between 62 and 63 inches, and 14 plants do not. Sixteen is\n            more than 14.\n       T:   What do you notice about the location of the\n            three most frequent measurements on the line\n            plot?\n       S:   They are right next to each other.  The most\n            frequent measurement is in between the second\n            and third most frequent measurements.\n       T:   What do you notice about the data before the\n            three most frequent measurements?\n       S:   It goes 1, 2, 3, 3.  Hey, the number of plants\n            goes up and then stays the same.  The number\n            of plants increases or stays the same as it gets\n            close to the most frequent measurement.\n       T:   How about the data after the three most frequent\n            measurements?\n       S:   It goes 3, 2.  It starts to go back down!  After\n            the most frequent measurement, the number of\nMP.7        sunflower plants decreases for each\n            measurement.\n       T:   (Cover up the bottom three rows of data in the chart.) Erase the Xs on your line plot and create a\n            new line plot with this data. (Allow students time to work.) Did the three most frequent\n            measurements change when you plotted less data?\n                                                                                                  1\n       S:   Yes, now the three most frequent measurements are 61, 61 , and 62 inches.\n                                                                                                  2\n       T:   That means that most of the sunflowers in Mrs. Schaut’s garden are between 61 and 62 inches tall.\n       S:   No, that is not right!  No, we saw earlier that most of the sunflowers are between 62 and 63\n            inches tall.\n       T:   How did using less data change how we can talk about the heights of most of the sunflowers?\n            Discuss with your partner.\n       S:   When we used less data, it changed the most frequent measurements.  Yeah, with more data we\n            said most sunflowers were between 62 and 63 inches tall. But with less data, that changed to\n            between 61 and 62 inches.\n       T:   How did the shape of the line plot change when we used less data? Talk to a partner.\n\n\n                          Lesson 8:                     Represent measurement data with line plots.                 109\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                               Lesson 8 3 6\n\n\n       S:   The height of the line plot changed because with\n            more data, the most X’s for a measurement\n            was 7, but with less data, the most X’s is 3.\n             The three most frequent measurements\n            shifted to the left on the number line.  It does\nMP.7        not really follow the same pattern as increasing\n            before the three most frequent measurements\n            and decreasing after the three most frequent\n            measurements.  Except for the three most\n            frequent measurements, all other measurements\n            only have one X.",
+    "fluencyPracticeText": " Group Counting 3.OA.1                                               (3 minutes)\n Multiply by 7 3.OA.7                                                (7 minutes)\n Count by Halves and Fourths 3.MD.4                                  (4 minutes)\n\nGroup Counting (3 minutes)\nNote: This group counting activity reviews the relationship between counting by a unit and multiplying and\ndividing with that unit.\n    T:   Count by eights to 80.\n    S:   8, 16, 24, 32, 40, 48, 56, 64, 72, 80.\n    T:   (Write 4 × 8 =     .) What is the value of 4 eights? Count by eights if you are unsure.\n    S:   32.\n    T:   Say the multiplication sentence.\n    S:   4 × 8 = 32.\nContinue the process for 7 × 8 and 9 × 8.\n    T:   (Write 24 ÷ 8 =         .) What is 24 ÷ 8? Count by eights if you are unsure.\n    S:   3.\nContinue the process for 40 ÷ 8, 48 ÷ 8, and 64 ÷ 8.\n    T:   Count by nines to 90.\n    S:   9, 18, 27, 36, 45, 54, 63, 72, 81, 90.\n    T:   (Write 2 × 9 =     .) What is the value of 2 nines? Count by nines if you are unsure.\n    S:   18.\n\n\n                         Lesson 8:                     Represent measurement data with line plots.             105\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                            Lesson 8 3 6\n\n\n    T:   Say the multiplication sentence.\n    S:   2 × 9 = 18.\nContinue the process for 4 × 9, 6 × 9, and 8 × 9.\n    T:   (Write 27 ÷ 9 =         .) What is 27 ÷ 9? Count by nines if you are unsure.\n    S:   3.\nContinue the process for 45 ÷ 9, 63 ÷ 9, and 81 ÷ 9.\n\nMultiply by 7 (7 minutes)\nMaterials: (S) Multiply by 7 (1–5) (Pattern Sheet)\n\nNote: This activity builds fluency with multiplication facts using units of 7. It works toward students knowing\nfrom memory all products of two one-digit numbers. See Lesson 6 for the directions for administration of a\nMultiply-By Pattern Sheet.\n    T:   (Write 5 × 7 =     .) Let’s skip-count up by sevens to find the answer. I’ll raise a finger for each\n         seven. (Raise a finger for each number to track the count. Record the skip-count answers on the\n         board.)\n    S:   7, 14, 21, 28, 35.\n    T:   (Circle 35 and write 5 × 7 = 35 above it. Write 3 × 7 =     .) Let’s skip-count up by sevens again.\n         (Track with fingers as students count.)\n    S:   7, 14, 21.\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 35 with 5 fingers, 1 for each\n         seven. (Count down with your fingers as students say numbers.)\n    S:   35 (5 fingers), 28 (4 fingers), 21 (3 fingers).\nRepeat the process for 4 × 7.\n    T:   (Distribute the Multiply by 7 Pattern Sheet.) Let’s practice multiplying by 7. Be sure to work left to\n         right across the page.\n\nCount by Halves and Fourths (4 minutes)\nNote: This fluency activity reviews Lesson 6.\n                                                                                                    Halves:\n    T:   Count by halves to 12 halves as I write.\n         Please do not count faster than I can write.\n         (Write as students count.)\n    S:   1 half, 2 halves, 3 halves, 4 halves, 5 halves,\n         6 halves, 7 halves, 8 halves, 9 halves,\n                                                                                                    Fourths:\n         10 halves, 11 halves, 12 halves.\n                   2\n    T:   (Point to 2.) Say 2 halves as a whole number.\n    S:   1.\n                             2\n    T:   (Lightly cross out , and write 1 beneath it.)\n                             2\n\n\n                        Lesson 8:                     Represent measurement data with line plots.                        106\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                  Lesson 8 3 6\n\n\n                                                                          4 6 8 10\nContinue the process for the following sequence: , , ,                            ,\n                                                                          2 2 2 2\nand\n      12\n        .                                                                                                    NOTES ON\n      2                                                                                                      MULTIPLE MEANS\n      T:    Count by halves, saying whole numbers when you                                                   OF REPRESENTATION:\n            arrive at whole numbers. Try not to look at the board.                                    Although the term interval was\n            (Direct students to count forward and backward on the                                     introduced in Module 2 and has been\n            number line, occasionally changing directions.)                                           used earlier in this module, it may be\n                                                                                                      appropriate to revisit its meaning for\nRepeat the process for fourths.\n                                                                                                      English language learners and others.\n                                                                                                      Use drawings, gestures, and examples\n                                                                                                      to explain the meaning of interval.",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\n Problem Set within the allotted 10 minutes. For some\n classes, it may be appropriate to modify the assignment by\n specifying which problems they work on first. Some\n problems do not specify a method for solving. Students\n solve these problems using the RDW approach used for\n Application Problems.",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "What data is shown in the chart?"
+      },
+      {
+        "speaker": "students",
+        "text": "The heights of sunflower plants. ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 8 3 6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How does the measurement data in this chart compare to the measurement data we plotted NOTES ON yesterday? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "There is a lot more data to plot!  The numbers are OF REPRESENTATION: bigger too! Give explicit prompts to students"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s make a line plot to display it. With a partner, working below grade level for each discuss the steps you should take to create a line plot step in the process of making a line plot of the data. for the Heights of Sunflower Plants data. Make a poster, or speak the"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.) following:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What number does the first tick mark on your line plot  Find and record the smallest and represent? How do you know? largest measurements as"
+      },
+      {
+        "speaker": "students",
+        "text": "60 inches because it is the smallest measurement. endpoints.  Choose the scale. Ask, “What"
+      },
+      {
+        "speaker": "teacher",
+        "text": "And the last tick mark? How do you know? interval should I use—whole"
+      },
+      {
+        "speaker": "students",
+        "text": "64 inches because it is the biggest measurement. numbers, halves, or quarters?”"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What interval should you use to draw the tick marks  Count by half inches from the between 60 and 64? How do you know? smallest measurement to the largest measurement to find the"
+      },
+      {
+        "speaker": "students",
+        "text": "Half inches because that is what a lot of the number of tick marks to draw. measurements are.  I should use half inches Draw. because it is a common unit in the chart.  Half  Plot the data on the line plot. inches because it is the smallest unit in the chart. Check off each point along the way."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Go ahead and create your line plot. (Circulate to check  Title the line plot (e.g., Heights of student work.) Sunflower Plants), and specify the units (e.g., inches)."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell me a true statement about the heights of the sunflower plants in Mrs. Schaut’s garden. 1 1"
+      },
+      {
+        "speaker": "students",
+        "text": "The most common height is 62 2 inches.  There is only 1 plant that is 60 inches tall.  61, 61 2, 1 1 and 63 inches all have the same number of plants.  There are more plants that are 62 inches 2 2 1 tall than 60, 60 , and 61 inches combined. 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Are these statements true of the data in the chart?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes because it is the same data. We just displayed it differently."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How does having the data displayed as a line plot help you to think and talk about the data?"
+      },
+      {
+        "speaker": "students",
+        "text": "I can easily see the number of plants for each measurement.  I can quickly see the most common and least common measurements."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What are the three most frequent measurements in order from shortest to tallest? 1"
+      },
+      {
+        "speaker": "students",
+        "text": "62, 62 , and 63 inches. 2 1"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the total number of plants that measure 62, 62 2, and 63 inches?"
+      },
+      {
+        "speaker": "students",
+        "text": "16 plants! ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 8 3 6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many plants were measured in all?"
+      },
+      {
+        "speaker": "students",
+        "text": "30 plants. 1"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a number sentence to show how many plants do not measure 62, 62 , or 63 inches. 2"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 30 – 16 = 14.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write or say, “Most of the sunflower plants measure between 62 and 63 inches.”) True?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes!  Yes because 16 plants measure between 62 and 63 inches, and 14 plants do not. Sixteen is more than 14."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do you notice about the location of the three most frequent measurements on the line plot?"
+      },
+      {
+        "speaker": "students",
+        "text": "They are right next to each other.  The most frequent measurement is in between the second and third most frequent measurements."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do you notice about the data before the three most frequent measurements?"
+      },
+      {
+        "speaker": "students",
+        "text": "It goes 1, 2, 3, 3.  Hey, the number of plants goes up and then stays the same.  The number of plants increases or stays the same as it gets close to the most frequent measurement."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How about the data after the three most frequent measurements?"
+      },
+      {
+        "speaker": "students",
+        "text": "It goes 3, 2.  It starts to go back down!  After the most frequent measurement, the number of MP.7 sunflower plants decreases for each measurement."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Cover up the bottom three rows of data in the chart.) Erase the Xs on your line plot and create a new line plot with this data. (Allow students time to work.) Did the three most frequent measurements change when you plotted less data? 1"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes, now the three most frequent measurements are 61, 61 , and 62 inches. 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "That means that most of the sunflowers in Mrs. Schaut’s garden are between 61 and 62 inches tall."
+      },
+      {
+        "speaker": "students",
+        "text": "No, that is not right!  No, we saw earlier that most of the sunflowers are between 62 and 63 inches tall."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How did using less data change how we can talk about the heights of most of the sunflowers? Discuss with your partner."
+      },
+      {
+        "speaker": "students",
+        "text": "When we used less data, it changed the most frequent measurements.  Yeah, with more data we said most sunflowers were between 62 and 63 inches tall. But with less data, that changed to between 61 and 62 inches."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How did the shape of the line plot change when we used less data? Talk to a partner. ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 8 3 6"
+      },
+      {
+        "speaker": "students",
+        "text": "The height of the line plot changed because with more data, the most X’s for a measurement was 7, but with less data, the most X’s is 3.  The three most frequent measurements shifted to the left on the number line.  It does MP.7 not really follow the same pattern as increasing before the three most frequent measurements and decreasing after the three most frequent measurements.  Except for the three most frequent measurements, all other measurements only have one X."
+      }
+    ],
+    "teacherPrompts": [
+      "What data is shown in the chart?",
+      "How does the measurement data in this chart compare to the measurement data we plotted NOTES ON yesterday? MULTIPLE MEANS",
+      "Let’s make a line plot to display it. With a partner, working below grade level for each discuss the steps you should take to create a line plot step in the process of making a line plot of the data. for the Heights of Sunflower Plants data. Make a poster, or speak the",
+      "What number does the first tick mark on your line plot  Find and record the smallest and represent? How do you know? largest measurements as",
+      "And the last tick mark? How do you know? interval should I use—whole",
+      "What interval should you use to draw the tick marks  Count by half inches from the between 60 and 64? How do you know? smallest measurement to the largest measurement to find the",
+      "Go ahead and create your line plot. (Circulate to check  Title the line plot (e.g., Heights of student work.) Sunflower Plants), and specify the units (e.g., inches).",
+      "Tell me a true statement about the heights of the sunflower plants in Mrs. Schaut’s garden. 1 1",
+      "Are these statements true of the data in the chart?",
+      "How does having the data displayed as a line plot help you to think and talk about the data?",
+      "What are the three most frequent measurements in order from shortest to tallest? 1",
+      "What is the total number of plants that measure 62, 62 2, and 63 inches?",
+      "How many plants were measured in all?",
+      "Write a number sentence to show how many plants do not measure 62, 62 , or 63 inches. 2",
+      "(Write or say, “Most of the sunflower plants measure between 62 and 63 inches.”) True?",
+      "What do you notice about the location of the three most frequent measurements on the line plot?",
+      "What do you notice about the data before the three most frequent measurements?",
+      "How about the data after the three most frequent measurements?",
+      "(Cover up the bottom three rows of data in the chart.) Erase the Xs on your line plot and create a new line plot with this data. (Allow students time to work.) Did the three most frequent measurements change when you plotted less data? 1",
+      "That means that most of the sunflowers in Mrs. Schaut’s garden are between 61 and 62 inches tall.",
+      "How did using less data change how we can talk about the heights of most of the sunflowers? Discuss with your partner.",
+      "How did the shape of the line plot change when we used less data? Talk to a partner. ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 8 3 6"
+    ],
+    "debriefPrompt": "Look at Problem (b). With a partner, compare the steps you took to create the line plot",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Delilah stops under a silver maple tree and collects leaves. At home, she measures the widths of the leaves to the nearest 4 inch and records the measurements as shown below. Widths of Silver Maple Tree Leaves (in Inches) 3 1 3 5 6 6 6 5 4 4 4 1 1 1 3 6 6 5 5 6 2 4 2 4 1 1 1 6 6 6 6 6 4 2 4 1 3 1 3 6 5 6 6 6 2 4 4 4 1 3 1 6 6 6 5 6 4 4 2 a. Use the data to create a line plot below. b. Explain the steps you took to create the line plot. c. How many more leaves were 6 inches wide than 6 inches wide? d. Find the three most frequent measurements on the line plot. What does this tell you about the typical width of a silver maple tree leaf?",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                            Lesson 8 Problem Set 3 6\n\n\nName                                                                                           Date\n\nDelilah stops under a silver maple tree and collects leaves. At home, she measures the widths of the leaves to\n            1\nthe nearest 4 inch and records the measurements as shown below.\n\n\n                                       Widths of Silver Maple Tree Leaves (in Inches)\n\n             3                                                           1                                        3\n         5                             6                             6                           6            5\n             4                                                           4                                        4\n\n             1                           1                               1                          3\n         6                           6                               5                          5              6\n             2                           4                               2                          4\n\n             1                                                                                      1             1\n         6                             6                               6                        6             6\n             4                                                                                      2             4\n\n             1                           3                               1                                        3\n         6                           5                               6                           6            6\n             2                           4                               4                                        4\n\n                                         1                                                          3             1\n          6                          6                                 6                        5             6\n                                         4                                                          4             2\n\n\n    a. Use the data to create a line plot below.\n\n\n                       Lesson 8:                 Represent measurement data with line plots.                          113\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                           Lesson 8 Problem Set 3 6\n\n\nb. Explain the steps you took to create the line plot.\n\n\n                                                                          1\nc. How many more leaves were 6 inches wide than 6 inches wide?\n                                                                          2\n\n\nd. Find the three most frequent measurements on the line plot. What does this tell you about the\n    typical width of a silver maple tree leaf?\n\n\n                   Lesson 8:                 Represent measurement data with line plots.                         114\n\n                   ©2015 Great Minds. eureka-math.org\n                   G 3-M6-TE-1.3.0 -0 8.2 0 15",
+    "answerKeyProblemSetText": "a.   Line plot completed; Widths of Leaves; inches; values for X may vary\nb.   Answers will vary.\nc.   4\nd.   Explanations will vary.",
+    "answerKeyText": "A STORY OF UNITS                                                                     Lesson 8 Answer Key 3 6\n\n\nLesson 8\nPattern Sheet\n                7                                       14                           21                 28\n              35                                         7                           14                 7\n              21                                         7                           28                 7\n              35                                         7                           14                 21\n              14                                        28                           14                 35\n              14                                         7                           14                 21\n                7                                       21                           14                 21\n              28                                        21                           35                 21\n              28                                         7                           28                 14\n              28                                        21                           28                 35\n              28                                        35                           7                  35\n              14                                        35                           21                 35\n              28                                        14                           28                 21\n              35                                        21                           14                 28\n              21                                        35                           14                 28\n\n\nProblem Set\na.   Line plot completed; Widths of Leaves; inches; values for X may vary\nb.   Answers will vary.\nc.   4\nd.   Explanations will vary.\n\n\nExit Ticket\n                    1                  1\na.   23 inches, 23 4 inches, 23 2 inches\nb.   2 inches\nc.   3\n\n\n                          Module 6:                 Collecting and Displaying Data                             156\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                Lesson 8 Answer Key 3 6\n\n\nHomework\na.   Line plot completed; Distance Traveled; inches; values for X may vary\nb.   Answers will vary.\nc.   2\nd.   Explanations will vary.\n\n\n                          Module 6:                 Collecting and Displaying Data                        157\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M6-TE-1.3.0 -0 8.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "number-line",
+      "table-or-chart",
+      "graph-or-plot",
+      "fraction-model",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "T: (Cover up the bottom three rows of data in the chart.) Erase the Xs on your line plot and create a"
+      ],
+      "number-line": [
+        "T: What number does the first tick mark on your line plot  Find and record the smallest and",
+        "T: And the last tick mark? How do you know?",
+        "interval should I use—whole",
+        "T: What interval should you use to draw the tick marks  Count by half inches from the",
+        "S: Half inches because that is what a lot of the number of tick marks to draw.",
+        "shifted to the left on the number line.  It does",
+        "arrive at whole numbers. Try not to look at the board. Although the term interval was",
+        "number line, occasionally changing directions.) used earlier in this module, it may be"
+      ],
+      "table-or-chart": [
+        "Materials: (S) Heights of Sunflower Plants chart",
+        "T: What data is shown in the chart?",
+        "T: How does the measurement data in this chart",
+        "because it is a common unit in the chart.  Half  Plot the data on the line plot.",
+        "inches because it is the smallest unit in the chart. Check off each point along the way.",
+        "T: Are these statements true of the data in the chart?",
+        "T: (Cover up the bottom three rows of data in the chart.) Erase the Xs on your line plot and create a"
+      ],
+      "graph-or-plot": [
+        "Represent measurement data with line plots.",
+        "Lesson 8: Represent measurement data with line plots. 107",
+        "T: Let’s make a line plot to display it. With a partner, working below grade level for each",
+        "discuss the steps you should take to create a line plot step in the process of making a line plot",
+        "T: What number does the first tick mark on your line plot  Find and record the smallest and",
+        "because it is a common unit in the chart.  Half  Plot the data on the line plot.",
+        "T: Go ahead and create your line plot. (Circulate to check  Title the line plot (e.g., Heights of",
+        "Problem 2: Observe and interpret data on a line plot."
+      ],
+      "fraction-model": [
+        "S: 64 inches because it is the biggest measurement. numbers, halves, or quarters?”",
+        " Count by Halves and Fourths 3.MD.4 (4 minutes)",
+        "Count by Halves and Fourths (4 minutes)",
+        "Halves:",
+        "T: Count by halves to 12 halves as I write.",
+        "S: 1 half, 2 halves, 3 halves, 4 halves, 5 halves,",
+        "6 halves, 7 halves, 8 halves, 9 halves,",
+        "Fourths:"
+      ],
+      "money-model": [
+        "measurements change when you plotted less data?",
+        "T: How did using less data change how we can talk about the heights of most of the sunflowers?",
+        "S: When we used less data, it changed the most frequent measurements.  Yeah, with more data we",
+        "said most sunflowers were between 62 and 63 inches tall. But with less data, that changed to",
+        "T: How did the shape of the line plot change when we used less data? Talk to a partner.",
+        "S: The height of the line plot changed because with"
+      ],
+      "picture-or-drawing": [
+        "(Template) pictured to the right, personal",
+        "T: What interval should you use to draw the tick marks  Count by half inches from the",
+        "S: Half inches because that is what a lot of the number of tick marks to draw.",
+        "measurements are.  I should use half inches Draw.",
+        "Use drawings, gestures, and examples"
+      ]
+    },
+    "sourceIllustrationRequired": true,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "What data is shown in the chart?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How does the measurement data in this chart compare to the measurement data we plotted NOTES ON yesterday? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "There is a lot more data to plot!  The numbers are OF REPRESENTATION: bigger too! Give explicit prompts to students"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s make a line plot to display it. With a partner, working below grade level for each discuss the steps you should take to create a line plot step in the process of making a line plot of the data. for the Heights of Sunflower Plants data. Make a poster, or speak the"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What number does the first tick mark on your line plot  Find and record the smallest and represent? How do you know? largest measurements as"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What interval should you use to draw the tick marks  Count by half inches from the between 60 and 64? How do you know? smallest measurement to the largest measurement to find the"
+      },
+      {
+        "speaker": "students",
+        "text": "Half inches because that is what a lot of the number of tick marks to draw. measurements are.  I should use half inches Draw. because it is a common unit in the chart.  Half  Plot the data on the line plot. inches because it is the smallest unit in the chart. Check off each point along the way."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Go ahead and create your line plot. (Circulate to check  Title the line plot (e.g., Heights of student work.) Sunflower Plants), and specify the units (e.g., inches)."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How does having the data displayed as a line plot help you to think and talk about the data?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a number sentence to show how many plants do not measure 62, 62 , or 63 inches. 2"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 30 – 16 = 14.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write or say, “Most of the sunflower plants measure between 62 and 63 inches.”) True?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do you notice about the location of the three most frequent measurements on the line plot?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do you notice about the data before the three most frequent measurements?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Cover up the bottom three rows of data in the chart.) Erase the Xs on your line plot and create a new line plot with this data. (Allow students time to work.) Did the three most frequent measurements change when you plotted less data? 1"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How did the shape of the line plot change when we used less data? Talk to a partner. ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 8 3 6"
+      },
+      {
+        "speaker": "students",
+        "text": "The height of the line plot changed because with more data, the most X’s for a measurement was 7, but with less data, the most X’s is 3.  The three most frequent measurements shifted to the left on the number line.  It does MP.7 not really follow the same pattern as increasing before the three most frequent measurements and decreasing after the three most frequent measurements.  Except for the three most frequent measurements, all other measurements only have one X."
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 106 (debrief) ---\nA STORY OF UNITS                                                                                  Lesson 8 3 6\n\n\nLesson 8\nObjective: Represent measurement data with line plots.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (14 minutes)\n Application Problem               (3 minutes)\n Concept Development               (33 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (14 minutes)\n\n Group Counting 3.OA.1                                               (3 minutes)\n Multiply by 7 3.OA.7                                                (7 minutes)\n Count by Halves and Fourths 3.MD.4                                  (4 minutes)\n\nGroup Counting (3 minutes)\nNote: This group counting activity reviews the relationship between counting by a unit and multiplying and\ndividing with that unit.\n    T:   Count by eights to 80.\n    S:   8, 16, 24, 32, 40, 48, 56, 64, 72, 80.\n    T:   (Write 4 × 8 =     .) What is the value of 4 eights? Count by eights if you are unsure.\n    S:   32.\n    T:   Say the multiplication sentence.\n    S:   4 × 8 = 32.\nContinue the process for 7 × 8 and 9 × 8.\n    T:   (Write 24 ÷ 8 =         .) What is 24 ÷ 8? Count by eights if you are unsure.\n    S:   3.\nContinue the process for 40 ÷ 8, 48 ÷ 8, and 64 ÷ 8.\n    T:   Count by nines to 90.\n    S:   9, 18, 27, 36, 45, 54, 63, 72, 81, 90.\n    T:   (Write 2 × 9 =     .) What is the value of 2 nines? Count by nines if you are unsure.\n    S:   18.\n\n\n                         Lesson 8:                     Represent measurement data with line plots.             105\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 107 (lesson-instruction) ---\nA STORY OF UNITS                                                                                            Lesson 8 3 6\n\n\n    T:   Say the multiplication sentence.\n    S:   2 × 9 = 18.\nContinue the process for 4 × 9, 6 × 9, and 8 × 9.\n    T:   (Write 27 ÷ 9 =         .) What is 27 ÷ 9? Count by nines if you are unsure.\n    S:   3.\nContinue the process for 45 ÷ 9, 63 ÷ 9, and 81 ÷ 9.\n\nMultiply by 7 (7 minutes)\nMaterials: (S) Multiply by 7 (1–5) (Pattern Sheet)\n\nNote: This activity builds fluency with multiplication facts using units of 7. It works toward students knowing\nfrom memory all products of two one-digit numbers. See Lesson 6 for the directions for administration of a\nMultiply-By Pattern Sheet.\n    T:   (Write 5 × 7 =     .) Let’s skip-count up by sevens to find the answer. I’ll raise a finger for each\n         seven. (Raise a finger for each number to track the count. Record the skip-count answers on the\n         board.)\n    S:   7, 14, 21, 28, 35.\n    T:   (Circle 35 and write 5 × 7 = 35 above it. Write 3 × 7 =     .) Let’s skip-count up by sevens again.\n         (Track with fingers as students count.)\n    S:   7, 14, 21.\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 35 with 5 fingers, 1 for each\n         seven. (Count down with your fingers as students say numbers.)\n    S:   35 (5 fingers), 28 (4 fingers), 21 (3 fingers).\nRepeat the process for 4 × 7.\n    T:   (Distribute the Multiply by 7 Pattern Sheet.) Let’s practice multiplying by 7. Be sure to work left to\n         right across the page.\n\nCount by Halves and Fourths (4 minutes)\nNote: This fluency activity reviews Lesson 6.\n                                                                                                    Halves:\n    T:   Count by halves to 12 halves as I write.\n         Please do not count faster than I can write.\n         (Write as students count.)\n    S:   1 half, 2 halves, 3 halves, 4 halves, 5 halves,\n         6 halves, 7 halves, 8 halves, 9 halves,\n                                                                                                    Fourths:\n         10 halves, 11 halves, 12 halves.\n                   2\n    T:   (Point to 2.) Say 2 halves as a whole number.\n    S:   1.\n                             2\n    T:   (Lightly cross out , and write 1 beneath it.)\n                             2\n\n\n                        Lesson 8:                     Represent measurement data with line plots.                        106\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 108 (concept-development) ---\nA STORY OF UNITS                                                                                                  Lesson 8 3 6\n\n\n                                                                          4 6 8 10\nContinue the process for the following sequence: , , ,                            ,\n                                                                          2 2 2 2\nand\n      12\n        .                                                                                                    NOTES ON\n      2                                                                                                      MULTIPLE MEANS\n      T:    Count by halves, saying whole numbers when you                                                   OF REPRESENTATION:\n            arrive at whole numbers. Try not to look at the board.                                    Although the term interval was\n            (Direct students to count forward and backward on the                                     introduced in Module 2 and has been\n            number line, occasionally changing directions.)                                           used earlier in this module, it may be\n                                                                                                      appropriate to revisit its meaning for\nRepeat the process for fourths.\n                                                                                                      English language learners and others.\n                                                                                                      Use drawings, gestures, and examples\n                                                                                                      to explain the meaning of interval.\nApplication Problem (3 minutes)                                                                       Offer explanations in students’ first\n                                                                                                      language, if possible. Link vocabulary\nMrs. Byrne’s class is studying worms. They measure the lengths                                        to synonyms they may be more familiar\nof the worms to the nearest quarter inch. The length of the                                           with, such as space, period, distance,\n                    3                                                                                 and gap (on the number line).\nshortest worm is 3 inches. The length of the longest worm is\n                     4\n 2\n5 inches. Kathleen says they need 8 quarter-inch intervals to\n  4\nplot the lengths of the worms on a line plot. Is she right? Why\nor why not?\n\n\nNote: This problem reviews Lesson 7, specifically using a quarter-inch scale to create a line plot. Invite\nstudents to discuss what Kathleen did wrong in her calculations. (She counted the numbers, not the\nintervals.) This problem provides an opportunity to discuss the number of tick marks versus the number of\nintervals.\n\n\nConcept Development (33 minutes)\n                                                                                                          Template\nMaterials: (S) Heights of Sunflower Plants chart\n           (Template) pictured to the right, personal\n           white board, straightedge\n\nProblem 1: Plot a large data set to the nearest half\ninch.\nStudents start with the Heights of Sunflower Plants\nTemplate in their personal white boards.\n      T:    What data is shown in the chart?\n      S:    The heights of sunflower plants.\n\n\n                          Lesson 8:                     Represent measurement data with line plots.                                       107\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 109 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                   Lesson 8 3 6\n\n\n    T:   How does the measurement data in this chart\n         compare to the measurement data we plotted                                                        NOTES ON\n         yesterday?                                                                                        MULTIPLE MEANS\n    S:   There is a lot more data to plot!  The numbers are                                               OF REPRESENTATION:\n         bigger too!                                                                               Give explicit prompts to students\n    T:   Let’s make a line plot to display it. With a partner,                                     working below grade level for each\n         discuss the steps you should take to create a line plot                                   step in the process of making a line plot\n         of the data.                                                                              for the Heights of Sunflower Plants\n                                                                                                   data. Make a poster, or speak the\n    S:   (Discuss.)\n                                                                                                   following:\n    T:   What number does the first tick mark on your line plot                                       Find and record the smallest and\n         represent? How do you know?                                                                   largest measurements as\n    S:   60 inches because it is the smallest measurement.                                             endpoints.\n                                                                                                      Choose the scale. Ask, “What\n    T:   And the last tick mark? How do you know?\n                                                                                                       interval should I use—whole\n    S:   64 inches because it is the biggest measurement.                                              numbers, halves, or quarters?”\n    T:   What interval should you use to draw the tick marks                                          Count by half inches from the\n         between 60 and 64? How do you know?                                                           smallest measurement to the\n                                                                                                       largest measurement to find the\n    S:   Half inches because that is what a lot of the                                                 number of tick marks to draw.\n         measurements are.  I should use half inches                                                  Draw.\n         because it is a common unit in the chart.  Half                                             Plot the data on the line plot.\n         inches because it is the smallest unit in the chart.                                          Check off each point along the way.\n    T:   Go ahead and create your line plot. (Circulate to check                                      Title the line plot (e.g., Heights of\n         student work.)                                                                                Sunflower Plants), and specify the\n                                                                                                       units (e.g., inches).\nProblem 2: Observe and interpret data on a line plot.\n    T:   Tell me a true statement about the heights of the sunflower plants in Mrs. Schaut’s garden.\n                                                         1                                                                                1\n    S:   The most common height is 62 2 inches.  There is only 1 plant that is 60 inches tall.  61, 61 2,\n                1                                                                                                                 1\n         and 63 inches all have the same number of plants.  There are more plants that are 62 inches\n                2                                                                                                                 2\n                        1\n         tall than 60, 60 , and 61 inches combined.\n                        2\n    T:   Are these statements true of the data in the chart?\n    S:   Yes because it is the same data. We just displayed it differently.\n    T:   How does having the data displayed as a line plot help you to think and talk about the data?\n    S:   I can easily see the number of plants for each measurement.  I can quickly see the most common\n         and least common measurements.\n    T:   What are the three most frequent measurements in order from shortest to tallest?\n               1\n    S:   62, 62 , and 63 inches.\n               2\n                                                                                         1\n    T:   What is the total number of plants that measure 62, 62 2, and 63 inches?\n    S:   16 plants!\n\n\n                       Lesson 8:                     Represent measurement data with line plots.                                               108\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 110 (lesson-instruction) ---\nA STORY OF UNITS                                                                                   Lesson 8 3 6\n\n\n       T:   How many plants were measured in all?\n       S:   30 plants.\n                                                                                                      1\n       T:   Write a number sentence to show how many plants do not measure 62, 62 , or 63 inches.\n                                                                                                      2\n       S:   (Write 30 – 16 = 14.)\n       T:   (Write or say, “Most of the sunflower plants measure between 62 and 63 inches.”) True?\n       S:   Yes!  Yes because 16 plants measure between 62 and 63 inches, and 14 plants do not. Sixteen is\n            more than 14.\n       T:   What do you notice about the location of the\n            three most frequent measurements on the line\n            plot?\n       S:   They are right next to each other.  The most\n            frequent measurement is in between the second\n            and third most frequent measurements.\n       T:   What do you notice about the data before the\n            three most frequent measurements?\n       S:   It goes 1, 2, 3, 3.  Hey, the number of plants\n            goes up and then stays the same.  The number\n            of plants increases or stays the same as it gets\n            close to the most frequent measurement.\n       T:   How about the data after the three most frequent\n            measurements?\n       S:   It goes 3, 2.  It starts to go back down!  After\n            the most frequent measurement, the number of\nMP.7        sunflower plants decreases for each\n            measurement.\n       T:   (Cover up the bottom three rows of data in the chart.) Erase the Xs on your line plot and create a\n            new line plot with this data. (Allow students time to work.) Did the three most frequent\n            measurements change when you plotted less data?\n                                                                                                  1\n       S:   Yes, now the three most frequent measurements are 61, 61 , and 62 inches.\n                                                                                                  2\n       T:   That means that most of the sunflowers in Mrs. Schaut’s garden are between 61 and 62 inches tall.\n       S:   No, that is not right!  No, we saw earlier that most of the sunflowers are between 62 and 63\n            inches tall.\n       T:   How did using less data change how we can talk about the heights of most of the sunflowers?\n            Discuss with your partner.\n       S:   When we used less data, it changed the most frequent measurements.  Yeah, with more data we\n            said most sunflowers were between 62 and 63 inches tall. But with less data, that changed to\n            between 61 and 62 inches.\n       T:   How did the shape of the line plot change when we used less data? Talk to a partner.\n\n\n                          Lesson 8:                     Represent measurement data with line plots.                 109\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 111 (debrief) ---\nA STORY OF UNITS                                                                               Lesson 8 3 6\n\n\n       S:   The height of the line plot changed because with\n            more data, the most X’s for a measurement\n            was 7, but with less data, the most X’s is 3.\n             The three most frequent measurements\n            shifted to the left on the number line.  It does\nMP.7        not really follow the same pattern as increasing\n            before the three most frequent measurements\n            and decreasing after the three most frequent\n            measurements.  Except for the three most\n            frequent measurements, all other measurements\n            only have one X.\n\n Problem Set (10 minutes)\n Students should do their personal best to complete the\n Problem Set within the allotted 10 minutes. For some\n classes, it may be appropriate to modify the assignment by\n specifying which problems they work on first. Some\n problems do not specify a method for solving. Students\n solve these problems using the RDW approach used for\n Application Problems.\n\n\n  Student Debrief (10 minutes)\n\n Lesson Objective: Represent measurement data with line\n plots.\n The Student Debrief is intended to invite reflection and\n active processing of the total lesson experience.\n Invite students to review their solutions for the Problem\n Set. They should check work by comparing answers with a\n partner before going over answers as a class. Look for\n misconceptions or misunderstandings that can be\n addressed in the Debrief. Guide students in a\n conversation to debrief the Problem Set and process the\n lesson.\n Any combination of the questions below may be used to\n lead the discussion.\n           Look at Problem (b). With a partner, compare\n            the steps you took to create the line plot.\n           (Invite students to share thinking for\n            Problem (d).) What can you say about most of\n            the leaves from Delilah’s tree?\n\n\n                          Lesson 8:                     Represent measurement data with line plots.             110\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 112 (debrief) ---\nA STORY OF UNITS                                                                                 Lesson 8 3 6\n\n\n        If the only measurement data we had was the top two rows of the chart, how might that change\n         your understanding of the width of most of Delilah’s leaves?\n        Why does having a large amount of data help us have a clearer understanding of what the data\n         means?\n        Compare the shape of this data to that of the bean plants from yesterday. Why might the bean\n         plants have grown so irregularly whereas the sunflower plants did not? Might their environments\n         have been different?\n        Looking at the size of most of the leaves from Delilah’s tree, do you know any trees in your\n         neighborhood that might be the same kind? Do you know any that are certainly not the same kind?\n         (Students might talk about trees they see in the park or in their neighborhood, such as “the tree in\n         the schoolyard,” etc.)\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that were presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 8:                     Represent measurement data with line plots.             111\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 113 (template) ---\nA STORY OF UNITS                                                                           Lesson 8 Pattern Sheet 3 6\n\n\nMultiply.\n\n\nmultiply by 7 (1–5)\n\n\n                       Lesson 8:                 Represent measurement data with line plots.                           112\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 114 (problem-set) ---\nA STORY OF UNITS                                                                            Lesson 8 Problem Set 3 6\n\n\nName                                                                                           Date\n\nDelilah stops under a silver maple tree and collects leaves. At home, she measures the widths of the leaves to\n            1\nthe nearest 4 inch and records the measurements as shown below.\n\n\n                                       Widths of Silver Maple Tree Leaves (in Inches)\n\n             3                                                           1                                        3\n         5                             6                             6                           6            5\n             4                                                           4                                        4\n\n             1                           1                               1                          3\n         6                           6                               5                          5              6\n             2                           4                               2                          4\n\n             1                                                                                      1             1\n         6                             6                               6                        6             6\n             4                                                                                      2             4\n\n             1                           3                               1                                        3\n         6                           5                               6                           6            6\n             2                           4                               4                                        4\n\n                                         1                                                          3             1\n          6                          6                                 6                        5             6\n                                         4                                                          4             2\n\n\n    a. Use the data to create a line plot below.\n\n\n                       Lesson 8:                 Represent measurement data with line plots.                          113\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 115 (problem-set) ---\nA STORY OF UNITS                                                                           Lesson 8 Problem Set 3 6\n\n\nb. Explain the steps you took to create the line plot.\n\n\n                                                                          1\nc. How many more leaves were 6 inches wide than 6 inches wide?\n                                                                          2\n\n\nd. Find the three most frequent measurements on the line plot. What does this tell you about the\n    typical width of a silver maple tree leaf?\n\n\n                   Lesson 8:                 Represent measurement data with line plots.                         114\n\n                   ©2015 Great Minds. eureka-math.org\n                   G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 116 (exit-ticket) ---\nA STORY OF UNITS                                                                                      Lesson 8 Exit Ticket 3 6\n\n\nName                                                                                                    Date\n\nThe line plot below shows the lengths of fish the fishing boat caught.\n                                                                Lengths of Fish\n                                                                                                   X\n                                                                                      X            X\n                                                                           X          X            X\n                                                                 X         X          X            X           X\n                      X                                  X       X         X          X            X           X          X\n\n\n                                        𝟏𝟏               𝟏𝟏      𝟑𝟑                   𝟏𝟏           𝟏𝟏\n                      22           22               22         22         23       23         23          23\n                                                                                                               𝟑𝟑\n                                                                                                                         24\n                                        𝟒𝟒               𝟐𝟐      𝟒𝟒                   𝟒𝟒           𝟐𝟐          𝟒𝟒\n\n                                                                      Inches\n                                                                                                                   X = 1 fish\n\n    a.   Find the three most frequent measurements on the line plot.\n\n\n    b.   Find the difference between the lengths of the longest and shortest fish.\n\n\n                                                          1\n    c.   How many more fish were 23 inches long than 24 inches long?\n                                                          4\n\n\n                           Lesson 8:                 Represent measurement data with line plots.                                115\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 117 (homework) ---\nA STORY OF UNITS                                                                             Lesson 8 Homework 3 6\n\n\nName                                                                                            Date\n\nMrs. Leah’s class uses what they learned about simple machines to build marshmallow launchers. They\nrecord the distances their marshmallows travel in the chart below.\n\n\n                                                       Distance Traveled (in Inches)\n\n              3                                                            1                                      3\n         48                           49                              49                         50          49\n              4                                                            4                                      4\n\n              1                            1                               1                          3\n         49                          48                               49                         48          49\n              2                            4                               2                          4\n\n              1                            3                                                          1           1\n         49                          49                                48                        49          48\n              4                            4                                                          4           4\n\n                                           3                                                                      3\n          49                         48                                49                        49          48\n                                           4                                                                      4\n\n\n    a.   Use the data to create a line plot below.\n\n\n                       Lesson 8:                  Represent measurement data with line plots.                         116\n\n                       ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 118 (homework) ---\nA STORY OF UNITS                                                                                Lesson 8 Homework 3 6\n\n\nb.   Explain the steps you took to create the line plot.\n\n\n                                                                   3                        1\nc.   How many more marshmallows traveled 48 inches than 48 inches?\n                                                                   4                        4\n\n\nd.   Find the three most frequent measurements on the line plot. What does this tell you about the\n     distance that most of the marshmallows traveled?\n\n\n                    Lesson 8:                 Represent measurement data with line plots.                          117\n\n                    ©2015 Great Minds. eureka-math.org\n                    G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 119 (template) ---\nA STORY OF UNITS                                                                              Lesson 8 Template 3 6\n\n\nMrs. Schaut measures the heights of the sunflower plants in her garden. The measurements are shown in the\nchart below.\n\n\n                                                   Heights of Sunflower Plants (in Inches)\n\n                                                                                                                    1\n           61                              63                             62                      61           62\n                                                                                                                    2\n\n               1                               1                              1\n          61                             61                              61                       62           60\n               2                               2                              2\n\n                                                                              1                        1\n           64                              62                            60                       63           61\n                                                                              2                        2\n\n                                               1                              1                                     1\n           63                            62                              62                       64           62\n                                               2                              2                                     2\n\n               1                               1                                                       1            1\n          62                             63                               63                      62           63\n               2                               2                                                       2            2\n\n                                               1                                                                    1\n           62                            62                               62                      63           60\n                                               2                                                                    2\n\n\nheights of sunflower plants chart\n\n\n                          Lesson 8:                 Represent measurement data with line plots.                         118\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M6-TE-1.3.0 -0 8.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 114,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                            Lesson 8 Problem Set 3 6\n\n\nName                                                                                           Date\n\nDelilah stops under a silver maple tree and collects leaves. At home, she measures the widths of the leaves to\n            1\nthe nearest 4 inch and records the measurements as shown below.\n\n\n                                       Widths of Silver Maple Tree Leaves (in Inches)\n\n             3                                                           1                                        3\n         5                             6                             6                           6            5\n             4                                                           4                                        4\n\n             1                           1                               1                          3\n         6                           6                               5                          5              6\n             2                           4                               2                          4\n\n             1                                                                                      1             1\n         6                             6                               6                        6             6\n             4                                                                                      2             4\n\n             1                           3                               1                                        3\n         6                           5                               6                           6            6\n             2                           4                               4                                        4\n\n                                         1                                                          3             1\n          6                          6                                 6                        5             6\n                                         4                                                          4             2\n\n\n    a. Use the data to create a line plot below.\n\n\n                       Lesson 8:                 Represent measurement data with line plots.                          113\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M6-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 115,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                           Lesson 8 Problem Set 3 6\n\n\nb. Explain the steps you took to create the line plot.\n\n\n                                                                          1\nc. How many more leaves were 6 inches wide than 6 inches wide?\n                                                                          2\n\n\nd. Find the three most frequent measurements on the line plot. What does this tell you about the\n    typical width of a silver maple tree leaf?\n\n\n                   Lesson 8:                 Represent measurement data with line plots.                         114\n\n                   ©2015 Great Minds. eureka-math.org\n                   G 3-M6-TE-1.3.0 -0 8.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 157,
+        "text": "A STORY OF UNITS                                                                     Lesson 8 Answer Key 3 6\n\n\nLesson 8\nPattern Sheet\n                7                                       14                           21                 28\n              35                                         7                           14                 7\n              21                                         7                           28                 7\n              35                                         7                           14                 21\n              14                                        28                           14                 35\n              14                                         7                           14                 21\n                7                                       21                           14                 21\n              28                                        21                           35                 21\n              28                                         7                           28                 14\n              28                                        21                           28                 35\n              28                                        35                           7                  35\n              14                                        35                           21                 35\n              28                                        14                           28                 21\n              35                                        21                           14                 28\n              21                                        35                           14                 28\n\n\nProblem Set\na.   Line plot completed; Widths of Leaves; inches; values for X may vary\nb.   Answers will vary.\nc.   4\nd.   Explanations will vary.\n\n\nExit Ticket\n                    1                  1\na.   23 inches, 23 4 inches, 23 2 inches\nb.   2 inches\nc.   3\n\n\n                          Module 6:                 Collecting and Displaying Data                             156\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M6-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 158,
+        "text": "A STORY OF UNITS                                                                Lesson 8 Answer Key 3 6\n\n\nHomework\na.   Line plot completed; Distance Traveled; inches; values for X may vary\nb.   Answers will vary.\nc.   2\nd.   Explanations will vary.\n\n\n                          Module 6:                 Collecting and Displaying Data                        157\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M6-TE-1.3.0 -0 8.2 0 15"
+      }
+    ]
+  }
+}

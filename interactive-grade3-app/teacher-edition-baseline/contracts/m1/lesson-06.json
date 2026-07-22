@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m1-l6",
+  "moduleId": "m1",
+  "lessonNumber": 6,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf",
+    "teacherEditionSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
+    "teacherEditionBytes": 13572842,
+    "lessonPdfPages": {
+      "start": 85,
+      "end": 96
+    },
+    "problemSetPdfPages": [
+      90,
+      91
+    ],
+    "exitTicketPdfPages": [
+      92
+    ],
+    "homeworkPdfPages": [
+      93,
+      94
+    ],
+    "answerKeyPdfPages": [
+      300
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m1-student/workbook-page-023.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m1-teacher/page-090.png",
+      "/source-pages/m1-teacher/page-091.png",
+      "/source-pages/m1-teacher/page-300.png"
+    ]
+  },
+  "objective": "Interpret the unknown in division using the array model.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "NOTES ON\nMaterials: (S) Personal white board, Application Problem                                               ARRAYS:\nProblem 1: Relate division to an array model.                                                  Problem 1 in this lesson introduces\n                                                                                               students to relating division to an array\nDraw an array representing the Application Problem on the                                      model. In Lesson 2, students related\nboard.                                                                                         the rows in an array to the number of\n                                                                                               equal groups and the number of dots in\n                                                                                               each row to the size of the group. The\n                                                                                               same concept applies for division\n                                                                                               arrays, but now the problems begin\n                                                                                               with the total number.\n\nHave students analyze the array and describe the following\nrelationships:\n      Total number of children and total number of dots\n                                                                                                       NOTES ON\n      Number of children on each team and number of dots                                              MULTIPLE MEANS\n       in each row                                                                                     OF REPRESENTATION:\n      Number of teams and number of rows                                                      Some students may benefit from\nRepeat the process with the following suggested examples. This                                 working with a partner. They may\ntime, guide students to draw the array from the division                                       underline each row to literally show\n                                                                                               division and circle each row to show\nequations below. Alternate between having the quotient\n                                                                                               the size of each group. They should\nrepresent the size of the groups and the number of groups.\n                                                                                               explain each step they take. This may\n      8÷2=4                                                                                   be particularly helpful for students who\n                                                                                               prefer visual or kinesthetic practice\n      18 ÷ 6 = 3\n                                                                                               along with auditory.\n\n\n                       Lesson 6:           Interpret the unknown in division using the array model.                                        82\n\n                       ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                    Lesson 6 3 1\n\n\nProblem 2: Use an array to relate the unknown factor in multiplication to the quotient in division.\n    T:   Draw an array that shows the equation 15 ÷ 3 = 5 where the quotient—that means the answer—\n         represents the size of the groups.\n    S:   (Draw array below.)\n\n\n    T:   Now, write both a division and a multiplication equation for the array.\n    S:   (Write 15 ÷ 3 = 5, 3 × 5 = 15.)\n    T:   Where do you find the quotient in our multiplication equation?\n    S:   It’s the second number.  It’s the size of the groups.  It’s a factor.\n    T:   Circle the size of the groups in both problems.\n    S:   (Circle the 5 in both problems.)\nRepeat the process with the following suggested examples. Alternate between having the quotient represent\nthe size of the groups and the number of groups.\n        4 rows of 2\n        7 rows of 3\n    T: Use our equations to explain to your partner how the factors in a multiplication problem can help you\n        find the quotient in division.\n\nProblem 3: Relate multiplication and division.\n    T:   (Write ___ × 3 = 24 on the board.) Skip-count and                      NOTES ON\n         track the number of threes to solve.                                   MULTIPLE MEANS\n    S:   3, 6, 9, 12, 15, 18, 21, 24. (Write 8 to complete the                  OF ENGAGEMENT:\n         equation.)                                                     Some students may still benefit from\n    T:   How many threes make 24? Answer in a complete                  the visual of an array in this problem. If\n         sentence.                                                      necessary, encourage students to draw\n                                                                        an array.\n    S:   Eight threes make 24.\n    T:   Write a related division equation where the quotient\n         represents the unknown factor.\n    S:   (Write 24 ÷ 3 = 8.)\n    T:   Twenty-four divided in threes makes how many groups? Answer in a complete sentence.\n    S:   Twenty-four divided in threes makes 8 groups.\n    T:   How are the unknown factor and the quotient related in these equations?\n    S:   The unknown factor is the same number as the quotient.\n\n\n                        Lesson 6:           Interpret the unknown in division using the array model.                 83\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                    Lesson 6 3 1\n\n\nRepeat the process with the following suggested\nexamples:\n        2 × ____ = 18 and 18 ÷ 2 = ____\n        ____ × 9 = 27 and 27 ÷ 9 = ____\n   T: (Write __ × 3 = 24 and 24 ÷ 3 = __.) True or false:\n        Both equations ask how many threes are in 24?\n   S: They look different, but they mean the same\n        thing. In both, we’re talking about 8 groups of 3\n        and a total of 24. So, it’s true.  The quotient\n        in a division equation is like finding the unknown\n        factor in a multiplication equation.",
+    "fluencyPracticeText": " Group Counting 3.OA.1                           (3 minutes)\n Divide Equal Groups 3.OA.2                      (5 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by twos and threes\nin this activity supports work with those factors in Topic B.\n    T:   Let’s count by twos. (Direct students to count forward and backward to 20, emphasizing the 8 to 10,\n         10 to 12, and 18 to 20 transitions.)\n    T:   Let’s count by threes. (Direct students to count forward and backward to 30, periodically changing\n         directions. Emphasize the 9 to 12, 18 to 21, and 27 to 30 transitions.)\n\nDivide Equal Groups (5 minutes)\nMaterials: (S) Personal white board\n\nNote: Students directly relate repeated addition to division. They interpret the unknown in division. This\nactivity bridges Lessons 5 and 6.\n    T:   (Project an array with 3 groups of 5.) Say the total as a repeated addition sentence.\n    S:   5 + 5 + 5 = 15.\n    T:   Write a division sentence for 15 divided into 3 equal groups.\n    S:   (Write 15 ÷ 3 = 5.)\nContinue with the following possible sequence: 5 groups of 3, 4 groups of 3, 3 groups of 4, 9 groups of 2, and\n2 groups of 9.\nAlternate between division sentences where the quotient represents either the number of objects in a group\nor the number of groups.\n\n\n                       Lesson 6:            Interpret the unknown in division using the array model.              81\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                              Lesson 6 3 1",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Draw an array that shows the equation 15 ÷ 3 = 5 where the quotient—that means the answer— represents the size of the groups."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw array below.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, write both a division and a multiplication equation for the array."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 15 ÷ 3 = 5, 3 × 5 = 15.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Where do you find the quotient in our multiplication equation?"
+      },
+      {
+        "speaker": "students",
+        "text": "It’s the second number.  It’s the size of the groups.  It’s a factor."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Circle the size of the groups in both problems."
+      },
+      {
+        "speaker": "students",
+        "text": "(Circle the 5 in both problems.) Repeat the process with the following suggested examples. Alternate between having the quotient represent the size of the groups and the number of groups.  4 rows of 2  7 rows of 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use our equations to explain to your partner how the factors in a multiplication problem can help you find the quotient in division."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write ___ × 3 = 24 on the board.) Skip-count and NOTES ON track the number of threes to solve. MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "3, 6, 9, 12, 15, 18, 21, 24. (Write 8 to complete the OF ENGAGEMENT: equation.) Some students may still benefit from"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many threes make 24? Answer in a complete the visual of an array in this problem. If sentence. necessary, encourage students to draw an array."
+      },
+      {
+        "speaker": "students",
+        "text": "Eight threes make 24."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a related division equation where the quotient represents the unknown factor."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 24 ÷ 3 = 8.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Twenty-four divided in threes makes how many groups? Answer in a complete sentence."
+      },
+      {
+        "speaker": "students",
+        "text": "Twenty-four divided in threes makes 8 groups."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How are the unknown factor and the quotient related in these equations?"
+      },
+      {
+        "speaker": "students",
+        "text": "The unknown factor is the same number as the quotient. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 6 3 1 Repeat the process with the following suggested examples:  2 × ____ = 18 and 18 ÷ 2 = ____  ____ × 9 = 27 and 27 ÷ 9 = ____"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write __ × 3 = 24 and 24 ÷ 3 = __.) True or false: Both equations ask how many threes are in 24?"
+      },
+      {
+        "speaker": "students",
+        "text": "They look different, but they mean the same thing. In both, we’re talking about 8 groups of 3 and a total of 24. So, it’s true.  The quotient in a division equation is like finding the unknown factor in a multiplication equation."
+      }
+    ],
+    "teacherPrompts": [
+      "Draw an array that shows the equation 15 ÷ 3 = 5 where the quotient—that means the answer— represents the size of the groups.",
+      "Now, write both a division and a multiplication equation for the array.",
+      "Where do you find the quotient in our multiplication equation?",
+      "Circle the size of the groups in both problems.",
+      "Use our equations to explain to your partner how the factors in a multiplication problem can help you find the quotient in division.",
+      "(Write ___ × 3 = 24 on the board.) Skip-count and NOTES ON track the number of threes to solve. MULTIPLE MEANS",
+      "How many threes make 24? Answer in a complete the visual of an array in this problem. If sentence. necessary, encourage students to draw an array.",
+      "Write a related division equation where the quotient represents the unknown factor.",
+      "Twenty-four divided in threes makes how many groups? Answer in a complete sentence.",
+      "How are the unknown factor and the quotient related in these equations?",
+      "(Write __ × 3 = 24 and 24 ÷ 3 = __.) True or false: Both equations ask how many threes are in 24?"
+    ],
+    "debriefPrompt": "Analyze the four equations in Problem 3. Compare the multiplication and division equations, noticing differences in how the problem is represented by each one",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Rick puts 15 tennis balls into cans. Each can holds 3 balls. Circle groups of 3 to show the balls in each can. Rick needs ____ cans. ____ × 3 = 15 15 ÷ 3 = ____",
+        "equations": [
+          "____ × 3 = 15",
+          "15 ÷ 3 = ____"
+        ]
+      },
+      {
+        "number": 2,
+        "prompt": "Rick uses 15 tennis balls to make 5 equal groups. Draw to show how many tennis balls are in each group. There are ____ tennis balls in each group. 5 × ____ = 15 15 ÷ 5 = ____",
+        "equations": [
+          "5 × ____ = 15",
+          "15 ÷ 5 = ____"
+        ]
+      },
+      {
+        "number": 3,
+        "prompt": "Use an array to model Problem 1. a. ____ × 3 = 15 b. 5 × ____ = 15 15 ÷ 3 = ____ 15 ÷ 5 = ____ The number in the blanks represents The number in the blanks represents ____. ____.",
+        "equations": [
+          "____ × 3 = 15",
+          "5 × ____ = 15",
+          "15 ÷ 3 = ____",
+          "15 ÷ 5 = ____"
+        ]
+      },
+      {
+        "number": 4,
+        "prompt": "Deena makes 21 jars of tomato sauce. She puts 7 jars in each box to sell at the market. How many boxes does Deena need? 21 ÷ 7 = ____ ____ × 7 = 21 What is the meaning of the unknown factor and quotient? ____",
+        "equations": [
+          "21 ÷ 7 = ____",
+          "____ × 7 = 21"
+        ]
+      },
+      {
+        "number": 5,
+        "prompt": "The teacher gives the equation 4 × ____ = 12. Charlie finds the answer by writing and solving 12 ÷ 4 = ____. Explain why Charlie's method works.",
+        "equations": [
+          "4 × ____ = 12",
+          "12 ÷ 4 = ____"
+        ]
+      },
+      {
+        "number": 6,
+        "prompt": "The blanks in Problem 5 represent the size of the groups. Draw an array to represent the equations.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                          Lesson 6 Problem Set 3 1\n\n\nName                                                                                          Date\n\n1. Rick puts 15 tennis balls into cans. Each can holds 3 balls. Circle groups of 3 to show the balls in each can.\n\n\n    Rick needs _______ cans.                                                                  ______ × 3 = 15\n\n                                                                                              15 ÷ 3 = ______\n\n\n2. Rick uses 15 tennis balls to make 5 equal groups. Draw to show how many tennis balls are in each group.\n\n\n    There are _______ tennis balls in each group.                                             5 × ______ = 15\n\n                                                                                              15 ÷ 5 = ______\n\n\n3. Use an array to model Problem 1.\n\n    a. ______ × 3 = 15                                                      b. 5 × ______ = 15\n\n       15 ÷ 3 = ______                                                            15 ÷ 5 = ______\n\n       The number in the blanks represents                                        The number in the blanks represents\n\n       _________________________________.                                         __________________________________.\n\n\n                         Lesson 6:           Interpret the unknown in division using the array model.                   86\n\n                         ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                         Lesson 6 Problem Set 3 1\n\n\n4. Deena makes 21 jars of tomato sauce. She puts 7 jars in each box to sell at the market. How many boxes\n   does Deena need?\n\n\n    21 ÷ 7 = ______\n\n    ______ × 7 = 21\n\n\n    What is the meaning of the unknown factor and quotient? ______________________________________\n\n\n5. The teacher gives the equation 4 × ____ = 12. Charlie finds the answer by writing and solving\n   12 ÷ 4 = ____. Explain why Charlie’s method works.\n\n\n6. The blanks in Problem 5 represent the size of the groups. Draw an array to represent the equations.\n\n\n                       Lesson 6:           Interpret the unknown in division using the array model.                87\n\n                       ©2015 Great Minds. eureka-math.org",
+    "answerKeyProblemSetText": "1.    Five groups of 3 circled; 5; 5; 5\n2.    Five groups of 3 drawn and circled; 3; 3; 3\n3.    Array of 5 rows of 3 drawn\n      a. 5; 5; the number of groups\n      b. 3; 3; the size of each group\n4.    3; 3; the number of groups\n5.    3; 3; answers will vary\n6.    Array of 4 rows of 3 drawn",
+    "answerKeyText": "A STORY OF UNITS                                                                          Lesson 6 Answer Key 3 1\n\n\nLesson 6\nProblem Set\n1.    Five groups of 3 circled; 5; 5; 5\n2.    Five groups of 3 drawn and circled; 3; 3; 3\n3.    Array of 5 rows of 3 drawn\n      a. 5; 5; the number of groups\n      b. 3; 3; the size of each group\n4.    3; 3; the number of groups\n5.    3; 3; answers will vary\n6.    Array of 4 rows of 3 drawn\n\n\nExit Ticket\nArray of 2 rows of 6 drawn; 2; 2; the number of groups\n\n\nHomework\n1.    Three groups of 4 circled; 3; 3; 3\n2.    Three groups of 4 drawn and circled; 4; 4; 4\n3.    Array of 3 rows of 4 drawn\n      a. 3; 3; the number of groups\n      b. 4; 4; the size of each group\n4.    6; 6; the size of each group\n5.    3; 3; answers will vary\n6.    Array of 3 rows of 5 drawn\n\n\n                         Module 1:           Properties of Multiplication and Division and Solving Problems with    296\n                                             Units of 2–5 and 10\n\n                         ©2015 Great Minds. eureka-math.org",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "equal-groups",
+      "liquid-measure",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "Interpret the unknown in division using the array model.",
+        "Materials: (S) Personal white board, Application Problem ARRAYS:",
+        "Problem 1: Relate division to an array model. Problem 1 in this lesson introduces",
+        "students to relating division to an array",
+        "Draw an array representing the Application Problem on the model. In Lesson 2, students related",
+        "board. the rows in an array to the number of",
+        "arrays, but now the problems begin",
+        "Have students analyze the array and describe the following"
+      ],
+      "equal-groups": [
+        "equal groups and the number of dots in",
+        "the size of each group. They should",
+        "thing. In both, we’re talking about 8 groups of 3",
+        " Divide Equal Groups 3.OA.2 (5 minutes)",
+        "Divide Equal Groups (5 minutes)",
+        "T: (Project an array with 3 groups of 5.) Say the total as a repeated addition sentence.",
+        "T: Write a division sentence for 15 divided into 3 equal groups.",
+        "Continue with the following possible sequence: 5 groups of 3, 4 groups of 3, 3 groups of 4, 9 groups of 2, and"
+      ],
+      "liquid-measure": [
+        "time, guide students to draw the array from the division underline each row to literally show"
+      ],
+      "picture-or-drawing": [
+        "Draw an array representing the Application Problem on the model. In Lesson 2, students related",
+        "time, guide students to draw the array from the division underline each row to literally show",
+        "T: Draw an array that shows the equation 15 ÷ 3 = 5 where the quotient—that means the answer—",
+        "S: (Draw array below.)",
+        "T: Circle the size of the groups in both problems.",
+        "S: (Circle the 5 in both problems.)",
+        "sentence. necessary, encourage students to draw",
+        "2. Rick uses 15 tennis balls to make 5 equal groups. Draw to show how many tennis balls are in each group."
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Draw an array that shows the equation 15 ÷ 3 = 5 where the quotient—that means the answer— represents the size of the groups."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw array below.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, write both a division and a multiplication equation for the array."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 15 ÷ 3 = 5, 3 × 5 = 15.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use our equations to explain to your partner how the factors in a multiplication problem can help you find the quotient in division."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write ___ × 3 = 24 on the board.) Skip-count and NOTES ON track the number of threes to solve. MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "3, 6, 9, 12, 15, 18, 21, 24. (Write 8 to complete the OF ENGAGEMENT: equation.) Some students may still benefit from"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many threes make 24? Answer in a complete the visual of an array in this problem. If sentence. necessary, encourage students to draw an array."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a related division equation where the quotient represents the unknown factor."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 24 ÷ 3 = 8.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write __ × 3 = 24 and 24 ÷ 3 = __.) True or false: Both equations ask how many threes are in 24?"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 85 (debrief) ---\nA STORY OF UNITS                                                                                    Lesson 6 3 1\n\n\nLesson 6\nObjective: Interpret the unknown in division using the array model.\n\nSuggested Lesson Structure\n\n Fluency Practice              (8 minutes)\n Application Problem           (7 minutes)\n Concept Development           (35 minutes)\n Student Debrief               (10 minutes)\n   Total Time                   (60 minutes)\n\n\nFluency Practice (8 minutes)\n Group Counting 3.OA.1                           (3 minutes)\n Divide Equal Groups 3.OA.2                      (5 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by twos and threes\nin this activity supports work with those factors in Topic B.\n    T:   Let’s count by twos. (Direct students to count forward and backward to 20, emphasizing the 8 to 10,\n         10 to 12, and 18 to 20 transitions.)\n    T:   Let’s count by threes. (Direct students to count forward and backward to 30, periodically changing\n         directions. Emphasize the 9 to 12, 18 to 21, and 27 to 30 transitions.)\n\nDivide Equal Groups (5 minutes)\nMaterials: (S) Personal white board\n\nNote: Students directly relate repeated addition to division. They interpret the unknown in division. This\nactivity bridges Lessons 5 and 6.\n    T:   (Project an array with 3 groups of 5.) Say the total as a repeated addition sentence.\n    S:   5 + 5 + 5 = 15.\n    T:   Write a division sentence for 15 divided into 3 equal groups.\n    S:   (Write 15 ÷ 3 = 5.)\nContinue with the following possible sequence: 5 groups of 3, 4 groups of 3, 3 groups of 4, 9 groups of 2, and\n2 groups of 9.\nAlternate between division sentences where the quotient represents either the number of objects in a group\nor the number of groups.\n\n\n                       Lesson 6:            Interpret the unknown in division using the array model.              81\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 86 (concept-development) ---\nA STORY OF UNITS                                                                                              Lesson 6 3 1\n\n\nApplication Problem (7 minutes)\n\nTwenty children play a game. There are 5 children on each\nteam. How many teams play the game? Write a division\nsentence to represent the problem.\nNote: This problem reviews division from Lesson 5 where the\nunknown represents the number of groups. It also leads into\nProblem 1 of the Concept Development, which relates division to\nthe array model.\n\n\nConcept Development (35 minutes)\n                                                                                                       NOTES ON\nMaterials: (S) Personal white board, Application Problem                                               ARRAYS:\nProblem 1: Relate division to an array model.                                                  Problem 1 in this lesson introduces\n                                                                                               students to relating division to an array\nDraw an array representing the Application Problem on the                                      model. In Lesson 2, students related\nboard.                                                                                         the rows in an array to the number of\n                                                                                               equal groups and the number of dots in\n                                                                                               each row to the size of the group. The\n                                                                                               same concept applies for division\n                                                                                               arrays, but now the problems begin\n                                                                                               with the total number.\n\nHave students analyze the array and describe the following\nrelationships:\n      Total number of children and total number of dots\n                                                                                                       NOTES ON\n      Number of children on each team and number of dots                                              MULTIPLE MEANS\n       in each row                                                                                     OF REPRESENTATION:\n      Number of teams and number of rows                                                      Some students may benefit from\nRepeat the process with the following suggested examples. This                                 working with a partner. They may\ntime, guide students to draw the array from the division                                       underline each row to literally show\n                                                                                               division and circle each row to show\nequations below. Alternate between having the quotient\n                                                                                               the size of each group. They should\nrepresent the size of the groups and the number of groups.\n                                                                                               explain each step they take. This may\n      8÷2=4                                                                                   be particularly helpful for students who\n                                                                                               prefer visual or kinesthetic practice\n      18 ÷ 6 = 3\n                                                                                               along with auditory.\n\n\n                       Lesson 6:           Interpret the unknown in division using the array model.                                        82\n\n                       ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 87 (lesson-instruction) ---\nA STORY OF UNITS                                                                                    Lesson 6 3 1\n\n\nProblem 2: Use an array to relate the unknown factor in multiplication to the quotient in division.\n    T:   Draw an array that shows the equation 15 ÷ 3 = 5 where the quotient—that means the answer—\n         represents the size of the groups.\n    S:   (Draw array below.)\n\n\n    T:   Now, write both a division and a multiplication equation for the array.\n    S:   (Write 15 ÷ 3 = 5, 3 × 5 = 15.)\n    T:   Where do you find the quotient in our multiplication equation?\n    S:   It’s the second number.  It’s the size of the groups.  It’s a factor.\n    T:   Circle the size of the groups in both problems.\n    S:   (Circle the 5 in both problems.)\nRepeat the process with the following suggested examples. Alternate between having the quotient represent\nthe size of the groups and the number of groups.\n        4 rows of 2\n        7 rows of 3\n    T: Use our equations to explain to your partner how the factors in a multiplication problem can help you\n        find the quotient in division.\n\nProblem 3: Relate multiplication and division.\n    T:   (Write ___ × 3 = 24 on the board.) Skip-count and                      NOTES ON\n         track the number of threes to solve.                                   MULTIPLE MEANS\n    S:   3, 6, 9, 12, 15, 18, 21, 24. (Write 8 to complete the                  OF ENGAGEMENT:\n         equation.)                                                     Some students may still benefit from\n    T:   How many threes make 24? Answer in a complete                  the visual of an array in this problem. If\n         sentence.                                                      necessary, encourage students to draw\n                                                                        an array.\n    S:   Eight threes make 24.\n    T:   Write a related division equation where the quotient\n         represents the unknown factor.\n    S:   (Write 24 ÷ 3 = 8.)\n    T:   Twenty-four divided in threes makes how many groups? Answer in a complete sentence.\n    S:   Twenty-four divided in threes makes 8 groups.\n    T:   How are the unknown factor and the quotient related in these equations?\n    S:   The unknown factor is the same number as the quotient.\n\n\n                        Lesson 6:           Interpret the unknown in division using the array model.                 83\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 88 (debrief) ---\nA STORY OF UNITS                                                                                    Lesson 6 3 1\n\n\nRepeat the process with the following suggested\nexamples:\n        2 × ____ = 18 and 18 ÷ 2 = ____\n        ____ × 9 = 27 and 27 ÷ 9 = ____\n   T: (Write __ × 3 = 24 and 24 ÷ 3 = __.) True or false:\n        Both equations ask how many threes are in 24?\n   S: They look different, but they mean the same\n        thing. In both, we’re talking about 8 groups of 3\n        and a total of 24. So, it’s true.  The quotient\n        in a division equation is like finding the unknown\n        factor in a multiplication equation.\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\nStudent Debrief (10 minutes)\nLesson Objective: Interpret the unknown in division using\nthe array model.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n           Analyze the four equations in Problem 3.\n            Compare the multiplication and division\n            equations, noticing differences in how the\n            problem is represented by each one.\n           How do arrays represent both multiplication\n            and division?\n\n\n                       Lesson 6:            Interpret the unknown in division using the array model.              84\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 89 (debrief) ---\nA STORY OF UNITS                                                                                   Lesson 6 3 1\n\n\n           Based on your observation of arrays, what do multiplication and division have in common?\n           What is the relationship between the quotient in division and the unknown factor in a related\n            multiplication equation?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that were presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 6:           Interpret the unknown in division using the array model.              85\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 90 (problem-set) ---\nA STORY OF UNITS                                                                          Lesson 6 Problem Set 3 1\n\n\nName                                                                                          Date\n\n1. Rick puts 15 tennis balls into cans. Each can holds 3 balls. Circle groups of 3 to show the balls in each can.\n\n\n    Rick needs _______ cans.                                                                  ______ × 3 = 15\n\n                                                                                              15 ÷ 3 = ______\n\n\n2. Rick uses 15 tennis balls to make 5 equal groups. Draw to show how many tennis balls are in each group.\n\n\n    There are _______ tennis balls in each group.                                             5 × ______ = 15\n\n                                                                                              15 ÷ 5 = ______\n\n\n3. Use an array to model Problem 1.\n\n    a. ______ × 3 = 15                                                      b. 5 × ______ = 15\n\n       15 ÷ 3 = ______                                                            15 ÷ 5 = ______\n\n       The number in the blanks represents                                        The number in the blanks represents\n\n       _________________________________.                                         __________________________________.\n\n\n                         Lesson 6:           Interpret the unknown in division using the array model.                   86\n\n                         ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 91 (problem-set) ---\nA STORY OF UNITS                                                                         Lesson 6 Problem Set 3 1\n\n\n4. Deena makes 21 jars of tomato sauce. She puts 7 jars in each box to sell at the market. How many boxes\n   does Deena need?\n\n\n    21 ÷ 7 = ______\n\n    ______ × 7 = 21\n\n\n    What is the meaning of the unknown factor and quotient? ______________________________________\n\n\n5. The teacher gives the equation 4 × ____ = 12. Charlie finds the answer by writing and solving\n   12 ÷ 4 = ____. Explain why Charlie’s method works.\n\n\n6. The blanks in Problem 5 represent the size of the groups. Draw an array to represent the equations.\n\n\n                       Lesson 6:           Interpret the unknown in division using the array model.                87\n\n                       ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 92 (exit-ticket) ---\nA STORY OF UNITS                                                                            Lesson 6 Exit Ticket 3 1\n\n\nName                                                                                        Date\n\nCesar arranges 12 notecards into rows of 6 for his presentation. Draw an array to represent the problem.\n\n\n                                                                                                           12 ÷ 6 = ________\n\n\n                                                                                                           ________ × 6 = 12\n\n\nWhat do the unknown factor and quotient represent? ____________________________________________\n\n\n                       Lesson 6:           Interpret the unknown in division using the array model.                      88\n\n                       ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 93 (homework) ---\nA STORY OF UNITS                                                                             Lesson 6 Homework 3 1\n\n\nName                                                                                          Date\n\n1. Mr. Hannigan puts 12 pencils into boxes. Each box holds 4 pencils. Circle groups of 4 to show the pencils\n   in each box.\n\n\n    Mr. Hannigan needs _______ boxes.                                                                   ______ × 4 = 12\n\n                                                                                                        12 ÷ 4 = ______\n\n\n2. Mr. Hannigan places 12 pencils into 3 equal groups. Draw to show how many pencils are in each group.\n\n\n    There are _______ pencils in each group.                                                            3 × ______ = 12\n\n                                                                                                        12 ÷ 3 = ______\n\n\n3. Use an array to model Problem 1.\n\n    a. ______ × 4 = 12                                                      b. 3 × ______ = 12\n\n       12 ÷ 4 = ______                                                          12 ÷ 3 = ______\n\n       The number in the blanks represents                                      The number in the blanks represents\n\n       _________________________________.                                       __________________________________.\n\n\n                         Lesson 6:           Interpret the unknown in division using the array model.                     89\n\n                         ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 94 (homework) ---\nA STORY OF UNITS                                                                            Lesson 6 Homework 3 1\n\n\n4. Judy washes 24 dishes. She then dries and stacks the dishes equally into 4 piles. How many dishes are in\n   each pile?\n\n    24 ÷ 4 = _______\n\n    4 × ________ = 24\n\n\n    What is the meaning of the unknown factor and quotient? ______________________________________\n\n\n5. Nate solves the equation _____ × 5 = 15 by writing and solving 15 ÷ 5 = ____. Explain why Nate’s method\n   works.\n\n\n6. The blanks in Problem 5 represent the number of groups. Draw an array to represent the equations.\n\n\n                        Lesson 6:           Interpret the unknown in division using the array model.               90\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 95 (lesson-instruction) ---\nA STORY OF UNITS\n\n      3                   Mathematics Curriculum\n    GR ADE\n\n\n                                                                                                                     GRADE 3 • MODULE 1\n\n\nTopic C\nMultiplication Using Units of 2 and 3\n3.OA.1, 3.OA.5, 3.OA.3, 3.OA.4\n\nFocus Standards:           3.OA.1            Interpret products of whole numbers, e.g., interpret 5 × 7 as the total number of\n                                             objects in 5 groups of 7 objects each. For example, describe a context in which a total\n                                             number of objects can be expressed as 5 × 7.\n                           3.OA.5            Apply properties of operations as strategies to multiply and divide. Examples:\n                                             If 6 × 4 = 24 is known, then 4 × 6 = 24 is also known. (Commutative property of\n                                             multiplication.) 3 × 5 × 2 can be found by 3 × 5 = 15, then 15 × 2 = 30, or by 5 × 2 = 10,\n                                             then 3 × 10 = 30. (Associative property of multiplication.) Knowing that 8 × 5 = 40 and\n                                             8 × 2 = 16, one can find 8 × 7 as 8 × (5 + 2) = (8 × 5) + (8 × 2) = 40 + 16 = 56. (Distributive\n                                             property.)\nInstructional Days:        4\nCoherence -Links from:     G2–M6             Foundations of Multiplication and Division\n             -Links to:    G4–M3             Multi-Digit Multiplication and Division\n\nIn Topic C, students begin building fluency with facts of 2 and 3 using the array model and familiar skip-\ncounting strategies.\nLessons 7 and 8 introduce the new complexity of manipulating arrays to study the commutative property.\nStudents learn to distinguish rows from columns as they rotate arrays 90 degrees, noticing that the meaning\nof the factors changes depending on the orientation of the array. Students write two different multiplication\nsentences to interpret the same array. These lessons emphasize the equivalence of facts by demonstrating,\nfor example, that 2 groups of 8 and 8 groups of 2 have the same product. Students observe the pattern and\nbegin to recognize commutativity as a strategy for solving twice as many facts.\nLessons 9 and 10 introduce the distributive property as a strategy for multiplication. In Lesson 9, students use\narrays to decompose unknown facts as the sum or difference of two known facts. For example, they analyze\nan array to see that 7 × 3 can be decomposed as 2 rows of 3 + 5 rows of 3. In Lesson 10, students learn to\nwrite the decomposition as (5 × 3) + (2 × 3) = 21. They explain each step of the solving process in anticipation\nof the work they are expected to complete independently on the Mid-Module Assessment.\n\n\n                          Topic C:            Multiplication Using Units of 2 and 3                                                       91\n\n                          ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 96 (lesson-instruction) ---\nA STORY OF UNITS                                                                     Topic C 3 1\n\n\nA Teaching Sequence Toward Mastery of Multiplication Using Units of 2 and 3\nObjective 1: Demonstrate the commutativity of multiplication, and practice related facts by skip-\n             counting objects in array models.\n             (Lessons 7–8)\n\nObjective 2: Find related multiplication facts by adding and subtracting equal groups in array models.\n             (Lesson 9)\n\nObjective 3: Model the distributive property with arrays to decompose units as a strategy to multiply.\n             (Lesson 10)\n\n\n                    Topic C:            Multiplication Using Units of 2 and 3                            92\n\n                    ©2015 Great Minds. eureka-math.org",
+    "problemSetPages": [
+      {
+        "pdfPage": 90,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                          Lesson 6 Problem Set 3 1\n\n\nName                                                                                          Date\n\n1. Rick puts 15 tennis balls into cans. Each can holds 3 balls. Circle groups of 3 to show the balls in each can.\n\n\n    Rick needs _______ cans.                                                                  ______ × 3 = 15\n\n                                                                                              15 ÷ 3 = ______\n\n\n2. Rick uses 15 tennis balls to make 5 equal groups. Draw to show how many tennis balls are in each group.\n\n\n    There are _______ tennis balls in each group.                                             5 × ______ = 15\n\n                                                                                              15 ÷ 5 = ______\n\n\n3. Use an array to model Problem 1.\n\n    a. ______ × 3 = 15                                                      b. 5 × ______ = 15\n\n       15 ÷ 3 = ______                                                            15 ÷ 5 = ______\n\n       The number in the blanks represents                                        The number in the blanks represents\n\n       _________________________________.                                         __________________________________.\n\n\n                         Lesson 6:           Interpret the unknown in division using the array model.                   86\n\n                         ©2015 Great Minds. eureka-math.org"
+      },
+      {
+        "pdfPage": 91,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                         Lesson 6 Problem Set 3 1\n\n\n4. Deena makes 21 jars of tomato sauce. She puts 7 jars in each box to sell at the market. How many boxes\n   does Deena need?\n\n\n    21 ÷ 7 = ______\n\n    ______ × 7 = 21\n\n\n    What is the meaning of the unknown factor and quotient? ______________________________________\n\n\n5. The teacher gives the equation 4 × ____ = 12. Charlie finds the answer by writing and solving\n   12 ÷ 4 = ____. Explain why Charlie’s method works.\n\n\n6. The blanks in Problem 5 represent the size of the groups. Draw an array to represent the equations.\n\n\n                       Lesson 6:           Interpret the unknown in division using the array model.                87\n\n                       ©2015 Great Minds. eureka-math.org"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 300,
+        "text": "A STORY OF UNITS                                                                          Lesson 6 Answer Key 3 1\n\n\nLesson 6\nProblem Set\n1.    Five groups of 3 circled; 5; 5; 5\n2.    Five groups of 3 drawn and circled; 3; 3; 3\n3.    Array of 5 rows of 3 drawn\n      a. 5; 5; the number of groups\n      b. 3; 3; the size of each group\n4.    3; 3; the number of groups\n5.    3; 3; answers will vary\n6.    Array of 4 rows of 3 drawn\n\n\nExit Ticket\nArray of 2 rows of 6 drawn; 2; 2; the number of groups\n\n\nHomework\n1.    Three groups of 4 circled; 3; 3; 3\n2.    Three groups of 4 drawn and circled; 4; 4; 4\n3.    Array of 3 rows of 4 drawn\n      a. 3; 3; the number of groups\n      b. 4; 4; the size of each group\n4.    6; 6; the size of each group\n5.    3; 3; answers will vary\n6.    Array of 3 rows of 5 drawn\n\n\n                         Module 1:           Properties of Multiplication and Division and Solving Problems with    296\n                                             Units of 2–5 and 10\n\n                         ©2015 Great Minds. eureka-math.org"
+      }
+    ]
+  }
+}

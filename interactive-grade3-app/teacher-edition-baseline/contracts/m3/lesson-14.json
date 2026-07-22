@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m3-l14",
+  "moduleId": "m3",
+  "lessonNumber": 14,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_3/g3_m3_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+    "teacherEditionBytes": 14065864,
+    "lessonPdfPages": {
+      "start": 176,
+      "end": 186
+    },
+    "problemSetPdfPages": [
+      182,
+      183
+    ],
+    "exitTicketPdfPages": [
+      184
+    ],
+    "homeworkPdfPages": [
+      185,
+      186
+    ],
+    "answerKeyPdfPages": [
+      305,
+      306
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m3-student/workbook-page-061.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m3-answer-key/page-305.png",
+      "/source-pages/m3-answer-key/page-306.png"
+    ]
+  },
+  "objective": "Identify and use arithmetic patterns to multiply.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "Materials: (S) Personal white board\n\nPart 1: Extend the 9 = 10 – 1 strategy of multiplying with units of 9.\n    T:   How is the 9 = 10 – 1 strategy, or add ten, subtract 1, from the last lesson used to solve 2 × 9?\n    S:   You can do 1 × 9 = 9, then add ten and subtract one like this: (9 + 10) – 1 = 18.\n    T:   Let’s use this strategy to find 2 × 9 another way. (Draw a 2 × 10 array.) When we start with 2 × 10,\n         how many tens do we have?\n    S:   2 tens.\n    T:   In unit form, what is the fact we are finding?\n    S:   2 nines.\n    T:   To get 1 nine, we subtract 1 from a ten. In our\n         problem, there are 2 nines, so we need to subtract 2\n         from our 2 tens. (Cross off 2 from the array, as\n         shown.) When we subtract 2, how many tens are left?\n    S:   1 ten.\n    T:   What happened to the other ten?\n    S:   We subtracted 2, so now there are 8 left, not 10.  It’s not a full ten anymore after we took off\n         2 ones.  There are just 1 ten and 8 ones.\n    T:   2 × 9 = 18. Tell your partner how we used the 9 = 10 – 1 strategy with 2 × 10 to find 2 × 9.\n    S:   (Explain.)\n    T:   Let’s use the 9 = 10 – 1 strategy to solve 3 × 9. Draw an array for 3 × 10. (Allow time for students to\n         draw.) To solve, how many should we subtract?\n    S:   3.\n    T:   Tell your partner why 3.\n    S:   Because we are trying to find 3 nines. The teacher made 3 tens, and you have to take 1 away from\n         each ten to make it 3 nines. So, you subtract 3.\n    T:   Cross off 3, and then talk to your partner: How many tens and ones are left in the array?\n    S:   (Cross off 3.) There are still 2 complete tens but only 7 ones in the third row.\n    T:   What does our array show is the product of 3 × 9?\n    S:   27.\n    T:   How is the array related to the strategy of using the number of groups, 3, to help you solve 3 × 9?\n    S:   There are only 2 tens in 27, and 3 – 1 = 2. There are 7 ones in 27, and 10 – 3 = 7.\n    T:   You can use your fingers to quickly solve a nines fact using this strategy. Put your hands out in front\n         of you with all 10 fingers up, like this. (Model, palms facing away.)\n    T:   Imagine your fingers are numbered 1 through 10 with your pinky on the left being number 1 and\n         your pinky on the right being number 10. Let’s count from 1 to 10 together, lowering the finger that\n         matches each number. (Count from 1 to 10 with the class.)\n\n\n                        Lesson 14:               Identify and use arithmetic patterns to multiply.                                           176\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                                Lesson 14 3 3\n\n\n    T:   To solve a nines fact, lower the finger that matches the\n         number of nines. Let’s try together with 3 × 9.                                                                    NOTES ON\n         Hands out, fingers up!\n                                                                                                                            MULTIPLE MEANS\n    T:   For 3 × 9, which finger matches the number of nines?                                                               OF ENGAGEMENT:\n    S:   My third finger from the left!                                                                         Display a picture of 10 fingers\n    T:   Lower that finger. (Model.) How many fingers are to                                                    (numbered) on two hands for English\n         the left of the lowered finger?                                                                        language learners and others. Present\n                                                                                                                a demonstration of the finger strategy,\n    S:   2 fingers!\n                                                                                                                or make an animated video. Make it\n    T:   2 is the digit in the tens place. How many fingers are                                                 fun for students with rhythm or a song,\n         to the right of the lowered finger?                                                                    which the teacher or students\n    S:   7 fingers!                                                                                             compose.\n\n    T:   7 is the digit in the ones place.\n    T:   What is the product of 3 × 9 shown by our fingers?\n    S:   27.\n    T:   Does it match the product we found using our array?\n    S:   Yes!\nContinue with the following possible sequence: 7 × 9, 10 × 9, and\n11 × 9. Use the previous example to discuss with students that the\nfinger strategy is limited to facts where the number of groups is\nbetween 1 and 10.\n    T:   Discuss with your partner. How is the finger strategy we just\n         learned related to the strategy of using the number of groups\n         to help solve a nines fact?\n    S:   (Discuss.)\n\nPart 2: Apply strategies for solving nines facts and reason about their effectiveness.\nPart 2 is intended to be a station-based activity where small groups of students rotate through five stations.\nAt each station, they use a different strategy to solve nines facts. The suggestions below indicate which\nrecently learned strategy students might use to solve nines facts at each station.\n         Station 1: Use the add 10, subtract 1 strategy to list facts from 1 × 9 to 10 × 9.\n         Station 2: Use 9 × n = (10 × n) – (1 × n), a distributive strategy, to solve facts from 1 × 9 to 10 × 9.\n         Station 3: Use the finger strategy to solve facts from 1 × 9 to 10 × 9.\n         Station 4: Use the number of groups to find the digits in the tens and ones places of the product to\n                    solve facts from 6 × 9 to 9 × 9.\n         Station 5: Use 9 × n = (5 × n) + (4 × n), a distributive strategy, to solve facts from 6 × 9 to 9 × 9.\n\n\n                         Lesson 14:               Identify and use arithmetic patterns to multiply.                                                   177\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                              Lesson 14 3 3\n\n\n       After finishing, discuss the effectiveness of the strategies used\n       to solve nines facts. Use the following suggested discussion\n       questions:                                                                                                               NOTES ON\n                                                                                                                                MULTIPLE MEANS\n                 Is there a strategy that is easiest for you?                                                                  OF ENGAGEMENT:\n                  What makes it easier than the others?\n                                                                                                                     If appropriate for the class, consider\nMP.5             What strategy is quickest in helping you solve a                                                   having students complete station work\n                  nines fact with a large number of groups, such as                                                  in math journals or reflecting in writing\n                  12 × 9 = n? Which strategies would not work for                                                    so that they have their work as a\n                  such a large fact?                                                                                 reference.\n                 Which strategies could easily be used to solve a\n                  division fact?",
+    "fluencyPracticeText": " Multiply By 9 3.OA.7                    (7 minutes)\n\nMultiply By 9 (7 minutes)\nMaterials: (S) Multiply By 9 (1–5) (Pattern Sheet)\n\nNote: This activity builds fluency with respect to multiplication facts using units of 9. It supports students\nknowing from memory all products of two one-digit numbers. See Lesson 5 for the directions regarding\nadministering a Multiply By Pattern Sheet.\n    T:   (Write 5 × 9 = ____.) Let’s skip-count by nines to find the answer. (Count with fingers to 5 as\n         students count and record the count-by sequence on the board.)\n    S:   9, 18, 27, 36, 45.\n    T:   (Circle 45 and write 5 × 9 = 45 above it. Write 3 × 9 = ____.) Let’s skip-count up by nines again.\n         (Count with fingers to 3 as students count.)\n    S:   9, 18, 27.\n    T:   (Circle 27 and write 3 × 9 = 27 above it.) Let’s see how we can skip-count down to find the answer,\n         too. Start at 45 with 5 fingers, 1 for each nine. (Count down with your fingers as students say\n         numbers.)\n    S:   45 (5 fingers), 36 (4 fingers), 27 (3 fingers).\nRepeat the process for 4 × 9.\n    T:   (Distribute the Multiply By 9 Pattern Sheet.) Let’s practice multiplying by 9. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 14:               Identify and use arithmetic patterns to multiply.                                           175\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 14 3 3",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\n   Problem Set within the allotted 10 minutes. For some\n   classes, it may be appropriate to modify the assignment by\n   specifying which problems they work on first. Some\n   problems do not specify a method for solving. Students\n   should solve these problems using the RDW approach\n   used for Application Problems.",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "How is the 9 = 10 – 1 strategy, or add ten, subtract 1, from the last lesson used to solve 2 × 9?"
+      },
+      {
+        "speaker": "students",
+        "text": "You can do 1 × 9 = 9, then add ten and subtract one like this: (9 + 10) – 1 = 18."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use this strategy to find 2 × 9 another way. (Draw a 2 × 10 array.) When we start with 2 × 10, how many tens do we have?"
+      },
+      {
+        "speaker": "students",
+        "text": "2 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "In unit form, what is the fact we are finding?"
+      },
+      {
+        "speaker": "students",
+        "text": "2 nines."
+      },
+      {
+        "speaker": "teacher",
+        "text": "To get 1 nine, we subtract 1 from a ten. In our problem, there are 2 nines, so we need to subtract 2 from our 2 tens. (Cross off 2 from the array, as shown.) When we subtract 2, how many tens are left?"
+      },
+      {
+        "speaker": "students",
+        "text": "1 ten."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What happened to the other ten?"
+      },
+      {
+        "speaker": "students",
+        "text": "We subtracted 2, so now there are 8 left, not 10.  It’s not a full ten anymore after we took off 2 ones.  There are just 1 ten and 8 ones."
+      },
+      {
+        "speaker": "teacher",
+        "text": "2 × 9 = 18. Tell your partner how we used the 9 = 10 – 1 strategy with 2 × 10 to find 2 × 9."
+      },
+      {
+        "speaker": "students",
+        "text": "(Explain.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use the 9 = 10 – 1 strategy to solve 3 × 9. Draw an array for 3 × 10. (Allow time for students to draw.) To solve, how many should we subtract?"
+      },
+      {
+        "speaker": "students",
+        "text": "3."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell your partner why 3."
+      },
+      {
+        "speaker": "students",
+        "text": "Because we are trying to find 3 nines. The teacher made 3 tens, and you have to take 1 away from each ten to make it 3 nines. So, you subtract 3."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Cross off 3, and then talk to your partner: How many tens and ones are left in the array?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Cross off 3.) There are still 2 complete tens but only 7 ones in the third row."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What does our array show is the product of 3 × 9?"
+      },
+      {
+        "speaker": "students",
+        "text": "27."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How is the array related to the strategy of using the number of groups, 3, to help you solve 3 × 9?"
+      },
+      {
+        "speaker": "students",
+        "text": "There are only 2 tens in 27, and 3 – 1 = 2. There are 7 ones in 27, and 10 – 3 = 7."
+      },
+      {
+        "speaker": "teacher",
+        "text": "You can use your fingers to quickly solve a nines fact using this strategy. Put your hands out in front of you with all 10 fingers up, like this. (Model, palms facing away.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine your fingers are numbered 1 through 10 with your pinky on the left being number 1 and your pinky on the right being number 10. Let’s count from 1 to 10 together, lowering the finger that matches each number. (Count from 1 to 10 with the class.) This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 14 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "To solve a nines fact, lower the finger that matches the number of nines. Let’s try together with 3 × 9. NOTES ON Hands out, fingers up! MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "For 3 × 9, which finger matches the number of nines? OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "students",
+        "text": "My third finger from the left! Display a picture of 10 fingers"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Lower that finger. (Model.) How many fingers are to (numbered) on two hands for English the left of the lowered finger? language learners and others. Present a demonstration of the finger strategy,"
+      },
+      {
+        "speaker": "students",
+        "text": "2 fingers! or make an animated video. Make it"
+      },
+      {
+        "speaker": "teacher",
+        "text": "2 is the digit in the tens place. How many fingers are fun for students with rhythm or a song, to the right of the lowered finger? which the teacher or students"
+      },
+      {
+        "speaker": "students",
+        "text": "7 fingers! compose."
+      },
+      {
+        "speaker": "teacher",
+        "text": "7 is the digit in the ones place."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the product of 3 × 9 shown by our fingers?"
+      },
+      {
+        "speaker": "students",
+        "text": "27."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Does it match the product we found using our array?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes! Continue with the following possible sequence: 7 × 9, 10 × 9, and 11 × 9. Use the previous example to discuss with students that the finger strategy is limited to facts where the number of groups is between 1 and 10."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Discuss with your partner. How is the finger strategy we just learned related to the strategy of using the number of groups to help solve a nines fact?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.) At each station, they use a different strategy to solve nines facts. The suggestions below indicate which recently learned strategy students might use to solve nines facts at each station. Station 1: Use the add 10, subtract 1 strategy to list facts from 1 × 9 to 10 × 9. Station 2: Use 9 × n = (10 × n) – (1 × n), a distributive strategy, to solve facts from 1 × 9 to 10 × 9. Station 3: Use the finger strategy to solve facts from 1 × 9 to 10 × 9. Station 4: Use the number of groups to find the digits in the tens and ones places of the product to solve facts from 6 × 9 to 9 × 9. Station 5: Use 9 × n = (5 × n) + (4 × n), a distributive strategy, to solve facts from 6 × 9 to 9 × 9. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 14 3 3 After finishing, discuss the effectiveness of the strategies used to solve nines facts. Use the following suggested discussion questions: NOTES ON MULTIPLE MEANS  Is there a strategy that is easiest for you? OF ENGAGEMENT: What makes it easier than the others? If appropriate for the class, consider MP.5  What strategy is quickest in helping you solve a having students complete station work nines fact with a large number of groups, such as in math journals or reflecting in writing 12 × 9 = n? Which strategies would not work for so that they have their work as a such a large fact? reference.  Which strategies could easily be used to solve a division fact?"
+      }
+    ],
+    "teacherPrompts": [
+      "How is the 9 = 10 – 1 strategy, or add ten, subtract 1, from the last lesson used to solve 2 × 9?",
+      "Let’s use this strategy to find 2 × 9 another way. (Draw a 2 × 10 array.) When we start with 2 × 10, how many tens do we have?",
+      "In unit form, what is the fact we are finding?",
+      "To get 1 nine, we subtract 1 from a ten. In our problem, there are 2 nines, so we need to subtract 2 from our 2 tens. (Cross off 2 from the array, as shown.) When we subtract 2, how many tens are left?",
+      "What happened to the other ten?",
+      "2 × 9 = 18. Tell your partner how we used the 9 = 10 – 1 strategy with 2 × 10 to find 2 × 9.",
+      "Let’s use the 9 = 10 – 1 strategy to solve 3 × 9. Draw an array for 3 × 10. (Allow time for students to draw.) To solve, how many should we subtract?",
+      "Tell your partner why 3.",
+      "Cross off 3, and then talk to your partner: How many tens and ones are left in the array?",
+      "What does our array show is the product of 3 × 9?",
+      "How is the array related to the strategy of using the number of groups, 3, to help you solve 3 × 9?",
+      "You can use your fingers to quickly solve a nines fact using this strategy. Put your hands out in front of you with all 10 fingers up, like this. (Model, palms facing away.)",
+      "Imagine your fingers are numbered 1 through 10 with your pinky on the left being number 1 and your pinky on the right being number 10. Let’s count from 1 to 10 together, lowering the finger that matches each number. (Count from 1 to 10 with the class.) This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 14 3 3",
+      "To solve a nines fact, lower the finger that matches the number of nines. Let’s try together with 3 × 9. NOTES ON Hands out, fingers up! MULTIPLE MEANS",
+      "For 3 × 9, which finger matches the number of nines? OF ENGAGEMENT:",
+      "Lower that finger. (Model.) How many fingers are to (numbered) on two hands for English the left of the lowered finger? language learners and others. Present a demonstration of the finger strategy,",
+      "2 is the digit in the tens place. How many fingers are fun for students with rhythm or a song, to the right of the lowered finger? which the teacher or students",
+      "7 is the digit in the ones place.",
+      "What is the product of 3 × 9 shown by our fingers?",
+      "Does it match the product we found using our array?",
+      "Discuss with your partner. How is the finger strategy we just learned related to the strategy of using the number of groups to help solve a nines fact?"
+    ],
+    "debriefPrompt": "Invite students to explain the strategy used in each problem",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "a. Multiply. Then, add the tens digit and ones digit of each product. 1×9= 9 9 = ____ 0 + ____ ____ 9 2 × 9 = 18 1 + ____ ____ 8 = ____ 3×9= ____ + ____ = ____ 4×9= ____ + ____ = ____ 5×9= ____ + ____ = ____ 6×9= ____ + ____ = ____ 7×9= ____ + ____ = ____ 8×9= ____ + ____ = ____ 9×9= ____ + ____ = ____ 10 × 9 = ____ + ____ = ____ b. What is the sum of the digits in each product? How can this strategy help you check your work with the nines facts? c. Araceli continues to count by nines. She writes, \"90, 99, 108, 117, 126, 135, 144, 153, 162, 171, 180, 189, 198. Wow! The sum of the digits is still 9.\" Is she correct? Why or why not?",
+        "equations": [
+          "1×9= 9",
+          "9 = ____",
+          "0 + ____",
+          "2 × 9 = 18"
+        ]
+      },
+      {
+        "number": 2,
+        "prompt": "Araceli uses the number of groups in 8 × 9 to help her find the product. She uses 8 – 1 = 7 to get the digit in the tens place and 10 – 8 = 2 to get the digit in the ones place. Use her strategy to find 4 more facts.",
+        "equations": [
+          "8 × 9",
+          "1 = 7",
+          "8 = 2"
+        ]
+      },
+      {
+        "number": 3,
+        "prompt": "Dennis calculates 9 × 8 by thinking about it as 80 – 8 = 72. Explain Dennis' strategy.",
+        "equations": [
+          "9 × 8",
+          "8 = 72"
+        ]
+      },
+      {
+        "number": 4,
+        "prompt": "Sonya figures out the answer to 7 × 9 by putting down her right index finger (shown). What is the answer? Explain how to use Sonya's finger strategy.",
+        "equations": [
+          "7 × 9"
+        ]
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                    Lesson 14 Problem Set 3 3\n\n\nName                                                                                                       Date\n\n1. a. Multiply. Then, add the tens digit and ones digit of each product.\n\n\n               1×9= 9                                        9 = ______\n                                                       0 + _____\n                                                     _____         9\n\n               2 × 9 = 18                              1 + _____\n                                                     _____   8 = ______\n\n               3×9=                                  _____ + _____ = ______\n\n               4×9=                                  _____ + _____ = ______\n\n               5×9=                                  _____ + _____ = ______\n\n               6×9=                                  _____ + _____ = ______\n\n               7×9=                                  _____ + _____ = ______\n\n               8×9=                                  _____ + _____ = ______\n\n               9×9=                                  _____ + _____ = ______\n\n               10 × 9 =                              _____ + _____ = ______\n\n\n   b. What is the sum of the digits in each product? How can this strategy help you check your work with\n      the nines facts?\n\n\n   c. Araceli continues to count by nines. She writes, “90, 99, 108, 117, 126, 135, 144, 153, 162, 171, 180,\n      189, 198. Wow! The sum of the digits is still 9.” Is she correct? Why or why not?\n\n\n                       Lesson 14:               Identify and use arithmetic patterns to multiply.                                181\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                     Lesson 14 Problem Set 3 3\n\n\n2. Araceli uses the number of groups in 8 × 9 to help her find the product. She uses 8 – 1 = 7 to get the digit\n   in the tens place and 10 – 8 = 2 to get the digit in the ones place. Use her strategy to find 4 more facts.\n\n\n3. Dennis calculates 9 × 8 by thinking about it as 80 – 8 = 72. Explain Dennis’ strategy.\n\n\n4. Sonya figures out the answer to 7 × 9 by putting down her right index finger (shown). What is the\n   answer? Explain how to use Sonya’s finger strategy.\n\n\n                        Lesson 14:               Identify and use arithmetic patterns to multiply.                                182\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015",
+    "answerKeyProblemSetText": "1.    a. Answer provided                                                          2.        Answers will vary.\n           9                                                                      3.        Explanations will vary.\n           27, 2, 7, 9                                                            4.        63; explanations will vary.\n           36, 3, 6, 9\n           45, 4, 5, 9\n           54, 5, 4, 9\n           63, 6, 3, 9\n           72, 7, 2, 9\n           81, 8, 1, 9\n           90, 9, 0, 9\n      b. 9; answers will vary.\n      c. Incorrect; answers will vary.\n\n\n                         Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10                   304\n\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                       Lesson 14 Answer Key 3 3",
+    "answerKeyText": "A STORY OF UNITS                                                                                        Lesson 14 Answer Key 3 3\n\n\nLesson 14\nPattern Sheet\n               9                                         18                                            27                             36\n               45                                        9                                             18                             9\n               27                                        9                                             36                             9\n               45                                        9                                             18                             27\n               18                                        36                                            18                             45\n               18                                        9                                             18                             27\n               9                                         27                                            18                             27\n               36                                        27                                            45                             27\n               36                                        9                                             36                             18\n               36                                        27                                            36                             45\n               36                                        45                                             9                             45\n               18                                        45                                            27                             45\n               36                                        18                                            36                             27\n               45                                        27                                            18                             36\n               27                                        45                                            18                             36\n\n\nProblem Set\n\n1.    a. Answer provided                                                          2.        Answers will vary.\n           9                                                                      3.        Explanations will vary.\n           27, 2, 7, 9                                                            4.        63; explanations will vary.\n           36, 3, 6, 9\n           45, 4, 5, 9\n           54, 5, 4, 9\n           63, 6, 3, 9\n           72, 7, 2, 9\n           81, 8, 1, 9\n           90, 9, 0, 9\n      b. 9; answers will vary.\n      c. Incorrect; answers will vary.\n\n\n                         Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10                   304\n\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                       Lesson 14 Answer Key 3 3\n\n\nExit Ticket\nAnswers will vary.\n\n\nHomework\n1.    a. Answer provided                                                         2.        Answers will vary.\n          Answer provided                                                        3.        54; explanations will vary.\n          72, 7, 2, 9                                                            4.        Correct; answers will vary.\n          63, 6, 3, 9\n          54, 5, 4, 9\n          45, 4, 5, 9\n          36, 3, 6, 9\n          27, 2, 7, 9\n          18, 1, 8, 9\n          9, 0, 9, 9\n      b. Answers will vary.\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              305\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "equal-groups",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "T: Let’s use this strategy to find 2 × 9 another way. (Draw a 2 × 10 array.) When we start with 2 × 10,",
+        "from our 2 tens. (Cross off 2 from the array, as",
+        "T: Let’s use the 9 = 10 – 1 strategy to solve 3 × 9. Draw an array for 3 × 10. (Allow time for students to",
+        "T: Cross off 3, and then talk to your partner: How many tens and ones are left in the array?",
+        "T: What does our array show is the product of 3 × 9?",
+        "T: How is the array related to the strategy of using the number of groups, 3, to help you solve 3 × 9?",
+        "T: Does it match the product we found using our array?"
+      ],
+      "equal-groups": [
+        "Part 2 is intended to be a station-based activity where small groups of students rotate through five stations."
+      ],
+      "money-model": [
+        "recently learned strategy students might use to solve nines facts at each station."
+      ],
+      "picture-or-drawing": [
+        "T: Let’s use this strategy to find 2 × 9 another way. (Draw a 2 × 10 array.) When we start with 2 × 10,",
+        "T: Let’s use the 9 = 10 – 1 strategy to solve 3 × 9. Draw an array for 3 × 10. (Allow time for students to",
+        "draw.) To solve, how many should we subtract?",
+        "S: My third finger from the left! Display a picture of 10 fingers"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "How is the 9 = 10 – 1 strategy, or add ten, subtract 1, from the last lesson used to solve 2 × 9?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use this strategy to find 2 × 9 another way. (Draw a 2 × 10 array.) When we start with 2 × 10, how many tens do we have?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "To get 1 nine, we subtract 1 from a ten. In our problem, there are 2 nines, so we need to subtract 2 from our 2 tens. (Cross off 2 from the array, as shown.) When we subtract 2, how many tens are left?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Explain.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use the 9 = 10 – 1 strategy to solve 3 × 9. Draw an array for 3 × 10. (Allow time for students to draw.) To solve, how many should we subtract?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What does our array show is the product of 3 × 9?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How is the array related to the strategy of using the number of groups, 3, to help you solve 3 × 9?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "You can use your fingers to quickly solve a nines fact using this strategy. Put your hands out in front of you with all 10 fingers up, like this. (Model, palms facing away.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Imagine your fingers are numbered 1 through 10 with your pinky on the left being number 1 and your pinky on the right being number 10. Let’s count from 1 to 10 together, lowering the finger that matches each number. (Count from 1 to 10 with the class.) This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 14 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "To solve a nines fact, lower the finger that matches the number of nines. Let’s try together with 3 × 9. NOTES ON Hands out, fingers up! MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Lower that finger. (Model.) How many fingers are to (numbered) on two hands for English the left of the lowered finger? language learners and others. Present a demonstration of the finger strategy,"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the product of 3 × 9 shown by our fingers?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Discuss with your partner. How is the finger strategy we just learned related to the strategy of using the number of groups to help solve a nines fact?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.) At each station, they use a different strategy to solve nines facts. The suggestions below indicate which recently learned strategy students might use to solve nines facts at each station. Station 1: Use the add 10, subtract 1 strategy to list facts from 1 × 9 to 10 × 9. Station 2: Use 9 × n = (10 × n) – (1 × n), a distributive strategy, to solve facts from 1 × 9 to 10 × 9. Station 3: Use the finger strategy to solve facts from 1 × 9 to 10 × 9. Station 4: Use the number of groups to find the digits in the tens and ones places of the product to solve facts from 6 × 9 to 9 × 9. Station 5: Use 9 × n = (5 × n) + (4 × n), a distributive strategy, to solve facts from 6 × 9 to 9 × 9. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 14 3 3 After finishing, discuss the effectiveness of the strategies used to solve nines facts. Use the following suggested discussion questions: NOTES ON MULTIPLE MEANS  Is there a strategy that is easiest for you? OF ENGAGEMENT: What makes it easier than the others? If appropriate for the class, consider MP.5  What strategy is quickest in helping you solve a having students complete station work nines fact with a large number of groups, such as in math journals or reflecting in writing 12 × 9 = n? Which strategies would not work for so that they have their work as a such a large fact? reference.  Which strategies could easily be used to solve a division fact?"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 176 (debrief) ---\nA STORY OF UNITS                                                                                                                Lesson 14 3 3\n\n\nLesson 14\nObjective: Identify and use arithmetic patterns to multiply.\n\nSuggested Lesson Structure\n Fluency Practice                  (7 minutes)\n Concept Development               (43 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (7 minutes)\n\n Multiply By 9 3.OA.7                    (7 minutes)\n\nMultiply By 9 (7 minutes)\nMaterials: (S) Multiply By 9 (1–5) (Pattern Sheet)\n\nNote: This activity builds fluency with respect to multiplication facts using units of 9. It supports students\nknowing from memory all products of two one-digit numbers. See Lesson 5 for the directions regarding\nadministering a Multiply By Pattern Sheet.\n    T:   (Write 5 × 9 = ____.) Let’s skip-count by nines to find the answer. (Count with fingers to 5 as\n         students count and record the count-by sequence on the board.)\n    S:   9, 18, 27, 36, 45.\n    T:   (Circle 45 and write 5 × 9 = 45 above it. Write 3 × 9 = ____.) Let’s skip-count up by nines again.\n         (Count with fingers to 3 as students count.)\n    S:   9, 18, 27.\n    T:   (Circle 27 and write 3 × 9 = 27 above it.) Let’s see how we can skip-count down to find the answer,\n         too. Start at 45 with 5 fingers, 1 for each nine. (Count down with your fingers as students say\n         numbers.)\n    S:   45 (5 fingers), 36 (4 fingers), 27 (3 fingers).\nRepeat the process for 4 × 9.\n    T:   (Distribute the Multiply By 9 Pattern Sheet.) Let’s practice multiplying by 9. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 14:               Identify and use arithmetic patterns to multiply.                                           175\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 177 (concept-development) ---\nA STORY OF UNITS                                                                                                               Lesson 14 3 3\n\n\nConcept Development (43 minutes)\n\nMaterials: (S) Personal white board\n\nPart 1: Extend the 9 = 10 – 1 strategy of multiplying with units of 9.\n    T:   How is the 9 = 10 – 1 strategy, or add ten, subtract 1, from the last lesson used to solve 2 × 9?\n    S:   You can do 1 × 9 = 9, then add ten and subtract one like this: (9 + 10) – 1 = 18.\n    T:   Let’s use this strategy to find 2 × 9 another way. (Draw a 2 × 10 array.) When we start with 2 × 10,\n         how many tens do we have?\n    S:   2 tens.\n    T:   In unit form, what is the fact we are finding?\n    S:   2 nines.\n    T:   To get 1 nine, we subtract 1 from a ten. In our\n         problem, there are 2 nines, so we need to subtract 2\n         from our 2 tens. (Cross off 2 from the array, as\n         shown.) When we subtract 2, how many tens are left?\n    S:   1 ten.\n    T:   What happened to the other ten?\n    S:   We subtracted 2, so now there are 8 left, not 10.  It’s not a full ten anymore after we took off\n         2 ones.  There are just 1 ten and 8 ones.\n    T:   2 × 9 = 18. Tell your partner how we used the 9 = 10 – 1 strategy with 2 × 10 to find 2 × 9.\n    S:   (Explain.)\n    T:   Let’s use the 9 = 10 – 1 strategy to solve 3 × 9. Draw an array for 3 × 10. (Allow time for students to\n         draw.) To solve, how many should we subtract?\n    S:   3.\n    T:   Tell your partner why 3.\n    S:   Because we are trying to find 3 nines. The teacher made 3 tens, and you have to take 1 away from\n         each ten to make it 3 nines. So, you subtract 3.\n    T:   Cross off 3, and then talk to your partner: How many tens and ones are left in the array?\n    S:   (Cross off 3.) There are still 2 complete tens but only 7 ones in the third row.\n    T:   What does our array show is the product of 3 × 9?\n    S:   27.\n    T:   How is the array related to the strategy of using the number of groups, 3, to help you solve 3 × 9?\n    S:   There are only 2 tens in 27, and 3 – 1 = 2. There are 7 ones in 27, and 10 – 3 = 7.\n    T:   You can use your fingers to quickly solve a nines fact using this strategy. Put your hands out in front\n         of you with all 10 fingers up, like this. (Model, palms facing away.)\n    T:   Imagine your fingers are numbered 1 through 10 with your pinky on the left being number 1 and\n         your pinky on the right being number 10. Let’s count from 1 to 10 together, lowering the finger that\n         matches each number. (Count from 1 to 10 with the class.)\n\n\n                        Lesson 14:               Identify and use arithmetic patterns to multiply.                                           176\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 178 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                                Lesson 14 3 3\n\n\n    T:   To solve a nines fact, lower the finger that matches the\n         number of nines. Let’s try together with 3 × 9.                                                                    NOTES ON\n         Hands out, fingers up!\n                                                                                                                            MULTIPLE MEANS\n    T:   For 3 × 9, which finger matches the number of nines?                                                               OF ENGAGEMENT:\n    S:   My third finger from the left!                                                                         Display a picture of 10 fingers\n    T:   Lower that finger. (Model.) How many fingers are to                                                    (numbered) on two hands for English\n         the left of the lowered finger?                                                                        language learners and others. Present\n                                                                                                                a demonstration of the finger strategy,\n    S:   2 fingers!\n                                                                                                                or make an animated video. Make it\n    T:   2 is the digit in the tens place. How many fingers are                                                 fun for students with rhythm or a song,\n         to the right of the lowered finger?                                                                    which the teacher or students\n    S:   7 fingers!                                                                                             compose.\n\n    T:   7 is the digit in the ones place.\n    T:   What is the product of 3 × 9 shown by our fingers?\n    S:   27.\n    T:   Does it match the product we found using our array?\n    S:   Yes!\nContinue with the following possible sequence: 7 × 9, 10 × 9, and\n11 × 9. Use the previous example to discuss with students that the\nfinger strategy is limited to facts where the number of groups is\nbetween 1 and 10.\n    T:   Discuss with your partner. How is the finger strategy we just\n         learned related to the strategy of using the number of groups\n         to help solve a nines fact?\n    S:   (Discuss.)\n\nPart 2: Apply strategies for solving nines facts and reason about their effectiveness.\nPart 2 is intended to be a station-based activity where small groups of students rotate through five stations.\nAt each station, they use a different strategy to solve nines facts. The suggestions below indicate which\nrecently learned strategy students might use to solve nines facts at each station.\n         Station 1: Use the add 10, subtract 1 strategy to list facts from 1 × 9 to 10 × 9.\n         Station 2: Use 9 × n = (10 × n) – (1 × n), a distributive strategy, to solve facts from 1 × 9 to 10 × 9.\n         Station 3: Use the finger strategy to solve facts from 1 × 9 to 10 × 9.\n         Station 4: Use the number of groups to find the digits in the tens and ones places of the product to\n                    solve facts from 6 × 9 to 9 × 9.\n         Station 5: Use 9 × n = (5 × n) + (4 × n), a distributive strategy, to solve facts from 6 × 9 to 9 × 9.\n\n\n                         Lesson 14:               Identify and use arithmetic patterns to multiply.                                                   177\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 179 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 14 3 3\n\n\n       After finishing, discuss the effectiveness of the strategies used\n       to solve nines facts. Use the following suggested discussion\n       questions:                                                                                                               NOTES ON\n                                                                                                                                MULTIPLE MEANS\n                 Is there a strategy that is easiest for you?                                                                  OF ENGAGEMENT:\n                  What makes it easier than the others?\n                                                                                                                     If appropriate for the class, consider\nMP.5             What strategy is quickest in helping you solve a                                                   having students complete station work\n                  nines fact with a large number of groups, such as                                                  in math journals or reflecting in writing\n                  12 × 9 = n? Which strategies would not work for                                                    so that they have their work as a\n                  such a large fact?                                                                                 reference.\n                 Which strategies could easily be used to solve a\n                  division fact?\n\n   Problem Set (10 minutes)\n   Students should do their personal best to complete the\n   Problem Set within the allotted 10 minutes. For some\n   classes, it may be appropriate to modify the assignment by\n   specifying which problems they work on first. Some\n   problems do not specify a method for solving. Students\n   should solve these problems using the RDW approach\n   used for Application Problems.\n\n\n       Student Debrief (10 minutes)\n\n   Lesson Objective: Identify and use arithmetic patterns to\n   multiply.\n   The Student Debrief is intended to invite reflection and\n   active processing of the total lesson experience.\n   Invite students to review their solutions for the Problem\n   Set. They should check work by comparing answers with a\n   partner before going over answers as a class. Look for\n   misconceptions or misunderstandings that can be\n   addressed in the Debrief. Guide students in a\n   conversation to debrief the Problem Set and process the\n   lesson.\n   Any combination of the questions below may be used to lead the discussion.\n             Invite students to explain the strategy used in each problem.\n             Encourage students to explain a different strategy that could be used to solve Problem 3.\n             Why is it important to know several strategies for solving larger multiplication facts?\n              Which strategies for solving nines facts can be modified to apply to a different set of facts\n              (sixes, sevens, eights, etc.)?\n\n\n                             Lesson 14:               Identify and use arithmetic patterns to multiply.                                                      178\n\n                             This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                             G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 180 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 14 3 3\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                       Lesson 14:               Identify and use arithmetic patterns to multiply.                                           179\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 181 (template) ---\nA STORY OF UNITS                                                                                    Lesson 14 Pattern Sheet 3 3\n\n\n              Multiply.\n\n\nmultiply by 9 (1–5)\n\n\n                          Lesson 14:               Identify and use arithmetic patterns to multiply.                                180\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 182 (problem-set) ---\nA STORY OF UNITS                                                                                    Lesson 14 Problem Set 3 3\n\n\nName                                                                                                       Date\n\n1. a. Multiply. Then, add the tens digit and ones digit of each product.\n\n\n               1×9= 9                                        9 = ______\n                                                       0 + _____\n                                                     _____         9\n\n               2 × 9 = 18                              1 + _____\n                                                     _____   8 = ______\n\n               3×9=                                  _____ + _____ = ______\n\n               4×9=                                  _____ + _____ = ______\n\n               5×9=                                  _____ + _____ = ______\n\n               6×9=                                  _____ + _____ = ______\n\n               7×9=                                  _____ + _____ = ______\n\n               8×9=                                  _____ + _____ = ______\n\n               9×9=                                  _____ + _____ = ______\n\n               10 × 9 =                              _____ + _____ = ______\n\n\n   b. What is the sum of the digits in each product? How can this strategy help you check your work with\n      the nines facts?\n\n\n   c. Araceli continues to count by nines. She writes, “90, 99, 108, 117, 126, 135, 144, 153, 162, 171, 180,\n      189, 198. Wow! The sum of the digits is still 9.” Is she correct? Why or why not?\n\n\n                       Lesson 14:               Identify and use arithmetic patterns to multiply.                                181\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 183 (problem-set) ---\nA STORY OF UNITS                                                                                     Lesson 14 Problem Set 3 3\n\n\n2. Araceli uses the number of groups in 8 × 9 to help her find the product. She uses 8 – 1 = 7 to get the digit\n   in the tens place and 10 – 8 = 2 to get the digit in the ones place. Use her strategy to find 4 more facts.\n\n\n3. Dennis calculates 9 × 8 by thinking about it as 80 – 8 = 72. Explain Dennis’ strategy.\n\n\n4. Sonya figures out the answer to 7 × 9 by putting down her right index finger (shown). What is the\n   answer? Explain how to use Sonya’s finger strategy.\n\n\n                        Lesson 14:               Identify and use arithmetic patterns to multiply.                                182\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 184 (exit-ticket) ---\nA STORY OF UNITS                                                                                         Lesson 14 Exit Ticket 3 3\n\n\nName                                                                                                       Date\n\nDonald writes 6 × 9 = 54. Explain two strategies you could use to check his work.\n\n\n                       Lesson 14:               Identify and use arithmetic patterns to multiply.                                  183\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 185 (homework) ---\nA STORY OF UNITS                                                                                       Lesson 14 Homework 3 3\n\n\nName                                                                                                       Date\n\n1. a. Multiply. Then, add the digits in each product.\n\n\n                         10 × 9 = 90                                                                         9       +       0   =   9\n\n\n                          9 × 9 = 81                                                                         8       +       1   =   9\n\n\n                              8×9=                                                                       _____ + _____ = ______\n\n\n                              7×9=                                                                       _____ + _____ = ______\n\n\n                              6×9=                                                                       _____ + _____ = ______\n\n\n                              5×9=                                                                       _____ + _____ = ______\n\n\n                              4×9=                                                                       _____ + _____ = ______\n\n\n                              3×9=                                                                       _____ + _____ = ______\n\n\n                              2×9=                                                                       _____ + _____ = ______\n\n\n                              1×9=                                                                       _____ + _____ = ______\n\n\n   b. What pattern did you notice in Problem 1(a)? How can this strategy help you check your work with\n      nines facts?\n\n\n                      Lesson 14:                Identify and use arithmetic patterns to multiply.                                        184\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 186 (homework) ---\nA STORY OF UNITS                                                                                        Lesson 14 Homework 3 3\n\n\n2. Thomas calculates 9 × 7 by thinking about it as 70 – 7 = 63. Explain Thomas’ strategy.\n\n\n3. Alexia figures out the answer to 6 × 9 by lowering the thumb on her right hand (shown). What is the\n   answer? Explain Alexia’s strategy.\n\n\n4. Travis writes 72 = 9 × 8. Is he correct? Explain at least 2 strategies Travis can use to check his work.\n\n\n                        Lesson 14:               Identify and use arithmetic patterns to multiply.                                185\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015",
+    "problemSetPages": [
+      {
+        "pdfPage": 182,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                    Lesson 14 Problem Set 3 3\n\n\nName                                                                                                       Date\n\n1. a. Multiply. Then, add the tens digit and ones digit of each product.\n\n\n               1×9= 9                                        9 = ______\n                                                       0 + _____\n                                                     _____         9\n\n               2 × 9 = 18                              1 + _____\n                                                     _____   8 = ______\n\n               3×9=                                  _____ + _____ = ______\n\n               4×9=                                  _____ + _____ = ______\n\n               5×9=                                  _____ + _____ = ______\n\n               6×9=                                  _____ + _____ = ______\n\n               7×9=                                  _____ + _____ = ______\n\n               8×9=                                  _____ + _____ = ______\n\n               9×9=                                  _____ + _____ = ______\n\n               10 × 9 =                              _____ + _____ = ______\n\n\n   b. What is the sum of the digits in each product? How can this strategy help you check your work with\n      the nines facts?\n\n\n   c. Araceli continues to count by nines. She writes, “90, 99, 108, 117, 126, 135, 144, 153, 162, 171, 180,\n      189, 198. Wow! The sum of the digits is still 9.” Is she correct? Why or why not?\n\n\n                       Lesson 14:               Identify and use arithmetic patterns to multiply.                                181\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 183,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                     Lesson 14 Problem Set 3 3\n\n\n2. Araceli uses the number of groups in 8 × 9 to help her find the product. She uses 8 – 1 = 7 to get the digit\n   in the tens place and 10 – 8 = 2 to get the digit in the ones place. Use her strategy to find 4 more facts.\n\n\n3. Dennis calculates 9 × 8 by thinking about it as 80 – 8 = 72. Explain Dennis’ strategy.\n\n\n4. Sonya figures out the answer to 7 × 9 by putting down her right index finger (shown). What is the\n   answer? Explain how to use Sonya’s finger strategy.\n\n\n                        Lesson 14:               Identify and use arithmetic patterns to multiply.                                182\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 305,
+        "text": "A STORY OF UNITS                                                                                        Lesson 14 Answer Key 3 3\n\n\nLesson 14\nPattern Sheet\n               9                                         18                                            27                             36\n               45                                        9                                             18                             9\n               27                                        9                                             36                             9\n               45                                        9                                             18                             27\n               18                                        36                                            18                             45\n               18                                        9                                             18                             27\n               9                                         27                                            18                             27\n               36                                        27                                            45                             27\n               36                                        9                                             36                             18\n               36                                        27                                            36                             45\n               36                                        45                                             9                             45\n               18                                        45                                            27                             45\n               36                                        18                                            36                             27\n               45                                        27                                            18                             36\n               27                                        45                                            18                             36\n\n\nProblem Set\n\n1.    a. Answer provided                                                          2.        Answers will vary.\n           9                                                                      3.        Explanations will vary.\n           27, 2, 7, 9                                                            4.        63; explanations will vary.\n           36, 3, 6, 9\n           45, 4, 5, 9\n           54, 5, 4, 9\n           63, 6, 3, 9\n           72, 7, 2, 9\n           81, 8, 1, 9\n           90, 9, 0, 9\n      b. 9; answers will vary.\n      c. Incorrect; answers will vary.\n\n\n                         Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10                   304\n\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 306,
+        "text": "A STORY OF UNITS                                                                                       Lesson 14 Answer Key 3 3\n\n\nExit Ticket\nAnswers will vary.\n\n\nHomework\n1.    a. Answer provided                                                         2.        Answers will vary.\n          Answer provided                                                        3.        54; explanations will vary.\n          72, 7, 2, 9                                                            4.        Correct; answers will vary.\n          63, 6, 3, 9\n          54, 5, 4, 9\n          45, 4, 5, 9\n          36, 3, 6, 9\n          27, 2, 7, 9\n          18, 1, 8, 9\n          9, 0, 9, 9\n      b. Answers will vary.\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              305\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015"
+      }
+    ]
+  }
+}

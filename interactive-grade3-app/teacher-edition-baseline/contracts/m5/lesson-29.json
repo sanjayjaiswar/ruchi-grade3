@@ -1,0 +1,478 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m5-l29",
+  "moduleId": "m5",
+  "lessonNumber": 29,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+    "teacherEditionBytes": 17797697,
+    "lessonPdfPages": {
+      "start": 340,
+      "end": 351
+    },
+    "problemSetPdfPages": [
+      347,
+      348
+    ],
+    "exitTicketPdfPages": [
+      349
+    ],
+    "homeworkPdfPages": [
+      350,
+      351
+    ],
+    "answerKeyPdfPages": [
+      418,
+      419
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m5-student/workbook-page-116.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m5-teacher/page-347.png",
+      "/source-pages/m5-teacher/page-348.png",
+      "/source-pages/m5-teacher/page-418.png",
+      "/source-pages/m5-teacher/page-419.png"
+    ]
+  },
+  "objective": "Compare fractions with the same numerator using <, >, or =, and use a model to reason about their size.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.                                                       working below grade level may benefit\n                                                                                                      from math (and English) fluency\n                                                                                                      practice using the Problem Set. For",
+    "conceptDevelopmentText": "Materials: (S) Personal white board, 3 wholes (Lesson 25 Template 1)\n\nSeat students in pairs facing each other in a large circle around the room. 3 wholes should be in their\npersonal white boards.                                                           3 wholes (Lesson 25 Template 1)\n    T:   Today, we’ll only use the first rectangle. At my signal, draw and\n                                    1\n         shade a fraction less than 2, and label it below the rectangle.\n         (Signal.)\n    S:   (Draw and label.)\n                                                                                      1\n    T:   Check your partner’s work to make sure it’s less than .\n                                                                                      2\n    S:   (Check.)\n    T:   This is how we’re going to play a game today. For the next round, we’ll see which partner is quicker\n         but still accurate. As soon as you finish drawing, raise your personal white board. If you are quicker,\n         then you are the winner of the round. If you are the winner of the round, you will stand up, and\n         your partner will stay seated. If you are standing, you will then move to partner with the person on\n         your right, who is still seated. Ready? Erase your boards. At my signal, draw and label a fraction\n                              1\n         that is greater than . (Signal.)\n                                   2\n    S:   (Draw and label.)\nThe student who goes around the entire circle and arrives back at his original place faster than the other\nstudents wins the game. The winner can also be the student who has moved the furthest if it takes too long\nto play all the way around. Move the game at a brisk pace. Use a variety of fractions, and mix it up between\ngreater than and less than so that students constantly need to update their drawings and feel challenged. If\npreferred, mix it up by calling out equal to.\n    T:   (Draw or show the images on the right.) Draw my shapes on\n         your board. Make sure they match in size like mine.\n    S:   (Draw.)\n    T:   Partition both shapes into sixths.\n    S:   (Partition.)\n    T:   Partition the second shape to show double the number of units in the same whole.\n    S:   (Partition.)\n    T:   What fractional units do we have?\n    S:   Sixths and twelfths.\n    T:   Shade in 4 units of each shape, and label the shaded fraction below each shape.\n    S:   (Shade and label.)\n    T:   Whispering to your partner, say a sentence comparing the fractions using the words greater than,\n         less than, or equal to.\n         4                4\n    S:     is greater than .\n         6                12\n\n\n                        Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a          341\n                                                   model to reason about their size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                         Lesson 29 3 5\n\n\n    T:   Now, write the comparison as a number sentence with the correct symbol between the fractions.\n                4     4\n    S:   (Write >       .)\n                6     12\n    T:   (Draw or show the images on the right.) Draw my\n         rectangles on your board. Make sure they match in\n         size like mine.\n    S:   (Draw.)\n    T:   Partition the first rectangle into sevenths and the second one into fifths.\n    S:   (Partition.)\n    T:   Shade in 3 units of each rectangle, and label the shaded fraction below each rectangle.\n    S:   (Shade and label.)\n    T:   Whispering to your partner, say a sentence comparing the fractions using the words greater than,\n         less than, or equal to.\n         3             3\n    S:     is less than .\n         7             5\n    T:   Now, write the comparison as a number sentence with the correct symbol between the fractions.\n                3     3\n    S:   (Write < .)\n                7     5\n\nDo other examples, if necessary, using a variety of shapes and units.\n    T:   Draw 2 number lines on your board, and label the endpoints 0 and 1.\n\n\n    S:   (Draw and label.)\n    T:   Partition the first number line into eighths and the second one into tenths.\n    S:   (Partition.)\n                                                            8\n    T:   On the first number line, label .\n                                                            8\n    S:   (Label.)\n                                                                               5\n    T:   On the second number line, label 2 copies of                            .\n                                                                               10\n    S:   (Label.)\n    T:   Whispering to your partner, say a sentence comparing the fractions using the words greater than,\n         less than, or equal to.\n                                                   8            10\n    S:   Wait, they’re the same!                     is equal to .\n                                                   8            10\n    T:   How do you know?\n    S:   Because they have the same point on the number line. That means they’re equivalent.\n    T:   Now, write the comparison as a number sentence with the correct symbol between the fractions.\n                8     10\n    S:   (Write =       .)\n                8     10\n\nDo other examples with the number line. In subsequent examples that use smaller units or units that are\nfarther apart, move to using a single number line.\n\n\n                             Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a          342\n                                                        model to reason about their size.\n\n                             ©2015 Great Minds. eureka-math.org\n                             G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                    Lesson 29 3 5",
+    "fluencyPracticeText": " Multiply by 8 3.OA.4                                                                   (8 minutes)\n Compare Fractions with the Same Numerator 3.NF.3d                                      (4 minutes)\n\nMultiply by 8 (8 minutes)\nMaterials: (S) Multiply by 8 (5─9) Pattern Sheet\n\nNote: This Pattern Sheet supports fluency with multiplication using units of 8.\n\n    T:   Skip-count by eights. (Write multiples horizontally as students count.)\n    S:   8, 16, 24, 32, 40, 48, 56, 64, 72, 80.\n    T:   (Write 5 × 8 = ____.) Let’s skip-count by eights to find the answer. (Count with fingers to 5 as\n         students count.)\n    S:   8, 16, 24, 32, 40.\n    T:   (Circle 40, and write 5 × 8 = 40 above it. Write 3 × 8 = ____.) Let’s skip-count up by eights again.\n         (Count with fingers to 3 as students count.)\n    S:   8, 16, 24.\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 40. (Count down with your\n         fingers as students say numbers.)\n    S:   40, 32, 24.\n    T:   (Write 7 × 8 = ____.) Let’s skip-count up by eights. (Count with fingers to 7 as students count.)\n    S:   8, 16, 24, 32, 40, 48, 56.\n    T:   (Write 9 × 8 = ____.) Let’s skip-count up by eights. (Count with fingers to 9 as students count.)\n    S:   8, 16, 24, 32, 40, 48, 56, 64, 72.\n\n\n                         Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a          339\n                                                    model to reason about their size.\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                    Lesson 29 3 5\n\n\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 80. (Count down with your\n         fingers as students say the numbers.)\n    S:   80, 72.\n    T:   Let’s practice multiplying by 8. Be sure to work left to right across the page. (Distribute\n         Multiply by 8 Pattern Sheet.)\n\nCompare Fractions with the Same Numerator (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews the concept of pictorially comparing fractions with the same numerators\nfrom Lesson 28.\n\n    T:   (Project or draw a rectangle partitioned into 3 equal units with the first 2 units shaded.) Say the\n         fraction that is shaded.\n    S:   2 thirds.\n                2\n    T:   (Write to the left of the rectangle. Project or draw a rectangle of 6 equal, unshaded units directly\n                3\n                                                                                                 2\n         below the first rectangle. Next to the second rectangle, write 6.) How many units should I shade to\n         show 2 sixths?\n    S:   2.\n    T:   (Shade the first 2 units in the second rectangle.) On your personal white board, write the larger\n         fraction.\n                2\n    S:   (Write .)\n                3\n\nContinue with the following possible sequence: 3 tenths and 3 fourths, 5 sixths and 5 eighths, and 7 eighths\nand 7 tenths.",
+    "problemSetGuidanceText": "NOTES ON\nStudents should do their personal best to complete the Problem\nSet within the allotted 10 minutes. For some classes, it may be                                                MULTIPLE MEANS\nappropriate to modify the assignment by specifying which                                                       OF ACTION AND\nproblems they work on first. Some problems do not specify a                                                    EXPRESSION:\nmethod for solving. Students should solve these problems using                                        English language learners and students\nthe RDW approach used for Application Problems.                                                       working below grade level may benefit\n                                                                                                      from math (and English) fluency\n                                                                                                      practice using the Problem Set. For",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Today, we’ll only use the first rectangle. At my signal, draw and 1 shade a fraction less than 2, and label it below the rectangle. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label.) 1"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Check your partner’s work to make sure it’s less than . 2"
+      },
+      {
+        "speaker": "students",
+        "text": "(Check.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "This is how we’re going to play a game today. For the next round, we’ll see which partner is quicker but still accurate. As soon as you finish drawing, raise your personal white board. If you are quicker, then you are the winner of the round. If you are the winner of the round, you will stand up, and your partner will stay seated. If you are standing, you will then move to partner with the person on your right, who is still seated. Ready? Erase your boards. At my signal, draw and label a fraction 1 that is greater than . (Signal.) 2"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label.) The student who goes around the entire circle and arrives back at his original place faster than the other students wins the game. The winner can also be the student who has moved the furthest if it takes too long to play all the way around. Move the game at a brisk pace. Use a variety of fractions, and mix it up between greater than and less than so that students constantly need to update their drawings and feel challenged. If preferred, mix it up by calling out equal to."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw or show the images on the right.) Draw my shapes on your board. Make sure they match in size like mine."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Partition both shapes into sixths."
+      },
+      {
+        "speaker": "students",
+        "text": "(Partition.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Partition the second shape to show double the number of units in the same whole."
+      },
+      {
+        "speaker": "students",
+        "text": "(Partition.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What fractional units do we have?"
+      },
+      {
+        "speaker": "students",
+        "text": "Sixths and twelfths."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Shade in 4 units of each shape, and label the shaded fraction below each shape."
+      },
+      {
+        "speaker": "students",
+        "text": "(Shade and label.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Whispering to your partner, say a sentence comparing the fractions using the words greater than, less than, or equal to. 4 4"
+      },
+      {
+        "speaker": "students",
+        "text": "is greater than . 6 12 model to reason about their size. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 29 3 5"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, write the comparison as a number sentence with the correct symbol between the fractions. 4 4"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write > .) 6 12"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw or show the images on the right.) Draw my rectangles on your board. Make sure they match in size like mine."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Partition the first rectangle into sevenths and the second one into fifths."
+      },
+      {
+        "speaker": "students",
+        "text": "(Partition.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Shade in 3 units of each rectangle, and label the shaded fraction below each rectangle."
+      },
+      {
+        "speaker": "students",
+        "text": "(Shade and label.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Whispering to your partner, say a sentence comparing the fractions using the words greater than, less than, or equal to. 3 3"
+      },
+      {
+        "speaker": "students",
+        "text": "is less than . 7 5"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, write the comparison as a number sentence with the correct symbol between the fractions. 3 3"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write < .) 7 5 Do other examples, if necessary, using a variety of shapes and units."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw 2 number lines on your board, and label the endpoints 0 and 1."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Partition the first number line into eighths and the second one into tenths."
+      },
+      {
+        "speaker": "students",
+        "text": "(Partition.) 8"
+      },
+      {
+        "speaker": "teacher",
+        "text": "On the first number line, label . 8"
+      },
+      {
+        "speaker": "students",
+        "text": "(Label.) 5"
+      },
+      {
+        "speaker": "teacher",
+        "text": "On the second number line, label 2 copies of . 10"
+      },
+      {
+        "speaker": "students",
+        "text": "(Label.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Whispering to your partner, say a sentence comparing the fractions using the words greater than, less than, or equal to. 8 10"
+      },
+      {
+        "speaker": "students",
+        "text": "Wait, they’re the same! is equal to . 8 10"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "Because they have the same point on the number line. That means they’re equivalent."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, write the comparison as a number sentence with the correct symbol between the fractions. 8 10"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write = .) 8 10 Do other examples with the number line. In subsequent examples that use smaller units or units that are farther apart, move to using a single number line. model to reason about their size. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 29 3 5"
+      }
+    ],
+    "teacherPrompts": [
+      "Today, we’ll only use the first rectangle. At my signal, draw and 1 shade a fraction less than 2, and label it below the rectangle. (Signal.)",
+      "Check your partner’s work to make sure it’s less than . 2",
+      "This is how we’re going to play a game today. For the next round, we’ll see which partner is quicker but still accurate. As soon as you finish drawing, raise your personal white board. If you are quicker, then you are the winner of the round. If you are the winner of the round, you will stand up, and your partner will stay seated. If you are standing, you will then move to partner with the person on your right, who is still seated. Ready? Erase your boards. At my signal, draw and label a fraction 1 that is greater than . (Signal.) 2",
+      "(Draw or show the images on the right.) Draw my shapes on your board. Make sure they match in size like mine.",
+      "Partition both shapes into sixths.",
+      "Partition the second shape to show double the number of units in the same whole.",
+      "What fractional units do we have?",
+      "Shade in 4 units of each shape, and label the shaded fraction below each shape.",
+      "Whispering to your partner, say a sentence comparing the fractions using the words greater than, less than, or equal to. 4 4",
+      "Now, write the comparison as a number sentence with the correct symbol between the fractions. 4 4",
+      "(Draw or show the images on the right.) Draw my rectangles on your board. Make sure they match in size like mine.",
+      "Partition the first rectangle into sevenths and the second one into fifths.",
+      "Shade in 3 units of each rectangle, and label the shaded fraction below each rectangle.",
+      "Whispering to your partner, say a sentence comparing the fractions using the words greater than, less than, or equal to. 3 3",
+      "Now, write the comparison as a number sentence with the correct symbol between the fractions. 3 3",
+      "Draw 2 number lines on your board, and label the endpoints 0 and 1.",
+      "Partition the first number line into eighths and the second one into tenths.",
+      "On the first number line, label . 8",
+      "On the second number line, label 2 copies of . 10",
+      "Whispering to your partner, say a sentence comparing the fractions using the words greater than, less than, or equal to. 8 10",
+      "How do you know?",
+      "Now, write the comparison as a number sentence with the correct symbol between the fractions. 8 10"
+    ],
+    "debriefPrompt": "Today, we’ll only use the first rectangle. At my signal, draw and 1 shade a fraction less than 2, and label it below the rectangle. (Signal.)",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "review-source-layout",
+    "extractionWarnings": [
+      "Structured prompt numbering is nonconsecutive because the source page uses a multi-column or paired-item layout. Use problemSetText and source page images as controlling evidence."
+    ],
+    "extractedProblems": [
+      {
+        "number": 5,
+        "prompt": "Partition each number line into the units labeled on the left. Then, use the number lines to compare the fractions. halves 0 1 fourths 0 1 eighths 0 1 3 3 4 4 2 2 a. 8 4 b. 4 8 c. 4 8 model to reason about their size. Draw your own model to compare the following fractions. 3 3 2 2",
+        "equations": []
+      },
+      {
+        "number": 6,
+        "prompt": "7. 10 5 6 8",
+        "equations": []
+      },
+      {
+        "number": 8,
+        "prompt": "John ran 2 thirds of a kilometer after school. Nicholas ran 2 fifths of a kilometer after school. Who ran the shorter distance? Use the model below to support your answer. Be sure to label 1 whole as 1 kilometer.",
+        "equations": []
+      },
+      {
+        "number": 9,
+        "prompt": "Erica ate 2 ninths of a licorice stick. Robbie ate 2 fifths of an identical licorice stick. Who ate more? Use the model below to support your answer. model to reason about their size.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                           Lesson 29 Problem Set 3 5\n\n\nName                                                                                               Date\n\nLabel each shaded fraction. Use >, <, or = to compare. The first one has been done for you.\n\n\n1.                                                                         2.\n\n\n3.                                                                         4.\n\n\n5. Partition each number line into the units labeled on the left. Then, use the number lines to compare the\n   fractions.\n\n       halves\n                               0                                                                                            1\n\n       fourths\n                                0                                                                                           1\n\n       eighths\n                                0                                                                                           1\n        3         3                                                    4           4                                            2     2\n     a. 8         4\n                                                                  b. 4             8\n                                                                                                                           c. 4       8\n\n\n                        Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a            346\n                                                   model to reason about their size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                            Lesson 29 Problem Set 3 5\n\n\nDraw your own model to compare the following fractions.\n     3          3                                                                            2              2\n6.                                                                                      7.\n     10         5                                                                            6              8\n\n\n8. John ran 2 thirds of a kilometer after school. Nicholas ran 2 fifths of a kilometer after school. Who ran\n   the shorter distance? Use the model below to support your answer. Be sure to label 1 whole as 1\n   kilometer.\n\n\n9. Erica ate 2 ninths of a licorice stick. Robbie ate 2 fifths of an identical licorice stick. Who ate more?\n   Use the model below to support your answer.\n\n\n                        Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a   347\n                                                   model to reason about their size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "answerKeyProblemSetText": "1.    Answer provided\n      3 3\n2.     >\n      4 8\n      1 1\n3.     <\n      4 2\n      4 4\n4.     >\n      4 6\n\n5.    a. <\n      b. >\n      c. >\n6.    Models drawn correctly; <\n7.    Models drawn correctly; >\n8.    Nicholas; models drawn correctly\n9.    Robbie; models drawn correctly\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                              417\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                        Lesson 29 Answer Key 3 5",
+    "answerKeyText": "A STORY OF UNITS                                                                             Lesson 29 Answer Key 3 5\n\n\nLesson 29\nPattern Sheet\n             8                                            16                                 24                  32\n             40                                           48                                 56                  64\n             72                                           80                                 40                  48\n             40                                           56                                 40                  64\n             40                                           72                                 40                  80\n             48                                           40                                 48                  56\n             48                                           64                                 48                  72\n             48                                           56                                 48                  56\n             64                                           56                                 72                  56\n             64                                           48                                 64                  56\n             64                                           72                                 72                  48\n             72                                           56                                 72                  64\n             72                                           64                                 48                  72\n             56                                           72                                 48                  64\n             72                                           56                                 48                  64\n\nProblem Set\n1.    Answer provided\n      3 3\n2.     >\n      4 8\n      1 1\n3.     <\n      4 2\n      4 4\n4.     >\n      4 6\n\n5.    a. <\n      b. >\n      c. >\n6.    Models drawn correctly; <\n7.    Models drawn correctly; >\n8.    Nicholas; models drawn correctly\n9.    Robbie; models drawn correctly\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                              417\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                        Lesson 29 Answer Key 3 5\n\n\nExit Ticket\n1.    >\n2.    Number lines drawn; explanations will vary.\n\n\nHomework\n      5 5\n1.      <\n      12 6\n      6 6\n2.     >\n      6 12\n      2 2\n3.     >\n      4 9\n      1 1\n4.     >\n      2 6\n\n5.    a. <\n      b. <\n      c. >\n6.    Models drawn correctly; <\n7.    Models drawn correctly; >\n8.    Michello; models drawn correctly\n9.    Jahsir; models drawn correctly\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                         418\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "number-line",
+      "fraction-model",
+      "geometry-diagram",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "number-line": [
+        "T: Draw 2 number lines on your board, and label the endpoints 0 and 1.",
+        "T: Partition the first number line into eighths and the second one into tenths.",
+        "T: On the first number line, label .",
+        "T: On the second number line, label 2 copies of .",
+        "S: Because they have the same point on the number line. That means they’re equivalent.",
+        "Do other examples with the number line. In subsequent examples that use smaller units or units that are",
+        "farther apart, move to using a single number line.",
+        "5. Partition each number line into the units labeled on the left. Then, use the number lines to compare the"
+      ],
+      "fraction-model": [
+        "T: Partition both shapes into sixths.",
+        "S: Sixths and twelfths.",
+        "T: Partition the first number line into eighths and the second one into tenths.",
+        "S: 2 thirds.",
+        "show 2 sixths?",
+        "Continue with the following possible sequence: 3 tenths and 3 fourths, 5 sixths and 5 eighths, and 7 eighths",
+        "halves",
+        "fourths"
+      ],
+      "geometry-diagram": [
+        "T: Today, we’ll only use the first rectangle. At my signal, draw and",
+        "shade a fraction less than 2, and label it below the rectangle.",
+        "rectangles on your board. Make sure they match in",
+        "T: Partition the first rectangle into sevenths and the second one into fifths.",
+        "T: Shade in 3 units of each rectangle, and label the shaded fraction below each rectangle.",
+        "T: (Project or draw a rectangle partitioned into 3 equal units with the first 2 units shaded.) Say the",
+        "T: (Write to the left of the rectangle. Project or draw a rectangle of 6 equal, unshaded units directly",
+        "below the first rectangle. Next to the second rectangle, write 6.) How many units should I shade to"
+      ],
+      "picture-or-drawing": [
+        "T: Today, we’ll only use the first rectangle. At my signal, draw and",
+        "shade a fraction less than 2, and label it below the rectangle.",
+        "S: (Draw and label.)",
+        "but still accurate. As soon as you finish drawing, raise your personal white board. If you are quicker,",
+        "your right, who is still seated. Ready? Erase your boards. At my signal, draw and label a fraction",
+        "S: (Draw and label.)",
+        "greater than and less than so that students constantly need to update their drawings and feel challenged. If",
+        "T: (Draw or show the images on the right.) Draw my shapes on"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Today, we’ll only use the first rectangle. At my signal, draw and 1 shade a fraction less than 2, and label it below the rectangle. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label.) 1"
+      },
+      {
+        "speaker": "teacher",
+        "text": "This is how we’re going to play a game today. For the next round, we’ll see which partner is quicker but still accurate. As soon as you finish drawing, raise your personal white board. If you are quicker, then you are the winner of the round. If you are the winner of the round, you will stand up, and your partner will stay seated. If you are standing, you will then move to partner with the person on your right, who is still seated. Ready? Erase your boards. At my signal, draw and label a fraction 1 that is greater than . (Signal.) 2"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label.) The student who goes around the entire circle and arrives back at his original place faster than the other students wins the game. The winner can also be the student who has moved the furthest if it takes too long to play all the way around. Move the game at a brisk pace. Use a variety of fractions, and mix it up between greater than and less than so that students constantly need to update their drawings and feel challenged. If preferred, mix it up by calling out equal to."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw or show the images on the right.) Draw my shapes on your board. Make sure they match in size like mine."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Partition the second shape to show double the number of units in the same whole."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Shade in 4 units of each shape, and label the shaded fraction below each shape."
+      },
+      {
+        "speaker": "students",
+        "text": "(Shade and label.)"
+      },
+      {
+        "speaker": "students",
+        "text": "is greater than . 6 12 model to reason about their size. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 29 3 5"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, write the comparison as a number sentence with the correct symbol between the fractions. 4 4"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write > .) 6 12"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw or show the images on the right.) Draw my rectangles on your board. Make sure they match in size like mine."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Shade in 3 units of each rectangle, and label the shaded fraction below each rectangle."
+      },
+      {
+        "speaker": "students",
+        "text": "(Shade and label.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, write the comparison as a number sentence with the correct symbol between the fractions. 3 3"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write < .) 7 5 Do other examples, if necessary, using a variety of shapes and units."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw 2 number lines on your board, and label the endpoints 0 and 1."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "On the first number line, label . 8"
+      },
+      {
+        "speaker": "students",
+        "text": "(Label.) 5"
+      },
+      {
+        "speaker": "teacher",
+        "text": "On the second number line, label 2 copies of . 10"
+      },
+      {
+        "speaker": "students",
+        "text": "(Label.)"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 340 (debrief) ---\nA STORY OF UNITS                                                                                                     Lesson 29 3 5\n\n\nLesson 29\nObjective: Compare fractions with the same numerator using <, >, or =,\nand use a model to reason about their size.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (12 minutes)\n Application Problem               (8 minutes)\n Concept Development               (30 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (12 minutes)\n\n Multiply by 8 3.OA.4                                                                   (8 minutes)\n Compare Fractions with the Same Numerator 3.NF.3d                                      (4 minutes)\n\nMultiply by 8 (8 minutes)\nMaterials: (S) Multiply by 8 (5─9) Pattern Sheet\n\nNote: This Pattern Sheet supports fluency with multiplication using units of 8.\n\n    T:   Skip-count by eights. (Write multiples horizontally as students count.)\n    S:   8, 16, 24, 32, 40, 48, 56, 64, 72, 80.\n    T:   (Write 5 × 8 = ____.) Let’s skip-count by eights to find the answer. (Count with fingers to 5 as\n         students count.)\n    S:   8, 16, 24, 32, 40.\n    T:   (Circle 40, and write 5 × 8 = 40 above it. Write 3 × 8 = ____.) Let’s skip-count up by eights again.\n         (Count with fingers to 3 as students count.)\n    S:   8, 16, 24.\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 40. (Count down with your\n         fingers as students say numbers.)\n    S:   40, 32, 24.\n    T:   (Write 7 × 8 = ____.) Let’s skip-count up by eights. (Count with fingers to 7 as students count.)\n    S:   8, 16, 24, 32, 40, 48, 56.\n    T:   (Write 9 × 8 = ____.) Let’s skip-count up by eights. (Count with fingers to 9 as students count.)\n    S:   8, 16, 24, 32, 40, 48, 56, 64, 72.\n\n\n                         Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a          339\n                                                    model to reason about their size.\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 341 (application-problem) ---\nA STORY OF UNITS                                                                                                    Lesson 29 3 5\n\n\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 80. (Count down with your\n         fingers as students say the numbers.)\n    S:   80, 72.\n    T:   Let’s practice multiplying by 8. Be sure to work left to right across the page. (Distribute\n         Multiply by 8 Pattern Sheet.)\n\nCompare Fractions with the Same Numerator (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews the concept of pictorially comparing fractions with the same numerators\nfrom Lesson 28.\n\n    T:   (Project or draw a rectangle partitioned into 3 equal units with the first 2 units shaded.) Say the\n         fraction that is shaded.\n    S:   2 thirds.\n                2\n    T:   (Write to the left of the rectangle. Project or draw a rectangle of 6 equal, unshaded units directly\n                3\n                                                                                                 2\n         below the first rectangle. Next to the second rectangle, write 6.) How many units should I shade to\n         show 2 sixths?\n    S:   2.\n    T:   (Shade the first 2 units in the second rectangle.) On your personal white board, write the larger\n         fraction.\n                2\n    S:   (Write .)\n                3\n\nContinue with the following possible sequence: 3 tenths and 3 fourths, 5 sixths and 5 eighths, and 7 eighths\nand 7 tenths.\n\n\nApplication Problem (8 minutes)\n                                                                                                               NOTES ON\nCatherine and Diana buy matching scrapbooks. Catherine                                                         MULTIPLE MEANS\n          5                                        5\ndecorates of the pages in her book. Diana decorates of the                                                     OF ENGAGEMENT:\n          9                                        6\npages in her book. Who has decorated more pages of her                                                Challenge students working above\nscrapbook? Draw a picture to support your answer.                                                     grade level to model the comparison\n                                                                                                      on a number line (or two). Have\n                                                                                                      students evaluate and compare the\n                                                                                                      models. Ask (for example), “How might\n                                                                                                      you decide when to use a rectangular\n                                                                                                      model rather than a number line to\n                                                                                                      solve?”\n\n\nNote: This problem reviews the concept of pictorially comparing fractions with the same numerators from\nLesson 28.\n\n\n                        Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a                  340\n                                                   model to reason about their size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 342 (concept-development) ---\nA STORY OF UNITS                                                                                                    Lesson 29 3 5\n\n\nConcept Development (30 minutes)\nMaterials: (S) Personal white board, 3 wholes (Lesson 25 Template 1)\n\nSeat students in pairs facing each other in a large circle around the room. 3 wholes should be in their\npersonal white boards.                                                           3 wholes (Lesson 25 Template 1)\n    T:   Today, we’ll only use the first rectangle. At my signal, draw and\n                                    1\n         shade a fraction less than 2, and label it below the rectangle.\n         (Signal.)\n    S:   (Draw and label.)\n                                                                                      1\n    T:   Check your partner’s work to make sure it’s less than .\n                                                                                      2\n    S:   (Check.)\n    T:   This is how we’re going to play a game today. For the next round, we’ll see which partner is quicker\n         but still accurate. As soon as you finish drawing, raise your personal white board. If you are quicker,\n         then you are the winner of the round. If you are the winner of the round, you will stand up, and\n         your partner will stay seated. If you are standing, you will then move to partner with the person on\n         your right, who is still seated. Ready? Erase your boards. At my signal, draw and label a fraction\n                              1\n         that is greater than . (Signal.)\n                                   2\n    S:   (Draw and label.)\nThe student who goes around the entire circle and arrives back at his original place faster than the other\nstudents wins the game. The winner can also be the student who has moved the furthest if it takes too long\nto play all the way around. Move the game at a brisk pace. Use a variety of fractions, and mix it up between\ngreater than and less than so that students constantly need to update their drawings and feel challenged. If\npreferred, mix it up by calling out equal to.\n    T:   (Draw or show the images on the right.) Draw my shapes on\n         your board. Make sure they match in size like mine.\n    S:   (Draw.)\n    T:   Partition both shapes into sixths.\n    S:   (Partition.)\n    T:   Partition the second shape to show double the number of units in the same whole.\n    S:   (Partition.)\n    T:   What fractional units do we have?\n    S:   Sixths and twelfths.\n    T:   Shade in 4 units of each shape, and label the shaded fraction below each shape.\n    S:   (Shade and label.)\n    T:   Whispering to your partner, say a sentence comparing the fractions using the words greater than,\n         less than, or equal to.\n         4                4\n    S:     is greater than .\n         6                12\n\n\n                        Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a          341\n                                                   model to reason about their size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 343 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                         Lesson 29 3 5\n\n\n    T:   Now, write the comparison as a number sentence with the correct symbol between the fractions.\n                4     4\n    S:   (Write >       .)\n                6     12\n    T:   (Draw or show the images on the right.) Draw my\n         rectangles on your board. Make sure they match in\n         size like mine.\n    S:   (Draw.)\n    T:   Partition the first rectangle into sevenths and the second one into fifths.\n    S:   (Partition.)\n    T:   Shade in 3 units of each rectangle, and label the shaded fraction below each rectangle.\n    S:   (Shade and label.)\n    T:   Whispering to your partner, say a sentence comparing the fractions using the words greater than,\n         less than, or equal to.\n         3             3\n    S:     is less than .\n         7             5\n    T:   Now, write the comparison as a number sentence with the correct symbol between the fractions.\n                3     3\n    S:   (Write < .)\n                7     5\n\nDo other examples, if necessary, using a variety of shapes and units.\n    T:   Draw 2 number lines on your board, and label the endpoints 0 and 1.\n\n\n    S:   (Draw and label.)\n    T:   Partition the first number line into eighths and the second one into tenths.\n    S:   (Partition.)\n                                                            8\n    T:   On the first number line, label .\n                                                            8\n    S:   (Label.)\n                                                                               5\n    T:   On the second number line, label 2 copies of                            .\n                                                                               10\n    S:   (Label.)\n    T:   Whispering to your partner, say a sentence comparing the fractions using the words greater than,\n         less than, or equal to.\n                                                   8            10\n    S:   Wait, they’re the same!                     is equal to .\n                                                   8            10\n    T:   How do you know?\n    S:   Because they have the same point on the number line. That means they’re equivalent.\n    T:   Now, write the comparison as a number sentence with the correct symbol between the fractions.\n                8     10\n    S:   (Write =       .)\n                8     10\n\nDo other examples with the number line. In subsequent examples that use smaller units or units that are\nfarther apart, move to using a single number line.\n\n\n                             Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a          342\n                                                        model to reason about their size.\n\n                             ©2015 Great Minds. eureka-math.org\n                             G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 344 (debrief) ---\nA STORY OF UNITS                                                                                                    Lesson 29 3 5\n\n\nProblem Set (10 minutes)\n                                                                                                               NOTES ON\nStudents should do their personal best to complete the Problem\nSet within the allotted 10 minutes. For some classes, it may be                                                MULTIPLE MEANS\nappropriate to modify the assignment by specifying which                                                       OF ACTION AND\nproblems they work on first. Some problems do not specify a                                                    EXPRESSION:\nmethod for solving. Students should solve these problems using                                        English language learners and students\nthe RDW approach used for Application Problems.                                                       working below grade level may benefit\n                                                                                                      from math (and English) fluency\n                                                                                                      practice using the Problem Set. For\nStudent Debrief (10 minutes)                                                                          Problems 1 through 4, encourage\n                                                                                                      learners to whisper the unit fraction,\n                                                                                                      whisper count the shaded units (e.g., 1\nLesson Objective: Compare fractions with the same numerator                                           sixth, 2 sixths), and whisper the shaded\nusing <, >, or =, and use a model to reason about their size.                                         fraction as they write.\nThe Student Debrief is intended to invite reflection and active\nprocessing of the total lesson experience.\nInvite students to review their solutions for the Problem Set. They should check work by comparing answers\nwith a partner before going over answers as a class. Look for misconceptions or misunderstandings that can\nbe addressed in the Student Debrief. Guide students in a conversation to debrief the Problem Set and\nprocess the lesson.\nAny combination of the questions below may be used to lead the discussion.\n        Look at the models in Problems 1─4. When\n         comparing fractions, why is it so important that\n         the wholes are the same size?\n        Tell a partner how you used the models in\n         Problems 1─4 to determine greater than, less\n         than, or equal to.\n        What if you didn’t have the models for these\n         problems? How could you compare the\n         fractions? (Write pairs of fractions with the same\n         numerators on the board, and have students\n         compare them without using a model.)\n        To extend the lesson, draw fraction models\n         greater than 1, and guide students to compare.\n                            12    12\n         For example, use and .\n                               9              7\n\n\n                        Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a                     343\n                                                   model to reason about their size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 345 (debrief) ---\nA STORY OF UNITS                                                                                                   Lesson 29 3 5\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                       Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a          344\n                                                  model to reason about their size.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 346 (template) ---\nA STORY OF UNITS                                                                         Lesson 29 Pattern Sheet 3 5\n\n      Multiply.\n\n\nmultiply by 8 (5–9)\n\n\n                      Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a   345\n                                                 model to reason about their size.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 347 (problem-set) ---\nA STORY OF UNITS                                                                           Lesson 29 Problem Set 3 5\n\n\nName                                                                                               Date\n\nLabel each shaded fraction. Use >, <, or = to compare. The first one has been done for you.\n\n\n1.                                                                         2.\n\n\n3.                                                                         4.\n\n\n5. Partition each number line into the units labeled on the left. Then, use the number lines to compare the\n   fractions.\n\n       halves\n                               0                                                                                            1\n\n       fourths\n                                0                                                                                           1\n\n       eighths\n                                0                                                                                           1\n        3         3                                                    4           4                                            2     2\n     a. 8         4\n                                                                  b. 4             8\n                                                                                                                           c. 4       8\n\n\n                        Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a            346\n                                                   model to reason about their size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 348 (problem-set) ---\nA STORY OF UNITS                                                                            Lesson 29 Problem Set 3 5\n\n\nDraw your own model to compare the following fractions.\n     3          3                                                                            2              2\n6.                                                                                      7.\n     10         5                                                                            6              8\n\n\n8. John ran 2 thirds of a kilometer after school. Nicholas ran 2 fifths of a kilometer after school. Who ran\n   the shorter distance? Use the model below to support your answer. Be sure to label 1 whole as 1\n   kilometer.\n\n\n9. Erica ate 2 ninths of a licorice stick. Robbie ate 2 fifths of an identical licorice stick. Who ate more?\n   Use the model below to support your answer.\n\n\n                        Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a   347\n                                                   model to reason about their size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 349 (exit-ticket) ---\nA STORY OF UNITS                                                                               Lesson 29 Exit Ticket 3 5\n\n\nName                                                                                             Date\n\n1. Complete the number sentence by writing >, <, or =.\n               3           3\n                 _________\n               5           9\n\n\n2. Draw 2 number lines with endpoints 0 and 1 to show each fraction in Problem 1. Use the number lines to\n   explain how you know your comparison in Problem 1 is correct.\n\n\n                      Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a   348\n                                                 model to reason about their size.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 350 (homework) ---\nA STORY OF UNITS                                                                              Lesson 29 Homework 3 5\n\n\nName                                                                                                Date\n\nLabel each shaded fraction. Use >, <, or = to compare.\n\n\n1.                                                                            2.\n\n\n3.                                                                            4.\n\n\n5.    Partition each number line into the units labeled on the left. Then, use the number lines to compare the\n      fractions.\n\n      thirds\n                              0                                                                                                    1\n\n      sixths\n                               0                                                                                                   1\n\n      ninths\n                              0                                                                                                    1\n\n       2        2                                                       5           5                                         3        3\n     a. 6       3\n                                                                   b. 9             6\n                                                                                                                            c. 3       9\n\n\n                         Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a                  349\n                                                    model to reason about their size.\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 351 (homework) ---\nA STORY OF UNITS                                                                              Lesson 29 Homework 3 5\n\n\nDraw your own models to compare the following fractions.\n      7           7                                                                4              4\n6.                                                                            7.\n     10           8                                                                6              9\n\n\n                                                        3                                   3\n8.   For an art project, Michello used of a glue stick. Yamin used of an identical glue stick. Who used\n                                      4                           6\n     more of the glue stick? Use the model below to support your answer. Be sure to label 1 whole as 1 glue\n     stick.\n\n\n9.   After gym class, Jahsir drank 2 eighths of a bottle of water. Jade drank 2 fifths of an identical bottle of\n     water. Who drank less water? Use the model below to support your answer.\n\n\n                         Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a   350\n                                                    model to reason about their size.\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 347,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                           Lesson 29 Problem Set 3 5\n\n\nName                                                                                               Date\n\nLabel each shaded fraction. Use >, <, or = to compare. The first one has been done for you.\n\n\n1.                                                                         2.\n\n\n3.                                                                         4.\n\n\n5. Partition each number line into the units labeled on the left. Then, use the number lines to compare the\n   fractions.\n\n       halves\n                               0                                                                                            1\n\n       fourths\n                                0                                                                                           1\n\n       eighths\n                                0                                                                                           1\n        3         3                                                    4           4                                            2     2\n     a. 8         4\n                                                                  b. 4             8\n                                                                                                                           c. 4       8\n\n\n                        Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a            346\n                                                   model to reason about their size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      },
+      {
+        "pdfPage": 348,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                            Lesson 29 Problem Set 3 5\n\n\nDraw your own model to compare the following fractions.\n     3          3                                                                            2              2\n6.                                                                                      7.\n     10         5                                                                            6              8\n\n\n8. John ran 2 thirds of a kilometer after school. Nicholas ran 2 fifths of a kilometer after school. Who ran\n   the shorter distance? Use the model below to support your answer. Be sure to label 1 whole as 1\n   kilometer.\n\n\n9. Erica ate 2 ninths of a licorice stick. Robbie ate 2 fifths of an identical licorice stick. Who ate more?\n   Use the model below to support your answer.\n\n\n                        Lesson 29:                 Compare fractions with the same numerator using <, >, or =, and use a   347\n                                                   model to reason about their size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 418,
+        "text": "A STORY OF UNITS                                                                             Lesson 29 Answer Key 3 5\n\n\nLesson 29\nPattern Sheet\n             8                                            16                                 24                  32\n             40                                           48                                 56                  64\n             72                                           80                                 40                  48\n             40                                           56                                 40                  64\n             40                                           72                                 40                  80\n             48                                           40                                 48                  56\n             48                                           64                                 48                  72\n             48                                           56                                 48                  56\n             64                                           56                                 72                  56\n             64                                           48                                 64                  56\n             64                                           72                                 72                  48\n             72                                           56                                 72                  64\n             72                                           64                                 48                  72\n             56                                           72                                 48                  64\n             72                                           56                                 48                  64\n\nProblem Set\n1.    Answer provided\n      3 3\n2.     >\n      4 8\n      1 1\n3.     <\n      4 2\n      4 4\n4.     >\n      4 6\n\n5.    a. <\n      b. >\n      c. >\n6.    Models drawn correctly; <\n7.    Models drawn correctly; >\n8.    Nicholas; models drawn correctly\n9.    Robbie; models drawn correctly\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                              417\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      },
+      {
+        "pdfPage": 419,
+        "text": "A STORY OF UNITS                                                                        Lesson 29 Answer Key 3 5\n\n\nExit Ticket\n1.    >\n2.    Number lines drawn; explanations will vary.\n\n\nHomework\n      5 5\n1.      <\n      12 6\n      6 6\n2.     >\n      6 12\n      2 2\n3.     >\n      4 9\n      1 1\n4.     >\n      2 6\n\n5.    a. <\n      b. <\n      c. >\n6.    Models drawn correctly; <\n7.    Models drawn correctly; >\n8.    Michello; models drawn correctly\n9.    Jahsir; models drawn correctly\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                         418\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      }
+    ]
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m5-l8",
+  "moduleId": "m5",
+  "lessonNumber": 8,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+    "teacherEditionBytes": 17797697,
+    "lessonPdfPages": {
+      "start": 86,
+      "end": 97
+    },
+    "problemSetPdfPages": [
+      93,
+      94
+    ],
+    "exitTicketPdfPages": [
+      95
+    ],
+    "homeworkPdfPages": [
+      96,
+      97
+    ],
+    "answerKeyPdfPages": [
+      379,
+      380,
+      381
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m5-student/workbook-page-029.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m5-teacher/page-379.png",
+      "/source-pages/m5-teacher/page-380.png",
+      "/source-pages/m5-teacher/page-381.png"
+    ]
+  },
+  "objective": "Represent parts of one whole as fractions with number bonds.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "Materials: (S) Personal white board, Sprint B from the Fluency\n           Practice\n                                                                                                             NOTES ON\nProblem 1: Decompose 4 into ones.                                                                            MULTIPLE MEANS\n                                                                                                             OF REPRESENTATION:\n    T:   On your personal white board, draw a number bond\n                                                                                                    Emphasize key concepts and clarify\n         decomposing 4 into 4 ones.\n                                                                                                    unfamiliar words with gestures when\n    S:   (Draw a number bond.)                                                                      speaking with English language\n    T:   Now, work with your partner to show a number bond                                          learners. For example, illustrate the\n         decomposing 4 into 2 parts. One part should be                                             word decompose by showing hands\n         composed of 3 ones.                                                                        held together. Then, indicate breaking\n                                                                                                    apart, separation, splitting, or\n    S:   (Work with a partner to draw the number bond.)                                             partitioning by using a downward\n    T:   It took 3 copies of one to make 3. What are the two                                        motion to open the hands. Doing this\n         parts of your number bond? Please specify the unit.                                        can also help English speakers.\n    S:   3 ones and 1 one.\n    T:   Talk to your partner about the difference between\n         these two number bonds.\n    S:   The first bond has the ones all separated.  The\n         second bond has 3 instead of 3 ones.  Both bonds\n         are different ways of showing the same number—4.\n          You could also show 4 as one part 2 and one part 2.\n          The first bond has more parts than the second one.\n\n\n                       Lesson 8:                  Represent parts of one whole as fractions with number bonds.                               86\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                 Lesson 8 3\n\n\n Problem 2: Decompose 1 into fourths.\n       T:   Draw a number bond decomposing 1 into 4 unit fractions.\n       S:   (Draw a number bond.)\n       T:   Now, work with your partner to show a number bond\n            decomposing 1 into 2 parts. One part should be\nMP.7        composed of 3 copies of the unit fraction.\n       S:   (Work with a partner to draw the number bond.)\n       T:   What unit fraction did we copy to make the number\n            3 fourths?\n       S:   1 fourth.\n       T:   What are the two parts of your number bond? Please specify the unit.\n       S:   3 fourths and 1 fourth.\n       T:   (Encourage students to compare the two number bonds just as they did with the number bond of 4.)\n       T:   Look at your Sprint B. Discuss with your partner which of the figures on Sprint B match your number\n            bond.\n       S:   Numbers 3, 6, 9, 11, and 18–25 on Sprint B match my number bond.\n\n Problem 3: Decompose 1 into fifths (2 non-unit fractions).\n       T:   Draw a number bond decomposing 1 into 5 unit fractions.\n       S:   (Draw a number bond.)\n       T:   Now, work with your partner to show a number bond\n            decomposing 1 into 2 parts. One part should be composed of\n            2 copies of the unit fraction.\n       S:   (Work with a partner to draw the number bond.)\n       T:   What unit fraction did we copy to make the number                                                   NOTES ON\n            2 fifths?                                                                                           MULTIPLE MEANS\n       S:   1 fifth.                                                                                            OF ACTION AND\n       T:   What are the two parts of your number bond? Please                                                  EXPRESSION:\n            specify the unit.                                                                          When supporting a small group, go\n       S:   2 fifths and 3 fifths.                                                                     step-by-step. Avoid talking and doing\n                                                                                                       at the same time. Draw a number\n       T:   Look at your Sprint B. Discuss with your partner which\n                                                                                                       bond in silence. Turn and face the\n            of these figures match your number bond.                                                   group, and ask them to explain to a\n       S:   Numbers 30–33 on Sprint B match my number bond.                                            partner what they just saw. Then,\n       T:   Yes, 3 fifths can represent either the shaded or un-                                       perform the next action silently. Ask\n            shaded part.                                                                               them to explain the action again.\n                                                                                                       Doing this gives them the opportunity\n After doing these three problems, having students use the same                                        to analyze and reconstruct these\n process to model Questions 1, 12, 28, 39, and 44 from Sprint B                                        actions so that they internalize a\n could be helpful. Ask them to find other models on the Sprint                                         process they can use.\n that are represented by the same bond.\n\n\n                          Lesson 8:                  Represent parts of one whole as fractions with number bonds.                              87\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                               Lesson 8 3",
+    "fluencyPracticeText": " Unit and Non-Unit Fractions of 1 Whole 3.NF.1                              (2 minutes)\n Sprint: Identify Fractions 3.G.2, 3.NF.2                                   (10 minutes)\n\nUnit and Non-Unit Fractions of 1 Whole (2 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews naming the shaded and unshaded equal parts of a whole.\n    T:   (Draw a shape partitioned in halves with 1 half shaded.) Write the fraction that is shaded.\n                1\n    S:   (Write .)\n                2\n    T:   Write the fraction that is not shaded.\n                1\n    S:   (Write .)\n                2\n                                                                                                              2    1 4   1 9   1\nContinue with the following possible sequence of shaded and non-shaded parts:                                   and , and , and ,\n                                                                                                              3    3 5   5 10  10\n    7     1\nand and .\n    8     8\n\n\nSprint: Identify Fractions (10 minutes)\nMaterials: (S) Identify Fractions Sprint\n\nNote: This Sprint supports fluency with identifying shaded parts of shapes. Have students keep Sprint B to\nuse in the",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment\nby specifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "On your personal white board, draw a number bond Emphasize key concepts and clarify decomposing 4 into 4 ones. unfamiliar words with gestures when"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a number bond.) speaking with English language"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, work with your partner to show a number bond learners. For example, illustrate the decomposing 4 into 2 parts. One part should be word decompose by showing hands composed of 3 ones. held together. Then, indicate breaking apart, separation, splitting, or"
+      },
+      {
+        "speaker": "students",
+        "text": "(Work with a partner to draw the number bond.) partitioning by using a downward"
+      },
+      {
+        "speaker": "teacher",
+        "text": "It took 3 copies of one to make 3. What are the two motion to open the hands. Doing this parts of your number bond? Please specify the unit. can also help English speakers."
+      },
+      {
+        "speaker": "students",
+        "text": "3 ones and 1 one."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner about the difference between these two number bonds."
+      },
+      {
+        "speaker": "students",
+        "text": "The first bond has the ones all separated.  The second bond has 3 instead of 3 ones.  Both bonds are different ways of showing the same number—4.  You could also show 4 as one part 2 and one part 2.  The first bond has more parts than the second one. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 8 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a number bond decomposing 1 into 4 unit fractions."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a number bond.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, work with your partner to show a number bond decomposing 1 into 2 parts. One part should be MP.7 composed of 3 copies of the unit fraction."
+      },
+      {
+        "speaker": "students",
+        "text": "(Work with a partner to draw the number bond.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What unit fraction did we copy to make the number 3 fourths?"
+      },
+      {
+        "speaker": "students",
+        "text": "1 fourth."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What are the two parts of your number bond? Please specify the unit."
+      },
+      {
+        "speaker": "students",
+        "text": "3 fourths and 1 fourth."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Encourage students to compare the two number bonds just as they did with the number bond of 4.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look at your Sprint B. Discuss with your partner which of the figures on Sprint B match your number bond."
+      },
+      {
+        "speaker": "students",
+        "text": "Numbers 3, 6, 9, 11, and 18–25 on Sprint B match my number bond."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a number bond decomposing 1 into 5 unit fractions."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a number bond.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, work with your partner to show a number bond decomposing 1 into 2 parts. One part should be composed of 2 copies of the unit fraction."
+      },
+      {
+        "speaker": "students",
+        "text": "(Work with a partner to draw the number bond.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What unit fraction did we copy to make the number NOTES ON 2 fifths? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "1 fifth. OF ACTION AND"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What are the two parts of your number bond? Please EXPRESSION: specify the unit. When supporting a small group, go"
+      },
+      {
+        "speaker": "students",
+        "text": "2 fifths and 3 fifths. step-by-step. Avoid talking and doing at the same time. Draw a number"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look at your Sprint B. Discuss with your partner which bond in silence. Turn and face the of these figures match your number bond. group, and ask them to explain to a"
+      },
+      {
+        "speaker": "students",
+        "text": "Numbers 30–33 on Sprint B match my number bond. partner what they just saw. Then,"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, 3 fifths can represent either the shaded or un- perform the next action silently. Ask shaded part. them to explain the action again. Doing this gives them the opportunity After doing these three problems, having students use the same to analyze and reconstruct these process to model Questions 1, 12, 28, 39, and 44 from Sprint B actions so that they internalize a could be helpful. Ask them to find other models on the Sprint process they can use. that are represented by the same bond. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 8 3"
+      }
+    ],
+    "teacherPrompts": [
+      "On your personal white board, draw a number bond Emphasize key concepts and clarify decomposing 4 into 4 ones. unfamiliar words with gestures when",
+      "Now, work with your partner to show a number bond learners. For example, illustrate the decomposing 4 into 2 parts. One part should be word decompose by showing hands composed of 3 ones. held together. Then, indicate breaking apart, separation, splitting, or",
+      "It took 3 copies of one to make 3. What are the two motion to open the hands. Doing this parts of your number bond? Please specify the unit. can also help English speakers.",
+      "Talk to your partner about the difference between these two number bonds.",
+      "Draw a number bond decomposing 1 into 4 unit fractions.",
+      "Now, work with your partner to show a number bond decomposing 1 into 2 parts. One part should be MP.7 composed of 3 copies of the unit fraction.",
+      "What unit fraction did we copy to make the number 3 fourths?",
+      "What are the two parts of your number bond? Please specify the unit.",
+      "(Encourage students to compare the two number bonds just as they did with the number bond of 4.)",
+      "Look at your Sprint B. Discuss with your partner which of the figures on Sprint B match your number bond.",
+      "Draw a number bond decomposing 1 into 5 unit fractions.",
+      "Now, work with your partner to show a number bond decomposing 1 into 2 parts. One part should be composed of 2 copies of the unit fraction.",
+      "What unit fraction did we copy to make the number NOTES ON 2 fifths? MULTIPLE MEANS",
+      "What are the two parts of your number bond? Please EXPRESSION: specify the unit. When supporting a small group, go",
+      "Look at your Sprint B. Discuss with your partner which bond in silence. Turn and face the of these figures match your number bond. group, and ask them to explain to a",
+      "Yes, 3 fifths can represent either the shaded or un- perform the next action silently. Ask shaded part. them to explain the action again. Doing this gives them the opportunity After doing these three problems, having students use the same to analyze and reconstruct these process to model Questions 1, 12, 28, 39, and 44 from Sprint B actions so that they internalize a could be helpful. Ask them to find other models on the Sprint process they can use. that are represented by the same bond. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 8 3"
+    ],
+    "debriefPrompt": "Share different representations for Problem 6 about the hamburger. Guide students to see that the chef’s refrigerated meat can be made into 3 1 more burgers and that each of those burgers is 4 of the meat",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "review-source-layout",
+    "extractionWarnings": [
+      "Structured prompt numbering is nonconsecutive because the source page uses a multi-column or paired-item layout. Use problemSetText and source page images as controlling evidence."
+    ],
+    "extractedProblems": [
+      {
+        "number": 5,
+        "prompt": "Draw a number bond with 2 parts showing the shaded and unshaded fractions of each figure. Decompose both parts of the number bond into unit fractions. a. b. c. d.",
+        "equations": []
+      },
+      {
+        "number": 6,
+        "prompt": "The chef put of the ground beef on the grill to make one hamburger and put the rest in the refrigerator. Draw a 2-part number bond showing the fraction of the ground beef on the grill and the fraction in the refrigerator. Draw a visual model of all the ground beef. Shade what is in the refrigerator. a. What fraction of the ground beef was in the refrigerator? b. How many more hamburgers can the chef make if he makes them all the same size as the first one? c. Show the refrigerated ground beef broken into unit fractions on your number bond above.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                             Lesson 8 Problem Set 3\n\n\nName                                                                                              Date\n\nShow a number bond representing what is shaded and unshaded in each of the figures. Draw a different\nvisual model that would be represented by the same number bond.\n\nSample:\n\n\n1.\n\n\n2.\n\n\n3.\n\n\n4.\n\n\n                        Lesson 8:                  Represent parts of one whole as fractions with number bonds.            92\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                              Lesson 8 Problem Set 3\n\n\n5. Draw a number bond with 2 parts showing the shaded and unshaded fractions of each figure.\n   Decompose both parts of the number bond into unit fractions.\n\n   a.                             b.                                      c.                          d.\n\n\n                1\n6. The chef put of the ground beef on the grill to make one hamburger and put the rest in the refrigerator.\n                 4\n   Draw a 2-part number bond showing the fraction of the ground beef on the grill and the fraction in the\n   refrigerator. Draw a visual model of all the ground beef. Shade what is in the refrigerator.\n\n\n   a. What fraction of the ground beef was in the refrigerator?\n\n\n   b. How many more hamburgers can the chef make if he makes them all the same size as the first one?\n\n\n   c. Show the refrigerated ground beef broken into unit fractions on your number bond above.\n\n\n                       Lesson 8:                  Represent parts of one whole as fractions with number bonds.            93\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "answerKeyProblemSetText": "3          2\n1.    Number bond showing 5 and 5 equals 1 whole; second visual model drawn\n                                         3             1\n2.    Number bond showing 4 and 4 equals 1 whole; second visual model drawn\n                                         3             3\n3.    Number bond showing and equals 1 whole; second visual model drawn\n                                         6             6\n                                         2             7\n4.    Number bond showing and equals 1 whole; second visual model drawn\n                                         9             9\n                                                  3        1                    3                           1\n5.    a. Number bond showing 4 and 4 equals 1 whole; 4 decomposed showing 3 units of 4\n                                                  2        1                    2                           1\n      b. Number bond showing 3 and 3 equals 1 whole; 3 decomposed showing 2 units of 3\n                                                  2        2                                 2                            1\n      c. Number bond showing 4 and 4 equals 1 whole; both of 4 bonds decomposed showing 2 units of 4\n                                                  2        3                    2                           1 3\n      d. Number bond showing and equals 1 whole; decomposed showing 2 units of ; decomposed\n                                                  5        5                    5                           5 5\n                                        1\n           showing 3 units of 5\n           3\n6.    a.   4\n      b. 3\n                                                  1        3                    3                           1\n      c. Number bond showing 4 and 4 equals 1 whole; 4 decomposed showing 3 units of 4; second visual\n           model drawn",
+    "answerKeyText": "A STORY OF UNITS                                                                        Lesson 8 Answer Key 3 5\n\n\nLesson 8\nSprint\nSide A\n1.    1/2                              12. 1/3                                 23. 3/4              34. 4/5\n2.    1/3                              13. 1/3                                 24. 3/4              35. 4/5\n3.    1/5                              14. 1/3                                 25. 3/4              36. 1/10\n4.    1/2                              15. 2/3                                 26. 1/2              37. 2/10\n5.    1/3                              16. 2/3                                 27. 1/2              38. 3/10\n6.    1/4                              17. 2/3                                 28. 1/5              39. 8/10\n7.    1/2                              18. 1/4                                 29. 1/5              40. 5/10\n8.    1/3                              19. 1/4                                 30. 2/5              41. 7/10\n9.    1/4                              20. 1/4                                 31. 2/5              42. 6/10\n10. 1/2                                21. 1/4                                 32. 3/5              43. 5/6\n11. 1/4                                22. 3/4                                 33. 3/5              44. 1/6\n\n\nSide B\n1.    1/2                              12. 1/3                                 23. 3/4              34. 4/5\n2.    1/3                              13. 1/3                                 24. 3/4              35. 4/5\n3.    1/4                              14. 1/3                                 25. 3/4              36. 5/10\n4.    1/2                              15. 2/3                                 26. 1/2              37. 1/10\n5.    1/3                              16. 2/3                                 27. 1/2              38. 2/10\n6.    1/4                              17. 2/3                                 28. 1/5              39. 3/10\n7.    1/2                              18. 1/4                                 29. 1/5              40. 8/10\n8.    1/3                              19. 1/4                                 30. 2/5              41. 6/10\n9.    1/4                              20. 1/4                                 31. 2/5              42. 7/10\n10. 1/2                                21. 1/4                                 32. 3/5              43. 1/6\n11. 1/4                                22. 3/4                                 33. 3/5              44. 5/6\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                        378\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                            Lesson 8 Answer Key 3 5\n\n\nProblem Set\n                                            3          2\n1.    Number bond showing 5 and 5 equals 1 whole; second visual model drawn\n                                         3             1\n2.    Number bond showing 4 and 4 equals 1 whole; second visual model drawn\n                                         3             3\n3.    Number bond showing and equals 1 whole; second visual model drawn\n                                         6             6\n                                         2             7\n4.    Number bond showing and equals 1 whole; second visual model drawn\n                                         9             9\n                                                  3        1                    3                           1\n5.    a. Number bond showing 4 and 4 equals 1 whole; 4 decomposed showing 3 units of 4\n                                                  2        1                    2                           1\n      b. Number bond showing 3 and 3 equals 1 whole; 3 decomposed showing 2 units of 3\n                                                  2        2                                 2                            1\n      c. Number bond showing 4 and 4 equals 1 whole; both of 4 bonds decomposed showing 2 units of 4\n                                                  2        3                    2                           1 3\n      d. Number bond showing and equals 1 whole; decomposed showing 2 units of ; decomposed\n                                                  5        5                    5                           5 5\n                                        1\n           showing 3 units of 5\n           3\n6.    a.   4\n      b. 3\n                                                  1        3                    3                           1\n      c. Number bond showing 4 and 4 equals 1 whole; 4 decomposed showing 3 units of 4; second visual\n           model drawn\n\n\nExit Ticket\n                                         2             3                   2                             1 3\n1.    Number bond showing and equals 1 whole; decomposed showing 2 units of ;                                decomposed\n                                         5             5                   5                             5 5\n                               1\n      showing 3 units of\n                               5\n      5\n2.      ; shape drawn and shaded to match the completed number bond\n      7\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                                379\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                        Lesson 8 Answer Key 3 5\n\n\nHomework\n                                         2             2\n1.    Number bond showing 4 and 4 equals 1 whole; second visual model drawn\n                                         5             2\n2.    Number bond showing and equals 1 whole; second visual model drawn\n                                         7             7\n                                         4             1\n3.    Number bond showing and equals 1 whole; second visual model drawn\n                                         5             5\n                                         0             8\n4.    Number bond showing 8 and 8 equals 1 whole; second visual model drawn\n                                                  2        1                    2                       1\n5.    a. Number bond showing 3 and 3 equals 1 whole; 3 decomposed showing 2 units of 3\n                                                  4        1                    4                       1\n      b. Number bond showing 5 and 5 equals 1 whole; 5 decomposed showing 4 units of 5\n                                                  3        2                    3                       1 2\n      c. Number bond showing and equals 1 whole; decomposed showing 3 units of ; decomposed\n                                                  5        5                    5                       5 5\n                                        1\n          showing 2 units of 5\n                                                                                               2   1          2\n6.    Drawing showing 3 equal parts; 2 thirds shaded; number bond showing and equals 1 whole;\n                                                                                               3   3          3\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                        380\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "number-bond",
+      "fraction-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "number-bond": [
+        "Represent parts of one whole as fractions with number bonds.",
+        "Problem 1: Decompose 4 into ones. MULTIPLE MEANS",
+        "T: On your personal white board, draw a number bond",
+        "S: (Draw a number bond.) speaking with English language",
+        "T: Now, work with your partner to show a number bond learners. For example, illustrate the",
+        "decomposing 4 into 2 parts. One part should be word decompose by showing hands",
+        "S: (Work with a partner to draw the number bond.) partitioning by using a downward",
+        "parts of your number bond? Please specify the unit. can also help English speakers."
+      ],
+      "fraction-model": [
+        "Problem 2: Decompose 1 into fourths.",
+        "T: Draw a number bond decomposing 1 into 4 unit fractions.",
+        "MP.7 composed of 3 copies of the unit fraction.",
+        "T: What unit fraction did we copy to make the number",
+        "3 fourths?",
+        "S: 3 fourths and 1 fourth.",
+        "Problem 3: Decompose 1 into fifths (2 non-unit fractions).",
+        "T: Draw a number bond decomposing 1 into 5 unit fractions."
+      ],
+      "picture-or-drawing": [
+        "T: On your personal white board, draw a number bond",
+        "S: (Draw a number bond.) speaking with English language",
+        "S: (Work with a partner to draw the number bond.) partitioning by using a downward",
+        "T: Draw a number bond decomposing 1 into 4 unit fractions.",
+        "S: (Draw a number bond.)",
+        "S: (Work with a partner to draw the number bond.)",
+        "T: Draw a number bond decomposing 1 into 5 unit fractions.",
+        "S: (Draw a number bond.)"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "On your personal white board, draw a number bond Emphasize key concepts and clarify decomposing 4 into 4 ones. unfamiliar words with gestures when"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a number bond.) speaking with English language"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, work with your partner to show a number bond learners. For example, illustrate the decomposing 4 into 2 parts. One part should be word decompose by showing hands composed of 3 ones. held together. Then, indicate breaking apart, separation, splitting, or"
+      },
+      {
+        "speaker": "students",
+        "text": "(Work with a partner to draw the number bond.) partitioning by using a downward"
+      },
+      {
+        "speaker": "students",
+        "text": "The first bond has the ones all separated.  The second bond has 3 instead of 3 ones.  Both bonds are different ways of showing the same number—4.  You could also show 4 as one part 2 and one part 2.  The first bond has more parts than the second one. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 8 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a number bond decomposing 1 into 4 unit fractions."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a number bond.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, work with your partner to show a number bond decomposing 1 into 2 parts. One part should be MP.7 composed of 3 copies of the unit fraction."
+      },
+      {
+        "speaker": "students",
+        "text": "(Work with a partner to draw the number bond.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Encourage students to compare the two number bonds just as they did with the number bond of 4.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a number bond decomposing 1 into 5 unit fractions."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a number bond.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, work with your partner to show a number bond decomposing 1 into 2 parts. One part should be composed of 2 copies of the unit fraction."
+      },
+      {
+        "speaker": "students",
+        "text": "(Work with a partner to draw the number bond.)"
+      },
+      {
+        "speaker": "students",
+        "text": "2 fifths and 3 fifths. step-by-step. Avoid talking and doing at the same time. Draw a number"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look at your Sprint B. Discuss with your partner which bond in silence. Turn and face the of these figures match your number bond. group, and ask them to explain to a"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes, 3 fifths can represent either the shaded or un- perform the next action silently. Ask shaded part. them to explain the action again. Doing this gives them the opportunity After doing these three problems, having students use the same to analyze and reconstruct these process to model Questions 1, 12, 28, 39, and 44 from Sprint B actions so that they internalize a could be helpful. Ask them to find other models on the Sprint process they can use. that are represented by the same bond. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 8 3"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 86 (debrief) ---\nA STORY OF UNITS                                                                                                Lesson 8 3\n\n\nLesson 8\nObjective: Represent parts of one whole as fractions with number bonds.\n\nSuggested Lesson Structure\n\n Fluency Practice                 (12 minutes)\n Application Problem              (10 minutes)\n Concept Development              (28 minutes)\n Student Debrief                  (10 minutes)\n   Total Time                      (60 minutes)\n\n\nFluency Practice (12 minutes)\n\n Unit and Non-Unit Fractions of 1 Whole 3.NF.1                              (2 minutes)\n Sprint: Identify Fractions 3.G.2, 3.NF.2                                   (10 minutes)\n\nUnit and Non-Unit Fractions of 1 Whole (2 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews naming the shaded and unshaded equal parts of a whole.\n    T:   (Draw a shape partitioned in halves with 1 half shaded.) Write the fraction that is shaded.\n                1\n    S:   (Write .)\n                2\n    T:   Write the fraction that is not shaded.\n                1\n    S:   (Write .)\n                2\n                                                                                                              2    1 4   1 9   1\nContinue with the following possible sequence of shaded and non-shaded parts:                                   and , and , and ,\n                                                                                                              3    3 5   5 10  10\n    7     1\nand and .\n    8     8\n\n\nSprint: Identify Fractions (10 minutes)\nMaterials: (S) Identify Fractions Sprint\n\nNote: This Sprint supports fluency with identifying shaded parts of shapes. Have students keep Sprint B to\nuse in the Concept Development.\n\n\n                        Lesson 8:                  Represent parts of one whole as fractions with number bonds.                     85\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 87 (concept-development) ---\nA STORY OF UNITS                                                                                                  Lesson 8 3\n\n\nApplication Problem (10 minutes)\n\nFor breakfast, Mr. Schwartz spent 1 sixth of his money on a coffee and 1 sixth of his money on a bagel.\nWhat fraction of his money did Mr. Schwartz spend on breakfast?\n\n\n                                                                                                             NOTES ON\n                                                                                                             MULTIPLE MEANS\n                                                                                                             OF ENGAGEMENT:\n                                                                                                    Challenge students working above\n                                                                                                    grade level with extension questions,\n                                                                                                    such as, “Did Mr. Schwartz spend more\n                                                                                                    or less than 1 half of his money? How\n                                                                                                    do you know?”\n\n\nNote: This problem reviews building and naming non-unit fractions from Lesson 6.\n\n\nConcept Development (28 minutes)\n\nMaterials: (S) Personal white board, Sprint B from the Fluency\n           Practice\n                                                                                                             NOTES ON\nProblem 1: Decompose 4 into ones.                                                                            MULTIPLE MEANS\n                                                                                                             OF REPRESENTATION:\n    T:   On your personal white board, draw a number bond\n                                                                                                    Emphasize key concepts and clarify\n         decomposing 4 into 4 ones.\n                                                                                                    unfamiliar words with gestures when\n    S:   (Draw a number bond.)                                                                      speaking with English language\n    T:   Now, work with your partner to show a number bond                                          learners. For example, illustrate the\n         decomposing 4 into 2 parts. One part should be                                             word decompose by showing hands\n         composed of 3 ones.                                                                        held together. Then, indicate breaking\n                                                                                                    apart, separation, splitting, or\n    S:   (Work with a partner to draw the number bond.)                                             partitioning by using a downward\n    T:   It took 3 copies of one to make 3. What are the two                                        motion to open the hands. Doing this\n         parts of your number bond? Please specify the unit.                                        can also help English speakers.\n    S:   3 ones and 1 one.\n    T:   Talk to your partner about the difference between\n         these two number bonds.\n    S:   The first bond has the ones all separated.  The\n         second bond has 3 instead of 3 ones.  Both bonds\n         are different ways of showing the same number—4.\n          You could also show 4 as one part 2 and one part 2.\n          The first bond has more parts than the second one.\n\n\n                       Lesson 8:                  Represent parts of one whole as fractions with number bonds.                               86\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 88 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                 Lesson 8 3\n\n\n Problem 2: Decompose 1 into fourths.\n       T:   Draw a number bond decomposing 1 into 4 unit fractions.\n       S:   (Draw a number bond.)\n       T:   Now, work with your partner to show a number bond\n            decomposing 1 into 2 parts. One part should be\nMP.7        composed of 3 copies of the unit fraction.\n       S:   (Work with a partner to draw the number bond.)\n       T:   What unit fraction did we copy to make the number\n            3 fourths?\n       S:   1 fourth.\n       T:   What are the two parts of your number bond? Please specify the unit.\n       S:   3 fourths and 1 fourth.\n       T:   (Encourage students to compare the two number bonds just as they did with the number bond of 4.)\n       T:   Look at your Sprint B. Discuss with your partner which of the figures on Sprint B match your number\n            bond.\n       S:   Numbers 3, 6, 9, 11, and 18–25 on Sprint B match my number bond.\n\n Problem 3: Decompose 1 into fifths (2 non-unit fractions).\n       T:   Draw a number bond decomposing 1 into 5 unit fractions.\n       S:   (Draw a number bond.)\n       T:   Now, work with your partner to show a number bond\n            decomposing 1 into 2 parts. One part should be composed of\n            2 copies of the unit fraction.\n       S:   (Work with a partner to draw the number bond.)\n       T:   What unit fraction did we copy to make the number                                                   NOTES ON\n            2 fifths?                                                                                           MULTIPLE MEANS\n       S:   1 fifth.                                                                                            OF ACTION AND\n       T:   What are the two parts of your number bond? Please                                                  EXPRESSION:\n            specify the unit.                                                                          When supporting a small group, go\n       S:   2 fifths and 3 fifths.                                                                     step-by-step. Avoid talking and doing\n                                                                                                       at the same time. Draw a number\n       T:   Look at your Sprint B. Discuss with your partner which\n                                                                                                       bond in silence. Turn and face the\n            of these figures match your number bond.                                                   group, and ask them to explain to a\n       S:   Numbers 30–33 on Sprint B match my number bond.                                            partner what they just saw. Then,\n       T:   Yes, 3 fifths can represent either the shaded or un-                                       perform the next action silently. Ask\n            shaded part.                                                                               them to explain the action again.\n                                                                                                       Doing this gives them the opportunity\n After doing these three problems, having students use the same                                        to analyze and reconstruct these\n process to model Questions 1, 12, 28, 39, and 44 from Sprint B                                        actions so that they internalize a\n could be helpful. Ask them to find other models on the Sprint                                         process they can use.\n that are represented by the same bond.\n\n\n                          Lesson 8:                  Represent parts of one whole as fractions with number bonds.                              87\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 89 (debrief) ---\nA STORY OF UNITS                                                                                               Lesson 8 3\n\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment\nby specifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Represent parts of one whole as\nfractions with number bonds.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a conversation\nto debrief the Problem Set and process the lesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Share different representations for Problem 6\n         about the hamburger. Guide students to see that\n         the chef’s refrigerated meat can be made into 3\n                                                        1\n         more burgers and that each of those burgers is\n                                                        4\n         of the meat.\n        As in Lesson 7’s Debrief, return to the shaded and\n         unshaded figures so that students articulate that\n         1 whole can ultimately be decomposed into unit\n         fractions. The number bond is a perfect tool for\n         seeing the transition from 1 whole to 2 parts to\n         unit fractions. It is analogous as well to the\n         beginning problem, when the number 4 was\n         decomposed into 4 ones.\n\n\n                        Lesson 8:                  Represent parts of one whole as fractions with number bonds.                88\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 90 (debrief) ---\nA STORY OF UNITS                                                                                               Lesson 8 3\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that were presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 8:                  Represent parts of one whole as fractions with number bonds.                89\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 91 (sprint) ---\nA STORY OF UNITS                                                                                        Lesson 8 Sprint 3\n\n\nA\n                                                                                                                   Number Correct: _______\n\nIdentify Fractions.\n\n 1.                                                           /                 23.                                               /\n\n 2.                                                           /                  24.                                              /\n\n 3.                                                           /                  25.                                              /\n\n 4.                                                           /                  26.                                              /\n\n 5.                                                           /                  27.                                              /\n\n 6.                                                           /                  28.                                              /\n\n 7.                                                           /                  29.                                              /\n\n 8.                                                           /                  30.                                              /\n\n 9.                                                           /                  31.                                              /\n\n 10.                                                          /                  32.                                              /\n\n 11.                                                          /                  33.                                              /\n\n 12.                                                          /                  34.                                              /\n\n 13.                                                          /                  35.                                              /\n\n 14.                                                          /                  36.                                              /\n\n 15.                                                          /                  37.                                              /\n\n 16.                                                          /                  38.                                              /\n\n 17.                                                          /                  39.                                              /\n\n 18.                                                          /                  40.                                              /\n\n 19.                                                          /                  41.                                              /\n\n 20.                                                          /                  42.                                              /\n\n 21.                                                          /                  43.                                              /\n\n 22.                                                          /                  44.                                              /\n\n\n                         Lesson 8:                  Represent parts of one whole as fractions with number bonds.                       90\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 92 (sprint) ---\nA STORY OF UNITS                                                                                        Lesson 8 Sprint 3\n\n\nB\n                                                                                                                   Number Correct: _______\n                                                                                                                     Improvement: _______\nIdentify Fractions.\n\n 1.                                                           /                  23.                                              /\n\n 2.                                                           /                  24.                                              /\n\n 3.                                                           /                  25.                                              /\n\n 4.                                                           /                  26.                                              /\n\n 5.                                                           /                  27.                                              /\n\n 6.                                                           /                  28.                                              /\n\n 7.                                                           /                  29.                                              /\n\n 8.                                                           /                  30.                                              /\n\n 9.                                                           /                  31.                                              /\n\n 10.                                                          /                  32.                                              /\n\n 11.                                                          /                  33.                                              /\n\n 12.                                                          /                  34.                                              /\n\n 13.                                                          /                  35.                                              /\n\n 14.                                                          /                  36.                                              /\n\n 15.                                                          /                  37.                                              /\n\n 16.                                                          /                  38.                                              /\n\n 17.                                                          /                  39.                                              /\n\n 18.                                                          /                  40.                                              /\n\n 19.                                                          /                  41.                                              /\n\n 20.                                                          /                  42.                                              /\n\n 21.                                                          /                  43.                                              /\n\n 22.                                                          /                  44.                                              /\n\n\n                         Lesson 8:                  Represent parts of one whole as fractions with number bonds.                       91\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 93 (problem-set) ---\nA STORY OF UNITS                                                                             Lesson 8 Problem Set 3\n\n\nName                                                                                              Date\n\nShow a number bond representing what is shaded and unshaded in each of the figures. Draw a different\nvisual model that would be represented by the same number bond.\n\nSample:\n\n\n1.\n\n\n2.\n\n\n3.\n\n\n4.\n\n\n                        Lesson 8:                  Represent parts of one whole as fractions with number bonds.            92\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 94 (problem-set) ---\nA STORY OF UNITS                                                                              Lesson 8 Problem Set 3\n\n\n5. Draw a number bond with 2 parts showing the shaded and unshaded fractions of each figure.\n   Decompose both parts of the number bond into unit fractions.\n\n   a.                             b.                                      c.                          d.\n\n\n                1\n6. The chef put of the ground beef on the grill to make one hamburger and put the rest in the refrigerator.\n                 4\n   Draw a 2-part number bond showing the fraction of the ground beef on the grill and the fraction in the\n   refrigerator. Draw a visual model of all the ground beef. Shade what is in the refrigerator.\n\n\n   a. What fraction of the ground beef was in the refrigerator?\n\n\n   b. How many more hamburgers can the chef make if he makes them all the same size as the first one?\n\n\n   c. Show the refrigerated ground beef broken into unit fractions on your number bond above.\n\n\n                       Lesson 8:                  Represent parts of one whole as fractions with number bonds.            93\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 95 (exit-ticket) ---\nA STORY OF UNITS                                                                                    Lesson 8 Exit Ticket 3\n\n\nName                                                                                                Date\n\n1. Draw a number bond that shows the shaded and the unshaded parts of the shape below. Then, show\n   each part decomposed into unit fractions.\n\n\n2. Complete the number bond. Draw a shape that has shaded and unshaded parts that match the\n   completed number bond.\n\n\n               1\n\n         2\n         7\n\n\n                      Lesson 8:                      Represent parts of one whole as fractions with number bonds.               94\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 96 (homework) ---\nA STORY OF UNITS                                                                                   Lesson 8 Homework 3\n\n\nName                                                                                                  Date\n\nShow a number bond representing what is shaded and unshaded in each of the figures. Draw a different\nvisual model that would be represented by the same number bond.\n\nSample:\n\n\n1.\n\n\n2.\n\n\n3.\n\n\n4.\n\n\n                        Lesson 8:                      Represent parts of one whole as fractions with number bonds.           95\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 97 (homework) ---\nA STORY OF UNITS                                                                                    Lesson 8 Homework 3\n\n\n5. Draw a number bond with 2 parts showing the shaded and unshaded fractions of each figure.\n   Decompose both parts of the number bond into unit fractions.\n\n\n   a.                                           b.                                                            c.\n\n\n                                                                                                1\n6. Johnny made a square peanut butter and jelly sandwich. He ate of it and left the rest on his plate. Draw\n                                                                     3\n   a picture of Johnny’s sandwich. Shade the part he left on his plate, and then draw a number bond that\n   matches what you drew. What fraction of his sandwich did Johnny leave on his plate?\n\n\n                       Lesson 8:                      Represent parts of one whole as fractions with number bonds.           96\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 93,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                             Lesson 8 Problem Set 3\n\n\nName                                                                                              Date\n\nShow a number bond representing what is shaded and unshaded in each of the figures. Draw a different\nvisual model that would be represented by the same number bond.\n\nSample:\n\n\n1.\n\n\n2.\n\n\n3.\n\n\n4.\n\n\n                        Lesson 8:                  Represent parts of one whole as fractions with number bonds.            92\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      },
+      {
+        "pdfPage": 94,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                              Lesson 8 Problem Set 3\n\n\n5. Draw a number bond with 2 parts showing the shaded and unshaded fractions of each figure.\n   Decompose both parts of the number bond into unit fractions.\n\n   a.                             b.                                      c.                          d.\n\n\n                1\n6. The chef put of the ground beef on the grill to make one hamburger and put the rest in the refrigerator.\n                 4\n   Draw a 2-part number bond showing the fraction of the ground beef on the grill and the fraction in the\n   refrigerator. Draw a visual model of all the ground beef. Shade what is in the refrigerator.\n\n\n   a. What fraction of the ground beef was in the refrigerator?\n\n\n   b. How many more hamburgers can the chef make if he makes them all the same size as the first one?\n\n\n   c. Show the refrigerated ground beef broken into unit fractions on your number bond above.\n\n\n                       Lesson 8:                  Represent parts of one whole as fractions with number bonds.            93\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 379,
+        "text": "A STORY OF UNITS                                                                        Lesson 8 Answer Key 3 5\n\n\nLesson 8\nSprint\nSide A\n1.    1/2                              12. 1/3                                 23. 3/4              34. 4/5\n2.    1/3                              13. 1/3                                 24. 3/4              35. 4/5\n3.    1/5                              14. 1/3                                 25. 3/4              36. 1/10\n4.    1/2                              15. 2/3                                 26. 1/2              37. 2/10\n5.    1/3                              16. 2/3                                 27. 1/2              38. 3/10\n6.    1/4                              17. 2/3                                 28. 1/5              39. 8/10\n7.    1/2                              18. 1/4                                 29. 1/5              40. 5/10\n8.    1/3                              19. 1/4                                 30. 2/5              41. 7/10\n9.    1/4                              20. 1/4                                 31. 2/5              42. 6/10\n10. 1/2                                21. 1/4                                 32. 3/5              43. 5/6\n11. 1/4                                22. 3/4                                 33. 3/5              44. 1/6\n\n\nSide B\n1.    1/2                              12. 1/3                                 23. 3/4              34. 4/5\n2.    1/3                              13. 1/3                                 24. 3/4              35. 4/5\n3.    1/4                              14. 1/3                                 25. 3/4              36. 5/10\n4.    1/2                              15. 2/3                                 26. 1/2              37. 1/10\n5.    1/3                              16. 2/3                                 27. 1/2              38. 2/10\n6.    1/4                              17. 2/3                                 28. 1/5              39. 3/10\n7.    1/2                              18. 1/4                                 29. 1/5              40. 8/10\n8.    1/3                              19. 1/4                                 30. 2/5              41. 6/10\n9.    1/4                              20. 1/4                                 31. 2/5              42. 7/10\n10. 1/2                                21. 1/4                                 32. 3/5              43. 1/6\n11. 1/4                                22. 3/4                                 33. 3/5              44. 5/6\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                        378\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      },
+      {
+        "pdfPage": 380,
+        "text": "A STORY OF UNITS                                                                            Lesson 8 Answer Key 3 5\n\n\nProblem Set\n                                            3          2\n1.    Number bond showing 5 and 5 equals 1 whole; second visual model drawn\n                                         3             1\n2.    Number bond showing 4 and 4 equals 1 whole; second visual model drawn\n                                         3             3\n3.    Number bond showing and equals 1 whole; second visual model drawn\n                                         6             6\n                                         2             7\n4.    Number bond showing and equals 1 whole; second visual model drawn\n                                         9             9\n                                                  3        1                    3                           1\n5.    a. Number bond showing 4 and 4 equals 1 whole; 4 decomposed showing 3 units of 4\n                                                  2        1                    2                           1\n      b. Number bond showing 3 and 3 equals 1 whole; 3 decomposed showing 2 units of 3\n                                                  2        2                                 2                            1\n      c. Number bond showing 4 and 4 equals 1 whole; both of 4 bonds decomposed showing 2 units of 4\n                                                  2        3                    2                           1 3\n      d. Number bond showing and equals 1 whole; decomposed showing 2 units of ; decomposed\n                                                  5        5                    5                           5 5\n                                        1\n           showing 3 units of 5\n           3\n6.    a.   4\n      b. 3\n                                                  1        3                    3                           1\n      c. Number bond showing 4 and 4 equals 1 whole; 4 decomposed showing 3 units of 4; second visual\n           model drawn\n\n\nExit Ticket\n                                         2             3                   2                             1 3\n1.    Number bond showing and equals 1 whole; decomposed showing 2 units of ;                                decomposed\n                                         5             5                   5                             5 5\n                               1\n      showing 3 units of\n                               5\n      5\n2.      ; shape drawn and shaded to match the completed number bond\n      7\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                                379\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      },
+      {
+        "pdfPage": 381,
+        "text": "A STORY OF UNITS                                                                        Lesson 8 Answer Key 3 5\n\n\nHomework\n                                         2             2\n1.    Number bond showing 4 and 4 equals 1 whole; second visual model drawn\n                                         5             2\n2.    Number bond showing and equals 1 whole; second visual model drawn\n                                         7             7\n                                         4             1\n3.    Number bond showing and equals 1 whole; second visual model drawn\n                                         5             5\n                                         0             8\n4.    Number bond showing 8 and 8 equals 1 whole; second visual model drawn\n                                                  2        1                    2                       1\n5.    a. Number bond showing 3 and 3 equals 1 whole; 3 decomposed showing 2 units of 3\n                                                  4        1                    4                       1\n      b. Number bond showing 5 and 5 equals 1 whole; 5 decomposed showing 4 units of 5\n                                                  3        2                    3                       1 2\n      c. Number bond showing and equals 1 whole; decomposed showing 3 units of ; decomposed\n                                                  5        5                    5                       5 5\n                                        1\n          showing 2 units of 5\n                                                                                               2   1          2\n6.    Drawing showing 3 equal parts; 2 thirds shaded; number bond showing and equals 1 whole;\n                                                                                               3   3          3\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                        380\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      }
+    ]
+  }
+}

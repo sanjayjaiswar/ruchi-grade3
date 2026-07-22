@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Precomputed Teacher Edition evidence for lesson repair and comparison.",
+  "controllingEvidenceOrder": [
+    "problemSet.problemSetText and sourceText.problemSetPages",
+    "problemSet.answerKeyProblemSetText and sourceText.answerKeyPages",
+    "instructionalContract concept/application/debrief text",
+    "problemSet.extractedProblems only when structuredPromptStatus is ready"
+  ],
+  "contractSections": {
+    "source": "PDF fingerprint, page ranges, and existing local images.",
+    "instructionalContract": "Objective support, concept sequence, teacher prompts, and debrief evidence.",
+    "problemSet": "Raw source text, structured prompts, answer-key evidence, and extraction warnings.",
+    "visualContract": "Detected source models and animation sequence evidence.",
+    "deliveryContract": "Blank, Solved, accuracy, and acceptance requirements.",
+    "sourceText": "Durable raw Teacher Edition text fallback for the full lesson, Problem Set, and answer-key pages."
+  }
+}

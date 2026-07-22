@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m1-l16",
+  "moduleId": "m1",
+  "lessonNumber": 16,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf",
+    "teacherEditionSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
+    "teacherEditionBytes": 13572842,
+    "lessonPdfPages": {
+      "start": 210,
+      "end": 220
+    },
+    "problemSetPdfPages": [
+      216,
+      217
+    ],
+    "exitTicketPdfPages": [
+      218
+    ],
+    "homeworkPdfPages": [
+      219,
+      220
+    ],
+    "answerKeyPdfPages": [
+      319,
+      320
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m1-student/workbook-page-065.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m1-teacher/page-216.png",
+      "/source-pages/m1-teacher/page-217.png",
+      "/source-pages/m1-teacher/page-319.png",
+      "/source-pages/m1-teacher/page-320.png"
+    ]
+  },
+  "objective": "Use the distributive property as a strategy to find related multiplication facts.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "? Why or why not?\n        Why would the strategy we learned today be\n         helpful for solving an even larger fact like 15 × 4?\n\nExit Ticket (3 minutes)\nAfter the",
+    "conceptDevelopmentText": "Materials: (S) Personal white board, fours array (Lesson 14 Template) (pictured below)\n\n       Problem 1: Model the 5 + n pattern as a strategy for multiplying using units of 4.\n           T:   Shade the part of the array that shows 5 × 4.                                                                   Fours Array Template\n           S:   (Shade 5 rows of 4.)\n           T:   Talk to your partner about how to box an array that\n                shows (5 × 4) + (1 × 4), and then box it.\n           S:   The box should have one more row than what’s\n                shaded. (Box 6 × 4.)\n           T:   What expression does the boxed array represent?\n           S:   6 × 4.\n           T:   Label the shaded and un-shaded arrays in your box\n                with equations.\n           S:   (Write 5 × 4 = 20 and 1 × 4 = 4.)                                                                    NOTES ON\n           T:   How can we combine our two multiplication equations                                                  TEACHER BOARD:\n                to find the total number of dots?\n                                                                                                           Keep track of the equations for all\n           S:   6 × 4 = 24, or 20 + 4 = 24.                                                                three examples. As students reflect,\n       Repeat the process with the following suggested examples:                                           they can refer to the visual on the class\n                                                                                                           board to see that 5 × 4 is the consistent\n                 5 × 4 and 2 × 4 to model 7 × 4                                                           expression.\n                 5 × 4 and 4 × 4 to model 9 × 4\n           T:   What expression did we use to help us solve all three\n                problems?\n           S:   5 × 4.\n           T:   Talk to your partner. Why do you think I asked you to                                                NOTES ON\nMP.7            solve using 5 × 4 each time?                                                                         MULTIPLE MEANS\n           S:   You can just count by fives to solve it.  It equals 20.                                             OF ACTION\n                It’s easy to add other numbers to 20.                                                                AND EXPRESSION:\n           T:   Compare using 5 × 4 to solve your fours with 5 × 6 to                                       Minimize instructional changes as you\n                solve your sixes and 5 × 8 to solve your eights.                                            repeat with different numbers.\n                                                                                                            Scaffolding problems using the same\n           S:   (Discuss. Identify the ease of skip-counting and that the\n                                                                                                            method allows students to generalize\n                products are multiples of 10.)                                                              skills more easily.\n           T:   Now that you know how to use your fives, you have a\n                way to solve 7 sixes as 5 sixes and 2 sixes or\n                7 eights as 5 eights and 2 eights.\n\n\n                               Lesson 16:          Use the distributive property as a strategy to find related multiplication                     208\n                                                   facts.\n\n                               ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                                    Lesson 16 3 1\n\n\nProblem 2: Apply the 5 + n pattern to decompose and solve larger facts.\nStudents work in pairs.\n    T:   Fold the template so that only 8 of the 10 rows are\n         showing. We’ll use the array that’s left. What\n         multiplication expression are we finding?                                                             NOTES ON\n                                                                                                               MULTIPLE MEANS\n    S:   (Fold two rows away.) 8 × 4.\n                                                                                                               OF ENGAGEMENT:\n    T:   Use the strategy we practiced today to solve 8 × 4.\n                                                                                                     Have students who need an additional\n    S:   (Demonstrate one possible solution.) Let’s shade and                                        challenge decompose the same\n         label 5 × 4.  Then, we can label the un-shaded part.                                       problem using facts other than 5 × 4.\n          That’s 3 × 4.  5 × 4 = 20 and 3 × 4 = 12.  20 + 12                                      They should see that other strategies\n         = 32.  There are 32 in total.                                                              work as well. Compare strategies to\n    T:   (Write 8 × 4 = (5 × 4) + (3 × 4).) Talk with your partner                                   prove the efficiency of 5 × 4.\n         about how you know this is true.\n    S:   (Discuss.)\n    T:   We can break a larger fact into two smaller facts to\n         help us solve it. (Draw number bond shown to the\n         right.) Here, we broke apart 8 fours into 5 fours and\n         3 fours to solve. So, we can write an equation, 8 fours\n         = 5 fours + 3 fours. (Write equation on the board.)\n    T:   (5 + 3) × 4 is another way of writing (5 × 4) + (3 × 4).\n         Talk with your partner about why these expressions\n         are the same.\n    S:   (Discuss.)\n    T:   True or false? In 5 × 4 and 3 × 4, the size of the groups\n         is the same.                                                                                       8 fours = 5 fours + 3 fours\n    S:   True!                                                                                                8 × 4 = (5 × 4) + (3 × 4)\n    T:   Four represents the size of the groups. The expression                                                       = (5 + 3) × 4\n         (5 × 4) + (3 × 4) shows how we distribute the groups of\n         4. Since the size of the groups is the same, we can add\n         the 5 fours and 3 fours to make 8 fours.\nRepeat the process with the following suggested example:\n            10 × 4, modeled by doubling the product of 5 × 4",
+    "fluencyPracticeText": " Multiply by 4 Pattern Sheet 3.OA.7                         (8 minutes)\n Group Counting 3.OA.1                                      (3 minutes)\n Read Tape Diagrams 3.OA.3                                  (3 minutes)\n\nMultiply by 4 Pattern Sheet (8 minutes)\nMaterials: (S) Multiply by 4 (6–10) (Pattern Sheet)\n\nNote: This activity builds fluency with multiplication facts using units of 4. It works toward the goal of\nstudents knowing from memory all products of two one-digit numbers. See Lesson 9 for the directions for\nadministering a Multiply-By Pattern Sheet.\n    T:   (Write 7 × 4 = ____.) Let’s skip-count up by fours to solve. (Count with fingers to 7 as students\n         count.)\n    S:   4, 8, 12, 16, 20, 24, 28.\n    T:   Let’s skip-count up by fours starting at 5 fours or 20.\n    S:   (Show 5 fingers to represent 5 fours, or 20.) 20, 24, 28. (Count with fingers up to 7 fours as students\n         count.)\n    T:   Let’s skip-count down to find the answer to 7 × 4. Start at 10 fours or 40. (Count down with fingers\n         as students say numbers.)\n    S:   40, 36, 32, 28.\nRepeat the process of skip-counting up from 5 fours and down from 10 fours to solve 9 × 4 and 8 × 4.\nDistribute Multiply by 4 Pattern Sheet (6–10).\n\n\n                        Lesson 16:          Use the distributive property as a strategy to find related multiplication          206\n                                            facts.\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                                  Lesson 16 3 1\n\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by twos and threes\nin this activity reviews multiplication with units of 2 and 3 from Topics C and D.\n    T:   Let’s count by twos. (Direct students to count forward and backward to 20.)\n    T:   Let’s count by threes. (Direct students to count forward and backward to 30. Whisper the numbers\n         between threes and speak each three out loud. For example, whisper 1, whisper 2, say 3, whisper 4,\n         whisper 5, say 6, and so on.)\n\nRead Tape Diagrams (3 minutes)\nMaterials: (S) Personal white board\n\nNote: Students practice reading the difference between the value of the unit (the size of the groups) and the\nnumber of units. The activity reviews using the tape diagram as a model for commutativity.\n    T:   (Project a tape diagram partitioned into 2 equal units. Draw 8 stars in each unit, and bracket the total\n         with a question mark.) Say the addition sentence.\n    S:   8 + 8 = 16.\n    T:   Say the multiplication sentence starting with the number of groups.\n    S:   2 × 8 = 16.\n    T:   Draw the tape diagram, and label units with numbers instead of stars. Label the missing total.\n         Beneath the diagram, write a multiplication sentence.\n    S:   (Draw a tape diagram with 8 written inside both units and 16 written as the total. Beneath the\n         diagram, write 2 × 8 = 16.)\nRepeat the process for 3 × 7 and 4 × 6.",
+    "problemSetGuidanceText": "Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by specifying which problems they work on first.\nSome problems do not specify a method for solving. Students should solve these problems using the RDW\napproach used for Application Problems.\n\n\n                          Lesson 16:          Use the distributive property as a strategy to find related multiplication                  209\n                                              facts.\n\n                          ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                                  Lesson 16 3 1",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Shade the part of the array that shows 5 × 4. Fours Array Template"
+      },
+      {
+        "speaker": "students",
+        "text": "(Shade 5 rows of 4.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner about how to box an array that shows (5 × 4) + (1 × 4), and then box it."
+      },
+      {
+        "speaker": "students",
+        "text": "The box should have one more row than what’s shaded. (Box 6 × 4.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What expression does the boxed array represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "6 × 4."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label the shaded and un-shaded arrays in your box with equations."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 5 × 4 = 20 and 1 × 4 = 4.) NOTES ON"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can we combine our two multiplication equations TEACHER BOARD: to find the total number of dots? Keep track of the equations for all"
+      },
+      {
+        "speaker": "students",
+        "text": "6 × 4 = 24, or 20 + 4 = 24. three examples. As students reflect, Repeat the process with the following suggested examples: they can refer to the visual on the class board to see that 5 × 4 is the consistent  5 × 4 and 2 × 4 to model 7 × 4 expression.  5 × 4 and 4 × 4 to model 9 × 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What expression did we use to help us solve all three problems?"
+      },
+      {
+        "speaker": "students",
+        "text": "5 × 4."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner. Why do you think I asked you to NOTES ON MP.7 solve using 5 × 4 each time? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "You can just count by fives to solve it.  It equals 20. OF ACTION It’s easy to add other numbers to 20. AND EXPRESSION:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Compare using 5 × 4 to solve your fours with 5 × 6 to Minimize instructional changes as you solve your sixes and 5 × 8 to solve your eights. repeat with different numbers. Scaffolding problems using the same"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss. Identify the ease of skip-counting and that the method allows students to generalize products are multiples of 10.) skills more easily."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now that you know how to use your fives, you have a way to solve 7 sixes as 5 sixes and 2 sixes or 7 eights as 5 eights and 2 eights. facts. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 16 3 1 Students work in pairs."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Fold the template so that only 8 of the 10 rows are showing. We’ll use the array that’s left. What multiplication expression are we finding? NOTES ON MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "(Fold two rows away.) 8 × 4. OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use the strategy we practiced today to solve 8 × 4. Have students who need an additional"
+      },
+      {
+        "speaker": "students",
+        "text": "(Demonstrate one possible solution.) Let’s shade and challenge decompose the same label 5 × 4.  Then, we can label the un-shaded part. problem using facts other than 5 × 4.  That’s 3 × 4.  5 × 4 = 20 and 3 × 4 = 12.  20 + 12 They should see that other strategies = 32.  There are 32 in total. work as well. Compare strategies to"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 8 × 4 = (5 × 4) + (3 × 4).) Talk with your partner prove the efficiency of 5 × 4. about how you know this is true."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We can break a larger fact into two smaller facts to help us solve it. (Draw number bond shown to the right.) Here, we broke apart 8 fours into 5 fours and 3 fours to solve. So, we can write an equation, 8 fours = 5 fours + 3 fours. (Write equation on the board.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(5 + 3) × 4 is another way of writing (5 × 4) + (3 × 4). Talk with your partner about why these expressions are the same."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "True or false? In 5 × 4 and 3 × 4, the size of the groups is the same. 8 fours = 5 fours + 3 fours"
+      },
+      {
+        "speaker": "students",
+        "text": "True! 8 × 4 = (5 × 4) + (3 × 4)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Four represents the size of the groups. The expression = (5 + 3) × 4 (5 × 4) + (3 × 4) shows how we distribute the groups of 4. Since the size of the groups is the same, we can add the 5 fours and 3 fours to make 8 fours. Repeat the process with the following suggested example:  10 × 4, modeled by doubling the product of 5 × 4"
+      }
+    ],
+    "teacherPrompts": [
+      "Shade the part of the array that shows 5 × 4. Fours Array Template",
+      "Talk to your partner about how to box an array that shows (5 × 4) + (1 × 4), and then box it.",
+      "What expression does the boxed array represent?",
+      "Label the shaded and un-shaded arrays in your box with equations.",
+      "How can we combine our two multiplication equations TEACHER BOARD: to find the total number of dots? Keep track of the equations for all",
+      "What expression did we use to help us solve all three problems?",
+      "Talk to your partner. Why do you think I asked you to NOTES ON MP.7 solve using 5 × 4 each time? MULTIPLE MEANS",
+      "Compare using 5 × 4 to solve your fours with 5 × 6 to Minimize instructional changes as you solve your sixes and 5 × 8 to solve your eights. repeat with different numbers. Scaffolding problems using the same",
+      "Now that you know how to use your fives, you have a way to solve 7 sixes as 5 sixes and 2 sixes or 7 eights as 5 eights and 2 eights. facts. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 16 3 1 Students work in pairs.",
+      "Fold the template so that only 8 of the 10 rows are showing. We’ll use the array that’s left. What multiplication expression are we finding? NOTES ON MULTIPLE MEANS",
+      "Use the strategy we practiced today to solve 8 × 4. Have students who need an additional",
+      "(Write 8 × 4 = (5 × 4) + (3 × 4).) Talk with your partner prove the efficiency of 5 × 4. about how you know this is true.",
+      "We can break a larger fact into two smaller facts to help us solve it. (Draw number bond shown to the right.) Here, we broke apart 8 fours into 5 fours and 3 fours to solve. So, we can write an equation, 8 fours = 5 fours + 3 fours. (Write equation on the board.)",
+      "(5 + 3) × 4 is another way of writing (5 × 4) + (3 × 4). Talk with your partner about why these expressions are the same.",
+      "True or false? In 5 × 4 and 3 × 4, the size of the groups is the same. 8 fours = 5 fours + 3 fours",
+      "Four represents the size of the groups. The expression = (5 + 3) × 4 (5 × 4) + (3 × 4) shows how we distribute the groups of 4. Since the size of the groups is the same, we can add the 5 fours and 3 fours to make 8 fours. Repeat the process with the following suggested example:  10 × 4, modeled by doubling the product of 5 × 4"
+    ],
+    "debriefPrompt": "Explain how breaking apart or finding the products of two smaller arrays helps find the product of a larger array in Problem 1(d)",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Label the array. Then, fill in the blanks below to make true number sentences. a. 6 × 4 = ____ b. 7 × 4 = ____ (5 × 4) = 20 (5 × 4) = (1 × 4) = (2 × 4) = (6 × 4) = (5 × 4) + (1 × 4) (7 × 4) = (5 × 4) + (2 × 4) = 20 + = + = = 28 c. 8 × 4 = ____ d. 9 × 4 = ____ (5 × 4) = (5 × 4) = (× 4) = (× 4) = (8 × 4) = (5 × 4) + (× 4) (9 × 4) = (5 × 4) + (× 4) = + = + = = facts.",
+        "equations": [
+          "6 × 4 = ____",
+          "7 × 4 = ____",
+          "5 × 4",
+          "1 × 4"
+        ]
+      },
+      {
+        "number": 2,
+        "prompt": "Match the equal expressions. (5 × 4) + (4 × 4) (5 × 4) + (3 × 4) (5 × 4) + (2 × 4) (5 × 4) + (1 × 4) 9×4 6×4 7×4 8×4 36 24",
+        "equations": [
+          "5 × 4",
+          "4 × 4",
+          "3 × 4",
+          "2 × 4"
+        ]
+      },
+      {
+        "number": 3,
+        "prompt": "Nolan draws the array below to find the answer to the multiplication expression 10 ×",
+        "equations": []
+      },
+      {
+        "number": 4,
+        "prompt": "He says, \"10 × 4 is just double 5 × 4.\" Explain Nolan's strategy. facts.",
+        "equations": [
+          "10 × 4",
+          "5 × 4"
+        ]
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                            Lesson 16 Problem Set 3 1\n\n\nName                                                                                              Date\n\n1. Label the array. Then, fill in the blanks below to make true number sentences.\n\n\n    a. 6 × 4 = _____                                                                 b. 7 × 4 = _____\n\n\n                               (5 × 4) = 20                                                                                (5 × 4) =\n\n\n                               (1 × 4) =                                                                                   (2 × 4) =\n\n\n                      (6 × 4) = (5 × 4) + (1 × 4)                                                                (7 × 4) = (5 × 4) + (2 × 4)\n\n                               = 20 +                                                                                      =           +\n\n                               =                                                                                           = 28\n\n\n   c. 8 × 4 = _____                                                                  d. 9 × 4 = _____\n\n\n                                   (5 × 4) =\n                                                                                                                           (5 × 4) =\n\n\n                                   (         × 4) =\n                                                                                                                           (      × 4) =\n\n\n                      (8 × 4) = (5 × 4) + (              × 4)                                                    (9 × 4) = (5 × 4) + (         × 4)\n\n                              =                +                                                                           =           +\n\n                              =                                                                                            =\n\n\n                          Lesson 16:          Use the distributive property as a strategy to find related multiplication                   212\n                                              facts.\n\n                          ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                             Lesson 16 Problem Set 3 1\n\n\n2. Match the equal expressions.\n\n                                                                                   (5 × 4) + (4 × 4)\n       (5 × 4) + (3 × 4)\n                                                                                                                            (5 × 4) + (2 × 4)\n                                           (5 × 4) + (1 × 4)\n\n\n             9×4                                                                               6×4\n                                                                                                                                         7×4\n\n                                                       8×4\n\n\n              36                                                                                24\n                                                                                                                                          28\n                                                        32\n\n\n3. Nolan draws the array below to find the answer to the multiplication expression 10 × 4. He says, “10 × 4 is\n   just double 5 × 4.” Explain Nolan’s strategy.\n\n\n                           Lesson 16:          Use the distributive property as a strategy to find related multiplication                       213\n                                               facts.\n\n                           ©2015 Great Minds. eureka-math.org",
+    "answerKeyProblemSetText": "1.    a. 24; 4; 4, 24\n      b. 28; 20; 8; 20, 8\n      c. 32; 20; 3, 12; 3, 20, 12, 32\n      d. 36; 20; 4, 16; 4, 20, 16, 36\n2.    First cloud matched to 8 × 4; second cloud matched to 6 × 4; third cloud matched to 9 × 4;\n      fourth cloud matched to 7 × 4\n3.    10 fours broken into two smaller facts: 5 fours and 5 fours, or 5 fours doubled; sum of two smaller\n      facts found to answer larger fact\n\n\n                        Module 1:           Properties of Multiplication and Division and Solving Problems with        315\n                                            Units of 2–5 and 10\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                         Lesson 16 Answer Key 3 1",
+    "answerKeyText": "A STORY OF UNITS                                                                       Lesson 16 Answer Key 3 1\n\n\nLesson 16\nPattern Sheet\n             4                                    8                                    12                         16\n            20                                    24                                   28                         32\n            36                                    40                                   24                         28\n            24                                    32                                   24                         36\n            24                                    40                                   24                         28\n            24                                    28                                   32                         28\n            36                                    28                                   40                         28\n            32                                    24                                   32                         28\n            32                                    36                                   32                         40\n            32                                    36                                   24                         36\n            28                                    36                                   32                         36\n            40                                    36                                   40                         24\n            40                                    28                                   40                         32\n            40                                    36                                   40                         24\n            32                                    40                                   28                         36\n\n\nProblem Set\n1.    a. 24; 4; 4, 24\n      b. 28; 20; 8; 20, 8\n      c. 32; 20; 3, 12; 3, 20, 12, 32\n      d. 36; 20; 4, 16; 4, 20, 16, 36\n2.    First cloud matched to 8 × 4; second cloud matched to 6 × 4; third cloud matched to 9 × 4;\n      fourth cloud matched to 7 × 4\n3.    10 fours broken into two smaller facts: 5 fours and 5 fours, or 5 fours doubled; sum of two smaller\n      facts found to answer larger fact\n\n\n                        Module 1:           Properties of Multiplication and Division and Solving Problems with        315\n                                            Units of 2–5 and 10\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                         Lesson 16 Answer Key 3 1\n\n\nExit Ticket\n8; 20, 8, 28; 7 fours broken into two smaller facts: 5 fours and 2 fours; sum of two smaller facts found to\nanswer larger fact\n\n\nHomework\n1.    a. 24; 1, 4; 1, 4, 24\n      b. 32; 20; 3, 12; 3, 20, 12, 32\n2.    First sun matched to 24; second sun matched to 28; third sun matched to 32;\n      fourth sun matched to 36\n3.    20; 16; 9 fours broken into two smaller facts: 5 fours and 4 fours; sum of two smaller facts found to\n      answer larger fact\n\n\n                           Module 1:           Properties of Multiplication and Division and Solving Problems with   316\n                                               Units of 2–5 and 10\n\n                           ©2015 Great Minds. eureka-math.org",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "equal-groups",
+      "tape-diagram",
+      "number-bond",
+      "measurement-scale",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "Materials: (S) Personal white board, fours array (Lesson 14 Template) (pictured below)",
+        "T: Shade the part of the array that shows 5 × 4. Fours Array Template",
+        "S: (Shade 5 rows of 4.)",
+        "T: Talk to your partner about how to box an array that",
+        "T: What expression does the boxed array represent?",
+        "T: Label the shaded and un-shaded arrays in your box",
+        "showing. We’ll use the array that’s left. What",
+        "1. Label the array. Then, fill in the blanks below to make true number sentences."
+      ],
+      "equal-groups": [
+        "(5 × 4) + (3 × 4) shows how we distribute the groups of"
+      ],
+      "tape-diagram": [
+        " Read Tape Diagrams 3.OA.3 (3 minutes)",
+        "Read Tape Diagrams (3 minutes)",
+        "number of units. The activity reviews using the tape diagram as a model for commutativity.",
+        "T: (Project a tape diagram partitioned into 2 equal units. Draw 8 stars in each unit, and bracket the total",
+        "T: Draw the tape diagram, and label units with numbers instead of stars. Label the missing total.",
+        "S: (Draw a tape diagram with 8 written inside both units and 16 written as the total. Beneath the"
+      ],
+      "number-bond": [
+        "Problem 2: Apply the 5 + n pattern to decompose and solve larger facts.",
+        "S: (Demonstrate one possible solution.) Let’s shade and challenge decompose the same",
+        "help us solve it. (Draw number bond shown to the"
+      ],
+      "measurement-scale": [
+        " Read Tape Diagrams 3.OA.3 (3 minutes)",
+        "Read Tape Diagrams (3 minutes)",
+        "number of units. The activity reviews using the tape diagram as a model for commutativity.",
+        "T: (Project a tape diagram partitioned into 2 equal units. Draw 8 stars in each unit, and bracket the total",
+        "T: Draw the tape diagram, and label units with numbers instead of stars. Label the missing total.",
+        "Beneath the diagram, write a multiplication sentence.",
+        "S: (Draw a tape diagram with 8 written inside both units and 16 written as the total. Beneath the",
+        "diagram, write 2 × 8 = 16.)"
+      ],
+      "money-model": [
+        "T: Compare using 5 × 4 to solve your fours with 5 × 6 to Minimize instructional changes as you"
+      ],
+      "picture-or-drawing": [
+        "Materials: (S) Personal white board, fours array (Lesson 14 Template) (pictured below)",
+        "T: Shade the part of the array that shows 5 × 4. Fours Array Template",
+        "S: (Shade 5 rows of 4.)",
+        "shaded. (Box 6 × 4.)",
+        "T: Label the shaded and un-shaded arrays in your box",
+        "S: (Demonstrate one possible solution.) Let’s shade and challenge decompose the same",
+        "label 5 × 4.  Then, we can label the un-shaded part. problem using facts other than 5 × 4.",
+        "help us solve it. (Draw number bond shown to the"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Shade the part of the array that shows 5 × 4. Fours Array Template"
+      },
+      {
+        "speaker": "students",
+        "text": "(Shade 5 rows of 4.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner about how to box an array that shows (5 × 4) + (1 × 4), and then box it."
+      },
+      {
+        "speaker": "students",
+        "text": "The box should have one more row than what’s shaded. (Box 6 × 4.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label the shaded and un-shaded arrays in your box with equations."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 5 × 4 = 20 and 1 × 4 = 4.) NOTES ON"
+      },
+      {
+        "speaker": "students",
+        "text": "6 × 4 = 24, or 20 + 4 = 24. three examples. As students reflect, Repeat the process with the following suggested examples: they can refer to the visual on the class board to see that 5 × 4 is the consistent  5 × 4 and 2 × 4 to model 7 × 4 expression.  5 × 4 and 4 × 4 to model 9 × 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What expression did we use to help us solve all three problems?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner. Why do you think I asked you to NOTES ON MP.7 solve using 5 × 4 each time? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "You can just count by fives to solve it.  It equals 20. OF ACTION It’s easy to add other numbers to 20. AND EXPRESSION:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Compare using 5 × 4 to solve your fours with 5 × 6 to Minimize instructional changes as you solve your sixes and 5 × 8 to solve your eights. repeat with different numbers. Scaffolding problems using the same"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss. Identify the ease of skip-counting and that the method allows students to generalize products are multiples of 10.) skills more easily."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now that you know how to use your fives, you have a way to solve 7 sixes as 5 sixes and 2 sixes or 7 eights as 5 eights and 2 eights. facts. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 16 3 1 Students work in pairs."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Fold the template so that only 8 of the 10 rows are showing. We’ll use the array that’s left. What multiplication expression are we finding? NOTES ON MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use the strategy we practiced today to solve 8 × 4. Have students who need an additional"
+      },
+      {
+        "speaker": "students",
+        "text": "(Demonstrate one possible solution.) Let’s shade and challenge decompose the same label 5 × 4.  Then, we can label the un-shaded part. problem using facts other than 5 × 4.  That’s 3 × 4.  5 × 4 = 20 and 3 × 4 = 12.  20 + 12 They should see that other strategies = 32.  There are 32 in total. work as well. Compare strategies to"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 8 × 4 = (5 × 4) + (3 × 4).) Talk with your partner prove the efficiency of 5 × 4. about how you know this is true."
+      },
+      {
+        "speaker": "teacher",
+        "text": "We can break a larger fact into two smaller facts to help us solve it. (Draw number bond shown to the right.) Here, we broke apart 8 fours into 5 fours and 3 fours to solve. So, we can write an equation, 8 fours = 5 fours + 3 fours. (Write equation on the board.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Four represents the size of the groups. The expression = (5 + 3) × 4 (5 × 4) + (3 × 4) shows how we distribute the groups of 4. Since the size of the groups is the same, we can add the 5 fours and 3 fours to make 8 fours. Repeat the process with the following suggested example:  10 × 4, modeled by doubling the product of 5 × 4"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 210 (debrief) ---\nA STORY OF UNITS                                                                                                  Lesson 16 3 1\n\n\nLesson 16\nObjective: Use the distributive property as a strategy to find related\nmultiplication facts.\n\n\nSuggested Lesson Structure\n\n Fluency Practice              (14 minutes)\n Application Problem           (5 minutes)\n Concept Development           (31 minutes)\n Student Debrief               (10 minutes)\n   Total Time                   (60 minutes)\n\n\nFluency Practice (14 minutes)\n\n Multiply by 4 Pattern Sheet 3.OA.7                         (8 minutes)\n Group Counting 3.OA.1                                      (3 minutes)\n Read Tape Diagrams 3.OA.3                                  (3 minutes)\n\nMultiply by 4 Pattern Sheet (8 minutes)\nMaterials: (S) Multiply by 4 (6–10) (Pattern Sheet)\n\nNote: This activity builds fluency with multiplication facts using units of 4. It works toward the goal of\nstudents knowing from memory all products of two one-digit numbers. See Lesson 9 for the directions for\nadministering a Multiply-By Pattern Sheet.\n    T:   (Write 7 × 4 = ____.) Let’s skip-count up by fours to solve. (Count with fingers to 7 as students\n         count.)\n    S:   4, 8, 12, 16, 20, 24, 28.\n    T:   Let’s skip-count up by fours starting at 5 fours or 20.\n    S:   (Show 5 fingers to represent 5 fours, or 20.) 20, 24, 28. (Count with fingers up to 7 fours as students\n         count.)\n    T:   Let’s skip-count down to find the answer to 7 × 4. Start at 10 fours or 40. (Count down with fingers\n         as students say numbers.)\n    S:   40, 36, 32, 28.\nRepeat the process of skip-counting up from 5 fours and down from 10 fours to solve 9 × 4 and 8 × 4.\nDistribute Multiply by 4 Pattern Sheet (6–10).\n\n\n                        Lesson 16:          Use the distributive property as a strategy to find related multiplication          206\n                                            facts.\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 211 (application-problem) ---\nA STORY OF UNITS                                                                                                  Lesson 16 3 1\n\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by twos and threes\nin this activity reviews multiplication with units of 2 and 3 from Topics C and D.\n    T:   Let’s count by twos. (Direct students to count forward and backward to 20.)\n    T:   Let’s count by threes. (Direct students to count forward and backward to 30. Whisper the numbers\n         between threes and speak each three out loud. For example, whisper 1, whisper 2, say 3, whisper 4,\n         whisper 5, say 6, and so on.)\n\nRead Tape Diagrams (3 minutes)\nMaterials: (S) Personal white board\n\nNote: Students practice reading the difference between the value of the unit (the size of the groups) and the\nnumber of units. The activity reviews using the tape diagram as a model for commutativity.\n    T:   (Project a tape diagram partitioned into 2 equal units. Draw 8 stars in each unit, and bracket the total\n         with a question mark.) Say the addition sentence.\n    S:   8 + 8 = 16.\n    T:   Say the multiplication sentence starting with the number of groups.\n    S:   2 × 8 = 16.\n    T:   Draw the tape diagram, and label units with numbers instead of stars. Label the missing total.\n         Beneath the diagram, write a multiplication sentence.\n    S:   (Draw a tape diagram with 8 written inside both units and 16 written as the total. Beneath the\n         diagram, write 2 × 8 = 16.)\nRepeat the process for 3 × 7 and 4 × 6.\n\n\nApplication Problem (5 minutes)\n\nMs. Williams draws the array below to show the class\nseating chart. She sees the students in 4 rows of 7\nwhen she teaches at Board 1. Use the commutative\nproperty to show how Ms. Williams sees the class\nwhen she teaches at Board 2.\nExtension: On Monday, 6 students are absent. How\nmany students are in class on Monday?\n\n                   Board 1\n\n\n   Board 2\n\n\n                        Lesson 16:          Use the distributive property as a strategy to find related multiplication          207\n                                            facts.\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 212 (concept-development) ---\nA STORY OF UNITS                                                                                                  Lesson 16 3 1\n\n\n       Note: This problem reviews the commutative property from Lesson 15. Students may use a tape diagram to\n       show their solution. The inclusion of the extension anticipates the two-step problem in the Lesson 17 Problem\n       Set. If appropriate for the class, present the extension.\n\n\n       Concept Development (31 minutes)\n\n       Materials: (S) Personal white board, fours array (Lesson 14 Template) (pictured below)\n\n       Problem 1: Model the 5 + n pattern as a strategy for multiplying using units of 4.\n           T:   Shade the part of the array that shows 5 × 4.                                                                   Fours Array Template\n           S:   (Shade 5 rows of 4.)\n           T:   Talk to your partner about how to box an array that\n                shows (5 × 4) + (1 × 4), and then box it.\n           S:   The box should have one more row than what’s\n                shaded. (Box 6 × 4.)\n           T:   What expression does the boxed array represent?\n           S:   6 × 4.\n           T:   Label the shaded and un-shaded arrays in your box\n                with equations.\n           S:   (Write 5 × 4 = 20 and 1 × 4 = 4.)                                                                    NOTES ON\n           T:   How can we combine our two multiplication equations                                                  TEACHER BOARD:\n                to find the total number of dots?\n                                                                                                           Keep track of the equations for all\n           S:   6 × 4 = 24, or 20 + 4 = 24.                                                                three examples. As students reflect,\n       Repeat the process with the following suggested examples:                                           they can refer to the visual on the class\n                                                                                                           board to see that 5 × 4 is the consistent\n                 5 × 4 and 2 × 4 to model 7 × 4                                                           expression.\n                 5 × 4 and 4 × 4 to model 9 × 4\n           T:   What expression did we use to help us solve all three\n                problems?\n           S:   5 × 4.\n           T:   Talk to your partner. Why do you think I asked you to                                                NOTES ON\nMP.7            solve using 5 × 4 each time?                                                                         MULTIPLE MEANS\n           S:   You can just count by fives to solve it.  It equals 20.                                             OF ACTION\n                It’s easy to add other numbers to 20.                                                                AND EXPRESSION:\n           T:   Compare using 5 × 4 to solve your fours with 5 × 6 to                                       Minimize instructional changes as you\n                solve your sixes and 5 × 8 to solve your eights.                                            repeat with different numbers.\n                                                                                                            Scaffolding problems using the same\n           S:   (Discuss. Identify the ease of skip-counting and that the\n                                                                                                            method allows students to generalize\n                products are multiples of 10.)                                                              skills more easily.\n           T:   Now that you know how to use your fives, you have a\n                way to solve 7 sixes as 5 sixes and 2 sixes or\n                7 eights as 5 eights and 2 eights.\n\n\n                               Lesson 16:          Use the distributive property as a strategy to find related multiplication                     208\n                                                   facts.\n\n                               ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 213 (application-problem) ---\nA STORY OF UNITS                                                                                                    Lesson 16 3 1\n\n\nProblem 2: Apply the 5 + n pattern to decompose and solve larger facts.\nStudents work in pairs.\n    T:   Fold the template so that only 8 of the 10 rows are\n         showing. We’ll use the array that’s left. What\n         multiplication expression are we finding?                                                             NOTES ON\n                                                                                                               MULTIPLE MEANS\n    S:   (Fold two rows away.) 8 × 4.\n                                                                                                               OF ENGAGEMENT:\n    T:   Use the strategy we practiced today to solve 8 × 4.\n                                                                                                     Have students who need an additional\n    S:   (Demonstrate one possible solution.) Let’s shade and                                        challenge decompose the same\n         label 5 × 4.  Then, we can label the un-shaded part.                                       problem using facts other than 5 × 4.\n          That’s 3 × 4.  5 × 4 = 20 and 3 × 4 = 12.  20 + 12                                      They should see that other strategies\n         = 32.  There are 32 in total.                                                              work as well. Compare strategies to\n    T:   (Write 8 × 4 = (5 × 4) + (3 × 4).) Talk with your partner                                   prove the efficiency of 5 × 4.\n         about how you know this is true.\n    S:   (Discuss.)\n    T:   We can break a larger fact into two smaller facts to\n         help us solve it. (Draw number bond shown to the\n         right.) Here, we broke apart 8 fours into 5 fours and\n         3 fours to solve. So, we can write an equation, 8 fours\n         = 5 fours + 3 fours. (Write equation on the board.)\n    T:   (5 + 3) × 4 is another way of writing (5 × 4) + (3 × 4).\n         Talk with your partner about why these expressions\n         are the same.\n    S:   (Discuss.)\n    T:   True or false? In 5 × 4 and 3 × 4, the size of the groups\n         is the same.                                                                                       8 fours = 5 fours + 3 fours\n    S:   True!                                                                                                8 × 4 = (5 × 4) + (3 × 4)\n    T:   Four represents the size of the groups. The expression                                                       = (5 + 3) × 4\n         (5 × 4) + (3 × 4) shows how we distribute the groups of\n         4. Since the size of the groups is the same, we can add\n         the 5 fours and 3 fours to make 8 fours.\nRepeat the process with the following suggested example:\n            10 × 4, modeled by doubling the product of 5 × 4\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the Problem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by specifying which problems they work on first.\nSome problems do not specify a method for solving. Students should solve these problems using the RDW\napproach used for Application Problems.\n\n\n                          Lesson 16:          Use the distributive property as a strategy to find related multiplication                  209\n                                              facts.\n\n                          ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 214 (debrief) ---\nA STORY OF UNITS                                                                                                  Lesson 16 3 1\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Use the distributive property as a\nstrategy to find related multiplication facts.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Review vocabulary term distribute.\n        Explain how breaking apart or finding the\n         products of two smaller arrays helps find the\n         product of a larger array in Problem 1(d).\n        Share strategies for solving Problem 2.\n        Explain the following sequence:\n                (5 + 3) × 4 =\n                (5 × 4) + (3 × 4) =\n                5 fours + 3 fours =\n                8 fours =\n                8×4=\n        How does the sequence above show a number\n         being distributed?\n        Could the strategy we learned today change your\n         approach to finding the total students in our\n         Application Problem? Why or why not?\n        Why would the strategy we learned today be\n         helpful for solving an even larger fact like 15 × 4?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 16:          Use the distributive property as a strategy to find related multiplication          210\n                                            facts.\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 215 (template) ---\nA STORY OF UNITS                                                                      Lesson 16 Pattern Sheet 3 1\n\n\n      Multiply.\n\n\nmultiply by 4 (6–10)\n\n\n                       Lesson 16:          Use the distributive property as a strategy to find related multiplication   211\n                                           facts.\n\n                       ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 216 (problem-set) ---\nA STORY OF UNITS                                                                            Lesson 16 Problem Set 3 1\n\n\nName                                                                                              Date\n\n1. Label the array. Then, fill in the blanks below to make true number sentences.\n\n\n    a. 6 × 4 = _____                                                                 b. 7 × 4 = _____\n\n\n                               (5 × 4) = 20                                                                                (5 × 4) =\n\n\n                               (1 × 4) =                                                                                   (2 × 4) =\n\n\n                      (6 × 4) = (5 × 4) + (1 × 4)                                                                (7 × 4) = (5 × 4) + (2 × 4)\n\n                               = 20 +                                                                                      =           +\n\n                               =                                                                                           = 28\n\n\n   c. 8 × 4 = _____                                                                  d. 9 × 4 = _____\n\n\n                                   (5 × 4) =\n                                                                                                                           (5 × 4) =\n\n\n                                   (         × 4) =\n                                                                                                                           (      × 4) =\n\n\n                      (8 × 4) = (5 × 4) + (              × 4)                                                    (9 × 4) = (5 × 4) + (         × 4)\n\n                              =                +                                                                           =           +\n\n                              =                                                                                            =\n\n\n                          Lesson 16:          Use the distributive property as a strategy to find related multiplication                   212\n                                              facts.\n\n                          ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 217 (problem-set) ---\nA STORY OF UNITS                                                                             Lesson 16 Problem Set 3 1\n\n\n2. Match the equal expressions.\n\n                                                                                   (5 × 4) + (4 × 4)\n       (5 × 4) + (3 × 4)\n                                                                                                                            (5 × 4) + (2 × 4)\n                                           (5 × 4) + (1 × 4)\n\n\n             9×4                                                                               6×4\n                                                                                                                                         7×4\n\n                                                       8×4\n\n\n              36                                                                                24\n                                                                                                                                          28\n                                                        32\n\n\n3. Nolan draws the array below to find the answer to the multiplication expression 10 × 4. He says, “10 × 4 is\n   just double 5 × 4.” Explain Nolan’s strategy.\n\n\n                           Lesson 16:          Use the distributive property as a strategy to find related multiplication                       213\n                                               facts.\n\n                           ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 218 (exit-ticket) ---\nA STORY OF UNITS                                                                             Lesson 16 Exit Ticket 3 1\n\n\nName                                                                                            Date\n\nDestiny says, “I can use 5 × 4 to find the answer to 7 × 4.” Use the array below to explain Destiny’s strategy\nusing words and numbers.\n\n\n                (7 × 4) = (5 × 4) + (2 × 4)\n\n                       =              +\n\n                       =\n\n\n                        Lesson 16:          Use the distributive property as a strategy to find related multiplication   214\n                                            facts.\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 219 (homework) ---\nA STORY OF UNITS                                                                           Lesson 16 Homework 3 1\n\n\nName                                                                                           Date\n\n1. Label the array. Then, fill in the blanks below to make true number sentences.\n\n   a. 6 × 4 = _____\n\n\n                                              (5 × 4) = 20\n\n\n                                              (         × 4) =                          (6 × 4) = (5 × 4) + (           × 4)\n\n                                                                                                  = 20 +\n\n\n                                                                                                  =\n\n\n   b. 8 × 4 = _____\n\n\n                                                  (5 × 4) =\n\n\n                                                  (         × 4) =\n\n\n                                                                                        (8 × 4) = (5 × 4) + (           × 4)\n\n\n                                                                                                  =              +\n\n\n                                                                                                  =\n\n\n                       Lesson 16:          Use the distributive property as a strategy to find related multiplication          215\n                                           facts.\n\n                       ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 220 (homework) ---\nA STORY OF UNITS                                                                           Lesson 16 Homework 3 1\n\n\n2. Match the multiplication expressions with their answers.\n\n\n                                                                                                4 ×8\n             4×6                                                                                                             4×9\n                                                        4×7\n\n\n                                            32\n\n                                                                                                                        24\n        28                                                                               36\n\n\n3. The array below shows one strategy for solving 9 × 4. Explain the strategy using your own words.\n\n\n                                 (5 × 4) =\n\n\n                                 (4 × 4) =\n\n\n                       Lesson 16:          Use the distributive property as a strategy to find related multiplication          216\n                                           facts.\n\n                       ©2015 Great Minds. eureka-math.org",
+    "problemSetPages": [
+      {
+        "pdfPage": 216,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                            Lesson 16 Problem Set 3 1\n\n\nName                                                                                              Date\n\n1. Label the array. Then, fill in the blanks below to make true number sentences.\n\n\n    a. 6 × 4 = _____                                                                 b. 7 × 4 = _____\n\n\n                               (5 × 4) = 20                                                                                (5 × 4) =\n\n\n                               (1 × 4) =                                                                                   (2 × 4) =\n\n\n                      (6 × 4) = (5 × 4) + (1 × 4)                                                                (7 × 4) = (5 × 4) + (2 × 4)\n\n                               = 20 +                                                                                      =           +\n\n                               =                                                                                           = 28\n\n\n   c. 8 × 4 = _____                                                                  d. 9 × 4 = _____\n\n\n                                   (5 × 4) =\n                                                                                                                           (5 × 4) =\n\n\n                                   (         × 4) =\n                                                                                                                           (      × 4) =\n\n\n                      (8 × 4) = (5 × 4) + (              × 4)                                                    (9 × 4) = (5 × 4) + (         × 4)\n\n                              =                +                                                                           =           +\n\n                              =                                                                                            =\n\n\n                          Lesson 16:          Use the distributive property as a strategy to find related multiplication                   212\n                                              facts.\n\n                          ©2015 Great Minds. eureka-math.org"
+      },
+      {
+        "pdfPage": 217,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                             Lesson 16 Problem Set 3 1\n\n\n2. Match the equal expressions.\n\n                                                                                   (5 × 4) + (4 × 4)\n       (5 × 4) + (3 × 4)\n                                                                                                                            (5 × 4) + (2 × 4)\n                                           (5 × 4) + (1 × 4)\n\n\n             9×4                                                                               6×4\n                                                                                                                                         7×4\n\n                                                       8×4\n\n\n              36                                                                                24\n                                                                                                                                          28\n                                                        32\n\n\n3. Nolan draws the array below to find the answer to the multiplication expression 10 × 4. He says, “10 × 4 is\n   just double 5 × 4.” Explain Nolan’s strategy.\n\n\n                           Lesson 16:          Use the distributive property as a strategy to find related multiplication                       213\n                                               facts.\n\n                           ©2015 Great Minds. eureka-math.org"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 319,
+        "text": "A STORY OF UNITS                                                                       Lesson 16 Answer Key 3 1\n\n\nLesson 16\nPattern Sheet\n             4                                    8                                    12                         16\n            20                                    24                                   28                         32\n            36                                    40                                   24                         28\n            24                                    32                                   24                         36\n            24                                    40                                   24                         28\n            24                                    28                                   32                         28\n            36                                    28                                   40                         28\n            32                                    24                                   32                         28\n            32                                    36                                   32                         40\n            32                                    36                                   24                         36\n            28                                    36                                   32                         36\n            40                                    36                                   40                         24\n            40                                    28                                   40                         32\n            40                                    36                                   40                         24\n            32                                    40                                   28                         36\n\n\nProblem Set\n1.    a. 24; 4; 4, 24\n      b. 28; 20; 8; 20, 8\n      c. 32; 20; 3, 12; 3, 20, 12, 32\n      d. 36; 20; 4, 16; 4, 20, 16, 36\n2.    First cloud matched to 8 × 4; second cloud matched to 6 × 4; third cloud matched to 9 × 4;\n      fourth cloud matched to 7 × 4\n3.    10 fours broken into two smaller facts: 5 fours and 5 fours, or 5 fours doubled; sum of two smaller\n      facts found to answer larger fact\n\n\n                        Module 1:           Properties of Multiplication and Division and Solving Problems with        315\n                                            Units of 2–5 and 10\n\n                        ©2015 Great Minds. eureka-math.org"
+      },
+      {
+        "pdfPage": 320,
+        "text": "A STORY OF UNITS                                                                         Lesson 16 Answer Key 3 1\n\n\nExit Ticket\n8; 20, 8, 28; 7 fours broken into two smaller facts: 5 fours and 2 fours; sum of two smaller facts found to\nanswer larger fact\n\n\nHomework\n1.    a. 24; 1, 4; 1, 4, 24\n      b. 32; 20; 3, 12; 3, 20, 12, 32\n2.    First sun matched to 24; second sun matched to 28; third sun matched to 32;\n      fourth sun matched to 36\n3.    20; 16; 9 fours broken into two smaller facts: 5 fours and 4 fours; sum of two smaller facts found to\n      answer larger fact\n\n\n                           Module 1:           Properties of Multiplication and Division and Solving Problems with   316\n                                               Units of 2–5 and 10\n\n                           ©2015 Great Minds. eureka-math.org"
+      }
+    ]
+  }
+}

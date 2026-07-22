@@ -490,7 +490,7 @@ export type ProblemVisualGeometryDiagramSection = {
   diagram: 'rectangle' | 'polygon' | 'perimeter' | 'circle-string' | 'robot' | 'one-half' | 'composite';
   shapes: Array<{
     label: string;
-    shape: 'rectangle' | 'square' | 'circle' | 'polygon' | 'l-shape' | 'triangle';
+    shape: 'rectangle' | 'square' | 'circle' | 'polygon' | 'l-shape' | 'triangle' | 'right-triangle' | 'parallelogram' | 'trapezoid' | 'rhombus' | 'kite' | 'pentagon' | 'hexagon';
     x: number;
     y: number;
     width: number;

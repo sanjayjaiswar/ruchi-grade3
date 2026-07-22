@@ -1,0 +1,429 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m4-l11",
+  "moduleId": "m4",
+  "lessonNumber": 11,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+    "teacherEditionBytes": 10725683,
+    "lessonPdfPages": {
+      "start": 138,
+      "end": 149
+    },
+    "problemSetPdfPages": [
+      143,
+      144
+    ],
+    "exitTicketPdfPages": [
+      145
+    ],
+    "homeworkPdfPages": [
+      146,
+      147
+    ],
+    "answerKeyPdfPages": [
+      227
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m4-student/workbook-page-049.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m4-teacher/page-143.png",
+      "/source-pages/m4-teacher/page-144.png",
+      "/source-pages/m4-teacher/page-227.png"
+    ]
+  },
+  "objective": "Demonstrate the possible whole number side lengths of rectangles with areas of 24, 36, 48, or 72 square units using the associative property.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.                                                                  width of the rectangle change the\n                                                                                                                   shape?”\n\n\n                           Lesson 11:                 Demonstrate the possible whole number side lengths of rectangles\n                                                      with areas of 24, 36, 48, or 72 square units using the associative                                140\n                                                      property.\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 11 3 4",
+    "conceptDevelopmentText": "12\nMaterials: (S) Personal white board\n                                                                 3\n    T:   Write an expression to show how to find the\n         area of a rectangle with side lengths 3 and 12.\n    S:   (Write 3 × 12.)\n    T:   In the Application Problem, you found that 3 times 12 is…?\n    S:   36.\n    T:   So, the area of this rectangle is…?\n    S:   36 square units!\n    T:   (Write 3 × (2 × 6).) Why is this expression equal to the one you just wrote?\n    S:   Because you just wrote 12 as 2 × 6.\n    T:   Write this expression on your personal white board with the parentheses in a different place. At my\n         signal, show me your board. (Signal.)\n    S:   (Show (3 × 2) × 6.)\n    T:   Solve 3 × 2, and write the new expression on your board. (Allow students time to work.) Whisper\n         the new expression to a partner.\n    S:   6 × 6.\n    T:   What new side lengths did we find for a rectangle with an area of 36 square units?\n    S:   6 and 6.\n    T:   Let’s look at our expression, (3 × 2) × 6, again. Use the commutative property and switch the order\n         of the factors in the parentheses.\n    S:   (Write (2 × 3) × 6.)\n    T:   Will you be able to find new side lengths by moving the parentheses?\n    S:   (Write 2 × (3 × 6).) Yes, they will be 2 and 18.\n    T:   (Write 3 × (3 × 4).) Why is this expression equal to our first one, 3 × 12?\n    S:   Because you wrote 12 as 3 × 4.\n    T:   Write this expression on your board with the parentheses in a different place. At my signal, show\n         me your board. (Signal.)\n    S:   (Show (3 × 3) × 4.)\n    T:   Solve 3 × 3 and write the expression on your board. (Allow students time to work.) Whisper the new\n         expression to a partner.\n    S:   9 × 4.\n\n\n                       Lesson 11:                 Demonstrate the possible whole number side lengths of rectangles\n                                                  with areas of 24, 36, 48, or 72 square units using the associative                        139\n                                                  property.\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 11 3 4\n\n\n       T:   What new side lengths did we find for a rectangle with an area of 36 square units?\n       S:   9 and 4.\n       T:   Let’s look at our expression (3 × 3) × 4 again. If I use the commutative property and switch the order\n            of the factors in the parentheses, will I be able to find new side lengths by moving the parentheses?\n       S:   No, it will still be 9 and 4.  No, because both factors in the parentheses are 3, so switching their\n            order won’t change the numbers you get when you move the parentheses.\n       T:   Do you think we found all the possible whole number side lengths for this rectangle?\n       S:   Yes.  I’m not sure.\n       T:   Let’s look at our side lengths. Do you have a side length of 1?\n       S:   No! We forgot the easiest one.  It’s 1 and 36.\n       T:   Do we have a side length of 2?\n       S:   Yes.\n       T:   3?\n       S:   Yes.\n       T:   Work with a partner to look at the rest of your side lengths to see if you have the numbers 4 through\n            10. (Allow students time to work.) Which of these numbers, 4 through 10, aren’t included in your\nMP.3        side lengths?\n       S:   5, 7, 8, and 10.\n       T:   Discuss with a partner why these numbers aren’t in your list of side lengths.\n       S:   5, 7, 8, and 10 can’t be side lengths because there aren’t any whole numbers we can multiply these\n            numbers by to get 36.\n       T:   Would any two-digit number times two-digit number work?\n       S:   No, they would be too big.  No, because we know\n            10 × 10 equals 100, and that’s greater than 36.                               NOTES ON\n       T:   Now, do you think we found all the possible side whole                        MULTIPLE MEANS\n            number side lengths for a rectangle with an area of 36                        OF REPRESENTATION:\n            square units?                                                         Extend Problem 1 for students working\n       S:   Yes!                                                                  above grade level by inviting\n                                                                                                                   experimentation and choice in placing\n  Repeat the process with rectangles that have areas of 24, 48,                                                    parentheses, as well as number order,\n  and 72 square units.                                                                                             in the multiplication sentences. For\n                                                                                                                   example, ask, “What would happen if",
+    "fluencyPracticeText": " Group Counting 3.OA.1                                            (3 minutes)\n Find the Unknown Factor 3.OA.4                                   (5 minutes)\n Find the Area 3.MD.7                                             (5 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally changing the direction of the count.\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\nFind the Unknown Factor (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity anticipates the objective of today’s lesson.\n    T:   (Write 6 ×     = 12.) Find the unknown factor, and say the equation.\n    S:   6 × 2 = 12.\nContinue with the following possible sequence: 4 ×                            = 12, 2 ×            = 12, and 3 ×                  = 12.\n\n\n                        Lesson 11:                 Demonstrate the possible whole number side lengths of rectangles\n                                                   with areas of 24, 36, 48, or 72 square units using the associative                           137\n                                                   property.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                                  Lesson 11 3 4\n\n\n    T:   (Write 3 ×     = 24.) Copy my equation on your personal white board, and fill in the unknown factor.\n    S:   (Write 3 × 8 = 24.)\nContinue with the following possible sequence: 4 ×                              = 24, 8 ×    = 24, 6 ×   = 36, 4 ×                          = 36, 6 ×   = 24,\n9×    = 36, 9 ×    = 72, 6 ×   = 48, 8 ×   = 72, 8 ×                             = 48, and 2 ×     = 24.\n\nFind the Area (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews using the distributive property\n                                                                                                                            5                       3\nfrom Lesson 10.\n    T:   (Project the rectangle as shown.) On your personal\n                                                                       3\n         white board, write an expression that we could use to\n         find the area of the shaded rectangle.\n    S:   (Write 3 × 5.)\n    T:   On your board, write an expression that we could use to find\n         the area of the unshaded rectangle.                                                                                        Sample Work\n    S:   (Write 3 × 3.)\n                                                                                                                                    (3 × 5) + (3 × 3)\n    T:   How can you use these expressions to find the area of the large\n         rectangle?                                                                                                                 = 15 + 9\n    S:   Add them!                                                                                                                  = 24\n    T:   Write an equation showing the sum of the shaded and\n         unshaded rectangles. Below it, write the area of the\n         entire rectangle.\n    S:   (Write 15 + 9 = 24 and Area: 24 square units.)                                                                       NOTES ON\nContinue with the following possible sequence:                                                                                MULTIPLE MEANS\n9 × 5 = (5 × 5) + (4 × 5), 13 × 4 = (10 × 4) + (3 × 4), and                                                                   OF ENGAGEMENT:\n17 × 3 = (10 × 3) + (7 × 3).                                                                                      Alternatively, challenge students\n                                                                                                                  working above grade level with this\n                                                                                                                  length unknown version:",
+    "problemSetGuidanceText": "we changed it to 4 × 6 × 2?” Encourage\n                                                                                                                   students to discuss or journal about\n  Students should do their personal best to complete the Problem                                                   their discoveries.\n  Set within the allotted 10 minutes. For some classes, it may be                                                  Assist English language learners by\n  appropriate to modify the assignment by specifying which                                                         rephrasing Problem 4 in multiple ways.\n  problems they work on first. Some problems do not specify a                                                      Ask the following: “How does the\n  method for solving. Students should solve these problems using                                                   difference between the length and\n  the RDW approach used for Application Problems.                                                                  width of the rectangle change the\n                                                                                                                   shape?”\n\n\n                           Lesson 11:                 Demonstrate the possible whole number side lengths of rectangles\n                                                      with areas of 24, 36, 48, or 72 square units using the associative                                140\n                                                      property.\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 11 3 4",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Write an expression to show how to find the area of a rectangle with side lengths 3 and 12."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 3 × 12.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "In the Application Problem, you found that 3 times 12 is…?"
+      },
+      {
+        "speaker": "students",
+        "text": "36."
+      },
+      {
+        "speaker": "teacher",
+        "text": "So, the area of this rectangle is…?"
+      },
+      {
+        "speaker": "students",
+        "text": "36 square units!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 3 × (2 × 6).) Why is this expression equal to the one you just wrote?"
+      },
+      {
+        "speaker": "students",
+        "text": "Because you just wrote 12 as 2 × 6."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write this expression on your personal white board with the parentheses in a different place. At my signal, show me your board. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Show (3 × 2) × 6.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Solve 3 × 2, and write the new expression on your board. (Allow students time to work.) Whisper the new expression to a partner."
+      },
+      {
+        "speaker": "students",
+        "text": "6 × 6."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What new side lengths did we find for a rectangle with an area of 36 square units?"
+      },
+      {
+        "speaker": "students",
+        "text": "6 and 6."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s look at our expression, (3 × 2) × 6, again. Use the commutative property and switch the order of the factors in the parentheses."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write (2 × 3) × 6.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Will you be able to find new side lengths by moving the parentheses?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 2 × (3 × 6).) Yes, they will be 2 and 18."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 3 × (3 × 4).) Why is this expression equal to our first one, 3 × 12?"
+      },
+      {
+        "speaker": "students",
+        "text": "Because you wrote 12 as 3 × 4."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write this expression on your board with the parentheses in a different place. At my signal, show me your board. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Show (3 × 3) × 4.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Solve 3 × 3 and write the expression on your board. (Allow students time to work.) Whisper the new expression to a partner."
+      },
+      {
+        "speaker": "students",
+        "text": "9 × 4. with areas of 24, 36, 48, or 72 square units using the associative 139 property. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 11 3 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What new side lengths did we find for a rectangle with an area of 36 square units?"
+      },
+      {
+        "speaker": "students",
+        "text": "9 and 4."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s look at our expression (3 × 3) × 4 again. If I use the commutative property and switch the order of the factors in the parentheses, will I be able to find new side lengths by moving the parentheses?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, it will still be 9 and 4.  No, because both factors in the parentheses are 3, so switching their order won’t change the numbers you get when you move the parentheses."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Do you think we found all the possible whole number side lengths for this rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes.  I’m not sure."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s look at our side lengths. Do you have a side length of 1?"
+      },
+      {
+        "speaker": "students",
+        "text": "No! We forgot the easiest one.  It’s 1 and 36."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Do we have a side length of 2?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "3?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with a partner to look at the rest of your side lengths to see if you have the numbers 4 through 10. (Allow students time to work.) Which of these numbers, 4 through 10, aren’t included in your MP.3 side lengths?"
+      },
+      {
+        "speaker": "students",
+        "text": "5, 7, 8, and 10."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Discuss with a partner why these numbers aren’t in your list of side lengths."
+      },
+      {
+        "speaker": "students",
+        "text": "5, 7, 8, and 10 can’t be side lengths because there aren’t any whole numbers we can multiply these numbers by to get 36."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Would any two-digit number times two-digit number work?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, they would be too big.  No, because we know 10 × 10 equals 100, and that’s greater than 36. NOTES ON"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, do you think we found all the possible side whole MULTIPLE MEANS number side lengths for a rectangle with an area of 36 OF REPRESENTATION: square units? Extend Problem 1 for students working"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes! above grade level by inviting experimentation and choice in placing Repeat the process with rectangles that have areas of 24, 48, parentheses, as well as number order, and 72 square units. in the multiplication sentences. For example, ask, “What would happen if"
+      }
+    ],
+    "teacherPrompts": [
+      "Write an expression to show how to find the area of a rectangle with side lengths 3 and 12.",
+      "In the Application Problem, you found that 3 times 12 is…?",
+      "So, the area of this rectangle is…?",
+      "(Write 3 × (2 × 6).) Why is this expression equal to the one you just wrote?",
+      "Write this expression on your personal white board with the parentheses in a different place. At my signal, show me your board. (Signal.)",
+      "Solve 3 × 2, and write the new expression on your board. (Allow students time to work.) Whisper the new expression to a partner.",
+      "What new side lengths did we find for a rectangle with an area of 36 square units?",
+      "Let’s look at our expression, (3 × 2) × 6, again. Use the commutative property and switch the order of the factors in the parentheses.",
+      "Will you be able to find new side lengths by moving the parentheses?",
+      "(Write 3 × (3 × 4).) Why is this expression equal to our first one, 3 × 12?",
+      "Write this expression on your board with the parentheses in a different place. At my signal, show me your board. (Signal.)",
+      "Solve 3 × 3 and write the expression on your board. (Allow students time to work.) Whisper the new expression to a partner.",
+      "What new side lengths did we find for a rectangle with an area of 36 square units?",
+      "Let’s look at our expression (3 × 3) × 4 again. If I use the commutative property and switch the order of the factors in the parentheses, will I be able to find new side lengths by moving the parentheses?",
+      "Do you think we found all the possible whole number side lengths for this rectangle?",
+      "Let’s look at our side lengths. Do you have a side length of 1?",
+      "Do we have a side length of 2?",
+      "3?",
+      "Work with a partner to look at the rest of your side lengths to see if you have the numbers 4 through 10. (Allow students time to work.) Which of these numbers, 4 through 10, aren’t included in your MP.3 side lengths?",
+      "Discuss with a partner why these numbers aren’t in your list of side lengths.",
+      "Would any two-digit number times two-digit number work?",
+      "Now, do you think we found all the possible side whole MULTIPLE MEANS number side lengths for a rectangle with an area of 36 OF REPRESENTATION: square units? Extend Problem 1 for students working"
+    ],
+    "debriefPrompt": "Turn your paper horizontally and look at Problem 1. What property does this show?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "The rectangles below have the same area. Move the parentheses to find the unknown side lengths. Then, solve. a. 6 cm b. ____ cm 1 cm 8 cm Area: 1 × 48 = ____ Area: ____ sq cm Area: 8 × ____ = ____ Area: ____ sq cm Area: 8 × 6 = (2 × 4) × 6 c. ____cm =2×4×6 2 cm = ____ × ____ d. ____ cm = ____ 4 cm Area: ____ sq cm e. ____ cm Area: 8 × 6 = (4 × 2) × 6 =4×2×6 Area: 8 × 6 = 8 × (2 × 3) = ____ × ____ ____ cm =8×2×3 = ____ = ____ × ____ Area: ____ sq cm = ____ Area: ____ sq cm",
+        "equations": [
+          "1 × 48 = ____",
+          "8 × ____ = ____",
+          "8 × 6",
+          "2 × 4"
+        ]
+      },
+      {
+        "number": 2,
+        "prompt": "Does Problem 1 show all the possible whole number side lengths for a rectangle with an area of 48 square centimeters? How do you know? with areas of 24, 36, 48, or 72 square units using the associative 48 property. In Problem 1, what happens to the shape of the rectangle as the difference between the side lengths gets smaller? 4. a. Find the area of the rectangle below. 8 cm 9 cm b. Julius says a 4 cm by 18 cm rectangle has the same area as the rectangle in Part (a). Place parentheses in the equation to find the related fact and solve. Is Julius correct? Why or why not? 4 × 18 = 4 × 2 × 9 =4×2×9 = ____ × ____ = ____ Area: ____ sq cm c. Use the expression 8 × 9 to find different side lengths for a rectangle that has the same area as the rectangle in Part (a). Show your equations using parentheses. Then, estimate to draw the rectangle and label the side lengths. with areas of 24, 36, 48, or 72 square units using the associative 49 property.",
+        "equations": [
+          "4 × 18 = 4",
+          "2 × 9 =4",
+          "2×9 = ____",
+          "____ = ____"
+        ]
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                     Lesson 11 Problem Set 3 4\n\n\nName                                                                                                          Date\n1.    The rectangles below have the same area. Move the parentheses to find the unknown side lengths.\n      Then, solve.\n      a.        6 cm                                     b.                                           ______ cm\n                                               1 cm\n       8 cm                                                                        Area: 1 × 48 = ______\n\n                                                                                                  Area: ______ sq cm\n\n Area: 8 × ______ = ______\n\n                 Area: ______ sq cm\n                                                                                                                      Area: 8 × 6 = (2 × 4) × 6\n                                                                   c.                  ______cm\n                                                                                                                                        =2×4×6\n                                                     2 cm\n                                                                                                                                        = ______ × ______\n      d.       ______ cm\n                                                                                                                                        = ______\n4 cm                                                                                                                                 Area: ______ sq cm\n                                                                   e.                 ______ cm\n     Area: 8 × 6 = (4 × 2) × 6\n                 =4×2×6                                                                                       Area: 8 × 6 = 8 × (2 × 3)\n\n                 = ______ × ______                                  ______ cm                                                       =8×2×3\n\n                 = ______                                                                                                           = ______ × ______\n\n              Area: ______ sq cm                                                                                                    = ______\n                                                                                                                             Area: ______ sq cm\n\n\n2.    Does Problem 1 show all the possible whole number side lengths for a rectangle with an area of 48\n      square centimeters? How do you know?\n\n\n                          Lesson 11:                 Demonstrate the possible whole number side lengths of rectangles\n                                                     with areas of 24, 36, 48, or 72 square units using the associative                                 142\n                                                     property.\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                    Lesson 11 Problem Set 3 4\n\n\n3.   In Problem 1, what happens to the shape of the rectangle as the difference between the side lengths\n     gets smaller?\n\n\n4.   a.   Find the area of the rectangle below.\n                 8 cm\n\n\n      9 cm\n\n\n     b.   Julius says a 4 cm by 18 cm rectangle has the same area as the rectangle in Part (a). Place\n          parentheses in the equation to find the related fact and solve. Is Julius correct? Why or why not?\n\n             4 × 18 = 4 × 2 × 9\n                    =4×2×9\n                    = ______ × ______\n                    = ______\n                Area: _____ sq cm\n\n\n     c.   Use the expression 8 × 9 to find different side lengths for a rectangle that has the same area as the\n          rectangle in Part (a). Show your equations using parentheses. Then, estimate to draw the rectangle\n          and label the side lengths.\n\n\n                         Lesson 11:                 Demonstrate the possible whole number side lengths of rectangles\n                                                    with areas of 24, 36, 48, or 72 square units using the associative             143\n                                                    property.\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    a. 6, 48; 48\n      b. 48, 48; 48\n      c. 24; 2, 24; 48; 48\n      d. 12; 4, 12; 48; 48\n      e. 16, 3; 16, 3; 48; 48\n2.    Yes; answers will vary.\n3.    Answers will vary.\n4.    a. 72 sq cm\n      b. 8, 9; 72; 72; yes; answers will vary.\n      c. Answers will vary.",
+    "answerKeyText": "A STORY OF UNITS                                                                                         Lesson 11 Answer Key 3 4\n\n\nLesson 11\nProblem Set\n1.    a. 6, 48; 48\n      b. 48, 48; 48\n      c. 24; 2, 24; 48; 48\n      d. 12; 4, 12; 48; 48\n      e. 16, 3; 16, 3; 48; 48\n2.    Yes; answers will vary.\n3.    Answers will vary.\n4.    a. 72 sq cm\n      b. 8, 9; 72; 72; yes; answers will vary.\n      c. Answers will vary.\n\n\nExit Ticket\n1.    64 sq cm\n2.    4, 16; 4, 16; 64; 64\n\n\nHomework\n1.    a. 9, 36; 36\n      b. 36; 36\n      c. 18; 2, 18; 36; 36\n      d. 12, 3; 12, 3; 36; 36\n      e. 6, 6; 6, 6; 36; 36\n2.    Yes, answers will vary.\n3.    a. 48 sq cm\n      b. 8, 6; 48; 48; yes; answers will vary.\n      c. Answers will vary.\n\n\n                        Module 4:                  Multiplication and Area                                                          226\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "ruler-or-length",
+      "area-model",
+      "geometry-diagram",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "ruler-or-length": [
+        "Demonstrate the possible whole number side lengths of rectangles with areas of 24, 36, 48, or 72 square units using the associative property.",
+        "Lesson 11: Demonstrate the possible whole number side lengths of rectangles",
+        "area of a rectangle with side lengths 3 and 12.",
+        "T: What new side lengths did we find for a rectangle with an area of 36 square units?",
+        "T: Will you be able to find new side lengths by moving the parentheses?",
+        "Lesson 11: Demonstrate the possible whole number side lengths of rectangles",
+        "T: What new side lengths did we find for a rectangle with an area of 36 square units?",
+        "of the factors in the parentheses, will I be able to find new side lengths by moving the parentheses?"
+      ],
+      "area-model": [
+        "Demonstrate the possible whole number side lengths of rectangles with areas of 24, 36, 48, or 72 square units using the associative property.",
+        "with areas of 24, 36, 48, or 72 square units using the associative 140",
+        "S: 36 square units!",
+        "T: What new side lengths did we find for a rectangle with an area of 36 square units?",
+        "with areas of 24, 36, 48, or 72 square units using the associative 139",
+        "T: What new side lengths did we find for a rectangle with an area of 36 square units?",
+        "square units? Extend Problem 1 for students working",
+        "and 72 square units. in the multiplication sentences. For"
+      ],
+      "geometry-diagram": [
+        "Demonstrate the possible whole number side lengths of rectangles with areas of 24, 36, 48, or 72 square units using the associative property.",
+        "s. width of the rectangle change the",
+        "Lesson 11: Demonstrate the possible whole number side lengths of rectangles",
+        "area of a rectangle with side lengths 3 and 12.",
+        "T: So, the area of this rectangle is…?",
+        "T: What new side lengths did we find for a rectangle with an area of 36 square units?",
+        "Lesson 11: Demonstrate the possible whole number side lengths of rectangles",
+        "T: What new side lengths did we find for a rectangle with an area of 36 square units?"
+      ],
+      "money-model": [
+        "s. width of the rectangle change the",
+        "order won’t change the numbers you get when you move the parentheses.",
+        "square centimeters? How do you know?"
+      ],
+      "picture-or-drawing": [
+        "find the area of the shaded rectangle.",
+        "the area of the unshaded rectangle. Sample Work",
+        "T: Write an equation showing the sum of the shaded and",
+        "unshaded rectangles. Below it, write the area of the",
+        "rectangle in Part (a). Show your equations using parentheses. Then, estimate to draw the rectangle"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Write an expression to show how to find the area of a rectangle with side lengths 3 and 12."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 3 × 12.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 3 × (2 × 6).) Why is this expression equal to the one you just wrote?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write this expression on your personal white board with the parentheses in a different place. At my signal, show me your board. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Show (3 × 2) × 6.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Solve 3 × 2, and write the new expression on your board. (Allow students time to work.) Whisper the new expression to a partner."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write (2 × 3) × 6.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 2 × (3 × 6).) Yes, they will be 2 and 18."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 3 × (3 × 4).) Why is this expression equal to our first one, 3 × 12?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write this expression on your board with the parentheses in a different place. At my signal, show me your board. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Show (3 × 3) × 4.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Solve 3 × 3 and write the expression on your board. (Allow students time to work.) Whisper the new expression to a partner."
+      },
+      {
+        "speaker": "students",
+        "text": "No, it will still be 9 and 4.  No, because both factors in the parentheses are 3, so switching their order won’t change the numbers you get when you move the parentheses."
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 138 (debrief) ---\nA STORY OF UNITS                                                                                                                  Lesson 11 3 4\n\n\nLesson 11\nObjective: Demonstrate the possible whole number side lengths of\nrectangles with areas of 24, 36, 48, or 72 square units using the associative\nproperty.\n\nSuggested Lesson Structure\n\n Fluency Practice                 (13 minutes)\n Application Problem              (5 minutes)\n Concept Development              (32 minutes)\n Student Debrief                  (10 minutes)\n   Total Time                      (60 minutes)\n\n\nFluency Practice (13 minutes)\n\n Group Counting 3.OA.1                                            (3 minutes)\n Find the Unknown Factor 3.OA.4                                   (5 minutes)\n Find the Area 3.MD.7                                             (5 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally changing the direction of the count.\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\nFind the Unknown Factor (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity anticipates the objective of today’s lesson.\n    T:   (Write 6 ×     = 12.) Find the unknown factor, and say the equation.\n    S:   6 × 2 = 12.\nContinue with the following possible sequence: 4 ×                            = 12, 2 ×            = 12, and 3 ×                  = 12.\n\n\n                        Lesson 11:                 Demonstrate the possible whole number side lengths of rectangles\n                                                   with areas of 24, 36, 48, or 72 square units using the associative                           137\n                                                   property.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 139 (application-problem) ---\nA STORY OF UNITS                                                                                                                  Lesson 11 3 4\n\n\n    T:   (Write 3 ×     = 24.) Copy my equation on your personal white board, and fill in the unknown factor.\n    S:   (Write 3 × 8 = 24.)\nContinue with the following possible sequence: 4 ×                              = 24, 8 ×    = 24, 6 ×   = 36, 4 ×                          = 36, 6 ×   = 24,\n9×    = 36, 9 ×    = 72, 6 ×   = 48, 8 ×   = 72, 8 ×                             = 48, and 2 ×     = 24.\n\nFind the Area (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews using the distributive property\n                                                                                                                            5                       3\nfrom Lesson 10.\n    T:   (Project the rectangle as shown.) On your personal\n                                                                       3\n         white board, write an expression that we could use to\n         find the area of the shaded rectangle.\n    S:   (Write 3 × 5.)\n    T:   On your board, write an expression that we could use to find\n         the area of the unshaded rectangle.                                                                                        Sample Work\n    S:   (Write 3 × 3.)\n                                                                                                                                    (3 × 5) + (3 × 3)\n    T:   How can you use these expressions to find the area of the large\n         rectangle?                                                                                                                 = 15 + 9\n    S:   Add them!                                                                                                                  = 24\n    T:   Write an equation showing the sum of the shaded and\n         unshaded rectangles. Below it, write the area of the\n         entire rectangle.\n    S:   (Write 15 + 9 = 24 and Area: 24 square units.)                                                                       NOTES ON\nContinue with the following possible sequence:                                                                                MULTIPLE MEANS\n9 × 5 = (5 × 5) + (4 × 5), 13 × 4 = (10 × 4) + (3 × 4), and                                                                   OF ENGAGEMENT:\n17 × 3 = (10 × 3) + (7 × 3).                                                                                      Alternatively, challenge students\n                                                                                                                  working above grade level with this\n                                                                                                                  length unknown version:\nApplication Problem (5 minutes)                                                                                   One fourth of the banquet table has an\n                                                                                                                  area of 9 square feet. If the width of\nThe banquet table in a restaurant measures 3 feet by 6 feet.                                                      the table is 3 feet, what is the length?\nFor a large party, workers at the restaurant place 2 banquet                                                      What is the area of the table?\ntables side by side to create 1 long table. Find the area of the\nnew, longer table.\n\n\n                          Lesson 11:                 Demonstrate the possible whole number side lengths of rectangles\n                                                     with areas of 24, 36, 48, or 72 square units using the associative                                  138\n                                                     property.\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 140 (concept-development) ---\nA STORY OF UNITS                                                                                                              Lesson 11 3 4\n\n\nNote: This problem reviews Lesson 10’s concept of applying the distributive property to find the total area of\na large rectangle by adding two products. It also reviews factors of 36 and multiples of 12 that lead into the\nConcept Development.\n\n\nConcept Development (32 minutes)\n                                                                                                                           12\nMaterials: (S) Personal white board\n                                                                 3\n    T:   Write an expression to show how to find the\n         area of a rectangle with side lengths 3 and 12.\n    S:   (Write 3 × 12.)\n    T:   In the Application Problem, you found that 3 times 12 is…?\n    S:   36.\n    T:   So, the area of this rectangle is…?\n    S:   36 square units!\n    T:   (Write 3 × (2 × 6).) Why is this expression equal to the one you just wrote?\n    S:   Because you just wrote 12 as 2 × 6.\n    T:   Write this expression on your personal white board with the parentheses in a different place. At my\n         signal, show me your board. (Signal.)\n    S:   (Show (3 × 2) × 6.)\n    T:   Solve 3 × 2, and write the new expression on your board. (Allow students time to work.) Whisper\n         the new expression to a partner.\n    S:   6 × 6.\n    T:   What new side lengths did we find for a rectangle with an area of 36 square units?\n    S:   6 and 6.\n    T:   Let’s look at our expression, (3 × 2) × 6, again. Use the commutative property and switch the order\n         of the factors in the parentheses.\n    S:   (Write (2 × 3) × 6.)\n    T:   Will you be able to find new side lengths by moving the parentheses?\n    S:   (Write 2 × (3 × 6).) Yes, they will be 2 and 18.\n    T:   (Write 3 × (3 × 4).) Why is this expression equal to our first one, 3 × 12?\n    S:   Because you wrote 12 as 3 × 4.\n    T:   Write this expression on your board with the parentheses in a different place. At my signal, show\n         me your board. (Signal.)\n    S:   (Show (3 × 3) × 4.)\n    T:   Solve 3 × 3 and write the expression on your board. (Allow students time to work.) Whisper the new\n         expression to a partner.\n    S:   9 × 4.\n\n\n                       Lesson 11:                 Demonstrate the possible whole number side lengths of rectangles\n                                                  with areas of 24, 36, 48, or 72 square units using the associative                        139\n                                                  property.\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 141 (application-problem) ---\nA STORY OF UNITS                                                                                                              Lesson 11 3 4\n\n\n       T:   What new side lengths did we find for a rectangle with an area of 36 square units?\n       S:   9 and 4.\n       T:   Let’s look at our expression (3 × 3) × 4 again. If I use the commutative property and switch the order\n            of the factors in the parentheses, will I be able to find new side lengths by moving the parentheses?\n       S:   No, it will still be 9 and 4.  No, because both factors in the parentheses are 3, so switching their\n            order won’t change the numbers you get when you move the parentheses.\n       T:   Do you think we found all the possible whole number side lengths for this rectangle?\n       S:   Yes.  I’m not sure.\n       T:   Let’s look at our side lengths. Do you have a side length of 1?\n       S:   No! We forgot the easiest one.  It’s 1 and 36.\n       T:   Do we have a side length of 2?\n       S:   Yes.\n       T:   3?\n       S:   Yes.\n       T:   Work with a partner to look at the rest of your side lengths to see if you have the numbers 4 through\n            10. (Allow students time to work.) Which of these numbers, 4 through 10, aren’t included in your\nMP.3        side lengths?\n       S:   5, 7, 8, and 10.\n       T:   Discuss with a partner why these numbers aren’t in your list of side lengths.\n       S:   5, 7, 8, and 10 can’t be side lengths because there aren’t any whole numbers we can multiply these\n            numbers by to get 36.\n       T:   Would any two-digit number times two-digit number work?\n       S:   No, they would be too big.  No, because we know\n            10 × 10 equals 100, and that’s greater than 36.                               NOTES ON\n       T:   Now, do you think we found all the possible side whole                        MULTIPLE MEANS\n            number side lengths for a rectangle with an area of 36                        OF REPRESENTATION:\n            square units?                                                         Extend Problem 1 for students working\n       S:   Yes!                                                                  above grade level by inviting\n                                                                                                                   experimentation and choice in placing\n  Repeat the process with rectangles that have areas of 24, 48,                                                    parentheses, as well as number order,\n  and 72 square units.                                                                                             in the multiplication sentences. For\n                                                                                                                   example, ask, “What would happen if\n  Problem Set (10 minutes)                                                                                         we changed it to 4 × 6 × 2?” Encourage\n                                                                                                                   students to discuss or journal about\n  Students should do their personal best to complete the Problem                                                   their discoveries.\n  Set within the allotted 10 minutes. For some classes, it may be                                                  Assist English language learners by\n  appropriate to modify the assignment by specifying which                                                         rephrasing Problem 4 in multiple ways.\n  problems they work on first. Some problems do not specify a                                                      Ask the following: “How does the\n  method for solving. Students should solve these problems using                                                   difference between the length and\n  the RDW approach used for Application Problems.                                                                  width of the rectangle change the\n                                                                                                                   shape?”\n\n\n                           Lesson 11:                 Demonstrate the possible whole number side lengths of rectangles\n                                                      with areas of 24, 36, 48, or 72 square units using the associative                                140\n                                                      property.\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 142 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 11 3 4\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Demonstrate the possible whole\nnumber side lengths of rectangles with areas of 24, 36,\n48, or 72 square units using the associative property.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers\nwith a partner before going over answers as a class.\nLook for misconceptions or misunderstandings that can\nbe addressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process\nthe lesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Turn your paper horizontally and look at\n         Problem 1. What property does this show?\n        Share your answer to Problem 2 with a partner.\n        Discuss your answer to Problem 4 with a partner.\n         What would the rectangle look like if the\n         difference between side lengths was 0?\n         How do you know?\n        Compare your answer to Problem 4(c) with a\n         partner’s. Did you both come up with the same\n         side lengths? Why or why not?\n        Explain to a partner how to use the strategy we\n         learned today to find all possible whole number\n         side lengths for a rectangle with an area of 60\n         square units.\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help you assess\nthe students’ understanding of the concepts that were\npresented in the lesson today and plan more effectively\nfor future lessons. You may read the questions aloud to\nthe students.\n\n\n                        Lesson 11:                 Demonstrate the possible whole number side lengths of rectangles\n                                                   with areas of 24, 36, 48, or 72 square units using the associative                        141\n                                                   property.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 143 (problem-set) ---\nA STORY OF UNITS                                                                                     Lesson 11 Problem Set 3 4\n\n\nName                                                                                                          Date\n1.    The rectangles below have the same area. Move the parentheses to find the unknown side lengths.\n      Then, solve.\n      a.        6 cm                                     b.                                           ______ cm\n                                               1 cm\n       8 cm                                                                        Area: 1 × 48 = ______\n\n                                                                                                  Area: ______ sq cm\n\n Area: 8 × ______ = ______\n\n                 Area: ______ sq cm\n                                                                                                                      Area: 8 × 6 = (2 × 4) × 6\n                                                                   c.                  ______cm\n                                                                                                                                        =2×4×6\n                                                     2 cm\n                                                                                                                                        = ______ × ______\n      d.       ______ cm\n                                                                                                                                        = ______\n4 cm                                                                                                                                 Area: ______ sq cm\n                                                                   e.                 ______ cm\n     Area: 8 × 6 = (4 × 2) × 6\n                 =4×2×6                                                                                       Area: 8 × 6 = 8 × (2 × 3)\n\n                 = ______ × ______                                  ______ cm                                                       =8×2×3\n\n                 = ______                                                                                                           = ______ × ______\n\n              Area: ______ sq cm                                                                                                    = ______\n                                                                                                                             Area: ______ sq cm\n\n\n2.    Does Problem 1 show all the possible whole number side lengths for a rectangle with an area of 48\n      square centimeters? How do you know?\n\n\n                          Lesson 11:                 Demonstrate the possible whole number side lengths of rectangles\n                                                     with areas of 24, 36, 48, or 72 square units using the associative                                 142\n                                                     property.\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 144 (problem-set) ---\nA STORY OF UNITS                                                                                    Lesson 11 Problem Set 3 4\n\n\n3.   In Problem 1, what happens to the shape of the rectangle as the difference between the side lengths\n     gets smaller?\n\n\n4.   a.   Find the area of the rectangle below.\n                 8 cm\n\n\n      9 cm\n\n\n     b.   Julius says a 4 cm by 18 cm rectangle has the same area as the rectangle in Part (a). Place\n          parentheses in the equation to find the related fact and solve. Is Julius correct? Why or why not?\n\n             4 × 18 = 4 × 2 × 9\n                    =4×2×9\n                    = ______ × ______\n                    = ______\n                Area: _____ sq cm\n\n\n     c.   Use the expression 8 × 9 to find different side lengths for a rectangle that has the same area as the\n          rectangle in Part (a). Show your equations using parentheses. Then, estimate to draw the rectangle\n          and label the side lengths.\n\n\n                         Lesson 11:                 Demonstrate the possible whole number side lengths of rectangles\n                                                    with areas of 24, 36, 48, or 72 square units using the associative             143\n                                                    property.\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 145 (exit-ticket) ---\nA STORY OF UNITS                                                                                          Lesson 11 Exit Ticket 3 4\n\n\nName                                                                                                          Date\n\n1.   Find the area of the rectangle.\n\n                        8 cm\n\n\n          8 cm\n\n\n2.   The rectangle below has the same area as the rectangle in Problem 1. Move the parentheses to find the\n     unknown side lengths. Then, solve.\n\n                                  ______ cm\n\n                                                                                  Area: 8 × 8 = (4 × 2) × 8\n     ______ cm\n                                                                                                      =4×2×8\n                                                                                                      = ______ × ______\n                                                                                                      = ______\n                                                                                                 Area: ______ sq cm\n\n\n                         Lesson 11:                  Demonstrate the possible whole number side lengths of rectangles\n                                                     with areas of 24, 36, 48, or 72 square units using the associative               144\n                                                     property.\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 146 (homework) ---\nA STORY OF UNITS                                                                                          Lesson 11 Homework 3 4\n\n\nName                                                                                                            Date\n\n1. The rectangles below have the same area. Move the parentheses to find the unknown side lengths.\n   Then, solve.                                                    36 cm\n                                             1 cm\n                  9 cm\n                                                                                     b. Area: 1 × 36 = ______\n     4 cm\n                                                                                                           Area: ______ sq cm\n\n\n     a.      Area: 4 × ______ = ______\n                                                                                                                                  ______ cm\n                           Area: ______ sq cm                                            2 cm\n\n                     ______ cm                                                                               c. Area: 4 × 9 = (2 × 2) × 9\n                                                                                                                                       =2×2×9\n                                                                                                                                       = ______ × ______\n            ______ cm                                                                                                                  = ______\n                                                                                                                                  Area: ______ sq cm\n\n\n       d.      Area: 4 × 9 = 4 × (3 × 3)\n                           =4×3×3                                                                                e. Area: 12 × 3 = (6 × 2) × 3\n                           = ______ × ______                                                                                             =6×2×3\n                                                                                                    ______ cm\n                           = ______                                                                                                      = ______ × ______\n                         Area: ______ sq cm                                                                                              = ______\n                                                                            ______ cm\n                                                                                                                                      Area: ______ sq cm\n\n\n2.   Does Problem 1 show all the possible whole number side lengths for a rectangle with an area of 36\n     square centimeters? How do you know?\n\n\n                           Lesson 11:                  Demonstrate the possible whole number side lengths of rectangles\n                                                       with areas of 24, 36, 48, or 72 square units using the associative                                  145\n                                                       property.\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 147 (homework) ---\nA STORY OF UNITS                                                                                        Lesson 11 Homework 3 4\n\n\n3.   a. Find the area of the rectangle below.\n\n                   6 cm\n\n       8 cm\n\n\n     b.   Hilda says a 4 cm by 12 cm rectangle has the same area as the rectangle in Part (a). Place\n          parentheses in the equation to find the related fact and solve. Is Hilda correct? Why or why not?\n\n          4 × 12 = 4 × 2 × 6\n                  =4×2×6\n                  = ______ × ______\n                  = ______\n              Area: ______ sq cm\n\n\n     c.   Use the expression 8 × 6 to find different side lengths for a rectangle that has the same area as the\n          rectangle in Part (a). Show your equations using parentheses. Then, estimate to draw the rectangle\n          and label the side lengths.\n\n\n                          Lesson 11:                 Demonstrate the possible whole number side lengths of rectangles\n                                                     with areas of 24, 36, 48, or 72 square units using the associative             146\n                                                     property.\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 148 (lesson-instruction) ---\nA STORY OF UNITS\n\n     3\n   GRADE\n                          Mathematics Curriculum\n                                                                                                                                    GRADE 3 • MODULE 4\n\n\nTopic D\nApplications of Area Using Side\nLengths of Figures\n3.MD.6, 3.MD.7, 3.MD.5\n\n Focus Standards:          3.MD.6                   Measure areas by counting unit squares (square cm, square m, square in, square ft, and\n                                                    improvised units).\n                           3.MD.7                   Relate area to the operations of multiplication and addition.\n                                                    a. Find the area of a rectangle with whole-number side lengths by tiling it, and show\n                                                         that the area is the same as would be found by multiplying the side lengths.\n                                                    b. Multiply side lengths to find areas of rectangles with whole-number side lengths in\n                                                         the context of solving real world and mathematical problems, and represent whole-\n                                                         number products as rectangular areas in mathematical reasoning.\n                                                    c. Use tiling to show in a concrete case that the area of a rectangle with whole-\n                                                         number side lengths a and b + c is the sum of a × b and a × c. Use area models to\n                                                         represent the distributive property in mathematical reasoning.\n                                                    d. Recognize area as additive. Find areas of rectilinear figures by decomposing them\n                                                         into non-overlapping rectangles and adding the areas of the non-overlapping parts,\n                                                         applying this technique to solve real world problems.\n Instructional Days:       5\n Coherence -Links from:    G2–M2                    Addition and Subtraction of Length Units\n                           G3–M1                    Properties of Multiplication and Division and Solving Problems with Units of 2–5 and 10\n                           G3–M3                    Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10\n             -Links to:    G4–M3                    Multi-Digit Multiplication and Division\n                           G4–M7                    Exploring Multiplication\n\n\nTopic D requires students to synthesize and apply their knowledge of\narea. Lesson 12 begins the topic with an emphasis on real-world\napplications by providing students with opportunities to apply their\nunderstanding of area to solving word problems. Students may practice\nunknown product, group size unknown, and number of groups unknown\ntypes of problems. (See examples of problem types in the chart on page\n19 of the Geometric Measurement Progression.) The word problems\nprovide a stepping-stone for the real-world, project-based application of\narea to composite shapes and the area floor plan in this topic.\n\n\n                          Topic D:                   Applications of Area Using Side Lengths of Figures                                           147\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 149 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                              Topic D 3•4\n\n\nLessons 13 and 14 introduce students to finding the area of composite shapes. They learn to find the\nunknown measurements using the given side lengths and then make decisions about whether to decompose\nthe tiled region into smaller rectangles and add the areas (3.MD.7c) or complete the composite figures and\nthen subtract.\nIn Lessons 15 and 16, students apply their work with composite shapes from the previous two lessons to a\nreal-word application, determining areas of rooms in a given floor plan.\n\n A Teaching Sequence Toward Mastery of Applications of Area Using Side Lengths of Figures\n Objective 1: Solve word problems involving area.\n              (Lesson 12)\n\n Objective 2: Find areas by decomposing into rectangles or completing composite figures to form\n              rectangles.\n              (Lessons 13–14)\n\n Objective 3: Apply knowledge of area to determine areas of rooms in a given floor plan.\n              (Lessons 15–16)\n\n\n                       Topic D:                   Applications of Area Using Side Lengths of Figures                                      148\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 143,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                     Lesson 11 Problem Set 3 4\n\n\nName                                                                                                          Date\n1.    The rectangles below have the same area. Move the parentheses to find the unknown side lengths.\n      Then, solve.\n      a.        6 cm                                     b.                                           ______ cm\n                                               1 cm\n       8 cm                                                                        Area: 1 × 48 = ______\n\n                                                                                                  Area: ______ sq cm\n\n Area: 8 × ______ = ______\n\n                 Area: ______ sq cm\n                                                                                                                      Area: 8 × 6 = (2 × 4) × 6\n                                                                   c.                  ______cm\n                                                                                                                                        =2×4×6\n                                                     2 cm\n                                                                                                                                        = ______ × ______\n      d.       ______ cm\n                                                                                                                                        = ______\n4 cm                                                                                                                                 Area: ______ sq cm\n                                                                   e.                 ______ cm\n     Area: 8 × 6 = (4 × 2) × 6\n                 =4×2×6                                                                                       Area: 8 × 6 = 8 × (2 × 3)\n\n                 = ______ × ______                                  ______ cm                                                       =8×2×3\n\n                 = ______                                                                                                           = ______ × ______\n\n              Area: ______ sq cm                                                                                                    = ______\n                                                                                                                             Area: ______ sq cm\n\n\n2.    Does Problem 1 show all the possible whole number side lengths for a rectangle with an area of 48\n      square centimeters? How do you know?\n\n\n                          Lesson 11:                 Demonstrate the possible whole number side lengths of rectangles\n                                                     with areas of 24, 36, 48, or 72 square units using the associative                                 142\n                                                     property.\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 144,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                    Lesson 11 Problem Set 3 4\n\n\n3.   In Problem 1, what happens to the shape of the rectangle as the difference between the side lengths\n     gets smaller?\n\n\n4.   a.   Find the area of the rectangle below.\n                 8 cm\n\n\n      9 cm\n\n\n     b.   Julius says a 4 cm by 18 cm rectangle has the same area as the rectangle in Part (a). Place\n          parentheses in the equation to find the related fact and solve. Is Julius correct? Why or why not?\n\n             4 × 18 = 4 × 2 × 9\n                    =4×2×9\n                    = ______ × ______\n                    = ______\n                Area: _____ sq cm\n\n\n     c.   Use the expression 8 × 9 to find different side lengths for a rectangle that has the same area as the\n          rectangle in Part (a). Show your equations using parentheses. Then, estimate to draw the rectangle\n          and label the side lengths.\n\n\n                         Lesson 11:                 Demonstrate the possible whole number side lengths of rectangles\n                                                    with areas of 24, 36, 48, or 72 square units using the associative             143\n                                                    property.\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 227,
+        "text": "A STORY OF UNITS                                                                                         Lesson 11 Answer Key 3 4\n\n\nLesson 11\nProblem Set\n1.    a. 6, 48; 48\n      b. 48, 48; 48\n      c. 24; 2, 24; 48; 48\n      d. 12; 4, 12; 48; 48\n      e. 16, 3; 16, 3; 48; 48\n2.    Yes; answers will vary.\n3.    Answers will vary.\n4.    a. 72 sq cm\n      b. 8, 9; 72; 72; yes; answers will vary.\n      c. Answers will vary.\n\n\nExit Ticket\n1.    64 sq cm\n2.    4, 16; 4, 16; 64; 64\n\n\nHomework\n1.    a. 9, 36; 36\n      b. 36; 36\n      c. 18; 2, 18; 36; 36\n      d. 12, 3; 12, 3; 36; 36\n      e. 6, 6; 6, 6; 36; 36\n2.    Yes, answers will vary.\n3.    a. 48 sq cm\n      b. 8, 6; 48; 48; yes; answers will vary.\n      c. Answers will vary.\n\n\n                        Module 4:                  Multiplication and Area                                                          226\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

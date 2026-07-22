@@ -1,0 +1,395 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m2-l5",
+  "moduleId": "m2",
+  "lessonNumber": 5,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+    "teacherEditionBytes": 20015771,
+    "lessonPdfPages": {
+      "start": 61,
+      "end": 74
+    },
+    "problemSetPdfPages": [
+      67,
+      68
+    ],
+    "exitTicketPdfPages": [
+      69
+    ],
+    "homeworkPdfPages": [
+      70,
+      71
+    ],
+    "answerKeyPdfPages": [
+      285
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m2-student/workbook-page-021.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m2-teacher/page-067.png",
+      "/source-pages/m2-teacher/page-068.png",
+      "/source-pages/m2-answer-key/page-285.png"
+    ]
+  },
+  "objective": "Solve word problems involving time intervals within 1 hour by adding and subtracting on the number line.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "Materials: (S) Personal white board, number line (Lesson 4 Template)                                                             Lesson 4 Template\n\nPart 1: Count forward and backward to add and subtract on the number line.\n    T:   Use your number line template to label the points when Carlos arrives and\n         when math starts.\n    S:   (Label.)\n    T:   Writing down homework assignments is the first thing Carlos does when he\n         gets to class. It takes 4 minutes. Work with your partner to plot the point\n         that shows when Carlos finishes this first task.\n    T:   At what time did you plot the point?\n    S:   9:12 a.m.\n    T:   What does the interval between 9:12 and 9:30 represent?\n    S:   The number of minutes it takes Carlos to finish his morning work.\n    T:   How can we find the number of minutes it takes Carlos to complete morning work?\n    S:   Count on the number line.  Count forward from 9:12 to 9:30.\n    T:   What addition sentence represents this problem?\n    S:   12 minutes + ____ = 30 minutes.\n    T:   With your partner, find the number of minutes it takes Carlos to complete morning work.\n    T:   How many minutes did it take Carlos to finish morning work?\n    S:   18 minutes.\n    T:   Talk with your partner. How could we have modeled that problem by counting backward?\n    S:   We could have started at 9:30 and counted back until we got to 9:12.\n    T:   What subtraction sentence represents this problem?\n    S:   30 minutes – 12 minutes = 18 minutes.\nRepeat the process using the following suggestions:\n        Lunch starts at 12:05 p.m. and finishes at 12:40 p.m. How long is lunch?\n        Joyce spends 24 minutes finding everything she needs at the grocery store. It takes her 7 minutes to\n         pay. How long does it take Joyce to find her groceries and pay?\n\nPart 2: Solve word problems involving time intervals within 1 hour.\n    T:   Gia, Carlos’s classmate, gets to class at 9:11. It takes her 19 minutes to write homework assignments\n         and complete morning work. How can we figure out if Gia will be ready to start math at 9:30?\n    S:   We have to find out what time Gia finishes.\n    T:   What do we know?\n    S:   We know what time Gia starts and how long it takes her to complete her tasks.\n    T:   What is unknown?\n    S:   The time that Gia finishes.\n\n\n                        Lesson 5:                    Solve word problems involving time intervals within 1 hour by adding                        62\n                                                     and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 5 3 2\n\n\n    T:   How can we find what time Gia finishes morning work?\n    S:   We can start at 9:11 and add 19 minutes.  We can add 11 minutes and 19 minutes to find out\n         how many minutes after 9:00 she finishes.\n    T:   (Draw the model below.) Talk with your partner about why this number line shows 11 minutes\n         + 19 minutes. (Students discuss.)\n\n\n                                                                                                                            NOTES ON\n                                                                                                                            MULTIPLE MEANS\n                                                                                                                            OF ENGAGEMENT:\n    T:   When we add our 2 parts, 11 minutes + 19 minutes,            Relate addition on the number line\n         what is our whole?                                           with part–whole thinking. Use this\n    S:   30 minutes!                                                  connection with prior knowledge to\n                                                                      encourage students to move from\n    T:   Does Gia finish on time?                                     counting forward and backward toward\n    S:   Yes, just barely!                                            more efficient number line\n    T:   Think back to the Application Problem where Carlos           representations like those modeled.\n         gets to class at 9:08 a.m. If he left for school at 9:00     Allow less confident students to verify\n                                                                      these strategies by counting forward\n         a.m., then what do the 8 minutes from 9:00 to 9:08\n                                                                      and backward.\n         represent?\n    S:   That’s how long it takes Carlos to get to school.\n    T:   We know the whole, 30 minutes, and 1 part. What does the unknown part represent?\n    S:   The amount of time he takes to write homework and complete morning work.\n    T:   Work with your partner to draw a number line and\n         label the known and unknown intervals.\n    S:   (Draw. One possible number line shown to the\n         right.)\n    T:   What is 30 minutes – 8 minutes?\n    S:   22 minutes!\nRepeat the process using the following suggestions:\n        Joey gets home at 3:25 p.m. It takes him 7 minutes to                     NOTES ON\n         unpack and 18 minutes to have a snack before starting                     MULTIPLE MEANS\n         his homework. What is the earliest time Joey can start                    OF ENGAGEMENT:\n         his homework?\n                                                                          Students who need an additional\n        Shane’s family wants to start eating dinner at 5:45 p.m.         challenge can write their own word\n         It takes him 15 minutes to set the table and 7 minutes           problems using real-life experiences.\n         to help put the food out. If Shane starts setting the            Encourage them to precisely time\n         table at 5:25 p.m., will his chores be finished by               themselves during an activity and use\n         5:45 p.m.?                                                       the information to write a word\n        Tim gets on the bus at 8:32 a.m. and gets to school at           problem.\n         8:55 a.m. How long is Tim’s bus ride?\n        Joanne takes the same bus as Tim, but her bus ride is 25 minutes. What time does Joanne get on\n         the bus?\n\n\n                        Lesson 5:                     Solve word problems involving time intervals within 1 hour by adding                   63\n                                                      and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 5 3 2\n\n\n        Davis has 3 problems for math homework. He\n         starts at 4:08 p.m. The first problem takes him\n         5 minutes, and the second takes him 6 minutes.\n         If Davis finishes at 4:23 p.m., how long does it\n         take him to solve the last problem?",
+    "fluencyPracticeText": " Group Counting 3.OA.1                                    (3 minutes)\n Tell Time on the Clock 3.MD.1                            (3 minutes)\n Minute Counting 3.MD.1                                   (6 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by sevens, eights,\nand nines in this activity anticipates multiplication using those units in Module 3.\nDirect students to count forward and backward, occasionally changing the direction of the count, using the\nfollowing suggested sequence:\n        Sevens to 56, emphasizing the transition from 49 to 56\n        Eights to 64, emphasizing the transition from 56 to 64\n        Nines to 72, emphasizing the transition from 63 to 72\n\nTell Time on the Clock (3 minutes)\nMaterials: (T) Analog clock for demonstration (S) Personal white board\n\nNote: This activity provides additional practice with the newly learned skill of telling time to the nearest\nminute.\n    T:   (Show an analog demonstration clock.) Start at 12 and count by 5 minutes on the clock.\n         (Move finger from 12 to 1, 2, 3, 4, etc., as students count.)\n    S:   5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60.\n    T:   I’ll show a time on the clock. Write the time on your personal white board. (Show 5:07.)\n    S:   (Write 5:07.)\n\n\n                        Lesson 5:                     Solve word problems involving time intervals within 1 hour by adding                 60\n                                                      and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 5 3 2\n\n\n    T:   (Show 12:54.)\n    S:   (Write 12:54.)\nRepeat process, varying the hour and minute so that students read and write a variety of times to the nearest\nminute.\n\nMinute Counting (6 minutes)\nNote: This activity reviews the Grade 2 standard of telling and writing time to the nearest 5 minutes.\nStudents practice group counting strategies for multiplication in the context of time.\nUse the process outlined in Lesson 1. Direct students to count by 5 minutes to 1 hour, forward and backward,\nnaming the quarter hour and half hour intervals as such. Repeat the process for the following suggested\nsequences:\n        3 minutes to 30 minutes, naming the quarter hour and half hour intervals as such\n        6 minutes to 1 hour, naming the half hour and 1 hour intervals as such\n        9 minutes to 45 minutes, naming the quarter hour and half hour intervals as such\n         (45 minutes is named quarter ‘til 1 hour)\n        10 minutes, using the following sequence: 10 minutes, 20 minutes, half hour, 40 minutes,\n         50 minutes, 1 hour",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. Depending on\nyour class, it may be appropriate to modify the assignment\nby specifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Use your number line template to label the points when Carlos arrives and when math starts."
+      },
+      {
+        "speaker": "students",
+        "text": "(Label.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Writing down homework assignments is the first thing Carlos does when he gets to class. It takes 4 minutes. Work with your partner to plot the point that shows when Carlos finishes this first task."
+      },
+      {
+        "speaker": "teacher",
+        "text": "At what time did you plot the point?"
+      },
+      {
+        "speaker": "students",
+        "text": "9:12 a.m."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What does the interval between 9:12 and 9:30 represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "The number of minutes it takes Carlos to finish his morning work."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can we find the number of minutes it takes Carlos to complete morning work?"
+      },
+      {
+        "speaker": "students",
+        "text": "Count on the number line.  Count forward from 9:12 to 9:30."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What addition sentence represents this problem?"
+      },
+      {
+        "speaker": "students",
+        "text": "12 minutes + ____ = 30 minutes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "With your partner, find the number of minutes it takes Carlos to complete morning work."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many minutes did it take Carlos to finish morning work?"
+      },
+      {
+        "speaker": "students",
+        "text": "18 minutes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk with your partner. How could we have modeled that problem by counting backward?"
+      },
+      {
+        "speaker": "students",
+        "text": "We could have started at 9:30 and counted back until we got to 9:12."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What subtraction sentence represents this problem?"
+      },
+      {
+        "speaker": "students",
+        "text": "30 minutes – 12 minutes = 18 minutes. Repeat the process using the following suggestions:  Lunch starts at 12:05 p.m. and finishes at 12:40 p.m. How long is lunch?  Joyce spends 24 minutes finding everything she needs at the grocery store. It takes her 7 minutes to pay. How long does it take Joyce to find her groceries and pay?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Gia, Carlos’s classmate, gets to class at 9:11. It takes her 19 minutes to write homework assignments and complete morning work. How can we figure out if Gia will be ready to start math at 9:30?"
+      },
+      {
+        "speaker": "students",
+        "text": "We have to find out what time Gia finishes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do we know?"
+      },
+      {
+        "speaker": "students",
+        "text": "We know what time Gia starts and how long it takes her to complete her tasks."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is unknown?"
+      },
+      {
+        "speaker": "students",
+        "text": "The time that Gia finishes. and subtracting on the number line. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 5 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can we find what time Gia finishes morning work?"
+      },
+      {
+        "speaker": "students",
+        "text": "We can start at 9:11 and add 19 minutes.  We can add 11 minutes and 19 minutes to find out how many minutes after 9:00 she finishes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw the model below.) Talk with your partner about why this number line shows 11 minutes + 19 minutes. (Students discuss.) MULTIPLE MEANS OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "When we add our 2 parts, 11 minutes + 19 minutes, Relate addition on the number line what is our whole? with part–whole thinking. Use this"
+      },
+      {
+        "speaker": "students",
+        "text": "30 minutes! connection with prior knowledge to encourage students to move from"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Does Gia finish on time? counting forward and backward toward"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes, just barely! more efficient number line"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think back to the Application Problem where Carlos representations like those modeled. gets to class at 9:08 a.m. If he left for school at 9:00 Allow less confident students to verify these strategies by counting forward a.m., then what do the 8 minutes from 9:00 to 9:08 and backward. represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "That’s how long it takes Carlos to get to school."
+      },
+      {
+        "speaker": "teacher",
+        "text": "We know the whole, 30 minutes, and 1 part. What does the unknown part represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "The amount of time he takes to write homework and complete morning work."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to draw a number line and label the known and unknown intervals."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw. One possible number line shown to the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is 30 minutes – 8 minutes?"
+      },
+      {
+        "speaker": "students",
+        "text": "22 minutes! Repeat the process using the following suggestions:  Joey gets home at 3:25 p.m. It takes him 7 minutes to NOTES ON unpack and 18 minutes to have a snack before starting MULTIPLE MEANS his homework. What is the earliest time Joey can start OF ENGAGEMENT: his homework? Students who need an additional  Shane’s family wants to start eating dinner at 5:45 p.m. challenge can write their own word It takes him 15 minutes to set the table and 7 minutes problems using real-life experiences. to help put the food out. If Shane starts setting the Encourage them to precisely time table at 5:25 p.m., will his chores be finished by themselves during an activity and use 5:45 p.m.? the information to write a word  Tim gets on the bus at 8:32 a.m. and gets to school at problem. 8:55 a.m. How long is Tim’s bus ride?  Joanne takes the same bus as Tim, but her bus ride is 25 minutes. What time does Joanne get on the bus? and subtracting on the number line. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 5 3 2  Davis has 3 problems for math homework. He starts at 4:08 p.m. The first problem takes him 5 minutes, and the second takes him 6 minutes. If Davis finishes at 4:23 p.m., how long does it take him to solve the last problem?"
+      }
+    ],
+    "teacherPrompts": [
+      "Use your number line template to label the points when Carlos arrives and when math starts.",
+      "Writing down homework assignments is the first thing Carlos does when he gets to class. It takes 4 minutes. Work with your partner to plot the point that shows when Carlos finishes this first task.",
+      "At what time did you plot the point?",
+      "What does the interval between 9:12 and 9:30 represent?",
+      "How can we find the number of minutes it takes Carlos to complete morning work?",
+      "What addition sentence represents this problem?",
+      "With your partner, find the number of minutes it takes Carlos to complete morning work.",
+      "How many minutes did it take Carlos to finish morning work?",
+      "Talk with your partner. How could we have modeled that problem by counting backward?",
+      "What subtraction sentence represents this problem?",
+      "Gia, Carlos’s classmate, gets to class at 9:11. It takes her 19 minutes to write homework assignments and complete morning work. How can we figure out if Gia will be ready to start math at 9:30?",
+      "What do we know?",
+      "What is unknown?",
+      "How can we find what time Gia finishes morning work?",
+      "(Draw the model below.) Talk with your partner about why this number line shows 11 minutes + 19 minutes. (Students discuss.) MULTIPLE MEANS OF ENGAGEMENT:",
+      "When we add our 2 parts, 11 minutes + 19 minutes, Relate addition on the number line what is our whole? with part–whole thinking. Use this",
+      "Does Gia finish on time? counting forward and backward toward",
+      "Think back to the Application Problem where Carlos representations like those modeled. gets to class at 9:08 a.m. If he left for school at 9:00 Allow less confident students to verify these strategies by counting forward a.m., then what do the 8 minutes from 9:00 to 9:08 and backward. represent?",
+      "We know the whole, 30 minutes, and 1 part. What does the unknown part represent?",
+      "Work with your partner to draw a number line and label the known and unknown intervals.",
+      "What is 30 minutes – 8 minutes?"
+    ],
+    "debriefPrompt": "Describe the process of drawing the number line for Problem 2. Explain how you labeled it. (Call on students who used different ways of thinking about and labeling parts and wholes to share.)",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Cole read his book for 25 minutes yesterday and for 28 minutes today. How many minutes did Cole read altogether? Model the problem on the number line, and write an equation to solve. 0 10 20 30 40 50 60 Cole read for ____ minutes.",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "Tessa spends 34 minutes washing her dog. It takes her 12 minutes to shampoo and rinse and the rest of the time to get the dog in the bathtub! How many minutes does Tessa spend getting her dog in the bathtub? Draw a number line to model the problem, and write an equation to solve.",
+        "equations": []
+      },
+      {
+        "number": 3,
+        "prompt": "Tessa walks her dog for 47 minutes. Jeremiah walks his dog for 30 minutes. How many more minutes does Tessa walk her dog than Jeremiah? and subtracting on the number line. a. It takes Austin 4 minutes to take out the garbage, 12 minutes to wash the dishes, and 13 minutes to mop the kitchen floor. How long does it take Austin to do his chores? b. Austin's bus arrives at 7:55 a.m. If he starts his chores at 7:30 a.m., will he be done in time to meet his bus? Explain your reasoning. 5. Gilberto's cat sleeps in the sun for 23 minutes. It wakes up at the time shown on the clock below. What time did the cat go to sleep? and subtracting on the number line.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                         Lesson 5 Problem Set 3 2\n\n\nName                                                                                                        Date\n\n1. Cole read his book for 25 minutes yesterday and for 28 minutes today. How many minutes did Cole read\n   altogether? Model the problem on the number line, and write an equation to solve.\n\n\n   0              10                              20                       30                         40                         50      60\n\n\n                                                                                                                 Cole read for __________ minutes.\n\n\n2. Tessa spends 34 minutes washing her dog. It takes her 12 minutes to shampoo and rinse and the rest of\n   the time to get the dog in the bathtub! How many minutes does Tessa spend getting her dog in the\n   bathtub? Draw a number line to model the problem, and write an equation to solve.\n\n\n3. Tessa walks her dog for 47 minutes. Jeremiah walks his dog for 30 minutes. How many more minutes\n   does Tessa walk her dog than Jeremiah?\n\n\n                        Lesson 5:                     Solve word problems involving time intervals within 1 hour by adding                     66\n                                                      and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                         Lesson 5 Problem Set 3 2\n\n\n4. a. It takes Austin 4 minutes to take out the garbage, 12 minutes to wash the dishes, and 13 minutes to\n      mop the kitchen floor. How long does it take Austin to do his chores?\n\n\n    b. Austin’s bus arrives at 7:55 a.m. If he starts his chores at 7:30 a.m., will he be done in time to meet\n       his bus? Explain your reasoning.\n\n\n5. Gilberto’s cat sleeps in the sun for 23 minutes. It wakes up at the time shown on the clock below.\n   What time did the cat go to sleep?\n\n\n                        Lesson 5:                     Solve word problems involving time intervals within 1 hour by adding         67\n                                                      and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    53; problem modeled on number line; 25 + 28 = 53\n2.    22 minutes; problem modeled on number line; 34 – 12 = 22\n3.    17 minutes; 47 – 30 = 17\n4.    a. 29 minutes\n      b. No; Austin will be 4 minutes late.\n5.    11:13",
+    "answerKeyText": "A STORY OF UNITS                                                                                         Lesson 5 Answer Key 3 2\n\n\nLesson 5\nProblem Set\n1.    53; problem modeled on number line; 25 + 28 = 53\n2.    22 minutes; problem modeled on number line; 34 – 12 = 22\n3.    17 minutes; 47 – 30 = 17\n4.    a. 29 minutes\n      b. No; Austin will be 4 minutes late.\n5.    11:13\n\n\nExit Ticket\n36; problem modeled on number line; 19 + 17 = 36\n\n\nHomework\n1.    56; problem modeled on number line; 22 + 34 = 56\n2.    9 minutes; problem modeled on number line; 56 – 47 = 9\n3.    30 minutes\n4.    a. 47 minutes\n      b. No; Marcus will be 2 minutes late.\n5.    27 minutes\n\n\n                        Module 2:                  Place Value and Problem Solving with Units of Measure                           284\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "number-line",
+      "clock",
+      "table-or-chart",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "number-line": [
+        "Solve word problems involving time intervals within 1 hour by adding and subtracting on the number line.",
+        "Materials: (S) Personal white board, number line (Lesson 4 Template) Lesson 4 Template",
+        "Part 1: Count forward and backward to add and subtract on the number line.",
+        "T: Use your number line template to label the points when Carlos arrives and",
+        "T: What does the interval between 9:12 and 9:30 represent?",
+        "S: Count on the number line.  Count forward from 9:12 to 9:30.",
+        "Part 2: Solve word problems involving time intervals within 1 hour.",
+        "Lesson 5: Solve word problems involving time intervals within 1 hour by adding 62"
+      ],
+      "clock": [
+        "Materials: (T) Analog clock for demonstration (S) Personal white board"
+      ],
+      "table-or-chart": [
+        "It takes him 15 minutes to set the table and 7 minutes problems using real-life experiences.",
+        "table at 5:25 p.m., will his chores be finished by themselves during an activity and use"
+      ],
+      "picture-or-drawing": [
+        "T: (Draw the model below.) Talk with your partner about why this number line shows 11 minutes",
+        "T: Work with your partner to draw a number line and",
+        "S: (Draw. One possible number line shown to the",
+        "bathtub? Draw a number line to model the problem, and write an equation to solve."
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Use your number line template to label the points when Carlos arrives and when math starts."
+      },
+      {
+        "speaker": "students",
+        "text": "(Label.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Writing down homework assignments is the first thing Carlos does when he gets to class. It takes 4 minutes. Work with your partner to plot the point that shows when Carlos finishes this first task."
+      },
+      {
+        "speaker": "teacher",
+        "text": "At what time did you plot the point?"
+      },
+      {
+        "speaker": "students",
+        "text": "Count on the number line.  Count forward from 9:12 to 9:30."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk with your partner. How could we have modeled that problem by counting backward?"
+      },
+      {
+        "speaker": "students",
+        "text": "We could have started at 9:30 and counted back until we got to 9:12."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Gia, Carlos’s classmate, gets to class at 9:11. It takes her 19 minutes to write homework assignments and complete morning work. How can we figure out if Gia will be ready to start math at 9:30?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw the model below.) Talk with your partner about why this number line shows 11 minutes + 19 minutes. (Students discuss.) MULTIPLE MEANS OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "students",
+        "text": "30 minutes! connection with prior knowledge to encourage students to move from"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Does Gia finish on time? counting forward and backward toward"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think back to the Application Problem where Carlos representations like those modeled. gets to class at 9:08 a.m. If he left for school at 9:00 Allow less confident students to verify these strategies by counting forward a.m., then what do the 8 minutes from 9:00 to 9:08 and backward. represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "The amount of time he takes to write homework and complete morning work."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to draw a number line and label the known and unknown intervals."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw. One possible number line shown to the right.)"
+      },
+      {
+        "speaker": "students",
+        "text": "22 minutes! Repeat the process using the following suggestions:  Joey gets home at 3:25 p.m. It takes him 7 minutes to NOTES ON unpack and 18 minutes to have a snack before starting MULTIPLE MEANS his homework. What is the earliest time Joey can start OF ENGAGEMENT: his homework? Students who need an additional  Shane’s family wants to start eating dinner at 5:45 p.m. challenge can write their own word It takes him 15 minutes to set the table and 7 minutes problems using real-life experiences. to help put the food out. If Shane starts setting the Encourage them to precisely time table at 5:25 p.m., will his chores be finished by themselves during an activity and use 5:45 p.m.? the information to write a word  Tim gets on the bus at 8:32 a.m. and gets to school at problem. 8:55 a.m. How long is Tim’s bus ride?  Joanne takes the same bus as Tim, but her bus ride is 25 minutes. What time does Joanne get on the bus? and subtracting on the number line. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 5 3 2  Davis has 3 problems for math homework. He starts at 4:08 p.m. The first problem takes him 5 minutes, and the second takes him 6 minutes. If Davis finishes at 4:23 p.m., how long does it take him to solve the last problem?"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 61 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 5 3 2\n\n\nLesson 5\nObjective: Solve word problems involving time intervals within 1 hour by\nadding and subtracting on the number line.\n\nSuggested Lesson Structure\n Fluency Practice                  (12 minutes)\n Application Problem               (5 minutes)\n Concept Development               (33 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (12 minutes)\n Group Counting 3.OA.1                                    (3 minutes)\n Tell Time on the Clock 3.MD.1                            (3 minutes)\n Minute Counting 3.MD.1                                   (6 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by sevens, eights,\nand nines in this activity anticipates multiplication using those units in Module 3.\nDirect students to count forward and backward, occasionally changing the direction of the count, using the\nfollowing suggested sequence:\n        Sevens to 56, emphasizing the transition from 49 to 56\n        Eights to 64, emphasizing the transition from 56 to 64\n        Nines to 72, emphasizing the transition from 63 to 72\n\nTell Time on the Clock (3 minutes)\nMaterials: (T) Analog clock for demonstration (S) Personal white board\n\nNote: This activity provides additional practice with the newly learned skill of telling time to the nearest\nminute.\n    T:   (Show an analog demonstration clock.) Start at 12 and count by 5 minutes on the clock.\n         (Move finger from 12 to 1, 2, 3, 4, etc., as students count.)\n    S:   5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60.\n    T:   I’ll show a time on the clock. Write the time on your personal white board. (Show 5:07.)\n    S:   (Write 5:07.)\n\n\n                        Lesson 5:                     Solve word problems involving time intervals within 1 hour by adding                 60\n                                                      and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 62 (concept-development) ---\nA STORY OF UNITS                                                                                                              Lesson 5 3 2\n\n\n    T:   (Show 12:54.)\n    S:   (Write 12:54.)\nRepeat process, varying the hour and minute so that students read and write a variety of times to the nearest\nminute.\n\nMinute Counting (6 minutes)\nNote: This activity reviews the Grade 2 standard of telling and writing time to the nearest 5 minutes.\nStudents practice group counting strategies for multiplication in the context of time.\nUse the process outlined in Lesson 1. Direct students to count by 5 minutes to 1 hour, forward and backward,\nnaming the quarter hour and half hour intervals as such. Repeat the process for the following suggested\nsequences:\n        3 minutes to 30 minutes, naming the quarter hour and half hour intervals as such\n        6 minutes to 1 hour, naming the half hour and 1 hour intervals as such\n        9 minutes to 45 minutes, naming the quarter hour and half hour intervals as such\n         (45 minutes is named quarter ‘til 1 hour)\n        10 minutes, using the following sequence: 10 minutes, 20 minutes, half hour, 40 minutes,\n         50 minutes, 1 hour\n\n\nApplication Problem (5 minutes)\n\nCarlos gets to class at 9:08 a.m. He has to write down homework assignments and complete morning work\nbefore math begins at 9:30 a.m. How many minutes does Carlos have to complete his tasks before math\nbegins?\n\n\nNote: This problem reviews Lesson 4 and provides a context for the problems in the Concept Development.\nEncourage students to discuss how they might solve the problem using mental math strategies (e.g., count\n9:18, 9:28 + 2 minutes, 2 + 20, 30 – 8).\n\n\n                          Lesson 5:                   Solve word problems involving time intervals within 1 hour by adding                  61\n                                                      and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 63 (concept-development) ---\nA STORY OF UNITS                                                                                                              Lesson 5 3 2\n\n\nConcept Development (33 minutes)\nMaterials: (S) Personal white board, number line (Lesson 4 Template)                                                             Lesson 4 Template\n\nPart 1: Count forward and backward to add and subtract on the number line.\n    T:   Use your number line template to label the points when Carlos arrives and\n         when math starts.\n    S:   (Label.)\n    T:   Writing down homework assignments is the first thing Carlos does when he\n         gets to class. It takes 4 minutes. Work with your partner to plot the point\n         that shows when Carlos finishes this first task.\n    T:   At what time did you plot the point?\n    S:   9:12 a.m.\n    T:   What does the interval between 9:12 and 9:30 represent?\n    S:   The number of minutes it takes Carlos to finish his morning work.\n    T:   How can we find the number of minutes it takes Carlos to complete morning work?\n    S:   Count on the number line.  Count forward from 9:12 to 9:30.\n    T:   What addition sentence represents this problem?\n    S:   12 minutes + ____ = 30 minutes.\n    T:   With your partner, find the number of minutes it takes Carlos to complete morning work.\n    T:   How many minutes did it take Carlos to finish morning work?\n    S:   18 minutes.\n    T:   Talk with your partner. How could we have modeled that problem by counting backward?\n    S:   We could have started at 9:30 and counted back until we got to 9:12.\n    T:   What subtraction sentence represents this problem?\n    S:   30 minutes – 12 minutes = 18 minutes.\nRepeat the process using the following suggestions:\n        Lunch starts at 12:05 p.m. and finishes at 12:40 p.m. How long is lunch?\n        Joyce spends 24 minutes finding everything she needs at the grocery store. It takes her 7 minutes to\n         pay. How long does it take Joyce to find her groceries and pay?\n\nPart 2: Solve word problems involving time intervals within 1 hour.\n    T:   Gia, Carlos’s classmate, gets to class at 9:11. It takes her 19 minutes to write homework assignments\n         and complete morning work. How can we figure out if Gia will be ready to start math at 9:30?\n    S:   We have to find out what time Gia finishes.\n    T:   What do we know?\n    S:   We know what time Gia starts and how long it takes her to complete her tasks.\n    T:   What is unknown?\n    S:   The time that Gia finishes.\n\n\n                        Lesson 5:                    Solve word problems involving time intervals within 1 hour by adding                        62\n                                                     and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 64 (application-problem) ---\nA STORY OF UNITS                                                                                                              Lesson 5 3 2\n\n\n    T:   How can we find what time Gia finishes morning work?\n    S:   We can start at 9:11 and add 19 minutes.  We can add 11 minutes and 19 minutes to find out\n         how many minutes after 9:00 she finishes.\n    T:   (Draw the model below.) Talk with your partner about why this number line shows 11 minutes\n         + 19 minutes. (Students discuss.)\n\n\n                                                                                                                            NOTES ON\n                                                                                                                            MULTIPLE MEANS\n                                                                                                                            OF ENGAGEMENT:\n    T:   When we add our 2 parts, 11 minutes + 19 minutes,            Relate addition on the number line\n         what is our whole?                                           with part–whole thinking. Use this\n    S:   30 minutes!                                                  connection with prior knowledge to\n                                                                      encourage students to move from\n    T:   Does Gia finish on time?                                     counting forward and backward toward\n    S:   Yes, just barely!                                            more efficient number line\n    T:   Think back to the Application Problem where Carlos           representations like those modeled.\n         gets to class at 9:08 a.m. If he left for school at 9:00     Allow less confident students to verify\n                                                                      these strategies by counting forward\n         a.m., then what do the 8 minutes from 9:00 to 9:08\n                                                                      and backward.\n         represent?\n    S:   That’s how long it takes Carlos to get to school.\n    T:   We know the whole, 30 minutes, and 1 part. What does the unknown part represent?\n    S:   The amount of time he takes to write homework and complete morning work.\n    T:   Work with your partner to draw a number line and\n         label the known and unknown intervals.\n    S:   (Draw. One possible number line shown to the\n         right.)\n    T:   What is 30 minutes – 8 minutes?\n    S:   22 minutes!\nRepeat the process using the following suggestions:\n        Joey gets home at 3:25 p.m. It takes him 7 minutes to                     NOTES ON\n         unpack and 18 minutes to have a snack before starting                     MULTIPLE MEANS\n         his homework. What is the earliest time Joey can start                    OF ENGAGEMENT:\n         his homework?\n                                                                          Students who need an additional\n        Shane’s family wants to start eating dinner at 5:45 p.m.         challenge can write their own word\n         It takes him 15 minutes to set the table and 7 minutes           problems using real-life experiences.\n         to help put the food out. If Shane starts setting the            Encourage them to precisely time\n         table at 5:25 p.m., will his chores be finished by               themselves during an activity and use\n         5:45 p.m.?                                                       the information to write a word\n        Tim gets on the bus at 8:32 a.m. and gets to school at           problem.\n         8:55 a.m. How long is Tim’s bus ride?\n        Joanne takes the same bus as Tim, but her bus ride is 25 minutes. What time does Joanne get on\n         the bus?\n\n\n                        Lesson 5:                     Solve word problems involving time intervals within 1 hour by adding                   63\n                                                      and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 65 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 5 3 2\n\n\n        Davis has 3 problems for math homework. He\n         starts at 4:08 p.m. The first problem takes him\n         5 minutes, and the second takes him 6 minutes.\n         If Davis finishes at 4:23 p.m., how long does it\n         take him to solve the last problem?\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the\nProblem Set within the allotted 10 minutes. Depending on\nyour class, it may be appropriate to modify the assignment\nby specifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Solve word problems involving time\nintervals within 1 hour by adding and subtracting on the\nnumber line.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Describe the process of drawing the number line\n         for Problem 2. Explain how you labeled it. (Call\n         on students who used different ways of thinking\n         about and labeling parts and wholes to share.)\n        How did your answer to Problem 4(a) help you\n         solve Problem 4(b)?\n        In Problem 5, you had to find a start time. How is\n         your approach to finding a start time different\n         from your approach to finding an end time?\n        Besides a number line, what other models could\n         you use to solve Problems 2, 4, and 5?\n\n\n                        Lesson 5:                     Solve word problems involving time intervals within 1 hour by adding                 64\n                                                      and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 66 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 5 3 2\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that were presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 5:                     Solve word problems involving time intervals within 1 hour by adding                  65\n                                                      and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 67 (problem-set) ---\nA STORY OF UNITS                                                                                         Lesson 5 Problem Set 3 2\n\n\nName                                                                                                        Date\n\n1. Cole read his book for 25 minutes yesterday and for 28 minutes today. How many minutes did Cole read\n   altogether? Model the problem on the number line, and write an equation to solve.\n\n\n   0              10                              20                       30                         40                         50      60\n\n\n                                                                                                                 Cole read for __________ minutes.\n\n\n2. Tessa spends 34 minutes washing her dog. It takes her 12 minutes to shampoo and rinse and the rest of\n   the time to get the dog in the bathtub! How many minutes does Tessa spend getting her dog in the\n   bathtub? Draw a number line to model the problem, and write an equation to solve.\n\n\n3. Tessa walks her dog for 47 minutes. Jeremiah walks his dog for 30 minutes. How many more minutes\n   does Tessa walk her dog than Jeremiah?\n\n\n                        Lesson 5:                     Solve word problems involving time intervals within 1 hour by adding                     66\n                                                      and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 68 (problem-set) ---\nA STORY OF UNITS                                                                                         Lesson 5 Problem Set 3 2\n\n\n4. a. It takes Austin 4 minutes to take out the garbage, 12 minutes to wash the dishes, and 13 minutes to\n      mop the kitchen floor. How long does it take Austin to do his chores?\n\n\n    b. Austin’s bus arrives at 7:55 a.m. If he starts his chores at 7:30 a.m., will he be done in time to meet\n       his bus? Explain your reasoning.\n\n\n5. Gilberto’s cat sleeps in the sun for 23 minutes. It wakes up at the time shown on the clock below.\n   What time did the cat go to sleep?\n\n\n                        Lesson 5:                     Solve word problems involving time intervals within 1 hour by adding         67\n                                                      and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 69 (exit-ticket) ---\nA STORY OF UNITS                                                                                             Lesson 5 Exit Ticket 3 2\n\n\nName                                                                                                        Date\n\nMichael spends 19 minutes on his math homework and 17 minutes on his science homework.\nHow many minutes does Michael spend doing his homework?\n\n\nModel the problem on the number line, and write an equation to solve.\n\n\n   0              10                                  20                   30                         40                         50   60\n\n\n                                                                              Michael spends __________ minutes on his homework.\n\n\n                        Lesson 5:                     Solve word problems involving time intervals within 1 hour by adding                 68\n                                                      and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 70 (homework) ---\nA STORY OF UNITS                                                                                               Lesson 5 Homework 3 2\n\n\nName                                                                                                            Date\n\n1. Abby spent 22 minutes working on her science project yesterday and 34 minutes working on it today.\n   How many minutes did Abby spend working on her science project altogether? Model the problem on\n   the number line, and write an equation to solve.\n\n\n    0                 10                                  20                    30                         40                        50   60\n\n\n                                                                      Abby spent __________ minutes working on her science project.\n\n\n2. Susanna spends a total of 47 minutes working on her project. How many more minutes than Susanna\n   does Abby spend working? Draw a number line to model the problem, and write an equation to solve.\n\n\n3. Peter practices violin for a total of 55 minutes over the weekend. He practices 25 minutes on Saturday.\n   How many minutes does he practice on Sunday?\n\n\n                            Lesson 5:                     Solve word problems involving time intervals within 1 hour by adding                 69\n                                                          and subtracting on the number line.\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 71 (homework) ---\nA STORY OF UNITS                                                                                           Lesson 5 Homework 3 2\n\n\n4. a. Marcus gardens. He pulls weeds for 18 minutes, waters for 13 minutes, and plants for 16 minutes.\n      How many total minutes does he spend gardening?\n\n\n    b. Marcus wants to watch a movie that starts at 2:55 p.m. It takes 10 minutes to drive to the theater. If\n       Marcus starts the yard work at 2:00 p.m., can he make it on time for the movie? Explain your\n       reasoning.\n\n\n5. Arelli takes a short nap after school. As she falls asleep, the clock reads 3:03 p.m. She wakes up at the\n   time shown below. How long is Arelli’s nap?\n\n\n                        Lesson 5:                     Solve word problems involving time intervals within 1 hour by adding       70\n                                                      and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 72 (lesson-instruction) ---\nA STORY OF UNITS\n\n     3\n   GRADE\n                          Mathematics Curriculum\n                                                                                                                                    GRADE 3 • MODULE 2\n\n\nTopic B\nMeasuring Weight and Liquid Volume\nin Metric Units\n3.NBT.2, 3.MD.2\n\n Focus Standards:           3.NBT.2                  Fluently add and subtract within 1000 using strategies and algorithms based on place\n                                                     value, properties of operations, and/or the relationship between addition and\n                                                     subtraction.\n                            3.MD.2                   Measure and estimate liquid volumes and masses of objects using standard units of\n                                                     grams (g), kilograms (kg), and liters (l). Add, subtract, multiply, or divide to solve one-\n                                                     step word problems involving masses or volumes that are given in the same units, e.g.,\n                                                     by using drawings (such as a beaker with a measurement scale) to represent the\n                                                     problem.\n Instructional Days:        6\n Coherence -Links from:     G2–M2                    Addition and Subtraction of Length Units\n                            G2–M3                    Place Value, Counting, and Comparison of Numbers to 1000\n                            G3–M1                    Properties of Multiplication and Division and Solving Problems with Units of 2–5 and 10\n             -Links to:     G4–M2                    Unit Conversions and Problem Solving with Metric Measurement\n\n\nLessons 6 and 7 introduce students to metric weight measured in kilograms and grams. Students learn to use\ndigital scales as they explore these weights. They begin by holding a kilogram weight to get a sense of its\nweight. Then, groups of students work with scales to add rice to clear plastic zippered bags until the bags\nreach a weight of 1 kilogram. Once the bags reach that weight, students decompose a kilogram using ten-\nframes. They understand the quantity within 1 square of the ten-frame as an estimation of 100 grams. Upon\nthat square they overlay another ten-frame, zooming in to estimate 10 grams. Overlaying once more leads to\n1 gram. Students relate the decomposition of a kilogram to place value and the base ten system.\nThroughout this two-day exploration, students reason about the size and weight of kilograms and grams in\nrelation to one another without moving into the abstract world of conversion. They perceive the relationship\nbetween kilograms and grams as analogous to 1 meter decomposed into 100 centimeters. They build on\nGrade 2 estimation skills with centimeters and meters (2.MD.3) using metric weight. Students use scales to\nmeasure a variety of objects and learn to estimate new weights using knowledge of previously measured\nitems. Their work with estimation in Topic B lays a foundation for rounding to estimate in the second half of\nthe module.\n\n\n                           Topic B:                      Measuring Weight and Liquid Volume in Metric Units                                        71\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 73 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                                 Topic B 3 2\n\n\nIn Lesson 8, students use scales to measure the weight of objects precisely, and then use those\nmeasurements to solve one-step word problems with like units. Word problems require students to add,\nsubtract, multiply, and divide. Students apply estimation skills from Lesson 7 to reason about their solutions.\nNotice that these lessons refer to metric weight rather than mass. This choice was made based on the K–5\nGeometric Measurement progressions document that accompanies the CCSSM, which suggests that\nelementary school students may treat mass units as weight units. 1 Technically these are not equivalent, but\nthe units can be used side by side as long as the object being measured stays on earth. 2 If students have\nalready been introduced to the distinction between weight and mass, it may be appropriate to use the word\nmass rather than weight.\nIn Lessons 9 and 10, students measure liquid volume in liters using beakers and the vertical number line. This\nexperience lends itself to previewing the concept and language of rounding: Students might estimate, for\nexample, a given quantity as halfway between 1 and 2 or nearer to 2. Students use small containers to\ndecompose 1 liter and reason about its size. This lays a conceptual foundation for Grade 4 work with\nmilliliters and the multiplicative relationship of metric measurement units (4.MD.1). In these lessons,\nstudents solve one-step word problems with like units using all four operations.\nTopic B culminates in solving one-step word problems with like units. Lesson 11 presents students with mixed\npractice, requiring students to add, subtract, multiply, and divide to find solutions to problems involving\ngrams, kilograms, liters, and milliliters.\n\n\n1Page 2 of the K–5, Geometric Measurement progression document reads, “The Standards do not differentiate between weight and\n\nmass.”\n2Page 2 of the K–5, Geometric Measurement progression document reads, “…mass is the amount of matter in an object. Weight is\n\nthe force exerted on the body by gravity. On the earth’s surface, the distinction is not important (on the moon, an object would have\nthe same mass, would weight [sic] less due to the lower gravity).” To keep focused, these lessons purposefully do not introduce the\ndistinction between weight and mass because it is not needed at this level.\n\n\n                            Topic B:                      Measuring Weight and Liquid Volume in Metric Units                                  72\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 74 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                             Topic B 3 2\n\n\nA Teaching Sequence Toward Mastery of Measuring Weight and Liquid Volume in Metric Units\nObjective 1: Build and decompose a kilogram to reason about the size and weight of 1 kilogram,\n             100 grams, 10 grams, and 1 gram.\n             (Lesson 6)\n\nObjective 2: Develop estimation strategies by reasoning about the weight in kilograms of a series of\n             familiar objects to establish mental benchmark measures.\n             (Lesson 7)\n\nObjective 3: Solve one-step word problems involving metric weights within 100 and estimate to reason\n             about solutions.\n             (Lesson 8)\n\nObjective 4: Decompose a liter to reason about the size of 1 liter, 100 milliliters, 10 milliliters, and\n             1 milliliter.\n             (Lesson 9)\n\nObjective 5: Estimate and measure liquid volume in liters and milliliters using the vertical number line.\n             (Lesson 10)\n\nObjective 6: Solve mixed word problems involving all four operations with grams, kilograms, liters, and\n             milliliters given in the same units.\n             (Lesson 11)\n\n\n                      Topic B:                      Measuring Weight and Liquid Volume in Metric Units                                   73\n\n                     This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                     G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 67,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                         Lesson 5 Problem Set 3 2\n\n\nName                                                                                                        Date\n\n1. Cole read his book for 25 minutes yesterday and for 28 minutes today. How many minutes did Cole read\n   altogether? Model the problem on the number line, and write an equation to solve.\n\n\n   0              10                              20                       30                         40                         50      60\n\n\n                                                                                                                 Cole read for __________ minutes.\n\n\n2. Tessa spends 34 minutes washing her dog. It takes her 12 minutes to shampoo and rinse and the rest of\n   the time to get the dog in the bathtub! How many minutes does Tessa spend getting her dog in the\n   bathtub? Draw a number line to model the problem, and write an equation to solve.\n\n\n3. Tessa walks her dog for 47 minutes. Jeremiah walks his dog for 30 minutes. How many more minutes\n   does Tessa walk her dog than Jeremiah?\n\n\n                        Lesson 5:                     Solve word problems involving time intervals within 1 hour by adding                     66\n                                                      and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 68,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                         Lesson 5 Problem Set 3 2\n\n\n4. a. It takes Austin 4 minutes to take out the garbage, 12 minutes to wash the dishes, and 13 minutes to\n      mop the kitchen floor. How long does it take Austin to do his chores?\n\n\n    b. Austin’s bus arrives at 7:55 a.m. If he starts his chores at 7:30 a.m., will he be done in time to meet\n       his bus? Explain your reasoning.\n\n\n5. Gilberto’s cat sleeps in the sun for 23 minutes. It wakes up at the time shown on the clock below.\n   What time did the cat go to sleep?\n\n\n                        Lesson 5:                     Solve word problems involving time intervals within 1 hour by adding         67\n                                                      and subtracting on the number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 285,
+        "text": "A STORY OF UNITS                                                                                         Lesson 5 Answer Key 3 2\n\n\nLesson 5\nProblem Set\n1.    53; problem modeled on number line; 25 + 28 = 53\n2.    22 minutes; problem modeled on number line; 34 – 12 = 22\n3.    17 minutes; 47 – 30 = 17\n4.    a. 29 minutes\n      b. No; Austin will be 4 minutes late.\n5.    11:13\n\n\nExit Ticket\n36; problem modeled on number line; 19 + 17 = 36\n\n\nHomework\n1.    56; problem modeled on number line; 22 + 34 = 56\n2.    9 minutes; problem modeled on number line; 56 – 47 = 9\n3.    30 minutes\n4.    a. 47 minutes\n      b. No; Marcus will be 2 minutes late.\n5.    27 minutes\n\n\n                        Module 2:                  Place Value and Problem Solving with Units of Measure                           284\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

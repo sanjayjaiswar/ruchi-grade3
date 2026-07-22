@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m2-l13",
+  "moduleId": "m2",
+  "lessonNumber": 13,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+    "teacherEditionBytes": 20015771,
+    "lessonPdfPages": {
+      "start": 160,
+      "end": 170
+    },
+    "problemSetPdfPages": [
+      166,
+      167
+    ],
+    "exitTicketPdfPages": [
+      168
+    ],
+    "homeworkPdfPages": [
+      169,
+      170
+    ],
+    "answerKeyPdfPages": [
+      293
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m2-student/workbook-page-053.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m2-teacher/page-166.png",
+      "/source-pages/m2-teacher/page-167.png",
+      "/source-pages/m2-answer-key/page-293.png"
+    ]
+  },
+  "objective": "Round two- and three-digit numbers to the nearest ten on the vertical number line.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": ". How would                          OF ENGAGEMENT:\n         you round to answer the question, “About how long                    Alternatively, challenge students who\n         was the ballet recital?” Discuss with a partner.                     round with automaticity to quickly\n    S:   The ballet recital took about 30 minutes.  Rounded                  round 28 minutes to the nearest 10\n         to the nearest ten, the ballet recital took 30 minutes.              minutes (without the number line).\n                                                                                                                Students can then write their own\nContinue with rounding 17 milliliters to the nearest ten.                                                       word problem for rounding 17\n(Leave the number line used for this on the board. It will be                                                   milliliters or 17 minutes.\nused in Problem 2.)\n\n\n                        Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                         161\n                                                      number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                             Lesson 13 3 2\n\n\nProblem 2: Round three-digit measurements of milliliters to the nearest ten.\n    T:   To round 17 milliliters to the nearest ten, we\n         drew a number line with endpoints 1 ten and 2\n         tens. How will our endpoints change to round 1\n         hundred 17 to the nearest ten? Turn and talk.\n    S:   Each endpoint has to grow by 1 hundred.\n    T:   How many tens are in 1 hundred? (Show the\n         place value card of 100.)\n    S:   10 tens.\n    T:   When I cover the ones, we see the 10 tens. (Put\n         your hand over the zero in the ones place.)\n    T:   What is 1 more ten than 10 tens?\n    S:   11 tens.\n    T:   (Show the place value cards for 10 tens and then 11 tens, that is, 100 and 110.)\n    T:   (Show 117 with the place value cards.)\n    T:   How many tens are in 117? Turn and talk about how you know.\n    S:   (Track on fingers.) 10, 20, 30, 40, 50, …, 110. Eleven tens.  17 has 1 ten,\n         so 117 has 10 tens, plus 1 ten makes 11 tens.  110 has 11 tens.  100 has\nMP.6\n         10 tens and one more ten is 11 tens.\n    T:   What is 1 more ten than 11 tens?\n    S:   12 tens.\n    T:   What is the value of 12 tens?\n    S:   120.\n    T:   What will we label our bottom endpoint on the number line when we round\n         117 to the nearest ten?\n    S:   110 = 11 tens.\n    T:   The top endpoint?\n    S:   120 = 12 tens.\n    T:   (Draw and label endpoints on the vertical number line.)\n    T:   How should we label our halfway point?\n    S:   115 = 11 tens 5 ones.\n    T:   (Show 11 tens 5 ones with the place value cards.) On your number line, mark and label the halfway\n         point.\n    S:   (Mark and label the halfway point.)\n    T:   Is 117 more or less than halfway between 110 and 120? Tell your partner how you know.\n    S:   It’s closer to 120. 17 is only 3 away from 20, but 7 away from 10.  It’s more than halfway\n         between 110 and 120.\n\n\n                       Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                 162\n                                                     number line.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 13 3 2\n\n\n    T:   Label 117 on your number line now. (Allow time for\n         students to label 117.) What is 117 rounded to the\n         nearest ten? Use a complete sentence.\n    S:   117 rounded to the nearest ten is 120.                                     NOTES ON\n    T:   Tell me in unit form with tens and ones.                                   MULTIPLE MEANS\n                                                                                    OF ACTION AND\n    S:   11 tens 7 ones rounded to the nearest ten is 12 tens.\n                                                                                    EXPRESSION:\n    T:   What is 17 rounded to the nearest ten?\n                                                                           Reduce the small motor demands of\n    S:   20.                                                               plotting points on a number line by\n    T:   Again, what is 117 rounded to the nearest ten?                    enlarging the number line and offering\n                                                                           alternatives to marking with a pencil,\n    S:   120.\n                                                                           such as placing stickers or blocks.\n    T:   Remember from telling time that a number line is                  Additionally, connect back to\n         continuous. The models we drew to round 17                        yesterday’s lesson by using beakers or\n         milliliters and 117 milliliters were the same, even               scales with water or rice.\n         though they showed different portions of the number\n         line; corresponding points are 1 hundred milliliters\n         apart. Discuss the similarities and differences between\n         rounding within those two intervals with your partner.\n    S:   All the numbers went in the same place, we just wrote a 1 in front of them all to show they were\n         1 hundred more.  We still just paid attention to the number of tens. We thought about if 17 was\n         more or less than halfway between 10 and 20.\nContinue with rounding the following possible measurements to the nearest ten: 75 mL, 175 mL, 212 g,\n315 mL, and 103 kg.\n\nProblem Set (10 minutes)\n                                                                                                                            NOTES ON\nStudents should do their personal best to complete the Problem\n                                                                                                                            SYMBOLS:\nSet within the allotted 10 minutes. Depending on your class, it\nmay be appropriate to modify the assignment by specifying                                                       This symbol is used to show that the\nwhich problems they work on first. Some problems do not                                                         answer is an approximate: ≈. Before\nspecify a method for solving. Students should solve these                                                       students start work on the Problem\nproblems using the RDW approach used for Application                                                            Set, call their attention to it and point\nProblems.                                                                                                       out the difference between ≈ and =.\n\n\n                        Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                                 163\n                                                      number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 13 3 2",
+    "conceptDevelopmentText": "Materials: (T) Place value cards (S) Personal white board\n\nProblem 1: Round two-digit measurements to the nearest ten.\n    T:   Let’s round 28 minutes to the nearest 10 minutes.\n    T:   How many tens are in 28? (Show place value cards for 28.)\n    S:   2 tens! (Pull apart the cards to show the 2 tens as 20. Perhaps\n         cover the zero in the ones to clarify the interpretation of 20 as 2 tens.)\n    T:   Draw a tick mark near the bottom of the number line. To the right,\n         label it 20 = 2 tens.\n    S:   (Draw and label 20 = 2 tens.)\n    T:   What is 1 more ten than 2 tens?\n    S:   3 tens! (Show the place value card for 30 or 3 tens. Again, cover the zero to help clarify.)\n    T:   Draw a tick mark near the top of the number line. To the right, label it 30 = 3 tens.\n    S:   (Draw and label 30 = 3 tens.)\n    T:   What number is halfway between 20 and 30?\n    S:   25.\n    T:   In unit form, what number is halfway between 2 tens and 3 tens?\n    S:   2 tens 5 ones.\n    T:   (Show 2 tens 5 ones with the place value cards.) Estimate to draw a tick mark halfway\n         between 20 and 30. Label it 25 = 2 tens 5 ones.\n    S:   (Draw and label 25 = 2 tens 5 ones.)\n    T:   When you look at your vertical number line, is 28 more than halfway or less than halfway between\n         20 and 30? Turn and talk to a partner about how you know. Then plot it on the number line.\n    S:   28 is more than halfway between 2 tens and 3 tens.  I know because 28 is more than 25, and 25 is\n         halfway.  I know because 5 ones is halfway, and 8 is more than 5.\n    T:   What is 28 rounded to the nearest ten?\n    S:   30.\n    T:   Tell me in unit form.\n                                                                                      NOTES ON\n    S:   2 tens 8 ones rounded to the nearest ten is 3 tens.                          MULTIPLE MEANS\n    T:   Let’s go back to our Application Problem. How would                          OF ENGAGEMENT:\n         you round to answer the question, “About how long                    Alternatively, challenge students who\n         was the ballet recital?” Discuss with a partner.                     round with automaticity to quickly\n    S:   The ballet recital took about 30 minutes.  Rounded                  round 28 minutes to the nearest 10\n         to the nearest ten, the ballet recital took 30 minutes.              minutes (without the number line).\n                                                                                                                Students can then write their own\nContinue with rounding 17 milliliters to the nearest ten.                                                       word problem for rounding 17\n(Leave the number line used for this on the board. It will be                                                   milliliters or 17 minutes.\nused in Problem 2.)\n\n\n                        Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                         161\n                                                      number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                             Lesson 13 3 2\n\n\nProblem 2: Round three-digit measurements of milliliters to the nearest ten.\n    T:   To round 17 milliliters to the nearest ten, we\n         drew a number line with endpoints 1 ten and 2\n         tens. How will our endpoints change to round 1\n         hundred 17 to the nearest ten? Turn and talk.\n    S:   Each endpoint has to grow by 1 hundred.\n    T:   How many tens are in 1 hundred? (Show the\n         place value card of 100.)\n    S:   10 tens.\n    T:   When I cover the ones, we see the 10 tens. (Put\n         your hand over the zero in the ones place.)\n    T:   What is 1 more ten than 10 tens?\n    S:   11 tens.\n    T:   (Show the place value cards for 10 tens and then 11 tens, that is, 100 and 110.)\n    T:   (Show 117 with the place value cards.)\n    T:   How many tens are in 117? Turn and talk about how you know.\n    S:   (Track on fingers.) 10, 20, 30, 40, 50, …, 110. Eleven tens.  17 has 1 ten,\n         so 117 has 10 tens, plus 1 ten makes 11 tens.  110 has 11 tens.  100 has\nMP.6\n         10 tens and one more ten is 11 tens.\n    T:   What is 1 more ten than 11 tens?\n    S:   12 tens.\n    T:   What is the value of 12 tens?\n    S:   120.\n    T:   What will we label our bottom endpoint on the number line when we round\n         117 to the nearest ten?\n    S:   110 = 11 tens.\n    T:   The top endpoint?\n    S:   120 = 12 tens.\n    T:   (Draw and label endpoints on the vertical number line.)\n    T:   How should we label our halfway point?\n    S:   115 = 11 tens 5 ones.\n    T:   (Show 11 tens 5 ones with the place value cards.) On your number line, mark and label the halfway\n         point.\n    S:   (Mark and label the halfway point.)\n    T:   Is 117 more or less than halfway between 110 and 120? Tell your partner how you know.\n    S:   It’s closer to 120. 17 is only 3 away from 20, but 7 away from 10.  It’s more than halfway\n         between 110 and 120.\n\n\n                       Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                 162\n                                                     number line.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 13 3 2\n\n\n    T:   Label 117 on your number line now. (Allow time for\n         students to label 117.) What is 117 rounded to the\n         nearest ten? Use a complete sentence.\n    S:   117 rounded to the nearest ten is 120.                                     NOTES ON\n    T:   Tell me in unit form with tens and ones.                                   MULTIPLE MEANS\n                                                                                    OF ACTION AND\n    S:   11 tens 7 ones rounded to the nearest ten is 12 tens.\n                                                                                    EXPRESSION:\n    T:   What is 17 rounded to the nearest ten?\n                                                                           Reduce the small motor demands of\n    S:   20.                                                               plotting points on a number line by\n    T:   Again, what is 117 rounded to the nearest ten?                    enlarging the number line and offering\n                                                                           alternatives to marking with a pencil,\n    S:   120.\n                                                                           such as placing stickers or blocks.\n    T:   Remember from telling time that a number line is                  Additionally, connect back to\n         continuous. The models we drew to round 17                        yesterday’s lesson by using beakers or\n         milliliters and 117 milliliters were the same, even               scales with water or rice.\n         though they showed different portions of the number\n         line; corresponding points are 1 hundred milliliters\n         apart. Discuss the similarities and differences between\n         rounding within those two intervals with your partner.\n    S:   All the numbers went in the same place, we just wrote a 1 in front of them all to show they were\n         1 hundred more.  We still just paid attention to the number of tens. We thought about if 17 was\n         more or less than halfway between 10 and 20.\nContinue with rounding the following possible measurements to the nearest ten: 75 mL, 175 mL, 212 g,\n315 mL, and 103 kg.",
+    "fluencyPracticeText": " Group Counting 3.OA.1                                               (4 minutes)\n Rename the Tens 3.NBT.3                                             (4 minutes)\n Halfway on the Number Line 3.NBT.1                                  (5 minutes)\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. It reviews foundational\nstrategies for multiplication from Module 1 and anticipates Module 3.\nDirect students to count forward and backward, occasionally changing the direction of the count:\n       Threes to 30\n       Fours to 40\n       Sixes to 60\n       Sevens to 70\n       Eights to 80\n       Nines to 90\nAs students’ fluency with skip-counting improves, help them make a connection to multiplication by tracking\nthe number of groups they count using their fingers.\n\n\n                        Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                 159\n                                                      number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 13 3 2\n\n\nRename the Tens (4 minutes)\nNote: This activity prepares students for rounding in this lesson and anticipates the work in Lesson 14 where\nstudents round numbers to the nearest hundred on the number line.\n    T:   (Write 9 tens = ____.) Say the number.\n    S:   90.\nContinue with the following possible sequence: 10 tens, 20 tens, 80 tens, 63 tens, and 52 tens.\n\nHalfway on the Number Line (5 minutes)\nNote: This activity reviews rounding using a vertical number line from Lesson 12.\n    T:   (Project a vertical line with endpoints labeled 30 and 40.) What number is halfway between 3 tens\n         and 4 tens?\n    S:   35.\n    T:   (Write 35 halfway between 30 and 40.)\nContinue with the following possible sequence: 130 and 140, 830 and 840, and 560 and 570.",
+    "problemSetGuidanceText": "NOTES ON\nStudents should do their personal best to complete the Problem\n                                                                                                                            SYMBOLS:\nSet within the allotted 10 minutes. Depending on your class, it\nmay be appropriate to modify the assignment by specifying                                                       This symbol is used to show that the\nwhich problems they work on first. Some problems do not                                                         answer is an approximate: ≈. Before\nspecify a method for solving. Students should solve these                                                       students start work on the Problem\nproblems using the RDW approach used for Application                                                            Set, call their attention to it and point\nProblems.                                                                                                       out the difference between ≈ and =.\n\n\n                        Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                                 163\n                                                      number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 13 3 2",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Let’s round 28 minutes to the nearest 10 minutes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many tens are in 28? (Show place value cards for 28.)"
+      },
+      {
+        "speaker": "students",
+        "text": "2 tens! (Pull apart the cards to show the 2 tens as 20. Perhaps cover the zero in the ones to clarify the interpretation of 20 as 2 tens.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a tick mark near the bottom of the number line. To the right, label it 20 = 2 tens."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label 20 = 2 tens.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is 1 more ten than 2 tens?"
+      },
+      {
+        "speaker": "students",
+        "text": "3 tens! (Show the place value card for 30 or 3 tens. Again, cover the zero to help clarify.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a tick mark near the top of the number line. To the right, label it 30 = 3 tens."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label 30 = 3 tens.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What number is halfway between 20 and 30?"
+      },
+      {
+        "speaker": "students",
+        "text": "25."
+      },
+      {
+        "speaker": "teacher",
+        "text": "In unit form, what number is halfway between 2 tens and 3 tens?"
+      },
+      {
+        "speaker": "students",
+        "text": "2 tens 5 ones."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Show 2 tens 5 ones with the place value cards.) Estimate to draw a tick mark halfway between 20 and 30. Label it 25 = 2 tens 5 ones."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label 25 = 2 tens 5 ones.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "When you look at your vertical number line, is 28 more than halfway or less than halfway between 20 and 30? Turn and talk to a partner about how you know. Then plot it on the number line."
+      },
+      {
+        "speaker": "students",
+        "text": "28 is more than halfway between 2 tens and 3 tens.  I know because 28 is more than 25, and 25 is halfway.  I know because 5 ones is halfway, and 8 is more than 5."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is 28 rounded to the nearest ten?"
+      },
+      {
+        "speaker": "students",
+        "text": "30."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell me in unit form."
+      },
+      {
+        "speaker": "students",
+        "text": "2 tens 8 ones rounded to the nearest ten is 3 tens. MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s go back to our Application Problem. How would OF ENGAGEMENT: you round to answer the question, “About how long Alternatively, challenge students who was the ballet recital?” Discuss with a partner. round with automaticity to quickly"
+      },
+      {
+        "speaker": "students",
+        "text": "The ballet recital took about 30 minutes.  Rounded round 28 minutes to the nearest 10 to the nearest ten, the ballet recital took 30 minutes. minutes (without the number line). Students can then write their own Continue with rounding 17 milliliters to the nearest ten. word problem for rounding 17 (Leave the number line used for this on the board. It will be milliliters or 17 minutes. used in Problem 2.) number line. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 13 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "To round 17 milliliters to the nearest ten, we drew a number line with endpoints 1 ten and 2 tens. How will our endpoints change to round 1 hundred 17 to the nearest ten? Turn and talk."
+      },
+      {
+        "speaker": "students",
+        "text": "Each endpoint has to grow by 1 hundred."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many tens are in 1 hundred? (Show the place value card of 100.)"
+      },
+      {
+        "speaker": "students",
+        "text": "10 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "When I cover the ones, we see the 10 tens. (Put your hand over the zero in the ones place.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is 1 more ten than 10 tens?"
+      },
+      {
+        "speaker": "students",
+        "text": "11 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Show the place value cards for 10 tens and then 11 tens, that is, 100 and 110.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Show 117 with the place value cards.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many tens are in 117? Turn and talk about how you know."
+      },
+      {
+        "speaker": "students",
+        "text": "(Track on fingers.) 10, 20, 30, 40, 50, …, 110. Eleven tens.  17 has 1 ten, so 117 has 10 tens, plus 1 ten makes 11 tens.  110 has 11 tens.  100 has MP.6 10 tens and one more ten is 11 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is 1 more ten than 11 tens?"
+      },
+      {
+        "speaker": "students",
+        "text": "12 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the value of 12 tens?"
+      },
+      {
+        "speaker": "students",
+        "text": "120."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What will we label our bottom endpoint on the number line when we round 117 to the nearest ten?"
+      },
+      {
+        "speaker": "students",
+        "text": "110 = 11 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "The top endpoint?"
+      },
+      {
+        "speaker": "students",
+        "text": "120 = 12 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw and label endpoints on the vertical number line.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How should we label our halfway point?"
+      },
+      {
+        "speaker": "students",
+        "text": "115 = 11 tens 5 ones."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Show 11 tens 5 ones with the place value cards.) On your number line, mark and label the halfway point."
+      },
+      {
+        "speaker": "students",
+        "text": "(Mark and label the halfway point.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is 117 more or less than halfway between 110 and 120? Tell your partner how you know."
+      },
+      {
+        "speaker": "students",
+        "text": "It’s closer to 120. 17 is only 3 away from 20, but 7 away from 10.  It’s more than halfway between 110 and 120. number line. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 13 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label 117 on your number line now. (Allow time for students to label 117.) What is 117 rounded to the nearest ten? Use a complete sentence."
+      },
+      {
+        "speaker": "students",
+        "text": "117 rounded to the nearest ten is 120. NOTES ON"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell me in unit form with tens and ones. MULTIPLE MEANS OF ACTION AND"
+      },
+      {
+        "speaker": "students",
+        "text": "11 tens 7 ones rounded to the nearest ten is 12 tens. EXPRESSION:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is 17 rounded to the nearest ten? Reduce the small motor demands of"
+      },
+      {
+        "speaker": "students",
+        "text": "20. plotting points on a number line by"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Again, what is 117 rounded to the nearest ten? enlarging the number line and offering alternatives to marking with a pencil,"
+      },
+      {
+        "speaker": "students",
+        "text": "120. such as placing stickers or blocks."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Remember from telling time that a number line is Additionally, connect back to continuous. The models we drew to round 17 yesterday’s lesson by using beakers or milliliters and 117 milliliters were the same, even scales with water or rice. though they showed different portions of the number line; corresponding points are 1 hundred milliliters apart. Discuss the similarities and differences between rounding within those two intervals with your partner."
+      },
+      {
+        "speaker": "students",
+        "text": "All the numbers went in the same place, we just wrote a 1 in front of them all to show they were 1 hundred more.  We still just paid attention to the number of tens. We thought about if 17 was more or less than halfway between 10 and 20. Continue with rounding the following possible measurements to the nearest ten: 75 mL, 175 mL, 212 g, 315 mL, and 103 kg."
+      }
+    ],
+    "teacherPrompts": [
+      "Let’s round 28 minutes to the nearest 10 minutes.",
+      "How many tens are in 28? (Show place value cards for 28.)",
+      "Draw a tick mark near the bottom of the number line. To the right, label it 20 = 2 tens.",
+      "What is 1 more ten than 2 tens?",
+      "Draw a tick mark near the top of the number line. To the right, label it 30 = 3 tens.",
+      "What number is halfway between 20 and 30?",
+      "In unit form, what number is halfway between 2 tens and 3 tens?",
+      "(Show 2 tens 5 ones with the place value cards.) Estimate to draw a tick mark halfway between 20 and 30. Label it 25 = 2 tens 5 ones.",
+      "When you look at your vertical number line, is 28 more than halfway or less than halfway between 20 and 30? Turn and talk to a partner about how you know. Then plot it on the number line.",
+      "What is 28 rounded to the nearest ten?",
+      "Tell me in unit form.",
+      "Let’s go back to our Application Problem. How would OF ENGAGEMENT: you round to answer the question, “About how long Alternatively, challenge students who was the ballet recital?” Discuss with a partner. round with automaticity to quickly",
+      "To round 17 milliliters to the nearest ten, we drew a number line with endpoints 1 ten and 2 tens. How will our endpoints change to round 1 hundred 17 to the nearest ten? Turn and talk.",
+      "How many tens are in 1 hundred? (Show the place value card of 100.)",
+      "When I cover the ones, we see the 10 tens. (Put your hand over the zero in the ones place.)",
+      "What is 1 more ten than 10 tens?",
+      "(Show the place value cards for 10 tens and then 11 tens, that is, 100 and 110.)",
+      "(Show 117 with the place value cards.)",
+      "How many tens are in 117? Turn and talk about how you know.",
+      "What is 1 more ten than 11 tens?",
+      "What is the value of 12 tens?",
+      "What will we label our bottom endpoint on the number line when we round 117 to the nearest ten?",
+      "The top endpoint?",
+      "(Draw and label endpoints on the vertical number line.)",
+      "How should we label our halfway point?",
+      "(Show 11 tens 5 ones with the place value cards.) On your number line, mark and label the halfway point.",
+      "Is 117 more or less than halfway between 110 and 120? Tell your partner how you know.",
+      "Label 117 on your number line now. (Allow time for students to label 117.) What is 117 rounded to the nearest ten? Use a complete sentence.",
+      "Tell me in unit form with tens and ones. MULTIPLE MEANS OF ACTION AND",
+      "What is 17 rounded to the nearest ten? Reduce the small motor demands of",
+      "Again, what is 117 rounded to the nearest ten? enlarging the number line and offering alternatives to marking with a pencil,",
+      "Remember from telling time that a number line is Additionally, connect back to continuous. The models we drew to round 17 yesterday’s lesson by using beakers or milliliters and 117 milliliters were the same, even scales with water or rice. though they showed different portions of the number line; corresponding points are 1 hundred milliliters apart. Discuss the similarities and differences between rounding within those two intervals with your partner."
+    ],
+    "debriefPrompt": "What is the same and different about Problems 1(c) and 1(d)? Did you solve the problems differently? Why or why not?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Round to the nearest ten. Use the number line to model your thinking. a. 32 ≈ ____ b. 36 ≈ ____ 35 35 c. 62 ≈ ____ d. 162 ≈ ____ e. 278 ≈ ____ f. 405 ≈ ____ number line. Round the weight of each item to the nearest 10 grams. Draw number lines to model your thinking. Item Number Line Round to the nearest 10 grams 36 grams 52 grams 142 grams 3. Carl's basketball game begins at 3:03 p.m. and ends at 3:51 p.m. a. How many minutes did Carl's basketball game last? b. Round the total number of minutes in the game to the nearest 10 minutes. number line.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                     Lesson 13 Problem Set 3 2\n\n\nName                                                                                                       Date\n\n1. Round to the nearest ten. Use the number line to model your thinking.\n\n\n     a. 32 ≈ __________                                                             b. 36 ≈ __________\n\n                                                            40\n\n\n                                                            35                                                                  35\n\n                                                            32\n                                                            30\n\n\n     c. 62 ≈ __________                                                             d. 162 ≈ __________\n\n\n     e. 278 ≈ __________                                                             f.    405 ≈ __________\n\n\n                       Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical           165\n                                                     number line.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                       Lesson 13 Problem Set 3 2\n\n\n2. Round the weight of each item to the nearest 10 grams. Draw number lines to model your thinking.\n\n\n                      Item                                                 Number Line                                 Round to the nearest 10 grams\n\n\n                        36 grams\n\n\n                  52 grams\n\n\n                            142 grams\n\n\n3. Carl’s basketball game begins at 3:03 p.m. and ends at 3:51 p.m.\n\n   a. How many minutes did Carl’s basketball game last?\n\n\n   b. Round the total number of minutes in the game to the nearest 10 minutes.\n\n\n                         Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                     166\n                                                       number line.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    a. 30\n      b. 40; rounding modeled on number line\n      c. 60; rounding modeled on number line\n      d. 160; rounding modeled on number line\n      e. 280; rounding modeled on number line\n      f.   410; rounding modeled on number line\n2.    Number line drawn and labeled to model rounding; 40 g\n      Number line drawn and labeled to model rounding; 50 g\n      Number line drawn and labeled to model rounding; 140 g\n3.    a. 48 min\n      b. 50 min",
+    "answerKeyText": "A STORY OF UNITS                                                                                      Lesson 13 Answer Key 3 2\n\n\nLesson 13\nProblem Set\n1.    a. 30\n      b. 40; rounding modeled on number line\n      c. 60; rounding modeled on number line\n      d. 160; rounding modeled on number line\n      e. 280; rounding modeled on number line\n      f.   410; rounding modeled on number line\n2.    Number line drawn and labeled to model rounding; 40 g\n      Number line drawn and labeled to model rounding; 50 g\n      Number line drawn and labeled to model rounding; 140 g\n3.    a. 48 min\n      b. 50 min\n\n\nExit Ticket\n1.    a. 30; rounding modeled on number line\n      b. 280; rounding modeled on number line\n2.    No; 603 is less than halfway between 600 and 610, so 603 rounded to the nearest ten is 600; number\n      line drawn and labeled to model rounding\n\n\nHomework\n1.    a. 40\n      b. 50; rounding modeled on number line\n      c. 70; rounding modeled on number line\n      d. 170; rounding modeled on number line\n      e. 190; rounding modeled on number line\n      f.   190; rounding modeled on number line\n2.    Number line drawn and labeled to model rounding; 50 g\n      Number line is drawn and labeled to model rounding; 670 g\n3.    60 g; number line drawn and labeled to model rounding\n\n\n                        Module 2:                  Place Value and Problem Solving with Units of Measure                          292\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "number-line",
+      "measurement-scale",
+      "liquid-measure",
+      "place-value",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "number-line": [
+        "Round two- and three-digit numbers to the nearest ten on the vertical number line.",
+        "to the nearest ten, the ballet recital took 30 minutes. minutes (without the number line).",
+        "(Leave the number line used for this on the board. It will be milliliters or 17 minutes.",
+        "number line.",
+        "drew a number line with endpoints 1 ten and 2",
+        "T: What will we label our bottom endpoint on the number line when we round",
+        "T: (Draw and label endpoints on the vertical number line.)",
+        "T: (Show 11 tens 5 ones with the place value cards.) On your number line, mark and label the halfway"
+      ],
+      "measurement-scale": [
+        "2. Round the weight of each item to the nearest 10 grams. Draw number lines to model your thinking.",
+        "Item Number Line Round to the nearest 10 grams",
+        "36 grams",
+        "52 grams",
+        "142 grams"
+      ],
+      "liquid-measure": [
+        "Continue with rounding 17 milliliters to the nearest ten. word problem for rounding 17",
+        "(Leave the number line used for this on the board. It will be milliliters or 17 minutes.",
+        "Problem 2: Round three-digit measurements of milliliters to the nearest ten.",
+        "T: To round 17 milliliters to the nearest ten, we",
+        "continuous. The models we drew to round 17 yesterday’s lesson by using beakers or",
+        "milliliters and 117 milliliters were the same, even scales with water or rice.",
+        "line; corresponding points are 1 hundred milliliters",
+        "Continue with rounding 17 milliliters to the nearest ten. word problem for rounding 17"
+      ],
+      "place-value": [
+        "place value card of 100.)",
+        "T: (Show the place value cards for 10 tens and then 11 tens, that is, 100 and 110.)",
+        "T: (Show 117 with the place value cards.)",
+        "T: (Show 11 tens 5 ones with the place value cards.) On your number line, mark and label the halfway",
+        "Materials: (T) Place value cards (S) Personal white board",
+        "T: How many tens are in 28? (Show place value cards for 28.)",
+        "S: 3 tens! (Show the place value card for 30 or 3 tens. Again, cover the zero to help clarify.)",
+        "T: (Show 2 tens 5 ones with the place value cards.) Estimate to draw a tick mark halfway"
+      ],
+      "money-model": [
+        "tens. How will our endpoints change to round 1",
+        "tens. How will our endpoints change to round 1"
+      ],
+      "picture-or-drawing": [
+        "T: (Draw and label endpoints on the vertical number line.)",
+        "T: Draw a tick mark near the bottom of the number line. To the right,",
+        "S: (Draw and label 20 = 2 tens.)",
+        "T: Draw a tick mark near the top of the number line. To the right, label it 30 = 3 tens.",
+        "S: (Draw and label 30 = 3 tens.)",
+        "T: (Show 2 tens 5 ones with the place value cards.) Estimate to draw a tick mark halfway",
+        "S: (Draw and label 25 = 2 tens 5 ones.)",
+        "T: (Draw and label endpoints on the vertical number line.)"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "How many tens are in 28? (Show place value cards for 28.)"
+      },
+      {
+        "speaker": "students",
+        "text": "2 tens! (Pull apart the cards to show the 2 tens as 20. Perhaps cover the zero in the ones to clarify the interpretation of 20 as 2 tens.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a tick mark near the bottom of the number line. To the right, label it 20 = 2 tens."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label 20 = 2 tens.)"
+      },
+      {
+        "speaker": "students",
+        "text": "3 tens! (Show the place value card for 30 or 3 tens. Again, cover the zero to help clarify.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a tick mark near the top of the number line. To the right, label it 30 = 3 tens."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label 30 = 3 tens.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Show 2 tens 5 ones with the place value cards.) Estimate to draw a tick mark halfway between 20 and 30. Label it 25 = 2 tens 5 ones."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label 25 = 2 tens 5 ones.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "When you look at your vertical number line, is 28 more than halfway or less than halfway between 20 and 30? Turn and talk to a partner about how you know. Then plot it on the number line."
+      },
+      {
+        "speaker": "students",
+        "text": "The ballet recital took about 30 minutes.  Rounded round 28 minutes to the nearest 10 to the nearest ten, the ballet recital took 30 minutes. minutes (without the number line). Students can then write their own Continue with rounding 17 milliliters to the nearest ten. word problem for rounding 17 (Leave the number line used for this on the board. It will be milliliters or 17 minutes. used in Problem 2.) number line. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 13 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "To round 17 milliliters to the nearest ten, we drew a number line with endpoints 1 ten and 2 tens. How will our endpoints change to round 1 hundred 17 to the nearest ten? Turn and talk."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many tens are in 1 hundred? (Show the place value card of 100.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Show the place value cards for 10 tens and then 11 tens, that is, 100 and 110.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Show 117 with the place value cards.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many tens are in 117? Turn and talk about how you know."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What will we label our bottom endpoint on the number line when we round 117 to the nearest ten?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw and label endpoints on the vertical number line.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How should we label our halfway point?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Show 11 tens 5 ones with the place value cards.) On your number line, mark and label the halfway point."
+      },
+      {
+        "speaker": "students",
+        "text": "(Mark and label the halfway point.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label 117 on your number line now. (Allow time for students to label 117.) What is 117 rounded to the nearest ten? Use a complete sentence."
+      },
+      {
+        "speaker": "students",
+        "text": "20. plotting points on a number line by"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Remember from telling time that a number line is Additionally, connect back to continuous. The models we drew to round 17 yesterday’s lesson by using beakers or milliliters and 117 milliliters were the same, even scales with water or rice. though they showed different portions of the number line; corresponding points are 1 hundred milliliters apart. Discuss the similarities and differences between rounding within those two intervals with your partner."
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 160 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 13 3 2\n\n\nLesson 13\nObjective: Round two- and three-digit numbers to the nearest ten on the\nvertical number line.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (13 minutes)\n Application Problem               (7 minutes)\n Concept Development               (30 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (13 minutes)\n\n Group Counting 3.OA.1                                               (4 minutes)\n Rename the Tens 3.NBT.3                                             (4 minutes)\n Halfway on the Number Line 3.NBT.1                                  (5 minutes)\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. It reviews foundational\nstrategies for multiplication from Module 1 and anticipates Module 3.\nDirect students to count forward and backward, occasionally changing the direction of the count:\n       Threes to 30\n       Fours to 40\n       Sixes to 60\n       Sevens to 70\n       Eights to 80\n       Nines to 90\nAs students’ fluency with skip-counting improves, help them make a connection to multiplication by tracking\nthe number of groups they count using their fingers.\n\n\n                        Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                 159\n                                                      number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 161 (application-problem) ---\nA STORY OF UNITS                                                                                                              Lesson 13 3 2\n\n\nRename the Tens (4 minutes)\nNote: This activity prepares students for rounding in this lesson and anticipates the work in Lesson 14 where\nstudents round numbers to the nearest hundred on the number line.\n    T:   (Write 9 tens = ____.) Say the number.\n    S:   90.\nContinue with the following possible sequence: 10 tens, 20 tens, 80 tens, 63 tens, and 52 tens.\n\nHalfway on the Number Line (5 minutes)\nNote: This activity reviews rounding using a vertical number line from Lesson 12.\n    T:   (Project a vertical line with endpoints labeled 30 and 40.) What number is halfway between 3 tens\n         and 4 tens?\n    S:   35.\n    T:   (Write 35 halfway between 30 and 40.)\nContinue with the following possible sequence: 130 and 140, 830 and 840, and 560 and 570.\n\n\nApplication Problem (7 minutes)\n\nThe school ballet recital begins at 12:17 p.m. and ends at 12:45 p.m. How many minutes long is the ballet\nrecital?\n\n\nNote: This problem reviews finding intervals of minutes from Topic A and leads directly into rounding\nintervals of minutes to the nearest ten in this lesson. Encourage students to share and discuss simplifying\nstrategies they may have used to solve. Possible strategies:\n        Count by ones from 12:17 to 12:20 and then by fives to 12:45.\n        Count by tens and ones, 12:27, 12:37, plus 8 minutes.\n        Subtract 17 minutes from 45 minutes.\n\n\n                        Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                 160\n                                                      number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 162 (concept-development) ---\nA STORY OF UNITS                                                                                                              Lesson 13 3 2\n\n\nConcept Development (30 minutes)\n\nMaterials: (T) Place value cards (S) Personal white board\n\nProblem 1: Round two-digit measurements to the nearest ten.\n    T:   Let’s round 28 minutes to the nearest 10 minutes.\n    T:   How many tens are in 28? (Show place value cards for 28.)\n    S:   2 tens! (Pull apart the cards to show the 2 tens as 20. Perhaps\n         cover the zero in the ones to clarify the interpretation of 20 as 2 tens.)\n    T:   Draw a tick mark near the bottom of the number line. To the right,\n         label it 20 = 2 tens.\n    S:   (Draw and label 20 = 2 tens.)\n    T:   What is 1 more ten than 2 tens?\n    S:   3 tens! (Show the place value card for 30 or 3 tens. Again, cover the zero to help clarify.)\n    T:   Draw a tick mark near the top of the number line. To the right, label it 30 = 3 tens.\n    S:   (Draw and label 30 = 3 tens.)\n    T:   What number is halfway between 20 and 30?\n    S:   25.\n    T:   In unit form, what number is halfway between 2 tens and 3 tens?\n    S:   2 tens 5 ones.\n    T:   (Show 2 tens 5 ones with the place value cards.) Estimate to draw a tick mark halfway\n         between 20 and 30. Label it 25 = 2 tens 5 ones.\n    S:   (Draw and label 25 = 2 tens 5 ones.)\n    T:   When you look at your vertical number line, is 28 more than halfway or less than halfway between\n         20 and 30? Turn and talk to a partner about how you know. Then plot it on the number line.\n    S:   28 is more than halfway between 2 tens and 3 tens.  I know because 28 is more than 25, and 25 is\n         halfway.  I know because 5 ones is halfway, and 8 is more than 5.\n    T:   What is 28 rounded to the nearest ten?\n    S:   30.\n    T:   Tell me in unit form.\n                                                                                      NOTES ON\n    S:   2 tens 8 ones rounded to the nearest ten is 3 tens.                          MULTIPLE MEANS\n    T:   Let’s go back to our Application Problem. How would                          OF ENGAGEMENT:\n         you round to answer the question, “About how long                    Alternatively, challenge students who\n         was the ballet recital?” Discuss with a partner.                     round with automaticity to quickly\n    S:   The ballet recital took about 30 minutes.  Rounded                  round 28 minutes to the nearest 10\n         to the nearest ten, the ballet recital took 30 minutes.              minutes (without the number line).\n                                                                                                                Students can then write their own\nContinue with rounding 17 milliliters to the nearest ten.                                                       word problem for rounding 17\n(Leave the number line used for this on the board. It will be                                                   milliliters or 17 minutes.\nused in Problem 2.)\n\n\n                        Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                         161\n                                                      number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 163 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                             Lesson 13 3 2\n\n\nProblem 2: Round three-digit measurements of milliliters to the nearest ten.\n    T:   To round 17 milliliters to the nearest ten, we\n         drew a number line with endpoints 1 ten and 2\n         tens. How will our endpoints change to round 1\n         hundred 17 to the nearest ten? Turn and talk.\n    S:   Each endpoint has to grow by 1 hundred.\n    T:   How many tens are in 1 hundred? (Show the\n         place value card of 100.)\n    S:   10 tens.\n    T:   When I cover the ones, we see the 10 tens. (Put\n         your hand over the zero in the ones place.)\n    T:   What is 1 more ten than 10 tens?\n    S:   11 tens.\n    T:   (Show the place value cards for 10 tens and then 11 tens, that is, 100 and 110.)\n    T:   (Show 117 with the place value cards.)\n    T:   How many tens are in 117? Turn and talk about how you know.\n    S:   (Track on fingers.) 10, 20, 30, 40, 50, …, 110. Eleven tens.  17 has 1 ten,\n         so 117 has 10 tens, plus 1 ten makes 11 tens.  110 has 11 tens.  100 has\nMP.6\n         10 tens and one more ten is 11 tens.\n    T:   What is 1 more ten than 11 tens?\n    S:   12 tens.\n    T:   What is the value of 12 tens?\n    S:   120.\n    T:   What will we label our bottom endpoint on the number line when we round\n         117 to the nearest ten?\n    S:   110 = 11 tens.\n    T:   The top endpoint?\n    S:   120 = 12 tens.\n    T:   (Draw and label endpoints on the vertical number line.)\n    T:   How should we label our halfway point?\n    S:   115 = 11 tens 5 ones.\n    T:   (Show 11 tens 5 ones with the place value cards.) On your number line, mark and label the halfway\n         point.\n    S:   (Mark and label the halfway point.)\n    T:   Is 117 more or less than halfway between 110 and 120? Tell your partner how you know.\n    S:   It’s closer to 120. 17 is only 3 away from 20, but 7 away from 10.  It’s more than halfway\n         between 110 and 120.\n\n\n                       Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                 162\n                                                     number line.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 164 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                              Lesson 13 3 2\n\n\n    T:   Label 117 on your number line now. (Allow time for\n         students to label 117.) What is 117 rounded to the\n         nearest ten? Use a complete sentence.\n    S:   117 rounded to the nearest ten is 120.                                     NOTES ON\n    T:   Tell me in unit form with tens and ones.                                   MULTIPLE MEANS\n                                                                                    OF ACTION AND\n    S:   11 tens 7 ones rounded to the nearest ten is 12 tens.\n                                                                                    EXPRESSION:\n    T:   What is 17 rounded to the nearest ten?\n                                                                           Reduce the small motor demands of\n    S:   20.                                                               plotting points on a number line by\n    T:   Again, what is 117 rounded to the nearest ten?                    enlarging the number line and offering\n                                                                           alternatives to marking with a pencil,\n    S:   120.\n                                                                           such as placing stickers or blocks.\n    T:   Remember from telling time that a number line is                  Additionally, connect back to\n         continuous. The models we drew to round 17                        yesterday’s lesson by using beakers or\n         milliliters and 117 milliliters were the same, even               scales with water or rice.\n         though they showed different portions of the number\n         line; corresponding points are 1 hundred milliliters\n         apart. Discuss the similarities and differences between\n         rounding within those two intervals with your partner.\n    S:   All the numbers went in the same place, we just wrote a 1 in front of them all to show they were\n         1 hundred more.  We still just paid attention to the number of tens. We thought about if 17 was\n         more or less than halfway between 10 and 20.\nContinue with rounding the following possible measurements to the nearest ten: 75 mL, 175 mL, 212 g,\n315 mL, and 103 kg.\n\nProblem Set (10 minutes)\n                                                                                                                            NOTES ON\nStudents should do their personal best to complete the Problem\n                                                                                                                            SYMBOLS:\nSet within the allotted 10 minutes. Depending on your class, it\nmay be appropriate to modify the assignment by specifying                                                       This symbol is used to show that the\nwhich problems they work on first. Some problems do not                                                         answer is an approximate: ≈. Before\nspecify a method for solving. Students should solve these                                                       students start work on the Problem\nproblems using the RDW approach used for Application                                                            Set, call their attention to it and point\nProblems.                                                                                                       out the difference between ≈ and =.\n\n\n                        Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                                 163\n                                                      number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 165 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 13 3 2\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Round two- and three-digit numbers to\nthe nearest ten on the vertical number line.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        What is the same and different about Problems\n         1(c) and 1(d)? Did you solve the problems\n         differently? Why or why not?\n        Look at Problem 1(f). Did the zero in 405 make\n         the problem challenging? Why?\n        How did our fluency activities Rename the Ten\n         and Halfway on the Number Line help with our\n         rounding work today?\n        Think back to yesterday’s activity where we\n         measured and then rounded at stations. How did\n         that work help you envision the units we worked\n         with today on the number line?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                        Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                 164\n                                                      number line.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 166 (problem-set) ---\nA STORY OF UNITS                                                                                     Lesson 13 Problem Set 3 2\n\n\nName                                                                                                       Date\n\n1. Round to the nearest ten. Use the number line to model your thinking.\n\n\n     a. 32 ≈ __________                                                             b. 36 ≈ __________\n\n                                                            40\n\n\n                                                            35                                                                  35\n\n                                                            32\n                                                            30\n\n\n     c. 62 ≈ __________                                                             d. 162 ≈ __________\n\n\n     e. 278 ≈ __________                                                             f.    405 ≈ __________\n\n\n                       Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical           165\n                                                     number line.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 167 (problem-set) ---\nA STORY OF UNITS                                                                                       Lesson 13 Problem Set 3 2\n\n\n2. Round the weight of each item to the nearest 10 grams. Draw number lines to model your thinking.\n\n\n                      Item                                                 Number Line                                 Round to the nearest 10 grams\n\n\n                        36 grams\n\n\n                  52 grams\n\n\n                            142 grams\n\n\n3. Carl’s basketball game begins at 3:03 p.m. and ends at 3:51 p.m.\n\n   a. How many minutes did Carl’s basketball game last?\n\n\n   b. Round the total number of minutes in the game to the nearest 10 minutes.\n\n\n                         Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                     166\n                                                       number line.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 168 (exit-ticket) ---\nA STORY OF UNITS                                                                                         Lesson 13 Exit Ticket 3 2\n\n\nName                                                                                                       Date\n\n1. Round to the nearest ten. Use the number line to model your thinking.\n\n\n     a. 26 ≈ _________                                                              b. 276 ≈ __________\n\n\n2. Bobby rounds 603 to the nearest ten. He says it is 610. Is he correct? Why or why not? Use a number\n   line and words to explain your answer.\n\n\n                       Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical         167\n                                                     number line.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 169 (homework) ---\nA STORY OF UNITS                                                                                       Lesson 13 Homework 3 2\n\n\nName                                                                                                       Date\n\n1. Round to the nearest ten. Use the number line to model your thinking.\n\n\n     a. 43 ≈ ________                                                               b. 48 ≈ ________\n\n\n                                                               50\n\n\n                                                               45\n                                                               43\n\n                                                               40\n\n\n     c. 73 ≈ ________                                                               d. 173 ≈ ________\n\n\n     e. 189 ≈ ________                                                              f.     194 ≈ ________\n\n\n                       Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical      168\n                                                     number line.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 170 (homework) ---\nA STORY OF UNITS                                                                                       Lesson 13 Homework 3 2\n\n\n2. Round the weight of each item to the nearest 10 grams. Draw number lines to model your thinking.\n\n\n                  Item                                                Number Line                               Round to the nearest 10 grams\n\n\n         Cereal bar: 45 grams\n\n\n       Loaf of bread: 673 grams\n\n\n3. The Garden Club plants rows of carrots in the garden. One seed packet weighs 28 grams. Round the total\n   weight of 2 seed packets to the nearest 10 grams. Model your thinking using a number line.\n\n\n                       Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                  169\n                                                     number line.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 166,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                     Lesson 13 Problem Set 3 2\n\n\nName                                                                                                       Date\n\n1. Round to the nearest ten. Use the number line to model your thinking.\n\n\n     a. 32 ≈ __________                                                             b. 36 ≈ __________\n\n                                                            40\n\n\n                                                            35                                                                  35\n\n                                                            32\n                                                            30\n\n\n     c. 62 ≈ __________                                                             d. 162 ≈ __________\n\n\n     e. 278 ≈ __________                                                             f.    405 ≈ __________\n\n\n                       Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical           165\n                                                     number line.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 167,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                       Lesson 13 Problem Set 3 2\n\n\n2. Round the weight of each item to the nearest 10 grams. Draw number lines to model your thinking.\n\n\n                      Item                                                 Number Line                                 Round to the nearest 10 grams\n\n\n                        36 grams\n\n\n                  52 grams\n\n\n                            142 grams\n\n\n3. Carl’s basketball game begins at 3:03 p.m. and ends at 3:51 p.m.\n\n   a. How many minutes did Carl’s basketball game last?\n\n\n   b. Round the total number of minutes in the game to the nearest 10 minutes.\n\n\n                         Lesson 13:                    Round two- and three-digit numbers to the nearest ten on the vertical                     166\n                                                       number line.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 293,
+        "text": "A STORY OF UNITS                                                                                      Lesson 13 Answer Key 3 2\n\n\nLesson 13\nProblem Set\n1.    a. 30\n      b. 40; rounding modeled on number line\n      c. 60; rounding modeled on number line\n      d. 160; rounding modeled on number line\n      e. 280; rounding modeled on number line\n      f.   410; rounding modeled on number line\n2.    Number line drawn and labeled to model rounding; 40 g\n      Number line drawn and labeled to model rounding; 50 g\n      Number line drawn and labeled to model rounding; 140 g\n3.    a. 48 min\n      b. 50 min\n\n\nExit Ticket\n1.    a. 30; rounding modeled on number line\n      b. 280; rounding modeled on number line\n2.    No; 603 is less than halfway between 600 and 610, so 603 rounded to the nearest ten is 600; number\n      line drawn and labeled to model rounding\n\n\nHomework\n1.    a. 40\n      b. 50; rounding modeled on number line\n      c. 70; rounding modeled on number line\n      d. 170; rounding modeled on number line\n      e. 190; rounding modeled on number line\n      f.   190; rounding modeled on number line\n2.    Number line drawn and labeled to model rounding; 50 g\n      Number line is drawn and labeled to model rounding; 670 g\n3.    60 g; number line drawn and labeled to model rounding\n\n\n                        Module 2:                  Place Value and Problem Solving with Units of Measure                          292\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

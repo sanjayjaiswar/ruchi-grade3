@@ -1,0 +1,443 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m1-l7",
+  "moduleId": "m1",
+  "lessonNumber": 7,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf",
+    "teacherEditionSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
+    "teacherEditionBytes": 13572842,
+    "lessonPdfPages": {
+      "start": 97,
+      "end": 108
+    },
+    "problemSetPdfPages": [
+      103,
+      104
+    ],
+    "exitTicketPdfPages": [
+      105
+    ],
+    "homeworkPdfPages": [
+      106,
+      107
+    ],
+    "answerKeyPdfPages": [
+      301,
+      302
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m1-student/workbook-page-027.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m1-teacher/page-103.png",
+      "/source-pages/m1-teacher/page-104.png",
+      "/source-pages/m1-teacher/page-301.png",
+      "/source-pages/m1-teacher/page-302.png"
+    ]
+  },
+  "objective": "Demonstrate the commutativity of multiplication, and practice related facts by skip-counting objects in array models.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.\n\n\n                       Lesson 7:            Demonstrate the commutativity of multiplication, and practice related              96\n                                            facts by skip-counting objects in array models.\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                                  Lesson 7 3 1",
+    "conceptDevelopmentText": "Personal White Board\n  Materials: (S) Personal white board                                                                                  2\n                                                                                                   4×2=8\n                                                                                                                       4\n Problem 1: Rotate arrays 90 degrees.\n                                                                                                                       6\n     T: Position your board so that the long side is horizontal.\n         Draw an array that shows 4 rows of 2.                                                                         8\n     S: (Draw the array, as shown to the right.)\n     T: Write a skip-count by twos to find the total. Then write a\n         multiplication sentence where the first factor represents the\n         number of rows.\n     S: (Write 2, 4, 6, 8 and 4 × 2 = 8 as shown to the right.)\n     T: Rotate your board 90 degrees so that the long side is vertical.\n     S: (Rotate, as shown to the right.)\n     T: What happened to the array?\n     S: It has 2 rows of 4.  It has 4 groups of 2, but they’re up and down instead of in rows.\n     T: Now the twos are columns, vertical groups in an array.\n     T: I’ll rotate my board. You tell me if the twos are\n         columns or rows.                                                               NOTES ON\n     T: (Show the twos as rows.)                                                        VOCABULARY:\n     S: Rows!                                                                   The word column was originally\n     T: (Rotate your board and show the twos as columns.)                       introduced in Grade 2, Module 6 but is\n     S: Columns!                                                                treated as new vocabulary in this\n                                                                                lesson.\n     T: Skip-count the rows by four!\n     S: (Point to the rows as students count.) 4, 8.\n     T: Add that skip-count to your board. (Allow time.) What multiplication sentence can represent this\n         array?\n     S: 2 × 4 = 8.\n     T: (Write 4 × 2 = 8 and 2 × 4 = 8 on the board with their corresponding arrays\n         drawn as shown.) What do you notice about the multiplication sentences?\n     S: The 4 and the 2 switched places.\n     T: What do the 4 and 2 represent in each? Talk to your partner.\n     S: In A, the 4 represents the number of rows, but in B, it represents the size of the row.  The twos\nMP.7     are rows in A but columns in B.\n     T: Did the meaning of the 8 change?\n     S: No.\n     T: So factors can switch places and trade meanings, but the total stays the same. We call that the\n         commutative property. Talk to your partner about why the total stays the same.\n     S: (Discuss.)\n     Continue with 2 × 5 and 3 × 4 arrays.\n\n\n                           Lesson 7:           Demonstrate the commutativity of multiplication, and practice related                95\n                                               facts by skip-counting objects in array models.\n\n                           ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                                 Lesson 7 3 1\n\n\nProblem 2: Interpreting rows and columns in rotated arrays.\n                                                                                                 Personal White Board\nAsk students to draw an array that shows 8 rows of 2. They\nshould write a skip-count to find the total and a number                             2\n                                                                                         8 × 2 = 16\nsentence to represent the array. (See the example to the right.)                     4\n                                                                                     6\n    T: What does the first factor—the 8—in your equation                             8\n        represent?                                                                   10\n    S: The number of equal groups in the array.  The                                12\n                                                                                     14\n        number of rows.\n                                                                                     16\n    T: Can the 8 also represent the size of the group? Talk to\n        your partner.\n    S: It can be the vertical group.  It can mean the size of the column!\n    T: If we think of 8 as the size of the groups, then how many groups does the array show?\n    S: 2 groups.\n    T: Are those 2 groups shown by columns or by rows?\n    S: By columns.\n    T: Does the total change if we think of 8 as the size of the groups and 2 as the number of groups?\n    S: No, the total is still 16 because you still have to multiply 8 and 2.\n    T: Talk with a partner. Does 8 × 2 = 16 represent this array even if we think of 8 as the size of the\n        groups and 2 columns as the number of groups?\n    S: No, it should be written as 2 × 8 = 16.  We just learned that factors can trade meanings.  They\n        can trade meanings, but they also switch places.  The total stays the same, so I think it works.\n    T: Factors can trade meanings without always having to switch places in the equation. It’s okay to\n        write 8 × 2 = 16 and think of 8 as the size of the groups and 2 columns as the number of groups. In\n        third grade we’ll usually write multiplication sentences so that the first factor represents the number\n        of groups. That makes them a little easier to read. But either factor can mean the size of the groups\n        or the number of groups.",
+    "fluencyPracticeText": " Group Counting 3.OA.1                           (3 minutes)\n Divide Equal Groups 3.OA.2                      (5 minutes)\n Multiply with Twos 3.OA.7                       (5 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by twos and threes\nin this activity anticipates work with those factors in Topic C.\n    T:   Let’s count by twos. (Direct students to count forward and backward to 20, emphasizing the 8 to 10,\n         10 to 12, and 18 to 20 transitions.)\n    T:   Let’s count by threes. (Direct students to count forward and backward to 30, periodically changing\n         directions. Emphasize the 9 to 12, 18 to 21, and 27 to 30 transitions.)\n\nDivide Equal Groups (5 minutes)\nMaterials: (S) Personal white board\n\nNote: Students directly relate repeated addition to division. They interpret the unknown in division. This\nactivity reviews Lesson 6.\n    T:   (Project an array with 2 groups of 4.) Say the total as a repeated addition sentence.\n    S:   4 + 4 = 8.\n    T:   Write a division sentence for 8 divided into 2 equal groups.\n    S:   (Write 8 ÷ 2 = 4.)\n\n\n                       Lesson 7:            Demonstrate the commutativity of multiplication, and practice related              93\n                                            facts by skip-counting objects in array models.\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                                 Lesson 7 3 1\n\n\n    T:   Below that division sentence write a division sentence dividing 8 into 4 equal groups.\n    S:   (Write 8 ÷ 4 = 2.)\nContinue with this possible sequence: 5 groups of 3, 3 groups of 4, and 6 groups of 2.\n\nMultiply with Twos (5 minutes)\nMaterials: (S) Personal white board, twos array (Fluency Template), blank paper\n\nNote: Students unit count objects in an array and write                                                  Twos Array Fluency Template\nmultiplication sentences that match the count-by in\nanticipation of this lesson’s objective.\n    T:   Slip your template into your personal white board.\n    T:   Turn your board so that it’s vertical. Use your blank\n         paper to cover all but the first row of dots.\n    T:   How many twos show?\n    S:   1 two.\n    T:   Say the multiplication sentence to represent the array\n         that’s shown and solve.\n    S:   1 × 2 = 2.\n    T:   Uncover another row.\nContinue this sequence having students uncover twos for 2 × 2, 3 × 2, 10 × 2, 4 × 2, 5 × 2, 6 × 2, 7 × 2, 9 × 2,\nand 8 × 2.",
+    "problemSetGuidanceText": "Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For\nsome classes, it may be appropriate to modify the assignment by specifying which problems they work on\nfirst. Some problems do not specify a method for solving. Students should solve these problems using the\nRDW approach used for Application Problems.\n\n\n                       Lesson 7:            Demonstrate the commutativity of multiplication, and practice related              96\n                                            facts by skip-counting objects in array models.\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                                  Lesson 7 3 1",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Position your board so that the long side is horizontal. Draw an array that shows 4 rows of 2. 8"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw the array, as shown to the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a skip-count by twos to find the total. Then write a multiplication sentence where the first factor represents the number of rows."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 2, 4, 6, 8 and 4 × 2 = 8 as shown to the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Rotate your board 90 degrees so that the long side is vertical."
+      },
+      {
+        "speaker": "students",
+        "text": "(Rotate, as shown to the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What happened to the array?"
+      },
+      {
+        "speaker": "students",
+        "text": "It has 2 rows of 4.  It has 4 groups of 2, but they’re up and down instead of in rows."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now the twos are columns, vertical groups in an array."
+      },
+      {
+        "speaker": "teacher",
+        "text": "I’ll rotate my board. You tell me if the twos are columns or rows. NOTES ON"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Show the twos as rows.) VOCABULARY:"
+      },
+      {
+        "speaker": "students",
+        "text": "Rows! The word column was originally"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Rotate your board and show the twos as columns.) introduced in Grade 2, Module 6 but is"
+      },
+      {
+        "speaker": "students",
+        "text": "Columns! treated as new vocabulary in this lesson."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Skip-count the rows by four!"
+      },
+      {
+        "speaker": "students",
+        "text": "(Point to the rows as students count.) 4, 8."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Add that skip-count to your board. (Allow time.) What multiplication sentence can represent this array?"
+      },
+      {
+        "speaker": "students",
+        "text": "2 × 4 = 8."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 4 × 2 = 8 and 2 × 4 = 8 on the board with their corresponding arrays drawn as shown.) What do you notice about the multiplication sentences?"
+      },
+      {
+        "speaker": "students",
+        "text": "The 4 and the 2 switched places."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do the 4 and 2 represent in each? Talk to your partner."
+      },
+      {
+        "speaker": "students",
+        "text": "In A, the 4 represents the number of rows, but in B, it represents the size of the row.  The twos MP.7 are rows in A but columns in B."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Did the meaning of the 8 change?"
+      },
+      {
+        "speaker": "students",
+        "text": "No."
+      },
+      {
+        "speaker": "teacher",
+        "text": "So factors can switch places and trade meanings, but the total stays the same. We call that the commutative property. Talk to your partner about why the total stays the same."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.) Continue with 2 × 5 and 3 × 4 arrays. facts by skip-counting objects in array models. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 7 3 1 Personal White Board Ask students to draw an array that shows 8 rows of 2. They should write a skip-count to find the total and a number 2 8 × 2 = 16 sentence to represent the array. (See the example to the right.) 4 6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What does the first factor—the 8—in your equation 8 represent? 10"
+      },
+      {
+        "speaker": "students",
+        "text": "The number of equal groups in the array.  The 12 14 number of rows. 16"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can the 8 also represent the size of the group? Talk to your partner."
+      },
+      {
+        "speaker": "students",
+        "text": "It can be the vertical group.  It can mean the size of the column!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "If we think of 8 as the size of the groups, then how many groups does the array show?"
+      },
+      {
+        "speaker": "students",
+        "text": "2 groups."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Are those 2 groups shown by columns or by rows?"
+      },
+      {
+        "speaker": "students",
+        "text": "By columns."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Does the total change if we think of 8 as the size of the groups and 2 as the number of groups?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, the total is still 16 because you still have to multiply 8 and 2."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk with a partner. Does 8 × 2 = 16 represent this array even if we think of 8 as the size of the groups and 2 columns as the number of groups?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, it should be written as 2 × 8 = 16.  We just learned that factors can trade meanings.  They can trade meanings, but they also switch places.  The total stays the same, so I think it works."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Factors can trade meanings without always having to switch places in the equation. It’s okay to write 8 × 2 = 16 and think of 8 as the size of the groups and 2 columns as the number of groups. In third grade we’ll usually write multiplication sentences so that the first factor represents the number of groups. That makes them a little easier to read. But either factor can mean the size of the groups or the number of groups."
+      }
+    ],
+    "teacherPrompts": [
+      "Position your board so that the long side is horizontal. Draw an array that shows 4 rows of 2. 8",
+      "Write a skip-count by twos to find the total. Then write a multiplication sentence where the first factor represents the number of rows.",
+      "Rotate your board 90 degrees so that the long side is vertical.",
+      "What happened to the array?",
+      "Now the twos are columns, vertical groups in an array.",
+      "I’ll rotate my board. You tell me if the twos are columns or rows. NOTES ON",
+      "(Show the twos as rows.) VOCABULARY:",
+      "(Rotate your board and show the twos as columns.) introduced in Grade 2, Module 6 but is",
+      "Skip-count the rows by four!",
+      "Add that skip-count to your board. (Allow time.) What multiplication sentence can represent this array?",
+      "(Write 4 × 2 = 8 and 2 × 4 = 8 on the board with their corresponding arrays drawn as shown.) What do you notice about the multiplication sentences?",
+      "What do the 4 and 2 represent in each? Talk to your partner.",
+      "Did the meaning of the 8 change?",
+      "So factors can switch places and trade meanings, but the total stays the same. We call that the commutative property. Talk to your partner about why the total stays the same.",
+      "What does the first factor—the 8—in your equation 8 represent? 10",
+      "Can the 8 also represent the size of the group? Talk to your partner.",
+      "If we think of 8 as the size of the groups, then how many groups does the array show?",
+      "Are those 2 groups shown by columns or by rows?",
+      "Does the total change if we think of 8 as the size of the groups and 2 as the number of groups?",
+      "Talk with a partner. Does 8 × 2 = 16 represent this array even if we think of 8 as the size of the groups and 2 columns as the number of groups?",
+      "Factors can trade meanings without always having to switch places in the equation. It’s okay to write 8 × 2 = 16 and think of 8 as the size of the groups and 2 columns as the number of groups. In third grade we’ll usually write multiplication sentences so that the first factor represents the number of groups. That makes them a little easier to read. But either factor can mean the size of the groups or the number of groups."
+    ],
+    "debriefPrompt": "How did rotating our boards help us see rows as columns and columns as rows?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "a. Draw an array that shows 6 rows of 2.",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "a. Draw an array that shows 2 rows of 6. b. Write a multiplication sentence where the first b. Write a multiplication sentence where the first factor represents the number of rows. factor represents the number of rows. ____ × ____ = ____ ____ × ____ = ____",
+        "equations": [
+          "____ × ____ = ____"
+        ]
+      },
+      {
+        "number": 3,
+        "prompt": "a. Turn your paper to look at the arrays in Problems 1 and 2 in different ways. What is the same and what is different about them? b. Why are the factors in your multiplication sentences in a different order?",
+        "equations": []
+      },
+      {
+        "number": 4,
+        "prompt": "Write a multiplication sentence for each expression. You might skip-count to find the totals. a. 6 twos: 6 × 2 = 12 ____ d. 2 sevens: ____ ____ Extension: b. 2 sixes: ____ ____ e. 9 twos: ____ ____ g. 11 twos: ____ ____ c. 7 twos: ____ ____ f. 2 nines: ____ ____ h. 2 twelves: ____ ____ facts by skip-counting objects in array models.",
+        "equations": [
+          "6 × 2 = 12"
+        ]
+      },
+      {
+        "number": 5,
+        "prompt": "Write and solve multiplication sentences where the second factor represents the size of the row.",
+        "equations": []
+      },
+      {
+        "number": 6,
+        "prompt": "Ms. Nenadal writes 2 × 7 = 7 × 2 on the board. Do you agree or disagree? Draw arrays to help explain your thinking.",
+        "equations": [
+          "2 × 7 = 7"
+        ]
+      },
+      {
+        "number": 7,
+        "prompt": "Find the missing factor to make each equation true. 5 × 2 = 2 × ____ ____ × 8 = 8 × 2 2 × 10 = ____× 2 2 × ____ = 9 × 2",
+        "equations": [
+          "5 × 2 = 2",
+          "____ × 8 = 8",
+          "2 × 10 = ____",
+          "2 × ____ = 9"
+        ]
+      },
+      {
+        "number": 8,
+        "prompt": "Jada gets 2 new packs of erasers. Each pack has 6 erasers in it. a. Draw an array to show how many erasers Jada has altogether. b. Write and solve a multiplication sentence to describe the array. c. Use the commutative property to write and solve a different multiplication sentence for the array. facts by skip-counting objects in array models.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                       Lesson 7 Problem Set 3 1\n\n\nName                                                                                       Date\n\n\n1. a. Draw an array that shows 6 rows of 2.                                2. a. Draw an array that shows 2 rows of 6.\n\n\n   b. Write a multiplication sentence where the first                            b. Write a multiplication sentence where the first\n      factor represents the number of rows.                                         factor represents the number of rows.\n\n       ________ × ________ = ________                                                ________ × ________ = ________\n\n\n3. a. Turn your paper to look at the arrays in Problems 1 and 2 in different ways. What is the same and\n      what is different about them?\n\n\n    b. Why are the factors in your multiplication sentences in a different order?\n\n\n4. Write a multiplication sentence for each expression. You might skip-count to find the totals.\n\n    a. 6 twos: 6 × 2 = 12 ___                   d. 2 sevens:        ________ ___                    Extension:\n\n\n    b. 2 sixes: ________ ___                    e. 9 twos:          ________ ___                    g. 11 twos:     ________ ___\n\n\n    c. 7 twos: ________ ___                     f. 2 nines:         ________ ___                    h. 2 twelves:   ________ ___\n\n\n                       Lesson 7:           Demonstrate the commutativity of multiplication, and practice related              99\n                                           facts by skip-counting objects in array models.\n\n                       ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                        Lesson 7 Problem Set 3 1\n\n\n5. Write and solve multiplication sentences where the second factor represents the size of the row.\n\n\n6. Ms. Nenadal writes 2 × 7 = 7 × 2 on the board. Do you agree or disagree? Draw arrays to help explain\n   your thinking.\n\n\n7. Find the missing factor to make each equation true.\n\n\n   5 × 2 = 2 × _____                  _____ × 8 = 8 × 2                       2 × 10 = _____× 2                    2 × _____ = 9 × 2\n\n\n8. Jada gets 2 new packs of erasers. Each pack has 6 erasers in it.\n   a. Draw an array to show how many erasers Jada has altogether.\n\n\n    b. Write and solve a multiplication sentence to describe the array.\n\n\n    c. Use the commutative property to write and solve a different multiplication sentence for the array.\n\n\n                       Lesson 7:           Demonstrate the commutativity of multiplication, and practice related               100\n                                           facts by skip-counting objects in array models.\n\n                       ©2015 Great Minds. eureka-math.org",
+    "answerKeyProblemSetText": "1.    a. Array of 6 rows of 2 drawn\n      b. 6, 2, 12\n2.    a. Array of 2 rows of 6 drawn\n      b. 2, 6, 12\n3.    a. Same array in Problem 1 turned on its side in Problem 2\n      b. The meaning of the factors switched; 2 represents size of each group, and 6 represents number of\n           groups in Problem 1; 2 represents number of groups, and 6 represents size of each group in\n           Problem 2\n4.    a. Answer provided\n      b. 2 × 6 = 12\n      c. 7 × 2 = 14\n      d. 2 × 7 = 14\n      e. 9 × 2 = 18\n      f.   2 × 9 = 18\n      g. 11 × 2 = 22\n      h. 2 × 12 = 24\n5.    4 × 2 = 8; 2 × 4 = 8\n6.    Agree; array of 7 rows of 2 and array of 2 rows of 7 drawn\n7.    5; 2; 10; 9\n8.    a. Array of 2 rows of 6 drawn\n      b. 2 × 6 = 12\n      c. 6 × 2 = 12",
+    "answerKeyText": "A STORY OF UNITS                                                                              Lesson 7 Answer Key 3 1\n\n\nLesson 7\nProblem Set\n1.    a. Array of 6 rows of 2 drawn\n      b. 6, 2, 12\n2.    a. Array of 2 rows of 6 drawn\n      b. 2, 6, 12\n3.    a. Same array in Problem 1 turned on its side in Problem 2\n      b. The meaning of the factors switched; 2 represents size of each group, and 6 represents number of\n           groups in Problem 1; 2 represents number of groups, and 6 represents size of each group in\n           Problem 2\n4.    a. Answer provided\n      b. 2 × 6 = 12\n      c. 7 × 2 = 14\n      d. 2 × 7 = 14\n      e. 9 × 2 = 18\n      f.   2 × 9 = 18\n      g. 11 × 2 = 22\n      h. 2 × 12 = 24\n5.    4 × 2 = 8; 2 × 4 = 8\n6.    Agree; array of 7 rows of 2 and array of 2 rows of 7 drawn\n7.    5; 2; 10; 9\n8.    a. Array of 2 rows of 6 drawn\n      b. 2 × 6 = 12\n      c. 6 × 2 = 12\n\n\nExit Ticket\nAgree; array of 2 rows of 5 and array of 5 rows of 2 drawn; skip-counts by fives or twos, depending on the\narray, written to show a total of 10 each\n\n\n                             Module 1:           Properties of Multiplication and Division and Solving Problems with    297\n                                                 Units of 2–5 and 10\n\n                             ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                          Lesson 7 Answer Key 3 1\n\n\nHomework\n1.    a. Array of 7 rows of 2 drawn\n      b. 7, 2, 14\n2.    a. Array of 2 rows of 7 drawn\n      b. 2, 7, 14\n3.    a. Same array in Problem 1 turned on its side in Problem 2\n      b. The meaning of the factors switched; 2 represents size of each group, and 7 represents number of\n           groups in Problem 1; 2 represents number of groups, and 7 represents size of each group in\n           Problem 2\n4.    a. Answer provided.\n      b. 3 × 2 = 6\n      c. 2 × 3 = 6\n      d. 2 × 4 = 8\n      e. 4 × 2 = 8\n      f.   5 × 2 = 10\n      g. 2 × 5 = 10\n      h. 6 × 2 = 12\n      i.   2 × 6 = 12\n5.    6 × 2 = 12; 2 × 6 = 12\n6.    Agree; array of 2 rows of 8 and array of 8 rows of 2 drawn\n7.    2; 7; 2; 10\n8.    a. Array of 2 rows of 7 drawn\n      b. 2 × 7 = 14\n      c. 7 × 2 = 14\n\n\n                         Module 1:           Properties of Multiplication and Division and Solving Problems with    298\n                                             Units of 2–5 and 10\n\n                         ©2015 Great Minds. eureka-math.org",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "equal-groups",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "Demonstrate the commutativity of multiplication, and practice related facts by skip-counting objects in array models.",
+        "facts by skip-counting objects in array models.",
+        "Problem 1: Rotate arrays 90 degrees.",
+        "Draw an array that shows 4 rows of 2. 8",
+        "S: (Draw the array, as shown to the right.)",
+        "T: What happened to the array?",
+        "S: It has 2 rows of 4.  It has 4 groups of 2, but they’re up and down instead of in rows.",
+        "T: Now the twos are columns, vertical groups in an array."
+      ],
+      "equal-groups": [
+        "S: It has 2 rows of 4.  It has 4 groups of 2, but they’re up and down instead of in rows.",
+        "S: The number of equal groups in the array.  The 12",
+        " Divide Equal Groups 3.OA.2 (5 minutes)",
+        "Divide Equal Groups (5 minutes)",
+        "T: (Project an array with 2 groups of 4.) Say the total as a repeated addition sentence.",
+        "T: Write a division sentence for 8 divided into 2 equal groups.",
+        "T: Below that division sentence write a division sentence dividing 8 into 4 equal groups.",
+        "Continue with this possible sequence: 5 groups of 3, 3 groups of 4, and 6 groups of 2."
+      ],
+      "money-model": [
+        "T: Did the meaning of the 8 change?",
+        "T: Does the total change if we think of 8 as the size of the groups and 2 as the number of groups?"
+      ],
+      "picture-or-drawing": [
+        "Draw an array that shows 4 rows of 2. 8",
+        "S: (Draw the array, as shown to the right.)",
+        "drawn as shown.) What do you notice about the multiplication sentences?",
+        "Ask students to draw an array that shows 8 rows of 2. They",
+        "1. a. Draw an array that shows 6 rows of 2. 2. a. Draw an array that shows 2 rows of 6.",
+        "6. Ms. Nenadal writes 2 × 7 = 7 × 2 on the board. Do you agree or disagree? Draw arrays to help explain",
+        "a. Draw an array to show how many erasers Jada has altogether."
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Position your board so that the long side is horizontal. Draw an array that shows 4 rows of 2. 8"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw the array, as shown to the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a skip-count by twos to find the total. Then write a multiplication sentence where the first factor represents the number of rows."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 2, 4, 6, 8 and 4 × 2 = 8 as shown to the right.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Rotate, as shown to the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Show the twos as rows.) VOCABULARY:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Rotate your board and show the twos as columns.) introduced in Grade 2, Module 6 but is"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Skip-count the rows by four!"
+      },
+      {
+        "speaker": "students",
+        "text": "(Point to the rows as students count.) 4, 8."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Add that skip-count to your board. (Allow time.) What multiplication sentence can represent this array?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 4 × 2 = 8 and 2 × 4 = 8 on the board with their corresponding arrays drawn as shown.) What do you notice about the multiplication sentences?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.) Continue with 2 × 5 and 3 × 4 arrays. facts by skip-counting objects in array models. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 7 3 1 Personal White Board Ask students to draw an array that shows 8 rows of 2. They should write a skip-count to find the total and a number 2 8 × 2 = 16 sentence to represent the array. (See the example to the right.) 4 6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "If we think of 8 as the size of the groups, then how many groups does the array show?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Are those 2 groups shown by columns or by rows?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Factors can trade meanings without always having to switch places in the equation. It’s okay to write 8 × 2 = 16 and think of 8 as the size of the groups and 2 columns as the number of groups. In third grade we’ll usually write multiplication sentences so that the first factor represents the number of groups. That makes them a little easier to read. But either factor can mean the size of the groups or the number of groups."
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 97 (debrief) ---\nA STORY OF UNITS                                                                                                 Lesson 7 3 1\n\n\nLesson 7\nObjective: Demonstrate the commutativity of multiplication, and practice\nrelated facts by skip-counting objects in array models.\n\n\nSuggested Lesson Structure\n\n Fluency Practice              (13 minutes)\n Application Problem           (5 minutes)\n Concept Development           (32 minutes)\n Student Debrief               (10 minutes)\n   Total Time                   (60 minutes)\n\n\nFluency Practice (13 minutes)\n Group Counting 3.OA.1                           (3 minutes)\n Divide Equal Groups 3.OA.2                      (5 minutes)\n Multiply with Twos 3.OA.7                       (5 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by twos and threes\nin this activity anticipates work with those factors in Topic C.\n    T:   Let’s count by twos. (Direct students to count forward and backward to 20, emphasizing the 8 to 10,\n         10 to 12, and 18 to 20 transitions.)\n    T:   Let’s count by threes. (Direct students to count forward and backward to 30, periodically changing\n         directions. Emphasize the 9 to 12, 18 to 21, and 27 to 30 transitions.)\n\nDivide Equal Groups (5 minutes)\nMaterials: (S) Personal white board\n\nNote: Students directly relate repeated addition to division. They interpret the unknown in division. This\nactivity reviews Lesson 6.\n    T:   (Project an array with 2 groups of 4.) Say the total as a repeated addition sentence.\n    S:   4 + 4 = 8.\n    T:   Write a division sentence for 8 divided into 2 equal groups.\n    S:   (Write 8 ÷ 2 = 4.)\n\n\n                       Lesson 7:            Demonstrate the commutativity of multiplication, and practice related              93\n                                            facts by skip-counting objects in array models.\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 98 (application-problem) ---\nA STORY OF UNITS                                                                                                 Lesson 7 3 1\n\n\n    T:   Below that division sentence write a division sentence dividing 8 into 4 equal groups.\n    S:   (Write 8 ÷ 4 = 2.)\nContinue with this possible sequence: 5 groups of 3, 3 groups of 4, and 6 groups of 2.\n\nMultiply with Twos (5 minutes)\nMaterials: (S) Personal white board, twos array (Fluency Template), blank paper\n\nNote: Students unit count objects in an array and write                                                  Twos Array Fluency Template\nmultiplication sentences that match the count-by in\nanticipation of this lesson’s objective.\n    T:   Slip your template into your personal white board.\n    T:   Turn your board so that it’s vertical. Use your blank\n         paper to cover all but the first row of dots.\n    T:   How many twos show?\n    S:   1 two.\n    T:   Say the multiplication sentence to represent the array\n         that’s shown and solve.\n    S:   1 × 2 = 2.\n    T:   Uncover another row.\nContinue this sequence having students uncover twos for 2 × 2, 3 × 2, 10 × 2, 4 × 2, 5 × 2, 6 × 2, 7 × 2, 9 × 2,\nand 8 × 2.\n\n\nApplication Problem (5 minutes)\n\nAnna picks 24 flowers. She makes equal bundles of flowers and gives 1 bundle to each of her 7 friends. She\nkeeps a bundle for herself too. How many flowers does Anna put in each bundle?\n\n\nNote: This problem reviews division from Lesson 5 where the unknown represents the size of the group. The\nproblem’s complexity is in understanding that the flowers are divided equally into 8 bundles, not 7, in order\nto include a bundle for Anna. Students might choose to solve by drawing a division array learned in Lesson 6\nor a number bond learned in Lesson 3.\n\n\n                        Lesson 7:            Demonstrate the commutativity of multiplication, and practice related                 94\n                                             facts by skip-counting objects in array models.\n\n                         ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 99 (concept-development) ---\nA STORY OF UNITS                                                                                                 Lesson 7 3 1\n\n\n   Concept Development (32 minutes)                                                                          Personal White Board\n  Materials: (S) Personal white board                                                                                  2\n                                                                                                   4×2=8\n                                                                                                                       4\n Problem 1: Rotate arrays 90 degrees.\n                                                                                                                       6\n     T: Position your board so that the long side is horizontal.\n         Draw an array that shows 4 rows of 2.                                                                         8\n     S: (Draw the array, as shown to the right.)\n     T: Write a skip-count by twos to find the total. Then write a\n         multiplication sentence where the first factor represents the\n         number of rows.\n     S: (Write 2, 4, 6, 8 and 4 × 2 = 8 as shown to the right.)\n     T: Rotate your board 90 degrees so that the long side is vertical.\n     S: (Rotate, as shown to the right.)\n     T: What happened to the array?\n     S: It has 2 rows of 4.  It has 4 groups of 2, but they’re up and down instead of in rows.\n     T: Now the twos are columns, vertical groups in an array.\n     T: I’ll rotate my board. You tell me if the twos are\n         columns or rows.                                                               NOTES ON\n     T: (Show the twos as rows.)                                                        VOCABULARY:\n     S: Rows!                                                                   The word column was originally\n     T: (Rotate your board and show the twos as columns.)                       introduced in Grade 2, Module 6 but is\n     S: Columns!                                                                treated as new vocabulary in this\n                                                                                lesson.\n     T: Skip-count the rows by four!\n     S: (Point to the rows as students count.) 4, 8.\n     T: Add that skip-count to your board. (Allow time.) What multiplication sentence can represent this\n         array?\n     S: 2 × 4 = 8.\n     T: (Write 4 × 2 = 8 and 2 × 4 = 8 on the board with their corresponding arrays\n         drawn as shown.) What do you notice about the multiplication sentences?\n     S: The 4 and the 2 switched places.\n     T: What do the 4 and 2 represent in each? Talk to your partner.\n     S: In A, the 4 represents the number of rows, but in B, it represents the size of the row.  The twos\nMP.7     are rows in A but columns in B.\n     T: Did the meaning of the 8 change?\n     S: No.\n     T: So factors can switch places and trade meanings, but the total stays the same. We call that the\n         commutative property. Talk to your partner about why the total stays the same.\n     S: (Discuss.)\n     Continue with 2 × 5 and 3 × 4 arrays.\n\n\n                           Lesson 7:           Demonstrate the commutativity of multiplication, and practice related                95\n                                               facts by skip-counting objects in array models.\n\n                           ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 100 (application-problem) ---\nA STORY OF UNITS                                                                                                 Lesson 7 3 1\n\n\nProblem 2: Interpreting rows and columns in rotated arrays.\n                                                                                                 Personal White Board\nAsk students to draw an array that shows 8 rows of 2. They\nshould write a skip-count to find the total and a number                             2\n                                                                                         8 × 2 = 16\nsentence to represent the array. (See the example to the right.)                     4\n                                                                                     6\n    T: What does the first factor—the 8—in your equation                             8\n        represent?                                                                   10\n    S: The number of equal groups in the array.  The                                12\n                                                                                     14\n        number of rows.\n                                                                                     16\n    T: Can the 8 also represent the size of the group? Talk to\n        your partner.\n    S: It can be the vertical group.  It can mean the size of the column!\n    T: If we think of 8 as the size of the groups, then how many groups does the array show?\n    S: 2 groups.\n    T: Are those 2 groups shown by columns or by rows?\n    S: By columns.\n    T: Does the total change if we think of 8 as the size of the groups and 2 as the number of groups?\n    S: No, the total is still 16 because you still have to multiply 8 and 2.\n    T: Talk with a partner. Does 8 × 2 = 16 represent this array even if we think of 8 as the size of the\n        groups and 2 columns as the number of groups?\n    S: No, it should be written as 2 × 8 = 16.  We just learned that factors can trade meanings.  They\n        can trade meanings, but they also switch places.  The total stays the same, so I think it works.\n    T: Factors can trade meanings without always having to switch places in the equation. It’s okay to\n        write 8 × 2 = 16 and think of 8 as the size of the groups and 2 columns as the number of groups. In\n        third grade we’ll usually write multiplication sentences so that the first factor represents the number\n        of groups. That makes them a little easier to read. But either factor can mean the size of the groups\n        or the number of groups.\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the Problem Set within the allotted 10 minutes. For\nsome classes, it may be appropriate to modify the assignment by specifying which problems they work on\nfirst. Some problems do not specify a method for solving. Students should solve these problems using the\nRDW approach used for Application Problems.\n\n\n                       Lesson 7:            Demonstrate the commutativity of multiplication, and practice related              96\n                                            facts by skip-counting objects in array models.\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 101 (debrief) ---\nA STORY OF UNITS                                                                                                  Lesson 7 3 1\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Demonstrate the commutativity of\nmultiplication, and practice related facts by skip-\ncounting objects in array models.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience. Invite\nstudents to review their solutions for the Problem Set.\nThey should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process\nthe lesson.\nAny combination of the questions below may be used to\nlead the discussion.\n       How did rotating our boards help us see rows\n        as columns and columns as rows?\n       What did you learn today about changing the\n        order of the factors?\n       Can you think of different number sentences\n        Ms. Nenadal could have written to get at the\n        same idea in Problem 6?\n       Factors can change their order without\n        changing the total. We call that the\n        commutative property. Let’s test addition,\n        subtraction, and division and see if the\n        commutative property applies to them too.\n\n\n                      NOTES ON\n                      MULTIPLE MEANS\n                      OF REPRESENTATION:\n              Students need not master the term\n              commutative property (3.OA.5).\n              However, they will need to be familiar\n              with the vocabulary moving forward in\n              this module.\n\n\n                         Lesson 7:           Demonstrate the commutativity of multiplication, and practice related              97\n                                             facts by skip-counting objects in array models.\n\n                         ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 102 (debrief) ---\nA STORY OF UNITS                                                                                                Lesson 7 3 1\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that were presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 7:           Demonstrate the commutativity of multiplication, and practice related              98\n                                            facts by skip-counting objects in array models.\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 103 (problem-set) ---\nA STORY OF UNITS                                                                       Lesson 7 Problem Set 3 1\n\n\nName                                                                                       Date\n\n\n1. a. Draw an array that shows 6 rows of 2.                                2. a. Draw an array that shows 2 rows of 6.\n\n\n   b. Write a multiplication sentence where the first                            b. Write a multiplication sentence where the first\n      factor represents the number of rows.                                         factor represents the number of rows.\n\n       ________ × ________ = ________                                                ________ × ________ = ________\n\n\n3. a. Turn your paper to look at the arrays in Problems 1 and 2 in different ways. What is the same and\n      what is different about them?\n\n\n    b. Why are the factors in your multiplication sentences in a different order?\n\n\n4. Write a multiplication sentence for each expression. You might skip-count to find the totals.\n\n    a. 6 twos: 6 × 2 = 12 ___                   d. 2 sevens:        ________ ___                    Extension:\n\n\n    b. 2 sixes: ________ ___                    e. 9 twos:          ________ ___                    g. 11 twos:     ________ ___\n\n\n    c. 7 twos: ________ ___                     f. 2 nines:         ________ ___                    h. 2 twelves:   ________ ___\n\n\n                       Lesson 7:           Demonstrate the commutativity of multiplication, and practice related              99\n                                           facts by skip-counting objects in array models.\n\n                       ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 104 (problem-set) ---\nA STORY OF UNITS                                                                        Lesson 7 Problem Set 3 1\n\n\n5. Write and solve multiplication sentences where the second factor represents the size of the row.\n\n\n6. Ms. Nenadal writes 2 × 7 = 7 × 2 on the board. Do you agree or disagree? Draw arrays to help explain\n   your thinking.\n\n\n7. Find the missing factor to make each equation true.\n\n\n   5 × 2 = 2 × _____                  _____ × 8 = 8 × 2                       2 × 10 = _____× 2                    2 × _____ = 9 × 2\n\n\n8. Jada gets 2 new packs of erasers. Each pack has 6 erasers in it.\n   a. Draw an array to show how many erasers Jada has altogether.\n\n\n    b. Write and solve a multiplication sentence to describe the array.\n\n\n    c. Use the commutative property to write and solve a different multiplication sentence for the array.\n\n\n                       Lesson 7:           Demonstrate the commutativity of multiplication, and practice related               100\n                                           facts by skip-counting objects in array models.\n\n                       ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 105 (exit-ticket) ---\nA STORY OF UNITS                                                                            Lesson 7 Exit Ticket 3 1\n\n\nName                                                                                       Date\n\n\n                                                             2×5=5×2\n\nDo you agree or disagree with the statement in the box? Draw arrays and use skip-counting to explain your\nthinking.\n\n\n                       Lesson 7:           Demonstrate the commutativity of multiplication, and practice related     101\n                                           facts by skip-counting objects in array models.\n\n                       ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 106 (homework) ---\nA STORY OF UNITS                                                                           Lesson 7 Homework 3 1\n\n\nName                                                                                        Date\n                                                                          2. a. Draw an array that shows 2 rows of 7.\n1. a. Draw an array that shows 7 rows of 2.\n\n\n    b. Write a multiplication sentence where the                                b. Write a multiplication sentence where the\n       first factor represents the number of rows.                                 first factor represents the number of rows.\n\n\n       ________ × ________ = ________                                              ________ × ________ = ________\n\n\n3. a. Turn your paper to look at the arrays in Problems 1 and 2 in different ways. What is the same and what\n      is different about them?\n\n\n   b. Why are the factors in your multiplication sentences in a different order?\n\n\n4. Write a multiplication sentence to match the number of groups. Skip-count to find the totals. The first\n   one is done for you.\n\n    a. 2 twos: 2 × 2 = 4                         d. 2 fours: _____________                           g. 2 fives: _____________\n\n    b. 3 twos: ____________                      e. 4 twos: _____________                            h. 6 twos: _____________\n\n\n    c. 2 threes: ___________                     f. 5 twos: _____________                            i. 2 sixes: _____________\n\n\n                       Lesson 7:            Demonstrate the commutativity of multiplication, and practice related                102\n                                            facts by skip-counting objects in array models.\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 107 (homework) ---\nA STORY OF UNITS                                                                          Lesson 7 Homework 3 1\n\n\n5. Write and solve multiplication sentences where the second factor represents the size of the row.\n\n\n6. Angel writes 2 × 8 = 8 × 2 in his notebook. Do you agree or disagree? Draw arrays to help explain your\n   thinking.\n\n\n7. Find the missing factor to make each equation true.\n\n\n      2 × 6 = 6 × _____                _____ × 2 = 2 × 7                      9 × 2 = _____ × 9                    2 × ____ = 10 × 2\n\n\n8. Tamia buys 2 bags of candy. Each bag has 7 pieces of candy in it.\n   a. Draw an array to show how many pieces of candy Tamia has altogether.\n\n\n    b. Write and solve a multiplication sentence to describe the array.\n\n\n    c. Use the commutative property to write and solve a different multiplication sentence for the array.\n\n\n                       Lesson 7:           Demonstrate the commutativity of multiplication, and practice related               103\n                                           facts by skip-counting objects in array models.\n\n                       ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 108 (lesson-instruction) ---\nA STORY OF UNITS                                                             Lesson 7 Fluency Template 3 1\n\n\ntwos array\n\n\n                      Lesson 7:           Demonstrate the commutativity of multiplication, and practice related   104\n                                          facts by skip-counting objects in array models.\n\n                      ©2015 Great Minds. eureka-math.org",
+    "problemSetPages": [
+      {
+        "pdfPage": 103,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                       Lesson 7 Problem Set 3 1\n\n\nName                                                                                       Date\n\n\n1. a. Draw an array that shows 6 rows of 2.                                2. a. Draw an array that shows 2 rows of 6.\n\n\n   b. Write a multiplication sentence where the first                            b. Write a multiplication sentence where the first\n      factor represents the number of rows.                                         factor represents the number of rows.\n\n       ________ × ________ = ________                                                ________ × ________ = ________\n\n\n3. a. Turn your paper to look at the arrays in Problems 1 and 2 in different ways. What is the same and\n      what is different about them?\n\n\n    b. Why are the factors in your multiplication sentences in a different order?\n\n\n4. Write a multiplication sentence for each expression. You might skip-count to find the totals.\n\n    a. 6 twos: 6 × 2 = 12 ___                   d. 2 sevens:        ________ ___                    Extension:\n\n\n    b. 2 sixes: ________ ___                    e. 9 twos:          ________ ___                    g. 11 twos:     ________ ___\n\n\n    c. 7 twos: ________ ___                     f. 2 nines:         ________ ___                    h. 2 twelves:   ________ ___\n\n\n                       Lesson 7:           Demonstrate the commutativity of multiplication, and practice related              99\n                                           facts by skip-counting objects in array models.\n\n                       ©2015 Great Minds. eureka-math.org"
+      },
+      {
+        "pdfPage": 104,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                        Lesson 7 Problem Set 3 1\n\n\n5. Write and solve multiplication sentences where the second factor represents the size of the row.\n\n\n6. Ms. Nenadal writes 2 × 7 = 7 × 2 on the board. Do you agree or disagree? Draw arrays to help explain\n   your thinking.\n\n\n7. Find the missing factor to make each equation true.\n\n\n   5 × 2 = 2 × _____                  _____ × 8 = 8 × 2                       2 × 10 = _____× 2                    2 × _____ = 9 × 2\n\n\n8. Jada gets 2 new packs of erasers. Each pack has 6 erasers in it.\n   a. Draw an array to show how many erasers Jada has altogether.\n\n\n    b. Write and solve a multiplication sentence to describe the array.\n\n\n    c. Use the commutative property to write and solve a different multiplication sentence for the array.\n\n\n                       Lesson 7:           Demonstrate the commutativity of multiplication, and practice related               100\n                                           facts by skip-counting objects in array models.\n\n                       ©2015 Great Minds. eureka-math.org"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 301,
+        "text": "A STORY OF UNITS                                                                              Lesson 7 Answer Key 3 1\n\n\nLesson 7\nProblem Set\n1.    a. Array of 6 rows of 2 drawn\n      b. 6, 2, 12\n2.    a. Array of 2 rows of 6 drawn\n      b. 2, 6, 12\n3.    a. Same array in Problem 1 turned on its side in Problem 2\n      b. The meaning of the factors switched; 2 represents size of each group, and 6 represents number of\n           groups in Problem 1; 2 represents number of groups, and 6 represents size of each group in\n           Problem 2\n4.    a. Answer provided\n      b. 2 × 6 = 12\n      c. 7 × 2 = 14\n      d. 2 × 7 = 14\n      e. 9 × 2 = 18\n      f.   2 × 9 = 18\n      g. 11 × 2 = 22\n      h. 2 × 12 = 24\n5.    4 × 2 = 8; 2 × 4 = 8\n6.    Agree; array of 7 rows of 2 and array of 2 rows of 7 drawn\n7.    5; 2; 10; 9\n8.    a. Array of 2 rows of 6 drawn\n      b. 2 × 6 = 12\n      c. 6 × 2 = 12\n\n\nExit Ticket\nAgree; array of 2 rows of 5 and array of 5 rows of 2 drawn; skip-counts by fives or twos, depending on the\narray, written to show a total of 10 each\n\n\n                             Module 1:           Properties of Multiplication and Division and Solving Problems with    297\n                                                 Units of 2–5 and 10\n\n                             ©2015 Great Minds. eureka-math.org"
+      },
+      {
+        "pdfPage": 302,
+        "text": "A STORY OF UNITS                                                                          Lesson 7 Answer Key 3 1\n\n\nHomework\n1.    a. Array of 7 rows of 2 drawn\n      b. 7, 2, 14\n2.    a. Array of 2 rows of 7 drawn\n      b. 2, 7, 14\n3.    a. Same array in Problem 1 turned on its side in Problem 2\n      b. The meaning of the factors switched; 2 represents size of each group, and 7 represents number of\n           groups in Problem 1; 2 represents number of groups, and 7 represents size of each group in\n           Problem 2\n4.    a. Answer provided.\n      b. 3 × 2 = 6\n      c. 2 × 3 = 6\n      d. 2 × 4 = 8\n      e. 4 × 2 = 8\n      f.   5 × 2 = 10\n      g. 2 × 5 = 10\n      h. 6 × 2 = 12\n      i.   2 × 6 = 12\n5.    6 × 2 = 12; 2 × 6 = 12\n6.    Agree; array of 2 rows of 8 and array of 8 rows of 2 drawn\n7.    2; 7; 2; 10\n8.    a. Array of 2 rows of 7 drawn\n      b. 2 × 7 = 14\n      c. 7 × 2 = 14\n\n\n                         Module 1:           Properties of Multiplication and Division and Solving Problems with    298\n                                             Units of 2–5 and 10\n\n                         ©2015 Great Minds. eureka-math.org"
+      }
+    ]
+  }
+}

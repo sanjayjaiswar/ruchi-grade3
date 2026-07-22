@@ -1177,10 +1177,6 @@
   opacity: 1 !important;
 }
 
-.lesson-m4 .problem-centered-lesson-animation {
-  display: none;
-}
-
 .lesson-m4 .problem-centered-concept {
   gap: 10px;
   margin-bottom: 10px;
@@ -1230,10 +1226,6 @@
 
 .lesson-m5 :is(.lesson-header-main, .problem-centered-tabs, .problem-centered-tabs button, .problem-centered-concept, .problem-centered-source-concepts article, .concept-first-panel, .activity-card, .lesson-animation-group, .lesson-animation-equation, .lesson-animation-notes li, .lesson-animation-steps li, .concept-contrast, .concept-source-checks li, .m5-fractions-lab, .m5-fractions-lab article) {
   opacity: 1 !important;
-}
-
-.lesson-m5 .problem-centered-lesson-animation {
-  display: none;
 }
 
 .lesson-m5 .problem-centered-concept {
@@ -1287,10 +1279,6 @@
   opacity: 1 !important;
 }
 
-.lesson-m6 .problem-centered-lesson-animation {
-  display: none;
-}
-
 .lesson-m6 .problem-centered-concept {
   gap: 10px;
   margin-bottom: 10px;
@@ -1342,16 +1330,20 @@
   opacity: 1 !important;
 }
 
-.lesson-m7 .problem-centered-lesson-animation {
-  display: none;
-}
-
 .lesson-m7 .problem-centered-concept {
   gap: 10px;
   margin-bottom: 10px;
   padding: 18px 20px;
   border-color: #d2d9e6;
   background: #ffffff;
+}
+
+.lesson-m7 .module-concept-frame {
+  display: none;
+}
+
+.lesson-m7 .m7-shapes-lab {
+  display: none;
 }
 
 .lesson-m7 .problem-centered-concept h2 {
@@ -1380,10 +1372,6 @@
   font-size: 16px;
   font-weight: 560;
   line-height: 1.4;
-}
-
-.lesson-m7 .module-concept-frame {
-  display: none;
 }
 
 .lesson-m7 .lead,

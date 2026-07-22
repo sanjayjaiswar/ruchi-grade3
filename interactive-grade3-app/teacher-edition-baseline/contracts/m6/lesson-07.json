@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m6-l7",
+  "moduleId": "m6",
+  "lessonNumber": 7,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_6/g3_m6_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "74325e3dfcae94e1fe359552d3857a3c929b26c5cca327ee80ef45d651aa7358",
+    "teacherEditionBytes": 6604249,
+    "lessonPdfPages": {
+      "start": 93,
+      "end": 105
+    },
+    "problemSetPdfPages": [
+      100,
+      101
+    ],
+    "exitTicketPdfPages": [
+      102
+    ],
+    "homeworkPdfPages": [
+      103,
+      104
+    ],
+    "answerKeyPdfPages": [
+      155,
+      156
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m6-student/workbook-page-034.png"
+    ],
+    "existingTeacherEditionImages": []
+  },
+  "objective": "Represent measurement data with line plots.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "help you get\n         ready for today’s lesson?\n\nExit Ticket (3 minutes)\nAfter the",
+    "conceptDevelopmentText": "Materials: (S) Student-made ruler from Lesson 5, Straw Lengths (Template) pictured with Problem 2 below\n\nProblem 1: Draw a line plot representing measurement data.\n    T:       Let’s represent the straw data from Mr. Han’s class using a line plot. First, we need to determine\n             the scale for our line plot. The first measurement on the line plot should be the smallest\n             measurement in the chart. What is the smallest measurement?\n               3\n    S:       2 4 inches.\n\n\n                                   Lesson 7:                  Represent measurement data with line plots.                                            94\n\n                                   ©2015 Great Minds. eureka-math.org\n                                   G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                              Lesson 7 3 6\n\n\n       T:   What do you think will be the last measurement on the line plot?\n       S:   5 inches because it is the largest measurement.\n       T:   Turn and talk to your partner. Look over the data in the chart. How do you know what interval we\n            should count by to create our scale?\n       S:   Counting by whole inches is the easiest, but it does not allow us to plot all of our numbers.  The\n            data has numbers with whole inches, half inches, and quarter inches. It makes the most sense to\n            count by quarter inches because they are the smallest.\n                                                                                                                 3\n       T:   To find out how many tick marks we need, we can count by fourths from 2 4 to 5. Each time we\n            count, keep track with your fingers.\n       T:   Let’s count.\n                                                              3\n       S:   (Track the count by fourths from 2 4 to 5.)\n       T:   How many tick marks do we need to draw altogether?\n       S:   10 tick marks.\nMP.6                                     2                              1\n       T:   I heard some count 3 and others count 3 . Who is correct? Talk to your partner.\n                                         4                              2\n                                                                                 1       1               1\n       S:   2 fourths equals a half, so they are the same.  4 and 4 is the same as 2.\n                                                                                                             1\n       T:   Both fractions name the same length. In the data chart, it is written as 3 , so it is best to label it the\n                                                                                      2\n            same way.\n       T:   (Pass out the template). On the template, you see the chart from the Application Problem and an\n            empty number line. We need to partition our number line into equal intervals and label our scale.\n            How can we use our ruler to create equal intervals?\n       S:   We can make a mark at every inch until we have 10 marks.\n                                                                                         3\n       T:   Draw to show 10 marks. Then, label each mark from 2 4 to 5 inches. (Model as students work.)\n       S:   (Draw and label.)\n\n Problem 2: Plot data set on the line plot.                                                                  NOTES ON\n       T:   Now, it is time to record the data on our line plot.                                             MULTIPLE MEANS\n            Look at the first measurement in the chart. Look for                                             OF ENGAGEMENT:\n            that measurement on your line plot. (Allow time for                                    Encourage students working below\n            students to locate.)                                                                   grade level and others to whisper-read\n                                                                                                   the data as they plot if this helps them\n       T:   Plot that data on the line plot with an X. (Model.) How\n                                                                                                   track the information. Students may\n            can we make sure that we plot the data only once?\n                                                                                                   work in pairs.\n       S:   We can cross or check off each one as we go.                                           Alternatively, challenge students\n       T:   Plot the rest of the data with care, either crossing or                                working above grade level to offer two\n            checking off each measure you plot. (Allow students                                    other representations of the data (e.g.,\n            time to work.)                                                                         picture graph, bar graph, tape diagram,\n                                                                                                   tally chart). Have students compare\n       T:   Let’s give this line plot a title that tells what it shows.\n                                                                                                   and list the advantages of using a line\n            What data is represented on the line plot?\n                                                                                                   plot.\n       S:   Lengths of different straws.\n\n\n                           Lesson 7:                 Represent measurement data with line plots.                                              95\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                  Lesson 7 3 6\n\n\n    T:   Let’s title our line plot Straw Lengths. (Model.) Add                                  Sample Work\n         the title to your graph. (Allow students time to work.)\n         Let’s add a key to show what each X represents. What\n         does each X represent?\n    S:   A straw!\n    T:   (Model adding a key to the line plot.) Add a key to\n         your line plot. (Allow students time to work.) Let’s\n         also put a label beneath the number line to tell the unit\n         our line plot shows. What unit did we use to measure?\n    S:   Inches!\n    T:   Let’s add the word Inches underneath the numbers on\n         the number line. (Model.) Now that our line plot has a\n         title, a key, and a unit label, anybody who looks at the\n         line plot will know what it is showing.\nContinue with the following suggested questions:\n        How many straws were at least    inches tall?\n        How many straws were taller/shorter than      inches?\n        Which measurements happened most/least frequently?",
+    "fluencyPracticeText": "activities connect to\n         today’s new learning?\n        How did the",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Let’s represent the straw data from Mr. Han’s class using a line plot. First, we need to determine the scale for our line plot. The first measurement on the line plot should be the smallest measurement in the chart. What is the smallest measurement? 3"
+      },
+      {
+        "speaker": "students",
+        "text": "2 4 inches. ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 7 3 6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do you think will be the last measurement on the line plot?"
+      },
+      {
+        "speaker": "students",
+        "text": "5 inches because it is the largest measurement."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Turn and talk to your partner. Look over the data in the chart. How do you know what interval we should count by to create our scale?"
+      },
+      {
+        "speaker": "students",
+        "text": "Counting by whole inches is the easiest, but it does not allow us to plot all of our numbers.  The data has numbers with whole inches, half inches, and quarter inches. It makes the most sense to count by quarter inches because they are the smallest. 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "To find out how many tick marks we need, we can count by fourths from 2 4 to 5. Each time we count, keep track with your fingers."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s count. 3"
+      },
+      {
+        "speaker": "students",
+        "text": "(Track the count by fourths from 2 4 to 5.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many tick marks do we need to draw altogether?"
+      },
+      {
+        "speaker": "students",
+        "text": "10 tick marks. MP.6 2 1"
+      },
+      {
+        "speaker": "teacher",
+        "text": "I heard some count 3 and others count 3 . Who is correct? Talk to your partner. 4 2 1 1 1"
+      },
+      {
+        "speaker": "students",
+        "text": "2 fourths equals a half, so they are the same.  4 and 4 is the same as 2. 1"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Both fractions name the same length. In the data chart, it is written as 3 , so it is best to label it the 2 same way."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Pass out the template). On the template, you see the chart from the Application Problem and an empty number line. We need to partition our number line into equal intervals and label our scale. How can we use our ruler to create equal intervals?"
+      },
+      {
+        "speaker": "students",
+        "text": "We can make a mark at every inch until we have 10 marks. 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw to show 10 marks. Then, label each mark from 2 4 to 5 inches. (Model as students work.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, it is time to record the data on our line plot. MULTIPLE MEANS Look at the first measurement in the chart. Look for OF ENGAGEMENT: that measurement on your line plot. (Allow time for Encourage students working below students to locate.) grade level and others to whisper-read the data as they plot if this helps them"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Plot that data on the line plot with an X. (Model.) How track the information. Students may can we make sure that we plot the data only once? work in pairs."
+      },
+      {
+        "speaker": "students",
+        "text": "We can cross or check off each one as we go. Alternatively, challenge students"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Plot the rest of the data with care, either crossing or working above grade level to offer two checking off each measure you plot. (Allow students other representations of the data (e.g., time to work.) picture graph, bar graph, tape diagram, tally chart). Have students compare"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s give this line plot a title that tells what it shows. and list the advantages of using a line What data is represented on the line plot? plot."
+      },
+      {
+        "speaker": "students",
+        "text": "Lengths of different straws. ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 7 3 6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s title our line plot Straw Lengths. (Model.) Add Sample Work the title to your graph. (Allow students time to work.) Let’s add a key to show what each X represents. What does each X represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "A straw!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Model adding a key to the line plot.) Add a key to your line plot. (Allow students time to work.) Let’s also put a label beneath the number line to tell the unit our line plot shows. What unit did we use to measure?"
+      },
+      {
+        "speaker": "students",
+        "text": "Inches!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s add the word Inches underneath the numbers on the number line. (Model.) Now that our line plot has a title, a key, and a unit label, anybody who looks at the line plot will know what it is showing. Continue with the following suggested questions:  How many straws were at least inches tall?  How many straws were taller/shorter than inches?  Which measurements happened most/least frequently?"
+      }
+    ],
+    "teacherPrompts": [
+      "Let’s represent the straw data from Mr. Han’s class using a line plot. First, we need to determine the scale for our line plot. The first measurement on the line plot should be the smallest measurement in the chart. What is the smallest measurement? 3",
+      "What do you think will be the last measurement on the line plot?",
+      "Turn and talk to your partner. Look over the data in the chart. How do you know what interval we should count by to create our scale?",
+      "To find out how many tick marks we need, we can count by fourths from 2 4 to 5. Each time we count, keep track with your fingers.",
+      "Let’s count. 3",
+      "How many tick marks do we need to draw altogether?",
+      "I heard some count 3 and others count 3 . Who is correct? Talk to your partner. 4 2 1 1 1",
+      "Both fractions name the same length. In the data chart, it is written as 3 , so it is best to label it the 2 same way.",
+      "(Pass out the template). On the template, you see the chart from the Application Problem and an empty number line. We need to partition our number line into equal intervals and label our scale. How can we use our ruler to create equal intervals?",
+      "Draw to show 10 marks. Then, label each mark from 2 4 to 5 inches. (Model as students work.)",
+      "Now, it is time to record the data on our line plot. MULTIPLE MEANS Look at the first measurement in the chart. Look for OF ENGAGEMENT: that measurement on your line plot. (Allow time for Encourage students working below students to locate.) grade level and others to whisper-read the data as they plot if this helps them",
+      "Plot that data on the line plot with an X. (Model.) How track the information. Students may can we make sure that we plot the data only once? work in pairs.",
+      "Plot the rest of the data with care, either crossing or working above grade level to offer two checking off each measure you plot. (Allow students other representations of the data (e.g., time to work.) picture graph, bar graph, tape diagram, tally chart). Have students compare",
+      "Let’s give this line plot a title that tells what it shows. and list the advantages of using a line What data is represented on the line plot? plot.",
+      "Let’s title our line plot Straw Lengths. (Model.) Add Sample Work the title to your graph. (Allow students time to work.) Let’s add a key to show what each X represents. What does each X represent?",
+      "(Model adding a key to the line plot.) Add a key to your line plot. (Allow students time to work.) Let’s also put a label beneath the number line to tell the unit our line plot shows. What unit did we use to measure?",
+      "Let’s add the word Inches underneath the numbers on the number line. (Model.) Now that our line plot has a title, a key, and a unit label, anybody who looks at the line plot will know what it is showing. Continue with the following suggested questions:  How many straws were at least inches tall?  How many straws were taller/shorter than inches?  Which measurements happened most/least frequently?"
+    ],
+    "debriefPrompt": "What process did you use to complete the line plot in Problem (a)?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Mrs. Weisse's class grows beans for a science experiment. The students measure the heights of their bean plants to the nearest 4 inch and record the measurements as shown below. Heights of Bean Plants (in Inches) 1 3 1 3 3 2 2 3 1 1 4 4 4 4 4 3 1 1 1 1 3 2 3 2 4 2 4 2 1 1 2 2 3 2 3 4 4 1 1 3 3 2 3 1 2 2 2 4 4 4 a. Use the data to complete the line plot below. Title: ____ 𝟑𝟑 𝟏𝟏 𝟏𝟏 𝟑𝟑 𝟏𝟏 1 2 2 2 2 3 3 𝟒𝟒 𝟒𝟒 𝟐𝟐 𝟒𝟒 𝟒𝟒 Label: ____ X= b. How many bean plants are at least 2 inches tall? c. How many bean plants are taller than 2 inches? d. What is the most frequent measurement? How many bean plants were plotted for this measurement? e. George says that most of the bean plants are at least 3 inches tall. Is he right? Explain your answer. f. Savannah was absent the day the class measured the heights of their bean plants. When she returns, her plant measures 2 inches tall. Can Savannah plot the height of her bean plant on the class line plot? Why or why not?",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                              Lesson 7 Problem Set 3 6\n\n\nName                                                                                             Date\n\nMrs. Weisse’s class grows beans for a science experiment. The students measure the heights of their bean\n                      1\nplants to the nearest 4 inch and record the measurements as shown below.\n\n\n                                                      Heights of Bean Plants (in Inches)\n\n             1                            3                               1                           3             3\n         2                            2                               3                           1             1\n             4                            4                               4                           4             4\n\n             3                                                            1                           1             1\n         1                             3                              2                           3             2\n             4                                                            2                           4             2\n\n                                          1                                                           1\n         2                            2                                3                          2              3\n                                          4                                                           4\n\n             1                            1                               3                           3\n         2                            3                               1                           2              2\n             2                            4                               4                           4\n\n\n    a.   Use the data to complete the line plot below.\n\n                      Title: __________________________________________________________\n\n\n             𝟑𝟑                                         𝟏𝟏                 𝟏𝟏               𝟑𝟑                      𝟏𝟏\n             1             2                           2                2                 2               3     3\n             𝟒𝟒                                         𝟒𝟒                 𝟐𝟐               𝟒𝟒                      𝟒𝟒\n\n\n                  Label: _______________________________                                         X=\n\n\n                        Lesson 7:                 Represent measurement data with line plots.                            99\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                            Lesson 7 Problem Set 3 6\n\n\n                                                          1\nb.   How many bean plants are at least 2 inches tall?\n                                                          4\n\n\n                                                              3\nc.   How many bean plants are taller than 2 inches?\n                                                              4\n\n\nd.   What is the most frequent measurement? How many bean plants were plotted for this\n     measurement?\n\n\ne.   George says that most of the bean plants are at least 3 inches tall. Is he right? Explain your answer.\n\n\nf.   Savannah was absent the day the class measured the heights of their bean plants. When she\n                                  2\n     returns, her plant measures 2 inches tall. Can Savannah plot the height of her bean plant on the\n                                  4\n     class line plot? Why or why not?\n\n\n                   Lesson 7:                  Represent measurement data with line plots.                         100\n\n                   ©2015 Great Minds. eureka-math.org\n                    G 3-M6-TE-1.3.0 -0 8.2 0 15",
+    "answerKeyProblemSetText": "a.   Line plot completed; Heights of Bean Plants; inches; values for X may vary\nb.   14\nc.   6\n         3\nd.   1 inches; 4\n         4\ne.   No; explanations will vary.\nf.   Yes; explanations will vary.",
+    "answerKeyText": "A STORY OF UNITS                                                                    Lesson 7 Answer Key 3 6\n\n\nLesson 7\nPattern Sheet\n              6                                        12                           18                24\n              30                                       36                           42                48\n              54                                       60                           30                36\n              30                                       42                           30                48\n              30                                       54                           30                60\n              36                                       30                           36                42\n              36                                       48                           36                54\n              36                                       42                           36                42\n              48                                       42                           54                42\n              48                                       36                           48                42\n              48                                       54                           54                36\n              54                                       42                           54                48\n              54                                       48                           36                54\n              42                                       54                           36                48\n              54                                       42                           36                48\n\n\nProblem Set\na.   Line plot completed; Heights of Bean Plants; inches; values for X may vary\nb.   14\nc.   6\n         3\nd.   1 inches; 4\n         4\ne.   No; explanations will vary.\nf.   Yes; explanations will vary.\n\n\nExit Ticket\nLine plot completed; Length of Mice; inches\n\n\n                        Module 6:                  Collecting and Displaying Data                             154\n\n                        ©2015 Great Minds. eureka-math.org\n                         G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                              Lesson 7 Answer Key 3 6\n\n\nHomework\na.   Line plot completed; Heights of Buildings; inches; values for X may vary\nb.   2\nc.   7\nd.   25; explanations will vary.\ne.   No; explanations will vary.\n\n\n                        Module 6:                 Collecting and Displaying Data                        155\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "tape-diagram",
+      "number-line",
+      "measurement-scale",
+      "ruler-or-length",
+      "table-or-chart",
+      "graph-or-plot",
+      "fraction-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "tape-diagram": [
+        "time to work.) picture graph, bar graph, tape diagram,"
+      ],
+      "number-line": [
+        "T: Turn and talk to your partner. Look over the data in the chart. How do you know what interval we",
+        "T: To find out how many tick marks we need, we can count by fourths from 2 4 to 5. Each time we",
+        "T: How many tick marks do we need to draw altogether?",
+        "S: 10 tick marks.",
+        "empty number line. We need to partition our number line into equal intervals and label our scale.",
+        "How can we use our ruler to create equal intervals?",
+        "also put a label beneath the number line to tell the unit",
+        "the number line. (Model.) Now that our line plot has a"
+      ],
+      "measurement-scale": [
+        "time to work.) picture graph, bar graph, tape diagram,"
+      ],
+      "ruler-or-length": [
+        "Materials: (S) Student-made ruler from Lesson 5, Straw Lengths (Template) pictured with Problem 2 below",
+        "T: Both fractions name the same length. In the data chart, it is written as 3 , so it is best to label it the",
+        "How can we use our ruler to create equal intervals?",
+        "S: Lengths of different straws.",
+        "T: Let’s title our line plot Straw Lengths. (Model.) Add Sample Work"
+      ],
+      "table-or-chart": [
+        "measurement in the chart. What is the smallest measurement?",
+        "T: Turn and talk to your partner. Look over the data in the chart. How do you know what interval we",
+        "T: Both fractions name the same length. In the data chart, it is written as 3 , so it is best to label it the",
+        "T: (Pass out the template). On the template, you see the chart from the Application Problem and an",
+        "Look at the first measurement in the chart. Look for OF ENGAGEMENT:",
+        "tally chart). Have students compare"
+      ],
+      "graph-or-plot": [
+        "Represent measurement data with line plots.",
+        "Problem 1: Draw a line plot representing measurement data.",
+        "T: Let’s represent the straw data from Mr. Han’s class using a line plot. First, we need to determine",
+        "the scale for our line plot. The first measurement on the line plot should be the smallest",
+        "Lesson 7: Represent measurement data with line plots. 94",
+        "T: What do you think will be the last measurement on the line plot?",
+        "Problem 2: Plot data set on the line plot. NOTES ON",
+        "T: Now, it is time to record the data on our line plot. MULTIPLE MEANS"
+      ],
+      "fraction-model": [
+        "T: To find out how many tick marks we need, we can count by fourths from 2 4 to 5. Each time we",
+        "S: (Track the count by fourths from 2 4 to 5.)",
+        "S: 2 fourths equals a half, so they are the same.  4 and 4 is the same as 2."
+      ],
+      "picture-or-drawing": [
+        "Materials: (S) Student-made ruler from Lesson 5, Straw Lengths (Template) pictured with Problem 2 below",
+        "Problem 1: Draw a line plot representing measurement data.",
+        "T: How many tick marks do we need to draw altogether?",
+        "T: Draw to show 10 marks. Then, label each mark from 2 4 to 5 inches. (Model as students work.)",
+        "S: (Draw and label.)",
+        "time to work.) picture graph, bar graph, tape diagram,"
+      ]
+    },
+    "sourceIllustrationRequired": true,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Let’s represent the straw data from Mr. Han’s class using a line plot. First, we need to determine the scale for our line plot. The first measurement on the line plot should be the smallest measurement in the chart. What is the smallest measurement? 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do you think will be the last measurement on the line plot?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Turn and talk to your partner. Look over the data in the chart. How do you know what interval we should count by to create our scale?"
+      },
+      {
+        "speaker": "students",
+        "text": "Counting by whole inches is the easiest, but it does not allow us to plot all of our numbers.  The data has numbers with whole inches, half inches, and quarter inches. It makes the most sense to count by quarter inches because they are the smallest. 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "To find out how many tick marks we need, we can count by fourths from 2 4 to 5. Each time we count, keep track with your fingers."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s count. 3"
+      },
+      {
+        "speaker": "students",
+        "text": "(Track the count by fourths from 2 4 to 5.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many tick marks do we need to draw altogether?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "I heard some count 3 and others count 3 . Who is correct? Talk to your partner. 4 2 1 1 1"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Both fractions name the same length. In the data chart, it is written as 3 , so it is best to label it the 2 same way."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Pass out the template). On the template, you see the chart from the Application Problem and an empty number line. We need to partition our number line into equal intervals and label our scale. How can we use our ruler to create equal intervals?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw to show 10 marks. Then, label each mark from 2 4 to 5 inches. (Model as students work.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, it is time to record the data on our line plot. MULTIPLE MEANS Look at the first measurement in the chart. Look for OF ENGAGEMENT: that measurement on your line plot. (Allow time for Encourage students working below students to locate.) grade level and others to whisper-read the data as they plot if this helps them"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Plot that data on the line plot with an X. (Model.) How track the information. Students may can we make sure that we plot the data only once? work in pairs."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Plot the rest of the data with care, either crossing or working above grade level to offer two checking off each measure you plot. (Allow students other representations of the data (e.g., time to work.) picture graph, bar graph, tape diagram, tally chart). Have students compare"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s give this line plot a title that tells what it shows. and list the advantages of using a line What data is represented on the line plot? plot."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s title our line plot Straw Lengths. (Model.) Add Sample Work the title to your graph. (Allow students time to work.) Let’s add a key to show what each X represents. What does each X represent?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Model adding a key to the line plot.) Add a key to your line plot. (Allow students time to work.) Let’s also put a label beneath the number line to tell the unit our line plot shows. What unit did we use to measure?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s add the word Inches underneath the numbers on the number line. (Model.) Now that our line plot has a title, a key, and a unit label, anybody who looks at the line plot will know what it is showing. Continue with the following suggested questions:  How many straws were at least inches tall?  How many straws were taller/shorter than inches?  Which measurements happened most/least frequently?"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 93 (debrief) ---\nA STORY OF UNITS                                                                              Lesson 7 3 6\n\n\nLesson 7\nObjective: Represent measurement data with line plots.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (15 minutes)\n Application Problem               (5 minutes)\n Concept Development               (30 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (15 minutes)\n\n Group Counting 3.OA.1                                           (3 minutes)\n Multiply by 6 3.OA.7                                            (8 minutes)\n Count by Halves and Fourths 3.MD.4                              (4 minutes)\n\nGroup Counting (3 minutes)\nNote: This group counting activity reviews the relationship between counting by a unit and multiplying and\ndividing with that unit.\n    T:   Count by sevens to 70.\n    S:   7, 14, 21, 28, 35, 42, 49, 56, 63, 70.\n    T:   (Write 4 × 7 = .) What is the value of 4 sevens? Count by sevens if you are unsure.\n    S:   28.\n    T:   Say the multiplication sentence.\n    S:   4 × 7 = 28.\nContinue this process for 6 × 7 and 8 × 7.\n    T:   (Write 21 ÷ 7 =         .) What is 21 ÷ 7? Count by sevens if you are unsure.\n    S:   3.\nContinue this process for 35 ÷ 7, 49 ÷ 7, and 63 ÷ 7.\n    T:   Count by eights to 80.\n    S:   8, 16, 24, 32, 40, 48, 56, 64, 72, 80.\n    T:   (Write 3 × 8 =     .) What is the value of 3 eights?\n    S:   24.\n\n\n                         Lesson 7:                 Represent measurement data with line plots.             92\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 94 (lesson-instruction) ---\nA STORY OF UNITS                                                                                  Lesson 7 3 6\n\n\n    T:   Say the multiplication sentence.\n    S:   3 × 8 = 24.\nContinue this process for 6 × 8 and 8 × 8.\n    T:   (Write 24 ÷ 8 =         .) What is 24 ÷ 8? Count by eights if you are unsure.\n    S:   3.\nContinue this process for 32 ÷ 8, 56 ÷ 8, and 72 ÷ 8.\n\nMultiply by 6 (8 minutes)\nMaterials: (S) Multiply by 6 (6–10) (Pattern Sheet)\n\nNote: This activity builds fluency with multiplication facts using units of 6. It works toward students knowing\nfrom memory all products of two one-digit numbers. See Lesson 6 for the directions for administration of a\nMultiply-By Pattern Sheet.\n    T:   (Write 7 × 6 =     .) Let’s skip-count up by sixes. I’ll raise a finger for each six. (Raise a finger for\n         each number to track the count. Record the skip-count answers on the board.)\n    S:   6, 12, 18, 24, 30, 36, 42.\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 60 with 10 fingers, 1 for each\n         six. (Count down with fingers as students say numbers.)\n    S:   60 (10 fingers), 54 (9 fingers), 48 (8 fingers), 42 (7 fingers).\nContinue with the following suggested sequence: 9 × 6, 6 × 6, and 8 × 6.\n    T:   (Distribute the Multiply by 6 Pattern Sheet.) Let’s practice multiplying by 6. Be sure to work left to\n         right across the page.\n\nCount by Halves and Fourths (4 minutes)\nNote: This activity reviews Lesson 6.                                                           Halves:\n\n    T:   Count by halves to 12 halves as I write. Please do not\n         count faster than I can write. (Write in fractional form\n         as students count.)\n    S:   1 half, 2 halves, 3 halves, …, 11 halves, 12 halves.\n                  2                                                                             Fourths:\n    T:   (Point to 2.) Say 2 halves as a whole number.\n    S:   1.\n                             2\n    T:   (Lightly cross out , and write 1 beneath it.)\n                             2\n                                                                    4 6 8 10     12\nContinue the process for the following sequence: , , ,                      , and .\n                                                                    2 2 2 2      2\n\n    T:   Count by halves. Say whole numbers when you arrive at whole numbers. Try not to look at the\n         board. (Students count forward and backward on the number line. Occasionally change directions.)\nRepeat the process for fourths.\n\n\n                        Lesson 7:                 Represent measurement data with line plots.                  93\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 95 (concept-development) ---\nA STORY OF UNITS                                                                                                         Lesson 7 3 6\n\n\nApplication Problem (5 minutes)\n\nThe chart shows the lengths of straws measured in Mr. Han’s class.\n    a.       How many straws were measured? Explain how you\n             know.                                                                                                  NOTES ON\n    b.       What is the smallest measurement on the chart? The                                                     MULTIPLE MEANS\n             greatest?                                                                                              OF REPRESENTATION:\n    c.       Were the straws measured to the nearest inch? How                                              Use color to customize the\n             do you know?                                                                                   presentation of the data in the chart.\n                                                                                                            Enhance learners’ perception of the\n                                                                                                            information by lightly shading every\n                                    Straw Lengths (in Inches)                                               other row, highlighting numerators\n                                                            1                    3                3         and/or denominators, or consistently\n         3                 4                              4                  2                  3           writing whole numbers in a specific\n                                                            2                    4                4\n           3                   1                            1                                     3         color (e.g., using red for 4).\n         3                 4                              3                   4                 4\n           4                   2                            4                                     4\n           1                                                                     1                1\n         4                 5                               3                 3                  4\n           4                                                                     2                2\n           1                                                  1                                   1\n         4                 4                              3                   5                 4\n           2                                                  4                                   4\n\n\nNote: The Straw Lengths chart is included on the template used in the Concept Development. Rather than\nrecreate it for this problem, the template can be projected instead. Students use the measurements from\nthe chart to create a line plot in the Concept Development. The questions from the Application Problem help\nfacilitate the discussion in the Concept Development about how to create a scale for the line plot.\n\n\nConcept Development (30 minutes)\n\nMaterials: (S) Student-made ruler from Lesson 5, Straw Lengths (Template) pictured with Problem 2 below\n\nProblem 1: Draw a line plot representing measurement data.\n    T:       Let’s represent the straw data from Mr. Han’s class using a line plot. First, we need to determine\n             the scale for our line plot. The first measurement on the line plot should be the smallest\n             measurement in the chart. What is the smallest measurement?\n               3\n    S:       2 4 inches.\n\n\n                                   Lesson 7:                  Represent measurement data with line plots.                                            94\n\n                                   ©2015 Great Minds. eureka-math.org\n                                   G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 96 (application-problem) ---\nA STORY OF UNITS                                                                                              Lesson 7 3 6\n\n\n       T:   What do you think will be the last measurement on the line plot?\n       S:   5 inches because it is the largest measurement.\n       T:   Turn and talk to your partner. Look over the data in the chart. How do you know what interval we\n            should count by to create our scale?\n       S:   Counting by whole inches is the easiest, but it does not allow us to plot all of our numbers.  The\n            data has numbers with whole inches, half inches, and quarter inches. It makes the most sense to\n            count by quarter inches because they are the smallest.\n                                                                                                                 3\n       T:   To find out how many tick marks we need, we can count by fourths from 2 4 to 5. Each time we\n            count, keep track with your fingers.\n       T:   Let’s count.\n                                                              3\n       S:   (Track the count by fourths from 2 4 to 5.)\n       T:   How many tick marks do we need to draw altogether?\n       S:   10 tick marks.\nMP.6                                     2                              1\n       T:   I heard some count 3 and others count 3 . Who is correct? Talk to your partner.\n                                         4                              2\n                                                                                 1       1               1\n       S:   2 fourths equals a half, so they are the same.  4 and 4 is the same as 2.\n                                                                                                             1\n       T:   Both fractions name the same length. In the data chart, it is written as 3 , so it is best to label it the\n                                                                                      2\n            same way.\n       T:   (Pass out the template). On the template, you see the chart from the Application Problem and an\n            empty number line. We need to partition our number line into equal intervals and label our scale.\n            How can we use our ruler to create equal intervals?\n       S:   We can make a mark at every inch until we have 10 marks.\n                                                                                         3\n       T:   Draw to show 10 marks. Then, label each mark from 2 4 to 5 inches. (Model as students work.)\n       S:   (Draw and label.)\n\n Problem 2: Plot data set on the line plot.                                                                  NOTES ON\n       T:   Now, it is time to record the data on our line plot.                                             MULTIPLE MEANS\n            Look at the first measurement in the chart. Look for                                             OF ENGAGEMENT:\n            that measurement on your line plot. (Allow time for                                    Encourage students working below\n            students to locate.)                                                                   grade level and others to whisper-read\n                                                                                                   the data as they plot if this helps them\n       T:   Plot that data on the line plot with an X. (Model.) How\n                                                                                                   track the information. Students may\n            can we make sure that we plot the data only once?\n                                                                                                   work in pairs.\n       S:   We can cross or check off each one as we go.                                           Alternatively, challenge students\n       T:   Plot the rest of the data with care, either crossing or                                working above grade level to offer two\n            checking off each measure you plot. (Allow students                                    other representations of the data (e.g.,\n            time to work.)                                                                         picture graph, bar graph, tape diagram,\n                                                                                                   tally chart). Have students compare\n       T:   Let’s give this line plot a title that tells what it shows.\n                                                                                                   and list the advantages of using a line\n            What data is represented on the line plot?\n                                                                                                   plot.\n       S:   Lengths of different straws.\n\n\n                           Lesson 7:                 Represent measurement data with line plots.                                              95\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 97 (debrief) ---\nA STORY OF UNITS                                                                                  Lesson 7 3 6\n\n\n    T:   Let’s title our line plot Straw Lengths. (Model.) Add                                  Sample Work\n         the title to your graph. (Allow students time to work.)\n         Let’s add a key to show what each X represents. What\n         does each X represent?\n    S:   A straw!\n    T:   (Model adding a key to the line plot.) Add a key to\n         your line plot. (Allow students time to work.) Let’s\n         also put a label beneath the number line to tell the unit\n         our line plot shows. What unit did we use to measure?\n    S:   Inches!\n    T:   Let’s add the word Inches underneath the numbers on\n         the number line. (Model.) Now that our line plot has a\n         title, a key, and a unit label, anybody who looks at the\n         line plot will know what it is showing.\nContinue with the following suggested questions:\n        How many straws were at least    inches tall?\n        How many straws were taller/shorter than      inches?\n        Which measurements happened most/least frequently?\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Represent measurement data with line\nplots.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\n\n\n                        Lesson 7:                 Represent measurement data with line plots.                  96\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 98 (debrief) ---\nA STORY OF UNITS                                                                             Lesson 7 3 6\n\n\nAny combination of the questions below may be used to lead the discussion.\n        What process did you use to complete the line\n         plot in Problem (a)?\n        What other questions could be answered based\n         on the Heights of Bean Plants data?\n        Why do you think four of the bean plants were so\n         short? What questions would you ask Mrs.\n         Weisse’s class about this? (Possible student\n         answers: Did they have different soil? Were they\n         short but very healthy? Was it a different kind of\n         bean plant?)\n        In what ways is a line plot similar to a picture\n         graph in how it displays data? Bar graph? In\n         what ways is it different?\n        Why is it important to create a scale before\n         partitioning a number line?\n        In what ways did your knowledge of fractions\n         help you create your line plots?\n        How did the Fluency Practice activities connect to\n         today’s new learning?\n        How did the Application Problem help you get\n         ready for today’s lesson?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that were presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 7:                 Represent measurement data with line plots.                97\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 99 (template) ---\nA STORY OF UNITS                                                                           Lesson 7 Pattern Sheet 3 6\n\n Multiply.\n\n\nmultiply by 6 (6–10)\n\n\n                       Lesson 7:                 Represent measurement data with line plots.                           98\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 100 (problem-set) ---\nA STORY OF UNITS                                                                              Lesson 7 Problem Set 3 6\n\n\nName                                                                                             Date\n\nMrs. Weisse’s class grows beans for a science experiment. The students measure the heights of their bean\n                      1\nplants to the nearest 4 inch and record the measurements as shown below.\n\n\n                                                      Heights of Bean Plants (in Inches)\n\n             1                            3                               1                           3             3\n         2                            2                               3                           1             1\n             4                            4                               4                           4             4\n\n             3                                                            1                           1             1\n         1                             3                              2                           3             2\n             4                                                            2                           4             2\n\n                                          1                                                           1\n         2                            2                                3                          2              3\n                                          4                                                           4\n\n             1                            1                               3                           3\n         2                            3                               1                           2              2\n             2                            4                               4                           4\n\n\n    a.   Use the data to complete the line plot below.\n\n                      Title: __________________________________________________________\n\n\n             𝟑𝟑                                         𝟏𝟏                 𝟏𝟏               𝟑𝟑                      𝟏𝟏\n             1             2                           2                2                 2               3     3\n             𝟒𝟒                                         𝟒𝟒                 𝟐𝟐               𝟒𝟒                      𝟒𝟒\n\n\n                  Label: _______________________________                                         X=\n\n\n                        Lesson 7:                 Represent measurement data with line plots.                            99\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 101 (problem-set) ---\nA STORY OF UNITS                                                                            Lesson 7 Problem Set 3 6\n\n\n                                                          1\nb.   How many bean plants are at least 2 inches tall?\n                                                          4\n\n\n                                                              3\nc.   How many bean plants are taller than 2 inches?\n                                                              4\n\n\nd.   What is the most frequent measurement? How many bean plants were plotted for this\n     measurement?\n\n\ne.   George says that most of the bean plants are at least 3 inches tall. Is he right? Explain your answer.\n\n\nf.   Savannah was absent the day the class measured the heights of their bean plants. When she\n                                  2\n     returns, her plant measures 2 inches tall. Can Savannah plot the height of her bean plant on the\n                                  4\n     class line plot? Why or why not?\n\n\n                   Lesson 7:                  Represent measurement data with line plots.                         100\n\n                   ©2015 Great Minds. eureka-math.org\n                    G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 102 (exit-ticket) ---\nA STORY OF UNITS                                                                              Lesson 7 Exit Ticket 3 6\n\n\nName                                                                                             Date\n\nScientists measure the growth of mice in inches. The scientists measure the length of the mice to the nearest\n1\n  inch and record the measurements as shown below.\n4\n\n\n                                                        Lengths of Mice (in Inches)\n\n             1                                                             1                          3\n         3                              3                              3                          3              4\n             4                                                             4                          4\n\n             3                                                             1                          1             3\n         3                              3                              4                          4             3\n             4                                                             2                          2             4\n\n                                           1                                                          1\n          4                            4                                4                         4              4\n                                           4                                                          4\n\n\nLabel each tick mark. Then, record the data on the line plot below.\n\n                       Title: __________________________________________________________\n\n\n                 3                                                             𝟑𝟑\n                                                                               3\n                                                                               𝟒𝟒\n\n\n                       Label: _____________________________________________ X = 1 mouse\n\n\n                         Lesson 7:                 Represent measurement data with line plots.                          101\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 103 (homework) ---\nA STORY OF UNITS                                                                                 Lesson 7 Homework 3 6\n\n\nName                                                                                                Date\n\nMrs. Felter’s students build a model of their school’s neighborhood out of blocks. The students measure the\n                                        1\nheights of the buildings to the nearest 4 inch and record the measurements as shown below.\n\n\n                                                      Heights of Buildings (in Inches)\n\n             1                             3                               1                             1            1\n         3                             3                               4                             4            3\n             4                             4                               4                             2            2\n\n                                                                           3                                          1\n          4                              3                             3                              3           4\n                                                                           4                                          2\n\n                                           1                               3                             1\n          3                            3                               3                             3            4\n                                           2                               4                             2\n\n             1                             1                               1                                          3\n         3                             3                               3                              4           3\n             2                             4                               2                                          4\n\n                                           1                                                             1\n          3                            4                                4                            3            4\n                                           4                                                             4\n\n\n    a.   Use the data to complete the line plot below.\n\n                      Title: __________________________________________________________\n\n\n                 3           3\n                                𝟏𝟏\n                                                        3\n                                                         𝟏𝟏\n                                                                            3\n                                                                               𝟑𝟑               4            𝟏𝟏\n                                                                                                             4        4\n                                                                                                                          𝟏𝟏\n                                𝟒𝟒                       𝟐𝟐                    𝟒𝟒                            𝟒𝟒           𝟐𝟐\n\n\n                       Label: ______________________________________________ X =\n\n\n                        Lesson 7:                 Represent measurement data with line plots.                                  102\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 104 (homework) ---\nA STORY OF UNITS                                                                              Lesson 7 Homework 3 6\n\n\n                                            1\nb.   How many buildings are 4 inches tall?\n                                            4\n\n\n                                                          1\nc.   How many buildings are less than 3 inches?\n                                                          2\n\n\nd.   How many buildings are in the class model? How do you know?\n\n\ne.   Brook says most buildings in the model are at least 4 inches tall. Is she correct? Explain your\n     thinking.\n\n\n                    Lesson 7:                   Represent measurement data with line plots.                      103\n\n                    ©2015 Great Minds. eureka-math.org\n                    G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 105 (template) ---\nA STORY OF UNITS                                                                                       Lesson 7 Template 3 6\n\n\n                                                             Straw Lengths (in Inches)\n\n                                                                               1                       3               3\n                       3                                 4                 4                       2               3\n                                                                               2                       4               4\n\n                       3                                 1                     1                                       3\n                   3                                 4                     3                       4               4\n                       4                                 2                     4                                       4\n\n                       1                                                                               1               1\n                   4                                     5                  3                      3               4\n                       4                                                                               2               2\n\n                       3                                                       1                                       1\n                   4                                     4                 3                       5               4\n                       4                                                       4                                       4\n\n\nstraw lengths\n\n\n                           Lesson 7:                 Represent measurement data with line plots.                              104\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M6-TE-1.3.0 -0 8.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 100,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                              Lesson 7 Problem Set 3 6\n\n\nName                                                                                             Date\n\nMrs. Weisse’s class grows beans for a science experiment. The students measure the heights of their bean\n                      1\nplants to the nearest 4 inch and record the measurements as shown below.\n\n\n                                                      Heights of Bean Plants (in Inches)\n\n             1                            3                               1                           3             3\n         2                            2                               3                           1             1\n             4                            4                               4                           4             4\n\n             3                                                            1                           1             1\n         1                             3                              2                           3             2\n             4                                                            2                           4             2\n\n                                          1                                                           1\n         2                            2                                3                          2              3\n                                          4                                                           4\n\n             1                            1                               3                           3\n         2                            3                               1                           2              2\n             2                            4                               4                           4\n\n\n    a.   Use the data to complete the line plot below.\n\n                      Title: __________________________________________________________\n\n\n             𝟑𝟑                                         𝟏𝟏                 𝟏𝟏               𝟑𝟑                      𝟏𝟏\n             1             2                           2                2                 2               3     3\n             𝟒𝟒                                         𝟒𝟒                 𝟐𝟐               𝟒𝟒                      𝟒𝟒\n\n\n                  Label: _______________________________                                         X=\n\n\n                        Lesson 7:                 Represent measurement data with line plots.                            99\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 101,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                            Lesson 7 Problem Set 3 6\n\n\n                                                          1\nb.   How many bean plants are at least 2 inches tall?\n                                                          4\n\n\n                                                              3\nc.   How many bean plants are taller than 2 inches?\n                                                              4\n\n\nd.   What is the most frequent measurement? How many bean plants were plotted for this\n     measurement?\n\n\ne.   George says that most of the bean plants are at least 3 inches tall. Is he right? Explain your answer.\n\n\nf.   Savannah was absent the day the class measured the heights of their bean plants. When she\n                                  2\n     returns, her plant measures 2 inches tall. Can Savannah plot the height of her bean plant on the\n                                  4\n     class line plot? Why or why not?\n\n\n                   Lesson 7:                  Represent measurement data with line plots.                         100\n\n                   ©2015 Great Minds. eureka-math.org\n                    G 3-M6-TE-1.3.0 -0 8.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 155,
+        "text": "A STORY OF UNITS                                                                    Lesson 7 Answer Key 3 6\n\n\nLesson 7\nPattern Sheet\n              6                                        12                           18                24\n              30                                       36                           42                48\n              54                                       60                           30                36\n              30                                       42                           30                48\n              30                                       54                           30                60\n              36                                       30                           36                42\n              36                                       48                           36                54\n              36                                       42                           36                42\n              48                                       42                           54                42\n              48                                       36                           48                42\n              48                                       54                           54                36\n              54                                       42                           54                48\n              54                                       48                           36                54\n              42                                       54                           36                48\n              54                                       42                           36                48\n\n\nProblem Set\na.   Line plot completed; Heights of Bean Plants; inches; values for X may vary\nb.   14\nc.   6\n         3\nd.   1 inches; 4\n         4\ne.   No; explanations will vary.\nf.   Yes; explanations will vary.\n\n\nExit Ticket\nLine plot completed; Length of Mice; inches\n\n\n                        Module 6:                  Collecting and Displaying Data                             154\n\n                        ©2015 Great Minds. eureka-math.org\n                         G 3-M6-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 156,
+        "text": "A STORY OF UNITS                                                              Lesson 7 Answer Key 3 6\n\n\nHomework\na.   Line plot completed; Heights of Buildings; inches; values for X may vary\nb.   2\nc.   7\nd.   25; explanations will vary.\ne.   No; explanations will vary.\n\n\n                        Module 6:                 Collecting and Displaying Data                        155\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15"
+      }
+    ]
+  }
+}

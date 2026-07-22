@@ -1,0 +1,476 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m2-l9",
+  "moduleId": "m2",
+  "lessonNumber": 9,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+    "teacherEditionBytes": 20015771,
+    "lessonPdfPages": {
+      "start": 106,
+      "end": 115
+    },
+    "problemSetPdfPages": [
+      111,
+      112
+    ],
+    "exitTicketPdfPages": [
+      113
+    ],
+    "homeworkPdfPages": [
+      114,
+      115
+    ],
+    "answerKeyPdfPages": [
+      289
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m2-student/workbook-page-037.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m2-teacher/page-111.png",
+      "/source-pages/m2-teacher/page-112.png",
+      "/source-pages/m2-answer-key/page-289.png"
+    ]
+  },
+  "objective": "Decompose a liter to reason about the size of 1 liter, 100 milliliters, 10 milliliters, and 1 milliliter.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "",
+    "conceptDevelopmentText": "Maximize Part 1 by choosing odd-\n                                                                                                                shaped containers, or ones that appear\nMaterials: (T) Beaker, 2-liter bottle (empty, top cut off,                                                      to hold less, for the quart and gallon\n                                                                                                                comparisons. This will challenge\n           without label), ten-frame, 12 clear plastic cups\n                                                                                                                students’ sense of conservation; they\n           (labeled A–L), dropper, one each of the following\n                                                                                                                will likely predict that the shorter,\n           sizes of containers: cup, pint, quart, gallon (labeled                                               wider container holds less than the\n           1, 2, 3, and 4, respectively) (S) Problem Set                                                        bottle. Take the opportunity for\n                                                                                                                discussion. How might a shampoo\n                                                                                                                bottle fool you into thinking you are\n                                                                                                                getting more for your money?\n\n\n                        Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,                            105\n                                                      10 milliliters, and 1 milliliter.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 9 3 2\n\n\nPart 1: Compare the capacities of containers with different shapes and sizes.\n    T:   (Measure 1 liter of water using a beaker. Pour it into the 2-liter bottle. Use a marker to draw a line\n         at the water level in the bottle, and label it 1 L. Have containers 1–4 ready.)\n    T:   Which holds more water, a swimming pool or a glass?\n    S:   A swimming pool!\n    T:   Which holds more water, a swimming pool or a bathtub?\n    S:   A swimming pool!\n    T:   Which holds the least amount of water, a swimming pool, a bathtub, or a glass?\n    S:   A glass holds the least amount of water.\n    T:   The amount of liquid a container holds is called its capacity. The glass has the smallest capacity\n         because it holds the least amount of water. (Show bottle.) Is this container filled to capacity?\n    S:   No!\n    T:   The amount of water inside measures 1 liter. A liter is a unit we use to measure amounts of liquid.\n         To abbreviate the word liter, use a capital L. (Show the side of the bottle.) Use your finger to write\n         the abbreviation in the air.\n    T:   Let’s compare the capacities of different containers by pouring 1 liter into them to see how it fits.\n         (Show Container 1 and the bottle side by side.) Talk to your partner. Predict whether Container 1\n         holds more than, less than, or about the same as 1 liter. Circle your prediction on Part 1, Problem A\n         of your Problem Set.\n    S:   (Discuss and circle predictions.)\n    T:   I’ll pour water from the bottle into Container A to confirm our predictions. (Pour.) Is the capacity of\n         Container 1 more than or less than 1 liter?\n    S:   Less than 1 liter!\n    T:   Does that match your prediction? What surprised you? Why?\n    S:   (Discuss.)\n    T:   Next to the word actual on Problem A, write less.\nRepeat the process with Containers 2–4. (Container 2 holds less than 1 liter, Container 3 holds about the\nsame as 1 liter, and Container 4 holds more than 1 liter.) Then have students complete Problem B.\n\nPart 2: Decompose 1 liter.\n    T:   (Arrange empty cups A–J on the ten-frame, as shown on the next page. Measure and label the water\n         level on Cup K at 100 milliliters and on Cup L at 10 milliliters.)\n    T:   We just compared capacities using a liquid volume of 1 liter. We call an amount of liquid liquid\n         volume. Whisper the words liquid volume.\n    S:   Liquid volume.\n    T:   Now, we’re going to decompose 1 liter into smaller                           A NOTE ON\n         units called milliliters. Say the word milliliter.\n                                                                                      STANDARDS\n    S:   (Say the word.)                                                              ALIGNMENT:\n    T:   To abbreviate milliliter we write mL. (Model.) Write               The standards do not introduce\n         the abbreviation in the air.                                       milliliters until Grade 4 (4.MD.1).\n\n\n                        Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,              106\n                                                      10 milliliters, and 1 milliliter.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                                Lesson 9 3 2\n\n\nT:   We’ll decompose our liter into 10 equal parts. Each\n     square of our ten-frame shows 1 part. (Show Cup K.)\n                                                                                                                          NOTES ON\n     This cup is marked at 100 milliliters. We’ll use it to\n                                                                                                                          MULTIPLE MEANS\n     measure the liquid volume that goes into each cup on\n     the ten-frame.                                                                                                       OF REPRESENTATION:\n                                                                                                              Support students in differentiating\n                   Labeled Cups A–J on a Ten-Frame.                                                           between the meanings of capacity and\n                                                                                                              liquid volume. Capacity refers to a\n                                                                                                              container and how much the container\n                                                                                                              holds. Liquid volume refers to the\n                                                                                                              amount of liquid itself.\n\n\nT:   (Use water from the bottle marked 1 L to fill Cup K to the 100 mL mark. Empty Cup K into Cup A.)\n     How much water is in Cup A?\nS:   100 milliliters!\nT:   (Repeat with Cups B–J.) How many cups are filled with 100 milliliters?\nS:   10 cups!\nT:   Is there any water left in the bottle?\nS:   No!\n                                                                                   NOTES ON\nT:   We partitioned 1 liter of water into 10 parts, each with\n                                                                                   MULTIPLE MEANS\n     a liquid volume of about 100 milliliters. Skip-count\n                                                                                   OF ENGAGEMENT:\n     hundreds to find the total milliliters on the ten-frame.\n     (Point to each cup as students count.)                              While decomposing, pause to ask\n                                                                         students to estimate whether more\nS:   100, 200, 300, 400, 500, 600, 700, 800, 900, 1,000.                 than half, half, or less than half of the\nT:   How many milliliters of water are in 1 liter?                       liter has been poured. Encourage them\nS:   1,000 milliliters!                                                  to reason about estimations using the\nT:   Talk to your partner about how this equation describes              number of cups on the ten-frame.\n     our work. (Write: 1,000 mL ÷ 10 = 100 mL.)\nS:   (Discuss.)\nT:   Answer Problem C on your Problem Set. Include the equation written on the board.\nS:   (Skip-count as 9 cups are emptied back into the bottle. Empty the final cup into Cup K.)\nT:   Let’s decompose again. This time we’ll pour the 100 milliliters in Cup K into 10 equal parts. (Show\n     Cup L.) This cup is marked at 10 milliliters. We'll use it to measure the liquid volume that goes into\n     each cup on the ten-frame. How many milliliters will be in each of the 10 cups?\nS:   10 milliliters. 10 groups of 10 make 100.\nT:   Cup L is marked at 10 milliliters. (Show Cups K and L side by side.) How do the marks on each cup\n     compare?\nS:   The mark on Cup L is closer to the bottom.\nT:   Why is Cup L’s mark lower than Cup K’s?\nS:   Cup L shows 10 milliliters. That is less than 100 milliliters.  Cup L shows a smaller liquid volume.\nT:   (Repeat the process of decomposing as outlined above.)\n\n\n                      Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,                      107\n                                                    10 milliliters, and 1 milliliter.\n\n                     This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                     G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                                     Lesson 9 3 2\n\n\n     T:   What number sentence represents dividing 100 milliliters into\n          10 parts?                                                                                                                 Measure 1 mL with dropper.\n     S:   100 ÷ 10 = 10.  100 mL ÷ 10 = 10 mL.\n     T:   (Write the equation using units.) Complete Problem D on your\n          Problem Set. Include the equation.\n     S:   (Skip-count as 9 cups are emptied back into the bottle. Empty the\n          final cup into Cup L. Repeat the process used for decomposing\n          100 milliliters into 10 milliliters, using a dropper to decompose\n          10 milliliters into cups of 1 milliliter.)\n     T:   How many droppers full of water would it take to fill an entire liter of\n          water?\n     S:   1,000 droppers full!\n     T:   Answer Problem E. Include the equation.",
+    "fluencyPracticeText": "metric units and the base ten place\n                                                                                                                value system. The opportunity to make\n                                                                                                                these connections comes from\n Decompose 1 Kilogram 3.MD.2                                          (4 minutes)\n                                                                                                                introducing milliliters, which the\n                                                                                                                standards do not include until Grade 4\nDecompose 1 Kilogram (4 minutes)                                                                                (4.MD.1). Although milliliters are used\n                                                                                                                in Module 2, they are not assessed.\nMaterials: (S) Personal white board\n\nNote: Decomposing 1 kilogram using a number bond helps students relate part–whole thinking to\nmeasurement concepts.\n    T:   (Project a number bond with 1 kg written as the whole.) There are 1,000 grams in 1 kilogram.\n    T:   (Write 900 g as one of the parts.) On your personal white board, write a number bond by filling in\n         the unknown part.\n    S:   (Students draw number bond with 100 g, completing the unknown part.)\nContinue with the following possible sequence: 500 g, 700 g,\n400 g, 600 g, 300 g, 750 g, 650 g, 350 g, 250 g, 850 g, and 150 g.\n                                                                                                                            NOTES ON\n                                                                                                                            MATERIALS:",
+    "problemSetGuidanceText": "Students should only need to complete Problems F and G.\nYou may choose to work through these problems as a\nclass, have students work in pairs, or have students work\nindividually. Students should do their personal best to\ncomplete the remaining problems within the allotted\n10 minutes.",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Measure 1 liter of water using a beaker. Pour it into the 2-liter bottle. Use a marker to draw a line at the water level in the bottle, and label it 1 L. Have containers 1–4 ready.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Which holds more water, a swimming pool or a glass?"
+      },
+      {
+        "speaker": "students",
+        "text": "A swimming pool!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Which holds more water, a swimming pool or a bathtub?"
+      },
+      {
+        "speaker": "students",
+        "text": "A swimming pool!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Which holds the least amount of water, a swimming pool, a bathtub, or a glass?"
+      },
+      {
+        "speaker": "students",
+        "text": "A glass holds the least amount of water."
+      },
+      {
+        "speaker": "teacher",
+        "text": "The amount of liquid a container holds is called its capacity. The glass has the smallest capacity because it holds the least amount of water. (Show bottle.) Is this container filled to capacity?"
+      },
+      {
+        "speaker": "students",
+        "text": "No!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "The amount of water inside measures 1 liter. A liter is a unit we use to measure amounts of liquid. To abbreviate the word liter, use a capital L. (Show the side of the bottle.) Use your finger to write the abbreviation in the air."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s compare the capacities of different containers by pouring 1 liter into them to see how it fits. (Show Container 1 and the bottle side by side.) Talk to your partner. Predict whether Container 1 holds more than, less than, or about the same as 1 liter. Circle your prediction on Part 1, Problem A of your Problem Set."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss and circle predictions.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "I’ll pour water from the bottle into Container A to confirm our predictions. (Pour.) Is the capacity of Container 1 more than or less than 1 liter?"
+      },
+      {
+        "speaker": "students",
+        "text": "Less than 1 liter!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Does that match your prediction? What surprised you? Why?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Next to the word actual on Problem A, write less. Repeat the process with Containers 2–4. (Container 2 holds less than 1 liter, Container 3 holds about the same as 1 liter, and Container 4 holds more than 1 liter.) Then have students complete Problem B."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Arrange empty cups A–J on the ten-frame, as shown on the next page. Measure and label the water level on Cup K at 100 milliliters and on Cup L at 10 milliliters.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We just compared capacities using a liquid volume of 1 liter. We call an amount of liquid liquid volume. Whisper the words liquid volume."
+      },
+      {
+        "speaker": "students",
+        "text": "Liquid volume."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, we’re going to decompose 1 liter into smaller A NOTE ON units called milliliters. Say the word milliliter. STANDARDS"
+      },
+      {
+        "speaker": "students",
+        "text": "(Say the word.) ALIGNMENT:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "To abbreviate milliliter we write mL. (Model.) Write The standards do not introduce the abbreviation in the air. milliliters until Grade 4 (4.MD.1). 10 milliliters, and 1 milliliter. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 9 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We’ll decompose our liter into 10 equal parts. Each square of our ten-frame shows 1 part. (Show Cup K.) This cup is marked at 100 milliliters. We’ll use it to MULTIPLE MEANS measure the liquid volume that goes into each cup on the ten-frame. OF REPRESENTATION: Support students in differentiating Labeled Cups A–J on a Ten-Frame. between the meanings of capacity and liquid volume. Capacity refers to a container and how much the container holds. Liquid volume refers to the amount of liquid itself."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Use water from the bottle marked 1 L to fill Cup K to the 100 mL mark. Empty Cup K into Cup A.) How much water is in Cup A?"
+      },
+      {
+        "speaker": "students",
+        "text": "100 milliliters!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Repeat with Cups B–J.) How many cups are filled with 100 milliliters?"
+      },
+      {
+        "speaker": "students",
+        "text": "10 cups!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is there any water left in the bottle?"
+      },
+      {
+        "speaker": "students",
+        "text": "No!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We partitioned 1 liter of water into 10 parts, each with MULTIPLE MEANS a liquid volume of about 100 milliliters. Skip-count OF ENGAGEMENT: hundreds to find the total milliliters on the ten-frame. (Point to each cup as students count.) While decomposing, pause to ask students to estimate whether more"
+      },
+      {
+        "speaker": "students",
+        "text": "100, 200, 300, 400, 500, 600, 700, 800, 900, 1,000. than half, half, or less than half of the"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many milliliters of water are in 1 liter? liter has been poured. Encourage them"
+      },
+      {
+        "speaker": "students",
+        "text": "1,000 milliliters! to reason about estimations using the"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner about how this equation describes number of cups on the ten-frame. our work. (Write: 1,000 mL ÷ 10 = 100 mL.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Answer Problem C on your Problem Set. Include the equation written on the board."
+      },
+      {
+        "speaker": "students",
+        "text": "(Skip-count as 9 cups are emptied back into the bottle. Empty the final cup into Cup K.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s decompose again. This time we’ll pour the 100 milliliters in Cup K into 10 equal parts. (Show Cup L.) This cup is marked at 10 milliliters. We'll use it to measure the liquid volume that goes into each cup on the ten-frame. How many milliliters will be in each of the 10 cups?"
+      },
+      {
+        "speaker": "students",
+        "text": "10 milliliters. 10 groups of 10 make 100."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Cup L is marked at 10 milliliters. (Show Cups K and L side by side.) How do the marks on each cup compare?"
+      },
+      {
+        "speaker": "students",
+        "text": "The mark on Cup L is closer to the bottom."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why is Cup L’s mark lower than Cup K’s?"
+      },
+      {
+        "speaker": "students",
+        "text": "Cup L shows 10 milliliters. That is less than 100 milliliters.  Cup L shows a smaller liquid volume."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Repeat the process of decomposing as outlined above.) 10 milliliters, and 1 milliliter. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 9 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What number sentence represents dividing 100 milliliters into 10 parts? Measure 1 mL with dropper."
+      },
+      {
+        "speaker": "students",
+        "text": "100 ÷ 10 = 10.  100 mL ÷ 10 = 10 mL."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write the equation using units.) Complete Problem D on your Problem Set. Include the equation."
+      },
+      {
+        "speaker": "students",
+        "text": "(Skip-count as 9 cups are emptied back into the bottle. Empty the final cup into Cup L. Repeat the process used for decomposing 100 milliliters into 10 milliliters, using a dropper to decompose 10 milliliters into cups of 1 milliliter.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many droppers full of water would it take to fill an entire liter of water?"
+      },
+      {
+        "speaker": "students",
+        "text": "1,000 droppers full!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Answer Problem E. Include the equation."
+      }
+    ],
+    "teacherPrompts": [
+      "(Measure 1 liter of water using a beaker. Pour it into the 2-liter bottle. Use a marker to draw a line at the water level in the bottle, and label it 1 L. Have containers 1–4 ready.)",
+      "Which holds more water, a swimming pool or a glass?",
+      "Which holds more water, a swimming pool or a bathtub?",
+      "Which holds the least amount of water, a swimming pool, a bathtub, or a glass?",
+      "The amount of liquid a container holds is called its capacity. The glass has the smallest capacity because it holds the least amount of water. (Show bottle.) Is this container filled to capacity?",
+      "The amount of water inside measures 1 liter. A liter is a unit we use to measure amounts of liquid. To abbreviate the word liter, use a capital L. (Show the side of the bottle.) Use your finger to write the abbreviation in the air.",
+      "Let’s compare the capacities of different containers by pouring 1 liter into them to see how it fits. (Show Container 1 and the bottle side by side.) Talk to your partner. Predict whether Container 1 holds more than, less than, or about the same as 1 liter. Circle your prediction on Part 1, Problem A of your Problem Set.",
+      "I’ll pour water from the bottle into Container A to confirm our predictions. (Pour.) Is the capacity of Container 1 more than or less than 1 liter?",
+      "Does that match your prediction? What surprised you? Why?",
+      "Next to the word actual on Problem A, write less. Repeat the process with Containers 2–4. (Container 2 holds less than 1 liter, Container 3 holds about the same as 1 liter, and Container 4 holds more than 1 liter.) Then have students complete Problem B.",
+      "(Arrange empty cups A–J on the ten-frame, as shown on the next page. Measure and label the water level on Cup K at 100 milliliters and on Cup L at 10 milliliters.)",
+      "We just compared capacities using a liquid volume of 1 liter. We call an amount of liquid liquid volume. Whisper the words liquid volume.",
+      "Now, we’re going to decompose 1 liter into smaller A NOTE ON units called milliliters. Say the word milliliter. STANDARDS",
+      "To abbreviate milliliter we write mL. (Model.) Write The standards do not introduce the abbreviation in the air. milliliters until Grade 4 (4.MD.1). 10 milliliters, and 1 milliliter. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 9 3 2",
+      "We’ll decompose our liter into 10 equal parts. Each square of our ten-frame shows 1 part. (Show Cup K.) This cup is marked at 100 milliliters. We’ll use it to MULTIPLE MEANS measure the liquid volume that goes into each cup on the ten-frame. OF REPRESENTATION: Support students in differentiating Labeled Cups A–J on a Ten-Frame. between the meanings of capacity and liquid volume. Capacity refers to a container and how much the container holds. Liquid volume refers to the amount of liquid itself.",
+      "(Use water from the bottle marked 1 L to fill Cup K to the 100 mL mark. Empty Cup K into Cup A.) How much water is in Cup A?",
+      "(Repeat with Cups B–J.) How many cups are filled with 100 milliliters?",
+      "Is there any water left in the bottle?",
+      "We partitioned 1 liter of water into 10 parts, each with MULTIPLE MEANS a liquid volume of about 100 milliliters. Skip-count OF ENGAGEMENT: hundreds to find the total milliliters on the ten-frame. (Point to each cup as students count.) While decomposing, pause to ask students to estimate whether more",
+      "How many milliliters of water are in 1 liter? liter has been poured. Encourage them",
+      "Talk to your partner about how this equation describes number of cups on the ten-frame. our work. (Write: 1,000 mL ÷ 10 = 100 mL.)",
+      "Answer Problem C on your Problem Set. Include the equation written on the board.",
+      "Let’s decompose again. This time we’ll pour the 100 milliliters in Cup K into 10 equal parts. (Show Cup L.) This cup is marked at 10 milliliters. We'll use it to measure the liquid volume that goes into each cup on the ten-frame. How many milliliters will be in each of the 10 cups?",
+      "Cup L is marked at 10 milliliters. (Show Cups K and L side by side.) How do the marks on each cup compare?",
+      "Why is Cup L’s mark lower than Cup K’s?",
+      "(Repeat the process of decomposing as outlined above.) 10 milliliters, and 1 milliliter. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 9 3 2",
+      "What number sentence represents dividing 100 milliliters into 10 parts? Measure 1 mL with dropper.",
+      "(Write the equation using units.) Complete Problem D on your Problem Set. Include the equation.",
+      "How many droppers full of water would it take to fill an entire liter of water?",
+      "Answer Problem E. Include the equation."
+    ],
+    "debriefPrompt": "Revisit predictions from Part 1. Lead a discussion about why students may have thought taller containers had larger capacities. Guide students to articulate understanding about conservation and capacity",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Part 1 a. Predict whether each container holds less than, more than, or about the same as 1 liter. Container 1 holds less than / more than / about the same as 1 liter. Actual: Container 2 holds less than / more than / about the same as 1 liter. Actual: Container 3 holds less than / more than / about the same as 1 liter. Actual: Container 4 holds less than / more than / about the same as 1 liter. Actual: b. After measuring, what surprised you? Why? Part 2 c. Illustrate and describe the process of decomposing 1 liter of water into 10 smaller units. 10 milliliters, and 1 milliliter. d. Illustrate and describe the process of decomposing Cup K into 10 smaller units. e. Illustrate and describe the process of decomposing Cup L into 10 smaller units. f. What is the same about decomposing 1 liter into milliliters and decomposing 1 kilogram into grams? g. One liter of water weighs 1 kilogram. How much does 1 milliliter of water weigh? Explain how you know. 10 milliliters, and 1 milliliter.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                         Lesson 9 Problem Set 3 2\n\n\nName                                                                                                        Date\n\nPart 1\n   a. Predict whether each container holds less than, more than, or about the same as 1 liter.\n\n         Container 1 holds             less than / more than / about the same as                                   1 liter.      Actual:\n\n\n         Container 2 holds            less than / more than / about the same as                                    1 liter.      Actual:\n\n\n         Container 3 holds              less than / more than / about the same as                                  1 liter.      Actual:\n\n\n         Container 4 holds            less than / more than / about the same as                                    1 liter.      Actual:\n\n\n   b. After measuring, what surprised you? Why?\n\n\nPart 2\n\n   c. Illustrate and describe the process of decomposing 1 liter of water into 10 smaller units.\n\n\n                        Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,              110\n                                                      10 milliliters, and 1 milliliter.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                        Lesson 9 Problem Set 3 2\n\n\nd. Illustrate and describe the process of decomposing Cup K into 10 smaller units.\n\n\ne. Illustrate and describe the process of decomposing Cup L into 10 smaller units.\n\n\nf.   What is the same about decomposing 1 liter into milliliters and decomposing 1 kilogram into grams?\n\n\ng. One liter of water weighs 1 kilogram. How much does 1 milliliter of water weigh? Explain how you\n   know.\n\n\n                    Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,     111\n                                                  10 milliliters, and 1 milliliter.\n\n                   This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                   G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "a. Predictions will vary.\n      b. Answers will vary.\n      c. Illustrations and descriptions will vary.\n      d. Illustrations and descriptions will vary.\n      e. Illustrations and descriptions will vary.\n      f.   They both break apart into 1 thousand units. 1 liter is 1000 milliliters, and 1 kilogram is 1000\n           grams.\n      g. 1 gram; 1 liter is the same as 1 kilogram, and they break apart the same way into 1 thousand units.",
+    "answerKeyText": "A STORY OF UNITS                                                                                            Lesson 9 Answer Key 3 2\n\n\nLesson 9\nProblem Set\n      a. Predictions will vary.\n      b. Answers will vary.\n      c. Illustrations and descriptions will vary.\n      d. Illustrations and descriptions will vary.\n      e. Illustrations and descriptions will vary.\n      f.   They both break apart into 1 thousand units. 1 liter is 1000 milliliters, and 1 kilogram is 1000\n           grams.\n      g. 1 gram; 1 liter is the same as 1 kilogram, and they break apart the same way into 1 thousand units.\n\n\nExit Ticket\n1.    10; Morgan will scoop water 10 times.\n2.    100 groups; there are 10 groups of 10 milliliters in 100 milliliters, and there are 10 groups of 100\n      milliliters in 1 liter.\n\n\nHomework\n1.    a. Answers will vary.\n      b. Answers will vary.\n2.    15 mL\n3.    708 mL\n4.    6 buckets\n5.    5L\n\n\n                           Module 2:                  Place Value and Problem Solving with Units of Measure                           288\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "equal-groups",
+      "number-bond",
+      "measurement-scale",
+      "liquid-measure",
+      "fraction-model",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "equal-groups": [
+        "S: 10 milliliters. 10 groups of 10 make 100."
+      ],
+      "number-bond": [
+        "Decompose a liter to reason about the size of 1 liter, 100 milliliters, 10 milliliters, and 1 milliliter.",
+        "Lesson 9: Decompose a liter to reason about the size of 1 liter, 100 milliliters, 105",
+        "Part 2: Decompose 1 liter.",
+        "T: Now, we’re going to decompose 1 liter into smaller A NOTE ON",
+        "Lesson 9: Decompose a liter to reason about the size of 1 liter, 100 milliliters, 106",
+        "T: We’ll decompose our liter into 10 equal parts. Each",
+        "T: Let’s decompose again. This time we’ll pour the 100 milliliters in Cup K into 10 equal parts. (Show",
+        "Lesson 9: Decompose a liter to reason about the size of 1 liter, 100 milliliters, 107"
+      ],
+      "measurement-scale": [
+        " Decompose 1 Kilogram 3.MD.2 (4 minutes)",
+        "Decompose 1 Kilogram (4 minutes) (4.MD.1). Although milliliters are used",
+        "Note: Decomposing 1 kilogram using a number bond helps students relate part–whole thinking to",
+        "T: (Project a number bond with 1 kg written as the whole.) There are 1,000 grams in 1 kilogram.",
+        "f. What is the same about decomposing 1 liter into milliliters and decomposing 1 kilogram into grams?",
+        "g. One liter of water weighs 1 kilogram. How much does 1 milliliter of water weigh? Explain how you"
+      ],
+      "liquid-measure": [
+        "Decompose a liter to reason about the size of 1 liter, 100 milliliters, 10 milliliters, and 1 milliliter.",
+        "Materials: (T) Beaker, 2-liter bottle (empty, top cut off, to hold less, for the quart and gallon",
+        "Lesson 9: Decompose a liter to reason about the size of 1 liter, 100 milliliters, 105",
+        "10 milliliters, and 1 milliliter.",
+        "T: (Measure 1 liter of water using a beaker. Pour it into the 2-liter bottle. Use a marker to draw a line",
+        "T: The amount of water inside measures 1 liter. A liter is a unit we use to measure amounts of liquid.",
+        "To abbreviate the word liter, use a capital L. (Show the side of the bottle.) Use your finger to write",
+        "T: Let’s compare the capacities of different containers by pouring 1 liter into them to see how it fits."
+      ],
+      "fraction-model": [
+        "T: We’ll decompose our liter into 10 equal parts. Each",
+        "T: Let’s decompose again. This time we’ll pour the 100 milliliters in Cup K into 10 equal parts. (Show"
+      ],
+      "money-model": [
+        "getting more for your money?"
+      ],
+      "picture-or-drawing": [
+        "T: (Measure 1 liter of water using a beaker. Pour it into the 2-liter bottle. Use a marker to draw a line",
+        "S: (Students draw number bond with 100 g, completing the unknown part.)"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Measure 1 liter of water using a beaker. Pour it into the 2-liter bottle. Use a marker to draw a line at the water level in the bottle, and label it 1 L. Have containers 1–4 ready.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "The amount of liquid a container holds is called its capacity. The glass has the smallest capacity because it holds the least amount of water. (Show bottle.) Is this container filled to capacity?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "The amount of water inside measures 1 liter. A liter is a unit we use to measure amounts of liquid. To abbreviate the word liter, use a capital L. (Show the side of the bottle.) Use your finger to write the abbreviation in the air."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s compare the capacities of different containers by pouring 1 liter into them to see how it fits. (Show Container 1 and the bottle side by side.) Talk to your partner. Predict whether Container 1 holds more than, less than, or about the same as 1 liter. Circle your prediction on Part 1, Problem A of your Problem Set."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Next to the word actual on Problem A, write less. Repeat the process with Containers 2–4. (Container 2 holds less than 1 liter, Container 3 holds about the same as 1 liter, and Container 4 holds more than 1 liter.) Then have students complete Problem B."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Arrange empty cups A–J on the ten-frame, as shown on the next page. Measure and label the water level on Cup K at 100 milliliters and on Cup L at 10 milliliters.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We just compared capacities using a liquid volume of 1 liter. We call an amount of liquid liquid volume. Whisper the words liquid volume."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, we’re going to decompose 1 liter into smaller A NOTE ON units called milliliters. Say the word milliliter. STANDARDS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "To abbreviate milliliter we write mL. (Model.) Write The standards do not introduce the abbreviation in the air. milliliters until Grade 4 (4.MD.1). 10 milliliters, and 1 milliliter. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 9 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We’ll decompose our liter into 10 equal parts. Each square of our ten-frame shows 1 part. (Show Cup K.) This cup is marked at 100 milliliters. We’ll use it to MULTIPLE MEANS measure the liquid volume that goes into each cup on the ten-frame. OF REPRESENTATION: Support students in differentiating Labeled Cups A–J on a Ten-Frame. between the meanings of capacity and liquid volume. Capacity refers to a container and how much the container holds. Liquid volume refers to the amount of liquid itself."
+      },
+      {
+        "speaker": "teacher",
+        "text": "We partitioned 1 liter of water into 10 parts, each with MULTIPLE MEANS a liquid volume of about 100 milliliters. Skip-count OF ENGAGEMENT: hundreds to find the total milliliters on the ten-frame. (Point to each cup as students count.) While decomposing, pause to ask students to estimate whether more"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner about how this equation describes number of cups on the ten-frame. our work. (Write: 1,000 mL ÷ 10 = 100 mL.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Skip-count as 9 cups are emptied back into the bottle. Empty the final cup into Cup K.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s decompose again. This time we’ll pour the 100 milliliters in Cup K into 10 equal parts. (Show Cup L.) This cup is marked at 10 milliliters. We'll use it to measure the liquid volume that goes into each cup on the ten-frame. How many milliliters will be in each of the 10 cups?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Cup L is marked at 10 milliliters. (Show Cups K and L side by side.) How do the marks on each cup compare?"
+      },
+      {
+        "speaker": "students",
+        "text": "Cup L shows 10 milliliters. That is less than 100 milliliters.  Cup L shows a smaller liquid volume."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write the equation using units.) Complete Problem D on your Problem Set. Include the equation."
+      },
+      {
+        "speaker": "students",
+        "text": "(Skip-count as 9 cups are emptied back into the bottle. Empty the final cup into Cup L. Repeat the process used for decomposing 100 milliliters into 10 milliliters, using a dropper to decompose 10 milliliters into cups of 1 milliliter.)"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 106 (debrief) ---\nA STORY OF UNITS                                                                                                                Lesson 9 3 2\n\n\nLesson 9\nObjective: Decompose a liter to reason about the size of 1 liter,\n100 milliliters, 10 milliliters, and 1 milliliter.\n\nSuggested Lesson Structure\n                                                                                                                            A NOTE ON\n                                                                                                                            STANDARDS\n Fluency Practice                  (4 minutes)\n                                                                                                                            ALIGNMENT:\n Concept Development               (46 minutes)\n                                                                                                                In this lesson, students decompose\n Student Debrief                   (10 minutes)\n                                                                                                                1 liter into milliliters following the same\n   Total Time                       (60 minutes)                                                                procedure used to decompose\n                                                                                                                1 kilogram into grams used in Lesson 6.\n                                                                                                                They make connections between\nFluency Practice (4 minutes)                                                                                    metric units and the base ten place\n                                                                                                                value system. The opportunity to make\n                                                                                                                these connections comes from\n Decompose 1 Kilogram 3.MD.2                                          (4 minutes)\n                                                                                                                introducing milliliters, which the\n                                                                                                                standards do not include until Grade 4\nDecompose 1 Kilogram (4 minutes)                                                                                (4.MD.1). Although milliliters are used\n                                                                                                                in Module 2, they are not assessed.\nMaterials: (S) Personal white board\n\nNote: Decomposing 1 kilogram using a number bond helps students relate part–whole thinking to\nmeasurement concepts.\n    T:   (Project a number bond with 1 kg written as the whole.) There are 1,000 grams in 1 kilogram.\n    T:   (Write 900 g as one of the parts.) On your personal white board, write a number bond by filling in\n         the unknown part.\n    S:   (Students draw number bond with 100 g, completing the unknown part.)\nContinue with the following possible sequence: 500 g, 700 g,\n400 g, 600 g, 300 g, 750 g, 650 g, 350 g, 250 g, 850 g, and 150 g.\n                                                                                                                            NOTES ON\n                                                                                                                            MATERIALS:\nConcept Development (46 minutes)                                                                                Maximize Part 1 by choosing odd-\n                                                                                                                shaped containers, or ones that appear\nMaterials: (T) Beaker, 2-liter bottle (empty, top cut off,                                                      to hold less, for the quart and gallon\n                                                                                                                comparisons. This will challenge\n           without label), ten-frame, 12 clear plastic cups\n                                                                                                                students’ sense of conservation; they\n           (labeled A–L), dropper, one each of the following\n                                                                                                                will likely predict that the shorter,\n           sizes of containers: cup, pint, quart, gallon (labeled                                               wider container holds less than the\n           1, 2, 3, and 4, respectively) (S) Problem Set                                                        bottle. Take the opportunity for\n                                                                                                                discussion. How might a shampoo\n                                                                                                                bottle fool you into thinking you are\n                                                                                                                getting more for your money?\n\n\n                        Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,                            105\n                                                      10 milliliters, and 1 milliliter.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 107 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                              Lesson 9 3 2\n\n\nPart 1: Compare the capacities of containers with different shapes and sizes.\n    T:   (Measure 1 liter of water using a beaker. Pour it into the 2-liter bottle. Use a marker to draw a line\n         at the water level in the bottle, and label it 1 L. Have containers 1–4 ready.)\n    T:   Which holds more water, a swimming pool or a glass?\n    S:   A swimming pool!\n    T:   Which holds more water, a swimming pool or a bathtub?\n    S:   A swimming pool!\n    T:   Which holds the least amount of water, a swimming pool, a bathtub, or a glass?\n    S:   A glass holds the least amount of water.\n    T:   The amount of liquid a container holds is called its capacity. The glass has the smallest capacity\n         because it holds the least amount of water. (Show bottle.) Is this container filled to capacity?\n    S:   No!\n    T:   The amount of water inside measures 1 liter. A liter is a unit we use to measure amounts of liquid.\n         To abbreviate the word liter, use a capital L. (Show the side of the bottle.) Use your finger to write\n         the abbreviation in the air.\n    T:   Let’s compare the capacities of different containers by pouring 1 liter into them to see how it fits.\n         (Show Container 1 and the bottle side by side.) Talk to your partner. Predict whether Container 1\n         holds more than, less than, or about the same as 1 liter. Circle your prediction on Part 1, Problem A\n         of your Problem Set.\n    S:   (Discuss and circle predictions.)\n    T:   I’ll pour water from the bottle into Container A to confirm our predictions. (Pour.) Is the capacity of\n         Container 1 more than or less than 1 liter?\n    S:   Less than 1 liter!\n    T:   Does that match your prediction? What surprised you? Why?\n    S:   (Discuss.)\n    T:   Next to the word actual on Problem A, write less.\nRepeat the process with Containers 2–4. (Container 2 holds less than 1 liter, Container 3 holds about the\nsame as 1 liter, and Container 4 holds more than 1 liter.) Then have students complete Problem B.\n\nPart 2: Decompose 1 liter.\n    T:   (Arrange empty cups A–J on the ten-frame, as shown on the next page. Measure and label the water\n         level on Cup K at 100 milliliters and on Cup L at 10 milliliters.)\n    T:   We just compared capacities using a liquid volume of 1 liter. We call an amount of liquid liquid\n         volume. Whisper the words liquid volume.\n    S:   Liquid volume.\n    T:   Now, we’re going to decompose 1 liter into smaller                           A NOTE ON\n         units called milliliters. Say the word milliliter.\n                                                                                      STANDARDS\n    S:   (Say the word.)                                                              ALIGNMENT:\n    T:   To abbreviate milliliter we write mL. (Model.) Write               The standards do not introduce\n         the abbreviation in the air.                                       milliliters until Grade 4 (4.MD.1).\n\n\n                        Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,              106\n                                                      10 milliliters, and 1 milliliter.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 108 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                                Lesson 9 3 2\n\n\nT:   We’ll decompose our liter into 10 equal parts. Each\n     square of our ten-frame shows 1 part. (Show Cup K.)\n                                                                                                                          NOTES ON\n     This cup is marked at 100 milliliters. We’ll use it to\n                                                                                                                          MULTIPLE MEANS\n     measure the liquid volume that goes into each cup on\n     the ten-frame.                                                                                                       OF REPRESENTATION:\n                                                                                                              Support students in differentiating\n                   Labeled Cups A–J on a Ten-Frame.                                                           between the meanings of capacity and\n                                                                                                              liquid volume. Capacity refers to a\n                                                                                                              container and how much the container\n                                                                                                              holds. Liquid volume refers to the\n                                                                                                              amount of liquid itself.\n\n\nT:   (Use water from the bottle marked 1 L to fill Cup K to the 100 mL mark. Empty Cup K into Cup A.)\n     How much water is in Cup A?\nS:   100 milliliters!\nT:   (Repeat with Cups B–J.) How many cups are filled with 100 milliliters?\nS:   10 cups!\nT:   Is there any water left in the bottle?\nS:   No!\n                                                                                   NOTES ON\nT:   We partitioned 1 liter of water into 10 parts, each with\n                                                                                   MULTIPLE MEANS\n     a liquid volume of about 100 milliliters. Skip-count\n                                                                                   OF ENGAGEMENT:\n     hundreds to find the total milliliters on the ten-frame.\n     (Point to each cup as students count.)                              While decomposing, pause to ask\n                                                                         students to estimate whether more\nS:   100, 200, 300, 400, 500, 600, 700, 800, 900, 1,000.                 than half, half, or less than half of the\nT:   How many milliliters of water are in 1 liter?                       liter has been poured. Encourage them\nS:   1,000 milliliters!                                                  to reason about estimations using the\nT:   Talk to your partner about how this equation describes              number of cups on the ten-frame.\n     our work. (Write: 1,000 mL ÷ 10 = 100 mL.)\nS:   (Discuss.)\nT:   Answer Problem C on your Problem Set. Include the equation written on the board.\nS:   (Skip-count as 9 cups are emptied back into the bottle. Empty the final cup into Cup K.)\nT:   Let’s decompose again. This time we’ll pour the 100 milliliters in Cup K into 10 equal parts. (Show\n     Cup L.) This cup is marked at 10 milliliters. We'll use it to measure the liquid volume that goes into\n     each cup on the ten-frame. How many milliliters will be in each of the 10 cups?\nS:   10 milliliters. 10 groups of 10 make 100.\nT:   Cup L is marked at 10 milliliters. (Show Cups K and L side by side.) How do the marks on each cup\n     compare?\nS:   The mark on Cup L is closer to the bottom.\nT:   Why is Cup L’s mark lower than Cup K’s?\nS:   Cup L shows 10 milliliters. That is less than 100 milliliters.  Cup L shows a smaller liquid volume.\nT:   (Repeat the process of decomposing as outlined above.)\n\n\n                      Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,                      107\n                                                    10 milliliters, and 1 milliliter.\n\n                     This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                     G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 109 (debrief) ---\nA STORY OF UNITS                                                                                                                     Lesson 9 3 2\n\n\n     T:   What number sentence represents dividing 100 milliliters into\n          10 parts?                                                                                                                 Measure 1 mL with dropper.\n     S:   100 ÷ 10 = 10.  100 mL ÷ 10 = 10 mL.\n     T:   (Write the equation using units.) Complete Problem D on your\n          Problem Set. Include the equation.\n     S:   (Skip-count as 9 cups are emptied back into the bottle. Empty the\n          final cup into Cup L. Repeat the process used for decomposing\n          100 milliliters into 10 milliliters, using a dropper to decompose\n          10 milliliters into cups of 1 milliliter.)\n     T:   How many droppers full of water would it take to fill an entire liter of\n          water?\n     S:   1,000 droppers full!\n     T:   Answer Problem E. Include the equation.\n\nProblem Set (10 minutes)\nStudents should only need to complete Problems F and G.\nYou may choose to work through these problems as a\nclass, have students work in pairs, or have students work\nindividually. Students should do their personal best to\ncomplete the remaining problems within the allotted\n10 minutes.\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Decompose a liter to reason about the\nsize of 1 liter, 100 milliliters, 10 milliliters, and 1 milliliter.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the problem\nset. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\n\n\n                           Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,                           108\n                                                         10 milliliters, and 1 milliliter.\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 110 (debrief) ---\nA STORY OF UNITS                                                                                                             Lesson 9 3 2\n\n\nAny combination of the questions below may be used to lead the discussion.\n       Revisit predictions from Part 1. Lead a discussion\n        about why students may have thought taller\n        containers had larger capacities. Guide students\n        to articulate understanding about conservation\n        and capacity.\n       Review the difference between capacity and\n        liquid volume.\n       In the equations for Part 2, why are the first\n        number and quotient in each followed by the\n        word milliliters? Why not the 10?\n       How is decomposing 1 liter similar to\n        decomposing 1 kilogram?\n       How do our decompositions of 1 liter and\n        1 kilogram remind you of the place value chart?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                       Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,              109\n                                                     10 milliliters, and 1 milliliter.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 111 (problem-set) ---\nA STORY OF UNITS                                                                                         Lesson 9 Problem Set 3 2\n\n\nName                                                                                                        Date\n\nPart 1\n   a. Predict whether each container holds less than, more than, or about the same as 1 liter.\n\n         Container 1 holds             less than / more than / about the same as                                   1 liter.      Actual:\n\n\n         Container 2 holds            less than / more than / about the same as                                    1 liter.      Actual:\n\n\n         Container 3 holds              less than / more than / about the same as                                  1 liter.      Actual:\n\n\n         Container 4 holds            less than / more than / about the same as                                    1 liter.      Actual:\n\n\n   b. After measuring, what surprised you? Why?\n\n\nPart 2\n\n   c. Illustrate and describe the process of decomposing 1 liter of water into 10 smaller units.\n\n\n                        Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,              110\n                                                      10 milliliters, and 1 milliliter.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 112 (problem-set) ---\nA STORY OF UNITS                                                                                        Lesson 9 Problem Set 3 2\n\n\nd. Illustrate and describe the process of decomposing Cup K into 10 smaller units.\n\n\ne. Illustrate and describe the process of decomposing Cup L into 10 smaller units.\n\n\nf.   What is the same about decomposing 1 liter into milliliters and decomposing 1 kilogram into grams?\n\n\ng. One liter of water weighs 1 kilogram. How much does 1 milliliter of water weigh? Explain how you\n   know.\n\n\n                    Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,     111\n                                                  10 milliliters, and 1 milliliter.\n\n                   This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                   G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 113 (exit-ticket) ---\nA STORY OF UNITS                                                                                             Lesson 9 Exit Ticket 3 2\n\n\nName                                                                                                        Date\n\n1. Morgan fills a 1-liter jar with water from the pond. She uses a 100-milliliter cup to scoop water out of the\n   pond and pour it into the jar. How many times will Morgan scoop water from the pond to fill the jar?\n\n\n2. How many groups of 10 milliliters are in 1 liter? Explain.\n\n\n                                                                            There are                                 groups of 10 milliliters in 1 liter.\n\n\n                        Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,                         112\n                                                      10 milliliters, and 1 milliliter.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 114 (homework) ---\nA STORY OF UNITS                                                                                          Lesson 9 Homework 3 2\n\n\nName                                                                                                       Date\n\n1. Find containers at home that have a capacity of about 1 liter. Use the labels on containers to help you\n   identify them.\n\n    a.\n\n                                                            Name of Container\n\n     Example: Carton of orange juice\n\n\n    b. Sketch the containers. How do their sizes and shapes compare?\n\n\n2. The doctor prescribes Mrs. Larson 5 milliliters of medicine each day for 3 days. How many milliliters of\n   medicine will she take altogether?\n\n\n                       Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,    113\n                                                     10 milliliters, and 1 milliliter.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 115 (homework) ---\nA STORY OF UNITS                                                                                           Lesson 9 Homework 3 2\n\n\n3. Mrs. Goldstein pours 3 juice boxes into a bowl to make punch. Each juice box holds 236 milliliters.\n   How much juice does Mrs. Goldstein pour into the bowl?\n\n\n4. Daniel’s fish tank holds 24 liters of water. He uses a 4-liter bucket to fill the tank. How many buckets of\n   water are needed to fill the tank?\n\n\n5. Sheila buys 15 liters of paint to paint her house. She pours the paint equally into 3 buckets.\n   How many liters of paint are in each bucket?\n\n\n                        Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,    114\n                                                      10 milliliters, and 1 milliliter.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 111,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                         Lesson 9 Problem Set 3 2\n\n\nName                                                                                                        Date\n\nPart 1\n   a. Predict whether each container holds less than, more than, or about the same as 1 liter.\n\n         Container 1 holds             less than / more than / about the same as                                   1 liter.      Actual:\n\n\n         Container 2 holds            less than / more than / about the same as                                    1 liter.      Actual:\n\n\n         Container 3 holds              less than / more than / about the same as                                  1 liter.      Actual:\n\n\n         Container 4 holds            less than / more than / about the same as                                    1 liter.      Actual:\n\n\n   b. After measuring, what surprised you? Why?\n\n\nPart 2\n\n   c. Illustrate and describe the process of decomposing 1 liter of water into 10 smaller units.\n\n\n                        Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,              110\n                                                      10 milliliters, and 1 milliliter.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 112,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                        Lesson 9 Problem Set 3 2\n\n\nd. Illustrate and describe the process of decomposing Cup K into 10 smaller units.\n\n\ne. Illustrate and describe the process of decomposing Cup L into 10 smaller units.\n\n\nf.   What is the same about decomposing 1 liter into milliliters and decomposing 1 kilogram into grams?\n\n\ng. One liter of water weighs 1 kilogram. How much does 1 milliliter of water weigh? Explain how you\n   know.\n\n\n                    Lesson 9:                     Decompose a liter to reason about the size of 1 liter, 100 milliliters,     111\n                                                  10 milliliters, and 1 milliliter.\n\n                   This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                   G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 289,
+        "text": "A STORY OF UNITS                                                                                            Lesson 9 Answer Key 3 2\n\n\nLesson 9\nProblem Set\n      a. Predictions will vary.\n      b. Answers will vary.\n      c. Illustrations and descriptions will vary.\n      d. Illustrations and descriptions will vary.\n      e. Illustrations and descriptions will vary.\n      f.   They both break apart into 1 thousand units. 1 liter is 1000 milliliters, and 1 kilogram is 1000\n           grams.\n      g. 1 gram; 1 liter is the same as 1 kilogram, and they break apart the same way into 1 thousand units.\n\n\nExit Ticket\n1.    10; Morgan will scoop water 10 times.\n2.    100 groups; there are 10 groups of 10 milliliters in 100 milliliters, and there are 10 groups of 100\n      milliliters in 1 liter.\n\n\nHomework\n1.    a. Answers will vary.\n      b. Answers will vary.\n2.    15 mL\n3.    708 mL\n4.    6 buckets\n5.    5L\n\n\n                           Module 2:                  Place Value and Problem Solving with Units of Measure                           288\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

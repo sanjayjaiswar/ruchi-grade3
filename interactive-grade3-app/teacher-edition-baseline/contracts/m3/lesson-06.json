@@ -1,0 +1,444 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m3-l6",
+  "moduleId": "m3",
+  "lessonNumber": 6,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_3/g3_m3_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+    "teacherEditionBytes": 14065864,
+    "lessonPdfPages": {
+      "start": 73,
+      "end": 84
+    },
+    "problemSetPdfPages": [
+      80,
+      81
+    ],
+    "exitTicketPdfPages": [
+      82
+    ],
+    "homeworkPdfPages": [
+      83,
+      84
+    ],
+    "answerKeyPdfPages": [
+      289,
+      290
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m3-student/workbook-page-024.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m3-answer-key/page-289.png",
+      "/source-pages/m3-answer-key/page-290.png"
+    ]
+  },
+  "objective": "Use the distributive property as a strategy to multiply and divide using units of 6 and 7.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "Materials: (S) Personal white board\n\nPart 1: Apply the distributive property to multiply using units of 6 and 7.\n    T:   We used 9 × 7 to solve the Application Problem. Say 9 × 7 in unit form.\n    S:   9 sevens.\n    T:   Model 9 × 7 using a tape diagram.\n         Then, write the fact under the diagram.\n         (Allow students time to work.)\n    T:   Recently, we used the break apart and\n         distribute strategy to help solve larger\n         multiplication facts. Discuss with your\n         partner. How did we do that?\n    S:   We broke apart a bigger fact into two smaller\n         facts.  That made it easier to solve because\n         we just added the products of the two smaller\n         facts.\n    T:   Breaking the bigger fact into 5 plus something\n         helped us make those two smaller facts.\n         9 sevens can be broken into 5 sevens plus how\n         many sevens?\n    S:   5 sevens plus 4 sevens.\n    T:   Draw a dotted line separating the 5 sevens from 4 sevens on your tape diagram. Label the 5 sevens\n         and 4 sevens on your tape diagram with multiplication facts.\n    S:   (Draw line, label 5 × 7 and 4 × 7.)\n    T:   Let’s use those facts to rewrite 5 sevens plus 4 sevens like this. (Write (5 × 7) + (4 × 7).)\n         Remind your partner why this expression is the same as 9 × 7.\n    S:   It’s the same because the 5 and the 4 together make 9.  And the 7 just got distributed to the\n         2 parts.\n    T:   Now, solve. Check your work with your partner’s.\n         (Allow students time to work.)                                              A NOTE ON\n    T:   What is 9 × 7?                                                              MULTIPLE MEANS\n    S:   63.                                                                         OF ENGAGEMENT:\nContinue with the following suggested sequence:                                                                 Alternatively, challenge students\n                                                                                                                working above grade level to use,\n        8×6                                                                                                    compare, and present three different\n        8×7                                                                                                    multiplication strategies to solve 8 × 6,\n                                                                                                                including the 5 plus something (5 + n)\n                                                                                                                strategy.\n\n\n                        Lesson 6:                Use the distributive property as a strategy to multiply and divide                                         74\n                                                 using units of 6 and 7.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 6 3 3\n\n\nPart 2: Use addition number bonds to apply the distributive property to divide using units of 6 and 7.\n    T:   We also used the break apart and distribute strategy earlier this year with arrays and division.\n         Instead of using arrays today, let’s use number bonds.\n    T:   Write 48 ÷ 6 on your board and circle it.\n    T:   We need to break apart 48 ÷ 6 into two smaller division expressions. Why would 30 make a good\n         breaking point?\n    S:   30 ÷ 6 is an easy fives fact.\n    T:   Write and circle 30 ÷ 6 as a part on your number bond.                    NOTES ON\n    S:   (Write and circle 30 ÷ 6 as a part on the number bond.)                   MULTIPLE MEANS\n    T:   We have 30 ÷ 6 as one of our parts. What division                         OF ENGAGEMENT:\n         expression do we need to write for the other part?                                                    Clarify that the two smaller division\n                                                                                                               expressions must be divided by\n    S:   18 ÷ 6.\n                                                                                                               6 expressions. Emphasize the value of\n    T:   How do you know?                                                                                      this strategy as a way to solve sixes\n    S:   30 plus 18 equals 48.  I know because we used 30,                                                    facts by using familiar fives, fours,\n         and we need 18 more to get to 48.                                                                     threes, or twos facts.\n\n    T:   Write and circle 18 ÷ 6 as the other part.                                                            Alternatively, challenge students to\n                                                                                                               present, compare, and justify the use\n    T:   Let’s show that work with an equation. Write                                                          of a different number bond for 48 ÷ 6.\n         48 ÷ 6 = (30 ÷ 6) + (18 ÷ 6). Put parentheses around\n         the two expressions to show that we solve these two\n         division facts first.\n                                                                                                                        Sample Teacher Board\n    T:   How can we use the quotients of these two division\n         expressions to find the quotient of 48 ÷ 6?\n    S:   Add the quotient of 30 ÷ 6 and the quotient of 18 ÷ 6.\n    T:   (Write addition sign as shown.) Add the two quotients\n         to solve for 48 ÷ 6.\n    S:   (Write 5 + 3 = 8.)\n    T:   48 ÷ 6 is…?\n    S:   8.\n    T:   Write the answer below your equation. This is a great\n         problem to solve this way since adding to 30 is so easy.\n         What is another 5 fact that results in an easy number?\n    S:   5 times 8 is 40. 5 times 4 is 20.  The even numbers!\n    T:   What fact would you like to try next?\n    S:   Let’s do a big number divided by 8.  56 divided by 8.\nRepeat the process with 56 ÷ 8.\n\n\n                       Lesson 6:                 Use the distributive property as a strategy to multiply and divide                                     75\n                                                 using units of 6 and 7.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                                   Lesson 6 3 3",
+    "fluencyPracticeText": " Multiply By 6 3.OA.7                                             (8 minutes)\n Group Counting 3.OA.1                                            (4 minutes)                                              NOTES ON\n                                                                                                                            MULTIPLE MEANS\n Decompose Multiples of 6 and 7 3.OA.5                            (3 minutes)\n                                                                                                                            OF ENGAGEMENT:\n                                                                                                                 Multiply By 6 is carefully scaffolded to\nMultiply By 6 (8 minutes)                                                                                        support student success. However,\nMaterials: (S) Multiply by 6 (6–10) (Pattern Sheet)                                                              consider adjusting the activity to suit\n                                                                                                                 students’ diverse needs. For example,\nNote: This activity builds fluency with multiplication facts using                                               focus on one skill, such as skip-\nunits of six. It supports students knowing from memory all                                                       counting down to solve. Or, have\nproducts of two one-digit numbers. See Lesson 5 for the                                                          students choose and solve the three\n                                                                                                                 hardest facts using three different\ndirections for administering a Multiply By Pattern Sheet.\n                                                                                                                 strategies.\n    T:   (Write 7 × 6 = ____.) Let’s skip-count up by sixes.\n         I’ll raise a finger for each six. (Count with fingers to 7\n         as students count.)\n    S:   6, 12, 18, 24, 30, 36, 42.\n    T:   Let’s skip-count by sixes starting at 30. Why is 30 a good place to start?\n    S:   It’s a fact we already know, so we can use it to figure out a fact we don’t know.\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 60 with 10 fingers, 1 for each\n         six. (Count down with your fingers as students say numbers.)\n    S:   60 (10 fingers), 54 (9 fingers), 48 (8 fingers), 42 (7 fingers).\nContinue with the following suggested sequence: 9 × 6, 6 × 6, and 8 × 6.\n    T:   (Distribute Multiply by 6 Pattern Sheet.) Let’s practice multiplying by 6. Be sure to work left to right\n         across the page.\n\n\n                         Lesson 6:                Use the distributive property as a strategy to multiply and divide                                        72\n                                                  using units of 6 and 7.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 6 3 3\n\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by sevens prepares\nstudents for multiplication using units of seven in this lesson. Group counting by eights and nines anticipates\nmultiplication using those units later in the module. Direct students to count forward and backward,\noccasionally changing the direction of the count.\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\nDecompose Multiples of 6 and 7 (3 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity prepares students to use the distributive property with number bonds in today’s lesson.\n    T:   (Project a number bond with a whole of 48 and 12 as a part.) On your personal white board, fill in\n         the unknown part in the number bond.\nContinue with the following suggested sequence: a whole of 54 and 24 as a part, a whole of 49 and 14 as a\npart, and a whole of 63 and 21 as a part.",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students                                            6                               6\n\nshould solve these problems using the RDW approach\nused for Application Problems.",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "We used 9 × 7 to solve the Application Problem. Say 9 × 7 in unit form."
+      },
+      {
+        "speaker": "students",
+        "text": "9 sevens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Model 9 × 7 using a tape diagram. Then, write the fact under the diagram. (Allow students time to work.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Recently, we used the break apart and distribute strategy to help solve larger multiplication facts. Discuss with your partner. How did we do that?"
+      },
+      {
+        "speaker": "students",
+        "text": "We broke apart a bigger fact into two smaller facts.  That made it easier to solve because we just added the products of the two smaller facts."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Breaking the bigger fact into 5 plus something helped us make those two smaller facts. 9 sevens can be broken into 5 sevens plus how many sevens?"
+      },
+      {
+        "speaker": "students",
+        "text": "5 sevens plus 4 sevens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a dotted line separating the 5 sevens from 4 sevens on your tape diagram. Label the 5 sevens and 4 sevens on your tape diagram with multiplication facts."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw line, label 5 × 7 and 4 × 7.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use those facts to rewrite 5 sevens plus 4 sevens like this. (Write (5 × 7) + (4 × 7).) Remind your partner why this expression is the same as 9 × 7."
+      },
+      {
+        "speaker": "students",
+        "text": "It’s the same because the 5 and the 4 together make 9.  And the 7 just got distributed to the 2 parts."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, solve. Check your work with your partner’s. (Allow students time to work.) A NOTE ON"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is 9 × 7? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "63. OF ENGAGEMENT: Continue with the following suggested sequence: Alternatively, challenge students working above grade level to use,  8×6 compare, and present three different  8×7 multiplication strategies to solve 8 × 6, including the 5 plus something (5 + n) strategy. using units of 6 and 7. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 6 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We also used the break apart and distribute strategy earlier this year with arrays and division. Instead of using arrays today, let’s use number bonds."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write 48 ÷ 6 on your board and circle it."
+      },
+      {
+        "speaker": "teacher",
+        "text": "We need to break apart 48 ÷ 6 into two smaller division expressions. Why would 30 make a good breaking point?"
+      },
+      {
+        "speaker": "students",
+        "text": "30 ÷ 6 is an easy fives fact."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write and circle 30 ÷ 6 as a part on your number bond. NOTES ON"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write and circle 30 ÷ 6 as a part on the number bond.) MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We have 30 ÷ 6 as one of our parts. What division OF ENGAGEMENT: expression do we need to write for the other part? Clarify that the two smaller division expressions must be divided by"
+      },
+      {
+        "speaker": "students",
+        "text": "18 ÷ 6. 6 expressions. Emphasize the value of"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How do you know? this strategy as a way to solve sixes"
+      },
+      {
+        "speaker": "students",
+        "text": "30 plus 18 equals 48.  I know because we used 30, facts by using familiar fives, fours, and we need 18 more to get to 48. threes, or twos facts."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write and circle 18 ÷ 6 as the other part. Alternatively, challenge students to present, compare, and justify the use"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s show that work with an equation. Write of a different number bond for 48 ÷ 6. 48 ÷ 6 = (30 ÷ 6) + (18 ÷ 6). Put parentheses around the two expressions to show that we solve these two division facts first. Sample Teacher Board"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can we use the quotients of these two division expressions to find the quotient of 48 ÷ 6?"
+      },
+      {
+        "speaker": "students",
+        "text": "Add the quotient of 30 ÷ 6 and the quotient of 18 ÷ 6."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write addition sign as shown.) Add the two quotients to solve for 48 ÷ 6."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 5 + 3 = 8.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "48 ÷ 6 is…?"
+      },
+      {
+        "speaker": "students",
+        "text": "8."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the answer below your equation. This is a great problem to solve this way since adding to 30 is so easy. What is another 5 fact that results in an easy number?"
+      },
+      {
+        "speaker": "students",
+        "text": "5 times 8 is 40. 5 times 4 is 20.  The even numbers!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What fact would you like to try next?"
+      },
+      {
+        "speaker": "students",
+        "text": "Let’s do a big number divided by 8.  56 divided by 8. Repeat the process with 56 ÷ 8. using units of 6 and 7. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 6 3 3"
+      }
+    ],
+    "teacherPrompts": [
+      "We used 9 × 7 to solve the Application Problem. Say 9 × 7 in unit form.",
+      "Model 9 × 7 using a tape diagram. Then, write the fact under the diagram. (Allow students time to work.)",
+      "Recently, we used the break apart and distribute strategy to help solve larger multiplication facts. Discuss with your partner. How did we do that?",
+      "Breaking the bigger fact into 5 plus something helped us make those two smaller facts. 9 sevens can be broken into 5 sevens plus how many sevens?",
+      "Draw a dotted line separating the 5 sevens from 4 sevens on your tape diagram. Label the 5 sevens and 4 sevens on your tape diagram with multiplication facts.",
+      "Let’s use those facts to rewrite 5 sevens plus 4 sevens like this. (Write (5 × 7) + (4 × 7).) Remind your partner why this expression is the same as 9 × 7.",
+      "Now, solve. Check your work with your partner’s. (Allow students time to work.) A NOTE ON",
+      "What is 9 × 7? MULTIPLE MEANS",
+      "We also used the break apart and distribute strategy earlier this year with arrays and division. Instead of using arrays today, let’s use number bonds.",
+      "Write 48 ÷ 6 on your board and circle it.",
+      "We need to break apart 48 ÷ 6 into two smaller division expressions. Why would 30 make a good breaking point?",
+      "Write and circle 30 ÷ 6 as a part on your number bond. NOTES ON",
+      "We have 30 ÷ 6 as one of our parts. What division OF ENGAGEMENT: expression do we need to write for the other part? Clarify that the two smaller division expressions must be divided by",
+      "How do you know? this strategy as a way to solve sixes",
+      "Write and circle 18 ÷ 6 as the other part. Alternatively, challenge students to present, compare, and justify the use",
+      "Let’s show that work with an equation. Write of a different number bond for 48 ÷ 6. 48 ÷ 6 = (30 ÷ 6) + (18 ÷ 6). Put parentheses around the two expressions to show that we solve these two division facts first. Sample Teacher Board",
+      "How can we use the quotients of these two division expressions to find the quotient of 48 ÷ 6?",
+      "(Write addition sign as shown.) Add the two quotients to solve for 48 ÷ 6.",
+      "48 ÷ 6 is…?",
+      "Write the answer below your equation. This is a great problem to solve this way since adding to 30 is so easy. What is another 5 fact that results in an easy number?",
+      "What fact would you like to try next?"
+    ],
+    "debriefPrompt": "What pattern did you notice in Problems 1(a) through 1(d)? What multiplication fact is used in all of these problems? How does this fact help you solve these problems?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Label the tape diagrams. Then, fill in the blanks below to make the statements true. a. 6 × 6 = ____ b. 7 × 6 = ____ (5 × 6) = ____ (____× 6) = ____ (5 × 6) = ____ (____ × 6) = ____ 6 6 (6 × 6) = (5 + 1) × 6 (7 × 6) = (5 + 2) × 6 = (5 × 6) + (1 × 6) = (5 × 6) + (2 × 6) = 30 + ____ = 30 + ____ = ____ = ____ c. 8 × 6 = ____ d. 9 × 6 = ____ (5 × 6) = ____ (____× 6) = ____ (5 × 6) = ____ (____ × 6) = ____ 6 6 8 × 6 = (5 + ____) × 6 9 × 6 = (5 + ____) × 6 = (5 × 6) + (____ × 6) = (5 × 6) + (____ × 6) = 30 + ____ = 30 + ____ = ____ = ____ using units of 6 and 7.",
+        "equations": [
+          "6 × 6 = ____",
+          "7 × 6 = ____",
+          "5 × 6",
+          "____× 6"
+        ]
+      },
+      {
+        "number": 2,
+        "prompt": "Break apart 54 to solve 54 ÷ 6.",
+        "equations": [
+          "54 ÷ 6"
+        ]
+      },
+      {
+        "number": 3,
+        "prompt": "Break apart 49 to solve 49 ÷ 7. 54 ÷ 6 49÷ 7 30 ÷ 6 24 ÷ 6 35 ÷ 7 54 ÷ 6 = (30 ÷ 6) + (____÷ 6) 49 ÷ 7 = (35 ÷ 7) + (____÷ 7) = 5 + ____ = 5 + ____ = ____ = ____",
+        "equations": [
+          "49 ÷ 7",
+          "54 ÷ 6",
+          "49÷ 7",
+          "30 ÷ 6"
+        ]
+      },
+      {
+        "number": 4,
+        "prompt": "Robert says that he can solve 6 × 8 by thinking of it as (5 × 8) + 8. Is he right? Draw a picture to help explain your answer.",
+        "equations": [
+          "6 × 8",
+          "5 × 8"
+        ]
+      },
+      {
+        "number": 5,
+        "prompt": "Kelly solves 42 ÷ 7 by using a number bond to break apart 42 into two parts. Show what her work might look like below. using units of 6 and 7.",
+        "equations": [
+          "42 ÷ 7"
+        ]
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                         Lesson 6 Problem Set 3 3\n\n\nName                                                                                                         Date\n\n1. Label the tape diagrams. Then, fill in the blanks below to make the statements true.\n\n   a. 6 × 6 = _____                                                                     b. 7 × 6 = _____\n\n       (5 × 6) = _____                              (_____× 6) = ____                          (5 × 6) = _____                          (____ × 6) = ____\n\n\n          6                                                                                        6\n\n\n              (6 × 6) = (5 + 1) × 6                                                                      (7 × 6) = (5 + 2) × 6\n                      = (5 × 6) + (1 × 6)                                                                            = (5 × 6) + (2 × 6)\n                      = 30             + ______                                                                      =      30     + ______\n                      = ______                                                                                       = ______\n\n\n   c. 8 × 6 = _____                                                                     d. 9 × 6 = _____\n\n       (5 × 6) = _____                            (_____× 6) = ____                            (5 × 6) = _____                         (____ × 6) = ____\n\n\n         6                                                                                        6\n\n\n              8 × 6 = (5 + _____) × 6                                                                     9 × 6 = (5 + _____) × 6\n                   = (5 × 6) + (____ × 6)                                                                          = (5 × 6) + (____ × 6)\n                   = 30           + ______                                                                         = 30            + ______\n                   = ______                                                                                        = ______\n\n\n                         Lesson 6:                 Use the distributive property as a strategy to multiply and divide                                  79\n                                                   using units of 6 and 7.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                        Lesson 6 Problem Set 3 3\n\n\n2. Break apart 54 to solve 54 ÷ 6.                                             3. Break apart 49 to solve 49 ÷ 7.\n\n\n              54 ÷ 6                                                                                      49÷ 7\n\n    30 ÷ 6                 24 ÷ 6                                                    35 ÷ 7\n\n    54 ÷ 6 = (30 ÷ 6) + (____________÷ 6)                                              49 ÷ 7 = (35 ÷ 7) + (____________÷ 7)\n\n           = 5 + ____________                                                                      = 5 + ____________\n\n           = ___________                                                                           = ___________\n\n\n4. Robert says that he can solve 6 × 8 by thinking of it as (5 × 8) + 8. Is he right? Draw a picture to help\n   explain your answer.\n\n\n5. Kelly solves 42 ÷ 7 by using a number bond to break apart 42 into two parts. Show what her work might\n   look like below.\n\n\n                        Lesson 6:                Use the distributive property as a strategy to multiply and divide               80\n                                                 using units of 6 and 7.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015",
+    "answerKeyProblemSetText": "1.    a. 36; 30; 1, 6; 6; 36                                                     2.        24; 4; 9\n      b. 42; 30; 2, 12; 12; 42                                                   3.        14 ÷ 7; 14; 2; 7\n      c. 48; 30; 3, 18; 3; 3; 18; 48                                             4.        Yes; explanations will vary.\n      d. 54; 30; 4, 24; 4; 4; 24; 54                                             5.        Answers will vary.",
+    "answerKeyText": "A STORY OF UNITS                                                                                          Lesson 6 Answer Key 3 3\n\n\nLesson 6\nPattern Sheet\n               6                                        12                                            18                             24\n              30                                        36                                            42                             48\n              54                                        60                                            30                             36\n              30                                        42                                            30                             48\n              30                                        54                                            30                             60\n              36                                        30                                            36                             42\n              36                                        48                                            36                             54\n              36                                        42                                            36                             42\n              48                                        42                                            54                             42\n              48                                        36                                            48                             42\n              48                                        54                                            54                             36\n              54                                        42                                            54                             48\n              54                                        48                                            36                             54\n              42                                        54                                            36                             48\n              54                                        42                                            36                             48\n\n\nProblem Set\n\n1.    a. 36; 30; 1, 6; 6; 36                                                     2.        24; 4; 9\n      b. 42; 30; 2, 12; 12; 42                                                   3.        14 ÷ 7; 14; 2; 7\n      c. 48; 30; 3, 18; 3; 3; 18; 48                                             4.        Yes; explanations will vary.\n      d. 54; 30; 4, 24; 4; 4; 24; 54                                             5.        Answers will vary.\n\n\nExit Ticket\n1.    8; answers will vary.\n2.    Both are correct; explanations will vary.\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10                   288\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                          Lesson 6 Answer Key 3 3\n\n\nHomework\n1.    a. Tape diagrams accurately labeled; 42; 35; 1, 7; 7, 42\n      b. Tape diagrams accurately labeled; 49; 35; 2, 14; 14, 49\n      c. Tape diagrams accurately labeled; 56; 35; 3, 21; 3; 3; 21; 56\n      d. Tape diagrams accurately labeled; 63; 35; 4, 28; 4; 4; 28; 63\n2.    24; 24; 4; 9\n3.    21; 35, 7; 21, 7; 3; 8\n4.    7; explanations will vary.\n5.    Yes; explanations will vary.\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              289\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "tape-diagram",
+      "number-bond",
+      "measurement-scale",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "T: We also used the break apart and distribute strategy earlier this year with arrays and division.",
+        "Instead of using arrays today, let’s use number bonds."
+      ],
+      "tape-diagram": [
+        "T: Model 9 × 7 using a tape diagram.",
+        "T: Draw a dotted line separating the 5 sevens from 4 sevens on your tape diagram. Label the 5 sevens",
+        "and 4 sevens on your tape diagram with multiplication facts.",
+        "1. Label the tape diagrams. Then, fill in the blanks below to make the statements true."
+      ],
+      "number-bond": [
+        "T: Recently, we used the break apart and",
+        "Part 2: Use addition number bonds to apply the distributive property to divide using units of 6 and 7.",
+        "T: We also used the break apart and distribute strategy earlier this year with arrays and division.",
+        "Instead of using arrays today, let’s use number bonds.",
+        "T: We need to break apart 48 ÷ 6 into two smaller division expressions. Why would 30 make a good",
+        "T: Write and circle 30 ÷ 6 as a part on your number bond. NOTES ON",
+        "S: (Write and circle 30 ÷ 6 as a part on the number bond.) MULTIPLE MEANS",
+        "T: Let’s show that work with an equation. Write of a different number bond for 48 ÷ 6."
+      ],
+      "measurement-scale": [
+        "T: Model 9 × 7 using a tape diagram.",
+        "Then, write the fact under the diagram.",
+        "T: Draw a dotted line separating the 5 sevens from 4 sevens on your tape diagram. Label the 5 sevens",
+        "and 4 sevens on your tape diagram with multiplication facts.",
+        "1. Label the tape diagrams. Then, fill in the blanks below to make the statements true."
+      ],
+      "money-model": [
+        "T: Recently, we used the break apart and"
+      ],
+      "picture-or-drawing": [
+        "T: Model 9 × 7 using a tape diagram.",
+        "Then, write the fact under the diagram.",
+        "T: Draw a dotted line separating the 5 sevens from 4 sevens on your tape diagram. Label the 5 sevens",
+        "and 4 sevens on your tape diagram with multiplication facts.",
+        "S: (Draw line, label 5 × 7 and 4 × 7.)",
+        "1. Label the tape diagrams. Then, fill in the blanks below to make the statements true.",
+        "4. Robert says that he can solve 6 × 8 by thinking of it as (5 × 8) + 8. Is he right? Draw a picture to help"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "We used 9 × 7 to solve the Application Problem. Say 9 × 7 in unit form."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Model 9 × 7 using a tape diagram. Then, write the fact under the diagram. (Allow students time to work.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Recently, we used the break apart and distribute strategy to help solve larger multiplication facts. Discuss with your partner. How did we do that?"
+      },
+      {
+        "speaker": "students",
+        "text": "We broke apart a bigger fact into two smaller facts.  That made it easier to solve because we just added the products of the two smaller facts."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a dotted line separating the 5 sevens from 4 sevens on your tape diagram. Label the 5 sevens and 4 sevens on your tape diagram with multiplication facts."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw line, label 5 × 7 and 4 × 7.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use those facts to rewrite 5 sevens plus 4 sevens like this. (Write (5 × 7) + (4 × 7).) Remind your partner why this expression is the same as 9 × 7."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, solve. Check your work with your partner’s. (Allow students time to work.) A NOTE ON"
+      },
+      {
+        "speaker": "students",
+        "text": "63. OF ENGAGEMENT: Continue with the following suggested sequence: Alternatively, challenge students working above grade level to use,  8×6 compare, and present three different  8×7 multiplication strategies to solve 8 × 6, including the 5 plus something (5 + n) strategy. using units of 6 and 7. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 6 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write 48 ÷ 6 on your board and circle it."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write and circle 30 ÷ 6 as a part on your number bond. NOTES ON"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write and circle 30 ÷ 6 as a part on the number bond.) MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We have 30 ÷ 6 as one of our parts. What division OF ENGAGEMENT: expression do we need to write for the other part? Clarify that the two smaller division expressions must be divided by"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How do you know? this strategy as a way to solve sixes"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write and circle 18 ÷ 6 as the other part. Alternatively, challenge students to present, compare, and justify the use"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s show that work with an equation. Write of a different number bond for 48 ÷ 6. 48 ÷ 6 = (30 ÷ 6) + (18 ÷ 6). Put parentheses around the two expressions to show that we solve these two division facts first. Sample Teacher Board"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write addition sign as shown.) Add the two quotients to solve for 48 ÷ 6."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 5 + 3 = 8.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the answer below your equation. This is a great problem to solve this way since adding to 30 is so easy. What is another 5 fact that results in an easy number?"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 73 (debrief) ---\nA STORY OF UNITS                                                                                                                Lesson 6 3 3\n\n\nLesson 6\nObjective: Use the distributive property as a strategy to multiply and\ndivide using units of 6 and 7.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (15 minutes)\n Application Problem               (5 minutes)\n Concept Development               (30 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (15 minutes)\n\n Multiply By 6 3.OA.7                                             (8 minutes)\n Group Counting 3.OA.1                                            (4 minutes)                                              NOTES ON\n                                                                                                                            MULTIPLE MEANS\n Decompose Multiples of 6 and 7 3.OA.5                            (3 minutes)\n                                                                                                                            OF ENGAGEMENT:\n                                                                                                                 Multiply By 6 is carefully scaffolded to\nMultiply By 6 (8 minutes)                                                                                        support student success. However,\nMaterials: (S) Multiply by 6 (6–10) (Pattern Sheet)                                                              consider adjusting the activity to suit\n                                                                                                                 students’ diverse needs. For example,\nNote: This activity builds fluency with multiplication facts using                                               focus on one skill, such as skip-\nunits of six. It supports students knowing from memory all                                                       counting down to solve. Or, have\nproducts of two one-digit numbers. See Lesson 5 for the                                                          students choose and solve the three\n                                                                                                                 hardest facts using three different\ndirections for administering a Multiply By Pattern Sheet.\n                                                                                                                 strategies.\n    T:   (Write 7 × 6 = ____.) Let’s skip-count up by sixes.\n         I’ll raise a finger for each six. (Count with fingers to 7\n         as students count.)\n    S:   6, 12, 18, 24, 30, 36, 42.\n    T:   Let’s skip-count by sixes starting at 30. Why is 30 a good place to start?\n    S:   It’s a fact we already know, so we can use it to figure out a fact we don’t know.\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 60 with 10 fingers, 1 for each\n         six. (Count down with your fingers as students say numbers.)\n    S:   60 (10 fingers), 54 (9 fingers), 48 (8 fingers), 42 (7 fingers).\nContinue with the following suggested sequence: 9 × 6, 6 × 6, and 8 × 6.\n    T:   (Distribute Multiply by 6 Pattern Sheet.) Let’s practice multiplying by 6. Be sure to work left to right\n         across the page.\n\n\n                         Lesson 6:                Use the distributive property as a strategy to multiply and divide                                        72\n                                                  using units of 6 and 7.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 74 (concept-development) ---\nA STORY OF UNITS                                                                                                               Lesson 6 3 3\n\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by sevens prepares\nstudents for multiplication using units of seven in this lesson. Group counting by eights and nines anticipates\nmultiplication using those units later in the module. Direct students to count forward and backward,\noccasionally changing the direction of the count.\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\nDecompose Multiples of 6 and 7 (3 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity prepares students to use the distributive property with number bonds in today’s lesson.\n    T:   (Project a number bond with a whole of 48 and 12 as a part.) On your personal white board, fill in\n         the unknown part in the number bond.\nContinue with the following suggested sequence: a whole of 54 and 24 as a part, a whole of 49 and 14 as a\npart, and a whole of 63 and 21 as a part.\n\n\nApplication Problem (5 minutes)\n\nMabel cuts 9 pieces of ribbon for an art project. Each piece of ribbon is 7 centimeters long. What is the total\nlength of the pieces of ribbon that Mabel cuts?\n\n\nNote: This problem reviews multiplication using units of seven. It is the same problem that is used in the first\nexample in the Concept Development. Here it is given a context, while in the Concept Development it is not\nbecause the focus shifts to using the distributive property.\n\n\n                        Lesson 6:                Use the distributive property as a strategy to multiply and divide                          73\n                                                 using units of 6 and 7.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 75 (concept-development) ---\nA STORY OF UNITS                                                                                                               Lesson 6 3 3\n\n\nConcept Development (30 minutes)\n\nMaterials: (S) Personal white board\n\nPart 1: Apply the distributive property to multiply using units of 6 and 7.\n    T:   We used 9 × 7 to solve the Application Problem. Say 9 × 7 in unit form.\n    S:   9 sevens.\n    T:   Model 9 × 7 using a tape diagram.\n         Then, write the fact under the diagram.\n         (Allow students time to work.)\n    T:   Recently, we used the break apart and\n         distribute strategy to help solve larger\n         multiplication facts. Discuss with your\n         partner. How did we do that?\n    S:   We broke apart a bigger fact into two smaller\n         facts.  That made it easier to solve because\n         we just added the products of the two smaller\n         facts.\n    T:   Breaking the bigger fact into 5 plus something\n         helped us make those two smaller facts.\n         9 sevens can be broken into 5 sevens plus how\n         many sevens?\n    S:   5 sevens plus 4 sevens.\n    T:   Draw a dotted line separating the 5 sevens from 4 sevens on your tape diagram. Label the 5 sevens\n         and 4 sevens on your tape diagram with multiplication facts.\n    S:   (Draw line, label 5 × 7 and 4 × 7.)\n    T:   Let’s use those facts to rewrite 5 sevens plus 4 sevens like this. (Write (5 × 7) + (4 × 7).)\n         Remind your partner why this expression is the same as 9 × 7.\n    S:   It’s the same because the 5 and the 4 together make 9.  And the 7 just got distributed to the\n         2 parts.\n    T:   Now, solve. Check your work with your partner’s.\n         (Allow students time to work.)                                              A NOTE ON\n    T:   What is 9 × 7?                                                              MULTIPLE MEANS\n    S:   63.                                                                         OF ENGAGEMENT:\nContinue with the following suggested sequence:                                                                 Alternatively, challenge students\n                                                                                                                working above grade level to use,\n        8×6                                                                                                    compare, and present three different\n        8×7                                                                                                    multiplication strategies to solve 8 × 6,\n                                                                                                                including the 5 plus something (5 + n)\n                                                                                                                strategy.\n\n\n                        Lesson 6:                Use the distributive property as a strategy to multiply and divide                                         74\n                                                 using units of 6 and 7.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 76 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                               Lesson 6 3 3\n\n\nPart 2: Use addition number bonds to apply the distributive property to divide using units of 6 and 7.\n    T:   We also used the break apart and distribute strategy earlier this year with arrays and division.\n         Instead of using arrays today, let’s use number bonds.\n    T:   Write 48 ÷ 6 on your board and circle it.\n    T:   We need to break apart 48 ÷ 6 into two smaller division expressions. Why would 30 make a good\n         breaking point?\n    S:   30 ÷ 6 is an easy fives fact.\n    T:   Write and circle 30 ÷ 6 as a part on your number bond.                    NOTES ON\n    S:   (Write and circle 30 ÷ 6 as a part on the number bond.)                   MULTIPLE MEANS\n    T:   We have 30 ÷ 6 as one of our parts. What division                         OF ENGAGEMENT:\n         expression do we need to write for the other part?                                                    Clarify that the two smaller division\n                                                                                                               expressions must be divided by\n    S:   18 ÷ 6.\n                                                                                                               6 expressions. Emphasize the value of\n    T:   How do you know?                                                                                      this strategy as a way to solve sixes\n    S:   30 plus 18 equals 48.  I know because we used 30,                                                    facts by using familiar fives, fours,\n         and we need 18 more to get to 48.                                                                     threes, or twos facts.\n\n    T:   Write and circle 18 ÷ 6 as the other part.                                                            Alternatively, challenge students to\n                                                                                                               present, compare, and justify the use\n    T:   Let’s show that work with an equation. Write                                                          of a different number bond for 48 ÷ 6.\n         48 ÷ 6 = (30 ÷ 6) + (18 ÷ 6). Put parentheses around\n         the two expressions to show that we solve these two\n         division facts first.\n                                                                                                                        Sample Teacher Board\n    T:   How can we use the quotients of these two division\n         expressions to find the quotient of 48 ÷ 6?\n    S:   Add the quotient of 30 ÷ 6 and the quotient of 18 ÷ 6.\n    T:   (Write addition sign as shown.) Add the two quotients\n         to solve for 48 ÷ 6.\n    S:   (Write 5 + 3 = 8.)\n    T:   48 ÷ 6 is…?\n    S:   8.\n    T:   Write the answer below your equation. This is a great\n         problem to solve this way since adding to 30 is so easy.\n         What is another 5 fact that results in an easy number?\n    S:   5 times 8 is 40. 5 times 4 is 20.  The even numbers!\n    T:   What fact would you like to try next?\n    S:   Let’s do a big number divided by 8.  56 divided by 8.\nRepeat the process with 56 ÷ 8.\n\n\n                       Lesson 6:                 Use the distributive property as a strategy to multiply and divide                                     75\n                                                 using units of 6 and 7.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 77 (debrief) ---\nA STORY OF UNITS                                                                                                                   Lesson 6 3 3\n\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students                                            6                               6\n\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Use the distributive property as a                                          6                                   6\nstrategy to multiply and divide using units of 6 and 7.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        What pattern did you notice in Problems 1(a)\n         through 1(d)? What multiplication fact is used in\n         all of these problems? How does this fact help\n         you solve these problems?\n        What division fact did you use to complete the\n         number bond in Problem 3? Why?\n        Show a partner your picture for Problem 4.\n         How does your picture show the break apart and\n         distribute strategy?\n        What number bond did you use to solve Problem\n         5? Explain your choice. Explain why Kelly could\n         not break apart 42 ÷ 7 into 30 ÷ 7 and 12 ÷ 7.\n        How does using the break apart and distribute\n         strategy help you multiply and divide using known\n         facts to find the answers to larger, unknown\n         facts?\n\n\n                        Lesson 6:                Use the distributive property as a strategy to multiply and divide                              76\n                                                 using units of 6 and 7.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 78 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 6 3 3\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that were presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 6:                Use the distributive property as a strategy to multiply and divide                          77\n                                                 using units of 6 and 7.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 79 (template) ---\nA STORY OF UNITS                                                                                    Lesson 6 Pattern Sheet 3 3\n\n            Multiply.\n\n\nmultiply by 6 (6–10)\n\n\n                        Lesson 6:                Use the distributive property as a strategy to multiply and divide               78\n                                                 using units of 6 and 7.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 80 (problem-set) ---\nA STORY OF UNITS                                                                                         Lesson 6 Problem Set 3 3\n\n\nName                                                                                                         Date\n\n1. Label the tape diagrams. Then, fill in the blanks below to make the statements true.\n\n   a. 6 × 6 = _____                                                                     b. 7 × 6 = _____\n\n       (5 × 6) = _____                              (_____× 6) = ____                          (5 × 6) = _____                          (____ × 6) = ____\n\n\n          6                                                                                        6\n\n\n              (6 × 6) = (5 + 1) × 6                                                                      (7 × 6) = (5 + 2) × 6\n                      = (5 × 6) + (1 × 6)                                                                            = (5 × 6) + (2 × 6)\n                      = 30             + ______                                                                      =      30     + ______\n                      = ______                                                                                       = ______\n\n\n   c. 8 × 6 = _____                                                                     d. 9 × 6 = _____\n\n       (5 × 6) = _____                            (_____× 6) = ____                            (5 × 6) = _____                         (____ × 6) = ____\n\n\n         6                                                                                        6\n\n\n              8 × 6 = (5 + _____) × 6                                                                     9 × 6 = (5 + _____) × 6\n                   = (5 × 6) + (____ × 6)                                                                          = (5 × 6) + (____ × 6)\n                   = 30           + ______                                                                         = 30            + ______\n                   = ______                                                                                        = ______\n\n\n                         Lesson 6:                 Use the distributive property as a strategy to multiply and divide                                  79\n                                                   using units of 6 and 7.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 81 (problem-set) ---\nA STORY OF UNITS                                                                                        Lesson 6 Problem Set 3 3\n\n\n2. Break apart 54 to solve 54 ÷ 6.                                             3. Break apart 49 to solve 49 ÷ 7.\n\n\n              54 ÷ 6                                                                                      49÷ 7\n\n    30 ÷ 6                 24 ÷ 6                                                    35 ÷ 7\n\n    54 ÷ 6 = (30 ÷ 6) + (____________÷ 6)                                              49 ÷ 7 = (35 ÷ 7) + (____________÷ 7)\n\n           = 5 + ____________                                                                      = 5 + ____________\n\n           = ___________                                                                           = ___________\n\n\n4. Robert says that he can solve 6 × 8 by thinking of it as (5 × 8) + 8. Is he right? Draw a picture to help\n   explain your answer.\n\n\n5. Kelly solves 42 ÷ 7 by using a number bond to break apart 42 into two parts. Show what her work might\n   look like below.\n\n\n                        Lesson 6:                Use the distributive property as a strategy to multiply and divide               80\n                                                 using units of 6 and 7.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 82 (exit-ticket) ---\nA STORY OF UNITS                                                                                             Lesson 6 Exit Ticket 3 3\n\n\nName                                                                                                        Date\n\n1. A parking lot has space for 48 cars. Six cars can park in 1 row. Break apart 48 to find how many rows\n   there are in the parking lot.\n\n\n2. Malia solves 6 × 7 using (5 × 7) + 7. Leonidas solves 6 × 7 using (6 × 5) + (6 × 2). Who is correct? Draw a\n   picture to help explain your answer.\n\n\n                        Lesson 6:                Use the distributive property as a strategy to multiply and divide                    81\n                                                 using units of 6 and 7.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 83 (homework) ---\nA STORY OF UNITS                                                                                             Lesson 6 Homework 3 3\n\n\nName                                                                                                          Date\n\n1. Label the tape diagrams. Then, fill in the blanks below to make the statements true.\n\n   a. 6 × 7= _____                                                                       b. 7 × 7 = _____\n\n       (5 × 7) = ____                              (____ × 7) = ____                            (5 × 7) = ____                            (____ × 7) = ____\n\n\n         7                                                                                         7\n\n\n              (6 × 7) = (5 + 1) × 7                                                                        (7 × 7) = (5 + 2) × 7\n                      = (5 × 7) + (1 × 7)                                                                              = (5 × 7) + (2 × 7)\n                      =      35        + ______                                                                        =      35       + _____\n                      = ______                                                                                         = ______\n\n\n   c. 8 × 7 = _____                                                                      d. 9 × 7 = _____\n\n       (5 × 7) = ____                              (____ × 7) = ____                            (5 × 7) = ____                           (____ × 7) = ____\n\n\n         7                                                                                         7\n\n\n             8 × 7 = (5 + _____) × 7                                                                   9 × 7 = (5 + _____) × 7\n                  = (5 × 7) + (____ × 7)                                                                         = (5 × 7) + (____ × 7)\n                  =     35       + ______                                                                        =     35           + ______\n                  = ______                                                                                       = ______\n\n\n                          Lesson 6:                 Use the distributive property as a strategy to multiply and divide                                       82\n                                                    using units of 6 and 7.\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 84 (homework) ---\nA STORY OF UNITS                                                                                           Lesson 6 Homework 3 3\n\n\n2. Break apart 54 to solve 54 ÷ 6.                                              3. Break apart 56 to solve 56 ÷ 7\n\n\n           54 ÷ 6                                                                                               56÷ 7\n\n 30 ÷ 6                            ÷6                                                        35 ÷ 7                               ÷7\n\n    54 ÷ 6 = (30 ÷ 6) + (____________÷ 6)                                               56 ÷ 7 = (_____ ÷ _____) + (_____ ÷ _____)\n\n           = 5 + ____________                                                                      = 5 + ________\n\n           = ___________                                                                           = __________\n\n\n4. Forty-two third grade students sit in 6 equal rows in the auditorium. How many students sit in each row?\n   Show your thinking.\n\n\n5. Ronaldo solves 7 × 6 by thinking of it as (5 × 7) + 7. Is he correct? Explain Ronaldo’s strategy.\n\n\n                        Lesson 6:                Use the distributive property as a strategy to multiply and divide                    83\n                                                 using units of 6 and 7.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015",
+    "problemSetPages": [
+      {
+        "pdfPage": 80,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                         Lesson 6 Problem Set 3 3\n\n\nName                                                                                                         Date\n\n1. Label the tape diagrams. Then, fill in the blanks below to make the statements true.\n\n   a. 6 × 6 = _____                                                                     b. 7 × 6 = _____\n\n       (5 × 6) = _____                              (_____× 6) = ____                          (5 × 6) = _____                          (____ × 6) = ____\n\n\n          6                                                                                        6\n\n\n              (6 × 6) = (5 + 1) × 6                                                                      (7 × 6) = (5 + 2) × 6\n                      = (5 × 6) + (1 × 6)                                                                            = (5 × 6) + (2 × 6)\n                      = 30             + ______                                                                      =      30     + ______\n                      = ______                                                                                       = ______\n\n\n   c. 8 × 6 = _____                                                                     d. 9 × 6 = _____\n\n       (5 × 6) = _____                            (_____× 6) = ____                            (5 × 6) = _____                         (____ × 6) = ____\n\n\n         6                                                                                        6\n\n\n              8 × 6 = (5 + _____) × 6                                                                     9 × 6 = (5 + _____) × 6\n                   = (5 × 6) + (____ × 6)                                                                          = (5 × 6) + (____ × 6)\n                   = 30           + ______                                                                         = 30            + ______\n                   = ______                                                                                        = ______\n\n\n                         Lesson 6:                 Use the distributive property as a strategy to multiply and divide                                  79\n                                                   using units of 6 and 7.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 81,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                        Lesson 6 Problem Set 3 3\n\n\n2. Break apart 54 to solve 54 ÷ 6.                                             3. Break apart 49 to solve 49 ÷ 7.\n\n\n              54 ÷ 6                                                                                      49÷ 7\n\n    30 ÷ 6                 24 ÷ 6                                                    35 ÷ 7\n\n    54 ÷ 6 = (30 ÷ 6) + (____________÷ 6)                                              49 ÷ 7 = (35 ÷ 7) + (____________÷ 7)\n\n           = 5 + ____________                                                                      = 5 + ____________\n\n           = ___________                                                                           = ___________\n\n\n4. Robert says that he can solve 6 × 8 by thinking of it as (5 × 8) + 8. Is he right? Draw a picture to help\n   explain your answer.\n\n\n5. Kelly solves 42 ÷ 7 by using a number bond to break apart 42 into two parts. Show what her work might\n   look like below.\n\n\n                        Lesson 6:                Use the distributive property as a strategy to multiply and divide               80\n                                                 using units of 6 and 7.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 289,
+        "text": "A STORY OF UNITS                                                                                          Lesson 6 Answer Key 3 3\n\n\nLesson 6\nPattern Sheet\n               6                                        12                                            18                             24\n              30                                        36                                            42                             48\n              54                                        60                                            30                             36\n              30                                        42                                            30                             48\n              30                                        54                                            30                             60\n              36                                        30                                            36                             42\n              36                                        48                                            36                             54\n              36                                        42                                            36                             42\n              48                                        42                                            54                             42\n              48                                        36                                            48                             42\n              48                                        54                                            54                             36\n              54                                        42                                            54                             48\n              54                                        48                                            36                             54\n              42                                        54                                            36                             48\n              54                                        42                                            36                             48\n\n\nProblem Set\n\n1.    a. 36; 30; 1, 6; 6; 36                                                     2.        24; 4; 9\n      b. 42; 30; 2, 12; 12; 42                                                   3.        14 ÷ 7; 14; 2; 7\n      c. 48; 30; 3, 18; 3; 3; 18; 48                                             4.        Yes; explanations will vary.\n      d. 54; 30; 4, 24; 4; 4; 24; 54                                             5.        Answers will vary.\n\n\nExit Ticket\n1.    8; answers will vary.\n2.    Both are correct; explanations will vary.\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10                   288\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 290,
+        "text": "A STORY OF UNITS                                                                                          Lesson 6 Answer Key 3 3\n\n\nHomework\n1.    a. Tape diagrams accurately labeled; 42; 35; 1, 7; 7, 42\n      b. Tape diagrams accurately labeled; 49; 35; 2, 14; 14, 49\n      c. Tape diagrams accurately labeled; 56; 35; 3, 21; 3; 3; 21; 56\n      d. Tape diagrams accurately labeled; 63; 35; 4, 28; 4; 4; 28; 63\n2.    24; 24; 4; 9\n3.    21; 35, 7; 21, 7; 3; 8\n4.    7; explanations will vary.\n5.    Yes; explanations will vary.\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              289\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015"
+      }
+    ]
+  }
+}

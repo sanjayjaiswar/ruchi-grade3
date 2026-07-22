@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m4-l1",
+  "moduleId": "m4",
+  "lessonNumber": 1,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+    "teacherEditionBytes": 10725683,
+    "lessonPdfPages": {
+      "start": 11,
+      "end": 20
+    },
+    "problemSetPdfPages": [
+      16,
+      17
+    ],
+    "exitTicketPdfPages": [
+      18
+    ],
+    "homeworkPdfPages": [
+      19,
+      20
+    ],
+    "answerKeyPdfPages": [
+      215
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m4-student/workbook-page-002.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m4-teacher/page-016.png",
+      "/source-pages/m4-teacher/page-017.png",
+      "/source-pages/m4-teacher/page-215.png"
+    ]
+  },
+  "objective": "Understand area as an attribute of plane figures.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "connect to\n        today’s lesson?\n\nExit Ticket (3 minutes)\nAfter the",
+    "conceptDevelopmentText": "NOTES ON\nMaterials: (S) Pattern blocks, Problem Set                                                                                 MULTIPLE MEANS\n                                                                                                                           OF ACTION AND\nPart 1: Use pattern blocks to understand area.                                                                             EXPRESSION:\n    T:   Look at Problem 1 on your Problem Set. Discuss with a             Manipulating pattern blocks may be a\n         partner whether you think Shape A or B takes up more              challenge for some learners. Try the\n         space. Be prepared to explain your answer. (After                 following tips:\n         students discuss, facilitate a whole class discussion.)            Partner students so they can work\n                                                                              together to cover the shapes.\n    S:   Shape A because it’s longer than Shape B.  Shape B\n                                                                            Encourage students to hold the\n         because it’s taller than Shape A.                                    pattern blocks in place with one\n    T:   Use triangle pattern blocks to cover Shapes A and B.                 hand, while they place the remaining\n         Be sure the triangles do not have gaps between them,                 blocks.\n         do not overlap, and do not go outside the sides of the              Instead of using pattern blocks,\n         shapes. (Allow time for students to work.) What did                  provide paper shapes that can be\n                                                                              glued, so they will not move around\n         you notice about the number of triangles it takes to                 unnecessarily.\n         cover Shapes A and B?                                              Offer the computer as a resource to\n    S:   It takes 6 triangles to cover each shape!                            create and move shapes.\n    T:   Answer Problem 1 on your Problem Set. (Allow time\n         for students to write answers.)\n         Do all the triangles you used to cover Shapes A and B take up the same amount of space?\n    S:   Yes because they’re all the same size.\n    T:   What does that mean about the amount of space taken up by Shapes A and B?\n    S:   They are the same.  It took 6 triangles to cover each shape, which means the shapes take up the\n         same amount of space.  The amount of space that Shape A takes up is equal to the amount of\n         space taken up by Shape B.\n    T:   The amount of flat space a shape takes up is called its area. Because Shapes A and B take up the\n         same amount of space, their areas are equal.\nRepeat the process of using pattern blocks to cover Shapes A and B with the rhombus and trapezoid pattern\nblocks. Students record their work on Problems 2 and 3 in the Problem Set.\n    T:   What is the relationship between the size of the pattern blocks and the number of pattern blocks it\n         requires to cover Shapes A and B?\n    S:   The bigger the pattern block, the smaller the number of pattern blocks it requires to cover these\n         shapes.  The bigger pattern blocks, like the trapezoid, cover more area than the triangles. That\n         means it takes fewer trapezoids to cover the same area as the triangles.\n    T:   Answer Problem 4 on your Problem Set.\n\n\n                        Lesson 1:                  Understand area as an attribute of plane figures.                                         12\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 1 3 4\n\n\nPart 2: Measure area using square units.\n    T:   Use square pattern blocks to cover the rectangle in                          NOTES ON\n         Problem 5. Be sure the squares do not have gaps                              MULTIPLE MEANS\n         between them, do not overlap, and do not go outside                          OF ENGAGEMENT:\n         the sides of the rectangle. (Allow students time to                Students working above grade level\n         work.) How many squares did you need to cover the                  can be encouraged to find other square\n         rectangle?                                                         units in the classroom that they can\n    S:   6.                                                                 either use to make rectangles or that\n                                                                            already form rectangles. Such items\n    T:   Answer Problem 5 on your Problem Set. (Allow time\n                                                                            might include sticky notes, desktops,\n         for students to write answers.) The area of the\n                                                                            floor tiles, and linking cubes. Students\n         rectangle is 6 square units. Why do you think we call              can create a poster to share with the\n         them square units?                                                 class that shows the areas of the\n    S:   Because they are squares!  The units used to                      rectangles made with these other\n         measure are squares, so they are square units!                     square units.\n    T:   Yes! The units used to measure the area of the\n         rectangle are squares.\n    T:   Use trapezoid pattern blocks to cover the rectangle in Problem 5. Be sure the trapezoids do not\n         have gaps between them, do not overlap, and do not go outside the sides of the rectangle. (Allow\n         students time to work.) What did you notice?\n    S:   It’s not possible!  The trapezoids cannot cover this shape without having gaps, overlapping, or\n         going outside the lines.\n    T:   Use this information to help you answer Problem 6 on your Problem Set. (Allow time for students to\n         write answers.) I’m going to say an area in square units, and you are going to make a rectangle with\n         your pattern blocks having that area. Which pattern blocks will you use?\n    S:   The squares because the units for area that you are telling us are square units!\n    T:   Here we go! Four square units.\n    S:   (Make rectangles.)\nContinue with the following possible sequence: 12 square units, 9 square units, and 8 square units. Invite\nstudents to compare their rectangles to a partner’s rectangles. How are they the same? How are they\ndifferent? If time allows, students can work with a partner to create rectangles that have the same areas, but\nlook different.",
+    "fluencyPracticeText": " Group Counting 3.OA.1                                            (4 minutes)\n Identify the Shape 2.G.1                                         (3 minutes)\n Find the Common Products 3.OA.7                                  (8 minutes)\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally changing the direction of the count.\n        Threes to 30\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\nIdentify the Shape (3 minutes)\nNote: This fluency activity reviews properties and vocabulary that are used during today’s Concept\nDevelopment.\n    T:   (Project a triangle.) How many sides does this shape have?\n    S:   3.\n    T:   Name the shape.\n    S:   Triangle.\nContinue with the following possible sequence: quadrilateral (trapezoid), quadrilateral (rhombus),\nquadrilateral (square), and quadrilateral (rectangle).\n\n\n                        Lesson 1:                  Understand area as an attribute of plane figures.                                         10\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 1 3 4\n\n\nFind the Common Products (8 minutes)\nMaterials: (S) Blank paper\n\nNote: This fluency activity reviews multiplication patterns from\nModule 3.\n    T:   Fold your paper in half vertically. Unfold your paper.\n         On the left half, count by twos to 20 down the side of your\n         paper. On the right half, count by fours to 40 down the\n         side of your paper. Draw lines to match products that\n         appear in both columns.\n    S:   (Match 4, 8, 12, 16, and 20.)\n    T:   (Write       × 2 = 4,       × 2 = 8, etc., next to each\n         corresponding product on the left half of the paper.)\n         Write the complete equations next to their products.\n    S:   (Write equations and complete unknowns.)\n    T:   (Write 4 =       × 4, 8 =       × 4, etc., next to each\n         corresponding product on the right half of the paper.)\n         Write the complete equations next to their products.\n    S:   (Write equations.)\n    T:   (Write 2 × 2 =        × 4.) Say the equation, including all\n         factors.\n    S:   2 × 2 = 1 × 4.\n    T:   (Write 2 × 2 = 1 × 4.) Write the remaining equal facts as equations.\n    S:   (Write 4 × 2 = 2 × 4, 6 × 2 = 3 × 4, 8 × 2 = 4 × 4, and 10 × 2 = 5 × 4.)\n    T:   What patterns do you notice in your equations?\n    S:   Each multiple of 4 is also a multiple of 2.",
+    "problemSetGuidanceText": "",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Look at Problem 1 on your Problem Set. Discuss with a Manipulating pattern blocks may be a partner whether you think Shape A or B takes up more challenge for some learners. Try the space. Be prepared to explain your answer. (After following tips: students discuss, facilitate a whole class discussion.)  Partner students so they can work together to cover the shapes."
+      },
+      {
+        "speaker": "students",
+        "text": "Shape A because it’s longer than Shape B.  Shape B  Encourage students to hold the because it’s taller than Shape A. pattern blocks in place with one"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use triangle pattern blocks to cover Shapes A and B. hand, while they place the remaining Be sure the triangles do not have gaps between them, blocks. do not overlap, and do not go outside the sides of the  Instead of using pattern blocks, shapes. (Allow time for students to work.) What did provide paper shapes that can be glued, so they will not move around you notice about the number of triangles it takes to unnecessarily. cover Shapes A and B?  Offer the computer as a resource to"
+      },
+      {
+        "speaker": "students",
+        "text": "It takes 6 triangles to cover each shape! create and move shapes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Answer Problem 1 on your Problem Set. (Allow time for students to write answers.) Do all the triangles you used to cover Shapes A and B take up the same amount of space?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes because they’re all the same size."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What does that mean about the amount of space taken up by Shapes A and B?"
+      },
+      {
+        "speaker": "students",
+        "text": "They are the same.  It took 6 triangles to cover each shape, which means the shapes take up the same amount of space.  The amount of space that Shape A takes up is equal to the amount of space taken up by Shape B."
+      },
+      {
+        "speaker": "teacher",
+        "text": "The amount of flat space a shape takes up is called its area. Because Shapes A and B take up the same amount of space, their areas are equal. Repeat the process of using pattern blocks to cover Shapes A and B with the rhombus and trapezoid pattern blocks. Students record their work on Problems 2 and 3 in the Problem Set."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the relationship between the size of the pattern blocks and the number of pattern blocks it requires to cover Shapes A and B?"
+      },
+      {
+        "speaker": "students",
+        "text": "The bigger the pattern block, the smaller the number of pattern blocks it requires to cover these shapes.  The bigger pattern blocks, like the trapezoid, cover more area than the triangles. That means it takes fewer trapezoids to cover the same area as the triangles."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Answer Problem 4 on your Problem Set. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 1 3 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use square pattern blocks to cover the rectangle in NOTES ON between them, do not overlap, and do not go outside OF ENGAGEMENT: the sides of the rectangle. (Allow students time to Students working above grade level work.) How many squares did you need to cover the can be encouraged to find other square rectangle? units in the classroom that they can"
+      },
+      {
+        "speaker": "students",
+        "text": "6. either use to make rectangles or that already form rectangles. Such items"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Answer Problem 5 on your Problem Set. (Allow time might include sticky notes, desktops, for students to write answers.) The area of the floor tiles, and linking cubes. Students rectangle is 6 square units. Why do you think we call can create a poster to share with the them square units? class that shows the areas of the"
+      },
+      {
+        "speaker": "students",
+        "text": "Because they are squares!  The units used to rectangles made with these other measure are squares, so they are square units! square units."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes! The units used to measure the area of the rectangle are squares."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use trapezoid pattern blocks to cover the rectangle in Problem 5. Be sure the trapezoids do not have gaps between them, do not overlap, and do not go outside the sides of the rectangle. (Allow students time to work.) What did you notice?"
+      },
+      {
+        "speaker": "students",
+        "text": "It’s not possible!  The trapezoids cannot cover this shape without having gaps, overlapping, or going outside the lines."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use this information to help you answer Problem 6 on your Problem Set. (Allow time for students to write answers.) I’m going to say an area in square units, and you are going to make a rectangle with your pattern blocks having that area. Which pattern blocks will you use?"
+      },
+      {
+        "speaker": "students",
+        "text": "The squares because the units for area that you are telling us are square units!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Here we go! Four square units."
+      },
+      {
+        "speaker": "students",
+        "text": "(Make rectangles.) Continue with the following possible sequence: 12 square units, 9 square units, and 8 square units. Invite students to compare their rectangles to a partner’s rectangles. How are they the same? How are they different? If time allows, students can work with a partner to create rectangles that have the same areas, but look different."
+      }
+    ],
+    "teacherPrompts": [
+      "Look at Problem 1 on your Problem Set. Discuss with a Manipulating pattern blocks may be a partner whether you think Shape A or B takes up more challenge for some learners. Try the space. Be prepared to explain your answer. (After following tips: students discuss, facilitate a whole class discussion.)  Partner students so they can work together to cover the shapes.",
+      "Use triangle pattern blocks to cover Shapes A and B. hand, while they place the remaining Be sure the triangles do not have gaps between them, blocks. do not overlap, and do not go outside the sides of the  Instead of using pattern blocks, shapes. (Allow time for students to work.) What did provide paper shapes that can be glued, so they will not move around you notice about the number of triangles it takes to unnecessarily. cover Shapes A and B?  Offer the computer as a resource to",
+      "Answer Problem 1 on your Problem Set. (Allow time for students to write answers.) Do all the triangles you used to cover Shapes A and B take up the same amount of space?",
+      "What does that mean about the amount of space taken up by Shapes A and B?",
+      "The amount of flat space a shape takes up is called its area. Because Shapes A and B take up the same amount of space, their areas are equal. Repeat the process of using pattern blocks to cover Shapes A and B with the rhombus and trapezoid pattern blocks. Students record their work on Problems 2 and 3 in the Problem Set.",
+      "What is the relationship between the size of the pattern blocks and the number of pattern blocks it requires to cover Shapes A and B?",
+      "Answer Problem 4 on your Problem Set. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 1 3 4",
+      "Use square pattern blocks to cover the rectangle in NOTES ON between them, do not overlap, and do not go outside OF ENGAGEMENT: the sides of the rectangle. (Allow students time to Students working above grade level work.) How many squares did you need to cover the can be encouraged to find other square rectangle? units in the classroom that they can",
+      "Answer Problem 5 on your Problem Set. (Allow time might include sticky notes, desktops, for students to write answers.) The area of the floor tiles, and linking cubes. Students rectangle is 6 square units. Why do you think we call can create a poster to share with the them square units? class that shows the areas of the",
+      "Yes! The units used to measure the area of the rectangle are squares.",
+      "Use trapezoid pattern blocks to cover the rectangle in Problem 5. Be sure the trapezoids do not have gaps between them, do not overlap, and do not go outside the sides of the rectangle. (Allow students time to work.) What did you notice?",
+      "Use this information to help you answer Problem 6 on your Problem Set. (Allow time for students to write answers.) I’m going to say an area in square units, and you are going to make a rectangle with your pattern blocks having that area. Which pattern blocks will you use?",
+      "Here we go! Four square units."
+    ],
+    "debriefPrompt": "Talk to a partner. Do you think you can use square pattern blocks to cover Shapes A and B in Problem 1? Explain your answer",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Use triangle pattern blocks to cover each shape below. Draw lines to show where the triangles meet. Then, write how many triangle pattern blocks it takes to cover each shape. Shape A: ____ triangles Shape B: ____ triangles",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "Use rhombus pattern blocks to cover each shape below. Draw lines to show where the rhombuses meet. Then, write how many rhombus pattern blocks it takes to cover each shape. Shape A: ____ rhombuses Shape B: ____ rhombuses",
+        "equations": []
+      },
+      {
+        "number": 3,
+        "prompt": "Use trapezoid pattern blocks to cover each shape below. Draw lines to show where the trapezoids meet. Then, write how many trapezoid pattern blocks it requires to cover each shape. Shape A: ____ trapezoids Shape B: ____ trapezoids How is the number of pattern blocks needed to cover the same shape related to the size of the pattern blocks? 5. Use square pattern blocks to cover the rectangle below. Draw lines to show where the squares meet. Then, write how many square pattern blocks it requires to cover the rectangle. ____ squares 6. Use trapezoid pattern blocks to cover the rectangle in Problem 5. Can you use trapezoid pattern blocks to measure the area of this rectangle? Explain your answer.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                      Lesson 1 Problem Set 3 4\n\n\nName                                                                                                        Date\n\n1.   Use triangle pattern blocks to cover each shape below. Draw lines to show where the triangles meet.\n     Then, write how many triangle pattern blocks it takes to cover each shape.\n\n\n                   Shape A: _______ triangles\n                                                                                                                   Shape B: _______ triangles\n\n2.   Use rhombus pattern blocks to cover each shape below. Draw lines to show where the rhombuses meet.\n     Then, write how many rhombus pattern blocks it takes to cover each shape.\n\n\n                   Shape A: _______ rhombuses\n\n\n                                                                                                                   Shape B: _______ rhombuses\n3.   Use trapezoid pattern blocks to cover each shape below. Draw lines to show where the trapezoids meet.\n     Then, write how many trapezoid pattern blocks it requires to cover each shape.\n\n\n                   Shape A: _______ trapezoids\n                                                                                                                   Shape B: _______ trapezoids\n\n\n                        Lesson 1:                  Understand area as an attribute of plane figures.                                             15\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                      Lesson 1 Problem Set 3 4\n\n\n4.   How is the number of pattern blocks needed to cover the same shape related to the size of the pattern\n     blocks?\n\n\n5.   Use square pattern blocks to cover the rectangle below. Draw lines to show where the squares meet.\n     Then, write how many square pattern blocks it requires to cover the rectangle.\n\n\n                                                                                                       _______ squares\n\n\n6.   Use trapezoid pattern blocks to cover the rectangle in Problem 5. Can you use trapezoid pattern blocks\n     to measure the area of this rectangle? Explain your answer.\n\n\n                        Lesson 1:                  Understand area as an attribute of plane figures.                              16\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    Lines drawn to show 6 triangles each inside Shapes A and B\n2.    Lines drawn to show 3 rhombuses each inside Shapes A and B\n3.    Lines drawn to show 2 trapezoids each inside Shapes A and B\n4.    As pattern blocks get bigger, the number of blocks it takes to cover the same shape gets smaller.\n5.    Lines drawn to show 6 squares inside rectangle\n6.    No, because you can’t have gaps or overlaps when measuring area",
+    "answerKeyText": "A STORY OF UNITS                                                                                            Lesson 1 Answer Key 3 4\n\n\nLesson 1\nProblem Set\n1.    Lines drawn to show 6 triangles each inside Shapes A and B\n2.    Lines drawn to show 3 rhombuses each inside Shapes A and B\n3.    Lines drawn to show 2 trapezoids each inside Shapes A and B\n4.    As pattern blocks get bigger, the number of blocks it takes to cover the same shape gets smaller.\n5.    Lines drawn to show 6 squares inside rectangle\n6.    No, because you can’t have gaps or overlaps when measuring area\n\n\nExit Ticket\nYes, both rectangles have an area of 12 square units.\n\n\nHomework\n1.    a. 12\n      b. 6\n      c. 4; because 12 ÷ 3 = 4\n2.    a. 12\n      b. 12; because 12 squares fit inside of it\n3.    A, because it has an area of 18 square units\n\n\n                        Module 4:                  Multiplication and Area                                                            214\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "area-model",
+      "geometry-diagram",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "area-model": [
+        "Part 2: Measure area using square units.",
+        "rectangle is 6 square units. Why do you think we call can create a poster to share with the",
+        "them square units? class that shows the areas of the",
+        "measure are squares, so they are square units! square units.",
+        "write answers.) I’m going to say an area in square units, and you are going to make a rectangle with",
+        "S: The squares because the units for area that you are telling us are square units!",
+        "T: Here we go! Four square units.",
+        "Continue with the following possible sequence: 12 square units, 9 square units, and 8 square units. Invite"
+      ],
+      "geometry-diagram": [
+        "T: Use triangle pattern blocks to cover Shapes A and B. hand, while they place the remaining",
+        "Be sure the triangles do not have gaps between them, blocks.",
+        "you notice about the number of triangles it takes to unnecessarily.",
+        "S: It takes 6 triangles to cover each shape! create and move shapes.",
+        "Do all the triangles you used to cover Shapes A and B take up the same amount of space?",
+        "S: They are the same.  It took 6 triangles to cover each shape, which means the shapes take up the",
+        "Repeat the process of using pattern blocks to cover Shapes A and B with the rhombus and trapezoid pattern",
+        "shapes.  The bigger pattern blocks, like the trapezoid, cover more area than the triangles. That"
+      ],
+      "picture-or-drawing": [
+        "side of your paper. Draw lines to match products that",
+        "1. Use triangle pattern blocks to cover each shape below. Draw lines to show where the triangles meet.",
+        "2. Use rhombus pattern blocks to cover each shape below. Draw lines to show where the rhombuses meet.",
+        "3. Use trapezoid pattern blocks to cover each shape below. Draw lines to show where the trapezoids meet.",
+        "5. Use square pattern blocks to cover the rectangle below. Draw lines to show where the squares meet."
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Look at Problem 1 on your Problem Set. Discuss with a Manipulating pattern blocks may be a partner whether you think Shape A or B takes up more challenge for some learners. Try the space. Be prepared to explain your answer. (After following tips: students discuss, facilitate a whole class discussion.)  Partner students so they can work together to cover the shapes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use triangle pattern blocks to cover Shapes A and B. hand, while they place the remaining Be sure the triangles do not have gaps between them, blocks. do not overlap, and do not go outside the sides of the  Instead of using pattern blocks, shapes. (Allow time for students to work.) What did provide paper shapes that can be glued, so they will not move around you notice about the number of triangles it takes to unnecessarily. cover Shapes A and B?  Offer the computer as a resource to"
+      },
+      {
+        "speaker": "students",
+        "text": "It takes 6 triangles to cover each shape! create and move shapes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Answer Problem 1 on your Problem Set. (Allow time for students to write answers.) Do all the triangles you used to cover Shapes A and B take up the same amount of space?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Answer Problem 5 on your Problem Set. (Allow time might include sticky notes, desktops, for students to write answers.) The area of the floor tiles, and linking cubes. Students rectangle is 6 square units. Why do you think we call can create a poster to share with the them square units? class that shows the areas of the"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use trapezoid pattern blocks to cover the rectangle in Problem 5. Be sure the trapezoids do not have gaps between them, do not overlap, and do not go outside the sides of the rectangle. (Allow students time to work.) What did you notice?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use this information to help you answer Problem 6 on your Problem Set. (Allow time for students to write answers.) I’m going to say an area in square units, and you are going to make a rectangle with your pattern blocks having that area. Which pattern blocks will you use?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Make rectangles.) Continue with the following possible sequence: 12 square units, 9 square units, and 8 square units. Invite students to compare their rectangles to a partner’s rectangles. How are they the same? How are they different? If time allows, students can work with a partner to create rectangles that have the same areas, but look different."
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 11 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 1 3 4\n\n\nLesson 1\nObjective: Understand area as an attribute of plane figures.\n\nSuggested Lesson Structure\n\n Fluency Practice                 (15 minutes)\n Application Problem              (5 minutes)\n Concept Development              (30 minutes)\n Student Debrief                  (10 minutes)\n   Total Time                      (60 minutes)\n\n\nFluency Practice (15 minutes)\n\n Group Counting 3.OA.1                                            (4 minutes)\n Identify the Shape 2.G.1                                         (3 minutes)\n Find the Common Products 3.OA.7                                  (8 minutes)\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally changing the direction of the count.\n        Threes to 30\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\nIdentify the Shape (3 minutes)\nNote: This fluency activity reviews properties and vocabulary that are used during today’s Concept\nDevelopment.\n    T:   (Project a triangle.) How many sides does this shape have?\n    S:   3.\n    T:   Name the shape.\n    S:   Triangle.\nContinue with the following possible sequence: quadrilateral (trapezoid), quadrilateral (rhombus),\nquadrilateral (square), and quadrilateral (rectangle).\n\n\n                        Lesson 1:                  Understand area as an attribute of plane figures.                                         10\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 12 (application-problem) ---\nA STORY OF UNITS                                                                                                               Lesson 1 3 4\n\n\nFind the Common Products (8 minutes)\nMaterials: (S) Blank paper\n\nNote: This fluency activity reviews multiplication patterns from\nModule 3.\n    T:   Fold your paper in half vertically. Unfold your paper.\n         On the left half, count by twos to 20 down the side of your\n         paper. On the right half, count by fours to 40 down the\n         side of your paper. Draw lines to match products that\n         appear in both columns.\n    S:   (Match 4, 8, 12, 16, and 20.)\n    T:   (Write       × 2 = 4,       × 2 = 8, etc., next to each\n         corresponding product on the left half of the paper.)\n         Write the complete equations next to their products.\n    S:   (Write equations and complete unknowns.)\n    T:   (Write 4 =       × 4, 8 =       × 4, etc., next to each\n         corresponding product on the right half of the paper.)\n         Write the complete equations next to their products.\n    S:   (Write equations.)\n    T:   (Write 2 × 2 =        × 4.) Say the equation, including all\n         factors.\n    S:   2 × 2 = 1 × 4.\n    T:   (Write 2 × 2 = 1 × 4.) Write the remaining equal facts as equations.\n    S:   (Write 4 × 2 = 2 × 4, 6 × 2 = 3 × 4, 8 × 2 = 4 × 4, and 10 × 2 = 5 × 4.)\n    T:   What patterns do you notice in your equations?\n    S:   Each multiple of 4 is also a multiple of 2.\n\n\nApplication Problem (5 minutes)\n\nEric makes a shape with 8 trapezoid pattern blocks. Brock makes the same shape using triangle pattern\nblocks. It takes 3 triangles to make 1 trapezoid. How many triangle pattern blocks does Brock use?\n\n\nNote: This problem reviews the Module 3 concept of multiplying using units of 8.\n\n\n                        Lesson 1:                  Understand area as an attribute of plane figures.                                         11\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 13 (concept-development) ---\nA STORY OF UNITS                                                                                                               Lesson 1 3 4\n\n\nConcept Development (30 minutes)\n                                                                                                                           NOTES ON\nMaterials: (S) Pattern blocks, Problem Set                                                                                 MULTIPLE MEANS\n                                                                                                                           OF ACTION AND\nPart 1: Use pattern blocks to understand area.                                                                             EXPRESSION:\n    T:   Look at Problem 1 on your Problem Set. Discuss with a             Manipulating pattern blocks may be a\n         partner whether you think Shape A or B takes up more              challenge for some learners. Try the\n         space. Be prepared to explain your answer. (After                 following tips:\n         students discuss, facilitate a whole class discussion.)            Partner students so they can work\n                                                                              together to cover the shapes.\n    S:   Shape A because it’s longer than Shape B.  Shape B\n                                                                            Encourage students to hold the\n         because it’s taller than Shape A.                                    pattern blocks in place with one\n    T:   Use triangle pattern blocks to cover Shapes A and B.                 hand, while they place the remaining\n         Be sure the triangles do not have gaps between them,                 blocks.\n         do not overlap, and do not go outside the sides of the              Instead of using pattern blocks,\n         shapes. (Allow time for students to work.) What did                  provide paper shapes that can be\n                                                                              glued, so they will not move around\n         you notice about the number of triangles it takes to                 unnecessarily.\n         cover Shapes A and B?                                              Offer the computer as a resource to\n    S:   It takes 6 triangles to cover each shape!                            create and move shapes.\n    T:   Answer Problem 1 on your Problem Set. (Allow time\n         for students to write answers.)\n         Do all the triangles you used to cover Shapes A and B take up the same amount of space?\n    S:   Yes because they’re all the same size.\n    T:   What does that mean about the amount of space taken up by Shapes A and B?\n    S:   They are the same.  It took 6 triangles to cover each shape, which means the shapes take up the\n         same amount of space.  The amount of space that Shape A takes up is equal to the amount of\n         space taken up by Shape B.\n    T:   The amount of flat space a shape takes up is called its area. Because Shapes A and B take up the\n         same amount of space, their areas are equal.\nRepeat the process of using pattern blocks to cover Shapes A and B with the rhombus and trapezoid pattern\nblocks. Students record their work on Problems 2 and 3 in the Problem Set.\n    T:   What is the relationship between the size of the pattern blocks and the number of pattern blocks it\n         requires to cover Shapes A and B?\n    S:   The bigger the pattern block, the smaller the number of pattern blocks it requires to cover these\n         shapes.  The bigger pattern blocks, like the trapezoid, cover more area than the triangles. That\n         means it takes fewer trapezoids to cover the same area as the triangles.\n    T:   Answer Problem 4 on your Problem Set.\n\n\n                        Lesson 1:                  Understand area as an attribute of plane figures.                                         12\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 14 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 1 3 4\n\n\nPart 2: Measure area using square units.\n    T:   Use square pattern blocks to cover the rectangle in                          NOTES ON\n         Problem 5. Be sure the squares do not have gaps                              MULTIPLE MEANS\n         between them, do not overlap, and do not go outside                          OF ENGAGEMENT:\n         the sides of the rectangle. (Allow students time to                Students working above grade level\n         work.) How many squares did you need to cover the                  can be encouraged to find other square\n         rectangle?                                                         units in the classroom that they can\n    S:   6.                                                                 either use to make rectangles or that\n                                                                            already form rectangles. Such items\n    T:   Answer Problem 5 on your Problem Set. (Allow time\n                                                                            might include sticky notes, desktops,\n         for students to write answers.) The area of the\n                                                                            floor tiles, and linking cubes. Students\n         rectangle is 6 square units. Why do you think we call              can create a poster to share with the\n         them square units?                                                 class that shows the areas of the\n    S:   Because they are squares!  The units used to                      rectangles made with these other\n         measure are squares, so they are square units!                     square units.\n    T:   Yes! The units used to measure the area of the\n         rectangle are squares.\n    T:   Use trapezoid pattern blocks to cover the rectangle in Problem 5. Be sure the trapezoids do not\n         have gaps between them, do not overlap, and do not go outside the sides of the rectangle. (Allow\n         students time to work.) What did you notice?\n    S:   It’s not possible!  The trapezoids cannot cover this shape without having gaps, overlapping, or\n         going outside the lines.\n    T:   Use this information to help you answer Problem 6 on your Problem Set. (Allow time for students to\n         write answers.) I’m going to say an area in square units, and you are going to make a rectangle with\n         your pattern blocks having that area. Which pattern blocks will you use?\n    S:   The squares because the units for area that you are telling us are square units!\n    T:   Here we go! Four square units.\n    S:   (Make rectangles.)\nContinue with the following possible sequence: 12 square units, 9 square units, and 8 square units. Invite\nstudents to compare their rectangles to a partner’s rectangles. How are they the same? How are they\ndifferent? If time allows, students can work with a partner to create rectangles that have the same areas, but\nlook different.\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Understand area as an attribute of plane figures.\nThe Student Debrief is intended to invite reflection and active processing of the total lesson experience.\nInvite students to review their solutions for the Problem Set. They should check work by comparing answers\nwith a partner before going over answers as a class. Look for misconceptions or misunderstandings that can\nbe addressed in the Debrief. Guide students in a conversation to debrief the Problem Set and process the\nlesson.\n\n\n                        Lesson 1:                  Understand area as an attribute of plane figures.                                         13\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 15 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 1 3 4\n\n\nAny combination of the questions below may be used to\nlead the discussion.\n       Talk to a partner. Do you think you can use\n        square pattern blocks to cover Shapes A and B in\n        Problem 1? Explain your answer.\n       How many triangle pattern blocks does it take to\n        cover a rhombus pattern block? Use that\n        information to say a division fact that relates the\n        number of triangles it takes to cover Shape A to\n        the number of rhombuses it takes to cover the\n        same shape. (6 ÷ 2 = 3.)\n       Explain to a partner how you used square pattern\n        blocks to find the area of the rectangle in\n        Problem 5.\n       What new math vocabulary did we use today to\n        communicate precisely about the amount of\n        space taken up by a shape? (Area.) Which units\n        did we use to measure area? (Square units.)\n       How did the Application Problem connect to\n        today’s lesson?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                       Lesson 1:                  Understand area as an attribute of plane figures.                                         14\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 16 (problem-set) ---\nA STORY OF UNITS                                                                                      Lesson 1 Problem Set 3 4\n\n\nName                                                                                                        Date\n\n1.   Use triangle pattern blocks to cover each shape below. Draw lines to show where the triangles meet.\n     Then, write how many triangle pattern blocks it takes to cover each shape.\n\n\n                   Shape A: _______ triangles\n                                                                                                                   Shape B: _______ triangles\n\n2.   Use rhombus pattern blocks to cover each shape below. Draw lines to show where the rhombuses meet.\n     Then, write how many rhombus pattern blocks it takes to cover each shape.\n\n\n                   Shape A: _______ rhombuses\n\n\n                                                                                                                   Shape B: _______ rhombuses\n3.   Use trapezoid pattern blocks to cover each shape below. Draw lines to show where the trapezoids meet.\n     Then, write how many trapezoid pattern blocks it requires to cover each shape.\n\n\n                   Shape A: _______ trapezoids\n                                                                                                                   Shape B: _______ trapezoids\n\n\n                        Lesson 1:                  Understand area as an attribute of plane figures.                                             15\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 17 (problem-set) ---\nA STORY OF UNITS                                                                                      Lesson 1 Problem Set 3 4\n\n\n4.   How is the number of pattern blocks needed to cover the same shape related to the size of the pattern\n     blocks?\n\n\n5.   Use square pattern blocks to cover the rectangle below. Draw lines to show where the squares meet.\n     Then, write how many square pattern blocks it requires to cover the rectangle.\n\n\n                                                                                                       _______ squares\n\n\n6.   Use trapezoid pattern blocks to cover the rectangle in Problem 5. Can you use trapezoid pattern blocks\n     to measure the area of this rectangle? Explain your answer.\n\n\n                        Lesson 1:                  Understand area as an attribute of plane figures.                              16\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 18 (exit-ticket) ---\nA STORY OF UNITS                                                                                           Lesson 1 Exit Ticket 3 4\n\n\nName                                                                                                      Date\n\n\nEach             is 1 square unit. Do both rectangles have the same area? Explain how you know.\n\n\n                      Lesson 1:                  Understand area as an attribute of plane figures.                                   17\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 19 (homework) ---\nA STORY OF UNITS                                                                                         Lesson 1 Homework 3 4\n\n\nName                                                                                                        Date\n\n1.   Magnus covers the same shape with triangles, rhombuses, and trapezoids.\n\n     a.   How many triangles will it take to cover the shape?\n\n\n                                                                                                                                  _______ triangles\n\n\n     b.   How many rhombuses will it take to cover the shape?\n\n\n                                                                                                                                  _______ rhombuses\n\n\n     c.   Magnus notices that 3 triangles from Part (a) cover 1 trapezoid. How many trapezoids will you need\n          to cover the shape below? Explain your answer.\n\n\n                                                                                                                                    _______ trapezoids\n\n\n                        Lesson 1:                  Understand area as an attribute of plane figures.                                                     18\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 20 (homework) ---\nA STORY OF UNITS                                                                                          Lesson 1 Homework 3 4\n\n\n2.   Angela uses squares to find the area of a rectangle. Her work is shown below.\n\n     a.   How many squares did she use to cover the rectangle?\n\n\n                                                        _______ squares\n\n\n     b.   What is the area of the rectangle in square units? Explain how you found your answer.\n\n\n3.   Each         is 1 square unit. Which rectangle has the largest area? How do you know?\n\n\n               Rectangle A\n\n                                                               Rectangle B\n\n\n                               Rectangle C\n\n\n                        Lesson 1:                   Understand area as an attribute of plane figures.                              19\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 16,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                      Lesson 1 Problem Set 3 4\n\n\nName                                                                                                        Date\n\n1.   Use triangle pattern blocks to cover each shape below. Draw lines to show where the triangles meet.\n     Then, write how many triangle pattern blocks it takes to cover each shape.\n\n\n                   Shape A: _______ triangles\n                                                                                                                   Shape B: _______ triangles\n\n2.   Use rhombus pattern blocks to cover each shape below. Draw lines to show where the rhombuses meet.\n     Then, write how many rhombus pattern blocks it takes to cover each shape.\n\n\n                   Shape A: _______ rhombuses\n\n\n                                                                                                                   Shape B: _______ rhombuses\n3.   Use trapezoid pattern blocks to cover each shape below. Draw lines to show where the trapezoids meet.\n     Then, write how many trapezoid pattern blocks it requires to cover each shape.\n\n\n                   Shape A: _______ trapezoids\n                                                                                                                   Shape B: _______ trapezoids\n\n\n                        Lesson 1:                  Understand area as an attribute of plane figures.                                             15\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 17,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                      Lesson 1 Problem Set 3 4\n\n\n4.   How is the number of pattern blocks needed to cover the same shape related to the size of the pattern\n     blocks?\n\n\n5.   Use square pattern blocks to cover the rectangle below. Draw lines to show where the squares meet.\n     Then, write how many square pattern blocks it requires to cover the rectangle.\n\n\n                                                                                                       _______ squares\n\n\n6.   Use trapezoid pattern blocks to cover the rectangle in Problem 5. Can you use trapezoid pattern blocks\n     to measure the area of this rectangle? Explain your answer.\n\n\n                        Lesson 1:                  Understand area as an attribute of plane figures.                              16\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 215,
+        "text": "A STORY OF UNITS                                                                                            Lesson 1 Answer Key 3 4\n\n\nLesson 1\nProblem Set\n1.    Lines drawn to show 6 triangles each inside Shapes A and B\n2.    Lines drawn to show 3 rhombuses each inside Shapes A and B\n3.    Lines drawn to show 2 trapezoids each inside Shapes A and B\n4.    As pattern blocks get bigger, the number of blocks it takes to cover the same shape gets smaller.\n5.    Lines drawn to show 6 squares inside rectangle\n6.    No, because you can’t have gaps or overlaps when measuring area\n\n\nExit Ticket\nYes, both rectangles have an area of 12 square units.\n\n\nHomework\n1.    a. 12\n      b. 6\n      c. 4; because 12 ÷ 3 = 4\n2.    a. 12\n      b. 12; because 12 squares fit inside of it\n3.    A, because it has an area of 18 square units\n\n\n                        Module 4:                  Multiplication and Area                                                            214\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

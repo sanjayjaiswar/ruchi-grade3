@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m3-l8",
+  "moduleId": "m3",
+  "lessonNumber": 8,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_3/g3_m3_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+    "teacherEditionBytes": 14065864,
+    "lessonPdfPages": {
+      "start": 97,
+      "end": 107
+    },
+    "problemSetPdfPages": [
+      103,
+      104
+    ],
+    "exitTicketPdfPages": [
+      105
+    ],
+    "homeworkPdfPages": [
+      106,
+      107
+    ],
+    "answerKeyPdfPages": [
+      293,
+      294,
+      295
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m3-student/workbook-page-032.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m3-answer-key/page-293.png",
+      "/source-pages/m3-answer-key/page-294.png",
+      "/source-pages/m3-answer-key/page-295.png"
+    ]
+  },
+  "objective": "Understand the function of parentheses and apply to solving problems.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.\n\n\n                         Lesson 8:                Understand the function of parentheses and apply to solving problems.                       99\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 8",
+    "conceptDevelopmentText": "Materials: (S) Personal white board\n\nPart 1: Solve equations containing parentheses.\n    T:   The two equations used to solve the Application Problem are\n         2 × 6 = 12 and 12 – 2 = 10. (Show picture to the right.) This picture shows                \n         both. Talk to your partner: How could we include all of this information in\n                                                                                                    \n         one equation?\n    S:   We can rewrite them as one equation. Maybe 2 × 6 – 2 = 10?\n    T:   Let’s check to make sure the new equation equals 10. Should we multiply first or subtract first?\n         Does it matter?\n    S:   I don’t think it matters.  Before we multiplied first, so let’s do that again.\n    T:   Let’s find out. Solve the equation twice. The first time you solve it, multiply first. The second time\n         you solve, subtract first. (Allow time for students to calculate.)\n    S:   When I multiplied first, I still got 10, but when I subtracted first, I got 8.\n    T:   For this problem, the order does matter. We can use parentheses in our equation to show what to\n         do first. Remind me, which part of the equation do we need to do first and why?\n    S:   2 × 6. We have to find the total number of eggs Richard has in 2 cartons first.\n    T:   Watch how I use parentheses to show that. (Write (2 × 6) – 2 = 10.)\n    T:   What is the product of 2 × 6?\n    S:   12.\n    T:   Rewrite 2 × 6 as 12. What expression is left?                                   NOTES ON\n    S:   12 – 2.                                                                         MULTIPLE MEANS\n                                                                                         OF ENGAGEMENT:\n    T:   What does 12 – 2 equal?\n                                                                                 Alternatively, challenge students\n    S:   10.                                                                     working above grade level to write\n    T:   In a complete sentence, how many eggs does Richard                      equations in which multiple operations\n         have left?                                                              are used on both sides of the equation.\n    S:   Richard has 10 eggs left.                                               For example, a student might extend\n                                                                                                                 (2 × 6) – 2 = 10, as (2 × 6) −2 =\nContinue with the following suggested sequence:                                                                  (7 – 2) × 2.\n        4 + 2 = 6 and 6 × 6 = 36  (4 + 2) × 6 = 36\n        12 ÷ 3 = 4 and 15 – 4 = 11  15 – (12 ÷ 3) = 11\nNote: Have students refer back to the original problem, as the situation dictates the placement of the\nparentheses.\n\n\n                         Lesson 8:                Understand the function of parentheses and apply to solving problems.                              98\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                                Lesson 8\n\n\nPart 2: Explore how moving the parentheses can change the answer in an equation.\nWrite or project the following equation and the picture below, right: (25 – 10) ÷ 5 = 3.\n    T:   Check my work. Is it correct?\n    S:   Yes, because 25 – 10 equals 15, and 15 ÷ 5 equals 3.\n    T:   Let’s divide 10 by 5 first. What should we do with the parentheses to show\n         that?\n    S:   Move them over!  Make them go around 10 ÷ 5.\n    T:   Now the equation looks like this. (Write 25 – (10 ÷ 5) = n.) Write the\n         equation on your personal white board. Why is there a letter where the\n         3 was before?\n    S:   We should write 3 because the numbers didn’t change.  We don’t\n         know if it equals 3 anymore.\n    T:   Really? Why not? The numbers are the same as before.\n    S:   The parentheses moved.\n    T:   Solve the problem with your partner. Does this equation still have\n         an answer of 3?\n    S:   (Work and discuss.) No, the answer is 23.\n    T:   Why is the answer different?\n    S:   We divided first.  One way, we divided 15 by 5.  The other way, we subtracted 2 from 25.\n          We divided and then subtracted. Before, we subtracted, and then divided.\n    T:   What does this tell you about the way we use parentheses to group the math in equations? Is it\n         important? Why or why not?\n    S:   The parentheses tell us what math gets done\n         first.  Yes, it’s important because moving the\n         parentheses can change the answer.\nContinue with the following suggested sequence:\n        (2 + 3) × 7 and 2 + (3 × 7)\n        (3 × 4) ÷ 2 and 3 × (4 ÷ 2)",
+    "fluencyPracticeText": " Multiply By 7 3.OA.7                                 (6 minutes)\n Group Counting 3.OA.1                                (4 minutes)\n Add 6 and 7 Mentally 2.NBT.5                         (5 minutes)\n\nMultiply By 7 (6 minutes)\nMaterials: (S) Multiply By 7 (6–10) (Pattern Sheet)\n                                                                                                                            NOTES ON\nNote: This activity builds fluency with multiplication facts using\n                                                                                                                            MULTIPLE MEANS\nunits of seven. It supports students knowing from memory all\nproducts of two one-digit numbers. See Lesson 5 for the                                                                     OF ENGAGEMENT:\n                                                                                                                 Multiply By 7 is carefully scaffolded to\ndirections for administering a Multiply By Pattern Sheet.\n                                                                                                                 support student success. Adjust the\n    T:   (Write 6 × 7 = ____.) Let’s skip-count up by sevens to                                                  activity to suit students’ diverse needs.\n         solve. I’ll raise a finger for each seven.                                                              For example, focus on one skill, such as\n         (Count with fingers to 6 as students count.)                                                            skip-counting down to solve. Or, have\n                                                                                                                 students review and solidify their\n    S:   7, 14, 21, 28, 35, 42.                                                                                  memorization of skip-counting up by\n    T:   Let’s skip-count down to find the answer, too.                                                          seven by doing the Group Counting\n         Start at 70. (Count down with fingers as students                                                       first.\n         count.)\n    S:   70, 63, 56, 49, 42.\nContinue with the following suggested sequence: 8 × 7, 7 × 7, and 9 × 7.\n    T:   (Distribute the Multiply By 7 Pattern Sheet.) Let’s practice multiplying by 7. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 8:                Understand the function of parentheses and apply to solving problems.                                      96\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 8\n\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by sixes reviews\nmultiplication using units of six from Topic B. Group counting eights prepares students for multiplication\nin this topic. Group counting nines anticipates multiplication using units of nine later in the module.\nDirect students to count forward and backward, occasionally changing the direction of the count:\n        Sixes to 60\n        Eights to 80\n        Nines to 90\n\nAdd 6 and 7 Mentally (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews the make ten strategy used for skip-counting by sixes and sevens in Lessons 4\nand 5.\n    T:   (Project 6 + 6 = ___.) Say the expression.\n    S:   6 + 6.\n    T:   6 and what make ten?\n    S:   4.\n    T:   (Draw a number bond beneath the second 6.) On your personal white board, break apart the\n         second 6, taking out the 4.\n    S:   (Write the number bond.)\n    T:   Say the addition sentence.\n    S:   6 + 6 = 12.\nContinue with the following possible sequence: 12 + 6, 18 + 6, 24 + 6, 30 + 6, 36 + 6, 42 + 6, 48 + 6, 54 + 6,\n7 + 7, 14 + 7, 21 + 7, 28 + 7, 35 + 7, 42 + 7, 49 + 7, 56 + 7, and 63 + 7.",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\n                         Lesson 8:                Understand the function of parentheses and apply to solving problems.                       99\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 8",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "The two equations used to solve the Application Problem are 2 × 6 = 12 and 12 – 2 = 10. (Show picture to the right.) This picture shows  both. Talk to your partner: How could we include all of this information in  one equation?"
+      },
+      {
+        "speaker": "students",
+        "text": "We can rewrite them as one equation. Maybe 2 × 6 – 2 = 10?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s check to make sure the new equation equals 10. Should we multiply first or subtract first? Does it matter?"
+      },
+      {
+        "speaker": "students",
+        "text": "I don’t think it matters.  Before we multiplied first, so let’s do that again."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s find out. Solve the equation twice. The first time you solve it, multiply first. The second time you solve, subtract first. (Allow time for students to calculate.)"
+      },
+      {
+        "speaker": "students",
+        "text": "When I multiplied first, I still got 10, but when I subtracted first, I got 8."
+      },
+      {
+        "speaker": "teacher",
+        "text": "For this problem, the order does matter. We can use parentheses in our equation to show what to do first. Remind me, which part of the equation do we need to do first and why?"
+      },
+      {
+        "speaker": "students",
+        "text": "2 × 6. We have to find the total number of eggs Richard has in 2 cartons first."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Watch how I use parentheses to show that. (Write (2 × 6) – 2 = 10.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the product of 2 × 6?"
+      },
+      {
+        "speaker": "students",
+        "text": "12."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Rewrite 2 × 6 as 12. What expression is left? NOTES ON"
+      },
+      {
+        "speaker": "students",
+        "text": "12 – 2. MULTIPLE MEANS OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What does 12 – 2 equal? Alternatively, challenge students"
+      },
+      {
+        "speaker": "students",
+        "text": "10. working above grade level to write"
+      },
+      {
+        "speaker": "teacher",
+        "text": "In a complete sentence, how many eggs does Richard equations in which multiple operations have left? are used on both sides of the equation."
+      },
+      {
+        "speaker": "students",
+        "text": "Richard has 10 eggs left. For example, a student might extend (2 × 6) – 2 = 10, as (2 × 6) −2 = Continue with the following suggested sequence: (7 – 2) × 2.  4 + 2 = 6 and 6 × 6 = 36  (4 + 2) × 6 = 36  12 ÷ 3 = 4 and 15 – 4 = 11  15 – (12 ÷ 3) = 11 parentheses. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 8 Write or project the following equation and the picture below, right: (25 – 10) ÷ 5 = 3."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Check my work. Is it correct?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes, because 25 – 10 equals 15, and 15 ÷ 5 equals 3."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s divide 10 by 5 first. What should we do with the parentheses to show that?"
+      },
+      {
+        "speaker": "students",
+        "text": "Move them over!  Make them go around 10 ÷ 5."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now the equation looks like this. (Write 25 – (10 ÷ 5) = n.) Write the equation on your personal white board. Why is there a letter where the 3 was before?"
+      },
+      {
+        "speaker": "students",
+        "text": "We should write 3 because the numbers didn’t change.  We don’t know if it equals 3 anymore."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Really? Why not? The numbers are the same as before."
+      },
+      {
+        "speaker": "students",
+        "text": "The parentheses moved."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Solve the problem with your partner. Does this equation still have an answer of 3?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Work and discuss.) No, the answer is 23."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why is the answer different?"
+      },
+      {
+        "speaker": "students",
+        "text": "We divided first.  One way, we divided 15 by 5.  The other way, we subtracted 2 from 25.  We divided and then subtracted. Before, we subtracted, and then divided."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What does this tell you about the way we use parentheses to group the math in equations? Is it important? Why or why not?"
+      },
+      {
+        "speaker": "students",
+        "text": "The parentheses tell us what math gets done first.  Yes, it’s important because moving the parentheses can change the answer. Continue with the following suggested sequence:  (2 + 3) × 7 and 2 + (3 × 7)  (3 × 4) ÷ 2 and 3 × (4 ÷ 2)"
+      }
+    ],
+    "teacherPrompts": [
+      "The two equations used to solve the Application Problem are 2 × 6 = 12 and 12 – 2 = 10. (Show picture to the right.) This picture shows  both. Talk to your partner: How could we include all of this information in  one equation?",
+      "Let’s check to make sure the new equation equals 10. Should we multiply first or subtract first? Does it matter?",
+      "Let’s find out. Solve the equation twice. The first time you solve it, multiply first. The second time you solve, subtract first. (Allow time for students to calculate.)",
+      "For this problem, the order does matter. We can use parentheses in our equation to show what to do first. Remind me, which part of the equation do we need to do first and why?",
+      "Watch how I use parentheses to show that. (Write (2 × 6) – 2 = 10.)",
+      "What is the product of 2 × 6?",
+      "Rewrite 2 × 6 as 12. What expression is left? NOTES ON",
+      "What does 12 – 2 equal? Alternatively, challenge students",
+      "In a complete sentence, how many eggs does Richard equations in which multiple operations have left? are used on both sides of the equation.",
+      "Check my work. Is it correct?",
+      "Let’s divide 10 by 5 first. What should we do with the parentheses to show that?",
+      "Now the equation looks like this. (Write 25 – (10 ÷ 5) = n.) Write the equation on your personal white board. Why is there a letter where the 3 was before?",
+      "Really? Why not? The numbers are the same as before.",
+      "Solve the problem with your partner. Does this equation still have an answer of 3?",
+      "Why is the answer different?",
+      "What does this tell you about the way we use parentheses to group the math in equations? Is it important? Why or why not?"
+    ],
+    "debriefPrompt": "Look at Problem 1(j). Would the answer be the same if I solved (12 divided by 2) + (12 divided by 4)? Why not? (Lead students to understand that they cannot distribute in this problem.)",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Solve. a. (12 – 4) + 6 = ____ i. ____ = (12 ÷ 2) + 4 b. 12 – (4 + 6) = ____ j. ____ = 12 ÷ (2 + 4) c. ____ = 15 – (7 + 3) k. 9 + (15 ÷ 3) = ____ d. ____ = (15 – 7) + 3 l. (9 + 15) ÷ 3 = ____ e. ____ = (3 + 2) × 6 m. 60 ÷ (10 – 4) = ____ f. ____ = 3 + (2 × 6) n. (60 ÷ 10) – 4 = ____ g. 4 × (7 – 2) = ____ o. ____ = 35 + (10 ÷ 5) h. (4 × 7) – 2 = ____ p. ____ = (35 + 10) ÷ 5",
+        "equations": [
+          "6 = ____",
+          "12 ÷ 2",
+          "4 + 6",
+          "____ = 12"
+        ]
+      },
+      {
+        "number": 2,
+        "prompt": "Use parentheses to make the equations true. a. 16 – 4 + 7 = 19 b. 16 – 4 + 7 = 5 c. 2 = 22 – 15 + 5 d. 12 = 22 – 15 + 5 e. 3 + 7 × 6 = 60 f. 3 + 7 × 6 = 45 g. 5 = 10 ÷ 10 × 5 h. 50 = 100 ÷ 10 × 5 i. 26 – 5 ÷ 7 = 3 j. 36 = 4 × 25 – 16",
+        "equations": [
+          "4 + 7 = 19",
+          "4 + 7 = 5",
+          "2 = 22",
+          "15 + 5"
+        ]
+      },
+      {
+        "number": 3,
+        "prompt": "The teacher writes 24 ÷ 4 + 2 = ____ on the board. Chad says it equals 8. Samir says it equals",
+        "equations": [
+          "24 ÷ 4",
+          "2 = ____"
+        ]
+      },
+      {
+        "number": 4,
+        "prompt": "Explain how placing the parentheses in the equation can make both answers true. 4. Natasha solves the equation below by finding the sum of 5 and 12. Place the parentheses in the equation to show her thinking. Then, solve. 12 + 15 ÷ 3 = ____",
+        "equations": [
+          "12 + 15",
+          "3 = ____"
+        ]
+      },
+      {
+        "number": 5,
+        "prompt": "Find two possible answers to the expression 7 + 3 × 2 by placing the parentheses in different places.",
+        "equations": [
+          "7 + 3"
+        ]
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                                Lesson 8 Problem Set\n\n\nName                                                                                                                Date\n\n1. Solve.\n\n   a. (12 – 4) + 6 = ______                                                                           i.     ______ = (12 ÷ 2) + 4\n\n   b. 12 – (4 + 6) = ______                                                                           j.     ______ = 12 ÷ (2 + 4)\n\n\n   c. ______ = 15 – (7 + 3)                                                                           k. 9 + (15 ÷ 3) = ______\n\n   d. ______ = (15 – 7) + 3                                                                           l.     (9 + 15) ÷ 3 = ______\n\n\n   e. ______ = (3 + 2) × 6                                                                            m. 60 ÷ (10 – 4) = ______\n\n   f.        ______ = 3 + (2 × 6)                                                                     n. (60 ÷ 10) – 4 = ______\n\n\n   g. 4 × (7 – 2) = ______                                                                            o. ______ = 35 + (10 ÷ 5)\n\n   h. (4 × 7) – 2 = ______                                                                            p. ______ = (35 + 10) ÷ 5\n\n\n2. Use parentheses to make the equations true.\n\n\n        a. 16 – 4 + 7 = 19                                                              b. 16 – 4 + 7 = 5\n\n\n        c. 2 = 22 – 15 + 5                                                              d. 12 = 22 – 15 + 5\n\n\n        e. 3 + 7 × 6 = 60                                                               f.     3 + 7 × 6 = 45\n\n\n        g. 5 = 10 ÷ 10 × 5                                                              h. 50 = 100 ÷ 10 × 5\n\n\n        i.     26 – 5 ÷ 7 = 3                                                           j.     36 = 4 × 25 – 16\n\n\n                                Lesson 8:                Understand the function of parentheses and apply to solving problems.            102\n\n                                This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                                G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                       Lesson 8 Problem Set\n\n\n3. The teacher writes 24 ÷ 4 + 2 = ______ on the board. Chad says it equals 8. Samir says it equals 4.\n   Explain how placing the parentheses in the equation can make both answers true.\n\n\n4. Natasha solves the equation below by finding the sum of 5 and 12. Place the parentheses in the equation\n   to show her thinking. Then, solve.\n\n                      12 + 15 ÷ 3 = ________\n\n\n5. Find two possible answers to the expression 7 + 3 × 2 by placing the parentheses in different places.\n\n\n                       Lesson 8:                Understand the function of parentheses and apply to solving problems.            103\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015",
+    "answerKeyProblemSetText": "1.    a. 14                                                                      2.        a. (16 – 4) + 7 = 19\n      b. 2                                                                                 b. 16 – (4 + 7) = 5\n      c. 5                                                                                 c. 2 = 22 – (15 + 5)\n      d. 11                                                                                d. 12 = (22 – 15) + 5\n      e. 30                                                                                e. (3 + 7) × 6 = 60\n      f.   15                                                                              f.     3 + (7 × 6) = 45\n      g. 20                                                                                g. 5 = (10 ÷ 10) × 5\n      h. 26                                                                                h. 50 = (100 ÷ 10) × 5\n      i.   10                                                                              i.     (26 – 5) ÷ 7 = 3\n      j.   2                                                                               j.     36 = 4 × (25 – 16)\n      k. 14                                                                      3.        Chad used (24 ÷ 4) + 2 = 8;\n      l. 8                                                                                 Samir used 24 ÷ (4 + 2) = 4.\n      m. 10                                                                      4.        12 + (15 ÷ 3) = 17\n      n. 2                                                                       5.        13; 20\n      o. 37\n      p. 9",
+    "answerKeyText": "A STORY OF UNITS                                                                                          Lesson 8 Answer Key 3 3\n\n\nLesson 8\nPattern Sheet\n           7                                         14                                            21                             28\n          35                                         42                                            49                             56\n          63                                         70                                            35                             42\n          35                                         49                                            35                             56\n          35                                         63                                            35                             70\n          42                                         35                                            42                             49\n          42                                         56                                            42                             63\n          42                                         49                                            42                             49\n          56                                         49                                            63                             49\n          56                                         42                                            56                             49\n          56                                         63                                            63                             42\n          63                                         49                                            63                             56\n          63                                         56                                            42                             63\n          49                                         63                                            42                             56\n          63                                         49                                            42                             56\n\n\n                     Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10                   292\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                          Lesson 8 Answer Key 3 3\n\n\nProblem Set\n\n1.    a. 14                                                                      2.        a. (16 – 4) + 7 = 19\n      b. 2                                                                                 b. 16 – (4 + 7) = 5\n      c. 5                                                                                 c. 2 = 22 – (15 + 5)\n      d. 11                                                                                d. 12 = (22 – 15) + 5\n      e. 30                                                                                e. (3 + 7) × 6 = 60\n      f.   15                                                                              f.     3 + (7 × 6) = 45\n      g. 20                                                                                g. 5 = (10 ÷ 10) × 5\n      h. 26                                                                                h. 50 = (100 ÷ 10) × 5\n      i.   10                                                                              i.     (26 – 5) ÷ 7 = 3\n      j.   2                                                                               j.     36 = 4 × (25 – 16)\n      k. 14                                                                      3.        Chad used (24 ÷ 4) + 2 = 8;\n      l. 8                                                                                 Samir used 24 ÷ (4 + 2) = 4.\n      m. 10                                                                      4.        12 + (15 ÷ 3) = 17\n      n. 2                                                                       5.        13; 20\n      o. 37\n      p. 9\n\n\nExit Ticket\n1.    a. 24 = (32 – 14) + 6\n      b. 12 = 32 – (14 + 6)\n      c. (2 + 8) × 7 = 70\n      d. 2 + (8 × 7) = 58\n2.    Marcos used (24 ÷ 6) + 2 = 6; Iris used 24 ÷ (6 + 2) = 3.\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              293\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                          Lesson 8 Answer Key 3 3\n\n\nHomework\n1.    a. 0                                                                       3.        a. Answer provided\n      b. 6                                                                                 b. True\n      c. 8                                                                                 c. False\n      d. 12                                                                                d. True\n      e. 42                                                                                e. False\n      f.   22                                                                    4.        Explanations may vary.\n      g. 12                                                                      5.        (4 × 7) – 3 = 25\n      h. 2                                                                       6.        Agree; answers will vary.\n2.    a. 14 – (8 + 2) = 4\n      b. (14 – 8) + 2 = 8\n      c. 2 + (4 × 7) = 30\n      d. (2 + 4) × 7 = 42\n      e. 12 = (18 ÷ 3) × 2\n      f.   3 = 18 ÷ (3 × 2)\n      g. 5 = 50 ÷ (5 × 2)\n      h. 20 = (50 ÷ 5) × 2\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              294\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "number-bond",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "number-bond": [
+        "T: (Draw a number bond beneath the second 6.) On your personal white board, break apart the",
+        "S: (Write the number bond.)"
+      ],
+      "money-model": [
+        "Part 2: Explore how moving the parentheses can change the answer in an equation.",
+        "S: We should write 3 because the numbers didn’t change.  We don’t",
+        "parentheses can change the answer."
+      ],
+      "picture-or-drawing": [
+        "2 × 6 = 12 and 12 – 2 = 10. (Show picture to the right.) This picture shows ",
+        "Write or project the following equation and the picture below, right: (25 – 10) ÷ 5 = 3.",
+        "T: (Draw a number bond beneath the second 6.) On your personal white board, break apart the"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "The two equations used to solve the Application Problem are 2 × 6 = 12 and 12 – 2 = 10. (Show picture to the right.) This picture shows  both. Talk to your partner: How could we include all of this information in  one equation?"
+      },
+      {
+        "speaker": "students",
+        "text": "We can rewrite them as one equation. Maybe 2 × 6 – 2 = 10?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s find out. Solve the equation twice. The first time you solve it, multiply first. The second time you solve, subtract first. (Allow time for students to calculate.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "For this problem, the order does matter. We can use parentheses in our equation to show what to do first. Remind me, which part of the equation do we need to do first and why?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Watch how I use parentheses to show that. (Write (2 × 6) – 2 = 10.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Rewrite 2 × 6 as 12. What expression is left? NOTES ON"
+      },
+      {
+        "speaker": "students",
+        "text": "10. working above grade level to write"
+      },
+      {
+        "speaker": "students",
+        "text": "Richard has 10 eggs left. For example, a student might extend (2 × 6) – 2 = 10, as (2 × 6) −2 = Continue with the following suggested sequence: (7 – 2) × 2.  4 + 2 = 6 and 6 × 6 = 36  (4 + 2) × 6 = 36  12 ÷ 3 = 4 and 15 – 4 = 11  15 – (12 ÷ 3) = 11 parentheses. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 8 Write or project the following equation and the picture below, right: (25 – 10) ÷ 5 = 3."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s divide 10 by 5 first. What should we do with the parentheses to show that?"
+      },
+      {
+        "speaker": "students",
+        "text": "Move them over!  Make them go around 10 ÷ 5."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now the equation looks like this. (Write 25 – (10 ÷ 5) = n.) Write the equation on your personal white board. Why is there a letter where the 3 was before?"
+      },
+      {
+        "speaker": "students",
+        "text": "We should write 3 because the numbers didn’t change.  We don’t know if it equals 3 anymore."
+      },
+      {
+        "speaker": "students",
+        "text": "The parentheses moved."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Solve the problem with your partner. Does this equation still have an answer of 3?"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 97 (debrief) ---\nA STORY OF UNITS                                                                                                                Lesson 8\n\n\nLesson 8\nObjective: Understand the function of parentheses and apply to solving\nproblems.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (15 minutes)\n Application Problem               (5 minutes)\n Concept Development               (30 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (15 minutes)\n\n Multiply By 7 3.OA.7                                 (6 minutes)\n Group Counting 3.OA.1                                (4 minutes)\n Add 6 and 7 Mentally 2.NBT.5                         (5 minutes)\n\nMultiply By 7 (6 minutes)\nMaterials: (S) Multiply By 7 (6–10) (Pattern Sheet)\n                                                                                                                            NOTES ON\nNote: This activity builds fluency with multiplication facts using\n                                                                                                                            MULTIPLE MEANS\nunits of seven. It supports students knowing from memory all\nproducts of two one-digit numbers. See Lesson 5 for the                                                                     OF ENGAGEMENT:\n                                                                                                                 Multiply By 7 is carefully scaffolded to\ndirections for administering a Multiply By Pattern Sheet.\n                                                                                                                 support student success. Adjust the\n    T:   (Write 6 × 7 = ____.) Let’s skip-count up by sevens to                                                  activity to suit students’ diverse needs.\n         solve. I’ll raise a finger for each seven.                                                              For example, focus on one skill, such as\n         (Count with fingers to 6 as students count.)                                                            skip-counting down to solve. Or, have\n                                                                                                                 students review and solidify their\n    S:   7, 14, 21, 28, 35, 42.                                                                                  memorization of skip-counting up by\n    T:   Let’s skip-count down to find the answer, too.                                                          seven by doing the Group Counting\n         Start at 70. (Count down with fingers as students                                                       first.\n         count.)\n    S:   70, 63, 56, 49, 42.\nContinue with the following suggested sequence: 8 × 7, 7 × 7, and 9 × 7.\n    T:   (Distribute the Multiply By 7 Pattern Sheet.) Let’s practice multiplying by 7. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 8:                Understand the function of parentheses and apply to solving problems.                                      96\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 98 (concept-development) ---\nA STORY OF UNITS                                                                                                               Lesson 8\n\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by sixes reviews\nmultiplication using units of six from Topic B. Group counting eights prepares students for multiplication\nin this topic. Group counting nines anticipates multiplication using units of nine later in the module.\nDirect students to count forward and backward, occasionally changing the direction of the count:\n        Sixes to 60\n        Eights to 80\n        Nines to 90\n\nAdd 6 and 7 Mentally (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews the make ten strategy used for skip-counting by sixes and sevens in Lessons 4\nand 5.\n    T:   (Project 6 + 6 = ___.) Say the expression.\n    S:   6 + 6.\n    T:   6 and what make ten?\n    S:   4.\n    T:   (Draw a number bond beneath the second 6.) On your personal white board, break apart the\n         second 6, taking out the 4.\n    S:   (Write the number bond.)\n    T:   Say the addition sentence.\n    S:   6 + 6 = 12.\nContinue with the following possible sequence: 12 + 6, 18 + 6, 24 + 6, 30 + 6, 36 + 6, 42 + 6, 48 + 6, 54 + 6,\n7 + 7, 14 + 7, 21 + 7, 28 + 7, 35 + 7, 42 + 7, 49 + 7, 56 + 7, and 63 + 7.\n\n\nApplication Problem (5 minutes)\n\nRichard has 2 cartons with 6 eggs in each. As he opens the cartons, he drops 2 eggs. How many unbroken\neggs does Richard have left?\n\n\nNote: This problem provides a context for solving equations involving multiple operations which is central to\nthe Concept Development.\n\n\n                        Lesson 8:                Understand the function of parentheses and apply to solving problems.                       97\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 99 (concept-development) ---\nA STORY OF UNITS                                                                                                                 Lesson 8\n\n\nConcept Development (30 minutes)\n\nMaterials: (S) Personal white board\n\nPart 1: Solve equations containing parentheses.\n    T:   The two equations used to solve the Application Problem are\n         2 × 6 = 12 and 12 – 2 = 10. (Show picture to the right.) This picture shows                \n         both. Talk to your partner: How could we include all of this information in\n                                                                                                    \n         one equation?\n    S:   We can rewrite them as one equation. Maybe 2 × 6 – 2 = 10?\n    T:   Let’s check to make sure the new equation equals 10. Should we multiply first or subtract first?\n         Does it matter?\n    S:   I don’t think it matters.  Before we multiplied first, so let’s do that again.\n    T:   Let’s find out. Solve the equation twice. The first time you solve it, multiply first. The second time\n         you solve, subtract first. (Allow time for students to calculate.)\n    S:   When I multiplied first, I still got 10, but when I subtracted first, I got 8.\n    T:   For this problem, the order does matter. We can use parentheses in our equation to show what to\n         do first. Remind me, which part of the equation do we need to do first and why?\n    S:   2 × 6. We have to find the total number of eggs Richard has in 2 cartons first.\n    T:   Watch how I use parentheses to show that. (Write (2 × 6) – 2 = 10.)\n    T:   What is the product of 2 × 6?\n    S:   12.\n    T:   Rewrite 2 × 6 as 12. What expression is left?                                   NOTES ON\n    S:   12 – 2.                                                                         MULTIPLE MEANS\n                                                                                         OF ENGAGEMENT:\n    T:   What does 12 – 2 equal?\n                                                                                 Alternatively, challenge students\n    S:   10.                                                                     working above grade level to write\n    T:   In a complete sentence, how many eggs does Richard                      equations in which multiple operations\n         have left?                                                              are used on both sides of the equation.\n    S:   Richard has 10 eggs left.                                               For example, a student might extend\n                                                                                                                 (2 × 6) – 2 = 10, as (2 × 6) −2 =\nContinue with the following suggested sequence:                                                                  (7 – 2) × 2.\n        4 + 2 = 6 and 6 × 6 = 36  (4 + 2) × 6 = 36\n        12 ÷ 3 = 4 and 15 – 4 = 11  15 – (12 ÷ 3) = 11\nNote: Have students refer back to the original problem, as the situation dictates the placement of the\nparentheses.\n\n\n                         Lesson 8:                Understand the function of parentheses and apply to solving problems.                              98\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 100 (application-problem) ---\nA STORY OF UNITS                                                                                                                Lesson 8\n\n\nPart 2: Explore how moving the parentheses can change the answer in an equation.\nWrite or project the following equation and the picture below, right: (25 – 10) ÷ 5 = 3.\n    T:   Check my work. Is it correct?\n    S:   Yes, because 25 – 10 equals 15, and 15 ÷ 5 equals 3.\n    T:   Let’s divide 10 by 5 first. What should we do with the parentheses to show\n         that?\n    S:   Move them over!  Make them go around 10 ÷ 5.\n    T:   Now the equation looks like this. (Write 25 – (10 ÷ 5) = n.) Write the\n         equation on your personal white board. Why is there a letter where the\n         3 was before?\n    S:   We should write 3 because the numbers didn’t change.  We don’t\n         know if it equals 3 anymore.\n    T:   Really? Why not? The numbers are the same as before.\n    S:   The parentheses moved.\n    T:   Solve the problem with your partner. Does this equation still have\n         an answer of 3?\n    S:   (Work and discuss.) No, the answer is 23.\n    T:   Why is the answer different?\n    S:   We divided first.  One way, we divided 15 by 5.  The other way, we subtracted 2 from 25.\n          We divided and then subtracted. Before, we subtracted, and then divided.\n    T:   What does this tell you about the way we use parentheses to group the math in equations? Is it\n         important? Why or why not?\n    S:   The parentheses tell us what math gets done\n         first.  Yes, it’s important because moving the\n         parentheses can change the answer.\nContinue with the following suggested sequence:\n        (2 + 3) × 7 and 2 + (3 × 7)\n        (3 × 4) ÷ 2 and 3 × (4 ÷ 2)\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\n                         Lesson 8:                Understand the function of parentheses and apply to solving problems.                       99\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 101 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 8\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Understand the function of\nparentheses and apply to solving problems.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with\na partner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process\nthe lesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Look at Problem 1(j). Would the answer be the\n         same if I solved (12 ÷ 2) + (12 ÷ 4)? Why not?\n         (Lead students to understand that they cannot\n         distribute in this problem.)\n        Look at Problem 1(l). Would the answer be the\n         same if I solved (9 ÷ 3) + (15 ÷ 3)? Why?\n        How did you discover where the parentheses belonged in Problem 2?\n        Why does moving the parentheses in an equation only change the answer sometimes?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that were presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 8:                Understand the function of parentheses and apply to solving problems.                       100\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 102 (template) ---\nA STORY OF UNITS                                                                                    Lesson 8 Pattern Sheet\n\n\n    Multiply.\n\n\nmultiply by 7 (6–10)\n\n\n                       Lesson 8:                Understand the function of parentheses and apply to solving problems.            101\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 103 (problem-set) ---\nA STORY OF UNITS                                                                                                Lesson 8 Problem Set\n\n\nName                                                                                                                Date\n\n1. Solve.\n\n   a. (12 – 4) + 6 = ______                                                                           i.     ______ = (12 ÷ 2) + 4\n\n   b. 12 – (4 + 6) = ______                                                                           j.     ______ = 12 ÷ (2 + 4)\n\n\n   c. ______ = 15 – (7 + 3)                                                                           k. 9 + (15 ÷ 3) = ______\n\n   d. ______ = (15 – 7) + 3                                                                           l.     (9 + 15) ÷ 3 = ______\n\n\n   e. ______ = (3 + 2) × 6                                                                            m. 60 ÷ (10 – 4) = ______\n\n   f.        ______ = 3 + (2 × 6)                                                                     n. (60 ÷ 10) – 4 = ______\n\n\n   g. 4 × (7 – 2) = ______                                                                            o. ______ = 35 + (10 ÷ 5)\n\n   h. (4 × 7) – 2 = ______                                                                            p. ______ = (35 + 10) ÷ 5\n\n\n2. Use parentheses to make the equations true.\n\n\n        a. 16 – 4 + 7 = 19                                                              b. 16 – 4 + 7 = 5\n\n\n        c. 2 = 22 – 15 + 5                                                              d. 12 = 22 – 15 + 5\n\n\n        e. 3 + 7 × 6 = 60                                                               f.     3 + 7 × 6 = 45\n\n\n        g. 5 = 10 ÷ 10 × 5                                                              h. 50 = 100 ÷ 10 × 5\n\n\n        i.     26 – 5 ÷ 7 = 3                                                           j.     36 = 4 × 25 – 16\n\n\n                                Lesson 8:                Understand the function of parentheses and apply to solving problems.            102\n\n                                This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                                G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 104 (problem-set) ---\nA STORY OF UNITS                                                                                       Lesson 8 Problem Set\n\n\n3. The teacher writes 24 ÷ 4 + 2 = ______ on the board. Chad says it equals 8. Samir says it equals 4.\n   Explain how placing the parentheses in the equation can make both answers true.\n\n\n4. Natasha solves the equation below by finding the sum of 5 and 12. Place the parentheses in the equation\n   to show her thinking. Then, solve.\n\n                      12 + 15 ÷ 3 = ________\n\n\n5. Find two possible answers to the expression 7 + 3 × 2 by placing the parentheses in different places.\n\n\n                       Lesson 8:                Understand the function of parentheses and apply to solving problems.            103\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 105 (exit-ticket) ---\nA STORY OF UNITS                                                                                               Lesson 8 Exit Ticket\n\n\nName                                                                                                          Date\n\n1. Use parentheses to make the equations true.\n\n    a. 24 = 32 – 14 + 6                                             b. 12 = 32 – 14 + 6\n\n    c. 2 + 8 × 7 = 70                                               d. 2 + 8 × 7 = 58\n\n\n2. Marcos solves 24 ÷ 6 + 2 = ______. He says it equals 6. Iris says it equals 3. Show how the position of\n   parentheses in the equation can make both answers true.\n\n\n                        Lesson 8:                Understand the function of parentheses and apply to solving problems.                   104\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 106 (homework) ---\nA STORY OF UNITS                                                                                            Lesson 8 Homework\n\n\nName                                                                                                         Date\n\n1. Solve.\n\n   a. 9 – (6 + 3) = ______                                                                     b. (9 – 6) + 3 = ______\n\n\n   c. ______= 14 – (4 + 2)                                                                     d. ______ = (14 – 4) + 2\n\n\n   e. ______ = (4 + 3) × 6                                                                     f.     ______ = 4 + (3 × 6)\n\n\n   g. (18 ÷ 3) + 6 = ______                                                                    h. 18 ÷ (3 + 6) = ______\n\n\n2. Use parentheses to make the equations true.\n\n\n a. 14 – 8 + 2 = 4                   b. 14 – 8 + 2 = 8                              c. 2 + 4 × 7 = 30                              d. 2 + 4 × 7 = 42\n\n\n  e.   12 = 18 ÷ 3 × 2                   f.       3 = 18 ÷ 3 × 2                      g. 5 = 50 ÷ 5 × 2                            h. 20 = 50 ÷ 5 × 2\n\n\n                         Lesson 8:                Understand the function of parentheses and apply to solving problems.                                 105\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 107 (homework) ---\nA STORY OF UNITS                                                                                           Lesson 8 Homework\n\n\n3. Determine if the equation is true or false.\n\n      a. (15 – 3) ÷ 2 = 6                                                                   Example: True\n\n      b. (10 – 7) × 6 = 18\n\n      c. (35 – 7) ÷ 4 = 8\n\n      d. 28 = 4 × (20 – 13)\n\n      e. 35 = (22 – 8) ÷ 5\n\n\n4. Jerome finds that (3 × 6) ÷ 2 and 18 ÷ 2 are equal. Explain why this is true.\n\n\n5. Place parentheses in the equation below so that you solve by finding the difference between 28 and 3.\n   Write the answer.\n\n                   4 × 7 – 3 = ________\n\n\n6. Johnny says that the answer to 2 × 6 ÷ 3 is 4 no matter where he puts the parentheses. Do you agree?\n   Place parentheses around different numbers to help you explain his thinking.\n\n\n                        Lesson 8:                Understand the function of parentheses and apply to solving problems.            106\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015",
+    "problemSetPages": [
+      {
+        "pdfPage": 103,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                                Lesson 8 Problem Set\n\n\nName                                                                                                                Date\n\n1. Solve.\n\n   a. (12 – 4) + 6 = ______                                                                           i.     ______ = (12 ÷ 2) + 4\n\n   b. 12 – (4 + 6) = ______                                                                           j.     ______ = 12 ÷ (2 + 4)\n\n\n   c. ______ = 15 – (7 + 3)                                                                           k. 9 + (15 ÷ 3) = ______\n\n   d. ______ = (15 – 7) + 3                                                                           l.     (9 + 15) ÷ 3 = ______\n\n\n   e. ______ = (3 + 2) × 6                                                                            m. 60 ÷ (10 – 4) = ______\n\n   f.        ______ = 3 + (2 × 6)                                                                     n. (60 ÷ 10) – 4 = ______\n\n\n   g. 4 × (7 – 2) = ______                                                                            o. ______ = 35 + (10 ÷ 5)\n\n   h. (4 × 7) – 2 = ______                                                                            p. ______ = (35 + 10) ÷ 5\n\n\n2. Use parentheses to make the equations true.\n\n\n        a. 16 – 4 + 7 = 19                                                              b. 16 – 4 + 7 = 5\n\n\n        c. 2 = 22 – 15 + 5                                                              d. 12 = 22 – 15 + 5\n\n\n        e. 3 + 7 × 6 = 60                                                               f.     3 + 7 × 6 = 45\n\n\n        g. 5 = 10 ÷ 10 × 5                                                              h. 50 = 100 ÷ 10 × 5\n\n\n        i.     26 – 5 ÷ 7 = 3                                                           j.     36 = 4 × 25 – 16\n\n\n                                Lesson 8:                Understand the function of parentheses and apply to solving problems.            102\n\n                                This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                                G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 104,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                       Lesson 8 Problem Set\n\n\n3. The teacher writes 24 ÷ 4 + 2 = ______ on the board. Chad says it equals 8. Samir says it equals 4.\n   Explain how placing the parentheses in the equation can make both answers true.\n\n\n4. Natasha solves the equation below by finding the sum of 5 and 12. Place the parentheses in the equation\n   to show her thinking. Then, solve.\n\n                      12 + 15 ÷ 3 = ________\n\n\n5. Find two possible answers to the expression 7 + 3 × 2 by placing the parentheses in different places.\n\n\n                       Lesson 8:                Understand the function of parentheses and apply to solving problems.            103\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 293,
+        "text": "A STORY OF UNITS                                                                                          Lesson 8 Answer Key 3 3\n\n\nLesson 8\nPattern Sheet\n           7                                         14                                            21                             28\n          35                                         42                                            49                             56\n          63                                         70                                            35                             42\n          35                                         49                                            35                             56\n          35                                         63                                            35                             70\n          42                                         35                                            42                             49\n          42                                         56                                            42                             63\n          42                                         49                                            42                             49\n          56                                         49                                            63                             49\n          56                                         42                                            56                             49\n          56                                         63                                            63                             42\n          63                                         49                                            63                             56\n          63                                         56                                            42                             63\n          49                                         63                                            42                             56\n          63                                         49                                            42                             56\n\n\n                     Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10                   292\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 294,
+        "text": "A STORY OF UNITS                                                                                          Lesson 8 Answer Key 3 3\n\n\nProblem Set\n\n1.    a. 14                                                                      2.        a. (16 – 4) + 7 = 19\n      b. 2                                                                                 b. 16 – (4 + 7) = 5\n      c. 5                                                                                 c. 2 = 22 – (15 + 5)\n      d. 11                                                                                d. 12 = (22 – 15) + 5\n      e. 30                                                                                e. (3 + 7) × 6 = 60\n      f.   15                                                                              f.     3 + (7 × 6) = 45\n      g. 20                                                                                g. 5 = (10 ÷ 10) × 5\n      h. 26                                                                                h. 50 = (100 ÷ 10) × 5\n      i.   10                                                                              i.     (26 – 5) ÷ 7 = 3\n      j.   2                                                                               j.     36 = 4 × (25 – 16)\n      k. 14                                                                      3.        Chad used (24 ÷ 4) + 2 = 8;\n      l. 8                                                                                 Samir used 24 ÷ (4 + 2) = 4.\n      m. 10                                                                      4.        12 + (15 ÷ 3) = 17\n      n. 2                                                                       5.        13; 20\n      o. 37\n      p. 9\n\n\nExit Ticket\n1.    a. 24 = (32 – 14) + 6\n      b. 12 = 32 – (14 + 6)\n      c. (2 + 8) × 7 = 70\n      d. 2 + (8 × 7) = 58\n2.    Marcos used (24 ÷ 6) + 2 = 6; Iris used 24 ÷ (6 + 2) = 3.\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              293\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 295,
+        "text": "A STORY OF UNITS                                                                                          Lesson 8 Answer Key 3 3\n\n\nHomework\n1.    a. 0                                                                       3.        a. Answer provided\n      b. 6                                                                                 b. True\n      c. 8                                                                                 c. False\n      d. 12                                                                                d. True\n      e. 42                                                                                e. False\n      f.   22                                                                    4.        Explanations may vary.\n      g. 12                                                                      5.        (4 × 7) – 3 = 25\n      h. 2                                                                       6.        Agree; answers will vary.\n2.    a. 14 – (8 + 2) = 4\n      b. (14 – 8) + 2 = 8\n      c. 2 + (4 × 7) = 30\n      d. (2 + 4) × 7 = 42\n      e. 12 = (18 ÷ 3) × 2\n      f.   3 = 18 ÷ (3 × 2)\n      g. 5 = 50 ÷ (5 × 2)\n      h. 20 = (50 ÷ 5) × 2\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              294\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015"
+      }
+    ]
+  }
+}

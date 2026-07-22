@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m3-l15",
+  "moduleId": "m3",
+  "lessonNumber": 15,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_3/g3_m3_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+    "teacherEditionBytes": 14065864,
+    "lessonPdfPages": {
+      "start": 187,
+      "end": 199
+    },
+    "problemSetPdfPages": [
+      193,
+      194
+    ],
+    "exitTicketPdfPages": [
+      195
+    ],
+    "homeworkPdfPages": [
+      196,
+      197
+    ],
+    "answerKeyPdfPages": [
+      307,
+      308
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m3-student/workbook-page-065.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m3-answer-key/page-307.png",
+      "/source-pages/m3-answer-key/page-308.png"
+    ]
+  },
+  "objective": "Interpret the unknown in multiplication and division to model and solve problems.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "Materials: (S) Personal white board\n\nProblem 1: Interpret the unknown in multiplication.\nWrite or project the following problem: Ada buys 9 packs of\nhighlighters with 4 in each pack. After giving 1 highlighter to                                                           NOTES ON\neach classmate, she has 17 left. How many highlighters does\n                                                                                                                          MULTIPLE MEANS\nAda give away?\n                                                                                                                          OF ENGAGEMENT:\n    T:   Model the problem. Then, tell your partner the steps                                                   Students working above grade level\n         you’ll follow to solve it.                                                                             and others may not identify a strategy\n    S:   (Model.) First, you have to find out how many                                                          for solving 9 × 4 = 36, instead saying,\n         highlighters Ada has.  After that, subtract 17 from                                                   “It’s easy! I just knew it.” Challenge\n         the total to see how many she gives away.                                                              students to articulate strategies that\n                                                                                                                work so well they seem automatic.\n    T:   Write and solve an equation to find the total number                                                   Ask, “Did you count by fours? Did you\n         of highlighters. Use h to represent the unknown.                                                       switch the factors and calculate 4 × 9\n         (Allow students time to finish their work.)                                                            instead? Did you use a pattern to\n    T:   What equation did you use?                                                                             solve? If so, what pattern?”\n    S:   9 × 4 = h.\n\n\n                        Lesson 15:               Interpret the unknown in multiplication and division to model and solve                                  187\n                                                 problems.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 15 3 3\n\n\n    T:   Talk to your partner. What strategy for solving nines facts did you use?\n    S:   (Discuss.)\n    T:   What is the value of h?\n    S:   The value of h is 36.\n    T:   How many highlighters does Ada have at the start?\n    S:   36 highlighters.\n    T:   Is the problem complete yet?\n    S:   No, we have to find how many highlighters Ada gives away.\n    T:   Solve the second step of the problem using the letter g to\n         represent the unknown.\n    S:   (Write 36 – 17 = g and solve.)\n    T:   What is the value of g?\n    S:   The value of g is 19.\n    T:   How many highlighters does Ada give away?\n    S:   Ada gives away 19 highlighters.\n    T:   Can we tell how many classmates Ada has? How do you know?\n    S:   Ada has 19 classmates! I know because she gave 1 highlighter to each classmate, and she gave away\n         19 highlighters.\n\nProblem 2: Interpret the unknown in division.\nWrite the following problem: Eliza finds a bag of 72 marbles\nand runs to share them with 8 of her friends. She’s so excited                                                            NOTES ON\nthat she drops the bag and loses 18 marbles. How many                                                                     MULTIPLE MEANS\nmarbles will Eliza and each of her friends get?                                                                           OF ACTION AND\n    T:   What should we do first, subtract or divide? Why?                                                                EXPRESSION:\n    S:   We should subtract.  Subtract because we need to             Some students may mistakenly\n         find out how many marbles Eliza has left after she loses      interpret the divisor to be 8 rather\n         some.                                                         than 9. Use this example to highlight\n                                                                       the advantages of carefully reading\n    T:   Write an equation to solve for the first unknown.             word problems and drawing a picture\n         Use m to represent the number of marbles Eliza has.           to solve. Guide students to underline\n    S:   (Solve 72 – 18 = m.)                                          Eliza and each of her friends in the\n                                                                       final question before attempting an\n    T:   What is the value of m?\n                                                                       equation.\n    S:   54.\n    T:   So, how many marbles does Eliza have to give away?\n    S:   54 marbles!\n    T:   Is our work on this problem finished?\n    S:   No! Now we have to find out how many marbles each friend gets!\n    T:   Draw a model that represents how many marbles each friend gets.\n\n\n                        Lesson 15:               Interpret the unknown in multiplication and division to model and solve                     188\n                                                 problems.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                                Lesson 15 3 3\n\n\n    T:   (After finishing.) How many units are in your model?\n    S:   9 units.\n    T:   What part of the problem tells you that your model needs 9 units?\n    S:   Where it says, “Eliza and each of her friends.” She has 8 friends,\n         and 8 + 1 = 9.\n    T:   Write an equation to solve for the second unknown. Use g to\n         represent the number of marbles each friend gets.\n    S:   (Solve 54 ÷ 9 = g.)\n    T:   How many marbles does each friend get? How do you know?\n    S:   Each friend gets 6 marbles.  6 marbles because the value of\n         g is 6, and g represents the number of marbles each friend gets.",
+    "fluencyPracticeText": " Multiply By 9 3.OA.7                    (7 minutes)\n Group Counting 3.OA.1                   (4 minutes)\n Divide by 9 3.OA.7                      (4 minutes)\n\nMultiply By 9 (7 minutes)\nMaterials: (S) Multiply By 9 (6–10) (Pattern Sheet)\n\nNote: This activity builds fluency with respect to multiplication facts using units of 9. It supports students\nknowing from memory all products of two one-digit numbers. See Lesson 5 for the directions regarding\nadministering a Multiply By Pattern Sheet.\n    T:   (Write 6 × 9 = ____.) Let’s skip-count up by nine to solve. (Count with fingers to 6 as students\n         count.)\n    S:   9, 18, 27, 36, 45, 54.\n    T:   Let’s skip-count down to find the answer, too. Start at 90. (Starting with 10 fingers, count down as\n         students count.)\n    S:   90, 81, 72, 63, 54.\n    T:   Let’s skip-count up again to find the answer, but this time start at 45. (Starting with 5 fingers, count\n         up as students count.)\n    S:   45, 54.\nContinue with the following possible suggestions: 8 × 9, 7 × 9, and 9 × 9.\n    T:   (Distribute the Multiply By 9 Pattern Sheet.) Let’s practice multiplying by 9. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 15:               Interpret the unknown in multiplication and division to model and solve                     186\n                                                  problems.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 15 3 3\n\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by sixes, sevens,\nand eights reviews multiplication taught previously in the module. Direct students to count forward and\nbackward, occasionally changing the direction of the count:\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n\nDivide by 9 (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews using a letter to represent the unknown, which was first taught in\nLesson 3.\n    T:   (Write a × 9 = 18.) On your personal white board, write the value of a.\n    S:   (Write a = 2.)\n    T:   (Write 18 ÷ 9 = ___.) Say the division sentence.\n    S:   18 ÷ 9 = 2.\nContinue with the following possible sequence: b × 9 = 45, c × 9 = 36, d × 9 = 54, e × 9 = 27, f × 9 = 90,\ng × 9 = 81, and h × 9 = 72.",
+    "problemSetGuidanceText": "Students should do their personal best to complete the Problem Set within the allotted 10 minutes.\nFor some classes, it may be appropriate to modify the assignment by specifying which problems they work on\nfirst. Some problems do not specify a method for solving. Students should solve these problems using the\nRDW approach used for Application Problems.",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Model the problem. Then, tell your partner the steps Students working above grade level you’ll follow to solve it. and others may not identify a strategy"
+      },
+      {
+        "speaker": "students",
+        "text": "(Model.) First, you have to find out how many for solving 9 × 4 = 36, instead saying, highlighters Ada has.  After that, subtract 17 from “It’s easy! I just knew it.” Challenge the total to see how many she gives away. students to articulate strategies that work so well they seem automatic."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write and solve an equation to find the total number Ask, “Did you count by fours? Did you of highlighters. Use h to represent the unknown. switch the factors and calculate 4 × 9 (Allow students time to finish their work.) instead? Did you use a pattern to"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What equation did you use? solve? If so, what pattern?”"
+      },
+      {
+        "speaker": "students",
+        "text": "9 × 4 = h. problems. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 15 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner. What strategy for solving nines facts did you use?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the value of h?"
+      },
+      {
+        "speaker": "students",
+        "text": "The value of h is 36."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many highlighters does Ada have at the start?"
+      },
+      {
+        "speaker": "students",
+        "text": "36 highlighters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is the problem complete yet?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, we have to find how many highlighters Ada gives away."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Solve the second step of the problem using the letter g to represent the unknown."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 36 – 17 = g and solve.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the value of g?"
+      },
+      {
+        "speaker": "students",
+        "text": "The value of g is 19."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many highlighters does Ada give away?"
+      },
+      {
+        "speaker": "students",
+        "text": "Ada gives away 19 highlighters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can we tell how many classmates Ada has? How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "Ada has 19 classmates! I know because she gave 1 highlighter to each classmate, and she gave away 19 highlighters. Write the following problem: Eliza finds a bag of 72 marbles and runs to share them with 8 of her friends. She’s so excited NOTES ON that she drops the bag and loses 18 marbles. How many MULTIPLE MEANS marbles will Eliza and each of her friends get? OF ACTION AND"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What should we do first, subtract or divide? Why? EXPRESSION:"
+      },
+      {
+        "speaker": "students",
+        "text": "We should subtract.  Subtract because we need to Some students may mistakenly find out how many marbles Eliza has left after she loses interpret the divisor to be 8 rather some. than 9. Use this example to highlight the advantages of carefully reading"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write an equation to solve for the first unknown. word problems and drawing a picture Use m to represent the number of marbles Eliza has. to solve. Guide students to underline"
+      },
+      {
+        "speaker": "students",
+        "text": "(Solve 72 – 18 = m.) Eliza and each of her friends in the final question before attempting an"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the value of m? equation."
+      },
+      {
+        "speaker": "students",
+        "text": "54."
+      },
+      {
+        "speaker": "teacher",
+        "text": "So, how many marbles does Eliza have to give away?"
+      },
+      {
+        "speaker": "students",
+        "text": "54 marbles!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is our work on this problem finished?"
+      },
+      {
+        "speaker": "students",
+        "text": "No! Now we have to find out how many marbles each friend gets!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a model that represents how many marbles each friend gets. problems. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 15 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(After finishing.) How many units are in your model?"
+      },
+      {
+        "speaker": "students",
+        "text": "9 units."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What part of the problem tells you that your model needs 9 units?"
+      },
+      {
+        "speaker": "students",
+        "text": "Where it says, “Eliza and each of her friends.” She has 8 friends, and 8 + 1 = 9."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write an equation to solve for the second unknown. Use g to represent the number of marbles each friend gets."
+      },
+      {
+        "speaker": "students",
+        "text": "(Solve 54 ÷ 9 = g.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many marbles does each friend get? How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "Each friend gets 6 marbles.  6 marbles because the value of g is 6, and g represents the number of marbles each friend gets."
+      }
+    ],
+    "teacherPrompts": [
+      "Model the problem. Then, tell your partner the steps Students working above grade level you’ll follow to solve it. and others may not identify a strategy",
+      "Write and solve an equation to find the total number Ask, “Did you count by fours? Did you of highlighters. Use h to represent the unknown. switch the factors and calculate 4 × 9 (Allow students time to finish their work.) instead? Did you use a pattern to",
+      "What equation did you use? solve? If so, what pattern?”",
+      "Talk to your partner. What strategy for solving nines facts did you use?",
+      "What is the value of h?",
+      "How many highlighters does Ada have at the start?",
+      "Is the problem complete yet?",
+      "Solve the second step of the problem using the letter g to represent the unknown.",
+      "What is the value of g?",
+      "How many highlighters does Ada give away?",
+      "Can we tell how many classmates Ada has? How do you know?",
+      "What should we do first, subtract or divide? Why? EXPRESSION:",
+      "Write an equation to solve for the first unknown. word problems and drawing a picture Use m to represent the number of marbles Eliza has. to solve. Guide students to underline",
+      "What is the value of m? equation.",
+      "So, how many marbles does Eliza have to give away?",
+      "Is our work on this problem finished?",
+      "Draw a model that represents how many marbles each friend gets. problems. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 15 3 3",
+      "(After finishing.) How many units are in your model?",
+      "What part of the problem tells you that your model needs 9 units?",
+      "Write an equation to solve for the second unknown. Use g to represent the number of marbles each friend gets.",
+      "How many marbles does each friend get? How do you know?"
+    ],
+    "debriefPrompt": "In your model for Problem 1, is the unknown the number of units or the size of each unit?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Mrs. Parson gave each of her grandchildren $9. She gave a total of $36. How many grandchildren does Mrs. Parson have?",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "Shiva pours 27 liters of water equally into 9 containers. How many liters of water are in each container?",
+        "equations": []
+      },
+      {
+        "number": 3,
+        "prompt": "Derek cuts 7 pieces of wire. Each piece is 9 meters long. What is the total length of the 7 pieces? problems.",
+        "equations": []
+      },
+      {
+        "number": 4,
+        "prompt": "Aunt Deena and Uncle Chris share the cost of a limousine ride with their 7 friends. The ride cost a total of $63. If everyone shares the cost equally, how much does each person pay?",
+        "equations": []
+      },
+      {
+        "number": 5,
+        "prompt": "Cara bought 9 packs of beads. There are 10 beads in each pack. She always uses 30 beads to make each necklace. How many necklaces can she make if she uses all the beads?",
+        "equations": []
+      },
+      {
+        "number": 6,
+        "prompt": "There are 8 erasers in a set. Damon buys 9 sets. After giving some erasers away, Damon has 35 erasers left. How many erasers did he give away? problems.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                    Lesson 15 Problem Set 3 3\n\n\nName                                                                                                       Date\n\nWrite an equation, and use a letter to represent the unknown for Problems 1–6.\n\n1. Mrs. Parson gave each of her grandchildren $9. She gave a total of $36. How many grandchildren does\n   Mrs. Parson have?\n\n\n2. Shiva pours 27 liters of water equally into 9 containers. How many liters of water are in each container?\n\n\n3. Derek cuts 7 pieces of wire. Each piece is 9 meters long. What is the total length of the 7 pieces?\n\n\n                       Lesson 15:               Interpret the unknown in multiplication and division to model and solve          192\n                                                problems.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                     Lesson 15 Problem Set 3 3\n\n\n4. Aunt Deena and Uncle Chris share the cost of a limousine ride with their 7 friends. The ride cost a total\n   of $63. If everyone shares the cost equally, how much does each person pay?\n\n\n5. Cara bought 9 packs of beads. There are 10 beads in each pack. She always uses 30 beads to make each\n   necklace. How many necklaces can she make if she uses all the beads?\n\n\n6. There are 8 erasers in a set. Damon buys 9 sets. After giving some erasers away, Damon has 35 erasers\n   left. How many erasers did he give away?\n\n\n                       Lesson 15:                Interpret the unknown in multiplication and division to model and solve          193\n                                                 problems.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015",
+    "answerKeyProblemSetText": "1.    4; solution includes equation and an unknown\n2.    3 L; solution includes equation and an unknown\n3.    63 m; solution includes equation and an unknown\n4.    $7; solution includes equation and an unknown\n5.    3; solution includes equation and an unknown\n6.    37; solution includes equation and an unknown",
+    "answerKeyText": "A STORY OF UNITS                                                                                       Lesson 15 Answer Key 3 3\n\n\nLesson 15\nPattern Sheet\n              9                                         18                                            27                             36\n              45                                        54                                            63                             72\n              81                                        90                                            45                             54\n              45                                        63                                            45                             72\n              45                                        81                                            45                             90\n              54                                        45                                            54                             63\n              54                                        72                                            54                             81\n              54                                        63                                            54                             63\n              72                                        63                                            81                             63\n              72                                        54                                            72                             63\n              72                                        81                                            81                             54\n              81                                        63                                            81                             72\n              81                                        72                                            54                             81\n              63                                        81                                            54                             72\n              81                                        63                                            54                             72\n\n\nProblem Set\n\n1.    4; solution includes equation and an unknown\n2.    3 L; solution includes equation and an unknown\n3.    63 m; solution includes equation and an unknown\n4.    $7; solution includes equation and an unknown\n5.    3; solution includes equation and an unknown\n6.    37; solution includes equation and an unknown\n\n\nExit Ticket\n1.    4 L; solution includes an unknown\n2.    19; solution includes an unknown\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10                   306\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                       Lesson 15 Answer Key 3 3\n\n\nHomework\n1.    Tape diagram drawn and labeled; 36 ÷ 9 = a; a = 4\n2.    5; solution includes an unknown\n3.    $63; solution includes an unknown\n4.    9m\n5.    54\n6.    3\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              307\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "liquid-measure",
+      "ruler-or-length",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "liquid-measure": [
+        "2. Shiva pours 27 liters of water equally into 9 containers. How many liters of water are in each container?"
+      ],
+      "ruler-or-length": [
+        "3. Derek cuts 7 pieces of wire. Each piece is 9 meters long. What is the total length of the 7 pieces?"
+      ],
+      "money-model": [
+        "1. Mrs. Parson gave each of her grandchildren $9. She gave a total of $36. How many grandchildren does",
+        "4. Aunt Deena and Uncle Chris share the cost of a limousine ride with their 7 friends. The ride cost a total",
+        "of $63. If everyone shares the cost equally, how much does each person pay?"
+      ],
+      "picture-or-drawing": [
+        "T: Write an equation to solve for the first unknown. word problems and drawing a picture",
+        "T: Draw a model that represents how many marbles each friend gets."
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Model the problem. Then, tell your partner the steps Students working above grade level you’ll follow to solve it. and others may not identify a strategy"
+      },
+      {
+        "speaker": "students",
+        "text": "(Model.) First, you have to find out how many for solving 9 × 4 = 36, instead saying, highlighters Ada has.  After that, subtract 17 from “It’s easy! I just knew it.” Challenge the total to see how many she gives away. students to articulate strategies that work so well they seem automatic."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write and solve an equation to find the total number Ask, “Did you count by fours? Did you of highlighters. Use h to represent the unknown. switch the factors and calculate 4 × 9 (Allow students time to finish their work.) instead? Did you use a pattern to"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What equation did you use? solve? If so, what pattern?”"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Solve the second step of the problem using the letter g to represent the unknown."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 36 – 17 = g and solve.)"
+      },
+      {
+        "speaker": "students",
+        "text": "Ada has 19 classmates! I know because she gave 1 highlighter to each classmate, and she gave away 19 highlighters. Write the following problem: Eliza finds a bag of 72 marbles and runs to share them with 8 of her friends. She’s so excited NOTES ON that she drops the bag and loses 18 marbles. How many MULTIPLE MEANS marbles will Eliza and each of her friends get? OF ACTION AND"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write an equation to solve for the first unknown. word problems and drawing a picture Use m to represent the number of marbles Eliza has. to solve. Guide students to underline"
+      },
+      {
+        "speaker": "students",
+        "text": "(Solve 72 – 18 = m.) Eliza and each of her friends in the final question before attempting an"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a model that represents how many marbles each friend gets. problems. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 15 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(After finishing.) How many units are in your model?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What part of the problem tells you that your model needs 9 units?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write an equation to solve for the second unknown. Use g to represent the number of marbles each friend gets."
+      },
+      {
+        "speaker": "students",
+        "text": "(Solve 54 ÷ 9 = g.)"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 187 (debrief) ---\nA STORY OF UNITS                                                                                                                Lesson 15 3 3\n\n\nLesson 15\nObjective: Interpret the unknown in multiplication and division to model\nand solve problems.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (15 minutes)\n Concept Development               (35 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (15 minutes)\n\n Multiply By 9 3.OA.7                    (7 minutes)\n Group Counting 3.OA.1                   (4 minutes)\n Divide by 9 3.OA.7                      (4 minutes)\n\nMultiply By 9 (7 minutes)\nMaterials: (S) Multiply By 9 (6–10) (Pattern Sheet)\n\nNote: This activity builds fluency with respect to multiplication facts using units of 9. It supports students\nknowing from memory all products of two one-digit numbers. See Lesson 5 for the directions regarding\nadministering a Multiply By Pattern Sheet.\n    T:   (Write 6 × 9 = ____.) Let’s skip-count up by nine to solve. (Count with fingers to 6 as students\n         count.)\n    S:   9, 18, 27, 36, 45, 54.\n    T:   Let’s skip-count down to find the answer, too. Start at 90. (Starting with 10 fingers, count down as\n         students count.)\n    S:   90, 81, 72, 63, 54.\n    T:   Let’s skip-count up again to find the answer, but this time start at 45. (Starting with 5 fingers, count\n         up as students count.)\n    S:   45, 54.\nContinue with the following possible suggestions: 8 × 9, 7 × 9, and 9 × 9.\n    T:   (Distribute the Multiply By 9 Pattern Sheet.) Let’s practice multiplying by 9. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 15:               Interpret the unknown in multiplication and division to model and solve                     186\n                                                  problems.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 188 (concept-development) ---\nA STORY OF UNITS                                                                                                               Lesson 15 3 3\n\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by sixes, sevens,\nand eights reviews multiplication taught previously in the module. Direct students to count forward and\nbackward, occasionally changing the direction of the count:\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n\nDivide by 9 (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews using a letter to represent the unknown, which was first taught in\nLesson 3.\n    T:   (Write a × 9 = 18.) On your personal white board, write the value of a.\n    S:   (Write a = 2.)\n    T:   (Write 18 ÷ 9 = ___.) Say the division sentence.\n    S:   18 ÷ 9 = 2.\nContinue with the following possible sequence: b × 9 = 45, c × 9 = 36, d × 9 = 54, e × 9 = 27, f × 9 = 90,\ng × 9 = 81, and h × 9 = 72.\n\n\nConcept Development (35 minutes)\n\nMaterials: (S) Personal white board\n\nProblem 1: Interpret the unknown in multiplication.\nWrite or project the following problem: Ada buys 9 packs of\nhighlighters with 4 in each pack. After giving 1 highlighter to                                                           NOTES ON\neach classmate, she has 17 left. How many highlighters does\n                                                                                                                          MULTIPLE MEANS\nAda give away?\n                                                                                                                          OF ENGAGEMENT:\n    T:   Model the problem. Then, tell your partner the steps                                                   Students working above grade level\n         you’ll follow to solve it.                                                                             and others may not identify a strategy\n    S:   (Model.) First, you have to find out how many                                                          for solving 9 × 4 = 36, instead saying,\n         highlighters Ada has.  After that, subtract 17 from                                                   “It’s easy! I just knew it.” Challenge\n         the total to see how many she gives away.                                                              students to articulate strategies that\n                                                                                                                work so well they seem automatic.\n    T:   Write and solve an equation to find the total number                                                   Ask, “Did you count by fours? Did you\n         of highlighters. Use h to represent the unknown.                                                       switch the factors and calculate 4 × 9\n         (Allow students time to finish their work.)                                                            instead? Did you use a pattern to\n    T:   What equation did you use?                                                                             solve? If so, what pattern?”\n    S:   9 × 4 = h.\n\n\n                        Lesson 15:               Interpret the unknown in multiplication and division to model and solve                                  187\n                                                 problems.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 189 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                               Lesson 15 3 3\n\n\n    T:   Talk to your partner. What strategy for solving nines facts did you use?\n    S:   (Discuss.)\n    T:   What is the value of h?\n    S:   The value of h is 36.\n    T:   How many highlighters does Ada have at the start?\n    S:   36 highlighters.\n    T:   Is the problem complete yet?\n    S:   No, we have to find how many highlighters Ada gives away.\n    T:   Solve the second step of the problem using the letter g to\n         represent the unknown.\n    S:   (Write 36 – 17 = g and solve.)\n    T:   What is the value of g?\n    S:   The value of g is 19.\n    T:   How many highlighters does Ada give away?\n    S:   Ada gives away 19 highlighters.\n    T:   Can we tell how many classmates Ada has? How do you know?\n    S:   Ada has 19 classmates! I know because she gave 1 highlighter to each classmate, and she gave away\n         19 highlighters.\n\nProblem 2: Interpret the unknown in division.\nWrite the following problem: Eliza finds a bag of 72 marbles\nand runs to share them with 8 of her friends. She’s so excited                                                            NOTES ON\nthat she drops the bag and loses 18 marbles. How many                                                                     MULTIPLE MEANS\nmarbles will Eliza and each of her friends get?                                                                           OF ACTION AND\n    T:   What should we do first, subtract or divide? Why?                                                                EXPRESSION:\n    S:   We should subtract.  Subtract because we need to             Some students may mistakenly\n         find out how many marbles Eliza has left after she loses      interpret the divisor to be 8 rather\n         some.                                                         than 9. Use this example to highlight\n                                                                       the advantages of carefully reading\n    T:   Write an equation to solve for the first unknown.             word problems and drawing a picture\n         Use m to represent the number of marbles Eliza has.           to solve. Guide students to underline\n    S:   (Solve 72 – 18 = m.)                                          Eliza and each of her friends in the\n                                                                       final question before attempting an\n    T:   What is the value of m?\n                                                                       equation.\n    S:   54.\n    T:   So, how many marbles does Eliza have to give away?\n    S:   54 marbles!\n    T:   Is our work on this problem finished?\n    S:   No! Now we have to find out how many marbles each friend gets!\n    T:   Draw a model that represents how many marbles each friend gets.\n\n\n                        Lesson 15:               Interpret the unknown in multiplication and division to model and solve                     188\n                                                 problems.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 190 (debrief) ---\nA STORY OF UNITS                                                                                                                Lesson 15 3 3\n\n\n    T:   (After finishing.) How many units are in your model?\n    S:   9 units.\n    T:   What part of the problem tells you that your model needs 9 units?\n    S:   Where it says, “Eliza and each of her friends.” She has 8 friends,\n         and 8 + 1 = 9.\n    T:   Write an equation to solve for the second unknown. Use g to\n         represent the number of marbles each friend gets.\n    S:   (Solve 54 ÷ 9 = g.)\n    T:   How many marbles does each friend get? How do you know?\n    S:   Each friend gets 6 marbles.  6 marbles because the value of\n         g is 6, and g represents the number of marbles each friend gets.\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the Problem Set within the allotted 10 minutes.\nFor some classes, it may be appropriate to modify the assignment by specifying which problems they work on\nfirst. Some problems do not specify a method for solving. Students should solve these problems using the\nRDW approach used for Application Problems.\n\n\nStudent Debrief (10 minutes)\nLesson Objective: Interpret the unknown in multiplication and division to model and solve problems.\nThe Student Debrief is intended to invite reflection and active processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        In your model for Problem 1, is the unknown the\n         number of units or the size of each unit?\n        In Problem 3, how did you show what letter you\n         used to represent the unknown and what it stood\n         for?\n        How did you solve the large division fact in\n         Problem 4?\n        What longer equation, including parentheses, can\n         be used to solve Problem 6?\n\n\n                         Lesson 15:               Interpret the unknown in multiplication and division to model and solve                     189\n                                                  problems.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 191 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 15 3 3\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                       Lesson 15:               Interpret the unknown in multiplication and division to model and solve                     190\n                                                problems.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 192 (template) ---\nA STORY OF UNITS                                                                                  Lesson 15 Pattern Sheet 3 3\n\n\n            Multiply.\n\n\nmultiply by 9 (6–10)\n\n\n                        Lesson 15:               Interpret the unknown in multiplication and division to model and solve          191\n                                                 problems.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 193 (problem-set) ---\nA STORY OF UNITS                                                                                    Lesson 15 Problem Set 3 3\n\n\nName                                                                                                       Date\n\nWrite an equation, and use a letter to represent the unknown for Problems 1–6.\n\n1. Mrs. Parson gave each of her grandchildren $9. She gave a total of $36. How many grandchildren does\n   Mrs. Parson have?\n\n\n2. Shiva pours 27 liters of water equally into 9 containers. How many liters of water are in each container?\n\n\n3. Derek cuts 7 pieces of wire. Each piece is 9 meters long. What is the total length of the 7 pieces?\n\n\n                       Lesson 15:               Interpret the unknown in multiplication and division to model and solve          192\n                                                problems.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 194 (problem-set) ---\nA STORY OF UNITS                                                                                     Lesson 15 Problem Set 3 3\n\n\n4. Aunt Deena and Uncle Chris share the cost of a limousine ride with their 7 friends. The ride cost a total\n   of $63. If everyone shares the cost equally, how much does each person pay?\n\n\n5. Cara bought 9 packs of beads. There are 10 beads in each pack. She always uses 30 beads to make each\n   necklace. How many necklaces can she make if she uses all the beads?\n\n\n6. There are 8 erasers in a set. Damon buys 9 sets. After giving some erasers away, Damon has 35 erasers\n   left. How many erasers did he give away?\n\n\n                       Lesson 15:                Interpret the unknown in multiplication and division to model and solve          193\n                                                 problems.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 195 (exit-ticket) ---\nA STORY OF UNITS                                                                                         Lesson 15 Exit Ticket 3 3\n\n\nName                                                                                                       Date\n\nUse a letter to represent the unknown.\n\n1. Mrs. Aquino pours 36 liters of water equally into 9 containers. How much water is in each container?\n\n\n2. Marlon buys 9 packs of hot dogs. There are 6 hot dogs in each pack. After the barbeque, 35 hot dogs are\n   left over. How many hot dogs were eaten?\n\n\n                       Lesson 15:               Interpret the unknown in multiplication and division to model and solve            194\n                                                problems.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 196 (homework) ---\nA STORY OF UNITS                                                                                       Lesson 15 Homework 3 3\n\n\nName                                                                                                       Date\n\n1. The store clerk equally divides 36 apples among 9 baskets. Draw a tape diagram, and label the number of\n   apples in each basket as a. Write an equation, and solve for a.\n\n\n2. Elijah gives each of his friends a pack of 9 almonds. He gives away a total of 45 almonds. How many\n   packs of almonds did he give away? Model using a letter to represent the unknown, and then solve.\n\n\n3. Denice buys 7 movies. Each movie costs $9. What is the total cost of 7 movies? Use a letter to represent\n   the unknown. Solve.\n\n\n                       Lesson 15:               Interpret the unknown in multiplication and division to model and solve          195\n                                                problems.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 197 (homework) ---\nA STORY OF UNITS                                                                                        Lesson 15 Homework 3 3\n\n\n4. Mr. Doyle shares 1 roll of bulletin board paper equally with 8 teachers. The total length of the roll is\n   72 meters. How much bulletin board paper does each teacher get?\n\n\n5. There are 9 pens in a pack. Ms. Ochoa buys 9 packs. After giving her students some pens, she has\n   27 pens left. How many pens did she give away?\n\n\n6. Allen buys 9 packs of trading cards. There are 10 cards in each pack. He can trade 30 cards for a comic\n   book. How many comic books can he get if he trades all of his cards?\n\n\n                        Lesson 15:               Interpret the unknown in multiplication and division to model and solve          196\n                                                 problems.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 198 (lesson-instruction) ---\nA STORY OF UNITS\n\n    3\n  GRADE\n                         Mathematics Curriculum\n                                                                                                                                   GRADE 3 • MODULE 3\n\n\nTopic E\nAnalysis of Patterns and Problem\nSolving Including Units of 0 and 1\n3.OA.3, 3.OA.7, 3.OA.8, 3.OA.9, 3.OA.1, 3.OA.2, 3.OA.4, 3.OA.6\n\nFocus Standards:           3.OA.3                 Use multiplication and division within 100 to solve word problems in situations\n                                                  involving equal groups, arrays, and measurement quantities, e.g., by using drawings\n                                                  and equations with a symbol for the unknown number to represent the problem.\n                           3.OA.7                 Fluently multiply and divide within 100, using strategies such as the relationship\n                                                  between multiplication and division (e.g., knowing that 8 × 5 = 40, one knows\n                                                  40 ÷ 5 = 8) or properties of operations. By the end of Grade 3, know from memory all\n                                                  products of two one-digit numbers.\n                           3.OA.8                 Solve two-step word problems using the four operations. Represent these problems\n                                                  using equations with a letter standing for the unknown quantity. Assess the\n                                                  reasonableness of answers using mental computation and estimation strategies\n                                                  including rounding. (This standard is limited to problems posed with whole numbers\n                                                  and having whole-number answers; students should know how to perform operations\n                                                  in the conventional order when there are no parentheses to specify a particular order,\n                                                  i.e., Order of Operations.)\n                           3.OA.9                 Identify arithmetic patterns (including patterns in the addition table or multiplication\n                                                  table), and explain them using properties of operations. For example, observe that 4\n                                                  times a number is always even, and explain why 4 times a number can be decomposed\n                                                  into two equal addends.\nInstructional Days:        3\nCoherence -Links from:     G2–M6                  Foundations of Multiplication and Division\n                           G3–M1                  Properties of Multiplication and Division and Solving Problems with Units of 2–5 and\n                                                  10\n            -Links to:     G3–M4                  Multiplication and Area\n                           G4–M3                  Multi-Digit Multiplication and Division\n                           G4–M7                  Exploring Measurement with Multiplication\n\n\n                         Topic E:                 Analysis of Patterns and Problem Solving Including Units of 0 and 1                            197\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 199 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                              Topic E 3\n\n\nIn Lesson 16, students multiply and divide by 0 and 1. They use patterns to understand that n × 0 = 0 and\nshow why the result of dividing a number by 0 is undefined but that dividing 0 by another number results in 0.\nLesson 17 synthesizes students’ knowledge of factors from 0 to 10 in an exploration of patterns using the\nmultiplication table. Students recognize the patterns of particular factors and make connections between\nmultiplication and division.\n\nIn Lesson 18, students apply the tools, representations, and concepts they have learned in order to solve two-\nstep word problems using all four operations. They call on rounding skills learned in Module 2 to estimate\nsolutions and use their estimations to assess the reasonableness of answers.\n\n A Teaching Sequence Toward Mastery of Analysis of Patterns and Problem Solving Including\n Units of 0 and 1\n Objective 1: Reason about and explain arithmetic patterns using units of 0 and 1 as they relate to\n              multiplication and division.\n              (Lesson 16)\n\n Objective 2: Identify patterns in multiplication and division facts using the multiplication table.\n              (Lesson 17)\n\n Objective 3: Solve two-step word problems involving all four operations and assess the reasonableness\n              of solutions.\n              (Lesson 18)\n\n\n                       Topic E:                 Analysis of Patterns and Problem Solving Including Units of 0 and 1                          198\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015",
+    "problemSetPages": [
+      {
+        "pdfPage": 193,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                    Lesson 15 Problem Set 3 3\n\n\nName                                                                                                       Date\n\nWrite an equation, and use a letter to represent the unknown for Problems 1–6.\n\n1. Mrs. Parson gave each of her grandchildren $9. She gave a total of $36. How many grandchildren does\n   Mrs. Parson have?\n\n\n2. Shiva pours 27 liters of water equally into 9 containers. How many liters of water are in each container?\n\n\n3. Derek cuts 7 pieces of wire. Each piece is 9 meters long. What is the total length of the 7 pieces?\n\n\n                       Lesson 15:               Interpret the unknown in multiplication and division to model and solve          192\n                                                problems.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 194,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                     Lesson 15 Problem Set 3 3\n\n\n4. Aunt Deena and Uncle Chris share the cost of a limousine ride with their 7 friends. The ride cost a total\n   of $63. If everyone shares the cost equally, how much does each person pay?\n\n\n5. Cara bought 9 packs of beads. There are 10 beads in each pack. She always uses 30 beads to make each\n   necklace. How many necklaces can she make if she uses all the beads?\n\n\n6. There are 8 erasers in a set. Damon buys 9 sets. After giving some erasers away, Damon has 35 erasers\n   left. How many erasers did he give away?\n\n\n                       Lesson 15:                Interpret the unknown in multiplication and division to model and solve          193\n                                                 problems.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 307,
+        "text": "A STORY OF UNITS                                                                                       Lesson 15 Answer Key 3 3\n\n\nLesson 15\nPattern Sheet\n              9                                         18                                            27                             36\n              45                                        54                                            63                             72\n              81                                        90                                            45                             54\n              45                                        63                                            45                             72\n              45                                        81                                            45                             90\n              54                                        45                                            54                             63\n              54                                        72                                            54                             81\n              54                                        63                                            54                             63\n              72                                        63                                            81                             63\n              72                                        54                                            72                             63\n              72                                        81                                            81                             54\n              81                                        63                                            81                             72\n              81                                        72                                            54                             81\n              63                                        81                                            54                             72\n              81                                        63                                            54                             72\n\n\nProblem Set\n\n1.    4; solution includes equation and an unknown\n2.    3 L; solution includes equation and an unknown\n3.    63 m; solution includes equation and an unknown\n4.    $7; solution includes equation and an unknown\n5.    3; solution includes equation and an unknown\n6.    37; solution includes equation and an unknown\n\n\nExit Ticket\n1.    4 L; solution includes an unknown\n2.    19; solution includes an unknown\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10                   306\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 308,
+        "text": "A STORY OF UNITS                                                                                       Lesson 15 Answer Key 3 3\n\n\nHomework\n1.    Tape diagram drawn and labeled; 36 ÷ 9 = a; a = 4\n2.    5; solution includes an unknown\n3.    $63; solution includes an unknown\n4.    9m\n5.    54\n6.    3\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              307\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015"
+      }
+    ]
+  }
+}

@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m4-l12",
+  "moduleId": "m4",
+  "lessonNumber": 12,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+    "teacherEditionBytes": 10725683,
+    "lessonPdfPages": {
+      "start": 150,
+      "end": 160
+    },
+    "problemSetPdfPages": [
+      156,
+      157
+    ],
+    "exitTicketPdfPages": [
+      158
+    ],
+    "homeworkPdfPages": [
+      159,
+      160
+    ],
+    "answerKeyPdfPages": [
+      228,
+      229
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m4-student/workbook-page-053.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m4-teacher/page-156.png",
+      "/source-pages/m4-teacher/page-157.png",
+      "/source-pages/m4-teacher/page-228.png",
+      "/source-pages/m4-teacher/page-229.png"
+    ]
+  },
+  "objective": "Solve word problems involving area.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.                                                                 and extensions to learners as\n                                                                                                                alternatives rather than additional\n                                                                                                                busy work.\n\n\n                        Lesson 12:                 Solve word problems involving area.                                                                    152\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 12 3 4",
+    "conceptDevelopmentText": "Materials: (S) Personal white board\n\n  Problem 1: Solve area word problems with 1 side length unknown.\n  Write or project the following problem: The area of Theo’s banner is 32 square feet. If the length of his\n  banner measures 4 feet, how wide is his banner?\n       T:   What information do we know?\n       S:   The area and length of Theo’s banner.\n       T:   What information do we not know?\n       S:   The width.\n       T:   I’ll draw an area model and use a letter for what we don‘t know.                     4 ft\n            (Draw an incorrectly scaled model such as the one shown on the\n            right.)                                                                 w       Area = 32 sq ft\n       T:   If the length is 4 feet and the area is 32 square feet, can the\n            width be less than 4 feet?\n       S:   No, the width needs to be more than 4 feet.  The width\n            should be more than 4 feet because 4 times 4 only equals 16,\nMP.6        but the area is 32 square feet.\n       T:   Talk to your partner: Is the area model I drew an accurate representation of the rectangle in the\n            problem? How do you know?\n       S:   No, because the width should be much longer than the length.\n       T:   Work with your partner to correctly redraw my area model on your board.\n       S:   (Draw as shown on the right.)\n       T:   How can we find the value of w?                                                4 ft\n       S:   Divide 32 by 4.\n       T:   Write a division equation to find the value of w.\n       S:   (Write 32 ÷ 4 = w.)\n       T:   What is the value of w?                                                                                 w         Area = 32 sq ft\n       S:   8.\n       T:   So, the width of Theo’s banner is just 8? 8 what?\n       S:   8 feet!\n Repeat the process with the following suggestions:\n           The area of a piece of paper is 72 square inches. Margo measures the length of the paper and says it\n            is 8 inches. What is the width of the piece of paper?\n           Jillian needs to draw a rectangle with an area of 56 square centimeters and a width of 7 centimeters.\n            What is the length of the rectangle that Jillian needs to draw?\n\n\n                          Lesson 12:                 Solve word problems involving area.                                                        151\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 12 3 4\n\n\nProblem 2: Choose a strategy to find the area of a larger rectangle.\nWrite or project the following problem: Amir is getting carpet in his bedroom, which measures 7 feet by\n15 feet. How many square feet of carpet will Amir need?\n    T:   Draw an area model to represent Amir’s                                                                15 ft\n         bedroom. Write an expression that shows\n         how to find the area.\n    S:   (Draw as shown to the right.)                    7 ft\n                                                                                                                                         Area: 7 × 15\n    T:   Talk to your partner: How can we find the\n         area of Amir’s bedroom since the\n         measurements are so large?\n    S:   We can break the room up into two smaller rectangles\n         and add their areas together.  We can also break                                                                  NOTES ON\n         apart one of the factors in 7 × 15 to come up with a                                                               MULTIPLE MEANS\n         multiplication sentence that is easier to solve.                                                                   OF ACTION AND\n    T:   Decide with your partner which strategy you’ll use to                                                              EXPRESSION:\n         find the area. Then, solve.                                                                            Offer planning and strategy\n    S:   (Decide on a strategy and solve.)                                                                      development support to learners, if\n                                                                                                                needed. Some learners may use a\n    T:   What is the area of Amir’s bedroom?                                                                    method simply because they are not\n    S:   105 square feet!                                                                                       fluent in an alternative method.\n                                                                                                                Model a think-aloud in which two or\nInvite students to share which strategy they chose and why; ask\n                                                                                                                more strategies are possible, reason\nthem to articulate how they used the strategy to solve the                                                      about your selection, and solve. This\nproblem. For the break apart and distribute strategy, students                                                  may take more time than allotted\nmay have broken apart the rectangle several different ways.                                                     here. Consider pre-teaching in order\nContinue with the following suggested examples, encouraging                                                     to preserve the pace of the lesson and\n                                                                                                                to maximize every student’s\nstudents to try different strategies:\n                                                                                                                participation.\n        Maya helps her family tile the bathroom wall. It\n         measures 12 feet by 11 feet. How many square foot\n         tiles does Maya need to cover the wall?\n        Francis washes all of the windows outside his parents’                                                             NOTES ON\n         bookstore; there are 5 windows, each one is 6 feet wide                                                            MULTIPLE MEANS\n         and 8 feet high. What is the total area of the windows                                                             OF ENGAGEMENT:\n         that Francis washes?                                                                                   During the Problem Set, extend\n                                                                                                                Problem 4 to students working above",
+    "fluencyPracticeText": " Group Counting 3.OA.1                                  (3 minutes)\n Multiply by 7 3.OA.7                                   (7 minutes)\n Find the Side Length 3.MD.7                            (5 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally changing the direction of the count.\n        Fours to 40\n        Sixes to 60\n        Eights to 80\n        Nines to 90\n\nMultiply by 7 (7 minutes)\nMaterials: (S) Multiply by 7 (6−10) Pattern Sheet\n\nNote: This activity builds fluency with multiplication facts using units of 7. It works toward students knowing\nfrom memory all products of two one-digit numbers. See Lesson 2 for the directions for administration of a\nMultiply-By Pattern Sheet.\n    T:   (Write 7 × 7 =     .) Let’s skip-count up by sevens. (Count with fingers to 7 as students count.)\n    S:   7, 14, 21, 28, 35, 42, 49.\n    T:   Let’s see how we can skip-count down to find the answer, too. (Show 10 fingers.) Start at 70.\n         (Count down with your fingers as students say numbers.)\n    S:   70, 63, 56, 49.\n\n\n                         Lesson 12:                 Solve word problems involving area.                                                       149\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 12 3 4\n\n\nContinue with the following possible sequence: 9 × 7, 6 × 7, and 8 × 7.\n    T:   (Distribute Multiply by 7 (6–10) Pattern Sheet.) Let’s practice multiplying by 7. Be sure to work left\n         to right across the page.\n\nFind the Side Length (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews the relationship between side lengths and area.\n    T:   (Project a rectangle with a width of 2 units and an unknown length. Inside the rectangle, write\n         Area = 10 square units.) Say the area of the rectangle.\n    S:   10 square units.\n                                                                                   ____ units\n    T:   What’s the width of the rectangle?\n    S:   2 units.\n    T:   (Write 2 units × __ units = 10 square units.) On your       2 units Area = 10 square units\n         personal white board, complete the equation, filling\n         in the unknown length.\n    S:   (Write 2 units × 5 units = 10 square units.)\nContinue with the possible following sequence: 1 unit × __ units = 8 square units, 5 units × __ units = 15\nsquare units, 3 units × __ units = 18 square units, and 6 units × __ units = 24 square units.",
+    "problemSetGuidanceText": "grade level. Have students model all\n                                                                                                                possible rectangles with an area of 64.\nStudents should do their personal best to complete the Problem                                                  Or, have students model up to eight\nSet within the allotted 10 minutes. For some classes, it may be                                                 ways of breaking their rectangle\nappropriate to modify the assignment by specifying which                                                        (Part b) into two smaller rectangles.\nproblems they work on first. Some problems do not specify a                                                     Make it an exciting, perhaps timed,\nmethod for solving. Students should solve these problems using                                                  competition. Always offer challenges\nthe RDW approach used for Application Problems.                                                                 and extensions to learners as\n                                                                                                                alternatives rather than additional\n                                                                                                                busy work.\n\n\n                        Lesson 12:                 Solve word problems involving area.                                                                    152\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 12 3 4",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "What information do we know?"
+      },
+      {
+        "speaker": "students",
+        "text": "The area and length of Theo’s banner."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What information do we not know?"
+      },
+      {
+        "speaker": "students",
+        "text": "The width."
+      },
+      {
+        "speaker": "teacher",
+        "text": "I’ll draw an area model and use a letter for what we don‘t know. 4 ft (Draw an incorrectly scaled model such as the one shown on the right.) w Area = 32 sq ft"
+      },
+      {
+        "speaker": "teacher",
+        "text": "If the length is 4 feet and the area is 32 square feet, can the width be less than 4 feet?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, the width needs to be more than 4 feet.  The width should be more than 4 feet because 4 times 4 only equals 16, MP.6 but the area is 32 square feet."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner: Is the area model I drew an accurate representation of the rectangle in the problem? How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, because the width should be much longer than the length."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to correctly redraw my area model on your board."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw as shown on the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can we find the value of w? 4 ft"
+      },
+      {
+        "speaker": "students",
+        "text": "Divide 32 by 4."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a division equation to find the value of w."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 32 ÷ 4 = w.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the value of w? w Area = 32 sq ft"
+      },
+      {
+        "speaker": "students",
+        "text": "8."
+      },
+      {
+        "speaker": "teacher",
+        "text": "So, the width of Theo’s banner is just 8? 8 what?"
+      },
+      {
+        "speaker": "students",
+        "text": "8 feet! Repeat the process with the following suggestions:  The area of a piece of paper is 72 square inches. Margo measures the length of the paper and says it is 8 inches. What is the width of the piece of paper?  Jillian needs to draw a rectangle with an area of 56 square centimeters and a width of 7 centimeters. What is the length of the rectangle that Jillian needs to draw? This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 12 3 4 Write or project the following problem: Amir is getting carpet in his bedroom, which measures 7 feet by 15 feet. How many square feet of carpet will Amir need?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw an area model to represent Amir’s 15 ft bedroom. Write an expression that shows how to find the area."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw as shown to the right.) 7 ft Area: 7 × 15"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner: How can we find the area of Amir’s bedroom since the measurements are so large?"
+      },
+      {
+        "speaker": "students",
+        "text": "We can break the room up into two smaller rectangles and add their areas together.  We can also break NOTES ON apart one of the factors in 7 × 15 to come up with a MULTIPLE MEANS multiplication sentence that is easier to solve. OF ACTION AND"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Decide with your partner which strategy you’ll use to EXPRESSION: find the area. Then, solve. Offer planning and strategy"
+      },
+      {
+        "speaker": "students",
+        "text": "(Decide on a strategy and solve.) development support to learners, if needed. Some learners may use a"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the area of Amir’s bedroom? method simply because they are not"
+      },
+      {
+        "speaker": "students",
+        "text": "105 square feet! fluent in an alternative method. Model a think-aloud in which two or Invite students to share which strategy they chose and why; ask more strategies are possible, reason them to articulate how they used the strategy to solve the about your selection, and solve. This problem. For the break apart and distribute strategy, students may take more time than allotted may have broken apart the rectangle several different ways. here. Consider pre-teaching in order Continue with the following suggested examples, encouraging to preserve the pace of the lesson and to maximize every student’s students to try different strategies: participation.  Maya helps her family tile the bathroom wall. It measures 12 feet by 11 feet. How many square foot tiles does Maya need to cover the wall?  Francis washes all of the windows outside his parents’ NOTES ON bookstore; there are 5 windows, each one is 6 feet wide MULTIPLE MEANS and 8 feet high. What is the total area of the windows OF ENGAGEMENT: that Francis washes? During the Problem Set, extend"
+      }
+    ],
+    "teacherPrompts": [
+      "What information do we know?",
+      "What information do we not know?",
+      "I’ll draw an area model and use a letter for what we don‘t know. 4 ft (Draw an incorrectly scaled model such as the one shown on the right.) w Area = 32 sq ft",
+      "If the length is 4 feet and the area is 32 square feet, can the width be less than 4 feet?",
+      "Talk to your partner: Is the area model I drew an accurate representation of the rectangle in the problem? How do you know?",
+      "Work with your partner to correctly redraw my area model on your board.",
+      "How can we find the value of w? 4 ft",
+      "Write a division equation to find the value of w.",
+      "What is the value of w? w Area = 32 sq ft",
+      "So, the width of Theo’s banner is just 8? 8 what?",
+      "Draw an area model to represent Amir’s 15 ft bedroom. Write an expression that shows how to find the area.",
+      "Talk to your partner: How can we find the area of Amir’s bedroom since the measurements are so large?",
+      "Decide with your partner which strategy you’ll use to EXPRESSION: find the area. Then, solve. Offer planning and strategy",
+      "What is the area of Amir’s bedroom? method simply because they are not"
+    ],
+    "debriefPrompt": "What shape is the sticky note in Problem 1? How do you know?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Each side on a sticky note measures 9 centimeters. What is the area of the sticky note?",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "Stacy tiles the rectangle below using her square pattern blocks. a. Find the area of Stacy's rectangle in square units. Then, draw and label a different rectangle with whole number side lengths that has the same area. b. Can you draw another rectangle with different whole number side lengths and have the same area? Explain how you know. An artist paints a 4 foot × 16 foot mural on a wall. What is the total area of the mural? Use the break apart and distribute strategy. 10 ft 6 ft 4 ft 4. Alana tiles the 3 figures below. She says, \"I'm making a pattern!\" a. Find the area of Alana's 3 figures and explain her pattern. b. Draw the next 2 figures in Alana's pattern and find their areas. 5. Jermaine glues 3 identical pieces of paper as shown below and makes a square. Find the unknown side length of 1 piece of paper. Then, find the total area of 2 pieces of paper. 9 cm? cm 9 cm",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                    Lesson 12 Problem Set 3 4\n\n\nName                                                                                                         Date\n\n1.   Each side on a sticky note measures 9 centimeters. What is the area of the sticky note?\n\n\n2.   Stacy tiles the rectangle below using her square pattern blocks.\n\n\n     a.   Find the area of Stacy’s rectangle in square units. Then, draw and label a different rectangle with\n          whole number side lengths that has the same area.\n\n\n     b.   Can you draw another rectangle with different whole number side lengths and have the same area?\n          Explain how you know.\n\n\n                        Lesson 12:                  Solve word problems involving area.                                            155\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                      Lesson 12 Problem Set 3 4\n\n\n3.    An artist paints a 4 foot × 16 foot mural on a wall. What is the total area of the mural? Use the break\n      apart and distribute strategy.\n\n\n                        10 ft                                      6 ft\n\n     4 ft\n\n\n4.    Alana tiles the 3 figures below. She says, “I’m making a pattern!”\n\n\n      a.    Find the area of Alana’s 3 figures and explain her pattern.\n\n\n      b.    Draw the next 2 figures in Alana’s pattern and find their areas.\n\n\n5.    Jermaine glues 3 identical pieces of paper as shown below and makes a square. Find the unknown side\n      length of 1 piece of paper. Then, find the total area of 2 pieces of paper.\n\n                            9 cm\n\n                                                            ? cm\n\n        9 cm\n\n\n                           Lesson 12:                 Solve word problems involving area.                                            156\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    81 sq cm\n2.    a. 12 sq units; answers will vary.\n      b. Yes; answers will vary.\n3.    64 sq ft\n4.    a. 4 sq units, 9 sq units, 16 sq units; explanations will vary.\n      b. 5 by 5 and 6 by 6 rectangles drawn; 25 sq units, 36 sq units\n5.    3 cm; 54 sq cm",
+    "answerKeyText": "A STORY OF UNITS                                                                                         Lesson 12 Answer Key 3 4\n\n\nLesson 12\nPattern Sheet\n              7                                            14                                            21                       28\n             35                                            42                                            49                       56\n             63                                            70                                            35                       42\n             35                                            49                                            35                       56\n             35                                            63                                            35                       70\n             42                                            35                                            42                       49\n             42                                            56                                            42                       63\n             42                                            49                                            42                       49\n             56                                            49                                            63                       49\n             56                                            42                                            56                       49\n             56                                            63                                            63                       42\n             63                                            49                                            63                       56\n             63                                            56                                            42                       63\n             49                                            63                                            42                       56\n             63                                            49                                            42                       56\n\n\nProblem Set\n1.    81 sq cm\n2.    a. 12 sq units; answers will vary.\n      b. Yes; answers will vary.\n3.    64 sq ft\n4.    a. 4 sq units, 9 sq units, 16 sq units; explanations will vary.\n      b. 5 by 5 and 6 by 6 rectangles drawn; 25 sq units, 36 sq units\n5.    3 cm; 54 sq cm\n\n\nExit Ticket\n1.    7 in\n2.    64 sq in\n\n\n                        Module 4:                  Multiplication and Area                                                             227\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                         Lesson 12 Answer Key 3 4\n\n\nHomework\n1.    81 sq in\n2.    Yes; answers will vary.\n3.    3 ft\n4.    2 rectangles drawn; answers will vary.\n5.    5 by 2 rectangle drawn; explanations will vary.\n\n\n                        Module 4:                  Multiplication and Area                                                          228\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "number-bond",
+      "ruler-or-length",
+      "area-model",
+      "geometry-diagram",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "number-bond": [
+        "problem. For the break apart and distribute strategy, students may take more time than allotted"
+      ],
+      "ruler-or-length": [
+        "Problem 1: Solve area word problems with 1 side length unknown.",
+        "Write or project the following problem: The area of Theo’s banner is 32 square feet. If the length of his",
+        "S: The area and length of Theo’s banner.",
+        "T: If the length is 4 feet and the area is 32 square feet, can the",
+        "S: No, because the width should be much longer than the length.",
+        " The area of a piece of paper is 72 square inches. Margo measures the length of the paper and says it",
+        " Jillian needs to draw a rectangle with an area of 56 square centimeters and a width of 7 centimeters.",
+        "What is the length of the rectangle that Jillian needs to draw?"
+      ],
+      "area-model": [
+        "T: I’ll draw an area model and use a letter for what we don‘t know. 4 ft",
+        "T: Talk to your partner: Is the area model I drew an accurate representation of the rectangle in the",
+        "T: Work with your partner to correctly redraw my area model on your board.",
+        "T: Draw an area model to represent Amir’s 15 ft",
+        "Area = 10 square units.) Say the area of the rectangle.",
+        "S: 10 square units.",
+        "T: (Write 2 units × __ units = 10 square units.) On your 2 units Area = 10 square units",
+        "S: (Write 2 units × 5 units = 10 square units.)"
+      ],
+      "geometry-diagram": [
+        "T: Talk to your partner: Is the area model I drew an accurate representation of the rectangle in the",
+        " Jillian needs to draw a rectangle with an area of 56 square centimeters and a width of 7 centimeters.",
+        "What is the length of the rectangle that Jillian needs to draw?",
+        "Problem 2: Choose a strategy to find the area of a larger rectangle.",
+        "S: We can break the room up into two smaller rectangles",
+        "may have broken apart the rectangle several different ways. here. Consider pre-teaching in order",
+        "T: (Project a rectangle with a width of 2 units and an unknown length. Inside the rectangle, write",
+        "Area = 10 square units.) Say the area of the rectangle."
+      ],
+      "money-model": [
+        " Jillian needs to draw a rectangle with an area of 56 square centimeters and a width of 7 centimeters.",
+        "1. Each side on a sticky note measures 9 centimeters. What is the area of the sticky note?"
+      ],
+      "picture-or-drawing": [
+        "T: I’ll draw an area model and use a letter for what we don‘t know. 4 ft",
+        "(Draw an incorrectly scaled model such as the one shown on the",
+        "T: Work with your partner to correctly redraw my area model on your board.",
+        "S: (Draw as shown on the right.)",
+        " Jillian needs to draw a rectangle with an area of 56 square centimeters and a width of 7 centimeters.",
+        "What is the length of the rectangle that Jillian needs to draw?",
+        "T: Draw an area model to represent Amir’s 15 ft",
+        "S: (Draw as shown to the right.) 7 ft"
+      ]
+    },
+    "sourceIllustrationRequired": true,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "I’ll draw an area model and use a letter for what we don‘t know. 4 ft (Draw an incorrectly scaled model such as the one shown on the right.) w Area = 32 sq ft"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner: Is the area model I drew an accurate representation of the rectangle in the problem? How do you know?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to correctly redraw my area model on your board."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw as shown on the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a division equation to find the value of w."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 32 ÷ 4 = w.)"
+      },
+      {
+        "speaker": "students",
+        "text": "8 feet! Repeat the process with the following suggestions:  The area of a piece of paper is 72 square inches. Margo measures the length of the paper and says it is 8 inches. What is the width of the piece of paper?  Jillian needs to draw a rectangle with an area of 56 square centimeters and a width of 7 centimeters. What is the length of the rectangle that Jillian needs to draw? This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 12 3 4 Write or project the following problem: Amir is getting carpet in his bedroom, which measures 7 feet by 15 feet. How many square feet of carpet will Amir need?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw an area model to represent Amir’s 15 ft bedroom. Write an expression that shows how to find the area."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw as shown to the right.) 7 ft Area: 7 × 15"
+      },
+      {
+        "speaker": "students",
+        "text": "We can break the room up into two smaller rectangles and add their areas together.  We can also break NOTES ON apart one of the factors in 7 × 15 to come up with a MULTIPLE MEANS multiplication sentence that is easier to solve. OF ACTION AND"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Decide with your partner which strategy you’ll use to EXPRESSION: find the area. Then, solve. Offer planning and strategy"
+      },
+      {
+        "speaker": "students",
+        "text": "(Decide on a strategy and solve.) development support to learners, if needed. Some learners may use a"
+      },
+      {
+        "speaker": "students",
+        "text": "105 square feet! fluent in an alternative method. Model a think-aloud in which two or Invite students to share which strategy they chose and why; ask more strategies are possible, reason them to articulate how they used the strategy to solve the about your selection, and solve. This problem. For the break apart and distribute strategy, students may take more time than allotted may have broken apart the rectangle several different ways. here. Consider pre-teaching in order Continue with the following suggested examples, encouraging to preserve the pace of the lesson and to maximize every student’s students to try different strategies: participation.  Maya helps her family tile the bathroom wall. It measures 12 feet by 11 feet. How many square foot tiles does Maya need to cover the wall?  Francis washes all of the windows outside his parents’ NOTES ON bookstore; there are 5 windows, each one is 6 feet wide MULTIPLE MEANS and 8 feet high. What is the total area of the windows OF ENGAGEMENT: that Francis washes? During the Problem Set, extend"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 150 (debrief) ---\nA STORY OF UNITS                                                                                                                Lesson 12 3 4\n\n\nLesson 12\nObjective: Solve word problems involving area.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (15 minutes)\n Application Problem               (5 minutes)\n Concept Development               (30 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (15 minutes)\n\n Group Counting 3.OA.1                                  (3 minutes)\n Multiply by 7 3.OA.7                                   (7 minutes)\n Find the Side Length 3.MD.7                            (5 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally changing the direction of the count.\n        Fours to 40\n        Sixes to 60\n        Eights to 80\n        Nines to 90\n\nMultiply by 7 (7 minutes)\nMaterials: (S) Multiply by 7 (6−10) Pattern Sheet\n\nNote: This activity builds fluency with multiplication facts using units of 7. It works toward students knowing\nfrom memory all products of two one-digit numbers. See Lesson 2 for the directions for administration of a\nMultiply-By Pattern Sheet.\n    T:   (Write 7 × 7 =     .) Let’s skip-count up by sevens. (Count with fingers to 7 as students count.)\n    S:   7, 14, 21, 28, 35, 42, 49.\n    T:   Let’s see how we can skip-count down to find the answer, too. (Show 10 fingers.) Start at 70.\n         (Count down with your fingers as students say numbers.)\n    S:   70, 63, 56, 49.\n\n\n                         Lesson 12:                 Solve word problems involving area.                                                       149\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 151 (application-problem) ---\nA STORY OF UNITS                                                                                                               Lesson 12 3 4\n\n\nContinue with the following possible sequence: 9 × 7, 6 × 7, and 8 × 7.\n    T:   (Distribute Multiply by 7 (6–10) Pattern Sheet.) Let’s practice multiplying by 7. Be sure to work left\n         to right across the page.\n\nFind the Side Length (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews the relationship between side lengths and area.\n    T:   (Project a rectangle with a width of 2 units and an unknown length. Inside the rectangle, write\n         Area = 10 square units.) Say the area of the rectangle.\n    S:   10 square units.\n                                                                                   ____ units\n    T:   What’s the width of the rectangle?\n    S:   2 units.\n    T:   (Write 2 units × __ units = 10 square units.) On your       2 units Area = 10 square units\n         personal white board, complete the equation, filling\n         in the unknown length.\n    S:   (Write 2 units × 5 units = 10 square units.)\nContinue with the possible following sequence: 1 unit × __ units = 8 square units, 5 units × __ units = 15\nsquare units, 3 units × __ units = 18 square units, and 6 units × __ units = 24 square units.\n\n\nApplication Problem (5 minutes)\n\n    a.   Find the area of a 6 meter by 9 meter rectangle.\n    b.   Use the side lengths, 6 m × 9 m, to find different side lengths for a rectangle that has the same area.\n         Show your equations using parentheses. Then estimate to draw the rectangle and label the side\n         lengths.\n\n\nNote: This problem reviews using the associative property to generate whole number side lengths of\nrectangles with a given area.\n\n\n                        Lesson 12:                 Solve word problems involving area.                                                       150\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 152 (concept-development) ---\nA STORY OF UNITS                                                                                                             Lesson 12 3 4\n\n\n  Concept Development (30 minutes)\n\n  Materials: (S) Personal white board\n\n  Problem 1: Solve area word problems with 1 side length unknown.\n  Write or project the following problem: The area of Theo’s banner is 32 square feet. If the length of his\n  banner measures 4 feet, how wide is his banner?\n       T:   What information do we know?\n       S:   The area and length of Theo’s banner.\n       T:   What information do we not know?\n       S:   The width.\n       T:   I’ll draw an area model and use a letter for what we don‘t know.                     4 ft\n            (Draw an incorrectly scaled model such as the one shown on the\n            right.)                                                                 w       Area = 32 sq ft\n       T:   If the length is 4 feet and the area is 32 square feet, can the\n            width be less than 4 feet?\n       S:   No, the width needs to be more than 4 feet.  The width\n            should be more than 4 feet because 4 times 4 only equals 16,\nMP.6        but the area is 32 square feet.\n       T:   Talk to your partner: Is the area model I drew an accurate representation of the rectangle in the\n            problem? How do you know?\n       S:   No, because the width should be much longer than the length.\n       T:   Work with your partner to correctly redraw my area model on your board.\n       S:   (Draw as shown on the right.)\n       T:   How can we find the value of w?                                                4 ft\n       S:   Divide 32 by 4.\n       T:   Write a division equation to find the value of w.\n       S:   (Write 32 ÷ 4 = w.)\n       T:   What is the value of w?                                                                                 w         Area = 32 sq ft\n       S:   8.\n       T:   So, the width of Theo’s banner is just 8? 8 what?\n       S:   8 feet!\n Repeat the process with the following suggestions:\n           The area of a piece of paper is 72 square inches. Margo measures the length of the paper and says it\n            is 8 inches. What is the width of the piece of paper?\n           Jillian needs to draw a rectangle with an area of 56 square centimeters and a width of 7 centimeters.\n            What is the length of the rectangle that Jillian needs to draw?\n\n\n                          Lesson 12:                 Solve word problems involving area.                                                        151\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 153 (application-problem) ---\nA STORY OF UNITS                                                                                                               Lesson 12 3 4\n\n\nProblem 2: Choose a strategy to find the area of a larger rectangle.\nWrite or project the following problem: Amir is getting carpet in his bedroom, which measures 7 feet by\n15 feet. How many square feet of carpet will Amir need?\n    T:   Draw an area model to represent Amir’s                                                                15 ft\n         bedroom. Write an expression that shows\n         how to find the area.\n    S:   (Draw as shown to the right.)                    7 ft\n                                                                                                                                         Area: 7 × 15\n    T:   Talk to your partner: How can we find the\n         area of Amir’s bedroom since the\n         measurements are so large?\n    S:   We can break the room up into two smaller rectangles\n         and add their areas together.  We can also break                                                                  NOTES ON\n         apart one of the factors in 7 × 15 to come up with a                                                               MULTIPLE MEANS\n         multiplication sentence that is easier to solve.                                                                   OF ACTION AND\n    T:   Decide with your partner which strategy you’ll use to                                                              EXPRESSION:\n         find the area. Then, solve.                                                                            Offer planning and strategy\n    S:   (Decide on a strategy and solve.)                                                                      development support to learners, if\n                                                                                                                needed. Some learners may use a\n    T:   What is the area of Amir’s bedroom?                                                                    method simply because they are not\n    S:   105 square feet!                                                                                       fluent in an alternative method.\n                                                                                                                Model a think-aloud in which two or\nInvite students to share which strategy they chose and why; ask\n                                                                                                                more strategies are possible, reason\nthem to articulate how they used the strategy to solve the                                                      about your selection, and solve. This\nproblem. For the break apart and distribute strategy, students                                                  may take more time than allotted\nmay have broken apart the rectangle several different ways.                                                     here. Consider pre-teaching in order\nContinue with the following suggested examples, encouraging                                                     to preserve the pace of the lesson and\n                                                                                                                to maximize every student’s\nstudents to try different strategies:\n                                                                                                                participation.\n        Maya helps her family tile the bathroom wall. It\n         measures 12 feet by 11 feet. How many square foot\n         tiles does Maya need to cover the wall?\n        Francis washes all of the windows outside his parents’                                                             NOTES ON\n         bookstore; there are 5 windows, each one is 6 feet wide                                                            MULTIPLE MEANS\n         and 8 feet high. What is the total area of the windows                                                             OF ENGAGEMENT:\n         that Francis washes?                                                                                   During the Problem Set, extend\n                                                                                                                Problem 4 to students working above\nProblem Set (10 minutes)                                                                                        grade level. Have students model all\n                                                                                                                possible rectangles with an area of 64.\nStudents should do their personal best to complete the Problem                                                  Or, have students model up to eight\nSet within the allotted 10 minutes. For some classes, it may be                                                 ways of breaking their rectangle\nappropriate to modify the assignment by specifying which                                                        (Part b) into two smaller rectangles.\nproblems they work on first. Some problems do not specify a                                                     Make it an exciting, perhaps timed,\nmethod for solving. Students should solve these problems using                                                  competition. Always offer challenges\nthe RDW approach used for Application Problems.                                                                 and extensions to learners as\n                                                                                                                alternatives rather than additional\n                                                                                                                busy work.\n\n\n                        Lesson 12:                 Solve word problems involving area.                                                                    152\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 154 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 12 3 4\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Solve word problems involving area.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers\nwith a partner before going over answers as a class.\nLook for misconceptions or misunderstandings that can\nbe addressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process\nthe lesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        What shape is the sticky note in Problem 1?\n         How do you know?\n        Share student explanations to Problem 2(b).\n        What is another way the artist’s mural in\n         Problem 3 could have been broken apart?\n        How did you identify Alana’s pattern in\n         Problem 4?\n        Discuss how you found the area of two pieces\n         of Jermaine’s paper in Problem 5. Why was it\n         necessary to find the unknown side length\n         first? Are there any other ways to find the\n         area of the two pieces of paper?\n         (81 − 27 = 54)\n        How were all of today’s word problems\n         related? Does the unknown in a problem\n         change the way you solve it? Why or why not?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be\nread aloud to the students.\n\n\n                        Lesson 12:                 Solve word problems involving area.                                                       153\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 155 (template) ---\nA STORY OF UNITS                                                                                 Lesson 12 Pattern Sheet 3 4\n\n\n         Multiply.\n\n\nmultiply by 7 (6–10)\n\n\n                       Lesson 12:                 Solve word problems involving area.                                            154\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 156 (problem-set) ---\nA STORY OF UNITS                                                                                    Lesson 12 Problem Set 3 4\n\n\nName                                                                                                         Date\n\n1.   Each side on a sticky note measures 9 centimeters. What is the area of the sticky note?\n\n\n2.   Stacy tiles the rectangle below using her square pattern blocks.\n\n\n     a.   Find the area of Stacy’s rectangle in square units. Then, draw and label a different rectangle with\n          whole number side lengths that has the same area.\n\n\n     b.   Can you draw another rectangle with different whole number side lengths and have the same area?\n          Explain how you know.\n\n\n                        Lesson 12:                  Solve word problems involving area.                                            155\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 157 (problem-set) ---\nA STORY OF UNITS                                                                                      Lesson 12 Problem Set 3 4\n\n\n3.    An artist paints a 4 foot × 16 foot mural on a wall. What is the total area of the mural? Use the break\n      apart and distribute strategy.\n\n\n                        10 ft                                      6 ft\n\n     4 ft\n\n\n4.    Alana tiles the 3 figures below. She says, “I’m making a pattern!”\n\n\n      a.    Find the area of Alana’s 3 figures and explain her pattern.\n\n\n      b.    Draw the next 2 figures in Alana’s pattern and find their areas.\n\n\n5.    Jermaine glues 3 identical pieces of paper as shown below and makes a square. Find the unknown side\n      length of 1 piece of paper. Then, find the total area of 2 pieces of paper.\n\n                            9 cm\n\n                                                            ? cm\n\n        9 cm\n\n\n                           Lesson 12:                 Solve word problems involving area.                                            156\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 158 (exit-ticket) ---\nA STORY OF UNITS                                                                                         Lesson 12 Exit Ticket 3 4\n\n\nName                                                                                                         Date\n\n1.   A painting has an area of 63 square inches. One side length is 9 inches. What is the other side length?\n\n\n                        9 inches\n\n\n                Area = 63 square inches\n\n\n2.   Judy’s mini dollhouse has one floor and measures 4 inches by 16 inches. What is the total area of the\n     dollhouse floor?\n\n\n                         Lesson 12:                 Solve word problems involving area.                                              157\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 159 (homework) ---\nA STORY OF UNITS                                                                                         Lesson 12 Homework 3 4\n\n\nName                                                                                                           Date\n\n1.   A square calendar has sides that are 9 inches long. What is the calendar's area?\n\n\n2.   Each               is 1 square unit. Sienna uses the same square units to draw a 6 × 2 rectangle and says\n\n     that it has the same area as the rectangle below. Is she correct? Explain why or why not.\n\n\n3.   The surface of an office desk has an area of 15 square feet. Its length is 5 feet. How wide is the office\n     desk?\n\n\n                           Lesson 12:                 Solve word problems involving area.                                            158\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 160 (homework) ---\nA STORY OF UNITS                                                                                      Lesson 12 Homework 3 4\n\n\n4.   A rectangular garden has a total area of 48 square yards. Draw and label two possible rectangular\n     gardens with different side lengths that have the same area.\n\n\n5.   Lila makes the pattern below. Find and explain her pattern. Then, draw the fifth figure in her pattern.\n\n\n                        Lesson 12:                 Solve word problems involving area.                                            159\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 156,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                    Lesson 12 Problem Set 3 4\n\n\nName                                                                                                         Date\n\n1.   Each side on a sticky note measures 9 centimeters. What is the area of the sticky note?\n\n\n2.   Stacy tiles the rectangle below using her square pattern blocks.\n\n\n     a.   Find the area of Stacy’s rectangle in square units. Then, draw and label a different rectangle with\n          whole number side lengths that has the same area.\n\n\n     b.   Can you draw another rectangle with different whole number side lengths and have the same area?\n          Explain how you know.\n\n\n                        Lesson 12:                  Solve word problems involving area.                                            155\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 157,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                      Lesson 12 Problem Set 3 4\n\n\n3.    An artist paints a 4 foot × 16 foot mural on a wall. What is the total area of the mural? Use the break\n      apart and distribute strategy.\n\n\n                        10 ft                                      6 ft\n\n     4 ft\n\n\n4.    Alana tiles the 3 figures below. She says, “I’m making a pattern!”\n\n\n      a.    Find the area of Alana’s 3 figures and explain her pattern.\n\n\n      b.    Draw the next 2 figures in Alana’s pattern and find their areas.\n\n\n5.    Jermaine glues 3 identical pieces of paper as shown below and makes a square. Find the unknown side\n      length of 1 piece of paper. Then, find the total area of 2 pieces of paper.\n\n                            9 cm\n\n                                                            ? cm\n\n        9 cm\n\n\n                           Lesson 12:                 Solve word problems involving area.                                            156\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 228,
+        "text": "A STORY OF UNITS                                                                                         Lesson 12 Answer Key 3 4\n\n\nLesson 12\nPattern Sheet\n              7                                            14                                            21                       28\n             35                                            42                                            49                       56\n             63                                            70                                            35                       42\n             35                                            49                                            35                       56\n             35                                            63                                            35                       70\n             42                                            35                                            42                       49\n             42                                            56                                            42                       63\n             42                                            49                                            42                       49\n             56                                            49                                            63                       49\n             56                                            42                                            56                       49\n             56                                            63                                            63                       42\n             63                                            49                                            63                       56\n             63                                            56                                            42                       63\n             49                                            63                                            42                       56\n             63                                            49                                            42                       56\n\n\nProblem Set\n1.    81 sq cm\n2.    a. 12 sq units; answers will vary.\n      b. Yes; answers will vary.\n3.    64 sq ft\n4.    a. 4 sq units, 9 sq units, 16 sq units; explanations will vary.\n      b. 5 by 5 and 6 by 6 rectangles drawn; 25 sq units, 36 sq units\n5.    3 cm; 54 sq cm\n\n\nExit Ticket\n1.    7 in\n2.    64 sq in\n\n\n                        Module 4:                  Multiplication and Area                                                             227\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 229,
+        "text": "A STORY OF UNITS                                                                                         Lesson 12 Answer Key 3 4\n\n\nHomework\n1.    81 sq in\n2.    Yes; answers will vary.\n3.    3 ft\n4.    2 rectangles drawn; answers will vary.\n5.    5 by 2 rectangle drawn; explanations will vary.\n\n\n                        Module 4:                  Multiplication and Area                                                          228\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

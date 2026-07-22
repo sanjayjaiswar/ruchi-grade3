@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m3-l10",
+  "moduleId": "m3",
+  "lessonNumber": 10,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_3/g3_m3_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+    "teacherEditionBytes": 14065864,
+    "lessonPdfPages": {
+      "start": 119,
+      "end": 129
+    },
+    "problemSetPdfPages": [
+      124,
+      125,
+      126
+    ],
+    "exitTicketPdfPages": [
+      127
+    ],
+    "homeworkPdfPages": [
+      128,
+      129
+    ],
+    "answerKeyPdfPages": [
+      298
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m3-student/workbook-page-041.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m3-answer-key/page-298.png"
+    ]
+  },
+  "objective": "Use the distributive property as a strategy to multiply and divide.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "NOTES ON\n  Materials: (S) Personal white board                                                                                         MULTIPLE MEANS\n                                                                                                                              OF ACTION AND\n  Problem 1: Multiply.                                                                                                        EXPRESSION:\n                                                                                                                   Support English language learners as\n       T:   When we use the break apart and distribute strategy,\n                                                                              they engage in today’s discussion.\n            which factor do we break apart?                                   Offer extra time for them to formulate\n       S:   We break apart the number of groups.                              their thoughts and discuss with their\n       T:   Do you think our strategy would work if we broke apart            partners. If appropriate, preview\n            the size of the groups and distributed the factor                 words such as factor. Conduct subtle\n                                                                              and frequent checks for understanding.\n            representing the number of groups instead? Think\n                                                                              Elaborate, expand, or paraphrase the\n            about the commutative property. Talk to your partner.\n                                                                              dialogue as needed.\n       S:   I’m not sure. I don’t think so.  The commutative\n            property says that you can switch factors around in\n            multiplication, so maybe it would work.\n       T:   Let’s try using the break apart and distribute strategy that way\n            to solve 6 × 8. Then, we can compare what happens with our\n            work on the Application Problem.\n       T:   Take a look at my array. (Project the 6 by 8 array, shown at\n            right.) Which factor will we break apart?\n       S:   The 8.  The size of the groups.\nMP.7                                                                                                6 × (5 + 3)\n       T:   Breaking it into 5 plus something helps us make two smaller\n            facts. We can break 8 into 5 and what?\n       S:   5 and 3.\n       T:   (Write 6 × (5 + 3) under the array.) Is 8 represented by the number of columns or the number of\n            rows in the array?\n       S:   The columns.\n       T:   How should I draw my line to show that we broke apart the columns?\n       S:   Maybe an up and down line?  You could make a vertical line after 5 columns. Then, one part\n            would show 5 columns, and the other would show 3.\n\n\n                           Lesson 10:               Use the distributive property as a strategy to multiply and divide.                                   119\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                             Lesson 10 3 3\n\n\n       T:   (Draw a dotted line after the fifth column.) On your personal white board, write the multiplication\n            facts you would use to label each part of the array.\n       S:   (Write 6 × 5 and 6 × 3.)\n       T:   What did we break our 6 eights into?\n       S:   6 fives and 6 threes.\n       T:   Talk to your partner about how 6 × (5 + 3) shows 6 fives and\n            6 threes. Use the array to help you explain.\n       T:   Solve the problem.\nMP.7\n       S:   (May use 6 × (5 + 3) or (6 × 5) + (6 × 3) to solve.)\n       T:   What does it equal?                                                              6 × (5 + 3)\n       S:   48.\n       T:   Look back at your work on the Application Problem. Compare it with this way of solving. Notice\n            what is the same or different. Talk to your partner about what you see.\n       S:   We switched around the factors that we broke apart and distributed.  In the Application Problem,\n            the units never changed. They were always eights. The one we just did had two different units,\n            fives and threes, but what stayed the same was the number of fives and the number of threes.\n       T:   Does the break apart and distribute strategy work both ways?\n       S:   Yes!\n Continue with the following suggested problem: 7 × 8.\n\n Problem 2: Divide.\n       T:   Let’s use the break apart and distribute strategy to solve 64 ÷ 8. Draw a number bond with 64 ÷ 8 as\n            the whole. Leave the parts empty. (Allow time for students to draw.)\n       T:   Let’s think about how to break apart 64 into two numbers\n            that are easier for us to divide. Make a list with your\n            partner. Remember that when we break apart 64, both\n            numbers need to be divisible by 8.\n       S:   How about 60 and 4?  No, you can’t divide those by 8. \n            Maybe 32 and 32.  Or 40 and 24.\n       T:   Using 32 and 32 works nicely because it’s a double. Forty\n            and 24 also works well; 40 ÷ 8 makes 5. Five is easy to add\n            to, so let’s try 40 and 24. Write 40 ÷ 8 as one of the parts\n            on your number bond.\n       T:   What division fact goes inside the other part?\n       S:   24 ÷ 8.\n       T:   How do you know?\n       S:   40 plus 24 equals 64.  We started with 64, used 40, and need 24 more.\n       T:   Write that division fact as the other part.\n            Our number bond shows us that 64 ÷ 8 has the same value as combining 40 ÷ 8 and 24 ÷ 8.\n            Work with your partner to write that as an addition sentence on your board.\n\n\n                          Lesson 10:               Use the distributive property as a strategy to multiply and divide.                         120\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 10 3 3\n\n\n    S:   (Write 64 ÷ 8 = (40 ÷ 8) + (24 ÷ 8).)\n    T:   Work with your partner to solve.\n    S:   (Write 5 + 3 = 8.)\n    T:   What is 64 ÷ 8?\n    S:   8.\nContinue with the following suggested sequence:\n        96 ÷ 8\n        54 ÷ 6",
+    "fluencyPracticeText": " Group Counting 3.OA.1                                           (4 minutes)\n Decompose Multiples of 8 3.OA.5                                 (3 minutes)\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by sixes and sevens\nreviews multiplication using those units in Topic B. Group counting by eights prepares students for\nmultiplication in this topic. Group counting nines anticipates multiplication using units of nine later in the\nmodule. Direct students to count forward and backward, occasionally changing the direction of the count:\n        Sixes to 60\n        Sevens to 70\n        Eights to 80                                                                                                      NOTES ON\n        Nines to 90                                                                                                       MULTIPLE MEANS\n                                                                                                                           OF ENGAGEMENT:\nDecompose Multiples of 8 (3 minutes)                                                                            Students working below grade level\n                                                                                                                may benefit from clear directions as to\nMaterials: (S) Personal white board                                                                             how to find the unknown part of the\n                                                                                                                number bond. Model and instruct\nNote: This activity prepares students to use the distributive                                                   students to subtract to find the\nproperty in today’s lesson.                                                                                     unknown part. Begin with smaller\n                                                                                                                numbers as applicable to student\n    T:   (Project a number bond with a whole of 48 and 16 as a                                                  needs.\n         part.) On your personal white board, fill in the\n         unknown part in the number bond.\nContinue with the following suggested sequence: whole of 56 and 24 as a part, whole of 64 and 40 as a part,\nwhole of 40 and 16 as a part, and whole of 72 and 24 as a part.\n\n\n                        Lesson 10:               Use the distributive property as a strategy to multiply and divide.                                  118\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                              Lesson 10 3 3",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "When we use the break apart and distribute strategy, they engage in today’s discussion. which factor do we break apart? Offer extra time for them to formulate"
+      },
+      {
+        "speaker": "students",
+        "text": "We break apart the number of groups. their thoughts and discuss with their"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Do you think our strategy would work if we broke apart partners. If appropriate, preview the size of the groups and distributed the factor words such as factor. Conduct subtle and frequent checks for understanding. representing the number of groups instead? Think Elaborate, expand, or paraphrase the about the commutative property. Talk to your partner. dialogue as needed."
+      },
+      {
+        "speaker": "students",
+        "text": "I’m not sure. I don’t think so.  The commutative property says that you can switch factors around in multiplication, so maybe it would work."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s try using the break apart and distribute strategy that way to solve 6 × 8. Then, we can compare what happens with our work on the Application Problem."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Take a look at my array. (Project the 6 by 8 array, shown at right.) Which factor will we break apart?"
+      },
+      {
+        "speaker": "students",
+        "text": "The 8.  The size of the groups. MP.7 6 × (5 + 3)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Breaking it into 5 plus something helps us make two smaller facts. We can break 8 into 5 and what?"
+      },
+      {
+        "speaker": "students",
+        "text": "5 and 3."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 6 × (5 + 3) under the array.) Is 8 represented by the number of columns or the number of rows in the array?"
+      },
+      {
+        "speaker": "students",
+        "text": "The columns."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How should I draw my line to show that we broke apart the columns?"
+      },
+      {
+        "speaker": "students",
+        "text": "Maybe an up and down line?  You could make a vertical line after 5 columns. Then, one part would show 5 columns, and the other would show 3. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 10 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw a dotted line after the fifth column.) On your personal white board, write the multiplication facts you would use to label each part of the array."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 6 × 5 and 6 × 3.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What did we break our 6 eights into?"
+      },
+      {
+        "speaker": "students",
+        "text": "6 fives and 6 threes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner about how 6 × (5 + 3) shows 6 fives and 6 threes. Use the array to help you explain."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Solve the problem. MP.7"
+      },
+      {
+        "speaker": "students",
+        "text": "(May use 6 × (5 + 3) or (6 × 5) + (6 × 3) to solve.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What does it equal? 6 × (5 + 3)"
+      },
+      {
+        "speaker": "students",
+        "text": "48."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look back at your work on the Application Problem. Compare it with this way of solving. Notice what is the same or different. Talk to your partner about what you see."
+      },
+      {
+        "speaker": "students",
+        "text": "We switched around the factors that we broke apart and distributed.  In the Application Problem, the units never changed. They were always eights. The one we just did had two different units, fives and threes, but what stayed the same was the number of fives and the number of threes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Does the break apart and distribute strategy work both ways?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes! Continue with the following suggested problem: 7 × 8."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use the break apart and distribute strategy to solve 64 ÷ 8. Draw a number bond with 64 ÷ 8 as the whole. Leave the parts empty. (Allow time for students to draw.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s think about how to break apart 64 into two numbers that are easier for us to divide. Make a list with your partner. Remember that when we break apart 64, both numbers need to be divisible by 8."
+      },
+      {
+        "speaker": "students",
+        "text": "How about 60 and 4?  No, you can’t divide those by 8.  Maybe 32 and 32.  Or 40 and 24."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Using 32 and 32 works nicely because it’s a double. Forty and 24 also works well; 40 ÷ 8 makes 5. Five is easy to add to, so let’s try 40 and 24. Write 40 ÷ 8 as one of the parts on your number bond."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What division fact goes inside the other part?"
+      },
+      {
+        "speaker": "students",
+        "text": "24 ÷ 8."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "40 plus 24 equals 64.  We started with 64, used 40, and need 24 more."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write that division fact as the other part. Our number bond shows us that 64 ÷ 8 has the same value as combining 40 ÷ 8 and 24 ÷ 8. Work with your partner to write that as an addition sentence on your board. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 10 3 3"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 64 ÷ 8 = (40 ÷ 8) + (24 ÷ 8).)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to solve."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 5 + 3 = 8.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is 64 ÷ 8?"
+      },
+      {
+        "speaker": "students",
+        "text": "8. Continue with the following suggested sequence:  96 ÷ 8  54 ÷ 6"
+      }
+    ],
+    "teacherPrompts": [
+      "When we use the break apart and distribute strategy, they engage in today’s discussion. which factor do we break apart? Offer extra time for them to formulate",
+      "Do you think our strategy would work if we broke apart partners. If appropriate, preview the size of the groups and distributed the factor words such as factor. Conduct subtle and frequent checks for understanding. representing the number of groups instead? Think Elaborate, expand, or paraphrase the about the commutative property. Talk to your partner. dialogue as needed.",
+      "Let’s try using the break apart and distribute strategy that way to solve 6 × 8. Then, we can compare what happens with our work on the Application Problem.",
+      "Take a look at my array. (Project the 6 by 8 array, shown at right.) Which factor will we break apart?",
+      "Breaking it into 5 plus something helps us make two smaller facts. We can break 8 into 5 and what?",
+      "(Write 6 × (5 + 3) under the array.) Is 8 represented by the number of columns or the number of rows in the array?",
+      "How should I draw my line to show that we broke apart the columns?",
+      "(Draw a dotted line after the fifth column.) On your personal white board, write the multiplication facts you would use to label each part of the array.",
+      "What did we break our 6 eights into?",
+      "Talk to your partner about how 6 × (5 + 3) shows 6 fives and 6 threes. Use the array to help you explain.",
+      "Solve the problem. MP.7",
+      "What does it equal? 6 × (5 + 3)",
+      "Look back at your work on the Application Problem. Compare it with this way of solving. Notice what is the same or different. Talk to your partner about what you see.",
+      "Does the break apart and distribute strategy work both ways?",
+      "Let’s use the break apart and distribute strategy to solve 64 ÷ 8. Draw a number bond with 64 ÷ 8 as the whole. Leave the parts empty. (Allow time for students to draw.)",
+      "Let’s think about how to break apart 64 into two numbers that are easier for us to divide. Make a list with your partner. Remember that when we break apart 64, both numbers need to be divisible by 8.",
+      "Using 32 and 32 works nicely because it’s a double. Forty and 24 also works well; 40 ÷ 8 makes 5. Five is easy to add to, so let’s try 40 and 24. Write 40 ÷ 8 as one of the parts on your number bond.",
+      "What division fact goes inside the other part?",
+      "How do you know?",
+      "Write that division fact as the other part. Our number bond shows us that 64 ÷ 8 has the same value as combining 40 ÷ 8 and 24 ÷ 8. Work with your partner to write that as an addition sentence on your board. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 10 3 3",
+      "Work with your partner to solve.",
+      "What is 64 ÷ 8?"
+    ],
+    "debriefPrompt": "Describe the steps you took to solve for the unknown numbers in Problem 1(a)",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Label the arrays. Then, fill in the blanks below to make the statements true. a. 8 × 8 = ____ b. 8 × 9 = 9 × 8 =____ (8 × 5) = _ __ (8 × ____) = ____ (8 × 5) = _ __ (8 × ____) = ____ 8 × 8 = 8 × (5 + ____) 9 × 8 = 8 × (5 + ____) = (8 × 5) + (8 × ____) = (8 × 5) + (8 × ____) = 40 + ____ = 40 + ____ = ____ = ____",
+        "equations": [
+          "8 × 8 = ____",
+          "8 × 9 = 9",
+          "8 =____",
+          "8 × 5"
+        ]
+      },
+      {
+        "number": 2,
+        "prompt": "Break apart and distribute to solve 56 ÷ 8.",
+        "equations": [
+          "56 ÷ 8"
+        ]
+      },
+      {
+        "number": 3,
+        "prompt": "Break apart and distribute to solve 72 ÷ 8. 56÷8 72÷8 40÷8 16÷8 40÷8 72 ÷ 8 = (40 ÷ 8) + (____÷ 8) 56 ÷ 8 = (40 ÷ 8) + (____÷ 8) = 5 + ____ = 5 + ____ = ____ = ____",
+        "equations": [
+          "72 ÷ 8",
+          "56÷8",
+          "72÷8",
+          "40÷8"
+        ]
+      },
+      {
+        "number": 4,
+        "prompt": "An octagon has 8 sides. Skip-count to find the total number of sides on 9 octagons. Nine octagons have a total of ____ sides.",
+        "equations": []
+      },
+      {
+        "number": 5,
+        "prompt": "Multiply. 8×6= 3×8= 4×8= 8 × 10 8×8= 7×8=",
+        "equations": [
+          "8×6= 3",
+          "8= 4",
+          "8= 8",
+          "8×8= 7"
+        ]
+      },
+      {
+        "number": 6,
+        "prompt": "Match. 24 ÷ 8 32 ÷ 8 16 ÷ 8 64 ÷ 8 5 48 ÷ 8 72 ÷ 8",
+        "equations": [
+          "24 ÷ 8",
+          "32 ÷ 8",
+          "16 ÷ 8",
+          "64 ÷ 8"
+        ]
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                        Lesson 10 Problem Set 3 3\n\n\nName                                                                                                           Date\n\n1. Label the arrays. Then, fill in the blanks below to make the statements true.\n    a. 8 × 8 = _____                                                                           b. 8 × 9 = 9 × 8 =_____\n\n       (8 × 5) = _    __        (8 × _____) = _____                                                  (8 × 5) = _           __        (8 × _____) = _____\n\n\n          8 × 8 = 8 × (5 + _____)                                                                  9 × 8 = 8 × (5 + _____)\n               = (8 × 5) + (8 × _____)                                                                       = (8 × 5) + (8 × ____ )\n               =      40     + ______                                                                        =      40       + ______\n               = ______                                                                                      = ______\n\n\n2. Break apart and distribute to solve 56 ÷ 8.                                          3. Break apart and distribute to solve 72 ÷ 8.\n\n\n                   56÷8                                                                                                  72÷8\n\n\n       40÷8                         16÷8                                                                40÷8\n\n                                                                                                 72 ÷ 8 = (40 ÷ 8) + (__________÷ 8)\n    56 ÷ 8 = (40 ÷ 8) + (__________÷ 8)\n                                                                                                              = 5 + ____________\n          = 5 + ____________\n                                                                                                              = ____________\n          = ____________\n\n\n                           Lesson 10:               Use the distributive property as a strategy to multiply and divide.                                    123\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                    Lesson 10 Problem Set 3 3\n\n\n4. An octagon has 8 sides. Skip-count to find the total number of sides on 9 octagons.\n\n\n    8\n                 16\n\n\n                                                                                          Nine octagons have a total of _________ sides.\n\n\n5. Multiply.\n\n\n                                                                   8×6=\n                                                                                                                                  3×8=\n         4×8=\n\n\n                      32\n\n\n        8 × 10                                                     8×8=                                                          7×8=\n\n\n                       Lesson 10:               Use the distributive property as a strategy to multiply and divide.                      124\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                    Lesson 10 Problem Set 3 3\n\n\n6. Match.\n\n\n      24 ÷ 8\n                                                                                                                                         1\n\n\n                                                                                                                                                 2\n        32 ÷ 8\n\n\n                                                                                                                                     3\n\n\n       16 ÷ 8\n                                                                                                                                 4\n\n\n            64 ÷ 8                                                                                                                           5\n\n\n                                                                                                                                     6\n\n\n       48 ÷ 8\n                                                                                                                                                     7\n\n\n                                                                                                                                     8\n\n\n              72 ÷ 8\n                                                                                                                                                     9\n\n\n                       Lesson 10:               Use the distributive property as a strategy to multiply and divide.                                      125\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015",
+    "answerKeyProblemSetText": "1.    a. Array accurately labeled; 64; 40; 3, 24; 3; 3; 24; 64\n      b. Array accurately labeled; 72; 40; 4, 32; 4; 4; 32; 72\n2.    16; 2; 7\n3.    32 ÷ 8; 32; 4; 9\n4.    24, 32, 40, 48, 56, 64, 72; 72\n5.    Answer provided; 48; 24; 80; 64; 56\n6.    Answer provided; 4; 2; 8; 6; 9",
+    "answerKeyText": "A STORY OF UNITS                                                                                        Lesson 10 Answer Key 3 3\n\n\nLesson 10\nProblem Set\n1.    a. Array accurately labeled; 64; 40; 3, 24; 3; 3; 24; 64\n      b. Array accurately labeled; 72; 40; 4, 32; 4; 4; 32; 72\n2.    16; 2; 7\n3.    32 ÷ 8; 32; 4; 9\n4.    24, 32, 40, 48, 56, 64, 72; 72\n5.    Answer provided; 48; 24; 80; 64; 56\n6.    Answer provided; 4; 2; 8; 6; 9\n\n\nExit Ticket\n56; strategy accurately used to solve\n\n\nHomework\n1.    Array accurately labeled; 56; 35; 3, 21; 3; 3; 21; 56\n2.    32; 4; 9\n3.    16, 24, 32, 40, 48, 56, 64, 72, 80; 72, 40, 64, 48, 56\n4.    2; 5; 4; 6; 7; 9\n\n\n                         Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              297\n\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G3-M3-TE-1.3.0-05.2015",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "number-bond",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "T: Take a look at my array. (Project the 6 by 8 array, shown at",
+        "T: (Write 6 × (5 + 3) under the array.) Is 8 represented by the number of columns or the number of",
+        "rows in the array?",
+        "facts you would use to label each part of the array.",
+        "6 threes. Use the array to help you explain.",
+        "1. Label the arrays. Then, fill in the blanks below to make the statements true."
+      ],
+      "number-bond": [
+        "T: When we use the break apart and distribute strategy,",
+        "which factor do we break apart? Offer extra time for them to formulate",
+        "S: We break apart the number of groups. their thoughts and discuss with their",
+        "T: Let’s try using the break apart and distribute strategy that way",
+        "right.) Which factor will we break apart?",
+        "T: Does the break apart and distribute strategy work both ways?",
+        "T: Let’s use the break apart and distribute strategy to solve 64 ÷ 8. Draw a number bond with 64 ÷ 8 as",
+        "T: Let’s think about how to break apart 64 into two numbers"
+      ],
+      "money-model": [
+        "the units never changed. They were always eights. The one we just did had two different units,"
+      ],
+      "picture-or-drawing": [
+        "T: How should I draw my line to show that we broke apart the columns?",
+        "T: (Draw a dotted line after the fifth column.) On your personal white board, write the multiplication",
+        "T: Let’s use the break apart and distribute strategy to solve 64 ÷ 8. Draw a number bond with 64 ÷ 8 as",
+        "the whole. Leave the parts empty. (Allow time for students to draw.)"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Let’s try using the break apart and distribute strategy that way to solve 6 × 8. Then, we can compare what happens with our work on the Application Problem."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Take a look at my array. (Project the 6 by 8 array, shown at right.) Which factor will we break apart?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 6 × (5 + 3) under the array.) Is 8 represented by the number of columns or the number of rows in the array?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How should I draw my line to show that we broke apart the columns?"
+      },
+      {
+        "speaker": "students",
+        "text": "Maybe an up and down line?  You could make a vertical line after 5 columns. Then, one part would show 5 columns, and the other would show 3. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 10 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw a dotted line after the fifth column.) On your personal white board, write the multiplication facts you would use to label each part of the array."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 6 × 5 and 6 × 3.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner about how 6 × (5 + 3) shows 6 fives and 6 threes. Use the array to help you explain."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Solve the problem. MP.7"
+      },
+      {
+        "speaker": "students",
+        "text": "(May use 6 × (5 + 3) or (6 × 5) + (6 × 3) to solve.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look back at your work on the Application Problem. Compare it with this way of solving. Notice what is the same or different. Talk to your partner about what you see."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use the break apart and distribute strategy to solve 64 ÷ 8. Draw a number bond with 64 ÷ 8 as the whole. Leave the parts empty. (Allow time for students to draw.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Using 32 and 32 works nicely because it’s a double. Forty and 24 also works well; 40 ÷ 8 makes 5. Five is easy to add to, so let’s try 40 and 24. Write 40 ÷ 8 as one of the parts on your number bond."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write that division fact as the other part. Our number bond shows us that 64 ÷ 8 has the same value as combining 40 ÷ 8 and 24 ÷ 8. Work with your partner to write that as an addition sentence on your board. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 10 3 3"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 64 ÷ 8 = (40 ÷ 8) + (24 ÷ 8).)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to solve."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 5 + 3 = 8.)"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 119 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 10 3 3\n\n\nLesson 10\nObjective: Use the distributive property as a strategy to multiply and\ndivide.\n\nSuggested Lesson Structure\n\n Fluency Practice                 (7 minutes)\n Application Problem              (5 minutes)\n Concept Development              (38 minutes)\n Student Debrief                  (10 minutes)\n   Total Time                      (60 minutes)\n\n\nFluency Practice (7 minutes)\n Group Counting 3.OA.1                                           (4 minutes)\n Decompose Multiples of 8 3.OA.5                                 (3 minutes)\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by sixes and sevens\nreviews multiplication using those units in Topic B. Group counting by eights prepares students for\nmultiplication in this topic. Group counting nines anticipates multiplication using units of nine later in the\nmodule. Direct students to count forward and backward, occasionally changing the direction of the count:\n        Sixes to 60\n        Sevens to 70\n        Eights to 80                                                                                                      NOTES ON\n        Nines to 90                                                                                                       MULTIPLE MEANS\n                                                                                                                           OF ENGAGEMENT:\nDecompose Multiples of 8 (3 minutes)                                                                            Students working below grade level\n                                                                                                                may benefit from clear directions as to\nMaterials: (S) Personal white board                                                                             how to find the unknown part of the\n                                                                                                                number bond. Model and instruct\nNote: This activity prepares students to use the distributive                                                   students to subtract to find the\nproperty in today’s lesson.                                                                                     unknown part. Begin with smaller\n                                                                                                                numbers as applicable to student\n    T:   (Project a number bond with a whole of 48 and 16 as a                                                  needs.\n         part.) On your personal white board, fill in the\n         unknown part in the number bond.\nContinue with the following suggested sequence: whole of 56 and 24 as a part, whole of 64 and 40 as a part,\nwhole of 40 and 16 as a part, and whole of 72 and 24 as a part.\n\n\n                        Lesson 10:               Use the distributive property as a strategy to multiply and divide.                                  118\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 120 (concept-development) ---\nA STORY OF UNITS                                                                                                              Lesson 10 3 3\n\n\n  Application Problem (5 minutes)\n\n  Use the 5 plus something break apart and distribute strategy to\n  solve 6 × 8. Model with a tape diagram.\n  Note: This problem reviews modeling the break apart and\n  distribute strategy using a tape diagram from Lesson 6. Up until\n  today’s lesson, students learned to break apart the first factor and\n  distribute the second factor. Today’s Concept Development\n  reverses the order using the fact in this Application Problem.\n\n\n  Concept Development (38 minutes)\n                                                                                                                              NOTES ON\n  Materials: (S) Personal white board                                                                                         MULTIPLE MEANS\n                                                                                                                              OF ACTION AND\n  Problem 1: Multiply.                                                                                                        EXPRESSION:\n                                                                                                                   Support English language learners as\n       T:   When we use the break apart and distribute strategy,\n                                                                              they engage in today’s discussion.\n            which factor do we break apart?                                   Offer extra time for them to formulate\n       S:   We break apart the number of groups.                              their thoughts and discuss with their\n       T:   Do you think our strategy would work if we broke apart            partners. If appropriate, preview\n            the size of the groups and distributed the factor                 words such as factor. Conduct subtle\n                                                                              and frequent checks for understanding.\n            representing the number of groups instead? Think\n                                                                              Elaborate, expand, or paraphrase the\n            about the commutative property. Talk to your partner.\n                                                                              dialogue as needed.\n       S:   I’m not sure. I don’t think so.  The commutative\n            property says that you can switch factors around in\n            multiplication, so maybe it would work.\n       T:   Let’s try using the break apart and distribute strategy that way\n            to solve 6 × 8. Then, we can compare what happens with our\n            work on the Application Problem.\n       T:   Take a look at my array. (Project the 6 by 8 array, shown at\n            right.) Which factor will we break apart?\n       S:   The 8.  The size of the groups.\nMP.7                                                                                                6 × (5 + 3)\n       T:   Breaking it into 5 plus something helps us make two smaller\n            facts. We can break 8 into 5 and what?\n       S:   5 and 3.\n       T:   (Write 6 × (5 + 3) under the array.) Is 8 represented by the number of columns or the number of\n            rows in the array?\n       S:   The columns.\n       T:   How should I draw my line to show that we broke apart the columns?\n       S:   Maybe an up and down line?  You could make a vertical line after 5 columns. Then, one part\n            would show 5 columns, and the other would show 3.\n\n\n                           Lesson 10:               Use the distributive property as a strategy to multiply and divide.                                   119\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 121 (application-problem) ---\nA STORY OF UNITS                                                                                                             Lesson 10 3 3\n\n\n       T:   (Draw a dotted line after the fifth column.) On your personal white board, write the multiplication\n            facts you would use to label each part of the array.\n       S:   (Write 6 × 5 and 6 × 3.)\n       T:   What did we break our 6 eights into?\n       S:   6 fives and 6 threes.\n       T:   Talk to your partner about how 6 × (5 + 3) shows 6 fives and\n            6 threes. Use the array to help you explain.\n       T:   Solve the problem.\nMP.7\n       S:   (May use 6 × (5 + 3) or (6 × 5) + (6 × 3) to solve.)\n       T:   What does it equal?                                                              6 × (5 + 3)\n       S:   48.\n       T:   Look back at your work on the Application Problem. Compare it with this way of solving. Notice\n            what is the same or different. Talk to your partner about what you see.\n       S:   We switched around the factors that we broke apart and distributed.  In the Application Problem,\n            the units never changed. They were always eights. The one we just did had two different units,\n            fives and threes, but what stayed the same was the number of fives and the number of threes.\n       T:   Does the break apart and distribute strategy work both ways?\n       S:   Yes!\n Continue with the following suggested problem: 7 × 8.\n\n Problem 2: Divide.\n       T:   Let’s use the break apart and distribute strategy to solve 64 ÷ 8. Draw a number bond with 64 ÷ 8 as\n            the whole. Leave the parts empty. (Allow time for students to draw.)\n       T:   Let’s think about how to break apart 64 into two numbers\n            that are easier for us to divide. Make a list with your\n            partner. Remember that when we break apart 64, both\n            numbers need to be divisible by 8.\n       S:   How about 60 and 4?  No, you can’t divide those by 8. \n            Maybe 32 and 32.  Or 40 and 24.\n       T:   Using 32 and 32 works nicely because it’s a double. Forty\n            and 24 also works well; 40 ÷ 8 makes 5. Five is easy to add\n            to, so let’s try 40 and 24. Write 40 ÷ 8 as one of the parts\n            on your number bond.\n       T:   What division fact goes inside the other part?\n       S:   24 ÷ 8.\n       T:   How do you know?\n       S:   40 plus 24 equals 64.  We started with 64, used 40, and need 24 more.\n       T:   Write that division fact as the other part.\n            Our number bond shows us that 64 ÷ 8 has the same value as combining 40 ÷ 8 and 24 ÷ 8.\n            Work with your partner to write that as an addition sentence on your board.\n\n\n                          Lesson 10:               Use the distributive property as a strategy to multiply and divide.                         120\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 122 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 10 3 3\n\n\n    S:   (Write 64 ÷ 8 = (40 ÷ 8) + (24 ÷ 8).)\n    T:   Work with your partner to solve.\n    S:   (Write 5 + 3 = 8.)\n    T:   What is 64 ÷ 8?\n    S:   8.\nContinue with the following suggested sequence:\n        96 ÷ 8\n        54 ÷ 6\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Use the distributive property as a\nstrategy to multiply and divide.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a conversation\nto debrief the Problem Set and process the lesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Describe the steps you took to solve for the\n         unknown numbers in Problem 1(a).\n        How did you know what division fact to write for\n         the unknown part in Problem 3?\n        What multiplication sentence is used to solve\n         Problem 4? How do you know?\n\n\n                        Lesson 10:               Use the distributive property as a strategy to multiply and divide.                         121\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 123 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 10 3 3\n\n\n       Invite students to share how to apply the break\n        apart strategy to any of the expressions in\n        Problem 5.\n       In what ways does the break apart and distribute\n        strategy remind you of the simplifying strategy\n        we learned yesterday?\n       How did our math work today help make\n        multiplication and division with larger numbers\n        simpler?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                       Lesson 10:               Use the distributive property as a strategy to multiply and divide.                         122\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 124 (problem-set) ---\nA STORY OF UNITS                                                                                        Lesson 10 Problem Set 3 3\n\n\nName                                                                                                           Date\n\n1. Label the arrays. Then, fill in the blanks below to make the statements true.\n    a. 8 × 8 = _____                                                                           b. 8 × 9 = 9 × 8 =_____\n\n       (8 × 5) = _    __        (8 × _____) = _____                                                  (8 × 5) = _           __        (8 × _____) = _____\n\n\n          8 × 8 = 8 × (5 + _____)                                                                  9 × 8 = 8 × (5 + _____)\n               = (8 × 5) + (8 × _____)                                                                       = (8 × 5) + (8 × ____ )\n               =      40     + ______                                                                        =      40       + ______\n               = ______                                                                                      = ______\n\n\n2. Break apart and distribute to solve 56 ÷ 8.                                          3. Break apart and distribute to solve 72 ÷ 8.\n\n\n                   56÷8                                                                                                  72÷8\n\n\n       40÷8                         16÷8                                                                40÷8\n\n                                                                                                 72 ÷ 8 = (40 ÷ 8) + (__________÷ 8)\n    56 ÷ 8 = (40 ÷ 8) + (__________÷ 8)\n                                                                                                              = 5 + ____________\n          = 5 + ____________\n                                                                                                              = ____________\n          = ____________\n\n\n                           Lesson 10:               Use the distributive property as a strategy to multiply and divide.                                    123\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 125 (problem-set) ---\nA STORY OF UNITS                                                                                    Lesson 10 Problem Set 3 3\n\n\n4. An octagon has 8 sides. Skip-count to find the total number of sides on 9 octagons.\n\n\n    8\n                 16\n\n\n                                                                                          Nine octagons have a total of _________ sides.\n\n\n5. Multiply.\n\n\n                                                                   8×6=\n                                                                                                                                  3×8=\n         4×8=\n\n\n                      32\n\n\n        8 × 10                                                     8×8=                                                          7×8=\n\n\n                       Lesson 10:               Use the distributive property as a strategy to multiply and divide.                      124\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 126 (problem-set) ---\nA STORY OF UNITS                                                                                    Lesson 10 Problem Set 3 3\n\n\n6. Match.\n\n\n      24 ÷ 8\n                                                                                                                                         1\n\n\n                                                                                                                                                 2\n        32 ÷ 8\n\n\n                                                                                                                                     3\n\n\n       16 ÷ 8\n                                                                                                                                 4\n\n\n            64 ÷ 8                                                                                                                           5\n\n\n                                                                                                                                     6\n\n\n       48 ÷ 8\n                                                                                                                                                     7\n\n\n                                                                                                                                     8\n\n\n              72 ÷ 8\n                                                                                                                                                     9\n\n\n                       Lesson 10:               Use the distributive property as a strategy to multiply and divide.                                      125\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 127 (exit-ticket) ---\nA STORY OF UNITS                                                                                         Lesson 10 Exit Ticket 3 3\n\n\nName                                                                                                       Date\n\nUse the break apart and distribute strategy to solve the following problem. You may choose whether or not\nto draw an array.\n\n\n   7 × 8 =_____\n\n\n                       Lesson 10:               Use the distributive property as a strategy to multiply and divide.                126\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 128 (homework) ---\nA STORY OF UNITS                                                                                        Lesson 10 Homework 3 3\n\n\nName                                                                                                        Date\n\n1. Label the array. Then, fill in the blanks to make the statements true.\n\n\n        8 × 7 = 7 × 8 =_____\n\n\n                       (7 × 5) =                            (7 × _____) = _____\n\n\n                             8 × 7 = 7 × (5 + _____)\n                                        = (7 × 5) + (7 × ____)\n                                        =       35 + ______\n                                        = ______\n\n\n2. Break apart and distribute to solve 72 ÷ 8.\n\n\n                                                                   72 ÷ 8 = (40 ÷ 8) + (__________÷ 8)\n                        72÷8\n                                                                               = 5 + ____________\n\n\n                40÷8                            32÷8                           = ____________\n\n\n                       Lesson 10:               Use the distributive property as a strategy to multiply and divide.               127\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 129 (homework) ---\nA STORY OF UNITS                                                                                        Lesson 10 Homework 3 3\n\n\n3. Count by 8. Then, match each multiplication problem with its value.\n\n       8     , _______, _______, _______, _______, _______, _______, _______, _______, _______\n\n\n                  9×8                                                                                                                8×8\n                                                                             5×8\n\n\n                                     6×8                                                                                  7×8\n\n\n4. Divide.\n\n\n     16 ÷ 8 = ______                                          40 ÷ 8 = ______                                                     32 ÷ 8 = ______\n\n\n    48 ÷ 8 = ______                                         56 ÷ 8 = ______                                                       72 ÷ 8 = ______\n\n\n                        Lesson 10:               Use the distributive property as a strategy to multiply and divide.                                128\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015",
+    "problemSetPages": [
+      {
+        "pdfPage": 124,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                        Lesson 10 Problem Set 3 3\n\n\nName                                                                                                           Date\n\n1. Label the arrays. Then, fill in the blanks below to make the statements true.\n    a. 8 × 8 = _____                                                                           b. 8 × 9 = 9 × 8 =_____\n\n       (8 × 5) = _    __        (8 × _____) = _____                                                  (8 × 5) = _           __        (8 × _____) = _____\n\n\n          8 × 8 = 8 × (5 + _____)                                                                  9 × 8 = 8 × (5 + _____)\n               = (8 × 5) + (8 × _____)                                                                       = (8 × 5) + (8 × ____ )\n               =      40     + ______                                                                        =      40       + ______\n               = ______                                                                                      = ______\n\n\n2. Break apart and distribute to solve 56 ÷ 8.                                          3. Break apart and distribute to solve 72 ÷ 8.\n\n\n                   56÷8                                                                                                  72÷8\n\n\n       40÷8                         16÷8                                                                40÷8\n\n                                                                                                 72 ÷ 8 = (40 ÷ 8) + (__________÷ 8)\n    56 ÷ 8 = (40 ÷ 8) + (__________÷ 8)\n                                                                                                              = 5 + ____________\n          = 5 + ____________\n                                                                                                              = ____________\n          = ____________\n\n\n                           Lesson 10:               Use the distributive property as a strategy to multiply and divide.                                    123\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 125,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                    Lesson 10 Problem Set 3 3\n\n\n4. An octagon has 8 sides. Skip-count to find the total number of sides on 9 octagons.\n\n\n    8\n                 16\n\n\n                                                                                          Nine octagons have a total of _________ sides.\n\n\n5. Multiply.\n\n\n                                                                   8×6=\n                                                                                                                                  3×8=\n         4×8=\n\n\n                      32\n\n\n        8 × 10                                                     8×8=                                                          7×8=\n\n\n                       Lesson 10:               Use the distributive property as a strategy to multiply and divide.                      124\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 126,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                    Lesson 10 Problem Set 3 3\n\n\n6. Match.\n\n\n      24 ÷ 8\n                                                                                                                                         1\n\n\n                                                                                                                                                 2\n        32 ÷ 8\n\n\n                                                                                                                                     3\n\n\n       16 ÷ 8\n                                                                                                                                 4\n\n\n            64 ÷ 8                                                                                                                           5\n\n\n                                                                                                                                     6\n\n\n       48 ÷ 8\n                                                                                                                                                     7\n\n\n                                                                                                                                     8\n\n\n              72 ÷ 8\n                                                                                                                                                     9\n\n\n                       Lesson 10:               Use the distributive property as a strategy to multiply and divide.                                      125\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 298,
+        "text": "A STORY OF UNITS                                                                                        Lesson 10 Answer Key 3 3\n\n\nLesson 10\nProblem Set\n1.    a. Array accurately labeled; 64; 40; 3, 24; 3; 3; 24; 64\n      b. Array accurately labeled; 72; 40; 4, 32; 4; 4; 32; 72\n2.    16; 2; 7\n3.    32 ÷ 8; 32; 4; 9\n4.    24, 32, 40, 48, 56, 64, 72; 72\n5.    Answer provided; 48; 24; 80; 64; 56\n6.    Answer provided; 4; 2; 8; 6; 9\n\n\nExit Ticket\n56; strategy accurately used to solve\n\n\nHomework\n1.    Array accurately labeled; 56; 35; 3, 21; 3; 3; 21; 56\n2.    32; 4; 9\n3.    16, 24, 32, 40, 48, 56, 64, 72, 80; 72, 40, 64, 48, 56\n4.    2; 5; 4; 6; 7; 9\n\n\n                         Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              297\n\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G3-M3-TE-1.3.0-05.2015"
+      }
+    ]
+  }
+}

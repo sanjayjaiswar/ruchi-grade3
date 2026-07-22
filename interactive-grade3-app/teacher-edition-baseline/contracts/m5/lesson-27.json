@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m5-l27",
+  "moduleId": "m5",
+  "lessonNumber": 27,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+    "teacherEditionBytes": 17797697,
+    "lessonPdfPages": {
+      "start": 316,
+      "end": 328
+    },
+    "problemSetPdfPages": [
+      323,
+      324
+    ],
+    "exitTicketPdfPages": [
+      325
+    ],
+    "homeworkPdfPages": [
+      326,
+      327
+    ],
+    "answerKeyPdfPages": [
+      414,
+      415
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m5-student/workbook-page-108.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m5-teacher/page-323.png",
+      "/source-pages/m5-teacher/page-324.png",
+      "/source-pages/m5-teacher/page-414.png",
+      "/source-pages/m5-teacher/page-415.png"
+    ]
+  },
+  "objective": "Explain equivalence by manipulating units and reasoning about their size.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.                                                       Instead of doubling, have students\n                                                                                                      triple or quadruple. Let students\n                                                                                                      choose the fractional unit into which\n                                                                                                      the rectangle is partitioned.\n\n\n                        Lesson 27:                 Explain equivalence by manipulating units and reasoning about their                      318\n                                                   size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                      Lesson 27",
+    "conceptDevelopmentText": "draw a line (or lines) that divides the\n                                                                                                      unit into smaller equal parts.\nMaterials: (S) 3 wholes (Lesson 25 Template 1), personal white                                        Students working below grade level\n           board, fraction strips (3 per student), math journal                                       may benefit from revisiting the\n                                                                                                      discussion of doubling, tripling, halving,\nPass out 3 wholes, and have students slip it into their personal                                      and cutting unit fractions as presented\nwhite boards.                                                                                         in Lesson 22.\n\n    T:   Each rectangle represents 1 whole. Estimate to\n         partition each rectangle into thirds.                                                   3 wholes (Lesson 25 Template 1)\n    S:   (Partition.)\n    T:   How can we double the number of units in the second\n         rectangle?\n    S:   We cut each third in 2.\n    T:   Go ahead and partition.\n    S:   (Partition.)\n    T:   What’s our new unit?\n    S:   Sixths!\n\n\n                        Lesson 27:                 Explain equivalence by manipulating units and reasoning about their                         316\n                                                   size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                     Lesson 27\n\n\n  Repeat this process for the third rectangle. Instead of having students double, have them triple the original\n  thirds.\n       T:   Label the fractions in each model.\n       S:   (Label.)\n       T:   What is different about these models?\n       S:   They all started as thirds, but then we cut them into different parts.  The parts are different sizes.\n             Yes, they’re different units.\nMP.3   T:   What is the same about these models?\n       S:   The whole.\n       T:   Talk to your partner about the relationship between the number of parts and the size of parts in\n            each model.\n       S:   3 is the smallest number, but thirds have the biggest size.  As I drew more lines to partition, the\n            size of the parts got smaller.  That’s because the whole is cut into more pieces when there are\n            ninths than when there are thirds.\n       T:   (Give each student 3 fraction strips.) Fold all 3 fraction strips into halves.\n       S:   (Fold.)\n       T:   Fold your second and third fraction strips to double the number of units.\n       S:   (Fold.)\n       T:   What’s the new unit on these fraction strips?\n       S:   Fourths!\n       T:   Fold your third fraction strip to double the number of units again.\n       S:   (Fold.)\n       T:   What’s the new unit on your third fraction strip?\n       S:   Eighths!\n       T:   Compare the number of parts and the size of the parts with the number of times you folded the\n            strip. What happens to the size of the parts when you fold the strip more times?\n       S:   The more I folded, the smaller the parts got.  Yeah, that’s because you folded the whole to make\n            more units.\n       T:   Open your math journal to a new page, and glue your strips in a column, making sure the ends line\n            up. Glue them from the largest unit to the smallest.\n       S:   (Glue.)\n                                                                                               4\n       T:   Use your fraction strips to find the fractions equivalent to . Shade them.\n                                                                                               8\n                    4 2        1\n       S:   (Shade , , and .)\n                    8 4        2\n       T:   Talk with your partner: What do you notice about the size of parts and number of parts in\n            equivalent fractions?\n       S:   You can see that there are more eighths than halves or fourths shaded to cover the same amount of\n            the strip.  It’s the same as before then. As the number of parts gets larger, the size of them gets\n            smaller.  That’s because the shaded area in equivalent fractions doesn’t change, even though the\n            number of parts gets larger.\n\n\n                           Lesson 27:                 Explain equivalence by manipulating units and reasoning about their               317\n                                                      size.\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                      Lesson 27\n\n\nIf necessary, reinforce the concept with other examples using these fraction strips.\n    T:   (Show Image 1.) Let’s practice this idea a bit more on our                                        Image 1\n         personal white boards. Draw my shape on your board. The\n         entire figure represents 1 whole.\n    S:   (Draw.)\n    T:   Write the shaded fraction.\n                1\n    S:   (Write .)\n                4\n    T:   Talk to your partner: How can you partition this shape to make an equivalent fraction with smaller\n         units?\n    S:   We can cut each small rectangle in 2 pieces from top to bottom to make eighths.  Or we can\n         make 2 horizontal cuts to make twelfths.\n    T:   Use one of these strategies now. (Circulate as students work to select a few different examples to\n         share with the class.)\n    S:   (Partition.)\n                                                                                        2   3   4\n    T:   Let’s look at our classmates’ work. (Show examples of , , , etc.) As we partitioned with more\n                                                                 8 12 16\n         parts, what happens to the shaded area and number of parts needed to make them equivalent?\n    S:   The size of the parts gets smaller, but the number of them gets larger.\n    T:   Even though the parts changed, did the area covered by the shaded region change?\n    S:   No.\nConsider having students practice independently. The shape to\nthe right is more challenging because triangles are more difficult\nto make into equal parts.",
+    "fluencyPracticeText": " Sprint: Subtract by Seven 2.NBT.5                               (8 minutes)\n Recognize the Fraction 3.G.2                                    (4 minutes)\n\nSprint: Subtract by Seven (8 minutes)\nMaterials: (S) Subtract by Seven Sprint\n\nNote: This Sprint supports fluency with subtraction by 7.\n\nRecognize the Fraction (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews the concept of naming various\nfractions, depending on the designation of the whole.\n                                                                                                              NOTES ON\n    T:   (Project or draw a shaded rectangular model.) This\n                                                                                                              MULTIPLE MEANS\n         equals 1 whole. (Project or draw 1 whole partitioned\n                                                                                                              OF REPRESENTATION:\n         into 3 equal shaded units.) On your personal white\n         board, write the fraction.                                                                  Have English language learners practice\n                3\n                                                                                                     Recognize the Fraction orally to\n    S:   (Write .)                                                                                   practice speaking math language in\n                3\n                                                                                                     English with the support of a model.\n    T:   (Project or draw 2 wholes, each partitioned into 3\n         equal shaded units.) On your board, write the fraction.\n                6\n    S:   (Write .)\n                3\n\n\n                       Lesson 27:                 Explain equivalence by manipulating units and reasoning about their                      315\n                                                  size.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                      Lesson 27\n\n\n    T:   (Project or draw 3 wholes, each partitioned into 3 shaded parts.) On your board, write the fraction.\n                9\n    S:   (Write .)\n                3\n    T:   (Project or draw 3 wholes, each partitioned into 3 parts. 3 parts in the first 2 wholes are shaded.\n         1 part of the third whole is shaded.) On your board, write the fraction.\n                7\n    S:   (Write .)\n                3\n                                                                   4 8 12 9 6     9\nContinue with the following possible sequence: , ,                       , , , and .\n                                                                   4 4 4 4 5      8",
+    "problemSetGuidanceText": "Students should do their personal best to complete the Problem                                                 NOTES ON\nSet within the allotted 10 minutes. For some classes, it may be                                                MULTIPLE MEANS\nappropriate to modify the assignment by specifying which                                                       OF ENGAGEMENT:\nproblems they work on first. Some problems do not specify a                                           Extend Problem 5 on the Problem Set\nmethod for solving. Students should solve these problems using                                        for students working above grade level.\nthe RDW approach used for Application Problems.                                                       Instead of doubling, have students\n                                                                                                      triple or quadruple. Let students\n                                                                                                      choose the fractional unit into which\n                                                                                                      the rectangle is partitioned.\n\n\n                        Lesson 27:                 Explain equivalence by manipulating units and reasoning about their                      318\n                                                   size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                      Lesson 27",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Each rectangle represents 1 whole. Estimate to partition each rectangle into thirds. 3 wholes (Lesson 25 Template 1)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Partition.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can we double the number of units in the second rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "We cut each third in 2."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Go ahead and partition."
+      },
+      {
+        "speaker": "students",
+        "text": "(Partition.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What’s our new unit?"
+      },
+      {
+        "speaker": "students",
+        "text": "Sixths! size. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 27 Repeat this process for the third rectangle. Instead of having students double, have them triple the original thirds."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label the fractions in each model."
+      },
+      {
+        "speaker": "students",
+        "text": "(Label.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is different about these models?"
+      },
+      {
+        "speaker": "students",
+        "text": "They all started as thirds, but then we cut them into different parts.  The parts are different sizes.  Yes, they’re different units. MP.3 T: What is the same about these models?"
+      },
+      {
+        "speaker": "students",
+        "text": "The whole."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner about the relationship between the number of parts and the size of parts in each model."
+      },
+      {
+        "speaker": "students",
+        "text": "3 is the smallest number, but thirds have the biggest size.  As I drew more lines to partition, the size of the parts got smaller.  That’s because the whole is cut into more pieces when there are ninths than when there are thirds."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Give each student 3 fraction strips.) Fold all 3 fraction strips into halves."
+      },
+      {
+        "speaker": "students",
+        "text": "(Fold.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Fold your second and third fraction strips to double the number of units."
+      },
+      {
+        "speaker": "students",
+        "text": "(Fold.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What’s the new unit on these fraction strips?"
+      },
+      {
+        "speaker": "students",
+        "text": "Fourths!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Fold your third fraction strip to double the number of units again."
+      },
+      {
+        "speaker": "students",
+        "text": "(Fold.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What’s the new unit on your third fraction strip?"
+      },
+      {
+        "speaker": "students",
+        "text": "Eighths!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Compare the number of parts and the size of the parts with the number of times you folded the strip. What happens to the size of the parts when you fold the strip more times?"
+      },
+      {
+        "speaker": "students",
+        "text": "The more I folded, the smaller the parts got.  Yeah, that’s because you folded the whole to make more units."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Open your math journal to a new page, and glue your strips in a column, making sure the ends line up. Glue them from the largest unit to the smallest."
+      },
+      {
+        "speaker": "students",
+        "text": "(Glue.) 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your fraction strips to find the fractions equivalent to . Shade them. 8 4 2 1"
+      },
+      {
+        "speaker": "students",
+        "text": "(Shade , , and .) 8 4 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk with your partner: What do you notice about the size of parts and number of parts in equivalent fractions?"
+      },
+      {
+        "speaker": "students",
+        "text": "You can see that there are more eighths than halves or fourths shaded to cover the same amount of the strip.  It’s the same as before then. As the number of parts gets larger, the size of them gets smaller.  That’s because the shaded area in equivalent fractions doesn’t change, even though the number of parts gets larger. size. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 27 If necessary, reinforce the concept with other examples using these fraction strips."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Show Image 1.) Let’s practice this idea a bit more on our Image 1 personal white boards. Draw my shape on your board. The entire figure represents 1 whole."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the shaded fraction. 1"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write .) 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner: How can you partition this shape to make an equivalent fraction with smaller units?"
+      },
+      {
+        "speaker": "students",
+        "text": "We can cut each small rectangle in 2 pieces from top to bottom to make eighths.  Or we can make 2 horizontal cuts to make twelfths."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use one of these strategies now. (Circulate as students work to select a few different examples to share with the class.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Partition.) 2 3 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s look at our classmates’ work. (Show examples of , , , etc.) As we partitioned with more 8 12 16 parts, what happens to the shaded area and number of parts needed to make them equivalent?"
+      },
+      {
+        "speaker": "students",
+        "text": "The size of the parts gets smaller, but the number of them gets larger."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Even though the parts changed, did the area covered by the shaded region change?"
+      },
+      {
+        "speaker": "students",
+        "text": "No. Consider having students practice independently. The shape to the right is more challenging because triangles are more difficult to make into equal parts."
+      }
+    ],
+    "teacherPrompts": [
+      "Each rectangle represents 1 whole. Estimate to partition each rectangle into thirds. 3 wholes (Lesson 25 Template 1)",
+      "How can we double the number of units in the second rectangle?",
+      "Go ahead and partition.",
+      "What’s our new unit?",
+      "Label the fractions in each model.",
+      "What is different about these models?",
+      "Talk to your partner about the relationship between the number of parts and the size of parts in each model.",
+      "(Give each student 3 fraction strips.) Fold all 3 fraction strips into halves.",
+      "Fold your second and third fraction strips to double the number of units.",
+      "What’s the new unit on these fraction strips?",
+      "Fold your third fraction strip to double the number of units again.",
+      "What’s the new unit on your third fraction strip?",
+      "Compare the number of parts and the size of the parts with the number of times you folded the strip. What happens to the size of the parts when you fold the strip more times?",
+      "Open your math journal to a new page, and glue your strips in a column, making sure the ends line up. Glue them from the largest unit to the smallest.",
+      "Use your fraction strips to find the fractions equivalent to . Shade them. 8 4 2 1",
+      "Talk with your partner: What do you notice about the size of parts and number of parts in equivalent fractions?",
+      "(Show Image 1.) Let’s practice this idea a bit more on our Image 1 personal white boards. Draw my shape on your board. The entire figure represents 1 whole.",
+      "Write the shaded fraction. 1",
+      "Talk to your partner: How can you partition this shape to make an equivalent fraction with smaller units?",
+      "Use one of these strategies now. (Circulate as students work to select a few different examples to share with the class.)",
+      "Let’s look at our classmates’ work. (Show examples of , , , etc.) As we partitioned with more 8 12 16 parts, what happens to the shaded area and number of parts needed to make them equivalent?",
+      "Even though the parts changed, did the area covered by the shaded region change?"
+    ],
+    "debriefPrompt": "How did using the fraction strips help you with Problem 2? Talk about the relationship between them",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Use the pictures to model equivalent fractions. Fill in the blanks, and answer the questions. 4 sixths is equal to ____ thirds. 1 half is equal to ____ eighths. 4 ⬚ 1 ⬚ = = 6 3 2 8 The whole stays the same. The whole stays the same. What happened to the size of the equal parts What happened to the size of the equal when there were fewer equal parts? parts when there were more equal parts? What happened to the number of equal parts What happened to the number of equal when the equal parts became larger? parts when the equal parts became smaller?",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "6 friends want to share 3 chocolate bars that are all the same size, which are represented by the 3 rectangles below. When the bars are unwrapped, the friends notice that the first chocolate bar is cut into 2 equal parts, the second is cut into 4 equal parts, and the third is cut into 6 equal parts. How can the 6 friends share the chocolate bars equally without breaking any of the pieces? size. When the whole is the same, why does it take 6 copies of 1 eighth to equal 3 copies of 1 fourth? Draw a model to support your answer. 4. When the whole is the same, how many sixths does it take to equal 1 third? Draw a model to support your answer. 5. You have a magic wand that doubles the number of equal parts but keeps the whole the same size. Use your magic wand. In the space below, draw to show what happens to a rectangle that is partitioned in fourths after you tap it with your wand. Use words and numbers to explain what happened. size.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                               Lesson 27 Problem Set\n\n\nName                                                                                                 Date\n\n1. Use the pictures to model equivalent fractions. Fill in the blanks, and answer the questions.\n\n\n             4 sixths is equal to _____ thirds.                                                     1 half is equal to _____ eighths.\n                       4      ⬚                                                                                1     ⬚\n                            =                                                                                       =\n                      6               3                                                                         2          8\n\n               The whole stays the same.                                                             The whole stays the same.\n\n\n    What happened to the size of the equal parts                                         What happened to the size of the equal\n    when there were fewer equal parts?                                                   parts when there were more equal parts?\n\n\n    What happened to the number of equal parts                                           What happened to the number of equal\n    when the equal parts became larger?                                                  parts when the equal parts became smaller?\n\n\n2. 6 friends want to share 3 chocolate bars that are all the same size, which are represented by the 3\n   rectangles below. When the bars are unwrapped, the friends notice that the first chocolate bar is cut into\n   2 equal parts, the second is cut into 4 equal parts, and the third is cut into 6 equal parts. How can the 6\n   friends share the chocolate bars equally without breaking any of the pieces?\n\n\n                       Lesson 27:                    Explain equivalence by manipulating units and reasoning about their                322\n                                                     size.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                            Lesson 27 Problem Set\n\n\n3. When the whole is the same, why does it take 6 copies of 1 eighth to equal 3 copies of 1 fourth? Draw a\n   model to support your answer.\n\n\n4. When the whole is the same, how many sixths does it take to equal 1 third? Draw a model to support\n   your answer.\n\n\n5. You have a magic wand that doubles the number of equal parts but keeps the whole the same\n   size. Use your magic wand. In the space below, draw to show what happens to a rectangle that\n   is partitioned in fourths after you tap it with your wand. Use words and numbers to explain\n   what happened.\n\n\n                       Lesson 27:                 Explain equivalence by manipulating units and reasoning about their   323\n                                                  size.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "answerKeyProblemSetText": "1.    2, 2, bigger, less\n      4, 4, smaller, more\n      1                1 2  3\n2.      of a candy bar, = =\n      2                2 4  6\n\n3.    Explanations will vary.\n4.    2 sixths; model drawn\n5.    Answers will vary.",
+    "answerKeyText": "A STORY OF UNITS                                                                        Lesson 27 Answer Key 3 5\n\n\nLesson 27\nSprint\nSide A\n1.    10                               12. 53                                  23. 17                34. 29\n2.    0                                13. 4                                   24. 27                35. 79\n3.    20                               14. 14                                  25. 57                36. 59\n4.    1                                15. 64                                  26. 77                37. 83\n5.    11                               16. 5                                   27. 8                 38. 46\n6.    31                               17. 15                                  28. 18                39. 35\n7.    2                                18. 75                                  29. 28                40. 64\n8.    12                               19. 6                                   30. 68                41. 67\n9.    42                               20. 16                                  31. 48                42. 49\n10. 3                                  21. 76                                  32. 9                 43. 88\n11. 13                                 22. 7                                   33. 19                44. 85\n\n\nSide B\n1.    0                                12. 83                                  23. 17                34. 29\n2.    10                               13. 4                                   24. 27                35. 69\n3.    20                               14. 14                                  25. 47                36. 49\n4.    1                                15. 84                                  26. 67                37. 63\n5.    11                               16. 5                                   27. 8                 38. 56\n6.    61                               17. 15                                  28. 18                39. 45\n7.    2                                18. 35                                  29. 28                40. 74\n8.    12                               19. 6                                   30. 58                41. 67\n9.    72                               20. 16                                  31. 38                42. 59\n10. 3                                  21. 36                                  32. 9                 43. 78\n11. 13                                 22. 7                                   33. 19                44. 45\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                         413\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                        Lesson 27 Answer Key 3 5\n\n\nProblem Set\n1.    2, 2, bigger, less\n      4, 4, smaller, more\n      1                1 2  3\n2.      of a candy bar, = =\n      2                2 4  6\n\n3.    Explanations will vary.\n4.    2 sixths; model drawn\n5.    Answers will vary.\n\n\nExit Ticket\n1.    8; 8\n2.    Two models showing fractions equivalent to those in Problem 1 drawn and labeled\n3.    Answers will vary.\n\n\nHomework\n1.    1, 1, bigger\n      3, 3, smaller\n2.    1            1  2\n        of a pizza, =\n      4            4  8\n3.    Explanations will vary.\n4.    2 eighths; model drawn to support the answer\n5.    16 slices; explanations will vary.\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                         414\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "fraction-model",
+      "geometry-diagram",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "fraction-model": [
+        "unit into smaller equal parts.",
+        "board, fraction strips (3 per student), math journal may benefit from revisiting the",
+        "Pass out 3 wholes, and have students slip it into their personal and cutting unit fractions as presented",
+        "partition each rectangle into thirds. 3 wholes (Lesson 25 Template 1)",
+        "S: Sixths!",
+        "thirds.",
+        "S: They all started as thirds, but then we cut them into different parts.  The parts are different sizes.",
+        "S: 3 is the smallest number, but thirds have the biggest size.  As I drew more lines to partition, the"
+      ],
+      "geometry-diagram": [
+        "the rectangle is partitioned.",
+        "T: Each rectangle represents 1 whole. Estimate to",
+        "partition each rectangle into thirds. 3 wholes (Lesson 25 Template 1)",
+        "rectangle?",
+        "Repeat this process for the third rectangle. Instead of having students double, have them triple the original",
+        "S: We can cut each small rectangle in 2 pieces from top to bottom to make eighths.  Or we can",
+        "the right is more challenging because triangles are more difficult",
+        "rectangles below. When the bars are unwrapped, the friends notice that the first chocolate bar is cut into"
+      ],
+      "money-model": [
+        "smaller.  That’s because the shaded area in equivalent fractions doesn’t change, even though the",
+        "T: Even though the parts changed, did the area covered by the shaded region change?"
+      ],
+      "picture-or-drawing": [
+        "draw a line (or lines) that divides the",
+        "T: Use your fraction strips to find the fractions equivalent to . Shade them.",
+        "S: (Shade , , and .)",
+        "S: You can see that there are more eighths than halves or fourths shaded to cover the same amount of",
+        "smaller.  That’s because the shaded area in equivalent fractions doesn’t change, even though the",
+        "personal white boards. Draw my shape on your board. The",
+        "S: (Draw.)",
+        "T: Write the shaded fraction."
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Label the fractions in each model."
+      },
+      {
+        "speaker": "students",
+        "text": "(Label.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is different about these models?"
+      },
+      {
+        "speaker": "students",
+        "text": "They all started as thirds, but then we cut them into different parts.  The parts are different sizes.  Yes, they’re different units. MP.3 T: What is the same about these models?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner about the relationship between the number of parts and the size of parts in each model."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Compare the number of parts and the size of the parts with the number of times you folded the strip. What happens to the size of the parts when you fold the strip more times?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your fraction strips to find the fractions equivalent to . Shade them. 8 4 2 1"
+      },
+      {
+        "speaker": "students",
+        "text": "(Shade , , and .) 8 4 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk with your partner: What do you notice about the size of parts and number of parts in equivalent fractions?"
+      },
+      {
+        "speaker": "students",
+        "text": "You can see that there are more eighths than halves or fourths shaded to cover the same amount of the strip.  It’s the same as before then. As the number of parts gets larger, the size of them gets smaller.  That’s because the shaded area in equivalent fractions doesn’t change, even though the number of parts gets larger. size. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 27 If necessary, reinforce the concept with other examples using these fraction strips."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Show Image 1.) Let’s practice this idea a bit more on our Image 1 personal white boards. Draw my shape on your board. The entire figure represents 1 whole."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the shaded fraction. 1"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write .) 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s look at our classmates’ work. (Show examples of , , , etc.) As we partitioned with more 8 12 16 parts, what happens to the shaded area and number of parts needed to make them equivalent?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Even though the parts changed, did the area covered by the shaded region change?"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 316 (debrief) ---\nA STORY OF UNITS                                                                                                     Lesson 27\n\n\nLesson 27\nObjective: Explain equivalence by manipulating units and reasoning about\ntheir size.\n\nSuggested Lesson Structure\n\n Fluency Practice                (12 minutes)\n Application Problem             (8 minutes)\n Concept Development             (30 minutes)\n Student Debrief                 (10 minutes)\n   Total Time                     (60 minutes)\n\n\nFluency Practice (12 minutes)\n\n Sprint: Subtract by Seven 2.NBT.5                               (8 minutes)\n Recognize the Fraction 3.G.2                                    (4 minutes)\n\nSprint: Subtract by Seven (8 minutes)\nMaterials: (S) Subtract by Seven Sprint\n\nNote: This Sprint supports fluency with subtraction by 7.\n\nRecognize the Fraction (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews the concept of naming various\nfractions, depending on the designation of the whole.\n                                                                                                              NOTES ON\n    T:   (Project or draw a shaded rectangular model.) This\n                                                                                                              MULTIPLE MEANS\n         equals 1 whole. (Project or draw 1 whole partitioned\n                                                                                                              OF REPRESENTATION:\n         into 3 equal shaded units.) On your personal white\n         board, write the fraction.                                                                  Have English language learners practice\n                3\n                                                                                                     Recognize the Fraction orally to\n    S:   (Write .)                                                                                   practice speaking math language in\n                3\n                                                                                                     English with the support of a model.\n    T:   (Project or draw 2 wholes, each partitioned into 3\n         equal shaded units.) On your board, write the fraction.\n                6\n    S:   (Write .)\n                3\n\n\n                       Lesson 27:                 Explain equivalence by manipulating units and reasoning about their                      315\n                                                  size.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 317 (concept-development) ---\nA STORY OF UNITS                                                                                                      Lesson 27\n\n\n    T:   (Project or draw 3 wholes, each partitioned into 3 shaded parts.) On your board, write the fraction.\n                9\n    S:   (Write .)\n                3\n    T:   (Project or draw 3 wholes, each partitioned into 3 parts. 3 parts in the first 2 wholes are shaded.\n         1 part of the third whole is shaded.) On your board, write the fraction.\n                7\n    S:   (Write .)\n                3\n                                                                   4 8 12 9 6     9\nContinue with the following possible sequence: , ,                       , , , and .\n                                                                   4 4 4 4 5      8\n\n\nApplication Problem (8 minutes)\n\nThe branch of a tree is 2 meters long. Monica chops the branch\n                                       1\nfor firewood. She cuts pieces that are 6 meter long. Draw a\nnumber line to show the total length of the branch. Partition\nand label each of Monica’s cuts.\n    a.   How many pieces does Monica have altogether?\n    b.   Write 2 equivalent fractions to describe the total\n         length of Monica’s branch.\n                                                                                                               NOTES ON\nNote: This problem reviews partitioning wholes on the number                                                   MULTIPLE MEANS\nline, labeling fractions on a number line, and naming equivalent                                               OF ENGAGEMENT:\nfractions.                                                                                            For English language learners,\n                                                                                                      demonstrate that words can have\n                                                                                                      multiple meanings. Here, cut means to\nConcept Development (30 minutes)                                                                      draw a line (or lines) that divides the\n                                                                                                      unit into smaller equal parts.\nMaterials: (S) 3 wholes (Lesson 25 Template 1), personal white                                        Students working below grade level\n           board, fraction strips (3 per student), math journal                                       may benefit from revisiting the\n                                                                                                      discussion of doubling, tripling, halving,\nPass out 3 wholes, and have students slip it into their personal                                      and cutting unit fractions as presented\nwhite boards.                                                                                         in Lesson 22.\n\n    T:   Each rectangle represents 1 whole. Estimate to\n         partition each rectangle into thirds.                                                   3 wholes (Lesson 25 Template 1)\n    S:   (Partition.)\n    T:   How can we double the number of units in the second\n         rectangle?\n    S:   We cut each third in 2.\n    T:   Go ahead and partition.\n    S:   (Partition.)\n    T:   What’s our new unit?\n    S:   Sixths!\n\n\n                        Lesson 27:                 Explain equivalence by manipulating units and reasoning about their                         316\n                                                   size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 318 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                     Lesson 27\n\n\n  Repeat this process for the third rectangle. Instead of having students double, have them triple the original\n  thirds.\n       T:   Label the fractions in each model.\n       S:   (Label.)\n       T:   What is different about these models?\n       S:   They all started as thirds, but then we cut them into different parts.  The parts are different sizes.\n             Yes, they’re different units.\nMP.3   T:   What is the same about these models?\n       S:   The whole.\n       T:   Talk to your partner about the relationship between the number of parts and the size of parts in\n            each model.\n       S:   3 is the smallest number, but thirds have the biggest size.  As I drew more lines to partition, the\n            size of the parts got smaller.  That’s because the whole is cut into more pieces when there are\n            ninths than when there are thirds.\n       T:   (Give each student 3 fraction strips.) Fold all 3 fraction strips into halves.\n       S:   (Fold.)\n       T:   Fold your second and third fraction strips to double the number of units.\n       S:   (Fold.)\n       T:   What’s the new unit on these fraction strips?\n       S:   Fourths!\n       T:   Fold your third fraction strip to double the number of units again.\n       S:   (Fold.)\n       T:   What’s the new unit on your third fraction strip?\n       S:   Eighths!\n       T:   Compare the number of parts and the size of the parts with the number of times you folded the\n            strip. What happens to the size of the parts when you fold the strip more times?\n       S:   The more I folded, the smaller the parts got.  Yeah, that’s because you folded the whole to make\n            more units.\n       T:   Open your math journal to a new page, and glue your strips in a column, making sure the ends line\n            up. Glue them from the largest unit to the smallest.\n       S:   (Glue.)\n                                                                                               4\n       T:   Use your fraction strips to find the fractions equivalent to . Shade them.\n                                                                                               8\n                    4 2        1\n       S:   (Shade , , and .)\n                    8 4        2\n       T:   Talk with your partner: What do you notice about the size of parts and number of parts in\n            equivalent fractions?\n       S:   You can see that there are more eighths than halves or fourths shaded to cover the same amount of\n            the strip.  It’s the same as before then. As the number of parts gets larger, the size of them gets\n            smaller.  That’s because the shaded area in equivalent fractions doesn’t change, even though the\n            number of parts gets larger.\n\n\n                           Lesson 27:                 Explain equivalence by manipulating units and reasoning about their               317\n                                                      size.\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 319 (application-problem) ---\nA STORY OF UNITS                                                                                                      Lesson 27\n\n\nIf necessary, reinforce the concept with other examples using these fraction strips.\n    T:   (Show Image 1.) Let’s practice this idea a bit more on our                                        Image 1\n         personal white boards. Draw my shape on your board. The\n         entire figure represents 1 whole.\n    S:   (Draw.)\n    T:   Write the shaded fraction.\n                1\n    S:   (Write .)\n                4\n    T:   Talk to your partner: How can you partition this shape to make an equivalent fraction with smaller\n         units?\n    S:   We can cut each small rectangle in 2 pieces from top to bottom to make eighths.  Or we can\n         make 2 horizontal cuts to make twelfths.\n    T:   Use one of these strategies now. (Circulate as students work to select a few different examples to\n         share with the class.)\n    S:   (Partition.)\n                                                                                        2   3   4\n    T:   Let’s look at our classmates’ work. (Show examples of , , , etc.) As we partitioned with more\n                                                                 8 12 16\n         parts, what happens to the shaded area and number of parts needed to make them equivalent?\n    S:   The size of the parts gets smaller, but the number of them gets larger.\n    T:   Even though the parts changed, did the area covered by the shaded region change?\n    S:   No.\nConsider having students practice independently. The shape to\nthe right is more challenging because triangles are more difficult\nto make into equal parts.\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the Problem                                                 NOTES ON\nSet within the allotted 10 minutes. For some classes, it may be                                                MULTIPLE MEANS\nappropriate to modify the assignment by specifying which                                                       OF ENGAGEMENT:\nproblems they work on first. Some problems do not specify a                                           Extend Problem 5 on the Problem Set\nmethod for solving. Students should solve these problems using                                        for students working above grade level.\nthe RDW approach used for Application Problems.                                                       Instead of doubling, have students\n                                                                                                      triple or quadruple. Let students\n                                                                                                      choose the fractional unit into which\n                                                                                                      the rectangle is partitioned.\n\n\n                        Lesson 27:                 Explain equivalence by manipulating units and reasoning about their                      318\n                                                   size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 320 (debrief) ---\nA STORY OF UNITS                                                                                                      Lesson 27\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Explain equivalence by manipulating\nunits and reasoning about their size.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Student Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        How did using the fraction strips help you with\n         Problem 2? Talk about the relationship between\n         them.\n        What was your strategy for Problems 3 and 4?\n         How did it change or stay the same?\n        Why is it important that the magic wand in\n         Problem 5 keeps the whole the same?\n        How does the magic wand in Problem 5 make it\n         easy to create equivalent fractions?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                        Lesson 27:                 Explain equivalence by manipulating units and reasoning about their               319\n                                                   size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 321 (sprint) ---\nA STORY OF UNITS                                                                                        Lesson 27 Sprint\n\n\nA                                                                                                                    Number Correct:\n\nSubtract by Seven\n\n1.                 17 – 7 =                                                       23.                   24 – 7 =\n\n2.                  7–7=                                                          24.                   34 – 7 =\n\n3.                 27 – 7 =                                                       25.                   64 – 7 =\n\n4.                  8–7=                                                          26.                   84 – 7 =\n\n5.                 18 – 7 =                                                       27.                   15 – 7 =\n\n6.                 38 – 7 =                                                       28.                   25 – 7 =\n\n7.                  9–7=                                                          29.                   35 – 7 =\n\n8.                 19 – 7 =                                                       30.                   75 – 7 =\n\n9.                 49 – 7 =                                                       31.                   55 – 7 =\n\n10.                10 – 7 =                                                       32.                   16 – 7 =\n\n11.                20 – 7 =                                                       33.                   26 – 7 =\n\n12.                60 – 7 =                                                       34.                   36 – 7 =\n\n13.                11 – 7 =                                                       35.                   86 – 7 =\n\n14.                21 – 7 =                                                       36.                   66 – 7 =\n\n15.                71 – 7 =                                                       37.                   90 – 7 =\n\n16.                12 – 7 =                                                       38.                   53 – 7 =\n\n17.                22 – 7 =                                                       39.                   42 – 7 =\n\n18.                82 – 7 =                                                       40.                   71 – 7 =\n\n19.                13 – 7 =                                                       41.                   74 – 7 =\n\n20.                23 – 7 =                                                       42.                   56 – 7 =\n\n21.                83 – 7 =                                                       43.                   95 – 7 =\n\n22.                14 – 7 =                                                       44.                   92 – 7 =\n\n\n                         Lesson 27:                  Explain equivalence by manipulating units and reasoning about their               320\n                                                     size.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 322 (sprint) ---\nA STORY OF UNITS                                                                                        Lesson 27 Sprint\n\n\nB\n                                                                                                                     Number Correct:\n                                                                                                                           Improvement:\nSubtract by Seven\n\n1.                  7–7=                                                           23.                  24 – 7 =\n\n2.                 17 – 7 =                                                       24.                   34 – 7 =\n\n3.                 27 – 7 =                                                       25.                   54 – 7 =\n\n4.                  8–7=                                                          26.                   74 – 7 =\n\n5.                 18 – 7 =                                                       27.                   15 – 7 =\n\n6.                 68 – 7 =                                                       28.                   25 – 7 =\n\n7.                  9–7=                                                          29.                   35 – 7 =\n\n8.                 19 – 7 =                                                       30.                   65 – 7 =\n\n9.                 79 – 7 =                                                       31.                   45 – 7 =\n\n10.                10 – 7 =                                                       32.                   16 – 7 =\n\n11.                20 – 7 =                                                       33.                   26 – 7 =\n\n12.                90 – 7 =                                                       34.                   36 – 7 =\n\n13.                11 – 7 =                                                       35.                   76 – 7 =\n\n14.                21 – 7 =                                                       36.                   56 – 7 =\n\n15.                91 – 7 =                                                       37.                   70 – 7 =\n\n16.                12 – 7 =                                                       38.                   63 – 7 =\n\n17.                22 – 7 =                                                       39.                   52 – 7 =\n\n18.                42 – 7 =                                                       40.                   81 – 7 =\n\n19.                13 – 7 =                                                       41.                   74 – 7 =\n\n20.                23 – 7 =                                                       42.                   66 – 7 =\n\n21.                43 – 7 =                                                       43.                   85 – 7 =\n\n22.                14 – 7 =                                                       44.                   52 – 7 =\n\n\n                         Lesson 27:                  Explain equivalence by manipulating units and reasoning about their                  321\n                                                     size.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 323 (problem-set) ---\nA STORY OF UNITS                                                                               Lesson 27 Problem Set\n\n\nName                                                                                                 Date\n\n1. Use the pictures to model equivalent fractions. Fill in the blanks, and answer the questions.\n\n\n             4 sixths is equal to _____ thirds.                                                     1 half is equal to _____ eighths.\n                       4      ⬚                                                                                1     ⬚\n                            =                                                                                       =\n                      6               3                                                                         2          8\n\n               The whole stays the same.                                                             The whole stays the same.\n\n\n    What happened to the size of the equal parts                                         What happened to the size of the equal\n    when there were fewer equal parts?                                                   parts when there were more equal parts?\n\n\n    What happened to the number of equal parts                                           What happened to the number of equal\n    when the equal parts became larger?                                                  parts when the equal parts became smaller?\n\n\n2. 6 friends want to share 3 chocolate bars that are all the same size, which are represented by the 3\n   rectangles below. When the bars are unwrapped, the friends notice that the first chocolate bar is cut into\n   2 equal parts, the second is cut into 4 equal parts, and the third is cut into 6 equal parts. How can the 6\n   friends share the chocolate bars equally without breaking any of the pieces?\n\n\n                       Lesson 27:                    Explain equivalence by manipulating units and reasoning about their                322\n                                                     size.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 324 (problem-set) ---\nA STORY OF UNITS                                                                            Lesson 27 Problem Set\n\n\n3. When the whole is the same, why does it take 6 copies of 1 eighth to equal 3 copies of 1 fourth? Draw a\n   model to support your answer.\n\n\n4. When the whole is the same, how many sixths does it take to equal 1 third? Draw a model to support\n   your answer.\n\n\n5. You have a magic wand that doubles the number of equal parts but keeps the whole the same\n   size. Use your magic wand. In the space below, draw to show what happens to a rectangle that\n   is partitioned in fourths after you tap it with your wand. Use words and numbers to explain\n   what happened.\n\n\n                       Lesson 27:                 Explain equivalence by manipulating units and reasoning about their   323\n                                                  size.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 325 (exit-ticket) ---\nA STORY OF UNITS                                                                                Lesson 27 Exit Ticket\n\n\nName                                                                                              Date\n\n1. Solve.\n                        2 thirds is equal to _____ twelfths.\n\n                                            2\n                                                 =\n                                            3          12\n\n\n2. Draw and label two models that show fractions equivalent to those in Problem 1.\n\n\n3. Use words to explain why the two fractions in Problem 1 are equal.\n\n\n                      Lesson 27:                  Explain equivalence by manipulating units and reasoning about their      324\n                                                  size.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 326 (homework) ---\nA STORY OF UNITS                                                                               Lesson 27 Homework\n\n\nName                                                                                               Date\n\n1. Use the pictures to model equivalent fractions. Fill in the blanks, and answer the questions.\n\n\n             2 tenths is equal to _____ fifths.                                              1 third is equal to _____ ninths.\n                       2                                                                               1\n                             =                                                                               =\n                       10              5                                                                 3        9\n\n            The whole stays the same.                                                          The whole stays the same.\n\n\n   What happened to the size of the equal                                          What happened to the size of the equal\n   parts when there were fewer equal parts?                                        parts when there were more equal parts?\n\n\n2. 8 students share 2 pizzas that are the same size, which are represented by the 2 circles below. They\n   notice that the first pizza is cut into 4 equal slices, and the second is cut into 8 equal slices. How can the 8\n   students share the pizzas equally without cutting any of the pieces?\n\n\n                        Lesson 27:                 Explain equivalence by manipulating units and reasoning about their           325\n                                                   size.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 327 (homework) ---\nA STORY OF UNITS                                                                               Lesson 27 Homework\n\n\n3. When the whole is the same, why does it take 4 copies of 1 tenth to equal 2 copies of 1 fifth? Draw a\n   model to support your answer.\n\n\n4. When the whole is the same, how many eighths does it take to equal 1 fourth? Draw a model to support\n   your answer.\n\n\n5. Mr. Pham cuts a cake into 8 equal slices. Then, he cuts every slice in half. How many of the smaller slices\n   does he have? Use words and numbers to explain your answer.\n\n\n                       Lesson 27:                 Explain equivalence by manipulating units and reasoning about their   326\n                                                  size.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 328 (lesson-instruction) ---\nA STORY OF UNITS\n\n     3\n   GRADE\n                          Mathematics Curriculum\n                                                                                                                                GRADE 3 • MODULE 5\n\n\nTopic F\nComparison, Order, and Size of\nFractions\n3.NF.3d\n\n Focus Standard:             3.NF.3                      Explain equivalence of fractions in special cases, and compare fractions by reasoning\n                                                         about their size.\n                                                         d.    Compare two fractions with the same numerator or the same denominator by\n                                                               reasoning about their size. Recognize that comparisons are valid only when the\n                                                               two fractions refer to the same whole. Record the results of comparisons with the\n                                                               symbols >, =, or <, and justify the conclusions, e.g., by using a visual fraction model.\n Instructional Days:         3\n Coherence -Links from:      G2–M8                       Time, Shapes, and Fractions as Equal Parts of Shapes\n             -Links to:      G4–M5                       Fraction Equivalence, Ordering, and Operations\n\nFraction strips and the number line carry into Topic F as students compare fractions with the same\nnumerator. As they study and compare different fractions, students continue to reason about their size.\nThey develop the understanding that the numerator or number of copies of the fractional unit (shaded parts)\ndoes not necessarily determine the size of the fraction. The module closes with an exploration in which\nstudents are guided to develop a method for precisely partitioning various wholes into any fractional unit,\nusing the number line as a measurement tool.\n\n A Teaching Sequence Toward Mastery of Comparison, Order, and Size of Fractions\n Objective 1: Compare fractions with the same numerator pictorially.\n              (Lesson 28)\n\n Objective 2: Compare fractions with the same numerator using <, >, or =, and use a model to reason\n              about their size.\n              (Lesson 29)\n\n Objective 3: Partition various wholes precisely into equal parts using a number line method.\n              (Lesson 30)\n\n\n                          Topic F:                       Comparison, Order, and Size of Fractions                                                  327\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 323,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                               Lesson 27 Problem Set\n\n\nName                                                                                                 Date\n\n1. Use the pictures to model equivalent fractions. Fill in the blanks, and answer the questions.\n\n\n             4 sixths is equal to _____ thirds.                                                     1 half is equal to _____ eighths.\n                       4      ⬚                                                                                1     ⬚\n                            =                                                                                       =\n                      6               3                                                                         2          8\n\n               The whole stays the same.                                                             The whole stays the same.\n\n\n    What happened to the size of the equal parts                                         What happened to the size of the equal\n    when there were fewer equal parts?                                                   parts when there were more equal parts?\n\n\n    What happened to the number of equal parts                                           What happened to the number of equal\n    when the equal parts became larger?                                                  parts when the equal parts became smaller?\n\n\n2. 6 friends want to share 3 chocolate bars that are all the same size, which are represented by the 3\n   rectangles below. When the bars are unwrapped, the friends notice that the first chocolate bar is cut into\n   2 equal parts, the second is cut into 4 equal parts, and the third is cut into 6 equal parts. How can the 6\n   friends share the chocolate bars equally without breaking any of the pieces?\n\n\n                       Lesson 27:                    Explain equivalence by manipulating units and reasoning about their                322\n                                                     size.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      },
+      {
+        "pdfPage": 324,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                            Lesson 27 Problem Set\n\n\n3. When the whole is the same, why does it take 6 copies of 1 eighth to equal 3 copies of 1 fourth? Draw a\n   model to support your answer.\n\n\n4. When the whole is the same, how many sixths does it take to equal 1 third? Draw a model to support\n   your answer.\n\n\n5. You have a magic wand that doubles the number of equal parts but keeps the whole the same\n   size. Use your magic wand. In the space below, draw to show what happens to a rectangle that\n   is partitioned in fourths after you tap it with your wand. Use words and numbers to explain\n   what happened.\n\n\n                       Lesson 27:                 Explain equivalence by manipulating units and reasoning about their   323\n                                                  size.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 414,
+        "text": "A STORY OF UNITS                                                                        Lesson 27 Answer Key 3 5\n\n\nLesson 27\nSprint\nSide A\n1.    10                               12. 53                                  23. 17                34. 29\n2.    0                                13. 4                                   24. 27                35. 79\n3.    20                               14. 14                                  25. 57                36. 59\n4.    1                                15. 64                                  26. 77                37. 83\n5.    11                               16. 5                                   27. 8                 38. 46\n6.    31                               17. 15                                  28. 18                39. 35\n7.    2                                18. 75                                  29. 28                40. 64\n8.    12                               19. 6                                   30. 68                41. 67\n9.    42                               20. 16                                  31. 48                42. 49\n10. 3                                  21. 76                                  32. 9                 43. 88\n11. 13                                 22. 7                                   33. 19                44. 85\n\n\nSide B\n1.    0                                12. 83                                  23. 17                34. 29\n2.    10                               13. 4                                   24. 27                35. 69\n3.    20                               14. 14                                  25. 47                36. 49\n4.    1                                15. 84                                  26. 67                37. 63\n5.    11                               16. 5                                   27. 8                 38. 56\n6.    61                               17. 15                                  28. 18                39. 45\n7.    2                                18. 35                                  29. 28                40. 74\n8.    12                               19. 6                                   30. 58                41. 67\n9.    72                               20. 16                                  31. 38                42. 59\n10. 3                                  21. 36                                  32. 9                 43. 78\n11. 13                                 22. 7                                   33. 19                44. 45\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                         413\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      },
+      {
+        "pdfPage": 415,
+        "text": "A STORY OF UNITS                                                                        Lesson 27 Answer Key 3 5\n\n\nProblem Set\n1.    2, 2, bigger, less\n      4, 4, smaller, more\n      1                1 2  3\n2.      of a candy bar, = =\n      2                2 4  6\n\n3.    Explanations will vary.\n4.    2 sixths; model drawn\n5.    Answers will vary.\n\n\nExit Ticket\n1.    8; 8\n2.    Two models showing fractions equivalent to those in Problem 1 drawn and labeled\n3.    Answers will vary.\n\n\nHomework\n1.    1, 1, bigger\n      3, 3, smaller\n2.    1            1  2\n        of a pizza, =\n      4            4  8\n3.    Explanations will vary.\n4.    2 eighths; model drawn to support the answer\n5.    16 slices; explanations will vary.\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                         414\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      }
+    ]
+  }
+}

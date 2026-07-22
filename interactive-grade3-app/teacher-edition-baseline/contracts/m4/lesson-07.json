@@ -1,0 +1,452 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m4-l7",
+  "moduleId": "m4",
+  "lessonNumber": 7,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+    "teacherEditionBytes": 10725683,
+    "lessonPdfPages": {
+      "start": 80,
+      "end": 91
+    },
+    "problemSetPdfPages": [
+      86,
+      87
+    ],
+    "exitTicketPdfPages": [
+      88
+    ],
+    "homeworkPdfPages": [
+      89,
+      90
+    ],
+    "answerKeyPdfPages": [
+      222
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m4-student/workbook-page-030.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m4-teacher/page-086.png",
+      "/source-pages/m4-teacher/page-087.png",
+      "/source-pages/m4-teacher/page-222.png"
+    ]
+  },
+  "objective": "Interpret area models to form rectangular arrays.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.                                                                adaptations to the Problem Set:\n                                                                                                                 Prompt students to approach\n                                                                                                                  Rectangle E first. Offer practice with",
+    "conceptDevelopmentText": "Materials: (T) Meter stick, 12-inch ruler, pad of square sticky notes (S) 1 set of square centimeter and\n           square inch tiles per pair (from Lesson 2), personal white board, ruler, area model (Template)\n\nPart 1: Explore the relationship between units and area.\n    T:   One partner will use square inches, and the other will use square centimeters. Work together to\n         decide how to arrange your tiles to make the same shape rectangle. Then, create that rectangle\n         with your pieces.\n    S:   (Decide on a rectangle and represent it using square inches and square centimeters.)\n\n\n                        Lesson 7:                  Interpret area models to form rectangular arrays.                                         80\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 7 3 4\n\n\n     T:   You and your partner each made the same shape rectangle. Is the area also the same?\n     S:   We used the same number of pieces, but my pieces are smaller than yours. They are square\n          centimeters, and look, my shape takes up less space on the table.  The area of the shape with\n          square inches is bigger because inches are bigger than centimeters.\n     T:   Turn your personal white board horizontally and write the area of your rectangle.\n     S:   (Write either 12 square inches or 12 square centimeters.)\n     T:   (Draw 1 square meter on the board.) This is 1 square meter. Suppose you used 12 square meter\n          tiles to make your rectangle instead. Would this rectangle have a bigger area or a smaller area\n          compared to your original rectangle?\nMP.6 S:   It would be much larger!\n     T:   (Draw 1 square foot on the board.) How would your rectangle compare if you made it from 12\n          square feet?\n     S:   It would be bigger than 12 square inches or centimeters but smaller than 12 square meters.\n     T:   (Hold up a pad of square sticky notes.) How about if you had used 12 sticky notes?\n     S:   Still bigger than 12 square inches or centimeters but smaller than 12 square feet or meters.\n     T:   Why is it important to label the unit when you are talking about area?\n     S:   Because how much area there is changes if the unit is small or big.  If you do not know the unit,\n          then you do not really know what the area means.  It is just like with length. Twelve of a shorter\n          unit is shorter than 12 of a longer unit.\n\n Part 2: Relate area to multiplication to draw rectangular arrays.\n     T:   Let us draw a rectangular array with an area of 18 square centimeters. How might we find the side\n          lengths?\n     S:   We could use our tiles to make the array and see.  If you multiply side lengths, you get area, so\n          we can think about what numbers you can multiply to make 18.\n     T:   Work with your partner to make a list of multiplication facts that equal 18.\n     S:   (Possible list is as follows: 1 × 18, 18 × 1, 2 × 9, 9 × 2, 3 × 6, and\n          6 × 3.)\n     T:   Let us draw a 3 cm by 6 cm rectangular array. Use a ruler to\n          measure the side lengths on your personal white board. Mark\n          each centimeter with a point and connect the points to draw\n          the square centimeters.\n     T:   After drawing your squares, check your work by skip-counting\n          the rows to find the total number of tiles you drew.\n     S:   (Draw, label, and skip-count tiles in array.)\n     T:   Turn your personal white board so that it is vertical. Does the rectangle still have the same area?\n     S:   Yes.\n     T:   However, the side lengths switched places. Tell your partner how you know the area is the same.\n     S:   The side lengths didn’t change; they just moved.  It is the commutative property. We learned\n          before that you can turn an array and it does not change how much is in it. The rows just turn into\n          columns and columns turn into rows.\n\n\n                         Lesson 7:                  Interpret area models to form rectangular arrays.                                         81\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 7 3 4\n\n\nPart 3: Interpret area models to find area.\n    T:   The grid you drew inside of your 3 cm by 6 cm rectangle shows a picture of all the tiles that make up\n         the area. Carefully erase the grid lines in your rectangle. (Pause.) The empty rectangle with labeled\n         side lengths left is called an area model. How can you find the total area just using the labeled side\n         lengths?\n    S:   I can multiply!  I can multiply the side lengths, 3 cm and 6 cm,\n         to get the area, 18 square cm.\n    T:   (Project or draw the area model on the right.)\n         What is the total area of my pictured rectangle?\n    S:   18 square cm.\n    T:   Tell your partner how you figured out the area.\n    S:   It is easy. One side length is 18 and the other is 1. 18 × 1 = 18.             18 cm\n         The labels tell you the unit is centimeters, so the area is square\n         centimeters.\n    T:   (Pass out the area model template.) Slip the area model into your\n         personal white board. Use your ruler to measure the side lengths                        1 cm\n         of one of the squares on the grid. (Allow students time to\n         measure.) What unit makes up this grid?\n    S:   Square inches!\n    T:   The side lengths of this area model are not labeled. Let us draw a grid inside it to help find the side\n         lengths. Earlier, we drew a grid inside a rectangle by marking each unit with a point and using a\n         ruler to connect the points. Do we need to draw points on the area model to draw a grid inside\n         of it?\n    S:   No, we can just use the grid lines.  No, the lines on the grid can act\n         as points because the area model is lined up with the grid.                    Area Model Template\n    T:   Use your ruler and the lines on the grid to draw squares inside of the\n         area model. (Allow students time to work.) What size are the units\n         inside the area model?\n    S:   Square inches.  They are square inches because we used the square\n         inch grid paper to help draw the squares.\n    T:   Find and label the side lengths, and then write an equation to find the\n         area.\n    S:   (Label the side lengths as 4 in and 2 in, and write 2 × 4 = 8 or\n         4 × 2 = 8.)\n    T:   What is the area?\n    S:   8 square inches!\n\n\n                        Lesson 7:                  Interpret area models to form rectangular arrays.                                         82\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 7 3 4",
+    "fluencyPracticeText": " Group Counting 3.OA.1                                 (4 minutes)\n Draw Rectangles 3.MD.5                                (4 minutes)\n Draw Rectangular Arrays 3.MD.5                        (4 minutes)\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally changing the direction of the count.\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\nDraw Rectangles (4 minutes)\nMaterials: (S) Grid paper\n\nNote: This fluency activity reviews drawing a rectangle from a known area. Show student work that is correct\nbut looks different (e.g., a 6 × 2 unit rectangle juxtaposed with a 4 × 3 unit rectangle).\n    T:   Draw a rectangle that has an area of 6 square units.\n    S:   (Draw a 6-square unit rectangle.)\nContinue with the following possible sequence: 10 square units, 12 square units, 16 square units, 24 square\nunits, and 35 square units.\n\n\n                        Lesson 7:                  Interpret area models to form rectangular arrays.                                         79\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 7 3 4\n\n\nDraw Rectangular Arrays (4 minutes)\nMaterials: (S) Grid paper\n\nNote: This fluency activity reviews finding area using side lengths.\n    T:   Draw a 4 × 2 rectangular array using the squares on your grid paper.\n    T:   How many square units are in your array?\n    S:   8 square units.\nContinue with the following possible sequence of rectangular arrays: 6 × 2, 4 × 3, 6 × 3, 9 × 2, 6 × 4, and 3 × 8.",
+    "problemSetGuidanceText": "NOTES ON\nStudents should do their personal best to complete the Problem\nSet within the allotted 10 minutes. For some classes, it may be                                                            MULTIPLE MEANS\nappropriate to modify the assignment by specifying which                                                                   FOR ACTION AND\nproblems they work on first. Some problems do not specify a                                                                EXPRESSION:\nmethod for solving. Students should solve these problems using                                                 Consider offering the following\nthe RDW approach used for Application Problems.                                                                adaptations to the Problem Set:\n                                                                                                                 Prompt students to approach\n                                                                                                                  Rectangle E first. Offer practice with",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "One partner will use square inches, and the other will use square centimeters. Work together to decide how to arrange your tiles to make the same shape rectangle. Then, create that rectangle with your pieces."
+      },
+      {
+        "speaker": "students",
+        "text": "(Decide on a rectangle and represent it using square inches and square centimeters.) This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 7 3 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "You and your partner each made the same shape rectangle. Is the area also the same?"
+      },
+      {
+        "speaker": "students",
+        "text": "We used the same number of pieces, but my pieces are smaller than yours. They are square centimeters, and look, my shape takes up less space on the table.  The area of the shape with square inches is bigger because inches are bigger than centimeters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Turn your personal white board horizontally and write the area of your rectangle."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write either 12 square inches or 12 square centimeters.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw 1 square meter on the board.) This is 1 square meter. Suppose you used 12 square meter tiles to make your rectangle instead. Would this rectangle have a bigger area or a smaller area compared to your original rectangle? MP.6 S: It would be much larger!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw 1 square foot on the board.) How would your rectangle compare if you made it from 12 square feet?"
+      },
+      {
+        "speaker": "students",
+        "text": "It would be bigger than 12 square inches or centimeters but smaller than 12 square meters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Hold up a pad of square sticky notes.) How about if you had used 12 sticky notes?"
+      },
+      {
+        "speaker": "students",
+        "text": "Still bigger than 12 square inches or centimeters but smaller than 12 square feet or meters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why is it important to label the unit when you are talking about area?"
+      },
+      {
+        "speaker": "students",
+        "text": "Because how much area there is changes if the unit is small or big.  If you do not know the unit, then you do not really know what the area means.  It is just like with length. Twelve of a shorter unit is shorter than 12 of a longer unit."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let us draw a rectangular array with an area of 18 square centimeters. How might we find the side lengths?"
+      },
+      {
+        "speaker": "students",
+        "text": "We could use our tiles to make the array and see.  If you multiply side lengths, you get area, so we can think about what numbers you can multiply to make 18."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to make a list of multiplication facts that equal 18."
+      },
+      {
+        "speaker": "students",
+        "text": "(Possible list is as follows: 1 × 18, 18 × 1, 2 × 9, 9 × 2, 3 × 6, and 6 × 3.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let us draw a 3 cm by 6 cm rectangular array. Use a ruler to measure the side lengths on your personal white board. Mark each centimeter with a point and connect the points to draw the square centimeters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "After drawing your squares, check your work by skip-counting the rows to find the total number of tiles you drew."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw, label, and skip-count tiles in array.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Turn your personal white board so that it is vertical. Does the rectangle still have the same area?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "However, the side lengths switched places. Tell your partner how you know the area is the same."
+      },
+      {
+        "speaker": "students",
+        "text": "The side lengths didn’t change; they just moved.  It is the commutative property. We learned before that you can turn an array and it does not change how much is in it. The rows just turn into columns and columns turn into rows. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 7 3 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "The grid you drew inside of your 3 cm by 6 cm rectangle shows a picture of all the tiles that make up the area. Carefully erase the grid lines in your rectangle. (Pause.) The empty rectangle with labeled side lengths left is called an area model. How can you find the total area just using the labeled side lengths?"
+      },
+      {
+        "speaker": "students",
+        "text": "I can multiply!  I can multiply the side lengths, 3 cm and 6 cm, to get the area, 18 square cm."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw the area model on the right.) What is the total area of my pictured rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "18 square cm."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell your partner how you figured out the area."
+      },
+      {
+        "speaker": "students",
+        "text": "It is easy. One side length is 18 and the other is 1. 18 × 1 = 18. 18 cm The labels tell you the unit is centimeters, so the area is square centimeters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Pass out the area model template.) Slip the area model into your personal white board. Use your ruler to measure the side lengths 1 cm of one of the squares on the grid. (Allow students time to measure.) What unit makes up this grid?"
+      },
+      {
+        "speaker": "students",
+        "text": "Square inches!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "The side lengths of this area model are not labeled. Let us draw a grid inside it to help find the side lengths. Earlier, we drew a grid inside a rectangle by marking each unit with a point and using a ruler to connect the points. Do we need to draw points on the area model to draw a grid inside of it?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, we can just use the grid lines.  No, the lines on the grid can act as points because the area model is lined up with the grid. Area Model Template"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your ruler and the lines on the grid to draw squares inside of the area model. (Allow students time to work.) What size are the units inside the area model?"
+      },
+      {
+        "speaker": "students",
+        "text": "Square inches.  They are square inches because we used the square inch grid paper to help draw the squares."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Find and label the side lengths, and then write an equation to find the area."
+      },
+      {
+        "speaker": "students",
+        "text": "(Label the side lengths as 4 in and 2 in, and write 2 × 4 = 8 or 4 × 2 = 8.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the area?"
+      },
+      {
+        "speaker": "students",
+        "text": "8 square inches! This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 7 3 4"
+      }
+    ],
+    "teacherPrompts": [
+      "One partner will use square inches, and the other will use square centimeters. Work together to decide how to arrange your tiles to make the same shape rectangle. Then, create that rectangle with your pieces.",
+      "You and your partner each made the same shape rectangle. Is the area also the same?",
+      "Turn your personal white board horizontally and write the area of your rectangle.",
+      "(Draw 1 square meter on the board.) This is 1 square meter. Suppose you used 12 square meter tiles to make your rectangle instead. Would this rectangle have a bigger area or a smaller area compared to your original rectangle? MP.6 S: It would be much larger!",
+      "(Draw 1 square foot on the board.) How would your rectangle compare if you made it from 12 square feet?",
+      "(Hold up a pad of square sticky notes.) How about if you had used 12 sticky notes?",
+      "Why is it important to label the unit when you are talking about area?",
+      "Let us draw a rectangular array with an area of 18 square centimeters. How might we find the side lengths?",
+      "Work with your partner to make a list of multiplication facts that equal 18.",
+      "Let us draw a 3 cm by 6 cm rectangular array. Use a ruler to measure the side lengths on your personal white board. Mark each centimeter with a point and connect the points to draw the square centimeters.",
+      "After drawing your squares, check your work by skip-counting the rows to find the total number of tiles you drew.",
+      "Turn your personal white board so that it is vertical. Does the rectangle still have the same area?",
+      "However, the side lengths switched places. Tell your partner how you know the area is the same.",
+      "The grid you drew inside of your 3 cm by 6 cm rectangle shows a picture of all the tiles that make up the area. Carefully erase the grid lines in your rectangle. (Pause.) The empty rectangle with labeled side lengths left is called an area model. How can you find the total area just using the labeled side lengths?",
+      "(Project or draw the area model on the right.) What is the total area of my pictured rectangle?",
+      "Tell your partner how you figured out the area.",
+      "(Pass out the area model template.) Slip the area model into your personal white board. Use your ruler to measure the side lengths 1 cm of one of the squares on the grid. (Allow students time to measure.) What unit makes up this grid?",
+      "The side lengths of this area model are not labeled. Let us draw a grid inside it to help find the side lengths. Earlier, we drew a grid inside a rectangle by marking each unit with a point and using a ruler to connect the points. Do we need to draw points on the area model to draw a grid inside of it?",
+      "Use your ruler and the lines on the grid to draw squares inside of the area model. (Allow students time to work.) What size are the units inside the area model?",
+      "Find and label the side lengths, and then write an equation to find the area.",
+      "What is the area?"
+    ],
+    "debriefPrompt": "One partner will use square inches, and the other will use square centimeters. Work together to decide how to arrange your tiles to make the same shape rectangle. Then, create that rectangle with your pieces",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Use a straight edge to draw a grid of equal size squares within the rectangle. Find and label the side lengths. Then, multiply the side lengths to find the area. C A E D B F a. Area A: d. Area D: ____ units × ____ units = ____ square units ____ units × ____ units = ____ square units b. Area B: e. Area E: ____ units × ____ units = ____ square units ____ unit × ____ units = ____ square units c. Area C: f. Area F: ____ units × ____ units = ____ square units ____ units × ____ units = ____ square units The area of Benjamin's bedroom floor is shown on the grid to the right. Each represents 1 square foot. How many total square feet is Benjamin's floor? a. Label the side lengths. Benjamin's b. Use a straight edge to draw a grid of equal Bedroom Floor size squares within the rectangle. c. Find the total number of squares. 3. Mrs. Young's art class needs to create a mural that covers exactly 35 square feet. Mrs. Young marks the area for the mural as shown on the grid. Each represents 1 square foot. Did she mark the area correctly? Explain your answer. Mural 4. Mrs. Barnes draws a rectangular array. Mila skip-counts by fours and Jorge skip-counts by sixes to find the total number of square units in the array. When they give their answers, Mrs. Barnes says that they are both right. a. Use pictures, numbers, and words to explain how Mila and Jorge can both be right. b. How many square units might Mrs. Barnes' array have had?",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                          Lesson 7 Problem Set 3 4\n\n\nName                                                                                                            Date\n\n1.   Use a straight edge to draw a grid of equal size squares within the rectangle. Find and label the side\n     lengths. Then, multiply the side lengths to find the area.\n\n\n                                                                                                          C\n\n\n                        A\n\n                                                                                                                                 E\n\n\n                                                                                 D\n\n\n                        B\n                                                                                                                                      F\n\n\n     a.   Area A:                                                                        d.      Area D:\n\n          ____ units × ____ units = ____ square units                                            ____ units × ____ units = ____ square units\n\n     b.   Area B:                                                                        e.      Area E:\n\n          ____ units × ____ units = ____ square units                                            ____ unit × ____ units = ____ square units\n\n     c.   Area C:                                                                        f.      Area F:\n\n          ____ units × ____ units = ____ square units                                            ____ units × ____ units = ____ square units\n\n\n                            Lesson 7:                  Interpret area models to form rectangular arrays.                                      85\n\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                       Lesson 7 Problem Set 3 4\n\n\n2.   The area of Benjamin’s bedroom floor is shown on the grid\n     to the right. Each     represents 1 square foot. How\n     many total square feet is Benjamin’s floor?\n     a.   Label the side lengths.\n                                                                                                                          Benjamin’s\n     b.   Use a straight edge to draw a grid of equal                                                                   Bedroom Floor\n          size squares within the rectangle.\n     c.   Find the total number of squares.\n\n\n3.   Mrs. Young’s art class needs to create a mural that covers exactly 35 square\n     feet. Mrs. Young marks the area for the mural as shown on the grid. Each\n          represents 1 square foot. Did she mark the area correctly? Explain your\n     answer.\n                                                                                                                                        Mural\n\n\n4.   Mrs. Barnes draws a rectangular array. Mila skip-counts by fours and Jorge skip-counts by sixes to find\n     the total number of square units in the array. When they give their answers, Mrs. Barnes says that they\n     are both right.\n     a.   Use pictures, numbers, and words to explain how Mila and Jorge can both be right.\n\n\n     b.   How many square units might Mrs. Barnes’ array have had?\n\n\n                         Lesson 7:                  Interpret area models to form rectangular arrays.                                           86\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    a. Grid lines drawn inside rectangle; side lengths labeled; 3, 4, 12\n      b. Grid lines drawn inside rectangle; side lengths labeled; 5, 4, 20\n      c. Grid lines drawn inside rectangle; side lengths labeled; 2, 7, 14\n      d. Grid lines drawn inside rectangle; side lengths labeled; 7, 4, 28\n      e. Grid lines drawn inside rectangle; side lengths labeled; 1, 3, 3\n      f.   Grid lines drawn inside rectangle; side lengths labeled; 4, 2, 8\n2.    a. Side lengths labeled as 9 feet and 11 feet\n      b. Grid lines drawn inside rectangle\n      c. 99\n3.    No; explanations will vary.\n4.    a. Answers will vary.\n      b. 24",
+    "answerKeyText": "A STORY OF UNITS                                                                                            Lesson 7 Answer Key 3 4\n\n\nLesson 7\nProblem Set\n1.    a. Grid lines drawn inside rectangle; side lengths labeled; 3, 4, 12\n      b. Grid lines drawn inside rectangle; side lengths labeled; 5, 4, 20\n      c. Grid lines drawn inside rectangle; side lengths labeled; 2, 7, 14\n      d. Grid lines drawn inside rectangle; side lengths labeled; 7, 4, 28\n      e. Grid lines drawn inside rectangle; side lengths labeled; 1, 3, 3\n      f.   Grid lines drawn inside rectangle; side lengths labeled; 4, 2, 8\n2.    a. Side lengths labeled as 9 feet and 11 feet\n      b. Grid lines drawn inside rectangle\n      c. 99\n3.    No; explanations will vary.\n4.    a. Answers will vary.\n      b. 24\n\n\nExit Ticket\n1.    Grid lines drawn inside rectangle; side lengths labeled; 42\n2.    Gia, square inches are larger than square centimeters.\n\n\nHomework\n1.    a. 6; answer provided; 2, 6\n      b. 10; side lengths labeled; 2, 5, 10\n      c. 12; side lengths labeled; 3, 4, 12\n      d. 16; side lengths labeled; 4, 4, 16\n2.    a. 7 by 4 rectangle drawn on grid; 28 square units\n      b. Side lengths labeled; 7 × 4 = 28\n3.    Gregory, square inches are larger than square centimeters.\n\n\n                        Module 4:                  Multiplication and Area                                                            221\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "ruler-or-length",
+      "table-or-chart",
+      "area-model",
+      "geometry-diagram",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "Interpret area models to form rectangular arrays.",
+        "Lesson 7: Interpret area models to form rectangular arrays. 80",
+        "Part 2: Relate area to multiplication to draw rectangular arrays.",
+        "T: Let us draw a rectangular array with an area of 18 square centimeters. How might we find the side",
+        "S: We could use our tiles to make the array and see.  If you multiply side lengths, you get area, so",
+        "T: Let us draw a 3 cm by 6 cm rectangular array. Use a ruler to",
+        "S: (Draw, label, and skip-count tiles in array.)",
+        "before that you can turn an array and it does not change how much is in it. The rows just turn into"
+      ],
+      "ruler-or-length": [
+        "Materials: (T) Meter stick, 12-inch ruler, pad of square sticky notes (S) 1 set of square centimeter and",
+        "square inch tiles per pair (from Lesson 2), personal white board, ruler, area model (Template)",
+        "T: One partner will use square inches, and the other will use square centimeters. Work together to",
+        "S: (Decide on a rectangle and represent it using square inches and square centimeters.)",
+        "centimeters, and look, my shape takes up less space on the table.  The area of the shape with",
+        "square inches is bigger because inches are bigger than centimeters.",
+        "S: (Write either 12 square inches or 12 square centimeters.)",
+        "S: It would be bigger than 12 square inches or centimeters but smaller than 12 square meters."
+      ],
+      "table-or-chart": [
+        "centimeters, and look, my shape takes up less space on the table.  The area of the shape with"
+      ],
+      "area-model": [
+        "Interpret area models to form rectangular arrays.",
+        "square inch tiles per pair (from Lesson 2), personal white board, ruler, area model (Template)",
+        "Lesson 7: Interpret area models to form rectangular arrays. 80",
+        "Lesson 7: Interpret area models to form rectangular arrays. 81",
+        "Part 3: Interpret area models to find area.",
+        "side lengths left is called an area model. How can you find the total area just using the labeled side",
+        "T: (Project or draw the area model on the right.)",
+        "T: (Pass out the area model template.) Slip the area model into your"
+      ],
+      "geometry-diagram": [
+        "Rectangle E first. Offer practice with",
+        "decide how to arrange your tiles to make the same shape rectangle. Then, create that rectangle",
+        "S: (Decide on a rectangle and represent it using square inches and square centimeters.)",
+        "T: You and your partner each made the same shape rectangle. Is the area also the same?",
+        "T: Turn your personal white board horizontally and write the area of your rectangle.",
+        "tiles to make your rectangle instead. Would this rectangle have a bigger area or a smaller area",
+        "compared to your original rectangle?",
+        "T: (Draw 1 square foot on the board.) How would your rectangle compare if you made it from 12"
+      ],
+      "money-model": [
+        "Materials: (T) Meter stick, 12-inch ruler, pad of square sticky notes (S) 1 set of square centimeter and",
+        "T: One partner will use square inches, and the other will use square centimeters. Work together to",
+        "S: (Decide on a rectangle and represent it using square inches and square centimeters.)",
+        "centimeters, and look, my shape takes up less space on the table.  The area of the shape with",
+        "square inches is bigger because inches are bigger than centimeters.",
+        "S: (Write either 12 square inches or 12 square centimeters.)",
+        "S: It would be bigger than 12 square inches or centimeters but smaller than 12 square meters.",
+        "S: Still bigger than 12 square inches or centimeters but smaller than 12 square feet or meters."
+      ],
+      "picture-or-drawing": [
+        "T: (Draw 1 square meter on the board.) This is 1 square meter. Suppose you used 12 square meter",
+        "T: (Draw 1 square foot on the board.) How would your rectangle compare if you made it from 12",
+        "Part 2: Relate area to multiplication to draw rectangular arrays.",
+        "T: Let us draw a rectangular array with an area of 18 square centimeters. How might we find the side",
+        "T: Let us draw a 3 cm by 6 cm rectangular array. Use a ruler to",
+        "each centimeter with a point and connect the points to draw",
+        "T: After drawing your squares, check your work by skip-counting",
+        "S: (Draw, label, and skip-count tiles in array.)"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Turn your personal white board horizontally and write the area of your rectangle."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write either 12 square inches or 12 square centimeters.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw 1 square meter on the board.) This is 1 square meter. Suppose you used 12 square meter tiles to make your rectangle instead. Would this rectangle have a bigger area or a smaller area compared to your original rectangle? MP.6 S: It would be much larger!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw 1 square foot on the board.) How would your rectangle compare if you made it from 12 square feet?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why is it important to label the unit when you are talking about area?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let us draw a rectangular array with an area of 18 square centimeters. How might we find the side lengths?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let us draw a 3 cm by 6 cm rectangular array. Use a ruler to measure the side lengths on your personal white board. Mark each centimeter with a point and connect the points to draw the square centimeters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "After drawing your squares, check your work by skip-counting the rows to find the total number of tiles you drew."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw, label, and skip-count tiles in array.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Turn your personal white board so that it is vertical. Does the rectangle still have the same area?"
+      },
+      {
+        "speaker": "students",
+        "text": "The side lengths didn’t change; they just moved.  It is the commutative property. We learned before that you can turn an array and it does not change how much is in it. The rows just turn into columns and columns turn into rows. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 7 3 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "The grid you drew inside of your 3 cm by 6 cm rectangle shows a picture of all the tiles that make up the area. Carefully erase the grid lines in your rectangle. (Pause.) The empty rectangle with labeled side lengths left is called an area model. How can you find the total area just using the labeled side lengths?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw the area model on the right.) What is the total area of my pictured rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "It is easy. One side length is 18 and the other is 1. 18 × 1 = 18. 18 cm The labels tell you the unit is centimeters, so the area is square centimeters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Pass out the area model template.) Slip the area model into your personal white board. Use your ruler to measure the side lengths 1 cm of one of the squares on the grid. (Allow students time to measure.) What unit makes up this grid?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "The side lengths of this area model are not labeled. Let us draw a grid inside it to help find the side lengths. Earlier, we drew a grid inside a rectangle by marking each unit with a point and using a ruler to connect the points. Do we need to draw points on the area model to draw a grid inside of it?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, we can just use the grid lines.  No, the lines on the grid can act as points because the area model is lined up with the grid. Area Model Template"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your ruler and the lines on the grid to draw squares inside of the area model. (Allow students time to work.) What size are the units inside the area model?"
+      },
+      {
+        "speaker": "students",
+        "text": "Square inches.  They are square inches because we used the square inch grid paper to help draw the squares."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Find and label the side lengths, and then write an equation to find the area."
+      },
+      {
+        "speaker": "students",
+        "text": "(Label the side lengths as 4 in and 2 in, and write 2 × 4 = 8 or 4 × 2 = 8.)"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 80 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 7 3 4\n\n\nLesson 7\nObjective: Interpret area models to form rectangular arrays.\n\nSuggested Lesson Structure\n\n Fluency Practice                 (12 minutes)\n Application Problem              (8 minutes)\n Concept Development              (30 minutes)\n Student Debrief                  (10 minutes)\n   Total Time                      (60 minutes)\n\n\nFluency Practice (12 minutes)\n\n Group Counting 3.OA.1                                 (4 minutes)\n Draw Rectangles 3.MD.5                                (4 minutes)\n Draw Rectangular Arrays 3.MD.5                        (4 minutes)\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally changing the direction of the count.\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\nDraw Rectangles (4 minutes)\nMaterials: (S) Grid paper\n\nNote: This fluency activity reviews drawing a rectangle from a known area. Show student work that is correct\nbut looks different (e.g., a 6 × 2 unit rectangle juxtaposed with a 4 × 3 unit rectangle).\n    T:   Draw a rectangle that has an area of 6 square units.\n    S:   (Draw a 6-square unit rectangle.)\nContinue with the following possible sequence: 10 square units, 12 square units, 16 square units, 24 square\nunits, and 35 square units.\n\n\n                        Lesson 7:                  Interpret area models to form rectangular arrays.                                         79\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 81 (concept-development) ---\nA STORY OF UNITS                                                                                                               Lesson 7 3 4\n\n\nDraw Rectangular Arrays (4 minutes)\nMaterials: (S) Grid paper\n\nNote: This fluency activity reviews finding area using side lengths.\n    T:   Draw a 4 × 2 rectangular array using the squares on your grid paper.\n    T:   How many square units are in your array?\n    S:   8 square units.\nContinue with the following possible sequence of rectangular arrays: 6 × 2, 4 × 3, 6 × 3, 9 × 2, 6 × 4, and 3 × 8.\n\n\nApplication Problem (8 minutes)\n\nLori wants to replace the square tiles on her wall. The\nsquare tiles are sold in boxes of 8 square tiles. Lori\nbuys 6 boxes of tiles. Does she have enough to replace                                                         Painting\nall of the tiles, including the tiles under the painting?\nExplain your answer.\n\n\nNote: This problem reviews multi-step word problems in the context of using square tiles to measure area. It\nalso reviews finding the area of an incomplete array from Lesson 6.\n\n\nConcept Development (30 minutes)\n\nMaterials: (T) Meter stick, 12-inch ruler, pad of square sticky notes (S) 1 set of square centimeter and\n           square inch tiles per pair (from Lesson 2), personal white board, ruler, area model (Template)\n\nPart 1: Explore the relationship between units and area.\n    T:   One partner will use square inches, and the other will use square centimeters. Work together to\n         decide how to arrange your tiles to make the same shape rectangle. Then, create that rectangle\n         with your pieces.\n    S:   (Decide on a rectangle and represent it using square inches and square centimeters.)\n\n\n                        Lesson 7:                  Interpret area models to form rectangular arrays.                                         80\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 82 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                              Lesson 7 3 4\n\n\n     T:   You and your partner each made the same shape rectangle. Is the area also the same?\n     S:   We used the same number of pieces, but my pieces are smaller than yours. They are square\n          centimeters, and look, my shape takes up less space on the table.  The area of the shape with\n          square inches is bigger because inches are bigger than centimeters.\n     T:   Turn your personal white board horizontally and write the area of your rectangle.\n     S:   (Write either 12 square inches or 12 square centimeters.)\n     T:   (Draw 1 square meter on the board.) This is 1 square meter. Suppose you used 12 square meter\n          tiles to make your rectangle instead. Would this rectangle have a bigger area or a smaller area\n          compared to your original rectangle?\nMP.6 S:   It would be much larger!\n     T:   (Draw 1 square foot on the board.) How would your rectangle compare if you made it from 12\n          square feet?\n     S:   It would be bigger than 12 square inches or centimeters but smaller than 12 square meters.\n     T:   (Hold up a pad of square sticky notes.) How about if you had used 12 sticky notes?\n     S:   Still bigger than 12 square inches or centimeters but smaller than 12 square feet or meters.\n     T:   Why is it important to label the unit when you are talking about area?\n     S:   Because how much area there is changes if the unit is small or big.  If you do not know the unit,\n          then you do not really know what the area means.  It is just like with length. Twelve of a shorter\n          unit is shorter than 12 of a longer unit.\n\n Part 2: Relate area to multiplication to draw rectangular arrays.\n     T:   Let us draw a rectangular array with an area of 18 square centimeters. How might we find the side\n          lengths?\n     S:   We could use our tiles to make the array and see.  If you multiply side lengths, you get area, so\n          we can think about what numbers you can multiply to make 18.\n     T:   Work with your partner to make a list of multiplication facts that equal 18.\n     S:   (Possible list is as follows: 1 × 18, 18 × 1, 2 × 9, 9 × 2, 3 × 6, and\n          6 × 3.)\n     T:   Let us draw a 3 cm by 6 cm rectangular array. Use a ruler to\n          measure the side lengths on your personal white board. Mark\n          each centimeter with a point and connect the points to draw\n          the square centimeters.\n     T:   After drawing your squares, check your work by skip-counting\n          the rows to find the total number of tiles you drew.\n     S:   (Draw, label, and skip-count tiles in array.)\n     T:   Turn your personal white board so that it is vertical. Does the rectangle still have the same area?\n     S:   Yes.\n     T:   However, the side lengths switched places. Tell your partner how you know the area is the same.\n     S:   The side lengths didn’t change; they just moved.  It is the commutative property. We learned\n          before that you can turn an array and it does not change how much is in it. The rows just turn into\n          columns and columns turn into rows.\n\n\n                         Lesson 7:                  Interpret area models to form rectangular arrays.                                         81\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 83 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                               Lesson 7 3 4\n\n\nPart 3: Interpret area models to find area.\n    T:   The grid you drew inside of your 3 cm by 6 cm rectangle shows a picture of all the tiles that make up\n         the area. Carefully erase the grid lines in your rectangle. (Pause.) The empty rectangle with labeled\n         side lengths left is called an area model. How can you find the total area just using the labeled side\n         lengths?\n    S:   I can multiply!  I can multiply the side lengths, 3 cm and 6 cm,\n         to get the area, 18 square cm.\n    T:   (Project or draw the area model on the right.)\n         What is the total area of my pictured rectangle?\n    S:   18 square cm.\n    T:   Tell your partner how you figured out the area.\n    S:   It is easy. One side length is 18 and the other is 1. 18 × 1 = 18.             18 cm\n         The labels tell you the unit is centimeters, so the area is square\n         centimeters.\n    T:   (Pass out the area model template.) Slip the area model into your\n         personal white board. Use your ruler to measure the side lengths                        1 cm\n         of one of the squares on the grid. (Allow students time to\n         measure.) What unit makes up this grid?\n    S:   Square inches!\n    T:   The side lengths of this area model are not labeled. Let us draw a grid inside it to help find the side\n         lengths. Earlier, we drew a grid inside a rectangle by marking each unit with a point and using a\n         ruler to connect the points. Do we need to draw points on the area model to draw a grid inside\n         of it?\n    S:   No, we can just use the grid lines.  No, the lines on the grid can act\n         as points because the area model is lined up with the grid.                    Area Model Template\n    T:   Use your ruler and the lines on the grid to draw squares inside of the\n         area model. (Allow students time to work.) What size are the units\n         inside the area model?\n    S:   Square inches.  They are square inches because we used the square\n         inch grid paper to help draw the squares.\n    T:   Find and label the side lengths, and then write an equation to find the\n         area.\n    S:   (Label the side lengths as 4 in and 2 in, and write 2 × 4 = 8 or\n         4 × 2 = 8.)\n    T:   What is the area?\n    S:   8 square inches!\n\n\n                        Lesson 7:                  Interpret area models to form rectangular arrays.                                         82\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 84 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 7 3 4\n\n\nProblem Set (10 minutes)\n                                                                                                                           NOTES ON\nStudents should do their personal best to complete the Problem\nSet within the allotted 10 minutes. For some classes, it may be                                                            MULTIPLE MEANS\nappropriate to modify the assignment by specifying which                                                                   FOR ACTION AND\nproblems they work on first. Some problems do not specify a                                                                EXPRESSION:\nmethod for solving. Students should solve these problems using                                                 Consider offering the following\nthe RDW approach used for Application Problems.                                                                adaptations to the Problem Set:\n                                                                                                                 Prompt students to approach\n                                                                                                                  Rectangle E first. Offer practice with\nStudent Debrief (10 minutes)                                                                                      1 by n rectangles to build fluency\n                                                                                                                  and confidence.\nLesson Objective: Interpret area models to form rectangular                                                      Remove side lengths to encourage\narrays.                                                                                                           closer investigation.\n                                                                                                                 Challenge students to devise an\nThe Student Debrief is intended to invite reflection and active                                                   alternate method for finding the\nprocessing of the total lesson experience.                                                                        area of Benjamin’s bedroom floor.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a conversation\nto debrief the Problem Set and process the lesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        What was your strategy for finding the total\n         number of squares in Problem 2(c)?\n        Invite students who drew arrays that\n         demonstrate commutativity for Problem 4(a)\n         (possibly 4 × 6 and 6 × 4) to share their work.\n         Guide students to articulate understanding that\n         commutativity still applies in the context of area.\n        For Problem 4(b), most students answered that\n         Mrs. Barnes’ array probably had 24 squares. Is\n         there another answer that makes sense? (For\n         example, 12, 48, 72.)\n        Compare the area model to the array. How are\n         they the same and different? (Guide discussion\n         to include the commutativity of both models.)\n\n\n                        Lesson 7:                  Interpret area models to form rectangular arrays.                                                       83\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 85 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 7 3 4\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                       Lesson 7:                  Interpret area models to form rectangular arrays.                                         84\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 86 (problem-set) ---\nA STORY OF UNITS                                                                                          Lesson 7 Problem Set 3 4\n\n\nName                                                                                                            Date\n\n1.   Use a straight edge to draw a grid of equal size squares within the rectangle. Find and label the side\n     lengths. Then, multiply the side lengths to find the area.\n\n\n                                                                                                          C\n\n\n                        A\n\n                                                                                                                                 E\n\n\n                                                                                 D\n\n\n                        B\n                                                                                                                                      F\n\n\n     a.   Area A:                                                                        d.      Area D:\n\n          ____ units × ____ units = ____ square units                                            ____ units × ____ units = ____ square units\n\n     b.   Area B:                                                                        e.      Area E:\n\n          ____ units × ____ units = ____ square units                                            ____ unit × ____ units = ____ square units\n\n     c.   Area C:                                                                        f.      Area F:\n\n          ____ units × ____ units = ____ square units                                            ____ units × ____ units = ____ square units\n\n\n                            Lesson 7:                  Interpret area models to form rectangular arrays.                                      85\n\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 87 (problem-set) ---\nA STORY OF UNITS                                                                                       Lesson 7 Problem Set 3 4\n\n\n2.   The area of Benjamin’s bedroom floor is shown on the grid\n     to the right. Each     represents 1 square foot. How\n     many total square feet is Benjamin’s floor?\n     a.   Label the side lengths.\n                                                                                                                          Benjamin’s\n     b.   Use a straight edge to draw a grid of equal                                                                   Bedroom Floor\n          size squares within the rectangle.\n     c.   Find the total number of squares.\n\n\n3.   Mrs. Young’s art class needs to create a mural that covers exactly 35 square\n     feet. Mrs. Young marks the area for the mural as shown on the grid. Each\n          represents 1 square foot. Did she mark the area correctly? Explain your\n     answer.\n                                                                                                                                        Mural\n\n\n4.   Mrs. Barnes draws a rectangular array. Mila skip-counts by fours and Jorge skip-counts by sixes to find\n     the total number of square units in the array. When they give their answers, Mrs. Barnes says that they\n     are both right.\n     a.   Use pictures, numbers, and words to explain how Mila and Jorge can both be right.\n\n\n     b.   How many square units might Mrs. Barnes’ array have had?\n\n\n                         Lesson 7:                  Interpret area models to form rectangular arrays.                                           86\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 88 (exit-ticket) ---\nA STORY OF UNITS                                                                                           Lesson 7 Exit Ticket 3 4\n\n\nName                                                                                                        Date\n\n1.   Label the side lengths of Rectangle A on the grid below. Use a straight edge to draw a grid of equal size\n     squares within Rectangle A. Find the total area of Rectangle A.\n\n\n                                                                                                             Area: ________ square units\n\n\n                            Rectangle A\n\n\n2.   Mark makes a rectangle with 36 square centimeter tiles. Gia makes a rectangle with 36 square inch tiles.\n     Whose rectangle has a bigger area? Explain your answer.\n\n\n                        Lesson 7:                  Interpret area models to form rectangular arrays.                                       87\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 89 (homework) ---\nA STORY OF UNITS                                                                                         Lesson 7 Homework 3 4\n\n\nName                                                                                                        Date\n\n1.   Find the area of each rectangular array. Label the side lengths of the matching area model, and write a\n     multiplication equation for each area model.\n\n                  Rectangular Arrays                                                                             Area Models\n\n\n      a.\n                                                                            3 units\n                                                                                                                           3 units × _____ units\n\n                                                                                                                           = _____ square units\n                              ______ square units\n                                                                                               2 units\n\n\n      b.\n\n\n                               ______ square units                                _____ units × ______ units = _____ square units\n\n\n      c.\n\n\n                                                                                  _____ units × _____ units = ______ square units\n                                ______ square units\n\n\n      d.\n\n\n                                                                                                                            _____ units × _____ units\n                                          _____ square units\n                                                                                                                             = ______ square units\n\n\n                        Lesson 7:                  Interpret area models to form rectangular arrays.                                                 88\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 90 (homework) ---\nA STORY OF UNITS                                                                                          Lesson 7 Homework 3 4\n\n\n2.   Jillian arranges square pattern blocks into a 7 by 4 array. Draw Jillian’s array on the the grid below. How\n     many square units are in Jillian’s rectangular array?\n\n     a.\n\n\n     b.   Label the side lengths of Jillian’s array from Part (a) on the rectangle below. Then, write a\n          multiplication sentence to represent the area of the rectangle.\n\n\n3.   Fiona draws a 24 square centimeter rectangle. Gregory draws a 24 square inch rectangle. Whose\n     rectangle is larger in area? How do you know?\n\n\n                         Lesson 7:                  Interpret area models to form rectangular arrays.                              89\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 91 (template) ---\nA STORY OF UNITS                                                                                            Lesson 7 Template 3 4\n\n\narea model\n\n\n                      Lesson 7:                  Interpret area models to form rectangular arrays.                                 90\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 86,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                          Lesson 7 Problem Set 3 4\n\n\nName                                                                                                            Date\n\n1.   Use a straight edge to draw a grid of equal size squares within the rectangle. Find and label the side\n     lengths. Then, multiply the side lengths to find the area.\n\n\n                                                                                                          C\n\n\n                        A\n\n                                                                                                                                 E\n\n\n                                                                                 D\n\n\n                        B\n                                                                                                                                      F\n\n\n     a.   Area A:                                                                        d.      Area D:\n\n          ____ units × ____ units = ____ square units                                            ____ units × ____ units = ____ square units\n\n     b.   Area B:                                                                        e.      Area E:\n\n          ____ units × ____ units = ____ square units                                            ____ unit × ____ units = ____ square units\n\n     c.   Area C:                                                                        f.      Area F:\n\n          ____ units × ____ units = ____ square units                                            ____ units × ____ units = ____ square units\n\n\n                            Lesson 7:                  Interpret area models to form rectangular arrays.                                      85\n\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 87,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                       Lesson 7 Problem Set 3 4\n\n\n2.   The area of Benjamin’s bedroom floor is shown on the grid\n     to the right. Each     represents 1 square foot. How\n     many total square feet is Benjamin’s floor?\n     a.   Label the side lengths.\n                                                                                                                          Benjamin’s\n     b.   Use a straight edge to draw a grid of equal                                                                   Bedroom Floor\n          size squares within the rectangle.\n     c.   Find the total number of squares.\n\n\n3.   Mrs. Young’s art class needs to create a mural that covers exactly 35 square\n     feet. Mrs. Young marks the area for the mural as shown on the grid. Each\n          represents 1 square foot. Did she mark the area correctly? Explain your\n     answer.\n                                                                                                                                        Mural\n\n\n4.   Mrs. Barnes draws a rectangular array. Mila skip-counts by fours and Jorge skip-counts by sixes to find\n     the total number of square units in the array. When they give their answers, Mrs. Barnes says that they\n     are both right.\n     a.   Use pictures, numbers, and words to explain how Mila and Jorge can both be right.\n\n\n     b.   How many square units might Mrs. Barnes’ array have had?\n\n\n                         Lesson 7:                  Interpret area models to form rectangular arrays.                                           86\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 222,
+        "text": "A STORY OF UNITS                                                                                            Lesson 7 Answer Key 3 4\n\n\nLesson 7\nProblem Set\n1.    a. Grid lines drawn inside rectangle; side lengths labeled; 3, 4, 12\n      b. Grid lines drawn inside rectangle; side lengths labeled; 5, 4, 20\n      c. Grid lines drawn inside rectangle; side lengths labeled; 2, 7, 14\n      d. Grid lines drawn inside rectangle; side lengths labeled; 7, 4, 28\n      e. Grid lines drawn inside rectangle; side lengths labeled; 1, 3, 3\n      f.   Grid lines drawn inside rectangle; side lengths labeled; 4, 2, 8\n2.    a. Side lengths labeled as 9 feet and 11 feet\n      b. Grid lines drawn inside rectangle\n      c. 99\n3.    No; explanations will vary.\n4.    a. Answers will vary.\n      b. 24\n\n\nExit Ticket\n1.    Grid lines drawn inside rectangle; side lengths labeled; 42\n2.    Gia, square inches are larger than square centimeters.\n\n\nHomework\n1.    a. 6; answer provided; 2, 6\n      b. 10; side lengths labeled; 2, 5, 10\n      c. 12; side lengths labeled; 3, 4, 12\n      d. 16; side lengths labeled; 4, 4, 16\n2.    a. 7 by 4 rectangle drawn on grid; 28 square units\n      b. Side lengths labeled; 7 × 4 = 28\n3.    Gregory, square inches are larger than square centimeters.\n\n\n                        Module 4:                  Multiplication and Area                                                            221\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

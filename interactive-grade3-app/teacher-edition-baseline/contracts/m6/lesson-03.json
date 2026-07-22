@@ -1,0 +1,496 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m6-l3",
+  "moduleId": "m6",
+  "lessonNumber": 3,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_6/g3_m6_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "74325e3dfcae94e1fe359552d3857a3c929b26c5cca327ee80ef45d651aa7358",
+    "teacherEditionBytes": 6604249,
+    "lessonPdfPages": {
+      "start": 33,
+      "end": 49
+    },
+    "problemSetPdfPages": [
+      41,
+      42,
+      43
+    ],
+    "exitTicketPdfPages": [
+      44
+    ],
+    "homeworkPdfPages": [
+      45,
+      46,
+      47
+    ],
+    "answerKeyPdfPages": [
+      149,
+      150
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m6-student/workbook-page-011.png"
+    ],
+    "existingTeacherEditionImages": []
+  },
+  "objective": "Create scaled bar graphs.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.\n                                                                              on the Problem Set:\nFor this Problem Set, the third page may be used as an                           Facilitate a guided practice of\nextension for students who finish early.                                          estimating and accurately\n                                                                                  determining challenging bar values.\n                                                                                  Start with smaller numbers and",
+    "conceptDevelopmentText": "Materials: (S) Graph A (Template 1) pictured below, Graph B (Template 2) pictured below, colored pencils,\n             straightedge\n                                                                                      Template 1 with Student Work\n  Problem 1: Construct a scaled bar graph.\n       T:   (Pass out Template 1 pictured to the right.) Draw\n            the vertical tape diagrams from the Application\n            Problem on the grid. (Allow students time to\n            work.) Outline the bars with your colored pencil.\n            Erase the unit labels inside the bar, and shade the\n            entire bar with your colored pencil. (Model an\n            example.)\n       T:   What does each square on the grid represent?\n       S:   5 fish!                                                                           Tank\n\n       T:   We can show that by creating a scale on our bar graph. (Write 0 where the axes intersect, and then\n            write 5 near the first line on the vertical axis. Point to the next line up on the grid.) Turn and talk to\nMP.6        a partner. What number should I write here? How do you know?\n       S:   Ten because you are counting by fives.  Ten because each square has a value of 5, and 2 fives is\n            10.\n\n\n                           Lesson 3:                 Create scaled bar graphs.                                              33\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                        Lesson 3 3 6\n\n\n     T:   Count by fives to complete the rest of the scale on the graph.\nMP.6 S:   (Count and write.)\n     T:   What do the numbers on the scale tell you?\n     S:   The number of fish!\n     T:   Label the scale Number of Fish. (Model.) What do the labels under each bar tell you?\n     S:   Which tank the bar is for!\n     T:   What is a good title for this graph?\n     S:   Number of Fish at Sal’s Pet Store.\n     T:   Write the title Number of Fish at Sal’s Pet Store. (Model.)\n     T:   Turn and talk to a partner. How is this scaled bar graph similar to the vertical tape diagrams in the\n          Application Problem? How is it different?\n     S:   They both show the number of fish in Sal’s pet store.  The value of the bars and the tape\n          diagrams is the same.  The way we show the value of the bars changed. In the Application\n          Problem, we labeled each unit. In this graph, we made a scale to show the value.\n     T:   You are right. This scaled bar graph does not have                        Template 2\n          labeled units, but it has a scale we can read to find\n          the values of the bars. (Pass out Template 2,\n          pictured to the right.) Let’s create a second bar\n          graph from the data. What do you notice about\n          the labels on this graph?\n     S:   They are switched!  Yeah, the tank labels are on\n          the side, and the Number of Fish label is now at the\n          bottom.\n     T:   Count by fives to label your scale along the\n          horizontal edge. Then, shade in the correct\n          number of squares for each tank. Will your bars be\n          horizontal or vertical?\n     S:   Horizontal. (Label and shade.)\n     T:   Take Graph A and turn it so the paper is horizontal.\n          Compare it with Graph B. What do you notice?\n     S:   They are the same!\n     T:   A bar graph can be drawn vertically or horizontally, depending on where you decide to put the\n          labels, but the information stays the same as long as the scales are the same.\n     T:   Marcy buys 3 fish from Tank C. Write a subtraction sentence to show how many fish are left in\n          Tank C.\n     S:   (Write 25 – 3 = 22.)\n     T:   How many fish are left in Tank C?\n     S:   22 fish!\n     T:   Discuss with a partner how I can show 22 fish on the bar graph.\n     S:   (Discuss.)\n\n\n                         Lesson 3:                 Create scaled bar graphs.                                  34\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                  Lesson 3 3 6\n\n\n    T:   I am going to erase some of the Tank C bar. Tell me to stop when you think it shows 22 fish. (Erase\n         until students say to stop.) Even though our scale counts by fives, we can show other values for the\n         bars by drawing the bars in between the numbers on the scale.\n\nProblem 2: Plot data from a bar graph on a number line.\n    T:   Let’s use Graph B to create a number line to show the\n         same information. There is an empty number line\n                                                                                       NOTES ON\n         below the graph. Line up a straightedge with each\n                                                                                       MULTIPLE MEANS\n         column on the grid to make intervals on the number\n         line that match the scale on the graph. (Model.)                              OF ACTION AND\n                                                                                       EXPRESSION:\n    S:   (Draw intervals.)\n                                                                             Assist students with perceptual\n    T:   Should the intervals on the number line be labeled                  difficulties, low vision, and others with\n         with the number of fish or with the tanks? Discuss                  plotting corresponding points on the\n         with your partner.                                                  number line. To make tick marks, show\n    S:   The number of fish.                                                 students how to hold and align the\n                                                                             straightedge with the scale at the\n    T:   Why? Talk to your partner.\n                                                                             bottom of the graph, not the bars.\n    S:   The number of fish because the number line shows the                Precise alignment is desired, but\n         scale.                                                              comfort, confidence, accurate\n    T:   Label the intervals. (Allow students time to work.)                 presentation of data, and a frustration-\n         Now, work with a partner to plot and label the number               free experience are more valuable.\n         of fish in each tank on the number line.\n    S:   (Plot and label.)\n    T:   Talk to a partner. Compare how the information                        Number of Fish at Sal’s Pet Store\n         is shown on the bar graph and the number line.\n    S:   The tick marks on the number line are in the\n         same places as the graph’s scale.  The spaces\n         in between the tick marks on the number line are\n         like the unit squares on the bar graph.  On the\n         number line, the tanks are just dots, not whole       Tank\n         bars, so the labels look a little different, too.\n    T:   We can read different information from the 2\n         representations. Compare the information we\n         can read.\n    S:   With a bar graph, it is easy to see the order from\n         least to most fish just by looking at the size of the\n         bars.  The number line shows you how much,\n         too, but you know which is the most by looking\n         for the biggest number on the line, not by looking\n         for the biggest bar.\n    T:   Yes. A bar graph allows us to compare easily.\n         A number line plots the information.\n\n\n                       Lesson 3:                 Create scaled bar graphs.                                               35\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                             Lesson 3 3 6",
+    "fluencyPracticeText": " How Many Units of 6 3.OA.1                                      (3 minutes)\n Sprint: Multiply or Divide by 6 3.OA.4                          (9 minutes)\n\nHow Many Units of 6 (3 minutes)\nNote: This activity reviews multiplication and division with units of 6.\nDirect students to count forward and backward by sixes to 60, occasionally changing the direction of the\ncount.\n    T:   How many units of 6 are in 12?\n    S:   2 units of 6.\n    T:   Give me the division sentence with the number of sixes as the quotient.\n    S:   12 ÷ 6 = 2.\nContinue the process with 24, 36, and 48.\n\nSprint: Multiply or Divide by 6 (9 minutes)\nMaterials: (S) Multiply or Divide by 6 Sprint\n\nNote: This Sprint supports multiplication and division using units of 6.\n\n\n                        Lesson 3:                 Create scaled bar graphs.                                32\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                  Lesson 3 3 6",
+    "problemSetGuidanceText": "NOTES ON\nStudents should do their personal best to complete the Problem\n                                                                                      MULTIPLE MEANS\nSet within the allotted 10 minutes. For some classes, it may be\n                                                                                      OF REPRESENTATION:\nappropriate to modify the assignment by specifying which\nproblems they work on first. Some problems do not specify a                   Students working below grade level\nmethod for solving. Students should solve these problems using                and others may benefit from the\n                                                                              following scaffolds for reading graphs\nthe RDW approach used for Application Problems.\n                                                                              on the Problem Set:\nFor this Problem Set, the third page may be used as an                           Facilitate a guided practice of\nextension for students who finish early.                                          estimating and accurately\n                                                                                  determining challenging bar values.\n                                                                                  Start with smaller numbers and",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Pass out Template 1 pictured to the right.) Draw the vertical tape diagrams from the Application Problem on the grid. (Allow students time to work.) Outline the bars with your colored pencil. Erase the unit labels inside the bar, and shade the entire bar with your colored pencil. (Model an example.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What does each square on the grid represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "5 fish! Tank"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We can show that by creating a scale on our bar graph. (Write 0 where the axes intersect, and then write 5 near the first line on the vertical axis. Point to the next line up on the grid.) Turn and talk to MP.6 a partner. What number should I write here? How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "Ten because you are counting by fives.  Ten because each square has a value of 5, and 2 fives is 10. ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 3 3 6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Count by fives to complete the rest of the scale on the graph. MP.6 S: (Count and write.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do the numbers on the scale tell you?"
+      },
+      {
+        "speaker": "students",
+        "text": "The number of fish!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label the scale Number of Fish. (Model.) What do the labels under each bar tell you?"
+      },
+      {
+        "speaker": "students",
+        "text": "Which tank the bar is for!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is a good title for this graph?"
+      },
+      {
+        "speaker": "students",
+        "text": "Number of Fish at Sal’s Pet Store."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the title Number of Fish at Sal’s Pet Store. (Model.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Turn and talk to a partner. How is this scaled bar graph similar to the vertical tape diagrams in the Application Problem? How is it different?"
+      },
+      {
+        "speaker": "students",
+        "text": "They both show the number of fish in Sal’s pet store.  The value of the bars and the tape diagrams is the same.  The way we show the value of the bars changed. In the Application Problem, we labeled each unit. In this graph, we made a scale to show the value."
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are right. This scaled bar graph does not have Template 2 labeled units, but it has a scale we can read to find the values of the bars. (Pass out Template 2, pictured to the right.) Let’s create a second bar graph from the data. What do you notice about the labels on this graph?"
+      },
+      {
+        "speaker": "students",
+        "text": "They are switched!  Yeah, the tank labels are on the side, and the Number of Fish label is now at the bottom."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Count by fives to label your scale along the horizontal edge. Then, shade in the correct number of squares for each tank. Will your bars be horizontal or vertical?"
+      },
+      {
+        "speaker": "students",
+        "text": "Horizontal. (Label and shade.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Take Graph A and turn it so the paper is horizontal. Compare it with Graph B. What do you notice?"
+      },
+      {
+        "speaker": "students",
+        "text": "They are the same!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "A bar graph can be drawn vertically or horizontally, depending on where you decide to put the labels, but the information stays the same as long as the scales are the same."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Marcy buys 3 fish from Tank C. Write a subtraction sentence to show how many fish are left in Tank C."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 25 – 3 = 22.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many fish are left in Tank C?"
+      },
+      {
+        "speaker": "students",
+        "text": "22 fish!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Discuss with a partner how I can show 22 fish on the bar graph."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.) ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 3 3 6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "I am going to erase some of the Tank C bar. Tell me to stop when you think it shows 22 fish. (Erase until students say to stop.) Even though our scale counts by fives, we can show other values for the bars by drawing the bars in between the numbers on the scale."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use Graph B to create a number line to show the same information. There is an empty number line below the graph. Line up a straightedge with each MULTIPLE MEANS column on the grid to make intervals on the number line that match the scale on the graph. (Model.) OF ACTION AND EXPRESSION:"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw intervals.) Assist students with perceptual"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Should the intervals on the number line be labeled difficulties, low vision, and others with with the number of fish or with the tanks? Discuss plotting corresponding points on the with your partner. number line. To make tick marks, show"
+      },
+      {
+        "speaker": "students",
+        "text": "The number of fish. students how to hold and align the straightedge with the scale at the"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why? Talk to your partner. bottom of the graph, not the bars."
+      },
+      {
+        "speaker": "students",
+        "text": "The number of fish because the number line shows the Precise alignment is desired, but scale. comfort, confidence, accurate"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label the intervals. (Allow students time to work.) presentation of data, and a frustration- Now, work with a partner to plot and label the number free experience are more valuable. of fish in each tank on the number line."
+      },
+      {
+        "speaker": "students",
+        "text": "(Plot and label.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to a partner. Compare how the information Number of Fish at Sal’s Pet Store is shown on the bar graph and the number line."
+      },
+      {
+        "speaker": "students",
+        "text": "The tick marks on the number line are in the same places as the graph’s scale.  The spaces in between the tick marks on the number line are like the unit squares on the bar graph.  On the number line, the tanks are just dots, not whole Tank bars, so the labels look a little different, too."
+      },
+      {
+        "speaker": "teacher",
+        "text": "We can read different information from the 2 representations. Compare the information we can read."
+      },
+      {
+        "speaker": "students",
+        "text": "With a bar graph, it is easy to see the order from least to most fish just by looking at the size of the bars.  The number line shows you how much, too, but you know which is the most by looking for the biggest number on the line, not by looking for the biggest bar."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Yes. A bar graph allows us to compare easily. A number line plots the information. ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 3 3 6"
+      }
+    ],
+    "teacherPrompts": [
+      "(Pass out Template 1 pictured to the right.) Draw the vertical tape diagrams from the Application Problem on the grid. (Allow students time to work.) Outline the bars with your colored pencil. Erase the unit labels inside the bar, and shade the entire bar with your colored pencil. (Model an example.)",
+      "What does each square on the grid represent?",
+      "We can show that by creating a scale on our bar graph. (Write 0 where the axes intersect, and then write 5 near the first line on the vertical axis. Point to the next line up on the grid.) Turn and talk to MP.6 a partner. What number should I write here? How do you know?",
+      "Count by fives to complete the rest of the scale on the graph. MP.6 S: (Count and write.)",
+      "What do the numbers on the scale tell you?",
+      "Label the scale Number of Fish. (Model.) What do the labels under each bar tell you?",
+      "What is a good title for this graph?",
+      "Write the title Number of Fish at Sal’s Pet Store. (Model.)",
+      "Turn and talk to a partner. How is this scaled bar graph similar to the vertical tape diagrams in the Application Problem? How is it different?",
+      "You are right. This scaled bar graph does not have Template 2 labeled units, but it has a scale we can read to find the values of the bars. (Pass out Template 2, pictured to the right.) Let’s create a second bar graph from the data. What do you notice about the labels on this graph?",
+      "Count by fives to label your scale along the horizontal edge. Then, shade in the correct number of squares for each tank. Will your bars be horizontal or vertical?",
+      "Take Graph A and turn it so the paper is horizontal. Compare it with Graph B. What do you notice?",
+      "A bar graph can be drawn vertically or horizontally, depending on where you decide to put the labels, but the information stays the same as long as the scales are the same.",
+      "Marcy buys 3 fish from Tank C. Write a subtraction sentence to show how many fish are left in Tank C.",
+      "How many fish are left in Tank C?",
+      "Discuss with a partner how I can show 22 fish on the bar graph.",
+      "I am going to erase some of the Tank C bar. Tell me to stop when you think it shows 22 fish. (Erase until students say to stop.) Even though our scale counts by fives, we can show other values for the bars by drawing the bars in between the numbers on the scale.",
+      "Let’s use Graph B to create a number line to show the same information. There is an empty number line below the graph. Line up a straightedge with each MULTIPLE MEANS column on the grid to make intervals on the number line that match the scale on the graph. (Model.) OF ACTION AND EXPRESSION:",
+      "Should the intervals on the number line be labeled difficulties, low vision, and others with with the number of fish or with the tanks? Discuss plotting corresponding points on the with your partner. number line. To make tick marks, show",
+      "Why? Talk to your partner. bottom of the graph, not the bars.",
+      "Label the intervals. (Allow students time to work.) presentation of data, and a frustration- Now, work with a partner to plot and label the number free experience are more valuable. of fish in each tank on the number line.",
+      "Talk to a partner. Compare how the information Number of Fish at Sal’s Pet Store is shown on the bar graph and the number line.",
+      "We can read different information from the 2 representations. Compare the information we can read.",
+      "Yes. A bar graph allows us to compare easily. A number line plots the information. ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 3 3 6"
+    ],
+    "debriefPrompt": "(Pass out Template 1 pictured to the right.) Draw the vertical tape diagrams from the Application Problem on the grid. (Allow students time to work.) Outline the bars with your colored pencil.",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "This table shows the number of students in each class. Number of Students in Each Class Class Number of Students Baking 9 Sports 16 Chorus 13 Drama 18 Use the table to color the bar graph. The first one has been done for you. Number of Students in Each Class Number of 12 Students 10 Baking Sports Chorus Drama Class a. What is the value of each square in the bar graph? b. Write a number sentence to find how many total students are enrolled in classes. c. How many fewer students are in sports than in chorus and baking combined? Write a number sentence to show your thinking.",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "This bar graph shows Kyle's savings from February to June. Use a straightedge to help you read the graph. Kyle's Savings Amount in 30 Dollars February March April May June Month a. How much money did Kyle save in May? b. In which months did Kyle save less than $35? c. How much more did Kyle save in June than April? Write a number sentence to show your thinking. d. The money Kyle saved in was half the money he saved in.",
+        "equations": []
+      },
+      {
+        "number": 3,
+        "prompt": "Complete the table below to show the same data given in the bar graph in Problem 2. Months February Amount Saved in Dollars This bar graph shows the number of minutes Charlotte read from Monday through Friday. Charlotte's Reading Minutes Friday Thursday Day Wednesday Tuesday Monday 0 10 20 30 40 50 60 70 Number of Minutes",
+        "equations": []
+      },
+      {
+        "number": 4,
+        "prompt": "Use the graph's lines as a ruler to draw in the intervals on the number line shown above. Then plot and label a point for each day on the number line.",
+        "equations": []
+      },
+      {
+        "number": 5,
+        "prompt": "Use the graph or number line to answer the following questions. a. On which days did Charlotte read for the same number of minutes? How many minutes did Charlotte read on these days? b. How many more minutes did Charlotte read on Wednesday than on Friday?",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                 Lesson 3 Problem Set 3 6\n\n\nName                                                                                  Date\n\n1.   This table shows the number of students in each class.\n\n                                  Number of Students in Each Class\n                                  Class           Number of Students\n                                 Baking                     9\n                                 Sports                     16\n                                 Chorus                     13\n                                 Drama                      18\n\n     Use the table to color the bar graph. The first one has been done for you.\n\n                                    Number of Students in Each Class\n                   20\n\n                   18\n\n                   16\n\n                   14\n      Number\n         of        12\n      Students     10\n\n                    8\n\n                    6\n\n                    4\n\n                    2\n\n                    0\n                            Baking                    Sports        Chorus    Drama\n                                                            Class\n     a.   What is the value of each square in the bar graph?\n\n\n     b.   Write a number sentence to find how many total students are enrolled in classes.\n\n\n     c.   How many fewer students are in sports than in chorus and baking combined? Write a number\n          sentence to show your thinking.\n\n\n                        Lesson 3:                 Create scaled bar graphs.                                 40\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                       Lesson 3 Problem Set 3 6\n\n\n2.    This bar graph shows Kyle’s savings from February to June. Use a straightedge to help you read the\n      graph.\n                                                                 Kyle’s Savings\n                 50\n\n                 45\n\n                 40\n\n                 35\n\n     Amount in 30\n      Dollars\n               25\n\n                 20\n\n                 15\n\n                 10\n\n                  5\n\n                   0\n                           February                      March        April       May        June\n                                                                 Month\n\n      a.   How much money did Kyle save in May?\n\n      b.   In which months did Kyle save less than $35?\n\n      c.   How much more did Kyle save in June than April? Write a number sentence to show your thinking.\n\n      d.   The money Kyle saved in                                         was half the money he saved in       .\n\n3.    Complete the table below to show the same data given in the bar graph in Problem 2.\n\n            Months                 February\n\n\n           Amount\n        Saved in Dollars\n\n\n                           Lesson 3:                 Create scaled bar graphs.                                      41\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                 Lesson 3 Problem Set 3 6\n\n\nThis bar graph shows the number of minutes Charlotte read from Monday through Friday.\n\n                                                        Charlotte’s Reading Minutes\n\n                        Friday\n\n\n                  Thursday\n\n\n          Day   Wednesday\n\n\n                   Tuesday\n\n\n                   Monday\n\n\n                                  0           10          20     30   40    50   60   70\n                                                               Number of Minutes\n\n\n4.   Use the graph’s lines as a ruler to draw in the intervals on the number line shown above. Then plot and\n     label a point for each day on the number line.\n\n\n5.   Use the graph or number line to answer the following questions.\n\n\n     a.    On which days did Charlotte read for the same number of minutes? How many minutes did\n           Charlotte read on these days?\n\n\n     b.    How many more minutes did Charlotte read on Wednesday than on Friday?\n\n\n                          Lesson 3:                 Create scaled bar graphs.                               42\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M6-TE-1.3.0 -0 8.2 0 15",
+    "answerKeyProblemSetText": "1.    Answer provided; 8 units colored; 6 and a half units colored; 9 units colored\n      a.   2 students\n      b.   9 + 16 + 13 + 18 = 56\n      c.   6; 22 – 16 = 6\n2.    a.   $34\n      b.   February, April, and May\n      c.   $17; $40 – $23 = $17\n      d.   April; March\n3.    February: $30; March: $46; April: $23; May: $34; June: $40\n4.    Intervals drawn correctly on the number line; each day plotted and labeled correctly on number line\n5.    a.   Monday, Tuesday, and Thursday; 50 min\n      b.   30 min",
+    "answerKeyText": "A STORY OF UNITS                                                                Lesson 3 Answer Key 3 6\n\n\nLesson 3\nSprint\nSide A\n1.    12                         12. 42                                     23. 10          34. 8\n2.    18                         13. 48                                     24. 2           35. 7\n3.    24                         14. 54                                     25. 3           36. 9\n4.    30                         15. 60                                     26. 10          37. 6\n5.    6                          16. 8                                      27. 5           38. 8\n6.    2                          17. 7                                      28. 1           39. 66\n7.    3                          18. 9                                      29. 2           40. 11\n8.    5                          19. 6                                      30. 3           41. 72\n9.    1                          20. 10                                     31. 6           42. 12\n10. 4                            21. 5                                      32. 7           43. 84\n11. 36                           22. 1                                      33. 9           44. 14\n\n\nSide B\n1.    6                          12. 36                                     23. 2           34. 7\n2.    12                         13. 42                                     24. 10          35. 8\n3.    18                         14. 48                                     25. 3           36. 9\n4.    24                         15. 54                                     26. 2           37. 6\n5.    30                         16. 7                                      27. 1           38. 7\n6.    3                          17. 6                                      28. 10          39. 66\n7.    2                          18. 8                                      29. 5           40. 11\n8.    4                          19. 10                                     30. 3           41. 72\n9.    1                          20. 9                                      31. 3           42. 12\n10. 5                            21. 1                                      32. 4           43. 78\n11. 60                           22. 5                                      33. 9           44. 13\n\n\n                        Module 6:                 Collecting and Displaying Data                          148\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                  Lesson 3 Answer Key 3 6\n\n\nProblem Set\n1.    Answer provided; 8 units colored; 6 and a half units colored; 9 units colored\n      a.   2 students\n      b.   9 + 16 + 13 + 18 = 56\n      c.   6; 22 – 16 = 6\n2.    a.   $34\n      b.   February, April, and May\n      c.   $17; $40 – $23 = $17\n      d.   April; March\n3.    February: $30; March: $46; April: $23; May: $34; June: $40\n4.    Intervals drawn correctly on the number line; each day plotted and labeled correctly on number line\n5.    a.   Monday, Tuesday, and Thursday; 50 min\n      b.   30 min\n\n\nExit Ticket\na.    Intervals drawn correctly on the number line; each flavor plotted and labeled correctly on the\n      number line\nb.    25 + 35 + 50 = 110\n\n\nHomework\n1.    a.   14\n      b.   4; 18 – 14 = 4\n      c.   18 + 13 = 31 and 17 + 14 = 31; They get the same number of votes.\n2.    a.   Week 4; Week 3\n      b.   15 liters\n      c.   50 L + 40 L = 90 L\n      d.   210 liters\n      e.   60 + 60 + 60 + 60 = 240; More\n3.    Week 1: 55 liters; Week 2: 50 liters; Week 3: 40 liters; Week 4: 65 liters\n\n\n                            Module 6:                 Collecting and Displaying Data                        149\n\n                            ©2015 Great Minds. eureka-math.org\n                            G 3-M6-TE-1.3.0 -0 8.2 0 15",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "tape-diagram",
+      "number-line",
+      "measurement-scale",
+      "ruler-or-length",
+      "table-or-chart",
+      "graph-or-plot",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "tape-diagram": [
+        "the vertical tape diagrams from the Application",
+        "T: Turn and talk to a partner. How is this scaled bar graph similar to the vertical tape diagrams in the"
+      ],
+      "number-line": [
+        "Problem 2: Plot data from a bar graph on a number line.",
+        "T: Let’s use Graph B to create a number line to show the",
+        "same information. There is an empty number line",
+        "column on the grid to make intervals on the number",
+        "S: (Draw intervals.)",
+        "T: Should the intervals on the number line be labeled difficulties, low vision, and others with",
+        "with your partner. number line. To make tick marks, show",
+        "S: The number of fish because the number line shows the Precise alignment is desired, but"
+      ],
+      "measurement-scale": [
+        "the vertical tape diagrams from the Application",
+        "T: Turn and talk to a partner. How is this scaled bar graph similar to the vertical tape diagrams in the",
+        "diagrams is the same.  The way we show the value of the bars changed. In the Application"
+      ],
+      "ruler-or-length": [
+        "4. Use the graph’s lines as a ruler to draw in the intervals on the number line shown above. Then plot and"
+      ],
+      "table-or-chart": [
+        "1. This table shows the number of students in each class.",
+        "Use the table to color the bar graph. The first one has been done for you.",
+        "3. Complete the table below to show the same data given in the bar graph in Problem 2."
+      ],
+      "graph-or-plot": [
+        "Create scaled bar graphs.",
+        "Problem 1: Construct a scaled bar graph.",
+        "T: We can show that by creating a scale on our bar graph. (Write 0 where the axes intersect, and then",
+        "Lesson 3: Create scaled bar graphs. 33",
+        "T: Turn and talk to a partner. How is this scaled bar graph similar to the vertical tape diagrams in the",
+        "T: You are right. This scaled bar graph does not have Template 2",
+        "T: A bar graph can be drawn vertically or horizontally, depending on where you decide to put the",
+        "T: Discuss with a partner how I can show 22 fish on the bar graph."
+      ],
+      "money-model": [
+        "diagrams is the same.  The way we show the value of the bars changed. In the Application",
+        "Dollars",
+        "a. How much money did Kyle save in May?",
+        "b. In which months did Kyle save less than $35?",
+        "d. The money Kyle saved in was half the money he saved in .",
+        "Saved in Dollars"
+      ],
+      "picture-or-drawing": [
+        "Materials: (S) Graph A (Template 1) pictured below, Graph B (Template 2) pictured below, colored pencils,",
+        "T: (Pass out Template 1 pictured to the right.) Draw",
+        "the vertical tape diagrams from the Application",
+        "Erase the unit labels inside the bar, and shade the",
+        "T: Turn and talk to a partner. How is this scaled bar graph similar to the vertical tape diagrams in the",
+        "diagrams is the same.  The way we show the value of the bars changed. In the Application",
+        "pictured to the right.) Let’s create a second bar",
+        "horizontal edge. Then, shade in the correct"
+      ]
+    },
+    "sourceIllustrationRequired": true,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Pass out Template 1 pictured to the right.) Draw the vertical tape diagrams from the Application Problem on the grid. (Allow students time to work.) Outline the bars with your colored pencil. Erase the unit labels inside the bar, and shade the entire bar with your colored pencil. (Model an example.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We can show that by creating a scale on our bar graph. (Write 0 where the axes intersect, and then write 5 near the first line on the vertical axis. Point to the next line up on the grid.) Turn and talk to MP.6 a partner. What number should I write here? How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "Ten because you are counting by fives.  Ten because each square has a value of 5, and 2 fives is 10. ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 3 3 6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Count by fives to complete the rest of the scale on the graph. MP.6 S: (Count and write.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label the scale Number of Fish. (Model.) What do the labels under each bar tell you?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the title Number of Fish at Sal’s Pet Store. (Model.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Turn and talk to a partner. How is this scaled bar graph similar to the vertical tape diagrams in the Application Problem? How is it different?"
+      },
+      {
+        "speaker": "students",
+        "text": "They both show the number of fish in Sal’s pet store.  The value of the bars and the tape diagrams is the same.  The way we show the value of the bars changed. In the Application Problem, we labeled each unit. In this graph, we made a scale to show the value."
+      },
+      {
+        "speaker": "teacher",
+        "text": "You are right. This scaled bar graph does not have Template 2 labeled units, but it has a scale we can read to find the values of the bars. (Pass out Template 2, pictured to the right.) Let’s create a second bar graph from the data. What do you notice about the labels on this graph?"
+      },
+      {
+        "speaker": "students",
+        "text": "They are switched!  Yeah, the tank labels are on the side, and the Number of Fish label is now at the bottom."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Count by fives to label your scale along the horizontal edge. Then, shade in the correct number of squares for each tank. Will your bars be horizontal or vertical?"
+      },
+      {
+        "speaker": "students",
+        "text": "Horizontal. (Label and shade.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Take Graph A and turn it so the paper is horizontal. Compare it with Graph B. What do you notice?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "A bar graph can be drawn vertically or horizontally, depending on where you decide to put the labels, but the information stays the same as long as the scales are the same."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Marcy buys 3 fish from Tank C. Write a subtraction sentence to show how many fish are left in Tank C."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 25 – 3 = 22.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Discuss with a partner how I can show 22 fish on the bar graph."
+      },
+      {
+        "speaker": "teacher",
+        "text": "I am going to erase some of the Tank C bar. Tell me to stop when you think it shows 22 fish. (Erase until students say to stop.) Even though our scale counts by fives, we can show other values for the bars by drawing the bars in between the numbers on the scale."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use Graph B to create a number line to show the same information. There is an empty number line below the graph. Line up a straightedge with each MULTIPLE MEANS column on the grid to make intervals on the number line that match the scale on the graph. (Model.) OF ACTION AND EXPRESSION:"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw intervals.) Assist students with perceptual"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Should the intervals on the number line be labeled difficulties, low vision, and others with with the number of fish or with the tanks? Discuss plotting corresponding points on the with your partner. number line. To make tick marks, show"
+      },
+      {
+        "speaker": "students",
+        "text": "The number of fish because the number line shows the Precise alignment is desired, but scale. comfort, confidence, accurate"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label the intervals. (Allow students time to work.) presentation of data, and a frustration- Now, work with a partner to plot and label the number free experience are more valuable. of fish in each tank on the number line."
+      },
+      {
+        "speaker": "students",
+        "text": "(Plot and label.)"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 33 (debrief) ---\nA STORY OF UNITS                                                                      Lesson 3 3 6\n\n\nLesson 3\nObjective: Create scaled bar graphs.\n\nSuggested Lesson Structure\n\n Fluency Practice                 (12 minutes)\n Application Problem              (5 minutes)\n Concept Development              (33 minutes)\n Student Debrief                  (10 minutes)\n   Total Time                      (60 minutes)\n\n\nFluency Practice (12 minutes)\n\n How Many Units of 6 3.OA.1                                      (3 minutes)\n Sprint: Multiply or Divide by 6 3.OA.4                          (9 minutes)\n\nHow Many Units of 6 (3 minutes)\nNote: This activity reviews multiplication and division with units of 6.\nDirect students to count forward and backward by sixes to 60, occasionally changing the direction of the\ncount.\n    T:   How many units of 6 are in 12?\n    S:   2 units of 6.\n    T:   Give me the division sentence with the number of sixes as the quotient.\n    S:   12 ÷ 6 = 2.\nContinue the process with 24, 36, and 48.\n\nSprint: Multiply or Divide by 6 (9 minutes)\nMaterials: (S) Multiply or Divide by 6 Sprint\n\nNote: This Sprint supports multiplication and division using units of 6.\n\n\n                        Lesson 3:                 Create scaled bar graphs.                                32\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 34 (concept-development) ---\nA STORY OF UNITS                                                                                  Lesson 3 3 6\n\n\n  Application Problem (5 minutes)                                                  Number of Fish in Sal’s Pet Store\n\n  The vertical tape diagrams show the number of fish in Sal’s Pet                                    5\n  Store.\n                                                                                                     5                5\n       a.   Find the total number of fish in Tank C.\n            Show your work.                                                       5                  5                5\n       b.   Tank B has a total of 30 fish. Draw the tape diagram                  5                  5       5        5\n            for Tank B.\n       c.   How many more fish are in Tank B than in Tanks A and                  5                  5       5        5\n            D combined?\n                                                                                 Tank     Tank    Tank      Tank     Tank\n                                                                                  A        B       C         D         E\n\n\n  Note: This problem reviews reading vertical tape diagrams with a unit size larger than 1. It also anticipates\n  the Concept Development, where students construct a scaled bar graph from the data in this problem.\n\n\n  Concept Development (33 minutes)\n  Materials: (S) Graph A (Template 1) pictured below, Graph B (Template 2) pictured below, colored pencils,\n             straightedge\n                                                                                      Template 1 with Student Work\n  Problem 1: Construct a scaled bar graph.\n       T:   (Pass out Template 1 pictured to the right.) Draw\n            the vertical tape diagrams from the Application\n            Problem on the grid. (Allow students time to\n            work.) Outline the bars with your colored pencil.\n            Erase the unit labels inside the bar, and shade the\n            entire bar with your colored pencil. (Model an\n            example.)\n       T:   What does each square on the grid represent?\n       S:   5 fish!                                                                           Tank\n\n       T:   We can show that by creating a scale on our bar graph. (Write 0 where the axes intersect, and then\n            write 5 near the first line on the vertical axis. Point to the next line up on the grid.) Turn and talk to\nMP.6        a partner. What number should I write here? How do you know?\n       S:   Ten because you are counting by fives.  Ten because each square has a value of 5, and 2 fives is\n            10.\n\n\n                           Lesson 3:                 Create scaled bar graphs.                                              33\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 35 (application-problem) ---\nA STORY OF UNITS                                                                        Lesson 3 3 6\n\n\n     T:   Count by fives to complete the rest of the scale on the graph.\nMP.6 S:   (Count and write.)\n     T:   What do the numbers on the scale tell you?\n     S:   The number of fish!\n     T:   Label the scale Number of Fish. (Model.) What do the labels under each bar tell you?\n     S:   Which tank the bar is for!\n     T:   What is a good title for this graph?\n     S:   Number of Fish at Sal’s Pet Store.\n     T:   Write the title Number of Fish at Sal’s Pet Store. (Model.)\n     T:   Turn and talk to a partner. How is this scaled bar graph similar to the vertical tape diagrams in the\n          Application Problem? How is it different?\n     S:   They both show the number of fish in Sal’s pet store.  The value of the bars and the tape\n          diagrams is the same.  The way we show the value of the bars changed. In the Application\n          Problem, we labeled each unit. In this graph, we made a scale to show the value.\n     T:   You are right. This scaled bar graph does not have                        Template 2\n          labeled units, but it has a scale we can read to find\n          the values of the bars. (Pass out Template 2,\n          pictured to the right.) Let’s create a second bar\n          graph from the data. What do you notice about\n          the labels on this graph?\n     S:   They are switched!  Yeah, the tank labels are on\n          the side, and the Number of Fish label is now at the\n          bottom.\n     T:   Count by fives to label your scale along the\n          horizontal edge. Then, shade in the correct\n          number of squares for each tank. Will your bars be\n          horizontal or vertical?\n     S:   Horizontal. (Label and shade.)\n     T:   Take Graph A and turn it so the paper is horizontal.\n          Compare it with Graph B. What do you notice?\n     S:   They are the same!\n     T:   A bar graph can be drawn vertically or horizontally, depending on where you decide to put the\n          labels, but the information stays the same as long as the scales are the same.\n     T:   Marcy buys 3 fish from Tank C. Write a subtraction sentence to show how many fish are left in\n          Tank C.\n     S:   (Write 25 – 3 = 22.)\n     T:   How many fish are left in Tank C?\n     S:   22 fish!\n     T:   Discuss with a partner how I can show 22 fish on the bar graph.\n     S:   (Discuss.)\n\n\n                         Lesson 3:                 Create scaled bar graphs.                                  34\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 36 (lesson-instruction) ---\nA STORY OF UNITS                                                                                  Lesson 3 3 6\n\n\n    T:   I am going to erase some of the Tank C bar. Tell me to stop when you think it shows 22 fish. (Erase\n         until students say to stop.) Even though our scale counts by fives, we can show other values for the\n         bars by drawing the bars in between the numbers on the scale.\n\nProblem 2: Plot data from a bar graph on a number line.\n    T:   Let’s use Graph B to create a number line to show the\n         same information. There is an empty number line\n                                                                                       NOTES ON\n         below the graph. Line up a straightedge with each\n                                                                                       MULTIPLE MEANS\n         column on the grid to make intervals on the number\n         line that match the scale on the graph. (Model.)                              OF ACTION AND\n                                                                                       EXPRESSION:\n    S:   (Draw intervals.)\n                                                                             Assist students with perceptual\n    T:   Should the intervals on the number line be labeled                  difficulties, low vision, and others with\n         with the number of fish or with the tanks? Discuss                  plotting corresponding points on the\n         with your partner.                                                  number line. To make tick marks, show\n    S:   The number of fish.                                                 students how to hold and align the\n                                                                             straightedge with the scale at the\n    T:   Why? Talk to your partner.\n                                                                             bottom of the graph, not the bars.\n    S:   The number of fish because the number line shows the                Precise alignment is desired, but\n         scale.                                                              comfort, confidence, accurate\n    T:   Label the intervals. (Allow students time to work.)                 presentation of data, and a frustration-\n         Now, work with a partner to plot and label the number               free experience are more valuable.\n         of fish in each tank on the number line.\n    S:   (Plot and label.)\n    T:   Talk to a partner. Compare how the information                        Number of Fish at Sal’s Pet Store\n         is shown on the bar graph and the number line.\n    S:   The tick marks on the number line are in the\n         same places as the graph’s scale.  The spaces\n         in between the tick marks on the number line are\n         like the unit squares on the bar graph.  On the\n         number line, the tanks are just dots, not whole       Tank\n         bars, so the labels look a little different, too.\n    T:   We can read different information from the 2\n         representations. Compare the information we\n         can read.\n    S:   With a bar graph, it is easy to see the order from\n         least to most fish just by looking at the size of the\n         bars.  The number line shows you how much,\n         too, but you know which is the most by looking\n         for the biggest number on the line, not by looking\n         for the biggest bar.\n    T:   Yes. A bar graph allows us to compare easily.\n         A number line plots the information.\n\n\n                       Lesson 3:                 Create scaled bar graphs.                                               35\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 37 (debrief) ---\nA STORY OF UNITS                                                                             Lesson 3 3 6\n\n\nProblem Set (10 minutes)\n                                                                                      NOTES ON\nStudents should do their personal best to complete the Problem\n                                                                                      MULTIPLE MEANS\nSet within the allotted 10 minutes. For some classes, it may be\n                                                                                      OF REPRESENTATION:\nappropriate to modify the assignment by specifying which\nproblems they work on first. Some problems do not specify a                   Students working below grade level\nmethod for solving. Students should solve these problems using                and others may benefit from the\n                                                                              following scaffolds for reading graphs\nthe RDW approach used for Application Problems.\n                                                                              on the Problem Set:\nFor this Problem Set, the third page may be used as an                           Facilitate a guided practice of\nextension for students who finish early.                                          estimating and accurately\n                                                                                  determining challenging bar values.\n                                                                                  Start with smaller numbers and\nStudent Debrief (10 minutes)                                                      labeled increments, gradually\n                                                                                  increasing the challenge.\n                                                                                 Draw, or have students draw, a line\nLesson Objective: Create scaled bar graphs.                                       (in a color other than black) aligning\n                                                                                  the top of the bar with its\nThe Student Debrief is intended to invite reflection and active\n                                                                                  corresponding measure on the\nprocessing of the total lesson experience.                                        scale.\nInvite students to review their solutions for the Problem Set.                   Allow students to record the value\nThey should check work by comparing answers with a partner                        inside of the bar—in increments as\n                                                                                  a tape diagram or as a whole—until\nbefore going over answers as a class. Look for misconceptions                     they become proficient.\nor misunderstandings that can be addressed in the Debrief.\nGuide students in a conversation to debrief the Problem Set\nand process the lesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Discuss your simplifying strategy, or a simplifying\n         strategy you could have used, for Problem 1(b).\n        Share number sentences for Problem 1(c).\n        How did the straightedge help you read the bar\n         graph in Problem 2?\n        Share your number line for Problem 4. How did\n         the scale on the bar graph help you draw the\n         intervals on the number line? What does each\n         interval on the number line represent?\n        Did you use the bar graph or the number line to\n         answer the questions in Problem 5? Explain your\n         choice.\n        Compare vertical tape diagrams to scaled bar\n         graphs. (If necessary, clarify the phrase scaled\n         bar graph.) What is different? What is the\n         same?\n\n\n                        Lesson 3:                 Create scaled bar graphs.                                                36\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 38 (debrief) ---\nA STORY OF UNITS                                                          Lesson 3 3 6\n\n\n       Does the information change when a bar graph is\n        drawn horizontally or vertically with the same\n        scale? Why or why not?\n       What is the purpose of a label on a bar graph?\n       How is a bar graph’s scale more precise than a\n        picture graph’s?\n       How does the fluency activity, Group Counting on\n        a Vertical Number Line, relate to reading a bar\n        graph?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                       Lesson 3:                 Create scaled bar graphs.             37\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 39 (sprint) ---\nA STORY OF UNITS                                                                         Lesson 3 Sprint 3 6\n\n\nA\n                                                                                                    Number Correct: _______\n\nMultiply or Divide by 6\n\n 1.                 2×6=                                                           23.     × 6 = 60\n\n 2.                 3×6=                                                           24.     × 6 = 12\n\n 3.                 4×6=                                                           25.     × 6 = 18\n\n 4.                 5×6=                                                           26.   60 ÷ 6 =\n\n 5.                 1×6=                                                           27.   30 ÷ 6 =\n\n 6.                 12 ÷ 6 =                                                       28.   6÷6=\n\n 7.                 18 ÷ 6 =                                                       29.   12 ÷ 6 =\n\n 8.                 30 ÷ 6 =                                                       30.   18 ÷ 6 =\n\n 9.                 6÷6=                                                           31.     × 6 = 36\n\n 10.                24 ÷ 6 =                                                       32.     × 6 = 42\n\n 11.                6×6=                                                           33.     × 6 = 54\n\n 12.                7×6=                                                           34.     × 6 = 48\n\n 13.                8×6=                                                           35.   42 ÷ 6 =\n\n 14.                9×6=                                                           36.   54 ÷ 6 =\n\n 15.                10 × 6 =                                                       37.   36 ÷ 6 =\n\n 16.                48 ÷ 6 =                                                       38.   48 ÷ 6 =\n\n 17.                42 ÷ 6 =                                                       39.   11 × 6 =\n\n 18.                54 ÷ 6 =                                                       40.   66 ÷ 6 =\n\n 19.                36 ÷ 6 =                                                       41.   12 × 6 =\n\n 20.                60 ÷ 6 =                                                       42.   72 ÷ 6 =\n\n 21.                     × 6 = 30                                                  43.   14 × 6 =\n\n 22.                     ×6=6                                                      44.   84 ÷ 6 =\n\n\n                             Lesson 3:                 Create scaled bar graphs.                                        38\n\n                             ©2015 Great Minds. eureka-math.org\n                             G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 40 (sprint) ---\nA STORY OF UNITS                                                                         Lesson 3 Sprint 3 6\n\n\nB\n                                                                                                    Number Correct: _______\n                                                                                                      Improvement: _______\nMultiply or Divide by 6\n\n 1.                 1×6=                                                           23.     × 6 = 12\n\n 2.                 2×6=                                                           24.     × 6 = 60\n\n 3.                 3×6=                                                           25.     × 6 = 18\n\n 4.                 4×6=                                                           26.   12 ÷ 6 =\n\n 5.                 5×6=                                                           27.   6÷6=\n\n 6.                 18 ÷ 6 =                                                       28.   60 ÷ 6 =\n\n 7.                 12 ÷ 6 =                                                       29.   30 ÷ 6 =\n\n 8.                 24 ÷ 6 =                                                       30.   18 ÷ 6 =\n\n 9.                 6÷6=                                                           31.     × 6 = 18\n\n 10.                30 ÷ 6 =                                                       32.     × 6 = 24\n\n 11.                10 × 6 =                                                       33.     × 6 = 54\n\n 12.                6×6=                                                           34.     × 6 = 42\n\n 13.                7×6=                                                           35.   48 ÷ 6 =\n\n 14.                8×6=                                                           36.   54 ÷ 6 =\n\n 15.                9×6=                                                           37.   36 ÷ 6 =\n\n 16.                42 ÷ 6 =                                                       38.   42 ÷ 6 =\n\n 17.                36 ÷ 6 =                                                       39.   11 × 6 =\n\n 18.                48 ÷ 6 =                                                       40.   66 ÷ 6 =\n\n 19.                60 ÷ 6 =                                                       41.   12 × 6 =\n\n 20.                54 ÷ 6 =                                                       42.   72 ÷ 6 =\n\n 21.                     ×6=6                                                      43.   13 × 6 =\n\n 22.                     × 6 = 30                                                  44.   78 ÷ 6 =\n\n\n                             Lesson 3:                 Create scaled bar graphs.                                        39\n\n                             ©2015 Great Minds. eureka-math.org\n                             G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 41 (problem-set) ---\nA STORY OF UNITS                                                                 Lesson 3 Problem Set 3 6\n\n\nName                                                                                  Date\n\n1.   This table shows the number of students in each class.\n\n                                  Number of Students in Each Class\n                                  Class           Number of Students\n                                 Baking                     9\n                                 Sports                     16\n                                 Chorus                     13\n                                 Drama                      18\n\n     Use the table to color the bar graph. The first one has been done for you.\n\n                                    Number of Students in Each Class\n                   20\n\n                   18\n\n                   16\n\n                   14\n      Number\n         of        12\n      Students     10\n\n                    8\n\n                    6\n\n                    4\n\n                    2\n\n                    0\n                            Baking                    Sports        Chorus    Drama\n                                                            Class\n     a.   What is the value of each square in the bar graph?\n\n\n     b.   Write a number sentence to find how many total students are enrolled in classes.\n\n\n     c.   How many fewer students are in sports than in chorus and baking combined? Write a number\n          sentence to show your thinking.\n\n\n                        Lesson 3:                 Create scaled bar graphs.                                 40\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 42 (problem-set) ---\nA STORY OF UNITS                                                                       Lesson 3 Problem Set 3 6\n\n\n2.    This bar graph shows Kyle’s savings from February to June. Use a straightedge to help you read the\n      graph.\n                                                                 Kyle’s Savings\n                 50\n\n                 45\n\n                 40\n\n                 35\n\n     Amount in 30\n      Dollars\n               25\n\n                 20\n\n                 15\n\n                 10\n\n                  5\n\n                   0\n                           February                      March        April       May        June\n                                                                 Month\n\n      a.   How much money did Kyle save in May?\n\n      b.   In which months did Kyle save less than $35?\n\n      c.   How much more did Kyle save in June than April? Write a number sentence to show your thinking.\n\n      d.   The money Kyle saved in                                         was half the money he saved in       .\n\n3.    Complete the table below to show the same data given in the bar graph in Problem 2.\n\n            Months                 February\n\n\n           Amount\n        Saved in Dollars\n\n\n                           Lesson 3:                 Create scaled bar graphs.                                      41\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 43 (problem-set) ---\nA STORY OF UNITS                                                                 Lesson 3 Problem Set 3 6\n\n\nThis bar graph shows the number of minutes Charlotte read from Monday through Friday.\n\n                                                        Charlotte’s Reading Minutes\n\n                        Friday\n\n\n                  Thursday\n\n\n          Day   Wednesday\n\n\n                   Tuesday\n\n\n                   Monday\n\n\n                                  0           10          20     30   40    50   60   70\n                                                               Number of Minutes\n\n\n4.   Use the graph’s lines as a ruler to draw in the intervals on the number line shown above. Then plot and\n     label a point for each day on the number line.\n\n\n5.   Use the graph or number line to answer the following questions.\n\n\n     a.    On which days did Charlotte read for the same number of minutes? How many minutes did\n           Charlotte read on these days?\n\n\n     b.    How many more minutes did Charlotte read on Wednesday than on Friday?\n\n\n                          Lesson 3:                 Create scaled bar graphs.                               42\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 44 (exit-ticket) ---\nA STORY OF UNITS                                                                   Lesson 3 Exit Ticket 3 6\n\n\nName                                                                                 Date\nThe bar graph below shows the students’ favorite ice cream flavors.\n                                                      Favorite Ice Cream Flavors\n\n             Butter Pecan\n\n\n                Chocolate\n\n\n Flavor\n               Strawberry\n\n\n                   Vanilla\n\n\n                             0                  10           20           30   40     50    60\n\n                                                                Number of Students\n\n\n    a.    Use the graph’s lines as a ruler to draw intervals on the number line shown above. Then plot and\n          label a point for each flavor on the number line.\n\n\n    b.    Write a number sentence to show the total number of students who voted for butter pecan, vanilla,\n          and chocolate.\n\n\n                        Lesson 3:                 Create scaled bar graphs.                                  43\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 45 (homework) ---\nA STORY OF UNITS                                                                        Lesson 3 Homework 3 6\n\n\nName                                                                                         Date\n\n1.   This table shows the favorite subjects of third graders at Cayuga Elementary.\n\n                                             Favorite Subjects\n                                     Subject         Number of Student Votes\n                                      Math                     18\n                                       ELA                     13\n                                     History                   17\n                                     Science                    ?\n\n     Use the table to color the bar graph.\n                                                           Favorite Subjects\n                        20\n\n                        18\n\n                        16\n\n                        14\n\n                        12\n       Number           10\n      of Student\n         Votes          8\n\n                         6\n\n                         4\n\n                        2\n\n                         0\n                                       Math                  ELA         History   Science\n                                                              Subject\n\n\n     a.   How many students voted for science?\n\n     b.   How many more students voted for math than for science? Write a number sentence to show your\n          thinking.\n\n     c.   Which gets more votes, math and ELA together or history and science together? Show your work.\n\n\n                             Lesson 3:                 Create scaled bar graphs.                                44\n\n                             ©2015 Great Minds. eureka-math.org\n                             G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 46 (homework) ---\nA STORY OF UNITS                                                                      Lesson 3 Homework 3 6\n\n\n2.   This bar graph shows the number of liters of water Skyler uses this month.\n\n                                               Liters of Water Skyler Uses\n\n                        Week 1\n\n\n                        Week 2\n          Week\n                        Week 3\n\n\n                    Week 4\n\n\n                                  0         10           20   30     40     50   60   70\n                                                         Number of Liters\n\n\n     a.   During which week does Skyler use the most water?\n          The least?\n\n\n     b.   How many more liters does Skyler use in Week 4 than Week 2?\n\n\n     c.   Write a number sentence to show how many liters of water Skyler uses during Weeks 2 and 3\n          combined.\n\n\n     d.   How many liters does Skyler use in total?\n\n\n     e.   If Skyler uses 60 liters in each of the 4 weeks next month, will she use more or less than she uses this\n          month? Show your work.\n\n\n                           Lesson 3:                 Create scaled bar graphs.                                 45\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 47 (homework) ---\nA STORY OF UNITS                                                                  Lesson 3 Homework 3 6\n\n\n3.   Complete the table below to show the data displayed in the bar graph in Problem 2.\n\n                                                         Liters of Water Skyler Uses\n                                                      Week                    Liters of Water\n\n\n                        Lesson 3:                 Create scaled bar graphs.                               46\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 48 (template) ---\nA STORY OF UNITS                                                              Lesson 3 Template 1 3 6\n\n\n                 Tank A                        Tank B                Tank C   Tank D     Tank E\n\n\n                                                                   Tank\n\n\ngraph A\n\n\n                     Lesson 3:                 Create scaled bar graphs.                             47\n\n                     ©2015 Great Minds. eureka-math.org\n                     G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 49 (template) ---\nA STORY OF UNITS                                                                   Lesson 3 Template 2 3 6\n\n\n                                                       Number of Fish at Sal’s Pet Store\n\n\n           Tank E\n\n\n           Tank D\n\n\nTank\n\n           Tank C\n\n\n           Tank B\n\n\n           Tank A\n\n\n                                                                  Number of Fish\n\n\n graph B\n\n\n                      Lesson 3:                 Create scaled bar graphs.                                  48\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M6-TE-1.3.0 -0 8.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 41,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                 Lesson 3 Problem Set 3 6\n\n\nName                                                                                  Date\n\n1.   This table shows the number of students in each class.\n\n                                  Number of Students in Each Class\n                                  Class           Number of Students\n                                 Baking                     9\n                                 Sports                     16\n                                 Chorus                     13\n                                 Drama                      18\n\n     Use the table to color the bar graph. The first one has been done for you.\n\n                                    Number of Students in Each Class\n                   20\n\n                   18\n\n                   16\n\n                   14\n      Number\n         of        12\n      Students     10\n\n                    8\n\n                    6\n\n                    4\n\n                    2\n\n                    0\n                            Baking                    Sports        Chorus    Drama\n                                                            Class\n     a.   What is the value of each square in the bar graph?\n\n\n     b.   Write a number sentence to find how many total students are enrolled in classes.\n\n\n     c.   How many fewer students are in sports than in chorus and baking combined? Write a number\n          sentence to show your thinking.\n\n\n                        Lesson 3:                 Create scaled bar graphs.                                 40\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 42,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                       Lesson 3 Problem Set 3 6\n\n\n2.    This bar graph shows Kyle’s savings from February to June. Use a straightedge to help you read the\n      graph.\n                                                                 Kyle’s Savings\n                 50\n\n                 45\n\n                 40\n\n                 35\n\n     Amount in 30\n      Dollars\n               25\n\n                 20\n\n                 15\n\n                 10\n\n                  5\n\n                   0\n                           February                      March        April       May        June\n                                                                 Month\n\n      a.   How much money did Kyle save in May?\n\n      b.   In which months did Kyle save less than $35?\n\n      c.   How much more did Kyle save in June than April? Write a number sentence to show your thinking.\n\n      d.   The money Kyle saved in                                         was half the money he saved in       .\n\n3.    Complete the table below to show the same data given in the bar graph in Problem 2.\n\n            Months                 February\n\n\n           Amount\n        Saved in Dollars\n\n\n                           Lesson 3:                 Create scaled bar graphs.                                      41\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M6-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 43,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                 Lesson 3 Problem Set 3 6\n\n\nThis bar graph shows the number of minutes Charlotte read from Monday through Friday.\n\n                                                        Charlotte’s Reading Minutes\n\n                        Friday\n\n\n                  Thursday\n\n\n          Day   Wednesday\n\n\n                   Tuesday\n\n\n                   Monday\n\n\n                                  0           10          20     30   40    50   60   70\n                                                               Number of Minutes\n\n\n4.   Use the graph’s lines as a ruler to draw in the intervals on the number line shown above. Then plot and\n     label a point for each day on the number line.\n\n\n5.   Use the graph or number line to answer the following questions.\n\n\n     a.    On which days did Charlotte read for the same number of minutes? How many minutes did\n           Charlotte read on these days?\n\n\n     b.    How many more minutes did Charlotte read on Wednesday than on Friday?\n\n\n                          Lesson 3:                 Create scaled bar graphs.                               42\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M6-TE-1.3.0 -0 8.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 149,
+        "text": "A STORY OF UNITS                                                                Lesson 3 Answer Key 3 6\n\n\nLesson 3\nSprint\nSide A\n1.    12                         12. 42                                     23. 10          34. 8\n2.    18                         13. 48                                     24. 2           35. 7\n3.    24                         14. 54                                     25. 3           36. 9\n4.    30                         15. 60                                     26. 10          37. 6\n5.    6                          16. 8                                      27. 5           38. 8\n6.    2                          17. 7                                      28. 1           39. 66\n7.    3                          18. 9                                      29. 2           40. 11\n8.    5                          19. 6                                      30. 3           41. 72\n9.    1                          20. 10                                     31. 6           42. 12\n10. 4                            21. 5                                      32. 7           43. 84\n11. 36                           22. 1                                      33. 9           44. 14\n\n\nSide B\n1.    6                          12. 36                                     23. 2           34. 7\n2.    12                         13. 42                                     24. 10          35. 8\n3.    18                         14. 48                                     25. 3           36. 9\n4.    24                         15. 54                                     26. 2           37. 6\n5.    30                         16. 7                                      27. 1           38. 7\n6.    3                          17. 6                                      28. 10          39. 66\n7.    2                          18. 8                                      29. 5           40. 11\n8.    4                          19. 10                                     30. 3           41. 72\n9.    1                          20. 9                                      31. 3           42. 12\n10. 5                            21. 1                                      32. 4           43. 78\n11. 60                           22. 5                                      33. 9           44. 13\n\n\n                        Module 6:                 Collecting and Displaying Data                          148\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 150,
+        "text": "A STORY OF UNITS                                                                  Lesson 3 Answer Key 3 6\n\n\nProblem Set\n1.    Answer provided; 8 units colored; 6 and a half units colored; 9 units colored\n      a.   2 students\n      b.   9 + 16 + 13 + 18 = 56\n      c.   6; 22 – 16 = 6\n2.    a.   $34\n      b.   February, April, and May\n      c.   $17; $40 – $23 = $17\n      d.   April; March\n3.    February: $30; March: $46; April: $23; May: $34; June: $40\n4.    Intervals drawn correctly on the number line; each day plotted and labeled correctly on number line\n5.    a.   Monday, Tuesday, and Thursday; 50 min\n      b.   30 min\n\n\nExit Ticket\na.    Intervals drawn correctly on the number line; each flavor plotted and labeled correctly on the\n      number line\nb.    25 + 35 + 50 = 110\n\n\nHomework\n1.    a.   14\n      b.   4; 18 – 14 = 4\n      c.   18 + 13 = 31 and 17 + 14 = 31; They get the same number of votes.\n2.    a.   Week 4; Week 3\n      b.   15 liters\n      c.   50 L + 40 L = 90 L\n      d.   210 liters\n      e.   60 + 60 + 60 + 60 = 240; More\n3.    Week 1: 55 liters; Week 2: 50 liters; Week 3: 40 liters; Week 4: 65 liters\n\n\n                            Module 6:                 Collecting and Displaying Data                        149\n\n                            ©2015 Great Minds. eureka-math.org\n                            G 3-M6-TE-1.3.0 -0 8.2 0 15"
+      }
+    ]
+  }
+}

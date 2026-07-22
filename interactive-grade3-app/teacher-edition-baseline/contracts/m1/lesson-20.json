@@ -1,0 +1,515 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m1-l20",
+  "moduleId": "m1",
+  "lessonNumber": 20,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf",
+    "teacherEditionSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
+    "teacherEditionBytes": 13572842,
+    "lessonPdfPages": {
+      "start": 255,
+      "end": 266
+    },
+    "problemSetPdfPages": [
+      262,
+      263
+    ],
+    "exitTicketPdfPages": [
+      264
+    ],
+    "homeworkPdfPages": [
+      265,
+      266
+    ],
+    "answerKeyPdfPages": [
+      326,
+      327
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m1-student/workbook-page-081.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m1-teacher/page-262.png",
+      "/source-pages/m1-teacher/page-263.png",
+      "/source-pages/m1-teacher/page-326.png",
+      "/source-pages/m1-teacher/page-327.png"
+    ]
+  },
+  "objective": "Solve two-step word problems involving multiplication and division, and assess the reasonableness of answers.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.\n\n\n                       Lesson 20:          Solve two-step word problems involving multiplication and division,                      254\n                                           and assess the reasonableness of answers.\n\n                       ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                              Lesson 20 3 1",
+    "conceptDevelopmentText": "NOTES ON\n                                                                                                         MULTIPLE MEANS\nMaterials: (S) Personal white board\n                                                                                                         OF REPRESENTATION:\nProblem 1: Model a two-step problem with a tape diagram.                                        The vignette follows the I do, we do,\n                                                                                                you do process to guide students\nWrite or project the following story: Red, orange, and blue                                     through the two-step word problems.\nscarves are on sale for $4 each. Nina buys 2 scarves of each                                    Adjust the level of support for each\ncolor. She also buys a hat that costs $4. How much does she                                     problem according to the needs\nspend altogether?                                                                               students demonstrate. Consider\n                                                                                                working with a small group to solve\n    T:   Compare this new problem with the Application\n                                                                                                Problem 3.\n         Problem you just solved. What is different?\n    S:   The question is still the same, but the new problem\n         adds the cost of a hat to the total.\n    T:   Turn and talk to your partner: How can we use our answer from the Application Problem to help solve\n         the new problem?\n    S:   In our Application Problem, we found the cost of the 6 scarves.  We just have to add the cost of the\n         hat to the total.\n    T:   (Draw tape diagram.) This tape diagram shows the\n         Application Problem.\n    T:   Each of these boxes is 1 unit. Tell me what 1 unit\n         represents.\n    S:   1 scarf.\n    T:   What is the value of 1 unit?\n    S:   $4.\n    T:   What do the 6 units represent?\n    S:   6 scarves.\n    T:   How did you label the 6 units?\n    S:   With a question mark.\n    T:   What equation did you use to find the total of all the items?\n    S:   6 × $4 = $24.\n    T:   Watch as I add to our model to represent the new problem.\n    T:   (Draw and label diagram as shown.) Now, I add the cost of the hat, $4, to the total cost of the scarves,\n         $24, (write $4 + $24 = ____), which is…?\n    S:   $28.\n    T:   How many units did we add together to find the total of both items?\n    S:   7 units.  1 unit + 6 units.\n    T:   Tell your partner a multiplication sentence you could use to find the total cost of the scarves and hat\n         without finding the value of the scarves first.\n    S:   7 units of $4 = $28.  7 × $4 = $28.\n\n\n                       Lesson 20:           Solve two-step word problems involving multiplication and division,                         252\n                                            and assess the reasonableness of answers.\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                               Lesson 20 3 1\n\n\nProblem 2: Use the tape diagram to solve a two-step problem.\nWrite or project the following story: Mr. Lim buys 7 plants for his garden. Each plant costs $5. The next day, he\nbuys a rose bush that also costs $5. How much more do the 7 plants cost than the rose bush?\n    T:   What information is known from reading the story?\n    S:   The cost of each plant is $5. We also know the rose bush costs $5.\n    T:   What information is unknown?\n    S:   We don’t know the total cost of the 7 plants, so we don’t know how much more the plants cost than\n         the rose bush.\n    T:   Notice there are two unknowns in our problem.\n         Let’s first draw and label a tape diagram to model\n         the unknown as the cost of the 7 plants.\n    S:   (Draw and label tape diagram.)\n    T:   Tell me how to find the cost of the plants.\n    S:   We multiply 7 × $5.\n    T:   The plants cost…?\n    S:   $35.\n    T:   Have we answered the question?\n    S:   No.\n    T:   What is the question we are trying to answer?\n    S:   How much more the plants cost than the rose\n         bush.\n    T:   (Label the second question mark.) Tell your\n         partner what strategy you might use to answer the\n         question.\n    S:   I might subtract the cost of the rose bush from the total cost of the 7 plants.  I might do 6 × $5\n         because the plants have 6 units more than the rose bush.  I’ll skip-count the 6 extra fives on the\n         plants diagram.\n    T:   Write an equation and solve the problem on your personal white board.\n    S:   (Possibly write: $35 – $5 = $30, 6 × $5 = $30, $5 + $5 + $5 + $5 + $5 + $5 = $30.)\n    T:   Reread the question. Have we answered it?\n    S:   (Reread and confirm.)\n    T:   Is $30 a reasonable answer? Why or why not?\n    S:   Yes, 7 plants are expensive! $5 is a lot less than $35, so $30 less makes sense.  I checked with\n         addition. $30 + $5 = $35.\n    T:   (Erase the first diagram and the $35 that marks the total value on the second diagram.) We first drew\n         two models because the problem has two steps. How does this model represent the whole problem on\n         its own?\n    S:   (Discuss).\n    T:   We know that 1 unit is $5. How many units represent the additional cost of the plants?\n\n\n                       Lesson 20:           Solve two-step word problems involving multiplication and division,              253\n                                            and assess the reasonableness of answers.\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                              Lesson 20 3 1\n\n\n    S:   6 units.\n    T:   Given what you know, is it necessary to find the total cost of the plants? Why or why not?\n    S:   You can just do 6 × $5 without having to know about $35.\n    T:   Explain to your partner the difference between the two ways of solving this problem.\n\nProblem 3: Work with a partner to model and solve a two-step problem.\nWrite or project the following story: Ten children equally share 40 almonds. How many almonds will\n3 children get?\n    T:   What information is known?\n    S:   The total amount of almonds and the number of\n         children.                                                                                      NOTES ON\n    T:   What is unknown?                                                                               MULTIPLE MEANS\n    S:   How many almonds 3 children get.                                                               OF ENGAGEMENT:\n    T:   In order to solve, what do you need to find first?                                    Scaffold Problem 3 by providing a tape\n                                                                                               diagram with no labels. This allows\n    S:   The amount of almonds 1 child gets.\n                                                                                               students to see the problem and\n    T:   With a partner, model and solve the problem.                                          analyze the steps they need to take to\n         Make sure to reread the question to see if you have                                   solve the problem.\n         answered the question. Then, think about whether or\n         not the answer makes sense. This is how we check the\n         reasonableness of the answer.",
+    "fluencyPracticeText": " Sprint: Skip-Count by 5 2.NBT.2                 (9 minutes)\n\nSprint: Skip-Count by 5 (9 minutes)\nMaterials: (S) Skip-Count by 5 Sprint\n\nNote: This activity builds a foundation for multiplication using units of 5 through reviewing skip-counting from\nGrade 2. See Lesson 2 for the directions for administering a Sprint.\nBetween Sprints, include the following group counting in place of movement exercises:\n        Count by fours to 40, hum/talk forward and backward. (Hum as you think 1, 2, 3; say 4. Hum as you\n         think 5, 6, 7; say 8, etc.)\n        Count by sixes to 42 forward and backward, emphasizing the 24 to 30 and 36 to 42 transitions.\n        Count by threes to 30 forward and backward.",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\n                       Lesson 20:          Solve two-step word problems involving multiplication and division,                      254\n                                           and assess the reasonableness of answers.\n\n                       ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                              Lesson 20 3 1",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Compare this new problem with the Application Problem you just solved. What is different?"
+      },
+      {
+        "speaker": "students",
+        "text": "The question is still the same, but the new problem adds the cost of a hat to the total."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Turn and talk to your partner: How can we use our answer from the Application Problem to help solve the new problem?"
+      },
+      {
+        "speaker": "students",
+        "text": "In our Application Problem, we found the cost of the 6 scarves.  We just have to add the cost of the hat to the total."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw tape diagram.) This tape diagram shows the Application Problem."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Each of these boxes is 1 unit. Tell me what 1 unit represents."
+      },
+      {
+        "speaker": "students",
+        "text": "1 scarf."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the value of 1 unit?"
+      },
+      {
+        "speaker": "students",
+        "text": "$4."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do the 6 units represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "6 scarves."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How did you label the 6 units?"
+      },
+      {
+        "speaker": "students",
+        "text": "With a question mark."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What equation did you use to find the total of all the items?"
+      },
+      {
+        "speaker": "students",
+        "text": "6 × $4 = $24."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Watch as I add to our model to represent the new problem."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw and label diagram as shown.) Now, I add the cost of the hat, $4, to the total cost of the scarves, $24, (write $4 + $24 = ____), which is…?"
+      },
+      {
+        "speaker": "students",
+        "text": "$28."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many units did we add together to find the total of both items?"
+      },
+      {
+        "speaker": "students",
+        "text": "7 units.  1 unit + 6 units."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell your partner a multiplication sentence you could use to find the total cost of the scarves and hat without finding the value of the scarves first."
+      },
+      {
+        "speaker": "students",
+        "text": "7 units of $4 = $28.  7 × $4 = $28. and assess the reasonableness of answers. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 20 3 1 Write or project the following story: Mr. Lim buys 7 plants for his garden. Each plant costs $5. The next day, he buys a rose bush that also costs $5. How much more do the 7 plants cost than the rose bush?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What information is known from reading the story?"
+      },
+      {
+        "speaker": "students",
+        "text": "The cost of each plant is $5. We also know the rose bush costs $5."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What information is unknown?"
+      },
+      {
+        "speaker": "students",
+        "text": "We don’t know the total cost of the 7 plants, so we don’t know how much more the plants cost than the rose bush."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Notice there are two unknowns in our problem. Let’s first draw and label a tape diagram to model the unknown as the cost of the 7 plants."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label tape diagram.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell me how to find the cost of the plants."
+      },
+      {
+        "speaker": "students",
+        "text": "We multiply 7 × $5."
+      },
+      {
+        "speaker": "teacher",
+        "text": "The plants cost…?"
+      },
+      {
+        "speaker": "students",
+        "text": "$35."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Have we answered the question?"
+      },
+      {
+        "speaker": "students",
+        "text": "No."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the question we are trying to answer?"
+      },
+      {
+        "speaker": "students",
+        "text": "How much more the plants cost than the rose bush."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Label the second question mark.) Tell your partner what strategy you might use to answer the question."
+      },
+      {
+        "speaker": "students",
+        "text": "I might subtract the cost of the rose bush from the total cost of the 7 plants.  I might do 6 × $5 because the plants have 6 units more than the rose bush.  I’ll skip-count the 6 extra fives on the plants diagram."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write an equation and solve the problem on your personal white board."
+      },
+      {
+        "speaker": "students",
+        "text": "(Possibly write: $35 – $5 = $30, 6 × $5 = $30, $5 + $5 + $5 + $5 + $5 + $5 = $30.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Reread the question. Have we answered it?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Reread and confirm.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is $30 a reasonable answer? Why or why not?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes, 7 plants are expensive! $5 is a lot less than $35, so $30 less makes sense.  I checked with addition. $30 + $5 = $35."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Erase the first diagram and the $35 that marks the total value on the second diagram.) We first drew two models because the problem has two steps. How does this model represent the whole problem on its own?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss)."
+      },
+      {
+        "speaker": "teacher",
+        "text": "We know that 1 unit is $5. How many units represent the additional cost of the plants? and assess the reasonableness of answers. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 20 3 1"
+      },
+      {
+        "speaker": "students",
+        "text": "6 units."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Given what you know, is it necessary to find the total cost of the plants? Why or why not?"
+      },
+      {
+        "speaker": "students",
+        "text": "You can just do 6 × $5 without having to know about $35."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Explain to your partner the difference between the two ways of solving this problem. Write or project the following story: Ten children equally share 40 almonds. How many almonds will 3 children get?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What information is known?"
+      },
+      {
+        "speaker": "students",
+        "text": "The total amount of almonds and the number of children. NOTES ON"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is unknown? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "How many almonds 3 children get. OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "In order to solve, what do you need to find first? Scaffold Problem 3 by providing a tape diagram with no labels. This allows"
+      },
+      {
+        "speaker": "students",
+        "text": "The amount of almonds 1 child gets. students to see the problem and"
+      },
+      {
+        "speaker": "teacher",
+        "text": "With a partner, model and solve the problem. analyze the steps they need to take to Make sure to reread the question to see if you have solve the problem. answered the question. Then, think about whether or not the answer makes sense. This is how we check the reasonableness of the answer."
+      }
+    ],
+    "teacherPrompts": [
+      "Compare this new problem with the Application Problem you just solved. What is different?",
+      "Turn and talk to your partner: How can we use our answer from the Application Problem to help solve the new problem?",
+      "(Draw tape diagram.) This tape diagram shows the Application Problem.",
+      "Each of these boxes is 1 unit. Tell me what 1 unit represents.",
+      "What is the value of 1 unit?",
+      "What do the 6 units represent?",
+      "How did you label the 6 units?",
+      "What equation did you use to find the total of all the items?",
+      "Watch as I add to our model to represent the new problem.",
+      "(Draw and label diagram as shown.) Now, I add the cost of the hat, $4, to the total cost of the scarves, $24, (write $4 + $24 = ____), which is…?",
+      "How many units did we add together to find the total of both items?",
+      "Tell your partner a multiplication sentence you could use to find the total cost of the scarves and hat without finding the value of the scarves first.",
+      "What information is known from reading the story?",
+      "What information is unknown?",
+      "Notice there are two unknowns in our problem. Let’s first draw and label a tape diagram to model the unknown as the cost of the 7 plants.",
+      "Tell me how to find the cost of the plants.",
+      "The plants cost…?",
+      "Have we answered the question?",
+      "What is the question we are trying to answer?",
+      "(Label the second question mark.) Tell your partner what strategy you might use to answer the question.",
+      "Write an equation and solve the problem on your personal white board.",
+      "Reread the question. Have we answered it?",
+      "Is $30 a reasonable answer? Why or why not?",
+      "(Erase the first diagram and the $35 that marks the total value on the second diagram.) We first drew two models because the problem has two steps. How does this model represent the whole problem on its own?",
+      "We know that 1 unit is $5. How many units represent the additional cost of the plants? and assess the reasonableness of answers. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 20 3 1",
+      "Given what you know, is it necessary to find the total cost of the plants? Why or why not?",
+      "Explain to your partner the difference between the two ways of solving this problem. Write or project the following story: Ten children equally share 40 almonds. How many almonds will 3 children get?",
+      "What information is known?",
+      "What is unknown? MULTIPLE MEANS",
+      "In order to solve, what do you need to find first? Scaffold Problem 3 by providing a tape diagram with no labels. This allows",
+      "With a partner, model and solve the problem. analyze the steps they need to take to Make sure to reread the question to see if you have solve the problem. answered the question. Then, think about whether or not the answer makes sense. This is how we check the reasonableness of the answer."
+    ],
+    "debriefPrompt": "Compare the structure of Problems 1 and 2 to the rest of the Problem Set. Problems 1 and 2 explicitly ask two questions to scaffold the two- step word problems. Problems 3–5 still require two steps but only ask one question",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Ted buys 3 books and a magazine at the book store. Each book costs $8. A magazine costs $4. $4 Magazine Books a. What is the total cost of the books? b. How much does Ted spend altogether?",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "Seven children share 28 silly bands equally. 28 a. How many silly bands does each child get? b. How many silly bands do 3 children get? and assess the reasonableness of answers.",
+        "equations": []
+      },
+      {
+        "number": 3,
+        "prompt": "Eighteen cups are equally packed into 6 boxes. Two boxes of cups break. How many cups are unbroken?",
+        "equations": []
+      },
+      {
+        "number": 4,
+        "prompt": "There are 25 blue balloons and 15 red balloons at a party. Five children are given an equal number of each color balloon. How many blue and red balloons does each child get?",
+        "equations": []
+      },
+      {
+        "number": 5,
+        "prompt": "Twenty-seven pears are packed in bags of 3. Five bags of pears are sold. How many bags of pears are left? and assess the reasonableness of answers.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                      Lesson 20 Problem Set 3 1\n\n\nName                                                                                        Date\n\n1. Ted buys 3 books and a magazine at the book store. Each book costs $8. A magazine costs $4.\n\n                                          $4\n\n                      Magazine\n\n                        Books\n\n\n    a. What is the total cost of the books?\n\n\n    b. How much does Ted spend altogether?\n\n\n2. Seven children share 28 silly bands equally.                                                        28\n\n\n    a. How many silly bands does each child get?\n\n\n    b. How many silly bands do 3 children get?\n\n\n                       Lesson 20:          Solve two-step word problems involving multiplication and division,   258\n                                           and assess the reasonableness of answers.\n\n                       ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                      Lesson 20 Problem Set 3 1\n\n\n3. Eighteen cups are equally packed into 6 boxes. Two boxes of cups break. How many cups are unbroken?\n\n\n4. There are 25 blue balloons and 15 red balloons at a party. Five children are given an equal number of each\n   color balloon. How many blue and red balloons does each child get?\n\n\n5. Twenty-seven pears are packed in bags of 3. Five bags of pears are sold. How many bags of pears are left?\n\n\n                       Lesson 20:          Solve two-step word problems involving multiplication and division,   259\n                                           and assess the reasonableness of answers.\n\n                       ©2015 Great Minds. eureka-math.org",
+    "answerKeyProblemSetText": "1.    Tape diagram labeled                                            3.     12\n      a. $24                                                          4.     5 blue and 3 red\n      b. $28                                                          5.     4\n2.    Tape diagram labeled\n      a. 4\n      b. 12",
+    "answerKeyText": "A STORY OF UNITS                                                                      Lesson 20 Answer Key 3 1\n\n\nLesson 20\nSprint\nSide A\n1.    10                       12. 30                                 23. 40                                 34. 15\n2.    15                       13. 25                                 24. 20                                 35. 40\n3.    20                       14. 20                                 25. 45                                 36. 20\n4.    25                       15. 15                                 26. 20                                 37. 45\n5.    30                       16. 10                                 27. 45                                 38. 25\n6.    35                       17. 5                                  28. 15                                 39. 50\n7.    40                       18. 5                                  29. 40                                 40. 60\n8.    45                       19. 30                                 30. 10                                 41. 55\n9.    50                       20. 10                                 31. 35                                 42. 60\n10. 40                         21. 35                                 32. 5                                  43. 65\n11. 35                         22. 15                                 33. 30                                 44. 70\n\n\nSide B\n1.    15                       12. 25                                 23. 20                                 34. 20\n2.    20                       13. 20                                 24. 40                                 35. 45\n3.    25                       14. 15                                 25. 25                                 36. 25\n4.    30                       15. 10                                 26. 20                                 37. 50\n5.    35                       16. 5                                  27. 45                                 38. 15\n6.    40                       17. 5                                  28. 15                                 39. 40\n7.    45                       18. 30                                 29. 40                                 40. 55\n8.    50                       19. 10                                 30. 10                                 41. 60\n9.    40                       20. 35                                 31. 30                                 42. 65\n10. 35                         21. 15                                 32. 5                                  43. 60\n11. 30                         22. 40                                 33. 30                                 44. 65\n\n\n                        Module 1:           Properties of Multiplication and Division and Solving Problems with       322\n                                            Units of 2–5 and 10\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                      Lesson 20 Answer Key 3 1\n\n\nProblem Set\n1.    Tape diagram labeled                                            3.     12\n      a. $24                                                          4.     5 blue and 3 red\n      b. $28                                                          5.     4\n2.    Tape diagram labeled\n      a. 4\n      b. 12\n\n\nExit Ticket\n1.    Tape diagram labeled\n      a. 4\n      b. 16\n2.    10\n\n\nHomework\n1.    Tape diagram labeled                                            3.     4 green and 5 purple\n      a. $12                                                          4.     9\n      b. $9                                                           5.     4\n2.    Tape diagram labeled\n      a. 6\n      b. 24\n\n\n                        Module 1:           Properties of Multiplication and Division and Solving Problems with   323\n                                            Units of 2–5 and 10\n\n                        ©2015 Great Minds. eureka-math.org",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "tape-diagram",
+      "measurement-scale",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "tape-diagram": [
+        "Problem 1: Model a two-step problem with a tape diagram. The vignette follows the I do, we do,",
+        "T: (Draw tape diagram.) This tape diagram shows the",
+        "Problem 2: Use the tape diagram to solve a two-step problem.",
+        "Let’s first draw and label a tape diagram to model",
+        "S: (Draw and label tape diagram.)"
+      ],
+      "measurement-scale": [
+        "Problem 1: Model a two-step problem with a tape diagram. The vignette follows the I do, we do,",
+        "T: (Draw tape diagram.) This tape diagram shows the",
+        "T: (Draw and label diagram as shown.) Now, I add the cost of the hat, $4, to the total cost of the scarves,",
+        "Problem 2: Use the tape diagram to solve a two-step problem.",
+        "Let’s first draw and label a tape diagram to model",
+        "S: (Draw and label tape diagram.)",
+        "plants diagram.",
+        "T: (Erase the first diagram and the $35 that marks the total value on the second diagram.) We first drew"
+      ],
+      "money-model": [
+        "scarves are on sale for $4 each. Nina buys 2 scarves of each Adjust the level of support for each",
+        "color. She also buys a hat that costs $4. How much does she problem according to the needs",
+        "adds the cost of a hat to the total.",
+        "S: In our Application Problem, we found the cost of the 6 scarves.  We just have to add the cost of the",
+        "S: $4.",
+        "S: 6 × $4 = $24.",
+        "T: (Draw and label diagram as shown.) Now, I add the cost of the hat, $4, to the total cost of the scarves,",
+        "$24, (write $4 + $24 = ____), which is…?"
+      ],
+      "picture-or-drawing": [
+        "Problem 1: Model a two-step problem with a tape diagram. The vignette follows the I do, we do,",
+        "T: (Draw tape diagram.) This tape diagram shows the",
+        "T: (Draw and label diagram as shown.) Now, I add the cost of the hat, $4, to the total cost of the scarves,",
+        "Problem 2: Use the tape diagram to solve a two-step problem.",
+        "Let’s first draw and label a tape diagram to model",
+        "S: (Draw and label tape diagram.)",
+        "plants diagram.",
+        "T: (Erase the first diagram and the $35 that marks the total value on the second diagram.) We first drew"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Compare this new problem with the Application Problem you just solved. What is different?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Turn and talk to your partner: How can we use our answer from the Application Problem to help solve the new problem?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw tape diagram.) This tape diagram shows the Application Problem."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How did you label the 6 units?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Watch as I add to our model to represent the new problem."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw and label diagram as shown.) Now, I add the cost of the hat, $4, to the total cost of the scarves, $24, (write $4 + $24 = ____), which is…?"
+      },
+      {
+        "speaker": "students",
+        "text": "7 units of $4 = $28.  7 × $4 = $28. and assess the reasonableness of answers. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 20 3 1 Write or project the following story: Mr. Lim buys 7 plants for his garden. Each plant costs $5. The next day, he buys a rose bush that also costs $5. How much more do the 7 plants cost than the rose bush?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Notice there are two unknowns in our problem. Let’s first draw and label a tape diagram to model the unknown as the cost of the 7 plants."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label tape diagram.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Label the second question mark.) Tell your partner what strategy you might use to answer the question."
+      },
+      {
+        "speaker": "students",
+        "text": "I might subtract the cost of the rose bush from the total cost of the 7 plants.  I might do 6 × $5 because the plants have 6 units more than the rose bush.  I’ll skip-count the 6 extra fives on the plants diagram."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write an equation and solve the problem on your personal white board."
+      },
+      {
+        "speaker": "students",
+        "text": "(Possibly write: $35 – $5 = $30, 6 × $5 = $30, $5 + $5 + $5 + $5 + $5 + $5 = $30.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Erase the first diagram and the $35 that marks the total value on the second diagram.) We first drew two models because the problem has two steps. How does this model represent the whole problem on its own?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Explain to your partner the difference between the two ways of solving this problem. Write or project the following story: Ten children equally share 40 almonds. How many almonds will 3 children get?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "In order to solve, what do you need to find first? Scaffold Problem 3 by providing a tape diagram with no labels. This allows"
+      },
+      {
+        "speaker": "teacher",
+        "text": "With a partner, model and solve the problem. analyze the steps they need to take to Make sure to reread the question to see if you have solve the problem. answered the question. Then, think about whether or not the answer makes sense. This is how we check the reasonableness of the answer."
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 255 (debrief) ---\nA STORY OF UNITS                                                                                               Lesson 20 3 1\n\n\nLesson 20\nObjective: Solve two-step word problems involving multiplication and\ndivision, and assess the reasonableness of answers.\n\nSuggested Lesson Structure\n Fluency Practice              (9 minutes)\n Application Problem           (8 minutes)\n Concept Development           (33 minutes)\n Student Debrief               (10 minutes)\n   Total Time                   (60 minutes)\n\n\nFluency Practice (9 minutes)\n Sprint: Skip-Count by 5 2.NBT.2                 (9 minutes)\n\nSprint: Skip-Count by 5 (9 minutes)\nMaterials: (S) Skip-Count by 5 Sprint\n\nNote: This activity builds a foundation for multiplication using units of 5 through reviewing skip-counting from\nGrade 2. See Lesson 2 for the directions for administering a Sprint.\nBetween Sprints, include the following group counting in place of movement exercises:\n        Count by fours to 40, hum/talk forward and backward. (Hum as you think 1, 2, 3; say 4. Hum as you\n         think 5, 6, 7; say 8, etc.)\n        Count by sixes to 42 forward and backward, emphasizing the 24 to 30 and 36 to 42 transitions.\n        Count by threes to 30 forward and backward.\n\n\nApplication Problem (8 minutes)\nRed, orange, and blue scarves are on sale for $4 each. Nina buys 2 scarves of each color. How much does she\nspend altogether?\n\n\nNote: This problem reviews multiplication using units of 4. It also leads into Problem 1 of the Concept\nDevelopment.\n\n\n                       Lesson 20:           Solve two-step word problems involving multiplication and division,              251\n                                            and assess the reasonableness of answers.\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 256 (concept-development) ---\nA STORY OF UNITS                                                                                               Lesson 20 3 1\n\n\nConcept Development (33 minutes)\n                                                                                                         NOTES ON\n                                                                                                         MULTIPLE MEANS\nMaterials: (S) Personal white board\n                                                                                                         OF REPRESENTATION:\nProblem 1: Model a two-step problem with a tape diagram.                                        The vignette follows the I do, we do,\n                                                                                                you do process to guide students\nWrite or project the following story: Red, orange, and blue                                     through the two-step word problems.\nscarves are on sale for $4 each. Nina buys 2 scarves of each                                    Adjust the level of support for each\ncolor. She also buys a hat that costs $4. How much does she                                     problem according to the needs\nspend altogether?                                                                               students demonstrate. Consider\n                                                                                                working with a small group to solve\n    T:   Compare this new problem with the Application\n                                                                                                Problem 3.\n         Problem you just solved. What is different?\n    S:   The question is still the same, but the new problem\n         adds the cost of a hat to the total.\n    T:   Turn and talk to your partner: How can we use our answer from the Application Problem to help solve\n         the new problem?\n    S:   In our Application Problem, we found the cost of the 6 scarves.  We just have to add the cost of the\n         hat to the total.\n    T:   (Draw tape diagram.) This tape diagram shows the\n         Application Problem.\n    T:   Each of these boxes is 1 unit. Tell me what 1 unit\n         represents.\n    S:   1 scarf.\n    T:   What is the value of 1 unit?\n    S:   $4.\n    T:   What do the 6 units represent?\n    S:   6 scarves.\n    T:   How did you label the 6 units?\n    S:   With a question mark.\n    T:   What equation did you use to find the total of all the items?\n    S:   6 × $4 = $24.\n    T:   Watch as I add to our model to represent the new problem.\n    T:   (Draw and label diagram as shown.) Now, I add the cost of the hat, $4, to the total cost of the scarves,\n         $24, (write $4 + $24 = ____), which is…?\n    S:   $28.\n    T:   How many units did we add together to find the total of both items?\n    S:   7 units.  1 unit + 6 units.\n    T:   Tell your partner a multiplication sentence you could use to find the total cost of the scarves and hat\n         without finding the value of the scarves first.\n    S:   7 units of $4 = $28.  7 × $4 = $28.\n\n\n                       Lesson 20:           Solve two-step word problems involving multiplication and division,                         252\n                                            and assess the reasonableness of answers.\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 257 (lesson-instruction) ---\nA STORY OF UNITS                                                                                               Lesson 20 3 1\n\n\nProblem 2: Use the tape diagram to solve a two-step problem.\nWrite or project the following story: Mr. Lim buys 7 plants for his garden. Each plant costs $5. The next day, he\nbuys a rose bush that also costs $5. How much more do the 7 plants cost than the rose bush?\n    T:   What information is known from reading the story?\n    S:   The cost of each plant is $5. We also know the rose bush costs $5.\n    T:   What information is unknown?\n    S:   We don’t know the total cost of the 7 plants, so we don’t know how much more the plants cost than\n         the rose bush.\n    T:   Notice there are two unknowns in our problem.\n         Let’s first draw and label a tape diagram to model\n         the unknown as the cost of the 7 plants.\n    S:   (Draw and label tape diagram.)\n    T:   Tell me how to find the cost of the plants.\n    S:   We multiply 7 × $5.\n    T:   The plants cost…?\n    S:   $35.\n    T:   Have we answered the question?\n    S:   No.\n    T:   What is the question we are trying to answer?\n    S:   How much more the plants cost than the rose\n         bush.\n    T:   (Label the second question mark.) Tell your\n         partner what strategy you might use to answer the\n         question.\n    S:   I might subtract the cost of the rose bush from the total cost of the 7 plants.  I might do 6 × $5\n         because the plants have 6 units more than the rose bush.  I’ll skip-count the 6 extra fives on the\n         plants diagram.\n    T:   Write an equation and solve the problem on your personal white board.\n    S:   (Possibly write: $35 – $5 = $30, 6 × $5 = $30, $5 + $5 + $5 + $5 + $5 + $5 = $30.)\n    T:   Reread the question. Have we answered it?\n    S:   (Reread and confirm.)\n    T:   Is $30 a reasonable answer? Why or why not?\n    S:   Yes, 7 plants are expensive! $5 is a lot less than $35, so $30 less makes sense.  I checked with\n         addition. $30 + $5 = $35.\n    T:   (Erase the first diagram and the $35 that marks the total value on the second diagram.) We first drew\n         two models because the problem has two steps. How does this model represent the whole problem on\n         its own?\n    S:   (Discuss).\n    T:   We know that 1 unit is $5. How many units represent the additional cost of the plants?\n\n\n                       Lesson 20:           Solve two-step word problems involving multiplication and division,              253\n                                            and assess the reasonableness of answers.\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 258 (application-problem) ---\nA STORY OF UNITS                                                                                              Lesson 20 3 1\n\n\n    S:   6 units.\n    T:   Given what you know, is it necessary to find the total cost of the plants? Why or why not?\n    S:   You can just do 6 × $5 without having to know about $35.\n    T:   Explain to your partner the difference between the two ways of solving this problem.\n\nProblem 3: Work with a partner to model and solve a two-step problem.\nWrite or project the following story: Ten children equally share 40 almonds. How many almonds will\n3 children get?\n    T:   What information is known?\n    S:   The total amount of almonds and the number of\n         children.                                                                                      NOTES ON\n    T:   What is unknown?                                                                               MULTIPLE MEANS\n    S:   How many almonds 3 children get.                                                               OF ENGAGEMENT:\n    T:   In order to solve, what do you need to find first?                                    Scaffold Problem 3 by providing a tape\n                                                                                               diagram with no labels. This allows\n    S:   The amount of almonds 1 child gets.\n                                                                                               students to see the problem and\n    T:   With a partner, model and solve the problem.                                          analyze the steps they need to take to\n         Make sure to reread the question to see if you have                                   solve the problem.\n         answered the question. Then, think about whether or\n         not the answer makes sense. This is how we check the\n         reasonableness of the answer.\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\n                       Lesson 20:          Solve two-step word problems involving multiplication and division,                      254\n                                           and assess the reasonableness of answers.\n\n                       ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 259 (debrief) ---\nA STORY OF UNITS                                                                                              Lesson 20 3 1\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Solve two-step word problems\ninvolving multiplication and division, and assess the\nreasonableness of answers.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Compare the structure of Problems 1 and 2 to the\n         rest of the Problem Set. Problems 1 and 2\n         explicitly ask two questions to scaffold the two-\n         step word problems. Problems 3–5 still require\n         two steps but only ask one question.\n        Compare Problems 3 and 5. What do the unknowns represent? How are these problems similar?\n         How are they different?\n        Have students share their models. In Problems 3 and 5, how did you show the boxes of broken cups\n         and the bags of pears sold?\n        How did you check the reasonableness of your answers to each problem?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that were presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 20:          Solve two-step word problems involving multiplication and division,              255\n                                            and assess the reasonableness of answers.\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 260 (sprint) ---\nA STORY OF UNITS                                                                                  Lesson 20 Sprint 3 1\n\n\nA\n                                                                                                               Number Correct: _______\n\nSkip-Count by 5\n\n 1.                 0, 5, __                                                  23.                 35, __, 45\n\n 2.                 5, 10, __                                                 24.                 15, __, 25\n\n 3.                10, 15, __                                                 25.                 40, __, 50\n\n 4.                15, 20, __                                                 26.                 25, __, 15\n\n 5.                20, 25, __                                                 27.                 50, __, 40\n\n 6.                25, 30, __                                                 28.                 20, __, 10\n\n 7.                30, 35, __                                                 29.                 45, __, 35\n\n 8.                35, 40, __                                                 30.                  15, __, 5\n\n 9.                40, 45, __                                                 31.                 40, __, 30\n\n 10.               50, 45, __                                                 32.                  10, __, 0\n\n 11.               45, 40, __                                                 33.                 35, __, 25\n\n 12.               40, 35, __                                                 34.                  __, 10, 5\n\n 13.               35, 30, __                                                 35.                 __, 35, 30\n\n 14.               30, 25, __                                                 36.                 __, 15, 10\n\n 15.               25, 20, __                                                 37.                 __, 40, 35\n\n 16.               20, 15, __                                                 38.                 __, 20, 15\n\n 17.               15, 10, __                                                 39.                 __, 45, 40\n\n 18.                0, __, 10                                                 40.                 50, 55, __\n\n 19.               25, __, 35                                                 41.                 45, 50, __\n\n 20.                5, __, 15                                                 42.                 65, __, 55\n\n 21.               30, __, 40                                                 43.                 55, 60, __\n\n 22.               10, __, 20                                                 44.                 60, 65, __\n\n\n                          Lesson 20:          Solve two-step word problems involving multiplication and division,                 256\n                                              and assess the reasonableness of answers.\n\n                          ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 261 (sprint) ---\nA STORY OF UNITS                                                                                  Lesson 20 Sprint 3 1\n\n\nB\n                                                                                                              Number Correct: _______\n                                                                                                                    Improvement: _______\nSkip-Count by 5\n\n 1.                 5, 10, __                                                 23.                 15, __, 25\n\n 2.                10, 15, __                                                 24.                 35, __, 45\n\n 3.                15, 20, __                                                 25.                 20, __, 30\n\n 4.                20, 25, __                                                 26.                 25, __, 15\n\n 5.                25, 30, __                                                 27.                 50, __, 60\n\n 6.                30, 35, __                                                 28.                 20, __, 10\n\n 7.                35, 40, __                                                 29.                 45, __, 35\n\n 8.                40, 45, __                                                 30.                  15, __, 5\n\n 9.                50, 45, __                                                 31.                 35, __, 25\n\n 10.               45, 40, __                                                 32.                  10, __, 0\n\n 11.               40, 35, __                                                 33.                 35, __, 25\n\n 12.               35, 30, __                                                 34.                 __, 15, 10\n\n 13.               30, 25, __                                                 35.                 __, 40, 35\n\n 14.               25, 20, __                                                 36.                 __, 20, 15\n\n 15.               20, 15, __                                                 37.                 __, 45, 40\n\n 16.               15, 10, __                                                 38.                  __, 10, 5\n\n 17.                0, __, 10                                                 39.                 __, 35, 30\n\n 18.               25, __, 35                                                 40.                 45, 50, __\n\n 19.                5, __, 15                                                 41.                 50, 55, __\n\n 20.               30, __, 40                                                 42.                 55, 60, __\n\n 21.               10, __, 20                                                 43.                 65, __, 55\n\n 22.               35, __, 45                                                 44.                 __, 60, 55\n\n\n                          Lesson 20:          Solve two-step word problems involving multiplication and division,                    257\n                                              and assess the reasonableness of answers.\n\n                          ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 262 (problem-set) ---\nA STORY OF UNITS                                                                      Lesson 20 Problem Set 3 1\n\n\nName                                                                                        Date\n\n1. Ted buys 3 books and a magazine at the book store. Each book costs $8. A magazine costs $4.\n\n                                          $4\n\n                      Magazine\n\n                        Books\n\n\n    a. What is the total cost of the books?\n\n\n    b. How much does Ted spend altogether?\n\n\n2. Seven children share 28 silly bands equally.                                                        28\n\n\n    a. How many silly bands does each child get?\n\n\n    b. How many silly bands do 3 children get?\n\n\n                       Lesson 20:          Solve two-step word problems involving multiplication and division,   258\n                                           and assess the reasonableness of answers.\n\n                       ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 263 (problem-set) ---\nA STORY OF UNITS                                                                      Lesson 20 Problem Set 3 1\n\n\n3. Eighteen cups are equally packed into 6 boxes. Two boxes of cups break. How many cups are unbroken?\n\n\n4. There are 25 blue balloons and 15 red balloons at a party. Five children are given an equal number of each\n   color balloon. How many blue and red balloons does each child get?\n\n\n5. Twenty-seven pears are packed in bags of 3. Five bags of pears are sold. How many bags of pears are left?\n\n\n                       Lesson 20:          Solve two-step word problems involving multiplication and division,   259\n                                           and assess the reasonableness of answers.\n\n                       ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 264 (exit-ticket) ---\nA STORY OF UNITS                                                                          Lesson 20 Exit Ticket 3 1\n\n\nName                                                                                         Date\n\n1. Thirty-two jelly beans are shared by 8 students.\n\n                                                                32 jelly beans\n\n\n    a. How many jelly beans will each student get?\n\n\n    b. How many jelly beans will 4 students get?\n\n\n2. The teacher has 30 apple slices and 20 pear slices. Five children equally share all of the fruit slices. How\n   many fruit slices does each child get?\n\n\n                        Lesson 20:          Solve two-step word problems involving multiplication and division,      260\n                                            and assess the reasonableness of answers.\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 265 (homework) ---\nA STORY OF UNITS                                                                         Lesson 20 Homework 3 1\n\n\nName                                                                                         Date\n\n1. Jerry buys a pack of pencils that costs $3. David buys 4 sets of markers. Each set of markers also costs $3.\n\n\n                                  $3\n\n\n              Pencils\n\n              Markers\n\n\n    a. What is the total cost of the markers?\n\n\n    b. How much more does David spend on 4 sets of markers than Jerry spends on a pack of pencils?\n\n\n2. Thirty students are eating lunch at 5 tables. Each table has the same number of students.\n\n\n                                                                                                                  30 children\n    a. How many students are sitting at each table?\n\n\n    b. How many students are sitting at 4 tables?\n\n\n                        Lesson 20:          Solve two-step word problems involving multiplication and division,                 261\n                                            and assess the reasonableness of answers.\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 266 (homework) ---\nA STORY OF UNITS                                                                        Lesson 20 Homework 3 1\n\n\n3. The teacher has 12 green stickers and 15 purple stickers. Three students are given an equal number of each\n   color sticker. How many green and purple stickers does each student get?\n\n\n4. Three friends go apple picking. They pick 13 apples on Saturday and 14 apples on Sunday. They share the\n   apples equally. How many apples does each person get?\n\n\n5. The store has 28 notebooks in packs of 4. Three packs of notebooks are sold. How many packs of\n   notebooks are left?\n\n\n                      Lesson 20:           Solve two-step word problems involving multiplication and division,   262\n                                           and assess the reasonableness of answers.\n\n                       ©2015 Great Minds. eureka-math.org",
+    "problemSetPages": [
+      {
+        "pdfPage": 262,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                      Lesson 20 Problem Set 3 1\n\n\nName                                                                                        Date\n\n1. Ted buys 3 books and a magazine at the book store. Each book costs $8. A magazine costs $4.\n\n                                          $4\n\n                      Magazine\n\n                        Books\n\n\n    a. What is the total cost of the books?\n\n\n    b. How much does Ted spend altogether?\n\n\n2. Seven children share 28 silly bands equally.                                                        28\n\n\n    a. How many silly bands does each child get?\n\n\n    b. How many silly bands do 3 children get?\n\n\n                       Lesson 20:          Solve two-step word problems involving multiplication and division,   258\n                                           and assess the reasonableness of answers.\n\n                       ©2015 Great Minds. eureka-math.org"
+      },
+      {
+        "pdfPage": 263,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                      Lesson 20 Problem Set 3 1\n\n\n3. Eighteen cups are equally packed into 6 boxes. Two boxes of cups break. How many cups are unbroken?\n\n\n4. There are 25 blue balloons and 15 red balloons at a party. Five children are given an equal number of each\n   color balloon. How many blue and red balloons does each child get?\n\n\n5. Twenty-seven pears are packed in bags of 3. Five bags of pears are sold. How many bags of pears are left?\n\n\n                       Lesson 20:          Solve two-step word problems involving multiplication and division,   259\n                                           and assess the reasonableness of answers.\n\n                       ©2015 Great Minds. eureka-math.org"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 326,
+        "text": "A STORY OF UNITS                                                                      Lesson 20 Answer Key 3 1\n\n\nLesson 20\nSprint\nSide A\n1.    10                       12. 30                                 23. 40                                 34. 15\n2.    15                       13. 25                                 24. 20                                 35. 40\n3.    20                       14. 20                                 25. 45                                 36. 20\n4.    25                       15. 15                                 26. 20                                 37. 45\n5.    30                       16. 10                                 27. 45                                 38. 25\n6.    35                       17. 5                                  28. 15                                 39. 50\n7.    40                       18. 5                                  29. 40                                 40. 60\n8.    45                       19. 30                                 30. 10                                 41. 55\n9.    50                       20. 10                                 31. 35                                 42. 60\n10. 40                         21. 35                                 32. 5                                  43. 65\n11. 35                         22. 15                                 33. 30                                 44. 70\n\n\nSide B\n1.    15                       12. 25                                 23. 20                                 34. 20\n2.    20                       13. 20                                 24. 40                                 35. 45\n3.    25                       14. 15                                 25. 25                                 36. 25\n4.    30                       15. 10                                 26. 20                                 37. 50\n5.    35                       16. 5                                  27. 45                                 38. 15\n6.    40                       17. 5                                  28. 15                                 39. 40\n7.    45                       18. 30                                 29. 40                                 40. 55\n8.    50                       19. 10                                 30. 10                                 41. 60\n9.    40                       20. 35                                 31. 30                                 42. 65\n10. 35                         21. 15                                 32. 5                                  43. 60\n11. 30                         22. 40                                 33. 30                                 44. 65\n\n\n                        Module 1:           Properties of Multiplication and Division and Solving Problems with       322\n                                            Units of 2–5 and 10\n\n                        ©2015 Great Minds. eureka-math.org"
+      },
+      {
+        "pdfPage": 327,
+        "text": "A STORY OF UNITS                                                                      Lesson 20 Answer Key 3 1\n\n\nProblem Set\n1.    Tape diagram labeled                                            3.     12\n      a. $24                                                          4.     5 blue and 3 red\n      b. $28                                                          5.     4\n2.    Tape diagram labeled\n      a. 4\n      b. 12\n\n\nExit Ticket\n1.    Tape diagram labeled\n      a. 4\n      b. 16\n2.    10\n\n\nHomework\n1.    Tape diagram labeled                                            3.     4 green and 5 purple\n      a. $12                                                          4.     9\n      b. $9                                                           5.     4\n2.    Tape diagram labeled\n      a. 6\n      b. 24\n\n\n                        Module 1:           Properties of Multiplication and Division and Solving Problems with   323\n                                            Units of 2–5 and 10\n\n                        ©2015 Great Minds. eureka-math.org"
+      }
+    ]
+  }
+}

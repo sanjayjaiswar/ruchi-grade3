@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m5-l22",
+  "moduleId": "m5",
+  "lessonNumber": 22,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+    "teacherEditionBytes": 17797697,
+    "lessonPdfPages": {
+      "start": 255,
+      "end": 264
+    },
+    "problemSetPdfPages": [
+      260,
+      261
+    ],
+    "exitTicketPdfPages": [
+      262
+    ],
+    "homeworkPdfPages": [
+      263,
+      264
+    ],
+    "answerKeyPdfPages": [
+      405
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m5-student/workbook-page-088.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m5-teacher/page-260.png",
+      "/source-pages/m5-teacher/page-261.png",
+      "/source-pages/m5-teacher/page-405.png"
+    ]
+  },
+  "objective": "Generate simple equivalent fractions by using visual fraction models and the number line.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "NOTES ON\n                                                                                                                MULTIPLE MEANS\nMaterials: (S) Math journal or fraction strips made in\n                              1                                                                                 OF ENGAGEMENT:\n           Lesson 21, new 4 4 -inch × 1-inch fraction strips                                           Students working below grade level\n           (3 per student), crayons, personal white board, glue                                        may alternatively use two fraction\n                                                                                                       strips—one partitioned into sixths, the\n    T:   Take out your math journal, and turn to the page                                              other partitioned into fourths—to\n         where you glued your fraction strips yesterday.                                               compare 3 sixths and 2 fourths. Or,\n         Name the fraction that is equivalent to 1 third.                                              have students draw number lines on\n         2                                                                                             personal white boards so that they may\n    S:     .                                                                                           erase partitioned sixths before\n         6\n                                                                                                       partitioning fourths.\n    T:   Now, name the fractions that are equivalent to 1 half.\n         2 4     3\n    S:    , , and .\n         4 8     6\n    T:   During our Debrief yesterday, I challenged you to find another fraction equivalent to 1 half, even\n                                                     3\n         though it wasn’t shaded. You came up with .\n                                                                          6\n\n\n                        Lesson 22:                 Generate simple equivalent fractions by using visual fraction models                      255\n                                                   and the number line.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 22 3 5\n\n\n       T:   Now, I want you to work with a partner to look at your\n            fraction strips again. See if you can find other\n            equivalent fractions, shaded or unshaded. Draw and                                                                NOTES ON\n            label them on your personal white board. For                                                                      MULTIPLE MEANS\n                                                             2\n            example, using my fraction strips, I can see that and                                                             OF ENGAGEMENT:\n                                                              2\n            4\n              are equivalent. Fourths are just halves cut in half                                                  Challenge students working above\n            4\n                                                                                                                   grade level to collect the data\n            again. Be ready to explain how you know, just like I\n                                                                                                                   presented (e.g., sets of equivalencies)\n            did.\n                                                                                                                   and organize it in a table or graph.\n       S:   (Possible answers other than those already discussed:                                                  Guide them to analyze the organized\n            2 4 8 3         6   3     6     2      4                                                               data and draw conclusions. Ask (for\n              , , , , and ; and ; and and .)\nMP.3        2     4   8   3          6       4             8           3       6                                   example), “Which fraction has more\n                                                                                          2       4\n       T:   (Have students share their work.) Let’s look at and .                                                  equivalent fractions? Why?”\n                                                           3     6\n            Talk with your partner. Do you notice a relationship\n            between the numbers in these fractions?\n                                                                                                                          2                 4\n       S:   3 is half of 6, and 2 is half of 4.  That’s true. If you make 2 copies of , then you get .  I see\n                                                                                      3              6\n            what you mean about the numbers doubling, but it’s not really 2 copies when you look at the\n            fraction strips. Thirds are larger than sixths.  The numbers double because you’re cutting each\n            third into 2 equal parts to get sixths. But that actually makes the pieces get smaller, even though\n            the number of pieces is doubled. It’s still the same amount.\n                              3            6\n       T:   Now, look at and . Does the same pattern you just noticed apply to these fractions?\n                              4            8\n\n       S:   (Discuss.)\n It may be a good idea to have students repeat the process with whole number fractions if they are unsure.\n       T:   I’m hearing you say that the numbers in these equivalent fractions doubled. Look again at these\n                                  2     4                                                         4\n            equivalent fractions: and . What fraction would we get if we doubled the 4 and 6 in ?\n                                                 3               6                                                                              6\n            8\n       S:     .\n            12\n\n       T:   (Pass out 3 fraction strips to each student.) Fold your strips into thirds, sixths, and twelfths. Label\n                                              2 4     8                  8                  2     4\n            the unit fractions. Then, shade , , and to compare. Is equivalent to and ?\n                                                                     3 6           12                    12                     3      6\n\n       S:   They are equivalent!\n       T:   What did we do to the equal parts each time to make the number of shaded parts and total number\n            of parts double?\n       S:   We cut them in 2. Thirds get cut in 2 to make sixths, and sixths get cut in 2 to make twelfths.\n       T:   Did the whole change?\n       S:   Nope, it just has more equal parts.\n       T:   What happens to the shaded area?\n       S:   It stays the same size.\n\n\n                                  Lesson 22:                   Generate simple equivalent fractions by using visual fraction models                          256\n                                                               and the number line.\n\n                                  ©2015 Great Minds. eureka-math.org\n                                  G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                       Lesson 22 3 5\n\n\n    T:   So, the fractions are…?\n    S:   Equivalent!\nHave students glue the equivalent fractions into their math journals and label them.\nShow the pictorial models to the right.\n    T:   Let’s look at a different model. These 3\n         wholes are the same. Name the shaded\n         fraction as I point to the model.\n\n                                                                                     1 2     3\nWhile pointing to each model, label with student responses:                           , , and .\n                                                                                     3 6     9\n    T:   Are these fractions equivalent? Work with your\n         partner to use the number line to prove your answer.\n         Be ready to share your thinking.                                                                       NOTES ON\n                                                                                                                MULTIPLE MEANS\nAfter students work, have pairs share at tables, or select                                                      OF REPRESENTATION:\npartners to present different methods to the class. Provide\n                                                                                                       Celebrate and encourage English\nother examples using pictorial models and the number line as\n                                                                                                       language learners’ use of math\nnecessary.                                                                                             language in English. In the Problem\n                                                                                                       Set, encourage learners to whisper the",
+    "fluencyPracticeText": " Whole Number Division 3.OA.7                                                                                             (8 minutes)\n Counting by Fractions Equal to Whole Numbers on the Number Line 3.NF.3a                                                  (4 minutes)\n\nWhole Number Division (8 minutes)\nMaterials: (S) Blank paper\n\nNote: This activity supports fluency with division. Steps 1 and 2 are timed for two minutes each. Step 3 is\ntimed for one minute of testing for each partner. Step 4 is timed for two minutes.\n    1.   Students self-select a number and write a set of multiples up to that number’s multiple of 10\n         vertically down the left-hand side of the page (e.g., 6, 12, 18, 24, 30, 36, 42, 48, 54, 60).\n    2.   Select a multiple, and divide it by the original number (e.g., 24 ÷ 6 = 4).\n    3.   Change papers and test a partner by selecting multiples out of order (e.g., “What is 24 ÷ 6?” “What\n         is 54 ÷ 6?” “What is 12 ÷ 6?”).\n    4.   Redo Steps 1 and 2 to see improvement.\n\nCounting by Fractions Equal to Whole Numbers on the Number Line (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews the concept of naming equivalent fractions on the number line from Lesson 21.\n    T:   (Project a number line partitioned into 12 thirds.) Count by thirds. (Write fractions as students\n         count.)\n    S:   1 third, 2 thirds, 3 thirds, 4 thirds, 5 thirds, 6 thirds, 7 thirds, 8 thirds, 9 thirds, 10 thirds, 11 thirds,\n         12 thirds.\n\n\n                         Lesson 22:                 Generate simple equivalent fractions by using visual fraction models                 254\n                                                    and the number line.\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                       Lesson 22 3 5\n\n\n    T:   On your personal white board, write the fractions equal to whole numbers in order from least to\n         greatest. Continue beyond those shown on our number line if you finish early.\n                3 6 9          12\n    S:   (Write , , , and        .)\n                3 3 3          3\n\nContinue with the following possible sequence: halves and fourths.",
+    "problemSetGuidanceText": "unit fraction, whisper count the shaded\n                                                                                                       units, and whisper the shaded fraction\nStudents should do their personal best to complete the                                                 as they write.\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment\nby specifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Take out your math journal, and turn to the page other partitioned into fourths—to where you glued your fraction strips yesterday. compare 3 sixths and 2 fourths. Or, Name the fraction that is equivalent to 1 third. have students draw number lines on 2 personal white boards so that they may"
+      },
+      {
+        "speaker": "students",
+        "text": ". erase partitioned sixths before 6 partitioning fourths."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, name the fractions that are equivalent to 1 half. 2 4 3"
+      },
+      {
+        "speaker": "students",
+        "text": ", , and . 4 8 6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "During our Debrief yesterday, I challenged you to find another fraction equivalent to 1 half, even 3 though it wasn’t shaded. You came up with . 6 and the number line. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 22 3 5"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, I want you to work with a partner to look at your fraction strips again. See if you can find other equivalent fractions, shaded or unshaded. Draw and NOTES ON label them on your personal white board. For MULTIPLE MEANS 2 example, using my fraction strips, I can see that and OF ENGAGEMENT: 2 4 are equivalent. Fourths are just halves cut in half Challenge students working above 4 grade level to collect the data again. Be ready to explain how you know, just like I presented (e.g., sets of equivalencies) did. and organize it in a table or graph."
+      },
+      {
+        "speaker": "students",
+        "text": "(Possible answers other than those already discussed: Guide them to analyze the organized 2 4 8 3 6 3 6 2 4 data and draw conclusions. Ask (for , , , , and ; and ; and and .) MP.3 2 4 8 3 6 4 8 3 6 example), “Which fraction has more 2 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Have students share their work.) Let’s look at and . equivalent fractions? Why?” 3 6 Talk with your partner. Do you notice a relationship between the numbers in these fractions? 2 4"
+      },
+      {
+        "speaker": "students",
+        "text": "3 is half of 6, and 2 is half of 4.  That’s true. If you make 2 copies of , then you get .  I see 3 6 what you mean about the numbers doubling, but it’s not really 2 copies when you look at the fraction strips. Thirds are larger than sixths.  The numbers double because you’re cutting each third into 2 equal parts to get sixths. But that actually makes the pieces get smaller, even though the number of pieces is doubled. It’s still the same amount. 3 6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, look at and . Does the same pattern you just noticed apply to these fractions? 4 8"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.) It may be a good idea to have students repeat the process with whole number fractions if they are unsure."
+      },
+      {
+        "speaker": "teacher",
+        "text": "I’m hearing you say that the numbers in these equivalent fractions doubled. Look again at these 2 4 4 equivalent fractions: and . What fraction would we get if we doubled the 4 and 6 in ? 3 6 6 8"
+      },
+      {
+        "speaker": "students",
+        "text": ". 12"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Pass out 3 fraction strips to each student.) Fold your strips into thirds, sixths, and twelfths. Label 2 4 8 8 2 4 the unit fractions. Then, shade , , and to compare. Is equivalent to and ? 3 6 12 12 3 6"
+      },
+      {
+        "speaker": "students",
+        "text": "They are equivalent!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What did we do to the equal parts each time to make the number of shaded parts and total number of parts double?"
+      },
+      {
+        "speaker": "students",
+        "text": "We cut them in 2. Thirds get cut in 2 to make sixths, and sixths get cut in 2 to make twelfths."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Did the whole change?"
+      },
+      {
+        "speaker": "students",
+        "text": "Nope, it just has more equal parts."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What happens to the shaded area?"
+      },
+      {
+        "speaker": "students",
+        "text": "It stays the same size. and the number line. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 22 3 5"
+      },
+      {
+        "speaker": "teacher",
+        "text": "So, the fractions are…?"
+      },
+      {
+        "speaker": "students",
+        "text": "Equivalent! Have students glue the equivalent fractions into their math journals and label them. Show the pictorial models to the right."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s look at a different model. These 3 wholes are the same. Name the shaded fraction as I point to the model. 1 2 3 While pointing to each model, label with student responses: , , and . 3 6 9"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Are these fractions equivalent? Work with your partner to use the number line to prove your answer. Be ready to share your thinking. NOTES ON MULTIPLE MEANS After students work, have pairs share at tables, or select OF REPRESENTATION: partners to present different methods to the class. Provide Celebrate and encourage English other examples using pictorial models and the number line as language learners’ use of math necessary. language in English. In the Problem Set, encourage learners to whisper the"
+      }
+    ],
+    "teacherPrompts": [
+      "Take out your math journal, and turn to the page other partitioned into fourths—to where you glued your fraction strips yesterday. compare 3 sixths and 2 fourths. Or, Name the fraction that is equivalent to 1 third. have students draw number lines on 2 personal white boards so that they may",
+      "Now, name the fractions that are equivalent to 1 half. 2 4 3",
+      "During our Debrief yesterday, I challenged you to find another fraction equivalent to 1 half, even 3 though it wasn’t shaded. You came up with . 6 and the number line. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 22 3 5",
+      "Now, I want you to work with a partner to look at your fraction strips again. See if you can find other equivalent fractions, shaded or unshaded. Draw and NOTES ON label them on your personal white board. For MULTIPLE MEANS 2 example, using my fraction strips, I can see that and OF ENGAGEMENT: 2 4 are equivalent. Fourths are just halves cut in half Challenge students working above 4 grade level to collect the data again. Be ready to explain how you know, just like I presented (e.g., sets of equivalencies) did. and organize it in a table or graph.",
+      "(Have students share their work.) Let’s look at and . equivalent fractions? Why?” 3 6 Talk with your partner. Do you notice a relationship between the numbers in these fractions? 2 4",
+      "Now, look at and . Does the same pattern you just noticed apply to these fractions? 4 8",
+      "I’m hearing you say that the numbers in these equivalent fractions doubled. Look again at these 2 4 4 equivalent fractions: and . What fraction would we get if we doubled the 4 and 6 in ? 3 6 6 8",
+      "(Pass out 3 fraction strips to each student.) Fold your strips into thirds, sixths, and twelfths. Label 2 4 8 8 2 4 the unit fractions. Then, shade , , and to compare. Is equivalent to and ? 3 6 12 12 3 6",
+      "What did we do to the equal parts each time to make the number of shaded parts and total number of parts double?",
+      "Did the whole change?",
+      "What happens to the shaded area?",
+      "So, the fractions are…?",
+      "Let’s look at a different model. These 3 wholes are the same. Name the shaded fraction as I point to the model. 1 2 3 While pointing to each model, label with student responses: , , and . 3 6 9",
+      "Are these fractions equivalent? Work with your partner to use the number line to prove your answer. Be ready to share your thinking. NOTES ON MULTIPLE MEANS After students work, have pairs share at tables, or select OF REPRESENTATION: partners to present different methods to the class. Provide Celebrate and encourage English other examples using pictorial models and the number line as language learners’ use of math necessary. language in English. In the Problem Set, encourage learners to whisper the"
+    ],
+    "debriefPrompt": "What did you notice about the models in Problem 1?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Write the shaded fraction of each figure on the blank. Then, draw a line to match the equivalent fractions. ____ ____ ____ ____ ____ ____ ____ ____ and the number line. Write the missing parts of the fractions. 1 2 1 4 8 = = = 3 6 4 8 1 1 3. Why does it take 2 copies of to show the same amount as 1 copy of? Explain your answer in words 8 4 and pictures. 4. How many sixths does it take to make the same amount as? Explain your answer in words and pictures. 5. Why does it take 10 copies of 1 sixth to make the same amount as 5 copies of 1 third? Explain your answer in words and pictures. and the number line.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                             Lesson 22 Problem Set 3 5\n\n\nName                                                                                               Date\n\n1. Write the shaded fraction of each figure on the blank. Then, draw a line to match the equivalent\n   fractions.\n\n\n       ________                                                                                                          ________\n\n\n       ________                                                                                                          ________\n\n\n       ________                                                                                                          ________\n\n\n       _________                                                                                                         ________\n\n\n                       Lesson 22:                 Generate simple equivalent fractions by using visual fraction models              259\n                                                  and the number line.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                Lesson 22 Problem Set 3 5\n\n\n2. Write the missing parts of the fractions.\n\n\n         1                                                   2             1                                    4           8\n              =                                                     =                                                  =\n         3            6                                                    4                                    8\n\n                                             1                                                         1\n3. Why does it take 2 copies of to show the same amount as 1 copy of ? Explain your answer in words\n                               8                                    4\n   and pictures.\n\n\n                                                                                         1\n4. How many sixths does it take to make the same amount as ? Explain your answer in words and pictures.\n                                                                                         3\n\n\n5. Why does it take 10 copies of 1 sixth to make the same amount as 5 copies of 1 third? Explain your\n   answer in words and pictures.\n\n\n                          Lesson 22:                 Generate simple equivalent fractions by using visual fraction models       260\n                                                     and the number line.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "answerKeyProblemSetText": "1.    1            2\n      2\n        matched to 4\n      4             2\n      6\n        matched to 3\n      3            6\n        matched to\n      4            8\n      3            1\n        matched to\n      9            3\n2.    2; 8; 16\n3.    Explanations will vary.\n4.    2 sixths, explanations will vary.\n5.    Explanations will vary.",
+    "answerKeyText": "A STORY OF UNITS                                                                        Lesson 22 Answer Key 3 5\n\n\nLesson 22\nProblem Set\n1.    1            2\n      2\n        matched to 4\n      4             2\n      6\n        matched to 3\n      3            6\n        matched to\n      4            8\n      3            1\n        matched to\n      9            3\n2.    2; 8; 16\n3.    Explanations will vary.\n4.    2 sixths, explanations will vary.\n5.    Explanations will vary.\n\n\nExit Ticket\n1.    Answers will vary.\n2.    Answers will vary.\n\n\nHomework\n      1            3\n1.      matched to\n      2            6\n      2            4\n      5\n        matched to 10\n      8             4\n      10\n         matched to 5\n      2            1\n      8\n        matched to 4\n\n2.    8; 6; 18\n3.    Explanations will vary.\n4.    3 ninths, explanations will vary.\n5.    6; explanations will vary.\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                         404\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "number-line",
+      "table-or-chart",
+      "fraction-model",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "number-line": [
+        "Generate simple equivalent fractions by using visual fraction models and the number line.",
+        "Name the fraction that is equivalent to 1 third. have students draw number lines on",
+        "and the number line.",
+        "and the number line.",
+        "partner to use the number line to prove your answer.",
+        "other examples using pictorial models and the number line as",
+        " Counting by Fractions Equal to Whole Numbers on the Number Line 3.NF.3a (4 minutes)",
+        "Counting by Fractions Equal to Whole Numbers on the Number Line (4 minutes)"
+      ],
+      "table-or-chart": [
+        "and organize it in a table or graph."
+      ],
+      "fraction-model": [
+        "Materials: (S) Math journal or fraction strips made in",
+        "Lesson 21, new 4 4 -inch × 1-inch fraction strips Students working below grade level",
+        "strips—one partitioned into sixths, the",
+        "T: Take out your math journal, and turn to the page other partitioned into fourths—to",
+        "where you glued your fraction strips yesterday. compare 3 sixths and 2 fourths. Or,",
+        "S: . erase partitioned sixths before",
+        "partitioning fourths.",
+        "fraction strips again. See if you can find other"
+      ],
+      "money-model": [
+        "T: Did the whole change?",
+        "3. Change papers and test a partner by selecting multiples out of order (e.g., “What is 24 ÷ 6?” “What"
+      ],
+      "picture-or-drawing": [
+        "Name the fraction that is equivalent to 1 third. have students draw number lines on",
+        "though it wasn’t shaded. You came up with .",
+        "equivalent fractions, shaded or unshaded. Draw and NOTES ON",
+        "2 4 8 3 6 3 6 2 4 data and draw conclusions. Ask (for",
+        "the unit fractions. Then, shade , , and to compare. Is equivalent to and ?",
+        "T: What did we do to the equal parts each time to make the number of shaded parts and total number",
+        "T: What happens to the shaded area?",
+        "wholes are the same. Name the shaded"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Take out your math journal, and turn to the page other partitioned into fourths—to where you glued your fraction strips yesterday. compare 3 sixths and 2 fourths. Or, Name the fraction that is equivalent to 1 third. have students draw number lines on 2 personal white boards so that they may"
+      },
+      {
+        "speaker": "teacher",
+        "text": "During our Debrief yesterday, I challenged you to find another fraction equivalent to 1 half, even 3 though it wasn’t shaded. You came up with . 6 and the number line. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 22 3 5"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, I want you to work with a partner to look at your fraction strips again. See if you can find other equivalent fractions, shaded or unshaded. Draw and NOTES ON label them on your personal white board. For MULTIPLE MEANS 2 example, using my fraction strips, I can see that and OF ENGAGEMENT: 2 4 are equivalent. Fourths are just halves cut in half Challenge students working above 4 grade level to collect the data again. Be ready to explain how you know, just like I presented (e.g., sets of equivalencies) did. and organize it in a table or graph."
+      },
+      {
+        "speaker": "students",
+        "text": "(Possible answers other than those already discussed: Guide them to analyze the organized 2 4 8 3 6 3 6 2 4 data and draw conclusions. Ask (for , , , , and ; and ; and and .) MP.3 2 4 8 3 6 4 8 3 6 example), “Which fraction has more 2 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Have students share their work.) Let’s look at and . equivalent fractions? Why?” 3 6 Talk with your partner. Do you notice a relationship between the numbers in these fractions? 2 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, look at and . Does the same pattern you just noticed apply to these fractions? 4 8"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Pass out 3 fraction strips to each student.) Fold your strips into thirds, sixths, and twelfths. Label 2 4 8 8 2 4 the unit fractions. Then, shade , , and to compare. Is equivalent to and ? 3 6 12 12 3 6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What did we do to the equal parts each time to make the number of shaded parts and total number of parts double?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What happens to the shaded area?"
+      },
+      {
+        "speaker": "students",
+        "text": "Equivalent! Have students glue the equivalent fractions into their math journals and label them. Show the pictorial models to the right."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s look at a different model. These 3 wholes are the same. Name the shaded fraction as I point to the model. 1 2 3 While pointing to each model, label with student responses: , , and . 3 6 9"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Are these fractions equivalent? Work with your partner to use the number line to prove your answer. Be ready to share your thinking. NOTES ON MULTIPLE MEANS After students work, have pairs share at tables, or select OF REPRESENTATION: partners to present different methods to the class. Provide Celebrate and encourage English other examples using pictorial models and the number line as language learners’ use of math necessary. language in English. In the Problem Set, encourage learners to whisper the"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 255 (debrief) ---\nA STORY OF UNITS                                                                                                        Lesson 22 3 5\n\n\nLesson 22\nObjective: Generate simple equivalent fractions by using visual fraction\nmodels and the number line.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (12 minutes)\n Application Problem               (8 minutes)\n Concept Development               (30 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (12 minutes)\n\n Whole Number Division 3.OA.7                                                                                             (8 minutes)\n Counting by Fractions Equal to Whole Numbers on the Number Line 3.NF.3a                                                  (4 minutes)\n\nWhole Number Division (8 minutes)\nMaterials: (S) Blank paper\n\nNote: This activity supports fluency with division. Steps 1 and 2 are timed for two minutes each. Step 3 is\ntimed for one minute of testing for each partner. Step 4 is timed for two minutes.\n    1.   Students self-select a number and write a set of multiples up to that number’s multiple of 10\n         vertically down the left-hand side of the page (e.g., 6, 12, 18, 24, 30, 36, 42, 48, 54, 60).\n    2.   Select a multiple, and divide it by the original number (e.g., 24 ÷ 6 = 4).\n    3.   Change papers and test a partner by selecting multiples out of order (e.g., “What is 24 ÷ 6?” “What\n         is 54 ÷ 6?” “What is 12 ÷ 6?”).\n    4.   Redo Steps 1 and 2 to see improvement.\n\nCounting by Fractions Equal to Whole Numbers on the Number Line (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews the concept of naming equivalent fractions on the number line from Lesson 21.\n    T:   (Project a number line partitioned into 12 thirds.) Count by thirds. (Write fractions as students\n         count.)\n    S:   1 third, 2 thirds, 3 thirds, 4 thirds, 5 thirds, 6 thirds, 7 thirds, 8 thirds, 9 thirds, 10 thirds, 11 thirds,\n         12 thirds.\n\n\n                         Lesson 22:                 Generate simple equivalent fractions by using visual fraction models                 254\n                                                    and the number line.\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 256 (concept-development) ---\nA STORY OF UNITS                                                                                                       Lesson 22 3 5\n\n\n    T:   On your personal white board, write the fractions equal to whole numbers in order from least to\n         greatest. Continue beyond those shown on our number line if you finish early.\n                3 6 9          12\n    S:   (Write , , , and        .)\n                3 3 3          3\n\nContinue with the following possible sequence: halves and fourths.\n\n\nApplication Problem (8 minutes)\n\nMr. Ramos wants to put a wire on the wall. He puts 9\nnails equally spaced along the wire. Draw a number\nline representing the wire. Label it from 0 at the start\nof the wire to 1 at the end. Mark each fraction where\nMr. Ramos puts each nail.\n    a.   Build a number bond with unit fractions to 1\n         whole.\n    b.   Write the fraction of the nail that is\n                       1\n         equivalent to of the wire.\n                        2\n\nNote: This problem reviews placing fractions on a number line, decomposing 1 whole into unit fractions, and\n                                                         0\nnaming equivalent fractions. The first nail is located at , which represents no length of wire. This results in 9\n                                                         8\nnails rather than 8 nails, even though the number line is partitioned into eighths. Watch for and discuss\nmisconceptions that arise.\n\n\nConcept Development (30 minutes)\n                                                                                                                NOTES ON\n                                                                                                                MULTIPLE MEANS\nMaterials: (S) Math journal or fraction strips made in\n                              1                                                                                 OF ENGAGEMENT:\n           Lesson 21, new 4 4 -inch × 1-inch fraction strips                                           Students working below grade level\n           (3 per student), crayons, personal white board, glue                                        may alternatively use two fraction\n                                                                                                       strips—one partitioned into sixths, the\n    T:   Take out your math journal, and turn to the page                                              other partitioned into fourths—to\n         where you glued your fraction strips yesterday.                                               compare 3 sixths and 2 fourths. Or,\n         Name the fraction that is equivalent to 1 third.                                              have students draw number lines on\n         2                                                                                             personal white boards so that they may\n    S:     .                                                                                           erase partitioned sixths before\n         6\n                                                                                                       partitioning fourths.\n    T:   Now, name the fractions that are equivalent to 1 half.\n         2 4     3\n    S:    , , and .\n         4 8     6\n    T:   During our Debrief yesterday, I challenged you to find another fraction equivalent to 1 half, even\n                                                     3\n         though it wasn’t shaded. You came up with .\n                                                                          6\n\n\n                        Lesson 22:                 Generate simple equivalent fractions by using visual fraction models                      255\n                                                   and the number line.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 257 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                               Lesson 22 3 5\n\n\n       T:   Now, I want you to work with a partner to look at your\n            fraction strips again. See if you can find other\n            equivalent fractions, shaded or unshaded. Draw and                                                                NOTES ON\n            label them on your personal white board. For                                                                      MULTIPLE MEANS\n                                                             2\n            example, using my fraction strips, I can see that and                                                             OF ENGAGEMENT:\n                                                              2\n            4\n              are equivalent. Fourths are just halves cut in half                                                  Challenge students working above\n            4\n                                                                                                                   grade level to collect the data\n            again. Be ready to explain how you know, just like I\n                                                                                                                   presented (e.g., sets of equivalencies)\n            did.\n                                                                                                                   and organize it in a table or graph.\n       S:   (Possible answers other than those already discussed:                                                  Guide them to analyze the organized\n            2 4 8 3         6   3     6     2      4                                                               data and draw conclusions. Ask (for\n              , , , , and ; and ; and and .)\nMP.3        2     4   8   3          6       4             8           3       6                                   example), “Which fraction has more\n                                                                                          2       4\n       T:   (Have students share their work.) Let’s look at and .                                                  equivalent fractions? Why?”\n                                                           3     6\n            Talk with your partner. Do you notice a relationship\n            between the numbers in these fractions?\n                                                                                                                          2                 4\n       S:   3 is half of 6, and 2 is half of 4.  That’s true. If you make 2 copies of , then you get .  I see\n                                                                                      3              6\n            what you mean about the numbers doubling, but it’s not really 2 copies when you look at the\n            fraction strips. Thirds are larger than sixths.  The numbers double because you’re cutting each\n            third into 2 equal parts to get sixths. But that actually makes the pieces get smaller, even though\n            the number of pieces is doubled. It’s still the same amount.\n                              3            6\n       T:   Now, look at and . Does the same pattern you just noticed apply to these fractions?\n                              4            8\n\n       S:   (Discuss.)\n It may be a good idea to have students repeat the process with whole number fractions if they are unsure.\n       T:   I’m hearing you say that the numbers in these equivalent fractions doubled. Look again at these\n                                  2     4                                                         4\n            equivalent fractions: and . What fraction would we get if we doubled the 4 and 6 in ?\n                                                 3               6                                                                              6\n            8\n       S:     .\n            12\n\n       T:   (Pass out 3 fraction strips to each student.) Fold your strips into thirds, sixths, and twelfths. Label\n                                              2 4     8                  8                  2     4\n            the unit fractions. Then, shade , , and to compare. Is equivalent to and ?\n                                                                     3 6           12                    12                     3      6\n\n       S:   They are equivalent!\n       T:   What did we do to the equal parts each time to make the number of shaded parts and total number\n            of parts double?\n       S:   We cut them in 2. Thirds get cut in 2 to make sixths, and sixths get cut in 2 to make twelfths.\n       T:   Did the whole change?\n       S:   Nope, it just has more equal parts.\n       T:   What happens to the shaded area?\n       S:   It stays the same size.\n\n\n                                  Lesson 22:                   Generate simple equivalent fractions by using visual fraction models                          256\n                                                               and the number line.\n\n                                  ©2015 Great Minds. eureka-math.org\n                                  G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 258 (debrief) ---\nA STORY OF UNITS                                                                                                       Lesson 22 3 5\n\n\n    T:   So, the fractions are…?\n    S:   Equivalent!\nHave students glue the equivalent fractions into their math journals and label them.\nShow the pictorial models to the right.\n    T:   Let’s look at a different model. These 3\n         wholes are the same. Name the shaded\n         fraction as I point to the model.\n\n                                                                                     1 2     3\nWhile pointing to each model, label with student responses:                           , , and .\n                                                                                     3 6     9\n    T:   Are these fractions equivalent? Work with your\n         partner to use the number line to prove your answer.\n         Be ready to share your thinking.                                                                       NOTES ON\n                                                                                                                MULTIPLE MEANS\nAfter students work, have pairs share at tables, or select                                                      OF REPRESENTATION:\npartners to present different methods to the class. Provide\n                                                                                                       Celebrate and encourage English\nother examples using pictorial models and the number line as\n                                                                                                       language learners’ use of math\nnecessary.                                                                                             language in English. In the Problem\n                                                                                                       Set, encourage learners to whisper the\nProblem Set (10 minutes)                                                                               unit fraction, whisper count the shaded\n                                                                                                       units, and whisper the shaded fraction\nStudents should do their personal best to complete the                                                 as they write.\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment\nby specifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Generate simple equivalent fractions by\nusing visual fraction models and the number line.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Student Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\n\n\n                        Lesson 22:                 Generate simple equivalent fractions by using visual fraction models                      257\n                                                   and the number line.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 259 (debrief) ---\nA STORY OF UNITS                                                                                                      Lesson 22 3 5\n\n\nAny combination of the questions below may be used to lead the discussion.\n       What did you notice about the models in\n        Problem 1?\n       In Problem 1, which shapes were most difficult to\n        match? Why?\n       What might be another way to draw a fraction\n                      3\n        equivalent to ?\n                      4\n       Look at Problem 2. What pattern do you notice\n        between the 3 sets of models?\n       How does the pattern you noticed in Problem 2\n        relate to other parts of today’s lesson?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be\nread aloud to the students.\n\n\n                       Lesson 22:                 Generate simple equivalent fractions by using visual fraction models              258\n                                                  and the number line.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 260 (problem-set) ---\nA STORY OF UNITS                                                                             Lesson 22 Problem Set 3 5\n\n\nName                                                                                               Date\n\n1. Write the shaded fraction of each figure on the blank. Then, draw a line to match the equivalent\n   fractions.\n\n\n       ________                                                                                                          ________\n\n\n       ________                                                                                                          ________\n\n\n       ________                                                                                                          ________\n\n\n       _________                                                                                                         ________\n\n\n                       Lesson 22:                 Generate simple equivalent fractions by using visual fraction models              259\n                                                  and the number line.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 261 (problem-set) ---\nA STORY OF UNITS                                                                                Lesson 22 Problem Set 3 5\n\n\n2. Write the missing parts of the fractions.\n\n\n         1                                                   2             1                                    4           8\n              =                                                     =                                                  =\n         3            6                                                    4                                    8\n\n                                             1                                                         1\n3. Why does it take 2 copies of to show the same amount as 1 copy of ? Explain your answer in words\n                               8                                    4\n   and pictures.\n\n\n                                                                                         1\n4. How many sixths does it take to make the same amount as ? Explain your answer in words and pictures.\n                                                                                         3\n\n\n5. Why does it take 10 copies of 1 sixth to make the same amount as 5 copies of 1 third? Explain your\n   answer in words and pictures.\n\n\n                          Lesson 22:                 Generate simple equivalent fractions by using visual fraction models       260\n                                                     and the number line.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 262 (exit-ticket) ---\nA STORY OF UNITS                                                                                Lesson 22 Exit Ticket 3 5\n\n\nName                                                                                              Date\n\n1. Draw and label two models that show equivalent fractions.\n\n\n2. Draw a number line that proves your thinking about Problem 1.\n\n\n                      Lesson 22:                 Generate simple equivalent fractions by using visual fraction models     261\n                                                 and the number line.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 263 (homework) ---\nA STORY OF UNITS                                                                               Lesson 22 Homework 3 5\n\n\nName                                                                                               Date\n\n1. Write the shaded fraction of each figure on the blank. Then, draw a line to match the equivalent\n   fractions.\n\n\n       ________                                                                                                          ________\n\n\n       ________                                                                                                          ________\n\n\n       ________                                                                                                          ________\n\n\n       ________                                                                                                          ________\n\n\n                       Lesson 22:                 Generate simple equivalent fractions by using visual fraction models          262\n                                                  and the number line.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 264 (homework) ---\nA STORY OF UNITS                                                                                  Lesson 22 Homework 3 5\n\n\n2. Complete the fractions to make true statements.\n\n\n         1            4                                      3                                                  3           6\n              =                                                     =                                                  =\n         2                                                   5              10                                  9\n\n\n                                             1                                                         1\n3. Why does it take 3 copies of to show the same amount as 1 copy of ? Explain your answer in words\n                               6                                    2\n   and pictures.\n\n\n                                                                                          1\n4. How many ninths does it take to make the same amount as ? Explain your answer in words and pictures.\n                                                                                          3\n\n\n                                                                        3\n5. A pie was cut into 8 equal slices. If Ruben ate of the pie, how many slices did he eat? Explain your\n                                                  4\n   answer using a number line and words.\n\n\n                          Lesson 22:                 Generate simple equivalent fractions by using visual fraction models       263\n                                                     and the number line.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 260,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                             Lesson 22 Problem Set 3 5\n\n\nName                                                                                               Date\n\n1. Write the shaded fraction of each figure on the blank. Then, draw a line to match the equivalent\n   fractions.\n\n\n       ________                                                                                                          ________\n\n\n       ________                                                                                                          ________\n\n\n       ________                                                                                                          ________\n\n\n       _________                                                                                                         ________\n\n\n                       Lesson 22:                 Generate simple equivalent fractions by using visual fraction models              259\n                                                  and the number line.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      },
+      {
+        "pdfPage": 261,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                Lesson 22 Problem Set 3 5\n\n\n2. Write the missing parts of the fractions.\n\n\n         1                                                   2             1                                    4           8\n              =                                                     =                                                  =\n         3            6                                                    4                                    8\n\n                                             1                                                         1\n3. Why does it take 2 copies of to show the same amount as 1 copy of ? Explain your answer in words\n                               8                                    4\n   and pictures.\n\n\n                                                                                         1\n4. How many sixths does it take to make the same amount as ? Explain your answer in words and pictures.\n                                                                                         3\n\n\n5. Why does it take 10 copies of 1 sixth to make the same amount as 5 copies of 1 third? Explain your\n   answer in words and pictures.\n\n\n                          Lesson 22:                 Generate simple equivalent fractions by using visual fraction models       260\n                                                     and the number line.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 405,
+        "text": "A STORY OF UNITS                                                                        Lesson 22 Answer Key 3 5\n\n\nLesson 22\nProblem Set\n1.    1            2\n      2\n        matched to 4\n      4             2\n      6\n        matched to 3\n      3            6\n        matched to\n      4            8\n      3            1\n        matched to\n      9            3\n2.    2; 8; 16\n3.    Explanations will vary.\n4.    2 sixths, explanations will vary.\n5.    Explanations will vary.\n\n\nExit Ticket\n1.    Answers will vary.\n2.    Answers will vary.\n\n\nHomework\n      1            3\n1.      matched to\n      2            6\n      2            4\n      5\n        matched to 10\n      8             4\n      10\n         matched to 5\n      2            1\n      8\n        matched to 4\n\n2.    8; 6; 18\n3.    Explanations will vary.\n4.    3 ninths, explanations will vary.\n5.    6; explanations will vary.\n\n\n                        Module 5:                  Fractions as Numbers on the Number Line                         404\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      }
+    ]
+  }
+}

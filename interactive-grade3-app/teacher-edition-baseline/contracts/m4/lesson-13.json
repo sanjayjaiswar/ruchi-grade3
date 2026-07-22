@@ -1,0 +1,499 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m4-l13",
+  "moduleId": "m4",
+  "lessonNumber": 13,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+    "teacherEditionBytes": 10725683,
+    "lessonPdfPages": {
+      "start": 161,
+      "end": 172
+    },
+    "problemSetPdfPages": [
+      167,
+      168
+    ],
+    "exitTicketPdfPages": [
+      169
+    ],
+    "homeworkPdfPages": [
+      170,
+      171
+    ],
+    "answerKeyPdfPages": [
+      230
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m4-student/workbook-page-057.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m4-teacher/page-167.png",
+      "/source-pages/m4-teacher/page-168.png",
+      "/source-pages/m4-teacher/page-230.png"
+    ]
+  },
+  "objective": "Find areas by decomposing into rectangles or completing composite figures to form rectangles.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "Materials: (S) Personal white board, large grid (Template)\n                                                                                                                Large Grid with Shaded Shape\nProblem 1: Add using the break apart strategy to find the area of a\ncomposite shape.\nDistribute one large grid to each student. Draw or project the\nshaded shape shown to the right.\n    T:   Draw and shade the shape on your grid.\n    S:   (Draw and shade.)\n    T:   How do you find the area of a rectangle?\n    S:   Multiply the side lengths!\n\n\n                        Lesson 13:                 Find areas by decomposing into rectangles or completing composite                                  161\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 13 3 4\n\n\n       T: Talk to your partner: Can we find the area of the shaded figure by multiplying side lengths? How do\n          you know?\n      S: No, because it isn’t a rectangle.  We can count the unit squares inside.\n      T: In the Application Problem, we used the break apart and distribute strategy to find the area of a\n          larger rectangle by breaking it into smaller rectangles. Turn and talk to your partner: How might we\n          use a strategy like that to find the area of the shaded figure?\n      S: We can break it into a square and a rectangle.  We can break it into three squares.\n      T: Draw a dotted line to show how to break the shaded figure apart into a square and rectangle.\n      S: (Draw.)\n      T: (Model as shown on the right.) What equation tells\n          you the area of the square on the top?\n      S: 2 × 2 = 4.\n      T: What equation tells you the area of the rectangle on\n          the bottom?\n      S: 2 × 4 = 8.\n      T: How do we use those measurements to find the area\n          of the shaded figure?\nMP.7 S: Add them together!\n      T: What is the sum of 8 and 4?\n      S: 12.\n      T: What is the area of the shaded figure?\n      S: 12 square units!\n  Draw or project the shape shown to the right.\n      T: We can also find the area of the shaded figure by\n          thinking about a 4 × 4 square with missing units. Turn\n          and talk to your partner: How can we find the shaded\n          area using the unshaded square?\n      S: The area of the square is 16 square units.  Since the\n          entire square isn’t shaded, we need to subtract the\n          4 square units that are unshaded.  16 − 4 = 12.\n      T: There are different strategies of finding the area of a figure. It just depends on how you choose to\n          look at it.\n  Continue with the following suggested examples:\n\n\n                          Lesson 13:                 Find areas by decomposing into rectangles or completing composite                         162\n                                                     figures to form rectangles.\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                                   Lesson 13 3 4\n\n\nProblem 2: Subtract to find the area of a composite shape.                                                                                         6 cm\nDraw or project the shape shown to the right.\n    T: This figure shows a small rectangle cut out of a larger, shaded\n        rectangle. How can we find the area of the shaded figure?\n                                                                              6 cm\n    S: We can break apart the shaded part.  Or we can                                        4 cm\n        subtract the unshaded area from the shaded square.\n    T: (Shade in the white shape.) We now have a large, shaded square.               2 cm\n        Write a number sentence to find the area of the large square.\n    S: (Write 6 × 6 = 36.)\n    T: What is the area of the square?\n    S: 36 square centimeters.\n    T: (Erase the shading inside the white rectangle.) Beneath the number sentence you just wrote, write\n        a number sentence to find the area for the shape we “cut out.”\n    S: (Write 2 × 4 = 8.)\n    T: What is the area of the white shape?\n    S: 8 square centimeters.\n    T: The area of the square is 36 square centimeters. We cut out, or took away, 8 square centimeters of\n        shading. Turn and talk to your partner: How can we find the area of the shaded region?\n    S: Subtract 8 square centimeters from 36 square centimeters!\n    T: Write a number sentence to find the area of the shaded region.\n    S: (Write 36 – 8 = 28.)\nContinue with the following example:\n                                6 in\n\n                                 3 in\n           4 in    2 in\n\n\nProblem 3: Subtract to find the area of a composite shape with unknown side lengths.\nDraw or project the shape shown to the right.\n                                                                                                                                    11 ft\n    T:   This figure also shows a small rectangle cut out of\n         a larger, shaded rectangle, but what is unknown?                                              4 ft\n    S:   The side lengths of the smaller rectangle.\n                                                                                                                                                          9 ft\n    T:   Do we have enough information to find the side\n         lengths of the smaller rectangle?                                                  _____ ft\n    S:   No, I don’t think so.  We know the side lengths\n         of the larger rectangle.  Maybe we can\n         subtract to the find the unknown side lengths.                                                           _____ ft                  5 ft\n\n\n                          Lesson 13:                 Find areas by decomposing into rectangles or completing composite                                           163\n                                                     figures to form rectangles.\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 13 3 4\n\n\n    T:   Opposite sides of a rectangle are equal. Since we know\n         the length of the rectangle is 9 feet, what is the                                                                 NOTES ON\n         opposite side length?                                                                                              MULTIPLE MEANS\n    S:   9 feet.                                                                                                            OF ENGAGEMENT:\n    T:   You can then find the unknown lengths by subtracting                                                   Extend Problem 3 to students working\n         the known, 4 feet, from the total, 9 feet.                                                             above grade level. Challenge students\n                                                                                                                to think about a real-life scenario in\n    S:   The unknown length is 5 feet!                                                                          which this model might be used and to\n    T:   Use the same strategy to find the unknown width.                                                       write a matching word problem.\n    S:   (Write 11 – 5 = 6.)                                                                                    Always offer challenges and extensions\n                                                                                                                to learners as alternatives. Here, a\n    T:   What is the unknown width?                                                                             student might be given the option of\n    S:   6 feet!                                                                                                solving one other problem in addition\n    T:   Can we now find the area of the shaded figure?                                                         to this extension. Another option\n                                                                                                                would be to direct students to solve\n    S:   Yes!                                                                                                   the problem that later appears in the\n    T:   With your partner, find the area of the shaded figure.",
+    "fluencyPracticeText": " Group Counting 3.OA.1                                 (4 minutes)\n Find the Common Products 3.OA.7                       (8 minutes)\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally\nchanging the direction of the count.\n        Threes to 30\n        Sixes to 60\n        Eights to 80\n        Nines to 90\n\nFind the Common Products (8 minutes)\nMaterials: (S) Blank paper\n\nNote: This fluency activity reviews multiplication patterns.\nAfter listing the products of 4 and 8, guide students through the\nfollowing steps:\n    T:   Draw a line to match the products that appear in both\n         columns.\n    S:   (Match 8, 16, 24, 32, and 40.)\n\n\n                        Lesson 13:                 Find areas by decomposing into rectangles or completing composite                         160\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 13 3 4\n\n\n    T:   (Write 2 × 4 = 8, etc., next to each matched product on the left half of the paper.) Write the rest of\n         the number sentences like I did.\n    S:   (Write number sentences.)\n    T:   (Write 8 = 1 × 8, etc., next to each matched product on the right half of the paper.) Write the rest of\n         the number sentences like I did.\n    S:   (Write number sentences.)\n    T:   (Write 2 × 4 = __ × 8.) Say the true number sentence.\n    S:   2 × 4 = 1 × 8.\n    T:   (Write 2 × 4 = 1 × 8.) Write the remaining equal facts as number sentences.\n    S:   (Write 4 × 4 = 2 × 8, 6 × 4 = 3 × 8, 8 × 4 = 4 × 8, and 10 × 4 = 5 × 8.)\n    T:   Discuss the patterns in your number sentences.",
+    "problemSetGuidanceText": "Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For\nsome classes, it may be appropriate to modify the assignment by specifying which problems they work on\nfirst. Some problems do not specify a method for solving. Students should solve these problems using the\nRDW approach used for Application Problems.",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Draw and shade the shape on your grid."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and shade.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How do you find the area of a rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "Multiply the side lengths! figures to form rectangles. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 13 3 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner: Can we find the area of the shaded figure by multiplying side lengths? How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, because it isn’t a rectangle.  We can count the unit squares inside."
+      },
+      {
+        "speaker": "teacher",
+        "text": "In the Application Problem, we used the break apart and distribute strategy to find the area of a larger rectangle by breaking it into smaller rectangles. Turn and talk to your partner: How might we use a strategy like that to find the area of the shaded figure?"
+      },
+      {
+        "speaker": "students",
+        "text": "We can break it into a square and a rectangle.  We can break it into three squares."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a dotted line to show how to break the shaded figure apart into a square and rectangle."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Model as shown on the right.) What equation tells you the area of the square on the top?"
+      },
+      {
+        "speaker": "students",
+        "text": "2 × 2 = 4."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What equation tells you the area of the rectangle on the bottom?"
+      },
+      {
+        "speaker": "students",
+        "text": "2 × 4 = 8."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How do we use those measurements to find the area of the shaded figure? MP.7 S: Add them together!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the sum of 8 and 4?"
+      },
+      {
+        "speaker": "students",
+        "text": "12."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the area of the shaded figure?"
+      },
+      {
+        "speaker": "students",
+        "text": "12 square units! Draw or project the shape shown to the right."
+      },
+      {
+        "speaker": "teacher",
+        "text": "We can also find the area of the shaded figure by thinking about a 4 × 4 square with missing units. Turn and talk to your partner: How can we find the shaded area using the unshaded square?"
+      },
+      {
+        "speaker": "students",
+        "text": "The area of the square is 16 square units.  Since the entire square isn’t shaded, we need to subtract the 4 square units that are unshaded.  16 − 4 = 12."
+      },
+      {
+        "speaker": "teacher",
+        "text": "There are different strategies of finding the area of a figure. It just depends on how you choose to look at it. Continue with the following suggested examples: figures to form rectangles. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 13 3 4 Draw or project the shape shown to the right."
+      },
+      {
+        "speaker": "teacher",
+        "text": "This figure shows a small rectangle cut out of a larger, shaded rectangle. How can we find the area of the shaded figure? 6 cm"
+      },
+      {
+        "speaker": "students",
+        "text": "We can break apart the shaded part.  Or we can 4 cm subtract the unshaded area from the shaded square."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Shade in the white shape.) We now have a large, shaded square. 2 cm Write a number sentence to find the area of the large square."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 6 × 6 = 36.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the area of the square?"
+      },
+      {
+        "speaker": "students",
+        "text": "36 square centimeters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Erase the shading inside the white rectangle.) Beneath the number sentence you just wrote, write a number sentence to find the area for the shape we “cut out.”"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 2 × 4 = 8.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the area of the white shape?"
+      },
+      {
+        "speaker": "students",
+        "text": "8 square centimeters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "The area of the square is 36 square centimeters. We cut out, or took away, 8 square centimeters of shading. Turn and talk to your partner: How can we find the area of the shaded region?"
+      },
+      {
+        "speaker": "students",
+        "text": "Subtract 8 square centimeters from 36 square centimeters!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a number sentence to find the area of the shaded region."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 36 – 8 = 28.) Continue with the following example: 6 in 3 in 4 in 2 in Draw or project the shape shown to the right. 11 ft"
+      },
+      {
+        "speaker": "teacher",
+        "text": "This figure also shows a small rectangle cut out of a larger, shaded rectangle, but what is unknown? 4 ft"
+      },
+      {
+        "speaker": "students",
+        "text": "The side lengths of the smaller rectangle. 9 ft"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Do we have enough information to find the side lengths of the smaller rectangle? _____ ft"
+      },
+      {
+        "speaker": "students",
+        "text": "No, I don’t think so.  We know the side lengths of the larger rectangle.  Maybe we can subtract to the find the unknown side lengths. _____ ft 5 ft figures to form rectangles. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 13 3 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Opposite sides of a rectangle are equal. Since we know the length of the rectangle is 9 feet, what is the NOTES ON opposite side length? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "9 feet. OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "You can then find the unknown lengths by subtracting Extend Problem 3 to students working the known, 4 feet, from the total, 9 feet. above grade level. Challenge students to think about a real-life scenario in"
+      },
+      {
+        "speaker": "students",
+        "text": "The unknown length is 5 feet! which this model might be used and to"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use the same strategy to find the unknown width. write a matching word problem."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 11 – 5 = 6.) Always offer challenges and extensions to learners as alternatives. Here, a"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the unknown width? student might be given the option of"
+      },
+      {
+        "speaker": "students",
+        "text": "6 feet! solving one other problem in addition"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can we now find the area of the shaded figure? to this extension. Another option would be to direct students to solve"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes! the problem that later appears in the"
+      },
+      {
+        "speaker": "teacher",
+        "text": "With your partner, find the area of the shaded figure."
+      }
+    ],
+    "teacherPrompts": [
+      "Draw and shade the shape on your grid.",
+      "How do you find the area of a rectangle?",
+      "Talk to your partner: Can we find the area of the shaded figure by multiplying side lengths? How do you know?",
+      "In the Application Problem, we used the break apart and distribute strategy to find the area of a larger rectangle by breaking it into smaller rectangles. Turn and talk to your partner: How might we use a strategy like that to find the area of the shaded figure?",
+      "Draw a dotted line to show how to break the shaded figure apart into a square and rectangle.",
+      "(Model as shown on the right.) What equation tells you the area of the square on the top?",
+      "What equation tells you the area of the rectangle on the bottom?",
+      "How do we use those measurements to find the area of the shaded figure? MP.7 S: Add them together!",
+      "What is the sum of 8 and 4?",
+      "What is the area of the shaded figure?",
+      "We can also find the area of the shaded figure by thinking about a 4 × 4 square with missing units. Turn and talk to your partner: How can we find the shaded area using the unshaded square?",
+      "There are different strategies of finding the area of a figure. It just depends on how you choose to look at it. Continue with the following suggested examples: figures to form rectangles. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 13 3 4 Draw or project the shape shown to the right.",
+      "This figure shows a small rectangle cut out of a larger, shaded rectangle. How can we find the area of the shaded figure? 6 cm",
+      "(Shade in the white shape.) We now have a large, shaded square. 2 cm Write a number sentence to find the area of the large square.",
+      "What is the area of the square?",
+      "(Erase the shading inside the white rectangle.) Beneath the number sentence you just wrote, write a number sentence to find the area for the shape we “cut out.”",
+      "What is the area of the white shape?",
+      "The area of the square is 36 square centimeters. We cut out, or took away, 8 square centimeters of shading. Turn and talk to your partner: How can we find the area of the shaded region?",
+      "Write a number sentence to find the area of the shaded region.",
+      "This figure also shows a small rectangle cut out of a larger, shaded rectangle, but what is unknown? 4 ft",
+      "Do we have enough information to find the side lengths of the smaller rectangle? _____ ft",
+      "Opposite sides of a rectangle are equal. Since we know the length of the rectangle is 9 feet, what is the NOTES ON opposite side length? MULTIPLE MEANS",
+      "You can then find the unknown lengths by subtracting Extend Problem 3 to students working the known, 4 feet, from the total, 9 feet. above grade level. Challenge students to think about a real-life scenario in",
+      "Use the same strategy to find the unknown width. write a matching word problem.",
+      "What is the unknown width? student might be given the option of",
+      "Can we now find the area of the shaded figure? to this extension. Another option would be to direct students to solve",
+      "With your partner, find the area of the shaded figure."
+    ],
+    "debriefPrompt": "How did you break apart the rectangles in Figure 4? Did anyone break apart the rectangles in a different way? (A rectangle of 10 by 2.) Lesson 13: Find areas by decomposing into rectangles or completing composite 164 figures to form rectangles.",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Each of the following figures is made up of 2 rectangles. Find the total area of each figure. Figure 1 Figure 2 A C B D E Figure 4 Figure 3 F G H Figure 1: Area of A + Area of B: ____ sq units + ____ sq units = ____ sq units Figure 2: Area of C + Area of D: ____ sq units + ____ sq units = ____ sq units Figure 3: Area of E + Area of F: ____ sq units + ____ sq units = ____ sq units Figure 4: Area of G + Area of H: ____ sq units + ____ sq units = ____sq units figures to form rectangles. The figure shows a small rectangle cut out of a bigger rectangle. Find the area of the shaded figure. 9 cm Area of the shaded figure: ____ – ____ = ____ 10 cm Area of the shaded figure: ____ square centimeters 3 cm 4 cm 3. The figure shows a small rectangle cut out of a big rectangle. a. Label the unknown measurements. 4 cm ____ cm b. Area of the big rectangle: ____ cm ____ cm × ____ cm = ____ sq cm 7 cm c. Area of the small rectangle: 3 cm ____ cm × ____ cm = ____ sq cm 9 cm d. Find the area of the shaded figure. figures to form rectangles.",
+        "equations": [
+          "____ = ____"
+        ]
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                   Lesson 13 Problem Set 3 4\n\n\nName                                                                                                        Date\n\n1.   Each of the following figures is made up of 2 rectangles. Find the total area of each figure.\n\n\n             Figure 1\n                                                                             Figure 2\n                    A                                                                                  C\n\n\n                B                                                                                      D\n\n\n                                         E                                         Figure 4\n             Figure 3\n\n\n                        F\n                                                                                                      G\n\n\n                                                                                                                                  H\n\n\n                                        18\n     Figure 1: Area of A + Area of B: _________ sq units + _________ sq units = _________ sq units\n\n\n     Figure 2: Area of C + Area of D: _________ sq units + _________ sq units = _________ sq units\n\n\n     Figure 3: Area of E + Area of F: _________ sq units + _________ sq units = _________ sq units\n\n\n     Figure 4: Area of G + Area of H: _________ sq units + _________ sq units = _________sq units\n\n\n                        Lesson 13:                 Find areas by decomposing into rectangles or completing composite                  166\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                       Lesson 13 Problem Set 3 4\n\n\n2.     The figure shows a small rectangle cut out of a bigger rectangle. Find the area of the shaded figure.\n\n                               9 cm\n\n\n                                                                           Area of the shaded figure: ______ – ______ = ______\n10 cm\n                                                                           Area of the shaded figure: ______ square centimeters\n                                  3 cm\n\n\n                     4 cm\n\n\n3.     The figure shows a small rectangle cut out of a big rectangle.\n\n                                                                                             a. Label the unknown measurements.\n              4 cm                       _____ cm\n\n                                                                                             b. Area of the big rectangle:\n                                                                   _____ cm\n                                                                                                  _____ cm × _____ cm = _____ sq cm\n7 cm\n\n                                                                                             c. Area of the small rectangle:\n                                                                   3 cm\n                                                                                                  _____ cm × _____ cm = _____ sq cm\n\n                        9 cm\n\n                                                                                             d. Find the area of the shaded figure.\n\n\n                            Lesson 13:                 Find areas by decomposing into rectangles or completing composite              167\n                                                       figures to form rectangles.\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    9, 27; 18, 15, 33; 9, 21, 30; answers will vary, 55\n2.    90, 12, 78; 78\n3.    a. 5, 4\n      b. 7, 9, 63\n      c. 4, 5, 20\n      d. 43 sq cm",
+    "answerKeyText": "A STORY OF UNITS                                                                                         Lesson 13 Answer Key 3 4\n\n\nLesson 13\nProblem Set\n1.    9, 27; 18, 15, 33; 9, 21, 30; answers will vary, 55\n2.    90, 12, 78; 78\n3.    a. 5, 4\n      b. 7, 9, 63\n      c. 4, 5, 20\n      d. 43 sq cm\n\n\nExit Ticket\n32, 20, 52\n\n\nHomework\n1.    15, 9, 24; 24, 20, 44; 12, 32, 44; 15, 25, 40\n2.    56, 9, 47; 47\n3.    a. 4, 3\n      b. 8, 9, 72\n      c. 4, 3, 12\n      d. 60 sq cm\n\n\n                        Module 4:                  Multiplication and Area                                                          229\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "number-bond",
+      "ruler-or-length",
+      "area-model",
+      "geometry-diagram",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "number-bond": [
+        "Problem 1: Add using the break apart strategy to find the area of a",
+        "T: In the Application Problem, we used the break apart and distribute strategy to find the area of a",
+        "S: We can break apart the shaded part.  Or we can 4 cm"
+      ],
+      "ruler-or-length": [
+        "S: Multiply the side lengths!",
+        "T: Talk to your partner: Can we find the area of the shaded figure by multiplying side lengths? How do",
+        "S: 36 square centimeters.",
+        "S: 8 square centimeters.",
+        "T: The area of the square is 36 square centimeters. We cut out, or took away, 8 square centimeters of",
+        "S: Subtract 8 square centimeters from 36 square centimeters!",
+        "Problem 3: Subtract to find the area of a composite shape with unknown side lengths.",
+        "S: The side lengths of the smaller rectangle."
+      ],
+      "area-model": [
+        "S: 12 square units!",
+        "S: The area of the square is 16 square units.  Since the",
+        "4 square units that are unshaded.  16 − 4 = 12."
+      ],
+      "geometry-diagram": [
+        "Find areas by decomposing into rectangles or completing composite figures to form rectangles.",
+        "T: How do you find the area of a rectangle?",
+        "Lesson 13: Find areas by decomposing into rectangles or completing composite 161",
+        "figures to form rectangles.",
+        "S: No, because it isn’t a rectangle.  We can count the unit squares inside.",
+        "larger rectangle by breaking it into smaller rectangles. Turn and talk to your partner: How might we",
+        "S: We can break it into a square and a rectangle.  We can break it into three squares.",
+        "T: Draw a dotted line to show how to break the shaded figure apart into a square and rectangle."
+      ],
+      "money-model": [
+        "S: 36 square centimeters.",
+        "S: 8 square centimeters.",
+        "T: The area of the square is 36 square centimeters. We cut out, or took away, 8 square centimeters of",
+        "S: Subtract 8 square centimeters from 36 square centimeters!",
+        "Area of the shaded figure: ______ square centimeters"
+      ],
+      "picture-or-drawing": [
+        "Large Grid with Shaded Shape",
+        "Distribute one large grid to each student. Draw or project the",
+        "shaded shape shown to the right.",
+        "T: Draw and shade the shape on your grid.",
+        "S: (Draw and shade.)",
+        "T: Talk to your partner: Can we find the area of the shaded figure by multiplying side lengths? How do",
+        "use a strategy like that to find the area of the shaded figure?",
+        "T: Draw a dotted line to show how to break the shaded figure apart into a square and rectangle."
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Draw and shade the shape on your grid."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and shade.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner: Can we find the area of the shaded figure by multiplying side lengths? How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, because it isn’t a rectangle.  We can count the unit squares inside."
+      },
+      {
+        "speaker": "teacher",
+        "text": "In the Application Problem, we used the break apart and distribute strategy to find the area of a larger rectangle by breaking it into smaller rectangles. Turn and talk to your partner: How might we use a strategy like that to find the area of the shaded figure?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a dotted line to show how to break the shaded figure apart into a square and rectangle."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Model as shown on the right.) What equation tells you the area of the square on the top?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How do we use those measurements to find the area of the shaded figure? MP.7 S: Add them together!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the area of the shaded figure?"
+      },
+      {
+        "speaker": "students",
+        "text": "12 square units! Draw or project the shape shown to the right."
+      },
+      {
+        "speaker": "teacher",
+        "text": "We can also find the area of the shaded figure by thinking about a 4 × 4 square with missing units. Turn and talk to your partner: How can we find the shaded area using the unshaded square?"
+      },
+      {
+        "speaker": "students",
+        "text": "The area of the square is 16 square units.  Since the entire square isn’t shaded, we need to subtract the 4 square units that are unshaded.  16 − 4 = 12."
+      },
+      {
+        "speaker": "teacher",
+        "text": "There are different strategies of finding the area of a figure. It just depends on how you choose to look at it. Continue with the following suggested examples: figures to form rectangles. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 13 3 4 Draw or project the shape shown to the right."
+      },
+      {
+        "speaker": "teacher",
+        "text": "This figure shows a small rectangle cut out of a larger, shaded rectangle. How can we find the area of the shaded figure? 6 cm"
+      },
+      {
+        "speaker": "students",
+        "text": "We can break apart the shaded part.  Or we can 4 cm subtract the unshaded area from the shaded square."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Shade in the white shape.) We now have a large, shaded square. 2 cm Write a number sentence to find the area of the large square."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 6 × 6 = 36.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Erase the shading inside the white rectangle.) Beneath the number sentence you just wrote, write a number sentence to find the area for the shape we “cut out.”"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 2 × 4 = 8.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "The area of the square is 36 square centimeters. We cut out, or took away, 8 square centimeters of shading. Turn and talk to your partner: How can we find the area of the shaded region?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a number sentence to find the area of the shaded region."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 36 – 8 = 28.) Continue with the following example: 6 in 3 in 4 in 2 in Draw or project the shape shown to the right. 11 ft"
+      },
+      {
+        "speaker": "teacher",
+        "text": "This figure also shows a small rectangle cut out of a larger, shaded rectangle, but what is unknown? 4 ft"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 161 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 13 3 4\n\n\nLesson 13\nObjective: Find areas by decomposing into rectangles or completing\ncomposite figures to form rectangles.\n\nSuggested Lesson Structure\n\n Fluency Practice                 (12 minutes)\n Application Problem              (6 minutes)\n Concept Development              (32 minutes)\n Student Debrief                  (10 minutes)\n   Total Time                      (60 minutes)\n\n\nFluency Practice (12 minutes)\n\n Group Counting 3.OA.1                                 (4 minutes)\n Find the Common Products 3.OA.7                       (8 minutes)\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally\nchanging the direction of the count.\n        Threes to 30\n        Sixes to 60\n        Eights to 80\n        Nines to 90\n\nFind the Common Products (8 minutes)\nMaterials: (S) Blank paper\n\nNote: This fluency activity reviews multiplication patterns.\nAfter listing the products of 4 and 8, guide students through the\nfollowing steps:\n    T:   Draw a line to match the products that appear in both\n         columns.\n    S:   (Match 8, 16, 24, 32, and 40.)\n\n\n                        Lesson 13:                 Find areas by decomposing into rectangles or completing composite                         160\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 162 (concept-development) ---\nA STORY OF UNITS                                                                                                               Lesson 13 3 4\n\n\n    T:   (Write 2 × 4 = 8, etc., next to each matched product on the left half of the paper.) Write the rest of\n         the number sentences like I did.\n    S:   (Write number sentences.)\n    T:   (Write 8 = 1 × 8, etc., next to each matched product on the right half of the paper.) Write the rest of\n         the number sentences like I did.\n    S:   (Write number sentences.)\n    T:   (Write 2 × 4 = __ × 8.) Say the true number sentence.\n    S:   2 × 4 = 1 × 8.\n    T:   (Write 2 × 4 = 1 × 8.) Write the remaining equal facts as number sentences.\n    S:   (Write 4 × 4 = 2 × 8, 6 × 4 = 3 × 8, 8 × 4 = 4 × 8, and 10 × 4 = 5 × 8.)\n    T:   Discuss the patterns in your number sentences.\n\n\nApplication Problem (6 minutes)\n\nAnil finds the area of a 5-inch by 17-inch rectangle by breaking it\ninto 2 smaller rectangles. Show one way that he could have                                                                  NOTES ON\nsolved the problem. What is the area of the rectangle?                                                                      MULTIPLE MEANS\n                                                                                                                            OF ENGAGEMENT:\n                                                                                                                Students who solve the Application\n                                                                                                                Problem quickly may enjoy comparing\n                                                                                                                their solution strategy with others.\n                                                                                                                They may discuss or journal about their\n                                                                                                                reasoning.\n\n\nNote: This problem reinforces the strategy of breaking apart a larger shape into 2 smaller shapes to find the\ntotal area.\n\n\nConcept Development (32 minutes)\n\nMaterials: (S) Personal white board, large grid (Template)\n                                                                                                                Large Grid with Shaded Shape\nProblem 1: Add using the break apart strategy to find the area of a\ncomposite shape.\nDistribute one large grid to each student. Draw or project the\nshaded shape shown to the right.\n    T:   Draw and shade the shape on your grid.\n    S:   (Draw and shade.)\n    T:   How do you find the area of a rectangle?\n    S:   Multiply the side lengths!\n\n\n                        Lesson 13:                 Find areas by decomposing into rectangles or completing composite                                  161\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 163 (application-problem) ---\nA STORY OF UNITS                                                                                                              Lesson 13 3 4\n\n\n       T: Talk to your partner: Can we find the area of the shaded figure by multiplying side lengths? How do\n          you know?\n      S: No, because it isn’t a rectangle.  We can count the unit squares inside.\n      T: In the Application Problem, we used the break apart and distribute strategy to find the area of a\n          larger rectangle by breaking it into smaller rectangles. Turn and talk to your partner: How might we\n          use a strategy like that to find the area of the shaded figure?\n      S: We can break it into a square and a rectangle.  We can break it into three squares.\n      T: Draw a dotted line to show how to break the shaded figure apart into a square and rectangle.\n      S: (Draw.)\n      T: (Model as shown on the right.) What equation tells\n          you the area of the square on the top?\n      S: 2 × 2 = 4.\n      T: What equation tells you the area of the rectangle on\n          the bottom?\n      S: 2 × 4 = 8.\n      T: How do we use those measurements to find the area\n          of the shaded figure?\nMP.7 S: Add them together!\n      T: What is the sum of 8 and 4?\n      S: 12.\n      T: What is the area of the shaded figure?\n      S: 12 square units!\n  Draw or project the shape shown to the right.\n      T: We can also find the area of the shaded figure by\n          thinking about a 4 × 4 square with missing units. Turn\n          and talk to your partner: How can we find the shaded\n          area using the unshaded square?\n      S: The area of the square is 16 square units.  Since the\n          entire square isn’t shaded, we need to subtract the\n          4 square units that are unshaded.  16 − 4 = 12.\n      T: There are different strategies of finding the area of a figure. It just depends on how you choose to\n          look at it.\n  Continue with the following suggested examples:\n\n\n                          Lesson 13:                 Find areas by decomposing into rectangles or completing composite                         162\n                                                     figures to form rectangles.\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 164 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                                   Lesson 13 3 4\n\n\nProblem 2: Subtract to find the area of a composite shape.                                                                                         6 cm\nDraw or project the shape shown to the right.\n    T: This figure shows a small rectangle cut out of a larger, shaded\n        rectangle. How can we find the area of the shaded figure?\n                                                                              6 cm\n    S: We can break apart the shaded part.  Or we can                                        4 cm\n        subtract the unshaded area from the shaded square.\n    T: (Shade in the white shape.) We now have a large, shaded square.               2 cm\n        Write a number sentence to find the area of the large square.\n    S: (Write 6 × 6 = 36.)\n    T: What is the area of the square?\n    S: 36 square centimeters.\n    T: (Erase the shading inside the white rectangle.) Beneath the number sentence you just wrote, write\n        a number sentence to find the area for the shape we “cut out.”\n    S: (Write 2 × 4 = 8.)\n    T: What is the area of the white shape?\n    S: 8 square centimeters.\n    T: The area of the square is 36 square centimeters. We cut out, or took away, 8 square centimeters of\n        shading. Turn and talk to your partner: How can we find the area of the shaded region?\n    S: Subtract 8 square centimeters from 36 square centimeters!\n    T: Write a number sentence to find the area of the shaded region.\n    S: (Write 36 – 8 = 28.)\nContinue with the following example:\n                                6 in\n\n                                 3 in\n           4 in    2 in\n\n\nProblem 3: Subtract to find the area of a composite shape with unknown side lengths.\nDraw or project the shape shown to the right.\n                                                                                                                                    11 ft\n    T:   This figure also shows a small rectangle cut out of\n         a larger, shaded rectangle, but what is unknown?                                              4 ft\n    S:   The side lengths of the smaller rectangle.\n                                                                                                                                                          9 ft\n    T:   Do we have enough information to find the side\n         lengths of the smaller rectangle?                                                  _____ ft\n    S:   No, I don’t think so.  We know the side lengths\n         of the larger rectangle.  Maybe we can\n         subtract to the find the unknown side lengths.                                                           _____ ft                  5 ft\n\n\n                          Lesson 13:                 Find areas by decomposing into rectangles or completing composite                                           163\n                                                     figures to form rectangles.\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 165 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 13 3 4\n\n\n    T:   Opposite sides of a rectangle are equal. Since we know\n         the length of the rectangle is 9 feet, what is the                                                                 NOTES ON\n         opposite side length?                                                                                              MULTIPLE MEANS\n    S:   9 feet.                                                                                                            OF ENGAGEMENT:\n    T:   You can then find the unknown lengths by subtracting                                                   Extend Problem 3 to students working\n         the known, 4 feet, from the total, 9 feet.                                                             above grade level. Challenge students\n                                                                                                                to think about a real-life scenario in\n    S:   The unknown length is 5 feet!                                                                          which this model might be used and to\n    T:   Use the same strategy to find the unknown width.                                                       write a matching word problem.\n    S:   (Write 11 – 5 = 6.)                                                                                    Always offer challenges and extensions\n                                                                                                                to learners as alternatives. Here, a\n    T:   What is the unknown width?                                                                             student might be given the option of\n    S:   6 feet!                                                                                                solving one other problem in addition\n    T:   Can we now find the area of the shaded figure?                                                         to this extension. Another option\n                                                                                                                would be to direct students to solve\n    S:   Yes!                                                                                                   the problem that later appears in the\n    T:   With your partner, find the area of the shaded figure.                                                 Student Debrief.\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the Problem Set within the allotted 10 minutes. For\nsome classes, it may be appropriate to modify the assignment by specifying which problems they work on\nfirst. Some problems do not specify a method for solving. Students should solve these problems using the\nRDW approach used for Application Problems.\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Find areas by decomposing into\nrectangles or completing composite figures to form\nrectangles.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        How did you break apart the rectangles in Figure\n         4? Did anyone break apart the rectangles in a\n         different way? (A rectangle of 10 by 2.)\n\n\n                        Lesson 13:                 Find areas by decomposing into rectangles or completing composite                                 164\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 166 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 13 3 4\n\n\n       In Problem 2, a 4-cm by 3-cm rectangle was cut\n        out of a bigger rectangle. What other\n        measurements could have been cut out to keep\n        the same area for the shaded region?\n       How did you find the unknown measurements in\n        Problem 3?\n       How were today’s strategies examples of using\n        what we know to solve new types of problems?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                       Lesson 13:                 Find areas by decomposing into rectangles or completing composite                         165\n                                                  figures to form rectangles.\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 167 (problem-set) ---\nA STORY OF UNITS                                                                                   Lesson 13 Problem Set 3 4\n\n\nName                                                                                                        Date\n\n1.   Each of the following figures is made up of 2 rectangles. Find the total area of each figure.\n\n\n             Figure 1\n                                                                             Figure 2\n                    A                                                                                  C\n\n\n                B                                                                                      D\n\n\n                                         E                                         Figure 4\n             Figure 3\n\n\n                        F\n                                                                                                      G\n\n\n                                                                                                                                  H\n\n\n                                        18\n     Figure 1: Area of A + Area of B: _________ sq units + _________ sq units = _________ sq units\n\n\n     Figure 2: Area of C + Area of D: _________ sq units + _________ sq units = _________ sq units\n\n\n     Figure 3: Area of E + Area of F: _________ sq units + _________ sq units = _________ sq units\n\n\n     Figure 4: Area of G + Area of H: _________ sq units + _________ sq units = _________sq units\n\n\n                        Lesson 13:                 Find areas by decomposing into rectangles or completing composite                  166\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 168 (problem-set) ---\nA STORY OF UNITS                                                                                       Lesson 13 Problem Set 3 4\n\n\n2.     The figure shows a small rectangle cut out of a bigger rectangle. Find the area of the shaded figure.\n\n                               9 cm\n\n\n                                                                           Area of the shaded figure: ______ – ______ = ______\n10 cm\n                                                                           Area of the shaded figure: ______ square centimeters\n                                  3 cm\n\n\n                     4 cm\n\n\n3.     The figure shows a small rectangle cut out of a big rectangle.\n\n                                                                                             a. Label the unknown measurements.\n              4 cm                       _____ cm\n\n                                                                                             b. Area of the big rectangle:\n                                                                   _____ cm\n                                                                                                  _____ cm × _____ cm = _____ sq cm\n7 cm\n\n                                                                                             c. Area of the small rectangle:\n                                                                   3 cm\n                                                                                                  _____ cm × _____ cm = _____ sq cm\n\n                        9 cm\n\n                                                                                             d. Find the area of the shaded figure.\n\n\n                            Lesson 13:                 Find areas by decomposing into rectangles or completing composite              167\n                                                       figures to form rectangles.\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 169 (exit-ticket) ---\nA STORY OF UNITS                                                                                          Lesson 13 Exit Ticket 3 4\n\n\nName                                                                                                        Date\n\nThe following figure is made up of 2 rectangles. Find the total area of the figure.\n\n\n                                             A\n\n\n                                                              B\n\n\nArea of A + Area of B: ________ sq units + _________ sq units = _________ sq units\n\n\n                        Lesson 13:                 Find areas by decomposing into rectangles or completing composite                168\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 170 (homework) ---\nA STORY OF UNITS                                                                                       Lesson 13 Homework 3 4\n\n\nName                                                                                                        Date\n\n1.   Each of the following figures is made up of 2 rectangles. Find the total area of each figure.\n\n\n        Figure 1\n\n                                                                               Figure 2                                           C\n             A\n\n\n                          B                                                                                                           D\n\n\n             Figure 3\n                                                                                            Figure 4\n                   E                  F                                                                                               H\n                                                                                                        G\n\n\n     Figure 1: Area of A + Area of B: _________ sq units + _________ sq units = _________ sq units\n\n\n     Figure 2: Area of C + Area of D: _________ sq units + _________ sq units = _________ sq units\n\n\n     Figure 3: Area of E + Area of F: _________ sq units + _________ sq units = _________ sq units\n\n\n     Figure 4: Area of G + Area of H: _________ sq units + _________ sq units = _________ sq units\n\n\n                        Lesson 13:                 Find areas by decomposing into rectangles or completing composite                      169\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 171 (homework) ---\nA STORY OF UNITS                                                                                      Lesson 13 Homework 3 4\n\n\n2.   The figure shows a small rectangle cut out of a big rectangle. Find the area of the shaded figure.\n\n                         7 cm\n\n\n     8 cm\n                         3 cm                                              Area of the shaded figure: ______ – ______ = ______\n\n                                                                           Area of the shaded figure: ______ square centimeters\n               3 cm\n\n\n3.   The figure shows a small rectangle cut out of a big rectangle.\n\n\n             _____ cm                           6 cm                                a. Label the unknown measurements.\n\n\n_____ cm                                                                            b. Area of the big rectangle:\n                                                                                              ______ cm × ______ cm = ______ sq cm\n                                                                      8 cm\n                                                                                    c. Area of the small rectangle:\n                                                                                              ______ cm × ______ cm = ______ sq cm\n     4 cm\n                                                                                    d. Find the area of the shaded figure.\n\n                               9 cm\n\n\n                        Lesson 13:                 Find areas by decomposing into rectangles or completing composite              170\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 172 (template) ---\nA STORY OF UNITS                                                                                          Lesson 13 Template 3 4\n\n\nlarge grid\n\n\n                       Lesson 13:                 Find areas by decomposing into rectangles or completing composite               171\n                                                  figures to form rectangles.\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 167,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                   Lesson 13 Problem Set 3 4\n\n\nName                                                                                                        Date\n\n1.   Each of the following figures is made up of 2 rectangles. Find the total area of each figure.\n\n\n             Figure 1\n                                                                             Figure 2\n                    A                                                                                  C\n\n\n                B                                                                                      D\n\n\n                                         E                                         Figure 4\n             Figure 3\n\n\n                        F\n                                                                                                      G\n\n\n                                                                                                                                  H\n\n\n                                        18\n     Figure 1: Area of A + Area of B: _________ sq units + _________ sq units = _________ sq units\n\n\n     Figure 2: Area of C + Area of D: _________ sq units + _________ sq units = _________ sq units\n\n\n     Figure 3: Area of E + Area of F: _________ sq units + _________ sq units = _________ sq units\n\n\n     Figure 4: Area of G + Area of H: _________ sq units + _________ sq units = _________sq units\n\n\n                        Lesson 13:                 Find areas by decomposing into rectangles or completing composite                  166\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 168,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                       Lesson 13 Problem Set 3 4\n\n\n2.     The figure shows a small rectangle cut out of a bigger rectangle. Find the area of the shaded figure.\n\n                               9 cm\n\n\n                                                                           Area of the shaded figure: ______ – ______ = ______\n10 cm\n                                                                           Area of the shaded figure: ______ square centimeters\n                                  3 cm\n\n\n                     4 cm\n\n\n3.     The figure shows a small rectangle cut out of a big rectangle.\n\n                                                                                             a. Label the unknown measurements.\n              4 cm                       _____ cm\n\n                                                                                             b. Area of the big rectangle:\n                                                                   _____ cm\n                                                                                                  _____ cm × _____ cm = _____ sq cm\n7 cm\n\n                                                                                             c. Area of the small rectangle:\n                                                                   3 cm\n                                                                                                  _____ cm × _____ cm = _____ sq cm\n\n                        9 cm\n\n                                                                                             d. Find the area of the shaded figure.\n\n\n                            Lesson 13:                 Find areas by decomposing into rectangles or completing composite              167\n                                                       figures to form rectangles.\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 230,
+        "text": "A STORY OF UNITS                                                                                         Lesson 13 Answer Key 3 4\n\n\nLesson 13\nProblem Set\n1.    9, 27; 18, 15, 33; 9, 21, 30; answers will vary, 55\n2.    90, 12, 78; 78\n3.    a. 5, 4\n      b. 7, 9, 63\n      c. 4, 5, 20\n      d. 43 sq cm\n\n\nExit Ticket\n32, 20, 52\n\n\nHomework\n1.    15, 9, 24; 24, 20, 44; 12, 32, 44; 15, 25, 40\n2.    56, 9, 47; 47\n3.    a. 4, 3\n      b. 8, 9, 72\n      c. 4, 3, 12\n      d. 60 sq cm\n\n\n                        Module 4:                  Multiplication and Area                                                          229\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

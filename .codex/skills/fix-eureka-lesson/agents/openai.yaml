@@ -1,4 +1,4 @@
 interface:
   display_name: "Fix Eureka Lesson"
-  short_description: "Source-faithful lesson repair and visual QA"
-  default_prompt: "Use $fix-eureka-lesson to fix a named Eureka Math module and lesson using the Teacher Edition as source of truth."
+  short_description: "Fast functional Teacher Edition lesson repair"
+  default_prompt: "Use $fix-eureka-lesson to deliver a functional Teacher Edition fidelity pass for the next five lessons, prioritizing exact content, correct mathematical models, meaningful instructional animation, and Blank/Solved behavior over pixel polish."

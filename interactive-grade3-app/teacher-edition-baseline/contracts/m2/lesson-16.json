@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m2-l16",
+  "moduleId": "m2",
+  "lessonNumber": 16,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+    "teacherEditionBytes": 20015771,
+    "lessonPdfPages": {
+      "start": 196,
+      "end": 206
+    },
+    "problemSetPdfPages": [
+      202,
+      203
+    ],
+    "exitTicketPdfPages": [
+      204
+    ],
+    "homeworkPdfPages": [
+      205,
+      206
+    ],
+    "answerKeyPdfPages": [
+      297
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m2-student/workbook-page-066.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m2-teacher/page-202.png",
+      "/source-pages/m2-teacher/page-203.png",
+      "/source-pages/m2-answer-key/page-297.png"
+    ]
+  },
+  "objective": "Add measurements using the standard algorithm to compose larger units twice.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "Josh’s apple weighs 93 grams. His pear weighs 152 grams. What is the total weight of the apple and the\npear?\n\n\nNote: This problem reviews the use of the standard algorithm to compose larger units once.\n\n\n                         Lesson 16:                    Add measurements using the standard algorithm to compose larger                       196\n                                                       units twice.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 16 3 2",
+    "conceptDevelopmentText": "Materials: (T) Bag A of beans (266 grams), Bag B of beans (158 grams), scale that weighs in grams\n           (S) Personal white board, unlabeled place value chart (Lesson 14 Template), place value disks\n\nProblem 1: Use place value charts, disks, and the standard algorithm to add measurements, composing larger\nunits twice.\nStudents start with the unlabeled place value chart template in their\npersonal white boards.                                                                                                       Lesson 14 Template\n\n    T:   (Show Bags A and B.) Bag A has 266 grams of beans, and Bag B\n         has 158 grams of beans. Let’s use our place value charts and\n         place value disks to figure out how many grams of beans we have\n         altogether.\n    T:   Use disks to represent the weight of the beans in Bag B.\n    S:   (Put 8 ones disks in the ones column, 5 tens disks in the tens\n         column, and 1 hundreds disk in the hundreds column.)\n    T:   Record 158 grams in the workspace on your board\n         below the place value chart.\n    T:   Leave the disks on your chart. Use more disks to                           NOTES ON\n         represent the weight of the beans in Bag A. Place                          MULTIPLE MEANS\n         them below your model of 158.                                              OF ENGAGEMENT:\n    S:   (Place 6 ones disks, 6 tens disks, and 2 hundreds disks           Students working above grade level\n         in respective columns.)                                           may be eager to find the sum quickly\n                                                                           without using place value disks. Keep\n    T:   In the workspace on your board, use an addition sign\n                                                                           these learners engaged by optimizing\n         to show that you added 266 grams to 158 grams.                    their choice and autonomy. Request\n    T:   (Point to the place value disks in the ones column.)              from them an alternative model, such\n         8 ones plus 6 ones equals…?                                       as a tape diagram. They may enjoy\n    S:   14 ones.                                                          offering two more examples of their\n                                                                           own in which they use the standard\n    T:   We can change 10 ones for 1 ten. Take 10 ones disks               algorithm to compose larger units\n         and change them for 1 tens disk. Where do we put the              twice.\n         tens disk on the place value chart?\n    S:   In the tens column.\n    T:   How many ones do we have now?\n    S:   4 ones!\n    T:   Let’s use the standard algorithm to show our work on the place value\n         chart. Use the problem you wrote in the workspace on your board.\n         (Write the problem vertically, as shown.) Be sure your problem is\n         written vertically, like mine.\n    T:   (Point to the ones in the problem.) 8 ones plus 6 ones equals?\n    S:   14 ones.\n\n\n                        Lesson 16:                    Add measurements using the standard algorithm to compose larger                             197\n                                                      units twice.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                             Lesson 16 3 2\n\n\nT:   Let’s rename some ones as tens. How many tens and ones in 14?\nS:   1 ten and 4 ones.\nT:   Just like we practiced yesterday, show that on your problem.\nS:   (Write the 1 so that it crosses the line under the tens in the tens place and\n     the 4 below the line in the ones column.)\nT:   (Point to the place value disks in the tens column.) Five tens plus 6 tens plus 1 ten equals?\nS:   12 tens!\nT:   We can change 10 tens for 1 hundred. Take 10 tens disks and change them for 1 hundreds disk.\n     Where do we put the hundreds disk on the place value chart?\nS:   In the hundreds column.\nT:   How many tens do we have now?\nS:   2 tens!\nT:   Let’s show that in our problem. (Point to the tens in the problem.) Five tens plus 6 tens plus 1 ten\n     equals…?\nS:   12 tens.\nT:   Let’s rename some tens as hundreds. How many hundreds and tens in 12 tens?\nS:   1 hundred and 2 tens.\nT:   We show our new hundred just like we showed our new ten before, but this\n     time we put it in the hundreds column because it’s a hundred, not a ten.\n     (Write the 1 so that it crosses the line under the hundreds in the hundreds\n     place and the 2 below the line in the tens column.)\nT:   (Point to the place value disks in the hundreds column.) One hundred plus\n     2 hundreds plus 1 hundred equals…?\nS:   4 hundreds!\nT:   Four hundreds 2 tens 4 ones makes how many total grams of beans in Bag A and Bag B?\nS:   424 grams.\nT:   Let’s show that in our problem. (Point to the hundreds in the problem.) One hundred plus\n     2 hundreds plus 1 hundred equals…?\nS:   4 hundreds!\nT:   Record 4 hundreds in the hundreds column below the line.\nT:   What unit do we need to include in our answer?\nS:   Grams!\nT:   Read the problem with me. (Point and read.) 158 grams plus 266 grams\n     equals 424 grams.\nT:   How can I check our work using a scale?\nS:   Put Bag A and Bag B on the scale and read the measurement.\nT:   (Put Bags A and B on the scale.) The total weight of the beans is 424 grams!\n\n\n                    Lesson 16:                    Add measurements using the standard algorithm to compose larger                       198\n                                                  units twice.\n\n                   This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                   G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                             Lesson 16 3 2\n\n\nContinue with the following suggested problems:\n       Add to with start unknown: Jamal had a piece of rope. His brother cut off 47 centimeters and took\n        it! Now, Jamal only has 68 centimeters left. How long was Jamal’s rope before his brother cut it?\n       Compare with bigger unknown: The goldfish aquarium at Sal’s Pet Store has 189 liters of water. The\n        guppy aquarium has 94 more liters of water than the goldfish aquarium. How many liters of water\n        are in both aquariums?\n\nProblem 2: Use the partner–coach strategy and the standard algorithm to add measurements, composing\nlarger units twice.\nMaterials: (S) Problem Set\n\nStudents work with a partner and use the partner–coach strategy to complete page 1 of the Problem Set.\nPrepare students:\n       Explain how to use the partner–coach strategy. (One partner coaches, verbalizing the steps needed\n        to solve the problem, while the other partner writes the solution. Then partners switch roles.)\n       Generate a class list of important words that should be included in the coaching conversations\nMP.6    (e.g., ones, tens, hundreds, change, standard algorithm, mental math, rename). Keep this list posted\n        for students to refer to as they coach each other.\nCirculate as students work, addressing misconceptions or incorrect work.",
+    "fluencyPracticeText": " Part–Whole with Measurement Units 3.MD.2                                      (3 minutes)\n Round Three- and Four-Digit Numbers 3.NBT.1                                   (5 minutes)\n Group Counting 3.OA.1                                                         (4 minutes)\n\nPart–Whole with Measurement Units (3 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews part–whole thinking using measurement units.\n    T:   There are 100 centimeters in 1 meter. How many centimeters are in 4 meters?\n    S:   400 centimeters.\n    T:   5 meters?\n    S:   500 centimeters.\n    T:   7 meters?\n    S:   700 centimeters.\n    T:   (Write 30 minutes + ____ minutes = 1 hour.) There are 60 minutes in 1 hour. On your personal\n         white board, fill in the equation.\n    S:   (Write 30 minutes + 30 minutes = 1 hour.)\nContinue with the following suggested sequence: 40 minutes and 25 minutes.\n    T:   (Write 300 mL + ____ mL = 1 L.) There are 1,000 milliliters in 1 liter. On your board, fill in the\n         equation.\n    S:   (Write 300 mL + 700 mL = 1 liter.)\nContinue with the following suggested sequence: 200 mL, 600 mL, and 550 mL.\n\n\n                        Lesson 16:                    Add measurements using the standard algorithm to compose larger                       195\n                                                      units twice.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 16 3 2\n\n\nRound Three- and Four-Digit Numbers (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews rounding from Lessons 13 and 14.\n    T:   (Write 73 ≈ ___.) What is 73 rounded to the nearest ten?\n    S:   70.\nRepeat the process, varying the numbers.\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. It reviews foundational\nstrategies for multiplication from Module 1 and anticipates Module 3.\nDirect students to count forward and backward, occasionally changing the direction of the count:\n        Threes to 30\n        Fours to 40\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\nAs students’ fluency with skip-counting improves, help them make a connection to multiplication by tracking\nthe number of groups they count using their fingers.",
+    "problemSetGuidanceText": "NOTES ON\nStudents should do their personal best to complete page 2 of\n                                                                                                                           MULTIPLE MEANS\nthe Problem Set within the allotted 5 minutes. For some\n                                                                                                                           OF ACTION AND\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some problems                                                                EXPRESSION:\ndo not specify a method for solving. Students should solve                                                     Help students prepare for successful\nthese problems using the RDW approach used for Application                                                     participation in the",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Show Bags A and B.) Bag A has 266 grams of beans, and Bag B has 158 grams of beans. Let’s use our place value charts and place value disks to figure out how many grams of beans we have altogether."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use disks to represent the weight of the beans in Bag B."
+      },
+      {
+        "speaker": "students",
+        "text": "(Put 8 ones disks in the ones column, 5 tens disks in the tens column, and 1 hundreds disk in the hundreds column.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Record 158 grams in the workspace on your board below the place value chart."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Leave the disks on your chart. Use more disks to NOTES ON represent the weight of the beans in Bag A. Place MULTIPLE MEANS them below your model of 158. OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "students",
+        "text": "(Place 6 ones disks, 6 tens disks, and 2 hundreds disks Students working above grade level in respective columns.) may be eager to find the sum quickly without using place value disks. Keep"
+      },
+      {
+        "speaker": "teacher",
+        "text": "In the workspace on your board, use an addition sign these learners engaged by optimizing to show that you added 266 grams to 158 grams. their choice and autonomy. Request"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Point to the place value disks in the ones column.) from them an alternative model, such 8 ones plus 6 ones equals…? as a tape diagram. They may enjoy"
+      },
+      {
+        "speaker": "students",
+        "text": "14 ones. offering two more examples of their own in which they use the standard"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We can change 10 ones for 1 ten. Take 10 ones disks algorithm to compose larger units and change them for 1 tens disk. Where do we put the twice. tens disk on the place value chart?"
+      },
+      {
+        "speaker": "students",
+        "text": "In the tens column."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many ones do we have now?"
+      },
+      {
+        "speaker": "students",
+        "text": "4 ones!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use the standard algorithm to show our work on the place value chart. Use the problem you wrote in the workspace on your board. (Write the problem vertically, as shown.) Be sure your problem is written vertically, like mine."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Point to the ones in the problem.) 8 ones plus 6 ones equals?"
+      },
+      {
+        "speaker": "students",
+        "text": "14 ones. units twice. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 16 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s rename some ones as tens. How many tens and ones in 14?"
+      },
+      {
+        "speaker": "students",
+        "text": "1 ten and 4 ones."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Just like we practiced yesterday, show that on your problem."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write the 1 so that it crosses the line under the tens in the tens place and the 4 below the line in the ones column.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Point to the place value disks in the tens column.) Five tens plus 6 tens plus 1 ten equals?"
+      },
+      {
+        "speaker": "students",
+        "text": "12 tens!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We can change 10 tens for 1 hundred. Take 10 tens disks and change them for 1 hundreds disk. Where do we put the hundreds disk on the place value chart?"
+      },
+      {
+        "speaker": "students",
+        "text": "In the hundreds column."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many tens do we have now?"
+      },
+      {
+        "speaker": "students",
+        "text": "2 tens!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s show that in our problem. (Point to the tens in the problem.) Five tens plus 6 tens plus 1 ten equals…?"
+      },
+      {
+        "speaker": "students",
+        "text": "12 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s rename some tens as hundreds. How many hundreds and tens in 12 tens?"
+      },
+      {
+        "speaker": "students",
+        "text": "1 hundred and 2 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "We show our new hundred just like we showed our new ten before, but this time we put it in the hundreds column because it’s a hundred, not a ten. (Write the 1 so that it crosses the line under the hundreds in the hundreds place and the 2 below the line in the tens column.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Point to the place value disks in the hundreds column.) One hundred plus 2 hundreds plus 1 hundred equals…?"
+      },
+      {
+        "speaker": "students",
+        "text": "4 hundreds!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Four hundreds 2 tens 4 ones makes how many total grams of beans in Bag A and Bag B?"
+      },
+      {
+        "speaker": "students",
+        "text": "424 grams."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s show that in our problem. (Point to the hundreds in the problem.) One hundred plus 2 hundreds plus 1 hundred equals…?"
+      },
+      {
+        "speaker": "students",
+        "text": "4 hundreds!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Record 4 hundreds in the hundreds column below the line."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What unit do we need to include in our answer?"
+      },
+      {
+        "speaker": "students",
+        "text": "Grams!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Read the problem with me. (Point and read.) 158 grams plus 266 grams equals 424 grams."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can I check our work using a scale?"
+      },
+      {
+        "speaker": "students",
+        "text": "Put Bag A and Bag B on the scale and read the measurement."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Put Bags A and B on the scale.) The total weight of the beans is 424 grams! units twice. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 16 3 2 Continue with the following suggested problems:  Add to with start unknown: Jamal had a piece of rope. His brother cut off 47 centimeters and took it! Now, Jamal only has 68 centimeters left. How long was Jamal’s rope before his brother cut it?  Compare with bigger unknown: The goldfish aquarium at Sal’s Pet Store has 189 liters of water. The guppy aquarium has 94 more liters of water than the goldfish aquarium. How many liters of water are in both aquariums? larger units twice. Students work with a partner and use the partner–coach strategy to complete page 1 of the Problem Set. Prepare students:  Explain how to use the partner–coach strategy. (One partner coaches, verbalizing the steps needed to solve the problem, while the other partner writes the solution. Then partners switch roles.)  Generate a class list of important words that should be included in the coaching conversations MP.6 (e.g., ones, tens, hundreds, change, standard algorithm, mental math, rename). Keep this list posted for students to refer to as they coach each other. Circulate as students work, addressing misconceptions or incorrect work."
+      }
+    ],
+    "teacherPrompts": [
+      "(Show Bags A and B.) Bag A has 266 grams of beans, and Bag B has 158 grams of beans. Let’s use our place value charts and place value disks to figure out how many grams of beans we have altogether.",
+      "Use disks to represent the weight of the beans in Bag B.",
+      "Record 158 grams in the workspace on your board below the place value chart.",
+      "Leave the disks on your chart. Use more disks to NOTES ON represent the weight of the beans in Bag A. Place MULTIPLE MEANS them below your model of 158. OF ENGAGEMENT:",
+      "In the workspace on your board, use an addition sign these learners engaged by optimizing to show that you added 266 grams to 158 grams. their choice and autonomy. Request",
+      "(Point to the place value disks in the ones column.) from them an alternative model, such 8 ones plus 6 ones equals…? as a tape diagram. They may enjoy",
+      "We can change 10 ones for 1 ten. Take 10 ones disks algorithm to compose larger units and change them for 1 tens disk. Where do we put the twice. tens disk on the place value chart?",
+      "How many ones do we have now?",
+      "Let’s use the standard algorithm to show our work on the place value chart. Use the problem you wrote in the workspace on your board. (Write the problem vertically, as shown.) Be sure your problem is written vertically, like mine.",
+      "(Point to the ones in the problem.) 8 ones plus 6 ones equals?",
+      "Let’s rename some ones as tens. How many tens and ones in 14?",
+      "Just like we practiced yesterday, show that on your problem.",
+      "(Point to the place value disks in the tens column.) Five tens plus 6 tens plus 1 ten equals?",
+      "We can change 10 tens for 1 hundred. Take 10 tens disks and change them for 1 hundreds disk. Where do we put the hundreds disk on the place value chart?",
+      "How many tens do we have now?",
+      "Let’s show that in our problem. (Point to the tens in the problem.) Five tens plus 6 tens plus 1 ten equals…?",
+      "Let’s rename some tens as hundreds. How many hundreds and tens in 12 tens?",
+      "We show our new hundred just like we showed our new ten before, but this time we put it in the hundreds column because it’s a hundred, not a ten. (Write the 1 so that it crosses the line under the hundreds in the hundreds place and the 2 below the line in the tens column.)",
+      "(Point to the place value disks in the hundreds column.) One hundred plus 2 hundreds plus 1 hundred equals…?",
+      "Four hundreds 2 tens 4 ones makes how many total grams of beans in Bag A and Bag B?",
+      "Let’s show that in our problem. (Point to the hundreds in the problem.) One hundred plus 2 hundreds plus 1 hundred equals…?",
+      "Record 4 hundreds in the hundreds column below the line.",
+      "What unit do we need to include in our answer?",
+      "Read the problem with me. (Point and read.) 158 grams plus 266 grams equals 424 grams.",
+      "How can I check our work using a scale?",
+      "(Put Bags A and B on the scale.) The total weight of the beans is 424 grams! units twice. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 16 3 2 Continue with the following suggested problems:  Add to with start unknown: Jamal had a piece of rope. His brother cut off 47 centimeters and took it! Now, Jamal only has 68 centimeters left. How long was Jamal’s rope before his brother cut it?  Compare with bigger unknown: The goldfish aquarium at Sal’s Pet Store has 189 liters of water. The guppy aquarium has 94 more liters of water than the goldfish aquarium. How many liters of water are in both aquariums? larger units twice. Students work with a partner and use the partner–coach strategy to complete page 1 of the Problem Set. Prepare students:  Explain how to use the partner–coach strategy. (One partner coaches, verbalizing the steps needed to solve the problem, while the other partner writes the solution. Then partners switch roles.)  Generate a class list of important words that should be included in the coaching conversations MP.6 (e.g., ones, tens, hundreds, change, standard algorithm, mental math, rename). Keep this list posted for students to refer to as they coach each other. Circulate as students work, addressing misconceptions or incorrect work."
+    ],
+    "debriefPrompt": "What pattern did you notice between Problems 1(a), 1(b), and 1(c)? How did the pattern help you solve these problems?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Find the sums below. a. 52 mL + 68 mL b. 352 mL + 68 mL c. 352 mL + 468 mL d. 56 cm + 94 cm e. 506 cm + 94 cm f. 506 cm + 394 cm g. 697 g + 138 g h. 345 g + 597 g i. 486 g + 497 g j. 3 L 251 mL + 1 L 549 mL k. 4 kg 384 g + 2 kg 467 g units twice. Lane makes sauerkraut. He weighs the amounts of cabbage and salt he uses. Draw and label a tape diagram to find the total weight of the cabbage and salt Lane uses. 907 g 93 g 3. Sue bakes mini-muffins for the school bake sale. After wrapping 86 muffins, she still has 58 muffins left cooling on the table. How many muffins did she bake altogether? 4. The milk carton to the right holds 183 milliliters more liquid than the juice box. What is the total capacity of the juice Juice Box box and milk carton? Milk Carton 279 mL? mL units twice.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                     Lesson 16 Problem Set 3 2\n\n\nName                                                                                                       Date\n\n1. Find the sums below.\n\n   a. 52 mL + 68 mL                                       b. 352 mL + 68 mL                                          c. 352 mL + 468 mL\n\n\n   d. 56 cm + 94 cm                                       e. 506 cm + 94 cm                                          f.     506 cm + 394 cm\n\n\n   g. 697 g + 138 g                                       h. 345 g + 597 g                                           i.     486 g + 497 g\n\n\n   j.   3 L 251 mL + 1 L 549 mL                                                                                      k. 4 kg 384 g + 2 kg 467 g\n\n\n                       Lesson 16:                    Add measurements using the standard algorithm to compose larger                          201\n                                                     units twice.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                      Lesson 16 Problem Set 3 2\n\n\n2. Lane makes sauerkraut. He weighs the amounts of cabbage\n   and salt he uses. Draw and label a tape diagram to find the\n   total weight of the cabbage and salt Lane uses.\n\n                                                                                                                      907 g           93 g\n\n\n3. Sue bakes mini-muffins for the school bake sale. After wrapping 86 muffins, she still has 58 muffins left\n   cooling on the table. How many muffins did she bake altogether?\n\n\n4. The milk carton to the right holds 183 milliliters more liquid\n   than the juice box. What is the total capacity of the juice\n                                                                                                                          Juice Box\n   box and milk carton?                                                                                                                  Milk Carton\n                                                                                                                           279 mL\n                                                                                                                                            ? mL\n\n\n                        Lesson 16:                    Add measurements using the standard algorithm to compose larger                        202\n                                                      units twice.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    a. 120 mL                                                                 2.        Tape diagram drawn and labeled; 1,000 g\n      b. 420 mL                                                                 3.        144 muffins\n      c. 820 mL                                                                 4.        741 mL\n      d. 150 cm\n      e. 600 cm\n      f.   900 cm\n      g. 835 g\n      h. 942 g\n      i.   983 g\n      j.   4 L 800 mL\n      k. 6 kg 851 g",
+    "answerKeyText": "A STORY OF UNITS                                                                                      Lesson 16 Answer Key 3 2\n\n\nLesson 16\nProblem Set\n1.    a. 120 mL                                                                 2.        Tape diagram drawn and labeled; 1,000 g\n      b. 420 mL                                                                 3.        144 muffins\n      c. 820 mL                                                                 4.        741 mL\n      d. 150 cm\n      e. 600 cm\n      f.   900 cm\n      g. 835 g\n      h. 942 g\n      i.   983 g\n      j.   4 L 800 mL\n      k. 6 kg 851 g\n\nExit Ticket\n1.    a. 107 g\n      b. 617 kg\n      c. 802 L\n2.    104 L\n\nHomework\n1.    a. 55 m                                                                   2.        Tape diagram drawn and labeled; 101 minutes\n      b. 85 m                                                                   3.        324\n      c. 530 m                                                                  4.        802\n      d. 72 mL\n      e. 542 mL\n      f.   642 mL\n      g. 631 kg\n      h. 801 kg\n      i. 902 kg\n      j. 6 L 556 mL\n      k. 8 kg 622 g\n\n\n                        Module 2:                  Place Value and Problem Solving with Units of Measure                            296\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "tape-diagram",
+      "measurement-scale",
+      "liquid-measure",
+      "ruler-or-length",
+      "place-value",
+      "table-or-chart",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "tape-diagram": [
+        "8 ones plus 6 ones equals…? as a tape diagram. They may enjoy",
+        "and salt he uses. Draw and label a tape diagram to find the"
+      ],
+      "measurement-scale": [
+        "Josh’s apple weighs 93 grams. His pear weighs 152 grams. What is the total weight of the apple and the",
+        "Materials: (T) Bag A of beans (266 grams), Bag B of beans (158 grams), scale that weighs in grams",
+        "T: (Show Bags A and B.) Bag A has 266 grams of beans, and Bag B",
+        "has 158 grams of beans. Let’s use our place value charts and",
+        "place value disks to figure out how many grams of beans we have",
+        "T: Use disks to represent the weight of the beans in Bag B.",
+        "T: Record 158 grams in the workspace on your board",
+        "represent the weight of the beans in Bag A. Place MULTIPLE MEANS"
+      ],
+      "liquid-measure": [
+        " Compare with bigger unknown: The goldfish aquarium at Sal’s Pet Store has 189 liters of water. The",
+        "guppy aquarium has 94 more liters of water than the goldfish aquarium. How many liters of water",
+        "T: (Write 300 mL + ____ mL = 1 L.) There are 1,000 milliliters in 1 liter. On your board, fill in the",
+        "S: (Write 300 mL + 700 mL = 1 liter.)",
+        "4. The milk carton to the right holds 183 milliliters more liquid"
+      ],
+      "ruler-or-length": [
+        " Add to with start unknown: Jamal had a piece of rope. His brother cut off 47 centimeters and took",
+        "it! Now, Jamal only has 68 centimeters left. How long was Jamal’s rope before his brother cut it?",
+        "T: There are 100 centimeters in 1 meter. How many centimeters are in 4 meters?",
+        "S: 400 centimeters.",
+        "S: 500 centimeters.",
+        "S: 700 centimeters."
+      ],
+      "place-value": [
+        "Add measurements using the standard algorithm to compose larger units twice.",
+        "Note: This problem reviews the use of the standard algorithm to compose larger units once.",
+        "Lesson 16: Add measurements using the standard algorithm to compose larger 196",
+        "(S) Personal white board, unlabeled place value chart (Lesson 14 Template), place value disks",
+        "Problem 1: Use place value charts, disks, and the standard algorithm to add measurements, composing larger",
+        "Students start with the unlabeled place value chart template in their",
+        "has 158 grams of beans. Let’s use our place value charts and",
+        "place value disks to figure out how many grams of beans we have"
+      ],
+      "table-or-chart": [
+        "(S) Personal white board, unlabeled place value chart (Lesson 14 Template), place value disks",
+        "Students start with the unlabeled place value chart template in their",
+        "below the place value chart.",
+        "T: Leave the disks on your chart. Use more disks to NOTES ON",
+        "tens disk on the place value chart?",
+        "chart. Use the problem you wrote in the workspace on your board.",
+        "Where do we put the hundreds disk on the place value chart?",
+        "cooling on the table. How many muffins did she bake altogether?"
+      ],
+      "money-model": [
+        "T: We can change 10 ones for 1 ten. Take 10 ones disks algorithm to compose larger units",
+        "and change them for 1 tens disk. Where do we put the twice.",
+        "T: We can change 10 tens for 1 hundred. Take 10 tens disks and change them for 1 hundreds disk.",
+        " Add to with start unknown: Jamal had a piece of rope. His brother cut off 47 centimeters and took",
+        "it! Now, Jamal only has 68 centimeters left. How long was Jamal’s rope before his brother cut it?",
+        "MP.6 (e.g., ones, tens, hundreds, change, standard algorithm, mental math, rename). Keep this list posted",
+        "T: There are 100 centimeters in 1 meter. How many centimeters are in 4 meters?",
+        "S: 400 centimeters."
+      ],
+      "picture-or-drawing": [
+        "8 ones plus 6 ones equals…? as a tape diagram. They may enjoy",
+        "and salt he uses. Draw and label a tape diagram to find the"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Show Bags A and B.) Bag A has 266 grams of beans, and Bag B has 158 grams of beans. Let’s use our place value charts and place value disks to figure out how many grams of beans we have altogether."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Leave the disks on your chart. Use more disks to NOTES ON represent the weight of the beans in Bag A. Place MULTIPLE MEANS them below your model of 158. OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "In the workspace on your board, use an addition sign these learners engaged by optimizing to show that you added 266 grams to 158 grams. their choice and autonomy. Request"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Point to the place value disks in the ones column.) from them an alternative model, such 8 ones plus 6 ones equals…? as a tape diagram. They may enjoy"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use the standard algorithm to show our work on the place value chart. Use the problem you wrote in the workspace on your board. (Write the problem vertically, as shown.) Be sure your problem is written vertically, like mine."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Just like we practiced yesterday, show that on your problem."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write the 1 so that it crosses the line under the tens in the tens place and the 4 below the line in the ones column.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s show that in our problem. (Point to the tens in the problem.) Five tens plus 6 tens plus 1 ten equals…?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We show our new hundred just like we showed our new ten before, but this time we put it in the hundreds column because it’s a hundred, not a ten. (Write the 1 so that it crosses the line under the hundreds in the hundreds place and the 2 below the line in the tens column.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s show that in our problem. (Point to the hundreds in the problem.) One hundred plus 2 hundreds plus 1 hundred equals…?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Put Bags A and B on the scale.) The total weight of the beans is 424 grams! units twice. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 16 3 2 Continue with the following suggested problems:  Add to with start unknown: Jamal had a piece of rope. His brother cut off 47 centimeters and took it! Now, Jamal only has 68 centimeters left. How long was Jamal’s rope before his brother cut it?  Compare with bigger unknown: The goldfish aquarium at Sal’s Pet Store has 189 liters of water. The guppy aquarium has 94 more liters of water than the goldfish aquarium. How many liters of water are in both aquariums? larger units twice. Students work with a partner and use the partner–coach strategy to complete page 1 of the Problem Set. Prepare students:  Explain how to use the partner–coach strategy. (One partner coaches, verbalizing the steps needed to solve the problem, while the other partner writes the solution. Then partners switch roles.)  Generate a class list of important words that should be included in the coaching conversations MP.6 (e.g., ones, tens, hundreds, change, standard algorithm, mental math, rename). Keep this list posted for students to refer to as they coach each other. Circulate as students work, addressing misconceptions or incorrect work."
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 196 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 16 3 2\n\n\nLesson 16\nObjective: Add measurements using the standard algorithm to compose\nlarger units twice.\n\nSuggested Lesson Structure\n Fluency Practice                  (12 minutes)\n Application Problem               (5 minutes)\n Concept Development               (33 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (12 minutes)\n Part–Whole with Measurement Units 3.MD.2                                      (3 minutes)\n Round Three- and Four-Digit Numbers 3.NBT.1                                   (5 minutes)\n Group Counting 3.OA.1                                                         (4 minutes)\n\nPart–Whole with Measurement Units (3 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews part–whole thinking using measurement units.\n    T:   There are 100 centimeters in 1 meter. How many centimeters are in 4 meters?\n    S:   400 centimeters.\n    T:   5 meters?\n    S:   500 centimeters.\n    T:   7 meters?\n    S:   700 centimeters.\n    T:   (Write 30 minutes + ____ minutes = 1 hour.) There are 60 minutes in 1 hour. On your personal\n         white board, fill in the equation.\n    S:   (Write 30 minutes + 30 minutes = 1 hour.)\nContinue with the following suggested sequence: 40 minutes and 25 minutes.\n    T:   (Write 300 mL + ____ mL = 1 L.) There are 1,000 milliliters in 1 liter. On your board, fill in the\n         equation.\n    S:   (Write 300 mL + 700 mL = 1 liter.)\nContinue with the following suggested sequence: 200 mL, 600 mL, and 550 mL.\n\n\n                        Lesson 16:                    Add measurements using the standard algorithm to compose larger                       195\n                                                      units twice.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 197 (application-problem) ---\nA STORY OF UNITS                                                                                                               Lesson 16 3 2\n\n\nRound Three- and Four-Digit Numbers (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews rounding from Lessons 13 and 14.\n    T:   (Write 73 ≈ ___.) What is 73 rounded to the nearest ten?\n    S:   70.\nRepeat the process, varying the numbers.\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. It reviews foundational\nstrategies for multiplication from Module 1 and anticipates Module 3.\nDirect students to count forward and backward, occasionally changing the direction of the count:\n        Threes to 30\n        Fours to 40\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\nAs students’ fluency with skip-counting improves, help them make a connection to multiplication by tracking\nthe number of groups they count using their fingers.\n\n\nApplication Problem (5 minutes)\n\nJosh’s apple weighs 93 grams. His pear weighs 152 grams. What is the total weight of the apple and the\npear?\n\n\nNote: This problem reviews the use of the standard algorithm to compose larger units once.\n\n\n                         Lesson 16:                    Add measurements using the standard algorithm to compose larger                       196\n                                                       units twice.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 198 (concept-development) ---\nA STORY OF UNITS                                                                                                               Lesson 16 3 2\n\n\nConcept Development (33 minutes)\n\nMaterials: (T) Bag A of beans (266 grams), Bag B of beans (158 grams), scale that weighs in grams\n           (S) Personal white board, unlabeled place value chart (Lesson 14 Template), place value disks\n\nProblem 1: Use place value charts, disks, and the standard algorithm to add measurements, composing larger\nunits twice.\nStudents start with the unlabeled place value chart template in their\npersonal white boards.                                                                                                       Lesson 14 Template\n\n    T:   (Show Bags A and B.) Bag A has 266 grams of beans, and Bag B\n         has 158 grams of beans. Let’s use our place value charts and\n         place value disks to figure out how many grams of beans we have\n         altogether.\n    T:   Use disks to represent the weight of the beans in Bag B.\n    S:   (Put 8 ones disks in the ones column, 5 tens disks in the tens\n         column, and 1 hundreds disk in the hundreds column.)\n    T:   Record 158 grams in the workspace on your board\n         below the place value chart.\n    T:   Leave the disks on your chart. Use more disks to                           NOTES ON\n         represent the weight of the beans in Bag A. Place                          MULTIPLE MEANS\n         them below your model of 158.                                              OF ENGAGEMENT:\n    S:   (Place 6 ones disks, 6 tens disks, and 2 hundreds disks           Students working above grade level\n         in respective columns.)                                           may be eager to find the sum quickly\n                                                                           without using place value disks. Keep\n    T:   In the workspace on your board, use an addition sign\n                                                                           these learners engaged by optimizing\n         to show that you added 266 grams to 158 grams.                    their choice and autonomy. Request\n    T:   (Point to the place value disks in the ones column.)              from them an alternative model, such\n         8 ones plus 6 ones equals…?                                       as a tape diagram. They may enjoy\n    S:   14 ones.                                                          offering two more examples of their\n                                                                           own in which they use the standard\n    T:   We can change 10 ones for 1 ten. Take 10 ones disks               algorithm to compose larger units\n         and change them for 1 tens disk. Where do we put the              twice.\n         tens disk on the place value chart?\n    S:   In the tens column.\n    T:   How many ones do we have now?\n    S:   4 ones!\n    T:   Let’s use the standard algorithm to show our work on the place value\n         chart. Use the problem you wrote in the workspace on your board.\n         (Write the problem vertically, as shown.) Be sure your problem is\n         written vertically, like mine.\n    T:   (Point to the ones in the problem.) 8 ones plus 6 ones equals?\n    S:   14 ones.\n\n\n                        Lesson 16:                    Add measurements using the standard algorithm to compose larger                             197\n                                                      units twice.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 199 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                             Lesson 16 3 2\n\n\nT:   Let’s rename some ones as tens. How many tens and ones in 14?\nS:   1 ten and 4 ones.\nT:   Just like we practiced yesterday, show that on your problem.\nS:   (Write the 1 so that it crosses the line under the tens in the tens place and\n     the 4 below the line in the ones column.)\nT:   (Point to the place value disks in the tens column.) Five tens plus 6 tens plus 1 ten equals?\nS:   12 tens!\nT:   We can change 10 tens for 1 hundred. Take 10 tens disks and change them for 1 hundreds disk.\n     Where do we put the hundreds disk on the place value chart?\nS:   In the hundreds column.\nT:   How many tens do we have now?\nS:   2 tens!\nT:   Let’s show that in our problem. (Point to the tens in the problem.) Five tens plus 6 tens plus 1 ten\n     equals…?\nS:   12 tens.\nT:   Let’s rename some tens as hundreds. How many hundreds and tens in 12 tens?\nS:   1 hundred and 2 tens.\nT:   We show our new hundred just like we showed our new ten before, but this\n     time we put it in the hundreds column because it’s a hundred, not a ten.\n     (Write the 1 so that it crosses the line under the hundreds in the hundreds\n     place and the 2 below the line in the tens column.)\nT:   (Point to the place value disks in the hundreds column.) One hundred plus\n     2 hundreds plus 1 hundred equals…?\nS:   4 hundreds!\nT:   Four hundreds 2 tens 4 ones makes how many total grams of beans in Bag A and Bag B?\nS:   424 grams.\nT:   Let’s show that in our problem. (Point to the hundreds in the problem.) One hundred plus\n     2 hundreds plus 1 hundred equals…?\nS:   4 hundreds!\nT:   Record 4 hundreds in the hundreds column below the line.\nT:   What unit do we need to include in our answer?\nS:   Grams!\nT:   Read the problem with me. (Point and read.) 158 grams plus 266 grams\n     equals 424 grams.\nT:   How can I check our work using a scale?\nS:   Put Bag A and Bag B on the scale and read the measurement.\nT:   (Put Bags A and B on the scale.) The total weight of the beans is 424 grams!\n\n\n                    Lesson 16:                    Add measurements using the standard algorithm to compose larger                       198\n                                                  units twice.\n\n                   This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                   G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 200 (debrief) ---\nA STORY OF UNITS                                                                                                             Lesson 16 3 2\n\n\nContinue with the following suggested problems:\n       Add to with start unknown: Jamal had a piece of rope. His brother cut off 47 centimeters and took\n        it! Now, Jamal only has 68 centimeters left. How long was Jamal’s rope before his brother cut it?\n       Compare with bigger unknown: The goldfish aquarium at Sal’s Pet Store has 189 liters of water. The\n        guppy aquarium has 94 more liters of water than the goldfish aquarium. How many liters of water\n        are in both aquariums?\n\nProblem 2: Use the partner–coach strategy and the standard algorithm to add measurements, composing\nlarger units twice.\nMaterials: (S) Problem Set\n\nStudents work with a partner and use the partner–coach strategy to complete page 1 of the Problem Set.\nPrepare students:\n       Explain how to use the partner–coach strategy. (One partner coaches, verbalizing the steps needed\n        to solve the problem, while the other partner writes the solution. Then partners switch roles.)\n       Generate a class list of important words that should be included in the coaching conversations\nMP.6    (e.g., ones, tens, hundreds, change, standard algorithm, mental math, rename). Keep this list posted\n        for students to refer to as they coach each other.\nCirculate as students work, addressing misconceptions or incorrect work.\n\nProblem Set (5 minutes)\n                                                                                                                           NOTES ON\nStudents should do their personal best to complete page 2 of\n                                                                                                                           MULTIPLE MEANS\nthe Problem Set within the allotted 5 minutes. For some\n                                                                                                                           OF ACTION AND\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some problems                                                                EXPRESSION:\ndo not specify a method for solving. Students should solve                                                     Help students prepare for successful\nthese problems using the RDW approach used for Application                                                     participation in the Student Debrief.\n                                                                                                               Some may need guidance and support\nProblems.\n                                                                                                               to discover the patterns of Problem 1.\n                                                                                                               Encourage students to read aloud the\n                                                                                                               number sentences in each row and to\n                                                                                                               search for the numbers that repeat.\n\n\n                       Lesson 16:                    Add measurements using the standard algorithm to compose larger                                    199\n                                                     units twice.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 201 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 16 3 2\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Add measurements using the standard\nalgorithm to compose larger units twice.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        What pattern did you notice between Problems\n         1(a), 1(b), and 1(c)? How did the pattern help\n         you solve these problems?\n        Did you or your partner use mental math? For\n         which problems? Why?\n        Look at your work for Problem 2. Did you\n         rename ones? Tens? Hundreds? How can you\n         tell?\n        Explain to a partner how Problem 4 is different\n         than the other problems. What steps did you use\n         to solve this problem?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                        Lesson 16:                    Add measurements using the standard algorithm to compose larger                       200\n                                                      units twice.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 202 (problem-set) ---\nA STORY OF UNITS                                                                                     Lesson 16 Problem Set 3 2\n\n\nName                                                                                                       Date\n\n1. Find the sums below.\n\n   a. 52 mL + 68 mL                                       b. 352 mL + 68 mL                                          c. 352 mL + 468 mL\n\n\n   d. 56 cm + 94 cm                                       e. 506 cm + 94 cm                                          f.     506 cm + 394 cm\n\n\n   g. 697 g + 138 g                                       h. 345 g + 597 g                                           i.     486 g + 497 g\n\n\n   j.   3 L 251 mL + 1 L 549 mL                                                                                      k. 4 kg 384 g + 2 kg 467 g\n\n\n                       Lesson 16:                    Add measurements using the standard algorithm to compose larger                          201\n                                                     units twice.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 203 (problem-set) ---\nA STORY OF UNITS                                                                                      Lesson 16 Problem Set 3 2\n\n\n2. Lane makes sauerkraut. He weighs the amounts of cabbage\n   and salt he uses. Draw and label a tape diagram to find the\n   total weight of the cabbage and salt Lane uses.\n\n                                                                                                                      907 g           93 g\n\n\n3. Sue bakes mini-muffins for the school bake sale. After wrapping 86 muffins, she still has 58 muffins left\n   cooling on the table. How many muffins did she bake altogether?\n\n\n4. The milk carton to the right holds 183 milliliters more liquid\n   than the juice box. What is the total capacity of the juice\n                                                                                                                          Juice Box\n   box and milk carton?                                                                                                                  Milk Carton\n                                                                                                                           279 mL\n                                                                                                                                            ? mL\n\n\n                        Lesson 16:                    Add measurements using the standard algorithm to compose larger                        202\n                                                      units twice.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 204 (exit-ticket) ---\nA STORY OF UNITS                                                                                          Lesson 16 Exit Ticket 3 2\n\n\nName                                                                                                        Date\n\n1. Find the sums.\n\n    a. 78 g + 29 g                                      b. 328 kg + 289 kg                                   c. 509 L + 293 L\n\n\n2. The third-grade class sells lemonade to raise funds. After selling 58 liters of lemonade in 1 week, they still\n   have 46 liters of lemonade left. How many liters of lemonade did they have at the beginning?\n\n\n                        Lesson 16:                    Add measurements using the standard algorithm to compose larger               203\n                                                      units twice.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 205 (homework) ---\nA STORY OF UNITS                                                                                       Lesson 16 Homework 3 2\n\n\nName                                                                                                       Date\n\n1. Find the sums below.\n\n   a. 47 m + 8 m                                           b. 47 m + 38 m                                            c. 147 m + 383 m\n\n\n   d. 63 mL + 9 mL                                         e. 463 mL + 79 mL                                         f.     463 mL + 179 mL\n\n\n   g. 368 kg + 263 kg                                      h. 508 kg + 293 kg                                        i.     103 kg + 799 kg\n\n\n   j.   4 L 342 mL + 2 L 214 mL                                                                                      k. 3 kg 296 g + 5 kg 326 g\n\n\n                       Lesson 16:                    Add measurements using the standard algorithm to compose larger                          204\n                                                     units twice.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 206 (homework) ---\nA STORY OF UNITS                                                                                        Lesson 16 Homework 3 2\n\n\n2. Mrs. Haley roasts a turkey for 55 minutes. She checks it and decides to roast it for an additional 46\n   minutes. Use a tape diagram to find the total minutes Mrs. Haley roasts the turkey.\n\n\n3. A miniature horse weighs 268 fewer kilograms than a\n   Shetland pony. Use the table to find the weight of a                                                   Types of Horses        Weight in kg\n   Shetland pony.\n\n                                                                                                           Shetland pony          _____ kg\n\n\n                                                                                                     American Saddlebred           478 kg\n\n\n                                                                                                         Clydesdale horse         _____ kg\n\n\n                                                                                                          Miniature horse           56 kg\n\n\n4. A Clydesdale horse weighs as much as a Shetland pony and an American Saddlebred horse combined.\n   How much does a Clydesdale horse weigh?\n\n\n                        Lesson 16:                    Add measurements using the standard algorithm to compose larger                        205\n                                                      units twice.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 202,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                     Lesson 16 Problem Set 3 2\n\n\nName                                                                                                       Date\n\n1. Find the sums below.\n\n   a. 52 mL + 68 mL                                       b. 352 mL + 68 mL                                          c. 352 mL + 468 mL\n\n\n   d. 56 cm + 94 cm                                       e. 506 cm + 94 cm                                          f.     506 cm + 394 cm\n\n\n   g. 697 g + 138 g                                       h. 345 g + 597 g                                           i.     486 g + 497 g\n\n\n   j.   3 L 251 mL + 1 L 549 mL                                                                                      k. 4 kg 384 g + 2 kg 467 g\n\n\n                       Lesson 16:                    Add measurements using the standard algorithm to compose larger                          201\n                                                     units twice.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 203,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                      Lesson 16 Problem Set 3 2\n\n\n2. Lane makes sauerkraut. He weighs the amounts of cabbage\n   and salt he uses. Draw and label a tape diagram to find the\n   total weight of the cabbage and salt Lane uses.\n\n                                                                                                                      907 g           93 g\n\n\n3. Sue bakes mini-muffins for the school bake sale. After wrapping 86 muffins, she still has 58 muffins left\n   cooling on the table. How many muffins did she bake altogether?\n\n\n4. The milk carton to the right holds 183 milliliters more liquid\n   than the juice box. What is the total capacity of the juice\n                                                                                                                          Juice Box\n   box and milk carton?                                                                                                                  Milk Carton\n                                                                                                                           279 mL\n                                                                                                                                            ? mL\n\n\n                        Lesson 16:                    Add measurements using the standard algorithm to compose larger                        202\n                                                      units twice.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 297,
+        "text": "A STORY OF UNITS                                                                                      Lesson 16 Answer Key 3 2\n\n\nLesson 16\nProblem Set\n1.    a. 120 mL                                                                 2.        Tape diagram drawn and labeled; 1,000 g\n      b. 420 mL                                                                 3.        144 muffins\n      c. 820 mL                                                                 4.        741 mL\n      d. 150 cm\n      e. 600 cm\n      f.   900 cm\n      g. 835 g\n      h. 942 g\n      i.   983 g\n      j.   4 L 800 mL\n      k. 6 kg 851 g\n\nExit Ticket\n1.    a. 107 g\n      b. 617 kg\n      c. 802 L\n2.    104 L\n\nHomework\n1.    a. 55 m                                                                   2.        Tape diagram drawn and labeled; 101 minutes\n      b. 85 m                                                                   3.        324\n      c. 530 m                                                                  4.        802\n      d. 72 mL\n      e. 542 mL\n      f.   642 mL\n      g. 631 kg\n      h. 801 kg\n      i. 902 kg\n      j. 6 L 556 mL\n      k. 8 kg 622 g\n\n\n                        Module 2:                  Place Value and Problem Solving with Units of Measure                            296\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

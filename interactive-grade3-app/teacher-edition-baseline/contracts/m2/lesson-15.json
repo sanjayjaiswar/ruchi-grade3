@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m2-l15",
+  "moduleId": "m2",
+  "lessonNumber": 15,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+    "teacherEditionBytes": 20015771,
+    "lessonPdfPages": {
+      "start": 185,
+      "end": 195
+    },
+    "problemSetPdfPages": [
+      191,
+      192
+    ],
+    "exitTicketPdfPages": [
+      193
+    ],
+    "homeworkPdfPages": [
+      194,
+      195
+    ],
+    "answerKeyPdfPages": [
+      296
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m2-student/workbook-page-062.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m2-teacher/page-191.png",
+      "/source-pages/m2-teacher/page-192.png",
+      "/source-pages/m2-answer-key/page-296.png"
+    ]
+  },
+  "objective": "Add measurements using the standard algorithm to compose larger units once.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "to help you answer this\n         question.\n        Explain to your partner how you used the\n         standard algorithm to solve Problem 3. Did you\n         rename the ones? Tens? Hundreds?\n        Explain to your partner what your tape diagram\n         looked like for Problem 4.\n        How are Problems 2 and 4 similar? How are they\n         different from the other problems?\n\n\n                        Lesson 15:                    Add measurements using the standard algorithm to compose larger                       188\n                                                      units once.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 15 3 2\n\n\nExit Ticket (3 minutes)\nAfter the",
+    "conceptDevelopmentText": "Materials: (T) 2 beakers, water (S) Unlabeled place value chart (Lesson 14 Template), place value disks,\n           personal white board\n                                                                                                                           Lesson 14 Template\nStudents start with the unlabeled place value chart template in\ntheir personal white boards.\n\n    T:   (Show Beaker A with 56 milliliters of water and Beaker\n         B with 27 milliliters of water.) Beaker A has\n         56 milliliters of water, and Beaker B has 27 milliliters of\n         water. Let’s use place value charts and place value\n         disks to find the total milliliters of water in both\n         beakers.\n    T:   Use place value disks to represent the amount of water\n         from Beaker A on your chart. (Allow time for students                       NOTES ON\n         to work.)\n                                                                                     MULTIPLE MEANS\n    T:   Record 56 milliliters in the workspace on your personal                     OF ACTION AND\n         white board below the place value chart.                                    EXPRESSION:\n    T:   Leave the disks for 56 on your chart. Use more disks to            English language learners and others\n         represent the amount of water from Beaker B. Place                 will benefit from the real-world\n         them below your model of 56. (Allow time for                       context, the varied methods for\n         students to work.)                                                 response (personal white boards,\n    T:   In the workspace on your board, use an addition sign               models, numbers, etc.), and the\n         to show that you added 27 milliliters to 56 milliliters.           introduction to academic math\n                                                                            language (standard algorithm) at the\n    T:   (Point to the place value disks in the ones column.)               end of the lesson.\n         Six ones plus 7 ones equals …?\n    S:   13 ones.\n    T:   We can change 10 ones for 1 ten. Take 10 ones disks and change them for 1 tens disk. Where do\n         we put the tens disk on the place value chart?\n    S:   In the tens column.\n    T:   How many ones do we have now?\n    S:   3 ones!\n    T:   Let’s show that same work in the problem we wrote in our workspace on our\n         boards. If you wrote your problem horizontally, rewrite it vertically so that it\n         looks like mine.\n    T:   (Point to the ones.) 6 ones plus 7 ones equals …?\n    S:   13 ones.\n    T:   Let’s rename some ones as tens. How many tens and ones in 13 ones?\n    S:   1 ten and 3 ones.\n\n\n                        Lesson 15:                    Add measurements using the standard algorithm to compose larger                           186\n                                                      units once.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 15 3 2\n\n\n    T:   This is how we show renaming using the standard algorithm. (Write the 1\n         so that it crosses the line under the tens in the tens place and the 3 below\n         the line in the ones column. This way you write 13 rather than 3 and 1 as\n         separate numbers. Refer to the vertical addition shown to the right.)\n         Show this work on your board.\n    T:   Talk to a partner. How is this work similar to the work we did with the place value disks?\n    S:   (Discuss.)\n    T:   That’s right. Renaming in the algorithm is the same as changing with our place value disks.\n    T:   (Point to the place value disks in the tens column.) 5 tens plus 2 tens plus 1 ten equals…?\n    S:   8 tens!\n    T:   8 tens 3 ones makes how many milliliters of water in the bowl?\n    S:   83 milliliters.\n    T:   Let’s show that in our problem. (Point to the tens.) 5 tens plus 2 tens plus 1 ten equals…?\n    S:   8 tens.\n    T:   Record 8 tens below the line in the tens column.\n    T:   What unit do we need to include in our answer?\n    S:   Milliliters!\n    T:   Read the problem with me. (Point and read.) 56 milliliters plus 27\n         milliliters equals 83 milliliters. We just used the standard algorithm as a\n         tool for solving this problem.\n    T:   How can I check our work using the beaker?\n    S:   Pour the water from one beaker into the other beaker and read the measurement.\n    T:   (Pour.) The amount of water in the beaker is 83 milliliters!\nContinue with the following suggested problems:\n        Add to with start unknown: Lisa draws a line on the board. Marcus shortens the length of the line\n         by erasing 32 centimeters. The total length of the line is now 187 centimeters. How long is the line\n         that Lisa drew?\n        Compare with bigger unknown (start unknown): John\n         reads for 74 minutes on Wednesday. On Thursday, he\n         reads for 17 more minutes than he read on                                NOTES ON\n         Wednesday. How many total minutes does John read                         THE PROBLEM SET:\n         on Wednesday and Thursday?\n                                                                                                                The problems in the Problem Set are\n                                                                                                                written horizontally so that students do",
+    "fluencyPracticeText": " Part–Whole with Measurement Units 3.MD.2                                      (3 minutes)\n Round Three- and Four-Digit Numbers 3.NBT.1                                   (5 minutes)\n\nPart–Whole with Measurement Units (3 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews part–whole thinking using measurement units.\n    T:   There are 100 centimeters in 1 meter. How many centimeters are in 2 meters?\n    S:   200 centimeters.\n    T:   3 meters?\n    S:   300 centimeters.\n    T:   8 meters?\n    S:   800 centimeters.\n    T:   (Write 50 minutes + ____ minutes = 1 hour.) There are 60 minutes in 1 hour. On your personal\n         white board, fill in the equation.\n    S:   (Write 50 minutes + 10 minutes = 1 hour.)\nContinue with the following suggested sequence: 30 minutes and 45 minutes.\n    T:   (Write 800 mL + ____ mL = 1 L.) There are 1,000 milliliters in 1 liter. On your board, fill in the\n         equation.\n    S:   (Write 800 mL + 200 mL = 1 L.)\nContinue with the following suggested sequence: 500 mL, 700 mL, and 250 mL.\n\n\n                        Lesson 15:                    Add measurements using the standard algorithm to compose larger                       184\n                                                      units once.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 15 3 2\n\n\n    T:   (Write 1 kg – 500 g = _____ g.) There are 1,000 grams in 1 kilogram. On your board, fill in the\n         equation.\n    S:   (Write 1 kg – 500 g = 500 g.)\nContinue with the following suggested sequence: Subtract 300 g, 700 g, and 650 g from 1 kg.\n\nRound Three- and Four-Digit Numbers (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews rounding from Lessons 13 and 14.\n    T:   (Write 87 ≈ ___.) What is 87 rounded to the nearest ten?\n    S:   90.\nContinue with the following possible sequence: 387, 43, 643, 35, and 865.\n    T:   (Write 237 ≈ ___.) 237 is between which 2 hundreds?\n    S:   200 and 300.\n    T:   On your board, draw a vertical number line. Mark 200 and 300 as your endpoints and label the\n         halfway point.\n    S:   (Label 200 and 300 as endpoints and 250 as the halfway point.)\n    T:   Show where 237 falls on the number line, and then round to the nearest hundred.\n    S:   (Plot 237 between 200 and 250 and write 237 ≈ 200.)\nContinue with the following suggested sequence: 1,237; 678; 1,678; 850; 1,850; and 2,361.",
+    "problemSetGuidanceText": "not assume that they need to use the\n                                                                                                                standard algorithm to solve. Mental\nStudents should do their personal best to complete the Problem\n                                                                                                                math may be a more efficient strategy\nSet within the allotted 10 minutes. For some classes, it may be                                                 in some cases. Invite students to use\nappropriate to modify the assignment by specifying which                                                        the algorithm as a strategic tool,\nproblems they work on first. Some problems do not specify a                                                     purposefully choosing it rather than\nmethod for solving. Students should solve these problems using                                                  defaulting to it.\nthe RDW approach used for Application Problems.\n\n\n                        Lesson 15:                    Add measurements using the standard algorithm to compose larger                                  187\n                                                      units once.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 15 3 2",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Show Beaker A with 56 milliliters of water and Beaker B with 27 milliliters of water.) Beaker A has 56 milliliters of water, and Beaker B has 27 milliliters of water. Let’s use place value charts and place value disks to find the total milliliters of water in both beakers."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use place value disks to represent the amount of water from Beaker A on your chart. (Allow time for students NOTES ON to work.) MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Record 56 milliliters in the workspace on your personal OF ACTION AND white board below the place value chart. EXPRESSION:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Leave the disks for 56 on your chart. Use more disks to English language learners and others represent the amount of water from Beaker B. Place will benefit from the real-world them below your model of 56. (Allow time for context, the varied methods for students to work.) response (personal white boards,"
+      },
+      {
+        "speaker": "teacher",
+        "text": "In the workspace on your board, use an addition sign models, numbers, etc.), and the to show that you added 27 milliliters to 56 milliliters. introduction to academic math language (standard algorithm) at the"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Point to the place value disks in the ones column.) end of the lesson. Six ones plus 7 ones equals …?"
+      },
+      {
+        "speaker": "students",
+        "text": "13 ones."
+      },
+      {
+        "speaker": "teacher",
+        "text": "We can change 10 ones for 1 ten. Take 10 ones disks and change them for 1 tens disk. Where do we put the tens disk on the place value chart?"
+      },
+      {
+        "speaker": "students",
+        "text": "In the tens column."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many ones do we have now?"
+      },
+      {
+        "speaker": "students",
+        "text": "3 ones!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s show that same work in the problem we wrote in our workspace on our boards. If you wrote your problem horizontally, rewrite it vertically so that it looks like mine."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Point to the ones.) 6 ones plus 7 ones equals …?"
+      },
+      {
+        "speaker": "students",
+        "text": "13 ones."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s rename some ones as tens. How many tens and ones in 13 ones?"
+      },
+      {
+        "speaker": "students",
+        "text": "1 ten and 3 ones. units once. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 15 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "This is how we show renaming using the standard algorithm. (Write the 1 so that it crosses the line under the tens in the tens place and the 3 below the line in the ones column. This way you write 13 rather than 3 and 1 as separate numbers. Refer to the vertical addition shown to the right.) Show this work on your board."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to a partner. How is this work similar to the work we did with the place value disks?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "That’s right. Renaming in the algorithm is the same as changing with our place value disks."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Point to the place value disks in the tens column.) 5 tens plus 2 tens plus 1 ten equals…?"
+      },
+      {
+        "speaker": "students",
+        "text": "8 tens!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "8 tens 3 ones makes how many milliliters of water in the bowl?"
+      },
+      {
+        "speaker": "students",
+        "text": "83 milliliters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s show that in our problem. (Point to the tens.) 5 tens plus 2 tens plus 1 ten equals…?"
+      },
+      {
+        "speaker": "students",
+        "text": "8 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Record 8 tens below the line in the tens column."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What unit do we need to include in our answer?"
+      },
+      {
+        "speaker": "students",
+        "text": "Milliliters!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Read the problem with me. (Point and read.) 56 milliliters plus 27 milliliters equals 83 milliliters. We just used the standard algorithm as a tool for solving this problem."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can I check our work using the beaker?"
+      },
+      {
+        "speaker": "students",
+        "text": "Pour the water from one beaker into the other beaker and read the measurement."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Pour.) The amount of water in the beaker is 83 milliliters! Continue with the following suggested problems:  Add to with start unknown: Lisa draws a line on the board. Marcus shortens the length of the line by erasing 32 centimeters. The total length of the line is now 187 centimeters. How long is the line that Lisa drew?  Compare with bigger unknown (start unknown): John reads for 74 minutes on Wednesday. On Thursday, he reads for 17 more minutes than he read on NOTES ON Wednesday. How many total minutes does John read THE PROBLEM SET: on Wednesday and Thursday? The problems in the Problem Set are written horizontally so that students do"
+      }
+    ],
+    "teacherPrompts": [
+      "(Show Beaker A with 56 milliliters of water and Beaker B with 27 milliliters of water.) Beaker A has 56 milliliters of water, and Beaker B has 27 milliliters of water. Let’s use place value charts and place value disks to find the total milliliters of water in both beakers.",
+      "Use place value disks to represent the amount of water from Beaker A on your chart. (Allow time for students NOTES ON to work.) MULTIPLE MEANS",
+      "Record 56 milliliters in the workspace on your personal OF ACTION AND white board below the place value chart. EXPRESSION:",
+      "Leave the disks for 56 on your chart. Use more disks to English language learners and others represent the amount of water from Beaker B. Place will benefit from the real-world them below your model of 56. (Allow time for context, the varied methods for students to work.) response (personal white boards,",
+      "In the workspace on your board, use an addition sign models, numbers, etc.), and the to show that you added 27 milliliters to 56 milliliters. introduction to academic math language (standard algorithm) at the",
+      "(Point to the place value disks in the ones column.) end of the lesson. Six ones plus 7 ones equals …?",
+      "We can change 10 ones for 1 ten. Take 10 ones disks and change them for 1 tens disk. Where do we put the tens disk on the place value chart?",
+      "How many ones do we have now?",
+      "Let’s show that same work in the problem we wrote in our workspace on our boards. If you wrote your problem horizontally, rewrite it vertically so that it looks like mine.",
+      "(Point to the ones.) 6 ones plus 7 ones equals …?",
+      "Let’s rename some ones as tens. How many tens and ones in 13 ones?",
+      "This is how we show renaming using the standard algorithm. (Write the 1 so that it crosses the line under the tens in the tens place and the 3 below the line in the ones column. This way you write 13 rather than 3 and 1 as separate numbers. Refer to the vertical addition shown to the right.) Show this work on your board.",
+      "Talk to a partner. How is this work similar to the work we did with the place value disks?",
+      "That’s right. Renaming in the algorithm is the same as changing with our place value disks.",
+      "(Point to the place value disks in the tens column.) 5 tens plus 2 tens plus 1 ten equals…?",
+      "8 tens 3 ones makes how many milliliters of water in the bowl?",
+      "Let’s show that in our problem. (Point to the tens.) 5 tens plus 2 tens plus 1 ten equals…?",
+      "Record 8 tens below the line in the tens column.",
+      "What unit do we need to include in our answer?",
+      "Read the problem with me. (Point and read.) 56 milliliters plus 27 milliliters equals 83 milliliters. We just used the standard algorithm as a tool for solving this problem.",
+      "How can I check our work using the beaker?",
+      "(Pour.) The amount of water in the beaker is 83 milliliters! Continue with the following suggested problems:  Add to with start unknown: Lisa draws a line on the board. Marcus shortens the length of the line by erasing 32 centimeters. The total length of the line is now 187 centimeters. How long is the line that Lisa drew?  Compare with bigger unknown (start unknown): John reads for 74 minutes on Wednesday. On Thursday, he reads for 17 more minutes than he read on NOTES ON Wednesday. How many total minutes does John read THE PROBLEM SET: on Wednesday and Thursday? The problems in the Problem Set are written horizontally so that students do"
+    ],
+    "debriefPrompt": "Notice the units in Problems 1(j) and 1(k). Both problems use both kilograms and grams. Did having two units in the problem change anything about the way you solved?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Find the sums below. Choose mental math or the algorithm. a. 46 mL + 5 mL b. 46 mL + 25 mL c. 46 mL + 125 mL d. 59 cm + 30 cm e. 509 cm + 83 cm f. 597 cm + 30 cm g. 29 g + 63 g h. 345 g + 294 g i. 480 g + 476 g j. 1 L 245 mL + 2 L 412 mL k. 2 kg 509 g + 3 kg 367 g units once. Nadine and Jen buy a small bag of popcorn and a pretzel at the movie theater. The pretzel weighs 63 grams more than the popcorn. What is the weight of the pretzel?? grams 44 grams 3. In math class, Jason and Andrea find the total liquid volume of water in their beakers. Jason says the total is 782 Student Liquid Volume milliliters, but Andrea says it is 792 milliliters. The amount of water in each beaker can be found in the table to the Jason 475 mL right. Show whose calculation is correct. Explain the mistake of the other student. Andrea 317 mL 4. It takes Greg 15 minutes to mow the front lawn. It takes him 17 more minutes to mow the back lawn than the front lawn. What is the total amount of time Greg spends mowing the lawns? units once.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                     Lesson 15 Problem Set 3 2\n\n\nName                                                                                                       Date\n\n1. Find the sums below. Choose mental math or the algorithm.\n\n   a. 46 mL + 5 mL                                    b. 46 mL + 25 mL                                      c. 46 mL + 125 mL\n\n\n   d. 59 cm + 30 cm                                   e. 509 cm + 83 cm                                     f.     597 cm + 30 cm\n\n\n   g. 29 g + 63 g                                     h. 345 g + 294 g                                      i.     480 g + 476 g\n\n\n   j.   1 L 245 mL + 2 L 412 mL                                                                             k. 2 kg 509 g + 3 kg 367 g\n\n\n                       Lesson 15:                    Add measurements using the standard algorithm to compose larger                     190\n                                                     units once.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                      Lesson 15 Problem Set 3 2\n\n\n2. Nadine and Jen buy a small bag of popcorn and a pretzel at\n   the movie theater. The pretzel weighs 63 grams more than\n   the popcorn. What is the weight of the pretzel?\n\n                                                                                                           ? grams\n                                                                                                                                     44 grams\n\n\n3. In math class, Jason and Andrea find the total liquid volume\n   of water in their beakers. Jason says the total is 782                                                    Student             Liquid Volume\n   milliliters, but Andrea says it is 792 milliliters. The amount\n   of water in each beaker can be found in the table to the                                                    Jason                475 mL\n   right. Show whose calculation is correct. Explain the\n   mistake of the other student.                                                                              Andrea                317 mL\n\n\n4. It takes Greg 15 minutes to mow the front lawn. It takes him 17 more minutes to mow the back lawn\n   than the front lawn. What is the total amount of time Greg spends mowing the lawns?\n\n\n                        Lesson 15:                    Add measurements using the standard algorithm to compose larger                            191\n                                                      units once.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    a. 51 mL                                                                  2.       107 g\n      b. 71 mL                                                                  3.       475 mL + 317 mL = 792 mL; Andrea is correct;\n      c. 171 mL                                                                          explanations will vary.\n      d. 89 cm                                                                  4.       47 min\n      e. 592 cm\n      f.   627 cm\n      g. 92 g\n      h. 639 g\n      i.   956 g\n      j.   3 L 657 mL\n      k. 5 kg 876 g",
+    "answerKeyText": "A STORY OF UNITS                                                                                      Lesson 15 Answer Key 3 2\n\n\nLesson 15\nProblem Set\n1.    a. 51 mL                                                                  2.       107 g\n      b. 71 mL                                                                  3.       475 mL + 317 mL = 792 mL; Andrea is correct;\n      c. 171 mL                                                                          explanations will vary.\n      d. 89 cm                                                                  4.       47 min\n      e. 592 cm\n      f.   627 cm\n      g. 92 g\n      h. 639 g\n      i.   956 g\n      j.   3 L 657 mL\n      k. 5 kg 876 g\n\n\nExit Ticket\n1.    a. 60 cm                                                                 2.        a. 41 min\n      b. 742 m                                                                           b. 67 min\n      c. 584 km\n\n\nHomework\n1.    a. 82 cm                                                                  3.       119 students\n      b. 95 kg                                                                  4.       63 cm\n      c. 591 mL                                                                 5.       Paperback book and bar of soap;\n      d. 375 g                                                                           343 g + 117 g = 460 g\n      e. 790 mL\n      f.   480 L\n2.    a. 373\n      b. 444 mL\n\n\n                                                                                                                                    295\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "tape-diagram",
+      "number-line",
+      "measurement-scale",
+      "liquid-measure",
+      "ruler-or-length",
+      "place-value",
+      "table-or-chart",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "tape-diagram": [
+        " Explain to your partner what your tape diagram"
+      ],
+      "number-line": [
+        "T: On your board, draw a vertical number line. Mark 200 and 300 as your endpoints and label the",
+        "T: Show where 237 falls on the number line, and then round to the nearest hundred."
+      ],
+      "measurement-scale": [
+        " Explain to your partner what your tape diagram",
+        "T: (Write 1 kg – 500 g = _____ g.) There are 1,000 grams in 1 kilogram. On your board, fill in the",
+        "the movie theater. The pretzel weighs 63 grams more than",
+        "the popcorn. What is the weight of the pretzel?",
+        "? grams",
+        "44 grams"
+      ],
+      "liquid-measure": [
+        "Materials: (T) 2 beakers, water (S) Unlabeled place value chart (Lesson 14 Template), place value disks,",
+        "T: (Show Beaker A with 56 milliliters of water and Beaker",
+        "B with 27 milliliters of water.) Beaker A has",
+        "56 milliliters of water, and Beaker B has 27 milliliters of",
+        "disks to find the total milliliters of water in both",
+        "beakers.",
+        "from Beaker A on your chart. (Allow time for students NOTES ON",
+        "T: Record 56 milliliters in the workspace on your personal OF ACTION AND"
+      ],
+      "ruler-or-length": [
+        " Add to with start unknown: Lisa draws a line on the board. Marcus shortens the length of the line",
+        "by erasing 32 centimeters. The total length of the line is now 187 centimeters. How long is the line",
+        "T: There are 100 centimeters in 1 meter. How many centimeters are in 2 meters?",
+        "S: 200 centimeters.",
+        "S: 300 centimeters.",
+        "S: 800 centimeters."
+      ],
+      "place-value": [
+        "Add measurements using the standard algorithm to compose larger units once.",
+        "standard algorithm to solve Problem 3. Did you",
+        "Lesson 15: Add measurements using the standard algorithm to compose larger 188",
+        "Materials: (T) 2 beakers, water (S) Unlabeled place value chart (Lesson 14 Template), place value disks,",
+        "Students start with the unlabeled place value chart template in",
+        "water. Let’s use place value charts and place value",
+        "T: Use place value disks to represent the amount of water",
+        "white board below the place value chart. EXPRESSION:"
+      ],
+      "table-or-chart": [
+        "Materials: (T) 2 beakers, water (S) Unlabeled place value chart (Lesson 14 Template), place value disks,",
+        "Students start with the unlabeled place value chart template in",
+        "from Beaker A on your chart. (Allow time for students NOTES ON",
+        "white board below the place value chart. EXPRESSION:",
+        "T: Leave the disks for 56 on your chart. Use more disks to English language learners and others",
+        "we put the tens disk on the place value chart?",
+        "of water in each beaker can be found in the table to the Jason 475 mL"
+      ],
+      "money-model": [
+        "T: We can change 10 ones for 1 ten. Take 10 ones disks and change them for 1 tens disk. Where do",
+        "by erasing 32 centimeters. The total length of the line is now 187 centimeters. How long is the line",
+        "T: There are 100 centimeters in 1 meter. How many centimeters are in 2 meters?",
+        "S: 200 centimeters.",
+        "S: 300 centimeters.",
+        "S: 800 centimeters."
+      ],
+      "picture-or-drawing": [
+        " Explain to your partner what your tape diagram",
+        " Add to with start unknown: Lisa draws a line on the board. Marcus shortens the length of the line",
+        "T: On your board, draw a vertical number line. Mark 200 and 300 as your endpoints and label the"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Show Beaker A with 56 milliliters of water and Beaker B with 27 milliliters of water.) Beaker A has 56 milliliters of water, and Beaker B has 27 milliliters of water. Let’s use place value charts and place value disks to find the total milliliters of water in both beakers."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Leave the disks for 56 on your chart. Use more disks to English language learners and others represent the amount of water from Beaker B. Place will benefit from the real-world them below your model of 56. (Allow time for context, the varied methods for students to work.) response (personal white boards,"
+      },
+      {
+        "speaker": "teacher",
+        "text": "In the workspace on your board, use an addition sign models, numbers, etc.), and the to show that you added 27 milliliters to 56 milliliters. introduction to academic math language (standard algorithm) at the"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s show that same work in the problem we wrote in our workspace on our boards. If you wrote your problem horizontally, rewrite it vertically so that it looks like mine."
+      },
+      {
+        "speaker": "teacher",
+        "text": "This is how we show renaming using the standard algorithm. (Write the 1 so that it crosses the line under the tens in the tens place and the 3 below the line in the ones column. This way you write 13 rather than 3 and 1 as separate numbers. Refer to the vertical addition shown to the right.) Show this work on your board."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s show that in our problem. (Point to the tens.) 5 tens plus 2 tens plus 1 ten equals…?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Pour.) The amount of water in the beaker is 83 milliliters! Continue with the following suggested problems:  Add to with start unknown: Lisa draws a line on the board. Marcus shortens the length of the line by erasing 32 centimeters. The total length of the line is now 187 centimeters. How long is the line that Lisa drew?  Compare with bigger unknown (start unknown): John reads for 74 minutes on Wednesday. On Thursday, he reads for 17 more minutes than he read on NOTES ON Wednesday. How many total minutes does John read THE PROBLEM SET: on Wednesday and Thursday? The problems in the Problem Set are written horizontally so that students do"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 185 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 15 3 2\n\n\nLesson 15\nObjective: Add measurements using the standard algorithm to compose\nlarger units once.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (8 minutes)\n Application Problem               (8 minutes)\n Concept Development               (34 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (8 minutes)\n\n Part–Whole with Measurement Units 3.MD.2                                      (3 minutes)\n Round Three- and Four-Digit Numbers 3.NBT.1                                   (5 minutes)\n\nPart–Whole with Measurement Units (3 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews part–whole thinking using measurement units.\n    T:   There are 100 centimeters in 1 meter. How many centimeters are in 2 meters?\n    S:   200 centimeters.\n    T:   3 meters?\n    S:   300 centimeters.\n    T:   8 meters?\n    S:   800 centimeters.\n    T:   (Write 50 minutes + ____ minutes = 1 hour.) There are 60 minutes in 1 hour. On your personal\n         white board, fill in the equation.\n    S:   (Write 50 minutes + 10 minutes = 1 hour.)\nContinue with the following suggested sequence: 30 minutes and 45 minutes.\n    T:   (Write 800 mL + ____ mL = 1 L.) There are 1,000 milliliters in 1 liter. On your board, fill in the\n         equation.\n    S:   (Write 800 mL + 200 mL = 1 L.)\nContinue with the following suggested sequence: 500 mL, 700 mL, and 250 mL.\n\n\n                        Lesson 15:                    Add measurements using the standard algorithm to compose larger                       184\n                                                      units once.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 186 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 15 3 2\n\n\n    T:   (Write 1 kg – 500 g = _____ g.) There are 1,000 grams in 1 kilogram. On your board, fill in the\n         equation.\n    S:   (Write 1 kg – 500 g = 500 g.)\nContinue with the following suggested sequence: Subtract 300 g, 700 g, and 650 g from 1 kg.\n\nRound Three- and Four-Digit Numbers (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews rounding from Lessons 13 and 14.\n    T:   (Write 87 ≈ ___.) What is 87 rounded to the nearest ten?\n    S:   90.\nContinue with the following possible sequence: 387, 43, 643, 35, and 865.\n    T:   (Write 237 ≈ ___.) 237 is between which 2 hundreds?\n    S:   200 and 300.\n    T:   On your board, draw a vertical number line. Mark 200 and 300 as your endpoints and label the\n         halfway point.\n    S:   (Label 200 and 300 as endpoints and 250 as the halfway point.)\n    T:   Show where 237 falls on the number line, and then round to the nearest hundred.\n    S:   (Plot 237 between 200 and 250 and write 237 ≈ 200.)\nContinue with the following suggested sequence: 1,237; 678; 1,678; 850; 1,850; and 2,361.\n\n\nApplication Problem (8 minutes)\n\nUse mental math to solve these problems. Record your strategy for solving each problem.\n\n\na. 46 mL + 5 mL                         b. 39 cm + 8 cm                                     c. 125 g + 7 g                         d. 108 L + 4 L\n\n\nPossible strategies:\n    a.   46 mL + 4 mL + 1 mL = 50 mL + 1 mL = 51 mL\n    b.   39 cm + 1 cm + 7 cm = 40 cm + 7 cm = 47 cm\n    c.   125 g + 5 g + 2 g = 130 g + 2 g = 132 g\n    d.   108 L + 2 L + 2 L = 110 L + 2 L = 112 L\n\nNote: This problem is designed to show that mental math can be an efficient strategy even when renaming is\nrequired. It also sets up the conversation in the Student Debrief about when and why the standard algorithm\nis used. Be sure to give students an opportunity to discuss and show how they solved these problems.\n\n\n                        Lesson 15:                    Add measurements using the standard algorithm to compose larger                               185\n                                                      units once.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 187 (concept-development) ---\nA STORY OF UNITS                                                                                                              Lesson 15 3 2\n\n\nConcept Development (34 minutes)\n\nMaterials: (T) 2 beakers, water (S) Unlabeled place value chart (Lesson 14 Template), place value disks,\n           personal white board\n                                                                                                                           Lesson 14 Template\nStudents start with the unlabeled place value chart template in\ntheir personal white boards.\n\n    T:   (Show Beaker A with 56 milliliters of water and Beaker\n         B with 27 milliliters of water.) Beaker A has\n         56 milliliters of water, and Beaker B has 27 milliliters of\n         water. Let’s use place value charts and place value\n         disks to find the total milliliters of water in both\n         beakers.\n    T:   Use place value disks to represent the amount of water\n         from Beaker A on your chart. (Allow time for students                       NOTES ON\n         to work.)\n                                                                                     MULTIPLE MEANS\n    T:   Record 56 milliliters in the workspace on your personal                     OF ACTION AND\n         white board below the place value chart.                                    EXPRESSION:\n    T:   Leave the disks for 56 on your chart. Use more disks to            English language learners and others\n         represent the amount of water from Beaker B. Place                 will benefit from the real-world\n         them below your model of 56. (Allow time for                       context, the varied methods for\n         students to work.)                                                 response (personal white boards,\n    T:   In the workspace on your board, use an addition sign               models, numbers, etc.), and the\n         to show that you added 27 milliliters to 56 milliliters.           introduction to academic math\n                                                                            language (standard algorithm) at the\n    T:   (Point to the place value disks in the ones column.)               end of the lesson.\n         Six ones plus 7 ones equals …?\n    S:   13 ones.\n    T:   We can change 10 ones for 1 ten. Take 10 ones disks and change them for 1 tens disk. Where do\n         we put the tens disk on the place value chart?\n    S:   In the tens column.\n    T:   How many ones do we have now?\n    S:   3 ones!\n    T:   Let’s show that same work in the problem we wrote in our workspace on our\n         boards. If you wrote your problem horizontally, rewrite it vertically so that it\n         looks like mine.\n    T:   (Point to the ones.) 6 ones plus 7 ones equals …?\n    S:   13 ones.\n    T:   Let’s rename some ones as tens. How many tens and ones in 13 ones?\n    S:   1 ten and 3 ones.\n\n\n                        Lesson 15:                    Add measurements using the standard algorithm to compose larger                           186\n                                                      units once.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 188 (application-problem) ---\nA STORY OF UNITS                                                                                                              Lesson 15 3 2\n\n\n    T:   This is how we show renaming using the standard algorithm. (Write the 1\n         so that it crosses the line under the tens in the tens place and the 3 below\n         the line in the ones column. This way you write 13 rather than 3 and 1 as\n         separate numbers. Refer to the vertical addition shown to the right.)\n         Show this work on your board.\n    T:   Talk to a partner. How is this work similar to the work we did with the place value disks?\n    S:   (Discuss.)\n    T:   That’s right. Renaming in the algorithm is the same as changing with our place value disks.\n    T:   (Point to the place value disks in the tens column.) 5 tens plus 2 tens plus 1 ten equals…?\n    S:   8 tens!\n    T:   8 tens 3 ones makes how many milliliters of water in the bowl?\n    S:   83 milliliters.\n    T:   Let’s show that in our problem. (Point to the tens.) 5 tens plus 2 tens plus 1 ten equals…?\n    S:   8 tens.\n    T:   Record 8 tens below the line in the tens column.\n    T:   What unit do we need to include in our answer?\n    S:   Milliliters!\n    T:   Read the problem with me. (Point and read.) 56 milliliters plus 27\n         milliliters equals 83 milliliters. We just used the standard algorithm as a\n         tool for solving this problem.\n    T:   How can I check our work using the beaker?\n    S:   Pour the water from one beaker into the other beaker and read the measurement.\n    T:   (Pour.) The amount of water in the beaker is 83 milliliters!\nContinue with the following suggested problems:\n        Add to with start unknown: Lisa draws a line on the board. Marcus shortens the length of the line\n         by erasing 32 centimeters. The total length of the line is now 187 centimeters. How long is the line\n         that Lisa drew?\n        Compare with bigger unknown (start unknown): John\n         reads for 74 minutes on Wednesday. On Thursday, he\n         reads for 17 more minutes than he read on                                NOTES ON\n         Wednesday. How many total minutes does John read                         THE PROBLEM SET:\n         on Wednesday and Thursday?\n                                                                                                                The problems in the Problem Set are\n                                                                                                                written horizontally so that students do\nProblem Set (10 minutes)                                                                                        not assume that they need to use the\n                                                                                                                standard algorithm to solve. Mental\nStudents should do their personal best to complete the Problem\n                                                                                                                math may be a more efficient strategy\nSet within the allotted 10 minutes. For some classes, it may be                                                 in some cases. Invite students to use\nappropriate to modify the assignment by specifying which                                                        the algorithm as a strategic tool,\nproblems they work on first. Some problems do not specify a                                                     purposefully choosing it rather than\nmethod for solving. Students should solve these problems using                                                  defaulting to it.\nthe RDW approach used for Application Problems.\n\n\n                        Lesson 15:                    Add measurements using the standard algorithm to compose larger                                  187\n                                                      units once.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 189 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 15 3 2\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Add measurements using the standard\nalgorithm to compose larger units once.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Notice the units in Problems 1(j) and 1(k). Both\n         problems use both kilograms and grams. Did\n         having two units in the problem change anything\n         about the way you solved?\n        What pattern did you notice between Problems\nMP.7     1(a), 1(b), and 1(c)? How did this pattern help\n         you solve the problems?\n        Did you rewrite any of the horizontal problems\n         vertically? Why?\n        Which problems did you solve using mental\n         math? The standard algorithm? Why did you\n         use the standard algorithm for some problems\n         and mental math for other problems? Think\n         about the strategies you used to solve today’s\n         Application Problem to help you answer this\n         question.\n        Explain to your partner how you used the\n         standard algorithm to solve Problem 3. Did you\n         rename the ones? Tens? Hundreds?\n        Explain to your partner what your tape diagram\n         looked like for Problem 4.\n        How are Problems 2 and 4 similar? How are they\n         different from the other problems?\n\n\n                        Lesson 15:                    Add measurements using the standard algorithm to compose larger                       188\n                                                      units once.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 190 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 15 3 2\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that were presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 15:                    Add measurements using the standard algorithm to compose larger                       189\n                                                      units once.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 191 (problem-set) ---\nA STORY OF UNITS                                                                                     Lesson 15 Problem Set 3 2\n\n\nName                                                                                                       Date\n\n1. Find the sums below. Choose mental math or the algorithm.\n\n   a. 46 mL + 5 mL                                    b. 46 mL + 25 mL                                      c. 46 mL + 125 mL\n\n\n   d. 59 cm + 30 cm                                   e. 509 cm + 83 cm                                     f.     597 cm + 30 cm\n\n\n   g. 29 g + 63 g                                     h. 345 g + 294 g                                      i.     480 g + 476 g\n\n\n   j.   1 L 245 mL + 2 L 412 mL                                                                             k. 2 kg 509 g + 3 kg 367 g\n\n\n                       Lesson 15:                    Add measurements using the standard algorithm to compose larger                     190\n                                                     units once.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 192 (problem-set) ---\nA STORY OF UNITS                                                                                      Lesson 15 Problem Set 3 2\n\n\n2. Nadine and Jen buy a small bag of popcorn and a pretzel at\n   the movie theater. The pretzel weighs 63 grams more than\n   the popcorn. What is the weight of the pretzel?\n\n                                                                                                           ? grams\n                                                                                                                                     44 grams\n\n\n3. In math class, Jason and Andrea find the total liquid volume\n   of water in their beakers. Jason says the total is 782                                                    Student             Liquid Volume\n   milliliters, but Andrea says it is 792 milliliters. The amount\n   of water in each beaker can be found in the table to the                                                    Jason                475 mL\n   right. Show whose calculation is correct. Explain the\n   mistake of the other student.                                                                              Andrea                317 mL\n\n\n4. It takes Greg 15 minutes to mow the front lawn. It takes him 17 more minutes to mow the back lawn\n   than the front lawn. What is the total amount of time Greg spends mowing the lawns?\n\n\n                        Lesson 15:                    Add measurements using the standard algorithm to compose larger                            191\n                                                      units once.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 193 (exit-ticket) ---\nA STORY OF UNITS                                                                                         Lesson 15 Exit Ticket 3 2\n\n\nName                                                                                                        Date\n\n1. Find the sums below. Choose mental math or the algorithm.\n\n    a. 24 cm + 36 cm                                      b. 562 m + 180 m                                                c. 345 km + 239 km\n\n\n2. Brianna jogs 15 minutes more on Sunday than Saturday. She jogged 26 minutes on Saturday.\n\n   a. How many minutes does she jog on Sunday?\n\n\n   b. How many minutes does she jog in total?\n\n\n                        Lesson 15:                    Add measurements using the standard algorithm to compose larger                          192\n                                                      units once.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 194 (homework) ---\nA STORY OF UNITS                                                                                       Lesson 15 Homework 3 2\n\n\nName                                                                                                       Date\n\n1. Find the sums below. Choose mental math or the algorithm.\n\n   a. 75 cm + 7 cm                                           c. 362 mL + 229 mL                                                 e. 451 mL + 339 mL\n\n\n   b. 39 kg + 56 kg                                          d. 283 g + 92 g                                                    f.   149 L + 331 L\n\n\n2. The liquid volume of five drinks is shown below.\n\n                                                              a. Jen drinks the apple juice and the water. How many\n         Drink        Liquid Volume                              milliliters does she drink in all?\n       Apple juice            125 mL\n\n          Milk                236 mL\n\n         Water                248 mL\n\n     Orange juice             174 mL                                                                                       Jen drinks ________ mL.\n       Fruit punch            208 mL                          b. Kevin drinks the milk and the fruit punch. How many\n                                                                 milliliters does he drink in all?\n\n\n                       Lesson 15:                    Add measurements using the standard algorithm to compose larger                                 193\n                                                     units once.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 195 (homework) ---\nA STORY OF UNITS                                                                                       Lesson 15 Homework 3 2\n\n\n3. There are 75 students in Grade 3. There are 44 more students in Grade 4 than in Grade 3. How many\n   students are in Grade 4?\n\n\n4. Mr. Green’s sunflower grew 29 centimeters in one week. The next week it grew 5 centimeters more than\n   the previous week. What is the total number of centimeters the sunflower grew in 2 weeks?\n\n\n5. Kylie records the weights of 3 objects as shown below. Which 2 objects can she put on a pan balance to\n   equal the weight of a 460 gram bag? Show how you know.\n\n\n                      Paperback Book                                Banana                        Bar of Soap\n\n                             343 grams                            108 grams                        117 grams\n\n\n                       Lesson 15:                    Add measurements using the standard algorithm to compose larger            194\n                                                     units once.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 191,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                     Lesson 15 Problem Set 3 2\n\n\nName                                                                                                       Date\n\n1. Find the sums below. Choose mental math or the algorithm.\n\n   a. 46 mL + 5 mL                                    b. 46 mL + 25 mL                                      c. 46 mL + 125 mL\n\n\n   d. 59 cm + 30 cm                                   e. 509 cm + 83 cm                                     f.     597 cm + 30 cm\n\n\n   g. 29 g + 63 g                                     h. 345 g + 294 g                                      i.     480 g + 476 g\n\n\n   j.   1 L 245 mL + 2 L 412 mL                                                                             k. 2 kg 509 g + 3 kg 367 g\n\n\n                       Lesson 15:                    Add measurements using the standard algorithm to compose larger                     190\n                                                     units once.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 192,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                      Lesson 15 Problem Set 3 2\n\n\n2. Nadine and Jen buy a small bag of popcorn and a pretzel at\n   the movie theater. The pretzel weighs 63 grams more than\n   the popcorn. What is the weight of the pretzel?\n\n                                                                                                           ? grams\n                                                                                                                                     44 grams\n\n\n3. In math class, Jason and Andrea find the total liquid volume\n   of water in their beakers. Jason says the total is 782                                                    Student             Liquid Volume\n   milliliters, but Andrea says it is 792 milliliters. The amount\n   of water in each beaker can be found in the table to the                                                    Jason                475 mL\n   right. Show whose calculation is correct. Explain the\n   mistake of the other student.                                                                              Andrea                317 mL\n\n\n4. It takes Greg 15 minutes to mow the front lawn. It takes him 17 more minutes to mow the back lawn\n   than the front lawn. What is the total amount of time Greg spends mowing the lawns?\n\n\n                        Lesson 15:                    Add measurements using the standard algorithm to compose larger                            191\n                                                      units once.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 296,
+        "text": "A STORY OF UNITS                                                                                      Lesson 15 Answer Key 3 2\n\n\nLesson 15\nProblem Set\n1.    a. 51 mL                                                                  2.       107 g\n      b. 71 mL                                                                  3.       475 mL + 317 mL = 792 mL; Andrea is correct;\n      c. 171 mL                                                                          explanations will vary.\n      d. 89 cm                                                                  4.       47 min\n      e. 592 cm\n      f.   627 cm\n      g. 92 g\n      h. 639 g\n      i.   956 g\n      j.   3 L 657 mL\n      k. 5 kg 876 g\n\n\nExit Ticket\n1.    a. 60 cm                                                                 2.        a. 41 min\n      b. 742 m                                                                           b. 67 min\n      c. 584 km\n\n\nHomework\n1.    a. 82 cm                                                                  3.       119 students\n      b. 95 kg                                                                  4.       63 cm\n      c. 591 mL                                                                 5.       Paperback book and bar of soap;\n      d. 375 g                                                                           343 g + 117 g = 460 g\n      e. 790 mL\n      f.   480 L\n2.    a. 373\n      b. 444 mL\n\n\n                                                                                                                                    295\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

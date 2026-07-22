@@ -8,6 +8,7 @@ import type {
   ProblemVisualSection,
   ProblemVisualSpec
 } from '../lesson-runtime.types';
+import { m3FunctionalConceptSections, m3TeacherSource } from './functional-fidelity';
 
 const MODULE_3_TITLE = 'Multiplication and Division with Units of 0, 1, 6-9, and Multiples of 10';
 
@@ -31,7 +32,7 @@ const LESSON_OBJECTIVES: Record<number, string> = {
   17: 'Identify patterns in multiplication and division facts using the multiplication table.',
   18: 'Solve two-step word problems involving all four operations and assess the reasonableness of solutions.',
   19: 'Multiply by multiples of 10 using the place value chart.',
-  20: 'Use place value strategies and the associative property n x (m x 10) = (n x m) x 10 to multiply by multiples of 10.',
+  20: 'Use place value strategies and the associative property n × (m × 10) = (n × m) × 10 (where n and m are less than 10) to multiply by multiples of 10.',
   21: 'Solve two-step word problems involving multiplying single-digit factors and multiples of 10.'
 };
 
@@ -1090,6 +1091,16 @@ function quotientFromAnswer(answer: string): number {
 }
 
 function createM3ProblemVisual(problem: ProblemSetCenteredProblem, solved: boolean, lessonNumber: number): ProblemVisualSpec {
+  const lessonOneVisual = createM3Lesson1ProblemVisual(problem, solved, lessonNumber);
+  if (lessonOneVisual) {
+    return lessonOneVisual;
+  }
+
+  const acceleratedBatchVisual = createM3Lessons2Through5ProblemVisual(problem, solved, lessonNumber);
+  if (acceleratedBatchVisual) {
+    return acceleratedBatchVisual;
+  }
+
   const sections: ProblemVisualSpec['sections'] = [];
   const sourceNote = solved
     ? 'Solved view uses the Module 3 Teacher Edition Answer Key and shows the reasoning needed to make that answer understandable.'
@@ -1097,22 +1108,15 @@ function createM3ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
 
   const equations = problem.equations?.length ? problem.equations : [];
 
-  sections.push(makeM3PrimaryModel(problem, solved, lessonNumber));
-
+  const primaryModel = makeM3PrimaryModel(problem, solved, lessonNumber);
   const strategyFrame = makeM3StrategyFrame(problem, solved, lessonNumber, equations);
-  if (strategyFrame) {
+  const strategyIsPrimary = Boolean(strategyFrame) && (
+    [19, 20].includes(lessonNumber)
+    || (lessonNumber === 12 && problem.blankVisualType !== 'fact-match')
+  );
+  sections.push(strategyIsPrimary ? strategyFrame! : primaryModel);
+  if (strategyFrame && !strategyIsPrimary) {
     sections.push(strategyFrame);
-  }
-
-  const mathCheck = makeM3MathLibraryCheck(problem, solved, equations);
-  if (mathCheck) {
-    sections.push(mathCheck);
-  }
-
-  sections.push(makeM3SourceWorkspace(problem, solved));
-
-  if (solved) {
-    sections.push(makeM3ReasoningPath(problem, equations));
   }
 
   const equationLines = solved
@@ -1123,24 +1127,194 @@ function createM3ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
         ? blankEquationTemplates(equations)
         : [];
 
-  if (equationLines.length) {
+  if (equationLines.length && sections.length < 2) {
     sections.push({
       kind: 'equations',
-      label: solved ? 'Solved equations' : 'Student equation blanks',
+      label: solved ? 'Complete source equations' : 'Source equation blanks',
       lines: equationLines
     });
   }
 
   sections.push({
     kind: 'note',
-    label: solved ? 'Teacher Edition answer evidence' : 'Source workspace direction',
-    text: solved ? problem.solvedAnswer : problem.blankWorkspaceLabel ?? sourceSpecificBlankWorkspaceLabel(problem)
+    label: solved ? 'Answer and meaning' : 'Student direction',
+    text: solved
+      ? `${teacherAnswerEvidence(problem.solvedAnswer)} ${problem.explanation}`
+      : problem.blankWorkspaceLabel ?? sourceSpecificBlankWorkspaceLabel(problem)
   });
 
   return {
     title: `Problem ${problem.number}: ${m3VisualTitle(problem, solved)}`,
     sourceNote,
     sections
+  };
+}
+
+function createM3Lessons2Through5ProblemVisual(
+  problem: ProblemSetCenteredProblem,
+  solved: boolean,
+  lessonNumber: number
+): ProblemVisualSpec | undefined {
+  if (lessonNumber < 2 || lessonNumber > 5) {
+    return undefined;
+  }
+
+  const sections: ProblemVisualSpec['sections'] = [makeM3PrimaryModel(problem, solved, lessonNumber)];
+  const equationLines = solved
+    ? problem.equations ?? []
+    : problem.blankEquations?.length
+      ? problem.blankEquations
+      : blankEquationTemplates(problem.equations ?? []);
+
+  if (equationLines.length) {
+    sections.push({
+      kind: 'equations',
+      label: solved ? 'Completed source equations' : 'Source equation blanks',
+      lines: equationLines
+    });
+  }
+
+  if (solved) {
+    sections.push({
+      kind: 'note',
+      label: 'Answer',
+      text: teacherAnswerEvidence(problem.solvedAnswer)
+    });
+  }
+
+  return {
+    title: `Problem ${problem.number}`,
+    sourceNote: solved
+      ? `Completed from the Module 3 Lesson ${lessonNumber} Teacher Edition answer work.`
+      : `Blank workspace preserves the Module 3 Lesson ${lessonNumber} Problem Set task and givens.`,
+    sections
+  };
+}
+
+function createM3Lesson1ProblemVisual(
+  problem: ProblemSetCenteredProblem,
+  solved: boolean,
+  lessonNumber: number
+): ProblemVisualSpec | undefined {
+  if (lessonNumber !== 1) {
+    return undefined;
+  }
+
+  const sourceNote = solved
+    ? 'Completed from the Module 3 Lesson 1 Teacher Edition answer work.'
+    : 'Blank workspace preserves the Module 3 Lesson 1 Problem Set givens.';
+
+  if (problem.number === 1) {
+    const factors = Array.from({ length: 10 }, (_, index) => index + 1);
+    const sourceGivens = new Map([
+      ['1-2', '2'],
+      ['1-3', '3'],
+      ['2-2', '4'],
+      ['2-4', '8'],
+      ['2-8', '16'],
+      ['3-6', '18'],
+      ['4-5', '20'],
+      ['5-10', '50'],
+      ['6-2', '12']
+    ]);
+
+    return {
+      title: 'Problem 1: Use known facts and commutative partners',
+      sourceNote,
+      sections: [
+        {
+          kind: 'data-table',
+          label: solved
+            ? '100 multiplication facts: known facts and commutative partners are shaded'
+            : 'Solve and shade the multiplication chart',
+          columns: ['×', ...factors.map(String)],
+          rows: factors.map((rowFactor) => [
+            String(rowFactor),
+            ...factors.map((columnFactor) => solved
+              ? String(rowFactor * columnFactor)
+              : sourceGivens.get(`${rowFactor}-${columnFactor}`) ?? '')
+          ])
+        },
+        {
+          kind: 'data-table',
+          label: 'Each bag contains 7 apples',
+          columns: ['Number of bags', '2', solved ? '3' : '', '4', '5', solved ? '6' : ''],
+          rows: [[
+            'Total apples',
+            solved ? '14' : '',
+            '21',
+            solved ? '28' : '',
+            solved ? '35' : '',
+            '42'
+          ]]
+        },
+        {
+          kind: 'note',
+          label: solved ? 'What the chart shows' : 'Use commutativity',
+          text: solved
+            ? 'Known facts and their commutative partners fill 84 of the 100 cells. The 16 unshaded cells are the 6-through-9 facts; 12 have partners, so there are 10 distinct facts to learn.'
+            : 'Shade facts you know. Then reflect each known fact across the diagonal to shade its commutative partner for 6, 7, 8, and 9.'
+        }
+      ]
+    };
+  }
+
+  if (problem.number === 2) {
+    return {
+      title: 'Problem 2: Read one array in two directions',
+      sourceNote,
+      sections: [
+        {
+          kind: 'array',
+          label: '4 rows of 6 diamonds',
+          rows: 4,
+          columns: 6,
+          item: 'square',
+          caption: solved ? '24 diamonds can be read as 4 rows of 6 or 6 columns of 4.' : 'Count the diamonds, then read the rows and columns.'
+        },
+        {
+          kind: 'equations',
+          label: solved ? 'Two multiplication sentences for the same array' : 'Write two multiplication sentences',
+          lines: solved
+            ? ['24 = 4 × 6', '24 = 6 × 4']
+            : ['____ = 4 × 6', '____ = 6 × 4']
+        },
+        {
+          kind: 'note',
+          text: 'Turning the array reverses the factors, but the number of diamonds stays the same.'
+        }
+      ]
+    };
+  }
+
+  const sourceItems = [
+    ['a', '2 sevens = ____ twos', '2 sevens = 7 twos', '14'],
+    ['b', '3 ____ = 6 threes', '3 sixes = 6 threes', '18'],
+    ['c', '10 eights = 8 ____', '10 eights = 8 tens', '80'],
+    ['d', '4 × ____ = 6 × 4', '4 × 6 = 6 × 4', '24'],
+    ['e', '8 × 5 = ____ × 8', '8 × 5 = 5 × 8', '40'],
+    ['f', '____ × 7 = 7 × ____', '4 × 7 = 7 × 4', '28'],
+    ['g', '3 × 9 = 10 threes − ____ three', '3 × 9 = 10 threes − 1 three', '27'],
+    ['h', '10 fours − 1 four = ____ × 4', '10 fours − 1 four = 9 × 4', '36'],
+    ['i', '8 × 4 = 5 fours + ____ fours', '8 × 4 = 5 fours + 3 fours', '32'],
+    ['j', '____ fives + 1 five = 6 × 5', '5 fives + 1 five = 6 × 5', '30'],
+    ['k', '5 threes + 2 threes = ____ × ____', '5 threes + 2 threes = 7 × 3', '21'],
+    ['l', '____ twos + ____ twos = 10 twos', '5 twos + 5 twos = 10 twos', '20']
+  ];
+
+  return {
+    title: 'Problem 3: Complete the equivalent equations',
+    sourceNote,
+    sections: [{
+      kind: 'solution-parts',
+      label: solved ? 'Completed equations and products' : 'Complete each equation, then find the product',
+      parts: sourceItems.map(([label, blankEquation, solvedEquation, product]) => ({
+        label,
+        prompt: solved ? solvedEquation : blankEquation,
+        equation: solved ? `Both sides = ${product}` : 'Product = ____',
+        answer: solved ? `Product: ${product}` : ''
+      }))
+    }]
   };
 }
 
@@ -1201,6 +1375,10 @@ function makeM3PrimaryModel(problem: ProblemSetCenteredProblem, solved: boolean,
     return makeM3TableTennisModel(solved);
   }
 
+  if (lessonNumber === 2 && /Hannah has \$500/i.test(problem.sourcePrompt)) {
+    return makeM3HannahBudgetModel(solved);
+  }
+
   if (problem.blankVisualType === 'fact-match' || problem.animationType === 'fact-match') {
     return makeM3FactMatch(problem, solved);
   }
@@ -1218,6 +1396,37 @@ function makeM3PrimaryModel(problem: ProblemSetCenteredProblem, solved: boolean,
   }
 
   return makeM3WorkspaceTable(problem, solved);
+}
+
+function makeM3HannahBudgetModel(solved: boolean): ProblemVisualSection {
+  return {
+    kind: 'card-grid',
+    label: solved ? 'Hannah’s completed budget check' : 'Track Hannah’s money before deciding',
+    cards: [
+      {
+        label: 'Money and purchases',
+        sections: [{
+          kind: 'data-table',
+          columns: ['Starting money', 'Camera', '4 other items', 'Speakers'],
+          rows: [['$500', '$435', '4 × $9', '$50']]
+        }]
+      },
+      {
+        label: solved ? 'Money left' : 'Calculate and compare',
+        sections: [{
+          kind: 'equations',
+          lines: solved
+            ? ['4 × 9 = 36', '500 − 435 = 65', '65 − 36 = 29', '29 < 50']
+            : ['4 × 9 = ____', '500 − 435 = ____', '____ − ____ = ____', '____ < 50']
+        }, {
+          kind: 'note',
+          text: solved
+            ? 'No. Hannah has $29 left, which is $21 less than the $50 needed for the speakers.'
+            : 'Find the cost of the 4 items, subtract both purchases, and compare the money left with $50.'
+        }]
+      }
+    ]
+  };
 }
 
 function makeM3Lesson1FactChart(solved: boolean): ProblemVisualSection {
@@ -2047,18 +2256,27 @@ function makeM3StrategyFrame(
   }
 
   if ([19, 20].includes(lessonNumber)) {
+    const visibleEquations = solved
+      ? equations.slice(0, 8)
+      : problem.blankEquations?.length
+        ? problem.blankEquations.slice(0, 8)
+        : blankEquationTemplates(equations).slice(0, 8);
     return {
       kind: 'data-table',
-      label: solved ? 'Place value multiplication bridge' : 'Ones fact to tens fact',
-      columns: ['Ones fact', 'Tens fact', 'Why it works'],
-      rows: [
-        solved
-          ? ['4 x 3 = 12', '4 x 30 = 120', '3 tens multiplied by 4 makes 12 tens.']
-          : ['____ x ____ = ____', '____ x ____ tens = ____ tens', 'Use the same basic fact, then attach tens.'],
-        solved
-          ? ['2 x 4 = 8', '2 x 40 = 80', 'The unit changes from ones to tens.']
-          : ['(n x m) x 10', 'n x (m x 10)', 'Associative property keeps the product equivalent.']
-      ]
+      label: solved ? 'Solved source place-value relationships' : 'Source place-value relationships',
+      columns: ['Official equation', 'Place-value meaning'],
+      rows: visibleEquations.length
+        ? visibleEquations.map((equation) => [
+            equation,
+            solved
+              ? lessonNumber === 19
+                ? 'Use the related basic fact, then reinterpret the product in tens.'
+                : 'Regroup the single-digit factors, then keep the factor of 10.'
+              : lessonNumber === 19
+                ? 'Connect the ones fact to the tens fact.'
+                : 'Use n × (m × 10) = (n × m) × 10.'
+          ])
+        : [[problem.sourcePrompt, solved ? teacherAnswerEvidence(problem.solvedAnswer) : 'Show the basic fact and its tens relationship.']]
     };
   }
 
@@ -2209,7 +2427,7 @@ function m3SolvedSteps(problem: ProblemSetCenteredProblem, equations: string[]):
   }
 
   rows.push(['4. Answer', teacherAnswerEvidence(problem.solvedAnswer), problem.quotientMeaning]);
-  rows.push(['5. Check', problem.validationChecks.join(' '), 'The answer is accepted only if these Teacher Edition checks are visible.']);
+  rows.push(['5. Check', problem.validationChecks.join(' '), 'Use these checks to verify that the equation and answer fit the problem.']);
   return rows;
 }
 
@@ -2426,7 +2644,7 @@ function makeM3Tape(problem: ProblemSetCenteredProblem, solved: boolean): Proble
       label: partLabel,
       emphasize: index < Math.min(2, partCount)
     })),
-    caption: solved ? problem.solvedAnswer : problem.blankWorkspaceLabel ?? 'Use the source quantities to label the equal parts.'
+    caption: solved ? teacherAnswerEvidence(problem.solvedAnswer) : problem.blankWorkspaceLabel ?? 'Use the source quantities to label the equal parts.'
   };
 }
 
@@ -2439,8 +2657,8 @@ function makeM3WorkspaceTable(problem: ProblemSetCenteredProblem, solved: boolea
       : 'Official table, model, or written-response blanks';
   return {
     kind: 'data-table',
-    label: solved ? 'Solved problem workspace' : 'Blank problem workspace',
-    columns: ['Official prompt structure', 'Work', 'Answer'],
+    label: solved ? `Problem ${problem.number} completed source response` : `Problem ${problem.number} source response`,
+    columns: ['Official task', 'Work', 'Answer'],
     rows: [
       [
         problem.sourcePrompt,
@@ -2529,9 +2747,9 @@ function makeProblem(lessonNumber: number, problemIndex: number): ProblemSetCent
     groupLabel: 'groups',
     explanation: 'Solved mode completes the same official Module 3 Problem Set item using the lesson strategy, then checks that the equation and answer match the prompt.',
     validationChecks: [
-      'The prompt text matches the official Module 3 Problem Set source; the Teacher Edition is the controlling source.',
-      'The solved answer is checked against the Module 3 Teacher Edition Answer Key.',
-      'The visual model is used only when the source problem provides the quantities and structure.'
+      'Reread the problem and confirm that every given quantity appears in the model or equation.',
+      'Use multiplication or division to check the computed value.',
+      'State the answer with the unit or label requested by the problem.'
     ]
   };
 
@@ -2544,17 +2762,18 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
   const summary = LESSON_SUMMARIES[lessonNumber];
   const sourcePageImages = WORKBOOK_PAGE_IMAGES[lessonNumber].map((imageName) => `/source-pages/m3/${imageName}`);
   const answerKeyImages = ANSWER_KEY_PAGE_IMAGES[lessonNumber] ?? [];
+  const teacherSource = m3TeacherSource(lessonNumber);
   return {
     title: `Lesson ${lessonNumber}: ${objective}`,
     concept: summary,
-    teacherEditionBasis: source.teacherEditionSource,
-    contrast: 'Use the Teacher Edition objective and the official Problem Set pages as the source of truth before accepting a solved answer.',
+    teacherEditionBasis: teacherSource,
+    contrast: `What model or strategy helps you ${objective.replace(/[.]$/, '').replace(/^./, (letter) => letter.toLowerCase())}?`,
     summary,
-    sourceNote: `${source.teacherEditionSource} Module 3 Teacher Edition Problem Set and Answer Key, printed pages 279-316. Matching official workbook pages are collapsed as visual source references only.`,
+    sourceNote: `${teacherSource} The official Module 3 Problem Set, answer key, and matching workbook page images control all facts and visual relationships.`,
     sourcePageImages,
     blankSourcePageImages: sourcePageImages,
     solvedSourcePageImages: [...sourcePageImages, ...answerKeyImages],
-    conceptSections: [
+    conceptSections: lessonNumber <= 5 ? makeM3LessonsOneThroughFiveConceptSections(lessonNumber, teacherSource) : m3FunctionalConceptSections(lessonNumber) ?? [
       {
         title: '1. Teacher Edition objective',
         body: objective,
@@ -2598,6 +2817,98 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
       };
     })
   };
+}
+
+function makeM3LessonsOneThroughFiveConceptSections(lessonNumber: number, teacherSource: string) {
+  const lessonSections: Record<number, Array<{ title: string; body: string; checkpoints: string[] }>> = {
+    1: [
+      {
+        title: '1. Read the same 18 liters two ways',
+        body: 'Geri brings 3 water jugs with 6 liters in each jug. One tape shows 3 groups of 6; the turned tape shows 6 groups of 3. Both represent the same 18 liters.',
+        checkpoints: ['Write 3 × 6 = 18.', 'Turn the model and write 6 × 3 = 18.', 'State that reversing the factors does not change the product.']
+      },
+      {
+        title: '2. Use the commutative property',
+        body: 'A known fact gives its partner: 2 × 7 = 7 × 2, 5 eights = 8 fives, and 4 nines = 9 fours.',
+        checkpoints: ['Keep the same two factors.', 'Reverse only the factor order.', 'Check that both expressions have the same product.']
+      },
+      {
+        title: '3. Reflect facts across the chart diagonal',
+        body: 'The chart contains 100 facts. Known facts and their reflected partners fill 84 cells, leaving 16 cells in the 6-through-9 block. Twelve of those have partners, so there are 10 distinct facts to learn.',
+        checkpoints: ['Locate a known fact.', 'Find its reflected cell across the diagonal.', 'Explain how commutativity reduced the number of new facts.']
+      }
+    ],
+    2: [
+      {
+        title: '1. Start with five known units',
+        body: 'Let one circle represent a unit n. Use the familiar fact 5 × n to find the value of five units.',
+        checkpoints: ['Name the unit value.', 'Write 5 × n.', 'Find the known five-fact product.']
+      },
+      {
+        title: '2. Add one more unit',
+        body: 'Decompose 6 × n as 5 × n plus 1 × n. For sevens, 35 + 7 = 42; for eights, 40 + 8 = 48.',
+        checkpoints: ['Keep the unit size unchanged.', 'Add exactly one more unit.', 'Connect the sum to 6 × n.']
+      },
+      {
+        title: '3. Turn the six-fact',
+        body: 'Use commutativity to relate 6 × n and n × 6. The factors reverse, but the product remains the same.',
+        checkpoints: ['Write both related facts.', 'Use the same product in both equations.', 'Explain the Problem 1 and Problem 2 pattern.']
+      }
+    ],
+    3: [
+      {
+        title: '1. Name what the letter represents',
+        body: 'A letter replaces the question mark and stands for one story quantity, such as c for canoes, m for money, or n for loaves.',
+        checkpoints: ['Choose a letter tied to the story.', 'Say the quantity and unit it represents.', 'Place it in the unknown position.']
+      },
+      {
+        title: '2. Write the multiplication or division relationship',
+        body: 'Use a familiar fact with the letter in the correct position: 3 × c = 24, 3 × 8 = m, or 28 ÷ 4 = n.',
+        checkpoints: ['Match groups, group size, and total.', 'Write an equation that matches the model.', 'Use multiplication and division as related facts.']
+      },
+      {
+        title: '3. Solve and label the unknown',
+        body: 'Solve the familiar fact, then answer with its unit: c = 8 canoes, m = $24, or n = 7 loaves.',
+        checkpoints: ['Check the value in the original equation.', 'Attach the requested unit.', 'For the challenge, remove the 12-minute difference before splitting the remaining time.']
+      }
+    ],
+    4: [
+      {
+        title: '1. Build the count-by-six sequence',
+        body: 'Count 6, 12, 18, 24, 30, 36, 42, 48, 54, 60. Each position tells how many groups of 6 make the total.',
+        checkpoints: ['Add 6 for each next count.', 'Count backward by subtracting 6.', 'Match each count with its multiplication fact.']
+      },
+      {
+        title: '2. Use a number bond to make a ten',
+        body: 'When an added 6 crosses a ten, break the 6 into two parts. For 18 + 6, use 18 + 2 + 4 = 24.',
+        checkpoints: ['Find the part needed to reach the next ten.', 'Use the leftover part of 6.', 'Confirm that both parts total 6.']
+      },
+      {
+        title: '3. Connect multiplication and division',
+        body: 'Seven sixes is 42, so 7 × 6 = 42 and 42 ÷ 6 = 7. Use this relationship for every count in the sequence.',
+        checkpoints: ['Use the count position as one factor.', 'Use 6 as the unit factor and divisor.', 'Check multiplication with the related division fact.']
+      }
+    ],
+    5: [
+      {
+        title: '1. Build the count-by-seven sequence',
+        body: 'Count 7, 14, 21, 28, 35, 42, 49, 56, 63, 70. Each position names a multiplication fact with a unit of 7.',
+        checkpoints: ['Add 7 for each next count.', 'Match each fish-bowl total to its multiplication fact.', 'Name the related division fact.']
+      },
+      {
+        title: '2. Bridge a ten with a number bond',
+        body: 'For 14 + 7, break 7 into 6 and 1: reach 20 with 6, then add the remaining 1 to make 21.',
+        checkpoints: ['Find the part needed to reach the next ten.', 'Use the leftover part of 7.', 'Explain why 6 + 1 still equals 7.']
+      },
+      {
+        title: '3. Read the related fact pair',
+        body: 'Six sevens is 42, so 6 × 7 = 42 and 42 ÷ 7 = 6. Commutativity also shows 7 × 6 = 42.',
+        checkpoints: ['Use the count position as the number of groups.', 'Keep 7 as the unit size.', 'Explain why counting by six seven times reaches the same product.']
+      }
+    ]
+  };
+
+  return lessonSections[lessonNumber].map((section) => ({ ...section, teacherSource }));
 }
 
 export const M3_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredLesson> = Object.fromEntries(

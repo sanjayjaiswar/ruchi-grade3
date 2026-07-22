@@ -1,0 +1,498 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m7-l4",
+  "moduleId": "m7",
+  "lessonNumber": 4,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf",
+    "teacherEditionSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+    "teacherEditionBytes": 21553765,
+    "lessonPdfPages": {
+      "start": 55,
+      "end": 67
+    },
+    "problemSetPdfPages": [
+      62,
+      63
+    ],
+    "exitTicketPdfPages": [
+      64
+    ],
+    "homeworkPdfPages": [
+      65,
+      66
+    ],
+    "answerKeyPdfPages": [
+      467,
+      468
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m7-student/workbook-page-016.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m7-teacher/page-062.png",
+      "/source-pages/m7-teacher/page-063.png",
+      "/source-pages/m7-teacher/page-467.png",
+      "/source-pages/m7-teacher/page-468.png"
+    ]
+  },
+  "objective": "Compare and classify quadrilaterals.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "NOTES ON\n                                                                                                                   MULTIPLE MEANS\nThe third graders raised $437 in a fundraiser. The fourth\ngraders raised $68 less than the third graders. How much                                                           OF REPRESENTATION:\nmoney did the two grade levels raise altogether?                                                         Modeling a tape diagram for the\n                                                                                                         money fourth graders raise, as well as\n                                                                                                         the total money raised, helps English\n                                                                                                         language learners and students\n                                                                                                         working below grade level better grasp\n                                                                                                         the meaning of the phrase $68 less\n                                                                                                         than the third graders. Ask, “Who\n                                                                                                         raised less money? Did the fourth\n                                                                                                         graders raise $68? Use the model to\n                                                                                                         estimate about how much the fourth\nNote: This problem reviews two-step word problems from                                                   graders raised.”\nTopic A.\n\n\n                         Lesson 4:                 Compare and classify quadrilaterals.                                                           55\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                        Lesson 4 3 7",
+    "conceptDevelopmentText": "NOTES ON\nMaterials: (T) 2 rulers (S) Index card for use as right angle tool,                              VOCABULARY:\n           polygons (A–L) (Template), ruler, Problem Set,\n                                                                                         All of the bold-type terms in this lesson\n           scissors\n                                                                                         were introduced in Grade 2 Module 8.\n                                                                                         However, given the specificity of the\nPart 1: Group polygons by attributes.\n                                                                                         words and the time that has passed\nPass out the index cards and Template.                                                   since students’ work in Grade 2\n                                                                                         Module 8, it may be best to approach\n    T:   We’ll use these cards as tools. Put a finger on each                            teaching the vocabulary as if it were\n         corner.                                                                         new.\n    S:   (Touch each corner.)\n    T:   Remember from second grade that we call the point\n         where sides meet to make a corner an angle. These\n         are right angles because they have square corners.                           NOTES ON\n         We’ll use our cards as right angle tools to help us find                     MULTIPLE MEANS\n         other shapes that have right angles. (Save the right                         OF REPRESENTATION:\n         angle tools for the entire module.)                                 Clarify for English language learners\n    T:   Now, cut out shapes A–L on your template.                           and others the term group. In past\n                                                                             modules, they have grouped like units,\n    S:   (Cut.)\n                                                                             such as 10 tens to make 100 or 3 fives\n    T:   Look at your shapes. Discuss with a partner: What are               to make 15. Here, grouping does not\n         some different ways we can group these shapes                       mean bundling units that are exactly\n         together?                                                           the same but rather sorting polygons\n    S:   We can group them by name, like all the squares                     by one or more shared attribute.\n         together.  We can group them by the number of\n         sides.  We can also group them by the number of\n                                                                                                       4-sided:\n         angles.\n    T:   Remember from second grade that closed shapes like these that have no\n         gaps or overlaps between the straight sides are called polygons.\n         Polygons with four straight sides are called quadrilaterals. Tell your\n         partner what a quadrilateral is, and then find and group the\n         quadrilaterals.\n    S:   A quadrilateral is a polygon with four sides. (Group the quadrilaterals.)\n    T:   What do you notice about the polygons you grouped?\n    S:   They don’t look the same.  Some are slanted, and some are boxy.  Some are squares and\n         rectangles, but others are strange looking.  One polygon even looks like a boomerang.  They\n         have four angles.\n    T:   The polygons look different, but they share the attributes of having four sides and four angles.\n         Complete the first row of the chart on the Problem Set. Make sure to sketch one polygon from the\n         group.\n\n\n                        Lesson 4:                 Compare and classify quadrilaterals.                                               56\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                           Lesson 4 3 7\n\n\nT:   Next, we’ll find and group trapezoids. These are\n     quadrilaterals that have at least one set of parallel                     NOTES ON\n     sides. Think of parallel sides like the two side lines of a               TRAPEZOIDS:\n     capital H, or a slanted H, since not all parallel sides\n     stand vertical. (Demonstrate using two rulers.)                 According to the K–6 Geometry\n     Imagine these two lines go on forever. Do you think             Progressions, the term trapezoid can\n     they will ever cross? Why or why not?                           have two different meanings:\nS:   I don’t think they will cross.  No, they won’t cross            Exclusive Definition: A trapezoid is\n     because they’re straight and going in the same                       a quadrilateral with exactly one pair\n                                                                          of parallel sides.\n     direction all the time.\n                                                                      Inclusive Definition: A trapezoid is\nT:   (Slant the rulers so they are not parallel anymore but               a quadrilateral with at least one\n     are still not touching.) These lines are not touching.               pair of parallel sides.\n     Are they parallel? Why or why not?                              A Story of Units uses the inclusive\nS:   No. The sides don’t look like an H anymore.  If we             definition. Therefore, a parallelogram\n     imagine the lines keep going, they will eventually              is also considered a trapezoid.\n     cross!\nT:   If trapezoids must have at least one set of parallel sides,\n     can they have more than one set?\nS:   Yeah. At least means one or more.                                                     2 parallel sides:\n\nT:   Group the trapezoids. Complete the second row of the chart on\n     the Problem Set. Make sure to sketch one polygon from the group.\nS:   (Group all shapes, except A, D, and K, and sketch one shape.)\nT:   What do you notice about the polygons you grouped?\nS:   I found a bunch!  No. There’s only one shape that has only one\n     set of parallel sides. Polygon E!  Remember, though, a trapezoid\n     has at least one set! That’s almost all of them!\nT:   Now we’ll find and group parallelograms. These are four-sided                          4 right angles:\n     polygons that have two sets of parallel sides.\nT:   Group the parallelograms. Then, complete the next row of the\n     chart on your Problem Set.\nS:   (Group the polygons, and complete the chart.)\nT:   Now, use your right angle tool to measure and group all the\n     polygons that have four right angles. Then, complete the chart.\nS:   (Measure, group, and complete the chart.)                                                 Squares:\nT:   Next, find and group all the squares. Which attributes make\n     squares special?\nS:   They have four equal sides and four right angles.\nT:   Use your ruler and right angle tool to confirm that with these\n     polygons. Then, complete the chart.\nS:   (Measure, group, and complete the chart.)\n\n\n                    Lesson 4:                  Compare and classify quadrilaterals.                               57\n\n                     ©2015 Great Minds. eureka-math.org\n                     G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                      Lesson 4 3 7\n\n\n  Part 2: Analyze quadrilaterals.\n       T:   In our set of polygons A–L, did the number of polygons get smaller or larger as we added attributes?\n       S:   It got smaller.\n       T:   Discuss with your partner why you think the number of polygons in each group got smaller as we\n            added attributes.\n       S:   I think it’s because the attributes in our chart become more special. The last category only includes\n            the most special polygon, a square, because it has to have four right angles and four equal sides.\n             Each time we added a new attribute, fewer polygons belonged to the group.\n       T:   As the attributes become more specific, fewer shapes in our set share all of the attributes. Look at\n            Polygons C and F. They are included in every group. Why do you think that is?\n       S:   They have four sides, two sets of parallel lines, and four right angles.\nMP.3\n       T:   Why aren’t Polygons B and H included in the last category? These specific rectangles have four sides,\n            two sets of parallel lines, and four right angles.\n       S:   Polygons B and H don’t have all equal sides.\n       T:   Look at Polygon I. It has four equal sides and two sets of parallel lines. Why isn’t it included in the\n            last category?\n       S:   It doesn’t have four right angles.  It needs to have them all, not just one attribute.\n       T:   Let’s make a new category, one that has shapes with 4 equal sides. Work with your partner.\n       T:   (Move Polygons C, F, and I to form a new group.) A shape with 4 equal sides is called a rhombus.\n       T:   Why is a square a rhombus?\n       S:   Because it has 4 equal sides!\n       T:   Why isn’t shape I a square?\n       S:   Because it doesn’t have right angles!\n\n  Part 3: Decompose quadrilaterals into two triangles.\n       T:   Problem 4 asks you to use a straightedge to draw a line between opposite corners in each\n            quadrilateral you drew in the chart. This kind of line is called a diagonal line. Do that now.\n       S:   (Draw diagonals in each polygon.)\n       T:   Which new polygons did you make by drawing the diagonal line?\n       S:   Triangles.\n       T:   Complete Problem 4 on your Problem Set.\n       T:   Pick other polygons we used that you did not draw on your chart. Draw diagonal lines inside the\n            polygons. Do you still get two triangles? (Allow time for students to draw.)\n       S:   Yes!\n       T:   All quadrilaterals are made up of two triangles.\n  Students should now go back and finish Problems 2 and 3 on the Problem Set.\n\n\n                           Lesson 4:                 Compare and classify quadrilaterals.                       58\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                      Lesson 4 3 7",
+    "fluencyPracticeText": " Multiply by 4 3.OA.7                                                        (8 minutes)\n Equivalent Counting with Units of 5 3.OA.7                                  (4 minutes)\n\nMultiply by 4 (8 minutes)\nMaterials: (S) Multiply by 4 (6─10) Pattern Sheet\n\nNote: This activity builds fluency with multiplication facts using units of 4. It works toward students knowing\nfrom memory all products of two one-digit numbers. See Lesson 1 for the directions for administration of a\nMultiply-By Pattern Sheet.\n    T:   (Write 7 × 4 = ____.) Let’s skip-count up by fours. I’ll raise a finger for each four. (Raise a finger for\n         each number to track the count.)\n    S:   4, 8, 12, 16, 20, 24, 28.\n    T:   Let’s skip-count up by fours starting at 20. Why is 20 a good place to start?\n    S:   It’s a fact we already know, so we can use it to figure out a fact we don’t know.\n    T:   (Track with fingers as students say the numbers.)\n    S:   20 (5 fingers), 24 (6 fingers), 28 (7 fingers).\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 40 with 10 fingers, 1 for each\n         four. (Count down with fingers as students say the numbers.)\n    S:   40 (10 fingers), 36 (9 fingers), 32 (8 fingers), 28 (7 fingers).\nContinue with the following possible sequence: 9 × 4, 6 × 4, and 8 × 4.\n    T:   (Distribute the Multiply by 4 Pattern Sheet.) Let’s practice multiplying by 4. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 4:                 Compare and classify quadrilaterals.                         54\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                       Lesson 4 3 7\n\n\nEquivalent Counting with Units of 5 (4 minutes)\nNote: This activity builds fluency with multiplication facts using units of 5. The progression builds in\ncomplexity. Work students up to the highest level where they can confidently participate.\n    T:   Count to 10. (Write as students count. See the chart below.)\n    S:   1, 2, 3, 4, 5, 6, 7, 8, 9, 10.\n\n                1        2                3            4          5          6            7         8          9         10\n\n                1 five   2 fives          3 fives      4 fives    5 fives    6 fives      7 fives   8 fives    9 fives   10 fives\n\n                5        10               15           20         25         30           35        40         45        50\n\n                1 five   10               3 fives      20         5 fives    30           7 fives   40         9 fives   50\n\n                5        2 fives          15           4 fives    25         6 fives      35        8 fives    45        10 fives\n\n\n    T:   (Write 1 five beneath the 1.) Count to 10 fives. (Write as students count.)\n    S:   1 five, 2 fives, 3 fives, 4 fives, 5 fives, 6 fives, 7 fives, 8 fives, 9 fives, 10 fives.\n    T:   Count by fives to 50. (Write as students count.)\n    S:   5, 10, 15, 20, 25, 30, 35, 40, 45, 50.\n    T:   (Write 1 five beneath the 5. Write 10 beneath the 10.) I’m going to give you a challenge. Let’s\n         alternate between saying the units of five and the number. (Write as students count.)\n    S:   1 five, 10, 3 fives, 20, 5 fives, 30, 7 fives, 40, 9 fives, 50.\n    T:   (Write 5 beneath 1 five and 2 fives beneath the 10.) Let’s alternate again. (Write as students count.)\n    S:   5, 2 fives, 15, 4 fives, 25, 6 fives, 35, 8 fives, 45, 10 fives.",
+    "problemSetGuidanceText": "",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "We’ll use these cards as tools. Put a finger on each teaching the vocabulary as if it were corner. new."
+      },
+      {
+        "speaker": "students",
+        "text": "(Touch each corner.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Remember from second grade that we call the point where sides meet to make a corner an angle. These are right angles because they have square corners. NOTES ON We’ll use our cards as right angle tools to help us find MULTIPLE MEANS other shapes that have right angles. (Save the right OF REPRESENTATION: angle tools for the entire module.) Clarify for English language learners"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, cut out shapes A–L on your template. and others the term group. In past modules, they have grouped like units,"
+      },
+      {
+        "speaker": "students",
+        "text": "(Cut.) such as 10 tens to make 100 or 3 fives"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look at your shapes. Discuss with a partner: What are to make 15. Here, grouping does not some different ways we can group these shapes mean bundling units that are exactly together? the same but rather sorting polygons"
+      },
+      {
+        "speaker": "students",
+        "text": "We can group them by name, like all the squares by one or more shared attribute. together.  We can group them by the number of sides.  We can also group them by the number of 4-sided: angles."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Remember from second grade that closed shapes like these that have no gaps or overlaps between the straight sides are called polygons. Polygons with four straight sides are called quadrilaterals. Tell your partner what a quadrilateral is, and then find and group the quadrilaterals."
+      },
+      {
+        "speaker": "students",
+        "text": "A quadrilateral is a polygon with four sides. (Group the quadrilaterals.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do you notice about the polygons you grouped?"
+      },
+      {
+        "speaker": "students",
+        "text": "They don’t look the same.  Some are slanted, and some are boxy.  Some are squares and rectangles, but others are strange looking.  One polygon even looks like a boomerang.  They have four angles."
+      },
+      {
+        "speaker": "teacher",
+        "text": "The polygons look different, but they share the attributes of having four sides and four angles. Complete the first row of the chart on the Problem Set. Make sure to sketch one polygon from the group. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 4 3 7"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Next, we’ll find and group trapezoids. These are quadrilaterals that have at least one set of parallel NOTES ON sides. Think of parallel sides like the two side lines of a TRAPEZOIDS: capital H, or a slanted H, since not all parallel sides stand vertical. (Demonstrate using two rulers.) According to the K–6 Geometry Imagine these two lines go on forever. Do you think Progressions, the term trapezoid can they will ever cross? Why or why not? have two different meanings:"
+      },
+      {
+        "speaker": "students",
+        "text": "I don’t think they will cross.  No, they won’t cross  Exclusive Definition: A trapezoid is because they’re straight and going in the same a quadrilateral with exactly one pair of parallel sides. direction all the time.  Inclusive Definition: A trapezoid is"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Slant the rulers so they are not parallel anymore but a quadrilateral with at least one are still not touching.) These lines are not touching. pair of parallel sides. Are they parallel? Why or why not? A Story of Units uses the inclusive"
+      },
+      {
+        "speaker": "students",
+        "text": "No. The sides don’t look like an H anymore.  If we definition. Therefore, a parallelogram imagine the lines keep going, they will eventually is also considered a trapezoid. cross!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "If trapezoids must have at least one set of parallel sides, can they have more than one set?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yeah. At least means one or more. 2 parallel sides:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Group the trapezoids. Complete the second row of the chart on the Problem Set. Make sure to sketch one polygon from the group."
+      },
+      {
+        "speaker": "students",
+        "text": "(Group all shapes, except A, D, and K, and sketch one shape.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do you notice about the polygons you grouped?"
+      },
+      {
+        "speaker": "students",
+        "text": "I found a bunch!  No. There’s only one shape that has only one set of parallel sides. Polygon E!  Remember, though, a trapezoid has at least one set! That’s almost all of them!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now we’ll find and group parallelograms. These are four-sided 4 right angles: polygons that have two sets of parallel sides."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Group the parallelograms. Then, complete the next row of the chart on your Problem Set."
+      },
+      {
+        "speaker": "students",
+        "text": "(Group the polygons, and complete the chart.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, use your right angle tool to measure and group all the polygons that have four right angles. Then, complete the chart."
+      },
+      {
+        "speaker": "students",
+        "text": "(Measure, group, and complete the chart.) Squares:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Next, find and group all the squares. Which attributes make squares special?"
+      },
+      {
+        "speaker": "students",
+        "text": "They have four equal sides and four right angles."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your ruler and right angle tool to confirm that with these polygons. Then, complete the chart."
+      },
+      {
+        "speaker": "students",
+        "text": "(Measure, group, and complete the chart.) ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 4 3 7"
+      },
+      {
+        "speaker": "teacher",
+        "text": "In our set of polygons A–L, did the number of polygons get smaller or larger as we added attributes?"
+      },
+      {
+        "speaker": "students",
+        "text": "It got smaller."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Discuss with your partner why you think the number of polygons in each group got smaller as we added attributes."
+      },
+      {
+        "speaker": "students",
+        "text": "I think it’s because the attributes in our chart become more special. The last category only includes the most special polygon, a square, because it has to have four right angles and four equal sides.  Each time we added a new attribute, fewer polygons belonged to the group."
+      },
+      {
+        "speaker": "teacher",
+        "text": "As the attributes become more specific, fewer shapes in our set share all of the attributes. Look at Polygons C and F. They are included in every group. Why do you think that is?"
+      },
+      {
+        "speaker": "students",
+        "text": "They have four sides, two sets of parallel lines, and four right angles. MP.3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why aren’t Polygons B and H included in the last category? These specific rectangles have four sides, two sets of parallel lines, and four right angles."
+      },
+      {
+        "speaker": "students",
+        "text": "Polygons B and H don’t have all equal sides."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look at Polygon I. It has four equal sides and two sets of parallel lines. Why isn’t it included in the last category?"
+      },
+      {
+        "speaker": "students",
+        "text": "It doesn’t have four right angles.  It needs to have them all, not just one attribute."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s make a new category, one that has shapes with 4 equal sides. Work with your partner."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Move Polygons C, F, and I to form a new group.) A shape with 4 equal sides is called a rhombus."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why is a square a rhombus?"
+      },
+      {
+        "speaker": "students",
+        "text": "Because it has 4 equal sides!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why isn’t shape I a square?"
+      },
+      {
+        "speaker": "students",
+        "text": "Because it doesn’t have right angles!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Problem 4 asks you to use a straightedge to draw a line between opposite corners in each quadrilateral you drew in the chart. This kind of line is called a diagonal line. Do that now."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw diagonals in each polygon.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Which new polygons did you make by drawing the diagonal line?"
+      },
+      {
+        "speaker": "students",
+        "text": "Triangles."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Complete Problem 4 on your Problem Set."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Pick other polygons we used that you did not draw on your chart. Draw diagonal lines inside the polygons. Do you still get two triangles? (Allow time for students to draw.)"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "All quadrilaterals are made up of two triangles. Students should now go back and finish Problems 2 and 3 on the Problem Set. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 4 3 7"
+      }
+    ],
+    "teacherPrompts": [
+      "We’ll use these cards as tools. Put a finger on each teaching the vocabulary as if it were corner. new.",
+      "Remember from second grade that we call the point where sides meet to make a corner an angle. These are right angles because they have square corners. NOTES ON We’ll use our cards as right angle tools to help us find MULTIPLE MEANS other shapes that have right angles. (Save the right OF REPRESENTATION: angle tools for the entire module.) Clarify for English language learners",
+      "Now, cut out shapes A–L on your template. and others the term group. In past modules, they have grouped like units,",
+      "Look at your shapes. Discuss with a partner: What are to make 15. Here, grouping does not some different ways we can group these shapes mean bundling units that are exactly together? the same but rather sorting polygons",
+      "Remember from second grade that closed shapes like these that have no gaps or overlaps between the straight sides are called polygons. Polygons with four straight sides are called quadrilaterals. Tell your partner what a quadrilateral is, and then find and group the quadrilaterals.",
+      "What do you notice about the polygons you grouped?",
+      "The polygons look different, but they share the attributes of having four sides and four angles. Complete the first row of the chart on the Problem Set. Make sure to sketch one polygon from the group. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 4 3 7",
+      "Next, we’ll find and group trapezoids. These are quadrilaterals that have at least one set of parallel NOTES ON sides. Think of parallel sides like the two side lines of a TRAPEZOIDS: capital H, or a slanted H, since not all parallel sides stand vertical. (Demonstrate using two rulers.) According to the K–6 Geometry Imagine these two lines go on forever. Do you think Progressions, the term trapezoid can they will ever cross? Why or why not? have two different meanings:",
+      "(Slant the rulers so they are not parallel anymore but a quadrilateral with at least one are still not touching.) These lines are not touching. pair of parallel sides. Are they parallel? Why or why not? A Story of Units uses the inclusive",
+      "If trapezoids must have at least one set of parallel sides, can they have more than one set?",
+      "Group the trapezoids. Complete the second row of the chart on the Problem Set. Make sure to sketch one polygon from the group.",
+      "What do you notice about the polygons you grouped?",
+      "Now we’ll find and group parallelograms. These are four-sided 4 right angles: polygons that have two sets of parallel sides.",
+      "Group the parallelograms. Then, complete the next row of the chart on your Problem Set.",
+      "Now, use your right angle tool to measure and group all the polygons that have four right angles. Then, complete the chart.",
+      "Next, find and group all the squares. Which attributes make squares special?",
+      "Use your ruler and right angle tool to confirm that with these polygons. Then, complete the chart.",
+      "In our set of polygons A–L, did the number of polygons get smaller or larger as we added attributes?",
+      "Discuss with your partner why you think the number of polygons in each group got smaller as we added attributes.",
+      "As the attributes become more specific, fewer shapes in our set share all of the attributes. Look at Polygons C and F. They are included in every group. Why do you think that is?",
+      "Why aren’t Polygons B and H included in the last category? These specific rectangles have four sides, two sets of parallel lines, and four right angles.",
+      "Look at Polygon I. It has four equal sides and two sets of parallel lines. Why isn’t it included in the last category?",
+      "Let’s make a new category, one that has shapes with 4 equal sides. Work with your partner.",
+      "(Move Polygons C, F, and I to form a new group.) A shape with 4 equal sides is called a rhombus.",
+      "Why is a square a rhombus?",
+      "Why isn’t shape I a square?",
+      "Problem 4 asks you to use a straightedge to draw a line between opposite corners in each quadrilateral you drew in the chart. This kind of line is called a diagonal line. Do that now.",
+      "Which new polygons did you make by drawing the diagonal line?",
+      "Complete Problem 4 on your Problem Set.",
+      "Pick other polygons we used that you did not draw on your chart. Draw diagonal lines inside the polygons. Do you still get two triangles? (Allow time for students to draw.)",
+      "All quadrilaterals are made up of two triangles. Students should now go back and finish Problems 2 and 3 on the Problem Set. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 4 3 7"
+    ],
+    "debriefPrompt": "How does grouping quadrilaterals by attributes, like you did in Problem 1, help us see the similarities and differences between the polygons?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Cut out all the polygons (A–L) in the Template. Then, use the polygons to complete the following chart. Attribute Write the letters of the polygons in Sketch 1 polygon from the group. this group. Example: Polygons: Y, Z 3 Sides 4 Sides Polygons: At Least 1 Set of Polygons: Parallel Sides 2 Sets of Parallel Polygons: Sides 4 Right Angles Polygons: 4 Right Angles and Polygons: 4 Equal Sides",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "Write the letters of the polygons that are quadrilaterals. Explain how you know these polygons are quadrilaterals.",
+        "equations": []
+      },
+      {
+        "number": 3,
+        "prompt": "Sketch a polygon below from the group that has 2 sets of parallel sides. Trace 1 pair of parallel sides red. Trace the other pair of parallel sides blue. What makes parallel sides different from sides that are not parallel?",
+        "equations": []
+      },
+      {
+        "number": 4,
+        "prompt": "Draw a diagonal line from one corner to the opposite corner of each polygon you drew in the chart using a straightedge. What new polygon(s) did you make by drawing the diagonal lines?",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                      Lesson 4 Problem Set 3 7\n\n\nName                                                                                     Date\n\n1. Cut out all the polygons (A–L) in the Template. Then, use the polygons to complete the following chart.\n\n       Attribute           Write the letters of the polygons in                         Sketch 1 polygon from the group.\n                                       this group.\n       Example:\n                         Polygons: Y, Z\n        3 Sides\n\n\n        4 Sides          Polygons:\n\n\n  At Least 1 Set of      Polygons:\n   Parallel Sides\n\n\n  2 Sets of Parallel     Polygons:\n        Sides\n\n\n   4 Right Angles        Polygons:\n\n\n 4 Right Angles and      Polygons:\n    4 Equal Sides\n\n\n                       Lesson 4:                 Compare and classify quadrilaterals.                                      61\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                      Lesson 4 Problem Set 3 7\n\n\n2. Write the letters of the polygons that are quadrilaterals. Explain how you know these polygons are\n   quadrilaterals.\n\n\n3. Sketch a polygon below from the group that has 2 sets of parallel sides. Trace 1 pair of parallel sides red.\n   Trace the other pair of parallel sides blue. What makes parallel sides different from sides that are not\n   parallel?\n\n\n4. Draw a diagonal line from one corner to the opposite corner of each polygon you drew in the chart using\n   a straightedge. What new polygon(s) did you make by drawing the diagonal lines?\n\n\n                        Lesson 4:                 Compare and classify quadrilaterals.                         62\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "answerKeyProblemSetText": "1.    Answer provided\n      A–L; one polygon sketched\n      B, C, E, F, G, H, I, J, L; one polygon sketched\n      B, C, F, G, H, I, L; one polygon sketched\n      B, C, F, H; one polygon sketched\n      C, F; one polygon sketched\n2.    A–L; explanations will vary.\n3.    Polygon sketched and traced; explanations will vary.\n4.    Diagonal line drawn in chart polygons; answers will vary.\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                             466\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                          Lesson 4 Answer Key 3 7",
+    "answerKeyText": "A STORY OF UNITS                                                                               Lesson 4 Answer Key 3 7\n\n\nLesson 4\nPattern Sheet\n             4                                               8                                 12                 16\n             20                                              24                                28                 32\n             36                                              40                                20                 24\n             20                                              28                                20                 32\n             20                                              36                                20                 40\n             24                                              20                                24                 28\n             24                                              32                                24                 36\n             24                                              28                                24                 28\n             32                                              28                                36                 28\n             32                                              24                                32                 28\n             32                                              36                                36                 24\n             36                                              28                                36                 32\n             36                                              32                                24                 36\n             28                                              36                                24                 32\n             36                                              28                                24                 32\n\n\nProblem Set\n1.    Answer provided\n      A–L; one polygon sketched\n      B, C, E, F, G, H, I, J, L; one polygon sketched\n      B, C, F, G, H, I, L; one polygon sketched\n      B, C, F, H; one polygon sketched\n      C, F; one polygon sketched\n2.    A–L; explanations will vary.\n3.    Polygon sketched and traced; explanations will vary.\n4.    Diagonal line drawn in chart polygons; answers will vary.\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                             466\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                          Lesson 4 Answer Key 3 7\n\n\nExit Ticket\n1.    4 equal sides, 2 sets of parallel sides\n2.    4 sides, 1 set of parallel sides\n\n\nHomework\n1.    Answer provided\n      True\n      True\n      False\n      True\n2.    a. Parallel sides traced with a colored pencil\n      b. A shape with at least 1 set of parallel sides drawn\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                        467\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "equal-groups",
+      "tape-diagram",
+      "number-bond",
+      "measurement-scale",
+      "ruler-or-length",
+      "place-value",
+      "table-or-chart",
+      "geometry-diagram",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "Complete the first row of the chart on the Problem Set. Make sure to sketch one polygon from the",
+        "T: Group the trapezoids. Complete the second row of the chart on",
+        "T: Group the parallelograms. Then, complete the next row of the"
+      ],
+      "equal-groups": [
+        "T: Discuss with your partner why you think the number of polygons in each group got smaller as we"
+      ],
+      "tape-diagram": [
+        "money did the two grade levels raise altogether? Modeling a tape diagram for the"
+      ],
+      "number-bond": [
+        "Part 3: Decompose quadrilaterals into two triangles."
+      ],
+      "measurement-scale": [
+        "money did the two grade levels raise altogether? Modeling a tape diagram for the",
+        "S: No. The sides don’t look like an H anymore.  If we definition. Therefore, a parallelogram",
+        "T: Now we’ll find and group parallelograms. These are four-sided 4 right angles:",
+        "T: Group the parallelograms. Then, complete the next row of the"
+      ],
+      "ruler-or-length": [
+        "Materials: (T) 2 rulers (S) Index card for use as right angle tool, VOCABULARY:",
+        "polygons (A–L) (Template), ruler, Problem Set,",
+        "stand vertical. (Demonstrate using two rulers.) According to the K–6 Geometry",
+        "T: (Slant the rulers so they are not parallel anymore but a quadrilateral with at least one",
+        "T: Use your ruler and right angle tool to confirm that with these"
+      ],
+      "place-value": [
+        "some different ways we can group these shapes mean bundling units that are exactly"
+      ],
+      "table-or-chart": [
+        "Complete the first row of the chart on the Problem Set. Make sure to sketch one polygon from the",
+        "T: Group the trapezoids. Complete the second row of the chart on",
+        "chart on your Problem Set.",
+        "S: (Group the polygons, and complete the chart.)",
+        "polygons that have four right angles. Then, complete the chart.",
+        "S: (Measure, group, and complete the chart.) Squares:",
+        "polygons. Then, complete the chart.",
+        "S: (Measure, group, and complete the chart.)"
+      ],
+      "geometry-diagram": [
+        "Compare and classify quadrilaterals.",
+        "Lesson 4: Compare and classify quadrilaterals. 55",
+        "Materials: (T) 2 rulers (S) Index card for use as right angle tool, VOCABULARY:",
+        "polygons (A–L) (Template), ruler, Problem Set,",
+        "Part 1: Group polygons by attributes.",
+        "where sides meet to make a corner an angle. These",
+        "are right angles because they have square corners. NOTES ON",
+        "We’ll use our cards as right angle tools to help us find MULTIPLE MEANS"
+      ],
+      "money-model": [
+        "The third graders raised $437 in a fundraiser. The fourth",
+        "graders raised $68 less than the third graders. How much OF REPRESENTATION:",
+        "money did the two grade levels raise altogether? Modeling a tape diagram for the",
+        "money fourth graders raise, as well as",
+        "the total money raised, helps English",
+        "the meaning of the phrase $68 less",
+        "raised less money? Did the fourth",
+        "graders raise $68? Use the model to"
+      ],
+      "picture-or-drawing": [
+        "money did the two grade levels raise altogether? Modeling a tape diagram for the",
+        "T: Problem 4 asks you to use a straightedge to draw a line between opposite corners in each",
+        "S: (Draw diagonals in each polygon.)",
+        "T: Which new polygons did you make by drawing the diagonal line?",
+        "T: Pick other polygons we used that you did not draw on your chart. Draw diagonal lines inside the",
+        "polygons. Do you still get two triangles? (Allow time for students to draw.)",
+        "4. Draw a diagonal line from one corner to the opposite corner of each polygon you drew in the chart using",
+        "a straightedge. What new polygon(s) did you make by drawing the diagonal lines?"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "What do you notice about the polygons you grouped?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do you notice about the polygons you grouped?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Move Polygons C, F, and I to form a new group.) A shape with 4 equal sides is called a rhombus."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Problem 4 asks you to use a straightedge to draw a line between opposite corners in each quadrilateral you drew in the chart. This kind of line is called a diagonal line. Do that now."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw diagonals in each polygon.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Which new polygons did you make by drawing the diagonal line?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Pick other polygons we used that you did not draw on your chart. Draw diagonal lines inside the polygons. Do you still get two triangles? (Allow time for students to draw.)"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 55 (debrief) ---\nA STORY OF UNITS                                                                          Lesson 4 3 7\n\n\nLesson 4\nObjective: Compare and classify quadrilaterals.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (12 minutes)\n Application Problem               (7 minutes)\n Concept Development               (31 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (12 minutes)\n\n Multiply by 4 3.OA.7                                                        (8 minutes)\n Equivalent Counting with Units of 5 3.OA.7                                  (4 minutes)\n\nMultiply by 4 (8 minutes)\nMaterials: (S) Multiply by 4 (6─10) Pattern Sheet\n\nNote: This activity builds fluency with multiplication facts using units of 4. It works toward students knowing\nfrom memory all products of two one-digit numbers. See Lesson 1 for the directions for administration of a\nMultiply-By Pattern Sheet.\n    T:   (Write 7 × 4 = ____.) Let’s skip-count up by fours. I’ll raise a finger for each four. (Raise a finger for\n         each number to track the count.)\n    S:   4, 8, 12, 16, 20, 24, 28.\n    T:   Let’s skip-count up by fours starting at 20. Why is 20 a good place to start?\n    S:   It’s a fact we already know, so we can use it to figure out a fact we don’t know.\n    T:   (Track with fingers as students say the numbers.)\n    S:   20 (5 fingers), 24 (6 fingers), 28 (7 fingers).\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 40 with 10 fingers, 1 for each\n         four. (Count down with fingers as students say the numbers.)\n    S:   40 (10 fingers), 36 (9 fingers), 32 (8 fingers), 28 (7 fingers).\nContinue with the following possible sequence: 9 × 4, 6 × 4, and 8 × 4.\n    T:   (Distribute the Multiply by 4 Pattern Sheet.) Let’s practice multiplying by 4. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 4:                 Compare and classify quadrilaterals.                         54\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 56 (application-problem) ---\nA STORY OF UNITS                                                                                                       Lesson 4 3 7\n\n\nEquivalent Counting with Units of 5 (4 minutes)\nNote: This activity builds fluency with multiplication facts using units of 5. The progression builds in\ncomplexity. Work students up to the highest level where they can confidently participate.\n    T:   Count to 10. (Write as students count. See the chart below.)\n    S:   1, 2, 3, 4, 5, 6, 7, 8, 9, 10.\n\n                1        2                3            4          5          6            7         8          9         10\n\n                1 five   2 fives          3 fives      4 fives    5 fives    6 fives      7 fives   8 fives    9 fives   10 fives\n\n                5        10               15           20         25         30           35        40         45        50\n\n                1 five   10               3 fives      20         5 fives    30           7 fives   40         9 fives   50\n\n                5        2 fives          15           4 fives    25         6 fives      35        8 fives    45        10 fives\n\n\n    T:   (Write 1 five beneath the 1.) Count to 10 fives. (Write as students count.)\n    S:   1 five, 2 fives, 3 fives, 4 fives, 5 fives, 6 fives, 7 fives, 8 fives, 9 fives, 10 fives.\n    T:   Count by fives to 50. (Write as students count.)\n    S:   5, 10, 15, 20, 25, 30, 35, 40, 45, 50.\n    T:   (Write 1 five beneath the 5. Write 10 beneath the 10.) I’m going to give you a challenge. Let’s\n         alternate between saying the units of five and the number. (Write as students count.)\n    S:   1 five, 10, 3 fives, 20, 5 fives, 30, 7 fives, 40, 9 fives, 50.\n    T:   (Write 5 beneath 1 five and 2 fives beneath the 10.) Let’s alternate again. (Write as students count.)\n    S:   5, 2 fives, 15, 4 fives, 25, 6 fives, 35, 8 fives, 45, 10 fives.\n\n\nApplication Problem (7 minutes)\n                                                                                                                   NOTES ON\n                                                                                                                   MULTIPLE MEANS\nThe third graders raised $437 in a fundraiser. The fourth\ngraders raised $68 less than the third graders. How much                                                           OF REPRESENTATION:\nmoney did the two grade levels raise altogether?                                                         Modeling a tape diagram for the\n                                                                                                         money fourth graders raise, as well as\n                                                                                                         the total money raised, helps English\n                                                                                                         language learners and students\n                                                                                                         working below grade level better grasp\n                                                                                                         the meaning of the phrase $68 less\n                                                                                                         than the third graders. Ask, “Who\n                                                                                                         raised less money? Did the fourth\n                                                                                                         graders raise $68? Use the model to\n                                                                                                         estimate about how much the fourth\nNote: This problem reviews two-step word problems from                                                   graders raised.”\nTopic A.\n\n\n                         Lesson 4:                 Compare and classify quadrilaterals.                                                           55\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 57 (concept-development) ---\nA STORY OF UNITS                                                                                        Lesson 4 3 7\n\n\nConcept Development (31 minutes)\n                                                                                                 NOTES ON\nMaterials: (T) 2 rulers (S) Index card for use as right angle tool,                              VOCABULARY:\n           polygons (A–L) (Template), ruler, Problem Set,\n                                                                                         All of the bold-type terms in this lesson\n           scissors\n                                                                                         were introduced in Grade 2 Module 8.\n                                                                                         However, given the specificity of the\nPart 1: Group polygons by attributes.\n                                                                                         words and the time that has passed\nPass out the index cards and Template.                                                   since students’ work in Grade 2\n                                                                                         Module 8, it may be best to approach\n    T:   We’ll use these cards as tools. Put a finger on each                            teaching the vocabulary as if it were\n         corner.                                                                         new.\n    S:   (Touch each corner.)\n    T:   Remember from second grade that we call the point\n         where sides meet to make a corner an angle. These\n         are right angles because they have square corners.                           NOTES ON\n         We’ll use our cards as right angle tools to help us find                     MULTIPLE MEANS\n         other shapes that have right angles. (Save the right                         OF REPRESENTATION:\n         angle tools for the entire module.)                                 Clarify for English language learners\n    T:   Now, cut out shapes A–L on your template.                           and others the term group. In past\n                                                                             modules, they have grouped like units,\n    S:   (Cut.)\n                                                                             such as 10 tens to make 100 or 3 fives\n    T:   Look at your shapes. Discuss with a partner: What are               to make 15. Here, grouping does not\n         some different ways we can group these shapes                       mean bundling units that are exactly\n         together?                                                           the same but rather sorting polygons\n    S:   We can group them by name, like all the squares                     by one or more shared attribute.\n         together.  We can group them by the number of\n         sides.  We can also group them by the number of\n                                                                                                       4-sided:\n         angles.\n    T:   Remember from second grade that closed shapes like these that have no\n         gaps or overlaps between the straight sides are called polygons.\n         Polygons with four straight sides are called quadrilaterals. Tell your\n         partner what a quadrilateral is, and then find and group the\n         quadrilaterals.\n    S:   A quadrilateral is a polygon with four sides. (Group the quadrilaterals.)\n    T:   What do you notice about the polygons you grouped?\n    S:   They don’t look the same.  Some are slanted, and some are boxy.  Some are squares and\n         rectangles, but others are strange looking.  One polygon even looks like a boomerang.  They\n         have four angles.\n    T:   The polygons look different, but they share the attributes of having four sides and four angles.\n         Complete the first row of the chart on the Problem Set. Make sure to sketch one polygon from the\n         group.\n\n\n                        Lesson 4:                 Compare and classify quadrilaterals.                                               56\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 58 (lesson-instruction) ---\nA STORY OF UNITS                                                                           Lesson 4 3 7\n\n\nT:   Next, we’ll find and group trapezoids. These are\n     quadrilaterals that have at least one set of parallel                     NOTES ON\n     sides. Think of parallel sides like the two side lines of a               TRAPEZOIDS:\n     capital H, or a slanted H, since not all parallel sides\n     stand vertical. (Demonstrate using two rulers.)                 According to the K–6 Geometry\n     Imagine these two lines go on forever. Do you think             Progressions, the term trapezoid can\n     they will ever cross? Why or why not?                           have two different meanings:\nS:   I don’t think they will cross.  No, they won’t cross            Exclusive Definition: A trapezoid is\n     because they’re straight and going in the same                       a quadrilateral with exactly one pair\n                                                                          of parallel sides.\n     direction all the time.\n                                                                      Inclusive Definition: A trapezoid is\nT:   (Slant the rulers so they are not parallel anymore but               a quadrilateral with at least one\n     are still not touching.) These lines are not touching.               pair of parallel sides.\n     Are they parallel? Why or why not?                              A Story of Units uses the inclusive\nS:   No. The sides don’t look like an H anymore.  If we             definition. Therefore, a parallelogram\n     imagine the lines keep going, they will eventually              is also considered a trapezoid.\n     cross!\nT:   If trapezoids must have at least one set of parallel sides,\n     can they have more than one set?\nS:   Yeah. At least means one or more.                                                     2 parallel sides:\n\nT:   Group the trapezoids. Complete the second row of the chart on\n     the Problem Set. Make sure to sketch one polygon from the group.\nS:   (Group all shapes, except A, D, and K, and sketch one shape.)\nT:   What do you notice about the polygons you grouped?\nS:   I found a bunch!  No. There’s only one shape that has only one\n     set of parallel sides. Polygon E!  Remember, though, a trapezoid\n     has at least one set! That’s almost all of them!\nT:   Now we’ll find and group parallelograms. These are four-sided                          4 right angles:\n     polygons that have two sets of parallel sides.\nT:   Group the parallelograms. Then, complete the next row of the\n     chart on your Problem Set.\nS:   (Group the polygons, and complete the chart.)\nT:   Now, use your right angle tool to measure and group all the\n     polygons that have four right angles. Then, complete the chart.\nS:   (Measure, group, and complete the chart.)                                                 Squares:\nT:   Next, find and group all the squares. Which attributes make\n     squares special?\nS:   They have four equal sides and four right angles.\nT:   Use your ruler and right angle tool to confirm that with these\n     polygons. Then, complete the chart.\nS:   (Measure, group, and complete the chart.)\n\n\n                    Lesson 4:                  Compare and classify quadrilaterals.                               57\n\n                     ©2015 Great Minds. eureka-math.org\n                     G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 59 (lesson-instruction) ---\nA STORY OF UNITS                                                                      Lesson 4 3 7\n\n\n  Part 2: Analyze quadrilaterals.\n       T:   In our set of polygons A–L, did the number of polygons get smaller or larger as we added attributes?\n       S:   It got smaller.\n       T:   Discuss with your partner why you think the number of polygons in each group got smaller as we\n            added attributes.\n       S:   I think it’s because the attributes in our chart become more special. The last category only includes\n            the most special polygon, a square, because it has to have four right angles and four equal sides.\n             Each time we added a new attribute, fewer polygons belonged to the group.\n       T:   As the attributes become more specific, fewer shapes in our set share all of the attributes. Look at\n            Polygons C and F. They are included in every group. Why do you think that is?\n       S:   They have four sides, two sets of parallel lines, and four right angles.\nMP.3\n       T:   Why aren’t Polygons B and H included in the last category? These specific rectangles have four sides,\n            two sets of parallel lines, and four right angles.\n       S:   Polygons B and H don’t have all equal sides.\n       T:   Look at Polygon I. It has four equal sides and two sets of parallel lines. Why isn’t it included in the\n            last category?\n       S:   It doesn’t have four right angles.  It needs to have them all, not just one attribute.\n       T:   Let’s make a new category, one that has shapes with 4 equal sides. Work with your partner.\n       T:   (Move Polygons C, F, and I to form a new group.) A shape with 4 equal sides is called a rhombus.\n       T:   Why is a square a rhombus?\n       S:   Because it has 4 equal sides!\n       T:   Why isn’t shape I a square?\n       S:   Because it doesn’t have right angles!\n\n  Part 3: Decompose quadrilaterals into two triangles.\n       T:   Problem 4 asks you to use a straightedge to draw a line between opposite corners in each\n            quadrilateral you drew in the chart. This kind of line is called a diagonal line. Do that now.\n       S:   (Draw diagonals in each polygon.)\n       T:   Which new polygons did you make by drawing the diagonal line?\n       S:   Triangles.\n       T:   Complete Problem 4 on your Problem Set.\n       T:   Pick other polygons we used that you did not draw on your chart. Draw diagonal lines inside the\n            polygons. Do you still get two triangles? (Allow time for students to draw.)\n       S:   Yes!\n       T:   All quadrilaterals are made up of two triangles.\n  Students should now go back and finish Problems 2 and 3 on the Problem Set.\n\n\n                           Lesson 4:                 Compare and classify quadrilaterals.                       58\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 60 (debrief) ---\nA STORY OF UNITS                                                                      Lesson 4 3 7\n\n\nStudent Debrief (10 minutes)\nLesson Objective: Compare and classify quadrilaterals.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        How does grouping quadrilaterals by attributes,\n         like you did in Problem 1, help us see the\n         similarities and differences between the\n         polygons?\n        Share sketches of parallelograms from Problem 3.\n         Have students describe parallel lines through\n         their color-coded tracing.\n        For Problem 4, share drawings of different\n         quadrilaterals to reinforce how every\n         quadrilateral can be decomposed into two\n         triangles.\n        What math vocabulary did we use today to name\n         polygons with four sides? (Quadrilateral.) At\n         least one set of parallel sides? (Trapezoid.) Two\n         sets of parallel sides? (Parallelogram.) A shape\n         with 4 equal sides? (Rhombus.) An angle that\n         makes square corners? (Right angle.) The line\n         between opposite corners in each quadrilateral?\n         (Diagonal.)\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                        Lesson 4:                 Compare and classify quadrilaterals.             59\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 61 (template) ---\nA STORY OF UNITS                                                                    Lesson 4 Pattern Sheet 3 7\n\n\n        Multiply.\n\n\nmultiply by 4 (6─10)\n\n\n                       Lesson 4:                 Compare and classify quadrilaterals.                           60\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 62 (problem-set) ---\nA STORY OF UNITS                                                                      Lesson 4 Problem Set 3 7\n\n\nName                                                                                     Date\n\n1. Cut out all the polygons (A–L) in the Template. Then, use the polygons to complete the following chart.\n\n       Attribute           Write the letters of the polygons in                         Sketch 1 polygon from the group.\n                                       this group.\n       Example:\n                         Polygons: Y, Z\n        3 Sides\n\n\n        4 Sides          Polygons:\n\n\n  At Least 1 Set of      Polygons:\n   Parallel Sides\n\n\n  2 Sets of Parallel     Polygons:\n        Sides\n\n\n   4 Right Angles        Polygons:\n\n\n 4 Right Angles and      Polygons:\n    4 Equal Sides\n\n\n                       Lesson 4:                 Compare and classify quadrilaterals.                                      61\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 63 (problem-set) ---\nA STORY OF UNITS                                                                      Lesson 4 Problem Set 3 7\n\n\n2. Write the letters of the polygons that are quadrilaterals. Explain how you know these polygons are\n   quadrilaterals.\n\n\n3. Sketch a polygon below from the group that has 2 sets of parallel sides. Trace 1 pair of parallel sides red.\n   Trace the other pair of parallel sides blue. What makes parallel sides different from sides that are not\n   parallel?\n\n\n4. Draw a diagonal line from one corner to the opposite corner of each polygon you drew in the chart using\n   a straightedge. What new polygon(s) did you make by drawing the diagonal lines?\n\n\n                        Lesson 4:                 Compare and classify quadrilaterals.                         62\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 64 (exit-ticket) ---\nA STORY OF UNITS                                                                     Lesson 4 Exit Ticket 3 7\n\n\nName                                                                                     Date\n\nList as many attributes as you can to describe each polygon below.\n\n\n1.\n                             M\n\n\n2.\n                                  N\n\n\n                        Lesson 4:                 Compare and classify quadrilaterals.                          63\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 65 (homework) ---\nA STORY OF UNITS                                                                      Lesson 4 Homework 3 7\n\n\nName                                                                                     Date\n\n1. Complete the chart by answering true or false.\n\n        Attribute                                       Polygon                                 True or False\n\n        Example:\n                                                                                                    True\n         3 Sides\n\n\n         4 Sides\n\n\n 2 Sets of Parallel Sides\n\n\n     4 Right Angles\n\n\n     Quadrilateral\n\n\n                        Lesson 4:                 Compare and classify quadrilaterals.                          64\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 66 (homework) ---\nA STORY OF UNITS                                                                      Lesson 4 Homework 3 7\n\n\n2. a. Each quadrilateral below has at least 1 set of parallel sides. Trace each set of parallel sides with a\n      colored pencil.\n\n\n    b. Using a straightedge, sketch a different quadrilateral with at least 1 set of parallel sides.\n\n\n                        Lesson 4:                 Compare and classify quadrilaterals.                         65\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 67 (template) ---\nA STORY OF UNITS                                                                        Lesson 4 Template 3 7\n\n\n                                                                          B\n                 A                                                                                     C\n\n\n                                                                         E\n                       F\n\n\n                 G                                                                                 D\n\n\n                                                                              H\n                                                                                               I\n\n                           J\n\n                                                                                                   K\n                                                   L\n\npolygons (A─L)\n\n\n                           Lesson 4:                 Compare and classify quadrilaterals.                      66\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 62,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                      Lesson 4 Problem Set 3 7\n\n\nName                                                                                     Date\n\n1. Cut out all the polygons (A–L) in the Template. Then, use the polygons to complete the following chart.\n\n       Attribute           Write the letters of the polygons in                         Sketch 1 polygon from the group.\n                                       this group.\n       Example:\n                         Polygons: Y, Z\n        3 Sides\n\n\n        4 Sides          Polygons:\n\n\n  At Least 1 Set of      Polygons:\n   Parallel Sides\n\n\n  2 Sets of Parallel     Polygons:\n        Sides\n\n\n   4 Right Angles        Polygons:\n\n\n 4 Right Angles and      Polygons:\n    4 Equal Sides\n\n\n                       Lesson 4:                 Compare and classify quadrilaterals.                                      61\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 63,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                      Lesson 4 Problem Set 3 7\n\n\n2. Write the letters of the polygons that are quadrilaterals. Explain how you know these polygons are\n   quadrilaterals.\n\n\n3. Sketch a polygon below from the group that has 2 sets of parallel sides. Trace 1 pair of parallel sides red.\n   Trace the other pair of parallel sides blue. What makes parallel sides different from sides that are not\n   parallel?\n\n\n4. Draw a diagonal line from one corner to the opposite corner of each polygon you drew in the chart using\n   a straightedge. What new polygon(s) did you make by drawing the diagonal lines?\n\n\n                        Lesson 4:                 Compare and classify quadrilaterals.                         62\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 467,
+        "text": "A STORY OF UNITS                                                                               Lesson 4 Answer Key 3 7\n\n\nLesson 4\nPattern Sheet\n             4                                               8                                 12                 16\n             20                                              24                                28                 32\n             36                                              40                                20                 24\n             20                                              28                                20                 32\n             20                                              36                                20                 40\n             24                                              20                                24                 28\n             24                                              32                                24                 36\n             24                                              28                                24                 28\n             32                                              28                                36                 28\n             32                                              24                                32                 28\n             32                                              36                                36                 24\n             36                                              28                                36                 32\n             36                                              32                                24                 36\n             28                                              36                                24                 32\n             36                                              28                                24                 32\n\n\nProblem Set\n1.    Answer provided\n      A–L; one polygon sketched\n      B, C, E, F, G, H, I, J, L; one polygon sketched\n      B, C, F, G, H, I, L; one polygon sketched\n      B, C, F, H; one polygon sketched\n      C, F; one polygon sketched\n2.    A–L; explanations will vary.\n3.    Polygon sketched and traced; explanations will vary.\n4.    Diagonal line drawn in chart polygons; answers will vary.\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                             466\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 468,
+        "text": "A STORY OF UNITS                                                                          Lesson 4 Answer Key 3 7\n\n\nExit Ticket\n1.    4 equal sides, 2 sets of parallel sides\n2.    4 sides, 1 set of parallel sides\n\n\nHomework\n1.    Answer provided\n      True\n      True\n      False\n      True\n2.    a. Parallel sides traced with a colored pencil\n      b. A shape with at least 1 set of parallel sides drawn\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                        467\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      }
+    ]
+  }
+}

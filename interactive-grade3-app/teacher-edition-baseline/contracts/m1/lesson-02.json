@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m1-l2",
+  "moduleId": "m1",
+  "lessonNumber": 2,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf",
+    "teacherEditionSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
+    "teacherEditionBytes": 13572842,
+    "lessonPdfPages": {
+      "start": 34,
+      "end": 48
+    },
+    "problemSetPdfPages": [
+      43,
+      44
+    ],
+    "exitTicketPdfPages": [
+      45
+    ],
+    "homeworkPdfPages": [
+      46,
+      47
+    ],
+    "answerKeyPdfPages": [
+      293,
+      294
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m1-student/workbook-page-006.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m1-teacher/page-043.png",
+      "/source-pages/m1-teacher/page-044.png",
+      "/source-pages/m1-teacher/page-293.png",
+      "/source-pages/m1-teacher/page-294.png"
+    ]
+  },
+  "objective": "Relate multiplication to the array model.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.\nDirections on this Problem Set include the words\nexpression and equation. Remind students that while an\nanswer is not required with an expression, it should be\nincluded with an equation.",
+    "conceptDevelopmentText": "NOTES ON\nMaterials: (S) Personal white board with threes array                                             MULTIPLE MEANS\n           (Template) inserted (pictured below), lemons image                                     OF REPRESENTATION:\n           from Application Problem, 1 sheet of blank paper                               The words array and row were\n                                                                                          introduced in Grade 2, Module 6 but\nProblem 1: Relate equal groups to arrays.                                                 are treated as new vocabulary in this\nNote: Students’ templates should be vertical rather                                       lesson.\nthan horizontal, as shown below.                                                          When reviewing the concept, have\n                                                                                          students trace a row on the array with\n    T:   Look back at Jordan’s lemons. Compare the way his                                a finger while saying the word row.\n         lemons are organized with the groups of 3 circles on                             Provide a real-world example by having\n         your template.                                                                   students count the rows on various\n    S:   The lemons are touching each other, but the circles                              cupcake pans (miniature and regular\n         have space between them.  Each line on the                                      size) before using the template.\n         template shows three, like each group of lemons.\n          The template is organized with everything in\n         straight lines.\n    T:   Many students are noticing straight lines on the                               Threes array template (with student work)\n         template. Let’s call a straight line going across a row.\n         Use your blank paper to cover all but the top row.\n    S:   (Cover all but the top row.)\n    T:   Uncover 1 row at a time in the picture. As you uncover\n         each row, write the new total number of circles to the\n         right of it.\n    S:   (Skip-count by three using the threes array template.)\n    T:   At the signal, say the total number of circles you\n         counted. (Signal.)\n    S:   30 circles!\n    T:   Take 10 seconds to find how many rows of 3 you\n         counted. At the signal say how many. (Signal.)\n    S:   10 rows!\n    T:   True or false: 10 rows of 3 circles equals 30 circles?\n    S:   True!\n    T:   (Write 10 × 3 = 30 on the board.) Use the picture on\n         your template to talk with your partner about why this\n         equation is true.\n    S:   Yesterday, we learned that we can multiply equal                                         NOTES ON\n         groups.  We skip-counted 10 rows of 3 circles each                                      MULTIPLE MEANS\n         and the total is 30.  It means 10 groups of 3. When                                     OF REPRESENTATION:\n         you add 10 threes, you get 30.  Yeah, but writing 10                            When presenting the concept of array,\n         × 3 is a lot easier than writing out 3 + 3 + 3 + 3 +…                            it may be beneficial to ask students to\n    T:   We call this type of organized picture an array.                                 turn and talk, describing or defining an\n                                                                                          array for their partner.\n\n\n                       Lesson 2:            Relate multiplication to the array model.                                                33\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                      Lesson 2 3•1\n\n\n    T:   (Project or draw the image on the right.) Take a look at this array. At the signal, tell\n         how many rectangles are in the top row. (Signal.)\n    S:   4 rectangles.\n    T:   The size of 1 row is 4 rectangles. Each row of 4 can also be called a group of 4. At the\n         signal, tell how many groups of four are in the array. (Signal.)\n    S:   3 groups of four.\n    T:   To write this as an equation, we first write the number of groups. How many groups?\n    S:   3 groups!\n    T:   (Write 3 × ____ = ____.) Next, we write the size of the group. How many rectangles are in each\n         group?\n    S:   4 rectangles!\n    T:   (Fill in the equation to read 3 × 4 = ____.) Skip-count to find the total number of rectangles in the\n         array.\n    S:   4, 8, 12.\n    T:   (Fill in the equation to read 3 × 4 = 12.) We just found the answer to the multiplication equation\n         that represents the array. In multiplication, the answer, or total, is called the product.\nShow an array of 2 rows of 6 and repeat the process.\n\nProblem 2: Redraw equal groups as arrays.\n    T:   (Project or draw the image on the right.) The drawing\n         shows 3 equal groups of 5. On your personal white\n         board, re-draw the picture as an array with 3 rows of 5.\n    S:   (Draw 3 rows of 5.)\n    T:   Write a multiplication expression to describe your\n         array. Remember, an expression is different from an                                   NOTES ON\n         equation because it doesn’t have an equal sign.                                       MULTIPLE MEANS\n    S:   (Write 3 × 5.)                                                                        OF ENGAGEMENT:\n    T:   Skip-count to find the product.                                                Provide a challenge in this part of the\n    S:   5, 10, 15.                                                                     lesson by giving an equation\n                                                                                        (e.g., 5 × 4 = _____) and no picture.\n    T:   With your partner, compare my drawing with your\n                                                                                        Have students draw both the equal\n         array. Which is easier to count? Why?                                          groups and the array to represent the\n    S:   (Discuss.)                                                                     equation. Then, they skip-count to find\n                                                                                        the total.\nShow 6 groups of 2 and repeat the process.\n\n\n                        Lesson 2:           Relate multiplication to the array model.                                             34\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                     Lesson 2 3•1",
+    "fluencyPracticeText": " Sprint: Add or Subtract Using 2 3.OA.1                                (9 minutes)\n Group Counting 3.OA.1                                                 (3 minutes)\n Add Equal Groups 3.OA.1                                               (3 minutes)\n\n\nSprint: Add or Subtract Using 2 (9 minutes)\nMaterials: (S) Add or Subtract Using 2 Sprint\n\nNote: This Sprint supports group counting skills that are foundational to interpreting multiplication as\nrepeated addition.\n\nDirections for Administration of Sprints\nA Sprint has two parts, A and B, with closely related problems on each. Each part is organized into four\nquadrants that move from simple to complex. This builds a challenge into each Sprint for every learner.\nBefore the lesson, print Sprint A and Sprint B on two separate sheets of paper. Students complete the two\nparts of the Sprint in quick succession with the goal of improving for the second part, even if only by one\nmore. With practice, the following routine takes about 9 minutes.\n\nSprint A\nPlace Sprint A face down on student desks, and instruct students not to look at the problems until a signal is\ngiven.\n    T:     You will have 60 seconds to do as many problems as you can. I do not expect you to finish all of\n           them, just as many as you can, trying for your personal best.\n    T:     Take your mark! Get set! THINK!\n\n\n                         Lesson 2:           Relate multiplication to the array model.                        30\n\n                         ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                            Lesson 2 3•1\n\n\nStudents turn papers over and work furiously to finish as many problems as they can in 60 seconds. Time\nprecisely.\n    T:     Stop! Circle the last problem you completed. I will read just the answers. If you got the answer\n           right, call out “Yes!” If you made a mistake, circle it. Ready?\nRepeat to the end of Sprint A or until no student has a correct answer.\n    T:     Now, at the top of the page, write the number of problems you got correct. This is your personal\n           goal for Sprint B.\n    T:     How many of you got one right? (All hands should go up.)\n    T:     Keep your hand up until I say a number that is one more than the number you got right. So, if you\n           got 14 right, when I say 15, your hand goes down. Ready?\n    T:     (Continue quickly.) How many got two right? Three? Four? Five? (Continue until all hands are\n           down.)\nIf the class needs more practice with Sprint A, continue with the optional routine presented below.\n    T:     Take one minute to do more problems on this half of the Sprint.\nAs students work, the student who scored highest on Sprint A might pass out Sprint B.\n    T:     Stop! I will read just the answers. If you got it right, call out “Yes!” If you made a mistake, circle it.\n           Ready?\nRead the answers to the first half again as students stand.\nMovement: To keep the energy and fun going, do a stretch or a movement game in between Sprints.\n\nSprint B\nPlace Sprint B face down on student desks, and instruct students not to look at the problems until a signal is\ngiven. Repeat the procedure for Sprint A up through the show of hands for how many correct answers.\n    T:     Stand up if you got more correct on the second Sprint than on the first.\n    S:     (Stand.)\n    T:     Keep standing until I say the number that tells how many more you got right on Sprint B. If you got\n           three more right on Sprint B than on Sprint A, when I say three, you sit down. Ready?\nCall out numbers, starting with one. Students sit as the number by which they improved is called. Students\nmay take Sprints home.\n\nGroup Counting (3 minutes)\nNote: Basic skip-counting skills from Grade 2 shift focus in this Grade 3 activity. Group counting lays a\nfoundation for interpreting multiplication as repeated addition. When students count groups in this activity,\nthey add and subtract groups of three when counting up and down.\n    T:     Let’s count to 18 forward and backward. I want you to whisper, whisper, and then speak numbers.\n    T:     Watch my fingers to know whether to count up or down. A closed hand means stop. (Show signals\n           while explaining.)\n\n\n                          Lesson 2:           Relate multiplication to the array model.                             31\n\n                          ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                       Lesson 2 3•1\n\n\n    T:   (Rhythmically point up until a change is desired. Show a closed hand then point down.)\n    S:   (Whisper) 1, (whisper) 2, (speak) 3, etc.\n    T:   Let’s count to 18 forward and backward again. This time, think every number instead of whispering.\n    S:   (Think), (think), 3, (think), (think), 6, (think), (think), 9, etc.\n    T:   What did we just count by? Turn and talk to your partner.\n    S:   Threes.\n    T:   Let’s count by threes. (Direct students to count forward and backward to 18, periodically changing\n         directions. Emphasize the 9 to 12 transition.)\n\nAdd Equal Groups (3 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews Lesson 1. Students directly relate repeated addition to multiplication. They\ninterpret products as the number of equal groups times the number of objects in each group.\n    T:   (Project a picture array with 3 groups of 2 circled.) How many groups are circled?\n    S:   3.\n    T:   How many are in each group?\n    S:   2.\n    T:   Write this as an addition sentence.\n    S:   (Write 2 + 2 + 2 = 6.)\n    T:   Write a multiplication sentence for 3 twos equals 6.\n    S:   (Write 3 × 2 = 6.)\nContinue with this possible sequence: 3 groups of 5, 5 groups of 10, and 3 groups of 4.",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\nDirections on this Problem Set include the words\nexpression and equation. Remind students that while an\nanswer is not required with an expression, it should be\nincluded with an equation.",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Look back at Jordan’s lemons. Compare the way his a finger while saying the word row. lemons are organized with the groups of 3 circles on Provide a real-world example by having your template. students count the rows on various"
+      },
+      {
+        "speaker": "students",
+        "text": "The lemons are touching each other, but the circles cupcake pans (miniature and regular have space between them.  Each line on the size) before using the template. template shows three, like each group of lemons.  The template is organized with everything in straight lines."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Many students are noticing straight lines on the Threes array template (with student work) template. Let’s call a straight line going across a row. Use your blank paper to cover all but the top row."
+      },
+      {
+        "speaker": "students",
+        "text": "(Cover all but the top row.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Uncover 1 row at a time in the picture. As you uncover each row, write the new total number of circles to the right of it."
+      },
+      {
+        "speaker": "students",
+        "text": "(Skip-count by three using the threes array template.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "At the signal, say the total number of circles you counted. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "30 circles!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Take 10 seconds to find how many rows of 3 you counted. At the signal say how many. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "10 rows!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "True or false: 10 rows of 3 circles equals 30 circles?"
+      },
+      {
+        "speaker": "students",
+        "text": "True!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 10 × 3 = 30 on the board.) Use the picture on your template to talk with your partner about why this equation is true."
+      },
+      {
+        "speaker": "students",
+        "text": "Yesterday, we learned that we can multiply equal NOTES ON groups.  We skip-counted 10 rows of 3 circles each MULTIPLE MEANS and the total is 30.  It means 10 groups of 3. When OF REPRESENTATION: you add 10 threes, you get 30.  Yeah, but writing 10 When presenting the concept of array, × 3 is a lot easier than writing out 3 + 3 + 3 + 3 +… it may be beneficial to ask students to"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We call this type of organized picture an array. turn and talk, describing or defining an array for their partner. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 2 3•1"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw the image on the right.) Take a look at this array. At the signal, tell how many rectangles are in the top row. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "4 rectangles."
+      },
+      {
+        "speaker": "teacher",
+        "text": "The size of 1 row is 4 rectangles. Each row of 4 can also be called a group of 4. At the signal, tell how many groups of four are in the array. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "3 groups of four."
+      },
+      {
+        "speaker": "teacher",
+        "text": "To write this as an equation, we first write the number of groups. How many groups?"
+      },
+      {
+        "speaker": "students",
+        "text": "3 groups!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 3 × ____ = ____.) Next, we write the size of the group. How many rectangles are in each group?"
+      },
+      {
+        "speaker": "students",
+        "text": "4 rectangles!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Fill in the equation to read 3 × 4 = ____.) Skip-count to find the total number of rectangles in the array."
+      },
+      {
+        "speaker": "students",
+        "text": "4, 8, 12."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Fill in the equation to read 3 × 4 = 12.) We just found the answer to the multiplication equation that represents the array. In multiplication, the answer, or total, is called the product. Show an array of 2 rows of 6 and repeat the process."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw the image on the right.) The drawing shows 3 equal groups of 5. On your personal white board, re-draw the picture as an array with 3 rows of 5."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw 3 rows of 5.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a multiplication expression to describe your array. Remember, an expression is different from an NOTES ON equation because it doesn’t have an equal sign. MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 3 × 5.) OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Skip-count to find the product. Provide a challenge in this part of the"
+      },
+      {
+        "speaker": "students",
+        "text": "5, 10, 15. lesson by giving an equation (e.g., 5 × 4 = _____) and no picture."
+      },
+      {
+        "speaker": "teacher",
+        "text": "With your partner, compare my drawing with your Have students draw both the equal array. Which is easier to count? Why? groups and the array to represent the"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.) equation. Then, they skip-count to find the total. Show 6 groups of 2 and repeat the process. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 2 3•1"
+      }
+    ],
+    "teacherPrompts": [
+      "Look back at Jordan’s lemons. Compare the way his a finger while saying the word row. lemons are organized with the groups of 3 circles on Provide a real-world example by having your template. students count the rows on various",
+      "Many students are noticing straight lines on the Threes array template (with student work) template. Let’s call a straight line going across a row. Use your blank paper to cover all but the top row.",
+      "Uncover 1 row at a time in the picture. As you uncover each row, write the new total number of circles to the right of it.",
+      "At the signal, say the total number of circles you counted. (Signal.)",
+      "Take 10 seconds to find how many rows of 3 you counted. At the signal say how many. (Signal.)",
+      "True or false: 10 rows of 3 circles equals 30 circles?",
+      "(Write 10 × 3 = 30 on the board.) Use the picture on your template to talk with your partner about why this equation is true.",
+      "We call this type of organized picture an array. turn and talk, describing or defining an array for their partner. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 2 3•1",
+      "(Project or draw the image on the right.) Take a look at this array. At the signal, tell how many rectangles are in the top row. (Signal.)",
+      "The size of 1 row is 4 rectangles. Each row of 4 can also be called a group of 4. At the signal, tell how many groups of four are in the array. (Signal.)",
+      "To write this as an equation, we first write the number of groups. How many groups?",
+      "(Write 3 × ____ = ____.) Next, we write the size of the group. How many rectangles are in each group?",
+      "(Fill in the equation to read 3 × 4 = ____.) Skip-count to find the total number of rectangles in the array.",
+      "(Fill in the equation to read 3 × 4 = 12.) We just found the answer to the multiplication equation that represents the array. In multiplication, the answer, or total, is called the product. Show an array of 2 rows of 6 and repeat the process.",
+      "(Project or draw the image on the right.) The drawing shows 3 equal groups of 5. On your personal white board, re-draw the picture as an array with 3 rows of 5.",
+      "Write a multiplication expression to describe your array. Remember, an expression is different from an NOTES ON equation because it doesn’t have an equal sign. MULTIPLE MEANS",
+      "Skip-count to find the product. Provide a challenge in this part of the",
+      "With your partner, compare my drawing with your Have students draw both the equal array. Which is easier to count? Why? groups and the array to represent the"
+    ],
+    "debriefPrompt": "In Problems 5 and 6, how do the arrays represent equal groups?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "a. How many rows of cars are there? ____ b. How many cars are there in each row? ____",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "a. What is the number of rows? ____ b. What is the number of objects in each row? ____",
+        "equations": []
+      },
+      {
+        "number": 3,
+        "prompt": "a. There are 4 spoons in each row. How many spoons are in 2 rows? ____ b. Write a multiplication expression to describe the array. ____",
+        "equations": []
+      },
+      {
+        "number": 4,
+        "prompt": "a. There are 5 rows of triangles. How many triangles are in each row? ____ b. Write a multiplication expression to describe the total number of triangles. ____",
+        "equations": []
+      },
+      {
+        "number": 5,
+        "prompt": "The dots below show 2 groups of 5. a. Redraw the dots as an array that shows 2 rows of 5. b. Compare the drawing to your array. Write at least 1 reason why they are the same and 1 reason why they are different.",
+        "equations": []
+      },
+      {
+        "number": 6,
+        "prompt": "Emma collects rocks. She arranges them in 4 rows of 3. Draw Emma's array to show how many rocks she has altogether. Then, write a multiplication equation to describe the array.",
+        "equations": []
+      },
+      {
+        "number": 7,
+        "prompt": "Joshua organizes cans of food into an array. He thinks, \"My cans show 5 × 3!\" Draw Joshua's array to find the total number of cans he organizes.",
+        "equations": [
+          "5 × 3"
+        ]
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                   Lesson 2 Problem Set 3•1\n\n\nName                                                                                    Date\n\nUse the arrays below to answer each set of questions.\n\n\n1.                       a. How many rows of cars are there? __________\n\n\n                         b. How many cars are there in each row? __________\n\n\n2.                                                  a. What is the number of rows? __________\n\n\n                                                    b. What is the number of objects in each row? __________\n\n\n3.                      a. There are 4 spoons in each row. How many spoons are in 2 rows? __________\n\n\n                        b. Write a multiplication expression to describe the array. ____________________\n\n\n4.                            a. There are 5 rows of triangles. How many triangles are in each row? _________\n\n\n                              b. Write a multiplication expression to describe the total number of triangles.\n\n                              ______________________\n\n\n                        Lesson 2:           Relate multiplication to the array model.                           39\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                     Lesson 2 Problem Set 3•1\n\n\n5. The dots below show 2 groups of 5.\n\n                      a. Redraw the dots as an array that shows 2 rows of 5.\n\n\n                      b. Compare the drawing to your array. Write at least 1 reason why they are the same\n                         and 1 reason why they are different.\n\n\n6. Emma collects rocks. She arranges them in 4 rows of 3. Draw Emma’s array to show how many rocks she\n   has altogether. Then, write a multiplication equation to describe the array.\n\n\n7. Joshua organizes cans of food into an array. He thinks, “My cans show 5 × 3!” Draw Joshua’s array to find\n   the total number of cans he organizes.\n\n\n                        Lesson 2:           Relate multiplication to the array model.                          40\n\n                        ©2015 Great Minds. eureka-math.org",
+    "answerKeyProblemSetText": "1.     a. 4                                                           5.      a. 2 rows of 5 drawn\n       b. 2                                                                   b. Answers will vary.\n2.     a. 3                                                           6.     4 rows of 3 drawn; 4 × 3 = 12\n       b. 6                                                           7.     5 rows of 3 drawn; 5 × 3 = 15\n3.     a. 8\n       b. 2 × 4\n4.     a. 4\n       b. 5 × 4",
+    "answerKeyText": "A STORY OF UNITS                                                                         Lesson 2 Answer Key 3 1\n\n\nLesson 2\nSprint\nSide A\n1.    2                        12. 16                                 23. 6                                  34. 88\n2.    4                        13. 14                                 24. 8                                  35. 66\n3.    6                        14. 12                                 25. 10                                 36. 44\n4.    8                        15. 10                                 26. 12                                 37. 22\n5.    10                       16. 8                                  27. 14                                 38. 0\n6.    12                       17. 6                                  28. 16                                 39. 22\n7.    14                       18. 4                                  29. 18                                 40. 44\n8.    16                       19. 2                                  30. 20                                 41. 66\n9.    18                       20. 0                                  31. 22                                 42. 88\n10. 20                         21. 2                                  32. 44                                 43. 666\n11. 18                         22. 4                                  33. 66                                 44. 444\n\n\nSide B\n1.    2                        12. 16                                 23. 6                                  34. 88\n2.    4                        13. 14                                 24. 8                                  35. 66\n3.    6                        14. 12                                 25. 10                                 36. 44\n4.    8                        15. 10                                 26. 12                                 37. 22\n5.    10                       16. 8                                  27. 14                                 38. 0\n6.    12                       17. 6                                  28. 16                                 39. 22\n7.    14                       18. 4                                  29. 18                                 40. 44\n8.    16                       19. 2                                  30. 20                                 41. 66\n9.    18                       20. 0                                  31. 22                                 42. 88\n10. 20                         21. 2                                  32. 44                                 43. 444\n11. 18                         22. 4                                  33. 66                                 44. 666\n\n\n                        Module 1:           Properties of Multiplication and Division and Solving Problems with        289\n                                            Units of 2–5 and 10\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                         Lesson 2 Answer Key 3 1\n\n\nProblem Set\n1.     a. 4                                                           5.      a. 2 rows of 5 drawn\n       b. 2                                                                   b. Answers will vary.\n2.     a. 3                                                           6.     4 rows of 3 drawn; 4 × 3 = 12\n       b. 6                                                           7.     5 rows of 3 drawn; 5 × 3 = 15\n3.     a. 8\n       b. 2 × 4\n4.     a. 4\n       b. 5 × 4\n\n\nExit Ticket\n1.    a. 3\n      b. 4 × 3 = 12\n2.    3 rows of 6 drawn; 3 × 6 = 18\n\n\nHomework\n1.     a. 3                                                           5.      a. 3 rows of 4 drawn\n       b. 2                                                                   b. Answers will vary.\n2.     a. 4                                                           6.     5 rows of 4 drawn; 5 × 4 = 20\n       b. 3                                                           7.     Answers will vary.\n3.     a. 15\n       b. 5 × 3\n4.     a. 4\n       b. 6 × 4\n\n\n                        Module 1:           Properties of Multiplication and Division and Solving Problems with    290\n                                            Units of 2–5 and 10\n\n                        ©2015 Great Minds. eureka-math.org",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "equal-groups",
+      "geometry-diagram",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "Relate multiplication to the array model.",
+        "Materials: (S) Personal white board with threes array MULTIPLE MEANS",
+        "from Application Problem, 1 sheet of blank paper The words array and row were",
+        "Problem 1: Relate equal groups to arrays. are treated as new vocabulary in this",
+        "students trace a row on the array with",
+        "T: Many students are noticing straight lines on the Threes array template (with student work)",
+        "S: (Skip-count by three using the threes array template.)",
+        "T: Take 10 seconds to find how many rows of 3 you"
+      ],
+      "equal-groups": [
+        "Problem 1: Relate equal groups to arrays. are treated as new vocabulary in this",
+        "lemons are organized with the groups of 3 circles on Provide a real-world example by having",
+        "template shows three, like each group of lemons.",
+        "and the total is 30.  It means 10 groups of 3. When OF REPRESENTATION:",
+        "T: The size of 1 row is 4 rectangles. Each row of 4 can also be called a group of 4. At the",
+        "signal, tell how many groups of four are in the array. (Signal.)",
+        "S: 3 groups of four.",
+        "Problem 2: Redraw equal groups as arrays."
+      ],
+      "geometry-diagram": [
+        "how many rectangles are in the top row. (Signal.)",
+        "S: 4 rectangles.",
+        "T: The size of 1 row is 4 rectangles. Each row of 4 can also be called a group of 4. At the",
+        "T: (Write 3 × ____ = ____.) Next, we write the size of the group. How many rectangles are in each",
+        "S: 4 rectangles!",
+        "T: (Fill in the equation to read 3 × 4 = ____.) Skip-count to find the total number of rectangles in the",
+        "4. a. There are 5 rows of triangles. How many triangles are in each row? _________",
+        "b. Write a multiplication expression to describe the total number of triangles."
+      ],
+      "money-model": [
+        "T: (Rhythmically point up until a change is desired. Show a closed hand then point down.)"
+      ],
+      "picture-or-drawing": [
+        "(Template) inserted (pictured below), lemons image OF REPRESENTATION:",
+        "T: Uncover 1 row at a time in the picture. As you uncover",
+        "T: (Write 10 × 3 = 30 on the board.) Use the picture on",
+        "T: We call this type of organized picture an array. turn and talk, describing or defining an",
+        "T: (Project or draw the image on the right.) Take a look at this array. At the signal, tell",
+        "Problem 2: Redraw equal groups as arrays.",
+        "T: (Project or draw the image on the right.) The drawing",
+        "board, re-draw the picture as an array with 3 rows of 5."
+      ]
+    },
+    "sourceIllustrationRequired": true,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Look back at Jordan’s lemons. Compare the way his a finger while saying the word row. lemons are organized with the groups of 3 circles on Provide a real-world example by having your template. students count the rows on various"
+      },
+      {
+        "speaker": "students",
+        "text": "The lemons are touching each other, but the circles cupcake pans (miniature and regular have space between them.  Each line on the size) before using the template. template shows three, like each group of lemons.  The template is organized with everything in straight lines."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Uncover 1 row at a time in the picture. As you uncover each row, write the new total number of circles to the right of it."
+      },
+      {
+        "speaker": "students",
+        "text": "(Skip-count by three using the threes array template.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "At the signal, say the total number of circles you counted. (Signal.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Take 10 seconds to find how many rows of 3 you counted. At the signal say how many. (Signal.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 10 × 3 = 30 on the board.) Use the picture on your template to talk with your partner about why this equation is true."
+      },
+      {
+        "speaker": "students",
+        "text": "Yesterday, we learned that we can multiply equal NOTES ON groups.  We skip-counted 10 rows of 3 circles each MULTIPLE MEANS and the total is 30.  It means 10 groups of 3. When OF REPRESENTATION: you add 10 threes, you get 30.  Yeah, but writing 10 When presenting the concept of array, × 3 is a lot easier than writing out 3 + 3 + 3 + 3 +… it may be beneficial to ask students to"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We call this type of organized picture an array. turn and talk, describing or defining an array for their partner. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 2 3•1"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw the image on the right.) Take a look at this array. At the signal, tell how many rectangles are in the top row. (Signal.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "To write this as an equation, we first write the number of groups. How many groups?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 3 × ____ = ____.) Next, we write the size of the group. How many rectangles are in each group?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Fill in the equation to read 3 × 4 = ____.) Skip-count to find the total number of rectangles in the array."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Fill in the equation to read 3 × 4 = 12.) We just found the answer to the multiplication equation that represents the array. In multiplication, the answer, or total, is called the product. Show an array of 2 rows of 6 and repeat the process."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw the image on the right.) The drawing shows 3 equal groups of 5. On your personal white board, re-draw the picture as an array with 3 rows of 5."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw 3 rows of 5.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a multiplication expression to describe your array. Remember, an expression is different from an NOTES ON equation because it doesn’t have an equal sign. MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 3 × 5.) OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Skip-count to find the product. Provide a challenge in this part of the"
+      },
+      {
+        "speaker": "teacher",
+        "text": "With your partner, compare my drawing with your Have students draw both the equal array. Which is easier to count? Why? groups and the array to represent the"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.) equation. Then, they skip-count to find the total. Show 6 groups of 2 and repeat the process. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 2 3•1"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 34 (debrief) ---\nA STORY OF UNITS                                                                       Lesson 2 3•1\n\n\nLesson 2\nObjective: Relate multiplication to the array model.\n\n\nSuggested Lesson Structure\n\n Fluency Practice               (15 minutes)\n Application Problem            (5 minutes)\n Concept Development            (30 minutes)\n Student Debrief                (10 minutes)\n   Total Time                    (60 minutes)\n\n\nFluency Practice (15 minutes)\n Sprint: Add or Subtract Using 2 3.OA.1                                (9 minutes)\n Group Counting 3.OA.1                                                 (3 minutes)\n Add Equal Groups 3.OA.1                                               (3 minutes)\n\n\nSprint: Add or Subtract Using 2 (9 minutes)\nMaterials: (S) Add or Subtract Using 2 Sprint\n\nNote: This Sprint supports group counting skills that are foundational to interpreting multiplication as\nrepeated addition.\n\nDirections for Administration of Sprints\nA Sprint has two parts, A and B, with closely related problems on each. Each part is organized into four\nquadrants that move from simple to complex. This builds a challenge into each Sprint for every learner.\nBefore the lesson, print Sprint A and Sprint B on two separate sheets of paper. Students complete the two\nparts of the Sprint in quick succession with the goal of improving for the second part, even if only by one\nmore. With practice, the following routine takes about 9 minutes.\n\nSprint A\nPlace Sprint A face down on student desks, and instruct students not to look at the problems until a signal is\ngiven.\n    T:     You will have 60 seconds to do as many problems as you can. I do not expect you to finish all of\n           them, just as many as you can, trying for your personal best.\n    T:     Take your mark! Get set! THINK!\n\n\n                         Lesson 2:           Relate multiplication to the array model.                        30\n\n                         ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 35 (lesson-instruction) ---\nA STORY OF UNITS                                                                            Lesson 2 3•1\n\n\nStudents turn papers over and work furiously to finish as many problems as they can in 60 seconds. Time\nprecisely.\n    T:     Stop! Circle the last problem you completed. I will read just the answers. If you got the answer\n           right, call out “Yes!” If you made a mistake, circle it. Ready?\nRepeat to the end of Sprint A or until no student has a correct answer.\n    T:     Now, at the top of the page, write the number of problems you got correct. This is your personal\n           goal for Sprint B.\n    T:     How many of you got one right? (All hands should go up.)\n    T:     Keep your hand up until I say a number that is one more than the number you got right. So, if you\n           got 14 right, when I say 15, your hand goes down. Ready?\n    T:     (Continue quickly.) How many got two right? Three? Four? Five? (Continue until all hands are\n           down.)\nIf the class needs more practice with Sprint A, continue with the optional routine presented below.\n    T:     Take one minute to do more problems on this half of the Sprint.\nAs students work, the student who scored highest on Sprint A might pass out Sprint B.\n    T:     Stop! I will read just the answers. If you got it right, call out “Yes!” If you made a mistake, circle it.\n           Ready?\nRead the answers to the first half again as students stand.\nMovement: To keep the energy and fun going, do a stretch or a movement game in between Sprints.\n\nSprint B\nPlace Sprint B face down on student desks, and instruct students not to look at the problems until a signal is\ngiven. Repeat the procedure for Sprint A up through the show of hands for how many correct answers.\n    T:     Stand up if you got more correct on the second Sprint than on the first.\n    S:     (Stand.)\n    T:     Keep standing until I say the number that tells how many more you got right on Sprint B. If you got\n           three more right on Sprint B than on Sprint A, when I say three, you sit down. Ready?\nCall out numbers, starting with one. Students sit as the number by which they improved is called. Students\nmay take Sprints home.\n\nGroup Counting (3 minutes)\nNote: Basic skip-counting skills from Grade 2 shift focus in this Grade 3 activity. Group counting lays a\nfoundation for interpreting multiplication as repeated addition. When students count groups in this activity,\nthey add and subtract groups of three when counting up and down.\n    T:     Let’s count to 18 forward and backward. I want you to whisper, whisper, and then speak numbers.\n    T:     Watch my fingers to know whether to count up or down. A closed hand means stop. (Show signals\n           while explaining.)\n\n\n                          Lesson 2:           Relate multiplication to the array model.                             31\n\n                          ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 36 (concept-development) ---\nA STORY OF UNITS                                                                       Lesson 2 3•1\n\n\n    T:   (Rhythmically point up until a change is desired. Show a closed hand then point down.)\n    S:   (Whisper) 1, (whisper) 2, (speak) 3, etc.\n    T:   Let’s count to 18 forward and backward again. This time, think every number instead of whispering.\n    S:   (Think), (think), 3, (think), (think), 6, (think), (think), 9, etc.\n    T:   What did we just count by? Turn and talk to your partner.\n    S:   Threes.\n    T:   Let’s count by threes. (Direct students to count forward and backward to 18, periodically changing\n         directions. Emphasize the 9 to 12 transition.)\n\nAdd Equal Groups (3 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews Lesson 1. Students directly relate repeated addition to multiplication. They\ninterpret products as the number of equal groups times the number of objects in each group.\n    T:   (Project a picture array with 3 groups of 2 circled.) How many groups are circled?\n    S:   3.\n    T:   How many are in each group?\n    S:   2.\n    T:   Write this as an addition sentence.\n    S:   (Write 2 + 2 + 2 = 6.)\n    T:   Write a multiplication sentence for 3 twos equals 6.\n    S:   (Write 3 × 2 = 6.)\nContinue with this possible sequence: 3 groups of 5, 5 groups of 10, and 3 groups of 4.\n\n\nApplication Problem (5 minutes)\n\nJordan uses 3 lemons to make 1 pitcher of lemonade. He makes 4 pitchers. How many lemons does he use\naltogether? Use the RDW process to show your solution.\n\n\nNote: Present the image of 4 groups of 3 lemons with the word problem as a scaffold. This problem reviews\nmultiplying equal groups from Lesson 1. It also leads into today’s Concept Development in which students\nrelate multiplication to the array model.\n\n\n                       Lesson 2:            Relate multiplication to the array model.                      32\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 37 (concept-development) ---\nA STORY OF UNITS                                                                                         Lesson 2 3•1\n\n\nConcept Development (30 minutes)\n                                                                                                  NOTES ON\nMaterials: (S) Personal white board with threes array                                             MULTIPLE MEANS\n           (Template) inserted (pictured below), lemons image                                     OF REPRESENTATION:\n           from Application Problem, 1 sheet of blank paper                               The words array and row were\n                                                                                          introduced in Grade 2, Module 6 but\nProblem 1: Relate equal groups to arrays.                                                 are treated as new vocabulary in this\nNote: Students’ templates should be vertical rather                                       lesson.\nthan horizontal, as shown below.                                                          When reviewing the concept, have\n                                                                                          students trace a row on the array with\n    T:   Look back at Jordan’s lemons. Compare the way his                                a finger while saying the word row.\n         lemons are organized with the groups of 3 circles on                             Provide a real-world example by having\n         your template.                                                                   students count the rows on various\n    S:   The lemons are touching each other, but the circles                              cupcake pans (miniature and regular\n         have space between them.  Each line on the                                      size) before using the template.\n         template shows three, like each group of lemons.\n          The template is organized with everything in\n         straight lines.\n    T:   Many students are noticing straight lines on the                               Threes array template (with student work)\n         template. Let’s call a straight line going across a row.\n         Use your blank paper to cover all but the top row.\n    S:   (Cover all but the top row.)\n    T:   Uncover 1 row at a time in the picture. As you uncover\n         each row, write the new total number of circles to the\n         right of it.\n    S:   (Skip-count by three using the threes array template.)\n    T:   At the signal, say the total number of circles you\n         counted. (Signal.)\n    S:   30 circles!\n    T:   Take 10 seconds to find how many rows of 3 you\n         counted. At the signal say how many. (Signal.)\n    S:   10 rows!\n    T:   True or false: 10 rows of 3 circles equals 30 circles?\n    S:   True!\n    T:   (Write 10 × 3 = 30 on the board.) Use the picture on\n         your template to talk with your partner about why this\n         equation is true.\n    S:   Yesterday, we learned that we can multiply equal                                         NOTES ON\n         groups.  We skip-counted 10 rows of 3 circles each                                      MULTIPLE MEANS\n         and the total is 30.  It means 10 groups of 3. When                                     OF REPRESENTATION:\n         you add 10 threes, you get 30.  Yeah, but writing 10                            When presenting the concept of array,\n         × 3 is a lot easier than writing out 3 + 3 + 3 + 3 +…                            it may be beneficial to ask students to\n    T:   We call this type of organized picture an array.                                 turn and talk, describing or defining an\n                                                                                          array for their partner.\n\n\n                       Lesson 2:            Relate multiplication to the array model.                                                33\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 38 (lesson-instruction) ---\nA STORY OF UNITS                                                                                      Lesson 2 3•1\n\n\n    T:   (Project or draw the image on the right.) Take a look at this array. At the signal, tell\n         how many rectangles are in the top row. (Signal.)\n    S:   4 rectangles.\n    T:   The size of 1 row is 4 rectangles. Each row of 4 can also be called a group of 4. At the\n         signal, tell how many groups of four are in the array. (Signal.)\n    S:   3 groups of four.\n    T:   To write this as an equation, we first write the number of groups. How many groups?\n    S:   3 groups!\n    T:   (Write 3 × ____ = ____.) Next, we write the size of the group. How many rectangles are in each\n         group?\n    S:   4 rectangles!\n    T:   (Fill in the equation to read 3 × 4 = ____.) Skip-count to find the total number of rectangles in the\n         array.\n    S:   4, 8, 12.\n    T:   (Fill in the equation to read 3 × 4 = 12.) We just found the answer to the multiplication equation\n         that represents the array. In multiplication, the answer, or total, is called the product.\nShow an array of 2 rows of 6 and repeat the process.\n\nProblem 2: Redraw equal groups as arrays.\n    T:   (Project or draw the image on the right.) The drawing\n         shows 3 equal groups of 5. On your personal white\n         board, re-draw the picture as an array with 3 rows of 5.\n    S:   (Draw 3 rows of 5.)\n    T:   Write a multiplication expression to describe your\n         array. Remember, an expression is different from an                                   NOTES ON\n         equation because it doesn’t have an equal sign.                                       MULTIPLE MEANS\n    S:   (Write 3 × 5.)                                                                        OF ENGAGEMENT:\n    T:   Skip-count to find the product.                                                Provide a challenge in this part of the\n    S:   5, 10, 15.                                                                     lesson by giving an equation\n                                                                                        (e.g., 5 × 4 = _____) and no picture.\n    T:   With your partner, compare my drawing with your\n                                                                                        Have students draw both the equal\n         array. Which is easier to count? Why?                                          groups and the array to represent the\n    S:   (Discuss.)                                                                     equation. Then, they skip-count to find\n                                                                                        the total.\nShow 6 groups of 2 and repeat the process.\n\n\n                        Lesson 2:           Relate multiplication to the array model.                                             34\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 39 (debrief) ---\nA STORY OF UNITS                                                                     Lesson 2 3•1\n\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\nDirections on this Problem Set include the words\nexpression and equation. Remind students that while an\nanswer is not required with an expression, it should be\nincluded with an equation.\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Relate multiplication to the array\nmodel.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        In Problems 5 and 6, how do the arrays represent\n         equal groups?\n        Compare Problems 6 and 7. (Arrays have the\n         same number in each group but a different\n         number of groups.)\n        Compare equal groups in scattered\n         configurations and arrays.\n        Review new vocabulary: row, array, number of\n         groups, size of groups, and product.\n        Prompt students to notice arrays around the\n         room and possibly think of arrays in real-world\n         situations.\n\n\n                       Lesson 2:            Relate multiplication to the array model.              35\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 40 (debrief) ---\nA STORY OF UNITS                                                                       Lesson 2 3•1\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that were presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 2:           Relate multiplication to the array model.                        36\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 41 (sprint) ---\nA STORY OF UNITS                                                                           Lesson 2 Sprint 3•1\n\n\nA\n                                                                                                       Number Correct: _______\n\nAdd or Subtract Using 2\n\n1.                 0+2=                                                     23.             2+4=\n\n2.                 2+2=                                                     24.             2+6=\n\n3.                 4+2=                                                     25.             2+8=\n\n4.                 6+2=                                                     26.            2 + 10 =\n\n5.                 8+2=                                                     27.            2 + 12 =\n\n6.                 10 + 2 =                                                 28.            2 + 14 =\n\n7.                 12 + 2 =                                                 29.            2 + 16 =\n\n8.                 14 + 2 =                                                 30.            2 + 18 =\n\n9.                 16 + 2 =                                                 31.            0 + 22 =\n\n10.                18 + 2 =                                                 32.            22 + 22 =\n\n11.                20 – 2 =                                                 33.            44 + 22 =\n\n12.                18 – 2 =                                                 34.            66 + 22 =\n\n13.                16 – 2 =                                                 35.            88 – 22 =\n\n14.                14 – 2 =                                                 36.            66 – 22 =\n\n15.                12 – 2 =                                                 37.            44 – 22 =\n\n16.                10 – 2 =                                                 38.            22 – 22 =\n\n17.                8–2=                                                     39.            22 + 0 =\n\n18.                6–2=                                                     40.            22 + 22 =\n\n19.                4–2=                                                     41.            22 + 44 =\n\n20.                2–2=                                                     42.            66 + 22 =\n\n21.                2+0=                                                     43.           888 – 222 =\n\n22.                2+2=                                                     44.           666 – 222 =\n\n\n                         Lesson 2:            Relate multiplication to the array model.                                    37\n\n                          ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 42 (sprint) ---\nA STORY OF UNITS                                                                           Lesson 2 Sprint 3•1\n\n\nB\n                                                                                                       Number Correct: _______\n                                                                                                         Improvement: _______\nAdd or Subtract Using 2\n\n1.                 2+0=                                                      23.            4+2=\n\n2.                 2+2=                                                     24.             6+2=\n\n3.                 2+4=                                                     25.             8+2=\n\n4.                 2+6=                                                     26.            10 + 2 =\n\n5.                 2+8=                                                     27.            12 + 2 =\n\n6.                 2 + 10 =                                                 28.            14 + 2 =\n\n7.                 2 + 12 =                                                 29.            16 + 2 =\n\n8.                 2 + 14 =                                                 30.            18 + 2 =\n\n9.                 2 + 16 =                                                 31.            0 + 22 =\n\n10.                2 + 18 =                                                 32.            22 + 22 =\n\n11.                20 − 2 =                                                 33.            22 + 44 =\n\n12.                18 − 2 =                                                 34.            66 + 22 =\n\n13.                16 − 2 =                                                 35.            88 − 22 =\n\n14.                14 − 2 =                                                 36.            66 − 22 =\n\n15.                12 − 2 =                                                 37.            44 − 22 =\n\n16.                10 − 2 =                                                 38.            22 − 22 =\n\n17.                8−2=                                                     39.            22 + 0 =\n\n18.                6−2=                                                     40.            22 + 22 =\n\n19.                4−2=                                                     41.            22 + 44 =\n\n20.                2−2=                                                     42.            66 + 22 =\n\n21.                0+2=                                                     43.           666 − 222 =\n\n22.                2+2=                                                     44.           888 − 222 =\n\n\n                         Lesson 2:            Relate multiplication to the array model.                                    38\n\n                          ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 43 (problem-set) ---\nA STORY OF UNITS                                                                   Lesson 2 Problem Set 3•1\n\n\nName                                                                                    Date\n\nUse the arrays below to answer each set of questions.\n\n\n1.                       a. How many rows of cars are there? __________\n\n\n                         b. How many cars are there in each row? __________\n\n\n2.                                                  a. What is the number of rows? __________\n\n\n                                                    b. What is the number of objects in each row? __________\n\n\n3.                      a. There are 4 spoons in each row. How many spoons are in 2 rows? __________\n\n\n                        b. Write a multiplication expression to describe the array. ____________________\n\n\n4.                            a. There are 5 rows of triangles. How many triangles are in each row? _________\n\n\n                              b. Write a multiplication expression to describe the total number of triangles.\n\n                              ______________________\n\n\n                        Lesson 2:           Relate multiplication to the array model.                           39\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 44 (problem-set) ---\nA STORY OF UNITS                                                                     Lesson 2 Problem Set 3•1\n\n\n5. The dots below show 2 groups of 5.\n\n                      a. Redraw the dots as an array that shows 2 rows of 5.\n\n\n                      b. Compare the drawing to your array. Write at least 1 reason why they are the same\n                         and 1 reason why they are different.\n\n\n6. Emma collects rocks. She arranges them in 4 rows of 3. Draw Emma’s array to show how many rocks she\n   has altogether. Then, write a multiplication equation to describe the array.\n\n\n7. Joshua organizes cans of food into an array. He thinks, “My cans show 5 × 3!” Draw Joshua’s array to find\n   the total number of cans he organizes.\n\n\n                        Lesson 2:           Relate multiplication to the array model.                          40\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 45 (exit-ticket) ---\nA STORY OF UNITS                                                                    Lesson 2 Exit Ticket 3•1\n\n\nName                                                                                    Date\n\n\n1.                                a. There are 4 rows of stars. How many stars are in each row? __________\n\n\n                                    b. Write a multiplication equation to describe the array. _______________\n\n\n2. Judy collects seashells. She arranges them in 3 rows of 6. Draw Judy’s array to show how many seashells\n   she has altogether. Then, write a multiplication equation to describe the array.\n\n\n                        Lesson 2:           Relate multiplication to the array model.                           41\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 46 (homework) ---\nA STORY OF UNITS                                                                    Lesson 2 Homework 3•1\n\n\nName                                                                                    Date\n\nUse the arrays below to answer each set of questions.\n\n1.                          a. How many rows of erasers are there? __________\n\n\n                            b. How many erasers are there in each row? __________\n\n\n2.                                        a. What is the number of rows? __________\n\n\n                                          b. What is the number of objects in each row? __________\n\n\n3.                        a. There are 3 squares in each row. How many squares are in 5 rows? __________\n\n\n                          b. Write a multiplication expression to describe the array. __________\n\n\n4.                                     a. There are 6 rows of stars. How many stars are in each row? __________\n\n\n                                       b. Write a multiplication expression to describe the array. __________\n\n\n                        Lesson 2:           Relate multiplication to the array model.                           42\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 47 (homework) ---\nA STORY OF UNITS                                                                    Lesson 2 Homework 3•1\n\n\n5. The triangles below show 3 groups of four.\n\n                                                     a. Redraw the triangles as an array that shows 3 rows of four.\n\n\n                                                     b. Compare the drawing to your array. How are they the same?\n                                                        How are they different?\n\n\n6. Roger has a collection of stamps. He arranges the stamps into 5 rows of four. Draw an array to represent\n   Roger’s stamps. Then, write a multiplication equation to describe the array.\n\n\n7. Kimberly arranges her 18 markers as an array. Draw an array that Kimberly might make. Then, write a\n   multiplication equation to describe your array.\n\n\n                       Lesson 2:           Relate multiplication to the array model.                                  43\n\n                       ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 48 (template) ---\nA STORY OF UNITS                                                                   Lesson 2 Template 3•1\n\n\nthrees array\n\n\n                      Lesson 2:           Relate multiplication to the array model.                       44\n\n                      ©2015 Great Minds. eureka-math.org",
+    "problemSetPages": [
+      {
+        "pdfPage": 43,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                   Lesson 2 Problem Set 3•1\n\n\nName                                                                                    Date\n\nUse the arrays below to answer each set of questions.\n\n\n1.                       a. How many rows of cars are there? __________\n\n\n                         b. How many cars are there in each row? __________\n\n\n2.                                                  a. What is the number of rows? __________\n\n\n                                                    b. What is the number of objects in each row? __________\n\n\n3.                      a. There are 4 spoons in each row. How many spoons are in 2 rows? __________\n\n\n                        b. Write a multiplication expression to describe the array. ____________________\n\n\n4.                            a. There are 5 rows of triangles. How many triangles are in each row? _________\n\n\n                              b. Write a multiplication expression to describe the total number of triangles.\n\n                              ______________________\n\n\n                        Lesson 2:           Relate multiplication to the array model.                           39\n\n                        ©2015 Great Minds. eureka-math.org"
+      },
+      {
+        "pdfPage": 44,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                     Lesson 2 Problem Set 3•1\n\n\n5. The dots below show 2 groups of 5.\n\n                      a. Redraw the dots as an array that shows 2 rows of 5.\n\n\n                      b. Compare the drawing to your array. Write at least 1 reason why they are the same\n                         and 1 reason why they are different.\n\n\n6. Emma collects rocks. She arranges them in 4 rows of 3. Draw Emma’s array to show how many rocks she\n   has altogether. Then, write a multiplication equation to describe the array.\n\n\n7. Joshua organizes cans of food into an array. He thinks, “My cans show 5 × 3!” Draw Joshua’s array to find\n   the total number of cans he organizes.\n\n\n                        Lesson 2:           Relate multiplication to the array model.                          40\n\n                        ©2015 Great Minds. eureka-math.org"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 293,
+        "text": "A STORY OF UNITS                                                                         Lesson 2 Answer Key 3 1\n\n\nLesson 2\nSprint\nSide A\n1.    2                        12. 16                                 23. 6                                  34. 88\n2.    4                        13. 14                                 24. 8                                  35. 66\n3.    6                        14. 12                                 25. 10                                 36. 44\n4.    8                        15. 10                                 26. 12                                 37. 22\n5.    10                       16. 8                                  27. 14                                 38. 0\n6.    12                       17. 6                                  28. 16                                 39. 22\n7.    14                       18. 4                                  29. 18                                 40. 44\n8.    16                       19. 2                                  30. 20                                 41. 66\n9.    18                       20. 0                                  31. 22                                 42. 88\n10. 20                         21. 2                                  32. 44                                 43. 666\n11. 18                         22. 4                                  33. 66                                 44. 444\n\n\nSide B\n1.    2                        12. 16                                 23. 6                                  34. 88\n2.    4                        13. 14                                 24. 8                                  35. 66\n3.    6                        14. 12                                 25. 10                                 36. 44\n4.    8                        15. 10                                 26. 12                                 37. 22\n5.    10                       16. 8                                  27. 14                                 38. 0\n6.    12                       17. 6                                  28. 16                                 39. 22\n7.    14                       18. 4                                  29. 18                                 40. 44\n8.    16                       19. 2                                  30. 20                                 41. 66\n9.    18                       20. 0                                  31. 22                                 42. 88\n10. 20                         21. 2                                  32. 44                                 43. 444\n11. 18                         22. 4                                  33. 66                                 44. 666\n\n\n                        Module 1:           Properties of Multiplication and Division and Solving Problems with        289\n                                            Units of 2–5 and 10\n\n                        ©2015 Great Minds. eureka-math.org"
+      },
+      {
+        "pdfPage": 294,
+        "text": "A STORY OF UNITS                                                                         Lesson 2 Answer Key 3 1\n\n\nProblem Set\n1.     a. 4                                                           5.      a. 2 rows of 5 drawn\n       b. 2                                                                   b. Answers will vary.\n2.     a. 3                                                           6.     4 rows of 3 drawn; 4 × 3 = 12\n       b. 6                                                           7.     5 rows of 3 drawn; 5 × 3 = 15\n3.     a. 8\n       b. 2 × 4\n4.     a. 4\n       b. 5 × 4\n\n\nExit Ticket\n1.    a. 3\n      b. 4 × 3 = 12\n2.    3 rows of 6 drawn; 3 × 6 = 18\n\n\nHomework\n1.     a. 3                                                           5.      a. 3 rows of 4 drawn\n       b. 2                                                                   b. Answers will vary.\n2.     a. 4                                                           6.     5 rows of 4 drawn; 5 × 4 = 20\n       b. 3                                                           7.     Answers will vary.\n3.     a. 15\n       b. 5 × 3\n4.     a. 4\n       b. 6 × 4\n\n\n                        Module 1:           Properties of Multiplication and Division and Solving Problems with    290\n                                            Units of 2–5 and 10\n\n                        ©2015 Great Minds. eureka-math.org"
+      }
+    ]
+  }
+}

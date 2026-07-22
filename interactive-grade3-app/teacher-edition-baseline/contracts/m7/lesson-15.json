@@ -1,0 +1,409 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m7-l15",
+  "moduleId": "m7",
+  "lessonNumber": 15,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf",
+    "teacherEditionSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+    "teacherEditionBytes": 21553765,
+    "lessonPdfPages": {
+      "start": 195,
+      "end": 206
+    },
+    "problemSetPdfPages": [
+      202,
+      203
+    ],
+    "exitTicketPdfPages": [
+      204
+    ],
+    "homeworkPdfPages": [
+      205,
+      206
+    ],
+    "answerKeyPdfPages": [
+      487
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m7-student/workbook-page-060.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m7-teacher/page-202.png",
+      "/source-pages/m7-teacher/page-203.png",
+      "/source-pages/m7-teacher/page-487.png"
+    ]
+  },
+  "objective": "Solve word problems to determine perimeter with given side lengths.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "Materials: (S) Problem Set\n\nProblem 1: Solve perimeter word problems with rectangles.\nMrs. Kozlow put a border around a 5-foot by 6-foot rectangular bulletin board. How many feet of border did\nMrs. Kozlow use?\n    T:   Read Problem 1. (Allow students time to read.) What can you draw to help you solve this problem?\n    S:   A rectangle!\n\n\n                       Lesson 15:                Solve word problems to determine perimeter with given side lengths.                   196\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                    Lesson 15 3 7\n\n\n       T:   Draw and label a rectangle to represent Mrs. Kozlow’s\n            bulletin board.                                                                                     NOTES ON\n       S:   (Draw a rectangle and label the side lengths.)                                                      MULTIPLE MEANS\n       T:   (Point to the width and length of the rectangle.) How                                               OF ENGAGEMENT:\n            did you label the width and the length?                                                    Students working above grade level\n       S:   5 feet for the width and 6 feet for the length!                                            may solve Problem 1 in the Concept\n                                                                                                       Development quickly using mental\n       T:   (Label the length and width.) Check your rectangle                                         math. Allow students to work\n            against mine. (Allow students to check and make                                            independently, provided that they\n            adjustments, if necessary.) Talk to a partner. Can you                                     include a labeled model, number\n            find the perimeter of the bulletin board with the                                          sentence, and answer sentence for\n            information in your picture?                                                               their solutions. Extend the problem by\n       S:   No. I need to know all the side lengths.  Wait. We                                        asking students to model a rectangular\nMP.5                                                                                                   bulletin board with the same area as\n            can use the side lengths we know to label the unknown\n            ones.  Yeah. Since it’s a rectangle, opposite sides                                       Mrs. Kozlow’s but with a greater\n                                                                                                       perimeter.\n            are equal.  I already labeled all the side lengths.\n       T:   Use what you know about rectangles to label the\n            unknown side lengths if you didn’t already.\n                                                                                                                           6 ft\n       S:   (Label the unknown side lengths.)\n       T:   Write a number sentence including the units to show\n            the perimeter as the sum of the side lengths.\n       S:   5 ft + 6 ft + 5 ft + 6 ft = 22 ft.  2 × 5 ft + 2 × 6 ft = 22 ft.                           5 ft\n             10 ft + 12 ft = 22 ft.  11 ft + 11 ft = 22 ft.\n       T:   What is the perimeter of the bulletin board?\n       S:   22 feet!\n       T:   How many feet of border did Mrs. Kozlow use?                                                                   6 ft\n       S:   22 feet of border!\n       T:   Look at your number sentence. What strategy did you use or\n            could you use to find the perimeter?                                                         5 ft                           5 ft\n       S:   I could add 5 and 6 and then double the sum to get 22.\n             I could multiply each side length by 2 and then add the\n            products.\n       T:   How would you find the total amount of border Mrs. Kozlow                                                      6 ft\n            used if she put a border around three bulletin boards that are\n            the same size as this one?\n       S:   I would add 22, plus 22, plus 22.  I could multiply 22 times 3,\n            but I don’t know that fact.  I could do 3 times 2 tens plus 3\n            times 3 ones.\n\n\n                           Lesson 15:                Solve word problems to determine perimeter with given side lengths.                       197\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                     Lesson 15 3 7\n\n\n  Problem 2: Solve perimeter word problems with regular polygons.\n  Jason built a model of the Pentagon for a social studies project.\n  He made each outside wall 33 centimeters long. What is the                                                   NOTES ON\n  perimeter of Jason’s model pentagon?                                                                         MULTIPLE MEANS\n      T:   Read Problem 2. (Allow students time to read.) What                                                 OF ACTION AND\n           can you draw to help you solve this problem?                                                        EXPRESSION:\n      S:   A pentagon!                                                        The Problem Set makes reference to\n                                                                              the Pentagon (see the problem text to\n      T:   Draw and label a pentagon to represent Jason’s model\n                                                                              the left). Students may not know what\n           pentagon.\n                                                                              the word pentagon refers to when it is\n      S:   (Draw a pentagon and label the side lengths.)                      used as a proper noun. Clarify before\n      T:   Talk to a partner. What did you label the side lengths?            starting Problem 2.\n           Why?\n      S:   I labeled them 33 centimeters because it said each side\n           is 33 centimeters long.\n                                                                                       NOTES ON\n      T:   Write a number sentence to show the perimeter as the\n                                                                                       MULTIPLE MEANS\n           sum of the side lengths.\n                                                                                       OF REPRESENTATION:\n      S:   (Write 33 cm + 33 cm + 33 cm + 33 cm + 33 cm = 165\n                                                                              Students who find drawing a regular\n           cm.)\n                                                                              pentagon challenging may draw an\n      T:   What is the perimeter of Jason’s model pentagon?                   alternative model, such as a tape\n      S:   165 centimeters!                                                   diagram or number bond, in which the\n                                                                              whole is the sum of the sides.\n      T:   Look at your number sentence. Is there another way\n           you can find the perimeter?\nMP.5 S:    I could add 66 twice and then 33 more.  I could multiply 33 times 5, but I don’t know that fact.\n            I could break apart 33 into 30 and 3. Then, I could multiply 5 times 3 tens and 5 times 3 ones and\n           add the products.  I can use the break apart and distribute strategy!",
+    "fluencyPracticeText": " Multiply by 9 3.OA.7                                                       (7 minutes)\n Equivalent Counting with Units of 5 3.OA.7                                 (4 minutes)\n Find the Perimeter 3.MD.8                                                  (4 minutes)\n\nMultiply by 9 (7 minutes)\nMaterials: (S) Multiply by 9 (1–5) Pattern Sheet\n\nNote: This activity builds fluency with multiplication facts using units of 9. It works toward students knowing\nfrom memory all the products of two one-digit numbers. See Lesson 1 for the directions for administration of\na Multiply-By Pattern Sheet.\n    T:   (Write 7 × 9 = ____.) Let’s skip-count up by nines. I’ll raise a finger for each nine. (Raise a finger for\n         each number to track the count.)\n    S:   9, 18, 27, 36, 45, 54, 63.\n    T:   Let’s skip-count up by nines starting at 45. Why is 45 a good place to start?\n    S:   It’s a fact we already know, so we can use it to figure out a fact we don’t know.\n    T:   (Track with fingers as students say the numbers.)\n    S:   45 (5 fingers), 54 (6 fingers), 63 (7 fingers).\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 90 with 10 fingers, 1 for each\n         nine. (Count down with fingers as students say the numbers.)\n    S:   90 (10 fingers), 81 (9 fingers), 72 (8 fingers), 63 (7 fingers).\nContinue with the following possible sequence: 9 × 9, 6 × 9, and 8 × 9.\n    T:   (Distribute the Multiply by 9 Pattern Sheet.) Let’s practice multiplying by 9. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 15:                Solve word problems to determine perimeter with given side lengths.              194\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                         Lesson 15 3 7\n\n\nEquivalent Counting with Units of 5 (4 minutes)\nNote: This activity builds fluency with multiplication facts using units of 5.\n    T:   Count by fives to 50. (Write as students count.)\n    S:   5, 10, 15, 20, 25, 30, 35, 40, 45, 50.\n    T:   (Write 1 five beneath the 5.) Count to 10 fives. (Write as students count.)\n\n          5        10            15               20          25         30        35         40         45         50\n\n          1 five   2 fives       3 fives          4 fives     5 fives    6 fives   7 fives    8 fives    9 fives    10 fives\n\n\n    S:   1 five, 2 fives, 3 fives, 4 fives, 5 fives, 6 fives, 7 fives, 8 fives, 9 fives, 10 fives.\n    T:   Let’s count to 10 fives again. This time, stop when I raise my hand.\n    S:   1 five, 2 fives, 3 fives.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   3 × 5 = 15.\n    T:   Continue.\n    S:   4 fives, 5 fives.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   5 × 5 = 25.\n    T:   Continue.\n    S:   6 fives, 7 fives, 8 fives.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   8 × 5 = 40.\n    T:   Continue.\n    S:   9 fives, 10 fives.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   10 × 5 = 50.\n    T:   Let’s count back down starting at 10 fives.\nContinue the process back down to 1 five.\n\nFind the Perimeter (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews finding perimeter.\n    T:   (Project a square with side lengths of 7 inches. Write P = __ in + __ in\n         + __ in + __ in.) Copy the equation on your personal white board,\n         and fill in the blanks. Then, write the perimeter of the square.\n    S:   (Write P = 7 in + 7 in + 7 in + 7 in and P = 28 in.)\n\n\n                             Lesson 15:                Solve word problems to determine perimeter with given side lengths.              195\n\n                             ©2015 Great Minds. eureka-math.org\n                             G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                    Lesson 15 3 7\n\n\nContinue the process with other polygons.\n                                                                                                                         5 cm\n                                                                                                               2 cm             2 cm\n                                                                                                                2 cm            2 cm\n                                                                                                        4 cm                           4 cm\n                                                                                                                2 cm            2 cm\n\n                                                                                                               2 cm             2 cm\n                                                                                                                         5 cm",
+    "problemSetGuidanceText": "Students should do their personal best to complete Problems 3–6 on the Problem Set within the allotted 10\n  minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems\n  they work on first. Some problems do not specify a method for solving. Students should solve these\n  problems using the RDW approach used for Application Problems.",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Read Problem 1. (Allow students time to read.) What can you draw to help you solve this problem?"
+      },
+      {
+        "speaker": "students",
+        "text": "A rectangle! ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 15 3 7"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw and label a rectangle to represent Mrs. Kozlow’s bulletin board. NOTES ON"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a rectangle and label the side lengths.) MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Point to the width and length of the rectangle.) How OF ENGAGEMENT: did you label the width and the length? Students working above grade level"
+      },
+      {
+        "speaker": "students",
+        "text": "5 feet for the width and 6 feet for the length! may solve Problem 1 in the Concept Development quickly using mental"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Label the length and width.) Check your rectangle math. Allow students to work against mine. (Allow students to check and make independently, provided that they adjustments, if necessary.) Talk to a partner. Can you include a labeled model, number find the perimeter of the bulletin board with the sentence, and answer sentence for information in your picture? their solutions. Extend the problem by"
+      },
+      {
+        "speaker": "students",
+        "text": "No. I need to know all the side lengths.  Wait. We asking students to model a rectangular MP.5 bulletin board with the same area as can use the side lengths we know to label the unknown ones.  Yeah. Since it’s a rectangle, opposite sides Mrs. Kozlow’s but with a greater perimeter. are equal.  I already labeled all the side lengths."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use what you know about rectangles to label the unknown side lengths if you didn’t already. 6 ft"
+      },
+      {
+        "speaker": "students",
+        "text": "(Label the unknown side lengths.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a number sentence including the units to show the perimeter as the sum of the side lengths."
+      },
+      {
+        "speaker": "students",
+        "text": "5 ft + 6 ft + 5 ft + 6 ft = 22 ft.  2 × 5 ft + 2 × 6 ft = 22 ft. 5 ft  10 ft + 12 ft = 22 ft.  11 ft + 11 ft = 22 ft."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the perimeter of the bulletin board?"
+      },
+      {
+        "speaker": "students",
+        "text": "22 feet!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many feet of border did Mrs. Kozlow use? 6 ft"
+      },
+      {
+        "speaker": "students",
+        "text": "22 feet of border!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look at your number sentence. What strategy did you use or could you use to find the perimeter? 5 ft 5 ft"
+      },
+      {
+        "speaker": "students",
+        "text": "I could add 5 and 6 and then double the sum to get 22.  I could multiply each side length by 2 and then add the products."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How would you find the total amount of border Mrs. Kozlow 6 ft used if she put a border around three bulletin boards that are the same size as this one?"
+      },
+      {
+        "speaker": "students",
+        "text": "I would add 22, plus 22, plus 22.  I could multiply 22 times 3, but I don’t know that fact.  I could do 3 times 2 tens plus 3 times 3 ones. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 15 3 7 Jason built a model of the Pentagon for a social studies project. He made each outside wall 33 centimeters long. What is the NOTES ON perimeter of Jason’s model pentagon? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Read Problem 2. (Allow students time to read.) What OF ACTION AND can you draw to help you solve this problem? EXPRESSION:"
+      },
+      {
+        "speaker": "students",
+        "text": "A pentagon! The Problem Set makes reference to the Pentagon (see the problem text to"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw and label a pentagon to represent Jason’s model the left). Students may not know what pentagon. the word pentagon refers to when it is"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a pentagon and label the side lengths.) used as a proper noun. Clarify before"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to a partner. What did you label the side lengths? starting Problem 2. Why?"
+      },
+      {
+        "speaker": "students",
+        "text": "I labeled them 33 centimeters because it said each side is 33 centimeters long."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a number sentence to show the perimeter as the MULTIPLE MEANS sum of the side lengths. OF REPRESENTATION:"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 33 cm + 33 cm + 33 cm + 33 cm + 33 cm = 165 Students who find drawing a regular cm.) pentagon challenging may draw an"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the perimeter of Jason’s model pentagon? alternative model, such as a tape"
+      },
+      {
+        "speaker": "students",
+        "text": "165 centimeters! diagram or number bond, in which the whole is the sum of the sides."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look at your number sentence. Is there another way you can find the perimeter? MP.5 S: I could add 66 twice and then 33 more.  I could multiply 33 times 5, but I don’t know that fact.  I could break apart 33 into 30 and 3. Then, I could multiply 5 times 3 tens and 5 times 3 ones and add the products.  I can use the break apart and distribute strategy!"
+      }
+    ],
+    "teacherPrompts": [
+      "Read Problem 1. (Allow students time to read.) What can you draw to help you solve this problem?",
+      "Draw and label a rectangle to represent Mrs. Kozlow’s bulletin board. NOTES ON",
+      "(Point to the width and length of the rectangle.) How OF ENGAGEMENT: did you label the width and the length? Students working above grade level",
+      "(Label the length and width.) Check your rectangle math. Allow students to work against mine. (Allow students to check and make independently, provided that they adjustments, if necessary.) Talk to a partner. Can you include a labeled model, number find the perimeter of the bulletin board with the sentence, and answer sentence for information in your picture? their solutions. Extend the problem by",
+      "Use what you know about rectangles to label the unknown side lengths if you didn’t already. 6 ft",
+      "Write a number sentence including the units to show the perimeter as the sum of the side lengths.",
+      "What is the perimeter of the bulletin board?",
+      "How many feet of border did Mrs. Kozlow use? 6 ft",
+      "Look at your number sentence. What strategy did you use or could you use to find the perimeter? 5 ft 5 ft",
+      "How would you find the total amount of border Mrs. Kozlow 6 ft used if she put a border around three bulletin boards that are the same size as this one?",
+      "Read Problem 2. (Allow students time to read.) What OF ACTION AND can you draw to help you solve this problem? EXPRESSION:",
+      "Draw and label a pentagon to represent Jason’s model the left). Students may not know what pentagon. the word pentagon refers to when it is",
+      "Talk to a partner. What did you label the side lengths? starting Problem 2. Why?",
+      "Write a number sentence to show the perimeter as the MULTIPLE MEANS sum of the side lengths. OF REPRESENTATION:",
+      "What is the perimeter of Jason’s model pentagon? alternative model, such as a tape",
+      "Look at your number sentence. Is there another way you can find the perimeter? MP.5 S: I could add 66 twice and then 33 more.  I could multiply 33 times 5, but I don’t know that fact.  I could break apart 33 into 30 and 3. Then, I could multiply 5 times 3 tens and 5 times 3 ones and add the products.  I can use the break apart and distribute strategy!"
+    ],
+    "debriefPrompt": "Share your solution to Problem 3 with a partner. Compare your equations. How are they the same? How are they different?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Mrs. Kozlow put a border around a 5-foot by 6-foot rectangular bulletin board. How many feet of border did Mrs. Kozlow use?",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "Jason built a model of the Pentagon for a social studies project. He made each outside wall 33 centimeters long. What is the perimeter of Jason's model pentagon?",
+        "equations": []
+      },
+      {
+        "number": 3,
+        "prompt": "The Holmes family plants a rectangular 8-yard by 9-yard vegetable garden. How many yards of fencing do they need to put a fence around the garden?",
+        "equations": []
+      },
+      {
+        "number": 4,
+        "prompt": "Marion paints a 5-pointed star on her bedroom wall. Each side of the star is 18 inches long. What is the perimeter of the star?",
+        "equations": []
+      },
+      {
+        "number": 5,
+        "prompt": "The soccer team jogs around the outside of the soccer field twice to warm up. The rectangular field measures 60 yards by 100 yards. What is the total number of yards the team jogs?",
+        "equations": []
+      },
+      {
+        "number": 6,
+        "prompt": "Troop 516 makes 3 triangular flags to carry at a parade. They sew ribbon around the outside edges of the flags. The flags' side lengths each measure 24 inches. How many inches of ribbon does the troop use?",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                           Lesson 15 Problem Set 3 7\n\n\nName                                                                                            Date\n\n1. Mrs. Kozlow put a border around a 5-foot by 6-foot rectangular bulletin board. How many feet of border\n   did Mrs. Kozlow use?\n\n\n2. Jason built a model of the Pentagon for a social studies project. He made each outside wall\n   33 centimeters long. What is the perimeter of Jason’s model pentagon?\n\n\n3. The Holmes family plants a rectangular 8-yard by 9-yard vegetable garden. How many yards of fencing do\n   they need to put a fence around the garden?\n\n\n                       Lesson 15:                Solve word problems to determine perimeter with given side lengths.   201\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                           Lesson 15 Problem Set 3 7\n\n\n4. Marion paints a 5-pointed star on her bedroom wall. Each side of the star is 18 inches long. What is the\n   perimeter of the star?\n\n\n5. The soccer team jogs around the outside of the soccer field twice to warm up. The rectangular field\n   measures 60 yards by 100 yards. What is the total number of yards the team jogs?\n\n\n6. Troop 516 makes 3 triangular flags to carry at a parade. They sew ribbon around the outside edges of the\n   flags. The flags’ side lengths each measure 24 inches. How many inches of ribbon does the troop use?\n\n\n                       Lesson 15:                Solve word problems to determine perimeter with given side lengths.   202\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "answerKeyProblemSetText": "1.    22 ft                                                                    4.    180 in\n2.    165 cm                                                                   5.    640 yd\n3.    34 yd                                                                    6.    216 in",
+    "answerKeyText": "A STORY OF UNITS                                                                               Lesson 15 Answer Key 3 7\n\n\nLesson 15\nPattern Sheet\n              9                                              18                                27                  36\n              45                                             9                                 18                   9\n              27                                             9                                 36                   9\n              45                                             9                                 18                  27\n              18                                             36                                18                  45\n              18                                             9                                 18                  27\n              9                                              27                                18                  27\n              36                                             27                                45                  27\n              36                                             9                                 36                  18\n              36                                             27                                36                  45\n              36                                             45                                9                   45\n              18                                             45                                27                  45\n              36                                             18                                36                  27\n              45                                             27                                18                  36\n              27                                             45                                18                  36\n\n\nProblem Set\n1.    22 ft                                                                    4.    180 in\n2.    165 cm                                                                   5.    640 yd\n3.    34 yd                                                                    6.    216 in\n\n\nExit Ticket\n36 yd\n\n\nHomework\n1.    26 in                                                                    4.    36 in\n2.    40 ft                                                                    5.    64 ft\n3.    160 yd                                                                   6.    32 ft\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                              486\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "number-bond",
+      "measurement-scale",
+      "ruler-or-length",
+      "geometry-diagram",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "number-bond": [
+        "S: 165 centimeters! diagram or number bond, in which the",
+        " I could break apart 33 into 30 and 3. Then, I could multiply 5 times 3 tens and 5 times 3 ones and",
+        "add the products.  I can use the break apart and distribute strategy!"
+      ],
+      "measurement-scale": [
+        "S: 165 centimeters! diagram or number bond, in which the"
+      ],
+      "ruler-or-length": [
+        "Solve word problems to determine perimeter with given side lengths.",
+        "Lesson 15: Solve word problems to determine perimeter with given side lengths. 196",
+        "S: (Draw a rectangle and label the side lengths.) MULTIPLE MEANS",
+        "T: (Point to the width and length of the rectangle.) How OF ENGAGEMENT:",
+        "did you label the width and the length? Students working above grade level",
+        "S: 5 feet for the width and 6 feet for the length! may solve Problem 1 in the Concept",
+        "T: (Label the length and width.) Check your rectangle math. Allow students to work",
+        "S: No. I need to know all the side lengths.  Wait. We asking students to model a rectangular"
+      ],
+      "geometry-diagram": [
+        "Solve word problems to determine perimeter with given side lengths.",
+        "Problem 1: Solve perimeter word problems with rectangles.",
+        "S: A rectangle!",
+        "Lesson 15: Solve word problems to determine perimeter with given side lengths. 196",
+        "T: Draw and label a rectangle to represent Mrs. Kozlow’s",
+        "S: (Draw a rectangle and label the side lengths.) MULTIPLE MEANS",
+        "T: (Point to the width and length of the rectangle.) How OF ENGAGEMENT:",
+        "T: (Label the length and width.) Check your rectangle math. Allow students to work"
+      ],
+      "money-model": [
+        "He made each outside wall 33 centimeters long. What is the NOTES ON",
+        "S: I labeled them 33 centimeters because it said each side",
+        "is 33 centimeters long.",
+        "S: 165 centimeters! diagram or number bond, in which the",
+        "33 centimeters long. What is the perimeter of Jason’s model pentagon?"
+      ],
+      "picture-or-drawing": [
+        "T: Read Problem 1. (Allow students time to read.) What can you draw to help you solve this problem?",
+        "T: Draw and label a rectangle to represent Mrs. Kozlow’s",
+        "S: (Draw a rectangle and label the side lengths.) MULTIPLE MEANS",
+        "information in your picture? their solutions. Extend the problem by",
+        "can you draw to help you solve this problem? EXPRESSION:",
+        "T: Draw and label a pentagon to represent Jason’s model",
+        "S: (Draw a pentagon and label the side lengths.) used as a proper noun. Clarify before",
+        "Students who find drawing a regular"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Read Problem 1. (Allow students time to read.) What can you draw to help you solve this problem?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw and label a rectangle to represent Mrs. Kozlow’s bulletin board. NOTES ON"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a rectangle and label the side lengths.) MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Point to the width and length of the rectangle.) How OF ENGAGEMENT: did you label the width and the length? Students working above grade level"
+      },
+      {
+        "speaker": "students",
+        "text": "5 feet for the width and 6 feet for the length! may solve Problem 1 in the Concept Development quickly using mental"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Label the length and width.) Check your rectangle math. Allow students to work against mine. (Allow students to check and make independently, provided that they adjustments, if necessary.) Talk to a partner. Can you include a labeled model, number find the perimeter of the bulletin board with the sentence, and answer sentence for information in your picture? their solutions. Extend the problem by"
+      },
+      {
+        "speaker": "students",
+        "text": "No. I need to know all the side lengths.  Wait. We asking students to model a rectangular MP.5 bulletin board with the same area as can use the side lengths we know to label the unknown ones.  Yeah. Since it’s a rectangle, opposite sides Mrs. Kozlow’s but with a greater perimeter. are equal.  I already labeled all the side lengths."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use what you know about rectangles to label the unknown side lengths if you didn’t already. 6 ft"
+      },
+      {
+        "speaker": "students",
+        "text": "(Label the unknown side lengths.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a number sentence including the units to show the perimeter as the sum of the side lengths."
+      },
+      {
+        "speaker": "students",
+        "text": "I would add 22, plus 22, plus 22.  I could multiply 22 times 3, but I don’t know that fact.  I could do 3 times 2 tens plus 3 times 3 ones. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 15 3 7 Jason built a model of the Pentagon for a social studies project. He made each outside wall 33 centimeters long. What is the NOTES ON perimeter of Jason’s model pentagon? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Read Problem 2. (Allow students time to read.) What OF ACTION AND can you draw to help you solve this problem? EXPRESSION:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw and label a pentagon to represent Jason’s model the left). Students may not know what pentagon. the word pentagon refers to when it is"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw a pentagon and label the side lengths.) used as a proper noun. Clarify before"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to a partner. What did you label the side lengths? starting Problem 2. Why?"
+      },
+      {
+        "speaker": "students",
+        "text": "I labeled them 33 centimeters because it said each side is 33 centimeters long."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a number sentence to show the perimeter as the MULTIPLE MEANS sum of the side lengths. OF REPRESENTATION:"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 33 cm + 33 cm + 33 cm + 33 cm + 33 cm = 165 Students who find drawing a regular cm.) pentagon challenging may draw an"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the perimeter of Jason’s model pentagon? alternative model, such as a tape"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 195 (debrief) ---\nA STORY OF UNITS                                                                                                      Lesson 15 3 7\n\n\nLesson 15\nObjective: Solve word problems to determine perimeter with given side\nlengths.\n\nSuggested Lesson Structure\n Fluency Practice                  (15 minutes)\n Application Problem               (5 minutes)\n Concept Development               (30 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (15 minutes)\n Multiply by 9 3.OA.7                                                       (7 minutes)\n Equivalent Counting with Units of 5 3.OA.7                                 (4 minutes)\n Find the Perimeter 3.MD.8                                                  (4 minutes)\n\nMultiply by 9 (7 minutes)\nMaterials: (S) Multiply by 9 (1–5) Pattern Sheet\n\nNote: This activity builds fluency with multiplication facts using units of 9. It works toward students knowing\nfrom memory all the products of two one-digit numbers. See Lesson 1 for the directions for administration of\na Multiply-By Pattern Sheet.\n    T:   (Write 7 × 9 = ____.) Let’s skip-count up by nines. I’ll raise a finger for each nine. (Raise a finger for\n         each number to track the count.)\n    S:   9, 18, 27, 36, 45, 54, 63.\n    T:   Let’s skip-count up by nines starting at 45. Why is 45 a good place to start?\n    S:   It’s a fact we already know, so we can use it to figure out a fact we don’t know.\n    T:   (Track with fingers as students say the numbers.)\n    S:   45 (5 fingers), 54 (6 fingers), 63 (7 fingers).\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 90 with 10 fingers, 1 for each\n         nine. (Count down with fingers as students say the numbers.)\n    S:   90 (10 fingers), 81 (9 fingers), 72 (8 fingers), 63 (7 fingers).\nContinue with the following possible sequence: 9 × 9, 6 × 9, and 8 × 9.\n    T:   (Distribute the Multiply by 9 Pattern Sheet.) Let’s practice multiplying by 9. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 15:                Solve word problems to determine perimeter with given side lengths.              194\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 196 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                         Lesson 15 3 7\n\n\nEquivalent Counting with Units of 5 (4 minutes)\nNote: This activity builds fluency with multiplication facts using units of 5.\n    T:   Count by fives to 50. (Write as students count.)\n    S:   5, 10, 15, 20, 25, 30, 35, 40, 45, 50.\n    T:   (Write 1 five beneath the 5.) Count to 10 fives. (Write as students count.)\n\n          5        10            15               20          25         30        35         40         45         50\n\n          1 five   2 fives       3 fives          4 fives     5 fives    6 fives   7 fives    8 fives    9 fives    10 fives\n\n\n    S:   1 five, 2 fives, 3 fives, 4 fives, 5 fives, 6 fives, 7 fives, 8 fives, 9 fives, 10 fives.\n    T:   Let’s count to 10 fives again. This time, stop when I raise my hand.\n    S:   1 five, 2 fives, 3 fives.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   3 × 5 = 15.\n    T:   Continue.\n    S:   4 fives, 5 fives.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   5 × 5 = 25.\n    T:   Continue.\n    S:   6 fives, 7 fives, 8 fives.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   8 × 5 = 40.\n    T:   Continue.\n    S:   9 fives, 10 fives.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   10 × 5 = 50.\n    T:   Let’s count back down starting at 10 fives.\nContinue the process back down to 1 five.\n\nFind the Perimeter (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews finding perimeter.\n    T:   (Project a square with side lengths of 7 inches. Write P = __ in + __ in\n         + __ in + __ in.) Copy the equation on your personal white board,\n         and fill in the blanks. Then, write the perimeter of the square.\n    S:   (Write P = 7 in + 7 in + 7 in + 7 in and P = 28 in.)\n\n\n                             Lesson 15:                Solve word problems to determine perimeter with given side lengths.              195\n\n                             ©2015 Great Minds. eureka-math.org\n                             G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 197 (concept-development) ---\nA STORY OF UNITS                                                                                                    Lesson 15 3 7\n\n\nContinue the process with other polygons.\n                                                                                                                         5 cm\n                                                                                                               2 cm             2 cm\n                                                                                                                2 cm            2 cm\n                                                                                                        4 cm                           4 cm\n                                                                                                                2 cm            2 cm\n\n                                                                                                               2 cm             2 cm\n                                                                                                                         5 cm\nApplication Problem (5 minutes)\n\nClara and Pedro each use four 3-inch by 5-inch cards to make the rectangles below. Whose rectangle has a\ngreater perimeter?\n                                                                                                            Pedro’s Rectangle\n                                   Clara’s Rectangle\n\n\n     3 in\n\n              5 in\n                                                                                               3 in\n\n\n                                                                                                            5 in\n\n\nNote: This problem reviews adding side lengths to find the perimeter.\n\n\nConcept Development (30 minutes)\n\nMaterials: (S) Problem Set\n\nProblem 1: Solve perimeter word problems with rectangles.\nMrs. Kozlow put a border around a 5-foot by 6-foot rectangular bulletin board. How many feet of border did\nMrs. Kozlow use?\n    T:   Read Problem 1. (Allow students time to read.) What can you draw to help you solve this problem?\n    S:   A rectangle!\n\n\n                       Lesson 15:                Solve word problems to determine perimeter with given side lengths.                   196\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 198 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                    Lesson 15 3 7\n\n\n       T:   Draw and label a rectangle to represent Mrs. Kozlow’s\n            bulletin board.                                                                                     NOTES ON\n       S:   (Draw a rectangle and label the side lengths.)                                                      MULTIPLE MEANS\n       T:   (Point to the width and length of the rectangle.) How                                               OF ENGAGEMENT:\n            did you label the width and the length?                                                    Students working above grade level\n       S:   5 feet for the width and 6 feet for the length!                                            may solve Problem 1 in the Concept\n                                                                                                       Development quickly using mental\n       T:   (Label the length and width.) Check your rectangle                                         math. Allow students to work\n            against mine. (Allow students to check and make                                            independently, provided that they\n            adjustments, if necessary.) Talk to a partner. Can you                                     include a labeled model, number\n            find the perimeter of the bulletin board with the                                          sentence, and answer sentence for\n            information in your picture?                                                               their solutions. Extend the problem by\n       S:   No. I need to know all the side lengths.  Wait. We                                        asking students to model a rectangular\nMP.5                                                                                                   bulletin board with the same area as\n            can use the side lengths we know to label the unknown\n            ones.  Yeah. Since it’s a rectangle, opposite sides                                       Mrs. Kozlow’s but with a greater\n                                                                                                       perimeter.\n            are equal.  I already labeled all the side lengths.\n       T:   Use what you know about rectangles to label the\n            unknown side lengths if you didn’t already.\n                                                                                                                           6 ft\n       S:   (Label the unknown side lengths.)\n       T:   Write a number sentence including the units to show\n            the perimeter as the sum of the side lengths.\n       S:   5 ft + 6 ft + 5 ft + 6 ft = 22 ft.  2 × 5 ft + 2 × 6 ft = 22 ft.                           5 ft\n             10 ft + 12 ft = 22 ft.  11 ft + 11 ft = 22 ft.\n       T:   What is the perimeter of the bulletin board?\n       S:   22 feet!\n       T:   How many feet of border did Mrs. Kozlow use?                                                                   6 ft\n       S:   22 feet of border!\n       T:   Look at your number sentence. What strategy did you use or\n            could you use to find the perimeter?                                                         5 ft                           5 ft\n       S:   I could add 5 and 6 and then double the sum to get 22.\n             I could multiply each side length by 2 and then add the\n            products.\n       T:   How would you find the total amount of border Mrs. Kozlow                                                      6 ft\n            used if she put a border around three bulletin boards that are\n            the same size as this one?\n       S:   I would add 22, plus 22, plus 22.  I could multiply 22 times 3,\n            but I don’t know that fact.  I could do 3 times 2 tens plus 3\n            times 3 ones.\n\n\n                           Lesson 15:                Solve word problems to determine perimeter with given side lengths.                       197\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 199 (debrief) ---\nA STORY OF UNITS                                                                                                     Lesson 15 3 7\n\n\n  Problem 2: Solve perimeter word problems with regular polygons.\n  Jason built a model of the Pentagon for a social studies project.\n  He made each outside wall 33 centimeters long. What is the                                                   NOTES ON\n  perimeter of Jason’s model pentagon?                                                                         MULTIPLE MEANS\n      T:   Read Problem 2. (Allow students time to read.) What                                                 OF ACTION AND\n           can you draw to help you solve this problem?                                                        EXPRESSION:\n      S:   A pentagon!                                                        The Problem Set makes reference to\n                                                                              the Pentagon (see the problem text to\n      T:   Draw and label a pentagon to represent Jason’s model\n                                                                              the left). Students may not know what\n           pentagon.\n                                                                              the word pentagon refers to when it is\n      S:   (Draw a pentagon and label the side lengths.)                      used as a proper noun. Clarify before\n      T:   Talk to a partner. What did you label the side lengths?            starting Problem 2.\n           Why?\n      S:   I labeled them 33 centimeters because it said each side\n           is 33 centimeters long.\n                                                                                       NOTES ON\n      T:   Write a number sentence to show the perimeter as the\n                                                                                       MULTIPLE MEANS\n           sum of the side lengths.\n                                                                                       OF REPRESENTATION:\n      S:   (Write 33 cm + 33 cm + 33 cm + 33 cm + 33 cm = 165\n                                                                              Students who find drawing a regular\n           cm.)\n                                                                              pentagon challenging may draw an\n      T:   What is the perimeter of Jason’s model pentagon?                   alternative model, such as a tape\n      S:   165 centimeters!                                                   diagram or number bond, in which the\n                                                                              whole is the sum of the sides.\n      T:   Look at your number sentence. Is there another way\n           you can find the perimeter?\nMP.5 S:    I could add 66 twice and then 33 more.  I could multiply 33 times 5, but I don’t know that fact.\n            I could break apart 33 into 30 and 3. Then, I could multiply 5 times 3 tens and 5 times 3 ones and\n           add the products.  I can use the break apart and distribute strategy!\n\n  Problem Set (10 minutes)\n  Students should do their personal best to complete Problems 3–6 on the Problem Set within the allotted 10\n  minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems\n  they work on first. Some problems do not specify a method for solving. Students should solve these\n  problems using the RDW approach used for Application Problems.\n\n\n  Student Debrief (10 minutes)\n  Lesson Objective: Solve word problems to determine perimeter with given side lengths.\n  The Student Debrief is intended to invite reflection and active processing of the total lesson experience.\n  Invite students to review their solutions for the Problem Set. They should check work by comparing answers\n  with a partner before going over answers as a class. Look for misconceptions or misunderstandings that can\n  be addressed in the Debrief. Guide students in a conversation to debrief the Problem Set and process the\n  lesson.\n\n\n                          Lesson 15:                Solve word problems to determine perimeter with given side lengths.              198\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 200 (debrief) ---\nA STORY OF UNITS                                                                                                    Lesson 15 3 7\n\n\nAny combination of the questions below may be used to lead the discussion.\n       Share your solution to Problem 3 with a partner.\n        Compare your equations. How are they the\n        same? How are they different?\n       What multiplication equation could you use to\n        solve Problem 4? What is 18 tens?\n       How was solving Problems 5 and 6 different from\n        the rest of the problems?\n       Explain to a partner how you solved Problem 6.\n        Did you use the break apart and distribute\n        strategy? How did you use it?\n       Describe a different real-world situation in which\n        it would be necessary to find the perimeter.\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                       Lesson 15:                Solve word problems to determine perimeter with given side lengths.              199\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 201 (template) ---\nA STORY OF UNITS                                                                       Lesson 15 Pattern Sheet 3 7\n\n\n      Multiply.\n\n\nmultiply by 9 (1–5)\n\n\n                      Lesson 15:                Solve word problems to determine perimeter with given side lengths.   200\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 202 (problem-set) ---\nA STORY OF UNITS                                                                           Lesson 15 Problem Set 3 7\n\n\nName                                                                                            Date\n\n1. Mrs. Kozlow put a border around a 5-foot by 6-foot rectangular bulletin board. How many feet of border\n   did Mrs. Kozlow use?\n\n\n2. Jason built a model of the Pentagon for a social studies project. He made each outside wall\n   33 centimeters long. What is the perimeter of Jason’s model pentagon?\n\n\n3. The Holmes family plants a rectangular 8-yard by 9-yard vegetable garden. How many yards of fencing do\n   they need to put a fence around the garden?\n\n\n                       Lesson 15:                Solve word problems to determine perimeter with given side lengths.   201\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 203 (problem-set) ---\nA STORY OF UNITS                                                                           Lesson 15 Problem Set 3 7\n\n\n4. Marion paints a 5-pointed star on her bedroom wall. Each side of the star is 18 inches long. What is the\n   perimeter of the star?\n\n\n5. The soccer team jogs around the outside of the soccer field twice to warm up. The rectangular field\n   measures 60 yards by 100 yards. What is the total number of yards the team jogs?\n\n\n6. Troop 516 makes 3 triangular flags to carry at a parade. They sew ribbon around the outside edges of the\n   flags. The flags’ side lengths each measure 24 inches. How many inches of ribbon does the troop use?\n\n\n                       Lesson 15:                Solve word problems to determine perimeter with given side lengths.   202\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 204 (exit-ticket) ---\nA STORY OF UNITS                                                                              Lesson 15 Exit Ticket 3 7\n\n\nName                                                                                            Date\n\nMarlene ropes off a square section of her yard where she plants grass. One side length of the square\nmeasures 9 yards. What is the total length of rope Marlene uses?\n\n\n                       Lesson 15:                Solve word problems to determine perimeter with given side lengths.   203\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 205 (homework) ---\nA STORY OF UNITS                                                                             Lesson 15 Homework 3 7\n\n\nName                                                                                            Date\n\n1. Miguel glues a ribbon border around the edges of a 5-inch by 8-inch picture to create a frame. What is\n   the total length of ribbon Miguel uses?\n\n\n2. A building at Elmira College has a room shaped like a regular octagon. The length of each side of the\n   room is 5 feet. What is the perimeter of this room?\n\n\n3. Manny fences in a rectangular area for his dog to play in the backyard. The area measures 35 yards by 45\n   yards. What is the total length of fence that Manny uses?\n\n\n                       Lesson 15:                Solve word problems to determine perimeter with given side lengths.   204\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 206 (homework) ---\nA STORY OF UNITS                                                                                Lesson 15 Homework 3 7\n\n\n4. Tyler uses 6 craft sticks to make a hexagon. Each craft stick is 6 inches long. What is the perimeter of\n   Tyler’s hexagon?\n\n\n5. Francis made a rectangular path from her driveway to the porch. The width of the path is 2 feet. The\n   length is 28 feet longer than the width. What is the perimeter of the path?\n\n\n6. The gym teacher uses tape to mark a 4-square court on the gym floor as shown. The outer square has\n   side lengths of 16 feet. What is the total length of tape the teacher uses to mark Square A?\n\n\n                      A                             B\n\n       16 ft\n\n\n                      C                             D\n\n\n                          Lesson 15:                Solve word problems to determine perimeter with given side lengths.   205\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 202,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                           Lesson 15 Problem Set 3 7\n\n\nName                                                                                            Date\n\n1. Mrs. Kozlow put a border around a 5-foot by 6-foot rectangular bulletin board. How many feet of border\n   did Mrs. Kozlow use?\n\n\n2. Jason built a model of the Pentagon for a social studies project. He made each outside wall\n   33 centimeters long. What is the perimeter of Jason’s model pentagon?\n\n\n3. The Holmes family plants a rectangular 8-yard by 9-yard vegetable garden. How many yards of fencing do\n   they need to put a fence around the garden?\n\n\n                       Lesson 15:                Solve word problems to determine perimeter with given side lengths.   201\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 203,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                           Lesson 15 Problem Set 3 7\n\n\n4. Marion paints a 5-pointed star on her bedroom wall. Each side of the star is 18 inches long. What is the\n   perimeter of the star?\n\n\n5. The soccer team jogs around the outside of the soccer field twice to warm up. The rectangular field\n   measures 60 yards by 100 yards. What is the total number of yards the team jogs?\n\n\n6. Troop 516 makes 3 triangular flags to carry at a parade. They sew ribbon around the outside edges of the\n   flags. The flags’ side lengths each measure 24 inches. How many inches of ribbon does the troop use?\n\n\n                       Lesson 15:                Solve word problems to determine perimeter with given side lengths.   202\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 487,
+        "text": "A STORY OF UNITS                                                                               Lesson 15 Answer Key 3 7\n\n\nLesson 15\nPattern Sheet\n              9                                              18                                27                  36\n              45                                             9                                 18                   9\n              27                                             9                                 36                   9\n              45                                             9                                 18                  27\n              18                                             36                                18                  45\n              18                                             9                                 18                  27\n              9                                              27                                18                  27\n              36                                             27                                45                  27\n              36                                             9                                 36                  18\n              36                                             27                                36                  45\n              36                                             45                                9                   45\n              18                                             45                                27                  45\n              36                                             18                                36                  27\n              45                                             27                                18                  36\n              27                                             45                                18                  36\n\n\nProblem Set\n1.    22 ft                                                                    4.    180 in\n2.    165 cm                                                                   5.    640 yd\n3.    34 yd                                                                    6.    216 in\n\n\nExit Ticket\n36 yd\n\n\nHomework\n1.    26 in                                                                    4.    36 in\n2.    40 ft                                                                    5.    64 ft\n3.    160 yd                                                                   6.    32 ft\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                              486\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      }
+    ]
+  }
+}

@@ -10,6 +10,11 @@ import type {
   ProblemVisualSpec
 } from '../lesson-runtime.types';
 import { evaluate } from 'mathjs/number';
+import {
+  M4_TEACHER_OBJECTIVES,
+  m4FunctionalConceptSections,
+  m4TeacherSource
+} from './functional-fidelity';
 
 type ProblemSeed = {
   number: number;
@@ -248,13 +253,16 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
   };
 }
 
-function createM4ProblemVisual(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec {
+function createM4ProblemVisual(problem: ProblemSetCenteredProblem, solved: boolean, lessonNumber: number): ProblemVisualSpec {
   const sections: ProblemVisualSpec['sections'] = [];
   const sourceNote = solved
     ? 'Solved view uses the Module 4 Teacher Edition answer key with authored area visuals and unit checks.'
     : 'Blank view keeps the authored area workspace open with the required figures, dimensions, and response blanks.';
 
-  if (problem.patternBlockCover) {
+  const officialCompositeFigure = m4OfficialCompositeSourceSection(lessonNumber, problem, solved);
+  if (officialCompositeFigure) {
+    sections.push(officialCompositeFigure);
+  } else if (problem.patternBlockCover) {
     sections.push(...m4PatternBlockSections(problem, solved));
   } else if (problem.roomAreas?.length) {
     sections.push(...m4RoomAreaSections(problem, solved));
@@ -268,11 +276,13 @@ function createM4ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
     sections.push(m4OpenWorkspaceSection(problem, solved));
   }
 
-  sections.push({
-    kind: 'equations',
-    label: solved ? 'Solved area work' : 'Student work blanks',
-    lines: solved ? problem.equations : problem.blankEquations?.length ? problem.blankEquations : blankEquationTemplatesFromLines(problem.equations)
-  });
+  if (sections.length <= 1) {
+    sections.push({
+      kind: 'equations',
+      label: solved ? 'Solved area work' : 'Student work blanks',
+      lines: solved ? problem.equations : problem.blankEquations?.length ? problem.blankEquations : blankEquationTemplatesFromLines(problem.equations)
+    });
+  }
 
   sections.push({
     kind: 'note',
@@ -284,6 +294,51 @@ function createM4ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
     title: `Problem ${problem.number}: ${m4VisualTitle(problem, solved)}`,
     sourceNote,
     sections
+  };
+}
+
+function m4OfficialCompositeSourceSection(
+  lessonNumber: number,
+  problem: ProblemSetCenteredProblem,
+  solved: boolean
+): ProblemVisualSpec['sections'][number] | undefined {
+  const source = lessonNumber === 13
+    ? {
+        src: problem.number === 1
+          ? '/source-pages/m4-teacher/page-167.png'
+          : '/source-pages/m4-teacher/page-168.png',
+        imageWidth: 1275,
+        imageHeight: 1650,
+        crop: problem.number === 1
+          ? { x: 75, y: 210, width: 1050, height: 1190 }
+          : problem.number === 2
+          ? { x: 55, y: 0, width: 1120, height: 760 }
+          : { x: 55, y: 745, width: 1120, height: 800 }
+      }
+    : lessonNumber === 14 && problem.number <= 2
+    ? {
+        src: '/source-pages/m4-student/workbook-page-062.png',
+        imageWidth: 850,
+        imageHeight: 1100,
+        crop: problem.number === 1
+          ? { x: 70, y: 155, width: 710, height: 530 }
+          : { x: 70, y: 680, width: 710, height: 300 }
+      }
+    : undefined;
+
+  if (!source) return undefined;
+
+  return {
+    kind: 'source-crop',
+    label: `Official composite-area figure${problem.number === 1 && lessonNumber === 13 ? 's' : ''}`,
+    src: source.src,
+    alt: `Official Module 4 Lesson ${lessonNumber} Problem ${problem.number} composite-area figure`,
+    imageWidth: source.imageWidth,
+    imageHeight: source.imageHeight,
+    crop: source.crop,
+    caption: solved
+      ? 'Use the official figure dimensions with the Teacher Edition answer and area equations below.'
+      : 'Decompose the official figure into rectangles or complete a larger rectangle; record each area step.'
   };
 }
 
@@ -313,23 +368,52 @@ function m4PatternBlockSections(problem: ProblemSetCenteredProblem, solved: bool
     solved ? 'No gaps or overlaps' : 'Trace where blocks meet'
   ]);
 
+  const cropByProblem: Partial<Record<number, { y: number; height: number }>> = {
+    1: { y: 145, height: 300 },
+    2: { y: 430, height: 295 },
+    3: { y: 705, height: 300 }
+  };
+  const crop = cropByProblem[problem.number];
+
+  const officialTargetSection: ProblemVisualSpec['sections'][number] = crop
+    ? {
+        kind: 'source-crop',
+        label: `Official Problem ${problem.number} target outlines`,
+        src: '/source-pages/m4-student/workbook-page-002.png',
+        alt: `Official Module 4 Lesson 1 Problem ${problem.number} pattern-block target outlines`,
+        imageWidth: 850,
+        imageHeight: 1100,
+        crop: { x: 65, y: crop.y, width: 720, height: crop.height },
+        caption: solved
+          ? `Use the official outlines while reviewing the ${cover.unit} count and no-gap/no-overlap rule.`
+          : `Cover these official outlines with ${cover.unit} pattern blocks and draw where the blocks meet.`
+      }
+    : {
+        kind: 'geometry-diagram',
+        label: 'Official rectangle target',
+        diagram: 'rectangle',
+        shapes: [{
+          label: 'Rectangle',
+          shape: 'rectangle',
+          x: 15,
+          y: 20,
+          width: 70,
+          height: 45,
+          valueLabel: solved ? '6 square pattern blocks' : 'Cover without gaps or overlaps',
+          tone: solved ? 'answer' : 'unknown'
+        }],
+        caption: solved
+          ? 'Six same-size square blocks cover the rectangle with no gaps or overlaps.'
+          : 'Cover the rectangle with same-size square blocks, then draw every meeting line.'
+      };
+
   return [
+    officialTargetSection,
     {
       kind: 'data-table',
       label: solved ? `${cover.unit} cover counts` : `${cover.unit} cover workspace`,
       columns: ['Target', 'Official outline', 'Unit count', 'Area rule'],
       rows
-    },
-    {
-      kind: 'array',
-      label: solved ? 'Unit-count model' : 'Pattern-block count workspace',
-      rows: cover.targets.length,
-      columns: solved ? Math.max(1, Math.min(12, Math.max(...cover.targets.map((target) => target.count)))) : 4,
-      item: 'pattern',
-      placeholder: solved ? undefined : '',
-      caption: solved
-        ? 'Each colored tile stands for one same-size pattern block covering the official outline.'
-        : 'Use the official outline, place same-size pattern blocks with no gaps or overlaps, then write the count.'
     }
   ];
 }
@@ -535,39 +619,22 @@ function m4VisualTitle(problem: ProblemSetCenteredProblem, solved: boolean): str
 }
 
 function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
-  const sourcePageImages = teacherEditionLessonPages(seed.teacherEditionBasis);
+  const lessonNumber = Number(seed.title.match(/^Lesson\s+(\d+)/i)?.[1]);
+  const teacherEditionBasis = m4TeacherSource(lessonNumber);
+  const sourcePageImages = teacherEditionLessonPages(teacherEditionBasis);
   const answerKeyImages = teacherEditionAnswerKeyPages(seed.sourceNote);
 
   return {
-    title: seed.title,
+    title: `Lesson ${lessonNumber}: ${M4_TEACHER_OBJECTIVES[lessonNumber]}`,
     concept: seed.concept,
-    teacherEditionBasis: seed.teacherEditionBasis,
+    teacherEditionBasis,
     contrast: seed.contrast,
     summary: seed.summary,
     sourceNote: seed.sourceNote,
     sourcePageImages,
     blankSourcePageImages: sourcePageImages,
     solvedSourcePageImages: [...sourcePageImages, ...answerKeyImages],
-    conceptSections: [
-      {
-        title: '1. Teacher Edition concept',
-        body: seed.concept,
-        teacherSource: seed.teacherEditionBasis,
-        checkpoints: ['Name the unit square or side lengths.', 'Use the workbook figure as the source model.', 'State area answers in square units.']
-      },
-      {
-        title: '2. Problem Set focus',
-        body: 'Blank mode keeps the official Student Workbook prompts and visual scaffolds. Solved mode completes the same items with Teacher Edition answer-key values.',
-        teacherSource: seed.sourceNote,
-        checkpoints: ['Do not replace workbook items with invented problems.', 'Use the answer key for solved values.', 'Check explanations against the source figure.']
-      },
-      {
-        title: '3. Validation focus',
-        body: seed.contrast,
-        teacherSource: 'Teacher Edition Student Debrief guidance for the lesson.',
-        checkpoints: ['Check side lengths before multiplying.', 'Check decomposed parts against the whole.', 'Check written units and answer meaning.']
-      }
-    ],
+    conceptSections: m4FunctionalConceptSections(lessonNumber),
     problems: seed.problems.map((problemSeed) => {
       const centeredProblem = makeProblem({
         ...problemSeed,
@@ -578,8 +645,8 @@ function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
 
       return {
         ...centeredProblem,
-        blankVisual: createM4ProblemVisual(centeredProblem, false),
-        solvedVisual: createM4ProblemVisual(centeredProblem, true)
+        blankVisual: createM4ProblemVisual(centeredProblem, false, lessonNumber),
+        solvedVisual: createM4ProblemVisual(centeredProblem, true, lessonNumber)
       };
     })
   };

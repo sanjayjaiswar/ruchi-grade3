@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m4-l10",
+  "moduleId": "m4",
+  "lessonNumber": 10,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+    "teacherEditionBytes": 10725683,
+    "lessonPdfPages": {
+      "start": 127,
+      "end": 137
+    },
+    "problemSetPdfPages": [
+      132,
+      133
+    ],
+    "exitTicketPdfPages": [
+      134
+    ],
+    "homeworkPdfPages": [
+      135,
+      136
+    ],
+    "answerKeyPdfPages": [
+      226
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m4-student/workbook-page-044.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m4-teacher/page-132.png",
+      "/source-pages/m4-teacher/page-133.png",
+      "/source-pages/m4-teacher/page-226.png"
+    ]
+  },
+  "objective": "Apply the distributive property as a strategy to find the total area of a large rectangle by adding two products.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "Materials: (S) Personal white board, square centimeter tiles, tiling (Template)\n\nStudents start with the tiling template (the partially shaded rectangle\nshown on the right) in their personal white boards.                                                                  Tiling Template with Sample Work\n\n     T:   (Project the tiling template.) There are 3 rectangles we will                                                                  6 cm\n          focus on: the large rectangle (trace its boundary line with your\n          finger), the shaded rectangle (trace its boundary with your\n          finger), and the unshaded rectangle (trace it).                                                              5 cm\n                                                                                                                                                       5×6\n     T:   Use square centimeter tiles to find the area of the large\n          rectangle. (Allow students time to work.) What is the area of\n          the large rectangle?\n                                                                                                                       3 cm                            3×6\n     S:   48 square centimeters!\n     T:   Use square centimeter tiles to find the side lengths of the\n          shaded rectangle. (Allow students time to work.) What are                                                                (5 × 6) + (3 × 6)\n          the side lengths?\n                                                                                                                                   = 30 + 18\n     S:   5 centimeters and 6 centimeters!\n                                                                                                                                   = 48\n\n\n                         Lesson 10:                 Apply the distributive property as a strategy to find the total area of a                            127\n                                                    large rectangle by adding two products.\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                             Lesson 10 3 4\n\n\n     T:   Label the side lengths. (Allow students time to label the side lengths.) What multiplication\n          expression can you use to find the area of the shaded rectangle?\n     S:   5 × 6.\n     T:   Write that expression next to the shaded rectangle. (Allow students time to write the expression.)\n          What side length do we already know for the unshaded rectangle?\n     S:   6 centimeters!\n     T:   Use square centimeter tiles to find the other side length of the unshaded rectangle. (Allow students\n          time to work.) What is the other side length?\n     S:   3 centimeters!\n     T:   Label the side length. (Allow students time to label the side length.) What multiplication expression\n          can you use to find the area of the unshaded rectangle?\n     S:   3 × 6.\n     T:   Write that expression next to the unshaded rectangle. (Allow students time to write the\n          expression.) How can we use these two expressions to help us find the area of the large rectangle?\n     S:   We can add them!  The area of the shaded rectangle plus the area of the unshaded rectangle\n          equals the area of the large rectangle.\n     T:   Write a number sentence on your board to show this.\n     S:   (Write (5 × 6) + (3 × 6).)\n     T:   Read your number sentence to a partner, and then find its value. (Allow students time to solve.)\n          What is the area of the large rectangle?\n     S:   48 square centimeters!\n     T:   Is that the answer you got when you tiled the large rectangle?\n     S:   Yes!\n     T:   Write the value of the length of the large rectangle as an addition expression.\nMP.7\n     S:   (Write 5 + 3.)\n     T:   What will you multiply by to find the area?\n     S:   6.\n     T:   Write that in your expression. Where should we put parentheses?\n     S:   Around 5 + 3 because we need to add first to find the side length; then, we can multiply.\n     T:   Add the parentheses to your expression. What is 5 + 3?\n     S:   8.                                                                 Distributive Property Expressions\n     T:   What is the new expression?\n                                                                                  8×6\n     S:   8 × 6.\n     T:   What is the area?                                                       (5 + 3) × 6\n     S:   48 square centimeters!\n     T:   Is that the same answer we just found?                                  (5 × 6) + (3 × 6)\n     S:   Yes!\n\n\n                        Lesson 10:                 Apply the distributive property as a strategy to find the total area of a                 128\n                                                   large rectangle by adding two products.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 10 3 4\n\n\n       T:   (Record distributive property expressions as shown on previous page.) How are these three\n            expressions related?\n       S:   They all show the area of the large rectangle.  Oh look, they show the break apart and distribute\nMP.7        strategy!  Yeah, they show that the side length 8 is broken apart into 5 plus 3. Then, 5 and 3 are\n            multiplied by the other side length, 6.\n       T:   Discuss with a partner how the large rectangle on your personal white board also shows the break\n            apart and distribute strategy.\n       S:   (Discuss.)\n Repeat the process with the following possible suggestions,                                                                   NOTES ON\n providing pictures of rectangles with grid lines:\n                                                                                                                               MULTIPLE MEANS\n           A 15 by 8 rectangle. (Students can partition as (10 + 5) × 8.                                                      OF ACTION AND\n            This helps students see that this strategy is helpful when they                                                    EXPRESSION:\n            cannot multiply the side lengths because they do not know                                              Consider directing students who may\n            these facts.)                                                                                          not complete the Problem Set within\n           An 18 by 9 rectangle. (Students can decompose as double                                                the allotted time to Problem 2 for\n            9 × 9 or (10 + 8) × 9.)                                                                                valuable application and\n       T:   We broke apart the 18 by 9 rectangle into two 9 by 9                                                   demonstration of understanding of\n                                                                                                                   today’s objective. Offer planning and\n            rectangles. What other ways could we break apart this\n                                                                                                                   strategy development support to\n            rectangle?\n                                                                                                                   learners, if needed. Model a think-\n       S:   I would do 10 by 9 and 8 by 9 rectangles.                                                              aloud with two or more possibilities,\n       T:   Explain to a partner the process you use to decide how                                                 reason about the selection, and solve.\n            to break apart a side length.\n       S:   I look for facts I know.  I try to find a way to\n            make a 5 or 10 because they’re easy facts.",
+    "fluencyPracticeText": " Group Counting 3.OA.1                                  (3 minutes)\n Find the Unknown Factor 3.OA.4                         (5 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally changing the direction of the count.\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\nFind the Unknown Factor (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity anticipates finding all possible side lengths of rectangles with areas of 12, 24, 36,\n48, and 72 square units in Lesson 11.\n    T:   (Write 4 ×     = 12.) Find the unknown factor, and say the equation.\n    S:   4 × 3 = 12.\nContinue with the following possible sequence: 6 ×                              = 12, 2 ×             = 12, and 3 ×                = 12.\n    T:   (Write 8 ×     = 24.) Copy my equation on your personal white board, and fill in the unknown factor.\n    S:   (Write 8 × 3 = 24.)\n\n\n                        Lesson 10:                  Apply the distributive property as a strategy to find the total area of a                  126\n                                                    large rectangle by adding two products.\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                                   Lesson 10 3 4\n\n\nContinue with the following possible sequence:\n                                                                                                                             A NOTE ON\n6×        = 24      3×       = 24                       6×    = 36          9×          = 36\n                                                                                                                             12 AS A FACTOR:\n 4×       = 24      4×       = 36                       8×    = 72          8×          = 48\n                                                                                                                 The suggested sequence for this\n 9×       = 72      6×       = 48                       2×    = 24        12 ×          = 24                     fluency activity helps students solve\n12 ×      = 36    12 ×       = 48                  12 ×       = 72          3×          = 36                     number sentences with 12 as a factor.\n                                                                                                                 While some students might be fluent\n 4×       = 48      6×       = 72                       3×    = 72                                               with these facts, others might rely on\n                                                                                                                 the distributive property to write true\n                                                                                                                 equations. The expectation is for\n                                                                                                                 students to become familiar with 12 as\n                                                                                                                 a factor since these equations will be",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\n Problem Set within the allotted 10 minutes. For some\n classes, it may be appropriate to modify the assignment by\n specifying which problems they work on first. Some\n problems do not specify a method for solving. Students\n should solve these problems using the RDW approach\n used for Application Problems.",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Project the tiling template.) There are 3 rectangles we will 6 cm focus on: the large rectangle (trace its boundary line with your finger), the shaded rectangle (trace its boundary with your finger), and the unshaded rectangle (trace it). 5 cm 5×6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use square centimeter tiles to find the area of the large rectangle. (Allow students time to work.) What is the area of the large rectangle? 3 cm 3×6"
+      },
+      {
+        "speaker": "students",
+        "text": "48 square centimeters!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use square centimeter tiles to find the side lengths of the shaded rectangle. (Allow students time to work.) What are (5 × 6) + (3 × 6) the side lengths? = 30 + 18"
+      },
+      {
+        "speaker": "students",
+        "text": "5 centimeters and 6 centimeters! = 48 large rectangle by adding two products. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 10 3 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label the side lengths. (Allow students time to label the side lengths.) What multiplication expression can you use to find the area of the shaded rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "5 × 6."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write that expression next to the shaded rectangle. (Allow students time to write the expression.) What side length do we already know for the unshaded rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "6 centimeters!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use square centimeter tiles to find the other side length of the unshaded rectangle. (Allow students time to work.) What is the other side length?"
+      },
+      {
+        "speaker": "students",
+        "text": "3 centimeters!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label the side length. (Allow students time to label the side length.) What multiplication expression can you use to find the area of the unshaded rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "3 × 6."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write that expression next to the unshaded rectangle. (Allow students time to write the expression.) How can we use these two expressions to help us find the area of the large rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "We can add them!  The area of the shaded rectangle plus the area of the unshaded rectangle equals the area of the large rectangle."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a number sentence on your board to show this."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write (5 × 6) + (3 × 6).)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Read your number sentence to a partner, and then find its value. (Allow students time to solve.) What is the area of the large rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "48 square centimeters!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is that the answer you got when you tiled the large rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the value of the length of the large rectangle as an addition expression. MP.7"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 5 + 3.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What will you multiply by to find the area?"
+      },
+      {
+        "speaker": "students",
+        "text": "6."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write that in your expression. Where should we put parentheses?"
+      },
+      {
+        "speaker": "students",
+        "text": "Around 5 + 3 because we need to add first to find the side length; then, we can multiply."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Add the parentheses to your expression. What is 5 + 3?"
+      },
+      {
+        "speaker": "students",
+        "text": "8. Distributive Property Expressions"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the new expression? 8×6"
+      },
+      {
+        "speaker": "students",
+        "text": "8 × 6."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the area? (5 + 3) × 6"
+      },
+      {
+        "speaker": "students",
+        "text": "48 square centimeters!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is that the same answer we just found? (5 × 6) + (3 × 6)"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes! large rectangle by adding two products. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 10 3 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Record distributive property expressions as shown on previous page.) How are these three expressions related?"
+      },
+      {
+        "speaker": "students",
+        "text": "They all show the area of the large rectangle.  Oh look, they show the break apart and distribute MP.7 strategy!  Yeah, they show that the side length 8 is broken apart into 5 plus 3. Then, 5 and 3 are multiplied by the other side length, 6."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Discuss with a partner how the large rectangle on your personal white board also shows the break apart and distribute strategy."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.) Repeat the process with the following possible suggestions, NOTES ON providing pictures of rectangles with grid lines: MULTIPLE MEANS  A 15 by 8 rectangle. (Students can partition as (10 + 5) × 8. OF ACTION AND This helps students see that this strategy is helpful when they EXPRESSION: cannot multiply the side lengths because they do not know Consider directing students who may these facts.) not complete the Problem Set within  An 18 by 9 rectangle. (Students can decompose as double the allotted time to Problem 2 for 9 × 9 or (10 + 8) × 9.) valuable application and"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We broke apart the 18 by 9 rectangle into two 9 by 9 demonstration of understanding of today’s objective. Offer planning and rectangles. What other ways could we break apart this strategy development support to rectangle? learners, if needed. Model a think-"
+      },
+      {
+        "speaker": "students",
+        "text": "I would do 10 by 9 and 8 by 9 rectangles. aloud with two or more possibilities,"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Explain to a partner the process you use to decide how reason about the selection, and solve. to break apart a side length."
+      },
+      {
+        "speaker": "students",
+        "text": "I look for facts I know.  I try to find a way to make a 5 or 10 because they’re easy facts."
+      }
+    ],
+    "teacherPrompts": [
+      "(Project the tiling template.) There are 3 rectangles we will 6 cm focus on: the large rectangle (trace its boundary line with your finger), the shaded rectangle (trace its boundary with your finger), and the unshaded rectangle (trace it). 5 cm 5×6",
+      "Use square centimeter tiles to find the area of the large rectangle. (Allow students time to work.) What is the area of the large rectangle? 3 cm 3×6",
+      "Use square centimeter tiles to find the side lengths of the shaded rectangle. (Allow students time to work.) What are (5 × 6) + (3 × 6) the side lengths? = 30 + 18",
+      "Label the side lengths. (Allow students time to label the side lengths.) What multiplication expression can you use to find the area of the shaded rectangle?",
+      "Write that expression next to the shaded rectangle. (Allow students time to write the expression.) What side length do we already know for the unshaded rectangle?",
+      "Use square centimeter tiles to find the other side length of the unshaded rectangle. (Allow students time to work.) What is the other side length?",
+      "Label the side length. (Allow students time to label the side length.) What multiplication expression can you use to find the area of the unshaded rectangle?",
+      "Write that expression next to the unshaded rectangle. (Allow students time to write the expression.) How can we use these two expressions to help us find the area of the large rectangle?",
+      "Write a number sentence on your board to show this.",
+      "Read your number sentence to a partner, and then find its value. (Allow students time to solve.) What is the area of the large rectangle?",
+      "Is that the answer you got when you tiled the large rectangle?",
+      "Write the value of the length of the large rectangle as an addition expression. MP.7",
+      "What will you multiply by to find the area?",
+      "Write that in your expression. Where should we put parentheses?",
+      "Add the parentheses to your expression. What is 5 + 3?",
+      "What is the new expression? 8×6",
+      "What is the area? (5 + 3) × 6",
+      "Is that the same answer we just found? (5 × 6) + (3 × 6)",
+      "(Record distributive property expressions as shown on previous page.) How are these three expressions related?",
+      "Discuss with a partner how the large rectangle on your personal white board also shows the break apart and distribute strategy.",
+      "We broke apart the 18 by 9 rectangle into two 9 by 9 demonstration of understanding of today’s objective. Offer planning and rectangles. What other ways could we break apart this strategy development support to rectangle? learners, if needed. Model a think-",
+      "Explain to a partner the process you use to decide how reason about the selection, and solve. to break apart a side length."
+    ],
+    "debriefPrompt": "How is the rectangle in Problem 1(a) similar to the rectangle you tiled in today’s lesson? How is it different?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Label the side lengths of the shaded and unshaded rectangles when needed. Then, find the total area of the large rectangle by adding the areas of the two smaller rectangles. a. b. 4 12 × 4 = (____ + 2) × 4 = (____ × 4) + (2 × 4) = ____ + 8 = ____ Area: ____ square units 8 × 7 = (5 + 3) × 7 = (5 × 7) + (3 × 7) = ____ + ____ = ____ Area: ____ square units c. d. 6 × 13 = 6 × (____ + 3) = (6 ×____) + (6 × 3) = ____ + ____ 8 × 12 = 8 × (____ + ____) = ____ = (8 × ____) + (8 × ____) Area: ____ square units = ____ + ____ = ____ Area: ____ square units large rectangle by adding two products. Vince imagines 1 more row of eight to find the total area of a 9 × 8 rectangle. Explain how this could help him solve 9 × 8. 3. Break the 15 × 5 rectangle into 2 rectangles by shading one smaller rectangle within it. Then, find the sum of the areas of the 2 smaller rectangles and show how it relates to the total area. Explain your thinking. large rectangle by adding two products.",
+        "equations": [
+          "12 × 4",
+          "____ + 2",
+          "____ × 4",
+          "2 × 4"
+        ]
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                       Lesson 10 Problem Set 3 4\n\n\nName                                                                                                             Date\n\n1.    Label the side lengths of the shaded and unshaded rectangles when needed. Then, find the total area of\n      the large rectangle by adding the areas of the two smaller rectangles.\n\n      a.                                                                          b.                4\n                         7\n\n\n      5\n                                                                                                                     12 × 4 = (______ + 2) × 4\n                                                                                                                                = (______ × 4) + (2 × 4)\n                                                                                                                                = ______ + 8\n      3\n                                                                                                                                = ______\n                                                                                                                        Area: ______ square units\n           8 × 7 = (5 + 3) × 7\n                 = (5 × 7) + (3 × 7)\n                                                                                   2\n                 = ______ + ______\n                 = ______\n            Area: ______ square units\n c.                                                                                d.\n\n\n6\n\n\n              6 × 13 = 6 × (______ + 3)\n                      = (6 ×______) + (6 × 3)\n                      = ______ + ______                                                                 8 × 12 = 8 × (______ + ______)\n\n                      = ______                                                                                     = (8 × ______) + (8 × ______)\n\n                 Area: ______ square units                                                                         = ______ + ______\n                                                                                                                   = ______\n                                                                                                            Area: ______ square units\n\n\n                             Lesson 10:                 Apply the distributive property as a strategy to find the total area of a                          131\n                                                        large rectangle by adding two products.\n                             This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                             G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                   Lesson 10 Problem Set 3 4\n\n\n2.   Vince imagines 1 more row of eight to find the total area of a 9 × 8 rectangle. Explain how this could help\n     him solve 9 × 8.\n\n\n3.   Break the 15 × 5 rectangle into 2 rectangles by shading one smaller rectangle within it. Then, find the\n     sum of the areas of the 2 smaller rectangles and show how it relates to the total area. Explain your\n     thinking.\n\n\n                        Lesson 10:                 Apply the distributive property as a strategy to find the total area of a      132\n                                                   large rectangle by adding two products.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    a. 35, 21; 56; 56\n      b. 10; 10; 10; 40; 48; 48\n      c. 10, 3; 10; 10; 60, 18; 78; 78\n      d. 8, 10, 2; 10, 2; 10, 2; 80, 16; 96; 96\n2.    Answers will vary.\n3.    75 sq units; answers will vary.",
+    "answerKeyText": "A STORY OF UNITS                                                                                         Lesson 10 Answer Key 3 4\n\n\nLesson 10\nProblem Set\n1.    a. 35, 21; 56; 56\n      b. 10; 10; 10; 40; 48; 48\n      c. 10, 3; 10; 10; 60, 18; 78; 78\n      d. 8, 10, 2; 10, 2; 10, 2; 80, 16; 96; 96\n2.    Answers will vary.\n3.    75 sq units; answers will vary.\n\n\nExit Ticket\n1.    8, 5, 2; 5, 2; 5, 2; 40, 16; 56; 56\n2.    9, 10, 3; 10, 3; 9, 10, 9, 3; 90, 27; 117; 117\n\n\nHomework\n1.    a. 40, 32; 72; 72\n      b. 10; 10; 10; 50; 60; 60\n      c. 10, 3; 10; 10; 70, 21; 91; 91\n      d. 9, 10, 2; 10, 2; 10, 2; 90, 18; 108; 108\n2.    Answers will vary.\n3.    Rectangle shaded; 64 sq units; answers will vary.\n\n\n                        Module 4:                  Multiplication and Area                                                          225\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "number-bond",
+      "ruler-or-length",
+      "area-model",
+      "geometry-diagram",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "2. Vince imagines 1 more row of eight to find the total area of a 9 × 8 rectangle. Explain how this could help"
+      ],
+      "number-bond": [
+        "S: They all show the area of the large rectangle.  Oh look, they show the break apart and distribute",
+        " An 18 by 9 rectangle. (Students can decompose as double the allotted time to Problem 2 for",
+        "rectangles. What other ways could we break apart this",
+        "to break apart a side length."
+      ],
+      "ruler-or-length": [
+        "Materials: (S) Personal white board, square centimeter tiles, tiling (Template)",
+        "T: Use square centimeter tiles to find the area of the large",
+        "S: 48 square centimeters!",
+        "T: Use square centimeter tiles to find the side lengths of the",
+        "the side lengths?",
+        "S: 5 centimeters and 6 centimeters!",
+        "T: Label the side lengths. (Allow students time to label the side lengths.) What multiplication",
+        "What side length do we already know for the unshaded rectangle?"
+      ],
+      "area-model": [
+        "48, and 72 square units in Lesson 11.",
+        "Area: ______ square units",
+        "Area: ______ square units",
+        "Area: ______ square units = ______ + ______",
+        "Area: ______ square units"
+      ],
+      "geometry-diagram": [
+        "Apply the distributive property as a strategy to find the total area of a large rectangle by adding two products.",
+        "Students start with the tiling template (the partially shaded rectangle",
+        "T: (Project the tiling template.) There are 3 rectangles we will 6 cm",
+        "focus on: the large rectangle (trace its boundary line with your",
+        "finger), the shaded rectangle (trace its boundary with your",
+        "finger), and the unshaded rectangle (trace it). 5 cm",
+        "rectangle. (Allow students time to work.) What is the area of",
+        "the large rectangle?"
+      ],
+      "money-model": [
+        "Materials: (S) Personal white board, square centimeter tiles, tiling (Template)",
+        "T: Use square centimeter tiles to find the area of the large",
+        "S: 48 square centimeters!",
+        "T: Use square centimeter tiles to find the side lengths of the",
+        "S: 5 centimeters and 6 centimeters!",
+        "S: 6 centimeters!",
+        "T: Use square centimeter tiles to find the other side length of the unshaded rectangle. (Allow students",
+        "S: 3 centimeters!"
+      ],
+      "picture-or-drawing": [
+        "Students start with the tiling template (the partially shaded rectangle",
+        "finger), the shaded rectangle (trace its boundary with your",
+        "finger), and the unshaded rectangle (trace it). 5 cm",
+        "shaded rectangle. (Allow students time to work.) What are (5 × 6) + (3 × 6)",
+        "expression can you use to find the area of the shaded rectangle?",
+        "T: Write that expression next to the shaded rectangle. (Allow students time to write the expression.)",
+        "What side length do we already know for the unshaded rectangle?",
+        "T: Use square centimeter tiles to find the other side length of the unshaded rectangle. (Allow students"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Project the tiling template.) There are 3 rectangles we will 6 cm focus on: the large rectangle (trace its boundary line with your finger), the shaded rectangle (trace its boundary with your finger), and the unshaded rectangle (trace it). 5 cm 5×6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use square centimeter tiles to find the side lengths of the shaded rectangle. (Allow students time to work.) What are (5 × 6) + (3 × 6) the side lengths? = 30 + 18"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label the side lengths. (Allow students time to label the side lengths.) What multiplication expression can you use to find the area of the shaded rectangle?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write that expression next to the shaded rectangle. (Allow students time to write the expression.) What side length do we already know for the unshaded rectangle?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use square centimeter tiles to find the other side length of the unshaded rectangle. (Allow students time to work.) What is the other side length?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label the side length. (Allow students time to label the side length.) What multiplication expression can you use to find the area of the unshaded rectangle?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write that expression next to the unshaded rectangle. (Allow students time to write the expression.) How can we use these two expressions to help us find the area of the large rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "We can add them!  The area of the shaded rectangle plus the area of the unshaded rectangle equals the area of the large rectangle."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a number sentence on your board to show this."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write (5 × 6) + (3 × 6).)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Read your number sentence to a partner, and then find its value. (Allow students time to solve.) What is the area of the large rectangle?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the value of the length of the large rectangle as an addition expression. MP.7"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 5 + 3.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write that in your expression. Where should we put parentheses?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Record distributive property expressions as shown on previous page.) How are these three expressions related?"
+      },
+      {
+        "speaker": "students",
+        "text": "They all show the area of the large rectangle.  Oh look, they show the break apart and distribute MP.7 strategy!  Yeah, they show that the side length 8 is broken apart into 5 plus 3. Then, 5 and 3 are multiplied by the other side length, 6."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Discuss with a partner how the large rectangle on your personal white board also shows the break apart and distribute strategy."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.) Repeat the process with the following possible suggestions, NOTES ON providing pictures of rectangles with grid lines: MULTIPLE MEANS  A 15 by 8 rectangle. (Students can partition as (10 + 5) × 8. OF ACTION AND This helps students see that this strategy is helpful when they EXPRESSION: cannot multiply the side lengths because they do not know Consider directing students who may these facts.) not complete the Problem Set within  An 18 by 9 rectangle. (Students can decompose as double the allotted time to Problem 2 for 9 × 9 or (10 + 8) × 9.) valuable application and"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We broke apart the 18 by 9 rectangle into two 9 by 9 demonstration of understanding of today’s objective. Offer planning and rectangles. What other ways could we break apart this strategy development support to rectangle? learners, if needed. Model a think-"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Explain to a partner the process you use to decide how reason about the selection, and solve. to break apart a side length."
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 127 (debrief) ---\nA STORY OF UNITS                                                                                                                Lesson 10 3 4\n\n\nLesson 10\nObjective: Apply the distributive property as a strategy to find the total\narea of a large rectangle by adding two products.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (8 minutes)\n Application Problem               (5 minutes)\n Concept Development               (37 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (8 minutes)\n\n Group Counting 3.OA.1                                  (3 minutes)\n Find the Unknown Factor 3.OA.4                         (5 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally changing the direction of the count.\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\nFind the Unknown Factor (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity anticipates finding all possible side lengths of rectangles with areas of 12, 24, 36,\n48, and 72 square units in Lesson 11.\n    T:   (Write 4 ×     = 12.) Find the unknown factor, and say the equation.\n    S:   4 × 3 = 12.\nContinue with the following possible sequence: 6 ×                              = 12, 2 ×             = 12, and 3 ×                = 12.\n    T:   (Write 8 ×     = 24.) Copy my equation on your personal white board, and fill in the unknown factor.\n    S:   (Write 8 × 3 = 24.)\n\n\n                        Lesson 10:                  Apply the distributive property as a strategy to find the total area of a                  126\n                                                    large rectangle by adding two products.\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 128 (concept-development) ---\nA STORY OF UNITS                                                                                                                   Lesson 10 3 4\n\n\nContinue with the following possible sequence:\n                                                                                                                             A NOTE ON\n6×        = 24      3×       = 24                       6×    = 36          9×          = 36\n                                                                                                                             12 AS A FACTOR:\n 4×       = 24      4×       = 36                       8×    = 72          8×          = 48\n                                                                                                                 The suggested sequence for this\n 9×       = 72      6×       = 48                       2×    = 24        12 ×          = 24                     fluency activity helps students solve\n12 ×      = 36    12 ×       = 48                  12 ×       = 72          3×          = 36                     number sentences with 12 as a factor.\n                                                                                                                 While some students might be fluent\n 4×       = 48      6×       = 72                       3×    = 72                                               with these facts, others might rely on\n                                                                                                                 the distributive property to write true\n                                                                                                                 equations. The expectation is for\n                                                                                                                 students to become familiar with 12 as\n                                                                                                                 a factor since these equations will be\nApplication Problem (5 minutes)                                                                                  seen in Lesson 11.\n\n\nSonya folds a 6-inch by 6-inch piece of paper into 4 equal parts\n(shown below). What is the area of 1 of the parts?\n\n\nNote: This problem reviews the concept of finding area.\n\n\nConcept Development (37 minutes)\n\nMaterials: (S) Personal white board, square centimeter tiles, tiling (Template)\n\nStudents start with the tiling template (the partially shaded rectangle\nshown on the right) in their personal white boards.                                                                  Tiling Template with Sample Work\n\n     T:   (Project the tiling template.) There are 3 rectangles we will                                                                  6 cm\n          focus on: the large rectangle (trace its boundary line with your\n          finger), the shaded rectangle (trace its boundary with your\n          finger), and the unshaded rectangle (trace it).                                                              5 cm\n                                                                                                                                                       5×6\n     T:   Use square centimeter tiles to find the area of the large\n          rectangle. (Allow students time to work.) What is the area of\n          the large rectangle?\n                                                                                                                       3 cm                            3×6\n     S:   48 square centimeters!\n     T:   Use square centimeter tiles to find the side lengths of the\n          shaded rectangle. (Allow students time to work.) What are                                                                (5 × 6) + (3 × 6)\n          the side lengths?\n                                                                                                                                   = 30 + 18\n     S:   5 centimeters and 6 centimeters!\n                                                                                                                                   = 48\n\n\n                         Lesson 10:                 Apply the distributive property as a strategy to find the total area of a                            127\n                                                    large rectangle by adding two products.\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 129 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                             Lesson 10 3 4\n\n\n     T:   Label the side lengths. (Allow students time to label the side lengths.) What multiplication\n          expression can you use to find the area of the shaded rectangle?\n     S:   5 × 6.\n     T:   Write that expression next to the shaded rectangle. (Allow students time to write the expression.)\n          What side length do we already know for the unshaded rectangle?\n     S:   6 centimeters!\n     T:   Use square centimeter tiles to find the other side length of the unshaded rectangle. (Allow students\n          time to work.) What is the other side length?\n     S:   3 centimeters!\n     T:   Label the side length. (Allow students time to label the side length.) What multiplication expression\n          can you use to find the area of the unshaded rectangle?\n     S:   3 × 6.\n     T:   Write that expression next to the unshaded rectangle. (Allow students time to write the\n          expression.) How can we use these two expressions to help us find the area of the large rectangle?\n     S:   We can add them!  The area of the shaded rectangle plus the area of the unshaded rectangle\n          equals the area of the large rectangle.\n     T:   Write a number sentence on your board to show this.\n     S:   (Write (5 × 6) + (3 × 6).)\n     T:   Read your number sentence to a partner, and then find its value. (Allow students time to solve.)\n          What is the area of the large rectangle?\n     S:   48 square centimeters!\n     T:   Is that the answer you got when you tiled the large rectangle?\n     S:   Yes!\n     T:   Write the value of the length of the large rectangle as an addition expression.\nMP.7\n     S:   (Write 5 + 3.)\n     T:   What will you multiply by to find the area?\n     S:   6.\n     T:   Write that in your expression. Where should we put parentheses?\n     S:   Around 5 + 3 because we need to add first to find the side length; then, we can multiply.\n     T:   Add the parentheses to your expression. What is 5 + 3?\n     S:   8.                                                                 Distributive Property Expressions\n     T:   What is the new expression?\n                                                                                  8×6\n     S:   8 × 6.\n     T:   What is the area?                                                       (5 + 3) × 6\n     S:   48 square centimeters!\n     T:   Is that the same answer we just found?                                  (5 × 6) + (3 × 6)\n     S:   Yes!\n\n\n                        Lesson 10:                 Apply the distributive property as a strategy to find the total area of a                 128\n                                                   large rectangle by adding two products.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 130 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 10 3 4\n\n\n       T:   (Record distributive property expressions as shown on previous page.) How are these three\n            expressions related?\n       S:   They all show the area of the large rectangle.  Oh look, they show the break apart and distribute\nMP.7        strategy!  Yeah, they show that the side length 8 is broken apart into 5 plus 3. Then, 5 and 3 are\n            multiplied by the other side length, 6.\n       T:   Discuss with a partner how the large rectangle on your personal white board also shows the break\n            apart and distribute strategy.\n       S:   (Discuss.)\n Repeat the process with the following possible suggestions,                                                                   NOTES ON\n providing pictures of rectangles with grid lines:\n                                                                                                                               MULTIPLE MEANS\n           A 15 by 8 rectangle. (Students can partition as (10 + 5) × 8.                                                      OF ACTION AND\n            This helps students see that this strategy is helpful when they                                                    EXPRESSION:\n            cannot multiply the side lengths because they do not know                                              Consider directing students who may\n            these facts.)                                                                                          not complete the Problem Set within\n           An 18 by 9 rectangle. (Students can decompose as double                                                the allotted time to Problem 2 for\n            9 × 9 or (10 + 8) × 9.)                                                                                valuable application and\n       T:   We broke apart the 18 by 9 rectangle into two 9 by 9                                                   demonstration of understanding of\n                                                                                                                   today’s objective. Offer planning and\n            rectangles. What other ways could we break apart this\n                                                                                                                   strategy development support to\n            rectangle?\n                                                                                                                   learners, if needed. Model a think-\n       S:   I would do 10 by 9 and 8 by 9 rectangles.                                                              aloud with two or more possibilities,\n       T:   Explain to a partner the process you use to decide how                                                 reason about the selection, and solve.\n            to break apart a side length.\n       S:   I look for facts I know.  I try to find a way to\n            make a 5 or 10 because they’re easy facts.\n\n Problem Set (10 minutes)\n Students should do their personal best to complete the\n Problem Set within the allotted 10 minutes. For some\n classes, it may be appropriate to modify the assignment by\n specifying which problems they work on first. Some\n problems do not specify a method for solving. Students\n should solve these problems using the RDW approach\n used for Application Problems.\n\n\n  Student Debrief (10 minutes)\n\n Lesson Objective: Apply the distributive property as a\n strategy to find the total area of a large rectangle by\n adding two products.\n The Student Debrief is intended to invite reflection and\n active processing of the total lesson experience.\n\n\n                           Lesson 10:                 Apply the distributive property as a strategy to find the total area of a                             129\n                                                      large rectangle by adding two products.\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 131 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 10 3 4\n\n\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        How is the rectangle in Problem 1(a) similar to\n         the rectangle you tiled in today’s lesson? How is\n         it different?\n        What are the side lengths of the large rectangle\n         in Problem 1(c)? Can you multiply these side\n         lengths to find the area? How does the break\n         apart and distribute strategy help you?\n        Without multiplying the side lengths of the large\n         rectangle in Problem 1(d), how could you check\n         to make sure your answer is right? (Students\n         might say count the squares or skip-count by\n         eight 12 times.) Discuss with a partner which\n         strategy is most efficient—either counting\n         squares, skip-counting, or using the break apart\n         and distribute strategy.\n        How was setting up and solving Problem 2 different from the other problems?\n        What side length did you break apart in Problem 3, and how did you break it apart? Why?\n        With a partner, list as many possibilities as you can for how you could use the break apart and\n         distribute strategy to find the area of a rectangle with side lengths of 20 and 7. Can we break it into\n         3 parts if we want to? Which one of your possibilities would you use to solve this problem? Why?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that were presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 10:                 Apply the distributive property as a strategy to find the total area of a                 130\n                                                   large rectangle by adding two products.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 132 (problem-set) ---\nA STORY OF UNITS                                                                                       Lesson 10 Problem Set 3 4\n\n\nName                                                                                                             Date\n\n1.    Label the side lengths of the shaded and unshaded rectangles when needed. Then, find the total area of\n      the large rectangle by adding the areas of the two smaller rectangles.\n\n      a.                                                                          b.                4\n                         7\n\n\n      5\n                                                                                                                     12 × 4 = (______ + 2) × 4\n                                                                                                                                = (______ × 4) + (2 × 4)\n                                                                                                                                = ______ + 8\n      3\n                                                                                                                                = ______\n                                                                                                                        Area: ______ square units\n           8 × 7 = (5 + 3) × 7\n                 = (5 × 7) + (3 × 7)\n                                                                                   2\n                 = ______ + ______\n                 = ______\n            Area: ______ square units\n c.                                                                                d.\n\n\n6\n\n\n              6 × 13 = 6 × (______ + 3)\n                      = (6 ×______) + (6 × 3)\n                      = ______ + ______                                                                 8 × 12 = 8 × (______ + ______)\n\n                      = ______                                                                                     = (8 × ______) + (8 × ______)\n\n                 Area: ______ square units                                                                         = ______ + ______\n                                                                                                                   = ______\n                                                                                                            Area: ______ square units\n\n\n                             Lesson 10:                 Apply the distributive property as a strategy to find the total area of a                          131\n                                                        large rectangle by adding two products.\n                             This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                             G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 133 (problem-set) ---\nA STORY OF UNITS                                                                                   Lesson 10 Problem Set 3 4\n\n\n2.   Vince imagines 1 more row of eight to find the total area of a 9 × 8 rectangle. Explain how this could help\n     him solve 9 × 8.\n\n\n3.   Break the 15 × 5 rectangle into 2 rectangles by shading one smaller rectangle within it. Then, find the\n     sum of the areas of the 2 smaller rectangles and show how it relates to the total area. Explain your\n     thinking.\n\n\n                        Lesson 10:                 Apply the distributive property as a strategy to find the total area of a      132\n                                                   large rectangle by adding two products.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 134 (exit-ticket) ---\nA STORY OF UNITS                                                                                        Lesson 10 Exit Ticket 3 4\n\n\nName                                                                                                        Date\n\nLabel the side lengths of the shaded and unshaded rectangles. Then, find the total area of the large rectangle\nby adding the areas of the 2 smaller rectangles.\n\n1.                                                                         2.\n\n\n      8 × 7 = 8 × (______ + ______)\n                                                                                9 × 13 = 9 × (______+______)\n            = (8 ×______) + (8 ×______)\n                                                                                            = (______ × ______) + (______×______)\n            = ______ + ______\n                                                                                            = ______ + ______\n            = ______\n                                                                                            = ______\n       Area: ______ square units\n                                                                                    Area: ______ square units\n\n\n                        Lesson 10:                 Apply the distributive property as a strategy to find the total area of a        133\n                                                   large rectangle by adding two products.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 135 (homework) ---\nA STORY OF UNITS                                                                                              Lesson 10 Homework 3 4\n\n\nName                                                                                                                Date\n1.   Label the side lengths of the shaded and unshaded rectangles. Then, find the total area of the large\n     rectangle by adding the areas of the 2 smaller rectangles.\n\n      a.                                                                                b.                     5\n                                8\n\n\n               5\n\n                                                                                                                                          12 × 5 = (______ + 2) × 5\n                                                                                                                                                = (______ × 5) + (2 × 5)\n               4\n                                                                                                                                                = ______ + 10\n                                                                                                                                                = ______\n\n                   9 × 8 = (5 + 4) × 8                                                                                                     Area: ______ square units\n\n                         = (5 × 8) + (4 × 8)\n                         = ______ + ______                                               2\n\n                         = ______\n                   Area: ______ square units\n      c.                                                                                           d.\n\n\n           7\n\n\n                    7 × 13 = 7 × (______+ 3)\n                           = (7 × ______) + (7 × 3)                                                                9 × 12 = 9 × (______ + ______)\n\n                           = ______ + ______                                                                                 = (9 × ______) + (9 × ______)\n\n                           = ______                                                                                          = ______ + ______\n\n                     Area: ______ square units                                                                               = ______\n                                                                                                                     Area: ______ square units\n\n\n                               Lesson 10:                  Apply the distributive property as a strategy to find the total area of a                          134\n                                                           large rectangle by adding two products.\n                                This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                                G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 136 (homework) ---\nA STORY OF UNITS                                                                                      Lesson 10 Homework 3 4\n\n\n2.   Finn imagines 1 more row of nine to find the total area of 9 × 9 rectangle. Explain how this could help him\n     solve 9 × 9.\n\n\n3.   Shade an area to break the 16 × 4 rectangle into 2 smaller rectangles. Then, find the sum of the areas of\n     the 2 smaller rectangles to find the total area. Explain your thinking.\n\n\n                        Lesson 10:                 Apply the distributive property as a strategy to find the total area of a      135\n                                                   large rectangle by adding two products.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 137 (template) ---\nA STORY OF UNITS                                                                                          Lesson 10 Template 3\n\n\ntiling\n\n\n                       Lesson 10:                 Apply the distributive property as a strategy to find the total area of a          136\n                                                  large rectangle by adding two products.\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 132,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                       Lesson 10 Problem Set 3 4\n\n\nName                                                                                                             Date\n\n1.    Label the side lengths of the shaded and unshaded rectangles when needed. Then, find the total area of\n      the large rectangle by adding the areas of the two smaller rectangles.\n\n      a.                                                                          b.                4\n                         7\n\n\n      5\n                                                                                                                     12 × 4 = (______ + 2) × 4\n                                                                                                                                = (______ × 4) + (2 × 4)\n                                                                                                                                = ______ + 8\n      3\n                                                                                                                                = ______\n                                                                                                                        Area: ______ square units\n           8 × 7 = (5 + 3) × 7\n                 = (5 × 7) + (3 × 7)\n                                                                                   2\n                 = ______ + ______\n                 = ______\n            Area: ______ square units\n c.                                                                                d.\n\n\n6\n\n\n              6 × 13 = 6 × (______ + 3)\n                      = (6 ×______) + (6 × 3)\n                      = ______ + ______                                                                 8 × 12 = 8 × (______ + ______)\n\n                      = ______                                                                                     = (8 × ______) + (8 × ______)\n\n                 Area: ______ square units                                                                         = ______ + ______\n                                                                                                                   = ______\n                                                                                                            Area: ______ square units\n\n\n                             Lesson 10:                 Apply the distributive property as a strategy to find the total area of a                          131\n                                                        large rectangle by adding two products.\n                             This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                             G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 133,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                   Lesson 10 Problem Set 3 4\n\n\n2.   Vince imagines 1 more row of eight to find the total area of a 9 × 8 rectangle. Explain how this could help\n     him solve 9 × 8.\n\n\n3.   Break the 15 × 5 rectangle into 2 rectangles by shading one smaller rectangle within it. Then, find the\n     sum of the areas of the 2 smaller rectangles and show how it relates to the total area. Explain your\n     thinking.\n\n\n                        Lesson 10:                 Apply the distributive property as a strategy to find the total area of a      132\n                                                   large rectangle by adding two products.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 226,
+        "text": "A STORY OF UNITS                                                                                         Lesson 10 Answer Key 3 4\n\n\nLesson 10\nProblem Set\n1.    a. 35, 21; 56; 56\n      b. 10; 10; 10; 40; 48; 48\n      c. 10, 3; 10; 10; 60, 18; 78; 78\n      d. 8, 10, 2; 10, 2; 10, 2; 80, 16; 96; 96\n2.    Answers will vary.\n3.    75 sq units; answers will vary.\n\n\nExit Ticket\n1.    8, 5, 2; 5, 2; 5, 2; 40, 16; 56; 56\n2.    9, 10, 3; 10, 3; 9, 10, 9, 3; 90, 27; 117; 117\n\n\nHomework\n1.    a. 40, 32; 72; 72\n      b. 10; 10; 10; 50; 60; 60\n      c. 10, 3; 10; 10; 70, 21; 91; 91\n      d. 9, 10, 2; 10, 2; 10, 2; 90, 18; 108; 108\n2.    Answers will vary.\n3.    Rectangle shaded; 64 sq units; answers will vary.\n\n\n                        Module 4:                  Multiplication and Area                                                          225\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

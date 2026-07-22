@@ -11,39 +11,11 @@ import type {
   ProblemVisualSpec
 } from '../lesson-runtime.types';
 import { M5_WORKBOOK_PROBLEMS, type M5WorkbookProblem } from './workbook-problems';
-
-const M5_OBJECTIVES: Record<number, string> = {
-  1: 'Specify and partition a whole into equal parts, identifying and counting unit fractions using concrete models.',
-  2: 'Specify and partition a whole into equal parts, identifying and counting unit fractions by folding fraction strips.',
-  3: 'Specify and partition a whole into equal parts, identifying and counting unit fractions by drawing pictorial area models.',
-  4: 'Represent and identify fractional parts of different wholes.',
-  5: 'Partition a whole into equal parts and define the equal parts to identify the unit fraction numerically.',
-  6: 'Build non-unit fractions less than one whole from unit fractions.',
-  7: 'Identify and represent shaded and non-shaded parts of one whole as fractions.',
-  8: 'Represent parts of one whole as fractions with number bonds.',
-  9: 'Build and write fractions greater than one whole using unit fractions.',
-  10: 'Compare unit fractions by reasoning about their size using fraction strips.',
-  11: 'Compare unit fractions with different-sized models representing the whole.',
-  12: 'Specify the corresponding whole when presented with one equal part.',
-  13: 'Identify a shaded fractional part in different ways depending on the designation of the whole.',
-  14: 'Place fractions on a number line with endpoints 0 and 1.',
-  15: 'Place any fraction on a number line with endpoints 0 and 1.',
-  16: 'Place whole number fractions and fractions between whole numbers on the number line.',
-  17: 'Practice placing various fractions on the number line.',
-  18: 'Compare fractions and whole numbers on the number line by reasoning about their distance from 0.',
-  19: 'Understand distance and position on the number line as strategies for comparing fractions.',
-  20: 'Recognize and show that equivalent fractions have the same size, though not necessarily the same shape.',
-  21: 'Recognize and show that equivalent fractions refer to the same point on the number line.',
-  22: 'Generate simple equivalent fractions by using visual fraction models and the number line.',
-  23: 'Generate simple equivalent fractions by using visual fraction models and the number line.',
-  24: 'Express whole numbers as fractions and recognize equivalence with different units.',
-  25: 'Express whole number fractions on the number line when the unit interval is 1.',
-  26: 'Decompose whole number fractions greater than 1 using whole number equivalence with various models.',
-  27: 'Explain equivalence by manipulating units and reasoning about their size.',
-  28: 'Compare fractions with the same numerator pictorially.',
-  29: 'Compare fractions with the same numerator using <, >, or =, and use a model to reason about their size.',
-  30: 'Partition various wholes precisely into equal parts using a number line method.'
-};
+import {
+  M5_TEACHER_OBJECTIVES,
+  m5FunctionalConceptSections,
+  m5TeacherSource
+} from './functional-fidelity';
 
 const DENOMINATOR_WORDS: Array<{ pattern: RegExp; beforePattern: string; value: number }> = [
   { pattern: /\btwelfths?\b/i, beforePattern: 'twelfths?', value: 12 },
@@ -169,15 +141,15 @@ const M5_TEACHER_ANSWER_OVERRIDES: Record<number, Record<number, string>> = {
     11: 'Avanti has not read 5/6 of her book.'
   },
   8: {
-    1: 'Answer key shows 3/2 for the named fraction.',
-    2: 'Number bond showing 2/5 and 3/5 equals 1 whole; draw the second visual model.',
-    3: 'Number bond showing 4/9 and 5/9 equals 1 whole; draw the second visual model.',
-    4: 'Number bond showing 2/7 and 5/7 equals 1 whole; draw the second visual model.',
+    1: 'Number bond showing 3/5 and 2/5 equals 1 whole; draw a different visual model represented by the same number bond.',
+    2: 'Number bond showing 3/4 and 1/4 equals 1 whole; draw a different visual model represented by the same number bond.',
+    3: 'Number bond showing 3/6 and 3/6 equals 1 whole; draw a different visual model represented by the same number bond.',
+    4: 'Number bond showing 2/9 and 7/9 equals 1 whole; draw a different visual model represented by the same number bond.',
     5: 'a. 3/4 and 1/4 make 1 whole; decompose 3/4 into three units of 1/4. b. 2/3 and 1/3 make 1 whole; decompose 2/3 into two units of 1/3. c. 2/4 and 2/4 make 1 whole; decompose both parts into units of 1/4. d. 2/5 and 3/5 make 1 whole; decompose into units of 1/5.',
     6: 'a. 3/4. b. 3 more hamburgers. c. Draw a number bond showing 3/4 and 1/4 equals 1 whole, decompose 3/4 into three units of 1/4, and draw the second visual model.'
   },
   9: {
-    1: 'a. Answer provided. b. 1/8, 15, 15/8. c. 1/6, 14, 14/6. d. 1/5, 8, 8/5. e. 1/4, 9, 9/4. f. 1/3, 7, 7/3.',
+    1: 'a. Sample: 1/2, 5 units shaded, 5/2. b. 1/8, 15, 15/8. c. 1/6, 14, 14/6. d. 1/5, 8, 8/5. e. 1/4, 9, 9/4. f. 1/3, 7, 7/3.',
     2: 'a. Partition each whole into sixths; shade 8 sixths, 8/6. b. Partition each whole into fourths; shade 7 fourths, 7/4. c. Partition each whole into fifths; shade 6 fifths. d. Partition each whole into halves; shade 5 halves.',
     3: 'Draw 2 equivalent wholes, partition each into 8 equal pieces, and shade 10 pieces. The fraction is 10/8.'
   },
@@ -228,7 +200,7 @@ const M5_TEACHER_ANSWER_OVERRIDES: Record<number, Record<number, string>> = {
     3: 'a. 4 equal parts; label the rope from 0/4 to 4/4. b. 2/4. c. 1/5.'
   },
   16: {
-    1: 'a. Answer provided. b. Partition into thirds; box 3/3 and 6/3. c. Partition into halves; box 4/2, 6/2, and 8/2. d. Partition into fourths; box 12/4, 16/4, and 20/4. e. Partition into thirds; box 18/3, 21/3, 24/3, and 27/3.',
+    1: 'a. Sample halves line: label 0/2, 1/2, 2/2, 3/2, and 4/2; box 0/2, 2/2, and 4/2. b. Partition into thirds; box 3/3 and 6/3. c. Partition into halves; box 4/2, 6/2, and 8/2. d. Partition into fourths; box 12/4, 16/4, and 20/4. e. Partition into thirds; box 18/3, 21/3, 24/3, and 27/3.',
     2: 'Partition into fifths and label the number line; box 0/5, 5/5, and 10/5.',
     3: 'Partition into thirds and label the number line; box 3/3, 6/3, 9/3, and 12/3.',
     4: 'Draw a number line with endpoints 0 and 3, label the wholes, then partition and label the fractional units.'
@@ -241,7 +213,7 @@ const M5_TEACHER_ANSWER_OVERRIDES: Record<number, Record<number, string>> = {
     5: 'Draw a number line from 0 km to 4 km, partitioned into fifths; locate and label 0/5, 20/5, 7/5, and 12/5.'
   },
   18: {
-    1: 'Answer provided.',
+    1: 'Sample: partition the number line into fourths; place 1/4 and 3/4, circle 1/4 as closest to 0, and write 1/4 < 3/4.',
     2: 'Use the number line to compare the given fractions.',
     3: 'Partition into sixths; place 2/6 and 3/6; circle 3/6; write <.',
     4: 'Partition into halves and fourths; place 1/2 and 2/4; circle 2/4; write >.',
@@ -271,8 +243,8 @@ const M5_TEACHER_ANSWER_OVERRIDES: Record<number, Record<number, string>> = {
     5: 'Yes; 1/2 = 2/4 = 4/8. Explanations will vary.'
   },
   22: {
-    1: '2; 8; 16.',
-    2: 'Match 1/2 to 2/4, 2/6 to 1/3, 6/4 to 12/8, and 3/9 to 1/3.',
+    1: 'Match 1/2 to 2/4, 4/6 to 2/3, 3/4 to 6/8, and 3/9 to 1/3.',
+    2: '2; 8; 16.',
     3: 'Explanations will vary.',
     4: '2 sixths; explanations will vary.',
     5: 'Explanations will vary.'
@@ -287,9 +259,9 @@ const M5_TEACHER_ANSWER_OVERRIDES: Record<number, Record<number, string>> = {
   },
   24: {
     1: 'Complete the number bonds and number lines for halves, thirds, fourths, and fifths; rename 0 and 1 as fractions in each unit.',
-    2: 'Circle the fractions equal to 1: 3/3, 4/4, and 5/5.',
-    3: 'Answers will vary.',
-    4: 'No; explanations will vary.'
+    2: '2/2 = 3/3 = 4/4 = 5/5 = 1.',
+    3: 'In every fraction equivalent to 1, the numerator equals the denominator.',
+    4: 'No. Taylor ate 4/4 of one pizza and his brother ate 3/3 of one pizza. Both fractions equal 1 whole pizza.'
   },
   25: {
     1: 'Label the number line 0/1, 1/1, 2/1, 3/1, 4/1, 5/1, and 6/1.',
@@ -298,7 +270,7 @@ const M5_TEACHER_ANSWER_OVERRIDES: Record<number, Record<number, string>> = {
   },
   26: {
     1: 'Halves: complete 0, 0; 2, 2; 4 and the number bonds. Thirds: complete 6, 6; 9, 9; 12, 12 and the number bonds.',
-    2: 'Halves: answer provided. Thirds: 6/3, 9/3, 12/3. Fourths: 8/4, 12/4, 16/4. Sixths: 12/6, 18/6, 24/6.',
+    2: 'Halves sample: 4/2, 6/2, 8/2. Thirds: 6/3, 9/3, 12/3. Fourths: 8/4, 12/4, 16/4. Sixths: 12/6, 18/6, 24/6.',
     3: 'a. Partition a 1-meter wire into fourths; 4 pieces. b. 12 days.',
     4: 'a. Partition 1 pound of food into thirds. b. Partition 4 pounds into thirds; 1. c. 2.'
   },
@@ -320,7 +292,7 @@ const M5_TEACHER_ANSWER_OVERRIDES: Record<number, Record<number, string>> = {
     8: 'Doll B, Doll A, Doll C; draw a picture.'
   },
   29: {
-    1: 'Answer provided.',
+    1: 'Sample: 2/6 < 2/3. The same whole is used, and sixths are smaller units than thirds.',
     2: '3/4 > 3/8.',
     3: '4/4 > 4/6.',
     4: '1/4 < 1/2.',
@@ -350,10 +322,10 @@ const M5_PROBLEM_LIST_OVERRIDES: Record<number, M5WorkbookProblem[]> = {
     { number: 11, prompt: 'Avanti read 1 sixth of her book. What fraction of the book has she not read yet?' }
   ],
   8: [
-    { number: 1, prompt: 'Use the model to name the fraction shown.' },
-    { number: 2, prompt: 'Draw a number bond with 2 parts showing the shaded and unshaded fractions. Draw the second visual model.' },
-    { number: 3, prompt: 'Draw a number bond with 2 parts showing the shaded and unshaded fractions. Draw the second visual model.' },
-    { number: 4, prompt: 'Draw a number bond with 2 parts showing the shaded and unshaded fractions. Draw the second visual model.' },
+    { number: 1, prompt: 'Show a number bond representing the 3/5 shaded and 2/5 unshaded parts of the figure. Draw a different visual model represented by the same number bond.' },
+    { number: 2, prompt: 'Show a number bond representing the 3/4 shaded and 1/4 unshaded parts of the figure. Draw a different visual model represented by the same number bond.' },
+    { number: 3, prompt: 'Show a number bond representing the 3/6 shaded and 3/6 unshaded parts of the figure. Draw a different visual model represented by the same number bond.' },
+    { number: 4, prompt: 'Show a number bond representing the 2/9 shaded and 7/9 unshaded parts of the figure. Draw a different visual model represented by the same number bond.' },
     { number: 5, prompt: 'Draw a number bond with 2 parts showing the shaded and unshaded fractions of each figure. Decompose both parts of the number bond into unit fractions.' },
     { number: 6, prompt: 'The chef put 1/4 of the ground beef on the grill to make one hamburger and put the rest in the refrigerator. Draw a number bond and visual model. What fraction was refrigerated, and how many more same-size hamburgers can he make?' }
   ],
@@ -376,9 +348,9 @@ const M5_PROBLEM_LIST_OVERRIDES: Record<number, M5WorkbookProblem[]> = {
   ],
   24: [
     { number: 1, prompt: 'Complete the number bond as indicated by the fractional unit. Partition the number line, label the fractions, and rename 0 and 1 as fractions of the given unit.' },
-    { number: 2, prompt: 'Circle the fractions equal to 1 whole.' },
-    { number: 3, prompt: 'Write equivalent fractions that name whole numbers.' },
-    { number: 4, prompt: 'Explain whether the given fraction names 1 whole.' }
+    { number: 2, prompt: 'Circle all the fractions in Problem 1 that are equal to 1. Write them in a number sentence beginning with 2/2.' },
+    { number: 3, prompt: 'What pattern do you notice in the fractions that are equivalent to 1?' },
+    { number: 4, prompt: 'Taylor and his little brother each ate a whole small pizza. Taylor\'s pizza was cut in fourths, and his brother\'s was cut in thirds. His brother says Taylor got more because Taylor got 4 pieces and he got only 3. Should he be mad? Explain using words, pictures, or a number line.' }
   ],
   28: [
     { number: 1, prompt: 'Compare 2 fifths and 2 thirds using the models. Circle the larger fraction.' },
@@ -404,11 +376,18 @@ const M5_PROBLEM_LIST_OVERRIDES: Record<number, M5WorkbookProblem[]> = {
 };
 
 const M5_OVERRIDES: Record<number, Record<number, {
+  sourcePrompt?: string;
   fractionModels?: ProblemSetFractionModel[];
   numberLineModels?: ProblemSetNumberLineModel[];
   solvedAnswer?: string;
   quotientMeaning?: string;
 }>> = {
+  8: {
+    1: { fractionModels: [{ label: '3/5 shaded', numerator: 3, denominator: 5 }, { label: '2/5 unshaded', numerator: 2, denominator: 5 }] },
+    2: { fractionModels: [{ label: '3/4 shaded', numerator: 3, denominator: 4 }, { label: '1/4 unshaded', numerator: 1, denominator: 4 }] },
+    3: { fractionModels: [{ label: '3/6 shaded', numerator: 3, denominator: 6 }, { label: '3/6 unshaded', numerator: 3, denominator: 6 }] },
+    4: { fractionModels: [{ label: '2/9 shaded', numerator: 2, denominator: 9 }, { label: '7/9 unshaded', numerator: 7, denominator: 9 }] }
+  },
   2: {
     3: {
       fractionModels: [
@@ -478,6 +457,64 @@ const M5_OVERRIDES: Record<number, Record<number, {
       ],
       solvedAnswer: 'Eric is not correct. 1 fifth is greater than 1 sixth because fifths are larger unit fractions than sixths.',
       quotientMeaning: 'A larger denominator means the same whole has more equal parts, so each unit part is smaller.'
+    }
+  },
+  22: {
+    2: {
+      sourcePrompt: 'Write the missing parts of the equivalent fractions: 1/3 = ____/6, ____/8 = 1/4, and 4/8 = 8/____.',
+      fractionModels: [
+        { label: '1 third', numerator: 1, denominator: 3 },
+        { label: '2 sixths', numerator: 2, denominator: 6 },
+        { label: '2 eighths', numerator: 2, denominator: 8 },
+        { label: '1 fourth', numerator: 1, denominator: 4 },
+        { label: '4 eighths', numerator: 4, denominator: 8 },
+        { label: '8 sixteenths', numerator: 8, denominator: 16 }
+      ]
+    },
+    3: {
+      sourcePrompt: 'Why does it take 2 copies of 1/8 to show the same amount as 1 copy of 1/4? Explain your answer in words and pictures.',
+      fractionModels: [
+        { label: '2 eighths', numerator: 2, denominator: 8 },
+        { label: '1 fourth', numerator: 1, denominator: 4 }
+      ]
+    },
+    4: {
+      sourcePrompt: 'How many sixths does it take to make the same amount as 1/3? Explain your answer in words and pictures.',
+      fractionModels: [
+        { label: '2 sixths', numerator: 2, denominator: 6 },
+        { label: '1 third', numerator: 1, denominator: 3 }
+      ]
+    },
+    5: {
+      fractionModels: [
+        { label: '10 sixths', numerator: 10, denominator: 6 },
+        { label: '5 thirds', numerator: 5, denominator: 3 }
+      ]
+    }
+  },
+  24: {
+    2: {
+      fractionModels: [
+        { label: '2/2', numerator: 2, denominator: 2 },
+        { label: '3/3', numerator: 3, denominator: 3 },
+        { label: '4/4', numerator: 4, denominator: 4 },
+        { label: '5/5', numerator: 5, denominator: 5 }
+      ]
+    },
+    3: {
+      fractionModels: [
+        { label: '2/2', numerator: 2, denominator: 2 },
+        { label: '3/3', numerator: 3, denominator: 3 },
+        { label: '4/4', numerator: 4, denominator: 4 },
+        { label: '5/5', numerator: 5, denominator: 5 }
+      ]
+    },
+    4: {
+      fractionModels: [
+        { label: 'Taylor: 4/4 pizza', numerator: 4, denominator: 4 },
+        { label: 'Brother: 3/3 pizza', numerator: 3, denominator: 3 }
+      ],
+      quotientMeaning: 'Both boys ate one whole same-size pizza even though the wholes were partitioned into different numbers of pieces.'
     }
   },
   14: {
@@ -554,6 +591,15 @@ const M5_OVERRIDES: Record<number, Record<number, {
     }
   },
   18: {
+    1: {
+      numberLineModels: [{
+        label: 'Provided fourths comparison',
+        denominator: 4,
+        tickLabels: ['0', '1/4', '2/4', '3/4', '4/4 = 1'],
+        targetNumerators: [1, 3]
+      }],
+      quotientMeaning: 'On the same fourths number line, 1/4 is closer to 0 than 3/4.'
+    },
     3: {
       numberLineModels: [{
         label: 'Sixths comparison',
@@ -596,6 +642,15 @@ const M5_OVERRIDES: Record<number, Record<number, {
       ],
       solvedAnswer: 'Cristina is correct. Each beaker holds exactly 1 liter, so 1 half liter in Beaker A equals 1 half liter in Beaker B.',
       quotientMeaning: 'Equivalent fractions can have different-looking shapes when the same-size whole and same amount are preserved.'
+    }
+  },
+  29: {
+    1: {
+      fractionModels: [
+        { label: 'provided model: 2 sixths', numerator: 2, denominator: 6 },
+        { label: 'provided model: 2 thirds', numerator: 2, denominator: 3 }
+      ],
+      quotientMeaning: 'Both models use the same-size whole and shade 2 parts; sixths are smaller units than thirds, so 2/6 < 2/3.'
     }
   },
   30: {
@@ -728,7 +783,7 @@ function makeLesson1(): ProblemSetCenteredLesson {
       blankAnswerSentence: 'Shade each beaker to show the named fraction of the full amount.',
       blankWorkspaceLabel: 'Use the fill line near the top as the whole amount.',
       blankVisualType: 'fraction-concrete-template',
-      solvedAnswer: 'Answer provided for 1 half; shade 1 fourth and 1 third of the full beaker amount.',
+      solvedAnswer: 'The first beaker shows the provided 1/2 sample; shade the second beaker to 1/4 and the third beaker to 1/3 of the full amount.',
       equations: ['1 half = 1/2', '1 fourth = 1/4', '1 third = 1/3'],
       knownTotal: 3,
       knownGroupSize: 1,
@@ -873,57 +928,16 @@ function makeLesson1(): ProblemSetCenteredLesson {
   ];
 
   return {
-    title: 'Lesson 1 concept: partition concrete wholes into equal parts',
+    title: `Lesson 1: ${M5_TEACHER_OBJECTIVES[1]}`,
     concept: 'The Teacher Edition builds fractional units from concrete wholes: a 12-inch strip is partitioned into halves, fourths, thirds, and sixths, and identical cups are used to partition a whole amount of liquid.',
-    teacherEditionBasis: 'Module 5 Teacher Edition Lesson 1, printed pages 12-18.',
+    teacherEditionBasis: m5TeacherSource(1),
     contrast: 'The whole must be fixed before a fraction is named: the whole strip, the full beaker amount at the fill line, the whole string cheese, the whole sheet of paper, or the 12-inch wood strip.',
     summary: 'A unit fraction is one equal part of a named whole. Lesson 1 uses measurement, shading, and estimated partitions to connect concrete models to fraction names.',
     sourceNote: 'Teacher Edition Lesson 1 Concept Development and Problem Set, printed pages 12-18. Problem Set pages 16-17 supply the five official problem prompts and diagrams.',
     sourcePageImages,
     blankSourcePageImages: sourcePageImages,
     solvedSourcePageImages: [...sourcePageImages, ...answerKeyImages],
-    conceptSections: [
-      {
-        title: '1. Partition 12-inch strips',
-        body: 'Students measure a 12-inch strip, mark 6 inches to make halves, mark 3 and 9 inches to make fourths, then use a second strip marked at 4 and 8 inches for thirds and at 2, 6, and 10 inches for sixths.',
-        teacherSource: 'Teacher Edition Lesson 1 Concept Development, Part 1, printed pages 12-13.',
-        checkpoints: [
-          'The strip is 12 inches long.',
-          'Halves, fourths, thirds, and sixths are made by measurement marks.',
-          'Students count unit fractions such as 1 half, 2 halves and 1 third, 2 thirds, 3 thirds.'
-        ]
-      },
-      {
-        title: '2. Partition liquid with cups',
-        body: 'The Teacher Edition demonstration uses two identical cups: fill the right cup to a mark about one fourth up, pour into the left cup, mark the top, repeat, and use the left cup marks to show half and whole amounts.',
-        teacherSource: 'Teacher Edition Lesson 1 Concept Development, Part 2, printed page 13.',
-        checkpoints: [
-          'The cups are identical.',
-          'The repeated pour creates equal amounts.',
-          'The middle mark is checked as half of the whole liquid amount.'
-        ]
-      },
-      {
-        title: '3. Problem Set sequence',
-        body: 'The Problem Set asks students to shade beakers, name shaded string-cheese fractions, draw estimated partitions, generalize cut lines for paper rectangles, and solve a 12-inch strip of wood problem.',
-        teacherSource: 'Teacher Edition Lesson 1 Problem Set, printed pages 16-17.',
-        checkpoints: [
-          'Problem 1 uses beakers labeled 1 half, 1 fourth, and 1 third.',
-          'Problem 2 uses string-cheese rectangles partitioned into 3, 6, and 4 equal pieces.',
-          'Problems 3-5 focus on partition lines and a 12-inch whole cut into 6-inch pieces.'
-        ]
-      },
-      {
-        title: '4. Debrief checks',
-        body: 'The Debrief asks students to use fraction vocabulary, notice that smaller equal parts result when the same whole is divided into more parts, explain thirds and sixths, and compare solution strategies for the wood-strip problem.',
-        teacherSource: 'Teacher Edition Lesson 1 Student Debrief, printed pages 14-15.',
-        checkpoints: [
-          'Use the words fractional units, equal parts, fraction, whole, halves, fourths, thirds, and sixths.',
-          'The whole in Problem 2 never changes.',
-          'Problem 5 should be checked with more than one solution strategy when possible.'
-        ]
-      }
-    ],
+    conceptSections: m5FunctionalConceptSections(1),
     problems: problems.map((problem) => {
       const centeredProblem = {
         ...problem,
@@ -934,15 +948,15 @@ function makeLesson1(): ProblemSetCenteredLesson {
 
       return {
         ...centeredProblem,
-        blankVisual: createM5ProblemVisual(centeredProblem, false),
-        solvedVisual: createM5ProblemVisual(centeredProblem, true)
+        blankVisual: createM5ProblemVisual(centeredProblem, false, 1),
+        solvedVisual: createM5ProblemVisual(centeredProblem, true, 1)
       };
     })
   };
 }
 
 function makeLesson30(): ProblemSetCenteredLesson {
-  const sourcePageImages = pageImages(pageRange(351, 355));
+  const sourcePageImages = pageImages(pageRange(352, 355));
   const answerKeyImages = M5_ANSWER_KEY_SOURCE_PAGES[30] ?? [];
   const problem: ProblemSetCenteredProblem = {
     number: 1,
@@ -985,64 +999,23 @@ function makeLesson30(): ProblemSetCenteredLesson {
   };
 
   return {
-    title: 'Lesson 30 concept: partition a strip precisely with a lined-paper number line',
+    title: `Lesson 30: ${M5_TEACHER_OBJECTIVES[30]}`,
     concept: 'The Teacher Edition teaches a ruler-free transfer method: make equal fractional units on lined paper, extend those marks, then angle a strip from 0 to 1 so the guide lines mark equal parts on the strip.',
-    teacherEditionBasis: 'Module 5 Teacher Edition Lesson 30, printed pages 351-355.',
+    teacherEditionBasis: m5TeacherSource(30),
     contrast: 'The equal parts come from the lined-paper number line first; the red strip is marked only after it is angled from 0 to 1.',
     summary: 'A precise number line can be used as a transfer tool. If the guide marks on the paper are equal, the marks transferred to the angled strip partition that strip into equal fractional parts.',
     sourceNote: 'Teacher Edition pages 353-354 show Steps 1-5 with lined paper, vertical extensions, the red strip, and the no-sheet Problem Set challenge. Student Workbook page 120 is a written homework reflection, not a Problem Set sheet.',
     sourcePageImages,
     blankSourcePageImages: sourcePageImages,
     solvedSourcePageImages: [...sourcePageImages, ...answerKeyImages],
-    conceptSections: [
-      {
-        title: '1. Build the base number line',
-        body: 'The Teacher Edition turns the paper so the margin is horizontal, draws a number line on top of the margin, and marks the 0 endpoint.',
-        teacherSource: 'Teacher Edition Lesson 30 Concept Development, Step 1, printed page 353.',
-        checkpoints: [
-          'The margin is horizontal.',
-          'The number line begins at 0.',
-          'Students discuss how lined paper can make equal parts.'
-        ]
-      },
-      {
-        title: '2. Use paper spaces as equal units',
-        body: 'The Teacher Edition uses vertical paper lines as the measuring tool and makes each third 5 spaces long before labeling the number line from 0 to 1.',
-        teacherSource: 'Teacher Edition Lesson 30 Concept Development, Step 2, printed page 353.',
-        checkpoints: [
-          'Each third is 5 paper spaces long.',
-          'The labels are 0, 1/3, 2/3, and 1.',
-          'Precision comes from equal paper spaces.'
-        ]
-      },
-      {
-        title: '3. Transfer marks to the red strip',
-        body: 'The Teacher Edition extends the equal-part marks up the paper, angles the red strip from the 0 endpoint to the line at 1, and marks the strip where the vertical guide lines cross it.',
-        teacherSource: 'Teacher Edition Lesson 30 Concept Development, Steps 3-5, printed pages 353-354.',
-        checkpoints: [
-          'Guide lines rise from each third mark.',
-          'The strip left end touches 0.',
-          'The strip right end touches the line at 1.'
-        ]
-      },
-      {
-        title: '4. Problem Set challenge',
-        body: 'The Teacher Edition states that there is no Problem Set sheet. Cooperative groups use the same process to mark red strips into halves, fourths, fifths, sevenths, ninths, and tenths.',
-        teacherSource: 'Teacher Edition Lesson 30 Problem Set, printed page 354.',
-        checkpoints: [
-          'Use the same process, not a new strategy.',
-          'Try challenging units such as fifths, sevenths, ninths, and tenths.',
-          'Verify that the new strip parts are equal.'
-        ]
-      }
-    ],
+    conceptSections: m5FunctionalConceptSections(30),
     problems: [{
       ...problem,
       sourcePageImages: problem.sourcePageImages ?? sourcePageImages,
       blankSourcePageImages: problem.blankSourcePageImages ?? sourcePageImages,
       solvedSourcePageImages: problem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages],
-      blankVisual: createM5ProblemVisual(problem, false),
-      solvedVisual: createM5ProblemVisual(problem, true)
+      blankVisual: createM5ProblemVisual(problem, false, 30),
+      solvedVisual: createM5ProblemVisual(problem, true, 30)
     }]
   };
 }
@@ -1052,7 +1025,10 @@ function sourceForLesson(lessonNumber: number) {
 }
 
 function usesNumberLine(lessonNumber: number, prompt = ''): boolean {
-  return lessonNumber >= 14 && lessonNumber <= 26 || lessonNumber === 30 || /number line/i.test(prompt);
+  return lessonNumber >= 14 && lessonNumber <= 19
+    || lessonNumber >= 21 && lessonNumber <= 26
+    || lessonNumber === 30
+    || /number line/i.test(prompt);
 }
 
 function inferDenominator(prompt: string, lessonNumber: number): number {
@@ -1140,7 +1116,7 @@ function fractionsFromPrompt(prompt: string): ProblemSetFractionModel[] {
     if (denominator >= 2 && denominator <= 12) {
       models.push({
         label: `${numerator}/${denominator}`,
-        numerator: Math.max(0, Math.min(numerator, denominator)),
+        numerator: Math.max(0, numerator),
         denominator
       });
     }
@@ -1292,10 +1268,11 @@ function m5FallbackFractionModels(lessonNumber: number, problemNumber: number, p
 function makeProblem(lessonNumber: number, sourceProblem: M5WorkbookProblem & { equations?: string[] }): ProblemSetCenteredProblem {
   const override = M5_OVERRIDES[lessonNumber]?.[sourceProblem.number];
   const teacherAnswer = M5_TEACHER_ANSWER_OVERRIDES[lessonNumber]?.[sourceProblem.number];
-  const modelSourceText = `${sourceProblem.prompt} ${teacherAnswer ?? override?.solvedAnswer ?? ''}`;
-  const denominator = inferDenominator(sourceProblem.prompt, lessonNumber);
-  const numerator = inferNumerator(sourceProblem.prompt, denominator);
-  const animationType: ProblemSetAnimationType = usesNumberLine(lessonNumber, sourceProblem.prompt)
+  const sourcePrompt = override?.sourcePrompt ?? sourceProblem.prompt;
+  const modelSourceText = `${sourcePrompt} ${teacherAnswer ?? override?.solvedAnswer ?? ''}`;
+  const denominator = inferDenominator(sourcePrompt, lessonNumber);
+  const numerator = inferNumerator(sourcePrompt, denominator);
+  const animationType: ProblemSetAnimationType = usesNumberLine(lessonNumber, sourcePrompt)
     ? 'number-line-model'
     : 'fraction-strip-model';
   const blankVisualType: ProblemSetBlankVisualType = animationType === 'number-line-model'
@@ -1304,25 +1281,25 @@ function makeProblem(lessonNumber: number, sourceProblem: M5WorkbookProblem & { 
   const model = modelName(animationType);
   const parsedFractionModels = fractionsFromPrompt(modelSourceText);
   const fractionModels = override?.fractionModels
-    ?? (parsedFractionModels.length ? parsedFractionModels : m5FallbackFractionModels(lessonNumber, sourceProblem.number, sourceProblem.prompt));
+    ?? (parsedFractionModels.length ? parsedFractionModels : m5FallbackFractionModels(lessonNumber, sourceProblem.number, sourcePrompt));
   const numberLineModels = override?.numberLineModels ?? numberLineModelsFromPrompt(modelSourceText, lessonNumber, fractionModels);
   const equations = sourceProblem.equations?.length
     ? sourceProblem.equations
     : fractionModels.map((fractionModel) => `${fractionModel.label} = ${fractionModel.numerator}/${fractionModel.denominator}`);
-  const solvedAnswer = teacherAnswer ?? override?.solvedAnswer ?? solvedAnswerFromModels(sourceProblem.prompt, fractionModels, numberLineModels);
+  const solvedAnswer = teacherAnswer ?? override?.solvedAnswer ?? solvedAnswerFromModels(sourcePrompt, fractionModels, numberLineModels);
 
   return {
     number: sourceProblem.number,
-    sourcePrompt: sourceProblem.prompt,
+    sourcePrompt,
     fractionModels,
     numberLineModels,
     blankPrompts: [
-      sourceSpecificBlankWorkspaceLabel(sourceProblem.number, sourceProblem.prompt, model),
+      sourceSpecificBlankWorkspaceLabel(sourceProblem.number, sourcePrompt, model),
       'Name the whole before naming or comparing the fraction.'
     ],
     blankEquations: blankEquationTemplates(equations),
     blankAnswerSentence: 'Answer in a complete sentence with the fraction unit and whole named.',
-    blankWorkspaceLabel: sourceSpecificBlankWorkspaceLabel(sourceProblem.number, sourceProblem.prompt, model),
+    blankWorkspaceLabel: sourceSpecificBlankWorkspaceLabel(sourceProblem.number, sourcePrompt, model),
     blankVisualType,
     solvedAnswer,
     equations,
@@ -1345,29 +1322,58 @@ function makeProblem(lessonNumber: number, sourceProblem: M5WorkbookProblem & { 
   };
 }
 
-function createM5ProblemVisual(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec {
+function createM5ProblemVisual(problem: ProblemSetCenteredProblem, solved: boolean, lessonNumber: number): ProblemVisualSpec {
   const sections: ProblemVisualSpec['sections'] = [];
   const sourceNote = solved
     ? 'Solved view uses the Module 5 Teacher Edition answer key with authored fraction visuals and whole/unit checks.'
     : 'Blank view keeps the authored fraction workspace open with the whole, equal-part structure, labels, and response blanks.';
 
-  if (problem.concreteFractionModel) {
+  const officialIllustration = m5OfficialIllustrationSection(lessonNumber, problem, solved);
+  const lesson22Section = lessonNumber === 22 ? m5Lesson22FractionSection(problem.number, solved) : undefined;
+  if (officialIllustration || lesson22Section) {
+    if (officialIllustration) sections.push(officialIllustration);
+    if (lesson22Section) sections.push(lesson22Section);
+    if (lessonNumber === 8 && problem.fractionModels?.length) {
+      sections.push({
+        kind: 'card-grid',
+        label: solved ? 'Solved shaded and unshaded parts' : 'Number-bond parts to complete',
+        cards: problem.fractionModels.map((model) => ({
+          label: model.label,
+          sections: [m5FractionTapeSection(model, solved)]
+        }))
+      });
+    }
+  } else if (problem.concreteFractionModel) {
     sections.push(...m5ConcreteFractionSections(problem.concreteFractionModel, solved));
   } else if (problem.paperPartitionModel) {
     sections.push(...m5PaperPartitionSections(problem.paperPartitionModel, solved));
   } else if (problem.numberLineModels?.length) {
-    sections.push(...problem.numberLineModels.map((model) => m5NumberLineSection(model, solved)));
+    sections.push(problem.numberLineModels.length === 1
+      ? m5NumberLineSection(problem.numberLineModels[0], solved)
+      : {
+          kind: 'card-grid',
+          label: solved ? 'Solved source number lines' : 'Source number-line workspaces',
+          cards: problem.numberLineModels.map((model) => ({ label: model.label, sections: [m5NumberLineSection(model, solved)] }))
+        });
   } else if (problem.fractionModels?.length) {
-    sections.push(...problem.fractionModels.map((model) => m5FractionTapeSection(model, solved)));
+    sections.push(problem.fractionModels.length === 1
+      ? m5FractionTapeSection(problem.fractionModels[0], solved)
+      : {
+          kind: 'card-grid',
+          label: solved ? 'Solved source fraction models' : 'Source fraction workspaces',
+          cards: problem.fractionModels.map((model) => ({ label: model.label, sections: [m5FractionTapeSection(model, solved)] }))
+        });
   } else {
     sections.push(m5OpenFractionWorkspace(problem, solved));
   }
 
-  sections.push({
-    kind: 'equations',
-    label: solved ? 'Solved fraction work' : 'Student fraction blanks',
-    lines: solved ? problem.equations : problem.blankEquations?.length ? problem.blankEquations : blankEquationTemplates(problem.equations) ?? ['____ = ____']
-  });
+  if (sections.length <= 1) {
+    sections.push({
+      kind: 'equations',
+      label: solved ? 'Solved fraction work' : 'Student fraction blanks',
+      lines: solved ? problem.equations : problem.blankEquations?.length ? problem.blankEquations : blankEquationTemplates(problem.equations) ?? ['____ = ____']
+    });
+  }
 
   sections.push({
     kind: 'note',
@@ -1376,9 +1382,180 @@ function createM5ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
   });
 
   return {
-    title: `Problem ${problem.number}: ${m5VisualTitle(problem)}`,
+    title: lessonNumber === 22
+      ? `Problem ${problem.number}: equivalent fraction figures and bars`
+      : `Problem ${problem.number}: ${m5VisualTitle(problem)}`,
     sourceNote,
     sections
+  };
+}
+
+function m5Lesson22FractionSection(
+  problemNumber: number,
+  solved: boolean
+): ProblemVisualSpec['sections'][number] | undefined {
+  const strip = (label: string, numerator: number, denominator: number): ProblemVisualSpec['sections'][number] => ({
+    kind: 'fraction-strip',
+    label,
+    wholeLabel: 'same-size whole',
+    numerator,
+    denominator,
+    unitLabel: `1/${denominator}`,
+    caption: solved ? `${numerator}/${denominator}` : `Partition into ${denominator} equal parts, then shade the requested amount.`
+  });
+  const cardGrid = (
+    label: string,
+    models: Array<{ label: string; numerator: number; denominator: number }>
+  ): ProblemVisualSpec['sections'][number] => ({
+    kind: 'card-grid',
+    label,
+    cards: models.map((model) => ({
+      label: model.label,
+      sections: [strip(model.label, model.numerator, model.denominator)]
+    }))
+  });
+
+  if (problemNumber === 1) {
+    return cardGrid(solved ? 'Equivalent amounts matched' : 'Match figures with the same shaded amount', [
+      { label: '1/2', numerator: 1, denominator: 2 },
+      { label: '2/4', numerator: 2, denominator: 4 },
+      { label: '4/6', numerator: 4, denominator: 6 },
+      { label: '2/3', numerator: 2, denominator: 3 },
+      { label: '3/4', numerator: 3, denominator: 4 },
+      { label: '6/8', numerator: 6, denominator: 8 },
+      { label: '3/9', numerator: 3, denominator: 9 },
+      { label: '1/3', numerator: 1, denominator: 3 }
+    ]);
+  }
+  if (problemNumber === 2) {
+    return cardGrid(solved ? 'Completed equivalent fraction pairs' : 'Use the paired bars to fill the missing numbers', [
+      { label: '1/3', numerator: 1, denominator: 3 },
+      { label: '2/6', numerator: 2, denominator: 6 },
+      { label: '2/8', numerator: 2, denominator: 8 },
+      { label: '1/4', numerator: 1, denominator: 4 },
+      { label: '4/8', numerator: 4, denominator: 8 },
+      { label: '8/16', numerator: 8, denominator: 16 }
+    ]);
+  }
+  if (problemNumber === 3) {
+    return cardGrid('Two eighths cover the same amount as one fourth', [
+      { label: '2 copies of 1/8', numerator: 2, denominator: 8 },
+      { label: '1 copy of 1/4', numerator: 1, denominator: 4 }
+    ]);
+  }
+  if (problemNumber === 4) {
+    return cardGrid('Two sixths cover the same amount as one third', [
+      { label: '2 copies of 1/6', numerator: 2, denominator: 6 },
+      { label: '1 copy of 1/3', numerator: 1, denominator: 3 }
+    ]);
+  }
+  if (problemNumber === 5) {
+    return cardGrid('Ten sixths and five thirds each cover one whole plus two thirds', [
+      { label: 'first 6 sixths', numerator: 6, denominator: 6 },
+      { label: 'remaining 4 sixths', numerator: 4, denominator: 6 },
+      { label: 'first 3 thirds', numerator: 3, denominator: 3 },
+      { label: 'remaining 2 thirds', numerator: 2, denominator: 3 }
+    ]);
+  }
+  return undefined;
+}
+
+function m5OfficialIllustrationSection(
+  lessonNumber: number,
+  problem: ProblemSetCenteredProblem,
+  solved: boolean
+): ProblemVisualSpec['sections'][number] | undefined {
+  type CropSource = { src: string; imageWidth: number; imageHeight: number; crop: { x: number; y: number; width: number; height: number } };
+  let source: CropSource | undefined;
+
+  if (lessonNumber === 5 && problem.number === 1) {
+    source = { src: '/source-pages/m5-student/workbook-page-017.png', imageWidth: 850, imageHeight: 1100, crop: { x: 60, y: 155, width: 700, height: 800 } };
+  }
+
+  if (lessonNumber === 8 && problem.number >= 1 && problem.number <= 4) {
+    const crops: Record<number, CropSource['crop']> = {
+      1: { x: 100, y: 470, width: 1050, height: 270 },
+      2: { x: 100, y: 700, width: 1050, height: 300 },
+      3: { x: 100, y: 950, width: 1050, height: 300 },
+      4: { x: 100, y: 1180, width: 1050, height: 280 }
+    };
+    source = {
+      src: '/source-pages/m5-teacher/page-93.png',
+      imageWidth: 1275,
+      imageHeight: 1650,
+      crop: crops[problem.number]
+    };
+  }
+
+  if (lessonNumber === 11) {
+    const firstPageCrops: Record<number, CropSource['crop']> = {
+      1: { x: 60, y: 290, width: 700, height: 170 },
+      2: { x: 60, y: 445, width: 700, height: 180 },
+      3: { x: 60, y: 610, width: 700, height: 170 },
+      4: { x: 60, y: 755, width: 700, height: 190 }
+    };
+    const secondPageCrops: Record<number, CropSource['crop']> = {
+      5: { x: 110, y: 175, width: 1040, height: 235 },
+      6: { x: 110, y: 395, width: 1040, height: 225 },
+      7: { x: 110, y: 600, width: 1040, height: 235 },
+      8: { x: 110, y: 830, width: 1040, height: 430 }
+    };
+    if (firstPageCrops[problem.number]) {
+      source = { src: '/source-pages/m5-student/workbook-page-041.png', imageWidth: 850, imageHeight: 1100, crop: firstPageCrops[problem.number] };
+    } else if (secondPageCrops[problem.number]) {
+      source = { src: '/source-pages/m5-teacher/page-130.png', imageWidth: 1275, imageHeight: 1650, crop: secondPageCrops[problem.number] };
+    } else if (problem.number === 9) {
+      source = { src: '/source-pages/m5-teacher/page-131.png', imageWidth: 1275, imageHeight: 1650, crop: { x: 75, y: 0, width: 1100, height: 560 } };
+    } else if (problem.number === 10) {
+      source = { src: '/source-pages/m5-teacher/page-131.png', imageWidth: 1275, imageHeight: 1650, crop: { x: 75, y: 545, width: 1100, height: 620 } };
+    }
+  }
+
+  if (lessonNumber === 13) {
+    const firstPageCrops: Record<number, CropSource['crop']> = {
+      1: { x: 60, y: 205, width: 700, height: 170 },
+      2: { x: 60, y: 355, width: 700, height: 180 },
+      3: { x: 60, y: 520, width: 700, height: 165 },
+      4: { x: 60, y: 670, width: 700, height: 140 },
+      5: { x: 60, y: 795, width: 700, height: 165 }
+    };
+    if (firstPageCrops[problem.number]) {
+      source = { src: '/source-pages/m5-student/workbook-page-052.png', imageWidth: 850, imageHeight: 1100, crop: firstPageCrops[problem.number] };
+    } else if (problem.number === 6) {
+      source = { src: '/source-pages/m5-teacher/page-154.png', imageWidth: 1275, imageHeight: 1650, crop: { x: 100, y: 175, width: 980, height: 820 } };
+    } else if (problem.number === 7) {
+      source = { src: '/source-pages/m5-teacher/page-154.png', imageWidth: 1275, imageHeight: 1650, crop: { x: 100, y: 970, width: 980, height: 430 } };
+    }
+  }
+
+  if (lessonNumber === 22 && problem.number === 1) {
+    source = {
+      src: '/source-pages/m5-teacher/page-260.png',
+      imageWidth: 1275,
+      imageHeight: 1650,
+      crop: { x: 110, y: 250, width: 1040, height: 1180 }
+    };
+  } else if (lessonNumber === 22 && problem.number === 2) {
+    source = {
+      src: '/source-pages/m5-teacher/page-261.png',
+      imageWidth: 1275,
+      imageHeight: 1650,
+      crop: { x: 150, y: 170, width: 980, height: 440 }
+    };
+  }
+
+  if (!source) return undefined;
+  return {
+    kind: 'source-crop',
+    label: `Official Lesson ${lessonNumber} Problem ${problem.number} model`,
+    src: source.src,
+    alt: `Official Module 5 Lesson ${lessonNumber} Problem ${problem.number} fraction model`,
+    imageWidth: source.imageWidth,
+    imageHeight: source.imageHeight,
+    crop: source.crop,
+    caption: solved
+      ? 'Use this official model with the Teacher Edition answer and fraction work below.'
+      : 'Complete the official model without changing the designated whole, equal parts, or printed relationship.'
   };
 }
 
@@ -1504,17 +1681,18 @@ function m5NumberLineTicks(model: ProblemSetNumberLineModel, solved: boolean): A
 
 function m5FractionTapeSection(model: ProblemSetFractionModel, solved: boolean): ProblemVisualSpec['sections'][number] {
   const denominator = boundedM5Count(model.denominator, 1, 12);
-  const numerator = boundedM5Count(model.numerator, 0, denominator);
+  const numerator = boundedM5Count(model.numerator, 0, denominator * 12);
+  const wholeCount = Math.max(1, Math.ceil(numerator / denominator));
   return {
     kind: 'fraction-strip',
     label: solved ? `Solved ${model.label}` : `Blank ${model.label} fraction model`,
-    wholeLabel: '1 whole',
+    wholeLabel: wholeCount === 1 ? '1 whole' : `${wholeCount} equal wholes`,
     numerator,
     denominator,
     unitLabel: `1/${denominator}`,
     caption: solved
-      ? `${numerator}/${denominator} is ${numerator} of ${denominator} equal parts.`
-      : `Partition the same whole into ${denominator} equal parts before naming or shading the fraction.`
+      ? `${numerator}/${denominator} is ${numerator} ${numerator === 1 ? 'unit fraction' : 'unit fractions'} of size 1/${denominator}.`
+      : `Partition each same-size whole into ${denominator} equal parts before naming or shading the fraction.`
   };
 }
 
@@ -1622,7 +1800,7 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
   }
 
   const source = sourceForLesson(lessonNumber);
-  const objective = M5_OBJECTIVES[lessonNumber];
+  const objective = M5_TEACHER_OBJECTIVES[lessonNumber];
   const sourceProblems = M5_PROBLEM_LIST_OVERRIDES[lessonNumber] ?? (M5_WORKBOOK_PROBLEMS[lessonNumber]?.length
     ? M5_WORKBOOK_PROBLEMS[lessonNumber]
     : (source?.problems ?? []));
@@ -1642,52 +1820,21 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
       sourcePageImages: centeredProblem.sourcePageImages ?? sourcePageImages,
       blankSourcePageImages: centeredProblem.blankSourcePageImages ?? sourcePageImages,
       solvedSourcePageImages: centeredProblem.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages],
-      blankVisual: createM5ProblemVisual(centeredProblem, false),
-      solvedVisual: createM5ProblemVisual(centeredProblem, true)
+      blankVisual: createM5ProblemVisual(centeredProblem, false, lessonNumber),
+      solvedVisual: createM5ProblemVisual(centeredProblem, true, lessonNumber)
     };
   });
   return {
-    title: `Lesson ${lessonNumber} concept: ${objective}`,
+    title: `Lesson ${lessonNumber}: ${objective}`,
     concept: conceptCopy.concept,
-    teacherEditionBasis: source?.teacherEditionSource ?? `Module 5 Teacher Edition, Lesson ${lessonNumber}.`,
+    teacherEditionBasis: m5TeacherSource(lessonNumber),
     contrast: conceptCopy.contrast,
     summary: conceptCopy.summary,
     sourceNote: source?.studentWorkbookSource ?? `Module 5 student workbook, Lesson ${lessonNumber}.`,
     sourcePageImages,
     blankSourcePageImages: sourcePageImages,
     solvedSourcePageImages: [...sourcePageImages, ...answerKeyImages],
-    conceptSections: [
-      {
-        title: '1. Teacher Edition concept',
-        body: `Teacher Edition concept focus: ${objective}`,
-        teacherSource: source?.teacherEditionSource ?? `Module 5 Teacher Edition, Lesson ${lessonNumber}.`,
-        checkpoints: [
-          'State the whole before naming the fraction.',
-          'Check that all parts or intervals are equal.',
-          'Use lesson vocabulary such as whole, unit fraction, equivalent fraction, and number line where it applies.'
-        ]
-      },
-      {
-        title: '2. Official Problem Set focus',
-        body: 'Blank mode keeps the exact workbook prompt and an empty fraction scaffold. Solved mode completes that same scaffold with shaded units, labels, comparison reasoning, and validation checks.',
-        teacherSource: source?.studentWorkbookSource ?? `Module 5 student workbook, Lesson ${lessonNumber}.`,
-        checkpoints: [
-          'Use the workbook problem order.',
-          'Keep labels, blanks, and diagrams tied to the official prompt.',
-          'Do not substitute a parallel invented fraction task.'
-        ]
-      },
-      {
-        title: '3. Debrief and validation',
-        body: `Use the Lesson ${lessonNumber} Teacher Edition debrief to check the model, fraction language, and answer meaning without changing the official Problem Set structure.`,
-        teacherSource: source?.teacherEditionSource ?? `Module 5 Teacher Edition, Lesson ${lessonNumber}.`,
-        checkpoints: [
-          'Explain how the model proves the fraction.',
-          'When comparing, confirm the wholes are the same size or explain why they are different.',
-          'When using a number line, confirm each interval has the same length.'
-        ]
-      }
-    ],
+    conceptSections: m5FunctionalConceptSections(lessonNumber),
     problems
   };
 }

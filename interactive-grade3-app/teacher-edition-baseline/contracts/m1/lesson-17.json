@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m1-l17",
+  "moduleId": "m1",
+  "lessonNumber": 17,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf",
+    "teacherEditionSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
+    "teacherEditionBytes": 13572842,
+    "lessonPdfPages": {
+      "start": 221,
+      "end": 233
+    },
+    "problemSetPdfPages": [
+      227,
+      228
+    ],
+    "exitTicketPdfPages": [
+      229
+    ],
+    "homeworkPdfPages": [
+      230,
+      231
+    ],
+    "answerKeyPdfPages": [
+      321,
+      322
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m1-student/workbook-page-069.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m1-teacher/page-227.png",
+      "/source-pages/m1-teacher/page-228.png",
+      "/source-pages/m1-teacher/page-321.png",
+      "/source-pages/m1-teacher/page-322.png"
+    ]
+  },
+  "objective": "Model the relationship between multiplication and division.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "Materials: (S) Personal white board\n\nProblem 1: Use the number bond to relate multiplication and division.\n    T:   (Draw or project the number bond shown to the right.)\n         The number bond represents the division equation you\n         wrote to solve the Application Problem. Turn and tell\n         your partner how it shows 24 ÷ 4.\n    S:   (Discuss.)\n    T:   Look back at the Application Problem. Is the unknown in the number bond the same as the\n         unknown in the division problem? What does it represent?\n    S:   They’re the same. The unknown represents the size of the groups.\n    T:   (Project a second number bond where the total and one part are drawn. Write __ × 4 = 24.)\n         Skip-count by fours to find the unknown factor. Each time you say a four, I will make a new part of\n         my number bond. (Draw the parts as students count.)\n    S:   4, 8, 12, 16, 20, 24.\n    T:   How many fours make 24?\n    S:   6 fours!\n                                                                                  NOTES ON\n    T:   So, 24 ÷ 4 equals…?\n                                                                                  MULTIPLE MEANS\n    S:   6.                                                                       OF ACTION AND\n    T:   The division equations are the same. How do the                          EXPRESSION:\n         quotients in the two number bonds represent different           The expression 32 ÷ 4 is also used in\n         things?                                                         Problem 3 of the Problem Set. Because\n    S:   The 6 in the first number bond represents the size of           of the duplication, the suggested\n         the groups. The 6 in the second number bond                     process for completing the Problem Set\n         represents the number of groups.                                is to save Problem 3 until the end.\n                                                                                                However, for some classes, it may\nRepeat the process with 32 ÷ 4. (Model how the quotient can                                     prove useful to preview the example\nrepresent the number of groups or the size of the groups.)                                      here and have students complete it as\n                                                                                                one of the first problems they do\n    T:   How do the multiplication and division equations relate\n                                                                                                independently on the Problem Set.\n         in each example?\n                                                                                                This will build confidence by giving\n    S:   I thought of the division equation like a multiplication                               students an immediate sense of\n         equation with an unknown factor and skip-counted by                                    success.\n         fours until I reached the total.\n\n\n                        Lesson 17:          Model the relationship between multiplication and division.                             218\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                       Lesson 17 3 1\n\n\n       Problem 2: Solve word problems to illustrate the relationship between multiplication and division.\n       Write or project the following problem: A classroom has tables that seat a total of 20 students. Four\n       students are seated at each table. How many tables are in the classroom?\n           T:   Draw and label a tape diagram to represent the problem.\n           S:   (Draw diagram shown to the right.)\n           T:   Without solving, write a division equation and a multiplication\n                equation with an unknown factor to represent your drawing.\n           S:   (Write 20 ÷ 4 = __ and __ × 4 = 20.)\nMP.2       T:   What does the unknown in both problems represent?\n           S:   The number of groups.\n           T:   Tell your partner your strategy for solving each equation.\n           S:   To solve the division, I will add units of 4 to the tape diagram until I get to 20.  That is just\n                skip-counting by fours. Skip-counting is a way to solve the multiplication, too.  The strategies\n                are the same for both equations because you can use one to solve the other.\n           T:   Solve both equations now.\n       Repeat the process with 16 ÷ 4. (Problem 2 models division where the quotient represents the number of\n       groups.)",
+    "fluencyPracticeText": " Sprint: Multiply or Divide by 4 3.OA.7                     (9 minutes)\n\nSprint: Multiply or Divide by 4 (9 minutes)\nMaterials: (S) Multiply or Divide by 4 Sprint\n\nNote: Framing division through missing factors in multiplication sentences builds a strong foundation for\nunderstanding the relationships between multiplication and division. See Lesson 2 for directions for\nadministering a Sprint.\nBetween Sprints, include the following group counts in place of movement exercises.\n        Count by twos to 20 forward and backward.\n        Count by threes to 30, hum/talk forward and backward. (Hum as you think 1, 2, say 3, hum 4, 5, say\n         6, etc.)\n        Count by fives to 50 forward and backward.",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\n       Problem Set within the allotted 10 minutes. For some\n       classes, it may be appropriate to modify the assignment by\n       specifying which problems they work on first. Some\n       problems do not specify a method for solving. Students\n       should solve these problems using the RDW approach\n       used for Application Problems.",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Draw or project the number bond shown to the right.) The number bond represents the division equation you wrote to solve the Application Problem. Turn and tell your partner how it shows 24 ÷ 4."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look back at the Application Problem. Is the unknown in the number bond the same as the unknown in the division problem? What does it represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "They’re the same. The unknown represents the size of the groups."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project a second number bond where the total and one part are drawn. Write __ × 4 = 24.) Skip-count by fours to find the unknown factor. Each time you say a four, I will make a new part of my number bond. (Draw the parts as students count.)"
+      },
+      {
+        "speaker": "students",
+        "text": "4, 8, 12, 16, 20, 24."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many fours make 24?"
+      },
+      {
+        "speaker": "students",
+        "text": "6 fours!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "So, 24 ÷ 4 equals…? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "6. OF ACTION AND"
+      },
+      {
+        "speaker": "teacher",
+        "text": "The division equations are the same. How do the EXPRESSION: quotients in the two number bonds represent different The expression 32 ÷ 4 is also used in things? Problem 3 of the Problem Set. Because"
+      },
+      {
+        "speaker": "students",
+        "text": "The 6 in the first number bond represents the size of of the duplication, the suggested the groups. The 6 in the second number bond process for completing the Problem Set represents the number of groups. is to save Problem 3 until the end. However, for some classes, it may Repeat the process with 32 ÷ 4. (Model how the quotient can prove useful to preview the example represent the number of groups or the size of the groups.) here and have students complete it as one of the first problems they do"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How do the multiplication and division equations relate independently on the Problem Set. in each example? This will build confidence by giving"
+      },
+      {
+        "speaker": "students",
+        "text": "I thought of the division equation like a multiplication students an immediate sense of equation with an unknown factor and skip-counted by success. fours until I reached the total. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 17 3 1 Write or project the following problem: A classroom has tables that seat a total of 20 students. Four students are seated at each table. How many tables are in the classroom?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw and label a tape diagram to represent the problem."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw diagram shown to the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Without solving, write a division equation and a multiplication equation with an unknown factor to represent your drawing."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 20 ÷ 4 = __ and __ × 4 = 20.) MP.2 T: What does the unknown in both problems represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "The number of groups."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell your partner your strategy for solving each equation."
+      },
+      {
+        "speaker": "students",
+        "text": "To solve the division, I will add units of 4 to the tape diagram until I get to 20.  That is just skip-counting by fours. Skip-counting is a way to solve the multiplication, too.  The strategies are the same for both equations because you can use one to solve the other."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Solve both equations now. Repeat the process with 16 ÷ 4. (Problem 2 models division where the quotient represents the number of groups.)"
+      }
+    ],
+    "teacherPrompts": [
+      "(Draw or project the number bond shown to the right.) The number bond represents the division equation you wrote to solve the Application Problem. Turn and tell your partner how it shows 24 ÷ 4.",
+      "Look back at the Application Problem. Is the unknown in the number bond the same as the unknown in the division problem? What does it represent?",
+      "(Project a second number bond where the total and one part are drawn. Write __ × 4 = 24.) Skip-count by fours to find the unknown factor. Each time you say a four, I will make a new part of my number bond. (Draw the parts as students count.)",
+      "How many fours make 24?",
+      "So, 24 ÷ 4 equals…? MULTIPLE MEANS",
+      "The division equations are the same. How do the EXPRESSION: quotients in the two number bonds represent different The expression 32 ÷ 4 is also used in things? Problem 3 of the Problem Set. Because",
+      "How do the multiplication and division equations relate independently on the Problem Set. in each example? This will build confidence by giving",
+      "Draw and label a tape diagram to represent the problem.",
+      "Without solving, write a division equation and a multiplication equation with an unknown factor to represent your drawing.",
+      "Tell your partner your strategy for solving each equation.",
+      "Solve both equations now. Repeat the process with 16 ÷ 4. (Problem 2 models division where the quotient represents the number of groups.)"
+    ],
+    "debriefPrompt": "In the first problem on the Problem Set, what patterns did you notice in the array?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Use the array to complete the related equations. 1×4= 4 4 ÷4=1 2×4= ÷4=2 × 4 = 12 12 ÷ 4 = × 4 = 16 16 ÷ 4 = × = 20 20 ÷ = × = 24 24 ÷ = ×4= ÷4= ×4= ÷4= × = ÷ = × = ÷ =",
+        "equations": [
+          "1×4= 4",
+          "4 ÷4=1",
+          "2×4",
+          "4=2"
+        ]
+      },
+      {
+        "number": 2,
+        "prompt": "The baker packs 36 bran muffins in boxes of 4. Draw and label a tape diagram to find the number of boxes he packs.",
+        "equations": []
+      },
+      {
+        "number": 3,
+        "prompt": "The waitress arranges 32 glasses into 4 equal rows. How many glasses are in each row?",
+        "equations": []
+      },
+      {
+        "number": 4,
+        "prompt": "Janet paid $28 for 4 notebooks. Each notebook costs the same amount. What is the cost of 2 notebooks?",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                        Lesson 17 Problem Set 3 1\n\n\nName                                                                                           Date\n\n1. Use the array to complete the related equations.\n\n\n                                                                         1×4=              4                   4        ÷4=1\n\n\n                                                                          2×4=                                          ÷4=2\n\n\n                                                                                       × 4 = 12              12 ÷ 4 =\n\n\n                                                                                       × 4 = 16              16 ÷ 4 =\n\n\n                                                                                       ×              = 20   20 ÷             =\n\n\n                                                                                       ×              = 24   24 ÷             =\n\n\n                                                                                       ×4=                                   ÷4=\n\n\n                                                                                       ×4=                                   ÷4=\n\n\n                                                                                    ×             =                      ÷          =\n\n\n                                                                                   ×             =                       ÷          =\n\n\n                      Lesson 17:          Model the relationship between multiplication and division.                              223\n\n                      ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                      Lesson 17 Problem Set 3 1\n\n\n2. The baker packs 36 bran muffins in boxes of 4. Draw and label a tape diagram to find the number of\n   boxes he packs.\n\n\n3. The waitress arranges 32 glasses into 4 equal rows. How many glasses are in each row?\n\n\n4. Janet paid $28 for 4 notebooks. Each notebook costs the same amount. What is the cost of\n   2 notebooks?\n\n\n                      Lesson 17:           Model the relationship between multiplication and division.          224\n\n                       ©2015 Great Minds. eureka-math.org",
+    "answerKeyProblemSetText": "1.    Answer provided                                                     2.     Tape diagram drawn and labeled showing 9\n      8; 8                                                                       boxes packed\n      3; 3                                                                3.     8\n      4; 4                                                                4.     $14\n      5, 4; 4, 5\n      6, 4; 4, 6\n      7, 28; 28, 7\n      8, 32; 32, 8\n      9, 4, 36; 36, 4, 9\n      10, 4, 40; 40, 4, 10",
+    "answerKeyText": "A STORY OF UNITS                                                                      Lesson 17 Answer Key 3 1\n\n\nLesson 17\nSprint\nSide A\n1.    8                        12. 28                                 23. 10                                 34. 8\n2.    12                       13. 32                                 24. 2                                  35. 7\n3.    16                       14. 36                                 25. 3                                  36. 9\n4.    20                       15. 40                                 26. 10                                 37. 6\n5.    4                        16. 8                                  27. 5                                  38. 8\n6.    2                        17. 7                                  28. 4                                  39. 44\n7.    3                        18. 9                                  29. 2                                  40. 11\n8.    5                        19. 6                                  30. 3                                  41. 3\n9.    4                        20. 10                                 31. 4                                  42. 12\n10. 4                          21. 5                                  32. 7                                  43. 56\n11. 24                         22. 6                                  33. 9                                  44. 14\n\n\nSide B\n1.    4                        12. 24                                 23. 2                                  34. 7\n2.    8                        13. 28                                 24. 10                                 35. 8\n3.    12                       14. 32                                 25. 3                                  36. 9\n4.    16                       15. 36                                 26. 2                                  37. 6\n5.    20                       16. 7                                  27. 4                                  38. 7\n6.    3                        17. 6                                  28. 10                                 39. 44\n7.    2                        18. 8                                  29. 5                                  40. 11\n8.    4                        19. 10                                 30. 3                                  41. 48\n9.    4                        20. 9                                  31. 3                                  42. 12\n10. 5                          21. 4                                  32. 6                                  43. 52\n11. 40                         22. 5                                  33. 9                                  44. 13\n\n\n                        Module 1:           Properties of Multiplication and Division and Solving Problems with       317\n                                            Units of 2–5 and 10\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                         Lesson 17 Answer Key 3 1\n\n\nProblem Set\n1.    Answer provided                                                     2.     Tape diagram drawn and labeled showing 9\n      8; 8                                                                       boxes packed\n      3; 3                                                                3.     8\n      4; 4                                                                4.     $14\n      5, 4; 4, 5\n      6, 4; 4, 6\n      7, 28; 28, 7\n      8, 32; 32, 8\n      9, 4, 36; 36, 4, 9\n      10, 4, 40; 40, 4, 10\n\n\nExit Ticket\n1.    4; number bond drawn showing 4 units of 4 equals 16\n2.    14; tape diagram drawn and labeled to represent the problem\n\n\nHomework\n1.    4; 4                                                                2.     8; tape diagram drawn and labeled to represent\n      8; 8                                                                       the problem\n      3; 3                                                                3.     6\n      4; 4                                                                4.     12\n      5, 4; 4, 5\n      6, 4; 4, 6\n      7, 28; 28, 7\n      8, 32; 32, 8\n      9, 4, 36; 36, 4, 9\n      10, 4, 40; 40, 4, 10\n\n\n                           Module 1:           Properties of Multiplication and Division and Solving Problems with          318\n                                               Units of 2–5 and 10\n\n                           ©2015 Great Minds. eureka-math.org",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "tape-diagram",
+      "number-bond",
+      "measurement-scale",
+      "table-or-chart",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "1. Use the array to complete the related equations."
+      ],
+      "tape-diagram": [
+        "T: Draw and label a tape diagram to represent the problem.",
+        "S: To solve the division, I will add units of 4 to the tape diagram until I get to 20.  That is just",
+        "2. The baker packs 36 bran muffins in boxes of 4. Draw and label a tape diagram to find the number of"
+      ],
+      "number-bond": [
+        "Problem 1: Use the number bond to relate multiplication and division.",
+        "T: (Draw or project the number bond shown to the right.)",
+        "The number bond represents the division equation you",
+        "T: Look back at the Application Problem. Is the unknown in the number bond the same as the",
+        "T: (Project a second number bond where the total and one part are drawn. Write __ × 4 = 24.)",
+        "my number bond. (Draw the parts as students count.)",
+        "quotients in the two number bonds represent different The expression 32 ÷ 4 is also used in",
+        "S: The 6 in the first number bond represents the size of of the duplication, the suggested"
+      ],
+      "measurement-scale": [
+        "T: Draw and label a tape diagram to represent the problem.",
+        "S: (Draw diagram shown to the right.)",
+        "S: To solve the division, I will add units of 4 to the tape diagram until I get to 20.  That is just",
+        "2. The baker packs 36 bran muffins in boxes of 4. Draw and label a tape diagram to find the number of"
+      ],
+      "table-or-chart": [
+        "students are seated at each table. How many tables are in the classroom?"
+      ],
+      "money-model": [
+        "4. Janet paid $28 for 4 notebooks. Each notebook costs the same amount. What is the cost of"
+      ],
+      "picture-or-drawing": [
+        "T: (Draw or project the number bond shown to the right.)",
+        "T: (Project a second number bond where the total and one part are drawn. Write __ × 4 = 24.)",
+        "my number bond. (Draw the parts as students count.)",
+        "T: Draw and label a tape diagram to represent the problem.",
+        "S: (Draw diagram shown to the right.)",
+        "equation with an unknown factor to represent your drawing.",
+        "S: To solve the division, I will add units of 4 to the tape diagram until I get to 20.  That is just",
+        "2. The baker packs 36 bran muffins in boxes of 4. Draw and label a tape diagram to find the number of"
+      ]
+    },
+    "sourceIllustrationRequired": true,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Draw or project the number bond shown to the right.) The number bond represents the division equation you wrote to solve the Application Problem. Turn and tell your partner how it shows 24 ÷ 4."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project a second number bond where the total and one part are drawn. Write __ × 4 = 24.) Skip-count by fours to find the unknown factor. Each time you say a four, I will make a new part of my number bond. (Draw the parts as students count.)"
+      },
+      {
+        "speaker": "students",
+        "text": "The 6 in the first number bond represents the size of of the duplication, the suggested the groups. The 6 in the second number bond process for completing the Problem Set represents the number of groups. is to save Problem 3 until the end. However, for some classes, it may Repeat the process with 32 ÷ 4. (Model how the quotient can prove useful to preview the example represent the number of groups or the size of the groups.) here and have students complete it as one of the first problems they do"
+      },
+      {
+        "speaker": "students",
+        "text": "I thought of the division equation like a multiplication students an immediate sense of equation with an unknown factor and skip-counted by success. fours until I reached the total. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 17 3 1 Write or project the following problem: A classroom has tables that seat a total of 20 students. Four students are seated at each table. How many tables are in the classroom?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw and label a tape diagram to represent the problem."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw diagram shown to the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Without solving, write a division equation and a multiplication equation with an unknown factor to represent your drawing."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 20 ÷ 4 = __ and __ × 4 = 20.) MP.2 T: What does the unknown in both problems represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "To solve the division, I will add units of 4 to the tape diagram until I get to 20.  That is just skip-counting by fours. Skip-counting is a way to solve the multiplication, too.  The strategies are the same for both equations because you can use one to solve the other."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Solve both equations now. Repeat the process with 16 ÷ 4. (Problem 2 models division where the quotient represents the number of groups.)"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 221 (debrief) ---\nA STORY OF UNITS                                                                                       Lesson 17 3 1\n\n\nLesson 17\nObjective: Model the relationship between multiplication and division.\n\n\nSuggested Lesson Structure\n\n Fluency Practice              (9 minutes)\n Application Problem           (5 minutes)\n Concept Development           (36 minutes)\n Student Debrief               (10 minutes)\n   Total Time                   (60 minutes)\n\n\nFluency Practice (9 minutes)\n Sprint: Multiply or Divide by 4 3.OA.7                     (9 minutes)\n\nSprint: Multiply or Divide by 4 (9 minutes)\nMaterials: (S) Multiply or Divide by 4 Sprint\n\nNote: Framing division through missing factors in multiplication sentences builds a strong foundation for\nunderstanding the relationships between multiplication and division. See Lesson 2 for directions for\nadministering a Sprint.\nBetween Sprints, include the following group counts in place of movement exercises.\n        Count by twos to 20 forward and backward.\n        Count by threes to 30, hum/talk forward and backward. (Hum as you think 1, 2, say 3, hum 4, 5, say\n         6, etc.)\n        Count by fives to 50 forward and backward.\n\n\nApplication Problem (5 minutes)\n\nMrs. Peacock bought 4 packs of yogurt. She had exactly\nenough to give each of her 24 students 1 yogurt cup. How\nmany yogurt cups are there in 1 pack?\n\n\nNote: This problem is designed to lead into the Concept\nDevelopment. In Problem 1, students will analyze how a\nnumber bond represents the division expression 24 ÷ 4.\n\n\n                       Lesson 17:           Model the relationship between multiplication and division.              217\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 222 (concept-development) ---\nA STORY OF UNITS                                                                                            Lesson 17 3 1\n\n\nConcept Development (36 minutes)\n\nMaterials: (S) Personal white board\n\nProblem 1: Use the number bond to relate multiplication and division.\n    T:   (Draw or project the number bond shown to the right.)\n         The number bond represents the division equation you\n         wrote to solve the Application Problem. Turn and tell\n         your partner how it shows 24 ÷ 4.\n    S:   (Discuss.)\n    T:   Look back at the Application Problem. Is the unknown in the number bond the same as the\n         unknown in the division problem? What does it represent?\n    S:   They’re the same. The unknown represents the size of the groups.\n    T:   (Project a second number bond where the total and one part are drawn. Write __ × 4 = 24.)\n         Skip-count by fours to find the unknown factor. Each time you say a four, I will make a new part of\n         my number bond. (Draw the parts as students count.)\n    S:   4, 8, 12, 16, 20, 24.\n    T:   How many fours make 24?\n    S:   6 fours!\n                                                                                  NOTES ON\n    T:   So, 24 ÷ 4 equals…?\n                                                                                  MULTIPLE MEANS\n    S:   6.                                                                       OF ACTION AND\n    T:   The division equations are the same. How do the                          EXPRESSION:\n         quotients in the two number bonds represent different           The expression 32 ÷ 4 is also used in\n         things?                                                         Problem 3 of the Problem Set. Because\n    S:   The 6 in the first number bond represents the size of           of the duplication, the suggested\n         the groups. The 6 in the second number bond                     process for completing the Problem Set\n         represents the number of groups.                                is to save Problem 3 until the end.\n                                                                                                However, for some classes, it may\nRepeat the process with 32 ÷ 4. (Model how the quotient can                                     prove useful to preview the example\nrepresent the number of groups or the size of the groups.)                                      here and have students complete it as\n                                                                                                one of the first problems they do\n    T:   How do the multiplication and division equations relate\n                                                                                                independently on the Problem Set.\n         in each example?\n                                                                                                This will build confidence by giving\n    S:   I thought of the division equation like a multiplication                               students an immediate sense of\n         equation with an unknown factor and skip-counted by                                    success.\n         fours until I reached the total.\n\n\n                        Lesson 17:          Model the relationship between multiplication and division.                             218\n\n                        ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 223 (debrief) ---\nA STORY OF UNITS                                                                                       Lesson 17 3 1\n\n\n       Problem 2: Solve word problems to illustrate the relationship between multiplication and division.\n       Write or project the following problem: A classroom has tables that seat a total of 20 students. Four\n       students are seated at each table. How many tables are in the classroom?\n           T:   Draw and label a tape diagram to represent the problem.\n           S:   (Draw diagram shown to the right.)\n           T:   Without solving, write a division equation and a multiplication\n                equation with an unknown factor to represent your drawing.\n           S:   (Write 20 ÷ 4 = __ and __ × 4 = 20.)\nMP.2       T:   What does the unknown in both problems represent?\n           S:   The number of groups.\n           T:   Tell your partner your strategy for solving each equation.\n           S:   To solve the division, I will add units of 4 to the tape diagram until I get to 20.  That is just\n                skip-counting by fours. Skip-counting is a way to solve the multiplication, too.  The strategies\n                are the same for both equations because you can use one to solve the other.\n           T:   Solve both equations now.\n       Repeat the process with 16 ÷ 4. (Problem 2 models division where the quotient represents the number of\n       groups.)\n\n       Problem Set (10 minutes)\n       Students should do their personal best to complete the\n       Problem Set within the allotted 10 minutes. For some\n       classes, it may be appropriate to modify the assignment by\n       specifying which problems they work on first. Some\n       problems do not specify a method for solving. Students\n       should solve these problems using the RDW approach\n       used for Application Problems.\n\n\n       Student Debrief (10 minutes)\n\n       Lesson Objective: Model the relationship between\n       multiplication and division.\n       The Student Debrief is intended to invite reflection and\n       active processing of the total lesson experience.\n       Invite students to review their solutions for the Problem\n       Set. They should check work by comparing answers with a\n       partner before going over answers as a class. Look for\n       misconceptions or misunderstandings that can be\n       addressed in the Debrief. Guide students in a\n       conversation to debrief the Problem Set and process the\n       lesson.\n\n\n                              Lesson 17:           Model the relationship between multiplication and division.              219\n\n                               ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 224 (debrief) ---\nA STORY OF UNITS                                                                                      Lesson 17 3 1\n\n\nAny combination of the questions below may be used to lead the discussion.\n       In the first problem on the Problem Set, what\n        patterns did you notice in the array?\n       How did the patterns you noticed help you solve\n        the multiplication and division sentences?\n       Share student work from Problems 3 and 4.\n        Students may have solved using number bonds or\n        tape diagrams, multiplication, or division.\n        Compare approaches.\n       How can a number bond show both\n        multiplication and division?\n       Discuss: Division is an unknown factor problem.\n       In Problems 3 and 4, the unknown is the size of\n        each group. What is different about Problem 4?\n        (It is a two-step problem.)\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                       Lesson 17:          Model the relationship between multiplication and division.              220\n\n                       ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 225 (sprint) ---\nA STORY OF UNITS                                                                                  Lesson 17 Sprint 3 1\n\n\nA\n                                                                                                             Number Correct: _______\n\nMultiply or Divide by 4\n\n1.                 2×4=                                                    23.                 __ × 4 = 40\n\n2.                 3×4=                                                    24.                  __ × 4 = 8\n\n3.                 4×4=                                                    25.                 __ × 4 = 12\n\n4.                 5×4=                                                    26.                   40 ÷ 4 =\n\n5.                 1×4=                                                    27.                   20 ÷ 4 =\n\n6.                 8÷4=                                                    28.                    4÷1=\n\n7.                12 ÷ 4 =                                                 29.                    8÷4=\n\n8.                20 ÷ 4 =                                                 30.                   12 ÷ 4 =\n\n9.                 4÷1=                                                    31.                 __ × 4 = 16\n\n10.               16 ÷ 4 =                                                 32.                 __ × 4 = 28\n\n11.                6×4=                                                    33.                 __ × 4 = 36\n\n12.                7×4=                                                    34.                 __ × 4 = 32\n\n13.                8×4=                                                    35.                   28 ÷ 4 =\n\n14.                9×4=                                                    36.                   36 ÷ 4 =\n\n15.               10 × 4 =                                                 37.                   24 ÷ 4 =\n\n16.               32 ÷ 4 =                                                 38.                   32 ÷ 4 =\n\n17.               28 ÷ 4 =                                                 39.                   11 × 4 =\n\n18.               36 ÷ 4 =                                                 40.                   44 ÷ 4 =\n\n19.               24 ÷ 4 =                                                 41.                   12 ÷ 4 =\n\n20.               40 ÷ 4 =                                                 42.                   48 ÷ 4 =\n\n21.             __ × 4 = 20                                                43.                   14 × 4 =\n\n22.             __ × 4 = 24                                                44.                   56 ÷ 4 =\n\n\n                          Lesson 17:          Model the relationship between multiplication and division.                       221\n\n                          ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 226 (sprint) ---\nA STORY OF UNITS                                                                                  Lesson 17 Sprint 3 1\n\n\nB\n                                                                                                             Number Correct: _______\n                                                                                                               Improvement: _______\nMultiply or Divide by 4\n\n1.                 1×4=                                                    23.                  __ × 4 = 8\n\n2.                 2×4=                                                    24.                 __ × 4 = 40\n\n3.                 3×4=                                                    25.                 __ × 4 = 12\n\n4.                 4×4=                                                    26.                    8÷4=\n\n5.                 5×4=                                                    27.                    4÷1=\n\n6.                12 ÷ 4 =                                                 28.                   40 ÷ 4 =\n\n7.                 8÷4=                                                    29.                   20 ÷ 4 =\n\n8.                16 ÷ 4 =                                                 30.                   12 ÷ 4 =\n\n9.                 4÷1=                                                    31.                 __ × 4 = 12\n\n10.               20 ÷ 4 =                                                 32.                 __ × 4 = 24\n\n11.               10 × 4 =                                                 33.                 __ × 4 = 36\n\n12.                6×4=                                                    34.                 __ × 4 = 28\n\n13.                7×4=                                                    35.                   32 ÷ 4 =\n\n14.                8×4=                                                    36.                   36 ÷ 4 =\n\n15.                9×4=                                                    37.                   24 ÷ 4 =\n\n16.               28 ÷ 4 =                                                 38.                   28 ÷ 4 =\n\n17.               24 ÷ 4 =                                                 39.                   11 × 4 =\n\n18.               32 ÷ 4 =                                                 40.                   44 ÷ 4 =\n\n19.               40 ÷ 4 =                                                 41.                   12 × 4 =\n\n20.               36 ÷ 4 =                                                 42.                   48 ÷ 4 =\n\n21.             __ × 4 = 16                                                43.                   13 × 4 =\n\n22.             __ × 4 = 20                                                44.                   52 ÷ 4 =\n\n\n                          Lesson 17:          Model the relationship between multiplication and division.                       222\n\n                          ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 227 (problem-set) ---\nA STORY OF UNITS                                                                        Lesson 17 Problem Set 3 1\n\n\nName                                                                                           Date\n\n1. Use the array to complete the related equations.\n\n\n                                                                         1×4=              4                   4        ÷4=1\n\n\n                                                                          2×4=                                          ÷4=2\n\n\n                                                                                       × 4 = 12              12 ÷ 4 =\n\n\n                                                                                       × 4 = 16              16 ÷ 4 =\n\n\n                                                                                       ×              = 20   20 ÷             =\n\n\n                                                                                       ×              = 24   24 ÷             =\n\n\n                                                                                       ×4=                                   ÷4=\n\n\n                                                                                       ×4=                                   ÷4=\n\n\n                                                                                    ×             =                      ÷          =\n\n\n                                                                                   ×             =                       ÷          =\n\n\n                      Lesson 17:          Model the relationship between multiplication and division.                              223\n\n                      ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 228 (problem-set) ---\nA STORY OF UNITS                                                                      Lesson 17 Problem Set 3 1\n\n\n2. The baker packs 36 bran muffins in boxes of 4. Draw and label a tape diagram to find the number of\n   boxes he packs.\n\n\n3. The waitress arranges 32 glasses into 4 equal rows. How many glasses are in each row?\n\n\n4. Janet paid $28 for 4 notebooks. Each notebook costs the same amount. What is the cost of\n   2 notebooks?\n\n\n                      Lesson 17:           Model the relationship between multiplication and division.          224\n\n                       ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 229 (exit-ticket) ---\nA STORY OF UNITS                                                                         Lesson 17 Exit Ticket 3 1\n\n\nName                                                                                       Date\n\n1. Mr. Thomas organizes 16 binders into stacks of 4. How many stacks does he make? Draw and label a\n   number bond to solve.\n\n\n2. The chef uses 28 avocados to make 4 batches of guacamole. How many avocados are in 2 batches of\n   guacamole? Draw and label a tape diagram to solve.\n\n\n                      Lesson 17:          Model the relationship between multiplication and division.              225\n\n                      ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 230 (homework) ---\nA STORY OF UNITS                                                                            Lesson 17 Homework 3 1\n\n\nName                                                                                            Date\n\n1. Use the array to complete the related equations.\n\n     1×4=                                              ÷4=1\n\n\n     2×4=                                              ÷4=2\n\n\n                × 4 = 12                  12 ÷ 4 =\n\n\n                × 4 = 16                  16 ÷ 4 =\n\n\n           ×          = 20               20 ÷                   =\n\n\n            ×             = 24             24 ÷                 =\n\n\n            ×4=                                            ÷4=\n\n\n            ×4=                                           ÷4=\n\n\n            ×          =                                  ÷         =\n\n\n           ×          =                                  ÷          =\n\n\n                           Lesson 17:          Model the relationship between multiplication and division.         226\n\n                           ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 231 (homework) ---\nA STORY OF UNITS                                                                       Lesson 17 Homework 3 1\n\n\n2. The teacher puts 32 students into groups of 4. How many groups does she make? Draw and label a\n   tape diagram to solve.\n\n\n3. The store clerk arranges 24 toothbrushes into 4 equal rows. How many toothbrushes are in each row?\n\n\n4. An art teacher has 40 paintbrushes. She divides them equally among her 4 students. She finds 8 more\n   brushes and divides these equally among the students, as well. How many brushes does each student\n   receive?\n\n\n                      Lesson 17:          Model the relationship between multiplication and division.         227\n\n                      ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 232 (lesson-instruction) ---\nA STORY OF UNITS\n\n      3                   Mathematics Curriculum\n    GR ADE\n\n\n                                                                                                                      GRADE 3 • MODULE 1\n\n\nTopic F\nDistributive Property and Problem\nSolving Using Units of 2–5 and 10\n3.OA.3, 3.OA.5, 3.OA.7, 3.OA.8, 3.OA.1, 3.OA.2, 3.OA.4, 3.OA.6\n\nFocus Standards:              3.OA.3                Use multiplication and division within 100 to solve word problems in situations\n                                                    involving equal groups, arrays, and measurement quantities, e.g., by using\n                                                    drawings and equations with a symbol for the unknown number to represent the\n                                                    problem.\n                              3.OA.5                Apply properties of operations as strategies to multiply and divide. Examples: If\n                                                    6 × 4 = 24 is known, then 4 × 6 = 24 is also known. (Commutative property of\n                                                    multiplication.) 3 × 5 × 2 can be found by 3 × 5 = 15, then 15 × 2 = 30, or by 5 × 2 =\n                                                    10, then 3 × 10 = 30. (Associative property of multiplication.) Knowing that 8 × 5 =\n                                                    40 and 8 × 2 = 16, one can find 8 × 7 as 8 × (5 + 2) = (8 × 5) + (8 × 2) = 40 + 16 = 56.\n                                                    (Distributive property.)\n                              3.OA.7                Fluently multiply and divide within 100, using strategies such as the relationship\n                                                    between multiplication and division (e.g., knowing that 8 × 5 = 40, one knows\n                                                    40 ÷ 5 = 8) or properties of operations. By the end of Grade 3, know from\n                                                    memory all products of two one-digit numbers.\n                              3.OA.8                Solve two-step word problems using the four operations. Represent these\n                                                    problems using equations with a letter standing for the unknown quantity. Assess\n                                                    the reasonableness of answers using mental computation and estimation\n                                                    strategies including rounding.\nInstructional Days:           4\nCoherence -Links from:        G2–M6                 Foundations of Multiplication and Division\n             -Links to:       G4–M3                 Multi-Digit Multiplication and Division\n\n\n                          Topic F:            Distributive Property and Problem Solving Using Units of 2–5 and 10                        228\n\n                          ©2015 Great Minds. eureka-math.org\n\n--- PDF PAGE 233 (lesson-instruction) ---\nA STORY OF UNITS                                                                                              Topic F 3\n\n\nTopic F introduces the factors 5 and 10, familiar from skip-counting in Grade 2. Students apply the\nmultiplication and division strategies they have learned to mixed practice with all of the factors included in\nModule 1. Students model relationships between factors and decompose numbers as they further explore\nthe relationship between multiplication and division. This culminates in Lessons 18 and 19 as students\ndecompose the dividend in a division sentence to practice the distributive property with division. For\nexample, students decompose 28 ÷ 4 as (20 ÷ 4) + (8 ÷ 4) = 5 + 2 = 7. In the final lessons of the module,\nstudents apply the tools, representations, and concepts they have learned to solve multi-step word problems.\nThey demonstrate the flexibility of their thinking as they assess the reasonableness of their answers for a\nvariety of problem types. Lesson 20 focuses on word problems involving multiplication and division, while\nLesson 21 increases the complexity of problem solving by including word problems involving all four\noperations.\n\n  A Teaching Sequence Toward Mastery of Distributive Property and Problem Solving Using\n  Units of 2–5 and 10\n  Objective 1: Apply the distributive property to decompose units.\n               (Lessons 18–19)\n\n  Objective 2: Solve two-step word problems involving multiplication and division, and assess the\n               reasonableness of answers.\n               (Lesson 20)\n\n  Objective 3: Solve two-step word problems involving all four operations, and assess the\n               reasonableness of answers.\n               (Lesson 21)\n\n\n                       Topic F:            Distributive Property and Problem Solving Using Units of 2–5 and 10               229\n\n                       ©2015 Great Minds. eureka-math.org",
+    "problemSetPages": [
+      {
+        "pdfPage": 227,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                        Lesson 17 Problem Set 3 1\n\n\nName                                                                                           Date\n\n1. Use the array to complete the related equations.\n\n\n                                                                         1×4=              4                   4        ÷4=1\n\n\n                                                                          2×4=                                          ÷4=2\n\n\n                                                                                       × 4 = 12              12 ÷ 4 =\n\n\n                                                                                       × 4 = 16              16 ÷ 4 =\n\n\n                                                                                       ×              = 20   20 ÷             =\n\n\n                                                                                       ×              = 24   24 ÷             =\n\n\n                                                                                       ×4=                                   ÷4=\n\n\n                                                                                       ×4=                                   ÷4=\n\n\n                                                                                    ×             =                      ÷          =\n\n\n                                                                                   ×             =                       ÷          =\n\n\n                      Lesson 17:          Model the relationship between multiplication and division.                              223\n\n                      ©2015 Great Minds. eureka-math.org"
+      },
+      {
+        "pdfPage": 228,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                      Lesson 17 Problem Set 3 1\n\n\n2. The baker packs 36 bran muffins in boxes of 4. Draw and label a tape diagram to find the number of\n   boxes he packs.\n\n\n3. The waitress arranges 32 glasses into 4 equal rows. How many glasses are in each row?\n\n\n4. Janet paid $28 for 4 notebooks. Each notebook costs the same amount. What is the cost of\n   2 notebooks?\n\n\n                      Lesson 17:           Model the relationship between multiplication and division.          224\n\n                       ©2015 Great Minds. eureka-math.org"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 321,
+        "text": "A STORY OF UNITS                                                                      Lesson 17 Answer Key 3 1\n\n\nLesson 17\nSprint\nSide A\n1.    8                        12. 28                                 23. 10                                 34. 8\n2.    12                       13. 32                                 24. 2                                  35. 7\n3.    16                       14. 36                                 25. 3                                  36. 9\n4.    20                       15. 40                                 26. 10                                 37. 6\n5.    4                        16. 8                                  27. 5                                  38. 8\n6.    2                        17. 7                                  28. 4                                  39. 44\n7.    3                        18. 9                                  29. 2                                  40. 11\n8.    5                        19. 6                                  30. 3                                  41. 3\n9.    4                        20. 10                                 31. 4                                  42. 12\n10. 4                          21. 5                                  32. 7                                  43. 56\n11. 24                         22. 6                                  33. 9                                  44. 14\n\n\nSide B\n1.    4                        12. 24                                 23. 2                                  34. 7\n2.    8                        13. 28                                 24. 10                                 35. 8\n3.    12                       14. 32                                 25. 3                                  36. 9\n4.    16                       15. 36                                 26. 2                                  37. 6\n5.    20                       16. 7                                  27. 4                                  38. 7\n6.    3                        17. 6                                  28. 10                                 39. 44\n7.    2                        18. 8                                  29. 5                                  40. 11\n8.    4                        19. 10                                 30. 3                                  41. 48\n9.    4                        20. 9                                  31. 3                                  42. 12\n10. 5                          21. 4                                  32. 6                                  43. 52\n11. 40                         22. 5                                  33. 9                                  44. 13\n\n\n                        Module 1:           Properties of Multiplication and Division and Solving Problems with       317\n                                            Units of 2–5 and 10\n\n                        ©2015 Great Minds. eureka-math.org"
+      },
+      {
+        "pdfPage": 322,
+        "text": "A STORY OF UNITS                                                                         Lesson 17 Answer Key 3 1\n\n\nProblem Set\n1.    Answer provided                                                     2.     Tape diagram drawn and labeled showing 9\n      8; 8                                                                       boxes packed\n      3; 3                                                                3.     8\n      4; 4                                                                4.     $14\n      5, 4; 4, 5\n      6, 4; 4, 6\n      7, 28; 28, 7\n      8, 32; 32, 8\n      9, 4, 36; 36, 4, 9\n      10, 4, 40; 40, 4, 10\n\n\nExit Ticket\n1.    4; number bond drawn showing 4 units of 4 equals 16\n2.    14; tape diagram drawn and labeled to represent the problem\n\n\nHomework\n1.    4; 4                                                                2.     8; tape diagram drawn and labeled to represent\n      8; 8                                                                       the problem\n      3; 3                                                                3.     6\n      4; 4                                                                4.     12\n      5, 4; 4, 5\n      6, 4; 4, 6\n      7, 28; 28, 7\n      8, 32; 32, 8\n      9, 4, 36; 36, 4, 9\n      10, 4, 40; 40, 4, 10\n\n\n                           Module 1:           Properties of Multiplication and Division and Solving Problems with          318\n                                               Units of 2–5 and 10\n\n                           ©2015 Great Minds. eureka-math.org"
+      }
+    ]
+  }
+}

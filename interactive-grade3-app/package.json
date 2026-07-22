@@ -6,6 +6,9 @@
     "start": "ng serve --port 4220",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "prepare:teacher-source": "node scripts/prepare-teacher-edition-source.mjs",
+    "generate:teacher-baseline": "node scripts/generate-teacher-edition-baseline.mjs",
+    "validate:teacher-baseline": "node scripts/validate-teacher-edition-baseline.mjs",
     "validate:no-pdf-problem-tabs": "node scripts/validate-no-pdf-problem-tabs.mjs",
     "validate:problem-centered-delivery": "node scripts/validate-problem-centered-delivery.mjs",
     "validate:m2-source-contract": "node scripts/validate-m2-source-contract.mjs"

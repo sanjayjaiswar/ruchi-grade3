@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m6-l2",
+  "moduleId": "m6",
+  "lessonNumber": 2,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_6/g3_m6_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "74325e3dfcae94e1fe359552d3857a3c929b26c5cca327ee80ef45d651aa7358",
+    "teacherEditionBytes": 6604249,
+    "lessonPdfPages": {
+      "start": 22,
+      "end": 32
+    },
+    "problemSetPdfPages": [
+      28,
+      29
+    ],
+    "exitTicketPdfPages": [
+      30
+    ],
+    "homeworkPdfPages": [
+      31,
+      32
+    ],
+    "answerKeyPdfPages": [
+      148
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m6-student/workbook-page-007.png"
+    ],
+    "existingTeacherEditionImages": []
+  },
+  "objective": "Rotate tape diagrams vertically.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "relate to our\n         new learning?\n        In what ways did the",
+    "conceptDevelopmentText": "Materials: (S) Tape diagrams from Application Problem, personal white board\n\nProblem 1: Rotate tape diagrams to make vertical tape diagrams with units of 2.\n    T:   Turn your personal white board so your tape diagrams\n         are vertical like mine. (Model.) Erase the brackets and\n         the labels for the number of units and the points. How\n         are these vertical tape diagrams similar to the picture\n         graphs you made yesterday?\n    S:   They both show us data.  Each unit on the vertical\n         tape diagrams represents 2 points.  The pictures on\n         the picture graph had a value greater than 1, and so\n         does the unit in the vertical tape diagram.\n    T:   How are the vertical tape diagrams different\n         from the picture graphs?\n    S:   The units are connected in the vertical tape diagrams.\n         The pictures were separate in the picture graphs.\n          The units in the vertical tape diagrams are labeled,\n         but in our picture graphs the value of the unit was\n         shown on the bottom of the graph.\n    T:   Nice observations. Put your finger on the tape that                                 NOTES ON\n         shows data about Game 1. Now, write a multiplication                                MULTIPLE MEANS\n         equation to show the value of Game 1’s tape.                                        OF ENGAGEMENT:\n    S:   (Write 6 × 2 = 12.)                                                         Students working above grade level\n                                                                                     and others may use parentheses and\n    T:   What is the value of Game 1’s tape?\n                                                                                     variables in their equations that\n    S:   12 points!                                                                  represent the total points scored in all\n    T:   How did you know that the unit is points?                                   three games. Celebrate all true\n                                                                                     expressions, particularly those that\n    S:   The Application Problem says Reisha scores 12 points\n                                                                                     apply the distributive property.\n         in Game 1.\n                                                                                     Students working below grade level\n    T:   Let’s write a title on our vertical tape diagrams to help                   and others may benefit from more\n         others understand our data. What do the data on the                         scaffolded instruction for constructing\n         vertical tape diagrams show us?                                             and solving equations for three\n    S:   The points Reisha scores in three basketball games.                         addends (number of units) and the\n                                                                                     total points.\n    T:   Write Points Reisha Scores for your title. (Model\n         appropriate placement of the title.)\n\n\n                        Lesson 2:                 Rotate tape diagrams vertically.                                              23\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                         Lesson 2 3 6\n\n\n    Problem 2: Draw vertical tape diagrams with units of 4.\n        T:   Suppose each unit has a value of 4 points instead of 2 points. Talk to a partner. How many units\n             should I draw to represent Reisha’s points in Game 1? How do you know?\n        S:   Three units because she scored 12 points in Game 1, and 3 units of 4 points equals 12 points.\n              Three units because 3 × 4 = 12 or 12 ÷ 4 = 3.  Three units. The value of each unit is twice as\n             much. Before we drew 6 units of 2, so now we draw half as many. Each new unit has the value of\n             two old units.\n        T:   Draw the 3 units vertically, and label each unit 4. (Model.) What label do we need for this tape?\n        S:   Game 1.\n    Continue the process for Games 2 and 3.\n        T: How many total units of 4 does it take to represent the points Reisha scored in all three games?\n        S: 9 units!\n        T: How does this compare to the total units of 2 it takes to represent Reisha’s total points?\n        S: It takes half as many total units when we used units of 4.\n        T: Why does it take fewer units when you use units of 4?\n        S: The units are bigger.  The units represent a larger amount.\n        T: How can you use vertical tape diagrams to write a multiplication sentence to represent Reisha’s\n           total points in all three games?\n       S: Multiply the total number of units times the value of each unit.  We can multiply 9 times 4.\n       T: Write a multiplication number sentence to show the total points Reisha scored in all three games.\n       S: (Write 9 × 4 = 36.)\n       T: How many points did Reisha score in all three games?\n       S: 36 points!\n                                                                                       NOTES ON\n   Continue with the following possible suggestions:                                   MULTIPLE MEANS\nMP.2                                                                                   OF REPRESENTATION:\n        How many more units of 4 did you draw for Game 1\n           than Game 2? How does this help you find how many                  In Problem 1 of the Problem Set, some\n           more points Reisha scored in Game 1 than in Game 2?                students with perceptual challenges\n                                                                              may have difficulty tracking rows of\n        Suppose Reisha scored 4 fewer points in Game 3. How\n                                                                              stamps as they count. Have students\n           many units of 4 do you need to erase from Game 3’s                 place a straightedge below each row as\n           tape to show the new points?                                       they count by fours. Students working\n        Reisha scores 21 points in a fourth game. Can you use                below grade level may benefit from a\n           units of 4 to represent the points Reisha scores in                fluency drill that reviews the fours\n           Game 4 on a vertical tape diagram?                                 group count.\n\n\n                             Lesson 2:                 Rotate tape diagrams vertically.                                24\n\n                             ©2015 Great Minds. eureka-math.org\n                             G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                  Lesson 2 3 6",
+    "fluencyPracticeText": "prepare you\n         for today’s lesson?\n\n\n                        Lesson 2:                 Rotate tape diagrams vertically.             25\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                        Lesson 2 3 6\n\n\nExit Ticket (3 minutes)\nAfter the",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Turn your personal white board so your tape diagrams are vertical like mine. (Model.) Erase the brackets and the labels for the number of units and the points. How are these vertical tape diagrams similar to the picture graphs you made yesterday?"
+      },
+      {
+        "speaker": "students",
+        "text": "They both show us data.  Each unit on the vertical tape diagrams represents 2 points.  The pictures on the picture graph had a value greater than 1, and so does the unit in the vertical tape diagram."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How are the vertical tape diagrams different from the picture graphs?"
+      },
+      {
+        "speaker": "students",
+        "text": "The units are connected in the vertical tape diagrams. The pictures were separate in the picture graphs.  The units in the vertical tape diagrams are labeled, but in our picture graphs the value of the unit was shown on the bottom of the graph."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Nice observations. Put your finger on the tape that NOTES ON shows data about Game 1. Now, write a multiplication MULTIPLE MEANS equation to show the value of Game 1’s tape. OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 6 × 2 = 12.) Students working above grade level and others may use parentheses and"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the value of Game 1’s tape? variables in their equations that"
+      },
+      {
+        "speaker": "students",
+        "text": "12 points! represent the total points scored in all"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How did you know that the unit is points? three games. Celebrate all true expressions, particularly those that"
+      },
+      {
+        "speaker": "students",
+        "text": "The Application Problem says Reisha scores 12 points apply the distributive property. in Game 1. Students working below grade level"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s write a title on our vertical tape diagrams to help and others may benefit from more others understand our data. What do the data on the scaffolded instruction for constructing vertical tape diagrams show us? and solving equations for three"
+      },
+      {
+        "speaker": "students",
+        "text": "The points Reisha scores in three basketball games. addends (number of units) and the total points."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write Points Reisha Scores for your title. (Model appropriate placement of the title.) ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 2 3 6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Suppose each unit has a value of 4 points instead of 2 points. Talk to a partner. How many units should I draw to represent Reisha’s points in Game 1? How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "Three units because she scored 12 points in Game 1, and 3 units of 4 points equals 12 points.  Three units because 3 × 4 = 12 or 12 ÷ 4 = 3.  Three units. The value of each unit is twice as much. Before we drew 6 units of 2, so now we draw half as many. Each new unit has the value of two old units."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw the 3 units vertically, and label each unit 4. (Model.) What label do we need for this tape?"
+      },
+      {
+        "speaker": "students",
+        "text": "Game 1. Continue the process for Games 2 and 3."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many total units of 4 does it take to represent the points Reisha scored in all three games?"
+      },
+      {
+        "speaker": "students",
+        "text": "9 units!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How does this compare to the total units of 2 it takes to represent Reisha’s total points?"
+      },
+      {
+        "speaker": "students",
+        "text": "It takes half as many total units when we used units of 4."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why does it take fewer units when you use units of 4?"
+      },
+      {
+        "speaker": "students",
+        "text": "The units are bigger.  The units represent a larger amount."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can you use vertical tape diagrams to write a multiplication sentence to represent Reisha’s total points in all three games?"
+      },
+      {
+        "speaker": "students",
+        "text": "Multiply the total number of units times the value of each unit.  We can multiply 9 times 4."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a multiplication number sentence to show the total points Reisha scored in all three games."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 9 × 4 = 36.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many points did Reisha score in all three games?"
+      },
+      {
+        "speaker": "students",
+        "text": "36 points! Continue with the following possible suggestions: MULTIPLE MEANS MP.2 OF REPRESENTATION:  How many more units of 4 did you draw for Game 1 than Game 2? How does this help you find how many In Problem 1 of the Problem Set, some more points Reisha scored in Game 1 than in Game 2? students with perceptual challenges may have difficulty tracking rows of  Suppose Reisha scored 4 fewer points in Game 3. How stamps as they count. Have students many units of 4 do you need to erase from Game 3’s place a straightedge below each row as tape to show the new points? they count by fours. Students working  Reisha scores 21 points in a fourth game. Can you use below grade level may benefit from a units of 4 to represent the points Reisha scores in fluency drill that reviews the fours Game 4 on a vertical tape diagram? group count. ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 2 3 6"
+      }
+    ],
+    "teacherPrompts": [
+      "Turn your personal white board so your tape diagrams are vertical like mine. (Model.) Erase the brackets and the labels for the number of units and the points. How are these vertical tape diagrams similar to the picture graphs you made yesterday?",
+      "How are the vertical tape diagrams different from the picture graphs?",
+      "Nice observations. Put your finger on the tape that NOTES ON shows data about Game 1. Now, write a multiplication MULTIPLE MEANS equation to show the value of Game 1’s tape. OF ENGAGEMENT:",
+      "What is the value of Game 1’s tape? variables in their equations that",
+      "How did you know that the unit is points? three games. Celebrate all true expressions, particularly those that",
+      "Let’s write a title on our vertical tape diagrams to help and others may benefit from more others understand our data. What do the data on the scaffolded instruction for constructing vertical tape diagrams show us? and solving equations for three",
+      "Write Points Reisha Scores for your title. (Model appropriate placement of the title.) ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 2 3 6",
+      "Suppose each unit has a value of 4 points instead of 2 points. Talk to a partner. How many units should I draw to represent Reisha’s points in Game 1? How do you know?",
+      "Draw the 3 units vertically, and label each unit 4. (Model.) What label do we need for this tape?",
+      "How many total units of 4 does it take to represent the points Reisha scored in all three games?",
+      "How does this compare to the total units of 2 it takes to represent Reisha’s total points?",
+      "Why does it take fewer units when you use units of 4?",
+      "How can you use vertical tape diagrams to write a multiplication sentence to represent Reisha’s total points in all three games?",
+      "Write a multiplication number sentence to show the total points Reisha scored in all three games.",
+      "How many points did Reisha score in all three games?"
+    ],
+    "debriefPrompt": "How does multiplication help you interpret the vertical tape diagrams on the Problem Set?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Find the total number of stamps each student has. Draw tape diagrams with a unit size of 4 to show the number of stamps each student has. The first one has been done for you. Tanisha Each represents Dana 1 stamp. Raquel Anna Dana: 4 4 4 4 Tanisha: Raquel: Anna:",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "Explain how you can create vertical tape diagrams to show this data.",
+        "equations": []
+      },
+      {
+        "number": 3,
+        "prompt": "Complete the vertical tape diagrams below using the data from Problem 1. a. b. 4 8 4 8 Dana Tanisha Raquel Anna Dana Tanisha Raquel Anna c. What is a good title for the vertical tape diagrams? d. How many total units of 4 are in the vertical tape diagrams in Problem 3(a)? e. How many total units of 8 are in the vertical tape diagrams in Problem 3(b)? f. Compare your answers to parts (d) and (e). Why does the number of units change? g. Mattaeus looks at the vertical tape diagrams in Problem 3(b) and finds the total number of Anna's and Raquel's stamps by writing the equation 7 × 8 = 56. Explain his thinking.",
+        "equations": [
+          "7 × 8 = 56"
+        ]
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                Lesson 2 Problem Set 3 6\n\n\nName                                                                                 Date\n\n1.   Find the total number of stamps each student has. Draw tape diagrams with a unit size of 4 to show the\n     number of stamps each student has. The first one has been done for you.\n\n\n                                  Tanisha\n                                                                                              Each     represents\n          Dana                                                                                1 stamp.\n\n                                                                   Raquel\n\n                                                                                     Anna\n\n\n     Dana:         4     4            4               4\n\n\n     Tanisha:\n\n\n     Raquel:\n\n\n      Anna:\n\n\n2.   Explain how you can create vertical tape diagrams to show this data.\n\n\n                        Lesson 2:                 Rotate tape diagrams vertically.                              27\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                            Lesson 2 Problem Set 3 6\n\n\n3.   Complete the vertical tape diagrams below using the data from Problem 1.\n\n     a.                                                                                b.\n\n\n           4\n\n           4\n\n           4                                                                                 8\n\n           4                                                                                 8\n\n          Dana       Tanisha               Raquel             Anna                          Dana     Tanisha   Raquel   Anna\n\n\n     c.    What is a good title for the vertical tape diagrams?\n\n\n     d.    How many total units of 4 are in the vertical tape diagrams in Problem 3(a)?\n\n\n     e.    How many total units of 8 are in the vertical tape diagrams in Problem 3(b)?\n\n\n     f.    Compare your answers to parts (d) and (e). Why does the number of units change?\n\n\n     g.    Mattaeus looks at the vertical tape diagrams in Problem 3(b) and finds the total number of Anna’s\n           and Raquel’s stamps by writing the equation 7 × 8 = 56. Explain his thinking.\n\n\n                          Lesson 2:                 Rotate tape diagrams vertically.                                      28\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M6-TE-1.3.0 -0 8.2 0 15",
+    "answerKeyProblemSetText": "1.    Answer provided; 2 units of 4 drawn; 6 units of 4 drawn; 8 units of 4 drawn\n2.    Answers will vary.\n3.    a.   Answer provided; 2 units of 4 drawn; 6 units of 4 drawn; 8 units of 4 drawn\n      b.   Answer provided; 1 unit of 8 drawn; 3 units of 8 drawn; 4 units of 8 drawn\n      c.   Answers will vary.\n      d.   20\n      e.   10\n      f.   Answers will vary.\n      g.   Answers will vary.",
+    "answerKeyText": "A STORY OF UNITS                                                                 Lesson 2 Answer Key 3 6\n\n\nLesson 2\nProblem Set\n1.    Answer provided; 2 units of 4 drawn; 6 units of 4 drawn; 8 units of 4 drawn\n2.    Answers will vary.\n3.    a.   Answer provided; 2 units of 4 drawn; 6 units of 4 drawn; 8 units of 4 drawn\n      b.   Answer provided; 1 unit of 8 drawn; 3 units of 8 drawn; 4 units of 8 drawn\n      c.   Answers will vary.\n      d.   20\n      e.   10\n      f.   Answers will vary.\n      g.   Answers will vary.\n\n\nExit Ticket\na. 3 units of 4 drawn; 4 units of 4 drawn; 5 units of 4 drawn; 2 units of 4 drawn\nb. Answers will vary.\n\n\nHomework\n1.    Answer provided; 8 units of 2 drawn; 6 units of 2 drawn; 2 units of 2 drawn\n2.    Answers will vary.\n3.    a.   Answer provided; 8 units of 2 drawn; 6 units of 2 drawn; 2 units of 2 drawn\n      b.   Answer provided; 4 units of 4 drawn; 3 units of 4 drawn; 1 unit of 4 drawn\n      c.   Answers will vary.\n      d.   Answers will vary.\n      e.   6 × 2 = 12\n      f.   3 × 4 = 12\n      g.   Number and size of units; explanations will vary.\n\n\n                           Module 6:                 Collecting and Displaying Data                        147\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M6-TE-1.3.0 -0 8.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "tape-diagram",
+      "measurement-scale",
+      "graph-or-plot",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "may have difficulty tracking rows of"
+      ],
+      "tape-diagram": [
+        "Rotate tape diagrams vertically.",
+        "Materials: (S) Tape diagrams from Application Problem, personal white board",
+        "Problem 1: Rotate tape diagrams to make vertical tape diagrams with units of 2.",
+        "T: Turn your personal white board so your tape diagrams",
+        "are these vertical tape diagrams similar to the picture",
+        "tape diagrams represents 2 points.  The pictures on",
+        "does the unit in the vertical tape diagram.",
+        "T: How are the vertical tape diagrams different"
+      ],
+      "measurement-scale": [
+        "Rotate tape diagrams vertically.",
+        "Materials: (S) Tape diagrams from Application Problem, personal white board",
+        "Problem 1: Rotate tape diagrams to make vertical tape diagrams with units of 2.",
+        "T: Turn your personal white board so your tape diagrams",
+        "are these vertical tape diagrams similar to the picture",
+        "tape diagrams represents 2 points.  The pictures on",
+        "does the unit in the vertical tape diagram.",
+        "T: How are the vertical tape diagrams different"
+      ],
+      "graph-or-plot": [
+        "the picture graph had a value greater than 1, and so",
+        "from the picture graphs?",
+        "The pictures were separate in the picture graphs.",
+        "but in our picture graphs the value of the unit was"
+      ],
+      "money-model": [
+        "f. Compare your answers to parts (d) and (e). Why does the number of units change?"
+      ],
+      "picture-or-drawing": [
+        "Rotate tape diagrams vertically.",
+        "Materials: (S) Tape diagrams from Application Problem, personal white board",
+        "Problem 1: Rotate tape diagrams to make vertical tape diagrams with units of 2.",
+        "T: Turn your personal white board so your tape diagrams",
+        "are these vertical tape diagrams similar to the picture",
+        "tape diagrams represents 2 points.  The pictures on",
+        "the picture graph had a value greater than 1, and so",
+        "does the unit in the vertical tape diagram."
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Turn your personal white board so your tape diagrams are vertical like mine. (Model.) Erase the brackets and the labels for the number of units and the points. How are these vertical tape diagrams similar to the picture graphs you made yesterday?"
+      },
+      {
+        "speaker": "students",
+        "text": "They both show us data.  Each unit on the vertical tape diagrams represents 2 points.  The pictures on the picture graph had a value greater than 1, and so does the unit in the vertical tape diagram."
+      },
+      {
+        "speaker": "students",
+        "text": "The units are connected in the vertical tape diagrams. The pictures were separate in the picture graphs.  The units in the vertical tape diagrams are labeled, but in our picture graphs the value of the unit was shown on the bottom of the graph."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Nice observations. Put your finger on the tape that NOTES ON shows data about Game 1. Now, write a multiplication MULTIPLE MEANS equation to show the value of Game 1’s tape. OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 6 × 2 = 12.) Students working above grade level and others may use parentheses and"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s write a title on our vertical tape diagrams to help and others may benefit from more others understand our data. What do the data on the scaffolded instruction for constructing vertical tape diagrams show us? and solving equations for three"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write Points Reisha Scores for your title. (Model appropriate placement of the title.) ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 2 3 6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Suppose each unit has a value of 4 points instead of 2 points. Talk to a partner. How many units should I draw to represent Reisha’s points in Game 1? How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "Three units because she scored 12 points in Game 1, and 3 units of 4 points equals 12 points.  Three units because 3 × 4 = 12 or 12 ÷ 4 = 3.  Three units. The value of each unit is twice as much. Before we drew 6 units of 2, so now we draw half as many. Each new unit has the value of two old units."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw the 3 units vertically, and label each unit 4. (Model.) What label do we need for this tape?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How does this compare to the total units of 2 it takes to represent Reisha’s total points?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can you use vertical tape diagrams to write a multiplication sentence to represent Reisha’s total points in all three games?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a multiplication number sentence to show the total points Reisha scored in all three games."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 9 × 4 = 36.)"
+      },
+      {
+        "speaker": "students",
+        "text": "36 points! Continue with the following possible suggestions: MULTIPLE MEANS MP.2 OF REPRESENTATION:  How many more units of 4 did you draw for Game 1 than Game 2? How does this help you find how many In Problem 1 of the Problem Set, some more points Reisha scored in Game 1 than in Game 2? students with perceptual challenges may have difficulty tracking rows of  Suppose Reisha scored 4 fewer points in Game 3. How stamps as they count. Have students many units of 4 do you need to erase from Game 3’s place a straightedge below each row as tape to show the new points? they count by fours. Students working  Reisha scores 21 points in a fourth game. Can you use below grade level may benefit from a units of 4 to represent the points Reisha scores in fluency drill that reviews the fours Game 4 on a vertical tape diagram? group count. ©2015 Great Minds. eureka-math.org G 3-M6-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 2 3 6"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 22 (debrief) ---\nA STORY OF UNITS                                                                        Lesson 2 3 6\n\n\nLesson 2\nObjective: Rotate tape diagrams vertically.\n\nSuggested Lesson Structure\n\n Fluency Practice                 (9 minutes)\n Application Problem              (10 minutes)\n Concept Development              (31 minutes)\n Student Debrief                  (10 minutes)\n   Total Time                      (60 minutes)\n\n\nFluency Practice (9 minutes)\n\n Group Counting on a Vertical Number Line 3.OA.1                            (3 minutes)\n Read Tape Diagrams 3.MD.4                                                  (6 minutes)\n\nGroup Counting on a Vertical Number Line (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.               80\n    T:   (Project a vertical number line partitioned into intervals of 8, as shown.\n         Cover the number line so that only the numbers 0 and 16 show.) What                 64\n         is halfway between 0 and 16?\n    S:   8.\n    T:   (Write 8 on the first hash mark.)                                                   48\n\nContinue for the remaining hashes so that the number line shows increments of\neight to 80.                                                                                 32\n    T:   Let’s count by eights to 80.\nDirect students to count forward and backward to 80, occasionally changing the               16\ndirection of the count. Repeat the process using the following possible\nsuggestions:                                                                                 0\n        Sixes to 60\n        Sevens to 70\n        Nines to 90\n\n\n                        Lesson 2:                 Rotate tape diagrams vertically.                   21\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 23 (application-problem) ---\nA STORY OF UNITS                                                                       Lesson 2 3 6\n\n\nRead Tape Diagrams (6 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews the relationship between the value of each unit in a tape diagram and the\ntotal value of the tape diagram. It also reviews comparing tape diagrams in preparation for today’s lesson.\n    T:   (Project a tape diagram with 7 units.) Each unit in the tape diagram has a value of 4. Write a\n         multiplication sentence that represents the total value of the tape diagram.\n    S:   (Write 7 × 4 = 28.)\n    T:   What is the total value of the tape diagram?\n    S:   28.\nUse the same tape diagram. Repeat the process with the following suggested values for the units: 6, 3, 9, 7,\nand 8.\n    T:   (Project the tape diagrams as shown.)\n         What is the value of each unit in Tape        A:     8       8      8     8\n         Diagrams A and B?\n    S:   8.\n    T:   Write a multiplication sentence that          B:     8       8      8     8      8      8        8\n         represents the total value of Tape\n         Diagram A.\n    S:   (Write 4 × 8 = 32.)\n    T:   Write a multiplication sentence that represents the total value of Tape Diagram B.\n    S:   (Write 7 × 8 = 56.)\nContinue with the following possible questions:\n        What is the total value of both tape diagrams?\n        How many more units of 8 are in Tape Diagram B than in Tape Diagram A?\n        What is the difference in value between the 2 tape diagrams?\n\n\nApplication Problem (10 minutes)\n\nReisha played in three basketball games. She scored 12 points in Game 1, 8 points in Game 2, and 16 points\nin Game 3. Each basket that she made was worth 2 points. She uses tape diagrams with a unit size of 2 to\nrepresent the points she scored in each game. How many total units of 2 does it take to represent the points\nshe scored in all three games?\n\n\n                       Lesson 2:                  Rotate tape diagrams vertically.                            22\n\n                       ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 24 (concept-development) ---\nA STORY OF UNITS                                                                                    Lesson 2 3 6\n\n\nNote: This problem reviews building tape diagrams with a unit size larger than 1 in anticipation of students\nusing this same skill in the Concept Development. Ask students to solve this problem on personal white\nboards so that they can easily modify their work as they use it in the Concept Development. Invite students\nto discuss what the total number of units represents in relation to the three basketball games (18 total units\nof 2 is equal to 18 total baskets scored).\n\n\nConcept Development (31 minutes)\n\nMaterials: (S) Tape diagrams from Application Problem, personal white board\n\nProblem 1: Rotate tape diagrams to make vertical tape diagrams with units of 2.\n    T:   Turn your personal white board so your tape diagrams\n         are vertical like mine. (Model.) Erase the brackets and\n         the labels for the number of units and the points. How\n         are these vertical tape diagrams similar to the picture\n         graphs you made yesterday?\n    S:   They both show us data.  Each unit on the vertical\n         tape diagrams represents 2 points.  The pictures on\n         the picture graph had a value greater than 1, and so\n         does the unit in the vertical tape diagram.\n    T:   How are the vertical tape diagrams different\n         from the picture graphs?\n    S:   The units are connected in the vertical tape diagrams.\n         The pictures were separate in the picture graphs.\n          The units in the vertical tape diagrams are labeled,\n         but in our picture graphs the value of the unit was\n         shown on the bottom of the graph.\n    T:   Nice observations. Put your finger on the tape that                                 NOTES ON\n         shows data about Game 1. Now, write a multiplication                                MULTIPLE MEANS\n         equation to show the value of Game 1’s tape.                                        OF ENGAGEMENT:\n    S:   (Write 6 × 2 = 12.)                                                         Students working above grade level\n                                                                                     and others may use parentheses and\n    T:   What is the value of Game 1’s tape?\n                                                                                     variables in their equations that\n    S:   12 points!                                                                  represent the total points scored in all\n    T:   How did you know that the unit is points?                                   three games. Celebrate all true\n                                                                                     expressions, particularly those that\n    S:   The Application Problem says Reisha scores 12 points\n                                                                                     apply the distributive property.\n         in Game 1.\n                                                                                     Students working below grade level\n    T:   Let’s write a title on our vertical tape diagrams to help                   and others may benefit from more\n         others understand our data. What do the data on the                         scaffolded instruction for constructing\n         vertical tape diagrams show us?                                             and solving equations for three\n    S:   The points Reisha scores in three basketball games.                         addends (number of units) and the\n                                                                                     total points.\n    T:   Write Points Reisha Scores for your title. (Model\n         appropriate placement of the title.)\n\n\n                        Lesson 2:                 Rotate tape diagrams vertically.                                              23\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 25 (lesson-instruction) ---\nA STORY OF UNITS                                                                         Lesson 2 3 6\n\n\n    Problem 2: Draw vertical tape diagrams with units of 4.\n        T:   Suppose each unit has a value of 4 points instead of 2 points. Talk to a partner. How many units\n             should I draw to represent Reisha’s points in Game 1? How do you know?\n        S:   Three units because she scored 12 points in Game 1, and 3 units of 4 points equals 12 points.\n              Three units because 3 × 4 = 12 or 12 ÷ 4 = 3.  Three units. The value of each unit is twice as\n             much. Before we drew 6 units of 2, so now we draw half as many. Each new unit has the value of\n             two old units.\n        T:   Draw the 3 units vertically, and label each unit 4. (Model.) What label do we need for this tape?\n        S:   Game 1.\n    Continue the process for Games 2 and 3.\n        T: How many total units of 4 does it take to represent the points Reisha scored in all three games?\n        S: 9 units!\n        T: How does this compare to the total units of 2 it takes to represent Reisha’s total points?\n        S: It takes half as many total units when we used units of 4.\n        T: Why does it take fewer units when you use units of 4?\n        S: The units are bigger.  The units represent a larger amount.\n        T: How can you use vertical tape diagrams to write a multiplication sentence to represent Reisha’s\n           total points in all three games?\n       S: Multiply the total number of units times the value of each unit.  We can multiply 9 times 4.\n       T: Write a multiplication number sentence to show the total points Reisha scored in all three games.\n       S: (Write 9 × 4 = 36.)\n       T: How many points did Reisha score in all three games?\n       S: 36 points!\n                                                                                       NOTES ON\n   Continue with the following possible suggestions:                                   MULTIPLE MEANS\nMP.2                                                                                   OF REPRESENTATION:\n        How many more units of 4 did you draw for Game 1\n           than Game 2? How does this help you find how many                  In Problem 1 of the Problem Set, some\n           more points Reisha scored in Game 1 than in Game 2?                students with perceptual challenges\n                                                                              may have difficulty tracking rows of\n        Suppose Reisha scored 4 fewer points in Game 3. How\n                                                                              stamps as they count. Have students\n           many units of 4 do you need to erase from Game 3’s                 place a straightedge below each row as\n           tape to show the new points?                                       they count by fours. Students working\n        Reisha scores 21 points in a fourth game. Can you use                below grade level may benefit from a\n           units of 4 to represent the points Reisha scores in                fluency drill that reviews the fours\n           Game 4 on a vertical tape diagram?                                 group count.\n\n\n                             Lesson 2:                 Rotate tape diagrams vertically.                                24\n\n                             ©2015 Great Minds. eureka-math.org\n                             G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 26 (debrief) ---\nA STORY OF UNITS                                                                  Lesson 2 3 6\n\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Rotate tape diagrams vertically.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        How does multiplication help you interpret the\n         vertical tape diagrams on the Problem Set?\n        Could you display the data in Problem 1 in a\n         vertical tape diagram with units of 6? Why or\n         why not?\n        If the value of the unit for your vertical tape\n         diagrams in Problem 1 was 2 instead of 4, how\n         would the number of units change?\n        In what ways do vertical tape diagrams relate to\n         picture graphs?\n        How did today’s Application Problem relate to our\n         new learning?\n        In what ways did the Fluency Practice prepare you\n         for today’s lesson?\n\n\n                        Lesson 2:                 Rotate tape diagrams vertically.             25\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 27 (debrief) ---\nA STORY OF UNITS                                                                        Lesson 2 3 6\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that were presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 2:                 Rotate tape diagrams vertically.                           26\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 28 (problem-set) ---\nA STORY OF UNITS                                                                Lesson 2 Problem Set 3 6\n\n\nName                                                                                 Date\n\n1.   Find the total number of stamps each student has. Draw tape diagrams with a unit size of 4 to show the\n     number of stamps each student has. The first one has been done for you.\n\n\n                                  Tanisha\n                                                                                              Each     represents\n          Dana                                                                                1 stamp.\n\n                                                                   Raquel\n\n                                                                                     Anna\n\n\n     Dana:         4     4            4               4\n\n\n     Tanisha:\n\n\n     Raquel:\n\n\n      Anna:\n\n\n2.   Explain how you can create vertical tape diagrams to show this data.\n\n\n                        Lesson 2:                 Rotate tape diagrams vertically.                              27\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 29 (problem-set) ---\nA STORY OF UNITS                                                                            Lesson 2 Problem Set 3 6\n\n\n3.   Complete the vertical tape diagrams below using the data from Problem 1.\n\n     a.                                                                                b.\n\n\n           4\n\n           4\n\n           4                                                                                 8\n\n           4                                                                                 8\n\n          Dana       Tanisha               Raquel             Anna                          Dana     Tanisha   Raquel   Anna\n\n\n     c.    What is a good title for the vertical tape diagrams?\n\n\n     d.    How many total units of 4 are in the vertical tape diagrams in Problem 3(a)?\n\n\n     e.    How many total units of 8 are in the vertical tape diagrams in Problem 3(b)?\n\n\n     f.    Compare your answers to parts (d) and (e). Why does the number of units change?\n\n\n     g.    Mattaeus looks at the vertical tape diagrams in Problem 3(b) and finds the total number of Anna’s\n           and Raquel’s stamps by writing the equation 7 × 8 = 56. Explain his thinking.\n\n\n                          Lesson 2:                 Rotate tape diagrams vertically.                                      28\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 30 (exit-ticket) ---\nA STORY OF UNITS                                                                          Lesson 2 Exit Ticket 3 6\n\n\nName                                                                                     Date\n\nThe chart below shows a survey of the book club’s favorite type of book.\n\n\n                                               Book Club’s Favorite Type of Book\n\n                                           Type of Book                    Number of Votes\n\n                                                Mystery                             12\n\n                                              Biography                             16\n\n                                                 Fantasy                            20\n\n                                         Science Fiction                            8\n\n\n    a.   Draw tape diagrams with a unit size of 4 to represent the book club’s favorite type of book.\n\n\n    b.   Use your tape diagrams to draw vertical tape diagrams that represent the data.\n\n\n                       Lesson 2:                 Rotate tape diagrams vertically.                                  29\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 31 (homework) ---\nA STORY OF UNITS                                                                         Lesson 2 Homework 3 6\n\n\nName                                                                                          Date\n\n1.   Adi surveys third graders to find out their favorite fruits. The results are in the table below.\n\n\n                                                          Favorite Fruits of Third Graders\n\n                                                      Fruit             Number of Student Votes\n\n                                                    Banana                               8\n\n                                                      Apple                              16\n\n                                                Strawberry                               12\n\n                                                      Peach                              4\n\n\n     Draw units of 2 to complete the tape diagrams to show the total votes for each fruit. The first one has\n     been done for you.\n\n\n      Banana:           2           2             2          2\n\n\n      Apple:\n\n\n      Strawberry:\n\n\n       Peach:\n\n\n2.   Explain how you can create vertical tape diagrams to show this data.\n\n\n                            Lesson 2:                 Rotate tape diagrams vertically.                           30\n\n                            ©2015 Great Minds. eureka-math.org\n                            G 3-M6-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 32 (homework) ---\nA STORY OF UNITS                                                                               Lesson 2 Homework 3 6\n\n\n3.   Complete the vertical tape diagrams below using the data from Problem 1.\n\n     a.                                                                               b.\n\n\n          2\n\n          2\n\n          2                                                                                  4\n\n          2                                                                                  4\n\n      Banana        Apple         Strawberry                 Peach                         Banana     Apple   Strawberry   Peach\n\n\n     c.   What is a good title for the vertical tape diagrams?\n\n\n     d.   Compare the number of units used in the vertical tape diagrams in Problems 3(a) and 3(b). Why\n          does the number of units change?\n\n\n     e.   Write a multiplication number sentence to show the total number of votes for strawberry in the\n          vertical tape diagram in Problem 3(a).\n\n\n     f.   Write a multiplication number sentence to show the total number of votes for strawberry in the\n          vertical tape diagram in Problem 3(b).\n\n\n     g.   What changes in your multiplication number sentences in Problems 3(e) and (f)? Why?\n\n\n                         Lesson 2:                 Rotate tape diagrams vertically.                                           31\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M6-TE-1.3.0 -0 8.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 28,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                Lesson 2 Problem Set 3 6\n\n\nName                                                                                 Date\n\n1.   Find the total number of stamps each student has. Draw tape diagrams with a unit size of 4 to show the\n     number of stamps each student has. The first one has been done for you.\n\n\n                                  Tanisha\n                                                                                              Each     represents\n          Dana                                                                                1 stamp.\n\n                                                                   Raquel\n\n                                                                                     Anna\n\n\n     Dana:         4     4            4               4\n\n\n     Tanisha:\n\n\n     Raquel:\n\n\n      Anna:\n\n\n2.   Explain how you can create vertical tape diagrams to show this data.\n\n\n                        Lesson 2:                 Rotate tape diagrams vertically.                              27\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M6-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 29,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                            Lesson 2 Problem Set 3 6\n\n\n3.   Complete the vertical tape diagrams below using the data from Problem 1.\n\n     a.                                                                                b.\n\n\n           4\n\n           4\n\n           4                                                                                 8\n\n           4                                                                                 8\n\n          Dana       Tanisha               Raquel             Anna                          Dana     Tanisha   Raquel   Anna\n\n\n     c.    What is a good title for the vertical tape diagrams?\n\n\n     d.    How many total units of 4 are in the vertical tape diagrams in Problem 3(a)?\n\n\n     e.    How many total units of 8 are in the vertical tape diagrams in Problem 3(b)?\n\n\n     f.    Compare your answers to parts (d) and (e). Why does the number of units change?\n\n\n     g.    Mattaeus looks at the vertical tape diagrams in Problem 3(b) and finds the total number of Anna’s\n           and Raquel’s stamps by writing the equation 7 × 8 = 56. Explain his thinking.\n\n\n                          Lesson 2:                 Rotate tape diagrams vertically.                                      28\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M6-TE-1.3.0 -0 8.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 148,
+        "text": "A STORY OF UNITS                                                                 Lesson 2 Answer Key 3 6\n\n\nLesson 2\nProblem Set\n1.    Answer provided; 2 units of 4 drawn; 6 units of 4 drawn; 8 units of 4 drawn\n2.    Answers will vary.\n3.    a.   Answer provided; 2 units of 4 drawn; 6 units of 4 drawn; 8 units of 4 drawn\n      b.   Answer provided; 1 unit of 8 drawn; 3 units of 8 drawn; 4 units of 8 drawn\n      c.   Answers will vary.\n      d.   20\n      e.   10\n      f.   Answers will vary.\n      g.   Answers will vary.\n\n\nExit Ticket\na. 3 units of 4 drawn; 4 units of 4 drawn; 5 units of 4 drawn; 2 units of 4 drawn\nb. Answers will vary.\n\n\nHomework\n1.    Answer provided; 8 units of 2 drawn; 6 units of 2 drawn; 2 units of 2 drawn\n2.    Answers will vary.\n3.    a.   Answer provided; 8 units of 2 drawn; 6 units of 2 drawn; 2 units of 2 drawn\n      b.   Answer provided; 4 units of 4 drawn; 3 units of 4 drawn; 1 unit of 4 drawn\n      c.   Answers will vary.\n      d.   Answers will vary.\n      e.   6 × 2 = 12\n      f.   3 × 4 = 12\n      g.   Number and size of units; explanations will vary.\n\n\n                           Module 6:                 Collecting and Displaying Data                        147\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M6-TE-1.3.0 -0 8.2 0 15"
+      }
+    ]
+  }
+}

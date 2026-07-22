@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m4-l3",
+  "moduleId": "m4",
+  "lessonNumber": 3,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+    "teacherEditionBytes": 10725683,
+    "lessonPdfPages": {
+      "start": 32,
+      "end": 43
+    },
+    "problemSetPdfPages": [
+      37,
+      38
+    ],
+    "exitTicketPdfPages": [
+      39
+    ],
+    "homeworkPdfPages": [
+      40,
+      41
+    ],
+    "answerKeyPdfPages": [
+      218
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m4-student/workbook-page-010.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m4-teacher/page-037.png",
+      "/source-pages/m4-teacher/page-038.png",
+      "/source-pages/m4-teacher/page-218.png"
+    ]
+  },
+  "objective": "Model tiling with centimeter and inch unit squares as a strategy to measure area.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "Jace uses paper squares to create a rectangle. Clary cuts all of Jace’s squares in half to create triangles.\nShe uses all the triangles to make a rectangle. There are 16 triangles in Clary’s rectangle. How many squares\nwere in Jace’s shape?\nThe following are possible student solutions:\n        Dividing\n\n\n        Drawing a picture\n\n\n        Skip-counting by twos\n\n\nNote: This problem reviews multiplying or dividing by units of 2 from Module 1, depending on how students\nsolve. Invite students to share their strategies for solving.\n\n\n                        Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to                       32\n                                                   measure area.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 3 3 4",
+    "conceptDevelopmentText": "Centimeter Grid                    Inch Grid\n\nMaterials: (S) Square centimeter and square inch tiles\n           (from Lesson 2), centimeter grid (Template 1) and\n           inch grid (Template 2), ruler, personal white board\n\nPass out 10 square centimeter tiles to each student.\n    T:   Arrange all of your square tiles in 2 equal rows to\n         create a rectangle. Make sure the tiles are touching\n         and do not overlap. (Allow students time to create a\n         rectangle.) What is the area of your rectangle?\n    S:   10 square units.\n    T:   Is there another way you could arrange all of your tiles\n         to make a rectangle?\n                                                                                                                          NOTES ON\n    S:   We could make 5 rows of 2.  Or, 1 row of 10.\n                                                                                                                          MULTIPLE MEANS\n    T:   Make 1 row of 10. (Allow students time to make a new                                                             OF ACTION AND\n         rectangle.) What is the area of your rectangle now?\n                                                                                                                          EXPRESSION:\n    S:   It is still 10 square units!\n                                                                                                               Offer an alternative to drawing,\n    T:   Use your ruler to measure all four sides of a tile in                                                 shading, and erasing rectangles using a\n         centimeters. (Wait for students to measure.)                                                          marker. Some students may find it\n         Can we define these units more precisely?                                                             easier to represent and shade\n    S:   Yes, they’re square centimeters.  Yes, all four sides                                                rectangles using an interactive white\n                                                                                                               board or personal computer.\n         measure 1 centimeter, so they are square centimeters.\n    T:   What is the area of your rectangle in square\n         centimeters?\n    S:   10 square centimeters.\n    T:   (Pass out the centimeter grid.) Slip the grid paper into\n         your personal white board. Each side of the squares in                                                           NOTES ON\n         the grid measures 1 centimeter. How is this grid paper                                                           MULTIPLE MEANS\n         like the tiles we used?                                                                                          OF ACTION\n    S:   They are both square centimeters.                                                                                AND EXPRESSION:\n    T:   Shade the grid paper to represent the rectangle you                                                   Support English language learners as\n         made with tiles.                                                                                      they compose their written response to\n    S:   (Shade grid paper.)                                                                                   Problem 3. Discussing their reasoning\n                                                                                                               with a partner before writing may be\n    T:   Remove a tile from your rectangle, making sure your                                                   advantageous. Encourage students to\n         tiles all still touch to form a rectangle. (Pause.) What                                              use area and square units in their\n         is the area of the rectangle now?                                                                     response. Request that students\n    S:   9 square centimeters!                                                                                 clarify, if necessary, and guide the\n                                                                                                               elaboration of their ideas.\n    T:   How can you change the rectangle on the grid paper to\n         have the same area as your new tile rectangle?\n    S:   Erase one of the squares.\n\n\n                       Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to                                    33\n                                                  measure area.\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 3 3 4\n\n\n    T:   Go ahead and do that. (Students erase a square.) What is the area of the shaded rectangle?\n    S:   9 square centimeters.\nRepeat this process using the inch grid and inch tiles. If time allows, students can shade a shape for a partner,\nwho then finds the area of the shape. Then, they can erase squares to create shapes with smaller areas.\nAs students are ready, they can begin drawing shapes using squares rather than just erasing them.",
+    "fluencyPracticeText": " Find the Common Products 3.OA.7                                  (7 minutes)\n Count the Square Units 3.MD.6                                    (6 minutes)\n\nFind the Common Products (7 minutes)\nMaterials: (S) Blank paper\n\nNote: This fluency activity reviews multiplication patterns from Module 3.\n    T:   Fold your paper in half vertically. Unfold your paper. On the left\n         half, count by threes to 30 down the side of your paper. On the\n         right half, count by sixes to 60 down the side of your paper.\n         Draw a line to match the products that appear in both columns.\n    S:   (Match 6, 12, 18, 24, and 30.)\n    T:   (Write       × 3 = 6,     × 3 = 12,      × 3 = 18,      × 3 = 24,\n         and      × 3 = 30 next to each matched product on the left\n         half of the paper.) Write the equations next to their\n         products like I did, completing the unknown factors.\n    S:   (Write equations and complete unknowns.)\n    T:   (Write 6 =      × 6, 12 =      × 6, 18 =      × 6, 24 =     × 6, and\n         30 =      × 6 next to each matched product on the left half of the\n         paper.) Write the equations next to their products like I did,\n         completing the unknown factors.\n    S:   (Write equations and complete unknowns.)\n\n\n                        Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to                       31\n                                                   measure area.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 3 3 4\n\n\n    T:   (Write 2 × 3 =     × 6.) Say the equation, completing the unknown factor.\n    S:   2 × 3 = 1 × 6.                                                  Figures for Count the Square Units\n    T:   (Write 2 × 3 = 1 × 6.) Write the remaining equal facts as\n                                                                        Figure 1\n         equations.\n    S:   (Write 4 × 3 = 2 × 6, 6 × 3 = 3 × 6, 8 × 3 = 4 × 6, and\n         10 × 3 = 5 × 6.)                                               Figure 2\n    T:   What is the pattern in your equations?\n    S:   Each multiple of 6 is also a multiple of 3.\n                                                                                                            Figure 3\nCount the Square Units (6 minutes)\nNote: This fluency activity reviews finding total area using\nsquare units.                                                                                               Figure 4\n    T:   (Project a 1 × 5 tiled array similar to Figure 1 on the\n         right.) What’s the area of the rectangle? (Pause.)\n    S:   5 square units.\n                                                                                                            Figure 5\nContinue with Figures 2–5.",
+    "problemSetGuidanceText": "Inch and centimeter grid paper are required for some of these problems. Students should do their personal\nbest to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to\nmodify the assignment by specifying which problems they work on first. Some problems do not specify a\nmethod for solving. Students should solve these problems using the RDW approach used for Application\nProblems.",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Arrange all of your square tiles in 2 equal rows to create a rectangle. Make sure the tiles are touching and do not overlap. (Allow students time to create a rectangle.) What is the area of your rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "10 square units."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is there another way you could arrange all of your tiles to make a rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "We could make 5 rows of 2.  Or, 1 row of 10. MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Make 1 row of 10. (Allow students time to make a new OF ACTION AND rectangle.) What is the area of your rectangle now? EXPRESSION:"
+      },
+      {
+        "speaker": "students",
+        "text": "It is still 10 square units! Offer an alternative to drawing,"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your ruler to measure all four sides of a tile in shading, and erasing rectangles using a centimeters. (Wait for students to measure.) marker. Some students may find it Can we define these units more precisely? easier to represent and shade"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes, they’re square centimeters.  Yes, all four sides rectangles using an interactive white board or personal computer. measure 1 centimeter, so they are square centimeters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the area of your rectangle in square centimeters?"
+      },
+      {
+        "speaker": "students",
+        "text": "10 square centimeters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Pass out the centimeter grid.) Slip the grid paper into your personal white board. Each side of the squares in NOTES ON the grid measures 1 centimeter. How is this grid paper MULTIPLE MEANS like the tiles we used? OF ACTION"
+      },
+      {
+        "speaker": "students",
+        "text": "They are both square centimeters. AND EXPRESSION:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Shade the grid paper to represent the rectangle you Support English language learners as made with tiles. they compose their written response to"
+      },
+      {
+        "speaker": "students",
+        "text": "(Shade grid paper.) Problem 3. Discussing their reasoning with a partner before writing may be"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Remove a tile from your rectangle, making sure your advantageous. Encourage students to tiles all still touch to form a rectangle. (Pause.) What use area and square units in their is the area of the rectangle now? response. Request that students"
+      },
+      {
+        "speaker": "students",
+        "text": "9 square centimeters! clarify, if necessary, and guide the elaboration of their ideas."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can you change the rectangle on the grid paper to have the same area as your new tile rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "Erase one of the squares. measure area. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 3 3 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Go ahead and do that. (Students erase a square.) What is the area of the shaded rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "9 square centimeters. Repeat this process using the inch grid and inch tiles. If time allows, students can shade a shape for a partner, who then finds the area of the shape. Then, they can erase squares to create shapes with smaller areas. As students are ready, they can begin drawing shapes using squares rather than just erasing them."
+      }
+    ],
+    "teacherPrompts": [
+      "Arrange all of your square tiles in 2 equal rows to create a rectangle. Make sure the tiles are touching and do not overlap. (Allow students time to create a rectangle.) What is the area of your rectangle?",
+      "Is there another way you could arrange all of your tiles to make a rectangle?",
+      "Make 1 row of 10. (Allow students time to make a new OF ACTION AND rectangle.) What is the area of your rectangle now? EXPRESSION:",
+      "Use your ruler to measure all four sides of a tile in shading, and erasing rectangles using a centimeters. (Wait for students to measure.) marker. Some students may find it Can we define these units more precisely? easier to represent and shade",
+      "What is the area of your rectangle in square centimeters?",
+      "(Pass out the centimeter grid.) Slip the grid paper into your personal white board. Each side of the squares in NOTES ON the grid measures 1 centimeter. How is this grid paper MULTIPLE MEANS like the tiles we used? OF ACTION",
+      "Shade the grid paper to represent the rectangle you Support English language learners as made with tiles. they compose their written response to",
+      "Remove a tile from your rectangle, making sure your advantageous. Encourage students to tiles all still touch to form a rectangle. (Pause.) What use area and square units in their is the area of the rectangle now? response. Request that students",
+      "How can you change the rectangle on the grid paper to have the same area as your new tile rectangle?",
+      "Go ahead and do that. (Students erase a square.) What is the area of the shaded rectangle?"
+    ],
+    "debriefPrompt": "How are the rectangles in Problems 1(b) and 1(c) the same? How are they different?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Each is 1 square unit. What is the area of each of the following rectangles? A: square units A B B: ____ C: ____ C D D: ____",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "Each is 1 square unit. What is the area of each of the following rectangles? a. b. ____ ____ c. d. ____ ____ measure area. a. How would the rectangles in Problem 1 be different if they were composed of square inches? b. Select one rectangle from Problem 1 and recreate it on square inch and square centimeter grid paper. 4. Use a separate piece of square centimeter grid paper. Draw four different rectangles that each has an area of 8 square centimeters. measure area.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                          Lesson 3 Problem Set 3 4\n\n\nName                                                                                                            Date\n\n1.   Each        is 1 square unit. What is the area of each of the following rectangles?\n\n\n                                                                                                                 A:                   square units\n\n\n                        A                                              B\n                                                                                                                 B: ___________________________\n\n\n                                                                                                                 C: ___________________________\n\n\n                        C                                                     D                                  D: ___________________________\n\n\n2.   Each        is 1 square unit. What is the area of each of the following rectangles?\n\n\n          a.                                                                                            b.\n\n\n         ____________________________                                                             ____________________________\n\n\n          c.                                                                                            d.\n\n\n          ____________________________                                                             ____________________________\n\n\n                            Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to                     36\n                                                       measure area.\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                      Lesson 3 Problem Set 3 4\n\n\n3.   a.   How would the rectangles in Problem 1 be different if they were composed of square inches?\n\n\n     b.   Select one rectangle from Problem 1 and recreate it on square inch and square centimeter grid\n          paper.\n\n\n4.   Use a separate piece of square centimeter grid paper. Draw four different rectangles that each has an\n     area of 8 square centimeters.\n\n\n                        Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to            37\n                                                   measure area.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    A: 6                                                                       3.       a. Answers will vary.\n      B: 2 square units                                                                   b. Answers will vary.\n      C: 12 square units                                                         4.       Answers will vary.\n      D: 20 square units\n2.    a. 6 square units\n      b. 9 square units\n      c. 16 square units\n      d. 12 square units",
+    "answerKeyText": "A STORY OF UNITS                                                                                            Lesson 3 Answer Key 3 4\n\n\nLesson 3\nProblem Set\n1.    A: 6                                                                       3.       a. Answers will vary.\n      B: 2 square units                                                                   b. Answers will vary.\n      C: 12 square units                                                         4.       Answers will vary.\n      D: 20 square units\n2.    a. 6 square units\n      b. 9 square units\n      c. 16 square units\n      d. 12 square units\n\n\nExit Ticket\n1.    12 square units; rectangle with an area of 12 square units drawn\n2.    No, this rectangle’s area is 16 square units.\n\n\nHomework\n1.    A: 5                                                                       3.       A: 10; rectangle with an area of 10 square\n      B: 15 square units                                                                  units drawn\n      C: 12 square units                                                                  B: 9 square units; rectangle with an area of\n      D: 20 square units                                                                  9 square units drawn\n2.    a. 9 square units                                                                   C: 12 square units; rectangle with an area of\n      b. 24 square units                                                                  12 square units drawn\n      c. 8 square units\n      d. 18 square units\n\n\n                        Module 4:                  Multiplication and Area                                                                217\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "ruler-or-length",
+      "area-model",
+      "geometry-diagram",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "S: We could make 5 rows of 2.  Or, 1 row of 10.",
+        "T: Make 1 row of 10. (Allow students time to make a new OF ACTION AND",
+        "T: (Project a 1 × 5 tiled array similar to Figure 1 on the"
+      ],
+      "ruler-or-length": [
+        "Model tiling with centimeter and inch unit squares as a strategy to measure area.",
+        "Lesson 3: Model tiling with centimeter and inch unit squares as a strategy to 32",
+        "Centimeter Grid Inch Grid",
+        "Materials: (S) Square centimeter and square inch tiles",
+        "(from Lesson 2), centimeter grid (Template 1) and",
+        "inch grid (Template 2), ruler, personal white board",
+        "Pass out 10 square centimeter tiles to each student.",
+        "T: Use your ruler to measure all four sides of a tile in shading, and erasing rectangles using a"
+      ],
+      "area-model": [
+        "S: 10 square units.",
+        "S: It is still 10 square units!",
+        "tiles all still touch to form a rectangle. (Pause.) What use area and square units in their",
+        " Count the Square Units 3.MD.6 (6 minutes)",
+        "S: 2 × 3 = 1 × 6. Figures for Count the Square Units",
+        "Count the Square Units (6 minutes)",
+        "square units. Figure 4",
+        "S: 5 square units."
+      ],
+      "geometry-diagram": [
+        "Jace uses paper squares to create a rectangle. Clary cuts all of Jace’s squares in half to create triangles.",
+        "She uses all the triangles to make a rectangle. There are 16 triangles in Clary’s rectangle. How many squares",
+        "create a rectangle. Make sure the tiles are touching",
+        "rectangle.) What is the area of your rectangle?",
+        "to make a rectangle?",
+        "rectangle.) What is the area of your rectangle now?",
+        "T: Use your ruler to measure all four sides of a tile in shading, and erasing rectangles using a",
+        "S: Yes, they’re square centimeters.  Yes, all four sides rectangles using an interactive white"
+      ],
+      "money-model": [
+        "Model tiling with centimeter and inch unit squares as a strategy to measure area.",
+        "Lesson 3: Model tiling with centimeter and inch unit squares as a strategy to 32",
+        "Centimeter Grid Inch Grid",
+        "Materials: (S) Square centimeter and square inch tiles",
+        "(from Lesson 2), centimeter grid (Template 1) and",
+        "Pass out 10 square centimeter tiles to each student.",
+        "centimeters. (Wait for students to measure.) marker. Some students may find it",
+        "S: Yes, they’re square centimeters.  Yes, all four sides rectangles using an interactive white"
+      ],
+      "picture-or-drawing": [
+        " Drawing a picture",
+        "Offer an alternative to drawing,",
+        "Can we define these units more precisely? easier to represent and shade",
+        "T: Shade the grid paper to represent the rectangle you Support English language learners as",
+        "S: (Shade grid paper.) Problem 3. Discussing their reasoning",
+        "T: Go ahead and do that. (Students erase a square.) What is the area of the shaded rectangle?",
+        "Repeat this process using the inch grid and inch tiles. If time allows, students can shade a shape for a partner,",
+        "As students are ready, they can begin drawing shapes using squares rather than just erasing them."
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "students",
+        "text": "It is still 10 square units! Offer an alternative to drawing,"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your ruler to measure all four sides of a tile in shading, and erasing rectangles using a centimeters. (Wait for students to measure.) marker. Some students may find it Can we define these units more precisely? easier to represent and shade"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Shade the grid paper to represent the rectangle you Support English language learners as made with tiles. they compose their written response to"
+      },
+      {
+        "speaker": "students",
+        "text": "(Shade grid paper.) Problem 3. Discussing their reasoning with a partner before writing may be"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Remove a tile from your rectangle, making sure your advantageous. Encourage students to tiles all still touch to form a rectangle. (Pause.) What use area and square units in their is the area of the rectangle now? response. Request that students"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Go ahead and do that. (Students erase a square.) What is the area of the shaded rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "9 square centimeters. Repeat this process using the inch grid and inch tiles. If time allows, students can shade a shape for a partner, who then finds the area of the shape. Then, they can erase squares to create shapes with smaller areas. As students are ready, they can begin drawing shapes using squares rather than just erasing them."
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 32 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 3 3 4\n\n\nLesson 3\nObjective: Model tiling with centimeter and inch unit squares as a strategy\nto measure area.\n\nSuggested Lesson Structure\n\n Fluency Practice                 (13 minutes)\n Application Problem              (5 minutes)\n Concept Development              (32 minutes)\n Student Debrief                  (10 minutes)\n   Total Time                      (60 minutes)\n\n\nFluency Practice (13 minutes)\n\n Find the Common Products 3.OA.7                                  (7 minutes)\n Count the Square Units 3.MD.6                                    (6 minutes)\n\nFind the Common Products (7 minutes)\nMaterials: (S) Blank paper\n\nNote: This fluency activity reviews multiplication patterns from Module 3.\n    T:   Fold your paper in half vertically. Unfold your paper. On the left\n         half, count by threes to 30 down the side of your paper. On the\n         right half, count by sixes to 60 down the side of your paper.\n         Draw a line to match the products that appear in both columns.\n    S:   (Match 6, 12, 18, 24, and 30.)\n    T:   (Write       × 3 = 6,     × 3 = 12,      × 3 = 18,      × 3 = 24,\n         and      × 3 = 30 next to each matched product on the left\n         half of the paper.) Write the equations next to their\n         products like I did, completing the unknown factors.\n    S:   (Write equations and complete unknowns.)\n    T:   (Write 6 =      × 6, 12 =      × 6, 18 =      × 6, 24 =     × 6, and\n         30 =      × 6 next to each matched product on the left half of the\n         paper.) Write the equations next to their products like I did,\n         completing the unknown factors.\n    S:   (Write equations and complete unknowns.)\n\n\n                        Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to                       31\n                                                   measure area.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 33 (application-problem) ---\nA STORY OF UNITS                                                                                                               Lesson 3 3 4\n\n\n    T:   (Write 2 × 3 =     × 6.) Say the equation, completing the unknown factor.\n    S:   2 × 3 = 1 × 6.                                                  Figures for Count the Square Units\n    T:   (Write 2 × 3 = 1 × 6.) Write the remaining equal facts as\n                                                                        Figure 1\n         equations.\n    S:   (Write 4 × 3 = 2 × 6, 6 × 3 = 3 × 6, 8 × 3 = 4 × 6, and\n         10 × 3 = 5 × 6.)                                               Figure 2\n    T:   What is the pattern in your equations?\n    S:   Each multiple of 6 is also a multiple of 3.\n                                                                                                            Figure 3\nCount the Square Units (6 minutes)\nNote: This fluency activity reviews finding total area using\nsquare units.                                                                                               Figure 4\n    T:   (Project a 1 × 5 tiled array similar to Figure 1 on the\n         right.) What’s the area of the rectangle? (Pause.)\n    S:   5 square units.\n                                                                                                            Figure 5\nContinue with Figures 2–5.\n\n\nApplication Problem (5 minutes)\n\nJace uses paper squares to create a rectangle. Clary cuts all of Jace’s squares in half to create triangles.\nShe uses all the triangles to make a rectangle. There are 16 triangles in Clary’s rectangle. How many squares\nwere in Jace’s shape?\nThe following are possible student solutions:\n        Dividing\n\n\n        Drawing a picture\n\n\n        Skip-counting by twos\n\n\nNote: This problem reviews multiplying or dividing by units of 2 from Module 1, depending on how students\nsolve. Invite students to share their strategies for solving.\n\n\n                        Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to                       32\n                                                   measure area.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 34 (concept-development) ---\nA STORY OF UNITS                                                                                                              Lesson 3 3 4\n\n\nConcept Development (32 minutes)                                                                    Centimeter Grid                    Inch Grid\n\nMaterials: (S) Square centimeter and square inch tiles\n           (from Lesson 2), centimeter grid (Template 1) and\n           inch grid (Template 2), ruler, personal white board\n\nPass out 10 square centimeter tiles to each student.\n    T:   Arrange all of your square tiles in 2 equal rows to\n         create a rectangle. Make sure the tiles are touching\n         and do not overlap. (Allow students time to create a\n         rectangle.) What is the area of your rectangle?\n    S:   10 square units.\n    T:   Is there another way you could arrange all of your tiles\n         to make a rectangle?\n                                                                                                                          NOTES ON\n    S:   We could make 5 rows of 2.  Or, 1 row of 10.\n                                                                                                                          MULTIPLE MEANS\n    T:   Make 1 row of 10. (Allow students time to make a new                                                             OF ACTION AND\n         rectangle.) What is the area of your rectangle now?\n                                                                                                                          EXPRESSION:\n    S:   It is still 10 square units!\n                                                                                                               Offer an alternative to drawing,\n    T:   Use your ruler to measure all four sides of a tile in                                                 shading, and erasing rectangles using a\n         centimeters. (Wait for students to measure.)                                                          marker. Some students may find it\n         Can we define these units more precisely?                                                             easier to represent and shade\n    S:   Yes, they’re square centimeters.  Yes, all four sides                                                rectangles using an interactive white\n                                                                                                               board or personal computer.\n         measure 1 centimeter, so they are square centimeters.\n    T:   What is the area of your rectangle in square\n         centimeters?\n    S:   10 square centimeters.\n    T:   (Pass out the centimeter grid.) Slip the grid paper into\n         your personal white board. Each side of the squares in                                                           NOTES ON\n         the grid measures 1 centimeter. How is this grid paper                                                           MULTIPLE MEANS\n         like the tiles we used?                                                                                          OF ACTION\n    S:   They are both square centimeters.                                                                                AND EXPRESSION:\n    T:   Shade the grid paper to represent the rectangle you                                                   Support English language learners as\n         made with tiles.                                                                                      they compose their written response to\n    S:   (Shade grid paper.)                                                                                   Problem 3. Discussing their reasoning\n                                                                                                               with a partner before writing may be\n    T:   Remove a tile from your rectangle, making sure your                                                   advantageous. Encourage students to\n         tiles all still touch to form a rectangle. (Pause.) What                                              use area and square units in their\n         is the area of the rectangle now?                                                                     response. Request that students\n    S:   9 square centimeters!                                                                                 clarify, if necessary, and guide the\n                                                                                                               elaboration of their ideas.\n    T:   How can you change the rectangle on the grid paper to\n         have the same area as your new tile rectangle?\n    S:   Erase one of the squares.\n\n\n                       Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to                                    33\n                                                  measure area.\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 35 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 3 3 4\n\n\n    T:   Go ahead and do that. (Students erase a square.) What is the area of the shaded rectangle?\n    S:   9 square centimeters.\nRepeat this process using the inch grid and inch tiles. If time allows, students can shade a shape for a partner,\nwho then finds the area of the shape. Then, they can erase squares to create shapes with smaller areas.\nAs students are ready, they can begin drawing shapes using squares rather than just erasing them.\n\nProblem Set (10 minutes)\nInch and centimeter grid paper are required for some of these problems. Students should do their personal\nbest to complete the Problem Set within the allotted 10 minutes. For some classes, it may be appropriate to\nmodify the assignment by specifying which problems they work on first. Some problems do not specify a\nmethod for solving. Students should solve these problems using the RDW approach used for Application\nProblems.\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Model tiling with centimeter and inch unit squares as a strategy to measure area.\nThe Student Debrief is intended to invite reflection and active processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        How are the rectangles in Problems 1(b) and 1(c)\n         the same? How are they different?\n        How are the rectangles in Problems 1(a) and 2(a)\n         the same? How are they different?\n        Which rectangle in Problem 2 has the largest\n         area? How do you know?\n        Compare the rectangles you made in Problem 4\n         with a partner’s rectangles. How are they the\n         same? How are they different?\n\n\n                        Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to                       34\n                                                   measure area.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 36 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 3 3 4\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                                                                                                 Examples of Problem 3(b) and Problem 4\n\n\n                       Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to                       35\n                                                  measure area.\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 37 (problem-set) ---\nA STORY OF UNITS                                                                                          Lesson 3 Problem Set 3 4\n\n\nName                                                                                                            Date\n\n1.   Each        is 1 square unit. What is the area of each of the following rectangles?\n\n\n                                                                                                                 A:                   square units\n\n\n                        A                                              B\n                                                                                                                 B: ___________________________\n\n\n                                                                                                                 C: ___________________________\n\n\n                        C                                                     D                                  D: ___________________________\n\n\n2.   Each        is 1 square unit. What is the area of each of the following rectangles?\n\n\n          a.                                                                                            b.\n\n\n         ____________________________                                                             ____________________________\n\n\n          c.                                                                                            d.\n\n\n          ____________________________                                                             ____________________________\n\n\n                            Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to                     36\n                                                       measure area.\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 38 (problem-set) ---\nA STORY OF UNITS                                                                                      Lesson 3 Problem Set 3 4\n\n\n3.   a.   How would the rectangles in Problem 1 be different if they were composed of square inches?\n\n\n     b.   Select one rectangle from Problem 1 and recreate it on square inch and square centimeter grid\n          paper.\n\n\n4.   Use a separate piece of square centimeter grid paper. Draw four different rectangles that each has an\n     area of 8 square centimeters.\n\n\n                        Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to            37\n                                                   measure area.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 39 (exit-ticket) ---\nA STORY OF UNITS                                                                                            Lesson 3 Exit Ticket 3 4\n\n\nName                                                                                                         Date\n\n1.   Each         is 1 square unit. Write the area of Rectangle A. Then, draw a different rectangle with the\n     same area in the space provided.\n\n\n                   A\n\n\n     Area = ____________________________\n\n\n2.   Each          is 1 square unit. Does this rectangle have the same area as Rectangle A? Explain.\n\n\n                         Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to                 38\n                                                    measure area.\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 40 (homework) ---\nA STORY OF UNITS                                                                                          Lesson 3 Homework 3 4\n\n\nName                                                                                                         Date\n\n1.   Each        is 1 square unit. What is the area of each of the following rectangles?\n\n\n                                                                                                                        A:         square units\n\n                A                                           B\n\n                                                                                                                        B: __________________\n\n\n                                                                                                                        C: __________________\n\n\n                 C                                                 D\n                                                                                                                        D: __________________\n\n\n2.   Each       is 1 square unit. What is the area of each of the following rectangles?\n\n\n      a.                                                                         b.\n\n\n      c.                                                                          d.\n\n\n                        Lesson 3:                   Model tiling with centimeter and inch unit squares as a strategy to                           39\n                                                    measure area.\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 41 (homework) ---\nA STORY OF UNITS                                                                                           Lesson 3 Homework 3 4\n\n\n3.    Each          is 1 square unit. Write the area of each rectangle. Then, draw a different rectangle with the\n      same area in the space provided.\n\n\n                             A\n\n\n     Area = ___________________ square units\n\n\n                B\n\n\n     Area = _____________________________\n\n\n                C\n\n\n     Area = _____________________________\n\n\n                          Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to            40\n                                                     measure area.\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 42 (template) ---\nA STORY OF UNITS                                                                                        Lesson 3 Template 1 3\n\n\ncentimeter grid\n\n\n                      Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to               41\n                                                 measure area.\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 43 (template) ---\nA STORY OF UNITS                                                                                        Lesson 3 Template 2 3\n\n\ninch grid\n\n\n                      Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to               42\n                                                 measure area.\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 37,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                          Lesson 3 Problem Set 3 4\n\n\nName                                                                                                            Date\n\n1.   Each        is 1 square unit. What is the area of each of the following rectangles?\n\n\n                                                                                                                 A:                   square units\n\n\n                        A                                              B\n                                                                                                                 B: ___________________________\n\n\n                                                                                                                 C: ___________________________\n\n\n                        C                                                     D                                  D: ___________________________\n\n\n2.   Each        is 1 square unit. What is the area of each of the following rectangles?\n\n\n          a.                                                                                            b.\n\n\n         ____________________________                                                             ____________________________\n\n\n          c.                                                                                            d.\n\n\n          ____________________________                                                             ____________________________\n\n\n                            Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to                     36\n                                                       measure area.\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 38,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                      Lesson 3 Problem Set 3 4\n\n\n3.   a.   How would the rectangles in Problem 1 be different if they were composed of square inches?\n\n\n     b.   Select one rectangle from Problem 1 and recreate it on square inch and square centimeter grid\n          paper.\n\n\n4.   Use a separate piece of square centimeter grid paper. Draw four different rectangles that each has an\n     area of 8 square centimeters.\n\n\n                        Lesson 3:                  Model tiling with centimeter and inch unit squares as a strategy to            37\n                                                   measure area.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 218,
+        "text": "A STORY OF UNITS                                                                                            Lesson 3 Answer Key 3 4\n\n\nLesson 3\nProblem Set\n1.    A: 6                                                                       3.       a. Answers will vary.\n      B: 2 square units                                                                   b. Answers will vary.\n      C: 12 square units                                                         4.       Answers will vary.\n      D: 20 square units\n2.    a. 6 square units\n      b. 9 square units\n      c. 16 square units\n      d. 12 square units\n\n\nExit Ticket\n1.    12 square units; rectangle with an area of 12 square units drawn\n2.    No, this rectangle’s area is 16 square units.\n\n\nHomework\n1.    A: 5                                                                       3.       A: 10; rectangle with an area of 10 square\n      B: 15 square units                                                                  units drawn\n      C: 12 square units                                                                  B: 9 square units; rectangle with an area of\n      D: 20 square units                                                                  9 square units drawn\n2.    a. 9 square units                                                                   C: 12 square units; rectangle with an area of\n      b. 24 square units                                                                  12 square units drawn\n      c. 8 square units\n      d. 18 square units\n\n\n                        Module 4:                  Multiplication and Area                                                                217\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

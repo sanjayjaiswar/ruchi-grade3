@@ -1,0 +1,476 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m3-l4",
+  "moduleId": "m3",
+  "lessonNumber": 4,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_3/g3_m3_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+    "teacherEditionBytes": 14065864,
+    "lessonPdfPages": {
+      "start": 51,
+      "end": 61
+    },
+    "problemSetPdfPages": [
+      57,
+      58
+    ],
+    "exitTicketPdfPages": [
+      59
+    ],
+    "homeworkPdfPages": [
+      60,
+      61
+    ],
+    "answerKeyPdfPages": [
+      286
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m3-student/workbook-page-016.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m3-answer-key/page-286.png"
+    ]
+  },
+  "objective": "Count by units of 6 to multiply and divide using number bonds to decompose.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "connect to\n         today’s lesson?\n        How did the",
+    "conceptDevelopmentText": "Materials: (S) Personal white board\n\nPart 1: Use number bonds to decompose and skip-count using units of 6.\n    T:   Some of you may have skip-counted by six to get the answer to Marshall’s problem. When we’re\n         skip-counting by six, how do we get the next number in our sequence?\n    S:   Add 6.\n    T:   Like this? (Write 6 + 6 = 12.)\n    T:   Think back to our Fluency Practice today.\n         What number should I add to 6 to make 10?\n    S:   4.\n    T:   Write my equation on your board. Then, draw a\n         number bond to break apart the second six, showing\n                                                                                  NOTES ON\n         how to solve using a make ten strategy. (Draw the\n                                                                                  MULTIPLE MEANS\n         number bond as shown.)\n                                                                                  OF REPRESENTATION:\n    T:   6 plus 4 equals?\n                                                                         Learners differ in their ability to\n    S:   10.\n                                                                         process information. Help students\n    T:   Write it next to 6 + 6. (Write the equation as shown.)          organize board notes to support their\n    T:   10 plus 2 equals…?                                              understanding. For example, consider\n                                                                         labeling, writing out, illustrating, or\n    S:   12.\n                                                                         putting to music the steps of the make\n    T:   Write that under 6 + 4 = 10. (Write the equation as             ten strategy.\n         shown.)\n    T:   So, what is 6 plus 6?\n    S:   12.\n\n\n                        Lesson 4:                Count by units of 6 to multiply and divide using number bonds                                            52\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                              Lesson 4 3 3\n\n\n Have students repeat the process for the next two minutes to see how high they can count by six:\n 12 + 6 = 18, 18 + 6 = 24, 24 + 6 = 30, 30 + 6 = 36, 36 + 6 = 42, 42 + 6 = 48, 48 + 6 = 54, and 54 + 6 = 60.\n       T:   What patterns did you notice counting by six?\n       S:   Sometimes we broke apart the six to complete the ten,\n            as in 18 + 6. Other times, we broke apart the two-digit\n            number to add to the ones, as in 12 + 6, and\n            sometimes to complete the ten, as in 24 + 6.\n       T:   How did adding 6 and 6 help you add 36 and 6?\n       S:   You add it the same way by breaking the six into 4 and\n            2 to complete the ten.  You can also think of 36 + 6\n            as 3 tens more than 6 + 6.\n       T:   How did adding 18 and 6 help you add 48 and 6?\n       S:   We broke apart the six into 2 and 4 to complete the\n            ten.  48 + 6 is also just 3 tens more than\nMP.5\n            18 + 6.\n       T:   Why is a make ten strategy with number bonds helpful\n            for counting by sixes?\n       S:   Adding sixes is harder than adding with tens.\n       T:   What other count-bys is it helpful for? Is it helpful for\n            the fives?\n       S:   No, because adding by fives is easy to do mentally.\n       T:   Is it helpful for sevens?\n       S:   I think so. Sevens are hard to skip-count by, too.\n       T:   Now that we have discussed how the make ten\n            strategy makes skip-counting sixes more efficient, let’s\n            try it out to solve multiplication and division problems.\n\n Part 2: Use skip-counting by sixes to solve multiplication and division\n problems.\n       T:   Skip-count by six 10 times. Write the count-by sequence on\n            your board. You can also record your addition on your\n            board.\n                     Sample Student Board of Count-By:\n\n\n       T:   What is the last number in the sequence?\n       S:   60.\n       T:   60 is the same as how many sixes?\n       S:   10 sixes.\n\n\n                           Lesson 4:                Count by units of 6 to multiply and divide using number bonds                               53\n                                                    to decompose.\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 4 3 3\n\n\n    T:   Tell a partner what multiplication problem we just solved, and then write it on your board.\n    S:   6 times 10 equals 60. (Write 6 × 10 = 60.)\n    T:   We just used our count-by six sequence to help us find that 6 times 10 equals 60.\n    T:   We can also use skip-counting to solve division problems. Write the last number in the sequence on\n         your board, followed by a division symbol.\n    T:   What did we count by to get to 60?\n    S:   Sixes!\n    T:   Write 6 after the division symbol, followed by an equal sign.\n    T:   How many times did we count by six to get to 60?\n    S:   10 times!\n    T:   Write 10 as the answer to this division problem. Read your equation to a partner.\n    T:   Turn and talk to a partner. What do you notice about the multiplication and division problems we\n         solved?\n    S:   They use the same numbers.  The division fact uses the same numbers as the multiplication fact,\n         just in a different order.  60 divided by 6 equals 10 is the related division fact for 6 times 10 equals\n         60.\n    T:   That’s right. They are related facts. Now, you have learned another strategy to solve multiplication\n         and division facts with sixes!\nContinue with the following suggested sequence to help students develop strategies for and learn the\nfollowing facts. Refer students to the times table chart in Lesson 1 to focus their attention on the 16 new\nfacts:\n        6×6\n        6×7\n        6×8\n        6×9",
+    "fluencyPracticeText": "help prepare you\n         for the lesson?\n\nExit Ticket (3 minutes)\nAfter the",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\n                        Lesson 4:                Count by units of 6 to multiply and divide using number bonds                               54\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 4 3 3",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Some of you may have skip-counted by six to get the answer to Marshall’s problem. When we’re skip-counting by six, how do we get the next number in our sequence?"
+      },
+      {
+        "speaker": "students",
+        "text": "Add 6."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Like this? (Write 6 + 6 = 12.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think back to our Fluency Practice today. What number should I add to 6 to make 10?"
+      },
+      {
+        "speaker": "students",
+        "text": "4."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write my equation on your board. Then, draw a number bond to break apart the second six, showing how to solve using a make ten strategy. (Draw the MULTIPLE MEANS number bond as shown.) OF REPRESENTATION:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "6 plus 4 equals? Learners differ in their ability to"
+      },
+      {
+        "speaker": "students",
+        "text": "10. process information. Help students"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write it next to 6 + 6. (Write the equation as shown.) organize board notes to support their"
+      },
+      {
+        "speaker": "teacher",
+        "text": "10 plus 2 equals…? understanding. For example, consider labeling, writing out, illustrating, or"
+      },
+      {
+        "speaker": "students",
+        "text": "12. putting to music the steps of the make"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write that under 6 + 4 = 10. (Write the equation as ten strategy. shown.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "So, what is 6 plus 6?"
+      },
+      {
+        "speaker": "students",
+        "text": "12. to decompose. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 4 3 3 Have students repeat the process for the next two minutes to see how high they can count by six: 12 + 6 = 18, 18 + 6 = 24, 24 + 6 = 30, 30 + 6 = 36, 36 + 6 = 42, 42 + 6 = 48, 48 + 6 = 54, and 54 + 6 = 60."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What patterns did you notice counting by six?"
+      },
+      {
+        "speaker": "students",
+        "text": "Sometimes we broke apart the six to complete the ten, as in 18 + 6. Other times, we broke apart the two-digit number to add to the ones, as in 12 + 6, and sometimes to complete the ten, as in 24 + 6."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How did adding 6 and 6 help you add 36 and 6?"
+      },
+      {
+        "speaker": "students",
+        "text": "You add it the same way by breaking the six into 4 and 2 to complete the ten.  You can also think of 36 + 6 as 3 tens more than 6 + 6."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How did adding 18 and 6 help you add 48 and 6?"
+      },
+      {
+        "speaker": "students",
+        "text": "We broke apart the six into 2 and 4 to complete the ten.  48 + 6 is also just 3 tens more than MP.5 18 + 6."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why is a make ten strategy with number bonds helpful for counting by sixes?"
+      },
+      {
+        "speaker": "students",
+        "text": "Adding sixes is harder than adding with tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What other count-bys is it helpful for? Is it helpful for the fives?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, because adding by fives is easy to do mentally."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is it helpful for sevens?"
+      },
+      {
+        "speaker": "students",
+        "text": "I think so. Sevens are hard to skip-count by, too."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now that we have discussed how the make ten strategy makes skip-counting sixes more efficient, let’s try it out to solve multiplication and division problems. problems."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Skip-count by six 10 times. Write the count-by sequence on your board. You can also record your addition on your board. Sample Student Board of Count-By:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the last number in the sequence?"
+      },
+      {
+        "speaker": "students",
+        "text": "60."
+      },
+      {
+        "speaker": "teacher",
+        "text": "60 is the same as how many sixes?"
+      },
+      {
+        "speaker": "students",
+        "text": "10 sixes. to decompose. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 4 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell a partner what multiplication problem we just solved, and then write it on your board."
+      },
+      {
+        "speaker": "students",
+        "text": "6 times 10 equals 60. (Write 6 × 10 = 60.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We just used our count-by six sequence to help us find that 6 times 10 equals 60."
+      },
+      {
+        "speaker": "teacher",
+        "text": "We can also use skip-counting to solve division problems. Write the last number in the sequence on your board, followed by a division symbol."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What did we count by to get to 60?"
+      },
+      {
+        "speaker": "students",
+        "text": "Sixes!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write 6 after the division symbol, followed by an equal sign."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many times did we count by six to get to 60?"
+      },
+      {
+        "speaker": "students",
+        "text": "10 times!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write 10 as the answer to this division problem. Read your equation to a partner."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Turn and talk to a partner. What do you notice about the multiplication and division problems we solved?"
+      },
+      {
+        "speaker": "students",
+        "text": "They use the same numbers.  The division fact uses the same numbers as the multiplication fact, just in a different order.  60 divided by 6 equals 10 is the related division fact for 6 times 10 equals 60."
+      },
+      {
+        "speaker": "teacher",
+        "text": "That’s right. They are related facts. Now, you have learned another strategy to solve multiplication and division facts with sixes! Continue with the following suggested sequence to help students develop strategies for and learn the following facts. Refer students to the times table chart in Lesson 1 to focus their attention on the 16 new facts:  6×6  6×7  6×8  6×9"
+      }
+    ],
+    "teacherPrompts": [
+      "Some of you may have skip-counted by six to get the answer to Marshall’s problem. When we’re skip-counting by six, how do we get the next number in our sequence?",
+      "Like this? (Write 6 + 6 = 12.)",
+      "Think back to our Fluency Practice today. What number should I add to 6 to make 10?",
+      "Write my equation on your board. Then, draw a number bond to break apart the second six, showing how to solve using a make ten strategy. (Draw the MULTIPLE MEANS number bond as shown.) OF REPRESENTATION:",
+      "6 plus 4 equals? Learners differ in their ability to",
+      "Write it next to 6 + 6. (Write the equation as shown.) organize board notes to support their",
+      "10 plus 2 equals…? understanding. For example, consider labeling, writing out, illustrating, or",
+      "Write that under 6 + 4 = 10. (Write the equation as ten strategy. shown.)",
+      "So, what is 6 plus 6?",
+      "What patterns did you notice counting by six?",
+      "How did adding 6 and 6 help you add 36 and 6?",
+      "How did adding 18 and 6 help you add 48 and 6?",
+      "Why is a make ten strategy with number bonds helpful for counting by sixes?",
+      "What other count-bys is it helpful for? Is it helpful for the fives?",
+      "Is it helpful for sevens?",
+      "Now that we have discussed how the make ten strategy makes skip-counting sixes more efficient, let’s try it out to solve multiplication and division problems. problems.",
+      "Skip-count by six 10 times. Write the count-by sequence on your board. You can also record your addition on your board. Sample Student Board of Count-By:",
+      "What is the last number in the sequence?",
+      "60 is the same as how many sixes?",
+      "Tell a partner what multiplication problem we just solved, and then write it on your board.",
+      "We just used our count-by six sequence to help us find that 6 times 10 equals 60.",
+      "We can also use skip-counting to solve division problems. Write the last number in the sequence on your board, followed by a division symbol.",
+      "What did we count by to get to 60?",
+      "Write 6 after the division symbol, followed by an equal sign.",
+      "How many times did we count by six to get to 60?",
+      "Write 10 as the answer to this division problem. Read your equation to a partner.",
+      "Turn and talk to a partner. What do you notice about the multiplication and division problems we solved?",
+      "That’s right. They are related facts. Now, you have learned another strategy to solve multiplication and division facts with sixes! Continue with the following suggested sequence to help students develop strategies for and learn the following facts. Refer students to the times table chart in Lesson 1 to focus their attention on the 16 new facts:  6×6  6×7  6×8  6×9"
+    ],
+    "debriefPrompt": "With a partner, list the related division facts for each number in the skip-counting sequence in Problem 1",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Skip-count by six to fill in the blanks. Match each number in the count-by with its multiplication fact. 6 9×6 ____ 6×6 4×6 ____ 7×6 2×6 1×6 ____ 3×6 10 × 6 ____ 5×6 60 8×6 to decompose.",
+        "equations": [
+          "9×6",
+          "6×6",
+          "4×6",
+          "7×6"
+        ]
+      },
+      {
+        "number": 2,
+        "prompt": "Count by six to fill in the blanks below.",
+        "equations": []
+      },
+      {
+        "number": 3,
+        "prompt": "Count by six to fill in the blanks below. 6, ____, ____, ____ 6, ____, ____, ____, ____, ____, ____ Complete the multiplication equation that Complete the multiplication equation that represents the final number in your count-by. represents the final number in your count-by. 6 × ____ = ____ 6 × ____ = ____ Complete the division equation that Complete the division equation that represents represents your count-by. your count-by. ____ ÷ 6 = ____ ____ ÷ 6 = ____",
+        "equations": [
+          "6 × ____ = ____",
+          "____ ÷ 6 = ____"
+        ]
+      },
+      {
+        "number": 4,
+        "prompt": "Mrs. Byrne's class skip-counts by six for a group counting activity. When she points up, they count up by six, and when she points down, they count down by six. The arrows show when she changes direction. a. Fill in the blanks below to show the group counting answers.  0, 6, ____, 18, ____ ____, 12  ____, 24, 30, ____  30, 24, ____  24, ____, 36, ____, 48 b. Mrs. Byrne says the last number that the class counts is the product of 6 and another number. Write a multiplication sentence and a division sentence to show she's right. 6 × ____ = 48 48 ÷ 6 = ____",
+        "equations": [
+          "6 × ____ = 48",
+          "48 ÷ 6 = ____"
+        ]
+      },
+      {
+        "number": 5,
+        "prompt": "Julie counts by six to solve 6 × 7. She says the answer is 36. Is she right? Explain your answer. to decompose.",
+        "equations": [
+          "6 × 7"
+        ]
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                        Lesson 4 Problem Set 3 3\n\n\nName                                                                                                        Date\n\n1. Skip-count by six to fill in the blanks. Match each number in the count-by with its multiplication fact.\n\n\n       6                                                                                                                          9×6\n\n\n    _____\n                                                                                                                                  6×6\n\n\n       18\n                                                                                                                                  4×6\n\n\n    _____                                                                                                                         7×6\n\n\n       30\n                                                                                                                                  2×6\n\n\n       36\n                                                                                                                                  1×6\n\n\n    _____\n                                                                                                                                  3×6\n\n\n       48\n                                                                                                                                  10 × 6\n\n\n    _____\n                                                                                                                                  5×6\n\n\n       60                                                                                                                         8×6\n\n\n                        Lesson 4:                Count by units of 6 to multiply and divide using number bonds                             56\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                        Lesson 4 Problem Set 3 3\n\n\n 2. Count by six to fill in the blanks below.                                   3. Count by six to fill in the blanks below.\n\n\n     6, _______, _______, _______                                                      6, ______, ______, ______, ______, _____, _____\n\n\n Complete the multiplication equation that                                      Complete the multiplication equation that\n represents the final number in your count-by.                                  represents the final number in your count-by.\n\n\n     6 × _______ = _______                                                             6 × _______ = _______\n\n\n Complete the division equation that                                            Complete the division equation that represents\n represents your count-by.                                                      your count-by.\n\n\n     _______ ÷ 6 = _______                                                             _______ ÷ 6 = _______\n\n\n4. Mrs. Byrne’s class skip-counts by six for a group counting activity. When she points up, they count up by\n   six, and when she points down, they count down by six. The arrows show when she changes direction.\n\n    a. Fill in the blanks below to show the group counting answers.\n\n\n     0, 6, _____, 18, _____ _____, 12  _____, 24, 30, _____  30, 24, _____  24, _____, 36, _____, 48\n\n\n    b. Mrs. Byrne says the last number that the class counts is the product of 6 and another number.\n       Write a multiplication sentence and a division sentence to show she’s right.\n\n\n                                     6 × _______ = 48                                      48 ÷ 6 = _______\n\n\n5. Julie counts by six to solve 6 × 7. She says the answer is 36. Is she right? Explain your answer.\n\n\n                        Lesson 4:                Count by units of 6 to multiply and divide using number bonds                       57\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015",
+    "answerKeyProblemSetText": "1.    12, 24, 42, 54; each number matched to its corresponding multiplication fact\n2.    12, 18, 24; 4, 24; 24, 4\n3.    12, 18, 24, 30, 36, 42; 7, 42; 42, 7\n4.    a. 12, 24, 18, 18, 36, 18, 30, 42\n      b. 8; 8\n5.    No; explanations will vary.",
+    "answerKeyText": "A STORY OF UNITS                                                                                          Lesson 4 Answer Key 3 3\n\n\nLesson 4\nProblem Set\n1.    12, 24, 42, 54; each number matched to its corresponding multiplication fact\n2.    12, 18, 24; 4, 24; 24, 4\n3.    12, 18, 24, 30, 36, 42; 7, 42; 42, 7\n4.    a. 12, 24, 18, 18, 36, 18, 30, 42\n      b. 8; 8\n5.    No; explanations will vary.\n\n\nExit Ticket\n1.    54; explanations will vary.\n2.    a. 48\n      b. 9\n\n\nHomework\n1.    a. 12\n      b. 18\n      c. 20, 4, 24\n      d. 20, 10, 30\n      e. 36\n      f.   40, 2, 42\n      g. Answers will vary; 48\n      h. Answers will vary; 54\n      i.   Answers will vary; 60\n2.    12, 18, 24, 30; 5, 30; 30, 5\n3.    12, 18, 24, 30, 36; 6, 36; 36, 6\n4.    8; answers will vary.\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              285\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "number-bond",
+      "table-or-chart",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "number-bond": [
+        "Count by units of 6 to multiply and divide using number bonds to decompose.",
+        "Part 1: Use number bonds to decompose and skip-count using units of 6.",
+        "number bond to break apart the second six, showing",
+        "number bond as shown.)",
+        "Lesson 4: Count by units of 6 to multiply and divide using number bonds 52",
+        "to decompose.",
+        "T: Why is a make ten strategy with number bonds helpful",
+        "Lesson 4: Count by units of 6 to multiply and divide using number bonds 53"
+      ],
+      "table-or-chart": [
+        "following facts. Refer students to the times table chart in Lesson 1 to focus their attention on the 16 new"
+      ],
+      "money-model": [
+        "six, and when she points down, they count down by six. The arrows show when she changes direction."
+      ],
+      "picture-or-drawing": [
+        "T: Write my equation on your board. Then, draw a",
+        "how to solve using a make ten strategy. (Draw the"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Some of you may have skip-counted by six to get the answer to Marshall’s problem. When we’re skip-counting by six, how do we get the next number in our sequence?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Like this? (Write 6 + 6 = 12.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write my equation on your board. Then, draw a number bond to break apart the second six, showing how to solve using a make ten strategy. (Draw the MULTIPLE MEANS number bond as shown.) OF REPRESENTATION:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write it next to 6 + 6. (Write the equation as shown.) organize board notes to support their"
+      },
+      {
+        "speaker": "teacher",
+        "text": "10 plus 2 equals…? understanding. For example, consider labeling, writing out, illustrating, or"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write that under 6 + 4 = 10. (Write the equation as ten strategy. shown.)"
+      },
+      {
+        "speaker": "students",
+        "text": "12. to decompose. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 4 3 3 Have students repeat the process for the next two minutes to see how high they can count by six: 12 + 6 = 18, 18 + 6 = 24, 24 + 6 = 30, 30 + 6 = 36, 36 + 6 = 42, 42 + 6 = 48, 48 + 6 = 54, and 54 + 6 = 60."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What patterns did you notice counting by six?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why is a make ten strategy with number bonds helpful for counting by sixes?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What other count-bys is it helpful for? Is it helpful for the fives?"
+      },
+      {
+        "speaker": "students",
+        "text": "I think so. Sevens are hard to skip-count by, too."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now that we have discussed how the make ten strategy makes skip-counting sixes more efficient, let’s try it out to solve multiplication and division problems. problems."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Skip-count by six 10 times. Write the count-by sequence on your board. You can also record your addition on your board. Sample Student Board of Count-By:"
+      },
+      {
+        "speaker": "students",
+        "text": "10 sixes. to decompose. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 4 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell a partner what multiplication problem we just solved, and then write it on your board."
+      },
+      {
+        "speaker": "students",
+        "text": "6 times 10 equals 60. (Write 6 × 10 = 60.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We just used our count-by six sequence to help us find that 6 times 10 equals 60."
+      },
+      {
+        "speaker": "teacher",
+        "text": "We can also use skip-counting to solve division problems. Write the last number in the sequence on your board, followed by a division symbol."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What did we count by to get to 60?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write 6 after the division symbol, followed by an equal sign."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many times did we count by six to get to 60?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write 10 as the answer to this division problem. Read your equation to a partner."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Turn and talk to a partner. What do you notice about the multiplication and division problems we solved?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "That’s right. They are related facts. Now, you have learned another strategy to solve multiplication and division facts with sixes! Continue with the following suggested sequence to help students develop strategies for and learn the following facts. Refer students to the times table chart in Lesson 1 to focus their attention on the 16 new facts:  6×6  6×7  6×8  6×9"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 51 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 4 3 3\n\n\nLesson 4\nObjective: Count by units of 6 to multiply and divide using number bonds\nto decompose.\n\nSuggested Lesson Structure\n\n Fluency Practice                 (15 minutes)\n Application Problem              (5 minutes)\n Concept Development              (30 minutes)\n Student Debrief                  (10 minutes)\n   Total Time                      (60 minutes)\n\n\nFluency Practice (15 minutes)\n\n Group Counting 3.OA.1                                                         (4 minutes)\n Familiar Facts 3.OA.4                                                         (4 minutes)\n Multiply Using the Distributive Property 3.OA.5                               (4 minutes)\n Make Ten Game 3.OA.5                                                          (3 minutes)\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by sixes and sevens\nprepares students for multiplication using those units in this topic. Group counting by eights and nines\nanticipates multiplication using those units later in the module. Direct students to count forward and\nbackward, occasionally changing the direction of the count:\n\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\nFamiliar Facts (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews the relationship between multiplication and division from Module 1 and\nuses a letter to represent the unknown from Lesson 3 in this module, Grade 3 Module 3.\n    T:   (Write 6 × 2 = a.) On your personal white board, write the value of a.\n    S:   (Write a = 12.)\n\n\n                        Lesson 4:                Count by units of 6 to multiply and divide using number bonds                               50\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 52 (concept-development) ---\nA STORY OF UNITS                                                                                                               Lesson 4 3 3\n\n\n    T:   (Write 6 × 2 = 12. To the right, write 12 ÷ 6 = b.) On your board, write the value of b.\n    S:   (Write b = 2.)\nRepeat the process for the following: 7 × 3= c, 21 ÷ 7 = d, e × 4 = 24, 24 ÷ 4 = f, g × 2= 18, 18 ÷ 2 = h, 16 = i × 2,\n16 ÷ 8 = j, 45 = 5 × k, and 45 ÷ 9 = m.\n\nMultiply Using the Distributive Property (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews the n + 1 strategy from Lesson 2.\n    T:   (Project a 6 × 6 array, covering the sixth row of 6.) How many groups of 6 are there?\n    S:   5.\n    T:   Let’s find how many are in the array counting by fives. (Point as students count.)\n    S:   5, 10, 15, 20, 25, 30.\n    T:   Let’s find how many are in the array counting by sixes. (Point as students count.)\n    S:   6, 12, 18, 24, 30.\n    T:   Write two multiplication sentences for this array.\n    S:   (Write 6 × 5 = 30 and 5 × 6 = 30.)\n    T:   (Reveal the sixth row of 6.) How many groups of 6 are there now?\n    S:   6.\n    T:   Add 1 more group of 6 to 30. (Write 30 + 6 =         .) On your board, write the addition sentence.\n    S:   (Write 30 + 6 = 36.)\n    T:   On your board, write a multiplication sentence for this array.\n    S:   (Write 6 × 6 = 36.)\nContinue with the following suggested sequence: 5 × 8 → 6 × 8, 5 × 7 → 6 × 7, and 5 × 9 → 6 × 9.\n\nMake Ten Game (3 minutes)\nMaterials: (S) Set of playing cards numbered 1─9\n\nNote: This fluency activity prepares students for today’s Concept Development.\nStudents play in pairs. Each pair has a set of 9 cards, each with a number 1–9.\n    T:   (Write      +      = 10.) Spread the cards out in front of you.\n    T:   Put your hands behind your back. I’ll write a number in the first blank. When you know the number\n         that belongs in the second blank, touch the card that shows the number. The first person to touch\n         the card keeps it. Whoever has the most cards at the end wins. (Write 8 +       = 10.)\n    S:   (Touch the 2 card. The first to touch it keeps the card.)\nContinue with the following suggested sequence: 5, 2, 7, 1, 4, 3, and 6; students replace cards: 1, 5, 3, 2, 4, 7,\nand 6; students replace cards: 4, 7, 3, 9, and 6.\n\n\n                         Lesson 4:                Count by units of 6 to multiply and divide using number bonds                               51\n                                                  to decompose.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 53 (concept-development) ---\nA STORY OF UNITS                                                                                                               Lesson 4 3 3\n\n\nApplication Problem (5 minutes)\n\nMarshall puts 6 pictures on each of the 6 pages in his photo\nalbum. How many pictures does he put in the photo album in\n                                                                                                                           NOTES ON\nall?\n                                                                                                                           MULTIPLE MEANS\n                                                                                                                           OF ENGAGEMENT:\n                                                                                                                To encourage students to apply the\n                                                                                                                distributive property, adjust the\n                                                                                                                numbers in the Application Problem.\n                                                                                                                For example, a student above grade\n                                                                                                                level may mentally solve 6 times 6 yet\n                                                                                                                choose to use the distributive property\nNote: This problem is designed to review the Lesson 2 concept                                                   to multiply 6 times 13.\nof applying the distributive property to relate multiplication by\nn + 1 to multiplication by n.\n\nConcept Development (30 minutes)\n\nMaterials: (S) Personal white board\n\nPart 1: Use number bonds to decompose and skip-count using units of 6.\n    T:   Some of you may have skip-counted by six to get the answer to Marshall’s problem. When we’re\n         skip-counting by six, how do we get the next number in our sequence?\n    S:   Add 6.\n    T:   Like this? (Write 6 + 6 = 12.)\n    T:   Think back to our Fluency Practice today.\n         What number should I add to 6 to make 10?\n    S:   4.\n    T:   Write my equation on your board. Then, draw a\n         number bond to break apart the second six, showing\n                                                                                  NOTES ON\n         how to solve using a make ten strategy. (Draw the\n                                                                                  MULTIPLE MEANS\n         number bond as shown.)\n                                                                                  OF REPRESENTATION:\n    T:   6 plus 4 equals?\n                                                                         Learners differ in their ability to\n    S:   10.\n                                                                         process information. Help students\n    T:   Write it next to 6 + 6. (Write the equation as shown.)          organize board notes to support their\n    T:   10 plus 2 equals…?                                              understanding. For example, consider\n                                                                         labeling, writing out, illustrating, or\n    S:   12.\n                                                                         putting to music the steps of the make\n    T:   Write that under 6 + 4 = 10. (Write the equation as             ten strategy.\n         shown.)\n    T:   So, what is 6 plus 6?\n    S:   12.\n\n\n                        Lesson 4:                Count by units of 6 to multiply and divide using number bonds                                            52\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 54 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                              Lesson 4 3 3\n\n\n Have students repeat the process for the next two minutes to see how high they can count by six:\n 12 + 6 = 18, 18 + 6 = 24, 24 + 6 = 30, 30 + 6 = 36, 36 + 6 = 42, 42 + 6 = 48, 48 + 6 = 54, and 54 + 6 = 60.\n       T:   What patterns did you notice counting by six?\n       S:   Sometimes we broke apart the six to complete the ten,\n            as in 18 + 6. Other times, we broke apart the two-digit\n            number to add to the ones, as in 12 + 6, and\n            sometimes to complete the ten, as in 24 + 6.\n       T:   How did adding 6 and 6 help you add 36 and 6?\n       S:   You add it the same way by breaking the six into 4 and\n            2 to complete the ten.  You can also think of 36 + 6\n            as 3 tens more than 6 + 6.\n       T:   How did adding 18 and 6 help you add 48 and 6?\n       S:   We broke apart the six into 2 and 4 to complete the\n            ten.  48 + 6 is also just 3 tens more than\nMP.5\n            18 + 6.\n       T:   Why is a make ten strategy with number bonds helpful\n            for counting by sixes?\n       S:   Adding sixes is harder than adding with tens.\n       T:   What other count-bys is it helpful for? Is it helpful for\n            the fives?\n       S:   No, because adding by fives is easy to do mentally.\n       T:   Is it helpful for sevens?\n       S:   I think so. Sevens are hard to skip-count by, too.\n       T:   Now that we have discussed how the make ten\n            strategy makes skip-counting sixes more efficient, let’s\n            try it out to solve multiplication and division problems.\n\n Part 2: Use skip-counting by sixes to solve multiplication and division\n problems.\n       T:   Skip-count by six 10 times. Write the count-by sequence on\n            your board. You can also record your addition on your\n            board.\n                     Sample Student Board of Count-By:\n\n\n       T:   What is the last number in the sequence?\n       S:   60.\n       T:   60 is the same as how many sixes?\n       S:   10 sixes.\n\n\n                           Lesson 4:                Count by units of 6 to multiply and divide using number bonds                               53\n                                                    to decompose.\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 55 (application-problem) ---\nA STORY OF UNITS                                                                                                               Lesson 4 3 3\n\n\n    T:   Tell a partner what multiplication problem we just solved, and then write it on your board.\n    S:   6 times 10 equals 60. (Write 6 × 10 = 60.)\n    T:   We just used our count-by six sequence to help us find that 6 times 10 equals 60.\n    T:   We can also use skip-counting to solve division problems. Write the last number in the sequence on\n         your board, followed by a division symbol.\n    T:   What did we count by to get to 60?\n    S:   Sixes!\n    T:   Write 6 after the division symbol, followed by an equal sign.\n    T:   How many times did we count by six to get to 60?\n    S:   10 times!\n    T:   Write 10 as the answer to this division problem. Read your equation to a partner.\n    T:   Turn and talk to a partner. What do you notice about the multiplication and division problems we\n         solved?\n    S:   They use the same numbers.  The division fact uses the same numbers as the multiplication fact,\n         just in a different order.  60 divided by 6 equals 10 is the related division fact for 6 times 10 equals\n         60.\n    T:   That’s right. They are related facts. Now, you have learned another strategy to solve multiplication\n         and division facts with sixes!\nContinue with the following suggested sequence to help students develop strategies for and learn the\nfollowing facts. Refer students to the times table chart in Lesson 1 to focus their attention on the 16 new\nfacts:\n        6×6\n        6×7\n        6×8\n        6×9\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\n                        Lesson 4:                Count by units of 6 to multiply and divide using number bonds                               54\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 56 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 4 3 3\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Count by units of 6 to multiply and divide using number bonds to decompose.\nThe Student Debrief is intended to invite reflection and active processing of the total lesson experience.\nInvite students to review their solutions for the Problem Set. They should check work by comparing answers\nwith a partner before going over answers as a class. Look for misconceptions or misunderstandings that can\nbe addressed in the Debrief. Guide students in a conversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to lead the discussion.\n        With a partner, list the related division facts for\n         each number in the skip-counting sequence in\n         Problem 1.\n        What other multiplication and division problems\n         can you solve with the sequence you already\n         have in Problem 2?\n        How was using the skip-counting strategy in\n         Problem 4 different from the other problems?\n        How does your method of adding 18 and 6 help\n         you add 18 tens and 6 tens, and $480 and $60?\n        How did the Application Problem connect to\n         today’s lesson?\n        How did the Fluency Practice help prepare you\n         for the lesson?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                        Lesson 4:                Count by units of 6 to multiply and divide using number bonds                               55\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 57 (problem-set) ---\nA STORY OF UNITS                                                                                        Lesson 4 Problem Set 3 3\n\n\nName                                                                                                        Date\n\n1. Skip-count by six to fill in the blanks. Match each number in the count-by with its multiplication fact.\n\n\n       6                                                                                                                          9×6\n\n\n    _____\n                                                                                                                                  6×6\n\n\n       18\n                                                                                                                                  4×6\n\n\n    _____                                                                                                                         7×6\n\n\n       30\n                                                                                                                                  2×6\n\n\n       36\n                                                                                                                                  1×6\n\n\n    _____\n                                                                                                                                  3×6\n\n\n       48\n                                                                                                                                  10 × 6\n\n\n    _____\n                                                                                                                                  5×6\n\n\n       60                                                                                                                         8×6\n\n\n                        Lesson 4:                Count by units of 6 to multiply and divide using number bonds                             56\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 58 (problem-set) ---\nA STORY OF UNITS                                                                                        Lesson 4 Problem Set 3 3\n\n\n 2. Count by six to fill in the blanks below.                                   3. Count by six to fill in the blanks below.\n\n\n     6, _______, _______, _______                                                      6, ______, ______, ______, ______, _____, _____\n\n\n Complete the multiplication equation that                                      Complete the multiplication equation that\n represents the final number in your count-by.                                  represents the final number in your count-by.\n\n\n     6 × _______ = _______                                                             6 × _______ = _______\n\n\n Complete the division equation that                                            Complete the division equation that represents\n represents your count-by.                                                      your count-by.\n\n\n     _______ ÷ 6 = _______                                                             _______ ÷ 6 = _______\n\n\n4. Mrs. Byrne’s class skip-counts by six for a group counting activity. When she points up, they count up by\n   six, and when she points down, they count down by six. The arrows show when she changes direction.\n\n    a. Fill in the blanks below to show the group counting answers.\n\n\n     0, 6, _____, 18, _____ _____, 12  _____, 24, 30, _____  30, 24, _____  24, _____, 36, _____, 48\n\n\n    b. Mrs. Byrne says the last number that the class counts is the product of 6 and another number.\n       Write a multiplication sentence and a division sentence to show she’s right.\n\n\n                                     6 × _______ = 48                                      48 ÷ 6 = _______\n\n\n5. Julie counts by six to solve 6 × 7. She says the answer is 36. Is she right? Explain your answer.\n\n\n                        Lesson 4:                Count by units of 6 to multiply and divide using number bonds                       57\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 59 (exit-ticket) ---\nA STORY OF UNITS                                                                                             Lesson 4 Exit Ticket 3 3\n\n\nName                                                                                                        Date\n\n1. Sylvia solves 6 × 9 by adding 48 + 6. Show how Sylvia breaks apart and bonds her numbers to complete\n   the ten. Then, solve.\n\n\n2. Skip-count by six to solve the following:\n\n    a. 8 × 6 = ______                                                     b. 54 ÷ 6 = ______\n\n\n                        Lesson 4:                Count by units of 6 to multiply and divide using number bonds                         58\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 60 (homework) ---\nA STORY OF UNITS                                                                                          Lesson 4 Homework 3 3\n\n\nName                                                                                                       Date\n\n1. Use number bonds to help you skip-count by six by either making a ten or adding to the ones.\n\n\n                         2\n                  10 + ______\n     a. 6 + 6 = ______        = _______\n               4   2\n\n                  10\n     b. 12 + 6 = ______     8\n                        + ______ = _______\n          10   2\n\n     c. 18 + 6 = ______ + ______ = _______\n               2   4\n\n     d. 24 + 6 = ______ + ______ = _______\n\n          20   4\n\n     e. 30 + 6 = _______\n\n\n     f. 36 + 6 = ______ + ______ = _______\n\n               4   2\n\n\n     g. 42 + 6 = ______ + ______ = _______\n\n\n     h. 48 + 6 = ______ + ______ = _______\n\n\n     i.    54 + 6 = ______ + ______ = _______\n\n\n                       Lesson 4:                Count by units of 6 to multiply and divide using number bonds                    59\n                                                to decompose.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 61 (homework) ---\nA STORY OF UNITS                                                                                           Lesson 4 Homework 3 3\n\n\n 2. Count by six to fill in the blanks below.                                          3. Count by six to fill in the blanks below.\n\n\n     6, _______, _______, _______, _______                                                    6, ______, ______, ______, ______, ______\n\n\n Complete the multiplication equation that                                             Complete the multiplication equation that\n represents the final number in your count-by.                                         represents the final number in your count-by.\n\n\n     6 × _______ = _______                                                                    6 × _______ = _______\n\n\n Complete the division equation that                                                   Complete the division equation that\n represents your count-by.                                                             represents your count-by.\n\n\n     _______ ÷ 6 = _______                                                                    _______ ÷ 6 = _______\n\n\n4. Count by six to solve 48 ÷ 6. Show your work below.\n\n\n                       Lesson 4:                 Count by units of 6 to multiply and divide using number bonds                         60\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015",
+    "problemSetPages": [
+      {
+        "pdfPage": 57,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                        Lesson 4 Problem Set 3 3\n\n\nName                                                                                                        Date\n\n1. Skip-count by six to fill in the blanks. Match each number in the count-by with its multiplication fact.\n\n\n       6                                                                                                                          9×6\n\n\n    _____\n                                                                                                                                  6×6\n\n\n       18\n                                                                                                                                  4×6\n\n\n    _____                                                                                                                         7×6\n\n\n       30\n                                                                                                                                  2×6\n\n\n       36\n                                                                                                                                  1×6\n\n\n    _____\n                                                                                                                                  3×6\n\n\n       48\n                                                                                                                                  10 × 6\n\n\n    _____\n                                                                                                                                  5×6\n\n\n       60                                                                                                                         8×6\n\n\n                        Lesson 4:                Count by units of 6 to multiply and divide using number bonds                             56\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 58,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                        Lesson 4 Problem Set 3 3\n\n\n 2. Count by six to fill in the blanks below.                                   3. Count by six to fill in the blanks below.\n\n\n     6, _______, _______, _______                                                      6, ______, ______, ______, ______, _____, _____\n\n\n Complete the multiplication equation that                                      Complete the multiplication equation that\n represents the final number in your count-by.                                  represents the final number in your count-by.\n\n\n     6 × _______ = _______                                                             6 × _______ = _______\n\n\n Complete the division equation that                                            Complete the division equation that represents\n represents your count-by.                                                      your count-by.\n\n\n     _______ ÷ 6 = _______                                                             _______ ÷ 6 = _______\n\n\n4. Mrs. Byrne’s class skip-counts by six for a group counting activity. When she points up, they count up by\n   six, and when she points down, they count down by six. The arrows show when she changes direction.\n\n    a. Fill in the blanks below to show the group counting answers.\n\n\n     0, 6, _____, 18, _____ _____, 12  _____, 24, 30, _____  30, 24, _____  24, _____, 36, _____, 48\n\n\n    b. Mrs. Byrne says the last number that the class counts is the product of 6 and another number.\n       Write a multiplication sentence and a division sentence to show she’s right.\n\n\n                                     6 × _______ = 48                                      48 ÷ 6 = _______\n\n\n5. Julie counts by six to solve 6 × 7. She says the answer is 36. Is she right? Explain your answer.\n\n\n                        Lesson 4:                Count by units of 6 to multiply and divide using number bonds                       57\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 286,
+        "text": "A STORY OF UNITS                                                                                          Lesson 4 Answer Key 3 3\n\n\nLesson 4\nProblem Set\n1.    12, 24, 42, 54; each number matched to its corresponding multiplication fact\n2.    12, 18, 24; 4, 24; 24, 4\n3.    12, 18, 24, 30, 36, 42; 7, 42; 42, 7\n4.    a. 12, 24, 18, 18, 36, 18, 30, 42\n      b. 8; 8\n5.    No; explanations will vary.\n\n\nExit Ticket\n1.    54; explanations will vary.\n2.    a. 48\n      b. 9\n\n\nHomework\n1.    a. 12\n      b. 18\n      c. 20, 4, 24\n      d. 20, 10, 30\n      e. 36\n      f.   40, 2, 42\n      g. Answers will vary; 48\n      h. Answers will vary; 54\n      i.   Answers will vary; 60\n2.    12, 18, 24, 30; 5, 30; 30, 5\n3.    12, 18, 24, 30, 36; 6, 36; 36, 6\n4.    8; answers will vary.\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              285\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015"
+      }
+    ]
+  }
+}

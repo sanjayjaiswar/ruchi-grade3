@@ -1,0 +1,480 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m2-l18",
+  "moduleId": "m2",
+  "lessonNumber": 18,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+    "teacherEditionBytes": 20015771,
+    "lessonPdfPages": {
+      "start": 222,
+      "end": 232
+    },
+    "problemSetPdfPages": [
+      228,
+      229
+    ],
+    "exitTicketPdfPages": [
+      230
+    ],
+    "homeworkPdfPages": [
+      231,
+      232
+    ],
+    "answerKeyPdfPages": [
+      300
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m2-student/workbook-page-074.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m2-teacher/page-228.png",
+      "/source-pages/m2-teacher/page-229.png",
+      "/source-pages/m2-answer-key/page-300.png"
+    ]
+  },
+  "objective": "Decompose once to subtract measurements including three-digit minuends with zeros in the tens or ones place.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.                                                                the algorithm as a strategic tool,\n                                                                                                               purposefully choosing it rather than\n                                                                                                               defaulting to it.\n\n\n                       Lesson 18:                    Decompose once to subtract measurements including three-digit                                   225\n                                                     minuends with zeros in the tens or ones place.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 18 3 2",
+    "conceptDevelopmentText": "Materials: (T) Unlabeled place value chart (Lesson 14 Template) (S) Personal white board, unlabeled place\n           value chart (Lesson 14 Template)\n\nPart 1: Use the place value chart to model decomposing once to subtract with three-digit minuends.\nStudents start with the unlabeled place value chart template in their personal white boards.\n\n    T:   Tara has 132 milliliters of water left after hiking. How can we\n                                                                              Lesson 14 Template\n         find out how many milliliters of water Tara drinks while she is\n         hiking?\n    S:   We can subtract.  We can subtract 132 milliliters from\n         825 milliliters.  She drank 825 milliliters – 132 milliliters.\n    T:   Let’s write that vertically in the workspace below the place\n         value chart on our personal white board and then model the\n         problem on our place value charts. (Model writing 825 – 132\n         as a vertical problem.) On your place value chart, draw place\n         value disks to represent the amount of water Tara starts with.\n    S:   (Draw place value disks.)\n    T:   Let’s get ready to subtract. Look at your vertical\n         subtraction problem. How many ones do we need to\n         subtract from the 5 ones that are there now?\n    S:   2 ones.\n    T:   Can we subtract 2 ones from 5 ones?\n    S:   Yes!\n    T:   How many tens are we subtracting from 2 tens?\n    S:   3 tens.\n    T:   Can we subtract 3 tens from 2 tens?\n    S:   No!\n    T:   Why not?\n    S:   There aren’t enough tens to subtract from.  3 tens is more than 2 tens.\n    T:   To get more tens so that we can subtract, we have to unbundle 1 hundred into tens. How many tens\n         in 1 hundred?\n    S:   10 tens!\n    T:   (Model the process of unbundling 1 hundred into 10 tens, as shown to the right. Have students work\n         along with you.) To start off, we had 8 hundreds and 2 tens. Now, how many hundreds and tens do\n         we have?\n    S:   7 hundreds and 12 tens!\n    T:   Now that we have 12 tens, can we take 3 tens away?\n    S:   Yes!\n\n\n                       Lesson 18:                    Decompose once to subtract measurements including three-digit                         223\n                                                     minuends with zeros in the tens or ones place.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 18 3 2\n\n\n    T:   Now let’s move to the hundreds place. Can we subtract 1 hundred from 7 hundreds?\n    S:   Yes!\n    T:   We’re ready to subtract. Cross off the ones, tens, and\n         hundreds that are being subtracted. (Model as\n                                                                                NOTES ON\n         students work along.)\n                                                                                MULTIPLE MEANS\n    T:   So, what’s the result?\n                                                                                OF REPRESENTATION:\n    S:   693.\n                                                                       Use color to customize the\n    T:   So, that’s it. Our answer is 693?                             presentation of decomposing to\n    S:   No! We were looking for the amount of water, not just         subtract. Enhance learners’ perception\n MP.2    a number. It’s 693 milliliters!                               of the information by consistently\n                                                                       displaying hundreds in one color (e.g.,\n    T:   Answer the question with a full statement.                    red), while displaying tens in a different\n    S:   Tara drank 693 milliliters of water on her hike.              color (e.g., green). Consider varying\n                                                                                                               the colors for each place value unit\nContinue with the following suggested sequence:\n                                                                                                               when teaching the standard algorithm\n        785 cm – 36 cm                                                                                        from day to day so that students\n                                                                                                               continue to look for a value, rather\n        440 g – 223 g\n                                                                                                               than for a color.\n        508 mL – 225 mL\n\nPart 2: Subtract using the standard algorithm.\nWrite or project the following problem:\nNooran buys 507 grams of grapes at the market on Tuesday. On Thursday, he buys 345 grams of grapes.\nHow many more grams of grapes did Nooran buy on Tuesday than on Thursday?\n    T:   Let’s model this problem with a tape diagram to figure out what we need to do to solve. Draw with\n         me on your board. (Model.) How should we solve this problem?\n    S:   We can subtract, 507 grams – 345 grams.  We’re looking for the part that’s different so we subtract.\n          To find a missing part, subtract.\n    T:   Write the equation, and then talk to your partner. Is this problem easily solved using mental math?\n         Why or why not?\n    S:   Not really.  It’s easy to subtract 300 from 500, but the 7 and the 45 aren’t very friendly.\n    T:   Like with addition problems that aren’t easily solved with simplifying strategies, we can use the\n         standard algorithm to solve subtraction problems that aren’t easily solved with simplifying strategies.\n         Rewrite the problem vertically on your board if you need to.\n    S:   (Rewrite problem vertically.)\n    T:   Before we subtract, let’s see if any unbundling needs\n         to be done. Are there enough ones to subtract 5 ones?\n    S:   Yes.\n    T:   Are there enough tens to subtract 4 tens?\n    S:   No, 0 tens is less than 4 tens.\n    T:   How can we get some more tens?\n    S:   We can go to the hundreds place.  We can unbundle 1 hundred to make 10 tens.\n\n\n                        Lesson 18:                    Decompose once to subtract measurements including three-digit                                   224\n                                                      minuends with zeros in the tens or ones place.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                             Lesson 18 3 2\n\n\n    T:   How many hundreds are in the number on top?\n    S:   5 hundreds.\n    T:   When we unbundle 1 hundred to make 10 tens, how many hundreds and tens will the top number\n         have?\n    S:   4 hundreds and 10 tens.\n    T:   (Model.) Do we have enough hundreds to subtract 3 hundreds?\n    S:   Yes.\n    T:   We are ready to subtract! Solve the problem on your board.\n    T:   (Model as shown on the previous page.) How many more grams of grapes did Nooran buy on\n         Tuesday?\n    S:   162 more grams of grapes!\n    T:   Label the unknown on your tape diagram with the answer.\nContinue with the following suggested sequence. Students should unbundle all necessary digits before\nperforming the operation.\n        513 cm – 241 cm\n        760 g – 546 g\n        506 mL – 435 mL                                                                                                   NOTES ON\n                                                                                                                           THE PROBLEM SET:",
+    "fluencyPracticeText": " Group Counting 3.OA.1                                    (3 minutes)\n Subtract Mentally 3.NBT.2                                (4 minutes)\n Estimate and Add 3.NBT.2                                 (4 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. It reviews foundational\nstrategies for multiplication from Module 1 and anticipates Module 3.\nDirect students to count forward and backward, occasionally changing the direction of the count:\n        Threes to 30\n        Fours to 40\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\nAs students’ fluency with skip-counting improves, help them make a connection to multiplication by tracking\nthe number of groups they count using their fingers.\n\nSubtract Mentally (4 minutes)\nNote: This activity anticipates the role of place value in the subtraction algorithm.\n    T:   (Write 10 – 3 = ___.) Say the number sentence in units of one.\n    S:   10 ones – 3 ones = 7 ones.\n\n\n                         Lesson 18:                    Decompose once to subtract measurements including three-digit                         221\n                                                       minuends with zeros in the tens or ones place.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                                     Lesson 18 3 2\n\n\nContinue with the following sequence: 11 – 3 and 61 – 3 (as pictured below at right).\n    T:   (Write 100 – 30 = ___.)\n         Now say the number sentences in units of ten.                                              10 – 3 = 7                    11 – 3 = 8      61 – 3 = 58\n    T:   10 tens – 3 tens = 7 tens.                                                                 100 – 30 = 70                 110 – 30 = 80   610 – 30 = 580\nContinue with the following sequence: 110 – 30 and 610 – 30.\nRepeat with the following possible sequences:\n        10 – 5, 12 – 5, and 73 – 5\n        100 – 50, 120 – 50, and 730 – 50\n\nEstimate and Add (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews rounding to estimate sums from\n                                                                                                                             NOTES ON\nLesson 17.\n                                                                                                                             MULTIPLE MEANS\n    T:   (Write 38 + 23 ≈ ___.) Say the addition problem.                                                                    OF ACTION AND\n    S:   38 + 23.                                                                                                            EXPRESSION:\n                                                                                                                 Fluency activities are fun, fast-paced\n    T:   Give me the new addition problem if we round each\n                                                                                                                 math games, but don’t leave English\n         number to the nearest ten.                                                                              language learners behind. At the start\n    S:   40 + 20.                                                                                                of each activity, speak more slowly,\n    T:   (Write 38 + 23 ≈ 40 + 20.) What’s 40 + 20?                                                              pause more frequently, give an\n                                                                                                                 example, couple language with visual\n    S:   60.                                                                                                     aids or gestures, check for\n    T:   So, 38 + 23 should be close to …?                                                                       understanding, explain in students’ first\n    S:   60.                                                                                                     language, and/or increase response\n                                                                                                                 time.\n    T:   On your personal white board, solve 38 + 23.\n    S:   (Solve.)\nContinue with the following possible sequence: 24 + 59, 173 + 49, and 519 + 185.",
+    "problemSetGuidanceText": "The problems on the Problem Set are\nStudents should do their personal best to complete the Problem                                                 written horizontally so that students do\nSet within the allotted 10 minutes. For some classes, it may be                                                not assume that they need to use the\nappropriate to modify the assignment by specifying which                                                       standard algorithm to solve. Mental\nproblems they work on first. Some problems do not specify a                                                    math may be a more efficient strategy\nmethod for solving. Students should solve these problems using                                                 in some cases. Invite students to use\nthe RDW approach used for Application Problems.                                                                the algorithm as a strategic tool,\n                                                                                                               purposefully choosing it rather than\n                                                                                                               defaulting to it.\n\n\n                       Lesson 18:                    Decompose once to subtract measurements including three-digit                                   225\n                                                     minuends with zeros in the tens or ones place.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 18 3 2",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Tara has 132 milliliters of water left after hiking. How can we find out how many milliliters of water Tara drinks while she is hiking?"
+      },
+      {
+        "speaker": "students",
+        "text": "We can subtract.  We can subtract 132 milliliters from 825 milliliters.  She drank 825 milliliters – 132 milliliters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s write that vertically in the workspace below the place value chart on our personal white board and then model the problem on our place value charts. (Model writing 825 – 132 as a vertical problem.) On your place value chart, draw place value disks to represent the amount of water Tara starts with."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw place value disks.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s get ready to subtract. Look at your vertical subtraction problem. How many ones do we need to subtract from the 5 ones that are there now?"
+      },
+      {
+        "speaker": "students",
+        "text": "2 ones."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can we subtract 2 ones from 5 ones?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many tens are we subtracting from 2 tens?"
+      },
+      {
+        "speaker": "students",
+        "text": "3 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can we subtract 3 tens from 2 tens?"
+      },
+      {
+        "speaker": "students",
+        "text": "No!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why not?"
+      },
+      {
+        "speaker": "students",
+        "text": "There aren’t enough tens to subtract from.  3 tens is more than 2 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "To get more tens so that we can subtract, we have to unbundle 1 hundred into tens. How many tens in 1 hundred?"
+      },
+      {
+        "speaker": "students",
+        "text": "10 tens!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Model the process of unbundling 1 hundred into 10 tens, as shown to the right. Have students work along with you.) To start off, we had 8 hundreds and 2 tens. Now, how many hundreds and tens do we have?"
+      },
+      {
+        "speaker": "students",
+        "text": "7 hundreds and 12 tens!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now that we have 12 tens, can we take 3 tens away?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes! minuends with zeros in the tens or ones place. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 18 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now let’s move to the hundreds place. Can we subtract 1 hundred from 7 hundreds?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We’re ready to subtract. Cross off the ones, tens, and hundreds that are being subtracted. (Model as students work along.) MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "So, what’s the result? OF REPRESENTATION:"
+      },
+      {
+        "speaker": "students",
+        "text": "693. Use color to customize the"
+      },
+      {
+        "speaker": "teacher",
+        "text": "So, that’s it. Our answer is 693? presentation of decomposing to"
+      },
+      {
+        "speaker": "students",
+        "text": "No! We were looking for the amount of water, not just subtract. Enhance learners’ perception MP.2 a number. It’s 693 milliliters! of the information by consistently displaying hundreds in one color (e.g.,"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Answer the question with a full statement. red), while displaying tens in a different"
+      },
+      {
+        "speaker": "students",
+        "text": "Tara drank 693 milliliters of water on her hike. color (e.g., green). Consider varying the colors for each place value unit Continue with the following suggested sequence: when teaching the standard algorithm  785 cm – 36 cm from day to day so that students continue to look for a value, rather  440 g – 223 g than for a color.  508 mL – 225 mL Write or project the following problem: Nooran buys 507 grams of grapes at the market on Tuesday. On Thursday, he buys 345 grams of grapes. How many more grams of grapes did Nooran buy on Tuesday than on Thursday?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s model this problem with a tape diagram to figure out what we need to do to solve. Draw with me on your board. (Model.) How should we solve this problem?"
+      },
+      {
+        "speaker": "students",
+        "text": "We can subtract, 507 grams – 345 grams.  We’re looking for the part that’s different so we subtract.  To find a missing part, subtract."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the equation, and then talk to your partner. Is this problem easily solved using mental math? Why or why not?"
+      },
+      {
+        "speaker": "students",
+        "text": "Not really.  It’s easy to subtract 300 from 500, but the 7 and the 45 aren’t very friendly."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Like with addition problems that aren’t easily solved with simplifying strategies, we can use the standard algorithm to solve subtraction problems that aren’t easily solved with simplifying strategies. Rewrite the problem vertically on your board if you need to."
+      },
+      {
+        "speaker": "students",
+        "text": "(Rewrite problem vertically.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Before we subtract, let’s see if any unbundling needs to be done. Are there enough ones to subtract 5 ones?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Are there enough tens to subtract 4 tens?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, 0 tens is less than 4 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can we get some more tens?"
+      },
+      {
+        "speaker": "students",
+        "text": "We can go to the hundreds place.  We can unbundle 1 hundred to make 10 tens. minuends with zeros in the tens or ones place. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 18 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many hundreds are in the number on top?"
+      },
+      {
+        "speaker": "students",
+        "text": "5 hundreds."
+      },
+      {
+        "speaker": "teacher",
+        "text": "When we unbundle 1 hundred to make 10 tens, how many hundreds and tens will the top number have?"
+      },
+      {
+        "speaker": "students",
+        "text": "4 hundreds and 10 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Model.) Do we have enough hundreds to subtract 3 hundreds?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "We are ready to subtract! Solve the problem on your board."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Model as shown on the previous page.) How many more grams of grapes did Nooran buy on Tuesday?"
+      },
+      {
+        "speaker": "students",
+        "text": "162 more grams of grapes!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label the unknown on your tape diagram with the answer. Continue with the following suggested sequence. Students should unbundle all necessary digits before performing the operation.  513 cm – 241 cm  760 g – 546 g  506 mL – 435 mL NOTES ON THE PROBLEM SET:"
+      }
+    ],
+    "teacherPrompts": [
+      "Tara has 132 milliliters of water left after hiking. How can we find out how many milliliters of water Tara drinks while she is hiking?",
+      "Let’s write that vertically in the workspace below the place value chart on our personal white board and then model the problem on our place value charts. (Model writing 825 – 132 as a vertical problem.) On your place value chart, draw place value disks to represent the amount of water Tara starts with.",
+      "Let’s get ready to subtract. Look at your vertical subtraction problem. How many ones do we need to subtract from the 5 ones that are there now?",
+      "Can we subtract 2 ones from 5 ones?",
+      "How many tens are we subtracting from 2 tens?",
+      "Can we subtract 3 tens from 2 tens?",
+      "Why not?",
+      "To get more tens so that we can subtract, we have to unbundle 1 hundred into tens. How many tens in 1 hundred?",
+      "(Model the process of unbundling 1 hundred into 10 tens, as shown to the right. Have students work along with you.) To start off, we had 8 hundreds and 2 tens. Now, how many hundreds and tens do we have?",
+      "Now that we have 12 tens, can we take 3 tens away?",
+      "Now let’s move to the hundreds place. Can we subtract 1 hundred from 7 hundreds?",
+      "We’re ready to subtract. Cross off the ones, tens, and hundreds that are being subtracted. (Model as students work along.) MULTIPLE MEANS",
+      "So, what’s the result? OF REPRESENTATION:",
+      "So, that’s it. Our answer is 693? presentation of decomposing to",
+      "Answer the question with a full statement. red), while displaying tens in a different",
+      "Let’s model this problem with a tape diagram to figure out what we need to do to solve. Draw with me on your board. (Model.) How should we solve this problem?",
+      "Write the equation, and then talk to your partner. Is this problem easily solved using mental math? Why or why not?",
+      "Like with addition problems that aren’t easily solved with simplifying strategies, we can use the standard algorithm to solve subtraction problems that aren’t easily solved with simplifying strategies. Rewrite the problem vertically on your board if you need to.",
+      "Before we subtract, let’s see if any unbundling needs to be done. Are there enough ones to subtract 5 ones?",
+      "Are there enough tens to subtract 4 tens?",
+      "How can we get some more tens?",
+      "How many hundreds are in the number on top?",
+      "When we unbundle 1 hundred to make 10 tens, how many hundreds and tens will the top number have?",
+      "(Model.) Do we have enough hundreds to subtract 3 hundreds?",
+      "We are ready to subtract! Solve the problem on your board.",
+      "(Model as shown on the previous page.) How many more grams of grapes did Nooran buy on Tuesday?",
+      "Label the unknown on your tape diagram with the answer. Continue with the following suggested sequence. Students should unbundle all necessary digits before performing the operation.  513 cm – 241 cm  760 g – 546 g  506 mL – 435 mL NOTES ON THE PROBLEM SET:"
+    ],
+    "debriefPrompt": "What is the relationship between Problems 1(a), 1(b), and 1(c)?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Solve the subtraction problems below. a. 60 mL – 24 mL b. 360 mL – 24 mL c. 360 mL – 224 mL d. 518 cm – 21 cm e. 629 cm – 268 cm f. 938 cm – 440 cm g. 307 g – 130 g h. 307 g – 234 g i. 807 g – 732 g j. 2 km 770 m – 1 km 455 m k. 3 kg 924 g – 1 kg 893 g minuends with zeros in the tens or ones place. The total weight of 3 books is shown to the right. If 2 books weigh 233 grams, how much does the third book weigh? Use a tape diagram to model the problem. 405g 3. The chart to the right shows the lengths of three movies. The Lost Ship 117 minutes a. The movie Champions is 22 minutes shorter than The Lost Ship. How long is Champions? Magical Forests 145 minutes Champions? minutes b. How much longer is Magical Forests than Champions? 4. The total length of a rope is 208 centimeters. Scott cuts it into 3 pieces. The first piece is 80 centimeters long. The second piece is 94 centimeters long. How long is the third piece of rope? minuends with zeros in the tens or ones place.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                     Lesson 18 Problem Set 3 2\n\n\nName                                                                                                       Date\n\n1. Solve the subtraction problems below.\n\n   a. 60 mL – 24 mL                                       b. 360 mL – 24 mL                                         c. 360 mL – 224 mL\n\n\n   d. 518 cm – 21 cm                                      e. 629 cm – 268 cm                                        f.     938 cm – 440 cm\n\n\n   g. 307 g – 130 g                                       h. 307 g – 234 g                                          i.     807 g – 732 g\n\n\n   j.   2 km 770 m – 1 km 455 m                                                                                     k. 3 kg 924 g – 1 kg 893 g\n\n\n                       Lesson 18:                    Decompose once to subtract measurements including three-digit                           227\n                                                     minuends with zeros in the tens or ones place.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                      Lesson 18 Problem Set 3 2\n\n\n2. The total weight of 3 books is shown to the right. If 2 books weigh\n   233 grams, how much does the third book weigh? Use a tape\n   diagram to model the problem.\n\n\n                                                                                                                                     405g\n\n\n3. The chart to the right shows the lengths of three movies.\n                                                                                                                       The Lost Ship        117 minutes\n    a.   The movie Champions is 22 minutes shorter than The\n         Lost Ship. How long is Champions?\n                                                                                                                     Magical Forests        145 minutes\n\n\n                                                                                                                         Champions          ? minutes\n\n\n    b.   How much longer is Magical Forests than Champions?\n\n\n4. The total length of a rope is 208 centimeters. Scott cuts it into 3 pieces. The first piece is 80 centimeters\n   long. The second piece is 94 centimeters long. How long is the third piece of rope?\n\n\n                        Lesson 18:                    Decompose once to subtract measurements including three-digit                                228\n                                                      minuends with zeros in the tens or ones place.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    a. 36 mL                                                                   2.        172 g; tape diagram drawn and labeled to\n      b. 336 mL                                                                            model problem\n      c. 136 mL                                                                  3.        a. 95 min\n      d. 497 cm                                                                            b. 50 min\n      e. 361 cm                                                                  4.        34 cm\n      f.   498 cm\n      g. 177 g\n      h. 73 g\n      i.   75 g\n      j.   1 km 315 m\n      k. 2 kg 31 g",
+    "answerKeyText": "A STORY OF UNITS                                                                                      Lesson 18 Answer Key 3 2\n\n\nLesson 18\nProblem Set\n1.    a. 36 mL                                                                   2.        172 g; tape diagram drawn and labeled to\n      b. 336 mL                                                                            model problem\n      c. 136 mL                                                                  3.        a. 95 min\n      d. 497 cm                                                                            b. 50 min\n      e. 361 cm                                                                  4.        34 cm\n      f.   498 cm\n      g. 177 g\n      h. 73 g\n      i.   75 g\n      j.   1 km 315 m\n      k. 2 kg 31 g\n\nExit Ticket\n1.    a. 235 mL\n      b. 304 m\n      c. 125 kg\n2.    221 cm\n\nHomework\n1.    a. 24 L                                                                   2.       174 g; tape diagram drawn and labeled to\n      b. 324 L                                                                           model problem\n      c. 224 L                                                                  3.       a. 158 min\n      d. 575 cm                                                                          b. 19 min\n      e. 334 cm\n      f.   365 cm\n      g. 681 g\n      h. 261 g\n      i.   306 km\n      j.   192 km\n\n\n                                                                                                                                      299\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "tape-diagram",
+      "number-bond",
+      "measurement-scale",
+      "liquid-measure",
+      "ruler-or-length",
+      "place-value",
+      "table-or-chart",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "tape-diagram": [
+        "T: Let’s model this problem with a tape diagram to figure out what we need to do to solve. Draw with",
+        "T: Label the unknown on your tape diagram with the answer."
+      ],
+      "number-bond": [
+        "Decompose once to subtract measurements including three-digit minuends with zeros in the tens or ones place.",
+        "Lesson 18: Decompose once to subtract measurements including three-digit 225",
+        "Lesson 18: Decompose once to subtract measurements including three-digit 223",
+        "Lesson 18: Decompose once to subtract measurements including three-digit 224",
+        "Lesson 18: Decompose once to subtract measurements including three-digit 221",
+        "Lesson 18: Decompose once to subtract measurements including three-digit 227",
+        "Lesson 18: Decompose once to subtract measurements including three-digit 228"
+      ],
+      "measurement-scale": [
+        "Nooran buys 507 grams of grapes at the market on Tuesday. On Thursday, he buys 345 grams of grapes.",
+        "How many more grams of grapes did Nooran buy on Tuesday than on Thursday?",
+        "T: Let’s model this problem with a tape diagram to figure out what we need to do to solve. Draw with",
+        "S: We can subtract, 507 grams – 345 grams.  We’re looking for the part that’s different so we subtract.",
+        "T: (Model as shown on the previous page.) How many more grams of grapes did Nooran buy on",
+        "S: 162 more grams of grapes!",
+        "T: Label the unknown on your tape diagram with the answer.",
+        "2. The total weight of 3 books is shown to the right. If 2 books weigh"
+      ],
+      "liquid-measure": [
+        "T: Tara has 132 milliliters of water left after hiking. How can we",
+        "find out how many milliliters of water Tara drinks while she is",
+        "S: We can subtract.  We can subtract 132 milliliters from",
+        "825 milliliters.  She drank 825 milliliters – 132 milliliters.",
+        "MP.2 a number. It’s 693 milliliters! of the information by consistently",
+        "S: Tara drank 693 milliliters of water on her hike. color (e.g., green). Consider varying"
+      ],
+      "ruler-or-length": [
+        "3. The chart to the right shows the lengths of three movies.",
+        "4. The total length of a rope is 208 centimeters. Scott cuts it into 3 pieces. The first piece is 80 centimeters",
+        "long. The second piece is 94 centimeters long. How long is the third piece of rope?"
+      ],
+      "place-value": [
+        "Materials: (T) Unlabeled place value chart (Lesson 14 Template) (S) Personal white board, unlabeled place",
+        "Part 1: Use the place value chart to model decomposing once to subtract with three-digit minuends.",
+        "Students start with the unlabeled place value chart template in their personal white boards.",
+        "problem on our place value charts. (Model writing 825 – 132",
+        "as a vertical problem.) On your place value chart, draw place",
+        "S: (Draw place value disks.)",
+        "T: To get more tens so that we can subtract, we have to unbundle 1 hundred into tens. How many tens",
+        "T: (Model the process of unbundling 1 hundred into 10 tens, as shown to the right. Have students work"
+      ],
+      "table-or-chart": [
+        "Materials: (T) Unlabeled place value chart (Lesson 14 Template) (S) Personal white board, unlabeled place",
+        "value chart (Lesson 14 Template)",
+        "Part 1: Use the place value chart to model decomposing once to subtract with three-digit minuends.",
+        "Students start with the unlabeled place value chart template in their personal white boards.",
+        "value chart on our personal white board and then model the",
+        "as a vertical problem.) On your place value chart, draw place",
+        "3. The chart to the right shows the lengths of three movies."
+      ],
+      "money-model": [
+        "4. The total length of a rope is 208 centimeters. Scott cuts it into 3 pieces. The first piece is 80 centimeters",
+        "long. The second piece is 94 centimeters long. How long is the third piece of rope?"
+      ],
+      "picture-or-drawing": [
+        "as a vertical problem.) On your place value chart, draw place",
+        "S: (Draw place value disks.)",
+        "T: Let’s model this problem with a tape diagram to figure out what we need to do to solve. Draw with",
+        "T: Label the unknown on your tape diagram with the answer.",
+        "Continue with the following sequence: 11 – 3 and 61 – 3 (as pictured below at right).",
+        "diagram to model the problem."
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Let’s write that vertically in the workspace below the place value chart on our personal white board and then model the problem on our place value charts. (Model writing 825 – 132 as a vertical problem.) On your place value chart, draw place value disks to represent the amount of water Tara starts with."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw place value disks.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Model the process of unbundling 1 hundred into 10 tens, as shown to the right. Have students work along with you.) To start off, we had 8 hundreds and 2 tens. Now, how many hundreds and tens do we have?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now let’s move to the hundreds place. Can we subtract 1 hundred from 7 hundreds?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We’re ready to subtract. Cross off the ones, tens, and hundreds that are being subtracted. (Model as students work along.) MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "Tara drank 693 milliliters of water on her hike. color (e.g., green). Consider varying the colors for each place value unit Continue with the following suggested sequence: when teaching the standard algorithm  785 cm – 36 cm from day to day so that students continue to look for a value, rather  440 g – 223 g than for a color.  508 mL – 225 mL Write or project the following problem: Nooran buys 507 grams of grapes at the market on Tuesday. On Thursday, he buys 345 grams of grapes. How many more grams of grapes did Nooran buy on Tuesday than on Thursday?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s model this problem with a tape diagram to figure out what we need to do to solve. Draw with me on your board. (Model.) How should we solve this problem?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the equation, and then talk to your partner. Is this problem easily solved using mental math? Why or why not?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Like with addition problems that aren’t easily solved with simplifying strategies, we can use the standard algorithm to solve subtraction problems that aren’t easily solved with simplifying strategies. Rewrite the problem vertically on your board if you need to."
+      },
+      {
+        "speaker": "students",
+        "text": "(Rewrite problem vertically.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Model.) Do we have enough hundreds to subtract 3 hundreds?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We are ready to subtract! Solve the problem on your board."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Model as shown on the previous page.) How many more grams of grapes did Nooran buy on Tuesday?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label the unknown on your tape diagram with the answer. Continue with the following suggested sequence. Students should unbundle all necessary digits before performing the operation.  513 cm – 241 cm  760 g – 546 g  506 mL – 435 mL NOTES ON THE PROBLEM SET:"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 222 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 18 3 2\n\n\nLesson 18\nObjective: Decompose once to subtract measurements including three-digit\nminuends with zeros in the tens or ones place.\n\nSuggested Lesson Structure\n\n Fluency Practice                   (11 minutes)\n Application Problem                (5 minutes)\n Concept Development                (34 minutes)\n Student Debrief                    (10 minutes)\n   Total Time                        (60 minutes)\n\n\nFluency Practice (11 minutes)\n\n Group Counting 3.OA.1                                    (3 minutes)\n Subtract Mentally 3.NBT.2                                (4 minutes)\n Estimate and Add 3.NBT.2                                 (4 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. It reviews foundational\nstrategies for multiplication from Module 1 and anticipates Module 3.\nDirect students to count forward and backward, occasionally changing the direction of the count:\n        Threes to 30\n        Fours to 40\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\nAs students’ fluency with skip-counting improves, help them make a connection to multiplication by tracking\nthe number of groups they count using their fingers.\n\nSubtract Mentally (4 minutes)\nNote: This activity anticipates the role of place value in the subtraction algorithm.\n    T:   (Write 10 – 3 = ___.) Say the number sentence in units of one.\n    S:   10 ones – 3 ones = 7 ones.\n\n\n                         Lesson 18:                    Decompose once to subtract measurements including three-digit                         221\n                                                       minuends with zeros in the tens or ones place.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 223 (concept-development) ---\nA STORY OF UNITS                                                                                                                     Lesson 18 3 2\n\n\nContinue with the following sequence: 11 – 3 and 61 – 3 (as pictured below at right).\n    T:   (Write 100 – 30 = ___.)\n         Now say the number sentences in units of ten.                                              10 – 3 = 7                    11 – 3 = 8      61 – 3 = 58\n    T:   10 tens – 3 tens = 7 tens.                                                                 100 – 30 = 70                 110 – 30 = 80   610 – 30 = 580\nContinue with the following sequence: 110 – 30 and 610 – 30.\nRepeat with the following possible sequences:\n        10 – 5, 12 – 5, and 73 – 5\n        100 – 50, 120 – 50, and 730 – 50\n\nEstimate and Add (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews rounding to estimate sums from\n                                                                                                                             NOTES ON\nLesson 17.\n                                                                                                                             MULTIPLE MEANS\n    T:   (Write 38 + 23 ≈ ___.) Say the addition problem.                                                                    OF ACTION AND\n    S:   38 + 23.                                                                                                            EXPRESSION:\n                                                                                                                 Fluency activities are fun, fast-paced\n    T:   Give me the new addition problem if we round each\n                                                                                                                 math games, but don’t leave English\n         number to the nearest ten.                                                                              language learners behind. At the start\n    S:   40 + 20.                                                                                                of each activity, speak more slowly,\n    T:   (Write 38 + 23 ≈ 40 + 20.) What’s 40 + 20?                                                              pause more frequently, give an\n                                                                                                                 example, couple language with visual\n    S:   60.                                                                                                     aids or gestures, check for\n    T:   So, 38 + 23 should be close to …?                                                                       understanding, explain in students’ first\n    S:   60.                                                                                                     language, and/or increase response\n                                                                                                                 time.\n    T:   On your personal white board, solve 38 + 23.\n    S:   (Solve.)\nContinue with the following possible sequence: 24 + 59, 173 + 49, and 519 + 185.\n\n\nApplication Problem (5 minutes)\n\nTara brings 2 bottles of water on her hike. The first bottle has\n471 milliliters of water, and the second bottle has 354\nmilliliters of water. How many milliliters of water does Tara\nbring on her hike?\nNote: This problem reviews composing units once to add. It\nwill be used to reintroduce the place value chart during Part 1\nof the Concept Development.\n\n\n                         Lesson 18:                    Decompose once to subtract measurements including three-digit                                        222\n                                                       minuends with zeros in the tens or ones place.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 224 (concept-development) ---\nA STORY OF UNITS                                                                                                             Lesson 18 3 2\n\n\nConcept Development (34 minutes)\n\nMaterials: (T) Unlabeled place value chart (Lesson 14 Template) (S) Personal white board, unlabeled place\n           value chart (Lesson 14 Template)\n\nPart 1: Use the place value chart to model decomposing once to subtract with three-digit minuends.\nStudents start with the unlabeled place value chart template in their personal white boards.\n\n    T:   Tara has 132 milliliters of water left after hiking. How can we\n                                                                              Lesson 14 Template\n         find out how many milliliters of water Tara drinks while she is\n         hiking?\n    S:   We can subtract.  We can subtract 132 milliliters from\n         825 milliliters.  She drank 825 milliliters – 132 milliliters.\n    T:   Let’s write that vertically in the workspace below the place\n         value chart on our personal white board and then model the\n         problem on our place value charts. (Model writing 825 – 132\n         as a vertical problem.) On your place value chart, draw place\n         value disks to represent the amount of water Tara starts with.\n    S:   (Draw place value disks.)\n    T:   Let’s get ready to subtract. Look at your vertical\n         subtraction problem. How many ones do we need to\n         subtract from the 5 ones that are there now?\n    S:   2 ones.\n    T:   Can we subtract 2 ones from 5 ones?\n    S:   Yes!\n    T:   How many tens are we subtracting from 2 tens?\n    S:   3 tens.\n    T:   Can we subtract 3 tens from 2 tens?\n    S:   No!\n    T:   Why not?\n    S:   There aren’t enough tens to subtract from.  3 tens is more than 2 tens.\n    T:   To get more tens so that we can subtract, we have to unbundle 1 hundred into tens. How many tens\n         in 1 hundred?\n    S:   10 tens!\n    T:   (Model the process of unbundling 1 hundred into 10 tens, as shown to the right. Have students work\n         along with you.) To start off, we had 8 hundreds and 2 tens. Now, how many hundreds and tens do\n         we have?\n    S:   7 hundreds and 12 tens!\n    T:   Now that we have 12 tens, can we take 3 tens away?\n    S:   Yes!\n\n\n                       Lesson 18:                    Decompose once to subtract measurements including three-digit                         223\n                                                     minuends with zeros in the tens or ones place.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 225 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                              Lesson 18 3 2\n\n\n    T:   Now let’s move to the hundreds place. Can we subtract 1 hundred from 7 hundreds?\n    S:   Yes!\n    T:   We’re ready to subtract. Cross off the ones, tens, and\n         hundreds that are being subtracted. (Model as\n                                                                                NOTES ON\n         students work along.)\n                                                                                MULTIPLE MEANS\n    T:   So, what’s the result?\n                                                                                OF REPRESENTATION:\n    S:   693.\n                                                                       Use color to customize the\n    T:   So, that’s it. Our answer is 693?                             presentation of decomposing to\n    S:   No! We were looking for the amount of water, not just         subtract. Enhance learners’ perception\n MP.2    a number. It’s 693 milliliters!                               of the information by consistently\n                                                                       displaying hundreds in one color (e.g.,\n    T:   Answer the question with a full statement.                    red), while displaying tens in a different\n    S:   Tara drank 693 milliliters of water on her hike.              color (e.g., green). Consider varying\n                                                                                                               the colors for each place value unit\nContinue with the following suggested sequence:\n                                                                                                               when teaching the standard algorithm\n        785 cm – 36 cm                                                                                        from day to day so that students\n                                                                                                               continue to look for a value, rather\n        440 g – 223 g\n                                                                                                               than for a color.\n        508 mL – 225 mL\n\nPart 2: Subtract using the standard algorithm.\nWrite or project the following problem:\nNooran buys 507 grams of grapes at the market on Tuesday. On Thursday, he buys 345 grams of grapes.\nHow many more grams of grapes did Nooran buy on Tuesday than on Thursday?\n    T:   Let’s model this problem with a tape diagram to figure out what we need to do to solve. Draw with\n         me on your board. (Model.) How should we solve this problem?\n    S:   We can subtract, 507 grams – 345 grams.  We’re looking for the part that’s different so we subtract.\n          To find a missing part, subtract.\n    T:   Write the equation, and then talk to your partner. Is this problem easily solved using mental math?\n         Why or why not?\n    S:   Not really.  It’s easy to subtract 300 from 500, but the 7 and the 45 aren’t very friendly.\n    T:   Like with addition problems that aren’t easily solved with simplifying strategies, we can use the\n         standard algorithm to solve subtraction problems that aren’t easily solved with simplifying strategies.\n         Rewrite the problem vertically on your board if you need to.\n    S:   (Rewrite problem vertically.)\n    T:   Before we subtract, let’s see if any unbundling needs\n         to be done. Are there enough ones to subtract 5 ones?\n    S:   Yes.\n    T:   Are there enough tens to subtract 4 tens?\n    S:   No, 0 tens is less than 4 tens.\n    T:   How can we get some more tens?\n    S:   We can go to the hundreds place.  We can unbundle 1 hundred to make 10 tens.\n\n\n                        Lesson 18:                    Decompose once to subtract measurements including three-digit                                   224\n                                                      minuends with zeros in the tens or ones place.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 226 (application-problem) ---\nA STORY OF UNITS                                                                                                             Lesson 18 3 2\n\n\n    T:   How many hundreds are in the number on top?\n    S:   5 hundreds.\n    T:   When we unbundle 1 hundred to make 10 tens, how many hundreds and tens will the top number\n         have?\n    S:   4 hundreds and 10 tens.\n    T:   (Model.) Do we have enough hundreds to subtract 3 hundreds?\n    S:   Yes.\n    T:   We are ready to subtract! Solve the problem on your board.\n    T:   (Model as shown on the previous page.) How many more grams of grapes did Nooran buy on\n         Tuesday?\n    S:   162 more grams of grapes!\n    T:   Label the unknown on your tape diagram with the answer.\nContinue with the following suggested sequence. Students should unbundle all necessary digits before\nperforming the operation.\n        513 cm – 241 cm\n        760 g – 546 g\n        506 mL – 435 mL                                                                                                   NOTES ON\n                                                                                                                           THE PROBLEM SET:\nProblem Set (10 minutes)\n                                                                                                               The problems on the Problem Set are\nStudents should do their personal best to complete the Problem                                                 written horizontally so that students do\nSet within the allotted 10 minutes. For some classes, it may be                                                not assume that they need to use the\nappropriate to modify the assignment by specifying which                                                       standard algorithm to solve. Mental\nproblems they work on first. Some problems do not specify a                                                    math may be a more efficient strategy\nmethod for solving. Students should solve these problems using                                                 in some cases. Invite students to use\nthe RDW approach used for Application Problems.                                                                the algorithm as a strategic tool,\n                                                                                                               purposefully choosing it rather than\n                                                                                                               defaulting to it.\n\n\n                       Lesson 18:                    Decompose once to subtract measurements including three-digit                                   225\n                                                     minuends with zeros in the tens or ones place.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 227 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 18 3 2\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Decompose once to subtract\nmeasurements including three-digit minuends with zeros\nin the tens or ones place.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        What is the relationship between Problems 1(a),\n         1(b), and 1(c)?\n        How are Problems 1(j) and 1(k) different from the\n         problems that come before them?\n        Invite students to share the tape diagram used to\n         solve Problem 2.\n        Compare Problems 2 and 4. What extra step was\n         needed to solve Problem 4? What models could\n         be used to solve this problem?\n        Describe the steps of the standard algorithm for\n         subtraction.\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                        Lesson 18:                    Decompose once to subtract measurements including three-digit                         226\n                                                      minuends with zeros in the tens or ones place.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 228 (problem-set) ---\nA STORY OF UNITS                                                                                     Lesson 18 Problem Set 3 2\n\n\nName                                                                                                       Date\n\n1. Solve the subtraction problems below.\n\n   a. 60 mL – 24 mL                                       b. 360 mL – 24 mL                                         c. 360 mL – 224 mL\n\n\n   d. 518 cm – 21 cm                                      e. 629 cm – 268 cm                                        f.     938 cm – 440 cm\n\n\n   g. 307 g – 130 g                                       h. 307 g – 234 g                                          i.     807 g – 732 g\n\n\n   j.   2 km 770 m – 1 km 455 m                                                                                     k. 3 kg 924 g – 1 kg 893 g\n\n\n                       Lesson 18:                    Decompose once to subtract measurements including three-digit                           227\n                                                     minuends with zeros in the tens or ones place.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 229 (problem-set) ---\nA STORY OF UNITS                                                                                      Lesson 18 Problem Set 3 2\n\n\n2. The total weight of 3 books is shown to the right. If 2 books weigh\n   233 grams, how much does the third book weigh? Use a tape\n   diagram to model the problem.\n\n\n                                                                                                                                     405g\n\n\n3. The chart to the right shows the lengths of three movies.\n                                                                                                                       The Lost Ship        117 minutes\n    a.   The movie Champions is 22 minutes shorter than The\n         Lost Ship. How long is Champions?\n                                                                                                                     Magical Forests        145 minutes\n\n\n                                                                                                                         Champions          ? minutes\n\n\n    b.   How much longer is Magical Forests than Champions?\n\n\n4. The total length of a rope is 208 centimeters. Scott cuts it into 3 pieces. The first piece is 80 centimeters\n   long. The second piece is 94 centimeters long. How long is the third piece of rope?\n\n\n                        Lesson 18:                    Decompose once to subtract measurements including three-digit                                228\n                                                      minuends with zeros in the tens or ones place.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 230 (exit-ticket) ---\nA STORY OF UNITS                                                                                          Lesson 18 Exit Ticket 3 2\n\n\nName                                                                                                        Date\n\n1. Solve the subtraction problems below.\n\n    a. 381 mL − 146 mL                                    b. 730 m − 426 m                                              c. 509 kg − 384 kg\n\n\n2. The total length of a banner is 408 centimeters. Carly paints it in 3 sections. The first 2 sections she paints\n   are 187 centimeters long altogether. How long is the third section?\n\n\n                        Lesson 18:                    Decompose once to subtract measurements including three-digit                          229\n                                                      minuends with zeros in the tens or ones place.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 231 (homework) ---\nA STORY OF UNITS                                                                                       Lesson 18 Homework 3 2\n\n\nName                                                                                                       Date\n\n1. Solve the subtraction problems below.\n\n   a. 70 L − 46 L                                             b. 370 L – 46 L                                                   c. 370 L – 146 L\n\n\n   d. 607 cm − 32 cm                                          e. 592 cm − 258 cm                                                f.   918 cm − 553 cm\n\n\n   g. 763 g − 82 g                                            h. 803 g − 542 g                                                  i.   572 km − 266 km\n\n\n   j.   837 km − 645 km\n\n\n                       Lesson 18:                    Decompose once to subtract measurements including three-digit                                     230\n                                                     minuends with zeros in the tens or ones place.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 232 (homework) ---\nA STORY OF UNITS                                                                                       Lesson 18 Homework 3 2\n\n\n2. The magazine weighs 280 grams less than the newspaper. The weight of the newspaper is shown below.\n   How much does the magazine weigh? Use a tape diagram to model your thinking.\n\n\n                      454 g\n\n\n3. The chart to the right shows how long it takes to play 3 games.\n                                                                                                               Lucas’s\n   a. Francesca’s basketball game is 22 minutes shorter than                                                Baseball Game       180 minutes\n      Lucas’s baseball game. How long is Francesca’s basketball\n      game?                                                                                                      Joey’s\n                                                                                                             Football Game      139 minutes\n\n                                                                                                             Francesca’s\n                                                                                                           Basketball Game       ? minutes\n\n\n   b. How much longer is Francesca’s basketball game than Joey’s football game?\n\n\n                       Lesson 18:                    Decompose once to subtract measurements including three-digit                       231\n                                                     minuends with zeros in the tens or ones place.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 228,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                     Lesson 18 Problem Set 3 2\n\n\nName                                                                                                       Date\n\n1. Solve the subtraction problems below.\n\n   a. 60 mL – 24 mL                                       b. 360 mL – 24 mL                                         c. 360 mL – 224 mL\n\n\n   d. 518 cm – 21 cm                                      e. 629 cm – 268 cm                                        f.     938 cm – 440 cm\n\n\n   g. 307 g – 130 g                                       h. 307 g – 234 g                                          i.     807 g – 732 g\n\n\n   j.   2 km 770 m – 1 km 455 m                                                                                     k. 3 kg 924 g – 1 kg 893 g\n\n\n                       Lesson 18:                    Decompose once to subtract measurements including three-digit                           227\n                                                     minuends with zeros in the tens or ones place.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 229,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                      Lesson 18 Problem Set 3 2\n\n\n2. The total weight of 3 books is shown to the right. If 2 books weigh\n   233 grams, how much does the third book weigh? Use a tape\n   diagram to model the problem.\n\n\n                                                                                                                                     405g\n\n\n3. The chart to the right shows the lengths of three movies.\n                                                                                                                       The Lost Ship        117 minutes\n    a.   The movie Champions is 22 minutes shorter than The\n         Lost Ship. How long is Champions?\n                                                                                                                     Magical Forests        145 minutes\n\n\n                                                                                                                         Champions          ? minutes\n\n\n    b.   How much longer is Magical Forests than Champions?\n\n\n4. The total length of a rope is 208 centimeters. Scott cuts it into 3 pieces. The first piece is 80 centimeters\n   long. The second piece is 94 centimeters long. How long is the third piece of rope?\n\n\n                        Lesson 18:                    Decompose once to subtract measurements including three-digit                                228\n                                                      minuends with zeros in the tens or ones place.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 300,
+        "text": "A STORY OF UNITS                                                                                      Lesson 18 Answer Key 3 2\n\n\nLesson 18\nProblem Set\n1.    a. 36 mL                                                                   2.        172 g; tape diagram drawn and labeled to\n      b. 336 mL                                                                            model problem\n      c. 136 mL                                                                  3.        a. 95 min\n      d. 497 cm                                                                            b. 50 min\n      e. 361 cm                                                                  4.        34 cm\n      f.   498 cm\n      g. 177 g\n      h. 73 g\n      i.   75 g\n      j.   1 km 315 m\n      k. 2 kg 31 g\n\nExit Ticket\n1.    a. 235 mL\n      b. 304 m\n      c. 125 kg\n2.    221 cm\n\nHomework\n1.    a. 24 L                                                                   2.       174 g; tape diagram drawn and labeled to\n      b. 324 L                                                                           model problem\n      c. 224 L                                                                  3.       a. 158 min\n      d. 575 cm                                                                          b. 19 min\n      e. 334 cm\n      f.   365 cm\n      g. 681 g\n      h. 261 g\n      i.   306 km\n      j.   192 km\n\n\n                                                                                                                                      299\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

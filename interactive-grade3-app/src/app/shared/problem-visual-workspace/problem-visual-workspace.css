@@ -900,6 +900,20 @@
     color-mix(in srgb, var(--module-accent, #4285f4) 30%, #d2e3fc 70%);
 }
 
+.visual-array.is-dense {
+  width: 100%;
+  gap: 3px;
+  padding: 10px;
+}
+
+.visual-array.is-dense span,
+.visual-array.is-dense.is-square span {
+  width: 100%;
+  height: auto;
+  min-height: 10px;
+  aspect-ratio: 1;
+}
+
 .visual-array.is-pattern {
   gap: 8px;
   padding: 12px;
@@ -1160,6 +1174,7 @@
 .visual-data-chart-bar span {
   display: block;
   height: 100%;
+  min-height: 28px;
   border-radius: inherit;
   background: linear-gradient(90deg, #7baaf7, #34a853);
 }
@@ -1233,6 +1248,34 @@
 
 .visual-geometry-shape.is-triangle {
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.visual-geometry-shape.is-right-triangle {
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.visual-geometry-shape.is-parallelogram {
+  clip-path: polygon(20% 0, 100% 0, 80% 100%, 0 100%);
+}
+
+.visual-geometry-shape.is-trapezoid {
+  clip-path: polygon(22% 0, 78% 0, 100% 100%, 0 100%);
+}
+
+.visual-geometry-shape.is-rhombus {
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+.visual-geometry-shape.is-kite {
+  clip-path: polygon(50% 0, 90% 38%, 50% 100%, 10% 38%);
+}
+
+.visual-geometry-shape.is-pentagon {
+  clip-path: polygon(50% 0, 100% 38%, 82% 100%, 18% 100%, 0 38%);
+}
+
+.visual-geometry-shape.is-hexagon {
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
 }
 
 
@@ -2420,6 +2463,91 @@
 :host-context(.lesson-m3) .visual-source-directions b {
   color: #174ea6;
   font-size: 14px;
+}
+
+/* M3L1 follows the Teacher Edition chart, diamond array, and two-column equation layout. */
+:host-context(.lesson-m3-l1) .visual-section:first-of-type .visual-data-table {
+  width: min(100%, 1060px);
+  border-color: #5f6368;
+  border-radius: 4px;
+}
+
+:host-context(.lesson-m3-l1) .visual-section:first-of-type .visual-data-row span {
+  min-height: 34px;
+  padding: 7px 4px;
+  border-color: #9aa0a6;
+  font-size: clamp(11px, 1.15vw, 14px);
+  font-weight: 680;
+  text-align: center;
+}
+
+:host-context(.lesson-m3-l1) .visual-section:first-of-type .visual-data-row.is-head span,
+:host-context(.lesson-m3-l1) .visual-section:first-of-type .visual-data-row span:first-child {
+  background: #f1f3f4;
+  color: #202124;
+  font-weight: 820;
+}
+
+:host-context(.lesson-m3-l1) .problem-visual-workspace.is-solved .visual-section:first-of-type
+  .visual-data-row:nth-child(n + 2):nth-child(-n + 6) span:not(:first-child),
+:host-context(.lesson-m3-l1) .problem-visual-workspace.is-solved .visual-section:first-of-type
+  .visual-data-row:nth-child(11) span:not(:first-child) {
+  background: #dbeafe;
+  color: #174ea6;
+}
+
+:host-context(.lesson-m3-l1) .problem-visual-workspace.is-solved .visual-section:first-of-type
+  .visual-data-row:nth-child(n + 7):nth-child(-n + 10) span:nth-child(n + 2):nth-child(-n + 6),
+:host-context(.lesson-m3-l1) .problem-visual-workspace.is-solved .visual-section:first-of-type
+  .visual-data-row:nth-child(n + 7):nth-child(-n + 10) span:nth-child(11) {
+  background: #e6f4ea;
+  color: #137333;
+}
+
+:host-context(.lesson-m3-l1) .visual-array.is-square {
+  width: fit-content;
+  gap: clamp(9px, 1.4vw, 18px);
+  padding: 22px;
+  border: 1px solid #d2d9e6;
+  background: #ffffff;
+}
+
+:host-context(.lesson-m3-l1) .visual-array.is-square span,
+:host-context(.lesson-m3-l1) .problem-visual-workspace:not(.is-solved) .visual-array.is-square span,
+:host-context(.lesson-m3-l1) .problem-visual-workspace.is-solved .visual-array.is-square span {
+  width: clamp(18px, 2.2vw, 28px);
+  height: clamp(18px, 2.2vw, 28px);
+  rotate: 45deg;
+  transform: rotate(45deg);
+  border: 2px solid #202124;
+  border-radius: 2px;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+:host-context(.lesson-m3-l1) .visual-solution-parts {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: min(100%, 1080px);
+}
+
+:host-context(.lesson-m3-l1) .visual-solution-parts article {
+  min-height: 108px;
+}
+
+:host-context(.lesson-m3-l1) .visual-solution-parts span {
+  font-size: 15px;
+}
+
+@media (max-width: 720px) {
+  :host-context(.lesson-m3-l1) .visual-solution-parts {
+    grid-template-columns: 1fr;
+  }
+
+  :host-context(.lesson-m3-l1) .visual-section:first-of-type .visual-data-row span {
+    min-height: 28px;
+    padding: 5px 2px;
+    font-size: 10px;
+  }
 }
 
 :host-context(.lesson-m4) :is(.problem-visual-workspace, .problem-visual-workspace *, .visual-section, .visual-card-grid, .visual-sub-card, .visual-array, .visual-equations, .visual-related-facts, .visual-solution-parts, .visual-tape, .visual-floor-plan, .visual-geometry-diagram, .visual-source-directions li) {

@@ -221,7 +221,8 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
   }
 
   arrayColumns(section: ProblemVisualArraySection): string {
-    return `repeat(${Math.max(1, section.columns)}, minmax(18px, 1fr))`;
+    const minimum = section.columns > 16 ? 10 : 18;
+    return `repeat(${Math.max(1, section.columns)}, minmax(${minimum}px, 1fr))`;
   }
 
   arrayCellIsAfterSplit(section: ProblemVisualArraySection, index: number): boolean {
@@ -287,8 +288,14 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     return `repeat(${Math.max(1, section.denominator)}, minmax(42px, 1fr))`;
   }
 
+  fractionStripCellCount(section: ProblemVisualFractionStripSection): number {
+    const denominator = Math.max(1, section.denominator);
+    const wholeCount = Math.max(1, Math.ceil(Math.max(0, section.numerator) / denominator));
+    return denominator * wholeCount;
+  }
+
   fractionStripIsShaded(section: ProblemVisualFractionStripSection, index: number): boolean {
-    return this.mode === 'solved' && index < Math.max(0, Math.min(section.numerator, section.denominator));
+    return this.mode === 'solved' && index < Math.max(0, section.numerator);
   }
 
   fractionStripCellLabel(section: ProblemVisualFractionStripSection, index: number): string {

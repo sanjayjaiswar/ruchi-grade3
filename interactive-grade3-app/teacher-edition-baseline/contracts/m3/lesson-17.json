@@ -1,0 +1,437 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m3-l17",
+  "moduleId": "m3",
+  "lessonNumber": 17,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_3/g3_m3_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+    "teacherEditionBytes": 14065864,
+    "lessonPdfPages": {
+      "start": 212,
+      "end": 224
+    },
+    "problemSetPdfPages": [
+      218,
+      219,
+      220
+    ],
+    "exitTicketPdfPages": [
+      221
+    ],
+    "homeworkPdfPages": [
+      222,
+      223,
+      224
+    ],
+    "answerKeyPdfPages": [
+      311
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m3-student/workbook-page-073.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m3-answer-key/page-311.png"
+    ]
+  },
+  "objective": "Identify patterns in multiplication and division facts using the multiplication table.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "Henry’s garden has 9 rows of squash plants. Each row has 8 squash plants. There is also 1 row with\n8 watermelon plants. How many squash and watermelon plants does Henry have in all?\n\n\nNote: This problem reviews multiplying by units of 9 and 1. Depending on how students choose to solve the\nproblem, it can be used to review multiplying with units of 10 (e.g., 10 × 8). Be sure to discuss the various\nstrategies that can be used to solve this problem.\n\n\n                          Lesson 17:               Identify patterns in multiplication and division facts using the                            212\n                                                   multiplication table.\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                                Lesson 17 3 3",
+    "conceptDevelopmentText": "Materials: (S) Personal white board, Problem Set, orange crayon\n\nProblems 1(a) and 1(b)\n                                                                                                                  Completed Table from Problem 1:\n    T:   Write the products to complete the table in Problem\n         1. Then, color all the squares that have even\n         products orange.\n    T:   Let’s look at the first orange square in the table.\n         Write the multiplication equation on your board for\n         the product in this square. (Students write.) Are\n         the factors 2 and 1 odd or even?\n    S:   2 is even and 1 is odd.\n    T:   Look at the orange square below this one. Write\n         the multiplication equation on your board for the\n         product in this square. (Students write.) Are the\n         factors 2 and 2 odd or even?\n    S:   They’re both even!\n    T:   Work with a partner to continue to look at the                                                                     NOTES ON\n         orange squares, and tell if the factors are odd or                                                                 MULTIPLE MEANS\n         even.                                                                                                              OF REPRESENTATION:\n         (Students finish working.) What did you notice                                                          If possible and necessary, transcribe\n         about the factors of even products?                                                                     the rapid oral responses of learners\n    S:   The factors are either both even or one is odd and                                                      who may otherwise work at a slower\n         one is even.                                                                                            pace. Use color to outline rows and\n                                                                                                                 columns to help learners better discern\n    T:   (Write the following.) Even times even equals even.                                                     the content. If highlighting the column\n         Odd times even equals even.                                                                             of threes facts, for example, ask\n    T:   Work with a partner to find out what kinds of                                                           students to circle even products\n         factors are required to produce an odd product.                                                         (instead of coloring them orange).\n         (Students finish working.) What did you notice?\n    S:   Odd times odd equals odd!\n    T:   Answer Problems 1(a) and 1(b) on the Problem Set.\n\nProblems 1(c) and 1(d)\n    T:   Compare the shaded columns and shaded rows. Which factors do they have in common?\n    S:   2, 4, 6, 8.\n    T:   What is 5 × 4?\n    S:   20.\n    T:   What is 2 × 4?\n    S:   8.\n\n\n                         Lesson 17:               Identify patterns in multiplication and division facts using the                                     213\n                                                  multiplication table.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 17 3 3\n\n\n     T:   How do these 2 facts help you find 7 × 4? Talk to your partner and answer Problem 1(c) on the\n          Problem Set.\n     S:   20 and 8 is 28.  2 fours + 5 fours is 7 fours.  2 plus 5 is 7, so the products of these 2 facts can be\n          added together to get the product of 7 × 4. (Answer Problem 1(c) on the Problem Set.)\n     T:   Is the product of 7 and 16 on this table?\n     S:   No!\n     T:   Talk to a partner. How can we use this table and what we know to solve 7 × 16?\n     S:   10 sevens and 6 sevens is 16 sevens, 70 + 42.  Doubling 8 sevens equals 56 + 56.  9 sevens and\n          7 sevens, 63 + 49.  We can think of 16 as 8 + 8 and then the problem is (7 × 8) + (7 × 8).  We\n          could also add 4 sevens four times! 28 + 28 + 28 + 28.\n     T:   Answer Problem 1(d).\n\n Problem 2\n     T:   Complete the chart in Problem 2 by writing the products for each equation. (Students finish\n          working.) Read the products to me.\n     S:   1, 4, 9, 16, 25, 36.\n     T:   If this chart continued, what would the next equation be?\n     S:   7 × 7 = 49.\n     T:   And the next equation?\n     S:   8 × 8 = 64.\n     T:   Draw arrays to match each of these equations in Problem 2. (Students finish working.) Now, record\n          the change in the number of squares from one array to the next.\n     T:   (Allow students time to finish.) Discuss with a partner. What is the pattern in the number of squares\n          being added?\n     S:   It’s 1, 3, 5, 7, like that!  The increase in squares is the same as counting by the odd numbers, 1, 3,\n          5, 7, 9, 11, 13, 15.\n     T:   Answer Problem 2(b).\n     T:   What are the first 2 odd numbers when you start counting at 0?\n     S:   1 and 3.\n     T:   What is their sum?\n     S:   4.\n     T:   Look at Problem 2. Four is the product of what?\nMP.7 S:   2 × 2.\n     T:   The sum of the first 2 odd numbers is the same as the product of 2 × 2.\n     T:   What is the sum of the first 3 odd numbers?\n     S:   9.\n     T:   Look at Problem 2. Nine is the product of what?\n     S:   3 × 3.\n\n\n                         Lesson 17:               Identify patterns in multiplication and division facts using the                            214\n                                                  multiplication table.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                             Lesson 17 3 3\n\n\n       T:   Use the table in Problem 2: What do you think is\n            the sum of the first 5 odd numbers?\n       S:   25.\nMP.7\n       T:   Check your work: What is 1 + 3 + 5 + 7 + 9?\n       S:   25.\n       T:   Answer Problems 2(c) and 2(d).",
+    "fluencyPracticeText": " Multiply By 10 3.NBT.3                                          (3 minutes)\n Multiply or Divide 3.OA.7                                       (4 minutes)\n Complete the Number Sentence 3.OA.5                             (4 minutes)\n\nMultiply with 10 (3 minutes)\nNote: This fluency activity anticipates Lesson 19, which involves multiplying by multiples of 10 using the place\nvalue chart.\n    T:   I’ll say a fact. You say the whole equation. 10 × 1.\n    S:   10 × 1 = 10.\nContinue with the following possible sequence: 10 × 2, 10 × 3, 10 × 8, and 10 × 5.\n    T:   I’ll say a product that is a multiple of 10. You say the multiplication fact starting with 10. 20.\n    S:   10 × 2 = 20.\nContinue with the following possible sequence: 30, 40, 90, 50, and 10.\n\nMultiply or Divide (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews multiplication and division facts within 100.\n\n    T: (Write 6 × 1 = ___.) Say the multiplication sentence.\n    S: 6 × 1 = 6.\n\n\n                        Lesson 17:               Identify patterns in multiplication and division facts using the                            211\n                                                 multiplication table.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                                Lesson 17 3 3\n\n\nContinue with the following possible sequence: 6 × 2 and 6 × 3.\n     T: On your personal white board, show the answer to 6 × 7. If you need to, skip-count.\n     S: (Write 42.)\nContinue with the following possible sequence, asking students to write answers to the harder problems on\ntheir personal white boards, while asking them to orally answer the easier problems: 30 ÷ 6, 24 ÷ 6, 60 ÷ 6,\n54 ÷ 6, 7 × 1, 7 × 2, 7 × 3, 7 × 8, 35 ÷ 7, 28 ÷ 7, 70 ÷ 7, 63 ÷ 7, 49 ÷ 7, 8 × 1, 8 × 2, 8 × 3, 8 × 9, 40 ÷ 8, 48 ÷ 8, 32\n÷ 8, 80 ÷ 8, 64 ÷ 8, 9 × 1, 9 × 2, 9 × 3, 9 × 8, 45 ÷ 9, 36 ÷ 9, 54 ÷ 9, 90 ÷ 9, 81 ÷ 9, and 63 ÷ 9.\n\nComplete the Number Sentence (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews multiplication and division using units of 0 and 1.\n     T:   (Write ___ × 1 = 6.) On your personal white board, complete the equation.\n     S:   (Write 6 × 1 = 6.)\nContinue with the following possible sequence: __ × 1 = 7, 9 × __ = 9, 8 × __ = 8, 7 ÷ __ = 7, 9 ÷ __ = 9,\n7 ÷ __ = 1, 9 ÷ __ = 1, 8 × __ = 0, 6 × __ = 0, 0 ÷ 7 = __, 0 ÷ 9 = __, __ ÷ 8 = 0, __ ÷ 6 = 0, __ × 1 = 8, 7 × __ = 7,\n6 ÷ __ = 6, 9 × __ = 0, 6 ÷ __ = 1, 0 ÷ 6 = __, __ ÷ 9 = 0, and 9 ÷ __ = 1.",
+    "problemSetGuidanceText": "",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Write the products to complete the table in Problem 1. Then, color all the squares that have even products orange."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s look at the first orange square in the table. Write the multiplication equation on your board for the product in this square. (Students write.) Are the factors 2 and 1 odd or even?"
+      },
+      {
+        "speaker": "students",
+        "text": "2 is even and 1 is odd."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look at the orange square below this one. Write the multiplication equation on your board for the product in this square. (Students write.) Are the factors 2 and 2 odd or even?"
+      },
+      {
+        "speaker": "students",
+        "text": "They’re both even!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with a partner to continue to look at the NOTES ON orange squares, and tell if the factors are odd or MULTIPLE MEANS even. OF REPRESENTATION: (Students finish working.) What did you notice If possible and necessary, transcribe about the factors of even products? the rapid oral responses of learners"
+      },
+      {
+        "speaker": "students",
+        "text": "The factors are either both even or one is odd and who may otherwise work at a slower one is even. pace. Use color to outline rows and columns to help learners better discern"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write the following.) Even times even equals even. the content. If highlighting the column Odd times even equals even. of threes facts, for example, ask"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with a partner to find out what kinds of students to circle even products factors are required to produce an odd product. (instead of coloring them orange). (Students finish working.) What did you notice?"
+      },
+      {
+        "speaker": "students",
+        "text": "Odd times odd equals odd!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Answer Problems 1(a) and 1(b) on the Problem Set. Problems 1(c) and 1(d)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Compare the shaded columns and shaded rows. Which factors do they have in common?"
+      },
+      {
+        "speaker": "students",
+        "text": "2, 4, 6, 8."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is 5 × 4?"
+      },
+      {
+        "speaker": "students",
+        "text": "20."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is 2 × 4?"
+      },
+      {
+        "speaker": "students",
+        "text": "8. multiplication table. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 17 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How do these 2 facts help you find 7 × 4? Talk to your partner and answer Problem 1(c) on the Problem Set."
+      },
+      {
+        "speaker": "students",
+        "text": "20 and 8 is 28.  2 fours + 5 fours is 7 fours.  2 plus 5 is 7, so the products of these 2 facts can be added together to get the product of 7 × 4. (Answer Problem 1(c) on the Problem Set.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is the product of 7 and 16 on this table?"
+      },
+      {
+        "speaker": "students",
+        "text": "No!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to a partner. How can we use this table and what we know to solve 7 × 16?"
+      },
+      {
+        "speaker": "students",
+        "text": "10 sevens and 6 sevens is 16 sevens, 70 + 42.  Doubling 8 sevens equals 56 + 56.  9 sevens and 7 sevens, 63 + 49.  We can think of 16 as 8 + 8 and then the problem is (7 × 8) + (7 × 8).  We could also add 4 sevens four times! 28 + 28 + 28 + 28."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Answer Problem 1(d)."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Complete the chart in Problem 2 by writing the products for each equation. (Students finish working.) Read the products to me."
+      },
+      {
+        "speaker": "students",
+        "text": "1, 4, 9, 16, 25, 36."
+      },
+      {
+        "speaker": "teacher",
+        "text": "If this chart continued, what would the next equation be?"
+      },
+      {
+        "speaker": "students",
+        "text": "7 × 7 = 49."
+      },
+      {
+        "speaker": "teacher",
+        "text": "And the next equation?"
+      },
+      {
+        "speaker": "students",
+        "text": "8 × 8 = 64."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw arrays to match each of these equations in Problem 2. (Students finish working.) Now, record the change in the number of squares from one array to the next."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Allow students time to finish.) Discuss with a partner. What is the pattern in the number of squares being added?"
+      },
+      {
+        "speaker": "students",
+        "text": "It’s 1, 3, 5, 7, like that!  The increase in squares is the same as counting by the odd numbers, 1, 3, 5, 7, 9, 11, 13, 15."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Answer Problem 2(b)."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What are the first 2 odd numbers when you start counting at 0?"
+      },
+      {
+        "speaker": "students",
+        "text": "1 and 3."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is their sum?"
+      },
+      {
+        "speaker": "students",
+        "text": "4."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look at Problem 2. Four is the product of what? MP.7 S: 2 × 2."
+      },
+      {
+        "speaker": "teacher",
+        "text": "The sum of the first 2 odd numbers is the same as the product of 2 × 2."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the sum of the first 3 odd numbers?"
+      },
+      {
+        "speaker": "students",
+        "text": "9."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look at Problem 2. Nine is the product of what?"
+      },
+      {
+        "speaker": "students",
+        "text": "3 × 3. multiplication table. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 17 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use the table in Problem 2: What do you think is the sum of the first 5 odd numbers?"
+      },
+      {
+        "speaker": "students",
+        "text": "25. MP.7"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Check your work: What is 1 + 3 + 5 + 7 + 9?"
+      },
+      {
+        "speaker": "students",
+        "text": "25."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Answer Problems 2(c) and 2(d)."
+      }
+    ],
+    "teacherPrompts": [
+      "Write the products to complete the table in Problem 1. Then, color all the squares that have even products orange.",
+      "Let’s look at the first orange square in the table. Write the multiplication equation on your board for the product in this square. (Students write.) Are the factors 2 and 1 odd or even?",
+      "Look at the orange square below this one. Write the multiplication equation on your board for the product in this square. (Students write.) Are the factors 2 and 2 odd or even?",
+      "Work with a partner to continue to look at the NOTES ON orange squares, and tell if the factors are odd or MULTIPLE MEANS even. OF REPRESENTATION: (Students finish working.) What did you notice If possible and necessary, transcribe about the factors of even products? the rapid oral responses of learners",
+      "(Write the following.) Even times even equals even. the content. If highlighting the column Odd times even equals even. of threes facts, for example, ask",
+      "Work with a partner to find out what kinds of students to circle even products factors are required to produce an odd product. (instead of coloring them orange). (Students finish working.) What did you notice?",
+      "Answer Problems 1(a) and 1(b) on the Problem Set. Problems 1(c) and 1(d)",
+      "Compare the shaded columns and shaded rows. Which factors do they have in common?",
+      "What is 5 × 4?",
+      "What is 2 × 4?",
+      "How do these 2 facts help you find 7 × 4? Talk to your partner and answer Problem 1(c) on the Problem Set.",
+      "Is the product of 7 and 16 on this table?",
+      "Talk to a partner. How can we use this table and what we know to solve 7 × 16?",
+      "Answer Problem 1(d).",
+      "Complete the chart in Problem 2 by writing the products for each equation. (Students finish working.) Read the products to me.",
+      "If this chart continued, what would the next equation be?",
+      "And the next equation?",
+      "Draw arrays to match each of these equations in Problem 2. (Students finish working.) Now, record the change in the number of squares from one array to the next.",
+      "(Allow students time to finish.) Discuss with a partner. What is the pattern in the number of squares being added?",
+      "Answer Problem 2(b).",
+      "What are the first 2 odd numbers when you start counting at 0?",
+      "What is their sum?",
+      "Look at Problem 2. Four is the product of what? MP.7 S: 2 × 2.",
+      "The sum of the first 2 odd numbers is the same as the product of 2 × 2.",
+      "What is the sum of the first 3 odd numbers?",
+      "Look at Problem 2. Nine is the product of what?",
+      "Use the table in Problem 2: What do you think is the sum of the first 5 odd numbers?",
+      "Check your work: What is 1 + 3 + 5 + 7 + 9?",
+      "Answer Problems 2(c) and 2(d)."
+    ],
+    "debriefPrompt": "Talk to a partner: How do the patterns you discovered in Problem 1 for odd and even products help you when multiplying?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Write the products into the squares as fast as you can. 1×1 2×1 3×1 4×1 5×1 6×1 7×1 8×1 1×2 2×2 3×2 4×2 5×2 6×2 7×2 8×2 1×3 2×3 3×3 4×3 5×3 6×3 7×3 8×3 1×4 2×4 3×4 4×4 5×4 6×4 7×4 8×4 1×5 2×5 3×5 4×5 5×5 6×5 7×5 8×5 1×6 2×6 3×6 4×6 5×6 6×6 7×6 8×6 1×7 2×7 3×7 4×7 5×7 6×7 7×7 8×7 1×8 2×8 3×8 4×8 5×8 6×8 7×8 8×8 a. Color all the squares with even products orange. Can an even product ever have an odd factor? b. Can an odd product ever have an even factor? c. Everyone knows that 7 × 4 = (5 × 4) + (2 × 4). Explain how this is shown in the table. d. Use what you know to find the product of 7 × 16 or 8 sevens + 8 sevens. multiplication table.",
+        "equations": [
+          "1×1",
+          "2×1",
+          "3×1",
+          "4×1"
+        ]
+      },
+      {
+        "number": 2,
+        "prompt": "In the table, only the products on the diagonal are shown. 1×1 a. Label each product on the diagonal. 2×2 3×3 4×4 b. Draw an array to match each expression in the table below. Then, label 5×5 the number of squares you added to make each new array. The first multiplication table. two arrays have been done for you. 6 ×6 1×1 2×2 3×3 4×4 5×5 6×6 Identify patterns in multiplication and division facts using the c. What pattern do you notice in the number of squares that are added to each new array? d. Use the pattern you discovered in Part (b) to prove this: 9 × 9 is the sum of the first 9 odd numbers. multiplication table.",
+        "equations": [
+          "1×1",
+          "2×2",
+          "3×3",
+          "4×4"
+        ]
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                     Lesson 17 Problem Set 3 3\n\n\nName                                                                                                        Date\n\n1. Write the products into the squares as fast as you can.\n\n                      1×1         2×1               3×1          4×1              5×1             6×1              7×1            8×1\n\n\n                      1×2         2×2               3×2          4×2              5×2             6×2              7×2            8×2\n\n\n                      1×3         2×3               3×3          4×3              5×3             6×3              7×3            8×3\n\n\n                      1×4         2×4               3×4          4×4              5×4             6×4              7×4            8×4\n\n\n                      1×5         2×5               3×5          4×5              5×5             6×5              7×5            8×5\n\n\n                      1×6         2×6               3×6          4×6              5×6             6×6              7×6            8×6\n\n\n                      1×7         2×7               3×7          4×7              5×7             6×7              7×7            8×7\n\n\n                      1×8         2×8               3×8          4×8              5×8             6×8              7×8            8×8\n\n\n    a. Color all the squares with even products orange. Can an even product ever have an odd factor?\n\n\n   b. Can an odd product ever have an even factor?\n\n\n   c. Everyone knows that 7 × 4 = (5 × 4) + (2 × 4). Explain how this is shown in the table.\n\n\n    d. Use what you know to find the product of 7 × 16 or 8 sevens + 8 sevens.\n\n\n                        Lesson 17:               Identify patterns in multiplication and division facts using the                       217\n                                                 multiplication table.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n2. In the table, only the products on the diagonal are shown.\n                                                                                                                                                                                                                                                                                      1×1\n                                                                                                                                                                                                         a. Label each product on the diagonal.\n                                                                                                                                                                                                                                                                                                                                    A STORY OF UNITS\n\n\n                                                                                                                                                                                                                                                                                            2×2\n\n\n                                                                                                                                                                                                                                                                                                  3×3\n\n\n                                                                                                                                                                Lesson 17:\n\n\nG3-M3-TE-1.3.0-05.2015\n                                                                                                                                                                                                                                                                                                        4×4\n\n\n                                                                                                                                                                                                          b. Draw an array to match each expression in the table below. Then, label                           5×5\n                                                                                                                                                                                                             the number of squares you added to make each new array. The first\n\n\n                                                                                                                                   multiplication table.\n                                                                                                                                                                                                             two arrays have been done for you.\n                                                                                                                                                                                                                                                                                                                    6 ×6\n\n\n                                                                                                                                                                                                                1×1                     2×2                     3×3                   4×4               5×5                6×6\n\n\n                                                                                                                                   Identify patterns in multiplication and division facts using the\n\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                                                                                                                                                                                                                                3\n                                                                                                                                                                                                                                                                                                                                 Lesson 17 Problem Set 3 3\n\n\n                                                                                                                                                       218\n\nA STORY OF UNITS                                                                                    Lesson 17 Problem Set 3 3\n\n\nc. What pattern do you notice in the number of squares that are added to each new array?\n\n\nd. Use the pattern you discovered in Part (b) to prove this: 9 × 9 is the sum of the first 9 odd numbers.\n\n\n                   Lesson 17:               Identify patterns in multiplication and division facts using the                  219\n                                            multiplication table.\n\n                    This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                   G3-M3-TE-1.3.0-05.2015",
+    "answerKeyProblemSetText": "1.    Products accurately recorded\n      a. Even-product squares colored; Yes\n      b. No\n      c. Explanations may vary.\n      d. 112\n2.    a. Products accurately labeled\n      b. Arrays accurately drawn; 5, 7, 9, 11\n      c. Answers may vary.\n      d. Explanations may vary.",
+    "answerKeyText": "A STORY OF UNITS                                                                                       Lesson 17 Answer Key 3 3\n\n\nLesson 17\nProblem Set\n1.    Products accurately recorded\n      a. Even-product squares colored; Yes\n      b. No\n      c. Explanations may vary.\n      d. 112\n2.    a. Products accurately labeled\n      b. Arrays accurately drawn; 5, 7, 9, 11\n      c. Answers may vary.\n      d. Explanations may vary.\n\n\nExit Ticket\n1.    96\n2.    Explanations will vary.\n\n\nHomework\n1.    a. Products accurately recorded\n      b. Even factors accurately identified\n      c. Explanations may vary.\n      d. Odd; even; even; examples will vary.\n      e. Explanations may vary.\n      f.   64\n2.    a. Answer provided\n      b. 16 = 4 × 4\n      c. 36 = 6 × 6\n      d. 64 = 8 × 8\n      e. 100 = 10 × 10\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              310\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "table-or-chart",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "Henry’s garden has 9 rows of squash plants. Each row has 8 squash plants. There is also 1 row with",
+        "T: Draw arrays to match each of these equations in Problem 2. (Students finish working.) Now, record",
+        "the change in the number of squares from one array to the next.",
+        "b. Draw an array to match each expression in the table below. Then, label 5×5",
+        "the number of squares you added to make each new array. The first",
+        "two arrays have been done for you.",
+        "c. What pattern do you notice in the number of squares that are added to each new array?"
+      ],
+      "table-or-chart": [
+        "Identify patterns in multiplication and division facts using the multiplication table.",
+        "multiplication table.",
+        "Completed Table from Problem 1:",
+        "T: Write the products to complete the table in Problem",
+        "T: Let’s look at the first orange square in the table.",
+        "multiplication table.",
+        "T: Is the product of 7 and 16 on this table?",
+        "T: Talk to a partner. How can we use this table and what we know to solve 7 × 16?"
+      ],
+      "money-model": [
+        "the change in the number of squares from one array to the next."
+      ],
+      "picture-or-drawing": [
+        "T: Compare the shaded columns and shaded rows. Which factors do they have in common?",
+        "T: Draw arrays to match each of these equations in Problem 2. (Students finish working.) Now, record",
+        "b. Draw an array to match each expression in the table below. Then, label 5×5"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Write the products to complete the table in Problem 1. Then, color all the squares that have even products orange."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s look at the first orange square in the table. Write the multiplication equation on your board for the product in this square. (Students write.) Are the factors 2 and 1 odd or even?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look at the orange square below this one. Write the multiplication equation on your board for the product in this square. (Students write.) Are the factors 2 and 2 odd or even?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with a partner to continue to look at the NOTES ON orange squares, and tell if the factors are odd or MULTIPLE MEANS even. OF REPRESENTATION: (Students finish working.) What did you notice If possible and necessary, transcribe about the factors of even products? the rapid oral responses of learners"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write the following.) Even times even equals even. the content. If highlighting the column Odd times even equals even. of threes facts, for example, ask"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with a partner to find out what kinds of students to circle even products factors are required to produce an odd product. (instead of coloring them orange). (Students finish working.) What did you notice?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Compare the shaded columns and shaded rows. Which factors do they have in common?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to a partner. How can we use this table and what we know to solve 7 × 16?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw arrays to match each of these equations in Problem 2. (Students finish working.) Now, record the change in the number of squares from one array to the next."
+      },
+      {
+        "speaker": "students",
+        "text": "It’s 1, 3, 5, 7, like that!  The increase in squares is the same as counting by the odd numbers, 1, 3, 5, 7, 9, 11, 13, 15."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What are the first 2 odd numbers when you start counting at 0?"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 212 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 17 3 3\n\n\nLesson 17\nObjective: Identify patterns in multiplication and division facts using the\nmultiplication table.\n\n\nSuggested Lesson Structure\n\n Fluency Practice                 (11 minutes)\n Application Problem              (5 minutes)\n Concept Development              (34 minutes)\n Student Debrief                  (10 minutes)\n   Total Time                      (60 minutes)\n\n\nFluency Practice (11 minutes)\n\n Multiply By 10 3.NBT.3                                          (3 minutes)\n Multiply or Divide 3.OA.7                                       (4 minutes)\n Complete the Number Sentence 3.OA.5                             (4 minutes)\n\nMultiply with 10 (3 minutes)\nNote: This fluency activity anticipates Lesson 19, which involves multiplying by multiples of 10 using the place\nvalue chart.\n    T:   I’ll say a fact. You say the whole equation. 10 × 1.\n    S:   10 × 1 = 10.\nContinue with the following possible sequence: 10 × 2, 10 × 3, 10 × 8, and 10 × 5.\n    T:   I’ll say a product that is a multiple of 10. You say the multiplication fact starting with 10. 20.\n    S:   10 × 2 = 20.\nContinue with the following possible sequence: 30, 40, 90, 50, and 10.\n\nMultiply or Divide (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews multiplication and division facts within 100.\n\n    T: (Write 6 × 1 = ___.) Say the multiplication sentence.\n    S: 6 × 1 = 6.\n\n\n                        Lesson 17:               Identify patterns in multiplication and division facts using the                            211\n                                                 multiplication table.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 213 (application-problem) ---\nA STORY OF UNITS                                                                                                                Lesson 17 3 3\n\n\nContinue with the following possible sequence: 6 × 2 and 6 × 3.\n     T: On your personal white board, show the answer to 6 × 7. If you need to, skip-count.\n     S: (Write 42.)\nContinue with the following possible sequence, asking students to write answers to the harder problems on\ntheir personal white boards, while asking them to orally answer the easier problems: 30 ÷ 6, 24 ÷ 6, 60 ÷ 6,\n54 ÷ 6, 7 × 1, 7 × 2, 7 × 3, 7 × 8, 35 ÷ 7, 28 ÷ 7, 70 ÷ 7, 63 ÷ 7, 49 ÷ 7, 8 × 1, 8 × 2, 8 × 3, 8 × 9, 40 ÷ 8, 48 ÷ 8, 32\n÷ 8, 80 ÷ 8, 64 ÷ 8, 9 × 1, 9 × 2, 9 × 3, 9 × 8, 45 ÷ 9, 36 ÷ 9, 54 ÷ 9, 90 ÷ 9, 81 ÷ 9, and 63 ÷ 9.\n\nComplete the Number Sentence (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews multiplication and division using units of 0 and 1.\n     T:   (Write ___ × 1 = 6.) On your personal white board, complete the equation.\n     S:   (Write 6 × 1 = 6.)\nContinue with the following possible sequence: __ × 1 = 7, 9 × __ = 9, 8 × __ = 8, 7 ÷ __ = 7, 9 ÷ __ = 9,\n7 ÷ __ = 1, 9 ÷ __ = 1, 8 × __ = 0, 6 × __ = 0, 0 ÷ 7 = __, 0 ÷ 9 = __, __ ÷ 8 = 0, __ ÷ 6 = 0, __ × 1 = 8, 7 × __ = 7,\n6 ÷ __ = 6, 9 × __ = 0, 6 ÷ __ = 1, 0 ÷ 6 = __, __ ÷ 9 = 0, and 9 ÷ __ = 1.\n\n\nApplication Problem (5 minutes)\n\nHenry’s garden has 9 rows of squash plants. Each row has 8 squash plants. There is also 1 row with\n8 watermelon plants. How many squash and watermelon plants does Henry have in all?\n\n\nNote: This problem reviews multiplying by units of 9 and 1. Depending on how students choose to solve the\nproblem, it can be used to review multiplying with units of 10 (e.g., 10 × 8). Be sure to discuss the various\nstrategies that can be used to solve this problem.\n\n\n                          Lesson 17:               Identify patterns in multiplication and division facts using the                            212\n                                                   multiplication table.\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 214 (concept-development) ---\nA STORY OF UNITS                                                                                                                Lesson 17 3 3\n\n\nConcept Development (34 minutes)\n\nMaterials: (S) Personal white board, Problem Set, orange crayon\n\nProblems 1(a) and 1(b)\n                                                                                                                  Completed Table from Problem 1:\n    T:   Write the products to complete the table in Problem\n         1. Then, color all the squares that have even\n         products orange.\n    T:   Let’s look at the first orange square in the table.\n         Write the multiplication equation on your board for\n         the product in this square. (Students write.) Are\n         the factors 2 and 1 odd or even?\n    S:   2 is even and 1 is odd.\n    T:   Look at the orange square below this one. Write\n         the multiplication equation on your board for the\n         product in this square. (Students write.) Are the\n         factors 2 and 2 odd or even?\n    S:   They’re both even!\n    T:   Work with a partner to continue to look at the                                                                     NOTES ON\n         orange squares, and tell if the factors are odd or                                                                 MULTIPLE MEANS\n         even.                                                                                                              OF REPRESENTATION:\n         (Students finish working.) What did you notice                                                          If possible and necessary, transcribe\n         about the factors of even products?                                                                     the rapid oral responses of learners\n    S:   The factors are either both even or one is odd and                                                      who may otherwise work at a slower\n         one is even.                                                                                            pace. Use color to outline rows and\n                                                                                                                 columns to help learners better discern\n    T:   (Write the following.) Even times even equals even.                                                     the content. If highlighting the column\n         Odd times even equals even.                                                                             of threes facts, for example, ask\n    T:   Work with a partner to find out what kinds of                                                           students to circle even products\n         factors are required to produce an odd product.                                                         (instead of coloring them orange).\n         (Students finish working.) What did you notice?\n    S:   Odd times odd equals odd!\n    T:   Answer Problems 1(a) and 1(b) on the Problem Set.\n\nProblems 1(c) and 1(d)\n    T:   Compare the shaded columns and shaded rows. Which factors do they have in common?\n    S:   2, 4, 6, 8.\n    T:   What is 5 × 4?\n    S:   20.\n    T:   What is 2 × 4?\n    S:   8.\n\n\n                         Lesson 17:               Identify patterns in multiplication and division facts using the                                     213\n                                                  multiplication table.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 215 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                               Lesson 17 3 3\n\n\n     T:   How do these 2 facts help you find 7 × 4? Talk to your partner and answer Problem 1(c) on the\n          Problem Set.\n     S:   20 and 8 is 28.  2 fours + 5 fours is 7 fours.  2 plus 5 is 7, so the products of these 2 facts can be\n          added together to get the product of 7 × 4. (Answer Problem 1(c) on the Problem Set.)\n     T:   Is the product of 7 and 16 on this table?\n     S:   No!\n     T:   Talk to a partner. How can we use this table and what we know to solve 7 × 16?\n     S:   10 sevens and 6 sevens is 16 sevens, 70 + 42.  Doubling 8 sevens equals 56 + 56.  9 sevens and\n          7 sevens, 63 + 49.  We can think of 16 as 8 + 8 and then the problem is (7 × 8) + (7 × 8).  We\n          could also add 4 sevens four times! 28 + 28 + 28 + 28.\n     T:   Answer Problem 1(d).\n\n Problem 2\n     T:   Complete the chart in Problem 2 by writing the products for each equation. (Students finish\n          working.) Read the products to me.\n     S:   1, 4, 9, 16, 25, 36.\n     T:   If this chart continued, what would the next equation be?\n     S:   7 × 7 = 49.\n     T:   And the next equation?\n     S:   8 × 8 = 64.\n     T:   Draw arrays to match each of these equations in Problem 2. (Students finish working.) Now, record\n          the change in the number of squares from one array to the next.\n     T:   (Allow students time to finish.) Discuss with a partner. What is the pattern in the number of squares\n          being added?\n     S:   It’s 1, 3, 5, 7, like that!  The increase in squares is the same as counting by the odd numbers, 1, 3,\n          5, 7, 9, 11, 13, 15.\n     T:   Answer Problem 2(b).\n     T:   What are the first 2 odd numbers when you start counting at 0?\n     S:   1 and 3.\n     T:   What is their sum?\n     S:   4.\n     T:   Look at Problem 2. Four is the product of what?\nMP.7 S:   2 × 2.\n     T:   The sum of the first 2 odd numbers is the same as the product of 2 × 2.\n     T:   What is the sum of the first 3 odd numbers?\n     S:   9.\n     T:   Look at Problem 2. Nine is the product of what?\n     S:   3 × 3.\n\n\n                         Lesson 17:               Identify patterns in multiplication and division facts using the                            214\n                                                  multiplication table.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 216 (debrief) ---\nA STORY OF UNITS                                                                                                             Lesson 17 3 3\n\n\n       T:   Use the table in Problem 2: What do you think is\n            the sum of the first 5 odd numbers?\n       S:   25.\nMP.7\n       T:   Check your work: What is 1 + 3 + 5 + 7 + 9?\n       S:   25.\n       T:   Answer Problems 2(c) and 2(d).\n\n\n Student Debrief (10 minutes)\n\n Lesson Objective: Identify patterns in multiplication and\n division facts using the multiplication table.\n The Student Debrief is intended to invite reflection and\n active processing of the total lesson experience.\n Invite students to review their solutions for the Problem\n Set. They should check work by comparing answers with a\n partner before going over answers as a class. Look for\n misconceptions or misunderstandings that can be\n addressed in the Debrief. Guide students in a\n conversation to debrief the Problem Set and process the\n lesson.\n Any combination of the questions below may be used to\n lead the discussion.\n           Talk to a partner: How do the patterns you\n            discovered in Problem 1 for odd and even\n            products help you when multiplying?\n           What is the name of the strategy that you used to\n            solve Problem 1(c)? Explain to a partner how this\n            strategy could be used to solve another fact that\n            isn’t on the chart, like 6 × 18.\n           Look at the arrays you drew for Problem 2. If you\n            drew an array for 7 × 7, how many little squares\n            would you add to the array that you drew for\n            6 × 6? How do you know?\n           In Problem 2(c), you proved that 9 × 9 is the sum of the first 9 odd numbers. Is 10 × 10 the sum of\n            the first 10 odd numbers? Where can you see the odd numbers on the two-colored multiplication\n            table? Can you state a rule that this pattern shows using n to represent a number? (Guide students\n            to see that n × n is the sum of the first n odd numbers. These types of problems are included in the\n            homework.)\n\n\n                          Lesson 17:               Identify patterns in multiplication and division facts using the                            215\n                                                   multiplication table.\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 217 (debrief) ---\nA STORY OF UNITS                                                                                                             Lesson 17 3 3\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n.\n\n\n                       Lesson 17:               Identify patterns in multiplication and division facts using the                            216\n                                                multiplication table.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 218 (problem-set) ---\nA STORY OF UNITS                                                                                     Lesson 17 Problem Set 3 3\n\n\nName                                                                                                        Date\n\n1. Write the products into the squares as fast as you can.\n\n                      1×1         2×1               3×1          4×1              5×1             6×1              7×1            8×1\n\n\n                      1×2         2×2               3×2          4×2              5×2             6×2              7×2            8×2\n\n\n                      1×3         2×3               3×3          4×3              5×3             6×3              7×3            8×3\n\n\n                      1×4         2×4               3×4          4×4              5×4             6×4              7×4            8×4\n\n\n                      1×5         2×5               3×5          4×5              5×5             6×5              7×5            8×5\n\n\n                      1×6         2×6               3×6          4×6              5×6             6×6              7×6            8×6\n\n\n                      1×7         2×7               3×7          4×7              5×7             6×7              7×7            8×7\n\n\n                      1×8         2×8               3×8          4×8              5×8             6×8              7×8            8×8\n\n\n    a. Color all the squares with even products orange. Can an even product ever have an odd factor?\n\n\n   b. Can an odd product ever have an even factor?\n\n\n   c. Everyone knows that 7 × 4 = (5 × 4) + (2 × 4). Explain how this is shown in the table.\n\n\n    d. Use what you know to find the product of 7 × 16 or 8 sevens + 8 sevens.\n\n\n                        Lesson 17:               Identify patterns in multiplication and division facts using the                       217\n                                                 multiplication table.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 219 (problem-set) ---\n2. In the table, only the products on the diagonal are shown.\n                                                                                                                                                                                                                                                                                      1×1\n                                                                                                                                                                                                         a. Label each product on the diagonal.\n                                                                                                                                                                                                                                                                                                                                    A STORY OF UNITS\n\n\n                                                                                                                                                                                                                                                                                            2×2\n\n\n                                                                                                                                                                                                                                                                                                  3×3\n\n\n                                                                                                                                                                Lesson 17:\n\n\nG3-M3-TE-1.3.0-05.2015\n                                                                                                                                                                                                                                                                                                        4×4\n\n\n                                                                                                                                                                                                          b. Draw an array to match each expression in the table below. Then, label                           5×5\n                                                                                                                                                                                                             the number of squares you added to make each new array. The first\n\n\n                                                                                                                                   multiplication table.\n                                                                                                                                                                                                             two arrays have been done for you.\n                                                                                                                                                                                                                                                                                                                    6 ×6\n\n\n                                                                                                                                                                                                                1×1                     2×2                     3×3                   4×4               5×5                6×6\n\n\n                                                                                                                                   Identify patterns in multiplication and division facts using the\n\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                                                                                                                                                                                                                                3\n                                                                                                                                                                                                                                                                                                                                 Lesson 17 Problem Set 3 3\n\n\n                                                                                                                                                       218\n\n--- PDF PAGE 220 (problem-set) ---\nA STORY OF UNITS                                                                                    Lesson 17 Problem Set 3 3\n\n\nc. What pattern do you notice in the number of squares that are added to each new array?\n\n\nd. Use the pattern you discovered in Part (b) to prove this: 9 × 9 is the sum of the first 9 odd numbers.\n\n\n                   Lesson 17:               Identify patterns in multiplication and division facts using the                  219\n                                            multiplication table.\n\n                    This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                   G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 221 (exit-ticket) ---\nA STORY OF UNITS                                                                                         Lesson 17 Exit Ticket 3 3\n\n\nName                                                                                                       Date\n\n1. Use what you know to find the product of 8 × 12 or 6 eights + 6 eights.\n\n\n2. Luis says 3 × 233 = 626. Use what you learned about odd times odd to explain why Luis is wrong.\n\n\n                       Lesson 17:               Identify patterns in multiplication and division facts using the                   220\n                                                multiplication table.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 222 (homework) ---\nA STORY OF UNITS                                                                                       Lesson 17 Homework 3 3\n\n\nName                                                                                                       Date\n\n1. a. Write the products into the chart as fast as you can.\n\n\n               ×         1                      2              3             4              5                6                   7   8\n\n\n               1\n\n\n               2\n\n\n               3\n\n\n               4\n\n\n               5\n\n\n               6\n\n\n               7\n\n\n               8\n\n\n   b. Color the rows and columns with even factors yellow.\n\n\n   c. What do you notice about the factors and products that are left unshaded?\n\n\n                       Lesson 17:                   Identify patterns in multiplication and division facts using the                     221\n                                                    multiplication table.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 223 (homework) ---\nA STORY OF UNITS                                                                                           Lesson 17 Homework 3 3\n\n\n    d. Complete the chart by filling in each blank and writing an example for each rule.\n\n                                        Rule                                                                          Example\n\n\n          odd times odd equals __________\n\n\n          even times even equals __________\n\n\n          even times odd equals __________\n\n\n    e. Explain how 7 × 6 = (5 × 6) + (2 × 6) is shown in the table.\n\n\n    f.   Use what you know to find the product of 4 × 16 or 8 fours + 8 fours.\n\n\n2. Today in class, we found that n × n is the sum of the first n odd numbers. Use this pattern to find the\n   value of n for each equation below. The first is done for you.\n\n    a. 1 + 3 + 5 = n × n\n\n\n                9=3×3\n\n\n    b. 1 + 3 + 5 + 7 = n × n\n\n\n                           Lesson 17:               Identify patterns in multiplication and division facts using the                 222\n                                                    multiplication table.\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 224 (homework) ---\nA STORY OF UNITS                                                                                       Lesson 17 Homework 3 3\n\n\nc. 1 + 3 + 5 + 7 + 9 + 11 = n × n\n\n\nd. 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = n × n\n\n\ne. 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = n × n\n\n\n                    Lesson 17:               Identify patterns in multiplication and division facts using the                 223\n                                             multiplication table.\n\n                    This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                    G3-M3-TE-1.3.0-05.2015",
+    "problemSetPages": [
+      {
+        "pdfPage": 218,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                     Lesson 17 Problem Set 3 3\n\n\nName                                                                                                        Date\n\n1. Write the products into the squares as fast as you can.\n\n                      1×1         2×1               3×1          4×1              5×1             6×1              7×1            8×1\n\n\n                      1×2         2×2               3×2          4×2              5×2             6×2              7×2            8×2\n\n\n                      1×3         2×3               3×3          4×3              5×3             6×3              7×3            8×3\n\n\n                      1×4         2×4               3×4          4×4              5×4             6×4              7×4            8×4\n\n\n                      1×5         2×5               3×5          4×5              5×5             6×5              7×5            8×5\n\n\n                      1×6         2×6               3×6          4×6              5×6             6×6              7×6            8×6\n\n\n                      1×7         2×7               3×7          4×7              5×7             6×7              7×7            8×7\n\n\n                      1×8         2×8               3×8          4×8              5×8             6×8              7×8            8×8\n\n\n    a. Color all the squares with even products orange. Can an even product ever have an odd factor?\n\n\n   b. Can an odd product ever have an even factor?\n\n\n   c. Everyone knows that 7 × 4 = (5 × 4) + (2 × 4). Explain how this is shown in the table.\n\n\n    d. Use what you know to find the product of 7 × 16 or 8 sevens + 8 sevens.\n\n\n                        Lesson 17:               Identify patterns in multiplication and division facts using the                       217\n                                                 multiplication table.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 219,
+        "type": "problem-set",
+        "text": "2. In the table, only the products on the diagonal are shown.\n                                                                                                                                                                                                                                                                                      1×1\n                                                                                                                                                                                                         a. Label each product on the diagonal.\n                                                                                                                                                                                                                                                                                                                                    A STORY OF UNITS\n\n\n                                                                                                                                                                                                                                                                                            2×2\n\n\n                                                                                                                                                                                                                                                                                                  3×3\n\n\n                                                                                                                                                                Lesson 17:\n\n\nG3-M3-TE-1.3.0-05.2015\n                                                                                                                                                                                                                                                                                                        4×4\n\n\n                                                                                                                                                                                                          b. Draw an array to match each expression in the table below. Then, label                           5×5\n                                                                                                                                                                                                             the number of squares you added to make each new array. The first\n\n\n                                                                                                                                   multiplication table.\n                                                                                                                                                                                                             two arrays have been done for you.\n                                                                                                                                                                                                                                                                                                                    6 ×6\n\n\n                                                                                                                                                                                                                1×1                     2×2                     3×3                   4×4               5×5                6×6\n\n\n                                                                                                                                   Identify patterns in multiplication and division facts using the\n\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                                                                                                                                                                                                                                3\n                                                                                                                                                                                                                                                                                                                                 Lesson 17 Problem Set 3 3\n\n\n                                                                                                                                                       218"
+      },
+      {
+        "pdfPage": 220,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                    Lesson 17 Problem Set 3 3\n\n\nc. What pattern do you notice in the number of squares that are added to each new array?\n\n\nd. Use the pattern you discovered in Part (b) to prove this: 9 × 9 is the sum of the first 9 odd numbers.\n\n\n                   Lesson 17:               Identify patterns in multiplication and division facts using the                  219\n                                            multiplication table.\n\n                    This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                   G3-M3-TE-1.3.0-05.2015"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 311,
+        "text": "A STORY OF UNITS                                                                                       Lesson 17 Answer Key 3 3\n\n\nLesson 17\nProblem Set\n1.    Products accurately recorded\n      a. Even-product squares colored; Yes\n      b. No\n      c. Explanations may vary.\n      d. 112\n2.    a. Products accurately labeled\n      b. Arrays accurately drawn; 5, 7, 9, 11\n      c. Answers may vary.\n      d. Explanations may vary.\n\n\nExit Ticket\n1.    96\n2.    Explanations will vary.\n\n\nHomework\n1.    a. Products accurately recorded\n      b. Even factors accurately identified\n      c. Explanations may vary.\n      d. Odd; even; even; examples will vary.\n      e. Explanations may vary.\n      f.   64\n2.    a. Answer provided\n      b. 16 = 4 × 4\n      c. 36 = 6 × 6\n      d. 64 = 8 × 8\n      e. 100 = 10 × 10\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              310\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015"
+      }
+    ]
+  }
+}

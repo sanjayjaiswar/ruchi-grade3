@@ -1667,6 +1667,25 @@ export class LessonPage implements OnInit, AfterViewChecked {
     return this.conceptSourcePageImages(problemLesson).length > 0;
   }
 
+  conceptSourcePageHeading(): string {
+    return this.module?.id === 'm3'
+      ? 'Official Problem Set source pages'
+      : 'Official Teacher Edition Problem Set pages';
+  }
+
+  conceptSourcePageAriaLabel(): string {
+    return this.module?.id === 'm3'
+      ? 'Official Problem Set source pages'
+      : 'Official Teacher Edition Problem Set pages';
+  }
+
+  conceptSourcePageImageAlt(pageIndex: number): string {
+    const sourceName = this.module?.id === 'm3'
+      ? 'Official Problem Set source'
+      : 'Official Teacher Edition source';
+    return `${sourceName} for Module ${this.module?.number} Lesson ${this.lesson?.lessonNumber}, page ${pageIndex + 1}`;
+  }
+
   conceptStudentWorkbookPageImages(): string[] {
     if (!this.module || !this.lesson) {
       return [];
@@ -1694,6 +1713,11 @@ export class LessonPage implements OnInit, AfterViewChecked {
   }
 
   problemSetSourcePageHeading(): string {
+    if (this.module?.id === 'm3') {
+      return this.problemSetMode === 'solved'
+        ? 'Official Problem Set and Teacher Edition answer-key source'
+        : 'Official Problem Set source pages';
+    }
     return this.problemSetMode === 'solved'
       ? 'Official Teacher Edition solved source'
       : 'Official Teacher Edition Problem Set pages';
@@ -1706,6 +1730,11 @@ export class LessonPage implements OnInit, AfterViewChecked {
   }
 
   problemSetSourcePageAriaLabel(): string {
+    if (this.module?.id === 'm3') {
+      return this.problemSetMode === 'solved'
+        ? 'Official Problem Set and Teacher Edition answer-key source pages'
+        : 'Official Problem Set source pages';
+    }
     return this.problemSetMode === 'solved'
       ? 'Official Teacher Edition solved Problem Set source pages'
       : 'Official Teacher Edition Problem Set pages';
@@ -1733,6 +1762,11 @@ export class LessonPage implements OnInit, AfterViewChecked {
       'lesson-m2-l19': this.module?.id === 'm2' && this.lesson?.lessonNumber === 19,
       'lesson-m2-l20': this.module?.id === 'm2' && this.lesson?.lessonNumber === 20,
       'lesson-m2-l21': this.module?.id === 'm2' && this.lesson?.lessonNumber === 21,
+      'lesson-m3-l1': this.module?.id === 'm3' && this.lesson?.lessonNumber === 1,
+      'lesson-m3-l2': this.module?.id === 'm3' && this.lesson?.lessonNumber === 2,
+      'lesson-m3-l3': this.module?.id === 'm3' && this.lesson?.lessonNumber === 3,
+      'lesson-m3-l4': this.module?.id === 'm3' && this.lesson?.lessonNumber === 4,
+      'lesson-m3-l5': this.module?.id === 'm3' && this.lesson?.lessonNumber === 5,
       'lesson-m3': this.module?.id === 'm3',
       'lesson-m4': this.module?.id === 'm4',
       'lesson-m5': this.module?.id === 'm5',

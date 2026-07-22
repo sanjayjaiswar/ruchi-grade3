@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m3-l16",
+  "moduleId": "m3",
+  "lessonNumber": 16,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_3/g3_m3_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+    "teacherEditionBytes": 14065864,
+    "lessonPdfPages": {
+      "start": 200,
+      "end": 211
+    },
+    "problemSetPdfPages": [
+      207,
+      208
+    ],
+    "exitTicketPdfPages": [
+      209
+    ],
+    "homeworkPdfPages": [
+      210,
+      211
+    ],
+    "answerKeyPdfPages": [
+      309,
+      310
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m3-student/workbook-page-069.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m3-answer-key/page-309.png",
+      "/source-pages/m3-answer-key/page-310.png"
+    ]
+  },
+  "objective": "Reason about and explain arithmetic patterns using units of 0 and 1 as they relate to multiplication and division.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "Materials: (S) Personal white board\n\nProblem 1: Multiply and divide using units of 1.                                                                           NOTES ON\n    T:   Draw three large circles on your personal white board.                                                            MULTIPLE MEANS\n         Draw an equal number of dots in each circle. You can                                                              OF ACTION AND\n         draw between 2 and 10 dots in each circle.                                                                        EXPRESSION:\n         You choose! How many groups are there?                                                                One group is often challenging for\n    S:   3.                                                                                                    students to represent because they\n    T:   Write a multiplication equation to represent your                                                     tend to interpret it as the number in\n                                                                                                               the set. The opening activity starts\n         picture. Read your equation to a partner.\n                                                                                                               with 3 groups and works back to\n    T:   Erase one of the circles. How many groups now?                                                        1 group to avoid this misconception.\n    S:   2.                                                                                                    Stay alert to it while circulating, and\n                                                                                                               support students with their work in\n                                                                                                               Problem 1.\n\n\n                       Lesson 16:                Reason about and explain arithmetic patterns using units                                                199\n                                                 of 0 and 1 as they relate to multiplication and division.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 16 3 3\n\n\n    T:   Write a multiplication equation to represent your\n         picture. Read your equation to a partner.\n                                                                                                                           NOTES ON\n    T:   Erase one of the circles. How many groups now?\n                                                                                                                           MULTIPLE MEANS\n    S:   1.\n                                                                                                                           OF REPRESENTATION:\n    T:   Write a multiplication equation to represent your                                                     English language learners and others\n         picture. Read your equation to me. (Call on students                                                  may benefit from a scaffolded review\n         to read equations and record.)                                                                        of unknowns represented as letters.\n    T:   Rewrite your equation. Let n equal the number of dots                                                 Start with a frame using blanks\n         in each group. What is 1 times n dots?                                                                (___ × 1 = ___), then question marks\n                                                                                                               (? × 1 = ?), then a number × 1 = a\n    S:   It’s n because the number of dots in each group is the\n                                                                                                               number, and finally, n × 1 = n.\n         same as the total number of dots.\n    T:   What is 1 times a number equal to?\n    S:   That number!\n    T:   Write the related division fact for your multiplication\n         equation. Read it at my signal. (Signal.)\n    S:   n ÷ 1 = n.\n    T:   Use your picture to discuss with a partner. Why is our division\n         equation true?\n    S:   It shows the total number of dots, n, divided into 1 group.\n         That equals n counters in each group.\n    T:   What is a number divided by 1?\n    S:   That number!\nRepeat this process, drawing n circles with 3 dots in each circle.\nStudents erase 1 dot from each circle and write multiplication equations\nto represent their pictures until they are left with n circles and 1 dot in\neach circle. This demonstrates n × 1 = n and n ÷ n = 1.\n    T:   What patterns did we discover for multiplying and dividing by\n         units of 1?\n    S:   Any number times 1 equals that number, any number divided\n         by 1 equals that number, and any number divided by itself\n         equals 1.\n\nProblem 2: Multiply and divide using units of 0.\n    T:   (Write 4 × 0 = b on the board.) What does this equation\n         represent?\n    S:   Four groups of 0.\n    T:   Draw a picture of the equation using circles to show the groups\n         and dots to show the number in each group. (Allow students\n         time to draw.) How many dots did you draw in each group?\n    S:   Zero!\n\n\n                        Lesson 16:               Reason about and explain arithmetic patterns using units                                             200\n                                                 of 0 and 1 as they relate to multiplication and division.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                              Lesson 16 3 3\n\n\n       T:   There are a total of 0 dots, so 4 times 0 equals?\n       S:   Zero!\n       T:   What is the value of b in the equation?\n       S:   b equals 0.\n  Continue with the following possible suggestions: 7 × 0, 6 × 0, and 0 × 0.\n       T:   What pattern did you notice?\n       S:   Any number times 0 equals 0.\n       T:   Write that equation using n to represent a number.\n       S:   n × 0 = 0.\n       T:   Write the related division equation on your board.\n       S:   0 ÷ n = 0.\n       T:   What does this equation represent?\n       S:   Zero divided by a number equals 0.\n       T:   Let’s choose a value for n and see if we get a true equation. Rewrite the equation, letting n equal 7.\n            (After students write 0 ÷ 7 = 0.) What does this equation represent?\n       S:   Zero things divided into 7 groups equals 0.\n       T:   Draw a picture of the equation using circles to show the groups and dots to show the number in\n            each group. (Allow students time to draw.) How many dots did you draw in each group?\n       S:   Zero!\n       T:   Zero divided by 7 equals?\n       S:   Zero!\n       T:   Rewrite the equation to show 7 things divided into 0 groups equals n.\n       S:   (Write 7 ÷ 0 = n.)\n       T:   What is the related multiplication fact?\n       S:   0 × n = 7.\n       T:   What does this equation represent?\n       S:   Zero times a number equals 7.\n       T:   Talk with your partner; is this possible?\n       S:   No, because any number times 0 equals 0, not 7.\n       T:   There’s no value for n that would make a true multiplication sentence, and the same is true for the\nMP.7        division equation.\n       T:   Let’s look at a special case of dividing by 0. Write 0 ÷ 0 = n on your board. What is the related\n            multiplication fact?\n       S:   0 × n = 0.\n       T:   What does this equation represent?\n       S:   Zero times a number equals 0.\n       T:   Talk with a partner; what is the value of n?\n       S:   Any number!  n can be any number because when you multiply any number times 0, it equals 0.\n\n\n                           Lesson 16:               Reason about and explain arithmetic patterns using units                                    201\n                                                    of 0 and 1 as they relate to multiplication and division.\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                             Lesson 16 3 3\n\n\n        T:   n could be 3, 2, 5, 6, or any other number. n can be any number in the multiplication equation, and\n             the same is true for the division equation. Work with your partner to try a few different numbers in\n             the multiplication and division equations.\n        S:   (Plug in a variety of values.)\nMP.7\n        T:   What do you notice?\n        S:   Lots of numbers work!\n        T:   Right, there isn’t one single value for n in this case. Talk with a partner about what patterns you\n             discovered for dividing by 0.",
+    "fluencyPracticeText": "ALIGNMENT:\n                                                                                                                The last six problems on the Sprint\n Sprint: Multiply or Divide By 9 3.OA.7                          (9 minutes)                                   extend beyond Grade 3 multiplication\n                                                                                                                and division standards because\nSprint: Multiply or Divide by 9 (9 minutes)                                                                     students who have mastered their\n                                                                                                                times tables are likely to otherwise go\nMaterials: (S) Multiply or Divide By 9 Sprint                                                                   unchallenged during this activity.\n                                                                                                                By extending to products above 90 and\nNote: This Sprint reviews Lessons 12–15, focusing on the                                                        quotients above 10, strong students\nrelationship between multiplication and division using                                                          are provided the stimulus to stretch\nunits of 9.                                                                                                     their conceptual understanding, which\n                                                                                                                may keep them engaged and\n                                                                                                                invigorated to improve on Sprint B.",
+    "problemSetGuidanceText": "Students should do their personal best to complete the Problem Set within the allotted 10 minutes.\n  For some classes, it may be appropriate to modify the assignment by specifying which problems they work on\n  first. Some problems do not specify a method for solving. Students should solve these problems using the\n  RDW approach used for Application Problems.",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Draw three large circles on your personal white board. MULTIPLE MEANS Draw an equal number of dots in each circle. You can OF ACTION AND draw between 2 and 10 dots in each circle. EXPRESSION: You choose! How many groups are there? One group is often challenging for"
+      },
+      {
+        "speaker": "students",
+        "text": "3. students to represent because they"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a multiplication equation to represent your tend to interpret it as the number in the set. The opening activity starts picture. Read your equation to a partner. with 3 groups and works back to"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Erase one of the circles. How many groups now? 1 group to avoid this misconception."
+      },
+      {
+        "speaker": "students",
+        "text": "2. Stay alert to it while circulating, and support students with their work in of 0 and 1 as they relate to multiplication and division. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 16 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a multiplication equation to represent your picture. Read your equation to a partner."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Erase one of the circles. How many groups now? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "1. OF REPRESENTATION:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a multiplication equation to represent your English language learners and others picture. Read your equation to me. (Call on students may benefit from a scaffolded review to read equations and record.) of unknowns represented as letters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Rewrite your equation. Let n equal the number of dots Start with a frame using blanks in each group. What is 1 times n dots? (___ × 1 = ___), then question marks (? × 1 = ?), then a number × 1 = a"
+      },
+      {
+        "speaker": "students",
+        "text": "It’s n because the number of dots in each group is the number, and finally, n × 1 = n. same as the total number of dots."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is 1 times a number equal to?"
+      },
+      {
+        "speaker": "students",
+        "text": "That number!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the related division fact for your multiplication equation. Read it at my signal. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "n ÷ 1 = n."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your picture to discuss with a partner. Why is our division equation true?"
+      },
+      {
+        "speaker": "students",
+        "text": "It shows the total number of dots, n, divided into 1 group. That equals n counters in each group."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is a number divided by 1?"
+      },
+      {
+        "speaker": "students",
+        "text": "That number! Repeat this process, drawing n circles with 3 dots in each circle. Students erase 1 dot from each circle and write multiplication equations to represent their pictures until they are left with n circles and 1 dot in each circle. This demonstrates n × 1 = n and n ÷ n = 1."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What patterns did we discover for multiplying and dividing by units of 1?"
+      },
+      {
+        "speaker": "students",
+        "text": "Any number times 1 equals that number, any number divided by 1 equals that number, and any number divided by itself equals 1."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 4 × 0 = b on the board.) What does this equation represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "Four groups of 0."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a picture of the equation using circles to show the groups and dots to show the number in each group. (Allow students time to draw.) How many dots did you draw in each group?"
+      },
+      {
+        "speaker": "students",
+        "text": "Zero! of 0 and 1 as they relate to multiplication and division. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 16 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "There are a total of 0 dots, so 4 times 0 equals?"
+      },
+      {
+        "speaker": "students",
+        "text": "Zero!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the value of b in the equation?"
+      },
+      {
+        "speaker": "students",
+        "text": "b equals 0. Continue with the following possible suggestions: 7 × 0, 6 × 0, and 0 × 0."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What pattern did you notice?"
+      },
+      {
+        "speaker": "students",
+        "text": "Any number times 0 equals 0."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write that equation using n to represent a number."
+      },
+      {
+        "speaker": "students",
+        "text": "n × 0 = 0."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the related division equation on your board."
+      },
+      {
+        "speaker": "students",
+        "text": "0 ÷ n = 0."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What does this equation represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "Zero divided by a number equals 0."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s choose a value for n and see if we get a true equation. Rewrite the equation, letting n equal 7. (After students write 0 ÷ 7 = 0.) What does this equation represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "Zero things divided into 7 groups equals 0."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a picture of the equation using circles to show the groups and dots to show the number in each group. (Allow students time to draw.) How many dots did you draw in each group?"
+      },
+      {
+        "speaker": "students",
+        "text": "Zero!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Zero divided by 7 equals?"
+      },
+      {
+        "speaker": "students",
+        "text": "Zero!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Rewrite the equation to show 7 things divided into 0 groups equals n."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 7 ÷ 0 = n.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the related multiplication fact?"
+      },
+      {
+        "speaker": "students",
+        "text": "0 × n = 7."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What does this equation represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "Zero times a number equals 7."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk with your partner; is this possible?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, because any number times 0 equals 0, not 7."
+      },
+      {
+        "speaker": "teacher",
+        "text": "There’s no value for n that would make a true multiplication sentence, and the same is true for the MP.7 division equation."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s look at a special case of dividing by 0. Write 0 ÷ 0 = n on your board. What is the related multiplication fact?"
+      },
+      {
+        "speaker": "students",
+        "text": "0 × n = 0."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What does this equation represent?"
+      },
+      {
+        "speaker": "students",
+        "text": "Zero times a number equals 0."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk with a partner; what is the value of n?"
+      },
+      {
+        "speaker": "students",
+        "text": "Any number!  n can be any number because when you multiply any number times 0, it equals 0. of 0 and 1 as they relate to multiplication and division. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 16 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "n could be 3, 2, 5, 6, or any other number. n can be any number in the multiplication equation, and the same is true for the division equation. Work with your partner to try a few different numbers in the multiplication and division equations."
+      },
+      {
+        "speaker": "students",
+        "text": "(Plug in a variety of values.) MP.7"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do you notice?"
+      },
+      {
+        "speaker": "students",
+        "text": "Lots of numbers work!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Right, there isn’t one single value for n in this case. Talk with a partner about what patterns you discovered for dividing by 0."
+      }
+    ],
+    "teacherPrompts": [
+      "Draw three large circles on your personal white board. MULTIPLE MEANS Draw an equal number of dots in each circle. You can OF ACTION AND draw between 2 and 10 dots in each circle. EXPRESSION: You choose! How many groups are there? One group is often challenging for",
+      "Write a multiplication equation to represent your tend to interpret it as the number in the set. The opening activity starts picture. Read your equation to a partner. with 3 groups and works back to",
+      "Erase one of the circles. How many groups now? 1 group to avoid this misconception.",
+      "Write a multiplication equation to represent your picture. Read your equation to a partner.",
+      "Erase one of the circles. How many groups now? MULTIPLE MEANS",
+      "Write a multiplication equation to represent your English language learners and others picture. Read your equation to me. (Call on students may benefit from a scaffolded review to read equations and record.) of unknowns represented as letters.",
+      "Rewrite your equation. Let n equal the number of dots Start with a frame using blanks in each group. What is 1 times n dots? (___ × 1 = ___), then question marks (? × 1 = ?), then a number × 1 = a",
+      "What is 1 times a number equal to?",
+      "Write the related division fact for your multiplication equation. Read it at my signal. (Signal.)",
+      "Use your picture to discuss with a partner. Why is our division equation true?",
+      "What is a number divided by 1?",
+      "What patterns did we discover for multiplying and dividing by units of 1?",
+      "(Write 4 × 0 = b on the board.) What does this equation represent?",
+      "Draw a picture of the equation using circles to show the groups and dots to show the number in each group. (Allow students time to draw.) How many dots did you draw in each group?",
+      "There are a total of 0 dots, so 4 times 0 equals?",
+      "What is the value of b in the equation?",
+      "What pattern did you notice?",
+      "Write that equation using n to represent a number.",
+      "Write the related division equation on your board.",
+      "What does this equation represent?",
+      "Let’s choose a value for n and see if we get a true equation. Rewrite the equation, letting n equal 7. (After students write 0 ÷ 7 = 0.) What does this equation represent?",
+      "Draw a picture of the equation using circles to show the groups and dots to show the number in each group. (Allow students time to draw.) How many dots did you draw in each group?",
+      "Zero divided by 7 equals?",
+      "Rewrite the equation to show 7 things divided into 0 groups equals n.",
+      "What is the related multiplication fact?",
+      "What does this equation represent?",
+      "Talk with your partner; is this possible?",
+      "There’s no value for n that would make a true multiplication sentence, and the same is true for the MP.7 division equation.",
+      "Let’s look at a special case of dividing by 0. Write 0 ÷ 0 = n on your board. What is the related multiplication fact?",
+      "What does this equation represent?",
+      "Talk with a partner; what is the value of n?",
+      "n could be 3, 2, 5, 6, or any other number. n can be any number in the multiplication equation, and the same is true for the division equation. Work with your partner to try a few different numbers in the multiplication and division equations.",
+      "What do you notice?",
+      "Right, there isn’t one single value for n in this case. Talk with a partner about what patterns you discovered for dividing by 0."
+    ],
+    "debriefPrompt": "Discuss with a partner, what patterns for MP.7 multiplying and dividing by 0 and 1 helped you solve Problem 1?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Complete. a. ____ × 1 = 6 b. ____ ÷ 7 = 0 c. 8 × ____ = 8 d. 9 ÷ ____ = 9 e. 0 ÷ 5 = ____ f. ____ × 0 = 0 g. 4 ÷ ____ = 1 h. ____ × 1 = 3",
+        "equations": [
+          "____ × 1 = 6",
+          "____ ÷ 7 = 0",
+          "8 × ____ = 8",
+          "9 ÷ ____ = 9"
+        ]
+      },
+      {
+        "number": 2,
+        "prompt": "Match each equation with its solution. 1×n=3 n÷4=0 1×6=n 7÷7=n n×1=9 n÷1=8 n=0 n=9 n=3 n=8 n=6 n=1",
+        "equations": [
+          "4=0",
+          "1×6",
+          "7÷7",
+          "1=9"
+        ]
+      },
+      {
+        "number": 3,
+        "prompt": "Let n be a number. Complete the blanks below with the products. 1 2 3 4 5 6 7 8 9 … n ×1 ×1 ×1 ×1 ×1 ×1 ×1 ×1 ×1 ×1 ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ What pattern do you notice? of 0 and 1 as they relate to multiplication and division.",
+        "equations": [
+          "1 ×1"
+        ]
+      },
+      {
+        "number": 4,
+        "prompt": "Josie says that any number divided by 1 equals that number. a. Write a division equation using n to represent Josie's statement. b. Use your equation from Part (a). Let n = 6. Write a new equation, and draw a picture to show that your equation is true. c. Write the related multiplication equation that you can use to check your division equation.",
+        "equations": []
+      },
+      {
+        "number": 5,
+        "prompt": "Matt explains what he learned about dividing with zero to his little sister. a. What might Matt tell his sister about solving 0 ÷ 9? Explain your answer. b. What might Matt tell his sister about solving 8 ÷ 0? Explain your answer. c. What might Matt tell his sister about solving 0 ÷ 0? Explain your answer. of 0 and 1 as they relate to multiplication and division.",
+        "equations": [
+          "0 ÷ 9",
+          "8 ÷ 0",
+          "0 ÷ 0"
+        ]
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                    Lesson 16 Problem Set 3 3\n\n\nName                                                                                                       Date\n\n1. Complete.\n\n\n   a. _____ × 1 = 6                    b. _____ ÷ 7 = 0                               c. 8 × _____ = 8                            d. 9 ÷ _____ = 9\n\n\n   e. 0 ÷ 5 = _____                    f.          _____ × 0 = 0                      g. 4 ÷ _____ = 1                            h. _____ × 1 = 3\n\n\n2. Match each equation with its solution.\n\n\n       1×n=3              n÷4=0                              1×6=n                      7÷7=n                           n×1=9              n÷1=8\n\n\n           n=0               n=9                               n=3                          n=8                             n=6              n=1\n\n\n3. Let n be a number. Complete the blanks below with the products.\n\n\n       1         2       3                     4              5            6                7               8                9\n                                                                                                                                    …          n\n\n\n     ×1          ×1    ×1                   ×1              ×1            ×1              ×1               ×1               ×1                ×1\n\n\n    _____    _____    _____              _____             _____        _____           _____            _____            _____             _____\n\n\n   What pattern do you notice?\n\n\n                      Lesson 16:                   Reason about and explain arithmetic patterns using units                                          206\n                                                   of 0 and 1 as they relate to multiplication and division.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                     Lesson 16 Problem Set 3 3\n\n\n4. Josie says that any number divided by 1 equals that number.\n\n    a. Write a division equation using n to represent Josie’s statement.\n\n\n    b. Use your equation from Part (a). Let n = 6. Write a new equation, and draw a picture to show that\n       your equation is true.\n\n\n    c. Write the related multiplication equation that you can use to check your division equation.\n\n\n5. Matt explains what he learned about dividing with zero to his little sister.\n\n    a. What might Matt tell his sister about solving 0 ÷ 9? Explain your answer.\n\n\n    b. What might Matt tell his sister about solving 8 ÷ 0? Explain your answer.\n\n\n    c. What might Matt tell his sister about solving 0 ÷ 0? Explain your answer.\n\n\n                        Lesson 16:               Reason about and explain arithmetic patterns using units                         207\n                                                 of 0 and 1 as they relate to multiplication and division.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015",
+    "answerKeyProblemSetText": "1.    a. 6                                                                       2.        Equations matched to solutions\n      b. 0                                                                       3.        1, 2, 3, 4, 5, 6, 7, 8, 9, n\n      c. 1                                                                                 Answers will vary.\n      d. 1                                                                       4.        a. n ÷1 = n\n      e. 0                                                                                 b. 6 ÷ 1 = 6; picture drawn\n      f.   Any number                                                                      c. 6 × 1 = 6\n      g. 4                                                                       5.        a. Explanations may vary.\n      h. 3                                                                                 b. Explanations may vary.\n                                                                                           c. Explanations may vary.",
+    "answerKeyText": "A STORY OF UNITS                                                                                       Lesson 16 Answer Key 3 3\n\n\nLesson 16\nSprint\nSide A\n1.    18                            12. 63                                        23. 10                                             34. 8\n2.    27                            13. 72                                        24. 2                                              35. 7\n3.    36                            14. 81                                        25. 3                                              36. 9\n4.    45                            15. 90                                        26. 10                                             37. 6\n5.    9                             16. 8                                         27. 5                                              38. 8\n6.    2                             17. 7                                         28. 1                                              39. 99\n7.    3                             18. 9                                         29. 2                                              40. 11\n8.    5                             19. 6                                         30. 3                                              41. 108\n9.    1                             20. 10                                        31. 6                                              42. 12\n10. 4                               21. 5                                         32. 7                                              43. 126\n11. 54                              22. 1                                         33. 9                                              44. 14\n\n\nSide B\n1.    9                             12. 54                                        23. 2                                              34. 7\n2.    18                            13. 63                                        24. 10                                             35. 8\n3.    27                            14. 72                                        25. 3                                              36. 9\n4.    36                            15. 81                                        26. 2                                              37. 6\n5.    45                            16. 7                                         27. 1                                              38. 7\n6.    3                             17. 6                                         28. 10                                             39. 99\n7.    2                             18. 8                                         29. 5                                              40. 11\n8.    4                             19. 10                                        30. 3                                              41. 108\n9.    1                             20. 9                                         31. 3                                              42. 12\n10. 5                               21. 1                                         32. 4                                              43. 117\n11. 90                              22. 5                                         33. 9                                              44. 13\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10                        308\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                       Lesson 16 Answer Key 3 3\n\n\nProblem Set\n1.    a. 6                                                                       2.        Equations matched to solutions\n      b. 0                                                                       3.        1, 2, 3, 4, 5, 6, 7, 8, 9, n\n      c. 1                                                                                 Answers will vary.\n      d. 1                                                                       4.        a. n ÷1 = n\n      e. 0                                                                                 b. 6 ÷ 1 = 6; picture drawn\n      f.   Any number                                                                      c. 6 × 1 = 6\n      g. 4                                                                       5.        a. Explanations may vary.\n      h. 3                                                                                 b. Explanations may vary.\n                                                                                           c. Explanations may vary.\n\nExit Ticket\n1.    a. 5                                                                       2.        No; explanations may vary.\n      b. 1\n      c. 0\n      d. 0\n      e. 9\n      f.   8\n\nHomework\n1.    a. 4                                                                       2.        Equations matched to solutions\n      b. 0                                                                       3.        a. Answer provided\n      c. 5                                                                                 b. True\n      d. 0                                                                                 c. True\n      e. 1                                                                                 d. True\n      f.   0                                                                               e. False\n      g. 0                                                                                 f.     True\n      h. 0                                                                                 g. True\n      i.   1                                                                               h. False\n      j.   1                                                                     4.        a. n × 1 = n\n      k. 1                                                                                 b. Answers will vary.\n      l.   9\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              309\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "equal-groups",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "equal-groups": [
+        "in each group. What is 1 times n dots? (___ × 1 = ___), then question marks",
+        "S: It’s n because the number of dots in each group is the",
+        "That equals n counters in each group.",
+        "S: Four groups of 0.",
+        "and dots to show the number in each group. (Allow students",
+        "time to draw.) How many dots did you draw in each group?",
+        "each group. (Allow students time to draw.) How many dots did you draw in each group?"
+      ],
+      "picture-or-drawing": [
+        "T: Draw three large circles on your personal white board. MULTIPLE MEANS",
+        "Draw an equal number of dots in each circle. You can OF ACTION AND",
+        "draw between 2 and 10 dots in each circle. EXPRESSION:",
+        "picture. Read your equation to a partner.",
+        "picture. Read your equation to a partner.",
+        "picture. Read your equation to me. (Call on students may benefit from a scaffolded review",
+        "T: Use your picture to discuss with a partner. Why is our division",
+        "Repeat this process, drawing n circles with 3 dots in each circle."
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Draw three large circles on your personal white board. MULTIPLE MEANS Draw an equal number of dots in each circle. You can OF ACTION AND draw between 2 and 10 dots in each circle. EXPRESSION: You choose! How many groups are there? One group is often challenging for"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a multiplication equation to represent your tend to interpret it as the number in the set. The opening activity starts picture. Read your equation to a partner. with 3 groups and works back to"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a multiplication equation to represent your picture. Read your equation to a partner."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write a multiplication equation to represent your English language learners and others picture. Read your equation to me. (Call on students may benefit from a scaffolded review to read equations and record.) of unknowns represented as letters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Rewrite your equation. Let n equal the number of dots Start with a frame using blanks in each group. What is 1 times n dots? (___ × 1 = ___), then question marks (? × 1 = ?), then a number × 1 = a"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the related division fact for your multiplication equation. Read it at my signal. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "It shows the total number of dots, n, divided into 1 group. That equals n counters in each group."
+      },
+      {
+        "speaker": "students",
+        "text": "That number! Repeat this process, drawing n circles with 3 dots in each circle. Students erase 1 dot from each circle and write multiplication equations to represent their pictures until they are left with n circles and 1 dot in each circle. This demonstrates n × 1 = n and n ÷ n = 1."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 4 × 0 = b on the board.) What does this equation represent?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a picture of the equation using circles to show the groups and dots to show the number in each group. (Allow students time to draw.) How many dots did you draw in each group?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What pattern did you notice?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write that equation using n to represent a number."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the related division equation on your board."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s choose a value for n and see if we get a true equation. Rewrite the equation, letting n equal 7. (After students write 0 ÷ 7 = 0.) What does this equation represent?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw a picture of the equation using circles to show the groups and dots to show the number in each group. (Allow students time to draw.) How many dots did you draw in each group?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Rewrite the equation to show 7 things divided into 0 groups equals n."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 7 ÷ 0 = n.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s look at a special case of dividing by 0. Write 0 ÷ 0 = n on your board. What is the related multiplication fact?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do you notice?"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 200 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 16 3 3\n\n\nLesson 16\nObjective: Reason about and explain arithmetic patterns using units\nof 0 and 1 as they relate to multiplication and division.\n\nSuggested Lesson Structure\n\n Fluency Practice                 (9 minutes)\n Concept Development              (41 minutes)\n Student Debrief                  (10 minutes)\n   Total Time                      (60 minutes)\n                                                                                                                           NOTES ON\n                                                                                                                           STANDARDS\nFluency Practice (9 minutes)                                                                                               ALIGNMENT:\n                                                                                                                The last six problems on the Sprint\n Sprint: Multiply or Divide By 9 3.OA.7                          (9 minutes)                                   extend beyond Grade 3 multiplication\n                                                                                                                and division standards because\nSprint: Multiply or Divide by 9 (9 minutes)                                                                     students who have mastered their\n                                                                                                                times tables are likely to otherwise go\nMaterials: (S) Multiply or Divide By 9 Sprint                                                                   unchallenged during this activity.\n                                                                                                                By extending to products above 90 and\nNote: This Sprint reviews Lessons 12–15, focusing on the                                                        quotients above 10, strong students\nrelationship between multiplication and division using                                                          are provided the stimulus to stretch\nunits of 9.                                                                                                     their conceptual understanding, which\n                                                                                                                may keep them engaged and\n                                                                                                                invigorated to improve on Sprint B.\nConcept Development (41 minutes)\n\nMaterials: (S) Personal white board\n\nProblem 1: Multiply and divide using units of 1.                                                                           NOTES ON\n    T:   Draw three large circles on your personal white board.                                                            MULTIPLE MEANS\n         Draw an equal number of dots in each circle. You can                                                              OF ACTION AND\n         draw between 2 and 10 dots in each circle.                                                                        EXPRESSION:\n         You choose! How many groups are there?                                                                One group is often challenging for\n    S:   3.                                                                                                    students to represent because they\n    T:   Write a multiplication equation to represent your                                                     tend to interpret it as the number in\n                                                                                                               the set. The opening activity starts\n         picture. Read your equation to a partner.\n                                                                                                               with 3 groups and works back to\n    T:   Erase one of the circles. How many groups now?                                                        1 group to avoid this misconception.\n    S:   2.                                                                                                    Stay alert to it while circulating, and\n                                                                                                               support students with their work in\n                                                                                                               Problem 1.\n\n\n                       Lesson 16:                Reason about and explain arithmetic patterns using units                                                199\n                                                 of 0 and 1 as they relate to multiplication and division.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 201 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                               Lesson 16 3 3\n\n\n    T:   Write a multiplication equation to represent your\n         picture. Read your equation to a partner.\n                                                                                                                           NOTES ON\n    T:   Erase one of the circles. How many groups now?\n                                                                                                                           MULTIPLE MEANS\n    S:   1.\n                                                                                                                           OF REPRESENTATION:\n    T:   Write a multiplication equation to represent your                                                     English language learners and others\n         picture. Read your equation to me. (Call on students                                                  may benefit from a scaffolded review\n         to read equations and record.)                                                                        of unknowns represented as letters.\n    T:   Rewrite your equation. Let n equal the number of dots                                                 Start with a frame using blanks\n         in each group. What is 1 times n dots?                                                                (___ × 1 = ___), then question marks\n                                                                                                               (? × 1 = ?), then a number × 1 = a\n    S:   It’s n because the number of dots in each group is the\n                                                                                                               number, and finally, n × 1 = n.\n         same as the total number of dots.\n    T:   What is 1 times a number equal to?\n    S:   That number!\n    T:   Write the related division fact for your multiplication\n         equation. Read it at my signal. (Signal.)\n    S:   n ÷ 1 = n.\n    T:   Use your picture to discuss with a partner. Why is our division\n         equation true?\n    S:   It shows the total number of dots, n, divided into 1 group.\n         That equals n counters in each group.\n    T:   What is a number divided by 1?\n    S:   That number!\nRepeat this process, drawing n circles with 3 dots in each circle.\nStudents erase 1 dot from each circle and write multiplication equations\nto represent their pictures until they are left with n circles and 1 dot in\neach circle. This demonstrates n × 1 = n and n ÷ n = 1.\n    T:   What patterns did we discover for multiplying and dividing by\n         units of 1?\n    S:   Any number times 1 equals that number, any number divided\n         by 1 equals that number, and any number divided by itself\n         equals 1.\n\nProblem 2: Multiply and divide using units of 0.\n    T:   (Write 4 × 0 = b on the board.) What does this equation\n         represent?\n    S:   Four groups of 0.\n    T:   Draw a picture of the equation using circles to show the groups\n         and dots to show the number in each group. (Allow students\n         time to draw.) How many dots did you draw in each group?\n    S:   Zero!\n\n\n                        Lesson 16:               Reason about and explain arithmetic patterns using units                                             200\n                                                 of 0 and 1 as they relate to multiplication and division.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 202 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                              Lesson 16 3 3\n\n\n       T:   There are a total of 0 dots, so 4 times 0 equals?\n       S:   Zero!\n       T:   What is the value of b in the equation?\n       S:   b equals 0.\n  Continue with the following possible suggestions: 7 × 0, 6 × 0, and 0 × 0.\n       T:   What pattern did you notice?\n       S:   Any number times 0 equals 0.\n       T:   Write that equation using n to represent a number.\n       S:   n × 0 = 0.\n       T:   Write the related division equation on your board.\n       S:   0 ÷ n = 0.\n       T:   What does this equation represent?\n       S:   Zero divided by a number equals 0.\n       T:   Let’s choose a value for n and see if we get a true equation. Rewrite the equation, letting n equal 7.\n            (After students write 0 ÷ 7 = 0.) What does this equation represent?\n       S:   Zero things divided into 7 groups equals 0.\n       T:   Draw a picture of the equation using circles to show the groups and dots to show the number in\n            each group. (Allow students time to draw.) How many dots did you draw in each group?\n       S:   Zero!\n       T:   Zero divided by 7 equals?\n       S:   Zero!\n       T:   Rewrite the equation to show 7 things divided into 0 groups equals n.\n       S:   (Write 7 ÷ 0 = n.)\n       T:   What is the related multiplication fact?\n       S:   0 × n = 7.\n       T:   What does this equation represent?\n       S:   Zero times a number equals 7.\n       T:   Talk with your partner; is this possible?\n       S:   No, because any number times 0 equals 0, not 7.\n       T:   There’s no value for n that would make a true multiplication sentence, and the same is true for the\nMP.7        division equation.\n       T:   Let’s look at a special case of dividing by 0. Write 0 ÷ 0 = n on your board. What is the related\n            multiplication fact?\n       S:   0 × n = 0.\n       T:   What does this equation represent?\n       S:   Zero times a number equals 0.\n       T:   Talk with a partner; what is the value of n?\n       S:   Any number!  n can be any number because when you multiply any number times 0, it equals 0.\n\n\n                           Lesson 16:               Reason about and explain arithmetic patterns using units                                    201\n                                                    of 0 and 1 as they relate to multiplication and division.\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 203 (debrief) ---\nA STORY OF UNITS                                                                                                             Lesson 16 3 3\n\n\n        T:   n could be 3, 2, 5, 6, or any other number. n can be any number in the multiplication equation, and\n             the same is true for the division equation. Work with your partner to try a few different numbers in\n             the multiplication and division equations.\n        S:   (Plug in a variety of values.)\nMP.7\n        T:   What do you notice?\n        S:   Lots of numbers work!\n        T:   Right, there isn’t one single value for n in this case. Talk with a partner about what patterns you\n             discovered for dividing by 0.\n\n  Problem Set (10 minutes)\n  Students should do their personal best to complete the Problem Set within the allotted 10 minutes.\n  For some classes, it may be appropriate to modify the assignment by specifying which problems they work on\n  first. Some problems do not specify a method for solving. Students should solve these problems using the\n  RDW approach used for Application Problems.\n\n\n   Student Debrief (10 minutes)\n\n  Lesson Objective: Reason about and explain arithmetic\n  patterns using units of 0 and 1 as they relate to\n  multiplication and division.\n  The Student Debrief is intended to invite reflection and\n  active processing of the total lesson experience.\n  Invite students to review their solutions for the Problem\n  Set. They should check work by comparing answers with a\n  partner before going over answers as a class. Look for\n  misconceptions or misunderstandings that can be\n  addressed in the Debrief. Guide students in a\n  conversation to debrief the Problem Set and process the\n  lesson.\n  Any combination of the questions below may be used to\n  lead the discussion.\n            Discuss with a partner, what patterns for\n MP.7        multiplying and dividing by 0 and 1 helped you\n             solve Problem 1?\n            What pattern for multiplying by 1 does Problem 3 represent?\n            Which problems show that we can’t define a single specific value when we divide by 0? Explain your\n             answer to a partner.\n            How are multiplying by 1 and multiplying units of 1 similar to adding 0 to a number?\n            How can the patterns for multiplying and dividing by 1 or multiplying and dividing 0 by a number\n MP.7\n             help you solve equations with larger factors (e.g., 346 × 1 = b)?\n\n\n                           Lesson 16:               Reason about and explain arithmetic patterns using units                                    202\n                                                    of 0 and 1 as they relate to multiplication and division.\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 204 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 16 3 3\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                       Lesson 16:               Reason about and explain arithmetic patterns using units                                    203\n                                                of 0 and 1 as they relate to multiplication and division.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 205 (sprint) ---\nA STORY OF UNITS                                                                                                     Lesson 16 Sprint 3 3\n\n\nA\n                                                                                                                                 Number Correct: _______\n\n\nMultiply or divide by 9\n\n 1.                 2×9=                                                               23.                               × 9 = 90\n\n 2.                 3×9=                                                                24.                              × 9 = 18\n\n 3.                 4×9=                                                                25.                              × 9 = 27\n\n 4.                 5×9=                                                                26.                        90 ÷ 9 =\n\n 5.                 1×9=                                                                27.                        45 ÷ 9 =\n\n 6.                 18 ÷ 9 =                                                            28.                         9÷9=\n\n 7.                 27 ÷ 9 =                                                            29.                        18 ÷ 9 =\n\n 8.                 45 ÷ 9 =                                                            30.                        27 ÷ 9 =\n\n 9.                 9÷9=                                                                31.                              × 9 = 54\n\n 10.                36 ÷ 9 =                                                            32.                              × 9 = 63\n\n 11.                6×9=                                                                33.                              × 9 = 81\n\n 12.                7×9=                                                                34.                              × 9 = 72\n\n 13.                8×9=                                                                35.                        63 ÷ 9 =\n\n 14.                9×9=                                                                36.                        81 ÷ 9 =\n\n 15.                10 × 9 =                                                            37.                        54 ÷ 9 =\n\n 16.                72 ÷ 9 =                                                            38.                        72 ÷ 9 =\n\n 17.                63 ÷ 9 =                                                            39.                        11 × 9 =\n\n 18.                81 ÷ 9 =                                                            40.                        99 ÷ 9 =\n\n 19.                54 ÷ 9 =                                                            41.                        12 × 9 =\n\n 20.                90 ÷ 9 =                                                            42.                       108 ÷ 9 =\n\n 21.                     × 9 = 45                                                       43.                        14 × 9 =\n\n 22.                     ×9=9                                                           44.                       126 ÷ 9 =\n\n\n                           Lesson 16:                Reason about and explain arithmetic patterns using units                                        204\n                                                     of 0 and 1 as they relate to multiplication and division.\n\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 206 (sprint) ---\nA STORY OF UNITS                                                                                                     Lesson 16 Sprint 3 3\n\n\nB\n                                                                                                                                 Number Correct: _______\n                                                                                                                                      Improvement: _______\nMultiply or divide by 9\n\n 1.                 1×9=                                                                23.                              × 9 = 18\n\n 2.                 2×9=                                                                24.                              × 9 = 90\n\n 3.                 3×9=                                                                25.                              × 9 = 27\n\n 4.                 4×9=                                                                26.                        18 ÷ 9 =\n\n 5.                 5×9=                                                                27.                         9÷9=\n\n 6.                 27 ÷ 9 =                                                            28.                        90 ÷ 9 =\n\n 7.                 18 ÷ 9 =                                                            29.                        45 ÷ 9 =\n\n 8.                 36 ÷ 9 =                                                            30.                        27 ÷ 9 =\n\n 9.                 9÷9=                                                                31.                              × 9 = 27\n\n 10.                45 ÷ 9 =                                                            32.                              × 9 = 36\n\n 11.                10 × 9 =                                                            33.                              × 9 = 81\n\n 12.                6×9=                                                                34.                              × 9 = 63\n\n 13.                7×9=                                                                35.                        72 ÷ 9 =\n\n 14.                8×9=                                                                36.                        81 ÷ 9 =\n\n 15.                9×9=                                                                37.                        54 ÷ 9 =\n\n 16.                63 ÷ 9 =                                                            38.                        63 ÷ 9 =\n\n 17.                54 ÷ 9 =                                                            39.                        11 × 9 =\n\n 18.                72 ÷ 9 =                                                            40.                        99 ÷ 9 =\n\n 19.                90 ÷ 9 =                                                            41.                        12 × 9 =\n\n 20.                81 ÷ 9 =                                                            42.                       108 ÷ 9 =\n\n 21.                     ×9=9                                                           43.                        13 × 9 =\n\n 22.                     × 9 = 45                                                       44.                       117 ÷ 9 =\n\n\n                           Lesson 16:                Reason about and explain arithmetic patterns using units                                          205\n                                                     of 0 and 1 as they relate to multiplication and division.\n\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 207 (problem-set) ---\nA STORY OF UNITS                                                                                    Lesson 16 Problem Set 3 3\n\n\nName                                                                                                       Date\n\n1. Complete.\n\n\n   a. _____ × 1 = 6                    b. _____ ÷ 7 = 0                               c. 8 × _____ = 8                            d. 9 ÷ _____ = 9\n\n\n   e. 0 ÷ 5 = _____                    f.          _____ × 0 = 0                      g. 4 ÷ _____ = 1                            h. _____ × 1 = 3\n\n\n2. Match each equation with its solution.\n\n\n       1×n=3              n÷4=0                              1×6=n                      7÷7=n                           n×1=9              n÷1=8\n\n\n           n=0               n=9                               n=3                          n=8                             n=6              n=1\n\n\n3. Let n be a number. Complete the blanks below with the products.\n\n\n       1         2       3                     4              5            6                7               8                9\n                                                                                                                                    …          n\n\n\n     ×1          ×1    ×1                   ×1              ×1            ×1              ×1               ×1               ×1                ×1\n\n\n    _____    _____    _____              _____             _____        _____           _____            _____            _____             _____\n\n\n   What pattern do you notice?\n\n\n                      Lesson 16:                   Reason about and explain arithmetic patterns using units                                          206\n                                                   of 0 and 1 as they relate to multiplication and division.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 208 (problem-set) ---\nA STORY OF UNITS                                                                                     Lesson 16 Problem Set 3 3\n\n\n4. Josie says that any number divided by 1 equals that number.\n\n    a. Write a division equation using n to represent Josie’s statement.\n\n\n    b. Use your equation from Part (a). Let n = 6. Write a new equation, and draw a picture to show that\n       your equation is true.\n\n\n    c. Write the related multiplication equation that you can use to check your division equation.\n\n\n5. Matt explains what he learned about dividing with zero to his little sister.\n\n    a. What might Matt tell his sister about solving 0 ÷ 9? Explain your answer.\n\n\n    b. What might Matt tell his sister about solving 8 ÷ 0? Explain your answer.\n\n\n    c. What might Matt tell his sister about solving 0 ÷ 0? Explain your answer.\n\n\n                        Lesson 16:               Reason about and explain arithmetic patterns using units                         207\n                                                 of 0 and 1 as they relate to multiplication and division.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 209 (exit-ticket) ---\nA STORY OF UNITS                                                                                          Lesson 16 Exit Ticket 3 3\n\n\nName                                                                                                        Date\n\n1. Complete.\n\n    a. _____ × 1 = 5                                  b. 6 × _____ = 6                                                    c. _____÷ 7 = 0\n\n\n    d. 5 × _____ = 0                                  e. 1 = 9 ÷ _____                                                    f.      8 = 1 × _____\n\n\n2. Luis divides 8 by 0 and says it equals 0. Is he correct? Explain why or why not.\n\n\n                       Lesson 16:                Reason about and explain arithmetic patterns using units                                         208\n                                                 of 0 and 1 as they relate to multiplication and division.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 210 (homework) ---\nA STORY OF UNITS                                                                                          Lesson 16 Homework 3 3\n\n\nName                                                                                                          Date\n\n1. Complete.\n\n\n    a. 4 × 1 = ______                              b. 4 × 0 = _____                            c. _____ × 1 = 5                     d. _____ ÷ 5 = 0\n\n\n    e. 6 × _____ = 6                               f.     _____ ÷ 6 = 0                        g. 0 ÷ 7 = _____                     h. 7 × _____ = 0\n\n\n    i.    8 ÷ _____ = 8                            j.     _____ × 8 = 8                        k. 9 × _____ = 9                     l.   9 ÷ _____ = 1\n\n\n2. Match each equation with its solution.\n\n\n     9×1=w                                                                                                                               w=6\n\n\n     w×1=6                                                                                                                               w=7\n\n\n     7÷w=1                                                                                                                               w=8\n\n\n     1×w=8\n                                                                                                                                         w=9\n\n\n       w÷8=0\n                                                                                                                                         w=1\n\n\n         9÷9=w                                                                                                                           w=0\n\n\n                          Lesson 16:                    Reason about and explain arithmetic patterns using units                                         209\n                                                        of 0 and 1 as they relate to multiplication and division.\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 211 (homework) ---\nA STORY OF UNITS                                                                                            Lesson 16 Homework 3 3\n\n\n3. Let c = 8. Determine whether the equations are true or false. The first one has been done for you.\n\n        a. c × 0 = 8                                                                        False\n\n        b. 0 × c = 0\n\n        c. c × 1 = 8\n\n        d. 1 × c = 8\n\n        e. 0 ÷ c = 8\n\n        f.     8÷c=1\n\n        g. 0 ÷ c = 0\n\n        h. c ÷ 0 = 8\n\n\n4. Rajan says that any number multiplied by 1 equals that number.\n\n   a. Write a multiplication equation using n to represent Rajan’s statement.\n\n\n   b.        Using your equation from Part (a), let n = 5, and draw a picture to show that the new equation is true.\n\n\n                            Lesson 16:               Reason about and explain arithmetic patterns using units                         210\n                                                     of 0 and 1 as they relate to multiplication and division.\n\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G3-M3-TE-1.3.0-05.2015",
+    "problemSetPages": [
+      {
+        "pdfPage": 207,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                    Lesson 16 Problem Set 3 3\n\n\nName                                                                                                       Date\n\n1. Complete.\n\n\n   a. _____ × 1 = 6                    b. _____ ÷ 7 = 0                               c. 8 × _____ = 8                            d. 9 ÷ _____ = 9\n\n\n   e. 0 ÷ 5 = _____                    f.          _____ × 0 = 0                      g. 4 ÷ _____ = 1                            h. _____ × 1 = 3\n\n\n2. Match each equation with its solution.\n\n\n       1×n=3              n÷4=0                              1×6=n                      7÷7=n                           n×1=9              n÷1=8\n\n\n           n=0               n=9                               n=3                          n=8                             n=6              n=1\n\n\n3. Let n be a number. Complete the blanks below with the products.\n\n\n       1         2       3                     4              5            6                7               8                9\n                                                                                                                                    …          n\n\n\n     ×1          ×1    ×1                   ×1              ×1            ×1              ×1               ×1               ×1                ×1\n\n\n    _____    _____    _____              _____             _____        _____           _____            _____            _____             _____\n\n\n   What pattern do you notice?\n\n\n                      Lesson 16:                   Reason about and explain arithmetic patterns using units                                          206\n                                                   of 0 and 1 as they relate to multiplication and division.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 208,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                     Lesson 16 Problem Set 3 3\n\n\n4. Josie says that any number divided by 1 equals that number.\n\n    a. Write a division equation using n to represent Josie’s statement.\n\n\n    b. Use your equation from Part (a). Let n = 6. Write a new equation, and draw a picture to show that\n       your equation is true.\n\n\n    c. Write the related multiplication equation that you can use to check your division equation.\n\n\n5. Matt explains what he learned about dividing with zero to his little sister.\n\n    a. What might Matt tell his sister about solving 0 ÷ 9? Explain your answer.\n\n\n    b. What might Matt tell his sister about solving 8 ÷ 0? Explain your answer.\n\n\n    c. What might Matt tell his sister about solving 0 ÷ 0? Explain your answer.\n\n\n                        Lesson 16:               Reason about and explain arithmetic patterns using units                         207\n                                                 of 0 and 1 as they relate to multiplication and division.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 309,
+        "text": "A STORY OF UNITS                                                                                       Lesson 16 Answer Key 3 3\n\n\nLesson 16\nSprint\nSide A\n1.    18                            12. 63                                        23. 10                                             34. 8\n2.    27                            13. 72                                        24. 2                                              35. 7\n3.    36                            14. 81                                        25. 3                                              36. 9\n4.    45                            15. 90                                        26. 10                                             37. 6\n5.    9                             16. 8                                         27. 5                                              38. 8\n6.    2                             17. 7                                         28. 1                                              39. 99\n7.    3                             18. 9                                         29. 2                                              40. 11\n8.    5                             19. 6                                         30. 3                                              41. 108\n9.    1                             20. 10                                        31. 6                                              42. 12\n10. 4                               21. 5                                         32. 7                                              43. 126\n11. 54                              22. 1                                         33. 9                                              44. 14\n\n\nSide B\n1.    9                             12. 54                                        23. 2                                              34. 7\n2.    18                            13. 63                                        24. 10                                             35. 8\n3.    27                            14. 72                                        25. 3                                              36. 9\n4.    36                            15. 81                                        26. 2                                              37. 6\n5.    45                            16. 7                                         27. 1                                              38. 7\n6.    3                             17. 6                                         28. 10                                             39. 99\n7.    2                             18. 8                                         29. 5                                              40. 11\n8.    4                             19. 10                                        30. 3                                              41. 108\n9.    1                             20. 9                                         31. 3                                              42. 12\n10. 5                               21. 1                                         32. 4                                              43. 117\n11. 90                              22. 5                                         33. 9                                              44. 13\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10                        308\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 310,
+        "text": "A STORY OF UNITS                                                                                       Lesson 16 Answer Key 3 3\n\n\nProblem Set\n1.    a. 6                                                                       2.        Equations matched to solutions\n      b. 0                                                                       3.        1, 2, 3, 4, 5, 6, 7, 8, 9, n\n      c. 1                                                                                 Answers will vary.\n      d. 1                                                                       4.        a. n ÷1 = n\n      e. 0                                                                                 b. 6 ÷ 1 = 6; picture drawn\n      f.   Any number                                                                      c. 6 × 1 = 6\n      g. 4                                                                       5.        a. Explanations may vary.\n      h. 3                                                                                 b. Explanations may vary.\n                                                                                           c. Explanations may vary.\n\nExit Ticket\n1.    a. 5                                                                       2.        No; explanations may vary.\n      b. 1\n      c. 0\n      d. 0\n      e. 9\n      f.   8\n\nHomework\n1.    a. 4                                                                       2.        Equations matched to solutions\n      b. 0                                                                       3.        a. Answer provided\n      c. 5                                                                                 b. True\n      d. 0                                                                                 c. True\n      e. 1                                                                                 d. True\n      f.   0                                                                               e. False\n      g. 0                                                                                 f.     True\n      h. 0                                                                                 g. True\n      i.   1                                                                               h. False\n      j.   1                                                                     4.        a. n × 1 = n\n      k. 1                                                                                 b. Answers will vary.\n      l.   9\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              309\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015"
+      }
+    ]
+  }
+}

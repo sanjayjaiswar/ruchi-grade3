@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m4-l14",
+  "moduleId": "m4",
+  "lessonNumber": 14,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+    "teacherEditionBytes": 10725683,
+    "lessonPdfPages": {
+      "start": 173,
+      "end": 184
+    },
+    "problemSetPdfPages": [
+      180,
+      181
+    ],
+    "exitTicketPdfPages": [
+      182
+    ],
+    "homeworkPdfPages": [
+      183,
+      184
+    ],
+    "answerKeyPdfPages": [
+      231
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m4-student/workbook-page-062.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m4-teacher/page-180.png",
+      "/source-pages/m4-teacher/page-181.png",
+      "/source-pages/m4-teacher/page-231.png"
+    ]
+  },
+  "objective": "Find areas by decomposing into rectangles or completing composite figures to form rectangles.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "to challenge\n         complete sentence!                                                                                     students working above grade level.\n    T:   What is the total area of the figure?                                                                  Or, offer an alternative challenge, such\n    S:   19 square centimeters!                                                                                 as scripting and recording the steps to\n                                                                                                                find the area of a non-rectangular\nContinue with Problem 1(b) from the Problem Set.                                                                shape that they can refer to when\n                                                                                                                needed.\nProblem 2: Solve a word problem involving the area of\nnon-rectangular shapes.\nWrite or project the following problem: Fanny has a piece of fabric 8 feet long and 5 feet wide. She cuts out\na rectangular piece that measures 3 feet by 2 feet. How many square feet of fabric does Fanny have left?\n    T:   Draw and label Fanny’s fabric.\n    T:   How big is the piece that Fanny cuts out?\n    S:   3 ft by 2 ft.\n    T:   Work with your partner to draw the piece of fabric that Fanny cuts out.\n         Label the measurements of the piece being cut out.                                                                                     5 ft\n         (Note: The 3-ft by 2-ft piece can be taken out of any part of the original\n         rectangle, including at an angle.)\n    S:   (Draw as shown to the right.)\n    T:   What’s the best way for us to find the area of the remaining fabric?                                                     8 ft\n    S:   Find the area of the original piece, then subtract the area of what was\n         cut out.\n    T:   Write an equation to find the area of the original piece of fabric.\n    S:   (Write 8 × 5 = 40.)\n    T:   Beneath what you just wrote, write an equation to find\n         the area of the piece of fabric Fanny cuts out.                                                                                        5 ft\n    T:   What is the area of the piece that is cut out?\n                                                                                                                                                 3 ft\n    S:   6 square feet!\n    T:   What expression tells us the area of the remaining fabric?\n    S:   40 – 6.                                                                                                                  8 ft   2 ft\n    T:   40 – 6 equals…?\n    S:   34.\n    T:   How much fabric does Fanny have left?\n    S:   34 square feet!\n\n\n                        Lesson 14:                 Find areas by decomposing into rectangles or completing composite                                    175\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 14 3 4",
+    "fluencyPracticeText": " Group Counting 3.OA.1                                  (3 minutes)\n Multiply by 8 3.OA.7                                   (7 minutes)\n Find the Area 3.MD.7                                   (5 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nDirect students to count forward and backward, occasionally changing the direction of the count.\n        Fours to 40\n        Sixes to 60\n        Sevens to 70\n        Nines to 90\n\nMultiply by 8 (7 minutes)\nMaterials: (S) Multiply by 8 (6–10) Pattern Sheet\n\nNote: This activity builds fluency with multiplication facts using units of 8. It works toward students knowing\nfrom memory all products of two one-digit numbers. See Lesson 2 for the directions for administration of a\nMultiply-By Pattern Sheet.\n    T:   (Write 6 × 8 =     .) Let’s skip-count up by eights to solve. (Count with fingers to 6 as students\n         count.)\n    S:   8, 16, 24, 32, 40, 48.\n\n\n                         Lesson 14:                 Find areas by decomposing into rectangles or completing composite                         172\n                                                    figures to form rectangles.\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                                  Lesson 14 3 4\n\n\n    T:   Let’s skip-count down to find the answer, too. Start at 80. (Count down with fingers as students\n         count.)\n    S:   80, 72, 64, 56, 48.\n    T:   Let’s skip-count up again to find the answer, but this time, start at 40. (Count up with fingers as\n         students count.)\n    S:   40, 48.\nContinue with the following possible sequence: 8 × 8, 7 × 8, and 9 × 8.\n    T:   (Distribute Multiply by 8 (6–10) Pattern Sheet.) Let’s practice multiplying by 8. Be sure to work left\n         to right across the page.\n\nFind the Area (5 minutes)                                                                                                         Figures for Find the Area\n\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews the relationship between side lengths and\narea and supports the perception of the composite shapes by moving from part\nto whole using a grid.\n    T:   (Project the first figure on the right.) On your personal white board,\n         write a number sentence to show the area of the shaded rectangle.\n    S:   (Write 5 × 2 = 10 or 2 × 5 = 10.)\n    T:   Write a number sentence to show the area of the unshaded rectangle.\n    S:   (Write 3 × 2 = 6 or 2 × 3 = 6.)\n    T:   (Write __ sq units + __ sq units = __ sq units.) Using the areas of the\n         shaded and unshaded rectangle, write an addition sentence to show the\n         area of the entire figure.\n    S:   (Write 10 sq units + 6 sq units = 16 sq units or\n         6 sq units + 10 sq units = 16 sq units.)\nContinue with the other figures.\n\n\n                        Lesson 14:                 Find areas by decomposing into rectangles or completing composite                                    173\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 14 3 4",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach used\nfor Application Problems.",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "What is the total area of the figure? Or, offer an alternative challenge, such"
+      },
+      {
+        "speaker": "students",
+        "text": "19 square centimeters! as scripting and recording the steps to find the area of a non-rectangular Continue with Problem 1(b) from the Problem Set. shape that they can refer to when needed. non-rectangular shapes. Write or project the following problem: Fanny has a piece of fabric 8 feet long and 5 feet wide. She cuts out a rectangular piece that measures 3 feet by 2 feet. How many square feet of fabric does Fanny have left?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw and label Fanny’s fabric."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How big is the piece that Fanny cuts out?"
+      },
+      {
+        "speaker": "students",
+        "text": "3 ft by 2 ft."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to draw the piece of fabric that Fanny cuts out. Label the measurements of the piece being cut out. 5 ft (Note: The 3-ft by 2-ft piece can be taken out of any part of the original rectangle, including at an angle.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw as shown to the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What’s the best way for us to find the area of the remaining fabric? 8 ft"
+      },
+      {
+        "speaker": "students",
+        "text": "Find the area of the original piece, then subtract the area of what was cut out."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write an equation to find the area of the original piece of fabric."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 8 × 5 = 40.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Beneath what you just wrote, write an equation to find the area of the piece of fabric Fanny cuts out. 5 ft"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the area of the piece that is cut out? 3 ft"
+      },
+      {
+        "speaker": "students",
+        "text": "6 square feet!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What expression tells us the area of the remaining fabric?"
+      },
+      {
+        "speaker": "students",
+        "text": "40 – 6. 8 ft 2 ft"
+      },
+      {
+        "speaker": "teacher",
+        "text": "40 – 6 equals…?"
+      },
+      {
+        "speaker": "students",
+        "text": "34."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How much fabric does Fanny have left?"
+      },
+      {
+        "speaker": "students",
+        "text": "34 square feet! figures to form rectangles. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 14 3 4"
+      }
+    ],
+    "teacherPrompts": [
+      "What is the total area of the figure? Or, offer an alternative challenge, such",
+      "Draw and label Fanny’s fabric.",
+      "How big is the piece that Fanny cuts out?",
+      "Work with your partner to draw the piece of fabric that Fanny cuts out. Label the measurements of the piece being cut out. 5 ft (Note: The 3-ft by 2-ft piece can be taken out of any part of the original rectangle, including at an angle.)",
+      "What’s the best way for us to find the area of the remaining fabric? 8 ft",
+      "Write an equation to find the area of the original piece of fabric.",
+      "Beneath what you just wrote, write an equation to find the area of the piece of fabric Fanny cuts out. 5 ft",
+      "What is the area of the piece that is cut out? 3 ft",
+      "What expression tells us the area of the remaining fabric?",
+      "40 – 6 equals…?",
+      "How much fabric does Fanny have left?"
+    ],
+    "debriefPrompt": "Lead a discussion about the strategy choice for Problems 1(a) and 1(b). Could the strategies have been reversed for these two problems?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Find the area of each of the following figures. All figures are made up of rectangles. a. 2 cm 3 cm 2 cm 3 cm b. 1m 4m 1m 2m 1m",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "The figure below shows a small rectangle in a big rectangle. Find the area of the shaded part of the figure. 1m 2m 1m 5m 2m 6m figures to form rectangles. A paper rectangle has a length of 6 inches and a width of 8 inches. A square with a side length of 3 inches was cut out of it. What is the area of the remaining paper? 4. Tila and Evan both have paper rectangles measuring 6 cm by 9 cm. Tila cuts a 3 cm by 4 cm rectangle out of hers, and Evan cuts a 2 cm by 6 cm rectangle out of his. Tila says she has more paper left over. Evan says they have the same amount. Who is correct? Show your work below. figures to form rectangles.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                   Lesson 14 Problem Set 3 4\n\n\nName                                                                                                        Date\n\n1.   Find the area of each of the following figures. All figures are made up of rectangles.\n\n     a.\n           2 cm\n\n\n                                                                         3 cm\n\n\n                        2 cm                           3 cm\n\n\n     b.\n                                                                        1m\n\n\n                        4m\n\n\n                                                                       1m\n\n\n                                             2m               1m\n\n\n2.   The figure below shows a small rectangle in a big rectangle. Find the area of the shaded part of the\n     figure.\n\n\n                                       1m\n\n                  2m                                          1m\n          5m\n\n\n                                       2m\n\n\n                               6m\n\n\n                        Lesson 14:                 Find areas by decomposing into rectangles or completing composite              179\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                   Lesson 14 Problem Set 3 4\n\n\n3.   A paper rectangle has a length of 6 inches and a width of 8 inches. A square with a side length of 3 inches\n     was cut out of it. What is the area of the remaining paper?\n\n\n4.   Tila and Evan both have paper rectangles measuring 6 cm by 9 cm. Tila cuts a 3 cm by 4 cm rectangle out\n     of hers, and Evan cuts a 2 cm by 6 cm rectangle out of his. Tila says she has more paper left over. Evan\n     says they have the same amount. Who is correct? Show your work below.\n\n\n                        Lesson 14:                 Find areas by decomposing into rectangles or completing composite              180\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    a. 19 sq cm                                                                3.       39 sq in\n      b. 10 sq m                                                                 4.       Evan; explanations will vary.\n2.    24 sq m",
+    "answerKeyText": "A STORY OF UNITS                                                                                         Lesson 14 Answer Key 3 4\n\n\nLesson 14\nPattern Sheet\n              8                                            16                                            24                       32\n             40                                            48                                            56                       64\n             72                                            80                                            40                       48\n             40                                            56                                            40                       64\n             40                                            72                                            40                       80\n             48                                            40                                            48                       56\n             48                                            64                                            48                       72\n             48                                            56                                            48                       56\n             64                                            56                                            72                       56\n             64                                            48                                            64                       56\n             64                                            72                                            72                       48\n             72                                            56                                            72                       64\n             72                                            64                                            48                       72\n             56                                            72                                            48                       64\n             72                                            56                                            48                       64\n\n\nProblem Set\n1.    a. 19 sq cm                                                                3.       39 sq in\n      b. 10 sq m                                                                 4.       Evan; explanations will vary.\n2.    24 sq m\n\n\nExit Ticket\n32 sq cm\n\n\nHomework\n1.    a. 75 sq ft                                                                2.       a. 3 ft, 5 ft\n      b. 58 sq in                                                                         b. 55 sq ft\n\n\n                        Module 4:                  Multiplication and Area                                                             230\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "ruler-or-length",
+      "geometry-diagram",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "ruler-or-length": [
+        "S: 19 square centimeters! as scripting and recording the steps to",
+        "Note: This fluency activity reviews the relationship between side lengths and",
+        "3. A paper rectangle has a length of 6 inches and a width of 8 inches. A square with a side length of 3 inches"
+      ],
+      "geometry-diagram": [
+        "Find areas by decomposing into rectangles or completing composite figures to form rectangles.",
+        "rectangle, including at an angle.)",
+        "Lesson 14: Find areas by decomposing into rectangles or completing composite 175",
+        "figures to form rectangles.",
+        "Lesson 14: Find areas by decomposing into rectangles or completing composite 172",
+        "figures to form rectangles.",
+        "write a number sentence to show the area of the shaded rectangle.",
+        "T: Write a number sentence to show the area of the unshaded rectangle."
+      ],
+      "money-model": [
+        "S: 19 square centimeters! as scripting and recording the steps to"
+      ],
+      "picture-or-drawing": [
+        "T: Draw and label Fanny’s fabric.",
+        "T: Work with your partner to draw the piece of fabric that Fanny cuts out.",
+        "S: (Draw as shown to the right.)",
+        "write a number sentence to show the area of the shaded rectangle.",
+        "T: Write a number sentence to show the area of the unshaded rectangle.",
+        "shaded and unshaded rectangle, write an addition sentence to show the",
+        "2. The figure below shows a small rectangle in a big rectangle. Find the area of the shaded part of the"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "students",
+        "text": "19 square centimeters! as scripting and recording the steps to find the area of a non-rectangular Continue with Problem 1(b) from the Problem Set. shape that they can refer to when needed. non-rectangular shapes. Write or project the following problem: Fanny has a piece of fabric 8 feet long and 5 feet wide. She cuts out a rectangular piece that measures 3 feet by 2 feet. How many square feet of fabric does Fanny have left?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw and label Fanny’s fabric."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to draw the piece of fabric that Fanny cuts out. Label the measurements of the piece being cut out. 5 ft (Note: The 3-ft by 2-ft piece can be taken out of any part of the original rectangle, including at an angle.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw as shown to the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write an equation to find the area of the original piece of fabric."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 8 × 5 = 40.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Beneath what you just wrote, write an equation to find the area of the piece of fabric Fanny cuts out. 5 ft"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 173 (debrief) ---\nA STORY OF UNITS                                                                                                                Lesson 14 3 4\n\n\nLesson 14\nObjective: Find areas by decomposing into rectangles or completing\ncomposite figures to form rectangles.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (15 minutes)\n Application Problem               (5 minutes)\n Concept Development               (30 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (15 minutes)\n\n Group Counting 3.OA.1                                  (3 minutes)\n Multiply by 8 3.OA.7                                   (7 minutes)\n Find the Area 3.MD.7                                   (5 minutes)\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nDirect students to count forward and backward, occasionally changing the direction of the count.\n        Fours to 40\n        Sixes to 60\n        Sevens to 70\n        Nines to 90\n\nMultiply by 8 (7 minutes)\nMaterials: (S) Multiply by 8 (6–10) Pattern Sheet\n\nNote: This activity builds fluency with multiplication facts using units of 8. It works toward students knowing\nfrom memory all products of two one-digit numbers. See Lesson 2 for the directions for administration of a\nMultiply-By Pattern Sheet.\n    T:   (Write 6 × 8 =     .) Let’s skip-count up by eights to solve. (Count with fingers to 6 as students\n         count.)\n    S:   8, 16, 24, 32, 40, 48.\n\n\n                         Lesson 14:                 Find areas by decomposing into rectangles or completing composite                         172\n                                                    figures to form rectangles.\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 174 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                                  Lesson 14 3 4\n\n\n    T:   Let’s skip-count down to find the answer, too. Start at 80. (Count down with fingers as students\n         count.)\n    S:   80, 72, 64, 56, 48.\n    T:   Let’s skip-count up again to find the answer, but this time, start at 40. (Count up with fingers as\n         students count.)\n    S:   40, 48.\nContinue with the following possible sequence: 8 × 8, 7 × 8, and 9 × 8.\n    T:   (Distribute Multiply by 8 (6–10) Pattern Sheet.) Let’s practice multiplying by 8. Be sure to work left\n         to right across the page.\n\nFind the Area (5 minutes)                                                                                                         Figures for Find the Area\n\nMaterials: (S) Personal white board\n\nNote: This fluency activity reviews the relationship between side lengths and\narea and supports the perception of the composite shapes by moving from part\nto whole using a grid.\n    T:   (Project the first figure on the right.) On your personal white board,\n         write a number sentence to show the area of the shaded rectangle.\n    S:   (Write 5 × 2 = 10 or 2 × 5 = 10.)\n    T:   Write a number sentence to show the area of the unshaded rectangle.\n    S:   (Write 3 × 2 = 6 or 2 × 3 = 6.)\n    T:   (Write __ sq units + __ sq units = __ sq units.) Using the areas of the\n         shaded and unshaded rectangle, write an addition sentence to show the\n         area of the entire figure.\n    S:   (Write 10 sq units + 6 sq units = 16 sq units or\n         6 sq units + 10 sq units = 16 sq units.)\nContinue with the other figures.\n\n\n                        Lesson 14:                 Find areas by decomposing into rectangles or completing composite                                    173\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 175 (concept-development) ---\nA STORY OF UNITS                                                                                                               Lesson 14 3 4\n\n\n Application Problem (5 minutes)\n\n       a.   Break apart the shaded figure into 2 rectangles. Then, add to find the area of the shaded figure\n            below.\n       b.   Subtract the area of the unshaded rectangle from the area of the large rectangle to check your\n            answer in Part (a).\n\n\nMP.7\n\n\n Note: This problem reviews the Lesson 13 concept of finding the area of composite shapes. Students may\n choose to break apart their rectangles in different ways for Part (a).\n\n                                                                                                           2 cm\n Concept Development (30 minutes)\n\n Materials: (S) Personal white board, Problem Set\n                                                                                                                                                                3 cm\n Problem 1: Choose an appropriate method for finding the area\n of a composite shape.\n Distribute one Problem Set to each student. Project the shape\n on the right.\n                                                                                                                               2 cm        3 cm\n       T:   What two strategies did we learn yesterday to find the\n            area of a non-rectangular shape?\n       S:   We can break the shape apart into smaller rectangles,                                                              NOTES ON\n            and then add the areas of the smaller rectangles                                                                   MULTIPLE MEANS\n            together.  Or, we can find the area of the larger                                                                 OF ENGAGEMENT:\n            rectangle and subtract the area of the unknown part.                                                   Students working below grade level\n       T:   Look at the figure in Problem 1(a).                                                                    may benefit from sentence frames to\n                                                                                                                   write equations to find the area in\n       T:   What is the unknown width?                                                                             Problem 1. Provide the following\n       S:   5 centimeters!  2 centimeters plus 3 centimeters is                                                   written support, if necessary:\n            5 centimeters.                                                                                         ____ cm × ____ cm = ____sq cm\n\n       T:   Label that on your figure. Then, write the equation                                                    ____ cm × ____ cm = ____sq cm\n            used to find the area of each of the smaller rectangles.                                               ____ sq cm + ____ sq cm = ____ sq cm\n\n       S:   (Record on Problem Set.)                                                                               The area is ____ square centimeters.\n\n\n                           Lesson 14:                 Find areas by decomposing into rectangles or completing composite                                   174\n                                                      figures to form rectangles.\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 176 (concept-development) ---\nA STORY OF UNITS                                                                                                                 Lesson 14 3 4\n\n\n    T:   What is the area of the top rectangle?\n    S:   10 square centimeters!\n    T:   What is the area of the bottom rectangle?                                                                          NOTES ON\n                                                                                                                            MULTIPLE MEANS\n    S:   9 square centimeters!\n                                                                                                                            OF ENGAGEMENT:\n    T:   On your Problem Set, write the equation used to find\n                                                                                                                Adjust the numbers in Problem 2 of the\n         the area of the whole figure. Be sure to answer in a                                                   Concept Development to challenge\n         complete sentence!                                                                                     students working above grade level.\n    T:   What is the total area of the figure?                                                                  Or, offer an alternative challenge, such\n    S:   19 square centimeters!                                                                                 as scripting and recording the steps to\n                                                                                                                find the area of a non-rectangular\nContinue with Problem 1(b) from the Problem Set.                                                                shape that they can refer to when\n                                                                                                                needed.\nProblem 2: Solve a word problem involving the area of\nnon-rectangular shapes.\nWrite or project the following problem: Fanny has a piece of fabric 8 feet long and 5 feet wide. She cuts out\na rectangular piece that measures 3 feet by 2 feet. How many square feet of fabric does Fanny have left?\n    T:   Draw and label Fanny’s fabric.\n    T:   How big is the piece that Fanny cuts out?\n    S:   3 ft by 2 ft.\n    T:   Work with your partner to draw the piece of fabric that Fanny cuts out.\n         Label the measurements of the piece being cut out.                                                                                     5 ft\n         (Note: The 3-ft by 2-ft piece can be taken out of any part of the original\n         rectangle, including at an angle.)\n    S:   (Draw as shown to the right.)\n    T:   What’s the best way for us to find the area of the remaining fabric?                                                     8 ft\n    S:   Find the area of the original piece, then subtract the area of what was\n         cut out.\n    T:   Write an equation to find the area of the original piece of fabric.\n    S:   (Write 8 × 5 = 40.)\n    T:   Beneath what you just wrote, write an equation to find\n         the area of the piece of fabric Fanny cuts out.                                                                                        5 ft\n    T:   What is the area of the piece that is cut out?\n                                                                                                                                                 3 ft\n    S:   6 square feet!\n    T:   What expression tells us the area of the remaining fabric?\n    S:   40 – 6.                                                                                                                  8 ft   2 ft\n    T:   40 – 6 equals…?\n    S:   34.\n    T:   How much fabric does Fanny have left?\n    S:   34 square feet!\n\n\n                        Lesson 14:                 Find areas by decomposing into rectangles or completing composite                                    175\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 177 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 14 3 4\n\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach used\nfor Application Problems.\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Find areas by decomposing into\nrectangles or completing composite figures to form\nrectangles.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a conversation\nto debrief the Problem Set and process the lesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Lead a discussion about the strategy choice for\n         Problems 1(a) and 1(b). Could the strategies have\n         been reversed for these two problems?\n        What steps did you need to follow to solve\n         Problem 2? How were you able to find the area\n         of the smaller rectangle?\n        Invite students to share their drawings for\n         Problem 3. In what ways are they similar?\n         In what ways are they different?\n        Why did Tila and Evan wind up with the same\n         amount of paper in Problem 4? If they both cut\n         their rectangles from the corners of their papers,\n         would they both be able to cut out a 4-cm by 8-\n         cm rectangle with their remaining paper?\n         (Guide students to reason that, although they\n         both have 42 sq cm left and the 4 × 8 rectangle\n         only measures 32 sq cm, only Evan can cut out\n         such a rectangle from his remaining paper.)\n\n\n                        Lesson 14:                 Find areas by decomposing into rectangles or completing composite                         176\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 178 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 14 3 4\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that were presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 14:                 Find areas by decomposing into rectangles or completing composite                         177\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 179 (template) ---\nA STORY OF UNITS                                                                                 Lesson 14 Pattern Sheet 3 4\n\n\n     Multiply.\n\n\nmultiply by 8 (6−10)\n\n\n                       Lesson 14:                 Find areas by decomposing into rectangles or completing composite              178\n                                                  figures to form rectangles.\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 180 (problem-set) ---\nA STORY OF UNITS                                                                                   Lesson 14 Problem Set 3 4\n\n\nName                                                                                                        Date\n\n1.   Find the area of each of the following figures. All figures are made up of rectangles.\n\n     a.\n           2 cm\n\n\n                                                                         3 cm\n\n\n                        2 cm                           3 cm\n\n\n     b.\n                                                                        1m\n\n\n                        4m\n\n\n                                                                       1m\n\n\n                                             2m               1m\n\n\n2.   The figure below shows a small rectangle in a big rectangle. Find the area of the shaded part of the\n     figure.\n\n\n                                       1m\n\n                  2m                                          1m\n          5m\n\n\n                                       2m\n\n\n                               6m\n\n\n                        Lesson 14:                 Find areas by decomposing into rectangles or completing composite              179\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 181 (problem-set) ---\nA STORY OF UNITS                                                                                   Lesson 14 Problem Set 3 4\n\n\n3.   A paper rectangle has a length of 6 inches and a width of 8 inches. A square with a side length of 3 inches\n     was cut out of it. What is the area of the remaining paper?\n\n\n4.   Tila and Evan both have paper rectangles measuring 6 cm by 9 cm. Tila cuts a 3 cm by 4 cm rectangle out\n     of hers, and Evan cuts a 2 cm by 6 cm rectangle out of his. Tila says she has more paper left over. Evan\n     says they have the same amount. Who is correct? Show your work below.\n\n\n                        Lesson 14:                 Find areas by decomposing into rectangles or completing composite              180\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 182 (exit-ticket) ---\nA STORY OF UNITS                                                                                         Lesson 14 Exit Ticket 3 4\n\n\nName                                                                                                       Date\n\nMary draws an 8 cm by 6 cm rectangle on her grid paper. She shades a square with a side length of 4 cm\ninside her rectangle. What area of the rectangle is left unshaded?\n\n\n                       Lesson 14:                 Find areas by decomposing into rectangles or completing composite                181\n                                                  figures to form rectangles.\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 183 (homework) ---\nA STORY OF UNITS                                                                                        Lesson 14 Homework 3 4\n\n\nName                                                                                                          Date\n\n1.   Find the area of each of the following figures. All figures are made up of rectangles.\n\n     a.\n\n                                 6 feet                      3 feet\n\n\n            8 feet\n\n\n                                                                             3 feet\n\n\n      b.                                     8 inches\n\n\n           5 inches\n\n\n           3 inches\n\n\n                        2 inches                            4 inches\n\n\n                          Lesson 14:                 Find areas by decomposing into rectangles or completing composite              182\n                                                     figures to form rectangles.\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 184 (homework) ---\nA STORY OF UNITS                                                                                      Lesson 14 Homework 3 4\n\n\n2.   The figure below shows a small rectangle cut out of a big rectangle.\n\n                                                                           10 feet\n\n\n                                                                            2 feet\n\n\n                        7 feet\n                                                   3 feet                                                  2 feet\n\n\n                                                                            2 feet\n\n\n     a.   Label the side lengths of the unshaded region.\n\n\n     b.   Find the area of the shaded region.\n\n\n                        Lesson 14:                 Find areas by decomposing into rectangles or completing composite              183\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 180,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                   Lesson 14 Problem Set 3 4\n\n\nName                                                                                                        Date\n\n1.   Find the area of each of the following figures. All figures are made up of rectangles.\n\n     a.\n           2 cm\n\n\n                                                                         3 cm\n\n\n                        2 cm                           3 cm\n\n\n     b.\n                                                                        1m\n\n\n                        4m\n\n\n                                                                       1m\n\n\n                                             2m               1m\n\n\n2.   The figure below shows a small rectangle in a big rectangle. Find the area of the shaded part of the\n     figure.\n\n\n                                       1m\n\n                  2m                                          1m\n          5m\n\n\n                                       2m\n\n\n                               6m\n\n\n                        Lesson 14:                 Find areas by decomposing into rectangles or completing composite              179\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 181,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                   Lesson 14 Problem Set 3 4\n\n\n3.   A paper rectangle has a length of 6 inches and a width of 8 inches. A square with a side length of 3 inches\n     was cut out of it. What is the area of the remaining paper?\n\n\n4.   Tila and Evan both have paper rectangles measuring 6 cm by 9 cm. Tila cuts a 3 cm by 4 cm rectangle out\n     of hers, and Evan cuts a 2 cm by 6 cm rectangle out of his. Tila says she has more paper left over. Evan\n     says they have the same amount. Who is correct? Show your work below.\n\n\n                        Lesson 14:                 Find areas by decomposing into rectangles or completing composite              180\n                                                   figures to form rectangles.\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 231,
+        "text": "A STORY OF UNITS                                                                                         Lesson 14 Answer Key 3 4\n\n\nLesson 14\nPattern Sheet\n              8                                            16                                            24                       32\n             40                                            48                                            56                       64\n             72                                            80                                            40                       48\n             40                                            56                                            40                       64\n             40                                            72                                            40                       80\n             48                                            40                                            48                       56\n             48                                            64                                            48                       72\n             48                                            56                                            48                       56\n             64                                            56                                            72                       56\n             64                                            48                                            64                       56\n             64                                            72                                            72                       48\n             72                                            56                                            72                       64\n             72                                            64                                            48                       72\n             56                                            72                                            48                       64\n             72                                            56                                            48                       64\n\n\nProblem Set\n1.    a. 19 sq cm                                                                3.       39 sq in\n      b. 10 sq m                                                                 4.       Evan; explanations will vary.\n2.    24 sq m\n\n\nExit Ticket\n32 sq cm\n\n\nHomework\n1.    a. 75 sq ft                                                                2.       a. 3 ft, 5 ft\n      b. 58 sq in                                                                         b. 55 sq ft\n\n\n                        Module 4:                  Multiplication and Area                                                             230\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

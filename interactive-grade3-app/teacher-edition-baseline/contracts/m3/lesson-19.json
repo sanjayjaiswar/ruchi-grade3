@@ -1,0 +1,383 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m3-l19",
+  "moduleId": "m3",
+  "lessonNumber": 19,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_3/g3_m3_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+    "teacherEditionBytes": 14065864,
+    "lessonPdfPages": {
+      "start": 238,
+      "end": 247
+    },
+    "problemSetPdfPages": [
+      243,
+      244
+    ],
+    "exitTicketPdfPages": [
+      245
+    ],
+    "homeworkPdfPages": [
+      246,
+      247
+    ],
+    "answerKeyPdfPages": [
+      314
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m3-student/workbook-page-083.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m3-answer-key/page-314.png"
+    ]
+  },
+  "objective": "Multiply by multiples of 10 using the place value chart.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.                                                                and participation in the Student\n                                                                                                               Debrief.",
+    "conceptDevelopmentText": ",\nProblem 1: Multiply by multiples of 10 using place value disks.                                                 check for understanding as students\n                                                                                                                use concrete place value disks.\n    T:   Use your disks to show 2 rows of 3 ones.                                                               Make sure students are distinguishing\n                                                                                                                between ones disks and tens disks.\n    S:   (Model 2 × 3 ones array.)\n                                                                                                                Ask students to count out, “1 ten,\n    T:   (Write 2 × 3 ones = ______ ones.) Our array shows this                                                 2 tens, 3 tens, etc.,” as they make their\n         equation, true?                                                                                        array. Alternatively, students may\n    S:   True.                                                                                                  draw the disks.\n\n\n                        Lesson 19:               Multiply by multiples of 10 using the place value chart.                                               238\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                                  Lesson 19 3 3\n\n\n     T:   How many ones do we have in total?\n     S:   6 ones.\n     T:   Say the multiplication equation in standard form.\n     S:   2 × 3 = 6.\n     T:   Use your disks to show 2 rows of 3 tens.                                                                       2 × 3 ones = 6 ones\n     S:   (Model 2 × 3 tens array.)                                                                                                2×3=6\n     T:   (Write 2 × 3 tens = ______ tens.) How many tens do we have in\n          total?\n     S:   6 tens.\n     T:   What is the value of 6 tens?\n     S:   60.\n     T:   Say the multiplication equation in standard form.                                                                2 × 3 tens = 6 tens\n     S:   2 × 30 = 60.                                                                                                             2 × 30 = 60\n Repeat the process with 3 × 4 ones and 3 × 4 tens; 2 × 6 ones and 2 × 6 tens.\n Problem 2: Multiply by multiples of 10 using a place value chart.\n     T:   (Project or draw the place value chart shown at right.)\n          Use the chart to write an equation in both unit form and                                                    tens                  ones\n          standard form.\n     S:   (Write 2 × 5 ones = 10 ones and 2 × 5 = 10.)\n     T:   How many ones do I have in total?\n     S:   10 ones.\n     T:   (Project or draw the place value chart shown at bottom\n                                                                                                                   2 × 5 ones = _______ ones\n          right.) Compare the two charts. What do you notice\n          about the number of dots?                                                                                         2 × 5 = _______\n     S:   The number of dots is exactly the same in both charts.\n           The only thing that changes is where they are placed.\n          The dots moved over to the tens place.                                                                        tens                 ones\n     T:   Because we still have a total of ten dots, what change do\n          you think we will make in our equations?\n     S:   The units will change from ones to tens.\n     T:   Write your equations now.\n     S:   (Write equations.)\n     T:   Say the full equation in standard form.                                                                   2 × 5 tens = _______ tens\n     S:   2 times 50 equals 100.\n                                                                                                                            2 × 50 = _______\n Repeat the process with 3 × 6 ones and 3 × 6 tens.\n     T:   (Write 80 × 6 = _____.) How would you use this strategy to solve a more complicated problem like\n          the one on the board?\nMP.7 S:   We can first think of the problem as 8 ones × 6, which is 48. We know that fact since we’ve been\n          practicing our sixes.  Then, all we have to do is move the answer over to the tens place, so it\n          becomes 48 tens.  So, the answer is 480.\n\n\n                         Lesson 19:               Multiply by multiples of 10 using the place value chart.                                          239\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 19 3 3\n\n\nRepeat the process with 7 × 90 and 60 × 4 to give the students an opportunity to discuss the unit form\nstrategy with more complex problems.\n\n\nApplication Problem (15 minutes)\n\nMia has 152 beads. She uses some to make bracelets.\nNow there are 80 beads. If she uses 8 beads for each bracelet,                                                             NOTES ON\nhow many bracelets does she make?                                                                                          TIMING:\n                                                                                                               The 15 minutes allotted for the\n                                                                                                               Application Problem includes 5 minutes\n                                                                                                               for the word problem and 10 minutes\n                                                                                                               for the Problem Set.\n\n\nNote: This problem reviews Lesson 18, which consisted of\nsolving two-step word problems involving more than one                                                                     NOTES ON\noperation.                                                                                                                 MULTIPLE MEANS\n                                                                                                                           OF ENGAGEMENT:",
+    "fluencyPracticeText": "the",
+    "problemSetGuidanceText": "Instead of having them complete the\n                                                                                                               Problem Set, give English language\nStudents should do their personal best to complete the Problem\n                                                                                                               learners the option of writing a\nSet within the allotted 10 minutes. For some classes, it may be\n                                                                                                               response to either of the first two\nappropriate to modify the assignment by specifying which                                                       Debrief questions. This chance to\nproblems they work on first. Some problems do not specify a                                                    reflect and prepare their response in\nmethod for solving. Students should solve these problems using                                                 English may increase their confidence\nthe RDW approach used for Application Problems.                                                                and participation in the Student\n                                                                                                               Debrief.",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Use your disks to show 2 rows of 3 ones. Make sure students are distinguishing between ones disks and tens disks."
+      },
+      {
+        "speaker": "students",
+        "text": "(Model 2 × 3 ones array.) Ask students to count out, “1 ten,"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 2 × 3 ones = ______ ones.) Our array shows this 2 tens, 3 tens, etc.,” as they make their equation, true? array. Alternatively, students may"
+      },
+      {
+        "speaker": "students",
+        "text": "True. draw the disks. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 19 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many ones do we have in total?"
+      },
+      {
+        "speaker": "students",
+        "text": "6 ones."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Say the multiplication equation in standard form."
+      },
+      {
+        "speaker": "students",
+        "text": "2 × 3 = 6."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your disks to show 2 rows of 3 tens. 2 × 3 ones = 6 ones"
+      },
+      {
+        "speaker": "students",
+        "text": "(Model 2 × 3 tens array.) 2×3=6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 2 × 3 tens = ______ tens.) How many tens do we have in total?"
+      },
+      {
+        "speaker": "students",
+        "text": "6 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the value of 6 tens?"
+      },
+      {
+        "speaker": "students",
+        "text": "60."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Say the multiplication equation in standard form. 2 × 3 tens = 6 tens"
+      },
+      {
+        "speaker": "students",
+        "text": "2 × 30 = 60. 2 × 30 = 60 Repeat the process with 3 × 4 ones and 3 × 4 tens; 2 × 6 ones and 2 × 6 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw the place value chart shown at right.) Use the chart to write an equation in both unit form and tens ones standard form."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 2 × 5 ones = 10 ones and 2 × 5 = 10.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many ones do I have in total?"
+      },
+      {
+        "speaker": "students",
+        "text": "10 ones."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw the place value chart shown at bottom 2 × 5 ones = _______ ones right.) Compare the two charts. What do you notice about the number of dots? 2 × 5 = _______"
+      },
+      {
+        "speaker": "students",
+        "text": "The number of dots is exactly the same in both charts.  The only thing that changes is where they are placed. The dots moved over to the tens place. tens ones"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Because we still have a total of ten dots, what change do you think we will make in our equations?"
+      },
+      {
+        "speaker": "students",
+        "text": "The units will change from ones to tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write your equations now."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write equations.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Say the full equation in standard form. 2 × 5 tens = _______ tens"
+      },
+      {
+        "speaker": "students",
+        "text": "2 times 50 equals 100. 2 × 50 = _______ Repeat the process with 3 × 6 ones and 3 × 6 tens."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 80 × 6 = _____.) How would you use this strategy to solve a more complicated problem like the one on the board? MP.7 S: We can first think of the problem as 8 ones × 6, which is 48. We know that fact since we’ve been practicing our sixes.  Then, all we have to do is move the answer over to the tens place, so it becomes 48 tens.  So, the answer is 480. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 19 3 3 Repeat the process with 7 × 90 and 60 × 4 to give the students an opportunity to discuss the unit form strategy with more complex problems. Application Problem (15 minutes) Mia has 152 beads. She uses some to make bracelets. Now there are 80 beads. If she uses 8 beads for each bracelet, NOTES ON how many bracelets does she make? TIMING: The 15 minutes allotted for the Application Problem includes 5 minutes for the word problem and 10 minutes for the Problem Set. solving two-step word problems involving more than one NOTES ON operation. MULTIPLE MEANS OF ENGAGEMENT:"
+      }
+    ],
+    "teacherPrompts": [
+      "Use your disks to show 2 rows of 3 ones. Make sure students are distinguishing between ones disks and tens disks.",
+      "(Write 2 × 3 ones = ______ ones.) Our array shows this 2 tens, 3 tens, etc.,” as they make their equation, true? array. Alternatively, students may",
+      "How many ones do we have in total?",
+      "Say the multiplication equation in standard form.",
+      "Use your disks to show 2 rows of 3 tens. 2 × 3 ones = 6 ones",
+      "(Write 2 × 3 tens = ______ tens.) How many tens do we have in total?",
+      "What is the value of 6 tens?",
+      "Say the multiplication equation in standard form. 2 × 3 tens = 6 tens",
+      "(Project or draw the place value chart shown at right.) Use the chart to write an equation in both unit form and tens ones standard form.",
+      "How many ones do I have in total?",
+      "(Project or draw the place value chart shown at bottom 2 × 5 ones = _______ ones right.) Compare the two charts. What do you notice about the number of dots? 2 × 5 = _______",
+      "Because we still have a total of ten dots, what change do you think we will make in our equations?",
+      "Write your equations now.",
+      "Say the full equation in standard form. 2 × 5 tens = _______ tens",
+      "(Write 80 × 6 = _____.) How would you use this strategy to solve a more complicated problem like the one on the board? MP.7 S: We can first think of the problem as 8 ones × 6, which is 48. We know that fact since we’ve been practicing our sixes.  Then, all we have to do is move the answer over to the tens place, so it becomes 48 tens.  So, the answer is 480. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 19 3 3 Repeat the process with 7 × 90 and 60 × 4 to give the students an opportunity to discuss the unit form strategy with more complex problems. Application Problem (15 minutes) Mia has 152 beads. She uses some to make bracelets. Now there are 80 beads. If she uses 8 beads for each bracelet, NOTES ON how many bracelets does she make? TIMING: The 15 minutes allotted for the Application Problem includes 5 minutes for the word problem and 10 minutes for the Problem Set. solving two-step word problems involving more than one NOTES ON operation. MULTIPLE MEANS OF ENGAGEMENT:"
+    ],
+    "debriefPrompt": "How do the disks in Problem 1 show the strategy we learned today?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Use the disks to fill in the blanks in the equations. a. b. 4 × 3 ones = ____ ones 4 × 3 tens = ____ tens 4 × 3 = ____ 4 × 30 = ____",
+        "equations": [
+          "4 × 3",
+          "4 × 3 = ____",
+          "4 × 30 = ____"
+        ]
+      },
+      {
+        "number": 2,
+        "prompt": "Use the chart to complete the blanks in the equations. tens ones tens ones a. 2 × 4 ones = ____ ones b. 2 × 4 tens = ____ tens 2 × 4 = ____ 2 × 40 = ____ tens ones tens ones c. 3 × 5 ones = ____ ones d. 3 × 5 tens = ____ tens 3 × 5 = ____ 3 × 50 = ____ tens ones tens ones e. 4 × 5 ones = ____ ones f. 4 × 5 tens = ____ tens 4 × 5 = ____ 4 × 50 = ____",
+        "equations": [
+          "2 × 4",
+          "2 × 4 = ____",
+          "2 × 40 = ____",
+          "3 × 5"
+        ]
+      },
+      {
+        "number": 3,
+        "prompt": "Fill in the blank to make the equation true. a. ____ = 7 × 2 b. ____ tens = 7 tens × 2 c. ____ = 8 × 3 d. ____ tens = 8 tens × 3 e. ____ = 60 × 5 f. ____ = 4 × 80 g. 7 × 40 = ____ h. 50 × 8 = ____",
+        "equations": [
+          "____ = 7",
+          "____ = 8",
+          "____ = 60",
+          "____ = 4"
+        ]
+      },
+      {
+        "number": 4,
+        "prompt": "A bus can carry 40 passengers. How many passengers can 6 buses carry? Model with a tape diagram.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                     Lesson 19 Problem Set 3 3\n\n\nName                                                                                                        Date\n\n1. Use the disks to fill in the blanks in the equations.\n\n    a.                                                                      b.\n\n\n         4 × 3 ones = _______ ones                                                    4 × 3 tens = _______ tens\n               4 × 3 = _______                                                               4 × 30 = _______\n\n\n2. Use the chart to complete the blanks in the equations.\n\n                 tens                     ones                                                                   tens             ones\n\n\n    a. 2 × 4 ones = _______ ones                                                                    b. 2 × 4 tens = _______ tens\n\n              2 × 4 = _______                                                                                     2 × 40 = _______\n\n\n                 tens                     ones                                                                   tens             ones\n\n\n    c. 3 × 5 ones = _______ ones                                                                     d. 3 × 5 tens = _______ tens\n              3 × 5 = _______                                                                                     3 × 50 = _______\n\n\n                        Lesson 19:               Multiply by multiples of 10 using the place value chart.                                242\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                      Lesson 19 Problem Set 3 3\n\n\n                 tens                     ones                                                                   tens             ones\n\n\n    e. 4 × 5 ones = _______ ones                                                                    f.     4 × 5 tens = _______ tens\n             4 × 5 = _______                                                                                      4 × 50 = _______\n\n\n3. Fill in the blank to make the equation true.\n\n\n     a.      _________ = 7 × 2                                                    b.         ______ tens = 7 tens × 2\n\n\n     c.      _________ = 8 × 3                                                    d.         ______ tens = 8 tens × 3\n\n\n     e.      _________ = 60 × 5                                                   f.         _________ = 4 × 80\n\n\n     g.      7 × 40 = _________                                                   h.         50 × 8 = _________\n\n\n4. A bus can carry 40 passengers. How many passengers can 6 buses carry? Model with a tape diagram.\n\n\n                        Lesson 19:               Multiply by multiples of 10 using the place value chart.                                243\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015",
+    "answerKeyProblemSetText": "1.    a. 12; 12                                                                  3.        a. 14\n      b. 12; 120                                                                           b. 14\n2.    a. 8; 8                                                                              c. 24\n      b. 8; 80                                                                             d. 24\n      c. 15; 15                                                                            e. 300\n      d. 15; 150                                                                           f.     320\n      e. 20; 20                                                                            g. 280\n      f.   20; 200                                                                         h. 400\n                                                                                 4.        240; tape diagram models equation.",
+    "answerKeyText": "A STORY OF UNITS                                                                                       Lesson 19 Answer Key 3 3\n\n\nLesson 19\nProblem Set\n1.    a. 12; 12                                                                  3.        a. 14\n      b. 12; 120                                                                           b. 14\n2.    a. 8; 8                                                                              c. 24\n      b. 8; 80                                                                             d. 24\n      c. 15; 15                                                                            e. 300\n      d. 15; 150                                                                           f.     320\n      e. 20; 20                                                                            g. 280\n      f.   20; 200                                                                         h. 400\n                                                                                 4.        240; tape diagram models equation.\n\n\nExit Ticket\n1.    30, 30; 30, 300\n2.    a. 80\n      b. 240\n\n\nHomework\n1.    a. 9; 9                                                                    3.        Products matched to corresponding solutions\n      b. 9; 90                                                                   4.        240; tape diagram models equation.\n2.    a. 10; 10\n      b. 10; 100\n      c. 25; 25\n      d. 25; 250\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              313\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "tape-diagram",
+      "measurement-scale",
+      "place-value",
+      "table-or-chart",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "T: Use your disks to show 2 rows of 3 ones. Make sure students are distinguishing",
+        "S: (Model 2 × 3 ones array.)",
+        "T: (Write 2 × 3 ones = ______ ones.) Our array shows this 2 tens, 3 tens, etc.,” as they make their",
+        "equation, true? array. Alternatively, students may",
+        "T: Use your disks to show 2 rows of 3 tens. 2 × 3 ones = 6 ones",
+        "S: (Model 2 × 3 tens array.) 2×3=6"
+      ],
+      "tape-diagram": [
+        "4. A bus can carry 40 passengers. How many passengers can 6 buses carry? Model with a tape diagram."
+      ],
+      "measurement-scale": [
+        "4. A bus can carry 40 passengers. How many passengers can 6 buses carry? Model with a tape diagram."
+      ],
+      "place-value": [
+        "Multiply by multiples of 10 using the place value chart.",
+        "Problem 1: Multiply by multiples of 10 using place value disks. check for understanding as students",
+        "use concrete place value disks.",
+        "Lesson 19: Multiply by multiples of 10 using the place value chart. 238",
+        "Problem 2: Multiply by multiples of 10 using a place value chart.",
+        "T: (Project or draw the place value chart shown at right.)",
+        "T: (Project or draw the place value chart shown at bottom",
+        "Lesson 19: Multiply by multiples of 10 using the place value chart. 239"
+      ],
+      "table-or-chart": [
+        "Multiply by multiples of 10 using the place value chart.",
+        "Lesson 19: Multiply by multiples of 10 using the place value chart. 238",
+        "Problem 2: Multiply by multiples of 10 using a place value chart.",
+        "T: (Project or draw the place value chart shown at right.)",
+        "Use the chart to write an equation in both unit form and tens ones",
+        "T: (Project or draw the place value chart shown at bottom",
+        "Lesson 19: Multiply by multiples of 10 using the place value chart. 239",
+        "2. Use the chart to complete the blanks in the equations."
+      ],
+      "money-model": [
+        " The only thing that changes is where they are placed.",
+        "T: Because we still have a total of ten dots, what change do",
+        "S: The units will change from ones to tens."
+      ],
+      "picture-or-drawing": [
+        "S: True. draw the disks.",
+        "T: (Project or draw the place value chart shown at right.)",
+        "T: (Project or draw the place value chart shown at bottom",
+        "4. A bus can carry 40 passengers. How many passengers can 6 buses carry? Model with a tape diagram."
+      ]
+    },
+    "sourceIllustrationRequired": true,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Use your disks to show 2 rows of 3 ones. Make sure students are distinguishing between ones disks and tens disks."
+      },
+      {
+        "speaker": "students",
+        "text": "(Model 2 × 3 ones array.) Ask students to count out, “1 ten,"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 2 × 3 ones = ______ ones.) Our array shows this 2 tens, 3 tens, etc.,” as they make their equation, true? array. Alternatively, students may"
+      },
+      {
+        "speaker": "students",
+        "text": "True. draw the disks. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 19 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your disks to show 2 rows of 3 tens. 2 × 3 ones = 6 ones"
+      },
+      {
+        "speaker": "students",
+        "text": "(Model 2 × 3 tens array.) 2×3=6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 2 × 3 tens = ______ tens.) How many tens do we have in total?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw the place value chart shown at right.) Use the chart to write an equation in both unit form and tens ones standard form."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 2 × 5 ones = 10 ones and 2 × 5 = 10.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw the place value chart shown at bottom 2 × 5 ones = _______ ones right.) Compare the two charts. What do you notice about the number of dots? 2 × 5 = _______"
+      },
+      {
+        "speaker": "students",
+        "text": "The number of dots is exactly the same in both charts.  The only thing that changes is where they are placed. The dots moved over to the tens place. tens ones"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write your equations now."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write equations.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 80 × 6 = _____.) How would you use this strategy to solve a more complicated problem like the one on the board? MP.7 S: We can first think of the problem as 8 ones × 6, which is 48. We know that fact since we’ve been practicing our sixes.  Then, all we have to do is move the answer over to the tens place, so it becomes 48 tens.  So, the answer is 480. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 19 3 3 Repeat the process with 7 × 90 and 60 × 4 to give the students an opportunity to discuss the unit form strategy with more complex problems. Application Problem (15 minutes) Mia has 152 beads. She uses some to make bracelets. Now there are 80 beads. If she uses 8 beads for each bracelet, NOTES ON how many bracelets does she make? TIMING: The 15 minutes allotted for the Application Problem includes 5 minutes for the word problem and 10 minutes for the Problem Set. solving two-step word problems involving more than one NOTES ON operation. MULTIPLE MEANS OF ENGAGEMENT:"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 238 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 19 3 3\n\n\nLesson 19\nObjective: Multiply by multiples of 10 using the place value chart.\n\nSuggested Lesson Structure\n\n Fluency Practice                 (15 minutes)\n Concept Development              (20 minutes)\n Application Problem              (15 minutes)\n Student Debrief                  (10 minutes)\n                                                                                                                           NOTES ON\n   Total Time                      (60 minutes)\n                                                                                                                           TIMING:\n                                                                                                               The Application Problem comes after\nFluency Practice (15 minutes)                                                                                  the Concept Development in this\n                                                                                                               lesson. The 15 minutes allotted for the\n Group Counting 3.OA.1                                           (4 minutes)                                  Application Problem includes 5 minutes\n                                                                                                               for the Application Problem and\n Multiply with 10 3.NBT.3                                        (3 minutes)\n                                                                                                               10 minutes for the Problem Set.\n Multiply by Different Units 3.NBT.3                             (4 minutes)\n Exchange Place Value Disks 3.NBT.3                              (4 minutes)\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. These counts review the\nmultiplication taught previously in the module. Direct students to count forward and backward, occasionally\nchanging the direction of the count:\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\nMultiply with 10 (3 minutes)\nNote: This fluency activity prepares students for this lesson.\n    T:   I’ll say a multiplication problem. You say the whole equation. 10 × 1.\n    S:   10 × 1 = 10.\nContinue with the following possible sequence: 10 × 2, 10 × 3, 10 × 8, and 10 × 6.\n    T:   I’ll say a multiple of 10. You say the multiplication fact starting with 10. 20.\n    S:   10 × 2 = 20.\nContinue with the following possible sequence: 30, 40, 90, 70, and 50.\n\n\n                        Lesson 19:               Multiply by multiples of 10 using the place value chart.                                            237\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 239 (concept-development) ---\nA STORY OF UNITS                                                                                                               Lesson 19 3 3\n\n\nMultiply by Different Units (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity prepares students for this lesson.\n    T:   (Write 2 × 3 = ___.) Say the multiplication equation in unit form.\n    S:   2 × 3 ones = 6 ones.\n    T:   (Write 2 × 3 cats = ___.) On your personal white board, write the multiplication equation.\nContinue with the following possible sequence: 3 × 4, 3 × 4 dogs; 4 × 5, 4 × 5 pencils; 5 × 6, 5 × 6 books;\n6 × 7, 6 × 7 cars; 7 × 8, 7 × 8 turtles; 8 × 9, 8 × 9 chairs; and 9 × 7, 9 × 7 flowers.\n\nExchange Place Value Disks (4 minutes)\nMaterials: (S) Place value disks\n\nNote: This fluency activity prepares students for this lesson.\n    T:   Make an array showing 3 by 2 ones. As a multiplication equation, say how many ones you have.\n    S:   3 × 2 ones = 6 ones.\nContinue with the following possible sequence: 3 by 3 ones, 4 by 2 ones, and 5 by 2 ones.\n    T:   10 ones can be exchanged for 1 of what unit?\n    S:   1 ten.\n    T:   Exchange 10 ones for 1 ten.\n    T:   Make an array showing 4 by 5 ones.\n    T:   Say how many ones you have as a multiplication equation.\n    S:   4 × 5 ones = 20 ones.\n    T:   Say the multiplication equation again; this time, say the answer in units of 10.\n    S:   4 × 5 ones = 2 tens.\n    T:   Exchange 20 ones for 2 tens.\n                                                                                                                           NOTES ON\nConcept Development (20 minutes)                                                                                           MULTIPLE MEANS\n                                                                                                                           OF ACTION AND\n                                                                                                                           EXPRESSION:\nMaterials: (T/S) Place value disks (S) Personal white board\n                                                                                                                During the Concept Development,\nProblem 1: Multiply by multiples of 10 using place value disks.                                                 check for understanding as students\n                                                                                                                use concrete place value disks.\n    T:   Use your disks to show 2 rows of 3 ones.                                                               Make sure students are distinguishing\n                                                                                                                between ones disks and tens disks.\n    S:   (Model 2 × 3 ones array.)\n                                                                                                                Ask students to count out, “1 ten,\n    T:   (Write 2 × 3 ones = ______ ones.) Our array shows this                                                 2 tens, 3 tens, etc.,” as they make their\n         equation, true?                                                                                        array. Alternatively, students may\n    S:   True.                                                                                                  draw the disks.\n\n\n                        Lesson 19:               Multiply by multiples of 10 using the place value chart.                                               238\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 240 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                                  Lesson 19 3 3\n\n\n     T:   How many ones do we have in total?\n     S:   6 ones.\n     T:   Say the multiplication equation in standard form.\n     S:   2 × 3 = 6.\n     T:   Use your disks to show 2 rows of 3 tens.                                                                       2 × 3 ones = 6 ones\n     S:   (Model 2 × 3 tens array.)                                                                                                2×3=6\n     T:   (Write 2 × 3 tens = ______ tens.) How many tens do we have in\n          total?\n     S:   6 tens.\n     T:   What is the value of 6 tens?\n     S:   60.\n     T:   Say the multiplication equation in standard form.                                                                2 × 3 tens = 6 tens\n     S:   2 × 30 = 60.                                                                                                             2 × 30 = 60\n Repeat the process with 3 × 4 ones and 3 × 4 tens; 2 × 6 ones and 2 × 6 tens.\n Problem 2: Multiply by multiples of 10 using a place value chart.\n     T:   (Project or draw the place value chart shown at right.)\n          Use the chart to write an equation in both unit form and                                                    tens                  ones\n          standard form.\n     S:   (Write 2 × 5 ones = 10 ones and 2 × 5 = 10.)\n     T:   How many ones do I have in total?\n     S:   10 ones.\n     T:   (Project or draw the place value chart shown at bottom\n                                                                                                                   2 × 5 ones = _______ ones\n          right.) Compare the two charts. What do you notice\n          about the number of dots?                                                                                         2 × 5 = _______\n     S:   The number of dots is exactly the same in both charts.\n           The only thing that changes is where they are placed.\n          The dots moved over to the tens place.                                                                        tens                 ones\n     T:   Because we still have a total of ten dots, what change do\n          you think we will make in our equations?\n     S:   The units will change from ones to tens.\n     T:   Write your equations now.\n     S:   (Write equations.)\n     T:   Say the full equation in standard form.                                                                   2 × 5 tens = _______ tens\n     S:   2 times 50 equals 100.\n                                                                                                                            2 × 50 = _______\n Repeat the process with 3 × 6 ones and 3 × 6 tens.\n     T:   (Write 80 × 6 = _____.) How would you use this strategy to solve a more complicated problem like\n          the one on the board?\nMP.7 S:   We can first think of the problem as 8 ones × 6, which is 48. We know that fact since we’ve been\n          practicing our sixes.  Then, all we have to do is move the answer over to the tens place, so it\n          becomes 48 tens.  So, the answer is 480.\n\n\n                         Lesson 19:               Multiply by multiples of 10 using the place value chart.                                          239\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 241 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 19 3 3\n\n\nRepeat the process with 7 × 90 and 60 × 4 to give the students an opportunity to discuss the unit form\nstrategy with more complex problems.\n\n\nApplication Problem (15 minutes)\n\nMia has 152 beads. She uses some to make bracelets.\nNow there are 80 beads. If she uses 8 beads for each bracelet,                                                             NOTES ON\nhow many bracelets does she make?                                                                                          TIMING:\n                                                                                                               The 15 minutes allotted for the\n                                                                                                               Application Problem includes 5 minutes\n                                                                                                               for the word problem and 10 minutes\n                                                                                                               for the Problem Set.\n\n\nNote: This problem reviews Lesson 18, which consisted of\nsolving two-step word problems involving more than one                                                                     NOTES ON\noperation.                                                                                                                 MULTIPLE MEANS\n                                                                                                                           OF ENGAGEMENT:\nProblem Set (10 minutes)                                                                                       Instead of having them complete the\n                                                                                                               Problem Set, give English language\nStudents should do their personal best to complete the Problem\n                                                                                                               learners the option of writing a\nSet within the allotted 10 minutes. For some classes, it may be\n                                                                                                               response to either of the first two\nappropriate to modify the assignment by specifying which                                                       Debrief questions. This chance to\nproblems they work on first. Some problems do not specify a                                                    reflect and prepare their response in\nmethod for solving. Students should solve these problems using                                                 English may increase their confidence\nthe RDW approach used for Application Problems.                                                                and participation in the Student\n                                                                                                               Debrief.\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Multiply by multiples of 10 using the place value chart.\nThe Student Debrief is intended to invite reflection and active processing of the total lesson experience.\nInvite students to review their solutions for the Problem Set. They should check work by comparing answers\nwith a partner before going over answers as a class. Look for misconceptions or misunderstandings that can\nbe addressed in the Debrief. Guide students in a conversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to lead the discussion.\n        How do the disks in Problem 1 show the strategy we learned today?\n        What is the relationship between the charts in the left column and the charts in the right column in\n         Problem 2? How did the left column help you solve the problems in the right column?\n        How does knowing your multiplication facts help you easily multiply by multiples of 10?\n\n\n                        Lesson 19:               Multiply by multiples of 10 using the place value chart.                                              240\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 242 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 19 3 3\n\n\n       Now that we know a strategy for multiplying with\n        multiples of 10, how would we use the same\n        process for multiplying with multiples of 100?\n        What would be the same? (The multiplication\n        facts.) What would change? (The units.)\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be\nread aloud to the students.\n\n\n                       Lesson 19:               Multiply by multiples of 10 using the place value chart.                                    241\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 243 (problem-set) ---\nA STORY OF UNITS                                                                                     Lesson 19 Problem Set 3 3\n\n\nName                                                                                                        Date\n\n1. Use the disks to fill in the blanks in the equations.\n\n    a.                                                                      b.\n\n\n         4 × 3 ones = _______ ones                                                    4 × 3 tens = _______ tens\n               4 × 3 = _______                                                               4 × 30 = _______\n\n\n2. Use the chart to complete the blanks in the equations.\n\n                 tens                     ones                                                                   tens             ones\n\n\n    a. 2 × 4 ones = _______ ones                                                                    b. 2 × 4 tens = _______ tens\n\n              2 × 4 = _______                                                                                     2 × 40 = _______\n\n\n                 tens                     ones                                                                   tens             ones\n\n\n    c. 3 × 5 ones = _______ ones                                                                     d. 3 × 5 tens = _______ tens\n              3 × 5 = _______                                                                                     3 × 50 = _______\n\n\n                        Lesson 19:               Multiply by multiples of 10 using the place value chart.                                242\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 244 (problem-set) ---\nA STORY OF UNITS                                                                                      Lesson 19 Problem Set 3 3\n\n\n                 tens                     ones                                                                   tens             ones\n\n\n    e. 4 × 5 ones = _______ ones                                                                    f.     4 × 5 tens = _______ tens\n             4 × 5 = _______                                                                                      4 × 50 = _______\n\n\n3. Fill in the blank to make the equation true.\n\n\n     a.      _________ = 7 × 2                                                    b.         ______ tens = 7 tens × 2\n\n\n     c.      _________ = 8 × 3                                                    d.         ______ tens = 8 tens × 3\n\n\n     e.      _________ = 60 × 5                                                   f.         _________ = 4 × 80\n\n\n     g.      7 × 40 = _________                                                   h.         50 × 8 = _________\n\n\n4. A bus can carry 40 passengers. How many passengers can 6 buses carry? Model with a tape diagram.\n\n\n                        Lesson 19:               Multiply by multiples of 10 using the place value chart.                                243\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 245 (exit-ticket) ---\nA STORY OF UNITS                                                                                           Lesson 19 Exit Ticket 3 3\n\n\nName                                                                                                         Date\n\n1. Use the chart to complete the blanks in the equations.\n\n\n        tens              ones                                                          tens                      ones\n\n\n   6 × 5 ones = ______ ones                                             6 × 5 tens = ______ tens\n\n        6 × 5 = ______                                                       6 × 50 = ______\n\n\n2. A small plane has 20 rows of seats. Each row has 4 seats.\n\n   a. Find the total number of seats on the plane.\n\n\n   b. How many seats are on 3 small planes?\n\n\n                         Lesson 19:               Multiply by multiples of 10 using the place value chart.                           244\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 246 (homework) ---\nA STORY OF UNITS                                                                                       Lesson 19 Homework 3 3\n\n\nName                                                                                                       Date\n\n1. Use the disks to complete the blanks in the equations.\n\n\n    a.                                                                                  b.\n\n\n          3 × 3 ones = _______ ones                                                                  3 × 3 tens = _______ tens\n               3 × 3 = _______                                                                               30 × 3 = _______\n\n\n2. Use the chart to complete the blanks in the equations.\n\n             tens                  ones                                                                         tens             ones\n\n\n    a. 2 × 5 ones = _______ ones                                                               b. 2 × 5 tens = _______ tens\n             2 × 5 = _______                                                                                2 × 50 = _______\n\n\n            tens                ones                                                                            tens             ones\n\n\n    c. 5 × 5 ones = _______ ones                                                               d. 5 × 5 tens = _______ tens\n             5 × 5 = _______                                                                                 5 × 50 = _______\n\n\n                       Lesson 19:               Multiply by multiples of 10 using the place value chart.                                245\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 247 (homework) ---\nA STORY OF UNITS                                                                                         Lesson 19 Homework 3 3\n\n\n3. Match.\n\n\n               6×2                                                                                                                 120\n\n\n            6 tens × 2                                                                                                             21\n\n\n               7×3                                                                                                                 12\n\n\n            7 tens × 3                                                                                                             270\n\n\n             70 × 5                                                                                                                210\n\n\n              3 × 90                                                                                                               350\n\n\n4. Each classroom has 30 desks. What is the total number of desks in 8 classrooms? Model with a tape\n   diagram.\n\n\n                         Lesson 19:               Multiply by multiples of 10 using the place value chart.                               246\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015",
+    "problemSetPages": [
+      {
+        "pdfPage": 243,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                     Lesson 19 Problem Set 3 3\n\n\nName                                                                                                        Date\n\n1. Use the disks to fill in the blanks in the equations.\n\n    a.                                                                      b.\n\n\n         4 × 3 ones = _______ ones                                                    4 × 3 tens = _______ tens\n               4 × 3 = _______                                                               4 × 30 = _______\n\n\n2. Use the chart to complete the blanks in the equations.\n\n                 tens                     ones                                                                   tens             ones\n\n\n    a. 2 × 4 ones = _______ ones                                                                    b. 2 × 4 tens = _______ tens\n\n              2 × 4 = _______                                                                                     2 × 40 = _______\n\n\n                 tens                     ones                                                                   tens             ones\n\n\n    c. 3 × 5 ones = _______ ones                                                                     d. 3 × 5 tens = _______ tens\n              3 × 5 = _______                                                                                     3 × 50 = _______\n\n\n                        Lesson 19:               Multiply by multiples of 10 using the place value chart.                                242\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 244,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                      Lesson 19 Problem Set 3 3\n\n\n                 tens                     ones                                                                   tens             ones\n\n\n    e. 4 × 5 ones = _______ ones                                                                    f.     4 × 5 tens = _______ tens\n             4 × 5 = _______                                                                                      4 × 50 = _______\n\n\n3. Fill in the blank to make the equation true.\n\n\n     a.      _________ = 7 × 2                                                    b.         ______ tens = 7 tens × 2\n\n\n     c.      _________ = 8 × 3                                                    d.         ______ tens = 8 tens × 3\n\n\n     e.      _________ = 60 × 5                                                   f.         _________ = 4 × 80\n\n\n     g.      7 × 40 = _________                                                   h.         50 × 8 = _________\n\n\n4. A bus can carry 40 passengers. How many passengers can 6 buses carry? Model with a tape diagram.\n\n\n                        Lesson 19:               Multiply by multiples of 10 using the place value chart.                                243\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 314,
+        "text": "A STORY OF UNITS                                                                                       Lesson 19 Answer Key 3 3\n\n\nLesson 19\nProblem Set\n1.    a. 12; 12                                                                  3.        a. 14\n      b. 12; 120                                                                           b. 14\n2.    a. 8; 8                                                                              c. 24\n      b. 8; 80                                                                             d. 24\n      c. 15; 15                                                                            e. 300\n      d. 15; 150                                                                           f.     320\n      e. 20; 20                                                                            g. 280\n      f.   20; 200                                                                         h. 400\n                                                                                 4.        240; tape diagram models equation.\n\n\nExit Ticket\n1.    30, 30; 30, 300\n2.    a. 80\n      b. 240\n\n\nHomework\n1.    a. 9; 9                                                                    3.        Products matched to corresponding solutions\n      b. 9; 90                                                                   4.        240; tape diagram models equation.\n2.    a. 10; 10\n      b. 10; 100\n      c. 25; 25\n      d. 25; 250\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              313\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015"
+      }
+    ]
+  }
+}

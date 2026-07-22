@@ -123,14 +123,22 @@
           <section class="m2-topicb-lab m3-facts-lab" *ngIf="module.id === 'm3'" aria-label="Module 3 fact strategy lab">
             <div class="m2-l6-lab-copy">
               <span class="eyebrow">Teacher Edition strategy path</span>
-              <h3 *ngIf="lesson.lessonNumber <= 3">Known facts make harder facts easier.</h3>
-              <h3 *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 7">Count, decompose, then use related multiplication and division facts.</h3>
+              <h3 *ngIf="lesson.lessonNumber === 1">Turn one known fact to find its commutative partner.</h3>
+              <h3 *ngIf="lesson.lessonNumber === 2">Build a six-fact from five known units and one more.</h3>
+              <h3 *ngIf="lesson.lessonNumber === 3">A letter names the unknown quantity.</h3>
+              <h3 *ngIf="lesson.lessonNumber === 4">Count by six and bridge the next ten.</h3>
+              <h3 *ngIf="lesson.lessonNumber === 5">Count by seven and bridge the next ten.</h3>
+              <h3 *ngIf="lesson.lessonNumber >= 6 && lesson.lessonNumber <= 7">Count, decompose, then use related multiplication and division facts.</h3>
               <h3 *ngIf="lesson.lessonNumber >= 8 && lesson.lessonNumber <= 11">Parentheses and properties show which fact is being used.</h3>
               <h3 *ngIf="lesson.lessonNumber >= 12 && lesson.lessonNumber <= 14">Nines facts come from tens minus one group and digit patterns.</h3>
               <h3 *ngIf="lesson.lessonNumber >= 15 && lesson.lessonNumber <= 18">Use the model to locate the unknown, then solve and check.</h3>
               <h3 *ngIf="lesson.lessonNumber >= 19">Ones facts become tens facts by changing the unit.</h3>
-              <p *ngIf="lesson.lessonNumber <= 3">Students turn, split, or name the unknown so a new 6, 7, 8, or 9 fact connects to a fact they already know.</p>
-              <p *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 7">Students count by 6s or 7s, break facts into known parts, and read division as a related multiplication fact.</p>
+              <p *ngIf="lesson.lessonNumber === 1">Geri's 3 jugs of 6 liters show 3 × 6 = 18. Turn the same model to see 6 × 3 = 18, then reflect known facts across the multiplication-chart diagonal.</p>
+              <p *ngIf="lesson.lessonNumber === 2">Start with 5 × n, add one more unit n, then turn 6 × n to n × 6 with the commutative property.</p>
+              <p *ngIf="lesson.lessonNumber === 3">Place a letter where the unknown belongs, solve with a familiar multiplication or division fact, and label the quantity.</p>
+              <p *ngIf="lesson.lessonNumber === 4">Build 6, 12, 18, …, 60. Decompose an added 6 to make the next ten, then name the related multiplication and division facts.</p>
+              <p *ngIf="lesson.lessonNumber === 5">Build 7, 14, 21, …, 70. Use a number bond when an added 7 crosses a ten, then name the related fact pair.</p>
+              <p *ngIf="lesson.lessonNumber >= 6 && lesson.lessonNumber <= 7">Students count by 6s or 7s, break facts into known parts, and read division as a related multiplication fact.</p>
               <p *ngIf="lesson.lessonNumber >= 8 && lesson.lessonNumber <= 11">Students use parentheses, associative grouping, distributive arrays, and tape diagrams so the equation matches the story.</p>
               <p *ngIf="lesson.lessonNumber >= 12 && lesson.lessonNumber <= 14">Students solve 9s by thinking 10 groups minus 1 group, then use digit patterns to check the product.</p>
               <p *ngIf="lesson.lessonNumber >= 15 && lesson.lessonNumber <= 18">Students write a letter for the unknown, draw the relationship, solve one or two steps, and explain reasonableness.</p>
@@ -147,15 +155,35 @@
             </div>
 
             <div class="m2-topicb-card-grid" aria-label="Module 3 lesson examples">
-              <article *ngIf="lesson.lessonNumber <= 3"><strong>4 x 6</strong><span>turn the array</span><b>6 x 4 = 24</b></article>
-              <article *ngIf="lesson.lessonNumber <= 3"><strong>5 x 7 + 7</strong><span>one more group</span><b>6 x 7 = 42</b></article>
-              <article *ngIf="lesson.lessonNumber <= 3"><strong>n</strong><span>letter for unknown</span><b>4 x n = 28</b></article>
-              <article *ngIf="lesson.lessonNumber <= 3"><strong>28 / 4</strong><span>related fact</span><b>n = 7</b></article>
+              <article *ngIf="lesson.lessonNumber === 1"><strong>3 × 6</strong><span>3 jugs of 6 liters</span><b>18 liters</b></article>
+              <article *ngIf="lesson.lessonNumber === 1"><strong>6 × 3</strong><span>turn the same model</span><b>18 liters</b></article>
+              <article *ngIf="lesson.lessonNumber === 1"><strong>3 × 6 = 6 × 3</strong><span>factors reverse</span><b>product stays 18</b></article>
+              <article *ngIf="lesson.lessonNumber === 1"><strong>100 → 84 → 16</strong><span>chart facts</span><b>reflect across the diagonal</b></article>
 
-              <article *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 7"><strong>6, 12, 18</strong><span>count by sixes</span><b>6 x 7 = 42</b></article>
-              <article *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 7"><strong>7, 14, 21</strong><span>count by sevens</span><b>7 x 8 = 56</b></article>
-              <article *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 7"><strong>5 + 2</strong><span>break groups</span><b>7 x 6</b></article>
-              <article *ngIf="lesson.lessonNumber >= 4 && lesson.lessonNumber <= 7"><strong>42 / 7</strong><span>division fact</span><b>6 groups</b></article>
+              <article *ngIf="lesson.lessonNumber === 2"><strong>5 × 7</strong><span>known five-fact</span><b>35</b></article>
+              <article *ngIf="lesson.lessonNumber === 2"><strong>35 + 7</strong><span>one more seven</span><b>42</b></article>
+              <article *ngIf="lesson.lessonNumber === 2"><strong>6 × 7</strong><span>six sevens</span><b>42</b></article>
+              <article *ngIf="lesson.lessonNumber === 2"><strong>7 × 6</strong><span>commutative partner</span><b>42</b></article>
+
+              <article *ngIf="lesson.lessonNumber === 3"><strong>5 × 4 = e</strong><span>unknown product</span><b>e = 20</b></article>
+              <article *ngIf="lesson.lessonNumber === 3"><strong>3 × 8 = m</strong><span>total shirt cost</span><b>m = $24</b></article>
+              <article *ngIf="lesson.lessonNumber === 3"><strong>28 ÷ 4 = n</strong><span>unknown loaves</span><b>n = 7</b></article>
+              <article *ngIf="lesson.lessonNumber === 3"><strong>s + (s + 12)</strong><span>two games total 32</span><b>10 min and 22 min</b></article>
+
+              <article *ngIf="lesson.lessonNumber === 4"><strong>18 + 6</strong><span>break 6 as 2 + 4</span><b>24</b></article>
+              <article *ngIf="lesson.lessonNumber === 4"><strong>6, 12, 18, 24</strong><span>count by six</span><b>make the next ten</b></article>
+              <article *ngIf="lesson.lessonNumber === 4"><strong>7 × 6</strong><span>seven sixes</span><b>42</b></article>
+              <article *ngIf="lesson.lessonNumber === 4"><strong>42 ÷ 6</strong><span>related division fact</span><b>7</b></article>
+
+              <article *ngIf="lesson.lessonNumber === 5"><strong>14 + 7</strong><span>break 7 as 6 + 1</span><b>21</b></article>
+              <article *ngIf="lesson.lessonNumber === 5"><strong>7, 14, 21, 28</strong><span>count by seven</span><b>bridge each ten</b></article>
+              <article *ngIf="lesson.lessonNumber === 5"><strong>6 × 7</strong><span>six sevens</span><b>42</b></article>
+              <article *ngIf="lesson.lessonNumber === 5"><strong>42 ÷ 7</strong><span>related division fact</span><b>6</b></article>
+
+              <article *ngIf="lesson.lessonNumber >= 6 && lesson.lessonNumber <= 7"><strong>6, 12, 18</strong><span>count by sixes</span><b>6 x 7 = 42</b></article>
+              <article *ngIf="lesson.lessonNumber >= 6 && lesson.lessonNumber <= 7"><strong>7, 14, 21</strong><span>count by sevens</span><b>7 x 8 = 56</b></article>
+              <article *ngIf="lesson.lessonNumber >= 6 && lesson.lessonNumber <= 7"><strong>5 + 2</strong><span>break groups</span><b>7 x 6</b></article>
+              <article *ngIf="lesson.lessonNumber >= 6 && lesson.lessonNumber <= 7"><strong>42 / 7</strong><span>division fact</span><b>6 groups</b></article>
 
               <article *ngIf="lesson.lessonNumber >= 8 && lesson.lessonNumber <= 11"><strong>(24 / 4) + 2</strong><span>parentheses decide</span><b>8</b></article>
               <article *ngIf="lesson.lessonNumber >= 8 && lesson.lessonNumber <= 11"><strong>(3 x 3) x 4</strong><span>associate</span><b>9 x 4</b></article>
@@ -180,7 +208,12 @@
 
             <div class="m2-topicb-note-card">
               <strong>Teacher check</strong>
-              <p *ngIf="lesson.lessonNumber <= 7">Ask students to name the known fact or count-by pattern before accepting the new fact.</p>
+              <p *ngIf="lesson.lessonNumber === 1">Ask how commutativity helped solve more facts than the student first thought they knew.</p>
+              <p *ngIf="lesson.lessonNumber === 2">Ask what pattern connects the five-fact, one more unit, the six-fact, and its commutative partner.</p>
+              <p *ngIf="lesson.lessonNumber === 3">Ask the student to point to the unknown in the model, name what the letter represents, and label the solved value.</p>
+              <p *ngIf="lesson.lessonNumber === 4">Ask for the related division fact for each completed count-by-six multiplication fact.</p>
+              <p *ngIf="lesson.lessonNumber === 5">Have partners take turns reading each count-by-seven multiplication fact and its related division fact.</p>
+              <p *ngIf="lesson.lessonNumber >= 6 && lesson.lessonNumber <= 7">Ask students to name the known fact or count-by pattern before accepting the new fact.</p>
               <p *ngIf="lesson.lessonNumber >= 8 && lesson.lessonNumber <= 14">Ask students to explain why the changed expression has the same value.</p>
               <p *ngIf="lesson.lessonNumber >= 15">Ask students to point to the unknown in the model and answer with the requested unit.</p>
             </div>
@@ -2189,9 +2222,9 @@
             </div>
           </section>
 
-          <section class="problem-source-pages is-teacher-source" *ngIf="conceptSourcePageImages(problemLesson).length" [attr.aria-label]="'Official Teacher Edition Problem Set pages for Module ' + module.number + ' Lesson ' + lesson.lessonNumber">
+          <section class="problem-source-pages is-teacher-source" *ngIf="conceptSourcePageImages(problemLesson).length" [attr.aria-label]="conceptSourcePageAriaLabel() + ' for Module ' + module.number + ' Lesson ' + lesson.lessonNumber">
             <div class="source-pages-heading">
-              <strong>Official Teacher Edition Problem Set pages</strong>
+              <strong>{{ conceptSourcePageHeading() }}</strong>
               <span>{{ problemLesson.sourceNote }}</span>
             </div>
             <div class="source-page-strip">
@@ -2202,7 +2235,7 @@
                 rel="noreferrer">
                 <img
                   [src]="teacherPageImage"
-                  [alt]="'Official Teacher Edition source for Module ' + module.number + ' Lesson ' + lesson.lessonNumber + ', page ' + (pageIndex + 1)" />
+                  [alt]="conceptSourcePageImageAlt(pageIndex)" />
               </a>
             </div>
           </section>

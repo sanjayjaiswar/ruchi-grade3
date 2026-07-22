@@ -1,0 +1,447 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m7-l22",
+  "moduleId": "m7",
+  "lessonNumber": 22,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf",
+    "teacherEditionSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+    "teacherEditionBytes": 21553765,
+    "lessonPdfPages": {
+      "start": 295,
+      "end": 310
+    },
+    "problemSetPdfPages": [
+      302,
+      303
+    ],
+    "exitTicketPdfPages": [
+      304
+    ],
+    "homeworkPdfPages": [
+      305,
+      306
+    ],
+    "answerKeyPdfPages": [
+      497,
+      498
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m7-student/workbook-page-092.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m7-teacher/page-302.png",
+      "/source-pages/m7-teacher/page-303.png",
+      "/source-pages/m7-teacher/page-497.png",
+      "/source-pages/m7-teacher/page-498.png"
+    ]
+  },
+  "objective": "Use a line plot to record the number of rectangles constructed in Lessons 20 and 21.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "Materials: (T) Line plot (Template 1) (S) Problem Set, ruler, data chart from Lessons 20–21, line plot from\n           Lesson 19, scissors, 11-inch piece of string (per pair), rectangles (Template 2) (per pair)\n\nProblem 1: Draw a line plot representing measurement data.\nGuide students through the process of recording the number of rectangles they made for each given\nperimeter on the line plot in Problem 1 of the Problem Set.\n     Use a ruler to partition equal intervals.\n     Label the number line to show the different perimeters.\n     Record the data on the line plot using X’s to represent one rectangle.\n\nProblem 2: Observe and interpret data on a line plot.\n    T:   Study the perimeter measurements on your line plot. Are they even, odd, or both?\n    S:   They’re all even!\n    T:   Why do you think that is? Discuss with your table.\n    S:   The teacher just made them up that way.  To get the perimeter of a rectangle, we add four sides.\n         Maybe the totals have to be divisible by 4, so they have to be even because 4 is even?  But we\n         don’t know how to divide 10, 14, 18, or 22 by 4.  Wait. To get perimeter, we find the sum of the\n         width and length. Then, we double it. If you double a number, I think it’s always even because you\n         have to multiply by 2. Let me try a few to check. Yep! Everything I multiply by 2 has an even\n         product.\n    T:   You’re close! All the rectangles that we made had whole number side lengths. When we add whole\n         number side lengths and double them, the perimeter will be even. (Pass out an 11-inch-long piece\n         of string to each pair.) Use your ruler to measure the length of the string in inches.\n    S:   (Measure the string.)\n    T:   How long is the string?                                                     NOTES ON\n    S:   11 inches!                                                                  MULTIPLE MEANS\n    T:   Work with your partner to shape your string into a                          OF ACTION AND\n         rectangle.                                                                  EXPRESSION:\n    S:   (Make a rectangle with the string.)                                Provide the option of wire, in addition\n                                                                            to string, because it may be easier for\n    T:   What is the perimeter of your rectangle? How do you\n                                                                            students to measure and shape wire\n         know?\n                                                                            into a rectangle. However, students\n    S:   11 inches because it’s the same as the length of the               may need assistance cutting off an inch\n         string.                                                            of wire. Gluing string or anchoring wire\n    T:   Is 11 an odd or even number?                                       (so that it does not move) may\n                                                                            decrease possible frustration as\n    S:   Odd!                                                               students measure side lengths. If\n    T:   So, do all rectangles have an even perimeter?                      gluing is chosen, provide additional\n                                                                            pieces of string.\n    S:   No!\n\n\n                        Lesson 22:                Use a line plot to record the number of rectangles constructed in              295\n                                                  Lessons 20 and 21.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                 Lesson 22 3 7\n\n\n       T:   Use your ruler to measure the side lengths of your rectangle to the nearest quarter inch.\n       S:   (Measure the side lengths.)\n       T:   Are the side lengths of your rectangle whole numbers?\n       S:   No. They have fractions of inches!\n       T:   That’s right! Your rectangle has an odd perimeter because the side lengths aren’t whole numbers.\n            Use this information to help you answer Problem 2. (Why are all of the perimeter measurements\n            even? Do all rectangles have an even perimeter?)\n       S:   (Answer Problem 2.)\n       T:   Now, study the data on your line plot. Think of a true statement to share about the data. (Allow\n            students time to think, and then invite them to share.)\n       S:   We made the most rectangles with a perimeter of 20 units.  We made the fewest rectangles with\n            a perimeter of 10 units.  We made the same number of rectangles with perimeters of 12 and\n            14 units and 16 and 18 units.  We made a total of 21 rectangles from these six perimeters.\n             The number of rectangles is mostly growing as the perimeter measurement gets larger.\n       T:   Let me show you what the line plot looks like with more measurements. (Project Template 1, shown\n            to the right.) What pattern do you notice in the data?                    Template 1\n       S:   Starting with 8, the number of rectangles grows\n            for every other measurement.  Not just that,\n            but they grow in pairs. Look. 4 and 6 are the\n            same. Then, 8 and 10 are the same, except they\n            grow by 1 more possible rectangle. It’s like that\n            all the way to 30!\n       T:   Using this pattern, how many rectangles do you think you could build with unit squares, given\n            perimeters of 32 units and 34 units?\n       S:   Both would be 8 rectangles since each pair of measurements grows by 1.\n       T:   Use your ruler to help you cut an inch off your string. (Allow students time\n            to cut.) How long is your string now?                                                Template 2\n       S:   10 inches.\n       T:   (Pass out Template 2, shown to the right.) Working with your partner, use\n            your string to measure the perimeters of these rectangles. (Allow students\n            time to measure.) What did you notice about the perimeters of these\n            rectangles?\nMP.6\n       S:   They’re all 10 inches!\n       T:   Use your ruler to measure the side lengths of Rectangle A to the nearest\n            quarter inch. (Allow students time to measure.) Are the side lengths of\n            this rectangle whole numbers?\n       S:   No. They have fractions of inches.\n       T:   On your line plot, it shows that you only made two rectangles with a perimeter of 10, but here we\n            have four rectangles with a perimeter of 10. When we have side lengths that are not whole\n            numbers, we can find more rectangles for given perimeters than our line plot shows.\n\n\n                          Lesson 22:                Use a line plot to record the number of rectangles constructed in              296\n                                                    Lessons 20 and 21.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                   Lesson 22 3 7\n\n\nProblem 3: Compare area and perimeter line plots.\n                                                                                              Student Line Plot from Lesson 19\n    T:   Let’s compare today’s line plot with the one\n         you created in Lesson 19. (Allow students\n         time to take out their Lesson 19 Problem\n         Set.) How are the line plots different?\n    S:   One line plot shows the number of\n         rectangles for a given area. The other shows\n         the number of rectangles for a given\n         perimeter.\n    T:   Look at the data on both line plots for 12.\n         What do you notice?\n    S:   There is an equal number of rectangles that we made for that perimeter and that area.\n    T:   Is that true for other numbers on your line plots?\n    S:   No!\n    T:   Do you think there’s a connection between the number of rectangles you built for a given area and\n         perimeter?\n    S:   Sometimes, but not always.  It only looks like there is a relationship with certain numbers, like 12.\n          There’s not really a pattern, so I don’t think there’s a relationship.\n    T:   Right. Using our data, we can’t make a general rule about a connection between perimeter and\n         area. Take some time to record your thoughts in Problem 3. (Compare the two line plots we\n         created. Is there any reason to think that knowing only the area of a rectangle would help you to\n         figure out its perimeter or knowing only the perimeter of a rectangle would help you figure out its\n         area?)\n    S:   (Record.)",
+    "fluencyPracticeText": " Sprint: Multiply or Divide by 4 3.OA.7                          (10 minutes)\n Find the Perimeter and Area 3.MD.7                              (3 minutes)\n\nSprint: Multiply or Divide by 4 (10 minutes)\n                                                                                                                NOTES ON\nMaterials: (S) Multiply or Divide by 4 Sprint                                                                   MULTIPLE MEANS\n                                                                                                                OF ENGAGEMENT:\nNote: This Sprint builds fluency with multiplication and division\n                                                                                                      If students do not multiply and divide\nfacts using units of 4.\n                                                                                                      by 4 with fluency, review quickly or\n                                                                                                      prepare students beforehand. Then,\nFind the Perimeter and Area (3 minutes)                                                               guide students to set a goal.\n\nMaterials: (S) Personal white board\n\nNote: This activity reviews finding perimeter and area.\n    T:   (Project a square with a given length of 5 cm.) This shape is a\n         square. On your personal white board, calculate the\n         perimeter using an addition sentence.\n    S:   (Write 5 cm + 5 cm + 5 cm + 5 cm = 20 cm.)\n    T:   Calculate the area using a multiplication sentence.\n    S:   (Write 5 cm × 5 cm = 25 sq cm.)\nRepeat this process for the remaining rectangles.\n\n\n                        Lesson 22:                Use a line plot to record the number of rectangles constructed in                            294\n                                                  Lessons 20 and 21.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                   Lesson 22 3 7",
+    "problemSetGuidanceText": "Students should do their personal best to complete\nProblems 4 and 5 within the allotted 10 minutes. For\nsome classes, it may be appropriate to modify the\nassignment by specifying which problems they work on\nfirst. Some problems do not specify a method for solving.\nStudents should solve these problems using the RDW\napproach used for Application Problems.",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Study the perimeter measurements on your line plot. Are they even, odd, or both?"
+      },
+      {
+        "speaker": "students",
+        "text": "They’re all even!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why do you think that is? Discuss with your table."
+      },
+      {
+        "speaker": "students",
+        "text": "The teacher just made them up that way.  To get the perimeter of a rectangle, we add four sides. Maybe the totals have to be divisible by 4, so they have to be even because 4 is even?  But we don’t know how to divide 10, 14, 18, or 22 by 4.  Wait. To get perimeter, we find the sum of the width and length. Then, we double it. If you double a number, I think it’s always even because you have to multiply by 2. Let me try a few to check. Yep! Everything I multiply by 2 has an even product."
+      },
+      {
+        "speaker": "teacher",
+        "text": "You’re close! All the rectangles that we made had whole number side lengths. When we add whole number side lengths and double them, the perimeter will be even. (Pass out an 11-inch-long piece of string to each pair.) Use your ruler to measure the length of the string in inches."
+      },
+      {
+        "speaker": "students",
+        "text": "(Measure the string.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How long is the string? NOTES ON"
+      },
+      {
+        "speaker": "students",
+        "text": "11 inches! MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to shape your string into a OF ACTION AND rectangle. EXPRESSION:"
+      },
+      {
+        "speaker": "students",
+        "text": "(Make a rectangle with the string.) Provide the option of wire, in addition to string, because it may be easier for"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the perimeter of your rectangle? How do you students to measure and shape wire know? into a rectangle. However, students"
+      },
+      {
+        "speaker": "students",
+        "text": "11 inches because it’s the same as the length of the may need assistance cutting off an inch string. of wire. Gluing string or anchoring wire"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is 11 an odd or even number? (so that it does not move) may decrease possible frustration as"
+      },
+      {
+        "speaker": "students",
+        "text": "Odd! students measure side lengths. If"
+      },
+      {
+        "speaker": "teacher",
+        "text": "So, do all rectangles have an even perimeter? gluing is chosen, provide additional pieces of string."
+      },
+      {
+        "speaker": "students",
+        "text": "No! Lessons 20 and 21. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 22 3 7"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your ruler to measure the side lengths of your rectangle to the nearest quarter inch."
+      },
+      {
+        "speaker": "students",
+        "text": "(Measure the side lengths.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Are the side lengths of your rectangle whole numbers?"
+      },
+      {
+        "speaker": "students",
+        "text": "No. They have fractions of inches!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "That’s right! Your rectangle has an odd perimeter because the side lengths aren’t whole numbers. Use this information to help you answer Problem 2. (Why are all of the perimeter measurements even? Do all rectangles have an even perimeter?)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Answer Problem 2.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, study the data on your line plot. Think of a true statement to share about the data. (Allow students time to think, and then invite them to share.)"
+      },
+      {
+        "speaker": "students",
+        "text": "We made the most rectangles with a perimeter of 20 units.  We made the fewest rectangles with a perimeter of 10 units.  We made the same number of rectangles with perimeters of 12 and 14 units and 16 and 18 units.  We made a total of 21 rectangles from these six perimeters.  The number of rectangles is mostly growing as the perimeter measurement gets larger."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me show you what the line plot looks like with more measurements. (Project Template 1, shown to the right.) What pattern do you notice in the data? Template 1"
+      },
+      {
+        "speaker": "students",
+        "text": "Starting with 8, the number of rectangles grows for every other measurement.  Not just that, but they grow in pairs. Look. 4 and 6 are the same. Then, 8 and 10 are the same, except they grow by 1 more possible rectangle. It’s like that all the way to 30!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Using this pattern, how many rectangles do you think you could build with unit squares, given perimeters of 32 units and 34 units?"
+      },
+      {
+        "speaker": "students",
+        "text": "Both would be 8 rectangles since each pair of measurements grows by 1."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your ruler to help you cut an inch off your string. (Allow students time to cut.) How long is your string now? Template 2"
+      },
+      {
+        "speaker": "students",
+        "text": "10 inches."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Pass out Template 2, shown to the right.) Working with your partner, use your string to measure the perimeters of these rectangles. (Allow students time to measure.) What did you notice about the perimeters of these rectangles? MP.6"
+      },
+      {
+        "speaker": "students",
+        "text": "They’re all 10 inches!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your ruler to measure the side lengths of Rectangle A to the nearest quarter inch. (Allow students time to measure.) Are the side lengths of this rectangle whole numbers?"
+      },
+      {
+        "speaker": "students",
+        "text": "No. They have fractions of inches."
+      },
+      {
+        "speaker": "teacher",
+        "text": "On your line plot, it shows that you only made two rectangles with a perimeter of 10, but here we have four rectangles with a perimeter of 10. When we have side lengths that are not whole numbers, we can find more rectangles for given perimeters than our line plot shows. Lessons 20 and 21. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 22 3 7 Student Line Plot from Lesson 19"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s compare today’s line plot with the one you created in Lesson 19. (Allow students time to take out their Lesson 19 Problem Set.) How are the line plots different?"
+      },
+      {
+        "speaker": "students",
+        "text": "One line plot shows the number of rectangles for a given area. The other shows the number of rectangles for a given perimeter."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look at the data on both line plots for 12. What do you notice?"
+      },
+      {
+        "speaker": "students",
+        "text": "There is an equal number of rectangles that we made for that perimeter and that area."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is that true for other numbers on your line plots?"
+      },
+      {
+        "speaker": "students",
+        "text": "No!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Do you think there’s a connection between the number of rectangles you built for a given area and perimeter?"
+      },
+      {
+        "speaker": "students",
+        "text": "Sometimes, but not always.  It only looks like there is a relationship with certain numbers, like 12.  There’s not really a pattern, so I don’t think there’s a relationship."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Right. Using our data, we can’t make a general rule about a connection between perimeter and area. Take some time to record your thoughts in Problem 3. (Compare the two line plots we created. Is there any reason to think that knowing only the area of a rectangle would help you to figure out its perimeter or knowing only the perimeter of a rectangle would help you figure out its area?)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Record.)"
+      }
+    ],
+    "teacherPrompts": [
+      "Study the perimeter measurements on your line plot. Are they even, odd, or both?",
+      "Why do you think that is? Discuss with your table.",
+      "You’re close! All the rectangles that we made had whole number side lengths. When we add whole number side lengths and double them, the perimeter will be even. (Pass out an 11-inch-long piece of string to each pair.) Use your ruler to measure the length of the string in inches.",
+      "How long is the string? NOTES ON",
+      "Work with your partner to shape your string into a OF ACTION AND rectangle. EXPRESSION:",
+      "What is the perimeter of your rectangle? How do you students to measure and shape wire know? into a rectangle. However, students",
+      "Is 11 an odd or even number? (so that it does not move) may decrease possible frustration as",
+      "So, do all rectangles have an even perimeter? gluing is chosen, provide additional pieces of string.",
+      "Use your ruler to measure the side lengths of your rectangle to the nearest quarter inch.",
+      "Are the side lengths of your rectangle whole numbers?",
+      "That’s right! Your rectangle has an odd perimeter because the side lengths aren’t whole numbers. Use this information to help you answer Problem 2. (Why are all of the perimeter measurements even? Do all rectangles have an even perimeter?)",
+      "Now, study the data on your line plot. Think of a true statement to share about the data. (Allow students time to think, and then invite them to share.)",
+      "Let me show you what the line plot looks like with more measurements. (Project Template 1, shown to the right.) What pattern do you notice in the data? Template 1",
+      "Using this pattern, how many rectangles do you think you could build with unit squares, given perimeters of 32 units and 34 units?",
+      "Use your ruler to help you cut an inch off your string. (Allow students time to cut.) How long is your string now? Template 2",
+      "(Pass out Template 2, shown to the right.) Working with your partner, use your string to measure the perimeters of these rectangles. (Allow students time to measure.) What did you notice about the perimeters of these rectangles? MP.6",
+      "Use your ruler to measure the side lengths of Rectangle A to the nearest quarter inch. (Allow students time to measure.) Are the side lengths of this rectangle whole numbers?",
+      "On your line plot, it shows that you only made two rectangles with a perimeter of 10, but here we have four rectangles with a perimeter of 10. When we have side lengths that are not whole numbers, we can find more rectangles for given perimeters than our line plot shows. Lessons 20 and 21. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 22 3 7 Student Line Plot from Lesson 19",
+      "Let’s compare today’s line plot with the one you created in Lesson 19. (Allow students time to take out their Lesson 19 Problem Set.) How are the line plots different?",
+      "Look at the data on both line plots for 12. What do you notice?",
+      "Is that true for other numbers on your line plots?",
+      "Do you think there’s a connection between the number of rectangles you built for a given area and perimeter?",
+      "Right. Using our data, we can’t make a general rule about a connection between perimeter and area. Take some time to record your thoughts in Problem 3. (Compare the two line plots we created. Is there any reason to think that knowing only the area of a rectangle would help you to figure out its perimeter or knowing only the perimeter of a rectangle would help you figure out its area?)"
+    ],
+    "debriefPrompt": "How did using a ruler help you partition your number line evenly?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Use the data you gathered from your Problem Sets to create a line plot for the number of rectangles you created with each given perimeter. Number of Rectangles Made with a Given Perimeter Perimeter Measurements in Units X = 1 Rectangle",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "Why are all of the perimeter measurements even? Do all rectangles have an even perimeter? Lessons 20 and 21.",
+        "equations": []
+      },
+      {
+        "number": 3,
+        "prompt": "Compare the two line plots we created. Is there any reason to think that knowing only the area of a rectangle would help you to figure out its perimeter or knowing only the perimeter of a rectangle would help you figure out its area?",
+        "equations": []
+      },
+      {
+        "number": 4,
+        "prompt": "Sumi uses unit square tiles to build 3 rectangles that have an area of 32 square units. Does knowing this help her find the number of rectangles she can build for a perimeter of 32 units? Why or why not?",
+        "equations": []
+      },
+      {
+        "number": 5,
+        "prompt": "George draws 3 rectangles that have a perimeter of 14 centimeters. Alicia tells George that there are more than 3 rectangles that have a perimeter of 14 centimeters. Explain why Alicia is correct. Lessons 20 and 21.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                             Lesson 22 Problem Set 3 7\n\n\nName                                                                                              Date\n\n1. Use the data you gathered from your Problem Sets to create a line plot for the number of rectangles you\n   created with each given perimeter.\n\n                                  Number of Rectangles Made with a Given Perimeter\n\n\n                                                     Perimeter Measurements in Units                            X = 1 Rectangle\n\n\n2. Why are all of the perimeter measurements even? Do all rectangles have an even perimeter?\n\n\n                       Lesson 22:                Use a line plot to record the number of rectangles constructed in                301\n                                                 Lessons 20 and 21.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                             Lesson 22 Problem Set 3 7\n\n\n3. Compare the two line plots we created. Is there any reason to think that knowing only the area of a\n   rectangle would help you to figure out its perimeter or knowing only the perimeter of a rectangle would\n   help you figure out its area?\n\n\n4. Sumi uses unit square tiles to build 3 rectangles that have an area of 32 square units. Does knowing this\n   help her find the number of rectangles she can build for a perimeter of 32 units? Why or why not?\n\n\n5. George draws 3 rectangles that have a perimeter of 14 centimeters. Alicia tells George that there are\n   more than 3 rectangles that have a perimeter of 14 centimeters. Explain why Alicia is correct.\n\n\n                       Lesson 22:                Use a line plot to record the number of rectangles constructed in     302\n                                                 Lessons 20 and 21.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "answerKeyProblemSetText": "1.    Line plot created\n2.    Answers will vary.\n3.    No\n4.    No; explanations will vary.\n5.    Explanations will vary.",
+    "answerKeyText": "A STORY OF UNITS                                                                          Lesson 22 Answer Key 3 7\n\n\nLesson 22\nSprint\nSide A\n1.    8                                12. 28                                  23. 10                  34. 8\n2.    12                               13. 32                                  24. 2                   35. 7\n3.    16                               14. 36                                  25. 3                   36. 9\n4.    20                               15. 40                                  26. 10                  37. 6\n5.    4                                16. 8                                   27. 5                   38. 8\n6.    2                                17. 7                                   28. 1                   39. 44\n7.    3                                18. 9                                   29. 2                   40. 11\n8.    5                                19. 6                                   30. 3                   41. 3\n9.    1                                20. 10                                  31. 6                   42. 12\n10. 4                                  21. 5                                   32. 7                   43. 56\n11. 24                                 22. 1                                   33. 9                   44. 14\n\n\nSide B\n1.    4                                12. 24                                  23. 2                   34. 7\n2.    8                                13. 28                                  24. 10                  35. 8\n3.    12                               14. 32                                  25. 3                   36. 9\n4.    16                               15. 36                                  26. 2                   37. 6\n5.    20                               16. 7                                   27. 1                   38. 7\n6.    3                                17. 6                                   28. 10                  39. 44\n7.    2                                18. 8                                   29. 5                   40. 11\n8.    4                                19. 10                                  30. 3                   41. 48\n9.    1                                20. 9                                   31. 3                   42. 12\n10. 5                                  21. 1                                   32. 4                   43. 52\n11. 40                                 22. 5                                   33. 9                   44. 13\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                         496\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                          Lesson 22 Answer Key 3 7\n\n\nProblem Set\n1.    Line plot created\n2.    Answers will vary.\n3.    No\n4.    No; explanations will vary.\n5.    Explanations will vary.\n\n\nExit Ticket\nAnswers will vary.\n\n\nHomework\n1.    a. Explanations will vary; no\n      b. Explanations will vary; whole number side lengths\n      c. 8; explanations will vary.\n2.    No; explanations will vary.\n3.    Explanations will vary.\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                         497\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "number-line",
+      "ruler-or-length",
+      "table-or-chart",
+      "graph-or-plot",
+      "area-model",
+      "geometry-diagram",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "number-line": [
+        " Use a ruler to partition equal intervals.",
+        " Label the number line to show the different perimeters."
+      ],
+      "ruler-or-length": [
+        "Materials: (T) Line plot (Template 1) (S) Problem Set, ruler, data chart from Lessons 20–21, line plot from",
+        " Use a ruler to partition equal intervals.",
+        "width and length. Then, we double it. If you double a number, I think it’s always even because you",
+        "T: You’re close! All the rectangles that we made had whole number side lengths. When we add whole",
+        "number side lengths and double them, the perimeter will be even. (Pass out an 11-inch-long piece",
+        "of string to each pair.) Use your ruler to measure the length of the string in inches.",
+        "S: 11 inches because it’s the same as the length of the may need assistance cutting off an inch",
+        "S: Odd! students measure side lengths. If"
+      ],
+      "table-or-chart": [
+        "Materials: (T) Line plot (Template 1) (S) Problem Set, ruler, data chart from Lessons 20–21, line plot from",
+        "T: Why do you think that is? Discuss with your table."
+      ],
+      "graph-or-plot": [
+        "Use a line plot to record the number of rectangles constructed in Lessons 20 and 21.",
+        "Materials: (T) Line plot (Template 1) (S) Problem Set, ruler, data chart from Lessons 20–21, line plot from",
+        "Problem 1: Draw a line plot representing measurement data.",
+        "perimeter on the line plot in Problem 1 of the Problem Set.",
+        " Record the data on the line plot using X’s to represent one rectangle.",
+        "Problem 2: Observe and interpret data on a line plot.",
+        "T: Study the perimeter measurements on your line plot. Are they even, odd, or both?",
+        "Lesson 22: Use a line plot to record the number of rectangles constructed in 295"
+      ],
+      "area-model": [
+        "4. Sumi uses unit square tiles to build 3 rectangles that have an area of 32 square units. Does knowing this"
+      ],
+      "geometry-diagram": [
+        "Use a line plot to record the number of rectangles constructed in Lessons 20 and 21.",
+        "Lesson 19, scissors, 11-inch piece of string (per pair), rectangles (Template 2) (per pair)",
+        "Guide students through the process of recording the number of rectangles they made for each given",
+        "perimeter on the line plot in Problem 1 of the Problem Set.",
+        " Label the number line to show the different perimeters.",
+        " Record the data on the line plot using X’s to represent one rectangle.",
+        "T: Study the perimeter measurements on your line plot. Are they even, odd, or both?",
+        "S: The teacher just made them up that way.  To get the perimeter of a rectangle, we add four sides."
+      ],
+      "money-model": [
+        "5. George draws 3 rectangles that have a perimeter of 14 centimeters. Alicia tells George that there are",
+        "more than 3 rectangles that have a perimeter of 14 centimeters. Explain why Alicia is correct."
+      ],
+      "picture-or-drawing": [
+        "Problem 1: Draw a line plot representing measurement data.",
+        "5. George draws 3 rectangles that have a perimeter of 14 centimeters. Alicia tells George that there are"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Study the perimeter measurements on your line plot. Are they even, odd, or both?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is 11 an odd or even number? (so that it does not move) may decrease possible frustration as"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, study the data on your line plot. Think of a true statement to share about the data. (Allow students time to think, and then invite them to share.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let me show you what the line plot looks like with more measurements. (Project Template 1, shown to the right.) What pattern do you notice in the data? Template 1"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Pass out Template 2, shown to the right.) Working with your partner, use your string to measure the perimeters of these rectangles. (Allow students time to measure.) What did you notice about the perimeters of these rectangles? MP.6"
+      },
+      {
+        "speaker": "teacher",
+        "text": "On your line plot, it shows that you only made two rectangles with a perimeter of 10, but here we have four rectangles with a perimeter of 10. When we have side lengths that are not whole numbers, we can find more rectangles for given perimeters than our line plot shows. Lessons 20 and 21. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 22 3 7 Student Line Plot from Lesson 19"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s compare today’s line plot with the one you created in Lesson 19. (Allow students time to take out their Lesson 19 Problem Set.) How are the line plots different?"
+      },
+      {
+        "speaker": "students",
+        "text": "One line plot shows the number of rectangles for a given area. The other shows the number of rectangles for a given perimeter."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look at the data on both line plots for 12. What do you notice?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is that true for other numbers on your line plots?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Right. Using our data, we can’t make a general rule about a connection between perimeter and area. Take some time to record your thoughts in Problem 3. (Compare the two line plots we created. Is there any reason to think that knowing only the area of a rectangle would help you to figure out its perimeter or knowing only the perimeter of a rectangle would help you figure out its area?)"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 295 (debrief) ---\nA STORY OF UNITS                                                                                                   Lesson 22 3 7\n\n\nLesson 22\nObjective: Use a line plot to record the number of rectangles constructed\nin Lessons 20 and 21.\n\nSuggested Lesson Structure\n\n Fluency Practice                 (13 minutes)\n Concept Development              (37 minutes)\n Student Debrief                  (10 minutes)\n   Total Time                      (60 minutes)\n\n\nFluency Practice (13 minutes)\n\n Sprint: Multiply or Divide by 4 3.OA.7                          (10 minutes)\n Find the Perimeter and Area 3.MD.7                              (3 minutes)\n\nSprint: Multiply or Divide by 4 (10 minutes)\n                                                                                                                NOTES ON\nMaterials: (S) Multiply or Divide by 4 Sprint                                                                   MULTIPLE MEANS\n                                                                                                                OF ENGAGEMENT:\nNote: This Sprint builds fluency with multiplication and division\n                                                                                                      If students do not multiply and divide\nfacts using units of 4.\n                                                                                                      by 4 with fluency, review quickly or\n                                                                                                      prepare students beforehand. Then,\nFind the Perimeter and Area (3 minutes)                                                               guide students to set a goal.\n\nMaterials: (S) Personal white board\n\nNote: This activity reviews finding perimeter and area.\n    T:   (Project a square with a given length of 5 cm.) This shape is a\n         square. On your personal white board, calculate the\n         perimeter using an addition sentence.\n    S:   (Write 5 cm + 5 cm + 5 cm + 5 cm = 20 cm.)\n    T:   Calculate the area using a multiplication sentence.\n    S:   (Write 5 cm × 5 cm = 25 sq cm.)\nRepeat this process for the remaining rectangles.\n\n\n                        Lesson 22:                Use a line plot to record the number of rectangles constructed in                            294\n                                                  Lessons 20 and 21.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 296 (concept-development) ---\nA STORY OF UNITS                                                                                                   Lesson 22 3 7\n\n\nConcept Development (37 minutes)\nMaterials: (T) Line plot (Template 1) (S) Problem Set, ruler, data chart from Lessons 20–21, line plot from\n           Lesson 19, scissors, 11-inch piece of string (per pair), rectangles (Template 2) (per pair)\n\nProblem 1: Draw a line plot representing measurement data.\nGuide students through the process of recording the number of rectangles they made for each given\nperimeter on the line plot in Problem 1 of the Problem Set.\n     Use a ruler to partition equal intervals.\n     Label the number line to show the different perimeters.\n     Record the data on the line plot using X’s to represent one rectangle.\n\nProblem 2: Observe and interpret data on a line plot.\n    T:   Study the perimeter measurements on your line plot. Are they even, odd, or both?\n    S:   They’re all even!\n    T:   Why do you think that is? Discuss with your table.\n    S:   The teacher just made them up that way.  To get the perimeter of a rectangle, we add four sides.\n         Maybe the totals have to be divisible by 4, so they have to be even because 4 is even?  But we\n         don’t know how to divide 10, 14, 18, or 22 by 4.  Wait. To get perimeter, we find the sum of the\n         width and length. Then, we double it. If you double a number, I think it’s always even because you\n         have to multiply by 2. Let me try a few to check. Yep! Everything I multiply by 2 has an even\n         product.\n    T:   You’re close! All the rectangles that we made had whole number side lengths. When we add whole\n         number side lengths and double them, the perimeter will be even. (Pass out an 11-inch-long piece\n         of string to each pair.) Use your ruler to measure the length of the string in inches.\n    S:   (Measure the string.)\n    T:   How long is the string?                                                     NOTES ON\n    S:   11 inches!                                                                  MULTIPLE MEANS\n    T:   Work with your partner to shape your string into a                          OF ACTION AND\n         rectangle.                                                                  EXPRESSION:\n    S:   (Make a rectangle with the string.)                                Provide the option of wire, in addition\n                                                                            to string, because it may be easier for\n    T:   What is the perimeter of your rectangle? How do you\n                                                                            students to measure and shape wire\n         know?\n                                                                            into a rectangle. However, students\n    S:   11 inches because it’s the same as the length of the               may need assistance cutting off an inch\n         string.                                                            of wire. Gluing string or anchoring wire\n    T:   Is 11 an odd or even number?                                       (so that it does not move) may\n                                                                            decrease possible frustration as\n    S:   Odd!                                                               students measure side lengths. If\n    T:   So, do all rectangles have an even perimeter?                      gluing is chosen, provide additional\n                                                                            pieces of string.\n    S:   No!\n\n\n                        Lesson 22:                Use a line plot to record the number of rectangles constructed in              295\n                                                  Lessons 20 and 21.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 297 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                 Lesson 22 3 7\n\n\n       T:   Use your ruler to measure the side lengths of your rectangle to the nearest quarter inch.\n       S:   (Measure the side lengths.)\n       T:   Are the side lengths of your rectangle whole numbers?\n       S:   No. They have fractions of inches!\n       T:   That’s right! Your rectangle has an odd perimeter because the side lengths aren’t whole numbers.\n            Use this information to help you answer Problem 2. (Why are all of the perimeter measurements\n            even? Do all rectangles have an even perimeter?)\n       S:   (Answer Problem 2.)\n       T:   Now, study the data on your line plot. Think of a true statement to share about the data. (Allow\n            students time to think, and then invite them to share.)\n       S:   We made the most rectangles with a perimeter of 20 units.  We made the fewest rectangles with\n            a perimeter of 10 units.  We made the same number of rectangles with perimeters of 12 and\n            14 units and 16 and 18 units.  We made a total of 21 rectangles from these six perimeters.\n             The number of rectangles is mostly growing as the perimeter measurement gets larger.\n       T:   Let me show you what the line plot looks like with more measurements. (Project Template 1, shown\n            to the right.) What pattern do you notice in the data?                    Template 1\n       S:   Starting with 8, the number of rectangles grows\n            for every other measurement.  Not just that,\n            but they grow in pairs. Look. 4 and 6 are the\n            same. Then, 8 and 10 are the same, except they\n            grow by 1 more possible rectangle. It’s like that\n            all the way to 30!\n       T:   Using this pattern, how many rectangles do you think you could build with unit squares, given\n            perimeters of 32 units and 34 units?\n       S:   Both would be 8 rectangles since each pair of measurements grows by 1.\n       T:   Use your ruler to help you cut an inch off your string. (Allow students time\n            to cut.) How long is your string now?                                                Template 2\n       S:   10 inches.\n       T:   (Pass out Template 2, shown to the right.) Working with your partner, use\n            your string to measure the perimeters of these rectangles. (Allow students\n            time to measure.) What did you notice about the perimeters of these\n            rectangles?\nMP.6\n       S:   They’re all 10 inches!\n       T:   Use your ruler to measure the side lengths of Rectangle A to the nearest\n            quarter inch. (Allow students time to measure.) Are the side lengths of\n            this rectangle whole numbers?\n       S:   No. They have fractions of inches.\n       T:   On your line plot, it shows that you only made two rectangles with a perimeter of 10, but here we\n            have four rectangles with a perimeter of 10. When we have side lengths that are not whole\n            numbers, we can find more rectangles for given perimeters than our line plot shows.\n\n\n                          Lesson 22:                Use a line plot to record the number of rectangles constructed in              296\n                                                    Lessons 20 and 21.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 298 (debrief) ---\nA STORY OF UNITS                                                                                                   Lesson 22 3 7\n\n\nProblem 3: Compare area and perimeter line plots.\n                                                                                              Student Line Plot from Lesson 19\n    T:   Let’s compare today’s line plot with the one\n         you created in Lesson 19. (Allow students\n         time to take out their Lesson 19 Problem\n         Set.) How are the line plots different?\n    S:   One line plot shows the number of\n         rectangles for a given area. The other shows\n         the number of rectangles for a given\n         perimeter.\n    T:   Look at the data on both line plots for 12.\n         What do you notice?\n    S:   There is an equal number of rectangles that we made for that perimeter and that area.\n    T:   Is that true for other numbers on your line plots?\n    S:   No!\n    T:   Do you think there’s a connection between the number of rectangles you built for a given area and\n         perimeter?\n    S:   Sometimes, but not always.  It only looks like there is a relationship with certain numbers, like 12.\n          There’s not really a pattern, so I don’t think there’s a relationship.\n    T:   Right. Using our data, we can’t make a general rule about a connection between perimeter and\n         area. Take some time to record your thoughts in Problem 3. (Compare the two line plots we\n         created. Is there any reason to think that knowing only the area of a rectangle would help you to\n         figure out its perimeter or knowing only the perimeter of a rectangle would help you figure out its\n         area?)\n    S:   (Record.)\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete\nProblems 4 and 5 within the allotted 10 minutes. For\nsome classes, it may be appropriate to modify the\nassignment by specifying which problems they work on\nfirst. Some problems do not specify a method for solving.\nStudents should solve these problems using the RDW\napproach used for Application Problems.\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Use a line plot to record the number of\nrectangles constructed in Lessons 20 and 21.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience. Invite\nstudents to review their solutions for the Problem Set.\n\n\n                        Lesson 22:                Use a line plot to record the number of rectangles constructed in              297\n                                                  Lessons 20 and 21.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 299 (debrief) ---\nA STORY OF UNITS                                                                                                  Lesson 22 3 7\n\n\nThey should check work by comparing answers with a partner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be addressed in the Debrief. Guide students in a conversation\nto debrief the Problem Set and process the lesson.\nAny combination of the questions below may be used to\nlead the discussion.\n       How did using a ruler help you partition your\n        number line evenly?\n       How does a line plot make data easier to read\n        and compare?\n       Share your answers to Problem 4.\n       Did you agree with Alicia in Problem 5? Why or\n        why not?\n       What did using the string in today’s lesson help\n        you discover about perimeter?\n       What do you notice about the connection\n        between area and perimeter?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                       Lesson 22:                Use a line plot to record the number of rectangles constructed in              298\n                                                 Lessons 20 and 21.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 300 (sprint) ---\nA STORY OF UNITS                                                                                        Lesson 22 Sprint 3 7\n\n\nA\n                                                                                                                        Number Correct: _______\n\nMultiply or Divide by 4\n\n1.                  2×4=                                                          23.                ___ × 4 = 40\n\n2.                  3×4=                                                          24.                 ___ × 4 = 8\n\n3.                  4×4=                                                          25.                ___ × 4 = 12\n\n4.                  5×4=                                                          26.                   40 ÷ 4 =\n\n5.                  1×4=                                                          27.                   20 ÷ 4 =\n\n6.                  8÷4=                                                          28.                    4÷4=\n\n7.                 12 ÷ 4 =                                                       29.                    8÷4=\n\n8.                 20 ÷ 4 =                                                       30.                   12 ÷ 4 =\n\n9.                  4÷4=                                                          31.                ___ × 4 = 24\n\n10.                16 ÷ 4 =                                                       32.                ___ × 4 = 28\n\n11.                 6×4=                                                          33.                ___ × 4 = 36\n\n12.                 7×4=                                                          34.                ___ × 4 = 32\n\n13.                 8×4=                                                          35.                   28 ÷ 4 =\n\n14.                 9×4=                                                          36.                   36 ÷ 4 =\n\n15.                10 × 4 =                                                       37.                   24 ÷ 4 =\n\n16.                32 ÷ 4 =                                                       38.                   32 ÷ 4 =\n\n17.                28 ÷ 4 =                                                       39.                   11 × 4 =\n\n18.                36 ÷ 4 =                                                       40.                   44 ÷ 4 =\n\n19.                24 ÷ 4 =                                                       41.                   12 ÷ 4 =\n\n20.                40 ÷ 4 =                                                       42.                   48 ÷ 4 =\n\n21.              ___ × 4 = 20                                                     43.                   14 × 4 =\n\n22.              ___ × 4 = 4                                                      44.                   56 ÷ 4 =\n\n\n                          Lesson 22:                Use a line plot to record the number of rectangles constructed in                      299\n                                                    Lessons 20 and 21.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 301 (sprint) ---\nA STORY OF UNITS                                                                                        Lesson 22 Sprint 3 7\n\n\nB\n                                                                                                                        Number Correct: _______\n                                                                                                                          Improvement: _______\nMultiply or Divide by 4\n\n1.                  1×4=                                                          23.                 ___ × 4 = 8\n\n2.                  2×4=                                                          24.                ___ × 4 = 40\n\n3.                  3×4=                                                          25.                ___ × 4 = 12\n\n4.                  4×4=                                                          26.                    8÷4=\n\n5.                  5×4=                                                          27.                    4÷4=\n\n6.                 12 ÷ 4 =                                                       28.                   40 ÷ 4 =\n\n7.                  8÷4=                                                          29.                   20 ÷ 4 =\n\n8.                 16 ÷ 4 =                                                       30.                   12 ÷ 4 =\n\n9.                  4÷4=                                                          31.                ___ × 4 = 12\n\n10.                20 ÷ 4 =                                                       32.                ___ × 4 = 16\n\n11.                10 × 4 =                                                       33.                ___ × 4 = 36\n\n12.                 6×4=                                                          34.                ___ × 4 = 28\n\n13.                 7×4=                                                          35.                   32 ÷ 4 =\n\n14.                 8×4=                                                          36.                   36 ÷ 4 =\n\n15.                 9×4=                                                          37.                   24 ÷ 4 =\n\n16.                28 ÷ 4 =                                                       38.                   28 ÷ 4 =\n\n17.                24 ÷ 4 =                                                       39.                   11 × 4 =\n\n18.                32 ÷ 4 =                                                       40.                   44 ÷ 4 =\n\n19.                40 ÷ 4 =                                                       41.                   12 × 4 =\n\n20.                36 ÷ 4 =                                                       42.                   48 ÷ 4 =\n\n21.              ___ × 4 = 4                                                      43.                   13 × 4 =\n\n22.              ___ × 4 = 20                                                     44.                   52 ÷ 4 =\n\n\n                          Lesson 22:                Use a line plot to record the number of rectangles constructed in                      300\n                                                    Lessons 20 and 21.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 302 (problem-set) ---\nA STORY OF UNITS                                                                             Lesson 22 Problem Set 3 7\n\n\nName                                                                                              Date\n\n1. Use the data you gathered from your Problem Sets to create a line plot for the number of rectangles you\n   created with each given perimeter.\n\n                                  Number of Rectangles Made with a Given Perimeter\n\n\n                                                     Perimeter Measurements in Units                            X = 1 Rectangle\n\n\n2. Why are all of the perimeter measurements even? Do all rectangles have an even perimeter?\n\n\n                       Lesson 22:                Use a line plot to record the number of rectangles constructed in                301\n                                                 Lessons 20 and 21.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 303 (problem-set) ---\nA STORY OF UNITS                                                                             Lesson 22 Problem Set 3 7\n\n\n3. Compare the two line plots we created. Is there any reason to think that knowing only the area of a\n   rectangle would help you to figure out its perimeter or knowing only the perimeter of a rectangle would\n   help you figure out its area?\n\n\n4. Sumi uses unit square tiles to build 3 rectangles that have an area of 32 square units. Does knowing this\n   help her find the number of rectangles she can build for a perimeter of 32 units? Why or why not?\n\n\n5. George draws 3 rectangles that have a perimeter of 14 centimeters. Alicia tells George that there are\n   more than 3 rectangles that have a perimeter of 14 centimeters. Explain why Alicia is correct.\n\n\n                       Lesson 22:                Use a line plot to record the number of rectangles constructed in     302\n                                                 Lessons 20 and 21.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 304 (exit-ticket) ---\nA STORY OF UNITS                                                                               Lesson 22 Exit Ticket 3 7\n\n\nName                                                                                             Date\n\nSuppose you have a rectangle with a perimeter of 2 cm. What can you conclude about the side lengths? Can\nall 4 sides of the rectangle measure a whole number of centimeters?\n\n\n                      Lesson 22:                Use a line plot to record the number of rectangles constructed in       303\n                                                Lessons 20 and 21.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 305 (homework) ---\nA STORY OF UNITS                                                                               Lesson 22 Homework 3 7\n\n\nName                                                                                              Date\n\n1. The following line plot shows the number of rectangles a student made using square unit tiles. Use the\n   line plot to answer the questions below.\n\n\n                      Number of Rectangles Made with a Given Perimeter\n\n\n                                                     Perimeter Measurements                          X = 1 Rectangle\n\n\n   a. Why are all of the perimeter measurements even? Do all rectangles have even perimeters?\n\n\n   b. Explain the pattern in the line plot. What types of side lengths make this pattern possible?\n\n\n   c. How many X’s would you draw for a perimeter of 32? Explain how you know.\n\n\n                       Lesson 22:                Use a line plot to record the number of rectangles constructed in     304\n                                                 Lessons 20 and 21.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 306 (homework) ---\nA STORY OF UNITS                                                                               Lesson 22 Homework 3 7\n\n\n2. Luis uses square inch tiles to build a rectangle with a perimeter of 24 inches. Does knowing this help him\n   find the number of rectangles he can build with an area of 24 square inches? Why or why not?\n\n\n3. Esperanza makes a rectangle with a piece of string. She says the perimeter of her rectangle is 33\n   centimeters. Explain how it’s possible for her rectangle to have an odd perimeter.\n\n\n                       Lesson 22:                Use a line plot to record the number of rectangles constructed in    305\n                                                 Lessons 20 and 21.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 307 (template) ---\nA STORY OF UNITS                                                                                                                     Lesson 22 Template 1 3 7\n\n\n                                                                                                                                      30\n                                       X\n                                       X\n                                       X\n                                       X\n                                       X\n                                       X\n                                       X\n\n\n                                                                                                                                      28\n                                         X\n                                         X\n                                         X\n                                         X\n                                         X\n                                         X\n                                         X\n\n\n                                                                                                                                      26\n                                                                                         X\n                                                                                         X\n                                                                                         X\n                                                                                         X\n                                                                                         X\n                                                                                         X\n\n                                                                                                                                      24\n                                                                                         X\n                                                                                         X\n                                                                                         X\n                                                                                         X\n                                                                                         X\n                                                                                         X\n\n\n                                                                                                                                                  X = 1 Rectangle\n                                                                                                                                      22\n                                                                                               X\n                                                                                               X\n                                                                                               X\n                                                                                               X\n                                                                                               X\n                                     Number of Rectangles Made with a Given Perimeter\n\n\n                                                                                                                                      20\n                                                                                               X\n                                                                                               X\n                                                                                               X\n                                                                                               X\n                                                                                               X\n\n                                                                                                                                      18\n                                                                                                     X\n                                                                                                     X\n                                                                                                     X\n                                                                                                     X\n\n\n                                                                                                                                                 Perimeter Measurements\n                                                                                                                                      16\n                                                                                                     X\n                                                                                                     X\n                                                                                                     X\n                                                                                                     X\n\n                                                                                                                                      14\n                                                                                                           X\n                                                                                                           X\n                                                                                                           X\n\n\n                                                                                                                                      12\n                                                                                                            X\n                                                                                                            X\n                                                                                                            X\n\n\n                                                                                                                                      10\n                                                                                                                 X\n                                                                                                                 X\n\n\n                                                                                                                                      8\n                                                                                                                  X\n                                                                                                                  X     X\n\n\n                                                                                                                                      6\n                                                                                                                        X\n\n                                                                                                                                      4\n\n\nline plot\n\n                     Lesson 22:                                                         Use a line plot to record the number of rectangles constructed in                 306\n                                                                                        Lessons 20 and 21.\n\n                     ©2015 Great Minds. eureka-math.org\n                     G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 308 (template) ---\nA STORY OF UNITS                                                                             Lesson 22 Template 2 3 7\n\n\n                            Rectangle A\n\n\n                                      Rectangle B\n\n\n                Rectangle C\n\n\n                                      Rectangle D\n\n\nrectangles\n\n\n                      Lesson 22:                Use a line plot to record the number of rectangles constructed in     307\n                                                Lessons 20 and 21.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 309 (lesson-instruction) ---\nA STORY OF UNITS\n\n     3\n   GRADE\n                          Mathematics Curriculum\n                                                                                                                            GRADE 3 • MODULE 7\n\n\nTopic E\nProblem Solving with Perimeter and\nArea\n3.MD.8, 3.G.1\n\n Focus Standards:            3.MD.8                     Solve real world and mathematical problems involving perimeters of polygons,\n                                                        including finding the perimeter given the side lengths, finding an unknown side length,\n                                                        and exhibiting rectangles with the same perimeter and different areas or with the\n                                                        same area and different perimeters.\n                             3.G.1                      Understand that shapes in different categories (e.g., rhombuses, rectangles, and\n                                                        others) may share attributes (e.g., having four sides), and that the shared attributes\n                                                        can define a larger category (e.g., quadrilaterals). Recognize rhombuses, rectangles,\n                                                        and squares as examples of quadrilaterals, and draw examples of quadrilaterals that do\n                                                        not belong to any of these subcategories.\n Instructional Days:         8\n Coherence -Links from:      G2–M6                      Foundations of Multiplication and Division\n                             G3–M3                      Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10\n                             G3–M4                      Multiplication and Area\n             -Links to:      G4–M3                      Multi-Digit Multiplication and Division\n\n\nIn Topic E, students solve problems with perimeter and area. Lesson 23 focuses on solving a variety of word\nproblems involving perimeter. This provides students an opportunity to use multiplication and division\nstrategies to solve problems about perimeter.\nStudents use rectangles and circles to create robots and environments for the robots using specified\nperimeter measurements in Lessons 24 through 27. They reason about the different whole number side\nlengths that may be produced for a given perimeter. For example, when given the requirement that the\nperimeter of the arms of the robot must be 14 inches, students experiment and draw different possibilities\nfor rectangles to determine which ones they prefer for the robot’s arms. Students cut out and assemble the\nparts of the robot from grid or construction paper and compare their robots with those of their peers. This\ncomparison leads to a discussion about the different areas that are generated for their classmates’ robot\nbodies, despite the fact that they have the same given perimeter. The final lesson in this sequence provides\nan opportunity for peer review and critique.\n\n\n                          Topic E:                      Problem Solving with Perimeter and Area                                             308\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 310 (lesson-instruction) ---\nA STORY OF UNITS                                                                            Topic E 3 7\n\n\nStudents return to problem solving in Lessons 28 and 29, this time working with a variety of word problems\ninvolving both area and perimeter. For example, if students are given both the length and the width of a\nrectangular football field, they should be able to determine both the perimeter and the area of the field.\nIn these lessons, students explore and develop strategies for solving a sequence of increasingly complex\nproblems. In Lesson 30, students further develop analyzing and critiquing skills. They initially discuss\nanonymous student work samples before sharing their own work and receiving feedback in small groups.\n\n A Teaching Sequence Toward Mastery of Problem Solving with Perimeter and Area\n Objective 1: Solve a variety of word problems with perimeter.\n              (Lesson 23)\n\n Objective 2: Use rectangles to draw a robot with specified perimeter measurements, and reason about\n              the different areas that may be produced.\n              (Lessons 24–27)\n\n Objective 3: Solve a variety of word problems involving area and perimeter using all four operations.\n              (Lessons 28–29)\n\n Objective 4: Share and critique peer strategies for problem solving.\n              (Lesson 30)\n\n\n                       Topic E:                      Problem Solving with Perimeter and Area             309\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 302,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                             Lesson 22 Problem Set 3 7\n\n\nName                                                                                              Date\n\n1. Use the data you gathered from your Problem Sets to create a line plot for the number of rectangles you\n   created with each given perimeter.\n\n                                  Number of Rectangles Made with a Given Perimeter\n\n\n                                                     Perimeter Measurements in Units                            X = 1 Rectangle\n\n\n2. Why are all of the perimeter measurements even? Do all rectangles have an even perimeter?\n\n\n                       Lesson 22:                Use a line plot to record the number of rectangles constructed in                301\n                                                 Lessons 20 and 21.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 303,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                             Lesson 22 Problem Set 3 7\n\n\n3. Compare the two line plots we created. Is there any reason to think that knowing only the area of a\n   rectangle would help you to figure out its perimeter or knowing only the perimeter of a rectangle would\n   help you figure out its area?\n\n\n4. Sumi uses unit square tiles to build 3 rectangles that have an area of 32 square units. Does knowing this\n   help her find the number of rectangles she can build for a perimeter of 32 units? Why or why not?\n\n\n5. George draws 3 rectangles that have a perimeter of 14 centimeters. Alicia tells George that there are\n   more than 3 rectangles that have a perimeter of 14 centimeters. Explain why Alicia is correct.\n\n\n                       Lesson 22:                Use a line plot to record the number of rectangles constructed in     302\n                                                 Lessons 20 and 21.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 497,
+        "text": "A STORY OF UNITS                                                                          Lesson 22 Answer Key 3 7\n\n\nLesson 22\nSprint\nSide A\n1.    8                                12. 28                                  23. 10                  34. 8\n2.    12                               13. 32                                  24. 2                   35. 7\n3.    16                               14. 36                                  25. 3                   36. 9\n4.    20                               15. 40                                  26. 10                  37. 6\n5.    4                                16. 8                                   27. 5                   38. 8\n6.    2                                17. 7                                   28. 1                   39. 44\n7.    3                                18. 9                                   29. 2                   40. 11\n8.    5                                19. 6                                   30. 3                   41. 3\n9.    1                                20. 10                                  31. 6                   42. 12\n10. 4                                  21. 5                                   32. 7                   43. 56\n11. 24                                 22. 1                                   33. 9                   44. 14\n\n\nSide B\n1.    4                                12. 24                                  23. 2                   34. 7\n2.    8                                13. 28                                  24. 10                  35. 8\n3.    12                               14. 32                                  25. 3                   36. 9\n4.    16                               15. 36                                  26. 2                   37. 6\n5.    20                               16. 7                                   27. 1                   38. 7\n6.    3                                17. 6                                   28. 10                  39. 44\n7.    2                                18. 8                                   29. 5                   40. 11\n8.    4                                19. 10                                  30. 3                   41. 48\n9.    1                                20. 9                                   31. 3                   42. 12\n10. 5                                  21. 1                                   32. 4                   43. 52\n11. 40                                 22. 5                                   33. 9                   44. 13\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                         496\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 498,
+        "text": "A STORY OF UNITS                                                                          Lesson 22 Answer Key 3 7\n\n\nProblem Set\n1.    Line plot created\n2.    Answers will vary.\n3.    No\n4.    No; explanations will vary.\n5.    Explanations will vary.\n\n\nExit Ticket\nAnswers will vary.\n\n\nHomework\n1.    a. Explanations will vary; no\n      b. Explanations will vary; whole number side lengths\n      c. 8; explanations will vary.\n2.    No; explanations will vary.\n3.    Explanations will vary.\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                         497\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      }
+    ]
+  }
+}

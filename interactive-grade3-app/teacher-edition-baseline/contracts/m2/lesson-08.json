@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m2-l8",
+  "moduleId": "m2",
+  "lessonNumber": 8,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+    "teacherEditionBytes": 20015771,
+    "lessonPdfPages": {
+      "start": 96,
+      "end": 105
+    },
+    "problemSetPdfPages": [
+      101,
+      102
+    ],
+    "exitTicketPdfPages": [
+      103
+    ],
+    "homeworkPdfPages": [
+      104,
+      105
+    ],
+    "answerKeyPdfPages": [
+      288
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m2-student/workbook-page-033.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m2-teacher/page-101.png",
+      "/source-pages/m2-teacher/page-102.png",
+      "/source-pages/m2-answer-key/page-288.png"
+    ]
+  },
+  "objective": "Solve one-step word problems involving metric weights within 100 and estimate to reason about solutions.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.\n\n\n                        Lesson 8:                     Solve one-step word problems involving metric weights within 100 and                 98\n                                                      estimate to reason about solutions.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 8 3 2",
+    "conceptDevelopmentText": "Materials: (T) Spring scale, digital scale (S) Spring scales that measure grams, personal white board, 1-kg bag\n           of rice, beans (baggie weighing 28 g per pair), popcorn kernels (baggie weighing 36 g per pair)\n\nProblem 1: Solve one-step word problems using addition.\nPairs of students have spring scales and baggies of beans and popcorn kernels.\n    T:   Let’s use spring scales to weigh our beans and kernels. Should we use grams or kilograms?\n    S:   Grams!\n    T:   Compare the feel of the beans and the popcorn kernels. Which do you think weighs more?\n    S:   (Pick up bags and estimate.)\n    T:   Work with your partner to weigh the beans and kernels. Record the measurements on your\n         personal white board.\n    S:   (Weigh and record. Beans weigh about 28 grams, and kernels weigh about 36 grams.)\n    T:   Was your estimation correct? Tell your partner.\n    S:   (Share.)\n    T:   Let’s add to find the total weight of the beans and kernels. Solve the problem on your personal\n         white board.\n    S:   (Solve.)\n    T:   I noticed someone used a simplifying strategy to add. She noticed that 28 grams is very close to\n         30 grams. Thirty is an easier number to add than 28. Watch how she made a ten to add.\n         (Model sequence on the next page.)\n\n\n                         Lesson 8:                     Solve one-step word problems involving metric weights within 100 and                 96\n                                                       estimate to reason about solutions.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 8 3 2\n\n\n                                                                                                                            NOTES ON\n                                                                                                                            MULTIPLE MEANS\n                                                                                                                            OF ACTION AND\n                                                                                                                            EXPRESSION:\n                                                                                                                Depending on timing and the variety of\n                                                                                                                strategies used to solve, consider\n                                                                                                                selecting a few students to share their\n    T:   How might this strategy help us solve other similar                                                    work.\n         problems using mental math?\n    S:   From 28 it was easy to make 30, so I guess when there’s a number close to a ten, like 39 or 58, we\n         can just get 1 or 2 out of the other number to make a ten.  Yeah, it is easy to add tens like 20, 30,\n         40.  So, 49 + 34 becomes 49 + 1 + 33, then 50 + 33 = 83.  Oh! One just moved from 34 to 49!\n    T:   Tell your partner how we could have used our scales to find the total weight.\n    S:   We could have weighed the beans and kernels together!\n    T:   Do that now to check your calculation.\n\nProblem 2: Solve one-step word problems using subtraction.\n    T:   (Project this compare lesser (smaller) unknown problem with result unknown problem.) Lindsey\n         wants to ride the roller coaster. The minimum weight to ride is 32 kilograms. She weighs\n         14 kilograms less than the required weight. How many kilograms does Lindsey weigh?\n    T:   Work with your partner to draw and write an equation\n         to model the problem.\n    S:   (Model.)                                                                   NOTES ON\n    T:   How will you solve? Why will you do it that way?                           MULTIPLE MEANS\n    S:   (Discuss. Most will likely agree on subtraction:                           OF ENGAGEMENT:\n         32 kg – 14 kg.)                                                   Adjust students’ level of independence\n    T:   Talk with your partner about how you might use tens               to provide an appropriate challenge. It\n         to make a simplifying strategy for solving.                       may work well for some students to\n                                                                           work on their own and for others to\n    S:   How about 32 – 10 – 4?  Or we could break 14 into\n                                                                           work in pairs.\n         10 + 2 + 2. Then it’s easy to do 32 – 2 – 10 – 2.\n                                                                           An intermediate level of scaffolding\n    T:   Solve the problem now. (Select one to two pairs of\n                                                                           might be for students to work in pairs,\n         students to demonstrate their work.)                              with each partner solving one of the\nAs time allows, repeat the process.                                                                              two problems. Then partners can\n                                                                                                                 check each other’s work and compare\n        Take from with result unknown: Ms. Casallas buys a\n                                                                                                                 strategies. Result unknown problems\n         new cabinet for the classroom. It comes in a box that\n                                                                                                                 are usually easiest. Assign problems\n         weighs 42 kilograms. Ms. Casallas unpacks pieces that                                                   strategically.\n         total 16 kilograms. How much does the box weigh\n         now?\n        Take from with change unknown: Mr. Flores weighs 73 kilograms. After exercising every day for\n         6 weeks, he loses weight. Now he weighs 67 kilograms. How much weight did he lose?\n\n\n                        Lesson 8:                     Solve one-step word problems involving metric weights within 100 and                                97\n                                                      estimate to reason about solutions.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 8 3 2\n\n\nProblem 3: Solve one-step word problems using multiplication.\n    T:   Let’s use a digital scale to measure the weight of Table 1’s supply box. (Model weighing.)\n    T:   It weighs about 2 kilograms. Talk with your partner. Is it reasonable to suppose that the supply\n         boxes at each table weigh about 2 kilograms?\n    S:   No, because ours has more crayons than Table 1’s.  But it’s not very many crayons, and they don’t\n         weigh very much. Besides, the teacher said about 2 kilograms.  It’s reasonable because they are\n MP.4\n         the same box, and they all have almost the exact same things in them.\n    T:   How are we using a simplifying strategy by supposing that each of the boxes weighs about\n         2 kilograms?\n    S:   It’s simpler because we don’t have to weigh everything.  It’s simplifying because then we can just\n         multiply the number of boxes times 2 kilograms. Multiplying by two is easier than adding a bunch of\n         different numbers together.\n    T:   Partner A, model and solve this problem. Explain your solution to Partner B. Partner B, check your\n         friend’s work. Then write and solve a different multiplication sentence to show the problem.\n         Explain to, or model for, Partner A why your multiplication sentence makes sense, too.\n    S:   (Partner A models and writes 6 × 2. Partner B checks work and writes and explains 2 × 6.)\nAs time allows, repeat the process with the following suggested equal measures with unknown product\nproblems.\n        Jerry buys 3 bags of groceries. Each bag weighs 4 kilograms. How many kilograms do Jerry’s grocery\n         bags weigh in all?\n        A dictionary weighs 3 kilograms. How many kilograms do 9 dictionaries weigh?\n\nProblem 4: Solve one-step word problems using division.\n    T:   (Project this equal measures with group size unknown problem.) Eight chairs weigh 24 kilograms.\n         What is the weight of 1 chair? Work with your partner to model or write an equation to represent\n         the problem.\n    S:   (Model and/or write 24 ÷ 8 =        .)\n    T:   What will be your strategy for solving?\n    S:   We can skip-count by eights just like we practiced in today’s fluency activity!\nAs time allows, repeat the process.\n        Equal measures with group size unknown:\n         Thirty-six kilograms of apples are equally distributed into 4 crates. What is the weight of each crate?\n        Equal measures with number of groups unknown: A tricycle weighs 8 kilograms. The delivery truck is\n         almost full but can hold 40 kilograms more. How many more tricycles can the truck hold?",
+    "fluencyPracticeText": "help you with\n         problem solving during the Concept\n         Development?\n        Select students to share simplifying strategies or\n         mental math strategies they used to solve\n         problems in the Problem Set. If no one used a\n         special strategy or mental math, brainstorm\n         about alternative ways for solving Problem 2.\n\nExit Ticket (3 minutes)\nAfter the",
+    "problemSetGuidanceText": "Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For\nsome classes, it may be appropriate to modify the assignment by specifying which problems they work on\nfirst. Some problems do not specify a method for solving. Students should solve these problems using the\nRDW approach used for Application Problems.\n\n\n                        Lesson 8:                     Solve one-step word problems involving metric weights within 100 and                 98\n                                                      estimate to reason about solutions.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 8 3 2",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Let’s use spring scales to weigh our beans and kernels. Should we use grams or kilograms?"
+      },
+      {
+        "speaker": "students",
+        "text": "Grams!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Compare the feel of the beans and the popcorn kernels. Which do you think weighs more?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Pick up bags and estimate.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to weigh the beans and kernels. Record the measurements on your personal white board."
+      },
+      {
+        "speaker": "students",
+        "text": "(Weigh and record. Beans weigh about 28 grams, and kernels weigh about 36 grams.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Was your estimation correct? Tell your partner."
+      },
+      {
+        "speaker": "students",
+        "text": "(Share.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s add to find the total weight of the beans and kernels. Solve the problem on your personal white board."
+      },
+      {
+        "speaker": "students",
+        "text": "(Solve.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "I noticed someone used a simplifying strategy to add. She noticed that 28 grams is very close to 30 grams. Thirty is an easier number to add than 28. Watch how she made a ten to add. (Model sequence on the next page.) estimate to reason about solutions. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 8 3 2 MULTIPLE MEANS OF ACTION AND EXPRESSION: Depending on timing and the variety of strategies used to solve, consider selecting a few students to share their"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How might this strategy help us solve other similar work. problems using mental math?"
+      },
+      {
+        "speaker": "students",
+        "text": "From 28 it was easy to make 30, so I guess when there’s a number close to a ten, like 39 or 58, we can just get 1 or 2 out of the other number to make a ten.  Yeah, it is easy to add tens like 20, 30, 40.  So, 49 + 34 becomes 49 + 1 + 33, then 50 + 33 = 83.  Oh! One just moved from 34 to 49!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell your partner how we could have used our scales to find the total weight."
+      },
+      {
+        "speaker": "students",
+        "text": "We could have weighed the beans and kernels together!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Do that now to check your calculation."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project this compare lesser (smaller) unknown problem with result unknown problem.) Lindsey wants to ride the roller coaster. The minimum weight to ride is 32 kilograms. She weighs 14 kilograms less than the required weight. How many kilograms does Lindsey weigh?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to draw and write an equation to model the problem."
+      },
+      {
+        "speaker": "students",
+        "text": "(Model.) NOTES ON"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How will you solve? Why will you do it that way? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss. Most will likely agree on subtraction: OF ENGAGEMENT: 32 kg – 14 kg.) Adjust students’ level of independence"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk with your partner about how you might use tens to provide an appropriate challenge. It to make a simplifying strategy for solving. may work well for some students to work on their own and for others to"
+      },
+      {
+        "speaker": "students",
+        "text": "How about 32 – 10 – 4?  Or we could break 14 into work in pairs. 10 + 2 + 2. Then it’s easy to do 32 – 2 – 10 – 2. An intermediate level of scaffolding"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Solve the problem now. (Select one to two pairs of might be for students to work in pairs, students to demonstrate their work.) with each partner solving one of the As time allows, repeat the process. two problems. Then partners can check each other’s work and compare  Take from with result unknown: Ms. Casallas buys a strategies. Result unknown problems new cabinet for the classroom. It comes in a box that are usually easiest. Assign problems weighs 42 kilograms. Ms. Casallas unpacks pieces that strategically. total 16 kilograms. How much does the box weigh now?  Take from with change unknown: Mr. Flores weighs 73 kilograms. After exercising every day for 6 weeks, he loses weight. Now he weighs 67 kilograms. How much weight did he lose? estimate to reason about solutions. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 8 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use a digital scale to measure the weight of Table 1’s supply box. (Model weighing.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "It weighs about 2 kilograms. Talk with your partner. Is it reasonable to suppose that the supply boxes at each table weigh about 2 kilograms?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, because ours has more crayons than Table 1’s.  But it’s not very many crayons, and they don’t weigh very much. Besides, the teacher said about 2 kilograms.  It’s reasonable because they are MP.4 the same box, and they all have almost the exact same things in them."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How are we using a simplifying strategy by supposing that each of the boxes weighs about 2 kilograms?"
+      },
+      {
+        "speaker": "students",
+        "text": "It’s simpler because we don’t have to weigh everything.  It’s simplifying because then we can just multiply the number of boxes times 2 kilograms. Multiplying by two is easier than adding a bunch of different numbers together."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Partner A, model and solve this problem. Explain your solution to Partner B. Partner B, check your friend’s work. Then write and solve a different multiplication sentence to show the problem. Explain to, or model for, Partner A why your multiplication sentence makes sense, too."
+      },
+      {
+        "speaker": "students",
+        "text": "(Partner A models and writes 6 × 2. Partner B checks work and writes and explains 2 × 6.) As time allows, repeat the process with the following suggested equal measures with unknown product problems.  Jerry buys 3 bags of groceries. Each bag weighs 4 kilograms. How many kilograms do Jerry’s grocery bags weigh in all?  A dictionary weighs 3 kilograms. How many kilograms do 9 dictionaries weigh?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project this equal measures with group size unknown problem.) Eight chairs weigh 24 kilograms. What is the weight of 1 chair? Work with your partner to model or write an equation to represent the problem."
+      },
+      {
+        "speaker": "students",
+        "text": "(Model and/or write 24 ÷ 8 = .)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What will be your strategy for solving?"
+      },
+      {
+        "speaker": "students",
+        "text": "We can skip-count by eights just like we practiced in today’s fluency activity! As time allows, repeat the process.  Equal measures with group size unknown: Thirty-six kilograms of apples are equally distributed into 4 crates. What is the weight of each crate?  Equal measures with number of groups unknown: A tricycle weighs 8 kilograms. The delivery truck is almost full but can hold 40 kilograms more. How many more tricycles can the truck hold?"
+      }
+    ],
+    "teacherPrompts": [
+      "Let’s use spring scales to weigh our beans and kernels. Should we use grams or kilograms?",
+      "Compare the feel of the beans and the popcorn kernels. Which do you think weighs more?",
+      "Work with your partner to weigh the beans and kernels. Record the measurements on your personal white board.",
+      "Was your estimation correct? Tell your partner.",
+      "Let’s add to find the total weight of the beans and kernels. Solve the problem on your personal white board.",
+      "I noticed someone used a simplifying strategy to add. She noticed that 28 grams is very close to 30 grams. Thirty is an easier number to add than 28. Watch how she made a ten to add. (Model sequence on the next page.) estimate to reason about solutions. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 8 3 2 MULTIPLE MEANS OF ACTION AND EXPRESSION: Depending on timing and the variety of strategies used to solve, consider selecting a few students to share their",
+      "How might this strategy help us solve other similar work. problems using mental math?",
+      "Tell your partner how we could have used our scales to find the total weight.",
+      "Do that now to check your calculation.",
+      "(Project this compare lesser (smaller) unknown problem with result unknown problem.) Lindsey wants to ride the roller coaster. The minimum weight to ride is 32 kilograms. She weighs 14 kilograms less than the required weight. How many kilograms does Lindsey weigh?",
+      "Work with your partner to draw and write an equation to model the problem.",
+      "How will you solve? Why will you do it that way? MULTIPLE MEANS",
+      "Talk with your partner about how you might use tens to provide an appropriate challenge. It to make a simplifying strategy for solving. may work well for some students to work on their own and for others to",
+      "Solve the problem now. (Select one to two pairs of might be for students to work in pairs, students to demonstrate their work.) with each partner solving one of the As time allows, repeat the process. two problems. Then partners can check each other’s work and compare  Take from with result unknown: Ms. Casallas buys a strategies. Result unknown problems new cabinet for the classroom. It comes in a box that are usually easiest. Assign problems weighs 42 kilograms. Ms. Casallas unpacks pieces that strategically. total 16 kilograms. How much does the box weigh now?  Take from with change unknown: Mr. Flores weighs 73 kilograms. After exercising every day for 6 weeks, he loses weight. Now he weighs 67 kilograms. How much weight did he lose? estimate to reason about solutions. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 8 3 2",
+      "Let’s use a digital scale to measure the weight of Table 1’s supply box. (Model weighing.)",
+      "It weighs about 2 kilograms. Talk with your partner. Is it reasonable to suppose that the supply boxes at each table weigh about 2 kilograms?",
+      "How are we using a simplifying strategy by supposing that each of the boxes weighs about 2 kilograms?",
+      "Partner A, model and solve this problem. Explain your solution to Partner B. Partner B, check your friend’s work. Then write and solve a different multiplication sentence to show the problem. Explain to, or model for, Partner A why your multiplication sentence makes sense, too.",
+      "(Project this equal measures with group size unknown problem.) Eight chairs weigh 24 kilograms. What is the weight of 1 chair? Work with your partner to model or write an equation to represent the problem.",
+      "What will be your strategy for solving?"
+    ],
+    "debriefPrompt": "How did your tape diagrams change in Problems 2(a) and 2(b)?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Tim goes to the market to buy fruits and vegetables. He weighs some string beans and some grapes. List the weights for both the string beans and grapes. The string beans weigh ____ grams. The grapes weigh ____ grams.",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "Use tape diagrams to model the following problems. Keiko and her brother Jiro get weighed at the doctor's office. Keiko weighs 35 kilograms, and Jiro weighs 43 kilograms. a. What is Keiko and Jiro's total weight? Keiko and Jiro weigh ____ kilograms. b. How much heavier is Jiro than Keiko? Jiro is ____ kilograms heavier than Keiko. estimate to reason about solutions. Jared estimates that his houseplant is as heavy as a 5-kilogram bowling ball. Draw a tape diagram to estimate the weight of 3 houseplants. 4. Jane and her 8 friends go apple picking. They share what they pick equally. The total weight of the apples they pick is shown to the right. a. About how many kilograms of apples will Jane take home? 27 kg b. Jane estimates that a pumpkin weighs about as much as her share of the apples. About how much do 7 pumpkins weigh altogether? estimate to reason about solutions.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                        Lesson 8 Problem Set 3 2\n\n\nName                                                                                                       Date\n\n1. Tim goes to the market to buy fruits and vegetables. He weighs some string beans and some grapes.\n\n\n                                                                                List the weights for both the string beans and grapes.\n\n                                                                               The string beans weigh _____________ grams.\n\n                                                                               The grapes weigh _____________ grams.\n\n\n2. Use tape diagrams to model the following problems. Keiko and her brother Jiro get weighed at the\n   doctor’s office. Keiko weighs 35 kilograms, and Jiro weighs 43 kilograms.\n   a. What is Keiko and Jiro’s total weight?\n\n\n                                                                               Keiko and Jiro weigh __________ kilograms.\n\n   b. How much heavier is Jiro than Keiko?\n\n\n                                                                               Jiro is __________ kilograms heavier than Keiko.\n\n\n                       Lesson 8:                     Solve one-step word problems involving metric weights within 100 and         100\n                                                     estimate to reason about solutions.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                        Lesson 8 Problem Set 3 2\n\n\n3. Jared estimates that his houseplant is as heavy as a 5-kilogram bowling ball. Draw a tape diagram to\n   estimate the weight of 3 houseplants.\n\n\n4. Jane and her 8 friends go apple picking. They share what they pick equally.\n   The total weight of the apples they pick is shown to the right.\n   a. About how many kilograms of apples will Jane take home?\n\n\n                                                                                                                                27 kg\n\n\n   b. Jane estimates that a pumpkin weighs about as much as her share of the apples. About how much do\n      7 pumpkins weigh altogether?\n\n\n                       Lesson 8:                     Solve one-step word problems involving metric weights within 100 and               101\n                                                     estimate to reason about solutions.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    464; 355                                                                    3.        Tape diagram drawn correctly; about 15 kg\n2.    a. 78; problem modeled with tape diagram                                    4.        a. About 3 kg\n      b. 8; problem modeled with tape diagram                                               b. About 21 kg",
+    "answerKeyText": "A STORY OF UNITS                                                                                         Lesson 8 Answer Key 3 2\n\n\nLesson 8\nProblem Set\n1.    464; 355                                                                    3.        Tape diagram drawn correctly; about 15 kg\n2.    a. 78; problem modeled with tape diagram                                    4.        a. About 3 kg\n      b. 8; problem modeled with tape diagram                                               b. About 21 kg\n\n\nExit Ticket\n      a. 14 kg\n      b. 28 kg\n      c. 3 backpacks\n\n\nHomework\n1.    a. C                                                                        3.        430 g\n      b. B                                                                        4.        a. 91 kg\n      c. 4                                                                                  b. 125 kg\n      d. 36 kg                                                                    5.        a. 7 kg\n2.    840 g                                                                                 b. 5 kg\n\n\n                                                                                                                                        287\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "tape-diagram",
+      "measurement-scale",
+      "table-or-chart",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "tape-diagram": [
+        "2. Use tape diagrams to model the following problems. Keiko and her brother Jiro get weighed at the",
+        "3. Jared estimates that his houseplant is as heavy as a 5-kilogram bowling ball. Draw a tape diagram to"
+      ],
+      "measurement-scale": [
+        "Solve one-step word problems involving metric weights within 100 and estimate to reason about solutions.",
+        "Lesson 8: Solve one-step word problems involving metric weights within 100 and 98",
+        "Materials: (T) Spring scale, digital scale (S) Spring scales that measure grams, personal white board, 1-kg bag",
+        "of rice, beans (baggie weighing 28 g per pair), popcorn kernels (baggie weighing 36 g per pair)",
+        "Pairs of students have spring scales and baggies of beans and popcorn kernels.",
+        "T: Let’s use spring scales to weigh our beans and kernels. Should we use grams or kilograms?",
+        "S: Grams!",
+        "T: Compare the feel of the beans and the popcorn kernels. Which do you think weighs more?"
+      ],
+      "table-or-chart": [
+        "T: Let’s use a digital scale to measure the weight of Table 1’s supply box. (Model weighing.)",
+        "boxes at each table weigh about 2 kilograms?",
+        "S: No, because ours has more crayons than Table 1’s.  But it’s not very many crayons, and they don’t"
+      ],
+      "money-model": [
+        " Take from with change unknown: Mr. Flores weighs 73 kilograms. After exercising every day for"
+      ],
+      "picture-or-drawing": [
+        "T: Work with your partner to draw and write an equation",
+        "2. Use tape diagrams to model the following problems. Keiko and her brother Jiro get weighed at the",
+        "3. Jared estimates that his houseplant is as heavy as a 5-kilogram bowling ball. Draw a tape diagram to"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Compare the feel of the beans and the popcorn kernels. Which do you think weighs more?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s add to find the total weight of the beans and kernels. Solve the problem on your personal white board."
+      },
+      {
+        "speaker": "students",
+        "text": "(Solve.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "I noticed someone used a simplifying strategy to add. She noticed that 28 grams is very close to 30 grams. Thirty is an easier number to add than 28. Watch how she made a ten to add. (Model sequence on the next page.) estimate to reason about solutions. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 8 3 2 MULTIPLE MEANS OF ACTION AND EXPRESSION: Depending on timing and the variety of strategies used to solve, consider selecting a few students to share their"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How might this strategy help us solve other similar work. problems using mental math?"
+      },
+      {
+        "speaker": "students",
+        "text": "From 28 it was easy to make 30, so I guess when there’s a number close to a ten, like 39 or 58, we can just get 1 or 2 out of the other number to make a ten.  Yeah, it is easy to add tens like 20, 30, 40.  So, 49 + 34 becomes 49 + 1 + 33, then 50 + 33 = 83.  Oh! One just moved from 34 to 49!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project this compare lesser (smaller) unknown problem with result unknown problem.) Lindsey wants to ride the roller coaster. The minimum weight to ride is 32 kilograms. She weighs 14 kilograms less than the required weight. How many kilograms does Lindsey weigh?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to draw and write an equation to model the problem."
+      },
+      {
+        "speaker": "students",
+        "text": "(Model.) NOTES ON"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How will you solve? Why will you do it that way? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Solve the problem now. (Select one to two pairs of might be for students to work in pairs, students to demonstrate their work.) with each partner solving one of the As time allows, repeat the process. two problems. Then partners can check each other’s work and compare  Take from with result unknown: Ms. Casallas buys a strategies. Result unknown problems new cabinet for the classroom. It comes in a box that are usually easiest. Assign problems weighs 42 kilograms. Ms. Casallas unpacks pieces that strategically. total 16 kilograms. How much does the box weigh now?  Take from with change unknown: Mr. Flores weighs 73 kilograms. After exercising every day for 6 weeks, he loses weight. Now he weighs 67 kilograms. How much weight did he lose? estimate to reason about solutions. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 8 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use a digital scale to measure the weight of Table 1’s supply box. (Model weighing.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Partner A, model and solve this problem. Explain your solution to Partner B. Partner B, check your friend’s work. Then write and solve a different multiplication sentence to show the problem. Explain to, or model for, Partner A why your multiplication sentence makes sense, too."
+      },
+      {
+        "speaker": "students",
+        "text": "(Partner A models and writes 6 × 2. Partner B checks work and writes and explains 2 × 6.) As time allows, repeat the process with the following suggested equal measures with unknown product problems.  Jerry buys 3 bags of groceries. Each bag weighs 4 kilograms. How many kilograms do Jerry’s grocery bags weigh in all?  A dictionary weighs 3 kilograms. How many kilograms do 9 dictionaries weigh?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project this equal measures with group size unknown problem.) Eight chairs weigh 24 kilograms. What is the weight of 1 chair? Work with your partner to model or write an equation to represent the problem."
+      },
+      {
+        "speaker": "students",
+        "text": "(Model and/or write 24 ÷ 8 = .)"
+      },
+      {
+        "speaker": "students",
+        "text": "We can skip-count by eights just like we practiced in today’s fluency activity! As time allows, repeat the process.  Equal measures with group size unknown: Thirty-six kilograms of apples are equally distributed into 4 crates. What is the weight of each crate?  Equal measures with number of groups unknown: A tricycle weighs 8 kilograms. The delivery truck is almost full but can hold 40 kilograms more. How many more tricycles can the truck hold?"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 96 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 8 3 2\n\n\nLesson 8\nObjective: Solve one-step word problems involving metric weights within\n100 and estimate to reason about solutions.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (8 minutes)\n Concept Development               (42 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (8 minutes)\n\n Divide Grams and Kilograms 3.MD.2                                  (2 minutes)\n Determine the Unit of Measure 3.MD.2                               (2 minutes)\n Group Counting 3.OA.1                                              (4 minutes)\n\nDivide Grams and Kilograms (2 minutes)\nNote: This activity reviews the decomposition of 1 kg, 100 g, and 10 g from Lesson 6, as well as division skills\nusing units of 10 from Module 1.\n    T:   (Project 10 g ÷ 10 = ___.) Read the division sentence.\n    S:   10 grams ÷ 10 = 1 gram.\nContinue with the following possible sequence: 100 g ÷ 10 and\n1,000 g ÷ 10.                                                                                                               NOTES ON\n                                                                                                                            MULTIPLE MEANS\nDetermine the Unit of Measure (2 minutes)                                                                                   OF REPRESENTATION:\n                                                                                                                Provide a visual. Use a place value\nNote: This activity reviews the difference in size between grams                                                chart to model the division, making an\nand kilograms as units of measurement from Lesson 7.                                                            explicit connection between metric\n                                                                                                                weight measurement and the base ten\n    T:   I’ll name an object. You say if it should be measured in\n                                                                                                                system.\n         grams or kilograms. Apple.\n    S:   Grams.\nContinue with the following possible sequence: carrot, dog, pencil, classroom chair, car tire, and paper clip.\n\n\n                        Lesson 8:                     Solve one-step word problems involving metric weights within 100 and                               95\n                                                      estimate to reason about solutions.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 97 (concept-development) ---\nA STORY OF UNITS                                                                                                               Lesson 8 3 2\n\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. The group counting in this\nactivity reviews foundational multiplication strategies from Module 1 and anticipates units used in Module 3.\nDirect students to count forward and backward, occasionally changing the direction of the count:\n        Threes to 30\n        Fours to 40\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\nAs students become more fluent with skip-counting by a particular unit, have them track the number of\ngroups counted on their fingers.\n\n\nConcept Development (42 minutes)\n\nMaterials: (T) Spring scale, digital scale (S) Spring scales that measure grams, personal white board, 1-kg bag\n           of rice, beans (baggie weighing 28 g per pair), popcorn kernels (baggie weighing 36 g per pair)\n\nProblem 1: Solve one-step word problems using addition.\nPairs of students have spring scales and baggies of beans and popcorn kernels.\n    T:   Let’s use spring scales to weigh our beans and kernels. Should we use grams or kilograms?\n    S:   Grams!\n    T:   Compare the feel of the beans and the popcorn kernels. Which do you think weighs more?\n    S:   (Pick up bags and estimate.)\n    T:   Work with your partner to weigh the beans and kernels. Record the measurements on your\n         personal white board.\n    S:   (Weigh and record. Beans weigh about 28 grams, and kernels weigh about 36 grams.)\n    T:   Was your estimation correct? Tell your partner.\n    S:   (Share.)\n    T:   Let’s add to find the total weight of the beans and kernels. Solve the problem on your personal\n         white board.\n    S:   (Solve.)\n    T:   I noticed someone used a simplifying strategy to add. She noticed that 28 grams is very close to\n         30 grams. Thirty is an easier number to add than 28. Watch how she made a ten to add.\n         (Model sequence on the next page.)\n\n\n                         Lesson 8:                     Solve one-step word problems involving metric weights within 100 and                 96\n                                                       estimate to reason about solutions.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 98 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                              Lesson 8 3 2\n\n\n                                                                                                                            NOTES ON\n                                                                                                                            MULTIPLE MEANS\n                                                                                                                            OF ACTION AND\n                                                                                                                            EXPRESSION:\n                                                                                                                Depending on timing and the variety of\n                                                                                                                strategies used to solve, consider\n                                                                                                                selecting a few students to share their\n    T:   How might this strategy help us solve other similar                                                    work.\n         problems using mental math?\n    S:   From 28 it was easy to make 30, so I guess when there’s a number close to a ten, like 39 or 58, we\n         can just get 1 or 2 out of the other number to make a ten.  Yeah, it is easy to add tens like 20, 30,\n         40.  So, 49 + 34 becomes 49 + 1 + 33, then 50 + 33 = 83.  Oh! One just moved from 34 to 49!\n    T:   Tell your partner how we could have used our scales to find the total weight.\n    S:   We could have weighed the beans and kernels together!\n    T:   Do that now to check your calculation.\n\nProblem 2: Solve one-step word problems using subtraction.\n    T:   (Project this compare lesser (smaller) unknown problem with result unknown problem.) Lindsey\n         wants to ride the roller coaster. The minimum weight to ride is 32 kilograms. She weighs\n         14 kilograms less than the required weight. How many kilograms does Lindsey weigh?\n    T:   Work with your partner to draw and write an equation\n         to model the problem.\n    S:   (Model.)                                                                   NOTES ON\n    T:   How will you solve? Why will you do it that way?                           MULTIPLE MEANS\n    S:   (Discuss. Most will likely agree on subtraction:                           OF ENGAGEMENT:\n         32 kg – 14 kg.)                                                   Adjust students’ level of independence\n    T:   Talk with your partner about how you might use tens               to provide an appropriate challenge. It\n         to make a simplifying strategy for solving.                       may work well for some students to\n                                                                           work on their own and for others to\n    S:   How about 32 – 10 – 4?  Or we could break 14 into\n                                                                           work in pairs.\n         10 + 2 + 2. Then it’s easy to do 32 – 2 – 10 – 2.\n                                                                           An intermediate level of scaffolding\n    T:   Solve the problem now. (Select one to two pairs of\n                                                                           might be for students to work in pairs,\n         students to demonstrate their work.)                              with each partner solving one of the\nAs time allows, repeat the process.                                                                              two problems. Then partners can\n                                                                                                                 check each other’s work and compare\n        Take from with result unknown: Ms. Casallas buys a\n                                                                                                                 strategies. Result unknown problems\n         new cabinet for the classroom. It comes in a box that\n                                                                                                                 are usually easiest. Assign problems\n         weighs 42 kilograms. Ms. Casallas unpacks pieces that                                                   strategically.\n         total 16 kilograms. How much does the box weigh\n         now?\n        Take from with change unknown: Mr. Flores weighs 73 kilograms. After exercising every day for\n         6 weeks, he loses weight. Now he weighs 67 kilograms. How much weight did he lose?\n\n\n                        Lesson 8:                     Solve one-step word problems involving metric weights within 100 and                                97\n                                                      estimate to reason about solutions.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 99 (application-problem) ---\nA STORY OF UNITS                                                                                                              Lesson 8 3 2\n\n\nProblem 3: Solve one-step word problems using multiplication.\n    T:   Let’s use a digital scale to measure the weight of Table 1’s supply box. (Model weighing.)\n    T:   It weighs about 2 kilograms. Talk with your partner. Is it reasonable to suppose that the supply\n         boxes at each table weigh about 2 kilograms?\n    S:   No, because ours has more crayons than Table 1’s.  But it’s not very many crayons, and they don’t\n         weigh very much. Besides, the teacher said about 2 kilograms.  It’s reasonable because they are\n MP.4\n         the same box, and they all have almost the exact same things in them.\n    T:   How are we using a simplifying strategy by supposing that each of the boxes weighs about\n         2 kilograms?\n    S:   It’s simpler because we don’t have to weigh everything.  It’s simplifying because then we can just\n         multiply the number of boxes times 2 kilograms. Multiplying by two is easier than adding a bunch of\n         different numbers together.\n    T:   Partner A, model and solve this problem. Explain your solution to Partner B. Partner B, check your\n         friend’s work. Then write and solve a different multiplication sentence to show the problem.\n         Explain to, or model for, Partner A why your multiplication sentence makes sense, too.\n    S:   (Partner A models and writes 6 × 2. Partner B checks work and writes and explains 2 × 6.)\nAs time allows, repeat the process with the following suggested equal measures with unknown product\nproblems.\n        Jerry buys 3 bags of groceries. Each bag weighs 4 kilograms. How many kilograms do Jerry’s grocery\n         bags weigh in all?\n        A dictionary weighs 3 kilograms. How many kilograms do 9 dictionaries weigh?\n\nProblem 4: Solve one-step word problems using division.\n    T:   (Project this equal measures with group size unknown problem.) Eight chairs weigh 24 kilograms.\n         What is the weight of 1 chair? Work with your partner to model or write an equation to represent\n         the problem.\n    S:   (Model and/or write 24 ÷ 8 =        .)\n    T:   What will be your strategy for solving?\n    S:   We can skip-count by eights just like we practiced in today’s fluency activity!\nAs time allows, repeat the process.\n        Equal measures with group size unknown:\n         Thirty-six kilograms of apples are equally distributed into 4 crates. What is the weight of each crate?\n        Equal measures with number of groups unknown: A tricycle weighs 8 kilograms. The delivery truck is\n         almost full but can hold 40 kilograms more. How many more tricycles can the truck hold?\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the Problem Set within the allotted 10 minutes. For\nsome classes, it may be appropriate to modify the assignment by specifying which problems they work on\nfirst. Some problems do not specify a method for solving. Students should solve these problems using the\nRDW approach used for Application Problems.\n\n\n                        Lesson 8:                     Solve one-step word problems involving metric weights within 100 and                 98\n                                                      estimate to reason about solutions.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 100 (debrief) ---\nA STORY OF UNITS                                                                                                              Lesson 8 3 2\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Solve one-step word problems\ninvolving metric weights within 100 and estimate to\nreason about solutions.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience. Invite\nstudents to review their solutions for the Problem Set.\nThey should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        How did your tape diagrams change in Problems\n         2(a) and 2(b)?\n        Explain to your partner the relationship between\n         Problem 2(a) and Problem 2(b).\n        How did today’s Fluency Practice help you with\n         problem solving during the Concept\n         Development?\n        Select students to share simplifying strategies or\n         mental math strategies they used to solve\n         problems in the Problem Set. If no one used a\n         special strategy or mental math, brainstorm\n         about alternative ways for solving Problem 2.\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                        Lesson 8:                     Solve one-step word problems involving metric weights within 100 and                  99\n                                                      estimate to reason about solutions.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 101 (problem-set) ---\nA STORY OF UNITS                                                                                        Lesson 8 Problem Set 3 2\n\n\nName                                                                                                       Date\n\n1. Tim goes to the market to buy fruits and vegetables. He weighs some string beans and some grapes.\n\n\n                                                                                List the weights for both the string beans and grapes.\n\n                                                                               The string beans weigh _____________ grams.\n\n                                                                               The grapes weigh _____________ grams.\n\n\n2. Use tape diagrams to model the following problems. Keiko and her brother Jiro get weighed at the\n   doctor’s office. Keiko weighs 35 kilograms, and Jiro weighs 43 kilograms.\n   a. What is Keiko and Jiro’s total weight?\n\n\n                                                                               Keiko and Jiro weigh __________ kilograms.\n\n   b. How much heavier is Jiro than Keiko?\n\n\n                                                                               Jiro is __________ kilograms heavier than Keiko.\n\n\n                       Lesson 8:                     Solve one-step word problems involving metric weights within 100 and         100\n                                                     estimate to reason about solutions.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 102 (problem-set) ---\nA STORY OF UNITS                                                                                        Lesson 8 Problem Set 3 2\n\n\n3. Jared estimates that his houseplant is as heavy as a 5-kilogram bowling ball. Draw a tape diagram to\n   estimate the weight of 3 houseplants.\n\n\n4. Jane and her 8 friends go apple picking. They share what they pick equally.\n   The total weight of the apples they pick is shown to the right.\n   a. About how many kilograms of apples will Jane take home?\n\n\n                                                                                                                                27 kg\n\n\n   b. Jane estimates that a pumpkin weighs about as much as her share of the apples. About how much do\n      7 pumpkins weigh altogether?\n\n\n                       Lesson 8:                     Solve one-step word problems involving metric weights within 100 and               101\n                                                     estimate to reason about solutions.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 103 (exit-ticket) ---\nA STORY OF UNITS                                                                                            Lesson 8 Exit Ticket 3 2\n\n\nName                                                                                                       Date\n\nThe weights of a backpack and suitcase are shown below.\n\n\n                                                      7 kg                                            21 kg\n\n\n   a. How much heavier is the suitcase than the backpack?\n\n\n   b. What is the total weight of 4 identical backpacks?\n\n\n   c. How many backpacks weigh the same as one suitcase?\n\n\n                       Lesson 8:                     Solve one-step word problems involving metric weights within 100 and            102\n                                                     estimate to reason about solutions.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 104 (homework) ---\nA STORY OF UNITS                                                                                          Lesson 8 Homework 3 2\n\n\nName                                                                                                       Date\n\n1. The weights of 3 fruit baskets are shown below.\n\n\n          Basket A                                        Basket B                                 Basket C\n           12 kg                                            8 kg                                    16 kg\n\n\n   a. Basket ______ is the heaviest.\n\n   b. Basket ______ is the lightest.\n\n   c. Basket A is __________ kilograms heavier than Basket B.\n\n   d. What is the total weight of all three baskets?\n\n\n2. Each journal weighs about 280 grams. What is total weight of 3 journals?\n\n\n3. Ms. Rios buys 453 grams of strawberries. She has 23 grams left after making smoothies. How many\n   grams of strawberries did she use?\n\n\n                       Lesson 8:                     Solve one-step word problems involving metric weights within 100 and       103\n                                                     estimate to reason about solutions.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 105 (homework) ---\nA STORY OF UNITS                                                                                          Lesson 8 Homework 3 2\n\n\n4. Andrea’s dad is 57 kilograms heavier than Andrea. Andrea weighs 34 kilograms.\n\n   a. How much does Andrea’s dad weigh?\n\n\n   b. How much do Andrea and her dad weigh in total?\n\n\n5. Jennifer’s grandmother buys carrots at the farm stand. She and her 3 grandchildren\n   equally share the carrots. The total weight of the carrots she buys is shown below.\n\n   a. How many kilograms of carrots will Jennifer get?\n\n\n   b. Jennifer uses 2 kilograms of carrots to bake muffins. How many                                                            28 kg\n      kilograms of carrots does she have left?\n\n\n                       Lesson 8:                     Solve one-step word problems involving metric weights within 100 and               104\n                                                     estimate to reason about solutions.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 101,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                        Lesson 8 Problem Set 3 2\n\n\nName                                                                                                       Date\n\n1. Tim goes to the market to buy fruits and vegetables. He weighs some string beans and some grapes.\n\n\n                                                                                List the weights for both the string beans and grapes.\n\n                                                                               The string beans weigh _____________ grams.\n\n                                                                               The grapes weigh _____________ grams.\n\n\n2. Use tape diagrams to model the following problems. Keiko and her brother Jiro get weighed at the\n   doctor’s office. Keiko weighs 35 kilograms, and Jiro weighs 43 kilograms.\n   a. What is Keiko and Jiro’s total weight?\n\n\n                                                                               Keiko and Jiro weigh __________ kilograms.\n\n   b. How much heavier is Jiro than Keiko?\n\n\n                                                                               Jiro is __________ kilograms heavier than Keiko.\n\n\n                       Lesson 8:                     Solve one-step word problems involving metric weights within 100 and         100\n                                                     estimate to reason about solutions.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 102,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                        Lesson 8 Problem Set 3 2\n\n\n3. Jared estimates that his houseplant is as heavy as a 5-kilogram bowling ball. Draw a tape diagram to\n   estimate the weight of 3 houseplants.\n\n\n4. Jane and her 8 friends go apple picking. They share what they pick equally.\n   The total weight of the apples they pick is shown to the right.\n   a. About how many kilograms of apples will Jane take home?\n\n\n                                                                                                                                27 kg\n\n\n   b. Jane estimates that a pumpkin weighs about as much as her share of the apples. About how much do\n      7 pumpkins weigh altogether?\n\n\n                       Lesson 8:                     Solve one-step word problems involving metric weights within 100 and               101\n                                                     estimate to reason about solutions.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 288,
+        "text": "A STORY OF UNITS                                                                                         Lesson 8 Answer Key 3 2\n\n\nLesson 8\nProblem Set\n1.    464; 355                                                                    3.        Tape diagram drawn correctly; about 15 kg\n2.    a. 78; problem modeled with tape diagram                                    4.        a. About 3 kg\n      b. 8; problem modeled with tape diagram                                               b. About 21 kg\n\n\nExit Ticket\n      a. 14 kg\n      b. 28 kg\n      c. 3 backpacks\n\n\nHomework\n1.    a. C                                                                        3.        430 g\n      b. B                                                                        4.        a. 91 kg\n      c. 4                                                                                  b. 125 kg\n      d. 36 kg                                                                    5.        a. 7 kg\n2.    840 g                                                                                 b. 5 kg\n\n\n                                                                                                                                        287\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

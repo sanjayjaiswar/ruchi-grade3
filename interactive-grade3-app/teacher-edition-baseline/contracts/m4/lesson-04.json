@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m4-l4",
+  "moduleId": "m4",
+  "lessonNumber": 4,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+    "teacherEditionBytes": 10725683,
+    "lessonPdfPages": {
+      "start": 44,
+      "end": 56
+    },
+    "problemSetPdfPages": [
+      50,
+      51
+    ],
+    "exitTicketPdfPages": [
+      52
+    ],
+    "homeworkPdfPages": [
+      53,
+      54
+    ],
+    "answerKeyPdfPages": [
+      219
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m4-student/workbook-page-016.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m4-teacher/page-050.png",
+      "/source-pages/m4-teacher/page-051.png",
+      "/source-pages/m4-teacher/page-219.png"
+    ]
+  },
+  "objective": "Relate side lengths with the number of tiles on a side.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "Materials: (S) 15 square inch and square centimeter tiles, ruler, personal white board\n\n Note: The ones cubes included in sets of Dienes blocks (base ten blocks) may also be used as square\n centimeter tiles.\n Pass out 15 square-inch tiles to each student.\n     T:   These tiles are square…?\n     S:   Inches!\n     T:   Use the tiles to make a 3 by 5 array. (Allow students time to make an array.) Push the tiles together\n          to form a rectangle with no gaps or overlaps. What is the\n          area of your rectangle?                                                      Rectangle A\n     S:   15 square inches.\n     T:   I see your squares are nicely arranged to form a rectangle.\n          What about these? (Project Rectangles A and B shown to\n          the right.) I used 15 square-inch tiles to make both of\n          these rectangles. Talk to a partner. Is the area of both\n          rectangles 15 square inches?\n     S:   Yes. The number of tiles is the same.  No. A’s area is\n          bigger than 15 square inches because there are gaps\n          between the tiles. B’s area is smaller because some of the\n          tiles are on top of each other.                                                     Rectangle B\n\n     T:   Why is it important to avoid gaps or overlaps when we\n          measure area?\n     S:   If there are gaps or overlaps, the amount of space the\n          rectangle takes up changes.  The square unit would be\n          wrong because some area is taken away if there are\n          overlaps, or some is added if there are gaps.\n     T:   Use your ruler to measure across the top of your\n          rectangle in inches. What is the length of this side?\n     S:   5 inches.\n     T:   How many tiles are on this side?                                            NOTES ON\n                                                                                      MULTIPLE MEANS\n     S:   5 tiles.\n                                                                                      OF REPRESENTATION:\n     T:   Use your ruler to measure the shorter side of the\n                                                                            Scaffold student contrast of length and\n          rectangle in inches. What is the length of this side?             area. Consider placing a long string\n     S:   3 inches.                                                         along the side of the rectangle, or have\nMP.8 T:   How many tiles are on this side?                                  students trace the side with a finger to\n                                                                            better illustrate length. In contrast,\n     S:   3 tiles!                                                          have students shade in the area before\n     T:   What is the relationship between the number of tiles              writing 15 square inches.\n          on a side and the side length of the rectangle?\n     S:   They are the same.\n\n\n                         Lesson 4:                  Relate side lengths with the number of tiles on a side.                                   45\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 4 3 4\n\n\n    T:   What do you notice about the lengths of the opposite sides of the rectangles?\n    S:   They are equal.\n    T:   Trace the rectangle on your personal white board. Then, remove the tiles and label the side lengths.\n         Now, write the area inside the rectangle. What are the units for the side lengths?\n    S:   Inches.\n    T:   What are the units for the area?\n    S:   Square inches.\n    T:   Talk to a partner. Why are the units different for side lengths and area?\n    S:   The unit for side lengths is inches because we used a ruler to measure the length of the side in\n         inches. For area, the unit is square inches because we counted the number of square inch tiles that\n         we used to make the rectangle.\n    T:   Inches are used to measure lengths, such as the side lengths, and square inches are used to measure\n         the amount of flat space a figure takes up, which is the area.\nDirect students to exchange square inch tiles for square centimeter tiles.\n    T:   These tiles are square…?\n    S:   Centimeters.\n    T:   Use them to make a rectangle with side lengths of 5 centimeters and 4 centimeters. (Write 5 cm and\n         4 cm.) Tell your partner how many tiles you will count to make each side.\n    S:   I will make one side with 5 tiles and the other with 4 tiles.  Actually, we will count 5 tiles each for\n         two sides of the rectangle and 4 tiles each for the other two sides. Opposite sides are the same,\n         remember?\n    T:   Make your rectangle on top of your board. Label the\n         side lengths.\n    S:   (Make rectangle and label side lengths 5 cm and 4 cm.)                      NOTES ON\n    T:   How many fives did you make? Why?                                           MULTIPLE MEANS\n    S:   4 fives because the other side length is 4.                                 OF REPRESENTATION:\n                                                                            Alternatively, build the rectangle in 4\n    T:   What is the total of 4 fives?\n                                                                            rows of 5 centimeter tiles. As students\n    S:   20.                                                                place each row, encourage careful and\n    T:   Skip-count your fives to find the total area of the                meaningful counting. Students may\n         rectangle. (Pause.) What is the total area?                        benefit from counting each tile in the\n                                                                            row so as not to add extra tiles. Then,\n    S:   20 square centimeters.\n                                                                            recapture by counting by fives, “5, 10,\n    T:   What is the relationship between the side lengths and              15, 20.”\n         area?\n    S:   If you multiply 5 times 4, then you get 20.\nIf time allows, repeat the process using a rectangle with side lengths of 3 centimeters and 6 centimeters. As\nstudents are ready, tell them the area, and let them build a rectangle and name the side lengths.\n\n\n                        Lesson 4:                  Relate side lengths with the number of tiles on a side.                                   46\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 4 3 4",
+    "fluencyPracticeText": " Group Counting 3.OA.1                                            (3 minutes)\n Products in an Array 3.OA.3                                      (3 minutes)\n Count the Square Units 3.MD.6                                    (6 minutes)\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally changing the direction of the count.\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\nProducts in an Array (3 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity anticipates relating multiplication with area in Topic B.\n    T:   (Project an array with 5 rows of 3 stars.) How many rows of stars do you see?\n    S:   5 rows.\n    T:   How many stars are in each row?\n    S:   3 stars.\n    T:   On your personal white board, write two different multiplication sentences that can be used to find\n         the total number of stars.\n    S:   (Write 5 × 3 = 15 and 3 × 5 = 15.)\nContinue with the following possible sequence: 4 × 6, 7 × 3, 8 × 5, and 9 × 7.\n\n\n                        Lesson 4:                  Relate side lengths with the number of tiles on a side.                                   43\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 4 3 4\n\n\nCount the Square Units (6 minutes)\nMaterials: (T) 12 square tiles\n\nNote: This fluency activity reviews comparing the area of different shapes.\n    T:   (Project an 8 × 1 tiled array.) How many square units are in the rectangle?\n    S:   8 square units.\n    T:   (Write 8 square units next to the rectangle. Project a 4 × 2 tiled array.) How many square units are\n         in the rectangle?\n    S:   8 square units.\n    T:   (Write 8 square units next to the rectangle. Project a 2 × 4 tiled array.) How many square units are\n         in the rectangle?\n    S:   8 square units.\n    T:   (Write 8 square units next to the rectangle. Project a 1 × 8 tiled array.) How many square units are\n         in the rectangle?\n    S:   8 square units.\n    T:   (Write 8 square units next to the rectangle.) Do the four rectangles look the same?\n    S:   No.\n    T:   What do the rectangles have in common?\n    S:   They are each composed of 8 square units.\nContinue with the following possible sequence: 12 × 1, 1 × 12, 6 × 2, 3 × 4, 2 × 6, and 4 × 3.",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "These tiles are square…?"
+      },
+      {
+        "speaker": "students",
+        "text": "Inches!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use the tiles to make a 3 by 5 array. (Allow students time to make an array.) Push the tiles together to form a rectangle with no gaps or overlaps. What is the area of your rectangle? Rectangle A"
+      },
+      {
+        "speaker": "students",
+        "text": "15 square inches."
+      },
+      {
+        "speaker": "teacher",
+        "text": "I see your squares are nicely arranged to form a rectangle. What about these? (Project Rectangles A and B shown to the right.) I used 15 square-inch tiles to make both of these rectangles. Talk to a partner. Is the area of both rectangles 15 square inches?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes. The number of tiles is the same.  No. A’s area is bigger than 15 square inches because there are gaps between the tiles. B’s area is smaller because some of the tiles are on top of each other. Rectangle B"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why is it important to avoid gaps or overlaps when we measure area?"
+      },
+      {
+        "speaker": "students",
+        "text": "If there are gaps or overlaps, the amount of space the rectangle takes up changes.  The square unit would be wrong because some area is taken away if there are overlaps, or some is added if there are gaps."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your ruler to measure across the top of your rectangle in inches. What is the length of this side?"
+      },
+      {
+        "speaker": "students",
+        "text": "5 inches."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many tiles are on this side? NOTES ON MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "5 tiles. OF REPRESENTATION:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use your ruler to measure the shorter side of the Scaffold student contrast of length and rectangle in inches. What is the length of this side? area. Consider placing a long string"
+      },
+      {
+        "speaker": "students",
+        "text": "3 inches. along the side of the rectangle, or have MP.8 T: How many tiles are on this side? students trace the side with a finger to better illustrate length. In contrast,"
+      },
+      {
+        "speaker": "students",
+        "text": "3 tiles! have students shade in the area before"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the relationship between the number of tiles writing 15 square inches. on a side and the side length of the rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "They are the same. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 4 3 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do you notice about the lengths of the opposite sides of the rectangles?"
+      },
+      {
+        "speaker": "students",
+        "text": "They are equal."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Trace the rectangle on your personal white board. Then, remove the tiles and label the side lengths. Now, write the area inside the rectangle. What are the units for the side lengths?"
+      },
+      {
+        "speaker": "students",
+        "text": "Inches."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What are the units for the area?"
+      },
+      {
+        "speaker": "students",
+        "text": "Square inches."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to a partner. Why are the units different for side lengths and area?"
+      },
+      {
+        "speaker": "students",
+        "text": "The unit for side lengths is inches because we used a ruler to measure the length of the side in inches. For area, the unit is square inches because we counted the number of square inch tiles that we used to make the rectangle."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Inches are used to measure lengths, such as the side lengths, and square inches are used to measure the amount of flat space a figure takes up, which is the area. Direct students to exchange square inch tiles for square centimeter tiles."
+      },
+      {
+        "speaker": "teacher",
+        "text": "These tiles are square…?"
+      },
+      {
+        "speaker": "students",
+        "text": "Centimeters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use them to make a rectangle with side lengths of 5 centimeters and 4 centimeters. (Write 5 cm and 4 cm.) Tell your partner how many tiles you will count to make each side."
+      },
+      {
+        "speaker": "students",
+        "text": "I will make one side with 5 tiles and the other with 4 tiles.  Actually, we will count 5 tiles each for two sides of the rectangle and 4 tiles each for the other two sides. Opposite sides are the same, remember?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Make your rectangle on top of your board. Label the side lengths."
+      },
+      {
+        "speaker": "students",
+        "text": "(Make rectangle and label side lengths 5 cm and 4 cm.) NOTES ON"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many fives did you make? Why? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "4 fives because the other side length is 4. OF REPRESENTATION: Alternatively, build the rectangle in 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the total of 4 fives? rows of 5 centimeter tiles. As students"
+      },
+      {
+        "speaker": "students",
+        "text": "20. place each row, encourage careful and"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Skip-count your fives to find the total area of the meaningful counting. Students may rectangle. (Pause.) What is the total area? benefit from counting each tile in the row so as not to add extra tiles. Then,"
+      },
+      {
+        "speaker": "students",
+        "text": "20 square centimeters. recapture by counting by fives, “5, 10,"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the relationship between the side lengths and 15, 20.” area?"
+      },
+      {
+        "speaker": "students",
+        "text": "If you multiply 5 times 4, then you get 20. If time allows, repeat the process using a rectangle with side lengths of 3 centimeters and 6 centimeters. As students are ready, tell them the area, and let them build a rectangle and name the side lengths. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 4 3 4"
+      }
+    ],
+    "teacherPrompts": [
+      "These tiles are square…?",
+      "Use the tiles to make a 3 by 5 array. (Allow students time to make an array.) Push the tiles together to form a rectangle with no gaps or overlaps. What is the area of your rectangle? Rectangle A",
+      "I see your squares are nicely arranged to form a rectangle. What about these? (Project Rectangles A and B shown to the right.) I used 15 square-inch tiles to make both of these rectangles. Talk to a partner. Is the area of both rectangles 15 square inches?",
+      "Why is it important to avoid gaps or overlaps when we measure area?",
+      "Use your ruler to measure across the top of your rectangle in inches. What is the length of this side?",
+      "How many tiles are on this side? NOTES ON MULTIPLE MEANS",
+      "Use your ruler to measure the shorter side of the Scaffold student contrast of length and rectangle in inches. What is the length of this side? area. Consider placing a long string",
+      "What is the relationship between the number of tiles writing 15 square inches. on a side and the side length of the rectangle?",
+      "What do you notice about the lengths of the opposite sides of the rectangles?",
+      "Trace the rectangle on your personal white board. Then, remove the tiles and label the side lengths. Now, write the area inside the rectangle. What are the units for the side lengths?",
+      "What are the units for the area?",
+      "Talk to a partner. Why are the units different for side lengths and area?",
+      "Inches are used to measure lengths, such as the side lengths, and square inches are used to measure the amount of flat space a figure takes up, which is the area. Direct students to exchange square inch tiles for square centimeter tiles.",
+      "These tiles are square…?",
+      "Use them to make a rectangle with side lengths of 5 centimeters and 4 centimeters. (Write 5 cm and 4 cm.) Tell your partner how many tiles you will count to make each side.",
+      "Make your rectangle on top of your board. Label the side lengths.",
+      "How many fives did you make? Why? MULTIPLE MEANS",
+      "What is the total of 4 fives? rows of 5 centimeter tiles. As students",
+      "Skip-count your fives to find the total area of the meaningful counting. Students may rectangle. (Pause.) What is the total area? benefit from counting each tile in the row so as not to add extra tiles. Then,",
+      "What is the relationship between the side lengths and 15, 20.” area?"
+    ],
+    "debriefPrompt": "Tell a partner how you could use square centimeter tiles to check your work in Problem 1",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Use a ruler to measure the side lengths of the rectangle in centimeters. Mark each centimeter with a point and connect the points to show the square units. Then, count the squares you drew to find the total area. Total area: ____",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "Use a ruler to measure the side lengths of the rectangle in inches. Mark each inch with a point and connect the points to show the square units. Then, count the squares you drew to find the total area. Total area: ____",
+        "equations": []
+      },
+      {
+        "number": 3,
+        "prompt": "Mariana uses square centimeter tiles to find the side lengths of the rectangle below. Label each side length. Then, count the tiles to find the total area. Total area: ____ Each is 1 square centimeter. Saffron says that the side length of the rectangle below is 4 centimeters. Kevin says the side length is 5 centimeters. Who is correct? Explain how you know. 5. Use both square centimeter and square inch tiles to find the area of the rectangle below. Which works best? Explain why. 6. How does knowing side lengths A and B help you find side lengths C and D on the rectangle below? B A C D",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                      Lesson 4 Problem Set 3 4\n\n\nName                                                                                                        Date\n\n1.   Use a ruler to measure the side lengths of the rectangle in centimeters. Mark each centimeter with a\n     point and connect the points to show the square units. Then, count the squares you drew to find the\n     total area.\n\n\n                                                                                 Total area: __________________________________\n\n\n2.   Use a ruler to measure the side lengths of the rectangle in inches. Mark each inch with a point and\n     connect the points to show the square units. Then, count the squares you drew to find the total area.\n\n\n                                                                                 Total area: __________________________________\n\n\n3.   Mariana uses square centimeter tiles to find the side lengths of the rectangle below. Label each side\n     length. Then, count the tiles to find the total area.\n\n\n                                                                                 Total area: __________________________________\n\n\n                        Lesson 4:                  Relate side lengths with the number of tiles on a side.                        49\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                      Lesson 4 Problem Set 3 4\n\n\n4.   Each         is 1 square centimeter. Saffron says that the side length of the rectangle below is\n     4 centimeters. Kevin says the side length is 5 centimeters. Who is correct? Explain how you know.\n\n\n5.   Use both square centimeter and square inch tiles to find the area of the rectangle below. Which works\n     best? Explain why.\n\n\n6.   How does knowing side lengths A and B help you find side lengths C and D on the rectangle below?\n\n                        B\n\n\n        A                                              C\n\n\n                        D\n\n\n                        Lesson 4:                  Relate side lengths with the number of tiles on a side.                        50\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    2 cm by 7 cm marked and connected; 14 sq cm\n2.    3 in by 2 in marked and connected; 6 sq in\n3.    3 cm by 4 cm labeled; 12 sq cm\n4.    Both are correct; explanations will vary.\n5.    Square-inch tiles; explanations will vary.\n6.    Explanations will vary.",
+    "answerKeyText": "A STORY OF UNITS                                                                                            Lesson 4 Answer Key 3 4\n\n\nLesson 4\nProblem Set\n1.    2 cm by 7 cm marked and connected; 14 sq cm\n2.    3 in by 2 in marked and connected; 6 sq in\n3.    3 cm by 4 cm labeled; 12 sq cm\n4.    Both are correct; explanations will vary.\n5.    Square-inch tiles; explanations will vary.\n6.    Explanations will vary.\n\n\nExit Ticket\na.    2 cm by 3 cm; 6 sq cm\nb.    2 cm by 6 cm; 12 sq cm\nc.    1 in by 5 in; 5 sq in\n\n\nHomework\n1.    8 sq cm\n2.    4 cm by 5 cm labeled; 20 sq cm\n3.    2 in by 7 in labeled; 14 sq in\n4.    Both are correct; explanations will vary.\n5.    2 in; 4 in; 8 sq in; explanations will vary.\n\n\n                        Module 4:                  Multiplication and Area                                                            218\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "ruler-or-length",
+      "area-model",
+      "geometry-diagram",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "T: Use the tiles to make a 3 by 5 array. (Allow students time to make an array.) Push the tiles together",
+        "rows of 5 centimeter tiles. As students",
+        " Products in an Array 3.OA.3 (3 minutes)",
+        "Products in an Array (3 minutes)",
+        "T: (Project an array with 5 rows of 3 stars.) How many rows of stars do you see?",
+        "T: (Project an 8 × 1 tiled array.) How many square units are in the rectangle?",
+        "T: (Write 8 square units next to the rectangle. Project a 4 × 2 tiled array.) How many square units are",
+        "T: (Write 8 square units next to the rectangle. Project a 2 × 4 tiled array.) How many square units are"
+      ],
+      "ruler-or-length": [
+        "Relate side lengths with the number of tiles on a side.",
+        "Materials: (S) 15 square inch and square centimeter tiles, ruler, personal white board",
+        "centimeter tiles.",
+        "T: Use your ruler to measure across the top of your",
+        "rectangle in inches. What is the length of this side?",
+        "T: Use your ruler to measure the shorter side of the",
+        "Scaffold student contrast of length and",
+        "rectangle in inches. What is the length of this side? area. Consider placing a long string"
+      ],
+      "area-model": [
+        "rectangle takes up changes.  The square unit would be",
+        " Count the Square Units 3.MD.6 (6 minutes)",
+        "Count the Square Units (6 minutes)",
+        "T: (Project an 8 × 1 tiled array.) How many square units are in the rectangle?",
+        "S: 8 square units.",
+        "T: (Write 8 square units next to the rectangle. Project a 4 × 2 tiled array.) How many square units are",
+        "S: 8 square units.",
+        "T: (Write 8 square units next to the rectangle. Project a 2 × 4 tiled array.) How many square units are"
+      ],
+      "geometry-diagram": [
+        "to form a rectangle with no gaps or overlaps. What is the",
+        "area of your rectangle? Rectangle A",
+        "T: I see your squares are nicely arranged to form a rectangle.",
+        "What about these? (Project Rectangles A and B shown to",
+        "these rectangles. Talk to a partner. Is the area of both",
+        "rectangles 15 square inches?",
+        "tiles are on top of each other. Rectangle B",
+        "rectangle takes up changes.  The square unit would be"
+      ],
+      "money-model": [
+        "Materials: (S) 15 square inch and square centimeter tiles, ruler, personal white board",
+        "centimeter tiles.",
+        "rectangle takes up changes.  The square unit would be",
+        "Direct students to exchange square inch tiles for square centimeter tiles.",
+        "S: Centimeters.",
+        "T: Use them to make a rectangle with side lengths of 5 centimeters and 4 centimeters. (Write 5 cm and",
+        "rows of 5 centimeter tiles. As students",
+        "S: 20 square centimeters."
+      ],
+      "picture-or-drawing": [
+        "S: 3 tiles! have students shade in the area before"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "I see your squares are nicely arranged to form a rectangle. What about these? (Project Rectangles A and B shown to the right.) I used 15 square-inch tiles to make both of these rectangles. Talk to a partner. Is the area of both rectangles 15 square inches?"
+      },
+      {
+        "speaker": "students",
+        "text": "3 tiles! have students shade in the area before"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do you notice about the lengths of the opposite sides of the rectangles?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Trace the rectangle on your personal white board. Then, remove the tiles and label the side lengths. Now, write the area inside the rectangle. What are the units for the side lengths?"
+      },
+      {
+        "speaker": "students",
+        "text": "The unit for side lengths is inches because we used a ruler to measure the length of the side in inches. For area, the unit is square inches because we counted the number of square inch tiles that we used to make the rectangle."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Use them to make a rectangle with side lengths of 5 centimeters and 4 centimeters. (Write 5 cm and 4 cm.) Tell your partner how many tiles you will count to make each side."
+      },
+      {
+        "speaker": "students",
+        "text": "I will make one side with 5 tiles and the other with 4 tiles.  Actually, we will count 5 tiles each for two sides of the rectangle and 4 tiles each for the other two sides. Opposite sides are the same, remember?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Make your rectangle on top of your board. Label the side lengths."
+      },
+      {
+        "speaker": "students",
+        "text": "(Make rectangle and label side lengths 5 cm and 4 cm.) NOTES ON"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Skip-count your fives to find the total area of the meaningful counting. Students may rectangle. (Pause.) What is the total area? benefit from counting each tile in the row so as not to add extra tiles. Then,"
+      },
+      {
+        "speaker": "students",
+        "text": "20 square centimeters. recapture by counting by fives, “5, 10,"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 44 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 4 3 4\n\n\nLesson 4\nObjective: Relate side lengths with the number of tiles on a side.\n\nSuggested Lesson Structure\n\n Fluency Practice                 (12 minutes)\n Application Problem              (5 minutes)\n Concept Development              (33 minutes)\n Student Debrief                  (10 minutes)\n   Total Time                      (60 minutes)\n\nFluency Practice (12 minutes)\n Group Counting 3.OA.1                                            (3 minutes)\n Products in an Array 3.OA.3                                      (3 minutes)\n Count the Square Units 3.MD.6                                    (6 minutes)\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally changing the direction of the count.\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\nProducts in an Array (3 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity anticipates relating multiplication with area in Topic B.\n    T:   (Project an array with 5 rows of 3 stars.) How many rows of stars do you see?\n    S:   5 rows.\n    T:   How many stars are in each row?\n    S:   3 stars.\n    T:   On your personal white board, write two different multiplication sentences that can be used to find\n         the total number of stars.\n    S:   (Write 5 × 3 = 15 and 3 × 5 = 15.)\nContinue with the following possible sequence: 4 × 6, 7 × 3, 8 × 5, and 9 × 7.\n\n\n                        Lesson 4:                  Relate side lengths with the number of tiles on a side.                                   43\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 45 (application-problem) ---\nA STORY OF UNITS                                                                                                               Lesson 4 3 4\n\n\nCount the Square Units (6 minutes)\nMaterials: (T) 12 square tiles\n\nNote: This fluency activity reviews comparing the area of different shapes.\n    T:   (Project an 8 × 1 tiled array.) How many square units are in the rectangle?\n    S:   8 square units.\n    T:   (Write 8 square units next to the rectangle. Project a 4 × 2 tiled array.) How many square units are\n         in the rectangle?\n    S:   8 square units.\n    T:   (Write 8 square units next to the rectangle. Project a 2 × 4 tiled array.) How many square units are\n         in the rectangle?\n    S:   8 square units.\n    T:   (Write 8 square units next to the rectangle. Project a 1 × 8 tiled array.) How many square units are\n         in the rectangle?\n    S:   8 square units.\n    T:   (Write 8 square units next to the rectangle.) Do the four rectangles look the same?\n    S:   No.\n    T:   What do the rectangles have in common?\n    S:   They are each composed of 8 square units.\nContinue with the following possible sequence: 12 × 1, 1 × 12, 6 × 2, 3 × 4, 2 × 6, and 4 × 3.\n\n\nApplication Problem (5 minutes)\n\nMara uses 15 square-centimeter tiles to make a rectangle. Ashton uses 9 square-centimeter tiles to make a\nrectangle.\n    a.   Draw what Mara and Ashton’s rectangles might look like.\n    b.   Whose rectangle has a bigger area? How do you know?\n\n\nNote: This problem reviews Lesson 2, particularly tiling with square units. Invite students to share and\ncompare their drawings for Mara and Ashton’s rectangles.\n\n\n                        Lesson 4:                  Relate side lengths with the number of tiles on a side.                                   44\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 46 (concept-development) ---\nA STORY OF UNITS                                                                                                              Lesson 4 3 4\n\n\n  Concept Development (33 minutes)\n Materials: (S) 15 square inch and square centimeter tiles, ruler, personal white board\n\n Note: The ones cubes included in sets of Dienes blocks (base ten blocks) may also be used as square\n centimeter tiles.\n Pass out 15 square-inch tiles to each student.\n     T:   These tiles are square…?\n     S:   Inches!\n     T:   Use the tiles to make a 3 by 5 array. (Allow students time to make an array.) Push the tiles together\n          to form a rectangle with no gaps or overlaps. What is the\n          area of your rectangle?                                                      Rectangle A\n     S:   15 square inches.\n     T:   I see your squares are nicely arranged to form a rectangle.\n          What about these? (Project Rectangles A and B shown to\n          the right.) I used 15 square-inch tiles to make both of\n          these rectangles. Talk to a partner. Is the area of both\n          rectangles 15 square inches?\n     S:   Yes. The number of tiles is the same.  No. A’s area is\n          bigger than 15 square inches because there are gaps\n          between the tiles. B’s area is smaller because some of the\n          tiles are on top of each other.                                                     Rectangle B\n\n     T:   Why is it important to avoid gaps or overlaps when we\n          measure area?\n     S:   If there are gaps or overlaps, the amount of space the\n          rectangle takes up changes.  The square unit would be\n          wrong because some area is taken away if there are\n          overlaps, or some is added if there are gaps.\n     T:   Use your ruler to measure across the top of your\n          rectangle in inches. What is the length of this side?\n     S:   5 inches.\n     T:   How many tiles are on this side?                                            NOTES ON\n                                                                                      MULTIPLE MEANS\n     S:   5 tiles.\n                                                                                      OF REPRESENTATION:\n     T:   Use your ruler to measure the shorter side of the\n                                                                            Scaffold student contrast of length and\n          rectangle in inches. What is the length of this side?             area. Consider placing a long string\n     S:   3 inches.                                                         along the side of the rectangle, or have\nMP.8 T:   How many tiles are on this side?                                  students trace the side with a finger to\n                                                                            better illustrate length. In contrast,\n     S:   3 tiles!                                                          have students shade in the area before\n     T:   What is the relationship between the number of tiles              writing 15 square inches.\n          on a side and the side length of the rectangle?\n     S:   They are the same.\n\n\n                         Lesson 4:                  Relate side lengths with the number of tiles on a side.                                   45\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 47 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                               Lesson 4 3 4\n\n\n    T:   What do you notice about the lengths of the opposite sides of the rectangles?\n    S:   They are equal.\n    T:   Trace the rectangle on your personal white board. Then, remove the tiles and label the side lengths.\n         Now, write the area inside the rectangle. What are the units for the side lengths?\n    S:   Inches.\n    T:   What are the units for the area?\n    S:   Square inches.\n    T:   Talk to a partner. Why are the units different for side lengths and area?\n    S:   The unit for side lengths is inches because we used a ruler to measure the length of the side in\n         inches. For area, the unit is square inches because we counted the number of square inch tiles that\n         we used to make the rectangle.\n    T:   Inches are used to measure lengths, such as the side lengths, and square inches are used to measure\n         the amount of flat space a figure takes up, which is the area.\nDirect students to exchange square inch tiles for square centimeter tiles.\n    T:   These tiles are square…?\n    S:   Centimeters.\n    T:   Use them to make a rectangle with side lengths of 5 centimeters and 4 centimeters. (Write 5 cm and\n         4 cm.) Tell your partner how many tiles you will count to make each side.\n    S:   I will make one side with 5 tiles and the other with 4 tiles.  Actually, we will count 5 tiles each for\n         two sides of the rectangle and 4 tiles each for the other two sides. Opposite sides are the same,\n         remember?\n    T:   Make your rectangle on top of your board. Label the\n         side lengths.\n    S:   (Make rectangle and label side lengths 5 cm and 4 cm.)                      NOTES ON\n    T:   How many fives did you make? Why?                                           MULTIPLE MEANS\n    S:   4 fives because the other side length is 4.                                 OF REPRESENTATION:\n                                                                            Alternatively, build the rectangle in 4\n    T:   What is the total of 4 fives?\n                                                                            rows of 5 centimeter tiles. As students\n    S:   20.                                                                place each row, encourage careful and\n    T:   Skip-count your fives to find the total area of the                meaningful counting. Students may\n         rectangle. (Pause.) What is the total area?                        benefit from counting each tile in the\n                                                                            row so as not to add extra tiles. Then,\n    S:   20 square centimeters.\n                                                                            recapture by counting by fives, “5, 10,\n    T:   What is the relationship between the side lengths and              15, 20.”\n         area?\n    S:   If you multiply 5 times 4, then you get 20.\nIf time allows, repeat the process using a rectangle with side lengths of 3 centimeters and 6 centimeters. As\nstudents are ready, tell them the area, and let them build a rectangle and name the side lengths.\n\n\n                        Lesson 4:                  Relate side lengths with the number of tiles on a side.                                   46\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 48 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 4 3 4\n\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Relate side lengths with the number of\ntiles on a side.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Tell a partner how you could use square\n         centimeter tiles to check your work in Problem 1.\n        Compare the areas of the rectangles in Problems\n         1 and 2. Which rectangle has a larger area? How\n         do you know?\n        What are the side lengths of the shape in\n         Problem 3? Are all of the sides the same? How\n         do you know? What shape is this?\n        What is the area of the rectangle in Problem 4?\n         Explain how you found the area to a partner.\n        How many centimeter tiles fit in the rectangle in\n         Problem 5? Is that the area of the rectangle in\n         square centimeters? Why or why not?\n        In Problem 6, if the side length of A is 4 units,\n         would 3 units make sense for the side length of\n         B? Why or why not? What would make sense?\n\n\n                        Lesson 4:                  Relate side lengths with the number of tiles on a side.                                   47\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 49 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 4 3 4\n\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that were presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 4:                  Relate side lengths with the number of tiles on a side.                                   48\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 50 (problem-set) ---\nA STORY OF UNITS                                                                                      Lesson 4 Problem Set 3 4\n\n\nName                                                                                                        Date\n\n1.   Use a ruler to measure the side lengths of the rectangle in centimeters. Mark each centimeter with a\n     point and connect the points to show the square units. Then, count the squares you drew to find the\n     total area.\n\n\n                                                                                 Total area: __________________________________\n\n\n2.   Use a ruler to measure the side lengths of the rectangle in inches. Mark each inch with a point and\n     connect the points to show the square units. Then, count the squares you drew to find the total area.\n\n\n                                                                                 Total area: __________________________________\n\n\n3.   Mariana uses square centimeter tiles to find the side lengths of the rectangle below. Label each side\n     length. Then, count the tiles to find the total area.\n\n\n                                                                                 Total area: __________________________________\n\n\n                        Lesson 4:                  Relate side lengths with the number of tiles on a side.                        49\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 51 (problem-set) ---\nA STORY OF UNITS                                                                                      Lesson 4 Problem Set 3 4\n\n\n4.   Each         is 1 square centimeter. Saffron says that the side length of the rectangle below is\n     4 centimeters. Kevin says the side length is 5 centimeters. Who is correct? Explain how you know.\n\n\n5.   Use both square centimeter and square inch tiles to find the area of the rectangle below. Which works\n     best? Explain why.\n\n\n6.   How does knowing side lengths A and B help you find side lengths C and D on the rectangle below?\n\n                        B\n\n\n        A                                              C\n\n\n                        D\n\n\n                        Lesson 4:                  Relate side lengths with the number of tiles on a side.                        50\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 52 (exit-ticket) ---\nA STORY OF UNITS                                                                                             Lesson 4 Exit Ticket 3 4\n\n\nName                                                                                                        Date\n\nLabel the side lengths of each rectangle. Then, match the rectangle to its total area.\n\n    a.\n\n                                                                                                                                  12 square\n                                                                                                                                  centimeters\n\n\n    b.\n\n\n                                                                                                                                  5 square\n                                                                                                                                  inches\n\n\n    c.\n\n\n                                                                                                                                  6 square\n                                                                                                                                  centimeters\n\n\n                        Lesson 4:                  Relate side lengths with the number of tiles on a side.                                      51\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 53 (homework) ---\nA STORY OF UNITS                                                                                         Lesson 4 Homework 3 4\n\n\nName                                                                                                        Date\n\n1.   Ella placed square centimeter tiles on the rectangle below, and then labeled the side lengths. What is\n     the area of her rectangle?\n\n                                       4 cm\n\n\n               2 cm\n\n\n                                                                                 Total area: __________________________________\n\n\n2.   Kyle uses square centimeter tiles to find the side lengths of the rectangle below. Label each side length.\n     Then, count the tiles to find the total area.\n\n\n                                                                                 Total area: __________________________________\n\n\n3.   Maura uses square inch tiles to find the side lengths of the rectangle below. Label each side length.\n     Then, find the total area.\n\n\n                                                                                 Total area: __________________________________\n\n\n                        Lesson 4:                  Relate side lengths with the number of tiles on a side.                        52\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 54 (homework) ---\nA STORY OF UNITS                                                                                         Lesson 4 Homework 3 4\n\n\n4.   Each square unit below is 1 square inch. Claire says that the side length of the rectangle below is 3\n     inches. Tyler says the side length is 5 inches. Who is correct? Explain how you know.\n\n\n5.   Label the unknown side lengths for the rectangle below, and then find the area. Explain how you used\n     the lengths provided to find the unknown lengths and area.\n\n                                                         4 inches\n\n\n2 inches                                                                                                                 _________________\n\n\n                                                _________________\n                                                                                 Total area: __________________________________\n\n\n                        Lesson 4:                  Relate side lengths with the number of tiles on a side.                                   53\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 55 (lesson-instruction) ---\nA STORY OF UNITS\n\n     3                    Mathematics Curriculum\n   GRADE\n\n\n                                                                                                                                    GRADE 3 • MODULE 4\n\n\nTopic B\nConcepts of Area Measurement\n3.MD.5, 3.MD.6, 3.MD.7abd\n\n Focus Standards:          3.MD.5                   Recognize area as an attribute of plane figures and understand concepts of area\n                                                    measurement.\n                                                     a. A square with side length 1 unit, called “a unit square,” is said to have “one square\n                                                         unit” of area, and can be used to measure area.\n                                                     b. A plane figure which can be covered without gaps or overlaps by n unit squares is\n                                                         said to have an area of n square units.\n                           3.MD.6                   Measure areas by counting unit squares (square cm, square m, square in, square ft, and\n                                                    improvised units).\n                           3.MD.7                   Relate area to the operations of multiplication and addition.\n                                                     a. Find the area of a rectangle with whole-number side lengths by tiling it, and show\n                                                         that the area is the same as would be found by multiplying the side lengths.\n                                                     b. Multiply side lengths to find areas of rectangles with whole-number side lengths in\n                                                         the context of solving real world and mathematical problems, and represent whole-\n                                                         number products as rectangular areas in mathematical reasoning.\n                                                     d. Recognize area as additive. Find areas of rectilinear figures by decomposing them\n                                                         into non-overlapping rectangles and adding the areas of the non-overlapping parts,\n                                                         applying this technique to solve real world problems.\n Instructional Days:       4\n Coherence -Links from:    G2–M2                    Addition and Subtraction of Length Units\n                           G3–M1                    Properties of Multiplication and Division and Solving Problems with Units of 2–5 and 10\n                           G3–M3                    Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10\n             -Links to:    G4–M3                    Multi-Digit Multiplication and Division\n                           G4–M7                    Exploring Multiplication\n\n\nIn previous lessons, students tiled given rectangles. In Lesson 5, students build rectangles using unit square\ntiles to make arrays when provided with specific criteria. For example, students may be told that there are 24\ntiles inside the rectangle and one side of the rectangle is covered with 4 tiles. Students may start by building\none column of the array to represent a length of 4 units and then duplicate that process until they reach 24\ntotal tiles, skip-counting by fours. Finally, they physically push together the rows of tiles to make the array.\nWhen they count the number of fours, the process connects to unknown factor problems (in this case, the\nunknown factor of 6) from previous modules and builds toward students’ discovery of the area formula.\n\n\n                          Topic B:                   Concepts of Area Measurement                                                                  54\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 56 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                              Topic B 3 4\n\n\nNow experienced with drawing rectangular arrays within an area model, students find the area of an\nincomplete array in Lesson 6. They visualize and predict what the finished array looks like and then complete\nit by joining opposite end points with a straight edge. They determine the total area using skip-counting. The\nincomplete array model bridges to the area model, where no array is given.\nIn Lesson 7, students receive information about the side lengths\nof an area model (shown to the right). Based on this\ninformation, they use a straight edge to draw a grid of equal-\nsized squares within the area model and then skip-count to find\nthe total number of squares. Units move beyond square                                                            Array           Area Model\ncentimeters and inches to include square feet and square\nmeters.\nIn Lesson 8, students recognize that side lengths play an important part in determining the area of a\nrectangle. They understand that multiplying the number of square units in a row by the number of rows\nproduces the same result as skip-counting the squares within the array. Given the area and one side length,\nstudents realize that they can use multiplication with an unknown factor or division to find the unknown side\nlength.\n\n A Teaching Sequence Toward Mastery of Concepts of Area Measurement\n Objective 1: Form rectangles by tiling with unit squares to make arrays.\n              (Lesson 5)\n\n Objective 2: Draw rows and columns to determine the area of a rectangle given an incomplete array.\n              (Lesson 6)\n\n Objective 3: Interpret area models to form rectangular arrays.\n              (Lesson 7)\n\n Objective 4: Find the area of a rectangle through multiplication of the side lengths.\n              (Lesson 8)\n\n\n                       Topic B:                   Concepts of Area Measurement                                                                55\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 50,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                      Lesson 4 Problem Set 3 4\n\n\nName                                                                                                        Date\n\n1.   Use a ruler to measure the side lengths of the rectangle in centimeters. Mark each centimeter with a\n     point and connect the points to show the square units. Then, count the squares you drew to find the\n     total area.\n\n\n                                                                                 Total area: __________________________________\n\n\n2.   Use a ruler to measure the side lengths of the rectangle in inches. Mark each inch with a point and\n     connect the points to show the square units. Then, count the squares you drew to find the total area.\n\n\n                                                                                 Total area: __________________________________\n\n\n3.   Mariana uses square centimeter tiles to find the side lengths of the rectangle below. Label each side\n     length. Then, count the tiles to find the total area.\n\n\n                                                                                 Total area: __________________________________\n\n\n                        Lesson 4:                  Relate side lengths with the number of tiles on a side.                        49\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 51,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                      Lesson 4 Problem Set 3 4\n\n\n4.   Each         is 1 square centimeter. Saffron says that the side length of the rectangle below is\n     4 centimeters. Kevin says the side length is 5 centimeters. Who is correct? Explain how you know.\n\n\n5.   Use both square centimeter and square inch tiles to find the area of the rectangle below. Which works\n     best? Explain why.\n\n\n6.   How does knowing side lengths A and B help you find side lengths C and D on the rectangle below?\n\n                        B\n\n\n        A                                              C\n\n\n                        D\n\n\n                        Lesson 4:                  Relate side lengths with the number of tiles on a side.                        50\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 219,
+        "text": "A STORY OF UNITS                                                                                            Lesson 4 Answer Key 3 4\n\n\nLesson 4\nProblem Set\n1.    2 cm by 7 cm marked and connected; 14 sq cm\n2.    3 in by 2 in marked and connected; 6 sq in\n3.    3 cm by 4 cm labeled; 12 sq cm\n4.    Both are correct; explanations will vary.\n5.    Square-inch tiles; explanations will vary.\n6.    Explanations will vary.\n\n\nExit Ticket\na.    2 cm by 3 cm; 6 sq cm\nb.    2 cm by 6 cm; 12 sq cm\nc.    1 in by 5 in; 5 sq in\n\n\nHomework\n1.    8 sq cm\n2.    4 cm by 5 cm labeled; 20 sq cm\n3.    2 in by 7 in labeled; 14 sq in\n4.    Both are correct; explanations will vary.\n5.    2 in; 4 in; 8 sq in; explanations will vary.\n\n\n                        Module 4:                  Multiplication and Area                                                            218\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

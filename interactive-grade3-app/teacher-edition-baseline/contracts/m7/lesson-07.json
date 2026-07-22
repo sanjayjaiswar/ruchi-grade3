@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m7-l7",
+  "moduleId": "m7",
+  "lessonNumber": 7,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf",
+    "teacherEditionSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+    "teacherEditionBytes": 21553765,
+    "lessonPdfPages": {
+      "start": 97,
+      "end": 113
+    },
+    "problemSetPdfPages": [
+      104,
+      105
+    ],
+    "exitTicketPdfPages": [
+      106
+    ],
+    "homeworkPdfPages": [
+      107,
+      108
+    ],
+    "answerKeyPdfPages": [
+      472,
+      473
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m7-student/workbook-page-028.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m7-teacher/page-104.png",
+      "/source-pages/m7-teacher/page-105.png",
+      "/source-pages/m7-teacher/page-472.png",
+      "/source-pages/m7-teacher/page-473.png"
+    ]
+  },
+  "objective": "Reason about composing and decomposing polygons using tetrominoes.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "Materials: (T) Tetrominoes (Template) (S) Problem Set, tetrominoes (Template), crayons\n\nNote: The Template in this lesson is a full sheet of each of the five types of tetrominoes (shown on the next\npage). Make copies of each sheet on different color cardstock to color-code the pieces. Then, cut the\ntetrominoes out, and bag sets that include multiple copies of each tetromino type for student use during the\nlesson. Enlist the help of volunteers to assist in preparing the tetrominoes for this lesson.\n\nProblem 1: Use tetrominoes to compose polygons.\n    T:   (Project or hold up the tetrominoes.) Each of these shapes is called a tetromino. The area of each\n         tetromino is measured in square units. What is the area of each one in square units?\n    S:   4 square units.\n    T:   Notice that each square unit shares a whole side with\n         another square. Whisper the name of these shapes to\n                                                                                     NOTES ON\n         a partner.\n                                                                                     MULTIPLE MEANS\n    S:   (Whisper tetromino to a partner.)                                           OF REPRESENTATION:\n    T:   Take a few minutes to make some shapes with the                    Tetromino is pronounced\n         tetrominoes. (Allow students time to explore.) What                /tɛˈtrɑːmɪnoʊ/. If helpful, explain to\n         shapes did you make?                                               English language learners and others\n    S:   (Possible responses include rectangle, square, and                 that the number prefix tetra- brings a\n         hexagon.)                                                          meaning of four, similar to the number\n                                                                            prefix quadr-. Relate tetromino to\n    T:   Tell your partner how you moved the tetrominoes to                 familiar words such as the video game\n         make them fit together.                                            Tetris and domino (having two\n    S:   I turned some of the pieces.  I rotated them.                     squares).\n    T:   To make shapes, you’ll have to rotate them and\n         sometimes even flip them over. (Demonstrate turning\n         one over so the back is faceup.) Read Problem 1.\n    S:   (Read: Use tetrominoes to create at least two                              Tetrominoes\n         different rectangles. Then, color the grid below to\n         show how you created your rectangles. You may\n         use the same tetromino more than once.)\n    T:   Look at the grid in Problem 1. How many\n         squares will you color for each tetromino you\n         use?\n    S:   Four squares!\n    T:   How will someone who looks at your grid be able to tell which tetromino pieces you used to make\n         each rectangle?\n    S:   I can color the grid the same color as the tetromino pieces!  I can color the squares on the grid to\n         look like the shape of each tetromino that I use.\n    T:   Go ahead and use your tetrominoes to answer Problem 1. (Circulate.)\n\n\n                        Lesson 7:                 Reason about composing and decomposing polygons using                98\n                                                  tetrominoes.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                              Lesson 7 3\n\n\n       T:   Talk to a partner: How do you know the shapes that you made in Problem 1 are rectangles?\n       S:   They look like rectangles!  I counted the units for the sides of my shapes. The opposite sides are\n            equal. I know rectangles have opposite sides that are equal.  I can use the corner of an index card\n            to make sure my shapes have four right angles.  My shapes have two sets of parallel lines, like a\n            rectangle.  Opposite sides that are equal, four right angles, and two sets of parallel lines are\nMP.3        attributes of rectangles. My shapes have all of these attributes, so my shapes are rectangles!\n       T:   Talk to a partner: What is the smallest rectangle you can make with tetrominoes? How do you\n            know?\n       S:   A 1 unit by 4 unit rectangle.  The long, straight tetromino is already a rectangle, and its area is\n            4 square units.  Or we could make a 2 unit by 2 unit rectangle with the square piece.  The\n            square is a rectangle, too, and its area is 4 square units!\n       T:   Work with a partner to make the smallest rectangle you can without using the square or long,\n            straight tetromino. (Allow students time to work.) How did you make your rectangle?\n       S:   We made a 3 unit by 4 unit rectangle with two T-shaped tetrominoes and one L-shaped tetromino.\n             We made the same size rectangle, but we used two L-shaped tetrominoes and one Z-shaped\n            tetromino.  I think our rectangle is the smallest because we made a 2 by 4 rectangle using two\n            L-shaped tetrominoes.\n\n Problem 2: Use tetrominoes to compose polygons with given areas.\n       T:   Read Problem 2.\n       S:   (Read: Use tetrominoes to create at least two squares,                                          NOTE ON\n            each with an area of 36 square units. Then, color the                                           MULTIPLE MEANS\n            grid below to show how you created your squares. You                                            OF ENGAGEMENT:\n            may use the same tetromino more than once.\n                                                                                                   Part of the excitement of having to find\n            a. Write a number sentence to show the area of a\n                                                                                                   two combinations that make a square\n                 square above as the sum of the areas of the                                       is that once the first square comes\n                 tetrominoes you used to make the square.                                          together, students are excited to see\n            b. Write a number sentence to show the area of a                                       what other pieces they can use to\n                 square above as the product of its side lengths.)                                 make the second square. To vary the\n                                                                                                   level of challenge, limit which pieces or\n       T:   How is Problem 2 different from Problem 1?                                             how many they can use.\n       S:   It tells us the area of the square has to be 36 square\n            units.\n       T:   Talk to your partner: How many tetrominoes will you use to solve Problem 2? How do you know?\n       S:   Enough to fill 36 square units.  Nine tetrominoes because each tetromino has an area of 4 square\n            units, and 9 × 4 = 36.  I can also divide to figure it out, like this: 36 ÷ 4 = 9.\n       T:   What will be the side lengths of your square? How do you know?\n       S:   6 units because the side lengths of a square are equal.\n       T:   Talk to a partner: How can the grid help you make a square with an area of 36 square units?\n       S:   I can mark a 6 by 6 square on the grid so that I know my square has the right area.  Then, I can\n            just color the grid—I don’t even need to use the tetrominoes.  I think after I colored the grid,\n            I would build the square with the tetrominoes, just to be sure!\n\n\n                          Lesson 7:                 Reason about composing and decomposing polygons using                                      99\n                                                    tetrominoes.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                       Lesson 7 3\n\n\n    T:   If that works for you, then use that strategy. Or you can use the strategy you used with the\n         rectangles and build with the tetrominoes first and then color the grid.\nHave students solve all of Problem 2. When students are done, facilitate a discussion using the following\nsuggested questions.\n        How do you know your shape is a square?\n        What is the smallest square you can make with tetrominoes?\n        What is the smallest square you can make without using the square tetromino?\n        Can you make a square with tetrominoes that has an area of 25 square units? Why or why not?",
+    "fluencyPracticeText": " Multiply by 5 3.OA.7                                 (8 minutes)\n Physiometry 3.G.1                                    (3 minutes)\n Classify the Shape 3.G.1                             (4 minutes)\n\nMultiply by 5 (8 minutes)\nMaterials: (S) Multiply by 5 (6─10) Pattern Sheet\n\nNote: This activity builds fluency with multiplication facts using units of 5. It works toward students knowing\nfrom memory all products of two one-digit numbers. See Lesson 1 for directions for administration of a\nMultiply-By Pattern Sheet.\n    T:   (Write 7 × 5 = ____.) Let’s skip-count up by fives. I’ll raise a finger for each five. (Raise a finger for\n         each number to track the count.)\n    S:   5, 10, 15, 20, 25, 30, 35.\n    T:   Let’s skip-count by fives starting at 25. Why is 25 a good place to start?\n    S:   It’s a fact we already know, so we can use it to figure out a fact we don’t know.\n    T:   (Track with fingers as students say the numbers.)\n    S:   25 (5 fingers), 30 (6 fingers), 35 (7 fingers).\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 50 with 10 fingers, 1 for each\n         five. (Count down with fingers as students say the numbers.)\n    S:   50 (10 fingers), 45 (9 fingers), 40 (8 fingers), 35 (7 fingers).\nContinue with the following possible sequence: 9 × 5, 6 × 5, and 8 × 5.\n    T:   (Distribute the Multiply by 5 Pattern Sheet.) Let’s practice multiplying by 5. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 7:                 Reason about composing and decomposing polygons using                96\n                                                   tetrominoes.\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                       Lesson 7 3\n\n\nPhysiometry (3 minutes)\nNote: Kinesthetic memory is strong memory. This activity reviews terms from Lessons 4 and 5.\n    T:   Stand up.\n    S:   (Stand up.)\n    T:   (Stretch one arm up, directly toward the ceiling. Stretch the other arm parallel to the floor.) What\n         type of angle do you think I’m modeling with my arms?\n    S:   Right angle.\n    T:   Model a right angle with your arms.\n    S:   (Mirror the teacher.)\n    T:   (Stretch the arm parallel to the floor toward the ceiling. Move the arm pointing toward the ceiling\n         so that it points toward the opposite wall.) Model another right angle.\n    S:   (Mirror the teacher.)\n    T:   How many sides does a triangle have?\n    S:   Three sides.\n    T:   Using your arms, model a triangle with the person standing next to you.\n    S:   (Model a triangle in pairs.)\n    T:   What do we call a four-sided figure?\n    S:   Quadrilateral.\n    T:   Use your body to make a quadrilateral with your partner.\n    S:   (Model a quadrilateral in pairs.)\n    T:   (Point to a side wall.) Point to the wall that runs parallel to the one to which I’m pointing.\n    S:   (Point to the opposite side wall.)\n    T:   (Point to the back wall so students point to the front wall.)\n    T:   (Point to the front wall so students point to the back wall.)\n    T:   Point to the walls that make a right angle with the wall to which I’m pointing.\n    T:   (Point to the back wall so students point to the side walls.)\n    T:   (Point to the side wall so students point to the front and back walls.)\nRepeat with the front wall.\n\nClassify the Shape (4 minutes)\nMaterials: (S) Personal white board\n\nRepeat Classify the Polygon from Lesson 5 with different shapes or orienting the same shapes differently.\nNote: This activity reviews Lesson 4.\n\n\n                       Lesson 7:                  Reason about composing and decomposing polygons using                97\n                                                  tetrominoes.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                       Lesson 7 3",
+    "problemSetGuidanceText": "Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For\nsome classes, it may be appropriate to modify the assignment by specifying which problems they work on\nfirst. Some problems do not specify a method for solving. Students should solve these problems using the\nRDW approach used for Application Problems.",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Project or hold up the tetrominoes.) Each of these shapes is called a tetromino. The area of each tetromino is measured in square units. What is the area of each one in square units?"
+      },
+      {
+        "speaker": "students",
+        "text": "4 square units."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Notice that each square unit shares a whole side with another square. Whisper the name of these shapes to a partner. MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "(Whisper tetromino to a partner.) OF REPRESENTATION:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Take a few minutes to make some shapes with the Tetromino is pronounced tetrominoes. (Allow students time to explore.) What /tɛˈtrɑːmɪnoʊ/. If helpful, explain to shapes did you make? English language learners and others"
+      },
+      {
+        "speaker": "students",
+        "text": "(Possible responses include rectangle, square, and that the number prefix tetra- brings a hexagon.) meaning of four, similar to the number prefix quadr-. Relate tetromino to"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell your partner how you moved the tetrominoes to familiar words such as the video game make them fit together. Tetris and domino (having two"
+      },
+      {
+        "speaker": "students",
+        "text": "I turned some of the pieces.  I rotated them. squares)."
+      },
+      {
+        "speaker": "teacher",
+        "text": "To make shapes, you’ll have to rotate them and sometimes even flip them over. (Demonstrate turning one over so the back is faceup.) Read Problem 1."
+      },
+      {
+        "speaker": "students",
+        "text": "(Read: Use tetrominoes to create at least two Tetrominoes different rectangles. Then, color the grid below to show how you created your rectangles. You may use the same tetromino more than once.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Look at the grid in Problem 1. How many squares will you color for each tetromino you use?"
+      },
+      {
+        "speaker": "students",
+        "text": "Four squares!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How will someone who looks at your grid be able to tell which tetromino pieces you used to make each rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "I can color the grid the same color as the tetromino pieces!  I can color the squares on the grid to look like the shape of each tetromino that I use."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Go ahead and use your tetrominoes to answer Problem 1. (Circulate.) tetrominoes. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 7 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to a partner: How do you know the shapes that you made in Problem 1 are rectangles?"
+      },
+      {
+        "speaker": "students",
+        "text": "They look like rectangles!  I counted the units for the sides of my shapes. The opposite sides are equal. I know rectangles have opposite sides that are equal.  I can use the corner of an index card to make sure my shapes have four right angles.  My shapes have two sets of parallel lines, like a rectangle.  Opposite sides that are equal, four right angles, and two sets of parallel lines are MP.3 attributes of rectangles. My shapes have all of these attributes, so my shapes are rectangles!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to a partner: What is the smallest rectangle you can make with tetrominoes? How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "A 1 unit by 4 unit rectangle.  The long, straight tetromino is already a rectangle, and its area is 4 square units.  Or we could make a 2 unit by 2 unit rectangle with the square piece.  The square is a rectangle, too, and its area is 4 square units!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with a partner to make the smallest rectangle you can without using the square or long, straight tetromino. (Allow students time to work.) How did you make your rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "We made a 3 unit by 4 unit rectangle with two T-shaped tetrominoes and one L-shaped tetromino.  We made the same size rectangle, but we used two L-shaped tetrominoes and one Z-shaped tetromino.  I think our rectangle is the smallest because we made a 2 by 4 rectangle using two L-shaped tetrominoes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Read Problem 2."
+      },
+      {
+        "speaker": "students",
+        "text": "(Read: Use tetrominoes to create at least two squares, NOTE ON each with an area of 36 square units. Then, color the MULTIPLE MEANS grid below to show how you created your squares. You OF ENGAGEMENT: may use the same tetromino more than once. Part of the excitement of having to find a. Write a number sentence to show the area of a two combinations that make a square square above as the sum of the areas of the is that once the first square comes tetrominoes you used to make the square. together, students are excited to see b. Write a number sentence to show the area of a what other pieces they can use to square above as the product of its side lengths.) make the second square. To vary the level of challenge, limit which pieces or"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How is Problem 2 different from Problem 1? how many they can use."
+      },
+      {
+        "speaker": "students",
+        "text": "It tells us the area of the square has to be 36 square units."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner: How many tetrominoes will you use to solve Problem 2? How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "Enough to fill 36 square units.  Nine tetrominoes because each tetromino has an area of 4 square units, and 9 × 4 = 36.  I can also divide to figure it out, like this: 36 ÷ 4 = 9."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What will be the side lengths of your square? How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "6 units because the side lengths of a square are equal."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to a partner: How can the grid help you make a square with an area of 36 square units?"
+      },
+      {
+        "speaker": "students",
+        "text": "I can mark a 6 by 6 square on the grid so that I know my square has the right area.  Then, I can just color the grid—I don’t even need to use the tetrominoes.  I think after I colored the grid, I would build the square with the tetrominoes, just to be sure! tetrominoes. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 7 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "If that works for you, then use that strategy. Or you can use the strategy you used with the rectangles and build with the tetrominoes first and then color the grid. Have students solve all of Problem 2. When students are done, facilitate a discussion using the following suggested questions.  How do you know your shape is a square?  What is the smallest square you can make with tetrominoes?  What is the smallest square you can make without using the square tetromino?  Can you make a square with tetrominoes that has an area of 25 square units? Why or why not?"
+      }
+    ],
+    "teacherPrompts": [
+      "(Project or hold up the tetrominoes.) Each of these shapes is called a tetromino. The area of each tetromino is measured in square units. What is the area of each one in square units?",
+      "Notice that each square unit shares a whole side with another square. Whisper the name of these shapes to a partner. MULTIPLE MEANS",
+      "Take a few minutes to make some shapes with the Tetromino is pronounced tetrominoes. (Allow students time to explore.) What /tɛˈtrɑːmɪnoʊ/. If helpful, explain to shapes did you make? English language learners and others",
+      "Tell your partner how you moved the tetrominoes to familiar words such as the video game make them fit together. Tetris and domino (having two",
+      "To make shapes, you’ll have to rotate them and sometimes even flip them over. (Demonstrate turning one over so the back is faceup.) Read Problem 1.",
+      "Look at the grid in Problem 1. How many squares will you color for each tetromino you use?",
+      "How will someone who looks at your grid be able to tell which tetromino pieces you used to make each rectangle?",
+      "Go ahead and use your tetrominoes to answer Problem 1. (Circulate.) tetrominoes. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 7 3",
+      "Talk to a partner: How do you know the shapes that you made in Problem 1 are rectangles?",
+      "Talk to a partner: What is the smallest rectangle you can make with tetrominoes? How do you know?",
+      "Work with a partner to make the smallest rectangle you can without using the square or long, straight tetromino. (Allow students time to work.) How did you make your rectangle?",
+      "Read Problem 2.",
+      "How is Problem 2 different from Problem 1? how many they can use.",
+      "Talk to your partner: How many tetrominoes will you use to solve Problem 2? How do you know?",
+      "What will be the side lengths of your square? How do you know?",
+      "Talk to a partner: How can the grid help you make a square with an area of 36 square units?",
+      "If that works for you, then use that strategy. Or you can use the strategy you used with the rectangles and build with the tetrominoes first and then color the grid. Have students solve all of Problem 2. When students are done, facilitate a discussion using the following suggested questions.  How do you know your shape is a square?  What is the smallest square you can make with tetrominoes?  What is the smallest square you can make without using the square tetromino?  Can you make a square with tetrominoes that has an area of 25 square units? Why or why not?"
+    ],
+    "debriefPrompt": "Compare the rectangles you made in Problem 1 to a partner’s. How are they the same? How are they different?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Use tetrominoes to create at least two different rectangles. Then, color the grid below to show how you created your rectangles. You may use the same tetromino more than once.",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "Use tetrominoes to create at least two squares, each with an area of 36 square units. Then, color the grid below to show how you created your squares. You may use the same tetromino more than once. a. Write an equation to show the area of a square above as the sum of the areas of the tetrominoes you used to make the square. b. Write an equation to show the area of a square above as the product of its side lengths. tetrominoes.",
+        "equations": []
+      },
+      {
+        "number": 3,
+        "prompt": "a. Use tetrominoes to create at least two different rectangles, each with an area of 12 square units. Then, color the grid below to show how you created the rectangles. You may use the same tetromino more than once. b. Explain how you know the area of each rectangle is 12 square units.",
+        "equations": []
+      },
+      {
+        "number": 4,
+        "prompt": "Marco created a rectangle with tetrominoes and traced its outline in the space below. Use tetrominoes to re-create it. Estimate to draw lines inside the rectangle below to show how you re-created Marco's rectangle. tetrominoes.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                          Lesson 7 Problem Set 3 7\n\n\nName                                                                                         Date\n\n1. Use tetrominoes to create at least two different rectangles. Then, color the grid below to show how you\n   created your rectangles. You may use the same tetromino more than once.\n\n\n2. Use tetrominoes to create at least two squares, each with an area of 36 square units. Then, color the grid\n   below to show how you created your squares. You may use the same tetromino more than once.\n\n\n    a. Write an equation to show the area of a square above as the sum of the areas of the tetrominoes you\n       used to make the square.\n\n\n    b. Write an equation to show the area of a square above as the product of its side lengths.\n\n\n                       Lesson 7:                 Reason about composing and decomposing polygons using             103\n                                                 tetrominoes.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                         Lesson 7 Problem Set 3 7\n\n\n3. a. Use tetrominoes to create at least two different rectangles, each with an area of 12 square units.\n      Then, color the grid below to show how you created the rectangles. You may use the same tetromino\n      more than once.\n\n\n   b. Explain how you know the area of each rectangle is 12 square units.\n\n\n4. Marco created a rectangle with tetrominoes and traced its outline in the space below. Use tetrominoes\n   to re-create it. Estimate to draw lines inside the rectangle below to show how you re-created Marco’s\n   rectangle.\n\n\n                      Lesson 7:                 Reason about composing and decomposing polygons using             104\n                                                tetrominoes.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "answerKeyProblemSetText": "1.    Grid colored\n2.    Grid colored\n      a. Number sentence will vary.\n      b. Number sentence will vary.\n3.    a. Grid colored\n      b. Explanations will vary.\n4.    Answers will vary.",
+    "answerKeyText": "A STORY OF UNITS                                                                               Lesson 7 Answer Key 3 7\n\n\nLesson 7\nPattern Sheet\n              5                                              10                                15                 20\n             25                                              30                                35                 40\n             45                                              50                                25                 30\n             25                                              35                                25                 40\n             25                                              45                                25                 50\n             30                                              25                                30                 35\n             30                                              40                                30                 45\n             30                                              35                                30                 35\n             40                                              35                                45                 35\n             40                                              30                                40                 35\n             40                                              45                                45                 30\n             45                                              35                                45                 40\n             45                                              40                                30                 45\n             35                                              45                                30                 40\n             45                                              35                                30                 40\n\n\nProblem Set\n1.    Grid colored\n2.    Grid colored\n      a. Number sentence will vary.\n      b. Number sentence will vary.\n3.    a. Grid colored\n      b. Explanations will vary.\n4.    Answers will vary.\n\n\nExit Ticket\nGrid colored\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                             471\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                          Lesson 7 Answer Key 3 7\n\n\nHomework\n1.    3 rectangles colored\n2.    a. Square with 16 units colored\n      b. 2 rectangles with 24 units colored\n3.    Explanations will vary.\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                        472\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "ruler-or-length",
+      "area-model",
+      "geometry-diagram",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "ruler-or-length": [
+        "square above as the product of its side lengths.) make the second square. To vary the",
+        "T: What will be the side lengths of your square? How do you know?",
+        "S: 6 units because the side lengths of a square are equal.",
+        "b. Write an equation to show the area of a square above as the product of its side lengths."
+      ],
+      "area-model": [
+        "tetromino is measured in square units. What is the area of each one in square units?",
+        "S: 4 square units.",
+        "T: Notice that each square unit shares a whole side with",
+        "4 square units.  Or we could make a 2 unit by 2 unit rectangle with the square piece.  The",
+        "square is a rectangle, too, and its area is 4 square units!",
+        "each with an area of 36 square units. Then, color the MULTIPLE MEANS",
+        "S: Enough to fill 36 square units.  Nine tetrominoes because each tetromino has an area of 4 square",
+        "T: Talk to a partner: How can the grid help you make a square with an area of 36 square units?"
+      ],
+      "geometry-diagram": [
+        "Reason about composing and decomposing polygons using tetrominoes.",
+        "Problem 1: Use tetrominoes to compose polygons.",
+        "S: (Possible responses include rectangle, square, and that the number prefix tetra- brings a",
+        "different rectangles. Then, color the grid below to",
+        "show how you created your rectangles. You may",
+        "each rectangle?",
+        "Lesson 7: Reason about composing and decomposing polygons using 98",
+        "T: Talk to a partner: How do you know the shapes that you made in Problem 1 are rectangles?"
+      ],
+      "picture-or-drawing": [
+        "to re-create it. Estimate to draw lines inside the rectangle below to show how you re-created Marco’s"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Notice that each square unit shares a whole side with another square. Whisper the name of these shapes to a partner. MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Take a few minutes to make some shapes with the Tetromino is pronounced tetrominoes. (Allow students time to explore.) What /tɛˈtrɑːmɪnoʊ/. If helpful, explain to shapes did you make? English language learners and others"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell your partner how you moved the tetrominoes to familiar words such as the video game make them fit together. Tetris and domino (having two"
+      },
+      {
+        "speaker": "students",
+        "text": "I turned some of the pieces.  I rotated them. squares)."
+      },
+      {
+        "speaker": "teacher",
+        "text": "To make shapes, you’ll have to rotate them and sometimes even flip them over. (Demonstrate turning one over so the back is faceup.) Read Problem 1."
+      },
+      {
+        "speaker": "students",
+        "text": "(Read: Use tetrominoes to create at least two Tetrominoes different rectangles. Then, color the grid below to show how you created your rectangles. You may use the same tetromino more than once.)"
+      },
+      {
+        "speaker": "students",
+        "text": "They look like rectangles!  I counted the units for the sides of my shapes. The opposite sides are equal. I know rectangles have opposite sides that are equal.  I can use the corner of an index card to make sure my shapes have four right angles.  My shapes have two sets of parallel lines, like a rectangle.  Opposite sides that are equal, four right angles, and two sets of parallel lines are MP.3 attributes of rectangles. My shapes have all of these attributes, so my shapes are rectangles!"
+      },
+      {
+        "speaker": "students",
+        "text": "(Read: Use tetrominoes to create at least two squares, NOTE ON each with an area of 36 square units. Then, color the MULTIPLE MEANS grid below to show how you created your squares. You OF ENGAGEMENT: may use the same tetromino more than once. Part of the excitement of having to find a. Write a number sentence to show the area of a two combinations that make a square square above as the sum of the areas of the is that once the first square comes tetrominoes you used to make the square. together, students are excited to see b. Write a number sentence to show the area of a what other pieces they can use to square above as the product of its side lengths.) make the second square. To vary the level of challenge, limit which pieces or"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner: How many tetrominoes will you use to solve Problem 2? How do you know?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "If that works for you, then use that strategy. Or you can use the strategy you used with the rectangles and build with the tetrominoes first and then color the grid. Have students solve all of Problem 2. When students are done, facilitate a discussion using the following suggested questions.  How do you know your shape is a square?  What is the smallest square you can make with tetrominoes?  What is the smallest square you can make without using the square tetromino?  Can you make a square with tetrominoes that has an area of 25 square units? Why or why not?"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 97 (debrief) ---\nA STORY OF UNITS                                                                                        Lesson 7 3\n\n\nLesson 7\nObjective: Reason about composing and decomposing polygons using\ntetrominoes.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (15 minutes)\n Concept Development               (35 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (15 minutes)\n\n Multiply by 5 3.OA.7                                 (8 minutes)\n Physiometry 3.G.1                                    (3 minutes)\n Classify the Shape 3.G.1                             (4 minutes)\n\nMultiply by 5 (8 minutes)\nMaterials: (S) Multiply by 5 (6─10) Pattern Sheet\n\nNote: This activity builds fluency with multiplication facts using units of 5. It works toward students knowing\nfrom memory all products of two one-digit numbers. See Lesson 1 for directions for administration of a\nMultiply-By Pattern Sheet.\n    T:   (Write 7 × 5 = ____.) Let’s skip-count up by fives. I’ll raise a finger for each five. (Raise a finger for\n         each number to track the count.)\n    S:   5, 10, 15, 20, 25, 30, 35.\n    T:   Let’s skip-count by fives starting at 25. Why is 25 a good place to start?\n    S:   It’s a fact we already know, so we can use it to figure out a fact we don’t know.\n    T:   (Track with fingers as students say the numbers.)\n    S:   25 (5 fingers), 30 (6 fingers), 35 (7 fingers).\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 50 with 10 fingers, 1 for each\n         five. (Count down with fingers as students say the numbers.)\n    S:   50 (10 fingers), 45 (9 fingers), 40 (8 fingers), 35 (7 fingers).\nContinue with the following possible sequence: 9 × 5, 6 × 5, and 8 × 5.\n    T:   (Distribute the Multiply by 5 Pattern Sheet.) Let’s practice multiplying by 5. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 7:                 Reason about composing and decomposing polygons using                96\n                                                   tetrominoes.\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 98 (lesson-instruction) ---\nA STORY OF UNITS                                                                                       Lesson 7 3\n\n\nPhysiometry (3 minutes)\nNote: Kinesthetic memory is strong memory. This activity reviews terms from Lessons 4 and 5.\n    T:   Stand up.\n    S:   (Stand up.)\n    T:   (Stretch one arm up, directly toward the ceiling. Stretch the other arm parallel to the floor.) What\n         type of angle do you think I’m modeling with my arms?\n    S:   Right angle.\n    T:   Model a right angle with your arms.\n    S:   (Mirror the teacher.)\n    T:   (Stretch the arm parallel to the floor toward the ceiling. Move the arm pointing toward the ceiling\n         so that it points toward the opposite wall.) Model another right angle.\n    S:   (Mirror the teacher.)\n    T:   How many sides does a triangle have?\n    S:   Three sides.\n    T:   Using your arms, model a triangle with the person standing next to you.\n    S:   (Model a triangle in pairs.)\n    T:   What do we call a four-sided figure?\n    S:   Quadrilateral.\n    T:   Use your body to make a quadrilateral with your partner.\n    S:   (Model a quadrilateral in pairs.)\n    T:   (Point to a side wall.) Point to the wall that runs parallel to the one to which I’m pointing.\n    S:   (Point to the opposite side wall.)\n    T:   (Point to the back wall so students point to the front wall.)\n    T:   (Point to the front wall so students point to the back wall.)\n    T:   Point to the walls that make a right angle with the wall to which I’m pointing.\n    T:   (Point to the back wall so students point to the side walls.)\n    T:   (Point to the side wall so students point to the front and back walls.)\nRepeat with the front wall.\n\nClassify the Shape (4 minutes)\nMaterials: (S) Personal white board\n\nRepeat Classify the Polygon from Lesson 5 with different shapes or orienting the same shapes differently.\nNote: This activity reviews Lesson 4.\n\n\n                       Lesson 7:                  Reason about composing and decomposing polygons using                97\n                                                  tetrominoes.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 99 (concept-development) ---\nA STORY OF UNITS                                                                                       Lesson 7 3\n\n\nConcept Development (35 minutes)\n\nMaterials: (T) Tetrominoes (Template) (S) Problem Set, tetrominoes (Template), crayons\n\nNote: The Template in this lesson is a full sheet of each of the five types of tetrominoes (shown on the next\npage). Make copies of each sheet on different color cardstock to color-code the pieces. Then, cut the\ntetrominoes out, and bag sets that include multiple copies of each tetromino type for student use during the\nlesson. Enlist the help of volunteers to assist in preparing the tetrominoes for this lesson.\n\nProblem 1: Use tetrominoes to compose polygons.\n    T:   (Project or hold up the tetrominoes.) Each of these shapes is called a tetromino. The area of each\n         tetromino is measured in square units. What is the area of each one in square units?\n    S:   4 square units.\n    T:   Notice that each square unit shares a whole side with\n         another square. Whisper the name of these shapes to\n                                                                                     NOTES ON\n         a partner.\n                                                                                     MULTIPLE MEANS\n    S:   (Whisper tetromino to a partner.)                                           OF REPRESENTATION:\n    T:   Take a few minutes to make some shapes with the                    Tetromino is pronounced\n         tetrominoes. (Allow students time to explore.) What                /tɛˈtrɑːmɪnoʊ/. If helpful, explain to\n         shapes did you make?                                               English language learners and others\n    S:   (Possible responses include rectangle, square, and                 that the number prefix tetra- brings a\n         hexagon.)                                                          meaning of four, similar to the number\n                                                                            prefix quadr-. Relate tetromino to\n    T:   Tell your partner how you moved the tetrominoes to                 familiar words such as the video game\n         make them fit together.                                            Tetris and domino (having two\n    S:   I turned some of the pieces.  I rotated them.                     squares).\n    T:   To make shapes, you’ll have to rotate them and\n         sometimes even flip them over. (Demonstrate turning\n         one over so the back is faceup.) Read Problem 1.\n    S:   (Read: Use tetrominoes to create at least two                              Tetrominoes\n         different rectangles. Then, color the grid below to\n         show how you created your rectangles. You may\n         use the same tetromino more than once.)\n    T:   Look at the grid in Problem 1. How many\n         squares will you color for each tetromino you\n         use?\n    S:   Four squares!\n    T:   How will someone who looks at your grid be able to tell which tetromino pieces you used to make\n         each rectangle?\n    S:   I can color the grid the same color as the tetromino pieces!  I can color the squares on the grid to\n         look like the shape of each tetromino that I use.\n    T:   Go ahead and use your tetrominoes to answer Problem 1. (Circulate.)\n\n\n                        Lesson 7:                 Reason about composing and decomposing polygons using                98\n                                                  tetrominoes.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 100 (lesson-instruction) ---\nA STORY OF UNITS                                                                                              Lesson 7 3\n\n\n       T:   Talk to a partner: How do you know the shapes that you made in Problem 1 are rectangles?\n       S:   They look like rectangles!  I counted the units for the sides of my shapes. The opposite sides are\n            equal. I know rectangles have opposite sides that are equal.  I can use the corner of an index card\n            to make sure my shapes have four right angles.  My shapes have two sets of parallel lines, like a\n            rectangle.  Opposite sides that are equal, four right angles, and two sets of parallel lines are\nMP.3        attributes of rectangles. My shapes have all of these attributes, so my shapes are rectangles!\n       T:   Talk to a partner: What is the smallest rectangle you can make with tetrominoes? How do you\n            know?\n       S:   A 1 unit by 4 unit rectangle.  The long, straight tetromino is already a rectangle, and its area is\n            4 square units.  Or we could make a 2 unit by 2 unit rectangle with the square piece.  The\n            square is a rectangle, too, and its area is 4 square units!\n       T:   Work with a partner to make the smallest rectangle you can without using the square or long,\n            straight tetromino. (Allow students time to work.) How did you make your rectangle?\n       S:   We made a 3 unit by 4 unit rectangle with two T-shaped tetrominoes and one L-shaped tetromino.\n             We made the same size rectangle, but we used two L-shaped tetrominoes and one Z-shaped\n            tetromino.  I think our rectangle is the smallest because we made a 2 by 4 rectangle using two\n            L-shaped tetrominoes.\n\n Problem 2: Use tetrominoes to compose polygons with given areas.\n       T:   Read Problem 2.\n       S:   (Read: Use tetrominoes to create at least two squares,                                          NOTE ON\n            each with an area of 36 square units. Then, color the                                           MULTIPLE MEANS\n            grid below to show how you created your squares. You                                            OF ENGAGEMENT:\n            may use the same tetromino more than once.\n                                                                                                   Part of the excitement of having to find\n            a. Write a number sentence to show the area of a\n                                                                                                   two combinations that make a square\n                 square above as the sum of the areas of the                                       is that once the first square comes\n                 tetrominoes you used to make the square.                                          together, students are excited to see\n            b. Write a number sentence to show the area of a                                       what other pieces they can use to\n                 square above as the product of its side lengths.)                                 make the second square. To vary the\n                                                                                                   level of challenge, limit which pieces or\n       T:   How is Problem 2 different from Problem 1?                                             how many they can use.\n       S:   It tells us the area of the square has to be 36 square\n            units.\n       T:   Talk to your partner: How many tetrominoes will you use to solve Problem 2? How do you know?\n       S:   Enough to fill 36 square units.  Nine tetrominoes because each tetromino has an area of 4 square\n            units, and 9 × 4 = 36.  I can also divide to figure it out, like this: 36 ÷ 4 = 9.\n       T:   What will be the side lengths of your square? How do you know?\n       S:   6 units because the side lengths of a square are equal.\n       T:   Talk to a partner: How can the grid help you make a square with an area of 36 square units?\n       S:   I can mark a 6 by 6 square on the grid so that I know my square has the right area.  Then, I can\n            just color the grid—I don’t even need to use the tetrominoes.  I think after I colored the grid,\n            I would build the square with the tetrominoes, just to be sure!\n\n\n                          Lesson 7:                 Reason about composing and decomposing polygons using                                      99\n                                                    tetrominoes.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 101 (debrief) ---\nA STORY OF UNITS                                                                                       Lesson 7 3\n\n\n    T:   If that works for you, then use that strategy. Or you can use the strategy you used with the\n         rectangles and build with the tetrominoes first and then color the grid.\nHave students solve all of Problem 2. When students are done, facilitate a discussion using the following\nsuggested questions.\n        How do you know your shape is a square?\n        What is the smallest square you can make with tetrominoes?\n        What is the smallest square you can make without using the square tetromino?\n        Can you make a square with tetrominoes that has an area of 25 square units? Why or why not?\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the Problem Set within the allotted 10 minutes. For\nsome classes, it may be appropriate to modify the assignment by specifying which problems they work on\nfirst. Some problems do not specify a method for solving. Students should solve these problems using the\nRDW approach used for Application Problems.\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Reason about composing and decomposing polygons using tetrominoes.\nThe Student Debrief is intended to invite reflection and active processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with\na partner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Compare the rectangles you made in Problem 1\n         to a partner’s. How are they the same? How are\n         they different?\n        Compare the squares you made in Problem 2 to a\n         partner’s. How are they the same? How are they\n         different?\n        Say the addition equation in Problem 2(a) as a\n         multiplication equation. Explain to a partner\n         what the factors in the multiplication equation\n         represent.\n        Invite students to share how they justified their\n         solution to Problem 3(a).\n\n\n                        Lesson 7:                 Reason about composing and decomposing polygons using                100\n                                                  tetrominoes.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 102 (debrief) ---\nA STORY OF UNITS                                                                                      Lesson 7 3\n\n\n       Share solutions to Problem 4.\n       What are two attributes of tetrominoes?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                       Lesson 7:                 Reason about composing and decomposing polygons using                101\n                                                 tetrominoes.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 103 (template) ---\nA STORY OF UNITS                                                                       Lesson 7 Pattern Sheet 3\n\n\n       Multiply.\n\n\nmultiply by 5 (6–10)\n\n\n                       Lesson 7:                 Reason about composing and decomposing polygons using               102\n                                                 tetrominoes.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 104 (problem-set) ---\nA STORY OF UNITS                                                                          Lesson 7 Problem Set 3 7\n\n\nName                                                                                         Date\n\n1. Use tetrominoes to create at least two different rectangles. Then, color the grid below to show how you\n   created your rectangles. You may use the same tetromino more than once.\n\n\n2. Use tetrominoes to create at least two squares, each with an area of 36 square units. Then, color the grid\n   below to show how you created your squares. You may use the same tetromino more than once.\n\n\n    a. Write an equation to show the area of a square above as the sum of the areas of the tetrominoes you\n       used to make the square.\n\n\n    b. Write an equation to show the area of a square above as the product of its side lengths.\n\n\n                       Lesson 7:                 Reason about composing and decomposing polygons using             103\n                                                 tetrominoes.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 105 (problem-set) ---\nA STORY OF UNITS                                                                         Lesson 7 Problem Set 3 7\n\n\n3. a. Use tetrominoes to create at least two different rectangles, each with an area of 12 square units.\n      Then, color the grid below to show how you created the rectangles. You may use the same tetromino\n      more than once.\n\n\n   b. Explain how you know the area of each rectangle is 12 square units.\n\n\n4. Marco created a rectangle with tetrominoes and traced its outline in the space below. Use tetrominoes\n   to re-create it. Estimate to draw lines inside the rectangle below to show how you re-created Marco’s\n   rectangle.\n\n\n                      Lesson 7:                 Reason about composing and decomposing polygons using             104\n                                                tetrominoes.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 106 (exit-ticket) ---\nA STORY OF UNITS                                                                             Lesson 7 Exit Ticket 3\n\n\nName                                                                                         Date\n\nUse your tetrominoes to make a rectangle that has an area of 20 square units. Then, color the grid to show\nhow you made your rectangle. You may use the same tetromino more than once.\n\n\n                       Lesson 7:                 Reason about composing and decomposing polygons using                   105\n                                                 tetrominoes.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 107 (homework) ---\nA STORY OF UNITS                                                                            Lesson 7 Homework 3\n\n\nName                                                                                         Date\n\n1. Color tetrominoes on the grid to create three different rectangles. You may use the same tetromino\n   more than once.\n\n\n                                                               Tetrominoes\n\n\n                      Lesson 7:                  Reason about composing and decomposing polygons using               106\n                                                 tetrominoes.\n\n                      ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 108 (homework) ---\nA STORY OF UNITS                                                                           Lesson 7 Homework 3\n\n\n2. Color tetrominoes on the grid below to:\n\n   a. Create a square with an area of 16 square\n      units.\n   b. Create at least two different rectangles,\n      each with an area of 24 square units.\n   You may use the same tetromino more than once.                                                   Tetrominoes\n\n\n3. Explain how you know the rectangles you created in Problem 2(b) have the correct area.\n\n\n                      Lesson 7:                 Reason about composing and decomposing polygons using               107\n                                                tetrominoes.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 109 (template) ---\nA STORY OF UNITS                                                                             Lesson 7 Template 3\n\n\ntetrominoes\n\n\n                      Lesson 7:                 Reason about composing and decomposing polygons using                 108\n                                                tetrominoes.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 110 (template) ---\nA STORY OF UNITS                                                                             Lesson 7 Template 3\n\n\ntetrominoes\n\n\n                      Lesson 7:                 Reason about composing and decomposing polygons using                 109\n                                                tetrominoes.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 111 (template) ---\nA STORY OF UNITS                                                                             Lesson 7 Template 3\n\n\ntetrominoes\n\n\n                      Lesson 7:                 Reason about composing and decomposing polygons using                 110\n                                                tetrominoes.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 112 (template) ---\nA STORY OF UNITS                                                                             Lesson 7 Template 3\n\n\ntetrominoes\n\n\n                      Lesson 7:                 Reason about composing and decomposing polygons using                 111\n                                                tetrominoes.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 113 (template) ---\nA STORY OF UNITS                                                                             Lesson 7 Template 3\n\n\ntetrominoes\n\n\n                      Lesson 7:                 Reason about composing and decomposing polygons using                 112\n                                                tetrominoes.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 104,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                          Lesson 7 Problem Set 3 7\n\n\nName                                                                                         Date\n\n1. Use tetrominoes to create at least two different rectangles. Then, color the grid below to show how you\n   created your rectangles. You may use the same tetromino more than once.\n\n\n2. Use tetrominoes to create at least two squares, each with an area of 36 square units. Then, color the grid\n   below to show how you created your squares. You may use the same tetromino more than once.\n\n\n    a. Write an equation to show the area of a square above as the sum of the areas of the tetrominoes you\n       used to make the square.\n\n\n    b. Write an equation to show the area of a square above as the product of its side lengths.\n\n\n                       Lesson 7:                 Reason about composing and decomposing polygons using             103\n                                                 tetrominoes.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 105,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                         Lesson 7 Problem Set 3 7\n\n\n3. a. Use tetrominoes to create at least two different rectangles, each with an area of 12 square units.\n      Then, color the grid below to show how you created the rectangles. You may use the same tetromino\n      more than once.\n\n\n   b. Explain how you know the area of each rectangle is 12 square units.\n\n\n4. Marco created a rectangle with tetrominoes and traced its outline in the space below. Use tetrominoes\n   to re-create it. Estimate to draw lines inside the rectangle below to show how you re-created Marco’s\n   rectangle.\n\n\n                      Lesson 7:                 Reason about composing and decomposing polygons using             104\n                                                tetrominoes.\n\n                      ©2015 Great Minds. eureka-math.org\n                      G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 472,
+        "text": "A STORY OF UNITS                                                                               Lesson 7 Answer Key 3 7\n\n\nLesson 7\nPattern Sheet\n              5                                              10                                15                 20\n             25                                              30                                35                 40\n             45                                              50                                25                 30\n             25                                              35                                25                 40\n             25                                              45                                25                 50\n             30                                              25                                30                 35\n             30                                              40                                30                 45\n             30                                              35                                30                 35\n             40                                              35                                45                 35\n             40                                              30                                40                 35\n             40                                              45                                45                 30\n             45                                              35                                45                 40\n             45                                              40                                30                 45\n             35                                              45                                30                 40\n             45                                              35                                30                 40\n\n\nProblem Set\n1.    Grid colored\n2.    Grid colored\n      a. Number sentence will vary.\n      b. Number sentence will vary.\n3.    a. Grid colored\n      b. Explanations will vary.\n4.    Answers will vary.\n\n\nExit Ticket\nGrid colored\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                             471\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 473,
+        "text": "A STORY OF UNITS                                                                          Lesson 7 Answer Key 3 7\n\n\nHomework\n1.    3 rectangles colored\n2.    a. Square with 16 units colored\n      b. 2 rectangles with 24 units colored\n3.    Explanations will vary.\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                        472\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      }
+    ]
+  }
+}

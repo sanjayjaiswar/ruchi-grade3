@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m3-l5",
+  "moduleId": "m3",
+  "lessonNumber": 5,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_3/g3_m3_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+    "teacherEditionBytes": 14065864,
+    "lessonPdfPages": {
+      "start": 62,
+      "end": 72
+    },
+    "problemSetPdfPages": [
+      68,
+      69
+    ],
+    "exitTicketPdfPages": [
+      70
+    ],
+    "homeworkPdfPages": [
+      71,
+      72
+    ],
+    "answerKeyPdfPages": [
+      287,
+      288
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m3-student/workbook-page-020.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m3-answer-key/page-287.png",
+      "/source-pages/m3-answer-key/page-288.png"
+    ]
+  },
+  "objective": "Count by units of 7 to multiply and divide using number bonds to decompose.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.\n\n\n                        Lesson 5:                Count by units of 7 to multiply and divide using number bonds                               64\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                             Lesson 5 3 3",
+    "conceptDevelopmentText": "NOTES ON\nMaterials: (S) Personal white board                                                                                       MULTIPLE MEANS\n                                                                                                                          OF REPRESENTATION:\nPart 1: Use number bonds to decompose and make ten as a                                                        For English language learners, pre-\nstrategy for skip-counting units of 7.                                                                         teach and/or clarify unfamiliar math\n                                                                                                               terms such as sequence, row, factors,\n    T:   I noticed that Student A solved the Application                                                       product, number bond, count by, and\n         Problem by skip-counting by four 7 times. Is there                                                    skip-count.\n         another count-by strategy that could be used to solve                                                 Depending on each learner’s needs,\n         this problem?                                                                                         give explicit prompts for every step of\n    S:   Skip-count by seven 4 times.                                                                          the make ten strategy to count by\n                                                                                                               seven 4 times. Alternatively, scaffold\n    T:   Let’s show that work on our boards. Write 7 on your\n                                                                                                               with a checklist or template.\n         board.\n    T:   How do we get the next number in our count?\n    S:   Add 7.                                                                                                         Count by Seven 4 Times:\n    T:   Can we use a number bond to add 7 by making ten like\n         we did with sixes?\n    S:   Yes, we can break apart 7 into 3 and 4, and then use\n         the 3 to make ten with the first 7.\n    T:   Work with a partner to use number bonds to show\n         how to count by seven 4 times.\n    T:   Check your work with mine. (Project work as shown.)\n    T:   What is the last number in the sequence when you\n         count by seven 4 times?\n    S:   28.\n                                                                                                                       Remaining Count by Seven:\n    T:   Is the answer the same even though Student A counted\n         by four 7 times?\n    S:   Yes, it’s the same because we just switched the order\n         of the factors.  The product is the same, but the\n         order of the factors is different. It’s the commutative\n         property.\n    T:   Work with a partner to use number bonds to complete\n         your sequence by counting by seven 10 times.\n         (Circulate and check student work.)\n    T:   Everyone, at my signal, read your count by seven\n         sequence.\n    S:   7, 14, 21, 28, 35, 42, 49, 56, 63, 70.\n\n\n                       Lesson 5:                Count by units of 7 to multiply and divide using number bonds                                            63\n                                                to decompose.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 5 3 3\n\n\nPart 2: Skip-count by seven to solve multiplication and division problems.\n    T:   Let’s use our sequence to solve multiplication and\n         division problems with seven. I am going to say a\n         multiplication or division problem. Write the problem                   NOTES ON\n         on your personal white board, and use your sequence                     MULTIPLE MEANS\n         to find the answer. At my signal, show your board.                      OF ENGAGEMENT:\n    T:   Let’s do a practice one together. Turn and talk to a           Some learners may prefer to use the\n         partner. How can you use your skip-counting sequence           distributive or commutative property\n         to solve 42 divided by 7?                                      to solve 7 times 6. Encourage their\n                                                                        personal choices of efficient strategies.\n    S:   I can count 6 sevens in the sequence, which takes me\n                                                                        Challenge learners to present a\n         to 42. So, 42 divided by 7 equals 6.                           multiplication fact they would solve\n    T:   Write the equation on your board.                              using skip-counting. Ask, “How do you\n    S:   (Write 42 ÷ 7 = 6.)                                            choose your strategy to solve?”\n\n    T:   At my signal, show me your board. (Signal.)\n    S:   (Show board.)\n    T:   Okay, here we go, next problem! 49 divided by 7 equals…? (After students work, signal.)\nContinue with the following suggested sequence:\n        7×6\n        7 × e = 56\n        f÷7=9",
+    "fluencyPracticeText": " Multiply By 6 3.OA.7                                 (7 minutes)\n Group Counting 3.OA.1                                (4 minutes)\n Make Seven Game 3.OA.5                               (4 minutes)\n\nMultiply By 6 (7 minutes)\nMaterials: (S) Multiply by 6 (1–5) (Pattern Sheet)\n\nNote: This activity builds fluency with multiplication facts using units of six. It supports students knowing\nfrom memory all products of two one-digit numbers.\n    T:   (Write 5 × 6 = ____.) Let’s skip-count by sixes to find the answer. I’ll raise a finger for each six.\n         (Count with fingers to 5 as students count, and record the count-by sequence on the board.)\n    S:   6, 12, 18, 24, 30.\n    T:   (Circle 30, and write 5 × 6 = 30 above it. Write 3 × 6 = ____.) Let’s skip-count up by sixes again.\n         (Count with fingers to 3 as students count.)\n    S:   6, 12, 18.\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 30 with 5 fingers, 1 for each\n         six. (Count down with your fingers as students say numbers.)\n    S:   30 (5 fingers), 24 (4 fingers), 18 (3 fingers).\nRepeat the process for 4 × 6.\n    T:   (Distribute the Multiply by 6 Pattern Sheet.) Let’s practice multiplying by 6. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 5:                Count by units of 7 to multiply and divide using number bonds                               61\n                                                  to decompose.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 5 3 3\n\n\nDirections for administration of Multiply By Pattern Sheet:\n        Distribute Multiply By Pattern Sheet.\n        Allow a maximum of two minutes for students to complete as many problems as possible.\n        Direct students to work left to right across the page.\n        Encourage skip-counting strategies to solve unknown facts.\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by sevens prepares\nstudents for multiplication using units of seven in this lesson. Group counting by eights and nines anticipates\nmultiplication using those units later in the module. Direct students to count forward and backward,\noccasionally changing the direction of the count:\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\nMake Seven Game (4 minutes)\nMaterials: (S) Set of playing cards numbered 1─6\n\nNote: This activity prepares students for the skip-counting strategy used to multiply units of seven in today’s\nlesson.\nStudents play in pairs. Each pair has a set of six cards, each with a number 1–6.\n    T:   (Write ___ + ___ = 7.) Spread the cards out in front of you.\n    T:   Put your hands behind your back. I’ll write a number in the first blank. When you know the number\n         that belongs in the second blank, touch the card that shows the number. The first person to touch\n         the card keeps it. Whoever has the most cards at the end wins. (Write 5 + __ = 7.)\n    S:   (Touch the 2 card. The first to touch it keeps the card.)\nContinue with the following suggested sequence: 1, 4, 2, 3, and 6.",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\n                        Lesson 5:                Count by units of 7 to multiply and divide using number bonds                               64\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                             Lesson 5 3 3",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "I noticed that Student A solved the Application product, number bond, count by, and Problem by skip-counting by four 7 times. Is there skip-count. another count-by strategy that could be used to solve Depending on each learner’s needs, this problem? give explicit prompts for every step of"
+      },
+      {
+        "speaker": "students",
+        "text": "Skip-count by seven 4 times. the make ten strategy to count by seven 4 times. Alternatively, scaffold"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s show that work on our boards. Write 7 on your with a checklist or template. board."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How do we get the next number in our count?"
+      },
+      {
+        "speaker": "students",
+        "text": "Add 7. Count by Seven 4 Times:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can we use a number bond to add 7 by making ten like we did with sixes?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes, we can break apart 7 into 3 and 4, and then use the 3 to make ten with the first 7."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with a partner to use number bonds to show how to count by seven 4 times."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Check your work with mine. (Project work as shown.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the last number in the sequence when you count by seven 4 times?"
+      },
+      {
+        "speaker": "students",
+        "text": "28. Remaining Count by Seven:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is the answer the same even though Student A counted by four 7 times?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes, it’s the same because we just switched the order of the factors.  The product is the same, but the order of the factors is different. It’s the commutative property."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with a partner to use number bonds to complete your sequence by counting by seven 10 times. (Circulate and check student work.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Everyone, at my signal, read your count by seven sequence."
+      },
+      {
+        "speaker": "students",
+        "text": "7, 14, 21, 28, 35, 42, 49, 56, 63, 70. to decompose. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 5 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use our sequence to solve multiplication and division problems with seven. I am going to say a multiplication or division problem. Write the problem NOTES ON on your personal white board, and use your sequence MULTIPLE MEANS to find the answer. At my signal, show your board. OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s do a practice one together. Turn and talk to a Some learners may prefer to use the partner. How can you use your skip-counting sequence distributive or commutative property to solve 42 divided by 7? to solve 7 times 6. Encourage their personal choices of efficient strategies."
+      },
+      {
+        "speaker": "students",
+        "text": "I can count 6 sevens in the sequence, which takes me Challenge learners to present a to 42. So, 42 divided by 7 equals 6. multiplication fact they would solve"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the equation on your board. using skip-counting. Ask, “How do you"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 42 ÷ 7 = 6.) choose your strategy to solve?”"
+      },
+      {
+        "speaker": "teacher",
+        "text": "At my signal, show me your board. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Show board.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Okay, here we go, next problem! 49 divided by 7 equals…? (After students work, signal.) Continue with the following suggested sequence:  7×6  7 × e = 56  f÷7=9"
+      }
+    ],
+    "teacherPrompts": [
+      "I noticed that Student A solved the Application product, number bond, count by, and Problem by skip-counting by four 7 times. Is there skip-count. another count-by strategy that could be used to solve Depending on each learner’s needs, this problem? give explicit prompts for every step of",
+      "Let’s show that work on our boards. Write 7 on your with a checklist or template. board.",
+      "How do we get the next number in our count?",
+      "Can we use a number bond to add 7 by making ten like we did with sixes?",
+      "Work with a partner to use number bonds to show how to count by seven 4 times.",
+      "Check your work with mine. (Project work as shown.)",
+      "What is the last number in the sequence when you count by seven 4 times?",
+      "Is the answer the same even though Student A counted by four 7 times?",
+      "Work with a partner to use number bonds to complete your sequence by counting by seven 10 times. (Circulate and check student work.)",
+      "Everyone, at my signal, read your count by seven sequence.",
+      "Let’s use our sequence to solve multiplication and division problems with seven. I am going to say a multiplication or division problem. Write the problem NOTES ON on your personal white board, and use your sequence MULTIPLE MEANS to find the answer. At my signal, show your board. OF ENGAGEMENT:",
+      "Let’s do a practice one together. Turn and talk to a Some learners may prefer to use the partner. How can you use your skip-counting sequence distributive or commutative property to solve 42 divided by 7? to solve 7 times 6. Encourage their personal choices of efficient strategies.",
+      "Write the equation on your board. using skip-counting. Ask, “How do you",
+      "At my signal, show me your board. (Signal.)",
+      "Okay, here we go, next problem! 49 divided by 7 equals…? (After students work, signal.) Continue with the following suggested sequence:  7×6  7 × e = 56  f÷7=9"
+    ],
+    "debriefPrompt": "Take turns with a partner reading the multiplication facts in Problem 1 and the related division facts",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Skip-count by seven to fill in the blanks in the fish bowls. Match each count-by to its multiplication expression. Then, use the multiplication expression to write the related division fact directly to the right. 7×6 ____ ÷ 7 = ____ 7×3 ____ ÷ 7 = ____ ____ 7×8 ____ ÷ 7 = ____ 7×7 ____ ÷ 7 = ____ ____ 7×1 ____ ÷ 7 = ____ ____ 7 × 10 ____ ÷ 7 = ____ 7×9 ____ ÷ 7 = ____ 7×4 ____ ÷ 7 = ____ ____ 7×2 ____ ÷ 7 = ____ ____ 7×5 ____ ÷ 7 = ____ ____ to decompose.",
+        "equations": [
+          "7×6",
+          "____ ÷ 7 = ____",
+          "7×3",
+          "7×8"
+        ]
+      },
+      {
+        "number": 2,
+        "prompt": "Complete the count-by seven sequence below. Then, write a multiplication equation and a division equation to represent each blank you filled in. 7, 14, ____, 28, ____, 42, ____, ____, 63, ____ a. ____ × 7 = ____ ____ ÷ 7 = ____ b. ____ × 7 = ____ ____ ÷ 7 = ____ c. ____ × 7 = ____ ____ ÷ 7 = ____ d. ____ × 7 = ____ ____ ÷ 7 = ____ e. ____ × 7 = ____ ____ ÷ 7 = ____",
+        "equations": [
+          "____ × 7 = ____",
+          "____ ÷ 7 = ____"
+        ]
+      },
+      {
+        "number": 3,
+        "prompt": "Abe says 3 × 7 = 21 because 1 seven is 7, 2 sevens are 14, and 3 sevens are 14 + 6 + 1, which equals 21. Why did Abe add 6 and 1 to 14 when he is counting by seven?",
+        "equations": [
+          "3 × 7 = 21",
+          "14 + 6"
+        ]
+      },
+      {
+        "number": 4,
+        "prompt": "Molly says she can count by seven 6 times to solve 7 × 6. James says he can count by six 7 times to solve this problem. Who is right? Explain your answer. to decompose.",
+        "equations": [
+          "7 × 6"
+        ]
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                        Lesson 5 Problem Set 3 3\n\n\nName                                                                                                        Date\n\n1. Skip-count by seven to fill in the blanks in the fish bowls. Match each count-by to its multiplication\n   expression. Then, use the multiplication expression to write the related division fact directly to the right.\n\n\n                                                            7×6                                                      _______ ÷ 7 = _______\n            7\n\n\n                                                            7×3                                                      _______ ÷ 7 = _______\n        ______\n\n\n                                                            7×8                                                      _______ ÷ 7 = _______\n           21\n\n\n                                                            7×7                                                      _______ ÷ 7 = _______\n         ______\n\n\n                                                            7×1                                                      _______ ÷ 7 = _______\n        ______\n\n\n                                                           7 × 10                                                    _______ ÷ 7 = _______\n           42\n\n\n                                                            7×9                                                      _______ ÷ 7 = _______\n           49\n\n\n                                                            7×4                                                      _______ ÷ 7 = _______\n         ______\n\n\n                                                            7×2                                                      _______ ÷ 7 = _______\n         ______\n\n\n                                                           7×5                                                       _______ ÷ 7 = _______\n         ______\n\n\n                        Lesson 5:                Count by units of 7 to multiply and divide using number bonds                               67\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                       Lesson 5 Problem Set 3 3\n\n\n2. Complete the count-by seven sequence below. Then, write a multiplication equation and a division\n   equation to represent each blank you filled in.\n\n                      7, 14, _______, 28, _______, 42, _______, _______, 63, _______\n\n\n                              a. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n                              b. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n                              c. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n                              d. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n                              e. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n\n3. Abe says 3 × 7 = 21 because 1 seven is 7, 2 sevens are 14, and 3 sevens are 14 + 6 + 1, which equals 21.\n   Why did Abe add 6 and 1 to 14 when he is counting by seven?\n\n\n4. Molly says she can count by seven 6 times to solve 7 × 6. James says he can count by six 7 times to solve\n   this problem. Who is right? Explain your answer.\n\n\n                       Lesson 5:                Count by units of 7 to multiply and divide using number bonds                    68\n                                                to decompose.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015",
+    "answerKeyProblemSetText": "1.    14, 28, 35, 56, 63, 70\n      42, 6; 21, 3; 56, 8; 49, 7; 7, 1; 70, 10; 63, 9; 28, 4; 14, 2; 35, 5\n2.    21, 35, 49, 56, 70\n      a. 3, 21; 21, 3\n      b. 5, 35; 35, 5\n      c. 7, 49; 49, 7\n      d. 8, 56; 56, 8\n      e. 10, 70; 70, 10\n3.    Explanations will vary.\n4.    Both are correct; explanations will vary.\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10                   286\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                            Lesson 5 Answer Key 3 3",
+    "answerKeyText": "A STORY OF UNITS                                                                                          Lesson 5 Answer Key 3 3\n\n\nLesson 5\nPattern Sheet\n               6                                        12                                            18                             24\n              30                                         6                                            12                             6\n              18                                         6                                            24                             6\n              30                                         6                                            12                             18\n              12                                        24                                            12                             30\n              12                                         6                                            12                             18\n               6                                        18                                            12                             18\n              24                                        18                                            30                             18\n              24                                         6                                            24                             12\n              24                                        18                                            24                             30\n              24                                        30                                             6                             30\n              12                                        30                                            18                             30\n              24                                        12                                            24                             18\n              30                                        18                                            12                             24\n              18                                        30                                            12                             24\n\n\nProblem Set\n1.    14, 28, 35, 56, 63, 70\n      42, 6; 21, 3; 56, 8; 49, 7; 7, 1; 70, 10; 63, 9; 28, 4; 14, 2; 35, 5\n2.    21, 35, 49, 56, 70\n      a. 3, 21; 21, 3\n      b. 5, 35; 35, 5\n      c. 7, 49; 49, 7\n      d. 8, 56; 56, 8\n      e. 10, 70; 70, 10\n3.    Explanations will vary.\n4.    Both are correct; explanations will vary.\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10                   286\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                            Lesson 5 Answer Key 3 3\n\n\nExit Ticket\n21, 35, 49, 56, 70\n       a. 1, 7; 7, 1\n       b. 2, 14; 14, 2\n       c. 3, 21; 21, 3\n       d. 4, 28; 28, 4\n       e. 5, 35; 35, 5\n       f.   6, 42; 42, 6\n       g. 7, 49; 49, 7\n       h. 8, 56; 56, 8\n       i.   9, 63; 63, 9\n       j.   10, 70; 70, 10\n\n\nHomework\n1.    a. 14\n      b. 20, 1, 21\n      c. 20, 8, 28\n      d. 30, 5, 35\n      e. 40, 2, 42\n      f.    40, 9, 49\n      g. 50, 6, 56; answers may vary.\n      h. 60, 3, 63; answers may vary.\n2.    70, 63, 56, 42, 35, 21, 14\n      70, 63, 56, 49, 42, 35, 28, 21, 14, 7\n      70, 10; 63, 9; 56, 8; 49, 7; 42, 6; 35, 5; 28, 4; 21, 3; 14, 2; 7, 1\n\n\n                        Module 3:                Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              287\n\n                             This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                             G3-M3-TE-1.3.0-05.2015",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "number-bond"
+    ],
+    "sourceEvidence": {
+      "number-bond": [
+        "Count by units of 7 to multiply and divide using number bonds to decompose.",
+        "Lesson 5: Count by units of 7 to multiply and divide using number bonds 64",
+        "to decompose.",
+        "Part 1: Use number bonds to decompose and make ten as a For English language learners, pre-",
+        "T: I noticed that Student A solved the Application product, number bond, count by, and",
+        "T: Can we use a number bond to add 7 by making ten like",
+        "S: Yes, we can break apart 7 into 3 and 4, and then use",
+        "T: Work with a partner to use number bonds to show"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "I noticed that Student A solved the Application product, number bond, count by, and Problem by skip-counting by four 7 times. Is there skip-count. another count-by strategy that could be used to solve Depending on each learner’s needs, this problem? give explicit prompts for every step of"
+      },
+      {
+        "speaker": "students",
+        "text": "Skip-count by seven 4 times. the make ten strategy to count by seven 4 times. Alternatively, scaffold"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s show that work on our boards. Write 7 on your with a checklist or template. board."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How do we get the next number in our count?"
+      },
+      {
+        "speaker": "students",
+        "text": "Add 7. Count by Seven 4 Times:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with a partner to use number bonds to show how to count by seven 4 times."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Check your work with mine. (Project work as shown.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the last number in the sequence when you count by seven 4 times?"
+      },
+      {
+        "speaker": "students",
+        "text": "28. Remaining Count by Seven:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is the answer the same even though Student A counted by four 7 times?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with a partner to use number bonds to complete your sequence by counting by seven 10 times. (Circulate and check student work.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Everyone, at my signal, read your count by seven sequence."
+      },
+      {
+        "speaker": "students",
+        "text": "7, 14, 21, 28, 35, 42, 49, 56, 63, 70. to decompose. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 5 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s use our sequence to solve multiplication and division problems with seven. I am going to say a multiplication or division problem. Write the problem NOTES ON on your personal white board, and use your sequence MULTIPLE MEANS to find the answer. At my signal, show your board. OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s do a practice one together. Turn and talk to a Some learners may prefer to use the partner. How can you use your skip-counting sequence distributive or commutative property to solve 42 divided by 7? to solve 7 times 6. Encourage their personal choices of efficient strategies."
+      },
+      {
+        "speaker": "students",
+        "text": "I can count 6 sevens in the sequence, which takes me Challenge learners to present a to 42. So, 42 divided by 7 equals 6. multiplication fact they would solve"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the equation on your board. using skip-counting. Ask, “How do you"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 42 ÷ 7 = 6.) choose your strategy to solve?”"
+      },
+      {
+        "speaker": "teacher",
+        "text": "At my signal, show me your board. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "(Show board.)"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 62 (debrief) ---\nA STORY OF UNITS                                                                                                                Lesson 5 3 3\n\n\nLesson 5\nObjective: Count by units of 7 to multiply and divide using number bonds\nto decompose.\n\nSuggested Lesson Structure\n\n Fluency Practice                  (15 minutes)\n Application Problem               (5 minutes)\n Concept Development               (30 minutes)\n Student Debrief                   (10 minutes)\n   Total Time                       (60 minutes)\n\n\nFluency Practice (15 minutes)\n\n Multiply By 6 3.OA.7                                 (7 minutes)\n Group Counting 3.OA.1                                (4 minutes)\n Make Seven Game 3.OA.5                               (4 minutes)\n\nMultiply By 6 (7 minutes)\nMaterials: (S) Multiply by 6 (1–5) (Pattern Sheet)\n\nNote: This activity builds fluency with multiplication facts using units of six. It supports students knowing\nfrom memory all products of two one-digit numbers.\n    T:   (Write 5 × 6 = ____.) Let’s skip-count by sixes to find the answer. I’ll raise a finger for each six.\n         (Count with fingers to 5 as students count, and record the count-by sequence on the board.)\n    S:   6, 12, 18, 24, 30.\n    T:   (Circle 30, and write 5 × 6 = 30 above it. Write 3 × 6 = ____.) Let’s skip-count up by sixes again.\n         (Count with fingers to 3 as students count.)\n    S:   6, 12, 18.\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 30 with 5 fingers, 1 for each\n         six. (Count down with your fingers as students say numbers.)\n    S:   30 (5 fingers), 24 (4 fingers), 18 (3 fingers).\nRepeat the process for 4 × 6.\n    T:   (Distribute the Multiply by 6 Pattern Sheet.) Let’s practice multiplying by 6. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 5:                Count by units of 7 to multiply and divide using number bonds                               61\n                                                  to decompose.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 63 (concept-development) ---\nA STORY OF UNITS                                                                                                               Lesson 5 3 3\n\n\nDirections for administration of Multiply By Pattern Sheet:\n        Distribute Multiply By Pattern Sheet.\n        Allow a maximum of two minutes for students to complete as many problems as possible.\n        Direct students to work left to right across the page.\n        Encourage skip-counting strategies to solve unknown facts.\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition. Counting by sevens prepares\nstudents for multiplication using units of seven in this lesson. Group counting by eights and nines anticipates\nmultiplication using those units later in the module. Direct students to count forward and backward,\noccasionally changing the direction of the count:\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\nMake Seven Game (4 minutes)\nMaterials: (S) Set of playing cards numbered 1─6\n\nNote: This activity prepares students for the skip-counting strategy used to multiply units of seven in today’s\nlesson.\nStudents play in pairs. Each pair has a set of six cards, each with a number 1–6.\n    T:   (Write ___ + ___ = 7.) Spread the cards out in front of you.\n    T:   Put your hands behind your back. I’ll write a number in the first blank. When you know the number\n         that belongs in the second blank, touch the card that shows the number. The first person to touch\n         the card keeps it. Whoever has the most cards at the end wins. (Write 5 + __ = 7.)\n    S:   (Touch the 2 card. The first to touch it keeps the card.)\nContinue with the following suggested sequence: 1, 4, 2, 3, and 6.\n\n\nApplication Problem (5 minutes)\n\nGracie draws 7 rows of stars. In each row, she draws 4 stars.\nHow many stars does Gracie draw in all? Use a letter to\nrepresent the unknown and solve.\nNote: This problem reviews the Grade 3 Module 1 concept of\nmultiplying using units of four. It is used in the Concept\nDevelopment to lead into skip-counting by sevens. Be sure to\ncirculate and find a student’s answer to use as an example in\nthe Concept Development (find a student who counted by four\n7 times to solve the problem).\n\n\n                        Lesson 5:                Count by units of 7 to multiply and divide using number bonds                               62\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 64 (concept-development) ---\nA STORY OF UNITS                                                                                                              Lesson 5 3 3\n\n\nConcept Development (30 minutes)\n                                                                                                                          NOTES ON\nMaterials: (S) Personal white board                                                                                       MULTIPLE MEANS\n                                                                                                                          OF REPRESENTATION:\nPart 1: Use number bonds to decompose and make ten as a                                                        For English language learners, pre-\nstrategy for skip-counting units of 7.                                                                         teach and/or clarify unfamiliar math\n                                                                                                               terms such as sequence, row, factors,\n    T:   I noticed that Student A solved the Application                                                       product, number bond, count by, and\n         Problem by skip-counting by four 7 times. Is there                                                    skip-count.\n         another count-by strategy that could be used to solve                                                 Depending on each learner’s needs,\n         this problem?                                                                                         give explicit prompts for every step of\n    S:   Skip-count by seven 4 times.                                                                          the make ten strategy to count by\n                                                                                                               seven 4 times. Alternatively, scaffold\n    T:   Let’s show that work on our boards. Write 7 on your\n                                                                                                               with a checklist or template.\n         board.\n    T:   How do we get the next number in our count?\n    S:   Add 7.                                                                                                         Count by Seven 4 Times:\n    T:   Can we use a number bond to add 7 by making ten like\n         we did with sixes?\n    S:   Yes, we can break apart 7 into 3 and 4, and then use\n         the 3 to make ten with the first 7.\n    T:   Work with a partner to use number bonds to show\n         how to count by seven 4 times.\n    T:   Check your work with mine. (Project work as shown.)\n    T:   What is the last number in the sequence when you\n         count by seven 4 times?\n    S:   28.\n                                                                                                                       Remaining Count by Seven:\n    T:   Is the answer the same even though Student A counted\n         by four 7 times?\n    S:   Yes, it’s the same because we just switched the order\n         of the factors.  The product is the same, but the\n         order of the factors is different. It’s the commutative\n         property.\n    T:   Work with a partner to use number bonds to complete\n         your sequence by counting by seven 10 times.\n         (Circulate and check student work.)\n    T:   Everyone, at my signal, read your count by seven\n         sequence.\n    S:   7, 14, 21, 28, 35, 42, 49, 56, 63, 70.\n\n\n                       Lesson 5:                Count by units of 7 to multiply and divide using number bonds                                            63\n                                                to decompose.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 65 (application-problem) ---\nA STORY OF UNITS                                                                                                               Lesson 5 3 3\n\n\nPart 2: Skip-count by seven to solve multiplication and division problems.\n    T:   Let’s use our sequence to solve multiplication and\n         division problems with seven. I am going to say a\n         multiplication or division problem. Write the problem                   NOTES ON\n         on your personal white board, and use your sequence                     MULTIPLE MEANS\n         to find the answer. At my signal, show your board.                      OF ENGAGEMENT:\n    T:   Let’s do a practice one together. Turn and talk to a           Some learners may prefer to use the\n         partner. How can you use your skip-counting sequence           distributive or commutative property\n         to solve 42 divided by 7?                                      to solve 7 times 6. Encourage their\n                                                                        personal choices of efficient strategies.\n    S:   I can count 6 sevens in the sequence, which takes me\n                                                                        Challenge learners to present a\n         to 42. So, 42 divided by 7 equals 6.                           multiplication fact they would solve\n    T:   Write the equation on your board.                              using skip-counting. Ask, “How do you\n    S:   (Write 42 ÷ 7 = 6.)                                            choose your strategy to solve?”\n\n    T:   At my signal, show me your board. (Signal.)\n    S:   (Show board.)\n    T:   Okay, here we go, next problem! 49 divided by 7 equals…? (After students work, signal.)\nContinue with the following suggested sequence:\n        7×6\n        7 × e = 56\n        f÷7=9\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\n                        Lesson 5:                Count by units of 7 to multiply and divide using number bonds                               64\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 66 (debrief) ---\nA STORY OF UNITS                                                                                                             Lesson 5 3 3\n\n\n  Student Debrief (10 minutes)\n\n Lesson Objective: Count by units of 7 to multiply and divide using number bonds to decompose.\n The Student Debrief is intended to invite reflection and active processing of the total lesson experience.\n Invite students to review their solutions for the Problem Set. They should check work by comparing answers\n with a partner before going over answers as a class. Look for misconceptions or misunderstandings that can\n be addressed in the Debrief. Guide students in a conversation to debrief the Problem Set and process the\n lesson.\n Any combination of the questions below may be used to\n lead the discussion.\n           Take turns with a partner reading the\n            multiplication facts in Problem 1 and the related\n            division facts.\n           How can you use number bonds to help you solve\n            Problem 2?\n           What are some different strategies that can help\n            you solve multiplication facts using units of\nMP.5\n            seven? How do you choose your strategy to\n            solve?\n           In Problem 3, would it make sense for Abe to use\n            number bonds to find the next number after 21\n            in the count by seven sequence? Why or why\n            not?\n           How does counting by seven help you solve\n            multiplication and division problems with seven?\n           How does Problem 4 demonstrate the\n            commutative property?\n           How does today’s lesson relate to our previous\n            work of adding 1 unit to 5 units?\n\n Exit Ticket (3 minutes)\n After the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\n assessing students’ understanding of the concepts that were presented in today’s lesson and planning more\n effectively for future lessons. The questions may be read aloud to the students.\n\n\n                          Lesson 5:                Count by units of 7 to multiply and divide using number bonds                               65\n                                                   to decompose.\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 67 (template) ---\nA STORY OF UNITS                                                                                    Lesson 5 Pattern Sheet 3 3\n\n\n            Multiply.\n\n\nmultiply by 6 (1–5)\n\n\n                        Lesson 5:                Count by units of 7 to multiply and divide using number bonds                    66\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 68 (problem-set) ---\nA STORY OF UNITS                                                                                        Lesson 5 Problem Set 3 3\n\n\nName                                                                                                        Date\n\n1. Skip-count by seven to fill in the blanks in the fish bowls. Match each count-by to its multiplication\n   expression. Then, use the multiplication expression to write the related division fact directly to the right.\n\n\n                                                            7×6                                                      _______ ÷ 7 = _______\n            7\n\n\n                                                            7×3                                                      _______ ÷ 7 = _______\n        ______\n\n\n                                                            7×8                                                      _______ ÷ 7 = _______\n           21\n\n\n                                                            7×7                                                      _______ ÷ 7 = _______\n         ______\n\n\n                                                            7×1                                                      _______ ÷ 7 = _______\n        ______\n\n\n                                                           7 × 10                                                    _______ ÷ 7 = _______\n           42\n\n\n                                                            7×9                                                      _______ ÷ 7 = _______\n           49\n\n\n                                                            7×4                                                      _______ ÷ 7 = _______\n         ______\n\n\n                                                            7×2                                                      _______ ÷ 7 = _______\n         ______\n\n\n                                                           7×5                                                       _______ ÷ 7 = _______\n         ______\n\n\n                        Lesson 5:                Count by units of 7 to multiply and divide using number bonds                               67\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 69 (problem-set) ---\nA STORY OF UNITS                                                                                       Lesson 5 Problem Set 3 3\n\n\n2. Complete the count-by seven sequence below. Then, write a multiplication equation and a division\n   equation to represent each blank you filled in.\n\n                      7, 14, _______, 28, _______, 42, _______, _______, 63, _______\n\n\n                              a. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n                              b. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n                              c. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n                              d. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n                              e. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n\n3. Abe says 3 × 7 = 21 because 1 seven is 7, 2 sevens are 14, and 3 sevens are 14 + 6 + 1, which equals 21.\n   Why did Abe add 6 and 1 to 14 when he is counting by seven?\n\n\n4. Molly says she can count by seven 6 times to solve 7 × 6. James says he can count by six 7 times to solve\n   this problem. Who is right? Explain your answer.\n\n\n                       Lesson 5:                Count by units of 7 to multiply and divide using number bonds                    68\n                                                to decompose.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 70 (exit-ticket) ---\nA STORY OF UNITS                                                                                           Lesson 5 Exit Ticket 3 3\n\n\nName                                                                                                      Date\n\nComplete the count-by seven sequence below. Then, write a multiplication equation and a division equation\nto represent each number in the sequence.\n               7, 14, _______, 28, _______, 42, _______, _______, 63, _______\n\n\n                             a. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n\n                             b. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n\n                             c. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n\n                             d. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n\n                             e. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n\n                             f.       _______ × 7 = _______                               _______ ÷ 7 = _______\n\n\n                             g. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n\n                             h. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n\n                             i.      _______ × 7 = _______                                _______ ÷ 7 = _______\n\n\n                             j.      _______ × 7 = _______                                _______ ÷ 7 = _______\n\n\n                      Lesson 5:                Count by units of 7 to multiply and divide using number bonds                         69\n                                               to decompose.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 71 (homework) ---\nA STORY OF UNITS                                                                                                Lesson 5 Homework 3 3\n\n\nName                                                                                                             Date\n\n1. Use number bonds to help you skip-count by seven by making ten or adding to the ones.\n\n\n                  10 + ______\n     a. 7 + 7 = ______   4    = _______\n\n             3       4\n\n\n     b. 14 + 7 = ______ + ______ = _______\n\n             6           1\n\n\n     c. 21 + 7 = ______ + ______ = _______\n\n          20 1\n\n\n     d. 28 + 7 = ______ + ______ = _______\n\n                 2       5\n\n\n     e. 35 + 7 = ______ + ______ = _______\n\n                 5       2\n\n\n     f.    42 + 7 = ______ + ______ = _______\n\n\n     g. 49 + 7 = ______ + ______ = _______\n\n\n     h. 56 + 7 = ______ + ______ = _______\n\n\n                             Lesson 5:                Count by units of 7 to multiply and divide using number bonds                    70\n                                                      to decompose.\n\n                             This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                             G3-M3-TE-1.3.0-05.2015\n\n--- PDF PAGE 72 (homework) ---\nA STORY OF UNITS                                                                                          Lesson 5 Homework 3 3\n\n\n2. Skip-count by seven to fill in the blanks. Then, fill in the multiplication equation, and use it to write the\n   related division fact directly to the right.\n\n\n    _____              7 × 10 = _____                                               _______ ÷ 7 = _______\n\n\n    _____              7 × 9 = _____                                                _______ ÷ 7 = _______\n\n\n                       7 × 8 = _____                                                _______ ÷ 7 = _______\n    _____\n\n\n                       7 × 7 = _____                                                _______ ÷ 7 = _______\n      49\n\n\n    _____              7 × 6 = _____                                                _______ ÷ 7 = _______\n\n\n                       7 × 5 = _____                                                _______ ÷ 7 = _______\n    _____\n\n\n                                                                                    _______ ÷ 7 = _______\n      28               7 × 4 = _____\n\n\n                                                                                    _______ ÷ 7 = _______\n    _____              7 × 3 = _____\n\n\n    _____              7 × 2 = _____                                                _______ ÷ 7 = _______\n\n\n      7                7 × 1 = _____                                                _______ ÷ 7 = _______\n\n\n                        Lesson 5:                Count by units of 7 to multiply and divide using number bonds                    71\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015",
+    "problemSetPages": [
+      {
+        "pdfPage": 68,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                        Lesson 5 Problem Set 3 3\n\n\nName                                                                                                        Date\n\n1. Skip-count by seven to fill in the blanks in the fish bowls. Match each count-by to its multiplication\n   expression. Then, use the multiplication expression to write the related division fact directly to the right.\n\n\n                                                            7×6                                                      _______ ÷ 7 = _______\n            7\n\n\n                                                            7×3                                                      _______ ÷ 7 = _______\n        ______\n\n\n                                                            7×8                                                      _______ ÷ 7 = _______\n           21\n\n\n                                                            7×7                                                      _______ ÷ 7 = _______\n         ______\n\n\n                                                            7×1                                                      _______ ÷ 7 = _______\n        ______\n\n\n                                                           7 × 10                                                    _______ ÷ 7 = _______\n           42\n\n\n                                                            7×9                                                      _______ ÷ 7 = _______\n           49\n\n\n                                                            7×4                                                      _______ ÷ 7 = _______\n         ______\n\n\n                                                            7×2                                                      _______ ÷ 7 = _______\n         ______\n\n\n                                                           7×5                                                       _______ ÷ 7 = _______\n         ______\n\n\n                        Lesson 5:                Count by units of 7 to multiply and divide using number bonds                               67\n                                                 to decompose.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 69,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                       Lesson 5 Problem Set 3 3\n\n\n2. Complete the count-by seven sequence below. Then, write a multiplication equation and a division\n   equation to represent each blank you filled in.\n\n                      7, 14, _______, 28, _______, 42, _______, _______, 63, _______\n\n\n                              a. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n                              b. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n                              c. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n                              d. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n                              e. _______ × 7 = _______                                     _______ ÷ 7 = _______\n\n\n3. Abe says 3 × 7 = 21 because 1 seven is 7, 2 sevens are 14, and 3 sevens are 14 + 6 + 1, which equals 21.\n   Why did Abe add 6 and 1 to 14 when he is counting by seven?\n\n\n4. Molly says she can count by seven 6 times to solve 7 × 6. James says he can count by six 7 times to solve\n   this problem. Who is right? Explain your answer.\n\n\n                       Lesson 5:                Count by units of 7 to multiply and divide using number bonds                    68\n                                                to decompose.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G3-M3-TE-1.3.0-05.2015"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 287,
+        "text": "A STORY OF UNITS                                                                                          Lesson 5 Answer Key 3 3\n\n\nLesson 5\nPattern Sheet\n               6                                        12                                            18                             24\n              30                                         6                                            12                             6\n              18                                         6                                            24                             6\n              30                                         6                                            12                             18\n              12                                        24                                            12                             30\n              12                                         6                                            12                             18\n               6                                        18                                            12                             18\n              24                                        18                                            30                             18\n              24                                         6                                            24                             12\n              24                                        18                                            24                             30\n              24                                        30                                             6                             30\n              12                                        30                                            18                             30\n              24                                        12                                            24                             18\n              30                                        18                                            12                             24\n              18                                        30                                            12                             24\n\n\nProblem Set\n1.    14, 28, 35, 56, 63, 70\n      42, 6; 21, 3; 56, 8; 49, 7; 7, 1; 70, 10; 63, 9; 28, 4; 14, 2; 35, 5\n2.    21, 35, 49, 56, 70\n      a. 3, 21; 21, 3\n      b. 5, 35; 35, 5\n      c. 7, 49; 49, 7\n      d. 8, 56; 56, 8\n      e. 10, 70; 70, 10\n3.    Explanations will vary.\n4.    Both are correct; explanations will vary.\n\n\n                        Module 3:              Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10                   286\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G3-M3-TE-1.3.0-05.2015"
+      },
+      {
+        "pdfPage": 288,
+        "text": "A STORY OF UNITS                                                                                            Lesson 5 Answer Key 3 3\n\n\nExit Ticket\n21, 35, 49, 56, 70\n       a. 1, 7; 7, 1\n       b. 2, 14; 14, 2\n       c. 3, 21; 21, 3\n       d. 4, 28; 28, 4\n       e. 5, 35; 35, 5\n       f.   6, 42; 42, 6\n       g. 7, 49; 49, 7\n       h. 8, 56; 56, 8\n       i.   9, 63; 63, 9\n       j.   10, 70; 70, 10\n\n\nHomework\n1.    a. 14\n      b. 20, 1, 21\n      c. 20, 8, 28\n      d. 30, 5, 35\n      e. 40, 2, 42\n      f.    40, 9, 49\n      g. 50, 6, 56; answers may vary.\n      h. 60, 3, 63; answers may vary.\n2.    70, 63, 56, 42, 35, 21, 14\n      70, 63, 56, 49, 42, 35, 28, 21, 14, 7\n      70, 10; 63, 9; 56, 8; 49, 7; 42, 6; 35, 5; 28, 4; 21, 3; 14, 2; 7, 1\n\n\n                        Module 3:                Multiplication and Division with Units of 0, 1, 6–9, and Multiples of 10              287\n\n                             This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                             G3-M3-TE-1.3.0-05.2015"
+      }
+    ]
+  }
+}

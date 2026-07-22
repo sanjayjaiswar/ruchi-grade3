@@ -1,0 +1,407 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m7-l2",
+  "moduleId": "m7",
+  "lessonNumber": 2,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf",
+    "teacherEditionSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+    "teacherEditionBytes": 21553765,
+    "lessonPdfPages": {
+      "start": 27,
+      "end": 38
+    },
+    "problemSetPdfPages": [
+      34,
+      35
+    ],
+    "exitTicketPdfPages": [
+      36
+    ],
+    "homeworkPdfPages": [
+      37,
+      38
+    ],
+    "answerKeyPdfPages": [
+      465
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m7-student/workbook-page-006.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m7-teacher/page-034.png",
+      "/source-pages/m7-teacher/page-035.png",
+      "/source-pages/m7-teacher/page-465.png"
+    ]
+  },
+  "objective": "Solve word problems in varied contexts using a letter to represent the unknown.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "",
+    "conceptDevelopmentText": "Materials: (S) Problem Set, 1 piece of chart paper per pair or triad, 1 different color marker per student in\n           each group\n\nPart 1: Work cooperatively to identify multiple solution paths.\nNote: Sample talking points and questions to guide student explanations and class participation are listed in\nPart 2 of this lesson. Use them as a resource in Part 1.\nCreate groups of two or three students. Distribute the Problem Set, chart paper, and markers to students.\n    T:   Today, we’re going to work in groups to solve Problem 6. Let’s prepare our chart paper by folding it\n         into three equal parts. (Model for students, and allow them time to fold.) With your group, read\n         Problem 6 now.\n    S:   The total amount of rain that fell in New York City in two years was 282 centimeters. In the first\n         year, 185 centimeters of rain fell. How many more centimeters of rain fell in the first year than in\n         the second year?\n    T:   Take a quiet moment to visualize the problem. (Give students about 15 seconds to visualize.)\n         Describe the problem to your group.\n    S:   It’s a problem about rain, and someone measured it.  Maybe with a graduated cylinder.\n          That would be a huge cylinder! Imagine how tall 282 centimeters is!  They probably measured\n         the rain each day or week and then added to find the total.  We’re talking about a lot of rain.\n    T:   Think about our Read-Draw-Write process. At the signal, say the question we should be asking\n         ourselves. (Signal.)\n    S:   What can I draw?\n    T:   Work with your group to draw at least two different ways to represent the problem. Make the\n         drawings on the top third of your paper. Each of you has a different color marker so that your\n         participation shows on your poster. Make sure each member of your group contributes.\n    S:   (Discuss and draw. Some possible drawings are shown below.)\n\n\n                        Lesson 2:                 Solve word problems in varied contexts using a letter to represent the             28\n                                                  unknown.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                        Lesson 2 3 7\n\n\n    T:   As you drew, what did you notice about the problem that will help you solve?\n    S:   We noticed it’s a two-step problem.  We know the total and the amount of rain in Year 1.\n          We have to find out how much rain there was in Year 2.  That doesn’t answer the question,\n         though. We have to know how much more rain there was in Year 1. That’s subtracting two times!\n    T:   You have more than one drawing on your paper. As a group, discuss which one represents the\n         problem most clearly. Circle it, and be ready to talk about your choice.\n    S:   (Discuss and circle a model.)\nSelect two or three groups to share their thinking with the rest of the class. Choose groups strategically to\nspark discussion and push learning in terms of both modeling and oral explanation. Selections could include a\ngroup with an exemplary choice, a group with an unusual choice, or a group with an excellent explanation.\n    S:   (Listen to groups share, ask questions, and compare work.)\n    T:   Is your thinking about your work or the problem different after listening to your friends? Take a\n         moment to check in with your group. Adjust your drawing or thinking based on what you saw and\n         heard.\n    S:   (Discuss and possibly make modifications to work.)\n    T:   Think about the Read-Draw-Write process. What is our next step?\n    S:   To write equations and solve!\n    T:   Work with your group to write equations and solve the problem. Use your drawing. Record your\n         work in the middle third of your chart paper, and be ready to talk about your steps.\n    S:   The first step is just subtraction. We can do 282 cm – 185 cm to find the amount of rain in Year 2.\n          It’s not that easy with mental math. Let’s use the algorithm.  Actually, you can think of 282 as\n         285. Then, I can subtract 185 easily to get 100. Since I added 3 to 282 to get 285, I have to subtract\n         3 from the answer, so it’s 97.  Now, I think we should subtract again. We can do 185 – 97 to find\n         out how much more rain there was.  Let’s solve that one with the algorithm. 185 – 97 = 88. So,\n         the answer is 88 centimeters.  I don’t have to use the algorithm. I can break apart 185 as 100 and\n         85. That’s 3 + 85 because I took the 97 from 100. The answer is 88 cm.\nSelect a few groups to share their thinking with the rest of the class. Again, choose groups strategically.\nAllow students time to listen to the groups, share, and ask questions.\n    T:    Take a moment to compare your work with what you saw and heard, and maybe make adjustments.\n    S:    (Briefly discuss comparison within groups and possibly modify work.)\n    T:    Work with your group to finish the problem. What is our final step?\n    S:    To write a sentence that answers the question.\n    T:    Record your sentence on the bottom third of your paper.\n    S:    (Write a sentence with words to answer the question. Possible responses: 88 more centimeters of\n          rain fell in the first year than in the second.  There were 88 more centimeters of rain in Year 1.)\nSelect a few groups to share their work with the rest of the class. Notice which students may not have reread\nthe question before writing. If necessary, guide students to adjust their sentences so that their answers more\nclosely align with the question asked.\n\n\n                        Lesson 2:                 Solve word problems in varied contexts using a letter to represent the             29\n                                                  unknown.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                        Lesson 2 3 7\n\n\n       Part 2: Work independently to solve and present problems using multiple solution paths.\n       Assign each student two problems from the Problem Set.\n       Challenge them to record more than one way to draw for each                                                     A NOTE\n       problem they solve. Ask students to share their work with the                                                   ON STANDARDS\n       members of their groups from Part 1. When sharing, students                                                     ALIGNMENT:\n       should include answers to the following questions:\n                                                                                                             Problems 2 and 5 on the Problem Set,\n               How does your drawing represent the problem clearly?                                         the Exit Ticket, and Problems 1 and 5\n                                                                                                             on the Homework are two-step word\n               How did your drawing help you decide on a way to\n                                                                                                             problems involving milliliters and\n                solve?\n                                                                                                             grams. The masses and volumes are\n               Why does the equation that you used to model make                                            given in the same units in each\nMP.3\n                sense with your drawing and with the problem?                                                problem. Standard 3.MD.2 specifically\n               How do you know you answered the question?                                                   states that students “solve one-step\n                                                                                                             problems involving masses or volumes\n       Have students share their work in groups of three or four.                                            that are given in the same units.”\n       Encourage group members to practice asking questions of the                                           However, these problems look ahead\n       presenter. They might ask some of the questions listed below.                                         to 4.MD.2. Students working above\n                                                                                                             grade level might enjoy the challenge\n               I’m not sure what you mean. Can you say more                                                 of solving these two-step word\n                about that?                                                                                  problems involving milliliters and\n               Why did you decide        ?                                                                  grams. To make these problems\n               What do you think about         instead?                                                     accessible to students working below\n                                                                                                             grade level, modify the problems so\n               Which other way did you try to draw the problem?                                             they can be solved with one step.\n       One way to close this process is to have students write a\n       compliment to another presenter. If time allows,\n       students may solve problems on the Problem Set that\n       they have not already completed on their own before the",
+    "fluencyPracticeText": "given in the same units in each\n                                                                                                       problem. Standard 3.MD.2 specifically\n                                                                                                       states that students “solve one-step\n Name the Shape 2.G.1                                                        (3 minutes)\n                                                                                                       problems involving masses or volumes\n Multiply by 3 3.OA.7                                                        (8 minutes)              that are given in the same units.”\n                                                                                                       However, these problems look ahead\n Equivalent Counting with Units of 4 3.OA.7                                  (4 minutes)\n                                                                                                       to 4.MD.2. Students working above\n                                                                                                       grade level might enjoy the challenge\nName the Shape (3 minutes)                                                                             of solving these two-step word\n                                                                                                       problems involving milliliters and\nNote: This activity reviews Grade 2 geometry concepts in                                               grams. To make these problems\npreparation for Topic B.                                                                               accessible to students working below\n    T:   (Project the triangle.) What’s the name of the shape?                                         grade level, modify the problems so\n                                                                                                       they can be solved with one step.\n    S:   Triangle.\n    T:   (Project the rectangle.) What’s one name for\n         this shape?\n    S:   Rectangle (or parallelogram or quadrilateral).\n    T:   How many sides does a rectangle have?\n    S:   Four.\n    T:   How many right angles does a rectangle\n         have?\n    S:   Four!\n    T:   What’s the name for all four-sided figures?\n    S:   Quadrilateral.\nContinue with the following possible shapes: pentagon and hexagon.\n\n\n                         Lesson 2:                 Solve word problems in varied contexts using a letter to represent the                      26\n                                                   unknown.\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                           Lesson 2 3 7\n\n\nMultiply by 3 (8 minutes)\nMaterials: (S) Multiply by 3 (6–10) Pattern Sheet\n\nNote: This activity builds fluency with multiplication facts using units of 3. It works toward students knowing\nfrom memory all products of two one-digit numbers. See Lesson 1 for the directions for administration of a\nMultiply-By Pattern Sheet.\n    T:   (Write 7 × 3 =        .) Let’s skip-count up by threes. I’ll raise a finger for each three. (Raise a finger\n         for each number to track the count.)\n    S:   3, 6, 9, 12, 15, 18, 21.\n    T:   Let’s skip-count by threes starting at 15. Why is 15 a good place to start?\n    S:   It’s a fact we already know, so we can use it to figure out a fact we don’t know.\n    T:   (Track with fingers as students say the numbers.)\n    S:   15 (5 fingers), 18 (6 fingers), 21 (7 fingers).\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 30 with 10 fingers, 1 for each\n         three. (Count down with fingers as students say the numbers.)\n    S:   30 (10 fingers), 27 (9 fingers), 24 (8 fingers), 21 (7 fingers).\nContinue with the following possible sequence: 9 × 3, 6 × 3, and 8 × 3.\n    T:   (Distribute the Multiply by 3 Pattern Sheet.) Let’s practice multiplying by 3. Be sure to work left to\n         right across the page.\n\nEquivalent Counting with Units of 4 (4 minutes)\nNote: This activity builds fluency with multiplication facts using units of 4. The progression builds in\ncomplexity. Work students up to the highest level of complexity where they can confidently participate.\n    T:   Count to 10. (Write as students count. See the chart below.)\n    S:   1, 2, 3, 4, 5, 6, 7, 8, 9, 10.\n    T:   (Write 1 four beneath the 1.) Count to 10 fours. (Write as students count.)\n\n           1          2            3                4          5          6          7          8          9          10\n\n           1 four     2 fours      3 fours          4 fours    5 fours    6 fours    7 fours    8 fours    9 fours    10 fours\n\n           4          8            12               16         20         24         28         32         36         40\n\n           1 four     8            3 fours          16         5 fours    24         7 fours    32         9 fours    40\n\n           4          2 fours      12               4 fours    20         6 fours    28         8 fours    36         10 fours\n\n\n    S:   1 four, 2 fours, 3 fours, 4 fours, 5 fours, 6 fours, 7 fours, 8 fours, 9 fours, 10 fours.\n    T:   Count by fours to 40. (Write as students count.)\n    S:   4, 8, 12, 16, 20, 24, 28, 32, 36, 40.\n\n\n                           Lesson 2:                 Solve word problems in varied contexts using a letter to represent the              27\n                                                     unknown.\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                        Lesson 2 3 7\n\n\n    T:   (Write 1 four beneath the 4. Write 8 beneath the 8.) I’m going to give you a challenge. Let’s\n         alternate between saying the units of four and the number. (Write as students count.)\n    S:   1 four, 8, 3 fours, 16, 5 fours, 24, 7 fours, 32, 9 fours, 40.\n    T:   (Write 4 beneath 1 four and 2 fours beneath the 8.) Let’s alternate again. (Write as students count.)\n    S:   4, 2 fours, 12, 4 fours, 20, 6 fours, 28, 8 fours, 36, 10 fours.",
+    "problemSetGuidanceText": "",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Today, we’re going to work in groups to solve Problem 6. Let’s prepare our chart paper by folding it into three equal parts. (Model for students, and allow them time to fold.) With your group, read"
+      },
+      {
+        "speaker": "students",
+        "text": "The total amount of rain that fell in New York City in two years was 282 centimeters. In the first year, 185 centimeters of rain fell. How many more centimeters of rain fell in the first year than in the second year?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Take a quiet moment to visualize the problem. (Give students about 15 seconds to visualize.) Describe the problem to your group."
+      },
+      {
+        "speaker": "students",
+        "text": "It’s a problem about rain, and someone measured it.  Maybe with a graduated cylinder.  That would be a huge cylinder! Imagine how tall 282 centimeters is!  They probably measured the rain each day or week and then added to find the total.  We’re talking about a lot of rain."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think about our Read-Draw-Write process. At the signal, say the question we should be asking ourselves. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "What can I draw?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your group to draw at least two different ways to represent the problem. Make the drawings on the top third of your paper. Each of you has a different color marker so that your participation shows on your poster. Make sure each member of your group contributes."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss and draw. Some possible drawings are shown below.) unknown. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 2 3 7"
+      },
+      {
+        "speaker": "teacher",
+        "text": "As you drew, what did you notice about the problem that will help you solve?"
+      },
+      {
+        "speaker": "students",
+        "text": "We noticed it’s a two-step problem.  We know the total and the amount of rain in Year 1.  We have to find out how much rain there was in Year 2.  That doesn’t answer the question, though. We have to know how much more rain there was in Year 1. That’s subtracting two times!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "You have more than one drawing on your paper. As a group, discuss which one represents the problem most clearly. Circle it, and be ready to talk about your choice."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss and circle a model.) Select two or three groups to share their thinking with the rest of the class. Choose groups strategically to spark discussion and push learning in terms of both modeling and oral explanation. Selections could include a group with an exemplary choice, a group with an unusual choice, or a group with an excellent explanation."
+      },
+      {
+        "speaker": "students",
+        "text": "(Listen to groups share, ask questions, and compare work.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is your thinking about your work or the problem different after listening to your friends? Take a moment to check in with your group. Adjust your drawing or thinking based on what you saw and heard."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss and possibly make modifications to work.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think about the Read-Draw-Write process. What is our next step?"
+      },
+      {
+        "speaker": "students",
+        "text": "To write equations and solve!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your group to write equations and solve the problem. Use your drawing. Record your work in the middle third of your chart paper, and be ready to talk about your steps."
+      },
+      {
+        "speaker": "students",
+        "text": "The first step is just subtraction. We can do 282 cm – 185 cm to find the amount of rain in Year 2.  It’s not that easy with mental math. Let’s use the algorithm.  Actually, you can think of 282 as 285. Then, I can subtract 185 easily to get 100. Since I added 3 to 282 to get 285, I have to subtract 3 from the answer, so it’s 97.  Now, I think we should subtract again. We can do 185 – 97 to find out how much more rain there was.  Let’s solve that one with the algorithm. 185 – 97 = 88. So, the answer is 88 centimeters.  I don’t have to use the algorithm. I can break apart 185 as 100 and 85. That’s 3 + 85 because I took the 97 from 100. The answer is 88 cm. Select a few groups to share their thinking with the rest of the class. Again, choose groups strategically. Allow students time to listen to the groups, share, and ask questions."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Take a moment to compare your work with what you saw and heard, and maybe make adjustments."
+      },
+      {
+        "speaker": "students",
+        "text": "(Briefly discuss comparison within groups and possibly modify work.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your group to finish the problem. What is our final step?"
+      },
+      {
+        "speaker": "students",
+        "text": "To write a sentence that answers the question."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Record your sentence on the bottom third of your paper."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write a sentence with words to answer the question. Possible responses: 88 more centimeters of rain fell in the first year than in the second.  There were 88 more centimeters of rain in Year 1.) Select a few groups to share their work with the rest of the class. Notice which students may not have reread the question before writing. If necessary, guide students to adjust their sentences so that their answers more closely align with the question asked. unknown. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 2 3 7 Assign each student two problems from the Problem Set. Challenge them to record more than one way to draw for each A NOTE problem they solve. Ask students to share their work with the ON STANDARDS members of their groups from Part 1. When sharing, students ALIGNMENT: should include answers to the following questions: Problems 2 and 5 on the Problem Set,  How does your drawing represent the problem clearly? the Exit Ticket, and Problems 1 and 5 on the Homework are two-step word  How did your drawing help you decide on a way to problems involving milliliters and solve? grams. The masses and volumes are  Why does the equation that you used to model make given in the same units in each MP.3 sense with your drawing and with the problem? problem. Standard 3.MD.2 specifically  How do you know you answered the question? states that students “solve one-step problems involving masses or volumes Have students share their work in groups of three or four. that are given in the same units.” Encourage group members to practice asking questions of the However, these problems look ahead presenter. They might ask some of the questions listed below. to 4.MD.2. Students working above grade level might enjoy the challenge  I’m not sure what you mean. Can you say more of solving these two-step word about that? problems involving milliliters and  Why did you decide ? grams. To make these problems  What do you think about instead? accessible to students working below grade level, modify the problems so  Which other way did you try to draw the problem? they can be solved with one step. One way to close this process is to have students write a compliment to another presenter. If time allows, students may solve problems on the Problem Set that they have not already completed on their own before the"
+      }
+    ],
+    "teacherPrompts": [
+      "Today, we’re going to work in groups to solve Problem 6. Let’s prepare our chart paper by folding it into three equal parts. (Model for students, and allow them time to fold.) With your group, read",
+      "Take a quiet moment to visualize the problem. (Give students about 15 seconds to visualize.) Describe the problem to your group.",
+      "Think about our Read-Draw-Write process. At the signal, say the question we should be asking ourselves. (Signal.)",
+      "Work with your group to draw at least two different ways to represent the problem. Make the drawings on the top third of your paper. Each of you has a different color marker so that your participation shows on your poster. Make sure each member of your group contributes.",
+      "As you drew, what did you notice about the problem that will help you solve?",
+      "You have more than one drawing on your paper. As a group, discuss which one represents the problem most clearly. Circle it, and be ready to talk about your choice.",
+      "Is your thinking about your work or the problem different after listening to your friends? Take a moment to check in with your group. Adjust your drawing or thinking based on what you saw and heard.",
+      "Think about the Read-Draw-Write process. What is our next step?",
+      "Work with your group to write equations and solve the problem. Use your drawing. Record your work in the middle third of your chart paper, and be ready to talk about your steps.",
+      "Take a moment to compare your work with what you saw and heard, and maybe make adjustments.",
+      "Work with your group to finish the problem. What is our final step?",
+      "Record your sentence on the bottom third of your paper."
+    ],
+    "debriefPrompt": "How are your models related to your equations in Problem 1?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Leanne needs 120 tiles for an art project. She has 56 tiles. If tiles are sold in boxes of 8, how many more boxes of tiles does Leanne need to buy?",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "Gwen pours 236 milliliters of water into Ravi's beaker. Henry pours 189 milliliters of water into Ravi's beaker. Ravi's beaker now contains 800 milliliters of water. How much water was in Ravi's beaker to begin with?",
+        "equations": []
+      },
+      {
+        "number": 3,
+        "prompt": "Maude hung 3 pictures on her wall. Each picture measures 8 inches by 10 inches. What is the total area of the wall covered by the pictures? unknown.",
+        "equations": []
+      },
+      {
+        "number": 4,
+        "prompt": "Kami scored a total of 21 points during her basketball game. She made 6 two-point shots, and the rest were three-point shots. How many three-point shots did Kami make?",
+        "equations": []
+      },
+      {
+        "number": 5,
+        "prompt": "An orange weighs 198 grams. A kiwi weighs 85 grams less than the orange. What is the total weight of the fruit?",
+        "equations": []
+      },
+      {
+        "number": 6,
+        "prompt": "The total amount of rain that fell in New York City in two years was 282 centimeters. In the first year, 185 centimeters of rain fell. How many more centimeters of rain fell in the first year than in the second year? unknown.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                              Lesson 2 Problem Set 3 7\n\n\nName                                                                                               Date\n\nUse the RDW process to solve. Use a letter to represent the unknown in each problem.\n1.   Leanne needs 120 tiles for an art project. She has 56 tiles. If tiles are sold in boxes of 8, how many more\n     boxes of tiles does Leanne need to buy?\n\n\n2.   Gwen pours 236 milliliters of water into Ravi’s beaker. Henry pours 189 milliliters of water into Ravi’s\n     beaker. Ravi’s beaker now contains 800 milliliters of water. How much water was in Ravi’s beaker to\n     begin with?\n\n\n3.   Maude hung 3 pictures on her wall. Each picture measures 8 inches by 10 inches. What is the total area\n     of the wall covered by the pictures?\n\n\n                        Lesson 2:                 Solve word problems in varied contexts using a letter to represent the   33\n                                                  unknown.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                              Lesson 2 Problem Set 3 7\n\n\n4.   Kami scored a total of 21 points during her basketball game. She made 6 two-point shots, and the rest\n     were three-point shots. How many three-point shots did Kami make?\n\n\n5.   An orange weighs 198 grams. A kiwi weighs 85 grams less than the orange. What is the total weight of\n     the fruit?\n\n\n6.   The total amount of rain that fell in New York City in two years was 282 centimeters. In the first year,\n     185 centimeters of rain fell. How many more centimeters of rain fell in the first year than in the second\n     year?\n\n\n                        Lesson 2:                 Solve word problems in varied contexts using a letter to represent the   34\n                                                  unknown.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "answerKeyProblemSetText": "1.    8                                                                        4.    3\n2.    375 milliliters                                                          5.    311 grams\n3.    240 square inches                                                        6.    88 centimeters",
+    "answerKeyText": "A STORY OF UNITS                                                                               Lesson 2 Answer Key 3 7\n\n\nLesson 2\nPattern Sheet\n                 3                                            6                                9                 12\n                 15                                          18                                21                24\n                 27                                          30                                15                18\n                 15                                          21                                15                24\n                 15                                          27                                15                30\n                 18                                          15                                18                21\n                 18                                          24                                18                27\n                 18                                          21                                18                21\n                 24                                          21                                27                21\n                 24                                          18                                24                21\n                 24                                          27                                27                18\n                 27                                          21                                27                24\n                 27                                          24                                18                27\n                 21                                          27                                18                24\n                 27                                          21                                18                24\n\n\nProblem Set\n1.    8                                                                        4.    3\n2.    375 milliliters                                                          5.    311 grams\n3.    240 square inches                                                        6.    88 centimeters\n\n\nExit Ticket\n40 milliliters\n\n\nHomework\n1.    50 grams                                                                 4.    4\n2.    7                                                                        5.    307 grams\n3.    360 square inches                                                        6.    11 centimeters\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                             464\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "permitsVariableResponses": false
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "equal-groups",
+      "number-bond",
+      "measurement-scale",
+      "liquid-measure",
+      "ruler-or-length",
+      "table-or-chart",
+      "fraction-model",
+      "geometry-diagram",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "equal-groups": [
+        "each group",
+        "Create groups of two or three students. Distribute the Problem Set, chart paper, and markers to students.",
+        "Have students share their work in groups of three or four. that are given in the same units.”"
+      ],
+      "number-bond": [
+        "the answer is 88 centimeters.  I don’t have to use the algorithm. I can break apart 185 as 100 and"
+      ],
+      "measurement-scale": [
+        "grams. The masses and volumes are",
+        " Why did you decide ? grams. To make these problems",
+        "Note: This activity reviews Grade 2 geometry concepts in grams. To make these problems",
+        "S: Rectangle (or parallelogram or quadrilateral).",
+        "5. An orange weighs 198 grams. A kiwi weighs 85 grams less than the orange. What is the total weight of"
+      ],
+      "liquid-measure": [
+        "problems involving milliliters and",
+        "about that? problems involving milliliters and",
+        "problems involving milliliters and",
+        "2. Gwen pours 236 milliliters of water into Ravi’s beaker. Henry pours 189 milliliters of water into Ravi’s",
+        "beaker. Ravi’s beaker now contains 800 milliliters of water. How much water was in Ravi’s beaker to"
+      ],
+      "ruler-or-length": [
+        "S: The total amount of rain that fell in New York City in two years was 282 centimeters. In the first",
+        "year, 185 centimeters of rain fell. How many more centimeters of rain fell in the first year than in",
+        " That would be a huge cylinder! Imagine how tall 282 centimeters is!  They probably measured",
+        "the answer is 88 centimeters.  I don’t have to use the algorithm. I can break apart 185 as 100 and",
+        "S: (Write a sentence with words to answer the question. Possible responses: 88 more centimeters of",
+        "rain fell in the first year than in the second.  There were 88 more centimeters of rain in Year 1.)",
+        "6. The total amount of rain that fell in New York City in two years was 282 centimeters. In the first year,",
+        "185 centimeters of rain fell. How many more centimeters of rain fell in the first year than in the second"
+      ],
+      "table-or-chart": [
+        "Materials: (S) Problem Set, 1 piece of chart paper per pair or triad, 1 different color marker per student in",
+        "Create groups of two or three students. Distribute the Problem Set, chart paper, and markers to students.",
+        "T: Today, we’re going to work in groups to solve Problem 6. Let’s prepare our chart paper by folding it",
+        "work in the middle third of your chart paper, and be ready to talk about your steps.",
+        "T: Count to 10. (Write as students count. See the chart below.)"
+      ],
+      "fraction-model": [
+        "into three equal parts. (Model for students, and allow them time to fold.) With your group, read"
+      ],
+      "geometry-diagram": [
+        "T: (Project the triangle.) What’s the name of the shape? grade level, modify the problems so",
+        "S: Triangle.",
+        "T: (Project the rectangle.) What’s one name for",
+        "S: Rectangle (or parallelogram or quadrilateral).",
+        "T: How many sides does a rectangle have?",
+        "T: How many right angles does a rectangle",
+        "S: Quadrilateral."
+      ],
+      "money-model": [
+        "S: The total amount of rain that fell in New York City in two years was 282 centimeters. In the first",
+        "year, 185 centimeters of rain fell. How many more centimeters of rain fell in the first year than in",
+        " That would be a huge cylinder! Imagine how tall 282 centimeters is!  They probably measured",
+        "the answer is 88 centimeters.  I don’t have to use the algorithm. I can break apart 185 as 100 and",
+        "S: (Write a sentence with words to answer the question. Possible responses: 88 more centimeters of",
+        "rain fell in the first year than in the second.  There were 88 more centimeters of rain in Year 1.)",
+        "6. The total amount of rain that fell in New York City in two years was 282 centimeters. In the first year,",
+        "185 centimeters of rain fell. How many more centimeters of rain fell in the first year than in the second"
+      ],
+      "picture-or-drawing": [
+        "T: Think about our Read-Draw-Write process. At the signal, say the question we should be asking",
+        "S: What can I draw?",
+        "T: Work with your group to draw at least two different ways to represent the problem. Make the",
+        "drawings on the top third of your paper. Each of you has a different color marker so that your",
+        "S: (Discuss and draw. Some possible drawings are shown below.)",
+        "T: You have more than one drawing on your paper. As a group, discuss which one represents the",
+        "moment to check in with your group. Adjust your drawing or thinking based on what you saw and",
+        "T: Think about the Read-Draw-Write process. What is our next step?"
+      ]
+    },
+    "sourceIllustrationRequired": false,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Today, we’re going to work in groups to solve Problem 6. Let’s prepare our chart paper by folding it into three equal parts. (Model for students, and allow them time to fold.) With your group, read"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think about our Read-Draw-Write process. At the signal, say the question we should be asking ourselves. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "What can I draw?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your group to draw at least two different ways to represent the problem. Make the drawings on the top third of your paper. Each of you has a different color marker so that your participation shows on your poster. Make sure each member of your group contributes."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss and draw. Some possible drawings are shown below.) unknown. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 2 3 7"
+      },
+      {
+        "speaker": "teacher",
+        "text": "As you drew, what did you notice about the problem that will help you solve?"
+      },
+      {
+        "speaker": "students",
+        "text": "We noticed it’s a two-step problem.  We know the total and the amount of rain in Year 1.  We have to find out how much rain there was in Year 2.  That doesn’t answer the question, though. We have to know how much more rain there was in Year 1. That’s subtracting two times!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "You have more than one drawing on your paper. As a group, discuss which one represents the problem most clearly. Circle it, and be ready to talk about your choice."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss and circle a model.) Select two or three groups to share their thinking with the rest of the class. Choose groups strategically to spark discussion and push learning in terms of both modeling and oral explanation. Selections could include a group with an exemplary choice, a group with an unusual choice, or a group with an excellent explanation."
+      },
+      {
+        "speaker": "students",
+        "text": "(Listen to groups share, ask questions, and compare work.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Is your thinking about your work or the problem different after listening to your friends? Take a moment to check in with your group. Adjust your drawing or thinking based on what you saw and heard."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Think about the Read-Draw-Write process. What is our next step?"
+      },
+      {
+        "speaker": "students",
+        "text": "To write equations and solve!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your group to write equations and solve the problem. Use your drawing. Record your work in the middle third of your chart paper, and be ready to talk about your steps."
+      },
+      {
+        "speaker": "students",
+        "text": "The first step is just subtraction. We can do 282 cm – 185 cm to find the amount of rain in Year 2.  It’s not that easy with mental math. Let’s use the algorithm.  Actually, you can think of 282 as 285. Then, I can subtract 185 easily to get 100. Since I added 3 to 282 to get 285, I have to subtract 3 from the answer, so it’s 97.  Now, I think we should subtract again. We can do 185 – 97 to find out how much more rain there was.  Let’s solve that one with the algorithm. 185 – 97 = 88. So, the answer is 88 centimeters.  I don’t have to use the algorithm. I can break apart 185 as 100 and 85. That’s 3 + 85 because I took the 97 from 100. The answer is 88 cm. Select a few groups to share their thinking with the rest of the class. Again, choose groups strategically. Allow students time to listen to the groups, share, and ask questions."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Take a moment to compare your work with what you saw and heard, and maybe make adjustments."
+      },
+      {
+        "speaker": "students",
+        "text": "To write a sentence that answers the question."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write a sentence with words to answer the question. Possible responses: 88 more centimeters of rain fell in the first year than in the second.  There were 88 more centimeters of rain in Year 1.) Select a few groups to share their work with the rest of the class. Notice which students may not have reread the question before writing. If necessary, guide students to adjust their sentences so that their answers more closely align with the question asked. unknown. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 2 3 7 Assign each student two problems from the Problem Set. Challenge them to record more than one way to draw for each A NOTE problem they solve. Ask students to share their work with the ON STANDARDS members of their groups from Part 1. When sharing, students ALIGNMENT: should include answers to the following questions: Problems 2 and 5 on the Problem Set,  How does your drawing represent the problem clearly? the Exit Ticket, and Problems 1 and 5 on the Homework are two-step word  How did your drawing help you decide on a way to problems involving milliliters and solve? grams. The masses and volumes are  Why does the equation that you used to model make given in the same units in each MP.3 sense with your drawing and with the problem? problem. Standard 3.MD.2 specifically  How do you know you answered the question? states that students “solve one-step problems involving masses or volumes Have students share their work in groups of three or four. that are given in the same units.” Encourage group members to practice asking questions of the However, these problems look ahead presenter. They might ask some of the questions listed below. to 4.MD.2. Students working above grade level might enjoy the challenge  I’m not sure what you mean. Can you say more of solving these two-step word about that? problems involving milliliters and  Why did you decide ? grams. To make these problems  What do you think about instead? accessible to students working below grade level, modify the problems so  Which other way did you try to draw the problem? they can be solved with one step. One way to close this process is to have students write a compliment to another presenter. If time allows, students may solve problems on the Problem Set that they have not already completed on their own before the"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 27 (debrief) ---\nA STORY OF UNITS                                                                                                         Lesson 2 3 7\n\n\nLesson 2\nObjective: Solve word problems in varied contexts using a letter to\nrepresent the unknown.\n\nSuggested Lesson Structure\n                                                                                                                 A NOTE\n Fluency Practice                  (15 minutes)                                                                 ON STANDARDS\n                                                                                                                 ALIGNMENT:\n Concept Development               (35 minutes)\n                                                                                                       Problems 2 and 5 on the Problem Set,\n Student Debrief                   (10 minutes)\n                                                                                                       the Exit Ticket, and Problems 1 and 5\n   Total Time                       (60 minutes)                                                       on the Homework are two-step word\n                                                                                                       problems involving milliliters and\n                                                                                                       grams. The masses and volumes are\nFluency Practice (15 minutes)                                                                          given in the same units in each\n                                                                                                       problem. Standard 3.MD.2 specifically\n                                                                                                       states that students “solve one-step\n Name the Shape 2.G.1                                                        (3 minutes)\n                                                                                                       problems involving masses or volumes\n Multiply by 3 3.OA.7                                                        (8 minutes)              that are given in the same units.”\n                                                                                                       However, these problems look ahead\n Equivalent Counting with Units of 4 3.OA.7                                  (4 minutes)\n                                                                                                       to 4.MD.2. Students working above\n                                                                                                       grade level might enjoy the challenge\nName the Shape (3 minutes)                                                                             of solving these two-step word\n                                                                                                       problems involving milliliters and\nNote: This activity reviews Grade 2 geometry concepts in                                               grams. To make these problems\npreparation for Topic B.                                                                               accessible to students working below\n    T:   (Project the triangle.) What’s the name of the shape?                                         grade level, modify the problems so\n                                                                                                       they can be solved with one step.\n    S:   Triangle.\n    T:   (Project the rectangle.) What’s one name for\n         this shape?\n    S:   Rectangle (or parallelogram or quadrilateral).\n    T:   How many sides does a rectangle have?\n    S:   Four.\n    T:   How many right angles does a rectangle\n         have?\n    S:   Four!\n    T:   What’s the name for all four-sided figures?\n    S:   Quadrilateral.\nContinue with the following possible shapes: pentagon and hexagon.\n\n\n                         Lesson 2:                 Solve word problems in varied contexts using a letter to represent the                      26\n                                                   unknown.\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 28 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                           Lesson 2 3 7\n\n\nMultiply by 3 (8 minutes)\nMaterials: (S) Multiply by 3 (6–10) Pattern Sheet\n\nNote: This activity builds fluency with multiplication facts using units of 3. It works toward students knowing\nfrom memory all products of two one-digit numbers. See Lesson 1 for the directions for administration of a\nMultiply-By Pattern Sheet.\n    T:   (Write 7 × 3 =        .) Let’s skip-count up by threes. I’ll raise a finger for each three. (Raise a finger\n         for each number to track the count.)\n    S:   3, 6, 9, 12, 15, 18, 21.\n    T:   Let’s skip-count by threes starting at 15. Why is 15 a good place to start?\n    S:   It’s a fact we already know, so we can use it to figure out a fact we don’t know.\n    T:   (Track with fingers as students say the numbers.)\n    S:   15 (5 fingers), 18 (6 fingers), 21 (7 fingers).\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 30 with 10 fingers, 1 for each\n         three. (Count down with fingers as students say the numbers.)\n    S:   30 (10 fingers), 27 (9 fingers), 24 (8 fingers), 21 (7 fingers).\nContinue with the following possible sequence: 9 × 3, 6 × 3, and 8 × 3.\n    T:   (Distribute the Multiply by 3 Pattern Sheet.) Let’s practice multiplying by 3. Be sure to work left to\n         right across the page.\n\nEquivalent Counting with Units of 4 (4 minutes)\nNote: This activity builds fluency with multiplication facts using units of 4. The progression builds in\ncomplexity. Work students up to the highest level of complexity where they can confidently participate.\n    T:   Count to 10. (Write as students count. See the chart below.)\n    S:   1, 2, 3, 4, 5, 6, 7, 8, 9, 10.\n    T:   (Write 1 four beneath the 1.) Count to 10 fours. (Write as students count.)\n\n           1          2            3                4          5          6          7          8          9          10\n\n           1 four     2 fours      3 fours          4 fours    5 fours    6 fours    7 fours    8 fours    9 fours    10 fours\n\n           4          8            12               16         20         24         28         32         36         40\n\n           1 four     8            3 fours          16         5 fours    24         7 fours    32         9 fours    40\n\n           4          2 fours      12               4 fours    20         6 fours    28         8 fours    36         10 fours\n\n\n    S:   1 four, 2 fours, 3 fours, 4 fours, 5 fours, 6 fours, 7 fours, 8 fours, 9 fours, 10 fours.\n    T:   Count by fours to 40. (Write as students count.)\n    S:   4, 8, 12, 16, 20, 24, 28, 32, 36, 40.\n\n\n                           Lesson 2:                 Solve word problems in varied contexts using a letter to represent the              27\n                                                     unknown.\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 29 (concept-development) ---\nA STORY OF UNITS                                                                                                        Lesson 2 3 7\n\n\n    T:   (Write 1 four beneath the 4. Write 8 beneath the 8.) I’m going to give you a challenge. Let’s\n         alternate between saying the units of four and the number. (Write as students count.)\n    S:   1 four, 8, 3 fours, 16, 5 fours, 24, 7 fours, 32, 9 fours, 40.\n    T:   (Write 4 beneath 1 four and 2 fours beneath the 8.) Let’s alternate again. (Write as students count.)\n    S:   4, 2 fours, 12, 4 fours, 20, 6 fours, 28, 8 fours, 36, 10 fours.\n\n\nConcept Development (35 minutes)\n\nMaterials: (S) Problem Set, 1 piece of chart paper per pair or triad, 1 different color marker per student in\n           each group\n\nPart 1: Work cooperatively to identify multiple solution paths.\nNote: Sample talking points and questions to guide student explanations and class participation are listed in\nPart 2 of this lesson. Use them as a resource in Part 1.\nCreate groups of two or three students. Distribute the Problem Set, chart paper, and markers to students.\n    T:   Today, we’re going to work in groups to solve Problem 6. Let’s prepare our chart paper by folding it\n         into three equal parts. (Model for students, and allow them time to fold.) With your group, read\n         Problem 6 now.\n    S:   The total amount of rain that fell in New York City in two years was 282 centimeters. In the first\n         year, 185 centimeters of rain fell. How many more centimeters of rain fell in the first year than in\n         the second year?\n    T:   Take a quiet moment to visualize the problem. (Give students about 15 seconds to visualize.)\n         Describe the problem to your group.\n    S:   It’s a problem about rain, and someone measured it.  Maybe with a graduated cylinder.\n          That would be a huge cylinder! Imagine how tall 282 centimeters is!  They probably measured\n         the rain each day or week and then added to find the total.  We’re talking about a lot of rain.\n    T:   Think about our Read-Draw-Write process. At the signal, say the question we should be asking\n         ourselves. (Signal.)\n    S:   What can I draw?\n    T:   Work with your group to draw at least two different ways to represent the problem. Make the\n         drawings on the top third of your paper. Each of you has a different color marker so that your\n         participation shows on your poster. Make sure each member of your group contributes.\n    S:   (Discuss and draw. Some possible drawings are shown below.)\n\n\n                        Lesson 2:                 Solve word problems in varied contexts using a letter to represent the             28\n                                                  unknown.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 30 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                        Lesson 2 3 7\n\n\n    T:   As you drew, what did you notice about the problem that will help you solve?\n    S:   We noticed it’s a two-step problem.  We know the total and the amount of rain in Year 1.\n          We have to find out how much rain there was in Year 2.  That doesn’t answer the question,\n         though. We have to know how much more rain there was in Year 1. That’s subtracting two times!\n    T:   You have more than one drawing on your paper. As a group, discuss which one represents the\n         problem most clearly. Circle it, and be ready to talk about your choice.\n    S:   (Discuss and circle a model.)\nSelect two or three groups to share their thinking with the rest of the class. Choose groups strategically to\nspark discussion and push learning in terms of both modeling and oral explanation. Selections could include a\ngroup with an exemplary choice, a group with an unusual choice, or a group with an excellent explanation.\n    S:   (Listen to groups share, ask questions, and compare work.)\n    T:   Is your thinking about your work or the problem different after listening to your friends? Take a\n         moment to check in with your group. Adjust your drawing or thinking based on what you saw and\n         heard.\n    S:   (Discuss and possibly make modifications to work.)\n    T:   Think about the Read-Draw-Write process. What is our next step?\n    S:   To write equations and solve!\n    T:   Work with your group to write equations and solve the problem. Use your drawing. Record your\n         work in the middle third of your chart paper, and be ready to talk about your steps.\n    S:   The first step is just subtraction. We can do 282 cm – 185 cm to find the amount of rain in Year 2.\n          It’s not that easy with mental math. Let’s use the algorithm.  Actually, you can think of 282 as\n         285. Then, I can subtract 185 easily to get 100. Since I added 3 to 282 to get 285, I have to subtract\n         3 from the answer, so it’s 97.  Now, I think we should subtract again. We can do 185 – 97 to find\n         out how much more rain there was.  Let’s solve that one with the algorithm. 185 – 97 = 88. So,\n         the answer is 88 centimeters.  I don’t have to use the algorithm. I can break apart 185 as 100 and\n         85. That’s 3 + 85 because I took the 97 from 100. The answer is 88 cm.\nSelect a few groups to share their thinking with the rest of the class. Again, choose groups strategically.\nAllow students time to listen to the groups, share, and ask questions.\n    T:    Take a moment to compare your work with what you saw and heard, and maybe make adjustments.\n    S:    (Briefly discuss comparison within groups and possibly modify work.)\n    T:    Work with your group to finish the problem. What is our final step?\n    S:    To write a sentence that answers the question.\n    T:    Record your sentence on the bottom third of your paper.\n    S:    (Write a sentence with words to answer the question. Possible responses: 88 more centimeters of\n          rain fell in the first year than in the second.  There were 88 more centimeters of rain in Year 1.)\nSelect a few groups to share their work with the rest of the class. Notice which students may not have reread\nthe question before writing. If necessary, guide students to adjust their sentences so that their answers more\nclosely align with the question asked.\n\n\n                        Lesson 2:                 Solve word problems in varied contexts using a letter to represent the             29\n                                                  unknown.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 31 (debrief) ---\nA STORY OF UNITS                                                                                                        Lesson 2 3 7\n\n\n       Part 2: Work independently to solve and present problems using multiple solution paths.\n       Assign each student two problems from the Problem Set.\n       Challenge them to record more than one way to draw for each                                                     A NOTE\n       problem they solve. Ask students to share their work with the                                                   ON STANDARDS\n       members of their groups from Part 1. When sharing, students                                                     ALIGNMENT:\n       should include answers to the following questions:\n                                                                                                             Problems 2 and 5 on the Problem Set,\n               How does your drawing represent the problem clearly?                                         the Exit Ticket, and Problems 1 and 5\n                                                                                                             on the Homework are two-step word\n               How did your drawing help you decide on a way to\n                                                                                                             problems involving milliliters and\n                solve?\n                                                                                                             grams. The masses and volumes are\n               Why does the equation that you used to model make                                            given in the same units in each\nMP.3\n                sense with your drawing and with the problem?                                                problem. Standard 3.MD.2 specifically\n               How do you know you answered the question?                                                   states that students “solve one-step\n                                                                                                             problems involving masses or volumes\n       Have students share their work in groups of three or four.                                            that are given in the same units.”\n       Encourage group members to practice asking questions of the                                           However, these problems look ahead\n       presenter. They might ask some of the questions listed below.                                         to 4.MD.2. Students working above\n                                                                                                             grade level might enjoy the challenge\n               I’m not sure what you mean. Can you say more                                                 of solving these two-step word\n                about that?                                                                                  problems involving milliliters and\n               Why did you decide        ?                                                                  grams. To make these problems\n               What do you think about         instead?                                                     accessible to students working below\n                                                                                                             grade level, modify the problems so\n               Which other way did you try to draw the problem?                                             they can be solved with one step.\n       One way to close this process is to have students write a\n       compliment to another presenter. If time allows,\n       students may solve problems on the Problem Set that\n       they have not already completed on their own before the\n       Student Debrief.\n\n\n       Student Debrief (10 minutes)\n\n       Lesson Objective: Solve word problems in varied contexts\n       using a letter to represent the unknown.\n       The Student Debrief is intended to invite reflection and\n       active processing of the total lesson experience.\n       Guide students in a conversation to debrief the Problem\n       Set and process the lesson.\n       Any combination of the questions below may be used to\n       lead the discussion, depending on how the students were\n       asked to solve the Problem Set.\n               How are your models related to your equations in\n                Problem 1?\n\n\n                               Lesson 2:                 Solve word problems in varied contexts using a letter to represent the                      30\n                                                         unknown.\n\n                               ©2015 Great Minds. eureka-math.org\n                               G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 32 (debrief) ---\nA STORY OF UNITS                                                                                                       Lesson 2 3 7\n\n\n       Invite students to share different equations that\n        can be used to solve Problem 3.\n       What operations are used to solve Problem 4? In\n        what order? How did you figure that out?\n       Invite students to articulate their thought\n        processes for preparing to present their work.\n       How did it feel to present your work to friends?\n       What did you learn about yourself or your work\n        by presenting?\n       What was it like to be an audience member to a\n        friend who was presenting?\n       Did you find it easy or difficult to ask your friends\n        questions about their work? Why?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                       Lesson 2:                 Solve word problems in varied contexts using a letter to represent the              31\n                                                 unknown.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 33 (template) ---\nA STORY OF UNITS                                                                            Lesson 2 Pattern Sheet 3 7\n\n\n   Multiply.\n\n\nmultiply by 3 (6–10)\n\n\n                       Lesson 2:                 Solve word problems in varied contexts using a letter to represent the   32\n                                                 unknown.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 34 (problem-set) ---\nA STORY OF UNITS                                                                              Lesson 2 Problem Set 3 7\n\n\nName                                                                                               Date\n\nUse the RDW process to solve. Use a letter to represent the unknown in each problem.\n1.   Leanne needs 120 tiles for an art project. She has 56 tiles. If tiles are sold in boxes of 8, how many more\n     boxes of tiles does Leanne need to buy?\n\n\n2.   Gwen pours 236 milliliters of water into Ravi’s beaker. Henry pours 189 milliliters of water into Ravi’s\n     beaker. Ravi’s beaker now contains 800 milliliters of water. How much water was in Ravi’s beaker to\n     begin with?\n\n\n3.   Maude hung 3 pictures on her wall. Each picture measures 8 inches by 10 inches. What is the total area\n     of the wall covered by the pictures?\n\n\n                        Lesson 2:                 Solve word problems in varied contexts using a letter to represent the   33\n                                                  unknown.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 35 (problem-set) ---\nA STORY OF UNITS                                                                              Lesson 2 Problem Set 3 7\n\n\n4.   Kami scored a total of 21 points during her basketball game. She made 6 two-point shots, and the rest\n     were three-point shots. How many three-point shots did Kami make?\n\n\n5.   An orange weighs 198 grams. A kiwi weighs 85 grams less than the orange. What is the total weight of\n     the fruit?\n\n\n6.   The total amount of rain that fell in New York City in two years was 282 centimeters. In the first year,\n     185 centimeters of rain fell. How many more centimeters of rain fell in the first year than in the second\n     year?\n\n\n                        Lesson 2:                 Solve word problems in varied contexts using a letter to represent the   34\n                                                  unknown.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 36 (exit-ticket) ---\nA STORY OF UNITS                                                                                   Lesson 2 Exit Ticket 3 7\n\n\nName                                                                                               Date\n\nUse the RDW process to solve the problem below. Use a letter to represent the unknown.\nJaden’s bottle contains 750 milliliters of water. He drinks 520 milliliters at practice and then another 190\nmilliliters on his way home. How many milliliters of water are left in Jaden’s bottle when he gets home?\n\n\n                        Lesson 2:                 Solve word problems in varied contexts using a letter to represent the    35\n                                                  unknown.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 37 (homework) ---\nA STORY OF UNITS                                                                                Lesson 2 Homework 3 7\n\n\nName                                                                                               Date\n\nUse the RDW process to solve. Use a letter to represent the unknown in each problem.\n1.   A box containing 3 small bags of flour weighs 950 grams. Each bag of flour weighs 300 grams. How much\n     does the empty box weigh?\n\n\n2.   Mr. Cullen needs 91 carpet squares. He has 49 carpet squares. If the squares are sold in boxes of 6, how\n     many more boxes of carpet squares does Mr. Cullen need to buy?\n\n\n3.   Erica makes a banner using 4 sheets of paper. Each paper measures 9 inches by 10 inches. What is the\n     total area of Erica’s banner?\n\n\n                        Lesson 2:                 Solve word problems in varied contexts using a letter to represent the   36\n                                                  unknown.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\n--- PDF PAGE 38 (homework) ---\nA STORY OF UNITS                                                                                Lesson 2 Homework 3 7\n\n\n4.   Monica scored 32 points for her team at the Science Bowl. She got 5 four-point questions correct, and\n     the rest of her points came from answering three-point questions. How many three-point questions did\n     she get correct?\n\n\n5.   Kim’s black kitten weighs 175 grams. Her gray kitten weighs 43 grams less than the black kitten. What is\n     the total weight of the two kittens?\n\n\n6.   Cassias and Javier’s combined height is 267 centimeters. Cassias is 128 centimeters tall. How much taller\n     is Javier than Cassias?\n\n\n                        Lesson 2:                 Solve word problems in varied contexts using a letter to represent the   37\n                                                  unknown.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 34,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                              Lesson 2 Problem Set 3 7\n\n\nName                                                                                               Date\n\nUse the RDW process to solve. Use a letter to represent the unknown in each problem.\n1.   Leanne needs 120 tiles for an art project. She has 56 tiles. If tiles are sold in boxes of 8, how many more\n     boxes of tiles does Leanne need to buy?\n\n\n2.   Gwen pours 236 milliliters of water into Ravi’s beaker. Henry pours 189 milliliters of water into Ravi’s\n     beaker. Ravi’s beaker now contains 800 milliliters of water. How much water was in Ravi’s beaker to\n     begin with?\n\n\n3.   Maude hung 3 pictures on her wall. Each picture measures 8 inches by 10 inches. What is the total area\n     of the wall covered by the pictures?\n\n\n                        Lesson 2:                 Solve word problems in varied contexts using a letter to represent the   33\n                                                  unknown.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      },
+      {
+        "pdfPage": 35,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                              Lesson 2 Problem Set 3 7\n\n\n4.   Kami scored a total of 21 points during her basketball game. She made 6 two-point shots, and the rest\n     were three-point shots. How many three-point shots did Kami make?\n\n\n5.   An orange weighs 198 grams. A kiwi weighs 85 grams less than the orange. What is the total weight of\n     the fruit?\n\n\n6.   The total amount of rain that fell in New York City in two years was 282 centimeters. In the first year,\n     185 centimeters of rain fell. How many more centimeters of rain fell in the first year than in the second\n     year?\n\n\n                        Lesson 2:                 Solve word problems in varied contexts using a letter to represent the   34\n                                                  unknown.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 465,
+        "text": "A STORY OF UNITS                                                                               Lesson 2 Answer Key 3 7\n\n\nLesson 2\nPattern Sheet\n                 3                                            6                                9                 12\n                 15                                          18                                21                24\n                 27                                          30                                15                18\n                 15                                          21                                15                24\n                 15                                          27                                15                30\n                 18                                          15                                18                21\n                 18                                          24                                18                27\n                 18                                          21                                18                21\n                 24                                          21                                27                21\n                 24                                          18                                24                21\n                 24                                          27                                27                18\n                 27                                          21                                27                24\n                 27                                          24                                18                27\n                 21                                          27                                18                24\n                 27                                          21                                18                24\n\n\nProblem Set\n1.    8                                                                        4.    3\n2.    375 milliliters                                                          5.    311 grams\n3.    240 square inches                                                        6.    88 centimeters\n\n\nExit Ticket\n40 milliliters\n\n\nHomework\n1.    50 grams                                                                 4.    4\n2.    7                                                                        5.    307 grams\n3.    360 square inches                                                        6.    11 centimeters\n\n\n                        Module 7:                     Geometry and Measurement Word Problems                             464\n\n                             ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15"
+      }
+    ]
+  }
+}

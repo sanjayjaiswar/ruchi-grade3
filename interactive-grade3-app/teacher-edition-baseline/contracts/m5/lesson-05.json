@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m5-l5",
+  "moduleId": "m5",
+  "lessonNumber": 5,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_5/g3_m5_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+    "teacherEditionBytes": 17797697,
+    "lessonPdfPages": {
+      "start": 54,
+      "end": 63
+    },
+    "problemSetPdfPages": [
+      59,
+      60
+    ],
+    "exitTicketPdfPages": [
+      61
+    ],
+    "homeworkPdfPages": [
+      62,
+      63
+    ],
+    "answerKeyPdfPages": [
+      374
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m5-student/workbook-page-017.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m5-teacher/page-374.png"
+    ]
+  },
+  "objective": "Partition a whole into equal parts and define the equal parts to identify the unit fraction numerically.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.\n\n\n                           Lesson 5:                  Partition a whole into equal parts and define the equal parts to                              56\n                                                      identify the unit fraction numerically.\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                   Lesson 5 3 5",
+    "conceptDevelopmentText": "Materials: (S) Personal white board\n\n    T:   (Project or draw a circle, as shown below.) Whisper                                                      NOTES ON\n         the name of this shape.                                                                                  MULTIPLE MEANS\n    S:   Circle.                                                                                                  OF REPRESENTATION:\n                                                                                                         While introducing the new terms—unit\n                                                                                                         form, fraction form, and unit fraction—\n                                                                                                         check for student understanding.\n                                                                                                         English language learners may choose\n                                                                                                         to discuss definitions of these terms in\n                                                                                                         their first language with the teacher or\n                                                                                                         their peers.\n\n                                                                                      1\n                                                                             1 half; 2\n\n\n                         Lesson 5:                  Partition a whole into equal parts and define the equal parts to                                54\n                                                    identify the unit fraction numerically.\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                      Lesson 5 3 5\n\n\n    T:   Watch as I partition the whole. (Draw a line to partition the circle into 2 equal parts, as shown.)\n         How many equal parts are there?\n    S:   2 equal parts.\n    T:   What’s the name of each unit?\n    S:   1 half.\n    T:   (Shade one unit.) What fraction is shaded?\n    S:   1 half.\n    T:   Just like any number, we can write one half in many ways. This is the unit form. (Write 1 half under\n                                                        1\n         the circle.) This is the fraction form. (Write 2 under the circle.) Both of these refer to the same\n         number, 1 out of 2 equal units. We call 1 half a unit fraction because it names one of the equal\n         parts.\n    T:   (Project or draw a square, as shown below.) What’s the name of this shape?\n    S:   It’s a square.\n\n\n                                                                                                                  NOTES ON\n                                                                                                                  MULTIPLE MEANS\n                                                                                                                  OF ENGAGEMENT:\n                                                                                                        Students working above grade level may\n                                                                                   1                    enjoy identifying fractions with an\n                                                                          1 third; 3                    added challenge of each shape\n                                                                                                        representing a fraction rather than the\n    T:   Draw it on your personal white board. (After students\n                                                                                                        whole. For example, ask the following:\n         draw the square.) Estimate to partition the square into\n                                                                         “If the square is 1 third, name the\n         3 equal parts.                                                                           3   1\n                                                                         shaded region” (e.g., or ).\n    S:   (Partition.)                                                                            12   4\n\n    T:   What’s the name of each unit?\n    S:   1 third.\n    T:   Shade one unit. Then, write the fraction for the shaded amount in unit form and fraction form on\n         your board.\n                                                       1\n    S:   (Shade and write 1 third and .)\n                                                       3\n    T:   Talk to a partner: Is the number that you wrote to represent the shaded part a unit fraction? Why\n         or why not?\n    S:   (Discuss.)\nContinue the process with more shapes as needed. The following suggested shapes include examples of both\nshaded and non-shaded unit fractions. Alter language accordingly.\n\n\n                       Lesson 5:                   Partition a whole into equal parts and define the equal parts to                           55\n                                                   identify the unit fraction numerically.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                     Lesson 5 3 5\n\n\n       T:   (Project or draw the following image.) Discuss with your partner: Does the shape have equal parts?\n            How do you know?\n\n\n       S:   No. The parts are not the same size.  They’re also\n            not exactly the same shape.  The parts are not equal\nMP.6\n            because the bottom parts are larger. The lines on the                                                   NOTES ON\n            sides lean in at the top.                                                                               MULTIPLE MEANS\n                                                                                                                    OF ENGAGEMENT:\n       T:   Most agree that the parts are not equal. How could\n            you partition the shape to make the parts equal?                                               Review personal goals with students.\n                                                                                                           For example, if students working below\n       S:   I can cut it into 2 equal parts. You have to cut it right                                      grade level chose to solve one word\n            down the middle going up and down. The lines aren’t                                            problem (per lesson) last week,\n            all the same length like in a square.                                                          encourage them to work toward\n       T:   Turn and talk: If the parts are not equal, can we call                                         completing two word problems by the\n            these fourths? Why or why not?                                                                 end of this week.\n\n       S:   (Discuss.)",
+    "fluencyPracticeText": " Count by Eight 3.OA.7                                 (5 minutes)\n Write the Fractional Unit 3.NF.1                      (5 minutes)\n Partition Shapes 3.NF.1                               (5 minutes)\n\nCount by Eight (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity supports fluency with multiplication using units of 8.\n    1.   Students count by eight as high as they can for 90 seconds. 0, 8, 16, 24, 32, 40, 48, 56, etc.\n    2.   Correct by reading the multiples. Students practice for an additional minute after correction.\n    3.   Students count by eight once again. Quickly celebrate improvement.\n\nWrite the Fractional Unit (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews naming fractional units, as well as identifying shaded parts of a shape from\nTopic A.\n    T:   (Draw a shape with 3 units, 2 shaded in.) Write the fractional unit on your personal white board.\n    S:   (Write thirds.)\n    T:   Blank thirds are shaded. Write the number that goes in the blank.\n    S:   (Write 2.)\nContinue with the following possible sequence: 3 fourths, 2 fifths, 5 sixths, 7 tenths, and 5 eighths.\n\n\n                        Lesson 5:                  Partition a whole into equal parts and define the equal parts to              53\n                                                   identify the unit fraction numerically.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                       Lesson 5 3 5\n\n\nPartition Shapes (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews partitioning shapes into equal parts from Topic A.\n    T:   Draw a square.\n    S:   (Draw.)\n    T:   (Write halves.) Estimate to partition the square into equal halves.\n    S:   (Partition.)\nContinue with the following possible sequence: line, fifths; circle, fourths; circle, eighths; bar, tenths;\nand bar, sixths.",
+    "problemSetGuidanceText": "Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For\n  some classes, it may be appropriate to modify the assignment by specifying which problems they work on\n  first. Some problems do not specify a method for solving. Students should solve these problems using the\n  RDW approach used for Application Problems.\n\n\n                           Lesson 5:                  Partition a whole into equal parts and define the equal parts to                              56\n                                                      identify the unit fraction numerically.\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                                   Lesson 5 3 5",
+    "studentDebriefText": ", instruct students to complete\nthe",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw a circle, as shown below.) Whisper NOTES ON the name of this shape. MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "Circle. OF REPRESENTATION: While introducing the new terms—unit form, fraction form, and unit fraction— check for student understanding. English language learners may choose to discuss definitions of these terms in their first language with the teacher or their peers. 1 1 half; 2 identify the unit fraction numerically. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 5 3 5"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Watch as I partition the whole. (Draw a line to partition the circle into 2 equal parts, as shown.) How many equal parts are there?"
+      },
+      {
+        "speaker": "students",
+        "text": "2 equal parts."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What’s the name of each unit?"
+      },
+      {
+        "speaker": "students",
+        "text": "1 half."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Shade one unit.) What fraction is shaded?"
+      },
+      {
+        "speaker": "students",
+        "text": "1 half."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Just like any number, we can write one half in many ways. This is the unit form. (Write 1 half under 1 the circle.) This is the fraction form. (Write 2 under the circle.) Both of these refer to the same number, 1 out of 2 equal units. We call 1 half a unit fraction because it names one of the equal parts."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw a square, as shown below.) What’s the name of this shape?"
+      },
+      {
+        "speaker": "students",
+        "text": "It’s a square. MULTIPLE MEANS OF ENGAGEMENT: Students working above grade level may 1 enjoy identifying fractions with an 1 third; 3 added challenge of each shape representing a fraction rather than the"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw it on your personal white board. (After students whole. For example, ask the following: draw the square.) Estimate to partition the square into “If the square is 1 third, name the 3 equal parts. 3 1 shaded region” (e.g., or )."
+      },
+      {
+        "speaker": "students",
+        "text": "(Partition.) 12 4"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What’s the name of each unit?"
+      },
+      {
+        "speaker": "students",
+        "text": "1 third."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Shade one unit. Then, write the fraction for the shaded amount in unit form and fraction form on your board. 1"
+      },
+      {
+        "speaker": "students",
+        "text": "(Shade and write 1 third and .) 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to a partner: Is the number that you wrote to represent the shaded part a unit fraction? Why or why not?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.) Continue the process with more shapes as needed. The following suggested shapes include examples of both shaded and non-shaded unit fractions. Alter language accordingly. identify the unit fraction numerically. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 5 3 5"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw the following image.) Discuss with your partner: Does the shape have equal parts? How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "No. The parts are not the same size.  They’re also not exactly the same shape.  The parts are not equal MP.6 because the bottom parts are larger. The lines on the NOTES ON sides lean in at the top. MULTIPLE MEANS OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Most agree that the parts are not equal. How could you partition the shape to make the parts equal? Review personal goals with students. For example, if students working below"
+      },
+      {
+        "speaker": "students",
+        "text": "I can cut it into 2 equal parts. You have to cut it right grade level chose to solve one word down the middle going up and down. The lines aren’t problem (per lesson) last week, all the same length like in a square. encourage them to work toward"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Turn and talk: If the parts are not equal, can we call completing two word problems by the these fourths? Why or why not? end of this week."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.)"
+      }
+    ],
+    "teacherPrompts": [
+      "(Project or draw a circle, as shown below.) Whisper NOTES ON the name of this shape. MULTIPLE MEANS",
+      "Watch as I partition the whole. (Draw a line to partition the circle into 2 equal parts, as shown.) How many equal parts are there?",
+      "What’s the name of each unit?",
+      "(Shade one unit.) What fraction is shaded?",
+      "Just like any number, we can write one half in many ways. This is the unit form. (Write 1 half under 1 the circle.) This is the fraction form. (Write 2 under the circle.) Both of these refer to the same number, 1 out of 2 equal units. We call 1 half a unit fraction because it names one of the equal parts.",
+      "(Project or draw a square, as shown below.) What’s the name of this shape?",
+      "Draw it on your personal white board. (After students whole. For example, ask the following: draw the square.) Estimate to partition the square into “If the square is 1 third, name the 3 equal parts. 3 1 shaded region” (e.g., or ).",
+      "What’s the name of each unit?",
+      "Shade one unit. Then, write the fraction for the shaded amount in unit form and fraction form on your board. 1",
+      "Talk to a partner: Is the number that you wrote to represent the shaded part a unit fraction? Why or why not?",
+      "(Project or draw the following image.) Discuss with your partner: Does the shape have equal parts? How do you know?",
+      "Most agree that the parts are not equal. How could you partition the shape to make the parts equal? Review personal goals with students. For example, if students working below",
+      "Turn and talk: If the parts are not equal, can we call completing two word problems by the these fourths? Why or why not? end of this week."
+    ],
+    "debriefPrompt": "Are the numbers in Problem 1 unit fractions? How do you know?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Fill in the chart. Each image is one whole. Total Number Total Number of Equal Parts Unit Form Fraction Form of Equal Parts Shaded a. b. c. d. e. f. identify the unit fraction numerically. Andre's mom baked his 2 favorite cakes for his birthday party. The cakes were the exact same size. Andre cut his first cake into 8 pieces for him and his 7 friends. The picture below shows how he cut it. Did Andre cut the cake into eighths? Explain your answer. 3. Two of Andre's friends came late to his party. They decide they will all share the second cake. Show how Andre can slice the second cake so that he and his nine friends can each get an equal amount with none leftover. What fraction of the second cake will they each receive? 1 1 4. Andre thinks it's strange that of the cake would be less than of the cake since ten is bigger than eight. 10 8 To explain to Andre, draw 2 identical rectangles to represent the cakes. Show 1 tenth shaded on one and 1 eighth shaded on the other. Label the unit fractions and explain to him which slice is bigger. identify the unit fraction numerically.",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                Lesson 5 Problem Set 3 5\n\n\nName                                                                                                Date\n\n1. Fill in the chart. Each image is one whole.\n\n                                                                              Total Number\n                                                      Total Number\n                                                                              of Equal Parts              Unit Form   Fraction Form\n                                                      of Equal Parts\n                                                                                  Shaded\n     a.\n\n\n     b.\n\n\n     c.\n\n\n     d.\n\n\n     e.\n\n\n     f.\n\n\n                       Lesson 5:                  Partition a whole into equal parts and define the equal parts to                58\n                                                  identify the unit fraction numerically.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\nA STORY OF UNITS                                                                                 Lesson 5 Problem Set 3 5\n\n\n2. Andre’s mom baked his 2 favorite cakes for his birthday party. The cakes were the exact same size.\n   Andre cut his first cake into 8 pieces for him and his 7 friends. The picture below shows how he cut it.\n   Did Andre cut the cake into eighths? Explain your answer.\n\n\n3. Two of Andre's friends came late to his party. They decide they will all share the second cake. Show how\n   Andre can slice the second cake so that he and his nine friends can each get an equal amount with none\n   leftover. What fraction of the second cake will they each receive?\n\n\n                                              1                                              1\n4. Andre thinks it’s strange that of the cake would be less than of the cake since ten is bigger than eight.\n                                 10                                8\n   To explain to Andre, draw 2 identical rectangles to represent the cakes. Show 1 tenth shaded on one and\n   1 eighth shaded on the other. Label the unit fractions and explain to him which slice is bigger.\n\n\n                       Lesson 5:                   Partition a whole into equal parts and define the equal parts to        59\n                                                   identify the unit fraction numerically.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "answerKeyProblemSetText": "1\n1.    a. 2, 1, 1 half,\n                         2\n                             1\n      b. 3, 1, 1 third, 3\n                                 1\n      c. 4, 1, 1 fourth, 4\n                          1\n      d. 5, 1, 1 fifth, 5\n                           1\n      e. 6, 1, 1 sixth, 6\n                                 1\n      f.   8, 1, 1 eighth, 8\n2.    No; explanations will vary.\n                                                        1\n3.    Lines drawn to show tenths; 10\n                                                                       1       1 1                1\n4.    Rectangles are drawn and labeled to show 10 and 8; 8 is bigger than 10.",
+    "answerKeyText": "A STORY OF UNITS                                                                         Lesson 5 Answer Key 3 5\n\n\nLesson 5\nProblem Set\n                         1\n1.    a. 2, 1, 1 half,\n                         2\n                             1\n      b. 3, 1, 1 third, 3\n                                 1\n      c. 4, 1, 1 fourth, 4\n                          1\n      d. 5, 1, 1 fifth, 5\n                           1\n      e. 6, 1, 1 sixth, 6\n                                 1\n      f.   8, 1, 1 eighth, 8\n2.    No; explanations will vary.\n                                                        1\n3.    Lines drawn to show tenths; 10\n                                                                       1       1 1                1\n4.    Rectangles are drawn and labeled to show 10 and 8; 8 is bigger than 10.\n\n\nExit Ticket\n                    1\n1.    6, 1, 1 sixth, 6\n      1 1 1\n2.     ; ;\n      7 2 9\n                                                                      1        1 1            1\n3.    Rectangles are drawn and labeled to show 5 and 8; 5 is bigger than 8.\n\n\nHomework\n                         1\n1.    a. 2, 1, 1 half,\n                         2\n                             1\n      b. 3, 1, 1 third, 3\n                                 1\n      c. 10, 1, 1 tenth, 10\n                          1\n      d. 5, 1, 1 fifth, 5\n                                 1\n      e. 4, 1, 1 fourth, 4\n2.    No; explanations will vary.\n3.    Lines drawn to show fourths\n                                                                 1         1\n4.    Rectangles drawn and labeled to show 7 and 10; explanations will vary.\n\n\n                         Module 5:                  Fractions as Numbers on the Number Line                        373\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "ruler-or-length",
+      "table-or-chart",
+      "fraction-model",
+      "geometry-diagram",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "ruler-or-length": [
+        "all the same length like in a square. encourage them to work toward"
+      ],
+      "table-or-chart": [
+        "1. Fill in the chart. Each image is one whole."
+      ],
+      "fraction-model": [
+        "Partition a whole into equal parts and define the equal parts to identify the unit fraction numerically.",
+        "Lesson 5: Partition a whole into equal parts and define the equal parts to 56",
+        "identify the unit fraction numerically.",
+        "form, fraction form, and unit fraction—",
+        "Lesson 5: Partition a whole into equal parts and define the equal parts to 54",
+        "identify the unit fraction numerically.",
+        "T: Watch as I partition the whole. (Draw a line to partition the circle into 2 equal parts, as shown.)",
+        "How many equal parts are there?"
+      ],
+      "geometry-diagram": [
+        "To explain to Andre, draw 2 identical rectangles to represent the cakes. Show 1 tenth shaded on one and"
+      ],
+      "picture-or-drawing": [
+        "T: (Project or draw a circle, as shown below.) Whisper NOTES ON",
+        "T: Watch as I partition the whole. (Draw a line to partition the circle into 2 equal parts, as shown.)",
+        "T: (Shade one unit.) What fraction is shaded?",
+        "T: (Project or draw a square, as shown below.) What’s the name of this shape?",
+        "T: Draw it on your personal white board. (After students",
+        "draw the square.) Estimate to partition the square into",
+        "shaded region” (e.g., or ).",
+        "T: Shade one unit. Then, write the fraction for the shaded amount in unit form and fraction form on"
+      ]
+    },
+    "sourceIllustrationRequired": true,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw a circle, as shown below.) Whisper NOTES ON the name of this shape. MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Watch as I partition the whole. (Draw a line to partition the circle into 2 equal parts, as shown.) How many equal parts are there?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Shade one unit.) What fraction is shaded?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Just like any number, we can write one half in many ways. This is the unit form. (Write 1 half under 1 the circle.) This is the fraction form. (Write 2 under the circle.) Both of these refer to the same number, 1 out of 2 equal units. We call 1 half a unit fraction because it names one of the equal parts."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw a square, as shown below.) What’s the name of this shape?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw it on your personal white board. (After students whole. For example, ask the following: draw the square.) Estimate to partition the square into “If the square is 1 third, name the 3 equal parts. 3 1 shaded region” (e.g., or )."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Shade one unit. Then, write the fraction for the shaded amount in unit form and fraction form on your board. 1"
+      },
+      {
+        "speaker": "students",
+        "text": "(Shade and write 1 third and .) 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to a partner: Is the number that you wrote to represent the shaded part a unit fraction? Why or why not?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.) Continue the process with more shapes as needed. The following suggested shapes include examples of both shaded and non-shaded unit fractions. Alter language accordingly. identify the unit fraction numerically. ©2015 Great Minds. eureka-math.org G 3-M 5-TE-1.3.0 -0 6.2 0 15 A STORY OF UNITS Lesson 5 3 5"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw the following image.) Discuss with your partner: Does the shape have equal parts? How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "I can cut it into 2 equal parts. You have to cut it right grade level chose to solve one word down the middle going up and down. The lines aren’t problem (per lesson) last week, all the same length like in a square. encourage them to work toward"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Turn and talk: If the parts are not equal, can we call completing two word problems by the these fourths? Why or why not? end of this week."
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 54 (debrief) ---\nA STORY OF UNITS                                                                                                   Lesson 5 3 5\n\n\nLesson 5\nObjective: Partition a whole into equal parts and define the equal parts to\nidentify the unit fraction numerically.\n\nSuggested Lesson Structure\n\n Fluency Practice                 (15 minutes)\n Application Problem              (10 minutes)\n Concept Development              (25 minutes)\n Student Debrief                  (10 minutes)\n   Total Time                      (60 minutes)\n\n\nFluency Practice (15 minutes)\n\n Count by Eight 3.OA.7                                 (5 minutes)\n Write the Fractional Unit 3.NF.1                      (5 minutes)\n Partition Shapes 3.NF.1                               (5 minutes)\n\nCount by Eight (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity supports fluency with multiplication using units of 8.\n    1.   Students count by eight as high as they can for 90 seconds. 0, 8, 16, 24, 32, 40, 48, 56, etc.\n    2.   Correct by reading the multiples. Students practice for an additional minute after correction.\n    3.   Students count by eight once again. Quickly celebrate improvement.\n\nWrite the Fractional Unit (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews naming fractional units, as well as identifying shaded parts of a shape from\nTopic A.\n    T:   (Draw a shape with 3 units, 2 shaded in.) Write the fractional unit on your personal white board.\n    S:   (Write thirds.)\n    T:   Blank thirds are shaded. Write the number that goes in the blank.\n    S:   (Write 2.)\nContinue with the following possible sequence: 3 fourths, 2 fifths, 5 sixths, 7 tenths, and 5 eighths.\n\n\n                        Lesson 5:                  Partition a whole into equal parts and define the equal parts to              53\n                                                   identify the unit fraction numerically.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 55 (concept-development) ---\nA STORY OF UNITS                                                                                                       Lesson 5 3 5\n\n\nPartition Shapes (5 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews partitioning shapes into equal parts from Topic A.\n    T:   Draw a square.\n    S:   (Draw.)\n    T:   (Write halves.) Estimate to partition the square into equal halves.\n    S:   (Partition.)\nContinue with the following possible sequence: line, fifths; circle, fourths; circle, eighths; bar, tenths;\nand bar, sixths.\n\n\nApplication Problem (10 minutes)\n\nMs. Browne cut a 6-meter rope into 3 equal-size pieces to\nmake jump ropes. Mr. Ware cut a 5-meter rope into 3 equal\nsize pieces to make jump ropes. Which class has longer jump\nropes?\nExtension: How long are the jump ropes in Ms. Browne’s\nclass?\nNote: This problem reviews partitioning different wholes into\nequal parts from Lesson 4.\n\n\nConcept Development (25 minutes)\n\nMaterials: (S) Personal white board\n\n    T:   (Project or draw a circle, as shown below.) Whisper                                                      NOTES ON\n         the name of this shape.                                                                                  MULTIPLE MEANS\n    S:   Circle.                                                                                                  OF REPRESENTATION:\n                                                                                                         While introducing the new terms—unit\n                                                                                                         form, fraction form, and unit fraction—\n                                                                                                         check for student understanding.\n                                                                                                         English language learners may choose\n                                                                                                         to discuss definitions of these terms in\n                                                                                                         their first language with the teacher or\n                                                                                                         their peers.\n\n                                                                                      1\n                                                                             1 half; 2\n\n\n                         Lesson 5:                  Partition a whole into equal parts and define the equal parts to                                54\n                                                    identify the unit fraction numerically.\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 56 (lesson-instruction) ---\nA STORY OF UNITS                                                                                                      Lesson 5 3 5\n\n\n    T:   Watch as I partition the whole. (Draw a line to partition the circle into 2 equal parts, as shown.)\n         How many equal parts are there?\n    S:   2 equal parts.\n    T:   What’s the name of each unit?\n    S:   1 half.\n    T:   (Shade one unit.) What fraction is shaded?\n    S:   1 half.\n    T:   Just like any number, we can write one half in many ways. This is the unit form. (Write 1 half under\n                                                        1\n         the circle.) This is the fraction form. (Write 2 under the circle.) Both of these refer to the same\n         number, 1 out of 2 equal units. We call 1 half a unit fraction because it names one of the equal\n         parts.\n    T:   (Project or draw a square, as shown below.) What’s the name of this shape?\n    S:   It’s a square.\n\n\n                                                                                                                  NOTES ON\n                                                                                                                  MULTIPLE MEANS\n                                                                                                                  OF ENGAGEMENT:\n                                                                                                        Students working above grade level may\n                                                                                   1                    enjoy identifying fractions with an\n                                                                          1 third; 3                    added challenge of each shape\n                                                                                                        representing a fraction rather than the\n    T:   Draw it on your personal white board. (After students\n                                                                                                        whole. For example, ask the following:\n         draw the square.) Estimate to partition the square into\n                                                                         “If the square is 1 third, name the\n         3 equal parts.                                                                           3   1\n                                                                         shaded region” (e.g., or ).\n    S:   (Partition.)                                                                            12   4\n\n    T:   What’s the name of each unit?\n    S:   1 third.\n    T:   Shade one unit. Then, write the fraction for the shaded amount in unit form and fraction form on\n         your board.\n                                                       1\n    S:   (Shade and write 1 third and .)\n                                                       3\n    T:   Talk to a partner: Is the number that you wrote to represent the shaded part a unit fraction? Why\n         or why not?\n    S:   (Discuss.)\nContinue the process with more shapes as needed. The following suggested shapes include examples of both\nshaded and non-shaded unit fractions. Alter language accordingly.\n\n\n                       Lesson 5:                   Partition a whole into equal parts and define the equal parts to                           55\n                                                   identify the unit fraction numerically.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 57 (application-problem) ---\nA STORY OF UNITS                                                                                                     Lesson 5 3 5\n\n\n       T:   (Project or draw the following image.) Discuss with your partner: Does the shape have equal parts?\n            How do you know?\n\n\n       S:   No. The parts are not the same size.  They’re also\n            not exactly the same shape.  The parts are not equal\nMP.6\n            because the bottom parts are larger. The lines on the                                                   NOTES ON\n            sides lean in at the top.                                                                               MULTIPLE MEANS\n                                                                                                                    OF ENGAGEMENT:\n       T:   Most agree that the parts are not equal. How could\n            you partition the shape to make the parts equal?                                               Review personal goals with students.\n                                                                                                           For example, if students working below\n       S:   I can cut it into 2 equal parts. You have to cut it right                                      grade level chose to solve one word\n            down the middle going up and down. The lines aren’t                                            problem (per lesson) last week,\n            all the same length like in a square.                                                          encourage them to work toward\n       T:   Turn and talk: If the parts are not equal, can we call                                         completing two word problems by the\n            these fourths? Why or why not?                                                                 end of this week.\n\n       S:   (Discuss.)\n\n  Problem Set (10 minutes)\n  Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For\n  some classes, it may be appropriate to modify the assignment by specifying which problems they work on\n  first. Some problems do not specify a method for solving. Students should solve these problems using the\n  RDW approach used for Application Problems.\n\n\n                           Lesson 5:                  Partition a whole into equal parts and define the equal parts to                              56\n                                                      identify the unit fraction numerically.\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 58 (debrief) ---\nA STORY OF UNITS                                                                                                   Lesson 5 3 5\n\n\nStudent Debrief (10 minutes)\n\nLesson Objective: Partition a whole into equal parts and\ndefine the equal parts to identify the unit fraction\nnumerically.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Are the numbers in Problem 1 unit fractions?\n         How do you know?\n        Use the following possible introduction to start a\n         discussion about Problem 4: Let’s imagine we’re\n         at Andre’s birthday party. Who would rather\n         have an eighth of the cake? Who would rather\n         have a tenth? Why? The following are some\n         suggested sentence frames:\n          “I would rather have a __________ because\n              _______________.”\n          “I agree/disagree because ____________.”\n        Guide students to begin understanding that a\n         greater number of parts results in smaller pieces.\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete\nthe Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that\nwere presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read\naloud to the students.\n\n\n                        Lesson 5:                  Partition a whole into equal parts and define the equal parts to              57\n                                                   identify the unit fraction numerically.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 59 (problem-set) ---\nA STORY OF UNITS                                                                                Lesson 5 Problem Set 3 5\n\n\nName                                                                                                Date\n\n1. Fill in the chart. Each image is one whole.\n\n                                                                              Total Number\n                                                      Total Number\n                                                                              of Equal Parts              Unit Form   Fraction Form\n                                                      of Equal Parts\n                                                                                  Shaded\n     a.\n\n\n     b.\n\n\n     c.\n\n\n     d.\n\n\n     e.\n\n\n     f.\n\n\n                       Lesson 5:                  Partition a whole into equal parts and define the equal parts to                58\n                                                  identify the unit fraction numerically.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 60 (problem-set) ---\nA STORY OF UNITS                                                                                 Lesson 5 Problem Set 3 5\n\n\n2. Andre’s mom baked his 2 favorite cakes for his birthday party. The cakes were the exact same size.\n   Andre cut his first cake into 8 pieces for him and his 7 friends. The picture below shows how he cut it.\n   Did Andre cut the cake into eighths? Explain your answer.\n\n\n3. Two of Andre's friends came late to his party. They decide they will all share the second cake. Show how\n   Andre can slice the second cake so that he and his nine friends can each get an equal amount with none\n   leftover. What fraction of the second cake will they each receive?\n\n\n                                              1                                              1\n4. Andre thinks it’s strange that of the cake would be less than of the cake since ten is bigger than eight.\n                                 10                                8\n   To explain to Andre, draw 2 identical rectangles to represent the cakes. Show 1 tenth shaded on one and\n   1 eighth shaded on the other. Label the unit fractions and explain to him which slice is bigger.\n\n\n                       Lesson 5:                   Partition a whole into equal parts and define the equal parts to        59\n                                                   identify the unit fraction numerically.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 61 (exit-ticket) ---\nA STORY OF UNITS                                                                                    Lesson 5 Exit Ticket 3 5\n\n\nName                                                                                                 Date\n\n1. Fill in the chart.\n\n                                                                        Total Number of\n                                          Total Number of\n                                                                          Equal Parts                   Unit Form     Fraction Form\n                                            Equal Parts\n                                                                            Shaded\n\n\n2. Each image below is 1 whole. Write the fraction that is shaded.\n\n\n       ____________________                            _____________________                         _____________________\n\n\n3. Draw two identical rectangles. Partition one into 5 equal parts. Partition the other rectangle into 8 equal\n   parts. Label the unit fractions and shade 1 equal part in each rectangle. Use your rectangles to explain\n        1               1\n   why is bigger than .\n         5               8\n\n\n                        Lesson 5:                  Partition a whole into equal parts and define the equal parts to                   60\n                                                   identify the unit fraction numerically.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 62 (homework) ---\nA STORY OF UNITS                                                                                   Lesson 5 Homework 3 5\n\n\nName                                                                                                Date\n\n1. Fill in the chart. Each image is one whole.\n\n                                                                       Total Number of\n                                          Total Number of                                                  Unit      Fraction\n                                                                         Equal Parts\n                                            Equal Parts                                                    Form       Form\n                                                                           Shaded\n    a.\n\n\n    b.\n\n\n    c.\n\n\n    d.\n\n\n    e.\n\n\n                       Lesson 5:                  Partition a whole into equal parts and define the equal parts to              61\n                                                  identify the unit fraction numerically.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15\n\n--- PDF PAGE 63 (homework) ---\nA STORY OF UNITS                                                                                    Lesson 5 Homework 3 5\n\n\n2. This figure is divided into 6 parts. Are they sixths? Explain your answer.\n\n\n3. Terry and his 3 friends baked a pizza during his sleepover. They want to share the pizza equally. Show\n   how Terry can slice the pizza so that he and his 3 friends can each get an equal amount with none left\n   over.\n\n\n4. Draw two identical rectangles. Shade 1 seventh of one rectangle and 1 tenth of the other. Label the unit\n                                                1               1\n   fractions. Use your rectangles to explain why is greater than .\n                                                                     7                       10\n\n\n                        Lesson 5:                  Partition a whole into equal parts and define the equal parts to        62\n                                                   identify the unit fraction numerically.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 59,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                Lesson 5 Problem Set 3 5\n\n\nName                                                                                                Date\n\n1. Fill in the chart. Each image is one whole.\n\n                                                                              Total Number\n                                                      Total Number\n                                                                              of Equal Parts              Unit Form   Fraction Form\n                                                      of Equal Parts\n                                                                                  Shaded\n     a.\n\n\n     b.\n\n\n     c.\n\n\n     d.\n\n\n     e.\n\n\n     f.\n\n\n                       Lesson 5:                  Partition a whole into equal parts and define the equal parts to                58\n                                                  identify the unit fraction numerically.\n\n                       ©2015 Great Minds. eureka-math.org\n                       G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      },
+      {
+        "pdfPage": 60,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                 Lesson 5 Problem Set 3 5\n\n\n2. Andre’s mom baked his 2 favorite cakes for his birthday party. The cakes were the exact same size.\n   Andre cut his first cake into 8 pieces for him and his 7 friends. The picture below shows how he cut it.\n   Did Andre cut the cake into eighths? Explain your answer.\n\n\n3. Two of Andre's friends came late to his party. They decide they will all share the second cake. Show how\n   Andre can slice the second cake so that he and his nine friends can each get an equal amount with none\n   leftover. What fraction of the second cake will they each receive?\n\n\n                                              1                                              1\n4. Andre thinks it’s strange that of the cake would be less than of the cake since ten is bigger than eight.\n                                 10                                8\n   To explain to Andre, draw 2 identical rectangles to represent the cakes. Show 1 tenth shaded on one and\n   1 eighth shaded on the other. Label the unit fractions and explain to him which slice is bigger.\n\n\n                       Lesson 5:                   Partition a whole into equal parts and define the equal parts to        59\n                                                   identify the unit fraction numerically.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 374,
+        "text": "A STORY OF UNITS                                                                         Lesson 5 Answer Key 3 5\n\n\nLesson 5\nProblem Set\n                         1\n1.    a. 2, 1, 1 half,\n                         2\n                             1\n      b. 3, 1, 1 third, 3\n                                 1\n      c. 4, 1, 1 fourth, 4\n                          1\n      d. 5, 1, 1 fifth, 5\n                           1\n      e. 6, 1, 1 sixth, 6\n                                 1\n      f.   8, 1, 1 eighth, 8\n2.    No; explanations will vary.\n                                                        1\n3.    Lines drawn to show tenths; 10\n                                                                       1       1 1                1\n4.    Rectangles are drawn and labeled to show 10 and 8; 8 is bigger than 10.\n\n\nExit Ticket\n                    1\n1.    6, 1, 1 sixth, 6\n      1 1 1\n2.     ; ;\n      7 2 9\n                                                                      1        1 1            1\n3.    Rectangles are drawn and labeled to show 5 and 8; 5 is bigger than 8.\n\n\nHomework\n                         1\n1.    a. 2, 1, 1 half,\n                         2\n                             1\n      b. 3, 1, 1 third, 3\n                                 1\n      c. 10, 1, 1 tenth, 10\n                          1\n      d. 5, 1, 1 fifth, 5\n                                 1\n      e. 4, 1, 1 fourth, 4\n2.    No; explanations will vary.\n3.    Lines drawn to show fourths\n                                                                 1         1\n4.    Rectangles drawn and labeled to show 7 and 10; explanations will vary.\n\n\n                         Module 5:                  Fractions as Numbers on the Number Line                        373\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M 5-TE-1.3.0 -0 6.2 0 15"
+      }
+    ]
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "m4-l9",
+  "moduleId": "m4",
+  "lessonNumber": 9,
+  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "source": {
+    "teacherEditionPdf": "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf",
+    "teacherEditionSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+    "teacherEditionBytes": 10725683,
+    "lessonPdfPages": {
+      "start": 116,
+      "end": 126
+    },
+    "problemSetPdfPages": [
+      121,
+      122
+    ],
+    "exitTicketPdfPages": [
+      123
+    ],
+    "homeworkPdfPages": [
+      124,
+      125
+    ],
+    "answerKeyPdfPages": [
+      225
+    ],
+    "studentWorkbookImages": [
+      "/source-pages/m4-student/workbook-page-040.png"
+    ],
+    "existingTeacherEditionImages": [
+      "/source-pages/m4-teacher/page-121.png",
+      "/source-pages/m4-teacher/page-122.png",
+      "/source-pages/m4-teacher/page-225.png"
+    ]
+  },
+  "objective": "Analyze different rectangles and reason about their area.",
+  "instructionalContract": {
+    "instructionalMode": "concept-development",
+    "applicationProblemText": "s.",
+    "conceptDevelopmentText": "Materials: (S) Small centimeter grid (Template), personal white board, Problem Set\n\nProblems 1 and 2 in the Problem Set\n    T:   How can we cut this centimeter grid to get 2 equal                                                                 NOTES ON\n         rectangles?\n                                                                                                                            MULTIPLE MEANS\n    S:   Cut it in half.  If we cut on the line between the fifth                                                          OF ACTION AND\n         and sixth rows, we’ll have 2 equal rectangles.                                                                     EXPRESSION:\n          If we fold the grid in half and cut along the fold,\n                                                                                                                Cutting paper with scissors may be a\n         we can make 2 equal rectangles.\n                                                                                                                challenge for some learners. Precision\n    T:   Do that now, and then answer Problem 1(a).                                                             is important to this lesson. Please try\n                                                                                                                the following tips:\n                                                                                                                    Provide centimeter grids on\n                                                                                                                     cardstock or thicker paper.\n                                                                                                                    Darken and thicken the cutting\n                                                                                                                     lines.\n    T:   (Point to the side length of 10 centimeters.) This is the                                                  Provide left-handed, loop, spring,\n         length of the rectangle. What is its value?                                                                 self-opening, or other adaptive\n    S:   10 centimeters.                                                                                             scissors, if needed.\n\n    T:   (Point to the side length of 5 centimeters.) This is the                                                   Instruct students to turn the paper,\n                                                                                                                     not the scissors.\n         width of the rectangle. What is its value?\n                                                                                                                    Offer precut centimeter grids.\n    S:   5 centimeters.\n    T:   How can you find the area of one of the rectangles?\n                                                                                                                           Small Centimeter\n    S:   Multiply the side lengths.  Multiply 5 times 10.\n                                                                                                                            Grid Template\n    T:   Answer Problem 1(b). (Allow students time to work.)\n         What is the area of one of the rectangles?\n    S:   50 square centimeters!\n    T:   What is the area of the other rectangle? How do you\n         know?\n    S:   50 square centimeters because the rectangles are\n         equal.\n    T:   How can you find the total area of the rectangles?\n    S:   Add 50 square centimeters plus 50 square centimeters.\n    T:   Answer Problem 1(c). (Allow students time to work.)\n         What is the total area?\n    S:   100 square centimeters.\n    T:   Place your rectangles next to each other to make 1\n         long rectangle. Talk to a partner. What do you think\n         the area of this long rectangle is? Why?\n\n\n                        Lesson 9:                  Analyze different rectangles and reason about their area.                                              117\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 9 3•4\n\n\n           S:   100 square centimeters because I added 50 square centimeters plus 50 square centimeters.\n                 100 square centimeters because that’s the total area of the smaller rectangles and that doesn’t\n                change when we move them to make the longer rectangle.\n           T:   Let’s see if you are right! Answer Problem 2(a). (Allow students time to work.) What multiplication\n                fact can help you find the area of this longer rectangle?\n           S:   5 × 20.\n           T:   How can you solve this multiplication?\n           S:   We can think of it as 5 times 2 tens.  We could think of it as 5 × (2 × 10), which is the same as\n                (5 × 2) × 10.  We can think of it the same way as before: as 2 equal rectangles.\n           T:   Choose a strategy and use it to answer Problem 2(b). (Allow students time to work.) What is the\n                area of this longer rectangle?\n           S:   100 square centimeters!\n           T:   Was your prediction about the area of this longer rectangle correct?\nMP.3\n           S:   Yes!\n       Repeat this process, instructing students to fold 2 columns behind one of the rectangles, so they now have a\n       5 by 8 rectangle and a 5 by 10 rectangle. They can use their boards to record the total area of the 2 separate\n       rectangles and the area of the longer rectangle that is made by joining the 2 smaller rectangles.\n           T:   What did you notice about the sum of the areas of the 2 small rectangles and the area of the longer\n                rectangle?\n           S:   They’re the same!\n           T:   How can we use the areas of 2 small rectangles\n                that form a longer rectangle to find the area of\n                the longer rectangle?\n           S:   Add the areas of the smaller rectangles!",
+    "fluencyPracticeText": " Group Counting 3.OA.1                                                         (4 minutes)\n Find the Area 3.MD.7                                                          (4 minutes)\n Decompose the Multiplication Equation 3.OA.5                                  (4 minutes)\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally changing the direction of the count.\n        Fours to 40\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\nFind the Area (4 minutes)\nNote: This fluency activity reviews strategies for finding the area of a rectangle.\n    T:   (Project a rectangular array with 2 rows of 4 units. Write 1 tile = 1 square meter.) What does 1 tile\n         equal?\n    S:   1 square meter.\n    T:   (Point to the side length of 4 units.) What is the value of this side length?\n    S:   4 meters.\n    T:   (Point to the side length of 2 units.) What is the value of this side length?\n    S:   2 meters.\n\n\n                        Lesson 9:                  Analyze different rectangles and reason about their area.                                   115\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                                 Lesson 9 3\n\n\n    T:   Write a multiplication sentence to represent the area of the rectangle.\n    S:   (Write 2 m × 4 m = 8 sq m or 4 m × 2 m = 8 sq m.)\nContinue with the following possible sequence: 3 rows of 5 units, 3 rows of 7 units, 4 rows of 6 units, 4 rows\nof 9 units, and 6 rows of 8 units.\n\nDecompose the Multiplication Equation (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity anticipates the distributive property used in Lesson 10, while reviewing Module 3\nconcepts.\n    T:   (Write 8 × 6 = (5 +     ) × 6.) Copy the equation on your\n         personal white board, and fill in the blank.                                                                               Sample Work\n    S:   (Write 8 × 6 = (5 + 3) × 6.)                                                                                         8×6     = (5 + 3) × 6\n    T:   (Write = (    × 6) + (      × 6).) Copy the equation on                                                                      = (5 × 6) + (3 × 6)\n         your personal white board, and fill in the blanks.\n                                                                                                                                      = 30 + 18\n    S:   (Write (5 × 6) + (3 × 6).)\n                                                                                                                                      = 48\n    T:   Solve the multiplication problems and write an addition equation.\n         Below it, write your answer.\n    S:   (Write 30 + 18 and 48 below it.)\nContinue with the following possible sequence: 7 × 6, 6 × 6, and 9 × 6.",
+    "problemSetGuidanceText": "Students should do their personal best to complete the\n       Problem Set within the allotted 10 minutes. For some\n       classes, it may be appropriate to modify the assignment by\n       specifying which problems they work on first. Some\n       problems do not specify a method for solving. Students\n       should solve these problems using the RDW approach\n       used for Application Problems.",
+    "studentDebriefText": ", instruct students to complete the",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "How can we cut this centimeter grid to get 2 equal NOTES ON rectangles? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "Cut it in half.  If we cut on the line between the fifth OF ACTION AND and sixth rows, we’ll have 2 equal rectangles. EXPRESSION:  If we fold the grid in half and cut along the fold, Cutting paper with scissors may be a we can make 2 equal rectangles. challenge for some learners. Precision"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Do that now, and then answer Problem 1(a). is important to this lesson. Please try the following tips:  Provide centimeter grids on cardstock or thicker paper.  Darken and thicken the cutting lines."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Point to the side length of 10 centimeters.) This is the  Provide left-handed, loop, spring, length of the rectangle. What is its value? self-opening, or other adaptive"
+      },
+      {
+        "speaker": "students",
+        "text": "10 centimeters. scissors, if needed."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Point to the side length of 5 centimeters.) This is the  Instruct students to turn the paper, not the scissors. width of the rectangle. What is its value?  Offer precut centimeter grids."
+      },
+      {
+        "speaker": "students",
+        "text": "5 centimeters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can you find the area of one of the rectangles? Small Centimeter"
+      },
+      {
+        "speaker": "students",
+        "text": "Multiply the side lengths.  Multiply 5 times 10. Grid Template"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Answer Problem 1(b). (Allow students time to work.) What is the area of one of the rectangles?"
+      },
+      {
+        "speaker": "students",
+        "text": "50 square centimeters!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the area of the other rectangle? How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "50 square centimeters because the rectangles are equal."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can you find the total area of the rectangles?"
+      },
+      {
+        "speaker": "students",
+        "text": "Add 50 square centimeters plus 50 square centimeters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Answer Problem 1(c). (Allow students time to work.) What is the total area?"
+      },
+      {
+        "speaker": "students",
+        "text": "100 square centimeters."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Place your rectangles next to each other to make 1 long rectangle. Talk to a partner. What do you think the area of this long rectangle is? Why? This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 9 3•4"
+      },
+      {
+        "speaker": "students",
+        "text": "100 square centimeters because I added 50 square centimeters plus 50 square centimeters.  100 square centimeters because that’s the total area of the smaller rectangles and that doesn’t change when we move them to make the longer rectangle."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s see if you are right! Answer Problem 2(a). (Allow students time to work.) What multiplication fact can help you find the area of this longer rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "5 × 20."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can you solve this multiplication?"
+      },
+      {
+        "speaker": "students",
+        "text": "We can think of it as 5 times 2 tens.  We could think of it as 5 × (2 × 10), which is the same as (5 × 2) × 10.  We can think of it the same way as before: as 2 equal rectangles."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Choose a strategy and use it to answer Problem 2(b). (Allow students time to work.) What is the area of this longer rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "100 square centimeters!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Was your prediction about the area of this longer rectangle correct? MP.3"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes! Repeat this process, instructing students to fold 2 columns behind one of the rectangles, so they now have a 5 by 8 rectangle and a 5 by 10 rectangle. They can use their boards to record the total area of the 2 separate rectangles and the area of the longer rectangle that is made by joining the 2 smaller rectangles."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What did you notice about the sum of the areas of the 2 small rectangles and the area of the longer rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "They’re the same!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can we use the areas of 2 small rectangles that form a longer rectangle to find the area of the longer rectangle?"
+      },
+      {
+        "speaker": "students",
+        "text": "Add the areas of the smaller rectangles!"
+      }
+    ],
+    "teacherPrompts": [
+      "How can we cut this centimeter grid to get 2 equal NOTES ON rectangles? MULTIPLE MEANS",
+      "Do that now, and then answer Problem 1(a). is important to this lesson. Please try the following tips:  Provide centimeter grids on cardstock or thicker paper.  Darken and thicken the cutting lines.",
+      "(Point to the side length of 10 centimeters.) This is the  Provide left-handed, loop, spring, length of the rectangle. What is its value? self-opening, or other adaptive",
+      "(Point to the side length of 5 centimeters.) This is the  Instruct students to turn the paper, not the scissors. width of the rectangle. What is its value?  Offer precut centimeter grids.",
+      "How can you find the area of one of the rectangles? Small Centimeter",
+      "Answer Problem 1(b). (Allow students time to work.) What is the area of one of the rectangles?",
+      "What is the area of the other rectangle? How do you know?",
+      "How can you find the total area of the rectangles?",
+      "Answer Problem 1(c). (Allow students time to work.) What is the total area?",
+      "Place your rectangles next to each other to make 1 long rectangle. Talk to a partner. What do you think the area of this long rectangle is? Why? This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 4-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 9 3•4",
+      "Let’s see if you are right! Answer Problem 2(a). (Allow students time to work.) What multiplication fact can help you find the area of this longer rectangle?",
+      "How can you solve this multiplication?",
+      "Choose a strategy and use it to answer Problem 2(b). (Allow students time to work.) What is the area of this longer rectangle?",
+      "Was your prediction about the area of this longer rectangle correct? MP.3",
+      "What did you notice about the sum of the areas of the 2 small rectangles and the area of the longer rectangle?",
+      "How can we use the areas of 2 small rectangles that form a longer rectangle to find the area of the longer rectangle?"
+    ],
+    "debriefPrompt": "Talk to a partner: In Problem 1(a), how does knowing the side lengths of the grid help you find the side lengths of the small rectangles without counting?",
+    "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
+  },
+  "problemSet": {
+    "deliveryMode": "problem-set-pages",
+    "structuredPromptStatus": "ready",
+    "extractionWarnings": [],
+    "extractedProblems": [
+      {
+        "number": 1,
+        "prompt": "Cut the grid into 2 equal rectangles. a. Draw and label the side lengths of the 2 rectangles. b. Write an equation to find the area of 1 of the rectangles. c. Write an equation to show the total area of the 2 rectangles.",
+        "equations": []
+      },
+      {
+        "number": 2,
+        "prompt": "Place your 2 equal rectangles side by side to create a new, longer rectangle. a. Draw an area model to show the new rectangle. Label the side lengths. b. Find the total area of the longer rectangle. Furaha and Rahema use square tiles to make the rectangles shown below. Furaha's Rectangle Rahema's Rectangle a. Label the side lengths on the rectangles above, and find the area of each rectangle. b. Furaha pushes his rectangle next to Rahema's rectangle to form a new, longer rectangle. Draw an area model to show the new rectangle. Label the side lengths. c. Rahema says the area of the new, longer rectangle is 52 square units. Is she right? Explain your answer. 4. Kiera says she can find the area of the long rectangle below by adding the areas of Rectangles A and B. Is she right? Why or why not? Rectangle A Rectangle B",
+        "equations": []
+      }
+    ],
+    "problemSetText": "A STORY OF UNITS                                                                                        Lesson 9 Problem Set 3 4\n\n\nName                                                                                                        Date\n\n1. Cut the grid into 2 equal rectangles.\n\n    a.   Draw and label the side lengths of the 2 rectangles.\n\n\n    b.   Write an equation to find the area of 1 of the rectangles.\n\n\n    c.   Write an equation to show the total area of the 2 rectangles.\n\n\n2. Place your 2 equal rectangles side by side to create a new, longer rectangle.\n\n    a.   Draw an area model to show the new rectangle. Label the side lengths.\n\n\n    b.   Find the total area of the longer rectangle.\n\n\n                        Lesson 9:                  Analyze different rectangles and reason about their area.                      120\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                        Lesson 9 Problem Set 3 4\n\n\n3.   Furaha and Rahema use square tiles to make the rectangles shown below.\n\n\n                          Furaha’s Rectangle                                        Rahema’s Rectangle\n\n     a.   Label the side lengths on the rectangles above, and find the area of each rectangle.\n\n\n     b.   Furaha pushes his rectangle next to Rahema’s rectangle to form a new, longer rectangle. Draw an\n          area model to show the new rectangle. Label the side lengths.\n\n\n     c.   Rahema says the area of the new, longer rectangle is 52 square units. Is she right? Explain your\n          answer.\n\n\n4.   Kiera says she can find the area of the long rectangle below by adding the areas of Rectangles A and B. Is\n     she right? Why or why not?\n\n\n            Rectangle A                                  Rectangle B\n\n\n                          Lesson 9:                  Analyze different rectangles and reason about their area.                      121\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "answerKeyProblemSetText": "1.    a. 2 rectangles drawn; 5 cm, 10 cm labeled                                      3.       a. 4, 6; 4, 7; 24 sq units; 28 sq units\n      b. 5 cm × 10 cm = 50 sq cm                                                               b. Rectangle drawn; 4, 13\n      c. 50 sq cm + 50 sq cm = 100 sq cm                                                       c. Rahema is right; explanations will vary.\n2.    a. Rectangle drawn; 5 cm, 20 cm labeled                                         4.       No; explanations will vary.\n      b. 100 sq cm",
+    "answerKeyText": "A STORY OF UNITS                                                                                            Lesson 9 Answer Key 3 4\n\n\nLesson 9\nProblem Set\n1.    a. 2 rectangles drawn; 5 cm, 10 cm labeled                                      3.       a. 4, 6; 4, 7; 24 sq units; 28 sq units\n      b. 5 cm × 10 cm = 50 sq cm                                                               b. Rectangle drawn; 4, 13\n      c. 50 sq cm + 50 sq cm = 100 sq cm                                                       c. Rahema is right; explanations will vary.\n2.    a. Rectangle drawn; 5 cm, 20 cm labeled                                         4.       No; explanations will vary.\n      b. 100 sq cm\n\n\nExit Ticket\n1.    6, 6; 6, 3\n2.    6 × 6 = 36, 36 sq units; 6 × 3 = 18, 18 sq units\n3.    54 sq units; answers will vary.\n\n\nHomework\n1.    a. Line drawn to show two 4 by 8 rectangles                                     2.       a. Rectangle drawn; 4, 16\n          or two 8 by 4 rectangles; 1 rectangle                                                b. 64 sq units\n          shaded                                                                               c. Yes; answers will vary.\n      b. 4, 8; 4, 8 or 8, 4; 8, 4\n      c. 4 × 8 + 4 × 8 = 64,\n          8 × 4 + 8 × 4 = 64, or 8 × 8 = 64\n\n\n                        Module 4:                  Multiplication and Area                                                                   224\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "permitsVariableResponses": true
+  },
+  "visualContract": {
+    "modelsDetected": [
+      "array",
+      "number-bond",
+      "ruler-or-length",
+      "area-model",
+      "geometry-diagram",
+      "money-model",
+      "picture-or-drawing"
+    ],
+    "sourceEvidence": {
+      "array": [
+        "T: (Project a rectangular array with 2 rows of 4 units. Write 1 tile = 1 square meter.) What does 1 tile",
+        "Continue with the following possible sequence: 3 rows of 5 units, 3 rows of 7 units, 4 rows of 6 units, 4 rows",
+        "of 9 units, and 6 rows of 8 units."
+      ],
+      "number-bond": [
+        " Decompose the Multiplication Equation 3.OA.5 (4 minutes)",
+        "Decompose the Multiplication Equation (4 minutes)"
+      ],
+      "ruler-or-length": [
+        "Materials: (S) Small centimeter grid (Template), personal white board, Problem Set",
+        "T: How can we cut this centimeter grid to get 2 equal NOTES ON",
+        " Provide centimeter grids on",
+        "T: (Point to the side length of 10 centimeters.) This is the  Provide left-handed, loop, spring,",
+        "length of the rectangle. What is its value? self-opening, or other adaptive",
+        "S: 10 centimeters. scissors, if needed.",
+        "T: (Point to the side length of 5 centimeters.) This is the  Instruct students to turn the paper,",
+        " Offer precut centimeter grids."
+      ],
+      "area-model": [
+        "a. Draw an area model to show the new rectangle. Label the side lengths.",
+        "area model to show the new rectangle. Label the side lengths.",
+        "c. Rahema says the area of the new, longer rectangle is 52 square units. Is she right? Explain your"
+      ],
+      "geometry-diagram": [
+        "Analyze different rectangles and reason about their area.",
+        "rectangles?",
+        "and sixth rows, we’ll have 2 equal rectangles. EXPRESSION:",
+        "we can make 2 equal rectangles.",
+        "length of the rectangle. What is its value? self-opening, or other adaptive",
+        "width of the rectangle. What is its value?",
+        "T: How can you find the area of one of the rectangles?",
+        "What is the area of one of the rectangles?"
+      ],
+      "money-model": [
+        "Materials: (S) Small centimeter grid (Template), personal white board, Problem Set",
+        "T: How can we cut this centimeter grid to get 2 equal NOTES ON",
+        " Provide centimeter grids on",
+        "T: (Point to the side length of 10 centimeters.) This is the  Provide left-handed, loop, spring,",
+        "S: 10 centimeters. scissors, if needed.",
+        "T: (Point to the side length of 5 centimeters.) This is the  Instruct students to turn the paper,",
+        " Offer precut centimeter grids.",
+        "S: 5 centimeters."
+      ],
+      "picture-or-drawing": [
+        "a. Draw and label the side lengths of the 2 rectangles.",
+        "a. Draw an area model to show the new rectangle. Label the side lengths.",
+        "b. Furaha pushes his rectangle next to Rahema’s rectangle to form a new, longer rectangle. Draw an"
+      ]
+    },
+    "sourceIllustrationRequired": true,
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Point to the side length of 5 centimeters.) This is the  Instruct students to turn the paper, not the scissors. width of the rectangle. What is its value?  Offer precut centimeter grids."
+      },
+      {
+        "speaker": "students",
+        "text": "100 square centimeters because I added 50 square centimeters plus 50 square centimeters.  100 square centimeters because that’s the total area of the smaller rectangles and that doesn’t change when we move them to make the longer rectangle."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can you solve this multiplication?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What did you notice about the sum of the areas of the 2 small rectangles and the area of the longer rectangle?"
+      }
+    ],
+    "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
+  },
+  "deliveryContract": {
+    "blankMustShow": [
+      "Every official Problem Set item in source order.",
+      "All printed givens, labels, tables, diagrams, and response spaces needed to solve the item.",
+      "The source-specific mathematical relationship, not a generic replacement."
+    ],
+    "blankMustHide": [
+      "Answer-key completions and final answers.",
+      "Solved reasoning, validation labels, or teacher-only evidence that leaks the response."
+    ],
+    "solvedMustShow": [
+      "Every Problem Set answer supported by the Teacher Edition answer-key block.",
+      "The mathematical model or reasoning sequence needed to understand the result.",
+      "Units, labels, explanations, and variable-response criteria required by the source."
+    ],
+    "acceptanceRule": "Teacher Edition drift is blocking. Pixel-perfect scan reproduction is not required when the live model preserves the same mathematics and learning sequence."
+  },
+  "sourceText": {
+    "lessonText": "--- PDF PAGE 116 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 9 3\n\n\nLesson 9\nObjective: Analyze different rectangles and reason about their area.\n\nSuggested Lesson Structure\n\n Fluency Practice                 (12 minutes)\n Application Problem              (5 minutes)\n Concept Development              (33 minutes)\n Student Debrief                  (10 minutes)\n   Total Time                      (60 minutes)\n\n\nFluency Practice (12 minutes)\n\n Group Counting 3.OA.1                                                         (4 minutes)\n Find the Area 3.MD.7                                                          (4 minutes)\n Decompose the Multiplication Equation 3.OA.5                                  (4 minutes)\n\nGroup Counting (4 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally changing the direction of the count.\n        Fours to 40\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\nFind the Area (4 minutes)\nNote: This fluency activity reviews strategies for finding the area of a rectangle.\n    T:   (Project a rectangular array with 2 rows of 4 units. Write 1 tile = 1 square meter.) What does 1 tile\n         equal?\n    S:   1 square meter.\n    T:   (Point to the side length of 4 units.) What is the value of this side length?\n    S:   4 meters.\n    T:   (Point to the side length of 2 units.) What is the value of this side length?\n    S:   2 meters.\n\n\n                        Lesson 9:                  Analyze different rectangles and reason about their area.                                   115\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 117 (application-problem) ---\nA STORY OF UNITS                                                                                                                 Lesson 9 3\n\n\n    T:   Write a multiplication sentence to represent the area of the rectangle.\n    S:   (Write 2 m × 4 m = 8 sq m or 4 m × 2 m = 8 sq m.)\nContinue with the following possible sequence: 3 rows of 5 units, 3 rows of 7 units, 4 rows of 6 units, 4 rows\nof 9 units, and 6 rows of 8 units.\n\nDecompose the Multiplication Equation (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity anticipates the distributive property used in Lesson 10, while reviewing Module 3\nconcepts.\n    T:   (Write 8 × 6 = (5 +     ) × 6.) Copy the equation on your\n         personal white board, and fill in the blank.                                                                               Sample Work\n    S:   (Write 8 × 6 = (5 + 3) × 6.)                                                                                         8×6     = (5 + 3) × 6\n    T:   (Write = (    × 6) + (      × 6).) Copy the equation on                                                                      = (5 × 6) + (3 × 6)\n         your personal white board, and fill in the blanks.\n                                                                                                                                      = 30 + 18\n    S:   (Write (5 × 6) + (3 × 6).)\n                                                                                                                                      = 48\n    T:   Solve the multiplication problems and write an addition equation.\n         Below it, write your answer.\n    S:   (Write 30 + 18 and 48 below it.)\nContinue with the following possible sequence: 7 × 6, 6 × 6, and 9 × 6.\n\n\nApplication Problem (5 minutes)\n\nMario plans to completely cover his 8-inch by 6-inch piece of cardboard with square inch tiles.\nHe has 42 square inch tiles. How many more square inch tiles does Mario need to cover the cardboard\nwithout any gaps or overlap? Explain your answer.\n\n\nNote: This problem reviews the concept of finding area. Students will likely solve by multiplying side lengths\n(shown above), having just practiced this strategy in Lesson 8.\n\n\n                        Lesson 9:                  Analyze different rectangles and reason about their area.                                           116\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 118 (concept-development) ---\nA STORY OF UNITS                                                                                                                Lesson 9 3•4\n\n\nConcept Development (33 minutes)\n\nMaterials: (S) Small centimeter grid (Template), personal white board, Problem Set\n\nProblems 1 and 2 in the Problem Set\n    T:   How can we cut this centimeter grid to get 2 equal                                                                 NOTES ON\n         rectangles?\n                                                                                                                            MULTIPLE MEANS\n    S:   Cut it in half.  If we cut on the line between the fifth                                                          OF ACTION AND\n         and sixth rows, we’ll have 2 equal rectangles.                                                                     EXPRESSION:\n          If we fold the grid in half and cut along the fold,\n                                                                                                                Cutting paper with scissors may be a\n         we can make 2 equal rectangles.\n                                                                                                                challenge for some learners. Precision\n    T:   Do that now, and then answer Problem 1(a).                                                             is important to this lesson. Please try\n                                                                                                                the following tips:\n                                                                                                                    Provide centimeter grids on\n                                                                                                                     cardstock or thicker paper.\n                                                                                                                    Darken and thicken the cutting\n                                                                                                                     lines.\n    T:   (Point to the side length of 10 centimeters.) This is the                                                  Provide left-handed, loop, spring,\n         length of the rectangle. What is its value?                                                                 self-opening, or other adaptive\n    S:   10 centimeters.                                                                                             scissors, if needed.\n\n    T:   (Point to the side length of 5 centimeters.) This is the                                                   Instruct students to turn the paper,\n                                                                                                                     not the scissors.\n         width of the rectangle. What is its value?\n                                                                                                                    Offer precut centimeter grids.\n    S:   5 centimeters.\n    T:   How can you find the area of one of the rectangles?\n                                                                                                                           Small Centimeter\n    S:   Multiply the side lengths.  Multiply 5 times 10.\n                                                                                                                            Grid Template\n    T:   Answer Problem 1(b). (Allow students time to work.)\n         What is the area of one of the rectangles?\n    S:   50 square centimeters!\n    T:   What is the area of the other rectangle? How do you\n         know?\n    S:   50 square centimeters because the rectangles are\n         equal.\n    T:   How can you find the total area of the rectangles?\n    S:   Add 50 square centimeters plus 50 square centimeters.\n    T:   Answer Problem 1(c). (Allow students time to work.)\n         What is the total area?\n    S:   100 square centimeters.\n    T:   Place your rectangles next to each other to make 1\n         long rectangle. Talk to a partner. What do you think\n         the area of this long rectangle is? Why?\n\n\n                        Lesson 9:                  Analyze different rectangles and reason about their area.                                              117\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 119 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 9 3•4\n\n\n           S:   100 square centimeters because I added 50 square centimeters plus 50 square centimeters.\n                 100 square centimeters because that’s the total area of the smaller rectangles and that doesn’t\n                change when we move them to make the longer rectangle.\n           T:   Let’s see if you are right! Answer Problem 2(a). (Allow students time to work.) What multiplication\n                fact can help you find the area of this longer rectangle?\n           S:   5 × 20.\n           T:   How can you solve this multiplication?\n           S:   We can think of it as 5 times 2 tens.  We could think of it as 5 × (2 × 10), which is the same as\n                (5 × 2) × 10.  We can think of it the same way as before: as 2 equal rectangles.\n           T:   Choose a strategy and use it to answer Problem 2(b). (Allow students time to work.) What is the\n                area of this longer rectangle?\n           S:   100 square centimeters!\n           T:   Was your prediction about the area of this longer rectangle correct?\nMP.3\n           S:   Yes!\n       Repeat this process, instructing students to fold 2 columns behind one of the rectangles, so they now have a\n       5 by 8 rectangle and a 5 by 10 rectangle. They can use their boards to record the total area of the 2 separate\n       rectangles and the area of the longer rectangle that is made by joining the 2 smaller rectangles.\n           T:   What did you notice about the sum of the areas of the 2 small rectangles and the area of the longer\n                rectangle?\n           S:   They’re the same!\n           T:   How can we use the areas of 2 small rectangles\n                that form a longer rectangle to find the area of\n                the longer rectangle?\n           S:   Add the areas of the smaller rectangles!\n\n       Problem Set (10 minutes)\n       Students should do their personal best to complete the\n       Problem Set within the allotted 10 minutes. For some\n       classes, it may be appropriate to modify the assignment by\n       specifying which problems they work on first. Some\n       problems do not specify a method for solving. Students\n       should solve these problems using the RDW approach\n       used for Application Problems.\n\n\n       Student Debrief (10 minutes)\n\n       Lesson Objective: Analyze different rectangles and reason\n       about their area.\n       The Student Debrief is intended to invite reflection and\n       active processing of the total lesson experience.\n\n\n                               Lesson 9:                  Analyze different rectangles and reason about their area.                                118\n\n                               This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                               G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 120 (debrief) ---\nA STORY OF UNITS                                                                                                               Lesson 9 3•4\n\n\nInvite students to review their solutions for the Problem Set. They should check work by comparing answers\nwith a partner before going over answers as a class. Look for misconceptions or misunderstandings that can\nbe addressed in the Debrief. Guide students in a conversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to lead the discussion.\n        Talk to a partner: In Problem 1(a), how does\n         knowing the side lengths of the grid help you find\n         the side lengths of the small rectangles without\n         counting?\n        Did anyone use the break apart and distribute\n         strategy to solve Problem 2(b)? Explain what you\n         broke apart. Why did you make that choice?\n         (Ahead of Lesson 10, which uses the distributive\n         property, ask students how the paper rectangles\n         show the distributive property.)\n        Compare the equations you used to solve\n         Problems 1(b) and 2(b). How are they the same?\n         How are they different?\n        Explain to a partner how you found the length\n         and width for the new rectangle in Problem 3(b).\n         If you labeled the width 13 and length 4, how\n         would that change your drawing? How would\n         that affect the area of the rectangle?\n        Did anyone multiply the side lengths to solve\n         Problem 3(c)? What strategy did you use to\n         multiply 4 × 13?\n        How was Problem 4 different from the other\n         problems?\n\nExit Ticket (3 minutes)\nAfter the Student Debrief, instruct students to complete the Exit Ticket. A review of their work will help with\nassessing students’ understanding of the concepts that were presented in today’s lesson and planning more\neffectively for future lessons. The questions may be read aloud to the students.\n\n\n                        Lesson 9:                  Analyze different rectangles and reason about their area.                                119\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 121 (problem-set) ---\nA STORY OF UNITS                                                                                        Lesson 9 Problem Set 3 4\n\n\nName                                                                                                        Date\n\n1. Cut the grid into 2 equal rectangles.\n\n    a.   Draw and label the side lengths of the 2 rectangles.\n\n\n    b.   Write an equation to find the area of 1 of the rectangles.\n\n\n    c.   Write an equation to show the total area of the 2 rectangles.\n\n\n2. Place your 2 equal rectangles side by side to create a new, longer rectangle.\n\n    a.   Draw an area model to show the new rectangle. Label the side lengths.\n\n\n    b.   Find the total area of the longer rectangle.\n\n\n                        Lesson 9:                  Analyze different rectangles and reason about their area.                      120\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 122 (problem-set) ---\nA STORY OF UNITS                                                                                        Lesson 9 Problem Set 3 4\n\n\n3.   Furaha and Rahema use square tiles to make the rectangles shown below.\n\n\n                          Furaha’s Rectangle                                        Rahema’s Rectangle\n\n     a.   Label the side lengths on the rectangles above, and find the area of each rectangle.\n\n\n     b.   Furaha pushes his rectangle next to Rahema’s rectangle to form a new, longer rectangle. Draw an\n          area model to show the new rectangle. Label the side lengths.\n\n\n     c.   Rahema says the area of the new, longer rectangle is 52 square units. Is she right? Explain your\n          answer.\n\n\n4.   Kiera says she can find the area of the long rectangle below by adding the areas of Rectangles A and B. Is\n     she right? Why or why not?\n\n\n            Rectangle A                                  Rectangle B\n\n\n                          Lesson 9:                  Analyze different rectangles and reason about their area.                      121\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 123 (exit-ticket) ---\nA STORY OF UNITS                                                                                             Lesson 9 Exit Ticket 3 4\n\n\nName                                                                                                        Date\n\nLamar uses square tiles to make the 2 rectangles shown below.\n\n\n                                   Rectangle A                                     Rectangle B\n\n1. Label the side lengths of the 2 rectangles.\n\n2. Write equations to find the areas of the rectangles.\n\n\n    Area of Rectangle A: _______________                                                      Area of Rectangle B: _______________\n\n\n3. Lamar pushes Rectangle A next to Rectangle B to make a bigger rectangle. What is the area of the bigger\n   rectangle? How do you know?\n\n\n                       Lesson 9:                   Analyze different rectangles and reason about their area.                          122\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 124 (homework) ---\nA STORY OF UNITS                                                                                           Lesson 9 Homework 3 4\n\n\nName                                                                                                        Date\n\n1. Use the grid to answer the questions below.\n\n\n    a.   Draw a line to divide the grid into 2 equal rectangles. Shade in 1 of the rectangles that you created.\n\n\n    b.   Label the side lengths of each rectangle.\n\n\n    c.   Write an equation to show the total area of the 2 rectangles.\n\n\n                        Lesson 9:                  Analyze different rectangles and reason about their area.                      123\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 125 (homework) ---\nA STORY OF UNITS                                                                                          Lesson 9 Homework 3 4\n\n\n2.   Alexa cuts out the 2 equal rectangles from Problem 1(a) and puts the two shorter sides together.\n\n     a.   Draw Alexa’s new rectangle and label the side lengths below.\n\n\n     b.   Find the total area of the new, longer rectangle.\n\n\n     c.   Is the area of the new, longer rectangle equal to the total area in Problem 1(c)?\n          Explain why or why not.\n\n\n                        Lesson 9:                   Analyze different rectangles and reason about their area.                      124\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\n--- PDF PAGE 126 (template) ---\nA STORY OF UNITS                                                                                              Lesson 9 Template 3\n\n\nsmall centimeter grid\n\n\n                        Lesson 9:                  Analyze different rectangles and reason about their area.                           125\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15",
+    "problemSetPages": [
+      {
+        "pdfPage": 121,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                        Lesson 9 Problem Set 3 4\n\n\nName                                                                                                        Date\n\n1. Cut the grid into 2 equal rectangles.\n\n    a.   Draw and label the side lengths of the 2 rectangles.\n\n\n    b.   Write an equation to find the area of 1 of the rectangles.\n\n\n    c.   Write an equation to show the total area of the 2 rectangles.\n\n\n2. Place your 2 equal rectangles side by side to create a new, longer rectangle.\n\n    a.   Draw an area model to show the new rectangle. Label the side lengths.\n\n\n    b.   Find the total area of the longer rectangle.\n\n\n                        Lesson 9:                  Analyze different rectangles and reason about their area.                      120\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      },
+      {
+        "pdfPage": 122,
+        "type": "problem-set",
+        "text": "A STORY OF UNITS                                                                                        Lesson 9 Problem Set 3 4\n\n\n3.   Furaha and Rahema use square tiles to make the rectangles shown below.\n\n\n                          Furaha’s Rectangle                                        Rahema’s Rectangle\n\n     a.   Label the side lengths on the rectangles above, and find the area of each rectangle.\n\n\n     b.   Furaha pushes his rectangle next to Rahema’s rectangle to form a new, longer rectangle. Draw an\n          area model to show the new rectangle. Label the side lengths.\n\n\n     c.   Rahema says the area of the new, longer rectangle is 52 square units. Is she right? Explain your\n          answer.\n\n\n4.   Kiera says she can find the area of the long rectangle below by adding the areas of Rectangles A and B. Is\n     she right? Why or why not?\n\n\n            Rectangle A                                  Rectangle B\n\n\n                          Lesson 9:                  Analyze different rectangles and reason about their area.                      121\n\n                          This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                          G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ],
+    "answerKeyPages": [
+      {
+        "pdfPage": 225,
+        "text": "A STORY OF UNITS                                                                                            Lesson 9 Answer Key 3 4\n\n\nLesson 9\nProblem Set\n1.    a. 2 rectangles drawn; 5 cm, 10 cm labeled                                      3.       a. 4, 6; 4, 7; 24 sq units; 28 sq units\n      b. 5 cm × 10 cm = 50 sq cm                                                               b. Rectangle drawn; 4, 13\n      c. 50 sq cm + 50 sq cm = 100 sq cm                                                       c. Rahema is right; explanations will vary.\n2.    a. Rectangle drawn; 5 cm, 20 cm labeled                                         4.       No; explanations will vary.\n      b. 100 sq cm\n\n\nExit Ticket\n1.    6, 6; 6, 3\n2.    6 × 6 = 36, 36 sq units; 6 × 3 = 18, 18 sq units\n3.    54 sq units; answers will vary.\n\n\nHomework\n1.    a. Line drawn to show two 4 by 8 rectangles                                     2.       a. Rectangle drawn; 4, 16\n          or two 8 by 4 rectangles; 1 rectangle                                                b. 64 sq units\n          shaded                                                                               c. Yes; answers will vary.\n      b. 4, 8; 4, 8 or 8, 4; 8, 4\n      c. 4 × 8 + 4 × 8 = 64,\n          8 × 4 + 8 × 4 = 64, or 8 × 8 = 64\n\n\n                        Module 4:                  Multiplication and Area                                                                   224\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15"
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 # Lesson 20 baseline
 
-Use Module 2 Lesson 20 as the quality baseline, not as content to copy into other lessons.
+Use Module 2 Lesson 20 as the functional-fidelity baseline, not as content or pixel styling to copy into other lessons.
 
 ## What made Lesson 20 successful
 
@@ -11,6 +11,15 @@ Use Module 2 Lesson 20 as the quality baseline, not as content to copy into othe
 - Blank mode removed answers, circles, explanations, and solved motion while retaining the authentic workspace.
 - Solved mode exposed the complete reasoning sequence and used motion to direct attention through it.
 - The lesson was accepted only after desktop Chrome inspection for Concept, Blank, Solved, and Summary states.
+
+## What the baseline does not require
+
+- Reproducing the PDF scan pixel for pixel.
+- Copying Lesson 20's layout, colors, motion, problem structure, or visual metaphor into unrelated lessons.
+- Giving every repeated problem its own bespoke component or animation.
+- Spending batch time on minor typography, spacing, decoration, scan texture, or exhaustive responsive polish after the mathematics is clear and usable.
+
+The reusable standard is source accuracy plus a clear functional learning experience: exact tasks, correct models, meaningful instructional motion, and proper Blank/Solved behavior.
 
 ## Repository reference points
 
@@ -24,4 +33,4 @@ Use Module 2 Lesson 20 as the quality baseline, not as content to copy into othe
 
 ## Generalization rule
 
-Copy the rigor and workflow, never Lesson 20's numbers or visual metaphor. A new lesson must receive the source-specific model demanded by its own Teacher Edition: clock, tape, scale, number line, table, array, chart, geometry, fraction model, or another authored visual.
+Copy the rigor and workflow, never Lesson 20's numbers, layout, or visual metaphor. A new lesson must receive the simplest clear model demanded by its own Teacher Edition: clock, tape, scale, number line, table, array, chart, geometry, fraction model, or another authored visual. Once that model is accurate, readable, and meaningfully sequenced, move to the next lesson instead of polishing pixels.

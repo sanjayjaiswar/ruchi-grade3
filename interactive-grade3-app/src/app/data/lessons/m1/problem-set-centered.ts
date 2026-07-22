@@ -4,6 +4,7 @@ import type {
   ProblemSetCenteredLesson,
   ProblemSetCenteredProblem,
   ProblemSetFactMatch,
+  LessonRuntimeConfig,
   ProblemVisualSection,
   ProblemVisualSpec,
   ProblemSetRelatedFact
@@ -55,6 +56,113 @@ type LessonSeed = {
 };
 
 const GENERATED_SOURCE_PROMPT_LESSONS = new Set([1, 2, 3, 6, 7, 8, 9, 11, 14, 15, 18]);
+
+export const M1_TEACHER_OBJECTIVES: Record<number, string> = {
+  1: 'Understand equal groups of as multiplication.',
+  2: 'Relate multiplication to the array model.',
+  3: 'Interpret the meaning of factors—the size of the group or the number of groups.',
+  4: 'Understand the meaning of the unknown as the size of the group in division.',
+  5: 'Understand the meaning of the unknown as the number of groups in division.',
+  6: 'Interpret the unknown in division using the array model.',
+  7: 'Demonstrate the commutativity of multiplication, and practice related facts by skip-counting objects in array models.',
+  8: 'Demonstrate the commutativity of multiplication, and practice related facts by skip-counting objects in array models.',
+  9: 'Find related multiplication facts by adding and subtracting equal groups in array models.',
+  10: 'Model the distributive property with arrays to decompose units as a strategy to multiply.',
+  11: 'Model division as the unknown factor in multiplication using arrays and tape diagrams.',
+  12: 'Interpret the quotient as the number of groups or the number of objects in each group using units of 2.',
+  13: 'Interpret the quotient as the number of groups or the number of objects in each group using units of 3.',
+  14: 'Skip-count objects in models to build fluency with multiplication facts using units of 4.',
+  15: 'Relate arrays to tape diagrams to model the commutative property of multiplication.',
+  16: 'Use the distributive property as a strategy to find related multiplication facts.',
+  17: 'Model the relationship between multiplication and division.',
+  18: 'Apply the distributive property to decompose units.',
+  19: 'Apply the distributive property to decompose units.',
+  20: 'Solve two-step word problems involving multiplication and division, and assess the reasonableness of answers.',
+  21: 'Solve two-step word problems involving all four operations, and assess the reasonableness of answers.'
+};
+
+const M1_TEACHER_PAGE_RANGES: Record<number, [number, number]> = {
+  1: [23, 33], 2: [34, 48], 3: [49, 62], 4: [63, 74], 5: [75, 84],
+  6: [85, 96], 7: [97, 108], 8: [109, 118], 9: [119, 130], 10: [131, 150],
+  11: [151, 161], 12: [162, 173], 13: [174, 187], 14: [188, 199], 15: [200, 209],
+  16: [210, 220], 17: [221, 233], 18: [234, 244], 19: [245, 254], 20: [255, 266],
+  21: [267, 276]
+};
+
+function m1TeacherSource(lessonNumber: number): string {
+  const [start, end] = M1_TEACHER_PAGE_RANGES[lessonNumber];
+  return `Module 1 Teacher Edition, lesson pages ${start}-${end}.`;
+}
+
+export function alignM1RuntimeSources(runtime: LessonRuntimeConfig, lessonNumber: number): LessonRuntimeConfig {
+  const objective = M1_TEACHER_OBJECTIVES[lessonNumber];
+  const teacherSource = m1TeacherSource(lessonNumber);
+  const centeredBaseline = M1_PROBLEM_SET_CENTERED_LESSONS[lessonNumber];
+  const existingCentered = runtime.problemSetCenteredLesson;
+  const alignedConceptSections = centeredBaseline?.conceptSections ?? (existingCentered ? [
+    {
+      title: `1. ${objective}`,
+      body: existingCentered.concept,
+      teacherSource,
+      checkpoints: [
+        'Name what the quotient represents in this situation.',
+        'Keep the total, equal groups, and group size tied to the model.',
+        'Use the related multiplication fact to check the division.'
+      ]
+    },
+    {
+      title: '2. Compare the two quotient meanings',
+      body: 'Use equal-group drawings or tapes to distinguish finding the number of groups from finding the number in each group.',
+      teacherSource,
+      checkpoints: [
+        'Locate the unknown on the model.',
+        'State whether the unknown is groups or objects per group.',
+        'Write the division equation that matches the picture.'
+      ]
+    },
+    {
+      title: '3. Explain and check',
+      body: existingCentered.contrast,
+      teacherSource,
+      checkpoints: [
+        'Answer with the requested unit.',
+        'Multiply the quotient by the divisor.',
+        'Confirm that the product recovers the whole.'
+      ]
+    }
+  ] : undefined);
+  return {
+    ...runtime,
+    problemSetCenteredLesson: existingCentered
+      ? {
+          ...existingCentered,
+          title: `Lesson ${lessonNumber}: ${objective}`,
+          teacherEditionBasis: teacherSource,
+          conceptSections: alignedConceptSections
+        }
+      : existingCentered,
+    teacherEditionSteps: runtime.teacherEditionSteps?.map((step) => ({
+      ...step,
+      studentPrompt: step.id === 'source-goal' ? objective : step.studentPrompt,
+      teacherEditionBasis: /Teacher Edition|teacher_edition|lesson pages/i.test(step.teacherEditionBasis)
+        ? teacherSource
+        : step.teacherEditionBasis
+    })),
+    sourceRows: runtime.sourceRows
+      ? Object.fromEntries(Object.entries(runtime.sourceRows).map(([key, rows]) => [
+          key,
+          rows.map((row) => ({
+            ...row,
+            value: key === 'source-goal' && row.label === 'Source text'
+              ? objective
+              : row.label === 'Source' && /Teacher Edition|teacher_edition|lesson pages/i.test(row.value)
+                ? teacherSource
+                : row.value
+          }))
+        ]))
+      : runtime.sourceRows
+  };
+}
 
 const M1_PROBLEM_SET_SOURCE_PAGES: Record<number, string[]> = {
   1: teacherEditionPageImages(29, 30),
@@ -1286,14 +1394,15 @@ function blankEquation(equation: string): string {
 }
 
 function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
-  const teacherEditionImages = teacherEditionPageImagesFromBasis(seed.teacherEditionBasis);
+  const teacherEditionBasis = m1TeacherSource(seed.lessonNumber);
+  const teacherEditionImages = teacherEditionPageImagesFromBasis(teacherEditionBasis);
   const problemSetImages = M1_PROBLEM_SET_SOURCE_PAGES[seed.lessonNumber] ?? teacherEditionImages;
   const answerKeyImages = M1_ANSWER_KEY_SOURCE_PAGES[seed.lessonNumber] ?? [];
 
   return {
-    title: seed.title,
+    title: `Lesson ${seed.lessonNumber}: ${M1_TEACHER_OBJECTIVES[seed.lessonNumber]}`,
     concept: seed.concept,
-    teacherEditionBasis: seed.teacherEditionBasis,
+    teacherEditionBasis,
     contrast: seed.contrast,
     summary: seed.summary,
     sourceNote: teacherEditionSourceNote(seed),
@@ -1302,29 +1411,29 @@ function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
     solvedSourcePageImages: [...teacherEditionImages, ...answerKeyImages],
     conceptSections: [
       {
-        title: `1. Teacher Edition Lesson ${seed.lessonNumber} concept development`,
+        title: `1. ${M1_TEACHER_OBJECTIVES[seed.lessonNumber]}`,
         body: seed.concept,
-        teacherSource: seed.teacherEditionBasis,
+        teacherSource: teacherEditionBasis,
         checkpoints: [
-          'Use the exact lesson page range shown in the Teacher Edition source images.',
           'Name the equal groups, array rows, tape units, or story parts before solving.',
-          'Keep the equation tied to the Teacher Edition visual model.'
+          'Keep every quantity and unit tied to the visible model.',
+          'Write the equation only after identifying what each factor or quotient means.'
         ]
       },
       {
-        title: '2. Teacher Edition Problem Set and debrief focus',
-        body: 'The official Teacher Edition Problem Set is the main student work. Blank mode preserves prompts, blanks, and visual workspace; Solved mode completes the same Teacher Edition items with source-backed reasoning.',
+        title: '2. Represent the relationship',
+        body: `Use the lesson's equal-group, array, tape, or story structure to represent the same relationship in words, a model, and an equation. ${seed.concept}`,
         teacherSource: teacherEditionSourceNote(seed),
         checkpoints: [
-          'Use the Teacher Edition Problem Set item as the prompt.',
-          'Complete the same blanks or diagram in the solved view.',
-          'Do not replace the Teacher Edition item with a parallel invented problem.'
+          'Preserve the given number of groups and size of each group.',
+          'Place the unknown where the story or diagram places it.',
+          'Use repeated addition, multiplication, or division to describe the same whole.'
         ]
       },
       {
-        title: '3. Teacher Edition validation focus',
+        title: '3. Explain and check',
         body: seed.contrast,
-        teacherSource: 'Teacher Edition Student Debrief guidance: review Problem Set solutions, compare models, and explain the lesson target.',
+        teacherSource: teacherEditionBasis,
         checkpoints: [
           'Check the operation against the story.',
           'Check that equal groups are actually equal.',

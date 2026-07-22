@@ -13,7 +13,7 @@
           <ng-container *ngFor="let child of visibleSections(card.sections)">
             <ng-container *ngIf="arraySection(child) as array">
               <strong *ngIf="array.label">{{ array.label }}</strong>
-              <div class="visual-array" [ngClass]="'is-' + array.item" [style.gridTemplateColumns]="arrayColumns(array)">
+              <div class="visual-array" [ngClass]="'is-' + array.item" [class.is-dense]="array.columns > 16" [style.gridTemplateColumns]="arrayColumns(array)">
                 <span
                   *ngFor="let cell of range(array.rows * array.columns); let cellIndex = index"
                   [class.is-after-split]="arrayCellIsAfterSplit(array, cellIndex)"
@@ -98,7 +98,7 @@
                 <b>{{ fractionStrip.wholeLabel }}</b>
                 <div [style.gridTemplateColumns]="fractionStripColumns(fractionStrip)">
                   <span
-                    *ngFor="let part of range(fractionStrip.denominator); let partIndex = index"
+                    *ngFor="let part of range(fractionStripCellCount(fractionStrip)); let partIndex = index"
                     [class.is-shaded]="fractionStripIsShaded(fractionStrip, partIndex)">
                     {{ fractionStripCellLabel(fractionStrip, partIndex) }}
                   </span>
@@ -329,7 +329,7 @@
         <b>{{ fractionStrip.wholeLabel }}</b>
         <div [style.gridTemplateColumns]="fractionStripColumns(fractionStrip)">
           <span
-            *ngFor="let part of range(fractionStrip.denominator); let partIndex = index"
+            *ngFor="let part of range(fractionStripCellCount(fractionStrip)); let partIndex = index"
             [class.is-shaded]="fractionStripIsShaded(fractionStrip, partIndex)">
             {{ fractionStripCellLabel(fractionStrip, partIndex) }}
           </span>
