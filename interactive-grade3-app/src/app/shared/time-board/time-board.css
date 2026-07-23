@@ -581,3 +581,16 @@ analog-clock::part(seconds) {
   color: #202124;
   font-size: 13px;
 }
+
+/* Fluid lesson acceptance: elapsed-time annotations are instructional labels,
+   not worksheet fine print. The value inherits from the containing visual
+   workspace so it responds to the actual lesson canvas. */
+:host-context(.problem-centered-workspace) :is(
+  .jump em,
+  .point small,
+  .time-card span,
+  .time-board small
+) {
+  font-size: var(--visual-label-size, clamp(0.9rem, 0.82rem + 0.2cqi, 1.08rem)) !important;
+  line-height: 1.3;
+}

@@ -5389,6 +5389,1064 @@
   border-bottom: 3px dashed var(--module-accent-strong);
 }
 
+/* Module 3 Lessons 1-5: classroom-scale Concept teaching models.
+   These five source-specific models need the board, not the supporting copy, to
+   dominate the available width. The model rules below intentionally differ by
+   lesson because an array, a distributive chain, unknown tapes, and count-by
+   bridges do not have the same useful shape. */
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+  .problem-centered-lesson-animation {
+  grid-template-columns: minmax(340px, 0.58fr) minmax(760px, 2.1fr);
+  grid-template-areas:
+    "copy stage"
+    "notes notes";
+  gap: 18px;
+  padding: 20px;
+}
+
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+  .problem-centered-lesson-animation .lesson-animation-copy {
+  grid-area: copy;
+  align-self: center;
+}
+
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+  .problem-centered-lesson-animation .lesson-animation-copy h3 {
+  margin-top: 9px;
+  font-size: clamp(23px, 1.45vw, 29px);
+  line-height: 1.15;
+}
+
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+  .problem-centered-lesson-animation .lesson-animation-copy p {
+  font-size: clamp(15px, 0.95vw, 18px);
+  line-height: 1.45;
+}
+
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+  .problem-centered-lesson-animation .lesson-animation-equation {
+  margin-top: 14px;
+  padding: 11px 14px;
+  font-size: clamp(17px, 1.05vw, 21px);
+}
+
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+  .problem-centered-lesson-animation .lesson-animation-stage {
+  grid-area: stage;
+  min-height: 448px;
+  padding: 24px;
+}
+
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l4, .lesson-m3-l5)
+  .problem-centered-lesson-animation .lesson-animation-stage > .lesson-animation-array-wrap {
+  width: 100%;
+}
+
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+  .problem-centered-lesson-animation .lesson-animation-notes {
+  grid-area: notes;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 2.28fr);
+  column-gap: 18px;
+  align-items: start;
+  gap: 10px;
+  padding: 14px;
+}
+
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+  .problem-centered-lesson-animation .lesson-animation-notes strong {
+  grid-column: 1;
+  font-size: 15px;
+}
+
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+  .problem-centered-lesson-animation .lesson-animation-notes .lesson-animation-steps {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+  .problem-centered-lesson-animation .lesson-animation-notes > ul {
+  grid-column: 1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+  .problem-centered-lesson-animation .lesson-animation-steps b {
+  font-size: 14px;
+}
+
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+  .problem-centered-lesson-animation .lesson-animation-steps span,
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+  .problem-centered-lesson-animation .lesson-animation-steps em,
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+  .problem-centered-lesson-animation .lesson-animation-notes ul {
+  font-size: 13px;
+}
+
+/* Lesson 1: show both orientations as two large, equally important arrays. */
+.lesson-m3-l1 .problem-centered-lesson-animation .lesson-animation-commutative-turn {
+  grid-template-columns: minmax(280px, 1fr) auto minmax(280px, 1fr);
+  gap: 24px;
+  width: min(100%, 1080px);
+}
+
+.lesson-m3-l1 .problem-centered-lesson-animation .lesson-animation-commutative-turn article {
+  gap: 14px;
+  min-height: 300px;
+  padding: 20px;
+  border-width: 2px;
+}
+
+.lesson-m3-l1 .problem-centered-lesson-animation .lesson-animation-commutative-turn article > strong,
+.lesson-m3-l1 .problem-centered-lesson-animation .lesson-animation-commutative-turn article > b {
+  font-size: 20px;
+}
+
+.lesson-m3-l1 .problem-centered-lesson-animation .lesson-animation-commutative-turn > i {
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.lesson-m3-l1 .problem-centered-lesson-animation .lesson-animation-commutative-turn > small {
+  padding: 11px 14px;
+  font-size: 15px;
+}
+
+.lesson-m3-l1 .problem-centered-lesson-animation .lesson-animation-commutative-turn article:first-of-type .lesson-animation-array {
+  grid-template-columns: repeat(6, 28px) !important;
+}
+
+.lesson-m3-l1 .problem-centered-lesson-animation .lesson-animation-commutative-turn article:nth-of-type(2) .lesson-animation-array {
+  grid-template-columns: repeat(3, 28px) !important;
+}
+
+.lesson-m3-l1 .problem-centered-lesson-animation .lesson-animation-array span {
+  width: 24px;
+  height: 24px;
+}
+
+/* Lesson 2: the distributive build reads as a large horizontal fact story. */
+.lesson-m3-l2 .problem-centered-lesson-animation .lesson-animation-distributive-build {
+  gap: 28px;
+  width: min(100%, 1080px);
+}
+
+.lesson-m3-l2 .problem-centered-lesson-animation .lesson-animation-unit-stack {
+  gap: 18px;
+}
+
+.lesson-m3-l2 .problem-centered-lesson-animation .lesson-animation-unit-stack span {
+  width: 72px;
+  height: 72px;
+  border-width: 3px;
+  font-size: 24px;
+}
+
+.lesson-m3-l2 .problem-centered-lesson-animation .lesson-animation-fact-chain {
+  gap: 12px;
+}
+
+.lesson-m3-l2 .problem-centered-lesson-animation .lesson-animation-fact-chain span,
+.lesson-m3-l2 .problem-centered-lesson-animation .lesson-animation-fact-chain strong {
+  padding: 14px 18px;
+  font-size: 20px;
+}
+
+.lesson-m3-l2 .problem-centered-lesson-animation .lesson-animation-fact-chain i {
+  font-size: 24px;
+}
+
+/* Lesson 3: preserve all three Teacher Edition unknown positions as readable cards. */
+.lesson-m3-l3 .problem-centered-lesson-animation .lesson-animation-tape:has(.lesson-animation-unknown-cases) {
+  width: min(100%, 1120px);
+}
+
+.lesson-m3-l3 .problem-centered-lesson-animation .lesson-animation-unknown-cases {
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.lesson-m3-l3 .problem-centered-lesson-animation .lesson-animation-unknown-cases article {
+  gap: 11px;
+  min-height: 318px;
+  padding: 20px;
+  border-width: 2px;
+  border-radius: 14px;
+}
+
+.lesson-m3-l3 .problem-centered-lesson-animation .lesson-animation-unknown-cases article > strong {
+  font-size: 20px;
+}
+
+.lesson-m3-l3 .problem-centered-lesson-animation .lesson-animation-unknown-cases article > div {
+  gap: 10px;
+  padding: 12px 14px;
+  font-size: 16px;
+}
+
+.lesson-m3-l3 .problem-centered-lesson-animation .lesson-animation-unknown-cases article > div i {
+  font-size: 11px;
+}
+
+.lesson-m3-l3 .problem-centered-lesson-animation .lesson-animation-unknown-cases article > b,
+.lesson-m3-l3 .problem-centered-lesson-animation .lesson-animation-unknown-cases article > em {
+  padding: 11px 13px;
+  font-size: 18px;
+}
+
+/* Lessons 4-5: use the board width for the sequence and its three make-ten bridges. */
+:is(.lesson-m3-l4, .lesson-m3-l5) .problem-centered-lesson-animation .lesson-animation-count-by {
+  width: min(100%, 1160px);
+  gap: 30px;
+}
+
+:is(.lesson-m3-l4, .lesson-m3-l5) .problem-centered-lesson-animation .lesson-animation-count-sequence {
+  gap: 10px;
+}
+
+:is(.lesson-m3-l4, .lesson-m3-l5) .problem-centered-lesson-animation .lesson-animation-count-sequence span {
+  min-height: 70px;
+  border-width: 3px;
+  font-size: 22px;
+}
+
+:is(.lesson-m3-l4, .lesson-m3-l5) .problem-centered-lesson-animation .lesson-animation-make-ten-examples {
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+:is(.lesson-m3-l4, .lesson-m3-l5) .problem-centered-lesson-animation .lesson-animation-make-ten-examples article {
+  gap: 14px;
+  min-height: 190px;
+  padding: 20px;
+  border-width: 2px;
+  font-size: 18px;
+}
+
+:is(.lesson-m3-l4, .lesson-m3-l5) .problem-centered-lesson-animation .lesson-animation-make-ten-examples article > strong {
+  font-size: 21px;
+}
+
+:is(.lesson-m3-l4, .lesson-m3-l5) .problem-centered-lesson-animation .lesson-animation-make-ten-examples span {
+  padding: 10px 13px;
+  font-size: 18px;
+}
+
+@media (max-width: 1260px) {
+  :is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+    .problem-centered-lesson-animation {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "copy"
+      "stage"
+      "notes";
+  }
+
+  :is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+    .problem-centered-lesson-animation .lesson-animation-copy {
+    align-self: auto;
+  }
+}
+
+@media (max-width: 820px) {
+  :is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+    .problem-centered-lesson-animation {
+    min-height: 0;
+    padding: 12px;
+  }
+
+  :is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+    .problem-centered-lesson-animation .lesson-animation-stage {
+    min-height: 340px;
+    padding: 12px;
+  }
+
+  :is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+    .problem-centered-lesson-animation .lesson-animation-notes {
+    grid-template-columns: 1fr;
+  }
+
+  :is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+    .problem-centered-lesson-animation .lesson-animation-notes .lesson-animation-steps,
+  :is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5)
+    .problem-centered-lesson-animation .lesson-animation-notes > ul {
+    grid-column: 1;
+    grid-row: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .lesson-m3-l1 .problem-centered-lesson-animation .lesson-animation-commutative-turn,
+  .lesson-m3-l3 .problem-centered-lesson-animation .lesson-animation-unknown-cases,
+  :is(.lesson-m3-l4, .lesson-m3-l5) .problem-centered-lesson-animation .lesson-animation-make-ten-examples {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson-m3-l1 .problem-centered-lesson-animation .lesson-animation-commutative-turn > i {
+    justify-self: center;
+  }
+
+  .lesson-m3-l2 .problem-centered-lesson-animation .lesson-animation-unit-stack {
+    flex-wrap: wrap;
+  }
+
+  :is(.lesson-m3-l4, .lesson-m3-l5) .problem-centered-lesson-animation .lesson-animation-count-sequence {
+    grid-template-columns: repeat(5, minmax(48px, 1fr));
+  }
+}
+
+/* Curriculum-wide classroom board.
+   The shell is shared, while each mathematical model family below controls its
+   own useful proportions. This keeps the learning model dominant without
+   forcing arrays, tapes, timelines, measurement tools, and graphs into one
+   generic visual treatment. */
+.problem-centered-lesson-animation {
+  grid-template-columns: minmax(340px, 0.58fr) minmax(760px, 2.1fr);
+  grid-template-areas:
+    "copy stage"
+    "notes notes";
+  gap: 18px;
+  padding: 20px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-copy {
+  grid-area: copy;
+  align-self: center;
+}
+
+.problem-centered-lesson-animation .lesson-animation-copy h3 {
+  margin-top: 9px;
+  font-size: clamp(23px, 1.45vw, 29px);
+  line-height: 1.15;
+}
+
+.problem-centered-lesson-animation .lesson-animation-copy p {
+  font-size: clamp(15px, 0.95vw, 18px);
+  line-height: 1.45;
+}
+
+.problem-centered-lesson-animation .lesson-animation-equation {
+  margin-top: 14px;
+  padding: 11px 14px;
+  font-size: clamp(17px, 1.05vw, 21px);
+}
+
+.problem-centered-lesson-animation .lesson-animation-stage {
+  grid-area: stage;
+  min-height: 448px;
+  padding: 24px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-stage > .lesson-animation-array-wrap {
+  width: 100%;
+}
+
+.problem-centered-lesson-animation .lesson-animation-notes {
+  grid-area: notes;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 2.28fr);
+  column-gap: 18px;
+  align-items: start;
+  gap: 10px;
+  padding: 14px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-notes > strong {
+  grid-column: 1;
+  font-size: 15px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-notes .lesson-animation-steps {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.problem-centered-lesson-animation .lesson-animation-notes > ul {
+  grid-column: 1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  font-size: 13px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-steps b {
+  font-size: 14px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-steps span,
+.problem-centered-lesson-animation .lesson-animation-steps em {
+  font-size: 13px;
+}
+
+/* Equal groups: large manipulatives that can still wrap when the source has many groups. */
+.problem-centered-lesson-animation[data-kind="equal-groups"] .lesson-animation-groups {
+  gap: 18px;
+  width: min(100%, 1160px);
+}
+
+.problem-centered-lesson-animation[data-kind="equal-groups"] .lesson-animation-group {
+  grid-template-columns: repeat(2, 18px);
+  gap: 8px;
+  width: 104px;
+  min-height: 104px;
+  padding: 13px;
+  border-width: 2px;
+  font-size: 15px;
+}
+
+.problem-centered-lesson-animation[data-kind="equal-groups"] .lesson-animation-group span {
+  width: 15px;
+}
+
+.problem-centered-lesson-animation[data-kind="equal-groups"] .lesson-animation-group small {
+  font-size: 14px;
+}
+
+/* Array family: source-specific array, commutative, distributive, and associative builds. */
+.problem-centered-lesson-animation[data-kind="array"] .lesson-animation-array-wrap {
+  width: 100%;
+}
+
+.problem-centered-lesson-animation[data-kind="array"] .lesson-animation-array-wrap > .lesson-animation-array {
+  gap: 8px;
+  padding: 20px;
+  border-width: 2px;
+}
+
+.problem-centered-lesson-animation[data-kind="array"] .lesson-animation-array-wrap > .lesson-animation-array span {
+  width: 16px;
+}
+
+/* Base arrays keep their source row/column proportions, with a dot scale chosen
+   for the actual lesson dimensions instead of a single generic dot size. */
+:is(
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="2"],
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="8"],
+  .problem-centered-lesson-animation[data-module="m3"][data-lesson="16"],
+  .problem-centered-lesson-animation[data-module="m3"][data-lesson="19"]
+) .lesson-animation-array-wrap > .lesson-animation-array span {
+  width: 50px;
+}
+
+.problem-centered-lesson-animation[data-module="m1"][data-lesson="2"] .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(4, 56px) !important;
+}
+
+.problem-centered-lesson-animation[data-module="m1"][data-lesson="8"] .lesson-animation-array-wrap > .lesson-animation-array,
+.problem-centered-lesson-animation[data-module="m3"][data-lesson="19"] .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(3, 56px) !important;
+}
+
+.problem-centered-lesson-animation[data-module="m3"][data-lesson="16"] .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: 56px !important;
+}
+
+:is(
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="6"],
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="7"]
+) .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(8, 42px) !important;
+}
+
+:is(
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="6"],
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="7"]
+) .lesson-animation-array-wrap > .lesson-animation-array span {
+  width: 36px;
+}
+
+:is(
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="9"],
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="10"]
+) .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(3, 44px) !important;
+}
+
+:is(
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="9"],
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="10"]
+) .lesson-animation-array-wrap > .lesson-animation-array span {
+  width: 38px;
+}
+
+.problem-centered-lesson-animation[data-module="m1"][data-lesson="16"] .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(4, 38px) !important;
+}
+
+.problem-centered-lesson-animation[data-module="m1"][data-lesson="16"] .lesson-animation-array-wrap > .lesson-animation-array span {
+  width: 32px;
+}
+
+.problem-centered-lesson-animation[data-module="m1"][data-lesson="18"] .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(5, 38px) !important;
+}
+
+.problem-centered-lesson-animation[data-module="m1"][data-lesson="18"] .lesson-animation-array-wrap > .lesson-animation-array span {
+  width: 32px;
+}
+
+.problem-centered-lesson-animation[data-module="m1"][data-lesson="19"] .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(2, 34px) !important;
+}
+
+.problem-centered-lesson-animation[data-module="m1"][data-lesson="19"] .lesson-animation-array-wrap > .lesson-animation-array span {
+  width: 28px;
+}
+
+:is(
+  .problem-centered-lesson-animation[data-module="m3"][data-lesson="12"],
+  .problem-centered-lesson-animation[data-module="m3"][data-lesson="14"],
+  .problem-centered-lesson-animation[data-module="m3"][data-lesson="17"]
+) .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(10, 34px) !important;
+}
+
+:is(
+  .problem-centered-lesson-animation[data-module="m3"][data-lesson="12"],
+  .problem-centered-lesson-animation[data-module="m3"][data-lesson="14"],
+  .problem-centered-lesson-animation[data-module="m3"][data-lesson="17"]
+) .lesson-animation-array-wrap > .lesson-animation-array span {
+  width: 28px;
+}
+
+.problem-centered-lesson-animation[data-module="m3"][data-lesson="20"] .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(5, 48px) !important;
+}
+
+.problem-centered-lesson-animation[data-module="m3"][data-lesson="20"] .lesson-animation-array-wrap > .lesson-animation-array span {
+  width: 42px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-commutative-turn {
+  grid-template-columns: minmax(280px, 1fr) auto minmax(280px, 1fr);
+  gap: 24px;
+  width: min(100%, 1080px);
+}
+
+.problem-centered-lesson-animation .lesson-animation-commutative-turn article {
+  gap: 14px;
+  min-height: 300px;
+  padding: 20px;
+  border-width: 2px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-commutative-turn article > strong,
+.problem-centered-lesson-animation .lesson-animation-commutative-turn article > b {
+  font-size: 20px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-commutative-turn > i {
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-commutative-turn > small {
+  padding: 11px 14px;
+  font-size: 15px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-distributive-build {
+  gap: 28px;
+  width: min(100%, 1080px);
+}
+
+.problem-centered-lesson-animation .lesson-animation-unit-stack {
+  gap: 18px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-unit-stack span {
+  width: 72px;
+  height: 72px;
+  border-width: 3px;
+  font-size: 24px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-fact-chain {
+  gap: 12px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-fact-chain span,
+.problem-centered-lesson-animation .lesson-animation-fact-chain strong {
+  padding: 14px 18px;
+  font-size: 20px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-fact-chain i {
+  font-size: 24px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-parentheses-compare,
+.problem-centered-lesson-animation .lesson-animation-associative-build {
+  width: min(100%, 1120px);
+  gap: 22px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-parentheses-compare > strong,
+.problem-centered-lesson-animation .lesson-animation-associative-build > b,
+.problem-centered-lesson-animation .lesson-animation-associative-build > em,
+.problem-centered-lesson-animation .lesson-animation-associative-build > small {
+  padding: 13px 18px;
+  font-size: 19px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-parentheses-compare article {
+  gap: 12px;
+  min-height: 220px;
+  padding: 18px;
+  font-size: 17px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-parentheses-compare article b {
+  font-size: 20px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-associative-chain {
+  gap: 12px;
+  font-size: 18px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-associative-groups {
+  gap: 10px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-associative-groups span {
+  min-height: 64px;
+  font-size: 17px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-count-by {
+  width: min(100%, 1160px);
+  gap: 30px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-count-sequence {
+  gap: 10px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-count-sequence span {
+  min-height: 70px;
+  border-width: 3px;
+  font-size: 22px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-make-ten-examples {
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-make-ten-examples article {
+  gap: 14px;
+  min-height: 190px;
+  padding: 20px;
+  border-width: 2px;
+  font-size: 18px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-make-ten-examples article > strong {
+  font-size: 21px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-make-ten-examples span {
+  padding: 10px 13px;
+  font-size: 18px;
+}
+
+/* Tape family: the source whole/part relationship receives the full teaching board. */
+.problem-centered-lesson-animation[data-kind="tape-diagram"] .lesson-animation-tape {
+  width: min(100%, 1080px);
+}
+
+.problem-centered-lesson-animation[data-kind="tape-diagram"] .lesson-animation-tape > strong {
+  padding: 16px;
+  border-width: 3px;
+  font-size: 21px;
+}
+
+.problem-centered-lesson-animation[data-kind="tape-diagram"] .lesson-animation-tape-parts span {
+  min-height: 82px;
+  padding: 22px 10px;
+  font-size: 18px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-tape:has(.lesson-animation-unknown-cases) {
+  width: min(100%, 1120px);
+}
+
+.problem-centered-lesson-animation .lesson-animation-unknown-cases {
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-unknown-cases article {
+  gap: 11px;
+  min-height: 318px;
+  padding: 20px;
+  border-width: 2px;
+  border-radius: 14px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-unknown-cases article > strong {
+  font-size: 20px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-unknown-cases article > div {
+  gap: 10px;
+  padding: 12px 14px;
+  font-size: 16px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-unknown-cases article > div i {
+  font-size: 11px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-unknown-cases article > b,
+.problem-centered-lesson-animation .lesson-animation-unknown-cases article > em {
+  padding: 11px 13px;
+  font-size: 18px;
+}
+
+/* Number-line family: timelines, rounding, capacity, and estimation use different boards. */
+.problem-centered-lesson-animation .lesson-animation-line-track,
+.problem-centered-lesson-animation .lesson-animation-line-labels {
+  width: min(100%, 1100px);
+}
+
+.problem-centered-lesson-animation .lesson-animation-line-track i {
+  min-width: 68px;
+  padding: 8px 11px;
+  font-size: 16px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-line-labels {
+  font-size: 17px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-time-line {
+  width: min(100%, 1120px);
+  gap: 20px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-time-endpoints {
+  font-size: 18px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-time-segments {
+  min-height: 132px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-time-segments article {
+  gap: 8px;
+  padding: 14px 6px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-time-segments span,
+.problem-centered-lesson-animation .lesson-animation-time-cases span,
+.problem-centered-lesson-animation .lesson-animation-time-cases em {
+  font-size: 14px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-time-segments b,
+.problem-centered-lesson-animation .lesson-animation-time-cases strong,
+.problem-centered-lesson-animation .lesson-animation-time-cases b {
+  font-size: 16px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-time-cases {
+  gap: 15px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-time-cases article {
+  gap: 9px;
+  min-height: 118px;
+  padding: 15px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-container-scale {
+  grid-template-columns: minmax(240px, 0.75fr) minmax(320px, 1fr);
+  width: min(100%, 900px);
+}
+
+.problem-centered-lesson-animation .lesson-animation-container-scale header strong {
+  font-size: 21px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-container-scale header span,
+.problem-centered-lesson-animation .lesson-animation-bottle b {
+  font-size: 14px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-bottle {
+  width: min(330px, 100%);
+  min-height: 350px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-rounding-cards {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.problem-centered-lesson-animation .lesson-animation-rounding-cards article {
+  gap: 14px;
+  padding: 18px;
+  border-width: 2px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-rounding-cards article > strong {
+  font-size: 18px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-vertical-line {
+  width: 180px;
+  height: 220px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-vertical-line > span,
+.problem-centered-lesson-animation .lesson-animation-rounding-result {
+  font-size: 17px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-vertical-line .is-halfway small,
+.problem-centered-lesson-animation .lesson-animation-rounding-result small {
+  font-size: 13px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-rounding-result strong {
+  font-size: 21px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-estimate-comparison {
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 14px;
+  width: min(100%, 1120px);
+}
+
+.problem-centered-lesson-animation .lesson-animation-estimate-comparison header {
+  grid-column: 1 / -1;
+  padding: 13px 16px;
+  font-size: 18px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-estimate-comparison article {
+  min-height: 126px;
+  padding: 14px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-estimate-source span,
+.problem-centered-lesson-animation .lesson-animation-estimate-comparison article > strong,
+.problem-centered-lesson-animation .lesson-animation-estimate-comparison article > span,
+.problem-centered-lesson-animation .lesson-animation-estimate-comparison article > b {
+  font-size: 15px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-estimate-source small,
+.problem-centered-lesson-animation .lesson-animation-estimate-comparison article > small {
+  font-size: 12px;
+}
+
+/* Measurement family: enlarge the actual scale, place-value, and comparison marks. */
+.problem-centered-lesson-animation .lesson-animation-spring-scales {
+  gap: 20px;
+  width: min(100%, 1120px);
+}
+
+.problem-centered-lesson-animation .lesson-animation-spring-scales article {
+  gap: 16px;
+  min-height: 230px;
+  padding: 18px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-spring-scales header strong {
+  font-size: 18px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-spring-scales header span,
+.problem-centered-lesson-animation .lesson-animation-spring-scales article > em {
+  font-size: 14px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-spring-track {
+  min-height: 112px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-spring-track span {
+  height: 48px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-spring-track span.is-reading {
+  height: 86px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-spring-track b {
+  font-size: 13px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-measurement-cycle {
+  gap: 13px;
+  width: min(100%, 1120px);
+}
+
+.problem-centered-lesson-animation .lesson-animation-cycle-steps {
+  gap: 10px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-cycle-steps span {
+  min-height: 70px;
+  padding: 10px 7px;
+  font-size: 14px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-cycle-steps b {
+  width: 25px;
+  height: 25px;
+  font-size: 13px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-measurement-cycle article {
+  gap: 10px;
+  padding: 12px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-measurement-cycle article > strong {
+  font-size: 15px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-measurement-cycle article > span,
+.problem-centered-lesson-animation .lesson-animation-measurement-cycle article > b {
+  font-size: 14px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-measurement-cycle article > span small,
+.problem-centered-lesson-animation .lesson-animation-measurement-cycle article > b small,
+.problem-centered-lesson-animation .lesson-animation-measurement-cycle article > em {
+  font-size: 11px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-place-value {
+  gap: 12px;
+  width: min(100%, 900px);
+}
+
+.problem-centered-lesson-animation .lesson-animation-pv-head b,
+.problem-centered-lesson-animation .lesson-animation-pv-row > strong,
+.problem-centered-lesson-animation .lesson-animation-pv-result > strong {
+  font-size: 14px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-pv-row > span {
+  min-height: 72px;
+  padding: 10px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-pv-row > span i {
+  width: 14px;
+  height: 14px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-pv-row > span small,
+.problem-centered-lesson-animation .lesson-animation-pv-moves span {
+  font-size: 12px;
+}
+
+/* Standalone area, fraction, graph, clock, and geometry animations. */
+.problem-centered-lesson-animation .lesson-animation-area-grid {
+  width: min(100%, 720px);
+  padding: 20px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-fraction-strip {
+  width: min(100%, 1000px);
+}
+
+.problem-centered-lesson-animation .lesson-animation-fraction-strip span {
+  min-height: 120px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-graph-bars {
+  gap: 22px;
+  width: min(100%, 900px);
+  min-height: 300px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-graph-bars i {
+  width: 58px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-graph-bars small {
+  font-size: 15px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-polygon {
+  width: min(520px, 100%);
+}
+
+.problem-centered-lesson-animation .lesson-animation-polygon span {
+  font-size: 16px;
+}
+
+.problem-centered-lesson-animation .lesson-animation-clock-face {
+  width: min(360px, 100%);
+}
+
+.problem-centered-lesson-animation .lesson-animation-clock-labels span {
+  font-size: 15px;
+}
+
+@media (max-width: 1260px) {
+  .problem-centered-lesson-animation {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "copy"
+      "stage"
+      "notes";
+  }
+
+  .problem-centered-lesson-animation .lesson-animation-copy {
+    align-self: auto;
+  }
+}
+
+@media (max-width: 820px) {
+  .problem-centered-lesson-animation {
+    min-height: 0;
+    padding: 12px;
+  }
+
+  .problem-centered-lesson-animation .lesson-animation-stage {
+    min-height: 340px;
+    padding: 12px;
+  }
+
+  .problem-centered-lesson-animation .lesson-animation-notes {
+    grid-template-columns: 1fr;
+  }
+
+  .problem-centered-lesson-animation .lesson-animation-notes .lesson-animation-steps,
+  .problem-centered-lesson-animation .lesson-animation-notes > ul {
+    grid-column: 1;
+    grid-row: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .problem-centered-lesson-animation .lesson-animation-commutative-turn,
+  .problem-centered-lesson-animation .lesson-animation-unknown-cases,
+  .problem-centered-lesson-animation .lesson-animation-parentheses-compare > div,
+  .problem-centered-lesson-animation .lesson-animation-make-ten-examples,
+  .problem-centered-lesson-animation .lesson-animation-estimate-comparison,
+  .problem-centered-lesson-animation .lesson-animation-spring-scales {
+    grid-template-columns: 1fr;
+  }
+
+  .problem-centered-lesson-animation .lesson-animation-unit-stack {
+    flex-wrap: wrap;
+  }
+
+  .problem-centered-lesson-animation .lesson-animation-count-sequence {
+    grid-template-columns: repeat(5, minmax(48px, 1fr));
+  }
+}
+
 @container (min-width: 820px) {
   .activity-grid {
     grid-template-columns: minmax(0, 1.08fr) minmax(260px, 0.92fr);
@@ -5462,5 +6520,312 @@
 
   .bridge-row {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Fluid lesson-canvas acceptance layer.
+   Container query units make the teaching model respond to the space the lesson
+   actually receives, rather than to one assumed monitor width. Model families
+   keep their source proportions while prose, equations, labels, and geometry
+   scale at different rates for readability. */
+.problem-centered-workspace {
+  container-name: lesson-canvas;
+  container-type: inline-size;
+  --learning-label-size: clamp(0.9rem, 0.82rem + 0.22cqi, 1.08rem);
+  --learning-body-size: clamp(1rem, 0.88rem + 0.34cqi, 1.3rem);
+  --learning-heading-size: clamp(1.5rem, 1.12rem + 0.82cqi, 2.2rem);
+  --learning-math-size: clamp(1.22rem, 0.96rem + 0.64cqi, 1.85rem);
+  --learning-space: clamp(0.75rem, 0.48rem + 0.62cqi, 1.5rem);
+}
+
+.problem-centered-lesson-animation {
+  container-name: concept-board;
+  container-type: inline-size;
+  grid-template-columns: minmax(0, 0.44fr) minmax(0, 1fr);
+  gap: var(--learning-space);
+  width: 100%;
+  max-width: none;
+  padding: var(--learning-space);
+}
+
+.problem-centered-lesson-animation .lesson-animation-copy h3 {
+  font-size: var(--learning-heading-size);
+}
+
+.problem-centered-lesson-animation .lesson-animation-copy p,
+.problem-centered-lesson-animation .lesson-animation-notes > strong {
+  font-size: var(--learning-body-size);
+}
+
+.problem-centered-lesson-animation .lesson-animation-equation {
+  padding: clamp(0.7rem, 0.5rem + 0.42cqi, 1.15rem);
+  font-size: var(--learning-math-size);
+}
+
+.problem-centered-lesson-animation .lesson-animation-stage {
+  min-height: clamp(23rem, 42cqi, 36rem);
+  padding: var(--learning-space);
+}
+
+.problem-centered-lesson-animation .lesson-animation-notes {
+  grid-template-columns: minmax(0, 0.5fr) minmax(0, 1.5fr);
+  gap: var(--learning-space);
+  padding: var(--learning-space);
+}
+
+.problem-centered-lesson-animation .lesson-animation-notes > ul,
+.problem-centered-lesson-animation .lesson-animation-steps b,
+.problem-centered-lesson-animation .lesson-animation-steps span,
+.problem-centered-lesson-animation .lesson-animation-steps em {
+  font-size: var(--learning-label-size);
+  line-height: 1.42;
+}
+
+/* Every broad teaching board consumes its available stage. Intrinsically shaped
+   models such as clocks, polygons, bottles, and number-line marks are sized
+   separately below so they do not distort. */
+.problem-centered-lesson-animation :is(
+  .lesson-animation-groups,
+  .lesson-animation-commutative-turn,
+  .lesson-animation-distributive-build,
+  .lesson-animation-parentheses-compare,
+  .lesson-animation-associative-build,
+  .lesson-animation-count-by,
+  .lesson-animation-tape,
+  .lesson-animation-line-track,
+  .lesson-animation-line-labels,
+  .lesson-animation-time-line,
+  .lesson-animation-container-scale,
+  .lesson-animation-rounding-cards,
+  .lesson-animation-estimate-comparison,
+  .lesson-animation-spring-scales,
+  .lesson-animation-measurement-cycle,
+  .lesson-animation-place-value,
+  .lesson-animation-area-grid,
+  .lesson-animation-fraction-strip,
+  .lesson-animation-graph-bars
+) {
+  width: 100%;
+  max-width: none;
+}
+
+.problem-centered-lesson-animation :is(
+  .lesson-animation-group small,
+  .lesson-animation-commutative-turn > i,
+  .lesson-animation-commutative-turn > small,
+  .lesson-animation-unknown-cases article > div i,
+  .lesson-animation-time-segments span,
+  .lesson-animation-time-cases span,
+  .lesson-animation-time-cases em,
+  .lesson-animation-container-scale header span,
+  .lesson-animation-bottle b,
+  .lesson-animation-vertical-line .is-halfway small,
+  .lesson-animation-rounding-result small,
+  .lesson-animation-estimate-source small,
+  .lesson-animation-estimate-comparison article > small,
+  .lesson-animation-spring-scales header span,
+  .lesson-animation-spring-scales article > em,
+  .lesson-animation-spring-track b,
+  .lesson-animation-cycle-steps b,
+  .lesson-animation-measurement-cycle article > span small,
+  .lesson-animation-measurement-cycle article > b small,
+  .lesson-animation-measurement-cycle article > em,
+  .lesson-animation-pv-row > span small,
+  .lesson-animation-pv-moves span,
+  .lesson-animation-graph-bars small,
+  .lesson-animation-clock-labels span
+) {
+  font-size: var(--learning-label-size);
+  line-height: 1.35;
+}
+
+.problem-centered-lesson-animation :is(
+  .lesson-animation-group,
+  .lesson-animation-parentheses-compare article,
+  .lesson-animation-associative-chain,
+  .lesson-animation-associative-groups span,
+  .lesson-animation-make-ten-examples article,
+  .lesson-animation-make-ten-examples span,
+  .lesson-animation-unknown-cases article > div,
+  .lesson-animation-line-labels,
+  .lesson-animation-time-endpoints,
+  .lesson-animation-time-segments b,
+  .lesson-animation-time-cases strong,
+  .lesson-animation-time-cases b,
+  .lesson-animation-rounding-cards article > strong,
+  .lesson-animation-estimate-comparison header,
+  .lesson-animation-estimate-source span,
+  .lesson-animation-estimate-comparison article > strong,
+  .lesson-animation-estimate-comparison article > span,
+  .lesson-animation-estimate-comparison article > b,
+  .lesson-animation-spring-scales header strong,
+  .lesson-animation-cycle-steps span,
+  .lesson-animation-measurement-cycle article > strong,
+  .lesson-animation-measurement-cycle article > span,
+  .lesson-animation-measurement-cycle article > b,
+  .lesson-animation-pv-head b,
+  .lesson-animation-pv-row > strong,
+  .lesson-animation-pv-result > strong
+) {
+  font-size: var(--learning-body-size);
+}
+
+.problem-centered-lesson-animation :is(
+  .lesson-animation-commutative-turn article > strong,
+  .lesson-animation-commutative-turn article > b,
+  .lesson-animation-fact-chain span,
+  .lesson-animation-fact-chain strong,
+  .lesson-animation-fact-chain i,
+  .lesson-animation-parentheses-compare > strong,
+  .lesson-animation-associative-build > b,
+  .lesson-animation-associative-build > em,
+  .lesson-animation-associative-build > small,
+  .lesson-animation-parentheses-compare article b,
+  .lesson-animation-count-sequence span,
+  .lesson-animation-make-ten-examples article > strong,
+  .lesson-animation-tape > strong,
+  .lesson-animation-tape-parts span,
+  .lesson-animation-unknown-cases article > strong,
+  .lesson-animation-unknown-cases article > b,
+  .lesson-animation-unknown-cases article > em,
+  .lesson-animation-line-track i,
+  .lesson-animation-container-scale header strong,
+  .lesson-animation-rounding-result strong
+) {
+  font-size: var(--learning-math-size);
+}
+
+.problem-centered-lesson-animation .lesson-animation-bottle {
+  width: clamp(15rem, 34cqi, 28rem);
+  min-height: clamp(19rem, 32cqi, 29rem);
+}
+
+.problem-centered-lesson-animation .lesson-animation-vertical-line {
+  width: clamp(9rem, 18cqi, 15rem);
+  height: clamp(13rem, 24cqi, 20rem);
+}
+
+.problem-centered-lesson-animation .lesson-animation-polygon,
+.problem-centered-lesson-animation .lesson-animation-clock-face {
+  width: clamp(15rem, 34cqi, 27rem);
+  max-width: 100%;
+  aspect-ratio: 1;
+}
+
+/* Arrays use lesson-specific row/column facts, but fluid cells. This preserves
+   the Teacher Edition model without fixing it to one desktop pixel size. */
+.problem-centered-lesson-animation[data-kind="array"] {
+  --concept-array-cell: clamp(1.85rem, 3.2cqi, 3.5rem);
+}
+
+.problem-centered-lesson-animation[data-kind="array"] .lesson-animation-array-wrap > .lesson-animation-array {
+  gap: clamp(0.3rem, 0.55cqi, 0.65rem);
+  padding: var(--learning-space);
+}
+
+.problem-centered-lesson-animation[data-kind="array"] .lesson-animation-array-wrap > .lesson-animation-array span {
+  width: calc(var(--concept-array-cell) - clamp(0.3rem, 0.55cqi, 0.65rem));
+}
+
+:is(
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="2"],
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="8"],
+  .problem-centered-lesson-animation[data-module="m3"][data-lesson="16"],
+  .problem-centered-lesson-animation[data-module="m3"][data-lesson="19"]
+) {
+  --concept-array-cell: clamp(2.6rem, 4.5cqi, 4.25rem);
+}
+
+.problem-centered-lesson-animation[data-module="m1"][data-lesson="2"] .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(4, var(--concept-array-cell)) !important;
+}
+
+.problem-centered-lesson-animation[data-module="m1"][data-lesson="8"] .lesson-animation-array-wrap > .lesson-animation-array,
+.problem-centered-lesson-animation[data-module="m3"][data-lesson="19"] .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(3, var(--concept-array-cell)) !important;
+}
+
+.problem-centered-lesson-animation[data-module="m3"][data-lesson="16"] .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: var(--concept-array-cell) !important;
+}
+
+:is(
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="6"],
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="7"]
+) {
+  --concept-array-cell: clamp(1.8rem, 2.8cqi, 3.1rem);
+}
+
+:is(
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="6"],
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="7"]
+) .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(8, var(--concept-array-cell)) !important;
+}
+
+:is(
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="9"],
+  .problem-centered-lesson-animation[data-module="m1"][data-lesson="10"]
+) .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(3, var(--concept-array-cell)) !important;
+}
+
+.problem-centered-lesson-animation[data-module="m1"][data-lesson="16"] .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(4, var(--concept-array-cell)) !important;
+}
+
+.problem-centered-lesson-animation[data-module="m1"][data-lesson="18"] .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(5, var(--concept-array-cell)) !important;
+}
+
+.problem-centered-lesson-animation[data-module="m1"][data-lesson="19"] .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(2, var(--concept-array-cell)) !important;
+}
+
+:is(
+  .problem-centered-lesson-animation[data-module="m3"][data-lesson="12"],
+  .problem-centered-lesson-animation[data-module="m3"][data-lesson="14"],
+  .problem-centered-lesson-animation[data-module="m3"][data-lesson="17"]
+) {
+  --concept-array-cell: clamp(1.45rem, 2.1cqi, 2.45rem);
+}
+
+:is(
+  .problem-centered-lesson-animation[data-module="m3"][data-lesson="12"],
+  .problem-centered-lesson-animation[data-module="m3"][data-lesson="14"],
+  .problem-centered-lesson-animation[data-module="m3"][data-lesson="17"]
+) .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(10, var(--concept-array-cell)) !important;
+}
+
+.problem-centered-lesson-animation[data-module="m3"][data-lesson="20"] .lesson-animation-array-wrap > .lesson-animation-array {
+  grid-template-columns: repeat(5, var(--concept-array-cell)) !important;
+}
+
+@container lesson-canvas (max-width: 72rem) {
+  .problem-centered-lesson-animation {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "copy"
+      "stage"
+      "notes";
+  }
+
+  .problem-centered-lesson-animation .lesson-animation-copy {
+    max-width: none;
+  }
+}
+
+@container concept-board (max-width: 48rem) {
+  .problem-centered-lesson-animation .lesson-animation-notes,
+  .problem-centered-lesson-animation .lesson-animation-notes .lesson-animation-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .problem-centered-lesson-animation .lesson-animation-notes > strong,
+  .problem-centered-lesson-animation .lesson-animation-notes .lesson-animation-steps,
+  .problem-centered-lesson-animation .lesson-animation-notes > ul {
+    grid-column: 1;
+    grid-row: auto;
   }
 }

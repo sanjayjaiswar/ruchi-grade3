@@ -689,6 +689,228 @@
   }
 }
 
+/* Curriculum-wide fluid model scale.
+   This component is shared by Blank and Solved. Sizing from its containing
+   problem card keeps marks and words readable whether the lesson is shown in a
+   wide classroom window or a narrower internal-app pane. */
+:host {
+  display: block;
+  width: 100%;
+  min-width: 0;
+}
+
+:host-context(.problem-centered-workspace) .problem-visual-workspace {
+  container-name: visual-workspace;
+  container-type: inline-size;
+  --visual-label-size: clamp(0.9rem, 0.82rem + 0.2cqi, 1.08rem);
+  --visual-body-size: clamp(1rem, 0.88rem + 0.3cqi, 1.26rem);
+  --visual-heading-size: clamp(1.18rem, 0.98rem + 0.46cqi, 1.55rem);
+  --visual-math-size: clamp(1.22rem, 0.96rem + 0.62cqi, 1.82rem);
+  --visual-space: clamp(0.75rem, 0.5rem + 0.5cqi, 1.35rem);
+  gap: var(--visual-space);
+  width: 100%;
+  max-width: none;
+  padding: var(--visual-space);
+}
+
+:host-context(.problem-centered-workspace) .problem-visual-workspace:has(.visual-stopwatch:not(.has-rows)),
+:host-context(.problem-centered-workspace) .estimate-difference-workbook,
+:host-context(.problem-centered-workspace) .visual-tape,
+:host-context(.problem-centered-workspace) .visual-number-bond,
+:host-context(.problem-centered-workspace) .visual-fraction-strip,
+:host-context(.problem-centered-workspace) .visual-data-table,
+:host-context(.problem-centered-workspace) .visual-equations,
+:host-context(.problem-centered-workspace) .visual-floor-plan,
+:host-context(.problem-centered-workspace) .visual-line-plot,
+:host-context(.problem-centered-workspace) .visual-data-chart,
+:host-context(.problem-centered-workspace) .visual-geometry-diagram,
+:host-context(.problem-centered-workspace) .visual-related-facts,
+:host-context(.problem-centered-workspace) .visual-solution-parts {
+  width: 100%;
+  max-width: none;
+}
+
+:host-context(.problem-centered-workspace) :is(
+  .visual-header strong,
+  .visual-section > strong,
+  .visual-sub-card > strong,
+  .visual-solution-parts article > b,
+  .visual-data-chart-row b,
+  .visual-floor-room b,
+  .visual-geometry-shape b
+) {
+  font-size: var(--visual-heading-size);
+  line-height: 1.3;
+}
+
+:host-context(.problem-centered-workspace) :is(
+  .visual-header span,
+  .visual-array-caption,
+  .visual-tape small,
+  .visual-fraction-strip small,
+  .visual-number-bond > small,
+  .visual-number-line small,
+  .visual-line-plot small,
+  .visual-data-chart small,
+  .visual-source-crop figcaption,
+  .estimate-workbook-toolbar span,
+  .estimate-workbook-toolbar button,
+  .estimate-workbook-row small,
+  .visual-geometry-shape small
+) {
+  font-size: var(--visual-label-size) !important;
+  line-height: 1.35;
+}
+
+:host-context(.problem-centered-workspace) :is(
+  .visual-note,
+  .visual-line-plot p,
+  .visual-data-chart-row em,
+  .visual-floor-room em,
+  .visual-geometry-shape em,
+  .visual-solution-parts p,
+  .visual-source-directions li,
+  .estimate-workbook-group > p,
+  .estimate-distance-reasoning p
+) {
+  font-size: var(--visual-body-size) !important;
+  line-height: 1.45;
+}
+
+:host-context(.problem-centered-workspace) :is(
+  .visual-equations span,
+  .visual-tape span,
+  .visual-tape-whole-label,
+  .visual-tape-braces b,
+  .visual-number-bond-whole,
+  .visual-number-bond-parts span,
+  .visual-fraction-strip > b,
+  .visual-fraction-strip span,
+  .visual-number-line span,
+  .visual-related-facts span,
+  .visual-solution-parts span,
+  .visual-solution-parts strong,
+  .visual-line-plot-x,
+  .visual-line-plot-axis span,
+  .estimate-workbook-row > div,
+  .estimate-workbook-row > div strong
+) {
+  font-size: var(--visual-math-size);
+  line-height: 1.3;
+}
+
+/* Tables can be dense, but they must remain readable. They intentionally use a
+   more compact fluid token than equations rather than dropping to 10-13px. */
+:host-context(.problem-centered-workspace) .visual-data-row span {
+  min-height: clamp(2.7rem, 4.2cqi, 3.6rem);
+  padding: clamp(0.5rem, 0.36rem + 0.28cqi, 0.8rem);
+  font-size: var(--visual-body-size) !important;
+  line-height: 1.3;
+}
+
+/* Model-family readability found by the complete Blank/Solved route audit. */
+:host-context(.problem-centered-workspace) :is(
+  .visual-expression-match-labels span,
+  .visual-expression-match small,
+  .visual-expression-match-key b,
+  .visual-stopwatch-row.is-head span,
+  .visual-stopwatch-source-work b,
+  .visual-addition-item-head em,
+  .visual-addition-group > header span,
+  .visual-addition-compound b,
+  .visual-addition-steps,
+  .visual-addition-algorithm .is-head b,
+  .visual-addition-algorithm .is-carry span,
+  .visual-estimate-row span,
+  .visual-pv-head span,
+  .visual-pv-head b,
+  .visual-pv-regroupings span,
+  .visual-pv-addend strong,
+  .visual-pv-sum strong,
+  .visual-number-bond-parts em
+) {
+  font-size: var(--visual-label-size) !important;
+  line-height: 1.3;
+}
+
+:host-context(.problem-centered-workspace) .visual-addition-compound em {
+  font-size: var(--visual-body-size) !important;
+  line-height: 1.3;
+}
+
+:host-context(.problem-centered-workspace) .visual-expression-match-key > span {
+  font-size: var(--visual-body-size) !important;
+  line-height: 1.35;
+}
+
+:host-context(.problem-centered-workspace) :is(
+  .visual-addition-bridge span,
+  .visual-addition-bridge i,
+  .visual-addition-bridge strong,
+  .visual-pv-addend small,
+  .visual-array span.has-placeholder
+) {
+  font-size: var(--visual-math-size) !important;
+  line-height: 1.2;
+}
+
+:host-context(.problem-centered-workspace) .visual-card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: var(--visual-space);
+}
+
+:host-context(.problem-centered-workspace) .visual-sub-card,
+:host-context(.problem-centered-workspace) .visual-section,
+:host-context(.problem-centered-workspace) .visual-solution-parts article {
+  gap: clamp(0.55rem, 0.4rem + 0.3cqi, 0.9rem);
+  padding: var(--visual-space);
+}
+
+:host-context(.problem-centered-workspace) .visual-array {
+  gap: clamp(0.25rem, 0.42cqi, 0.58rem);
+  max-width: 100%;
+}
+
+:host-context(.problem-centered-workspace) .visual-array:not(.is-dense) span {
+  min-width: clamp(1.15rem, 1.7cqi, 1.75rem);
+  min-height: clamp(1.15rem, 1.7cqi, 1.75rem);
+}
+
+:host-context(.problem-centered-workspace) .visual-array.is-dense span {
+  min-width: clamp(0.75rem, 1.05cqi, 1.15rem);
+  min-height: clamp(0.75rem, 1.05cqi, 1.15rem);
+}
+
+@container visual-workspace (max-width: 48rem) {
+  .visual-card-grid,
+  .visual-solution-parts {
+    grid-template-columns: 1fr;
+  }
+
+  .visual-source-crop {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* Concept-board acceptance: the stopwatch sequence needs more classroom width
+   than its compact problem-card form, while the four source tapes in M6 L2 need
+   two columns so the eight-unit tape remains fully visible. */
+:host-context(.problem-centered-lesson-animation) .problem-visual-workspace:has(.visual-stopwatch:not(.has-rows)) {
+  width: 100%;
+  max-width: 1100px;
+}
+
+:host-context(.problem-centered-lesson-animation[data-module="m6"][data-lesson="2"]) .visual-card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 760px) {
+  :host-context(.problem-centered-lesson-animation[data-module="m6"][data-lesson="2"]) .visual-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .visual-sub-card {
   display: grid;
   gap: 10px;
@@ -4653,4 +4875,481 @@
     grid-auto-columns: minmax(42px, 1fr);
     overflow-x: auto;
   }
+}
+
+/* Module 3 Lessons 1-5: source-specific classroom-scale layouts. */
+:host-context(.lesson-m3-l1) .problem-visual-workspace,
+:host-context(.lesson-m3-l2) .problem-visual-workspace,
+:host-context(.lesson-m3-l3) .problem-visual-workspace,
+:host-context(.lesson-m3-l4) .problem-visual-workspace,
+:host-context(.lesson-m3-l5) .problem-visual-workspace {
+  gap: 18px;
+  padding: clamp(18px, 1.5vw, 26px);
+}
+
+:host-context(.lesson-m3-l1) .visual-section > strong,
+:host-context(.lesson-m3-l2) .visual-section > strong,
+:host-context(.lesson-m3-l3) .visual-section > strong,
+:host-context(.lesson-m3-l4) .visual-section > strong,
+:host-context(.lesson-m3-l5) .visual-section > strong {
+  font-size: clamp(19px, 1.3vw, 23px);
+}
+
+:host-context(.lesson-m3-l1) .visual-sub-card > strong,
+:host-context(.lesson-m3-l2) .visual-sub-card > strong,
+:host-context(.lesson-m3-l3) .visual-sub-card > strong,
+:host-context(.lesson-m3-l4) .visual-sub-card > strong,
+:host-context(.lesson-m3-l5) .visual-sub-card > strong {
+  padding: 8px 10px;
+  font-size: clamp(17px, 1.05vw, 20px);
+}
+
+:host-context(.lesson-m3-l1) :is(.visual-note, .visual-array-caption, .visual-tape small),
+:host-context(.lesson-m3-l2) :is(.visual-note, .visual-array-caption, .visual-tape small),
+:host-context(.lesson-m3-l3) :is(.visual-note, .visual-array-caption, .visual-tape small),
+:host-context(.lesson-m3-l4) :is(.visual-note, .visual-array-caption, .visual-tape small),
+:host-context(.lesson-m3-l5) :is(.visual-note, .visual-array-caption, .visual-tape small) {
+  font-size: clamp(16px, 1vw, 19px);
+  line-height: 1.45;
+}
+
+:host-context(.lesson-m3-l1) .visual-equations,
+:host-context(.lesson-m3-l2) .visual-equations,
+:host-context(.lesson-m3-l3) .visual-equations,
+:host-context(.lesson-m3-l4) .visual-equations,
+:host-context(.lesson-m3-l5) .visual-equations {
+  width: 100%;
+  max-width: none;
+  gap: 9px;
+}
+
+:host-context(.lesson-m3-l1) .visual-equations span,
+:host-context(.lesson-m3-l2) .visual-equations span,
+:host-context(.lesson-m3-l3) .visual-equations span,
+:host-context(.lesson-m3-l4) .visual-equations span,
+:host-context(.lesson-m3-l5) .visual-equations span {
+  min-height: 48px;
+  padding: 11px 14px;
+  font-size: clamp(18px, 1.25vw, 23px);
+  line-height: 1.25;
+}
+
+/* L1 P1: chart at classroom scale with the apple pattern and reasoning beside it. */
+:host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="1"]) .problem-visual-workspace {
+  grid-template-columns: minmax(860px, 1.65fr) minmax(360px, 0.7fr);
+  grid-template-rows: auto 1fr;
+  align-items: start;
+}
+
+:host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="1"]) .visual-section:first-of-type {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+:host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="1"]) .visual-section:nth-of-type(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+:host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="1"]) .visual-section:nth-of-type(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+:host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="1"]) .visual-data-table {
+  width: 100%;
+  max-width: none;
+}
+
+:host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="1"]) .visual-section:first-of-type .visual-data-row span {
+  min-height: 46px;
+  padding: 10px 6px;
+  font-size: clamp(15px, 1.05vw, 19px);
+}
+
+/* L1 P2: the turned array and the two equations teach side by side. */
+:host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="2"]) .problem-visual-workspace {
+  grid-template-columns: minmax(520px, 1.2fr) minmax(400px, 0.8fr);
+  align-items: center;
+}
+
+:host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="2"]) .visual-section:first-of-type {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  justify-items: center;
+}
+
+:host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="2"]) .visual-section:nth-of-type(n + 2) {
+  grid-column: 2;
+}
+
+:host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="2"]) .visual-array.is-square span {
+  width: clamp(28px, 2.5vw, 42px);
+  height: clamp(28px, 2.5vw, 42px);
+}
+
+/* L1 P3: all twelve equation parts remain visible in a readable 3-column board. */
+:host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="3"]) .visual-solution-parts {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 100%;
+  max-width: none;
+  gap: 14px;
+}
+
+:host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="3"]) .visual-solution-parts article {
+  min-height: 138px;
+  padding: 14px;
+}
+
+:host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="3"]) .visual-solution-parts :is(span, p, strong) {
+  font-size: clamp(17px, 1.1vw, 21px);
+  line-height: 1.35;
+}
+
+/* L2 P1-P2: five-known-units, one-more-unit, and the target fact fill three teaching panels. */
+:host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="1"]) .visual-card-grid,
+:host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="2"]) .visual-card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+:host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="1"]) .visual-array span,
+:host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="2"]) .visual-array span {
+  width: clamp(14px, 1.15vw, 20px);
+  height: clamp(14px, 1.15vw, 20px);
+}
+
+/* L2 P3-P4: the source model stays large while its equation and meaning sit beside it. */
+:host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="3"]) .problem-visual-workspace,
+:host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="4"]) .problem-visual-workspace {
+  grid-template-columns: minmax(620px, 1.25fr) minmax(420px, 0.75fr);
+  align-items: center;
+}
+
+:host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="3"]) .visual-section:first-of-type,
+:host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="4"]) .visual-section:first-of-type {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+:host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="3"]) .visual-section:nth-of-type(n + 2),
+:host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="4"]) .visual-section:nth-of-type(n + 2) {
+  grid-column: 2;
+}
+
+:host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="3"]) .visual-array span {
+  width: clamp(15px, 1.15vw, 21px);
+  height: clamp(15px, 1.15vw, 21px);
+}
+
+:host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="4"]) .visual-tape {
+  width: 100%;
+  max-width: none;
+}
+
+:host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="5"]) .visual-card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* L3 P1: each unknown is a large equation card; the riddle decoder spans the row. */
+:host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="1"]) .visual-card-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+:host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="1"]) .visual-sub-card {
+  min-height: 158px;
+  align-content: start;
+  padding: 12px;
+}
+
+:host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="1"]) .visual-sub-card > strong {
+  font-size: clamp(20px, 1.35vw, 25px);
+}
+
+:host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="1"]) .visual-sub-card:has(.visual-data-table) {
+  grid-column: 1 / -1;
+  min-height: 0;
+}
+
+:host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="1"]) .visual-data-row span {
+  padding: 12px 6px;
+  font-size: clamp(17px, 1.1vw, 21px);
+  font-weight: 750;
+  text-align: center;
+}
+
+:host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="2"]) .visual-card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+:host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="3"]) .problem-visual-workspace,
+:host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="4"]) .problem-visual-workspace {
+  grid-template-columns: minmax(620px, 1.2fr) minmax(420px, 0.8fr);
+  align-items: center;
+}
+
+:host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="3"]) .visual-section:first-of-type,
+:host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="4"]) .visual-section:first-of-type {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+:host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="3"]) .visual-section:nth-of-type(n + 2),
+:host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="4"]) .visual-section:nth-of-type(n + 2) {
+  grid-column: 2;
+}
+
+:host-context(.lesson-m3-l3) .visual-tape {
+  width: 100%;
+  max-width: none;
+}
+
+/* L4-L5: sequence strips span the board; individual source matches become large fact cards. */
+:host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="1"]) .visual-card-grid,
+:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="1"]) .visual-card-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 13px;
+}
+
+:host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="2"]) .visual-card-grid,
+:host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="3"]) .visual-card-grid,
+:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="2"]) .visual-card-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+:host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="1"]) .visual-sub-card:has(.visual-data-table),
+:host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="2"]) .visual-sub-card:has(.visual-data-table),
+:host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="3"]) .visual-sub-card:has(.visual-data-table),
+:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="1"]) .visual-sub-card:has(.visual-data-table),
+:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="2"]) .visual-sub-card:has(.visual-data-table) {
+  grid-column: 1 / -1;
+}
+
+:host-context(.lesson-m3-l4) .visual-data-row span,
+:host-context(.lesson-m3-l5) .visual-data-row span {
+  min-height: 48px;
+  padding: 11px 7px;
+  font-size: clamp(16px, 1.05vw, 20px);
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Beat the older compact M3 worksheet-table rule for the few source tables retained here. */
+:host-context(.lesson-m3-l1) .visual-sub-card .visual-data-table .visual-data-row span,
+:host-context(.lesson-m3-l2) .visual-sub-card .visual-data-table .visual-data-row span,
+:host-context(.lesson-m3-l3) .visual-sub-card .visual-data-table .visual-data-row span,
+:host-context(.lesson-m3-l4) .visual-sub-card .visual-data-table .visual-data-row span,
+:host-context(.lesson-m3-l5) .visual-sub-card .visual-data-table .visual-data-row span {
+  min-height: 46px;
+  padding: 10px 7px;
+  font-size: clamp(16px, 1.05vw, 20px);
+  line-height: 1.25;
+  text-align: center;
+}
+
+:host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="4"]) .visual-card-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+:host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="5"]) .visual-card-grid,
+:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="4"]) .visual-card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="3"]) .problem-visual-workspace {
+  grid-template-columns: minmax(560px, 1fr) minmax(440px, 0.8fr);
+  align-items: center;
+}
+
+:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="3"]) .visual-section:first-of-type {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="3"]) .visual-section:nth-of-type(n + 2) {
+  grid-column: 2;
+}
+
+:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="3"]) .visual-number-bond {
+  max-width: none;
+}
+
+:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="3"]) .visual-number-bond :is(b, span) {
+  font-size: clamp(20px, 1.5vw, 28px);
+}
+
+@media (max-width: 1250px) {
+  :host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="1"]) .problem-visual-workspace,
+  :host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="2"]) .problem-visual-workspace,
+  :host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="3"]) .problem-visual-workspace,
+  :host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="4"]) .problem-visual-workspace,
+  :host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="3"]) .problem-visual-workspace,
+  :host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="4"]) .problem-visual-workspace,
+  :host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="3"]) .problem-visual-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  :host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="1"]) .visual-section,
+  :host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="2"]) .visual-section,
+  :host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="3"]) .visual-section,
+  :host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="4"]) .visual-section,
+  :host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="3"]) .visual-section,
+  :host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="4"]) .visual-section,
+  :host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="3"]) .visual-section {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  :host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="1"]) .visual-card-grid,
+  :host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="1"]) .visual-card-grid,
+  :host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="1"]) .visual-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  :host-context(.lesson-m3-l1) .visual-card-grid,
+  :host-context(.lesson-m3-l2) .visual-card-grid,
+  :host-context(.lesson-m3-l3) .visual-card-grid,
+  :host-context(.lesson-m3-l4) .visual-card-grid,
+  :host-context(.lesson-m3-l5) .visual-card-grid,
+  :host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="3"]) .visual-solution-parts {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Final acceptance cascade: lesson-specific artwork may choose its own
+   arrangement, but it may not reintroduce a desktop width cap or tiny text. */
+:host-context(.problem-centered-workspace) .problem-visual-workspace,
+:host-context(.problem-centered-workspace) .problem-visual-workspace:has(.visual-stopwatch:not(.has-rows)),
+:host-context(.problem-centered-workspace) .estimate-difference-workbook,
+:host-context(.problem-centered-workspace) .visual-tape,
+:host-context(.problem-centered-workspace) .visual-number-bond,
+:host-context(.problem-centered-workspace) .visual-fraction-strip,
+:host-context(.problem-centered-workspace) .visual-data-table,
+:host-context(.problem-centered-workspace) .visual-equations,
+:host-context(.problem-centered-workspace) .visual-floor-plan,
+:host-context(.problem-centered-workspace) .visual-line-plot,
+:host-context(.problem-centered-workspace) .visual-data-chart,
+:host-context(.problem-centered-workspace) .visual-geometry-diagram,
+:host-context(.problem-centered-workspace) .visual-related-facts,
+:host-context(.problem-centered-workspace) .visual-solution-parts {
+  width: 100%;
+  max-width: none;
+}
+
+:host-context(.problem-centered-workspace) :is(
+  .visual-header strong,
+  .visual-section > strong,
+  .visual-sub-card > strong,
+  .visual-solution-parts article > b,
+  .visual-data-chart-row b,
+  .visual-floor-room b,
+  .visual-geometry-shape b
+) {
+  font-size: var(--visual-heading-size);
+  line-height: 1.3;
+}
+
+:host-context(.problem-centered-workspace) :is(
+  .visual-header span,
+  .visual-array-caption,
+  .visual-tape small,
+  .visual-fraction-strip small,
+  .visual-number-bond > small,
+  .visual-tape span em,
+  .visual-number-line small,
+  .visual-line-plot small,
+  .visual-data-chart small,
+  .visual-source-crop figcaption,
+  .estimate-workbook-toolbar span,
+  .estimate-workbook-toolbar button,
+  .estimate-workbook-row small,
+  .estimate-distance-reasoning > article > strong,
+  .distance-track span b,
+  .visual-floor-room small,
+  .visual-geometry-shape small,
+  .problem-visual-workspace footer
+) {
+  font-size: var(--visual-label-size) !important;
+  line-height: 1.35;
+}
+
+:host-context(.problem-centered-workspace) .distance-track::before {
+  font-size: var(--visual-label-size);
+}
+
+:host-context(.problem-centered-workspace) :is(
+  .visual-stopwatch-face .tick,
+  .visual-stopwatch-elapsed span,
+  .visual-stopwatch-elapsed i,
+  .visual-stopwatch small,
+  .visual-stopwatch li,
+  .jump em,
+  .visual-time-line small,
+  .visual-clock small,
+  .measurement-reference,
+  .visual-measurement > small,
+  .visual-measurement li,
+  .liquid-vessel b,
+  .visual-number-line .is-target b
+) {
+  font-size: var(--visual-label-size) !important;
+  line-height: 1.35;
+}
+
+:host-context(.problem-centered-workspace) :is(
+  .kg-lab-steps b,
+  .kg-lab-steps em,
+  .kg-whole-bag span,
+  .liquid-whole span
+) {
+  font-size: var(--visual-label-size) !important;
+  line-height: 1.35;
+}
+
+:host-context(.problem-centered-workspace) :is(
+  .visual-note,
+  .visual-line-plot p,
+  .visual-data-chart-row em,
+  .visual-floor-room em,
+  .visual-geometry-shape em,
+  .visual-solution-parts p,
+  .visual-source-directions li,
+  .estimate-workbook-group > p,
+  .estimate-distance-reasoning p
+) {
+  font-size: var(--visual-body-size) !important;
+  line-height: 1.45;
+}
+
+:host-context(.problem-centered-workspace) :is(
+  .visual-equations span,
+  .visual-tape span,
+  .visual-tape-whole-label,
+  .visual-tape-braces b,
+  .visual-number-bond-whole,
+  .visual-number-bond-parts span,
+  .visual-fraction-strip > b,
+  .visual-fraction-strip span,
+  .visual-number-line span,
+  .visual-related-facts span,
+  .visual-solution-parts span,
+  .visual-solution-parts strong,
+  .visual-line-plot-x,
+  .visual-line-plot-axis span,
+  .estimate-workbook-row > div,
+  .estimate-workbook-row > div strong
+) {
+  font-size: var(--visual-math-size);
+  line-height: 1.3;
+}
+
+:host-context(.problem-centered-workspace) .visual-data-row span {
+  min-height: clamp(2.7rem, 4.2cqi, 3.6rem);
+  padding: clamp(0.5rem, 0.36rem + 0.28cqi, 0.8rem);
+  font-size: var(--visual-body-size) !important;
+  line-height: 1.3;
 }

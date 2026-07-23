@@ -7628,3 +7628,339 @@ summary.source-pages-heading {
   font-size: 13px !important;
   line-height: 1.35 !important;
 }
+
+/* Use the lesson canvas instead of leaving a desktop-only gutter beside each problem. */
+.problem-set-centered-list.problem-set-centered-list > .problem-solution-card {
+  width: 100%;
+  max-width: none;
+}
+
+.problem-set-centered-list.problem-set-centered-list > .problem-solution-card > :is(
+  .blank-problem-body,
+  .solved-problem-body,
+  app-problem-visual-workspace
+) {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+}
+
+/* Module 3 Lessons 1-5: readable classroom text around the lesson-specific models. */
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5) .problem-solution-card {
+  padding: clamp(18px, 1.5vw, 26px);
+}
+
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5) .problem-number {
+  padding: 7px 12px;
+  font-size: 15px;
+}
+
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5) .problem-solution-head h3 {
+  max-width: 72ch;
+  font-size: clamp(23px, 1.55vw, 29px);
+  line-height: 1.28;
+}
+
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5) .problem-source-prompt {
+  max-width: 80ch;
+  padding: clamp(16px, 1.2vw, 22px);
+  font-size: clamp(18px, 1.08vw, 21px);
+  line-height: 1.5;
+}
+
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5) .source-backed-reasoning,
+:is(.lesson-m3-l1, .lesson-m3-l2, .lesson-m3-l3, .lesson-m3-l4, .lesson-m3-l5) .answer-meaning {
+  font-size: 17px;
+  line-height: 1.48;
+}
+
+/* Fluid readability for every learning surface.
+   The inherited tokens are based on the actual lesson canvas, not a fixed
+   desktop width. Blank and Solved share the same readable geometry; only the
+   instructional state changes. */
+.problem-centered-workspace {
+  container-name: lesson-canvas;
+  container-type: inline-size;
+  --learning-label-size: clamp(0.9rem, 0.82rem + 0.22cqi, 1.08rem);
+  --learning-body-size: clamp(1rem, 0.88rem + 0.34cqi, 1.3rem);
+  --learning-prompt-size: clamp(1.08rem, 0.92rem + 0.44cqi, 1.48rem);
+  --learning-heading-size: clamp(1.5rem, 1.12rem + 0.82cqi, 2.2rem);
+  --learning-math-size: clamp(1.22rem, 0.96rem + 0.64cqi, 1.85rem);
+  --learning-space: clamp(0.75rem, 0.48rem + 0.62cqi, 1.5rem);
+}
+
+/* Problem navigation is part of the child-facing workspace, not browser-sized
+   utility chrome. Keep it readable and tappable as the lesson canvas grows. */
+.problem-centered-workspace .problem-set-toolbar {
+  gap: clamp(0.65rem, 0.5rem + 0.3cqi, 1rem);
+  padding: clamp(0.65rem, 0.5rem + 0.28cqi, 0.95rem);
+}
+
+.problem-centered-workspace .problem-set-mode button,
+.problem-centered-workspace .problem-bookmarks a {
+  min-height: clamp(2.25rem, 2rem + 0.45cqi, 2.7rem);
+  padding-inline: clamp(0.65rem, 0.5rem + 0.28cqi, 1rem);
+  font-size: var(--learning-label-size);
+  line-height: 1.25;
+}
+
+.problem-centered-panel,
+.problem-set-centered-list,
+.problem-solution-card,
+.blank-problem-body,
+.solved-problem-body,
+.problem-solution-grid,
+.problem-animation-card,
+.problem-explanation-card,
+.blank-workspace-card,
+.blank-response-card,
+.problem-centered-summary {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+}
+
+.problem-set-centered-list {
+  container-name: problem-list;
+  container-type: inline-size;
+}
+
+.problem-solution-card {
+  container-name: problem-card;
+  container-type: inline-size;
+  gap: var(--learning-space);
+  padding: var(--learning-space);
+}
+
+.problem-number,
+.ps-quotient-label strong,
+.validation-list strong {
+  font-size: var(--learning-label-size) !important;
+  line-height: 1.3;
+}
+
+.problem-solution-head h3 {
+  max-width: none;
+  font-size: var(--learning-heading-size);
+  line-height: 1.23;
+}
+
+.problem-source-prompt,
+.blank-prompt-list,
+.source-backed-reasoning,
+.answer-meaning,
+.problem-explanation-card p,
+.validation-list li,
+.ps-quotient-label span {
+  max-width: none;
+  font-size: var(--learning-prompt-size);
+  line-height: 1.48;
+}
+
+.problem-source-prompt,
+.blank-prompt-list {
+  width: 100%;
+  max-width: none !important;
+}
+
+.problem-source-prompt,
+.problem-explanation-card,
+.validation-list,
+.blank-workspace-card,
+.blank-response-card {
+  padding: var(--learning-space);
+}
+
+.equation-list span,
+.solved-answer,
+.blank-answer-line,
+.blank-equation-line {
+  font-size: var(--learning-math-size);
+  line-height: 1.3;
+}
+
+.problem-centered-summary {
+  container-name: summary-board;
+  container-type: inline-size;
+  gap: var(--learning-space);
+  padding: var(--learning-space);
+}
+
+.problem-centered-summary h3 {
+  font-size: var(--learning-heading-size);
+}
+
+.problem-centered-summary .eyebrow {
+  font-size: var(--learning-label-size);
+}
+
+.problem-centered-summary > .summary-hero > p {
+  width: 100%;
+  max-width: 90ch;
+  font-size: var(--learning-prompt-size);
+}
+
+.summary-check-grid,
+.lesson16-summary-source,
+.lesson17-summary-source,
+.lesson19-summary-source {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: var(--learning-space);
+}
+
+/* Meaning cards vary from lesson to lesson. Let each row distribute its own
+   remaining width so five-, seven-, and nine-card summaries do not leave an
+   empty grid track on the final row. */
+.summary-meaning-map > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: var(--learning-space);
+}
+
+.summary-meaning-map article {
+  flex: 1 1 min(100%, 20rem);
+  min-width: min(100%, 20rem);
+}
+
+.summary-check-grid article,
+.summary-meaning-map article,
+.lesson16-summary-source article,
+.lesson17-summary-source article,
+.lesson19-summary-source article {
+  gap: clamp(0.55rem, 0.42rem + 0.3cqi, 0.95rem);
+  padding: var(--learning-space);
+}
+
+.summary-check-grid strong,
+.summary-meaning-map h4,
+.summary-meaning-map article strong,
+.lesson16-summary-source strong,
+.lesson17-summary-source strong,
+.lesson19-summary-source strong {
+  font-size: var(--learning-math-size);
+  line-height: 1.28;
+}
+
+.summary-check-grid span,
+.summary-meaning-map article p,
+.lesson16-summary-source p,
+.lesson17-summary-source p,
+.lesson19-summary-source p {
+  font-size: var(--learning-body-size);
+  line-height: 1.44;
+}
+
+.summary-meaning-map article span,
+.lesson16-summary-source span,
+.lesson17-summary-source span,
+.lesson19-summary-source span {
+  font-size: var(--learning-label-size);
+  line-height: 1.35;
+}
+
+@container problem-card (max-width: 52rem) {
+  .problem-solution-grid,
+  .blank-problem-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+@container summary-board (max-width: 48rem) {
+  .summary-check-grid,
+  .lesson16-summary-source,
+  .lesson17-summary-source,
+  .lesson19-summary-source {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-meaning-map article {
+    flex-basis: 100%;
+  }
+}
+
+/* Concept includes more than its animation. The objective, source progression,
+   strategy cards, replay control, and model annotations use the same readable
+   scale so the complete tab benefits from the fluid canvas. */
+.problem-centered-concept,
+.module-concept-frame,
+.problem-centered-source-concepts {
+  width: 100%;
+  max-width: none;
+}
+
+.problem-centered-concept {
+  grid-template-columns: 1fr !important;
+}
+
+.problem-centered-concept h2,
+.module-frame-copy h3,
+.problem-centered-source-concepts h3 {
+  max-width: none;
+  font-size: var(--learning-heading-size);
+  line-height: 1.23;
+}
+
+.problem-centered-concept p,
+.concept-contrast span,
+.module-frame-copy p,
+.module-frame-progression li,
+.module-frame-progression li :is(span, em),
+.problem-centered-source-concepts p,
+.concept-source-checks li {
+  font-size: var(--learning-body-size) !important;
+  line-height: 1.45;
+}
+
+.problem-centered-concept :is(.eyebrow, .concept-contrast strong),
+.module-concept-frame :is(.eyebrow, small),
+.module-frame-progression > strong,
+.problem-centered-source-concepts .concept-source-checks strong,
+.problem-centered-lesson-animation :is(.eyebrow, .lesson-animation-replay) {
+  font-size: var(--learning-label-size) !important;
+  line-height: 1.35;
+}
+
+.module-frame-progression li b,
+.module-frame-transform b,
+.module-frame-stage :is(strong, b) {
+  font-size: var(--learning-math-size);
+  line-height: 1.3;
+}
+
+.problem-centered-source-concepts {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+  gap: var(--learning-space);
+}
+
+.problem-centered-source-concepts article,
+.concept-source-checks,
+.concept-contrast {
+  gap: clamp(0.55rem, 0.42rem + 0.3cqi, 0.95rem);
+  padding: var(--learning-space);
+}
+
+.concept-contrast {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.problem-centered-lesson-animation .lesson-animation-unknown-cases article > div i {
+  font-size: var(--learning-label-size) !important;
+}
+
+.problem-centered-lesson-animation .lesson-animation-notes :is(strong, b, span, em, li),
+.problem-centered-panel .m2-l6-lab-copy :is(.eyebrow, em),
+.problem-centered-panel .source-pages-heading :is(strong, span) {
+  font-size: var(--learning-label-size) !important;
+  line-height: 1.35;
+}
+
+.problem-centered-lesson-animation .lesson-animation-place-value p {
+  font-size: var(--learning-body-size) !important;
+  line-height: 1.35;
+}
+
+.problem-centered-lesson-animation .lesson-animation-vertical-line .is-target b {
+  font-size: var(--learning-label-size) !important;
+}

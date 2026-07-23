@@ -1531,16 +1531,21 @@ function makeM3UnknownRiddle(solved: boolean): ProblemVisualSection {
     kind: 'card-grid',
     label: solved ? 'Solved unknown-letter riddle' : 'Unknown-letter equation cards',
     cards: [
+      ...rows.map(([letter, equation, value]) => ({
+        label: solved ? `${letter} = ${value}` : `Find ${letter}`,
+        sections: [
+          {
+            kind: 'equations' as const,
+            lines: [equation]
+          },
+          {
+            kind: 'note' as const,
+            text: solved ? `The unknown value is ${value}.` : `Solve the familiar fact, then write ${letter} = ____.`
+          }
+        ]
+      })),
       {
-        label: 'Find each letter value',
-        sections: [{
-          kind: 'data-table',
-          columns: ['Letter', 'Official equation', 'Value'],
-          rows: rows.map(([letter, equation, value]) => [letter, equation, solved ? value : '____'])
-        }]
-      },
-      {
-        label: 'Use the values to decode',
+        label: 'Use the letter values to decode the riddle',
         sections: [{
           kind: 'data-table',
           columns: ['9', '6', '70', '3', '5', '20', '10', '70', '24', '2', '7', '20', '4'],
@@ -1621,21 +1626,34 @@ function makeM3Lesson4Primary(problem: ProblemSetCenteredProblem, solved: boolea
       ['5', 'up', '24, ____, 36, ____, 48']
     ];
     return {
-      kind: 'data-table',
+      kind: 'card-grid',
       label: solved ? 'Solved direction-changing count by six' : 'Follow each arrow and keep counting by six',
-      columns: ['Segment', 'Arrow', 'Count'],
-      rows: solved ? solvedSegments : blankSegments
+      cards: (solved ? solvedSegments : blankSegments).map(([segment, direction, count]) => ({
+        label: `Segment ${segment}: count ${direction}`,
+        sections: [
+          { kind: 'equations', lines: [count] },
+          { kind: 'note', text: direction === 'up' ? 'Add 6 at each step.' : 'Subtract 6 at each step.' }
+        ]
+      }))
     };
   }
   return {
-    kind: 'data-table',
+    kind: 'card-grid',
     label: solved ? 'Julie stopped one six too soon' : 'Check Julie’s count-by-six claim',
-    columns: ['Groups of 6', 'Count'],
-    rows: Array.from({ length: 7 }, (_, index) => {
-      const group = index + 1;
-      if (solved) return [String(group), String(group * 6)];
-      return [String(group), group === 6 ? '36 (Julie’s answer)' : group === 7 ? '____ (target)' : 'count by 6'];
-    })
+    cards: [
+      {
+        label: 'Julie’s stopping point',
+        sections: [{ kind: 'equations', lines: ['6 x 6 = 36'] }, { kind: 'note', text: 'Julie counted only 6 groups of 6.' }]
+      },
+      {
+        label: 'The requested fact',
+        sections: [{ kind: 'equations', lines: [solved ? '6 x 7 = 42' : '6 x 7 = ____'] }, { kind: 'note', text: 'The problem asks for 7 groups of 6.' }]
+      },
+      {
+        label: solved ? 'Verdict: Julie is not right' : 'Compare and decide',
+        sections: [{ kind: 'note', text: solved ? 'Add one more group of 6: 36 + 6 = 42.' : 'Is 36 the seventh number in the count-by-six sequence? Explain.' }]
+      }
+    ]
   };
 }
 
@@ -2008,18 +2026,26 @@ function makeM3CountByMatch(
           rows: [[...groups.map((group) => solved || !missingGroups.includes(group) ? String(group * unit) : '____')]]
         }]
       },
-      {
-        label: includeDivision ? 'Match each fish, then write its division fact' : 'Match each multiplication flag to its number card',
-        sections: [{
-          kind: 'data-table',
-          columns: includeDivision ? ['Source card', 'Multiplication', 'Count-by match', 'Related division'] : ['Source card', 'Multiplication', 'Count-by match'],
-          rows: factOrder.map((factor, index) => {
-            const total = factor * unit;
-            const base = [`${index + 1}`, `${factor} x ${unit}`, solved ? String(total) : 'match'];
-            return includeDivision ? [...base, solved ? `${total} divided by ${unit} = ${factor}` : '____ divided by ____ = ____'] : base;
-          })
-        }]
-      }
+      ...factOrder.map((factor, index) => {
+        const total = factor * unit;
+        return {
+          label: `Source card ${index + 1}: ${factor} groups of ${unit}`,
+          sections: [
+            {
+              kind: 'equations' as const,
+              lines: includeDivision
+                ? solved
+                  ? [`${factor} x ${unit} = ${total}`, `${total} divided by ${unit} = ${factor}`]
+                  : [`${factor} x ${unit} = ____`, '____ divided by ____ = ____']
+                : [solved ? `${factor} x ${unit} = ${total}` : `${factor} x ${unit} = ____`]
+            },
+            {
+              kind: 'note' as const,
+              text: solved ? `Match this card to ${total} in the count-by sequence.` : 'Find the matching total in the count-by sequence.'
+            }
+          ]
+        };
+      })
     ]
   };
 }
@@ -2039,18 +2065,21 @@ function makeM3CountBySequence(unit: number, finalGroup: number, solved: boolean
           rows: [[...groups.map((group) => solved || givenGroups.includes(group) ? String(group * unit) : '____')]]
         }]
       },
-      {
-        label: 'Multiplication and division partners',
-        sections: [{
-          kind: 'data-table',
-          columns: ['Count position', 'Multiplication', 'Division'],
-          rows: targetGroups.map((group) => [
-            String(group),
-            solved ? `${group} x ${unit} = ${group * unit}` : `____ x ${unit} = ____`,
-            solved ? `${group * unit} divided by ${unit} = ${group}` : `____ divided by ${unit} = ____`
-          ])
-        }]
-      }
+      ...targetGroups.map((group) => ({
+        label: `Count ${group}: multiplication and division partners`,
+        sections: [
+          {
+            kind: 'equations' as const,
+            lines: solved
+              ? [`${group} x ${unit} = ${group * unit}`, `${group * unit} divided by ${unit} = ${group}`]
+              : [`____ x ${unit} = ____`, `____ divided by ${unit} = ____`]
+          },
+          {
+            kind: 'note' as const,
+            text: solved ? `${group} groups of ${unit} make ${group * unit}.` : `Use the value at count position ${group}.`
+          }
+        ]
+      }))
     ]
   };
 }

@@ -30,12 +30,13 @@ All curriculum facts were checked against `EurekaMath-Sources/Module_3/g3_m3_tea
 - exact problem counts: 3, 5, 4, 5, and 4;
 - required solved evidence for every lesson;
 - the complete 10-by-10 Lesson 1 chart, 4-by-6 array, and 12 equation parts;
+- the classroom-scale structures introduced in this pass: Lesson 2's three equal-group panels, Lesson 3's 11 equation cards plus decoder, Lesson 4's count strip/fact cards/direction cards/critique cards, and Lesson 5's count strip/fact cards;
 - absence of internal audit scaffolding and Teacher Edition answer-key language in Blank mode;
 - a three-section maximum for the student-facing visual workspace in this batch.
 
 ## Browser acceptance
 
-Checked on 2026-07-21 in one dedicated agent-owned Chrome tab in the authorized `Gemini` profile at a 1,920-pixel desktop viewport.
+Rechecked on 2026-07-22 in the isolated user-authorized `Grade3` Chrome tab in the `Gemini` profile at a 1,920-pixel desktop viewport. No other Chrome tab was inspected or changed.
 
 All 20 routes passed the first-pass checks:
 
@@ -45,9 +46,29 @@ All 20 routes passed the first-pass checks:
 - Lesson 4: Concept, Blank, Solved, Summary
 - Lesson 5: Concept, Blank, Solved, Summary
 
-For every route, required source evidence was visible, the listed internal audit labels were absent, Blank-mode leak checks passed, and document width equaled viewport width (`1920 / 1920`). Full-page visual review covered the source-distinct Lesson 1, Lesson 2, and Lesson 3 solved layouts; the Lesson 4 and Lesson 5 shared count-by components passed the same DOM/content/overflow checks.
+For every route, required source evidence was visible, the listed internal audit labels were absent, Blank-mode leak checks passed, and no horizontal document overflow occurred. Every Concept, Blank, Solved, and Summary page was visually reviewed live. Solved-mode review also covered the lower source-distinct models: the Lesson 1 diamond array and 12-part equation board, Lesson 2 tape and money work, Lesson 3 purchase/change and tape work, Lesson 4 direction changes and Julie critique, and Lesson 5 make-ten number bond.
 
-No runtime errors were logged. Angular emitted two non-blocking development warnings because the collapsed Lesson 1 source-reference images have much larger intrinsic dimensions than their rendered thumbnails. This does not affect the learning flow and is deferred to a later optimization/polish pass.
+The readability/use-of-space acceptance is lesson-specific rather than a single global scale rule:
+
+- Lesson 1 uses a large multiplication chart with the apple pattern and reasoning beside it; the 12 equations form a three-column board.
+- Lesson 2 uses three equal-group teaching panels, then side-by-side model/equation layouts for its array, tape, and word problems.
+- Lesson 3 replaces the tiny 11-row riddle table with 11 equation cards and one full-width decoder; its story problems retain the source tape and money structures.
+- Lessons 4 and 5 use a full-width count strip with readable fact cards, while direction changes, critiques, and the make-ten number bond keep their own source-specific layouts.
+- At the checked viewport, problem prompts render at approximately 21 px, equation fields at approximately 23 px, retained source-table cells at 16–20 px, and each problem workspace uses approximately 1,834 px of the available lesson canvas.
+
+### Concept teaching-board correction
+
+The Concept-page animation board was rechecked after a live example exposed that its three equal columns made the actual mathematics too small. The correction applies to all five lessons, not only the reported Lesson 3 page:
+
+- Supporting explanation occupies one compact column; the source-specific model receives the dominant board area.
+- Teaching steps form a horizontal strip beneath the model instead of forcing a tall notes column and leaving unused vertical space inside the board.
+- Lesson 1 renders two large commutative arrays; Lesson 2 renders a large 5-plus-1 distributive fact chain; Lesson 3 renders the three distinct unknown positions as large story cards; Lessons 4 and 5 render full-width count sequences and three make-ten bridge cards.
+- The live 1,920-pixel Chrome check measured a 1,432-by-448-pixel model stage. Model widths are 1,080, 1,080, 1,120, 1,160, and 1,160 pixels for Lessons 1–5 respectively, with no document-level horizontal overflow.
+- Representative model text is 20 px in Lesson 1, 24 px in Lesson 2, 16–20 px in Lesson 3, and 22 px in Lessons 4 and 5. All five Replay controls were activated during the check.
+
+The durable delivery validator now rejects removal of this batch layout contract, including the model-dominant board, full-width inner array wrapper, lesson-specific model rules, and horizontal teaching-step strip.
+
+No runtime errors were logged. Angular emitted non-blocking development warnings because the collapsed Teacher Edition source-reference images have much larger intrinsic dimensions than their rendered thumbnails. This does not affect the learning flow and is deferred to a later optimization/polish pass.
 
 ## Deferred polish
 

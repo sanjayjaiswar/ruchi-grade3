@@ -1681,6 +1681,8 @@
             class="problem-centered-lesson-animation lesson-animation-panel"
             *ngIf="lessonAnimation as animation"
             [attr.data-kind]="animation.kind"
+            [attr.data-module]="module.id"
+            [attr.data-lesson]="lesson.lessonNumber"
             aria-label="Teacher Edition visual model animation">
             <div class="lesson-animation-copy">
               <div class="lesson-animation-heading-row">

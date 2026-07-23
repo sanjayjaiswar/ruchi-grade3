@@ -35,6 +35,64 @@ const lessonCounts = {
 const failures = [];
 const summaries = [];
 
+function validateCurriculumClassroomLayout() {
+  const lessonCss = readFileSync(join(root, 'src/app/pages/lesson/lesson.css'), 'utf8');
+  const problemSetCss = readFileSync(join(root, 'src/app/pages/lesson/lesson-problem-set.css'), 'utf8');
+  const lessonHtml = readFileSync(join(root, 'src/app/pages/lesson/lesson.html'), 'utf8');
+  const visualCss = readFileSync(join(root, 'src/app/shared/problem-visual-workspace/problem-visual-workspace.css'), 'utf8');
+  const timeBoardCss = readFileSync(join(root, 'src/app/shared/time-board/time-board.css'), 'utf8');
+  const layoutContracts = [
+    ['curriculum-wide classroom-board marker', lessonCss, /Curriculum-wide classroom board/],
+    ['global model-dominant board', lessonCss, /\.problem-centered-lesson-animation\s*{[^}]*grid-template-areas:\s*"copy stage"\s*"notes notes"/s],
+    ['equal-groups family sizing', lessonCss, /data-kind="equal-groups"[^{}]*\.lesson-animation-groups/],
+    ['array family sizing', lessonCss, /data-kind="array"[^{}]*\.lesson-animation-array-wrap/],
+    ['tape family sizing', lessonCss, /data-kind="tape-diagram"[^{}]*\.lesson-animation-tape/],
+    ['number-line family sizing', lessonCss, /\.problem-centered-lesson-animation \.lesson-animation-time-line/],
+    ['measurement family sizing', lessonCss, /\.problem-centered-lesson-animation \.lesson-animation-spring-scales/],
+    ['area, fraction, graph, clock, and geometry family sizing', lessonCss, /Standalone area, fraction, graph, clock, and geometry animations/],
+    ['source-dimensional base-array overrides', lessonCss, /data-module="m1"\]\[data-lesson="2"/],
+    ['module and lesson DOM identifiers', lessonHtml, /\[attr\.data-module\]="module\.id"[\s\S]*\[attr\.data-lesson\]="lesson\.lessonNumber"/],
+    ['semantic-workspace Concept acceptance', visualCss, /Concept-board acceptance/],
+    ['fluid lesson-canvas marker', lessonCss, /Fluid lesson-canvas acceptance layer/],
+    ['container-relative Concept type scale', lessonCss, /--learning-body-size:\s*clamp\([^;]*cqi/],
+    ['fluid source-dimensional array cells', lessonCss, /--concept-array-cell:\s*clamp\([^;]*cqi/],
+    ['all-surface fluid readability marker', problemSetCss, /Fluid readability for every learning surface/],
+    ['child-facing Problem Set navigation scale', problemSetCss, /Problem navigation is part of the child-facing workspace[\s\S]*\.problem-centered-workspace \.problem-set-mode button,[\s\S]*font-size:\s*var\(--learning-label-size\)/s],
+    ['Blank and Solved fluid prompt type', problemSetCss, /\.problem-source-prompt,[\s\S]*font-size:\s*var\(--learning-prompt-size\)/],
+    ['fluid Summary cards', problemSetCss, /\.summary-check-grid,[\s\S]*repeat\(auto-fit,\s*minmax\(min\(100%,\s*20rem\),\s*1fr\)\)/],
+    ['content-adaptive Summary final rows', problemSetCss, /Meaning cards vary from lesson to lesson[\s\S]*\.summary-meaning-map > div\s*{[^}]*display:\s*flex;[^}]*flex-wrap:\s*wrap;/s],
+    ['fluid Summary meaning-card basis', problemSetCss, /\.summary-meaning-map article\s*{[^}]*flex:\s*1 1 min\(100%,\s*20rem\)/s],
+    ['semantic-workspace fluid scale', visualCss, /Curriculum-wide fluid model scale/],
+    ['semantic-workspace no final width cap', visualCss, /Final acceptance cascade:[\s\S]*visual-stopwatch:not\(\.has-rows\)\)[\s\S]*max-width:\s*none/],
+    ['semantic-workspace readable dense tables', visualCss, /Final acceptance cascade:[\s\S]*\.visual-data-row span\s*{[^}]*font-size:\s*var\(--visual-body-size\)/s],
+    ['audited semantic-workspace family labels', visualCss, /Model-family readability found by the complete Blank\/Solved route audit/],
+    ['audited Solved expression explanations', visualCss, /\.visual-expression-match-key > span\s*{[^}]*font-size:\s*var\(--visual-body-size\)/s],
+    ['fluid elapsed-time annotations', timeBoardCss, /Fluid lesson acceptance: elapsed-time annotations[\s\S]*font-size:\s*var\(--visual-label-size/s],
+    ['M6 L2 non-clipping tape layout', visualCss, /data-module="m6"\]\[data-lesson="2"\]\)[^}]*grid-template-columns:\s*repeat\(2,/s]
+  ];
+  for (const [label, source, pattern] of layoutContracts) {
+    if (!pattern.test(source)) report('M1-M7 classroom layout', `missing ${label}`);
+  }
+}
+
+function validateM3ClassroomScaleConceptLayout() {
+  const cssPath = join(root, 'src/app/pages/lesson/lesson.css');
+  const css = readFileSync(cssPath, 'utf8');
+  const layoutContracts = [
+    ['five-lesson classroom-scale marker', /Module 3 Lessons 1-5: classroom-scale Concept teaching models/],
+    ['model-dominant board with horizontal notes', /grid-template-areas:\s*"copy stage"\s*"notes notes"/],
+    ['array wrapper uses the available board width', /lesson-animation-stage > \.lesson-animation-array-wrap\s*{\s*width:\s*100%/],
+    ['Lesson 1 commutative array layout', /\.lesson-m3-l1[^{}]*\.lesson-animation-commutative-turn\s*{/],
+    ['Lesson 2 distributive layout', /\.lesson-m3-l2[^{}]*\.lesson-animation-distributive-build\s*{/],
+    ['Lesson 3 unknown-position layout', /\.lesson-m3-l3[^{}]*\.lesson-animation-unknown-cases\s*{/],
+    ['Lessons 4-5 count-by layout', /:is\(\.lesson-m3-l4, \.lesson-m3-l5\)[^{}]*\.lesson-animation-count-by\s*{/],
+    ['three-column teaching-step strip', /\.lesson-animation-notes \.lesson-animation-steps\s*{[^}]*grid-template-columns:\s*repeat\(3,/s]
+  ];
+  for (const [label, pattern] of layoutContracts) {
+    if (!pattern.test(css)) report('M3 L1-L5 Concept layout', `missing ${label}`);
+  }
+}
+
 function report(label, message) {
   failures.push(`${label}: ${message}`);
 }
@@ -355,6 +413,50 @@ function validateM3ModuleLesson(lessonNumber, runtime, centeredLesson) {
     const parts = equationProblem.solvedVisual.sections[0];
     if (parts.kind !== 'solution-parts' || parts.parts.length !== 12) {
       report(label, 'Problem 3 must preserve all 12 source equation parts');
+    }
+  }
+
+  if (lessonNumber === 2) {
+    for (const problemIndex of [0, 1]) {
+      const groups = centeredLesson.problems[problemIndex]?.solvedVisual.sections[0];
+      if (groups?.kind !== 'card-grid' || groups.cards.length !== 3) {
+        report(label, `Problem ${problemIndex + 1} must use three classroom-scale equal-group panels`);
+      }
+    }
+  }
+
+  if (lessonNumber === 3) {
+    const riddle = centeredLesson.problems[0]?.solvedVisual.sections[0];
+    if (riddle?.kind !== 'card-grid' || riddle.cards.length !== 12) {
+      report(label, 'Problem 1 must use 11 readable equation cards plus the source decoder');
+    } else if (riddle.cards.slice(0, 11).some((card) => !card.sections.some((section) => section.kind === 'equations'))) {
+      report(label, 'Problem 1 equation cards must expose each unknown as a mathematical equation');
+    }
+  }
+
+  if (lessonNumber === 4) {
+    const countBy = centeredLesson.problems[0]?.solvedVisual.sections[0];
+    const directions = centeredLesson.problems[3]?.solvedVisual.sections[0];
+    const critique = centeredLesson.problems[4]?.solvedVisual.sections[0];
+    if (countBy?.kind !== 'card-grid' || countBy.cards.length !== 11) {
+      report(label, 'Problem 1 must use one count-by-six strip plus ten readable fact cards');
+    }
+    if (directions?.kind !== 'card-grid' || directions.cards.length !== 5) {
+      report(label, 'Problem 4 must show all five count-direction segments as readable cards');
+    }
+    if (critique?.kind !== 'card-grid' || critique.cards.length !== 3) {
+      report(label, 'Problem 5 must separate Julie’s work, the requested fact, and the verdict');
+    }
+  }
+
+  if (lessonNumber === 5) {
+    const fishFacts = centeredLesson.problems[0]?.solvedVisual.sections[0];
+    const countBy = centeredLesson.problems[1]?.solvedVisual.sections[0];
+    if (fishFacts?.kind !== 'card-grid' || fishFacts.cards.length !== 11) {
+      report(label, 'Problem 1 must use one count-by-seven strip plus ten readable fish-fact cards');
+    }
+    if (countBy?.kind !== 'card-grid' || countBy.cards.length !== 6) {
+      report(label, 'Problem 2 must use one count-by-seven strip plus five requested fact cards');
     }
   }
 
@@ -899,6 +1001,9 @@ function equivalentSourceCopy(value, objective) {
 function answerNumbers(answer) {
   return [...new Set((String(answer).match(/\b\d+\b/g) ?? []).filter((number) => Number(number) <= 1000))];
 }
+
+validateM3ClassroomScaleConceptLayout();
+validateCurriculumClassroomLayout();
 
 for (const [moduleId, count] of Object.entries(lessonCounts)) {
   let problemCount = 0;
