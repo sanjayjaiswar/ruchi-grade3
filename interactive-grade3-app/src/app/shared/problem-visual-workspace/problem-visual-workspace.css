@@ -4598,6 +4598,10 @@
   width: min(100%, 900px);
 }
 
+.visual-number-line.is-dense {
+  width: 100%;
+}
+
 .visual-number-line > div {
   display: grid;
   grid-auto-flow: column;

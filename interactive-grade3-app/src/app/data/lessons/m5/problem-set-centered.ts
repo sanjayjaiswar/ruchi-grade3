@@ -163,12 +163,12 @@ const M5_TEACHER_ANSWER_OVERRIDES: Record<number, Record<number, string>> = {
   11: {
     1: '1/3; answers will vary.',
     2: '1/5; answers will vary.',
-    3: '1/12; answers will vary.',
-    4: 'Answers will vary; 8.',
-    5: 'Answers will vary; 9.',
-    6: '1/10; answers will vary.',
-    7: 'Answers will vary.',
-    8: 'Answers will vary; 12.',
+    3: '1/10; answers will vary.',
+    4: '1/12; answers will vary.',
+    5: 'Answers will vary; the source unit fraction is 1/8.',
+    6: 'Answers will vary; the source unit fraction is 1/9.',
+    7: 'Answers will vary; the source unit fraction is 1/12.',
+    8: 'Answers will vary.',
     9: 'No; explanations will vary.',
     10: 'No; explanations will vary.'
   },
@@ -195,7 +195,7 @@ const M5_TEACHER_ANSWER_OVERRIDES: Record<number, Record<number, string>> = {
     3: 'The meter number line is labeled from 0/5 to 5/5, with 5/5 equal to 1 meter.'
   },
   15: {
-    1: 'Partition and label each number line; complete the number bonds to show how much is shaded and how much more makes 1 whole.',
+    1: 'a. Partition into thirds and label 0/3, 2/3, and 3/3; the provided bond is 2/3 + 1/3 = 1. b. Partition into fourths and label 0/4, 3/4, and 4/4; show 3/4 + 1/4 = 1. c. Partition into fifths and label 0/5, 3/5, and 5/5; show 3/5 + 2/5 = 1. d. Partition into sixths and label 0/6, 5/6, and 6/6; show 5/6 + 1/6 = 1. e. Partition into tenths and label 0/10, 3/10, and 10/10; show 3/10 + 7/10 = 1.',
     2: 'Draw a number line from 0 to 1, partition it into eighths, and label from 0/8 to 8/8.',
     3: 'a. 4 equal parts; label the rope from 0/4 to 4/4. b. 2/4. c. 1/5.'
   },
@@ -209,18 +209,18 @@ const M5_TEACHER_ANSWER_OVERRIDES: Record<number, Record<number, string>> = {
     1: 'Partition the number line into sixths; locate and label the given fractions.',
     2: 'Partition the number line into fourths; locate and label the given fractions.',
     3: 'Partition the number line into thirds; locate and label the given fractions.',
-    4: 'Alex; a number line shows 7/4 inches is longer than 2/4 inches.',
+    4: 'Alex; 2 inches is 8/4 inches, and 8/4 is greater than 7/4. A fourths number line shows Alex’s 2-inch finger is longer.',
     5: 'Draw a number line from 0 km to 4 km, partitioned into fifths; locate and label 0/5, 20/5, 7/5, and 12/5.'
   },
   18: {
     1: 'Sample: partition the number line into fourths; place 1/4 and 3/4, circle 1/4 as closest to 0, and write 1/4 < 3/4.',
-    2: 'Use the number line to compare the given fractions.',
-    3: 'Partition into sixths; place 2/6 and 3/6; circle 3/6; write <.',
-    4: 'Partition into halves and fourths; place 1/2 and 2/4; circle 2/4; write >.',
-    5: 'Partition into eighths and fourths; place 7/8 and 7/4; circle 7/8; write <.',
-    6: 'JoAnn; explanations will vary.',
-    7: 'Red thread; explanations will vary.',
-    8: 'Place 7/8, 7/4, and 7/2 on the number line; 7/8 < 7/4 < 7/2; explanations will vary.'
+    2: 'Partition into sixths; place 2/6 and 3/6, circle 2/6 as closest to 0, and write 2/6 < 3/6.',
+    3: 'Partition into halves and fourths; place 1/2 and 1/4, circle 1/4 as closest to 0, and write 1/2 > 1/4.',
+    4: 'Partition into thirds and sixths; place 2/3 and 2/6, circle 2/6 as closest to 0, and write 2/3 > 2/6.',
+    5: 'Partition into eighths and fourths; place 11/8 and 7/4, circle 11/8 as closest to 0, and write 11/8 < 7/4.',
+    6: 'JoAnn walks less. On same-length number lines, 5/6 is closer to 0 than 7/8, so 5/6 < 7/8.',
+    7: 'The red thread is shorter: 4/5 is less than 1 whole, while 5/4 is greater than 1 whole.',
+    8: 'Place 7/8, 7/4, and 4/2 on the number line; 7/8 < 7/4 < 4/2; explanations will vary.'
   },
   19: {
     1: 'a. Divide into halves and place the given fractions. b. Divide into fourths and place the given fractions. c. Divide into eighths and place the given fractions. Write each whole as a fraction.',
@@ -236,10 +236,10 @@ const M5_TEACHER_ANSWER_OVERRIDES: Record<number, Record<number, string>> = {
     4: 'Cristina; explanations will vary.'
   },
   21: {
-    1: 'Halves and sixths number lines are labeled with equivalent fractions, including 1/2 = 3/6 and 2/2 = 6/6.',
-    2: 'Thirds and sixths number lines are labeled with equivalent fractions.',
-    3: 'Shaded blue: 1/2 and 2/4, 1/2 and 3/6. Shaded yellow: 2/2 and 4/4, 2/2 and 6/6. Shaded red: 3/2 and 6/4, 3/2 and 9/6. Shaded green: 4/2 and 8/4, 4/2 and 12/6.',
-    4: 'Complete the equivalent fractions and number line work; 1/2 = 4/8 is one of the shown relationships.',
+    1: 'First pair: label the halves line with 0/2 and 3/2 and the fourths line with 1/4, 2/4, 4/4, 6/4, and 8/4. Second pair: label the halves line with 0/2, 2/2, and 3/2 and the sixths line with 1/6, 3/6, 6/6, 9/6, and 12/6.',
+    2: 'Shade blue: 1/2 with 2/4, and 1/2 with 3/6. Shade yellow: 2/2 with 4/4, and 2/2 with 6/6. Shade green: 3/2 with 6/4, and 3/2 with 9/6. Shade red: 4/2 with 8/4, and 4/2 with 12/6.',
+    3: 'Complete the number sentences: 2/4 = 3/6; 6/6 = 2/2 = 4/4; and 3/2 = 9/6 = 6/4.',
+    4: 'Jill’s gauge reads 4/8 inch because Jack’s 2/4 inch and Jill’s 4/8 inch name the same point on the number line.',
     5: 'Yes; 1/2 = 2/4 = 4/8. Explanations will vary.'
   },
   22: {
@@ -253,9 +253,9 @@ const M5_TEACHER_ANSWER_OVERRIDES: Record<number, Record<number, string>> = {
     1: 'Divide and label the number line into fourths in red pencil.',
     2: 'Divide and label the number line into eighths in blue pencil.',
     3: 'Equivalent labels include 0/4 = 0/8, 1/4 = 2/8, 2/4 = 4/8, 3/4 = 6/8, 4/4 = 8/8, continuing through 12/4 = 24/8.',
-    4: '1/3 and 2/6; 2/4 and 1/2 or 4/8; 2/5 and 4/10; answers will vary.',
-    5: '7/2 = 14/4 = 28/8; draw, divide, and label the number line to show these fractions.',
-    6: 'No; explanations will vary.'
+    4: '7/2 = 14/4 = 28/8; draw, divide, and label the number line to show these fractions at the same point.',
+    5: 'Possible pairs are 1/3 = 2/6; 2/4 = 1/2 or 4/8; 5/4 = 10/8; and 10/5 = 2/1. Other equivalent pairs that match the plotted dots are acceptable.',
+    6: 'No. Cameron rests after 2/3 of the race, while Terrance rests after 2/6 = 1/3. Since 2/3 > 2/6, Cameron rests farther along the course.'
   },
   24: {
     1: 'Complete the number bonds and number lines for halves, thirds, fourths, and fifths; rename 0 and 1 as fractions in each unit.',
@@ -264,9 +264,9 @@ const M5_TEACHER_ANSWER_OVERRIDES: Record<number, Record<number, string>> = {
     4: 'No. Taylor ate 4/4 of one pizza and his brother ate 3/3 of one pizza. Both fractions equal 1 whole pizza.'
   },
   25: {
-    1: 'Label the number line 0/1, 1/1, 2/1, 3/1, 4/1, 5/1, and 6/1.',
-    2: 'Complete the equivalent whole-number fractions: 3/3, 4/4, 4/2, 4/1, 6/6, 6/3, and 6/1.',
-    3: 'Explanations will vary.'
+    1: 'Label the source models 3/3, 3/2, 3/1, 4/4, 4/2, 4/1, 6/6, 6/3, and 6/1.',
+    2: 'Fill the missing whole numbers 2, 3, 5, and 6 below the line. Rename the points above it as 0/1, 1/1, 2/1, 3/1, 4/1, 5/1, and 6/1.',
+    3: 'Sample: 2/1 means 2 wholes, while 2/2 means 1 whole. The numerators match, but the fractional units are different sizes.'
   },
   26: {
     1: 'Halves: complete 0, 0; 2, 2; 4 and the number bonds. Thirds: complete 6, 6; 9, 9; 12, 12 and the number bonds.',
@@ -276,10 +276,10 @@ const M5_TEACHER_ANSWER_OVERRIDES: Record<number, Record<number, string>> = {
   },
   27: {
     1: '2, 2, bigger, less. 4, 4, smaller, more.',
-    2: 'Explanations will vary.',
-    3: '1/2 of a candy bar; 1/2 = 2/4 = 3/6.',
+    2: 'Each friend receives 1/2 of a candy bar: give the 2 halves to 2 friends, combine the 4 fourths into two shares of 2/4, and combine the 6 sixths into two shares of 3/6. Thus 1/2 = 2/4 = 3/6.',
+    3: 'Six copies of 1/8 and three copies of 1/4 cover the same amount because each fourth is equal to two eighths: 6/8 = 3/4.',
     4: '2 sixths; draw a model.',
-    5: 'Answers will vary.'
+    5: 'Sample: doubling the 4 equal parts makes 8 equal parts. Each fourth becomes 2 eighths, so 1/4 = 2/8 and 4/4 = 8/8.'
   },
   28: {
     1: 'Shade the models correctly; circle 2 thirds.',
@@ -540,58 +540,64 @@ const M5_OVERRIDES: Record<number, Record<number, {
   },
   17: {
     1: {
+      sourcePrompt: 'Locate and label 0/6, 6/6, 12/6, 3/6, and 9/6 on the number line from 0 to 3.',
       numberLineModels: [{
         label: 'Sixths from 0 to 3',
         denominator: 6,
         startLabel: '0',
         endLabel: '3',
-        tickLabels: ['0', '3/6', '6/6 = 1', '9/6', '12/6 = 2', '18/6 = 3'],
-        targetNumerators: [0, 1, 2, 3, 4, 5]
+        tickLabels: m5FractionTickLabels(0, 3, 6),
+        targetNumerators: [0, 3, 6, 9, 12]
       }]
     },
     2: {
+      sourcePrompt: 'Locate and label 8/4, 6/4, 12/4, 16/4, and 4/4 on the number line from 1 to 4.',
       numberLineModels: [{
         label: 'Fourths from 1 to 4',
         denominator: 4,
         startLabel: '1',
         endLabel: '4',
-        tickLabels: ['4/4 = 1', '8/4 = 2', '12/4 = 3', '16/4 = 4'],
-        targetNumerators: [0, 1, 2, 3]
+        tickLabels: m5FractionTickLabels(1, 4, 4),
+        targetNumerators: [0, 2, 4, 8, 12]
       }]
     },
     3: {
+      sourcePrompt: 'Locate and label 18/3, 14/3, 9/3, 11/3, and 6/3 on the number line from 2 to 6.',
       numberLineModels: [{
         label: 'Thirds from 2 to 6',
         denominator: 3,
         startLabel: '2',
         endLabel: '6',
-        tickLabels: ['6/3 = 2', '9/3 = 3', '11/3', '14/3', '18/3 = 6'],
-        targetNumerators: [0, 1, 2, 3, 4]
+        tickLabels: m5FractionTickLabels(2, 6, 3),
+        targetNumerators: [0, 3, 5, 8, 12]
       }]
     },
     4: {
+      sourcePrompt: 'For a measurement project, Alex’s pinky finger measured 2 inches long and Jerimiah’s measured 7/4 inches long. Whose finger is longer? Draw a number line to prove your answer.',
       numberLineModels: [{
         label: 'Pinky-finger fourths',
         denominator: 4,
         startLabel: '0 in',
         endLabel: '2 in',
-        tickLabels: ['0', '2/4 in', '4/4 = 1 in', '7/4 in', '8/4 = 2 in'],
-        targetNumerators: [1, 3]
+        tickLabels: m5FractionTickLabels(0, 2, 4, ' in'),
+        targetNumerators: [7, 8]
       }]
     },
     5: {
+      sourcePrompt: 'Marcy ran 4 kilometers after school. She stopped to tie her shoelace at 7/5 kilometer and stopped to switch songs at 12/5 kilometers. Draw a number line showing her start, finish, and both stops.',
       numberLineModels: [{
         label: 'Marcy run fifths',
         denominator: 5,
         startLabel: '0 km',
         endLabel: '4 km',
-        tickLabels: ['0/5 = 0 km', '5/5 = 1 km', '7/5 km', '10/5 = 2 km', '12/5 km', '15/5 = 3 km', '20/5 = 4 km'],
-        targetNumerators: [0, 2, 4, 6]
+        tickLabels: m5FractionTickLabels(0, 4, 5, ' km'),
+        targetNumerators: [0, 7, 12, 20]
       }]
     }
   },
   18: {
     1: {
+      sourcePrompt: 'Place 1/4 and 3/4 on a number line from 0 to 1. Circle the fraction closest to 0, then compare using >, <, or =.',
       numberLineModels: [{
         label: 'Provided fourths comparison',
         denominator: 4,
@@ -600,28 +606,68 @@ const M5_OVERRIDES: Record<number, Record<number, {
       }],
       quotientMeaning: 'On the same fourths number line, 1/4 is closer to 0 than 3/4.'
     },
-    3: {
+    2: {
+      sourcePrompt: 'Place 2/6 and 3/6 on a number line from 0 to 1. Circle the fraction closest to 0, then compare using >, <, or =.',
       numberLineModels: [{
         label: 'Sixths comparison',
         denominator: 6,
-        tickLabels: ['0', '2/6', '3/6', '6/6 = 1'],
+        tickLabels: m5FractionTickLabels(0, 1, 6),
+        targetNumerators: [2, 3]
+      }]
+    },
+    3: {
+      sourcePrompt: 'Place 1/2 and 1/4 on a number line from 0 to 1. Circle the fraction closest to 0, then compare using >, <, or =.',
+      numberLineModels: [{
+        label: 'Halves and fourths comparison',
+        denominator: 4,
+        tickLabels: m5FractionTickLabels(0, 1, 4),
         targetNumerators: [1, 2]
       }]
     },
     4: {
+      sourcePrompt: 'Place 2/3 and 2/6 on a number line from 0 to 1. Circle the fraction closest to 0, then compare using >, <, or =.',
       numberLineModels: [{
-        label: 'Halves and fourths comparison',
-        denominator: 4,
-        tickLabels: ['0', '1/2', '2/4', '1'],
-        targetNumerators: [1, 2]
+        label: 'Thirds and sixths comparison',
+        denominator: 6,
+        tickLabels: m5FractionTickLabels(0, 1, 6),
+        targetNumerators: [2, 4]
       }]
     },
     5: {
+      sourcePrompt: 'Place 11/8 and 7/4 on a number line from 1 to 2. Circle the fraction closest to 0, then compare using >, <, or =.',
       numberLineModels: [{
         label: 'Eighths and fourths comparison',
         denominator: 8,
-        tickLabels: ['0', '7/8', '1', '7/4', '2'],
-        targetNumerators: [1, 3]
+        tickLabels: m5FractionTickLabels(1, 2, 8),
+        targetNumerators: [3, 6]
+      }]
+    },
+    6: {
+      sourcePrompt: 'JoAnn walks 5/6 mile home from school, and Lupe walks 7/8 mile. Draw number lines to model both distances. Who walks less? Explain using pictures, numbers, and words.',
+      numberLineModels: [
+        { label: 'JoAnn: sixths from 0 to 1', denominator: 6, tickLabels: m5FractionTickLabels(0, 1, 6), targetNumerators: [5] },
+        { label: 'Lupe: eighths from 0 to 1', denominator: 8, tickLabels: m5FractionTickLabels(0, 1, 8), targetNumerators: [7] }
+      ]
+    },
+    7: {
+      sourcePrompt: 'Cheryl cuts two pieces of thread. The blue thread is 5/4 meters long, and the red thread is 4/5 meter long. Draw number lines to model both lengths. Which thread is shorter? Explain using pictures, numbers, and words.',
+      numberLineModels: [
+        { label: 'Blue thread: fourths from 0 to 2', denominator: 4, tickLabels: m5FractionTickLabels(0, 2, 4), targetNumerators: [5] },
+        { label: 'Red thread: fifths from 0 to 2', denominator: 5, tickLabels: m5FractionTickLabels(0, 2, 5), targetNumerators: [4] }
+      ]
+    },
+    8: {
+      sourcePrompt: 'Brandon measures three noodles: 7/8 foot, 7/4 feet, and 4/2 feet. Draw a number line, write a comparison sentence using >, <, or =, and explain using pictures, numbers, and words.',
+      fractionModels: [
+        { label: 'first noodle: 7/8 foot', numerator: 7, denominator: 8 },
+        { label: 'second noodle: 7/4 feet', numerator: 7, denominator: 4 },
+        { label: 'third noodle: 4/2 feet', numerator: 4, denominator: 2 }
+      ],
+      numberLineModels: [{
+        label: 'Spaghetti lengths in eighths',
+        denominator: 8,
+        tickLabels: m5FractionTickLabels(0, 2, 8),
+        targetNumerators: [7, 14, 16]
       }]
     }
   },
@@ -644,6 +690,224 @@ const M5_OVERRIDES: Record<number, Record<number, {
       quotientMeaning: 'Equivalent fractions can have different-looking shapes when the same-size whole and same amount are preserved.'
     }
   },
+  21: {
+    1: {
+      sourcePrompt: 'Use the fractional units to label the missing fractions on two pairs of number lines from 0 to 2: halves with fourths, then halves with sixths.',
+      fractionModels: [
+        { label: '0/2', numerator: 0, denominator: 2 },
+        { label: '3/2', numerator: 3, denominator: 2 },
+        { label: '1/4', numerator: 1, denominator: 4 },
+        { label: '2/4', numerator: 2, denominator: 4 },
+        { label: '4/4', numerator: 4, denominator: 4 },
+        { label: '6/4', numerator: 6, denominator: 4 },
+        { label: '8/4', numerator: 8, denominator: 4 },
+        { label: '1/6', numerator: 1, denominator: 6 },
+        { label: '3/6', numerator: 3, denominator: 6 },
+        { label: '6/6', numerator: 6, denominator: 6 },
+        { label: '9/6', numerator: 9, denominator: 6 },
+        { label: '12/6', numerator: 12, denominator: 6 }
+      ],
+      numberLineModels: [
+        { label: 'Halves and fourths from 0 to 2', denominator: 4, tickLabels: m5FractionTickLabels(0, 2, 4), targetNumerators: [1, 2, 3, 4, 5, 6, 7, 8] },
+        { label: 'Halves and sixths from 0 to 2', denominator: 6, tickLabels: m5FractionTickLabels(0, 2, 6), targetNumerators: [1, 3, 6, 9, 12] }
+      ]
+    },
+    2: {
+      fractionModels: [
+        { label: '1/2', numerator: 1, denominator: 2 },
+        { label: '2/4', numerator: 2, denominator: 4 },
+        { label: '3/6', numerator: 3, denominator: 6 },
+        { label: '2/2', numerator: 2, denominator: 2 },
+        { label: '4/4', numerator: 4, denominator: 4 },
+        { label: '6/6', numerator: 6, denominator: 6 },
+        { label: '3/2', numerator: 3, denominator: 2 },
+        { label: '6/4', numerator: 6, denominator: 4 },
+        { label: '9/6', numerator: 9, denominator: 6 },
+        { label: '4/2', numerator: 4, denominator: 2 },
+        { label: '8/4', numerator: 8, denominator: 4 },
+        { label: '12/6', numerator: 12, denominator: 6 }
+      ],
+      numberLineModels: [
+        { label: 'Equivalent halves and fourths', denominator: 4, tickLabels: m5FractionTickLabels(0, 2, 4), targetNumerators: [2, 4, 6, 8] },
+        { label: 'Equivalent halves and sixths', denominator: 6, tickLabels: m5FractionTickLabels(0, 2, 6), targetNumerators: [3, 6, 9, 12] }
+      ]
+    },
+    3: {
+      sourcePrompt: 'Use the number lines to complete: 2/4 = ___/6; 6/6 = ___/2 = ___/4; and 3/2 = ___/6 = ___/4.',
+      fractionModels: [
+        { label: '2/4', numerator: 2, denominator: 4 },
+        { label: '3/6', numerator: 3, denominator: 6 },
+        { label: '6/6', numerator: 6, denominator: 6 },
+        { label: '2/2', numerator: 2, denominator: 2 },
+        { label: '4/4', numerator: 4, denominator: 4 },
+        { label: '3/2', numerator: 3, denominator: 2 },
+        { label: '9/6', numerator: 9, denominator: 6 },
+        { label: '6/4', numerator: 6, denominator: 4 }
+      ],
+      numberLineModels: [
+        { label: 'Fourth-equivalent points', denominator: 4, tickLabels: m5FractionTickLabels(0, 2, 4), targetNumerators: [2, 4, 6] },
+        { label: 'Sixth-equivalent points', denominator: 6, tickLabels: m5FractionTickLabels(0, 2, 6), targetNumerators: [3, 6, 9] }
+      ]
+    },
+    4: {
+      sourcePrompt: 'Jack and Jill use same-size rain gauges. Jack’s gauge is marked in fourths and reads 2/4 inch. Jill’s is marked in eighths. What is Jill’s equivalent reading? Draw a number line to explain.',
+      fractionModels: [
+        { label: 'Jack: 2/4 inch', numerator: 2, denominator: 4 },
+        { label: 'Jill: 4/8 inch', numerator: 4, denominator: 8 }
+      ],
+      numberLineModels: [{ label: 'Rain gauge eighths', denominator: 8, tickLabels: m5FractionTickLabels(0, 1, 8, ' in'), targetNumerators: [4] }]
+    },
+    5: {
+      sourcePrompt: 'Rosco says the same Thursday rainfall was 1/2 inch. Is he correct? Explain with words and a number line, using Jack’s 2/4 inch and Jill’s 4/8 inch readings.',
+      fractionModels: [
+        { label: 'Rosco: 1/2 inch', numerator: 1, denominator: 2 },
+        { label: 'Jack: 2/4 inch', numerator: 2, denominator: 4 },
+        { label: 'Jill: 4/8 inch', numerator: 4, denominator: 8 }
+      ],
+      numberLineModels: [{ label: 'Equivalent half-inch readings', denominator: 8, tickLabels: m5FractionTickLabels(0, 1, 8, ' in'), targetNumerators: [4] }]
+    }
+  },
+  23: {
+    1: {
+      numberLineModels: [{ label: 'Red fourths from 0 to 3', denominator: 4, tickLabels: m5FractionTickLabels(0, 3, 4), targetNumerators: Array.from({ length: 13 }, (_, index) => index) }]
+    },
+    2: {
+      numberLineModels: [{ label: 'Blue eighths from 0 to 3', denominator: 8, tickLabels: m5FractionTickLabels(0, 3, 8), targetNumerators: Array.from({ length: 25 }, (_, index) => index) }]
+    },
+    3: {
+      numberLineModels: [
+        { label: 'Fourth labels', denominator: 4, tickLabels: m5FractionTickLabels(0, 3, 4), targetNumerators: Array.from({ length: 13 }, (_, index) => index) },
+        { label: 'Equivalent eighth labels', denominator: 8, tickLabels: m5FractionTickLabels(0, 3, 8), targetNumerators: Array.from({ length: 25 }, (_, index) => index) }
+      ]
+    },
+    4: {
+      sourcePrompt: 'Using the shared fourths-and-eighths number line, find the red fraction and blue fraction equal to 7/2. Draw and label the part of the number line that contains them.',
+      fractionModels: [
+        { label: '7/2', numerator: 7, denominator: 2 },
+        { label: '14/4', numerator: 14, denominator: 4 },
+        { label: '28/8', numerator: 28, denominator: 8 }
+      ],
+      numberLineModels: [{
+        label: 'Equivalent point at three and one half',
+        denominator: 8,
+        tickLabels: ['24/8 = 3', '25/8', '26/8', '27/8', '7/2 = 14/4 = 28/8', '29/8', '30/8', '31/8', '32/8 = 4'],
+        targetNumerators: [4]
+      }]
+    },
+    5: {
+      sourcePrompt: 'For each of the four plotted dots, write two different equivalent fractions. You may use halves, thirds, fourths, fifths, sixths, or eighths.',
+      fractionModels: [
+        { label: '1/3', numerator: 1, denominator: 3 },
+        { label: '2/6', numerator: 2, denominator: 6 },
+        { label: '2/4', numerator: 2, denominator: 4 },
+        { label: '1/2', numerator: 1, denominator: 2 },
+        { label: '4/8', numerator: 4, denominator: 8 },
+        { label: '5/4', numerator: 5, denominator: 4 },
+        { label: '10/8', numerator: 10, denominator: 8 },
+        { label: '10/5', numerator: 10, denominator: 5 },
+        { label: '2/1', numerator: 2, denominator: 1 }
+      ],
+      numberLineModels: [
+        { label: '1/3 = 2/6', denominator: 6, tickLabels: m5FractionTickLabels(0, 1, 6), targetNumerators: [2] },
+        { label: '2/4 = 1/2 = 4/8', denominator: 8, tickLabels: m5FractionTickLabels(0, 1, 8), targetNumerators: [4] },
+        { label: '5/4 = 10/8', denominator: 8, tickLabels: m5FractionTickLabels(1, 2, 8), targetNumerators: [2] },
+        { label: '10/5 = 2/1', denominator: 5, tickLabels: m5FractionTickLabels(0, 2, 5), targetNumerators: [10] }
+      ]
+    },
+    6: {
+      sourcePrompt: 'Cameron rests after running 2 of 3 equal race parts (2/3). Terrance rests after running 2 of 6 equal race parts (2/6). Will they rest at the same point? Draw a number line and explain.',
+      fractionModels: [
+        { label: 'Cameron: 2/3 of the race', numerator: 2, denominator: 3 },
+        { label: 'Terrance: 2/6 of the race', numerator: 2, denominator: 6 }
+      ],
+      numberLineModels: [
+        { label: 'Cameron: thirds', denominator: 3, tickLabels: m5FractionTickLabels(0, 1, 3), targetNumerators: [2] },
+        { label: 'Terrance: sixths', denominator: 6, tickLabels: m5FractionTickLabels(0, 1, 6), targetNumerators: [2] }
+      ]
+    }
+  },
+  25: {
+    1: {
+      numberLineModels: [],
+      fractionModels: [
+        { label: '3/3', numerator: 3, denominator: 3 },
+        { label: '3/2', numerator: 3, denominator: 2 },
+        { label: '3/1', numerator: 3, denominator: 1 },
+        { label: '4/4', numerator: 4, denominator: 4 },
+        { label: '4/2', numerator: 4, denominator: 2 },
+        { label: '4/1', numerator: 4, denominator: 1 },
+        { label: '6/6', numerator: 6, denominator: 6 },
+        { label: '6/3', numerator: 6, denominator: 3 },
+        { label: '6/1', numerator: 6, denominator: 1 }
+      ]
+    },
+    2: {
+      sourcePrompt: 'Fill in the missing whole numbers 2, 3, 5, and 6 below the number line. Rename every point from 0 through 6 as a fraction with denominator 1.',
+      fractionModels: [
+        { label: '0/1', numerator: 0, denominator: 1 },
+        { label: '1/1', numerator: 1, denominator: 1 },
+        { label: '2/1', numerator: 2, denominator: 1 },
+        { label: '3/1', numerator: 3, denominator: 1 },
+        { label: '4/1', numerator: 4, denominator: 1 },
+        { label: '5/1', numerator: 5, denominator: 1 },
+        { label: '6/1', numerator: 6, denominator: 1 }
+      ],
+      numberLineModels: [{
+        label: 'Whole numbers renamed in ones',
+        denominator: 1,
+        tickLabels: ['0/1 = 0', '1/1 = 1', '2/1 = 2', '3/1 = 3', '4/1 = 4', '5/1 = 5', '6/1 = 6'],
+        targetNumerators: [0, 1, 2, 3, 4, 5, 6]
+      }]
+    },
+    3: {
+      sourcePrompt: 'Explain the difference between 2/1 and 2/2 using words and pictures.',
+      fractionModels: [
+        { label: '2/1: two wholes', numerator: 2, denominator: 1 },
+        { label: '2/2: one whole', numerator: 2, denominator: 2 }
+      ],
+      numberLineModels: []
+    }
+  },
+  27: {
+    1: {
+      fractionModels: [
+        { label: '4/6', numerator: 4, denominator: 6 },
+        { label: '2/3', numerator: 2, denominator: 3 },
+        { label: '1/2', numerator: 1, denominator: 2 },
+        { label: '4/8', numerator: 4, denominator: 8 }
+      ]
+    },
+    2: {
+      fractionModels: [
+        { label: 'first bar: 2/2', numerator: 2, denominator: 2 },
+        { label: 'second bar: 4/4', numerator: 4, denominator: 4 },
+        { label: 'third bar: 6/6', numerator: 6, denominator: 6 },
+        { label: 'one equal share: 1/2', numerator: 1, denominator: 2 },
+        { label: 'one equal share: 2/4', numerator: 2, denominator: 4 },
+        { label: 'one equal share: 3/6', numerator: 3, denominator: 6 }
+      ]
+    },
+    3: {
+      fractionModels: [
+        { label: 'six copies of 1/8: 6/8', numerator: 6, denominator: 8 },
+        { label: 'three copies of 1/4: 3/4', numerator: 3, denominator: 4 }
+      ]
+    },
+    4: {
+      fractionModels: [
+        { label: '2 sixths', numerator: 2, denominator: 6 },
+        { label: '1 third', numerator: 1, denominator: 3 }
+      ]
+    },
+    5: {
+      fractionModels: [
+        { label: 'original whole: 4/4', numerator: 4, denominator: 4 },
+        { label: 'after doubling parts: 8/8', numerator: 8, denominator: 8 },
+        { label: 'one original fourth: 1/4', numerator: 1, denominator: 4 },
+        { label: 'same amount in eighths: 2/8', numerator: 2, denominator: 8 }
+      ]
+    }
+  },
   29: {
     1: {
       fractionModels: [
@@ -660,6 +924,16 @@ const M5_OVERRIDES: Record<number, Record<number, {
     }
   }
 };
+
+function m5FractionTickLabels(startWhole: number, endWhole: number, denominator: number, unit = ''): string[] {
+  const startNumerator = startWhole * denominator;
+  const endNumerator = endWhole * denominator;
+  return Array.from({ length: endNumerator - startNumerator + 1 }, (_, offset) => {
+    const numerator = startNumerator + offset;
+    const wholeLabel = numerator % denominator === 0 ? ` = ${numerator / denominator}` : '';
+    return `${numerator}/${denominator}${wholeLabel}${unit}`;
+  });
+}
 
 function pageRange(start: number, end: number): number[] {
   return Array.from({ length: Math.max(0, end - start + 1) }, (_, index) => start + index);
@@ -1325,7 +1599,7 @@ function makeProblem(lessonNumber: number, sourceProblem: M5WorkbookProblem & { 
 function createM5ProblemVisual(problem: ProblemSetCenteredProblem, solved: boolean, lessonNumber: number): ProblemVisualSpec {
   const sections: ProblemVisualSpec['sections'] = [];
   const sourceNote = solved
-    ? 'Solved view uses the Module 5 Teacher Edition answer key with authored fraction visuals and whole/unit checks.'
+    ? `Teacher Edition answer modeled here: ${problem.solvedAnswer}`
     : 'Blank view keeps the authored fraction workspace open with the whole, equal-part structure, labels, and response blanks.';
 
   const officialIllustration = m5OfficialIllustrationSection(lessonNumber, problem, solved);

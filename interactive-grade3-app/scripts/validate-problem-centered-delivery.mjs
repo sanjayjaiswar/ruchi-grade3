@@ -271,8 +271,24 @@ function validateProblem(moduleId, lessonNumber, problem) {
 
   if (moduleId === 'm5' && problem.blankVisualType === 'number-line-template') {
     const visualText = stringifyVisual(problem);
+    const fractionWordDenominators = {
+      halves: 2,
+      thirds: 3,
+      fourths: 4,
+      fifths: 5,
+      sixths: 6,
+      eighths: 8,
+      tenths: 10
+    };
+    const modeledDenominators = new Set([
+      ...(problem.numberLineModels ?? []).map((model) => model.denominator),
+      ...(problem.fractionModels ?? []).map((model) => model.denominator)
+    ]);
     for (const word of expectedFractionWords(problem)) {
-      if (!visualText.includes(word) && !visualText.includes(word.replace(/s$/, ''))) {
+      const denominator = fractionWordDenominators[word];
+      if (!visualText.includes(word) &&
+          !visualText.includes(word.replace(/s$/, '')) &&
+          !modeledDenominators.has(denominator)) {
         report(label, `number-line visual does not reflect expected ${word}`);
       }
     }
@@ -731,8 +747,11 @@ function validateM5ModuleLesson(lessonNumber, runtime, centeredLesson) {
       }
       if (section.kind === 'equations') {
         for (const line of section.lines ?? []) {
-          const fractions = [...String(line).matchAll(/(\d+)\/(\d+)/g)].map((match) => Number(match[1]) / Number(match[2]));
-          if (line.includes('=') && fractions.length >= 2 && fractions.some((value) => Math.abs(value - fractions[0]) > 1e-9)) {
+          const equationText = String(line).includes(':')
+            ? String(line).slice(String(line).lastIndexOf(':') + 1)
+            : String(line);
+          const fractions = [...equationText.matchAll(/(\d+)\/(\d+)/g)].map((match) => Number(match[1]) / Number(match[2]));
+          if (equationText.includes('=') && fractions.length >= 2 && fractions.some((value) => Math.abs(value - fractions[0]) > 1e-9)) {
             report(`${label} P${problem.number}`, `false fraction equality: ${line}`);
           }
         }

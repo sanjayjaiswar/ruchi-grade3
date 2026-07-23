@@ -422,7 +422,7 @@ export function createM1ProblemVisual(seed: M1ProblemVisualSeed, solved: boolean
   const sections: ProblemVisualSpec['sections'] = [];
   const title = `Problem ${seed.number}: ${visualTitle(seed)}`;
   const sourceNote = solved
-    ? 'Solved view uses the authored Module 1 Teacher Edition answer quantities and equations.'
+    ? `Teacher Edition answer modeled here: ${seed.solvedAnswer} ${seed.equations.join('; ')}`
     : 'Blank view keeps the student Problem Set workspace visual and leaves the answer work open.';
 
   if (seed.relatedFacts?.length) {
@@ -1538,12 +1538,12 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       {
         number: 1,
         sourcePrompt: 'Use the car array to answer: How many rows of cars are there? How many cars are there in each row?',
-        solvedAnswer: 'There are 4 rows with 3 cars in each row, for 12 cars total.',
-        equations: ['4 x 3 = 12'],
-        knownTotal: 12,
+        solvedAnswer: 'There are 4 rows with 2 cars in each row, for 8 cars total.',
+        equations: ['4 x 2 = 8'],
+        knownTotal: 8,
         knownGroupCount: 4,
-        knownGroupSize: 3,
-        quotient: 12,
+        knownGroupSize: 2,
+        quotient: 8,
         unitLabel: 'cars',
         groupLabel: 'rows',
         blankVisualType: 'array-template',
@@ -1583,12 +1583,12 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       {
         number: 4,
         sourcePrompt: 'There are 5 rows of triangles. How many triangles are in each row? Write a multiplication expression for the total.',
-        solvedAnswer: 'There are 3 triangles in each row, so there are 15 triangles total.',
-        equations: ['5 x 3 = 15'],
-        knownTotal: 15,
+        solvedAnswer: 'There are 4 triangles in each row, so there are 20 triangles total.',
+        equations: ['5 x 4 = 20'],
+        knownTotal: 20,
         knownGroupCount: 5,
-        knownGroupSize: 3,
-        quotient: 15,
+        knownGroupSize: 4,
+        quotient: 20,
         unitLabel: 'triangles',
         groupLabel: 'rows',
         blankVisualType: 'array-template',
@@ -1670,17 +1670,17 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       {
         number: 2,
         sourcePrompt: 'There are _______ candies in each box. How many candies are in 6 boxes?',
-        solvedAnswer: 'There are 4 candies in each box, so there are 24 candies altogether.',
-        equations: ['6 x 4 = 24'],
+        solvedAnswer: 'There are 3 candies in each box, so there are 18 candies altogether.',
+        equations: ['6 x 3 = 18'],
         knownGroupCount: 6,
-        knownGroupSize: 4,
-        knownTotal: 24,
-        quotient: 24,
+        knownGroupSize: 3,
+        knownTotal: 18,
+        quotient: 18,
         unitLabel: 'candies',
         groupLabel: 'boxes',
         blankVisualType: 'array-template',
         animationType: 'array-model',
-        explanation: 'The first factor is 6 boxes. The official Teacher Edition picture shows 4 candies in each box.'
+        explanation: 'The first factor is 6 boxes. The official Teacher Edition picture shows 3 candies in each box.'
       },
       {
         number: 3,
@@ -2131,11 +2131,12 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       {
         number: 5,
         sourcePrompt: 'Write and solve multiplication sentences where the second factor represents the size of the row.',
-        solvedAnswer: 'Each sentence should use row count as the first factor and row size as the second factor.',
-        equations: ['rows x row size = total'],
-        knownGroupCount: 2,
-        knownGroupSize: 6,
-        quotient: 12,
+        solvedAnswer: 'The two source arrays give 4 x 2 = 8 and 2 x 4 = 8. In each equation, the second factor names the size of a row.',
+        equations: ['4 x 2 = 8', '2 x 4 = 8'],
+        knownTotal: 8,
+        knownGroupCount: 4,
+        knownGroupSize: 2,
+        quotient: 8,
         unitLabel: 'objects',
         groupLabel: 'rows',
         blankVisualType: 'array-template',
@@ -2521,11 +2522,12 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       {
         number: 2,
         sourcePrompt: 'Mr. Lawton picks tomatoes from his garden. He divides the tomatoes into bags of 3. a. Circle to show how many bags he packs. Then, skip-count to show the total number of tomatoes. b. Draw and label a tape diagram to represent the problem. ______ divided by 3 = ______. Mr. Lawton packs ______ bags of tomatoes.',
-        solvedAnswer: 'Mr. Lawton packs 5 bags of tomatoes.',
-        equations: ['15 divided by 3 = 5', '5 x 3 = 15'],
-        knownTotal: 15,
+        solvedAnswer: 'The source picture has 12 tomatoes. Skip-count 3, 6, 9, 12 to make 4 bags of 3 tomatoes.',
+        equations: ['12 divided by 3 = 4', '4 x 3 = 12'],
+        knownTotal: 12,
         knownGroupSize: 3,
-        quotient: 5,
+        knownGroupCount: 4,
+        quotient: 4,
         unitLabel: 'tomatoes',
         groupLabel: 'bags',
         blankVisualType: 'object-bank',

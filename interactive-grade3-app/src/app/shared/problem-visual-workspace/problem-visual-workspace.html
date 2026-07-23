@@ -109,7 +109,10 @@
 
             <ng-container *ngIf="numberLineSection(child) as line">
               <strong *ngIf="line.label">{{ line.label }}</strong>
-              <div class="visual-number-line" [class.is-vertical]="line.orientation === 'vertical'">
+              <div
+                class="visual-number-line"
+                [class.is-dense]="line.ticks.length >= 9"
+                [class.is-vertical]="line.orientation === 'vertical'">
                 <div>
                   <span
                     *ngFor="let tick of line.ticks"
@@ -802,7 +805,10 @@
 
     <ng-container *ngIf="numberLineSection(section) as line">
       <strong *ngIf="line.label">{{ line.label }}</strong>
-      <div class="visual-number-line" [class.is-vertical]="line.orientation === 'vertical'">
+      <div
+        class="visual-number-line"
+        [class.is-dense]="line.ticks.length >= 9"
+        [class.is-vertical]="line.orientation === 'vertical'">
         <div>
           <span
             *ngFor="let tick of line.ticks"
