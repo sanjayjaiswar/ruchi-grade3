@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m3-l7",
+  "teacherEditionPdfSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m3/lesson-7-page-28.png",
+      "sha256": "aff3a28028f7ba9ee7822b3d7e72495e91b1f3ceeee8a99c3dbe24b36ed79386",
+      "pdfPage": 90,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 7 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-7-page-29.png",
+      "sha256": "717badf1c8870f048d771173df9bde69f82cd20dd38cc7a7b63f1926cfe8b2db",
+      "pdfPage": 91,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 7 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-291.png",
+      "sha256": "dd1b496dd7391a4ab3e13d87591a3f5935992744cd1080eb8aa21d32b10f64df",
+      "pdfPage": 291,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 7 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-292.png",
+      "sha256": "ba10b0b582bd54aefe214506bcdfaa76d0af21e21ed44bf26c18bbd529c9d01e",
+      "pdfPage": 292,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 7 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m3/lesson-7-page-28.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "match the words to the correct equation"
+        ],
+        "answerKeyEvidence": "Words matched to corresponding equations.",
+        "layout": {
+          "family": "caterpillar-leaf-equation-match",
+          "subpartCount": 6,
+          "modelPrimitive": "word-caterpillar+equation-leaf",
+          "modelCounts": [
+            6,
+            6
+          ],
+          "modelOrientation": "left-and-right-columns",
+          "responseStructure": "draw-matching-lines"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure and mathematical primitives were reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m3/lesson-7-page-28.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "write an equation to represent the tape diagram"
+        ],
+        "answerKeyEvidence": "6 × 8 = k or 8 × 6 = k; k = 48.",
+        "layout": {
+          "family": "unknown-whole-tape-diagram",
+          "subpartCount": 1,
+          "modelPrimitive": "tape-diagram",
+          "modelCounts": [
+            6
+          ],
+          "knownModelCounts": [
+            8
+          ],
+          "modelOrientation": "horizontal",
+          "responseStructure": "equation-and-unknown-value"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure and mathematical primitives were reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m3/lesson-7-page-29.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "model each problem with a drawing then write an equation using a letter to"
+        ],
+        "answerKeyEvidence": "a. Picture models equation; 7. b. Picture models equation; 4 minutes. c. Picture models equation; 48 cm. d. Picture models equation; 9.",
+        "layout": {
+          "family": "four-part-drawing-equation-response",
+          "subpartCount": 4,
+          "modelPrimitive": "student-drawing-or-solved-tape",
+          "modelCounts": [
+            4
+          ],
+          "modelOrientation": "vertical-story-parts",
+          "openWorkspaceCount": 4,
+          "responseStructure": "drawing-letter-equation-and-solution"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure and mathematical primitives were reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    }
+  ]
+}

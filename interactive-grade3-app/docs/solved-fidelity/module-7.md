@@ -1,54 +1,43 @@
-# Module 7 Solved-Fidelity Audit
+# Module 7 Solved Teacher Edition audit
 
-Audited: 2026-07-22  
-Scope: Problem Set → Solved functional fidelity for word problems, geometry, measurement, area/perimeter, graphs, and fraction applications.
+Audited: 2026-07-26
+
+## Result
+
+All 34 Module 7 Solved routes deliver the exact reviewed Blank task crop first and the complete fingerprinted Teacher Edition Answer Key page image after it. The 127 tasks remain in printed order. Authored equations, inferred diagrams, rubric-controlled substitutes, and generic renderer output are not used as solved evidence.
 
 ## Evidence
 
-- Teacher Edition baseline validation passed for all 34 lessons.
-- Problem-centered delivery validation passed for 127 delivered problem cards.
-- All 34 live Solved routes rendered with correct card counts, readable prompts, and no overflow or broken values.
+- Teacher Edition PDF SHA-256: `608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175`
+- Reviewed source evidence: `teacher-edition-baseline/module-7-problem-evidence.json`
+- Reviewed lesson contracts: `teacher-edition-baseline/visual-layout-contracts/m7/lesson-01.json` through `lesson-34.json`
+- Visual review: 132 task/resource crops and all 57 Answer Key pages
+- Live review: 34 Solved routes and all 127 Solved cards physically scrolled into view
 
-## Lesson status
+## Solved acceptance checks
 
-| Lesson | Problems | Response type | Status | Notes |
-|---|---:|---|---|---|
-| 1 | 4 | Fixed | Pass | No known solved-content gap. |
-| 2 | 6 | Fixed | Pass | No known solved-content gap. |
-| 3 | 6 | Fixed | Pass | RDW word-problem visuals are enforced. |
-| 4 | 4 | Variable | Pass | Variable quadrilateral work retains Shapes A–L. |
-| 5 | 4 | Variable | Pass | Variable polygon work retains Shapes M–X. |
-| 6 | 6 | Fixed | Pass | Required construction shapes are enforced. |
-| 7 | 4 | Variable | Pass | Concrete tetromino pieces and joins are enforced. |
-| 8 | 7 | Variable | Pass | Seven source tangram pieces are enforced. |
-| 9 | 4 | Fixed | Pass | Seven source tangram pieces are enforced. |
-| 10 | 3 | Variable | Pass | Variable measurement work is rubric-controlled. |
-| 11 | 4 | Variable | Pass | Variable measurement work is rubric-controlled. |
-| 12 | 4 | Variable | Pass | Variable measurement work is rubric-controlled. |
-| 13 | 3 | Fixed | Pass | No known solved-content gap. |
-| 14 | 5 | Variable | Pass | Variable measurement work is rubric-controlled. |
-| 15 | 6 | Fixed | Pass | No known solved-content gap. |
-| 16 | 4 | Variable | Pass | Variable measurement work is rubric-controlled. |
-| 17 | 3 | Fixed | Pass | No known solved-content gap. |
-| 18 | 3 | Variable | Pass | Variable area reasoning is rubric-controlled. |
-| 19 | 4 | Variable | Pass | Line-plot values are source-checked. |
-| 20 | 2 | Variable | Pass | Variable area reasoning is rubric-controlled. |
-| 21 | 4 | Variable | Pass | Variable area reasoning is rubric-controlled. |
-| 22 | 5 | Variable | Pass | Variable graph reasoning is rubric-controlled. |
-| 23 | 6 | Fixed | Pass | Source measurement values are enforced. |
-| 24 | 1 | Fixed | Pass | Robot perimeter values 14, 18, 28, 16, and 8 cm are enforced. |
-| 25 | 1 | Fixed | Pass | No known solved-content gap. |
-| 26 | 4 | Variable | Pass | Variable project data is rubric-controlled. |
-| 27 | 4 | Fixed | Pass | No known solved-content gap. |
-| 28 | 4 | Fixed | Pass | No known solved-content gap. |
-| 29 | 4 | Fixed | Pass | No known solved-content gap. |
-| 30 | 1 | Variable | Pass | Variable graph response is rubric-controlled. |
-| 31 | 1 | Variable | Pass | Variable fraction response is rubric-controlled. |
-| 32 | 4 | Variable | Pass | Variable fraction response is rubric-controlled. |
-| 33 | 1 | Variable | Pass | Variable graph response is rubric-controlled. |
-| 34 | 1 | Fixed | Pass | No known solved-content gap. |
+Every Solved card was checked for:
 
-## Open follow-up
+- exact lesson and printed task order;
+- exact Teacher Edition task crop before any answer evidence;
+- a second source workspace labeled `Teacher Edition Answer Key`;
+- the reviewed Answer Key page image or images for that lesson;
+- complete 1224 × 1584 source images;
+- crop geometry and transforms matching the reviewed contract;
+- retained multi-page task continuations;
+- no legacy authored explanation card;
+- no broken image, collapsed visual, or horizontal overflow.
 
-No known content, answer, model, or source-layout gap remains under the functional-fidelity standard.
+The complete Answer Key page is intentionally retained rather than split or rewritten. Several source pages use side-by-side columns and shared lesson sections; assigning fragments to individual problems would require inference.
 
+## Exceptions resolved from the printed source
+
+- Lesson 26 page 344 was rejected as a task continuation after direct visual review. The official Problem Set tasks are on pages 348–349, with answers on 505–506.
+- Lesson 34 has no conventional Problem Set. The exact Summer Math Review Calendar on resource pages 461–462 is the task, and page 520 is its Answer Key.
+- Multi-page controlling task evidence is retained for Lessons 10, 24, 28, 32, and 34.
+
+## Validation
+
+The Module 7 source contracts failed all 34 lessons before the generic implementation was replaced. They now pass together with the Teacher Edition baseline, problem-centered delivery, solved-fidelity, no-PDF-tab, and production build checks.
+
+No known Module 7 Blank/Solved content, source-image, task-order, continuation, Answer Key, crop-layout, or live-render gap remains under the Teacher Edition-only standard.

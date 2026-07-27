@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m1-l18",
+  "teacherEditionPdfSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m1-teacher/page-240.png",
+      "sha256": "9c969f06ec016f80861d9ffc81f083bfea742ea9f31a7b116c19825c48ce4f72",
+      "pdfPage": 240,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 18 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-241.png",
+      "sha256": "c0e327477d83cd9ad479a54e1c8263bb4b748e0846fc2f127872cfd87c264a21",
+      "pdfPage": 241,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 18 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-323.png",
+      "sha256": "a4def9a66108b3b2d291be8946900c119e3398f708605f27555ab29fda761ed7",
+      "pdfPage": 323,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 18 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-324.png",
+      "sha256": "f4f8bc1a60932e6acd285f654cc08af9683b73da6e34ee05d5c72dc96a1d0eeb",
+      "pdfPage": 324,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 18 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m1-teacher/page-240.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "8 × 10 ="
+        ],
+        "answerKeyEvidence": "80; 3 tens; 3 tens; 3; 30, 80; 80",
+        "layout": {
+          "family": "number-bond-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m1-teacher/page-240.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "7 × 4 ="
+        ],
+        "answerKeyEvidence": "28; 2 fours; 2 fours; 2; 8, 28; 28",
+        "layout": {
+          "family": "number-bond-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m1-teacher/page-240.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "9 × 10 ="
+        ],
+        "answerKeyEvidence": "90; 4 × 10; 4 tens; 4; 50, 40, 90; 90",
+        "layout": {
+          "family": "number-bond-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m1-teacher/page-240.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "10 × 10 ="
+        ],
+        "answerKeyEvidence": "100; 5 × 10, 5 × 10; 5 tens, 5 tens; 5, 5; 50, 50, 100; 100",
+        "layout": {
+          "family": "number-bond-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m1-teacher/page-241.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "There are 7 teams in the soccer tournament. Ten children play on each team. How many children are playing in the tournament? Use the break apart and distribute strategy, and draw a number bond to solve. There are ____ children playing in the tournament."
+        ],
+        "answerKeyEvidence": "70; number bond showing (5 × 10) + (2 × 10) equals 7 × 10 drawn",
+        "layout": {
+          "family": "number-bond-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m1-teacher/page-241.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "What is the total number of sides on 8 triangles?"
+        ],
+        "answerKeyEvidence": "24",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 7,
+      "sourcePageImage": "/source-pages/m1-teacher/page-241.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "There are 12 rows of bottled drinks in the vending machine. Each row has 10 bottles. How many bottles are in the vending machine?"
+        ],
+        "answerKeyEvidence": "120",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

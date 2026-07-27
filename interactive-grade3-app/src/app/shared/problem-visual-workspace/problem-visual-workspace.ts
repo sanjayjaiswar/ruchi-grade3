@@ -28,10 +28,14 @@ import type {
   ProblemVisualSolutionPartsSection,
   ProblemVisualSpec,
   ProblemVisualSourceDirectionsSection,
+  ProblemVisualSourceFirstWorkspaceSection,
   ProblemVisualSourceCropSection,
+  ProblemVisualSourceResponseWorkspaceSection,
   ProblemVisualStopwatchSection,
   ProblemVisualTapeSection,
-  ProblemVisualTimeLineSection
+  ProblemVisualTimeLineSection,
+  ProblemVisualUnitFormWorkspaceSection,
+  ProblemVisualUnknownRiddleWorkspaceSection
 } from '../../data/lessons/lesson-runtime.types';
 
 @Component({
@@ -119,6 +123,10 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     return section.kind === 'clock' ? section : undefined;
   }
 
+  clockFaceTicks(): number[] {
+    return Array.from({ length: 60 }, (_, index) => index);
+  }
+
   clockHasTime(clock: ProblemVisualClockSection): boolean {
     return this.clockTimeParts(clock) !== undefined;
   }
@@ -179,6 +187,22 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     return section.kind === 'source-crop' ? section : undefined;
   }
 
+  sourceFirstWorkspaceSection(section: ProblemVisualSection): ProblemVisualSourceFirstWorkspaceSection | undefined {
+    return section.kind === 'source-first-workspace' ? section : undefined;
+  }
+
+  unitFormWorkspaceSection(section: ProblemVisualSection): ProblemVisualUnitFormWorkspaceSection | undefined {
+    return section.kind === 'unit-form-workspace' ? section : undefined;
+  }
+
+  unknownRiddleWorkspaceSection(section: ProblemVisualSection): ProblemVisualUnknownRiddleWorkspaceSection | undefined {
+    return section.kind === 'unknown-riddle-workspace' ? section : undefined;
+  }
+
+  sourceResponseWorkspaceSection(section: ProblemVisualSection): ProblemVisualSourceResponseWorkspaceSection | undefined {
+    return section.kind === 'source-response-workspace' ? section : undefined;
+  }
+
   sourceCropAspect(section: ProblemVisualSourceCropSection): string {
     return `${section.crop.width} / ${section.crop.height}`;
   }
@@ -232,6 +256,50 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
 
     const row = Math.floor(index / section.columns);
     return row === section.splitAfterRows;
+  }
+
+  arrayCellIsAfterColumnSplit(section: ProblemVisualArraySection, index: number): boolean {
+    if (!section.splitAfterColumns) {
+      return false;
+    }
+
+    return index % section.columns === section.splitAfterColumns;
+  }
+
+  arrayCellIsSourceShaded(section: ProblemVisualArraySection, index: number): boolean {
+    const row = Math.floor(index / section.columns);
+    const column = index % section.columns;
+    return (
+      (section.shadeBeforeRows !== undefined && row < section.shadeBeforeRows) ||
+      (section.shadeBeforeColumns !== undefined && column < section.shadeBeforeColumns) ||
+      (section.shadeAfterRows !== undefined && row >= section.rows - section.shadeAfterRows) ||
+      (section.shadeAfterColumns !== undefined && column >= section.columns - section.shadeAfterColumns)
+    );
+  }
+
+  arrayCellIsGroupEnd(section: ProblemVisualArraySection, index: number): boolean {
+    if (!section.groupEveryColumns) {
+      return false;
+    }
+
+    const column = index % section.columns;
+    return (column + 1) % section.groupEveryColumns === 0 && column < section.columns - 1;
+  }
+
+  arrayCellIsOutlined(section: ProblemVisualArraySection, index: number): boolean {
+    if (section.outlineAfterColumns === undefined) {
+      return false;
+    }
+
+    return index % section.columns >= section.outlineAfterColumns;
+  }
+
+  expressionMatchPairs(section: ProblemVisualExpressionMatchSection): Array<{ top: string; bottom: string }> {
+    const count = Math.max(section.topItems.length, section.bottomItems.length);
+    return Array.from({ length: count }, (_, index) => ({
+      top: section.topItems[index] ?? '',
+      bottom: section.bottomItems[index] ?? ''
+    }));
   }
 
   tapeBraceGridColumn(brace: NonNullable<ProblemVisualTapeSection['braces']>[number]): string {
@@ -298,6 +366,14 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     return this.mode === 'solved' && index < Math.max(0, section.numerator);
   }
 
+  fractionStripIsRowEnd(section: ProblemVisualFractionStripSection, index: number): boolean {
+    return (index + 1) % Math.max(1, section.denominator) === 0;
+  }
+
+  fractionStripHasRowBelow(section: ProblemVisualFractionStripSection, index: number): boolean {
+    return index < this.fractionStripCellCount(section) - Math.max(1, section.denominator);
+  }
+
   fractionStripCellLabel(section: ProblemVisualFractionStripSection, index: number): string {
     if (!this.fractionStripIsShaded(section, index)) {
       return '';
@@ -355,12 +431,12 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
 
   linePlotXs(section: ProblemVisualLinePlotSection, item: ProblemVisualLinePlotSection['values'][number]): number[] {
     if (this.mode === 'blank' && !section.showBlankValues) {
-      return [0];
+      return [];
     }
     const maxValue = Math.max(1, ...section.values.map((value) => value.value ?? 0));
     const scale = scaleLinear().domain([0, maxValue]).range([0, Math.min(maxValue, 12)]);
     const count = Math.round(scale(item.value ?? 0));
-    return this.range(Math.max(this.mode === 'blank' ? 1 : 0, count), 12);
+    return this.range(Math.max(0, count), 12);
   }
 
   chartValueLabel(section: ProblemVisualDataChartSection, item: ProblemVisualDataChartSection['values'][number]): string {
@@ -375,28 +451,28 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
 
   chartBarWidth(section: ProblemVisualDataChartSection, item: ProblemVisualDataChartSection['values'][number]): string {
     if (this.mode === 'blank' && !section.showBlankValues) {
-      return '18%';
+      return '0%';
     }
     const max = section.maxValue && section.maxValue > 0
       ? section.maxValue
       : Math.max(1, ...section.values.map((value) => value.value ?? 0));
-    return `${Math.max(6, Math.min(100, ((item.value ?? 0) / max) * 100))}%`;
+    return `${Math.max(0, Math.min(100, ((item.value ?? 0) / max) * 100))}%`;
   }
 
   chartSymbols(section: ProblemVisualDataChartSection, item: ProblemVisualDataChartSection['values'][number]): number[] {
     if (this.mode === 'blank' && !section.showBlankValues) {
-      return [0, 1, 2];
+      return [];
     }
     const unit = Math.max(1, section.unitSize ?? 1);
     const count = item.value === undefined ? 0 : Math.ceil(item.value / unit);
-    return this.range(Math.max(this.mode === 'blank' ? 1 : 0, count), 24);
+    return this.range(Math.max(0, count), 24);
   }
 
   chartTallyGroups(section: ProblemVisualDataChartSection, item: ProblemVisualDataChartSection['values'][number]): number[] {
     if (this.mode === 'blank' && !section.showBlankValues) {
-      return [0];
+      return [];
     }
-    return this.range(Math.max(this.mode === 'blank' ? 1 : 0, Math.ceil((item.value ?? 0) / 5)), 8);
+    return this.range(Math.max(0, Math.ceil((item.value ?? 0) / 5)), 8);
   }
 
   geometryShapeLeft(shape: ProblemVisualGeometryDiagramSection['shapes'][number]): number {
@@ -429,6 +505,12 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     const measurementItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-measurement .measurement-bars span, .visual-measurement .measurement-liquid .liquid-vessel, .visual-measurement .measurement-conversion span, .visual-measurement .measurement-rounding span, .visual-measurement .measurement-operation span, .visual-measurement-lab .kg-pan, .visual-measurement-lab .kg-ten-frame span, .visual-measurement-lab .kg-place-row, .visual-place-value-addition i, .visual-pv-regroupings span, .visual-pv-sum span, .visual-estimate-row:not(.is-head), .visual-addition-bridge span, .visual-addition-algorithm span, .visual-addition-compound span'));
     const numberLineItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-number-line span, .visual-number-line-target'));
     const diagramItems = Array.from(host.querySelectorAll<HTMLElement>('.visual-floor-room, .visual-line-plot-x, .visual-geometry-shape'));
+    const unitMarkers = Array.from(host.querySelectorAll<HTMLElement>('.unit-dot-column span, .unit-form-source-model'));
+    const unitFormLines = Array.from(host.querySelectorAll<HTMLElement>('.unit-form-fields > span'));
+    const riddlePairs = Array.from(host.querySelectorAll<HTMLElement>('.unknown-riddle-pairs article'));
+    const decoderSlots = Array.from(host.querySelectorAll<HTMLElement>('.unknown-riddle-decoder span'));
+    const responseLines = Array.from(host.querySelectorAll<HTMLElement>('.source-response-lines > span'));
+    const instructionalCards = Array.from(host.querySelectorAll<HTMLElement>('.visual-sub-card'));
 
     const allAnimatedItems = [
       ...sections,
@@ -439,7 +521,13 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
       ...equations,
       ...measurementItems,
       ...numberLineItems,
-      ...diagramItems
+      ...diagramItems,
+      ...unitMarkers,
+      ...unitFormLines,
+      ...riddlePairs,
+      ...decoderSlots,
+      ...responseLines,
+      ...instructionalCards
     ];
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       allAnimatedItems.forEach((element) => {
@@ -520,6 +608,60 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
         ease: 'out(3)'
       });
     }
+
+    if (unitMarkers.length) {
+      animate(unitMarkers, {
+        opacity: keepTextOpaque ? 1 : [0, 1],
+        scale: [0.68, 1],
+        duration: 360,
+        delay: stagger(70),
+        ease: 'out(3)'
+      });
+    }
+
+    if (unitFormLines.length) {
+      animate(unitFormLines, {
+        opacity: keepTextOpaque ? 1 : [0, 1],
+        translateX: [-10, 0],
+        duration: 340,
+        delay: stagger(85, { start: 180 }),
+        ease: 'out(2)'
+      });
+    }
+
+    if (riddlePairs.length) {
+      animate(riddlePairs, {
+        opacity: keepTextOpaque ? 1 : [0, 1],
+        translateY: [8, 0],
+        duration: 330,
+        delay: stagger(55),
+        ease: 'out(2)'
+      });
+    }
+
+    if (decoderSlots.length) {
+      animate(decoderSlots, {
+        opacity: keepTextOpaque ? 1 : [0, 1],
+        scale: [0.82, 1],
+        duration: 300,
+        delay: stagger(45, { start: 300 }),
+        ease: 'out(3)'
+      });
+    }
+
+    const workedResponseItems = [
+      ...responseLines,
+      ...instructionalCards
+    ];
+    if (workedResponseItems.length) {
+      animate(workedResponseItems, {
+        opacity: keepTextOpaque ? 1 : [0, 1],
+        translateY: [8, 0],
+        duration: 340,
+        delay: stagger(70),
+        ease: 'out(2)'
+      });
+    }
   }
 
   private percentScale(max: number): (value: number) => number {
@@ -535,10 +677,30 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
       if (!clock) {
         return;
       }
+      this.styleWorkspaceLibraryClock(clock);
       clock.style.setProperty('--_dh', this.clockHourDelay(Number(host.dataset['hour'] ?? 12), Number(host.dataset['minute'] ?? 0)));
       clock.style.setProperty('--_dm', this.clockMinuteDelay(Number(host.dataset['minute'] ?? 0)));
       clock.style.setProperty('--_ds', '0s');
     });
+  }
+
+  private styleWorkspaceLibraryClock(clock: HTMLElement): void {
+    clock.style.width = '126px';
+    clock.style.height = '126px';
+    clock.style.display = 'block';
+    clock.style.colorScheme = 'light';
+    clock.style.setProperty('--analog-clock-bg', 'radial-gradient(circle at 50% 50%, #ffffff 0 70%, #f5f5f5 71% 100%)');
+    clock.style.setProperty('--analog-clock-c', '#202124');
+    clock.style.setProperty('--analog-clock-hour', '#202124');
+    clock.style.setProperty('--analog-clock-minute', '#202124');
+    clock.style.setProperty('--analog-clock-second', 'transparent');
+    clock.style.setProperty('--analog-clock-cap', '#202124');
+    clock.style.setProperty('--analog-clock-cap-sz', '7cqi');
+    clock.style.setProperty('--analog-clock-indices-c', '#5f6368');
+    clock.style.setProperty('--analog-clock-indices-hour-c', '#202124');
+    clock.style.setProperty('--analog-clock-indices-fs', '5cqi');
+    clock.style.setProperty('--analog-clock-fs', '7cqi');
+    clock.style.setProperty('--analog-clock-label-fs', '0');
   }
 
   private clockTimeParts(clock: ProblemVisualClockSection): { hour: number; minute: number } | undefined {

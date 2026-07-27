@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l24",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-327.png",
+      "sha256": "7cb600f5b6784a62a72d8cee8bf02948fe52e12c8017365733486efc93f97ada",
+      "pdfPage": 327,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 24 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-328.png",
+      "sha256": "272f34235771d806d9ab41689b748885d692609b201d227bde3d53aa15374829",
+      "pdfPage": 328,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 24 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-501.png",
+      "sha256": "23443da79ba93efd0852d11c7bee14d700107b4e43c851ca98f24a6babd76312",
+      "pdfPage": 501,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 24 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-502.png",
+      "sha256": "4119cbf168074081fc43c77a5437a51490a053cea9ae6f796147194cb72d93cb",
+      "pdfPage": 502,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 24 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-327.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the given perimeters in the chart below to choose the widths and lengths of your robot's rectangular body parts."
+        ],
+        "answerKeyEvidence": "A. Width and length will vary. B. Width and length will vary. C. Width and length will vary. D. Width and length will vary. E. 28; width and length will vary. F. Width and length will vary. G. 8; width and length will vary. H. Extra body parts and information will vary. I. Extra body parts and information will vary. J. Estimated and measured with string K. Width and length will vary. L. Estimated and measured with string M. Width and length will vary. N. Estimated and measured with string O. Width and length will vary. P. Extra items and information will vary. Q. Extra items and information will vary.",
+        "layout": {
+          "family": "plan-robot-body-and-environment-from-perimeter-charts",
+          "subpartCount": 17,
+          "modelPrimitive": "two-live-source-project-charts+count-requirements",
+          "modelCounts": [
+            9,
+            8,
+            28,
+            8,
+            7,
+            6
+          ],
+          "modelOrientation": "body-chart-over-environment-chart-over-counts-and-response",
+          "responseStructure": "retain-variable-dimensions-and-key-only-dependent-perimeters",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    }
+  ]
+}

@@ -39,7 +39,7 @@ export const M6_LESSON5_RUNTIME: LessonRuntimeConfig = {
       id: "source-goal",
       title: "Lesson 5: source objective",
       shortTitle: "Goal",
-      studentPrompt: "Create ruler with 1-inch, 1/2-inch, and 1/4-inch intervals, and generate measurement data.",
+      studentPrompt: "Create ruler with 1-inch, ½-inch, and ¼-inch intervals, and generate measurement data.",
       teacherEditionBasis: "EurekaMath-Sources/Module_6/g3_m6_teacher_edition_v1_3_0.pdf, pages 66-77. Lesson 5 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "graph"
     },
@@ -87,7 +87,7 @@ export const M6_LESSON5_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Debrief focus: connect the Problem Set ruler, inch intervals, and measurement table displays, scales, labels, comparisons, and answers to the Lesson 5 objective: Create ruler with 1-inch, 1/2-inch, and 1/4-inch intervals, and generate measurement data.",
+      studentPrompt: "Debrief focus: connect the Problem Set ruler, inch intervals, and measurement table displays, scales, labels, comparisons, and answers to the Lesson 5 objective: Create ruler with 1-inch, ½-inch, and ¼-inch intervals, and generate measurement data.",
       teacherEditionBasis: "Module 6 Teacher Edition, lesson pages 66-77.",
       visualModel: "graph"
     }
@@ -100,7 +100,7 @@ export const M6_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Create ruler with 1-inch, 1/2-inch, and 1/4-inch intervals, and generate measurement data."
+        value: "Create ruler with 1-inch, ½-inch, and ¼-inch intervals, and generate measurement data."
       },
       {
         label: "Workbook",
@@ -184,7 +184,7 @@ export const M6_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Debrief focus: connect the Problem Set ruler, inch intervals, and measurement table displays, scales, labels, comparisons, and answers to the Lesson 5 objective: Create ruler with 1-inch, 1/2-inch, and 1/4-inch intervals, and generate measurement data."
+        value: "Debrief focus: connect the Problem Set ruler, inch intervals, and measurement table displays, scales, labels, comparisons, and answers to the Lesson 5 objective: Create ruler with 1-inch, ½-inch, and ¼-inch intervals, and generate measurement data."
       },
       {
         label: "Workbook",

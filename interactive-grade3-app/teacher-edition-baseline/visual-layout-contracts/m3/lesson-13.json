@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m3-l13",
+  "teacherEditionPdfSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m3/lesson-13-page-56.png",
+      "sha256": "0177ee9274cc3af8f6b2ec2f16c30095cf2b014d279b47112d51f73e7c98dd7b",
+      "pdfPage": 170,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 13 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-13-page-57.png",
+      "sha256": "880239c7ed9203f2d56eec75e3de1d8ad3f3d35276770d48f0fc32646aaa7557",
+      "pdfPage": 171,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 13 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-13-page-58.png",
+      "sha256": "cdf72680671d1bbf0e44e2509dd43c32c4b8a721a975742eb8a9f045b9730372",
+      "pdfPage": 172,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 13 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-303.png",
+      "sha256": "9cd776d9a2d17b0f6016ec5f5ca771e146e7acd277faaf4722ff09abc4b6cb76",
+      "pdfPage": 303,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 13 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-304.png",
+      "sha256": "cf847b822c61418f5d968d0bf5cfb98fac98be10cd7ec22de090adb968f6fe81",
+      "pdfPage": 304,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 13 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m3/lesson-13-page-56.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "b look at the tens place in the count by what is the pattern"
+        ],
+        "answerKeyEvidence": "a. 18, 27, 45, 54, 63, 81, 90. b. +1. c. -1.",
+        "layout": {
+          "family": "count-by-nine-line-and-place-patterns",
+          "subpartCount": 3,
+          "modelPrimitive": "ten-term-count-by-line",
+          "modelCounts": [
+            10
+          ],
+          "modelOrientation": "horizontal-line-over-two-responses",
+          "responseStructure": "complete-sequence-and-describe-patterns"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure, meaningful illustrations, exact givens, and open response space were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m3/lesson-13-page-56.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "complete to make true statements"
+        ],
+        "answerKeyEvidence": "a. Answer provided. b. 18. c. 28; 27; 27. d. 37; 36; 36. e. 46; 45; 45. f. 55; 54; 54. g. 64; 63; 63. h. 73; 72; 72. i. 82; 81; 81. j. 91; 90; 90.",
+        "layout": {
+          "family": "ten-add-ten-subtract-one-statement-groups",
+          "subpartCount": 10,
+          "printedEquationLineCount": 30,
+          "modelPrimitive": "equation-statements",
+          "modelCounts": [
+            10,
+            3
+          ],
+          "modelOrientation": "two-source-columns",
+          "instructionalModelFamily": "add-ten-then-subtract-one",
+          "responseStructure": "complete-three-statements-per-fact"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure, meaningful illustrations, exact givens, and open response space were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m3/lesson-13-page-57.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "a analyze the equations in problem 2 what is the pattern b use the"
+        ],
+        "answerKeyEvidence": "a. +10, -1. b. 99; 108; 117; 126. c. 54; 63; strategy accurately used to solve. d. Answers will vary.",
+        "layout": {
+          "family": "four-part-nine-pattern-analysis",
+          "subpartCount": 4,
+          "modelPrimitive": "written-response+printed-digit-table",
+          "modelCounts": [
+            4
+          ],
+          "modelOrientation": "vertical-source-parts",
+          "openWorkspaceCount": 3,
+          "instructionalModelFamily": "digit-pattern-for-nines",
+          "responseStructure": "analyze-extend-apply-counterexample"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure, meaningful illustrations, exact givens, and open response space were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m3/lesson-13-page-58.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "each equation contains a letter representing the unknown find the value of each unknown"
+        ],
+        "answerKeyEvidence": "a = 6; g = 9; d = 8; o = 90; e = 7; n = 3; s = 4; t = 2; i = 45. Add a “g” and it’s gone!",
+        "layout": {
+          "family": "nine-equation-cars-and-decoder-riddle",
+          "subpartCount": 9,
+          "decoderSlotCount": 15,
+          "decoderValues": [
+            6,
+            8,
+            8,
+            6,
+            9,
+            6,
+            3,
+            8,
+            45,
+            2,
+            4,
+            9,
+            90,
+            3,
+            7
+          ],
+          "modelPrimitive": "equation-car",
+          "modelCounts": [
+            9
+          ],
+          "modelOrientation": "three-by-three-cars-over-decoder",
+          "responseStructure": "solve-unknowns-and-decode-riddle"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure, meaningful illustrations, exact givens, and open response space were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    }
+  ]
+}

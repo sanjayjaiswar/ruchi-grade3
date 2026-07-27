@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l18",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-253.png",
+      "sha256": "2fe108c916f49b64d65708ac4cb6fc8b1d3a166fc6a57bb176371d9b8162e08f",
+      "pdfPage": 253,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 18 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-254.png",
+      "sha256": "d22c6230f27f4bf87b28a71d71eb0fe04f244f8d258f35a4be39eb79df753696",
+      "pdfPage": 254,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 18 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-491.png",
+      "sha256": "6f71fc15c4037402e00fdb3fe9feacffc03f498ef30b6adfab519d92f9d1a6e0",
+      "pdfPage": 491,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 18 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-253.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use unit squares to build as many rectangles as you can with an area of 24 square units."
+        ],
+        "answerKeyEvidence": "a. 4 rectangles drawn and labeled correctly; perimeters calculated correctly. b. Answers will vary.",
+        "layout": {
+          "family": "construct-area-twenty-four-rectangles-and-compare-perimeters",
+          "subpartCount": 6,
+          "modelPrimitive": "official-one-by-twenty-four-example+four-live-factor-pair-arrays+record",
+          "modelCounts": [
+            4,
+            24,
+            50,
+            28,
+            22,
+            20
+          ],
+          "modelOrientation": "example-or-four-arrays-over-record-and-response",
+          "responseStructure": "draw-four-label-calculate-and-preserve-variable-comparison",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, plots, and response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-254.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use unit square tiles to build as many rectangles as you can with an area of 16 square units."
+        ],
+        "answerKeyEvidence": "a. 3 rectangles drawn and labeled correctly. b. 16 units; explanations will vary.",
+        "layout": {
+          "family": "construct-area-sixteen-rectangles-and-find-square-perimeter",
+          "subpartCount": 5,
+          "modelPrimitive": "open-grid-or-three-live-factor-pair-arrays+record",
+          "modelCounts": [
+            3,
+            16,
+            34,
+            20,
+            16
+          ],
+          "modelOrientation": "open-or-three-arrays-over-record-and-response",
+          "responseStructure": "draw-three-label-calculate-and-explain-square-perimeter-sixteen",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, plots, and response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-254.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Doug uses square unit tiles to build rectangles with an area of 15 square units."
+        ],
+        "answerKeyEvidence": "Yes; explanations will vary.",
+        "layout": {
+          "family": "compare-two-area-fifteen-rectangle-perimeters",
+          "subpartCount": 3,
+          "modelPrimitive": "live-one-by-fifteen-and-three-by-five+comparison",
+          "modelCounts": [
+            2,
+            15,
+            32,
+            16
+          ],
+          "modelOrientation": "two-source-proportion-rectangles-over-comparison",
+          "responseStructure": "answer-yes-and-preserve-variable-explanation",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, plots, and response spaces. No page or whole-problem screenshot is embedded."
+      }
+    }
+  ]
+}

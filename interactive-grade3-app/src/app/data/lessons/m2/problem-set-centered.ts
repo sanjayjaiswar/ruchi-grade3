@@ -133,6 +133,7 @@ type TimeLineProblemSeed = {
   meaning: string;
   explanation: string;
   checks: string[];
+  blankLayout?: 'open-response' | 'clocks-only';
 };
 
 const TEACHER_SOURCE = 'EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf';
@@ -242,13 +243,13 @@ const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
   },
   9: {
     1: 'a. Variable predictions. b. Each container must have a measured result checked against the less than, more than, or about 1 liter prediction.',
-    2: 'c. A correct illustration decomposes 1 liter into ten 100-milliliter units.',
+    2: 'c. Illustrations and descriptions will vary.',
     3: 'd-e. Correct illustrations decompose Cup K and Cup L into ten equal smaller units using each cup\'s measured capacity.',
     4: 'f. They both break apart into 1 thousand units. 1 liter is 1000 milliliters, and 1 kilogram is 1000 grams.',
     5: 'g. 1 gram; 1 liter is the same as 1 kilogram, and they break apart the same way into 1 thousand units.'
   },
   10: {
-    1: 'Vertical number line on container labeled by hundreds. a. 500 mL; the reason identifies halfway between 0 and 1,000 mL. b. A correct explanation uses equal 100 mL intervals on the container scale. c. 700 mL.',
+    1: 'Vertical number line on container labeled by hundreds. a. 500 mL; reasons will vary. b. Explanations will vary. c. 700 mL.',
     2: '3 L; 6 L; 4 L; 0 L.',
     3: '400 mL; 200 mL; 1000 mL; 700 mL.',
     4: 'a. Capacity of each barrel plotted and labeled correctly on number line. b. Barrel C. c. Barrel D. d. Barrel B because it is closest to 70 L OR Barrel A because it has enough capacity to hold 70 L. e. Number line used to find answer; 28 more liters.'
@@ -262,10 +263,10 @@ const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     6: '14 L.'
   },
   12: {
-    1: 'Variable measurements; each length must have an actual centimeter value, surrounding tens, and nearest 10 cm.',
-    2: 'Variable measurements; each bag must have an actual gram value, surrounding tens, and nearest 10 g.',
-    3: 'Variable measurements; each container must have an actual milliliter value, surrounding tens, and nearest 10 mL.',
-    4: 'Variable times; each activity must have an actual clock time, surrounding 10-minute marks, and nearest 10 minutes.'
+    1: 'Measurements and estimates will vary.',
+    2: 'Measurements and estimates will vary.',
+    3: 'Measurements and estimates will vary.',
+    4: 'Measurements and estimates will vary.'
   },
   13: {
     1: 'a. 30; b. 40; rounding modeled on number line; c. 60; rounding modeled on number line; d. 160; rounding modeled on number line; e. 280; rounding modeled on number line; f. 410; rounding modeled on number line.',
@@ -276,7 +277,7 @@ const TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     1: 'a. 100; rounding modeled on number line; b. 300; rounding modeled on number line; c. 300; rounding modeled on number line; d. 1,300; rounding modeled on number line; e. 1,600; rounding modeled on number line; f. 1,300; rounding modeled on number line.',
     2: 'a. 500 stickers; b. 500 pages; c. 800 mL; d. $1,300; e. 1,800 km.',
     3: '550, 639, 603.',
-    4: 'Both are correct; explanations will vary. A complete explanation may say 1,865 rounds to 1,900, and 1,900 is the same value as 19 hundreds.'
+    4: 'Both are correct; explanations will vary.'
   },
   15: {
     1: 'a. 51 mL; b. 71 mL; c. 171 mL; d. 89 cm; e. 592 cm; f. 627 cm; g. 92 g; h. 639 g; i. 956 g; j. 3 L 657 mL; k. 5 kg 876 g.',
@@ -391,12 +392,12 @@ const TEACHER_PROBLEM_PROMPTS: Record<number, Record<number, string>> = {
     4: 'The chart shows the capacity of 4 barrels: A 75 liters, B 68 liters, C 96 liters, D 52 liters. a. Label the number line to show the capacity of each barrel. Barrel A has been done for you. b. Which barrel has the greatest capacity? c. Which barrel has the smallest capacity? d. Ben buys a barrel that holds about 70 liters. Which barrel did he most likely buy? Explain. e. Use the number line to find how many more liters Barrel C can hold than Barrel B.'
   },
   11: {
-    1: 'The total weight of a can of tomatoes and a jar of baby food is 671 grams. a. The jar of baby food weighs 113 grams. How much does the can of tomatoes weigh? b. How much more does the can of tomatoes weigh than the jar of baby food?',
-    2: 'The weight of a pen is 6 grams. a. What is the total weight of 10 pens? b. An empty box weighs 82 grams. What is the total weight of a box of 10 pens?',
-    3: 'The total weight of an apple, lemon, and banana is 508 grams. a. If the apple and lemon together weigh 317 grams, what is the weight of the banana? b. If the lemon weighs 68 grams less than the banana, how much does the lemon weigh? c. What is the weight of the apple?',
-    4: 'A frozen turkey weighs about 5 kilograms. The chef orders 45 kilograms of turkey. About how many frozen turkeys does he order? Draw and label a tape diagram.',
-    5: 'A recipe needs 300 milliliters of milk. Sara triples the recipe. How many milliliters of milk does Sara need?',
-    6: 'Marian fills 3 buckets with 4 liters of water in each bucket. She has 2 liters left. How many liters of water does the container hold?'
+    1: 'The total weight in grams of a can of tomatoes and a jar of baby food is shown to the right. a. The jar of baby food weighs 113 grams. How much does the can of tomatoes weigh? b. How much more does the can of tomatoes weigh than the jar of baby food?',
+    2: 'The weight of a pen in grams is shown to the right. a. What is the total weight of 10 pens? b. An empty box weighs 82 grams. What is the total weight of a box of 10 pens?',
+    3: 'The total weight of an apple, lemon, and banana in grams is shown to the right. a. If the apple and lemon together weigh 317 grams, what is the weight of the banana? b. If we know the lemon weighs 68 grams less than the banana, how much does the lemon weigh? c. What is the weight of the apple?',
+    4: 'A frozen turkey weighs about 5 kilograms. The chef orders 45 kilograms of turkey. Use a tape diagram to find about how many frozen turkeys he orders.',
+    5: 'A recipe requires 300 milliliters of milk. Sara decides to triple the recipe for dinner. How many milliliters of milk does she need to cook dinner?',
+    6: 'Marian pours a full container of water equally into buckets. Each bucket has a capacity of 4 liters. After filling 3 buckets, she still has 2 liters left in her container. What is the capacity of her container?'
   },
   12: {
     1: 'Work with a partner. Use a ruler or a meter stick to complete the length chart and round each measurement to the nearest 10 centimeters.',
@@ -598,7 +599,1153 @@ function applyTeacherPrompt(lessonNumber: number, item: ProblemSetCenteredProble
   };
 }
 
+function makeM2SourceCrop(
+  label: string,
+  src: string,
+  alt: string,
+  crop: { x: number; y: number; width: number; height: number },
+  caption?: string
+): ProblemVisualSpec['sections'][number] {
+  return {
+    kind: 'source-crop',
+    label,
+    src,
+    alt,
+    imageWidth: 1143,
+    imageHeight: 1443,
+    crop,
+    caption
+  };
+}
+
+function makeM2OpenResponse(
+  label: string,
+  parts: Array<{
+    lead?: string;
+    prompt: string;
+    lines?: string[];
+    printedLineCount?: number;
+    dividerBefore?: boolean;
+  }>
+): ProblemVisualSpec['sections'][number] {
+  return {
+    kind: 'source-response-workspace',
+    label,
+    parts: parts.map((part) => ({
+      lead: part.lead,
+      prompt: part.prompt,
+      lines: part.lines ?? [],
+      printedLineCount: part.printedLineCount ?? 0,
+      openWorkspace: true,
+      dividerBefore: part.dividerBefore
+    }))
+  };
+}
+
+/**
+ * Blank mode must reproduce the mathematical affordances of the official
+ * Problem Set before any interpretation is introduced.  These source-exact
+ * workspaces deliberately retain open drawing space, row counts, choices,
+ * illustrations, and provided marks from Lessons 6–10.
+ */
+function makeM2SourceExactBlankVisual(
+  seed: ProblemSetCenteredProblem | ProblemSeed
+): ProblemVisualSpec | undefined {
+  const lower = seed.sourcePrompt.toLowerCase();
+  const sourceNote = 'Blank workspace follows the Module 2 Teacher Edition Problem Set and leaves every student response open.';
+
+  if (/total weight in grams of a can of tomatoes and a jar of baby food/.test(lower)) {
+    return {
+      title: 'Problem 1: use the official 671-gram scale',
+      sourceNote,
+      sections: [
+        makeM2SourceCrop(
+          'Official tomatoes-and-baby-food scale',
+          '/source-pages/m2-teacher/page-132.png',
+          'Teacher Edition illustration of a can of tomatoes and baby-food jar on a scale reading 671 grams',
+          { x: 755, y: 275, width: 220, height: 250 }
+        ),
+        makeM2OpenResponse('Official two-part response space', [
+          { lead: 'a. ', prompt: 'The jar of baby food weighs 113 grams. How much does the can of tomatoes weigh?' },
+          {
+            lead: 'b. ',
+            prompt: 'How much more does the can of tomatoes weigh than the jar of baby food?',
+            dividerBefore: true
+          }
+        ])
+      ]
+    };
+  }
+
+  if (/weight of a pen in grams is shown/.test(lower)) {
+    return {
+      title: 'Problem 2: use the official 6-gram pen scale',
+      sourceNote,
+      sections: [
+        makeM2SourceCrop(
+          'Official pen scale',
+          '/source-pages/m2-teacher/page-132.png',
+          'Teacher Edition illustration of a pen on a scale reading 6 grams',
+          { x: 755, y: 580, width: 220, height: 180 }
+        ),
+        makeM2OpenResponse('Official two-part response space', [
+          { lead: 'a. ', prompt: 'What is the total weight of 10 pens?' },
+          {
+            lead: 'b. ',
+            prompt: 'An empty box weighs 82 grams. What is the total weight of a box of 10 pens?',
+            dividerBefore: true
+          }
+        ])
+      ]
+    };
+  }
+
+  if (/total weight of an apple, lemon, and banana in grams is shown/.test(lower)) {
+    return {
+      title: 'Problem 3: use the official 508-gram fruit scale',
+      sourceNote,
+      sections: [
+        makeM2SourceCrop(
+          'Official fruit scale',
+          '/source-pages/m2-teacher/page-132.png',
+          'Teacher Edition illustration of an apple, lemon, and banana on a scale reading 508 grams',
+          { x: 755, y: 845, width: 220, height: 220 }
+        ),
+        makeM2OpenResponse('Official three-part response space', [
+          { lead: 'a. ', prompt: 'If the apple and lemon together weigh 317 grams, what is the weight of the banana?' },
+          {
+            lead: 'b. ',
+            prompt: 'If the lemon weighs 68 grams less than the banana, how much does the lemon weigh?',
+            dividerBefore: true
+          },
+          { lead: 'c. ', prompt: 'What is the weight of the apple?', dividerBefore: true }
+        ])
+      ]
+    };
+  }
+
+  if (
+    /frozen turkey weighs about 5 kilograms/.test(lower) ||
+    /recipe requires 300 milliliters of milk/.test(lower) ||
+    /marian pours a full container of water equally into buckets/.test(lower)
+  ) {
+    return {
+      title: `Problem ${seed.number}: official open RDW workspace`,
+      sourceNote,
+      sections: [
+        makeM2OpenResponse('Official drawing, equation, and answer space', [{
+          prompt: seed.sourcePrompt
+        }])
+      ]
+    };
+  }
+
+  if (/find the sums below.*52 ml \+ 68 ml/.test(lower)) {
+    return {
+      title: 'Problem 1: eleven official measurement sums',
+      sourceNote,
+      sections: [{
+        kind: 'data-table',
+        label: 'Find each sum',
+        columns: ['a–c', 'd–f', 'g–i'],
+        rows: [
+          ['a. 52 mL + 68 mL = ____', 'd. 56 cm + 94 cm = ____', 'g. 697 g + 138 g = ____'],
+          ['b. 352 mL + 68 mL = ____', 'e. 506 cm + 94 cm = ____', 'h. 345 g + 597 g = ____'],
+          ['c. 352 mL + 468 mL = ____', 'f. 506 cm + 394 cm = ____', 'i. 486 g + 497 g = ____']
+        ]
+      }, {
+        kind: 'data-table',
+        label: 'Compound-unit sums',
+        columns: ['j', 'k'],
+        rows: [['3 L 251 mL + 1 L 549 mL = ____', '4 kg 384 g + 2 kg 467 g = ____']]
+      }]
+    };
+  }
+
+  if (/lane makes sauerkraut/.test(lower)) {
+    return {
+      title: 'Problem 2: use the official cabbage and salt scales',
+      sourceNote,
+      sections: [
+        makeM2SourceCrop(
+          'Official cabbage and salt scales',
+          '/source-pages/m2-teacher/page-203.png',
+          'Teacher Edition cabbage scale reading 907 grams and salt scale reading 93 grams',
+          { x: 645, y: 205, width: 335, height: 175 }
+        ),
+        makeM2OpenResponse('Official tape-diagram and answer space', [{
+          prompt: 'Draw and label a tape diagram to find the total weight of the cabbage and salt Lane uses.'
+        }])
+      ]
+    };
+  }
+
+  if (/sue bakes mini-muffins/.test(lower)) {
+    return {
+      title: 'Problem 3: official open response',
+      sourceNote,
+      sections: [makeM2OpenResponse('Official solution space', [{ prompt: seed.sourcePrompt }])]
+    };
+  }
+
+  if (/milk carton to the right holds 183 milliliters more/.test(lower)) {
+    return {
+      title: 'Problem 4: use the official juice-box and milk-carton picture',
+      sourceNote,
+      sections: [
+        makeM2SourceCrop(
+          'Official juice-box and milk-carton quantities',
+          '/source-pages/m2-teacher/page-203.png',
+          'Teacher Edition juice box labeled 279 milliliters and milk carton labeled unknown milliliters',
+          { x: 640, y: 800, width: 350, height: 220 }
+        ),
+        makeM2OpenResponse('Official solution space', [{ prompt: seed.sourcePrompt }])
+      ]
+    };
+  }
+
+  if (/find the actual sum either on paper or using mental math/.test(lower)) {
+    const estimationCard = (
+      label: string,
+      expressions: string[]
+    ): Extract<ProblemVisualSpec['sections'][number], { kind: 'card-grid' }>['cards'][number] => ({
+      label,
+      sections: [{
+        kind: 'data-table',
+        columns: ['Exact sum', 'Rounded-addend estimate'],
+        rows: expressions.map((expression) => [`${expression} = ____`, '____ + ____ = ____'])
+      }, {
+        kind: 'note',
+        text: 'Circle the estimated sum that is closest to its real sum.'
+      }]
+    });
+    return {
+      title: 'Problem 1: three official estimation panels',
+      sourceNote,
+      sections: [{
+        kind: 'card-grid',
+        label: 'A–C: actual sums and nearest-hundred estimates',
+        cards: [
+          estimationCard('A', ['451 + 253', '451 + 249', '448 + 249']),
+          estimationCard('B', ['356 + 161', '356 + 148', '347 + 149']),
+          estimationCard('C', ['652 + 158', '647 + 158', '647 + 146'])
+        ]
+      }, makeM2OpenResponse('Official explanation space', [{
+        lead: 'b. ',
+        prompt: 'Look at the sums that gave the most precise estimates. Explain what they have in common. You might use a number line to support your explanation.'
+      }])]
+    };
+  }
+
+  if (/janet watched a movie that is 94 minutes/.test(lower)) {
+    return {
+      title: 'Problem 2: official three-part estimation response',
+      sourceNote,
+      sections: [makeM2OpenResponse('Official a–c response space', [
+        {
+          lead: 'a. ',
+          prompt: 'Decide how to round the minutes. Then, estimate the total minutes Janet watched movies on Friday and Saturday.'
+        },
+        { lead: 'b. ', prompt: 'How much time did Janet actually spend watching movies?', dividerBefore: true },
+        {
+          lead: 'c. ',
+          prompt: 'Explain whether or not your estimated sum is close to the actual sum. Round in a different way, and see which estimate is closer.',
+          dividerBefore: true
+        }
+      ])]
+    };
+  }
+
+  if (/sadie, a bear at the zoo, weighs 182 kilograms/.test(lower)) {
+    return {
+      title: 'Problem 3: official estimate and tape-diagram response',
+      sourceNote,
+      sections: [makeM2OpenResponse('Official two-part response space', [
+        {
+          lead: 'a. ',
+          prompt: 'Estimate the total weight of Sadie and her cub using whatever method you think best.'
+        },
+        {
+          lead: 'b. ',
+          prompt: 'What is the actual weight of Sadie and her cub? Model the problem with a tape diagram.',
+          dividerBefore: true
+        }
+      ])]
+    };
+  }
+
+  if (/solve the subtraction problems below.*60 ml - 24 ml/.test(lower)) {
+    return {
+      title: 'Problem 1: eleven official measurement differences',
+      sourceNote,
+      sections: [{
+        kind: 'data-table',
+        label: 'Solve each difference',
+        columns: ['a–c', 'd–f', 'g–i'],
+        rows: [
+          ['a. 60 mL − 24 mL = ____', 'd. 518 cm − 21 cm = ____', 'g. 307 g − 130 g = ____'],
+          ['b. 360 mL − 24 mL = ____', 'e. 629 cm − 268 cm = ____', 'h. 307 g − 234 g = ____'],
+          ['c. 360 mL − 224 mL = ____', 'f. 938 cm − 440 cm = ____', 'i. 807 g − 732 g = ____']
+        ]
+      }, {
+        kind: 'data-table',
+        label: 'Compound-unit differences',
+        columns: ['j', 'k'],
+        rows: [['2 km 770 m − 1 km 455 m = ____', '3 kg 924 g − 1 kg 893 g = ____']]
+      }]
+    };
+  }
+
+  if (/total weight of 3 books is 405 grams/.test(lower)) {
+    return {
+      title: 'Problem 2: use the official 405-gram book scale',
+      sourceNote,
+      sections: [
+        makeM2SourceCrop(
+          'Official three-book scale',
+          '/source-pages/m2-teacher/page-229.png',
+          'Teacher Edition stack of three books on a scale reading 405 grams',
+          { x: 725, y: 195, width: 190, height: 220 }
+        ),
+        makeM2OpenResponse('Official tape-diagram and answer space', [{ prompt: seed.sourcePrompt }])
+      ]
+    };
+  }
+
+  if (/chart shows the lengths of three movies/.test(lower)) {
+    return {
+      title: 'Problem 3: official movie-length chart and responses',
+      sourceNote,
+      sections: [{
+        kind: 'data-table',
+        label: 'Movie lengths',
+        columns: ['Movie', 'Length'],
+        rows: [
+          ['The Lost Ship', '117 minutes'],
+          ['Magical Forests', '145 minutes'],
+          ['Champions', '? minutes']
+        ]
+      }, makeM2OpenResponse('Official two-part response space', [
+        {
+          lead: 'a. ',
+          prompt: 'Champions is 22 minutes shorter than The Lost Ship. How long is Champions?'
+        },
+        {
+          lead: 'b. ',
+          prompt: 'How much longer is Magical Forests than Champions?',
+          dividerBefore: true
+        }
+      ])]
+    };
+  }
+
+  if (/total length of a rope is 208 centimeters/.test(lower)) {
+    return {
+      title: 'Problem 4: official open response',
+      sourceNote,
+      sections: [makeM2OpenResponse('Official solution space', [{ prompt: seed.sourcePrompt }])]
+    };
+  }
+
+  if (/solve the subtraction problems below.*340 cm - 60 cm/.test(lower)) {
+    return {
+      title: 'Problem 1: eight official measurement differences',
+      sourceNote,
+      sections: [{
+        kind: 'data-table',
+        label: 'Solve each difference',
+        columns: ['Left column', 'Right column'],
+        rows: [
+          ['a. 340 cm − 60 cm = ____', 'b. 340 cm − 260 cm = ____'],
+          ['c. 513 g − 148 g = ____', 'd. 641 g − 387 g = ____'],
+          ['e. 700 mL − 52 mL = ____', 'f. 700 mL − 452 mL = ____'],
+          ['g. 6 km 802 m − 2 km 569 m = ____', 'h. 5 L 920 mL − 3 L 869 mL = ____']
+        ]
+      }]
+    };
+  }
+
+  if (/david is driving from los angeles to san francisco/.test(lower)) {
+    return {
+      title: 'Problem 2: official open response',
+      sourceNote,
+      sections: [makeM2OpenResponse('Official solution space', [{ prompt: seed.sourcePrompt }])]
+    };
+  }
+
+  if (/piano weighs 289 kilograms more than the piano bench/.test(lower)) {
+    return {
+      title: 'Problem 3: use the official piano and bench picture',
+      sourceNote,
+      sections: [
+        makeM2SourceCrop(
+          'Official piano-and-bench quantities',
+          '/source-pages/m2-teacher/page-239.png',
+          'Teacher Edition piano labeled 297 kilograms and bench labeled unknown kilograms',
+          { x: 680, y: 570, width: 260, height: 225 }
+        ),
+        makeM2OpenResponse('Official solution space', [{ prompt: seed.sourcePrompt }])
+      ]
+    };
+  }
+
+  if (/tank a holds 165 fewer liters/.test(lower)) {
+    return {
+      title: 'Problem 4: official open response',
+      sourceNote,
+      sections: [makeM2OpenResponse('Official solution space', [{ prompt: seed.sourcePrompt }])]
+    };
+  }
+
+  if (/illustrate and describe the process of making a 1-kilogram weight/.test(lower)) {
+    return {
+      title: 'Problem 1: illustrate and describe',
+      sourceNote,
+      sections: [
+        makeM2OpenResponse('Official illustration and description space', [{
+          prompt: 'Illustrate and describe the process of making a 1-kilogram weight.'
+        }])
+      ]
+    };
+  }
+
+  if (/illustrate and describe the process of decomposing (?:1 kilogram|100 grams|10 grams)/.test(lower)) {
+    return {
+      title: `Problem ${seed.number}: illustrate and describe`,
+      sourceNote,
+      sections: [
+        makeM2OpenResponse('Official illustration and description space', [{
+          prompt: seed.sourcePrompt
+        }])
+      ]
+    };
+  }
+
+  if (/compare the two place value charts(?: below)?/.test(lower)) {
+    return {
+      title: 'Problem 5: compare the two source charts',
+      sourceNote,
+      sections: [
+        {
+          kind: 'data-table',
+          label: 'Metric mass',
+          columns: ['1 kilogram', '100 grams', '10 grams', '1 gram'],
+          rows: [['', '', '', '']]
+        },
+        {
+          kind: 'data-table',
+          label: 'Place value',
+          columns: ['Thousands', 'Hundreds', 'Tens', 'Ones'],
+          rows: [['', '', '', '']]
+        },
+        makeM2OpenResponse('Explain the relationship', [{
+          prompt: 'How does today’s exploration using kilograms and grams relate to your understanding of place value?'
+        }])
+      ]
+    };
+  }
+
+  if (/work with a partner.*corresponding weights.*objects in the classroom/.test(lower)) {
+    const benchmarkTables = [
+      ['A', 'Objects that weigh about 1 kilogram'],
+      ['B', 'Objects that weigh about 100 grams'],
+      ['C', 'Objects that weigh about 10 grams'],
+      ['D', 'Objects that weigh about 1 gram']
+    ];
+    return {
+      title: 'Problem 1: benchmark estimate tables',
+      sourceNote,
+      sections: [{
+        kind: 'card-grid',
+        label: 'Official A–D classroom measurement tables',
+        cards: benchmarkTables.map(([part, heading]) => ({
+          label: `${part}. ${heading}`,
+          sections: [{
+            kind: 'data-table',
+            columns: [heading, 'Actual weight'],
+            rows: [['', ''], ['', ''], ['', '']]
+          }]
+        }))
+      }]
+    };
+  }
+
+  if (/circle the correct unit of weight for each estimation/.test(lower) && seed.dataDisplay) {
+    return {
+      title: 'Problem 2: circle each official unit choice',
+      sourceNote,
+      sections: [{
+        kind: 'data-table',
+        label: seed.dataDisplay.title,
+        columns: seed.dataDisplay.columns ?? ['Source item', 'Unit options'],
+        rows: seed.dataDisplay.rows ?? []
+      }]
+    };
+  }
+
+  if (/derrick finds that his bottle of water/.test(lower) || /nessa says 1 kilogram of rice/.test(lower)) {
+    return {
+      title: `Problem ${seed.number}: explain your reasoning`,
+      sourceNote,
+      sections: [
+        makeM2OpenResponse('Official response space', [{
+          prompt: seed.sourcePrompt
+        }])
+      ]
+    };
+  }
+
+  if (/tim goes to the market/.test(lower)) {
+    return {
+      title: 'Problem 1: read both official market scales',
+      sourceNote,
+      sections: [
+        makeM2SourceCrop(
+          'Official string-beans and grapes scales',
+          '/source-pages/m2-teacher/page-101.png',
+          'Teacher Edition illustrations of string beans and grapes on two digital scales',
+          { x: 130, y: 300, width: 820, height: 390 }
+        ),
+        {
+          kind: 'data-table',
+          label: 'List the two scale readings',
+          columns: ['Item', 'Weight'],
+          rows: [['String beans', '____ grams'], ['Grapes', '____ grams']]
+        }
+      ]
+    };
+  }
+
+  if (/keiko and her brother jiro/.test(lower)) {
+    return {
+      title: 'Problem 2: draw both requested tape diagrams',
+      sourceNote,
+      sections: [
+        makeM2OpenResponse('Official two-part tape-diagram workspace', [
+          { lead: 'a. ', prompt: 'What is Keiko and Jiro’s total weight?' },
+          { lead: 'b. ', prompt: 'How much heavier is Jiro than Keiko?', dividerBefore: true }
+        ])
+      ]
+    };
+  }
+
+  if (/jared estimates that his houseplant/.test(lower)) {
+    return {
+      title: `Problem ${seed.number}: draw the requested tape diagram`,
+      sourceNote,
+      sections: [
+        makeM2OpenResponse('Official tape-diagram workspace', [{
+          prompt: seed.sourcePrompt
+        }])
+      ]
+    };
+  }
+
+  if (/jane and her 8 friends go apple picking/.test(lower)) {
+    return {
+      title: 'Problem 4: apple sharing and pumpkin estimate',
+      sourceNote,
+      sections: [
+        makeM2SourceCrop(
+          'Official 27-kilogram apple scale',
+          '/source-pages/m2-teacher/page-102.png',
+          'Teacher Edition illustration of apples on a digital scale reading 27 kilograms',
+          { x: 735, y: 665, width: 220, height: 265 }
+        ),
+        makeM2OpenResponse('Official two-part response space', [
+          { lead: 'a. ', prompt: 'About how many kilograms of apples will Jane take home?' },
+          {
+            lead: 'b. ',
+            prompt: 'Jane estimates that a pumpkin weighs about as much as her share of the apples. About how much do 7 pumpkins weigh altogether?',
+            dividerBefore: true
+          }
+        ])
+      ]
+    };
+  }
+
+  if (/part 1\..*predict whether each container/.test(lower) && seed.dataDisplay) {
+    return {
+      title: 'Problem 1: predict, measure, and reflect',
+      sourceNote,
+      sections: [
+        {
+          kind: 'data-table',
+          label: seed.dataDisplay.title,
+          columns: seed.dataDisplay.columns ?? ['Container', 'Prediction', 'Actual'],
+          rows: seed.dataDisplay.rows ?? []
+        },
+        makeM2OpenResponse('Part 1b response space', [{
+          lead: 'b. ',
+          prompt: 'After measuring, what surprised you? Why?'
+        }])
+      ]
+    };
+  }
+
+  if (/part 2d-e\./.test(lower)) {
+    return {
+      title: `Problem ${seed.number}: two official illustration spaces`,
+      sourceNote,
+      sections: [
+        makeM2OpenResponse('Official Cup K and Cup L workspaces', [
+          { lead: 'd. ', prompt: 'Illustrate and describe the process of decomposing Cup K into 10 smaller units.' },
+          {
+            lead: 'e. ',
+            prompt: 'Illustrate and describe the process of decomposing Cup L into 10 smaller units.',
+            dividerBefore: true
+          }
+        ])
+      ]
+    };
+  }
+
+  if (/part 2[c-g]\./.test(lower)) {
+    return {
+      title: `Problem ${seed.number}: official open response`,
+      sourceNote,
+      sections: [
+        makeM2OpenResponse('Official illustration, description, or explanation space', [{
+          prompt: seed.sourcePrompt
+        }])
+      ]
+    };
+  }
+
+  if (/label the vertical number line on the container/.test(lower)) {
+    return {
+      title: 'Problem 1: build and explain the container number line',
+      sourceNote,
+      sections: [
+        makeM2SourceCrop(
+          'Official unlabeled 1-liter container',
+          '/source-pages/m2-teacher/page-122.png',
+          'Teacher Edition 1-liter container with an unlabeled vertical number line and a 100 milliliter mark',
+          { x: 680, y: 255, width: 280, height: 520 }
+        ),
+        makeM2OpenResponse('Official a–c response space', [
+          { lead: 'a. ', prompt: 'What did you label as the halfway mark? Why?' },
+          {
+            lead: 'b. ',
+            prompt: 'Explain how pouring each plastic cup of water helped you create a vertical number line.',
+            dividerBefore: true
+          },
+          {
+            lead: 'c. ',
+            prompt: 'If you pour out 300 mL of water, how many mL are left in the container?',
+            dividerBefore: true
+          }
+        ])
+      ]
+    };
+  }
+
+  if (/how much liquid is in each container/.test(lower) && seed.dataDisplay) {
+    return {
+      title: 'Problem 2: read the four official liter containers',
+      sourceNote,
+      sections: [
+        makeM2SourceCrop(
+          'Official liter-container readings',
+          '/source-pages/m2-teacher/page-122.png',
+          'Teacher Edition set of four marked liter containers with different fill levels',
+          { x: 130, y: 900, width: 835, height: 300 }
+        ),
+        {
+          kind: 'data-table',
+          label: seed.dataDisplay.title,
+          columns: seed.dataDisplay.columns ?? ['Container', 'Liquid volume'],
+          rows: seed.dataDisplay.rows ?? []
+        }
+      ]
+    };
+  }
+
+  if (/estimate the amount of liquid in each container to the nearest hundred milliliters/.test(lower) && seed.dataDisplay) {
+    return {
+      title: 'Problem 3: estimate the four official milliliter containers',
+      sourceNote,
+      sections: [
+        makeM2SourceCrop(
+          'Official milliliter-container levels',
+          '/source-pages/m2-teacher/page-123.png',
+          'Teacher Edition set of four marked milliliter containers with different fill levels',
+          { x: 145, y: 250, width: 780, height: 270 }
+        ),
+        {
+          kind: 'data-table',
+          label: seed.dataDisplay.title,
+          columns: seed.dataDisplay.columns ?? ['Container', 'Rounded volume'],
+          rows: seed.dataDisplay.rows ?? []
+        }
+      ]
+    };
+  }
+
+  if (/chart shows the capacity of 4 barrels/.test(lower)) {
+    return {
+      title: 'Problem 4: plot and compare barrel capacities',
+      sourceNote,
+      sections: [
+        {
+          kind: 'card-grid',
+          label: 'Official chart and provided number-line mark',
+          cards: [
+            {
+              label: 'Capacity chart',
+              sections: [makeM2SourceCrop(
+                '',
+                '/source-pages/m2-teacher/page-123.png',
+                'Teacher Edition chart of four barrel capacities',
+                { x: 150, y: 620, width: 300, height: 200 }
+              )]
+            },
+            {
+              label: 'Vertical number line',
+              sections: [makeM2SourceCrop(
+                '',
+                '/source-pages/m2-teacher/page-123.png',
+                'Teacher Edition vertical number line from 40 to 100 liters with Barrel A marked at 75 liters',
+                { x: 800, y: 595, width: 145, height: 650 }
+              )]
+            }
+          ]
+        },
+        makeM2OpenResponse('Official b–e response space', [
+          { lead: 'b. ', prompt: 'Which barrel has the greatest capacity?' },
+          { lead: 'c. ', prompt: 'Which barrel has the smallest capacity?', dividerBefore: true },
+          {
+            lead: 'd. ',
+            prompt: 'Ben buys a barrel that holds about 70 liters. Which barrel did he most likely buy? Explain why.',
+            dividerBefore: true
+          },
+          {
+            lead: 'e. ',
+            prompt: 'Use the number line to find how many more liters Barrel C can hold than Barrel B.',
+            dividerBefore: true
+          }
+        ])
+      ]
+    };
+  }
+
+  if (/round to the nearest ten.*a\.\s*32/.test(lower)) {
+    const blankVerticalLine = (label: string, halfway = ''): ProblemVisualSpec['sections'][number] => ({
+      kind: 'number-line',
+      label,
+      orientation: 'vertical',
+      ticks: [{ label: '' }, { label: halfway }, { label: '' }],
+      caption: 'Complete the labels, plot the given number, and write the rounded value.'
+    });
+    return {
+      title: 'Problem 1: six official partially provided number lines',
+      sourceNote,
+      sections: [{
+        kind: 'card-grid',
+        label: 'Official a–f number-line workspaces',
+        cards: [
+          {
+            label: 'a. 32 ≈ ____',
+            sections: [{
+              kind: 'number-line',
+              orientation: 'vertical',
+              targetMarker: { position: 20, label: '32' },
+              ticks: [{ label: '30' }, { label: '35' }, { label: '40' }],
+              caption: 'The source provides 30, 35, 40, and the 32 point.'
+            }]
+          },
+          { label: 'b. 36 ≈ ____', sections: [blankVerticalLine('', '35')] },
+          { label: 'c. 62 ≈ ____', sections: [blankVerticalLine('')] },
+          { label: 'd. 162 ≈ ____', sections: [blankVerticalLine('')] },
+          { label: 'e. 278 ≈ ____', sections: [blankVerticalLine('')] },
+          { label: 'f. 405 ≈ ____', sections: [blankVerticalLine('')] }
+        ]
+      }]
+    };
+  }
+
+  if (/round the weight of each item to the nearest 10 grams/.test(lower)) {
+    return {
+      title: 'Problem 2: official item, number-line, and answer table',
+      sourceNote,
+      sections: [{
+        kind: 'data-table',
+        label: 'Complete one number-line model for each given weight',
+        columns: ['Item', 'Number line', 'Round to the nearest 10 grams'],
+        rows: [
+          ['Potato chips — 36 grams', 'draw here', '____ grams'],
+          ['Bag — 52 grams', 'draw here', '____ grams'],
+          ['Can — 142 grams', 'draw here', '____ grams']
+        ]
+      }]
+    };
+  }
+
+  if (/carl's basketball game begins at 3:03 p\.m\./.test(lower)) {
+    return {
+      title: 'Problem 3: elapsed time and rounding',
+      sourceNote,
+      sections: [
+        makeM2OpenResponse('Official two-part response space', [
+          { lead: 'a. ', prompt: 'How many minutes did Carl’s basketball game last?' },
+          {
+            lead: 'b. ',
+            prompt: 'Round the total number of minutes in the game to the nearest 10 minutes.',
+            dividerBefore: true
+          }
+        ])
+      ]
+    };
+  }
+
+  if (/round to the nearest hundred.*a\.\s*143/.test(lower)) {
+    const unlabeledHundredLine = (halfway = ''): ProblemVisualSpec['sections'][number] => ({
+      kind: 'number-line',
+      orientation: 'vertical',
+      ticks: [{ label: '' }, { label: halfway }, { label: '' }],
+      caption: 'Complete the labels, plot the given number, and write the rounded value.'
+    });
+    return {
+      title: 'Problem 1: six official hundred-rounding number lines',
+      sourceNote,
+      sections: [{
+        kind: 'card-grid',
+        label: 'Official a–f number-line workspaces',
+        cards: [
+          { label: 'a. 143 ≈ ____', sections: [unlabeledHundredLine('150')] },
+          { label: 'b. 286 ≈ ____', sections: [unlabeledHundredLine()] },
+          { label: 'c. 320 ≈ ____', sections: [unlabeledHundredLine()] },
+          { label: 'd. 1,320 ≈ ____', sections: [unlabeledHundredLine()] },
+          { label: 'e. 1,572 ≈ ____', sections: [unlabeledHundredLine()] },
+          { label: 'f. 1,250 ≈ ____', sections: [unlabeledHundredLine()] }
+        ]
+      }]
+    };
+  }
+
+  if (/complete the chart.*shauna has 480 stickers/.test(lower)) {
+    return {
+      title: 'Problem 2: official nearest-hundred chart',
+      sourceNote,
+      sections: [{
+        kind: 'data-table',
+        label: 'Complete each rounded answer',
+        columns: ['Official source item', 'Rounded answer'],
+        rows: [
+          ['a. Shauna has 480 stickers. Round to the nearest hundred.', '____'],
+          ['b. There are 525 pages in a book. Round to the nearest hundred.', '____'],
+          ['c. A container holds 750 milliliters. Round to the nearest 100 milliliters.', '____'],
+          ['d. Glen spends $1,297. Round to the nearest $100.', '____'],
+          ['e. The drive is 1,842 kilometers. Round to the nearest 100 kilometers.', '____']
+        ]
+      }]
+    };
+  }
+
+  if (/circle the numbers that round to 600/.test(lower)) {
+    return {
+      title: 'Problem 3: circle only the qualifying source numbers',
+      sourceNote,
+      sections: [{
+        kind: 'data-table',
+        label: 'Official number choices',
+        columns: ['527', '550', '639', '681', '713', '603'],
+        rows: [['', '', '', '', '', '']]
+      }]
+    };
+  }
+
+  if (/teacher asks students to round 1,865/.test(lower)) {
+    return {
+      title: 'Problem 4: compare the two claims',
+      sourceNote,
+      sections: [
+        makeM2OpenResponse('Official explanation space', [{
+          prompt: seed.sourcePrompt
+        }])
+      ]
+    };
+  }
+
+  if (/find the sums below.*46 ml \+ 5 ml/.test(lower)) {
+    return {
+      title: 'Problem 1: eleven official measurement sums',
+      sourceNote,
+      sections: [{
+        kind: 'data-table',
+        label: 'Choose mental math or the algorithm, then solve',
+        columns: ['a–c', 'd–f', 'g–i'],
+        rows: [
+          ['a. 46 mL + 5 mL = ____', 'd. 59 cm + 30 cm = ____', 'g. 29 g + 63 g = ____'],
+          ['b. 46 mL + 25 mL = ____', 'e. 509 cm + 83 cm = ____', 'h. 345 g + 294 g = ____'],
+          ['c. 46 mL + 125 mL = ____', 'f. 597 cm + 30 cm = ____', 'i. 480 g + 476 g = ____']
+        ]
+      }, {
+        kind: 'data-table',
+        label: 'Compound-unit sums',
+        columns: ['j', 'k'],
+        rows: [['1 L 245 mL + 2 L 412 mL = ____', '2 kg 509 g + 3 kg 367 g = ____']]
+      }]
+    };
+  }
+
+  if (/nadine and jen buy a small bag of popcorn and a pretzel/.test(lower)) {
+    return {
+      title: 'Problem 2: use the official popcorn and pretzel picture',
+      sourceNote,
+      sections: [
+        makeM2SourceCrop(
+          'Official source quantities',
+          '/source-pages/m2-teacher/page-192.png',
+          'Teacher Edition pretzel and popcorn illustrations labeled unknown grams and 44 grams',
+          { x: 625, y: 190, width: 325, height: 210 }
+        ),
+        makeM2OpenResponse('Official response space', [{
+          prompt: 'The pretzel weighs 63 grams more than the 44-gram popcorn. What is the weight of the pretzel?'
+        }])
+      ]
+    };
+  }
+
+  if (/jason and andrea find the total liquid volume/.test(lower)) {
+    return {
+      title: 'Problem 3: check the two calculations',
+      sourceNote,
+      sections: [
+        {
+          kind: 'data-table',
+          label: 'Official source table',
+          columns: ['Student', 'Liquid volume'],
+          rows: [['Jason', '475 mL'], ['Andrea', '317 mL']]
+        },
+        makeM2OpenResponse('Official calculation and explanation space', [{
+          prompt: 'Show whose calculation is correct. Explain the mistake of the other student.'
+        }])
+      ]
+    };
+  }
+
+  if (/greg 15 minutes to mow the front lawn/.test(lower)) {
+    return {
+      title: 'Problem 4: official open two-step response',
+      sourceNote,
+      sections: [
+        makeM2OpenResponse('Official drawing, equations, and answer space', [{
+          prompt: seed.sourcePrompt
+        }])
+      ]
+    };
+  }
+
+  return undefined;
+}
+
+function makeExactLesson12TableVisual(
+  seed: ProblemSetCenteredProblem | ProblemSeed,
+  solved: boolean
+): ProblemVisualSpec | undefined {
+  const lower = seed.sourcePrompt.toLowerCase();
+  let label = '';
+  let columns: string[] = [];
+  let rows: string[][] = [];
+  if (/ruler or a meter stick/.test(lower)) {
+    label = 'Official length-rounding chart';
+    columns = ['Object', 'Measurement (in cm)', 'The object measures between', 'Length rounded to the nearest 10 cm'];
+    rows = [
+      ['Example: My shoe', '23 cm', '20 and 30 cm', '20 cm'],
+      ['Long side of a desk', '', '____ and ____ cm', ''],
+      ['A new pencil', '', '____ and ____ cm', ''],
+      ['Short side of a piece of paper', '', '____ and ____ cm', ''],
+      ['Long side of a piece of paper', '', '____ and ____ cm', '']
+    ];
+  } else if (/digital scale/.test(lower)) {
+    label = 'Official rice-bag rounding chart';
+    columns = ['Bag', 'Measurement (in g)', 'The bag measures between', 'Weight rounded to the nearest 10 g'];
+    rows = [
+      ['Example: Bag A', '8 g', '0 and 10 g', '10 g'],
+      ['Bag B', '', '____ and ____ g', ''],
+      ['Bag C', '', '____ and ____ g', ''],
+      ['Bag D', '', '____ and ____ g', ''],
+      ['Bag E', '', '____ and ____ g', '']
+    ];
+  } else if (/use a beaker/.test(lower)) {
+    label = 'Official liquid-volume rounding chart';
+    columns = ['Container', 'Measurement (in mL)', 'The container measures between', 'Rounded to the nearest 10 mL'];
+    rows = [
+      ['Example: Container A', '33 mL', '30 and 40 mL', '30 mL'],
+      ['Container B', '', '____ and ____ mL', ''],
+      ['Container C', '', '____ and ____ mL', ''],
+      ['Container D', '', '____ and ____ mL', ''],
+      ['Container E', '', '____ and ____ mL', '']
+    ];
+  } else if (/use a clock/.test(lower)) {
+    label = 'Official activity-time rounding chart';
+    columns = ['Activity', 'Actual time', 'The activity measures between', 'Time rounded to the nearest 10 minutes'];
+    rows = [
+      ['Example: Time we started math', '10:03', '10:00 and 10:10', '10:00'],
+      ['Time I started the Problem Set', '', '____ and ____', ''],
+      ['Time I finished Station 1', '', '____ and ____', ''],
+      ['Time I finished Station 2', '', '____ and ____', ''],
+      ['Time I finished Station 3', '', '____ and ____', '']
+    ];
+  } else {
+    return undefined;
+  }
+
+  const sections: ProblemVisualSpec['sections'] = [{
+    kind: 'data-table',
+    label,
+    columns,
+    rows
+  }];
+  if (solved) {
+    const text = [seed.sourcePrompt, seed.solvedAnswer, ...(seed.equations ?? [])].join(' ').toLowerCase();
+    sections.push(...(makeM2TopicCLabSections(seed, true, text) ?? []));
+    sections.push({
+      kind: 'note',
+      label: 'Official answer condition',
+      text: seed.solvedAnswer
+    });
+  }
+  return {
+    title: `Problem ${seed.number}: ${label}`,
+    sourceNote: solved
+      ? 'The provided Teacher Edition example row remains fixed; partner measurements and rounded results vary.'
+      : 'The provided Teacher Edition example row remains fixed; every partner-measurement row stays open.',
+    sections
+  };
+}
+
+function makeM2MeaningfulSourceIllustrations(
+  seed: ProblemSetCenteredProblem | ProblemSeed
+): ProblemVisualSpec['sections'] {
+  const lower = seed.sourcePrompt.toLowerCase();
+  if (/tim goes to the market/.test(lower)) {
+    return [makeM2SourceCrop(
+      'Official market scales',
+      '/source-pages/m2-teacher/page-101.png',
+      'Teacher Edition illustrations of string beans and grapes on digital scales',
+      { x: 130, y: 300, width: 820, height: 390 }
+    )];
+  }
+  if (/jane and her 8 friends go apple picking/.test(lower)) {
+    return [makeM2SourceCrop(
+      'Official 27-kilogram apple scale',
+      '/source-pages/m2-teacher/page-102.png',
+      'Teacher Edition illustration of apples on a digital scale reading 27 kilograms',
+      { x: 735, y: 665, width: 220, height: 265 }
+    )];
+  }
+  if (/label the vertical number line on the container/.test(lower)) {
+    return [makeM2SourceCrop(
+      'Official container number line',
+      '/source-pages/m2-teacher/page-122.png',
+      'Teacher Edition 1-liter container used as a vertical number line',
+      { x: 680, y: 255, width: 280, height: 520 }
+    )];
+  }
+  if (/how much liquid is in each container/.test(lower)) {
+    return [makeM2SourceCrop(
+      'Official liter-container readings',
+      '/source-pages/m2-teacher/page-122.png',
+      'Teacher Edition set of four marked liter containers',
+      { x: 130, y: 900, width: 835, height: 300 }
+    )];
+  }
+  if (/estimate the amount of liquid in each container to the nearest hundred milliliters/.test(lower)) {
+    return [makeM2SourceCrop(
+      'Official milliliter-container levels',
+      '/source-pages/m2-teacher/page-123.png',
+      'Teacher Edition set of four marked milliliter containers',
+      { x: 145, y: 250, width: 780, height: 270 }
+    )];
+  }
+  if (/chart shows the capacity of 4 barrels/.test(lower)) {
+    return [
+      makeM2SourceCrop(
+        'Official barrel-capacity chart',
+        '/source-pages/m2-teacher/page-123.png',
+        'Teacher Edition chart of four barrel capacities',
+        { x: 150, y: 620, width: 300, height: 200 }
+      ),
+      makeM2SourceCrop(
+        'Official vertical liter number line',
+        '/source-pages/m2-teacher/page-123.png',
+        'Teacher Edition vertical number line with Barrel A marked at 75 liters',
+        { x: 800, y: 595, width: 145, height: 650 }
+      )
+    ];
+  }
+  if (/weight of a pen in grams is shown/.test(lower)) {
+    return [makeM2SourceCrop(
+      'Official 6-gram pen scale',
+      '/source-pages/m2-teacher/page-132.png',
+      'Teacher Edition illustration of a pen on a scale reading 6 grams',
+      { x: 755, y: 580, width: 220, height: 180 }
+    )];
+  }
+  if (/total weight of an apple, lemon, and banana in grams is shown/.test(lower)) {
+    return [makeM2SourceCrop(
+      'Official 508-gram fruit scale',
+      '/source-pages/m2-teacher/page-132.png',
+      'Teacher Edition illustration of an apple, lemon, and banana on a scale reading 508 grams',
+      { x: 755, y: 845, width: 220, height: 220 }
+    )];
+  }
+  if (/nadine and jen buy a small bag of popcorn and a pretzel/.test(lower)) {
+    return [makeM2SourceCrop(
+      'Official popcorn and pretzel picture',
+      '/source-pages/m2-teacher/page-192.png',
+      'Teacher Edition pretzel and popcorn illustrations labeled unknown grams and 44 grams',
+      { x: 625, y: 190, width: 325, height: 210 }
+    )];
+  }
+  if (/lane makes sauerkraut/.test(lower)) {
+    return [makeM2SourceCrop(
+      'Official cabbage and salt scales',
+      '/source-pages/m2-teacher/page-203.png',
+      'Teacher Edition cabbage scale reading 907 grams and salt scale reading 93 grams',
+      { x: 645, y: 205, width: 335, height: 175 }
+    )];
+  }
+  if (/milk carton to the right holds 183 milliliters more/.test(lower)) {
+    return [makeM2SourceCrop(
+      'Official juice-box and milk-carton quantities',
+      '/source-pages/m2-teacher/page-203.png',
+      'Teacher Edition juice box labeled 279 milliliters and milk carton labeled unknown milliliters',
+      { x: 640, y: 800, width: 350, height: 220 }
+    )];
+  }
+  if (/total weight of 3 books is 405 grams/.test(lower)) {
+    return [makeM2SourceCrop(
+      'Official three-book scale',
+      '/source-pages/m2-teacher/page-229.png',
+      'Teacher Edition stack of three books on a scale reading 405 grams',
+      { x: 725, y: 195, width: 190, height: 220 }
+    )];
+  }
+  if (/piano weighs 289 kilograms more than the piano bench/.test(lower)) {
+    return [makeM2SourceCrop(
+      'Official piano-and-bench quantities',
+      '/source-pages/m2-teacher/page-239.png',
+      'Teacher Edition piano labeled 297 kilograms and bench labeled unknown kilograms',
+      { x: 680, y: 570, width: 260, height: 225 }
+    )];
+  }
+  return [];
+}
+
 function createM2ProblemVisual(seed: ProblemSetCenteredProblem | ProblemSeed, solved: boolean): ProblemVisualSpec {
+  if (!solved) {
+    const sourceExactBlank = makeM2SourceExactBlankVisual(seed);
+    if (sourceExactBlank) {
+      return sourceExactBlank;
+    }
+  }
+  const exactLesson12Table = makeExactLesson12TableVisual(seed, solved);
+  if (exactLesson12Table) {
+    return exactLesson12Table;
+  }
   const exactLesson11ProblemOne = makeExactLesson11ProblemOneVisual(seed, solved);
   if (exactLesson11ProblemOne) {
     return exactLesson11ProblemOne;
@@ -613,6 +1760,7 @@ function createM2ProblemVisual(seed: ProblemSetCenteredProblem | ProblemSeed, so
   }
 
   const sections: ProblemVisualSpec['sections'] = [];
+  sections.push(...makeM2MeaningfulSourceIllustrations(seed));
   const sourceNote = solved
     ? 'Solved view uses the Module 2 Teacher Edition answer key, authored visuals, and unit checks.'
     : 'Blank view keeps the student Problem Set workspace visual and leaves the official answer work open.';
@@ -690,9 +1838,15 @@ function createM2ProblemVisual(seed: ProblemSetCenteredProblem | ProblemSeed, so
     });
   }
 
-  if (!dataDisplay && !seed.numberLineModels?.length && seed.blankVisualType !== 'clock-workspace') {
+  const suppressGenericTape = suppressesInferredM2Tape(seed);
+  if (
+    !suppressGenericTape &&
+    !dataDisplay &&
+    !seed.numberLineModels?.length &&
+    seed.blankVisualType !== 'clock-workspace'
+  ) {
     sections.push(makeM2TapeOrWorkspace(seed, solved));
-  } else if (usesM2Tape(seed)) {
+  } else if (!suppressGenericTape && usesM2Tape(seed)) {
     sections.push(makeM2TapeOrWorkspace(seed, solved));
   }
 
@@ -727,7 +1881,7 @@ function makeExactLesson11ProblemOneVisual(
   solved: boolean
 ): ProblemVisualSpec | undefined {
   const lower = seed.sourcePrompt.toLowerCase();
-  if (!/can of tomatoes/.test(lower) || !/671 grams/.test(lower) || !/113 grams/.test(lower)) {
+  if (!/can of tomatoes/.test(lower) || !/jar of baby food/.test(lower) || !/113 grams/.test(lower)) {
     return undefined;
   }
 
@@ -737,6 +1891,12 @@ function makeExactLesson11ProblemOneVisual(
       ? 'Solved values follow the Module 2 Teacher Edition Lesson 11 Answer Key.'
       : 'Blank tapes preserve the two different relationships in the Teacher Edition prompt.',
     sections: [
+      makeM2SourceCrop(
+        'Official 671-gram tomatoes-and-baby-food scale',
+        '/source-pages/m2-teacher/page-132.png',
+        'Teacher Edition illustration of a can of tomatoes and baby-food jar on a scale reading 671 grams',
+        { x: 755, y: 275, width: 220, height: 250 }
+      ),
       {
         kind: 'tape',
         label: 'a. Find the can weight from the 671 g whole',
@@ -1191,18 +2351,24 @@ function makeExactTopicDStoryVisual(
       kind: 'number-line',
       label: '',
       orientation: 'vertical',
-      ticks: Array.from({ length: 11 }, (_, index) => {
-        const tickValue = lowerValue + index;
-        return {
-          label: (index === 0 || index === 5 || index === 10) && tickValue !== value ? `${tickValue} mL` : '',
-          target: tickValue === value,
-          rounded: solved && tickValue === rounded
-        };
-      }),
-      targetMarker: {
-        label: solved ? `${value} mL → ${rounded} mL` : `plot ${label}`,
-        position: value - lowerValue === 10 ? 100 : (value - lowerValue) * 10
-      },
+      ticks: solved
+        ? Array.from({ length: 11 }, (_, index) => {
+            const tickValue = lowerValue + index;
+            return {
+              label: (index === 0 || index === 5 || index === 10) && tickValue !== value ? `${tickValue} mL` : '',
+              target: tickValue === value,
+              rounded: tickValue === rounded
+            };
+          })
+        : [{ label: '' }, { label: '' }, { label: '' }],
+      ...(solved
+        ? {
+            targetMarker: {
+              label: `${value} mL → ${rounded} mL`,
+              position: value - lowerValue === 10 ? 100 : (value - lowerValue) * 10
+            }
+          }
+        : {}),
       caption: solved ? `${value} mL rounds to ${rounded} mL.` : 'Read the container, plot its capacity, and round to the nearest 10 mL.'
     });
 
@@ -1402,6 +2568,12 @@ function makeExactTopicDStoryVisual(
       title: 'Problem 2: compare popcorn and pretzel weights',
       sourceNote,
       sections: [
+        makeM2SourceCrop(
+          'Official popcorn and pretzel picture',
+          '/source-pages/m2-teacher/page-192.png',
+          'Teacher Edition pretzel and popcorn illustrations labeled unknown grams and 44 grams',
+          { x: 625, y: 190, width: 325, height: 210 }
+        ),
         {
           kind: 'data-table',
           label: 'Source picture labels',
@@ -1482,6 +2654,12 @@ function makeExactTopicDStoryVisual(
       title: 'Problem 2: total cabbage and salt weight',
       sourceNote,
       sections: [
+        makeM2SourceCrop(
+          'Official cabbage and salt scales',
+          '/source-pages/m2-teacher/page-203.png',
+          'Teacher Edition cabbage scale reading 907 grams and salt scale reading 93 grams',
+          { x: 645, y: 205, width: 335, height: 175 }
+        ),
         {
           kind: 'data-table',
           label: 'Source scale readings',
@@ -1528,7 +2706,7 @@ function makeExactTopicDStoryVisual(
   }
 
   if (/milk carton to the right holds 183 milliliters more/.test(lower)) {
-    return twoStepPartWholeVisual(
+    const visual = twoStepPartWholeVisual(
       4,
       'Juice-box and milk-carton capacities',
       { label: 'Step 1: find the milk carton', whole: solved ? 'milk carton = 462 mL' : 'milk carton = ? mL', parts: [['279 mL', 'same as juice box'], ['183 mL', 'more']], equation: solved ? '279 mL + 183 mL = 462 mL' : '279 mL + 183 mL = ____ mL' },
@@ -1536,6 +2714,18 @@ function makeExactTopicDStoryVisual(
       solved,
       sourceNote
     );
+    return {
+      ...visual,
+      sections: [
+        makeM2SourceCrop(
+          'Official juice-box and milk-carton quantities',
+          '/source-pages/m2-teacher/page-203.png',
+          'Teacher Edition juice box labeled 279 milliliters and milk carton labeled unknown milliliters',
+          { x: 640, y: 800, width: 350, height: 220 }
+        ),
+        ...visual.sections
+      ]
+    };
   }
 
   return undefined;
@@ -3282,6 +4472,24 @@ function usesM2Tape(seed: ProblemSetCenteredProblem | ProblemSeed): boolean {
   );
 }
 
+function suppressesInferredM2Tape(seed: ProblemSetCenteredProblem | ProblemSeed): boolean {
+  const sourcePrompt = seed.sourcePrompt.toLowerCase();
+  return [
+    'total weight of an apple, lemon, and banana in grams is shown',
+    'frozen turkey weighs about 5 kilograms',
+    'recipe requires 300 milliliters of milk',
+    'find the actual sum either on paper or using mental math',
+    'solve the subtraction problems below. a. 60 ml',
+    'total weight of 3 books is 405 grams',
+    'chart shows the lengths of three movies',
+    'total length of a rope is 208 centimeters',
+    'solve the subtraction problems below. a. 340 cm',
+    'david is driving from los angeles to san francisco',
+    'piano weighs 289 kilograms more than the piano bench',
+    'tank a holds 165 fewer liters'
+  ].some((officialPromptFragment) => sourcePrompt.includes(officialPromptFragment));
+}
+
 function clockAnswerLabel(seed: ProblemSetCenteredProblem | ProblemSeed): string {
   const text = [seed.solvedAnswer, ...(seed.equations ?? [])].join(' ');
   const timeMatch = text.match(/\b\d{1,2}:\d{2}\s*(?:a\.m\.|p\.m\.)?/i);
@@ -3472,7 +4680,13 @@ function timeLineProblem(seed: TimeLineProblemSeed): ProblemSetCenteredProblem {
 
   return {
     ...centered,
-    blankPrompts: ['Use the official time number line. Label the hour endpoints, count intervals by fives, then plot or read the requested time.'],
+    blankPrompts: [
+      seed.blankLayout === 'clocks-only'
+        ? 'Complete the official clock task, then record the requested response.'
+        : seed.blankLayout === 'open-response'
+          ? 'Use the official open response space to show your work.'
+          : 'Use the official time number line. Label the hour endpoints, count intervals by fives, then plot or read the requested time.'
+    ],
     blankEquations: blankEquationTemplates(seed.equations),
     numberLineModels: undefined,
     blankVisual: timeLineVisual(seed, false),
@@ -3481,15 +4695,51 @@ function timeLineProblem(seed: TimeLineProblemSeed): ProblemSetCenteredProblem {
 }
 
 function timeLineVisual(seed: TimeLineProblemSeed, solved: boolean): ProblemVisualSpec {
+  if (!solved && seed.blankLayout === 'open-response') {
+    return {
+      title: `Problem ${seed.number}: open Teacher Edition workspace`,
+      sections: [
+        {
+          kind: 'note',
+          label: 'Student workspace',
+          text: seed.blankWorkspaceLabel
+        }
+      ]
+    };
+  }
+
+  if (!solved && seed.blankLayout === 'clocks-only') {
+    return {
+      title: `Problem ${seed.number}: official clock with open response space`,
+      sections: [
+        ...(seed.clocks ?? []).map((clock) => ({
+          kind: 'clock' as const,
+          label: clock.label,
+          timeLabel: clock.blankTimeLabel ?? (clock.showInBlank ? 'Read the source clock.' : 'Draw hands on the source clock.'),
+          timeValue: clock.showInBlank ? clock.timeLabel : '',
+          blankFace: !clock.showInBlank
+        })),
+        {
+          kind: 'note' as const,
+          label: 'Student workspace',
+          text: seed.blankWorkspaceLabel
+        }
+      ]
+    };
+  }
+
   const sections: ProblemVisualSpec['sections'] = [
     ...(seed.clocks ?? []).map((clock) => {
       const showClockTime = solved || clock.showInBlank;
       return {
         kind: 'clock' as const,
         label: clock.label,
-        timeLabel: showClockTime ? clock.timeLabel : clock.blankTimeLabel ?? 'Draw or read the source clock.',
+        timeLabel: solved
+          ? clock.timeLabel
+          : clock.blankTimeLabel ?? (clock.showInBlank ? 'Read the source clock.' : 'Draw hands on the source clock.'),
         timeValue: showClockTime ? clock.timeLabel : '',
-        caption: clock.caption
+        blankFace: !showClockTime,
+        caption: solved ? clock.caption : undefined
       };
     }),
     {
@@ -3939,6 +5189,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 2,
+        blankLayout: 'clocks-only',
         sourcePrompt: 'Jessie woke up this morning at 6:48 a.m. Draw hands on the clock below to show what time Jessie woke up.',
         startLabel: '6:00 a.m.',
         endLabel: '7:00 a.m.',
@@ -3961,7 +5212,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         solvedNote: '6:48 means the minute hand points to the 48th minute and the hour hand is close to 7.',
         solvedAnswer: 'Hands on the clock drawn to show 6:48 a.m.',
         equations: ['9 x 5 = 45', '45 + 3 = 48', '6:00 + 48 min = 6:48'],
-        blankWorkspaceLabel: 'Use the number line to locate 48 minutes after 6:00, then transfer that minute position to the clock.',
+        blankWorkspaceLabel: 'Draw the hour and minute hands on the official blank clock to show 6:48 a.m.',
         meaning: 'The time Jessie woke up is 48 minutes after 6:00 a.m.',
         explanation: 'The five-minute benchmark is 45; three extra one-minute ticks make 48.',
         checks: [
@@ -3972,6 +5223,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 3,
+        blankLayout: 'clocks-only',
         sourcePrompt: 'Mrs. Barnes starts teaching math at 8:23 a.m. Draw hands on the clock below to show what time Mrs. Barnes starts teaching math.',
         startLabel: '8:00 a.m.',
         endLabel: '9:00 a.m.',
@@ -3994,7 +5246,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         solvedNote: '8:23 is 23 minutes after 8:00, so the minute hand is at 23 and the hour hand is a little past 8.',
         solvedAnswer: 'Hands on the clock drawn to show 8:23 a.m.',
         equations: ['4 x 5 = 20', '20 + 3 = 23', '8:00 + 23 min = 8:23'],
-        blankWorkspaceLabel: 'Locate 23 minutes on the line before drawing the clock hands.',
+        blankWorkspaceLabel: 'Draw the hour and minute hands on the official blank clock to show 8:23 a.m.',
         meaning: 'Mrs. Barnes starts teaching 23 minutes after 8:00 a.m.',
         explanation: 'The exact minute comes from four groups of five minutes and three extra minutes.',
         checks: [
@@ -4005,6 +5257,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 4,
+        blankLayout: 'clocks-only',
         sourcePrompt: 'The clock shows what time Rebecca finishes her homework. What time does Rebecca finish her homework?',
         startLabel: '5:00 p.m.',
         endLabel: '6:00 p.m.',
@@ -4013,7 +5266,6 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
           {
             label: 'Source clock',
             timeLabel: '5:27 p.m.',
-            blankTimeLabel: '5:27 p.m.',
             showInBlank: true,
             caption: 'Read the source clock: 27 minutes after 5.'
           }
@@ -4028,7 +5280,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         solvedNote: 'The clock reads 5:27 p.m.: five groups of five minutes make 25, then two more minutes make 27.',
         solvedAnswer: 'Rebecca finishes her homework at 5:27 p.m.',
         equations: ['5 x 5 = 25', '25 + 2 = 27', 'Rebecca finishes at 5:27 p.m.'],
-        blankWorkspaceLabel: 'Use fives and ones to translate the clock hands into an exact time.',
+        blankWorkspaceLabel: 'Read the official clock and record Rebecca\'s exact homework finish time.',
         meaning: 'The answer names Rebecca\'s homework finish time.',
         explanation: 'The minute hand is two minutes after the 25-minute benchmark, so the time is 5:27.',
         checks: [
@@ -4039,6 +5291,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 5,
+        blankLayout: 'clocks-only',
         sourcePrompt: 'The clock shows what time Mason\'s mom drops him off for practice. a. What time does Mason\'s mom drop him off? b. Mason\'s coach arrives 11 minutes before Mason\'s mom drops him off. What time does Mason\'s coach arrive?',
         startLabel: '3:00 p.m.',
         endLabel: '4:00 p.m.',
@@ -4047,7 +5300,6 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
           {
             label: 'Source clock',
             timeLabel: '3:56 p.m.',
-            blankTimeLabel: '3:56 p.m.',
             showInBlank: true,
             caption: 'Read part a from the clock, then count back 11 minutes for part b.'
           }
@@ -4062,7 +5314,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         solvedNote: 'Mason is dropped off at 3:56 p.m. Counting back 11 minutes lands on 3:45 p.m.',
         solvedAnswer: 'Mason is dropped off at 3:56 p.m.; the coach arrives at 3:45 p.m.',
         equations: ['3:56 p.m. - 11 min = 3:45 p.m.', '56 - 11 = 45'],
-        blankWorkspaceLabel: 'Mark the drop-off time first, then move backward 11 minutes to find the coach arrival time.',
+        blankWorkspaceLabel: 'Read Mason\'s drop-off time from the official clock, then show work to find the coach\'s time 11 minutes earlier.',
         meaning: 'The two points show Mason\'s drop-off time and the earlier coach arrival time.',
         explanation: 'This problem extends the clock-reading strategy into a short elapsed-time count-back.',
         checks: [
@@ -4182,13 +5434,14 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 6,
+        blankLayout: 'clocks-only',
         sourcePrompt: 'Dion walks to school. The clocks below show when he leaves his house and when he arrives at school. How many minutes does it take Dion to walk to school?',
         startLabel: '7:00',
         endLabel: '8:00',
         tickLabels: exactMinuteTicks,
         clocks: [
-          { label: 'Dion leaves his house', timeLabel: '7:35', blankTimeLabel: '7:35', showInBlank: true, caption: 'Source clock: Dion leaves.' },
-          { label: 'Dion arrives at school', timeLabel: '7:54', blankTimeLabel: '7:54', showInBlank: true, caption: 'Source clock: Dion arrives.' }
+          { label: 'Dion leaves his house', timeLabel: '7:35', showInBlank: true, caption: 'Source clock: Dion leaves.' },
+          { label: 'Dion arrives at school', timeLabel: '7:54', showInBlank: true, caption: 'Source clock: Dion arrives.' }
         ],
         points: [
           { label: 'leave', minute: 35, detail: '7:35' },
@@ -4206,6 +5459,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 7,
+        blankLayout: 'open-response',
         sourcePrompt: 'Sydney cleans her room for 45 minutes. She starts at 11:13 a.m. What time does Sydney finish cleaning her room?',
         startLabel: '11:00 a.m.',
         endLabel: '12:00 p.m.',
@@ -4226,6 +5480,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       }),
       timeLineProblem({
         number: 8,
+        blankLayout: 'open-response',
         sourcePrompt: 'The third-grade chorus performs a musical for the school. The musical lasts 42 minutes. It ends at 1:59 p.m. What time did the musical start?',
         startLabel: '1:00 p.m.',
         endLabel: '2:00 p.m.',
@@ -4259,7 +5514,7 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
         startLabel: '0 minutes',
         endLabel: '60 minutes',
         points: [
-          { label: 'yesterday', minute: 25, detail: '25 min', open: true },
+          { label: 'yesterday', minute: 25, detail: '25 min' },
           { label: 'total', minute: 53, detail: '53 min' }
         ],
         jumps: [
@@ -4303,7 +5558,8 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
           'The total time is 34 minutes.',
           'The known part is 12 minutes.',
           'The unknown part plus 12 minutes returns to 34 minutes.'
-        ]
+        ],
+        blankLayout: 'open-response'
       }),
       timeLineProblem({
         number: 3,
@@ -4326,7 +5582,8 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
           'Jeremiah is plotted at 30 minutes.',
           'Tessa is plotted at 47 minutes.',
           'The answer is the gap, not the total of both walks.'
-        ]
+        ],
+        blankLayout: 'open-response'
       }),
       timeLineProblem({
         number: 4,
@@ -4354,7 +5611,8 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
           'The three chore intervals add to 29 minutes.',
           'The bus is 25 minutes after 7:30.',
           'The finish point is after the bus point.'
-        ]
+        ],
+        blankLayout: 'open-response'
       }),
       timeLineProblem({
         number: 5,
@@ -4365,7 +5623,6 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
           {
             label: 'Source wake-up clock',
             timeLabel: '11:36',
-            blankTimeLabel: '11:36',
             showInBlank: true,
             caption: 'The source clock shows when Gilberto\'s cat wakes up.'
           }
@@ -4386,7 +5643,8 @@ export const M2_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
           'The interval is 23 minutes.',
           'The count moves backward because the start time is unknown.',
           'The final time matches the Teacher Edition answer key.'
-        ]
+        ],
+        blankLayout: 'clocks-only'
       })
     ]
   }),

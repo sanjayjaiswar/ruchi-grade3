@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m4-l12",
+  "teacherEditionPdfSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m4-teacher/page-156.png",
+      "sha256": "f5f10ec7332c9e2784b9e0187a39d46b338e013bcf1bc135f1fecac9f4a23bdc",
+      "pdfPage": 156,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 12 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-157.png",
+      "sha256": "6053c5e28a6375abe520b9ff1fb095cda7cac30d64cf0ba51926b88a3684b24f",
+      "pdfPage": 157,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 12 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-228.png",
+      "sha256": "2e651512e4966c1d83fba429477973ead48bc751de7f0970048ee19b446773ab",
+      "pdfPage": 228,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 12 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-229.png",
+      "sha256": "a102caa7e5ee060a3cc8bbf9f64090de099cb2d5b1a84cd22fa1888f3eabfed2",
+      "pdfPage": 229,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 12 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m4-teacher/page-156.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "each side on a sticky note measures 9 centimeters"
+        ],
+        "answerKeyEvidence": "81 sq cm",
+        "layout": {
+          "family": "nine-centimeter-square-sticky-note",
+          "subpartCount": 1,
+          "modelPrimitive": "open-rdw-to-nine-by-nine-square-array",
+          "modelCounts": [
+            81
+          ],
+          "modelOrientation": "vertical-open-response",
+          "responseStructure": "multiply-equal-side-lengths-to-find-area",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m4-teacher/page-156.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "stacy tiles the rectangle below"
+        ],
+        "answerKeyEvidence": "a. 12 sq units; answers will vary. b. Yes; answers will vary.",
+        "layout": {
+          "family": "twelve-square-unit-given-and-alternate-rectangles",
+          "subpartCount": 3,
+          "modelPrimitive": "authored-square-unit-arrays-and-open-construction",
+          "modelCounts": [
+            12,
+            12
+          ],
+          "modelOrientation": "given-model-next-to-alternate-model-over-open-response",
+          "responseStructure": "count-draw-label-and-explain-factor-pair-options",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m4-teacher/page-157.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "an artist paints a 4 foot × 16 foot mural"
+        ],
+        "answerKeyEvidence": "64 sq ft",
+        "layout": {
+          "family": "four-by-sixteen-mural-distributive-split",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-two-tone-four-by-sixteen-square-array",
+          "modelCounts": [
+            64,
+            40,
+            24
+          ],
+          "modelOrientation": "horizontal-ten-plus-six-split-over-equations",
+          "responseStructure": "find-two-partial-areas-and-add"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m4-teacher/page-157.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "alana tiles the 3 figures below"
+        ],
+        "answerKeyEvidence": "a. 4 sq units, 9 sq units, 16 sq units; explanations will vary. b. 5 by 5 and 6 by 6 rectangles drawn; 25 sq units, 36 sq units.",
+        "layout": {
+          "family": "three-given-and-two-extended-growing-square-arrays",
+          "subpartCount": 2,
+          "modelPrimitive": "authored-growing-square-unit-arrays",
+          "modelCounts": [
+            4,
+            9,
+            16,
+            25,
+            36
+          ],
+          "modelOrientation": "three-given-figures-over-open-extension-space",
+          "responseStructure": "find-three-areas-explain-pattern-and-draw-two-next-figures",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m4-teacher/page-157.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "jermaine glues 3 identical pieces of paper"
+        ],
+        "answerKeyEvidence": "3 cm; 54 sq cm",
+        "layout": {
+          "family": "three-identical-strips-form-nine-centimeter-square",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-three-strip-square-illustration",
+          "modelCounts": [
+            9,
+            3,
+            54
+          ],
+          "modelOrientation": "figure-over-two-part-open-response",
+          "responseStructure": "find-one-strip-side-length-and-area-of-two-strips",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l9",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-132.png",
+      "sha256": "59b72d0b5dc85ed0f0fbf5aa01dc07e98e425ffd6067a6c07dc7179c873f72ca",
+      "pdfPage": 132,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 9 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-133.png",
+      "sha256": "04c6a3af0861fec51e097b11aa11eaa979f2b18ca15a3f9af32fda8d3bdd53ef",
+      "pdfPage": 133,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 9 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-476.png",
+      "sha256": "b8d463875e0ef7da16036c0fbb4e16f0252694ab3c1cc8d695d1fa52820f211c",
+      "pdfPage": 476,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 9 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-477.png",
+      "sha256": "8255fe178e5073caee406a9dffa45f9ffe8275b6a4a8838281d657c1b74027b9",
+      "pdfPage": 477,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 9 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-132.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use at least two tangram pieces to make and draw two of each of the following shapes."
+        ],
+        "answerKeyEvidence": "a–d. Drawings will vary.",
+        "layout": {
+          "family": "draw-two-each-of-four-tangram-polygon-types",
+          "subpartCount": 8,
+          "modelPrimitive": "four-row-live-requirement-table+open-drawing-workspace",
+          "modelCounts": [
+            4,
+            2,
+            2
+          ],
+          "modelOrientation": "requirement-table-over-large-open-drawing-space",
+          "responseStructure": "draw-two-rectangles-triangles-parallelograms-trapezoids-with-joins",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-133.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use your two smallest triangles to create a square, a parallelogram, and a triangle."
+        ],
+        "answerKeyEvidence": "Drawings will vary.",
+        "layout": {
+          "family": "compose-three-figures-from-two-smallest-triangles",
+          "subpartCount": 3,
+          "modelPrimitive": "three-row-live-requirement-table+open-drawing-workspace",
+          "modelCounts": [
+            2,
+            3
+          ],
+          "modelOrientation": "requirement-table-over-large-open-drawing-space",
+          "responseStructure": "draw-square-parallelogram-triangle-and-show-joins",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-133.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Create your own shape on a separate sheet of paper using all seven pieces."
+        ],
+        "answerKeyEvidence": "Description of attributes will vary.",
+        "layout": {
+          "family": "create-and-describe-own-seven-piece-tangram-shape",
+          "subpartCount": 2,
+          "modelPrimitive": "single-live-requirement-row+open-drawing-description-workspace",
+          "modelCounts": [
+            7
+          ],
+          "modelOrientation": "requirement-over-open-outline-and-attribute-response",
+          "responseStructure": "use-all-seven-and-describe-source-aligned-attributes",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-133.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Trade your outline with a partner to see if you can re-create her shape using your tangram pieces."
+        ],
+        "answerKeyEvidence": "Outlines and descriptions will vary.",
+        "layout": {
+          "family": "partner-outline-recreation-and-reflection",
+          "subpartCount": 3,
+          "modelPrimitive": "single-live-requirement-row+open-recreation-reflection-workspace",
+          "modelCounts": [],
+          "modelOrientation": "requirement-over-open-outline-and-reflection-response",
+          "responseStructure": "recreate-partner-outline-and-reflect-easy-challenging",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    }
+  ]
+}

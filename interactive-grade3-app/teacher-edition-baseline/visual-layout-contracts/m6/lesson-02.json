@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m6-l2",
+  "teacherEditionPdfSha256": "74325e3dfcae94e1fe359552d3857a3c929b26c5cca327ee80ef45d651aa7358",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m6/workbook-page-07.png",
+      "sha256": "8b9fe4199914a38f1e65bb428d2ded2baa210e10e4465eeac54a6c747ebc2dd8",
+      "pdfPage": 28,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 2 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/workbook-page-08.png",
+      "sha256": "6d6b1c065a5f15b630556e4d5ddca2d03558add163bbbb3b9f5d97714a9f0b1c",
+      "pdfPage": 29,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 2 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/teacher-answer-page-148.png",
+      "sha256": "305bb59d6a25db71c7de1dda94e7c569f28756927e693367fe29694a14efba22",
+      "pdfPage": 148,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 2 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m6/workbook-page-07.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Find the total number of stamps each student has."
+        ],
+        "answerKeyEvidence": "Answer provided; 2 units of 4 drawn; 6 units of 4 drawn; 8 units of 4 drawn",
+        "layout": {
+          "family": "four-stamp-arrays-to-unit-size-four-tapes",
+          "subpartCount": 4,
+          "modelPrimitive": "given-total-table-plus-four-live-equal-unit-tapes",
+          "modelCounts": [
+            16,
+            8,
+            24,
+            32
+          ],
+          "modelOrientation": "four-student-card-grid",
+          "responseStructure": "retain-dana-example-and-complete-four-totals"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m6/workbook-page-07.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Explain how you can create vertical tape diagrams"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "explain-rotation-of-four-horizontal-tapes",
+          "subpartCount": 1,
+          "modelPrimitive": "four-dependent-equal-unit-tapes-plus-open-explanation",
+          "modelCounts": [
+            4,
+            2,
+            6,
+            8
+          ],
+          "modelOrientation": "four-student-card-grid-over-response",
+          "responseStructure": "turn-tapes-upright-while-preserving-labels-and-unit-counts",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m6/workbook-page-08.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Complete the vertical tape diagrams below",
+          "7 × 8 = 56"
+        ],
+        "answerKeyEvidence": "Answer provided; 2 units of 4 drawn; 6 units of 4 drawn; 8 units of 4 drawn; 1 unit of 8 drawn; 3 units of 8 drawn; 4 units of 8 drawn; Answers will vary; 20; 10",
+        "layout": {
+          "family": "paired-unit-four-and-unit-eight-vertical-tape-displays",
+          "subpartCount": 7,
+          "modelPrimitive": "eight-live-equal-unit-tapes",
+          "modelCounts": [
+            20,
+            10,
+            7,
+            56
+          ],
+          "modelOrientation": "two-four-student-card-grids",
+          "responseStructure": "complete-both-displays-and-answer-c-through-g",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m2-l9",
+  "teacherEditionPdfSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m2-teacher/page-111.png",
+      "sha256": "e86026dd1bb3951e0d8cf11d96d22be4851dcea5fec3133c86805fc94442c817",
+      "pdfPage": 111,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 9 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-teacher/page-112.png",
+      "sha256": "134fb1927b83764322fda779cf9019fc95b743b719e454433ccdc2330a823cd8",
+      "pdfPage": 112,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 9 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-answer-key/page-289.png",
+      "sha256": "e5965bb400aa526f42c8310e2ea2a8d62b6fd81567531b03906ea5ad16cb72e5",
+      "pdfPage": 289,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 9 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m2-teacher/page-111.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "predict whether each container holds less than more than or about the same as 1 liter."
+        ],
+        "answerKeyEvidence": "a. Predictions will vary. b. Answers will vary. c. Illustrations and descriptions will vary. d. Illustrations and descriptions will vary. e. Illustrations and descriptions will vary. f. They both break apart into 1 thousand units. 1 liter is 1000 milliliters, and 1 kilogram is 1000 grams. g. 1 gram; 1 liter is the same as 1 kilogram, and they break apart the same way into 1 thousand units.",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m2-teacher/page-111.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "illustrate and describe the process of decomposing 1 liter of water into 10 smaller units."
+        ],
+        "answerKeyEvidence": "a. Predictions will vary. b. Answers will vary. c. Illustrations and descriptions will vary. d. Illustrations and descriptions will vary. e. Illustrations and descriptions will vary. f. They both break apart into 1 thousand units. 1 liter is 1000 milliliters, and 1 kilogram is 1000 grams. g. 1 gram; 1 liter is the same as 1 kilogram, and they break apart the same way into 1 thousand units.",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m2-teacher/page-112.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "illustrate and describe the process of decomposing cup k"
+        ],
+        "answerKeyEvidence": "a. Predictions will vary. b. Answers will vary. c. Illustrations and descriptions will vary. d. Illustrations and descriptions will vary. e. Illustrations and descriptions will vary. f. They both break apart into 1 thousand units. 1 liter is 1000 milliliters, and 1 kilogram is 1000 grams. g. 1 gram; 1 liter is the same as 1 kilogram, and they break apart the same way into 1 thousand units.",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m2-teacher/page-112.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "what is the same about decomposing 1 liter into milliliters and decomposing 1 kilogram into grams"
+        ],
+        "answerKeyEvidence": "a. Predictions will vary. b. Answers will vary. c. Illustrations and descriptions will vary. d. Illustrations and descriptions will vary. e. Illustrations and descriptions will vary. f. They both break apart into 1 thousand units. 1 liter is 1000 milliliters, and 1 kilogram is 1000 grams. g. 1 gram; 1 liter is the same as 1 kilogram, and they break apart the same way into 1 thousand units.",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m2-teacher/page-112.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "one liter of water weighs 1 kilogram. how much does 1 milliliter of water weigh explain how you know."
+        ],
+        "answerKeyEvidence": "a. Predictions will vary. b. Answers will vary. c. Illustrations and descriptions will vary. d. Illustrations and descriptions will vary. e. Illustrations and descriptions will vary. f. They both break apart into 1 thousand units. 1 liter is 1000 milliliters, and 1 kilogram is 1000 grams. g. 1 gram; 1 liter is the same as 1 kilogram, and they break apart the same way into 1 thousand units.",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

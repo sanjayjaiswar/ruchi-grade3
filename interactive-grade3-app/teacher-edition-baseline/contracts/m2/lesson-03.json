@@ -3,7 +3,7 @@
   "lessonId": "m2-l3",
   "moduleId": "m2",
   "lessonNumber": 3,
-  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "generatedAt": "2026-07-27T02:56:13.408Z",
   "source": {
     "teacherEditionPdf": "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf",
     "teacherEditionSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
@@ -38,13 +38,327 @@
   "objective": "Count by fives and ones on the number line as a strategy to tell time to the nearest minute on the clock.",
   "instructionalContract": {
     "instructionalMode": "concept-development",
-    "applicationProblemText": "relate to the first\n         number line we drew in the",
-    "conceptDevelopmentText": "?\n        Look at Problem 5. Can you share another strategy you used to tell the time on the clock other than\n         counting by fives and ones from the 0 minute mark?\n\n\n                        Lesson 3:                     Count by fives and ones on the number line as a strategy to tell time to              41\n                                                      the nearest minute on the clock.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                             Lesson 3 3 2\n\n\n       (In anticipation of Lesson 4, which involves\n        solving word problems with time intervals, have\n        students discuss Problem 5(b).) How is Problem\n        5(b) different from the rest of the problems?\n        How can you solve Problem 5(b)?\n\nExit Ticket (3 minutes)\nAfter the",
+    "applicationProblemText": "There are 12 tables in the cafeteria. Five students sit at each of the first 11 tables. Three students sit at the\nlast table. How many students are sitting at the 12 tables in the cafeteria?\n\n\nNote: This problem activates prior knowledge from Module 1 about multiplying by 5. Students relate this\nwork from the Application Problem to modeling minutes on the number line in the Concept Development.",
+    "conceptDevelopmentText": "Materials: (T) Analog clock for demonstration (S) Personal white board, centimeter                                                        Template\n           ruler, clock (Template) (pictured to the right)\n\nProblem 1: Count minutes by fives and ones on a number line.\n    T:   Use your ruler to draw a 12-centimeter line on your personal white board.\n         Start at the 0 mark, and make a tick mark at each centimeter up to the number\n         12. Label the first tick mark 0 and the last tick mark 60. Then, count by fives\n         from 0 to 60 to label each interval, like we did in the last lesson.\n    S:   (Draw and label a number line as shown.)\n\n\n            0     5    10            15           20        25       30      35      40        45        50        55        60\n\n\n    T:   Put your finger on 0. Count by ones from 0 to 5. What\n         numbers did you count between 0 and 5?                                                                              NOTES ON\n    S:   1, 2, 3, and 4.                                                                                                     MULTIPLE MEANS\n    T:   We could draw tick marks, but let’s instead imagine                                                                 OF ACTION AND\n         they are there. Can you see them?                                                                                   EXPRESSION:\n    S:   Yes!                                                                                                    Use preprinted number lines for\n    T:   Put your finger on 5. Count on by ones from 5 to 10.                                                    students with fine motor or perception\n                                                                                                                 difficulties. You can also have students\n         What numbers did you count between 5 and 10?\n                                                                                                                 actually draw all the tick marks, but be\n    S:   6, 7, 8, and 9.                                                                                         aware this may encourage counting all\n    T:   Can you imagine those tick marks, too?                                                                  when the objective is to count by fives\n                                                                                                                 and ones.\n\n\n                         Lesson 3:                     Count by fives and ones on the number line as a strategy to tell time to                             38\n                                                       the nearest minute on the clock.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 3 3 2\n\n\n    S:   Yes!\n    T:   Let’s find 58 minutes on the number line. Put your finger on 0. Count by five to 55.\n    S:   (Count 11 fives.)\n    T:   Let’s draw the tick marks from 55 to 60. Count with me as I draw the tick marks from 55 to 60. Start\n         at 55, which is already there.\n    S:   55, (begin drawing) 56, 57, 58, 59, (stop drawing) 60.\n    T:   How many ticks did I draw?\n    S:   4.\n    T:   Go ahead and draw yours. (Allow students time to draw.)\n    T:   Count on by ones to find 58 using the tick marks we made in the interval between 55 and 60.\n\n MP.6\n            0    5     10           15           20        25      30       35      40        45       50         55        60\n\n\n    S:   (Count on by ones and say numbers aloud.) 56, 57, 58.\n    T:   How many fives did we count?\n    S:   11.\n    T:   How many ones did we count?\n    S:   3.\n    T:   11 fives + 3. How can we write that as multiplication? Discuss with your partner.\n    S:   (11 × 5) + 3.\n    T:   Discuss with a partner how our modeling with the number line relates to the Application Problem.\n    S:   (Discuss.)\nRepeat the process with other combinations of fives and ones, such as (4 × 5) + 2 and (0 × 5) + 4.\n    T:   Which units did we count by on the number line to solve these problems?\n    S:   Fives and ones.\n    T:   Whisper to your partner. What steps did we take to solve these problems on the number line?\n    S:   (Discuss.)\n\nProblem 2: Count by fives and ones on a number line to tell time to the nearest minute.\n    T:   I arrived at school this morning at 7:37 a.m. Let’s find that time on our number line. Label 7:00 a.m.\n         above the 0 mark and 8:00 a.m. above the 60 mark.\n    S:   (Label 7:00 a.m. and 8:00 a.m.)\n    T:   Which units should we count by to get to 7:37?\n    S:   Count by fives to 7:35 and then by ones to 7:37.\n    T:   How many fives?\n    S:   7 fives.\n    T:   How many ones?\n    S:   2 ones.\n\n\n                        Lesson 3:                     Count by fives and ones on the number line as a strategy to tell time to              39\n                                                      the nearest minute on the clock.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                             Lesson 3 3 2\n\n\n    T:   Let's move our fingers over 7 fives and 2 ones on the number line.\n    S:   (Move fingers and count.)\n    T:   Give me a number sentence.\n    S:   (7 × 5) + 2 = 37.\n    T:   Plot the point on your number line.\nRepeat the process with other times that can be plotted on this same number line, such as 7:13 a.m.,\n7:49 a.m., and 7:02 a.m.\n\nProblem 3: Count by fives and ones on a clock to tell time to the nearest minute.\n    T:   Insert the clock template in your personal white board. How is the clock similar to our number line?\n    S:   There are 4 tick marks between the numbers on both.  They both have intervals of 5 with 4 marks\n         in between.\n    T:   What do the small tick marks represent on the clock?\n    S:   Ones.  1 minute!\n    T:   We can use a clock just like we use a number line to tell time\n         because a clock is a circular number line. Imagine twisting our\n         number line into a circle. In your mind’s eye, at what number do\n         the ends of your number line connect?\n    S:   At the 12.\n    T:   The 12 on the clock represents the end of one hour and the\n         beginning of another.\n    T:   (Project the analog clock and draw the hands as shown.) This clock shows what time I woke up this\n         morning. Draw the minute hand on your clock to look like mine.\n    S:   (Draw the hand on the clock template.)\n    T:   Let’s find the minutes by counting by fives and ones. Put your finger on the 12—the zero—and\n         count by fives with me.\n    S:   (Move finger along the clock and count by fives to 45.)\n    T:   (Stop at 45.) How many minutes?\n    S:   45.\n    T:   Let’s count on by ones until we get to the minute hand. Move your finger and count on with me.\n    S:   46, 47, 48. (Move finger and count on by ones.)\n    T:   How many minutes?\n    S:   48.\n    T:   Draw the hour hand. How many hours?\n    S:   5.\n    T:   What is the time?\n    S:   5:48 a.m.\n    T:   Write the time on your personal white boards.\n    S:   (Write 5:48 a.m.)\n\n\n                       Lesson 3:                     Count by fives and ones on the number line as a strategy to tell time to             40\n                                                     the nearest minute on the clock.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 3 3 2\n\n\nRepeat the process of telling time to the nearest minute, providing a small context for each example.\nUse the following suggested sequence: 12:14 a.m. and 2:28 p.m.\n    T:   Can anyone share another strategy they used to tell the time on the clock for 2:28 p.m. other than\n         counting by fives and ones from the 0 minute mark?\n    S:   I started at 2:30 p.m. and counted back 2 minutes to get to 2:28 p.m.",
     "fluencyPracticeText": " Tell Time on the Clock 2.MD.7                                       (3 minutes)\n Decompose 60 Minutes 3.MD.1                                         (6 minutes)\n Minute Counting 3.MD.1                                              (3 minutes)\n Group Counting 3.OA.1                                               (3 minutes)\n\nTell Time on the Clock (3 minutes)\nMaterials: (T) Analog clock for demonstration (S) Personal white board\n\nNote: This activity reviews the Grade 2 standard of telling and writing time to the nearest 5 minutes. It\nreviews Lesson 2 and prepares students to count by 5 minutes and some ones in this lesson.\n    T:   (Show an analog demonstration clock.) Start at 12 and count by 5 minutes on the clock.\n         (Move finger from 12 to 1, 2, 3, 4, etc., as students count.)\n    S:   5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60.\n    T:   I’ll show a time on the clock. Write the time on your personal white board. (Show 4:00.)\n    S:   (Write 4:00.)\n    T:   (Show 4:15.)\n    S:   (Write 4:15.)\nRepeat process, varying the hour and 5-minute interval so that students read and write a variety of times to\nthe nearest 5 minutes.\n\n\n                        Lesson 3:                     Count by fives and ones on the number line as a strategy to tell time to             36\n                                                      the nearest minute on the clock.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 3 3 2\n\n\nDecompose 60 Minutes (6 minutes)\nMaterials: (S) Personal white board\n\nNote: Decomposing 60 minutes using a number bond helps students relate part–whole thinking to telling\ntime.\n    T:   (Project a number bond with 60 minutes written as the whole.) There are\n         60 minutes in 1 hour.\n    T:   (Write 50 minutes as one of the parts.) On your board, draw this number\n         bond and complete the unknown part.\n    S:   (Draw number bond with 10 minutes, completing the unknown part.)\nRepeat the process for 30 minutes, 40 minutes, 45 minutes, and 35 minutes.\n\nMinute Counting (3 minutes)\nNote: Students practice counting strategies for multiplication in\nthe context of time. This activity prepares students for telling\n                                                                                                                            NOTES ON\ntime to the nearest minute and builds skills for using mental\nmath to add and subtract minute intervals in Lesson 5.                                                                      MULTIPLE MEANS\n                                                                                                                            OF REPRESENTATION:\nUse the process outlined for this activity in Lesson 1. Direct\n                                                                                                                The vocabulary half-past, quarter-past\nstudents to count by 5 minutes to an hour, half hour, and                                                       and quarter ‘til might be challenging for\nquarter hour.                                                                                                   students. Consider reviewing the\n        6 minutes, counting to 1 hour, and naming half hour                                                    phrases by writing the words on the\n         and 1 hour intervals as such                                                                           board and having students read them\n                                                                                                                chorally. As you define the phrases for\n        3 minutes, counting to 30 minutes, and naming the                                                      students, next to each one, draw a\n         quarter hour and half hour intervals as such                                                           circle with clock hands pointing to the\n        9 minutes, counting to quarter ‘til 1 hour                                                             place that corresponds to the language.\n                                                                                                                Leave it on the board for students to\n        10 minutes, using the following sequence: 10 minutes,\n                                                                                                                reference during this activity.\n         20 minutes, half hour, 40 minutes, 50 minutes,\n         1 hour\n\nGroup Counting (3 minutes)\nNote: Group counting reviews the interpretation of multiplication as repeated addition. Counting by sevens,\neights, and nines in this activity anticipates multiplication using those units in Module 3.\nDirect students to count forward and backward using the following suggested sequence, occasionally\nchanging the direction of the count:\n        Sevens to 42, emphasizing the transition from 35 to 42\n        Eights to 48, emphasizing the transition from 40 to 48\n        Nines to 54, emphasizing the transition from 45 to 54\n\n\n                        Lesson 3:                     Count by fives and ones on the number line as a strategy to tell time to                              37\n                                                      the nearest minute on the clock.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 3 3 2",
     "problemSetGuidanceText": "Students should do their personal best to complete the Problem Set within the allotted 10 minutes. For\nsome classes, it may be appropriate to modify the assignment by specifying which problems they work on\nfirst. Some problems do not specify a method for solving. Students should solve these problems using the\nRDW approach used for Application Problems.",
-    "studentDebriefText": ", instruct students to complete\nthe",
-    "teacherStudentSequence": [],
-    "teacherPrompts": [],
+    "studentDebriefText": "Lesson Objective: Count by fives and ones on the number\nline as a strategy to tell time to the nearest minute on the\nclock.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Look at Problem 1. Talk to a partner: How is the\n         number line similar to the analog clock? How is it\n         different?\n        What strategy did you use to draw the hands on\n         the clock in Problem 3?\n        Look at Problem 4. How many fives did you count by? Write a multiplication equation to show that.\n         How many ones did you count on by? Write a multiplication equation to show that. How many\n         minutes altogether?\n        How does the tape diagram that many of us drew to solve the Application Problem relate to the first\n         number line we drew in the Concept Development?\n        Look at Problem 5. Can you share another strategy you used to tell the time on the clock other than\n         counting by fives and ones from the 0 minute mark?\n\n\n                        Lesson 3:                     Count by fives and ones on the number line as a strategy to tell time to              41\n                                                      the nearest minute on the clock.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                             Lesson 3 3 2\n\n\n       (In anticipation of Lesson 4, which involves\n        solving word problems with time intervals, have\n        students discuss Problem 5(b).) How is Problem\n        5(b) different from the rest of the problems?\n        How can you solve Problem 5(b)?",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Use your ruler to draw a 12-centimeter line on your personal white board. Start at the 0 mark, and make a tick mark at each centimeter up to the number 12. Label the first tick mark 0 and the last tick mark 60. Then, count by fives from 0 to 60 to label each interval, like we did in the last lesson."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label a number line as shown.) 0 5 10 15 20 25 30 35 40 45 50 55 60"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Put your finger on 0. Count by ones from 0 to 5. What numbers did you count between 0 and 5? NOTES ON"
+      },
+      {
+        "speaker": "students",
+        "text": "1, 2, 3, and 4. MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We could draw tick marks, but let’s instead imagine OF ACTION AND they are there. Can you see them? EXPRESSION:"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes! Use preprinted number lines for"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Put your finger on 5. Count on by ones from 5 to 10. students with fine motor or perception difficulties. You can also have students What numbers did you count between 5 and 10? actually draw all the tick marks, but be"
+      },
+      {
+        "speaker": "students",
+        "text": "6, 7, 8, and 9. aware this may encourage counting all"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you imagine those tick marks, too? when the objective is to count by fives and ones. the nearest minute on the clock. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 3 3 2"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s find 58 minutes on the number line. Put your finger on 0. Count by five to 55."
+      },
+      {
+        "speaker": "students",
+        "text": "(Count 11 fives.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s draw the tick marks from 55 to 60. Count with me as I draw the tick marks from 55 to 60. Start at 55, which is already there."
+      },
+      {
+        "speaker": "students",
+        "text": "55, (begin drawing) 56, 57, 58, 59, (stop drawing) 60."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many ticks did I draw?"
+      },
+      {
+        "speaker": "students",
+        "text": "4."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Go ahead and draw yours. (Allow students time to draw.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Count on by ones to find 58 using the tick marks we made in the interval between 55 and 60. MP.6 0 5 10 15 20 25 30 35 40 45 50 55 60"
+      },
+      {
+        "speaker": "students",
+        "text": "(Count on by ones and say numbers aloud.) 56, 57, 58."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many fives did we count?"
+      },
+      {
+        "speaker": "students",
+        "text": "11."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many ones did we count?"
+      },
+      {
+        "speaker": "students",
+        "text": "3."
+      },
+      {
+        "speaker": "teacher",
+        "text": "11 fives + 3. How can we write that as multiplication? Discuss with your partner."
+      },
+      {
+        "speaker": "students",
+        "text": "(11 × 5) + 3."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Discuss with a partner how our modeling with the number line relates to the Application Problem."
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.) Repeat the process with other combinations of fives and ones, such as (4 × 5) + 2 and (0 × 5) + 4."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Which units did we count by on the number line to solve these problems?"
+      },
+      {
+        "speaker": "students",
+        "text": "Fives and ones."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Whisper to your partner. What steps did we take to solve these problems on the number line?"
+      },
+      {
+        "speaker": "students",
+        "text": "(Discuss.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "I arrived at school this morning at 7:37 a.m. Let’s find that time on our number line. Label 7:00 a.m. above the 0 mark and 8:00 a.m. above the 60 mark."
+      },
+      {
+        "speaker": "students",
+        "text": "(Label 7:00 a.m. and 8:00 a.m.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Which units should we count by to get to 7:37?"
+      },
+      {
+        "speaker": "students",
+        "text": "Count by fives to 7:35 and then by ones to 7:37."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many fives?"
+      },
+      {
+        "speaker": "students",
+        "text": "7 fives."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many ones?"
+      },
+      {
+        "speaker": "students",
+        "text": "2 ones. the nearest minute on the clock. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 3 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let's move our fingers over 7 fives and 2 ones on the number line."
+      },
+      {
+        "speaker": "students",
+        "text": "(Move fingers and count.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Give me a number sentence."
+      },
+      {
+        "speaker": "students",
+        "text": "(7 × 5) + 2 = 37."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Plot the point on your number line. Repeat the process with other times that can be plotted on this same number line, such as 7:13 a.m., 7:49 a.m., and 7:02 a.m."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Insert the clock template in your personal white board. How is the clock similar to our number line?"
+      },
+      {
+        "speaker": "students",
+        "text": "There are 4 tick marks between the numbers on both.  They both have intervals of 5 with 4 marks in between."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What do the small tick marks represent on the clock?"
+      },
+      {
+        "speaker": "students",
+        "text": "Ones.  1 minute!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We can use a clock just like we use a number line to tell time because a clock is a circular number line. Imagine twisting our number line into a circle. In your mind’s eye, at what number do the ends of your number line connect?"
+      },
+      {
+        "speaker": "students",
+        "text": "At the 12."
+      },
+      {
+        "speaker": "teacher",
+        "text": "The 12 on the clock represents the end of one hour and the beginning of another."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project the analog clock and draw the hands as shown.) This clock shows what time I woke up this morning. Draw the minute hand on your clock to look like mine."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw the hand on the clock template.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s find the minutes by counting by fives and ones. Put your finger on the 12—the zero—and count by fives with me."
+      },
+      {
+        "speaker": "students",
+        "text": "(Move finger along the clock and count by fives to 45.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Stop at 45.) How many minutes?"
+      },
+      {
+        "speaker": "students",
+        "text": "45."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s count on by ones until we get to the minute hand. Move your finger and count on with me."
+      },
+      {
+        "speaker": "students",
+        "text": "46, 47, 48. (Move finger and count on by ones.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many minutes?"
+      },
+      {
+        "speaker": "students",
+        "text": "48."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Draw the hour hand. How many hours?"
+      },
+      {
+        "speaker": "students",
+        "text": "5."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the time?"
+      },
+      {
+        "speaker": "students",
+        "text": "5:48 a.m."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the time on your personal white boards."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 5:48 a.m.) the nearest minute on the clock. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 3 3 2 Repeat the process of telling time to the nearest minute, providing a small context for each example. Use the following suggested sequence: 12:14 a.m. and 2:28 p.m."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can anyone share another strategy they used to tell the time on the clock for 2:28 p.m. other than counting by fives and ones from the 0 minute mark?"
+      },
+      {
+        "speaker": "students",
+        "text": "I started at 2:30 p.m. and counted back 2 minutes to get to 2:28 p.m."
+      }
+    ],
+    "teacherPrompts": [
+      "Use your ruler to draw a 12-centimeter line on your personal white board. Start at the 0 mark, and make a tick mark at each centimeter up to the number 12. Label the first tick mark 0 and the last tick mark 60. Then, count by fives from 0 to 60 to label each interval, like we did in the last lesson.",
+      "Put your finger on 0. Count by ones from 0 to 5. What numbers did you count between 0 and 5? NOTES ON",
+      "We could draw tick marks, but let’s instead imagine OF ACTION AND they are there. Can you see them? EXPRESSION:",
+      "Put your finger on 5. Count on by ones from 5 to 10. students with fine motor or perception difficulties. You can also have students What numbers did you count between 5 and 10? actually draw all the tick marks, but be",
+      "Can you imagine those tick marks, too? when the objective is to count by fives and ones. the nearest minute on the clock. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 3 3 2",
+      "Let’s find 58 minutes on the number line. Put your finger on 0. Count by five to 55.",
+      "Let’s draw the tick marks from 55 to 60. Count with me as I draw the tick marks from 55 to 60. Start at 55, which is already there.",
+      "How many ticks did I draw?",
+      "Go ahead and draw yours. (Allow students time to draw.)",
+      "Count on by ones to find 58 using the tick marks we made in the interval between 55 and 60. MP.6 0 5 10 15 20 25 30 35 40 45 50 55 60",
+      "How many fives did we count?",
+      "How many ones did we count?",
+      "11 fives + 3. How can we write that as multiplication? Discuss with your partner.",
+      "Discuss with a partner how our modeling with the number line relates to the Application Problem.",
+      "Which units did we count by on the number line to solve these problems?",
+      "Whisper to your partner. What steps did we take to solve these problems on the number line?",
+      "I arrived at school this morning at 7:37 a.m. Let’s find that time on our number line. Label 7:00 a.m. above the 0 mark and 8:00 a.m. above the 60 mark.",
+      "Which units should we count by to get to 7:37?",
+      "How many fives?",
+      "How many ones?",
+      "Let's move our fingers over 7 fives and 2 ones on the number line.",
+      "Give me a number sentence.",
+      "Plot the point on your number line. Repeat the process with other times that can be plotted on this same number line, such as 7:13 a.m., 7:49 a.m., and 7:02 a.m.",
+      "Insert the clock template in your personal white board. How is the clock similar to our number line?",
+      "What do the small tick marks represent on the clock?",
+      "We can use a clock just like we use a number line to tell time because a clock is a circular number line. Imagine twisting our number line into a circle. In your mind’s eye, at what number do the ends of your number line connect?",
+      "The 12 on the clock represents the end of one hour and the beginning of another.",
+      "(Project the analog clock and draw the hands as shown.) This clock shows what time I woke up this morning. Draw the minute hand on your clock to look like mine.",
+      "Let’s find the minutes by counting by fives and ones. Put your finger on the 12—the zero—and count by fives with me.",
+      "(Stop at 45.) How many minutes?",
+      "Let’s count on by ones until we get to the minute hand. Move your finger and count on with me.",
+      "How many minutes?",
+      "Draw the hour hand. How many hours?",
+      "What is the time?",
+      "Write the time on your personal white boards.",
+      "Can anyone share another strategy they used to tell the time on the clock for 2:28 p.m. other than counting by fives and ones from the 0 minute mark?"
+    ],
     "debriefPrompt": "Look at Problem 1. Talk to a partner: How is the number line similar to the analog clock? How is it different?",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
@@ -79,6 +393,7 @@
       "number-bond",
       "number-line",
       "clock",
+      "ruler-or-length",
       "picture-or-drawing"
     ],
     "sourceEvidence": {
@@ -91,27 +406,138 @@
       ],
       "number-line": [
         "Count by fives and ones on the number line as a strategy to tell time to the nearest minute on the clock.",
-        "number line we drew in the",
-        "Lesson 3: Count by fives and ones on the number line as a strategy to tell time to 41",
-        "solving word problems with time intervals, have",
-        "Repeat process, varying the hour and 5-minute interval so that students read and write a variety of times to",
-        "Lesson 3: Count by fives and ones on the number line as a strategy to tell time to 36",
-        "math to add and subtract minute intervals in Lesson 5. MULTIPLE MEANS",
-        "and 1 hour intervals as such board and having students read them"
+        "work from the Application Problem to modeling minutes on the number line in the Concept Development.",
+        "Problem 1: Count minutes by fives and ones on a number line.",
+        "Start at the 0 mark, and make a tick mark at each centimeter up to the number",
+        "12. Label the first tick mark 0 and the last tick mark 60. Then, count by fives",
+        "from 0 to 60 to label each interval, like we did in the last lesson.",
+        "S: (Draw and label a number line as shown.)",
+        "Lesson 3: Count by fives and ones on the number line as a strategy to tell time to 38"
       ],
       "clock": [
+        "Materials: (T) Analog clock for demonstration (S) Personal white board, centimeter Template",
+        "T: (Project the analog clock and draw the hands as shown.) This clock shows what time I woke up this",
+        "morning. Draw the minute hand on your clock to look like mine.",
+        "T: Let’s count on by ones until we get to the minute hand. Move your finger and count on with me.",
+        "T: Draw the hour hand. How many hours?",
         "Materials: (T) Analog clock for demonstration (S) Personal white board"
       ],
+      "ruler-or-length": [
+        "Materials: (T) Analog clock for demonstration (S) Personal white board, centimeter Template",
+        "ruler, clock (Template) (pictured to the right)",
+        "T: Use your ruler to draw a 12-centimeter line on your personal white board.",
+        "Start at the 0 mark, and make a tick mark at each centimeter up to the number"
+      ],
       "picture-or-drawing": [
-        "T: (Write 50 minutes as one of the parts.) On your board, draw this number",
-        "S: (Draw number bond with 10 minutes, completing the unknown part.)",
-        " 3 minutes, counting to 30 minutes, and naming the students, next to each one, draw a",
-        "1. Plot a point on the number line for the times shown on the clocks below. Then, draw a line to match the",
-        "Draw hands on the clock below to show 8:23 a.m. Draw hands on the clock below"
+        "T: Use your ruler to draw a 12-centimeter line on your personal white board.",
+        "S: (Draw and label a number line as shown.)",
+        "T: We could draw tick marks, but let’s instead imagine OF ACTION AND",
+        "actually draw all the tick marks, but be",
+        "T: Let’s draw the tick marks from 55 to 60. Count with me as I draw the tick marks from 55 to 60. Start",
+        "S: 55, (begin drawing) 56, 57, 58, 59, (stop drawing) 60.",
+        "T: How many ticks did I draw?",
+        "T: Go ahead and draw yours. (Allow students time to draw.)"
       ]
     },
     "sourceIllustrationRequired": false,
-    "animationSourceSequence": [],
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Use your ruler to draw a 12-centimeter line on your personal white board. Start at the 0 mark, and make a tick mark at each centimeter up to the number 12. Label the first tick mark 0 and the last tick mark 60. Then, count by fives from 0 to 60 to label each interval, like we did in the last lesson."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw and label a number line as shown.) 0 5 10 15 20 25 30 35 40 45 50 55 60"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Put your finger on 0. Count by ones from 0 to 5. What numbers did you count between 0 and 5? NOTES ON"
+      },
+      {
+        "speaker": "teacher",
+        "text": "We could draw tick marks, but let’s instead imagine OF ACTION AND they are there. Can you see them? EXPRESSION:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Put your finger on 5. Count on by ones from 5 to 10. students with fine motor or perception difficulties. You can also have students What numbers did you count between 5 and 10? actually draw all the tick marks, but be"
+      },
+      {
+        "speaker": "students",
+        "text": "6, 7, 8, and 9. aware this may encourage counting all"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Can you imagine those tick marks, too? when the objective is to count by fives and ones. the nearest minute on the clock. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G 3-M 2-TE-1.3.0 -0 5.2 0 15 A STORY OF UNITS Lesson 3 3 2"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s find 58 minutes on the number line. Put your finger on 0. Count by five to 55."
+      },
+      {
+        "speaker": "students",
+        "text": "(Count 11 fives.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s draw the tick marks from 55 to 60. Count with me as I draw the tick marks from 55 to 60. Start at 55, which is already there."
+      },
+      {
+        "speaker": "students",
+        "text": "55, (begin drawing) 56, 57, 58, 59, (stop drawing) 60."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many ticks did I draw?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Go ahead and draw yours. (Allow students time to draw.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Count on by ones to find 58 using the tick marks we made in the interval between 55 and 60. MP.6 0 5 10 15 20 25 30 35 40 45 50 55 60"
+      },
+      {
+        "speaker": "students",
+        "text": "(Count on by ones and say numbers aloud.) 56, 57, 58."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many fives did we count?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many ones did we count?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "11 fives + 3. How can we write that as multiplication? Discuss with your partner."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Discuss with a partner how our modeling with the number line relates to the Application Problem."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Which units did we count by on the number line to solve these problems?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Whisper to your partner. What steps did we take to solve these problems on the number line?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "I arrived at school this morning at 7:37 a.m. Let’s find that time on our number line. Label 7:00 a.m. above the 0 mark and 8:00 a.m. above the 60 mark."
+      },
+      {
+        "speaker": "students",
+        "text": "(Label 7:00 a.m. and 8:00 a.m.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Which units should we count by to get to 7:37?"
+      }
+    ],
     "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
   },
   "deliveryContract": {

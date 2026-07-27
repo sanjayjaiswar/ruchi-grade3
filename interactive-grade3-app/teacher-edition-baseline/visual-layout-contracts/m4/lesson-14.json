@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m4-l14",
+  "teacherEditionPdfSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m4-teacher/page-180.png",
+      "sha256": "cb60f9b720acacc6c106f5aa617d8c04d1723b9666a431dc1a2edddb70aa51b7",
+      "pdfPage": 180,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 14 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-181.png",
+      "sha256": "aadccd5ac6a78614d72919f4a23ce50a9a893052be6fe884090f25cd4cc8516e",
+      "pdfPage": 181,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 14 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-231.png",
+      "sha256": "5b8965287a48517ef283765c9e9b065c1f115db7362c51ab25870bd9b3dd425a",
+      "pdfPage": 231,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 14 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m4-teacher/page-180.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "find the area of each of the following figures"
+        ],
+        "answerKeyEvidence": "a. 19 sq cm. b. 10 sq m.",
+        "layout": {
+          "family": "two-dimensioned-composite-rectangle-figures",
+          "subpartCount": 2,
+          "modelPrimitive": "two-tight-official-composite-figure-illustrations",
+          "modelCounts": [
+            19,
+            10
+          ],
+          "modelOrientation": "two-vertical-source-figures-over-two-area-lines",
+          "responseStructure": "decompose-or-complete-each-figure-and-find-area",
+          "sourceFirst": true,
+          "sourceCropCount": 2
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m4-teacher/page-180.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "small rectangle in a big rectangle"
+        ],
+        "answerKeyEvidence": "24 sq m",
+        "layout": {
+          "family": "six-by-five-frame-minus-three-by-two-interior",
+          "subpartCount": 1,
+          "modelPrimitive": "tight-official-labeled-frame-figure",
+          "modelCounts": [
+            30,
+            6,
+            24
+          ],
+          "modelOrientation": "figure-over-open-response",
+          "responseStructure": "subtract-interior-rectangle-from-outer-rectangle",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m4-teacher/page-181.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "paper rectangle has a length of 6 inches and a width of 8 inches"
+        ],
+        "answerKeyEvidence": "39 sq in",
+        "layout": {
+          "family": "six-by-eight-paper-minus-three-by-three-square",
+          "subpartCount": 1,
+          "modelPrimitive": "open-rdw-to-two-square-unit-arrays",
+          "modelCounts": [
+            48,
+            9,
+            39
+          ],
+          "modelOrientation": "vertical-open-response",
+          "responseStructure": "find-original-and-cutout-areas-then-subtract",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m4-teacher/page-181.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "tila and evan both have paper rectangles"
+        ],
+        "answerKeyEvidence": "Evan; explanations will vary.",
+        "layout": {
+          "family": "equal-area-three-by-four-and-two-by-six-cutouts",
+          "subpartCount": 1,
+          "modelPrimitive": "open-rdw-to-three-square-unit-arrays",
+          "modelCounts": [
+            54,
+            12,
+            12,
+            42,
+            42
+          ],
+          "modelOrientation": "vertical-open-response",
+          "responseStructure": "compare-two-cutout-areas-and-remaining-paper-areas",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    }
+  ]
+}

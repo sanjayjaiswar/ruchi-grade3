@@ -159,6 +159,17 @@ stop_app() {
   stop_listener_on_port "$PORT" "Grade 3 app"
 }
 
+generate_local_search_index() {
+  if [[ ! -d "$APP_DIR/node_modules/typescript" ]]; then
+    echo "Error: local search generator requires installed app dependencies." >&2
+    exit 1
+  fi
+  (
+    cd "$APP_DIR"
+    npm run generate:local-search
+  )
+}
+
 start_app() {
   local start_command
 
@@ -186,6 +197,7 @@ start_app() {
     exit 1
   fi
 
+  generate_local_search_index
   write_context
   : > "$APP_LOG"
 
@@ -240,6 +252,7 @@ command="${1:-start}"
 case "$command" in
   start)
     if lsof -t -nP -iTCP:"$PORT" -sTCP:LISTEN >/dev/null 2>&1; then
+      generate_local_search_index
       write_context
       echo "Grade 3 app is already running; the Angular watcher will apply source changes automatically."
       echo "URL: http://${PUBLIC_HOST}:${PORT}/ruchika-grade3/"

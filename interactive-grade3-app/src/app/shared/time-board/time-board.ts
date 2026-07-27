@@ -175,6 +175,9 @@ export class TimeBoardComponent implements AfterViewChecked {
 
   private sourceStatus(item: ProblemVisualTimeLineSourceItem): string {
     const sourceOrder = item.detail?.replace(/\s*-\s*\d{1,2}:\d{2}.*$/i, '').trim();
+    if (this.mode === 'blank') {
+      return '';
+    }
     if (item.status === 'unmatched') {
       const unmatchedTime = item.kind === 'digital'
         ? item.label.match(/\b\d{1,2}:\d{2}\b/)

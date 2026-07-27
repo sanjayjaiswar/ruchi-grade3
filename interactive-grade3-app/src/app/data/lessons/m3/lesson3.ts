@@ -32,7 +32,7 @@ export const M3_LESSON3_RUNTIME: LessonRuntimeConfig = {
         whole: "24 people",
         known: "3 people per canoe",
         unknown: "c canoes",
-        equation: "3 x c = 24",
+        equation: "3 × c = 24",
         solution: "c = 8 canoes"
       },
       {
@@ -40,7 +40,7 @@ export const M3_LESSON3_RUNTIME: LessonRuntimeConfig = {
         whole: "21 students",
         known: "3 students per group",
         unknown: "g groups",
-        equation: "21 divided by 3 = g",
+        equation: "21 ÷ 3 = g",
         solution: "g = 7 groups"
       },
       {
@@ -48,13 +48,13 @@ export const M3_LESSON3_RUNTIME: LessonRuntimeConfig = {
         whole: "m dollars",
         known: "3 shirts at $8 each",
         unknown: "total cost m",
-        equation: "3 x 8 = m",
+        equation: "3 × 8 = m",
         solution: "m = $24"
       }
     ],
     conceptSteps: [
       { label: "Name the letter", action: "Choose a letter that matches the story quantity, such as c for canoes.", result: "The letter stands for one specific unknown quantity." },
-      { label: "Write the relationship", action: "Place the letter where the unknown belongs in multiplication or division.", result: "Examples include 3 x c = 24 and 21 divided by 3 = g." },
+      { label: "Write the relationship", action: "Place the letter where the unknown belongs in multiplication or division.", result: "Examples include 3 × c = 24 and 21 ÷ 3 = g." },
       { label: "Solve and label", action: "Use a familiar fact, then attach the story unit.", result: "c = 8 canoes, g = 7 groups, and m = $24." }
     ]
   },
@@ -73,7 +73,7 @@ export const M3_LESSON3_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Use a letter to represent the unknown in multiplication. T: (Show a student's tape diagram and equation for the Application Problem, or use the example work above.) instead of a question mark. For this problem, we might using a few simple equations with choose letter c to help us express that the unknown letters, such as 2 + 2 = h; h = 4. Or, use MP.4 stands for how many canoes are used in the problem.",
+      studentPrompt: "Twenty-four people use canoes with 3 people assigned to each canoe. Use c in place of the question mark: c stands for the number of canoes. Write 3 × c = 24, solve c = 8, and answer that the people use 8 canoes.",
       teacherEditionBasis: "EurekaMath-Sources/Module_3/g3_m3_teacher_edition_v1_3_0.pdf, pages 38-50. Lesson 3 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "tape-diagram"
     },
@@ -113,8 +113,8 @@ export const M3_LESSON3_RUNTIME: LessonRuntimeConfig = {
       id: "source-summary",
       title: "Debrief focus from source",
       shortTitle: "Sum",
-      studentPrompt: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 3 objective: Multiply and divide with familiar facts using a letter to represent the unknown.",
-      teacherEditionBasis: "Module 3 Teacher Edition, lesson pages 38-50.",
+      studentPrompt: "Explain how you solved Problem 3 as both an unknown-factor and equal-groups problem. Tell the steps used to model and solve Problem 4. Why is a letter more helpful than a question mark for representing the unknown?",
+      teacherEditionBasis: "Module 3 Teacher Edition, Lesson 3 Student Debrief, PDF page 42.",
       visualModel: "tape-diagram"
     }
   ],
@@ -140,7 +140,7 @@ export const M3_LESSON3_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Use a letter to represent the unknown in multiplication. T: (Show a student's tape diagram and equation for the Application Problem, or use the example work above.) instead of a question mark. For this problem, we might using a few simple equations with choose letter c to help us express that the unknown letters, such as 2 + 2 = h; h = 4. Or, use MP.4 stands for how many canoes are used in the problem."
+        value: "Twenty-four people use canoes with 3 people assigned to each canoe. Use c in place of the question mark: c stands for the number of canoes. Write 3 × c = 24, solve c = 8, and answer that the people use 8 canoes."
       },
       {
         label: "Workbook",
@@ -206,11 +206,11 @@ export const M3_LESSON3_RUNTIME: LessonRuntimeConfig = {
     "source-summary": [
       {
         label: "Source",
-        value: "Module 3 Teacher Edition, lesson pages 38-50."
+        value: "Module 3 Teacher Edition, Lesson 3 Student Debrief, PDF page 42."
       },
       {
         label: "Source text",
-        value: "Debrief focus: connect the Problem Set models, equations, patterns, and answers to the Lesson 3 objective: Multiply and divide with familiar facts using a letter to represent the unknown."
+        value: "Explain how you solved Problem 3 as both an unknown-factor and equal-groups problem. Tell the steps used to model and solve Problem 4. Why is a letter more helpful than a question mark for representing the unknown?"
       },
       {
         label: "Workbook",

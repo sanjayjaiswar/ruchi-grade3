@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m2-l17",
+  "teacherEditionPdfSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m2-teacher/page-215.png",
+      "sha256": "d5ca40f9045339a615fc3eef35f871df948a18101808e12308523c77d2120279",
+      "pdfPage": 215,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 17 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-teacher/page-216.png",
+      "sha256": "1318f0c58c6248921f890cd19777999d09dbe5e3654435f3066286398e828395",
+      "pdfPage": 216,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 17 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-answer-key/page-298.png",
+      "sha256": "08da8e055cd7b45f7cc6962c5096df45d4992d56c18e76a94451590c678ea2ae",
+      "pdfPage": 298,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 17 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m2-answer-key/page-299.png",
+      "sha256": "52f2a7f1e60142750a5d3e01739e422e6f2b9665b55964a5e4226187d530d66c",
+      "pdfPage": 299,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 17 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m2-teacher/page-215.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "the closest to its real sum. b. look at the sums that gave the most precise estimates. explain below what they have in common. you might use a number line to support your explanation."
+        ],
+        "answerKeyEvidence": "1. a. A: 704; 500, 300, 800 2. a. Estimates will vary. 700; 500, 200, 700 b. 245 min 697; 400, 200, 600 c. Explanations will vary; a different way of B: 517; 400, 200, 600 rounding is shown and compared. 504; 400, 100, 500 3. a. Estimates will vary. 496; 300, 100, 400 b. 256 kilograms; a tape diagram is drawn C: 810; 700, 200, 900 and labeled to represent the problem. 805; 600, 200, 800 793; 600, 100, 700 b. Explanations will vary; both addends are close to the halfway point, so they balance each other out.",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m2-teacher/page-216.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "janet watched a movie that is 94 minutes long on friday night. she watched a movie that is 151 minutes long on saturday night. a. decide how to round the minutes. then estimate the total minutes janet watched movies on friday and saturday. b. how much time did janet actually spend watching movies c. explain whether or not your estimated sum is close to the actual sum. round in a different way and see which estimate is closer."
+        ],
+        "answerKeyEvidence": "1. a. A: 704; 500, 300, 800 2. a. Estimates will vary. 700; 500, 200, 700 b. 245 min 697; 400, 200, 600 c. Explanations will vary; a different way of B: 517; 400, 200, 600 rounding is shown and compared. 504; 400, 100, 500 3. a. Estimates will vary. 496; 300, 100, 400 b. 256 kilograms; a tape diagram is drawn C: 810; 700, 200, 900 and labeled to represent the problem. 805; 600, 200, 800 793; 600, 100, 700 b. Explanations will vary; both addends are close to the halfway point, so they balance each other out.",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m2-teacher/page-216.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "sadie a bear at the zoo weighs 182 kilograms. her cub weighs 74 kilograms. a. estimate the total weight of sadie and her cub using whatever method you think best. b. what is the actual weight of sadie and her cub model the problem with a tape diagram."
+        ],
+        "answerKeyEvidence": "1. a. A: 704; 500, 300, 800 2. a. Estimates will vary. 700; 500, 200, 700 b. 245 min 697; 400, 200, 600 c. Explanations will vary; a different way of B: 517; 400, 200, 600 rounding is shown and compared. 504; 400, 100, 500 3. a. Estimates will vary. 496; 300, 100, 400 b. 256 kilograms; a tape diagram is drawn C: 810; 700, 200, 900 and labeled to represent the problem. 805; 600, 200, 800 793; 600, 100, 700 b. Explanations will vary; both addends are close to the halfway point, so they balance each other out.",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

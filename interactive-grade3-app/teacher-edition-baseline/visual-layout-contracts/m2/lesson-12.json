@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m2-l12",
+  "teacherEditionPdfSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m2-teacher/page-155.png",
+      "sha256": "064b1e4dd844611b5a9ee809266a2af329886745cb420d3d1185afb90377d5de",
+      "pdfPage": 155,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 12 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-teacher/page-156.png",
+      "sha256": "7adc755cd649fec8c9d4d91e17bcfec61cbc234f5ff6bba335db1e1aae6ec325",
+      "pdfPage": 156,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 12 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-answer-key/page-292.png",
+      "sha256": "c791dcf3c52062dc15069db23ee0102dbbf11b7e6aaec8094d6c0e6840eab9cf",
+      "pdfPage": 292,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 12 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m2-teacher/page-155.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "work with a partner. use a ruler or a meter stick to complete the"
+        ],
+        "answerKeyEvidence": "1. Measurements and estimates will vary. 2. Measurements and estimates will vary. 3. Measurements and estimates will vary. 4. Measurements and estimates will vary.",
+        "layout": {
+          "family": "table-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m2-teacher/page-155.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "work with a partner. use a digital scale to complete the"
+        ],
+        "answerKeyEvidence": "1. Measurements and estimates will vary. 2. Measurements and estimates will vary. 3. Measurements and estimates will vary. 4. Measurements and estimates will vary.",
+        "layout": {
+          "family": "table-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m2-teacher/page-156.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "work with a partner. use a beaker to complete the"
+        ],
+        "answerKeyEvidence": "1. Measurements and estimates will vary. 2. Measurements and estimates will vary. 3. Measurements and estimates will vary. 4. Measurements and estimates will vary.",
+        "layout": {
+          "family": "table-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m2-teacher/page-156.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "work with a partner. use a clock to complete the"
+        ],
+        "answerKeyEvidence": "1. Measurements and estimates will vary. 2. Measurements and estimates will vary. 3. Measurements and estimates will vary. 4. Measurements and estimates will vary.",
+        "layout": {
+          "family": "table-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

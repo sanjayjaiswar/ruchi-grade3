@@ -3,7 +3,7 @@
   "lessonId": "m2-l19",
   "moduleId": "m2",
   "lessonNumber": 19,
-  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "generatedAt": "2026-07-27T02:56:13.408Z",
   "source": {
     "teacherEditionPdf": "EurekaMath-Sources/Module_2/g3_m2_teacher_edition_v1_3_0.pdf",
     "teacherEditionSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
@@ -38,11 +38,11 @@
   "objective": "Decompose twice to subtract measurements including three- digit minuends with zeros in the tens and ones places.",
   "instructionalContract": {
     "instructionalMode": "concept-development",
-    "applicationProblemText": "s.\n\n\n                       Lesson 19:                    Decompose twice to subtract measurements including three-digit                        235\n                                                     minuends with zeros in the tens and ones places.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 19 3 2",
+    "applicationProblemText": "Jolene brings an apple and an orange with her to school. The weight of both pieces of fruit together is 417\ngrams. The apple weighs 223 grams. What is the weight of Jolene’s orange?\n\n\nNote: This problem reviews unbundling once to subtract. It also provides a context leading into the Concept\nDevelopment.",
     "conceptDevelopmentText": "Materials: (S) Personal white board\n\nPart 1: Decompose twice using the standard algorithm for subtraction.\n    T:   In the Application Problem, Jolene’s apple weighs 223\n         grams and her orange weighs 194 grams. (Draw or\n         project the tape diagrams shown at right.) What does\n         the question mark in these tape diagrams represent?\n    S:   How much heavier the apple is than the orange.\n          How much more the apple weighs, in grams.\n    T:   Tell a partner what expression you can use to find out\n         how much heavier the apple is than the orange. Write\n         the problem vertically on your personal white board.\n    S:   (Write problem vertically.)\n\n\n                        Lesson 19:                    Decompose twice to subtract measurements including three-digit                        233\n                                                      minuends with zeros in the tens and ones places.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 19 3 2\n\n\n    T:   Before we subtract, what needs to be done?\n    S:   We need to make sure we can subtract each place.  We have to see if any tens or hundreds need\n         to be unbundled.\n    T:   Do we have enough ones to subtract?\n    S:   No. We need to change 1 ten for 10 ones.                               NOTES ON\n    T:   How about in the tens place?                                           MULTIPLE MEANS\n                                                                                OF REPRESENTATION:\n    S:   No. We also need to change 1 hundred for 10 tens.\n         Then, we can solve.                                          Use color to customize the\n                                                                      presentation of the tape diagram.\n    T:   Unbundle or change the ten. How many tens and ones           Displaying a green bar for the apple\n         do we have now?                                              and an orange bar for the orange may\n    S:   1 ten and 13 ones.                                           enhance learners’ perception of the\n                                                                      information.\n    T:   Unbundle or change the hundred. How many\n         hundreds and tens do we have now?                            Alternatively, students may value a\n                                                                      vertical tape diagram if it gives them a\n    S:   1 hundred and 11 tens.                                       better sense of heavy and less heavy.\n    T:   Are we ready to subtract?\n    S:   Yes!\n    T:   Solve the problem on your board.\n                                                                               Subtraction Complete\n    S:   (Solve as shown to the right.)\n    T:   How much heavier is the apple than the orange?\n    S:   The apple is 29 grams heavier than the orange!\nContinue with the following suggested sequence. Students should prepare\ntheir problems for subtraction by unbundling all necessary digits before\nperforming the operation.\n        342 cm – 55 cm\n        764 g – 485 g\n        573 mL – 375 mL\n    T:   How are the subtraction problems we’ve solved so far different from those we solved yesterday?\n    S:   Yesterday, we only had to unbundle once. Today, we had to unbundle twice.\n\nPart 2: Use the standard algorithm to subtract three-digit numbers with zeros in various positions.\nWrite or project the following problem:\nKerrin has 703 milliliters of water in a pitcher. She pours some water out. Now, 124 milliliters are left in the\npitcher. How much water did Kerrin pour out?\n    T:   Let’s solve this problem using the algorithm. What needs to be done first?\n    S:   We need to unbundle a ten.\n    T:   What digit is in the tens place on top?\n\n\n                        Lesson 19:                    Decompose twice to subtract measurements including three-digit                        234\n                                                      minuends with zeros in the tens and ones places.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                             Lesson 19 3 2\n\n\n    S:   Zero.\n    T:   Can we unbundle 0 tens?\n    S:   No!\n    T:   Where can we get tens?\n    S:   We can change 1 hundred into 10 tens!\n    T:   Change the hundred into tens on your board.\n         (Model.) How many hundreds and tens does the\n         top number have now?\n    S:   6 hundreds and 10 tens.\n    T:   Why aren’t we ready to subtract yet?\n    S:   We still have to change 1 ten for 10 ones.\n    T:   Finish unbundling on your board and complete\n         the subtraction. (Model.) How many milliliters of\n         water did Kerrin pour out?\n    S:   She poured out 579 milliliters of water!\nContinue with the following suggested sequence.\nStudents should prepare their problems for subtraction by\nunbundling all necessary digits before performing the\noperation.\n        703 cm – 37 cm\n        700 mL – 356 mL\n        500 g – 467 g",
     "fluencyPracticeText": " Subtract Mentally 3.NBT.2                                                                   (4 minutes)\n Use Subtraction Algorithm with Measurements 3.MD.2                                          (4 minutes)\n Round Three- and Four-Digit Numbers 3.NBT.1                                                 (4 minutes)\n\nSubtract Mentally (4 minutes)\nNote: This activity emphasizes the role of place value in the subtraction algorithm.\n    T:   (Write 10 – 5 = ___.) Say the number sentence in units of one.\n    S:   10 ones – 5 ones = 5 ones.\nRepeat the process outlined in Lesson 18. Use the following suggested sequence: 12 ones – 5 ones,\n42 ones – 5 ones, 10 tens – 5 tens, 12 tens – 5 tens, and 42 tens – 5 tens.\n\nUse Subtraction Algorithm with Measurements (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews the role of place value in the subtraction algorithm from Lesson 18.\n    T:   (Write 80 L – 26 L = ___.) On your personal white board, solve using the standard algorithm.\nContinue with the following possible sequence: 380 L – 26 L, 380 L – 126 L, 908 g – 25 g, and 908 g – 425 g.\n\n\n                        Lesson 19:                    Decompose twice to subtract measurements including three-digit                        232\n                                                      minuends with zeros in the tens and ones places.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 19 3 2\n\n\nRound Three- and Four-Digit Numbers (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This activity reviews rounding to the nearest hundred from Lesson 14.\n    T:   (Write 253 ≈ ___.) What is 253 rounded to the nearest hundred?\n    S:   300.\nRepeat the process outlined in Lesson 15, rounding numbers only to the nearest hundred. Use the following\npossible suggestions: 253; 1,253; 735; 1,735; 850; 1,850; 952; 1,371; and 1,450.",
     "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\n                       Lesson 19:                    Decompose twice to subtract measurements including three-digit                        235\n                                                     minuends with zeros in the tens and ones places.\n\n                      This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                      G 3-M 2-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 19 3 2",
-    "studentDebriefText": ", instruct students to complete the Exit                                               Then, I drew ____. Next, I labeled\nTicket. A review of their work will help with assessing students’                                               ____. Then, I wrote my equation:\nunderstanding of the concepts that were presented in today’s                                                    _______. Last, I wrote my answer\nlesson and planning more effectively for future lessons. The                                                    statement, which was ________.”\nquestions may be read aloud to the students.\n\n\n                        Lesson 19:                    Decompose twice to subtract measurements including three-digit                                       236\n                                                      minuends with zeros in the tens and ones places.\n\n                       This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                       G 3-M 2-TE-1.3.0 -0 5.2 0 15",
+    "studentDebriefText": "Lesson Objective: Decompose twice to subtract measurements including three-digit minuends with zeros in\nthe tens and ones places.\nThe Student Debrief is intended to invite reflection and active processing of the total lesson experience.\nInvite students to review their solutions for the Problem Set. They should check work by comparing answers\nwith a partner before going over answers as a class. Look for misconceptions or misunderstandings that can\nbe addressed in the Debrief. Guide students in a conversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to lead\nthe discussion.                                                                                                             NOTES ON\n        Which strategy did you use to solve Problem 1(a)?                                                                  MULTIPLE MEANS\n         Why? (Students may want to talk about subtracting                                                                  OF REPRESENTATION:\n         6 tens from 34 tens rather than decomposing.)                                                          Support English language learners and\n        Invite students to articulate the steps they followed to                                               others as they articulate their steps to\n         solve Problem 4.                                                                                       solve Problem 4. Give students the\n                                                                                                                choice of explaining in their first\n        Why is it important to unbundle or change all of your\n                                                                                                                language. Making this a partner–share\n         units before subtracting?                                                                              activity may relieve students of anxiety\n                                                                                                                in front of a large group. Some",
     "teacherStudentSequence": [
       {
         "speaker": "teacher",
@@ -235,19 +235,15 @@
       "measurement-scale",
       "liquid-measure",
       "place-value",
-      "money-model",
       "picture-or-drawing"
     ],
     "sourceEvidence": {
       "tape-diagram": [
-        "project the tape diagrams shown at right.) What does",
-        "the question mark in these tape diagrams represent?",
         "presentation of the tape diagram.",
         "vertical tape diagram if it gives them a"
       ],
       "number-bond": [
         "Decompose twice to subtract measurements including three- digit minuends with zeros in the tens and ones places.",
-        "Lesson 19: Decompose twice to subtract measurements including three-digit 235",
         "Part 1: Decompose twice using the standard algorithm for subtraction.",
         "Lesson 19: Decompose twice to subtract measurements including three-digit 233",
         "Lesson 19: Decompose twice to subtract measurements including three-digit 234",
@@ -256,14 +252,12 @@
         "Lesson 19: Decompose twice to subtract measurements including three-digit 238"
       ],
       "measurement-scale": [
-        "T: In the Application Problem, Jolene’s apple weighs 223",
+        "Jolene brings an apple and an orange with her to school. The weight of both pieces of fruit together is 417",
+        "grams. The apple weighs 223 grams. What is the weight of Jolene’s orange?",
         "grams and her orange weighs 194 grams. (Draw or",
-        "project the tape diagrams shown at right.) What does",
-        "the question mark in these tape diagrams represent?",
         " How much more the apple weighs, in grams.",
-        "presentation of the tape diagram.",
-        "vertical tape diagram if it gives them a",
-        "S: The apple is 29 grams heavier than the orange!"
+        "S: The apple is 29 grams heavier than the orange!",
+        "3. The piano weighs 289 kilograms more than the piano bench. How much does the bench weigh?"
       ],
       "liquid-measure": [
         "Kerrin has 703 milliliters of water in a pitcher. She pours some water out. Now, 124 milliliters are left in the",
@@ -273,27 +267,13 @@
       ],
       "place-value": [
         "Part 1: Decompose twice using the standard algorithm for subtraction.",
-        "to be unbundled.",
-        "T: Unbundle or change the ten. How many tens and ones Displaying a green bar for the apple",
-        "T: Unbundle or change the hundred. How many",
-        "their problems for subtraction by unbundling all necessary digits before",
-        "S: Yesterday, we only had to unbundle once. Today, we had to unbundle twice.",
         "Part 2: Use the standard algorithm to subtract three-digit numbers with zeros in various positions.",
-        "S: We need to unbundle a ten."
-      ],
-      "money-model": [
-        "S: No. We need to change 1 ten for 10 ones. NOTES ON",
-        "S: No. We also need to change 1 hundred for 10 tens.",
-        "T: Unbundle or change the ten. How many tens and ones Displaying a green bar for the apple",
-        "T: Unbundle or change the hundred. How many",
-        "S: We can change 1 hundred into 10 tens!",
-        "T: Change the hundred into tens on your board.",
-        "S: We still have to change 1 ten for 10 ones."
+        "Note: This activity emphasizes the role of place value in the subtraction algorithm.",
+        "Note: This activity reviews the role of place value in the subtraction algorithm from Lesson 18.",
+        "T: (Write 80 L – 26 L = ___.) On your personal white board, solve using the standard algorithm."
       ],
       "picture-or-drawing": [
         "grams and her orange weighs 194 grams. (Draw or",
-        "project the tape diagrams shown at right.) What does",
-        "the question mark in these tape diagrams represent?",
         "presentation of the tape diagram.",
         "vertical tape diagram if it gives them a"
       ]

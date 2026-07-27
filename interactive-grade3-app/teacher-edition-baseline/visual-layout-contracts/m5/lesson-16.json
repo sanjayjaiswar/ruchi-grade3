@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l16",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-195.png",
+      "sha256": "2173f444a86bc00cfc1022800d31900737a2ff0d5ae2ff1f73bd60a3084c7c1b",
+      "pdfPage": 195,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 16 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-196.png",
+      "sha256": "833894b7cac643e073f5b386995ce499e7cf1a2af7adad1779f5becbf9a0a2d4",
+      "pdfPage": 196,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 16 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-394.png",
+      "sha256": "b665d3008aafde6437ebff12e3585d97de0f28758b2f0356d5790d1752f0b7ea",
+      "pdfPage": 394,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 16 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-395.png",
+      "sha256": "fb495d82f3401ffa49e3c5b602b7682ad7c591d3d0829c32b9765eaed6a95070",
+      "pdfPage": 395,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 16 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-195.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Estimate to equally partition and label the fractions on the number line. Label the wholes as fractions, and box them. The first one is done for you."
+        ],
+        "answerKeyEvidence": "a. Answer provided. b. Number line partitioned into thirds and labeled; 3/3, 6/3 boxed. c. Number line partitioned into halves and labeled; 4/2, 6/2, 8/2 boxed. d. Number line partitioned into fourths and labeled; 12/4, 16/4, 20/4 boxed; 4 labeled below 16/4. e. Number line partitioned into thirds and labeled; 18/3, 21/3, 24/3, 27/3 boxed; 7 labeled below 21/3, 8 labeled below 24/3.",
+        "layout": {
+          "family": "five-ranged-whole-number-fraction-number-lines",
+          "subpartCount": 5,
+          "modelPrimitive": "five-authored-source-topology-number-lines",
+          "modelCounts": [
+            2,
+            3,
+            2,
+            4,
+            3
+          ],
+          "modelOrientation": "five-horizontal-ranged-lines-in-reading-order",
+          "responseStructure": "partition-label-and-box-each-whole-as-an-equivalent-fraction"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-196.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Partition each whole into fifths. Label each fraction. Count up as you go. Box the fractions that are located at the same points as whole numbers."
+        ],
+        "answerKeyEvidence": "Number line partitioned into fifths and labeled; 0/5, 5/5, 10/5 boxed.",
+        "layout": {
+          "family": "extended-fifths-number-line",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-ranged-number-line",
+          "modelCounts": [
+            10
+          ],
+          "modelOrientation": "horizontal-zero-to-two",
+          "responseStructure": "partition-label-and-box-zero-five-five-five-and-ten-five"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-196.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Partition each whole into thirds. Label each fraction. Count up as you go. Box the fractions that are located at the same points as whole numbers."
+        ],
+        "answerKeyEvidence": "Number line partitioned into thirds and labeled; 3/3, 6/3, 9/3, 12/3 boxed.",
+        "layout": {
+          "family": "extended-thirds-number-line",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-ranged-number-line",
+          "modelCounts": [
+            9
+          ],
+          "modelOrientation": "horizontal-one-to-four",
+          "responseStructure": "partition-label-and-box-three-three-through-twelve-three"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-196.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a number line with endpoints 0 and 3. Label the wholes. Partition each whole into fourths. Label all the fractions from 0 to 3. Box the fractions that are located at the same points as whole numbers. Use a separate paper if you need more space."
+        ],
+        "answerKeyEvidence": "Number line drawn with endpoints 0 and 3; wholes labeled; number line partitioned and labeled.",
+        "layout": {
+          "family": "construct-fourths-from-zero-to-three",
+          "subpartCount": 1,
+          "modelPrimitive": "open-workspace-to-authored-ranged-number-line",
+          "modelCounts": [
+            12
+          ],
+          "modelOrientation": "horizontal-zero-to-three",
+          "responseStructure": "draw-partition-label-and-box-whole-equivalent-fractions",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    }
+  ]
+}

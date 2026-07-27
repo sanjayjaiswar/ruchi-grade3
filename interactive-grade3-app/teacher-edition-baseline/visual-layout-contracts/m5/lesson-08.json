@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l8",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-93.png",
+      "sha256": "e096f0421fbc00c2daca35d1854b14d62aecabbcc97318e4d963a3d8428bd17a",
+      "pdfPage": 93,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 8 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-94.png",
+      "sha256": "8e6d9ce7008ccb09a9691eec8fdf8de1b07c0bdc1969eb89835dea0b01c956b1",
+      "pdfPage": 94,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 8 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-379.png",
+      "sha256": "9effa48a83b872f438ef3430a2b0f58a982c70332b519e6478c9ff07658e62c3",
+      "pdfPage": 379,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 8 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-380.png",
+      "sha256": "ecf72dfb9ea7614183b068f619316684fd2ff7b34ccaa6aac435b08554bf3633",
+      "pdfPage": 380,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 8 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-381.png",
+      "sha256": "266c3767b6fd45cfc81446b80f4289c84e03f7b068d3c7e26bb3c3c99a8d2047",
+      "pdfPage": 381,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 8 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-93.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Show a number bond representing what is shaded and unshaded in each of the figures"
+        ],
+        "answerKeyEvidence": "Number bond showing 3/5 and 2/5 equals 1 whole; second visual model drawn.",
+        "layout": {
+          "family": "source-shape-shaded-unshaded-number-bond",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-source-shape-and-authored-two-part-number-bond",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "source-shape-over-number-bond-over-open-model-response",
+          "responseStructure": "bond-shaded-and-unshaded-parts-then-draw-a-different-model",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-93.png",
+              "crop": {
+                "x": 150,
+                "y": 570,
+                "width": 280,
+                "height": 140
+              }
+            }
+          ],
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-93.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Show a number bond representing what is shaded and unshaded in each of the figures"
+        ],
+        "answerKeyEvidence": "Number bond showing 3/4 and 1/4 equals 1 whole; second visual model drawn.",
+        "layout": {
+          "family": "source-shape-shaded-unshaded-number-bond",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-source-shape-and-authored-two-part-number-bond",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "source-shape-over-number-bond-over-open-model-response",
+          "responseStructure": "bond-shaded-and-unshaded-parts-then-draw-a-different-model",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-93.png",
+              "crop": {
+                "x": 180,
+                "y": 750,
+                "width": 230,
+                "height": 210
+              }
+            }
+          ],
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-93.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Show a number bond representing what is shaded and unshaded in each of the figures"
+        ],
+        "answerKeyEvidence": "Number bond showing 3/6 and 3/6 equals 1 whole; second visual model drawn.",
+        "layout": {
+          "family": "source-shape-shaded-unshaded-number-bond",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-source-shape-and-authored-two-part-number-bond",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "source-shape-over-number-bond-over-open-model-response",
+          "responseStructure": "bond-shaded-and-unshaded-parts-then-draw-a-different-model",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-93.png",
+              "crop": {
+                "x": 165,
+                "y": 970,
+                "width": 325,
+                "height": 245
+              }
+            }
+          ],
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-93.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Show a number bond representing what is shaded and unshaded in each of the figures"
+        ],
+        "answerKeyEvidence": "Number bond showing 2/9 and 7/9 equals 1 whole; second visual model drawn.",
+        "layout": {
+          "family": "source-shape-shaded-unshaded-number-bond",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-source-shape-and-authored-two-part-number-bond",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "source-shape-over-number-bond-over-open-model-response",
+          "responseStructure": "bond-shaded-and-unshaded-parts-then-draw-a-different-model",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-93.png",
+              "crop": {
+                "x": 150,
+                "y": 1240,
+                "width": 275,
+                "height": 180
+              }
+            }
+          ],
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m5-teacher/page-94.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a number bond with 2 parts showing the shaded and unshaded fractions"
+        ],
+        "answerKeyEvidence": "a. Number bond showing 3/4 and 1/4 equals 1 whole; 3/4 decomposed showing 3 units of 1/4. b. Number bond showing 2/3 and 1/3 equals 1 whole; 2/3 decomposed showing 2 units of 1/3. c. Number bond showing 2/4 and 2/4 equals 1 whole; both 2/4 bonds decomposed showing 2 units of 1/4. d. Number bond showing 2/5 and 3/5 equals 1 whole; 2/5 decomposed showing 2 units of 1/5; 3/5 decomposed showing 3 units of 1/5.",
+        "layout": {
+          "family": "four-source-shapes-with-shaded-unshaded-number-bonds",
+          "subpartCount": 4,
+          "modelPrimitive": "four-tight-official-source-shapes-and-four-authored-number-bonds",
+          "modelCounts": [
+            4,
+            3,
+            4,
+            5
+          ],
+          "modelOrientation": "four-source-shape-cards-over-four-number-bonds-and-decompositions",
+          "responseStructure": "bond-and-decompose-both-parts-into-unit-fractions",
+          "sourceFirst": true,
+          "sourceCropCount": 4,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-94.png",
+              "crop": {
+                "x": 195,
+                "y": 265,
+                "width": 150,
+                "height": 145
+              }
+            },
+            {
+              "src": "/source-pages/m5-teacher/page-94.png",
+              "crop": {
+                "x": 390,
+                "y": 265,
+                "width": 150,
+                "height": 145
+              }
+            },
+            {
+              "src": "/source-pages/m5-teacher/page-94.png",
+              "crop": {
+                "x": 620,
+                "y": 255,
+                "width": 190,
+                "height": 150
+              }
+            },
+            {
+              "src": "/source-pages/m5-teacher/page-94.png",
+              "crop": {
+                "x": 860,
+                "y": 265,
+                "width": 285,
+                "height": 120
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m5-teacher/page-94.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a 2-part number bond showing the fraction of the ground beef on the grill"
+        ],
+        "answerKeyEvidence": "a. 3/4. b. 3. c. Number bond showing 3/4 and 1/4 equals 1 whole; 3/4 decomposed showing 3 units of 1/4; second visual model drawn.",
+        "layout": {
+          "family": "ground-beef-whole-number-bond-and-three-part-response",
+          "subpartCount": 3,
+          "modelPrimitive": "authored-two-part-number-bond-and-open-to-completed-fourths-model",
+          "modelCounts": [
+            4,
+            1,
+            3
+          ],
+          "modelOrientation": "number-bond-over-horizontal-whole-model-over-three-responses",
+          "responseStructure": "show-one-fourth-on-grill-three-fourths-refrigerated-and-decompose",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    }
+  ]
+}

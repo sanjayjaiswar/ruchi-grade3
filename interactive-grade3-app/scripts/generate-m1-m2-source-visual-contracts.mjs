@@ -1,0 +1,135 @@
+import { createHash } from 'node:crypto';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const appRoot = dirname(dirname(fileURLToPath(import.meta.url)));
+const baselineRoot = join(appRoot, 'teacher-edition-baseline');
+
+for (const moduleNumber of [1, 2]) {
+  const moduleId = `m${moduleNumber}`;
+  const outputRoot = join(baselineRoot, 'visual-layout-contracts', moduleId);
+  const reviewedEvidence = JSON.parse(
+    readFileSync(
+      join(baselineRoot, `module-${moduleNumber}-problem-evidence.json`),
+      'utf8'
+    )
+  );
+  mkdirSync(outputRoot, { recursive: true });
+
+  let totalProblems = 0;
+  for (let lessonNumber = 1; lessonNumber <= 21; lessonNumber += 1) {
+    const lessonId = `${moduleId}-l${lessonNumber}`;
+    const baseline = JSON.parse(
+      readFileSync(
+        join(
+          baselineRoot,
+          'contracts',
+          moduleId,
+          `lesson-${pad(lessonNumber)}.json`
+        ),
+        'utf8'
+      )
+    );
+    const reviewedLesson = reviewedEvidence.lessons[String(lessonNumber)];
+    if (!reviewedLesson?.problems?.length) {
+      throw new Error(`${lessonId}: reviewed Teacher Edition evidence is missing`);
+    }
+    if (
+      reviewedEvidence.teacherEditionPdfSha256 !==
+      baseline.source.teacherEditionSha256
+    ) {
+      throw new Error(
+        `${lessonId}: reviewed evidence is stale for the Teacher Edition PDF`
+      );
+    }
+
+    totalProblems += reviewedLesson.problems.length;
+    const sourceEvidence = [
+      ...uniqueCrops(reviewedLesson.problems).map(({ src, pdfPage }) =>
+        pageEvidence(
+          src,
+          pdfPage,
+          'problem-set',
+          `Teacher Edition Lesson ${lessonNumber} Problem Set printed-layout evidence`
+        )
+      ),
+      ...reviewedLesson.answerKeyImages.map((image) => {
+        const pdfPage = Number(image.match(/(\d+)\.png$/)?.[1]);
+        return pageEvidence(
+          image,
+          pdfPage,
+          'answer-key',
+          `Teacher Edition Lesson ${lessonNumber} Problem Set answer-key evidence`
+        );
+      })
+    ];
+
+    const contract = {
+      schemaVersion: 2,
+      lessonId,
+      teacherEditionPdfSha256: baseline.source.teacherEditionSha256,
+      sourceEvidence,
+      problems: reviewedLesson.problems.map((problem) => ({
+        number: problem.number,
+        sourcePageImage: problem.sourceCrops[0].src,
+        teacherEditionRequirements: {
+          sourceTextEvidence: [problem.sourceTextEvidence],
+          answerKeyEvidence: problem.answerKeyEvidence,
+          layout: {
+            family: 'source-first-teacher-edition-crop',
+            sourceFirst: true,
+            sourceCropCount: problem.sourceCrops.length,
+            sourceCrops: problem.sourceCrops.map(({ src, crop }) => ({
+              src,
+              crop
+            }))
+          },
+          blankMustNotContain: [],
+          solvedMustContain: [],
+          sourceLayoutNotes:
+            'The reviewed printed task region is the controlling representation. It retains the Teacher Edition prompt, task number, model, table, scale, clock, number line, diagram, labels, blanks, and response space without an inferred replacement.'
+        }
+      }))
+    };
+
+    writeFileSync(
+      join(outputRoot, `lesson-${pad(lessonNumber)}.json`),
+      `${JSON.stringify(contract, null, 2)}\n`
+    );
+  }
+
+  console.log(
+    `GENERATED: 21 source-only ${moduleId.toUpperCase()} visual contracts covering ${totalProblems} printed tasks.`
+  );
+}
+
+function uniqueCrops(problems) {
+  const byImage = new Map();
+  for (const problem of problems) {
+    for (const sourceCrop of problem.sourceCrops) {
+      byImage.set(sourceCrop.src, sourceCrop);
+    }
+  }
+  return [...byImage.values()];
+}
+
+function pageEvidence(image, pdfPage, documentSection, role) {
+  const imagePath = join(appRoot, 'public', image.replace(/^\//, ''));
+  if (!existsSync(imagePath)) {
+    throw new Error(`Missing ${documentSection} evidence: ${image}`);
+  }
+  return {
+    image,
+    sha256: createHash('sha256')
+      .update(readFileSync(imagePath))
+      .digest('hex'),
+    pdfPage,
+    documentSection,
+    role
+  };
+}
+
+function pad(value) {
+  return String(value).padStart(2, '0');
+}

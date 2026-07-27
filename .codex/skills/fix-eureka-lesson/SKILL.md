@@ -1,44 +1,60 @@
 ---
 name: fix-eureka-lesson
-description: Deliver a functional, source-faithful first pass for five Eureka Math Grade 3 lessons using the precomputed local Teacher Edition baseline. Use for requests such as "fix Module 2 Lesson 21," "fix the next five lessons," or "make these lessons match the Teacher Edition" when content accuracy, exact problem coverage, mathematical models, meaningful animation, Blank/Solved behavior, and efficient batch delivery matter more than pixel polish.
+description: Build, validate, and correct a batch of five Eureka Math Grade 3 lessons against the local Teacher Edition text and page images. Use for requests such as "fix Module 2 Lesson 21," "fix the next five lessons," "build these lessons in batches," or "make these lessons match the Teacher Edition" when exact problem coverage, source-layout fidelity, mathematical models, Blank/Solved isolation, meaningful animation, and fail-closed batch validation are required.
 ---
 
 # Fix Eureka Lesson
 
-Implement a complete functional-fidelity pass for five consecutive lessons, starting with the named lesson and stopping at the module boundary. If the user explicitly names a different range or requests only one lesson, honor that range. Do not stop at an audit, generic scaffold, metadata rewrite, or code-only assumption. Do not turn this skill into a pixel-perfection pass.
+Implement, validate, and correct five consecutive lessons, starting with the named lesson and stopping at the module boundary. If the user explicitly names a different range or requests only one lesson, honor that range. Work breadth-first. Do not stop at an audit, generic scaffold, metadata rewrite, validator-only change, or code-only assumption.
 
 ## Priority
 
-The goal is an accurate, effective internal learning application—not pixel-perfect reproduction. Prioritize, in order:
+Prioritize, in order:
 
-1. Teacher Edition factual accuracy and exact problem coverage.
-2. Clear mathematical models, instructional sequence, and reasoning.
+1. Teacher Edition factual accuracy, exact problem coverage, and source-layout fidelity.
+2. Correct visual primitive, count, orientation, grouping, labels, response structure, and instructional sequence.
 3. Blank/Solved answer isolation and readable interaction.
 4. Stable rendering with no blocking runtime errors or unusable overflow.
 5. Cosmetic consistency.
 
-Do one complete functional/source-faithful pass across the batch before spending time on visual polish. Do not delay delivery for minor spacing, typography, decorative styling, scan-like appearance, non-blocking development warnings, or repeated screenshots of shared components. Record those items as optional follow-up polish unless they obscure the mathematics or make the lesson hard to use.
+Source-layout fidelity is functional, not cosmetic. A cube may not become a dot; a vertical stack may not become an array; an open response area may not become a segmented tape; a thought/speech-bubble riddle may not become unrelated cards. Preserve the source's model family, primitive, count, orientation, grouping, relative order, printed labels, blanks, dividers, and open workspace. Scan texture, exact fonts, and ornamental page chrome remain optional unless they carry mathematical meaning.
 
 Teacher Edition drift is never optional polish. Treat any wrong objective, omitted or reordered problem, invented quantity, wrong equation or answer, generic replacement for a source-specific model, answer leak, or explanation that changes the source reasoning as a blocking failure. Fix every such failure in the current five-lesson batch before calling it complete.
 
-## Functional first-pass boundary
+## Fail-closed rules
 
-A lesson passes this skill when all of the following are true:
+- The Teacher Edition PDF, its rendered Problem Set pages, and its answer key are the only acceptance authority. Baselines and page-level contracts are fingerprinted transcriptions of that source, not independent specifications. Implementation code, renderer names, prior acceptance documents, and hand-authored regression checks can diagnose a problem but can never establish correctness.
+- OCR and flattened structured prompts control wording and arithmetic only. They are never proof of page layout, visual primitive, orientation, grouping, or response structure.
+- `visualContract.modelsDetected` is a lesson-level candidate list, not a problem-to-renderer assignment. Never select a renderer from it without page-level evidence.
+- Validators and prior acceptance records are implementation evidence, not source evidence. When they conflict with a Teacher Edition page image, the source wins and the validator/record must be corrected.
+- Generic fallback renderers are prohibited for every source-distinct problem in the active batch. If no existing renderer can express the source layout, extend a shared renderer or add the smallest source-specific renderer.
+- Do not infer repeated units, tape segments, answer choices, scaffolds, or equations that are absent from Blank mode in the source. Preserve open workspace as open workspace.
+- Missing, incomplete, black, clipped, or ambiguous source-page evidence blocks visual acceptance for that problem. Render only the required page into ignored repository `tmp/` and inspect it; do not guess.
+- Never mark a lesson or batch complete from build and semantic assertions alone. Source comparison and rendered-state verification are mandatory.
 
-- its objective, facts, problem order, quantities, equations, units, answers, and reasoning conform to its Teacher Edition contract;
-- every official task is present, including multi-part and variable-response requirements;
-- the core mathematical relationship is shown with the correct source-specific model, labels, and values;
-- the lesson's instructional sequence has meaningful reveal, comparison, manipulation, or step-through motion when the source teaches through a sequence;
-- Blank mode preserves the authentic student task without answer leakage, and Solved mode shows understandable reasoning rather than only a final answer;
-- the lesson renders and remains usable at the standard desktop acceptance viewport.
+## Batch visual contract
 
-The first pass does not include scan imitation, pixel matching, ornamental animation, exhaustive breakpoint tuning, micro-spacing, font matching, decorative illustration, or cleanup of non-blocking internal development warnings. Do not spend batch time on those after the functional gates pass. A separate polish pass may be requested later.
+Before changing implementation code, inspect all Problem Set page images for all lessons in the batch and author one page-level visual-layout contract per lesson under:
+
+`interactive-grade3-app/teacher-edition-baseline/visual-layout-contracts/mN/lesson-XX.json`
+
+For every official problem and subpart, record:
+
+- the controlling Teacher Edition PDF fingerprint, rendered source image, image SHA-256, and PDF page number;
+- exact source wording and exact answer-key evidence;
+- source-observed primitive/model family and whether it is printed, student-authored, or absent;
+- source-observed count, orientation, grouping, order, relative placement, labels, blanks, dividers, and open-workspace requirements;
+- answer-key-backed Blank-mode prohibitions and Solved-mode requirements.
+
+Never record a renderer, component, runtime path, internal type, selector, or other implementation-authored structure as an expected value. The validator may adapt implementation state into a neutral canonical signature, but every expected value in that signature must be a direct observation from the fingerprinted Teacher Edition page. If a fact cannot be supported by the page, answer key, or instructional text, it is not an acceptance requirement.
+
+Run the source-visual validator immediately after authoring the contracts. Existing generic implementations should fail before correction. Keep that red result as evidence that the contract can detect drift; a contract written only after implementation passes is not an independent gate.
 
 ## Throughput rules
 
-- Work breadth-first across the five lessons: source/data for all five, models for all five, motion for all five, Blank/Solved for all five, then one validation sweep. Do not perfect one lesson while the others remain generic.
+- Work breadth-first across the five lessons: inspect all source pages and author all visual contracts; correct source/data for all five; correct models for all five; correct motion for all five; correct Blank/Solved for all five; then perform one validation sweep.
 - Use the precomputed contracts immediately. Baseline preparation, OCR, whole-PDF review, and repeated page rendering are not normal lesson work.
-- Prefer the smallest existing semantic visual that accurately expresses the Teacher Edition relationship. Extend a shared renderer once when needed; do not create five ornamental one-off implementations.
+- Prefer the smallest existing semantic visual that expresses the recorded page-level contract. Reuse a renderer only when its primitive, structure, and response layout conform; arithmetic equivalence alone is insufficient.
 - Give each source-distinct core concept a meaningful instructional sequence. Do not animate every decoration or every repeated problem row.
 - Build once after the batch implementation, then perform one isolated browser sweep. Recheck only failed or changed states.
 - Keep the acceptance record compact and factual. Do not create a long design critique or pixel-polish backlog during this pass.
@@ -48,11 +64,12 @@ The first pass does not include scan imitation, pixel matching, ornamental anima
 
 1. Parse the module and starting lesson from the request. By default, create a batch of that lesson plus the next four lessons in the same module. Work only in this Grade 3 repository.
 2. Read `references/lesson-20-baseline.md` and `references/teacher-edition-baseline.md` before changing lesson code.
-3. From `interactive-grade3-app`, run `npm run validate:teacher-baseline`. When it passes, use `teacher-edition-baseline/index.json` to load exactly the five requested contracts. These committed contracts are the normal source-preparation layer; do not repeat PDF extraction, OCR, page searching, or full-PDF rendering.
-4. Treat each contract as the batch source contract. Use its exact objective, instructional sequence, official Problem Set and answer-key text, quantities, units, models, animation evidence, source images, and Blank/Solved rules. If `structuredPromptStatus` is `review-source-layout`, use the raw Problem Set/answer-key text and listed source image as controlling evidence rather than trusting flattened structured prompt order.
+3. From `interactive-grade3-app`, run `npm run validate:teacher-baseline`. When it passes, use `teacher-edition-baseline/index.json` to load exactly the requested contracts.
+4. Treat contract text as the wording/arithmetic contract. Inspect every listed Problem Set page image in one batch before choosing any renderer, even when `structuredPromptStatus` is `ready`. If an image is unavailable or unusable, render only the listed Problem Set PDF page into ignored repository `tmp/`.
 5. Regenerate the baseline only when validation reports a missing/invalid contract or changed Teacher Edition PDF fingerprint. Run `npm run generate:teacher-baseline` once, then validate again. The generator reuses the ignored repository cache under `tmp/teacher-edition-cache/`; render an individual page only if the regenerated contract still flags a genuinely ambiguous visual relationship.
-6. Compare the five contracts with the existing runtime and rendered lessons. Reuse exact source-specific data and visuals that already pass; mark every other requirement as present, partial, wrong, generic, or absent. A precomputed contract is preparation evidence, not proof that a lesson is implemented.
-7. Implement the batch in shared passes: first source-accurate runtime/concept data for all five lessons, then source-conforming problem models for all five, then meaningful instructional motion for all five, then Blank/Solved isolation, and finally only the styling required for readability. Extract shared helpers only when the lessons genuinely share a mathematical structure. Implement every gap across the relevant surfaces:
+6. Author or update all page-level visual-layout contracts before implementation. Run `npm run validate:source-visual-contracts -- --lessons mN-lX,...` and confirm that known generic/drifting states fail.
+7. Compare the fingerprinted Teacher Edition evidence directly with the existing runtime and rendered lesson. Use the page-level contract only as a traceable transcription and index into that evidence. Reuse only source-conforming visuals. Mark every requirement present, partial, wrong, generic, absent, or blocked.
+8. Implement the batch in shared passes: source-accurate runtime/concept data, source-conforming problem models, meaningful instructional motion, Blank/Solved isolation, then required readability styling. Implement every gap across:
    - lesson runtime concept animation and teacher prompts;
    - problem-centered lesson data;
    - source-specific visual types/templates/styles when existing components cannot express the source faithfully;
@@ -60,23 +77,24 @@ The first pass does not include scan imitation, pixel matching, ornamental anima
    - Blank/Solved answer isolation;
    - replay or meaningful step-through motion that follows the Teacher Edition learning sequence, with reduced-motion support;
    - visible Teacher Edition provenance.
-8. Prefer authored HTML/CSS/SVG/data-driven visuals over screenshots for mathematical models. Use a tightly cropped Teacher Edition image when the original illustration itself carries meaning. Match the mathematical relationship and labels; do not spend the first pass imitating scan texture, handwriting, or irrelevant page ornament.
-9. Preserve the source problem order and visual relationships. Do not replace an official problem with a parallel example, generic chart, decorative animation, or invented numbers.
-10. Add focused, durable lesson-specific assertions for the whole batch to the existing manual source-contract validator. Assert source facts, problem coverage, model choice, answers, and Blank/Solved isolation. Do not create `.spec.ts` files, large snapshot suites, or validators wired into normal start/build.
-11. Build once after the five-lesson implementation pass. Then use `.codex/skills/browser-profile-validation/SKILL.md` and one isolated authorized Chrome tab to inspect Concept, Blank Problem Set, Solved Problem Set, and Summary for every lesson in a single navigation sweep. Do not repeat browser setup or restart the server between lessons.
-12. Capture compact DOM/text/overflow/error checks for all 20 lesson states. Visually inspect each source-distinct concept or problem model once; DOM/content checks are sufficient for repeated shared layouts. Confirm exact content, readable hierarchy, meaningful motion, no blocking runtime errors, and no unusable horizontal overflow. Revisit only failures. Code presence alone is not acceptance.
-13. Update one compact durable batch acceptance record in the repository, with a row for each lesson and explicit functional failures if any remain. Do not turn it into a visual-design report. Keep screenshots, rendered PDF pages, cached extraction, and other transient evidence only under ignored `tmp/`.
+9. Prefer authored HTML/CSS/SVG/data-driven visuals. Use a tightly cropped source image when the original symbol or illustration carries meaning. Preserve source layout without imitating irrelevant scan texture.
+10. Preserve source problem order and visual relationships. Do not replace an official problem with a parallel example, generic chart, decorative animation, invented scaffold, or merely equivalent arithmetic.
+11. Run the Teacher Edition baseline and source-visual validators again until every batch contract passes. Run existing semantic and regression validators afterward as diagnostics only. They cannot certify source fidelity, override a Teacher Edition failure, or add an implementation-authored acceptance expectation. Fix stale validators whenever source evidence disproves them.
+12. Build once. Then use `.codex/skills/browser-profile-validation/SKILL.md` and one isolated authorized Chrome tab to inspect Concept, Blank Problem Set, Solved Problem Set, and Summary for every lesson in one sweep.
+13. Capture compact DOM/text/overflow/error checks for all lesson states. Compare every source-distinct Blank visual against its controlling page image side by side. Compare Solved mode against the answer key and visual contract. Revisit only failures. Code presence alone is not acceptance.
+14. Update one compact durable batch acceptance record with contract-validation, build, and rendered-state evidence. Record blocked browser authorization as blocked—not passed. Keep screenshots, rendered PDF pages, and transient evidence only under ignored repository `tmp/`.
 
 ## Quality gates
 
 - Every source problem is individually represented; "representative" coverage fails.
 - Every numeric value and answer matches the Teacher Edition or is explicitly identified as variable.
 - A generic lesson scaffold does not pass merely because its arithmetic is valid; it must teach and model the actual Teacher Edition lesson and Problem Set.
-- Solved mode teaches the reasoning sequence, not only the final number.
+- Solved mode uses the Teacher Edition answer and a reasoning sequence directly supported by the Teacher Edition lesson, worked example, or answer-key evidence. Do not present an inferred scaffold as official source content.
 - Blank mode preserves the student task without leaking solved answers.
-- Visuals encode the actual mathematical relationship and are not generic decoration; exact pixel matching is not required when the live model teaches the same source relationship clearly.
+- Visuals preserve the page-level primitive, count, orientation, grouping, labels, response structure, and open workspace. Equivalent arithmetic with a different visual model fails.
 - Animation follows the core Teacher Edition instructional sequence by revealing, comparing, grouping, decomposing, measuring, plotting, or transforming meaningful states. Continuous decorative motion does not count, and repeated problems do not each require unique animation.
-- A lesson is complete only after source comparison, implementation, build, and isolated visual verification all pass. A batch is not complete merely because four of five lessons pass.
+- The source-visual contract validator must demonstrate a failing pre-correction state and a passing corrected state.
+- A lesson is complete only after direct Teacher Edition comparison, fingerprinted page-level source validation, build, and isolated rendered-state comparison with the Teacher Edition all pass. Semantic and regression checks may catch additional defects but cannot substitute for or redefine those source gates. A batch is not complete merely because four of five lessons pass.
 
 ## Completion report
 

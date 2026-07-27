@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l9",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-105.png",
+      "sha256": "c9ea32557fd0191ad05363d17fba2c5b5c70cb9472fd918d0ddef9d87245376f",
+      "pdfPage": 105,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 9 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-106.png",
+      "sha256": "6312f88a0888e6bf756b3b335fdb5003cbb7b2ec5ce2293d1ef5f2c1be3e36dc",
+      "pdfPage": 106,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 9 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-382.png",
+      "sha256": "b42143f1a8c38fb67ee52f8a0dfdca3a259e9d84dfe3d9c87832e2132bd39851",
+      "pdfPage": 382,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 9 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-383.png",
+      "sha256": "33d794c46d0b49a7db466c7e9bf5899e6235a1505e90ce13258f0287ced7878a",
+      "pdfPage": 383,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 9 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-105.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Each figure represents 1 whole. Fill in the chart"
+        ],
+        "answerKeyEvidence": "a. Answer provided. b. 1/8, 15, 15/8. c. 1/6, 14, 14/6. d. 1/5, 8, 8/5. e. 1/4, 9, 9/4. f. 1/3, 7, 7/3.",
+        "layout": {
+          "family": "six-row-greater-than-one-source-figure-chart",
+          "subpartCount": 6,
+          "modelPrimitive": "tight-official-six-figure-column-and-authored-chart",
+          "modelCounts": [
+            2,
+            8,
+            6,
+            5,
+            4,
+            3
+          ],
+          "modelOrientation": "vertical-source-figure-column-beside-six-row-chart",
+          "responseStructure": "name-unit-fraction-count-shaded-units-and-write-fraction",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-105.png",
+              "crop": {
+                "x": 155,
+                "y": 300,
+                "width": 365,
+                "height": 1110
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-106.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Estimate to draw and shade units on the fraction strips"
+        ],
+        "answerKeyEvidence": "a. Each whole partitioned into sixths; 8 sixths shaded; 8/6. b. Each whole partitioned into fourth; 7 fourths shaded; 7/4. c. Each whole partitioned into fifths; 6 fifths shaded; 6 fifths. d. Each whole partitioned into halves; 5 halves shaded; 5 halves.",
+        "layout": {
+          "family": "four-open-to-completed-fractions-greater-than-one",
+          "subpartCount": 4,
+          "modelPrimitive": "four-authored-multi-whole-open-or-partitioned-strips",
+          "modelCounts": [
+            6,
+            4,
+            5,
+            2
+          ],
+          "modelOrientation": "four-horizontal-multi-whole-strips-over-four-number-sentences",
+          "responseStructure": "partition-multiple-wholes-shade-units-and-write-each-fraction"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-106.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Mrs. Jawlik baked 2 pans of brownies"
+        ],
+        "answerKeyEvidence": "a. 2 equivalent wholes drawn; each whole partitioned into 8 equal pieces; 10 pieces shaded. b. 10/8.",
+        "layout": {
+          "family": "two-brownie-pans-ten-eighths-and-number-bond",
+          "subpartCount": 2,
+          "modelPrimitive": "two-authored-open-or-partitioned-pans-and-two-part-number-bond",
+          "modelCounts": [
+            8,
+            8,
+            10
+          ],
+          "modelOrientation": "two-horizontal-pans-over-number-bond-over-two-part-response",
+          "responseStructure": "partition-two-pans-shade-ten-pieces-and-write-ten-eighths",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    }
+  ]
+}

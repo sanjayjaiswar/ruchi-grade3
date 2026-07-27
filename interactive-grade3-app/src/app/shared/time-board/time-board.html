@@ -48,7 +48,9 @@
       </span>
       <span
         class="tick-label"
-        *ngFor="let tick of majorTicks(section)"
+        *ngFor="let tick of majorTicks(section); first as isFirst; last as isLast"
+        [class.is-start]="isFirst"
+        [class.is-end]="isLast"
         [style.left.%]="pointX(tick, section)">
         {{ tick }}
       </span>

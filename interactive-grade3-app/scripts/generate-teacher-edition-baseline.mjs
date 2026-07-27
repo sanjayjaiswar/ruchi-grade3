@@ -33,23 +33,23 @@ const { LESSON_SOURCE_NOTES } = require(join(appRoot, 'src/app/data/lesson-sourc
 
 const expectedLessonCounts = { m1: 21, m2: 21, m3: 21, m4: 16, m5: 30, m6: 9, m7: 34 };
 const modelPatterns = [
-  ['array', /\barray|rows? of|columns? of/i],
-  ['equal-groups', /equal groups?|groups? of|each group/i],
-  ['tape-diagram', /tape diagram|strip diagram|bar model/i],
-  ['number-bond', /number bond|decompose|break apart/i],
-  ['number-line', /number line|tick mark|interval/i],
-  ['clock', /analog clock|clock face|minute hand|hour hand|elapsed time/i],
-  ['measurement-scale', /spring scale|weigh|weight|grams?|kilograms?|scale reads?/i],
-  ['liquid-measure', /beaker|liter|milliliter|liquid volume|measuring bottle/i],
-  ['ruler-or-length', /ruler|centimeter|meter strip|length/i],
-  ['place-value', /place value|bundl|regroup|standard algorithm|vertical form/i],
-  ['table-or-chart', /\btable\b|\bchart\b|multiplication table/i],
-  ['graph-or-plot', /bar graph|picture graph|line plot|scaled graph|plot the data/i],
-  ['fraction-model', /fraction strip|fraction number line|unit fraction|equal parts|halves|thirds|fourths|sixths|eighths/i],
-  ['area-model', /area model|square units?|length × width|length x width/i],
-  ['geometry-diagram', /polygon|quadrilateral|rectangle|rhombus|trapezoid|perimeter|angle/i],
-  ['money-model', /\bdollar|\$|cents?|money|cost|change/i],
-  ['picture-or-drawing', /draw|picture|diagram|illustration|shade|circle the/i]
+  ['array', /\b(?:array|rows? of|columns? of)\b/i],
+  ['equal-groups', /\b(?:equal groups?|groups? of|each group)\b/i],
+  ['tape-diagram', /\b(?:tape diagram|strip diagram|bar model)\b/i],
+  ['number-bond', /\b(?:number bond|decompose|break apart)\b/i],
+  ['number-line', /\b(?:number line|tick mark|interval)\b/i],
+  ['clock', /\b(?:analog clock|clock face|minute hand|hour hand|elapsed time)\b/i],
+  ['measurement-scale', /\b(?:spring scale|weigh|weight|grams?|kilograms?|scale reads?)\b/i],
+  ['liquid-measure', /\b(?:beaker|liters?|milliliters?|liquid volume|measuring bottle)\b/i],
+  ['ruler-or-length', /\b(?:ruler|centimeters?|meter strip|length)\b/i],
+  ['place-value', /\b(?:place value|bundl\\w*|regroup\\w*|standard algorithm|vertical form)\b/i],
+  ['table-or-chart', /\b(?:data table|number table|multiplication table|chart)\b/i],
+  ['graph-or-plot', /\b(?:bar graph|picture graph|line plot|scaled graph|plot the data)\b/i],
+  ['fraction-model', /\b(?:fraction strip|fraction number line|unit fraction|equal parts|halves|thirds|fourths|sixths|eighths)\b/i],
+  ['area-model', /\b(?:area model|square units?|length [×x] width)\b/i],
+  ['geometry-diagram', /\b(?:polygon|quadrilateral|rectangle|rhombus|trapezoid|perimeter|angle)\b/i],
+  ['money-model', /(?:\\$|\\b(?:dollars?|cents?|money|cost|change)\\b)/i],
+  ['picture-or-drawing', /\b(?:draw|drawing|picture|diagram|illustration|shade|circle the)\b/i]
 ];
 
 mkdirSync(contractsRoot, { recursive: true });
@@ -92,7 +92,7 @@ for (const [moduleId, lessonCount] of Object.entries(expectedLessonCounts)) {
     const instructionalPages = lessonPages.filter((page) => !['problem-set', 'exit-ticket', 'homework', 'template', 'sprint'].includes(page.type));
     const instructionalText = instructionalPages.map((page) => page.text).join('\n\n');
     const lessonText = lessonPages.map((page) => `--- PDF PAGE ${page.pdfPage} (${page.type}) ---\n${page.text}`).join('\n\n');
-    const problemSetPages = lessonPages.filter((page) => page.type === 'problem-set');
+    let problemSetPages = lessonPages.filter((page) => page.type === 'problem-set');
     const exitTicketPages = lessonPages.filter((page) => page.type === 'exit-ticket');
     const homeworkPages = lessonPages.filter((page) => page.type === 'homework');
     const answerKeyPages = pages
@@ -102,11 +102,23 @@ for (const [moduleId, lessonCount] of Object.entries(expectedLessonCounts)) {
 
     const answerKeyText = answerKeyPages.map((page) => page.text).join('\n\n');
     let problemSetText = problemSetPages.map((page) => page.text).join('\n\n');
-    const conceptText = extractLastBlock(instructionalText, /Concept Development(?:\s*\([^)]*\))?/ig, [/Problem Set\s*\(/i, /Student Debrief/i]);
-    const applicationText = extractLastBlock(instructionalText, /Application Problem(?:\s*\([^)]*\))?/ig, [/Concept Development/i, /Fluency Practice/i, /Student Debrief/i]);
-    const debriefText = extractLastBlock(instructionalText, /Student Debrief(?:\s*\([^)]*\))?/ig, [/Exit Ticket/i]);
-    const problemSetGuidanceText = extractLastBlock(instructionalText, /Problem Set\s*\([^)]*\)/ig, [/Student Debrief/i]);
-    const fluencyPracticeText = extractLastBlock(instructionalText, /Fluency Practice(?:\s*\([^)]*\))?/ig, [/Application Problem/i, /Concept Development/i, /Student Debrief/i]);
+    const conceptText = extractLastBlock(instructionalText, /^[ \t]*Concept Development(?:\s*\([^)\n]*\))?/igm, [/^[ \t]*Problem Set\s*\(/im, /^[ \t]*Student Debrief/im]);
+    const applicationText = extractLastBlock(instructionalText, /^[ \t]*Application Problem(?:\s*\([^)\n]*\))?/igm, [/^[ \t]*Concept Development/im, /^[ \t]*Fluency Practice/im, /^[ \t]*Student Debrief/im]);
+    const debriefText = extractLastBlock(instructionalText, /^[ \t]*Student Debrief(?:\s*\([^)\n]*\))?/igm, [/^[ \t]*Exit Ticket/im]);
+    const problemSetGuidanceText = extractLastBlock(instructionalText, /^[ \t]*Problem Set\s*\([^)\n]*\)/igm, [/^[ \t]*Student Debrief/im]);
+    const isEmbeddedM5Lesson30ProblemSet = moduleId === 'm5' && lessonNumber === 30;
+    if (isEmbeddedM5Lesson30ProblemSet) {
+      const embeddedProblemSetPage = lessonPages.find((page) => page.pdfPage === 355);
+      if (!embeddedProblemSetPage || !problemSetGuidanceText) {
+        throw new Error('m5-l30: exact embedded Problem Set directions were not found on Teacher Edition PDF page 355.');
+      }
+      problemSetPages = [{
+        pdfPage: embeddedProblemSetPage.pdfPage,
+        text: `Problem Set (10 minutes)\n${problemSetGuidanceText}`
+      }];
+      problemSetText = problemSetGuidanceText;
+    }
+    const fluencyPracticeText = extractLastBlock(instructionalText, /^[ \t]*Fluency Practice(?:\s*\([^)\n]*\))?/igm, [/^[ \t]*Application Problem/im, /^[ \t]*Concept Development/im, /^[ \t]*Student Debrief/im]);
     const problemSetAnswerText = extractAnswerKeyProblemSet(answerKeyText);
     const objective = extractObjective(lessonPages[0]?.text ?? instructionalText, lessonNumber);
     const instructionalMode = detectInstructionalMode(objective, instructionalText, problemSetPages.length, conceptText);
@@ -164,7 +176,11 @@ for (const [moduleId, lessonCount] of Object.entries(expectedLessonCounts)) {
         exitEvidence: sourceNotes.exitEvidence ?? ''
       },
       problemSet: {
-        deliveryMode: problemSetPages.length ? 'problem-set-pages' : instructionalMode,
+        deliveryMode: isEmbeddedM5Lesson30ProblemSet
+          ? 'embedded-cooperative-problem-set'
+          : problemSetPages.length
+            ? 'problem-set-pages'
+            : instructionalMode,
         structuredPromptStatus: promptExtractionWarnings.length ? 'review-source-layout' : 'ready',
         extractionWarnings: promptExtractionWarnings,
         extractedProblems: extractedSource.problems,

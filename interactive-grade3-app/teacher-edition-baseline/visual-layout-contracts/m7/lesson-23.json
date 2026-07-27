@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l23",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-317.png",
+      "sha256": "018d9edef0f286e0f99867486dc73b8d8abcef490420b1da39e18641e4817e4b",
+      "pdfPage": 317,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 23 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-318.png",
+      "sha256": "17964357c429da5707b1b51a52e50e3400a32b942d03bb808550478f98ed876d",
+      "pdfPage": 318,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 23 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-499.png",
+      "sha256": "eb7172e1c1ac9ee9276f054cc4e81c766c678016d6184dc6d84528d2e8f94ebe",
+      "pdfPage": 499,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 23 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-500.png",
+      "sha256": "2d8310a2ae464f6429feabd9782759ebab64ec73bfe9a906fb32d6ffcd5db9ba",
+      "pdfPage": 500,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 23 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-317.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Gale makes a miniature stop sign, a regular octagon, with a perimeter of 48 centimeters."
+        ],
+        "answerKeyEvidence": "6 cm.",
+        "layout": {
+          "family": "regular-octagon-missing-side",
+          "subpartCount": 2,
+          "modelPrimitive": "live-octagon+rdw-table",
+          "modelCounts": [
+            8,
+            48,
+            6
+          ],
+          "modelOrientation": "octagon-over-equation-answer-and-response",
+          "responseStructure": "divide-perimeter-by-eight-and-answer-six-centimeters",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-317.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Each rectangle measures 34 inches by 12 inches."
+        ],
+        "answerKeyEvidence": "184 in.",
+        "layout": {
+          "family": "wire-for-two-thirty-four-by-twelve-rectangles",
+          "subpartCount": 3,
+          "modelPrimitive": "two-live-labeled-rectangles+rdw-table",
+          "modelCounts": [
+            2,
+            34,
+            12,
+            184
+          ],
+          "modelOrientation": "two-rectangles-over-equation-answer-and-response",
+          "responseStructure": "find-one-perimeter-double-and-answer-one-hundred-eighty-four-inches",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-317.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The perimeter of a rectangular bathroom is 32 feet."
+        ],
+        "answerKeyEvidence": "8 ft.",
+        "layout": {
+          "family": "bathroom-missing-length-from-perimeter",
+          "subpartCount": 3,
+          "modelPrimitive": "live-labeled-rectangle+rdw-table",
+          "modelCounts": [
+            32,
+            8,
+            8
+          ],
+          "modelOrientation": "rectangle-over-equation-answer-and-response",
+          "responseStructure": "halve-perimeter-subtract-width-and-answer-eight-feet",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-318.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Raj uses 6-inch square tiles to make a rectangle."
+        ],
+        "answerKeyEvidence": "96 in.",
+        "layout": {
+          "family": "perimeter-of-three-by-five-six-inch-tile-array",
+          "subpartCount": 4,
+          "modelPrimitive": "live-three-by-five-square-array+rdw-table",
+          "modelCounts": [
+            3,
+            5,
+            6,
+            96
+          ],
+          "modelOrientation": "array-over-equation-answer-and-response",
+          "responseStructure": "convert-tile-counts-to-side-lengths-and-answer-ninety-six-inches",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m7-teacher/page-318.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Mischa makes a 4-foot by 6-foot rectangular banner."
+        ],
+        "answerKeyEvidence": "$40.",
+        "layout": {
+          "family": "banner-ribbon-cost",
+          "subpartCount": 3,
+          "modelPrimitive": "live-four-by-six-banner+rdw-table",
+          "modelCounts": [
+            4,
+            6,
+            2,
+            40
+          ],
+          "modelOrientation": "banner-over-equation-answer-and-response",
+          "responseStructure": "find-perimeter-multiply-by-two-dollars-and-answer-forty-dollars",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m7-teacher/page-318.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Colton buys a roll of wire fencing that is 120 yards long."
+        ],
+        "answerKeyEvidence": "Yes.",
+        "layout": {
+          "family": "wire-left-for-garden-and-play-space",
+          "subpartCount": 5,
+          "modelPrimitive": "two-live-labeled-rectangles+rdw-table",
+          "modelCounts": [
+            120,
+            18,
+            24,
+            6,
+            8,
+            84,
+            28
+          ],
+          "modelOrientation": "garden-and-play-space-over-equation-answer-and-response",
+          "responseStructure": "find-both-perimeters-compare-with-roll-and-answer-yes",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    }
+  ]
+}

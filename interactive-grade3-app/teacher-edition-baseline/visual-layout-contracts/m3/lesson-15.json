@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m3-l15",
+  "teacherEditionPdfSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m3/lesson-15-page-65.png",
+      "sha256": "5fa7944277dcf027bad0ba343a98c6f62fc66ba1f079557493035326ec068512",
+      "pdfPage": 193,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 15 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-15-page-66.png",
+      "sha256": "d488c3a1ab88c3a063f3bdafaebe7e1e69bf0d366393ec42138192dbe39f17c8",
+      "pdfPage": 194,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 15 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-307.png",
+      "sha256": "d60448bffdfb603d3bd42404196ad0fec07314ba910e25f180d7b296782aad78",
+      "pdfPage": 307,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 15 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-308.png",
+      "sha256": "9a1a6d1d5a253c3ce60dbda9496ae73f49f86959c1e50ea6ba99c697ec9241ad",
+      "pdfPage": 308,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 15 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m3/lesson-15-page-65.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "mrs parson gave each of her grandchildren $9 she gave a total of $36"
+        ],
+        "answerKeyEvidence": "4; solution includes equation and an unknown.",
+        "layout": {
+          "family": "open-equation-letter-and-answer-response",
+          "subpartCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "openWorkspaceCount": 1,
+          "instructionalModelFamily": "unknown-in-multiplication-or-division",
+          "responseStructure": "write-equation-use-letter-solve-answer"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure, meaningful illustrations, exact givens, and open response space were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m3/lesson-15-page-65.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "shiva pours 27 liters of water equally into 9 containers how many liters of"
+        ],
+        "answerKeyEvidence": "3 L; solution includes equation and an unknown.",
+        "layout": {
+          "family": "open-equation-letter-and-answer-response",
+          "subpartCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "openWorkspaceCount": 1,
+          "instructionalModelFamily": "unknown-in-multiplication-or-division",
+          "responseStructure": "write-equation-use-letter-solve-answer"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure, meaningful illustrations, exact givens, and open response space were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m3/lesson-15-page-65.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "derek cuts 7 pieces of wire each piece is 9 meters long what is"
+        ],
+        "answerKeyEvidence": "63 m; solution includes equation and an unknown.",
+        "layout": {
+          "family": "open-equation-letter-and-answer-response",
+          "subpartCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "openWorkspaceCount": 1,
+          "instructionalModelFamily": "unknown-in-multiplication-or-division",
+          "responseStructure": "write-equation-use-letter-solve-answer"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure, meaningful illustrations, exact givens, and open response space were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m3/lesson-15-page-66.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "aunt deena and uncle chris share the cost of a limousine ride with their"
+        ],
+        "answerKeyEvidence": "$7; solution includes equation and an unknown.",
+        "layout": {
+          "family": "open-equation-letter-and-answer-response",
+          "subpartCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "openWorkspaceCount": 1,
+          "instructionalModelFamily": "unknown-in-multiplication-or-division",
+          "responseStructure": "write-equation-use-letter-solve-answer"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure, meaningful illustrations, exact givens, and open response space were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m3/lesson-15-page-66.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "cara bought 9 packs of beads there are 10 beads in each pack she"
+        ],
+        "answerKeyEvidence": "3; solution includes equation and an unknown.",
+        "layout": {
+          "family": "open-equation-letter-and-answer-response",
+          "subpartCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "openWorkspaceCount": 1,
+          "instructionalModelFamily": "unknown-in-multiplication-or-division",
+          "responseStructure": "write-equation-use-letter-solve-answer"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure, meaningful illustrations, exact givens, and open response space were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m3/lesson-15-page-66.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "there are 8 erasers in a set damon buys 9 sets after giving some"
+        ],
+        "answerKeyEvidence": "37; solution includes equation and an unknown.",
+        "layout": {
+          "family": "open-equation-letter-and-answer-response",
+          "subpartCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "openWorkspaceCount": 1,
+          "instructionalModelFamily": "unknown-in-multiplication-or-division",
+          "responseStructure": "write-equation-use-letter-solve-answer"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure, meaningful illustrations, exact givens, and open response space were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    }
+  ]
+}

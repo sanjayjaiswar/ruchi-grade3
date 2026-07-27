@@ -1,0 +1,2066 @@
+{
+  "schemaVersion": 1,
+  "moduleId": "m1",
+  "teacherEditionPdfSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
+  "imageSize": {
+    "width": 816,
+    "height": 1056
+  },
+  "answerKeyImageSize": {
+    "width": 935,
+    "height": 1210
+  },
+  "lessons": {
+    "1": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-292.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "Fill in the blanks to make true statements.",
+          "answerKeyEvidence": "1. a. 15; 15; 15 b. 15; 15; 15 c. 24; 4, 24; 6, 24 d. 4, 4, 4, 4, 4, 24; 4, 24; 4, 24 2. No; explanations will vary. 3. 2 equal groups of 3 apples 4. Chocolates circled to show 3 groups of 4; 4 + 4 + 4 = 12; 3 × 4 = 12 or 4 × 3 = 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 29,
+              "src": "/source-pages/m1-teacher/page-029.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 850
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "Fill in the blanks to make true statements.",
+          "answerKeyEvidence": "1. a. 15; 15; 15 b. 15; 15; 15 c. 24; 4, 24; 6, 24 d. 4, 4, 4, 4, 4, 24; 4, 24; 4, 24 2. No; explanations will vary. 3. 2 equal groups of 3 apples 4. Chocolates circled to show 3 groups of 4; 4 + 4 + 4 = 12; 3 × 4 = 12 or 4 × 3 = 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 30,
+              "src": "/source-pages/m1-teacher/page-030.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 273
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "Fill in the blanks to make true statements.",
+          "answerKeyEvidence": "1. a. 15; 15; 15 b. 15; 15; 15 c. 24; 4, 24; 6, 24 d. 4, 4, 4, 4, 4, 24; 4, 24; 4, 24 2. No; explanations will vary. 3. 2 equal groups of 3 apples 4. Chocolates circled to show 3 groups of 4; 4 + 4 + 4 = 12; 3 × 4 = 12 or 4 × 3 = 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 30,
+              "src": "/source-pages/m1-teacher/page-030.png",
+              "crop": {
+                "x": 33,
+                "y": 273,
+                "width": 749,
+                "height": 293
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "Fill in the blanks to make true statements.",
+          "answerKeyEvidence": "1. a. 15; 15; 15 b. 15; 15; 15 c. 24; 4, 24; 6, 24 d. 4, 4, 4, 4, 4, 24; 4, 24; 4, 24 2. No; explanations will vary. 3. 2 equal groups of 3 apples 4. Chocolates circled to show 3 groups of 4; 4 + 4 + 4 = 12; 3 × 4 = 12 or 4 × 3 = 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 30,
+              "src": "/source-pages/m1-teacher/page-030.png",
+              "crop": {
+                "x": 33,
+                "y": 467,
+                "width": 749,
+                "height": 483
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-293.png",
+        "/source-pages/m1-teacher/page-294.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "a.",
+          "answerKeyEvidence": "1. a. 4 5. a. 2 rows of 5 drawn b. 2 b. Answers will vary. 2. a. 3 6. 4 rows of 3 drawn; 4 × 3 = 12 b. 6 7. 5 rows of 3 drawn; 5 × 3 = 15 3. a. 8 b. 2 × 4 4. a. 4 b. 5 × 4",
+          "sourceCrops": [
+            {
+              "pdfPage": 43,
+              "src": "/source-pages/m1-teacher/page-043.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 240
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "a.",
+          "answerKeyEvidence": "1. a. 4 5. a. 2 rows of 5 drawn b. 2 b. Answers will vary. 2. a. 3 6. 4 rows of 3 drawn; 4 × 3 = 12 b. 6 7. 5 rows of 3 drawn; 5 × 3 = 15 3. a. 8 b. 2 × 4 4. a. 4 b. 5 × 4",
+          "sourceCrops": [
+            {
+              "pdfPage": 43,
+              "src": "/source-pages/m1-teacher/page-043.png",
+              "crop": {
+                "x": 33,
+                "y": 240,
+                "width": 749,
+                "height": 287
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "a.",
+          "answerKeyEvidence": "1. a. 4 5. a. 2 rows of 5 drawn b. 2 b. Answers will vary. 2. a. 3 6. 4 rows of 3 drawn; 4 × 3 = 12 b. 6 7. 5 rows of 3 drawn; 5 × 3 = 15 3. a. 8 b. 2 × 4 4. a. 4 b. 5 × 4",
+          "sourceCrops": [
+            {
+              "pdfPage": 43,
+              "src": "/source-pages/m1-teacher/page-043.png",
+              "crop": {
+                "x": 33,
+                "y": 427,
+                "width": 749,
+                "height": 287
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "a.",
+          "answerKeyEvidence": "1. a. 4 5. a. 2 rows of 5 drawn b. 2 b. Answers will vary. 2. a. 3 6. 4 rows of 3 drawn; 4 × 3 = 12 b. 6 7. 5 rows of 3 drawn; 5 × 3 = 15 3. a. 8 b. 2 × 4 4. a. 4 b. 5 × 4",
+          "sourceCrops": [
+            {
+              "pdfPage": 43,
+              "src": "/source-pages/m1-teacher/page-043.png",
+              "crop": {
+                "x": 33,
+                "y": 613,
+                "width": 749,
+                "height": 337
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "sourceTextEvidence": "a.",
+          "answerKeyEvidence": "1. a. 4 5. a. 2 rows of 5 drawn b. 2 b. Answers will vary. 2. a. 3 6. 4 rows of 3 drawn; 4 × 3 = 12 b. 6 7. 5 rows of 3 drawn; 5 × 3 = 15 3. a. 8 b. 2 × 4 4. a. 4 b. 5 × 4",
+          "sourceCrops": [
+            {
+              "pdfPage": 44,
+              "src": "/source-pages/m1-teacher/page-044.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 407
+              }
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "sourceTextEvidence": "a.",
+          "answerKeyEvidence": "1. a. 4 5. a. 2 rows of 5 drawn b. 2 b. Answers will vary. 2. a. 3 6. 4 rows of 3 drawn; 4 × 3 = 12 b. 6 7. 5 rows of 3 drawn; 5 × 3 = 15 3. a. 8 b. 2 × 4 4. a. 4 b. 5 × 4",
+          "sourceCrops": [
+            {
+              "pdfPage": 44,
+              "src": "/source-pages/m1-teacher/page-044.png",
+              "crop": {
+                "x": 33,
+                "y": 407,
+                "width": 749,
+                "height": 353
+              }
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "sourceTextEvidence": "a.",
+          "answerKeyEvidence": "1. a. 4 5. a. 2 rows of 5 drawn b. 2 b. Answers will vary. 2. a. 3 6. 4 rows of 3 drawn; 4 × 3 = 12 b. 6 7. 5 rows of 3 drawn; 5 × 3 = 15 3. a. 8 b. 2 × 4 4. a. 4 b. 5 × 4",
+          "sourceCrops": [
+            {
+              "pdfPage": 44,
+              "src": "/source-pages/m1-teacher/page-044.png",
+              "crop": {
+                "x": 33,
+                "y": 660,
+                "width": 749,
+                "height": 290
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-295.png",
+        "/source-pages/m1-teacher/page-296.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "There are 5 flowers in each bunch.",
+          "answerKeyEvidence": "1. a. 4; 5 4. 2 b. 20 a. 5; 2 c. 20 b. 5, 2, 10 2. 3 c. 10 a. 6; 3 5. a. 4 × 3 = 12 b. 3, 18 b. Number bond showing 4 units of 3 equals c. 18 12 drawn 3. 3 6. Array showing 2 rows of 3 or 3 rows of 2 a. 3; 4 drawn; number bond drawn depending on the b. 3, 12 array, showing 2 units of 3 equals 6 or 3 units c. 12 of 2 equals 6",
+          "sourceCrops": [
+            {
+              "pdfPage": 56,
+              "src": "/source-pages/m1-teacher/page-056.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 307
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "There are 5 flowers in each bunch.",
+          "answerKeyEvidence": "1. a. 4; 5 4. 2 b. 20 a. 5; 2 c. 20 b. 5, 2, 10 2. 3 c. 10 a. 6; 3 5. a. 4 × 3 = 12 b. 3, 18 b. Number bond showing 4 units of 3 equals c. 18 12 drawn 3. 3 6. Array showing 2 rows of 3 or 3 rows of 2 a. 3; 4 drawn; number bond drawn depending on the b. 3, 12 array, showing 2 units of 3 equals 6 or 3 units c. 12 of 2 equals 6",
+          "sourceCrops": [
+            {
+              "pdfPage": 56,
+              "src": "/source-pages/m1-teacher/page-056.png",
+              "crop": {
+                "x": 33,
+                "y": 307,
+                "width": 749,
+                "height": 333
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "There are 5 flowers in each bunch.",
+          "answerKeyEvidence": "1. a. 4; 5 4. 2 b. 20 a. 5; 2 c. 20 b. 5, 2, 10 2. 3 c. 10 a. 6; 3 5. a. 4 × 3 = 12 b. 3, 18 b. Number bond showing 4 units of 3 equals c. 18 12 drawn 3. 3 6. Array showing 2 rows of 3 or 3 rows of 2 a. 3; 4 drawn; number bond drawn depending on the b. 3, 12 array, showing 2 units of 3 equals 6 or 3 units c. 12 of 2 equals 6",
+          "sourceCrops": [
+            {
+              "pdfPage": 56,
+              "src": "/source-pages/m1-teacher/page-056.png",
+              "crop": {
+                "x": 33,
+                "y": 540,
+                "width": 749,
+                "height": 410
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "There are 5 flowers in each bunch.",
+          "answerKeyEvidence": "1. a. 4; 5 4. 2 b. 20 a. 5; 2 c. 20 b. 5, 2, 10 2. 3 c. 10 a. 6; 3 5. a. 4 × 3 = 12 b. 3, 18 b. Number bond showing 4 units of 3 equals c. 18 12 drawn 3. 3 6. Array showing 2 rows of 3 or 3 rows of 2 a. 3; 4 drawn; number bond drawn depending on the b. 3, 12 array, showing 2 units of 3 equals 6 or 3 units c. 12 of 2 equals 6",
+          "sourceCrops": [
+            {
+              "pdfPage": 57,
+              "src": "/source-pages/m1-teacher/page-057.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 287
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "sourceTextEvidence": "There are 5 flowers in each bunch.",
+          "answerKeyEvidence": "1. a. 4; 5 4. 2 b. 20 a. 5; 2 c. 20 b. 5, 2, 10 2. 3 c. 10 a. 6; 3 5. a. 4 × 3 = 12 b. 3, 18 b. Number bond showing 4 units of 3 equals c. 18 12 drawn 3. 3 6. Array showing 2 rows of 3 or 3 rows of 2 a. 3; 4 drawn; number bond drawn depending on the b. 3, 12 array, showing 2 units of 3 equals 6 or 3 units c. 12 of 2 equals 6",
+          "sourceCrops": [
+            {
+              "pdfPage": 57,
+              "src": "/source-pages/m1-teacher/page-057.png",
+              "crop": {
+                "x": 33,
+                "y": 287,
+                "width": 749,
+                "height": 387
+              }
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "sourceTextEvidence": "There are 5 flowers in each bunch.",
+          "answerKeyEvidence": "1. a. 4; 5 4. 2 b. 20 a. 5; 2 c. 20 b. 5, 2, 10 2. 3 c. 10 a. 6; 3 5. a. 4 × 3 = 12 b. 3, 18 b. Number bond showing 4 units of 3 equals c. 18 12 drawn 3. 3 6. Array showing 2 rows of 3 or 3 rows of 2 a. 3; 4 drawn; number bond drawn depending on the b. 3, 12 array, showing 2 units of 3 equals 6 or 3 units c. 12 of 2 equals 6",
+          "sourceCrops": [
+            {
+              "pdfPage": 57,
+              "src": "/source-pages/m1-teacher/page-057.png",
+              "crop": {
+                "x": 33,
+                "y": 573,
+                "width": 749,
+                "height": 377
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "4": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-297.png",
+        "/source-pages/m1-teacher/page-298.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "2.",
+          "answerKeyEvidence": "1. 7 6. 3 2. 7 7. 6; 6 3. 3; 10 8. Four apples drawn in each basket; 4; 5, 4 4. 12, 2; 6; 6 9. 3; 15, 5, 3 5. 5; 5",
+          "sourceCrops": [
+            {
+              "pdfPage": 70,
+              "src": "/source-pages/m1-teacher/page-070.png",
+              "crop": {
+                "x": 33,
+                "y": 107,
+                "width": 375,
+                "height": 293
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "2.",
+          "answerKeyEvidence": "1. 7 6. 3 2. 7 7. 6; 6 3. 3; 10 8. Four apples drawn in each basket; 4; 5, 4 4. 12, 2; 6; 6 9. 3; 15, 5, 3 5. 5; 5",
+          "sourceCrops": [
+            {
+              "pdfPage": 70,
+              "src": "/source-pages/m1-teacher/page-070.png",
+              "crop": {
+                "x": 408,
+                "y": 107,
+                "width": 375,
+                "height": 293
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "2.",
+          "answerKeyEvidence": "1. 7 6. 3 2. 7 7. 6; 6 3. 3; 10 8. Four apples drawn in each basket; 4; 5, 4 4. 12, 2; 6; 6 9. 3; 15, 5, 3 5. 5; 5",
+          "sourceCrops": [
+            {
+              "pdfPage": 70,
+              "src": "/source-pages/m1-teacher/page-070.png",
+              "crop": {
+                "x": 33,
+                "y": 380,
+                "width": 375,
+                "height": 293
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "2.",
+          "answerKeyEvidence": "1. 7 6. 3 2. 7 7. 6; 6 3. 3; 10 8. Four apples drawn in each basket; 4; 5, 4 4. 12, 2; 6; 6 9. 3; 15, 5, 3 5. 5; 5",
+          "sourceCrops": [
+            {
+              "pdfPage": 70,
+              "src": "/source-pages/m1-teacher/page-070.png",
+              "crop": {
+                "x": 408,
+                "y": 380,
+                "width": 375,
+                "height": 293
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "sourceTextEvidence": "2.",
+          "answerKeyEvidence": "1. 7 6. 3 2. 7 7. 6; 6 3. 3; 10 8. Four apples drawn in each basket; 4; 5, 4 4. 12, 2; 6; 6 9. 3; 15, 5, 3 5. 5; 5",
+          "sourceCrops": [
+            {
+              "pdfPage": 70,
+              "src": "/source-pages/m1-teacher/page-070.png",
+              "crop": {
+                "x": 33,
+                "y": 653,
+                "width": 375,
+                "height": 297
+              }
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "sourceTextEvidence": "2.",
+          "answerKeyEvidence": "1. 7 6. 3 2. 7 7. 6; 6 3. 3; 10 8. Four apples drawn in each basket; 4; 5, 4 4. 12, 2; 6; 6 9. 3; 15, 5, 3 5. 5; 5",
+          "sourceCrops": [
+            {
+              "pdfPage": 70,
+              "src": "/source-pages/m1-teacher/page-070.png",
+              "crop": {
+                "x": 408,
+                "y": 653,
+                "width": 375,
+                "height": 297
+              }
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "sourceTextEvidence": "2.",
+          "answerKeyEvidence": "1. 7 6. 3 2. 7 7. 6; 6 3. 3; 10 8. Four apples drawn in each basket; 4; 5, 4 4. 12, 2; 6; 6 9. 3; 15, 5, 3 5. 5; 5",
+          "sourceCrops": [
+            {
+              "pdfPage": 71,
+              "src": "/source-pages/m1-teacher/page-071.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 313
+              }
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "sourceTextEvidence": "2.",
+          "answerKeyEvidence": "1. 7 6. 3 2. 7 7. 6; 6 3. 3; 10 8. Four apples drawn in each basket; 4; 5, 4 4. 12, 2; 6; 6 9. 3; 15, 5, 3 5. 5; 5",
+          "sourceCrops": [
+            {
+              "pdfPage": 71,
+              "src": "/source-pages/m1-teacher/page-071.png",
+              "crop": {
+                "x": 33,
+                "y": 313,
+                "width": 749,
+                "height": 400
+              }
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "sourceTextEvidence": "2.",
+          "answerKeyEvidence": "1. 7 6. 3 2. 7 7. 6; 6 3. 3; 10 8. Four apples drawn in each basket; 4; 5, 4 4. 12, 2; 6; 6 9. 3; 15, 5, 3 5. 5; 5",
+          "sourceCrops": [
+            {
+              "pdfPage": 71,
+              "src": "/source-pages/m1-teacher/page-071.png",
+              "crop": {
+                "x": 33,
+                "y": 613,
+                "width": 749,
+                "height": 337
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "5": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-299.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "2.",
+          "answerKeyEvidence": "1. 2 2. Four groups of 2 shown; 4; 4 3. Two groups of 5 shown; 2 4. 4 groups of 3 shown; 4; 4 5. Three groups of 3 circled a. 9 ÷ 3 = 3 b. Number bond showing 3 units of 3 equals 9 drawn 6. a. Count-by fours from 4 to 16 written and drawn b. 16 ÷ 4 = 4",
+          "sourceCrops": [
+            {
+              "pdfPage": 80,
+              "src": "/source-pages/m1-teacher/page-080.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 375,
+                "height": 433
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "2.",
+          "answerKeyEvidence": "1. 2 2. Four groups of 2 shown; 4; 4 3. Two groups of 5 shown; 2 4. 4 groups of 3 shown; 4; 4 5. Three groups of 3 circled a. 9 ÷ 3 = 3 b. Number bond showing 3 units of 3 equals 9 drawn 6. a. Count-by fours from 4 to 16 written and drawn b. 16 ÷ 4 = 4",
+          "sourceCrops": [
+            {
+              "pdfPage": 80,
+              "src": "/source-pages/m1-teacher/page-080.png",
+              "crop": {
+                "x": 408,
+                "y": 100,
+                "width": 375,
+                "height": 433
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "2.",
+          "answerKeyEvidence": "1. 2 2. Four groups of 2 shown; 4; 4 3. Two groups of 5 shown; 2 4. 4 groups of 3 shown; 4; 4 5. Three groups of 3 circled a. 9 ÷ 3 = 3 b. Number bond showing 3 units of 3 equals 9 drawn 6. a. Count-by fours from 4 to 16 written and drawn b. 16 ÷ 4 = 4",
+          "sourceCrops": [
+            {
+              "pdfPage": 80,
+              "src": "/source-pages/m1-teacher/page-080.png",
+              "crop": {
+                "x": 33,
+                "y": 513,
+                "width": 375,
+                "height": 437
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "2.",
+          "answerKeyEvidence": "1. 2 2. Four groups of 2 shown; 4; 4 3. Two groups of 5 shown; 2 4. 4 groups of 3 shown; 4; 4 5. Three groups of 3 circled a. 9 ÷ 3 = 3 b. Number bond showing 3 units of 3 equals 9 drawn 6. a. Count-by fours from 4 to 16 written and drawn b. 16 ÷ 4 = 4",
+          "sourceCrops": [
+            {
+              "pdfPage": 80,
+              "src": "/source-pages/m1-teacher/page-080.png",
+              "crop": {
+                "x": 408,
+                "y": 513,
+                "width": 375,
+                "height": 437
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "sourceTextEvidence": "2.",
+          "answerKeyEvidence": "1. 2 2. Four groups of 2 shown; 4; 4 3. Two groups of 5 shown; 2 4. 4 groups of 3 shown; 4; 4 5. Three groups of 3 circled a. 9 ÷ 3 = 3 b. Number bond showing 3 units of 3 equals 9 drawn 6. a. Count-by fours from 4 to 16 written and drawn b. 16 ÷ 4 = 4",
+          "sourceCrops": [
+            {
+              "pdfPage": 81,
+              "src": "/source-pages/m1-teacher/page-081.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 467
+              }
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "sourceTextEvidence": "2.",
+          "answerKeyEvidence": "1. 2 2. Four groups of 2 shown; 4; 4 3. Two groups of 5 shown; 2 4. 4 groups of 3 shown; 4; 4 5. Three groups of 3 circled a. 9 ÷ 3 = 3 b. Number bond showing 3 units of 3 equals 9 drawn 6. a. Count-by fours from 4 to 16 written and drawn b. 16 ÷ 4 = 4",
+          "sourceCrops": [
+            {
+              "pdfPage": 81,
+              "src": "/source-pages/m1-teacher/page-081.png",
+              "crop": {
+                "x": 33,
+                "y": 467,
+                "width": 749,
+                "height": 483
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "6": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-300.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "Rick puts 15 tennis balls into cans.",
+          "answerKeyEvidence": "1. Five groups of 3 circled; 5; 5; 5 2. Five groups of 3 drawn and circled; 3; 3; 3 3. Array of 5 rows of 3 drawn a. 5; 5; the number of groups b. 3; 3; the size of each group 4. 3; 3; the number of groups 5. 3; 3; answers will vary 6. Array of 4 rows of 3 drawn",
+          "sourceCrops": [
+            {
+              "pdfPage": 90,
+              "src": "/source-pages/m1-teacher/page-090.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 287
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "Rick puts 15 tennis balls into cans.",
+          "answerKeyEvidence": "1. Five groups of 3 circled; 5; 5; 5 2. Five groups of 3 drawn and circled; 3; 3; 3 3. Array of 5 rows of 3 drawn a. 5; 5; the number of groups b. 3; 3; the size of each group 4. 3; 3; the number of groups 5. 3; 3; answers will vary 6. Array of 4 rows of 3 drawn",
+          "sourceCrops": [
+            {
+              "pdfPage": 90,
+              "src": "/source-pages/m1-teacher/page-090.png",
+              "crop": {
+                "x": 33,
+                "y": 287,
+                "width": 749,
+                "height": 353
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "Rick puts 15 tennis balls into cans.",
+          "answerKeyEvidence": "1. Five groups of 3 circled; 5; 5; 5 2. Five groups of 3 drawn and circled; 3; 3; 3 3. Array of 5 rows of 3 drawn a. 5; 5; the number of groups b. 3; 3; the size of each group 4. 3; 3; the number of groups 5. 3; 3; answers will vary 6. Array of 4 rows of 3 drawn",
+          "sourceCrops": [
+            {
+              "pdfPage": 90,
+              "src": "/source-pages/m1-teacher/page-090.png",
+              "crop": {
+                "x": 33,
+                "y": 540,
+                "width": 749,
+                "height": 410
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "Rick puts 15 tennis balls into cans.",
+          "answerKeyEvidence": "1. Five groups of 3 circled; 5; 5; 5 2. Five groups of 3 drawn and circled; 3; 3; 3 3. Array of 5 rows of 3 drawn a. 5; 5; the number of groups b. 3; 3; the size of each group 4. 3; 3; the number of groups 5. 3; 3; answers will vary 6. Array of 4 rows of 3 drawn",
+          "sourceCrops": [
+            {
+              "pdfPage": 91,
+              "src": "/source-pages/m1-teacher/page-091.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 313
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "sourceTextEvidence": "Rick puts 15 tennis balls into cans.",
+          "answerKeyEvidence": "1. Five groups of 3 circled; 5; 5; 5 2. Five groups of 3 drawn and circled; 3; 3; 3 3. Array of 5 rows of 3 drawn a. 5; 5; the number of groups b. 3; 3; the size of each group 4. 3; 3; the number of groups 5. 3; 3; answers will vary 6. Array of 4 rows of 3 drawn",
+          "sourceCrops": [
+            {
+              "pdfPage": 91,
+              "src": "/source-pages/m1-teacher/page-091.png",
+              "crop": {
+                "x": 33,
+                "y": 313,
+                "width": 749,
+                "height": 393
+              }
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "sourceTextEvidence": "Rick puts 15 tennis balls into cans.",
+          "answerKeyEvidence": "1. Five groups of 3 circled; 5; 5; 5 2. Five groups of 3 drawn and circled; 3; 3; 3 3. Array of 5 rows of 3 drawn a. 5; 5; the number of groups b. 3; 3; the size of each group 4. 3; 3; the number of groups 5. 3; 3; answers will vary 6. Array of 4 rows of 3 drawn",
+          "sourceCrops": [
+            {
+              "pdfPage": 91,
+              "src": "/source-pages/m1-teacher/page-091.png",
+              "crop": {
+                "x": 33,
+                "y": 607,
+                "width": 749,
+                "height": 343
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "7": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-301.png",
+        "/source-pages/m1-teacher/page-302.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "a.",
+          "answerKeyEvidence": "1. a. Array of 6 rows of 2 drawn b. 6, 2, 12 2. a. Array of 2 rows of 6 drawn b. 2, 6, 12 3. a. Same array in Problem 1 turned on its side in Problem 2 b. The meaning of the factors switched; 2 represents size of each group, and 6 represents number of groups in Problem 1; 2 represents number of groups, and 6 represents size of each group in Problem 2 4. a. Answer provided b. 2 × 6 = 12 c. 7 × 2 = 14 d. 2 × 7 = 14 e. 9 × 2 = 18 f. 2 × 9 = 18 g. 11 × 2 = 22 h. 2 × 12 = 24 5. 4 × 2 = 8; 2 × 4 = 8 6. Agree; array of 7 rows of 2 and array of 2 rows of 7 drawn 7. 5; 2; 10; 9 8. a. Array of 2 rows of 6 drawn b. 2 × 6 = 12 c. 6 × 2 = 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 103,
+              "src": "/source-pages/m1-teacher/page-103.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 375,
+                "height": 400
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "a.",
+          "answerKeyEvidence": "1. a. Array of 6 rows of 2 drawn b. 6, 2, 12 2. a. Array of 2 rows of 6 drawn b. 2, 6, 12 3. a. Same array in Problem 1 turned on its side in Problem 2 b. The meaning of the factors switched; 2 represents size of each group, and 6 represents number of groups in Problem 1; 2 represents number of groups, and 6 represents size of each group in Problem 2 4. a. Answer provided b. 2 × 6 = 12 c. 7 × 2 = 14 d. 2 × 7 = 14 e. 9 × 2 = 18 f. 2 × 9 = 18 g. 11 × 2 = 22 h. 2 × 12 = 24 5. 4 × 2 = 8; 2 × 4 = 8 6. Agree; array of 7 rows of 2 and array of 2 rows of 7 drawn 7. 5; 2; 10; 9 8. a. Array of 2 rows of 6 drawn b. 2 × 6 = 12 c. 6 × 2 = 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 103,
+              "src": "/source-pages/m1-teacher/page-103.png",
+              "crop": {
+                "x": 408,
+                "y": 100,
+                "width": 375,
+                "height": 400
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "a.",
+          "answerKeyEvidence": "1. a. Array of 6 rows of 2 drawn b. 6, 2, 12 2. a. Array of 2 rows of 6 drawn b. 2, 6, 12 3. a. Same array in Problem 1 turned on its side in Problem 2 b. The meaning of the factors switched; 2 represents size of each group, and 6 represents number of groups in Problem 1; 2 represents number of groups, and 6 represents size of each group in Problem 2 4. a. Answer provided b. 2 × 6 = 12 c. 7 × 2 = 14 d. 2 × 7 = 14 e. 9 × 2 = 18 f. 2 × 9 = 18 g. 11 × 2 = 22 h. 2 × 12 = 24 5. 4 × 2 = 8; 2 × 4 = 8 6. Agree; array of 7 rows of 2 and array of 2 rows of 7 drawn 7. 5; 2; 10; 9 8. a. Array of 2 rows of 6 drawn b. 2 × 6 = 12 c. 6 × 2 = 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 103,
+              "src": "/source-pages/m1-teacher/page-103.png",
+              "crop": {
+                "x": 33,
+                "y": 480,
+                "width": 749,
+                "height": 220
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "a.",
+          "answerKeyEvidence": "1. a. Array of 6 rows of 2 drawn b. 6, 2, 12 2. a. Array of 2 rows of 6 drawn b. 2, 6, 12 3. a. Same array in Problem 1 turned on its side in Problem 2 b. The meaning of the factors switched; 2 represents size of each group, and 6 represents number of groups in Problem 1; 2 represents number of groups, and 6 represents size of each group in Problem 2 4. a. Answer provided b. 2 × 6 = 12 c. 7 × 2 = 14 d. 2 × 7 = 14 e. 9 × 2 = 18 f. 2 × 9 = 18 g. 11 × 2 = 22 h. 2 × 12 = 24 5. 4 × 2 = 8; 2 × 4 = 8 6. Agree; array of 7 rows of 2 and array of 2 rows of 7 drawn 7. 5; 2; 10; 9 8. a. Array of 2 rows of 6 drawn b. 2 × 6 = 12 c. 6 × 2 = 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 103,
+              "src": "/source-pages/m1-teacher/page-103.png",
+              "crop": {
+                "x": 33,
+                "y": 680,
+                "width": 749,
+                "height": 270
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "sourceTextEvidence": "a.",
+          "answerKeyEvidence": "1. a. Array of 6 rows of 2 drawn b. 6, 2, 12 2. a. Array of 2 rows of 6 drawn b. 2, 6, 12 3. a. Same array in Problem 1 turned on its side in Problem 2 b. The meaning of the factors switched; 2 represents size of each group, and 6 represents number of groups in Problem 1; 2 represents number of groups, and 6 represents size of each group in Problem 2 4. a. Answer provided b. 2 × 6 = 12 c. 7 × 2 = 14 d. 2 × 7 = 14 e. 9 × 2 = 18 f. 2 × 9 = 18 g. 11 × 2 = 22 h. 2 × 12 = 24 5. 4 × 2 = 8; 2 × 4 = 8 6. Agree; array of 7 rows of 2 and array of 2 rows of 7 drawn 7. 5; 2; 10; 9 8. a. Array of 2 rows of 6 drawn b. 2 × 6 = 12 c. 6 × 2 = 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 104,
+              "src": "/source-pages/m1-teacher/page-104.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 253
+              }
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "sourceTextEvidence": "a.",
+          "answerKeyEvidence": "1. a. Array of 6 rows of 2 drawn b. 6, 2, 12 2. a. Array of 2 rows of 6 drawn b. 2, 6, 12 3. a. Same array in Problem 1 turned on its side in Problem 2 b. The meaning of the factors switched; 2 represents size of each group, and 6 represents number of groups in Problem 1; 2 represents number of groups, and 6 represents size of each group in Problem 2 4. a. Answer provided b. 2 × 6 = 12 c. 7 × 2 = 14 d. 2 × 7 = 14 e. 9 × 2 = 18 f. 2 × 9 = 18 g. 11 × 2 = 22 h. 2 × 12 = 24 5. 4 × 2 = 8; 2 × 4 = 8 6. Agree; array of 7 rows of 2 and array of 2 rows of 7 drawn 7. 5; 2; 10; 9 8. a. Array of 2 rows of 6 drawn b. 2 × 6 = 12 c. 6 × 2 = 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 104,
+              "src": "/source-pages/m1-teacher/page-104.png",
+              "crop": {
+                "x": 33,
+                "y": 253,
+                "width": 749,
+                "height": 293
+              }
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "sourceTextEvidence": "a.",
+          "answerKeyEvidence": "1. a. Array of 6 rows of 2 drawn b. 6, 2, 12 2. a. Array of 2 rows of 6 drawn b. 2, 6, 12 3. a. Same array in Problem 1 turned on its side in Problem 2 b. The meaning of the factors switched; 2 represents size of each group, and 6 represents number of groups in Problem 1; 2 represents number of groups, and 6 represents size of each group in Problem 2 4. a. Answer provided b. 2 × 6 = 12 c. 7 × 2 = 14 d. 2 × 7 = 14 e. 9 × 2 = 18 f. 2 × 9 = 18 g. 11 × 2 = 22 h. 2 × 12 = 24 5. 4 × 2 = 8; 2 × 4 = 8 6. Agree; array of 7 rows of 2 and array of 2 rows of 7 drawn 7. 5; 2; 10; 9 8. a. Array of 2 rows of 6 drawn b. 2 × 6 = 12 c. 6 × 2 = 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 104,
+              "src": "/source-pages/m1-teacher/page-104.png",
+              "crop": {
+                "x": 33,
+                "y": 447,
+                "width": 749,
+                "height": 320
+              }
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "sourceTextEvidence": "a.",
+          "answerKeyEvidence": "1. a. Array of 6 rows of 2 drawn b. 6, 2, 12 2. a. Array of 2 rows of 6 drawn b. 2, 6, 12 3. a. Same array in Problem 1 turned on its side in Problem 2 b. The meaning of the factors switched; 2 represents size of each group, and 6 represents number of groups in Problem 1; 2 represents number of groups, and 6 represents size of each group in Problem 2 4. a. Answer provided b. 2 × 6 = 12 c. 7 × 2 = 14 d. 2 × 7 = 14 e. 9 × 2 = 18 f. 2 × 9 = 18 g. 11 × 2 = 22 h. 2 × 12 = 24 5. 4 × 2 = 8; 2 × 4 = 8 6. Agree; array of 7 rows of 2 and array of 2 rows of 7 drawn 7. 5; 2; 10; 9 8. a. Array of 2 rows of 6 drawn b. 2 × 6 = 12 c. 6 × 2 = 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 104,
+              "src": "/source-pages/m1-teacher/page-104.png",
+              "crop": {
+                "x": 33,
+                "y": 667,
+                "width": 749,
+                "height": 283
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "8": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-303.png",
+        "/source-pages/m1-teacher/page-304.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "Draw an array that shows 5 rows of 3.",
+          "answerKeyEvidence": "1. Array of 5 rows of 3 drawn 5. a. 15, matched with Part (e), 15 2. Array of 3 rows of 5 drawn b. 27, matched with Part (f), 3 3. 5; 3; 3; 5 c. 24, matched with Part (d), 24 4. a. Answer provided 6. a. Array of 7 rows of 3 drawn b. 3×2=6 b. 7 × 3 = 21; Isaac picks 21 tangerines in 7 days. c. 3 × 4 = 12 c. 3 rows of 3 x’s added to array in Part (a) d. 4 × 3 = 12 d. 10 × 3 = 30 e. 3 × 7 = 21 7. a. 3, $2, 6 f. 7 × 3 = 21 b. 6, $2, 12 g. 3 × 9 = 27 h. 9 × 3 = 27 i. 10 × 3 = 30",
+          "sourceCrops": [
+            {
+              "pdfPage": 114,
+              "src": "/source-pages/m1-teacher/page-114.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 375,
+                "height": 353
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "Draw an array that shows 5 rows of 3.",
+          "answerKeyEvidence": "1. Array of 5 rows of 3 drawn 5. a. 15, matched with Part (e), 15 2. Array of 3 rows of 5 drawn b. 27, matched with Part (f), 3 3. 5; 3; 3; 5 c. 24, matched with Part (d), 24 4. a. Answer provided 6. a. Array of 7 rows of 3 drawn b. 3×2=6 b. 7 × 3 = 21; Isaac picks 21 tangerines in 7 days. c. 3 × 4 = 12 c. 3 rows of 3 x’s added to array in Part (a) d. 4 × 3 = 12 d. 10 × 3 = 30 e. 3 × 7 = 21 7. a. 3, $2, 6 f. 7 × 3 = 21 b. 6, $2, 12 g. 3 × 9 = 27 h. 9 × 3 = 27 i. 10 × 3 = 30",
+          "sourceCrops": [
+            {
+              "pdfPage": 114,
+              "src": "/source-pages/m1-teacher/page-114.png",
+              "crop": {
+                "x": 408,
+                "y": 100,
+                "width": 375,
+                "height": 353
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "Draw an array that shows 5 rows of 3.",
+          "answerKeyEvidence": "1. Array of 5 rows of 3 drawn 5. a. 15, matched with Part (e), 15 2. Array of 3 rows of 5 drawn b. 27, matched with Part (f), 3 3. 5; 3; 3; 5 c. 24, matched with Part (d), 24 4. a. Answer provided 6. a. Array of 7 rows of 3 drawn b. 3×2=6 b. 7 × 3 = 21; Isaac picks 21 tangerines in 7 days. c. 3 × 4 = 12 c. 3 rows of 3 x’s added to array in Part (a) d. 4 × 3 = 12 d. 10 × 3 = 30 e. 3 × 7 = 21 7. a. 3, $2, 6 f. 7 × 3 = 21 b. 6, $2, 12 g. 3 × 9 = 27 h. 9 × 3 = 27 i. 10 × 3 = 30",
+          "sourceCrops": [
+            {
+              "pdfPage": 114,
+              "src": "/source-pages/m1-teacher/page-114.png",
+              "crop": {
+                "x": 33,
+                "y": 320,
+                "width": 749,
+                "height": 293
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "Draw an array that shows 5 rows of 3.",
+          "answerKeyEvidence": "1. Array of 5 rows of 3 drawn 5. a. 15, matched with Part (e), 15 2. Array of 3 rows of 5 drawn b. 27, matched with Part (f), 3 3. 5; 3; 3; 5 c. 24, matched with Part (d), 24 4. a. Answer provided 6. a. Array of 7 rows of 3 drawn b. 3×2=6 b. 7 × 3 = 21; Isaac picks 21 tangerines in 7 days. c. 3 × 4 = 12 c. 3 rows of 3 x’s added to array in Part (a) d. 4 × 3 = 12 d. 10 × 3 = 30 e. 3 × 7 = 21 7. a. 3, $2, 6 f. 7 × 3 = 21 b. 6, $2, 12 g. 3 × 9 = 27 h. 9 × 3 = 27 i. 10 × 3 = 30",
+          "sourceCrops": [
+            {
+              "pdfPage": 114,
+              "src": "/source-pages/m1-teacher/page-114.png",
+              "crop": {
+                "x": 33,
+                "y": 467,
+                "width": 749,
+                "height": 327
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "sourceTextEvidence": "Draw an array that shows 5 rows of 3.",
+          "answerKeyEvidence": "1. Array of 5 rows of 3 drawn 5. a. 15, matched with Part (e), 15 2. Array of 3 rows of 5 drawn b. 27, matched with Part (f), 3 3. 5; 3; 3; 5 c. 24, matched with Part (d), 24 4. a. Answer provided 6. a. Array of 7 rows of 3 drawn b. 3×2=6 b. 7 × 3 = 21; Isaac picks 21 tangerines in 7 days. c. 3 × 4 = 12 c. 3 rows of 3 x’s added to array in Part (a) d. 4 × 3 = 12 d. 10 × 3 = 30 e. 3 × 7 = 21 7. a. 3, $2, 6 f. 7 × 3 = 21 b. 6, $2, 12 g. 3 × 9 = 27 h. 9 × 3 = 27 i. 10 × 3 = 30",
+          "sourceCrops": [
+            {
+              "pdfPage": 114,
+              "src": "/source-pages/m1-teacher/page-114.png",
+              "crop": {
+                "x": 33,
+                "y": 673,
+                "width": 749,
+                "height": 277
+              }
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "sourceTextEvidence": "Draw an array that shows 5 rows of 3.",
+          "answerKeyEvidence": "1. Array of 5 rows of 3 drawn 5. a. 15, matched with Part (e), 15 2. Array of 3 rows of 5 drawn b. 27, matched with Part (f), 3 3. 5; 3; 3; 5 c. 24, matched with Part (d), 24 4. a. Answer provided 6. a. Array of 7 rows of 3 drawn b. 3×2=6 b. 7 × 3 = 21; Isaac picks 21 tangerines in 7 days. c. 3 × 4 = 12 c. 3 rows of 3 x’s added to array in Part (a) d. 4 × 3 = 12 d. 10 × 3 = 30 e. 3 × 7 = 21 7. a. 3, $2, 6 f. 7 × 3 = 21 b. 6, $2, 12 g. 3 × 9 = 27 h. 9 × 3 = 27 i. 10 × 3 = 30",
+          "sourceCrops": [
+            {
+              "pdfPage": 115,
+              "src": "/source-pages/m1-teacher/page-115.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 587
+              }
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "sourceTextEvidence": "Draw an array that shows 5 rows of 3.",
+          "answerKeyEvidence": "1. Array of 5 rows of 3 drawn 5. a. 15, matched with Part (e), 15 2. Array of 3 rows of 5 drawn b. 27, matched with Part (f), 3 3. 5; 3; 3; 5 c. 24, matched with Part (d), 24 4. a. Answer provided 6. a. Array of 7 rows of 3 drawn b. 3×2=6 b. 7 × 3 = 21; Isaac picks 21 tangerines in 7 days. c. 3 × 4 = 12 c. 3 rows of 3 x’s added to array in Part (a) d. 4 × 3 = 12 d. 10 × 3 = 30 e. 3 × 7 = 21 7. a. 3, $2, 6 f. 7 × 3 = 21 b. 6, $2, 12 g. 3 × 9 = 27 h. 9 × 3 = 27 i. 10 × 3 = 30",
+          "sourceCrops": [
+            {
+              "pdfPage": 115,
+              "src": "/source-pages/m1-teacher/page-115.png",
+              "crop": {
+                "x": 33,
+                "y": 587,
+                "width": 749,
+                "height": 363
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "9": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-305.png",
+        "/source-pages/m1-teacher/page-306.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "The team organizes soccer balls into 2 rows of 5.",
+          "answerKeyEvidence": "1. a. 25 4. a. Array of 4 rows of 3 x’s drawn b. 3, 5 b. 12 c. 5, 25 5. 2 rows of 3 circles added to array in Problem 4(a) 2. 14; 10; 4; 14; 7 a. 2, 6 3. 18; 20; 2; 2; 18 b. 12, 6 c. 6, 3",
+          "sourceCrops": [
+            {
+              "pdfPage": 125,
+              "src": "/source-pages/m1-teacher/page-125.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 273
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "The team organizes soccer balls into 2 rows of 5.",
+          "answerKeyEvidence": "1. a. 25 4. a. Array of 4 rows of 3 x’s drawn b. 3, 5 b. 12 c. 5, 25 5. 2 rows of 3 circles added to array in Problem 4(a) 2. 14; 10; 4; 14; 7 a. 2, 6 3. 18; 20; 2; 2; 18 b. 12, 6 c. 6, 3",
+          "sourceCrops": [
+            {
+              "pdfPage": 125,
+              "src": "/source-pages/m1-teacher/page-125.png",
+              "crop": {
+                "x": 33,
+                "y": 353,
+                "width": 375,
+                "height": 597
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "The team organizes soccer balls into 2 rows of 5.",
+          "answerKeyEvidence": "1. a. 25 4. a. Array of 4 rows of 3 x’s drawn b. 3, 5 b. 12 c. 5, 25 5. 2 rows of 3 circles added to array in Problem 4(a) 2. 14; 10; 4; 14; 7 a. 2, 6 3. 18; 20; 2; 2; 18 b. 12, 6 c. 6, 3",
+          "sourceCrops": [
+            {
+              "pdfPage": 125,
+              "src": "/source-pages/m1-teacher/page-125.png",
+              "crop": {
+                "x": 408,
+                "y": 353,
+                "width": 375,
+                "height": 597
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "The team organizes soccer balls into 2 rows of 5.",
+          "answerKeyEvidence": "1. a. 25 4. a. Array of 4 rows of 3 x’s drawn b. 3, 5 b. 12 c. 5, 25 5. 2 rows of 3 circles added to array in Problem 4(a) 2. 14; 10; 4; 14; 7 a. 2, 6 3. 18; 20; 2; 2; 18 b. 12, 6 c. 6, 3",
+          "sourceCrops": [
+            {
+              "pdfPage": 126,
+              "src": "/source-pages/m1-teacher/page-126.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 420
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "sourceTextEvidence": "The team organizes soccer balls into 2 rows of 5.",
+          "answerKeyEvidence": "1. a. 25 4. a. Array of 4 rows of 3 x’s drawn b. 3, 5 b. 12 c. 5, 25 5. 2 rows of 3 circles added to array in Problem 4(a) 2. 14; 10; 4; 14; 7 a. 2, 6 3. 18; 20; 2; 2; 18 b. 12, 6 c. 6, 3",
+          "sourceCrops": [
+            {
+              "pdfPage": 126,
+              "src": "/source-pages/m1-teacher/page-126.png",
+              "crop": {
+                "x": 33,
+                "y": 420,
+                "width": 749,
+                "height": 530
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "10": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-307.png",
+        "/source-pages/m1-teacher/page-308.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "7 × 3 = (5 × 3) + (2 × 3) = ____",
+          "answerKeyEvidence": "1. 21; 6; 6; 6, 21 2. 24; 4, 12; 4, 12; 12, 12; 8, 24 3. a. Array of 2 rows of 3 shown in upper album, 2; array of 3 rows of 3 shown in lower album, 3 b. 5 × 3 broken into two smaller facts: 2 × 3 = 6 and 3 × 3= 9; answers of two smaller facts added: 6 + 9; 5 × 3 = 6 + 9 = 15",
+          "sourceCrops": [
+            {
+              "pdfPage": 137,
+              "src": "/source-pages/m1-teacher/page-137.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 375,
+                "height": 850
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "7 × 3 = (5 × 3) + (2 × 3) = ____",
+          "answerKeyEvidence": "1. 21; 6; 6; 6, 21 2. 24; 4, 12; 4, 12; 12, 12; 8, 24 3. a. Array of 2 rows of 3 shown in upper album, 2; array of 3 rows of 3 shown in lower album, 3 b. 5 × 3 broken into two smaller facts: 2 × 3 = 6 and 3 × 3= 9; answers of two smaller facts added: 6 + 9; 5 × 3 = 6 + 9 = 15",
+          "sourceCrops": [
+            {
+              "pdfPage": 137,
+              "src": "/source-pages/m1-teacher/page-137.png",
+              "crop": {
+                "x": 408,
+                "y": 100,
+                "width": 375,
+                "height": 850
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "7 × 3 = (5 × 3) + (2 × 3) = ____",
+          "answerKeyEvidence": "1. 21; 6; 6; 6, 21 2. 24; 4, 12; 4, 12; 12, 12; 8, 24 3. a. Array of 2 rows of 3 shown in upper album, 2; array of 3 rows of 3 shown in lower album, 3 b. 5 × 3 broken into two smaller facts: 2 × 3 = 6 and 3 × 3= 9; answers of two smaller facts added: 6 + 9; 5 × 3 = 6 + 9 = 15",
+          "sourceCrops": [
+            {
+              "pdfPage": 138,
+              "src": "/source-pages/m1-teacher/page-138.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 850
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "11": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-309.png",
+        "/source-pages/m1-teacher/page-310.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "Mrs.",
+          "answerKeyEvidence": "1. a. Array drawn showing 2 columns of 6; 12, 6 b. 2 oranges drawn in each unit; unit labeled 2 oranges; whole labeled 12 oranges and/or ? bags 2. 3; array drawn showing 6 columns of 3; tape diagram drawn showing 6 groups of 3 is 18 3. 2; array drawn showing 7 columns of 2; tape diagram drawn showing 7 groups of 2 is 14 4. 3; array drawn showing 8 columns of 3; tape diagram drawn showing 8 groups of 3 is 24 5. 8",
+          "sourceCrops": [
+            {
+              "pdfPage": 157,
+              "src": "/source-pages/m1-teacher/page-157.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 567
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "Mrs.",
+          "answerKeyEvidence": "1. a. Array drawn showing 2 columns of 6; 12, 6 b. 2 oranges drawn in each unit; unit labeled 2 oranges; whole labeled 12 oranges and/or ? bags 2. 3; array drawn showing 6 columns of 3; tape diagram drawn showing 6 groups of 3 is 18 3. 2; array drawn showing 7 columns of 2; tape diagram drawn showing 7 groups of 2 is 14 4. 3; array drawn showing 8 columns of 3; tape diagram drawn showing 8 groups of 3 is 24 5. 8",
+          "sourceCrops": [
+            {
+              "pdfPage": 157,
+              "src": "/source-pages/m1-teacher/page-157.png",
+              "crop": {
+                "x": 33,
+                "y": 567,
+                "width": 749,
+                "height": 383
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "Mrs.",
+          "answerKeyEvidence": "1. a. Array drawn showing 2 columns of 6; 12, 6 b. 2 oranges drawn in each unit; unit labeled 2 oranges; whole labeled 12 oranges and/or ? bags 2. 3; array drawn showing 6 columns of 3; tape diagram drawn showing 6 groups of 3 is 18 3. 2; array drawn showing 7 columns of 2; tape diagram drawn showing 7 groups of 2 is 14 4. 3; array drawn showing 8 columns of 3; tape diagram drawn showing 8 groups of 3 is 24 5. 8",
+          "sourceCrops": [
+            {
+              "pdfPage": 158,
+              "src": "/source-pages/m1-teacher/page-158.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 360
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "Mrs.",
+          "answerKeyEvidence": "1. a. Array drawn showing 2 columns of 6; 12, 6 b. 2 oranges drawn in each unit; unit labeled 2 oranges; whole labeled 12 oranges and/or ? bags 2. 3; array drawn showing 6 columns of 3; tape diagram drawn showing 6 groups of 3 is 18 3. 2; array drawn showing 7 columns of 2; tape diagram drawn showing 7 groups of 2 is 14 4. 3; array drawn showing 8 columns of 3; tape diagram drawn showing 8 groups of 3 is 24 5. 8",
+          "sourceCrops": [
+            {
+              "pdfPage": 158,
+              "src": "/source-pages/m1-teacher/page-158.png",
+              "crop": {
+                "x": 33,
+                "y": 360,
+                "width": 749,
+                "height": 373
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "sourceTextEvidence": "Mrs.",
+          "answerKeyEvidence": "1. a. Array drawn showing 2 columns of 6; 12, 6 b. 2 oranges drawn in each unit; unit labeled 2 oranges; whole labeled 12 oranges and/or ? bags 2. 3; array drawn showing 6 columns of 3; tape diagram drawn showing 6 groups of 3 is 18 3. 2; array drawn showing 7 columns of 2; tape diagram drawn showing 7 groups of 2 is 14 4. 3; array drawn showing 8 columns of 3; tape diagram drawn showing 8 groups of 3 is 24 5. 8",
+          "sourceCrops": [
+            {
+              "pdfPage": 158,
+              "src": "/source-pages/m1-teacher/page-158.png",
+              "crop": {
+                "x": 33,
+                "y": 633,
+                "width": 749,
+                "height": 317
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "12": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-311.png",
+        "/source-pages/m1-teacher/page-312.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "There are 8 birds at the pet store.",
+          "answerKeyEvidence": "1. 4 groups of 2 birds circled; 4; 4 4. 7; labels will vary. 2. 2 fish drawn in each bowl; 2; 2; 2 5. 6 3. First rabbit matched to 5 6. $9 Second rabbit matched to 8 Third rabbit matched to 9 Fourth rabbit matched to 7 Fifth rabbit matched to 6",
+          "sourceCrops": [
+            {
+              "pdfPage": 169,
+              "src": "/source-pages/m1-teacher/page-169.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 300
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "There are 8 birds at the pet store.",
+          "answerKeyEvidence": "1. 4 groups of 2 birds circled; 4; 4 4. 7; labels will vary. 2. 2 fish drawn in each bowl; 2; 2; 2 5. 6 3. First rabbit matched to 5 6. $9 Second rabbit matched to 8 Third rabbit matched to 9 Fourth rabbit matched to 7 Fifth rabbit matched to 6",
+          "sourceCrops": [
+            {
+              "pdfPage": 169,
+              "src": "/source-pages/m1-teacher/page-169.png",
+              "crop": {
+                "x": 33,
+                "y": 300,
+                "width": 749,
+                "height": 340
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "There are 8 birds at the pet store.",
+          "answerKeyEvidence": "1. 4 groups of 2 birds circled; 4; 4 4. 7; labels will vary. 2. 2 fish drawn in each bowl; 2; 2; 2 5. 6 3. First rabbit matched to 5 6. $9 Second rabbit matched to 8 Third rabbit matched to 9 Fourth rabbit matched to 7 Fifth rabbit matched to 6",
+          "sourceCrops": [
+            {
+              "pdfPage": 169,
+              "src": "/source-pages/m1-teacher/page-169.png",
+              "crop": {
+                "x": 33,
+                "y": 540,
+                "width": 749,
+                "height": 410
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "There are 8 birds at the pet store.",
+          "answerKeyEvidence": "1. 4 groups of 2 birds circled; 4; 4 4. 7; labels will vary. 2. 2 fish drawn in each bowl; 2; 2; 2 5. 6 3. First rabbit matched to 5 6. $9 Second rabbit matched to 8 Third rabbit matched to 9 Fourth rabbit matched to 7 Fifth rabbit matched to 6",
+          "sourceCrops": [
+            {
+              "pdfPage": 170,
+              "src": "/source-pages/m1-teacher/page-170.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 440
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "sourceTextEvidence": "There are 8 birds at the pet store.",
+          "answerKeyEvidence": "1. 4 groups of 2 birds circled; 4; 4 4. 7; labels will vary. 2. 2 fish drawn in each bowl; 2; 2; 2 5. 6 3. First rabbit matched to 5 6. $9 Second rabbit matched to 8 Third rabbit matched to 9 Fourth rabbit matched to 7 Fifth rabbit matched to 6",
+          "sourceCrops": [
+            {
+              "pdfPage": 170,
+              "src": "/source-pages/m1-teacher/page-170.png",
+              "crop": {
+                "x": 33,
+                "y": 440,
+                "width": 749,
+                "height": 327
+              }
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "sourceTextEvidence": "There are 8 birds at the pet store.",
+          "answerKeyEvidence": "1. 4 groups of 2 birds circled; 4; 4 4. 7; labels will vary. 2. 2 fish drawn in each bowl; 2; 2; 2 5. 6 3. First rabbit matched to 5 6. $9 Second rabbit matched to 8 Third rabbit matched to 9 Fourth rabbit matched to 7 Fifth rabbit matched to 6",
+          "sourceCrops": [
+            {
+              "pdfPage": 170,
+              "src": "/source-pages/m1-teacher/page-170.png",
+              "crop": {
+                "x": 33,
+                "y": 667,
+                "width": 749,
+                "height": 283
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "13": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-313.png",
+        "/source-pages/m1-teacher/page-314.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "Fill in the blanks to make true number sentences.",
+          "answerKeyEvidence": "1. Top row: 1; 2; 9; 12, 12; 15, 15 Bottom row: 18, 18; 21, 21; 24, 24; 27, 27; 30, 30 2. a. 4 groups of 3 circled; skip-count written as 3, 6, 9, 12 b. Tape diagram drawn and labeled to represent problem; 12, 4; 4 3. 5; tape diagram drawn and labeled to represent problem 4. 10 5. 8",
+          "sourceCrops": [
+            {
+              "pdfPage": 181,
+              "src": "/source-pages/m1-teacher/page-181.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 447
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "Fill in the blanks to make true number sentences.",
+          "answerKeyEvidence": "1. Top row: 1; 2; 9; 12, 12; 15, 15 Bottom row: 18, 18; 21, 21; 24, 24; 27, 27; 30, 30 2. a. 4 groups of 3 circled; skip-count written as 3, 6, 9, 12 b. Tape diagram drawn and labeled to represent problem; 12, 4; 4 3. 5; tape diagram drawn and labeled to represent problem 4. 10 5. 8",
+          "sourceCrops": [
+            {
+              "pdfPage": 181,
+              "src": "/source-pages/m1-teacher/page-181.png",
+              "crop": {
+                "x": 33,
+                "y": 447,
+                "width": 749,
+                "height": 503
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "Fill in the blanks to make true number sentences.",
+          "answerKeyEvidence": "1. Top row: 1; 2; 9; 12, 12; 15, 15 Bottom row: 18, 18; 21, 21; 24, 24; 27, 27; 30, 30 2. a. 4 groups of 3 circled; skip-count written as 3, 6, 9, 12 b. Tape diagram drawn and labeled to represent problem; 12, 4; 4 3. 5; tape diagram drawn and labeled to represent problem 4. 10 5. 8",
+          "sourceCrops": [
+            {
+              "pdfPage": 182,
+              "src": "/source-pages/m1-teacher/page-182.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 400
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "Fill in the blanks to make true number sentences.",
+          "answerKeyEvidence": "1. Top row: 1; 2; 9; 12, 12; 15, 15 Bottom row: 18, 18; 21, 21; 24, 24; 27, 27; 30, 30 2. a. 4 groups of 3 circled; skip-count written as 3, 6, 9, 12 b. Tape diagram drawn and labeled to represent problem; 12, 4; 4 3. 5; tape diagram drawn and labeled to represent problem 4. 10 5. 8",
+          "sourceCrops": [
+            {
+              "pdfPage": 182,
+              "src": "/source-pages/m1-teacher/page-182.png",
+              "crop": {
+                "x": 33,
+                "y": 400,
+                "width": 749,
+                "height": 340
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "sourceTextEvidence": "Fill in the blanks to make true number sentences.",
+          "answerKeyEvidence": "1. Top row: 1; 2; 9; 12, 12; 15, 15 Bottom row: 18, 18; 21, 21; 24, 24; 27, 27; 30, 30 2. a. 4 groups of 3 circled; skip-count written as 3, 6, 9, 12 b. Tape diagram drawn and labeled to represent problem; 12, 4; 4 3. 5; tape diagram drawn and labeled to represent problem 4. 10 5. 8",
+          "sourceCrops": [
+            {
+              "pdfPage": 182,
+              "src": "/source-pages/m1-teacher/page-182.png",
+              "crop": {
+                "x": 33,
+                "y": 640,
+                "width": 749,
+                "height": 310
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "14": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-315.png",
+        "/source-pages/m1-teacher/page-316.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "Skip-count by fours.",
+          "answerKeyEvidence": "1. 12, 16, 20, 24, 28, 32, 36, 40 Answer provided; 8 matched to 2 × 4; 12 matched to 3 × 4; 16 matched to 4 × 4; 20 matched to 5 × 4; 24 matched to 6 × 4; 28 matched to 7 × 4; 32 matched to 8 × 4; 36 matched to 9 × 4; 40 matched to 10 × 4 2. Tape diagram drawn and labeled to represent problem; 28 3. Tape diagram drawn and labeled to show 24 beads used 4. 20",
+          "sourceCrops": [
+            {
+              "pdfPage": 194,
+              "src": "/source-pages/m1-teacher/page-194.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 850
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "Skip-count by fours.",
+          "answerKeyEvidence": "1. 12, 16, 20, 24, 28, 32, 36, 40 Answer provided; 8 matched to 2 × 4; 12 matched to 3 × 4; 16 matched to 4 × 4; 20 matched to 5 × 4; 24 matched to 6 × 4; 28 matched to 7 × 4; 32 matched to 8 × 4; 36 matched to 9 × 4; 40 matched to 10 × 4 2. Tape diagram drawn and labeled to represent problem; 28 3. Tape diagram drawn and labeled to show 24 beads used 4. 20",
+          "sourceCrops": [
+            {
+              "pdfPage": 195,
+              "src": "/source-pages/m1-teacher/page-195.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 353
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "Skip-count by fours.",
+          "answerKeyEvidence": "1. 12, 16, 20, 24, 28, 32, 36, 40 Answer provided; 8 matched to 2 × 4; 12 matched to 3 × 4; 16 matched to 4 × 4; 20 matched to 5 × 4; 24 matched to 6 × 4; 28 matched to 7 × 4; 32 matched to 8 × 4; 36 matched to 9 × 4; 40 matched to 10 × 4 2. Tape diagram drawn and labeled to represent problem; 28 3. Tape diagram drawn and labeled to show 24 beads used 4. 20",
+          "sourceCrops": [
+            {
+              "pdfPage": 195,
+              "src": "/source-pages/m1-teacher/page-195.png",
+              "crop": {
+                "x": 33,
+                "y": 353,
+                "width": 749,
+                "height": 393
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "Skip-count by fours.",
+          "answerKeyEvidence": "1. 12, 16, 20, 24, 28, 32, 36, 40 Answer provided; 8 matched to 2 × 4; 12 matched to 3 × 4; 16 matched to 4 × 4; 20 matched to 5 × 4; 24 matched to 6 × 4; 28 matched to 7 × 4; 32 matched to 8 × 4; 36 matched to 9 × 4; 40 matched to 10 × 4 2. Tape diagram drawn and labeled to represent problem; 28 3. Tape diagram drawn and labeled to show 24 beads used 4. 20",
+          "sourceCrops": [
+            {
+              "pdfPage": 195,
+              "src": "/source-pages/m1-teacher/page-195.png",
+              "crop": {
+                "x": 33,
+                "y": 647,
+                "width": 749,
+                "height": 303
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "15": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-317.png",
+        "/source-pages/m1-teacher/page-318.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "Label the tape diagrams and complete the equations.",
+          "answerKeyEvidence": "1. a. Top: 8; 8 Bottom: 8; 8 b. Top: 4, 12; 3, 12 Bottom: 3, 12; 3, 12 Array showing 3 rows of 4 or 4 rows of 3 drawn c. Top: 4, 28; 7, 4 Bottom: 7, 28; 4, 7 Array showing 7 rows of 4 or 4 rows of 7 drawn 2. Two tape diagrams drawn and labeled to model 4 × 6 = 6 × 4 3. Tape diagram drawn and labeled to represent 32 petals 4. 32",
+          "sourceCrops": [
+            {
+              "pdfPage": 205,
+              "src": "/source-pages/m1-teacher/page-205.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 850
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "Label the tape diagrams and complete the equations.",
+          "answerKeyEvidence": "1. a. Top: 8; 8 Bottom: 8; 8 b. Top: 4, 12; 3, 12 Bottom: 3, 12; 3, 12 Array showing 3 rows of 4 or 4 rows of 3 drawn c. Top: 4, 28; 7, 4 Bottom: 7, 28; 4, 7 Array showing 7 rows of 4 or 4 rows of 7 drawn 2. Two tape diagrams drawn and labeled to model 4 × 6 = 6 × 4 3. Tape diagram drawn and labeled to represent 32 petals 4. 32",
+          "sourceCrops": [
+            {
+              "pdfPage": 206,
+              "src": "/source-pages/m1-teacher/page-206.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 313
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "Label the tape diagrams and complete the equations.",
+          "answerKeyEvidence": "1. a. Top: 8; 8 Bottom: 8; 8 b. Top: 4, 12; 3, 12 Bottom: 3, 12; 3, 12 Array showing 3 rows of 4 or 4 rows of 3 drawn c. Top: 4, 28; 7, 4 Bottom: 7, 28; 4, 7 Array showing 7 rows of 4 or 4 rows of 7 drawn 2. Two tape diagrams drawn and labeled to model 4 × 6 = 6 × 4 3. Tape diagram drawn and labeled to represent 32 petals 4. 32",
+          "sourceCrops": [
+            {
+              "pdfPage": 206,
+              "src": "/source-pages/m1-teacher/page-206.png",
+              "crop": {
+                "x": 33,
+                "y": 313,
+                "width": 749,
+                "height": 387
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "Label the tape diagrams and complete the equations.",
+          "answerKeyEvidence": "1. a. Top: 8; 8 Bottom: 8; 8 b. Top: 4, 12; 3, 12 Bottom: 3, 12; 3, 12 Array showing 3 rows of 4 or 4 rows of 3 drawn c. Top: 4, 28; 7, 4 Bottom: 7, 28; 4, 7 Array showing 7 rows of 4 or 4 rows of 7 drawn 2. Two tape diagrams drawn and labeled to model 4 × 6 = 6 × 4 3. Tape diagram drawn and labeled to represent 32 petals 4. 32",
+          "sourceCrops": [
+            {
+              "pdfPage": 206,
+              "src": "/source-pages/m1-teacher/page-206.png",
+              "crop": {
+                "x": 33,
+                "y": 600,
+                "width": 749,
+                "height": 350
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "16": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-319.png",
+        "/source-pages/m1-teacher/page-320.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "Label the array.",
+          "answerKeyEvidence": "1. a. 24; 4; 4, 24 b. 28; 20; 8; 20, 8 c. 32; 20; 3, 12; 3, 20, 12, 32 d. 36; 20; 4, 16; 4, 20, 16, 36 2. First cloud matched to 8 × 4; second cloud matched to 6 × 4; third cloud matched to 9 × 4; fourth cloud matched to 7 × 4 3. 10 fours broken into two smaller facts: 5 fours and 5 fours, or 5 fours doubled; sum of two smaller facts found to answer larger fact",
+          "sourceCrops": [
+            {
+              "pdfPage": 216,
+              "src": "/source-pages/m1-teacher/page-216.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 850
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "Label the array.",
+          "answerKeyEvidence": "1. a. 24; 4; 4, 24 b. 28; 20; 8; 20, 8 c. 32; 20; 3, 12; 3, 20, 12, 32 d. 36; 20; 4, 16; 4, 20, 16, 36 2. First cloud matched to 8 × 4; second cloud matched to 6 × 4; third cloud matched to 9 × 4; fourth cloud matched to 7 × 4 3. 10 fours broken into two smaller facts: 5 fours and 5 fours, or 5 fours doubled; sum of two smaller facts found to answer larger fact",
+          "sourceCrops": [
+            {
+              "pdfPage": 217,
+              "src": "/source-pages/m1-teacher/page-217.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 467
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "Label the array.",
+          "answerKeyEvidence": "1. a. 24; 4; 4, 24 b. 28; 20; 8; 20, 8 c. 32; 20; 3, 12; 3, 20, 12, 32 d. 36; 20; 4, 16; 4, 20, 16, 36 2. First cloud matched to 8 × 4; second cloud matched to 6 × 4; third cloud matched to 9 × 4; fourth cloud matched to 7 × 4 3. 10 fours broken into two smaller facts: 5 fours and 5 fours, or 5 fours doubled; sum of two smaller facts found to answer larger fact",
+          "sourceCrops": [
+            {
+              "pdfPage": 217,
+              "src": "/source-pages/m1-teacher/page-217.png",
+              "crop": {
+                "x": 33,
+                "y": 467,
+                "width": 749,
+                "height": 483
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "17": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-321.png",
+        "/source-pages/m1-teacher/page-322.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "Use the array to complete the related equations.",
+          "answerKeyEvidence": "1. Answer provided 2. Tape diagram drawn and labeled showing 9 8; 8 boxes packed 3; 3 3. 8 4; 4 4. $14 5, 4; 4, 5 6, 4; 4, 6 7, 28; 28, 7 8, 32; 32, 8 9, 4, 36; 36, 4, 9 10, 4, 40; 40, 4, 10",
+          "sourceCrops": [
+            {
+              "pdfPage": 227,
+              "src": "/source-pages/m1-teacher/page-227.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 850
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "Use the array to complete the related equations.",
+          "answerKeyEvidence": "1. Answer provided 2. Tape diagram drawn and labeled showing 9 8; 8 boxes packed 3; 3 3. 8 4; 4 4. $14 5, 4; 4, 5 6, 4; 4, 6 7, 28; 28, 7 8, 32; 32, 8 9, 4, 36; 36, 4, 9 10, 4, 40; 40, 4, 10",
+          "sourceCrops": [
+            {
+              "pdfPage": 228,
+              "src": "/source-pages/m1-teacher/page-228.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 333
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "Use the array to complete the related equations.",
+          "answerKeyEvidence": "1. Answer provided 2. Tape diagram drawn and labeled showing 9 8; 8 boxes packed 3; 3 3. 8 4; 4 4. $14 5, 4; 4, 5 6, 4; 4, 6 7, 28; 28, 7 8, 32; 32, 8 9, 4, 36; 36, 4, 9 10, 4, 40; 40, 4, 10",
+          "sourceCrops": [
+            {
+              "pdfPage": 228,
+              "src": "/source-pages/m1-teacher/page-228.png",
+              "crop": {
+                "x": 33,
+                "y": 333,
+                "width": 749,
+                "height": 393
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "Use the array to complete the related equations.",
+          "answerKeyEvidence": "1. Answer provided 2. Tape diagram drawn and labeled showing 9 8; 8 boxes packed 3; 3 3. 8 4; 4 4. $14 5, 4; 4, 5 6, 4; 4, 6 7, 28; 28, 7 8, 32; 32, 8 9, 4, 36; 36, 4, 9 10, 4, 40; 40, 4, 10",
+          "sourceCrops": [
+            {
+              "pdfPage": 228,
+              "src": "/source-pages/m1-teacher/page-228.png",
+              "crop": {
+                "x": 33,
+                "y": 627,
+                "width": 749,
+                "height": 323
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "18": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-323.png",
+        "/source-pages/m1-teacher/page-324.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "8 × 10 = ____",
+          "answerKeyEvidence": "1. 80; 3 tens; 3 tens; 3; 30, 80; 80 2. 28; 2 fours; 2 fours; 2; 8, 28; 28 3. 90; 4 × 10; 4 tens; 4; 50, 40, 90; 90 4. 100; 5 × 10, 5 × 10; 5 tens, 5 tens; 5, 5; 50, 50, 100; 100 5. 70; number bond showing (5 × 10) + (2 × 10) equals 7 × 10 drawn 6. 24 7. 120",
+          "sourceCrops": [
+            {
+              "pdfPage": 240,
+              "src": "/source-pages/m1-teacher/page-240.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 375,
+                "height": 433
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "8 × 10 = ____",
+          "answerKeyEvidence": "1. 80; 3 tens; 3 tens; 3; 30, 80; 80 2. 28; 2 fours; 2 fours; 2; 8, 28; 28 3. 90; 4 × 10; 4 tens; 4; 50, 40, 90; 90 4. 100; 5 × 10, 5 × 10; 5 tens, 5 tens; 5, 5; 50, 50, 100; 100 5. 70; number bond showing (5 × 10) + (2 × 10) equals 7 × 10 drawn 6. 24 7. 120",
+          "sourceCrops": [
+            {
+              "pdfPage": 240,
+              "src": "/source-pages/m1-teacher/page-240.png",
+              "crop": {
+                "x": 408,
+                "y": 100,
+                "width": 375,
+                "height": 433
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "8 × 10 = ____",
+          "answerKeyEvidence": "1. 80; 3 tens; 3 tens; 3; 30, 80; 80 2. 28; 2 fours; 2 fours; 2; 8, 28; 28 3. 90; 4 × 10; 4 tens; 4; 50, 40, 90; 90 4. 100; 5 × 10, 5 × 10; 5 tens, 5 tens; 5, 5; 50, 50, 100; 100 5. 70; number bond showing (5 × 10) + (2 × 10) equals 7 × 10 drawn 6. 24 7. 120",
+          "sourceCrops": [
+            {
+              "pdfPage": 240,
+              "src": "/source-pages/m1-teacher/page-240.png",
+              "crop": {
+                "x": 33,
+                "y": 513,
+                "width": 375,
+                "height": 437
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "8 × 10 = ____",
+          "answerKeyEvidence": "1. 80; 3 tens; 3 tens; 3; 30, 80; 80 2. 28; 2 fours; 2 fours; 2; 8, 28; 28 3. 90; 4 × 10; 4 tens; 4; 50, 40, 90; 90 4. 100; 5 × 10, 5 × 10; 5 tens, 5 tens; 5, 5; 50, 50, 100; 100 5. 70; number bond showing (5 × 10) + (2 × 10) equals 7 × 10 drawn 6. 24 7. 120",
+          "sourceCrops": [
+            {
+              "pdfPage": 240,
+              "src": "/source-pages/m1-teacher/page-240.png",
+              "crop": {
+                "x": 408,
+                "y": 513,
+                "width": 375,
+                "height": 437
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "sourceTextEvidence": "8 × 10 = ____",
+          "answerKeyEvidence": "1. 80; 3 tens; 3 tens; 3; 30, 80; 80 2. 28; 2 fours; 2 fours; 2; 8, 28; 28 3. 90; 4 × 10; 4 tens; 4; 50, 40, 90; 90 4. 100; 5 × 10, 5 × 10; 5 tens, 5 tens; 5, 5; 50, 50, 100; 100 5. 70; number bond showing (5 × 10) + (2 × 10) equals 7 × 10 drawn 6. 24 7. 120",
+          "sourceCrops": [
+            {
+              "pdfPage": 241,
+              "src": "/source-pages/m1-teacher/page-241.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 367
+              }
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "sourceTextEvidence": "8 × 10 = ____",
+          "answerKeyEvidence": "1. 80; 3 tens; 3 tens; 3; 30, 80; 80 2. 28; 2 fours; 2 fours; 2; 8, 28; 28 3. 90; 4 × 10; 4 tens; 4; 50, 40, 90; 90 4. 100; 5 × 10, 5 × 10; 5 tens, 5 tens; 5, 5; 50, 50, 100; 100 5. 70; number bond showing (5 × 10) + (2 × 10) equals 7 × 10 drawn 6. 24 7. 120",
+          "sourceCrops": [
+            {
+              "pdfPage": 241,
+              "src": "/source-pages/m1-teacher/page-241.png",
+              "crop": {
+                "x": 33,
+                "y": 367,
+                "width": 749,
+                "height": 353
+              }
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "sourceTextEvidence": "8 × 10 = ____",
+          "answerKeyEvidence": "1. 80; 3 tens; 3 tens; 3; 30, 80; 80 2. 28; 2 fours; 2 fours; 2; 8, 28; 28 3. 90; 4 × 10; 4 tens; 4; 50, 40, 90; 90 4. 100; 5 × 10, 5 × 10; 5 tens, 5 tens; 5, 5; 50, 50, 100; 100 5. 70; number bond showing (5 × 10) + (2 × 10) equals 7 × 10 drawn 6. 24 7. 120",
+          "sourceCrops": [
+            {
+              "pdfPage": 241,
+              "src": "/source-pages/m1-teacher/page-241.png",
+              "crop": {
+                "x": 33,
+                "y": 620,
+                "width": 749,
+                "height": 330
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "19": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-325.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "Label the array.",
+          "answerKeyEvidence": "1. a. 12; 10; 2; 2 b. 5; 1; 1, 5 c. 7; 5; 8, 2; 8, 5, 2, 7 d. 8; 20, 5; 12, 3; 20, 12, 5, 3, 8 2. First bucket matched to fourth ball; second bucket matched to first ball; third bucket matched to second ball; fourth bucket matched to third ball 3. 24 ÷ 2 broken into two smaller facts: 12 ÷ 2 and 12 ÷ 2; sum of two smaller facts found to answer larger fact",
+          "sourceCrops": [
+            {
+              "pdfPage": 250,
+              "src": "/source-pages/m1-teacher/page-250.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 850
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "Label the array.",
+          "answerKeyEvidence": "1. a. 12; 10; 2; 2 b. 5; 1; 1, 5 c. 7; 5; 8, 2; 8, 5, 2, 7 d. 8; 20, 5; 12, 3; 20, 12, 5, 3, 8 2. First bucket matched to fourth ball; second bucket matched to first ball; third bucket matched to second ball; fourth bucket matched to third ball 3. 24 ÷ 2 broken into two smaller facts: 12 ÷ 2 and 12 ÷ 2; sum of two smaller facts found to answer larger fact",
+          "sourceCrops": [
+            {
+              "pdfPage": 251,
+              "src": "/source-pages/m1-teacher/page-251.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 400
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "Label the array.",
+          "answerKeyEvidence": "1. a. 12; 10; 2; 2 b. 5; 1; 1, 5 c. 7; 5; 8, 2; 8, 5, 2, 7 d. 8; 20, 5; 12, 3; 20, 12, 5, 3, 8 2. First bucket matched to fourth ball; second bucket matched to first ball; third bucket matched to second ball; fourth bucket matched to third ball 3. 24 ÷ 2 broken into two smaller facts: 12 ÷ 2 and 12 ÷ 2; sum of two smaller facts found to answer larger fact",
+          "sourceCrops": [
+            {
+              "pdfPage": 251,
+              "src": "/source-pages/m1-teacher/page-251.png",
+              "crop": {
+                "x": 33,
+                "y": 400,
+                "width": 749,
+                "height": 550
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "20": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-326.png",
+        "/source-pages/m1-teacher/page-327.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "Ted buys 3 books and a magazine at the book store.",
+          "answerKeyEvidence": "1. Tape diagram labeled 3. 12 a. $24 4. 5 blue and 3 red b. $28 5. 4 2. Tape diagram labeled a. 4 b. 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 262,
+              "src": "/source-pages/m1-teacher/page-262.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 513
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "Ted buys 3 books and a magazine at the book store.",
+          "answerKeyEvidence": "1. Tape diagram labeled 3. 12 a. $24 4. 5 blue and 3 red b. $28 5. 4 2. Tape diagram labeled a. 4 b. 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 262,
+              "src": "/source-pages/m1-teacher/page-262.png",
+              "crop": {
+                "x": 33,
+                "y": 513,
+                "width": 749,
+                "height": 437
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "Ted buys 3 books and a magazine at the book store.",
+          "answerKeyEvidence": "1. Tape diagram labeled 3. 12 a. $24 4. 5 blue and 3 red b. $28 5. 4 2. Tape diagram labeled a. 4 b. 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 263,
+              "src": "/source-pages/m1-teacher/page-263.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 360
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "Ted buys 3 books and a magazine at the book store.",
+          "answerKeyEvidence": "1. Tape diagram labeled 3. 12 a. $24 4. 5 blue and 3 red b. $28 5. 4 2. Tape diagram labeled a. 4 b. 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 263,
+              "src": "/source-pages/m1-teacher/page-263.png",
+              "crop": {
+                "x": 33,
+                "y": 360,
+                "width": 749,
+                "height": 380
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "sourceTextEvidence": "Ted buys 3 books and a magazine at the book store.",
+          "answerKeyEvidence": "1. Tape diagram labeled 3. 12 a. $24 4. 5 blue and 3 red b. $28 5. 4 2. Tape diagram labeled a. 4 b. 12",
+          "sourceCrops": [
+            {
+              "pdfPage": 263,
+              "src": "/source-pages/m1-teacher/page-263.png",
+              "crop": {
+                "x": 33,
+                "y": 640,
+                "width": 749,
+                "height": 310
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "21": {
+      "answerKeyImages": [
+        "/source-pages/m1-teacher/page-328.png",
+        "/source-pages/m1-teacher/page-329.png"
+      ],
+      "problems": [
+        {
+          "number": 1,
+          "sourceTextEvidence": "Jason earns $6 per week for doing all his chores.",
+          "answerKeyEvidence": "1. Tape diagram labeled; 4 × 6 = 24; 24 + 4 = 28; $28 2. Tape diagrams labeled; 22 3. Tape diagram drawn and labeled to represent problem; 12 4. a. 7 b. 5",
+          "sourceCrops": [
+            {
+              "pdfPage": 272,
+              "src": "/source-pages/m1-teacher/page-272.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 473
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "sourceTextEvidence": "Jason earns $6 per week for doing all his chores.",
+          "answerKeyEvidence": "1. Tape diagram labeled; 4 × 6 = 24; 24 + 4 = 28; $28 2. Tape diagrams labeled; 22 3. Tape diagram drawn and labeled to represent problem; 12 4. a. 7 b. 5",
+          "sourceCrops": [
+            {
+              "pdfPage": 272,
+              "src": "/source-pages/m1-teacher/page-272.png",
+              "crop": {
+                "x": 33,
+                "y": 473,
+                "width": 749,
+                "height": 477
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "sourceTextEvidence": "Jason earns $6 per week for doing all his chores.",
+          "answerKeyEvidence": "1. Tape diagram labeled; 4 × 6 = 24; 24 + 4 = 28; $28 2. Tape diagrams labeled; 22 3. Tape diagram drawn and labeled to represent problem; 12 4. a. 7 b. 5",
+          "sourceCrops": [
+            {
+              "pdfPage": 273,
+              "src": "/source-pages/m1-teacher/page-273.png",
+              "crop": {
+                "x": 33,
+                "y": 100,
+                "width": 749,
+                "height": 500
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "sourceTextEvidence": "Jason earns $6 per week for doing all his chores.",
+          "answerKeyEvidence": "1. Tape diagram labeled; 4 × 6 = 24; 24 + 4 = 28; $28 2. Tape diagrams labeled; 22 3. Tape diagram drawn and labeled to represent problem; 12 4. a. 7 b. 5",
+          "sourceCrops": [
+            {
+              "pdfPage": 273,
+              "src": "/source-pages/m1-teacher/page-273.png",
+              "crop": {
+                "x": 33,
+                "y": 500,
+                "width": 749,
+                "height": 450
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

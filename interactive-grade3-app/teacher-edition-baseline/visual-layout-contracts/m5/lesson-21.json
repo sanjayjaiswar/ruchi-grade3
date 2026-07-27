@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l21",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-250.png",
+      "sha256": "097b277e7bc8faa3f3869a20d2f4ac6ba5758de360d28bd7a384afd762090691",
+      "pdfPage": 250,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 21 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-251.png",
+      "sha256": "82cc6f1e9f39189911646c1a90e121b0d62cc284ef564ad031c4e655c7e8c938",
+      "pdfPage": 251,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 21 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-404.png",
+      "sha256": "9a0596b2474dc360ebb4dc571f8160bda0e5b3ebc4c4bc558ba8b50435ef44c0",
+      "pdfPage": 404,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 21 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-250.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the fractional units on the left to count up on the number line. Label the missing fractions on the blanks."
+        ],
+        "answerKeyEvidence": "halves: 0/2, 3/2; fourths: 1/4, 2/4, 4/4, 6/4, 8/4. halves: 0/2, 2/2, 3/2; sixths: 1/6, 3/6, 6/6, 9/6, 12/6.",
+        "layout": {
+          "family": "aligned-halves-fourths-and-sixths",
+          "subpartCount": 2,
+          "modelPrimitive": "two-authored-shared-number-lines",
+          "modelCounts": [
+            8,
+            12
+          ],
+          "modelOrientation": "two-horizontal-zero-to-two-lines",
+          "responseStructure": "retain-givens-and-complete-only-missing-fraction-labels"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-250.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the number lines above to:"
+        ],
+        "answerKeyEvidence": "Shaded blue: 1/2, 2/4; 1/2, 3/6. Shaded yellow: 2/2, 4/4; 2/2, 6/6. Shaded green: 3/2, 6/4; 3/2, 9/6. Shaded red: 4/2, 8/4; 4/2, 12/6.",
+        "layout": {
+          "family": "four-color-groups-of-equivalent-points",
+          "subpartCount": 4,
+          "modelPrimitive": "two-authored-shared-number-lines",
+          "modelCounts": [
+            2,
+            4,
+            6
+          ],
+          "modelOrientation": "two-horizontal-zero-to-two-lines",
+          "responseStructure": "identify-half-one-three-halves-and-two-equivalence-groups"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-250.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the number lines above to make the number sentences true."
+        ],
+        "answerKeyEvidence": "3; 2, 4/4; 9, 6/4.",
+        "layout": {
+          "family": "three-equivalent-fraction-sentences",
+          "subpartCount": 3,
+          "modelPrimitive": "live-equation-blanks",
+          "modelCounts": [
+            3,
+            4,
+            9,
+            6
+          ],
+          "modelOrientation": "three-equations-in-reading-order",
+          "responseStructure": "complete-only-the-printed-numerators-and-denominators"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-251.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Jack and Jill use rain gauges the same size and shape to measure rain on the top of a hill."
+        ],
+        "answerKeyEvidence": "4/8 inch; number line drawn.",
+        "layout": {
+          "family": "equivalent-two-fourths-and-four-eighths-rainfall",
+          "subpartCount": 2,
+          "modelPrimitive": "open-number-line-workspace-to-authored-eighths-line",
+          "modelCounts": [
+            2,
+            4
+          ],
+          "modelOrientation": "horizontal-zero-to-one",
+          "responseStructure": "find-jill-four-eighths-and-explain",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m5-teacher/page-251.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Jack and Jill’s baby brother Rosco also had a gauge the same size and shape on the same hill."
+        ],
+        "answerKeyEvidence": "Yes; 1/2 = 2/4 = 4/8; explanations will vary.",
+        "layout": {
+          "family": "verify-one-half-two-fourths-four-eighths-rainfall",
+          "subpartCount": 3,
+          "modelPrimitive": "open-number-line-workspace-to-authored-eighths-line",
+          "modelCounts": [
+            1,
+            2,
+            4
+          ],
+          "modelOrientation": "horizontal-zero-to-one",
+          "responseStructure": "affirm-rosco-and-justify-three-equivalent-readings",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    }
+  ]
+}

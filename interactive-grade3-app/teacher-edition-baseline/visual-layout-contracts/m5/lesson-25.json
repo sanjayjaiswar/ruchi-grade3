@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l25",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-297.png",
+      "sha256": "5f584b19ed119cec6926a1749aaba133f9a6135f8c18c408a04530fd82d39dce",
+      "pdfPage": 297,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 25 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-298.png",
+      "sha256": "55e01b089072d41aec4eaeb8d2dc137d2998829874c7f61dcb498389fc2ecfd3",
+      "pdfPage": 298,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 25 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-410.png",
+      "sha256": "ed069cabe3a3ac3e30aac9de4d92e0083330b3add59c358b4da523b4a43483c3",
+      "pdfPage": 410,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 25 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-411.png",
+      "sha256": "be085ec4acaebbc63e50277e0d275574845fc215b254e17fa4a2284aeda5e4c5",
+      "pdfPage": 411,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 25 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-297.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Label the following models as a fraction inside the dotted box."
+        ],
+        "answerKeyEvidence": "Answer provided; 3/2; 3/1; 4/4; 4/2; 4/1; 6/6; 6/3; 6/1.",
+        "layout": {
+          "family": "label-nine-grouped-whole-number-fraction-models",
+          "subpartCount": 9,
+          "modelPrimitive": "three-tight-official-model-row-crops-plus-live-labels",
+          "modelCounts": [
+            3,
+            4,
+            6
+          ],
+          "modelOrientation": "three-source-model-rows-in-reading-order",
+          "responseStructure": "label-provided-three-thirds-and-eight-remaining-models",
+          "sourceFirst": true,
+          "sourceCropCount": 3,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-297.png",
+              "crop": {
+                "x": 120,
+                "y": 310,
+                "width": 1025,
+                "height": 225
+              }
+            },
+            {
+              "src": "/source-pages/m5-teacher/page-297.png",
+              "crop": {
+                "x": 185,
+                "y": 730,
+                "width": 955,
+                "height": 205
+              }
+            },
+            {
+              "src": "/source-pages/m5-teacher/page-297.png",
+              "crop": {
+                "x": 120,
+                "y": 1105,
+                "width": 1020,
+                "height": 205
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-298.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Fill in the missing whole numbers in the boxes below the number line."
+        ],
+        "answerKeyEvidence": "0/1, 1/1, 2/1, 3/1, 4/1, 5/1, 6/1; 10, 11, 12/1, 13/1, 14, 15/1, 16/1.",
+        "layout": {
+          "family": "rename-whole-number-points-with-denominator-one",
+          "subpartCount": 14,
+          "modelPrimitive": "two-authored-whole-number-lines-plus-live-boxes",
+          "modelCounts": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "modelOrientation": "two-horizontal-lines-zero-to-six-and-ten-to-sixteen",
+          "responseStructure": "fill-missing-wholes-and-rename-every-point-over-one"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-298.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Explain the difference between these two fractions with words and pictures."
+        ],
+        "answerKeyEvidence": "Explanations will vary.",
+        "layout": {
+          "family": "explain-two-over-one-versus-two-over-two",
+          "subpartCount": 2,
+          "modelPrimitive": "open-words-pictures-workspace-to-two-authored-strips",
+          "modelCounts": [
+            2,
+            1
+          ],
+          "modelOrientation": "two-horizontal-whole-models",
+          "responseStructure": "explain-two-wholes-versus-two-halves-one-whole",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    }
+  ]
+}

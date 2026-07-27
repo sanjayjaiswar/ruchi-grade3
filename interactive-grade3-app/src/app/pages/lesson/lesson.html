@@ -2,9 +2,14 @@
   <section class="lesson-header" [class.has-problem-centered]="problemSetCenteredLesson">
     <div class="lesson-header-main">
       <a class="crumb" [routerLink]="['/ruchika-grade3', 'modules', module.id]">Module {{ module.number }}</a>
-      <span class="eyebrow">Lesson {{ lesson.lessonNumber }}</span>
-      <h1>{{ lesson.title }}</h1>
+      <span class="eyebrow" *ngIf="lessonTopic() as topic">{{ topic.label }} · Lesson {{ lesson.lessonNumber }}</span>
+      <h1>Lesson {{ lesson.lessonNumber }}: {{ lesson.title }}</h1>
       <p class="lead">{{ lesson.studentGoal }}</p>
+      <div class="lesson-meta" aria-label="Lesson information">
+        <span *ngIf="lessonTopic() as topic">{{ topic.label }}: {{ topic.title }}</span>
+        <span>{{ lesson.vocabulary.length }} vocabulary terms</span>
+        <span>{{ lesson.visualModels.length }} visual models</span>
+      </div>
     </div>
     <div class="lesson-header-actions" *ngIf="problemSetCenteredLesson">
       <nav class="problem-centered-tabs" aria-label="Lesson sections" role="tablist">
@@ -65,7 +70,7 @@
 
     <section class="problem-centered-workspace" *ngIf="problemSetCenteredLesson as problemLesson">
       <ng-container [ngSwitch]="activeProblemSection">
-        <section [id]="problemSectionId('concept')" class="problem-centered-panel" role="tabpanel" *ngSwitchCase="'concept'">
+        <section [id]="problemSectionId('concept')" class="problem-centered-panel" role="tabpanel" tabindex="-1" *ngSwitchCase="'concept'">
           <div class="problem-centered-concept">
             <div>
               <span class="eyebrow">Lesson concept</span>
@@ -2267,6 +2272,7 @@
           [class.is-m2-l1-problem-set]="module.id === 'm2' && lesson.lessonNumber === 1"
           [attr.aria-label]="'Lesson ' + lesson.lessonNumber + ' ' + problemSetMode + ' problem set'"
           role="tabpanel"
+          tabindex="-1"
           *ngSwitchCase="'problem-set'">
           <div class="problem-set-toolbar">
             <nav class="problem-bookmarks" aria-label="Problem bookmarks">
@@ -2303,13 +2309,18 @@
             [class.is-lesson16-source]="module.id === 'm1' && lesson.lessonNumber === 16 && problem.relatedFacts?.length"
             [class.is-lesson17-source]="module.id === 'm1' && lesson.lessonNumber === 17"
             *ngFor="let problem of problemLesson.problems"
+            tabindex="-1"
             [id]="problemDomId(problem.number)">
             <div class="problem-solution-head">
-              <span class="problem-number">Problem {{ problem.number }}</span>
-              <h3 *ngIf="!isLongProblemPrompt(problem.sourcePrompt); else compactProblemPrompt">{{ problem.sourcePrompt }}</h3>
-              <ng-template #compactProblemPrompt>
-                <p class="problem-source-prompt">{{ problem.sourcePrompt }}</p>
-              </ng-template>
+              <span class="problem-number">Learner activity</span>
+              <h3>
+                Problem {{ problem.number }}<ng-container *ngIf="!problem.sourcePromptInVisual">: {{ problemHeading(problem.sourcePrompt) }}</ng-container>
+              </h3>
+              <p
+                class="problem-source-prompt"
+                *ngIf="isLongProblemPrompt(problem.sourcePrompt) && !problem.sourcePromptInVisual">
+                {{ problem.sourcePrompt }}
+              </p>
               <ul class="blank-prompt-list" *ngIf="problemSetMode === 'blank' && problem.blankPrompts?.length">
                 <li *ngFor="let prompt of problem.blankPrompts">{{ prompt }}</li>
               </ul>
@@ -3298,7 +3309,7 @@
                 </div>
               </div>
 
-              <div class="problem-explanation-card">
+              <div class="problem-explanation-card" *ngIf="!problem.sourcePromptInVisual">
                 <div class="equation-list">
                   <span *ngFor="let equation of problem.equations">{{ equation }}</span>
                 </div>
@@ -3316,7 +3327,7 @@
           </article>
         </section>
 
-        <section [id]="problemSectionId('summary')" class="problem-centered-panel problem-centered-summary" role="tabpanel" *ngSwitchCase="'summary'">
+        <section [id]="problemSectionId('summary')" class="problem-centered-panel problem-centered-summary" role="tabpanel" tabindex="-1" *ngSwitchCase="'summary'">
           <div class="summary-hero">
             <span class="eyebrow">Summary</span>
             <h3>Lesson {{ lesson.lessonNumber }} takeaway</h3>

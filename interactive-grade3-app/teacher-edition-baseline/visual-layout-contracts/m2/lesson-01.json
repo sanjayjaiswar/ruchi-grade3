@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m2-l1",
+  "teacherEditionPdfSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m2-teacher/page-019.png",
+      "sha256": "5999a8c5c496efbee3e4c5240d31d6193c5f0b928d89b8cc4601a6fc95a9a40d",
+      "pdfPage": 19,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 1 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-teacher/page-020.png",
+      "sha256": "840c019d8e7eae86eb0c329e3e2f7edd2cc9e7fcd0ffcd0c433736ddb6e7fd60",
+      "pdfPage": 20,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 1 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-answer-key/page-281.png",
+      "sha256": "26ec7dba5a8fef429c870cfdeebe7103dcdb5a919a00002d57b193050a72001c",
+      "pdfPage": 281,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 1 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m2-teacher/page-019.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "use a stopwatch. how long does it take you to"
+        ],
+        "answerKeyEvidence": "1. Times will vary. 2. Times will vary. 3. Times will vary. 4. Times will vary. 5. Times will vary. 6. Times will vary.",
+        "layout": {
+          "family": "stopwatch-table-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m2-teacher/page-019.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "use a stopwatch. how long does it take to",
+          "write every whole number from 0 to 25"
+        ],
+        "answerKeyEvidence": "1. Times will vary. 2. Times will vary. 3. Times will vary. 4. Times will vary. 5. Times will vary. 6. Times will vary.",
+        "layout": {
+          "family": "stopwatch-table-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m2-teacher/page-019.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "use a stopwatch. how long does it take you to name 10 animals record"
+        ],
+        "answerKeyEvidence": "1. Times will vary. 2. Times will vary. 3. Times will vary. 4. Times will vary. 5. Times will vary. 6. Times will vary.",
+        "layout": {
+          "family": "stopwatch-table-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m2-teacher/page-019.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "use a stopwatch. how long does it take you to",
+          "write 7 × 8 = 56 fifteen times"
+        ],
+        "answerKeyEvidence": "1. Times will vary. 2. Times will vary. 3. Times will vary. 4. Times will vary. 5. Times will vary. 6. Times will vary.",
+        "layout": {
+          "family": "stopwatch-table-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m2-teacher/page-020.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "work with your group. use a stopwatch to measure the time for each"
+        ],
+        "answerKeyEvidence": "1. Times will vary. 2. Times will vary. 3. Times will vary. 4. Times will vary. 5. Times will vary. 6. Times will vary.",
+        "layout": {
+          "family": "stopwatch-table-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m2-teacher/page-020.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "100 meter relay: use a stopwatch to measure and record your team's"
+        ],
+        "answerKeyEvidence": "1. Times will vary. 2. Times will vary. 3. Times will vary. 4. Times will vary. 5. Times will vary. 6. Times will vary.",
+        "layout": {
+          "family": "stopwatch-table-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

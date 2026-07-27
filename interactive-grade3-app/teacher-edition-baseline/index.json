@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "generatedAt": "2026-07-27T02:56:13.408Z",
   "lessonCount": 152,
   "moduleCount": 7,
   "modules": {
@@ -32,7 +32,6 @@
           "structuredPromptStatus": "ready",
           "modelsDetected": [
             "equal-groups",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -59,8 +58,6 @@
           "modelsDetected": [
             "array",
             "equal-groups",
-            "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -114,6 +111,7 @@
           "modelsDetected": [
             "array",
             "equal-groups",
+            "number-bond",
             "picture-or-drawing"
           ]
         },
@@ -141,7 +139,6 @@
             "equal-groups",
             "number-bond",
             "number-line",
-            "table-or-chart",
             "picture-or-drawing"
           ]
         },
@@ -167,7 +164,6 @@
           "modelsDetected": [
             "array",
             "equal-groups",
-            "liquid-measure",
             "picture-or-drawing"
           ]
         },
@@ -194,7 +190,7 @@
           "modelsDetected": [
             "array",
             "equal-groups",
-            "money-model",
+            "number-bond",
             "picture-or-drawing"
           ]
         },
@@ -221,7 +217,6 @@
           "modelsDetected": [
             "array",
             "equal-groups",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -301,9 +296,7 @@
             "array",
             "equal-groups",
             "tape-diagram",
-            "measurement-scale",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -331,11 +324,9 @@
             "array",
             "equal-groups",
             "tape-diagram",
-            "measurement-scale",
             "ruler-or-length",
             "fraction-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -362,9 +353,7 @@
           "modelsDetected": [
             "equal-groups",
             "tape-diagram",
-            "measurement-scale",
             "ruler-or-length",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -392,7 +381,6 @@
             "array",
             "equal-groups",
             "tape-diagram",
-            "measurement-scale",
             "geometry-diagram",
             "picture-or-drawing"
           ]
@@ -420,8 +408,6 @@
           "modelsDetected": [
             "array",
             "tape-diagram",
-            "measurement-scale",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -450,8 +436,6 @@
             "equal-groups",
             "tape-diagram",
             "number-bond",
-            "measurement-scale",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -479,9 +463,6 @@
             "array",
             "tape-diagram",
             "number-bond",
-            "measurement-scale",
-            "table-or-chart",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -508,7 +489,6 @@
           "modelsDetected": [
             "array",
             "number-bond",
-            "geometry-diagram",
             "picture-or-drawing"
           ]
         },
@@ -534,7 +514,6 @@
           "modelsDetected": [
             "array",
             "number-bond",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -560,8 +539,6 @@
           "structuredPromptStatus": "ready",
           "modelsDetected": [
             "tape-diagram",
-            "measurement-scale",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -588,10 +565,8 @@
           "modelsDetected": [
             "equal-groups",
             "tape-diagram",
-            "measurement-scale",
             "ruler-or-length",
             "table-or-chart",
-            "money-model",
             "picture-or-drawing"
           ]
         }
@@ -626,7 +601,6 @@
           "modelsDetected": [
             "array",
             "ruler-or-length",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -650,12 +624,11 @@
           "structuredProblemCount": 1,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
+            "equal-groups",
             "tape-diagram",
             "number-line",
             "clock",
-            "measurement-scale",
             "ruler-or-length",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -682,6 +655,7 @@
             "number-bond",
             "number-line",
             "clock",
+            "ruler-or-length",
             "picture-or-drawing"
           ]
         },
@@ -705,9 +679,9 @@
           "structuredProblemCount": 5,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
+            "tape-diagram",
             "number-line",
             "clock",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -733,7 +707,6 @@
           "modelsDetected": [
             "number-line",
             "clock",
-            "table-or-chart",
             "picture-or-drawing"
           ]
         },
@@ -761,7 +734,9 @@
             "number-bond",
             "clock",
             "measurement-scale",
-            "place-value"
+            "place-value",
+            "fraction-model",
+            "picture-or-drawing"
           ]
         },
         {
@@ -787,7 +762,6 @@
             "number-bond",
             "number-line",
             "measurement-scale",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -813,8 +787,8 @@
           "modelsDetected": [
             "tape-diagram",
             "measurement-scale",
+            "place-value",
             "table-or-chart",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -843,7 +817,6 @@
             "measurement-scale",
             "liquid-measure",
             "fraction-model",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -902,7 +875,6 @@
             "liquid-measure",
             "place-value",
             "fraction-model",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -931,7 +903,6 @@
             "liquid-measure",
             "ruler-or-length",
             "table-or-chart",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -959,7 +930,6 @@
             "measurement-scale",
             "liquid-measure",
             "place-value",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -989,7 +959,6 @@
             "liquid-measure",
             "place-value",
             "table-or-chart",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1020,7 +989,6 @@
             "ruler-or-length",
             "place-value",
             "table-or-chart",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1050,7 +1018,6 @@
             "ruler-or-length",
             "place-value",
             "table-or-chart",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1078,6 +1045,7 @@
             "tape-diagram",
             "number-line",
             "measurement-scale",
+            "liquid-measure",
             "picture-or-drawing"
           ]
         },
@@ -1108,7 +1076,6 @@
             "ruler-or-length",
             "place-value",
             "table-or-chart",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1137,7 +1104,6 @@
             "measurement-scale",
             "liquid-measure",
             "place-value",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1194,7 +1160,6 @@
           "modelsDetected": [
             "equal-groups",
             "tape-diagram",
-            "number-line",
             "measurement-scale",
             "liquid-measure",
             "ruler-or-length",
@@ -1236,9 +1201,7 @@
             "array",
             "equal-groups",
             "tape-diagram",
-            "measurement-scale",
             "table-or-chart",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1267,7 +1230,6 @@
             "array",
             "equal-groups",
             "number-bond",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1295,9 +1257,6 @@
             "array",
             "equal-groups",
             "tape-diagram",
-            "measurement-scale",
-            "table-or-chart",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1321,9 +1280,10 @@
           "structuredProblemCount": 5,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
+            "array",
+            "equal-groups",
             "number-bond",
             "table-or-chart",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1348,7 +1308,9 @@
           "structuredProblemCount": 4,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
-            "number-bond"
+            "array",
+            "number-bond",
+            "picture-or-drawing"
           ]
         },
         {
@@ -1372,11 +1334,9 @@
           "structuredProblemCount": 5,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
-            "array",
             "tape-diagram",
             "number-bond",
-            "measurement-scale",
-            "money-model",
+            "ruler-or-length",
             "picture-or-drawing"
           ]
         },
@@ -1402,12 +1362,11 @@
           "structuredPromptStatus": "ready",
           "modelsDetected": [
             "array",
+            "equal-groups",
             "tape-diagram",
             "number-bond",
-            "measurement-scale",
             "liquid-measure",
             "ruler-or-length",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1434,7 +1393,6 @@
           "structuredPromptStatus": "ready",
           "modelsDetected": [
             "number-bond",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1456,13 +1414,11 @@
             296,
             297
           ],
-          "structuredProblemCount": 4,
+          "structuredProblemCount": 3,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
             "array",
             "equal-groups",
-            "place-value",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1488,8 +1444,8 @@
           "structuredPromptStatus": "ready",
           "modelsDetected": [
             "array",
+            "tape-diagram",
             "number-bond",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1518,7 +1474,6 @@
             "tape-diagram",
             "number-bond",
             "measurement-scale",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1545,6 +1500,9 @@
           "structuredPromptStatus": "ready",
           "modelsDetected": [
             "array",
+            "tape-diagram",
+            "number-bond",
+            "liquid-measure",
             "picture-or-drawing"
           ]
         },
@@ -1596,7 +1554,6 @@
           "modelsDetected": [
             "array",
             "equal-groups",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1623,7 +1580,6 @@
           "modelsDetected": [
             "liquid-measure",
             "ruler-or-length",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1675,7 +1631,6 @@
           "modelsDetected": [
             "array",
             "table-or-chart",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1704,7 +1659,6 @@
             "liquid-measure",
             "ruler-or-length",
             "table-or-chart",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1730,10 +1684,8 @@
           "modelsDetected": [
             "array",
             "tape-diagram",
-            "measurement-scale",
             "place-value",
             "table-or-chart",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1761,7 +1713,6 @@
             "equal-groups",
             "place-value",
             "table-or-chart",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1788,7 +1739,6 @@
           "modelsDetected": [
             "tape-diagram",
             "measurement-scale",
-            "money-model",
             "picture-or-drawing"
           ]
         }
@@ -1848,12 +1798,10 @@
           "structuredPromptStatus": "ready",
           "modelsDetected": [
             "number-bond",
-            "number-line",
             "ruler-or-length",
             "table-or-chart",
             "area-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1881,7 +1829,6 @@
             "ruler-or-length",
             "area-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1909,7 +1856,6 @@
             "ruler-or-length",
             "area-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1935,11 +1881,8 @@
           "modelsDetected": [
             "array",
             "equal-groups",
-            "measurement-scale",
             "ruler-or-length",
-            "table-or-chart",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1967,7 +1910,6 @@
             "ruler-or-length",
             "area-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -1993,10 +1935,8 @@
           "modelsDetected": [
             "array",
             "ruler-or-length",
-            "table-or-chart",
             "area-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2025,7 +1965,6 @@
             "ruler-or-length",
             "area-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2054,7 +1993,6 @@
             "ruler-or-length",
             "area-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2081,10 +2019,9 @@
             "array",
             "number-bond",
             "ruler-or-length",
+            "fraction-model",
             "area-model",
-            "geometry-diagram",
-            "money-model",
-            "picture-or-drawing"
+            "geometry-diagram"
           ]
         },
         {
@@ -2110,7 +2047,6 @@
             "ruler-or-length",
             "area-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2139,7 +2075,6 @@
             "ruler-or-length",
             "area-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2167,7 +2102,6 @@
             "ruler-or-length",
             "area-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2191,9 +2125,9 @@
           "structuredProblemCount": 2,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
+            "number-bond",
             "ruler-or-length",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2223,9 +2157,7 @@
             "number-line",
             "ruler-or-length",
             "table-or-chart",
-            "geometry-diagram",
-            "money-model",
-            "picture-or-drawing"
+            "geometry-diagram"
           ]
         },
         {
@@ -2251,7 +2183,6 @@
           "modelsDetected": [
             "ruler-or-length",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         }
@@ -2289,7 +2220,6 @@
             "ruler-or-length",
             "fraction-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2313,7 +2243,6 @@
           "structuredProblemCount": 4,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
-            "ruler-or-length",
             "fraction-model",
             "picture-or-drawing"
           ]
@@ -2342,7 +2271,6 @@
           "modelsDetected": [
             "liquid-measure",
             "fraction-model",
-            "area-model",
             "geometry-diagram",
             "picture-or-drawing"
           ]
@@ -2399,7 +2327,6 @@
             "ruler-or-length",
             "table-or-chart",
             "fraction-model",
-            "geometry-diagram",
             "picture-or-drawing"
           ]
         },
@@ -2429,7 +2356,6 @@
             "liquid-measure",
             "table-or-chart",
             "fraction-model",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2536,9 +2462,7 @@
           "structuredPromptStatus": "ready",
           "modelsDetected": [
             "ruler-or-length",
-            "table-or-chart",
             "fraction-model",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2567,7 +2491,6 @@
             "liquid-measure",
             "fraction-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2593,11 +2516,10 @@
           "structuredPromptStatus": "ready",
           "modelsDetected": [
             "equal-groups",
+            "tape-diagram",
             "number-bond",
-            "measurement-scale",
             "ruler-or-length",
             "fraction-model",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2621,11 +2543,9 @@
           "structuredProblemCount": 1,
           "structuredPromptStatus": "review-source-layout",
           "modelsDetected": [
-            "measurement-scale",
             "ruler-or-length",
             "fraction-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2654,7 +2574,6 @@
             "number-line",
             "ruler-or-length",
             "fraction-model",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2709,7 +2628,6 @@
           "structuredPromptStatus": "ready",
           "modelsDetected": [
             "number-line",
-            "ruler-or-length",
             "fraction-model",
             "picture-or-drawing"
           ]
@@ -2738,7 +2656,6 @@
             "number-line",
             "ruler-or-length",
             "fraction-model",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2767,7 +2684,6 @@
             "number-line",
             "ruler-or-length",
             "fraction-model",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2824,7 +2740,6 @@
             "liquid-measure",
             "fraction-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2851,7 +2766,6 @@
             "number-bond",
             "number-line",
             "fraction-model",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2875,10 +2789,10 @@
           "structuredProblemCount": 1,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
+            "number-bond",
             "number-line",
-            "table-or-chart",
+            "ruler-or-length",
             "fraction-model",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2935,7 +2849,6 @@
             "number-line",
             "fraction-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -2990,7 +2903,6 @@
             "number-bond",
             "number-line",
             "fraction-model",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3015,9 +2927,10 @@
           "structuredProblemCount": 2,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
+            "number-line",
+            "ruler-or-length",
             "fraction-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3046,7 +2959,6 @@
             "liquid-measure",
             "fraction-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3131,9 +3043,9 @@
           "structuredProblemCount": 4,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
+            "equal-groups",
             "tape-diagram",
             "number-line",
-            "measurement-scale",
             "table-or-chart",
             "graph-or-plot",
             "fraction-model",
@@ -3163,9 +3075,8 @@
           "modelsDetected": [
             "array",
             "tape-diagram",
-            "measurement-scale",
+            "number-line",
             "graph-or-plot",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3191,13 +3102,9 @@
           "structuredProblemCount": 5,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
-            "tape-diagram",
             "number-line",
-            "measurement-scale",
             "ruler-or-length",
-            "table-or-chart",
             "graph-or-plot",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3222,8 +3129,6 @@
           "structuredPromptStatus": "ready",
           "modelsDetected": [
             "tape-diagram",
-            "number-line",
-            "measurement-scale",
             "table-or-chart",
             "graph-or-plot",
             "picture-or-drawing"
@@ -3281,8 +3186,8 @@
             "equal-groups",
             "tape-diagram",
             "number-line",
-            "measurement-scale",
             "ruler-or-length",
+            "table-or-chart",
             "graph-or-plot",
             "fraction-model",
             "picture-or-drawing"
@@ -3311,7 +3216,6 @@
           "modelsDetected": [
             "tape-diagram",
             "number-line",
-            "measurement-scale",
             "ruler-or-length",
             "table-or-chart",
             "graph-or-plot",
@@ -3345,7 +3249,6 @@
             "table-or-chart",
             "graph-or-plot",
             "fraction-model",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3377,7 +3280,6 @@
             "table-or-chart",
             "graph-or-plot",
             "fraction-model",
-            "money-model",
             "picture-or-drawing"
           ]
         }
@@ -3414,7 +3316,6 @@
             "liquid-measure",
             "table-or-chart",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3446,7 +3347,6 @@
             "table-or-chart",
             "fraction-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3476,7 +3376,6 @@
             "ruler-or-length",
             "table-or-chart",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3505,12 +3404,9 @@
             "equal-groups",
             "tape-diagram",
             "number-bond",
-            "measurement-scale",
             "ruler-or-length",
-            "place-value",
             "table-or-chart",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3539,7 +3435,6 @@
             "ruler-or-length",
             "table-or-chart",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3563,8 +3458,8 @@
           "structuredProblemCount": 6,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
-            "measurement-scale",
             "ruler-or-length",
+            "table-or-chart",
             "geometry-diagram",
             "picture-or-drawing"
           ]
@@ -3590,7 +3485,6 @@
           "structuredProblemCount": 4,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
-            "ruler-or-length",
             "area-model",
             "geometry-diagram",
             "picture-or-drawing"
@@ -3617,9 +3511,6 @@
           "structuredProblemCount": 7,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
-            "number-bond",
-            "measurement-scale",
-            "ruler-or-length",
             "table-or-chart",
             "area-model",
             "geometry-diagram",
@@ -3647,7 +3538,6 @@
           "structuredProblemCount": 4,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
-            "measurement-scale",
             "table-or-chart",
             "geometry-diagram",
             "picture-or-drawing"
@@ -3675,10 +3565,8 @@
           "structuredPromptStatus": "ready",
           "modelsDetected": [
             "number-bond",
-            "measurement-scale",
             "table-or-chart",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3702,7 +3590,6 @@
           "structuredPromptStatus": "ready",
           "modelsDetected": [
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3727,10 +3614,9 @@
           "structuredProblemCount": 4,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
-            "measurement-scale",
             "ruler-or-length",
+            "area-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3757,7 +3643,6 @@
           "modelsDetected": [
             "ruler-or-length",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3785,7 +3670,6 @@
             "number-bond",
             "ruler-or-length",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3810,10 +3694,8 @@
           "structuredPromptStatus": "ready",
           "modelsDetected": [
             "number-bond",
-            "measurement-scale",
             "ruler-or-length",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3840,8 +3722,7 @@
           "modelsDetected": [
             "ruler-or-length",
             "table-or-chart",
-            "geometry-diagram",
-            "money-model"
+            "geometry-diagram"
           ]
         },
         {
@@ -3866,7 +3747,6 @@
           "modelsDetected": [
             "ruler-or-length",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -3890,7 +3770,7 @@
           "structuredProblemCount": 3,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
-            "array",
+            "tape-diagram",
             "ruler-or-length",
             "area-model",
             "geometry-diagram",
@@ -3919,7 +3799,6 @@
           "modelsDetected": [
             "tape-diagram",
             "number-line",
-            "measurement-scale",
             "ruler-or-length",
             "table-or-chart",
             "graph-or-plot",
@@ -3978,7 +3857,6 @@
           "modelsDetected": [
             "ruler-or-length",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -4009,7 +3887,6 @@
             "graph-or-plot",
             "area-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -4034,12 +3911,10 @@
           "structuredProblemCount": 6,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
-            "measurement-scale",
             "ruler-or-length",
             "place-value",
             "fraction-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -4067,7 +3942,6 @@
             "ruler-or-length",
             "table-or-chart",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -4093,7 +3967,6 @@
           "modelsDetected": [
             "ruler-or-length",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -4119,14 +3992,9 @@
           "structuredProblemCount": 4,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
-            "array",
-            "tape-diagram",
-            "number-line",
-            "measurement-scale",
             "ruler-or-length",
             "graph-or-plot",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -4182,7 +4050,6 @@
           "modelsDetected": [
             "ruler-or-length",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -4210,7 +4077,6 @@
             "number-bond",
             "ruler-or-length",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -4235,10 +4101,8 @@
           "modelsDetected": [
             "equal-groups",
             "tape-diagram",
-            "measurement-scale",
             "ruler-or-length",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -4262,14 +4126,9 @@
           "structuredProblemCount": 1,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
-            "array",
-            "tape-diagram",
-            "number-bond",
-            "measurement-scale",
             "ruler-or-length",
             "fraction-model",
             "geometry-diagram",
-            "money-model",
             "picture-or-drawing"
           ]
         },
@@ -4294,8 +4153,9 @@
           "structuredProblemCount": 4,
           "structuredPromptStatus": "ready",
           "modelsDetected": [
+            "ruler-or-length",
             "fraction-model",
-            "money-model",
+            "geometry-diagram",
             "picture-or-drawing"
           ]
         },
@@ -4373,7 +4233,6 @@
       "structuredPromptStatus": "ready",
       "modelsDetected": [
         "equal-groups",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -4400,8 +4259,6 @@
       "modelsDetected": [
         "array",
         "equal-groups",
-        "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -4455,6 +4312,7 @@
       "modelsDetected": [
         "array",
         "equal-groups",
+        "number-bond",
         "picture-or-drawing"
       ]
     },
@@ -4482,7 +4340,6 @@
         "equal-groups",
         "number-bond",
         "number-line",
-        "table-or-chart",
         "picture-or-drawing"
       ]
     },
@@ -4508,7 +4365,6 @@
       "modelsDetected": [
         "array",
         "equal-groups",
-        "liquid-measure",
         "picture-or-drawing"
       ]
     },
@@ -4535,7 +4391,7 @@
       "modelsDetected": [
         "array",
         "equal-groups",
-        "money-model",
+        "number-bond",
         "picture-or-drawing"
       ]
     },
@@ -4562,7 +4418,6 @@
       "modelsDetected": [
         "array",
         "equal-groups",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -4642,9 +4497,7 @@
         "array",
         "equal-groups",
         "tape-diagram",
-        "measurement-scale",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -4672,11 +4525,9 @@
         "array",
         "equal-groups",
         "tape-diagram",
-        "measurement-scale",
         "ruler-or-length",
         "fraction-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -4703,9 +4554,7 @@
       "modelsDetected": [
         "equal-groups",
         "tape-diagram",
-        "measurement-scale",
         "ruler-or-length",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -4733,7 +4582,6 @@
         "array",
         "equal-groups",
         "tape-diagram",
-        "measurement-scale",
         "geometry-diagram",
         "picture-or-drawing"
       ]
@@ -4761,8 +4609,6 @@
       "modelsDetected": [
         "array",
         "tape-diagram",
-        "measurement-scale",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -4791,8 +4637,6 @@
         "equal-groups",
         "tape-diagram",
         "number-bond",
-        "measurement-scale",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -4820,9 +4664,6 @@
         "array",
         "tape-diagram",
         "number-bond",
-        "measurement-scale",
-        "table-or-chart",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -4849,7 +4690,6 @@
       "modelsDetected": [
         "array",
         "number-bond",
-        "geometry-diagram",
         "picture-or-drawing"
       ]
     },
@@ -4875,7 +4715,6 @@
       "modelsDetected": [
         "array",
         "number-bond",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -4901,8 +4740,6 @@
       "structuredPromptStatus": "ready",
       "modelsDetected": [
         "tape-diagram",
-        "measurement-scale",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -4929,10 +4766,8 @@
       "modelsDetected": [
         "equal-groups",
         "tape-diagram",
-        "measurement-scale",
         "ruler-or-length",
         "table-or-chart",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -4958,7 +4793,6 @@
       "modelsDetected": [
         "array",
         "ruler-or-length",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -4982,12 +4816,11 @@
       "structuredProblemCount": 1,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
+        "equal-groups",
         "tape-diagram",
         "number-line",
         "clock",
-        "measurement-scale",
         "ruler-or-length",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5014,6 +4847,7 @@
         "number-bond",
         "number-line",
         "clock",
+        "ruler-or-length",
         "picture-or-drawing"
       ]
     },
@@ -5037,9 +4871,9 @@
       "structuredProblemCount": 5,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
+        "tape-diagram",
         "number-line",
         "clock",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5065,7 +4899,6 @@
       "modelsDetected": [
         "number-line",
         "clock",
-        "table-or-chart",
         "picture-or-drawing"
       ]
     },
@@ -5093,7 +4926,9 @@
         "number-bond",
         "clock",
         "measurement-scale",
-        "place-value"
+        "place-value",
+        "fraction-model",
+        "picture-or-drawing"
       ]
     },
     {
@@ -5119,7 +4954,6 @@
         "number-bond",
         "number-line",
         "measurement-scale",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5145,8 +4979,8 @@
       "modelsDetected": [
         "tape-diagram",
         "measurement-scale",
+        "place-value",
         "table-or-chart",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5175,7 +5009,6 @@
         "measurement-scale",
         "liquid-measure",
         "fraction-model",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5234,7 +5067,6 @@
         "liquid-measure",
         "place-value",
         "fraction-model",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5263,7 +5095,6 @@
         "liquid-measure",
         "ruler-or-length",
         "table-or-chart",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5291,7 +5122,6 @@
         "measurement-scale",
         "liquid-measure",
         "place-value",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5321,7 +5151,6 @@
         "liquid-measure",
         "place-value",
         "table-or-chart",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5352,7 +5181,6 @@
         "ruler-or-length",
         "place-value",
         "table-or-chart",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5382,7 +5210,6 @@
         "ruler-or-length",
         "place-value",
         "table-or-chart",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5410,6 +5237,7 @@
         "tape-diagram",
         "number-line",
         "measurement-scale",
+        "liquid-measure",
         "picture-or-drawing"
       ]
     },
@@ -5440,7 +5268,6 @@
         "ruler-or-length",
         "place-value",
         "table-or-chart",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5469,7 +5296,6 @@
         "measurement-scale",
         "liquid-measure",
         "place-value",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5526,7 +5352,6 @@
       "modelsDetected": [
         "equal-groups",
         "tape-diagram",
-        "number-line",
         "measurement-scale",
         "liquid-measure",
         "ruler-or-length",
@@ -5559,9 +5384,7 @@
         "array",
         "equal-groups",
         "tape-diagram",
-        "measurement-scale",
         "table-or-chart",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5590,7 +5413,6 @@
         "array",
         "equal-groups",
         "number-bond",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5618,9 +5440,6 @@
         "array",
         "equal-groups",
         "tape-diagram",
-        "measurement-scale",
-        "table-or-chart",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5644,9 +5463,10 @@
       "structuredProblemCount": 5,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
+        "array",
+        "equal-groups",
         "number-bond",
         "table-or-chart",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5671,7 +5491,9 @@
       "structuredProblemCount": 4,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
-        "number-bond"
+        "array",
+        "number-bond",
+        "picture-or-drawing"
       ]
     },
     {
@@ -5695,11 +5517,9 @@
       "structuredProblemCount": 5,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
-        "array",
         "tape-diagram",
         "number-bond",
-        "measurement-scale",
-        "money-model",
+        "ruler-or-length",
         "picture-or-drawing"
       ]
     },
@@ -5725,12 +5545,11 @@
       "structuredPromptStatus": "ready",
       "modelsDetected": [
         "array",
+        "equal-groups",
         "tape-diagram",
         "number-bond",
-        "measurement-scale",
         "liquid-measure",
         "ruler-or-length",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5757,7 +5576,6 @@
       "structuredPromptStatus": "ready",
       "modelsDetected": [
         "number-bond",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5779,13 +5597,11 @@
         296,
         297
       ],
-      "structuredProblemCount": 4,
+      "structuredProblemCount": 3,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
         "array",
         "equal-groups",
-        "place-value",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5811,8 +5627,8 @@
       "structuredPromptStatus": "ready",
       "modelsDetected": [
         "array",
+        "tape-diagram",
         "number-bond",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5841,7 +5657,6 @@
         "tape-diagram",
         "number-bond",
         "measurement-scale",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5868,6 +5683,9 @@
       "structuredPromptStatus": "ready",
       "modelsDetected": [
         "array",
+        "tape-diagram",
+        "number-bond",
+        "liquid-measure",
         "picture-or-drawing"
       ]
     },
@@ -5919,7 +5737,6 @@
       "modelsDetected": [
         "array",
         "equal-groups",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5946,7 +5763,6 @@
       "modelsDetected": [
         "liquid-measure",
         "ruler-or-length",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -5998,7 +5814,6 @@
       "modelsDetected": [
         "array",
         "table-or-chart",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6027,7 +5842,6 @@
         "liquid-measure",
         "ruler-or-length",
         "table-or-chart",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6053,10 +5867,8 @@
       "modelsDetected": [
         "array",
         "tape-diagram",
-        "measurement-scale",
         "place-value",
         "table-or-chart",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6084,7 +5896,6 @@
         "equal-groups",
         "place-value",
         "table-or-chart",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6111,7 +5922,6 @@
       "modelsDetected": [
         "tape-diagram",
         "measurement-scale",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6162,12 +5972,10 @@
       "structuredPromptStatus": "ready",
       "modelsDetected": [
         "number-bond",
-        "number-line",
         "ruler-or-length",
         "table-or-chart",
         "area-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6195,7 +6003,6 @@
         "ruler-or-length",
         "area-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6223,7 +6030,6 @@
         "ruler-or-length",
         "area-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6249,11 +6055,8 @@
       "modelsDetected": [
         "array",
         "equal-groups",
-        "measurement-scale",
         "ruler-or-length",
-        "table-or-chart",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6281,7 +6084,6 @@
         "ruler-or-length",
         "area-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6307,10 +6109,8 @@
       "modelsDetected": [
         "array",
         "ruler-or-length",
-        "table-or-chart",
         "area-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6339,7 +6139,6 @@
         "ruler-or-length",
         "area-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6368,7 +6167,6 @@
         "ruler-or-length",
         "area-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6395,10 +6193,9 @@
         "array",
         "number-bond",
         "ruler-or-length",
+        "fraction-model",
         "area-model",
-        "geometry-diagram",
-        "money-model",
-        "picture-or-drawing"
+        "geometry-diagram"
       ]
     },
     {
@@ -6424,7 +6221,6 @@
         "ruler-or-length",
         "area-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6453,7 +6249,6 @@
         "ruler-or-length",
         "area-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6481,7 +6276,6 @@
         "ruler-or-length",
         "area-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6505,9 +6299,9 @@
       "structuredProblemCount": 2,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
+        "number-bond",
         "ruler-or-length",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6537,9 +6331,7 @@
         "number-line",
         "ruler-or-length",
         "table-or-chart",
-        "geometry-diagram",
-        "money-model",
-        "picture-or-drawing"
+        "geometry-diagram"
       ]
     },
     {
@@ -6565,7 +6357,6 @@
       "modelsDetected": [
         "ruler-or-length",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6594,7 +6385,6 @@
         "ruler-or-length",
         "fraction-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6618,7 +6408,6 @@
       "structuredProblemCount": 4,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
-        "ruler-or-length",
         "fraction-model",
         "picture-or-drawing"
       ]
@@ -6647,7 +6436,6 @@
       "modelsDetected": [
         "liquid-measure",
         "fraction-model",
-        "area-model",
         "geometry-diagram",
         "picture-or-drawing"
       ]
@@ -6704,7 +6492,6 @@
         "ruler-or-length",
         "table-or-chart",
         "fraction-model",
-        "geometry-diagram",
         "picture-or-drawing"
       ]
     },
@@ -6734,7 +6521,6 @@
         "liquid-measure",
         "table-or-chart",
         "fraction-model",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6841,9 +6627,7 @@
       "structuredPromptStatus": "ready",
       "modelsDetected": [
         "ruler-or-length",
-        "table-or-chart",
         "fraction-model",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6872,7 +6656,6 @@
         "liquid-measure",
         "fraction-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6898,11 +6681,10 @@
       "structuredPromptStatus": "ready",
       "modelsDetected": [
         "equal-groups",
+        "tape-diagram",
         "number-bond",
-        "measurement-scale",
         "ruler-or-length",
         "fraction-model",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6926,11 +6708,9 @@
       "structuredProblemCount": 1,
       "structuredPromptStatus": "review-source-layout",
       "modelsDetected": [
-        "measurement-scale",
         "ruler-or-length",
         "fraction-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -6959,7 +6739,6 @@
         "number-line",
         "ruler-or-length",
         "fraction-model",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7014,7 +6793,6 @@
       "structuredPromptStatus": "ready",
       "modelsDetected": [
         "number-line",
-        "ruler-or-length",
         "fraction-model",
         "picture-or-drawing"
       ]
@@ -7043,7 +6821,6 @@
         "number-line",
         "ruler-or-length",
         "fraction-model",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7072,7 +6849,6 @@
         "number-line",
         "ruler-or-length",
         "fraction-model",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7129,7 +6905,6 @@
         "liquid-measure",
         "fraction-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7156,7 +6931,6 @@
         "number-bond",
         "number-line",
         "fraction-model",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7180,10 +6954,10 @@
       "structuredProblemCount": 1,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
+        "number-bond",
         "number-line",
-        "table-or-chart",
+        "ruler-or-length",
         "fraction-model",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7240,7 +7014,6 @@
         "number-line",
         "fraction-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7295,7 +7068,6 @@
         "number-bond",
         "number-line",
         "fraction-model",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7320,9 +7092,10 @@
       "structuredProblemCount": 2,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
+        "number-line",
+        "ruler-or-length",
         "fraction-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7351,7 +7124,6 @@
         "liquid-measure",
         "fraction-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7427,9 +7199,9 @@
       "structuredProblemCount": 4,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
+        "equal-groups",
         "tape-diagram",
         "number-line",
-        "measurement-scale",
         "table-or-chart",
         "graph-or-plot",
         "fraction-model",
@@ -7459,9 +7231,8 @@
       "modelsDetected": [
         "array",
         "tape-diagram",
-        "measurement-scale",
+        "number-line",
         "graph-or-plot",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7487,13 +7258,9 @@
       "structuredProblemCount": 5,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
-        "tape-diagram",
         "number-line",
-        "measurement-scale",
         "ruler-or-length",
-        "table-or-chart",
         "graph-or-plot",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7518,8 +7285,6 @@
       "structuredPromptStatus": "ready",
       "modelsDetected": [
         "tape-diagram",
-        "number-line",
-        "measurement-scale",
         "table-or-chart",
         "graph-or-plot",
         "picture-or-drawing"
@@ -7577,8 +7342,8 @@
         "equal-groups",
         "tape-diagram",
         "number-line",
-        "measurement-scale",
         "ruler-or-length",
+        "table-or-chart",
         "graph-or-plot",
         "fraction-model",
         "picture-or-drawing"
@@ -7607,7 +7372,6 @@
       "modelsDetected": [
         "tape-diagram",
         "number-line",
-        "measurement-scale",
         "ruler-or-length",
         "table-or-chart",
         "graph-or-plot",
@@ -7641,7 +7405,6 @@
         "table-or-chart",
         "graph-or-plot",
         "fraction-model",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7673,7 +7436,6 @@
         "table-or-chart",
         "graph-or-plot",
         "fraction-model",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7701,7 +7463,6 @@
         "liquid-measure",
         "table-or-chart",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7733,7 +7494,6 @@
         "table-or-chart",
         "fraction-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7763,7 +7523,6 @@
         "ruler-or-length",
         "table-or-chart",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7792,12 +7551,9 @@
         "equal-groups",
         "tape-diagram",
         "number-bond",
-        "measurement-scale",
         "ruler-or-length",
-        "place-value",
         "table-or-chart",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7826,7 +7582,6 @@
         "ruler-or-length",
         "table-or-chart",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7850,8 +7605,8 @@
       "structuredProblemCount": 6,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
-        "measurement-scale",
         "ruler-or-length",
+        "table-or-chart",
         "geometry-diagram",
         "picture-or-drawing"
       ]
@@ -7877,7 +7632,6 @@
       "structuredProblemCount": 4,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
-        "ruler-or-length",
         "area-model",
         "geometry-diagram",
         "picture-or-drawing"
@@ -7904,9 +7658,6 @@
       "structuredProblemCount": 7,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
-        "number-bond",
-        "measurement-scale",
-        "ruler-or-length",
         "table-or-chart",
         "area-model",
         "geometry-diagram",
@@ -7934,7 +7685,6 @@
       "structuredProblemCount": 4,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
-        "measurement-scale",
         "table-or-chart",
         "geometry-diagram",
         "picture-or-drawing"
@@ -7962,10 +7712,8 @@
       "structuredPromptStatus": "ready",
       "modelsDetected": [
         "number-bond",
-        "measurement-scale",
         "table-or-chart",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -7989,7 +7737,6 @@
       "structuredPromptStatus": "ready",
       "modelsDetected": [
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -8014,10 +7761,9 @@
       "structuredProblemCount": 4,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
-        "measurement-scale",
         "ruler-or-length",
+        "area-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -8044,7 +7790,6 @@
       "modelsDetected": [
         "ruler-or-length",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -8072,7 +7817,6 @@
         "number-bond",
         "ruler-or-length",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -8097,10 +7841,8 @@
       "structuredPromptStatus": "ready",
       "modelsDetected": [
         "number-bond",
-        "measurement-scale",
         "ruler-or-length",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -8127,8 +7869,7 @@
       "modelsDetected": [
         "ruler-or-length",
         "table-or-chart",
-        "geometry-diagram",
-        "money-model"
+        "geometry-diagram"
       ]
     },
     {
@@ -8153,7 +7894,6 @@
       "modelsDetected": [
         "ruler-or-length",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -8177,7 +7917,7 @@
       "structuredProblemCount": 3,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
-        "array",
+        "tape-diagram",
         "ruler-or-length",
         "area-model",
         "geometry-diagram",
@@ -8206,7 +7946,6 @@
       "modelsDetected": [
         "tape-diagram",
         "number-line",
-        "measurement-scale",
         "ruler-or-length",
         "table-or-chart",
         "graph-or-plot",
@@ -8265,7 +8004,6 @@
       "modelsDetected": [
         "ruler-or-length",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -8296,7 +8034,6 @@
         "graph-or-plot",
         "area-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -8321,12 +8058,10 @@
       "structuredProblemCount": 6,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
-        "measurement-scale",
         "ruler-or-length",
         "place-value",
         "fraction-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -8354,7 +8089,6 @@
         "ruler-or-length",
         "table-or-chart",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -8380,7 +8114,6 @@
       "modelsDetected": [
         "ruler-or-length",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -8406,14 +8139,9 @@
       "structuredProblemCount": 4,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
-        "array",
-        "tape-diagram",
-        "number-line",
-        "measurement-scale",
         "ruler-or-length",
         "graph-or-plot",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -8469,7 +8197,6 @@
       "modelsDetected": [
         "ruler-or-length",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -8497,7 +8224,6 @@
         "number-bond",
         "ruler-or-length",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -8522,10 +8248,8 @@
       "modelsDetected": [
         "equal-groups",
         "tape-diagram",
-        "measurement-scale",
         "ruler-or-length",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -8549,14 +8273,9 @@
       "structuredProblemCount": 1,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
-        "array",
-        "tape-diagram",
-        "number-bond",
-        "measurement-scale",
         "ruler-or-length",
         "fraction-model",
         "geometry-diagram",
-        "money-model",
         "picture-or-drawing"
       ]
     },
@@ -8581,8 +8300,9 @@
       "structuredProblemCount": 4,
       "structuredPromptStatus": "ready",
       "modelsDetected": [
+        "ruler-or-length",
         "fraction-model",
-        "money-model",
+        "geometry-diagram",
         "picture-or-drawing"
       ]
     },

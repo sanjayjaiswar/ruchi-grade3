@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m4-l7",
+  "teacherEditionPdfSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m4-teacher/page-086.png",
+      "sha256": "06d4a585bdada369f77e238fcff69662d777567609a3ac0a4f1b71b7a11fd8d4",
+      "pdfPage": 86,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 7 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-087.png",
+      "sha256": "fad2aa5a457daaf82a03377506bf7d14f719760d6a63564ea76b3c6dcab59443",
+      "pdfPage": 87,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 7 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-222.png",
+      "sha256": "6feb4054e567b33d41d1189bf346622451c10be28381d66a27f3a4f812242822",
+      "pdfPage": 222,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 7 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m4-teacher/page-086.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "use a straight edge to draw a grid of equal size squares"
+        ],
+        "answerKeyEvidence": "a. Grid lines drawn inside rectangle; side lengths labeled; 3, 4, 12. b. Grid lines drawn inside rectangle; side lengths labeled; 5, 4, 20. c. Grid lines drawn inside rectangle; side lengths labeled; 2, 7, 14. d. Grid lines drawn inside rectangle; side lengths labeled; 7, 4, 28. e. Grid lines drawn inside rectangle; side lengths labeled; 1, 3, 3. f. Grid lines drawn inside rectangle; side lengths labeled; 4, 2, 8.",
+        "layout": {
+          "family": "six-labeled-rectangles-on-common-perimeter-grid",
+          "subpartCount": 6,
+          "modelPrimitive": "tight-official-a-through-f-floor-plan",
+          "modelCounts": [
+            12,
+            20,
+            14,
+            28,
+            3,
+            8
+          ],
+          "modelOrientation": "single-common-grid-over-six-equations",
+          "responseStructure": "grid-label-factor-pairs-and-find-six-areas",
+          "sourceFirst": true,
+          "sourceCropCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m4-teacher/page-087.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "area of benjamin’s bedroom floor"
+        ],
+        "answerKeyEvidence": "a. Side lengths labeled as 9 feet and 11 feet. b. Grid lines drawn inside rectangle. c. 99.",
+        "layout": {
+          "family": "bedroom-perimeter-grid-to-nine-by-eleven-array",
+          "subpartCount": 3,
+          "modelPrimitive": "tight-official-bedroom-perimeter-grid",
+          "modelCounts": [
+            9,
+            11,
+            99
+          ],
+          "modelOrientation": "figure-over-three-part-response",
+          "responseStructure": "label-draw-grid-and-find-total",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m4-teacher/page-087.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "mrs. young’s art class needs to create a mural"
+        ],
+        "answerKeyEvidence": "No; explanations will vary.",
+        "layout": {
+          "family": "mural-perimeter-grid-area-check",
+          "subpartCount": 1,
+          "modelPrimitive": "tight-official-mural-perimeter-grid",
+          "modelCounts": [
+            35
+          ],
+          "modelOrientation": "figure-over-open-response",
+          "responseStructure": "check-marked-area-and-explain",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m4-teacher/page-087.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "mila skip-counts by fours and jorge skip-counts by sixes"
+        ],
+        "answerKeyEvidence": "a. Answers will vary. b. 24.",
+        "layout": {
+          "family": "four-and-six-skip-count-common-array",
+          "subpartCount": 2,
+          "modelPrimitive": "open-picture-number-and-word-response",
+          "modelCounts": [
+            4,
+            6,
+            24
+          ],
+          "modelOrientation": "vertical-two-part-response",
+          "responseStructure": "construct-common-array-and-give-possible-total",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    }
+  ]
+}

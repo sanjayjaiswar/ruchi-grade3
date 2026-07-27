@@ -3,7 +3,7 @@
   "lessonId": "m1-l18",
   "moduleId": "m1",
   "lessonNumber": 18,
-  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "generatedAt": "2026-07-27T02:56:13.408Z",
   "source": {
     "teacherEditionPdf": "EurekaMath-Sources/Module_1/g3_m1_teacher_edition_v1_3_1.pdf",
     "teacherEditionSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
@@ -40,13 +40,160 @@
   "objective": "Apply the distributive property to decompose units.",
   "instructionalContract": {
     "instructionalMode": "concept-development",
-    "applicationProblemText": "?\n        In anticipation of using the distributive property with division in Lesson 19, ask the following: Do you\n         think the break apart and distribute strategy can be used with division? What might that look like?\n\nExit Ticket (3 minutes)\nAfter the",
-    "conceptDevelopmentText": "relate to today’s Application Problem?\n        In anticipation of using the distributive property with division in Lesson 19, ask the following: Do you\n         think the break apart and distribute strategy can be used with division? What might that look like?\n\nExit Ticket (3 minutes)\nAfter the",
+    "applicationProblemText": "A parking structure has 10 levels. There are 3 cars parked on each level. How many cars are parked in the\nstructure?\n\n\nNote: 10 × 3 = 30 is the same problem used in Problem 2 of the Concept Development, only without the\ncontext provided here. Solving the problem ahead of time de-emphasizes the answer so that students more\neasily focus attention on the new concept of decomposing with number bonds.\n\n\n                       Lesson 18:           Apply the distributive property to decompose units.              230\n\n                        ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                                              Lesson 18 3 1",
+    "conceptDevelopmentText": "Materials: (S) Personal white board\n\nProblem 1: Use number bonds to decompose numbers and apply the distributive property.\nProject an array for 7 × 3 with a line drawn as shown. Write 7 × 3 next to the array.\n    T: How many threes?\n    S: 7 threes.\n    T: The dotted line shows a way to break apart the array.                    Sample Teacher Board\n         The 7 threes are broken into…?\n    S: 5 threes and 2 threes.\n    T: Let’s draw our number bonds.                                                 7×3\n    S: (Draw the number bond shown to the right.)\n    T: Write the equation that shows how to add the two\n         parts.\n    S: (Write 5 threes + 2 threes = 7 threes.)                                         5 threes + 2 threes = 7 threes\n    T: Whisper to a partner the two multiplication sentences\n         you used to help you solve 7 × 3.\n    S: (Whisper 5 × 3 = 15 and 2 × 3 = 6.)\n    T: (Draw a second number bond using the expressions\n         (5 × 3) and (2 × 3).) The number bond is another way to\n         show breaking apart. This shows how we partitioned\n         the array and wrote the number bond using our number\n         sentences.                                                                        (5 × 3) + (2 × 3) = _____\n\n    T: Let’s rewrite this as the addition of two products using                                      15 + 6 = 21\n         my frame. (Point to the equation below.)\n               (__ × 3) + (__ × 3) = ___ × 3                                                          7 × 3 = 21\n               ______ + ______ = ______\n    S: (Write.)\n               (5 × 3) + (2 × 3) = 7 × 3\n                     15 + 6 = 21\n    T: How does the number sentence show the number\n         bond?                                                                     NOTES ON\n    S: It shows the 7 broken into 5 and 2.  And, the threes                       MULTIPLE MEANS\n         are shared with both parts.  Yes, 5 threes and 2                         OF ACTION AND\n         threes.  One part has 5 threes, and the other part\n                                                                                   EXPRESSION:\n         has 2 threes.\n                                                                                                   Encourage students who need extra\n    Repeat the process with 9 × 4.                                                                 support to draw an array before using\n    T: Let’s call it the break apart and distribute strategy. The                                  the number bond to decompose.\n       number bond helps us see that we can find the total by\n       adding two smaller parts together.\n\n\n                         Lesson 18:          Apply the distributive property to decompose units.                                           231\n\n                         ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                              Lesson 18 3 1\n\n\nProblem 2: Use number bonds and the distributive property.\n    T:  (Write 10 × 3.) How many threes?\n    S:  10 threes.\n    T:  What are some ways we can break apart 10?\n    S:  5 and 5.  6 and 4.  7 and 3.  8 and 2.\n    T:  So, if we were counting apples, that would be 5 apples and 5 apples or 6 apples and 4 apples?\n    S:  Yes.\n    T:  But we aren’t counting apples. What are we counting?\n    S:  Threes.\n    T:  So, that would be 6 threes and…?\n    S:  4 threes.\n    T:  Let’s draw our number bonds.\n    S:  (Draw number bond shown to the right.)\n    T:  Write the equation that shows how to add the two parts.\n        Start with 6 threes and 4 threes.\n    S: (Write 6 threes + 4 threes = 10 threes.)\n    T: Rewrite this as the addition of two products using\n        my frame. (Point to the equation below.)\n              (__ × 3) + (__ × 3) = ___ × 3\n              ______ + ______ = ______\n    S: (Write.)\n              (6 × 3) + (4 × 3) = 10 × 3\n                   18 + 12      = 30\nRepeat the process with 8 × 4.",
     "fluencyPracticeText": " Sprint: Add or Subtract Using 5 2.NBT.5                    (9 minutes)\n\nSprint: Add or Subtract Using 5 (9 minutes)\nMaterials: (S) Add or Subtract using 5 Sprint\n\nNote: This activity builds a foundation for multiplication using units of 5 through reviewing skip-counting from\nGrade 2. See Lesson 2 for the directions for administering a Sprint.\nBetween Sprints, include the following group counts in place of movement exercises.\n        Count by threes to 30, think/talk forward and backward.\n        Count by sixes to 30, forward and backward.\n        Count by fours to 40, forward and backward.",
     "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment by\nspecifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.\n\n\n                       Lesson 18:          Apply the distributive property to decompose units.              232\n\n                       ©2015 Great Minds. eureka-math.org\n\nA STORY OF UNITS                                                                              Lesson 18 3 1",
-    "studentDebriefText": ", instruct students to complete the",
-    "teacherStudentSequence": [],
-    "teacherPrompts": [],
+    "studentDebriefText": "Lesson Objective: Apply the distributive property to\ndecompose units.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Compare the number bond and array models for\n         showing the break apart and distribute strategy.\n        Share work for Problem 4. Compare students’\n         number choices.\n        Why do you think we use the number bond as a method for breaking a total into two parts? How was\n         this strategy helpful to find the answer to a larger fact in Problem 7?\n        How does Problem 1 in the Concept Development relate to today’s Application Problem?\n        In anticipation of using the distributive property with division in Lesson 19, ask the following: Do you\n         think the break apart and distribute strategy can be used with division? What might that look like?",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "How many threes?"
+      },
+      {
+        "speaker": "students",
+        "text": "7 threes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "The dotted line shows a way to break apart the array. Sample Teacher Board The 7 threes are broken into…?"
+      },
+      {
+        "speaker": "students",
+        "text": "5 threes and 2 threes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s draw our number bonds. 7×3"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw the number bond shown to the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the equation that shows how to add the two parts."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 5 threes + 2 threes = 7 threes.) 5 threes + 2 threes = 7 threes"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Whisper to a partner the two multiplication sentences you used to help you solve 7 × 3."
+      },
+      {
+        "speaker": "students",
+        "text": "(Whisper 5 × 3 = 15 and 2 × 3 = 6.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw a second number bond using the expressions (5 × 3) and (2 × 3).) The number bond is another way to show breaking apart. This shows how we partitioned the array and wrote the number bond using our number sentences. (5 × 3) + (2 × 3) = _____"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s rewrite this as the addition of two products using 15 + 6 = 21 my frame. (Point to the equation below.) (__ × 3) + (__ × 3) = ___ × 3 7 × 3 = 21 ______ + ______ = ______"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write.) (5 × 3) + (2 × 3) = 7 × 3 15 + 6 = 21"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How does the number sentence show the number bond? NOTES ON"
+      },
+      {
+        "speaker": "students",
+        "text": "It shows the 7 broken into 5 and 2.  And, the threes MULTIPLE MEANS are shared with both parts.  Yes, 5 threes and 2 OF ACTION AND threes.  One part has 5 threes, and the other part EXPRESSION: has 2 threes. Encourage students who need extra Repeat the process with 9 × 4. support to draw an array before using"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s call it the break apart and distribute strategy. The the number bond to decompose. number bond helps us see that we can find the total by adding two smaller parts together. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 18 3 1"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 10 × 3.) How many threes?"
+      },
+      {
+        "speaker": "students",
+        "text": "10 threes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What are some ways we can break apart 10?"
+      },
+      {
+        "speaker": "students",
+        "text": "5 and 5.  6 and 4.  7 and 3.  8 and 2."
+      },
+      {
+        "speaker": "teacher",
+        "text": "So, if we were counting apples, that would be 5 apples and 5 apples or 6 apples and 4 apples?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "But we aren’t counting apples. What are we counting?"
+      },
+      {
+        "speaker": "students",
+        "text": "Threes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "So, that would be 6 threes and…?"
+      },
+      {
+        "speaker": "students",
+        "text": "4 threes."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s draw our number bonds."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw number bond shown to the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the equation that shows how to add the two parts. Start with 6 threes and 4 threes."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 6 threes + 4 threes = 10 threes.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Rewrite this as the addition of two products using my frame. (Point to the equation below.) (__ × 3) + (__ × 3) = ___ × 3 ______ + ______ = ______"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write.) (6 × 3) + (4 × 3) = 10 × 3 18 + 12 = 30 Repeat the process with 8 × 4."
+      }
+    ],
+    "teacherPrompts": [
+      "How many threes?",
+      "The dotted line shows a way to break apart the array. Sample Teacher Board The 7 threes are broken into…?",
+      "Let’s draw our number bonds. 7×3",
+      "Write the equation that shows how to add the two parts.",
+      "Whisper to a partner the two multiplication sentences you used to help you solve 7 × 3.",
+      "(Draw a second number bond using the expressions (5 × 3) and (2 × 3).) The number bond is another way to show breaking apart. This shows how we partitioned the array and wrote the number bond using our number sentences. (5 × 3) + (2 × 3) = _____",
+      "Let’s rewrite this as the addition of two products using 15 + 6 = 21 my frame. (Point to the equation below.) (__ × 3) + (__ × 3) = ___ × 3 7 × 3 = 21 ______ + ______ = ______",
+      "How does the number sentence show the number bond? NOTES ON",
+      "Let’s call it the break apart and distribute strategy. The the number bond to decompose. number bond helps us see that we can find the total by adding two smaller parts together. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 18 3 1",
+      "(Write 10 × 3.) How many threes?",
+      "What are some ways we can break apart 10?",
+      "So, if we were counting apples, that would be 5 apples and 5 apples or 6 apples and 4 apples?",
+      "But we aren’t counting apples. What are we counting?",
+      "So, that would be 6 threes and…?",
+      "Let’s draw our number bonds.",
+      "Write the equation that shows how to add the two parts. Start with 6 threes and 4 threes.",
+      "Rewrite this as the addition of two products using my frame. (Point to the equation below.) (__ × 3) + (__ × 3) = ___ × 3 ______ + ______ = ______"
+    ],
     "debriefPrompt": "Compare the number bond and array models for showing the break apart and distribute strategy",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
@@ -114,30 +261,123 @@
     "modelsDetected": [
       "array",
       "number-bond",
-      "geometry-diagram",
       "picture-or-drawing"
     ],
     "sourceEvidence": {
       "array": [
+        "Project an array for 7 × 3 with a line drawn as shown. Write 7 × 3 next to the array.",
+        "T: The dotted line shows a way to break apart the array. Sample Teacher Board",
+        "the array and wrote the number bond using our number",
+        "Repeat the process with 9 × 4. support to draw an array before using",
         "7. There are 12 rows of bottled drinks in the vending machine. Each row has 10 bottles. How many bottles"
       ],
       "number-bond": [
         "Apply the distributive property to decompose units.",
-        "think the break apart and distribute strategy can be used with division? What might that look like?",
-        "think the break apart and distribute strategy can be used with division? What might that look like?",
-        "Lesson 18: Apply the distributive property to decompose units. 236",
-        "playing in the tournament? Use the break apart and distribute strategy, and draw a number bond to",
-        "Lesson 18: Apply the distributive property to decompose units. 237"
-      ],
-      "geometry-diagram": [
-        "6. What is the total number of sides on 8 triangles?"
+        "Lesson 18: Apply the distributive property to decompose units. 230",
+        "Problem 1: Use number bonds to decompose numbers and apply the distributive property.",
+        "T: The dotted line shows a way to break apart the array. Sample Teacher Board",
+        "S: (Draw the number bond shown to the right.)",
+        "T: (Draw a second number bond using the expressions",
+        "(5 × 3) and (2 × 3).) The number bond is another way to",
+        "the array and wrote the number bond using our number"
       ],
       "picture-or-drawing": [
+        "T: Let’s draw our number bonds. 7×3",
+        "S: (Draw the number bond shown to the right.)",
+        "T: (Draw a second number bond using the expressions",
+        "Repeat the process with 9 × 4. support to draw an array before using",
+        "T: Let’s draw our number bonds.",
+        "S: (Draw number bond shown to the right.)",
         "playing in the tournament? Use the break apart and distribute strategy, and draw a number bond to"
       ]
     },
     "sourceIllustrationRequired": false,
-    "animationSourceSequence": [],
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "The dotted line shows a way to break apart the array. Sample Teacher Board The 7 threes are broken into…?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s draw our number bonds. 7×3"
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw the number bond shown to the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the equation that shows how to add the two parts."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 5 threes + 2 threes = 7 threes.) 5 threes + 2 threes = 7 threes"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Whisper to a partner the two multiplication sentences you used to help you solve 7 × 3."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Draw a second number bond using the expressions (5 × 3) and (2 × 3).) The number bond is another way to show breaking apart. This shows how we partitioned the array and wrote the number bond using our number sentences. (5 × 3) + (2 × 3) = _____"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s rewrite this as the addition of two products using 15 + 6 = 21 my frame. (Point to the equation below.) (__ × 3) + (__ × 3) = ___ × 3 7 × 3 = 21 ______ + ______ = ______"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write.) (5 × 3) + (2 × 3) = 7 × 3 15 + 6 = 21"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How does the number sentence show the number bond? NOTES ON"
+      },
+      {
+        "speaker": "students",
+        "text": "It shows the 7 broken into 5 and 2.  And, the threes MULTIPLE MEANS are shared with both parts.  Yes, 5 threes and 2 OF ACTION AND threes.  One part has 5 threes, and the other part EXPRESSION: has 2 threes. Encourage students who need extra Repeat the process with 9 × 4. support to draw an array before using"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s call it the break apart and distribute strategy. The the number bond to decompose. number bond helps us see that we can find the total by adding two smaller parts together. ©2015 Great Minds. eureka-math.org A STORY OF UNITS Lesson 18 3 1"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 10 × 3.) How many threes?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "So, if we were counting apples, that would be 5 apples and 5 apples or 6 apples and 4 apples?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "But we aren’t counting apples. What are we counting?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s draw our number bonds."
+      },
+      {
+        "speaker": "students",
+        "text": "(Draw number bond shown to the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Write the equation that shows how to add the two parts. Start with 6 threes and 4 threes."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 6 threes + 4 threes = 10 threes.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Rewrite this as the addition of two products using my frame. (Point to the equation below.) (__ × 3) + (__ × 3) = ___ × 3 ______ + ______ = ______"
+      },
+      {
+        "speaker": "students",
+        "text": "(Write.) (6 × 3) + (4 × 3) = 10 × 3 18 + 12 = 30 Repeat the process with 8 × 4."
+      }
+    ],
     "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
   },
   "deliveryContract": {

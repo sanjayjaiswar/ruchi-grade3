@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m2-l19",
+  "teacherEditionPdfSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m2-teacher/page-238.png",
+      "sha256": "fc8bcd950d2ebf4183da1c50ac9fb796991eba32d7d907e4cbb0e6b2669dadff",
+      "pdfPage": 238,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 19 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-teacher/page-239.png",
+      "sha256": "7164dedfa7d6c159486fac1144241c1a368de4b44b3f95b8a24b99c8ee4f7d32",
+      "pdfPage": 239,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 19 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-answer-key/page-301.png",
+      "sha256": "260872d3eadb481fcae86031f2fe1c7c3e3837655e4c1d49c35c4c4d04a601b3",
+      "pdfPage": 301,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 19 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m2-teacher/page-238.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "solve the subtraction problems below. a. 340 cm - 60 cm b. 340 cm - 260 cm c. 513 g - 148 g d. 641 g - 387 g e. 700 ml - 52 ml f. 700 ml - 452 ml g. 6 km 802 m - 2 km 569 m h. 5 l 920 ml - 3 l 869"
+        ],
+        "answerKeyEvidence": "1. a. 280 cm 2. 149 km b. 80 cm 3. 8 kg c. 365 g 4. 235 L d. 254 g e. 648 mL f. 248 mL g. 4 km 233 m h. 2 L 51 mL",
+        "layout": {
+          "family": "table-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m2-teacher/page-239.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "david is driving from los angeles to san francisco. the total distance is 617"
+        ],
+        "answerKeyEvidence": "1. a. 280 cm 2. 149 km b. 80 cm 3. 8 kg c. 365 g 4. 235 L d. 254 g e. 648 mL f. 248 mL g. 4 km 233 m h. 2 L 51 mL",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m2-teacher/page-239.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "the piano weighs 289 kilograms more than the piano bench."
+        ],
+        "answerKeyEvidence": "1. a. 280 cm 2. 149 km b. 80 cm 3. 8 kg c. 365 g 4. 235 L d. 254 g e. 648 mL f. 248 mL g. 4 km 233 m h. 2 L 51 mL",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m2-teacher/page-239.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "tank a holds 165 fewer liters of water than tank b. tank b holds 400"
+        ],
+        "answerKeyEvidence": "1. a. 280 cm 2. 149 km b. 80 cm 3. 8 kg c. 365 g 4. 235 L d. 254 g e. 648 mL f. 248 mL g. 4 km 233 m h. 2 L 51 mL",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

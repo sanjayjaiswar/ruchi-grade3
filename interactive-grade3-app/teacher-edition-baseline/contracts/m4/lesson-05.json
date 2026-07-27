@@ -3,7 +3,7 @@
   "lessonId": "m4-l5",
   "moduleId": "m4",
   "lessonNumber": 5,
-  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "generatedAt": "2026-07-27T02:56:13.408Z",
   "source": {
     "teacherEditionPdf": "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf",
     "teacherEditionSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
@@ -38,11 +38,11 @@
   "objective": "Form rectangles by tiling with unit squares to make arrays.",
   "instructionalContract": {
     "instructionalMode": "concept-development",
-    "applicationProblemText": "s.                                                                   alternatives to drawing tiles inside\n                                                                                                                   rectangles on the Problem Set.\n                                                                                                                   Consider the following:",
+    "applicationProblemText": "Candice uses square centimeter tiles to find the side lengths of a rectangle\nas shown on the right. She says the side lengths are 5 centimeters and 7\ncentimeters. Her partner, Luis, uses a ruler to check Candice’s work and\nsays that the side lengths are 5 centimeters and 6 centimeters. Who is\nright? How do you know?\n\n\nNote: This problem reviews Lesson 4, particularly the relationship between\nthe number of tiles and side length. Invite students to discuss what Luis\nmight have done wrong.\n\n\n                         Lesson 5:                  Form rectangles by tiling with unit squares to make arrays.                               57\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                                Lesson 5 3 4",
     "conceptDevelopmentText": "Materials: (S) 15 square inch tiles, personal white board, straight edge, blank paper\n\nConcrete: Understand the relationship between side lengths and area.\nDraw or project the rectangle and side length shown on the right.\n                                                                               2 in\n    T:   Use square inch tiles to show this rectangle as an array. What\n         information do we know?\n    S:   There are 2 rows.  A side length is 2 inches.\n    T:   At your table, place tiles to make the known side.\n    S:   (Make 1 column of 2 tiles.)                                                 NOTES ON\n    T:   (Write below the diagram: Area = 12 square inches.)                         MULTIPLE MEANS\n         How many total tiles will we use to make our                                OF REPRESENTATION:\n         rectangle?                                                         Simplify and clarify your script for\n                                                                            English language learners and others.\n    S:   12 tiles.\n                                                                            Rephrase, “What information do we\n    T:   How many twos are in 12?                                           know?” to “How many rows of inch\n    S:   6 twos.                                                            squares? How do you know?”\n    T:   Use your tiles to make 6 sets of twos, and then                    Place the opaque 2 by 6 rectangle\n         skip-count to check your work.                                     pictured above over a square grid. As\n                                                                            an alternate way to check work, lift the\n    S:   (Make 6 groups of 2 tiles and skip-count.)                         rectangle to show the 12 squares\n         2, 4, 6, 8, 10, 12.                                                covered.\n    T:   Push your twos together to make a rectangle. (Allow\n         students time to complete. Add a question mark to\n         the diagram as shown on the right.) What is the\n         unknown side length?                                                                         ?\n    S:   Six.  Six tiles.  Six inches.\n    T:   (Replace the question mark with 6 in on the diagram.) Tell your            2 in\n         partner about the relationship between the side lengths and the\n         area. Write an equation to show your thinking. Be sure to include                  Area = 12 sq in\n         the units.\n    S:   2 inches × 6 inches = 12 square inches, so the area is the product of the side lengths.\n         (Write 2 inches × 6 inches = 12 square inches.)\nRepeat the process using a rectangle with a known side length of 5 inches and an area of 15 square inches.\nAsk students to write an unknown factor problem, 5 ×     = 15, and then use the tiles to solve.\n\n\n                         Lesson 5:                  Form rectangles by tiling with unit squares to make arrays.                               58\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 5 3 4\n\n\nConcrete/Pictorial: Form rectangles and determine area or side lengths by drawing to make arrays.\n    T:   Lay tiles on your personal white board to make a side 3 inches tall. Trace the outline of all 3 tiles.\n         Then, draw horizontal lines to show where they connect.\n    S:   (Draw a 3-inch tall side.)\n    T:   Label the side length.                                                              7 in\n    S:   (Label 3 in as shown.)\n    T:   Use your tiles to make another side 7 inches long.\n                                                                           3 in\n    S:   (Add tiles horizontally, using the top tile as one of the 7.)\n    T:   Trace the outline of the tiles. Draw vertical lines to show\n         where they connect. Label the side length.\n    S:   (Draw image shown on the right and label 7 in.)\n    T:   How many sets of threes will be in this rectangle?\n    S:   7 threes.\n    T:   Talk to your partner. Which strategy might you use to find the total area of the rectangle?\n    S:   We can draw in the rest of the squares and count them all.  Or, just skip-count 7 threes.\n          It would be easier to just multiply 7 inches × 3 inches and get 21 square inches.\n    T:   Many students suggested multiplying the side lengths to find the area. Let’s check this strategy by\n         drawing in the rest of the squares. Use your straight edge to draw the rest of the tiles in the\n         rectangle, and then skip-count to find the total area.\n    S:   (Draw the rest of the tiles, and then skip-count.) 3, 6, 9, 12, 15, 18, 21.\n    T:   Does 7 inches × 3 inches = 21 square inches accurately give the area of the rectangle?\n    S:   Yes!\n    T:   Clear your personal white board, and use your tiles to make\n         a side length of 6 inches. Trace the outline of all 6 tiles.                        6 in\n         Then, draw horizontal lines to show where they connect.\n    S:   (Draw image shown to the right.)\n    T:   Label the side length.\n    S:   (Label 6 in as shown on the right.)\n    T:   Write 6 × __ = 24 on your personal white board. Talk to a partner about how you can use this\n         equation to help find the other side length.\n    S:   From the equation, I know that the area is 24, so I can add rows of 6 tiles until I have 24 tiles. Then, I\n         can count the rows to find the side length.  I can skip-count by 6 to get to 24, and then I know the\n         other side length will be equal to the number of times I skip-count.  I know 6 × 4 = 24, so I know\n         that the other side length is 4.\n    T:   Choose a strategy to find the other side length, and then fill in the blank in the equation. (Allow\n         time for students to work.) What is the other side length?\n    S:   4 inches!\n\n\n                        Lesson 5:                  Form rectangles by tiling with unit squares to make arrays.                               59\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 5 3 4",
     "fluencyPracticeText": " Group Counting 3.OA.1                                            (3 minutes)\n Products in an Array 3.OA.3                                      (3 minutes)\n Find the Common Products 3.OA.7                                  (8 minutes)\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally changing the direction of the count.\n        Threes to 30\n        Sixes to 60\n        Sevens to 70\n        Nines to 90\nProducts in an Array (3 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity anticipates relating multiplication with area in Topic B’s lessons.\n    T:   (Project an array with 4 rows of 3 stars.) How many rows of stars do you see?\n    S:   4 rows.\n    T:   How many stars are in each row?\n    S:   3 stars.\n    T:   On your personal white board, write two multiplication sentences that can be used to find the total\n         number of stars.\n    S:   (Write 4 × 3 = 12 and 3 × 4 = 12.)\nContinue with the following possible sequence: 3 × 6, 7 × 5, 8 × 4, and 9 × 6.\n\n\n                        Lesson 5:                  Form rectangles by tiling with unit squares to make arrays.                               56\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                                Lesson 5 3 4\n\n\nFind the Common Products (8 minutes)\nMaterials: (S) Blank paper\n\nNote: This fluency activity reviews multiplication patterns from Module 3.\n    T:   (List the multiples of 4 and 8 in two different columns.)\n         Draw a line to match the products that appear in both\n         columns.\n    S:   (Match 8, 16, 24, 32, and 40.)\n    T:   (Write 2 × 4 = 8, etc., next to each matched product on the\n         left half of the paper.) Write the rest of the equations like\n         I did.\n    S:   (Write equations.)\n    T:   (Write 8 = 1 × 8, etc., next to each matched product on the\n         right half of the paper.) Write the rest of the equations like\n         I did.\n    S:   (Write equations.)\n    T:   (Write 2 × 4 =      × 8.) Say the true equation.\n    S:   2 × 4 = 1 × 8.\n    T:   (Write 2 × 4 = 1 × 8.) Write the remaining equal facts\n         as equations.\n    S:   (Write 4 × 4 = 2 × 8, 6 × 4 = 3 × 8, 8 × 4 = 4 × 8, and 10 × 4 = 5 × 8.)\n    T:   Discuss the patterns in your equations.\n    S:   Each multiple of 8 is also a multiple of 4.",
     "problemSetGuidanceText": "NOTES ON\n Students should do their personal best to complete the Problem\n                                                                                                                              MULTIPLE MEANS\n Set within the allotted 10 minutes. For some classes, it may be\n appropriate to modify the assignment by specifying which                                                                     OF ACTION AND\n problems they work on first. Some problems do not specify a                                                                  EXPRESSION:\n method for solving. Students should solve these problems using                                                    Some learners may benefit from\n the RDW approach used for Application Problems.                                                                   alternatives to drawing tiles inside\n                                                                                                                   rectangles on the Problem Set.\n                                                                                                                   Consider the following:",
-    "studentDebriefText": ", instruct students to complete\nthe",
+    "studentDebriefText": " Magnify the Problem Set to ease\n                                                                                                                     small motor tasks.\n Lesson Objective: Form rectangles by tiling with unit squares to                                                   Provide virtual or concrete\n make arrays.                                                                                                        manipulatives.\n                                                                                                                    Allow students to draw their own\n The Student Debrief is intended to invite reflection and active                                                     rectangles, perhaps with larger tiles,\n processing of the total lesson experience.                                                                          perhaps with smaller areas.\n Invite students to review their solutions for the Problem Set.\n They should check their work by comparing answers with a\n partner before going over answers as a class. Look for\n misconceptions or misunderstandings that can be\n addressed in the Debrief. Guide students in a conversation\n to debrief the Problem Set and process the lesson.\n Any combination of the questions below may be used to\n lead the discussion.\n           Compare Problems 1(b) and 1(e) and Problems\n            1(a) and 1(c). How does each pair show\n            commutativity?\n           How many more threes does the array in Problem\n            1(d) have compared to the array in Problem 1(a)?\n            How might the side lengths help you know that,\n            even without seeing the tiled array?\n           Compare Problems 1(c) and 1(f). How are the\nMP.8        areas related? (The area of 1(f) is half the area of\n            1(c).) How might you have figured that out just\n            by knowing the side lengths of each array?\n           In Problem 2, what strategy did you use to find\n            the unknown side length? Is there another way\n            you could have figured it out?\n           Students may have different solutions for\n            Problem 3. Invite them to share and compare\n            their work.\n\n\n                           Lesson 5:                  Form rectangles by tiling with unit squares to make arrays.                                             60\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                              Lesson 5 3 4",
     "teacherStudentSequence": [
       {
         "speaker": "teacher",
@@ -244,73 +244,53 @@
     "modelsDetected": [
       "array",
       "equal-groups",
-      "measurement-scale",
       "ruler-or-length",
-      "table-or-chart",
       "geometry-diagram",
-      "money-model",
       "picture-or-drawing"
     ],
     "sourceEvidence": {
       "array": [
-        "Form rectangles by tiling with unit squares to make arrays.",
         "T: Use square inch tiles to show this rectangle as an array. What",
         "S: (Make 1 column of 2 tiles.) NOTES ON",
         "T: How many twos are in 12? know?” to “How many rows of inch",
-        "Lesson 5: Form rectangles by tiling with unit squares to make arrays. 58",
-        "Concrete/Pictorial: Form rectangles and determine area or side lengths by drawing to make arrays.",
         "S: From the equation, I know that the area is 24, so I can add rows of 6 tiles until I have 24 tiles. Then, I",
-        "Lesson 5: Form rectangles by tiling with unit squares to make arrays. 59"
+        " Products in an Array 3.OA.3 (3 minutes)",
+        "Products in an Array (3 minutes)",
+        "T: (Project an array with 4 rows of 3 stars.) How many rows of stars do you see?",
+        "3. Mark has a total of 24 square inch tiles. He uses 18 square inch tiles to build one rectangular array. He"
       ],
       "equal-groups": [
         "S: (Make 6 groups of 2 tiles and skip-count.) rectangle to show the 12 squares"
       ],
-      "measurement-scale": [
-        "T: (Write below the diagram: Area = 12 square inches.) MULTIPLE MEANS",
-        "the diagram as shown on the right.) What is the",
-        "T: (Replace the question mark with 6 in on the diagram.) Tell your 2 in"
-      ],
       "ruler-or-length": [
-        "Concrete: Understand the relationship between side lengths and area.",
+        "Candice uses square centimeter tiles to find the side lengths of a rectangle",
+        "as shown on the right. She says the side lengths are 5 centimeters and 7",
+        "centimeters. Her partner, Luis, uses a ruler to check Candice’s work and",
+        "says that the side lengths are 5 centimeters and 6 centimeters. Who is",
+        "the number of tiles and side length. Invite students to discuss what Luis",
         "Draw or project the rectangle and side length shown on the right.",
         "S: There are 2 rows.  A side length is 2 inches.",
-        "unknown side length? ?",
-        "partner about the relationship between the side lengths and the",
-        "S: 2 inches × 6 inches = 12 square inches, so the area is the product of the side lengths.",
-        "Repeat the process using a rectangle with a known side length of 5 inches and an area of 15 square inches.",
-        "Concrete/Pictorial: Form rectangles and determine area or side lengths by drawing to make arrays."
-      ],
-      "table-or-chart": [
-        "T: At your table, place tiles to make the known side."
+        "unknown side length? ?"
       ],
       "geometry-diagram": [
-        "Form rectangles by tiling with unit squares to make arrays.",
-        "rectangles on the Problem Set.",
+        "Candice uses square centimeter tiles to find the side lengths of a rectangle",
         "Draw or project the rectangle and side length shown on the right.",
         "T: Use square inch tiles to show this rectangle as an array. What",
         "rectangle? Simplify and clarify your script for",
         "T: Use your tiles to make 6 sets of twos, and then Place the opaque 2 by 6 rectangle",
         "S: (Make 6 groups of 2 tiles and skip-count.) rectangle to show the 12 squares",
-        "T: Push your twos together to make a rectangle. (Allow"
-      ],
-      "money-model": [
-        "1. Use the centimeter side of a ruler to draw in the tiles, and then skip-count to find the unknown area.",
-        "a. Area: 18 square centimeters. d. Area: 24 square centimeters.",
-        "b. Area: _____ square centimeters. e. Area: 20 square centimeters.",
-        "c. Area: 18 square centimeters. _______ × _______ = _______",
-        "f. Area: _____ square centimeters.",
-        "4. Leon makes a rectangle with 32 square centimeter tiles. There are 4 equal rows of tiles.",
-        "b. Can Leon arrange all of his 32 square centimeter tiles into 6 equal rows? Explain your answer."
+        "T: Push your twos together to make a rectangle. (Allow",
+        "Repeat the process using a rectangle with a known side length of 5 inches and an area of 15 square inches."
       ],
       "picture-or-drawing": [
-        "s. alternatives to drawing tiles inside",
         "Draw or project the rectangle and side length shown on the right.",
         "T: (Write below the diagram: Area = 12 square inches.) MULTIPLE MEANS",
-        "skip-count to check your work. pictured above over a square grid. As",
         "the diagram as shown on the right.) What is the",
         "T: (Replace the question mark with 6 in on the diagram.) Tell your 2 in",
         "Concrete/Pictorial: Form rectangles and determine area or side lengths by drawing to make arrays.",
-        "Then, draw horizontal lines to show where they connect."
+        "Then, draw horizontal lines to show where they connect.",
+        "S: (Draw a 3-inch tall side.)",
+        "T: Trace the outline of the tiles. Draw vertical lines to show"
       ]
     },
     "sourceIllustrationRequired": false,

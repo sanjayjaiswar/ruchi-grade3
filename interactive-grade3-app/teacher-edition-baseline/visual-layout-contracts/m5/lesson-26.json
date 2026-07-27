@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l26",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-311.png",
+      "sha256": "ca3a19040803a2058c113cecc4d058a29bd731e1ac5fabf2cd8bacd7ea0ef51d",
+      "pdfPage": 311,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 26 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-312.png",
+      "sha256": "e2a1d0be67e79b3d0bbe39ac44ca28a010eec8a9d27356f60986e33996dd15bf",
+      "pdfPage": 312,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 26 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-412.png",
+      "sha256": "96363d1c799f81fdf34d6fd619216347d44bc57cf95c6ac4178b57acca7566d6",
+      "pdfPage": 412,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 26 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-413.png",
+      "sha256": "d9aa803b7d8c85417039c8ec07d46eb779abf3a6001ef7599d9a4f8d08b1cc3c",
+      "pdfPage": 413,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 26 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-311.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Partition the number line to show the fractional units."
+        ],
+        "answerKeyEvidence": "Halves: 0, 0; 2, 2; 4; number bonds completed. Thirds: 6, 6; 9, 9; 12, 12; number bonds completed.",
+        "layout": {
+          "family": "decompose-wholes-in-halves-and-thirds",
+          "subpartCount": 12,
+          "modelPrimitive": "two-number-lines-plus-four-whole-number-bonds",
+          "modelCounts": [
+            4,
+            12,
+            4
+          ],
+          "modelOrientation": "horizontal-zero-to-two-and-two-to-four",
+          "responseStructure": "complete-fraction-names-and-draw-bonds"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-312.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Write the fractions that name the whole numbers for each fractional unit."
+        ],
+        "answerKeyEvidence": "Halves: Answer provided. Thirds: 6/3, 9/3, 12/3. Fourths: 8/4, 12/4, 16/4. Sixths: 12/6, 18/6, 24/6.",
+        "layout": {
+          "family": "name-two-three-four-in-four-fractional-units",
+          "subpartCount": 12,
+          "modelPrimitive": "whole-mark-reference-line-plus-four-row-table",
+          "modelCounts": [
+            2,
+            3,
+            4,
+            6
+          ],
+          "modelOrientation": "horizontal-line-over-unit-by-whole-table",
+          "responseStructure": "retain-provided-halves-row-and-complete-thirds-fourths-sixths"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-312.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "meter of wire each day to make things."
+        ],
+        "answerKeyEvidence": "a. Number line representing 1 meter of wire; partitioned correctly into fourths; 4. b. 12 days.",
+        "layout": {
+          "family": "one-fourth-meter-wire-duration",
+          "subpartCount": 2,
+          "modelPrimitive": "open-number-line-workspace-to-authored-fourths-line",
+          "modelCounts": [
+            4,
+            12
+          ],
+          "modelOrientation": "horizontal-zero-to-one",
+          "responseStructure": "find-four-days-for-one-meter-and-twelve-for-three",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-312.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "pound of food each day."
+        ],
+        "answerKeyEvidence": "a. Number line representing 1 pound of food; partitioned correctly into thirds. b. Second number line representing 4 pounds of food; partitioned correctly into thirds; 1. c. 2.",
+        "layout": {
+          "family": "one-third-pound-daily-dog-food",
+          "subpartCount": 3,
+          "modelPrimitive": "open-two-line-workspace-to-authored-thirds-lines",
+          "modelCounts": [
+            3,
+            12
+          ],
+          "modelOrientation": "horizontal-zero-to-one-and-zero-to-four",
+          "responseStructure": "partition-and-find-one-pound-after-three-days-two-after-six",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    }
+  ]
+}

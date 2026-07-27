@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l23",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-271.png",
+      "sha256": "b023d659e650146726bb76367c46faca726ae00c4369550adff147445f9c4509",
+      "pdfPage": 271,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 23 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-272.png",
+      "sha256": "aac260b3da36242c130103cd1c0a59b24b33442dad219a0dd434e11b78da1111",
+      "pdfPage": 272,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 23 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-406.png",
+      "sha256": "5a87ce9941b96275125c6e00d4cc9e63dd13c4ccd677e84e35344f419361b411",
+      "pdfPage": 406,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 23 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-407.png",
+      "sha256": "8ceb0acca8fec0c0325c887250af0be77a551ddcd39dc9d3533075e8059a59f8",
+      "pdfPage": 407,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 23 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-271.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "On the number line above, use a red colored pencil to divide each whole into fourths."
+        ],
+        "answerKeyEvidence": "Number line divided into fourths and labeled correctly in red pencil.",
+        "layout": {
+          "family": "partition-shared-line-into-fourths",
+          "subpartCount": 12,
+          "modelPrimitive": "source-whole-mark-line-to-authored-fourths-line",
+          "modelCounts": [
+            12
+          ],
+          "modelOrientation": "horizontal-zero-to-three",
+          "responseStructure": "partition-and-label-zero-fourths-through-twelve-fourths"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-271.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "On the number line above, use a blue colored pencil to divide each whole into eighths."
+        ],
+        "answerKeyEvidence": "Number line divided into eighths and labeled correctly in blue pencil.",
+        "layout": {
+          "family": "partition-shared-line-into-eighths",
+          "subpartCount": 24,
+          "modelPrimitive": "source-whole-mark-line-to-three-contiguous-eighths-segments",
+          "modelCounts": [
+            24
+          ],
+          "modelOrientation": "horizontal-zero-to-three",
+          "responseStructure": "partition-and-label-zero-eighths-through-twenty-four-eighths"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-271.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "List the fractions that name the same place on the number line."
+        ],
+        "answerKeyEvidence": "0/4 = 0/8, 1/4 = 2/8, 2/4 = 4/8, 3/4 = 6/8, 4/4 = 8/8, 5/4 = 10/8, 6/4 = 12/8, 7/4 = 14/8, 8/4 = 16/8, 9/4 = 18/8, 10/4 = 20/8, 11/4 = 22/8, 12/4 = 24/8.",
+        "layout": {
+          "family": "thirteen-aligned-fourths-eighths-equivalences",
+          "subpartCount": 13,
+          "modelPrimitive": "shared-reference-line-plus-live-equivalent-pairs",
+          "modelCounts": [
+            13,
+            25
+          ],
+          "modelOrientation": "horizontal-zero-to-three",
+          "responseStructure": "list-zero-fourths-through-twelve-fourths-with-doubled-eighths"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-271.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Using your number line to help"
+        ],
+        "answerKeyEvidence": "7/2 = 14/4 = 28/8; number line drawn, divided, and labeled correctly with these fractions.",
+        "layout": {
+          "family": "show-fractions-equivalent-to-seven-halves",
+          "subpartCount": 3,
+          "modelPrimitive": "open-number-line-workspace-to-authored-three-to-four-line",
+          "modelCounts": [
+            7,
+            14,
+            28
+          ],
+          "modelOrientation": "horizontal-three-to-four",
+          "responseStructure": "draw-label-seven-halves-fourteenths-fourths-and-twenty-eighths-eighths",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m5-teacher/page-272.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Write two different fractions for the dot on the number line."
+        ],
+        "answerKeyEvidence": "1/3 = 2/6; 2/4 = 1/2 or 4/8; 5/4 = 10/8; 10/5 = 2/1; answers will vary.",
+        "layout": {
+          "family": "name-four-source-given-dots-two-ways",
+          "subpartCount": 4,
+          "modelPrimitive": "four-authored-plotted-point-lines",
+          "modelCounts": [
+            3,
+            2,
+            5,
+            10
+          ],
+          "modelOrientation": "four-horizontal-source-topology-lines",
+          "responseStructure": "retain-each-given-dot-and-write-two-valid-fraction-names"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m5-teacher/page-272.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Cameron and Terrance plan to run in the city race on Saturday."
+        ],
+        "answerKeyEvidence": "No; explanations will vary.",
+        "layout": {
+          "family": "compare-two-thirds-and-two-sixths-race-stops",
+          "subpartCount": 2,
+          "modelPrimitive": "open-number-line-workspace-to-two-authored-lines",
+          "modelCounts": [
+            2,
+            2
+          ],
+          "modelOrientation": "two-horizontal-zero-to-one-lines",
+          "responseStructure": "show-different-rest-points-and-explain",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    }
+  ]
+}

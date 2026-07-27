@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l21",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-288.png",
+      "sha256": "d9eab821a01e6047ea72d815227da3ea06f18ef9b0571d841144db88b909cc61",
+      "pdfPage": 288,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 21 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-289.png",
+      "sha256": "8066b0685e9f7d23e1086d4fd7fc125a0c403226ffb2fc8e5970992866dadecc",
+      "pdfPage": 289,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 21 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-495.png",
+      "sha256": "6d676e0e7db22bec00b3c7e82d903cdf61984c8188e1445da9202b181ca52c47",
+      "pdfPage": 495,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 21 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-496.png",
+      "sha256": "926bf08f5a75918d8a99cd2e2b873ad97e37b65ec6d6cd9d4d9460874ee74742",
+      "pdfPage": 496,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 21 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-288.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of 16 centimeters."
+        ],
+        "answerKeyEvidence": "a. 4 rectangles sketched and labeled b. 7 sq cm, 12 sq cm, 15 sq cm, 16 sq cm",
+        "layout": {
+          "family": "construct-four-perimeter-sixteen-centimeter-rectangles",
+          "subpartCount": 6,
+          "modelPrimitive": "four-live-sketch-slots+width-length-area-table",
+          "modelCounts": [
+            4,
+            16,
+            7,
+            12,
+            15,
+            16
+          ],
+          "modelOrientation": "four-sketches-over-record-and-two-part-response",
+          "responseStructure": "sketch-label-and-find-four-keyed-areas",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-288.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of 18 centimeters."
+        ],
+        "answerKeyEvidence": "a. 4 rectangles sketched and labeled b. 8 sq cm, 14 sq cm, 18 sq cm, 20 sq cm",
+        "layout": {
+          "family": "construct-four-perimeter-eighteen-centimeter-rectangles",
+          "subpartCount": 6,
+          "modelPrimitive": "four-live-sketch-slots+width-length-area-table",
+          "modelCounts": [
+            4,
+            18,
+            8,
+            14,
+            18,
+            20
+          ],
+          "modelOrientation": "four-sketches-over-record-and-two-part-response",
+          "responseStructure": "sketch-label-and-find-four-keyed-areas",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-289.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use centimeter grid paper to shade in as many rectangles as you can with the given perimeters."
+        ],
+        "answerKeyEvidence": "a. 2, 2 cm, 3 cm, 6 sq cm 5, 2 cm, 8 cm, 16 sq cm; 3 cm 7 cm, 21 sq cm; 4 cm, 6 cm, 24 sq cm; 5 cm, 5 cm, 25 sq cm b. Yes, explanations will vary.",
+        "layout": {
+          "family": "complete-perimeter-ten-and-twenty-rectangle-charts",
+          "subpartCount": 9,
+          "modelPrimitive": "two-live-width-length-area-tables",
+          "modelCounts": [
+            2,
+            5,
+            10,
+            20,
+            25
+          ],
+          "modelOrientation": "perimeter-ten-table-over-perimeter-twenty-table-over-response",
+          "responseStructure": "retain-first-rows-complete-charts-and-identify-square",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-289.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Macy and Gavin both draw rectangles with perimeters of 16 centimeters."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "explain-same-perimeter-different-area",
+          "subpartCount": 3,
+          "modelPrimitive": "two-open-rectangle-frames+evidence-table",
+          "modelCounts": [
+            2,
+            16
+          ],
+          "modelOrientation": "two-drawing-frames-over-required-evidence-and-response",
+          "responseStructure": "preserve-variable-words-and-pictures-without-sample",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m6-l6",
+  "teacherEditionPdfSha256": "74325e3dfcae94e1fe359552d3857a3c929b26c5cca327ee80ef45d651aa7358",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m6/workbook-page-29.png",
+      "sha256": "4105890efb0d5391da4b7dc2668a930f1260658284acdda7bd123b8ced0fa452",
+      "pdfPage": 86,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 6 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/workbook-page-30.png",
+      "sha256": "74f6f54b44dc8b43c26a6cf0b8bcfb0ba0d380709594644dfc325279c4e6ad86",
+      "pdfPage": 87,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 6 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/teacher-answer-page-153.png",
+      "sha256": "cc0c7274a4b6300369e62e5544080cce055e7db771647fb8d7e5abdcf0e1ad36",
+      "pdfPage": 153,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 6 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m6/workbook-page-29.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Coach Harris measures the heights of the children on his third-grade basketball team"
+        ],
+        "answerKeyEvidence": "a. 15, explanations will vary. b. 6. c. No, explanations will vary. d. 4.",
+        "layout": {
+          "family": "read-source-provided-basketball-height-line-plot",
+          "subpartCount": 4,
+          "modelPrimitive": "live-source-provided-nine-position-line-plot",
+          "modelCounts": [
+            15,
+            6,
+            4
+          ],
+          "modelOrientation": "horizontal-half-inch-line-plot-over-four-part-response",
+          "responseStructure": "count-total-less-than-mode-and-at-least",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set and answer-key pages. No full-page or task-bearing source crop is permitted. Printed data, line-plot Xs, labels, scales, and keys remain live authored structures; only student-created entries and responses are open in Blank."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m6/workbook-page-30.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Miss Vernier’s class is studying worms"
+        ],
+        "answerKeyEvidence": "a. 30, explanations will vary. b. No, explanations will vary. c. Length plotted correctly on line plot.",
+        "layout": {
+          "family": "read-source-provided-worm-length-line-plot-and-add-point",
+          "subpartCount": 3,
+          "modelPrimitive": "live-source-provided-nine-position-line-plot",
+          "modelCounts": [
+            30,
+            6,
+            8,
+            1
+          ],
+          "modelOrientation": "horizontal-quarter-inch-line-plot-over-three-part-response",
+          "responseStructure": "count-compare-combined-columns-and-add-four-and-three-quarters",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set and answer-key pages. No full-page or task-bearing source crop is permitted. Printed data, line-plot Xs, labels, scales, and keys remain live authored structures; only student-created entries and responses are open in Blank."
+      }
+    }
+  ]
+}

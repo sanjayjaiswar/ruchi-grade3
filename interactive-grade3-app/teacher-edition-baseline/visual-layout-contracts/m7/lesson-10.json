@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l10",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-146.png",
+      "sha256": "8fde60a2ce061053afa6ef7a39eb2ec626ec694da5965da2677cbd037b125d3c",
+      "pdfPage": 146,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 10 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-147.png",
+      "sha256": "01dc7cc6e19eb6642860ac64f2081a527190b4356a640b7debea8a863986b239",
+      "pdfPage": 147,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 10 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-478.png",
+      "sha256": "a61b2b437b5ee12bb17c99e874e78bb21e5024a74c6fda87083563b86636880d",
+      "pdfPage": 478,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 10 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-479.png",
+      "sha256": "313a0e7e3cbc63f331c4fde9e6e97acd3f773b63c73716ee7b939c3b77d9321c",
+      "pdfPage": 479,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 10 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-146.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use a 2-inch square to answer the questions below."
+        ],
+        "answerKeyEvidence": "a. 2-inch square traced red. b. New shape traced red. c. Answers vary. d. Shapes colored blue. e. Red; explanations vary. f. Area; explanations vary. g. Neither; explanations vary.",
+        "layout": {
+          "family": "trace-color-and-compare-square-and-new-shape",
+          "subpartCount": 7,
+          "modelPrimitive": "live-seven-row-task-table+two-open-tracing-spaces",
+          "modelCounts": [
+            2,
+            7
+          ],
+          "modelOrientation": "task-table-over-large-tracing-and-comparison-workspace",
+          "responseStructure": "trace-red-color-blue-identify-perimeter-area-and-compare",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-147.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Outline the perimeter of the shapes below with a red crayon."
+        ],
+        "answerKeyEvidence": "a. Perimeters of shapes outlined red. b. Explanations will vary.",
+        "layout": {
+          "family": "outline-three-printed-shape-perimeters",
+          "subpartCount": 2,
+          "modelPrimitive": "live-rhombus-triangle-parallelogram-set+explanation-space",
+          "modelCounts": [
+            3
+          ],
+          "modelOrientation": "three-shape-row-over-boundary-explanation",
+          "responseStructure": "outline-red-and-explain-perimeter-as-outside-boundary",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-147.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Outline the perimeter of this piece of paper with a highlighter."
+        ],
+        "answerKeyEvidence": "Paper outlined with highlighter.",
+        "layout": {
+          "family": "outline-this-paper-boundary",
+          "subpartCount": 1,
+          "modelPrimitive": "live-paper-rectangle-boundary",
+          "modelCounts": [
+            4
+          ],
+          "modelOrientation": "paper-boundary-over-answer-criterion",
+          "responseStructure": "highlight-only-outside-edge-once",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    }
+  ]
+}

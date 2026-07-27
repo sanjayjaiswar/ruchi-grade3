@@ -15,7 +15,7 @@ export const M6_TEACHER_OBJECTIVES: Record<number, string> = {
   2: 'Rotate tape diagrams vertically.',
   3: 'Create scaled bar graphs.',
   4: 'Solve one- and two-step problems involving graphs.',
-  5: 'Create ruler with 1-inch, 1/2-inch, and 1/4-inch intervals, and generate measurement data.',
+  5: 'Create ruler with 1-inch, ½-inch, and ¼-inch intervals, and generate measurement data.',
   6: 'Interpret measurement data from various line plots.',
   7: 'Represent measurement data with line plots.',
   8: 'Represent measurement data with line plots.',

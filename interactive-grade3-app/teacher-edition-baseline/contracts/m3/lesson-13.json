@@ -3,7 +3,7 @@
   "lessonId": "m3-l13",
   "moduleId": "m3",
   "lessonNumber": 13,
-  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "generatedAt": "2026-07-27T02:56:13.408Z",
   "source": {
     "teacherEditionPdf": "EurekaMath-Sources/Module_3/g3_m3_teacher_edition_v1_3_0.pdf",
     "teacherEditionSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
@@ -39,13 +39,201 @@
   "objective": "Identify and use arithmetic patterns to multiply.",
   "instructionalContract": {
     "instructionalMode": "concept-development",
-    "applicationProblemText": "s.                                                                                       students to record the nine skip-count,\n                                                                                                                and/or highlight the tens or ones.\n                                                                                                                As students solve Problem 2, it may be",
-    "conceptDevelopmentText": ", so students have the opportunity to apply some\nof the strategies they learned in the context of problem solving. Encourage them to check their answers to\nthe nines facts using new learning.",
-    "fluencyPracticeText": " Sprint: Multiply or Divide by 8 3.OA.7                          (8 minutes)\n Group Counting 3.OA.1                                           (4 minutes)\n Decompose Multiples of 9 3.OA.5                                 (3 minutes)\n\nSprint: Multiply or Divide by 8 (8 minutes)\n                                                                                                                           A NOTE ON\nMaterials: (S) Multiply or Divide by 8 Sprint                                                                              STANDARDS\n                                                                                                                           ALIGNMENT:\nNote: This Sprint reviews Lessons 10 and 11, focusing on the                                                    Some problems in the Sprint and Part 2\nrelationship between multiplying and dividing using units of                                                    of the",
+    "applicationProblemText": "Michaela and Gilda read the same book. It takes Michaela about 8 minutes to read a chapter and Gilda about\n10 minutes. There are 9 chapters in the book. How many fewer minutes does Michaela spend reading than\nGilda?\n\n\nNote: This problem comes after the Concept Development, so students have the opportunity to apply some\nof the strategies they learned in the context of problem solving. Encourage them to check their answers to\nthe nines facts using new learning.\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete the                                                                     NOTES ON\nProblem Set within the allotted 10 minutes. For some                                                                       MULTIPLE MEANS\nclasses, it may be appropriate to modify the assignment by                                                                 OF REPRESENTATION:\nspecifying which problems they work on first. Some                                                              Consider adjusting the Problem Set to\nproblems do not specify a method for solving. Students                                                          assist learners with perceptual\nshould solve these problems using the RDW approach used                                                         disabilities. Provide a table for\nfor Application Problems.                                                                                       students to record the nine skip-count,\n                                                                                                                and/or highlight the tens or ones.\n                                                                                                                As students solve Problem 2, it may be",
+    "conceptDevelopmentText": "Materials: (S) Personal white board, Problem Set\n\n  Part 1: Identify patterns in multiples of 9.\n       T:   During the fluency activity, we group counted nines to say the\n            multiples of 9. When we skip-count by nines, what are we adding\n            each time?\n       S:   9.\n       T:   Adding nines can be tricky. What’s a simplifying strategy for\n            adding 9?\n       S:   I can break apart 9 to make the next ten and then add what’s left\n            of the 9 to it.  I can add 10 and then subtract 1.\n       T:   (Lead students through applying the add 10, subtract 1 strategy in\n            Problem 2 on the Problem Set. Model the first example. Students\n            can then work in pairs to find the rest. Allow time for students to\n            finish their work.)\n       T:   Compare the digits in the ones and tens places of\n            the multiples. What pattern do you notice?\n                                                                                         NOTES ON\n       S:   The digit in the tens place increases by 1.  The\n            digit in the ones place decreases by 1.                                      MULTIPLE MEANS\nMP.7                                                                                     OF REPRESENTATION:\n       T:   Now, with your partner, analyze the sum of the\n            digits for each multiple of 9. What pattern do you                  Simplify and clarify sum of the digits for\n                                                                                English language learners and others.\n            notice?\n                                                                                Distinguish some from sum. Perhaps\n       S:   The sum of the digits in every multiple of 9 is equal               express the request in another manner,\n            to 9.                                                               such as, “Look at the product. (Point.)\n       T:   How does knowing the sum of the digits in every                     Add the digit in the ones place (point)\n            multiple of 9 is equal to 9 help you with nines facts?              to the digit in the tens place (point).\n                                                                                What’s the sum? Now, look at the next\n       S:   To check my answer, I can add up the digits. If the                 product…”\n            sum isn’t equal to 9, I made a mistake.\n\n\n                            Lesson 13:               Identify and use arithmetic patterns to multiply.                                           163\n\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                                Lesson 13 3 3\n\n\nPart 2: Apply strategies to solve nines facts.\nHave students write and solve all facts from 1 × 9 to 10 × 9 in a column on their\npersonal white boards.\n    T:   Let’s examine 1 × 9 = 9. Here, what is 9 multiplied by?\n    S:   9 is multiplied by 1.\n    T:   What number is in the tens place of the product for 1 × 9?\n    S:   Zero.\n    T:   How is the number in the tens place related to 1?\n    S:   It is 1 less.  Zero is one less than 1.\n    T:   Say the product of 2 × 9 at my signal. (Signal.)\n    S:   18.\n    T:   Which digit is in the tens place of the product?\n    S:   1.\n    T:   How is the digit in the tens place related to the 2?\n    S:   It’s one less again.  1 is one less than 2.\nRepeat the process with 3 × 9 and 4 × 9.\n    T:   What pattern do you notice with the digit in the tens place for each of those products?\n    S:   The number in the tens place is 1 less than the number of groups.\n    T:   With your partner, see if that pattern fits for the rest of the nines facts to ten.\n    S:   It does! The pattern keeps going!\n    T:   Let’s see if we can find a pattern involving the ones place. We know that 2 × 9 equals 18. The 2 and\n         8 are related in some way. We also know that 3 × 9 equals 27. The 3 and 7 are related in the same\n         way. Discuss with your partner how they are related.\n    S:   2 + 8 = 10 and 3 + 7 = 10.  10 – 2 = 8 and\n         10 – 3 = 7.\n                                                                                        A NOTE ON\n    T:   When you take the number of groups and subtract it                             STANDARDS\n         from 10, what do you get?\n                                                                                        ALIGNMENT:\n    S:   The ones place in the product!\n                                                                               The fact 11 × 9 extends beyond the\n    T:   With your partner, see if that pattern fits for the rest of           Grade 3 multiplication standards.\n         the nines facts. (Allow students time to finish their                 Its use here allows students to\n         work.)                                                                construct boundaries for the pattern\n    T:   Did the pattern work for every fact, 1 × 9 through                    that they discovered with the nines\n                                                                               facts (the number in the tens place in\n         10 × 9?\n                                                                               the product is one less than the\n    S:   Yes!                                                                  number of groups, and the number in\n    T:   Let’s try 11 × 9. What is the product?                                the ones place in the product is 10\n                                                                               minus the number of groups). By\n    S:   99.\n                                                                               examining the product of 11 × 9,\n    T:   What is the number of groups?                                         students learn that the pattern only\n    S:   11.                                                                   applies to 1 × 9 through 10 × 9.\n\n\n                         Lesson 13:               Identify and use arithmetic patterns to multiply.                                           164\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 13 3 3\n\n\n    T:   Talk to your partner: Does the pattern work for 11 × 9? Why or why not?\n    S:   No, the pattern doesn’t make sense. You can’t have 10 in the tens place, and we don’t know how to\n         solve 10 – 11 to find what digit is in the ones place.\n    T:   The pattern can give you the answer to any nines fact from 1 × 9 to 10 × 9, but it doesn’t work for\n         nines facts bigger than 10 × 9.\n\n\nApplication Problem (15 minutes)\n\nMichaela and Gilda read the same book. It takes Michaela about 8 minutes to read a chapter and Gilda about\n10 minutes. There are 9 chapters in the book. How many fewer minutes does Michaela spend reading than\nGilda?\n\n\nNote: This problem comes after the Concept Development, so students have the opportunity to apply some\nof the strategies they learned in the context of problem solving. Encourage them to check their answers to\nthe nines facts using new learning.",
+    "fluencyPracticeText": " Sprint: Multiply or Divide by 8 3.OA.7                          (8 minutes)\n Group Counting 3.OA.1                                           (4 minutes)\n Decompose Multiples of 9 3.OA.5                                 (3 minutes)\n\nSprint: Multiply or Divide by 8 (8 minutes)\n                                                                                                                           A NOTE ON\nMaterials: (S) Multiply or Divide by 8 Sprint                                                                              STANDARDS\n                                                                                                                           ALIGNMENT:\nNote: This Sprint reviews Lessons 10 and 11, focusing on the                                                    Some problems in the Sprint and Part 2\nrelationship between multiplying and dividing using units of                                                    of the Concept Development extend\n8.                                                                                                              beyond Grade 3 multiplication and\n                                                                                                                division standards.\nGroup Counting (4 minutes)                                                                                      By extending to products above 90 and\n                                                                                                                quotients above 10 in the Sprint,\nNote: Group counting reviews interpreting multiplication as                                                     students working above grade level are\nrepeated addition. Counting by sixes, sevens, and eights                                                        provided the stimulus to stretch their\nreviews multiplication taught previously in the module.                                                         conceptual understanding, which may\nGroup counting nines prepares students for multiplication in                                                    keep them engaged and invigorated to\nthis lesson. Direct students to count forward and backward,                                                     improve on Sprint B. Students who\noccasionally changing the direction of the count:                                                               have mastered their times tables are\n                                                                                                                likely to otherwise go unchallenged.\n        Sixes to 60\n        Sevens to 70\n        Eights to 80\n        Nines to 90\n\n\n                        Lesson 13:               Identify and use arithmetic patterns to multiply.                                                   162\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 13 3 3\n\n\n  Decompose Multiples of 9 (3 minutes)\n  Materials: (S) Personal white board\n\n  Note: This activity prepares students to use the distributive property using units of 9.\n       T:   (Project a number bond with a whole of 45 and 18 as a part.) On your personal white board,\n            complete the unknown part in the number bond.\n       S:   (Write 27.)\n  Continue with the following possible sequence: whole of 90 and 27 as a part, whole of 54 and 36 as a part,\n  whole of 72 and 27 as a part, and whole of 63 and 18 as a part.",
     "problemSetGuidanceText": "Students should do their personal best to complete the                                                                     NOTES ON\nProblem Set within the allotted 10 minutes. For some                                                                       MULTIPLE MEANS\nclasses, it may be appropriate to modify the assignment by                                                                 OF REPRESENTATION:\nspecifying which problems they work on first. Some                                                              Consider adjusting the Problem Set to\nproblems do not specify a method for solving. Students                                                          assist learners with perceptual\nshould solve these problems using the RDW approach used                                                         disabilities. Provide a table for\nfor Application Problems.                                                                                       students to record the nine skip-count,\n                                                                                                                and/or highlight the tens or ones.\n                                                                                                                As students solve Problem 2, it may be",
-    "studentDebriefText": ", instruct students to complete\nthe",
-    "teacherStudentSequence": [],
-    "teacherPrompts": [],
+    "studentDebriefText": "helpful to write the nines fact for each\n                                                                                                                given product (e.g., in Problem 2(f),\nLesson Objective: Identify and use arithmetic patterns to                                                       have students write 5 × 9 above 45).\nmultiply.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem Set. They should check work by comparing answers\nwith a partner before going over answers as a class. Look for misconceptions or misunderstandings that can\nbe addressed in the Debrief. Guide students in a conversation to debrief the Problem Set and process the\nlesson.\n\n\n                        Lesson 13:               Identify and use arithmetic patterns to multiply.                                                     165\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                              Lesson 13 3 3\n\n\nAny combination of the questions below may be used to lead the discussion.\n       What patterns did you use to solve Problem 1?\n       The add 10, subtract 1 strategy can be used to\n        quickly find multiples of 9. How could you\n        change it to quickly find multiples of 8?\n       How is the add 10, subtract 1 strategy related to\n        the 9 = 10 – 1 break apart and distribute strategy\n        we learned recently?\n       In Problem 3(d) how did you figure out where\n        Kent’s strategy stops working? Why doesn’t this\n        strategy work past 10 × 9?\n       How can the number of groups in a nines fact\n        help you find the product?\n       How did group counting during the fluency\n        activity help prepare us for today’s lesson?",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "During the fluency activity, we group counted nines to say the multiples of 9. When we skip-count by nines, what are we adding each time?"
+      },
+      {
+        "speaker": "students",
+        "text": "9."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Adding nines can be tricky. What’s a simplifying strategy for adding 9?"
+      },
+      {
+        "speaker": "students",
+        "text": "I can break apart 9 to make the next ten and then add what’s left of the 9 to it.  I can add 10 and then subtract 1."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Lead students through applying the add 10, subtract 1 strategy in can then work in pairs to find the rest. Allow time for students to finish their work.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Compare the digits in the ones and tens places of the multiples. What pattern do you notice?"
+      },
+      {
+        "speaker": "students",
+        "text": "The digit in the tens place increases by 1.  The digit in the ones place decreases by 1. MULTIPLE MEANS MP.7 OF REPRESENTATION:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, with your partner, analyze the sum of the digits for each multiple of 9. What pattern do you Simplify and clarify sum of the digits for English language learners and others. notice? Distinguish some from sum. Perhaps"
+      },
+      {
+        "speaker": "students",
+        "text": "The sum of the digits in every multiple of 9 is equal express the request in another manner, to 9. such as, “Look at the product. (Point.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How does knowing the sum of the digits in every Add the digit in the ones place (point) multiple of 9 is equal to 9 help you with nines facts? to the digit in the tens place (point). What’s the sum? Now, look at the next"
+      },
+      {
+        "speaker": "students",
+        "text": "To check my answer, I can add up the digits. If the product…” sum isn’t equal to 9, I made a mistake. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 13 3 3 Have students write and solve all facts from 1 × 9 to 10 × 9 in a column on their personal white boards."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s examine 1 × 9 = 9. Here, what is 9 multiplied by?"
+      },
+      {
+        "speaker": "students",
+        "text": "9 is multiplied by 1."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What number is in the tens place of the product for 1 × 9?"
+      },
+      {
+        "speaker": "students",
+        "text": "Zero."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How is the number in the tens place related to 1?"
+      },
+      {
+        "speaker": "students",
+        "text": "It is 1 less.  Zero is one less than 1."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Say the product of 2 × 9 at my signal. (Signal.)"
+      },
+      {
+        "speaker": "students",
+        "text": "18."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Which digit is in the tens place of the product?"
+      },
+      {
+        "speaker": "students",
+        "text": "1."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How is the digit in the tens place related to the 2?"
+      },
+      {
+        "speaker": "students",
+        "text": "It’s one less again.  1 is one less than 2. Repeat the process with 3 × 9 and 4 × 9."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What pattern do you notice with the digit in the tens place for each of those products?"
+      },
+      {
+        "speaker": "students",
+        "text": "The number in the tens place is 1 less than the number of groups."
+      },
+      {
+        "speaker": "teacher",
+        "text": "With your partner, see if that pattern fits for the rest of the nines facts to ten."
+      },
+      {
+        "speaker": "students",
+        "text": "It does! The pattern keeps going!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s see if we can find a pattern involving the ones place. We know that 2 × 9 equals 18. The 2 and 8 are related in some way. We also know that 3 × 9 equals 27. The 3 and 7 are related in the same way. Discuss with your partner how they are related."
+      },
+      {
+        "speaker": "students",
+        "text": "2 + 8 = 10 and 3 + 7 = 10.  10 – 2 = 8 and 10 – 3 = 7. A NOTE ON"
+      },
+      {
+        "speaker": "teacher",
+        "text": "When you take the number of groups and subtract it STANDARDS from 10, what do you get? ALIGNMENT:"
+      },
+      {
+        "speaker": "students",
+        "text": "The ones place in the product! The fact 11 × 9 extends beyond the"
+      },
+      {
+        "speaker": "teacher",
+        "text": "With your partner, see if that pattern fits for the rest of Grade 3 multiplication standards. the nines facts. (Allow students time to finish their Its use here allows students to work.) construct boundaries for the pattern"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Did the pattern work for every fact, 1 × 9 through that they discovered with the nines facts (the number in the tens place in 10 × 9? the product is one less than the"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes! number of groups, and the number in"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s try 11 × 9. What is the product? the ones place in the product is 10 minus the number of groups). By"
+      },
+      {
+        "speaker": "students",
+        "text": "99. examining the product of 11 × 9,"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the number of groups? students learn that the pattern only"
+      },
+      {
+        "speaker": "students",
+        "text": "11. applies to 1 × 9 through 10 × 9. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 13 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to your partner: Does the pattern work for 11 × 9? Why or why not?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, the pattern doesn’t make sense. You can’t have 10 in the tens place, and we don’t know how to solve 10 – 11 to find what digit is in the ones place."
+      },
+      {
+        "speaker": "teacher",
+        "text": "The pattern can give you the answer to any nines fact from 1 × 9 to 10 × 9, but it doesn’t work for nines facts bigger than 10 × 9. Application Problem (15 minutes) Michaela and Gilda read the same book. It takes Michaela about 8 minutes to read a chapter and Gilda about 10 minutes. There are 9 chapters in the book. How many fewer minutes does Michaela spend reading than Gilda? of the strategies they learned in the context of problem solving. Encourage them to check their answers to the nines facts using new learning."
+      }
+    ],
+    "teacherPrompts": [
+      "During the fluency activity, we group counted nines to say the multiples of 9. When we skip-count by nines, what are we adding each time?",
+      "Adding nines can be tricky. What’s a simplifying strategy for adding 9?",
+      "(Lead students through applying the add 10, subtract 1 strategy in can then work in pairs to find the rest. Allow time for students to finish their work.)",
+      "Compare the digits in the ones and tens places of the multiples. What pattern do you notice?",
+      "Now, with your partner, analyze the sum of the digits for each multiple of 9. What pattern do you Simplify and clarify sum of the digits for English language learners and others. notice? Distinguish some from sum. Perhaps",
+      "How does knowing the sum of the digits in every Add the digit in the ones place (point) multiple of 9 is equal to 9 help you with nines facts? to the digit in the tens place (point). What’s the sum? Now, look at the next",
+      "Let’s examine 1 × 9 = 9. Here, what is 9 multiplied by?",
+      "What number is in the tens place of the product for 1 × 9?",
+      "How is the number in the tens place related to 1?",
+      "Say the product of 2 × 9 at my signal. (Signal.)",
+      "Which digit is in the tens place of the product?",
+      "How is the digit in the tens place related to the 2?",
+      "What pattern do you notice with the digit in the tens place for each of those products?",
+      "With your partner, see if that pattern fits for the rest of the nines facts to ten.",
+      "Let’s see if we can find a pattern involving the ones place. We know that 2 × 9 equals 18. The 2 and 8 are related in some way. We also know that 3 × 9 equals 27. The 3 and 7 are related in the same way. Discuss with your partner how they are related.",
+      "When you take the number of groups and subtract it STANDARDS from 10, what do you get? ALIGNMENT:",
+      "With your partner, see if that pattern fits for the rest of Grade 3 multiplication standards. the nines facts. (Allow students time to finish their Its use here allows students to work.) construct boundaries for the pattern",
+      "Did the pattern work for every fact, 1 × 9 through that they discovered with the nines facts (the number in the tens place in 10 × 9? the product is one less than the",
+      "Let’s try 11 × 9. What is the product? the ones place in the product is 10 minus the number of groups). By",
+      "What is the number of groups? students learn that the pattern only",
+      "Talk to your partner: Does the pattern work for 11 × 9? Why or why not?",
+      "The pattern can give you the answer to any nines fact from 1 × 9 to 10 × 9, but it doesn’t work for nines facts bigger than 10 × 9. Application Problem (15 minutes) Michaela and Gilda read the same book. It takes Michaela about 8 minutes to read a chapter and Gilda about 10 minutes. There are 9 chapters in the book. How many fewer minutes does Michaela spend reading than Gilda? of the strategies they learned in the context of problem solving. Encourage them to check their answers to the nines facts using new learning."
+    ],
     "debriefPrompt": "During the fluency activity, we group counted nines to say the multiples of 9. When we skip-count by nines, what are we adding each time?",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
@@ -101,11 +289,40 @@
     ],
     "sourceEvidence": {
       "number-bond": [
-        " Decompose Multiples of 9 3.OA.5 (3 minutes)"
+        "S: I can break apart 9 to make the next ten and then add what’s left",
+        " Decompose Multiples of 9 3.OA.5 (3 minutes)",
+        "Decompose Multiples of 9 (3 minutes)",
+        "T: (Project a number bond with a whole of 45 and 18 as a part.) On your personal white board,",
+        "complete the unknown part in the number bond."
       ]
     },
     "sourceIllustrationRequired": true,
-    "animationSourceSequence": [],
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "During the fluency activity, we group counted nines to say the multiples of 9. When we skip-count by nines, what are we adding each time?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Compare the digits in the ones and tens places of the multiples. What pattern do you notice?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Now, with your partner, analyze the sum of the digits for each multiple of 9. What pattern do you Simplify and clarify sum of the digits for English language learners and others. notice? Distinguish some from sum. Perhaps"
+      },
+      {
+        "speaker": "students",
+        "text": "To check my answer, I can add up the digits. If the product…” sum isn’t equal to 9, I made a mistake. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 13 3 3 Have students write and solve all facts from 1 × 9 to 10 × 9 in a column on their personal white boards."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What pattern do you notice with the digit in the tens place for each of those products?"
+      },
+      {
+        "speaker": "students",
+        "text": "No, the pattern doesn’t make sense. You can’t have 10 in the tens place, and we don’t know how to solve 10 – 11 to find what digit is in the ones place."
+      }
+    ],
     "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
   },
   "deliveryContract": {

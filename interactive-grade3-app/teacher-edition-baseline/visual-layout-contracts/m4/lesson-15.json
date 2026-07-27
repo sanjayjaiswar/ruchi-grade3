@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m4-l15",
+  "teacherEditionPdfSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m4-teacher/page-191.png",
+      "sha256": "b29879fb8109c366093da4a7ef5d83faf54fb5d60ce640351f00d352e27c9833",
+      "pdfPage": 191,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 15 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-193.png",
+      "sha256": "044a4c545832f04604063077379e15bf959b8af74f4c0bbe1761363e069e30a7",
+      "pdfPage": 193,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 15 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-192.png",
+      "sha256": "f5d6a67cb5821c2820259206277778471b4ba21a3bc1d61a790dfb05a2f60c80",
+      "pdfPage": 192,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 15 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-232.png",
+      "sha256": "f622d83584a94bacc711ebb4f5ded7c40d6d834823cecb7188b39384b7148de8",
+      "pdfPage": 232,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 15 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-233.png",
+      "sha256": "f225720258a62f105b3e9f960ee64a1d9bf234e48405255f8aeea63289625f9b",
+      "pdfPage": 233,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 15 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m4-teacher/page-191.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "make a prediction which room looks like it has the biggest area"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "shared-seven-room-floor-plan-prediction",
+          "subpartCount": 1,
+          "modelPrimitive": "tight-official-shared-floor-plan-illustration",
+          "modelCounts": [
+            60,
+            56,
+            42,
+            24,
+            25,
+            28,
+            88
+          ],
+          "modelOrientation": "floor-plan-over-open-prediction",
+          "responseStructure": "predict-largest-room-from-visual-area",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m4-teacher/page-191.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "record the areas and show the strategy you used"
+        ],
+        "answerKeyEvidence": "60; 56; 42; 24; 25; 28; 88; strategies will vary.",
+        "layout": {
+          "family": "shared-seven-room-floor-plan-area-strategy-table",
+          "subpartCount": 7,
+          "rowCount": 7,
+          "columnCount": 3,
+          "modelPrimitive": "tight-official-shared-floor-plan-illustration+authored-area-table",
+          "modelCounts": [
+            60,
+            56,
+            42,
+            24,
+            25,
+            28,
+            88
+          ],
+          "modelOrientation": "floor-plan-over-seven-row-table",
+          "responseStructure": "record-seven-room-areas-and-show-decomposition-strategies",
+          "sourceFirst": true,
+          "sourceCropCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m4-teacher/page-192.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "which room has the biggest area"
+        ],
+        "answerKeyEvidence": "Living room; yes or no; answers will vary.",
+        "layout": {
+          "family": "shared-seven-room-floor-plan-largest-room-check",
+          "subpartCount": 1,
+          "modelPrimitive": "tight-official-shared-floor-plan-illustration",
+          "modelCounts": [
+            88
+          ],
+          "modelOrientation": "floor-plan-over-open-response",
+          "responseStructure": "identify-living-room-and-check-prediction",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m4-teacher/page-192.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "find the side lengths of the house without using your ruler"
+        ],
+        "answerKeyEvidence": "19, 17; answers will vary.",
+        "layout": {
+          "family": "shared-seven-room-floor-plan-house-side-lengths",
+          "subpartCount": 1,
+          "modelPrimitive": "tight-official-shared-floor-plan-illustration",
+          "modelCounts": [
+            19,
+            17
+          ],
+          "modelOrientation": "floor-plan-over-open-response",
+          "responseStructure": "infer-whole-house-side-lengths-from-aligned-room-lengths",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m4-teacher/page-192.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "what is the area of the whole floor plan"
+        ],
+        "answerKeyEvidence": "323; answers will vary.",
+        "layout": {
+          "family": "shared-seven-room-floor-plan-whole-area",
+          "subpartCount": 1,
+          "modelPrimitive": "tight-official-shared-floor-plan-illustration",
+          "modelCounts": [
+            323
+          ],
+          "modelOrientation": "floor-plan-over-open-response",
+          "responseStructure": "multiply-whole-house-side-lengths-or-add-room-areas",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m3-l4",
+  "teacherEditionPdfSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m3/lesson-4-page-16.png",
+      "sha256": "fbd551250233af3ef7a039abbc53fd5e5ffd27e1d87828592e87d2906bdf03b3",
+      "pdfPage": 57,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 4 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-4-page-17.png",
+      "sha256": "eef70f64d0f8141623087d4d3b99587878fbd00352369b10c7f80301dd5a03b4",
+      "pdfPage": 58,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 4 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-286.png",
+      "sha256": "fe857cbbca877b35caf2be8ec352644d8569c0769a0334cfe1ec5374059da358",
+      "pdfPage": 286,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 4 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m3/lesson-4-page-16.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "skip count by six to fill in the blanks match each number in the"
+        ],
+        "answerKeyEvidence": "12, 24, 42, 54; each number matched to its corresponding multiplication fact.",
+        "layout": {
+          "family": "table-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m3/lesson-4-page-17.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "count by six to fill in the blanks below"
+        ],
+        "answerKeyEvidence": "12, 18, 24; 4, 24; 24, 4.",
+        "layout": {
+          "family": "table-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m3/lesson-4-page-17.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "complete the multiplication equation that represents the final number in your count by"
+        ],
+        "answerKeyEvidence": "12, 18, 24, 30, 36, 42; 7, 42; 42, 7.",
+        "layout": {
+          "family": "table-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m3/lesson-4-page-17.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "mrs byrne s class skip counts by six for a group counting activity when"
+        ],
+        "answerKeyEvidence": "a. 12, 24, 18, 18, 36, 18, 30, 42. b. 8; 8.",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m3/lesson-4-page-17.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "julie counts by six to solve 6 x 7 she says the answer is"
+        ],
+        "answerKeyEvidence": "No; explanations will vary.",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    }
+  ]
+}

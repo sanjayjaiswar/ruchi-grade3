@@ -1,5 +1,4 @@
-import type { LessonRuntimeConfig, ProblemSetCenteredProblem } from '../lesson-runtime.types';
-import { createM1ProblemVisual } from './problem-set-centered';
+import type { LessonRuntimeConfig, ProblemSetCenteredProblem, ProblemVisualSpec } from '../lesson-runtime.types';
 
 const lesson12TeacherEditionPages = Array.from(
   { length: 12 },
@@ -12,8 +11,80 @@ const lesson12SolvedSourcePages = [...lesson12ProblemSetPages, ...lesson12Answer
 function withLesson12Visuals(problem: ProblemSetCenteredProblem): ProblemSetCenteredProblem {
   return {
     ...problem,
-    blankVisual: problem.blankVisual ?? createM1ProblemVisual(problem, false),
-    solvedVisual: problem.solvedVisual ?? createM1ProblemVisual(problem, true)
+    blankVisual: lesson12ObservedVisual(problem, false),
+    solvedVisual: lesson12ObservedVisual(problem, true)
+  };
+}
+
+function lesson12ObservedVisual(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec {
+  const crops: Record<number, { page: number; x: number; y: number; width: number; height: number; alt: string }> = {
+    1: { page: 169, x: 180, y: 190, width: 500, height: 190, alt: 'Official bank of eight ungrouped birds' },
+    2: { page: 169, x: 215, y: 405, width: 465, height: 175, alt: 'Official five empty fish-bowl containers with total label' },
+    3: { page: 169, x: 105, y: 650, width: 640, height: 245, alt: 'Official rabbit division facts and carrot quotient matching model' },
+    4: { page: 170, x: 270, y: 215, width: 465, height: 250, alt: 'Official two-part ribbon tape diagram with open labels' }
+  };
+  const crop = crops[problem.number];
+  const sections: ProblemVisualSpec['sections'] = crop ? [{
+    kind: 'source-crop',
+    label: 'Official problem-level mathematical model',
+    src: `/source-pages/m1-teacher/page-${String(crop.page).padStart(3, '0')}.png`,
+    alt: crop.alt,
+    imageWidth: 816,
+    imageHeight: 1056,
+    crop: { x: crop.x, y: crop.y, width: crop.width, height: crop.height }
+  }] : [];
+  if (!solved && problem.number !== 3) {
+    sections.push({
+      kind: 'note',
+      label: 'Student workspace',
+      text: crop
+        ? 'Complete the requested circling, drawing, and labels on the official printed scaffold.'
+        : 'The official Problem Set leaves this model open; no completed representation is prefilled.'
+    });
+  }
+  if (solved && problem.number === 1) {
+    sections.push({
+      kind: 'card-grid',
+      label: 'Reveal four cages of two birds',
+      cards: Array.from({ length: 4 }, (_, index) => ({
+        label: `Cage ${index + 1}`,
+        sections: [{ kind: 'array', rows: 1, columns: 2, item: 'dot', glyph: '🐦' }]
+      }))
+    });
+  }
+  if (solved && problem.number === 2) {
+    sections.push({
+      kind: 'card-grid',
+      label: 'Reveal two fish in each bowl',
+      cards: Array.from({ length: 5 }, (_, index) => ({
+        label: `Bowl ${index + 1}`,
+        sections: [{ kind: 'array', rows: 1, columns: 2, item: 'dot', glyph: '🐟' }]
+      }))
+    });
+  }
+  if (solved && problem.number === 4) {
+    sections.push({ kind: 'tape', label: 'Two equal ribbon pieces', totalLabel: '14 meters', parts: [{ label: '7' }, { label: '7' }] });
+  }
+  if (solved && problem.number === 5) {
+    sections.push({ kind: 'tape', label: 'Six mornings', totalLabel: '12 bars', parts: Array.from({ length: 6 }, () => ({ label: '2' })) });
+  }
+  if (solved && problem.number === 6) {
+    sections.push({ kind: 'tape', label: 'Sarah and Esther', totalLabel: '18 dollars', parts: [{ label: '9' }, { label: '9' }] });
+  }
+  sections.push({
+    kind: 'equations',
+    label: solved ? 'Teacher Edition completed response' : 'Official response structure',
+    lines: solved ? problem.equations : problem.blankEquations ?? []
+  });
+  sections.push({
+    kind: 'note',
+    label: solved ? 'Teacher Edition reasoning' : 'Student workspace',
+    text: solved ? problem.solvedAnswer : 'Complete only the official model, equation blanks, and answer sentence.'
+  });
+  return {
+    title: `Problem ${problem.number}: Teacher Edition observed workspace`,
+    sourceNote: 'Problem-level structure observed directly on the official Module 1 Lesson 12 Problem Set.',
+    sections
   };
 }
 
@@ -139,7 +210,7 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
         blankEquations: ["10 divided by 2", "18 divided by 2", "12 divided by 2", "16 divided by 2", "14 divided by 2"],
         blankWorkspaceLabel: "Use skip-counting by twos or known facts to match.",
         blankVisualType: "fact-match",
-        solvedAnswer: "10 divided by 2 = 5, 18 divided by 2 = 9, 12 divided by 2 = 6, 16 divided by 2 = 8, and 14 divided by 2 = 7.",
+        solvedAnswer: "The rabbit-to-carrot matches are 5, 8, 9, 7, and 6.",
         equations: ["10 divided by 2 = 5", "18 divided by 2 = 9", "12 divided by 2 = 6", "16 divided by 2 = 8", "14 divided by 2 = 7"],
         quotient: 5,
         quotientMeaning: "Each quotient is the matching division fact value for units of 2.",
@@ -225,7 +296,7 @@ export const M1_LESSON12_RUNTIME: LessonRuntimeConfig = {
         blankAnswerSentence: "Sarah pays ____ dollars.",
         blankWorkspaceLabel: "Split 18 dollars equally between Sarah and Esther.",
         blankVisualType: "share-tape",
-        solvedAnswer: "Sarah pays 9 dollars.",
+        solvedAnswer: "Sarah pays $9.",
         equations: ["18 divided by 2 = 9"],
         knownTotal: 18,
         knownGroupCount: 2,

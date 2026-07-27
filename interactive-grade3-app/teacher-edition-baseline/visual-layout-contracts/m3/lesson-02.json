@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m3-l2",
+  "teacherEditionPdfSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m3/lesson-2-page-06.png",
+      "sha256": "0b259f12b0a8153b6dd7f0736d427dc5d8c573d6c3b9066e5c3f3d1c42e75a90",
+      "pdfPage": 32,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 2 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-2-page-07.png",
+      "sha256": "009dc4394a71360d5c0e8cdc90365fc86201643ea7dc9702b34129087bf1744d",
+      "pdfPage": 33,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 2 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-2-page-08.png",
+      "sha256": "406aeb05cabddd87055e61666ce9acc6f9237ad736d14c0c8d10dd79090bf085",
+      "pdfPage": 34,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 2 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-283.png",
+      "sha256": "a0a21b92b08fca2e08aae36ba5809090ceebbe4d37646bb42d2dd1f5276cb686",
+      "pdfPage": 283,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 2 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-284.png",
+      "sha256": "e47ded0a547689263566c32096a31187d6ebfaa1a2cbc5a0db849ce99a7d27ae",
+      "pdfPage": 284,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 2 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m3/lesson-2-page-06.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "has a value of 7"
+        ],
+        "answerKeyEvidence": "Sevens; 7, 7; 35; 5, 1; 7; 42; 6, 7, 42; 7, 6, 42.",
+        "layout": {
+          "family": "two-stage-unit-form-model",
+          "subpartCount": 2,
+          "modelPrimitive": "block",
+          "modelCounts": [
+            5,
+            6
+          ],
+          "knownModelCounts": [
+            5,
+            5
+          ],
+          "modelOrientation": "vertical-stack",
+          "printedEquationLineCount": 8,
+          "openWorkspaceCount": 0,
+          "dividerCount": 1,
+          "instructionalModelFamily": "five-groups-plus-one-group",
+          "responseStructure": "unit-form-facts-total"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m3/lesson-2-page-07.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "b use the fact above to find 8 x 6 show your work using"
+        ],
+        "answerKeyEvidence": "a. Eights; 8, 8; 40. b. 48; answers will vary.",
+        "layout": {
+          "family": "unit-form-plus-open-model-workspace",
+          "subpartCount": 2,
+          "modelPrimitive": "dot",
+          "modelCounts": [
+            5,
+            6
+          ],
+          "knownModelCounts": [
+            5,
+            5
+          ],
+          "modelOrientation": "vertical-list",
+          "printedEquationLineCount": 3,
+          "openWorkspaceCount": 1,
+          "dividerCount": 0,
+          "instructionalModelFamily": "five-groups-plus-one-group",
+          "responseStructure": "unit-form-facts-total-then-open-explanation"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m3/lesson-2-page-08.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "an author writes 9 pages of her book each week how many pages does"
+        ],
+        "answerKeyEvidence": "63.",
+        "layout": {
+          "family": "fives-fact-open-response",
+          "subpartCount": 1,
+          "modelPrimitive": "group-marker",
+          "modelCounts": [
+            7
+          ],
+          "knownModelCounts": [
+            5
+          ],
+          "modelOrientation": "vertical-list",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "dividerCount": 0,
+          "instructionalModelFamily": "five-groups-plus-two-groups",
+          "responseStructure": "open-read-draw-write"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m3/lesson-2-page-08.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "mrs gonzalez buys a total of 32 crayons for her classroom each pack contains"
+        ],
+        "answerKeyEvidence": "4.",
+        "layout": {
+          "family": "equal-group-open-response",
+          "subpartCount": 1,
+          "modelPrimitive": "equal-group",
+          "modelCounts": [
+            4
+          ],
+          "knownModelCounts": [
+            8
+          ],
+          "modelOrientation": "horizontal",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "dividerCount": 0,
+          "instructionalModelFamily": "four-groups-of-eight",
+          "responseStructure": "open-read-draw-write"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m3/lesson-2-page-08.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "hannah has $500 she buys a camera for $435 and 4 other items for"
+        ],
+        "answerKeyEvidence": "No; explanations will vary.",
+        "layout": {
+          "family": "two-step-money-open-response",
+          "subpartCount": 1,
+          "modelPrimitive": "money-table",
+          "modelCounts": [
+            4
+          ],
+          "knownModelCounts": [],
+          "modelOrientation": "left-to-right",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "dividerCount": 0,
+          "instructionalModelFamily": "multiply-subtract-compare",
+          "responseStructure": "open-multistep-explanation"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    }
+  ]
+}

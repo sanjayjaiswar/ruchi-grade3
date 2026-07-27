@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l12",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-142.png",
+      "sha256": "48709f8babe70bd2034bfd5943c7f3c71dec89e6505ff0aeec546567e620b5c1",
+      "pdfPage": 142,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 12 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-143.png",
+      "sha256": "fb48326860b19e4dc2759ee0f125a77b6456d3da11b6858858f4612afede5897",
+      "pdfPage": 143,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 12 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-387.png",
+      "sha256": "9e2ac755ffe6ee6487bfc2fd8dd90e3cedff583b2c0bf399f5e86dba667ff96b",
+      "pdfPage": 387,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 12 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-388.png",
+      "sha256": "fe6c35bcf00a4089bcaef49b02f123273f13cebf91e3c35e2d6387e349996f60",
+      "pdfPage": 388,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 12 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-142.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a picture of the designated unit fraction copied to make at least two different wholes."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "open-station-unit-copies-forming-multiple-wholes",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-open-station-drawing-workspace-with-source-validity-criteria",
+          "modelCounts": [
+            2,
+            1
+          ],
+          "modelOrientation": "large-open-drawing-space-for-at-least-two-wholes",
+          "responseStructure": "copy-designated-unit-label-units-and-wholes-and-draw-a-matching-number-bond",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-142.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a picture of the designated unit fraction copied to make at least two different wholes."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "open-station-unit-copies-forming-multiple-wholes",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-open-station-drawing-workspace-with-source-validity-criteria",
+          "modelCounts": [
+            2,
+            1
+          ],
+          "modelOrientation": "large-open-drawing-space-for-at-least-two-wholes",
+          "responseStructure": "copy-designated-unit-label-units-and-wholes-and-draw-a-matching-number-bond",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-143.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a picture of the designated unit fraction copied to make at least two different wholes."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "open-station-unit-copies-forming-multiple-wholes",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-open-station-drawing-workspace-with-source-validity-criteria",
+          "modelCounts": [
+            2,
+            1
+          ],
+          "modelOrientation": "large-open-drawing-space-for-at-least-two-wholes",
+          "responseStructure": "copy-designated-unit-label-units-and-wholes-and-draw-a-matching-number-bond",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-143.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a picture of the designated unit fraction copied to make at least two different wholes."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "open-station-unit-copies-forming-multiple-wholes",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-open-station-drawing-workspace-with-source-validity-criteria",
+          "modelCounts": [
+            2,
+            1
+          ],
+          "modelOrientation": "large-open-drawing-space-for-at-least-two-wholes",
+          "responseStructure": "copy-designated-unit-label-units-and-wholes-and-draw-a-matching-number-bond",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m5-teacher/page-143.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a picture of the designated unit fraction copied to make at least two different wholes."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "open-station-unit-copies-forming-multiple-wholes",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-open-station-drawing-workspace-with-source-validity-criteria",
+          "modelCounts": [
+            2,
+            1
+          ],
+          "modelOrientation": "large-open-drawing-space-for-at-least-two-wholes",
+          "responseStructure": "copy-designated-unit-label-units-and-wholes-and-draw-a-matching-number-bond",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m5-teacher/page-143.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a picture of the designated unit fraction copied to make at least two different wholes."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "open-station-unit-copies-forming-multiple-wholes",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-open-station-drawing-workspace-with-source-validity-criteria",
+          "modelCounts": [
+            2,
+            1
+          ],
+          "modelOrientation": "large-open-drawing-space-for-at-least-two-wholes",
+          "responseStructure": "copy-designated-unit-label-units-and-wholes-and-draw-a-matching-number-bond",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    }
+  ]
+}

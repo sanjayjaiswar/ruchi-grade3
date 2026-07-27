@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m6-l4",
+  "teacherEditionPdfSha256": "74325e3dfcae94e1fe359552d3857a3c929b26c5cca327ee80ef45d651aa7358",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m6/workbook-page-19.png",
+      "sha256": "8e1515d04b48e4762f5dadd962f2a323184e578abc4fbca01fb01dd33e4defb5",
+      "pdfPage": 56,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 4 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/workbook-page-20.png",
+      "sha256": "9c3f495caed932f36821562657fb31bf3f112a3b2084d2609833b31288757966",
+      "pdfPage": 57,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 4 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/teacher-answer-page-151.png",
+      "sha256": "c7b5e8357a9c0cd41ca42300f7a6c9147192645ee29c763158bc737244a59f4b",
+      "pdfPage": 151,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 4 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m6/workbook-page-19.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The chart below shows the number of magazines sold"
+        ],
+        "answerKeyEvidence": "Bar graph drawn correctly with appropriate scale; Answers will vary; 150; 150",
+        "layout": {
+          "family": "magazine-table-to-chosen-scale-bar-graph-and-comparisons",
+          "subpartCount": 4,
+          "modelPrimitive": "given-five-row-table-plus-live-scaled-chart",
+          "modelCounts": [
+            300,
+            250,
+            100,
+            450,
+            600
+          ],
+          "modelOrientation": "table-over-chart-and-response",
+          "responseStructure": "choose-scale-draw-bars-explain-and-solve-two-comparisons",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m6/workbook-page-20.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The bar graph shows the number of visitors to a carnival"
+        ],
+        "answerKeyEvidence": "240; 80",
+        "layout": {
+          "family": "two-comparisons-from-source-provided-carnival-graph",
+          "subpartCount": 2,
+          "modelPrimitive": "live-source-provided-five-bar-chart",
+          "modelCounts": [
+            340,
+            300,
+            430,
+            190,
+            370
+          ],
+          "modelOrientation": "five-horizontal-category-bars-over-response",
+          "responseStructure": "find-busiest-least-difference-and-paired-days-difference",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    }
+  ]
+}

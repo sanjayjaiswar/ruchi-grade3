@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m4-l8",
+  "teacherEditionPdfSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m4-teacher/page-099.png",
+      "sha256": "b97cc6d71ff14aa2cccf0d3254792faa63f0c04c93d62d2c5b491aa73ef098d1",
+      "pdfPage": 99,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 8 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-100.png",
+      "sha256": "3067b85883204e9e4d2f2cf4b7919e100f4f1e9f0e7d3754912a6f71de926b2a",
+      "pdfPage": 100,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 8 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-223.png",
+      "sha256": "50d50e4192b3357496fc78e2a0c232479c8203cdab71dc8a2c0151f58315cfa6",
+      "pdfPage": 223,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 8 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-224.png",
+      "sha256": "9557f27e7c2f047e750e68f6cf5b2fdb15aa3c52d626eef0daf0d0560701265d",
+      "pdfPage": 224,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 8 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m4-teacher/page-099.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "write a multiplication equation to find the area of each rectangle"
+        ],
+        "answerKeyEvidence": "a. 28; 4, 7, 28. b. 56; 8, 7, 56. c. 36; 6, 6, 36.",
+        "layout": {
+          "family": "three-labeled-rectangle-area-equations",
+          "subpartCount": 3,
+          "modelPrimitive": "authored-side-labeled-rectangles",
+          "modelCounts": [
+            28,
+            56,
+            36
+          ],
+          "modelOrientation": "three-horizontal-models",
+          "responseStructure": "multiply-side-lengths-for-three-areas"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m4-teacher/page-099.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "write a multiplication equation and a division equation"
+        ],
+        "answerKeyEvidence": "a. 8; 9, 8, 72; 72, 9, 8. b. 5; 3, 5, 15; 15, 3, 5. c. 7; 7, 4, 28; 28, 4, 7.",
+        "layout": {
+          "family": "three-known-area-unknown-side-rectangles",
+          "subpartCount": 3,
+          "modelPrimitive": "authored-side-labeled-rectangles",
+          "modelCounts": [
+            72,
+            15,
+            28
+          ],
+          "modelOrientation": "three-horizontal-models",
+          "responseStructure": "write-multiplication-and-division-equations"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m4-teacher/page-099.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "draw a rectangle that has an area of 42 square units"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "forty-two-area-rectangle-on-official-grid",
+          "subpartCount": 1,
+          "modelPrimitive": "tight-official-blank-square-grid",
+          "modelCounts": [
+            42
+          ],
+          "modelOrientation": "single-construction-grid",
+          "responseStructure": "draw-and-label-valid-factor-pair",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m4-teacher/page-100.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "ursa draws a rectangle that has side lengths of 9 centimeters and 6 centimeters"
+        ],
+        "answerKeyEvidence": "54 sq cm; explanations will vary.",
+        "layout": {
+          "family": "nine-by-six-area-story-response",
+          "subpartCount": 1,
+          "modelPrimitive": "open-response-to-square-unit-array",
+          "modelCounts": [
+            54
+          ],
+          "modelOrientation": "vertical-open-response",
+          "responseStructure": "multiply-side-lengths-and-explain",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m4-teacher/page-100.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "eliza’s bedroom measures 6 feet by 7 feet"
+        ],
+        "answerKeyEvidence": "No; explanations will vary.",
+        "layout": {
+          "family": "compare-six-by-seven-and-five-by-eight-bedrooms",
+          "subpartCount": 2,
+          "modelPrimitive": "open-response-to-two-square-unit-arrays",
+          "modelCounts": [
+            42,
+            40
+          ],
+          "modelOrientation": "two-horizontal-models",
+          "responseStructure": "calculate-compare-and-reject-equal-area-claim",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m4-teacher/page-100.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "cliff draws a rectangle with a side length of 6 inches"
+        ],
+        "answerKeyEvidence": "4 in; explanations will vary.",
+        "layout": {
+          "family": "known-area-and-side-find-other-side",
+          "subpartCount": 1,
+          "modelPrimitive": "open-response-to-four-by-six-array",
+          "modelCounts": [
+            24,
+            4
+          ],
+          "modelOrientation": "vertical-open-response",
+          "responseStructure": "divide-area-by-known-side-and-explain",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    }
+  ]
+}

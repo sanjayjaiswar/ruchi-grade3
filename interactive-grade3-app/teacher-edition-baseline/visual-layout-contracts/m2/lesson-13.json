@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m2-l13",
+  "teacherEditionPdfSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m2-teacher/page-166.png",
+      "sha256": "99e4dcbe57552ec6e05d096e755718759d59a1f41b450a7f9cbf8019b1984825",
+      "pdfPage": 166,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 13 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-teacher/page-167.png",
+      "sha256": "3fd28147ad35391c991b891004dedba4f4576a18c3fa3f1bad5f4fff857f3d7c",
+      "pdfPage": 167,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 13 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-answer-key/page-293.png",
+      "sha256": "47de9d6ff8916fd031629c20195e1802b77ae5be2ccfe1e8a9e343ab1769918a",
+      "pdfPage": 293,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 13 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m2-teacher/page-166.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "round to the nearest ten. use the number line to model your thinking. a. 32 b. 36"
+        ],
+        "answerKeyEvidence": "1. a. 30 b. 40; rounding modeled on number line c. 60; rounding modeled on number line d. 160; rounding modeled on number line e. 280; rounding modeled on number line f. 410; rounding modeled on number line 2. Number line drawn and labeled to model rounding; 40 g Number line drawn and labeled to model rounding; 50 g Number line drawn and labeled to model rounding; 140 g 3. a. 48 min b. 50 min",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m2-teacher/page-167.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "round the weight of each item to the nearest 10 grams. draw number lines to model your"
+        ],
+        "answerKeyEvidence": "1. a. 30 b. 40; rounding modeled on number line c. 60; rounding modeled on number line d. 160; rounding modeled on number line e. 280; rounding modeled on number line f. 410; rounding modeled on number line 2. Number line drawn and labeled to model rounding; 40 g Number line drawn and labeled to model rounding; 50 g Number line drawn and labeled to model rounding; 140 g 3. a. 48 min b. 50 min",
+        "layout": {
+          "family": "table-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m2-teacher/page-167.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "carl's basketball game begins at 3:03 p.m. and ends at 3:51 p.m. a. how many minutes did"
+        ],
+        "answerKeyEvidence": "1. a. 30 b. 40; rounding modeled on number line c. 60; rounding modeled on number line d. 160; rounding modeled on number line e. 280; rounding modeled on number line f. 410; rounding modeled on number line 2. Number line drawn and labeled to model rounding; 40 g Number line drawn and labeled to model rounding; 50 g Number line drawn and labeled to model rounding; 140 g 3. a. 48 min b. 50 min",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

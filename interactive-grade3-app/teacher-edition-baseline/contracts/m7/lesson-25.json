@@ -3,7 +3,7 @@
   "lessonId": "m7-l25",
   "moduleId": "m7",
   "lessonNumber": 25,
-  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "generatedAt": "2026-07-27T02:56:13.408Z",
   "source": {
     "teacherEditionPdf": "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf",
     "teacherEditionSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
@@ -42,7 +42,7 @@
     "conceptDevelopmentText": "Finished Robot Sample\nMaterials: (S) Problem Sets from Lessons 24 and 25, Evaluation Rubric,\n           centimeter grid paper, glue, ruler, right angle tool, crayons,\n           assorted colors of construction paper, 1 piece of 12″ × 18″\n           construction paper, string, scissors\n\nStudents use today’s Problem Set to map out the robot in its\nenvironment. Once they have their maps completed, students create\njust their robots using the widths and lengths they recorded on the\nProblem Set in Lesson 24. Give them the option of cutting their\nrectangles out of centimeter grid paper or creating rectangles on\nconstruction paper with a right angle tool and ruler. Once all pieces for\nthe robot are cut, students can glue the pieces to a 12″ × 18″ piece of\nconstruction paper.\n\n\n                        Lesson 25:                Use rectangles to draw a robot with specified perimeter                           331\n                                                  measurements, and reason about the different areas that may be\n                                                  produced.\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                               Lesson 25 3 7\n\n\n     To prepare students:\n              Inform students that they will sketch a map of their robot in their\n               environment on the Problem Set. The widths, lengths, and perimeters\n               of the rectangles need to be labeled. Circular items should be labeled\n               with their perimeters. This map will be used again in Lesson 26 as\n               students construct their robot’s environment.\n           Inform students they may use either centimeter grid paper or a right\n               angle tool and ruler to create their rectangular robot pieces. Those who      Figure A    Figure B\n               use centimeter grid paper might color their pieces if time allows.\n           Let students know that their peers will analyze their work. It is important to glue pieces on the\nMP.6           12″ × 18″ construction paper without affecting the perimeters of the objects, as in Figure A above.\n               Demonstrate that the measurable perimeter of the tree trunk changes with the placement of the\n               tree top in Figure B.\n           Inform students that they will have time\n               during the next lesson to put the\n               finishing touches on their robots if they\n               do not have enough time today.\n           Share the Evaluation Rubric (pictured to\n               the right and included at the end of the\n               lesson) with students so they know the\n               expectations for the finished product.\n     Note: This Evaluation Rubric is for teacher use. Students\n     use a different form to analyze one another’s work for\n     accuracy in Lesson 27. If an anonymous process is\n     preferred for the student analysis, have students identify\n     their work with a number or other symbol, rather than by\n     name.",
     "fluencyPracticeText": " Sprint: Multiply or Divide by 6 3.OA.7                                    (10 minutes)\n\nSprint: Multiply or Divide by 6 (10 minutes)\nMaterials: (S) Multiply or Divide by 6 Sprint\n\nNote: This Sprint builds fluency with multiplication and division facts using units of 6.",
     "problemSetGuidanceText": "",
-    "studentDebriefText": ", instruct students to complete the",
+    "studentDebriefText": "Lesson Objective: Use rectangles to draw a robot with\n     specified perimeter measurements, and reason about\n     the different areas that may be produced.\n     The Student Debrief is intended to invite reflection and\n     active processing of the total lesson experience.\n     Invite students to review their solutions for the Problem\n     Set. They should check work by comparing answers with a\n     partner before going over answers as a class. Look for\n     misconceptions or misunderstandings that can be\n     addressed in the Debrief. Guide students in a\n     conversation to debrief the Problem Set and process the\n     lesson.\n\n\n                             Lesson 25:                Use rectangles to draw a robot with specified perimeter                     332\n                                                       measurements, and reason about the different areas that may be\n                                                       produced.\n                             ©2015 Great Minds. eureka-math.org\n                             G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                Lesson 25 3 7\n\n\nAny combination of the questions below may be used to lead\nthe discussion.                                                                                             NOTE\n        Compare your drawing to a partner’s. What is similar?                                              TO TEACHER:\n         What is different?\n                                                                                                   Students should keep both the\n        Which of your shapes looks most like your partner’s?                                      Problem Set and their robot art for use\n         Why?                                                                                      in subsequent lessons.\n        Even though you all used the same perimeters for the\n         robot’s body parts, your robots all look different. How\n         is this possible?\n        What was the most difficult part of creating your robot? Why?\n        If you did this again, what would you do differently? Why?",
     "teacherStudentSequence": [],
     "teacherPrompts": [],
     "debriefPrompt": "Compare your drawing to a partner’s. What is similar? What is different? Students should keep both drawings for comparison.",
@@ -68,16 +68,13 @@
     "modelsDetected": [
       "ruler-or-length",
       "geometry-diagram",
-      "money-model",
       "picture-or-drawing"
     ],
     "sourceEvidence": {
       "ruler-or-length": [
         "centimeter grid paper, glue, ruler, right angle tool, crayons,",
-        "just their robots using the widths and lengths they recorded on the",
         "rectangles out of centimeter grid paper or creating rectangles on",
         "construction paper with a right angle tool and ruler. Once all pieces for",
-        "environment on the Problem Set. The widths, lengths, and perimeters",
         " Inform students they may use either centimeter grid paper or a right",
         "angle tool and ruler to create their rectangular robot pieces. Those who Figure A Figure B",
         "use centimeter grid paper might color their pieces if time allows."
@@ -85,24 +82,15 @@
       "geometry-diagram": [
         "Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced.",
         "centimeter grid paper, glue, ruler, right angle tool, crayons,",
-        "rectangles out of centimeter grid paper or creating rectangles on",
         "construction paper with a right angle tool and ruler. Once all pieces for",
         "Lesson 25: Use rectangles to draw a robot with specified perimeter 331",
-        "environment on the Problem Set. The widths, lengths, and perimeters",
-        "of the rectangles need to be labeled. Circular items should be labeled",
-        "with their perimeters. This map will be used again in Lesson 26 as"
-      ],
-      "money-model": [
-        "centimeter grid paper, glue, ruler, right angle tool, crayons,",
-        "rectangles out of centimeter grid paper or creating rectangles on",
-        " Inform students they may use either centimeter grid paper or a right",
-        "use centimeter grid paper might color their pieces if time allows.",
-        "Demonstrate that the measurable perimeter of the tree trunk changes with the placement of the"
+        "angle tool and ruler to create their rectangular robot pieces. Those who Figure A Figure B",
+        "Demonstrate that the measurable perimeter of the tree trunk changes with the placement of the",
+        "Lesson 25: Use rectangles to draw a robot with specified perimeter 336"
       ],
       "picture-or-drawing": [
         "Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced.",
         "Lesson 25: Use rectangles to draw a robot with specified perimeter 331",
-        " Share the Evaluation Rubric (pictured to",
         "Draw a picture of your robot in its environment in the space below. Label the widths, lengths, and perimeters",
         "Lesson 25: Use rectangles to draw a robot with specified perimeter 336"
       ]

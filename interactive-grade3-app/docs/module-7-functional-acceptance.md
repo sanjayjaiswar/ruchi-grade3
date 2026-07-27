@@ -1,82 +1,97 @@
-# Module 7 functional acceptance
+# Module 7 Teacher Edition acceptance
 
-This document records the durable first-pass acceptance contract for Grade 3 Module 7. The Teacher Edition baseline is the factual source of truth. The portal and prior lesson copy are never authoritative when they differ from that baseline.
+Audited: 2026-07-26
 
-## Scope and completion bar
+The fingerprinted Teacher Edition is the sole visual and factual source of truth for Module 7 Problem Set Blank and Solved delivery. OCR, portal copy, generated diagrams, prior implementation, and mathematical inference are not acceptance evidence.
 
-- All 34 lessons must preserve the exact Teacher Edition objective, lesson-page range, Problem Set order, problem count, prompts, fixed quantities, units, and solved answers.
-- Every Concept view must contain three lesson-specific stages, a visible three-step animation, a source-conforming mathematical model, and a question that connects the model to the reasoning.
-- Every Problem Set item must have a usable Blank model and a Teacher Edition-aligned Solved model. Required RDW models, polygon attributes, compositions, perimeters, unit-square arrays, line plots, robot measurements, equal-area representations, and reflection tools must be visible learning surfaces rather than prose substitutes.
-- Summary must contain the lesson takeaway and a Problem Set meaning map.
-- Functional learning fidelity is required. Pixel-perfect reproduction of the printed page is not required.
-- Generic concept panels, hidden animations, incorrect shape or measurement models, answer leakage in Blank mode, collapsed visuals, broken source images, horizontal overflow, and more than three purposeful visual sections per problem are failures.
+## Completion bar
 
-## Teacher Edition contract
+- All 34 lessons and all 127 official tasks must appear in printed order.
+- Blank must show the exact Teacher Edition task crop first, including every shape, table, chart, grid, dimension, continuation, and response space.
+- Solved must show the same exact task crop first and the complete Teacher Edition Answer Key page image after it.
+- Multi-page tasks must retain all controlling printed parts in order.
+- A generic renderer, reconstructed diagram, inferred prompt, inferred answer, or text substitute cannot satisfy the visual contract.
+- Blank must not include an Answer Key image. Solved must not replace the Answer Key with authored work.
+- Every source image must match the reviewed page hash and every displayed crop must match the reviewed crop rectangle.
+- Broken images, collapsed crops, wrong task order, horizontal overflow, or an unreviewed source page are failures.
 
-| Lesson | Teacher pages | Problems | Primary learning model |
-|---:|---:|---:|---|
-| 1 | 15–26 | 4 | RDW word problems with a letter for the unknown |
-| 2 | 27–38 | 6 | Multiple RDW models for one- and two-step problems |
-| 3 | 39–54 | 6 | Peer strategy comparison and critique of RDW work |
-| 4 | 55–67 | 4 | Inclusive quadrilateral classification by attributes |
-| 5 | 68–82 | 4 | Classification of other polygons and regular polygons |
-| 6 | 83–96 | 6 | Polygon construction from specified attributes |
-| 7 | 97–113 | 4 | Tetromino composition and decomposition |
-| 8 | 114–125 | 7 | Tangram construction through folds and cuts |
-| 9 | 126–139 | 4 | Polygon composition with tangram pieces |
-| 10 | 140–150 | 3 | Perimeter as boundary versus area as inside region |
-| 11 | 151–157 | 4 | Tessellation boundary and string measurement |
-| 12 | 158–169 | 4 | Whole-unit side measurement and perimeter |
-| 13 | 170–183 | 3 | Perimeter equations from labeled polygons |
-| 14 | 184–194 | 5 | Unknown side lengths in regular polygons and rectangles |
-| 15 | 195–206 | 6 | Perimeter word problems |
-| 16 | 207–219 | 4 | Circular perimeter measured by string to the nearest quarter inch |
-| 17 | 220–247 | 3 | Composite rectangles, missing lengths, and perimeter |
-| 18 | 248–258 | 3 | Factor-pair rectangles from a fixed number of unit squares |
-| 19 | 259–268 | 4 | Line plot of rectangle counts for 12–18 unit squares |
-| 20 | 269–281 | 2 | Rectangle area while perimeter is fixed |
-| 21 | 282–294 | 4 | Systematic rectangle generation from fixed perimeters |
-| 22 | 295–310 | 5 | Line plot of rectangle counts by perimeter |
-| 23 | 311–321 | 6 | Varied perimeter word problems |
-| 24 | 322–331 | 1 | Robot and environment planning from perimeter constraints |
-| 25 | 332–341 | 1 | Labeled robot and environment drawing |
-| 26 | 342–353 | 4 | Robot-body area line plot and same-perimeter reasoning |
-| 27 | 354–367 | 4 | Peer robot measurement and evaluation |
-| 28 | 368–379 | 4 | Multi-part rectangle area and perimeter problems |
-| 29 | 380–391 | 4 | Composite figures, area, and perimeter |
-| 30 | 392–419 | 1 | Evidence-based peer problem-solving critique |
-| 31 | 420–430 | 1 | Unconventional equal-area representations of one-half |
-| 32 | 431–442 | 4 | Circle constructions and justification of one-half |
-| 33 | 443–453 | 1 | Grade 3 fluency reflection and practice planning |
-| 34 | 454–462 | 1 | Summer practice booklet and 10-week calendar |
+Teacher Edition PDF SHA-256:
+`608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175`
 
-Total: **34 lessons and 127 official Problem Set items**.
+## Reviewed task and Answer Key pages
 
-## Durable implementation and checks
+| Lesson | Tasks | Task pages | Answer Key pages |
+|---:|---:|---:|---:|
+| 1 | 4 | 22–23 | 464 |
+| 2 | 6 | 34–35 | 465 |
+| 3 | 6 | 46–47 | 466 |
+| 4 | 4 | 62–63 | 467–468 |
+| 5 | 4 | 76–77 | 469–470 |
+| 6 | 6 | 89–90 | 471 |
+| 7 | 4 | 104–105 | 472–473 |
+| 8 | 7 | 121–122 | 474–475 |
+| 9 | 4 | 132–133 | 476–477 |
+| 10 | 3 | 146–147 | 478–479 |
+| 11 | 4 | 154 | 480 |
+| 12 | 4 | 164–165 | 481–482 |
+| 13 | 3 | 177–178 | 483–484 |
+| 14 | 5 | 190–191 | 485–486 |
+| 15 | 6 | 202–203 | 487 |
+| 16 | 4 | 214–215 | 488–489 |
+| 17 | 3 | 226–227 | 490 |
+| 18 | 3 | 253–254 | 491 |
+| 19 | 4 | 264–265 | 492 |
+| 20 | 2 | 276–277 | 493–494 |
+| 21 | 4 | 288–289 | 495–496 |
+| 22 | 5 | 302–303 | 497–498 |
+| 23 | 6 | 317–318 | 499–500 |
+| 24 | 1 | 327–328 | 501–502 |
+| 25 | 1 | 337 | 503–504 |
+| 26 | 4 | 348–349 | 505–506 |
+| 27 | 4 | 360–362 | 507–508 |
+| 28 | 4 | 374–376 | 509–510 |
+| 29 | 4 | 387–388 | 511–512 |
+| 30 | 1 | 398 | 513 |
+| 31 | 1 | 426 | 514–515 |
+| 32 | 4 | 437–438 | 516–517 |
+| 33 | 1 | 448 | 518–519 |
+| 34 | 1 | 461–462 | 520 |
 
-- Teacher facts and lesson-specific concept models: `src/app/data/lessons/m7/functional-fidelity.ts`
-- Problem Set prompts, source models, Blank/Solved visuals, and runtime attachment: `src/app/data/lessons/lesson-registry.ts`
-- Shared visual rendering and dense unit-square support: `src/app/shared/problem-visual-workspace/`
-- Durable Module 7 functional validator: `scripts/validate-problem-centered-delivery.mjs`
-- Precomputed source baseline validator: `scripts/validate-teacher-edition-baseline.mjs`
+Lesson 34 has no conventional Problem Set page. Its printed Summer Math Review Calendar on lesson-resource pages 461–462 is the controlling task. Lesson 26 page 344 was an OCR/source-locator false positive; visual review confirmed that it is instructional preparation rather than a Problem Set continuation, so it is not delivered as a task page.
 
-Run:
+## Durable source contract
+
+- Reviewed evidence: `teacher-edition-baseline/module-7-problem-evidence.json`
+- Per-lesson visual contracts: `teacher-edition-baseline/visual-layout-contracts/m7/`
+- Source-backed runtime: `src/app/data/lessons/m7/problem-set-centered.ts`
+- Generated reviewed evidence: `src/app/data/lessons/m7/source-problem-evidence.generated.ts`
+- Evidence generator: `scripts/generate-m7-reviewed-evidence.mjs`
+- Contract generator: `scripts/generate-m7-source-visual-contracts.mjs`
+- Runtime generator: `scripts/generate-m7-runtime-evidence.mjs`
+
+The audit covered 132 exact task/resource crops and all 57 Answer Key pages. The source contracts preserve multi-page tasks, including Lessons 10, 24, 28, 32, and 34.
+
+## Validation record
+
+Before replacement, all 34 Module 7 lessons failed the source-visual contracts because the generic implementation did not match the canonical Teacher Edition layout or Answer Key evidence.
+
+After replacement, these checks passed:
 
 ```bash
+node scripts/validate-source-visual-contracts.mjs --lessons m7-l1,m7-l2,m7-l3,m7-l4,m7-l5,m7-l6,m7-l7,m7-l8,m7-l9,m7-l10,m7-l11,m7-l12,m7-l13,m7-l14,m7-l15,m7-l16,m7-l17,m7-l18,m7-l19,m7-l20,m7-l21,m7-l22,m7-l23,m7-l24,m7-l25,m7-l26,m7-l27,m7-l28,m7-l29,m7-l30,m7-l31,m7-l32,m7-l33,m7-l34
 npm run validate:teacher-baseline
 npm run validate:problem-centered-delivery
+npm run validate:solved-fidelity
 npm run validate:no-pdf-problem-tabs
-npm run build -- --progress=false
+npm run build
 ```
 
-## Live Chrome acceptance
+Live Chrome acceptance used an isolated Gemini-profile QA tab:
 
-The isolated Module 7 QA tab must pass all 136 live states:
+- 68 Blank/Solved routes passed.
+- 254 card states were physically scrolled into the viewport: 127 Blank and 127 Solved.
+- Exact task order, task-image count, source-image dimensions, crop aspect ratios, crop transforms, Blank leakage rules, Solved Answer Key placement, broken images, and horizontal overflow were checked.
+- 68 Concept/Summary route states also passed render, selected-tab, broken-image, and overflow smoke checks.
+- Representative visual inspection covered quadrilateral classification, tangram reconstruction, the multi-page robot task, unconventional halves, the Summer Math Review Calendar, and exact Answer Key presentation.
 
-- 34 Concept views: correct lesson, three source stages, visible animation, at least three motion steps, and a lesson-relevant source visual.
-- 34 Blank views: exact problem count, one visual workspace per problem, and no Teacher Edition answer leakage.
-- 34 Solved views: exact problem count, one visual workspace per problem, source-aligned reasoning and answers, and visible/non-collapsed mathematical marks.
-- 34 Summary views: lesson takeaway and Problem Set meaning map.
-- Every state: no old generic Module 7 concept panel, audit scaffold, broken image, or horizontal overflow.
-
-Representative visual review must include RDW, polygon classification, tetromino/tangram composition, boundary measurement, all four 24-square-unit rectangles, rectangle line plots, robot perimeter requirements, the Lesson 29 composite figure, unconventional one-half representations, and the summer practice calendar. This visual review is a release check, not a replacement for the 136-state sweep.
+No generic visual or inferred answer is an accepted fallback for Module 7 Problem Set delivery.

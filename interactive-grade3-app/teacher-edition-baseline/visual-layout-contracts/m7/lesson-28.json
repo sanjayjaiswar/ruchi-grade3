@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l28",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-374.png",
+      "sha256": "272972e0817b72f1b496895fdb7bb238dbfaeebda9dec296108d89c72de8e871",
+      "pdfPage": 374,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 28 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-375.png",
+      "sha256": "fd046ca5b2d7709335762e7060328771087534107579e07e5f3fedaf884e1ea0",
+      "pdfPage": 375,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 28 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-376.png",
+      "sha256": "c2d673748668cbb1d1317ec3b55df2280048cf0f01444f9b3b1df7e722918655",
+      "pdfPage": 376,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 28 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-509.png",
+      "sha256": "a38802b42c3f1be8164f684932e8fa2f042aa34b70d3ca0bc999ca2318919894",
+      "pdfPage": 509,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 28 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-510.png",
+      "sha256": "81c87a6d2444567644e609682410f19bb4ae97d8651d53318bc4d5e8cee89e8e",
+      "pdfPage": 510,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 28 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-374.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Gia measures her rectangular garden and finds the width is 9 yards and the length is 7 yards."
+        ],
+        "answerKeyEvidence": "a. 7 yd by 9 yd rectangle drawn and labeled correctly b. 63 sq yd c. 32 yd",
+        "layout": {
+          "family": "garden-area-and-perimeter-word-problem",
+          "subpartCount": 3,
+          "modelPrimitive": "live-nine-by-seven-rectangle+parts-table",
+          "modelCounts": [
+            9,
+            7,
+            63,
+            32
+          ],
+          "modelOrientation": "rectangle-over-three-part-work-and-response",
+          "responseStructure": "draw-label-find-area-and-find-perimeter",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-374.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Elijah draws a square that has side lengths of 8 centimeters."
+        ],
+        "answerKeyEvidence": "a. 8 cm by 8 cm square drawn and labeled correctly b. 64 sq cm c. 32 cm d. 64 cm",
+        "layout": {
+          "family": "square-area-perimeter-and-three-square-composite",
+          "subpartCount": 4,
+          "modelPrimitive": "live-eight-square+three-square-long-rectangle+parts-table",
+          "modelCounts": [
+            8,
+            64,
+            32,
+            24,
+            64
+          ],
+          "modelOrientation": "square-and-composite-over-four-part-work-and-response",
+          "responseStructure": "draw-label-find-area-two-perimeters",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-375.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The area of Mason's rectangular painting is 72 square inches."
+        ],
+        "answerKeyEvidence": "a. Drawings will vary. b. 9 in c. 34 in d. 217 sq in",
+        "layout": {
+          "family": "painting-missing-length-perimeter-and-total-area",
+          "subpartCount": 4,
+          "modelPrimitive": "live-area-seventy-two-width-eight-rectangle+parts-table",
+          "modelCounts": [
+            72,
+            8,
+            9,
+            34,
+            64,
+            81,
+            217
+          ],
+          "modelOrientation": "rectangle-over-four-part-work-and-response",
+          "responseStructure": "draw-label-derive-length-perimeter-and-total-area",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-376.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The perimeter of Jillian's rectangular bedroom is 34 feet."
+        ],
+        "answerKeyEvidence": "a. Drawings will vary. b. 8 ft c. 72 sq ft d. 48 sq ft",
+        "layout": {
+          "family": "bedroom-missing-width-area-and-uncovered-floor",
+          "subpartCount": 4,
+          "modelPrimitive": "live-bedroom-and-four-by-six-rug+parts-table",
+          "modelCounts": [
+            34,
+            9,
+            8,
+            72,
+            4,
+            6,
+            48
+          ],
+          "modelOrientation": "bedroom-and-rug-over-four-part-work-and-response",
+          "responseStructure": "draw-label-derive-width-area-and-uncovered-area",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    }
+  ]
+}

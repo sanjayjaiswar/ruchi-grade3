@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 2,
+  "purpose": "Teacher Edition-only page evidence used to compare source text, answer-key results, and a neutral canonical visual-layout signature with the implementation. A source-first crop may be the canonical layout when the exact printed task is the clearest faithful representation.",
+  "requiredLessonFields": [
+    "lessonId",
+    "teacherEditionPdfSha256",
+    "sourceEvidence",
+    "problems"
+  ],
+  "requiredEvidenceFields": [
+    "image",
+    "sha256",
+    "pdfPage",
+    "documentSection",
+    "role"
+  ],
+  "requiredProblemFields": [
+    "number",
+    "sourcePageImage",
+    "teacherEditionRequirements"
+  ],
+  "requiredTeacherEditionRequirementFields": [
+    "sourceTextEvidence",
+    "answerKeyEvidence",
+    "layout",
+    "blankMustNotContain",
+    "solvedMustContain",
+    "sourceLayoutNotes"
+  ],
+  "prohibitedAcceptanceFields": [
+    "rootKind",
+    "runtimePath",
+    "renderer",
+    "implementationCheck",
+    "authoredComponent"
+  ],
+  "rule": "Expected values may come only from the fingerprinted Teacher Edition PDF, its Problem Set page evidence, and its answer key. Renderer names and implementation structure are never source truth."
+}

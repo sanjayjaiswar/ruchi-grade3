@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m4-l3",
+  "teacherEditionPdfSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m4-teacher/page-037.png",
+      "sha256": "0cca27627bf243391383004b9a68975cc4bbea5bf5deb5b6d88600a7d92e54ba",
+      "pdfPage": 37,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 3 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-038.png",
+      "sha256": "bfbf8016e641b1b6ec02eeac011706e6ccf872b9ef5f914b85d1ba51565c3b2b",
+      "pdfPage": 38,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 3 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-218.png",
+      "sha256": "df682292f579adcaaf90a16d0f568174f39dfdec6b633058d4087501ed0a9dab",
+      "pdfPage": 218,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 3 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m4-teacher/page-037.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "what is the area of each of the following rectangles"
+        ],
+        "answerKeyEvidence": "A: 6. B: 2 square units. C: 12 square units. D: 20 square units.",
+        "layout": {
+          "family": "four-labeled-square-unit-rectangles",
+          "subpartCount": 4,
+          "modelPrimitive": "square-unit-arrays",
+          "modelCounts": [
+            6,
+            12,
+            12,
+            20
+          ],
+          "modelOrientation": "four-source-models",
+          "responseStructure": "record-area-for-a-b-c-d"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m4-teacher/page-037.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "what is the area of each of the following rectangles"
+        ],
+        "answerKeyEvidence": "a. 6 square units. b. 9 square units. c. 16 square units. d. 12 square units.",
+        "layout": {
+          "family": "four-labeled-square-unit-rectangles",
+          "subpartCount": 4,
+          "modelPrimitive": "square-unit-arrays",
+          "modelCounts": [
+            6,
+            9,
+            16,
+            12
+          ],
+          "modelOrientation": "four-source-models",
+          "responseStructure": "record-area-for-a-b-c-d"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m4-teacher/page-038.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "how would the rectangles in problem 1 be different if they were composed of square inches"
+        ],
+        "answerKeyEvidence": "a. Answers will vary. b. Answers will vary.",
+        "layout": {
+          "family": "two-part-unit-size-recreation-response",
+          "subpartCount": 2,
+          "modelPrimitive": "open-grid-paper-recreation-and-explanation",
+          "modelCounts": [],
+          "modelOrientation": "two-vertical-source-parts",
+          "responseStructure": "explain-and-recreate-on-two-unit-grids",
+          "openWorkspaceCount": 2
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m4-teacher/page-038.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "draw four different rectangles that each has an area of 8 square centimeters"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "four-eight-square-centimeter-rectangle-constructions",
+          "subpartCount": 4,
+          "modelPrimitive": "square-unit-arrays",
+          "modelCounts": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "modelOrientation": "four-source-models",
+          "responseStructure": "draw-four-different-equal-area-rectangles",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    }
+  ]
+}

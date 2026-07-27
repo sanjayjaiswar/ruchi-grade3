@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m4-l6",
+  "teacherEditionPdfSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m4-teacher/page-073.png",
+      "sha256": "9e0a716fbd33545e337944c1b2f8e47c94ef583ba8f2a91f1efaf794fc1f8665",
+      "pdfPage": 73,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 6 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-074.png",
+      "sha256": "691dc2606b19efed62cef3bd8c1173895c85215165c0bb8eb02382a76d237eb2",
+      "pdfPage": 74,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 6 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-221.png",
+      "sha256": "6d4a53e4bb1ec4c29444c3f3f3777ae6a5a5cb42563d1f728b93e3936c54f605",
+      "pdfPage": 221,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 6 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m4-teacher/page-073.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "draw to find the number of rows and columns in each array"
+        ],
+        "answerKeyEvidence": "a. Lines drawn to find 5 cm by 6 cm; matched to fifth completed array; 5, 6, 30. b. Lines drawn to find 3 cm by 7 cm; matched to sixth completed array; 3, 7, 21. c. Lines drawn to find 5 cm by 3 cm; matched to first completed array; 5, 3, 15. d. Lines drawn to find 4 cm by 5 cm; matched to second completed array; 4, 5, 20. e. Lines drawn to find 2 cm by 6 cm; matched to third completed array; 2, 6, 12. f. Lines drawn to find 4 cm by 3 cm; matched to fourth completed array; 4, 3, 12.",
+        "layout": {
+          "family": "six-incomplete-to-six-completed-array-match",
+          "subpartCount": 6,
+          "modelPrimitive": "tight-official-incomplete-arrays+authored-completed-square-arrays",
+          "modelCounts": [
+            30,
+            21,
+            15,
+            20,
+            12,
+            12
+          ],
+          "modelOrientation": "six-source-items-and-six-independent-match-targets",
+          "responseStructure": "draw-lines-complete-match-and-write-six-area-equations",
+          "sourceFirst": true,
+          "sourceCropCount": 6
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m4-teacher/page-074.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "sheena skip-counts by sixes"
+        ],
+        "answerKeyEvidence": "No; explanations may vary.",
+        "layout": {
+          "family": "complete-six-by-eight-array-and-check-claim",
+          "subpartCount": 1,
+          "modelPrimitive": "tight-official-incomplete-square-array",
+          "modelCounts": [
+            48
+          ],
+          "modelOrientation": "figure-over-open-response",
+          "responseStructure": "complete-array-and-explain-not-forty-two",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m4-teacher/page-074.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "tile floor in brandon’s living room"
+        ],
+        "answerKeyEvidence": "90",
+        "layout": {
+          "family": "nine-by-ten-tile-floor-with-rug",
+          "subpartCount": 1,
+          "modelPrimitive": "tight-official-rug-over-square-grid",
+          "modelCounts": [
+            9,
+            10,
+            90
+          ],
+          "modelOrientation": "figure-over-open-response",
+          "responseStructure": "count-covered-and-visible-floor-tiles",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m4-teacher/page-074.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "abdul is creating a stained glass window"
+        ],
+        "answerKeyEvidence": "30; explanations may vary.",
+        "layout": {
+          "family": "incomplete-stained-glass-border-array",
+          "subpartCount": 1,
+          "modelPrimitive": "tight-official-incomplete-window-array",
+          "modelCounts": [
+            42,
+            12,
+            30
+          ],
+          "modelOrientation": "figure-over-open-response",
+          "responseStructure": "complete-array-and-find-missing-tiles",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    }
+  ]
+}

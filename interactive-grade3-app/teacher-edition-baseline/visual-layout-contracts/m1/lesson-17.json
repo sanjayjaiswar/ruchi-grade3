@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m1-l17",
+  "teacherEditionPdfSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m1-teacher/page-227.png",
+      "sha256": "8d5f7ad14de9da6bd9d7344012ced23442d5a6c41e3151bbc9e09410fbdbee29",
+      "pdfPage": 227,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 17 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-228.png",
+      "sha256": "4181ed2516cd8fcd87f03b6f621cbc617e6e689072ca5d950632f775ffd82384",
+      "pdfPage": 228,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 17 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-321.png",
+      "sha256": "645c8aa583152ef121fd3d37258df6271b2b727d741495d6e51675aea7da4e62",
+      "pdfPage": 321,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 17 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-322.png",
+      "sha256": "69e7bb360256d2a81e7b4edd0f6b14778f40f66992eaad827f9c1f2e15497afc",
+      "pdfPage": 322,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 17 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m1-teacher/page-227.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the array to complete the related equations."
+        ],
+        "answerKeyEvidence": "8; 8; 3; 3; 4; 4; 5, 4; 4, 5; 6, 4; 4, 6; 7, 28; 28, 7; 8, 32; 32, 8; 9, 4, 36; 36, 4, 9; 10, 4, 40; 40, 4, 10",
+        "layout": {
+          "family": "source-illustration-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m1-teacher/page-228.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The baker packs 36 bran muffins in boxes of 4."
+        ],
+        "answerKeyEvidence": "Tape diagram drawn and labeled showing 9 boxes packed",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m1-teacher/page-228.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The waitress arranges 32 glasses into 4 equal rows. How many glasses are in each row?"
+        ],
+        "answerKeyEvidence": "8",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m1-teacher/page-228.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Janet paid $28 for 4 notebooks. Each notebook costs the same amount. What is the cost of 2 notebooks?"
+        ],
+        "answerKeyEvidence": "$14",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

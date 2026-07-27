@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m2-l2",
+  "teacherEditionPdfSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m2-teacher/page-031.png",
+      "sha256": "f217be11c186945aa4618849af89e7ac9a1a52d1b3b9f2287ed90fdab43d9891",
+      "pdfPage": 31,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 2 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-teacher/page-032.png",
+      "sha256": "427364c0876ecefd8e97a4f7c2265cd6269c32baa8e11e6774ab3b1fb4984bb1",
+      "pdfPage": 32,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 2 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-answer-key/page-282.png",
+      "sha256": "cbc73d3a95e18d6dc47c83588af4345a220f197208d42162ce33b34ddf110aca",
+      "pdfPage": 282,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 2 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m2-teacher/page-031.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "follow the directions to label the number line below."
+        ],
+        "answerKeyEvidence": "1. a. First and last tick marks labeled as 7:00 a.m. and 8:00 a.m. b. Each interval labeled by fives below the number line up to 8:00 a.m. c. Point D plotted and labeled above 7:10 a.m. d. Point E plotted and labeled above 7:35 a.m. e. Point T plotted and labeled above 7:40 a.m. f. Point L plotted and labeled above 7:45 a.m. g. Point W plotted and labeled above 7:55 a.m. 2. Every 5 minutes labeled below the number line First clock not matched to the number line Second clock—5:50 p.m. Third clock—5:15 p.m. Fourth clock not matched to the number line Fifth clock—5:40 p.m. Last clock—5:25 p.m. 3. First and last tick marks labeled as 5:00 p.m. and 6:00 p.m.; each interval labeled by fives below the number line up to 6:00 p.m.; 5:45 p.m. located and plotted on the number line 4. Answers will vary.",
+        "layout": {
+          "family": "time-number-line-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m2-teacher/page-032.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "draw a line from each clock to the point on the number line"
+        ],
+        "answerKeyEvidence": "1. a. First and last tick marks labeled as 7:00 a.m. and 8:00 a.m. b. Each interval labeled by fives below the number line up to 8:00 a.m. c. Point D plotted and labeled above 7:10 a.m. d. Point E plotted and labeled above 7:35 a.m. e. Point T plotted and labeled above 7:40 a.m. f. Point L plotted and labeled above 7:45 a.m. g. Point W plotted and labeled above 7:55 a.m. 2. Every 5 minutes labeled below the number line First clock not matched to the number line Second clock—5:50 p.m. Third clock—5:15 p.m. Fourth clock not matched to the number line Fifth clock—5:40 p.m. Last clock—5:25 p.m. 3. First and last tick marks labeled as 5:00 p.m. and 6:00 p.m.; each interval labeled by fives below the number line up to 6:00 p.m.; 5:45 p.m. located and plotted on the number line 4. Answers will vary.",
+        "layout": {
+          "family": "time-number-line-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m2-teacher/page-032.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "noah uses a number line to locate 5:45 p.m. each interval is 5 minutes. the number line shows the hour from 5 p.m. to 6 p.m. label the number line"
+        ],
+        "answerKeyEvidence": "1. a. First and last tick marks labeled as 7:00 a.m. and 8:00 a.m. b. Each interval labeled by fives below the number line up to 8:00 a.m. c. Point D plotted and labeled above 7:10 a.m. d. Point E plotted and labeled above 7:35 a.m. e. Point T plotted and labeled above 7:40 a.m. f. Point L plotted and labeled above 7:45 a.m. g. Point W plotted and labeled above 7:55 a.m. 2. Every 5 minutes labeled below the number line First clock not matched to the number line Second clock—5:50 p.m. Third clock—5:15 p.m. Fourth clock not matched to the number line Fifth clock—5:40 p.m. Last clock—5:25 p.m. 3. First and last tick marks labeled as 5:00 p.m. and 6:00 p.m.; each interval labeled by fives below the number line up to 6:00 p.m.; 5:45 p.m. located and plotted on the number line 4. Answers will vary.",
+        "layout": {
+          "family": "time-number-line-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m2-teacher/page-032.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "tanner tells his little brother that 11:25 p.m. comes after 11:20 a.m. do you agree with tanner why or why not"
+        ],
+        "answerKeyEvidence": "1. a. First and last tick marks labeled as 7:00 a.m. and 8:00 a.m. b. Each interval labeled by fives below the number line up to 8:00 a.m. c. Point D plotted and labeled above 7:10 a.m. d. Point E plotted and labeled above 7:35 a.m. e. Point T plotted and labeled above 7:40 a.m. f. Point L plotted and labeled above 7:45 a.m. g. Point W plotted and labeled above 7:55 a.m. 2. Every 5 minutes labeled below the number line First clock not matched to the number line Second clock—5:50 p.m. Third clock—5:15 p.m. Fourth clock not matched to the number line Fifth clock—5:40 p.m. Last clock—5:25 p.m. 3. First and last tick marks labeled as 5:00 p.m. and 6:00 p.m.; each interval labeled by fives below the number line up to 6:00 p.m.; 5:45 p.m. located and plotted on the number line 4. Answers will vary.",
+        "layout": {
+          "family": "time-number-line-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

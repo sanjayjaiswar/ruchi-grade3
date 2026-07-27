@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l13",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-153.png",
+      "sha256": "b1d50e40dd6311fbf38e82354f806b322497f4153c1f9d2e6cf453f30546b41f",
+      "pdfPage": 153,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 13 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-154.png",
+      "sha256": "80883171cb96b56ffcd0f674377c907648b2b81b5e411e743e3e21c43ab7589b",
+      "pdfPage": 154,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 13 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-389.png",
+      "sha256": "3958d2d80d6e1530d869b65a77337c6250803489e586ce281cca7ba63329f3cc",
+      "pdfPage": 389,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 13 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-153.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The shape represents 1 whole."
+        ],
+        "answerKeyEvidence": "a. 1/2. b. Shaded part divided to show 1/2.",
+        "layout": {
+          "family": "same-unit-fraction-after-redesignating-the-shaded-part-as-whole",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-paired-designated-whole-figures-plus-authored-response",
+          "modelCounts": [
+            2,
+            1
+          ],
+          "modelOrientation": "paired-source-figures-over-two-part-fraction-response",
+          "responseStructure": "name-unit-fraction-then-partition-the-shaded-part-as-new-whole",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-153.png",
+              "crop": {
+                "x": 135,
+                "y": 285,
+                "width": 960,
+                "height": 235
+              }
+            }
+          ],
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-153.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The shape represents 1 whole."
+        ],
+        "answerKeyEvidence": "a. 1/4. b. Shaded part divided to show 1/4.",
+        "layout": {
+          "family": "same-unit-fraction-after-redesignating-the-shaded-part-as-whole",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-paired-designated-whole-figures-plus-authored-response",
+          "modelCounts": [
+            2,
+            1
+          ],
+          "modelOrientation": "paired-source-figures-over-two-part-fraction-response",
+          "responseStructure": "name-unit-fraction-then-partition-the-shaded-part-as-new-whole",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-153.png",
+              "crop": {
+                "x": 135,
+                "y": 510,
+                "width": 960,
+                "height": 250
+              }
+            }
+          ],
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-153.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The shape represents 1 whole."
+        ],
+        "answerKeyEvidence": "a. 1/3. b. Shaded part divided to show 1/3.",
+        "layout": {
+          "family": "same-unit-fraction-after-redesignating-the-shaded-part-as-whole",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-paired-designated-whole-figures-plus-authored-response",
+          "modelCounts": [
+            2,
+            1
+          ],
+          "modelOrientation": "paired-source-figures-over-two-part-fraction-response",
+          "responseStructure": "name-unit-fraction-then-partition-the-shaded-part-as-new-whole",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-153.png",
+              "crop": {
+                "x": 135,
+                "y": 755,
+                "width": 960,
+                "height": 235
+              }
+            }
+          ],
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-153.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The shape represents 1 whole."
+        ],
+        "answerKeyEvidence": "a. 1/5. b. Shaded part divided to show 1/5.",
+        "layout": {
+          "family": "same-unit-fraction-after-redesignating-the-shaded-part-as-whole",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-paired-designated-whole-figures-plus-authored-response",
+          "modelCounts": [
+            2,
+            1
+          ],
+          "modelOrientation": "paired-source-figures-over-two-part-fraction-response",
+          "responseStructure": "name-unit-fraction-then-partition-the-shaded-part-as-new-whole",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-153.png",
+              "crop": {
+                "x": 135,
+                "y": 985,
+                "width": 960,
+                "height": 205
+              }
+            }
+          ],
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m5-teacher/page-153.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The shape represents 1 whole."
+        ],
+        "answerKeyEvidence": "a. 1/6. b. Shaded part divided to show 1/6.",
+        "layout": {
+          "family": "same-unit-fraction-after-redesignating-the-shaded-part-as-whole",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-paired-designated-whole-figures-plus-authored-response",
+          "modelCounts": [
+            2,
+            1
+          ],
+          "modelOrientation": "paired-source-figures-over-two-part-fraction-response",
+          "responseStructure": "name-unit-fraction-then-partition-the-shaded-part-as-new-whole",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-153.png",
+              "crop": {
+                "x": 135,
+                "y": 1175,
+                "width": 960,
+                "height": 250
+              }
+            }
+          ],
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m5-teacher/page-154.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the diagram below to complete the following statements."
+        ],
+        "answerKeyEvidence": "a. C. b. B. c. A. d. 2; 1/2. e. 1/2; 1/4.",
+        "layout": {
+          "family": "three-rope-lengths-with-changing-designated-whole",
+          "subpartCount": 5,
+          "modelPrimitive": "tight-official-three-rope-diagram-plus-five-authored-statements",
+          "modelCounts": [
+            3,
+            5
+          ],
+          "modelOrientation": "three-horizontal-rope-models-over-five-written-statements",
+          "responseStructure": "identify-half-and-quarter-relations-under-two-meter-designations",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-154.png",
+              "crop": {
+                "x": 145,
+                "y": 255,
+                "width": 870,
+                "height": 325
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 7,
+      "sourcePageImage": "/source-pages/m5-teacher/page-154.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Ms. Fan drew the figure below on the board."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "one-shaded-amount-named-three-fourths-or-three-halves",
+          "subpartCount": 1,
+          "modelPrimitive": "tight-official-shaded-rectangle-plus-authored-explanation-space",
+          "modelCounts": [
+            4,
+            2
+          ],
+          "modelOrientation": "source-shaded-rectangle-over-written-explanation",
+          "responseStructure": "explain-both-fractions-by-naming-each-designated-whole",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-154.png",
+              "crop": {
+                "x": 420,
+                "y": 1110,
+                "width": 430,
+                "height": 180
+              }
+            }
+          ],
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    }
+  ]
+}

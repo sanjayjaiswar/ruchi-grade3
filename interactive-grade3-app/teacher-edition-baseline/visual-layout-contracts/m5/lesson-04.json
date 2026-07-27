@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l4",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-47.png",
+      "sha256": "b7a982263ac47ac232a4ca0d7c81fef7dfbbfd9c05ae02d9f952ac674d8be5bb",
+      "pdfPage": 47,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 4 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-48.png",
+      "sha256": "38a195817e1e92063b16883818100bfeadf439fd3f12f0ff91920847df312e2b",
+      "pdfPage": 48,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 4 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-372.png",
+      "sha256": "07a545a8efd53a6821ee775e2ce5fdca5109e2e226032d9d009fcbfd8e8bb35b",
+      "pdfPage": 372,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 4 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-373.png",
+      "sha256": "f410b8a151edae04dc6a2b28089782b89683ba4b14b468c8ae02d84d961c9e20",
+      "pdfPage": 373,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 4 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-47.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a picture of the yellow strip"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "open-station-fraction-drawings",
+          "subpartCount": 4,
+          "modelPrimitive": "unseeded-open-drawing-workspace",
+          "modelCounts": [],
+          "modelOrientation": "single-large-open-response",
+          "responseStructure": "answers-vary-draw-three-or-four-equal-part-models-without-invented-solution",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-47.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a picture of the brown bar"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "open-station-fraction-drawings",
+          "subpartCount": 4,
+          "modelPrimitive": "unseeded-open-drawing-workspace",
+          "modelCounts": [],
+          "modelOrientation": "single-large-open-response",
+          "responseStructure": "answers-vary-draw-three-or-four-equal-part-models-without-invented-solution",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-47.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a picture of the square"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "open-station-fraction-drawings",
+          "subpartCount": 4,
+          "modelPrimitive": "unseeded-open-drawing-workspace",
+          "modelCounts": [],
+          "modelOrientation": "single-large-open-response",
+          "responseStructure": "answers-vary-draw-three-or-four-equal-part-models-without-invented-solution",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-48.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a picture of the clay"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "open-station-fraction-drawings",
+          "subpartCount": 4,
+          "modelPrimitive": "unseeded-open-drawing-workspace",
+          "modelCounts": [],
+          "modelOrientation": "single-large-open-response",
+          "responseStructure": "answers-vary-draw-three-or-four-equal-part-models-without-invented-solution",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m5-teacher/page-48.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a picture of the water"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "open-station-fraction-drawings",
+          "subpartCount": 4,
+          "modelPrimitive": "unseeded-open-drawing-workspace",
+          "modelCounts": [],
+          "modelOrientation": "single-large-open-response",
+          "responseStructure": "answers-vary-draw-three-or-four-equal-part-models-without-invented-solution",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m5-teacher/page-48.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a picture of the yarn"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "open-station-fraction-drawings",
+          "subpartCount": 4,
+          "modelPrimitive": "unseeded-open-drawing-workspace",
+          "modelCounts": [],
+          "modelOrientation": "single-large-open-response",
+          "responseStructure": "answers-vary-draw-three-or-four-equal-part-models-without-invented-solution",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    }
+  ]
+}

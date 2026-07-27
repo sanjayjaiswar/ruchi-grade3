@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l10",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-119.png",
+      "sha256": "6e3f050dd663ae250fe5b23fede01adb9ea3951f6348f5948d594327a4db18c4",
+      "pdfPage": 119,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 10 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-120.png",
+      "sha256": "45ea2b0b4cf4fe75f56ae27f1f8b28088645a86bfa16c363da1b4e27ee0dbb1a",
+      "pdfPage": 120,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 10 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-384.png",
+      "sha256": "5ebb7c34c27be914ffb3dfc81f1a0ba575a499ad1234fe48733943a5bf642b7f",
+      "pdfPage": 384,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 10 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-385.png",
+      "sha256": "aa5c7d4aed03a86c1213e13689314640691d76f3c3435737e86c5be3dfe4e760",
+      "pdfPage": 385,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 10 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-119.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Each fraction strip is 1 whole"
+        ],
+        "answerKeyEvidence": "Specified fractional unit shaded in each strip.",
+        "layout": {
+          "family": "five-equal-length-prepartitioned-unit-fraction-strips",
+          "subpartCount": 5,
+          "modelPrimitive": "five-authored-equal-length-prepartitioned-strips",
+          "modelCounts": [
+            2,
+            4,
+            8,
+            3,
+            6
+          ],
+          "modelOrientation": "five-horizontal-equal-length-strips",
+          "responseStructure": "color-one-unit-in-each-strip"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-119.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Circle less than or greater than. Whisper the complete sentence"
+        ],
+        "answerKeyEvidence": "a. Greater than. b. Less than. c. Less than. d. Greater than. e. Less than. f. Less than. g. Greater than. h. Greater than.",
+        "layout": {
+          "family": "eight-less-than-or-greater-than-sentences",
+          "subpartCount": 8,
+          "modelPrimitive": "eight-authored-comparison-sentences",
+          "modelCounts": [
+            8
+          ],
+          "modelOrientation": "eight-written-comparisons-in-reading-order",
+          "responseStructure": "circle-less-than-or-greater-than-and-read-each-sentence"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-120.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Will Lily use more oil or more water"
+        ],
+        "answerKeyEvidence": "More oil; explanations will vary.",
+        "layout": {
+          "family": "same-cup-one-third-oil-one-fourth-water-comparison",
+          "subpartCount": 2,
+          "modelPrimitive": "two-authored-same-size-open-or-partitioned-cup-models",
+          "modelCounts": [
+            3,
+            4
+          ],
+          "modelOrientation": "two-horizontal-same-whole-models-over-written-explanation",
+          "responseStructure": "compare-one-third-and-one-fourth-and-explain",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-120.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use >, <, or = to compare"
+        ],
+        "answerKeyEvidence": "a. >. b. <. c. =. d. >. e. <. f. =. g. =, <, <, <, =.",
+        "layout": {
+          "family": "six-symbol-comparisons-and-one-order-chain",
+          "subpartCount": 7,
+          "modelPrimitive": "seven-authored-comparison-responses",
+          "modelCounts": [
+            6,
+            1
+          ],
+          "modelOrientation": "six-comparisons-followed-by-one-extension-chain",
+          "responseStructure": "write-comparison-symbols-and-complete-the-order-chain"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m5-teacher/page-120.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "pictures to explain what happens to the size of a unit fraction"
+        ],
+        "answerKeyEvidence": "No; explanations will vary.",
+        "layout": {
+          "family": "same-whole-one-sixth-and-one-fifth-counterexample",
+          "subpartCount": 2,
+          "modelPrimitive": "two-authored-same-size-open-or-partitioned-whole-models",
+          "modelCounts": [
+            6,
+            5
+          ],
+          "modelOrientation": "two-horizontal-same-whole-models-over-written-explanation",
+          "responseStructure": "reject-claim-and-explain-denominator-size-effect",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    }
+  ]
+}

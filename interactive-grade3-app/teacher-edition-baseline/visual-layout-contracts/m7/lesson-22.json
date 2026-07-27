@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l22",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-302.png",
+      "sha256": "ed5153a50225350e22df17294a7975a65acf4c3a08ab131490002859222dff90",
+      "pdfPage": 302,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 22 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-303.png",
+      "sha256": "91ed7b4c2df53d309097f5b7ea1c7bb98c2f364ec4de54720e4133cb73e59637",
+      "pdfPage": 303,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 22 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-497.png",
+      "sha256": "1bec7c56612adbfa85f452f18c98a356d267b7530cac9dce61940183856291a8",
+      "pdfPage": 497,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 22 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-498.png",
+      "sha256": "bbfd18a59708e2fd93c3f8ec0881431238549e23ac891fbfbec7c3cdbc31eedb",
+      "pdfPage": 498,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 22 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-302.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the data you gathered from your Problem Sets to create a line plot for the number of rectangles you created with each given perimeter."
+        ],
+        "answerKeyEvidence": "Line plot created.",
+        "layout": {
+          "family": "line-plot-rectangle-counts-by-perimeter",
+          "subpartCount": 6,
+          "modelPrimitive": "live-six-value-line-plot+dependent-table",
+          "modelCounts": [
+            6,
+            2,
+            3,
+            3,
+            4,
+            4,
+            5
+          ],
+          "modelOrientation": "line-plot-over-dependent-data-and-response",
+          "responseStructure": "plot-one-x-per-rectangle-for-perimeters-ten-through-twenty",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-302.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Why are all of the perimeter measurements even?"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "reason-about-even-rectangle-perimeters",
+          "subpartCount": 2,
+          "modelPrimitive": "whole-number-versus-fractional-boundary-evidence",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "reasoning-table-over-two-boundary-models-and-response",
+          "responseStructure": "preserve-variable-two-part-explanation",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-303.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Compare the two line plots we created."
+        ],
+        "answerKeyEvidence": "No.",
+        "layout": {
+          "family": "compare-area-and-perimeter-line-plots",
+          "subpartCount": 2,
+          "modelPrimitive": "two-live-dependent-line-plots",
+          "modelCounts": [
+            2,
+            7,
+            6
+          ],
+          "modelOrientation": "area-line-plot-over-perimeter-line-plot-over-response",
+          "responseStructure": "answer-no-from-comparison",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-303.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Sumi uses unit square tiles to build 3 rectangles that have an area of 32 square units."
+        ],
+        "answerKeyEvidence": "No; explanations will vary.",
+        "layout": {
+          "family": "distinguish-area-thirty-two-from-perimeter-thirty-two",
+          "subpartCount": 2,
+          "modelPrimitive": "two-live-constraint-models+given-question-table",
+          "modelCounts": [
+            2,
+            32,
+            3
+          ],
+          "modelOrientation": "given-question-table-over-constraint-models-and-response",
+          "responseStructure": "answer-no-and-preserve-variable-explanation",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m7-teacher/page-303.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "George draws 3 rectangles that have a perimeter of 14 centimeters."
+        ],
+        "answerKeyEvidence": "Explanations will vary.",
+        "layout": {
+          "family": "explain-more-than-three-perimeter-fourteen-rectangles",
+          "subpartCount": 2,
+          "modelPrimitive": "whole-number-versus-fractional-construction-evidence",
+          "modelCounts": [
+            3,
+            14
+          ],
+          "modelOrientation": "evidence-table-over-construction-models-and-response",
+          "responseStructure": "preserve-variable-explanation-grounded-in-non-whole-number-sides",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    }
+  ]
+}

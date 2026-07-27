@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m6-l5",
+  "teacherEditionPdfSha256": "74325e3dfcae94e1fe359552d3857a3c929b26c5cca327ee80ef45d651aa7358",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m6/workbook-page-24.png",
+      "sha256": "0dd7d97641b685dc59632b093edbbc236a1283b97fe97f702ca4726b185b7948",
+      "pdfPage": 72,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 5 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/workbook-page-25.png",
+      "sha256": "0b76705f7abb08a2e63a25d1a3748f11a55ee5e8b21eb12606662dcc28260da2",
+      "pdfPage": 73,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 5 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/teacher-answer-page-152.png",
+      "sha256": "fcb75db3d908d885fee129983b3e65f7830b487ed40d00949bb841eb155bd5ac",
+      "pdfPage": 152,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 5 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m6/workbook-page-24.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the ruler you made to measure different classmates’ straws"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "variable-class-straw-measurement-table",
+          "subpartCount": 3,
+          "modelPrimitive": "live-five-row-three-precision-table",
+          "modelCounts": [
+            1,
+            2,
+            4
+          ],
+          "modelOrientation": "five-straw-rows-over-response",
+          "responseStructure": "record-measurements-star-exact-values-and-answer-a-through-c",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m6/workbook-page-25.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Jenna marks a 5-inch paper strip"
+        ],
+        "answerKeyEvidence": "Whole and half inches labeled on paper strip; inch marks are drawn; 2; 4; 2; Answers will vary.",
+        "layout": {
+          "family": "label-and-quarter-five-inch-paper-strip",
+          "subpartCount": 3,
+          "modelPrimitive": "live-source-topology-number-line",
+          "modelCounts": [
+            5,
+            10,
+            20
+          ],
+          "modelOrientation": "one-horizontal-zero-to-five-strip-over-response",
+          "responseStructure": "label-wholes-halves-draw-quarters-complete-equivalences-and-explain-use",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m6/workbook-page-25.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Sari says her pencil measures 8 half inches. Bart disagrees and says it measures 4 inches."
+        ],
+        "answerKeyEvidence": "Explanations will vary.",
+        "layout": {
+          "family": "explain-eight-half-inches-equal-four-inches",
+          "subpartCount": 1,
+          "modelPrimitive": "large-open-words-pictures-numbers-workspace",
+          "modelCounts": [
+            8,
+            4,
+            2
+          ],
+          "modelOrientation": "one-vertical-response-space",
+          "responseStructure": "explain-two-halves-per-inch",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    }
+  ]
+}

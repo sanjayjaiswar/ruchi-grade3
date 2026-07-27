@@ -75,7 +75,16 @@ for (const entry of index.lessons ?? []) {
   if (!contract.problemSet?.answerKeyText?.trim()) failures.push(`${entry.lessonId}: missing raw answer-key text`);
   if (!contract.problemSet?.extractedProblems?.length) failures.push(`${entry.lessonId}: missing structured problem prompts`);
   if (!contract.instructionalContract?.conceptDevelopmentText?.trim() && !contract.instructionalContract?.fluencyPracticeText?.trim()) failures.push(`${entry.lessonId}: missing Concept Development or source fluency sequence`);
-  if (!contract.instructionalContract?.studentDebriefText?.trim()) failures.push(`${entry.lessonId}: missing Student Debrief text`);
+  const studentDebriefText = contract.instructionalContract?.studentDebriefText?.trim() ?? '';
+  if (!studentDebriefText) {
+    failures.push(`${entry.lessonId}: missing Student Debrief text`);
+  } else if (
+    studentDebriefText.length < 120 ||
+    /^[,.;:]/.test(studentDebriefText) ||
+    /^After the Student Debrief/i.test(studentDebriefText)
+  ) {
+    failures.push(`${entry.lessonId}: Student Debrief extraction is malformed or matched a trailing reference`);
+  }
   if (!contract.deliveryContract?.blankMustShow?.length || !contract.deliveryContract?.solvedMustShow?.length) failures.push(`${entry.lessonId}: missing delivery rules`);
   if (!contract.sourceText?.lessonText?.trim()) failures.push(`${entry.lessonId}: missing durable lesson source text`);
   if ((contract.sourceText?.problemSetPages?.length ?? 0) !== (contract.source?.problemSetPdfPages?.length ?? 0)) failures.push(`${entry.lessonId}: Problem Set page text does not match its page map`);

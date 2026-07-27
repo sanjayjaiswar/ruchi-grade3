@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l15",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-202.png",
+      "sha256": "9c38f08fe26f6f5dfbcffb748c0cb5619a947dda7cd0b0c8559bb85560006525",
+      "pdfPage": 202,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 15 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-203.png",
+      "sha256": "f52ccad8fbadce96750df36c5f587a68a7c496d448aa273501271a5bedfcc61a",
+      "pdfPage": 203,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 15 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-487.png",
+      "sha256": "265747a096bb9b303edaeb580e86a97e45066f9f1e2628590c3e62528ab32cb1",
+      "pdfPage": 487,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 15 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-202.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Mrs. Kozlow put a border around a 5-foot by 6-foot rectangular bulletin board."
+        ],
+        "answerKeyEvidence": "22 ft.",
+        "layout": {
+          "family": "bulletin-board-border-perimeter",
+          "subpartCount": 1,
+          "modelPrimitive": "live-five-by-six-rectangle+rdw-table",
+          "modelCounts": [
+            5,
+            6,
+            22
+          ],
+          "modelOrientation": "labeled-board-over-equation-and-answer",
+          "responseStructure": "find-twenty-two-feet",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-202.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Jason built a model of the Pentagon for a social studies project."
+        ],
+        "answerKeyEvidence": "165 cm.",
+        "layout": {
+          "family": "regular-pentagon-model-perimeter",
+          "subpartCount": 1,
+          "modelPrimitive": "live-five-side-pentagon+rdw-table",
+          "modelCounts": [
+            5,
+            33,
+            165
+          ],
+          "modelOrientation": "labeled-pentagon-over-equation-and-answer",
+          "responseStructure": "find-one-hundred-sixty-five-centimeters",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-202.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The Holmes family plants a rectangular 8-yard by 9-yard vegetable garden."
+        ],
+        "answerKeyEvidence": "34 yd.",
+        "layout": {
+          "family": "vegetable-garden-fence-perimeter",
+          "subpartCount": 1,
+          "modelPrimitive": "live-eight-by-nine-rectangle+rdw-table",
+          "modelCounts": [
+            8,
+            9,
+            34
+          ],
+          "modelOrientation": "labeled-garden-over-equation-and-answer",
+          "responseStructure": "find-thirty-four-yards",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-203.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Marion paints a 5-pointed star on her bedroom wall."
+        ],
+        "answerKeyEvidence": "180 in.",
+        "layout": {
+          "family": "five-point-star-boundary-perimeter",
+          "subpartCount": 1,
+          "modelPrimitive": "live-five-point-ten-segment-star+rdw-table",
+          "modelCounts": [
+            5,
+            10,
+            18,
+            180
+          ],
+          "modelOrientation": "labeled-star-over-equation-and-answer",
+          "responseStructure": "count-ten-boundary-segments-and-find-one-hundred-eighty-inches",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m7-teacher/page-203.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The soccer team jogs around the outside of the soccer field twice to warm up."
+        ],
+        "answerKeyEvidence": "640 yd.",
+        "layout": {
+          "family": "two-laps-around-soccer-field",
+          "subpartCount": 2,
+          "modelPrimitive": "live-sixty-by-one-hundred-rectangle+rdw-table",
+          "modelCounts": [
+            60,
+            100,
+            2,
+            640
+          ],
+          "modelOrientation": "labeled-field-over-one-lap-and-two-lap-equation",
+          "responseStructure": "find-one-perimeter-then-two-laps-six-hundred-forty-yards",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m7-teacher/page-203.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Troop 516 makes 3 triangular flags to carry at a parade."
+        ],
+        "answerKeyEvidence": "216 in.",
+        "layout": {
+          "family": "ribbon-around-three-equilateral-flags",
+          "subpartCount": 2,
+          "modelPrimitive": "three-live-twenty-four-inch-triangles+rdw-table",
+          "modelCounts": [
+            3,
+            3,
+            24,
+            216
+          ],
+          "modelOrientation": "three-flag-row-over-per-flag-and-total-equation",
+          "responseStructure": "find-ribbon-for-three-flags-two-hundred-sixteen-inches",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    }
+  ]
+}

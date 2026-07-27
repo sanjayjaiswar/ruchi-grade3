@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l5",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-076.png",
+      "sha256": "054764dd981b96b28a24706a073b8535121d62e608a10f6dee22c2b54abc0834",
+      "pdfPage": 76,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 5 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-077.png",
+      "sha256": "b17e871d7fee674075e60814a91e2b95d34956efed5bfd455baf16bc3a0ff513",
+      "pdfPage": 77,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 5 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-469.png",
+      "sha256": "be948a125b11c33ed7ad11f186289889ffcaffd7dcdf9b339259a7271cb8af34",
+      "pdfPage": 469,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 5 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-470.png",
+      "sha256": "f7cc548f1b5cbb6348b74c55297420798eb624e1fe4676d4bdad3aa58312422c",
+      "pdfPage": 470,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 5 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-076.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Cut out all the polygons (M–X) in the Template."
+        ],
+        "answerKeyEvidence": "Answer provided; M, P, S, U, W; one polygon sketched; N, O, R, T, Q, V, X; one polygon sketched; N, Q, T, S; one polygon sketched; M, N, R, P, S, U, T, X; one polygon sketched.",
+        "layout": {
+          "family": "sort-exact-polygons-m-through-x-by-four-attribute-rows",
+          "subpartCount": 4,
+          "modelPrimitive": "two-tight-official-six-polygon-template-crops+live-sort-table",
+          "modelCounts": [
+            12,
+            4
+          ],
+          "modelOrientation": "two-template-halves-over-four-row-chart",
+          "responseStructure": "group-letters-and-sketch-one-per-row",
+          "sourceFirst": true,
+          "sourceCropCount": 2,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m7-teacher/template-page-081.png",
+              "crop": {
+                "x": 60,
+                "y": 100,
+                "width": 900,
+                "height": 1030
+              }
+            },
+            {
+              "src": "/source-pages/m7-teacher/template-page-082.png",
+              "crop": {
+                "x": 60,
+                "y": 100,
+                "width": 900,
+                "height": 1030
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set, template, and answer-key pages. RDW problems intentionally retain open student-authored drawing space. The geometry crops contain only the mathematically meaningful template polygons, never page prompts or task-bearing page bodies."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-077.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Compare Polygon M and Polygon X."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "compare-exact-polygons-m-and-x",
+          "subpartCount": 2,
+          "modelPrimitive": "two-tight-official-single-polygon-crops+open-comparison",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "two-source-polygons-over-same-different-response",
+          "responseStructure": "state-similarities-and-differences",
+          "openWorkspaceCount": 1,
+          "sourceFirst": true,
+          "sourceCropCount": 2,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m7-teacher/template-page-081.png",
+              "crop": {
+                "x": 70,
+                "y": 110,
+                "width": 300,
+                "height": 330
+              }
+            },
+            {
+              "src": "/source-pages/m7-teacher/template-page-082.png",
+              "crop": {
+                "x": 70,
+                "y": 745,
+                "width": 350,
+                "height": 380
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set, template, and answer-key pages. RDW problems intentionally retain open student-authored drawing space. The geometry crops contain only the mathematically meaningful template polygons, never page prompts or task-bearing page bodies."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-077.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Polygon N, Polygon R, and Polygon S are all regular quadrilaterals"
+        ],
+        "answerKeyEvidence": "No; answers will vary.",
+        "layout": {
+          "family": "evaluate-regular-quadrilateral-claim-for-n-r-s",
+          "subpartCount": 2,
+          "modelPrimitive": "three-tight-official-single-polygon-crops+open-claim-response",
+          "modelCounts": [
+            3
+          ],
+          "modelOrientation": "three-source-polygons-over-claim-response",
+          "responseStructure": "judge-no-and-explain-failed-regular-quadrilateral-attributes",
+          "openWorkspaceCount": 1,
+          "sourceFirst": true,
+          "sourceCropCount": 3,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m7-teacher/template-page-081.png",
+              "crop": {
+                "x": 400,
+                "y": 95,
+                "width": 540,
+                "height": 420
+              }
+            },
+            {
+              "src": "/source-pages/m7-teacher/template-page-081.png",
+              "crop": {
+                "x": 570,
+                "y": 850,
+                "width": 320,
+                "height": 290
+              }
+            },
+            {
+              "src": "/source-pages/m7-teacher/template-page-082.png",
+              "crop": {
+                "x": 70,
+                "y": 105,
+                "width": 340,
+                "height": 330
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set, template, and answer-key pages. RDW problems intentionally retain open student-authored drawing space. The geometry crops contain only the mathematically meaningful template polygons, never page prompts or task-bearing page bodies."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-077.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "I have six equal sides and six equal angles."
+        ],
+        "answerKeyEvidence": "a. U; regular hexagon. b. Drawings will vary.",
+        "layout": {
+          "family": "identify-regular-hexagon-u-and-draw-irregular-hexagon",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-single-polygon-u-crop+live-two-part-response",
+          "modelCounts": [
+            6,
+            1
+          ],
+          "modelOrientation": "source-hexagon-over-identification-and-drawing",
+          "responseStructure": "name-u-regular-hexagon-and-draw-no-equal-sides",
+          "openWorkspaceCount": 1,
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m7-teacher/template-page-082.png",
+              "crop": {
+                "x": 520,
+                "y": 430,
+                "width": 300,
+                "height": 290
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set, template, and answer-key pages. RDW problems intentionally retain open student-authored drawing space. The geometry crops contain only the mathematically meaningful template polygons, never page prompts or task-bearing page bodies."
+      }
+    }
+  ]
+}

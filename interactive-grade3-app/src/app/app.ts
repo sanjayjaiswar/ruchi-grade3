@@ -201,6 +201,7 @@ export class App {
   drawerCollapsed = true;
   activeModuleId = 'm1';
   activeLessonId = '';
+  searchQuery = '';
   private readonly expandedModules = new Set<string>(['m1']);
 
   constructor(private readonly router: Router) {
@@ -315,6 +316,13 @@ export class App {
     }
   }
 
+  submitSearch(): void {
+    const query = this.searchQuery.trim();
+    void this.router.navigate(['/ruchika-grade3', 'search'], {
+      queryParams: query ? { q: query } : {}
+    });
+  }
+
   private shortObjective(moduleId: string, lessonId: string): string {
     return lessonTitle(moduleId, lessonId)
       .replace(/^Lesson\s+\d+:\s*/, '')
@@ -345,8 +353,12 @@ export class App {
   }
 
   private syncActiveRoute(url: string): void {
+    const path = url.split(/[?#]/)[0];
+    const parsedUrl = this.router.parseUrl(url);
     const moduleMatch = url.match(/\/modules\/(m\d+)/);
     const lessonMatch = url.match(/\/modules\/(m\d+)\/lessons\/(\d+)/);
+    const query = parsedUrl.queryParams['q'];
+    this.searchQuery = path.endsWith('/search') && typeof query === 'string' ? query : '';
 
     if (moduleMatch) {
       this.activeModuleId = moduleMatch[1];

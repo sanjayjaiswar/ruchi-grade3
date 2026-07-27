@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m2-l15",
+  "teacherEditionPdfSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m2-teacher/page-191.png",
+      "sha256": "22b80b30df26cc72f2424b577839f6e27dda7d0ca433fd40a5d0d11bd0415d42",
+      "pdfPage": 191,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 15 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-teacher/page-192.png",
+      "sha256": "21e80889e4a4edd6825ca1adcfb8419b7f40c249b31dc96fd47813297f2ce177",
+      "pdfPage": 192,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 15 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-answer-key/page-296.png",
+      "sha256": "df0fc6b7695eaad98268c5ee00728002c5d4969375cf7db6ed1e7f9165246f91",
+      "pdfPage": 296,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 15 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m2-teacher/page-191.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "find the sums below. choose mental math or the algorithm. a. 46 ml + 5 ml b. 46 ml + 25 ml c. 46 ml + 125 ml d. 59 cm + 30 cm e. 509 cm + 83 cm f. 597 cm + 30 cm g. 29 g + 63 g h. 345 g + 294 g i. 480 g + 476 g j. 1 l 245 ml + 2 l 412 ml k. 2 kg 509 g + 3 kg 367"
+        ],
+        "answerKeyEvidence": "1. a. 51 mL 2. 107 g b. 71 mL 3. 475 mL + 317 mL = 792 mL; Andrea is correct; c. 171 mL explanations will vary. d. 89 cm 4. 47 min e. 592 cm f. 627 cm g. 92 g h. 639 g i. 956 g j. 3 L 657 mL k. 5 kg 876 g",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m2-teacher/page-192.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "nadine and jen buy a small bag of popcorn and a pretzel at the movie theater. the pretzel weighs 63 grams more than the popcorn. what is the weight of the pretzel"
+        ],
+        "answerKeyEvidence": "1. a. 51 mL 2. 107 g b. 71 mL 3. 475 mL + 317 mL = 792 mL; Andrea is correct; c. 171 mL explanations will vary. d. 89 cm 4. 47 min e. 592 cm f. 627 cm g. 92 g h. 639 g i. 956 g j. 3 L 657 mL k. 5 kg 876 g",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m2-teacher/page-192.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "milliliters but andrea says it is 792 milliliters. the amount of water in each beaker can be found in the table to the"
+        ],
+        "answerKeyEvidence": "1. a. 51 mL 2. 107 g b. 71 mL 3. 475 mL + 317 mL = 792 mL; Andrea is correct; c. 171 mL explanations will vary. d. 89 cm 4. 47 min e. 592 cm f. 627 cm g. 92 g h. 639 g i. 956 g j. 3 L 657 mL k. 5 kg 876 g",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m2-teacher/page-192.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "it takes greg 15 minutes to mow the front lawn. it takes him 17 more minutes to mow the back lawn than the front lawn. what is the total amount of time greg spends mowing the lawns"
+        ],
+        "answerKeyEvidence": "1. a. 51 mL 2. 107 g b. 71 mL 3. 475 mL + 317 mL = 792 mL; Andrea is correct; c. 171 mL explanations will vary. d. 89 cm 4. 47 min e. 592 cm f. 627 cm g. 92 g h. 639 g i. 956 g j. 3 L 657 mL k. 5 kg 876 g",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

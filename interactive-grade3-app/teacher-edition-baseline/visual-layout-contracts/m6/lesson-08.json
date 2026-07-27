@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m6-l8",
+  "teacherEditionPdfSha256": "74325e3dfcae94e1fe359552d3857a3c929b26c5cca327ee80ef45d651aa7358",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m6/workbook-page-39.png",
+      "sha256": "de0cb81e733ef6d60a4ac1ed29e1ee29bfe9f145c0689f5a804b65ed54b6b238",
+      "pdfPage": 114,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 8 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/workbook-page-40.png",
+      "sha256": "ecc293364b82f014cf8fa893c781da4dc62e4a401395f23879fe0d0303c1801c",
+      "pdfPage": 115,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 8 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/teacher-answer-page-157.png",
+      "sha256": "de95de64ff4c8a51eb6f924d6bec0a536c85b2eec3e6cd62c08ab6f1b63e431a",
+      "pdfPage": 157,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 8 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m6/workbook-page-39.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Delilah stops under a silver maple tree and collects leaves"
+        ],
+        "answerKeyEvidence": "a. Line plot completed; Widths of Leaves; inches; values for X may vary. b. Answers will vary. c. 4. d. Explanations will vary.",
+        "layout": {
+          "family": "twenty-five-leaf-measurements-to-quarter-inch-line-plot",
+          "subpartCount": 4,
+          "modelPrimitive": "live-twenty-five-value-table-plus-six-position-line-plot",
+          "modelCounts": [
+            25,
+            8,
+            6,
+            5,
+            4
+          ],
+          "modelOrientation": "five-column-table-over-horizontal-line-plot-and-four-part-response",
+          "responseStructure": "plot-explain-construction-compare-six-and-six-halves-and-find-three-modes",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set and answer-key pages. No full-page or task-bearing source crop is permitted. Printed data, line-plot Xs, labels, scales, and keys remain live authored structures; only student-created entries and responses are open in Blank."
+      }
+    }
+  ]
+}

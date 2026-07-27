@@ -3,7 +3,7 @@
   "lessonId": "m4-l8",
   "moduleId": "m4",
   "lessonNumber": 8,
-  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "generatedAt": "2026-07-27T02:56:13.408Z",
   "source": {
     "teacherEditionPdf": "EurekaMath-Sources/Module_4/g3_m4_teacher_edition_v1_3_0.pdf",
     "teacherEditionSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
@@ -40,11 +40,11 @@
   "objective": "Find the area of a rectangle through multiplication of the side lengths.",
   "instructionalContract": {
     "instructionalMode": "concept-development",
-    "applicationProblemText": "s.",
+    "applicationProblemText": "Marnie and Connor both skip-count square units to find the area of the same rectangle. Marnie counts, “3, 6,\n9, 12, 15, 18, 21.” Connor counts, “7, 14, 21.” Draw what the rectangle might look like, and then label the\nside lengths and find the area.\n\n\nNote: This problem reinforces Lesson 7 and sets the foundation for today’s Concept Development. Invite\nstudents to share their drawings and discuss how they are similar and different.",
     "conceptDevelopmentText": "Materials: (S) Personal white board, inch ruler, grid (Template)                                                                  Grid Template\n\nPart 1: Relate side lengths to area.\n    T:   (Project image shown below.) How many rows are in\n         the incomplete array?\n\n\n                        Lesson 8:                  Find the area of a rectangle through multiplication of the side lengths.                       92\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                                  Lesson 8 3 4\n\n\n       S:   4 rows.\n       T:   How many square units are there in each row?\n                                                                                        NOTES ON\n       S:   7 square units.                                                             MULTIPLE MEANS\n       T:   Talk to your partner: Do we need to complete the                            OF ENGAGEMENT:\n            array to find the area of the rectangle? Why or why                You may want to help English language\n            not?                                                               learners relate the number of square\n       S:   Yes, then we can skip-count each row to find the total.            units in each row to the word columns\n             No, we already know the side lengths!                            and relate columns and rows to side\n                                                                               lengths. To some students, it may\n       T:   How are the side lengths related to the area?\n                                                                               appear that these words are used\n       S:   If you multiply the side lengths together, the product is          interchangeably. Help clarify their\n            the same as the area.                                              meaning.\n       T:   Talk to a partner: Can you multiply any two side\nMP.8        lengths to find the area?\n       S:   No, you have to multiply the side length that shows the number of rows times the side length that\n            shows the number of squares in each row.\n       T:   What multiplication equation can be used to find the area of this rectangle?\n       S:   4 × 7 = 28.\n       T:   To check our answer, use your grid template to trace and shade in an area model that is 4 units high\n            and 7 units wide. Label each side length.\n       S:   (Draw and label.)\n       T:   Was our answer correct?\n       S:   Yes, I used the grid paper to count 28 squares inside.  I skip-counted 4 sevens to get 28.\n  Continue with the following possible sequence: 6 × 5, 8 × 7, and 9 × 6.\n\n  Part 2: Use side lengths to find area.\n                                                                                                                                        8 cm\n  Draw or project the rectangle shown on the right.\n       T:   What do you notice about this rectangle?\n       S:   We know the side lengths, but there is no grid inside.                                                                   Area = ? sq cm\n                                                                              6 cm\n             It is an area model.\n       T:   Do we still have enough information to find the area of\n            this rectangle, even without the grid lines inside?\n       S:   Yes! We know both side lengths.\n       T:   Write the multiplication equation to find the area of this rectangle.\n       S:   6 × 8 = 48.\n\n\n                           Lesson 8:                  Find the area of a rectangle through multiplication of the side lengths.                        93\n\n                           This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                           G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                                    Lesson 8 3 4\n\n\nContinue with the following suggested examples, having students work independently or in pairs:\n                 9 cm                                              9 in                                                    7 ft\n\n            Area = ? sq cm\n  5 cm\n                                                8 in        Area = ? sq in                        10 ft            Area = ? sq ft\n\n\nPart 3: Use area and side length to find unknown side length.\nDraw or project the rectangle shown on the right.\n    T:   What do you notice about this rectangle?                                                                                     ? cm\n    S:   We know the area but not both side lengths.\n          One of the side lengths is unknown.                                                                                    Area = 27 sq cm\n                                                                                                             3 cm\n    T:   Write a multiplication equation on your personal white\n         board to show how to find the area of this rectangle.\n         Use a question mark for the unknown side length.\n    S:   (Write 3 × ? = 27.)\n    T:   What is the value of the question mark?\n    S:   9.\n    T:   How do you know?\n    S:   I know that 3 times 9 equals 27.\n    T:   So, what is the unknown side length?\n    S:   9 centimeters!\n    T:   Write the related division equation on your board.\n    S:   (Write 27 ÷ 3 = 9.)\nContinue with the following suggested examples:\n               ? cm                             ? ft                                                                         7 in\n\n\n 4 cm    Area = 32 sq cm\n                                                                  Area =                                             Area = 42 sq in\n                                                       8 ft                                               ? in\n                                                                  24 sq ft\n\n\n    T:   When you know the area and one side length of a rectangle, how can you find the other side length?\n    S:   I can think of it as a multiplication equation with an unknown factor.  Or, I can divide the area by\n         the known side length.\n\n\n                        Lesson 8:                  Find the area of a rectangle through multiplication of the side lengths.                         94\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 8 3 4",
     "fluencyPracticeText": " Multiply by 6 3.OA.7                     (8 minutes)\n Group Counting 3.OA.1                    (3 minutes)\n\nMultiply by 6 (8 minutes)\nMaterials: (S) Multiply by 6 (6–10) Pattern Sheet\n\nNote: This activity builds fluency with respect to multiplication facts using units of 6. It works toward\nstudents knowing from memory all products of two one-digit numbers. See Lesson 2 for the directions for\nadministration of a Multiply-By Pattern Sheet.\n    T:   (Write 7 × 6 = ____.) Let us skip-count up by sixes. (Count with fingers to 7 as students count.)\n    S:   6, 12, 18, 24, 30, 36, 42.\n    T:   Let us see how we can skip-count down to find the answer, too. (Show 10 fingers.) Start at 60.\n         (Count down with your fingers as students say numbers.)\n    S:   60, 54, 48, 42.\nContinue with the following possible sequence: 9 × 6, 6 × 6, and 8 × 6.\n    T:   (Distribute Multiply by 6 (6–10) Pattern Sheet.) Let us practice multiplying by 6. Be sure to work left\n         to right across the page.\n\n\n                         Lesson 8:                  Find the area of a rectangle through multiplication of the side lengths.                  91\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                                    Lesson 8 3 4\n\n\nGroup Counting (3 minutes)\nNote: Group counting reviews interpreting multiplication as repeated addition.\nInstruct students to count forward and backward, occasionally changing the direction of the count.\n        Fours to 40\n        Sevens to 70\n        Eights to 80\n        Nines to 90",
     "problemSetGuidanceText": "Students should do their personal best to complete the\nProblem Set within the allotted 10 minutes. For some\nclasses, it may be appropriate to modify the assignment\nby specifying which problems they work on first. Some\nproblems do not specify a method for solving. Students\nshould solve these problems using the RDW approach\nused for Application Problems.",
-    "studentDebriefText": ", instruct students to complete the",
+    "studentDebriefText": "Lesson Objective: Find the area of a rectangle through\nmultiplication of the side lengths.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a conversation\nto debrief the Problem Set and process the lesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        In what way is the area of Problem 1(b) related to\n         the area of Problem 1(a)? (It is double.) How\n         could you use the side lengths to help you figure\n         out that 8 × 7 is double 4 × 7?\n        Which shape in Problem 1 is a square? How do\n         you know?\n        How are the rectangles in Problem 1(a) and\n         2(c) similar? How are they different?\n        Address the following possible misconception in\n         Problem 5. Although Eliza’s bedroom has 1 side\n         length (6 feet) that is 1 more than her brother’s\n         bedroom (5 feet), and 1 side length (7 feet) that is\n         1 less than her brother’s bedroom (8 feet), the\n         floor areas are not equal.\n        Why is there a connection between a rectangle’s\n         side lengths and its area?\n\n\n                        Lesson 8:                  Find the area of a rectangle through multiplication of the side lengths.                  95\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G 3-M 4-TE-1.3.0 -0 5.2 0 15\n\nA STORY OF UNITS                                                                                                               Lesson 8 3 4",
     "teacherStudentSequence": [
       {
         "speaker": "teacher",
@@ -251,7 +251,6 @@
       "ruler-or-length",
       "area-model",
       "geometry-diagram",
-      "money-model",
       "picture-or-drawing"
     ],
     "sourceEvidence": {
@@ -260,16 +259,17 @@
         "array to find the area of the rectangle? Why or why You may want to help English language"
       ],
       "ruler-or-length": [
-        "Find the area of a rectangle through multiplication of the side lengths.",
         "Materials: (S) Personal white board, inch ruler, grid (Template) Grid Template",
-        "Part 1: Relate side lengths to area.",
-        "Lesson 8: Find the area of a rectangle through multiplication of the side lengths. 92",
-        " No, we already know the side lengths! and relate columns and rows to side",
-        "lengths. To some students, it may",
-        "T: How are the side lengths related to the area?",
-        "S: If you multiply the side lengths together, the product is interchangeably. Help clarify their"
+        "S: No, you have to multiply the side length that shows the number of rows times the side length that",
+        "and 7 units wide. Label each side length.",
+        "Part 3: Use area and side length to find unknown side length.",
+        "Use a question mark for the unknown side length.",
+        "T: So, what is the unknown side length?",
+        "S: 9 centimeters!",
+        "T: When you know the area and one side length of a rectangle, how can you find the other side length?"
       ],
       "area-model": [
+        "Marnie and Connor both skip-count square units to find the area of the same rectangle. Marnie counts, “3, 6,",
         "T: How many square units are there in each row?",
         "S: 7 square units. MULTIPLE MEANS",
         "T: To check our answer, use your grid template to trace and shade in an area model that is 4 units high",
@@ -278,27 +278,21 @@
       ],
       "geometry-diagram": [
         "Find the area of a rectangle through multiplication of the side lengths.",
+        "Marnie and Connor both skip-count square units to find the area of the same rectangle. Marnie counts, “3, 6,",
+        "9, 12, 15, 18, 21.” Connor counts, “7, 14, 21.” Draw what the rectangle might look like, and then label the",
         "Lesson 8: Find the area of a rectangle through multiplication of the side lengths. 92",
         "array to find the area of the rectangle? Why or why You may want to help English language",
         "T: What multiplication equation can be used to find the area of this rectangle?",
         "Draw or project the rectangle shown on the right.",
-        "T: What do you notice about this rectangle?",
-        "this rectangle, even without the grid lines inside?",
-        "T: Write the multiplication equation to find the area of this rectangle."
-      ],
-      "money-model": [
-        "S: If you multiply the side lengths together, the product is interchangeably. Help clarify their",
-        "S: 9 centimeters!",
-        "4. Ursa draws a rectangle that has side lengths of 9 centimeters and 6 centimeters. What is the area of the"
+        "T: What do you notice about this rectangle?"
       ],
       "picture-or-drawing": [
+        "9, 12, 15, 18, 21.” Connor counts, “7, 14, 21.” Draw what the rectangle might look like, and then label the",
         "T: To check our answer, use your grid template to trace and shade in an area model that is 4 units high",
         "S: (Draw and label.)",
         "Draw or project the rectangle shown on the right.",
         "Draw or project the rectangle shown on the right.",
-        "3. On the grid below, draw a rectangle that has an area of 42 square units. Label the side lengths.",
-        "4. Ursa draws a rectangle that has side lengths of 9 centimeters and 6 centimeters. What is the area of the",
-        "6. Cliff draws a rectangle with a side length of 6 inches and an area of 24 square inches. What is the other"
+        "3. On the grid below, draw a rectangle that has an area of 42 square units. Label the side lengths."
       ]
     },
     "sourceIllustrationRequired": false,

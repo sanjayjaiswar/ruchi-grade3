@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l28",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-335.png",
+      "sha256": "8b41f8eb98413a696137f421342be199752c55d1edf7ea54010c806600b14d2c",
+      "pdfPage": 335,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 28 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-336.png",
+      "sha256": "8e9f363b5ce2a2fcdc72127910afeff52ee5b692d1094c1e0ca34788b34bea56",
+      "pdfPage": 336,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 28 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-416.png",
+      "sha256": "29796fad9c55edbf08a84d41e26956a1a35bedc0b2f1a94af82cc7c18f1da772",
+      "pdfPage": 416,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 28 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-417.png",
+      "sha256": "a3935bf33dcf00fcf0979856a54eebc4b91faa12798a9f3f27dc7eb9530dfeeb",
+      "pdfPage": 417,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 28 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-335.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Shade the models to compare the fractions. Circle the larger fraction."
+        ],
+        "answerKeyEvidence": "Models shaded correctly; 2 thirds circled.",
+        "layout": {
+          "family": "shade-circle-and-compare-same-numerator-fractions",
+          "subpartCount": 2,
+          "modelPrimitive": "two-source-unshaded-strips-to-completed-comparison",
+          "modelCounts": [
+            "2 fifths",
+            "2 thirds"
+          ],
+          "modelOrientation": "two-horizontal-same-size-wholes",
+          "responseStructure": "shade-both-models-circle-larger-and-record-comparison"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-335.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Shade the models to compare the fractions. Circle the larger fraction."
+        ],
+        "answerKeyEvidence": "Models shaded correctly; 2 eighths circled.",
+        "layout": {
+          "family": "shade-circle-and-compare-same-numerator-fractions",
+          "subpartCount": 2,
+          "modelPrimitive": "two-source-unshaded-strips-to-completed-comparison",
+          "modelCounts": [
+            "2 tenths",
+            "2 eighths"
+          ],
+          "modelOrientation": "two-horizontal-same-size-wholes",
+          "responseStructure": "shade-both-models-circle-larger-and-record-comparison"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-335.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Shade the models to compare the fractions. Circle the larger fraction."
+        ],
+        "answerKeyEvidence": "Models shaded correctly; 3 fourths circled.",
+        "layout": {
+          "family": "shade-circle-and-compare-same-numerator-fractions",
+          "subpartCount": 2,
+          "modelPrimitive": "two-source-unshaded-strips-to-completed-comparison",
+          "modelCounts": [
+            "3 fourths",
+            "3 eighths"
+          ],
+          "modelOrientation": "two-horizontal-same-size-wholes",
+          "responseStructure": "shade-both-models-circle-larger-and-record-comparison"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-335.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Shade the models to compare the fractions. Circle the larger fraction."
+        ],
+        "answerKeyEvidence": "Models shaded correctly; 4 sixths circled.",
+        "layout": {
+          "family": "shade-circle-and-compare-same-numerator-fractions",
+          "subpartCount": 2,
+          "modelPrimitive": "two-source-unshaded-strips-to-completed-comparison",
+          "modelCounts": [
+            "4 eighths",
+            "4 sixths"
+          ],
+          "modelOrientation": "two-horizontal-same-size-wholes",
+          "responseStructure": "shade-both-models-circle-larger-and-record-comparison"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m5-teacher/page-335.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Shade the models to compare the fractions. Circle the larger fraction."
+        ],
+        "answerKeyEvidence": "Models shaded correctly; 3 thirds circled.",
+        "layout": {
+          "family": "shade-circle-and-compare-same-numerator-fractions",
+          "subpartCount": 2,
+          "modelPrimitive": "two-source-unshaded-strips-to-completed-comparison",
+          "modelCounts": [
+            "3 thirds",
+            "3 sixths"
+          ],
+          "modelOrientation": "two-horizontal-same-size-wholes",
+          "responseStructure": "shade-both-models-circle-larger-and-record-comparison"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m5-teacher/page-336.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "After softball, Leslie and Kelly each buy a half-liter bottle of water."
+        ],
+        "answerKeyEvidence": "Kelly; tape diagrams drawn correctly.",
+        "layout": {
+          "family": "compare-three-fourths-and-three-fifths-water",
+          "subpartCount": 2,
+          "modelPrimitive": "open-picture-workspace-to-two-same-bottle-strips",
+          "modelCounts": [
+            3,
+            3
+          ],
+          "modelOrientation": "two-horizontal-same-size-bottles",
+          "responseStructure": "identify-kelly-as-drinking-less",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 7,
+      "sourcePageImage": "/source-pages/m5-teacher/page-336.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Becky and Malory get matching piggy banks."
+        ],
+        "answerKeyEvidence": "Becky; tape diagrams drawn correctly.",
+        "layout": {
+          "family": "compare-two-thirds-and-two-fourths-piggy-banks",
+          "subpartCount": 2,
+          "modelPrimitive": "open-picture-workspace-to-two-matching-bank-strips",
+          "modelCounts": [
+            2,
+            2
+          ],
+          "modelOrientation": "two-horizontal-same-size-banks",
+          "responseStructure": "identify-becky-as-having-more",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 8,
+      "sourcePageImage": "/source-pages/m5-teacher/page-336.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Heidi lines up her dolls in order from shortest to tallest."
+        ],
+        "answerKeyEvidence": "Doll B, Doll A, Doll C; picture drawn.",
+        "layout": {
+          "family": "order-two-sixths-two-fourths-two-thirds-doll-heights",
+          "subpartCount": 3,
+          "modelPrimitive": "open-three-doll-picture-workspace-to-three-foot-strips",
+          "modelCounts": [
+            2,
+            2,
+            2
+          ],
+          "modelOrientation": "three-horizontal-same-foot-models",
+          "responseStructure": "order-doll-b-doll-a-doll-c",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    }
+  ]
+}

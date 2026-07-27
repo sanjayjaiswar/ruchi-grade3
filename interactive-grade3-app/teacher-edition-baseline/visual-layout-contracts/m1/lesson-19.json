@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m1-l19",
+  "teacherEditionPdfSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m1-teacher/page-250.png",
+      "sha256": "e93412217effddf8957f7047141d6f5a52a9a8a613fa0b31edbf8551b2be2441",
+      "pdfPage": 250,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 19 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-251.png",
+      "sha256": "619dc33d4f7076d982f19b41ba12d090a550155e067840884a545480ba111689",
+      "pdfPage": 251,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 19 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-325.png",
+      "sha256": "999884074430741bf157e01864393907ccdc7e02fe472991ad6517c19da5d71a",
+      "pdfPage": 325,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 19 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m1-teacher/page-250.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "36 ÷ 3"
+        ],
+        "answerKeyEvidence": "12; 10; 2; 2; 5; 1; 1, 5; 7; 5; 8, 2; 8, 5, 2, 7; 8; 20, 5; 12, 3; 20, 12, 5, 3, 8",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m1-teacher/page-251.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Match the equal expressions."
+        ],
+        "answerKeyEvidence": "First bucket matched to fourth ball; second bucket matched to first ball; third bucket matched to second ball; fourth bucket matched to third ball",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m1-teacher/page-251.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Explain Nell's strategy."
+        ],
+        "answerKeyEvidence": "24 ÷ 2 broken into two smaller facts: 12 ÷ 2 and 12 ÷ 2",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

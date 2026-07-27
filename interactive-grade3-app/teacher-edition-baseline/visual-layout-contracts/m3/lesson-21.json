@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m3-l21",
+  "teacherEditionPdfSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m3/lesson-21-page-91.png",
+      "sha256": "d044eb2c147d9b5556bd14fae6e29d7af52ed87273143c98a67a4741ab21cb22",
+      "pdfPage": 264,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 21 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-21-page-92.png",
+      "sha256": "ceb79da058cced16267cc373d0ce55f3d5d15018165c4b106dff64b02d014816",
+      "pdfPage": 265,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 21 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-316.png",
+      "sha256": "c87bd3ada910a04e9236ca5d46b8241247081c9610f0b250f6f0f0bd2d36e57e",
+      "pdfPage": 316,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 21 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-317.png",
+      "sha256": "ccb4f1e33cfe745d71bf0584aa653592eb7f4be8693b2c36dc7f260bf8bd5cff",
+      "pdfPage": 317,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 21 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m3/lesson-21-page-91.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "there are 60 seconds in 1 minute use a tape diagram to find the"
+        ],
+        "answerKeyEvidence": "345 seconds; tape diagram models equation.",
+        "layout": {
+          "family": "open-rdw-time-tape-response",
+          "subpartCount": 1,
+          "openWorkspaceCount": 1,
+          "modelPrimitive": "six-part-time-tape",
+          "modelCounts": [
+            5,
+            1
+          ],
+          "modelOrientation": "horizontal-tape",
+          "instructionalModelFamily": "five-minutes-plus-forty-five-seconds",
+          "responseStructure": "tape-letter-equations-and-answer"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Open RDW response structure and the sole meaningful source price illustration were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m3/lesson-21-page-91.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "lupe saves $30 each month for 4 months does she have enough money to"
+        ],
+        "answerKeyEvidence": "No; explanations will vary; solution includes model and equation with unknown.",
+        "layout": {
+          "family": "art-supplies-illustration-and-open-rdw-response",
+          "subpartCount": 1,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1,
+          "modelPrimitive": "tight-art-supplies-price-illustration+open-workspace",
+          "modelCounts": [
+            4,
+            30,
+            142
+          ],
+          "modelOrientation": "illustration-left-response-right",
+          "instructionalModelFamily": "four-groups-of-thirty-compared-with-price",
+          "responseStructure": "model-letter-equation-compare-and-explain"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Open RDW response structure and the sole meaningful source price illustration were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m3/lesson-21-page-91.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "brad receives 5 cents for each can or bottle he recycles how many cents"
+        ],
+        "answerKeyEvidence": "400¢; solution includes model and equation with unknown.",
+        "layout": {
+          "family": "open-rdw-letter-story-response",
+          "subpartCount": 1,
+          "openWorkspaceCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "instructionalModelFamily": "read-draw-write",
+          "responseStructure": "model-letter-equations-and-answer"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Open RDW response structure and the sole meaningful source price illustration were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m3/lesson-21-page-92.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "a box of 10 markers weighs 105 grams if the empty box weighs 15"
+        ],
+        "answerKeyEvidence": "9 g; solution includes model and equation with unknown.",
+        "layout": {
+          "family": "open-rdw-letter-story-response",
+          "subpartCount": 1,
+          "openWorkspaceCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "instructionalModelFamily": "read-draw-write",
+          "responseStructure": "model-letter-equations-and-answer"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Open RDW response structure and the sole meaningful source price illustration were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m3/lesson-21-page-92.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "mr perez buys 3 sets of cards each set comes with 18 striped cards"
+        ],
+        "answerKeyEvidence": "41; solution includes model and equation with unknown.",
+        "layout": {
+          "family": "open-rdw-letter-story-response",
+          "subpartCount": 1,
+          "openWorkspaceCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "instructionalModelFamily": "read-draw-write",
+          "responseStructure": "model-letter-equations-and-answer"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Open RDW response structure and the sole meaningful source price illustration were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m3/lesson-21-page-92.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "ezra earns $9 an hour working at a book store she works for 7"
+        ],
+        "answerKeyEvidence": "$126; solution includes model and equation with unknown.",
+        "layout": {
+          "family": "open-rdw-letter-story-response",
+          "subpartCount": 1,
+          "openWorkspaceCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "instructionalModelFamily": "read-draw-write",
+          "responseStructure": "model-letter-equations-and-answer"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Open RDW response structure and the sole meaningful source price illustration were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    }
+  ]
+}

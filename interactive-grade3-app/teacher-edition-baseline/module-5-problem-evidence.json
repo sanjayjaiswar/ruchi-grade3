@@ -1,0 +1,2283 @@
+{
+  "schemaVersion": 1,
+  "moduleId": "m5",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "imageSize": {
+    "width": 1275,
+    "height": 1650
+  },
+  "lessons": {
+    "1": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 1 Problem Set",
+        "answerKeyEvidence": "Answer provided; 1 fourth shaded; 1 third shaded.",
+        "sourceCrops": [
+          [
+            17,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 1 Problem Set",
+        "answerKeyEvidence": "1 third; 1 sixth; 1 fourth.",
+        "sourceCrops": [
+          [
+            17,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 1 Problem Set",
+        "answerKeyEvidence": "a. Rectangle drawn; 1 line, 1 half. b. Rectangle drawn; 2 lines, 1 third. c. Rectangle drawn; 3 lines, 1 fourth.",
+        "sourceCrops": [
+          [
+            18,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 1 Problem Set",
+        "answerKeyEvidence": "a. Sevenths are shown; ninths are shown. b. Answers will vary; 19 lines.",
+        "sourceCrops": [
+          [
+            18,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 1 Problem Set",
+        "answerKeyEvidence": "1 half; picture drawn to show 2 halves.",
+        "sourceCrops": [
+          [
+            18,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "2": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 2 Problem Set",
+        "answerKeyEvidence": "First and last strips circled.",
+        "sourceCrops": [
+          [
+            26,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 2 Problem Set",
+        "answerKeyEvidence": "a. 4, 2. b. 6, 5. c. 7, 3. d. 7, 0.",
+        "sourceCrops": [
+          [
+            26,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 2 Problem Set",
+        "answerKeyEvidence": "1 third; bar drawn and labeled appropriately; 1 third labeled.",
+        "sourceCrops": [
+          [
+            27,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 2 Problem Set",
+        "answerKeyEvidence": "a. 1 fourth; fraction strip drawn and labeled correctly. b. Sixths; fraction strip drawn and labeled correctly.",
+        "sourceCrops": [
+          [
+            27,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "3": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 3 Problem Set",
+        "answerKeyEvidence": "Eighths; 5 eighths. Thirds; 3 thirds. Halves; 1 half.",
+        "sourceCrops": [
+          [
+            37,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 3 Problem Set",
+        "answerKeyEvidence": "First, third, and fifth shapes circled; sentences will vary.",
+        "sourceCrops": [
+          [
+            37,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 3 Problem Set",
+        "answerKeyEvidence": "Shapes divided into 4 equal parts; fourths.",
+        "sourceCrops": [
+          [
+            37,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 3 Problem Set",
+        "answerKeyEvidence": "Shapes divided and shaded appropriately.",
+        "sourceCrops": [
+          [
+            38,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 3 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            38,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 6,
+        "sourceTextEvidence": "Lesson 3 Problem Set",
+        "answerKeyEvidence": "Candy bar drawn and divided into 5 equal parts; 1 fifth.",
+        "sourceCrops": [
+          [
+            38,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "4": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 4 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            47,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 4 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            47,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 4 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            47,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 4 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            48,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 4 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            48,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 6,
+        "sourceTextEvidence": "Lesson 4 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            48,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "5": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 5 Problem Set",
+        "answerKeyEvidence": "a. 2, 1, 1 half, 1/2. b. 3, 1, 1 third, 1/3. c. 4, 1, 1 fourth, 1/4. d. 5, 1, 1 fifth, 1/5. e. 6, 1, 1 sixth, 1/6. f. 8, 1, 1 eighth, 1/8.",
+        "sourceCrops": [
+          [
+            59,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 5 Problem Set",
+        "answerKeyEvidence": "No; explanations will vary.",
+        "sourceCrops": [
+          [
+            60,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 5 Problem Set",
+        "answerKeyEvidence": "Lines drawn to show tenths; 1/10.",
+        "sourceCrops": [
+          [
+            60,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 5 Problem Set",
+        "answerKeyEvidence": "Rectangles are drawn and labeled to show 1/10 and 1/8; 1/8 is bigger than 1/10.",
+        "sourceCrops": [
+          [
+            60,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "6": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 6 Problem Set",
+        "answerKeyEvidence": "Each shape partitioned, labeled, and shaded correctly: a. 3/4. b. 3/7. c. 4/5. d. 2/6.",
+        "sourceCrops": [
+          [
+            70,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 6 Problem Set",
+        "answerKeyEvidence": "a. 1/8. b. 7/8.",
+        "sourceCrops": [
+          [
+            70,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 6 Problem Set",
+        "answerKeyEvidence": "a. 9, 5, 1/9, 5/9. b. 7, 3, 1/7, 3/7. c. 5, 4, 1/5, 4/5. d. 6, 2, 1/6, 2/6. e. 8, 8, 1/8, 8/8.",
+        "sourceCrops": [
+          [
+            71,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "7": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 7 Problem Set",
+        "answerKeyEvidence": "1 half.",
+        "sourceCrops": [
+          [
+            81,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 7 Problem Set",
+        "answerKeyEvidence": "3 fourths.",
+        "sourceCrops": [
+          [
+            81,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 7 Problem Set",
+        "answerKeyEvidence": "8 ninths.",
+        "sourceCrops": [
+          [
+            81,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 7 Problem Set",
+        "answerKeyEvidence": "5 sixths.",
+        "sourceCrops": [
+          [
+            81,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 7 Problem Set",
+        "answerKeyEvidence": "4 fifths.",
+        "sourceCrops": [
+          [
+            81,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 6,
+        "sourceTextEvidence": "Lesson 7 Problem Set",
+        "answerKeyEvidence": "2 thirds.",
+        "sourceCrops": [
+          [
+            81,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 7,
+        "sourceTextEvidence": "Lesson 7 Problem Set",
+        "answerKeyEvidence": "6 sevenths.",
+        "sourceCrops": [
+          [
+            81,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 8,
+        "sourceTextEvidence": "Lesson 7 Problem Set",
+        "answerKeyEvidence": "7 eighths.",
+        "sourceCrops": [
+          [
+            81,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 9,
+        "sourceTextEvidence": "Lesson 7 Problem Set",
+        "answerKeyEvidence": "a. 8. b. 9. c. 12.",
+        "sourceCrops": [
+          [
+            82,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 10,
+        "sourceTextEvidence": "Lesson 7 Problem Set",
+        "answerKeyEvidence": "1/5, 4/5; 1/7, 6/7; 1/11, 10/11.",
+        "sourceCrops": [
+          [
+            82,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 11,
+        "sourceTextEvidence": "Lesson 7 Problem Set",
+        "answerKeyEvidence": "5 sixths.",
+        "sourceCrops": [
+          [
+            82,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "8": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 8 Problem Set",
+        "answerKeyEvidence": "Number bond showing 3/5 and 2/5 equals 1 whole; second visual model drawn.",
+        "sourceCrops": [
+          [
+            93,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 8 Problem Set",
+        "answerKeyEvidence": "Number bond showing 3/4 and 1/4 equals 1 whole; second visual model drawn.",
+        "sourceCrops": [
+          [
+            93,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 8 Problem Set",
+        "answerKeyEvidence": "Number bond showing 3/6 and 3/6 equals 1 whole; second visual model drawn.",
+        "sourceCrops": [
+          [
+            93,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 8 Problem Set",
+        "answerKeyEvidence": "Number bond showing 2/9 and 7/9 equals 1 whole; second visual model drawn.",
+        "sourceCrops": [
+          [
+            93,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 8 Problem Set",
+        "answerKeyEvidence": "a. Number bond showing 3/4 and 1/4 equals 1 whole; 3/4 decomposed showing 3 units of 1/4. b. Number bond showing 2/3 and 1/3 equals 1 whole; 2/3 decomposed showing 2 units of 1/3. c. Number bond showing 2/4 and 2/4 equals 1 whole; both 2/4 bonds decomposed showing 2 units of 1/4. d. Number bond showing 2/5 and 3/5 equals 1 whole; 2/5 decomposed showing 2 units of 1/5; 3/5 decomposed showing 3 units of 1/5.",
+        "sourceCrops": [
+          [
+            94,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 6,
+        "sourceTextEvidence": "Lesson 8 Problem Set",
+        "answerKeyEvidence": "a. 3/4. b. 3. c. Number bond showing 3/4 and 1/4 equals 1 whole; 3/4 decomposed showing 3 units of 1/4; second visual model drawn.",
+        "sourceCrops": [
+          [
+            94,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "9": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 9 Problem Set",
+        "answerKeyEvidence": "a. Answer provided. b. 1/8, 15, 15/8. c. 1/6, 14, 14/6. d. 1/5, 8, 8/5. e. 1/4, 9, 9/4. f. 1/3, 7, 7/3.",
+        "sourceCrops": [
+          [
+            105,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 9 Problem Set",
+        "answerKeyEvidence": "a. Each whole partitioned into sixths; 8 sixths shaded; 8/6. b. Each whole partitioned into fourth; 7 fourths shaded; 7/4. c. Each whole partitioned into fifths; 6 fifths shaded; 6 fifths. d. Each whole partitioned into halves; 5 halves shaded; 5 halves.",
+        "sourceCrops": [
+          [
+            106,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 9 Problem Set",
+        "answerKeyEvidence": "a. 2 equivalent wholes drawn; each whole partitioned into 8 equal pieces; 10 pieces shaded. b. 10/8.",
+        "sourceCrops": [
+          [
+            106,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "10": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 10 Problem Set",
+        "answerKeyEvidence": "Specified fractional unit shaded in each strip.",
+        "sourceCrops": [
+          [
+            119,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 10 Problem Set",
+        "answerKeyEvidence": "a. Greater than. b. Less than. c. Less than. d. Greater than. e. Less than. f. Less than. g. Greater than. h. Greater than.",
+        "sourceCrops": [
+          [
+            119,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 10 Problem Set",
+        "answerKeyEvidence": "More oil; explanations will vary.",
+        "sourceCrops": [
+          [
+            120,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 10 Problem Set",
+        "answerKeyEvidence": "a. >. b. <. c. =. d. >. e. <. f. =. g. =, <, <, <, =.",
+        "sourceCrops": [
+          [
+            120,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 10 Problem Set",
+        "answerKeyEvidence": "No; explanations will vary.",
+        "sourceCrops": [
+          [
+            120,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "11": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 11 Problem Set",
+        "answerKeyEvidence": "1/3; answers will vary.",
+        "sourceCrops": [
+          [
+            129,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 11 Problem Set",
+        "answerKeyEvidence": "1/5; answers will vary.",
+        "sourceCrops": [
+          [
+            129,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 11 Problem Set",
+        "answerKeyEvidence": "1/10; answers will vary.",
+        "sourceCrops": [
+          [
+            129,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 11 Problem Set",
+        "answerKeyEvidence": "1/12; answers will vary.",
+        "sourceCrops": [
+          [
+            129,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 11 Problem Set",
+        "answerKeyEvidence": "Answers will vary; 1/8.",
+        "sourceCrops": [
+          [
+            130,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 6,
+        "sourceTextEvidence": "Lesson 11 Problem Set",
+        "answerKeyEvidence": "Answers will vary; 1/9.",
+        "sourceCrops": [
+          [
+            130,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 7,
+        "sourceTextEvidence": "Lesson 11 Problem Set",
+        "answerKeyEvidence": "Answers will vary; 1/12.",
+        "sourceCrops": [
+          [
+            130,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 8,
+        "sourceTextEvidence": "Lesson 11 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            130,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 9,
+        "sourceTextEvidence": "Lesson 11 Problem Set",
+        "answerKeyEvidence": "No; explanations will vary.",
+        "sourceCrops": [
+          [
+            131,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 10,
+        "sourceTextEvidence": "Lesson 11 Problem Set",
+        "answerKeyEvidence": "No; explanations will vary.",
+        "sourceCrops": [
+          [
+            131,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "12": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 12 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            142,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 12 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            142,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 12 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            143,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 12 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            143,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 12 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            143,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 6,
+        "sourceTextEvidence": "Lesson 12 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            143,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "13": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 13 Problem Set",
+        "answerKeyEvidence": "a. 1/2. b. Shaded part divided to show 1/2.",
+        "sourceCrops": [
+          [
+            153,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 13 Problem Set",
+        "answerKeyEvidence": "a. 1/4. b. Shaded part divided to show 1/4.",
+        "sourceCrops": [
+          [
+            153,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 13 Problem Set",
+        "answerKeyEvidence": "a. 1/3. b. Shaded part divided to show 1/3.",
+        "sourceCrops": [
+          [
+            153,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 13 Problem Set",
+        "answerKeyEvidence": "a. 1/5. b. Shaded part divided to show 1/5.",
+        "sourceCrops": [
+          [
+            153,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 13 Problem Set",
+        "answerKeyEvidence": "a. 1/6. b. Shaded part divided to show 1/6.",
+        "sourceCrops": [
+          [
+            153,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 6,
+        "sourceTextEvidence": "Lesson 13 Problem Set",
+        "answerKeyEvidence": "a. C. b. B. c. A. d. 2; 1/2. e. 1/2; 1/4.",
+        "sourceCrops": [
+          [
+            154,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 7,
+        "sourceTextEvidence": "Lesson 13 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            154,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "14": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 14 Problem Set",
+        "answerKeyEvidence": "a. Answer provided; fraction strip partitioned and labeled to show halves; number line partitioned and labeled correctly from 0/2 to 2/2. b. Number bond showing 3 units of 1/3; fraction strip partitioned and labeled to show thirds; number line partitioned and labeled correctly from 0/3 to 3/3. c. Number bond showing 4 units of 1/4; fraction strip partitioned and labeled to show fourths; number line partitioned and labeled correctly from 0/4 to 4/4. d. Number bond showing 5 units of 1/5; fraction strip partitioned and labeled to show fifths; number line partitioned and labeled correctly from 0/5 to 5/5.",
+        "sourceCrops": [
+          [
+            173,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 14 Problem Set",
+        "answerKeyEvidence": "Number line showing fourths; each quarter (fourth) hour from 0/4 to 4/4 correctly labeled, including 0 hours and 1 hour.",
+        "sourceCrops": [
+          [
+            174,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 14 Problem Set",
+        "answerKeyEvidence": "Number line showing fifths; each fifth meter from 0/5 to 5/5 correctly labeled, including 0 meters and 1 meter.",
+        "sourceCrops": [
+          [
+            174,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "15": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 15 Problem Set",
+        "answerKeyEvidence": "a. Number line partitioned into thirds and labeled correctly with 0/3, 2/3, 3/3; answer provided. b. Number line partitioned into fourths and labeled correctly with 0/4, 3/4, 4/4; number bond showing 3/4 and 1/4 equals 1 whole. c. Number line partitioned into fifths and labeled correctly with 0/5, 3/5, 5/5; number bond showing 3/5 and 2/5 equals 1 whole. d. Number line partitioned into sixths and labeled correctly with 0/6, 5/6, 6/6; number bond showing 5/6 and 1/6 equals 1 whole. e. Number line partitioned into tenths and labeled correctly with 0/10, 3/10, 10/10; number bond showing 3/10 and 7/10 equals 1 whole.",
+        "sourceCrops": [
+          [
+            183,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 15 Problem Set",
+        "answerKeyEvidence": "Number line drawn with 0 and 1 labeled correctly; fraction strip used appropriately to partition and label a number line to show eighths; number line labeled correctly from 0/8 to 8/8.",
+        "sourceCrops": [
+          [
+            184,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 15 Problem Set",
+        "answerKeyEvidence": "a. 4 equal parts; rope labeled correctly from 0/4 to 4/4. b. 2/4. c. 1/5.",
+        "sourceCrops": [
+          [
+            184,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "16": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 16 Problem Set",
+        "answerKeyEvidence": "a. Answer provided. b. Number line partitioned into thirds and labeled; 3/3, 6/3 boxed. c. Number line partitioned into halves and labeled; 4/2, 6/2, 8/2 boxed. d. Number line partitioned into fourths and labeled; 12/4, 16/4, 20/4 boxed; 4 labeled below 16/4. e. Number line partitioned into thirds and labeled; 18/3, 21/3, 24/3, 27/3 boxed; 7 labeled below 21/3, 8 labeled below 24/3.",
+        "sourceCrops": [
+          [
+            195,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 16 Problem Set",
+        "answerKeyEvidence": "Number line partitioned into fifths and labeled; 0/5, 5/5, 10/5 boxed.",
+        "sourceCrops": [
+          [
+            196,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 16 Problem Set",
+        "answerKeyEvidence": "Number line partitioned into thirds and labeled; 3/3, 6/3, 9/3, 12/3 boxed.",
+        "sourceCrops": [
+          [
+            196,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 16 Problem Set",
+        "answerKeyEvidence": "Number line drawn with endpoints 0 and 3; wholes labeled; number line partitioned and labeled.",
+        "sourceCrops": [
+          [
+            196,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "17": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 17 Problem Set",
+        "answerKeyEvidence": "Number line partitioned into sixths; given fractions located and labeled.",
+        "sourceCrops": [
+          [
+            206,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 17 Problem Set",
+        "answerKeyEvidence": "Number line partitioned into fourths; given fractions located and labeled.",
+        "sourceCrops": [
+          [
+            206,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 17 Problem Set",
+        "answerKeyEvidence": "Number line partitioned into thirds; given fractions located and labeled.",
+        "sourceCrops": [
+          [
+            206,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 17 Problem Set",
+        "answerKeyEvidence": "Alex; number line partitioned into fourths; 2 inches and 7/4 inches located and labeled; number line showing 2 inches is longer than 7/4 inches.",
+        "sourceCrops": [
+          [
+            207,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 17 Problem Set",
+        "answerKeyEvidence": "Number line with endpoints 0 km to 4 km, partitioned into fifths; 0/5 (0) km, 20/5 (4) km, 7/5 km, 12/5 km located and labeled.",
+        "sourceCrops": [
+          [
+            207,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "18": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 18 Problem Set",
+        "answerKeyEvidence": "Answer provided.",
+        "sourceCrops": [
+          [
+            216,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 18 Problem Set",
+        "answerKeyEvidence": "Number line partitioned into sixths; 2/6 and 3/6 placed; 2/6 circled; <.",
+        "sourceCrops": [
+          [
+            216,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 18 Problem Set",
+        "answerKeyEvidence": "Number line partitioned into halves and fourths; 1/2 and 1/4 placed; 1/4 circled; >.",
+        "sourceCrops": [
+          [
+            216,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 18 Problem Set",
+        "answerKeyEvidence": "Number line partitioned into thirds and sixths; 2/3 and 2/6 placed; 2/6 circled; >.",
+        "sourceCrops": [
+          [
+            216,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 18 Problem Set",
+        "answerKeyEvidence": "Number line partitioned into eighths and fourths; 11/8 and 7/4 placed; 11/8 circled; <.",
+        "sourceCrops": [
+          [
+            216,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 6,
+        "sourceTextEvidence": "Lesson 18 Problem Set",
+        "answerKeyEvidence": "JoAnn; explanations will vary.",
+        "sourceCrops": [
+          [
+            217,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 7,
+        "sourceTextEvidence": "Lesson 18 Problem Set",
+        "answerKeyEvidence": "Red thread; explanations will vary.",
+        "sourceCrops": [
+          [
+            217,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 8,
+        "sourceTextEvidence": "Lesson 18 Problem Set",
+        "answerKeyEvidence": "Number line partitioned into eighths, fourths, and halves; 7/8, 7/4, and 4/2 placed; 7/8 < 7/4 < 4/2; explanations will vary.",
+        "sourceCrops": [
+          [
+            217,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "19": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 19 Problem Set",
+        "answerKeyEvidence": "a. Number line divided into halves; given fractions placed; each whole written correctly as a fraction. b. Number line divided into fourths; given fractions placed; each whole written correctly as a fraction. c. Number line divided into eighths; given fractions placed; each whole written correctly as a fraction.",
+        "sourceCrops": [
+          [
+            227,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 19 Problem Set",
+        "answerKeyEvidence": "Row 1: <, <, >. Row 2: >, <, =. Row 3: <, >, >.",
+        "sourceCrops": [
+          [
+            227,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 19 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            228,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 19 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            228,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 19 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            228,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "20": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 20 Problem Set",
+        "answerKeyEvidence": "a. 4/8, 4/8, 3/8, 4/8; first, second, and last shapes circled. b. 2/5, 1/5, 2/5, 2/5; first, third, and last shapes circled. c. 2/6, 2/6, 4/6, 3/6; first and second shapes circled.",
+        "sourceCrops": [
+          [
+            240,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 20 Problem Set",
+        "answerKeyEvidence": "a. 1/4; two different representations of 1/4 drawn. b. 1/7; two different representations of 1/7 drawn.",
+        "sourceCrops": [
+          [
+            240,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 20 Problem Set",
+        "answerKeyEvidence": "a. Triangles, squares. b. 4 triangles, 4 squares. c. At least two different representations of Ann’s set of shapes drawn with no overlaps; 2/6.",
+        "sourceCrops": [
+          [
+            241,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 20 Problem Set",
+        "answerKeyEvidence": "Cristina; explanations will vary.",
+        "sourceCrops": [
+          [
+            241,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "21": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 21 Problem Set",
+        "answerKeyEvidence": "halves: 0/2, 3/2; fourths: 1/4, 2/4, 4/4, 6/4, 8/4. halves: 0/2, 2/2, 3/2; sixths: 1/6, 3/6, 6/6, 9/6, 12/6.",
+        "sourceCrops": [
+          [
+            250,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 21 Problem Set",
+        "answerKeyEvidence": "Shaded blue: 1/2, 2/4; 1/2, 3/6. Shaded yellow: 2/2, 4/4; 2/2, 6/6. Shaded green: 3/2, 6/4; 3/2, 9/6. Shaded red: 4/2, 8/4; 4/2, 12/6.",
+        "sourceCrops": [
+          [
+            250,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 21 Problem Set",
+        "answerKeyEvidence": "3; 2, 4/4; 9, 6/4.",
+        "sourceCrops": [
+          [
+            250,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 21 Problem Set",
+        "answerKeyEvidence": "4/8 inch; number line drawn.",
+        "sourceCrops": [
+          [
+            251,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 21 Problem Set",
+        "answerKeyEvidence": "Yes; 1/2 = 2/4 = 4/8; explanations will vary.",
+        "sourceCrops": [
+          [
+            251,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "22": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 22 Problem Set",
+        "answerKeyEvidence": "1/2 matched to 2/4; 4/6 matched to 2/3; 3/4 matched to 6/8; 3/9 matched to 1/3.",
+        "sourceCrops": [
+          [
+            260,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 22 Problem Set",
+        "answerKeyEvidence": "2; 8; 16.",
+        "sourceCrops": [
+          [
+            261,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 22 Problem Set",
+        "answerKeyEvidence": "Explanations will vary.",
+        "sourceCrops": [
+          [
+            261,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 22 Problem Set",
+        "answerKeyEvidence": "2 sixths; explanations will vary.",
+        "sourceCrops": [
+          [
+            261,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 22 Problem Set",
+        "answerKeyEvidence": "Explanations will vary.",
+        "sourceCrops": [
+          [
+            261,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "23": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 23 Problem Set",
+        "answerKeyEvidence": "Number line divided into fourths and labeled correctly in red pencil.",
+        "sourceCrops": [
+          [
+            271,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 23 Problem Set",
+        "answerKeyEvidence": "Number line divided into eighths and labeled correctly in blue pencil.",
+        "sourceCrops": [
+          [
+            271,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 23 Problem Set",
+        "answerKeyEvidence": "0/4 = 0/8, 1/4 = 2/8, 2/4 = 4/8, 3/4 = 6/8, 4/4 = 8/8, 5/4 = 10/8, 6/4 = 12/8, 7/4 = 14/8, 8/4 = 16/8, 9/4 = 18/8, 10/4 = 20/8, 11/4 = 22/8, 12/4 = 24/8.",
+        "sourceCrops": [
+          [
+            271,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 23 Problem Set",
+        "answerKeyEvidence": "7/2 = 14/4 = 28/8; number line drawn, divided, and labeled correctly with these fractions.",
+        "sourceCrops": [
+          [
+            271,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 23 Problem Set",
+        "answerKeyEvidence": "1/3 = 2/6; 2/4 = 1/2 or 4/8; 5/4 = 10/8; 10/5 = 2/1; answers will vary.",
+        "sourceCrops": [
+          [
+            272,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 6,
+        "sourceTextEvidence": "Lesson 23 Problem Set",
+        "answerKeyEvidence": "No; explanations will vary.",
+        "sourceCrops": [
+          [
+            272,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "24": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 24 Problem Set",
+        "answerKeyEvidence": "Halves: Answer provided. Thirds: Number bond showing 3 units of 1/3; number line partitioned and labeled from 0 to 1. Fourths: Number bond showing 4 units of 1/4; number line partitioned and labeled from 0 to 1. Fifths: Number bond showing 5 units of 1/5; number line partitioned and labeled from 0 to 1.",
+        "sourceCrops": [
+          [
+            283,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 24 Problem Set",
+        "answerKeyEvidence": "Fractions equal to 1 circled; 3/3, 4/4, 5/5.",
+        "sourceCrops": [
+          [
+            284,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 24 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            284,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 24 Problem Set",
+        "answerKeyEvidence": "No; explanations will vary.",
+        "sourceCrops": [
+          [
+            284,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "25": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 25 Problem Set",
+        "answerKeyEvidence": "Answer provided; 3/2; 3/1; 4/4; 4/2; 4/1; 6/6; 6/3; 6/1.",
+        "sourceCrops": [
+          [
+            297,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 25 Problem Set",
+        "answerKeyEvidence": "0/1, 1/1, 2/1, 3/1, 4/1, 5/1, 6/1; 10, 11, 12/1, 13/1, 14, 15/1, 16/1.",
+        "sourceCrops": [
+          [
+            298,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 25 Problem Set",
+        "answerKeyEvidence": "Explanations will vary.",
+        "sourceCrops": [
+          [
+            298,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "26": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 26 Problem Set",
+        "answerKeyEvidence": "Halves: 0, 0; 2, 2; 4; number bonds completed. Thirds: 6, 6; 9, 9; 12, 12; number bonds completed.",
+        "sourceCrops": [
+          [
+            311,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 26 Problem Set",
+        "answerKeyEvidence": "Halves: Answer provided. Thirds: 6/3, 9/3, 12/3. Fourths: 8/4, 12/4, 16/4. Sixths: 12/6, 18/6, 24/6.",
+        "sourceCrops": [
+          [
+            312,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 26 Problem Set",
+        "answerKeyEvidence": "a. Number line representing 1 meter of wire; partitioned correctly into fourths; 4. b. 12 days.",
+        "sourceCrops": [
+          [
+            312,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 26 Problem Set",
+        "answerKeyEvidence": "a. Number line representing 1 pound of food; partitioned correctly into thirds. b. Second number line representing 4 pounds of food; partitioned correctly into thirds; 1. c. 2.",
+        "sourceCrops": [
+          [
+            312,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "27": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 27 Problem Set",
+        "answerKeyEvidence": "2, 2, bigger, less. 4, 4, smaller, more.",
+        "sourceCrops": [
+          [
+            323,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 27 Problem Set",
+        "answerKeyEvidence": "1/2 of a candy bar; 1/2 = 2/4 = 3/6.",
+        "sourceCrops": [
+          [
+            323,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 27 Problem Set",
+        "answerKeyEvidence": "Explanations will vary.",
+        "sourceCrops": [
+          [
+            324,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 27 Problem Set",
+        "answerKeyEvidence": "2 sixths; model drawn.",
+        "sourceCrops": [
+          [
+            324,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 27 Problem Set",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            324,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "28": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 28 Problem Set",
+        "answerKeyEvidence": "Models shaded correctly; 2 thirds circled.",
+        "sourceCrops": [
+          [
+            335,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 28 Problem Set",
+        "answerKeyEvidence": "Models shaded correctly; 2 eighths circled.",
+        "sourceCrops": [
+          [
+            335,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 28 Problem Set",
+        "answerKeyEvidence": "Models shaded correctly; 3 fourths circled.",
+        "sourceCrops": [
+          [
+            335,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 28 Problem Set",
+        "answerKeyEvidence": "Models shaded correctly; 4 sixths circled.",
+        "sourceCrops": [
+          [
+            335,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 28 Problem Set",
+        "answerKeyEvidence": "Models shaded correctly; 3 thirds circled.",
+        "sourceCrops": [
+          [
+            335,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 6,
+        "sourceTextEvidence": "Lesson 28 Problem Set",
+        "answerKeyEvidence": "Kelly; tape diagrams drawn correctly.",
+        "sourceCrops": [
+          [
+            336,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 7,
+        "sourceTextEvidence": "Lesson 28 Problem Set",
+        "answerKeyEvidence": "Becky; tape diagrams drawn correctly.",
+        "sourceCrops": [
+          [
+            336,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 8,
+        "sourceTextEvidence": "Lesson 28 Problem Set",
+        "answerKeyEvidence": "Doll B, Doll A, Doll C; picture drawn.",
+        "sourceCrops": [
+          [
+            336,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "29": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Lesson 29 Problem Set",
+        "answerKeyEvidence": "Answer provided.",
+        "sourceCrops": [
+          [
+            347,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Lesson 29 Problem Set",
+        "answerKeyEvidence": "3/4 > 3/8.",
+        "sourceCrops": [
+          [
+            347,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Lesson 29 Problem Set",
+        "answerKeyEvidence": "1/4 < 1/2.",
+        "sourceCrops": [
+          [
+            347,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Lesson 29 Problem Set",
+        "answerKeyEvidence": "4/4 > 4/6.",
+        "sourceCrops": [
+          [
+            347,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Lesson 29 Problem Set",
+        "answerKeyEvidence": "a. <. b. >. c. >.",
+        "sourceCrops": [
+          [
+            347,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 6,
+        "sourceTextEvidence": "Lesson 29 Problem Set",
+        "answerKeyEvidence": "Models drawn correctly; <.",
+        "sourceCrops": [
+          [
+            348,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 7,
+        "sourceTextEvidence": "Lesson 29 Problem Set",
+        "answerKeyEvidence": "Models drawn correctly; >.",
+        "sourceCrops": [
+          [
+            348,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 8,
+        "sourceTextEvidence": "Lesson 29 Problem Set",
+        "answerKeyEvidence": "Nicholas; models drawn correctly.",
+        "sourceCrops": [
+          [
+            348,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      },
+      {
+        "number": 9,
+        "sourceTextEvidence": "Lesson 29 Problem Set",
+        "answerKeyEvidence": "Robbie; models drawn correctly.",
+        "sourceCrops": [
+          [
+            348,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ],
+    "30": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "There is no Problem Set sheet for this lesson",
+        "answerKeyEvidence": "Answers will vary.",
+        "sourceCrops": [
+          [
+            355,
+            65,
+            180,
+            1145,
+            1290
+          ]
+        ]
+      }
+    ]
+  }
+}

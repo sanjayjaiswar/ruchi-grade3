@@ -3,7 +3,7 @@
   "lessonId": "m7-l14",
   "moduleId": "m7",
   "lessonNumber": 14,
-  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "generatedAt": "2026-07-27T02:56:13.408Z",
   "source": {
     "teacherEditionPdf": "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf",
     "teacherEditionSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
@@ -40,12 +40,40 @@
   "objective": "Determine the perimeter of regular polygons and rectangles when whole number measurements are unknown.",
   "instructionalContract": {
     "instructionalMode": "concept-development",
-    "applicationProblemText": "s.\n\n\n                          Lesson 14:                Determine the perimeter of regular polygons and rectangles when              186\n                                                    whole number measurements are unknown.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                 Lesson 14 3 7",
-    "conceptDevelopmentText": "by adjusting the numbers. Students\n       S:   I doubled 9 and doubled 6 and then added 18 plus 12                                       who understand the concept quickly\n            to get 30.  I added 9 plus 6 to get 15 and then                                          and calculate perimeter mentally may\n            doubled 15 to get 30.  I took 1 from each 6 to make                                      jump to the last challenge of calculating\n            tens with the 9’s. Then, I added 10 + 5 + 10 + 5. I saw                                   larger side lengths or side lengths that\n            that I had 3 tens, which is 30.                                                           require conversions, such as the\n                                                                                                      following:\n  Repeat the process with the suggestions below. Students can\n  sketch the rectangles with the given side lengths, label the\n  unknown side lengths, and then find the perimeter.                                                       2 ft\n\n           A rectangle with side lengths of 10 inches and 8 inches.                                                      39 in\n           A rectangle with side lengths of 14 centimeters and 36\n            centimeters.\n\n  Problem 2: Find the perimeter of regular polygons with one side length given.\n       T:   (Project or draw the hexagon as shown.) This is a regular hexagon.\n            Talk to a partner. How can the labeled side length help you find the                                             3 cm\n            unknown side lengths?\nMP.3\n       S:   Since I know it’s a regular hexagon, and I know one side length, I know the\n            other side lengths.  Yeah. Since it’s a regular hexagon, I know that all\n            the side lengths are equal. So, all 6 sides are each 3 centimeters.\n       T:   That’s right. Sketch the hexagon on your personal white board, and label\n            the unknown side lengths.\n       S:   (Sketch and label the unknown side lengths.)\n\n\n                          Lesson 14:                 Determine the perimeter of regular polygons and rectangles when                         185\n                                                     whole number measurements are unknown.\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                 Lesson 14 3 7\n\n\n     T:   Write an addition sentence that shows the perimeter\n          of the hexagon.\n                                                                                       NOTES ON\n     S:   (Write 3 cm + 3 cm + 3 cm + 3 cm + 3 cm + 3 cm = 18\n                                                                                       MULTIPLE MEANS\n          cm.)\n                                                                                       OF REPRESENTATION:\n     T:   What is the perimeter of the hexagon?\n                                                                              Because regular has multiple meanings,\n     S:   18 centimeters!                                                     a specific reminder to English language\n     T:   Talk to a partner. Can you write your addition                      learners that it means equal-sided\n          sentence as a multiplication sentence?                              when used in the context of regular\n                                                                              polygon may be helpful.\n     S:   Yes. It’s repeated addition of 3. I can show that with\n          multiplication.  It shows 6 threes. I can write that as\n          6 × 3.\n     T:   Write a multiplication sentence that shows the perimeter of the hexagon.\n     S:   (Write 6 × 3 = 18.)\n     T:   Discuss with a partner what the factors in this multiplication sentence represent.\n     S:   The 6 is the number of sides on the hexagon, and the 3 is the length of each of those sides.\n     T:   Rewrite your multiplication sentence with units to show 6 sides times the length of each side.\n     S:   (Write 6 × 3 cm = 18 cm.)\n Repeat the process with the suggestions below. Students write both an addition and a multiplication\n sentence to find the perimeter of each shape.\n         A regular pentagon with side lengths of 7 inches.\n         A regular triangle (equilateral triangle) with side\n          lengths of 17 centimeters. (Discuss using the\n          break apart and distribute strategy to solve with\n          multiplication.)\n\n     T:   Talk to a partner: Which method is more\n          efficient for finding the perimeter of a regular\n          shape, adding or multiplying?\nMP.3 S:   I think multiplying is because it’s faster than\n          adding.  If the side lengths are small numbers,\n          then multiplying. But if the side lengths were\n          bigger, like 154, I would add instead.",
+    "applicationProblemText": "A rectangular sheep pen measures 5 meters\nlong and 9 meters wide. The perimeter of the\ncow pen is double the perimeter of the sheep\npen. What is the perimeter of the cow pen?\nNote: The Application Problem reviews\nLesson 13 in solving perimeter word problems\nwith given side lengths.\n\n\n                           Lesson 14:                Determine the perimeter of regular polygons and rectangles when                184\n                                                     whole number measurements are unknown.\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                Lesson 14 3 7",
+    "conceptDevelopmentText": "Materials: (S) Personal white board\n\n  Problem 1: Find the perimeter of rectangles with unknown side lengths.\n       T:   (Project or draw the rectangle as shown.) This shape is a\n            rectangle. Use the given side lengths and what you know\n            about rectangles to label the unknown side lengths.\n                                                                                                          6 cm\n       S:   (Label the unknown side lengths.)\n       T:   (Label the unknown side lengths 6 cm and 9 cm.)\n            Check your work against mine, and make changes if\n            you need to. (Allow students time to check their                                                                 9 cm\n            work.) Write an addition sentence that shows the\n            perimeter of the rectangle.\n       S:   (Write 9 cm + 9 cm + 6 cm + 6 cm = 30 cm.)                                                            NOTES ON\n       T:   What is the perimeter of the rectangle?                                                               MULTIPLE MEANS\n       S:   30 centimeters!                                                                                       OF ENGAGEMENT:\n       T:   Talk to a partner. What strategy did you use to add the                                   Vary the difficulty level of the work in\n            side lengths?                                                                             Problem 1 of the Concept Development\n                                                                                                      by adjusting the numbers. Students\n       S:   I doubled 9 and doubled 6 and then added 18 plus 12                                       who understand the concept quickly\n            to get 30.  I added 9 plus 6 to get 15 and then                                          and calculate perimeter mentally may\n            doubled 15 to get 30.  I took 1 from each 6 to make                                      jump to the last challenge of calculating\n            tens with the 9’s. Then, I added 10 + 5 + 10 + 5. I saw                                   larger side lengths or side lengths that\n            that I had 3 tens, which is 30.                                                           require conversions, such as the\n                                                                                                      following:\n  Repeat the process with the suggestions below. Students can\n  sketch the rectangles with the given side lengths, label the\n  unknown side lengths, and then find the perimeter.                                                       2 ft\n\n           A rectangle with side lengths of 10 inches and 8 inches.                                                      39 in\n           A rectangle with side lengths of 14 centimeters and 36\n            centimeters.\n\n  Problem 2: Find the perimeter of regular polygons with one side length given.\n       T:   (Project or draw the hexagon as shown.) This is a regular hexagon.\n            Talk to a partner. How can the labeled side length help you find the                                             3 cm\n            unknown side lengths?\nMP.3\n       S:   Since I know it’s a regular hexagon, and I know one side length, I know the\n            other side lengths.  Yeah. Since it’s a regular hexagon, I know that all\n            the side lengths are equal. So, all 6 sides are each 3 centimeters.\n       T:   That’s right. Sketch the hexagon on your personal white board, and label\n            the unknown side lengths.\n       S:   (Sketch and label the unknown side lengths.)\n\n\n                          Lesson 14:                 Determine the perimeter of regular polygons and rectangles when                         185\n                                                     whole number measurements are unknown.\n\n                           ©2015 Great Minds. eureka-math.org\n                           G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                 Lesson 14 3 7\n\n\n     T:   Write an addition sentence that shows the perimeter\n          of the hexagon.\n                                                                                       NOTES ON\n     S:   (Write 3 cm + 3 cm + 3 cm + 3 cm + 3 cm + 3 cm = 18\n                                                                                       MULTIPLE MEANS\n          cm.)\n                                                                                       OF REPRESENTATION:\n     T:   What is the perimeter of the hexagon?\n                                                                              Because regular has multiple meanings,\n     S:   18 centimeters!                                                     a specific reminder to English language\n     T:   Talk to a partner. Can you write your addition                      learners that it means equal-sided\n          sentence as a multiplication sentence?                              when used in the context of regular\n                                                                              polygon may be helpful.\n     S:   Yes. It’s repeated addition of 3. I can show that with\n          multiplication.  It shows 6 threes. I can write that as\n          6 × 3.\n     T:   Write a multiplication sentence that shows the perimeter of the hexagon.\n     S:   (Write 6 × 3 = 18.)\n     T:   Discuss with a partner what the factors in this multiplication sentence represent.\n     S:   The 6 is the number of sides on the hexagon, and the 3 is the length of each of those sides.\n     T:   Rewrite your multiplication sentence with units to show 6 sides times the length of each side.\n     S:   (Write 6 × 3 cm = 18 cm.)\n Repeat the process with the suggestions below. Students write both an addition and a multiplication\n sentence to find the perimeter of each shape.\n         A regular pentagon with side lengths of 7 inches.\n         A regular triangle (equilateral triangle) with side\n          lengths of 17 centimeters. (Discuss using the\n          break apart and distribute strategy to solve with\n          multiplication.)\n\n     T:   Talk to a partner: Which method is more\n          efficient for finding the perimeter of a regular\n          shape, adding or multiplying?\nMP.3 S:   I think multiplying is because it’s faster than\n          adding.  If the side lengths are small numbers,\n          then multiplying. But if the side lengths were\n          bigger, like 154, I would add instead.",
     "fluencyPracticeText": " Multiply by 8 3.OA.7                                                       (8 minutes)\n Equivalent Counting with Units of 7 3.OA.7                                 (4 minutes)\n\nMultiply by 8 (8 minutes)\nMaterials: (S) Multiply by 8 (6–10) Pattern Sheet\n\nNote: This activity builds fluency with multiplication facts using units of 8. It works toward students knowing\nfrom memory all the products of two one-digit numbers. See Lesson 1 for the directions for administration of\na Multiply-By Pattern Sheet.\n    T:   (Write 7 × 8 = ____.) Let’s skip-count up by eights. I’ll raise a finger for each eight. (Raise a finger\n         for each number to track the count.)\n    S:   8, 16, 24, 32, 40, 48, 56.\n    T:   Let’s skip-count up by eights starting at 40. Why is 40 a good place to start?\n    S:   It’s a fact we already know, so we can use it to figure out a fact we don’t know.\n    T:   (Track with fingers as students say the numbers.)\n    S:   40 (5 fingers), 48 (6 fingers), 56 (7 fingers).\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 80 with 10 fingers, 1 for each\n         eight. (Count down with fingers as students say the numbers.)\n    S:   80 (10 fingers), 72 (9 fingers), 64 (8 fingers), 56 (7 fingers).\nContinue with the following possible sequence: 9 × 8, 6 × 8, and 8 × 8.\n    T:   (Distribute the Multiply by 8 Pattern Sheet.) Let’s practice multiplying by 8. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 14:                Determine the perimeter of regular polygons and rectangles when              183\n                                                   whole number measurements are unknown.\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                     Lesson 14 3 7\n\n\nEquivalent Counting with Units of 7 (4 minutes)\nNote: This activity builds fluency with multiplication facts using units of 7.\n    T:   Count by sevens to 70. (Write as students count.)\n    S:   7, 14, 21, 28, 35, 42, 49, 56, 63, 70.\n    T:   (Write 1 seven beneath the 7.) Count to 10 sevens. (Write as students count.)\n           7         14         21                28         35         42         49         56         63         70\n\n           1 seven   2 sevens   3 sevens          4 sevens   5 sevens   6 sevens   7 sevens   8 sevens   9 sevens   10 sevens\n\n\n    S:   1 seven, 2 sevens, 3 sevens, 4 sevens, 5 sevens, 6 sevens, 7 sevens, 8 sevens, 9 sevens, 10 sevens.\n    T:   Let’s count to 10 sevens again. This time, stop when I raise my hand.\n    S:   1 seven, 2 sevens, 3 sevens.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   3 × 7 = 21.\n    T:   Continue.\n    S:   4 sevens, 5 sevens.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   5 × 7 = 35.\n    T:   Continue.\n    S:   6 sevens, 7 sevens, 8 sevens.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   8 × 7 = 56.\n    T:   Continue.\n    S:   9 sevens, 10 sevens.\n    T:   (Raise hand.) Say the multiplication sentence.\n    S:   10 × 7 = 70.\n    T:   Let’s count back down, starting at 10 sevens.\nContinue the process back down to 1 seven.",
     "problemSetGuidanceText": "Students should do their personal best to complete the\n Problem Set within the allotted 10 minutes. For some\n classes, it may be appropriate to modify the assignment by\n specifying which problems they work on first. Some\n problems do not specify a method for solving. Students\n should solve these problems using the RDW approach\n used for Application Problems.\n\n\n                          Lesson 14:                Determine the perimeter of regular polygons and rectangles when              186\n                                                    whole number measurements are unknown.\n\n                          ©2015 Great Minds. eureka-math.org\n                          G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                 Lesson 14 3 7",
-    "studentDebriefText": ", instruct students to complete the",
+    "studentDebriefText": "Lesson Objective: Determine the perimeter of regular\npolygons and rectangles when whole number\nmeasurements are unknown.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        Compare your work for Problem 1 with a\n         partner’s work. Did you add or multiply to find\n         the perimeters? Why?\n        How was finding the perimeter in Problem 2 different from finding the perimeters in\n         Problem 1?\n        Tell your partner an addition and a multiplication equation for Problem 3. How are the equations\n         related? How do they represent the perimeter of the octagon?\n        What strategy did you use to add the side lengths in Problem 4? Explain your strategy choice to a\n         partner.\n        Share your answers to Problem 5. Whose strategy is more efficient, Giles’s or Xander’s? Why?\n        Explain to a partner how to find the perimeter of a regular shape given the name or picture of the\n         shape and a side length.",
     "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw the rectangle as shown.) This shape is a rectangle. Use the given side lengths and what you know about rectangles to label the unknown side lengths. 6 cm"
+      },
+      {
+        "speaker": "students",
+        "text": "(Label the unknown side lengths.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Label the unknown side lengths 6 cm and 9 cm.) Check your work against mine, and make changes if you need to. (Allow students time to check their 9 cm work.) Write an addition sentence that shows the perimeter of the rectangle."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 9 cm + 9 cm + 6 cm + 6 cm = 30 cm.) NOTES ON"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is the perimeter of the rectangle? MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "30 centimeters! OF ENGAGEMENT:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to a partner. What strategy did you use to add the Vary the difficulty level of the work in side lengths? Problem 1 of the Concept Development by adjusting the numbers. Students"
+      },
       {
         "speaker": "students",
         "text": "I doubled 9 and doubled 6 and then added 18 plus 12 who understand the concept quickly to get 30.  I added 9 plus 6 to get 15 and then and calculate perimeter mentally may doubled 15 to get 30.  I took 1 from each 6 to make jump to the last challenge of calculating tens with the 9’s. Then, I added 10 + 5 + 10 + 5. I saw larger side lengths or side lengths that that I had 3 tens, which is 30. require conversions, such as the following: Repeat the process with the suggestions below. Students can sketch the rectangles with the given side lengths, label the unknown side lengths, and then find the perimeter. 2 ft  A rectangle with side lengths of 10 inches and 8 inches. 39 in  A rectangle with side lengths of 14 centimeters and 36 centimeters."
@@ -120,6 +148,10 @@
       }
     ],
     "teacherPrompts": [
+      "(Project or draw the rectangle as shown.) This shape is a rectangle. Use the given side lengths and what you know about rectangles to label the unknown side lengths. 6 cm",
+      "(Label the unknown side lengths 6 cm and 9 cm.) Check your work against mine, and make changes if you need to. (Allow students time to check their 9 cm work.) Write an addition sentence that shows the perimeter of the rectangle.",
+      "What is the perimeter of the rectangle? MULTIPLE MEANS",
+      "Talk to a partner. What strategy did you use to add the Vary the difficulty level of the work in side lengths? Problem 1 of the Concept Development by adjusting the numbers. Students",
       "(Project or draw the hexagon as shown.) This is a regular hexagon. Talk to a partner. How can the labeled side length help you find the 3 cm unknown side lengths? MP.3",
       "That’s right. Sketch the hexagon on your personal white board, and label the unknown side lengths.",
       "Write an addition sentence that shows the perimeter of the hexagon.",
@@ -176,7 +208,6 @@
       "number-bond",
       "ruler-or-length",
       "geometry-diagram",
-      "money-model",
       "picture-or-drawing"
     ],
     "sourceEvidence": {
@@ -184,43 +215,50 @@
         "break apart and distribute strategy to solve with"
       ],
       "ruler-or-length": [
-        "tens with the 9’s. Then, I added 10 + 5 + 10 + 5. I saw larger side lengths or side lengths that",
-        "sketch the rectangles with the given side lengths, label the",
-        "unknown side lengths, and then find the perimeter. 2 ft",
-        " A rectangle with side lengths of 10 inches and 8 inches. 39 in",
+        "S: 30 centimeters! OF ENGAGEMENT:",
         " A rectangle with side lengths of 14 centimeters and 36",
         "centimeters.",
         "Problem 2: Find the perimeter of regular polygons with one side length given.",
-        "Talk to a partner. How can the labeled side length help you find the 3 cm"
+        "Talk to a partner. How can the labeled side length help you find the 3 cm",
+        "S: Since I know it’s a regular hexagon, and I know one side length, I know the",
+        "the side lengths are equal. So, all 6 sides are each 3 centimeters.",
+        "S: 18 centimeters! a specific reminder to English language"
       ],
       "geometry-diagram": [
         "Determine the perimeter of regular polygons and rectangles when whole number measurements are unknown.",
-        "Lesson 14: Determine the perimeter of regular polygons and rectangles when 186",
-        "to get 30.  I added 9 plus 6 to get 15 and then and calculate perimeter mentally may",
-        "sketch the rectangles with the given side lengths, label the",
-        "unknown side lengths, and then find the perimeter. 2 ft",
-        " A rectangle with side lengths of 10 inches and 8 inches. 39 in",
-        " A rectangle with side lengths of 14 centimeters and 36",
-        "Problem 2: Find the perimeter of regular polygons with one side length given."
-      ],
-      "money-model": [
-        " A rectangle with side lengths of 14 centimeters and 36",
-        "centimeters.",
-        "the side lengths are equal. So, all 6 sides are each 3 centimeters.",
-        "S: 18 centimeters! a specific reminder to English language",
-        "lengths of 17 centimeters. (Discuss using the",
-        "5. Mr. Spooner draws a regular hexagon on the board. One of the sides measures 4 centimeters. Giles and"
+        "long and 9 meters wide. The perimeter of the",
+        "cow pen is double the perimeter of the sheep",
+        "pen. What is the perimeter of the cow pen?",
+        "Lesson 13 in solving perimeter word problems",
+        "Lesson 14: Determine the perimeter of regular polygons and rectangles when 184",
+        "Problem 1: Find the perimeter of rectangles with unknown side lengths.",
+        "T: (Project or draw the rectangle as shown.) This shape is a"
       ],
       "picture-or-drawing": [
+        "T: (Project or draw the rectangle as shown.) This shape is a",
         "T: (Project or draw the hexagon as shown.) This is a regular hexagon.",
-        "3. David draws a regular octagon and labels a side length as shown below. Find the perimeter of David’s",
         "4. Paige paints an 8-inch by 9-inch picture for her mom’s birthday. What is the total length of wood that",
-        "Paige needs to make a frame for the picture?",
-        "5. Mr. Spooner draws a regular hexagon on the board. One of the sides measures 4 centimeters. Giles and"
+        "Paige needs to make a frame for the picture?"
       ]
     },
     "sourceIllustrationRequired": true,
     "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Project or draw the rectangle as shown.) This shape is a rectangle. Use the given side lengths and what you know about rectangles to label the unknown side lengths. 6 cm"
+      },
+      {
+        "speaker": "students",
+        "text": "(Label the unknown side lengths.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Label the unknown side lengths 6 cm and 9 cm.) Check your work against mine, and make changes if you need to. (Allow students time to check their 9 cm work.) Write an addition sentence that shows the perimeter of the rectangle."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 9 cm + 9 cm + 6 cm + 6 cm = 30 cm.) NOTES ON"
+      },
       {
         "speaker": "students",
         "text": "I doubled 9 and doubled 6 and then added 18 plus 12 who understand the concept quickly to get 30.  I added 9 plus 6 to get 15 and then and calculate perimeter mentally may doubled 15 to get 30.  I took 1 from each 6 to make jump to the last challenge of calculating tens with the 9’s. Then, I added 10 + 5 + 10 + 5. I saw larger side lengths or side lengths that that I had 3 tens, which is 30. require conversions, such as the following: Repeat the process with the suggestions below. Students can sketch the rectangles with the given side lengths, label the unknown side lengths, and then find the perimeter. 2 ft  A rectangle with side lengths of 10 inches and 8 inches. 39 in  A rectangle with side lengths of 14 centimeters and 36 centimeters."

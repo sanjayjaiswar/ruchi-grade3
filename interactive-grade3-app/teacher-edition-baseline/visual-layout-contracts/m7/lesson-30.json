@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l30",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-398.png",
+      "sha256": "2cd5f51f4544f29fe81bef97d8cf11f4104da2128058ec7f08c855794cfdedb2",
+      "pdfPage": 398,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 30 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-513.png",
+      "sha256": "b976afb5ce12c0fa51651af44d7ef259d06d6b7ecbb429444d9aaedaad84dd4e",
+      "pdfPage": 513,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 30 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-398.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use this form to critique your classmate's problem-solving work."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "peer-problem-solving-critique-form",
+          "subpartCount": 6,
+          "modelPrimitive": "live-six-field-source-critique-form",
+          "modelCounts": [
+            6
+          ],
+          "modelOrientation": "source-form-over-open-writing-space",
+          "responseStructure": "preserve-variable-peer-specific-critique",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    }
+  ]
+}

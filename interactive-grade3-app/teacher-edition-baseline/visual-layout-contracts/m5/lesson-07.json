@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l7",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-81.png",
+      "sha256": "b03e2524d6d9d9a433910cbd6b79eccfe7296d8d0c15b0a9fb312e415166180b",
+      "pdfPage": 81,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 7 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-82.png",
+      "sha256": "7c5f7963006ff0f2413f97b249a8cd7e32de84dffc6f930ea329e52519449ed7",
+      "pdfPage": 82,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 7 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-377.png",
+      "sha256": "3b52b7db55bf0cf0d13e80b4b5c4b04959046fd905a8fdfa1c2604d82fb4e58c",
+      "pdfPage": 377,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 7 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-378.png",
+      "sha256": "9d69b7f77bb94f2f988038cde7d330a16b84482fd444476661c7799f7fbfb872",
+      "pdfPage": 378,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 7 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-81.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Whisper the fraction of the shape that is shaded"
+        ],
+        "answerKeyEvidence": "1 half.",
+        "layout": {
+          "family": "one-shaded-unit-matched-to-unshaded-fraction",
+          "subpartCount": 2,
+          "modelPrimitive": "one-tight-official-shaded-source-shape",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "source-shape-over-two-fraction-responses",
+          "responseStructure": "name-shaded-unit-fraction-and-match-unshaded-part",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-81.png",
+              "crop": {
+                "x": 215,
+                "y": 285,
+                "width": 175,
+                "height": 150
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-81.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Whisper the fraction of the shape that is shaded"
+        ],
+        "answerKeyEvidence": "3 fourths.",
+        "layout": {
+          "family": "one-shaded-unit-matched-to-unshaded-fraction",
+          "subpartCount": 2,
+          "modelPrimitive": "one-tight-official-shaded-source-shape",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "source-shape-over-two-fraction-responses",
+          "responseStructure": "name-shaded-unit-fraction-and-match-unshaded-part",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-81.png",
+              "crop": {
+                "x": 215,
+                "y": 420,
+                "width": 175,
+                "height": 160
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-81.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Whisper the fraction of the shape that is shaded"
+        ],
+        "answerKeyEvidence": "8 ninths.",
+        "layout": {
+          "family": "one-shaded-unit-matched-to-unshaded-fraction",
+          "subpartCount": 2,
+          "modelPrimitive": "one-tight-official-shaded-source-shape",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "source-shape-over-two-fraction-responses",
+          "responseStructure": "name-shaded-unit-fraction-and-match-unshaded-part",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-81.png",
+              "crop": {
+                "x": 190,
+                "y": 565,
+                "width": 225,
+                "height": 180
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-81.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Whisper the fraction of the shape that is shaded"
+        ],
+        "answerKeyEvidence": "5 sixths.",
+        "layout": {
+          "family": "one-shaded-unit-matched-to-unshaded-fraction",
+          "subpartCount": 2,
+          "modelPrimitive": "one-tight-official-shaded-source-shape",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "source-shape-over-two-fraction-responses",
+          "responseStructure": "name-shaded-unit-fraction-and-match-unshaded-part",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-81.png",
+              "crop": {
+                "x": 195,
+                "y": 730,
+                "width": 225,
+                "height": 180
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m5-teacher/page-81.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Whisper the fraction of the shape that is shaded"
+        ],
+        "answerKeyEvidence": "4 fifths.",
+        "layout": {
+          "family": "one-shaded-unit-matched-to-unshaded-fraction",
+          "subpartCount": 2,
+          "modelPrimitive": "one-tight-official-shaded-source-shape",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "source-shape-over-two-fraction-responses",
+          "responseStructure": "name-shaded-unit-fraction-and-match-unshaded-part",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-81.png",
+              "crop": {
+                "x": 180,
+                "y": 900,
+                "width": 245,
+                "height": 145
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m5-teacher/page-81.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Whisper the fraction of the shape that is shaded"
+        ],
+        "answerKeyEvidence": "2 thirds.",
+        "layout": {
+          "family": "one-shaded-unit-matched-to-unshaded-fraction",
+          "subpartCount": 2,
+          "modelPrimitive": "one-tight-official-shaded-source-shape",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "source-shape-over-two-fraction-responses",
+          "responseStructure": "name-shaded-unit-fraction-and-match-unshaded-part",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-81.png",
+              "crop": {
+                "x": 170,
+                "y": 1005,
+                "width": 260,
+                "height": 190
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 7,
+      "sourcePageImage": "/source-pages/m5-teacher/page-81.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Whisper the fraction of the shape that is shaded"
+        ],
+        "answerKeyEvidence": "6 sevenths.",
+        "layout": {
+          "family": "one-shaded-unit-matched-to-unshaded-fraction",
+          "subpartCount": 2,
+          "modelPrimitive": "one-tight-official-shaded-source-shape",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "source-shape-over-two-fraction-responses",
+          "responseStructure": "name-shaded-unit-fraction-and-match-unshaded-part",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-81.png",
+              "crop": {
+                "x": 185,
+                "y": 1160,
+                "width": 240,
+                "height": 185
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 8,
+      "sourcePageImage": "/source-pages/m5-teacher/page-81.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Whisper the fraction of the shape that is shaded"
+        ],
+        "answerKeyEvidence": "7 eighths.",
+        "layout": {
+          "family": "one-shaded-unit-matched-to-unshaded-fraction",
+          "subpartCount": 2,
+          "modelPrimitive": "one-tight-official-shaded-source-shape",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "source-shape-over-two-fraction-responses",
+          "responseStructure": "name-shaded-unit-fraction-and-match-unshaded-part",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-81.png",
+              "crop": {
+                "x": 195,
+                "y": 1330,
+                "width": 225,
+                "height": 180
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 9,
+      "sourcePageImage": "/source-pages/m5-teacher/page-82.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "How many eighths are in 1 whole"
+        ],
+        "answerKeyEvidence": "a. 8. b. 9. c. 12.",
+        "layout": {
+          "family": "three-unit-counts-that-make-one-whole",
+          "subpartCount": 3,
+          "modelPrimitive": "three-authored-number-sentence-responses",
+          "modelCounts": [
+            8,
+            9,
+            12
+          ],
+          "modelOrientation": "three-stacked-written-responses",
+          "responseStructure": "state-how-many-eighths-ninths-and-twelfths-make-one"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 10,
+      "sourcePageImage": "/source-pages/m5-teacher/page-82.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Each strip represents 1 whole. Write a fraction to label the shaded and unshaded parts"
+        ],
+        "answerKeyEvidence": "1/5, 4/5; 1/7, 6/7; 1/11, 10/11.",
+        "layout": {
+          "family": "three-shaded-and-unshaded-strip-pairs",
+          "subpartCount": 3,
+          "modelPrimitive": "tight-official-fifths-sevenths-elevenths-strip-illustration",
+          "modelCounts": [
+            5,
+            7,
+            11
+          ],
+          "modelOrientation": "three-vertical-source-strips-beside-three-paired-responses",
+          "responseStructure": "label-both-shaded-and-unshaded-fractions",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-82.png",
+              "crop": {
+                "x": 185,
+                "y": 560,
+                "width": 535,
+                "height": 565
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 11,
+      "sourcePageImage": "/source-pages/m5-teacher/page-82.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Avanti read 1 sixth of her book"
+        ],
+        "answerKeyEvidence": "5 sixths.",
+        "layout": {
+          "family": "one-sixth-read-and-five-sixths-unread",
+          "subpartCount": 2,
+          "modelPrimitive": "two-authored-views-of-the-same-book-whole",
+          "modelCounts": [
+            6,
+            1,
+            5
+          ],
+          "modelOrientation": "two-horizontal-book-whole-models-over-written-response",
+          "responseStructure": "name-five-sixths-not-read",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    }
+  ]
+}

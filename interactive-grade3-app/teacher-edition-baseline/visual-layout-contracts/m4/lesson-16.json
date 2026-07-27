@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m4-l16",
+  "teacherEditionPdfSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m4-teacher/page-201.png",
+      "sha256": "cfe7a555f075b59cfbd64d4b759ee317b877b2ff518d36c7c27f693feca6cc19",
+      "pdfPage": 201,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 16 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-202.png",
+      "sha256": "63db17f37c1e595d9b0dd62fcb09175c1d89ce1af200da648154b01e9fd35d12",
+      "pdfPage": 202,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 16 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-234.png",
+      "sha256": "5dbcb4f2a1eee712258ce20b2f3b69b01323c0c65f20374e9d90eb273d9ff079",
+      "pdfPage": 234,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 16 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m4-teacher/page-201.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "record the new side lengths you have chosen for each of the rooms"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "seven-room-redesign-side-length-table",
+          "subpartCount": 7,
+          "rowCount": 7,
+          "columnCount": 2,
+          "modelPrimitive": "authored-two-column-open-redesign-table",
+          "modelCounts": [
+            60,
+            56,
+            42,
+            24,
+            25,
+            28,
+            88
+          ],
+          "modelOrientation": "seven-vertical-room-rows-across-two-source-pages",
+          "responseStructure": "choose-new-side-lengths-and-verify-each-required-area",
+          "openWorkspaceCount": 7
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The two-column seven-room redesign table, required room areas, and open new-side-length fields were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    }
+  ]
+}

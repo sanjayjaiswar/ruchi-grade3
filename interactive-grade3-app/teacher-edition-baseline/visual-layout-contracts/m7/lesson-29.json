@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l29",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-387.png",
+      "sha256": "c0f36a46d7983262f4dad35955bf2b3bb8ea3d6d254d81d5d0609e15440a0094",
+      "pdfPage": 387,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 29 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-388.png",
+      "sha256": "922f6b6a11132fc25c7049c221758cb75e3e7283a150176969cc6babc49b11ba",
+      "pdfPage": 388,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 29 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-511.png",
+      "sha256": "33c6855f73c5b0d833564cbeb4f21df157b7d2ca6cc4e28b236e0c1f59c2c2ef",
+      "pdfPage": 511,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 29 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-512.png",
+      "sha256": "5ec9e9087f648dd83fa3a125810e59d7861c80efdfddb0a04b64535b36622e93",
+      "pdfPage": 512,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 29 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-387.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Kyle puts two rectangles together to make the L-shaped figure below."
+        ],
+        "answerKeyEvidence": "a. 56 in b. 144 sq in c. 72 in",
+        "layout": {
+          "family": "l-shape-perimeter-area-and-two-copy-rectangle",
+          "subpartCount": 3,
+          "modelPrimitive": "live-exact-l-shape+two-copy-rectangle+parts-table",
+          "modelCounts": [
+            12,
+            16,
+            8,
+            6,
+            56,
+            144,
+            72
+          ],
+          "modelOrientation": "source-l-shape-and-composite-over-three-part-work",
+          "responseStructure": "find-perimeter-area-and-composite-perimeter",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-388.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Jeremiah and Hayley use a piece of rope to mark a square space for their booth at the science fair."
+        ],
+        "answerKeyEvidence": "25 ft",
+        "layout": {
+          "family": "square-booth-rope-with-three-foot-opening",
+          "subpartCount": 3,
+          "modelPrimitive": "live-area-forty-nine-square+opening+rdw-table",
+          "modelCounts": [
+            49,
+            7,
+            3,
+            25
+          ],
+          "modelOrientation": "square-over-side-perimeter-opening-work",
+          "responseStructure": "derive-side-subtract-opening-and-answer-twenty-five-feet",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-388.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Vivienne draws four identical rectangles as shown below to make a new, larger rectangle."
+        ],
+        "answerKeyEvidence": "36 cm",
+        "layout": {
+          "family": "four-identical-rectangles-larger-perimeter",
+          "subpartCount": 3,
+          "modelPrimitive": "live-two-by-two-four-rectangle-arrangement+rdw-table",
+          "modelCounts": [
+            4,
+            18,
+            6,
+            3,
+            12,
+            36
+          ],
+          "modelOrientation": "four-rectangle-composite-over-derived-dimensions-and-perimeter",
+          "responseStructure": "derive-small-length-and-answer-thirty-six-centimeters",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-388.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "A jogging path around the outside edges of a rectangular playground measures 48 yards by 52 yards."
+        ],
+        "answerKeyEvidence": "700 yd",
+        "layout": {
+          "family": "three-and-one-half-playground-laps",
+          "subpartCount": 4,
+          "modelPrimitive": "live-forty-eight-by-fifty-two-path+lap-table",
+          "modelCounts": [
+            48,
+            52,
+            3.5,
+            200,
+            700
+          ],
+          "modelOrientation": "playground-over-one-three-half-total-lap-work",
+          "responseStructure": "find-one-lap-and-answer-seven-hundred-yards",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    }
+  ]
+}

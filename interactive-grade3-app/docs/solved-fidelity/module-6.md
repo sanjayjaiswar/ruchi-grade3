@@ -1,29 +1,26 @@
-# Module 6 Solved-Fidelity Audit
+# Module 6 solved-fidelity audit
 
-Audited: 2026-07-22  
-Scope: Problem Set → Solved functional fidelity for data, graphs, measurements, scales, and line plots.
+Audited: 2026-07-26  
+Scope: all 24 Problem Set tasks across Lessons 1–9.
 
-## Evidence
+## Result
 
-- Teacher Edition baseline validation passed for all 9 lessons.
-- Problem-centered delivery validation passed for 24 delivered problem cards.
-- All 9 live Solved routes rendered with correct card counts, readable prompts, and no overflow or broken values.
+Pass under the source-first Teacher Edition standard.
 
-## Lesson status
+Each Solved card begins with the same exact printed task crop used by Blank. Its only added solution section is labeled `Teacher Edition Answer Key` and contains the reviewed numbered answer-key evidence. Variable responses remain variable exactly where the answer key says they vary.
 
-| Lesson | Problems | Response type | Status | Notes |
-|---|---:|---|---|---|
-| 1 | 4 | Variable | Pass | P4 now explicitly models 2 students per symbol, 1½ symbols for 3 students, and 7 × 2 = 14. |
-| 2 | 3 | Variable | Pass | Variable tape/graph work is rubric-controlled. |
-| 3 | 5 | Fixed | Pass | P1 and P5 now include exact scale, totals, and comparison arithmetic. |
-| 4 | 2 | Variable | Pass | Variable graph explanations retain source quantities. |
-| 5 | 3 | Variable | Pass | Measurement precision criteria are preserved. |
-| 6 | 2 | Variable | Pass | Variable line-plot interpretation is rubric-controlled. |
-| 7 | 1 | Variable | Pass | Variable line-plot construction is rubric-controlled. |
-| 8 | 1 | Variable | Pass | Variable line-plot construction is rubric-controlled. |
-| 9 | 3 | Variable | Pass | Variable data analysis retains source evidence requirements. |
+No recreated graph, tape, ruler, table, number line, line plot, generic rubric, inferred equation, or authored explanation is accepted as solution evidence.
 
-## Open follow-up
+## Continuation checks
 
-No known content, answer, model, or source-layout gap remains under the functional-fidelity standard.
+- Lesson 7 Problem 1 includes Teacher Edition pages 100 and 101.
+- Lesson 8 Problem 1 includes pages 114 and 115.
+- Lesson 9 Problem 3 includes pages 129 and 130 without exposing neighboring Problem 2.
+- Lesson 3 Problems 4 and 5 retain their shared printed graph/number-line reference without substituting an authored display.
 
+## Validation
+
+- 9 schema-v2 Module 6 visual contracts passed.
+- 24 delivered tasks passed solved-fidelity validation.
+- 9 live Solved routes rendered the correct task counts and exact answer evidence.
+- No answer leakage, broken image, extra scaffold, or horizontal overflow was found.

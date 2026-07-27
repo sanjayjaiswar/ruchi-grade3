@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m4-l10",
+  "teacherEditionPdfSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m4-teacher/page-132.png",
+      "sha256": "8684271583314c99fdf7475c58b989352363b8f03f1f1e260b752c822a019dc2",
+      "pdfPage": 132,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 10 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-133.png",
+      "sha256": "732b308579212127d8bdd7da10aaab5db242e67230a7b9015e340c102a043bce",
+      "pdfPage": 133,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 10 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-226.png",
+      "sha256": "314145cf74ffa4abde26051b0f61e43e93ff702ce584b9e8347547028c6cbd44",
+      "pdfPage": 226,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 10 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m4-teacher/page-132.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "label the side lengths of the shaded and unshaded rectangles"
+        ],
+        "answerKeyEvidence": "a. 35, 21; 56; 56. b. 10; 10; 10; 40; 48; 48. c. 10, 3; 10; 10; 60, 18; 78; 78. d. 8, 10, 2; 10, 2; 10, 2; 80, 16; 96; 96.",
+        "layout": {
+          "family": "four-shaded-distributive-area-arrays",
+          "subpartCount": 4,
+          "modelPrimitive": "authored-two-tone-split-square-arrays",
+          "modelCounts": [
+            56,
+            48,
+            78,
+            96
+          ],
+          "modelOrientation": "two-by-two-source-panels",
+          "responseStructure": "label-parts-compute-partial-products-and-add"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m4-teacher/page-133.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "vince imagines 1 more row of eight"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "nine-by-eight-plus-one-row-strategy",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-ten-by-eight-two-tone-split-array",
+          "modelCounts": [
+            72,
+            8,
+            80
+          ],
+          "modelOrientation": "array-over-open-explanation",
+          "responseStructure": "find-ten-rows-then-subtract-one-row",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m4-teacher/page-133.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "break the 15 × 5 rectangle into 2 rectangles"
+        ],
+        "answerKeyEvidence": "75 sq units; answers will vary.",
+        "layout": {
+          "family": "fifteen-by-five-student-chosen-split",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-splittable-square-array",
+          "modelCounts": [
+            75
+          ],
+          "modelOrientation": "array-over-open-explanation",
+          "responseStructure": "shade-split-add-partial-areas-and-relate-to-total",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    }
+  ]
+}

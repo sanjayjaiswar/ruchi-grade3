@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m3-l1",
+  "teacherEditionPdfSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m3/lesson-1-page-02.png",
+      "sha256": "07b108c679c89e5e3bb5af3039af9b8945f524a611d8c889d42c3600228d879b",
+      "pdfPage": 21,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 1 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-1-page-03.png",
+      "sha256": "fd0e16a4505316b289ba53f711631c5870bcb882b60dcb66b5410c77d8da5370",
+      "pdfPage": 22,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 1 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-281.png",
+      "sha256": "2183ac79e60134008464836d18c99bdd851aa11f1df9d4e8621794011e01d81e",
+      "pdfPage": 281,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 1 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-282.png",
+      "sha256": "ee9d9b0a45f47c57d04e9aa1292b570c846b899267151a74cbac17d1d65446ea",
+      "pdfPage": 282,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 1 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m3/lesson-1-page-02.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "a solve shade in the multiplication facts that you already know then shade in"
+        ],
+        "answerKeyEvidence": "a. Answers will vary. b. 14; 3; 28; 35; 6.",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m3/lesson-1-page-02.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "use the array to write two different multiplication sentences"
+        ],
+        "answerKeyEvidence": "24, 4, 6; 24, 6, 4.",
+        "layout": {
+          "family": "array-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m3/lesson-1-page-03.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "complete the equations a 2 sevens twos"
+        ],
+        "answerKeyEvidence": "a. 7; b. sixes; 18; c. tens; 80; d. 6; 24; e. 5; 40; f. 4; 4; g. 1; 27; h. 9; 36; i. 3; 32; j. 5; 30; k. 7; 3; 21; l. 5; 5; 20.",
+        "layout": {
+          "family": "equation-solution-grid",
+          "subpartCount": 12,
+          "printedEquationLineCount": 12,
+          "openWorkspaceCount": 0,
+          "responseStructure": "equation-and-answer-parts"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    }
+  ]
+}

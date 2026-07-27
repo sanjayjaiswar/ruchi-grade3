@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l29",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-347.png",
+      "sha256": "30f3cb5679f7410d0c2cef43c1ae370ae0df4e3785e2c7ec71b8a258f2111995",
+      "pdfPage": 347,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 29 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-348.png",
+      "sha256": "01a172d92c8e3fb280d7778b4d8f3d609da52d5c851e16e18627bd798fe7c8b5",
+      "pdfPage": 348,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 29 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-418.png",
+      "sha256": "6bf6696a2040aa52c1b3ee87c1b807b516a9d291653176578bf5d8929bc4bdb9",
+      "pdfPage": 418,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 29 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-419.png",
+      "sha256": "464c6eb8e80d3f0bb050edab1c69b0153b5dbaa8542e24e52707f47cf822f1fa",
+      "pdfPage": 419,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 29 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-347.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Label each shaded fraction. Use >, <, or = to compare. The first one has been done for you."
+        ],
+        "answerKeyEvidence": "Answer provided.",
+        "layout": {
+          "family": "source-provided-two-sixths-less-than-two-thirds-example",
+          "subpartCount": 2,
+          "modelPrimitive": "two-completed-source-fraction-strips",
+          "modelCounts": [
+            2,
+            2
+          ],
+          "modelOrientation": "two-horizontal-same-size-wholes",
+          "responseStructure": "retain-provided-labels-and-comparison"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-347.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Label each shaded fraction. Use >, <, or = to compare."
+        ],
+        "answerKeyEvidence": "3/4 > 3/8.",
+        "layout": {
+          "family": "compare-tight-official-shaded-figures",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-figure-crop-plus-live-comparison",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "one-source-figure-pair",
+          "responseStructure": "label-both-fractions-and-insert-comparison-symbol",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-347.png",
+              "crop": {
+                "x": 770,
+                "y": 330,
+                "width": 355,
+                "height": 160
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-347.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Label each shaded fraction. Use >, <, or = to compare."
+        ],
+        "answerKeyEvidence": "1/4 < 1/2.",
+        "layout": {
+          "family": "compare-tight-official-shaded-figures",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-figure-crop-plus-live-comparison",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "one-source-figure-pair",
+          "responseStructure": "label-both-fractions-and-insert-comparison-symbol",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-347.png",
+              "crop": {
+                "x": 185,
+                "y": 655,
+                "width": 345,
+                "height": 165
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-347.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Label each shaded fraction. Use >, <, or = to compare."
+        ],
+        "answerKeyEvidence": "4/4 > 4/6.",
+        "layout": {
+          "family": "compare-tight-official-shaded-figures",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-figure-crop-plus-live-comparison",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "one-source-figure-pair",
+          "responseStructure": "label-both-fractions-and-insert-comparison-symbol",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-347.png",
+              "crop": {
+                "x": 690,
+                "y": 690,
+                "width": 490,
+                "height": 90
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m5-teacher/page-347.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Partition each number line into the units labeled on the left."
+        ],
+        "answerKeyEvidence": "a. <. b. >. c. >.",
+        "layout": {
+          "family": "compare-three-fraction-pairs-on-halves-fourths-eighths-lines",
+          "subpartCount": 3,
+          "modelPrimitive": "three-aligned-number-lines-plus-live-comparisons",
+          "modelCounts": [
+            2,
+            4,
+            8
+          ],
+          "modelOrientation": "three-horizontal-zero-to-one-lines",
+          "responseStructure": "partition-lines-and-compare-three-eighths-three-fourths-four-fourths-four-eighths-two-fourths-two-eighths"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m5-teacher/page-348.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw your own model to compare the following fractions."
+        ],
+        "answerKeyEvidence": "Models drawn correctly; <.",
+        "layout": {
+          "family": "student-drawn-fraction-comparison",
+          "subpartCount": 2,
+          "modelPrimitive": "open-own-model-workspace-to-two-same-size-strips",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "two-horizontal-same-size-wholes",
+          "responseStructure": "draw-models-and-record-comparison",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 7,
+      "sourcePageImage": "/source-pages/m5-teacher/page-348.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw your own model to compare the following fractions."
+        ],
+        "answerKeyEvidence": "Models drawn correctly; >.",
+        "layout": {
+          "family": "student-drawn-fraction-comparison",
+          "subpartCount": 2,
+          "modelPrimitive": "open-own-model-workspace-to-two-same-size-strips",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "two-horizontal-same-size-wholes",
+          "responseStructure": "draw-models-and-record-comparison",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 8,
+      "sourcePageImage": "/source-pages/m5-teacher/page-348.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "John ran 2 thirds of a kilometer after school."
+        ],
+        "answerKeyEvidence": "Nicholas; models drawn correctly.",
+        "layout": {
+          "family": "compare-two-thirds-and-two-fifths-kilometer-runs",
+          "subpartCount": 2,
+          "modelPrimitive": "two-source-kilometer-tape-models",
+          "modelCounts": [
+            2,
+            2
+          ],
+          "modelOrientation": "two-horizontal-one-kilometer-wholes",
+          "responseStructure": "identify-nicholas-as-running-shorter"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 9,
+      "sourcePageImage": "/source-pages/m5-teacher/page-348.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Erica ate 2 ninths of a licorice stick."
+        ],
+        "answerKeyEvidence": "Robbie; models drawn correctly.",
+        "layout": {
+          "family": "compare-two-ninths-and-two-fifths-licorice",
+          "subpartCount": 2,
+          "modelPrimitive": "two-source-identical-stick-tape-models",
+          "modelCounts": [
+            2,
+            2
+          ],
+          "modelOrientation": "two-horizontal-identical-wholes",
+          "responseStructure": "identify-robbie-as-eating-more"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    }
+  ]
+}

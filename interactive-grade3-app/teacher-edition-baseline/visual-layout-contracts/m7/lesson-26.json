@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l26",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-348.png",
+      "sha256": "4dcafbf43b146621d90fc7877f651eab3f8bceb7eff3b5ac3b5b9e8a9a333f1a",
+      "pdfPage": 348,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 26 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-349.png",
+      "sha256": "ad420767d720615288710e5e5e496365035c31438ae61006a82c68001f60eb10",
+      "pdfPage": 349,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 26 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-505.png",
+      "sha256": "231f97984d60e17da09122807d88ad91e8e90fcc2ac1eeb9df8930fbc60c5b46",
+      "pdfPage": 505,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 26 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-506.png",
+      "sha256": "f0d91b7d24683c905fec8e1609310ed01559f62a18f21fb67453bb3093f875c8",
+      "pdfPage": 506,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 26 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-348.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Collect the area measurements of your classmates' robot bodies."
+        ],
+        "answerKeyEvidence": "a. Answers will vary. b. Answers will vary.",
+        "layout": {
+          "family": "class-line-plot-of-variable-robot-body-areas",
+          "subpartCount": 3,
+          "modelPrimitive": "unseeded-live-line-plot+class-data-record",
+          "modelCounts": [
+            8,
+            2
+          ],
+          "modelOrientation": "blank-class-line-plot-over-data-record-and-two-part-response",
+          "responseStructure": "collect-class-data-plot-and-preserve-variable-responses",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-349.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Measure and calculate the perimeter of your construction paper in inches."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "measure-variable-construction-paper-perimeter",
+          "subpartCount": 2,
+          "modelPrimitive": "open-live-paper-model+measurement-table",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "paper-model-over-measurement-calculation-and-response",
+          "responseStructure": "measure-in-inches-and-preserve-variable-answer",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-349.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Sketch and label two shapes with the same perimeter from the robot's environment."
+        ],
+        "answerKeyEvidence": "Explanations will vary.",
+        "layout": {
+          "family": "sketch-two-environment-shapes-with-same-perimeter",
+          "subpartCount": 3,
+          "modelPrimitive": "two-open-drawing-frames+comparison-table",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "two-frames-over-comparison-and-response",
+          "responseStructure": "preserve-variable-sketches-and-explanation",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-349.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Write two or three sentences describing your robot and the environment in which it lives."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "describe-variable-robot-and-environment",
+          "subpartCount": 1,
+          "modelPrimitive": "two-or-three-sentence-requirement+open-writing-space",
+          "modelCounts": [
+            2,
+            3
+          ],
+          "modelOrientation": "requirement-over-open-response",
+          "responseStructure": "preserve-variable-description",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    }
+  ]
+}

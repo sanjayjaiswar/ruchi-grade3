@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l20",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-240.png",
+      "sha256": "a6065415f2929ff738584b5eb5cf8f92c7ec801e03e111622813ead7b9ae6936",
+      "pdfPage": 240,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 20 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-241.png",
+      "sha256": "31d50f945ad75664f5674cf470c1c5cbe39d2b19032bd457cba53fee33cd81a8",
+      "pdfPage": 241,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 20 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-402.png",
+      "sha256": "ee8ed5c42d89bd2cd589460af6d8de57e7dd75e64e3e998962d78e08336a7aa3",
+      "pdfPage": 402,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 20 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-403.png",
+      "sha256": "5af987993683467cfc365253a3b65315647973455c71cbcd414b7438c0d9af33",
+      "pdfPage": 403,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 20 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-240.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Label what fraction of each shape is shaded. Then, circle the fractions that are equal."
+        ],
+        "answerKeyEvidence": "a. 4/8, 4/8, 3/8, 4/8; first, second, and last shapes circled. b. 2/5, 1/5, 2/5, 2/5; first, third, and last shapes circled. c. 2/6, 2/6, 4/6, 3/6; first and second shapes circled.",
+        "layout": {
+          "family": "three-rows-of-shaded-figure-equivalence",
+          "subpartCount": 12,
+          "modelPrimitive": "three-tight-official-figure-row-crops-plus-live-fraction-work",
+          "modelCounts": [
+            4,
+            4,
+            4
+          ],
+          "modelOrientation": "three-source-figure-rows-in-reading-order",
+          "responseStructure": "label-twelve-shaded-fractions-and-circle-equal-groups",
+          "sourceFirst": true,
+          "sourceCropCount": 3,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-240.png",
+              "crop": {
+                "x": 215,
+                "y": 295,
+                "width": 900,
+                "height": 180
+              }
+            },
+            {
+              "src": "/source-pages/m5-teacher/page-240.png",
+              "crop": {
+                "x": 225,
+                "y": 515,
+                "width": 890,
+                "height": 190
+              }
+            },
+            {
+              "src": "/source-pages/m5-teacher/page-240.png",
+              "crop": {
+                "x": 225,
+                "y": 755,
+                "width": 890,
+                "height": 235
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-240.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Label the shaded fraction. Draw 2 different representations of the same fractional amount."
+        ],
+        "answerKeyEvidence": "a. 1/4; two different representations of 1/4 drawn. b. 1/7; two different representations of 1/7 drawn.",
+        "layout": {
+          "family": "name-and-represent-one-fourth-and-one-seventh",
+          "subpartCount": 2,
+          "modelPrimitive": "two-tight-official-figure-crops-plus-open-drawing-space",
+          "modelCounts": [
+            4,
+            7
+          ],
+          "modelOrientation": "two-source-figures-over-large-drawing-workspace",
+          "responseStructure": "name-each-unit-fraction-and-draw-two-valid-representations",
+          "sourceFirst": true,
+          "sourceCropCount": 2,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-240.png",
+              "crop": {
+                "x": 225,
+                "y": 1110,
+                "width": 330,
+                "height": 120
+              }
+            },
+            {
+              "src": "/source-pages/m5-teacher/page-240.png",
+              "crop": {
+                "x": 235,
+                "y": 1245,
+                "width": 185,
+                "height": 190
+              }
+            }
+          ],
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-241.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Ann has 6 small square pieces of paper. 2 squares are grey. Ann cuts the 2 grey squares in half with a diagonal line from one corner to the other."
+        ],
+        "answerKeyEvidence": "a. Triangles, squares. b. 4 triangles, 4 squares. c. At least two different representations of Ann’s set of shapes drawn with no overlaps; 2/6.",
+        "layout": {
+          "family": "six-square-pieces-cut-and-rearranged",
+          "subpartCount": 3,
+          "modelPrimitive": "one-tight-official-piece-crop-plus-open-arrangement-space",
+          "modelCounts": [
+            6,
+            2,
+            4,
+            4
+          ],
+          "modelOrientation": "source-pieces-over-large-arrangement-workspace",
+          "responseStructure": "identify-triangles-and-squares-count-each-draw-two-arrangements-and-name-two-sixths",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-241.png",
+              "crop": {
+                "x": 585,
+                "y": 240,
+                "width": 450,
+                "height": 85
+              }
+            }
+          ],
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-241.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Susan says the amounts are not equal. Cristina says they are."
+        ],
+        "answerKeyEvidence": "Cristina; explanations will vary.",
+        "layout": {
+          "family": "equal-half-liters-in-different-shaped-beakers",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-beaker-crop-plus-written-explanation",
+          "modelCounts": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "modelOrientation": "two-different-shaped-one-liter-beakers-over-response",
+          "responseStructure": "name-cristina-and-explain-equal-capacity-and-equal-half-liter-amounts",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-241.png",
+              "crop": {
+                "x": 815,
+                "y": 990,
+                "width": 320,
+                "height": 490
+              }
+            }
+          ],
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    }
+  ]
+}

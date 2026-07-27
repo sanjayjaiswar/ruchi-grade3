@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m2-l6",
+  "teacherEditionPdfSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m2-teacher/page-080.png",
+      "sha256": "92f7a5caf4c7d07e887fc0fd164ab47c6b7dbff1cc2af94f319d07191e74c7a6",
+      "pdfPage": 80,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 6 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-teacher/page-081.png",
+      "sha256": "79b17f6d43e6d26be50bb519f47031e25317bf107646d891aa97a3af941fa622",
+      "pdfPage": 81,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 6 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-answer-key/page-286.png",
+      "sha256": "0de0f91b25d27c8595bf33ebfb17a72ba56654ac5756d93d6f9e87a92cb790d0",
+      "pdfPage": 286,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 6 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m2-teacher/page-080.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "illustrate and describe the process of making a 1-kilogram weight."
+        ],
+        "answerKeyEvidence": "1. Illustrations and descriptions will vary. 2. Illustrations and descriptions will vary. 3. Illustrations and descriptions will vary. 4. Illustrations and descriptions will vary. 5. Answers will vary.",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m2-teacher/page-080.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "illustrate and describe the process of decomposing 1 kilogram into groups of 100 grams."
+        ],
+        "answerKeyEvidence": "1. Illustrations and descriptions will vary. 2. Illustrations and descriptions will vary. 3. Illustrations and descriptions will vary. 4. Illustrations and descriptions will vary. 5. Answers will vary.",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m2-teacher/page-080.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "illustrate and describe the process of decomposing 100 grams into groups of 10 grams."
+        ],
+        "answerKeyEvidence": "1. Illustrations and descriptions will vary. 2. Illustrations and descriptions will vary. 3. Illustrations and descriptions will vary. 4. Illustrations and descriptions will vary. 5. Answers will vary.",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m2-teacher/page-081.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "illustrate and describe the process of decomposing 10 grams into groups of 1 gram."
+        ],
+        "answerKeyEvidence": "1. Illustrations and descriptions will vary. 2. Illustrations and descriptions will vary. 3. Illustrations and descriptions will vary. 4. Illustrations and descriptions will vary. 5. Answers will vary.",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m2-teacher/page-081.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "how does today's exploration using kilograms and grams relate to your understanding of place value"
+        ],
+        "answerKeyEvidence": "1. Illustrations and descriptions will vary. 2. Illustrations and descriptions will vary. 3. Illustrations and descriptions will vary. 4. Illustrations and descriptions will vary. 5. Answers will vary.",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

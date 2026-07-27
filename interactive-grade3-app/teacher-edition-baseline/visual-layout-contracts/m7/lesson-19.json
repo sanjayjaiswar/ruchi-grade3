@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l19",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-264.png",
+      "sha256": "ee174519436e23f294c0327df54935fc7fb66967c298cdcb77d69d5bfd76e74c",
+      "pdfPage": 264,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 19 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-265.png",
+      "sha256": "a892d59a57108722701483772a41529f2849e28d54ec985d3ef7b2ace40213ee",
+      "pdfPage": 265,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 19 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-492.png",
+      "sha256": "6fe23d49bdea91e09e06919872d00ae2c5037e2c1543432203b066c6227dd0ee",
+      "pdfPage": 492,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 19 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-264.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use unit square tiles to make rectangles for each given number of unit squares."
+        ],
+        "answerKeyEvidence": "1, 1, 13; 2, 1, 14, 2, 7; 2, 1, 15, 3, 5; 3, 1, 16, 2, 8, 4, 4; 1, 1, 17; 3, 1, 18, 2, 9, 3, 6",
+        "layout": {
+          "family": "factor-pair-charts-for-twelve-through-eighteen",
+          "subpartCount": 14,
+          "modelPrimitive": "live-seven-row-factor-pair-table+count-map",
+          "modelCounts": [
+            7,
+            3,
+            1,
+            2,
+            2,
+            3,
+            1,
+            3
+          ],
+          "modelOrientation": "seven-charts-over-count-map-and-response",
+          "responseStructure": "retain-twelve-example-and-complete-thirteen-through-eighteen",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, plots, and response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-265.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Create a line plot with the data you collected in Problem 1."
+        ],
+        "answerKeyEvidence": "Line plot created.",
+        "layout": {
+          "family": "line-plot-of-rectangle-counts",
+          "subpartCount": 7,
+          "modelPrimitive": "live-twelve-through-eighteen-line-plot+dependent-table",
+          "modelCounts": [
+            7,
+            3,
+            1,
+            2,
+            2,
+            3,
+            1,
+            3
+          ],
+          "modelOrientation": "line-plot-over-dependent-data-and-response",
+          "responseStructure": "plot-one-x-per-rectangle",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, plots, and response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-265.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Which numbers of unit squares produce three rectangles?"
+        ],
+        "answerKeyEvidence": "12, 16, and 18 unit squares.",
+        "layout": {
+          "family": "identify-unit-square-counts-with-three-rectangles",
+          "subpartCount": 3,
+          "modelPrimitive": "live-count-table+three-target-cards",
+          "modelCounts": [
+            3,
+            12,
+            16,
+            18
+          ],
+          "modelOrientation": "count-table-over-three-targets-and-response",
+          "responseStructure": "identify-twelve-sixteen-eighteen",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, plots, and response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-265.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Why do some numbers of unit squares, such as 13, only produce one rectangle?"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "explain-prime-thirteen-one-rectangle-result",
+          "subpartCount": 1,
+          "modelPrimitive": "live-one-by-thirteen-array+dependent-table",
+          "modelCounts": [
+            13,
+            1
+          ],
+          "modelOrientation": "array-over-chart-evidence-and-open-response",
+          "responseStructure": "preserve-variable-explanation-without-invented-sample",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, plots, and response spaces. No page or whole-problem screenshot is embedded."
+      }
+    }
+  ]
+}

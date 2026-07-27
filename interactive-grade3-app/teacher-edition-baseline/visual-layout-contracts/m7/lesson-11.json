@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l11",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-154.png",
+      "sha256": "141a274c79c09443387b1ccfc78b23c19ff86a19b0074478bee9a1a054f90d3a",
+      "pdfPage": 154,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 11 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-480.png",
+      "sha256": "b566582dd213e0197435751945b7ce4d40c0964b801e166491ff44e7fed43b9e",
+      "pdfPage": 480,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 11 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-154.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Follow the directions below using the shape you created yesterday."
+        ],
+        "answerKeyEvidence": "a–d. Answers will vary.",
+        "layout": {
+          "family": "open-student-shape-tessellation",
+          "subpartCount": 4,
+          "modelPrimitive": "unseeded-tessellation-grid+four-part-table",
+          "modelCounts": [
+            4
+          ],
+          "modelOrientation": "open-grid-over-live-directions-and-response",
+          "responseStructure": "tessellate-color-highlight-and-string-measure-without-invented-sample",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-154.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Compare the perimeter of your tessellation to a partner’s."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "compare-student-tessellation-perimeters",
+          "subpartCount": 3,
+          "modelPrimitive": "unseeded-boundary-grid+criterion-table",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "open-grid-over-comparison-response",
+          "responseStructure": "record-both-perimeters-name-greater-and-explain",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-154.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "How could you increase the perimeter of your tessellation?"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "increase-tessellation-perimeter-explanation",
+          "subpartCount": 1,
+          "modelPrimitive": "unseeded-boundary-grid+criterion-table",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "open-grid-over-explanation-response",
+          "responseStructure": "explain-source-grounded-perimeter-increase-without-sample",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-154.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "How would overlapping your shape when you tessellated change the perimeter of your tessellation?"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "overlap-effect-on-tessellation-perimeter",
+          "subpartCount": 1,
+          "modelPrimitive": "unseeded-boundary-grid+criterion-table",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "open-grid-over-explanation-response",
+          "responseStructure": "reason-about-overlap-and-outside-boundary-without-sample",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m2-l7",
+  "teacherEditionPdfSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m2-teacher/page-091.png",
+      "sha256": "0df9a84c7badf9dbcd13ffe90da70d4698ccc49806a1e0c788c4321b74b3b15b",
+      "pdfPage": 91,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 7 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-teacher/page-092.png",
+      "sha256": "17ff8844badd474b30c44a25277c770e30ac6fdc374de6ec1d7425dc060f432b",
+      "pdfPage": 92,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 7 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-answer-key/page-287.png",
+      "sha256": "c1e67a685d5615ea7b6dc95c6b9d35038bb8340d66c6e151678fb29468f546b0",
+      "pdfPage": 287,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 7 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m2-teacher/page-091.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "work with a partner. use the corresponding weights to estimate the weight of objects in the classroom. then check your estimate by weighing on a"
+        ],
+        "answerKeyEvidence": "A. Objects and weights will vary. F. 2 kilograms since 1 bottle of water weighs B. Objects and weights will vary. about 1 kilogram C. Objects and weights will vary. G. Yes; 10 units of 100 grams equal 1000 grams, D. Objects and weights will vary. which is the same as 1 kilogram. E. 1. grams 2. kilograms 3. grams 4. kilograms 5. kilograms 6. grams",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m2-teacher/page-092.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "circle the correct unit of weight for each"
+        ],
+        "answerKeyEvidence": "A. Objects and weights will vary. F. 2 kilograms since 1 bottle of water weighs B. Objects and weights will vary. about 1 kilogram C. Objects and weights will vary. G. Yes; 10 units of 100 grams equal 1000 grams, D. Objects and weights will vary. which is the same as 1 kilogram. E. 1. grams 2. kilograms 3. grams 4. kilograms 5. kilograms 6. grams",
+        "layout": {
+          "family": "table-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m2-teacher/page-092.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "derrick finds that his bottle of water weighs the same as a 1-kilogram bag of rice. he"
+        ],
+        "answerKeyEvidence": "A. Objects and weights will vary. F. 2 kilograms since 1 bottle of water weighs B. Objects and weights will vary. about 1 kilogram C. Objects and weights will vary. G. Yes; 10 units of 100 grams equal 1000 grams, D. Objects and weights will vary. which is the same as 1 kilogram. E. 1. grams 2. kilograms 3. grams 4. kilograms 5. kilograms 6. grams",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m2-teacher/page-092.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "1 kilogram of rice weighs the same as 10 bags containing 100 grams of beans each. do you agree"
+        ],
+        "answerKeyEvidence": "A. Objects and weights will vary. F. 2 kilograms since 1 bottle of water weighs B. Objects and weights will vary. about 1 kilogram C. Objects and weights will vary. G. Yes; 10 units of 100 grams equal 1000 grams, D. Objects and weights will vary. which is the same as 1 kilogram. E. 1. grams 2. kilograms 3. grams 4. kilograms 5. kilograms 6. grams",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

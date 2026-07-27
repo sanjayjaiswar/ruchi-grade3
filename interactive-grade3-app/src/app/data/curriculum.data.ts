@@ -1273,7 +1273,7 @@ const LESSON_OBJECTIVES: Record<string, string> = {
   'm6-l2': 'Rotate tape diagrams vertically.',
   'm6-l3': 'Create scaled bar graphs.',
   'm6-l4': 'Solve one- and two-step problems involving graphs.',
-  'm6-l5': 'Create ruler with 1-inch, 1/2-inch, and 1/4-inch intervals, and generate measurement data.',
+  'm6-l5': 'Create ruler with 1-inch, ½-inch, and ¼-inch intervals, and generate measurement data.',
   'm6-l6': 'Interpret measurement data from various line plots.',
   'm6-l7': 'Represent measurement data with line plots.',
   'm6-l8': 'Represent measurement data with line plots.',

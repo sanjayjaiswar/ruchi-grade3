@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m1-l12",
+  "teacherEditionPdfSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m1-teacher/page-169.png",
+      "sha256": "76b61dd33317494d49d0748bdfb779e42ffb8db636da3219b6e48d0c0c035d3a",
+      "pdfPage": 169,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 12 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-170.png",
+      "sha256": "bba2dfc7621311382b5295fe673ebf32f16b548105227a926d546eb4936e99aa",
+      "pdfPage": 170,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 12 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-311.png",
+      "sha256": "d7b4f48ff78de50c252633b78d911cdc2e8198b2e1293063e1340fcc38511b95",
+      "pdfPage": 311,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 12 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-312.png",
+      "sha256": "745c4c7999bf194c10a8aa6f4a66292f1008c07dc1cce5f466a82b8c30735569",
+      "pdfPage": 312,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 12 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m1-teacher/page-169.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "There are 8 birds at the pet store. Two birds are in each cage. Circle to show how many cages there are."
+        ],
+        "answerKeyEvidence": "4 groups of 2 birds circled; 4; 4",
+        "layout": {
+          "family": "source-illustration-model",
+          "modelPrimitive": "source-illustration",
+          "modelOrientation": "source-order"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "A tight crop preserves only the official problem-level mathematical scaffold; response fields and solution reveal remain authored HTML."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m1-teacher/page-169.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The pet store sells 10 fish. They equally divide the fish into 5 bowls. Draw fish to find the number in each bowl."
+        ],
+        "answerKeyEvidence": "2 fish drawn in each bowl; 2; 2; 2",
+        "layout": {
+          "family": "source-illustration-model",
+          "modelPrimitive": "source-illustration",
+          "modelOrientation": "source-order"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "A tight crop preserves only the official problem-level mathematical scaffold; response fields and solution reveal remain authored HTML."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m1-teacher/page-169.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Match."
+        ],
+        "answerKeyEvidence": "First rabbit matched to 5; Second rabbit matched to 8; Third rabbit matched to 9; Fourth rabbit matched to 7; Fifth rabbit matched to 6",
+        "layout": {
+          "family": "source-illustration-model",
+          "modelPrimitive": "source-illustration",
+          "modelOrientation": "source-order"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "A tight crop preserves only the official problem-level mathematical scaffold; response fields and solution reveal remain authored HTML."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m1-teacher/page-170.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Laina buys 14 meters of ribbon. She cuts her ribbon into 2 equal pieces. How many meters long is each piece?"
+        ],
+        "answerKeyEvidence": "7; labels will vary",
+        "layout": {
+          "family": "source-illustration-model",
+          "modelPrimitive": "source-illustration",
+          "modelOrientation": "source-order"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "A tight crop preserves only the official problem-level mathematical scaffold; response fields and solution reveal remain authored HTML."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m1-teacher/page-170.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Roy eats 2 cereal bars every morning. Each box has a total of 12 bars. How many days will it take Roy to finish 1 box?"
+        ],
+        "answerKeyEvidence": "6",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The source provides open drawing or written-response space. Blank remains unfilled; Solved reveals only answer-key-supported evidence."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m1-teacher/page-170.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Sarah and Esther equally share the cost of a present."
+        ],
+        "answerKeyEvidence": "$9",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The source provides open drawing or written-response space. Blank remains unfilled; Solved reveals only answer-key-supported evidence."
+      }
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 <main class="page-frame" *ngIf="module; else missingModule" [ngStyle]="moduleThemeVars(module.id)">
   <section class="hero-band">
     <div>
-      <span class="eyebrow">Module {{ module.number }}</span>
-      <h1>{{ module.title }}</h1>
+      <span class="eyebrow">Grade 3 module</span>
+      <h1>Module {{ module.number }}: {{ module.title }}</h1>
       <p class="lead">{{ module.summary }}</p>
     </div>
     <a class="button" [routerLink]="['/ruchika-grade3', 'modules', module.id, 'lessons', 1]">Open Lesson 1</a>
@@ -42,11 +42,15 @@
     </button>
   </nav>
 
-  <section class="section-panel" *ngIf="activeModuleTab === 'concepts' && (showModuleOneConceptMap() || concepts().length)">
+  <section
+    class="section-panel"
+    [id]="module.id + '-concepts'"
+    tabindex="-1"
+    *ngIf="activeModuleTab === 'concepts' && (showModuleOneConceptMap() || concepts().length)">
     <div class="section-heading">
       <div>
         <span class="section-step">1. Concepts</span>
-        <h2 class="section-title">Module concepts</h2>
+        <h2 class="section-title">Module {{ module.number }} concepts</h2>
         <p class="muted" *ngIf="!showModuleOneConceptMap() && !showModuleTwoConceptMap()">Teach these ideas before the lesson sequence, then refer back to them when individual lessons use the idea.</p>
         <p class="muted" *ngIf="showModuleOneConceptMap()">A parent-friendly map of the big ideas students use across multiplication, division, strategies, and word problems.</p>
         <p class="muted" *ngIf="showModuleTwoConceptMap()">A source-backed map of the module before opening individual lessons.</p>
@@ -423,11 +427,15 @@
     </article>
   </section>
 
-  <section class="section-panel" *ngIf="activeModuleTab === 'topics' && module.topics.length">
+  <section
+    class="section-panel"
+    [id]="module.id + '-topics'"
+    tabindex="-1"
+    *ngIf="activeModuleTab === 'topics' && module.topics.length">
     <div class="section-heading">
       <div>
         <span class="section-step">2. Topics and lessons</span>
-        <h2 class="section-title">Topics and lessons</h2>
+        <h2 class="section-title">Module {{ module.number }} topics and lessons</h2>
         <p class="muted">See the module path first. The teaching cards below open the individual lessons.</p>
       </div>
     </div>
@@ -435,7 +443,7 @@
     <div class="topic-overview-grid" aria-label="Topic overview">
       <article class="topic-overview-card" *ngFor="let topic of module.topics; let last = last">
         <span class="topic-overview-badge">{{ topic.label }}</span>
-        <h3>{{ topic.title }}</h3>
+        <h3>{{ topic.label }}: {{ topic.title }}</h3>
         <p>{{ topic.lessonIds.length }} lessons · {{ topic.days }} days</p>
         <small>{{ lessonLabel(topic.lessonIds[0]) }}-{{ lessonNumber(topic.lessonIds[topic.lessonIds.length - 1]) }}</small>
         <b *ngIf="!last" aria-hidden="true">→</b>
@@ -444,11 +452,15 @@
   </section>
 
   <ng-container *ngFor="let topic of module.topics">
-    <section class="section-panel" *ngIf="activeModuleTab === teachTopicTabId(topic.id)">
+    <section
+      class="section-panel"
+      [id]="topic.id"
+      tabindex="-1"
+      *ngIf="activeModuleTab === teachTopicTabId(topic.id)">
       <div class="section-heading">
         <div>
-          <span class="section-step">3. {{ topic.label }}</span>
-          <h2 class="section-title">Teach {{ topic.label }}</h2>
+          <span class="section-step">Topic lesson map</span>
+          <h2 class="section-title">{{ topic.label }}: {{ topic.title }}</h2>
           <p class="muted">Open a lesson when you are ready to teach. Use the concept map and topic overview tabs as the reference.</p>
         </div>
       </div>
@@ -463,7 +475,7 @@
         <div class="topic-heading">
           <div class="topic-title-block">
             <span class="topic-badge">{{ topic.label }}</span>
-            <h3>{{ topic.title }}</h3>
+            <h3>Lesson sequence</h3>
           </div>
           <span class="days">
             <span class="days-mark"></span>

@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l6",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-70.png",
+      "sha256": "31661490590c10b94d6acc32315b3a6c4071fcabf1ef83dc2be108dc06959f2d",
+      "pdfPage": 70,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 6 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-71.png",
+      "sha256": "5fbd3844241fbcb5e47790c62d98b2a402271effc3570122641d84308e48c3c6",
+      "pdfPage": 71,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 6 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-375.png",
+      "sha256": "7ffae5cdb2c7cd3bf447979324a562e2f78ea189d0b7d5bc25311cbf5dcc03cf",
+      "pdfPage": 375,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 6 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-376.png",
+      "sha256": "213a9f127edb28502cd03b6f30d8e0228829912bfa7c33fc2e42432bb6daea53",
+      "pdfPage": 376,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 6 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-70.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Complete the number sentence. Estimate to partition each strip equally"
+        ],
+        "answerKeyEvidence": "Each shape partitioned, labeled, and shaded correctly: a. 3/4. b. 3/7. c. 4/5. d. 2/6.",
+        "layout": {
+          "family": "four-open-to-completed-non-unit-fraction-strips",
+          "subpartCount": 4,
+          "modelPrimitive": "four-authored-equal-length-open-or-partitioned-strips",
+          "modelCounts": [
+            4,
+            7,
+            5,
+            6
+          ],
+          "modelOrientation": "four-horizontal-strips-over-four-number-sentences",
+          "responseStructure": "partition-label-unit-fractions-shade-and-write-each-fraction"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-70.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Mr. Stevens bought 8 liters of soda for a party"
+        ],
+        "answerKeyEvidence": "a. 1/8. b. 7/8.",
+        "layout": {
+          "family": "one-eighth-drank-and-seven-eighths-left",
+          "subpartCount": 2,
+          "modelPrimitive": "two-authored-views-of-the-same-eight-liter-whole",
+          "modelCounts": [
+            8,
+            1,
+            7
+          ],
+          "modelOrientation": "two-horizontal-same-whole-models-over-two-part-response",
+          "responseStructure": "name-one-eighth-drank-and-seven-eighths-left",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-71.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Fill in the chart"
+        ],
+        "answerKeyEvidence": "a. 9, 5, 1/9, 5/9. b. 7, 3, 1/7, 3/7. c. 5, 4, 1/5, 4/5. d. 6, 2, 1/6, 2/6. e. 8, 8, 1/8, 8/8.",
+        "layout": {
+          "family": "five-varied-shaded-figure-fraction-chart",
+          "subpartCount": 5,
+          "modelPrimitive": "tight-official-five-figure-column-and-authored-chart",
+          "modelCounts": [
+            9,
+            7,
+            5,
+            6,
+            8
+          ],
+          "modelOrientation": "vertical-source-figure-column-beside-five-row-chart",
+          "responseStructure": "count-equal-parts-count-shaded-parts-name-unit-and-fraction",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-71.png",
+              "crop": {
+                "x": 155,
+                "y": 330,
+                "width": 270,
+                "height": 1090
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    }
+  ]
+}

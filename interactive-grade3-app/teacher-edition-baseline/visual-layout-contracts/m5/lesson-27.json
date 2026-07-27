@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l27",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-323.png",
+      "sha256": "92d337e3578e116393af7be1d76e71e3cf3ac2b7cf6739fe58f7900dbd25a44b",
+      "pdfPage": 323,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 27 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-324.png",
+      "sha256": "59cb1dc4b2e204827e5f07aeab6be84a1b1f9b10bb15be9cba33470b276c0cef",
+      "pdfPage": 324,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 27 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-414.png",
+      "sha256": "07b645ec8fff65ebe4432231524ee611dbda3d6f8fef95e54517a40f1bedd4f6",
+      "pdfPage": 414,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 27 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-415.png",
+      "sha256": "10aa7df51a0c6c2f44c07bb7dc60823b14d904f2063e6c822853c305ce8df2eb",
+      "pdfPage": 415,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 27 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-323.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the pictures to model equivalent fractions."
+        ],
+        "answerKeyEvidence": "2, 2, bigger, less. 4, 4, smaller, more.",
+        "layout": {
+          "family": "two-equivalent-fraction-pairs-and-unit-size-reasoning",
+          "subpartCount": 8,
+          "modelPrimitive": "four-same-size-fraction-strips-plus-live-responses",
+          "modelCounts": [
+            6,
+            3,
+            2,
+            8
+          ],
+          "modelOrientation": "four-source-strip-cards",
+          "responseStructure": "complete-four-sixths-two-thirds-and-one-half-four-eighths-then-reason-about-size"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-323.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "6 friends want to share 3 chocolate bars that are all the same size."
+        ],
+        "answerKeyEvidence": "1/2 of a candy bar; 1/2 = 2/4 = 3/6.",
+        "layout": {
+          "family": "share-three-differently-partitioned-bars-among-six",
+          "subpartCount": 3,
+          "modelPrimitive": "three-unpartitioned-bars-to-halves-fourths-sixths-models",
+          "modelCounts": [
+            2,
+            4,
+            6
+          ],
+          "modelOrientation": "three-horizontal-same-size-bars",
+          "responseStructure": "give-equivalent-one-half-shares-without-breaking-pieces",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-324.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "When the whole is the same, why does it take 6 copies of 1 eighth"
+        ],
+        "answerKeyEvidence": "Explanations will vary.",
+        "layout": {
+          "family": "explain-six-eighths-equal-three-fourths",
+          "subpartCount": 2,
+          "modelPrimitive": "open-model-workspace-to-two-same-size-strips",
+          "modelCounts": [
+            6,
+            3
+          ],
+          "modelOrientation": "two-horizontal-same-size-wholes",
+          "responseStructure": "draw-and-explain-six-eighths-three-fourths-equivalence",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-324.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "When the whole is the same, how many sixths"
+        ],
+        "answerKeyEvidence": "2 sixths; model drawn.",
+        "layout": {
+          "family": "find-two-sixths-equal-one-third",
+          "subpartCount": 2,
+          "modelPrimitive": "open-model-workspace-to-two-same-size-strips",
+          "modelCounts": [
+            2,
+            1
+          ],
+          "modelOrientation": "two-horizontal-same-size-wholes",
+          "responseStructure": "draw-and-state-two-sixths-equal-one-third",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m5-teacher/page-324.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "You have a magic wand that doubles the number of equal parts"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "double-fourths-into-eighths",
+          "subpartCount": 4,
+          "modelPrimitive": "open-rectangle-workspace-to-four-same-size-strips",
+          "modelCounts": [
+            4,
+            8,
+            1,
+            2
+          ],
+          "modelOrientation": "paired-original-and-doubled-horizontal-models",
+          "responseStructure": "show-and-explain-fourths-to-eighths-equivalence",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    }
+  ]
+}

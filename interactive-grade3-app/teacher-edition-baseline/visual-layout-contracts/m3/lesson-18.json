@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m3-l18",
+  "teacherEditionPdfSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m3/lesson-18-page-79.png",
+      "sha256": "9daa97413cae64aaacdba0e63312f31c795b257a5c60d3f16a428559e090699e",
+      "pdfPage": 231,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 18 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-18-page-80.png",
+      "sha256": "8d600acf3beea74a43ed1efe89d106466d3dbecdefa2bd4400ce8c1f1b725343",
+      "pdfPage": 232,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 18 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-312.png",
+      "sha256": "3b73946ac7d829acab9cfa4bf75b83c78c3ef4dadb920c1c64dcf3b5276a62b1",
+      "pdfPage": 312,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 18 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-313.png",
+      "sha256": "baace01e2600ca0000a136b4f380e306d1d09e9f7bccfc88566612530f552e27",
+      "pdfPage": 313,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 18 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m3/lesson-18-page-79.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "rose has 6 pieces of yarn that are each 9 centimeters long sasha gives"
+        ],
+        "answerKeyEvidence": "27 cm; solution includes model, equation, and explanation.",
+        "layout": {
+          "family": "open-rdw-two-step-story-response",
+          "subpartCount": 1,
+          "openWorkspaceCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "instructionalModelFamily": "read-draw-write",
+          "responseStructure": "model-equations-answer-and-reasonableness"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Exact source problem structure, mathematical primitive, counts, grouping, labels, and open response space were reviewed from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m3/lesson-18-page-79.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "julio spends 29 minutes doing his spelling homework he then completes each math problem"
+        ],
+        "answerKeyEvidence": "57 min; solution includes model, equation, and explanation.",
+        "layout": {
+          "family": "open-rdw-two-step-story-response",
+          "subpartCount": 1,
+          "openWorkspaceCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "instructionalModelFamily": "read-draw-write",
+          "responseStructure": "model-equations-answer-and-reasonableness"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Exact source problem structure, mathematical primitive, counts, grouping, labels, and open response space were reviewed from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m3/lesson-18-page-80.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "pearl buys 125 stickers she gives 53 stickers to her little sister pearl then"
+        ],
+        "answerKeyEvidence": "8; solution includes model, equation, and explanation.",
+        "layout": {
+          "family": "open-rdw-two-step-story-response",
+          "subpartCount": 1,
+          "openWorkspaceCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "instructionalModelFamily": "read-draw-write",
+          "responseStructure": "model-equations-answer-and-reasonableness"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Exact source problem structure, mathematical primitive, counts, grouping, labels, and open response space were reviewed from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m3/lesson-18-page-80.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "tanner s beaker had 45 milliliters of water in it at first after each"
+        ],
+        "answerKeyEvidence": "6; solution includes model, equation, and explanation.",
+        "layout": {
+          "family": "open-rdw-two-step-story-response",
+          "subpartCount": 1,
+          "openWorkspaceCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "instructionalModelFamily": "read-draw-write",
+          "responseStructure": "model-equations-answer-and-reasonableness"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Exact source problem structure, mathematical primitive, counts, grouping, labels, and open response space were reviewed from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m3/lesson-18-page-80.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "cora weighs 4 new identical pencils and a ruler the total weight of these"
+        ],
+        "answerKeyEvidence": "9 g; solution includes model, equation, and explanation.",
+        "layout": {
+          "family": "open-rdw-two-step-story-response",
+          "subpartCount": 1,
+          "openWorkspaceCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "instructionalModelFamily": "read-draw-write",
+          "responseStructure": "model-equations-answer-and-reasonableness"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Exact source problem structure, mathematical primitive, counts, grouping, labels, and open response space were reviewed from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    }
+  ]
+}

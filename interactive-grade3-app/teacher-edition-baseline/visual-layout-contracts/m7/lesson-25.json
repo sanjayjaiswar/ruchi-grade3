@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l25",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-337.png",
+      "sha256": "b3259e4a09f6417f3a2da07a25abdcdcdd2f7be69200162bb07c6d6ca16ee866",
+      "pdfPage": 337,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 25 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-503.png",
+      "sha256": "862b040471ddb4cc721077423df1e42e890d88f6a07c15c531fc752bddfaae01",
+      "pdfPage": 503,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 25 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-504.png",
+      "sha256": "381df1e5568c1eda926d89e1683c0fca8fc7911c6be99203b8a15dde41fa1a09",
+      "pdfPage": 504,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 25 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-337.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a picture of your robot in its environment in the space below."
+        ],
+        "answerKeyEvidence": "Pictures and labels will vary.",
+        "layout": {
+          "family": "draw-and-label-variable-robot-environment",
+          "subpartCount": 3,
+          "modelPrimitive": "required-label-table+open-drawing-field",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "requirements-over-open-drawing-field-and-response",
+          "responseStructure": "preserve-variable-pictures-and-labels-without-fabricated-sample",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, line plots, project charts, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m2-l21",
+  "teacherEditionPdfSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m2-teacher/page-261.png",
+      "sha256": "5e1f03f3d5bee0a2fc2ca2574b392ca1ee7a3e266cee4f68ec557d5c04a19abb",
+      "pdfPage": 261,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 21 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-teacher/page-262.png",
+      "sha256": "a9caf7e001eee40abf4eeaf085f73e0f737390ca7a4bd2d022c47696326fcddb",
+      "pdfPage": 262,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 21 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-teacher/page-263.png",
+      "sha256": "02039af0b46c0d711e200c77e5fdc0ab36d697440a2c491967cbacf0b2ba7464",
+      "pdfPage": 263,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 21 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-answer-key/page-304.png",
+      "sha256": "fc7c62a52f80cca6766bbc341b2ff1117ac7b6e3b813c11d1b680802a625e07d",
+      "pdfPage": 304,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 21 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m2-teacher/page-261.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "weigh the bags of beans and rice on the scale. then write the weight on the scales below."
+        ],
+        "answerKeyEvidence": "1. a. 91 g, 58 g, 90 g, 60 g, 150 g; 3. Capacity of the 3 containers plotted and 91 g, 58 g, 149 g labeled on number lines b. 91g, 58 g, 90 g, 60 g, 30 g; Container D: 212 mL ≈ 210 mL 91 g, 58 g, 33 g Container E: 238 mL ≈ 240 mL c. Because both estimates are close to the Container F: 195 mL ≈ 200 mL actual answers a. Estimate: 650 mL; actual: 645 mL 2. Yarn A: 64; 60 b. Estimate: 30 mL; actual: 26 mL; Yarn B: 88; 90 tape diagram drawn and labeled Yarn C: 38; 40 4. a. 21 min a. Estimate: 100 cm; actual: 102 cm b. Estimates will vary; actual: 94 min b. Estimate: 10 cm; actual: 14 cm; c. Because the estimate is close to the actual tape diagram drawn and labeled answer",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m2-teacher/page-262.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "b. subtract to estimate the difference between the total length of yarns a and c and the length of yarn b. then find the actual difference. model the problem with a tape diagram."
+        ],
+        "answerKeyEvidence": "1. a. 91 g, 58 g, 90 g, 60 g, 150 g; 3. Capacity of the 3 containers plotted and 91 g, 58 g, 149 g labeled on number lines b. 91g, 58 g, 90 g, 60 g, 30 g; Container D: 212 mL ≈ 210 mL 91 g, 58 g, 33 g Container E: 238 mL ≈ 240 mL c. Because both estimates are close to the Container F: 195 mL ≈ 200 mL actual answers a. Estimate: 650 mL; actual: 645 mL 2. Yarn A: 64; 60 b. Estimate: 30 mL; actual: 26 mL; Yarn B: 88; 90 tape diagram drawn and labeled Yarn C: 38; 40 4. a. 21 min a. Estimate: 100 cm; actual: 102 cm b. Estimates will vary; actual: 94 min b. Estimate: 10 cm; actual: 14 cm; c. Because the estimate is close to the actual tape diagram drawn and labeled answer",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m2-teacher/page-262.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "a. estimate the total amount of liquid in three containers. then find the actual amount. b. estimate to find the difference between the amount of water in containers d and e. then find the actual difference. model the problem with a tape diagram."
+        ],
+        "answerKeyEvidence": "1. a. 91 g, 58 g, 90 g, 60 g, 150 g; 3. Capacity of the 3 containers plotted and 91 g, 58 g, 149 g labeled on number lines b. 91g, 58 g, 90 g, 60 g, 30 g; Container D: 212 mL ≈ 210 mL 91 g, 58 g, 33 g Container E: 238 mL ≈ 240 mL c. Because both estimates are close to the Container F: 195 mL ≈ 200 mL actual answers a. Estimate: 650 mL; actual: 645 mL 2. Yarn A: 64; 60 b. Estimate: 30 mL; actual: 26 mL; Yarn B: 88; 90 tape diagram drawn and labeled Yarn C: 38; 40 4. a. 21 min a. Estimate: 100 cm; actual: 102 cm b. Estimates will vary; actual: 94 min b. Estimate: 10 cm; actual: 14 cm; c. Because the estimate is close to the actual tape diagram drawn and labeled answer",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m2-teacher/page-263.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "then find the actual length of the movie by calculating the difference between 115 minutes and the total minutes of"
+        ],
+        "answerKeyEvidence": "1. a. 91 g, 58 g, 90 g, 60 g, 150 g; 3. Capacity of the 3 containers plotted and 91 g, 58 g, 149 g labeled on number lines b. 91g, 58 g, 90 g, 60 g, 30 g; Container D: 212 mL ≈ 210 mL 91 g, 58 g, 33 g Container E: 238 mL ≈ 240 mL c. Because both estimates are close to the Container F: 195 mL ≈ 200 mL actual answers a. Estimate: 650 mL; actual: 645 mL 2. Yarn A: 64; 60 b. Estimate: 30 mL; actual: 26 mL; Yarn B: 88; 90 tape diagram drawn and labeled Yarn C: 38; 40 4. a. 21 min a. Estimate: 100 cm; actual: 102 cm b. Estimates will vary; actual: 94 min b. Estimate: 10 cm; actual: 14 cm; c. Because the estimate is close to the actual tape diagram drawn and labeled answer",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

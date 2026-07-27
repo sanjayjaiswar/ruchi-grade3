@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l22",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-260.png",
+      "sha256": "d429cc983ebbee36425a8b4693702d5ab3525bcb993f7140254401286c61b46b",
+      "pdfPage": 260,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 22 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-261.png",
+      "sha256": "4bd95ec63ca51c93e524032fe9aa203e6c56adf5360751f1b1999bfe31a73877",
+      "pdfPage": 261,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 22 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-405.png",
+      "sha256": "9463a64f331289c946ddad0a8ba667dc90209cded9b52eb592b74d82c0aa2cbd",
+      "pdfPage": 405,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 22 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-260.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Write the shaded fraction of each figure on the blank. Then, draw a line to match the equivalent fractions."
+        ],
+        "answerKeyEvidence": "1/2 matched to 2/4; 4/6 matched to 2/3; 3/4 matched to 6/8; 3/9 matched to 1/3.",
+        "layout": {
+          "family": "eight-shaded-figures-matched-by-equivalence",
+          "subpartCount": 8,
+          "modelPrimitive": "tight-official-figure-matrix-crop-plus-live-labels",
+          "modelCounts": [
+            8,
+            4
+          ],
+          "modelOrientation": "four-source-rows-of-two-figures",
+          "responseStructure": "label-a-through-h-and-match-four-equivalent-pairs",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-260.png",
+              "crop": {
+                "x": 320,
+                "y": 365,
+                "width": 630,
+                "height": 1050
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-261.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Write the missing parts of the fractions."
+        ],
+        "answerKeyEvidence": "2; 8; 16.",
+        "layout": {
+          "family": "three-paired-equivalent-fraction-models",
+          "subpartCount": 3,
+          "modelPrimitive": "tight-official-model-pairs-crop-plus-live-equations",
+          "modelCounts": [
+            2,
+            2,
+            2
+          ],
+          "modelOrientation": "three-horizontal-source-model-pairs",
+          "responseStructure": "complete-three-missing-equivalent-fraction-values",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-261.png",
+              "crop": {
+                "x": 190,
+                "y": 270,
+                "width": 835,
+                "height": 210
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-261.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Explain your answer in words and pictures."
+        ],
+        "answerKeyEvidence": "Explanations will vary.",
+        "layout": {
+          "family": "explain-two-eighths-equal-one-fourth",
+          "subpartCount": 2,
+          "modelPrimitive": "open-words-pictures-workspace-to-two-same-size-strips",
+          "modelCounts": [
+            2,
+            1
+          ],
+          "modelOrientation": "two-horizontal-same-size-wholes",
+          "responseStructure": "explain-equivalent-coverage",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-261.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "How many sixths does it take"
+        ],
+        "answerKeyEvidence": "2 sixths; explanations will vary.",
+        "layout": {
+          "family": "explain-two-sixths-equal-one-third",
+          "subpartCount": 2,
+          "modelPrimitive": "open-words-pictures-workspace-to-two-same-size-strips",
+          "modelCounts": [
+            2,
+            1
+          ],
+          "modelOrientation": "two-horizontal-same-size-wholes",
+          "responseStructure": "name-two-sixths-and-explain-equivalent-coverage",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m5-teacher/page-261.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Why does it take 10 copies of 1 sixth to make the same amount as 5 copies of 1 third?"
+        ],
+        "answerKeyEvidence": "Explanations will vary.",
+        "layout": {
+          "family": "explain-ten-sixths-equal-five-thirds",
+          "subpartCount": 2,
+          "modelPrimitive": "open-words-pictures-workspace-to-four-multi-whole-strips",
+          "modelCounts": [
+            10,
+            5
+          ],
+          "modelOrientation": "two-multi-whole-horizontal-models",
+          "responseStructure": "explain-two-sixths-per-third-and-ten-sixths-equal-five-thirds",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    }
+  ]
+}

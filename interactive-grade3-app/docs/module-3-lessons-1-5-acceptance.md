@@ -1,6 +1,12 @@
 # Module 3 Lessons 1–5: first-pass Teacher Edition acceptance
 
-Status: source-faithful functional pass complete; later visual polish remains optional.
+Status: Lesson 2 and Lesson 3 source-layout corrections pass static source contracts and the production build; both await a fresh authorized browser recheck.
+
+Correction on 2026-07-26: the earlier Lesson 2 implementation used 5-by-7 and 5-by-8 arrays. That changed the source meaning from “five unit symbols, each worth 7 or 8” to “35 or 40 individual objects.” The generic arrays and three-panel equation cards were replaced with a dedicated worksheet-style unit-form workspace. Problem 1 now retains the source single-cube symbol, both tightly cropped source cube stacks, the source-only horizontal divider, and no invented second-section instruction. Problem 2 uses exactly five vertical unit dots in part a, no divider, and preserves the completely open response area in Blank part b. Solved mode supplies one valid variable response by extending those five units by one unit before showing the distributive and commutative facts. Problem 3 now uses the required five-weeks fact plus two more weeks rather than a generic 7-by-9 individual-dot array. Problem 4 Blank no longer leaks four packs through a pre-segmented tape, and Problem 5 no longer duplicates its budget work in generic equation and answer sections. The Concept sequence was also cleaned of flattened OCR noise and now explicitly builds `5 × 7 = 35`, `35 + 7 = 42`, `6 × 7 = 42`, and `7 × 6 = 42`; Summary retains the Teacher Edition’s Problems 1–2 pattern question. The durable validator now rejects those former model substitutions, altered source layouts, duplications, OCR drift, and answer leaks.
+
+Correction on 2026-07-26 for Lesson 3: a page-level visual-layout contract was transcribed from all three fingerprinted Teacher Edition Problem Set pages before changing the implementation. It first failed the old implementation because Problem 1 replaced paired thought/speech bubbles with generic cards, Problem 2 invented a tape and money table, Problem 3 leaked seven flour groups through a tape, and Problem 4 preprinted a comparison tape and equation scaffold. The corrected Blank states now preserve the source bubble riddle/decoder and the official open response areas; Solved states add answer-key-backed work without changing the printed task. The contract contains no renderer, component, runtime-path, or authored-implementation expectation. Validation compares exact source/answer evidence and a neutral canonical page-layout signature whose expected values come only from the fingerprinted Teacher Edition. Its pre-correction run failed all four problems and its corrected run passed.
+
+Batch-baseline correction on 2026-07-26: the baseline extractor matched the phrase “After the Student Debrief” instead of the real heading in 144 of 152 lessons. Heading extraction now requires line-start evidence while allowing side-column text, model-detection regexes use word boundaries to avoid false positives such as `gram` inside `diagram` and `table` inside `table tennis`, and validation rejects malformed debrief blocks. The regenerated 152-lesson baseline contains no malformed debrief contracts.
 
 ## Source of truth
 
@@ -9,8 +15,8 @@ All curriculum facts were checked against `EurekaMath-Sources/Module_3/g3_m3_tea
 | Lesson | Teacher Edition lesson package | Problem Set pages | Implemented source structures |
 |---|---:|---:|---|
 | 1 | PDF pages 14–25 | PDF pages 21–22 | 3-by-6 and 6-by-3 commutative model; 10-by-10 fact chart with source givens and 84/16 shading logic; 4-by-6 diamond array; all 12 equivalent equations |
-| 2 | PDF pages 26–37 | PDF pages 32–34 | 5-plus-1 distributive arrays for sevens and eights; author array; crayon tape; exact Hannah budget model |
-| 3 | PDF pages 38–50 | PDF pages 43–45 | Complete unknown-letter riddle; shirt-cost and change models; flour tape with multiplication/division and `n`; two-game comparison tape |
+| 2 | PDF pages 26–37 | PDF pages 32–34 | Source cube stacks and exact unit-form lines for sevens; five-dot unit-value model and open response work for eights; author five-fact decomposition; open Blank/crayon-pack Solved model; exact Hannah budget model |
+| 3 | PDF pages 38–50 | PDF pages 43–45 | Paired thought/speech-bubble unknown riddle and boxed decoder; two open shirt/change response areas; exact multiplication/division blanks plus open flour workspace; divided open challenge workspace with source badge |
 | 4 | PDF pages 51–61 | PDF pages 57–58 | Count-by-six matching, sequences, direction changes, multiplication/division pairs, and Julie error analysis |
 | 5 | PDF pages 62–72 | PDF pages 68–69 | Fish-bowl count-by-seven matching, fact pairs, make-ten number bond, and commutative strategy comparison |
 
@@ -25,18 +31,18 @@ All curriculum facts were checked against `EurekaMath-Sources/Module_3/g3_m3_tea
 
 ## Durable validation
 
-`scripts/validate-problem-centered-delivery.mjs` now checks the five-lesson batch contract, including:
+`scripts/validate-source-visual-contracts.mjs` is the source-fidelity gate for lessons with fingerprinted page-layout contracts. `scripts/validate-problem-centered-delivery.mjs` remains a regression diagnostic and cannot establish Teacher Edition fidelity or override the source gate. The regression diagnostic includes:
 
 - exact problem counts: 3, 5, 4, 5, and 4;
 - required solved evidence for every lesson;
 - the complete 10-by-10 Lesson 1 chart, 4-by-6 array, and 12 equation parts;
-- the classroom-scale structures introduced in this pass: Lesson 2's three equal-group panels, Lesson 3's 11 equation cards plus decoder, Lesson 4's count strip/fact cards/direction cards/critique cards, and Lesson 5's count strip/fact cards;
+- the classroom-scale structures introduced in this pass: Lesson 2's source-like unit-form workspaces and Blank/Solved isolation, Lesson 3's 11 paired bubble relationships plus source decoder and open response workspaces, Lesson 4's count strip/fact cards/direction cards/critique cards, and Lesson 5's count strip/fact cards;
 - absence of internal audit scaffolding and Teacher Edition answer-key language in Blank mode;
 - a three-section maximum for the student-facing visual workspace in this batch.
 
 ## Browser acceptance
 
-Rechecked on 2026-07-22 in the isolated user-authorized `Grade3` Chrome tab in the `Gemini` profile at a 1,920-pixel desktop viewport. No other Chrome tab was inspected or changed.
+The original five-lesson pass was checked on 2026-07-22 in the isolated user-authorized `Grade3` Chrome tab in the `Gemini` profile at a 1,920-pixel desktop viewport. No other Chrome tab was inspected or changed. That check predates the 2026-07-26 Lesson 2 and Lesson 3 renderer corrections and does not certify their current pixels; a fresh browser check requires current explicit browser authorization.
 
 All 20 routes passed the first-pass checks:
 
@@ -51,8 +57,8 @@ For every route, required source evidence was visible, the listed internal audit
 The readability/use-of-space acceptance is lesson-specific rather than a single global scale rule:
 
 - Lesson 1 uses a large multiplication chart with the apple pattern and reasoning beside it; the 12 equations form a three-column board.
-- Lesson 2 uses three equal-group teaching panels, then side-by-side model/equation layouts for its array, tape, and word problems.
-- Lesson 3 replaces the tiny 11-row riddle table with 11 equation cards and one full-width decoder; its story problems retain the source tape and money structures.
+- Lesson 2 uses worksheet-like stacked unit models with the source Unit form/Facts/Total sequence, then side-by-side model/equation layouts for its remaining source problems.
+- Lesson 3 now uses paired thought/speech bubbles and one full-width decoder; its Blank story problems preserve the source's open response spaces instead of invented tape and money scaffolds.
 - Lessons 4 and 5 use a full-width count strip with readable fact cards, while direction changes, critiques, and the make-ten number bond keep their own source-specific layouts.
 - At the checked viewport, problem prompts render at approximately 21 px, equation fields at approximately 23 px, retained source-table cells at 16–20 px, and each problem workspace uses approximately 1,834 px of the available lesson canvas.
 

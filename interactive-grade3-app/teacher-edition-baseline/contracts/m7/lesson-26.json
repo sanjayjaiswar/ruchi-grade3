@@ -3,7 +3,7 @@
   "lessonId": "m7-l26",
   "moduleId": "m7",
   "lessonNumber": 26,
-  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "generatedAt": "2026-07-27T02:56:13.408Z",
   "source": {
     "teacherEditionPdf": "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf",
     "teacherEditionSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
@@ -41,13 +41,65 @@
   "objective": "Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced.",
   "instructionalContract": {
     "instructionalMode": "concept-development",
-    "applicationProblemText": "s.",
-    "conceptDevelopmentText": "",
+    "applicationProblemText": "Drew makes rectangular shoes for his robot. Each\nshoe has whole number side lengths and an area of\n7 square centimeters. What is the total perimeter of\nboth shoes? Is there more than one answer? Why\nor why not?\nNote: Today’s Application Problem reviews finding\nthe perimeter of a rectangle given its area. Students\nfind there is only one answer in this case because\nthere is only one factor pair for an area of 7.\n\n\n                        Lesson 26:                Use rectangles to draw a robot with specified perimeter                                   342\n                                                  measurements, and reason about the different areas that may be\n                                                  produced.\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                Lesson 26 3 7\n\n\n    S:   (Discuss.)\n    T:   What does this tell you about the relationship\n         between area and perimeter?\n    S:   That we can have many different areas for the\n         same perimeter.  They are two separate\n         things. Maybe there is not really a connection\n         between them.\n    T:   Take some time to record your answers to\n         Problem 1 (a) and (b).\n    S:   (Record.)\n\nProblem Set (10 minutes)\nStudents should do their personal best to complete Problems 2, 3, and 4 within the allotted 10 minutes. For\nsome classes, it may be appropriate to modify the assignment by specifying which problems they work on\nfirst. Some problems do not specify a method for solving. Students should solve these problems using the\nRDW approach used for Application Problems.",
+    "conceptDevelopmentText": "",
     "fluencyPracticeText": " Multiply by 7 3.OA.7                                  (8 minutes)\n Find the Side Lengths 3.MD.8                          (3 minutes)\n\nMultiply by 7 (8 minutes)\nMaterials: (S) Multiply by 7 (6–10) Pattern Sheet\n\nNote: This activity builds fluency with multiplication facts using units of 7. It works toward students knowing\nfrom memory all products of two one-digit numbers. See Lesson 1 for the directions for administration of a\nMultiply-By Pattern Sheet.\n    T:   (Write 7 × 7 = ____.) Let’s skip-count up by sevens.\n         I’ll raise a finger for each seven. (Raise a finger for                                             NOTES ON\n         each number to track the count.)                                                                    MULTIPLE MEANS\n    S:   7, 14, 21, 28, 35, 42, 49.                                                                          OF ACTION AND\n                                                                                                             EXPRESSION:\n    T:   Let’s skip-count up by sevens starting at 35. Why is\n                                                                                                     Adjust the Multiply by 7 fluency activity\n         35 a good place to start?\n                                                                                                     according to student needs. For\n    S:   It’s a fact we already know. It can help us figure out a                                    English language learners, try speaking\n         fact we don’t know.                                                                         more slowly, pausing more frequently,\n    T:   (Track with fingers as students say the numbers.)                                           giving an example, or coupling\n                                                                                                     language with visual aids such as arrays\n    S:   35 (5 fingers), 42 (6 fingers), 49 (7 fingers).\n                                                                                                     or tape diagrams. Students who have\n                                                                                                     not memorized the 7 skip-count may\n                                                                                                     benefit from repeating the count many\n                                                                                                     times.\n\n\n                         Lesson 26:                Use rectangles to draw a robot with specified perimeter                                  341\n                                                   measurements, and reason about the different areas that may be\n                                                   produced.\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                 Lesson 26 3 7\n\n\n    T:   Let’s see how we can skip-count down to find the answer, too. Start at 70 with 10 fingers, 1 for each\n         seven. (Count down with fingers as students say the numbers.)\n    S:   70 (10 fingers), 63 (9 fingers), 56 (8 fingers), 49 (7 fingers).\nContinue with the following possible sequence: 9 × 7, 6 × 7, and 8 × 7.\n    T:   (Distribute the Multiply by 7 Pattern Sheet.) Let’s practice multiplying by 7. Be sure to work left to\n         right across the page.\n                                                                                                            NOTES ON\nFind the Side Lengths (3 minutes)\n                                                                                                            MULTIPLE MEANS\nMaterials: (S) Personal white board                                                                         OF ENGAGEMENT:\n                                                                                                   Scaffold the Find the Side Lengths\nNote: This activity reviews Lesson 23.                                                             fluency activity for students working\n                                                                                                   below grade level with graduated\n    T:   (Project Image A. Beneath it, write ___ cm ÷ ___ = ___\n                                                                                                   questioning.\n         cm.) Each side of the triangle is the same length. The\n         perimeter of this shape is 80 cm. Find the side lengths                                      What is the perimeter of Image A?\n                                                                                                       Each triangle side is the same\n         of each triangle by filling in the missing numbers.\n                                                                                                       length.\n    S:   (Write 80 cm ÷ 8 = 10 cm.)\n                                                                                                      How many triangle sides do you\n                                                                                                       count around the perimeter?\n              Image A                                                 P = 80 cm                        Count with me.\n                                                                                                      Say the division sentence to solve\n                                                                                                       for the side length.\nRepeat the process for Images B and C, which are composed of\nsquares and regular pentagons.\n\n              Image B\n                                                                           Image C\n                                                          P = 90 m                                                 P = 64 in",
     "problemSetGuidanceText": "Students should do their personal best to complete Problems 2, 3, and 4 within the allotted 10 minutes. For\nsome classes, it may be appropriate to modify the assignment by specifying which problems they work on\nfirst. Some problems do not specify a method for solving. Students should solve these problems using the\nRDW approach used for Application Problems.",
-    "studentDebriefText": ", instruct students to complete\nthe",
-    "teacherStudentSequence": [],
-    "teacherPrompts": [],
+    "studentDebriefText": "Lesson Objective: Use rectangles to draw a robot with\nspecified perimeter measurements, and reason about the\ndifferent areas that may be produced.\nThe Student Debrief is intended to invite reflection and\nactive processing of the total lesson experience.\nInvite students to review their solutions for the Problem\nSet. They should check work by comparing answers with a\npartner before going over answers as a class. Look for\nmisconceptions or misunderstandings that can be\naddressed in the Debrief. Guide students in a\nconversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to\nlead the discussion.\n        (Share student calculations from Problem 2.)\n         Why do you think the problem asked to measure\n         the perimeter in inches instead of centimeters?\n        (Share student sketches in Problem 3.) Discuss\n         that many different shapes can have the same\n         perimeter. Can a triangle and a hexagon have the\n         same perimeter?\n\n\n                        Lesson 26:                Use rectangles to draw a robot with specified perimeter                     344\n                                                  measurements, and reason about the different areas that may be\n                                                  produced.\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                               Lesson 26 3 7\n\n\n       Have students share their responses to\n        Problem 4.\n       Each piece of art looks unique even though you\n        each used the same perimeters. Through this\n        experience, what did you learn about the\n        relationship between area and perimeter?",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Write 7 × 7 = ____.) Let’s skip-count up by sevens. I’ll raise a finger for each seven. (Raise a finger for NOTES ON each number to track the count.) MULTIPLE MEANS"
+      },
+      {
+        "speaker": "students",
+        "text": "7, 14, 21, 28, 35, 42, 49. OF ACTION AND EXPRESSION:"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s skip-count up by sevens starting at 35. Why is Adjust the Multiply by 7 fluency activity 35 a good place to start? according to student needs. For"
+      },
+      {
+        "speaker": "students",
+        "text": "It’s a fact we already know. It can help us figure out a English language learners, try speaking fact we don’t know. more slowly, pausing more frequently,"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Track with fingers as students say the numbers.) giving an example, or coupling language with visual aids such as arrays"
+      },
+      {
+        "speaker": "students",
+        "text": "35 (5 fingers), 42 (6 fingers), 49 (7 fingers). or tape diagrams. Students who have not memorized the 7 skip-count may benefit from repeating the count many times. measurements, and reason about the different areas that may be produced. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 26 3 7"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s see how we can skip-count down to find the answer, too. Start at 70 with 10 fingers, 1 for each seven. (Count down with fingers as students say the numbers.)"
+      },
+      {
+        "speaker": "students",
+        "text": "70 (10 fingers), 63 (9 fingers), 56 (8 fingers), 49 (7 fingers). Continue with the following possible sequence: 9 × 7, 6 × 7, and 8 × 7."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Distribute the Multiply by 7 Pattern Sheet.) Let’s practice multiplying by 7. Be sure to work left to right across the page. Find the Side Lengths (3 minutes) MULTIPLE MEANS Scaffold the Find the Side Lengths below grade level with graduated"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project Image A. Beneath it, write ___ cm ÷ ___ = ___ questioning. cm.) Each side of the triangle is the same length. The perimeter of this shape is 80 cm. Find the side lengths  What is the perimeter of Image A? Each triangle side is the same of each triangle by filling in the missing numbers. length."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 80 cm ÷ 8 = 10 cm.)  How many triangle sides do you count around the perimeter? Image A P = 80 cm Count with me.  Say the division sentence to solve for the side length. Repeat the process for Images B and C, which are composed of squares and regular pentagons. Image B Image C P = 90 m P = 64 in"
+      }
+    ],
+    "teacherPrompts": [
+      "(Write 7 × 7 = ____.) Let’s skip-count up by sevens. I’ll raise a finger for each seven. (Raise a finger for NOTES ON each number to track the count.) MULTIPLE MEANS",
+      "Let’s skip-count up by sevens starting at 35. Why is Adjust the Multiply by 7 fluency activity 35 a good place to start? according to student needs. For",
+      "(Track with fingers as students say the numbers.) giving an example, or coupling language with visual aids such as arrays",
+      "Let’s see how we can skip-count down to find the answer, too. Start at 70 with 10 fingers, 1 for each seven. (Count down with fingers as students say the numbers.)",
+      "(Distribute the Multiply by 7 Pattern Sheet.) Let’s practice multiplying by 7. Be sure to work left to right across the page. Find the Side Lengths (3 minutes) MULTIPLE MEANS Scaffold the Find the Side Lengths below grade level with graduated",
+      "(Project Image A. Beneath it, write ___ cm ÷ ___ = ___ questioning. cm.) Each side of the triangle is the same length. The perimeter of this shape is 80 cm. Find the side lengths  What is the perimeter of Image A? Each triangle side is the same of each triangle by filling in the missing numbers. length."
+    ],
     "debriefPrompt": "(Share student calculations from Problem 2.) Why do you think the problem asked to measure the perimeter in inches instead of centimeters?",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
@@ -84,38 +136,21 @@
   },
   "visualContract": {
     "modelsDetected": [
-      "array",
-      "tape-diagram",
-      "number-line",
-      "measurement-scale",
       "ruler-or-length",
       "graph-or-plot",
       "geometry-diagram",
-      "money-model",
       "picture-or-drawing"
     ],
     "sourceEvidence": {
-      "array": [
-        "language with visual aids such as arrays"
-      ],
-      "tape-diagram": [
-        "or tape diagrams. Students who have"
-      ],
-      "number-line": [
-        "everyone’s data on our number lines."
-      ],
-      "measurement-scale": [
-        "or tape diagrams. Students who have"
-      ],
       "ruler-or-length": [
-        " Find the Side Lengths 3.MD.8 (3 minutes)",
-        "Find the Side Lengths (3 minutes)",
-        "Scaffold the Find the Side Lengths",
+        "7 square centimeters. What is the total perimeter of",
         "cm.) Each side of the triangle is the same length. The",
-        "perimeter of this shape is 80 cm. Find the side lengths  What is the perimeter of Image A?",
         "length.",
         "for the side length.",
-        "Materials: (S) Ruler, scissors, string, Problem Sets from Lessons 25 and 26, circles (A–F) (Template)"
+        "Materials: (S) Ruler, scissors, string, Problem Sets from Lessons 25 and 26, circles (A–F) (Template)",
+        "S: First, I’ll measure string using a ruler and cut it to the they measure with string.",
+        "S: 25, 30, and 20 centimeters. Those are the sizes of the Circles (A–F) Template",
+        "48, and 49 square centimeters.)"
       ],
       "graph-or-plot": [
         "Part 2: Analyze the line plot.",
@@ -125,23 +160,17 @@
       ],
       "geometry-diagram": [
         "Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced.",
+        "7 square centimeters. What is the total perimeter of",
+        "the perimeter of a rectangle given its area. Students",
+        "Lesson 26: Use rectangles to draw a robot with specified perimeter 342",
+        "between area and perimeter?",
+        "same perimeter.  They are two separate",
         "Lesson 26: Use rectangles to draw a robot with specified perimeter 341",
-        "cm.) Each side of the triangle is the same length. The",
-        "perimeter of this shape is 80 cm. Find the side lengths  What is the perimeter of Image A?",
-        "Each triangle side is the same",
-        "of each triangle by filling in the missing numbers.",
-        " How many triangle sides do you",
-        "count around the perimeter?"
-      ],
-      "money-model": [
-        "S: 25, 30, and 20 centimeters. Those are the sizes of the Circles (A–F) Template",
-        "48, and 49 square centimeters.)",
-        "T: Each robot’s body has a perimeter of 28 centimeters. Why do you think we have so many different",
-        "Square Centimeters X = 1 Robot Body"
+        "perimeter of this shape is 80 cm. Find the side lengths  What is the perimeter of Image A?"
       ],
       "picture-or-drawing": [
         "Use rectangles to draw a robot with specified perimeter measurements, and reason about the different areas that may be produced.",
-        "or tape diagrams. Students who have",
+        "Lesson 26: Use rectangles to draw a robot with specified perimeter 342",
         "Lesson 26: Use rectangles to draw a robot with specified perimeter 341",
         "Lesson 26: Use rectangles to draw a robot with specified perimeter 343",
         "Lesson 26: Use rectangles to draw a robot with specified perimeter 347",
@@ -149,7 +178,32 @@
       ]
     },
     "sourceIllustrationRequired": false,
-    "animationSourceSequence": [],
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "(Write 7 × 7 = ____.) Let’s skip-count up by sevens. I’ll raise a finger for each seven. (Raise a finger for NOTES ON each number to track the count.) MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s skip-count up by sevens starting at 35. Why is Adjust the Multiply by 7 fluency activity 35 a good place to start? according to student needs. For"
+      },
+      {
+        "speaker": "students",
+        "text": "35 (5 fingers), 42 (6 fingers), 49 (7 fingers). or tape diagrams. Students who have not memorized the 7 skip-count may benefit from repeating the count many times. measurements, and reason about the different areas that may be produced. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 26 3 7"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Let’s see how we can skip-count down to find the answer, too. Start at 70 with 10 fingers, 1 for each seven. (Count down with fingers as students say the numbers.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Project Image A. Beneath it, write ___ cm ÷ ___ = ___ questioning. cm.) Each side of the triangle is the same length. The perimeter of this shape is 80 cm. Find the side lengths  What is the perimeter of Image A? Each triangle side is the same of each triangle by filling in the missing numbers. length."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 80 cm ÷ 8 = 10 cm.)  How many triangle sides do you count around the perimeter? Image A P = 80 cm Count with me.  Say the division sentence to solve for the side length. Repeat the process for Images B and C, which are composed of squares and regular pentagons. Image B Image C P = 90 m P = 64 in"
+      }
+    ],
     "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
   },
   "deliveryContract": {

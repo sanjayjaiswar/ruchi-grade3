@@ -2,9 +2,11 @@ import { Routes } from '@angular/router';
 import { HomePage } from './pages/home/home';
 import { LessonPage } from './pages/lesson/lesson';
 import { ModuleOverviewPage } from './pages/module-overview/module-overview';
+import { SearchPage } from './pages/search/search';
 
 const grade3Routes: Routes = [
-  { path: '', component: HomePage, title: 'Ruchika Grade 3 Maths' },
+  { path: '', component: HomePage },
+  { path: 'search', component: SearchPage },
   { path: 'modules/:moduleId/lessons/:lessonNumber/problem-set/:problemSetMode', component: LessonPage },
   { path: 'modules/:moduleId/lessons/:lessonNumber/:problemSection', component: LessonPage },
   { path: 'modules/:moduleId/lessons/:lessonNumber', component: LessonPage },

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m1-l16",
+  "teacherEditionPdfSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m1-teacher/page-216.png",
+      "sha256": "186a9f41dc02ca776c9b9cf696dcb68e0eaaa7b779db0cf97c225bc817e02ebc",
+      "pdfPage": 216,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 16 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-217.png",
+      "sha256": "aa7f98a3e231cb4e211c95e413aa1d67625ef71583cb74ec4294dbf2b15c5ca5",
+      "pdfPage": 217,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 16 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-319.png",
+      "sha256": "c55c646707e904b085d7f527cadca06702f893fb4fc90d3423fb4ec2335a0577",
+      "pdfPage": 319,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 16 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-320.png",
+      "sha256": "5952cddbb5a80da122dc1a95cbc203287b7518ead9a2693c07fdfbf7ee913c1f",
+      "pdfPage": 320,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 16 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m1-teacher/page-216.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Label the array. Then, fill in the blanks below to make true number sentences."
+        ],
+        "answerKeyEvidence": "24; 4; 4, 24; 28; 20; 8; 20, 8; 32; 20; 3, 12; 3, 20, 12, 32; 36; 20; 4, 16; 4, 20, 16, 36",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m1-teacher/page-217.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Match the equal expressions."
+        ],
+        "answerKeyEvidence": "First cloud matched to 8 × 4; second cloud matched to 6 × 4; third cloud matched to 9 × 4; fourth cloud matched to 7 × 4",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m1-teacher/page-217.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Nolan draws the array below to find the answer to the multiplication expression 10 x 4. He says, \"10 x 4 is just double 5 x 4.\" Explain Nolan's strategy."
+        ],
+        "answerKeyEvidence": "10 fours broken into two smaller facts: 5 fours and 5 fours, or 5 fours doubled",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

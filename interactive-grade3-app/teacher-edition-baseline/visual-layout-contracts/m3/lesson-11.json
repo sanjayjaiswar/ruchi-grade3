@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m3-l11",
+  "teacherEditionPdfSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m3/lesson-11-page-46.png",
+      "sha256": "ca4a67218bf44ffc83b666fccebb1b711a904dc5255512ec07b5a01f9cc42895",
+      "pdfPage": 136,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 11 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-11-page-47.png",
+      "sha256": "f6cbc00bcba0ffc0c5678a5b71d3f040a48fc90c5fe6488631eeaf10bfc9b353",
+      "pdfPage": 137,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 11 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-299.png",
+      "sha256": "a96d3284f8e2f5021ad99bdd102f898ec499c157885d98c98477f6cf5d29d29b",
+      "pdfPage": 299,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 11 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-300.png",
+      "sha256": "7f90260ab1d1857c3408a52888911b32e6c1afbdded93af0b3ae64b6d63e514c",
+      "pdfPage": 300,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 11 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m3/lesson-11-page-46.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "ms santor divides 32 students into 8 equal groups for a field trip draw"
+        ],
+        "answerKeyEvidence": "Tape diagram drawn and labeled; n = 4.",
+        "layout": {
+          "family": "open-rdw-story-response",
+          "subpartCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "openWorkspaceCount": 1,
+          "instructionalModelFamily": "read-draw-write",
+          "responseStructure": "tape-diagram-and-letter-equation"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure, meaningful illustrations, exact givens, and open response space were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m3/lesson-11-page-46.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "tara buys 6 packs of printer paper each pack of paper costs $8 draw"
+        ],
+        "answerKeyEvidence": "Tape diagram drawn and labeled; m = $48.",
+        "layout": {
+          "family": "open-rdw-story-response",
+          "subpartCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "openWorkspaceCount": 1,
+          "instructionalModelFamily": "read-draw-write",
+          "responseStructure": "tape-diagram-and-letter-equation"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure, meaningful illustrations, exact givens, and open response space were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m3/lesson-11-page-46.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "mr reed spends $24 on coffee beans how many kilograms of coffee beans does"
+        ],
+        "answerKeyEvidence": "Tape diagram drawn and labeled; c = 3.",
+        "layout": {
+          "family": "open-rdw-story-response",
+          "subpartCount": 1,
+          "modelPrimitive": "open-workspace+coffee-bag-illustration",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "openWorkspaceCount": 1,
+          "instructionalModelFamily": "read-draw-write",
+          "responseStructure": "tape-diagram-and-letter-equation"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure, meaningful illustrations, exact givens, and open response space were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m3/lesson-11-page-47.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "eight boys equally share 4 packs of baseball cards each pack contains 10 cards"
+        ],
+        "answerKeyEvidence": "5.",
+        "layout": {
+          "family": "open-rdw-story-response",
+          "subpartCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "openWorkspaceCount": 1,
+          "instructionalModelFamily": "read-draw-write",
+          "responseStructure": "two-step-word-problem"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure, meaningful illustrations, exact givens, and open response space were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m3/lesson-11-page-47.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "there are 8 bags of yellow and green balloons each bag contains 7 balloons"
+        ],
+        "answerKeyEvidence": "21.",
+        "layout": {
+          "family": "open-rdw-story-response",
+          "subpartCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "openWorkspaceCount": 1,
+          "instructionalModelFamily": "read-draw-write",
+          "responseStructure": "two-step-word-problem"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure, meaningful illustrations, exact givens, and open response space were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m3/lesson-11-page-47.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "the fruit seller packs 72 oranges into bags of 8 each he sells all"
+        ],
+        "answerKeyEvidence": "$36.",
+        "layout": {
+          "family": "open-rdw-story-response",
+          "subpartCount": 1,
+          "modelPrimitive": "open-student-workspace",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "openWorkspaceCount": 1,
+          "instructionalModelFamily": "read-draw-write",
+          "responseStructure": "two-step-word-problem"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure, meaningful illustrations, exact givens, and open response space were reviewed directly from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    }
+  ]
+}

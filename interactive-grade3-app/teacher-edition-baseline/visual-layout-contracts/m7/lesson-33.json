@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l33",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-448.png",
+      "sha256": "185886ead1a4ae8f2194fc04aae0ee55cffa832f55666cb523ec570d16c92c08",
+      "pdfPage": 448,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 33 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-518.png",
+      "sha256": "0f44a8b3af86ac9effe1ae8ad053eb84260ab80a9087cee53fc334be3799a9f9",
+      "pdfPage": 518,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 33 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-519.png",
+      "sha256": "3c22a79a68e3fb1b2142308f56003fe4ffa86627d70f222b237398266fb7474f",
+      "pdfPage": 519,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 33 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-448.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "List some games we played today in the chart below."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "eight-row-fluency-game-reflection-form",
+          "subpartCount": 8,
+          "modelPrimitive": "live-eight-row-source-reflection-table+open-response",
+          "modelCounts": [
+            8
+          ],
+          "modelOrientation": "source-table-over-variable-response",
+          "responseStructure": "preserve-eight-variable-activity-reflections",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Authored per-problem HTML/CSS/SVG follows the Teacher Edition task and answer key. Only an exact mathematical illustration crop is retained for Julian’s four printed circles; no full-page screenshot is used."
+      }
+    }
+  ]
+}

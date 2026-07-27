@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m4-l13",
+  "teacherEditionPdfSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m4-teacher/page-167.png",
+      "sha256": "9ec20a243ef4cab6d2d633159a7bccfcba3e5d640e39048e5311e8ad75250d99",
+      "pdfPage": 167,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 13 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-168.png",
+      "sha256": "39a47571fd1c1a63adfa90b5ba019fe0a3e9e9f07cfc37a66659da991cb13371",
+      "pdfPage": 168,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 13 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-230.png",
+      "sha256": "91d1ed8fba513d1b33b34e77112ac62830ca7da38bd686a7024ea48de959db0f",
+      "pdfPage": 230,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 13 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m4-teacher/page-167.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "each of the following figures is made up of 2 rectangles"
+        ],
+        "answerKeyEvidence": "9, 27; 18, 15, 33; 9, 21, 30; answers will vary, 55",
+        "layout": {
+          "family": "four-two-rectangle-composite-grid-figures",
+          "subpartCount": 4,
+          "modelPrimitive": "tight-official-four-composite-figure-grid",
+          "modelCounts": [
+            27,
+            33,
+            30,
+            55
+          ],
+          "modelOrientation": "single-four-figure-grid-over-four-area-sums",
+          "responseStructure": "add-two-rectangle-parts-for-each-composite-area",
+          "sourceFirst": true,
+          "sourceCropCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m4-teacher/page-168.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "small rectangle cut out of a bigger rectangle"
+        ],
+        "answerKeyEvidence": "90, 12, 78; 78",
+        "layout": {
+          "family": "nine-by-ten-rectangle-minus-three-by-four-cutout",
+          "subpartCount": 1,
+          "modelPrimitive": "tight-official-labeled-cutout-figure",
+          "modelCounts": [
+            90,
+            12,
+            78
+          ],
+          "modelOrientation": "figure-over-open-response",
+          "responseStructure": "subtract-cutout-area-from-big-rectangle",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m4-teacher/page-168.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "small rectangle cut out of a big rectangle"
+        ],
+        "answerKeyEvidence": "a. 5, 4. b. 7, 9, 63. c. 4, 5, 20. d. 43 sq cm",
+        "layout": {
+          "family": "l-shaped-seven-by-nine-minus-four-by-five-cutout",
+          "subpartCount": 4,
+          "modelPrimitive": "tight-official-labeled-l-shaped-figure",
+          "modelCounts": [
+            63,
+            20,
+            43
+          ],
+          "modelOrientation": "figure-over-four-part-open-response",
+          "responseStructure": "label-unknowns-find-big-and-small-areas-then-subtract",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    }
+  ]
+}

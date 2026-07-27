@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l32",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-437.png",
+      "sha256": "6cc309bb26713c36ae3b9aadd52a05aaeaf5f11f95582e19025c6a6d6ae6127a",
+      "pdfPage": 437,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 32 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-438.png",
+      "sha256": "feca94dd222eb33f9e99c4331c08bd4b5f975c1c1a4d8e5f6277d8971f3f479d",
+      "pdfPage": 438,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 32 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-516.png",
+      "sha256": "58991117b80257e6570652077f40f3b4aba63a49157dfd7972ca6c7ecdd9bd89",
+      "pdfPage": 516,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 32 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-517.png",
+      "sha256": "571717464308c12be9ae86dd354cb9c64c842301e3bbf053043315302cb5ca5f",
+      "pdfPage": 517,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 32 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-437.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Look at the circles you shaded today."
+        ],
+        "answerKeyEvidence": "1. a. Answers will vary. b. No, explanations will vary. 2. a. A, C, D b. Answers will vary. c. Answers will vary. 3. Circle shaded correctly 4. Yes, explanations will vary.",
+        "layout": {
+          "family": "glue-about-one-half-circle-and-explain",
+          "subpartCount": 3,
+          "modelPrimitive": "open-live-glue-field+three-part-response",
+          "modelCounts": [
+            1,
+            3
+          ],
+          "modelOrientation": "circle-field-over-parts-a-b-response",
+          "responseStructure": "preserve-variable-circle-strategy-and-keyed-no",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Authored per-problem HTML/CSS/SVG follows the Teacher Edition task and answer key. Only an exact mathematical illustration crop is retained for Julian’s four printed circles; no full-page screenshot is used."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-437.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Julian shades 4 circles as shown below."
+        ],
+        "answerKeyEvidence": "1. a. Answers will vary. b. No, explanations will vary. 2. a. A, C, D b. Answers will vary. c. Answers will vary. 3. Circle shaded correctly 4. Yes, explanations will vary.",
+        "layout": {
+          "family": "julian-four-unconventional-one-half-circles",
+          "subpartCount": 3,
+          "modelPrimitive": "tight-source-diagram-crop+three-part-response",
+          "modelCounts": [
+            4,
+            3
+          ],
+          "modelOrientation": "four-source-circles-over-parts-a-c-response",
+          "responseStructure": "identify-a-c-d-and-preserve-variable-explanations",
+          "openWorkspaceCount": 1,
+          "sourceCropCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Authored per-problem HTML/CSS/SVG follows the Teacher Edition task and answer key. Only an exact mathematical illustration crop is retained for Julian’s four printed circles; no full-page screenshot is used."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-438.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Read the clues to help you shade the circle below."
+        ],
+        "answerKeyEvidence": "1. a. Answers will vary. b. No, explanations will vary. 2. a. A, C, D b. Answers will vary. c. Answers will vary. 3. Circle shaded correctly 4. Yes, explanations will vary.",
+        "layout": {
+          "family": "four-step-unconventional-circle-shading-construction",
+          "subpartCount": 4,
+          "modelPrimitive": "open-live-circle+printed-center-point+exact-four-step-source-table",
+          "modelCounts": [
+            1,
+            1,
+            4
+          ],
+          "modelOrientation": "circle-over-four-construction-clues-and-response",
+          "responseStructure": "preserve-student-construction-with-keyed-correct-circle",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Authored per-problem HTML/CSS/SVG follows the Teacher Edition task and answer key. Only an exact mathematical illustration crop is retained for Julian’s four printed circles; no full-page screenshot is used."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-438.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Did you shade in one-half of the circle in Problem 3?"
+        ],
+        "answerKeyEvidence": "1. a. Answers will vary. b. No, explanations will vary. 2. a. A, C, D b. Answers will vary. c. Answers will vary. 3. Circle shaded correctly 4. Yes, explanations will vary.",
+        "layout": {
+          "family": "justify-problem-three-shades-one-half",
+          "subpartCount": 1,
+          "modelPrimitive": "dependent-problem-three-reasoning-table+open-response",
+          "modelCounts": [
+            3
+          ],
+          "modelOrientation": "dependent-evidence-over-response",
+          "responseStructure": "answer-yes-with-variable-explanation",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Authored per-problem HTML/CSS/SVG follows the Teacher Edition task and answer key. Only an exact mathematical illustration crop is retained for Julian’s four printed circles; no full-page screenshot is used."
+      }
+    }
+  ]
+}

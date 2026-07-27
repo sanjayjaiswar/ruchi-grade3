@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m6-l7",
+  "teacherEditionPdfSha256": "74325e3dfcae94e1fe359552d3857a3c929b26c5cca327ee80ef45d651aa7358",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m6/workbook-page-34.png",
+      "sha256": "8efd8c0a55efb842abb1cb216524e6a0619f6c7257593069183548cc3b8f111d",
+      "pdfPage": 100,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 7 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/workbook-page-35.png",
+      "sha256": "d3697408fee78f8fafba18659d5adf8a40afd0faae35d8bae872fd549869c169",
+      "pdfPage": 101,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 7 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/teacher-answer-page-155.png",
+      "sha256": "20332eff6941a0d5558cf3199d240893947dbd899c20bfca30c1d483df947cc0",
+      "pdfPage": 155,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 7 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m6/workbook-page-34.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Mrs. Weisse’s class grows beans for a science experiment"
+        ],
+        "answerKeyEvidence": "a. Line plot completed; Heights of Bean Plants; inches; values for X may vary. b. 14. c. 6. d. 1 3/4 inches; 4. e. No; explanations will vary. f. Yes; explanations will vary.",
+        "layout": {
+          "family": "twenty-bean-measurements-to-quarter-inch-line-plot",
+          "subpartCount": 6,
+          "modelPrimitive": "live-twenty-value-table-plus-seven-position-line-plot",
+          "modelCounts": [
+            20,
+            14,
+            6,
+            4
+          ],
+          "modelOrientation": "five-column-table-over-horizontal-line-plot-and-six-part-response",
+          "responseStructure": "plot-title-label-key-and-answer-b-through-f",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set and answer-key pages. No full-page or task-bearing source crop is permitted. Printed data, line-plot Xs, labels, scales, and keys remain live authored structures; only student-created entries and responses are open in Blank."
+      }
+    }
+  ]
+}

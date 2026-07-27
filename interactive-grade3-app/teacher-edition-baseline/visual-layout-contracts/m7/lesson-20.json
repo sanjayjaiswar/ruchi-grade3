@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l20",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-276.png",
+      "sha256": "be3d05eb90b2f377fa220e6814cf8c3d2bd7faee0c0e01754c5d404ef0b4eae8",
+      "pdfPage": 276,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 20 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-277.png",
+      "sha256": "c72a582eb90a214a5adc8022baae7567afd29e145e98e4b09017d1c94fb215d8",
+      "pdfPage": 277,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 20 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-493.png",
+      "sha256": "82d53cfeead4b2e330336c05ef512b223710c4243f7472b1bc792a29b9a3c2b1",
+      "pdfPage": 493,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 20 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-494.png",
+      "sha256": "6221f73d7c0ccc6dea81a41cc4b0c60e03cf8952577986d1402859404994030e",
+      "pdfPage": 494,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 20 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-276.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use your square unit tiles to build as many rectangles as you can with a perimeter of 12 units."
+        ],
+        "answerKeyEvidence": "a. 3 rectangles drawn and labeled. b. Answers will vary. c. 6 square units, 8 square units, 9 square units. d. Areas are different.",
+        "layout": {
+          "family": "construct-three-perimeter-twelve-rectangles-and-compare-areas",
+          "subpartCount": 7,
+          "modelPrimitive": "three-live-construction-slots+keyed-area-table",
+          "modelCounts": [
+            3,
+            12,
+            6,
+            8,
+            9
+          ],
+          "modelOrientation": "three-slots-over-area-record-and-four-part-response",
+          "responseStructure": "draw-label-explain-record-keyed-areas-and-note-difference",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, plots, and response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-277.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use your square unit tiles to build as many rectangles as you can with a perimeter of 14 units."
+        ],
+        "answerKeyEvidence": "a. 3 rectangles drawn and labeled. b. 6 square units, 10 square units, 12 square units. c. Answers will vary.",
+        "layout": {
+          "family": "construct-three-perimeter-fourteen-rectangles-and-find-areas",
+          "subpartCount": 6,
+          "modelPrimitive": "three-live-rectangles+dimensions-and-area-table",
+          "modelCounts": [
+            3,
+            14,
+            6,
+            10,
+            12
+          ],
+          "modelOrientation": "three-rectangles-over-area-record-and-three-part-response",
+          "responseStructure": "draw-label-record-keyed-areas-and-preserve-variable-information-response",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, plots, and response spaces. No page or whole-problem screenshot is embedded."
+      }
+    }
+  ]
+}

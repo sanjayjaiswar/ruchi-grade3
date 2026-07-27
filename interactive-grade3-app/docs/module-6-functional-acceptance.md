@@ -1,56 +1,53 @@
-# Module 6 functional acceptance
+# Module 6 Teacher Edition acceptance
 
-This document records the durable first-pass acceptance contract for Grade 3 Module 6. The Teacher Edition baseline is the factual source of truth. The portal and prior lesson copy are never authoritative when they differ from that baseline.
+Audited: 2026-07-26  
+Scope: all 9 lessons and all 24 official Problem Set tasks.
 
-## Scope and completion bar
+## Acceptance authority
 
-- All 9 lessons must preserve the exact Teacher Edition objective, lesson-page range, Problem Set order, problem count, prompts, fixed data, and solved answers.
-- Every Concept view must contain three lesson-specific stages, a visible three-step animation, a source-conforming data or measurement model, and a question that connects the model to the mathematics.
-- Every Problem Set item must have a usable Blank model and a Teacher Edition-aligned Solved model. Required tallies, picture graphs, tape diagrams, bar graphs, rulers, tables, number lines, and line plots must be visible learning surfaces rather than prose substitutes.
-- Summary must contain the lesson takeaway and a Problem Set meaning map.
-- Functional learning fidelity is required. Pixel-perfect reproduction of the printed page is not required.
-- Generic audit scaffolds, hidden animations, empty graph marks, answer leakage in Blank mode, broken source images, horizontal overflow, and more than three purposeful visual sections per problem are failures.
+The fingerprinted Module 6 Teacher Edition PDF and its rendered Problem Set and answer-key pages are the sole acceptance authority. OCR is used only to locate wording. It cannot define a table, graph, ruler, scale, fractional label, task boundary, continuation, response space, or answer.
 
-## Teacher Edition contract
+Blank and Solved must begin with the exact reviewed printed task crop. Authored charts, tape diagrams, rulers, number lines, line plots, equations, explanatory scaffolds, or inferred reconstructions cannot replace or validate that crop. Solved may add only the corresponding numbered Teacher Edition answer-key evidence.
 
-| Lesson | Teacher pages | Problems | Primary learning model |
-|---:|---:|---:|---|
-| 1 | 10–21 | 4 | Generate and organize class data with tally and picture graphs |
-| 2 | 22–32 | 3 | Rotate tape diagrams vertically and reason about equal units |
-| 3 | 33–49 | 5 | Create scaled bar graphs and transfer graph intervals to a number line |
-| 4 | 50–65 | 2 | Solve one- and two-step problems from scaled graphs |
-| 5 | 66–77 | 3 | Construct whole-, half-, and quarter-inch rulers and record measurements |
-| 6 | 78–92 | 2 | Interpret measurement data from line plots |
-| 7 | 93–105 | 1 | Represent measurement data with a line plot |
-| 8 | 106–119 | 1 | Represent quarter-inch measurement data with a line plot |
-| 9 | 120–134 | 3 | Analyze picture-graph and line-plot data to solve problems |
+## Official inventory
 
-Total: **9 lessons and 24 official Problem Set items**.
+| Lesson | Teacher pages | Problem Set pages | Answer-key pages | Tasks |
+|---:|---:|---:|---:|---:|
+| 1 | 10–21 | 16–18 | 147 | 4 |
+| 2 | 22–32 | 28–29 | 148 | 3 |
+| 3 | 33–49 | 41–43 | 149–150 | 5 |
+| 4 | 50–65 | 56–57 | 151 | 2 |
+| 5 | 66–77 | 72–73 | 152 | 3 |
+| 6 | 78–92 | 86–87 | 153–154 | 2 |
+| 7 | 93–105 | 100–101 | 155–156 | 1 |
+| 8 | 106–119 | 114–115 | 157–158 | 1 |
+| 9 | 120–134 | 128–130 | 159–160 | 3 |
 
-## Durable implementation and checks
+Total: 9 lessons and 24 tasks.
 
-- Teacher facts and lesson-specific concept models: `src/app/data/lessons/m6/functional-fidelity.ts`
-- Problem Set prompts, source models, Blank/Solved visuals, and runtime attachment: `src/app/data/lessons/lesson-registry.ts`
-- Durable functional validator: `scripts/validate-problem-centered-delivery.mjs`
-- Precomputed source baseline validator: `scripts/validate-teacher-edition-baseline.mjs`
+Lessons 7 and 8 retain both printed task pages. Lesson 9 Problem 3 retains its task start and continuation. Shared-page tasks are cropped to their numbered boundaries; Lesson 3 Problems 4 and 5 retain the printed graph/number-line reference as a separate required crop.
 
-Run:
+## Durable evidence and gates
 
-```bash
-npm run validate:teacher-baseline
-npm run validate:problem-centered-delivery
-npm run validate:no-pdf-problem-tabs
-npm run build -- --progress=false
-```
+- Reviewed evidence: `teacher-edition-baseline/module-6-problem-evidence.json`
+- Fingerprinted visual contracts: `teacher-edition-baseline/visual-layout-contracts/m6/lesson-01.json` through `lesson-09.json`
+- Runtime evidence: `src/app/data/lessons/m6/source-problem-evidence.generated.ts`
+- Source-first delivery: `src/app/data/lessons/m6/problem-set-centered.ts`
+- Evidence generator: `scripts/generate-m6-reviewed-evidence.mjs`
+- Contract generator: `scripts/generate-m6-source-visual-contracts.mjs`
+- Runtime generator: `scripts/generate-m6-runtime-evidence.mjs`
 
-## Live Chrome acceptance
+The independent source-contract gate failed the previous implementation for all 24 tasks before correction. It now passes all 9 lesson contracts.
 
-The isolated Module 6 QA tab must pass all 36 live states:
+## Browser acceptance
 
-- 9 Concept views: correct lesson, three source stages, visible animation, at least three motion steps, and a lesson-relevant source visual.
-- 9 Blank views: exact problem count, one visual workspace per problem, and no Teacher Edition answer leakage.
-- 9 Solved views: exact problem count, one visual workspace per problem, Teacher Edition answers, visible graph marks, and loaded source images.
-- 9 Summary views: lesson takeaway and Problem Set meaning map.
-- Every state: no generic audit scaffold, broken image, or horizontal overflow.
+An isolated Gemini-profile Chrome session checked all 36 lesson states:
 
-Representative visual review must include tally-to-picture-graph conversion, vertical tapes, scaled horizontal bars, the transferred reading-minutes number line, the class straw measurement table and quarter-inch ruler, and both whole-unit and fractional-unit line plots. This visual review is a release check, not a replacement for the 36-state sweep.
+- 9 Concept routes
+- 9 Blank routes
+- 9 Solved routes
+- 9 Summary routes
+
+The 18 Blank/Solved routes covered 48 task states. Every state had the official count and order, exact contracted crop source and geometry, loaded 1020 × 1320 source imagery, no answer leakage in Blank, exact answer-key evidence in Solved, no extra scaffold, no broken image, and no horizontal overflow.
+
+Representative visual captures are retained only in the ignored repository directory `tmp/m6-audit-20260726/`.

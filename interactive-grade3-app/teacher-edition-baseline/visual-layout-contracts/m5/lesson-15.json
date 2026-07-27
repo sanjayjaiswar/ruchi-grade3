@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l15",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-183.png",
+      "sha256": "3dcf7143a11fb2ed90273835201a14277e40ea000a01aec67c5fb4136b3f3f59",
+      "pdfPage": 183,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 15 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-184.png",
+      "sha256": "47e94ed155144395c59eb15459a19ba15c8d80896af336efd3d9e2729e81554f",
+      "pdfPage": 184,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 15 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-392.png",
+      "sha256": "86929606ca0e8f4567460128cfefad55aaff04bf00ee4fc0d552f844ad277e32",
+      "pdfPage": 392,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 15 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-393.png",
+      "sha256": "f91946420a34aebe02d0271404aff060580b7e128220e3b61bca32f97858fe21",
+      "pdfPage": 393,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 15 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-183.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Estimate to label the given fractions on the number line."
+        ],
+        "answerKeyEvidence": "a. Number line partitioned into thirds and labeled correctly with 0/3, 2/3, 3/3; answer provided. b. Number line partitioned into fourths and labeled correctly with 0/4, 3/4, 4/4; number bond showing 3/4 and 1/4 equals 1 whole. c. Number line partitioned into fifths and labeled correctly with 0/5, 3/5, 5/5; number bond showing 3/5 and 2/5 equals 1 whole. d. Number line partitioned into sixths and labeled correctly with 0/6, 5/6, 6/6; number bond showing 5/6 and 1/6 equals 1 whole. e. Number line partitioned into tenths and labeled correctly with 0/10, 3/10, 10/10; number bond showing 3/10 and 7/10 equals 1 whole.",
+        "layout": {
+          "family": "five-estimated-fraction-locations-with-matching-number-bonds",
+          "subpartCount": 5,
+          "modelPrimitive": "five-open-official-subparts-to-five-authored-completed-number-lines-and-bonds",
+          "modelCounts": [
+            3,
+            4,
+            5,
+            6,
+            10
+          ],
+          "modelOrientation": "five-reading-order-number-line-and-bond-cards",
+          "responseStructure": "partition-label-target-fraction-and-complement-to-one"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-184.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a number line. Use a fraction strip to locate 0 and 1."
+        ],
+        "answerKeyEvidence": "Number line drawn with 0 and 1 labeled correctly; fraction strip used appropriately to partition and label a number line to show eighths; number line labeled correctly from 0/8 to 8/8.",
+        "layout": {
+          "family": "fraction-strip-measured-eighths-number-line",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-open-to-completed-eighths-strip-and-number-line",
+          "modelCounts": [
+            8
+          ],
+          "modelOrientation": "fraction-strip-over-horizontal-eighths-number-line",
+          "responseStructure": "fold-strip-transfer-eighths-and-count-zero-eighths-through-eight-eighths",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-184.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "For his boat, James stretched out a rope with 5 equally spaced knots as shown."
+        ],
+        "answerKeyEvidence": "a. 4 equal parts; rope labeled correctly from 0/4 to 4/4. b. 2/4. c. 1/5.",
+        "layout": {
+          "family": "five-knots-form-four-intervals-and-six-knots-form-five",
+          "subpartCount": 3,
+          "modelPrimitive": "tight-official-five-knot-rope-plus-three-authored-responses",
+          "modelCounts": [
+            5,
+            4,
+            6,
+            5
+          ],
+          "modelOrientation": "one-horizontal-source-rope-over-three-part-response",
+          "responseStructure": "label-zero-fourths-through-four-fourths-identify-two-fourths-and-one-fifth",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m5-teacher/page-184.png",
+              "crop": {
+                "x": 230,
+                "y": 750,
+                "width": 490,
+                "height": 85
+              }
+            }
+          ],
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    }
+  ]
+}

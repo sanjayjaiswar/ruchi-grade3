@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l27",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-360.png",
+      "sha256": "4348c89541e9f894eaaae7a37284e68a720dcc128bf0842f2bd63ef4319b2c55",
+      "pdfPage": 360,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 27 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-361.png",
+      "sha256": "6009d2b1d79fea4195723117984c686f1292e5d8ae1b32aec4a0ded69b734505",
+      "pdfPage": 361,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 27 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-362.png",
+      "sha256": "7ec5ba48dd8eb81eedf4210d9931f8dbb12fad9e732e368e4986ff88ebc14041",
+      "pdfPage": 362,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 27 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-507.png",
+      "sha256": "ce26bc7a7f0636e8c8d8b419c97abd2a617a9e333f971cfc792b3c26f984e9f6",
+      "pdfPage": 507,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 27 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-508.png",
+      "sha256": "35d7db6e714a1c04828347312b5a13e7184ff14db07f237679120f0e9ac768e0",
+      "pdfPage": 508,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 27 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-360.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the chart below to evaluate your friend's robot."
+        ],
+        "answerKeyEvidence": "Evaluations will vary.",
+        "layout": {
+          "family": "evaluate-friend-robot-rectangles-a-through-i",
+          "subpartCount": 9,
+          "modelPrimitive": "live-nine-row-source-evaluation-chart",
+          "modelCounts": [
+            9,
+            14,
+            14,
+            18,
+            18,
+            28,
+            16,
+            8
+          ],
+          "modelOrientation": "source-chart-over-open-evaluation-response",
+          "responseStructure": "measure-calculate-and-star-discrepancies-with-variable-results",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-361.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Is the perimeter of the robot's body double that of the arm?"
+        ],
+        "answerKeyEvidence": "Answers and calculations will vary.",
+        "layout": {
+          "family": "compare-variable-robot-body-and-arm-perimeters",
+          "subpartCount": 3,
+          "modelPrimitive": "dependent-measurement-calculation-table",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "dependent-values-over-double-comparison-and-conclusion",
+          "responseStructure": "preserve-variable-answer-and-calculation",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-361.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Is the perimeter of the robot's neck half the perimeter of the head?"
+        ],
+        "answerKeyEvidence": "Answers and calculations will vary.",
+        "layout": {
+          "family": "compare-variable-robot-neck-and-head-perimeters",
+          "subpartCount": 3,
+          "modelPrimitive": "dependent-measurement-calculation-table",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "dependent-values-over-half-comparison-and-conclusion",
+          "responseStructure": "preserve-variable-answer-and-calculation",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-362.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the chart below to evaluate your friend's robot environment."
+        ],
+        "answerKeyEvidence": "Evaluations will vary.",
+        "layout": {
+          "family": "evaluate-friend-environment-items-j-through-q",
+          "subpartCount": 8,
+          "modelPrimitive": "live-eight-row-source-environment-evaluation-chart",
+          "modelCounts": [
+            8,
+            25,
+            82,
+            30,
+            30,
+            20,
+            20
+          ],
+          "modelOrientation": "source-chart-over-open-evaluation-response",
+          "responseStructure": "measure-with-ruler-or-string-calculate-and-star-discrepancies",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, tables, an unseeded class line plot, exact project evaluation forms, and open response spaces. No page or whole-problem screenshot is embedded."
+      }
+    }
+  ]
+}

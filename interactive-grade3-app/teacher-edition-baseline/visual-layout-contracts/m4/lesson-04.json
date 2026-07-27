@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m4-l4",
+  "teacherEditionPdfSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m4-teacher/page-050.png",
+      "sha256": "18e6376b0ce2a1bccc00eaf47a2ef06cad6559f5a5d5ecdde4d3e69d7548c1a0",
+      "pdfPage": 50,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 4 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-051.png",
+      "sha256": "c5d1f71086fcda6e4413d72df47b69c797a44170bd3572dba598b3d0b7fbcccf",
+      "pdfPage": 51,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 4 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-219.png",
+      "sha256": "45fe348f4656146494fe8d1a4ede178429ffc08f5e567494f4d6cde30258cce1",
+      "pdfPage": 219,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 4 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m4-teacher/page-050.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "measure the side lengths of the rectangle in centimeters"
+        ],
+        "answerKeyEvidence": "2 cm by 7 cm marked and connected; 14 sq cm",
+        "layout": {
+          "family": "measure-tile-and-count-centimeter-rectangle",
+          "subpartCount": 1,
+          "modelPrimitive": "plain-rectangle-to-two-by-seven-array",
+          "modelCounts": [
+            14
+          ],
+          "modelOrientation": "single-measurement-figure",
+          "responseStructure": "measure-mark-connect-and-count"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m4-teacher/page-050.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "measure the side lengths of the rectangle in inches"
+        ],
+        "answerKeyEvidence": "3 in by 2 in marked and connected; 6 sq in",
+        "layout": {
+          "family": "measure-tile-and-count-inch-rectangle",
+          "subpartCount": 1,
+          "modelPrimitive": "plain-rectangle-to-three-by-two-array",
+          "modelCounts": [
+            6
+          ],
+          "modelOrientation": "single-measurement-figure",
+          "responseStructure": "measure-mark-connect-and-count"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m4-teacher/page-050.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "mariana uses square centimeter tiles to find the side lengths"
+        ],
+        "answerKeyEvidence": "3 cm by 4 cm labeled; 12 sq cm",
+        "layout": {
+          "family": "label-three-by-four-tiled-rectangle",
+          "subpartCount": 1,
+          "modelPrimitive": "square-unit-array",
+          "modelCounts": [
+            12
+          ],
+          "modelOrientation": "single-tiled-rectangle",
+          "responseStructure": "label-four-sides-and-count-area"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m4-teacher/page-051.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "saffron says that the side length of the rectangle below is 4 centimeters"
+        ],
+        "answerKeyEvidence": "Both are correct; explanations will vary.",
+        "layout": {
+          "family": "four-by-five-grid-side-length-explanation",
+          "subpartCount": 1,
+          "modelPrimitive": "tight-official-four-by-five-grid",
+          "modelCounts": [
+            20
+          ],
+          "modelOrientation": "figure-over-open-response",
+          "responseStructure": "identify-both-adjacent-side-lengths-and-explain",
+          "sourceFirst": true,
+          "sourceCropCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m4-teacher/page-051.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "use both square centimeter and square inch tiles"
+        ],
+        "answerKeyEvidence": "Square-inch tiles; explanations will vary.",
+        "layout": {
+          "family": "compare-centimeter-and-inch-tiles-on-rectangle",
+          "subpartCount": 1,
+          "modelPrimitive": "tight-official-plain-rectangle",
+          "modelCounts": [],
+          "modelOrientation": "figure-over-open-response",
+          "responseStructure": "tile-with-both-units-choose-and-explain",
+          "sourceFirst": true,
+          "sourceCropCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m4-teacher/page-051.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "how does knowing side lengths a and b help you find side lengths c and d"
+        ],
+        "answerKeyEvidence": "Explanations will vary.",
+        "layout": {
+          "family": "opposite-side-label-relation",
+          "subpartCount": 1,
+          "modelPrimitive": "tight-official-a-b-c-d-rectangle",
+          "modelCounts": [
+            4
+          ],
+          "modelOrientation": "figure-over-open-response",
+          "responseStructure": "use-opposite-side-equality",
+          "sourceFirst": true,
+          "sourceCropCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    }
+  ]
+}

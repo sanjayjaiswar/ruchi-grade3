@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m1-l8",
+  "teacherEditionPdfSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m1-teacher/page-114.png",
+      "sha256": "37086b70c44a5f6b2d7705441bd0d69ea9a48484ef638aad560842eff8625cba",
+      "pdfPage": 114,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 8 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-115.png",
+      "sha256": "476111433b7e49c66e30829c30f1ad1f9402fb62ad50e162def584227a7082e2",
+      "pdfPage": 115,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 8 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-303.png",
+      "sha256": "bd16aeea53ede571bfedb70b508cb49fbf64afbf9c117f35d5d164d06ec07e38",
+      "pdfPage": 303,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 8 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-304.png",
+      "sha256": "51df02e5ec292299d132fdce2f5eb698b7721b31338ab11eb1edc142388e3c8d",
+      "pdfPage": 304,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 8 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m1-teacher/page-114.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw an array that shows 5 rows of 3."
+        ],
+        "answerKeyEvidence": "Array of 5 rows of 3 drawn",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m1-teacher/page-114.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw an array that shows 3 rows of 5."
+        ],
+        "answerKeyEvidence": "Array of 3 rows of 5 drawn",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m1-teacher/page-114.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Write multiplication expressions for the arrays in Problems 1 and 2. Let the first factor in each expression represent the number of rows. Use the commutative property to make sure the equation below is true. ____ × ____ = ____ × ____ Problem 1 Problem 2"
+        ],
+        "answerKeyEvidence": "5; 3; 3; 5",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m1-teacher/page-114.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Write a multiplication sentence for each expression. You might skip-count to find the totals. The first one is done for you. a. 2 threes: 2×3=6 d. 4 threes: ____ g. 3 nines: ____ b. 3 twos: ____ e. 3 sevens: ____ h. 9 threes: ____ c. 3 fours: ____ f. 7 threes: ____ i. 10 threes: ____"
+        ],
+        "answerKeyEvidence": "2 × 3 = 6; 3 × 2 = 6; 3 × 4 = 12; 4 × 3 = 12; 3 × 7 = 21; 7 × 3 = 21; 3 × 9 = 27; 9 × 3 = 27; 10 × 3 = 30",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m1-teacher/page-114.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Find the unknowns that make the equations true. Then, draw a line to match related facts. a. 3 + 3 + 3 + 3 + 3 = ____ d. 3 × 8 = ____ b. 3 × 9 = ____ e. ____ = 5 × 3 c. 7 threes + 1 three = ____ f. 27 = 9 × ____"
+        ],
+        "answerKeyEvidence": "15; 27; 24; 24; 15; 3",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m1-teacher/page-115.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Isaac picks 3 tangerines from his tree every day for 7 days. a. Use circles to draw an array that represents the tangerines Isaac picks. b. How many tangerines does Isaac pick in 7 days? Write and solve a multiplication sentence to find the total. c. Isaac decides to pick 3 tangerines every day for 3 more days. Draw x's to show the new tangerines on the array in Part (a). d. Write and solve a multiplication sentence to find the total number of tangerines Isaac picks."
+        ],
+        "answerKeyEvidence": "7 × 3 = 21; 10 × 3 = 30",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    },
+    {
+      "number": 7,
+      "sourcePageImage": "/source-pages/m1-teacher/page-115.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Sarah buys bottles of soap. Each bottle costs $2. a. How much money does Sarah spend if she buys 3 bottles of soap? ____ × ____ = $____ b. How much money does Sarah spend if she buys 6 bottles of soap? ____ × ____ = $____"
+        ],
+        "answerKeyEvidence": "3; $2; 6; 6; $2; 12",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    }
+  ]
+}

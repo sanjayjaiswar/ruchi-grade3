@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l12",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-164.png",
+      "sha256": "77480303e09fd53970833c1fd01b635819807ac99651dd56562b1126f956ea18",
+      "pdfPage": 164,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 12 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-165.png",
+      "sha256": "b7a6c9554792d04d82739fbb4b88d5aaf9bb2988bc238b02179fea9edf968e7e",
+      "pdfPage": 165,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 12 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-481.png",
+      "sha256": "56598319feb7230298d8373ea10c76535a9771b6596aa21a5aead4bf2398203f",
+      "pdfPage": 481,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 12 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-482.png",
+      "sha256": "50544f62b834cfd86a56dd423b64a68b8eafea113215d64dc29cc420e49aa926",
+      "pdfPage": 482,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 12 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-164.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Measure and label the side lengths of the shapes below in centimeters."
+        ],
+        "answerKeyEvidence": "a. Each side 3 cm; 12. b. Each side 3 cm; 18. c. Each side 4 cm; 16. d. 6, 6, 5 cm; 17. e. 3, 3, 2, 3, 1, 6 cm; 18.",
+        "layout": {
+          "family": "measure-five-source-shapes-in-centimeters",
+          "subpartCount": 10,
+          "modelPrimitive": "live-rhombus-hexagon-parallelogram-triangle-l-shape+recording-table",
+          "modelCounts": [
+            5,
+            4,
+            6,
+            4,
+            3,
+            6
+          ],
+          "modelOrientation": "five-shape-row-over-live-measurement-table",
+          "responseStructure": "measure-label-write-equation-and-perimeter-for-a-through-e",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-165.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Carson draws two triangles to create the new shape shown below."
+        ],
+        "answerKeyEvidence": "Each side 3 cm; Perimeter = 3 cm + 3 cm + 3 cm + 3 cm = 12 cm.",
+        "layout": {
+          "family": "measure-two-triangle-diamond-perimeter",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-diamond-interior-join-crop+live-equation",
+          "modelCounts": [
+            2,
+            4,
+            3
+          ],
+          "modelOrientation": "source-diagram-over-live-perimeter-fields",
+          "responseStructure": "measure-four-outside-sides-and-exclude-interior-join",
+          "openWorkspaceCount": 1,
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m7-teacher/page-165.png",
+              "crop": {
+                "x": 145,
+                "y": 245,
+                "width": 310,
+                "height": 330
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-165.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Hugh and Daisy draw the shapes shown below."
+        ],
+        "answerKeyEvidence": "Shapes labeled; Daisy; explanations will vary.",
+        "layout": {
+          "family": "compare-hugh-pentagon-and-daisy-trapezoid",
+          "subpartCount": 3,
+          "modelPrimitive": "live-pentagon-trapezoid+comparison-table",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "two-shape-row-over-measure-compare-explain-fields",
+          "responseStructure": "measure-label-identify-daisy-and-explain",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-165.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Andrea measures one side length of the square below and says she can find the perimeter with that measurement."
+        ],
+        "answerKeyEvidence": "Explanations will vary; 16 cm.",
+        "layout": {
+          "family": "explain-one-side-square-perimeter",
+          "subpartCount": 2,
+          "modelPrimitive": "live-square+explanation-table",
+          "modelCounts": [
+            4,
+            16
+          ],
+          "modelOrientation": "square-over-explanation-and-perimeter-fields",
+          "responseStructure": "measure-one-side-explain-equal-sides-and-find-sixteen",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    }
+  ]
+}

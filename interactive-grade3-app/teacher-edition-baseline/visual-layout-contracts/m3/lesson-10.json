@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m3-l10",
+  "teacherEditionPdfSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m3/lesson-10-page-41.png",
+      "sha256": "8ba6310e14ee240adb47688857330b29dc137e3a6846b84ecbcb6f155e8a196b",
+      "pdfPage": 124,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 10 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-10-page-42.png",
+      "sha256": "cfd220b24c6e5af54675deefdbb59da5f8a3a8f36f58603e32cf8adfa58fe576",
+      "pdfPage": 125,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 10 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-10-page-43.png",
+      "sha256": "1fc23b59146725df5eecdf9f727266e89b3f2d6edded756d2d9d18c2b73138fc",
+      "pdfPage": 126,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 10 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-298.png",
+      "sha256": "103e01e9abfed8a539ec192448c75b2903594782c906ad53cae663bd4cc19c24",
+      "pdfPage": 298,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 10 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m3/lesson-10-page-41.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "label the arrays then fill in the blanks below to make the statements true"
+        ],
+        "answerKeyEvidence": "a. Array accurately labeled; 64; 40; 3, 24; 3; 3; 24; 64. b. Array accurately labeled; 72; 40; 4, 32; 4; 4; 32; 72.",
+        "layout": {
+          "family": "two-distributive-arrays-split-after-five-columns",
+          "subpartCount": 2,
+          "modelPrimitive": "circle-array",
+          "modelCounts": [
+            8,
+            8,
+            9,
+            8
+          ],
+          "knownModelCounts": [
+            5,
+            5
+          ],
+          "modelOrientation": "vertical-rows-by-eight-columns",
+          "instructionalModelFamily": "eight-times-five-plus-remaining-columns",
+          "responseStructure": "labeled-array-and-distributive-equations"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure and mathematical primitives were reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m3/lesson-10-page-41.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "break apart and distribute to solve 56 divided by 8"
+        ],
+        "answerKeyEvidence": "16; 2; 7.",
+        "layout": {
+          "family": "division-number-bond",
+          "subpartCount": 1,
+          "modelPrimitive": "number-bond",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "whole-over-two-parts",
+          "instructionalModelFamily": "distribute-division-over-divisible-parts",
+          "responseStructure": "number-bond-and-quotient-equations"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure and mathematical primitives were reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m3/lesson-10-page-41.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "break apart and distribute to solve 72 divided by 8"
+        ],
+        "answerKeyEvidence": "32 ÷ 8; 32; 4; 9.",
+        "layout": {
+          "family": "division-number-bond",
+          "subpartCount": 1,
+          "modelPrimitive": "number-bond",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "whole-over-two-parts",
+          "instructionalModelFamily": "distribute-division-over-divisible-parts",
+          "responseStructure": "number-bond-and-quotient-equations"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure and mathematical primitives were reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m3/lesson-10-page-42.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "an octagon has 8 sides skip count to find the total number of sides"
+        ],
+        "answerKeyEvidence": "24, 32, 40, 48, 56, 64, 72; 72.",
+        "layout": {
+          "family": "nine-octagon-skip-count-chain",
+          "subpartCount": 9,
+          "modelPrimitive": "octagon",
+          "modelCounts": [
+            9
+          ],
+          "knownModelCounts": [
+            8,
+            16
+          ],
+          "modelOrientation": "alternating-horizontal-chain",
+          "responseStructure": "skip-count-and-total-sentence"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure and mathematical primitives were reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m3/lesson-10-page-42.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Multiply."
+        ],
+        "answerKeyEvidence": "Answer provided; 48; 24; 80; 64; 56.",
+        "layout": {
+          "family": "fishing-boat-fact-and-catch-card-grid",
+          "subpartCount": 6,
+          "modelPrimitive": "boat-fact+catch-card",
+          "modelCounts": [
+            6,
+            6
+          ],
+          "modelOrientation": "two-rows-by-three-columns",
+          "responseStructure": "multiply-and-record-product"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure and mathematical primitives were reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m3/lesson-10-page-43.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Match."
+        ],
+        "answerKeyEvidence": "Answer provided; 4; 2; 8; 6; 9.",
+        "layout": {
+          "family": "umbrella-to-raindrop-quotient-match",
+          "subpartCount": 6,
+          "modelPrimitive": "umbrella-expression+raindrop-number",
+          "modelCounts": [
+            6,
+            9
+          ],
+          "modelOrientation": "left-and-right-columns",
+          "responseStructure": "draw-matching-lines"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure and mathematical primitives were reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    }
+  ]
+}

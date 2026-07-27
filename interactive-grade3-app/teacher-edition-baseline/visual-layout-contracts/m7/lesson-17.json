@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l17",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-226.png",
+      "sha256": "edda25f343942e0aafbab5a76d84c4223b0c549a68ff26f28b5c7d0039ab650c",
+      "pdfPage": 226,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 17 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-227.png",
+      "sha256": "dc6011a3937c656c8104aeadf7b7af961c0389e5c5cfc5a7d4958e7815bbe082",
+      "pdfPage": 227,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 17 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-490.png",
+      "sha256": "3fd293c3f688d1d58a17878232b244c5ca3c817e032006c8108d71efa7d83962",
+      "pdfPage": 490,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 17 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-226.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The shapes below are made up of rectangles."
+        ],
+        "answerKeyEvidence": "1. a. Labeled 1 cm, 2 cm; P = (3 × 2 cm) + 1 cm + 3 cm + 4 cm = 14 cm (equations may vary) b. Labeled 1 ft, 1 ft, 2 ft; P = (4 × 2 ft) + (3 × 1 ft) + 5 ft = 16 ft (equations may vary) c. Labeled 2 m, 2 m, 4 m; P = (5 × 2 m) + (2 × 4 m) + 6 m = 24 m (equations may vary) d. Labeled 2 yd, 1 yd, 2 yd; P = (7 × 2 yd) + 7 yd + 1 yd + 4 yd = 26 yd (equations may vary) 2. 48 cm 3. a = 8 in, b = 5 in; 26 in",
+        "layout": {
+          "family": "four-composite-rectangle-perimeters",
+          "subpartCount": 12,
+          "modelPrimitive": "live-step-notch-cross-l-pedestal+labels-table",
+          "modelCounts": [
+            4,
+            14,
+            16,
+            24,
+            26
+          ],
+          "modelOrientation": "four-source-topologies-over-label-equation-table",
+          "responseStructure": "derive-unknown-sides-and-find-four-keyed-perimeters",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, plots, and response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-227.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Nathan draws and labels the square and rectangle below."
+        ],
+        "answerKeyEvidence": "48 cm.",
+        "layout": {
+          "family": "joined-square-rectangle-perimeter",
+          "subpartCount": 1,
+          "modelPrimitive": "live-joined-six-square-and-twelve-rectangle+equation",
+          "modelCounts": [
+            2,
+            6,
+            12,
+            48
+          ],
+          "modelOrientation": "joined-shapes-over-outside-boundary-equation",
+          "responseStructure": "exclude-interior-join-and-find-forty-eight-centimeters",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, plots, and response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-227.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Label the unknown side lengths. Then, find the perimeter of the shaded rectangle."
+        ],
+        "answerKeyEvidence": "a = 8 in, b = 5 in; 26 in.",
+        "layout": {
+          "family": "derive-shaded-rectangle-dimensions-and-perimeter",
+          "subpartCount": 3,
+          "modelPrimitive": "live-composite-outline+shaded-target+unknowns-table",
+          "modelCounts": [
+            2,
+            8,
+            5,
+            26
+          ],
+          "modelOrientation": "source-composite-over-a-b-perimeter-table",
+          "responseStructure": "derive-a-eight-b-five-and-perimeter-twenty-six-inches",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, plots, and response spaces. No page or whole-problem screenshot is embedded."
+      }
+    }
+  ]
+}

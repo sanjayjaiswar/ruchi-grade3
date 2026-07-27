@@ -1704,15 +1704,10 @@ export const STUDENT_WORK_SOURCE: Record<string, StudentWorkLessonSource> = {
       },
       {
         "number": 3,
-        "prompt": "Charlotte finds the answer to 16 × 2 by thinking about 8 ×",
+        "prompt": "Charlotte finds the answer to 16 × 2 by thinking about 8 × 4. Explain her strategy.",
         "equations": [
           "16 × 2"
         ]
-      },
-      {
-        "number": 4,
-        "prompt": "Explain her strategy.",
-        "equations": []
       }
     ]
   },

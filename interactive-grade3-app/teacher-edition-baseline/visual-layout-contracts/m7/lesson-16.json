@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l16",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-214.png",
+      "sha256": "797a183293bb18d2232822798f4230584b6512f273877b8cdbf20c7512a25489",
+      "pdfPage": 214,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 16 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-215.png",
+      "sha256": "d476c6934f05965e0ece1ac36d63010339b5b776b6a16826a925a861fa83c249",
+      "pdfPage": 215,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 16 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-488.png",
+      "sha256": "81b4bbb2b87e29ab6a8722ca28231ba3918b5e7c1b6f8a938c8ba3ec873a4124",
+      "pdfPage": 488,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 16 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-489.png",
+      "sha256": "bd421f097d2f39f154019cee1ded6a1d37de7508348598c5d5d435c7e017db55",
+      "pdfPage": 489,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 16 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-214.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Find the perimeter of 10 circular objects to the nearest quarter inch using string."
+        ],
+        "answerKeyEvidence": "Answers will vary; a. explanations will vary; b. Yes, explanations will vary.",
+        "layout": {
+          "family": "measure-ten-circular-objects-with-string",
+          "subpartCount": 12,
+          "modelPrimitive": "live-ten-row-chart+pacman-boundary+response",
+          "modelCounts": [
+            10,
+            2
+          ],
+          "modelOrientation": "chart-over-curved-shape-over-two-part-response",
+          "responseStructure": "record-ten-variable-measurements-and-answer-parts-a-b",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, plots, and response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-215.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Can you find the perimeter of the shape below using just your ruler?"
+        ],
+        "answerKeyEvidence": "No; explanations will vary.",
+        "layout": {
+          "family": "ruler-only-curved-d-shape-judgment",
+          "subpartCount": 2,
+          "modelPrimitive": "live-curved-d-shape+judgment-table",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "curved-shape-over-yes-no-explanation",
+          "responseStructure": "answer-no-and-preserve-variable-explanation",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, plots, and response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-215.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Molly says the perimeter of the shape below"
+        ],
+        "answerKeyEvidence": "No; explanations will vary.",
+        "layout": {
+          "family": "check-six-and-one-quarter-inch-circle-claim",
+          "subpartCount": 2,
+          "modelPrimitive": "live-circle+judgment-table",
+          "modelCounts": [
+            1,
+            6.25
+          ],
+          "modelOrientation": "circle-over-yes-no-explanation",
+          "responseStructure": "answer-no-and-preserve-variable-explanation",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, plots, and response spaces. No page or whole-problem screenshot is embedded."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-215.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Is the process you used to find the perimeter of a circular object an efficient method to find the perimeter of a rectangle?"
+        ],
+        "answerKeyEvidence": "No; explanations will vary.",
+        "layout": {
+          "family": "string-efficiency-for-rectangle",
+          "subpartCount": 2,
+          "modelPrimitive": "live-rectangle+judgment-table",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "rectangle-over-yes-no-explanation",
+          "responseStructure": "answer-no-and-preserve-variable-explanation",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Blank and Solved use live authored geometry, arrays, tables, plots, and response spaces. No page or whole-problem screenshot is embedded."
+      }
+    }
+  ]
+}

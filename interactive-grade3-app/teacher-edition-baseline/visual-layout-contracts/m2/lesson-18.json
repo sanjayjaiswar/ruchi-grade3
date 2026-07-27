@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m2-l18",
+  "teacherEditionPdfSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m2-teacher/page-228.png",
+      "sha256": "7d9c5219ae96feb5b80476181c6952572f527cf4e329a4e318ac74530543eca1",
+      "pdfPage": 228,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 18 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-teacher/page-229.png",
+      "sha256": "86d3ee81d8ae9b9ed36a19825df859710578512a7103ba4a741a7cdf6987e395",
+      "pdfPage": 229,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 18 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-answer-key/page-300.png",
+      "sha256": "a70637e3f9e80656a290d250738edf330cde0d07e75b0085e26ed720fd204201",
+      "pdfPage": 300,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 18 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m2-teacher/page-228.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "solve the subtraction problems below. a. 60 ml - 24 ml b. 360 ml - 24 ml c. 360 ml - 224 ml d. 518 cm - 21 cm e. 629 cm - 268 cm f. 938 cm - 440 cm g. 307 g - 130 g h. 307 g - 234 g i. 807 g - 732 g j. 2 km 770 m - 1 km 455 m k. 3 kg 924 g - 1 kg 893"
+        ],
+        "answerKeyEvidence": "1. a. 36 mL 2. 172 g; tape diagram drawn and labeled to b. 336 mL model problem c. 136 mL 3. a. 95 min d. 497 cm b. 50 min e. 361 cm 4. 34 cm f. 498 cm g. 177 g h. 73 g i. 75 g j. 1 km 315 m k. 2 kg 31 g",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m2-teacher/page-229.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "if 2 books weigh 233 grams how much does the third book weigh use a tape diagram to model the problem."
+        ],
+        "answerKeyEvidence": "1. a. 36 mL 2. 172 g; tape diagram drawn and labeled to b. 336 mL model problem c. 136 mL 3. a. 95 min d. 497 cm b. 50 min e. 361 cm 4. 34 cm f. 498 cm g. 177 g h. 73 g i. 75 g j. 1 km 315 m k. 2 kg 31 g",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m2-teacher/page-229.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "a. the movie champions is 22 minutes shorter than the lost ship. how long is champions"
+        ],
+        "answerKeyEvidence": "1. a. 36 mL 2. 172 g; tape diagram drawn and labeled to b. 336 mL model problem c. 136 mL 3. a. 95 min d. 497 cm b. 50 min e. 361 cm 4. 34 cm f. 498 cm g. 177 g h. 73 g i. 75 g j. 1 km 315 m k. 2 kg 31 g",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m2-teacher/page-229.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "the total length of a rope is 208 centimeters. scott cuts it into 3 pieces. the first piece is 80 centimeters long. the second piece is 94 centimeters long. how long is the third piece of rope"
+        ],
+        "answerKeyEvidence": "1. a. 36 mL 2. 172 g; tape diagram drawn and labeled to b. 336 mL model problem c. 136 mL 3. a. 95 min d. 497 cm b. 50 min e. 361 cm 4. 34 cm f. 498 cm g. 177 g h. 73 g i. 75 g j. 1 km 315 m k. 2 kg 31 g",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

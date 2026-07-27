@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l30",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-355.png",
+      "sha256": "5511d74e36ec6ca40f7aa6f40a5aeb07a7b50f28548884d945bb419e7fe96f5a",
+      "pdfPage": 355,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 30 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-420.png",
+      "sha256": "b8165b07ea30c9454bf21c08e3d026c4b6d47ff03aa548d23acdcee4c8dc59ae",
+      "pdfPage": 420,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 30 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-355.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "There is no Problem Set sheet for this lesson."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "notebook-paper-number-line-transfer-method",
+          "subpartCount": 5,
+          "modelPrimitive": "five-step-live-table-plus-red-strip-guide",
+          "modelCounts": [
+            5,
+            3
+          ],
+          "modelOrientation": "vertical-process-table-over-horizontal-strip",
+          "responseStructure": "describe-and-illustrate-third-partition-transfer",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    }
+  ]
+}

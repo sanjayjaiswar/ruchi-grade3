@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m6-l1",
+  "teacherEditionPdfSha256": "74325e3dfcae94e1fe359552d3857a3c929b26c5cca327ee80ef45d651aa7358",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m6/workbook-page-02.png",
+      "sha256": "33aa6da1ea835bf3acd1593eaf8369dabe3a4670a036b0a34b27569ce38f5833",
+      "pdfPage": 16,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 1 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/workbook-page-03.png",
+      "sha256": "f2d521e2cc3b4158d32a6180ceb7314cd92989bccf1847bfcc81cf9cb1f618f7",
+      "pdfPage": 17,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 1 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/workbook-page-04.png",
+      "sha256": "11bec86f8e683e36d8e1093eeb56a450372dc628ffc5c22c89f66a43f7d64d38",
+      "pdfPage": 18,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 1 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/teacher-answer-page-147.png",
+      "sha256": "7ca55795209838f5294e08ec9043c2c7aec0e756844165ac29708eff1bb3c248",
+      "pdfPage": 147,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 1 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m6/workbook-page-02.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "What is your favorite color?"
+        ],
+        "answerKeyEvidence": "Tally chart will vary.",
+        "layout": {
+          "family": "variable-class-favorite-color-tally-chart",
+          "subpartCount": 5,
+          "modelPrimitive": "live-five-row-tally-table",
+          "modelCounts": [
+            5
+          ],
+          "modelOrientation": "five-vertical-color-rows",
+          "responseStructure": "record-one-tally-per-surveyed-student"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m6/workbook-page-02.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the tally chart to answer the following questions."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "six-questions-from-variable-class-tallies",
+          "subpartCount": 6,
+          "modelPrimitive": "dependent-live-tally-table-plus-open-response",
+          "modelCounts": [
+            5,
+            6
+          ],
+          "modelOrientation": "table-over-six-part-response",
+          "responseStructure": "read-orange-yellow-most-least-difference-and-total",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m6/workbook-page-03.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the tally chart in Problem 1 to complete the picture graphs below."
+        ],
+        "answerKeyEvidence": "Picture graphs will vary.",
+        "layout": {
+          "family": "two-favorite-color-picture-graphs-with-different-keys",
+          "subpartCount": 2,
+          "modelPrimitive": "two-tight-official-empty-graph-crops-to-live-variable-data-criteria",
+          "modelCounts": [
+            5,
+            1,
+            2
+          ],
+          "modelOrientation": "two-vertical-five-column-graphs",
+          "responseStructure": "transfer-same-class-data-with-one-student-and-two-student-keys",
+          "sourceFirst": true,
+          "sourceCropCount": 2,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m6/workbook-page-03.png",
+              "crop": {
+                "x": 128,
+                "y": 232,
+                "width": 758,
+                "height": 427
+              }
+            },
+            {
+              "src": "/source-pages/m6/workbook-page-03.png",
+              "crop": {
+                "x": 128,
+                "y": 731,
+                "width": 758,
+                "height": 427
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m6/workbook-page-04.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the picture graph in Problem 3(b) to answer the following questions."
+        ],
+        "answerKeyEvidence": "2 students; 1 and a half hearts drawn correctly; 2 + 1 = 3; 14 students; 7 × 2 = 14; Answers will vary.",
+        "layout": {
+          "family": "four-questions-from-variable-class-picture-graph",
+          "subpartCount": 4,
+          "modelPrimitive": "dependent-tight-official-graph-topology-plus-open-response",
+          "modelCounts": [
+            5,
+            2,
+            7
+          ],
+          "modelOrientation": "graph-over-four-part-response",
+          "responseStructure": "interpret-key-show-three-find-fourteen-and-compare-most-least",
+          "openWorkspaceCount": 1,
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m6/workbook-page-03.png",
+              "crop": {
+                "x": 128,
+                "y": 731,
+                "width": 758,
+                "height": 427
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    }
+  ]
+}

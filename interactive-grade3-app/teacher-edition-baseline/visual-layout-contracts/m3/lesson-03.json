@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m3-l3",
+  "teacherEditionPdfSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m3/lesson-3-page-11.png",
+      "sha256": "1854478dc99e9f41886e54e5c29b4bebce46eaded58e5ab2e4016b98aba391e3",
+      "pdfPage": 43,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 3 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-3-page-12.png",
+      "sha256": "3c47a09348207d4c1d412b0c87b12e4a0c7da4ed65ae24de9203d5f069e539f5",
+      "pdfPage": 44,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 3 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-3-page-13.png",
+      "sha256": "22788582fcfc147d3656e8fea7126bd85c31d176dee9344191de52f9b3ccc36e",
+      "pdfPage": 45,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 3 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-285.png",
+      "sha256": "63457528cfde62399cff712b444fa67c1b4d4bae299a2d3de11344d33453d1e2",
+      "pdfPage": 285,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 3 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m3/lesson-3-page-11.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "each equation contains a letter representing the unknown find the value of the unknowns"
+        ],
+        "answerKeyEvidence": "e = 20; l = 7; i = 6; c = 3; s = 4; n = 10; t = 70; k = 9; b = 2; a = 24; h = 5; kitchen tables.",
+        "layout": {
+          "family": "paired-equation-answer-bubbles",
+          "subpartCount": 1,
+          "thoughtBubbleCount": 11,
+          "speechAnswerCount": 11,
+          "columnCount": 2,
+          "rowCount": 6,
+          "printedEquationLineCount": 11,
+          "openWorkspaceCount": 0,
+          "dividerCount": 0,
+          "challengeBadgeCount": 0,
+          "decoderSlotCount": 13,
+          "decoderValues": [
+            9,
+            6,
+            70,
+            3,
+            5,
+            20,
+            10,
+            70,
+            24,
+            2,
+            7,
+            20,
+            4
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m3/lesson-3-page-12.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "lonna buys 3 t shirts for $8 each a what is the total amount"
+        ],
+        "answerKeyEvidence": "a. m = $24. b. c = $6.",
+        "layout": {
+          "family": "open-written-response",
+          "subpartCount": 2,
+          "thoughtBubbleCount": 0,
+          "speechAnswerCount": 0,
+          "columnCount": 1,
+          "rowCount": 2,
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 2,
+          "dividerCount": 0,
+          "challengeBadgeCount": 0,
+          "decoderSlotCount": 0,
+          "decoderValues": []
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m3/lesson-3-page-13.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "miss potts used a total of 28 cups of flour to bake some bread"
+        ],
+        "answerKeyEvidence": "4, n, 28; 28, 4, n; n = 7; 7 loaves of bread.",
+        "layout": {
+          "family": "open-written-response",
+          "subpartCount": 1,
+          "thoughtBubbleCount": 0,
+          "speechAnswerCount": 0,
+          "columnCount": 1,
+          "rowCount": 1,
+          "printedEquationLineCount": 2,
+          "openWorkspaceCount": 1,
+          "dividerCount": 0,
+          "challengeBadgeCount": 0,
+          "decoderSlotCount": 0,
+          "decoderValues": []
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m3/lesson-3-page-13.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "at a table tennis tournament two games went on for a total of 32"
+        ],
+        "answerKeyEvidence": "Shorter game: 10 minutes; longer game: 22 minutes.",
+        "layout": {
+          "family": "open-written-response",
+          "subpartCount": 1,
+          "thoughtBubbleCount": 0,
+          "speechAnswerCount": 0,
+          "columnCount": 1,
+          "rowCount": 1,
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "dividerCount": 1,
+          "challengeBadgeCount": 1,
+          "decoderSlotCount": 0,
+          "decoderValues": []
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    }
+  ]
+}

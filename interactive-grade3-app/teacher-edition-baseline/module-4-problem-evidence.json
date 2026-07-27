@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "moduleId": "m4",
+  "teacherEditionPdfSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+  "imageSize": {
+    "width": 1275,
+    "height": 1650
+  },
+  "lessons": {
+    "1": [
+      { "number": 1, "sourceTextEvidence": "use triangle pattern blocks to cover each shape below", "answerKeyEvidence": "Lines drawn to show 6 triangles each inside Shapes A and B", "sourceCrops": [[16, 65, 236, 1145, 427]] },
+      { "number": 2, "sourceTextEvidence": "use rhombus pattern blocks to cover each shape below", "answerKeyEvidence": "Lines drawn to show 3 rhombuses each inside Shapes A and B", "sourceCrops": [[16, 65, 663, 1145, 395]] },
+      { "number": 3, "sourceTextEvidence": "use trapezoid pattern blocks to cover each shape below", "answerKeyEvidence": "Lines drawn to show 2 trapezoids each inside Shapes A and B", "sourceCrops": [[16, 65, 1058, 1145, 412]] },
+      { "number": 4, "sourceTextEvidence": "how is the number of pattern blocks needed to cover the same shape related", "answerKeyEvidence": "As pattern blocks get bigger, the number of blocks it takes to cover the same shape gets smaller.", "sourceCrops": [[17, 65, 181, 1145, 342]] },
+      { "number": 5, "sourceTextEvidence": "use square pattern blocks to cover the rectangle below", "answerKeyEvidence": "Lines drawn to show 6 squares inside rectangle", "sourceCrops": [[17, 65, 523, 1145, 448]] },
+      { "number": 6, "sourceTextEvidence": "use trapezoid pattern blocks to cover the rectangle in problem 5", "answerKeyEvidence": "No, because you can’t have gaps or overlaps when measuring area", "sourceCrops": [[17, 65, 971, 1145, 499]] }
+    ],
+    "2": [
+      { "number": 1, "sourceTextEvidence": "use all of paper strip 1", "answerKeyEvidence": "Rectangle A: 2 rows of 6 square inches; 12 sq in. Rectangle B: 3 rows of 4 square inches; 12 sq in. Rectangle C: 4 rows of 3 square inches; 12 sq in.", "sourceCrops": [[27, 65, 236, 1145, 614]] },
+      { "number": 2, "sourceTextEvidence": "use all of paper strip 2", "answerKeyEvidence": "Rectangle A: 2 rows of 6 square centimeters; 12 sq cm. Rectangle B: 3 rows of 4 square centimeters; 12 sq cm. Rectangle C: 4 rows of 3 square centimeters; 12 sq cm.", "sourceCrops": [[27, 65, 850, 1145, 620]] },
+      { "number": 3, "sourceTextEvidence": "compare the areas of the rectangles you made with paper strip 1 and paper strip 2", "answerKeyEvidence": "Answers will vary.", "sourceCrops": [[28, 65, 181, 1145, 342]] },
+      { "number": 4, "sourceTextEvidence": "maggie uses square units to create these two rectangles", "answerKeyEvidence": "Yes, 6 square units inside of each rectangle", "sourceCrops": [[28, 65, 523, 1145, 607]] },
+      { "number": 5, "sourceTextEvidence": "count to find the area of the rectangle below", "answerKeyEvidence": "8 square units; rectangle with an area of 8 square units drawn", "sourceCrops": [[28, 65, 1130, 1145, 340]] }
+    ],
+    "3": [
+      { "number": 1, "sourceTextEvidence": "what is the area of each of the following rectangles", "answerKeyEvidence": "A: 6. B: 2 square units. C: 12 square units. D: 20 square units.", "sourceCrops": [[37, 65, 236, 1145, 619]] },
+      { "number": 2, "sourceTextEvidence": "what is the area of each of the following rectangles", "answerKeyEvidence": "a. 6 square units. b. 9 square units. c. 16 square units. d. 12 square units.", "sourceCrops": [[37, 65, 855, 1145, 615]] },
+      { "number": 3, "sourceTextEvidence": "how would the rectangles in problem 1 be different if they were composed of square inches", "answerKeyEvidence": "a. Answers will vary. b. Answers will vary.", "sourceCrops": [[38, 65, 181, 1145, 722]] },
+      { "number": 4, "sourceTextEvidence": "draw four different rectangles that each has an area of 8 square centimeters", "answerKeyEvidence": "Answers will vary.", "sourceCrops": [[38, 65, 903, 1145, 567]] }
+    ],
+    "4": [
+      { "number": 1, "sourceTextEvidence": "measure the side lengths of the rectangle in centimeters", "answerKeyEvidence": "2 cm by 7 cm marked and connected; 14 sq cm", "sourceCrops": [[50, 65, 236, 1145, 311]] },
+      { "number": 2, "sourceTextEvidence": "measure the side lengths of the rectangle in inches", "answerKeyEvidence": "3 in by 2 in marked and connected; 6 sq in", "sourceCrops": [[50, 65, 547, 1145, 590]] },
+      { "number": 3, "sourceTextEvidence": "mariana uses square centimeter tiles to find the side lengths", "answerKeyEvidence": "3 cm by 4 cm labeled; 12 sq cm", "sourceCrops": [[50, 65, 1137, 1145, 333]] },
+      { "number": 4, "sourceTextEvidence": "saffron says that the side length of the rectangle below is 4 centimeters", "answerKeyEvidence": "Both are correct; explanations will vary.", "sourceCrops": [[51, 65, 181, 1145, 476]] },
+      { "number": 5, "sourceTextEvidence": "use both square centimeter and square inch tiles", "answerKeyEvidence": "Square-inch tiles; explanations will vary.", "sourceCrops": [[51, 65, 657, 1145, 395]] },
+      { "number": 6, "sourceTextEvidence": "how does knowing side lengths a and b help you find side lengths c and d", "answerKeyEvidence": "Explanations will vary.", "sourceCrops": [[51, 65, 1052, 1145, 418]] }
+    ],
+    "5": [
+      { "number": 1, "sourceTextEvidence": "use the centimeter side of a ruler to draw in the tiles", "answerKeyEvidence": "a. 6 cm; 6. b. 20; tiles drawn; 4, 5, 20. c. 3 cm; tiles drawn; 6, 3, 18. d. 8 cm; tiles drawn; 3, 8, 24. e. 4 cm; tiles drawn; 5, 4, 20. f. 9; tiles drawn; 3, 3, 9.", "sourceCrops": [[63, 65, 236, 1145, 1234]] },
+      { "number": 2, "sourceTextEvidence": "lindsey makes a rectangle with 35 square inch tiles", "answerKeyEvidence": "5 in, 7 in; answers will vary.", "sourceCrops": [[64, 65, 181, 1145, 395]] },
+      { "number": 3, "sourceTextEvidence": "mark has a total of 24 square inch tiles", "answerKeyEvidence": "Two rectangular arrays drawn, multiplication sentences written for each", "sourceCrops": [[64, 65, 576, 1145, 370]] },
+      { "number": 4, "sourceTextEvidence": "leon makes a rectangle with 32 square centimeter tiles", "answerKeyEvidence": "a. 8; answers will vary. b. No; answers will vary.", "sourceCrops": [[64, 65, 946, 1145, 524]] }
+    ],
+    "6": [
+      { "number": 1, "sourceTextEvidence": "draw to find the number of rows and columns in each array", "answerKeyEvidence": "a. Lines drawn to find 5 cm by 6 cm; matched to fifth completed array; 5, 6, 30. b. Lines drawn to find 3 cm by 7 cm; matched to sixth completed array; 3, 7, 21. c. Lines drawn to find 5 cm by 3 cm; matched to first completed array; 5, 3, 15. d. Lines drawn to find 4 cm by 5 cm; matched to second completed array; 4, 5, 20. e. Lines drawn to find 2 cm by 6 cm; matched to third completed array; 2, 6, 12. f. Lines drawn to find 4 cm by 3 cm; matched to fourth completed array; 4, 3, 12.", "sourceCrops": [[73, 65, 236, 1145, 1234]] },
+      { "number": 2, "sourceTextEvidence": "sheena skip-counts by sixes", "answerKeyEvidence": "No; explanations may vary.", "sourceCrops": [[74, 65, 181, 1145, 359]] },
+      { "number": 3, "sourceTextEvidence": "tile floor in brandon’s living room", "answerKeyEvidence": "90", "sourceCrops": [[74, 65, 540, 1145, 501]] },
+      { "number": 4, "sourceTextEvidence": "abdul is creating a stained glass window", "answerKeyEvidence": "30; explanations may vary.", "sourceCrops": [[74, 65, 1041, 1145, 429]] }
+    ],
+    "7": [
+      { "number": 1, "sourceTextEvidence": "use a straight edge to draw a grid of equal size squares", "answerKeyEvidence": "a. Grid lines drawn inside rectangle; side lengths labeled; 3, 4, 12. b. Grid lines drawn inside rectangle; side lengths labeled; 5, 4, 20. c. Grid lines drawn inside rectangle; side lengths labeled; 2, 7, 14. d. Grid lines drawn inside rectangle; side lengths labeled; 7, 4, 28. e. Grid lines drawn inside rectangle; side lengths labeled; 1, 3, 3. f. Grid lines drawn inside rectangle; side lengths labeled; 4, 2, 8.", "sourceCrops": [[86, 65, 236, 1145, 1234]] },
+      { "number": 2, "sourceTextEvidence": "area of benjamin’s bedroom floor", "answerKeyEvidence": "a. Side lengths labeled as 9 feet and 11 feet. b. Grid lines drawn inside rectangle. c. 99.", "sourceCrops": [[87, 65, 181, 1145, 406]] },
+      { "number": 3, "sourceTextEvidence": "mrs. young’s art class needs to create a mural", "answerKeyEvidence": "No; explanations will vary.", "sourceCrops": [[87, 65, 587, 1145, 309]] },
+      { "number": 4, "sourceTextEvidence": "mila skip-counts by fours and jorge skip-counts by sixes", "answerKeyEvidence": "a. Answers will vary. b. 24.", "sourceCrops": [[87, 65, 896, 1145, 574]] }
+    ],
+    "8": [
+      { "number": 1, "sourceTextEvidence": "write a multiplication equation to find the area of each rectangle", "answerKeyEvidence": "a. 28; 4, 7, 28. b. 56; 8, 7, 56. c. 36; 6, 6, 36.", "sourceCrops": [[99, 65, 236, 1145, 408]] },
+      { "number": 2, "sourceTextEvidence": "write a multiplication equation and a division equation", "answerKeyEvidence": "a. 8; 9, 8, 72; 72, 9, 8. b. 5; 3, 5, 15; 15, 3, 5. c. 7; 7, 4, 28; 28, 4, 7.", "sourceCrops": [[99, 65, 644, 1145, 481]] },
+      { "number": 3, "sourceTextEvidence": "draw a rectangle that has an area of 42 square units", "answerKeyEvidence": "Answers will vary.", "sourceCrops": [[99, 65, 1125, 1145, 345]] },
+      { "number": 4, "sourceTextEvidence": "ursa draws a rectangle that has side lengths of 9 centimeters and 6 centimeters", "answerKeyEvidence": "54 sq cm; explanations will vary.", "sourceCrops": [[100, 65, 181, 1145, 374]] },
+      { "number": 5, "sourceTextEvidence": "eliza’s bedroom measures 6 feet by 7 feet", "answerKeyEvidence": "No; explanations will vary.", "sourceCrops": [[100, 65, 555, 1145, 395]] },
+      { "number": 6, "sourceTextEvidence": "cliff draws a rectangle with a side length of 6 inches", "answerKeyEvidence": "4 in; explanations will vary.", "sourceCrops": [[100, 65, 950, 1145, 520]] }
+    ],
+    "9": [
+      { "number": 1, "sourceTextEvidence": "cut the grid into 2 equal rectangles", "answerKeyEvidence": "a. 2 rectangles drawn; 5 cm, 10 cm labeled. b. 5 cm × 10 cm = 50 sq cm. c. 50 sq cm + 50 sq cm = 100 sq cm.", "sourceCrops": [[121, 65, 236, 1145, 624]] },
+      { "number": 2, "sourceTextEvidence": "place your 2 equal rectangles side by side", "answerKeyEvidence": "a. Rectangle drawn; 5 cm, 20 cm labeled. b. 100 sq cm.", "sourceCrops": [[121, 65, 860, 1145, 610]] },
+      { "number": 3, "sourceTextEvidence": "furaha and rahema use square tiles", "answerKeyEvidence": "a. 4, 6; 4, 7; 24 sq units; 28 sq units. b. Rectangle drawn; 4, 13. c. Rahema is right; explanations will vary.", "sourceCrops": [[122, 65, 181, 1145, 984]] },
+      { "number": 4, "sourceTextEvidence": "kiera says she can find the area of the long rectangle", "answerKeyEvidence": "No; explanations will vary.", "sourceCrops": [[122, 65, 1165, 1145, 305]] }
+    ],
+    "10": [
+      { "number": 1, "sourceTextEvidence": "label the side lengths of the shaded and unshaded rectangles", "answerKeyEvidence": "a. 35, 21; 56; 56. b. 10; 10; 10; 40; 48; 48. c. 10, 3; 10; 10; 60, 18; 78; 78. d. 8, 10, 2; 10, 2; 10, 2; 80, 16; 96; 96.", "sourceCrops": [[132, 65, 236, 1145, 1234]] },
+      { "number": 2, "sourceTextEvidence": "vince imagines 1 more row of eight", "answerKeyEvidence": "Answers will vary.", "sourceCrops": [[133, 65, 181, 1145, 473]] },
+      { "number": 3, "sourceTextEvidence": "break the 15 × 5 rectangle into 2 rectangles", "answerKeyEvidence": "75 sq units; answers will vary.", "sourceCrops": [[133, 65, 654, 1145, 816]] }
+    ],
+    "11": [
+      { "number": 1, "sourceTextEvidence": "the rectangles below have the same area", "answerKeyEvidence": "a. 6, 48; 48. b. 48, 48; 48. c. 24; 2, 24; 48; 48. d. 12; 4, 12; 48; 48. e. 16, 3; 16, 3; 48; 48.", "sourceCrops": [[143, 65, 223, 1145, 905]] },
+      { "number": 2, "sourceTextEvidence": "does problem 1 show all the possible whole number side lengths", "answerKeyEvidence": "Yes; answers will vary.", "sourceCrops": [[143, 65, 1128, 1145, 342]] },
+      { "number": 3, "sourceTextEvidence": "what happens to the shape of the rectangle as the difference between the side lengths gets smaller", "answerKeyEvidence": "Answers will vary.", "sourceCrops": [[144, 65, 181, 1145, 270]] },
+      { "number": 4, "sourceTextEvidence": "julius says a 4 cm by 18 cm rectangle", "answerKeyEvidence": "a. 72 sq cm. b. 8, 9; 72; 72; yes; answers will vary. c. Answers will vary.", "sourceCrops": [[144, 65, 451, 1145, 1019]] }
+    ],
+    "12": [
+      { "number": 1, "sourceTextEvidence": "each side on a sticky note measures 9 centimeters", "answerKeyEvidence": "81 sq cm", "sourceCrops": [[156, 65, 236, 1145, 328]] },
+      { "number": 2, "sourceTextEvidence": "stacy tiles the rectangle below", "answerKeyEvidence": "a. 12 sq units; answers will vary. b. Yes; answers will vary.", "sourceCrops": [[156, 65, 564, 1145, 906]] },
+      { "number": 3, "sourceTextEvidence": "an artist paints a 4 foot × 16 foot mural", "answerKeyEvidence": "64 sq ft", "sourceCrops": [[157, 65, 181, 1145, 342]] },
+      { "number": 4, "sourceTextEvidence": "alana tiles the 3 figures below", "answerKeyEvidence": "a. 4 sq units, 9 sq units, 16 sq units; explanations will vary. b. 5 by 5 and 6 by 6 rectangles drawn; 25 sq units, 36 sq units.", "sourceCrops": [[157, 65, 523, 1145, 540]] },
+      { "number": 5, "sourceTextEvidence": "jermaine glues 3 identical pieces of paper", "answerKeyEvidence": "3 cm; 54 sq cm", "sourceCrops": [[157, 65, 1063, 1145, 407]] }
+    ],
+    "13": [
+      { "number": 1, "sourceTextEvidence": "each of the following figures is made up of 2 rectangles", "answerKeyEvidence": "9, 27; 18, 15, 33; 9, 21, 30; answers will vary, 55", "sourceCrops": [[167, 65, 236, 1145, 1234]] },
+      { "number": 2, "sourceTextEvidence": "small rectangle cut out of a bigger rectangle", "answerKeyEvidence": "90, 12, 78; 78", "sourceCrops": [[168, 65, 181, 1145, 632]] },
+      { "number": 3, "sourceTextEvidence": "small rectangle cut out of a big rectangle", "answerKeyEvidence": "a. 5, 4. b. 7, 9, 63. c. 4, 5, 20. d. 43 sq cm", "sourceCrops": [[168, 65, 813, 1145, 657]] }
+    ],
+    "14": [
+      { "number": 1, "sourceTextEvidence": "find the area of each of the following figures", "answerKeyEvidence": "a. 19 sq cm. b. 10 sq m.", "sourceCrops": [[180, 65, 236, 1145, 802]] },
+      { "number": 2, "sourceTextEvidence": "small rectangle in a big rectangle", "answerKeyEvidence": "24 sq m", "sourceCrops": [[180, 65, 1038, 1145, 432]] },
+      { "number": 3, "sourceTextEvidence": "paper rectangle has a length of 6 inches and a width of 8 inches", "answerKeyEvidence": "39 sq in", "sourceCrops": [[181, 65, 181, 1145, 490]] },
+      { "number": 4, "sourceTextEvidence": "tila and evan both have paper rectangles", "answerKeyEvidence": "Evan; explanations will vary.", "sourceCrops": [[181, 65, 671, 1145, 799]] }
+    ],
+    "15": [
+      { "number": 1, "sourceTextEvidence": "make a prediction which room looks like it has the biggest area", "answerKeyEvidence": "Answers will vary.", "sourceCrops": [[191, 65, 236, 1145, 102], [193, 65, 181, 1145, 1289]] },
+      { "number": 2, "sourceTextEvidence": "record the areas and show the strategy you used", "answerKeyEvidence": "60; 56; 42; 24; 25; 28; 88; strategies will vary.", "sourceCrops": [[191, 65, 338, 1145, 1132], [193, 65, 181, 1145, 1289]] },
+      { "number": 3, "sourceTextEvidence": "which room has the biggest area", "answerKeyEvidence": "Living room; yes or no; answers will vary.", "sourceCrops": [[192, 65, 181, 1145, 397], [193, 65, 181, 1145, 1289]] },
+      { "number": 4, "sourceTextEvidence": "find the side lengths of the house without using your ruler", "answerKeyEvidence": "19, 17; answers will vary.", "sourceCrops": [[192, 65, 578, 1145, 404], [193, 65, 181, 1145, 1289]] },
+      { "number": 5, "sourceTextEvidence": "what is the area of the whole floor plan", "answerKeyEvidence": "323; answers will vary.", "sourceCrops": [[192, 65, 982, 1145, 488], [193, 65, 181, 1145, 1289]] }
+    ],
+    "16": [
+      { "number": 1, "sourceTextEvidence": "record the new side lengths you have chosen for each of the rooms", "answerKeyEvidence": "Answers will vary.", "sourceCrops": [[201, 65, 181, 1145, 1289], [202, 65, 181, 1145, 1289]] }
+    ]
+  }
+}

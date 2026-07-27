@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m4-l9",
+  "teacherEditionPdfSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m4-teacher/page-121.png",
+      "sha256": "6017e3dcf3b970098b70e4bde77607c6a679021266ddb1a2a9eb6ddce51585ba",
+      "pdfPage": 121,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 9 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-122.png",
+      "sha256": "1e19523ff56c3710cacd36ce1fd6f08f88463a0d646998a3e3a2a775bc6ad566",
+      "pdfPage": 122,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 9 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-225.png",
+      "sha256": "8f84749bf681c6c3cb24a266743d9eebce766b29d956063ada31f9cb950637ac",
+      "pdfPage": 225,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 9 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m4-teacher/page-121.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "cut the grid into 2 equal rectangles"
+        ],
+        "answerKeyEvidence": "a. 2 rectangles drawn; 5 cm, 10 cm labeled. b. 5 cm × 10 cm = 50 sq cm. c. 50 sq cm + 50 sq cm = 100 sq cm.",
+        "layout": {
+          "family": "three-part-split-grid-into-equal-rectangles",
+          "subpartCount": 3,
+          "modelPrimitive": "open-construction-equations-and-total",
+          "modelCounts": [
+            50,
+            50,
+            100
+          ],
+          "modelOrientation": "three-vertical-source-parts",
+          "responseStructure": "draw-label-find-one-area-and-total",
+          "openWorkspaceCount": 3
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m4-teacher/page-121.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "place your 2 equal rectangles side by side"
+        ],
+        "answerKeyEvidence": "a. Rectangle drawn; 5 cm, 20 cm labeled. b. 100 sq cm.",
+        "layout": {
+          "family": "two-part-combine-equal-rectangles",
+          "subpartCount": 2,
+          "modelPrimitive": "open-longer-rectangle-construction",
+          "modelCounts": [
+            100
+          ],
+          "modelOrientation": "two-vertical-source-parts",
+          "responseStructure": "draw-label-and-find-combined-area",
+          "openWorkspaceCount": 2
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m4-teacher/page-122.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "furaha and rahema use square tiles"
+        ],
+        "answerKeyEvidence": "a. 4, 6; 4, 7; 24 sq units; 28 sq units. b. Rectangle drawn; 4, 13. c. Rahema is right; explanations will vary.",
+        "layout": {
+          "family": "combine-four-by-six-and-four-by-seven-arrays",
+          "subpartCount": 3,
+          "modelPrimitive": "two-given-square-unit-arrays",
+          "modelCounts": [
+            24,
+            28,
+            52
+          ],
+          "modelOrientation": "two-horizontal-models-over-three-part-response",
+          "responseStructure": "label-find-combine-and-check-fifty-two",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m4-teacher/page-122.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "kiera says she can find the area of the long rectangle"
+        ],
+        "answerKeyEvidence": "No; explanations will vary.",
+        "layout": {
+          "family": "overlapping-a-b-area-addition-critique",
+          "subpartCount": 1,
+          "modelPrimitive": "tight-official-overlapping-rectangle-diagram",
+          "modelCounts": [],
+          "modelOrientation": "figure-over-open-response",
+          "responseStructure": "identify-double-counted-overlap",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    }
+  ]
+}

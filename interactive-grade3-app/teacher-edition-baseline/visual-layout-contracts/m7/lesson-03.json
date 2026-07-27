@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l3",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-046.png",
+      "sha256": "372d695df6eecfc58f93371116ee81bc3db444fec11dbe7cbeb5661f79297d27",
+      "pdfPage": 46,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 3 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-047.png",
+      "sha256": "7fa4c040e33e17e9aebd39e8bc0fa79369279e1c4a7db8d952a6104707ae8043",
+      "pdfPage": 47,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 3 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-466.png",
+      "sha256": "f327f463129c79114fef4da05bbcd8502f540e0763186e6f5045f9ddce54e35e",
+      "pdfPage": 466,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 3 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-046.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Monica measures 91 milliliters of water into 9 tiny beakers."
+        ],
+        "answerKeyEvidence": "9 milliliters",
+        "layout": {
+          "family": "rdw-open-word-problem",
+          "subpartCount": 1,
+          "modelPrimitive": "open-read-draw-write-mat",
+          "modelCounts": [],
+          "modelOrientation": "four-step-vertical-rdw-table",
+          "responseStructure": "student-authored-labeled-model-equation-and-answer",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set, template, and answer-key pages. RDW problems intentionally retain open student-authored drawing space. The geometry crops contain only the mathematically meaningful template polygons, never page prompts or task-bearing page bodies."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-046.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Matthew and his dad put up 8 six-foot lengths of fence on Monday and 9 six-foot lengths on Tuesday."
+        ],
+        "answerKeyEvidence": "102 feet",
+        "layout": {
+          "family": "rdw-open-word-problem",
+          "subpartCount": 1,
+          "modelPrimitive": "open-read-draw-write-mat",
+          "modelCounts": [],
+          "modelOrientation": "four-step-vertical-rdw-table",
+          "responseStructure": "student-authored-labeled-model-equation-and-answer",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set, template, and answer-key pages. RDW problems intentionally retain open student-authored drawing space. The geometry crops contain only the mathematically meaningful template polygons, never page prompts or task-bearing page bodies."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-046.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The total weight of Laura’s new pencils is 112 grams."
+        ],
+        "answerKeyEvidence": "49 grams",
+        "layout": {
+          "family": "rdw-open-word-problem",
+          "subpartCount": 1,
+          "modelPrimitive": "open-read-draw-write-mat",
+          "modelCounts": [],
+          "modelOrientation": "four-step-vertical-rdw-table",
+          "responseStructure": "student-authored-labeled-model-equation-and-answer",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set, template, and answer-key pages. RDW problems intentionally retain open student-authored drawing space. The geometry crops contain only the mathematically meaningful template polygons, never page prompts or task-bearing page bodies."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-047.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Mrs. Ford’s math class starts at 8:15."
+        ],
+        "answerKeyEvidence": "19 minutes",
+        "layout": {
+          "family": "rdw-open-word-problem",
+          "subpartCount": 1,
+          "modelPrimitive": "open-read-draw-write-mat",
+          "modelCounts": [],
+          "modelOrientation": "four-step-vertical-rdw-table",
+          "responseStructure": "student-authored-labeled-model-equation-and-answer",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set, template, and answer-key pages. RDW problems intentionally retain open student-authored drawing space. The geometry crops contain only the mathematically meaningful template polygons, never page prompts or task-bearing page bodies."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m7-teacher/page-047.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "On Saturday, the baker bought a total of 150 pounds of flour in five-pound bags."
+        ],
+        "answerKeyEvidence": "7",
+        "layout": {
+          "family": "rdw-open-word-problem",
+          "subpartCount": 1,
+          "modelPrimitive": "open-read-draw-write-mat",
+          "modelCounts": [],
+          "modelOrientation": "four-step-vertical-rdw-table",
+          "responseStructure": "student-authored-labeled-model-equation-and-answer",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set, template, and answer-key pages. RDW problems intentionally retain open student-authored drawing space. The geometry crops contain only the mathematically meaningful template polygons, never page prompts or task-bearing page bodies."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m7-teacher/page-047.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Fred cut an 84-centimeter rope into 2 parts and gave his sister 1 part."
+        ],
+        "answerKeyEvidence": "7 centimeters",
+        "layout": {
+          "family": "rdw-open-word-problem",
+          "subpartCount": 1,
+          "modelPrimitive": "open-read-draw-write-mat",
+          "modelCounts": [],
+          "modelOrientation": "four-step-vertical-rdw-table",
+          "responseStructure": "student-authored-labeled-model-equation-and-answer",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set, template, and answer-key pages. RDW problems intentionally retain open student-authored drawing space. The geometry crops contain only the mathematically meaningful template polygons, never page prompts or task-bearing page bodies."
+      }
+    }
+  ]
+}

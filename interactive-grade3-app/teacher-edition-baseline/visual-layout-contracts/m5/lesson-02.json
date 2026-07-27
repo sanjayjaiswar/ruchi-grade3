@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l2",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-26.png",
+      "sha256": "3a4bb0f4af2d2087fd53c0415f860d3722e436a800b8a5a7c189b0b8f20b482c",
+      "pdfPage": 26,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 2 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-27.png",
+      "sha256": "921a7da9ffe4f742997fd4aa8f8715a644bf8130a0674cb913aa1c470a3a7391",
+      "pdfPage": 27,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 2 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-369.png",
+      "sha256": "60a9e9c2100755ebe3a4b6533a7ba926c3fabd1026a2bd47ddd8247121cb5941",
+      "pdfPage": 369,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 2 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-26.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Circle the strips that are folded to make equal parts"
+        ],
+        "answerKeyEvidence": "First and last strips circled.",
+        "layout": {
+          "family": "four-folded-strip-equality-choices",
+          "subpartCount": 4,
+          "modelPrimitive": "tight-official-four-zigzag-strip-choices",
+          "modelCounts": [
+            4
+          ],
+          "modelOrientation": "four-horizontal-source-choices-over-response",
+          "responseStructure": "circle-first-and-fourth-equal-part-strips",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-26.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "There are"
+        ],
+        "answerKeyEvidence": "a. 4, 2. b. 6, 5. c. 7, 3. d. 7, 0.",
+        "layout": {
+          "family": "four-count-equal-parts-and-shaded-parts-strips",
+          "subpartCount": 4,
+          "modelPrimitive": "authored-fraction-strips",
+          "modelCounts": [
+            4,
+            2,
+            6,
+            5,
+            7,
+            3,
+            7,
+            0
+          ],
+          "modelOrientation": "four-horizontal-strip-cards-over-four-count-statements",
+          "responseStructure": "count-total-equal-parts-and-shaded-parts"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-27.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Noah, Pedro, and Sharon share a whole candy bar fairly"
+        ],
+        "answerKeyEvidence": "1 third; bar drawn and labeled appropriately; 1 third labeled.",
+        "layout": {
+          "family": "one-candy-bar-shared-by-three-children",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-thirds-fraction-strip",
+          "modelCounts": [
+            3,
+            1
+          ],
+          "modelOrientation": "horizontal-strip-over-written-response",
+          "responseStructure": "draw-thirds-and-label-sharons-one-third",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-27.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "To make a garage for his toy truck"
+        ],
+        "answerKeyEvidence": "a. 1 fourth; fraction strip drawn and labeled correctly. b. Sixths; fraction strip drawn and labeled correctly.",
+        "layout": {
+          "family": "repeated-folding-fourths-and-sixths",
+          "subpartCount": 2,
+          "modelPrimitive": "two-authored-fold-matching-fraction-strips",
+          "modelCounts": [
+            4,
+            6
+          ],
+          "modelOrientation": "two-horizontal-strip-cards-over-two-part-response",
+          "responseStructure": "match-half-then-half-to-fourths-and-thirds-then-half-to-sixths",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m6-l9",
+  "teacherEditionPdfSha256": "74325e3dfcae94e1fe359552d3857a3c929b26c5cca327ee80ef45d651aa7358",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m6/workbook-page-44.png",
+      "sha256": "b7f5d6dab0b598f90f2eeea7518dccafe35c148164c55e9767feeff95e3d7617",
+      "pdfPage": 128,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 9 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/workbook-page-45.png",
+      "sha256": "1dc1e7dc2b26ae75e41cade2c152b3888dff61e6f6e8c7ee7316f537268dac2f",
+      "pdfPage": 129,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 9 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/workbook-page-46.png",
+      "sha256": "884014468f642e1af4732822c532cff543c4f1c04d8d4e284021823b19488c77",
+      "pdfPage": 130,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 9 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/teacher-answer-page-159.png",
+      "sha256": "8de708fdd3e2cf3fb4346ad854b0b57c9b89d5ff37ea3f7a39563660f78ec36e",
+      "pdfPage": 159,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 9 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m6/workbook-page-44.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Four children went apple picking"
+        ],
+        "answerKeyEvidence": "a. 24. b. Picture graph completed; scale drawn.",
+        "layout": {
+          "family": "complete-apple-table-and-create-picture-graph",
+          "subpartCount": 2,
+          "modelPrimitive": "live-five-row-table-plus-four-category-picture-graph",
+          "modelCounts": [
+            72,
+            16,
+            24,
+            12,
+            20
+          ],
+          "modelOrientation": "table-over-horizontal-picture-graph-and-two-part-response",
+          "responseStructure": "find-roxanne-choose-scale-and-draw-four-symbol-rows",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set and answer-key pages. No full-page or task-bearing source crop is permitted. Printed data, line-plot Xs, labels, scales, and keys remain live authored structures; only student-created entries and responses are open in Blank."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m6/workbook-page-45.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the chart or graph to answer the following questions"
+        ],
+        "answerKeyEvidence": "a. 8. b. 4.",
+        "layout": {
+          "family": "two-apple-comparisons-from-dependent-chart-or-graph",
+          "subpartCount": 2,
+          "modelPrimitive": "dependent-live-five-row-table-plus-two-part-response",
+          "modelCounts": [
+            16,
+            24,
+            12,
+            20,
+            8,
+            4
+          ],
+          "modelOrientation": "table-over-two-part-response",
+          "responseStructure": "compare-paired-totals-and-divide-twenty-eight-apples-by-seven",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set and answer-key pages. No full-page or task-bearing source crop is permitted. Printed data, line-plot Xs, labels, scales, and keys remain live authored structures; only student-created entries and responses are open in Blank."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m6/workbook-page-45.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Ms. Pacho’s science class measured the lengths of blades of grass"
+        ],
+        "answerKeyEvidence": "a. Line plot completed; explanations will vary. b. 24; explanations will vary. c. 2 3/4 inches; 6. d. 2.",
+        "layout": {
+          "family": "twenty-four-grass-measurements-to-quarter-inch-line-plot",
+          "subpartCount": 4,
+          "modelPrimitive": "live-twenty-four-value-table-plus-eight-position-line-plot",
+          "modelCounts": [
+            24,
+            6,
+            2
+          ],
+          "modelOrientation": "six-column-table-over-horizontal-line-plot-and-four-part-response",
+          "responseStructure": "choose-scale-plot-count-find-mode-and-compare-combined-lengths",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set and answer-key pages. No full-page or task-bearing source crop is permitted. Printed data, line-plot Xs, labels, scales, and keys remain live authored structures; only student-created entries and responses are open in Blank."
+      }
+    }
+  ]
+}

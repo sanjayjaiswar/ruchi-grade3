@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m4-l11",
+  "teacherEditionPdfSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m4-teacher/page-143.png",
+      "sha256": "314df8cbb1f05952370ccd27a534db4d2b17e28b5ae6986789509e1d03cba859",
+      "pdfPage": 143,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 11 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-144.png",
+      "sha256": "76b083f97d757e5f97a24adea590bfdaa42096e0f18e95fe0ae818c936cd8c25",
+      "pdfPage": 144,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 11 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-227.png",
+      "sha256": "1abe11456a387ee7a51fe66a026f429faa02bae9d31d827384d1dcf5b60b94de",
+      "pdfPage": 227,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 11 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m4-teacher/page-143.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "the rectangles below have the same area"
+        ],
+        "answerKeyEvidence": "a. 6, 48; 48. b. 48, 48; 48. c. 24; 2, 24; 48; 48. d. 12; 4, 12; 48; 48. e. 16, 3; 16, 3; 48; 48.",
+        "layout": {
+          "family": "five-equal-area-factor-pair-rectangles",
+          "subpartCount": 5,
+          "modelPrimitive": "authored-side-labeled-rectangles",
+          "modelCounts": [
+            48,
+            48,
+            48,
+            48,
+            48
+          ],
+          "modelOrientation": "five-source-positioned-rectangles-over-five-equations",
+          "responseStructure": "regroup-factors-label-side-lengths-and-find-equal-areas"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m4-teacher/page-143.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "does problem 1 show all the possible whole number side lengths"
+        ],
+        "answerKeyEvidence": "Yes; answers will vary.",
+        "layout": {
+          "family": "factor-pair-completeness-explanation",
+          "subpartCount": 1,
+          "modelPrimitive": "open-written-response",
+          "modelCounts": [
+            48
+          ],
+          "modelOrientation": "vertical-open-response",
+          "responseStructure": "explain-that-all-whole-number-factor-pairs-are-shown",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m4-teacher/page-144.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "what happens to the shape of the rectangle as the difference between the side lengths gets smaller"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "rectangle-shape-factor-pair-generalization",
+          "subpartCount": 1,
+          "modelPrimitive": "open-written-response",
+          "modelCounts": [
+            48
+          ],
+          "modelOrientation": "vertical-open-response",
+          "responseStructure": "describe-approach-toward-square-as-side-difference-decreases",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m4-teacher/page-144.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "julius says a 4 cm by 18 cm rectangle"
+        ],
+        "answerKeyEvidence": "a. 72 sq cm. b. 8, 9; 72; 72; yes; answers will vary. c. Answers will vary.",
+        "layout": {
+          "family": "three-part-equal-area-associative-property-check",
+          "subpartCount": 3,
+          "modelPrimitive": "authored-square-unit-arrays-and-open-explanation",
+          "modelCounts": [
+            72,
+            72,
+            72
+          ],
+          "modelOrientation": "three-related-factor-pair-models-over-three-part-response",
+          "responseStructure": "find-area-check-julius-and-create-another-factor-pair",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The per-problem figure, grouping, labels, givens, and response space were transcribed from fingerprinted Teacher Edition evidence; whole-page and whole-problem screenshots are prohibited."
+      }
+    }
+  ]
+}

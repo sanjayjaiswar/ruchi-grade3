@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l18",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-216.png",
+      "sha256": "c4e8b1ec15209a46bf295ac59a20131fbb57d70e8a24f8c59166724bb3ee499b",
+      "pdfPage": 216,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 18 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-217.png",
+      "sha256": "b716a9c140a387aff15a3b50f08fed0cd3b9ba80f204c048c14b43c6e1ce4c41",
+      "pdfPage": 217,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 18 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-398.png",
+      "sha256": "f8c9eb06f2db692c05a2b9231018779443039902092cf850f9e7946cd37f2ae4",
+      "pdfPage": 398,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 18 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-399.png",
+      "sha256": "1d2d359af0e5f77e1a4403f0d6472d339f64c28512fd1ab02308624cced66a8e",
+      "pdfPage": 399,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 18 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-216.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "using >, <, or ="
+        ],
+        "answerKeyEvidence": "Answer provided.",
+        "layout": {
+          "family": "two-fractions-on-one-comparison-line",
+          "subpartCount": 2,
+          "modelPrimitive": "authored-source-topology-number-line",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "one-horizontal-number-line",
+          "responseStructure": "place-circle-closest-to-zero-and-compare"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-216.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "using >, <, or ="
+        ],
+        "answerKeyEvidence": "Number line partitioned into sixths; 2/6 and 3/6 placed; 2/6 circled; <.",
+        "layout": {
+          "family": "two-fractions-on-one-comparison-line",
+          "subpartCount": 2,
+          "modelPrimitive": "authored-source-topology-number-line",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "one-horizontal-number-line",
+          "responseStructure": "place-circle-closest-to-zero-and-compare"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-216.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "using >, <, or ="
+        ],
+        "answerKeyEvidence": "Number line partitioned into halves and fourths; 1/2 and 1/4 placed; 1/4 circled; >.",
+        "layout": {
+          "family": "two-fractions-on-one-comparison-line",
+          "subpartCount": 2,
+          "modelPrimitive": "authored-source-topology-number-line",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "one-horizontal-number-line",
+          "responseStructure": "place-circle-closest-to-zero-and-compare"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-216.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "using >, <, or ="
+        ],
+        "answerKeyEvidence": "Number line partitioned into thirds and sixths; 2/3 and 2/6 placed; 2/6 circled; >.",
+        "layout": {
+          "family": "two-fractions-on-one-comparison-line",
+          "subpartCount": 2,
+          "modelPrimitive": "authored-source-topology-number-line",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "one-horizontal-number-line",
+          "responseStructure": "place-circle-closest-to-zero-and-compare"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m5-teacher/page-216.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "using >, <, or ="
+        ],
+        "answerKeyEvidence": "Number line partitioned into eighths and fourths; 11/8 and 7/4 placed; 11/8 circled; <.",
+        "layout": {
+          "family": "two-fractions-on-one-comparison-line",
+          "subpartCount": 2,
+          "modelPrimitive": "authored-source-topology-number-line",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "one-horizontal-number-line",
+          "responseStructure": "place-circle-closest-to-zero-and-compare"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m5-teacher/page-217.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "JoAnn and Lupe live straight down the street from their school."
+        ],
+        "answerKeyEvidence": "JoAnn; explanations will vary.",
+        "layout": {
+          "family": "compare-five-sixths-and-seven-eighths-walks",
+          "subpartCount": 2,
+          "modelPrimitive": "open-workspace-to-two-authored-number-lines",
+          "modelCounts": [
+            6,
+            8
+          ],
+          "modelOrientation": "two-horizontal-same-length-wholes",
+          "responseStructure": "model-both-distances-name-joann-and-explain",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 7,
+      "sourcePageImage": "/source-pages/m5-teacher/page-217.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Cheryl cuts 2 pieces of thread."
+        ],
+        "answerKeyEvidence": "Red thread; explanations will vary.",
+        "layout": {
+          "family": "compare-five-fourths-and-four-fifths-threads",
+          "subpartCount": 2,
+          "modelPrimitive": "open-workspace-to-two-authored-number-lines",
+          "modelCounts": [
+            4,
+            5
+          ],
+          "modelOrientation": "two-horizontal-zero-to-two-lines",
+          "responseStructure": "model-both-lengths-name-red-thread-and-explain",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 8,
+      "sourcePageImage": "/source-pages/m5-teacher/page-217.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Brandon makes homemade spaghetti."
+        ],
+        "answerKeyEvidence": "Number line partitioned into eighths, fourths, and halves; 7/8, 7/4, and 4/2 placed; 7/8 < 7/4 < 4/2; explanations will vary.",
+        "layout": {
+          "family": "order-three-spaghetti-lengths",
+          "subpartCount": 3,
+          "modelPrimitive": "open-workspace-to-authored-eighths-number-line",
+          "modelCounts": [
+            7,
+            14,
+            16
+          ],
+          "modelOrientation": "horizontal-zero-to-two",
+          "responseStructure": "model-order-seven-eighths-seven-fourths-four-halves-and-explain",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    }
+  ]
+}

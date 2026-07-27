@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m2-l10",
+  "teacherEditionPdfSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m2-teacher/page-122.png",
+      "sha256": "0d07a870a9e00f7b566dc6358813ee78e703150874b565379a7655ee8980c566",
+      "pdfPage": 122,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 10 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-teacher/page-123.png",
+      "sha256": "49c7a38fd7428310e574485e76e50edb952bf23cffbaedcf6bba5897b2039799",
+      "pdfPage": 123,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 10 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-answer-key/page-290.png",
+      "sha256": "1f77863ba75d05237456f267556d991ff54bdaedcdea2a099b9c07096a2bb9c2",
+      "pdfPage": 290,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 10 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m2-teacher/page-122.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "a. what did you label as the halfway mark why b. explain how pouring each plastic cup of water helped you create a vertical number line. c. if you pour out 300 ml of water how many ml are left in the container"
+        ],
+        "answerKeyEvidence": "1. Vertical number line on container labeled by hundreds a. 500 mL; reasons will vary. b. Explanations will vary. c. 700 mL 2. 3 L; 6 L; 4 L; 0 L 3. 400 mL; 200 mL; 1000 mL; 700 mL 4. a. Capacity of each barrel plotted and labeled correctly on number line b. Barrel C c. Barrel D d. Barrel B because it is closest to 70 mL OR Barrel A because it has enough capacity to hold 70 L e. Number line used to find answer; 28 more liters",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m2-teacher/page-122.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "how much liquid is in each container"
+        ],
+        "answerKeyEvidence": "1. Vertical number line on container labeled by hundreds a. 500 mL; reasons will vary. b. Explanations will vary. c. 700 mL 2. 3 L; 6 L; 4 L; 0 L 3. 400 mL; 200 mL; 1000 mL; 700 mL 4. a. Capacity of each barrel plotted and labeled correctly on number line b. Barrel C c. Barrel D d. Barrel B because it is closest to 70 mL OR Barrel A because it has enough capacity to hold 70 L e. Number line used to find answer; 28 more liters",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m2-teacher/page-123.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "estimate the amount of liquid in each container to the nearest hundred milliliters."
+        ],
+        "answerKeyEvidence": "1. Vertical number line on container labeled by hundreds a. 500 mL; reasons will vary. b. Explanations will vary. c. 700 mL 2. 3 L; 6 L; 4 L; 0 L 3. 400 mL; 200 mL; 1000 mL; 700 mL 4. a. Capacity of each barrel plotted and labeled correctly on number line b. Barrel C c. Barrel D d. Barrel B because it is closest to 70 mL OR Barrel A because it has enough capacity to hold 70 L e. Number line used to find answer; 28 more liters",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m2-teacher/page-123.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "e. use the number line to find how many more liters barrel c can hold than barrel b."
+        ],
+        "answerKeyEvidence": "1. Vertical number line on container labeled by hundreds a. 500 mL; reasons will vary. b. Explanations will vary. c. 700 mL 2. 3 L; 6 L; 4 L; 0 L 3. 400 mL; 200 mL; 1000 mL; 700 mL 4. a. Capacity of each barrel plotted and labeled correctly on number line b. Barrel C c. Barrel D d. Barrel B because it is closest to 70 mL OR Barrel A because it has enough capacity to hold 70 L e. Number line used to find answer; 28 more liters",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

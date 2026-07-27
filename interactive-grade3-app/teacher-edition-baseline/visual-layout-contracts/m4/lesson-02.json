@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m4-l2",
+  "teacherEditionPdfSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m4-teacher/page-027.png",
+      "sha256": "6d72f072a04918605ddf3178177593372352335230f870d77b6bff7654c7b05f",
+      "pdfPage": 27,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 2 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-028.png",
+      "sha256": "005e02d1d58a928c8010a7691943fde9bef9a7be7326c0789a9f8c7db59811c2",
+      "pdfPage": 28,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 2 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-216.png",
+      "sha256": "a4c031f44c985d078e9de79ec69154668cc27191e085583dbcbd0ad3cd266a2a",
+      "pdfPage": 216,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 2 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-217.png",
+      "sha256": "b3106aae7b036c60815967aa7e0757fc09d87ddd79fc70ff61b8354f31de71a5",
+      "pdfPage": 217,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 2 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m4-teacher/page-027.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "use all of paper strip 1"
+        ],
+        "answerKeyEvidence": "Rectangle A: 2 rows of 6 square inches; 12 sq in. Rectangle B: 3 rows of 4 square inches; 12 sq in. Rectangle C: 4 rows of 3 square inches; 12 sq in.",
+        "layout": {
+          "family": "three-paper-rectangle-drawing-and-area-chart",
+          "subpartCount": 3,
+          "modelPrimitive": "three-row-open-drawing-area-chart",
+          "modelCounts": [
+            3,
+            12
+          ],
+          "modelOrientation": "three-vertical-source-rows",
+          "responseStructure": "draw-three-rectangles-and-record-area",
+          "rowCount": 3,
+          "columnCount": 3
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m4-teacher/page-027.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "use all of paper strip 2"
+        ],
+        "answerKeyEvidence": "Rectangle A: 2 rows of 6 square centimeters; 12 sq cm. Rectangle B: 3 rows of 4 square centimeters; 12 sq cm. Rectangle C: 4 rows of 3 square centimeters; 12 sq cm.",
+        "layout": {
+          "family": "three-paper-rectangle-drawing-and-area-chart",
+          "subpartCount": 3,
+          "modelPrimitive": "three-row-open-drawing-area-chart",
+          "modelCounts": [
+            3,
+            12
+          ],
+          "modelOrientation": "three-vertical-source-rows",
+          "responseStructure": "draw-three-rectangles-and-record-area",
+          "rowCount": 3,
+          "columnCount": 3
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m4-teacher/page-028.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "compare the areas of the rectangles you made with paper strip 1 and paper strip 2"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "paper-strip-area-invariance-open-response",
+          "subpartCount": 1,
+          "modelPrimitive": "open-comparison-explanation",
+          "modelCounts": [
+            12,
+            12
+          ],
+          "modelOrientation": "vertical-open-response",
+          "responseStructure": "compare-unit-size-and-area",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m4-teacher/page-028.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "maggie uses square units to create these two rectangles"
+        ],
+        "answerKeyEvidence": "Yes, 6 square units inside of each rectangle",
+        "layout": {
+          "family": "two-six-square-unit-rectangle-comparison",
+          "subpartCount": 2,
+          "modelPrimitive": "square-unit-arrays",
+          "modelCounts": [
+            6,
+            6
+          ],
+          "modelOrientation": "two-horizontal-models-over-response",
+          "responseStructure": "compare-and-explain-equal-area",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m4-teacher/page-028.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "count to find the area of the rectangle below"
+        ],
+        "answerKeyEvidence": "8 square units; rectangle with an area of 8 square units drawn",
+        "layout": {
+          "family": "given-eight-unit-strip-and-equal-area-redraw",
+          "subpartCount": 2,
+          "modelPrimitive": "square-unit-arrays",
+          "modelCounts": [
+            8,
+            8
+          ],
+          "modelOrientation": "given-model-over-open-redraw",
+          "responseStructure": "count-area-and-draw-different-equal-area-rectangle",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    }
+  ]
+}

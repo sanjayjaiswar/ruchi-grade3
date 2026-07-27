@@ -490,7 +490,7 @@ export type ProblemVisualGeometryDiagramSection = {
   diagram: 'rectangle' | 'polygon' | 'perimeter' | 'circle-string' | 'robot' | 'one-half' | 'composite';
   shapes: Array<{
     label: string;
-    shape: 'rectangle' | 'square' | 'circle' | 'polygon' | 'l-shape' | 'triangle' | 'right-triangle' | 'parallelogram' | 'trapezoid' | 'rhombus' | 'kite' | 'pentagon' | 'hexagon';
+    shape: 'rectangle' | 'square' | 'circle' | 'polygon' | 'l-shape' | 'interlock-left' | 'interlock-right' | 'step-shape' | 'notch-shape' | 'cross-l-shape' | 'pedestal-shape' | 'd-shape' | 'pacman' | 'triangle' | 'right-triangle' | 'parallelogram' | 'trapezoid' | 'rhombus' | 'kite' | 'pentagon' | 'arrow-pentagon' | 'hexagon' | 'octagon' | 'star';
     x: number;
     y: number;
     width: number;
@@ -507,11 +507,19 @@ export type ProblemVisualArraySection = {
   label?: string;
   rows: number;
   columns: number;
-  item: 'dot' | 'butterfly' | 'circle' | 'glass' | 'square' | 'pattern';
+  item: 'dot' | 'butterfly' | 'circle' | 'glass' | 'square' | 'pattern' | 'triangle' | 'block';
+  glyph?: string;
   mode?: 'blank' | 'solved';
   placeholder?: string;
   rowLabels?: string[];
   splitAfterRows?: number;
+  splitAfterColumns?: number;
+  shadeBeforeRows?: number;
+  shadeBeforeColumns?: number;
+  shadeAfterRows?: number;
+  shadeAfterColumns?: number;
+  outlineAfterColumns?: number;
+  groupEveryColumns?: number;
   caption?: string;
 };
 
@@ -603,6 +611,9 @@ export type ProblemVisualExpressionMatchSection = {
   bottomLabel?: string;
   topItems: string[];
   bottomItems: string[];
+  orientation?: 'rows' | 'columns' | 'pairs';
+  topShape?: 'card' | 'caterpillar' | 'umbrella' | 'boat' | 'scroll' | 'helicopter' | 'car' | 'mouse' | 'book';
+  bottomShape?: 'card' | 'leaf' | 'raindrop' | 'catch-card' | 'tag' | 'cloud' | 'cheese';
   matches?: Array<{
     topIndex: number;
     bottomIndex: number;
@@ -633,6 +644,7 @@ export type ProblemVisualClockSection = {
   label?: string;
   timeLabel: string;
   timeValue?: string;
+  blankFace?: boolean;
   caption?: string;
 };
 
@@ -864,6 +876,66 @@ export type ProblemVisualSourceCropSection = {
   caption?: string;
 };
 
+export type ProblemVisualSourceFirstWorkspaceSection = {
+  kind: 'source-first-workspace';
+  label?: string;
+  pages: ProblemVisualSourceCropSection[];
+};
+
+export type ProblemVisualUnitFormWorkspaceSection = {
+  kind: 'unit-form-workspace';
+  label?: string;
+  parts: Array<{
+    lead?: string;
+    prompt?: string;
+    promptModelLead?: string;
+    promptSourceModel?: ProblemVisualSourceCropSection;
+    unitKind?: 'dot';
+    unitCount?: number;
+    knownUnitCount?: number;
+    sourceModel?: ProblemVisualSourceCropSection;
+    lines: string[];
+    workspacePrompt?: string;
+    openWorkspace?: boolean;
+    dividerBefore?: boolean;
+  }>;
+};
+
+export type ProblemVisualUnknownRiddleWorkspaceSection = {
+  kind: 'unknown-riddle-workspace';
+  label?: string;
+  prompt: string;
+  entries: Array<{
+    letter: string;
+    equation: string;
+    answer?: string;
+    row: number;
+    side: 'left' | 'right';
+  }>;
+  decoder: {
+    question: string;
+    values: number[];
+    letters?: string[];
+    answerPhrase?: string;
+    gapAfterIndex?: number;
+  };
+};
+
+export type ProblemVisualSourceResponseWorkspaceSection = {
+  kind: 'source-response-workspace';
+  label?: string;
+  parts: Array<{
+    lead?: string;
+    prompt: string;
+    lines: string[];
+    printedLineCount: number;
+    openWorkspace?: boolean;
+    dividerBefore?: boolean;
+    challenge?: boolean;
+    solutionLabel?: string;
+  }>;
+};
+
 export type ProblemVisualSection =
   | ProblemVisualArraySection
   | ProblemVisualFloorPlanSection
@@ -889,7 +961,11 @@ export type ProblemVisualSection =
   | ProblemVisualCardGridSection
   | ProblemVisualSourceDirectionsSection
   | ProblemVisualEstimateDifferenceWorkbookSection
-  | ProblemVisualSourceCropSection;
+  | ProblemVisualSourceCropSection
+  | ProblemVisualSourceFirstWorkspaceSection
+  | ProblemVisualUnitFormWorkspaceSection
+  | ProblemVisualUnknownRiddleWorkspaceSection
+  | ProblemVisualSourceResponseWorkspaceSection;
 
 export type ProblemVisualSpec = {
   title: string;
@@ -900,6 +976,7 @@ export type ProblemVisualSpec = {
 export type ProblemSetCenteredProblem = {
   number: number;
   sourcePrompt: string;
+  sourcePromptInVisual?: boolean;
   sourcePageImages?: string[];
   blankSourcePageImages?: string[];
   solvedSourcePageImages?: string[];

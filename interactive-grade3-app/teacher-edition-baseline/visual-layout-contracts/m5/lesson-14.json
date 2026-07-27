@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l14",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-173.png",
+      "sha256": "3d55a9cdadb0699403e1c25bd61e91d98ed798559e71ac93b385f69571d8162a",
+      "pdfPage": 173,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 14 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-174.png",
+      "sha256": "b70803fde9470d27973c21dfcc4d8223d605c1398ef229346f88db9ff4a0e26f",
+      "pdfPage": 174,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 14 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-390.png",
+      "sha256": "2550fae67177d12118838651baafea3133f319aea6181d25998aa317ef31997c",
+      "pdfPage": 390,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 14 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-391.png",
+      "sha256": "44f8ab240fc86e64992947de544ea22238695dbf860ab24e92c1c1e87d71b2d6",
+      "pdfPage": 391,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 14 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-173.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw a number bond for each fractional unit."
+        ],
+        "answerKeyEvidence": "a. Answer provided; fraction strip partitioned and labeled to show halves; number line partitioned and labeled correctly from 0/2 to 2/2. b. Number bond showing 3 units of 1/3; fraction strip partitioned and labeled to show thirds; number line partitioned and labeled correctly from 0/3 to 3/3. c. Number bond showing 4 units of 1/4; fraction strip partitioned and labeled to show fourths; number line partitioned and labeled correctly from 0/4 to 4/4. d. Number bond showing 5 units of 1/5; fraction strip partitioned and labeled to show fifths; number line partitioned and labeled correctly from 0/5 to 5/5.",
+        "layout": {
+          "family": "four-number-bond-strip-number-line-constructions",
+          "subpartCount": 4,
+          "modelPrimitive": "four-open-official-subparts-to-four-authored-completed-constructions",
+          "modelCounts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "modelOrientation": "four-reading-order-cards-each-with-bond-strip-and-number-line",
+          "responseStructure": "partition-and-label-halves-thirds-fourths-and-fifths-from-zero-to-one"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-174.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Trevor needs to let his puppy outside every quarter (1 fourth) hour."
+        ],
+        "answerKeyEvidence": "Number line showing fourths; each quarter (fourth) hour from 0/4 to 4/4 correctly labeled, including 0 hours and 1 hour.",
+        "layout": {
+          "family": "quarter-hour-number-line-from-zero-to-one-hour",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-open-to-completed-fourths-number-line",
+          "modelCounts": [
+            4
+          ],
+          "modelOrientation": "one-horizontal-time-number-line-over-response",
+          "responseStructure": "label-zero-fourths-through-four-fourths-and-zero-through-one-hour",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-174.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "A ribbon is 1 meter long."
+        ],
+        "answerKeyEvidence": "Number line showing fifths; each fifth meter from 0/5 to 5/5 correctly labeled, including 0 meters and 1 meter.",
+        "layout": {
+          "family": "fifths-of-a-meter-bead-number-line",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-open-to-completed-fifths-measurement-number-line",
+          "modelCounts": [
+            5
+          ],
+          "modelOrientation": "one-horizontal-meter-number-line-over-response",
+          "responseStructure": "label-zero-fifths-through-five-fifths-and-all-bead-locations",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored as live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    }
+  ]
+}

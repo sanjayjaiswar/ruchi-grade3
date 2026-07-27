@@ -3,7 +3,7 @@
   "lessonId": "m7-l21",
   "moduleId": "m7",
   "lessonNumber": 21,
-  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "generatedAt": "2026-07-27T02:56:13.408Z",
   "source": {
     "teacherEditionPdf": "EurekaMath-Sources/Module_7/g3_m7_teacher_edition_v1_3_1.pdf",
     "teacherEditionSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
@@ -40,13 +40,70 @@
   "objective": "Construct rectangles with a given perimeter using unit squares and determine their areas.",
   "instructionalContract": {
     "instructionalMode": "concept-development",
-    "applicationProblemText": "s.\n\n\n          To prepare for Lesson 22, students should\n          add their data from today’s lesson to the\n          sheet shown to the right. (A master copy\n          is included at the end of this lesson.) An\n          extra five minutes is built into the time\n          allotted for the",
-    "conceptDevelopmentText": "to\n          accommodate this. However, choose\n          when the data collection might happen\n          most smoothly for the class, perhaps at\n          the end of the Problem Set or the Student\n          Debrief or after completing the Exit Ticket.",
+    "applicationProblemText": "NOTES ON\n                                                                                                               MULTIPLE MEANS\nMrs. Zeck will use 14 feet of tape to mark a rectangle on the\ngym wall. Draw several rectangles that Mrs. Zeck could make                                                    OF ACTION AND\nwith her tape. Label the width and length of each rectangle.                                                   EXPRESSION:\n                                                                                                      Scaffold the Application Problem for\n                                                                                                      students working below grade level.\n                                                                                                      One solution path (shown here) is to\n                                                                                                      find half of the perimeter and list all\n                                                                                                      addend pairs with a sum of 7. Set\n                                                                                                      individualized goals for effort and\n                                                                                                      persistence, perhaps by providing a\n                                                                                                      checklist of problem-solving self-talk,\n                                                                                                      such as, “What information do I\n                                                                                                      know?”\n\n\nNote: This problem reviews Lesson 20. If time allows, invite students to discuss which rectangular target they\nwould want to try to hit by throwing a ball from the opposite side of the gym.\n\n\n                        Lesson 21:                Construct rectangles with a given perimeter using unit squares and                            281\n                                                  determine their areas.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                    Lesson 21 3 7",
+    "conceptDevelopmentText": "Materials: (S) Centimeter grid paper (Template), Problem Set, personal white board\n\n     T:   Read the first sentence of Problem 1 on the Problem Set.\n     S:   (Read: On your centimeter grid paper, shade and label as many rectangles as you can with a\n          perimeter of 16 centimeters.)\n     T:   Tell a partner the strategy you will use to find rectangles with a perimeter of 16 centimeters.\nMP.5 S:   I’ll start by finding half of the perimeter, which is 8. Then, I’ll write addition sentences that equal 8.\n          The numbers in these addition sentences are the widths and lengths of the rectangles.\n     T:   Work with a partner to find the widths and lengths for rectangles\n          with a perimeter of 16 centimeters. (Sample student work is shown\n          to the right.)\n     T:   Share your work with another pair of students. If your answers are\n          different, figure out why, and come to an agreement.\n     S:   (Share with another pair and make adjustments.)\n     T:   How many different rectangles did you find with a perimeter of 16\n          centimeters?\n     S:   4 rectangles!\n     T:   Talk to a partner: Are any of your rectangles squares? How do you\n          know?\n     S:   Yes. The rectangle with a width of 4 and a length of 4 is a square.  That’s right because all the side\n          lengths are equal.\n     T:   Shade each rectangle on your centimeter grid paper, and label the side lengths. Darken the\n          perimeters of the rectangles so they stand out on the grid.\n     S:   (Shade rectangles on the centimeter grid paper.)\n When students finish shading, facilitate a class discussion using the following suggested questions.\n         How can you be sure that all of the rectangles have a perimeter of 16 centimeters?\n         Do you think the rectangles all have the same area? Why or why not?\n         Which rectangle do you think has the smallest area? The greatest area? Why?\n After the discussion, ask students to finish Problem 1, which includes sketching each rectangle, labeling the\n side lengths, and finding the areas. Repeat the process for Problem 2 on the Problem Set, releasing students\n to work independently as they are ready.\n\n\n                         Lesson 21:                Construct rectangles with a given perimeter using unit squares and              282\n                                                   determine their areas.\n\n                         ©2015 Great Minds. eureka-math.org\n                         G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                    Lesson 21 3 7",
     "fluencyPracticeText": " Sprint: Multiply or Divide by 3 3.OA.7                                     (10 minutes)\n\nSprint: Multiply or Divide by 3 (10 minutes)\nMaterials: (S) Multiply or Divide by 3 Sprint\n\nNote: This Sprint builds fluency with multiplication and division facts using units of 3.",
     "problemSetGuidanceText": "Students should do their personal best to complete Problems 3 and 4 on the Problem Set within the allotted\n10 minutes. For some classes, it may be appropriate to modify the assignment by specifying which problems\nthey work on first. Some problems do not specify a method for solving. Students should solve these\nproblems using the RDW approach used for Application Problems.\n\n\n          To prepare for Lesson 22, students should\n          add their data from today’s lesson to the\n          sheet shown to the right. (A master copy\n          is included at the end of this lesson.) An\n          extra five minutes is built into the time\n          allotted for the Concept Development to\n          accommodate this. However, choose\n          when the data collection might happen\n          most smoothly for the class, perhaps at\n          the end of the Problem Set or the Student\n          Debrief or after completing the Exit Ticket.",
-    "studentDebriefText": ", instruct students to complete\nthe",
-    "teacherStudentSequence": [],
-    "teacherPrompts": [],
+    "studentDebriefText": "Lesson Objective: Construct rectangles with a given perimeter using unit squares and determine their areas.\nThe Student Debrief is intended to invite reflection and active processing of the total lesson experience.\nInvite students to review their solutions for the Problem Set. They should check work by comparing answers\nwith a partner before going over answers as a class. Look for misconceptions or misunderstandings that can\nbe addressed in the Debrief. Guide students in a conversation to debrief the Problem Set and process the\nlesson.\nAny combination of the questions below may be used to lead the discussion.\n        Compare the rectangles you drew on your grid paper for Problems 1 and 2. What patterns do you\n         see in the side lengths?\n        Look at the charts in Problem 3. Can a rectangle with a perimeter of 10 units have a greater area\n         than a rectangle with a perimeter of 20 units? How do you know?\n        Share your answers to Problem 4. Do you know for sure what Macy’s and Gavin’s rectangles look\n         like? Why or why not?\n\n\n                        Lesson 21:                Construct rectangles with a given perimeter using unit squares and              283\n                                                  determine their areas.\n\n                        ©2015 Great Minds. eureka-math.org\n                        G 3-M7-TE-1.3.0 -0 8.2 0 15\n\nA STORY OF UNITS                                                                                                   Lesson 21 3 7\n\n\n       Look at the number of rectangles you made with\n        the given perimeters in Problems 1, 2, and 3.\n        Why do you think you can make more rectangles\n        with some perimeters than with others?",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "Read the first sentence of Problem 1 on the Problem Set."
+      },
+      {
+        "speaker": "students",
+        "text": "(Read: On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of 16 centimeters.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell a partner the strategy you will use to find rectangles with a perimeter of 16 centimeters. MP.5 S: I’ll start by finding half of the perimeter, which is 8. Then, I’ll write addition sentences that equal 8. The numbers in these addition sentences are the widths and lengths of the rectangles."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with a partner to find the widths and lengths for rectangles with a perimeter of 16 centimeters. (Sample student work is shown to the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Share your work with another pair of students. If your answers are different, figure out why, and come to an agreement."
+      },
+      {
+        "speaker": "students",
+        "text": "(Share with another pair and make adjustments.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many different rectangles did you find with a perimeter of 16 centimeters?"
+      },
+      {
+        "speaker": "students",
+        "text": "4 rectangles!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Talk to a partner: Are any of your rectangles squares? How do you know?"
+      },
+      {
+        "speaker": "students",
+        "text": "Yes. The rectangle with a width of 4 and a length of 4 is a square.  That’s right because all the side lengths are equal."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Shade each rectangle on your centimeter grid paper, and label the side lengths. Darken the perimeters of the rectangles so they stand out on the grid."
+      },
+      {
+        "speaker": "students",
+        "text": "(Shade rectangles on the centimeter grid paper.) When students finish shading, facilitate a class discussion using the following suggested questions.  How can you be sure that all of the rectangles have a perimeter of 16 centimeters?  Do you think the rectangles all have the same area? Why or why not?  Which rectangle do you think has the smallest area? The greatest area? Why? After the discussion, ask students to finish Problem 1, which includes sketching each rectangle, labeling the side lengths, and finding the areas. Repeat the process for Problem 2 on the Problem Set, releasing students to work independently as they are ready. determine their areas. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 21 3 7"
+      }
+    ],
+    "teacherPrompts": [
+      "Read the first sentence of Problem 1 on the Problem Set.",
+      "Tell a partner the strategy you will use to find rectangles with a perimeter of 16 centimeters. MP.5 S: I’ll start by finding half of the perimeter, which is 8. Then, I’ll write addition sentences that equal 8. The numbers in these addition sentences are the widths and lengths of the rectangles.",
+      "Work with a partner to find the widths and lengths for rectangles with a perimeter of 16 centimeters. (Sample student work is shown to the right.)",
+      "Share your work with another pair of students. If your answers are different, figure out why, and come to an agreement.",
+      "How many different rectangles did you find with a perimeter of 16 centimeters?",
+      "Talk to a partner: Are any of your rectangles squares? How do you know?",
+      "Shade each rectangle on your centimeter grid paper, and label the side lengths. Darken the perimeters of the rectangles so they stand out on the grid."
+    ],
     "debriefPrompt": "Compare the rectangles you drew on your grid paper for Problems 1 and 2. What patterns do you see in the side lengths?",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
@@ -85,48 +142,63 @@
     "modelsDetected": [
       "ruler-or-length",
       "geometry-diagram",
-      "money-model",
       "picture-or-drawing"
     ],
     "sourceEvidence": {
       "ruler-or-length": [
-        "1. On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of",
-        "16 centimeters.",
-        "a. Sketch the rectangles below, and label the side lengths.",
-        "2. On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of 18",
-        "centimeters.",
-        "a. Sketch the rectangles below, and label the side lengths.",
-        "3. Use centimeter grid paper to shade in as many rectangles as you can with the given perimeters.",
-        "Width Length Area Width Length Area"
+        "with her tape. Label the width and length of each rectangle. EXPRESSION:",
+        "Materials: (S) Centimeter grid paper (Template), Problem Set, personal white board",
+        "S: (Read: On your centimeter grid paper, shade and label as many rectangles as you can with a",
+        "perimeter of 16 centimeters.)",
+        "T: Tell a partner the strategy you will use to find rectangles with a perimeter of 16 centimeters.",
+        "with a perimeter of 16 centimeters. (Sample student work is shown",
+        "centimeters?",
+        "S: Yes. The rectangle with a width of 4 and a length of 4 is a square.  That’s right because all the side"
       ],
       "geometry-diagram": [
         "Construct rectangles with a given perimeter using unit squares and determine their areas.",
-        "1. On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of",
-        "a. Sketch the rectangles below, and label the side lengths.",
-        "b. Find the area of each rectangle you drew above.",
-        "2. On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of 18",
-        "a. Sketch the rectangles below, and label the side lengths.",
-        "b. Find the area of each rectangle you drew above.",
-        "Lesson 21: Construct rectangles with a given perimeter using unit squares and 287"
-      ],
-      "money-model": [
-        "1. On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of",
-        "16 centimeters.",
-        "2. On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of 18",
-        "centimeters.",
-        "3. Use centimeter grid paper to shade in as many rectangles as you can with the given perimeters.",
-        "4. Macy and Gavin both draw rectangles with perimeters of 16 centimeters. Use words and pictures to"
+        "Mrs. Zeck will use 14 feet of tape to mark a rectangle on the",
+        "with her tape. Label the width and length of each rectangle. EXPRESSION:",
+        "find half of the perimeter and list all",
+        "Lesson 21: Construct rectangles with a given perimeter using unit squares and 281",
+        "perimeter of 16 centimeters.)",
+        "T: Tell a partner the strategy you will use to find rectangles with a perimeter of 16 centimeters.",
+        "MP.5 S: I’ll start by finding half of the perimeter, which is 8. Then, I’ll write addition sentences that equal 8."
       ],
       "picture-or-drawing": [
+        "gym wall. Draw several rectangles that Mrs. Zeck could make OF ACTION AND",
+        "S: (Read: On your centimeter grid paper, shade and label as many rectangles as you can with a",
+        "T: Shade each rectangle on your centimeter grid paper, and label the side lengths. Darken the",
+        "S: (Shade rectangles on the centimeter grid paper.)",
         "1. On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of",
         "2. On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of 18",
         "3. Use centimeter grid paper to shade in as many rectangles as you can with the given perimeters.",
-        "a. Use the charts below to show how many rectangles you shaded for each given perimeter. You might",
         "4. Macy and Gavin both draw rectangles with perimeters of 16 centimeters. Use words and pictures to"
       ]
     },
     "sourceIllustrationRequired": true,
-    "animationSourceSequence": [],
+    "animationSourceSequence": [
+      {
+        "speaker": "students",
+        "text": "(Read: On your centimeter grid paper, shade and label as many rectangles as you can with a perimeter of 16 centimeters.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell a partner the strategy you will use to find rectangles with a perimeter of 16 centimeters. MP.5 S: I’ll start by finding half of the perimeter, which is 8. Then, I’ll write addition sentences that equal 8. The numbers in these addition sentences are the widths and lengths of the rectangles."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with a partner to find the widths and lengths for rectangles with a perimeter of 16 centimeters. (Sample student work is shown to the right.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Shade each rectangle on your centimeter grid paper, and label the side lengths. Darken the perimeters of the rectangles so they stand out on the grid."
+      },
+      {
+        "speaker": "students",
+        "text": "(Shade rectangles on the centimeter grid paper.) When students finish shading, facilitate a class discussion using the following suggested questions.  How can you be sure that all of the rectangles have a perimeter of 16 centimeters?  Do you think the rectangles all have the same area? Why or why not?  Which rectangle do you think has the smallest area? The greatest area? Why? After the discussion, ask students to finish Problem 1, which includes sketching each rectangle, labeling the side lengths, and finding the areas. Repeat the process for Problem 2 on the Problem Set, releasing students to work independently as they are ready. determine their areas. ©2015 Great Minds. eureka-math.org G 3-M7-TE-1.3.0 -0 8.2 0 15 A STORY OF UNITS Lesson 21 3 7"
+      }
+    ],
     "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
   },
   "deliveryContract": {

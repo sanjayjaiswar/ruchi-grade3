@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m4-l1",
+  "teacherEditionPdfSha256": "224c47aa4bdf3f1cf61eb364f947bddfe8d2521535486f77cbb6b8e47d7d8c4f",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m4-teacher/page-016.png",
+      "sha256": "b046538bb789afaa227f0c21e04f4f4c7239b916cdc36bfbc0fd0f4d3e3c204f",
+      "pdfPage": 16,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 1 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-017.png",
+      "sha256": "f7b2fbe62e10238b7777cfc52a943df2f47baf6c9f74d2e1294ef1dc9e7c7741",
+      "pdfPage": 17,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 1 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m4-teacher/page-215.png",
+      "sha256": "686987531843417adf63e88a40153734944178f85a3ed01b23989d5f6aa327e1",
+      "pdfPage": 215,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 1 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m4-teacher/page-016.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "use triangle pattern blocks to cover each shape below"
+        ],
+        "answerKeyEvidence": "Lines drawn to show 6 triangles each inside Shapes A and B",
+        "layout": {
+          "family": "two-target-triangle-pattern-block-cover",
+          "subpartCount": 2,
+          "modelPrimitive": "official-parallelogram-and-hexagon-outlines+triangle-cover",
+          "modelCounts": [
+            6,
+            6
+          ],
+          "modelOrientation": "two-target-outlines",
+          "responseStructure": "draw-covering-lines-and-count"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m4-teacher/page-016.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "use rhombus pattern blocks to cover each shape below"
+        ],
+        "answerKeyEvidence": "Lines drawn to show 3 rhombuses each inside Shapes A and B",
+        "layout": {
+          "family": "two-target-rhombus-pattern-block-cover",
+          "subpartCount": 2,
+          "modelPrimitive": "official-parallelogram-and-hexagon-outlines+rhombus-cover",
+          "modelCounts": [
+            3,
+            3
+          ],
+          "modelOrientation": "two-target-outlines",
+          "responseStructure": "draw-covering-lines-and-count"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m4-teacher/page-016.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "use trapezoid pattern blocks to cover each shape below"
+        ],
+        "answerKeyEvidence": "Lines drawn to show 2 trapezoids each inside Shapes A and B",
+        "layout": {
+          "family": "two-target-trapezoid-pattern-block-cover",
+          "subpartCount": 2,
+          "modelPrimitive": "official-parallelogram-and-hexagon-outlines+trapezoid-cover",
+          "modelCounts": [
+            2,
+            2
+          ],
+          "modelOrientation": "two-target-outlines",
+          "responseStructure": "draw-covering-lines-and-count"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m4-teacher/page-017.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "how is the number of pattern blocks needed to cover the same shape related"
+        ],
+        "answerKeyEvidence": "As pattern blocks get bigger, the number of blocks it takes to cover the same shape gets smaller.",
+        "layout": {
+          "family": "pattern-block-size-relation-open-response",
+          "subpartCount": 1,
+          "modelPrimitive": "open-written-explanation",
+          "modelCounts": [],
+          "modelOrientation": "vertical-open-response",
+          "responseStructure": "explain-size-to-count-relation",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m4-teacher/page-017.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "use square pattern blocks to cover the rectangle below"
+        ],
+        "answerKeyEvidence": "Lines drawn to show 6 squares inside rectangle",
+        "layout": {
+          "family": "six-square-pattern-block-rectangle-cover",
+          "subpartCount": 1,
+          "modelPrimitive": "official-rectangle-outline+square-cover",
+          "modelCounts": [
+            6
+          ],
+          "modelOrientation": "single-target-outline",
+          "responseStructure": "draw-covering-lines-and-count"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m4-teacher/page-017.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "use trapezoid pattern blocks to cover the rectangle in problem 5"
+        ],
+        "answerKeyEvidence": "No, because you can’t have gaps or overlaps when measuring area",
+        "layout": {
+          "family": "trapezoid-non-cover-rectangle-explanation",
+          "subpartCount": 1,
+          "modelPrimitive": "problem-5-rectangle-reference+open-response",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "figure-over-open-response",
+          "responseStructure": "attempt-cover-and-explain-gaps-or-overlaps",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem structure was transcribed from the fingerprinted Teacher Edition page and answer key; no whole-page or whole-problem screenshot is acceptance evidence."
+      }
+    }
+  ]
+}

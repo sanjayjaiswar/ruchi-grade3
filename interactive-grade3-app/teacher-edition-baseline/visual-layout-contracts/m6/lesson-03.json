@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m6-l3",
+  "teacherEditionPdfSha256": "74325e3dfcae94e1fe359552d3857a3c929b26c5cca327ee80ef45d651aa7358",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m6/workbook-page-11.png",
+      "sha256": "ca9cfff282aaaa8f17de5b17e118384a41482e3918de169bdf55fb1e35f6065e",
+      "pdfPage": 41,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 3 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/workbook-page-12.png",
+      "sha256": "f4ca98b66906e9a9be584ca988d5386af4eb9ac36445942cf1933b0f5c3787f2",
+      "pdfPage": 42,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 3 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/workbook-page-13.png",
+      "sha256": "abd20aa6ee447a9ac689205e32df80fcfd3ef10eb02b54c9c0b6e75ed101e2ea",
+      "pdfPage": 43,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 3 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m6/teacher-answer-page-150.png",
+      "sha256": "b3ab7e57fdec636a3121e0c0bd125cefbb8fc29bf9a9dbd79d1eeb0bf9995ddb",
+      "pdfPage": 150,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 3 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m6/workbook-page-11.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "This table shows the number of students in each class."
+        ],
+        "answerKeyEvidence": "Answer provided; 8 units colored; 6 and a half units colored; 9 units colored; 2 students; 9 + 16 + 13 + 18 = 56; 6; 22 − 16 = 6",
+        "layout": {
+          "family": "table-to-scaled-class-enrollment-bar-graph",
+          "subpartCount": 3,
+          "modelPrimitive": "given-four-row-table-plus-live-scaled-bar-chart",
+          "modelCounts": [
+            9,
+            16,
+            13,
+            18
+          ],
+          "modelOrientation": "table-over-four-category-chart-and-response",
+          "responseStructure": "retain-baking-example-complete-bars-and-answer-a-through-c"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m6/workbook-page-12.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "This bar graph shows Kyle"
+        ],
+        "answerKeyEvidence": "$34; February, April, and May; $17; $40 − $23 = $17; April; March",
+        "layout": {
+          "family": "read-five-source-provided-kyle-savings-bars",
+          "subpartCount": 4,
+          "modelPrimitive": "live-source-provided-five-bar-chart",
+          "modelCounts": [
+            30,
+            46,
+            23,
+            34,
+            40
+          ],
+          "modelOrientation": "five-horizontal-category-bars-over-response",
+          "responseStructure": "read-may-less-than-thirty-five-june-minus-april-and-half"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m6/workbook-page-12.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Complete the table below to show the same data"
+        ],
+        "answerKeyEvidence": "February: $30; March: $46; April: $23; May: $34; June: $40",
+        "layout": {
+          "family": "transfer-kyle-savings-graph-to-five-row-table",
+          "subpartCount": 5,
+          "modelPrimitive": "source-provided-five-bar-chart-plus-live-table",
+          "modelCounts": [
+            30,
+            46,
+            23,
+            34,
+            40
+          ],
+          "modelOrientation": "chart-over-table",
+          "responseStructure": "complete-five-month-value-cells"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m6/workbook-page-13.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the graph"
+        ],
+        "answerKeyEvidence": "Intervals drawn correctly on the number line; each day plotted and labeled correctly on number line",
+        "layout": {
+          "family": "transfer-charlotte-bars-to-number-line",
+          "subpartCount": 5,
+          "modelPrimitive": "source-provided-five-bar-chart-plus-live-number-line",
+          "modelCounts": [
+            50,
+            50,
+            70,
+            50,
+            40
+          ],
+          "modelOrientation": "chart-over-horizontal-number-line",
+          "responseStructure": "draw-ten-minute-intervals-and-plot-five-days"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m6/workbook-page-13.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the graph or number line to answer"
+        ],
+        "answerKeyEvidence": "Monday, Tuesday, and Thursday; 50 min; 30 min",
+        "layout": {
+          "family": "two-questions-from-charlotte-reading-graph",
+          "subpartCount": 2,
+          "modelPrimitive": "source-provided-five-bar-chart-plus-open-response",
+          "modelCounts": [
+            50,
+            50,
+            70,
+            50,
+            40
+          ],
+          "modelOrientation": "chart-over-two-part-response",
+          "responseStructure": "identify-equal-days-and-wednesday-friday-difference",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against fingerprinted Module 6 Problem Set pages and answer pages. Complete page screenshots and task-bearing crops are prohibited. The two Lesson 1 picture-graph crops contain only the mathematically meaningful empty graph topology, category labels, and key; every prompt, table, answer, and explanation remains live per problem."
+      }
+    }
+  ]
+}

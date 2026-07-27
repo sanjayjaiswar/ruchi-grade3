@@ -1,10 +1,39 @@
 import { readFileSync, readdirSync, statSync } from 'node:fs';
+import { createRequire } from 'node:module';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const srcRoot = join(root, 'src');
 const lessonTemplatePath = join(srcRoot, 'app/pages/lesson/lesson.html');
+const require = createRequire(import.meta.url);
+const ts = require('typescript');
+
+require.extensions['.ts'] = function loadTypeScript(module, filename) {
+  const source = readFileSync(filename, 'utf8');
+  const output = ts.transpileModule(source, {
+    compilerOptions: {
+      esModuleInterop: true,
+      importHelpers: false,
+      module: ts.ModuleKind.CommonJS,
+      target: ts.ScriptTarget.ES2022
+    }
+  });
+  module._compile(output.outputText, filename);
+};
+
+const { findLessonRuntime } = require(
+  join(root, 'src/app/data/lessons/lesson-registry.ts')
+);
+const lessonCounts = {
+  m1: 21,
+  m2: 21,
+  m3: 21,
+  m4: 16,
+  m5: 30,
+  m6: 9,
+  m7: 34
+};
 
 const failures = [];
 
@@ -95,6 +124,47 @@ walk(srcRoot, (path) => {
   }
 });
 
+for (const [moduleId, lessonCount] of Object.entries(lessonCounts)) {
+  for (let lessonNumber = 1; lessonNumber <= lessonCount; lessonNumber += 1) {
+    const lesson = findLessonRuntime(moduleId, lessonNumber)
+      ?.problemSetCenteredLesson;
+    if (!lesson) {
+      failures.push(`${moduleId}-l${lessonNumber}: missing Problem Set runtime`);
+      continue;
+    }
+    for (const problem of lesson.problems) {
+      const label = `${moduleId}-l${lessonNumber}-p${problem.number}`;
+      for (const [mode, visual] of [
+        ['Blank', problem.blankVisual],
+        ['Solved', problem.solvedVisual]
+      ]) {
+        if (!visual?.sections?.length) {
+          failures.push(`${label}: ${mode} authored visual is missing`);
+          continue;
+        }
+        for (const section of flattenSections(visual.sections)) {
+          if (section?.kind === 'source-first-workspace') {
+            failures.push(
+              `${label}: ${mode} must use authored interactive visuals, not a Teacher Edition page-screenshot workspace`
+            );
+          }
+          if (
+            section?.kind === 'source-crop' &&
+            section.crop?.x === 0 &&
+            section.crop?.y === 0 &&
+            section.crop?.width === section.imageWidth &&
+            section.crop?.height === section.imageHeight
+          ) {
+            failures.push(
+              `${label}: ${mode} contains a full Teacher Edition page instead of a tightly cropped meaningful source asset`
+            );
+          }
+        }
+      }
+    }
+  }
+}
+
 if (failures.length > 0) {
   console.error('Full PDF/source pages are barred from Blank/Solved problem tabs.');
   for (const failure of failures) {
@@ -103,5 +173,18 @@ if (failures.length > 0) {
   process.exit(1);
 }
 
-console.log('OK: Blank/Solved problem tabs do not render full PDF/source pages.');
-console.log('- Tightly cropped source assets remain allowed when the pictured object is part of the official problem.');
+console.log('OK: Blank/Solved problem tabs use authored visuals instead of Teacher Edition page screenshots.');
+console.log('- Only tightly cropped source assets that carry mathematical meaning remain allowed.');
+
+function flattenSections(sections) {
+  const flattened = [];
+  for (const section of sections ?? []) {
+    flattened.push(section);
+    if (section?.kind === 'card-grid') {
+      for (const card of section.cards ?? []) {
+        flattened.push(...flattenSections(card.sections));
+      }
+    }
+  }
+  return flattened;
+}

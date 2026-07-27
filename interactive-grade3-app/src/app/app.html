@@ -60,6 +60,18 @@
           <span aria-hidden="true">›</span>
         </button>
       </nav>
+      <form class="topbar-search" role="search" (ngSubmit)="submitSearch()">
+        <label>
+          <input
+            type="search"
+            name="portalSearch"
+            [(ngModel)]="searchQuery"
+            aria-label="Search Grade 3 learner content"
+            placeholder="Search lessons and activities"
+            autocomplete="off" />
+        </label>
+        <button type="submit">Search</button>
+      </form>
     </div>
   </header>
 

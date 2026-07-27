@@ -3,7 +3,7 @@
   "lessonId": "m3-l12",
   "moduleId": "m3",
   "lessonNumber": 12,
-  "generatedAt": "2026-07-22T01:59:46.426Z",
+  "generatedAt": "2026-07-27T02:56:13.408Z",
   "source": {
     "teacherEditionPdf": "EurekaMath-Sources/Module_3/g3_m3_teacher_edition_v1_3_0.pdf",
     "teacherEditionSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
@@ -39,13 +39,165 @@
   "objective": "Apply the distributive property and the fact 9 = 10 – 1 as a strategy to multiply.",
   "instructionalContract": {
     "instructionalMode": "concept-development",
-    "applicationProblemText": "and",
-    "conceptDevelopmentText": "similar? How are they\n        different?\n\nExit Ticket (3 minutes)\nAfter the",
-    "fluencyPracticeText": " Multiply By 8 3.OA.7                                 (7 minutes)\n Take from the Ten 3.OA.5                             (4 minutes)\n\nMultiply by 8 (7 minutes)\nMaterials: (S) Multiply By 8 (6–10) (Pattern Sheet)\n\nNote: This activity builds fluency with respect to multiplication facts using units of 8. It supports students\nknowing from memory all products of two one-digit numbers. See Lesson 5 for the directions regarding\nadministration of a Multiply By Pattern Sheet.\n    T:   (Write 6 × 8 = ____.) Let’s skip-count up by eights to solve. (Count with fingers to 6 as students\n         count.)\n    S:   8, 16, 24, 32, 40, 48.\n    T:   Let’s skip-count down to find the answer, too. Start at 80. (Count down from 10 fingers as students\n         count.)\n    S:   80, 72, 64, 56, 48.\n    T:   Let’s skip-count up again to find the answer, but this time start at 40. (Count up from 5 fingers as\n         students count.)\n    S:   40, 48.\nContinue with the following possible sequence: 8 × 8, 7 × 8, and 9 × 8.\n    T:   (Distribute the Multiply By 8 Pattern Sheet.) Let’s practice multiplying by 8. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 12:               Apply the distributive property and the fact 9 = 10 – 1 as a strategy                       149\n                                                  to multiply.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 12 3 3\n\n\nTake from the Ten (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity prepares students for today’s",
+    "applicationProblemText": "A scientist fills 5 test tubes with 9 milliliters of fresh water in each. She fills another 3 test tubes with\n9 milliliters of salt water in each. How many milliliters of water does she use in all? Use the break apart and\ndistribute strategy to solve.\n\n\nNote: The Application Problem is meant to reinforce the 5 + n break apart and distribute strategy to support\nProblem 1 in the Problem Set and also provide a point of comparison between the 5 + n strategy and\n9 = 10 – 1 strategy for multiplying with a factor of 9. Notice that, to add 45 and 27, the student has\ntaken 3 from 45 to make 30 from 27.\n\n\n                        Lesson 12:               Apply the distributive property and the fact 9 = 10 – 1 as a strategy                       150\n                                                 to multiply.\n\n                        This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                        G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 12 3 3",
+    "conceptDevelopmentText": "Template\nMaterials: (S) Personal white board, tape diagram (Template)\n\nUse the 9 = 10 – 1 strategy to solve 9 × n facts.\nHave students insert templates into their personal white boards.\n    T:   We solved 8 × 9 in the Application Problem. Does 8 × 9 show 8 units of 9 or\n         9 units of 8?\n    S:   8 units of 9.\n    T:   What multiplication fact represents 9 units of 8?\n    S:   9 × 8.\n    T:   How can our work solving 8 × 9 help us solve 9 × 8?\n    S:   We can use the commutative property to know that,\n         if 8 × 9 = 72, then so does 9 × 8.\n                                                                                    NOTES ON\n    T:   Sometimes we can’t use the commutative property                            MULTIPLE MEANS\n         because we don’t know the product of either fact.\n                                                                                    OF ACTION AND\n         Let’s look at how we can use a tens fact to help solve a\n                                                                                    EXPRESSION:\n         nines fact when that happens. What’s easier to solve,\n         9 × 8 or 10 × 8?                                                  Teachers should adjust their rate of\n                                                                           speech for English language learners\n    S:   10 × 8 because we already know tens facts.                        and others as students write equations\n    T:   How many eights are in 10 × 8?                                    in response to oral prompts. Label the\n    S:   10 eights!                                                        equations. For example, write\n                                                                           9 eights under 9 × 8.\n    T:   Label them on your tape diagram.\n    T:   How many eights in 9 × 8?\n    S:   9 eights!\n    T:   Change your tape diagram so it shows 9 eights. (Allow students time to finish their work.)\n    T:   What change did you make?\n    S:   I crossed off an eight.  I took away 1 eight.  I subtracted one unit.\n    T:   9 eights (point to the tape diagram) equals 10 eights minus…?\n    S:   1 eight!\n    T:   Work with your partner to write a number sentence showing that.\n    S:   (Write 9 × 8 = (10 × 8) – (1 × 8).)\n    T:   Rewrite your equation using the products of 10 × 8 and 1 × 8.\n    S:   (Write 9 × 8 = 80 – 8.)\n    T:   What is 80 – 8?\n    S:   72.\n    T:   Tell your partner how we used a tens fact to solve a nines fact.\n    S:   We just took the product of 10 × 8 and subtracted 1 eight.  That made the math simple.\n         I can do 80 – 8 in my head!\n\n\n                         Lesson 12:               Apply the distributive property and the fact 9 = 10 – 1 as a strategy                           151\n                                                  to multiply.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 12 3 3\n\n\n       T:   (Write 9 × 8 = (5 + 4) × 8.) One way we’ve learned to solve 9 × 8 is by breaking 9 eights up into\n            5 eights plus 4 eights. Why did it work well to subtract this time instead?\nMP.3   S:   Because we only had to subtract 1 eight.  Yeah, 9 is\n            really close to 10, and tens are easy to use. We already\n            know 10 × 8, and besides, it’s easy to subtract from a                       NOTES ON\n            tens fact.                                                                   MULTIPLE MEANS\n       T:   Work with your partner to change the equation I just                         OF ENGAGEMENT:\n            wrote for 9 × 8. Make sure it shows how we used                      As students solve the Problem Set,\n            subtraction to solve.                                                some learners may solve Problem 1\n       S:   (Change the equation to 9 × 8 = (10 – 1) × 8.)                       more efficiently using the 9 = 10 – 1\n                                                                                 strategy.\n       T:   What part of the equation did you change?\n                                                                                 Students working above grade level can\n       S:   We changed 5 + 4 to 10 – 1.                                          be encouraged to write equations using\n       T:   Why?                                                                 parentheses for Problem 2. Challenge\n       S:   Because we didn’t add; we subtracted. We started                     students to offer multiple equations.\n            with 10 eights and then took away 1 eight.                           Ask, “How many equations can you\n                                                                                                                    write for Problem 2(a)?”\n  Continue with the following suggested sequence: 9 × 7 and\n  9 × 6.",
+    "fluencyPracticeText": " Multiply By 8 3.OA.7                                 (7 minutes)\n Take from the Ten 3.OA.5                             (4 minutes)\n\nMultiply by 8 (7 minutes)\nMaterials: (S) Multiply By 8 (6–10) (Pattern Sheet)\n\nNote: This activity builds fluency with respect to multiplication facts using units of 8. It supports students\nknowing from memory all products of two one-digit numbers. See Lesson 5 for the directions regarding\nadministration of a Multiply By Pattern Sheet.\n    T:   (Write 6 × 8 = ____.) Let’s skip-count up by eights to solve. (Count with fingers to 6 as students\n         count.)\n    S:   8, 16, 24, 32, 40, 48.\n    T:   Let’s skip-count down to find the answer, too. Start at 80. (Count down from 10 fingers as students\n         count.)\n    S:   80, 72, 64, 56, 48.\n    T:   Let’s skip-count up again to find the answer, but this time start at 40. (Count up from 5 fingers as\n         students count.)\n    S:   40, 48.\nContinue with the following possible sequence: 8 × 8, 7 × 8, and 9 × 8.\n    T:   (Distribute the Multiply By 8 Pattern Sheet.) Let’s practice multiplying by 8. Be sure to work left to\n         right across the page.\n\n\n                         Lesson 12:               Apply the distributive property and the fact 9 = 10 – 1 as a strategy                       149\n                                                  to multiply.\n\n                         This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                         G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                               Lesson 12 3 3\n\n\nTake from the Ten (4 minutes)\nMaterials: (S) Personal white board\n\nNote: This fluency activity prepares students for today’s Concept Development.\n    T:   (Write 20 – 2 = ____.) Say the subtraction sentence in unit form.\n    S:   2 tens – 2 ones.\n    T:   (Point to the 20.) Let’s break apart the 20, taking out 10 ones. How many tens are left?\n    S:   1 ten.\n    T:   What’s 10 ones – 2 ones?\n    S:   8 ones.\n    T:   (Write 8.)\n    T:   What’s 20 – 2?\n    S:   18.\n    T:   (Write 20 – 2 = 18.)\n    T:   (Write 30 – 3 = ____.) After writing the equation, break apart the 30, taking out 10 ones.\n    S:   (Break apart the 30 into 20 and 10.)\n    T:   Take 3 ones from 10 ones and complete the equation.\n    S:   (Take 3 from 10 to get 7; 30 – 3 = 27.)\nContinue with the following possible sequence: 40 – 4, 50 – 5, 60 – 6, 70 – 7, 80 – 8, and 90 – 9.",
     "problemSetGuidanceText": "Students should do their personal best to complete the\n  Problem Set within the allotted 10 minutes. For some\n  classes, it may be appropriate to modify the assignment\n  by specifying which problems they work on first. Some\n  problems do not specify a method for solving. Students\n  should solve these problems using the RDW approach\n  used for Application Problems.",
-    "studentDebriefText": ", instruct students to complete\nthe",
-    "teacherStudentSequence": [],
-    "teacherPrompts": [],
+    "studentDebriefText": "Lesson Objective: Apply the distributive property and the\n  fact 9 = 10 – 1 as a strategy to multiply.\n  The Student Debrief is intended to invite reflection and\n  active processing of the total lesson experience.\n  Invite students to review their solutions for the Problem\n  Set. They should check work by comparing answers with a\n  partner before going over answers as a class. Look for\n  misconceptions or misunderstandings that can be\n  addressed in the Debrief. Guide students in a\n  conversation to debrief the Problem Set and process the\n  lesson.\n\n\n                            Lesson 12:               Apply the distributive property and the fact 9 = 10 – 1 as a strategy                       152\n                                                     to multiply.\n\n                            This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org\n                            G3-M3-TE-1.3.0-05.2015\n\nA STORY OF UNITS                                                                                                              Lesson 12 3 3\n\n\nAny combination of the questions below may be used to\nlead the discussion.\n       What does the nine represent in Problem 1?\n        (It represents the value of each unit.)\n        What does the nine represent in Problem 2?\n        (It represents the number of units.)\n       How can multiplication be used to solve the\n        division facts in Problem 4?\n       Think about the strategy used to solve Problem\n        2(a). How could a similar strategy be used to solve\n        8 × 6 instead of 9 × 6?\n       Today, we solved 9 × 8 in different ways. How are\n        the strategies we used in the Application Problem\n        and Concept Development similar? How are they\n        different?",
+    "teacherStudentSequence": [
+      {
+        "speaker": "teacher",
+        "text": "We solved 8 × 9 in the Application Problem. Does 8 × 9 show 8 units of 9 or 9 units of 8?"
+      },
+      {
+        "speaker": "students",
+        "text": "8 units of 9."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What multiplication fact represents 9 units of 8?"
+      },
+      {
+        "speaker": "students",
+        "text": "9 × 8."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can our work solving 8 × 9 help us solve 9 × 8?"
+      },
+      {
+        "speaker": "students",
+        "text": "We can use the commutative property to know that, if 8 × 9 = 72, then so does 9 × 8."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Sometimes we can’t use the commutative property MULTIPLE MEANS because we don’t know the product of either fact. OF ACTION AND Let’s look at how we can use a tens fact to help solve a EXPRESSION: nines fact when that happens. What’s easier to solve, 9 × 8 or 10 × 8? Teachers should adjust their rate of speech for English language learners"
+      },
+      {
+        "speaker": "students",
+        "text": "10 × 8 because we already know tens facts. and others as students write equations"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many eights are in 10 × 8? in response to oral prompts. Label the"
+      },
+      {
+        "speaker": "students",
+        "text": "10 eights! equations. For example, write 9 eights under 9 × 8."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label them on your tape diagram."
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many eights in 9 × 8?"
+      },
+      {
+        "speaker": "students",
+        "text": "9 eights!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Change your tape diagram so it shows 9 eights. (Allow students time to finish their work.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What change did you make?"
+      },
+      {
+        "speaker": "students",
+        "text": "I crossed off an eight.  I took away 1 eight.  I subtracted one unit."
+      },
+      {
+        "speaker": "teacher",
+        "text": "9 eights (point to the tape diagram) equals 10 eights minus…?"
+      },
+      {
+        "speaker": "students",
+        "text": "1 eight!"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to write a number sentence showing that."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 9 × 8 = (10 × 8) – (1 × 8).)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Rewrite your equation using the products of 10 × 8 and 1 × 8."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 9 × 8 = 80 – 8.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "What is 80 – 8?"
+      },
+      {
+        "speaker": "students",
+        "text": "72."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell your partner how we used a tens fact to solve a nines fact."
+      },
+      {
+        "speaker": "students",
+        "text": "We just took the product of 10 × 8 and subtracted 1 eight.  That made the math simple. I can do 80 – 8 in my head! to multiply. This work is derived from Eureka Math ™ and licensed by Great Minds. ©2015 Great Minds. eureka-math.org G3-M3-TE-1.3.0-05.2015 A STORY OF UNITS Lesson 12 3 3"
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 9 × 8 = (5 + 4) × 8.) One way we’ve learned to solve 9 × 8 is by breaking 9 eights up into 5 eights plus 4 eights. Why did it work well to subtract this time instead? MP.3 S: Because we only had to subtract 1 eight.  Yeah, 9 is really close to 10, and tens are easy to use. We already know 10 × 8, and besides, it’s easy to subtract from a NOTES ON tens fact. MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to change the equation I just OF ENGAGEMENT: wrote for 9 × 8. Make sure it shows how we used As students solve the Problem Set, subtraction to solve. some learners may solve Problem 1"
+      },
+      {
+        "speaker": "students",
+        "text": "(Change the equation to 9 × 8 = (10 – 1) × 8.) more efficiently using the 9 = 10 – 1 strategy."
+      },
+      {
+        "speaker": "teacher",
+        "text": "What part of the equation did you change? Students working above grade level can"
+      },
+      {
+        "speaker": "students",
+        "text": "We changed 5 + 4 to 10 – 1. be encouraged to write equations using"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Why? parentheses for Problem 2. Challenge"
+      },
+      {
+        "speaker": "students",
+        "text": "Because we didn’t add; we subtracted. We started students to offer multiple equations. with 10 eights and then took away 1 eight. Ask, “How many equations can you write for Problem 2(a)?” Continue with the following suggested sequence: 9 × 7 and 9 × 6."
+      }
+    ],
+    "teacherPrompts": [
+      "We solved 8 × 9 in the Application Problem. Does 8 × 9 show 8 units of 9 or 9 units of 8?",
+      "What multiplication fact represents 9 units of 8?",
+      "How can our work solving 8 × 9 help us solve 9 × 8?",
+      "Sometimes we can’t use the commutative property MULTIPLE MEANS because we don’t know the product of either fact. OF ACTION AND Let’s look at how we can use a tens fact to help solve a EXPRESSION: nines fact when that happens. What’s easier to solve, 9 × 8 or 10 × 8? Teachers should adjust their rate of speech for English language learners",
+      "How many eights are in 10 × 8? in response to oral prompts. Label the",
+      "Label them on your tape diagram.",
+      "How many eights in 9 × 8?",
+      "Change your tape diagram so it shows 9 eights. (Allow students time to finish their work.)",
+      "What change did you make?",
+      "9 eights (point to the tape diagram) equals 10 eights minus…?",
+      "Work with your partner to write a number sentence showing that.",
+      "Rewrite your equation using the products of 10 × 8 and 1 × 8.",
+      "What is 80 – 8?",
+      "Tell your partner how we used a tens fact to solve a nines fact.",
+      "(Write 9 × 8 = (5 + 4) × 8.) One way we’ve learned to solve 9 × 8 is by breaking 9 eights up into 5 eights plus 4 eights. Why did it work well to subtract this time instead? MP.3 S: Because we only had to subtract 1 eight.  Yeah, 9 is really close to 10, and tens are easy to use. We already know 10 × 8, and besides, it’s easy to subtract from a NOTES ON tens fact. MULTIPLE MEANS",
+      "Work with your partner to change the equation I just OF ENGAGEMENT: wrote for 9 × 8. Make sure it shows how we used As students solve the Problem Set, subtraction to solve. some learners may solve Problem 1",
+      "What part of the equation did you change? Students working above grade level can",
+      "Why? parentheses for Problem 2. Challenge"
+    ],
     "debriefPrompt": "What does the nine represent in Problem 1? (It represents the value of each unit.) What does the nine represent in Problem 2? (It represents the number of units.)",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
@@ -98,18 +250,110 @@
   "visualContract": {
     "modelsDetected": [
       "array",
+      "tape-diagram",
+      "number-bond",
+      "liquid-measure",
       "picture-or-drawing"
     ],
     "sourceEvidence": {
       "array": [
         "3. Matt buys a pack of postage stamps. He counts 9 rows of 4 stamps. He thinks of 10 fours to find the total"
       ],
+      "tape-diagram": [
+        "Materials: (S) Personal white board, tape diagram (Template)",
+        "T: Label them on your tape diagram.",
+        "T: Change your tape diagram so it shows 9 eights. (Allow students time to finish their work.)",
+        "T: 9 eights (point to the tape diagram) equals 10 eights minus…?"
+      ],
+      "number-bond": [
+        "9 milliliters of salt water in each. How many milliliters of water does she use in all? Use the break apart and",
+        "Note: The Application Problem is meant to reinforce the 5 + n break apart and distribute strategy to support",
+        "T: (Point to the 20.) Let’s break apart the 20, taking out 10 ones. How many tens are left?",
+        "T: (Write 30 – 3 = ____.) After writing the equation, break apart the 30, taking out 10 ones.",
+        "S: (Break apart the 30 into 20 and 10.)"
+      ],
+      "liquid-measure": [
+        "A scientist fills 5 test tubes with 9 milliliters of fresh water in each. She fills another 3 test tubes with",
+        "9 milliliters of salt water in each. How many milliliters of water does she use in all? Use the break apart and"
+      ],
       "picture-or-drawing": [
-        "2. Find the total value of the shaded blocks."
+        "Materials: (S) Personal white board, tape diagram (Template)",
+        "T: Label them on your tape diagram.",
+        "T: Change your tape diagram so it shows 9 eights. (Allow students time to finish their work.)",
+        "T: 9 eights (point to the tape diagram) equals 10 eights minus…?"
       ]
     },
     "sourceIllustrationRequired": false,
-    "animationSourceSequence": [],
+    "animationSourceSequence": [
+      {
+        "speaker": "teacher",
+        "text": "We solved 8 × 9 in the Application Problem. Does 8 × 9 show 8 units of 9 or 9 units of 8?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How can our work solving 8 × 9 help us solve 9 × 8?"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Sometimes we can’t use the commutative property MULTIPLE MEANS because we don’t know the product of either fact. OF ACTION AND Let’s look at how we can use a tens fact to help solve a EXPRESSION: nines fact when that happens. What’s easier to solve, 9 × 8 or 10 × 8? Teachers should adjust their rate of speech for English language learners"
+      },
+      {
+        "speaker": "students",
+        "text": "10 × 8 because we already know tens facts. and others as students write equations"
+      },
+      {
+        "speaker": "teacher",
+        "text": "How many eights are in 10 × 8? in response to oral prompts. Label the"
+      },
+      {
+        "speaker": "students",
+        "text": "10 eights! equations. For example, write 9 eights under 9 × 8."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Label them on your tape diagram."
+      },
+      {
+        "speaker": "teacher",
+        "text": "Change your tape diagram so it shows 9 eights. (Allow students time to finish their work.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to write a number sentence showing that."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 9 × 8 = (10 × 8) – (1 × 8).)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Rewrite your equation using the products of 10 × 8 and 1 × 8."
+      },
+      {
+        "speaker": "students",
+        "text": "(Write 9 × 8 = 80 – 8.)"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Tell your partner how we used a tens fact to solve a nines fact."
+      },
+      {
+        "speaker": "teacher",
+        "text": "(Write 9 × 8 = (5 + 4) × 8.) One way we’ve learned to solve 9 × 8 is by breaking 9 eights up into 5 eights plus 4 eights. Why did it work well to subtract this time instead? MP.3 S: Because we only had to subtract 1 eight.  Yeah, 9 is really close to 10, and tens are easy to use. We already know 10 × 8, and besides, it’s easy to subtract from a NOTES ON tens fact. MULTIPLE MEANS"
+      },
+      {
+        "speaker": "teacher",
+        "text": "Work with your partner to change the equation I just OF ENGAGEMENT: wrote for 9 × 8. Make sure it shows how we used As students solve the Problem Set, subtraction to solve. some learners may solve Problem 1"
+      },
+      {
+        "speaker": "students",
+        "text": "We changed 5 + 4 to 10 – 1. be encouraged to write equations using"
+      },
+      {
+        "speaker": "students",
+        "text": "Because we didn’t add; we subtracted. We started students to offer multiple equations. with 10 eights and then took away 1 eight. Ask, “How many equations can you write for Problem 2(a)?” Continue with the following suggested sequence: 9 × 7 and 9 × 6."
+      }
+    ],
     "rule": "Animate or step through the Teacher Edition instructional sequence. Do not substitute a parallel example or decorative motion."
   },
   "deliveryContract": {

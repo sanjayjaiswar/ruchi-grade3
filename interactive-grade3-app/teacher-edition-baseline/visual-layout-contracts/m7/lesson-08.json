@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l8",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-121.png",
+      "sha256": "94454aac42739a2b577a4558c067ba8c7ebcc32f9d9d6faf1faf9180760f6ed1",
+      "pdfPage": 121,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 8 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-122.png",
+      "sha256": "e301567b2696b4288e38dd1655e28e9ff1976d7af1497882808fe1cbf4b79d7d",
+      "pdfPage": 122,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 8 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-474.png",
+      "sha256": "4dc3ae7648d5ea4bc7f0bbefe5f7d2b35b1dd2587bd76579726c6894b15b4861",
+      "pdfPage": 474,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 8 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-475.png",
+      "sha256": "a4b08fe1fcb3197b06a13f8717d5b26a725a3a0b805527afc0ce528088ed7586",
+      "pdfPage": 475,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 8 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-121.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Fold and cut the square on the diagonal."
+        ],
+        "answerKeyEvidence": "2 right triangles drawn and labeled.",
+        "layout": {
+          "family": "fold-cut-square-on-diagonal",
+          "subpartCount": 2,
+          "modelPrimitive": "source-shape-to-open-two-shape-workspace",
+          "modelCounts": [
+            1,
+            2
+          ],
+          "modelOrientation": "before-shape-over-two-result-response",
+          "responseStructure": "draw-and-label-two-right-triangles",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-121.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Fold and cut one of the triangles in half."
+        ],
+        "answerKeyEvidence": "2 smaller triangles drawn and labeled.",
+        "layout": {
+          "family": "fold-cut-one-triangle-in-half",
+          "subpartCount": 2,
+          "modelPrimitive": "source-shape-to-open-two-shape-workspace",
+          "modelCounts": [
+            1,
+            2
+          ],
+          "modelOrientation": "before-shape-over-two-result-response",
+          "responseStructure": "draw-and-label-two-smaller-triangles",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-121.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Fold twice, and cut your large triangle."
+        ],
+        "answerKeyEvidence": "Trapezoid and triangle drawn and labeled.",
+        "layout": {
+          "family": "fold-twice-and-cut-large-triangle",
+          "subpartCount": 2,
+          "modelPrimitive": "source-shape-to-open-two-shape-workspace",
+          "modelCounts": [
+            1,
+            2
+          ],
+          "modelOrientation": "before-shape-over-two-result-response",
+          "responseStructure": "draw-and-label-trapezoid-and-triangle",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-121.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Fold and cut your trapezoid in half."
+        ],
+        "answerKeyEvidence": "2 smaller trapezoids drawn and labeled.",
+        "layout": {
+          "family": "fold-cut-trapezoid-in-half",
+          "subpartCount": 2,
+          "modelPrimitive": "source-shape-to-open-two-shape-workspace",
+          "modelCounts": [
+            1,
+            2
+          ],
+          "modelOrientation": "before-shape-over-two-result-response",
+          "responseStructure": "draw-and-label-two-smaller-trapezoids",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m7-teacher/page-122.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Fold and cut one of your trapezoids."
+        ],
+        "answerKeyEvidence": "Square and triangle drawn and labeled.",
+        "layout": {
+          "family": "fold-cut-one-trapezoid",
+          "subpartCount": 2,
+          "modelPrimitive": "source-shape-to-open-two-shape-workspace",
+          "modelCounts": [
+            1,
+            2
+          ],
+          "modelOrientation": "before-shape-over-two-result-response",
+          "responseStructure": "draw-and-label-square-and-triangle",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m7-teacher/page-122.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Fold and cut your second trapezoid."
+        ],
+        "answerKeyEvidence": "Parallelogram and triangle drawn and labeled.",
+        "layout": {
+          "family": "fold-cut-second-trapezoid",
+          "subpartCount": 2,
+          "modelPrimitive": "source-shape-to-open-two-shape-workspace",
+          "modelCounts": [
+            1,
+            2
+          ],
+          "modelOrientation": "before-shape-over-two-result-response",
+          "responseStructure": "draw-and-label-parallelogram-and-triangle",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    },
+    {
+      "number": 7,
+      "sourcePageImage": "/source-pages/m7-teacher/page-122.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Reconstruct the original square using the seven shapes."
+        ],
+        "answerKeyEvidence": "a. Lines drawn correctly inside the square. b. Descriptions and explanations will vary.",
+        "layout": {
+          "family": "reconstruct-seven-piece-original-square",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-given-diagonal-crop+open-reconstruction-response",
+          "modelCounts": [
+            7,
+            1
+          ],
+          "modelOrientation": "source-square-over-reconstruction-check-and-reflection",
+          "responseStructure": "complete-internal-lines-and-describe-process",
+          "openWorkspaceCount": 1,
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m7-teacher/page-122.png",
+              "crop": {
+                "x": 440,
+                "y": 745,
+                "width": 340,
+                "height": 340
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    }
+  ]
+}

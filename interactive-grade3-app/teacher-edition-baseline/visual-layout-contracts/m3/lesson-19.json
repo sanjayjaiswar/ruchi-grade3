@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m3-l19",
+  "teacherEditionPdfSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m3/lesson-19-page-83.png",
+      "sha256": "0e2583c57fd89b21d8d5721c9472f31a758d9ee76aa76b6eb9b05b6d9a3a121c",
+      "pdfPage": 243,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 19 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-19-page-84.png",
+      "sha256": "9144d81588e0381a8ee57959f6febe02c2bd99516bf4fdc2e36c8d9f53024ee8",
+      "pdfPage": 244,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 19 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-314.png",
+      "sha256": "28b9283580b670fbc94c08f3195e957904846d85b5d8c9cf7647d0fe70e78b1b",
+      "pdfPage": 314,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 19 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m3/lesson-19-page-83.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "use the disks to fill in the blanks in the equations"
+        ],
+        "answerKeyEvidence": "a. 12; 12. b. 12; 120.",
+        "layout": {
+          "family": "one-disk-and-ten-disk-arrays",
+          "subpartCount": 2,
+          "printedEquationLineCount": 4,
+          "modelPrimitive": "place-value-disk-array",
+          "modelCounts": [
+            12,
+            12
+          ],
+          "modelOrientation": "two-horizontal-panels",
+          "instructionalModelFamily": "ones-to-tens-place-value-scaling",
+          "responseStructure": "complete-unit-and-standard-equations"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Exact source problem structure, mathematical primitive, counts, grouping, labels, and open response space were reviewed from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m3/lesson-19-page-83.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "use the chart to complete the blanks in the equations"
+        ],
+        "answerKeyEvidence": "a. 8; 8. b. 8; 80. c. 15; 15. d. 15; 150. e. 20; 20. f. 20; 200.",
+        "layout": {
+          "family": "six-place-value-dot-charts",
+          "subpartCount": 6,
+          "printedEquationLineCount": 12,
+          "modelPrimitive": "tens-ones-chart+grouped-dots",
+          "modelCounts": [
+            8,
+            8,
+            15,
+            15,
+            20,
+            20
+          ],
+          "modelOrientation": "two-by-three-source-panels",
+          "instructionalModelFamily": "ones-to-tens-place-value-scaling",
+          "responseStructure": "complete-unit-and-standard-equations"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Exact source problem structure, mathematical primitive, counts, grouping, labels, and open response space were reviewed from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m3/lesson-19-page-84.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "fill in the blank to make"
+        ],
+        "answerKeyEvidence": "a. 14. b. 14. c. 24. d. 24. e. 300. f. 320. g. 280. h. 400.",
+        "layout": {
+          "family": "eight-place-value-equation-blanks",
+          "subpartCount": 8,
+          "rowCount": 4,
+          "columnCount": 2,
+          "printedEquationLineCount": 8,
+          "modelPrimitive": "printed-equation-table",
+          "modelCounts": [
+            4,
+            2
+          ],
+          "modelOrientation": "four-by-two",
+          "responseStructure": "complete-equivalent-equations"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Exact source problem structure, mathematical primitive, counts, grouping, labels, and open response space were reviewed from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m3/lesson-19-page-84.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "a bus can carry 40 passengers how many passengers can 6 buses carry model"
+        ],
+        "answerKeyEvidence": "240; tape diagram models equation.",
+        "layout": {
+          "family": "open-six-bus-tape-response",
+          "subpartCount": 1,
+          "openWorkspaceCount": 1,
+          "modelPrimitive": "open-tape-diagram-workspace",
+          "modelCounts": [
+            6
+          ],
+          "modelOrientation": "horizontal-tape",
+          "instructionalModelFamily": "six-groups-of-forty",
+          "responseStructure": "model-and-answer"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Exact source problem structure, mathematical primitive, counts, grouping, labels, and open response space were reviewed from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    }
+  ]
+}

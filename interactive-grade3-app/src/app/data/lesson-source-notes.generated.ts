@@ -567,7 +567,7 @@ export const LESSON_SOURCE_NOTES: Record<string, LessonSourceNote> = {
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },
   "m6-l5": {
-    "sourceProblem": "Use the teacher-edition lesson pages to teach: Create ruler with 1-inch, 1/2-inch, and 1/4-inch intervals, and generate measurement data.",
+    "sourceProblem": "Use the teacher-edition lesson pages to teach: Create ruler with 1-inch, ½-inch, and ¼-inch intervals, and generate measurement data.",
     "teacherMove": "Ask the student to explain what the model shows before accepting the final answer.",
     "exitEvidence": "Use the lesson Exit Ticket or final problem-set pattern as evidence that the student can model, solve, and explain the answer in context."
   },

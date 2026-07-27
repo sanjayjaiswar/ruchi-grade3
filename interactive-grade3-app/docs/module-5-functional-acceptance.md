@@ -1,15 +1,16 @@
-# Module 5 functional acceptance
+# Module 5 Teacher Edition Problem Set acceptance
 
-This document records the durable first-pass acceptance contract for Grade 3 Module 5. The Teacher Edition baseline is the factual source of truth. The portal and prior lesson copy are never authoritative when they differ from that baseline.
+Accepted: 2026-07-26
+
+Scope: all 30 Module 5 Problem Set lessons, Blank and Solved.
 
 ## Scope and completion bar
 
-- All 30 lessons must preserve the exact Teacher Edition objective, lesson-page range, Problem Set order, problem count, and solved answers.
-- Every Concept view must contain three lesson-specific stages, a visible three-step animation, a source-conforming fraction or number-line model, and a question that connects the model to the mathematics.
-- Every Problem Set item must have a usable Blank model and a Teacher Edition-aligned Solved model. Diagram-dependent prompts must show the required whole, fraction strip, number line, comparison model, table, or tightly cropped official source image.
-- Summary must contain the lesson takeaway and a Problem Set meaning map.
-- Functional learning fidelity is required. Pixel-perfect reproduction of the printed page is not required.
-- Generic audit scaffolds, hidden animations, answer leakage in Blank mode, broken source images, horizontal overflow, and more than three purposeful visual sections per problem are failures.
+- The fingerprinted Teacher Edition page image is the sole visual and factual authority.
+- Every one of the 158 official tasks must preserve its printed fraction primitives, quantities, orientation, grouping, labels, directions, and response space. OCR is a locator only.
+- Blank shows the exact task-bearing Teacher Edition page crop first, with no authored prompt list, substitute fraction model, answer note, or solved scaffold.
+- Solved shows that same exact task crop first and adds only the numbered Teacher Edition answer-key evidence.
+- An implementation-authored fraction strip, number line, explanation, validation checklist, or inferred answer cannot satisfy or override this contract.
 
 ## Teacher Edition contract
 
@@ -48,31 +49,37 @@ This document records the durable first-pass acceptance contract for Grade 3 Mod
 
 Total: **30 lessons and 158 official Problem Set items**.
 
-## Durable implementation and checks
+## Durable source evidence and implementation
 
-- Teacher facts and lesson-specific concept models: `src/app/data/lessons/m5/functional-fidelity.ts`
-- Problem Set prompts, source models, Blank/Solved visuals, and official crops: `src/app/data/lessons/m5/problem-set-centered.ts`
-- Runtime attachment: `src/app/data/lessons/lesson-registry.ts`
-- Durable functional validator: `scripts/validate-problem-centered-delivery.mjs`
-- Precomputed source baseline validator: `scripts/validate-teacher-edition-baseline.mjs`
+- Reviewed per-task evidence: `teacher-edition-baseline/module-5-problem-evidence.json`
+- Source-only visual contracts: `teacher-edition-baseline/visual-layout-contracts/m5/lesson-01.json` through `lesson-30.json`
+- Runtime evidence derivative: `src/app/data/lessons/m5/source-problem-evidence.generated.ts`
+- Source-first Problem Set delivery: `src/app/data/lessons/m5/problem-set-centered.ts`
+- Durable source gate: `scripts/validate-source-visual-contracts.mjs`
 
 Run:
 
 ```bash
 npm run validate:teacher-baseline
+npm run validate:source-visual-contracts -- --lessons m5-l1,m5-l2,m5-l3,m5-l4,m5-l5,m5-l6,m5-l7,m5-l8,m5-l9,m5-l10,m5-l11,m5-l12,m5-l13,m5-l14,m5-l15,m5-l16,m5-l17,m5-l18,m5-l19,m5-l20,m5-l21,m5-l22,m5-l23,m5-l24,m5-l25,m5-l26,m5-l27,m5-l28,m5-l29,m5-l30
 npm run validate:problem-centered-delivery
+npm run validate:solved-fidelity
 npm run validate:no-pdf-problem-tabs
-npm run build -- --progress=false
+npm run validate:local-search
+npm run build
 ```
 
-## Live Chrome acceptance
+All commands passed on 2026-07-26.
 
-The isolated Module 5 QA tab must pass all 120 live states:
+## Rendered Chrome acceptance
 
-- 30 Concept views: correct lesson, three source stages, visible animation, at least three motion steps, and a lesson-relevant source visual.
-- 30 Blank views: exact problem count, one visual workspace per problem, and no Teacher Edition answer leakage.
-- 30 Solved views: exact problem count, one visual workspace per problem, Teacher Edition answers, and loaded source images.
-- 30 Summary views: lesson takeaway and Problem Set meaning map.
-- Every state: no generic audit scaffold, broken image, or horizontal overflow.
+- 60 routes passed: 30 Blank and 30 Solved.
+- 316 rendered task states passed: 158 Blank and 158 Solved.
+- Every card had the official task count/order, exactly one source-first workspace, the contract-declared source page, and a complete 1275×1650 source image.
+- Every Blank card had zero answer-key notes and zero authored prompt or solved scaffolds.
+- Every Solved card had exactly one `Teacher Edition Answer Key` note matching the contract evidence and zero legacy explanation/validation cards.
+- Browser console: zero errors and zero warnings.
 
-Representative visual review must include concrete fraction partitions, strips, different wholes, number bonds, fractions beyond one, number lines, equivalence, same-numerator comparisons, the official Lesson 5/11/13 figures, and the Lesson 30 angled-strip transfer method. This visual review is a release check, not a replacement for the 120-state sweep.
+Six Teacher Edition guidance/debrief pages that merely mention “Problem Set” were excluded as OCR/classifier false positives: PDF pages 15, 34, 67, 115, 191, and 332.
+
+Lesson 30 is the source-documented exception. The Teacher Edition explicitly says there is no separate Problem Set sheet, so PDF page 355’s exact in-lesson cooperative Problem Set directions control its one route; no worksheet or replacement model is invented.

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l34",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-461.png",
+      "sha256": "d64f1b54759da88804705319e60fbf7abae5dbe3f65769487907da5d2a48185e",
+      "pdfPage": 461,
+      "documentSection": "lesson-resource",
+      "role": "Teacher Edition Lesson 34 Summer Calendar resource-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-462.png",
+      "sha256": "2cffbdf98a8ff34b5ab9a0a22c56aae0f1c72b0ebdccb217574dacc72c9b6395",
+      "pdfPage": 462,
+      "documentSection": "lesson-resource",
+      "role": "Teacher Edition Lesson 34 Summer Calendar resource-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-520.png",
+      "sha256": "e803f57acace6665b6a210dd779207290371bdd05daeb0f8a0675add83b5f328",
+      "pdfPage": 520,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 34 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-461.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Complete a math activity each day."
+        ],
+        "answerKeyEvidence": "Summer Math Review Calendar",
+        "layout": {
+          "family": "ten-week-fifty-activity-summer-math-review-calendar",
+          "subpartCount": 50,
+          "modelPrimitive": "two-live-five-week-source-calendar-tables+completion-response",
+          "modelCounts": [
+            5,
+            5,
+            50
+          ],
+          "modelOrientation": "weeks-one-five-over-weeks-six-ten-over-response",
+          "responseStructure": "retain-all-fifty-source-activities-with-uncolored-completion-boxes",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Authored per-problem HTML/CSS/SVG follows the Teacher Edition task and answer key. Only an exact mathematical illustration crop is retained for Julian’s four printed circles; no full-page screenshot is used."
+      }
+    }
+  ]
+}

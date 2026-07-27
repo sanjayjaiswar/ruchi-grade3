@@ -502,6 +502,7 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, AfterViewCheck
       this.activeModuleTab = 'concepts';
       this.scheduleConceptChartRender();
     });
+    this.route.fragment.subscribe((fragment) => this.revealModuleFragment(fragment));
   }
 
   ngAfterViewInit(): void {
@@ -608,6 +609,38 @@ export class ModuleOverviewPage implements OnInit, AfterViewInit, AfterViewCheck
   selectModuleTab(tabId: string): void {
     this.activeModuleTab = tabId;
     this.scheduleConceptChartRender();
+  }
+
+  private revealModuleFragment(fragment: string | null): void {
+    if (!this.module) {
+      return;
+    }
+    if (!fragment || fragment === `${this.module.id}-concepts`) {
+      this.activeModuleTab = 'concepts';
+    } else if (fragment === `${this.module.id}-topics`) {
+      this.activeModuleTab = 'topics';
+    } else if (this.module.topics.some((topic) => topic.id === fragment)) {
+      this.activeModuleTab = this.teachTopicTabId(fragment);
+    } else {
+      this.activeModuleTab = 'concepts';
+    }
+    this.scheduleConceptChartRender();
+    if (fragment) {
+      this.focusRevealedFragment(fragment);
+    }
+  }
+
+  private focusRevealedFragment(fragment: string): void {
+    if (typeof requestAnimationFrame === 'undefined') {
+      return;
+    }
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => {
+        const target = document.getElementById(fragment);
+        target?.scrollIntoView({ block: 'start' });
+        target?.focus({ preventScroll: true });
+      })
+    );
   }
 
   teachTopicTabId(topicId: string): string {

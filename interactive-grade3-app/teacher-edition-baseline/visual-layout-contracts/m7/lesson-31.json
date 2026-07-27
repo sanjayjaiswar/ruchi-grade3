@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l31",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-426.png",
+      "sha256": "8e89fa5ecc9801f4a8902828793efe86ca1d1a0b4ea7de632b9627ae96b360be",
+      "pdfPage": 426,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 31 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-514.png",
+      "sha256": "a2f527643059a7788aa053c1707cfd01f71decacf6feaa838912188a57a3dd14",
+      "pdfPage": 514,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 31 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-515.png",
+      "sha256": "d8a24b68013f723369f556f7aba8b2cfebe0aee34c9f13555d977c776c2cf7b8",
+      "pdfPage": 515,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 31 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-426.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use this form to analyze your classmate's representations of one-half shaded."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "four-row-one-half-representation-analysis-form",
+          "subpartCount": 4,
+          "modelPrimitive": "live-four-row-source-analysis-table+open-response",
+          "modelCounts": [
+            4
+          ],
+          "modelOrientation": "source-table-over-open-response",
+          "responseStructure": "preserve-four-variable-classmate-analyses",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Authored per-problem HTML/CSS/SVG follows the Teacher Edition task and answer key. Only an exact mathematical illustration crop is retained for Julian’s four printed circles; no full-page screenshot is used."
+      }
+    }
+  ]
+}

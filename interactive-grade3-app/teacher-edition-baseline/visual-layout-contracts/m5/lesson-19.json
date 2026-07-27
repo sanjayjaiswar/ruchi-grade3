@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l19",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-227.png",
+      "sha256": "2bc95d60d8ba02f7878fb6d07f82b4ab8cddb24b22b33bdc7c3dffb36ecd8687",
+      "pdfPage": 227,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 19 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-228.png",
+      "sha256": "c2fd9b073f45271dcde1d4811aade267bb19a0e00aadcaf39e1dc0d2b9fa107a",
+      "pdfPage": 228,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 19 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-400.png",
+      "sha256": "f5d9cdb5b1ff5b119e50ae279617f4924b317694b047b2ba5be3a9ac149ddbcd",
+      "pdfPage": 400,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 19 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-401.png",
+      "sha256": "aa792f07a0b19195de3e4c6db04ac9a7d76cd9d39b4b1ee1a41ede93fd9d0564",
+      "pdfPage": 401,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 19 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-227.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Divide each number line into the given fractional unit. Then, place the fractions. Write each whole as a fraction."
+        ],
+        "answerKeyEvidence": "a. Number line divided into halves; given fractions placed; each whole written correctly as a fraction. b. Number line divided into fourths; given fractions placed; each whole written correctly as a fraction. c. Number line divided into eighths; given fractions placed; each whole written correctly as a fraction.",
+        "layout": {
+          "family": "halves-fourths-eighths-reference-lines",
+          "subpartCount": 9,
+          "modelPrimitive": "three-authored-source-topology-number-lines",
+          "modelCounts": [
+            2,
+            4,
+            8
+          ],
+          "modelOrientation": "three-horizontal-zero-to-three-lines",
+          "responseStructure": "place-nine-given-fractions-and-write-each-whole-as-a-fraction"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-227.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use the number lines above to compare the following fractions using >, <, or =."
+        ],
+        "answerKeyEvidence": "Row 1: <, <, >. Row 2: >, <, =. Row 3: <, >, >.",
+        "layout": {
+          "family": "nine-comparisons-from-three-reference-lines",
+          "subpartCount": 9,
+          "modelPrimitive": "three-reference-lines-plus-nine-comparison-blanks",
+          "modelCounts": [
+            2,
+            4,
+            8
+          ],
+          "modelOrientation": "three-lines-over-nine-reading-order-comparisons",
+          "responseStructure": "write-nine-greater-less-or-equal-symbols"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-228.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Choose a greater than comparison you made in Problem 2. Use pictures, numbers, and words to explain how you made that comparison."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "open-valid-comparison-explanation",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-open-written-and-drawing-workspace",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "large-vertical-response-space",
+          "responseStructure": "choose-a-valid-comparison-and-justify-it-under-the-printed-criteria",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-228.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Choose a less than comparison you made in Problem 2. Use pictures, numbers, and words to explain a different way of thinking about the comparison than what you wrote in Problem 3."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "open-valid-comparison-explanation",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-open-written-and-drawing-workspace",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "large-vertical-response-space",
+          "responseStructure": "choose-a-valid-comparison-and-justify-it-under-the-printed-criteria",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m5-teacher/page-228.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Choose an equal to comparison you made in Problem 2. Use pictures, numbers, and words to explain two ways that you can prove your comparison is true."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "open-valid-comparison-explanation",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-open-written-and-drawing-workspace",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "large-vertical-response-space",
+          "responseStructure": "choose-a-valid-comparison-and-justify-it-under-the-printed-criteria",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    }
+  ]
+}

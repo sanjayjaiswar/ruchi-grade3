@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l7",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-104.png",
+      "sha256": "208341d1957d5fef921d57037df9e0e1ca1a07965e9e058dec5b347ba56467ac",
+      "pdfPage": 104,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 7 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-105.png",
+      "sha256": "5bdcc9723580da89f7ef2809c6676f698d0b58cd3bfe82044a63011fc324b06c",
+      "pdfPage": 105,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 7 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-472.png",
+      "sha256": "96f028d6f17162cce0381819854f3aae003f2f1b31d95046012bdc7ba3ca1286",
+      "pdfPage": 472,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 7 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-473.png",
+      "sha256": "8b5fe04e928d42ef03ba8d382482da8bc819e75ff89f7c14315b04a0b43c0e66",
+      "pdfPage": 473,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 7 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-104.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use tetrominoes to create at least two different rectangles."
+        ],
+        "answerKeyEvidence": "Grid colored.",
+        "layout": {
+          "family": "compose-two-different-tetromino-rectangles",
+          "subpartCount": 2,
+          "modelPrimitive": "two-empty-square-grids",
+          "modelCounts": [
+            2,
+            4,
+            1,
+            8
+          ],
+          "modelOrientation": "paired-grids-over-answer-criterion",
+          "responseStructure": "compose-color-and-keep-piece-joins-visible",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-104.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use tetrominoes to create at least two squares, each with an area of 36 square units."
+        ],
+        "answerKeyEvidence": "Grid colored. a. Number sentence will vary. b. Number sentence will vary.",
+        "layout": {
+          "family": "compose-two-area-thirty-six-tetromino-squares",
+          "subpartCount": 4,
+          "modelPrimitive": "two-empty-six-by-six-grids+equation-table",
+          "modelCounts": [
+            6,
+            6,
+            36,
+            9,
+            4
+          ],
+          "modelOrientation": "paired-grids-over-two-number-sentences",
+          "responseStructure": "color-two-arrangements-and-write-variable-equations",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-105.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use tetrominoes to create at least two different rectangles, each with an area of 12 square units."
+        ],
+        "answerKeyEvidence": "a. Grid colored. b. Explanations will vary.",
+        "layout": {
+          "family": "compose-two-different-area-twelve-tetromino-rectangles",
+          "subpartCount": 3,
+          "modelPrimitive": "empty-three-by-four-and-two-by-six-grids",
+          "modelCounts": [
+            3,
+            4,
+            2,
+            6,
+            12
+          ],
+          "modelOrientation": "paired-grids-over-explanation-response",
+          "responseStructure": "color-two-rectangles-and-explain-area-twelve",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-105.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Marco created a rectangle with tetrominoes and traced its outline in the space below."
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "recreate-marco-traced-rectangle-with-tetrominoes",
+          "subpartCount": 2,
+          "modelPrimitive": "source-given-outer-rectangle+open-internal-workspace",
+          "modelCounts": [
+            4
+          ],
+          "modelOrientation": "printed-outline-over-open-piece-line-response",
+          "responseStructure": "recreate-outline-and-estimate-internal-piece-lines",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Open construction/composition tasks retain unseeded student work in Blank. Any authored completion is labeled as one valid completion and is validated only against the explicit Teacher Edition criterion. Tight source crops contain mathematical diagrams only, never prompts or page bodies."
+      }
+    }
+  ]
+}

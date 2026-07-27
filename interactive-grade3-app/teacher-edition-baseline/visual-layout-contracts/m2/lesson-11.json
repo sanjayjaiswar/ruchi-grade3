@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m2-l11",
+  "teacherEditionPdfSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m2-teacher/page-132.png",
+      "sha256": "d74fe5986ab319da63b0f00638212b0371f4da73489fe5c15f12ae64fec554da",
+      "pdfPage": 132,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 11 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-teacher/page-133.png",
+      "sha256": "485a2d437c6828f0b258f1fdc2f9117000bf1907893d77746ed920b8f48d6c4a",
+      "pdfPage": 133,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 11 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-answer-key/page-291.png",
+      "sha256": "cc51b473aa665838576e9f791e542e2ba99a8d1f719300f3427edef5c8604f6c",
+      "pdfPage": 291,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 11 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m2-teacher/page-132.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "the total weight in grams of a can of tomatoes and a jar of baby food is shown to the right. a. the jar of baby food weighs 113 grams. how much does the can of tomatoes weigh b. how much more does the can of tomatoes weigh than the jar of baby food"
+        ],
+        "answerKeyEvidence": "1. a. 558 g 4. Tape diagram drawn and labeled to represent b. 445 g the problem; 9 turkeys 2. a. 60 g 5. 900 mL of milk b. 142 g 6. 14 L 3. a. 191 g b. 123 g c. 194 g",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m2-teacher/page-132.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "the weight of a pen in grams is shown to the right. a. what is the total weight of 10 pens"
+        ],
+        "answerKeyEvidence": "1. a. 558 g 4. Tape diagram drawn and labeled to represent b. 445 g the problem; 9 turkeys 2. a. 60 g 5. 900 mL of milk b. 142 g 6. 14 L 3. a. 191 g b. 123 g c. 194 g",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m2-teacher/page-132.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "the total weight of an apple lemon and banana in grams is shown to the right. a. if the apple and lemon together weigh 317 grams what is the weight of the banana"
+        ],
+        "answerKeyEvidence": "1. a. 558 g 4. Tape diagram drawn and labeled to represent b. 445 g the problem; 9 turkeys 2. a. 60 g 5. 900 mL of milk b. 142 g 6. 14 L 3. a. 191 g b. 123 g c. 194 g",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m2-teacher/page-133.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "a frozen turkey weighs about 5 kilograms. the chef orders 45 kilograms of turkey. use a tape diagram to find about how many frozen turkeys he orders."
+        ],
+        "answerKeyEvidence": "1. a. 558 g 4. Tape diagram drawn and labeled to represent b. 445 g the problem; 9 turkeys 2. a. 60 g 5. 900 mL of milk b. 142 g 6. 14 L 3. a. 191 g b. 123 g c. 194 g",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m2-teacher/page-133.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "a recipe requires 300 milliliters of milk. sara decides to triple the recipe for dinner. how many milliliters of milk does she need to cook dinner"
+        ],
+        "answerKeyEvidence": "1. a. 558 g 4. Tape diagram drawn and labeled to represent b. 445 g the problem; 9 turkeys 2. a. 60 g 5. 900 mL of milk b. 142 g 6. 14 L 3. a. 191 g b. 123 g c. 194 g",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m2-teacher/page-133.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "marian pours a full container of water equally into buckets. each bucket has a capacity of 4 liters. after filling 3 buckets she still has 2 liters left in her container. what is the capacity of her container"
+        ],
+        "answerKeyEvidence": "1. a. 558 g 4. Tape diagram drawn and labeled to represent b. 445 g the problem; 9 turkeys 2. a. 60 g 5. 900 mL of milk b. 142 g 6. 14 L 3. a. 191 g b. 123 g c. 194 g",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

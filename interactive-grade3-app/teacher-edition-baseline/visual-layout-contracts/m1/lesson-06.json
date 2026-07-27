@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m1-l6",
+  "teacherEditionPdfSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m1-teacher/page-090.png",
+      "sha256": "b83f4422728f29494c3d46c62946b2863319e36cad76cdeddf3c6f7fab70758d",
+      "pdfPage": 90,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 6 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-091.png",
+      "sha256": "b1facbe2fee4371a84459caf3c3312a25eb0d0c063506b14e69b7fbd62cd22b6",
+      "pdfPage": 91,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 6 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-300.png",
+      "sha256": "93ee04ff4e5a589dab0a28eadc3d9ace6fb3167b818291a4ed6968daf47473f8",
+      "pdfPage": 300,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 6 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m1-teacher/page-090.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Rick puts 15 tennis balls into cans. Each can holds 3 balls. Circle groups of 3 to show the balls in each can. Rick needs ____ cans. ____ × 3 = 15 15 ÷ 3 = ____"
+        ],
+        "answerKeyEvidence": "Five groups of 3 circled; 5; 5; 5",
+        "layout": {
+          "family": "source-illustration-model",
+          "modelPrimitive": "source-illustration",
+          "modelOrientation": "source-order"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "A tight crop retains only the exact printed mathematical model. Prompt, equations, explanations, and solution reveal remain authored HTML."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m1-teacher/page-090.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Rick uses 15 tennis balls to make 5 equal groups. Draw to show how many tennis balls are in each group. There are ____ tennis balls in each group. 5 × ____ = 15 15 ÷ 5 = ____"
+        ],
+        "answerKeyEvidence": "Five groups of 3 drawn and circled; 3; 3; 3",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m1-teacher/page-090.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Use an array to model Problem 1. a. ____ × 3 = 15 b. 5 × ____ = 15 15 ÷ 3 = ____ 15 ÷ 5 = ____ The number in the blanks represents The number in the blanks represents ____. ____."
+        ],
+        "answerKeyEvidence": "Array of 5 rows of 3 drawn; 5; 5; the number of groups; 3; 3; the size of each group",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m1-teacher/page-091.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Deena makes 21 jars of tomato sauce. She puts 7 jars in each box to sell at the market. How many boxes does Deena need? 21 ÷ 7 = ____ ____ × 7 = 21 What is the meaning of the unknown factor and quotient? ____"
+        ],
+        "answerKeyEvidence": "3; 3; the number of groups",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m1-teacher/page-091.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The teacher gives the equation 4 × ____ = 12. Charlie finds the answer by writing and solving 12 ÷ 4 = ____. Explain why Charlie's method works."
+        ],
+        "answerKeyEvidence": "3; 3; answers will vary",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m1-teacher/page-091.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The blanks in Problem 5 represent the size of the groups. Draw an array to represent the equations."
+        ],
+        "answerKeyEvidence": "Array of 4 rows of 3 drawn",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    }
+  ]
+}

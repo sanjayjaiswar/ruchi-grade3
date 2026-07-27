@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m1-l14",
+  "teacherEditionPdfSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m1-teacher/page-194.png",
+      "sha256": "2e8867809f90f22d2bdb17dfc6f4b349377a78c437a7944818d1711cd002d592",
+      "pdfPage": 194,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 14 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-195.png",
+      "sha256": "dab7269b09e72662f42dc2b8a160e8f4761915f704f30050ffb849c8b8a7f34c",
+      "pdfPage": 195,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 14 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-315.png",
+      "sha256": "b21c2720a761f37884782aca12221f4effad8e3e712411c858ce71c209bfbffe",
+      "pdfPage": 315,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 14 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-316.png",
+      "sha256": "8e8ec7e5eb6285b39be6194996f21846705cbf7bd0914b7b2a942615296217f3",
+      "pdfPage": 316,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 14 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m1-teacher/page-194.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Skip-count by fours. Match each answer to the appropriate expression."
+        ],
+        "answerKeyEvidence": "12, 16, 20, 24, 28, 32, 36, 40; 8 matched to 2 × 4; 12 matched to 3 × 4; 16 matched to 4 × 4; 20 matched to 5 × 4; 24 matched to 6 × 4; 28 matched to 7 × 4; 32 matched to 8 × 4; 36 matched to 9 × 4; 40 matched to 10 × 4",
+        "layout": {
+          "family": "source-illustration-model",
+          "modelPrimitive": "source-illustration",
+          "modelOrientation": "source-order"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "A tight crop preserves only the official problem-level mathematical scaffold; response fields and solution reveal remain authored HTML."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m1-teacher/page-195.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Mr. Schmidt replaces each of the 4 wheels on 7 cars. How many wheels does he replace? Draw and label a tape diagram to solve. Mr. Schmidt replaces ____ wheels."
+        ],
+        "answerKeyEvidence": "Tape diagram drawn and labeled; 28",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The source provides open drawing or written-response space. Blank remains unfilled; Solved reveals only answer-key-supported evidence."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m1-teacher/page-195.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Trina makes 4 bracelets. Each bracelet has 6 beads. Draw and label a tape diagram to show the total number of beads Trina uses."
+        ],
+        "answerKeyEvidence": "Tape diagram drawn and labeled to show 24 beads used",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The source provides open drawing or written-response space. Blank remains unfilled; Solved reveals only answer-key-supported evidence."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m1-teacher/page-195.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Find the total number of sides on 5 rectangles."
+        ],
+        "answerKeyEvidence": "20",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The source provides open drawing or written-response space. Blank remains unfilled; Solved reveals only answer-key-supported evidence."
+      }
+    }
+  ]
+}

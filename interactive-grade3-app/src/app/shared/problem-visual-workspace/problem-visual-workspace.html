@@ -5,6 +5,119 @@
   </header>
 
   <article class="visual-section" *ngFor="let section of visibleSections(spec.sections)">
+    <ng-container *ngIf="unknownRiddleWorkspaceSection(section) as riddle">
+      <strong *ngIf="riddle.label">{{ riddle.label }}</strong>
+      <div class="visual-unknown-riddle-workspace">
+        <p>{{ riddle.prompt }}</p>
+        <div class="unknown-riddle-pairs">
+          <article
+            *ngFor="let entry of riddle.entries"
+            [class.is-right]="entry.side === 'right'"
+            [style.gridRow]="entry.row"
+            [style.gridColumn]="entry.side === 'left' ? 1 : 2">
+            <span class="unknown-riddle-thought">{{ entry.equation }}</span>
+            <span class="unknown-riddle-answer">{{ entry.letter }} = {{ entry.answer || '_____' }}</span>
+          </article>
+        </div>
+        <section class="unknown-riddle-decoder">
+          <strong>{{ riddle.decoder.question }}</strong>
+          <div>
+            <span
+              *ngFor="let value of riddle.decoder.values; let valueIndex = index"
+              [class.has-gap-after]="riddle.decoder.gapAfterIndex === valueIndex">
+              <b>{{ riddle.decoder.letters?.[valueIndex] || '____' }}</b>
+              <em>{{ value }}</em>
+            </span>
+          </div>
+          <p *ngIf="riddle.decoder.answerPhrase">Answer: {{ riddle.decoder.answerPhrase }}</p>
+        </section>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="sourceResponseWorkspaceSection(section) as response">
+      <strong *ngIf="response.label">{{ response.label }}</strong>
+      <div class="visual-source-response-workspace">
+        <section
+          *ngFor="let part of response.parts"
+          [class.has-divider]="part.dividerBefore"
+          [class.has-open-workspace]="part.openWorkspace">
+          <div class="source-response-prompt">
+            <p><b *ngIf="part.lead">{{ part.lead }}</b>{{ part.prompt }}</p>
+            <strong *ngIf="part.challenge" class="source-response-challenge">CHALLENGE!</strong>
+          </div>
+          <div class="source-response-lines" *ngIf="part.lines.length">
+            <b *ngIf="part.solutionLabel">{{ part.solutionLabel }}</b>
+            <span *ngFor="let line of part.lines">{{ line }}</span>
+          </div>
+        </section>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="unitFormWorkspaceSection(section) as workspace">
+      <strong *ngIf="workspace.label">{{ workspace.label }}</strong>
+      <div class="visual-unit-form-workspace">
+        <section
+          class="unit-form-part"
+          *ngFor="let part of workspace.parts"
+          [class.has-open-workspace]="part.openWorkspace"
+          [class.has-divider]="part.dividerBefore">
+          <p
+            class="unit-form-prompt"
+            *ngIf="part.prompt || part.promptModelLead || part.promptSourceModel">
+            <b *ngIf="part.lead">{{ part.lead }}</b>
+            <span *ngIf="part.promptModelLead">{{ part.promptModelLead }}</span>
+            <figure
+              class="visual-source-crop unit-form-prompt-model"
+              *ngIf="part.promptSourceModel as promptSourceModel">
+              <div [style.aspectRatio]="sourceCropAspect(promptSourceModel)">
+                <img
+                  [src]="promptSourceModel.src"
+                  [alt]="promptSourceModel.alt"
+                  [style.width]="sourceCropImageWidth(promptSourceModel)"
+                  [style.left]="sourceCropImageLeft(promptSourceModel)"
+                  [style.top]="sourceCropImageTop(promptSourceModel)">
+              </div>
+            </figure>
+            <span *ngIf="part.prompt">{{ part.prompt }}</span>
+          </p>
+
+          <div
+            class="unit-form-model-and-fields"
+            *ngIf="part.sourceModel || part.unitCount || part.lines.length">
+            <figure class="visual-source-crop unit-form-source-model" *ngIf="part.sourceModel as sourceModel">
+              <div [style.aspectRatio]="sourceCropAspect(sourceModel)">
+                <img
+                  [src]="sourceModel.src"
+                  [alt]="sourceModel.alt"
+                  [style.width]="sourceCropImageWidth(sourceModel)"
+                  [style.left]="sourceCropImageLeft(sourceModel)"
+                  [style.top]="sourceCropImageTop(sourceModel)">
+              </div>
+              <figcaption *ngIf="sourceModel.caption">{{ sourceModel.caption }}</figcaption>
+            </figure>
+
+            <div
+              class="unit-dot-column"
+              *ngIf="part.unitKind === 'dot' && part.unitCount"
+              [attr.aria-label]="part.unitCount + ' unit dots'">
+              <span
+                *ngFor="let dot of range(part.unitCount); let dotIndex = index"
+                [class.is-extra-unit]="part.knownUnitCount !== undefined && dotIndex >= part.knownUnitCount">
+              </span>
+            </div>
+
+            <div class="unit-form-fields">
+              <span *ngFor="let line of part.lines">{{ line }}</span>
+            </div>
+          </div>
+
+          <p class="unit-form-workspace-prompt" *ngIf="part.workspacePrompt">
+            {{ part.workspacePrompt }}
+          </p>
+        </section>
+      </div>
+    </ng-container>
+
     <ng-container *ngIf="cardGridSection(section) as cardGrid">
       <strong *ngIf="cardGrid.label">{{ cardGrid.label }}</strong>
       <div class="visual-card-grid">
@@ -13,13 +126,18 @@
           <ng-container *ngFor="let child of visibleSections(card.sections)">
             <ng-container *ngIf="arraySection(child) as array">
               <strong *ngIf="array.label">{{ array.label }}</strong>
-              <div class="visual-array" [ngClass]="'is-' + array.item" [class.is-dense]="array.columns > 16" [style.gridTemplateColumns]="arrayColumns(array)">
+              <div class="visual-array" [ngClass]="'is-' + array.item" [class.is-dense]="array.columns > 16" [class.is-source-known]="array.mode === 'solved'" [class.is-source-extra]="array.mode === 'blank'" [style.gridTemplateColumns]="arrayColumns(array)">
                 <span
                   *ngFor="let cell of range(array.rows * array.columns); let cellIndex = index"
                   [class.is-after-split]="arrayCellIsAfterSplit(array, cellIndex)"
+                  [class.is-after-column-split]="arrayCellIsAfterColumnSplit(array, cellIndex)"
+                  [class.is-source-shaded]="arrayCellIsSourceShaded(array, cellIndex)"
+                  [class.is-group-end]="arrayCellIsGroupEnd(array, cellIndex)"
+                  [class.is-outline]="arrayCellIsOutlined(array, cellIndex)"
                   [class.has-placeholder]="array.placeholder"
+                  [class.has-glyph]="array.glyph"
                   [attr.aria-hidden]="!array.placeholder">
-                  {{ array.placeholder || '' }}
+                  {{ array.placeholder || array.glyph || '' }}
                 </span>
               </div>
               <small *ngIf="array.caption" class="visual-array-caption">{{ array.caption }}</small>
@@ -54,7 +172,7 @@
                     [class.is-emphasis]="part.emphasize"
                     [class.is-muted]="part.muted"
                     [class.is-blank]="!part.label">
-                    {{ part.label || '?' }}
+                    {{ part.label }}
                     <em *ngIf="part.sublabel">{{ part.sublabel }}</em>
                   </span>
                 </div>
@@ -99,7 +217,9 @@
                 <div [style.gridTemplateColumns]="fractionStripColumns(fractionStrip)">
                   <span
                     *ngFor="let part of range(fractionStripCellCount(fractionStrip)); let partIndex = index"
-                    [class.is-shaded]="fractionStripIsShaded(fractionStrip, partIndex)">
+                    [class.is-shaded]="fractionStripIsShaded(fractionStrip, partIndex)"
+                    [class.is-row-end]="fractionStripIsRowEnd(fractionStrip, partIndex)"
+                    [class.has-row-below]="fractionStripHasRowBelow(fractionStrip, partIndex)">
                     {{ fractionStripCellLabel(fractionStrip, partIndex) }}
                   </span>
                 </div>
@@ -154,6 +274,21 @@
               <strong *ngIf="note.label">{{ note.label }}</strong>
               <p class="visual-note">{{ note.text }}</p>
             </ng-container>
+
+            <ng-container *ngIf="sourceCropSection(child) as sourceCrop">
+              <strong *ngIf="sourceCrop.label">{{ sourceCrop.label }}</strong>
+              <figure class="visual-source-crop">
+                <div [style.aspectRatio]="sourceCropAspect(sourceCrop)">
+                  <img
+                    [src]="sourceCrop.src"
+                    [alt]="sourceCrop.alt"
+                    [style.width]="sourceCropImageWidth(sourceCrop)"
+                    [style.left]="sourceCropImageLeft(sourceCrop)"
+                    [style.top]="sourceCropImageTop(sourceCrop)">
+                </div>
+                <figcaption *ngIf="sourceCrop.caption">{{ sourceCrop.caption }}</figcaption>
+              </figure>
+            </ng-container>
           </ng-container>
         </article>
       </div>
@@ -161,13 +296,18 @@
 
     <ng-container *ngIf="arraySection(section) as array">
       <strong *ngIf="array.label">{{ array.label }}</strong>
-      <div class="visual-array" [ngClass]="'is-' + array.item" [style.gridTemplateColumns]="arrayColumns(array)">
+      <div class="visual-array" [ngClass]="'is-' + array.item" [class.is-source-known]="array.mode === 'solved'" [class.is-source-extra]="array.mode === 'blank'" [style.gridTemplateColumns]="arrayColumns(array)">
         <span
           *ngFor="let cell of range(array.rows * array.columns); let cellIndex = index"
           [class.is-after-split]="arrayCellIsAfterSplit(array, cellIndex)"
+          [class.is-after-column-split]="arrayCellIsAfterColumnSplit(array, cellIndex)"
+          [class.is-source-shaded]="arrayCellIsSourceShaded(array, cellIndex)"
+          [class.is-group-end]="arrayCellIsGroupEnd(array, cellIndex)"
+          [class.is-outline]="arrayCellIsOutlined(array, cellIndex)"
           [class.has-placeholder]="array.placeholder"
+          [class.has-glyph]="array.glyph"
           [attr.aria-hidden]="!array.placeholder">
-          {{ array.placeholder || '' }}
+          {{ array.placeholder || array.glyph || '' }}
         </span>
       </div>
       <small *ngIf="array.caption" class="visual-array-caption">{{ array.caption }}</small>
@@ -288,7 +428,7 @@
             [class.is-emphasis]="part.emphasize"
             [class.is-muted]="part.muted"
             [class.is-blank]="!part.label">
-            {{ part.label || '?' }}
+            {{ part.label }}
             <em *ngIf="part.sublabel">{{ part.sublabel }}</em>
           </span>
         </div>
@@ -333,7 +473,9 @@
         <div [style.gridTemplateColumns]="fractionStripColumns(fractionStrip)">
           <span
             *ngFor="let part of range(fractionStripCellCount(fractionStrip)); let partIndex = index"
-            [class.is-shaded]="fractionStripIsShaded(fractionStrip, partIndex)">
+            [class.is-shaded]="fractionStripIsShaded(fractionStrip, partIndex)"
+            [class.is-row-end]="fractionStripIsRowEnd(fractionStrip, partIndex)"
+            [class.has-row-below]="fractionStripHasRowBelow(fractionStrip, partIndex)">
             {{ fractionStripCellLabel(fractionStrip, partIndex) }}
           </span>
         </div>
@@ -362,20 +504,32 @@
 
     <ng-container *ngIf="expressionMatchSection(section) as match">
       <strong *ngIf="match.label">{{ match.label }}</strong>
-      <div class="visual-expression-match" [class.is-solved]="match.showMatches">
+      <div
+        class="visual-expression-match"
+        [class.is-solved]="match.showMatches"
+        [class.is-columns]="match.orientation === 'columns'"
+        [class.is-pairs]="match.orientation === 'pairs'">
         <div class="visual-expression-match-labels">
           <span>{{ match.topLabel || 'Expressions' }}</span>
           <span>{{ match.bottomLabel || 'Choices' }}</span>
         </div>
         <div
+          *ngIf="match.orientation !== 'pairs'"
           class="visual-expression-match-row is-top"
           [style.gridTemplateColumns]="expressionMatchColumns(match.topItems.length)">
-          <span *ngFor="let item of match.topItems">{{ item }}</span>
+          <span *ngFor="let item of match.topItems" [ngClass]="'is-' + (match.topShape || 'card')">{{ item }}</span>
         </div>
         <div
+          *ngIf="match.orientation !== 'pairs'"
           class="visual-expression-match-row is-bottom"
           [style.gridTemplateColumns]="expressionMatchColumns(match.bottomItems.length)">
-          <span *ngFor="let item of match.bottomItems">{{ item }}</span>
+          <span *ngFor="let item of match.bottomItems" [ngClass]="'is-' + (match.bottomShape || 'card')">{{ item }}</span>
+        </div>
+        <div class="visual-expression-match-pairs" *ngIf="match.orientation === 'pairs'">
+          <article *ngFor="let pair of expressionMatchPairs(match)">
+            <span [ngClass]="'is-' + (match.topShape || 'card')">{{ pair.top }}</span>
+            <span [ngClass]="'is-' + (match.bottomShape || 'card')">{{ pair.bottom }}</span>
+          </article>
         </div>
         <div class="visual-expression-match-key" *ngIf="match.showMatches && match.matches?.length">
           <span *ngFor="let pair of match.matches">
@@ -803,6 +957,23 @@
       </figure>
     </ng-container>
 
+    <ng-container *ngIf="sourceFirstWorkspaceSection(section) as sourceFirst">
+      <strong *ngIf="sourceFirst.label">{{ sourceFirst.label }}</strong>
+      <div class="visual-source-first-workspace">
+        <figure class="visual-source-crop" *ngFor="let sourceCrop of sourceFirst.pages">
+          <div [style.aspectRatio]="sourceCropAspect(sourceCrop)">
+            <img
+              [src]="sourceCrop.src"
+              [alt]="sourceCrop.alt"
+              [style.width]="sourceCropImageWidth(sourceCrop)"
+              [style.left]="sourceCropImageLeft(sourceCrop)"
+              [style.top]="sourceCropImageTop(sourceCrop)">
+          </div>
+          <figcaption *ngIf="sourceCrop.caption">{{ sourceCrop.caption }}</figcaption>
+        </figure>
+      </div>
+    </ng-container>
+
     <ng-container *ngIf="numberLineSection(section) as line">
       <strong *ngIf="line.label">{{ line.label }}</strong>
       <div
@@ -838,9 +1009,32 @@
           [attr.data-minute]="clockMinute(clock)">
         </div>
         <ng-template #sourceClockPrompt>
-          <div class="workspace-clock-prompt" aria-hidden="true">
-            <span>source clock</span>
-          </div>
+          <svg
+            *ngIf="clock.blankFace; else genericClockPrompt"
+            class="workspace-blank-clock"
+            viewBox="0 0 120 120"
+            aria-hidden="true">
+            <circle cx="60" cy="60" r="54"></circle>
+            <line
+              *ngFor="let tick of clockFaceTicks()"
+              x1="60"
+              y1="8"
+              x2="60"
+              [attr.y2]="tick % 5 === 0 ? 17 : 13"
+              [class.is-major]="tick % 5 === 0"
+              [attr.transform]="'rotate(' + tick * 6 + ' 60 60)'">
+            </line>
+            <text x="60" y="24">12</text>
+            <text x="96" y="64">3</text>
+            <text x="60" y="102">6</text>
+            <text x="23" y="64">9</text>
+            <circle class="clock-center" cx="60" cy="60" r="2.5"></circle>
+          </svg>
+          <ng-template #genericClockPrompt>
+            <div class="workspace-clock-prompt" aria-hidden="true">
+              <span>source clock</span>
+            </div>
+          </ng-template>
         </ng-template>
         <p>{{ clock.timeLabel }}</p>
         <small *ngIf="clock.caption">{{ clock.caption }}</small>

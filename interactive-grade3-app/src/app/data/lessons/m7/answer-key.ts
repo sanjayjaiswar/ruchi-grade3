@@ -147,28 +147,28 @@ export const M7_TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     "6": "Yes"
   },
   "24": {
-    "1": "Planning chart completed with 7 to 9 rectangular robot body parts and 6 to 8 environment items. Required perimeters are preserved: arms 14 cm each; legs 18 cm each; body perimeter double one arm; head 16 cm; neck half the head; sun about 25 cm; house 82 cm; tree tops about 30 cm and 20 cm; trunks 30 cm and 20 cm. Variable width and length choices are acceptable only when each rectangle's perimeter matches its listed requirement."
+    "1": "A–D, F, K, M, O: width and length will vary. E: 28; width and length will vary. G: 8; width and length will vary. H, I: extra body parts and information will vary. J, L, N: estimated and measured with string. P, Q: extra items and information will vary."
   },
   "25": {
-    "1": "Robot and environment drawn from the Lesson 24 plan. Rectangles are labeled with widths, lengths, and perimeters; circular or nonrectangular shapes are labeled with perimeters measured by string. The drawing should include the planned robot body parts and environment items."
+    "1": "Pictures and labels will vary."
   },
   "26": {
-    "1": "a. Count the different area measurements shown on the completed class line plot. b. Explain that robot bodies can have the same perimeter but different areas, so perimeter does not determine one fixed area.",
-    "2": "Measure the construction paper length and width in inches; show perimeter as length + width + length + width, or 2 x length + 2 x width, and state the answer in inches.",
-    "3": "Two robot-environment shapes are sketched and labeled with the same perimeter. The comparison explains that shapes with equal perimeter can look different.",
-    "4": "Two or three sentences describe the completed robot and environment, including visible project details and measurement/perimeter evidence."
+    "1": "a. Answers will vary. b. Answers will vary.",
+    "2": "Answers will vary.",
+    "3": "Explanations will vary.",
+    "4": "Answers will vary."
   },
   "27": {
-    "1": "Evaluation chart completed for robot rectangles A-I. Widths and lengths are measured, perimeters are calculated, and any measurement that differs from the project label is starred.",
-    "2": "The answer uses the evaluated robot chart to compare the body perimeter with 2 x the arm perimeter and gives a yes/no conclusion with calculation.",
-    "3": "The answer uses the evaluated robot chart to compare the neck perimeter with one-half of the head perimeter and gives a yes/no conclusion with calculation.",
-    "4": "Environment evaluation chart completed for items J-Q. Rectangles are measured with a ruler, nonrectangular items with string, perimeters are calculated or checked, and discrepancies are starred."
+    "1": "Evaluations will vary.",
+    "2": "Answers and calculations will vary.",
+    "3": "Answers and calculations will vary.",
+    "4": "Evaluations will vary."
   },
   "28": {
-    "1": "a. 7 yd by 9 yd rectangle drawn and labeled correctly b. 63 sq yd c. 32 yd",
-    "2": "a. 8 cm by 8 cm square drawn and labeled correctly b. 64 sq cm c. 32 cm d. 64 cm",
-    "3": "a. Drawing must match the source dimensions for the rectangle design. b. 9 in c. 34 in d. 217 sq in",
-    "4": "a. Drawing must match the source dimensions for the rectangle design. b. 8 ft c. 72 sq ft d. 48 sq ft"
+    "1": "a. 7 yd by 9 yd rectangle drawn and labeled correctly. b. 63 sq yd. c. 32 yd.",
+    "2": "a. 8 cm by 8 cm square drawn and labeled correctly. b. 64 sq cm. c. 32 cm. d. 64 cm.",
+    "3": "a. Drawings will vary. b. 9 in. c. 34 in. d. 217 sq in.",
+    "4": "a. Drawings will vary. b. 8 ft. c. 72 sq ft. d. 48 sq ft."
   },
   "29": {
     "1": "a. 56 in. b. 144 sq in. c. 72 in.",
@@ -177,21 +177,21 @@ export const M7_TEACHER_ANSWER_KEY: Record<number, Record<number, string>> = {
     "4": "700 yd"
   },
   "30": {
-    "1": "Critique form completed for a classmate's problem-solving work. It names the classmate/problem, records strategies used, identifies things done well, gives suggestions for improvement, and lists strategies the student would like to try."
+    "1": "Answers will vary."
   },
   "31": {
-    "1": "Analysis chart completed for classmate one-half representations. For each square, the response states whether it shows one-half shaded, explains why or why not, and describes changes needed so the square shows one-half shaded."
+    "1": "Answers will vary."
   },
   "32": {
-    "1": "A circle about one-half shaded is glued in the workspace. The explanation names the strategy used to shade one-half and says whether the result is exactly one-half by comparing shaded and unshaded areas.",
-    "2": "a. A, C, D b. Explanation must identify why those figures show one-half. c. Revision must make the non-example show two equal halves.",
-    "3": "Circle is divided into 4 equal parts; 2 parts are shaded; a small circle is erased from each shaded part; 2 matching small circles are drawn in the unshaded parts.",
-    "4": "Yes; explanation must show the shaded and unshaded areas are equal because the two erased shaded circles are replaced by two matching unshaded circles."
+    "1": "a. Answers will vary. b. No, explanations will vary.",
+    "2": "a. A, C, D. b. Answers will vary. c. Answers will vary.",
+    "3": "Circle shaded correctly.",
+    "4": "Yes, explanations will vary."
   },
   "33": {
-    "1": "Fluency reflection chart completed for games played in class. Each activity row records whether the student is fluent, still needs practice, and wants to put the activity in the summer activity book."
+    "1": "Answers will vary."
   },
   "34": {
-    "1": "Summer math review calendar used as a completion tracker. Students color or mark each box after completing the daily activity across Weeks 1-10 and include the cut-out packet resources for summer practice."
+    "1": "Summer Math Review Calendar."
   }
 };

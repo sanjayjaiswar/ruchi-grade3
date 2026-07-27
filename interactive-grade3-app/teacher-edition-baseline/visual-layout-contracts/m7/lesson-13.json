@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l13",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-177.png",
+      "sha256": "800d088c7e8d071e724ad97fd0c764db4fbce929b00824157b01abe90aa96753",
+      "pdfPage": 177,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 13 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-178.png",
+      "sha256": "d80c3b3159d769d47f8a56c1df44c0e628f0c700a119e642f8932406e51976f9",
+      "pdfPage": 178,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 13 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-483.png",
+      "sha256": "8f1266203e162e2b3354cd94f4a4e9347405c33332c20de809d9e1ebc439b973",
+      "pdfPage": 483,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 13 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-484.png",
+      "sha256": "b92dcaa8d78ff85e5cc81621a56fd22a9fb474f3215912978b019220181a3396",
+      "pdfPage": 484,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 13 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-177.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Find the perimeter of the following shapes."
+        ],
+        "answerKeyEvidence": "a. 22. b. 4, 4, 4, 4; 16. c. 11, 9, 6; 26. d. 15, 5, 9, 7; 36. e. 9, 9, 2, 2, 3; 25.",
+        "layout": {
+          "family": "find-perimeter-of-five-labeled-source-shapes",
+          "subpartCount": 10,
+          "modelPrimitive": "live-rectangle-square-right-triangle-trapezoid-arrow-pentagon+equation-table",
+          "modelCounts": [
+            5,
+            4,
+            4,
+            3,
+            4,
+            5
+          ],
+          "modelOrientation": "five-shape-row-over-boundary-sums",
+          "responseStructure": "retain-givens-and-complete-five-equations-and-totals",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-178.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Alan’s rectangular swimming pool is 10 meters long and 16 meters wide."
+        ],
+        "answerKeyEvidence": "52 m.",
+        "layout": {
+          "family": "rectangular-pool-perimeter",
+          "subpartCount": 1,
+          "modelPrimitive": "live-sixteen-by-ten-rectangle+equation-table",
+          "modelCounts": [
+            16,
+            10,
+            52
+          ],
+          "modelOrientation": "labeled-pool-over-perimeter-equation",
+          "responseStructure": "use-both-opposite-side-pairs-and-answer-fifty-two-meters",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-178.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Lila measures each side of the shape below."
+        ],
+        "answerKeyEvidence": "a. 24 in. b. Yes; 5 sides.",
+        "layout": {
+          "family": "concave-five-side-perimeter-and-classification",
+          "subpartCount": 2,
+          "modelPrimitive": "tight-official-concave-figure-crop+live-two-part-table",
+          "modelCounts": [
+            5,
+            4,
+            2,
+            3,
+            6,
+            9,
+            24
+          ],
+          "modelOrientation": "source-diagram-over-perimeter-and-pentagon-fields",
+          "responseStructure": "sum-five-sides-and-confirm-pentagon",
+          "openWorkspaceCount": 1,
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "sourceCrops": [
+            {
+              "src": "/source-pages/m7-teacher/page-178.png",
+              "crop": {
+                "x": 245,
+                "y": 690,
+                "width": 540,
+                "height": 260
+              }
+            }
+          ]
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Visually reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set and answer-key pages. Each tab uses live authored geometry, tables, and response spaces. Source images are permitted only as tight mathematical-diagram crops where exact topology or a printed interior join is material; prompts, answer fields, and page bodies are never embedded as screenshots."
+      }
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l17",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-206.png",
+      "sha256": "97e2cc19c57b3f3255497834cd009660b463c55ef8eef0b08d173df763f3f1af",
+      "pdfPage": 206,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 17 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-207.png",
+      "sha256": "a37323fe9ef705f59bb316466793f858938b049eae9e1509af2930c44802c99e",
+      "pdfPage": 207,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 17 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-396.png",
+      "sha256": "e7249b0b01940faeade794dd5463b8bf7e12f266077ddf4330cf3c97574489cf",
+      "pdfPage": 396,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 17 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-397.png",
+      "sha256": "5f604a5d1b828d523b71c82fe5212dde52d6cefc5e21c54ac35ccfec8ea350b1",
+      "pdfPage": 397,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 17 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-206.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Locate and label the following fractions on the number line."
+        ],
+        "answerKeyEvidence": "Number line partitioned into sixths; given fractions located and labeled.",
+        "layout": {
+          "family": "locate-five-fractions-on-an-extended-number-line",
+          "subpartCount": 5,
+          "modelPrimitive": "authored-ranged-number-line",
+          "modelCounts": [
+            5
+          ],
+          "modelOrientation": "horizontal-0-to-3",
+          "responseStructure": "locate-and-label-five-given-fractions"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-206.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Locate and label the following fractions on the number line."
+        ],
+        "answerKeyEvidence": "Number line partitioned into fourths; given fractions located and labeled.",
+        "layout": {
+          "family": "locate-five-fractions-on-an-extended-number-line",
+          "subpartCount": 5,
+          "modelPrimitive": "authored-ranged-number-line",
+          "modelCounts": [
+            5
+          ],
+          "modelOrientation": "horizontal-1-to-4",
+          "responseStructure": "locate-and-label-five-given-fractions"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-206.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Locate and label the following fractions on the number line."
+        ],
+        "answerKeyEvidence": "Number line partitioned into thirds; given fractions located and labeled.",
+        "layout": {
+          "family": "locate-five-fractions-on-an-extended-number-line",
+          "subpartCount": 5,
+          "modelPrimitive": "authored-ranged-number-line",
+          "modelCounts": [
+            5
+          ],
+          "modelOrientation": "horizontal-2-to-6",
+          "responseStructure": "locate-and-label-five-given-fractions"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-207.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "For a measurement project in math class, students measured the lengths of their pinky fingers."
+        ],
+        "answerKeyEvidence": "Alex; number line partitioned into fourths; 2 inches and 7/4 inches located and labeled; number line showing 2 inches is longer than 7/4 inches.",
+        "layout": {
+          "family": "two-inches-versus-seven-fourths",
+          "subpartCount": 2,
+          "modelPrimitive": "authored-fourths-measurement-line",
+          "modelCounts": [
+            8,
+            7
+          ],
+          "modelOrientation": "horizontal-zero-to-two-inches",
+          "responseStructure": "locate-both-lengths-and-name-alex-as-longer",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m5-teacher/page-207.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Marcy ran 4 kilometers after school."
+        ],
+        "answerKeyEvidence": "Number line with endpoints 0 km to 4 km, partitioned into fifths; 0/5 (0) km, 20/5 (4) km, 7/5 km, 12/5 km located and labeled.",
+        "layout": {
+          "family": "four-point-run-in-fifths",
+          "subpartCount": 4,
+          "modelPrimitive": "authored-fifths-measurement-line",
+          "modelCounts": [
+            0,
+            7,
+            12,
+            20
+          ],
+          "modelOrientation": "horizontal-zero-to-four-kilometers",
+          "responseStructure": "mark-start-two-stops-and-finish",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, number lines, answer work, and explanations are live per-problem content rather than embedded page or whole-task screenshots."
+      }
+    }
+  ]
+}

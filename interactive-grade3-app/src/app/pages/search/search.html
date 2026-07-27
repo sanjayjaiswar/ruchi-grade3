@@ -1,0 +1,54 @@
+<main class="page-frame search-page">
+  <section class="search-heading">
+    <span class="eyebrow">Portal search</span>
+    <h1 *ngIf="!query">Search Grade 3 learning content</h1>
+    <h1 *ngIf="query">Search results for “{{ query }}”</h1>
+    <p *ngIf="!query">Enter words in the search box above to find modules, topics, lesson concepts, vocabulary, instructions, and learner activities.</p>
+    <p *ngIf="query && !loading && !error">
+      {{ total }} {{ total === 1 ? 'result' : 'results' }}
+    </p>
+  </section>
+
+  <section class="search-state" *ngIf="loading" aria-live="polite">Searching the local curriculum…</section>
+  <section class="search-state is-error" *ngIf="error" role="alert">{{ error }}</section>
+  <section class="search-state" *ngIf="query && !loading && !error && !results.length">
+    No learner content matched every search word.
+  </section>
+
+  <section class="search-results" *ngIf="results.length" aria-label="Search results">
+    <article class="search-result" *ngFor="let result of pagedResults">
+      <nav class="search-result-context" *ngIf="context(result.record).length" aria-label="Result location">
+        <ng-container *ngFor="let link of context(result.record); let last = last">
+          <a [routerLink]="link.path" [fragment]="link.anchor">{{ link.label }}</a>
+          <span *ngIf="!last" aria-hidden="true">/</span>
+        </ng-container>
+      </nav>
+      <h2>
+        <a [routerLink]="result.path" [fragment]="result.record.anchor">{{ result.record.title }}</a>
+      </h2>
+      <p>
+        <ng-container *ngFor="let part of result.snippetParts">
+          <mark *ngIf="part.matched; else plainSnippet">{{ part.text }}</mark>
+          <ng-template #plainSnippet>{{ part.text }}</ng-template>
+        </ng-container>
+      </p>
+    </article>
+  </section>
+
+  <nav class="search-pagination" *ngIf="results.length" aria-label="Search result pages">
+    <label>
+      <span>Items per page</span>
+      <select [value]="pageSize" (change)="setPageSize($event)" aria-label="Items per page">
+        <option *ngFor="let option of pageSizeOptions" [value]="option">{{ option }}</option>
+      </select>
+    </label>
+    <span class="pagination-status">{{ firstResultNumber }}–{{ lastResultNumber }} of {{ total }}</span>
+    <div class="pagination-buttons">
+      <button type="button" (click)="setPage(1)" [disabled]="page === 1" aria-label="First page">«</button>
+      <button type="button" (click)="setPage(page - 1)" [disabled]="page === 1" aria-label="Previous page">‹</button>
+      <span>Page {{ page }} of {{ totalPages }}</span>
+      <button type="button" (click)="setPage(page + 1)" [disabled]="page === totalPages" aria-label="Next page">›</button>
+      <button type="button" (click)="setPage(totalPages)" [disabled]="page === totalPages" aria-label="Last page">»</button>
+    </div>
+  </nav>
+</main>

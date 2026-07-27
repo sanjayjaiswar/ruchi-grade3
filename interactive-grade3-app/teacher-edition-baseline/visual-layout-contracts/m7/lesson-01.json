@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m7-l1",
+  "teacherEditionPdfSha256": "608aafdaebc56498054708a4abf1db86ab1e2a33405f36ef54f9d47973656175",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m7-teacher/page-022.png",
+      "sha256": "6ab14ab2ec6557ed5a7acdecb02123f86981dbb785b23c542f5d8dbe35babd4b",
+      "pdfPage": 22,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 1 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-023.png",
+      "sha256": "88dfc432a8c092bf0067a4d3e8840b11f438f7b82c10d2d09c42acda4fcb5396",
+      "pdfPage": 23,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 1 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m7-teacher/page-464.png",
+      "sha256": "95e89640e6af8c69a858d34dca3fde72958b90319e0e6cada7e3e91e7d889b05",
+      "pdfPage": 464,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 1 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m7-teacher/page-022.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The sign below shows information about hayrides at the orchard."
+        ],
+        "answerKeyEvidence": "a. $22. b. 5. c. 7 minutes.",
+        "layout": {
+          "family": "hayride-sign-plus-three-part-rdw-work",
+          "subpartCount": 3,
+          "modelPrimitive": "live-source-sign-table+open-rdw-mat",
+          "modelCounts": [
+            7,
+            4,
+            15,
+            3
+          ],
+          "modelOrientation": "sign-over-rdw-table-and-three-part-response",
+          "responseStructure": "solve-cost-five-dollar-bill-count-and-fourth-departure-wait",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set, template, and answer-key pages. RDW problems intentionally retain open student-authored drawing space. The geometry crops contain only the mathematically meaningful template polygons, never page prompts or task-bearing page bodies."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m7-teacher/page-023.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Lena picked 17 apples, and her brother picked 19."
+        ],
+        "answerKeyEvidence": "4",
+        "layout": {
+          "family": "rdw-open-word-problem",
+          "subpartCount": 1,
+          "modelPrimitive": "open-read-draw-write-mat",
+          "modelCounts": [],
+          "modelOrientation": "four-step-vertical-rdw-table",
+          "responseStructure": "student-authored-labeled-model-equation-and-answer",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set, template, and answer-key pages. RDW problems intentionally retain open student-authored drawing space. The geometry crops contain only the mathematically meaningful template polygons, never page prompts or task-bearing page bodies."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m7-teacher/page-023.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Lena’s dad gives the cashier $30 to pay for 6 liters of apple cider."
+        ],
+        "answerKeyEvidence": "$4",
+        "layout": {
+          "family": "rdw-open-word-problem",
+          "subpartCount": 1,
+          "modelPrimitive": "open-read-draw-write-mat",
+          "modelCounts": [],
+          "modelOrientation": "four-step-vertical-rdw-table",
+          "responseStructure": "student-authored-labeled-model-equation-and-answer",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set, template, and answer-key pages. RDW problems intentionally retain open student-authored drawing space. The geometry crops contain only the mathematically meaningful template polygons, never page prompts or task-bearing page bodies."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m7-teacher/page-023.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "The apple orchard has 152 apple trees."
+        ],
+        "answerKeyEvidence": "24",
+        "layout": {
+          "family": "rdw-open-word-problem",
+          "subpartCount": 1,
+          "modelPrimitive": "open-read-draw-write-mat",
+          "modelCounts": [],
+          "modelOrientation": "four-step-vertical-rdw-table",
+          "responseStructure": "student-authored-labeled-model-equation-and-answer",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed per problem against fingerprinted Module 7 Teacher Edition Problem Set, template, and answer-key pages. RDW problems intentionally retain open student-authored drawing space. The geometry crops contain only the mathematically meaningful template polygons, never page prompts or task-bearing page bodies."
+      }
+    }
+  ]
+}

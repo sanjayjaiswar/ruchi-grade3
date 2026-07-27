@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l24",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-283.png",
+      "sha256": "b3d3bb58006a08729c23994e357a91d54ea11ccd4a6cf49fad5604865a67a9df",
+      "pdfPage": 283,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 24 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-284.png",
+      "sha256": "e38648859149ece70c7bd2c332c652433490d9cd4d1c4dc48c7fe2e30b218771",
+      "pdfPage": 284,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 24 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-408.png",
+      "sha256": "2265f5f7d6a449b835815f615f542284beae1a03504d04259167c350f18abc45",
+      "pdfPage": 408,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 24 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-409.png",
+      "sha256": "2ac13f7408c8b9b052b1ea75c7a81d5924c4e528ae29ee48335a60d5a63e92d2",
+      "pdfPage": 409,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 24 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-283.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Complete the number bond as indicated by the fractional unit."
+        ],
+        "answerKeyEvidence": "Halves: Answer provided. Thirds: Number bond showing 3 units of 1/3; number line partitioned and labeled from 0 to 1. Fourths: Number bond showing 4 units of 1/4; number line partitioned and labeled from 0 to 1. Fifths: Number bond showing 5 units of 1/5; number line partitioned and labeled from 0 to 1.",
+        "layout": {
+          "family": "halves-thirds-fourths-fifths-bonds-and-lines",
+          "subpartCount": 4,
+          "modelPrimitive": "four-number-bonds-paired-with-four-number-lines",
+          "modelCounts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "modelOrientation": "four-vertical-cards-in-unit-order",
+          "responseStructure": "complete-equal-unit-bonds-and-label-zero-to-one-lines"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-284.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Circle all the fractions in Problem 1 that are equal to 1."
+        ],
+        "answerKeyEvidence": "Fractions equal to 1 circled; 3/3, 4/4, 5/5.",
+        "layout": {
+          "family": "write-four-fractions-equivalent-to-one",
+          "subpartCount": 4,
+          "modelPrimitive": "live-equivalent-fraction-sentence",
+          "modelCounts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "modelOrientation": "one-horizontal-equation",
+          "responseStructure": "circle-and-write-two-halves-three-thirds-four-fourths-five-fifths"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-284.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "What pattern do you notice in the fractions that are equivalent to 1?"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "describe-numerator-denominator-pattern-for-one",
+          "subpartCount": 1,
+          "modelPrimitive": "open-written-response-space",
+          "modelCounts": [
+            1
+          ],
+          "modelOrientation": "large-vertical-response-space",
+          "responseStructure": "state-that-numerator-equals-denominator",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-284.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Taylor"
+        ],
+        "answerKeyEvidence": "No; explanations will vary.",
+        "layout": {
+          "family": "compare-four-fourths-and-three-thirds-pizzas",
+          "subpartCount": 2,
+          "modelPrimitive": "open-explanation-workspace-to-two-same-size-pizza-strips",
+          "modelCounts": [
+            4,
+            3
+          ],
+          "modelOrientation": "two-horizontal-same-size-wholes",
+          "responseStructure": "explain-that-both-boys-ate-one-whole",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Complete page bodies and task-bearing screenshots are prohibited. Only mathematically meaningful source illustrations are retained as tight crops; prompts, givens, response spaces, number lines, answer work, and explanations are live per-problem content."
+      }
+    }
+  ]
+}

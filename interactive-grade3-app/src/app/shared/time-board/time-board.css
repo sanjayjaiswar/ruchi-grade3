@@ -220,6 +220,15 @@ analog-clock::part(seconds) {
   font-size: 17px;
   font-weight: 650;
   transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.tick-label.is-start {
+  transform: translateX(-20%);
+}
+
+.tick-label.is-end {
+  transform: translateX(-50%);
 }
 
 .endpoint-under {

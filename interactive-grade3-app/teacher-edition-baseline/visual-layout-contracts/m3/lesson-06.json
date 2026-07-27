@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m3-l6",
+  "teacherEditionPdfSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m3/lesson-6-page-24.png",
+      "sha256": "df1e319ca6656490f83c45981a3c697c11c5395d6cdf9e1755aaf2b48017ebc1",
+      "pdfPage": 80,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 6 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-6-page-25.png",
+      "sha256": "7883dc549ca03e24c56a819916db7587821be3749c811d8d5e08d0f1a0005c62",
+      "pdfPage": 81,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 6 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-289.png",
+      "sha256": "d40b217ef5406a8b06954456614294ae73b5d5fb646424e50defff4e1bc63070",
+      "pdfPage": 289,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 6 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-290.png",
+      "sha256": "bd5bee9fa2a20f1f0279587eedd8745ece24e7d832662448e6d12c3c41bd8011",
+      "pdfPage": 290,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 6 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m3/lesson-6-page-24.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "label the tape diagrams then fill in the blanks"
+        ],
+        "answerKeyEvidence": "a. 36; 30; 1, 6; 6; 36. b. 42; 30; 2, 12; 12; 42. c. 48; 30; 3, 18; 3; 3; 18; 48. d. 54; 30; 4, 24; 4; 4; 24; 54.",
+        "layout": {
+          "family": "four-quadrant-distributive-tapes",
+          "subpartCount": 4,
+          "modelPrimitive": "tape-diagram",
+          "modelCounts": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "knownModelCounts": [
+            5,
+            5,
+            5,
+            5
+          ],
+          "modelOrientation": "two-by-two",
+          "instructionalModelFamily": "five-groups-plus-remaining-groups",
+          "responseStructure": "labeled-tape-and-distributive-equations"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure and mathematical primitives were reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m3/lesson-6-page-25.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "break apart 54 to solve 54 divided by 6"
+        ],
+        "answerKeyEvidence": "24; 4; 9.",
+        "layout": {
+          "family": "division-number-bond",
+          "subpartCount": 1,
+          "modelPrimitive": "number-bond",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "whole-over-two-parts",
+          "instructionalModelFamily": "distribute-division-over-divisible-parts",
+          "responseStructure": "number-bond-and-quotient-equations"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure and mathematical primitives were reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m3/lesson-6-page-25.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "break apart 49 to solve 49 divided by 7"
+        ],
+        "answerKeyEvidence": "14 ÷ 7; 14; 2; 7.",
+        "layout": {
+          "family": "division-number-bond",
+          "subpartCount": 1,
+          "modelPrimitive": "number-bond",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "whole-over-two-parts",
+          "instructionalModelFamily": "distribute-division-over-divisible-parts",
+          "responseStructure": "number-bond-and-quotient-equations"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure and mathematical primitives were reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m3/lesson-6-page-25.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "robert says that he can solve 6 x 8 by thinking of it as"
+        ],
+        "answerKeyEvidence": "Yes; explanations will vary.",
+        "layout": {
+          "family": "open-picture-and-explanation",
+          "subpartCount": 1,
+          "modelPrimitive": "student-drawing-or-solved-array",
+          "modelCounts": [
+            6,
+            8
+          ],
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1,
+          "instructionalModelFamily": "five-groups-plus-one-group",
+          "responseStructure": "draw-decide-explain"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure and mathematical primitives were reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m3/lesson-6-page-25.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "kelly solves 42 divided by 7 by using a number bond to break apart"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "student-authored-division-number-bond",
+          "subpartCount": 1,
+          "modelPrimitive": "number-bond",
+          "modelCounts": [
+            2
+          ],
+          "modelOrientation": "whole-over-two-parts",
+          "openWorkspaceCount": 1,
+          "responseStructure": "show-possible-number-bond-work"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Problem structure and mathematical primitives were reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+      }
+    }
+  ]
+}

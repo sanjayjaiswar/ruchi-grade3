@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m1-l7",
+  "teacherEditionPdfSha256": "c7a3b6b610d9cd9b80ab520408fb35be6981a267bdb483b5e853e289b5e19bd7",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m1-teacher/page-103.png",
+      "sha256": "737c5cb2c877965bf7a0d83f25f9c6b7d1de5d479f9810fc4d6b95bf31dfde75",
+      "pdfPage": 103,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 7 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-104.png",
+      "sha256": "a80e935053866648885ec73f87178febb6808969b09bfb1546909f0a8cae8f63",
+      "pdfPage": 104,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 7 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-301.png",
+      "sha256": "b9cc7fc86b212c92f6b47326d0fc227c9de54753af8850b78acaf05171e85470",
+      "pdfPage": 301,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 7 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m1-teacher/page-302.png",
+      "sha256": "fbaff882ecc560636d9ec85da92d970249c18a3572ea3cbc8c9b1e7e6bb70d1d",
+      "pdfPage": 302,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 7 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m1-teacher/page-103.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "a. Draw an array that shows 6 rows of 2."
+        ],
+        "answerKeyEvidence": "Array of 6 rows of 2 drawn; 6, 2, 12",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m1-teacher/page-103.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Draw an array that shows 2 rows of 6."
+        ],
+        "answerKeyEvidence": "Array of 2 rows of 6 drawn; 2, 6, 12",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m1-teacher/page-103.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "a. Turn your paper to look at the arrays in Problems 1 and 2 in different ways. What is the same and what is different about them? b. Why are the factors in your multiplication sentences in a different order?"
+        ],
+        "answerKeyEvidence": "Same array in Problem 1 turned on its side in Problem 2; the meaning of the factors switched",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m1-teacher/page-103.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Write a multiplication sentence for each expression. You might skip-count to find the totals. a. 6 twos: 6 × 2 = 12 ____ d. 2 sevens: ____ ____ Extension: b. 2 sixes: ____ ____ e. 9 twos: ____ ____ g. 11 twos: ____ ____ c. 7 twos: ____ ____ f. 2 nines: ____ ____ h. 2 twelves: ____ ____"
+        ],
+        "answerKeyEvidence": "6 × 2 = 12; 2 × 6 = 12; 7 × 2 = 14; 2 × 7 = 14; 9 × 2 = 18; 2 × 9 = 18; 11 × 2 = 22; 2 × 12 = 24",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m1-teacher/page-104.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Write and solve multiplication sentences where the second factor represents the size of the row."
+        ],
+        "answerKeyEvidence": "4 × 2 = 8; 2 × 4 = 8",
+        "layout": {
+          "family": "source-illustration-model",
+          "modelPrimitive": "source-illustration",
+          "modelOrientation": "source-order"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "A tight crop retains only the exact printed mathematical model. Prompt, equations, explanations, and solution reveal remain authored HTML."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m1-teacher/page-104.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Ms. Nenadal writes 2 × 7 = 7 × 2 on the board. Do you agree or disagree? Draw arrays to help explain your thinking."
+        ],
+        "answerKeyEvidence": "Agree; array of 7 rows of 2 and array of 2 rows of 7 drawn",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    },
+    {
+      "number": 7,
+      "sourcePageImage": "/source-pages/m1-teacher/page-104.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Find the missing factor to make each equation true. 5 × 2 = 2 × ____ ____ × 8 = 8 × 2 2 × 10 = ____× 2 2 × ____ = 9 × 2"
+        ],
+        "answerKeyEvidence": "5; 2; 10; 9",
+        "layout": {
+          "family": "source-illustration-model",
+          "modelPrimitive": "source-illustration",
+          "modelOrientation": "source-order"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "A tight crop retains only the exact printed mathematical model. Prompt, equations, explanations, and solution reveal remain authored HTML."
+      }
+    },
+    {
+      "number": 8,
+      "sourcePageImage": "/source-pages/m1-teacher/page-104.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Jada gets 2 new packs of erasers. Each pack has 6 erasers in it. a. Draw an array to show how many erasers Jada has altogether. b. Write and solve a multiplication sentence to describe the array. c. Use the commutative property to write and solve a different multiplication sentence for the array."
+        ],
+        "answerKeyEvidence": "Array of 2 rows of 6 drawn; 2 × 6 = 12; 6 × 2 = 12",
+        "layout": {
+          "family": "open-written-response",
+          "modelPrimitive": "student-authored-or-absent",
+          "modelOrientation": "open-workspace",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "The printed model or explanation area is student-authored or absent. Blank remains open; Solved reveals only an answer-key-supported completion."
+      }
+    }
+  ]
+}

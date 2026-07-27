@@ -11,7 +11,7 @@ import { LESSON_SOURCE_NOTES } from '../../data/lesson-source-notes.generated';
 import { MODULE_CONCEPT_FRAMES, ModuleConceptFrame } from '../../data/module-concept-frames';
 import { STUDENT_WORK_SOURCE, StudentWorkLessonSource, StudentWorkSourceProblem } from '../../data/student-work-source.generated';
 import { STUDENT_WORKBOOK_SOURCE_PAGES } from '../../data/student-workbook-source-pages.generated';
-import { LessonContent, LessonStep, ModuleMeta } from '../../data/curriculum.types';
+import { LessonContent, LessonStep, ModuleMeta, TopicMeta } from '../../data/curriculum.types';
 import { findLessonRuntime } from '../../data/lessons/lesson-registry';
 import {
   ArrayDecompositionLessonModel,
@@ -414,11 +414,44 @@ export class LessonPage implements OnInit, AfterViewChecked {
       }
 
       if (this.module && this.lesson) {
-        this.title.setTitle(`M${this.module.number} L${this.lesson.lessonNumber}: ${this.lesson.title} | Ruchika Grade 3 Maths`);
+        this.title.setTitle(
+          `Module ${this.module.number} · Lesson ${this.lesson.lessonNumber}: ${this.lesson.title} | Ruchika Grade 3 Maths`
+        );
       } else {
         this.title.setTitle('Lesson Not Found | Ruchika Grade 3 Maths');
       }
     });
+    this.route.fragment.subscribe((fragment) => this.revealLessonFragment(fragment));
+  }
+
+  private revealLessonFragment(fragment: string | null): void {
+    if (!this.module || !this.lesson || !fragment) {
+      return;
+    }
+    const lessonId = `${this.module.id}-l${this.lesson.lessonNumber}`;
+    if (fragment === `${lessonId}-concept`) {
+      this.activeProblemSection = 'concept';
+    } else if (fragment === `${lessonId}-problem-set` || fragment.startsWith(`${lessonId}-problem-`)) {
+      this.activeProblemSection = 'problem-set';
+    } else if (fragment === `${lessonId}-summary`) {
+      this.activeProblemSection = 'summary';
+    } else {
+      return;
+    }
+    this.focusRevealedFragment(fragment);
+  }
+
+  private focusRevealedFragment(fragment: string): void {
+    if (typeof requestAnimationFrame === 'undefined') {
+      return;
+    }
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => {
+        const target = document.getElementById(fragment);
+        target?.scrollIntoView({ block: 'start' });
+        target?.focus({ preventScroll: true });
+      })
+    );
   }
 
   ngAfterViewChecked(): void {
@@ -1710,6 +1743,19 @@ export class LessonPage implements OnInit, AfterViewChecked {
   isLongProblemPrompt(prompt: string): boolean {
     const mathMarkers = prompt.match(/_{2,}|[=×÷]/g)?.length ?? 0;
     return prompt.length > 150 || mathMarkers > 8;
+  }
+
+  lessonTopic(): TopicMeta | undefined {
+    return this.module?.topics.find((topic) => topic.id === this.lesson?.topicId);
+  }
+
+  problemHeading(prompt: string, maxLength = 110): string {
+    const clean = prompt.replace(/\s+/g, ' ').trim();
+    if (clean.length <= maxLength) {
+      return clean;
+    }
+    const boundary = clean.lastIndexOf(' ', maxLength);
+    return `${clean.slice(0, boundary > maxLength * 0.6 ? boundary : maxLength).trim()}…`;
   }
 
   problemSetSourcePageHeading(): string {

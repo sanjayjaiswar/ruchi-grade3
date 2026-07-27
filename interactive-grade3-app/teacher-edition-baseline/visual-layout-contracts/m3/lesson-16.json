@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m3-l16",
+  "teacherEditionPdfSha256": "f930f0c66e402485466dd70ae5f9d0bfb039c467e97cc9ab82f459080983b407",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m3/lesson-16-page-69.png",
+      "sha256": "ea2a2d91b6621f6540e6a131e7a1f702d5a7954143a7861725db52588ac94ee5",
+      "pdfPage": 207,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 16 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3/lesson-16-page-70.png",
+      "sha256": "b904dd6323e5ad968f658a4b502a5b031b73324e345e61b7c10bcdecd45e665e",
+      "pdfPage": 208,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 16 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-309.png",
+      "sha256": "4991f6141aeba936a0922735cb85c46bc7d65c24b7edcea11c53c802888f6b24",
+      "pdfPage": 309,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 16 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m3-answer-key/page-310.png",
+      "sha256": "45958109b8082ab40c953df9036490a41f89bd312c6e95856cebde617d0e1cb8",
+      "pdfPage": 310,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 16 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m3/lesson-16-page-69.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Complete."
+        ],
+        "answerKeyEvidence": "a. 6; b. 0; c. 1; d. 1; e. 0; f. Any number; g. 4; h. 3.",
+        "layout": {
+          "family": "eight-zero-and-one-equation-statements",
+          "subpartCount": 8,
+          "rowCount": 2,
+          "columnCount": 4,
+          "printedEquationLineCount": 8,
+          "modelPrimitive": "printed-equation-statements",
+          "modelCounts": [
+            8
+          ],
+          "modelOrientation": "two-by-four",
+          "responseStructure": "complete-missing-factor-divisor-or-quotient"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Exact source problem structure, mathematical primitive, counts, grouping, labels, and open response space were reviewed from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m3/lesson-16-page-69.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "match each equation with its solution"
+        ],
+        "answerKeyEvidence": "Equations matched to solutions.",
+        "layout": {
+          "family": "six-mice-to-six-cheese-equation-match",
+          "subpartCount": 6,
+          "modelPrimitive": "mouse-equation+cheese-solution",
+          "modelCounts": [
+            6,
+            6
+          ],
+          "modelOrientation": "two-horizontal-rows",
+          "responseStructure": "draw-matching-lines"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Exact source problem structure, mathematical primitive, counts, grouping, labels, and open response space were reviewed from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m3/lesson-16-page-69.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "let n be a number complete the blanks"
+        ],
+        "answerKeyEvidence": "1, 2, 3, 4, 5, 6, 7, 8, 9, n. Answers will vary.",
+        "layout": {
+          "family": "ten-term-multiply-by-one-pattern",
+          "subpartCount": 10,
+          "rowCount": 1,
+          "columnCount": 10,
+          "modelPrimitive": "number-box-times-one-arrow",
+          "modelCounts": [
+            10
+          ],
+          "modelOrientation": "single-horizontal-line",
+          "instructionalModelFamily": "identity-property-of-multiplication",
+          "responseStructure": "complete-products-and-describe-pattern"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Exact source problem structure, mathematical primitive, counts, grouping, labels, and open response space were reviewed from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m3/lesson-16-page-70.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "josie says that any number divided by 1 equals that number a write a"
+        ],
+        "answerKeyEvidence": "a. n ÷ 1 = n. b. 6 ÷ 1 = 6; picture drawn. c. 6 × 1 = 6.",
+        "layout": {
+          "family": "three-part-divide-by-one-open-response",
+          "subpartCount": 3,
+          "openWorkspaceCount": 3,
+          "modelPrimitive": "open-equation-picture-and-check",
+          "modelCounts": [],
+          "modelOrientation": "vertical-source-parts",
+          "instructionalModelFamily": "division-by-one",
+          "responseStructure": "generalize-substitute-draw-and-check"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Exact source problem structure, mathematical primitive, counts, grouping, labels, and open response space were reviewed from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m3/lesson-16-page-70.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "matt explains what he learned about dividing with zero to his little sister a"
+        ],
+        "answerKeyEvidence": "a. Explanations may vary. b. Explanations may vary. c. Explanations may vary.",
+        "layout": {
+          "family": "three-part-dividing-with-zero-open-response",
+          "subpartCount": 3,
+          "openWorkspaceCount": 3,
+          "modelPrimitive": "open-written-explanation",
+          "modelCounts": [],
+          "modelOrientation": "vertical-source-parts",
+          "instructionalModelFamily": "division-with-zero",
+          "responseStructure": "explain-zero-dividend-zero-divisor-and-both"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Exact source problem structure, mathematical primitive, counts, grouping, labels, and open response space were reviewed from the fingerprinted Teacher Edition; whole-page screenshot acceptance is prohibited."
+      }
+    }
+  ]
+}

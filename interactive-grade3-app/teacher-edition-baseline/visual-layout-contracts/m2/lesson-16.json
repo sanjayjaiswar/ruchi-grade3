@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m2-l16",
+  "teacherEditionPdfSha256": "47db9d43a0d5b275abaa1bc2c86d4e55834dac7423464395f921854dca0ccdc4",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m2-teacher/page-202.png",
+      "sha256": "67ec90033365f445af0731d4b6b9f130040d587e9dd8bc0765c8c7790825e31e",
+      "pdfPage": 202,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 16 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-teacher/page-203.png",
+      "sha256": "dca5669fda1bea8cc05b2f84b3c19f2f2d738effd59bd0f80682a67cfc06e573",
+      "pdfPage": 203,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 16 Problem Set printed-layout evidence"
+    },
+    {
+      "image": "/source-pages/m2-answer-key/page-297.png",
+      "sha256": "fe5d28c0c0082ed0fd2394b27c31026dddc52b655a2555ccb12e1fe6bd18a733",
+      "pdfPage": 297,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 16 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m2-teacher/page-202.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "find the sums below. a. 52 ml + 68 ml b. 352 ml + 68 ml c. 352 ml + 468 ml d. 56 cm + 94 cm e. 506 cm + 94 cm f. 506 cm + 394 cm g. 697 g + 138 g h. 345 g + 597 g i. 486 g + 497 g j. 3 l 251 ml + 1 l 549 ml k. 4 kg 384 g + 2 kg 467"
+        ],
+        "answerKeyEvidence": "1. a. 120 mL 2. Tape diagram drawn and labeled; 1,000 g b. 420 mL 3. 144 muffins c. 820 mL 4. 741 mL d. 150 cm e. 600 cm f. 900 cm g. 835 g h. 942 g i. 983 g j. 4 L 800 mL k. 6 kg 851 g",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m2-teacher/page-203.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "lane makes sauerkraut. he weighs the amounts of cabbage and salt he uses. draw and label a tape diagram to find the total weight of the cabbage and salt lane uses."
+        ],
+        "answerKeyEvidence": "1. a. 120 mL 2. Tape diagram drawn and labeled; 1,000 g b. 420 mL 3. 144 muffins c. 820 mL 4. 741 mL d. 150 cm e. 600 cm f. 900 cm g. 835 g h. 942 g i. 983 g j. 4 L 800 mL k. 6 kg 851 g",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m2-teacher/page-203.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "sue bakes mini-muffins for the school bake sale. after wrapping 86 muffins she still has 58 muffins left cooling on the table. how many muffins did she bake altogether"
+        ],
+        "answerKeyEvidence": "1. a. 120 mL 2. Tape diagram drawn and labeled; 1,000 g b. 420 mL 3. 144 muffins c. 820 mL 4. 741 mL d. 150 cm e. 600 cm f. 900 cm g. 835 g h. 942 g i. 983 g j. 4 L 800 mL k. 6 kg 851 g",
+        "layout": {
+          "family": "open-written-response"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m2-teacher/page-203.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "the milk carton to the right holds 183 milliliters more liquid than the juice box. what is the total capacity of the juice"
+        ],
+        "answerKeyEvidence": "1. a. 120 mL 2. Tape diagram drawn and labeled; 1,000 g b. 420 mL 3. 144 muffins c. 820 mL 4. 741 mL d. 150 cm e. 600 cm f. 900 cm g. 835 g h. 942 g i. 983 g j. 4 L 800 mL k. 6 kg 851 g",
+        "layout": {
+          "family": "composite-mathematical-model"
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Reviewed directly against the official problem-level time model, clock, table, or open response space; no page-screenshot workspace is accepted."
+      }
+    }
+  ]
+}

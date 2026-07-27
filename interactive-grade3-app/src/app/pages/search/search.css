@@ -1,0 +1,139 @@
+.search-page {
+  display: grid;
+  gap: 18px;
+}
+
+.search-heading,
+.search-state,
+.search-result,
+.search-pagination {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+
+.search-heading {
+  padding: 24px;
+  border-top: 5px solid var(--google-blue);
+}
+
+.search-heading h1 {
+  margin: 4px 0 8px;
+}
+
+.search-heading p,
+.search-result p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.58;
+}
+
+.search-state {
+  padding: 20px 24px;
+  font-weight: 750;
+}
+
+.search-state.is-error {
+  border-color: var(--google-red);
+  background: var(--google-red-soft);
+  color: var(--google-red-strong);
+}
+
+.search-results {
+  display: grid;
+  gap: 12px;
+}
+
+.search-result {
+  padding: 18px 22px;
+}
+
+.search-result-context {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 8px;
+  color: var(--color-text-secondary);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.search-result-context a {
+  font-weight: 400;
+}
+
+.search-result h2 {
+  margin: 2px 0 4px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.search-result h2 a {
+  font-weight: 700;
+}
+
+.search-result mark {
+  border-radius: 3px;
+  background: var(--google-blue-soft);
+  color: inherit;
+  font-weight: inherit;
+}
+
+.search-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  padding: 12px 16px;
+  color: var(--color-text-secondary);
+  font-size: 15px;
+}
+
+.search-pagination label,
+.pagination-buttons {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-pagination select,
+.pagination-buttons button {
+  min-height: 38px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--color-text);
+}
+
+.search-pagination select {
+  padding: 0 30px 0 10px;
+}
+
+.pagination-buttons button {
+  min-width: 38px;
+  padding: 0 10px;
+  color: var(--google-blue-strong);
+  font-size: 20px;
+}
+
+.pagination-buttons button:hover:not(:disabled),
+.pagination-buttons button:focus-visible {
+  border-color: var(--google-blue);
+  background: var(--google-blue-soft);
+}
+
+.pagination-buttons span,
+.pagination-status {
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .search-pagination {
+    align-items: flex-end;
+    flex-direction: column;
+  }
+}

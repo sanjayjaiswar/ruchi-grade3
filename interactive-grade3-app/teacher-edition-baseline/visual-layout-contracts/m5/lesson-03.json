@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 2,
+  "lessonId": "m5-l3",
+  "teacherEditionPdfSha256": "2dd4c7690c97c849a9142380d0a1199d2faec31f6874b76277d29e882d852a31",
+  "sourceEvidence": [
+    {
+      "image": "/source-pages/m5-teacher/page-37.png",
+      "sha256": "297bc64feb20eacc19f2e4c2f5e91f8f0657194ebe728e413ffd2735091954a2",
+      "pdfPage": 37,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 3 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-38.png",
+      "sha256": "fd27e9312706dd9c378efcf0723bcb59cb4483e93b915ec62de4aab236d10fd4",
+      "pdfPage": 38,
+      "documentSection": "problem-set",
+      "role": "Teacher Edition Lesson 3 Problem Set page-layout evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-370.png",
+      "sha256": "617d5663ea1a8a7bbd2e79b43a987f6f8b2e740cffd1ae0f14534ab41fd0713a",
+      "pdfPage": 370,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 3 Problem Set answer-key evidence"
+    },
+    {
+      "image": "/source-pages/m5-teacher/page-371.png",
+      "sha256": "f7c55f7c679052cea72e2bb36854fe81a74a2e6df66fc38f376e7c451d2d3e43",
+      "pdfPage": 371,
+      "documentSection": "answer-key",
+      "role": "Teacher Edition Lesson 3 Problem Set answer-key evidence"
+    }
+  ],
+  "problems": [
+    {
+      "number": 1,
+      "sourcePageImage": "/source-pages/m5-teacher/page-37.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Each shape is a whole divided into equal parts"
+        ],
+        "answerKeyEvidence": "Eighths; 5 eighths. Thirds; 3 thirds. Halves; 1 half.",
+        "layout": {
+          "family": "four-varied-shaded-wholes-name-and-count-units",
+          "subpartCount": 4,
+          "modelPrimitive": "tight-official-four-shaded-shape-illustration",
+          "modelCounts": [
+            4,
+            2,
+            8,
+            5,
+            3,
+            3,
+            2,
+            1
+          ],
+          "modelOrientation": "four-horizontal-varied-wholes-over-four-responses",
+          "responseStructure": "name-unit-and-count-shaded-units",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 2,
+      "sourcePageImage": "/source-pages/m5-teacher/page-37.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Circle the shapes that are divided into equal parts"
+        ],
+        "answerKeyEvidence": "First, third, and fifth shapes circled; sentences will vary.",
+        "layout": {
+          "family": "five-equal-and-unequal-part-shape-choices",
+          "subpartCount": 5,
+          "modelPrimitive": "tight-official-five-shape-choice-illustration",
+          "modelCounts": [
+            5
+          ],
+          "modelOrientation": "five-horizontal-source-shapes-over-written-response",
+          "responseStructure": "circle-first-third-fifth-and-define-equal-parts",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 3,
+      "sourcePageImage": "/source-pages/m5-teacher/page-37.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Estimate to divide each into 4 equal parts"
+        ],
+        "answerKeyEvidence": "Shapes divided into 4 equal parts; fourths.",
+        "layout": {
+          "family": "rectangle-line-segment-circle-partitioned-into-fourths",
+          "subpartCount": 3,
+          "modelPrimitive": "tight-official-three-open-whole-illustration",
+          "modelCounts": [
+            4,
+            4,
+            4
+          ],
+          "modelOrientation": "rectangle-line-circle-horizontal-over-unit-response",
+          "responseStructure": "partition-each-whole-into-four-equal-parts-and-name-fourths",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 4,
+      "sourcePageImage": "/source-pages/m5-teacher/page-38.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Divide and shade to show the given fraction"
+        ],
+        "answerKeyEvidence": "Shapes divided and shaded appropriately.",
+        "layout": {
+          "family": "three-varied-wholes-show-one-half-one-sixth-one-third",
+          "subpartCount": 3,
+          "modelPrimitive": "tight-official-trapezoid-line-circle-illustration",
+          "modelCounts": [
+            2,
+            6,
+            3
+          ],
+          "modelOrientation": "three-horizontal-source-wholes-over-response",
+          "responseStructure": "partition-and-shade-requested-unit-fractions",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 5,
+      "sourcePageImage": "/source-pages/m5-teacher/page-38.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "do not draw fourths"
+        ],
+        "answerKeyEvidence": "Answers will vary.",
+        "layout": {
+          "family": "three-open-wholes-use-different-non-fourths-units",
+          "subpartCount": 3,
+          "modelPrimitive": "tight-official-rectangle-line-circle-illustration",
+          "modelCounts": [
+            3
+          ],
+          "modelOrientation": "three-horizontal-open-source-wholes-over-response",
+          "responseStructure": "choose-distinct-equal-part-units-excluding-fourths",
+          "sourceFirst": true,
+          "sourceCropCount": 1,
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    },
+    {
+      "number": 6,
+      "sourcePageImage": "/source-pages/m5-teacher/page-38.png",
+      "teacherEditionRequirements": {
+        "sourceTextEvidence": [
+          "Charlotte wants to equally share a candy bar with 4 friends"
+        ],
+        "answerKeyEvidence": "Candy bar drawn and divided into 5 equal parts; 1 fifth.",
+        "layout": {
+          "family": "one-candy-bar-shared-by-five-people",
+          "subpartCount": 1,
+          "modelPrimitive": "authored-fifths-fraction-strip",
+          "modelCounts": [
+            5,
+            1
+          ],
+          "modelOrientation": "horizontal-strip-over-written-response",
+          "responseStructure": "draw-five-equal-parts-and-name-one-fifth",
+          "openWorkspaceCount": 1
+        },
+        "blankMustNotContain": [],
+        "solvedMustContain": [],
+        "sourceLayoutNotes": "Per-problem Teacher Edition structure reviewed against the fingerprinted Problem Set page and answer key. Only mathematically meaningful source illustrations are retained as tight crops; prompts, response spaces, models, and explanations are authored per problem rather than embedded as page screenshots."
+      }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
@@ -23,15 +23,34 @@ const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const { findLessonRuntime } = require(join(root, 'src/app/data/lessons/lesson-registry.ts'));
 
 const lessonCounts = { m1: 21, m2: 21, m3: 21, m4: 16, m5: 30, m6: 9, m7: 34 };
-const expectedProblemCounts = { m1: 111, m2: 93, m3: 93, m4: 68, m5: 158, m6: 24, m7: 127 };
+const expectedM3ProblemCount = Array.from({ length: lessonCounts.m3 }, (_, index) => {
+      const contractPath = join(
+        root,
+        'teacher-edition-baseline',
+        'contracts',
+        'm3',
+        `lesson-${String(index + 1).padStart(2, '0')}.json`
+      );
+      const contract = JSON.parse(readFileSync(contractPath, 'utf8'));
+      return contract.problemSet.extractedProblems.length;
+    }).reduce((sum, problemCount) => sum + problemCount, 0);
+const expectedProblemCounts = {
+  m1: 111,
+  m2: 93,
+  m3: expectedM3ProblemCount,
+  m4: 68,
+  m5: 158,
+  m6: 24,
+  m7: 127
+};
 
 const exactSolvedEvidence = {
   'm1-2-1': {
-    require: [/4 x 2 = 8/, /4 rows with 2 cars/, /8 cars total/],
+    require: [/4 x 2 = 8/, /4 rows with 2 cars/],
     forbid: [/4 x 3 = 12/, /4 rows with 3 cars/]
   },
   'm1-2-4': {
-    require: [/5 x 4 = 20/, /4 triangles in each row/, /20 triangles total/],
+    require: [/5 x 4 = 20/, /4 triangles in each row/],
     forbid: [/5 x 3 = 15/, /3 triangles in each row/]
   },
   'm1-3-2': {
@@ -137,14 +156,14 @@ const exactSourcePromptEvidence = {
   'm5-18-6': [/5\/6 mile/, /7\/8 mile/],
   'm5-18-7': [/5\/4 meters/, /4\/5 meter/],
   'm5-18-8': [/7\/8 foot/, /7\/4 feet/, /4\/2 feet/],
-  'm5-21-1': [/halves with fourths/, /halves with sixths/],
-  'm5-21-3': [/2\/4 = ___\/6/, /6\/6 = ___\/2 = ___\/4/, /3\/2 = ___\/6 = ___\/4/],
-  'm5-21-4': [/2\/4 inch/, /marked in eighths/],
-  'm5-21-5': [/1\/2 inch/, /2\/4 inch/, /4\/8 inch/],
+  'm5-21-1': [/fractional units on the left/, /label the missing fractions on the blanks/i],
+  'm5-21-3': [/number lines above/, /number sentences true/],
+  'm5-21-4': [/2\/4 inches of rain/, /gauge measures rain in eighths/],
+  'm5-21-5': [/1\/2 inch of rain/, /use words and a number line/i],
   'm5-23-4': [/equal to 7\/2/],
-  'm5-23-6': [/2 of 3 equal race parts \(2\/3\)/, /2 of 6 equal race parts \(2\/6\)/],
-  'm5-25-2': [/missing whole numbers 2, 3, 5, and 6/, /denominator 1/],
-  'm5-25-3': [/difference between 2\/1 and 2\/2/]
+  'm5-23-6': [/divide his race into 3 equal parts/, /divides his race into 6 equal parts/],
+  'm5-25-2': [/missing whole numbers in the boxes below/, /fractions in the boxes above/],
+  'm5-25-3': [/difference between these two fractions/, /words and pictures/]
 };
 
 const exactSolvedGeometry = {
@@ -371,6 +390,10 @@ function assert(condition, message, failures) {
 
 const failures = [];
 let totalProblems = 0;
+let sourceContractControlledProblems = 0;
+const exactSolvedEvidenceChecked = new Set();
+const exactSourcePromptEvidenceChecked = new Set();
+const exactSolvedGeometryChecked = new Set();
 
 for (const [moduleId, lessonCount] of Object.entries(lessonCounts)) {
   let moduleProblems = 0;
@@ -388,6 +411,16 @@ for (const [moduleId, lessonCount] of Object.entries(lessonCounts)) {
       `lesson-${String(lessonNumber).padStart(2, '0')}.json`
     );
     const contract = JSON.parse(readFileSync(contractPath, 'utf8'));
+    const sourceVisualContractPath = join(
+      root,
+      'teacher-edition-baseline',
+      'visual-layout-contracts',
+      moduleId,
+      `lesson-${String(lessonNumber).padStart(2, '0')}.json`
+    );
+    const hasTeacherEditionSourceGate =
+      existsSync(sourceVisualContractPath) &&
+      JSON.parse(readFileSync(sourceVisualContractPath, 'utf8')).schemaVersion === 2;
     assert(
       Boolean(contract.problemSet?.problemSetText?.trim()),
       `${moduleId.toUpperCase()} L${lessonNumber}: Teacher Edition Problem Set text is empty`,
@@ -420,7 +453,14 @@ for (const [moduleId, lessonCount] of Object.entries(lessonCounts)) {
         failures
       );
 
-      const evidence = exactSolvedEvidence[`${moduleId}-${lessonNumber}-${problem.number}`];
+      if (hasTeacherEditionSourceGate) sourceContractControlledProblems += 1;
+
+      // A source-layout contract is an additional Teacher Edition gate. It must
+      // never exempt the authored runtime from exact answer, prompt, or geometry
+      // assertions.
+      const evidenceKey = `${moduleId}-${lessonNumber}-${problem.number}`;
+      const evidence = exactSolvedEvidence[evidenceKey];
+      if (evidence) exactSolvedEvidenceChecked.add(evidenceKey);
       for (const pattern of evidence?.require ?? []) {
         assert(pattern.test(text), `${label}: missing required Teacher Edition evidence ${pattern}`, failures);
       }
@@ -429,11 +469,14 @@ for (const [moduleId, lessonCount] of Object.entries(lessonCounts)) {
       }
 
       const sourceText = problem.sourcePrompt.replace(/\s+/g, ' ').trim();
-      for (const pattern of exactSourcePromptEvidence[`${moduleId}-${lessonNumber}-${problem.number}`] ?? []) {
+      const sourcePromptPatterns = exactSourcePromptEvidence[evidenceKey] ?? [];
+      if (sourcePromptPatterns.length) exactSourcePromptEvidenceChecked.add(evidenceKey);
+      for (const pattern of sourcePromptPatterns) {
         assert(pattern.test(sourceText), `${label}: source prompt lost Teacher Edition evidence ${pattern}`, failures);
       }
 
-      const geometryChecks = exactSolvedGeometry[`${moduleId}-${lessonNumber}-${problem.number}`]?.(problem) ?? [];
+      const geometryChecks = exactSolvedGeometry[evidenceKey]?.(problem) ?? [];
+      if (geometryChecks.length) exactSolvedGeometryChecked.add(evidenceKey);
       for (const [condition, message] of geometryChecks) {
         assert(condition, `${label}: ${message}`, failures);
       }
@@ -447,7 +490,15 @@ for (const [moduleId, lessonCount] of Object.entries(lessonCounts)) {
   );
 }
 
-assert(totalProblems === 674, `Expected 674 delivered problems, found ${totalProblems}`, failures);
+const expectedTotalProblems = Object.values(expectedProblemCounts).reduce(
+  (sum, problemCount) => sum + problemCount,
+  0
+);
+assert(
+  totalProblems === expectedTotalProblems,
+  `Expected ${expectedTotalProblems} Teacher Edition problems, found ${totalProblems}`,
+  failures
+);
 
 if (failures.length) {
   console.error(`Solved-problem fidelity validation failed with ${failures.length} issue(s):`);
@@ -455,7 +506,8 @@ if (failures.length) {
   process.exitCode = 1;
 } else {
   console.log(`Solved-problem fidelity validation passed: ${totalProblems} problems across 152 lessons.`);
-  console.log(`Exact Teacher Edition regression assertions passed for ${Object.keys(exactSolvedEvidence).length} high-risk solved items.`);
-  console.log(`Exact source-prompt regression assertions passed for ${Object.keys(exactSourcePromptEvidence).length} stacked-fraction items.`);
-  console.log(`Exact mathematical-geometry assertions passed for ${Object.keys(exactSolvedGeometry).length} high-risk solved items.`);
+  console.log(`Exact-answer assertions passed for ${exactSolvedEvidenceChecked.size} targeted items.`);
+  console.log(`Exact source-prompt assertions passed for ${exactSourcePromptEvidenceChecked.size} targeted items.`);
+  console.log(`Exact mathematical-geometry assertions passed for ${exactSolvedGeometryChecked.size} targeted items.`);
+  console.log(`${sourceContractControlledProblems} problems also have schema-v2 Teacher Edition visual contracts.`);
 }

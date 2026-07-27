@@ -1,0 +1,1740 @@
+// Generated only from teacher-edition-baseline/module-2-problem-evidence.json.
+// Do not add inferred prompts, models, labels, dimensions, scales, tables, clocks, or answers here.
+
+export type M2SourceCropEvidence = {
+  pdfPage: number;
+  src: string;
+  crop: { x: number; y: number; width: number; height: number };
+};
+
+export type M2SourceProblemEvidence = {
+  number: number;
+  sourceTextEvidence: string;
+  answerKeyEvidence: string;
+  sourceCrops: readonly M2SourceCropEvidence[];
+};
+
+export type M2SourceLessonEvidence = {
+  answerKeyImages: readonly string[];
+  problems: readonly M2SourceProblemEvidence[];
+};
+
+export const M2_SOURCE_IMAGE_SIZE = {"width":1143,"height":1443} as const;
+export const M2_ANSWER_KEY_IMAGE_SIZE = {"width":1143,"height":1443} as const;
+
+export const M2_SOURCE_LESSON_EVIDENCE: Record<number, M2SourceLessonEvidence> =
+  {
+  "1": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-281.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Use a stopwatch.",
+        "answerKeyEvidence": "1. Times will vary. 2. Times will vary. 3. Times will vary. 4. Times will vary. 5. Times will vary. 6. Times will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 19,
+            "src": "/source-pages/m2-teacher/page-019.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 525,
+              "height": 556
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Use a stopwatch.",
+        "answerKeyEvidence": "1. Times will vary. 2. Times will vary. 3. Times will vary. 4. Times will vary. 5. Times will vary. 6. Times will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 19,
+            "src": "/source-pages/m2-teacher/page-019.png",
+            "crop": {
+              "x": 572,
+              "y": 137,
+              "width": 525,
+              "height": 556
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Use a stopwatch.",
+        "answerKeyEvidence": "1. Times will vary. 2. Times will vary. 3. Times will vary. 4. Times will vary. 5. Times will vary. 6. Times will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 19,
+            "src": "/source-pages/m2-teacher/page-019.png",
+            "crop": {
+              "x": 47,
+              "y": 619,
+              "width": 525,
+              "height": 679
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Use a stopwatch.",
+        "answerKeyEvidence": "1. Times will vary. 2. Times will vary. 3. Times will vary. 4. Times will vary. 5. Times will vary. 6. Times will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 19,
+            "src": "/source-pages/m2-teacher/page-019.png",
+            "crop": {
+              "x": 572,
+              "y": 619,
+              "width": 525,
+              "height": 679
+            }
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Use a stopwatch.",
+        "answerKeyEvidence": "1. Times will vary. 2. Times will vary. 3. Times will vary. 4. Times will vary. 5. Times will vary. 6. Times will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 20,
+            "src": "/source-pages/m2-teacher/page-020.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 774
+            }
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "sourceTextEvidence": "Use a stopwatch.",
+        "answerKeyEvidence": "1. Times will vary. 2. Times will vary. 3. Times will vary. 4. Times will vary. 5. Times will vary. 6. Times will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 20,
+            "src": "/source-pages/m2-teacher/page-020.png",
+            "crop": {
+              "x": 47,
+              "y": 774,
+              "width": 1050,
+              "height": 524
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "2": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-282.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Follow the directions to label the number line below.",
+        "answerKeyEvidence": "1. a. First and last tick marks labeled as 7:00 a.m. and 8:00 a.m. b. Each interval labeled by fives below the number line up to 8:00 a.m. c. Point D plotted and labeled above 7:10 a.m. d. Point E plotted and labeled above 7:35 a.m. e. Point T plotted and labeled above 7:40 a.m. f. Point L plotted and labeled above 7:45 a.m. g. Point W plotted and labeled above 7:55 a.m. 2. Every 5 minutes labeled below the number line First clock not matched to the number line Second clock—5:50 p.m. Third clock—5:15 p.m. Fourth clock not matched to the number line Fifth clock—5:40 p.m. Last clock—5:25 p.m. 3. First and last tick marks labeled as 5:00 p.m. and 6:00 p.m.; each interval labeled by fives below the number line up to 6:00 p.m.; 5:45 p.m. located and plotted on the number line 4. Answers will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 31,
+            "src": "/source-pages/m2-teacher/page-031.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 1162
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Follow the directions to label the number line below.",
+        "answerKeyEvidence": "1. a. First and last tick marks labeled as 7:00 a.m. and 8:00 a.m. b. Each interval labeled by fives below the number line up to 8:00 a.m. c. Point D plotted and labeled above 7:10 a.m. d. Point E plotted and labeled above 7:35 a.m. e. Point T plotted and labeled above 7:40 a.m. f. Point L plotted and labeled above 7:45 a.m. g. Point W plotted and labeled above 7:55 a.m. 2. Every 5 minutes labeled below the number line First clock not matched to the number line Second clock—5:50 p.m. Third clock—5:15 p.m. Fourth clock not matched to the number line Fifth clock—5:40 p.m. Last clock—5:25 p.m. 3. First and last tick marks labeled as 5:00 p.m. and 6:00 p.m.; each interval labeled by fives below the number line up to 6:00 p.m.; 5:45 p.m. located and plotted on the number line 4. Answers will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 32,
+            "src": "/source-pages/m2-teacher/page-032.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 465
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Follow the directions to label the number line below.",
+        "answerKeyEvidence": "1. a. First and last tick marks labeled as 7:00 a.m. and 8:00 a.m. b. Each interval labeled by fives below the number line up to 8:00 a.m. c. Point D plotted and labeled above 7:10 a.m. d. Point E plotted and labeled above 7:35 a.m. e. Point T plotted and labeled above 7:40 a.m. f. Point L plotted and labeled above 7:45 a.m. g. Point W plotted and labeled above 7:55 a.m. 2. Every 5 minutes labeled below the number line First clock not matched to the number line Second clock—5:50 p.m. Third clock—5:15 p.m. Fourth clock not matched to the number line Fifth clock—5:40 p.m. Last clock—5:25 p.m. 3. First and last tick marks labeled as 5:00 p.m. and 6:00 p.m.; each interval labeled by fives below the number line up to 6:00 p.m.; 5:45 p.m. located and plotted on the number line 4. Answers will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 32,
+            "src": "/source-pages/m2-teacher/page-032.png",
+            "crop": {
+              "x": 47,
+              "y": 465,
+              "width": 1050,
+              "height": 483
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Follow the directions to label the number line below.",
+        "answerKeyEvidence": "1. a. First and last tick marks labeled as 7:00 a.m. and 8:00 a.m. b. Each interval labeled by fives below the number line up to 8:00 a.m. c. Point D plotted and labeled above 7:10 a.m. d. Point E plotted and labeled above 7:35 a.m. e. Point T plotted and labeled above 7:40 a.m. f. Point L plotted and labeled above 7:45 a.m. g. Point W plotted and labeled above 7:55 a.m. 2. Every 5 minutes labeled below the number line First clock not matched to the number line Second clock—5:50 p.m. Third clock—5:15 p.m. Fourth clock not matched to the number line Fifth clock—5:40 p.m. Last clock—5:25 p.m. 3. First and last tick marks labeled as 5:00 p.m. and 6:00 p.m.; each interval labeled by fives below the number line up to 6:00 p.m.; 5:45 p.m. located and plotted on the number line 4. Answers will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 32,
+            "src": "/source-pages/m2-teacher/page-032.png",
+            "crop": {
+              "x": 47,
+              "y": 811,
+              "width": 1050,
+              "height": 487
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "3": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-283.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Plot a point on the number line for the times shown on the clocks below.",
+        "answerKeyEvidence": "1. The times shown on the clocks are plotted 2. Hands on the clock drawn to show 6:48 a.m. correctly on the number line. 3. Hands on the clock drawn to show 8:23 a.m. First clock—7:17 p.m. 4. 5:27 Second clock—7:03 p.m. 5. a. 3:56 Third clock—7:55 p.m. b. 3:45 Fourth clock—7:41 p.m. Fifth clock—answer provided",
+        "sourceCrops": [
+          {
+            "pdfPage": 44,
+            "src": "/source-pages/m2-teacher/page-044.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 674
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Plot a point on the number line for the times shown on the clocks below.",
+        "answerKeyEvidence": "1. The times shown on the clocks are plotted 2. Hands on the clock drawn to show 6:48 a.m. correctly on the number line. 3. Hands on the clock drawn to show 8:23 a.m. First clock—7:17 p.m. 4. 5:27 Second clock—7:03 p.m. 5. a. 3:56 Third clock—7:55 p.m. b. 3:45 Fourth clock—7:41 p.m. Fifth clock—answer provided",
+        "sourceCrops": [
+          {
+            "pdfPage": 44,
+            "src": "/source-pages/m2-teacher/page-044.png",
+            "crop": {
+              "x": 47,
+              "y": 783,
+              "width": 525,
+              "height": 515
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Plot a point on the number line for the times shown on the clocks below.",
+        "answerKeyEvidence": "1. The times shown on the clocks are plotted 2. Hands on the clock drawn to show 6:48 a.m. correctly on the number line. 3. Hands on the clock drawn to show 8:23 a.m. First clock—7:17 p.m. 4. 5:27 Second clock—7:03 p.m. 5. a. 3:56 Third clock—7:55 p.m. b. 3:45 Fourth clock—7:41 p.m. Fifth clock—answer provided",
+        "sourceCrops": [
+          {
+            "pdfPage": 44,
+            "src": "/source-pages/m2-teacher/page-044.png",
+            "crop": {
+              "x": 572,
+              "y": 783,
+              "width": 525,
+              "height": 515
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Plot a point on the number line for the times shown on the clocks below.",
+        "answerKeyEvidence": "1. The times shown on the clocks are plotted 2. Hands on the clock drawn to show 6:48 a.m. correctly on the number line. 3. Hands on the clock drawn to show 8:23 a.m. First clock—7:17 p.m. 4. 5:27 Second clock—7:03 p.m. 5. a. 3:56 Third clock—7:55 p.m. b. 3:45 Fourth clock—7:41 p.m. Fifth clock—answer provided",
+        "sourceCrops": [
+          {
+            "pdfPage": 45,
+            "src": "/source-pages/m2-teacher/page-045.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 647
+            }
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Plot a point on the number line for the times shown on the clocks below.",
+        "answerKeyEvidence": "1. The times shown on the clocks are plotted 2. Hands on the clock drawn to show 6:48 a.m. correctly on the number line. 3. Hands on the clock drawn to show 8:23 a.m. First clock—7:17 p.m. 4. 5:27 Second clock—7:03 p.m. 5. a. 3:56 Third clock—7:55 p.m. b. 3:45 Fourth clock—7:41 p.m. Fifth clock—answer provided",
+        "sourceCrops": [
+          {
+            "pdfPage": 45,
+            "src": "/source-pages/m2-teacher/page-045.png",
+            "crop": {
+              "x": 47,
+              "y": 647,
+              "width": 1050,
+              "height": 651
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "4": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-284.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Cole starts reading at 6:23 p.m.",
+        "answerKeyEvidence": "1. 26 5. 9:52 2. 2:08 6. 19 min 3. 31 7. 11:58 a.m. 4. 4:09 8. 1:17 p.m.",
+        "sourceCrops": [
+          {
+            "pdfPage": 55,
+            "src": "/source-pages/m2-teacher/page-055.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 310
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Cole starts reading at 6:23 p.m.",
+        "answerKeyEvidence": "1. 26 5. 9:52 2. 2:08 6. 19 min 3. 31 7. 11:58 a.m. 4. 4:09 8. 1:17 p.m.",
+        "sourceCrops": [
+          {
+            "pdfPage": 55,
+            "src": "/source-pages/m2-teacher/page-055.png",
+            "crop": {
+              "x": 47,
+              "y": 310,
+              "width": 1050,
+              "height": 364
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Cole starts reading at 6:23 p.m.",
+        "answerKeyEvidence": "1. 26 5. 9:52 2. 2:08 6. 19 min 3. 31 7. 11:58 a.m. 4. 4:09 8. 1:17 p.m.",
+        "sourceCrops": [
+          {
+            "pdfPage": 55,
+            "src": "/source-pages/m2-teacher/page-055.png",
+            "crop": {
+              "x": 47,
+              "y": 537,
+              "width": 1050,
+              "height": 364
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Cole starts reading at 6:23 p.m.",
+        "answerKeyEvidence": "1. 26 5. 9:52 2. 2:08 6. 19 min 3. 31 7. 11:58 a.m. 4. 4:09 8. 1:17 p.m.",
+        "sourceCrops": [
+          {
+            "pdfPage": 55,
+            "src": "/source-pages/m2-teacher/page-055.png",
+            "crop": {
+              "x": 47,
+              "y": 765,
+              "width": 1050,
+              "height": 364
+            }
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Cole starts reading at 6:23 p.m.",
+        "answerKeyEvidence": "1. 26 5. 9:52 2. 2:08 6. 19 min 3. 31 7. 11:58 a.m. 4. 4:09 8. 1:17 p.m.",
+        "sourceCrops": [
+          {
+            "pdfPage": 55,
+            "src": "/source-pages/m2-teacher/page-055.png",
+            "crop": {
+              "x": 47,
+              "y": 993,
+              "width": 1050,
+              "height": 305
+            }
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "sourceTextEvidence": "Cole starts reading at 6:23 p.m.",
+        "answerKeyEvidence": "1. 26 5. 9:52 2. 2:08 6. 19 min 3. 31 7. 11:58 a.m. 4. 4:09 8. 1:17 p.m.",
+        "sourceCrops": [
+          {
+            "pdfPage": 56,
+            "src": "/source-pages/m2-teacher/page-056.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 547
+            }
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "sourceTextEvidence": "Cole starts reading at 6:23 p.m.",
+        "answerKeyEvidence": "1. 26 5. 9:52 2. 2:08 6. 19 min 3. 31 7. 11:58 a.m. 4. 4:09 8. 1:17 p.m.",
+        "sourceCrops": [
+          {
+            "pdfPage": 56,
+            "src": "/source-pages/m2-teacher/page-056.png",
+            "crop": {
+              "x": 47,
+              "y": 547,
+              "width": 1050,
+              "height": 474
+            }
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "sourceTextEvidence": "Cole starts reading at 6:23 p.m.",
+        "answerKeyEvidence": "1. 26 5. 9:52 2. 2:08 6. 19 min 3. 31 7. 11:58 a.m. 4. 4:09 8. 1:17 p.m.",
+        "sourceCrops": [
+          {
+            "pdfPage": 56,
+            "src": "/source-pages/m2-teacher/page-056.png",
+            "crop": {
+              "x": 47,
+              "y": 884,
+              "width": 1050,
+              "height": 414
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "5": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-285.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Cole read his book for 25 minutes yesterday and for 28 minutes today.",
+        "answerKeyEvidence": "1. 53; problem modeled on number line; 25 + 28 = 53 2. 22 minutes; problem modeled on number line; 34 – 12 = 22 3. 17 minutes; 47 – 30 = 17 4. a. 29 minutes b. No; Austin will be 4 minutes late. 5. 11:13",
+        "sourceCrops": [
+          {
+            "pdfPage": 67,
+            "src": "/source-pages/m2-teacher/page-067.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 455
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Cole read his book for 25 minutes yesterday and for 28 minutes today.",
+        "answerKeyEvidence": "1. 53; problem modeled on number line; 25 + 28 = 53 2. 22 minutes; problem modeled on number line; 34 – 12 = 22 3. 17 minutes; 47 – 30 = 17 4. a. 29 minutes b. No; Austin will be 4 minutes late. 5. 11:13",
+        "sourceCrops": [
+          {
+            "pdfPage": 67,
+            "src": "/source-pages/m2-teacher/page-067.png",
+            "crop": {
+              "x": 47,
+              "y": 455,
+              "width": 1050,
+              "height": 501
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Cole read his book for 25 minutes yesterday and for 28 minutes today.",
+        "answerKeyEvidence": "1. 53; problem modeled on number line; 25 + 28 = 53 2. 22 minutes; problem modeled on number line; 34 – 12 = 22 3. 17 minutes; 47 – 30 = 17 4. a. 29 minutes b. No; Austin will be 4 minutes late. 5. 11:13",
+        "sourceCrops": [
+          {
+            "pdfPage": 67,
+            "src": "/source-pages/m2-teacher/page-067.png",
+            "crop": {
+              "x": 47,
+              "y": 820,
+              "width": 1050,
+              "height": 478
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Cole read his book for 25 minutes yesterday and for 28 minutes today.",
+        "answerKeyEvidence": "1. 53; problem modeled on number line; 25 + 28 = 53 2. 22 minutes; problem modeled on number line; 34 – 12 = 22 3. 17 minutes; 47 – 30 = 17 4. a. 29 minutes b. No; Austin will be 4 minutes late. 5. 11:13",
+        "sourceCrops": [
+          {
+            "pdfPage": 68,
+            "src": "/source-pages/m2-teacher/page-068.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 683
+            }
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Cole read his book for 25 minutes yesterday and for 28 minutes today.",
+        "answerKeyEvidence": "1. 53; problem modeled on number line; 25 + 28 = 53 2. 22 minutes; problem modeled on number line; 34 – 12 = 22 3. 17 minutes; 47 – 30 = 17 4. a. 29 minutes b. No; Austin will be 4 minutes late. 5. 11:13",
+        "sourceCrops": [
+          {
+            "pdfPage": 68,
+            "src": "/source-pages/m2-teacher/page-068.png",
+            "crop": {
+              "x": 47,
+              "y": 683,
+              "width": 1050,
+              "height": 615
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "6": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-286.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Illustrate and describe the process of making a 1-kilogram weight.",
+        "answerKeyEvidence": "1. Illustrations and descriptions will vary. 2. Illustrations and descriptions will vary. 3. Illustrations and descriptions will vary. 4. Illustrations and descriptions will vary. 5. Answers will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 80,
+            "src": "/source-pages/m2-teacher/page-080.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 428
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Illustrate and describe the process of making a 1-kilogram weight.",
+        "answerKeyEvidence": "1. Illustrations and descriptions will vary. 2. Illustrations and descriptions will vary. 3. Illustrations and descriptions will vary. 4. Illustrations and descriptions will vary. 5. Answers will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 80,
+            "src": "/source-pages/m2-teacher/page-080.png",
+            "crop": {
+              "x": 47,
+              "y": 428,
+              "width": 1050,
+              "height": 492
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Illustrate and describe the process of making a 1-kilogram weight.",
+        "answerKeyEvidence": "1. Illustrations and descriptions will vary. 2. Illustrations and descriptions will vary. 3. Illustrations and descriptions will vary. 4. Illustrations and descriptions will vary. 5. Answers will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 80,
+            "src": "/source-pages/m2-teacher/page-080.png",
+            "crop": {
+              "x": 47,
+              "y": 783,
+              "width": 1050,
+              "height": 515
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Illustrate and describe the process of making a 1-kilogram weight.",
+        "answerKeyEvidence": "1. Illustrations and descriptions will vary. 2. Illustrations and descriptions will vary. 3. Illustrations and descriptions will vary. 4. Illustrations and descriptions will vary. 5. Answers will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 81,
+            "src": "/source-pages/m2-teacher/page-081.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 638
+            }
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "Illustrate and describe the process of making a 1-kilogram weight.",
+        "answerKeyEvidence": "1. Illustrations and descriptions will vary. 2. Illustrations and descriptions will vary. 3. Illustrations and descriptions will vary. 4. Illustrations and descriptions will vary. 5. Answers will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 81,
+            "src": "/source-pages/m2-teacher/page-081.png",
+            "crop": {
+              "x": 47,
+              "y": 528,
+              "width": 1050,
+              "height": 770
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "7": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-287.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "A box of cereal weighs about 350 (grams / kilograms).",
+        "answerKeyEvidence": "A. Objects and weights will vary. F. 2 kilograms since 1 bottle of water weighs B. Objects and weights will vary. about 1 kilogram C. Objects and weights will vary. G. Yes; 10 units of 100 grams equal 1000 grams, D. Objects and weights will vary. which is the same as 1 kilogram. E. 1. grams 2. kilograms 3. grams 4. kilograms 5. kilograms 6. grams",
+        "sourceCrops": [
+          {
+            "pdfPage": 91,
+            "src": "/source-pages/m2-teacher/page-091.png",
+            "crop": {
+              "x": 117,
+              "y": 196,
+              "width": 840,
+              "height": 1007
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "A box of cereal weighs about 350 (grams / kilograms).",
+        "answerKeyEvidence": "A. Objects and weights will vary. F. 2 kilograms since 1 bottle of water weighs B. Objects and weights will vary. about 1 kilogram C. Objects and weights will vary. G. Yes; 10 units of 100 grams equal 1000 grams, D. Objects and weights will vary. which is the same as 1 kilogram. E. 1. grams 2. kilograms 3. grams 4. kilograms 5. kilograms 6. grams",
+        "sourceCrops": [
+          {
+            "pdfPage": 92,
+            "src": "/source-pages/m2-teacher/page-092.png",
+            "crop": {
+              "x": 117,
+              "y": 196,
+              "width": 840,
+              "height": 396
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "A box of cereal weighs about 350 (grams / kilograms).",
+        "answerKeyEvidence": "A. Objects and weights will vary. F. 2 kilograms since 1 bottle of water weighs B. Objects and weights will vary. about 1 kilogram C. Objects and weights will vary. G. Yes; 10 units of 100 grams equal 1000 grams, D. Objects and weights will vary. which is the same as 1 kilogram. E. 1. grams 2. kilograms 3. grams 4. kilograms 5. kilograms 6. grams",
+        "sourceCrops": [
+          {
+            "pdfPage": 92,
+            "src": "/source-pages/m2-teacher/page-092.png",
+            "crop": {
+              "x": 117,
+              "y": 592,
+              "width": 840,
+              "height": 296
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "A box of cereal weighs about 350 (grams / kilograms).",
+        "answerKeyEvidence": "A. Objects and weights will vary. F. 2 kilograms since 1 bottle of water weighs B. Objects and weights will vary. about 1 kilogram C. Objects and weights will vary. G. Yes; 10 units of 100 grams equal 1000 grams, D. Objects and weights will vary. which is the same as 1 kilogram. E. 1. grams 2. kilograms 3. grams 4. kilograms 5. kilograms 6. grams",
+        "sourceCrops": [
+          {
+            "pdfPage": 92,
+            "src": "/source-pages/m2-teacher/page-092.png",
+            "crop": {
+              "x": 117,
+              "y": 888,
+              "width": 840,
+              "height": 196
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "8": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-288.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Tim goes to the market to buy fruits and vegetables.",
+        "answerKeyEvidence": "1. 464; 355 3. Tape diagram drawn correctly; about 15 kg 2. a. 78; problem modeled with tape diagram 4. a. About 3 kg b. 8; problem modeled with tape diagram b. About 21 kg",
+        "sourceCrops": [
+          {
+            "pdfPage": 101,
+            "src": "/source-pages/m2-teacher/page-101.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 647
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Tim goes to the market to buy fruits and vegetables.",
+        "answerKeyEvidence": "1. 464; 355 3. Tape diagram drawn correctly; about 15 kg 2. a. 78; problem modeled with tape diagram 4. a. About 3 kg b. 8; problem modeled with tape diagram b. About 21 kg",
+        "sourceCrops": [
+          {
+            "pdfPage": 101,
+            "src": "/source-pages/m2-teacher/page-101.png",
+            "crop": {
+              "x": 47,
+              "y": 647,
+              "width": 1050,
+              "height": 651
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Tim goes to the market to buy fruits and vegetables.",
+        "answerKeyEvidence": "1. 464; 355 3. Tape diagram drawn correctly; about 15 kg 2. a. 78; problem modeled with tape diagram 4. a. About 3 kg b. 8; problem modeled with tape diagram b. About 21 kg",
+        "sourceCrops": [
+          {
+            "pdfPage": 102,
+            "src": "/source-pages/m2-teacher/page-102.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 547
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Tim goes to the market to buy fruits and vegetables.",
+        "answerKeyEvidence": "1. 464; 355 3. Tape diagram drawn correctly; about 15 kg 2. a. 78; problem modeled with tape diagram 4. a. About 3 kg b. 8; problem modeled with tape diagram b. About 21 kg",
+        "sourceCrops": [
+          {
+            "pdfPage": 102,
+            "src": "/source-pages/m2-teacher/page-102.png",
+            "crop": {
+              "x": 47,
+              "y": 547,
+              "width": 1050,
+              "height": 752
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "9": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-289.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Part 1 a.",
+        "answerKeyEvidence": "a. Predictions will vary. b. Answers will vary. c. Illustrations and descriptions will vary. d. Illustrations and descriptions will vary. e. Illustrations and descriptions will vary. f. They both break apart into 1 thousand units. 1 liter is 1000 milliliters, and 1 kilogram is 1000 grams. g. 1 gram; 1 liter is the same as 1 kilogram, and they break apart the same way into 1 thousand units.",
+        "sourceCrops": [
+          {
+            "pdfPage": 111,
+            "src": "/source-pages/m2-teacher/page-111.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 720
+            }
+          },
+          {
+            "pdfPage": 111,
+            "src": "/source-pages/m2-teacher/page-111.png",
+            "crop": {
+              "x": 47,
+              "y": 829,
+              "width": 1050,
+              "height": 469
+            }
+          },
+          {
+            "pdfPage": 112,
+            "src": "/source-pages/m2-teacher/page-112.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 547
+            }
+          },
+          {
+            "pdfPage": 112,
+            "src": "/source-pages/m2-teacher/page-112.png",
+            "crop": {
+              "x": 47,
+              "y": 592,
+              "width": 1050,
+              "height": 364
+            }
+          },
+          {
+            "pdfPage": 112,
+            "src": "/source-pages/m2-teacher/page-112.png",
+            "crop": {
+              "x": 47,
+              "y": 820,
+              "width": 1050,
+              "height": 478
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "10": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-290.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Label the vertical number line on the container to the right.",
+        "answerKeyEvidence": "1. Vertical number line on container labeled by hundreds a. 500 mL; reasons will vary. b. Explanations will vary. c. 700 mL 2. 3 L; 6 L; 4 L; 0 L 3. 400 mL; 200 mL; 1000 mL; 700 mL 4. a. Capacity of each barrel plotted and labeled correctly on number line b. Barrel C c. Barrel D d. Barrel B because it is closest to 70 mL OR Barrel A because it has enough capacity to hold 70 L e. Number line used to find answer; 28 more liters",
+        "sourceCrops": [
+          {
+            "pdfPage": 122,
+            "src": "/source-pages/m2-teacher/page-122.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 665
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Label the vertical number line on the container to the right.",
+        "answerKeyEvidence": "1. Vertical number line on container labeled by hundreds a. 500 mL; reasons will vary. b. Explanations will vary. c. 700 mL 2. 3 L; 6 L; 4 L; 0 L 3. 400 mL; 200 mL; 1000 mL; 700 mL 4. a. Capacity of each barrel plotted and labeled correctly on number line b. Barrel C c. Barrel D d. Barrel B because it is closest to 70 mL OR Barrel A because it has enough capacity to hold 70 L e. Number line used to find answer; 28 more liters",
+        "sourceCrops": [
+          {
+            "pdfPage": 122,
+            "src": "/source-pages/m2-teacher/page-122.png",
+            "crop": {
+              "x": 47,
+              "y": 665,
+              "width": 1050,
+              "height": 633
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Label the vertical number line on the container to the right.",
+        "answerKeyEvidence": "1. Vertical number line on container labeled by hundreds a. 500 mL; reasons will vary. b. Explanations will vary. c. 700 mL 2. 3 L; 6 L; 4 L; 0 L 3. 400 mL; 200 mL; 1000 mL; 700 mL 4. a. Capacity of each barrel plotted and labeled correctly on number line b. Barrel C c. Barrel D d. Barrel B because it is closest to 70 mL OR Barrel A because it has enough capacity to hold 70 L e. Number line used to find answer; 28 more liters",
+        "sourceCrops": [
+          {
+            "pdfPage": 123,
+            "src": "/source-pages/m2-teacher/page-123.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 474
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Label the vertical number line on the container to the right.",
+        "answerKeyEvidence": "1. Vertical number line on container labeled by hundreds a. 500 mL; reasons will vary. b. Explanations will vary. c. 700 mL 2. 3 L; 6 L; 4 L; 0 L 3. 400 mL; 200 mL; 1000 mL; 700 mL 4. a. Capacity of each barrel plotted and labeled correctly on number line b. Barrel C c. Barrel D d. Barrel B because it is closest to 70 mL OR Barrel A because it has enough capacity to hold 70 L e. Number line used to find answer; 28 more liters",
+        "sourceCrops": [
+          {
+            "pdfPage": 123,
+            "src": "/source-pages/m2-teacher/page-123.png",
+            "crop": {
+              "x": 47,
+              "y": 474,
+              "width": 1050,
+              "height": 824
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "11": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-291.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "The total weight in grams of a can of tomatoes and a jar of baby food is shown to the right.",
+        "answerKeyEvidence": "1. a. 558 g 4. Tape diagram drawn and labeled to represent b. 445 g the problem; 9 turkeys 2. a. 60 g 5. 900 mL of milk b. 142 g 6. 14 L 3. a. 191 g b. 123 g c. 194 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 132,
+            "src": "/source-pages/m2-teacher/page-132.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 501
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "The total weight in grams of a can of tomatoes and a jar of baby food is shown to the right.",
+        "answerKeyEvidence": "1. a. 558 g 4. Tape diagram drawn and labeled to represent b. 445 g the problem; 9 turkeys 2. a. 60 g 5. 900 mL of milk b. 142 g 6. 14 L 3. a. 191 g b. 123 g c. 194 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 132,
+            "src": "/source-pages/m2-teacher/page-132.png",
+            "crop": {
+              "x": 47,
+              "y": 501,
+              "width": 1050,
+              "height": 465
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "The total weight in grams of a can of tomatoes and a jar of baby food is shown to the right.",
+        "answerKeyEvidence": "1. a. 558 g 4. Tape diagram drawn and labeled to represent b. 445 g the problem; 9 turkeys 2. a. 60 g 5. 900 mL of milk b. 142 g 6. 14 L 3. a. 191 g b. 123 g c. 194 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 132,
+            "src": "/source-pages/m2-teacher/page-132.png",
+            "crop": {
+              "x": 47,
+              "y": 829,
+              "width": 1050,
+              "height": 469
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "The total weight in grams of a can of tomatoes and a jar of baby food is shown to the right.",
+        "answerKeyEvidence": "1. a. 558 g 4. Tape diagram drawn and labeled to represent b. 445 g the problem; 9 turkeys 2. a. 60 g 5. 900 mL of milk b. 142 g 6. 14 L 3. a. 191 g b. 123 g c. 194 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 133,
+            "src": "/source-pages/m2-teacher/page-133.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 501
+            }
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "sourceTextEvidence": "The total weight in grams of a can of tomatoes and a jar of baby food is shown to the right.",
+        "answerKeyEvidence": "1. a. 558 g 4. Tape diagram drawn and labeled to represent b. 445 g the problem; 9 turkeys 2. a. 60 g 5. 900 mL of milk b. 142 g 6. 14 L 3. a. 191 g b. 123 g c. 194 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 133,
+            "src": "/source-pages/m2-teacher/page-133.png",
+            "crop": {
+              "x": 47,
+              "y": 501,
+              "width": 1050,
+              "height": 501
+            }
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "sourceTextEvidence": "The total weight in grams of a can of tomatoes and a jar of baby food is shown to the right.",
+        "answerKeyEvidence": "1. a. 558 g 4. Tape diagram drawn and labeled to represent b. 445 g the problem; 9 turkeys 2. a. 60 g 5. 900 mL of milk b. 142 g 6. 14 L 3. a. 191 g b. 123 g c. 194 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 133,
+            "src": "/source-pages/m2-teacher/page-133.png",
+            "crop": {
+              "x": 47,
+              "y": 865,
+              "width": 1050,
+              "height": 433
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "12": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-292.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Work with a partner.",
+        "answerKeyEvidence": "1. Measurements and estimates will vary. 2. Measurements and estimates will vary. 3. Measurements and estimates will vary. 4. Measurements and estimates will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 155,
+            "src": "/source-pages/m2-teacher/page-155.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 683
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Work with a partner.",
+        "answerKeyEvidence": "1. Measurements and estimates will vary. 2. Measurements and estimates will vary. 3. Measurements and estimates will vary. 4. Measurements and estimates will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 155,
+            "src": "/source-pages/m2-teacher/page-155.png",
+            "crop": {
+              "x": 47,
+              "y": 683,
+              "width": 1050,
+              "height": 615
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Work with a partner.",
+        "answerKeyEvidence": "1. Measurements and estimates will vary. 2. Measurements and estimates will vary. 3. Measurements and estimates will vary. 4. Measurements and estimates will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 156,
+            "src": "/source-pages/m2-teacher/page-156.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 665
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Work with a partner.",
+        "answerKeyEvidence": "1. Measurements and estimates will vary. 2. Measurements and estimates will vary. 3. Measurements and estimates will vary. 4. Measurements and estimates will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 156,
+            "src": "/source-pages/m2-teacher/page-156.png",
+            "crop": {
+              "x": 47,
+              "y": 665,
+              "width": 1050,
+              "height": 633
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "13": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-293.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Round to the nearest ten.",
+        "answerKeyEvidence": "1. a. 30 b. 40; rounding modeled on number line c. 60; rounding modeled on number line d. 160; rounding modeled on number line e. 280; rounding modeled on number line f. 410; rounding modeled on number line 2. Number line drawn and labeled to model rounding; 40 g Number line drawn and labeled to model rounding; 50 g Number line drawn and labeled to model rounding; 140 g 3. a. 48 min b. 50 min",
+        "sourceCrops": [
+          {
+            "pdfPage": 166,
+            "src": "/source-pages/m2-teacher/page-166.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 1162
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Round to the nearest ten.",
+        "answerKeyEvidence": "1. a. 30 b. 40; rounding modeled on number line c. 60; rounding modeled on number line d. 160; rounding modeled on number line e. 280; rounding modeled on number line f. 410; rounding modeled on number line 2. Number line drawn and labeled to model rounding; 40 g Number line drawn and labeled to model rounding; 50 g Number line drawn and labeled to model rounding; 140 g 3. a. 48 min b. 50 min",
+        "sourceCrops": [
+          {
+            "pdfPage": 167,
+            "src": "/source-pages/m2-teacher/page-167.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 774
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Round to the nearest ten.",
+        "answerKeyEvidence": "1. a. 30 b. 40; rounding modeled on number line c. 60; rounding modeled on number line d. 160; rounding modeled on number line e. 280; rounding modeled on number line f. 410; rounding modeled on number line 2. Number line drawn and labeled to model rounding; 40 g Number line drawn and labeled to model rounding; 50 g Number line drawn and labeled to model rounding; 140 g 3. a. 48 min b. 50 min",
+        "sourceCrops": [
+          {
+            "pdfPage": 167,
+            "src": "/source-pages/m2-teacher/page-167.png",
+            "crop": {
+              "x": 47,
+              "y": 774,
+              "width": 1050,
+              "height": 524
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "14": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-294.png",
+      "/source-pages/m2-answer-key/page-295.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Round to the nearest hundred.",
+        "answerKeyEvidence": "1. a. 100; rounding modeled on number line 2. a. 500 stickers b. 300; rounding modeled on number line b. 500 pages c. 300; rounding modeled on number line c. 800 mL d. 1,300; rounding modeled on number line d. $1,300 e. 1,600; rounding modeled on number line e. 1,800 km f. 1,300; rounding modeled on number line 3. 550, 639, 603 4. Both are correct; explanations will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 177,
+            "src": "/source-pages/m2-teacher/page-177.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 1162
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Round to the nearest hundred.",
+        "answerKeyEvidence": "1. a. 100; rounding modeled on number line 2. a. 500 stickers b. 300; rounding modeled on number line b. 500 pages c. 300; rounding modeled on number line c. 800 mL d. 1,300; rounding modeled on number line d. $1,300 e. 1,600; rounding modeled on number line e. 1,800 km f. 1,300; rounding modeled on number line 3. 550, 639, 603 4. Both are correct; explanations will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 178,
+            "src": "/source-pages/m2-teacher/page-178.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 556
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Round to the nearest hundred.",
+        "answerKeyEvidence": "1. a. 100; rounding modeled on number line 2. a. 500 stickers b. 300; rounding modeled on number line b. 500 pages c. 300; rounding modeled on number line c. 800 mL d. 1,300; rounding modeled on number line d. $1,300 e. 1,600; rounding modeled on number line e. 1,800 km f. 1,300; rounding modeled on number line 3. 550, 639, 603 4. Both are correct; explanations will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 178,
+            "src": "/source-pages/m2-teacher/page-178.png",
+            "crop": {
+              "x": 47,
+              "y": 592,
+              "width": 1050,
+              "height": 292
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Round to the nearest hundred.",
+        "answerKeyEvidence": "1. a. 100; rounding modeled on number line 2. a. 500 stickers b. 300; rounding modeled on number line b. 500 pages c. 300; rounding modeled on number line c. 800 mL d. 1,300; rounding modeled on number line d. $1,300 e. 1,600; rounding modeled on number line e. 1,800 km f. 1,300; rounding modeled on number line 3. 550, 639, 603 4. Both are correct; explanations will vary.",
+        "sourceCrops": [
+          {
+            "pdfPage": 178,
+            "src": "/source-pages/m2-teacher/page-178.png",
+            "crop": {
+              "x": 47,
+              "y": 774,
+              "width": 1050,
+              "height": 524
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "15": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-296.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Find the sums below.",
+        "answerKeyEvidence": "1. a. 51 mL 2. 107 g b. 71 mL 3. 475 mL + 317 mL = 792 mL; Andrea is correct; c. 171 mL explanations will vary. d. 89 cm 4. 47 min e. 592 cm f. 627 cm g. 92 g h. 639 g i. 956 g j. 3 L 657 mL k. 5 kg 876 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 191,
+            "src": "/source-pages/m2-teacher/page-191.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 1162
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Find the sums below.",
+        "answerKeyEvidence": "1. a. 51 mL 2. 107 g b. 71 mL 3. 475 mL + 317 mL = 792 mL; Andrea is correct; c. 171 mL explanations will vary. d. 89 cm 4. 47 min e. 592 cm f. 627 cm g. 92 g h. 639 g i. 956 g j. 3 L 657 mL k. 5 kg 876 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 192,
+            "src": "/source-pages/m2-teacher/page-192.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 428
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Find the sums below.",
+        "answerKeyEvidence": "1. a. 51 mL 2. 107 g b. 71 mL 3. 475 mL + 317 mL = 792 mL; Andrea is correct; c. 171 mL explanations will vary. d. 89 cm 4. 47 min e. 592 cm f. 627 cm g. 92 g h. 639 g i. 956 g j. 3 L 657 mL k. 5 kg 876 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 192,
+            "src": "/source-pages/m2-teacher/page-192.png",
+            "crop": {
+              "x": 47,
+              "y": 428,
+              "width": 1050,
+              "height": 510
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Find the sums below.",
+        "answerKeyEvidence": "1. a. 51 mL 2. 107 g b. 71 mL 3. 475 mL + 317 mL = 792 mL; Andrea is correct; c. 171 mL explanations will vary. d. 89 cm 4. 47 min e. 592 cm f. 627 cm g. 92 g h. 639 g i. 956 g j. 3 L 657 mL k. 5 kg 876 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 192,
+            "src": "/source-pages/m2-teacher/page-192.png",
+            "crop": {
+              "x": 47,
+              "y": 802,
+              "width": 1050,
+              "height": 496
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "16": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-297.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Find the sums below.",
+        "answerKeyEvidence": "1. a. 120 mL 2. Tape diagram drawn and labeled; 1,000 g b. 420 mL 3. 144 muffins c. 820 mL 4. 741 mL d. 150 cm e. 600 cm f. 900 cm g. 835 g h. 942 g i. 983 g j. 4 L 800 mL k. 6 kg 851 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 202,
+            "src": "/source-pages/m2-teacher/page-202.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 1162
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Find the sums below.",
+        "answerKeyEvidence": "1. a. 120 mL 2. Tape diagram drawn and labeled; 1,000 g b. 420 mL 3. 144 muffins c. 820 mL 4. 741 mL d. 150 cm e. 600 cm f. 900 cm g. 835 g h. 942 g i. 983 g j. 4 L 800 mL k. 6 kg 851 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 203,
+            "src": "/source-pages/m2-teacher/page-203.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 428
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Find the sums below.",
+        "answerKeyEvidence": "1. a. 120 mL 2. Tape diagram drawn and labeled; 1,000 g b. 420 mL 3. 144 muffins c. 820 mL 4. 741 mL d. 150 cm e. 600 cm f. 900 cm g. 835 g h. 942 g i. 983 g j. 4 L 800 mL k. 6 kg 851 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 203,
+            "src": "/source-pages/m2-teacher/page-203.png",
+            "crop": {
+              "x": 47,
+              "y": 428,
+              "width": 1050,
+              "height": 510
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Find the sums below.",
+        "answerKeyEvidence": "1. a. 120 mL 2. Tape diagram drawn and labeled; 1,000 g b. 420 mL 3. 144 muffins c. 820 mL 4. 741 mL d. 150 cm e. 600 cm f. 900 cm g. 835 g h. 942 g i. 983 g j. 4 L 800 mL k. 6 kg 851 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 203,
+            "src": "/source-pages/m2-teacher/page-203.png",
+            "crop": {
+              "x": 47,
+              "y": 802,
+              "width": 1050,
+              "height": 496
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "17": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-298.png",
+      "/source-pages/m2-answer-key/page-299.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "a.",
+        "answerKeyEvidence": "1. a. A: 704; 500, 300, 800 2. a. Estimates will vary. 700; 500, 200, 700 b. 245 min 697; 400, 200, 600 c. Explanations will vary; a different way of B: 517; 400, 200, 600 rounding is shown and compared. 504; 400, 100, 500 3. a. Estimates will vary. 496; 300, 100, 400 b. 256 kilograms; a tape diagram is drawn C: 810; 700, 200, 900 and labeled to represent the problem. 805; 600, 200, 800 793; 600, 100, 700 b. Explanations will vary; both addends are close to the halfway point, so they balance each other out.",
+        "sourceCrops": [
+          {
+            "pdfPage": 215,
+            "src": "/source-pages/m2-teacher/page-215.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 1162
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "a.",
+        "answerKeyEvidence": "1. a. A: 704; 500, 300, 800 2. a. Estimates will vary. 700; 500, 200, 700 b. 245 min 697; 400, 200, 600 c. Explanations will vary; a different way of B: 517; 400, 200, 600 rounding is shown and compared. 504; 400, 100, 500 3. a. Estimates will vary. 496; 300, 100, 400 b. 256 kilograms; a tape diagram is drawn C: 810; 700, 200, 900 and labeled to represent the problem. 805; 600, 200, 800 793; 600, 100, 700 b. Explanations will vary; both addends are close to the halfway point, so they balance each other out.",
+        "sourceCrops": [
+          {
+            "pdfPage": 216,
+            "src": "/source-pages/m2-teacher/page-216.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 774
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "a.",
+        "answerKeyEvidence": "1. a. A: 704; 500, 300, 800 2. a. Estimates will vary. 700; 500, 200, 700 b. 245 min 697; 400, 200, 600 c. Explanations will vary; a different way of B: 517; 400, 200, 600 rounding is shown and compared. 504; 400, 100, 500 3. a. Estimates will vary. 496; 300, 100, 400 b. 256 kilograms; a tape diagram is drawn C: 810; 700, 200, 900 and labeled to represent the problem. 805; 600, 200, 800 793; 600, 100, 700 b. Explanations will vary; both addends are close to the halfway point, so they balance each other out.",
+        "sourceCrops": [
+          {
+            "pdfPage": 216,
+            "src": "/source-pages/m2-teacher/page-216.png",
+            "crop": {
+              "x": 47,
+              "y": 774,
+              "width": 1050,
+              "height": 524
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "18": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-300.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Solve the subtraction problems below.",
+        "answerKeyEvidence": "1. a. 36 mL 2. 172 g; tape diagram drawn and labeled to b. 336 mL model problem c. 136 mL 3. a. 95 min d. 497 cm b. 50 min e. 361 cm 4. 34 cm f. 498 cm g. 177 g h. 73 g i. 75 g j. 1 km 315 m k. 2 kg 31 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 228,
+            "src": "/source-pages/m2-teacher/page-228.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 1162
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Solve the subtraction problems below.",
+        "answerKeyEvidence": "1. a. 36 mL 2. 172 g; tape diagram drawn and labeled to b. 336 mL model problem c. 136 mL 3. a. 95 min d. 497 cm b. 50 min e. 361 cm 4. 34 cm f. 498 cm g. 177 g h. 73 g i. 75 g j. 1 km 315 m k. 2 kg 31 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 229,
+            "src": "/source-pages/m2-teacher/page-229.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 465
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Solve the subtraction problems below.",
+        "answerKeyEvidence": "1. a. 36 mL 2. 172 g; tape diagram drawn and labeled to b. 336 mL model problem c. 136 mL 3. a. 95 min d. 497 cm b. 50 min e. 361 cm 4. 34 cm f. 498 cm g. 177 g h. 73 g i. 75 g j. 1 km 315 m k. 2 kg 31 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 229,
+            "src": "/source-pages/m2-teacher/page-229.png",
+            "crop": {
+              "x": 47,
+              "y": 465,
+              "width": 1050,
+              "height": 537
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Solve the subtraction problems below.",
+        "answerKeyEvidence": "1. a. 36 mL 2. 172 g; tape diagram drawn and labeled to b. 336 mL model problem c. 136 mL 3. a. 95 min d. 497 cm b. 50 min e. 361 cm 4. 34 cm f. 498 cm g. 177 g h. 73 g i. 75 g j. 1 km 315 m k. 2 kg 31 g",
+        "sourceCrops": [
+          {
+            "pdfPage": 229,
+            "src": "/source-pages/m2-teacher/page-229.png",
+            "crop": {
+              "x": 47,
+              "y": 865,
+              "width": 1050,
+              "height": 433
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "19": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-301.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Solve the subtraction problems below.",
+        "answerKeyEvidence": "1. a. 280 cm 2. 149 km b. 80 cm 3. 8 kg c. 365 g 4. 235 L d. 254 g e. 648 mL f. 248 mL g. 4 km 233 m h. 2 L 51 mL",
+        "sourceCrops": [
+          {
+            "pdfPage": 238,
+            "src": "/source-pages/m2-teacher/page-238.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 1162
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Solve the subtraction problems below.",
+        "answerKeyEvidence": "1. a. 280 cm 2. 149 km b. 80 cm 3. 8 kg c. 365 g 4. 235 L d. 254 g e. 648 mL f. 248 mL g. 4 km 233 m h. 2 L 51 mL",
+        "sourceCrops": [
+          {
+            "pdfPage": 239,
+            "src": "/source-pages/m2-teacher/page-239.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 465
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Solve the subtraction problems below.",
+        "answerKeyEvidence": "1. a. 280 cm 2. 149 km b. 80 cm 3. 8 kg c. 365 g 4. 235 L d. 254 g e. 648 mL f. 248 mL g. 4 km 233 m h. 2 L 51 mL",
+        "sourceCrops": [
+          {
+            "pdfPage": 239,
+            "src": "/source-pages/m2-teacher/page-239.png",
+            "crop": {
+              "x": 47,
+              "y": 465,
+              "width": 1050,
+              "height": 501
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Solve the subtraction problems below.",
+        "answerKeyEvidence": "1. a. 280 cm 2. 149 km b. 80 cm 3. 8 kg c. 365 g 4. 235 L d. 254 g e. 648 mL f. 248 mL g. 4 km 233 m h. 2 L 51 mL",
+        "sourceCrops": [
+          {
+            "pdfPage": 239,
+            "src": "/source-pages/m2-teacher/page-239.png",
+            "crop": {
+              "x": 47,
+              "y": 829,
+              "width": 1050,
+              "height": 469
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "20": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-302.png",
+      "/source-pages/m2-answer-key/page-303.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "a.",
+        "answerKeyEvidence": "1. a. A: 295; 400, 200, 200 2. a. Estimates will vary. 298; 500, 200, 300 b. 188 L; tape diagram drawn and labeled to 299; 400, 100, 300 model problem 302; 500, 100, 400 3. a. Estimates and explanations will vary. B: 486; 700, 300, 400 b. 128 g; tape diagram drawn and labeled to 495; 800, 300, 500 model problem 498; 700, 200, 500 508; 800, 200, 600 b. Explanations will vary; in the differences that gave the most precise estimates, both numbers either rounded down or both numbers rounded up.",
+        "sourceCrops": [
+          {
+            "pdfPage": 252,
+            "src": "/source-pages/m2-teacher/page-252.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 1162
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "a.",
+        "answerKeyEvidence": "1. a. A: 295; 400, 200, 200 2. a. Estimates will vary. 298; 500, 200, 300 b. 188 L; tape diagram drawn and labeled to 299; 400, 100, 300 model problem 302; 500, 100, 400 3. a. Estimates and explanations will vary. B: 486; 700, 300, 400 b. 128 g; tape diagram drawn and labeled to 495; 800, 300, 500 model problem 498; 700, 200, 500 508; 800, 200, 600 b. Explanations will vary; in the differences that gave the most precise estimates, both numbers either rounded down or both numbers rounded up.",
+        "sourceCrops": [
+          {
+            "pdfPage": 253,
+            "src": "/source-pages/m2-teacher/page-253.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 683
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "a.",
+        "answerKeyEvidence": "1. a. A: 295; 400, 200, 200 2. a. Estimates will vary. 298; 500, 200, 300 b. 188 L; tape diagram drawn and labeled to 299; 400, 100, 300 model problem 302; 500, 100, 400 3. a. Estimates and explanations will vary. B: 486; 700, 300, 400 b. 128 g; tape diagram drawn and labeled to 495; 800, 300, 500 model problem 498; 700, 200, 500 508; 800, 200, 600 b. Explanations will vary; in the differences that gave the most precise estimates, both numbers either rounded down or both numbers rounded up.",
+        "sourceCrops": [
+          {
+            "pdfPage": 253,
+            "src": "/source-pages/m2-teacher/page-253.png",
+            "crop": {
+              "x": 47,
+              "y": 565,
+              "width": 1050,
+              "height": 733
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "21": {
+    "answerKeyImages": [
+      "/source-pages/m2-answer-key/page-304.png"
+    ],
+    "problems": [
+      {
+        "number": 1,
+        "sourceTextEvidence": "Weigh the bags of beans and rice on the scale.",
+        "answerKeyEvidence": "1. a. 91 g, 58 g, 90 g, 60 g, 150 g; 3. Capacity of the 3 containers plotted and 91 g, 58 g, 149 g labeled on number lines b. 91g, 58 g, 90 g, 60 g, 30 g; Container D: 212 mL ≈ 210 mL 91 g, 58 g, 33 g Container E: 238 mL ≈ 240 mL c. Because both estimates are close to the Container F: 195 mL ≈ 200 mL actual answers a. Estimate: 650 mL; actual: 645 mL 2. Yarn A: 64; 60 b. Estimate: 30 mL; actual: 26 mL; Yarn B: 88; 90 tape diagram drawn and labeled Yarn C: 38; 40 4. a. 21 min a. Estimate: 100 cm; actual: 102 cm b. Estimates will vary; actual: 94 min b. Estimate: 10 cm; actual: 14 cm; c. Because the estimate is close to the actual tape diagram drawn and labeled answer",
+        "sourceCrops": [
+          {
+            "pdfPage": 261,
+            "src": "/source-pages/m2-teacher/page-261.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 1162
+            }
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "sourceTextEvidence": "Weigh the bags of beans and rice on the scale.",
+        "answerKeyEvidence": "1. a. 91 g, 58 g, 90 g, 60 g, 150 g; 3. Capacity of the 3 containers plotted and 91 g, 58 g, 149 g labeled on number lines b. 91g, 58 g, 90 g, 60 g, 30 g; Container D: 212 mL ≈ 210 mL 91 g, 58 g, 33 g Container E: 238 mL ≈ 240 mL c. Because both estimates are close to the Container F: 195 mL ≈ 200 mL actual answers a. Estimate: 650 mL; actual: 645 mL 2. Yarn A: 64; 60 b. Estimate: 30 mL; actual: 26 mL; Yarn B: 88; 90 tape diagram drawn and labeled Yarn C: 38; 40 4. a. 21 min a. Estimate: 100 cm; actual: 102 cm b. Estimates will vary; actual: 94 min b. Estimate: 10 cm; actual: 14 cm; c. Because the estimate is close to the actual tape diagram drawn and labeled answer",
+        "sourceCrops": [
+          {
+            "pdfPage": 262,
+            "src": "/source-pages/m2-teacher/page-262.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 492
+            }
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "sourceTextEvidence": "Weigh the bags of beans and rice on the scale.",
+        "answerKeyEvidence": "1. a. 91 g, 58 g, 90 g, 60 g, 150 g; 3. Capacity of the 3 containers plotted and 91 g, 58 g, 149 g labeled on number lines b. 91g, 58 g, 90 g, 60 g, 30 g; Container D: 212 mL ≈ 210 mL 91 g, 58 g, 33 g Container E: 238 mL ≈ 240 mL c. Because both estimates are close to the Container F: 195 mL ≈ 200 mL actual answers a. Estimate: 650 mL; actual: 645 mL 2. Yarn A: 64; 60 b. Estimate: 30 mL; actual: 26 mL; Yarn B: 88; 90 tape diagram drawn and labeled Yarn C: 38; 40 4. a. 21 min a. Estimate: 100 cm; actual: 102 cm b. Estimates will vary; actual: 94 min b. Estimate: 10 cm; actual: 14 cm; c. Because the estimate is close to the actual tape diagram drawn and labeled answer",
+        "sourceCrops": [
+          {
+            "pdfPage": 262,
+            "src": "/source-pages/m2-teacher/page-262.png",
+            "crop": {
+              "x": 47,
+              "y": 601,
+              "width": 1050,
+              "height": 697
+            }
+          },
+          {
+            "pdfPage": 263,
+            "src": "/source-pages/m2-teacher/page-263.png",
+            "crop": {
+              "x": 47,
+              "y": 137,
+              "width": 1050,
+              "height": 492
+            }
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "sourceTextEvidence": "Weigh the bags of beans and rice on the scale.",
+        "answerKeyEvidence": "1. a. 91 g, 58 g, 90 g, 60 g, 150 g; 3. Capacity of the 3 containers plotted and 91 g, 58 g, 149 g labeled on number lines b. 91g, 58 g, 90 g, 60 g, 30 g; Container D: 212 mL ≈ 210 mL 91 g, 58 g, 33 g Container E: 238 mL ≈ 240 mL c. Because both estimates are close to the Container F: 195 mL ≈ 200 mL actual answers a. Estimate: 650 mL; actual: 645 mL 2. Yarn A: 64; 60 b. Estimate: 30 mL; actual: 26 mL; Yarn B: 88; 90 tape diagram drawn and labeled Yarn C: 38; 40 4. a. 21 min a. Estimate: 100 cm; actual: 102 cm b. Estimates will vary; actual: 94 min b. Estimate: 10 cm; actual: 14 cm; c. Because the estimate is close to the actual tape diagram drawn and labeled answer",
+        "sourceCrops": [
+          {
+            "pdfPage": 263,
+            "src": "/source-pages/m2-teacher/page-263.png",
+            "crop": {
+              "x": 47,
+              "y": 601,
+              "width": 1050,
+              "height": 697
+            }
+          }
+        ]
+      }
+    ]
+  }
+} as Record<number, M2SourceLessonEvidence>;

@@ -7,6 +7,7 @@ import type {
   ProblemSetPatternBlockCover,
   ProblemSetRoomArea,
   ProblemVisualFloorPlanSection,
+  ProblemVisualSection,
   ProblemVisualSpec
 } from '../lesson-runtime.types';
 import { evaluate } from 'mathjs/number';
@@ -127,6 +128,91 @@ function pageImages(pages: number[]): string[] {
   return pages.map((page) => `${m4TeacherPageBase}/page-${String(page).padStart(3, '0')}.png`);
 }
 
+type M4ProblemSourceCrop = readonly [
+  pdfPage: number,
+  x: number,
+  y: number,
+  width: number,
+  height: number
+];
+
+// Reviewed breadth-first against all 34 Module 4 Teacher Edition Problem Set
+// pages rendered at 1,275 × 1,650. The bounds preserve each complete printed
+// task, its source figure/table, and its original response space.
+const M4_PROBLEM_SOURCE_CROPS: Record<number, Record<number, readonly M4ProblemSourceCrop[]>> = {
+  1: {
+    1: [[16, 65, 236, 1145, 427]], 2: [[16, 65, 663, 1145, 395]], 3: [[16, 65, 1058, 1145, 412]],
+    4: [[17, 65, 181, 1145, 342]], 5: [[17, 65, 523, 1145, 448]], 6: [[17, 65, 971, 1145, 499]]
+  },
+  2: {
+    1: [[27, 65, 236, 1145, 614]], 2: [[27, 65, 850, 1145, 620]], 3: [[28, 65, 181, 1145, 342]],
+    4: [[28, 65, 523, 1145, 607]], 5: [[28, 65, 1130, 1145, 340]]
+  },
+  3: {
+    1: [[37, 65, 236, 1145, 619]], 2: [[37, 65, 855, 1145, 615]],
+    3: [[38, 65, 181, 1145, 722]], 4: [[38, 65, 903, 1145, 567]]
+  },
+  4: {
+    1: [[50, 65, 236, 1145, 311]], 2: [[50, 65, 547, 1145, 590]], 3: [[50, 65, 1137, 1145, 333]],
+    4: [[51, 65, 181, 1145, 476]], 5: [[51, 65, 657, 1145, 395]], 6: [[51, 65, 1052, 1145, 418]]
+  },
+  5: {
+    1: [[63, 65, 236, 1145, 1234]], 2: [[64, 65, 181, 1145, 395]],
+    3: [[64, 65, 576, 1145, 370]], 4: [[64, 65, 946, 1145, 524]]
+  },
+  6: {
+    1: [[73, 65, 236, 1145, 1234]], 2: [[74, 65, 181, 1145, 359]],
+    3: [[74, 65, 540, 1145, 501]], 4: [[74, 65, 1041, 1145, 429]]
+  },
+  7: {
+    1: [[86, 65, 236, 1145, 1234]], 2: [[87, 65, 181, 1145, 406]],
+    3: [[87, 65, 587, 1145, 309]], 4: [[87, 65, 896, 1145, 574]]
+  },
+  8: {
+    1: [[99, 65, 236, 1145, 408]], 2: [[99, 65, 644, 1145, 481]], 3: [[99, 65, 1125, 1145, 345]],
+    4: [[100, 65, 181, 1145, 374]], 5: [[100, 65, 555, 1145, 395]], 6: [[100, 65, 950, 1145, 520]]
+  },
+  9: {
+    1: [[121, 65, 236, 1145, 624]], 2: [[121, 65, 860, 1145, 610]],
+    3: [[122, 65, 181, 1145, 984]], 4: [[122, 65, 1165, 1145, 305]]
+  },
+  10: {
+    1: [[132, 65, 236, 1145, 1234]], 2: [[133, 65, 181, 1145, 473]], 3: [[133, 65, 654, 1145, 816]]
+  },
+  11: {
+    1: [[143, 65, 223, 1145, 905]], 2: [[143, 65, 1128, 1145, 342]],
+    3: [[144, 65, 181, 1145, 270]], 4: [[144, 65, 451, 1145, 1019]]
+  },
+  12: {
+    1: [[156, 65, 236, 1145, 328]], 2: [[156, 65, 564, 1145, 906]],
+    3: [[157, 65, 181, 1145, 342]], 4: [[157, 65, 523, 1145, 540]], 5: [[157, 65, 1063, 1145, 407]]
+  },
+  13: {
+    1: [[167, 65, 236, 1145, 1234]], 2: [[168, 65, 181, 1145, 632]], 3: [[168, 65, 813, 1145, 657]]
+  },
+  14: {
+    1: [[180, 65, 236, 1145, 802]], 2: [[180, 65, 1038, 1145, 432]],
+    3: [[181, 65, 181, 1145, 490]], 4: [[181, 65, 671, 1145, 799]]
+  },
+  15: {
+    1: [[191, 65, 236, 1145, 102], [193, 65, 181, 1145, 1289]],
+    2: [[191, 65, 338, 1145, 1132], [193, 65, 181, 1145, 1289]],
+    3: [[192, 65, 181, 1145, 397], [193, 65, 181, 1145, 1289]],
+    4: [[192, 65, 578, 1145, 404], [193, 65, 181, 1145, 1289]],
+    5: [[192, 65, 982, 1145, 488], [193, 65, 181, 1145, 1289]]
+  },
+  16: {
+    1: [[201, 65, 181, 1145, 1289], [202, 65, 181, 1145, 1289]]
+  }
+};
+
+const M4_ANSWER_KEY_PDF_PAGES: Record<number, readonly number[]> = {
+  1: [215], 2: [216, 217], 3: [218], 4: [219],
+  5: [220], 6: [221], 7: [222], 8: [223, 224],
+  9: [225], 10: [226], 11: [227], 12: [228, 229],
+  13: [230], 14: [231], 15: [232, 233], 16: [234]
+};
+
 const M4_LESSON15_ROOM_AREAS: ProblemSetRoomArea[] = [
   { label: 'Bedroom 1', area: 60 },
   { label: 'Bedroom 2', area: 56 },
@@ -136,6 +222,16 @@ const M4_LESSON15_ROOM_AREAS: ProblemSetRoomArea[] = [
   { label: 'Dining Room', area: 28 },
   { label: 'Living Room', area: 88 }
 ];
+
+const M4_LESSON15_ROOM_STRATEGIES: Record<string, string> = {
+  'Bedroom 1': '12 cm × 5 cm = 60',
+  'Bedroom 2': '7 cm × 8 cm = 56',
+  'Kitchen': '7 cm × 6 cm = 42',
+  'Hallway': '3 cm × 8 cm = 24',
+  'Bathroom': '5 cm × 5 cm = 25',
+  'Dining Room': '7 cm × 4 cm = 28',
+  'Living Room': '(10 cm × 6 cm) + (7 cm × 4 cm) = 88'
+};
 
 const M4_LESSON15_FLOOR_PLAN: ProblemVisualFloorPlanSection = {
   kind: 'floor-plan',
@@ -204,20 +300,11 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
   return {
     number: seed.number,
     sourcePrompt: seed.sourcePrompt,
+    sourcePromptInVisual: true,
     sourcePageImages: seed.sourcePageImages,
     blankSourcePageImages: seed.blankSourcePageImages,
     solvedSourcePageImages: seed.solvedSourcePageImages,
-    blankPrompts: [
-      seed.patternBlockCover
-        ? `Cover each official Problem Set target with ${seed.patternBlockCover.unit} pattern blocks, then write the count for each target.`
-        : seed.roomAreas
-        ? 'Use the official floor-plan labels to compute each room area, compare the rooms, and add the room areas for the whole floor plan.'
-        : hasMultipleAreaModels
-        ? 'Complete each official rectangle model, label the side lengths, and write the matching area equation.'
-        : seed.knownGroupCount && seed.knownGroupSize
-        ? 'Use the source rectangle workspace, measure or label the side lengths, then complete the workbook labels and area blanks.'
-        : sourceSpecificBlankWorkspaceLabel({ number: seed.number, sourcePrompt: seed.sourcePrompt } as ProblemSetCenteredProblem)
-    ],
+    blankPrompts: [],
     blankEquations: blankEquationTemplates(seed),
     blankWorkspaceLabel: seed.patternBlockCover
       ? 'Use the official Problem Set target outlines and leave the block counts blank for student work.'
@@ -254,6 +341,20 @@ function makeProblem(seed: ProblemSeed): ProblemSetCenteredProblem {
 }
 
 function createM4ProblemVisual(problem: ProblemSetCenteredProblem, solved: boolean, lessonNumber: number): ProblemVisualSpec {
+  const reviewedPrimary =
+    m4ReviewedLessonsOneThroughFive(problem, solved, lessonNumber) ??
+    m4ReviewedLessonsSixThroughTen(problem, solved, lessonNumber) ??
+    m4ReviewedLessonsElevenThroughFifteen(problem, solved, lessonNumber);
+  if (reviewedPrimary) {
+    return {
+      title: `Problem ${problem.number}: ${m4VisualTitle(problem, solved)}`,
+      sourceNote: solved
+        ? 'Solved view preserves the Teacher Edition problem structure and answer evidence with authored mathematical models.'
+        : 'Blank view preserves the official figure, givens, grouping, labels, and open response space without answer leakage.',
+      sections: reviewedPrimary
+    };
+  }
+
   const sections: ProblemVisualSpec['sections'] = [];
   const sourceNote = solved
     ? 'Solved view uses the Module 4 Teacher Edition answer key with authored area visuals and unit checks.'
@@ -280,14 +381,20 @@ function createM4ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
     sections.push({
       kind: 'equations',
       label: solved ? 'Solved area work' : 'Student work blanks',
-      lines: solved ? problem.equations : problem.blankEquations?.length ? problem.blankEquations : blankEquationTemplatesFromLines(problem.equations)
+      lines: solved
+        ? problem.equations
+        : problem.blankEquations?.length
+          ? problem.blankEquations
+          : blankEquationTemplatesFromLines(problem.equations)
     });
   }
 
   sections.push({
     kind: 'note',
     label: solved ? 'Teacher Edition answer' : 'Source workspace direction',
-    text: solved ? problem.solvedAnswer : problem.blankWorkspaceLabel ?? sourceSpecificBlankWorkspaceLabel(problem)
+    text: solved
+      ? problem.solvedAnswer
+      : problem.blankWorkspaceLabel ?? sourceSpecificBlankWorkspaceLabel(problem)
   });
 
   return {
@@ -295,6 +402,952 @@ function createM4ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
     sourceNote,
     sections
   };
+}
+
+function m4OpenResponse(
+  problem: ProblemSetCenteredProblem,
+  solved: boolean,
+  lines: string[] = [],
+  printedLineCount = 8
+): ProblemVisualSection {
+  return {
+    kind: 'source-response-workspace',
+    label: solved ? 'Teacher Edition answer work' : 'Official open response',
+    parts: [{
+      prompt: problem.sourcePrompt,
+      lines: solved ? lines : [],
+      printedLineCount,
+      openWorkspace: !solved
+    }]
+  };
+}
+
+function m4Array(rows: number, columns: number, caption: string, solved = false): ProblemVisualSection {
+  return {
+    kind: 'array',
+    rows,
+    columns,
+    item: 'square',
+    caption
+  };
+}
+
+function m4RectangleOutline(label: string, width: number, height: number, valueLabel: string): ProblemVisualSection {
+  return {
+    kind: 'geometry-diagram',
+    label,
+    diagram: 'rectangle',
+    shapes: [{
+      label,
+      shape: 'rectangle',
+      x: 12,
+      y: 15,
+      width,
+      height,
+      valueLabel,
+      tone: 'unknown'
+    }]
+  };
+}
+
+function m4ModelCards(
+  models: Array<{ label: string; rows: number; columns: number; answer: string }>,
+  solved: boolean
+): ProblemVisualSection {
+  return {
+    kind: 'card-grid',
+    label: solved ? 'Completed Teacher Edition models' : 'Official source models',
+    cards: models.map((model) => ({
+      label: model.label,
+      sections: [
+        m4Array(model.rows, model.columns, solved ? model.answer : 'Count the square units.'),
+        {
+          kind: 'equations',
+          lines: [solved ? model.answer : `${model.label}: ____ square units`]
+        }
+      ]
+    }))
+  };
+}
+
+function m4ReviewedLessonsOneThroughFive(
+  problem: ProblemSetCenteredProblem,
+  solved: boolean,
+  lessonNumber: number
+): ProblemVisualSpec['sections'] | undefined {
+  const number = Number(problem.number);
+
+  if (lessonNumber === 1) {
+    if (number <= 3) return m4PatternBlockSections(problem, solved);
+    if (number === 4) {
+      return [m4OpenResponse(
+        problem,
+        solved,
+        ['As pattern blocks get larger, fewer blocks are needed to cover the same shape.'],
+        6
+      )];
+    }
+    if (number === 5) return m4PatternBlockSections(problem, solved);
+    return [
+      m4RectangleOutline('Problem 5 rectangle reference', 70, 42, solved ? 'Trapezoids cannot cover it without gaps or overlaps.' : 'Try trapezoid pattern blocks.'),
+      m4OpenResponse(
+        problem,
+        solved,
+        ['No. Trapezoid blocks cannot cover this rectangle without gaps or overlaps, so they do not measure its area.'],
+        6
+      )
+    ];
+  }
+
+  if (lessonNumber === 2) {
+    if (number === 1 || number === 2) {
+      if (!solved) {
+        return [{
+          kind: 'data-table',
+          label: `Paper Strip ${number}: official drawing-and-area chart`,
+          columns: ['', 'Drawing', 'Area'],
+          rows: ['A', 'B', 'C'].map((letter) => [`Rectangle ${letter}`, '', ''])
+        }];
+      }
+      return [m4ModelCards([
+        { label: 'Rectangle A', rows: 2, columns: 6, answer: `2 × 6 = 12 square ${number === 1 ? 'inches' : 'centimeters'}` },
+        { label: 'Rectangle B', rows: 3, columns: 4, answer: `3 × 4 = 12 square ${number === 1 ? 'inches' : 'centimeters'}` },
+        { label: 'Rectangle C', rows: 4, columns: 3, answer: `4 × 3 = 12 square ${number === 1 ? 'inches' : 'centimeters'}` }
+      ], true)];
+    }
+    if (number === 3) {
+      return [m4OpenResponse(
+        problem,
+        solved,
+        ['The shapes can change, but every rectangle uses all 12 units, so the area remains 12 square units.'],
+        7
+      )];
+    }
+    if (number === 4) {
+      return [
+        m4ModelCards([
+          { label: 'Shape A', rows: 3, columns: 2, answer: '3 × 2 = 6 square units' },
+          { label: 'Shape B', rows: 2, columns: 3, answer: '2 × 3 = 6 square units' }
+        ], solved),
+        m4OpenResponse(problem, solved, ['Yes. Both rectangles contain 6 equal square units.'], 5)
+      ];
+    }
+    return [
+      m4ModelCards([
+        { label: 'Given rectangle', rows: 1, columns: 8, answer: '1 × 8 = 8 square units' },
+        ...(solved ? [{ label: 'Different equal-area rectangle', rows: 2, columns: 4, answer: '2 × 4 = 8 square units' }] : [])
+      ], solved),
+      m4OpenResponse(problem, solved, ['The area is 8 square units; a different 2-by-4 rectangle has the same area.'], 6)
+    ];
+  }
+
+  if (lessonNumber === 3) {
+    if (number === 1) {
+      return [m4ModelCards([
+        { label: 'A', rows: 2, columns: 3, answer: 'A = 6 square units' },
+        { label: 'B', rows: 2, columns: 6, answer: 'B = 2 square units (Teacher Edition answer key)' },
+        { label: 'C', rows: 4, columns: 3, answer: 'C = 12 square units' },
+        { label: 'D', rows: 4, columns: 5, answer: 'D = 20 square units' }
+      ], solved)];
+    }
+    if (number === 2) {
+      return [m4ModelCards([
+        { label: 'a', rows: 3, columns: 2, answer: 'a = 6 square units' },
+        { label: 'b', rows: 3, columns: 3, answer: 'b = 9 square units' },
+        { label: 'c', rows: 4, columns: 4, answer: 'c = 16 square units' },
+        { label: 'd', rows: 2, columns: 6, answer: 'd = 12 square units' }
+      ], solved)];
+    }
+    if (number === 3) {
+      return [m4OpenResponse(
+        problem,
+        solved,
+        [
+          'a. The same number of larger inch squares would make each rectangle physically larger.',
+          'b. Recreate one selected rectangle on both inch and centimeter grid paper.'
+        ],
+        12
+      )];
+    }
+    return [
+      solved
+        ? m4ModelCards([
+            { label: 'Example 1', rows: 1, columns: 8, answer: '1 × 8 = 8 square centimeters' },
+            { label: 'Example 2', rows: 2, columns: 4, answer: '2 × 4 = 8 square centimeters' },
+            { label: 'Example 3', rows: 4, columns: 2, answer: '4 × 2 = 8 square centimeters' },
+            { label: 'Example 4', rows: 8, columns: 1, answer: '8 × 1 = 8 square centimeters' }
+          ], true)
+        : m4OpenResponse(problem, false, [], 14)
+    ];
+  }
+
+  if (lessonNumber === 4) {
+    if (number === 1) {
+      return [solved
+        ? m4Array(2, 7, '2 cm by 7 cm; total area 14 square centimeters.', true)
+        : m4RectangleOutline('Centimeter rectangle to measure and tile', 72, 25, 'Measure both sides; total area = ____')];
+    }
+    if (number === 2) {
+      return [solved
+        ? m4Array(3, 2, '3 in by 2 in; total area 6 square inches.', true)
+        : m4RectangleOutline('Inch rectangle to measure and tile', 38, 62, 'Measure both sides; total area = ____')];
+    }
+    if (number === 3) {
+      return [
+        m4Array(3, 4, solved ? 'Side lengths: 3 cm and 4 cm; area 12 square centimeters.' : 'Label all four side lengths; total area = ____', solved)
+      ];
+    }
+    const figureCrops: Record<number, { y: number; height: number; caption: string }> = {
+      4: { y: 330, height: 300, caption: 'Exact official 4-by-5 square-centimeter grid.' },
+      5: { y: 735, height: 220, caption: 'Exact official rectangle for comparing square-centimeter and square-inch tiles.' },
+      6: { y: 1110, height: 270, caption: 'Exact official rectangle with side labels A, B, C, and D.' }
+    };
+    const crop = figureCrops[number];
+    return [{
+      kind: 'source-crop',
+      label: `Official Problem ${number} figure`,
+      src: '/source-pages/m4-teacher/page-051.png',
+      alt: `Module 4 Lesson 4 Problem ${number} official rectangle figure`,
+      imageWidth: 1275,
+      imageHeight: 1650,
+      crop: { x: 100, y: crop.y, width: number === 5 ? 510 : 390, height: crop.height },
+      caption: crop.caption
+    }, m4OpenResponse(
+      problem,
+      solved,
+      number === 4
+        ? ['Both are correct: one side is 4 centimeters and the adjacent side is 5 centimeters.']
+        : number === 5
+          ? ['Square-inch tiles work best because they cover the rectangle with fewer whole tiles.']
+          : ['Opposite sides are equal, so A = C and B = D.'],
+      6
+    )];
+  }
+
+  if (lessonNumber === 5) {
+    if (number === 1) {
+      const models = [
+        { label: 'a. Area 18; side 3 cm', rows: 3, columns: 6, answer: '3 × 6 = 18' },
+        { label: 'b. side 4 cm and 5 cm', rows: 4, columns: 5, answer: '4 × 5 = 20' },
+        { label: 'c. Area 18; side 6 cm', rows: 6, columns: 3, answer: '6 × 3 = 18' },
+        { label: 'd. Area 24; side 3 cm', rows: 3, columns: 8, answer: '3 × 8 = 24' },
+        { label: 'e. Area 20; side 5 cm', rows: 5, columns: 4, answer: '5 × 4 = 20' },
+        { label: 'f. side 3 cm and 3 cm', rows: 3, columns: 3, answer: '3 × 3 = 9' }
+      ];
+      if (solved) return [m4ModelCards(models, true)];
+      const crops = [
+        { x: 100, y: 320, width: 450, height: 280 },
+        { x: 105, y: 670, width: 400, height: 350 },
+        { x: 100, y: 1040, width: 300, height: 440 },
+        { x: 580, y: 320, width: 550, height: 280 },
+        { x: 670, y: 670, width: 350, height: 390 },
+        { x: 720, y: 1130, width: 310, height: 310 }
+      ];
+      return [{
+        kind: 'card-grid',
+        label: 'Six official partially tiled rectangle frames',
+        cards: models.map((model, index) => ({
+          label: model.label,
+          sections: [{
+            kind: 'source-crop',
+            src: '/source-pages/m4-teacher/page-063.png',
+            alt: `${model.label} official partially tiled rectangle`,
+            imageWidth: 1275,
+            imageHeight: 1650,
+            crop: crops[index],
+            caption: 'Draw only the missing square tiles, then complete the multiplication sentence.'
+          }]
+        }))
+      }];
+    }
+    if (number === 2) {
+      return [solved
+        ? m4Array(5, 7, '5 equal rows of 7 tiles; side lengths are 5 inches and 7 inches.', true)
+        : m4OpenResponse(problem, false, [], 9)];
+    }
+    if (number === 3) {
+      return [solved
+        ? m4ModelCards([
+            { label: '18-tile array', rows: 3, columns: 6, answer: '3 × 6 = 18' },
+            { label: 'Remaining 6-tile array', rows: 2, columns: 3, answer: '2 × 3 = 6' }
+          ], true)
+        : m4OpenResponse(problem, false, [], 10)];
+    }
+    return [solved
+      ? {
+          kind: 'card-grid',
+          label: 'Leon’s completed source response',
+          cards: [
+            {
+              label: 'a. Four equal rows',
+              sections: [m4Array(4, 8, '4 × 8 = 32 square centimeters.', true)]
+            },
+            {
+              label: 'b. Six equal rows?',
+              sections: [{ kind: 'note', text: 'No. 32 is not divisible by 6, so 32 tiles cannot form 6 equal whole-number rows.' }]
+            }
+          ]
+        }
+      : m4OpenResponse(problem, false, [], 12)];
+  }
+
+  return undefined;
+}
+
+function m4SourceCrop(
+  src: string,
+  label: string,
+  alt: string,
+  crop: { x: number; y: number; width: number; height: number },
+  caption: string
+): ProblemVisualSection {
+  return {
+    kind: 'source-crop',
+    label,
+    src,
+    alt,
+    imageWidth: 1275,
+    imageHeight: 1650,
+    crop,
+    caption
+  };
+}
+
+function m4LabeledRectangle(
+  label: string,
+  width: number,
+  height: number,
+  sideLabels: string[],
+  valueLabel: string,
+  solved: boolean
+): ProblemVisualSection {
+  return {
+    kind: 'geometry-diagram',
+    label,
+    diagram: 'rectangle',
+    shapes: [{
+      label,
+      shape: 'rectangle',
+      x: 12,
+      y: 12,
+      width,
+      height,
+      sideLabels,
+      valueLabel,
+      tone: solved ? 'answer' : 'unknown'
+    }]
+  };
+}
+
+function m4ReviewedLessonsSixThroughTen(
+  problem: ProblemSetCenteredProblem,
+  solved: boolean,
+  lessonNumber: number
+): ProblemVisualSpec['sections'] | undefined {
+  const number = Number(problem.number);
+
+  if (lessonNumber === 6) {
+    if (number === 1) {
+      const incompleteCrops = [
+        { label: 'a', crop: { x: 120, y: 325, width: 255, height: 190 } },
+        { label: 'b', crop: { x: 120, y: 555, width: 275, height: 150 } },
+        { label: 'c', crop: { x: 170, y: 750, width: 175, height: 190 } },
+        { label: 'd', crop: { x: 125, y: 970, width: 255, height: 165 } },
+        { label: 'e', crop: { x: 115, y: 1150, width: 275, height: 125 } },
+        { label: 'f', crop: { x: 155, y: 1310, width: 210, height: 175 } }
+      ];
+      if (!solved) {
+        return [{
+          kind: 'card-grid',
+          label: 'Six official incomplete arrays',
+          cards: incompleteCrops.map((entry) => ({
+            label: entry.label,
+            sections: [m4SourceCrop(
+              '/source-pages/m4-teacher/page-073.png',
+              `Incomplete array ${entry.label}`,
+              `Lesson 6 Problem 1 incomplete array ${entry.label}`,
+              entry.crop,
+              'Draw the missing rows and columns; do not infer the match from position.'
+            )]
+          }))
+        }, m4ModelCards([
+          { label: 'Completed array 1', rows: 5, columns: 3, answer: '5 × 3 = 15' },
+          { label: 'Completed array 2', rows: 4, columns: 5, answer: '4 × 5 = 20' },
+          { label: 'Completed array 3', rows: 2, columns: 6, answer: '2 × 6 = 12' },
+          { label: 'Completed array 4', rows: 4, columns: 3, answer: '4 × 3 = 12' },
+          { label: 'Completed array 5', rows: 5, columns: 6, answer: '5 × 6 = 30' },
+          { label: 'Completed array 6', rows: 3, columns: 7, answer: '3 × 7 = 21' }
+        ], false), {
+          kind: 'equations',
+          label: 'Area equation blanks for a–f',
+          lines: ['a. ____ × ____ = ____', 'b. ____ × ____ = ____', 'c. ____ × ____ = ____', 'd. ____ × ____ = ____', 'e. ____ × ____ = ____', 'f. ____ × ____ = ____']
+        }];
+      }
+      return [m4ModelCards([
+        { label: 'a → completed array 5', rows: 5, columns: 6, answer: '5 × 6 = 30 square centimeters' },
+        { label: 'b → completed array 6', rows: 3, columns: 7, answer: '3 × 7 = 21 square centimeters' },
+        { label: 'c → completed array 1', rows: 5, columns: 3, answer: '5 × 3 = 15 square centimeters' },
+        { label: 'd → completed array 2', rows: 4, columns: 5, answer: '4 × 5 = 20 square centimeters' },
+        { label: 'e → completed array 3', rows: 2, columns: 6, answer: '2 × 6 = 12 square centimeters' },
+        { label: 'f → completed array 4', rows: 4, columns: 3, answer: '4 × 3 = 12 square centimeters' }
+      ], true)];
+    }
+    const figure = number === 2
+      ? {
+          crop: { x: 110, y: 275, width: 325, height: 250 },
+          label: 'Official incomplete 6-row rectangle',
+          lines: ['No. Completing the rows and columns gives 6 × 8 = 48 square units, not 42.']
+        }
+      : number === 3
+        ? {
+            crop: { x: 105, y: 640, width: 350, height: 335 },
+            label: 'Official tile floor and rug',
+            lines: ['The full floor is 9 rows by 10 columns, including the covered tiles: 9 × 10 = 90 tiles.']
+          }
+        : {
+            crop: { x: 105, y: 1140, width: 285, height: 330 },
+            label: 'Official incomplete stained-glass window',
+            lines: ['The finished array needs 30 more square-inch glass tiles.']
+          };
+    return [
+      m4SourceCrop(
+        '/source-pages/m4-teacher/page-074.png',
+        figure.label,
+        `Lesson 6 Problem ${number} official mathematical figure`,
+        figure.crop,
+        'Only the exact mathematical figure is retained; response work remains authored.'
+      ),
+      m4OpenResponse(problem, solved, figure.lines, 7)
+    ];
+  }
+
+  if (lessonNumber === 7) {
+    if (number === 1) {
+      const equations = ['A: 3 × 4 = 12', 'B: 5 × 4 = 20', 'C: 2 × 7 = 14', 'D: 7 × 4 = 28', 'E: 1 × 3 = 3', 'F: 4 × 2 = 8'];
+      return [
+        m4SourceCrop(
+          '/source-pages/m4-teacher/page-086.png',
+          'Official A–F rectangle floor plan',
+          'Lesson 7 Problem 1 official grid with rectangles A through F',
+          { x: 105, y: 315, width: 925, height: 745 },
+          solved ? 'Draw the equal-size grid lines inside each labeled rectangle and verify each factor pair.' : 'Draw equal-size square grids inside A–F; label both side lengths.'
+        ),
+        {
+          kind: 'equations',
+          label: solved ? 'Completed A–F area equations' : 'A–F area equation blanks',
+          lines: solved ? equations : equations.map((line) => `${line[0]}: ____ × ____ = ____ square units`)
+        }
+      ];
+    }
+    if (number === 2 || number === 3) {
+      const crop = number === 2
+        ? { x: 680, y: 190, width: 455, height: 405 }
+        : { x: 850, y: 600, width: 285, height: 320 };
+      const lines = number === 2
+        ? ['a. Side lengths: 9 feet and 11 feet.', 'b. Draw equal-size grid lines inside the bedroom rectangle.', 'c. 9 × 11 = 99 square feet.']
+        : ['No. The marked mural does not cover exactly 35 square feet; explanations will vary.'];
+      return [
+        m4SourceCrop(
+          '/source-pages/m4-teacher/page-087.png',
+          number === 2 ? 'Official Benjamin bedroom perimeter grid' : 'Official mural perimeter grid',
+          `Lesson 7 Problem ${number} official perimeter grid`,
+          crop,
+          'The framed perimeter grid is the Teacher Edition mathematical figure.'
+        ),
+        m4OpenResponse(problem, solved, lines, number === 2 ? 9 : 7)
+      ];
+    }
+    return [m4OpenResponse(
+      problem,
+      solved,
+      ['a. A 4-by-6 or 6-by-4 array lets both skip-counts produce the same total.', 'b. One possible total is 24 square units.'],
+      12
+    )];
+  }
+
+  if (lessonNumber === 8) {
+    if (number === 1) {
+      const dimensions = [
+        { label: 'a', x: 6, y: 24, width: 25, height: 34, sides: ['7 ft', '4 ft'], answer: '4 × 7 = 28 square feet' },
+        { label: 'b', x: 38, y: 15, width: 23, height: 52, sides: ['7 ft', '8 ft'], answer: '8 × 7 = 56 square feet' },
+        { label: 'c', x: 70, y: 20, width: 22, height: 44, sides: ['6 ft', '6 ft'], answer: '6 × 6 = 36 square feet' }
+      ];
+      return [{
+        kind: 'geometry-diagram',
+        label: 'Three official labeled rectangles',
+        diagram: 'composite',
+        shapes: dimensions.map((entry) => ({
+          label: entry.label,
+          shape: 'rectangle',
+          x: entry.x,
+          y: entry.y,
+          width: entry.width,
+          height: entry.height,
+          sideLabels: entry.sides,
+          valueLabel: solved ? entry.answer : 'Area: ____ sq ft',
+          tone: solved ? 'answer' : 'unknown'
+        }))
+      }, {
+        kind: 'equations',
+        label: solved ? 'Completed area equations' : 'Area equation blanks',
+        lines: dimensions.map((entry) => solved ? entry.answer : `${entry.label}. ____ × ____ = ____`)
+      }];
+    }
+    if (number === 2) {
+      const models = [
+        { label: 'a', x: 6, y: 12, width: 27, height: 58, known: ['____ ft', '9 ft'], answer: ['8 ft', '9 ft'], area: 'Area = 72 sq ft', equations: ['9 × 8 = 72', '72 ÷ 9 = 8'] },
+        { label: 'b', x: 39, y: 26, width: 24, height: 30, known: ['____ ft', '3 ft'], answer: ['5 ft', '3 ft'], area: 'Area = 15 sq ft', equations: ['3 × 5 = 15', '15 ÷ 3 = 5'] },
+        { label: 'c', x: 72, y: 16, width: 18, height: 50, known: ['4 ft', '____ ft'], answer: ['4 ft', '7 ft'], area: 'Area = 28 sq ft', equations: ['7 × 4 = 28', '28 ÷ 4 = 7'] }
+      ];
+      return [{
+        kind: 'geometry-diagram',
+        label: 'Three unknown-side rectangles',
+        diagram: 'composite',
+        shapes: models.map((entry) => ({
+          label: entry.label,
+          shape: 'rectangle',
+          x: entry.x,
+          y: entry.y,
+          width: entry.width,
+          height: entry.height,
+          sideLabels: solved ? entry.answer : entry.known,
+          valueLabel: entry.area,
+          tone: solved ? 'answer' : 'unknown'
+        }))
+      }, {
+        kind: 'equations',
+        label: solved ? 'Completed multiplication and division equations' : 'Multiplication and division blanks',
+        lines: models.flatMap((entry) => solved
+          ? entry.equations
+          : [`${entry.label}. ____ × ____ = ____`, '____ ÷ ____ = ____'])
+      }];
+    }
+    if (number === 3) {
+      return [
+        solved
+          ? m4Array(6, 7, 'One valid response: 6 × 7 = 42 square units; side lengths 6 and 7.', true)
+          : m4SourceCrop(
+              '/source-pages/m4-teacher/page-099.png',
+              'Official blank construction grid',
+              'Lesson 8 Problem 3 official blank square grid',
+              { x: 395, y: 1170, width: 430, height: 275 },
+              'Draw a 42-square-unit rectangle on this grid and label both side lengths.'
+            )
+      ];
+    }
+    if (number === 4) {
+      return [solved
+        ? m4Array(9, 6, '9 × 6 = 54 square centimeters.', true)
+        : m4OpenResponse(problem, false, [], 9)];
+    }
+    if (number === 5) {
+      return [solved
+        ? m4ModelCards([
+            { label: 'Eliza', rows: 6, columns: 7, answer: '6 × 7 = 42 square feet' },
+            { label: 'Brother', rows: 5, columns: 8, answer: '5 × 8 = 40 square feet' }
+          ], true)
+        : m4OpenResponse(problem, false, [], 9)];
+    }
+    return [solved
+      ? m4Array(4, 6, '24 ÷ 6 = 4 inches for the other side length.', true)
+      : m4OpenResponse(problem, false, [], 9)];
+  }
+
+  if (lessonNumber === 9) {
+    if (number === 1) {
+      return [{
+        kind: 'source-response-workspace',
+        label: solved ? 'One Teacher Edition-supported construction' : 'Official three-part open construction',
+        parts: [
+          { lead: 'a.', prompt: 'Draw and label 2 equal rectangles.', lines: solved ? ['Two 5 cm by 10 cm rectangles.'] : [], printedLineCount: 8, openWorkspace: !solved },
+          { lead: 'b.', prompt: 'Write an equation for 1 rectangle.', lines: solved ? ['5 cm × 10 cm = 50 square centimeters.'] : [], printedLineCount: 4, openWorkspace: !solved },
+          { lead: 'c.', prompt: 'Show the total area of both rectangles.', lines: solved ? ['50 + 50 = 100 square centimeters.'] : [], printedLineCount: 4, openWorkspace: !solved }
+        ]
+      }];
+    }
+    if (number === 2) {
+      return [{
+        kind: 'source-response-workspace',
+        label: solved ? 'Completed longer-rectangle construction' : 'Official two-part open construction',
+        parts: [
+          { lead: 'a.', prompt: 'Place both equal rectangles side by side; draw and label the longer rectangle.', lines: solved ? ['A 5 cm by 20 cm rectangle.'] : [], printedLineCount: 9, openWorkspace: !solved },
+          { lead: 'b.', prompt: 'Find its total area.', lines: solved ? ['5 × 20 = 100 square centimeters.'] : [], printedLineCount: 4, openWorkspace: !solved }
+        ]
+      }];
+    }
+    if (number === 3) {
+      return [
+        m4ModelCards([
+          { label: 'Furaha', rows: 4, columns: 6, answer: '4 × 6 = 24 square units' },
+          { label: 'Rahema', rows: 4, columns: 7, answer: '4 × 7 = 28 square units' }
+        ], solved),
+        m4OpenResponse(
+          problem,
+          solved,
+          ['a. Areas: 24 and 28 square units.', 'b. Combined rectangle: 4 rows by 13 columns.', 'c. Yes. 24 + 28 = 52 square units.'],
+          12
+        )
+      ];
+    }
+    return [
+      m4SourceCrop(
+        '/source-pages/m4-teacher/page-122.png',
+        'Official overlapping Rectangle A/B diagram',
+        'Lesson 9 Problem 4 overlapping rectangles A and B',
+        { x: 95, y: 1260, width: 590, height: 190 },
+        'The overlap is retained because it determines whether adding both areas is valid.'
+      ),
+      m4OpenResponse(problem, solved, ['No. Adding both full areas counts the overlap twice.'], 7)
+    ];
+  }
+
+  if (lessonNumber === 10) {
+    if (number === 1) {
+      const models = [
+        { label: 'a. 8 × 7 = (5 + 3) × 7', rows: 8, columns: 7, splitRows: 5, answer: ['5 × 7 = 35', '3 × 7 = 21', '35 + 21 = 56'] },
+        { label: 'b. 12 × 4 = (10 + 2) × 4', rows: 12, columns: 4, splitRows: 10, answer: ['10 × 4 = 40', '2 × 4 = 8', '40 + 8 = 48'] },
+        { label: 'c. 6 × 13 = 6 × (10 + 3)', rows: 6, columns: 13, splitColumns: 10, answer: ['6 × 10 = 60', '6 × 3 = 18', '60 + 18 = 78'] },
+        { label: 'd. 8 × 12 = 8 × (10 + 2)', rows: 8, columns: 12, splitColumns: 10, answer: ['8 × 10 = 80', '8 × 2 = 16', '80 + 16 = 96'] }
+      ];
+      return [{
+        kind: 'card-grid',
+        label: 'Four exact shaded distributive arrays',
+        cards: models.map((entry) => ({
+          label: entry.label,
+          sections: [{
+            kind: 'array',
+            rows: entry.rows,
+            columns: entry.columns,
+            item: 'square',
+            splitAfterRows: entry.splitRows,
+            splitAfterColumns: entry.splitColumns,
+            shadeBeforeRows: entry.splitRows,
+            shadeBeforeColumns: entry.splitColumns,
+            caption: solved ? entry.answer.join('; ') : 'Label both parts, complete the partial products, and add.'
+          }, {
+            kind: 'equations',
+            lines: solved ? entry.answer : ['____ × ____ = ____', '____ × ____ = ____', '____ + ____ = ____']
+          }]
+        }))
+      }];
+    }
+    if (number === 2) {
+      return [{
+        kind: 'array',
+        rows: 10,
+        columns: 8,
+        item: 'square',
+        splitAfterRows: 9,
+        shadeBeforeRows: 9,
+        caption: solved
+          ? 'Imagine 1 extra row: 10 × 8 = 80, then 80 − 8 = 72, so 9 × 8 = 72.'
+          : 'The top 9 rows form 9 × 8; the final row is the imagined extra row.'
+      }, m4OpenResponse(
+        problem,
+        solved,
+        ['10 × 8 = 80; 80 − 8 = 72; therefore 9 × 8 = 72.'],
+        7
+      )];
+    }
+    return [{
+      kind: 'array',
+      rows: 15,
+      columns: 5,
+      item: 'square',
+      splitAfterRows: solved ? 10 : undefined,
+      shadeBeforeRows: solved ? 10 : undefined,
+      caption: solved
+        ? 'One valid split: (10 × 5) + (5 × 5) = 50 + 25 = 75 square units.'
+        : 'Shade one smaller rectangle, then add both partial areas.'
+    }, m4OpenResponse(
+      problem,
+      solved,
+      ['One valid response: 10 × 5 = 50 and 5 × 5 = 25; 50 + 25 = 75 square units.'],
+      8
+    )];
+  }
+
+  return undefined;
+}
+
+function m4ReviewedLessonsElevenThroughFifteen(
+  problem: ProblemSetCenteredProblem,
+  solved: boolean,
+  lessonNumber: number
+): ProblemVisualSpec['sections'] | undefined {
+  const number = Number(problem.number);
+
+  if (lessonNumber === 11) {
+    if (number === 1) {
+      const models = [
+        { label: 'a', x: 5, y: 8, width: 15, height: 34, sides: ['6 cm', '8 cm'], equation: '8 × 6 = 48' },
+        { label: 'b', x: 29, y: 8, width: 62, height: 7, sides: ['48 cm', '1 cm'], equation: '1 × 48 = 48' },
+        { label: 'c', x: 29, y: 27, width: 42, height: 8, sides: ['24 cm', '2 cm'], equation: '2 × 24 = 48' },
+        { label: 'd', x: 5, y: 56, width: 25, height: 15, sides: ['12 cm', '4 cm'], equation: '4 × 12 = 48' },
+        { label: 'e', x: 48, y: 48, width: 8, height: 43, sides: ['3 cm', '16 cm'], equation: '16 × 3 = 48' }
+      ];
+      return [{
+        kind: 'geometry-diagram',
+        label: 'Five equal-area official-dimension rectangles',
+        diagram: 'composite',
+        shapes: models.map((entry) => ({
+          label: entry.label,
+          shape: 'rectangle',
+          x: entry.x,
+          y: entry.y,
+          width: entry.width,
+          height: entry.height,
+          sideLabels: entry.label === 'a' ? entry.sides : undefined,
+          tone: solved ? 'answer' : 'unknown'
+        }))
+      }, {
+        kind: 'equations',
+        label: solved ? 'Completed equal-area equations' : 'Move parentheses and solve',
+        lines: solved ? models.map((entry) => `${entry.label}. ${entry.equation}`) : [
+          'a. 8 × ____ = ____',
+          'b. 1 × 48 = ____',
+          'c. 8 × 6 = (2 × 4) × 6 = 2 × 24 = ____',
+          'd. 8 × 6 = (4 × 2) × 6 = 4 × 12 = ____',
+          'e. 8 × 6 = 8 × (2 × 3) = 16 × 3 = ____'
+        ]
+      }];
+    }
+    if (number === 2) {
+      return [m4OpenResponse(problem, solved, ['Yes. The five whole-number factor pairs shown exhaust the possible side lengths for area 48.'], 7)];
+    }
+    if (number === 3) {
+      return [m4OpenResponse(problem, solved, ['As the side-length difference gets smaller, the rectangle becomes closer to a square.'], 7)];
+    }
+    const models = [
+      { label: 'a. Given rectangle', rows: 8, columns: 9, answer: '8 × 9 = 72 square centimeters' },
+      { label: 'b. Julius rectangle', rows: 4, columns: 18, answer: '4 × 18 = 72 square centimeters' },
+      { label: 'c. Different factor pair', rows: 2, columns: 36, answer: '2 × 36 = 72 sq cm' }
+    ];
+    return [
+      m4ModelCards(solved ? models : models.slice(0, 2), solved),
+      m4OpenResponse(
+        problem,
+        solved,
+        ['a. 8 × 9 = 72 square centimeters.', 'b. Yes. 4 × 18 = 4 × 2 × 9 = 8 × 9 = 72.', 'c. Answers will vary; 2 cm by 36 cm is one valid response.'],
+        13
+      )
+    ];
+  }
+
+  if (lessonNumber === 12) {
+    if (number === 1) {
+      return [solved
+        ? m4Array(9, 9, '9 × 9 = 81 square centimeters.', true)
+        : m4OpenResponse(problem, false, [], 8)];
+    }
+    if (number === 2) {
+      return [
+        m4ModelCards([
+          { label: 'Stacy’s given rectangle', rows: 3, columns: 4, answer: '3 × 4 = 12 square units' },
+          ...(solved ? [{ label: 'One different equal-area rectangle', rows: 2, columns: 6, answer: '2 × 6 = 12 square units' }] : [])
+        ], solved),
+        m4OpenResponse(
+          problem,
+          solved,
+          ['a. Stacy’s rectangle has area 12 square units; a different 2-by-6 rectangle also has area 12.', 'b. Other different whole-number side lengths are possible.', 'c. Yes; valid drawings and explanations will vary.'],
+          12
+        )
+      ];
+    }
+    if (number === 3) {
+      return [{
+        kind: 'array',
+        rows: 4,
+        columns: 16,
+        item: 'square',
+        splitAfterColumns: 10,
+        shadeAfterColumns: 6,
+        caption: solved
+          ? '4 × (10 + 6) = (4 × 10) + (4 × 6) = 40 + 24 = 64 square feet.'
+          : 'Official split: 4-foot height, then 10-foot and 6-foot widths.'
+      }, {
+        kind: 'equations',
+        lines: solved
+          ? ['4 × 10 = 40', '4 × 6 = 24', '40 + 24 = 64']
+          : ['4 × 10 = ____', '4 × 6 = ____', '____ + ____ = ____']
+      }];
+    }
+    if (number === 4) {
+      const models = [
+        { label: 'Figure 1', rows: 2, columns: 2, answer: '2 × 2 = 4' },
+        { label: 'Figure 2', rows: 3, columns: 3, answer: '3 × 3 = 9' },
+        { label: 'Figure 3', rows: 4, columns: 4, answer: '4 × 4 = 16' },
+        ...(solved
+          ? [
+              { label: 'Figure 4', rows: 5, columns: 5, answer: '5 × 5 = 25' },
+              { label: 'Figure 5', rows: 6, columns: 6, answer: '6 × 6 = 36' }
+            ]
+          : [])
+      ];
+      return [
+        m4ModelCards(models, solved),
+        m4OpenResponse(
+          problem,
+          solved,
+          ['a. Areas are 4, 9, and 16 square units; each figure adds one row and one column.', 'b. The next figures are 5×5 and 6×6, with areas 25 and 36.'],
+          11
+        )
+      ];
+    }
+    return [
+      m4SourceCrop(
+        '/source-pages/m4-teacher/page-157.png',
+        'Official three-strip 9 cm square',
+        'Lesson 12 Problem 5 three identical paper strips forming a square',
+        { x: 125, y: 1165, width: 405, height: 315 },
+        'Three identical horizontal rectangles form the 9 cm by 9 cm square.'
+      ),
+      m4OpenResponse(
+        problem,
+        solved,
+        ['Each strip is 9 cm by 3 cm because 9 ÷ 3 = 3. Two strips have area 2 × 27 = 54 square centimeters.'],
+        8
+      )
+    ];
+  }
+
+  if (lessonNumber === 13) {
+    if (number === 1) {
+      return [
+        m4SourceCrop(
+          '/source-pages/m4-teacher/page-167.png',
+          'Official four composite figures on square grid',
+          'Lesson 13 Problem 1 figures 1 through 4 with labeled rectangular parts',
+          { x: 120, y: 305, width: 885, height: 725 },
+          'Only the four-part mathematical grid is retained; equations are authored below.'
+        ),
+        {
+          kind: 'equations',
+          label: solved ? 'Completed part-area sums' : 'Four part-area sum blanks',
+          lines: solved
+            ? ['Figure 1: 18 + 9 = 27 square units', 'Figure 2: 18 + 15 = 33 square units', 'Figure 3: 9 + 21 = 30 square units', 'Figure 4: answers will vary; total 55 square units']
+            : ['Figure 1: 18 + ____ = ____', 'Figure 2: ____ + ____ = ____', 'Figure 3: ____ + ____ = ____', 'Figure 4: ____ + ____ = ____']
+        }
+      ];
+    }
+    const crop = number === 2
+      ? { x: 70, y: 250, width: 480, height: 480 }
+      : { x: 65, y: 885, width: 535, height: 430 };
+    const lines = number === 2
+      ? ['Big rectangle: 9 × 10 = 90. Cutout: 3 × 4 = 12. Shaded area: 90 − 12 = 78 square centimeters.']
+      : ['a. Unknown measurements: 5 cm and 4 cm.', 'b. Big rectangle: 7 × 9 = 63 square centimeters.', 'c. Small rectangle: 4 × 5 = 20 square centimeters.', 'd. Shaded area: 63 − 20 = 43 square centimeters.'];
+    return [
+      m4SourceCrop(
+        '/source-pages/m4-teacher/page-168.png',
+        number === 2 ? 'Official 9-by-10 rectangle with 3-by-4 cutout' : 'Official L-shaped rectangle with unknown measurements',
+        `Lesson 13 Problem ${number} official composite-area figure`,
+        crop,
+        'Only the exact labeled mathematical figure is retained.'
+      ),
+      m4OpenResponse(problem, solved, lines, number === 2 ? 7 : 11)
+    ];
+  }
+
+  if (lessonNumber === 14) {
+    if (number === 1) {
+      const figures = [
+        m4SourceCrop(
+          '/source-pages/m4-teacher/page-180.png',
+          'Official composite figure a',
+          'Lesson 14 Problem 1a official composite rectangle',
+          { x: 175, y: 295, width: 410, height: 365 },
+          'Exact centimeter dimensions and orientation.'
+        ),
+        m4SourceCrop(
+          '/source-pages/m4-teacher/page-180.png',
+          'Official composite figure b',
+          'Lesson 14 Problem 1b official composite rectangle',
+          { x: 275, y: 695, width: 350, height: 335 },
+          'Exact meter dimensions, orientation, and rectangular notch.'
+        )
+      ];
+      return [...figures, {
+        kind: 'equations',
+        lines: solved ? ['a. 19 square centimeters', 'b. 10 square meters'] : ['a. Area = ____ sq cm', 'b. Area = ____ sq m']
+      }];
+    }
+    if (number === 2) {
+      return [
+        m4SourceCrop(
+          '/source-pages/m4-teacher/page-180.png',
+          'Official 6-by-5 frame with interior rectangle',
+          'Lesson 14 Problem 2 official shaded frame figure',
+          { x: 105, y: 1115, width: 475, height: 365 },
+          'Exact outer and inner measurements determine the shaded area.'
+        ),
+        m4OpenResponse(problem, solved, ['Outer area 6 × 5 = 30; inner area 3 × 2 = 6; shaded area 30 − 6 = 24 square meters.'], 8)
+      ];
+    }
+    if (number === 3) {
+      return [solved
+        ? m4ModelCards([
+            { label: 'Original paper', rows: 6, columns: 8, answer: '6 × 8 = 48 square inches' },
+            { label: 'Square cutout', rows: 3, columns: 3, answer: '3 × 3 = 9 square inches' }
+          ], true)
+        : m4OpenResponse(problem, false, [], 10),
+      ...(solved ? [{ kind: 'equations' as const, lines: ['48 − 9 = 39 square inches'] }] : [])];
+    }
+    return [solved
+      ? m4ModelCards([
+          { label: 'Each original paper', rows: 6, columns: 9, answer: '6 × 9 = 54 square centimeters' },
+          { label: 'Tila’s cutout', rows: 3, columns: 4, answer: '3 × 4 = 12 square centimeters' },
+          { label: 'Evan’s cutout', rows: 2, columns: 6, answer: '2 × 6 = 12 square centimeters' }
+        ], true)
+      : m4OpenResponse(problem, false, [], 12),
+    ...(solved ? [{ kind: 'note' as const, text: 'Evan is correct. Both cutouts have area 12 square centimeters, so both have 42 square centimeters left.' }] : [])];
+  }
+
+  if (lessonNumber === 15) {
+    const floorPlan = m4SourceCrop(
+      '/source-pages/m4-teacher/page-193.png',
+      'Official Teacher Edition floor plan',
+      'Lesson 15 shared seven-room floor plan with the exact room topology',
+      { x: 78, y: 245, width: 1020, height: 1150 },
+      'The mathematical floor-plan illustration is retained without the surrounding worksheet page.'
+    );
+    if (number === 2) {
+      return [floorPlan, {
+        kind: 'data-table',
+        label: solved ? 'Completed room area/strategy table' : 'Official room area/strategy table',
+        columns: ['Room', 'Area', 'Strategy'],
+        rows: M4_LESSON15_ROOM_AREAS.map((room) => solved
+          ? [room.label, `${room.area} sq cm`, M4_LESSON15_ROOM_STRATEGIES[room.label]]
+          : [room.label, '____ sq cm', 'show a rectangle decomposition'])
+      }];
+    }
+    const lines = number === 1
+      ? ['The living room looks as if it has the biggest area; predictions may vary.']
+      : number === 3
+        ? ['The living room has the biggest area, 88 square centimeters; prediction checks will vary.']
+        : number === 4
+          ? ['Whole-house side lengths are 19 centimeters and 17 centimeters; use aligned room lengths to determine them.']
+          : ['The whole floor plan is 19 × 17 = 323 square centimeters.'];
+    return [floorPlan, m4OpenResponse(problem, solved, lines, number === 1 ? 6 : 8)];
+  }
+
+  if (lessonNumber === 16) {
+    return [{
+      kind: 'data-table',
+      label: 'Official room redesign table',
+      columns: ['Room', 'New Side Lengths'],
+      rows: M4_LESSON15_ROOM_AREAS.map((room) => [
+        `${room.label}: ${room.area} sq cm`,
+        '________________________________________________'
+      ])
+    }, {
+      kind: 'note',
+      text: solved
+        ? 'Teacher Edition answer: Answers will vary. Multiply the chosen side lengths for each rectangle and show that the part areas of every non-rectangular room add to its required area.'
+        : 'Record chosen side lengths and verify each required area. For non-rectangular rooms, record the side lengths and areas of the smaller rectangles, then show that their areas add to the required area.'
+    }];
+  }
+
+  return undefined;
 }
 
 function m4OfficialCompositeSourceSection(
@@ -621,8 +1674,15 @@ function m4VisualTitle(problem: ProblemSetCenteredProblem, solved: boolean): str
 function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
   const lessonNumber = Number(seed.title.match(/^Lesson\s+(\d+)/i)?.[1]);
   const teacherEditionBasis = m4TeacherSource(lessonNumber);
-  const sourcePageImages = teacherEditionLessonPages(teacherEditionBasis);
-  const answerKeyImages = teacherEditionAnswerKeyPages(seed.sourceNote);
+  const sourcePageImages = pageImages([
+    ...new Set(
+      Object.values(M4_PROBLEM_SOURCE_CROPS[lessonNumber] ?? {})
+        .flatMap((crops) => crops.map(([pdfPage]) => pdfPage))
+    )
+  ]);
+  const answerKeyImages = pageImages([
+    ...(M4_ANSWER_KEY_PDF_PAGES[lessonNumber] ?? [])
+  ]);
 
   return {
     title: `Lesson ${lessonNumber}: ${M4_TEACHER_OBJECTIVES[lessonNumber]}`,
@@ -636,11 +1696,19 @@ function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
     solvedSourcePageImages: [...sourcePageImages, ...answerKeyImages],
     conceptSections: m4FunctionalConceptSections(lessonNumber),
     problems: seed.problems.map((problemSeed) => {
+      const problemSourcePageImages = pageImages([
+        ...new Set(
+          (M4_PROBLEM_SOURCE_CROPS[lessonNumber]?.[problemSeed.number] ?? [])
+            .map(([pdfPage]) => pdfPage)
+        )
+      ]);
       const centeredProblem = makeProblem({
         ...problemSeed,
-        sourcePageImages: problemSeed.sourcePageImages ?? sourcePageImages,
-        blankSourcePageImages: problemSeed.blankSourcePageImages ?? sourcePageImages,
-        solvedSourcePageImages: problemSeed.solvedSourcePageImages ?? [...sourcePageImages, ...answerKeyImages]
+        sourcePageImages: problemSeed.sourcePageImages ?? problemSourcePageImages,
+        blankSourcePageImages: problemSeed.blankSourcePageImages ?? problemSourcePageImages,
+        solvedSourcePageImages:
+          problemSeed.solvedSourcePageImages
+            ?? [...problemSourcePageImages, ...answerKeyImages]
       });
 
       return {
@@ -810,7 +1878,7 @@ export const M4_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       { number: 1, sourcePrompt: 'The rectangles below have the same area. Move the parentheses to find the unknown side lengths. Then, solve.', solvedAnswer: 'a. 6, 48; 48. b. 48, 48; 48. c. 24; 2, 24; 48; 48. d. 12; 4, 12; 48; 48. e. 16, 3; 16, 3; 48; 48.', equations: ['8 x 6 = 48', '1 x 48 = 48', '2 x 24 = 48', '4 x 12 = 48', '16 x 3 = 48'], quotient: 48 },
       { number: 2, sourcePrompt: 'Does Problem 1 show all the possible whole number side lengths for a rectangle with an area of 48 square centimeters? How do you know?', solvedAnswer: 'Yes; answers will vary.', quotient: 48 },
       { number: 3, sourcePrompt: 'In Problem 1, what happens to the shape of the rectangle as the difference between the side lengths gets smaller?', solvedAnswer: 'Answers will vary.', quotient: 1 },
-      { number: 4, sourcePrompt: 'Find the area of the rectangle. Check Julius\'s 4 cm by 18 cm rectangle. Use the expression 8 x 9 to find different side lengths for a rectangle with the same area.', solvedAnswer: 'a. 72 sq cm. b. 8, 9; 72; 72; yes; answers will vary. c. Answers will vary.', equations: ['8 x 9 = 72', '4 x 18 = 72'], quotient: 72 }
+      { number: 4, sourcePrompt: 'a. Find the area of the rectangle below. b. Julius says a 4 cm by 18 cm rectangle has the same area as the rectangle in Part (a). Place parentheses in the equation to find the related fact and solve. Is Julius correct? Why or why not? c. Use the expression 8 x 9 to find different side lengths for a rectangle that has the same area as the rectangle in Part (a). Show your equations using parentheses. Then, estimate to draw the rectangle and label the side lengths.', solvedAnswer: 'a. 72 sq cm. b. 8, 9; 72; 72; yes; answers will vary. c. Answers will vary.', equations: ['8 x 9 = 72', '4 x 18 = 72'], quotient: 72 }
     ]
   }),
   12: makeLesson({
