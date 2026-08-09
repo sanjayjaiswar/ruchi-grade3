@@ -84,98 +84,6 @@ const WORKBOOK_PAGE_IMAGES: Record<number, string[]> = {
   21: ['lesson-21-page-91.png', 'lesson-21-page-92.png']
 };
 
-type M3ProblemSourceCrop = readonly [
-  pageIndex: number,
-  x: number,
-  y: number,
-  width: number,
-  height: number
-];
-
-// Reviewed against the Module 3 Teacher Edition Problem Set pages at 1,275 × 1,650.
-// These bounds exclude page chrome while retaining the complete printed task and workspace.
-const M3_PROBLEM_SOURCE_CROPS: Record<number, Record<number, readonly M3ProblemSourceCrop[]>> = {
-  1: {
-    1: [[0, 65, 236, 1145, 970]], 2: [[0, 65, 1196, 1145, 274]], 3: [[1, 65, 181, 1145, 1289]]
-  },
-  2: {
-    1: [[0, 65, 236, 1145, 1234]], 2: [[1, 65, 181, 1145, 1289]],
-    3: [[2, 65, 181, 1145, 450]], 4: [[2, 65, 621, 1145, 449]], 5: [[2, 65, 1060, 1145, 410]]
-  },
-  3: {
-    1: [[0, 65, 235, 1145, 1235]], 2: [[1, 65, 181, 1145, 1289]],
-    3: [[2, 65, 181, 1145, 620]], 4: [[2, 65, 791, 1145, 679]]
-  },
-  4: {
-    1: [[0, 65, 236, 1145, 1234]], 2: [[1, 65, 193, 508, 561]], 3: [[1, 580, 193, 630, 561]],
-    4: [[1, 65, 744, 1145, 485]], 5: [[1, 65, 1219, 1145, 251]]
-  },
-  5: {
-    1: [[0, 65, 236, 1145, 1234]], 2: [[1, 65, 181, 1145, 561]],
-    3: [[1, 65, 732, 1145, 357]], 4: [[1, 65, 1079, 1145, 391]]
-  },
-  6: {
-    1: [[0, 65, 236, 1145, 1234]], 2: [[1, 65, 193, 520, 538]], 3: [[1, 590, 193, 620, 538]],
-    4: [[1, 65, 721, 1145, 419]], 5: [[1, 65, 1130, 1145, 340]]
-  },
-  7: {
-    1: [[0, 65, 236, 1145, 884]], 2: [[0, 65, 1110, 1145, 360]], 3: [[1, 65, 181, 1145, 1289]]
-  },
-  8: {
-    1: [[0, 65, 236, 1145, 641]], 2: [[0, 65, 867, 1145, 603]],
-    3: [[1, 65, 181, 1145, 433]], 4: [[1, 65, 604, 1145, 472]], 5: [[1, 65, 1066, 1145, 404]]
-  },
-  9: {
-    1: [[0, 65, 235, 1145, 1235]], 2: [[1, 65, 181, 1145, 900]], 3: [[1, 65, 1086, 1145, 384]]
-  },
-  10: {
-    1: [[0, 65, 236, 1145, 695]], 2: [[0, 65, 921, 560, 549]], 3: [[0, 615, 921, 595, 549]],
-    4: [[1, 65, 181, 1145, 463]], 5: [[1, 65, 634, 1145, 836]], 6: [[2, 65, 181, 1145, 1289]]
-  },
-  11: {
-    1: [[0, 65, 236, 1145, 436]], 2: [[0, 65, 662, 1145, 458]], 3: [[0, 65, 1110, 1145, 360]],
-    4: [[1, 65, 181, 1145, 458]], 5: [[1, 65, 629, 1145, 457]], 6: [[1, 65, 1076, 1145, 394]]
-  },
-  12: {
-    1: [[0, 65, 236, 1145, 1234]], 2: [[1, 65, 181, 1145, 774]],
-    3: [[1, 65, 945, 1145, 525]], 4: [[2, 65, 182, 1145, 1288]]
-  },
-  13: {
-    1: [[0, 65, 236, 1145, 376]], 2: [[0, 65, 602, 1145, 868]],
-    3: [[1, 65, 181, 1145, 1289]], 4: [[2, 65, 181, 1145, 1289]]
-  },
-  14: {
-    1: [[0, 65, 236, 1145, 1234]], 2: [[1, 65, 181, 1145, 392]],
-    3: [[1, 65, 563, 1145, 420]], 4: [[1, 65, 973, 1145, 497]]
-  },
-  15: {
-    1: [[0, 65, 284, 1145, 352]], 2: [[0, 65, 626, 1145, 487]], 3: [[0, 65, 1103, 1145, 367]],
-    4: [[1, 65, 181, 1145, 405]], 5: [[1, 65, 576, 1145, 452]], 6: [[1, 65, 1018, 1145, 452]]
-  },
-  16: {
-    1: [[0, 65, 244, 1145, 244]], 2: [[0, 65, 478, 1145, 551]], 3: [[0, 65, 1019, 1145, 451]],
-    4: [[1, 65, 181, 1145, 548]], 5: [[1, 65, 719, 1145, 751]]
-  },
-  17: {
-    1: [[0, 65, 236, 1145, 1234]], 2: [[1, 65, 125, 1145, 1360], [2, 65, 125, 1145, 1360]]
-  },
-  18: {
-    1: [[0, 65, 289, 1145, 555]], 2: [[0, 65, 834, 1145, 636]],
-    3: [[1, 65, 181, 1145, 453]], 4: [[1, 65, 624, 1145, 435]], 5: [[1, 65, 1049, 1145, 421]]
-  },
-  19: {
-    1: [[0, 65, 236, 1145, 396]], 2: [[0, 65, 622, 1145, 848], [1, 65, 125, 1145, 432]],
-    3: [[1, 65, 552, 1145, 521]], 4: [[1, 65, 1063, 1145, 407]]
-  },
-  20: {
-    1: [[0, 65, 236, 1145, 1234]], 2: [[1, 65, 181, 1145, 908]], 3: [[1, 65, 1079, 1145, 391]]
-  },
-  21: {
-    1: [[0, 65, 289, 1145, 395]], 2: [[0, 65, 674, 1145, 395]], 3: [[0, 65, 1059, 1145, 411]],
-    4: [[1, 65, 181, 1145, 397]], 5: [[1, 65, 568, 1145, 497]], 6: [[1, 65, 1055, 1145, 415]]
-  }
-};
-
 const ANSWER_KEY_PAGE_IMAGES: Record<number, string[]> = {
   1: answerKeyPageImages(281, 282),
   2: answerKeyPageImages(283, 284),
@@ -1179,35 +1087,6 @@ function quotientFromAnswer(answer: string): number {
   return firstNumber ? Number(firstNumber[0]) : 1;
 }
 
-function withM3TeacherEditionTaskFirst(
-  visual: ProblemVisualSpec,
-  lessonNumber: number,
-  problemNumber: number
-): ProblemVisualSpec {
-  const cropDefinitions = M3_PROBLEM_SOURCE_CROPS[lessonNumber]?.[problemNumber] ?? [];
-  const pageImages = WORKBOOK_PAGE_IMAGES[lessonNumber] ?? [];
-  if (!cropDefinitions.length) {
-    throw new Error(`Missing Teacher Edition source crop for Module 3 Lesson ${lessonNumber} Problem ${problemNumber}.`);
-  }
-  const sourceFirst: ProblemVisualSection = {
-    kind: 'source-first-workspace',
-    label: 'Teacher Edition task',
-    pages: cropDefinitions.map(([pageIndex, x, y, width, height], cropIndex) => ({
-      kind: 'source-crop',
-      src: `/source-pages/m3/${pageImages[pageIndex]}`,
-      alt: `Module 3 Lesson ${lessonNumber} Problem ${problemNumber} official Teacher Edition task${cropDefinitions.length > 1 ? `, part ${cropIndex + 1}` : ''}`,
-      imageWidth: 1275,
-      imageHeight: 1650,
-      crop: { x, y, width, height },
-      caption: cropDefinitions.length > 1 ? `Official task, part ${cropIndex + 1} of ${cropDefinitions.length}` : undefined
-    }))
-  };
-  return {
-    ...visual,
-    sections: [sourceFirst, ...visual.sections]
-  };
-}
-
 function createM3ProblemVisual(problem: ProblemSetCenteredProblem, solved: boolean, lessonNumber: number): ProblemVisualSpec {
   const lessonOneVisual = createM3Lesson1ProblemVisual(problem, solved, lessonNumber);
   if (lessonOneVisual) {
@@ -1217,6 +1096,16 @@ function createM3ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
   const acceleratedBatchVisual = createM3Lessons2Through5ProblemVisual(problem, solved, lessonNumber);
   if (acceleratedBatchVisual) {
     return acceleratedBatchVisual;
+  }
+
+  if (lessonNumber >= 6 && lessonNumber <= 21) {
+    return {
+      title: `Problem ${problem.number}: ${m3VisualTitle(problem, solved)}`,
+      sourceNote: solved
+        ? 'Solved view uses the Module 3 Teacher Edition Answer Key and preserves the source task structure.'
+        : 'Blank view preserves the official student Problem Set structure without answer leakage.',
+      sections: [makeM3PrimaryModel(problem, solved, lessonNumber)]
+    };
   }
 
   const sections: ProblemVisualSpec['sections'] = [];
@@ -1268,6 +1157,143 @@ function createM3ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
   };
 }
 
+function inlineAnswers(blankText: string, solvedText: string): string[] | undefined {
+  const parts = blankText.split(/_{2,}/g);
+  if (parts.length < 2 || solvedText.includes('____')) {
+    return undefined;
+  }
+  const escapedParts = parts.map((part) => part
+    .replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    .replace(/\s+/g, '\\s*'));
+  const match = solvedText.match(new RegExp(`^${escapedParts.join('(.+?)')}$`, 'i'));
+  if (!match) {
+    if (parts.length === 2 && /^[$¢]?\s*-?[\w.]+(?:\s+(?:cm|g|kg|ml|l|minutes?|seconds?))?$/i.test(solvedText.trim())) {
+      return [solvedText.trim()];
+    }
+    return undefined;
+  }
+  const answers = match.slice(1).map((value) => value.trim());
+  return answers.every(Boolean) ? answers : undefined;
+}
+
+function attachSectionAnswers(blank: ProblemVisualSection, solved: ProblemVisualSection): void {
+  if (blank.kind !== solved.kind) {
+    return;
+  }
+  if (blank.kind === 'card-grid' && solved.kind === 'card-grid') {
+    blank.cards.forEach((card, cardIndex) => {
+      const solvedCard = solved.cards[cardIndex];
+      card.labelAnswers = inlineAnswers(card.label, solvedCard?.label ?? '') ?? [];
+      card.sections.forEach((section, sectionIndex) => {
+        const solvedSection = solvedCard?.sections[sectionIndex];
+        if (solvedSection) {
+          attachSectionAnswers(section, solvedSection);
+        }
+      });
+    });
+    return;
+  }
+  if (blank.kind === 'equations' && solved.kind === 'equations') {
+    blank.lineAnswers = blank.lines.map((line, index) => inlineAnswers(line, solved.lines[index] ?? '') ?? blank.lineAnswers?.[index] ?? []);
+    return;
+  }
+  if (blank.kind === 'array' && solved.kind === 'array') {
+    blank.labelAnswers = inlineAnswers(blank.label ?? '', solved.label ?? '') ?? [];
+    blank.captionAnswers = inlineAnswers(blank.caption ?? '', solved.caption ?? '') ?? [];
+    return;
+  }
+  if (blank.kind === 'geometry-diagram' && solved.kind === 'geometry-diagram') {
+    blank.shapeAnswers = blank.shapes.map((shape, index) =>
+      inlineAnswers(shape.label, solved.shapes[index]?.label ?? '') ?? []
+    );
+    blank.captionAnswers = inlineAnswers(blank.caption ?? '', solved.caption ?? '') ?? [];
+    return;
+  }
+  if (blank.kind === 'tape' && solved.kind === 'tape') {
+    blank.partAnswers = blank.parts.map((part, index) =>
+      inlineAnswers(part.label, solved.parts[index]?.label ?? '') ?? []
+    );
+    blank.braceAnswers = (blank.braces ?? []).map((brace, index) =>
+      inlineAnswers(brace.boxLabel || brace.label, solved.braces?.[index]?.boxLabel || solved.braces?.[index]?.label || '') ?? []
+    );
+    blank.equationAnswers = (blank.equations ?? []).map((line, index) =>
+      inlineAnswers(line, solved.equations?.[index] ?? '') ?? []
+    );
+    blank.captionAnswers = inlineAnswers(blank.caption ?? '', solved.caption ?? '') ?? [];
+    return;
+  }
+  if (blank.kind === 'data-table' && solved.kind === 'data-table') {
+    blank.cellAnswers = blank.rows.map((row, rowIndex) => row.map((cell, cellIndex) =>
+      inlineAnswers(cell, solved.rows[rowIndex]?.[cellIndex] ?? '') ?? blank.cellAnswers?.[rowIndex]?.[cellIndex] ?? []
+    ));
+    return;
+  }
+  if (blank.kind === 'source-response-workspace' && solved.kind === 'source-response-workspace') {
+    blank.parts.forEach((part, partIndex) => {
+      part.lineAnswers = part.lines.map((line, lineIndex) =>
+        inlineAnswers(line, solved.parts[partIndex]?.lines[lineIndex] ?? '') ?? part.lineAnswers?.[lineIndex] ?? []
+      );
+      part.interactiveLines = part.interactiveLines || part.lineAnswers.some((answers) => answers.length > 0);
+      part.sketchWorkspace = part.sketchWorkspace ?? Boolean(
+        part.openWorkspace && /\b(draw|picture|model|diagram|rdw|show (?:your|the) work)\b/i.test(part.prompt)
+      );
+    });
+    return;
+  }
+  if (blank.kind === 'unit-form-workspace' && solved.kind === 'unit-form-workspace') {
+    blank.parts.forEach((part, partIndex) => {
+      part.lineAnswers = part.lines.map((line, lineIndex) =>
+        inlineAnswers(line, solved.parts[partIndex]?.lines[lineIndex] ?? '') ?? part.lineAnswers?.[lineIndex] ?? []
+      );
+    });
+    return;
+  }
+  if (blank.kind === 'unknown-riddle-workspace' && solved.kind === 'unknown-riddle-workspace') {
+    blank.entries.forEach((entry, index) => entry.expectedAnswer = solved.entries[index]?.answer);
+    blank.decoder.expectedLetters = solved.decoder.letters;
+    return;
+  }
+  if (blank.kind === 'solution-parts' && solved.kind === 'solution-parts') {
+    blank.parts.forEach((part, index) => {
+      const solvedPart = solved.parts[index];
+      part.promptAnswers = inlineAnswers(part.prompt, solvedPart?.prompt ?? '') ?? [];
+      part.equationAnswers = inlineAnswers(part.equation, solvedPart?.equation ?? '')
+        ?? inlineAnswers(part.equation, solvedPart?.answer ?? '')
+        ?? (part.equation.match(/_{2,}/g)?.length === 1
+          ? [solvedPart?.answer.match(/(?:product|answer)\s*:?\s*([^;,.]+)$/i)?.[1]?.trim() ?? '']
+          : undefined)
+        ?? part.equationAnswers
+        ?? [];
+    });
+    return;
+  }
+  if (blank.kind === 'expression-match' && solved.kind === 'expression-match') {
+    blank.topItemAnswers = blank.topItems.map((item, index) => inlineAnswers(item, solved.topItems[index] ?? '') ?? blank.topItemAnswers?.[index] ?? []);
+    blank.bottomItemAnswers = blank.bottomItems.map((item, index) => inlineAnswers(item, solved.bottomItems[index] ?? '') ?? blank.bottomItemAnswers?.[index] ?? []);
+    return;
+  }
+  if (blank.kind === 'number-bond' && solved.kind === 'number-bond' && blank.equations?.length) {
+    blank.partAnswers = blank.parts.map((part, index) =>
+      inlineAnswers(part.label, solved.parts[index]?.label ?? '') ?? []
+    );
+    blank.equationAnswers = blank.equations.map((line, index) => inlineAnswers(line, solved.equations?.[index] ?? '') ?? blank.equationAnswers?.[index] ?? []);
+    return;
+  }
+  if (blank.kind === 'note' && solved.kind === 'note') {
+    blank.textAnswers = inlineAnswers(blank.text, solved.text) ?? [];
+  }
+}
+
+function attachVisualAnswers(blank: ProblemVisualSpec, solved: ProblemVisualSpec): ProblemVisualSpec {
+  blank.sections.forEach((section, index) => {
+    const solvedSection = solved.sections[index];
+    if (solvedSection) {
+      attachSectionAnswers(section, solvedSection);
+    }
+  });
+  return blank;
+}
+
 function createM3Lessons2Through5ProblemVisual(
   problem: ProblemSetCenteredProblem,
   solved: boolean,
@@ -1286,6 +1312,7 @@ function createM3Lessons2Through5ProblemVisual(
           (problem.number === 1 || problem.number === 2 || problem.number === 3) &&
           sections[0]?.kind === 'unit-form-workspace'
         ) ||
+        (problem.number === 4 && sections[0]?.kind === 'source-response-workspace') ||
         (problem.number === 5 && sections[0]?.kind === 'card-grid')
       )
     ) ||
@@ -1295,6 +1322,17 @@ function createM3Lessons2Through5ProblemVisual(
         sections[0]?.kind === 'unknown-riddle-workspace' ||
         sections[0]?.kind === 'source-response-workspace'
       )
+    ) ||
+    (
+      lessonNumber === 4 &&
+      [
+        'expression-match',
+        'source-response-workspace'
+      ].includes(sections[0]?.kind)
+    ) ||
+    (
+      lessonNumber === 5 &&
+      ['expression-match', 'source-response-workspace'].includes(sections[0]?.kind)
     );
   const equationLines = solved
     ? problem.equations ?? []
@@ -1364,25 +1402,22 @@ function createM3Lesson1ProblemVisual(
             ? '100 multiplication facts: known facts and commutative partners are shaded'
             : 'Solve and shade the multiplication chart',
           columns: ['×', ...factors.map(String)],
+          selectableCells: true,
           rows: factors.map((rowFactor) => [
             String(rowFactor),
             ...factors.map((columnFactor) => solved
               ? String(rowFactor * columnFactor)
-              : sourceGivens.get(`${rowFactor}-${columnFactor}`) ?? '')
+              : sourceGivens.get(`${rowFactor}-${columnFactor}`) ?? '____')
           ])
         },
         {
           kind: 'data-table',
           label: 'Each bag contains 7 apples',
-          columns: ['Number of bags', '2', solved ? '3' : '', '4', '5', solved ? '6' : ''],
-          rows: [[
-            'Total apples',
-            solved ? '14' : '',
-            '21',
-            solved ? '28' : '',
-            solved ? '35' : '',
-            '42'
-          ]]
+          columns: ['', '', '', '', '', ''],
+          rows: [
+            ['Number of bags', '2', solved ? '3' : '____', '4', '5', solved ? '6' : '____'],
+            ['Total apples', solved ? '14' : '____', '21', solved ? '28' : '____', solved ? '35' : '____', '42']
+          ]
         },
         {
           kind: 'note',
@@ -1545,9 +1580,15 @@ function makeM3PrimaryModel(problem: ProblemSetCenteredProblem, solved: boolean,
 
   if (lessonNumber === 2 && /32 crayons/i.test(problem.sourcePrompt) && !solved) {
     return {
-      kind: 'note',
+      kind: 'source-response-workspace',
       label: 'Read, draw, write',
-      text: 'Draw equal packs of 8 crayons until the total is 32. Then write a multiplication or division sentence and answer with the number of packs.'
+      parts: [{
+        prompt: 'Draw equal packs of 8 crayons until the total is 32. Then write a multiplication or division sentence and answer with the number of packs.',
+        lines: [],
+        printedLineCount: 7,
+        openWorkspace: true,
+        sketchWorkspace: true
+      }]
     };
   }
 
@@ -1629,6 +1670,7 @@ function makeM3Lesson1FactChart(solved: boolean): ProblemVisualSection {
         sections: [{
           kind: 'data-table',
           columns: ['x', ...factors.map(String)],
+          selectableCells: true,
           rows: factors.map((rowFactor) => [
             String(rowFactor),
             ...factors.map((columnFactor) => solved ? String(rowFactor * columnFactor) : '____')
@@ -1908,99 +1950,166 @@ function makeM3TableTennisModel(solved: boolean): ProblemVisualSection {
 function makeM3Lesson4Primary(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSection {
   const number = Number(problem.number);
   if (number === 1) {
-    return makeM3CountByMatch(6, solved, false, 'sunburst number cards', [9, 6, 4, 7, 2, 1, 3, 10, 5, 8], [2, 4, 7, 9]);
+    const totals = ['6', '12', '18', '24', '30', '36', '42', '48', '54', '60'];
+    const factors = [9, 6, 4, 7, 2, 1, 3, 10, 5, 8];
+    return {
+      kind: 'expression-match',
+      label: solved ? 'Completed count-by-six match' : 'Count by six and match the facts',
+      prompt: 'Skip-count by six to fill in the blanks. Match each number in the count-by with its multiplication fact.',
+      topItems: solved ? totals : ['6', '____', '18', '____', '30', '36', '____', '48', '____', '60'],
+      topAnswers: totals,
+      bottomItems: factors.map((factor) => `${factor} × 6`),
+      orientation: 'columns',
+      topShape: 'sunburst',
+      bottomShape: 'flag',
+      matches: factors.map((factor, bottomIndex) => ({ topIndex: factor - 1, bottomIndex })),
+      interactive: true,
+      showMatches: solved,
+      answerEvidence: solved
+        ? '12, 24, 42, 54; each number matched to its corresponding multiplication fact.'
+        : undefined
+    };
   }
   if (number === 2) {
-    return makeM3CountBySequence(6, 4, solved, [1]);
+    return {
+      kind: 'source-response-workspace',
+      label: solved ? 'Completed four-count sequence' : 'Complete the four-count sequence',
+      wide: true,
+      answerEvidence: solved ? '12, 18, 24; 4, 24; 24, 4.' : undefined,
+      parts: [
+        { prompt: 'Count by six to fill in the blanks below.', lines: [solved ? '6, 12, 18, 24' : '6, ____, ____, ____'], printedLineCount: 1, interactiveLines: !solved },
+        { prompt: 'Complete the multiplication equation that represents the final number in your count-by.', lines: [solved ? '6 × 4 = 24' : '6 × ____ = ____'], printedLineCount: 1, interactiveLines: !solved },
+        { prompt: 'Complete the division equation that represents your count-by.', lines: [solved ? '24 ÷ 6 = 4' : '____ ÷ 6 = ____'], printedLineCount: 1, interactiveLines: !solved }
+      ]
+    };
   }
   if (number === 3) {
-    return makeM3CountBySequence(6, 7, solved, [1]);
+    return {
+      kind: 'source-response-workspace',
+      label: solved ? 'Completed seven-count sequence' : 'Complete the seven-count sequence',
+      wide: true,
+      answerEvidence: solved ? '12, 18, 24, 30, 36, 42; 7, 42; 42, 7.' : undefined,
+      parts: [
+        { prompt: 'Count by six to fill in the blanks below.', lines: [solved ? '6, 12, 18, 24, 30, 36, 42' : '6, ____, ____, ____, ____, ____, ____'], printedLineCount: 1, interactiveLines: !solved },
+        { prompt: 'Complete the multiplication equation that represents the final number in your count-by.', lines: [solved ? '6 × 7 = 42' : '6 × ____ = ____'], printedLineCount: 1, interactiveLines: !solved },
+        { prompt: 'Complete the division equation that represents your count-by.', lines: [solved ? '42 ÷ 6 = 7' : '____ ÷ 6 = ____'], printedLineCount: 1, interactiveLines: !solved }
+      ]
+    };
   }
   if (number === 4) {
-    const solvedSegments = [
-      ['1', 'up', '0, 6, 12, 18, 24'],
-      ['2', 'down', '18, 12'],
-      ['3', 'up', '18, 24, 30, 36'],
-      ['4', 'down', '30, 24, 18'],
-      ['5', 'up', '24, 30, 36, 42, 48']
-    ];
-    const blankSegments = [
-      ['1', 'up', '0, 6, ____, 18, ____'],
-      ['2', 'down', '____, 12'],
-      ['3', 'up', '____, 24, 30, ____'],
-      ['4', 'down', '30, 24, ____'],
-      ['5', 'up', '24, ____, 36, ____, 48']
-    ];
     return {
-      kind: 'card-grid',
-      label: solved ? 'Solved direction-changing count by six' : 'Follow each arrow and keep counting by six',
-      cards: (solved ? solvedSegments : blankSegments).map(([segment, direction, count]) => ({
-        label: `Segment ${segment}: count ${direction}`,
-        sections: [
-          { kind: 'equations', lines: [count] },
-          { kind: 'note', text: direction === 'up' ? 'Add 6 at each step.' : 'Subtract 6 at each step.' }
-        ]
-      }))
+      kind: 'source-response-workspace',
+      label: solved ? 'Completed direction-changing count' : 'Follow the arrows and count by six',
+      wide: true,
+      answerEvidence: solved ? 'a. 12, 24, 18, 18, 36, 18, 30, 42. b. 8; 8.' : undefined,
+      parts: [
+        {
+          prompt: 'Mrs. Byrne’s class skip-counts by six for a group counting activity. When she points up, they count up by six, and when she points down, they count down by six. The arrows show when she changes direction. a. Fill in the blanks below to show the group counting answers.',
+          lines: [solved
+            ? '↑ 0, 6, 12, 18, 24  ↓ 18, 12  ↑ 18, 24, 30, 36  ↓ 30, 24, 18  ↑ 24, 30, 36, 42, 48'
+            : '↑ 0, 6, ____, 18, ____  ↓ ____, 12  ↑ ____, 24, 30, ____  ↓ 30, 24, ____  ↑ 24, ____, 36, ____, 48'],
+          printedLineCount: 1,
+          interactiveLines: !solved
+        },
+        { prompt: 'b. Mrs. Byrne says the last number that the class counts is the product of 6 and another number. Write a multiplication sentence and a division sentence to show she’s right.', lines: [solved ? '6 × 8 = 48' : '6 × ____ = 48', solved ? '48 ÷ 6 = 8' : '48 ÷ 6 = ____'], printedLineCount: 2, interactiveLines: !solved }
+      ]
     };
   }
   return {
-    kind: 'card-grid',
-    label: solved ? 'Julie stopped one six too soon' : 'Check Julie’s count-by-six claim',
-    cards: [
-      {
-        label: 'Julie’s stopping point',
-        sections: [{ kind: 'equations', lines: ['6 x 6 = 36'] }, { kind: 'note', text: 'Julie counted only 6 groups of 6.' }]
-      },
-      {
-        label: 'The requested fact',
-        sections: [{ kind: 'equations', lines: [solved ? '6 x 7 = 42' : '6 x 7 = ____'] }, { kind: 'note', text: 'The problem asks for 7 groups of 6.' }]
-      },
-      {
-        label: solved ? 'Verdict: Julie is not right' : 'Compare and decide',
-        sections: [{ kind: 'note', text: solved ? 'Add one more group of 6: 36 + 6 = 42.' : 'Is 36 the seventh number in the count-by-six sequence? Explain.' }]
-      }
-    ]
+    kind: 'source-response-workspace',
+    label: solved ? 'One source-supported explanation' : 'Explain your reasoning',
+    wide: true,
+    answerEvidence: solved ? 'No; explanations will vary.' : undefined,
+    parts: [{
+      prompt: 'Julie counts by six to solve 6 × 7. She says the answer is 36. Is she right? Explain your answer.',
+      lines: [],
+      printedLineCount: 0,
+      openWorkspace: true,
+      responsePlaceholder: 'Write your answer and explain your reasoning.',
+      response: solved ? 'No. Julie stopped at 6 groups of 6. One more group of 6 makes 42, so 6 × 7 = 42.' : undefined
+    }]
   };
 }
 
 function makeM3Lesson5Primary(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSection {
   const number = Number(problem.number);
   if (number === 1) {
-    return makeM3CountByMatch(7, solved, true, 'fish bowls and fish facts', [6, 3, 8, 7, 1, 10, 9, 4, 2, 5], [2, 4, 5, 8, 9, 10]);
+    const totals = ['7', '14', '21', '28', '35', '42', '49', '56', '63', '70'];
+    const factors = [6, 3, 8, 7, 1, 10, 9, 4, 2, 5];
+    return {
+      kind: 'expression-match',
+      label: solved ? 'Completed fish-bowl matches and related facts' : 'Fill, match, and complete each related fact',
+      prompt: 'Skip-count by seven to fill in the blanks in the fish bowls. Match each count-by to its multiplication expression. Then, use the multiplication expression to write the related division fact directly to the right.',
+      topItems: solved ? totals : ['7', '____', '21', '____', '____', '42', '49', '____', '____', '____'],
+      topAnswers: totals,
+      bottomItems: factors.map((factor) => `7 × ${factor}`),
+      rightItems: factors.map((factor) => solved ? `${factor * 7} ÷ 7 = ${factor}` : '____ ÷ 7 = ____'),
+      rightAnswers: factors.map((factor) => [String(factor * 7), String(factor)]),
+      rightLabel: 'Related division facts',
+      orientation: 'columns',
+      topShape: 'fish-bowl',
+      bottomShape: 'fish',
+      matches: factors.map((factor, bottomIndex) => ({ topIndex: factor - 1, bottomIndex })),
+      interactive: true,
+      showMatches: solved,
+      answerEvidence: solved
+        ? '14, 28, 35, 56, 63, 70. 42, 6; 21, 3; 56, 8; 49, 7; 7, 1; 70, 10; 63, 9; 28, 4; 14, 2; 35, 5.'
+        : undefined
+    };
   }
   if (number === 2) {
-    return makeM3CountBySequence(7, 10, solved, [1, 2, 4, 6, 9]);
+    const missingGroups = [3, 5, 7, 8, 10];
+    return {
+      kind: 'source-response-workspace',
+      label: solved ? 'Completed count-by-seven sequence and fact pairs' : 'Complete the sequence and its five fact pairs',
+      wide: true,
+      answerEvidence: solved ? '21, 35, 49, 56, 70. a. 3, 21; 21, 3. b. 5, 35; 35, 5. c. 7, 49; 49, 7. d. 8, 56; 56, 8. e. 10, 70; 70, 10.' : undefined,
+      parts: [
+        {
+          prompt: 'Complete the count-by seven sequence below. Then, write a multiplication equation and a division equation to represent each blank you filled in.',
+          lines: [solved ? '7, 14, 21, 28, 35, 42, 49, 56, 63, 70' : '7, 14, ____, 28, ____, 42, ____, ____, 63, ____'],
+          printedLineCount: 1,
+          interactiveLines: !solved
+        },
+        ...missingGroups.map((group, index) => ({
+          lead: `${String.fromCharCode(97 + index)}.`,
+          prompt: '',
+          lines: [solved ? `${group} × 7 = ${group * 7}        ${group * 7} ÷ 7 = ${group}` : '____ × 7 = ____        ____ ÷ 7 = ____'],
+          printedLineCount: 2,
+          interactiveLines: !solved
+        }))
+      ]
+    };
   }
   if (number === 3) {
     return {
-      kind: 'number-bond',
-      label: solved ? 'Solved make-ten number bond' : 'Break the next seven to make 20',
-      whole: '7',
-      parts: [
-        { label: solved ? '6' : '____', sublabel: 'part needed to reach 20' },
-        { label: solved ? '1' : '____', sublabel: 'part left over' }
-      ],
-      equations: solved ? ['14 + 7 = 14 + 6 + 1', '14 + 6 = 20', '20 + 1 = 21'] : ['14 + 7 = 14 + ____ + ____', '14 + ____ = 20', '20 + ____ = ____'],
-      caption: solved ? 'Abe adds 6 to reach 20, then adds the remaining 1.' : 'Choose the two parts of 7 that reach the next ten, then finish the count.'
+      kind: 'source-response-workspace',
+      label: solved ? 'One source-supported explanation' : 'Explain Abe’s decomposition',
+      wide: true,
+      answerEvidence: solved ? 'Explanations will vary.' : undefined,
+      parts: [{
+        prompt: 'Abe says 3 × 7 = 21 because 1 seven is 7, 2 sevens are 14, and 3 sevens are 14 + 6 + 1, which equals 21. Why did Abe add 6 and 1 to 14 when he is counting by seven?',
+        lines: [],
+        printedLineCount: 0,
+        openWorkspace: true,
+        responsePlaceholder: 'Explain why Abe decomposed the next seven into 6 and 1.',
+        response: solved ? 'Abe decomposed 7 into 6 and 1. Adding 6 to 14 makes the friendly ten 20, and then adding the remaining 1 makes 21.' : undefined
+      }]
     };
   }
   return {
-    kind: 'card-grid',
-    label: solved ? 'Both count-by strategies reach 42' : 'Compare Molly’s and James’s arrays',
-    cards: [
-      {
-        label: 'Molly: count by 7 six times',
-        sections: [{ kind: 'array', rows: 6, columns: 7, item: 'dot', caption: solved ? '6 x 7 = 42' : '6 groups of 7 = ____' }]
-      },
-      {
-        label: 'James: count by 6 seven times',
-        sections: [{ kind: 'array', rows: 7, columns: 6, item: 'circle', caption: solved ? '7 x 6 = 42' : '7 groups of 6 = ____' }]
-      },
-      {
-        label: 'Commutative check',
-        sections: [{ kind: 'equations', lines: solved ? ['7 x 6 = 6 x 7', '42 = 42', 'Both are correct.'] : ['7 x 6 = ____', '6 x 7 = ____', 'Who is correct? ____'] }]
-      }
-    ]
+    kind: 'source-response-workspace',
+    label: solved ? 'One source-supported explanation' : 'Decide who is right and explain',
+    wide: true,
+    answerEvidence: solved ? 'Both are correct; explanations will vary.' : undefined,
+    parts: [{
+      prompt: 'Molly says she can count by seven 6 times to solve 7 × 6. James says he can count by six 7 times to solve this problem. Who is right? Explain your answer.',
+      lines: [],
+      printedLineCount: 0,
+      openWorkspace: true,
+      responsePlaceholder: 'State who is right and explain your reasoning.',
+      response: solved ? 'Both are correct. Molly counts 6 groups of 7, and James counts 7 groups of 6. Both products are 42 because multiplication is commutative.' : undefined
+    }]
   };
 }
 
@@ -2081,6 +2190,19 @@ function makeM3Lesson6Primary(problem: ProblemSetCenteredProblem, solved: boolea
       ]
     };
   }
+  if (!solved) {
+    return {
+      kind: 'source-response-workspace',
+      label: 'Show one possible number-bond strategy',
+      parts: [{
+        prompt: 'Kelly solves 42 divided by 7 by using a number bond to break apart 42 into two parts. Show what her work might look like below.',
+        lines: [],
+        printedLineCount: 8,
+        openWorkspace: true,
+        responsePlaceholder: 'Draw or describe a number bond whose two parts are divisible by 7.'
+      }]
+    };
+  }
   return makeM3DivisionBond(42, 7, 35, 7, solved, 'One valid number bond; other divisible-by-7 bonds also work');
 }
 
@@ -2106,8 +2228,9 @@ function makeM3Lesson7Primary(problem: ProblemSetCenteredProblem, solved: boolea
       orientation: 'columns',
       topShape: 'caterpillar',
       bottomShape: 'leaf',
+      interactive: true,
       showMatches: solved,
-      matches: solved ? [1, 3, 2, 5, 4, 0].map((bottomIndex, topIndex) => ({ topIndex, bottomIndex, label: 'same unknown location' })) : undefined,
+      matches: [1, 3, 2, 5, 4, 0].map((bottomIndex, topIndex) => ({ topIndex, bottomIndex, label: 'same unknown location' })),
       note: solved ? 'Each match keeps the known quantities and the unknown in the same position.' : 'Read “a number” as n. Match without solving the value of n.'
     };
   }
@@ -2228,8 +2351,10 @@ function makeM3Lesson8Primary(problem: ProblemSetCenteredProblem, solved: boolea
         kind: 'source-response-workspace',
         label: 'Explain how both answers can be true',
         parts: [{
-          prompt: 'The teacher writes 24 divided by 4 + 2 = ____ on the board. Chad says it equals 8. Samir says it equals 4. Explain how placing the parentheses in the equation can make both answers true.',
-          lines: [],
+          prompt: 'The teacher writes 24 divided by 4 + 2 on the board. Chad says it equals 8. Samir says it equals 4. Explain how placing the parentheses in the equation can make both answers true.',
+          lines: ['Chad: (24 divided by 4) + 2 = ____', 'Samir: 24 divided by (4 + 2) = ____'],
+          lineAnswers: [['8'], ['4']],
+          interactiveLines: true,
           printedLineCount: 7,
           openWorkspace: true
         }]
@@ -2248,6 +2373,8 @@ function makeM3Lesson8Primary(problem: ProblemSetCenteredProblem, solved: boolea
         parts: [{
           prompt: 'Natasha solves the equation below by finding the sum of 5 and 12.',
           lines: ['12 + 15 divided by 3 = __________'],
+          lineAnswers: [['17']],
+          interactiveLines: true,
           printedLineCount: 5,
           openWorkspace: true
         }]
@@ -2324,6 +2451,7 @@ function makeM3Lesson9Primary(problem: ProblemSetCenteredProblem, solved: boolea
       topItems: chains.map(([item, source, factored, regrouped]) =>
         solved ? `${item}. ${source}; ${factored}; ${regrouped}` : `${item}. ${source}; ${factored}; regroup: __________`
       ),
+      topItemAnswers: solved ? undefined : chains.map((chain) => [chain[3]]),
       bottomItems: chains.map((chain, index) =>
         solved || index === 0 ? chain[4].split('=').at(-1)?.trim() ?? chain[4] : '____'
       ),
@@ -2448,8 +2576,9 @@ function makeM3Lesson10Primary(problem: ProblemSetCenteredProblem, solved: boole
     orientation: 'columns',
     topShape: 'umbrella',
     bottomShape: 'raindrop',
+    interactive: true,
     showMatches: solved,
-    matches: solved ? matches.map((bottomIndex, topIndex) => ({ topIndex, bottomIndex, label: 'quotient' })) : undefined
+    matches: matches.map((bottomIndex, topIndex) => ({ topIndex, bottomIndex, label: 'quotient' }))
   };
 }
 
@@ -2475,8 +2604,14 @@ function makeM3Lesson11Primary(problem: ProblemSetCenteredProblem, solved: boole
           {
             label: 'Student workspace',
             sections: [{
-              kind: 'note',
-              text: 'Draw and label the tape diagram. Write an equation, solve for c, and show the answer in the open space.'
+              kind: 'source-response-workspace',
+              parts: [{
+                prompt: 'Draw and label the tape diagram. Write an equation, solve for c, and show the answer in the open space.',
+                lines: [],
+                printedLineCount: 6,
+                openWorkspace: true,
+                sketchWorkspace: true
+              }]
             }]
           }
         ]
@@ -2619,8 +2754,9 @@ function makeM3Lesson12Primary(problem: ProblemSetCenteredProblem, solved: boole
     orientation: 'columns',
     topShape: 'helicopter',
     bottomShape: 'cloud',
+    interactive: true,
     showMatches: solved,
-    matches: solved ? matches.map((bottomIndex, topIndex) => ({ topIndex, bottomIndex })) : undefined
+    matches: matches.map((bottomIndex, topIndex) => ({ topIndex, bottomIndex }))
   };
 }
 
@@ -2648,7 +2784,8 @@ function makeM3Lesson13Primary(problem: ProblemSetCenteredProblem, solved: boole
             kind: 'equations',
             lines: solved
               ? ['Tens place: increase by 1.', 'Ones place: decrease by 1.']
-              : ['Tens place pattern: ____________________', 'Ones place pattern: ____________________']
+              : ['Tens place pattern: ____________________', 'Ones place pattern: ____________________'],
+            lineAnswers: solved ? undefined : [['increase by 1'], ['decrease by 1']]
           }]
         }
       ]
@@ -2684,7 +2821,15 @@ function makeM3Lesson13Primary(problem: ProblemSetCenteredProblem, solved: boole
       cards: [
         {
           label: 'a. Analyze Problem 2',
-          sections: [{ kind: 'note', text: solved ? 'Add 10, then subtract 1.' : 'Pattern: ______________________________________________' }]
+          sections: [{
+            kind: 'source-response-workspace',
+            parts: [{
+              prompt: 'Describe the arithmetic pattern used in Problem 2.',
+              lines: solved ? ['Add 10, then subtract 1.'] : [],
+              printedLineCount: 3,
+              openWorkspace: !solved
+            }]
+          }]
         },
         {
           label: 'b. Next four facts',
@@ -2713,7 +2858,15 @@ function makeM3Lesson13Primary(problem: ProblemSetCenteredProblem, solved: boole
         },
         {
           label: 'd. When does Kent’s pattern not work?',
-          sections: [{ kind: 'note', text: solved ? 'Answers vary; for example, 12 × 9 needs regrouping beyond a single-digit group count.' : 'Example and explanation: ______________________________________________' }]
+          sections: [{
+            kind: 'source-response-workspace',
+            parts: [{
+              prompt: 'Give an example when Kent’s digit pattern does not work, and explain why.',
+              lines: solved ? ['Answers vary; for example, 12 × 9 needs regrouping beyond a single-digit group count.'] : [],
+              printedLineCount: 4,
+              openWorkspace: !solved
+            }]
+          }]
         }
       ]
     };
@@ -2767,10 +2920,24 @@ function makeM3Lesson14Primary(problem: ProblemSetCenteredProblem, solved: boole
         {
           label: 'b–c. Check the pattern',
           sections: [{
-            kind: 'note',
-            text: solved
-              ? 'The digits in every product sum to 9. The later count-by-nines claim is incorrect; 198 has digit sum 18, not 9.'
-              : 'What is the digit sum in each product? How can it check a nines fact? Is Araceli’s later claim correct? Explain in the open space.'
+            kind: 'source-response-workspace',
+            parts: [
+              {
+                lead: 'b. ',
+                prompt: 'What is the digit sum in each product? How can it help check a nines fact?',
+                lines: solved ? ['The digits in every product sum to 9, which checks each one-digit nines fact.'] : [],
+                printedLineCount: 4,
+                openWorkspace: !solved
+              },
+              {
+                lead: 'c. ',
+                prompt: 'Araceli continues the pattern to later multiples of 9. Is her claim correct? Why or why not?',
+                lines: solved ? ['No. For example, 198 has digit sum 18, not 9; the digit sum is a multiple of 9.'] : [],
+                printedLineCount: 4,
+                openWorkspace: !solved,
+                dividerBefore: true
+              }
+            ]
           }]
         }
       ]
@@ -2819,7 +2986,17 @@ function makeM3Lesson14Primary(problem: ProblemSetCenteredProblem, solved: boole
         label: solved ? 'Read the two groups of fingers' : 'Answer and explain',
         sections: solved
           ? [{ kind: 'equations', lines: ['6 fingers to the left → 6 tens', '3 fingers to the right → 3 ones', '7 × 9 = 63'] }]
-          : [{ kind: 'note', text: 'Answer: ______. Explain how to use Sonya’s finger strategy in the open space.' }]
+          : [{
+              kind: 'source-response-workspace',
+              parts: [{
+                prompt: 'What is the answer? Explain how to use Sonya’s finger strategy.',
+                lines: ['Answer: ____'],
+                lineAnswers: [['63']],
+                interactiveLines: true,
+                printedLineCount: 5,
+                openWorkspace: true
+              }]
+            }]
       }
     ]
   };
@@ -2879,8 +3056,9 @@ function makeM3Lesson16Primary(problem: ProblemSetCenteredProblem, solved: boole
       orientation: 'rows',
       topShape: 'mouse',
       bottomShape: 'cheese',
+      interactive: true,
       showMatches: solved,
-      matches: solved ? matches.map((bottomIndex, topIndex) => ({ topIndex, bottomIndex })) : undefined
+      matches: matches.map((bottomIndex, topIndex) => ({ topIndex, bottomIndex }))
     };
   }
   if (number === 3) {
@@ -2965,6 +3143,13 @@ function makeM3Lesson17Primary(problem: ProblemSetCenteredProblem, solved: boole
           sections: [{
             kind: 'data-table',
             columns: factors.map(String),
+            selectableCells: true,
+            correctCellKeys: factors.flatMap((rowFactor, rowIndex) =>
+              factors.flatMap((columnFactor, columnIndex) =>
+                rowFactor * columnFactor % 2 === 0 ? [`${rowIndex}:${columnIndex}`] : []
+              )
+            ),
+            showCorrectSelections: solved,
             rows: factors.map((rowFactor) => factors.map((columnFactor) =>
               solved ? String(rowFactor * columnFactor) : `${columnFactor}×${rowFactor}=____`
             ))
@@ -2973,10 +3158,13 @@ function makeM3Lesson17Primary(problem: ProblemSetCenteredProblem, solved: boole
         {
           label: 'a–d. Analyze the table',
           sections: [{
-            kind: 'note',
-            text: solved
-              ? 'Color all even products. An even product can have an odd factor when the other factor is even. An odd product cannot have an even factor. The source decomposition for 7×4 is visible across the row; 7×16=112.'
-              : 'a. Color every even product and answer the factor question. b. Answer the odd-product question. c. Explain 7×4=(5×4)+(2×4) in the table. d. Find 7×16.'
+            kind: 'source-response-workspace',
+            parts: [
+              { lead: 'a. ', prompt: 'Color every even product in the table. Can an even product have an odd factor? Explain.', lines: solved ? ['Yes. An even product can have an odd factor when the other factor is even.'] : [], printedLineCount: 3, openWorkspace: !solved },
+              { lead: 'b. ', prompt: 'Can an odd product have an even factor? Explain.', lines: solved ? ['No. A product with an even factor is even.'] : [], printedLineCount: 3, openWorkspace: !solved, dividerBefore: true },
+              { lead: 'c. ', prompt: 'Explain how 7 × 4 = (5 × 4) + (2 × 4) is shown in the table.', lines: solved ? ['The 7 row is decomposed into the 5 row and the 2 row: 20 + 8 = 28.'] : [], printedLineCount: 3, openWorkspace: !solved, dividerBefore: true },
+              { lead: 'd. ', prompt: 'Use the table to find 7 × 16.', lines: solved ? ['7 × 16 = (7 × 8) + (7 × 8) = 56 + 56 = 112.'] : [], printedLineCount: 3, openWorkspace: !solved, dividerBefore: true }
+            ]
           }]
         }
       ]
@@ -3005,10 +3193,12 @@ function makeM3Lesson17Primary(problem: ProblemSetCenteredProblem, solved: boole
           ? [{
               kind: 'source-response-workspace' as const,
               parts: [{
-                prompt: 'Draw the array in this official source frame. Added squares: ____',
-                lines: [],
+                prompt: 'Draw the array in this official source frame.',
+                lines: ['Added squares: ____'],
+                lineAnswers: [[String(2 * size - 1)]],
                 printedLineCount: 4,
-                openWorkspace: true
+                openWorkspace: true,
+                interactiveLines: true
               }]
             }]
           : [{
@@ -3027,10 +3217,11 @@ function makeM3Lesson17Primary(problem: ProblemSetCenteredProblem, solved: boole
       {
         label: 'c–d. Describe and prove',
         sections: [{
-          kind: 'note',
-          text: solved
-            ? 'The numbers added are consecutive odd numbers: 3, 5, 7, 9, 11. Therefore 9×9 is 1+3+5+7+9+11+13+15+17=81.'
-            : 'c. Describe the number of squares added to each new array. d. Use the pattern to prove that 9×9 is the sum of the first 9 odd numbers.'
+          kind: 'source-response-workspace',
+          parts: [
+            { lead: 'c. ', prompt: 'Describe the number of squares added to each new array.', lines: solved ? ['The numbers added are consecutive odd numbers: 3, 5, 7, 9, 11.'] : [], printedLineCount: 3, openWorkspace: !solved },
+            { lead: 'd. ', prompt: 'Use the pattern to prove that 9 × 9 is the sum of the first 9 odd numbers.', lines: solved ? ['1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 = 81 = 9 × 9.'] : [], printedLineCount: 4, openWorkspace: !solved, dividerBefore: true }
+          ]
         }]
       }
     ]
@@ -3344,85 +3535,6 @@ function makeM3TwoStepStory(solved: boolean, label: string, firstModel: string, 
       { label: 'Step 1', sections: [{ kind: 'note', text: firstModel }, { kind: 'equations', lines: [solved ? equations[0] : blankEquations[0]] }] },
       { label: 'Step 2', sections: [{ kind: 'note', text: solved ? secondModel : 'Use the Step 1 result in the second relationship.' }, { kind: 'equations', lines: [solved ? equations[1] : blankEquations[1]] }] },
       { label: 'Answer in context', sections: [{ kind: 'note', text: solved ? answer : 'Write a complete sentence with the correct unit: ____________________' }] }
-    ]
-  };
-}
-
-function makeM3CountByMatch(
-  unit: number,
-  solved: boolean,
-  includeDivision: boolean,
-  sourceObjects: string,
-  factOrder: number[],
-  missingGroups: number[]
-): ProblemVisualSection {
-  const groups = Array.from({ length: 10 }, (_, index) => index + 1);
-  return {
-    kind: 'card-grid',
-    label: solved ? `Solved ${sourceObjects}` : `Official ${sourceObjects}`,
-    cards: [
-      {
-        label: `Count-by-${unit} sequence`,
-        sections: [{
-          kind: 'data-table',
-          columns: groups.map((group) => `Count ${group}`),
-          rows: [[...groups.map((group) => solved || !missingGroups.includes(group) ? String(group * unit) : '____')]]
-        }]
-      },
-      ...factOrder.map((factor, index) => {
-        const total = factor * unit;
-        return {
-          label: `Source card ${index + 1}: ${factor} groups of ${unit}`,
-          sections: [
-            {
-              kind: 'equations' as const,
-              lines: includeDivision
-                ? solved
-                  ? [`${factor} x ${unit} = ${total}`, `${total} divided by ${unit} = ${factor}`]
-                  : [`${factor} x ${unit} = ____`, '____ divided by ____ = ____']
-                : [solved ? `${factor} x ${unit} = ${total}` : `${factor} x ${unit} = ____`]
-            },
-            {
-              kind: 'note' as const,
-              text: solved ? `Match this card to ${total} in the count-by sequence.` : 'Find the matching total in the count-by sequence.'
-            }
-          ]
-        };
-      })
-    ]
-  };
-}
-
-function makeM3CountBySequence(unit: number, finalGroup: number, solved: boolean, givenGroups: number[]): ProblemVisualSection {
-  const groups = Array.from({ length: finalGroup }, (_, index) => index + 1);
-  const targetGroups = groups.filter((group) => !givenGroups.includes(group));
-  return {
-    kind: 'card-grid',
-    label: solved ? `Solved count-by-${unit} sequence and fact pairs` : `Complete the count-by-${unit} sequence`,
-    cards: [
-      {
-        label: 'Count-by sequence',
-        sections: [{
-          kind: 'data-table',
-          columns: groups.map((group) => `Count ${group}`),
-          rows: [[...groups.map((group) => solved || givenGroups.includes(group) ? String(group * unit) : '____')]]
-        }]
-      },
-      ...targetGroups.map((group) => ({
-        label: `Count ${group}: multiplication and division partners`,
-        sections: [
-          {
-            kind: 'equations' as const,
-            lines: solved
-              ? [`${group} x ${unit} = ${group * unit}`, `${group * unit} divided by ${unit} = ${group}`]
-              : [`____ x ${unit} = ____`, `____ divided by ${unit} = ____`]
-          },
-          {
-            kind: 'note' as const,
-            text: solved ? `${group} groups of ${unit} make ${group * unit}.` : `Use the value at count position ${group}.`
-          }
-        ]
-      }))
     ]
   };
 }
@@ -3995,6 +4107,9 @@ function makeM3Tape(problem: ProblemSetCenteredProblem, solved: boolean): Proble
             { label: 'first find 5 x 60', startPart: 0, partCount: 5 },
             { label: 'then add 45', startPart: 5, partCount: 1 }
           ],
+      equations: solved
+        ? ['5 × 60 = 300', '300 + 45 = 345', 'Answer: 345 seconds']
+        : ['5 × 60 = ____', '____ + 45 = ____', 'Answer: ____ seconds'],
       caption: solved
         ? 'Five full minutes are 5 x 60 = 300 seconds. Add the extra 45 seconds to get 345 seconds.'
         : 'Show five 60-second minute parts, then one extra 45-second part.'
@@ -4180,6 +4295,11 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
     ],
     problems: source.problems.map((_, problemIndex) => {
       const centeredProblem = makeProblem(lessonNumber, problemIndex);
+      const solvedVisual = createM3ProblemVisual(centeredProblem, true, lessonNumber);
+      const blankVisual = attachVisualAnswers(
+        createM3ProblemVisual(centeredProblem, false, lessonNumber),
+        solvedVisual
+      );
       return {
         ...centeredProblem,
         sourcePageImages: centeredProblem.sourcePageImages ?? sourcePageImages,
@@ -4187,8 +4307,8 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
         solvedSourcePageImages:
           centeredProblem.solvedSourcePageImages
             ?? [...sourcePageImages, ...answerKeyImages],
-        blankVisual: createM3ProblemVisual(centeredProblem, false, lessonNumber),
-        solvedVisual: createM3ProblemVisual(centeredProblem, true, lessonNumber)
+        blankVisual,
+        solvedVisual
       };
     })
   };

@@ -35,11 +35,40 @@
         ],
         "answerKeyEvidence": "12, 24, 42, 54; each number matched to its corresponding multiplication fact.",
         "layout": {
-          "family": "table-model"
+          "family": "interactive-expression-match",
+          "subpartCount": 10,
+          "columnCount": 2,
+          "rowCount": 10,
+          "blankInputCount": 4,
+          "printedEquationLineCount": 10,
+          "openWorkspaceCount": 0,
+          "modelPrimitive": "sunburst-number+wavy-fact-card",
+          "modelCounts": [
+            10,
+            10
+          ],
+          "modelOrientation": "two-vertical-columns",
+          "factOrder": [
+            9,
+            6,
+            4,
+            7,
+            2,
+            1,
+            3,
+            10,
+            5,
+            8
+          ],
+          "responseStructure": "fill-counts-and-draw-one-to-one-matching-lines"
         },
-        "blankMustNotContain": [],
-        "solvedMustContain": [],
-        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+        "blankMustNotContain": [
+          "12, 24, 42, 54"
+        ],
+        "solvedMustContain": [
+          "12, 24, 42, 54"
+        ],
+        "sourceLayoutNotes": "One vertical column of ten sunbursts (six printed totals and four blanks) sits opposite one vertical column of ten wavy multiplication-fact cards in the printed order. Learners complete the four totals and draw ten matching lines. The task must be authored and operable; whole-page and whole-problem screenshots are prohibited."
       }
     },
     {
@@ -51,11 +80,27 @@
         ],
         "answerKeyEvidence": "12, 18, 24; 4, 24; 24, 4.",
         "layout": {
-          "family": "table-model"
+          "family": "fillable-source-response-workspace",
+          "subpartCount": 3,
+          "rowCount": 3,
+          "blankInputCount": 7,
+          "printedEquationLineCount": 2,
+          "openWorkspaceCount": 0,
+          "modelPrimitive": "linear-number-sequence+printed-equations",
+          "modelCounts": [
+            4,
+            2
+          ],
+          "modelOrientation": "single-vertical-source-column",
+          "responseStructure": "fill-counts-then-one-multiplication-and-one-division-equation"
         },
-        "blankMustNotContain": [],
-        "solvedMustContain": [],
-        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+        "blankMustNotContain": [
+          "12, 18, 24; 4, 24; 24, 4"
+        ],
+        "solvedMustContain": [
+          "12, 18, 24; 4, 24; 24, 4"
+        ],
+        "sourceLayoutNotes": "A four-term horizontal count-by sequence is followed in the same left column by exactly one multiplication equation and one division equation for the final number. Intermediate related-fact cards are absent."
       }
     },
     {
@@ -67,11 +112,27 @@
         ],
         "answerKeyEvidence": "12, 18, 24, 30, 36, 42; 7, 42; 42, 7.",
         "layout": {
-          "family": "table-model"
+          "family": "fillable-source-response-workspace",
+          "subpartCount": 3,
+          "rowCount": 3,
+          "blankInputCount": 10,
+          "printedEquationLineCount": 2,
+          "openWorkspaceCount": 0,
+          "modelPrimitive": "linear-number-sequence+printed-equations",
+          "modelCounts": [
+            7,
+            2
+          ],
+          "modelOrientation": "single-vertical-source-column",
+          "responseStructure": "fill-counts-then-one-multiplication-and-one-division-equation"
         },
-        "blankMustNotContain": [],
-        "solvedMustContain": [],
-        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+        "blankMustNotContain": [
+          "12, 18, 24, 30, 36, 42; 7, 42; 42, 7"
+        ],
+        "solvedMustContain": [
+          "12, 18, 24, 30, 36, 42; 7, 42; 42, 7"
+        ],
+        "sourceLayoutNotes": "A seven-term horizontal count-by sequence is followed in the same right column by exactly one multiplication equation and one division equation for the final number. Intermediate related-fact cards are absent."
       }
     },
     {
@@ -83,11 +144,34 @@
         ],
         "answerKeyEvidence": "a. 12, 24, 18, 18, 36, 18, 30, 42. b. 8; 8.",
         "layout": {
-          "family": "open-written-response"
+          "family": "fillable-source-response-workspace",
+          "subpartCount": 2,
+          "segmentCount": 5,
+          "segmentDirections": [
+            "up",
+            "down",
+            "up",
+            "down",
+            "up"
+          ],
+          "blankInputCount": 10,
+          "printedEquationLineCount": 2,
+          "openWorkspaceCount": 0,
+          "modelPrimitive": "continuous-arrow-sequence+printed-equations",
+          "modelCounts": [
+            5,
+            2
+          ],
+          "modelOrientation": "single-horizontal-chain-over-two-equations",
+          "responseStructure": "fill-direction-chain-then-two-related-fact-blanks"
         },
-        "blankMustNotContain": [],
-        "solvedMustContain": [],
-        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+        "blankMustNotContain": [
+          "8; 8"
+        ],
+        "solvedMustContain": [
+          "8; 8"
+        ],
+        "sourceLayoutNotes": "Part a is one uninterrupted left-to-right count chain with five arrow-directed segments; it is not five separate cards. Part b places one multiplication and one division equation beneath that chain."
       }
     },
     {
@@ -99,11 +183,22 @@
         ],
         "answerKeyEvidence": "No; explanations will vary.",
         "layout": {
-          "family": "open-written-response"
+          "family": "open-source-response-workspace",
+          "subpartCount": 1,
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "modelPrimitive": "printed-claim+open-writing-area",
+          "modelCounts": [],
+          "modelOrientation": "single-vertical-open-response",
+          "responseStructure": "write-and-explain-without-invented-equation-scaffold"
         },
-        "blankMustNotContain": [],
-        "solvedMustContain": [],
-        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+        "blankMustNotContain": [
+          "No"
+        ],
+        "solvedMustContain": [
+          "No"
+        ],
+        "sourceLayoutNotes": "The printed task is one claim followed by open explanation space. Blank mode must not add a printed equation, card decomposition, answer choice, or other scaffold absent from the source."
       }
     }
   ]

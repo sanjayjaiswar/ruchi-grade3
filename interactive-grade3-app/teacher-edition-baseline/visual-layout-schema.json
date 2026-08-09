@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "purpose": "Teacher Edition-only page evidence used to compare source text, answer-key results, and a neutral canonical visual-layout signature with the implementation. A source-first crop may be the canonical layout when the exact printed task is the clearest faithful representation.",
+  "purpose": "Teacher Edition-only page evidence used to compare source text, answer-key results, and a neutral canonical visual-layout signature with the implementation. Full task crops and page screenshots are evidence only and cannot be the learner-facing canonical layout; tightly cropped assets are reserved for mathematically irreducible pictured objects inside an authored task and response surface.",
   "requiredLessonFields": [
     "lessonId",
     "teacherEditionPdfSha256",
@@ -34,5 +34,5 @@
     "implementationCheck",
     "authoredComponent"
   ],
-  "rule": "Expected values may come only from the fingerprinted Teacher Edition PDF, its Problem Set page evidence, and its answer key. Renderer names and implementation structure are never source truth."
+  "rule": "Expected values may come only from the fingerprinted Teacher Edition PDF, its Problem Set page evidence, and its answer key. Renderer names and implementation structure are never source truth. Runtime validation must reject screenshot-first task delivery and require Blank/Solved interaction parity for reusable authored workspace families."
 }

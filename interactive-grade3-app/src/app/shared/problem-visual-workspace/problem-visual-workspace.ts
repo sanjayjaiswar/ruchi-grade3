@@ -1,6 +1,6 @@
 import '@browser.style/analog-clock';
-import { NgClass, NgFor, NgIf } from '@angular/common';
-import { AfterViewChecked, Component, ElementRef, Input } from '@angular/core';
+import { NgClass, NgFor, NgIf, NgTemplateOutlet } from '@angular/common';
+import { AfterViewChecked, Component, ElementRef, Input, OnChanges } from '@angular/core';
 import { animate, stagger } from 'animejs';
 import { scaleLinear } from 'd3-scale';
 import { TimeBoardComponent } from '../time-board/time-board';
@@ -28,7 +28,6 @@ import type {
   ProblemVisualSolutionPartsSection,
   ProblemVisualSpec,
   ProblemVisualSourceDirectionsSection,
-  ProblemVisualSourceFirstWorkspaceSection,
   ProblemVisualSourceCropSection,
   ProblemVisualSourceResponseWorkspaceSection,
   ProblemVisualStopwatchSection,
@@ -40,20 +39,48 @@ import type {
 
 @Component({
   selector: 'app-problem-visual-workspace',
-  imports: [TimeBoardComponent, NgClass, NgFor, NgIf],
+  imports: [TimeBoardComponent, NgClass, NgFor, NgIf, NgTemplateOutlet],
   templateUrl: './problem-visual-workspace.html',
   styleUrl: './problem-visual-workspace.css'
 })
-export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
+export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChanges {
   @Input({ required: true }) spec?: ProblemVisualSpec;
   @Input() mode: 'blank' | 'solved' = 'blank';
   private animationSignature = '';
+  private interactionSignature = '';
+  private readonly interactiveMatchPairs = new Map<number, number>();
+  private readonly interactiveEntryValues = new Map<number, string>();
+  private readonly interactiveResponseValues = new Map<string, string>();
+  private readonly interactiveInlineValues = new Map<string, string>();
+  private readonly inlineTokenCache = new Map<
+    string,
+    Array<{ text: string; input: boolean; answerIndex?: number; answer?: string }>
+  >();
+  private readonly selectedDataCells = new WeakMap<object, Set<string>>();
+  private readonly selectedArrayCells = new WeakMap<object, Set<number>>();
+  private readonly interactiveOwnerIds = new WeakMap<object, number>();
+  private nextInteractiveOwnerId = 1;
+  selectedExpressionTopIndex?: number;
   continuousMotionPaused = false;
 
   constructor(private readonly elementRef: ElementRef<HTMLElement>) {}
 
   visibleSections(sections: ProblemVisualSection[] = []): ProblemVisualSection[] {
     return sections;
+  }
+
+  ngOnChanges(): void {
+    const nextSignature = `${this.mode}|${this.spec?.title ?? ''}|${this.spec?.sections.map((section) => section.kind).join(',') ?? ''}`;
+    if (nextSignature === this.interactionSignature) {
+      return;
+    }
+    this.interactionSignature = nextSignature;
+    this.selectedExpressionTopIndex = undefined;
+    this.interactiveMatchPairs.clear();
+    this.interactiveEntryValues.clear();
+    this.interactiveResponseValues.clear();
+    this.interactiveInlineValues.clear();
+    this.selectedDataCells.delete(this.spec ?? {});
   }
 
   ngAfterViewChecked(): void {
@@ -187,10 +214,6 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     return section.kind === 'source-crop' ? section : undefined;
   }
 
-  sourceFirstWorkspaceSection(section: ProblemVisualSection): ProblemVisualSourceFirstWorkspaceSection | undefined {
-    return section.kind === 'source-first-workspace' ? section : undefined;
-  }
-
   unitFormWorkspaceSection(section: ProblemVisualSection): ProblemVisualUnitFormWorkspaceSection | undefined {
     return section.kind === 'unit-form-workspace' ? section : undefined;
   }
@@ -203,8 +226,323 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked {
     return section.kind === 'source-response-workspace' ? section : undefined;
   }
 
+  toggleDataCell(section: ProblemVisualDataTableSection, row: number, column: number, event: Event): void {
+    if (this.mode !== 'blank' || !section.selectableCells || event.target instanceof HTMLInputElement) {
+      return;
+    }
+    const selected = this.dataCellSelections(section);
+    const key = `${row}:${column}`;
+    selected.has(key) ? selected.delete(key) : selected.add(key);
+  }
+
+  dataCellSelectionState(
+    section: ProblemVisualDataTableSection,
+    row: number,
+    column: number
+  ): 'correct' | 'incorrect' | 'selected' | 'unselected' {
+    const key = `${row}:${column}`;
+    if (this.mode === 'solved' && section.showCorrectSelections && section.correctCellKeys?.includes(key)) {
+      return 'correct';
+    }
+    if (!this.dataCellSelections(section).has(key)) {
+      return 'unselected';
+    }
+    if (!section.correctCellKeys?.length) {
+      return 'selected';
+    }
+    return section.correctCellKeys.includes(key) ? 'correct' : 'incorrect';
+  }
+
+  dataCellHasDrawingWorkspace(section: ProblemVisualDataTableSection, row: number, column: number): boolean {
+    return this.mode === 'blank' && Boolean(section.drawingCellKeys?.includes(`${row}:${column}`));
+  }
+
+  toggleArrayCell(section: ProblemVisualArraySection, index: number): void {
+    if (this.mode !== 'blank' || !section.selectableCells) return;
+    const selected = this.arrayCellSelections(section);
+    selected.has(index) ? selected.delete(index) : selected.add(index);
+  }
+
+  arrayCellIsSelected(section: ProblemVisualArraySection, index: number): boolean {
+    return this.arrayCellSelections(section).has(index);
+  }
+
+  clearArraySelection(section: ProblemVisualArraySection): void {
+    this.arrayCellSelections(section).clear();
+  }
+
+  startSketch(event: PointerEvent): void {
+    const canvas = event.currentTarget as HTMLCanvasElement;
+    canvas.setPointerCapture(event.pointerId);
+    const context = canvas.getContext('2d');
+    if (!context) return;
+    const point = this.sketchPoint(canvas, event);
+    context.beginPath();
+    context.moveTo(point.x, point.y);
+    context.lineWidth = 5;
+    context.lineCap = 'round';
+    context.lineJoin = 'round';
+    context.strokeStyle = '#202124';
+  }
+
+  continueSketch(event: PointerEvent): void {
+    const canvas = event.currentTarget as HTMLCanvasElement;
+    if (!canvas.hasPointerCapture(event.pointerId)) return;
+    const context = canvas.getContext('2d');
+    if (!context) return;
+    const point = this.sketchPoint(canvas, event);
+    context.lineTo(point.x, point.y);
+    context.stroke();
+  }
+
+  finishSketch(event: PointerEvent): void {
+    const canvas = event.currentTarget as HTMLCanvasElement;
+    if (canvas.hasPointerCapture(event.pointerId)) {
+      canvas.releasePointerCapture(event.pointerId);
+    }
+  }
+
+  clearSketch(canvas?: HTMLCanvasElement | null): void {
+    if (!canvas) {
+      return;
+    }
+    canvas.getContext('2d')?.clearRect(0, 0, canvas.width, canvas.height);
+  }
+
+  clearSketchFromControl(event: Event): void {
+    const control = event.currentTarget as HTMLElement | null;
+    this.clearSketch(control?.parentElement?.querySelector('canvas'));
+  }
+
+  selectExpressionTop(index: number): void {
+    if (this.mode === 'blank') {
+      this.selectedExpressionTopIndex = index;
+    }
+  }
+
+  selectExpressionBottom(index: number): void {
+    if (this.mode !== 'blank' || this.selectedExpressionTopIndex === undefined) {
+      return;
+    }
+    for (const [topIndex, bottomIndex] of this.interactiveMatchPairs.entries()) {
+      if (bottomIndex === index) {
+        this.interactiveMatchPairs.delete(topIndex);
+      }
+    }
+    this.interactiveMatchPairs.set(this.selectedExpressionTopIndex, index);
+    this.selectedExpressionTopIndex = undefined;
+  }
+
+  clearExpressionMatches(): void {
+    this.interactiveMatchPairs.clear();
+    this.interactiveResponseValues.clear();
+    this.selectedExpressionTopIndex = undefined;
+  }
+
+  setExpressionEntry(index: number, value: string): void {
+    this.interactiveEntryValues.set(index, value);
+  }
+
+  expressionEntryState(
+    section: ProblemVisualExpressionMatchSection,
+    index: number
+  ): 'correct' | 'incorrect' | 'unanswered' {
+    const rawValue = this.interactiveEntryValues.get(index)?.trim();
+    if (!rawValue) {
+      return 'unanswered';
+    }
+    return rawValue === section.topAnswers?.[index] ? 'correct' : 'incorrect';
+  }
+
+  setExpressionResponse(rowIndex: number, answerIndex: number, value: string): void {
+    this.interactiveResponseValues.set(`${rowIndex}:${answerIndex}`, value);
+  }
+
+  expressionResponseState(
+    section: ProblemVisualExpressionMatchSection,
+    rowIndex: number,
+    answerIndex: number
+  ): 'correct' | 'incorrect' | 'unanswered' {
+    const rawValue = this.interactiveResponseValues.get(`${rowIndex}:${answerIndex}`)?.trim();
+    if (!rawValue) {
+      return 'unanswered';
+    }
+    return rawValue === section.rightAnswers?.[rowIndex]?.[answerIndex] ? 'correct' : 'incorrect';
+  }
+
+  expressionTopMatchState(
+    section: ProblemVisualExpressionMatchSection,
+    topIndex: number
+  ): 'correct' | 'incorrect' | 'unanswered' {
+    const bottomIndex = this.interactiveMatchPairs.get(topIndex);
+    if (bottomIndex === undefined) {
+      return this.mode === 'solved' ? 'correct' : 'unanswered';
+    }
+    return this.expressionPairIsCorrect(section, topIndex, bottomIndex) ? 'correct' : 'incorrect';
+  }
+
+  expressionBottomMatchState(
+    section: ProblemVisualExpressionMatchSection,
+    bottomIndex: number
+  ): 'correct' | 'incorrect' | 'unanswered' {
+    if (this.mode === 'solved') {
+      return 'correct';
+    }
+    const pair = [...this.interactiveMatchPairs.entries()].find(([, selectedBottom]) => selectedBottom === bottomIndex);
+    if (!pair) {
+      return 'unanswered';
+    }
+    return this.expressionPairIsCorrect(section, pair[0], bottomIndex) ? 'correct' : 'incorrect';
+  }
+
+  expressionPairIsCorrect(
+    section: ProblemVisualExpressionMatchSection,
+    topIndex: number,
+    bottomIndex: number
+  ): boolean {
+    return section.matches?.some((match) => match.topIndex === topIndex && match.bottomIndex === bottomIndex) ?? false;
+  }
+
+  interactiveExpressionPairs(
+    section: ProblemVisualExpressionMatchSection
+  ): Array<{ topIndex: number; bottomIndex: number }> {
+    if (this.mode === 'solved') {
+      return (section.matches ?? []).map(({ topIndex, bottomIndex }) => ({ topIndex, bottomIndex }));
+    }
+    return [...this.interactiveMatchPairs.entries()].map(([topIndex, bottomIndex]) => ({ topIndex, bottomIndex }));
+  }
+
+  expressionMatchStatus(section: ProblemVisualExpressionMatchSection): string {
+    const pairs = this.interactiveExpressionPairs(section);
+    if (this.mode === 'solved') {
+      return `All ${pairs.length} correct matches are shown.`;
+    }
+    if (!pairs.length) {
+      return 'No matches yet. Select an item in the first column, then select its match.';
+    }
+    const correct = pairs.filter((pair) => this.expressionPairIsCorrect(section, pair.topIndex, pair.bottomIndex)).length;
+    return `${correct} correct · ${pairs.length - correct} need another try · ${Math.max(0, section.topItems.length - pairs.length)} remaining`;
+  }
+
+  matchLineY(index: number, count: number): number {
+    return (index + 0.5) / Math.max(1, count) * 100;
+  }
+
+  responseLineTokens(line: string): Array<{ text: string; input: boolean; answerIndex?: number }> {
+    let answerIndex = 0;
+    return line
+      .split(/(_{2,})/g)
+      .filter(Boolean)
+      .map((text) => {
+        const input = /^_{2,}$/.test(text);
+        return { text, input, answerIndex: input ? answerIndex++ : undefined };
+      });
+  }
+
+  inlineTokens(line: string, answers: string[] | null | undefined = []): Array<{ text: string; input: boolean; answerIndex?: number; answer?: string }> {
+    const normalizedAnswers = answers ?? [];
+    const cacheKey = JSON.stringify([line, normalizedAnswers]);
+    const cached = this.inlineTokenCache.get(cacheKey);
+    if (cached) {
+      return cached;
+    }
+    let answerIndex = 0;
+    const tokens = line
+      .split(/(_{2,})/g)
+      .filter(Boolean)
+      .map((text) => {
+        const input = /^_{2,}$/.test(text);
+        if (!input) {
+          return { text, input };
+        }
+        const index = answerIndex++;
+        return { text, input, answerIndex: index, answer: normalizedAnswers[index] };
+      });
+    this.inlineTokenCache.set(cacheKey, tokens);
+    return tokens;
+  }
+
+  setInlineValue(owner: object, field: string, row: number, column: number, answerIndex: number, value: string): void {
+    this.interactiveInlineValues.set(this.inlineKey(owner, field, row, column, answerIndex), value);
+  }
+
+  inlineState(
+    owner: object,
+    field: string,
+    row: number,
+    column: number,
+    answerIndex: number,
+    answer?: string
+  ): 'correct' | 'incorrect' | 'unanswered' {
+    if (!answer) {
+      return 'unanswered';
+    }
+    const value = this.interactiveInlineValues.get(this.inlineKey(owner, field, row, column, answerIndex));
+    if (!value?.trim()) {
+      return 'unanswered';
+    }
+    return this.normalizeInlineAnswer(value) === this.normalizeInlineAnswer(answer) ? 'correct' : 'incorrect';
+  }
+
+  inlineInputMode(answer?: string): 'numeric' | 'text' {
+    return answer && /^[$¢]?\s*-?\d+(?:\.\d+)?\s*(?:[$¢]|cm|g|kg|mL|L|minutes?|seconds?)?$/i.test(answer)
+      ? 'numeric'
+      : 'text';
+  }
+
+  private inlineKey(owner: object, field: string, row: number, column: number, answerIndex: number): string {
+    let ownerId = this.interactiveOwnerIds.get(owner);
+    if (!ownerId) {
+      ownerId = this.nextInteractiveOwnerId++;
+      this.interactiveOwnerIds.set(owner, ownerId);
+    }
+    return `${ownerId}:${field}:${row}:${column}:${answerIndex}`;
+  }
+
+  private dataCellSelections(section: ProblemVisualDataTableSection): Set<string> {
+    let selected = this.selectedDataCells.get(section);
+    if (!selected) {
+      selected = new Set<string>();
+      this.selectedDataCells.set(section, selected);
+    }
+    return selected;
+  }
+
+  private arrayCellSelections(section: ProblemVisualArraySection): Set<number> {
+    let selected = this.selectedArrayCells.get(section);
+    if (!selected) {
+      selected = new Set<number>();
+      this.selectedArrayCells.set(section, selected);
+    }
+    return selected;
+  }
+
+  private sketchPoint(canvas: HTMLCanvasElement, event: PointerEvent): { x: number; y: number } {
+    const bounds = canvas.getBoundingClientRect();
+    return {
+      x: (event.clientX - bounds.left) * canvas.width / bounds.width,
+      y: (event.clientY - bounds.top) * canvas.height / bounds.height
+    };
+  }
+
+  private normalizeInlineAnswer(value: string): string {
+    return value
+      .trim()
+      .toLowerCase()
+      .replace(/[×·]/g, 'x')
+      .replace(/÷/g, 'divided by')
+      .replace(/[;,&]/g, ' and ')
+      .replace(/\band\b/g, ' ')
+      .replace(/[.]$/g, '')
+      .replace(/\s+/g, ' ');
+  }
+
   sourceCropAspect(section: ProblemVisualSourceCropSection): string {
     return `${section.crop.width} / ${section.crop.height}`;
+  }
+
+  sourceCropSketchHeight(section: ProblemVisualSourceCropSection): number {
+    return Math.max(180, Math.round(1200 * section.crop.height / section.crop.width));
   }
 
   sourceCropImageWidth(section: ProblemVisualSourceCropSection): string {

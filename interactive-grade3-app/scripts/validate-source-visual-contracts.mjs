@@ -57,6 +57,10 @@ const allowedLayoutFields = new Set([
   'speechAnswerCount',
   'columnCount',
   'rowCount',
+  'blankInputCount',
+  'factOrder',
+  'segmentCount',
+  'segmentDirections',
   'printedEquationLineCount',
   'openWorkspaceCount',
   'dividerCount',
@@ -420,7 +424,23 @@ function implementationEvidenceText(problem, mode) {
   // Problem-card titles contain the ordinal ("Problem 4") and are navigation
   // chrome, not mathematical evidence. Only source text and rendered sections
   // participate in answer-leak and answer-presence checks.
-  return `${problem.sourcePrompt} ${JSON.stringify(visual?.sections ?? [])} ${renderedSemantics.filter(Boolean).join(' ')}`;
+  const hiddenInteractionFields = new Set([
+    'cellAnswers',
+    'equationAnswers',
+    'expectedAnswer',
+    'lineAnswers',
+    'promptAnswers',
+    'topAnswers',
+    'topItemAnswers',
+    'bottomItemAnswers',
+    'rightAnswers',
+    'shapeAnswers'
+  ]);
+  const visibleSections = JSON.stringify(
+    visual?.sections ?? [],
+    (key, value) => hiddenInteractionFields.has(key) ? undefined : value
+  );
+  return `${problem.sourcePrompt} ${visibleSections} ${renderedSemantics.filter(Boolean).join(' ')}`;
 }
 
 function rejectImplementationAuthoredExpectations(label, value, path = '$') {
@@ -491,20 +511,13 @@ function canonicalLayout(visual, problem, mode) {
   if (reviewedSecondBatchLayout) return reviewedSecondBatchLayout;
   const reviewedThirdBatchLayout = canonicalM3LessonsSixteenThroughTwentyLayout(sections, sourcePrompt, mode);
   if (reviewedThirdBatchLayout) return reviewedThirdBatchLayout;
+  const authoredInteractionLayout = canonicalAuthoredInteractionLayout(
+    mode === 'solved' ? problem?.blankVisual?.sections ?? sections : sections
+  );
+  if (authoredInteractionLayout) return authoredInteractionLayout;
   const semanticLayout = canonicalM3LessonTwoLayout(sections, sourcePrompt, mode);
   if (semanticLayout) return semanticLayout;
 
-  if (sections[0]?.kind === 'source-first-workspace') {
-    return {
-      family: 'source-first-teacher-edition-crop',
-      sourceFirst: true,
-      sourceCropCount: sections[0].pages?.length ?? 0,
-      sourceCrops: (sections[0].pages ?? []).map((page) => ({
-        src: page.src,
-        crop: page.crop
-      }))
-    };
-  }
   const section = sections.length === 1 ? sections[0] : undefined;
   if (section?.kind === 'unknown-riddle-workspace') {
     return {
@@ -565,6 +578,138 @@ function canonicalLayout(visual, problem, mode) {
   };
 }
 
+function canonicalAuthoredInteractionLayout(sections) {
+  const primary = sections.length === 1 ? sections[0] : undefined;
+  if (!primary) return undefined;
+
+  if (primary.kind === 'expression-match' && primary.interactive) {
+    if (
+      !primary.topItems?.length ||
+      primary.topItems.length !== primary.topAnswers?.length ||
+      primary.topItems.length !== primary.bottomItems?.length ||
+      primary.matches?.length !== primary.topItems.length ||
+      new Set(primary.matches.map((pair) => pair.topIndex)).size !== primary.topItems.length ||
+      new Set(primary.matches.map((pair) => pair.bottomIndex)).size !== primary.bottomItems.length
+    ) return unsupportedLayout(sections);
+    const rightItems = primary.rightItems ?? [];
+    const topPrimitive = primary.topShape === 'sunburst'
+      ? 'sunburst-number'
+      : primary.topShape === 'fish-bowl'
+        ? 'fish-bowl-number'
+        : `${primary.topShape ?? 'card'}-item`;
+    const bottomPrimitive = primary.bottomShape === 'flag'
+      ? 'wavy-fact-card'
+      : primary.bottomShape === 'fish'
+        ? 'fish-expression'
+        : `${primary.bottomShape ?? 'card'}-item`;
+    const blankInputCount = primary.topItems.filter((value) => value === '____').length +
+      rightItems.reduce((sum, line) => sum + (line.match(/____/g)?.length ?? 0), 0);
+    return {
+      family: 'interactive-expression-match',
+      subpartCount: primary.topItems.length,
+      columnCount: rightItems.length ? 3 : 2,
+      rowCount: primary.topItems.length,
+      blankInputCount,
+      printedEquationLineCount: primary.bottomItems.length + rightItems.length,
+      openWorkspaceCount: 0,
+      modelPrimitive: `${topPrimitive}+${bottomPrimitive}${rightItems.length ? '+paired-division-equation' : ''}`,
+      modelCounts: [primary.topItems.length, primary.bottomItems.length, ...(rightItems.length ? [rightItems.length] : [])],
+      modelOrientation: rightItems.length ? 'three-aligned-vertical-columns' : 'two-vertical-columns',
+      factOrder: primary.bottomItems.map((item) => {
+        const values = item.match(/\d+/g)?.map(Number) ?? [];
+        return primary.bottomShape === 'fish' ? values.at(-1) : values[0];
+      }),
+      responseStructure: rightItems.length
+        ? 'fill-counts-match-each-expression-and-complete-one-related-division-fact-per-row'
+        : 'fill-counts-and-draw-one-to-one-matching-lines'
+    };
+  }
+
+  if (
+    primary.kind === 'source-response-workspace' &&
+    (
+      (primary.parts ?? []).some((part) => part.responsePlaceholder) ||
+      (
+        (primary.parts ?? []).some((part) => part.interactiveLines) &&
+        !(primary.parts ?? []).some((part) => part.openWorkspace)
+      )
+    )
+  ) {
+    const parts = primary.parts ?? [];
+    const lines = parts.flatMap((part) => part.lines ?? []);
+    const lineText = lines.join(' ');
+    const blankInputCount = lines.reduce(
+      (sum, line) => sum + (line.match(/____/g)?.length ?? 0),
+      0
+    );
+    const printedEquationLineCount = parts
+      .filter((part) => /equation|sentence/i.test(part.prompt ?? ''))
+      .reduce((sum, part) => sum + (part.printedLineCount ?? 0), 0);
+    const openWorkspaceCount = parts.filter((part) => part.openWorkspace || part.responsePlaceholder).length;
+    if (openWorkspaceCount) {
+      return {
+        family: 'open-source-response-workspace',
+        subpartCount: parts.length,
+        printedEquationLineCount,
+        openWorkspaceCount,
+        modelPrimitive: 'printed-claim+open-writing-area',
+        modelCounts: [],
+        modelOrientation: 'single-vertical-open-response',
+        responseStructure: 'write-and-explain-without-invented-equation-scaffold'
+      };
+    }
+    const directionMarkers = lineText.match(/[↑↓]/g) ?? [];
+    if (directionMarkers.length) {
+      return {
+        family: 'fillable-source-response-workspace',
+        subpartCount: parts.length,
+        segmentCount: directionMarkers.length,
+        segmentDirections: directionMarkers.map((marker) => marker === '↑' ? 'up' : 'down'),
+        blankInputCount,
+        printedEquationLineCount,
+        openWorkspaceCount: 0,
+        modelPrimitive: 'continuous-arrow-sequence+printed-equations',
+        modelCounts: [directionMarkers.length, printedEquationLineCount],
+        modelOrientation: 'single-horizontal-chain-over-two-equations',
+        responseStructure: 'fill-direction-chain-then-two-related-fact-blanks'
+      };
+    }
+    const firstLine = parts[0]?.lines?.[0] ?? '';
+    const sequenceTermCount = firstLine.split(',').filter((term) => term.trim()).length;
+    if (parts.length > 3) {
+      const pairedEquationCount = parts.slice(1).reduce(
+        (sum, part) => sum + (part.printedLineCount ?? 0),
+        0
+      );
+      return {
+        family: 'fillable-source-response-workspace',
+        subpartCount: parts.length,
+        rowCount: parts.length,
+        blankInputCount,
+        printedEquationLineCount: pairedEquationCount,
+        openWorkspaceCount: 0,
+        modelPrimitive: 'linear-number-sequence+five-paired-equation-rows',
+        modelCounts: [sequenceTermCount, parts.length - 1, pairedEquationCount],
+        modelOrientation: 'sequence-over-five-paired-horizontal-equation-rows',
+        responseStructure: 'fill-five-counts-then-write-one-multiplication-and-one-division-equation-for-each'
+      };
+    }
+    return {
+      family: 'fillable-source-response-workspace',
+      subpartCount: parts.length,
+      rowCount: parts.length,
+      blankInputCount,
+      printedEquationLineCount,
+      openWorkspaceCount: 0,
+      modelPrimitive: 'linear-number-sequence+printed-equations',
+      modelCounts: [sequenceTermCount, printedEquationLineCount],
+      modelOrientation: 'single-vertical-source-column',
+      responseStructure: 'fill-counts-then-one-multiplication-and-one-division-equation'
+    };
+  }
+
+  return undefined;
+}
 function canonicalM5LessonsOneThroughFiveLayout(sections, sourcePrompt, mode) {
   const isBlank = mode === 'blank';
   const flatten = (items) => items.flatMap((section) => [
@@ -804,7 +949,23 @@ function canonicalM5LessonsOneThroughFiveLayout(sections, sourcePrompt, mode) {
   }
 
   if (sourcePrompt.startsWith('fill in the chart each image is one whole')) {
-    if (crops.length !== 1 || (isBlank ? equationLineCount !== 8 : equationLineCount !== 0)) return undefined;
+    const chart = tables[0];
+    const chartRows = chart?.rows ?? [];
+    const chartBlankCount = chartRows.reduce(
+      (sum, row) => sum + row.reduce(
+        (rowSum, cell) => rowSum + (typeof cell === 'string' ? (cell.match(/_{2,}/g)?.length ?? 0) : 0),
+        0
+      ),
+      0
+    );
+    const hasAuthoredSixRowChart =
+      tables.length === 1 &&
+      chart?.columns?.length === 5 &&
+      chartRows.length === 6 &&
+      chartRows.every((row) => row.length === 5) &&
+      equationLineCount === 0 &&
+      (isBlank ? chartBlankCount === 20 : chartBlankCount === 0);
+    if (crops.length !== 1 || !hasAuthoredSixRowChart) return undefined;
     return reviewed(
       'six-row-varied-whole-unit-fraction-chart',
       6,
@@ -2654,7 +2815,12 @@ function canonicalM4LessonsElevenThroughFifteenLayout(sections, sourcePrompt, mo
   });
 
   if (sourcePrompt.startsWith('the rectangles below have the same area')) {
-    if (geometry?.diagram !== 'composite' || (geometry.shapes ?? []).length !== 5 || equationLineCount !== 5) return undefined;
+    if (
+      geometry?.diagram !== 'composite' ||
+      (geometry.shapes ?? []).length !== 5 ||
+      equationLineCount !== 5 ||
+      (isBlank && ((geometry.shapeAnswers ?? []).length !== 5 || equations.reduce((sum, section) => sum + (section.lineAnswers ?? []).length, 0) !== 5))
+    ) return undefined;
     return reviewed(
       'five-equal-area-factor-pair-rectangles',
       5,
@@ -2727,7 +2893,12 @@ function canonicalM4LessonsElevenThroughFifteenLayout(sections, sourcePrompt, mo
     );
   }
   if (sourcePrompt.startsWith('an artist paints a 4 foot x 16 foot mural')) {
-    if (!same(arrayCounts, [64]) || arrays[0]?.splitAfterColumns !== 10 || equationLineCount !== 3) return undefined;
+    if (
+      !same(arrayCounts, [64]) ||
+      arrays[0]?.splitAfterColumns !== 10 ||
+      equationLineCount !== 3 ||
+      (isBlank && equations.reduce((sum, section) => sum + (section.lineAnswers ?? []).length, 0) !== 3)
+    ) return undefined;
     return reviewed(
       'four-by-sixteen-mural-distributive-split',
       1,
@@ -2763,7 +2934,11 @@ function canonicalM4LessonsElevenThroughFifteenLayout(sections, sourcePrompt, mo
   }
 
   if (sourcePrompt.startsWith('each of the following figures is made up of 2 rectangles')) {
-    if (cropCount !== 1 || equationLineCount !== 4) return undefined;
+    if (
+      cropCount !== 1 ||
+      equationLineCount !== 4 ||
+      (isBlank && equations.reduce((sum, section) => sum + (section.lineAnswers ?? []).length, 0) !== 4)
+    ) return undefined;
     return reviewed(
       'four-two-rectangle-composite-grid-figures',
       4,
@@ -2800,7 +2975,11 @@ function canonicalM4LessonsElevenThroughFifteenLayout(sections, sourcePrompt, mo
   }
 
   if (sourcePrompt.startsWith('find the area of each of the following figures')) {
-    if (cropCount !== 2 || equationLineCount !== 2) return undefined;
+    if (
+      cropCount !== 2 ||
+      equationLineCount !== 2 ||
+      (isBlank && equations.reduce((sum, section) => sum + (section.lineAnswers ?? []).length, 0) !== 2)
+    ) return undefined;
     return reviewed(
       'two-dimensioned-composite-rectangle-figures',
       2,
@@ -2866,7 +3045,12 @@ function canonicalM4LessonsElevenThroughFifteenLayout(sections, sourcePrompt, mo
   }
   if (sourcePrompt.startsWith('record the areas and show the strategy you used')) {
     const table = tables[0];
-    if (!floorPlan || (table?.columns ?? []).length !== 3 || (table?.rows ?? []).length !== 7) return undefined;
+    if (
+      !floorPlan ||
+      (table?.columns ?? []).length !== 3 ||
+      (table?.rows ?? []).length !== 7 ||
+      (isBlank && ((table?.drawingCellKeys ?? []).length !== 7 || (table?.cellAnswers ?? []).length !== 7))
+    ) return undefined;
     return reviewed(
       'shared-seven-room-floor-plan-area-strategy-table',
       7,
@@ -2920,9 +3104,11 @@ function canonicalM4LessonsElevenThroughFifteenLayout(sections, sourcePrompt, mo
       (table?.rows ?? []).length !== 7 ||
       !(table?.rows ?? []).every((row) =>
         row.length === 2 &&
-        /\d+\s*sq\s*cm/i.test(row[0]) &&
-        /^_+$/.test(String(row[1]).trim())
+        /\d+\s*sq\s*cm/i.test(row[0])
       ) ||
+      (isBlank
+        ? (table?.drawingCellKeys ?? []).length !== 7 || !(table?.rows ?? []).every((row) => row[1] === '')
+        : !(table?.rows ?? []).every((row) => /answers will vary/i.test(String(row[1])))) ||
       noteCount !== 1
     ) return undefined;
     return reviewed(
@@ -2979,8 +3165,10 @@ function canonicalM4LessonsSixThroughTenLayout(sections, sourcePrompt, mode) {
   if (sourcePrompt.startsWith('draw to find the number of rows and columns in each array')) {
     const validBlank =
       cropCount === 6 &&
+      all.filter((section) => section?.kind === 'source-crop').every((crop) => crop.sketchOverlay) &&
       same(arrayCounts, [15, 20, 12, 12, 30, 21]) &&
-      equations.reduce((sum, section) => sum + (section.lines ?? []).length, 0) === 12;
+      equations.reduce((sum, section) => sum + (section.lines ?? []).length, 0) === 12 &&
+      equations.reduce((sum, section) => sum + (section.lineAnswers ?? []).length, 0) === 12;
     const validSolved = cropCount === 0 && same(arrayCounts, [30, 21, 15, 20, 12, 12]);
     if (!(isBlank ? validBlank : validSolved)) return undefined;
     return reviewed(
@@ -3008,7 +3196,7 @@ function canonicalM4LessonsSixThroughTenLayout(sections, sourcePrompt, mode) {
   };
 
   if (sourcePrompt.startsWith('sheena skip counts by sixes')) {
-    return cropResponse(
+    const result = cropResponse(
       'complete-six-by-eight-array-and-check-claim',
       1,
       'tight-official-incomplete-square-array',
@@ -3016,6 +3204,7 @@ function canonicalM4LessonsSixThroughTenLayout(sections, sourcePrompt, mode) {
       'figure-over-open-response',
       'complete-array-and-explain-not-forty-two'
     );
+    return !isBlank || all.find((section) => section?.kind === 'source-crop')?.sketchOverlay ? result : undefined;
   }
   if (sourcePrompt.startsWith('the tile floor in brandon')) {
     return cropResponse(
@@ -3028,7 +3217,7 @@ function canonicalM4LessonsSixThroughTenLayout(sections, sourcePrompt, mode) {
     );
   }
   if (sourcePrompt.startsWith('abdul is creating a stained glass window')) {
-    return cropResponse(
+    const result = cropResponse(
       'incomplete-stained-glass-border-array',
       1,
       'tight-official-incomplete-window-array',
@@ -3036,12 +3225,17 @@ function canonicalM4LessonsSixThroughTenLayout(sections, sourcePrompt, mode) {
       'figure-over-open-response',
       'complete-array-and-find-missing-tiles'
     );
+    return !isBlank || all.find((section) => section?.kind === 'source-crop')?.sketchOverlay ? result : undefined;
   }
 
   if (sourcePrompt.startsWith('use a straight edge to draw a grid of equal size squares')) {
     if (
       cropCount !== 1 ||
-      equations.reduce((sum, section) => sum + (section.lines ?? []).length, 0) !== 6
+      equations.reduce((sum, section) => sum + (section.lines ?? []).length, 0) !== 6 ||
+      (isBlank && (
+        !all.find((section) => section?.kind === 'source-crop')?.sketchOverlay ||
+        equations.reduce((sum, section) => sum + (section.lineAnswers ?? []).length, 0) !== 6
+      ))
     ) return undefined;
     return reviewed(
       'six-labeled-rectangles-on-common-perimeter-grid',
@@ -3054,7 +3248,7 @@ function canonicalM4LessonsSixThroughTenLayout(sections, sourcePrompt, mode) {
     );
   }
   if (sourcePrompt.startsWith('the area of benjamin')) {
-    return cropResponse(
+    const result = cropResponse(
       'bedroom-perimeter-grid-to-nine-by-eleven-array',
       3,
       'tight-official-bedroom-perimeter-grid',
@@ -3062,6 +3256,7 @@ function canonicalM4LessonsSixThroughTenLayout(sections, sourcePrompt, mode) {
       'figure-over-three-part-response',
       'label-draw-grid-and-find-total'
     );
+    return !isBlank || all.find((section) => section?.kind === 'source-crop')?.sketchOverlay ? result : undefined;
   }
   if (sourcePrompt.startsWith('mrs young s art class')) {
     return cropResponse(
@@ -3089,7 +3284,8 @@ function canonicalM4LessonsSixThroughTenLayout(sections, sourcePrompt, mode) {
   if (sourcePrompt === 'write a multiplication equation to find the area of each rectangle') {
     if (
       geometry?.shapes?.length !== 3 ||
-      equations.reduce((sum, section) => sum + (section.lines ?? []).length, 0) !== 3
+      equations.reduce((sum, section) => sum + (section.lines ?? []).length, 0) !== 3 ||
+      (isBlank && equations.reduce((sum, section) => sum + (section.lineAnswers ?? []).length, 0) !== 3)
     ) return undefined;
     return reviewed(
       'three-labeled-rectangle-area-equations',
@@ -3103,7 +3299,8 @@ function canonicalM4LessonsSixThroughTenLayout(sections, sourcePrompt, mode) {
   if (sourcePrompt.startsWith('write a multiplication equation and a division equation')) {
     if (
       geometry?.shapes?.length !== 3 ||
-      equations.reduce((sum, section) => sum + (section.lines ?? []).length, 0) !== 6
+      equations.reduce((sum, section) => sum + (section.lines ?? []).length, 0) !== 6 ||
+      (isBlank && equations.reduce((sum, section) => sum + (section.lineAnswers ?? []).length, 0) !== 6)
     ) return undefined;
     return reviewed(
       'three-known-area-unknown-side-rectangles',
@@ -3115,7 +3312,9 @@ function canonicalM4LessonsSixThroughTenLayout(sections, sourcePrompt, mode) {
     );
   }
   if (sourcePrompt.startsWith('on the grid below draw a rectangle that has an area of 42')) {
-    const valid = isBlank ? cropCount === 1 : same(arrayCounts, [42]);
+    const valid = isBlank
+      ? cropCount === 1 && all.find((section) => section?.kind === 'source-crop')?.sketchOverlay
+      : same(arrayCounts, [42]);
     if (!valid) return undefined;
     return reviewed(
       'forty-two-area-rectangle-on-official-grid',
@@ -3192,7 +3391,11 @@ function canonicalM4LessonsSixThroughTenLayout(sections, sourcePrompt, mode) {
     );
   }
   if (sourcePrompt.startsWith('furaha and rahema use square tiles')) {
-    if (!same(arrayCounts, [24, 28]) || !hasOpenResponse()) return undefined;
+    if (
+      !same(arrayCounts, [24, 28]) ||
+      !hasOpenResponse() ||
+      (isBlank && equations.reduce((sum, section) => sum + (section.lineAnswers ?? []).length, 0) !== 2)
+    ) return undefined;
     return reviewed(
       'combine-four-by-six-and-four-by-seven-arrays',
       3,
@@ -3217,7 +3420,8 @@ function canonicalM4LessonsSixThroughTenLayout(sections, sourcePrompt, mode) {
   if (sourcePrompt.startsWith('label the side lengths of the shaded and unshaded rectangles')) {
     if (
       !same(arrayCounts, [56, 48, 78, 96]) ||
-      arrays.some((array) => !array.shadeBeforeRows && !array.shadeBeforeColumns)
+      arrays.some((array) => !array.shadeBeforeRows && !array.shadeBeforeColumns) ||
+      (isBlank && equations.reduce((sum, section) => sum + (section.lineAnswers ?? []).length, 0) !== 12)
     ) return undefined;
     return reviewed(
       'four-shaded-distributive-area-arrays',
@@ -3246,7 +3450,7 @@ function canonicalM4LessonsSixThroughTenLayout(sections, sourcePrompt, mode) {
     );
   }
   if (sourcePrompt.startsWith('break the 15 x 5 rectangle')) {
-    if (!same(arrayCounts, [75]) || !hasOpenResponse()) return undefined;
+    if (!same(arrayCounts, [75]) || !hasOpenResponse() || (isBlank && !arrays[0]?.selectableCells)) return undefined;
     return reviewed(
       'fifteen-by-five-student-chosen-split',
       1,
@@ -3300,7 +3504,8 @@ function canonicalM4LessonsOneThroughFiveLayout(sections, sourcePrompt, mode) {
       sections.length !== 2 ||
       primary?.kind !== 'source-crop' ||
       sections[1]?.kind !== 'data-table' ||
-      (sections[1].rows ?? []).length !== 2
+      (sections[1].rows ?? []).length !== 2 ||
+      (isBlank && (!primary.sketchOverlay || (sections[1].cellAnswers ?? []).length !== 2))
     ) return undefined;
     return reviewed(
       `two-target-${patternBlockMatch[1]}-pattern-block-cover`,
@@ -3330,7 +3535,8 @@ function canonicalM4LessonsOneThroughFiveLayout(sections, sourcePrompt, mode) {
       sections.length !== 2 ||
       primary?.kind !== 'geometry-diagram' ||
       sections[1]?.kind !== 'data-table' ||
-      (sections[1].rows ?? []).length !== 1
+      (sections[1].rows ?? []).length !== 1 ||
+      (isBlank && (!primary.sketchOverlay || (sections[1].cellAnswers ?? []).length !== 1))
     ) return undefined;
     return reviewed(
       'six-square-pattern-block-rectangle-cover',
@@ -3343,7 +3549,7 @@ function canonicalM4LessonsOneThroughFiveLayout(sections, sourcePrompt, mode) {
   }
 
   if (sourcePrompt.startsWith('use trapezoid pattern blocks to cover the rectangle in problem 5')) {
-    if (sections.length !== 2 || primary?.kind !== 'geometry-diagram' || !sourceResponse(sections[1])) return undefined;
+    if (sections.length !== 2 || primary?.kind !== 'geometry-diagram' || !sourceResponse(sections[1]) || (isBlank && !primary.sketchOverlay)) return undefined;
     return reviewed(
       'trapezoid-non-cover-rectangle-explanation',
       1,
@@ -3359,7 +3565,9 @@ function canonicalM4LessonsOneThroughFiveLayout(sections, sourcePrompt, mode) {
     const validBlank =
       primary?.kind === 'data-table' &&
       (primary.columns ?? []).length === 3 &&
-      (primary.rows ?? []).length === 3;
+      (primary.rows ?? []).length === 3 &&
+      (primary.drawingCellKeys ?? []).length === 3 &&
+      (primary.cellAnswers ?? []).length === 3;
     const arrays = cardArrays(primary);
     const validSolved = arrays.length === 3 && same(counts(arrays), [12, 12, 12]);
     if (!(isBlank ? validBlank : validSolved)) return undefined;
@@ -3417,13 +3625,14 @@ function canonicalM4LessonsOneThroughFiveLayout(sections, sourcePrompt, mode) {
   }
 
   if (sourcePrompt.startsWith('each square is 1 square unit')) {
-    const arrays = cardArrays(primary);
-    const foundCounts = counts(arrays);
-    const expectedCounts = same(foundCounts, [6, 12, 12, 20])
-      ? [6, 12, 12, 20]
-      : same(foundCounts, [6, 9, 16, 12])
-        ? [6, 9, 16, 12]
-        : undefined;
+    const sourceTable = sections[1];
+    const sourceCrop = primary?.kind === 'source-crop' && primary.src === '/source-pages/m4-teacher/page-037.png';
+    const expectedCounts = sourceCrop && sourceTable?.kind === 'data-table' && (sourceTable.rows ?? []).length === 4
+      ? primary.crop?.y < 600
+        ? [6, 12, 12, 20]
+        : [6, 9, 16, 12]
+      : undefined;
+    if (isBlank && (sourceTable?.cellAnswers ?? []).length !== 4) return undefined;
     if (!expectedCounts) return undefined;
     return reviewed(
       'four-labeled-square-unit-rectangles',
@@ -3465,7 +3674,7 @@ function canonicalM4LessonsOneThroughFiveLayout(sections, sourcePrompt, mode) {
 
   if (sourcePrompt.startsWith('use a ruler to measure the side lengths of the rectangle in centimeters')) {
     const valid = isBlank ? primary?.kind === 'geometry-diagram' : primary?.kind === 'array' && primary.rows * primary.columns === 14;
-    if (!valid) return undefined;
+    if (!valid || (isBlank && (!primary.sketchOverlay || !(sections[1]?.lineAnswers ?? []).length))) return undefined;
     return reviewed(
       'measure-tile-and-count-centimeter-rectangle',
       1,
@@ -3478,7 +3687,7 @@ function canonicalM4LessonsOneThroughFiveLayout(sections, sourcePrompt, mode) {
 
   if (sourcePrompt.startsWith('use a ruler to measure the side lengths of the rectangle in inches')) {
     const valid = isBlank ? primary?.kind === 'geometry-diagram' : primary?.kind === 'array' && primary.rows * primary.columns === 6;
-    if (!valid) return undefined;
+    if (!valid || (isBlank && (!primary.sketchOverlay || !(sections[1]?.lineAnswers ?? []).length))) return undefined;
     return reviewed(
       'measure-tile-and-count-inch-rectangle',
       1,
@@ -3490,7 +3699,7 @@ function canonicalM4LessonsOneThroughFiveLayout(sections, sourcePrompt, mode) {
   }
 
   if (sourcePrompt.startsWith('mariana uses square centimeter tiles')) {
-    if (primary?.kind !== 'array' || primary.rows * primary.columns !== 12) return undefined;
+    if (primary?.kind !== 'array' || primary.rows * primary.columns !== 12 || (isBlank && !(primary.captionAnswers ?? []).length)) return undefined;
     return reviewed(
       'label-three-by-four-tiled-rectangle',
       1,
@@ -3548,8 +3757,11 @@ function canonicalM4LessonsOneThroughFiveLayout(sections, sourcePrompt, mode) {
     const validBlank =
       cards.length === 6 &&
       cards.every((card) =>
-        (card.sections ?? []).length === 1 &&
-        card.sections[0]?.kind === 'source-crop');
+        (card.sections ?? []).length === 2 &&
+        card.sections[0]?.kind === 'source-crop' &&
+        card.sections[0]?.sketchOverlay &&
+        card.sections[1]?.kind === 'equations' &&
+        (card.sections[1]?.lineAnswers ?? []).length === 1);
     const arrays = cardArrays(primary);
     const validSolved = same(counts(arrays), [18, 20, 18, 24, 20, 9]);
     if (!(isBlank ? validBlank : validSolved)) return undefined;
@@ -4336,7 +4548,11 @@ function canonicalM3LessonsSixThroughTenLayout(sections, sourcePrompt, mode) {
 
   if (sourcePrompt.includes('kelly solves 42 divided by 7')) {
     const bond = flattened.find((section) => section.kind === 'number-bond');
-    if (!bond || normalizeText(bond.whole) !== '42 divided by 7' || bond.parts?.length !== 2) {
+    const blankValid = first?.kind === 'source-response-workspace' &&
+      first.parts?.length === 1 &&
+      first.parts[0]?.openWorkspace;
+    const solvedValid = bond && normalizeText(bond.whole) === '42 divided by 7' && bond.parts?.length === 2;
+    if (mode === 'blank' ? !blankValid : !solvedValid) {
       return unsupportedLayout(sections);
     }
     return {
@@ -4782,18 +4998,20 @@ function canonicalM3LessonTwoLayout(sections, sourcePrompt, mode) {
   }
 
   if (sourcePrompt.includes('32 crayons')) {
-    const hasEquation = sections.some(
-      (section) => section.kind === 'equations' && section.lines?.length === 1
-    );
     const hasModeModel = mode === 'blank'
-      ? sections.some((section) => section.kind === 'note')
+      ? sections.some(
+          (section) =>
+            section.kind === 'source-response-workspace' &&
+            section.parts?.length === 1 &&
+            section.parts[0]?.openWorkspace
+        )
       : sections.some(
           (section) =>
             section.kind === 'tape' &&
             section.parts?.length === 4 &&
             section.parts.every((part) => normalizeText(part.label) === '8')
         );
-    if (!hasEquation || !hasModeModel) return unsupportedLayout(sections);
+    if (!hasModeModel) return unsupportedLayout(sections);
     return {
       family: 'equal-group-open-response',
       subpartCount: 1,

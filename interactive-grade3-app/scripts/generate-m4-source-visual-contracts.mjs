@@ -3,6 +3,10 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+throw new Error(
+  'Disabled: crop-only evidence cannot generate learner-facing visual contracts. Author source-observed layout signatures and reusable interactive workspace data instead.'
+);
+
 const appRoot = dirname(dirname(fileURLToPath(import.meta.url)));
 const baselineRoot = join(appRoot, 'teacher-edition-baseline');
 const outputRoot = join(baselineRoot, 'visual-layout-contracts', 'm4');

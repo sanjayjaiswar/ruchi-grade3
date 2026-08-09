@@ -42,11 +42,26 @@
         ],
         "answerKeyEvidence": "14, 28, 35, 56, 63, 70. 42, 6; 21, 3; 56, 8; 49, 7; 7, 1; 70, 10; 63, 9; 28, 4; 14, 2; 35, 5.",
         "layout": {
-          "family": "table-model"
+          "family": "interactive-expression-match",
+          "subpartCount": 10,
+          "columnCount": 3,
+          "rowCount": 10,
+          "blankInputCount": 26,
+          "printedEquationLineCount": 20,
+          "openWorkspaceCount": 0,
+          "modelPrimitive": "fish-bowl-number+fish-expression+paired-division-equation",
+          "modelCounts": [10, 10, 10],
+          "modelOrientation": "three-aligned-vertical-columns",
+          "factOrder": [6, 3, 8, 7, 1, 10, 9, 4, 2, 5],
+          "responseStructure": "fill-counts-match-each-expression-and-complete-one-related-division-fact-per-row"
         },
-        "blankMustNotContain": [],
-        "solvedMustContain": [],
-        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+        "blankMustNotContain": [
+          "14, 28, 35, 56, 63, 70"
+        ],
+        "solvedMustContain": [
+          "14, 28, 35, 56, 63, 70"
+        ],
+        "sourceLayoutNotes": "Ten fish bowls form the left count-by-seven column, ten fish carrying multiplication expressions form the middle column in printed order, and ten related division equations align directly to the right. Six bowls and all twenty division fields are blank. Learners fill, match, and complete each related fact; screenshots are evidence only."
       }
     },
     {
@@ -58,11 +73,24 @@
         ],
         "answerKeyEvidence": "21, 35, 49, 56, 70. a. 3, 21; 21, 3. b. 5, 35; 35, 5. c. 7, 49; 49, 7. d. 8, 56; 56, 8. e. 10, 70; 70, 10.",
         "layout": {
-          "family": "table-model"
+          "family": "fillable-source-response-workspace",
+          "subpartCount": 6,
+          "rowCount": 6,
+          "blankInputCount": 25,
+          "printedEquationLineCount": 10,
+          "openWorkspaceCount": 0,
+          "modelPrimitive": "linear-number-sequence+five-paired-equation-rows",
+          "modelCounts": [10, 5, 10],
+          "modelOrientation": "sequence-over-five-paired-horizontal-equation-rows",
+          "responseStructure": "fill-five-counts-then-write-one-multiplication-and-one-division-equation-for-each"
         },
-        "blankMustNotContain": [],
-        "solvedMustContain": [],
-        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+        "blankMustNotContain": [
+          "21, 35, 49, 56, 70"
+        ],
+        "solvedMustContain": [
+          "21, 35, 49, 56, 70"
+        ],
+        "sourceLayoutNotes": "One ten-term horizontal count-by-seven sequence sits above exactly five labeled rows, a through e. Each row places one multiplication equation beside one related division equation. No cards, hints, or extra fact explanations are printed."
       }
     },
     {
@@ -74,11 +102,18 @@
         ],
         "answerKeyEvidence": "Explanations will vary.",
         "layout": {
-          "family": "number-bond-model"
+          "family": "open-source-response-workspace",
+          "subpartCount": 1,
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "modelPrimitive": "printed-claim+open-writing-area",
+          "modelCounts": [],
+          "modelOrientation": "single-vertical-open-response",
+          "responseStructure": "write-and-explain-without-invented-equation-scaffold"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+        "sourceLayoutNotes": "The source prints Abe’s complete claim and question followed by open writing space. It does not print a number bond, equation-completion scaffold, or answer choice."
       }
     },
     {
@@ -90,11 +125,22 @@
         ],
         "answerKeyEvidence": "Both are correct; explanations will vary.",
         "layout": {
-          "family": "composite-mathematical-model"
+          "family": "open-source-response-workspace",
+          "subpartCount": 1,
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "modelPrimitive": "printed-claim+open-writing-area",
+          "modelCounts": [],
+          "modelOrientation": "single-vertical-open-response",
+          "responseStructure": "write-and-explain-without-invented-equation-scaffold"
         },
-        "blankMustNotContain": [],
-        "solvedMustContain": [],
-        "sourceLayoutNotes": "Problem-level structure was reviewed directly from the fingerprinted Teacher Edition Problem Set page; whole-page screenshot acceptance is prohibited."
+        "blankMustNotContain": [
+          "Both are correct"
+        ],
+        "solvedMustContain": [
+          "Both are correct"
+        ],
+        "sourceLayoutNotes": "The source prints Molly’s and James’s claims followed by open explanation space. It does not print two arrays, prefilled products, an equality check, or selectable answers."
       }
     }
   ]

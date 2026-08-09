@@ -21,6 +21,7 @@ import {
   m5FunctionalConceptSections,
   m5TeacherSource
 } from './functional-fidelity';
+import { hydrateVisualAnswerMetadata } from '../visual-answer-hydration';
 
 const DENOMINATOR_WORDS: Array<{ pattern: RegExp; beforePattern: string; value: number }> = [
   { pattern: /\btwelfths?\b/i, beforePattern: 'twelfths?', value: 12 },
@@ -1415,8 +1416,7 @@ function makeLesson1(): ProblemSetCenteredLesson {
 
       return {
         ...centeredProblem,
-        blankVisual: createM5ProblemVisual(centeredProblem, false, 1),
-        solvedVisual: createM5ProblemVisual(centeredProblem, true, 1)
+        ...createM5VisualPair(centeredProblem, 1)
       };
     })
   };
@@ -1490,14 +1490,8 @@ function makeLesson30(): ProblemSetCenteredLesson {
         ...sourceTaskPageImages(30, 1),
         ...answerKeyImages
       ],
-      blankVisual: createM5ProblemVisual(
+      ...createM5VisualPair(
         { ...problem, solvedAnswer: sourceProblemEvidence(30, 1).answerKeyEvidence },
-        false,
-        30
-      ),
-      solvedVisual: createM5ProblemVisual(
-        { ...problem, solvedAnswer: sourceProblemEvidence(30, 1).answerKeyEvidence },
-        true,
         30
       )
     }]
@@ -1933,6 +1927,18 @@ function createM5ProblemVisual(problem: ProblemSetCenteredProblem, solved: boole
   };
 }
 
+function createM5VisualPair(
+  problem: ProblemSetCenteredProblem,
+  lessonNumber: number
+): Pick<ProblemSetCenteredProblem, 'blankVisual' | 'solvedVisual'> {
+  const solvedVisual = createM5ProblemVisual(problem, true, lessonNumber);
+  const blankVisual = hydrateVisualAnswerMetadata(
+    createM5ProblemVisual(problem, false, lessonNumber),
+    solvedVisual
+  );
+  return { blankVisual, solvedVisual };
+}
+
 function m5ReviewedLessonsOneThroughFive(
   problem: ProblemSetCenteredProblem,
   solved: boolean,
@@ -2201,7 +2207,35 @@ function m5ReviewedLessonsOneThroughFive(
   }
 
   if (lessonNumber === 5) {
-    if (number === 1) return undefined;
+    if (number === 1) {
+      const rows = [
+        ['a. provided example', '2', '1', '1 half', '1/2'],
+        ['b.', '3', '1', '1 third', '1/3'],
+        ['c.', '4', '1', '1 fourth', '1/4'],
+        ['d.', '5', '1', '1 fifth', '1/5'],
+        ['e.', '6', '1', '1 sixth', '1/6'],
+        ['f.', '8', '1', '1 eighth', '1/8']
+      ];
+      return [
+        sourceCrop(
+          '/source-pages/m5-teacher/page-59.png',
+          'Official six source shapes',
+          'Six Teacher Edition shapes partitioned into 2, 3, 4, 5, 6, and 8 equal parts',
+          { x: 115, y: 350, width: 270, height: 1000 },
+          'Only the six mathematically meaningful source shapes are retained; the response chart is authored and interactive.'
+        ),
+        {
+          kind: 'data-table',
+          label: solved ? 'Completed six-row unit-fraction chart' : 'Interactive six-row unit-fraction chart',
+          columns: ['Source row', 'Total equal parts', 'Shaded parts', 'Unit fraction', 'Fraction shaded'],
+          rows: solved
+            ? rows
+            : rows.map((row, rowIndex) => rowIndex === 0
+              ? row
+              : [row[0], '____', '____', '____', '____'])
+        }
+      ];
+    }
     if (number === 2) {
       return [
         sourceCrop(
@@ -3702,38 +3736,54 @@ function m5ReviewedLessonsTwentyOneThroughTwentyFive(
       )
     ];
     if (number === 1) {
+      const missingLabels = equations(
+        [
+          'Halves/fourths missing labels: ____  ____  ____  ____  ____  ____  ____',
+          'Halves/sixths missing labels: ____  ____  ____  ____  ____  ____  ____  ____'
+        ],
+        [
+          'Halves: 0/2, 1/2, 2/2, 3/2, 4/2. Fourths: 0/4, 1/4, 2/4, 3/4, 4/4, 5/4, 6/4, 7/4, 8/4.',
+          'Halves: 0/2, 1/2, 2/2, 3/2, 4/2. Sixths: 0/6, 1/6, 2/6, 3/6, 4/6, 5/6, 6/6, 7/6, 8/6, 9/6, 10/6, 11/6, 12/6.'
+        ]
+      );
+      if (!solved && missingLabels.kind === 'equations') {
+        missingLabels.lineAnswers = [
+          ['0/2', '1/4', '2/4', '4/4', '3/2', '6/4', '8/4'],
+          ['0/2', '1/6', '3/6', '2/2', '6/6', '3/2', '9/6', '12/6']
+        ];
+      }
       return [
         ...p1Lines(solved),
-        equations(
-          [
-            'Halves/fourths missing labels: ____  ____  ____  ____  ____  ____  ____',
-            'Halves/sixths missing labels: ____  ____  ____  ____  ____  ____  ____  ____'
-          ],
-          [
-            'Halves: 0/2, 1/2, 2/2, 3/2, 4/2. Fourths: 0/4, 1/4, 2/4, 3/4, 4/4, 5/4, 6/4, 7/4, 8/4.',
-            'Halves: 0/2, 1/2, 2/2, 3/2, 4/2. Sixths: 0/6, 1/6, 2/6, 3/6, 4/6, 5/6, 6/6, 7/6, 8/6, 9/6, 10/6, 11/6, 12/6.'
-          ]
-        )
+        missingLabels
       ];
     }
     if (number === 2) {
+      const colorGroups = equations(
+        [
+          'Blue, equal to 1/2: ____',
+          'Yellow, equal to 1: ____',
+          'Green, equal to 3/2: ____',
+          'Red, equal to 2: ____'
+        ],
+        [
+          'Blue: 1/2 = 2/4 and 1/2 = 3/6.',
+          'Yellow: 2/2 = 4/4 and 2/2 = 6/6.',
+          'Green: 3/2 = 6/4 and 3/2 = 9/6.',
+          'Red: 4/2 = 8/4 and 4/2 = 12/6.'
+        ],
+        solved ? 'Teacher Edition color groups' : 'Official color directions'
+      );
+      if (!solved && colorGroups.kind === 'equations') {
+        colorGroups.lineAnswers = [
+          ['2/4 and 3/6'],
+          ['2/2 and 4/4 and 6/6'],
+          ['6/4 and 9/6'],
+          ['4/2 and 8/4 and 12/6']
+        ];
+      }
       return [
         ...p1Lines(true),
-        equations(
-          [
-            'Blue, equal to 1/2: ____',
-            'Yellow, equal to 1: ____',
-            'Green, equal to 3/2: ____',
-            'Red, equal to 2: ____'
-          ],
-          [
-            'Blue: 1/2 = 2/4 and 1/2 = 3/6.',
-            'Yellow: 2/2 = 4/4 and 2/2 = 6/6.',
-            'Green: 3/2 = 6/4 and 3/2 = 9/6.',
-            'Red: 4/2 = 8/4 and 4/2 = 12/6.'
-          ],
-          solved ? 'Teacher Edition color groups' : 'Official color directions'
-        )
+        colorGroups
       ];
     }
     if (number === 3) {
@@ -3839,19 +3889,33 @@ function m5ReviewedLessonsTwentyOneThroughTwentyFive(
 
   if (lessonNumber === 23) {
     if (number === 1) {
+      const fourthsEntry = equations(
+        ['Divide and label the line in fourths above it: ____'],
+        ['0/4 through 12/4, labeled in red pencil.']
+      );
+      if (!solved && fourthsEntry.kind === 'equations') {
+        fourthsEntry.lineAnswers = [['0/4 through 12/4']];
+      }
       return [
         solved
           ? completeLine(0, 3, 4, 'Fourths from 0 to 3')
           : endpointLine(0, 3, 'Source whole-mark line from 0 to 3'),
-        equations(['Divide and label the line in fourths above it: ____'], ['0/4 through 12/4, labeled in red pencil.'])
+        fourthsEntry
       ];
     }
     if (number === 2) {
+      const eighthsEntry = equations(
+        ['Divide and label the line in eighths below it: ____'],
+        ['0/8 through 24/8, labeled in blue pencil.']
+      );
+      if (!solved && eighthsEntry.kind === 'equations') {
+        eighthsEntry.lineAnswers = [['0/8 through 24/8']];
+      }
       return [
         solved
           ? segmentedCompleteLines(0, 3, 8, 'Eighths from 0 to 3, shown as three contiguous whole intervals')
           : endpointLine(0, 3, 'Source whole-mark line from 0 to 3'),
-        equations(['Divide and label the line in eighths below it: ____'], ['0/8 through 24/8, labeled in blue pencil.'])
+        eighthsEntry
       ];
     }
     if (number === 3) {
@@ -3932,10 +3996,14 @@ function m5ReviewedLessonsTwentyOneThroughTwentyFive(
       ];
     }
     if (number === 2) {
-      return [equations(
+      const equivalentOnes = equations(
         ['2/2 = ____ = ____ = ____'],
         ['2/2 = 3/3 = 4/4 = 5/5 = 1']
-      )];
+      );
+      if (!solved && equivalentOnes.kind === 'equations') {
+        equivalentOnes.lineAnswers = [['3/3', '4/4', '5/5']];
+      }
+      return [equivalentOnes];
     }
     if (number === 3) {
       return [response(
@@ -4001,9 +4069,19 @@ function m5ReviewedLessonsTwentyOneThroughTwentyFive(
           ]
         : [
             line('Rename 0 through 6 as fractions', ['0', '1', '2', '3', '4', '5', '6']),
-            equations(['Above the seven points: ____  ____  ____  ____  ____  ____  ____'], []),
+            {
+              kind: 'equations',
+              label: 'Official response blanks',
+              lines: ['Above the seven points: ____  ____  ____  ____  ____  ____  ____'],
+              lineAnswers: [['0/1', '1/1', '2/1', '3/1', '4/1', '5/1', '6/1']]
+            },
             line('Mixed given boxes from 10 through 16', ['____', '____', '12', '13', '____', '15', '16']),
-            equations(['Above: 10/1, 11/1, ____, ____, 14/1, ____, ____'], [])
+            {
+              kind: 'equations',
+              label: 'Official response blanks',
+              lines: ['Above: 10/1, 11/1, ____, ____, 14/1, ____, ____'],
+              lineAnswers: [['12/1', '13/1', '15/1', '16/1']]
+            }
           ];
     }
     return solved
@@ -4785,6 +4863,12 @@ function m5ReviewedVisualTitle(
 ): string | undefined {
   const number = Number(problem.number);
   const reviewedTitles: Record<number, Record<number, string>> = {
+    5: {
+      1: 'six-row unit-fraction chart',
+      2: 'unequal eight-piece cake judgment',
+      3: 'second cake shared equally by ten people',
+      4: 'compare one tenth and one eighth of same-size cakes'
+    },
     6: {
       1: 'partition and shade four fraction strips',
       2: 'soda as eighths of one whole',
@@ -5044,8 +5128,7 @@ function makeLesson(lessonNumber: number): ProblemSetCenteredLesson {
       sourcePageImages: exactTaskPageImages,
       blankSourcePageImages: exactTaskPageImages,
       solvedSourcePageImages: [...exactTaskPageImages, ...answerKeyImages],
-      blankVisual: createM5ProblemVisual(centeredProblem, false, lessonNumber),
-      solvedVisual: createM5ProblemVisual(centeredProblem, true, lessonNumber)
+      ...createM5VisualPair(centeredProblem, lessonNumber)
     };
   });
   return {

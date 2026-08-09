@@ -69,6 +69,27 @@ if (!lessonTemplate.includes(guardrail)) {
   report(lessonTemplatePath, 'missing the Blank/Solved PDF screenshot guardrail comment');
 }
 
+for (const marker of [
+  'data-interaction="click-to-match"',
+  '(click)="selectExpressionBottom',
+  'expressionPairIsCorrect',
+  'part.interactiveLines',
+  'inlineTokens',
+  'setInlineValue',
+  'inlineState',
+  'part.responsePlaceholder',
+  'part.openWorkspace',
+  'startSketch($event)',
+  'clearSketchFromControl($event)',
+  'dataCellSelectionState',
+  'aria-live="polite"',
+  '<textarea'
+]) {
+  if (!readText(join(srcRoot, 'app/shared/problem-visual-workspace/problem-visual-workspace.html')).includes(marker)) {
+    report(lessonTemplatePath, `missing authored Blank-mode interaction marker ${marker}`);
+  }
+}
+
 if (!problemSetPanel) {
   report(lessonTemplatePath, 'could not locate the Problem Set tab template for guardrail validation');
 }
@@ -161,6 +182,12 @@ for (const [moduleId, lessonCount] of Object.entries(lessonCounts)) {
           }
         }
       }
+      validateAuthoredInteraction(problem, label);
+      if (moduleId === 'm3') {
+        for (const section of flattenSections(problem.blankVisual?.sections ?? [])) {
+          validateInlineAnswers(section, label);
+        }
+      }
     }
   }
 }
@@ -187,4 +214,157 @@ function flattenSections(sections) {
     }
   }
   return flattened;
+}
+
+function validateAuthoredInteraction(problem, label) {
+  const blank = problem.blankVisual?.sections ?? [];
+  const solved = problem.solvedVisual?.sections ?? [];
+  const blankSection = blank.length === 1 ? blank[0] : undefined;
+  const solvedSection = solved.length === 1 ? solved[0] : undefined;
+  const isInteractiveMatch = blankSection?.kind === 'expression-match' && blankSection.interactive;
+  const isInteractiveResponse = blankSection?.kind === 'source-response-workspace' && (
+    (blankSection.parts ?? []).some((part) => part.interactiveLines || part.responsePlaceholder) ||
+    (label.startsWith('m3-') && (blankSection.parts ?? []).some((part) => part.openWorkspace))
+  );
+  if (!isInteractiveMatch && !isInteractiveResponse) {
+    return;
+  }
+  if (!solvedSection || solvedSection.kind !== blankSection.kind) {
+    const isOpenConstruction = isInteractiveResponse && (blankSection.parts ?? []).every((part) =>
+      part.openWorkspace
+    );
+    if (isOpenConstruction && solved.length > 0) {
+      return;
+    }
+    failures.push(`${label}: Solved must preserve the same reusable ${blankSection.kind} family as Blank`);
+    return;
+  }
+
+  if (isInteractiveMatch) {
+    if (blankSection.topItems?.includes('____') && blankSection.topItems?.length !== blankSection.topAnswers?.length) {
+      failures.push(`${label}: reusable expression-match data must provide Blank inputs and a complete answer sequence`);
+    }
+    if (
+      blankSection.matches?.length !== blankSection.topItems?.length ||
+      new Set((blankSection.matches ?? []).map((pair) => pair.topIndex)).size !== blankSection.topItems?.length ||
+      new Set((blankSection.matches ?? []).map((pair) => pair.bottomIndex)).size !== blankSection.matches?.length
+    ) {
+      failures.push(`${label}: interactive expression-match data must form a complete one-to-one answer key`);
+    }
+    if (!solvedSection.showMatches) {
+      failures.push(`${label}: Solved interactive expression-match must reveal the completed matching state`);
+    }
+    return;
+  }
+
+  if ((blankSection.parts ?? []).length !== (solvedSection.parts ?? []).length) {
+    failures.push(`${label}: Blank and Solved source-response workspaces must keep the same source part count`);
+    return;
+  }
+  for (let index = 0; index < blankSection.parts.length; index += 1) {
+    const blankPart = blankSection.parts[index];
+    const solvedPart = solvedSection.parts[index];
+    if (blankPart.interactiveLines) {
+      if (!(blankPart.lines ?? []).some((line) => line.includes('____'))) {
+        failures.push(`${label}: interactive source-response part ${index + 1} has no Blank input token`);
+      }
+      if ((solvedPart.lines ?? []).some((line) => line.includes('____'))) {
+        failures.push(`${label}: Solved source-response part ${index + 1} still contains a Blank input token`);
+      }
+    }
+    if (blankPart.responsePlaceholder && !solvedPart.response) {
+      failures.push(`${label}: open Blank response part ${index + 1} needs a source-supported Solved response`);
+    }
+  }
+}
+
+function validateInlineAnswers(section, label) {
+  const blankCount = (text) => String(text ?? '').match(/_{2,}/g)?.length ?? 0;
+  const requireAnswers = (text, answers, location) => {
+    const count = blankCount(text);
+    if (count > 0 && answers?.length !== count) {
+      failures.push(`${label}: ${location} exposes ${count} input blank${count === 1 ? '' : 's'} but has ${answers?.length ?? 0} feedback answer${answers?.length === 1 ? '' : 's'}`);
+    }
+  };
+
+  if (section?.kind === 'equations') {
+    (section.lines ?? []).forEach((line, index) => requireAnswers(line, section.lineAnswers?.[index], `equation line ${index + 1}`));
+  }
+  if (section?.kind === 'data-table') {
+    (section.rows ?? []).forEach((row, rowIndex) => row.forEach((cell, cellIndex) =>
+      requireAnswers(cell, section.cellAnswers?.[rowIndex]?.[cellIndex], `table row ${rowIndex + 1} cell ${cellIndex + 1}`)
+    ));
+  }
+  if (section?.kind === 'unit-form-workspace') {
+    (section.parts ?? []).forEach((part, partIndex) => (part.lines ?? []).forEach((line, lineIndex) =>
+      requireAnswers(line, part.lineAnswers?.[lineIndex], `unit-form part ${partIndex + 1} line ${lineIndex + 1}`)
+    ));
+  }
+  if (section?.kind === 'source-response-workspace') {
+    (section.parts ?? []).forEach((part, partIndex) => (part.lines ?? []).forEach((line, lineIndex) => {
+      requireAnswers(line, part.lineAnswers?.[lineIndex], `source-response part ${partIndex + 1} line ${lineIndex + 1}`);
+      if (blankCount(line) > 0 && !part.interactiveLines) {
+        failures.push(`${label}: source-response part ${partIndex + 1} line ${lineIndex + 1} has a visual blank but is not interactive`);
+      }
+    }));
+  }
+  if (section?.kind === 'solution-parts') {
+    (section.parts ?? []).forEach((part, index) => {
+      requireAnswers(part.prompt, part.promptAnswers, `solution part ${index + 1} prompt`);
+      requireAnswers(part.equation, part.equationAnswers, `solution part ${index + 1} equation`);
+    });
+  }
+  if (section?.kind === 'expression-match' && !section.interactive) {
+    (section.topItems ?? []).forEach((item, index) => requireAnswers(item, section.topItemAnswers?.[index], `expression item ${index + 1}`));
+    (section.bottomItems ?? []).forEach((item, index) => requireAnswers(item, section.bottomItemAnswers?.[index], `expression response ${index + 1}`));
+  }
+  if (section?.kind === 'number-bond') {
+    (section.parts ?? []).forEach((part, index) =>
+      requireAnswers(part.label, section.partAnswers?.[index], `number-bond part ${index + 1}`)
+    );
+    (section.equations ?? []).forEach((line, index) => requireAnswers(line, section.equationAnswers?.[index], `number-bond equation ${index + 1}`));
+  }
+  if (section?.kind === 'array') {
+    requireAnswers(section.label, section.labelAnswers, 'array label');
+    requireAnswers(section.caption, section.captionAnswers, 'array caption');
+  }
+  if (section?.kind === 'geometry-diagram') {
+    (section.shapes ?? []).forEach((shape, index) =>
+      requireAnswers(shape.label, section.shapeAnswers?.[index], `geometry shape ${index + 1}`)
+    );
+    requireAnswers(section.caption, section.captionAnswers, 'geometry caption');
+  }
+  if (section?.kind === 'tape') {
+    (section.parts ?? []).forEach((part, index) =>
+      requireAnswers(part.label, section.partAnswers?.[index], `tape part ${index + 1}`)
+    );
+    (section.braces ?? []).forEach((brace, index) =>
+      requireAnswers(brace.boxLabel || brace.label, section.braceAnswers?.[index], `tape brace ${index + 1}`)
+    );
+    (section.equations ?? []).forEach((line, index) =>
+      requireAnswers(line, section.equationAnswers?.[index], `tape equation ${index + 1}`)
+    );
+    requireAnswers(section.caption, section.captionAnswers, 'tape caption');
+  }
+  if (section?.kind === 'note') {
+    requireAnswers(section.text, section.textAnswers, 'note text');
+  }
+  if (section?.kind === 'card-grid') {
+    (section.cards ?? []).forEach((card, index) =>
+      requireAnswers(card.label, card.labelAnswers, `card ${index + 1} label`)
+    );
+  }
+  if (section?.kind === 'data-table' && section.correctCellKeys?.length) {
+    if (!section.selectableCells && !section.showCorrectSelections) {
+      failures.push(`${label}: table has a correct cell-selection key but no selectable or solved selection state`);
+    }
+    const validKeys = new Set((section.rows ?? []).flatMap((row, rowIndex) =>
+      row.map((_, cellIndex) => `${rowIndex}:${cellIndex}`)
+    ));
+    for (const key of section.correctCellKeys) {
+      if (!validKeys.has(key)) {
+        failures.push(`${label}: table cell-selection key ${key} is outside the rendered table`);
+      }
+    }
+  }
 }

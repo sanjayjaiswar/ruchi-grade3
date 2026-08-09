@@ -4,6 +4,60 @@
     <span>{{ mode === 'solved' ? 'Solved visual' : 'Blank visual' }}</span>
   </header>
 
+  <ng-template #sourceResponseTemplate let-response>
+    <strong *ngIf="response.label">{{ response.label }}</strong>
+    <div class="visual-source-response-workspace" [class.is-wide]="response.wide">
+      <section
+        *ngFor="let part of response.parts"
+        [class.has-divider]="part.dividerBefore"
+        [class.has-open-workspace]="part.openWorkspace"
+        [class.has-fillable-lines]="part.interactiveLines">
+        <div class="source-response-prompt">
+          <p><b *ngIf="part.lead">{{ part.lead }}</b>{{ part.prompt }}</p>
+          <strong *ngIf="part.challenge" class="source-response-challenge">CHALLENGE!</strong>
+        </div>
+        <div class="source-response-lines" *ngIf="part.lines.length">
+          <b *ngIf="part.solutionLabel">{{ part.solutionLabel }}</b>
+          <span *ngFor="let line of part.lines; let lineIndex = index" [class.is-fillable]="part.interactiveLines">
+            <ng-container *ngIf="part.interactiveLines; else plainResponseLine">
+              <ng-container *ngFor="let token of inlineTokens(line, part.lineAnswers?.[lineIndex]); let tokenIndex = index">
+                <input
+                  *ngIf="token.input"
+                  type="text"
+                  [attr.inputmode]="inlineInputMode(token.answer)"
+                  [attr.aria-label]="'Response blank ' + (tokenIndex + 1)"
+                  [class.is-correct]="inlineState(part, 'line', lineIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                  [class.is-incorrect]="inlineState(part, 'line', lineIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                  (input)="setInlineValue(part, 'line', lineIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+                <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+              </ng-container>
+            </ng-container>
+            <ng-template #plainResponseLine>{{ line }}</ng-template>
+          </span>
+        </div>
+        <div class="source-response-sketch" *ngIf="mode === 'blank' && (part.sketchWorkspace || part.openWorkspace)">
+          <span>Draw or model your work</span>
+          <canvas
+            #sketchpad
+            width="1200"
+            height="420"
+            aria-label="Drawing workspace"
+            (pointerdown)="startSketch($event)"
+            (pointermove)="continueSketch($event)"
+            (pointerup)="finishSketch($event)"
+            (pointercancel)="finishSketch($event)"></canvas>
+          <button type="button" (click)="clearSketchFromControl($event)">Clear drawing</button>
+        </div>
+        <textarea
+          *ngIf="mode === 'blank' && (part.responsePlaceholder || part.openWorkspace)"
+          rows="7"
+          aria-label="Written response"
+          [placeholder]="part.responsePlaceholder || 'Write your equation, answer, or explanation here.'"></textarea>
+        <div *ngIf="mode === 'solved' && part.response" class="source-response-solved">{{ part.response }}</div>
+      </section>
+    </div>
+  </ng-template>
+
   <article class="visual-section" *ngFor="let section of visibleSections(spec.sections)">
     <ng-container *ngIf="unknownRiddleWorkspaceSection(section) as riddle">
       <strong *ngIf="riddle.label">{{ riddle.label }}</strong>
@@ -16,7 +70,18 @@
             [style.gridRow]="entry.row"
             [style.gridColumn]="entry.side === 'left' ? 1 : 2">
             <span class="unknown-riddle-thought">{{ entry.equation }}</span>
-            <span class="unknown-riddle-answer">{{ entry.letter }} = {{ entry.answer || '_____' }}</span>
+            <span class="unknown-riddle-answer">
+              {{ entry.letter }} =
+              <input
+                *ngIf="mode === 'blank' && entry.expectedAnswer; else riddleAnswer"
+                type="text"
+                [attr.inputmode]="inlineInputMode(entry.expectedAnswer)"
+                [attr.aria-label]="'Value of ' + entry.letter"
+                [class.is-correct]="inlineState(entry, 'riddle', 0, 0, 0, entry.expectedAnswer) === 'correct'"
+                [class.is-incorrect]="inlineState(entry, 'riddle', 0, 0, 0, entry.expectedAnswer) === 'incorrect'"
+                (input)="setInlineValue(entry, 'riddle', 0, 0, 0, $any($event.target).value)" />
+              <ng-template #riddleAnswer>{{ entry.answer || '_____' }}</ng-template>
+            </span>
           </article>
         </div>
         <section class="unknown-riddle-decoder">
@@ -25,7 +90,17 @@
             <span
               *ngFor="let value of riddle.decoder.values; let valueIndex = index"
               [class.has-gap-after]="riddle.decoder.gapAfterIndex === valueIndex">
-              <b>{{ riddle.decoder.letters?.[valueIndex] || '____' }}</b>
+              <b>
+                <input
+                  *ngIf="mode === 'blank' && riddle.decoder.expectedLetters?.[valueIndex]; else decodedLetter"
+                  type="text"
+                  maxlength="1"
+                  [attr.aria-label]="'Riddle letter ' + (valueIndex + 1)"
+                  [class.is-correct]="inlineState(riddle.decoder, 'decoder', valueIndex, 0, 0, riddle.decoder.expectedLetters?.[valueIndex]) === 'correct'"
+                  [class.is-incorrect]="inlineState(riddle.decoder, 'decoder', valueIndex, 0, 0, riddle.decoder.expectedLetters?.[valueIndex]) === 'incorrect'"
+                  (input)="setInlineValue(riddle.decoder, 'decoder', valueIndex, 0, 0, $any($event.target).value)" />
+                <ng-template #decodedLetter>{{ riddle.decoder.letters?.[valueIndex] || '____' }}</ng-template>
+              </b>
               <em>{{ value }}</em>
             </span>
           </div>
@@ -35,23 +110,9 @@
     </ng-container>
 
     <ng-container *ngIf="sourceResponseWorkspaceSection(section) as response">
-      <strong *ngIf="response.label">{{ response.label }}</strong>
-      <div class="visual-source-response-workspace">
-        <section
-          *ngFor="let part of response.parts"
-          [class.has-divider]="part.dividerBefore"
-          [class.has-open-workspace]="part.openWorkspace">
-          <div class="source-response-prompt">
-            <p><b *ngIf="part.lead">{{ part.lead }}</b>{{ part.prompt }}</p>
-            <strong *ngIf="part.challenge" class="source-response-challenge">CHALLENGE!</strong>
-          </div>
-          <div class="source-response-lines" *ngIf="part.lines.length">
-            <b *ngIf="part.solutionLabel">{{ part.solutionLabel }}</b>
-            <span *ngFor="let line of part.lines">{{ line }}</span>
-          </div>
-        </section>
-      </div>
+      <ng-container *ngTemplateOutlet="sourceResponseTemplate; context: { $implicit: response }"></ng-container>
     </ng-container>
+
 
     <ng-container *ngIf="unitFormWorkspaceSection(section) as workspace">
       <strong *ngIf="workspace.label">{{ workspace.label }}</strong>
@@ -107,13 +168,39 @@
             </div>
 
             <div class="unit-form-fields">
-              <span *ngFor="let line of part.lines">{{ line }}</span>
+              <span *ngFor="let line of part.lines; let lineIndex = index">
+                <ng-container *ngFor="let token of inlineTokens(line, part.lineAnswers?.[lineIndex])">
+                  <input
+                    *ngIf="token.input"
+                    class="visual-inline-input"
+                    type="text"
+                    [attr.inputmode]="inlineInputMode(token.answer)"
+                    [class.is-correct]="inlineState(part, 'unit-line', lineIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                    [class.is-incorrect]="inlineState(part, 'unit-line', lineIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                    (input)="setInlineValue(part, 'unit-line', lineIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+                  <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+                </ng-container>
+              </span>
             </div>
           </div>
 
           <p class="unit-form-workspace-prompt" *ngIf="part.workspacePrompt">
             {{ part.workspacePrompt }}
           </p>
+          <div class="source-response-sketch" *ngIf="mode === 'blank' && part.openWorkspace">
+            <span>Draw or model your work</span>
+            <canvas
+              #unitSketchpad
+              width="1200"
+              height="420"
+              aria-label="Drawing workspace"
+              (pointerdown)="startSketch($event)"
+              (pointermove)="continueSketch($event)"
+              (pointerup)="finishSketch($event)"
+              (pointercancel)="finishSketch($event)"></canvas>
+            <button type="button" (click)="clearSketchFromControl($event)">Clear drawing</button>
+            <textarea rows="5" aria-label="Written response" placeholder="Write your equation, answer, or explanation here."></textarea>
+          </div>
         </section>
       </div>
     </ng-container>
@@ -121,12 +208,26 @@
     <ng-container *ngIf="cardGridSection(section) as cardGrid">
       <strong *ngIf="cardGrid.label">{{ cardGrid.label }}</strong>
       <div class="visual-card-grid">
-        <article class="visual-sub-card" *ngFor="let card of cardGrid.cards">
-          <strong>{{ card.label }}</strong>
+        <article class="visual-sub-card" *ngFor="let card of cardGrid.cards; let cardIndex = index">
+          <strong><ng-container *ngFor="let token of inlineTokens(card.label, card.labelAnswers)">
+            <input *ngIf="token.input" class="visual-inline-input" type="text"
+              [attr.inputmode]="inlineInputMode(token.answer)"
+              [class.is-correct]="inlineState(card, 'label', cardIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+              [class.is-incorrect]="inlineState(card, 'label', cardIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+              (input)="setInlineValue(card, 'label', cardIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+            <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+          </ng-container></strong>
           <ng-container *ngFor="let child of visibleSections(card.sections)">
             <ng-container *ngIf="arraySection(child) as array">
-              <strong *ngIf="array.label">{{ array.label }}</strong>
-              <div class="visual-array" [ngClass]="'is-' + array.item" [class.is-dense]="array.columns > 16" [class.is-source-known]="array.mode === 'solved'" [class.is-source-extra]="array.mode === 'blank'" [style.gridTemplateColumns]="arrayColumns(array)">
+              <strong *ngIf="array.label"><ng-container *ngFor="let token of inlineTokens(array.label, array.labelAnswers)">
+                <input *ngIf="token.input" class="visual-inline-input" type="text"
+                  [attr.inputmode]="inlineInputMode(token.answer)"
+                  [class.is-correct]="inlineState(array, 'label', 0, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                  [class.is-incorrect]="inlineState(array, 'label', 0, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                  (input)="setInlineValue(array, 'label', 0, 0, token.answerIndex || 0, $any($event.target).value)" />
+                <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+              </ng-container></strong>
+              <div class="visual-array" [ngClass]="'is-' + array.item" [class.is-dense]="array.columns > 16" [class.is-source-known]="array.mode === 'solved'" [class.is-source-extra]="array.mode === 'blank'" [class.is-selectable]="mode === 'blank' && array.selectableCells" [style.gridTemplateColumns]="arrayColumns(array)">
                 <span
                   *ngFor="let cell of range(array.rows * array.columns); let cellIndex = index"
                   [class.is-after-split]="arrayCellIsAfterSplit(array, cellIndex)"
@@ -136,17 +237,46 @@
                   [class.is-outline]="arrayCellIsOutlined(array, cellIndex)"
                   [class.has-placeholder]="array.placeholder"
                   [class.has-glyph]="array.glyph"
-                  [attr.aria-hidden]="!array.placeholder">
+                  [class.is-user-selected]="arrayCellIsSelected(array, cellIndex)"
+                  [attr.role]="array.selectableCells ? 'button' : null"
+                  [attr.tabindex]="mode === 'blank' && array.selectableCells ? 0 : null"
+                  [attr.aria-label]="array.selectableCells ? 'Toggle array cell ' + (cellIndex + 1) : null"
+                  [attr.aria-hidden]="!array.placeholder && !array.selectableCells"
+                  (click)="toggleArrayCell(array, cellIndex)"
+                  (keydown.enter)="toggleArrayCell(array, cellIndex)"
+                  (keydown.space)="toggleArrayCell(array, cellIndex); $event.preventDefault()">
                   {{ array.placeholder || array.glyph || '' }}
                 </span>
               </div>
-              <small *ngIf="array.caption" class="visual-array-caption">{{ array.caption }}</small>
+              <button *ngIf="mode === 'blank' && array.selectableCells" class="visual-clear-control" type="button" (click)="clearArraySelection(array)">Clear shading</button>
+              <small *ngIf="array.caption" class="visual-array-caption">
+                <ng-container *ngFor="let token of inlineTokens(array.caption, array.captionAnswers)">
+                  <input *ngIf="token.input" class="visual-inline-input" type="text"
+                    [attr.inputmode]="inlineInputMode(token.answer)"
+                    [class.is-correct]="inlineState(array, 'caption', 0, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                    [class.is-incorrect]="inlineState(array, 'caption', 0, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                    (input)="setInlineValue(array, 'caption', 0, 0, token.answerIndex || 0, $any($event.target).value)" />
+                  <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+                </ng-container>
+              </small>
             </ng-container>
 
             <ng-container *ngIf="equationsSection(child) as equations">
               <strong *ngIf="equations.label">{{ equations.label }}</strong>
               <div class="visual-equations">
-                <span *ngFor="let line of equations.lines">{{ line }}</span>
+                <span *ngFor="let line of equations.lines; let lineIndex = index">
+                  <ng-container *ngFor="let token of inlineTokens(line, equations.lineAnswers?.[lineIndex])">
+                    <input
+                      *ngIf="token.input"
+                      class="visual-inline-input"
+                      type="text"
+                      [attr.inputmode]="inlineInputMode(token.answer)"
+                      [class.is-correct]="inlineState(equations, 'line', lineIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                      [class.is-incorrect]="inlineState(equations, 'line', lineIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                      (input)="setInlineValue(equations, 'line', lineIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+                    <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+                  </ng-container>
+                </span>
               </div>
             </ng-container>
 
@@ -168,11 +298,18 @@
                 <b class="visual-tape-whole-label" *ngIf="!tape.hideTotalLabel">{{ tape.totalLabel }}</b>
                 <div [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
                   <span
-                    *ngFor="let part of tape.parts"
+                    *ngFor="let part of tape.parts; let partIndex = index"
                     [class.is-emphasis]="part.emphasize"
                     [class.is-muted]="part.muted"
                     [class.is-blank]="!part.label">
-                    {{ part.label }}
+                    <ng-container *ngFor="let token of inlineTokens(part.label, tape.partAnswers?.[partIndex])">
+                      <input *ngIf="token.input" class="visual-inline-input" type="text"
+                        [attr.inputmode]="inlineInputMode(token.answer)"
+                        [class.is-correct]="inlineState(tape, 'part', partIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                        [class.is-incorrect]="inlineState(tape, 'part', partIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                        (input)="setInlineValue(tape, 'part', partIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+                      <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+                    </ng-container>
                     <em *ngIf="part.sublabel">{{ part.sublabel }}</em>
                   </span>
                 </div>
@@ -181,14 +318,44 @@
                   *ngIf="tape.braces?.length"
                   [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
                   <span
-                    *ngFor="let brace of tape.braces"
+                    *ngFor="let brace of tape.braces; let braceIndex = index"
                     [attr.style]="tapeBraceStyle(brace, tape.parts.length)">
                     <i></i>
-                    <b [class.is-answer-box]="brace.boxLabel">{{ brace.boxLabel || brace.label }}</b>
+                    <b [class.is-answer-box]="brace.boxLabel">
+                      <ng-container *ngFor="let token of inlineTokens(brace.boxLabel || brace.label, tape.braceAnswers?.[braceIndex])">
+                        <input *ngIf="token.input" class="visual-inline-input" type="text"
+                          [attr.inputmode]="inlineInputMode(token.answer)"
+                          [class.is-correct]="inlineState(tape, 'brace', braceIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                          [class.is-incorrect]="inlineState(tape, 'brace', braceIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                          (input)="setInlineValue(tape, 'brace', braceIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+                        <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+                      </ng-container>
+                    </b>
                     <em *ngIf="brace.boxLabel">{{ brace.label }}</em>
                   </span>
                 </div>
-                <small *ngIf="tape.caption">{{ tape.caption }}</small>
+                <small *ngIf="tape.caption">
+                  <ng-container *ngFor="let token of inlineTokens(tape.caption, tape.captionAnswers)">
+                    <input *ngIf="token.input" class="visual-inline-input" type="text"
+                      [attr.inputmode]="inlineInputMode(token.answer)"
+                      [class.is-correct]="inlineState(tape, 'caption', 0, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                      [class.is-incorrect]="inlineState(tape, 'caption', 0, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                      (input)="setInlineValue(tape, 'caption', 0, 0, token.answerIndex || 0, $any($event.target).value)" />
+                    <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+                  </ng-container>
+                </small>
+                <div class="visual-equations" *ngIf="tape.equations?.length">
+                  <span *ngFor="let line of tape.equations; let lineIndex = index">
+                    <ng-container *ngFor="let token of inlineTokens(line, tape.equationAnswers?.[lineIndex])">
+                      <input *ngIf="token.input" class="visual-inline-input" type="text"
+                        [attr.inputmode]="inlineInputMode(token.answer)"
+                        [class.is-correct]="inlineState(tape, 'equation', lineIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                        [class.is-incorrect]="inlineState(tape, 'equation', lineIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                        (input)="setInlineValue(tape, 'equation', lineIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+                      <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+                    </ng-container>
+                  </span>
+                </div>
               </div>
             </ng-container>
 
@@ -198,13 +365,32 @@
                 <b class="visual-number-bond-whole">{{ bond.whole }}</b>
                 <div class="visual-number-bond-branches" aria-hidden="true"><i></i><i></i></div>
                 <div class="visual-number-bond-parts">
-                  <span *ngFor="let part of bond.parts">
-                    <b>{{ part.label }}</b>
+                  <span *ngFor="let part of bond.parts; let partIndex = index">
+                    <b><ng-container *ngFor="let token of inlineTokens(part.label, bond.partAnswers?.[partIndex])">
+                      <input *ngIf="token.input" class="visual-inline-input" type="text"
+                        [attr.inputmode]="inlineInputMode(token.answer)"
+                        [class.is-correct]="inlineState(bond, 'part', partIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                        [class.is-incorrect]="inlineState(bond, 'part', partIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                        (input)="setInlineValue(bond, 'part', partIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+                      <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+                    </ng-container></b>
                     <em *ngIf="part.sublabel">{{ part.sublabel }}</em>
                   </span>
                 </div>
                 <div class="visual-equations" *ngIf="bond.equations?.length">
-                  <span *ngFor="let line of bond.equations">{{ line }}</span>
+                  <span *ngFor="let line of bond.equations; let lineIndex = index">
+                    <ng-container *ngFor="let token of inlineTokens(line, bond.equationAnswers?.[lineIndex])">
+                      <input
+                        *ngIf="token.input"
+                        class="visual-inline-input"
+                        type="text"
+                        [attr.inputmode]="inlineInputMode(token.answer)"
+                        [class.is-correct]="inlineState(bond, 'equation', lineIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                        [class.is-incorrect]="inlineState(bond, 'equation', lineIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                        (input)="setInlineValue(bond, 'equation', lineIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+                      <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+                    </ng-container>
+                  </span>
                 </div>
                 <small *ngIf="bond.caption">{{ bond.caption }}</small>
               </div>
@@ -262,17 +448,57 @@
                 </div>
                 <div
                   class="visual-data-row"
-                  *ngFor="let row of table.rows"
+                  *ngFor="let row of table.rows; let rowIndex = index"
                   role="row"
                   [style.gridTemplateColumns]="'repeat(' + table.columns.length + ', minmax(0, 1fr))'">
-                  <span *ngFor="let cell of row" role="cell">{{ cell }}</span>
+                  <span *ngFor="let cell of row; let cellIndex = index" role="cell"
+                    [class.is-cell-selected]="dataCellSelectionState(table, rowIndex, cellIndex) === 'selected'"
+                    [class.is-cell-selection-correct]="dataCellSelectionState(table, rowIndex, cellIndex) === 'correct'"
+                    [class.is-cell-selection-incorrect]="dataCellSelectionState(table, rowIndex, cellIndex) === 'incorrect'"
+                    [attr.tabindex]="table.selectableCells ? 0 : null"
+                    (click)="toggleDataCell(table, rowIndex, cellIndex, $event)"
+                    (keydown.enter)="toggleDataCell(table, rowIndex, cellIndex, $event)">
+                    <div *ngIf="dataCellHasDrawingWorkspace(table, rowIndex, cellIndex)" class="visual-table-drawing-workspace">
+                      <canvas #tableSketchpad width="600" height="240"
+                        aria-label="Drawing workspace"
+                        (pointerdown)="startSketch($event)"
+                        (pointermove)="continueSketch($event)"
+                        (pointerup)="finishSketch($event)"
+                        (pointercancel)="finishSketch($event)"></canvas>
+                      <button type="button" (click)="clearSketchFromControl($event)">Clear drawing</button>
+                    </div>
+                    <ng-container *ngIf="!dataCellHasDrawingWorkspace(table, rowIndex, cellIndex)">
+                    <ng-container *ngFor="let token of inlineTokens(cell, table.cellAnswers?.[rowIndex]?.[cellIndex])">
+                      <input
+                        *ngIf="token.input"
+                        class="visual-inline-input"
+                        type="text"
+                        [attr.inputmode]="inlineInputMode(token.answer)"
+                        [class.is-correct]="inlineState(table, 'cell', rowIndex, cellIndex, token.answerIndex || 0, token.answer) === 'correct'"
+                        [class.is-incorrect]="inlineState(table, 'cell', rowIndex, cellIndex, token.answerIndex || 0, token.answer) === 'incorrect'"
+                        (input)="setInlineValue(table, 'cell', rowIndex, cellIndex, token.answerIndex || 0, $any($event.target).value)" />
+                      <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+                    </ng-container>
+                    </ng-container>
+                  </span>
                 </div>
               </div>
             </ng-container>
 
             <ng-container *ngIf="noteSection(child) as note">
               <strong *ngIf="note.label">{{ note.label }}</strong>
-              <p class="visual-note">{{ note.text }}</p>
+              <p class="visual-note"><ng-container *ngFor="let token of inlineTokens(note.text, note.textAnswers)">
+                <input *ngIf="token.input" class="visual-inline-input" type="text"
+                  [attr.inputmode]="inlineInputMode(token.answer)"
+                  [class.is-correct]="inlineState(note, 'text', 0, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                  [class.is-incorrect]="inlineState(note, 'text', 0, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                  (input)="setInlineValue(note, 'text', 0, 0, token.answerIndex || 0, $any($event.target).value)" />
+                <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+              </ng-container></p>
+            </ng-container>
+
+            <ng-container *ngIf="sourceResponseWorkspaceSection(child) as nestedResponse">
+              <ng-container *ngTemplateOutlet="sourceResponseTemplate; context: { $implicit: nestedResponse }"></ng-container>
             </ng-container>
 
             <ng-container *ngIf="sourceCropSection(child) as sourceCrop">
@@ -285,7 +511,15 @@
                     [style.width]="sourceCropImageWidth(sourceCrop)"
                     [style.left]="sourceCropImageLeft(sourceCrop)"
                     [style.top]="sourceCropImageTop(sourceCrop)">
+                  <canvas *ngIf="mode === 'blank' && sourceCrop.sketchOverlay" #cropSketchpad class="visual-sketch-overlay"
+                    width="1200" [attr.height]="sourceCropSketchHeight(sourceCrop)"
+                    aria-label="Draw on the source figure"
+                    (pointerdown)="startSketch($event)"
+                    (pointermove)="continueSketch($event)"
+                    (pointerup)="finishSketch($event)"
+                    (pointercancel)="finishSketch($event)"></canvas>
                 </div>
+                <button *ngIf="mode === 'blank' && sourceCrop.sketchOverlay" class="visual-clear-control" type="button" (click)="clearSketchFromControl($event)">Clear drawing</button>
                 <figcaption *ngIf="sourceCrop.caption">{{ sourceCrop.caption }}</figcaption>
               </figure>
             </ng-container>
@@ -295,8 +529,15 @@
     </ng-container>
 
     <ng-container *ngIf="arraySection(section) as array">
-      <strong *ngIf="array.label">{{ array.label }}</strong>
-      <div class="visual-array" [ngClass]="'is-' + array.item" [class.is-source-known]="array.mode === 'solved'" [class.is-source-extra]="array.mode === 'blank'" [style.gridTemplateColumns]="arrayColumns(array)">
+      <strong *ngIf="array.label"><ng-container *ngFor="let token of inlineTokens(array.label, array.labelAnswers)">
+        <input *ngIf="token.input" class="visual-inline-input" type="text"
+          [attr.inputmode]="inlineInputMode(token.answer)"
+          [class.is-correct]="inlineState(array, 'label', 0, 0, token.answerIndex || 0, token.answer) === 'correct'"
+          [class.is-incorrect]="inlineState(array, 'label', 0, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+          (input)="setInlineValue(array, 'label', 0, 0, token.answerIndex || 0, $any($event.target).value)" />
+        <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+      </ng-container></strong>
+      <div class="visual-array" [ngClass]="'is-' + array.item" [class.is-source-known]="array.mode === 'solved'" [class.is-source-extra]="array.mode === 'blank'" [class.is-selectable]="mode === 'blank' && array.selectableCells" [style.gridTemplateColumns]="arrayColumns(array)">
         <span
           *ngFor="let cell of range(array.rows * array.columns); let cellIndex = index"
           [class.is-after-split]="arrayCellIsAfterSplit(array, cellIndex)"
@@ -306,11 +547,28 @@
           [class.is-outline]="arrayCellIsOutlined(array, cellIndex)"
           [class.has-placeholder]="array.placeholder"
           [class.has-glyph]="array.glyph"
-          [attr.aria-hidden]="!array.placeholder">
+          [class.is-user-selected]="arrayCellIsSelected(array, cellIndex)"
+          [attr.role]="array.selectableCells ? 'button' : null"
+          [attr.tabindex]="mode === 'blank' && array.selectableCells ? 0 : null"
+          [attr.aria-label]="array.selectableCells ? 'Toggle array cell ' + (cellIndex + 1) : null"
+          [attr.aria-hidden]="!array.placeholder && !array.selectableCells"
+          (click)="toggleArrayCell(array, cellIndex)"
+          (keydown.enter)="toggleArrayCell(array, cellIndex)"
+          (keydown.space)="toggleArrayCell(array, cellIndex); $event.preventDefault()">
           {{ array.placeholder || array.glyph || '' }}
         </span>
       </div>
-      <small *ngIf="array.caption" class="visual-array-caption">{{ array.caption }}</small>
+      <button *ngIf="mode === 'blank' && array.selectableCells" class="visual-clear-control" type="button" (click)="clearArraySelection(array)">Clear shading</button>
+      <small *ngIf="array.caption" class="visual-array-caption">
+        <ng-container *ngFor="let token of inlineTokens(array.caption, array.captionAnswers)">
+          <input *ngIf="token.input" class="visual-inline-input" type="text"
+            [attr.inputmode]="inlineInputMode(token.answer)"
+            [class.is-correct]="inlineState(array, 'caption', 0, 0, token.answerIndex || 0, token.answer) === 'correct'"
+            [class.is-incorrect]="inlineState(array, 'caption', 0, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+            (input)="setInlineValue(array, 'caption', 0, 0, token.answerIndex || 0, $any($event.target).value)" />
+          <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+        </ng-container>
+      </small>
     </ng-container>
 
     <ng-container *ngIf="floorPlanSection(section) as plan">
@@ -382,18 +640,41 @@
       <div class="visual-geometry-diagram" [ngClass]="'is-' + diagram.diagram">
         <span
           class="visual-geometry-shape"
-          *ngFor="let shape of diagram.shapes"
+          *ngFor="let shape of diagram.shapes; let shapeIndex = index"
           [ngClass]="['is-' + shape.shape, 'is-' + (shape.tone || 'given')]"
           [style.left.%]="geometryShapeLeft(shape)"
           [style.top.%]="geometryShapeTop(shape)"
           [style.width.%]="geometryShapeWidth(shape)"
           [style.height.%]="geometryShapeHeight(shape)">
-          <b>{{ shape.label }}</b>
+          <b><ng-container *ngFor="let token of inlineTokens(shape.label, diagram.shapeAnswers?.[shapeIndex])">
+            <input *ngIf="token.input" class="visual-inline-input" type="text"
+              [attr.inputmode]="inlineInputMode(token.answer)"
+              [class.is-correct]="inlineState(diagram, 'shape', shapeIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+              [class.is-incorrect]="inlineState(diagram, 'shape', shapeIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+              (input)="setInlineValue(diagram, 'shape', shapeIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+            <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+          </ng-container></b>
           <em *ngIf="shape.valueLabel">{{ shape.valueLabel }}</em>
           <small *ngIf="shape.sideLabels?.length">{{ shape.sideLabels?.join(' | ') }}</small>
         </span>
+        <canvas *ngIf="mode === 'blank' && diagram.sketchOverlay" #geometrySketchpad class="visual-sketch-overlay"
+          width="1200" height="675" aria-label="Draw on the geometry figure"
+          (pointerdown)="startSketch($event)"
+          (pointermove)="continueSketch($event)"
+          (pointerup)="finishSketch($event)"
+          (pointercancel)="finishSketch($event)"></canvas>
       </div>
-      <small *ngIf="diagram.caption" class="visual-array-caption">{{ diagram.caption }}</small>
+      <button *ngIf="mode === 'blank' && diagram.sketchOverlay" class="visual-clear-control" type="button" (click)="clearSketchFromControl($event)">Clear drawing</button>
+      <small *ngIf="diagram.caption" class="visual-array-caption">
+        <ng-container *ngFor="let token of inlineTokens(diagram.caption, diagram.captionAnswers)">
+          <input *ngIf="token.input" class="visual-inline-input" type="text"
+            [attr.inputmode]="inlineInputMode(token.answer)"
+            [class.is-correct]="inlineState(diagram, 'caption', 0, 0, token.answerIndex || 0, token.answer) === 'correct'"
+            [class.is-incorrect]="inlineState(diagram, 'caption', 0, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+            (input)="setInlineValue(diagram, 'caption', 0, 0, token.answerIndex || 0, $any($event.target).value)" />
+          <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+        </ng-container>
+      </small>
     </ng-container>
 
     <ng-container *ngIf="relatedFactsSection(section) as facts">
@@ -424,11 +705,18 @@
         <b class="visual-tape-whole-label" *ngIf="!tape.hideTotalLabel">{{ tape.totalLabel }}</b>
         <div [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
           <span
-            *ngFor="let part of tape.parts"
+            *ngFor="let part of tape.parts; let partIndex = index"
             [class.is-emphasis]="part.emphasize"
             [class.is-muted]="part.muted"
             [class.is-blank]="!part.label">
-            {{ part.label }}
+            <ng-container *ngFor="let token of inlineTokens(part.label, tape.partAnswers?.[partIndex])">
+              <input *ngIf="token.input" class="visual-inline-input" type="text"
+                [attr.inputmode]="inlineInputMode(token.answer)"
+                [class.is-correct]="inlineState(tape, 'part', partIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                [class.is-incorrect]="inlineState(tape, 'part', partIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                (input)="setInlineValue(tape, 'part', partIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+              <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+            </ng-container>
             <em *ngIf="part.sublabel">{{ part.sublabel }}</em>
           </span>
         </div>
@@ -437,14 +725,40 @@
           *ngIf="tape.braces?.length"
           [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
           <span
-            *ngFor="let brace of tape.braces"
+            *ngFor="let brace of tape.braces; let braceIndex = index"
             [attr.style]="tapeBraceStyle(brace, tape.parts.length)">
             <i></i>
-            <b [class.is-answer-box]="brace.boxLabel">{{ brace.boxLabel || brace.label }}</b>
+            <b [class.is-answer-box]="brace.boxLabel"><ng-container *ngFor="let token of inlineTokens(brace.boxLabel || brace.label, tape.braceAnswers?.[braceIndex])">
+              <input *ngIf="token.input" class="visual-inline-input" type="text"
+                [attr.inputmode]="inlineInputMode(token.answer)"
+                [class.is-correct]="inlineState(tape, 'brace', braceIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                [class.is-incorrect]="inlineState(tape, 'brace', braceIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                (input)="setInlineValue(tape, 'brace', braceIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+              <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+            </ng-container></b>
             <em *ngIf="brace.boxLabel">{{ brace.label }}</em>
           </span>
         </div>
-        <small *ngIf="tape.caption">{{ tape.caption }}</small>
+        <small *ngIf="tape.caption"><ng-container *ngFor="let token of inlineTokens(tape.caption, tape.captionAnswers)">
+          <input *ngIf="token.input" class="visual-inline-input" type="text"
+            [attr.inputmode]="inlineInputMode(token.answer)"
+            [class.is-correct]="inlineState(tape, 'caption', 0, 0, token.answerIndex || 0, token.answer) === 'correct'"
+            [class.is-incorrect]="inlineState(tape, 'caption', 0, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+            (input)="setInlineValue(tape, 'caption', 0, 0, token.answerIndex || 0, $any($event.target).value)" />
+          <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+        </ng-container></small>
+        <div class="visual-equations" *ngIf="tape.equations?.length">
+          <span *ngFor="let line of tape.equations; let lineIndex = index">
+            <ng-container *ngFor="let token of inlineTokens(line, tape.equationAnswers?.[lineIndex])">
+              <input *ngIf="token.input" class="visual-inline-input" type="text"
+                [attr.inputmode]="inlineInputMode(token.answer)"
+                [class.is-correct]="inlineState(tape, 'equation', lineIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                [class.is-incorrect]="inlineState(tape, 'equation', lineIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                (input)="setInlineValue(tape, 'equation', lineIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+              <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+            </ng-container>
+          </span>
+        </div>
       </div>
     </ng-container>
 
@@ -454,13 +768,32 @@
         <b class="visual-number-bond-whole">{{ bond.whole }}</b>
         <div class="visual-number-bond-branches" aria-hidden="true"><i></i><i></i></div>
         <div class="visual-number-bond-parts">
-          <span *ngFor="let part of bond.parts">
-            <b>{{ part.label }}</b>
+          <span *ngFor="let part of bond.parts; let partIndex = index">
+            <b><ng-container *ngFor="let token of inlineTokens(part.label, bond.partAnswers?.[partIndex])">
+              <input *ngIf="token.input" class="visual-inline-input" type="text"
+                [attr.inputmode]="inlineInputMode(token.answer)"
+                [class.is-correct]="inlineState(bond, 'part', partIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                [class.is-incorrect]="inlineState(bond, 'part', partIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                (input)="setInlineValue(bond, 'part', partIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+              <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+            </ng-container></b>
             <em *ngIf="part.sublabel">{{ part.sublabel }}</em>
           </span>
         </div>
         <div class="visual-equations" *ngIf="bond.equations?.length">
-          <span *ngFor="let line of bond.equations">{{ line }}</span>
+          <span *ngFor="let line of bond.equations; let lineIndex = index">
+            <ng-container *ngFor="let token of inlineTokens(line, bond.equationAnswers?.[lineIndex])">
+              <input
+                *ngIf="token.input"
+                class="visual-inline-input"
+                type="text"
+                [attr.inputmode]="inlineInputMode(token.answer)"
+                [class.is-correct]="inlineState(bond, 'equation', lineIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                [class.is-incorrect]="inlineState(bond, 'equation', lineIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                (input)="setInlineValue(bond, 'equation', lineIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+              <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+            </ng-container>
+          </span>
         </div>
         <small *ngIf="bond.caption">{{ bond.caption }}</small>
       </div>
@@ -494,10 +827,39 @@
         </div>
         <div
           class="visual-data-row"
-          *ngFor="let row of table.rows"
+          *ngFor="let row of table.rows; let rowIndex = index"
           role="row"
           [style.gridTemplateColumns]="'repeat(' + table.columns.length + ', minmax(0, 1fr))'">
-          <span *ngFor="let cell of row" role="cell">{{ cell }}</span>
+          <span *ngFor="let cell of row; let cellIndex = index" role="cell"
+            [class.is-cell-selected]="dataCellSelectionState(table, rowIndex, cellIndex) === 'selected'"
+            [class.is-cell-selection-correct]="dataCellSelectionState(table, rowIndex, cellIndex) === 'correct'"
+            [class.is-cell-selection-incorrect]="dataCellSelectionState(table, rowIndex, cellIndex) === 'incorrect'"
+            [attr.tabindex]="table.selectableCells ? 0 : null"
+            (click)="toggleDataCell(table, rowIndex, cellIndex, $event)"
+            (keydown.enter)="toggleDataCell(table, rowIndex, cellIndex, $event)">
+            <div *ngIf="dataCellHasDrawingWorkspace(table, rowIndex, cellIndex)" class="visual-table-drawing-workspace">
+              <canvas #tableSketchpad width="600" height="240"
+                aria-label="Drawing workspace"
+                (pointerdown)="startSketch($event)"
+                (pointermove)="continueSketch($event)"
+                (pointerup)="finishSketch($event)"
+                (pointercancel)="finishSketch($event)"></canvas>
+              <button type="button" (click)="clearSketchFromControl($event)">Clear drawing</button>
+            </div>
+            <ng-container *ngIf="!dataCellHasDrawingWorkspace(table, rowIndex, cellIndex)">
+            <ng-container *ngFor="let token of inlineTokens(cell, table.cellAnswers?.[rowIndex]?.[cellIndex])">
+              <input
+                *ngIf="token.input"
+                class="visual-inline-input"
+                type="text"
+                [attr.inputmode]="inlineInputMode(token.answer)"
+                [class.is-correct]="inlineState(table, 'cell', rowIndex, cellIndex, token.answerIndex || 0, token.answer) === 'correct'"
+                [class.is-incorrect]="inlineState(table, 'cell', rowIndex, cellIndex, token.answerIndex || 0, token.answer) === 'incorrect'"
+                (input)="setInlineValue(table, 'cell', rowIndex, cellIndex, token.answerIndex || 0, $any($event.target).value)" />
+              <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+            </ng-container>
+            </ng-container>
+          </span>
         </div>
       </div>
     </ng-container>
@@ -506,37 +868,169 @@
       <strong *ngIf="match.label">{{ match.label }}</strong>
       <div
         class="visual-expression-match"
+        [class.is-interactive]="match.interactive"
+        [class.has-third-column]="match.rightItems?.length"
         [class.is-solved]="match.showMatches"
-        [class.is-columns]="match.orientation === 'columns'"
+        [class.is-columns]="!match.interactive && match.orientation === 'columns'"
         [class.is-pairs]="match.orientation === 'pairs'">
-        <div class="visual-expression-match-labels">
-          <span>{{ match.topLabel || 'Expressions' }}</span>
-          <span>{{ match.bottomLabel || 'Choices' }}</span>
-        </div>
-        <div
-          *ngIf="match.orientation !== 'pairs'"
-          class="visual-expression-match-row is-top"
-          [style.gridTemplateColumns]="expressionMatchColumns(match.topItems.length)">
-          <span *ngFor="let item of match.topItems" [ngClass]="'is-' + (match.topShape || 'card')">{{ item }}</span>
-        </div>
-        <div
-          *ngIf="match.orientation !== 'pairs'"
-          class="visual-expression-match-row is-bottom"
-          [style.gridTemplateColumns]="expressionMatchColumns(match.bottomItems.length)">
-          <span *ngFor="let item of match.bottomItems" [ngClass]="'is-' + (match.bottomShape || 'card')">{{ item }}</span>
-        </div>
-        <div class="visual-expression-match-pairs" *ngIf="match.orientation === 'pairs'">
-          <article *ngFor="let pair of expressionMatchPairs(match)">
-            <span [ngClass]="'is-' + (match.topShape || 'card')">{{ pair.top }}</span>
-            <span [ngClass]="'is-' + (match.bottomShape || 'card')">{{ pair.bottom }}</span>
-          </article>
-        </div>
-        <div class="visual-expression-match-key" *ngIf="match.showMatches && match.matches?.length">
-          <span *ngFor="let pair of match.matches">
-            {{ expressionMatchTop(match, pair) }} -> {{ expressionMatchBottom(match, pair) }}
-            <b *ngIf="pair.label">{{ pair.label }}</b>
-          </span>
-        </div>
+        <p *ngIf="match.prompt" class="visual-expression-match-prompt">{{ match.prompt }}</p>
+
+        <ng-container *ngIf="match.interactive; else staticExpressionMatch">
+          <div class="interactive-expression-board" data-interaction="click-to-match">
+            <div class="interactive-expression-column" aria-label="First matching column">
+              <div
+                class="interactive-expression-item"
+                *ngFor="let item of match.topItems; let topIndex = index"
+                [class.is-selected]="selectedExpressionTopIndex === topIndex"
+                [class.is-correct]="expressionTopMatchState(match, topIndex) === 'correct'"
+                [class.is-incorrect]="expressionTopMatchState(match, topIndex) === 'incorrect'">
+                <button
+                  type="button"
+                  [ngClass]="'is-' + (match.topShape || 'card')"
+                  [disabled]="mode === 'solved'"
+                  [attr.aria-label]="'Select first-column item ' + (topIndex + 1)"
+                  (click)="selectExpressionTop(topIndex)"></button>
+                <span *ngIf="item !== '____'">{{ item }}</span>
+                <input
+                  *ngIf="item === '____'"
+                  type="number"
+                  inputmode="numeric"
+                  [attr.aria-label]="'First-column blank ' + (topIndex + 1)"
+                  [class.is-correct]="expressionEntryState(match, topIndex) === 'correct'"
+                  [class.is-incorrect]="expressionEntryState(match, topIndex) === 'incorrect'"
+                  (input)="setExpressionEntry(topIndex, $any($event.target).value)"
+                  (focus)="selectExpressionTop(topIndex)" />
+              </div>
+            </div>
+
+            <svg class="interactive-expression-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line
+                *ngFor="let pair of interactiveExpressionPairs(match)"
+                [attr.x1]="match.rightItems?.length ? 10 : 22"
+                [attr.x2]="match.rightItems?.length ? 43 : 78"
+                [attr.y1]="matchLineY(pair.topIndex, match.topItems.length)"
+                [attr.y2]="matchLineY(pair.bottomIndex, match.bottomItems.length)"
+                [class.is-correct]="expressionPairIsCorrect(match, pair.topIndex, pair.bottomIndex)"
+                [class.is-incorrect]="!expressionPairIsCorrect(match, pair.topIndex, pair.bottomIndex)"></line>
+            </svg>
+
+            <div class="interactive-expression-column" aria-label="Second matching column">
+              <button
+                type="button"
+                class="interactive-expression-choice"
+                *ngFor="let item of match.bottomItems; let bottomIndex = index"
+                [ngClass]="'is-' + (match.bottomShape || 'card')"
+                [disabled]="mode === 'solved'"
+                [class.is-correct]="expressionBottomMatchState(match, bottomIndex) === 'correct'"
+                [class.is-incorrect]="expressionBottomMatchState(match, bottomIndex) === 'incorrect'"
+                [attr.aria-label]="'Match ' + item"
+                (click)="selectExpressionBottom(bottomIndex)">
+                {{ item }}
+              </button>
+            </div>
+
+            <div *ngIf="match.rightItems?.length" class="interactive-expression-responses" [attr.aria-label]="match.rightLabel || 'Related responses'">
+              <span *ngFor="let item of match.rightItems; let rowIndex = index">
+                <ng-container *ngFor="let token of responseLineTokens(item)">
+                  <input
+                    *ngIf="token.input"
+                    type="number"
+                    inputmode="numeric"
+                    [attr.aria-label]="'Related response row ' + (rowIndex + 1) + ' blank ' + ((token.answerIndex || 0) + 1)"
+                    [class.is-correct]="expressionResponseState(match, rowIndex, token.answerIndex || 0) === 'correct'"
+                    [class.is-incorrect]="expressionResponseState(match, rowIndex, token.answerIndex || 0) === 'incorrect'"
+                    (input)="setExpressionResponse(rowIndex, token.answerIndex || 0, $any($event.target).value)" />
+                  <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+                </ng-container>
+              </span>
+            </div>
+          </div>
+          <p class="interactive-expression-status" aria-live="polite">{{ expressionMatchStatus(match) }}</p>
+          <button
+            *ngIf="mode === 'blank'"
+            type="button"
+            class="interactive-expression-reset"
+            (click)="clearExpressionMatches()">Reset matching lines</button>
+        </ng-container>
+
+        <ng-template #staticExpressionMatch>
+          <div class="visual-expression-match-labels">
+            <span>{{ match.topLabel || 'Expressions' }}</span>
+            <span>{{ match.bottomLabel || 'Choices' }}</span>
+          </div>
+          <div
+            *ngIf="match.orientation !== 'pairs'"
+            class="visual-expression-match-row is-top"
+            [style.gridTemplateColumns]="expressionMatchColumns(match.topItems.length)">
+            <span *ngFor="let item of match.topItems; let itemIndex = index" [ngClass]="'is-' + (match.topShape || 'card')">
+              <ng-container *ngFor="let token of inlineTokens(item, match.topItemAnswers?.[itemIndex])">
+                <input
+                  *ngIf="token.input"
+                  class="visual-inline-input"
+                  type="text"
+                  [attr.inputmode]="inlineInputMode(token.answer)"
+                  [class.is-correct]="inlineState(match, 'top', itemIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                  [class.is-incorrect]="inlineState(match, 'top', itemIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                  (input)="setInlineValue(match, 'top', itemIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+                <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+              </ng-container>
+            </span>
+          </div>
+          <div
+            *ngIf="match.orientation !== 'pairs'"
+            class="visual-expression-match-row is-bottom"
+            [style.gridTemplateColumns]="expressionMatchColumns(match.bottomItems.length)">
+            <span *ngFor="let item of match.bottomItems; let itemIndex = index" [ngClass]="'is-' + (match.bottomShape || 'card')">
+              <ng-container *ngFor="let token of inlineTokens(item, match.bottomItemAnswers?.[itemIndex])">
+                <input
+                  *ngIf="token.input"
+                  class="visual-inline-input"
+                  type="text"
+                  [attr.inputmode]="inlineInputMode(token.answer)"
+                  [class.is-correct]="inlineState(match, 'bottom', itemIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                  [class.is-incorrect]="inlineState(match, 'bottom', itemIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                  (input)="setInlineValue(match, 'bottom', itemIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+                <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+              </ng-container>
+            </span>
+          </div>
+          <div class="visual-expression-match-pairs" *ngIf="match.orientation === 'pairs'">
+            <article *ngFor="let pair of expressionMatchPairs(match); let pairIndex = index">
+              <span [ngClass]="'is-' + (match.topShape || 'card')">
+                <ng-container *ngFor="let token of inlineTokens(pair.top, match.topItemAnswers?.[pairIndex])">
+                  <input
+                    *ngIf="token.input"
+                    class="visual-inline-input"
+                    type="text"
+                    [attr.inputmode]="inlineInputMode(token.answer)"
+                    [class.is-correct]="inlineState(match, 'top', pairIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                    [class.is-incorrect]="inlineState(match, 'top', pairIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                    (input)="setInlineValue(match, 'top', pairIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+                  <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+                </ng-container>
+              </span>
+              <span [ngClass]="'is-' + (match.bottomShape || 'card')">
+                <ng-container *ngFor="let token of inlineTokens(pair.bottom, match.bottomItemAnswers?.[pairIndex])">
+                  <input
+                    *ngIf="token.input"
+                    class="visual-inline-input"
+                    type="text"
+                    [attr.inputmode]="inlineInputMode(token.answer)"
+                    [class.is-correct]="inlineState(match, 'bottom', pairIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                    [class.is-incorrect]="inlineState(match, 'bottom', pairIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                    (input)="setInlineValue(match, 'bottom', pairIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+                  <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+                </ng-container>
+              </span>
+            </article>
+          </div>
+          <div class="visual-expression-match-key" *ngIf="match.showMatches && match.matches?.length">
+            <span *ngFor="let pair of match.matches">
+              {{ expressionMatchTop(match, pair) }} -> {{ expressionMatchBottom(match, pair) }}
+              <b *ngIf="pair.label">{{ pair.label }}</b>
+            </span>
+          </div>
+        </ng-template>
         <small *ngIf="match.note">{{ match.note }}</small>
       </div>
     </ng-container>
@@ -952,26 +1446,17 @@
             [style.width]="sourceCropImageWidth(sourceCrop)"
             [style.left]="sourceCropImageLeft(sourceCrop)"
             [style.top]="sourceCropImageTop(sourceCrop)">
+          <canvas *ngIf="mode === 'blank' && sourceCrop.sketchOverlay" #cropSketchpad class="visual-sketch-overlay"
+            width="1200" [attr.height]="sourceCropSketchHeight(sourceCrop)"
+            aria-label="Draw on the source figure"
+            (pointerdown)="startSketch($event)"
+            (pointermove)="continueSketch($event)"
+            (pointerup)="finishSketch($event)"
+            (pointercancel)="finishSketch($event)"></canvas>
         </div>
+        <button *ngIf="mode === 'blank' && sourceCrop.sketchOverlay" class="visual-clear-control" type="button" (click)="clearSketchFromControl($event)">Clear drawing</button>
         <figcaption *ngIf="sourceCrop.caption">{{ sourceCrop.caption }}</figcaption>
       </figure>
-    </ng-container>
-
-    <ng-container *ngIf="sourceFirstWorkspaceSection(section) as sourceFirst">
-      <strong *ngIf="sourceFirst.label">{{ sourceFirst.label }}</strong>
-      <div class="visual-source-first-workspace">
-        <figure class="visual-source-crop" *ngFor="let sourceCrop of sourceFirst.pages">
-          <div [style.aspectRatio]="sourceCropAspect(sourceCrop)">
-            <img
-              [src]="sourceCrop.src"
-              [alt]="sourceCrop.alt"
-              [style.width]="sourceCropImageWidth(sourceCrop)"
-              [style.left]="sourceCropImageLeft(sourceCrop)"
-              [style.top]="sourceCropImageTop(sourceCrop)">
-          </div>
-          <figcaption *ngIf="sourceCrop.caption">{{ sourceCrop.caption }}</figcaption>
-        </figure>
-      </div>
     </ng-container>
 
     <ng-container *ngIf="numberLineSection(section) as line">
@@ -1044,18 +1529,54 @@
     <ng-container *ngIf="equationsSection(section) as equations">
       <strong *ngIf="equations.label">{{ equations.label }}</strong>
       <div class="visual-equations">
-        <span *ngFor="let line of equations.lines">{{ line }}</span>
+        <span *ngFor="let line of equations.lines; let lineIndex = index">
+          <ng-container *ngFor="let token of inlineTokens(line, equations.lineAnswers?.[lineIndex])">
+            <input
+              *ngIf="token.input"
+              class="visual-inline-input"
+              type="text"
+              [attr.inputmode]="inlineInputMode(token.answer)"
+              [class.is-correct]="inlineState(equations, 'line', lineIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+              [class.is-incorrect]="inlineState(equations, 'line', lineIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+              (input)="setInlineValue(equations, 'line', lineIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+            <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+          </ng-container>
+        </span>
       </div>
     </ng-container>
 
     <ng-container *ngIf="solutionPartsSection(section) as solutionParts">
       <strong *ngIf="solutionParts.label">{{ solutionParts.label }}</strong>
       <div class="visual-solution-parts">
-        <article *ngFor="let part of solutionParts.parts">
+        <article *ngFor="let part of solutionParts.parts; let partIndex = index">
           <b>{{ part.label }}</b>
           <div>
-            <span>{{ part.prompt }}</span>
-            <strong>{{ part.equation }}</strong>
+            <span>
+              <ng-container *ngFor="let token of inlineTokens(part.prompt, part.promptAnswers)">
+                <input
+                  *ngIf="token.input"
+                  class="visual-inline-input"
+                  type="text"
+                  [attr.inputmode]="inlineInputMode(token.answer)"
+                  [class.is-correct]="inlineState(part, 'prompt', partIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                  [class.is-incorrect]="inlineState(part, 'prompt', partIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                  (input)="setInlineValue(part, 'prompt', partIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+                <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+              </ng-container>
+            </span>
+            <strong>
+              <ng-container *ngFor="let token of inlineTokens(part.equation, part.equationAnswers)">
+                <input
+                  *ngIf="token.input"
+                  class="visual-inline-input"
+                  type="text"
+                  [attr.inputmode]="inlineInputMode(token.answer)"
+                  [class.is-correct]="inlineState(part, 'equation', partIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
+                  [class.is-incorrect]="inlineState(part, 'equation', partIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+                  (input)="setInlineValue(part, 'equation', partIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
+                <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+              </ng-container>
+            </strong>
             <p>{{ part.answer }}</p>
           </div>
         </article>
@@ -1074,7 +1595,14 @@
 
     <ng-container *ngIf="noteSection(section) as note">
       <strong *ngIf="note.label">{{ note.label }}</strong>
-      <p class="visual-note">{{ note.text }}</p>
+      <p class="visual-note"><ng-container *ngFor="let token of inlineTokens(note.text, note.textAnswers)">
+        <input *ngIf="token.input" class="visual-inline-input" type="text"
+          [attr.inputmode]="inlineInputMode(token.answer)"
+          [class.is-correct]="inlineState(note, 'text', 0, 0, token.answerIndex || 0, token.answer) === 'correct'"
+          [class.is-incorrect]="inlineState(note, 'text', 0, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
+          (input)="setInlineValue(note, 'text', 0, 0, token.answerIndex || 0, $any($event.target).value)" />
+        <ng-container *ngIf="!token.input">{{ token.text }}</ng-container>
+      </ng-container></p>
     </ng-container>
   </article>
 

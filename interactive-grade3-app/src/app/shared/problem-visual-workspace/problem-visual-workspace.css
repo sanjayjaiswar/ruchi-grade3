@@ -65,6 +65,7 @@
   min-width: 0;
 }
 
+
 /* Teacher Edition fraction number lines are printed as full-width rows. Keeping
    multiple lines stacked prevents dense fourths/sixths/eighths labels from
    colliding or being clipped inside half-width cards. */
@@ -306,6 +307,187 @@
   border-bottom: 2px solid #5f6368;
   font-size: clamp(15px, 1.4vw, 19px);
   font-weight: 650;
+  white-space: pre-wrap;
+}
+
+.visual-source-response-workspace.is-wide .source-response-lines {
+  width: 100%;
+  max-width: none;
+  padding-left: 0;
+}
+
+.visual-source-response-workspace > section.has-fillable-lines {
+  min-height: 0;
+}
+
+.source-response-lines > span.is-fillable {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  min-height: 64px;
+  padding: 12px 16px;
+  border: 1px solid #d5d9e0;
+  border-radius: 8px;
+  font-size: clamp(19px, 1.45vw, 25px);
+}
+
+.source-response-lines input {
+  width: 82px;
+  min-height: 38px;
+  padding: 4px 6px;
+  border: 0;
+  border-bottom: 2px solid #3c4043;
+  border-radius: 0;
+  background: #fffef8;
+  color: #202124;
+  font: inherit;
+  font-weight: 750;
+  text-align: center;
+}
+
+.visual-inline-input,
+.unknown-riddle-answer input,
+.unknown-riddle-decoder input {
+  width: clamp(58px, 5vw, 92px);
+  min-height: 36px;
+  margin: 2px 5px;
+  padding: 4px 7px;
+  border: 1px solid #9aa0a6;
+  border-bottom: 3px solid #3c4043;
+  border-radius: 6px;
+  background: #fffef8;
+  color: #202124;
+  font: inherit;
+  font-weight: 750;
+  text-align: center;
+}
+
+.visual-inline-input.is-correct,
+.unknown-riddle-answer input.is-correct,
+.unknown-riddle-decoder input.is-correct,
+.source-response-lines input.is-correct {
+  border-color: #137333;
+  background: #e6f4ea;
+  color: #0d652d;
+}
+
+.visual-inline-input.is-incorrect,
+.unknown-riddle-answer input.is-incorrect,
+.unknown-riddle-decoder input.is-incorrect,
+.source-response-lines input.is-incorrect {
+  border-color: #c5221f;
+  background: #fce8e6;
+  color: #a50e0e;
+}
+
+.visual-inline-input:focus-visible,
+.unknown-riddle-answer input:focus-visible,
+.unknown-riddle-decoder input:focus-visible,
+.source-response-lines input:focus-visible {
+  outline: 3px solid #1a73e8;
+  outline-offset: 2px;
+}
+
+.visual-source-response-workspace textarea {
+  width: 100%;
+  min-height: 190px;
+  padding: 14px;
+  border: 1px solid #9aa0a6;
+  border-radius: 8px;
+  background: repeating-linear-gradient(#ffffff 0 35px, #dfe3e8 36px 37px);
+  color: #202124;
+  font: inherit;
+  font-size: clamp(17px, 1.2vw, 21px);
+  line-height: 36px;
+  resize: vertical;
+}
+
+.source-response-sketch {
+  display: grid;
+  gap: 8px;
+}
+
+.source-response-sketch > span {
+  color: #3c4043;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.source-response-sketch canvas {
+  width: 100%;
+  min-height: 210px;
+  border: 1px solid #9aa0a6;
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(66, 133, 244, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(66, 133, 244, 0.08) 1px, transparent 1px),
+    #ffffff;
+  background-size: 28px 28px;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.source-response-sketch button {
+  width: max-content;
+  min-height: 34px;
+  padding: 6px 12px;
+  border: 1px solid #5f6368;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #3c4043;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.source-response-sketch textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 12px;
+  border: 1px solid #9aa0a6;
+  border-radius: 8px;
+  background: repeating-linear-gradient(#ffffff 0 35px, #dfe3e8 36px 37px);
+  color: #202124;
+  font: inherit;
+  line-height: 36px;
+  resize: vertical;
+}
+
+.source-response-solved {
+  min-height: 150px;
+  padding: 18px;
+  border-left: 5px solid #34a853;
+  background: #e6f4ea;
+  color: #174821;
+  font-size: clamp(18px, 1.3vw, 22px);
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.visual-source-response-workspace :is(input, textarea):focus-visible {
+  outline: 3px solid #1a73e8;
+  outline-offset: 2px;
+}
+
+.visual-data-row > span.is-cell-selected {
+  background: #e8f0fe;
+  box-shadow: inset 0 0 0 2px #1a73e8;
+}
+
+.visual-data-row > span.is-cell-selection-correct {
+  background: #e6f4ea;
+  box-shadow: inset 0 0 0 2px #137333;
+}
+
+.visual-data-row > span.is-cell-selection-incorrect {
+  background: #fce8e6;
+  box-shadow: inset 0 0 0 2px #c5221f;
+}
+
+.visual-data-row > span[tabindex="0"] {
+  cursor: pointer;
 }
 
 @media (max-width: 760px) {
@@ -363,21 +545,52 @@
   height: auto;
 }
 
+.visual-sketch-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: crosshair;
+}
+
+.visual-clear-control,
+.visual-table-drawing-workspace button {
+  justify-self: start;
+  padding: 6px 10px;
+  border: 1px solid #9aa0a6;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #3c4043;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.visual-table-drawing-workspace {
+  display: grid;
+  gap: 6px;
+  width: 100%;
+  min-width: 150px;
+}
+
+.visual-table-drawing-workspace canvas {
+  width: 100%;
+  min-height: 112px;
+  border: 1px dashed #7d8793;
+  border-radius: 8px;
+  background: #ffffff;
+  touch-action: none;
+  cursor: crosshair;
+}
+
 .visual-source-crop figcaption {
   color: #5f6368;
   font-size: 12px;
   font-weight: 650;
   line-height: 1.35;
-}
-
-.visual-source-first-workspace {
-  display: grid;
-  gap: clamp(0.75rem, 1.5cqi, 1.25rem);
-}
-
-.visual-source-first-workspace .visual-source-crop {
-  width: min(100%, 74rem);
-  margin-inline: auto;
 }
 
 :host-context(.lesson-m2-l21) .visual-source-crop {
@@ -1090,32 +1303,6 @@
   line-height: 1.3;
 }
 
-/*
- * Source-first Problem Set cards are controlled by the reviewed Teacher Edition
- * screenshots. Older lesson-specific authored-visual rules must never place,
- * resize, or collapse these source pages into inferred multi-column layouts.
- */
-:host-context(.problem-centered-workspace)
-  .problem-visual-workspace:has(.visual-source-first-workspace) {
-  grid-template-columns: minmax(0, 1fr) !important;
-  grid-template-rows: none !important;
-  align-items: stretch !important;
-}
-
-:host-context(.problem-centered-workspace)
-  .problem-visual-workspace:has(.visual-source-first-workspace)
-  > .visual-section {
-  grid-column: 1 !important;
-  grid-row: auto !important;
-  justify-items: stretch !important;
-}
-
-:host-context(.problem-centered-workspace)
-  .problem-visual-workspace:has(.visual-source-first-workspace)
-  > footer {
-  display: none;
-}
-
 /* Model-family readability found by the complete Blank/Solved route audit. */
 :host-context(.problem-centered-workspace) :is(
   .visual-expression-match-labels span,
@@ -1524,6 +1711,18 @@
   border-color: #5f6368;
   background: #b8c0ca;
   box-shadow: none;
+}
+
+.visual-array.is-selectable span {
+  cursor: pointer;
+}
+
+.visual-array span.is-user-selected,
+.problem-visual-workspace:not(.is-solved) .visual-array.is-square span.is-user-selected {
+  border-color: #1967d2;
+  border-style: solid;
+  background: #d2e3fc;
+  box-shadow: inset 0 0 0 2px #8ab4f8;
 }
 
 .visual-array span.is-after-column-split::before {
@@ -4404,6 +4603,385 @@
   background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
 }
 
+.visual-expression-match.is-interactive {
+  gap: clamp(16px, 2vw, 28px);
+  padding: clamp(16px, 2.2vw, 28px);
+}
+
+.visual-expression-match-prompt {
+  max-width: 88ch;
+  margin: 0;
+  font-size: clamp(17px, 1.25vw, 21px);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.interactive-expression-board {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(150px, 0.85fr) minmax(200px, 1fr);
+  gap: clamp(100px, 18vw, 300px);
+  width: min(100%, 960px);
+  min-height: 760px;
+  margin-inline: auto;
+}
+
+.visual-expression-match.has-third-column .interactive-expression-board {
+  grid-template-columns: minmax(90px, 0.6fr) minmax(180px, 0.9fr) minmax(250px, 1.2fr);
+  gap: clamp(48px, 6vw, 100px);
+  width: min(100%, 1120px);
+}
+
+.interactive-expression-column {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-auto-rows: minmax(66px, 1fr);
+  gap: 10px;
+}
+
+.interactive-expression-item {
+  position: relative;
+  display: grid;
+  width: 74px;
+  height: 64px;
+  place-items: center;
+  justify-self: center;
+}
+
+.interactive-expression-item > button {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border: 2px solid #202124;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.interactive-expression-item > button.is-sunburst {
+  border: 0;
+  background: #202124;
+  clip-path: polygon(50% 0%, 57% 10%, 68% 3%, 71% 15%, 84% 12%, 83% 25%, 96% 28%, 88% 39%, 100% 50%, 88% 58%, 96% 72%, 82% 74%, 84% 88%, 70% 85%, 66% 98%, 56% 89%, 48% 100%, 41% 89%, 29% 97%, 27% 84%, 13% 88%, 16% 74%, 2% 71%, 12% 59%, 0% 49%, 12% 41%, 3% 28%, 17% 24%, 15% 12%, 29% 15%, 33% 2%, 43% 11%);
+}
+
+.interactive-expression-item > button.is-sunburst::after {
+  position: absolute;
+  inset: 2px;
+  background: #ffffff;
+  clip-path: inherit;
+  content: "";
+  pointer-events: none;
+}
+
+.interactive-expression-item > button.is-fish-bowl {
+  border-radius: 48% 48% 44% 44% / 20% 20% 58% 58%;
+  background: linear-gradient(180deg, #ffffff 0 36%, #dcebf3 37% 100%);
+}
+
+.interactive-expression-item > button.is-fish-bowl::before {
+  position: absolute;
+  top: -5px;
+  left: 17%;
+  width: 66%;
+  height: 8px;
+  border: 2px solid #202124;
+  border-radius: 50%;
+  background: #ffffff;
+  content: "";
+}
+
+.interactive-expression-item:has(> button:is(.is-caterpillar, .is-mouse, .is-umbrella, .is-helicopter)) {
+  width: min(100%, 270px);
+  justify-self: stretch;
+}
+
+.interactive-expression-item:has(> button:is(.is-caterpillar, .is-mouse, .is-umbrella, .is-helicopter)) > span {
+  width: calc(100% - 30px);
+  font-size: clamp(14px, 1vw, 17px);
+  line-height: 1.15;
+  white-space: normal;
+}
+
+.interactive-expression-item > button.is-caterpillar {
+  border: 0;
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at 10% 50%, #d8dbdf 0 24px, transparent 25px),
+    radial-gradient(circle at 30% 50%, #d8dbdf 0 25px, transparent 26px),
+    radial-gradient(circle at 50% 50%, #d8dbdf 0 25px, transparent 26px),
+    radial-gradient(circle at 70% 50%, #d8dbdf 0 25px, transparent 26px),
+    radial-gradient(circle at 90% 50%, #d8dbdf 0 24px, transparent 25px);
+}
+
+.interactive-expression-item > button.is-mouse {
+  border: 2px solid #575b60;
+  border-radius: 58% 42% 48% 52%;
+  background:
+    radial-gradient(circle at 76% 34%, #202124 0 2px, transparent 3px),
+    #d5d7da;
+}
+
+.interactive-expression-item > button.is-umbrella {
+  border: 0;
+  border-radius: 52% 52% 12px 12px;
+  background: linear-gradient(150deg, #f1f3f4 0 49%, #d7dade 50% 100%);
+  box-shadow: inset 0 -3px 0 #5f6368;
+}
+
+.interactive-expression-item > button.is-helicopter {
+  border: 2px solid #5f6368;
+  border-radius: 48% 20% 26% 42%;
+  background: #f1f3f4;
+}
+
+.interactive-expression-item.is-selected {
+  filter: drop-shadow(0 0 5px #1a73e8);
+}
+
+.interactive-expression-item.is-correct > button {
+  border-color: #137333;
+  background: #e6f4ea;
+}
+
+.interactive-expression-item.is-correct > button.is-sunburst {
+  background: #137333;
+}
+
+.interactive-expression-item.is-correct > button.is-sunburst::after {
+  background: #e6f4ea;
+}
+
+.interactive-expression-item.is-incorrect > button {
+  border-color: #c5221f;
+  background: #fce8e6;
+}
+
+.interactive-expression-item.is-incorrect > button.is-sunburst {
+  background: #c5221f;
+}
+
+.interactive-expression-item.is-incorrect > button.is-sunburst::after {
+  background: #fce8e6;
+}
+
+.interactive-expression-item > span,
+.interactive-expression-item > input {
+  position: relative;
+  z-index: 3;
+  width: 48px;
+  color: #202124;
+  font-size: clamp(17px, 1.2vw, 21px);
+  font-weight: 750;
+  text-align: center;
+}
+
+.interactive-expression-item > span {
+  pointer-events: none;
+}
+
+.interactive-expression-item > input {
+  min-height: 30px;
+  padding: 4px 6px;
+  border: 0;
+  border-bottom: 2px solid #3c4043;
+  border-radius: 0;
+  background: #fffef8;
+  font: inherit;
+}
+
+.interactive-expression-item > input.is-correct {
+  border-bottom-color: #137333;
+  background: #e6f4ea;
+}
+
+.interactive-expression-item > input.is-incorrect {
+  border-bottom-color: #c5221f;
+  background: #fce8e6;
+}
+
+.interactive-expression-choice {
+  min-height: 58px;
+  padding: 12px 24px;
+  border: 2px solid #202124;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #202124;
+  font-size: clamp(17px, 1.2vw, 21px);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.interactive-expression-choice.is-flag {
+  border-radius: 50% 16% 48% 18% / 18% 48% 20% 52%;
+}
+
+.interactive-expression-choice.is-fish {
+  clip-path: polygon(0 18%, 70% 18%, 100% 0, 91% 50%, 100% 100%, 70% 82%, 0 82%, 12% 50%);
+  border-radius: 50%;
+  background: #eef3f5;
+}
+
+.interactive-expression-choice.is-leaf {
+  border-radius: 75% 8% 75% 8%;
+  background: #eef0f2;
+}
+
+.interactive-expression-choice.is-cheese {
+  border-radius: 5px;
+  background:
+    radial-gradient(circle at 24% 35%, #ffffff 0 5px, #777b80 6px 7px, transparent 8px),
+    radial-gradient(circle at 69% 68%, #ffffff 0 6px, #777b80 7px 8px, transparent 9px),
+    #eef0f2;
+  clip-path: polygon(0 22%, 100% 0, 88% 100%, 0 100%);
+}
+
+.interactive-expression-choice.is-raindrop {
+  border-radius: 70% 55% 70% 55%;
+  background: #eef0f2;
+}
+
+.interactive-expression-choice.is-cloud {
+  border-radius: 46% 54% 43% 50%;
+  background:
+    radial-gradient(circle at 25% 48%, #e1e3e6 0 25%, transparent 26%),
+    radial-gradient(circle at 50% 35%, #e1e3e6 0 34%, transparent 35%),
+    radial-gradient(circle at 76% 51%, #e1e3e6 0 27%, transparent 28%),
+    #f1f3f4;
+}
+
+.interactive-expression-choice:disabled,
+.interactive-expression-item > button:disabled {
+  opacity: 1;
+  cursor: default;
+}
+
+.interactive-expression-choice.is-correct {
+  border-color: #137333;
+  background: #e6f4ea;
+  color: #0d652d;
+}
+
+.interactive-expression-choice.is-incorrect {
+  border-color: #c5221f;
+  background: #fce8e6;
+  color: #a50e0e;
+}
+
+.interactive-expression-lines {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.interactive-expression-lines line {
+  stroke: #1a73e8;
+  stroke-linecap: round;
+  stroke-width: 0.55;
+}
+
+.interactive-expression-lines line.is-correct {
+  stroke: #137333;
+}
+
+.interactive-expression-lines line.is-incorrect {
+  stroke: #c5221f;
+}
+
+.interactive-expression-status {
+  justify-self: center;
+  margin: 0;
+  color: #3c4043;
+  font-size: 15px;
+  font-weight: 750;
+}
+
+.interactive-expression-reset {
+  justify-self: center;
+  padding: 8px 14px;
+  border: 1px solid #9aa0a6;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #174ea6;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.interactive-expression-responses {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-auto-rows: minmax(66px, 1fr);
+  gap: 10px;
+}
+
+.interactive-expression-responses > span {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(17px, 1.2vw, 21px);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.interactive-expression-responses input {
+  width: 70px;
+  min-height: 36px;
+  margin-inline: 6px;
+  padding: 4px 6px;
+  border: 0;
+  border-bottom: 2px solid #3c4043;
+  background: #fffef8;
+  color: #202124;
+  font: inherit;
+  text-align: center;
+}
+
+.interactive-expression-responses input.is-correct {
+  border-bottom-color: #137333;
+  background: #e6f4ea;
+}
+
+.interactive-expression-responses input.is-incorrect {
+  border-bottom-color: #c5221f;
+  background: #fce8e6;
+}
+
+.visual-expression-match.is-interactive :is(button, input):focus-visible {
+  outline: 3px solid #1a73e8;
+  outline-offset: 2px;
+}
+
+@media (max-width: 760px) {
+  .interactive-expression-board {
+    grid-template-columns: minmax(88px, 0.75fr) minmax(128px, 1.25fr);
+    gap: 24px;
+    min-height: 700px;
+  }
+
+  .interactive-expression-item {
+    width: 64px;
+    height: 56px;
+  }
+
+  .interactive-expression-choice {
+    min-height: 52px;
+    padding: 8px 10px;
+    font-size: 15px;
+  }
+
+  .visual-expression-match.has-third-column .interactive-expression-board {
+    grid-template-columns: 70px 120px minmax(190px, 1fr);
+    gap: 14px;
+    min-width: 420px;
+    overflow-x: auto;
+  }
+}
+
 .visual-expression-match-labels {
   display: flex;
   justify-content: space-between;
@@ -6163,79 +6741,15 @@
   max-width: none;
 }
 
-/* L4-L5: sequence strips span the board; individual source matches become large fact cards. */
-:host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="1"]) .visual-card-grid,
-:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="1"]) .visual-card-grid {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 13px;
-}
-
-:host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="2"]) .visual-card-grid,
-:host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="3"]) .visual-card-grid,
-:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="2"]) .visual-card-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-}
-
-:host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="1"]) .visual-sub-card:has(.visual-data-table),
-:host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="2"]) .visual-sub-card:has(.visual-data-table),
-:host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="3"]) .visual-sub-card:has(.visual-data-table),
-:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="1"]) .visual-sub-card:has(.visual-data-table),
-:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="2"]) .visual-sub-card:has(.visual-data-table) {
-  grid-column: 1 / -1;
-}
-
-:host-context(.lesson-m3-l4) .visual-data-row span,
-:host-context(.lesson-m3-l5) .visual-data-row span {
-  min-height: 48px;
-  padding: 11px 7px;
-  font-size: clamp(16px, 1.05vw, 20px);
-  font-weight: 700;
-  text-align: center;
-}
-
 /* Beat the older compact M3 worksheet-table rule for the few source tables retained here. */
 :host-context(.lesson-m3-l1) .visual-sub-card .visual-data-table .visual-data-row span,
 :host-context(.lesson-m3-l2) .visual-sub-card .visual-data-table .visual-data-row span,
-:host-context(.lesson-m3-l3) .visual-sub-card .visual-data-table .visual-data-row span,
-:host-context(.lesson-m3-l4) .visual-sub-card .visual-data-table .visual-data-row span,
-:host-context(.lesson-m3-l5) .visual-sub-card .visual-data-table .visual-data-row span {
+:host-context(.lesson-m3-l3) .visual-sub-card .visual-data-table .visual-data-row span {
   min-height: 46px;
   padding: 10px 7px;
   font-size: clamp(16px, 1.05vw, 20px);
   line-height: 1.25;
   text-align: center;
-}
-
-:host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="4"]) .visual-card-grid {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-:host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="5"]) .visual-card-grid,
-:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="4"]) .visual-card-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="3"]) .problem-visual-workspace {
-  grid-template-columns: minmax(560px, 1fr) minmax(440px, 0.8fr);
-  align-items: center;
-}
-
-:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="3"]) .visual-section:first-of-type {
-  grid-column: 1;
-  grid-row: 1 / span 2;
-}
-
-:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="3"]) .visual-section:nth-of-type(n + 2) {
-  grid-column: 2;
-}
-
-:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="3"]) .visual-number-bond {
-  max-width: none;
-}
-
-:host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="3"]) .visual-number-bond :is(b, span) {
-  font-size: clamp(20px, 1.5vw, 28px);
 }
 
 @media (max-width: 1250px) {
@@ -6244,8 +6758,7 @@
   :host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="3"]) .problem-visual-workspace,
   :host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="4"]) .problem-visual-workspace,
   :host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="3"]) .problem-visual-workspace,
-  :host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="4"]) .problem-visual-workspace,
-  :host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="3"]) .problem-visual-workspace {
+  :host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="4"]) .problem-visual-workspace {
     grid-template-columns: 1fr;
   }
 
@@ -6254,15 +6767,12 @@
   :host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="3"]) .visual-section,
   :host-context(.lesson-m3-l2 .problem-solution-card[data-problem-number="4"]) .visual-section,
   :host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="3"]) .visual-section,
-  :host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="4"]) .visual-section,
-  :host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="3"]) .visual-section {
+  :host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="4"]) .visual-section {
     grid-column: 1;
     grid-row: auto;
   }
 
-  :host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="1"]) .visual-card-grid,
-  :host-context(.lesson-m3-l4 .problem-solution-card[data-problem-number="1"]) .visual-card-grid,
-  :host-context(.lesson-m3-l5 .problem-solution-card[data-problem-number="1"]) .visual-card-grid {
+  :host-context(.lesson-m3-l3 .problem-solution-card[data-problem-number="1"]) .visual-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -6271,8 +6781,6 @@
   :host-context(.lesson-m3-l1) .visual-card-grid,
   :host-context(.lesson-m3-l2) .visual-card-grid,
   :host-context(.lesson-m3-l3) .visual-card-grid,
-  :host-context(.lesson-m3-l4) .visual-card-grid,
-  :host-context(.lesson-m3-l5) .visual-card-grid,
   :host-context(.lesson-m3-l1 .problem-solution-card[data-problem-number="3"]) .visual-solution-parts {
     grid-template-columns: 1fr;
   }

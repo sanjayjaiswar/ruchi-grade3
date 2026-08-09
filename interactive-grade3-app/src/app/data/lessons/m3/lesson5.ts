@@ -16,8 +16,8 @@ export const M3_LESSON5_RUNTIME: LessonRuntimeConfig = {
     focus: [
       "decompose",
       "division",
-      "array",
-      "source labels"
+      "make ten",
+      "related facts"
     ],
     groupCount: 7,
     groupSize: 4,
@@ -58,7 +58,7 @@ export const M3_LESSON5_RUNTIME: LessonRuntimeConfig = {
       id: "source-model",
       title: "Teacher source excerpt",
       shortTitle: "Model",
-      studentPrompt: "Problem by skip-counting by four 7 times. Is there skip-count. another count-by strategy that could be used to solve Depending on each learner's needs, this problem? give explicit prompts for every step of S: Skip-count by seven 4 times. the make ten strategy to count by seven 4 times. Alternatively, scaffold T: Let's show that work on our boards. Write 7 on your with a checklist or template. board.",
+      studentPrompt: "Skip-count by seven 4 times. Add 7 for each new count. When the count crosses a ten, decompose 7 into two parts: use the first part to make the next ten, then add the remainder.",
       teacherEditionBasis: "EurekaMath-Sources/Module_3/g3_m3_teacher_edition_v1_3_0.pdf, pages 62-72. Lesson 5 objective, concept development, problem set, exit ticket, and homework.",
       visualModel: "array"
     },
@@ -125,7 +125,7 @@ export const M3_LESSON5_RUNTIME: LessonRuntimeConfig = {
       },
       {
         label: "Source text",
-        value: "Problem by skip-counting by four 7 times. Is there skip-count. another count-by strategy that could be used to solve Depending on each learner's needs, this problem? give explicit prompts for every step of S: Skip-count by seven 4 times. the make ten strategy to count by seven 4 times. Alternatively, scaffold T: Let's show that work on our boards. Write 7 on your with a checklist or template. board."
+        value: "Skip-count by seven 4 times. Add 7 for each new count. When the count crosses a ten, decompose 7 into two parts: use the first part to make the next ten, then add the remainder."
       },
       {
         label: "Workbook",
