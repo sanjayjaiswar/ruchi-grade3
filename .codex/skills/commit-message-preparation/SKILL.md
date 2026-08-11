@@ -12,7 +12,7 @@ Use this when preparing commit text.
 - Never run `git commit`, `git push`, `git merge`, `git rebase`, or any command that writes git history.
 - Review the actual current diff before preparing commit text.
 - Before emitting a commit message, scan staged Angular component `.ts` files for inline `template:` / `styles:` blocks. If presentation markup or CSS is substantially embedded in a `.ts` component, do not provide the normal commit-message wrapper. Instead, clearly block the commit message and tell the user to split the component into external `.html` and `.scss`/`.css` files first, unless the user explicitly overrides this gate for the current turn.
-- Summarize the real changed files and validation, not memory from earlier conversation.
+- Summarize the real changed files, not memory from earlier conversation.
 - Do not include raw credentials, private identifiers, student data, financial data, screenshots, appshots, or unrelated sensitive data.
 - Do not frame tracker files as the main shipped work.
 
@@ -29,7 +29,7 @@ When preparing a commit message:
    - The offending file path(s).
    - A direct instruction to move HTML to `*.component.html` and styles to `*.component.scss` or `*.component.css` before preparing the commit message.
 4. Do not soften this as a recommendation. Treat it as a commit-message gate.
-5. If the user explicitly says to override this gate for the current turn, mention the override in the commit message verification section.
+5. If the user explicitly says to override this gate for the current turn, mention the override in the relevant Changes area.
 
 ## Required Wrapper
 
@@ -54,10 +54,9 @@ Then emit exactly one fenced Markdown block:
 ### <Area>
 - <specific bullet>
 - <specific bullet>
-
-## Verification
-- <command or validation>
 ```
+
+Do not add a `Verification`, `Testing`, `Validation`, or equivalent section to the commit message. Internal validation remains part of the engineering workflow, not the generated commit text.
 
 ## Summary And Changes
 
@@ -74,7 +73,6 @@ Useful area names:
 - `Docs And Instructions`
 - `Browser Safety`
 - `Student Data Safety`
-- `Validation`
 
 ## Content
 
