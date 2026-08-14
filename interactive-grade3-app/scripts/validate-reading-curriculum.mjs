@@ -7,22 +7,28 @@ const routesUrl = new URL('../src/app/app.routes.ts', import.meta.url);
 const practiceUrl = new URL('../src/app/data/reading-practice.data.json', import.meta.url);
 const learningSystemUrl = new URL('../src/app/data/reading-learning-system.data.ts', import.meta.url);
 const officialLessonsUrl = new URL('../src/app/data/reading-official-lessons.data.ts', import.meta.url);
+const evidenceQuestionsUrl = new URL('../src/app/data/reading-evidence-questions.data.ts', import.meta.url);
+const strategyExamplesUrl = new URL('../src/app/data/reading-strategy-examples.data.ts', import.meta.url);
 const officialLessonImageUrl = new URL('../public/source-pages/reading/official-samples/grade3-u1-w1-lesson1-guide.png', import.meta.url);
 const sourceAuditUrl = new URL('../../docs/reading/grade3-curriculum-source-audit.md', import.meta.url);
 const sourcePageUrls = Array.from({ length: 10 }, (_, index) => new URL(`../public/source-pages/reading/unit-${index + 1}-scope.png`, import.meta.url));
+const evidenceSourcePageUrls = Array.from({ length: 10 }, (_, index) => new URL(`../public/source-pages/reading/text-evidence/unit-${index + 1}.png`, import.meta.url));
 
-const [data, template, routes, practiceText, learningSystem, officialLessons, sourceAudit, officialLessonImageStat] = await Promise.all([
+const [data, template, routes, practiceText, learningSystem, officialLessons, evidenceQuestions, strategyExamples, sourceAudit, officialLessonImageStat] = await Promise.all([
   readFile(dataUrl, 'utf8'),
   readFile(templateUrl, 'utf8'),
   readFile(routesUrl, 'utf8'),
   readFile(practiceUrl, 'utf8'),
   readFile(learningSystemUrl, 'utf8'),
   readFile(officialLessonsUrl, 'utf8'),
+  readFile(evidenceQuestionsUrl, 'utf8'),
+  readFile(strategyExamplesUrl, 'utf8'),
   readFile(sourceAuditUrl, 'utf8'),
   stat(officialLessonImageUrl).catch(() => null)
 ]);
 const practice = JSON.parse(practiceText);
 const sourcePageStats = await Promise.all(sourcePageUrls.map((url) => stat(url).catch(() => null)));
+const evidenceSourcePageStats = await Promise.all(evidenceSourcePageUrls.map((url) => stat(url).catch(() => null)));
 
 const expectedTitles = [
   'Government for the People',
@@ -92,6 +98,59 @@ if (selectionRecords.length !== 70) failures.push(`Expected 70 publisher-named s
 if (selectionsPerUnit.some((count) => count !== 7)) failures.push(`Expected 7 publisher-named selections per unit; found ${selectionsPerUnit.join(',')}.`);
 if (actualSelectionDigest !== expectedSelectionDigest) failures.push('The ordered 70-title publisher selection register changed; re-verify every title against the source PDF before updating the digest.');
 
+const evidenceRecords = [...evidenceQuestions.matchAll(/q\('u(\d+)',\s*([123]),\s*(\d+),\s*'[^']+',\s*('(?:[^'\\]|\\.)*'|"(?:[^"\\]|\\.)*"),\s*'([^']+)'/g)]
+  .map((match) => ({ unit: Number(match[1]), week: Number(match[2]), question: Number(match[3]), title: Function(`return ${match[4]}`)(), strategy: match[5] }));
+if (evidenceRecords.length !== 100) failures.push(`Expected 100 official Benchmark text-evidence questions; found ${evidenceRecords.length}.`);
+for (let unit = 1; unit <= 10; unit += 1) {
+  const records = evidenceRecords.filter((record) => record.unit === unit);
+  if (records.length !== 10) failures.push(`Unit ${unit} must contain exactly 10 official text-evidence questions; found ${records.length}.`);
+  if (records.map((record) => record.question).join(',') !== '1,2,3,4,5,6,7,8,9,10') failures.push(`Unit ${unit} question numbers must be ordered 1-10.`);
+  for (const record of records) {
+    const normalizedQuestionTitle = record.title.normalize('NFKD').replace(/[‘’“”]/g, '').replace(/[^a-z0-9]+/gi, '').toLowerCase();
+    if (!normalizedSelectionTitles.includes(normalizedQuestionTitle)) failures.push(`Unit ${unit} question ${record.question} references a selection outside the verified 70-title register: ${record.title}.`);
+  }
+}
+if (!evidenceQuestions.includes('https://ruskin.berryessa.k12.ca.us/subsites/Lan-Pham/documents/3rd%20reading%20closely.pdf')) failures.push('Missing district-hosted publisher text-evidence source URL.');
+
+const expectedStrategies = ['main-idea', 'text-evidence', 'inference', 'cause-effect', 'sequence', 'compare', 'character', 'point-of-view', 'vocabulary', 'text-feature', 'theme', 'poetry'];
+for (const strategy of expectedStrategies) {
+  const key = strategy === 'inference' || strategy === 'sequence' || strategy === 'compare' || strategy === 'character' || strategy === 'vocabulary' || strategy === 'theme' || strategy === 'poetry'
+    ? `${strategy}: {`
+    : `'${strategy}': {`;
+  if (!strategyExamples.includes(key)) failures.push(`Missing original visual strategy example: ${strategy}.`);
+}
+for (const phrase of [
+  'These short examples are original portal teaching material.',
+  'modelThinking',
+  'modelResponse',
+  'Watch a reader think',
+  'This is a think-aloud for the original demonstration text—not an answer to Official Question',
+  'Explain and model → guided use → independent use',
+  'Practice with guidance',
+  'Respond without typing',
+  'Tap each move when you find it in the school text',
+  'No typing is required here.',
+  'Say your answer and point to the evidence',
+  'I said my answer aloud',
+  'Six ways a Grade 3 learner works with language',
+  'Visual unit path · labels come from the official publisher scope',
+  'Official sources for this unit',
+  'Open publisher scope · printed pp.',
+  'Official source · PDF p.',
+  'Publisher source visible here',
+  'Open the exact publisher page · PDF p.'
+]) {
+  if (!strategyExamples.includes(phrase) && !template.includes(phrase)) failures.push(`Missing visual-teaching contract: ${phrase}`);
+}
+for (const rejectedWorksheetPattern of ['<input', '<textarea', '[(ngModel)]', 'Type it', 'One short response', 'evidenceAnswer', 'evidenceDetail', 'evidenceReasoning', 'questionInOwnWords']) {
+  if (template.includes(rejectedWorksheetPattern)) failures.push(`Rejected digital-worksheet pattern remains: ${rejectedWorksheetPattern}`);
+}
+if (template.includes('class="book-stack"')) failures.push('Decorative CSS book-stack art remains instead of source-controlled evidence.');
+if (template.indexOf('class="unit-official-evidence source-first"') > template.indexOf('class="unit-week-nav"')) failures.push('Official unit source proof must appear before the week learning path.');
+if (!template.includes('<article *ngFor="let question of weekQuestions(week)" class="question-launch-card">')) failures.push('Question launches are not structured with adjacent source proof.');
+if (!template.includes('[href]="questionSourcePage(unit)" target="_blank" rel="noopener">Official source · PDF p.')) failures.push('Each Unit question launch must carry its adjacent official publisher-page link.');
+if (!template.includes('class="question-source-thumbnail"')) failures.push('The active practice question does not visibly show its official publisher source page.');
+
 if (Object.keys(practice).join(',') !== expectedPracticeKeys.join(',')) failures.push('Practice registry must contain the ordered keys u1-w1 through u10-w3.');
 if (practiceDays.length !== 150) failures.push(`Expected 150 explicit practice records; found ${practiceDays.length}.`);
 for (const key of expectedPracticeKeys) {
@@ -134,6 +193,7 @@ for (const route of [
   "path: 'ruchika/grade3/reading/assessments'",
   "path: 'ruchika/grade3/reading/levels'",
   "path: 'ruchika/grade3/reading/units/:unitId'",
+  "path: 'ruchika/grade3/reading/units/:unitId/practice/:questionNumber'",
   "path: 'ruchika/grade3/reading/units/:unitId/lessons/:lessonNumber', component: ReadingHomePage"
 ]) if (!routes.includes(route)) failures.push(`Missing route: ${route}`);
 
@@ -167,10 +227,7 @@ for (let unit = 1; unit <= 10; unit += 1) {
 for (const phrase of ['Original supplemental practice—not a Benchmark, Baker, or Moreland lesson.', 'The public source does not establish Baker’s current pacing.']) {
   if (!sourceAudit.includes(phrase)) failures.push(`Missing source-audit limitation: ${phrase}`);
 }
-for (const forbiddenOfficialLabel of ['official weeks', 'Official Week', 'Official Unit']) {
-  if (template.includes(forbiddenOfficialLabel)) failures.push(`Overstated curriculum label remains in UI: ${forbiddenOfficialLabel}.`);
-}
-for (const phrase of ['What is needed for Math-level daily practice', 'Day-by-day reading practice will be released only after', 'official source page stays visible', 'Baker’s current classroom dates and pacing are not public']) {
+for (const phrase of ['100 official text-evidence questions', 'Official sources for this unit', 'the portal does not replace or invent the passage', 'does not invent a passage, answer, or score', 'Baker’s current classroom dates and pacing are not public']) {
   if (!template.includes(phrase)) failures.push(`Missing public-evidence boundary: ${phrase}`);
 }
 if (template.includes('class="lesson-links"')) failures.push('Supplemental practice links remain published on the active Unit path.');
@@ -190,6 +247,11 @@ for (let index = 0; index < sourcePageStats.length; index += 1) {
   if (!sourcePage || sourcePage.size < 100_000) failures.push(`Missing or incomplete official rendered source page for Unit ${index + 1}.`);
   if (!template.includes(`scopeImage(unit)`)) failures.push('The active unit page does not visibly render its official publisher source page.');
 }
+for (let index = 0; index < evidenceSourcePageStats.length; index += 1) {
+  const sourcePage = evidenceSourcePageStats[index];
+  if (!sourcePage || sourcePage.size < 100_000) failures.push(`Missing or incomplete official text-evidence source page for Unit ${index + 1}.`);
+}
+if (!template.includes("'/source-pages/reading/text-evidence/unit-' + unit.number + '.png'")) failures.push('The active unit page does not visibly render its official text-evidence source page.');
 
 const expectedStandardsByDomain = {
   RL: ['RL.3.1', 'RL.3.2', 'RL.3.3', 'RL.3.4', 'RL.3.5', 'RL.3.6', 'RL.3.7', 'RL.3.8', 'RL.3.9', 'RL.3.10'],
@@ -222,6 +284,9 @@ const summary = {
   selectionsPerUnit,
   publisherSelectionRegisterVerified: actualSelectionDigest === expectedSelectionDigest,
   officialRenderedSourcePages: sourcePageStats.filter((entry) => entry && entry.size >= 100_000).length,
+  officialTextEvidenceQuestions: evidenceRecords.length,
+  officialTextEvidenceSourcePages: evidenceSourcePageStats.filter((entry) => entry && entry.size >= 100_000).length,
+  originalVisualStrategyExamples: expectedStrategies.filter((strategy) => strategyExamples.includes(strategy)).length,
   boundedOfficialLessons: officialLessons.includes("id: 'u1-w1-l1'") ? 1 : 0,
   quarantinedSupplementalPracticeDrafts: practiceDays.length,
   distinctPracticeTitles: new Set(practiceDays.map((day) => day.title)).size,

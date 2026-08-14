@@ -121,7 +121,7 @@
           "family": "source-illustration-model",
           "modelPrimitive": "source-illustration",
           "modelOrientation": "source-order",
-          "printedEquationLineCount": 1
+          "printedEquationLineCount": 0
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],

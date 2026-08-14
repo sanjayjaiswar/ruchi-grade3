@@ -42,11 +42,26 @@
         ],
         "answerKeyEvidence": "80; 3 tens; 3 tens; 3; 30, 80; 80",
         "layout": {
-          "family": "number-bond-model"
+          "family": "source-number-bond-decomposition",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-number-bond-and-four-equation-chain",
+          "modelCounts": [
+            8,
+            10,
+            5,
+            3,
+            50,
+            30,
+            80
+          ],
+          "modelOrientation": "number-bond-above-stacked-distributive-equations",
+          "printedEquationLineCount": 5,
+          "openWorkspaceCount": 0,
+          "responseStructure": "complete-three-tens-part-and-equation-chain"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+        "sourceLayoutNotes": "The source-observed primitive, count, orientation, grouping, dividers, response order, and open-workspace requirements control Blank and Solved rendering."
       }
     },
     {
@@ -58,11 +73,26 @@
         ],
         "answerKeyEvidence": "28; 2 fours; 2 fours; 2; 8, 28; 28",
         "layout": {
-          "family": "number-bond-model"
+          "family": "source-number-bond-decomposition",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-number-bond-and-four-equation-chain",
+          "modelCounts": [
+            7,
+            4,
+            5,
+            2,
+            20,
+            8,
+            28
+          ],
+          "modelOrientation": "number-bond-above-stacked-distributive-equations",
+          "printedEquationLineCount": 5,
+          "openWorkspaceCount": 0,
+          "responseStructure": "complete-two-fours-part-and-equation-chain"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+        "sourceLayoutNotes": "The source-observed primitive, count, orientation, grouping, dividers, response order, and open-workspace requirements control Blank and Solved rendering."
       }
     },
     {
@@ -74,11 +104,26 @@
         ],
         "answerKeyEvidence": "90; 4 × 10; 4 tens; 4; 50, 40, 90; 90",
         "layout": {
-          "family": "number-bond-model"
+          "family": "source-number-bond-decomposition",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-number-bond-and-four-equation-chain",
+          "modelCounts": [
+            9,
+            10,
+            5,
+            4,
+            50,
+            40,
+            90
+          ],
+          "modelOrientation": "number-bond-above-stacked-distributive-equations",
+          "printedEquationLineCount": 5,
+          "openWorkspaceCount": 0,
+          "responseStructure": "complete-four-tens-part-and-equation-chain"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+        "sourceLayoutNotes": "The source-observed primitive, count, orientation, grouping, dividers, response order, and open-workspace requirements control Blank and Solved rendering."
       }
     },
     {
@@ -90,11 +135,25 @@
         ],
         "answerKeyEvidence": "100; 5 × 10, 5 × 10; 5 tens, 5 tens; 5, 5; 50, 50, 100; 100",
         "layout": {
-          "family": "number-bond-model"
+          "family": "source-number-bond-decomposition",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-number-bond-and-four-equation-chain",
+          "modelCounts": [
+            10,
+            10,
+            5,
+            5,
+            50,
+            100
+          ],
+          "modelOrientation": "number-bond-above-stacked-distributive-equations",
+          "printedEquationLineCount": 5,
+          "openWorkspaceCount": 0,
+          "responseStructure": "decompose-ten-tens-into-two-equal-five-tens-parts"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+        "sourceLayoutNotes": "The source-observed primitive, count, orientation, grouping, dividers, response order, and open-workspace requirements control Blank and Solved rendering."
       }
     },
     {
@@ -106,11 +165,26 @@
         ],
         "answerKeyEvidence": "70; number bond showing (5 × 10) + (2 × 10) equals 7 × 10 drawn",
         "layout": {
-          "family": "number-bond-model"
+          "family": "open-number-bond-word-problem",
+          "subpartCount": 1,
+          "modelPrimitive": "student-drawn-distributive-number-bond",
+          "modelCounts": [
+            7,
+            10,
+            5,
+            2,
+            50,
+            20,
+            70
+          ],
+          "modelOrientation": "word-problem-over-open-number-bond-workspace",
+          "printedEquationLineCount": 1,
+          "openWorkspaceCount": 1,
+          "responseStructure": "draw-break-apart-number-bond-and-complete-children-answer"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+        "sourceLayoutNotes": "The source-observed primitive, count, orientation, grouping, dividers, response order, and open-workspace requirements control Blank and Solved rendering."
       }
     },
     {
@@ -122,11 +196,22 @@
         ],
         "answerKeyEvidence": "24",
         "layout": {
-          "family": "open-written-response"
+          "family": "open-word-problem-response",
+          "subpartCount": 1,
+          "modelPrimitive": "student-authored-rdw-space",
+          "modelCounts": [
+            8,
+            3,
+            24
+          ],
+          "modelOrientation": "word-problem-over-open-workspace",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "find-total-sides-on-eight-triangles"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+        "sourceLayoutNotes": "The source-observed primitive, count, orientation, grouping, dividers, response order, and open-workspace requirements control Blank and Solved rendering."
       }
     },
     {
@@ -138,11 +223,22 @@
         ],
         "answerKeyEvidence": "120",
         "layout": {
-          "family": "open-written-response"
+          "family": "open-word-problem-response",
+          "subpartCount": 1,
+          "modelPrimitive": "student-authored-rdw-space",
+          "modelCounts": [
+            12,
+            10,
+            120
+          ],
+          "modelOrientation": "word-problem-over-open-workspace",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "find-total-bottles-in-twelve-rows"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+        "sourceLayoutNotes": "The source-observed primitive, count, orientation, grouping, dividers, response order, and open-workspace requirements control Blank and Solved rendering."
       }
     }
   ]

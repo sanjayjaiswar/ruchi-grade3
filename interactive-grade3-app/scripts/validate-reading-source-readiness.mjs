@@ -9,7 +9,8 @@ const requiredSourceIds = [
   'cde-adopted-programs',
   'cde-program-findings',
   'benchmark-grade3-scope',
-  'benchmark-grade3-u1w1-program-sample'
+  'benchmark-grade3-u1w1-program-sample',
+  'benchmark-grade3-text-evidence-questions'
 ];
 const sourceIds = new Set(manifest.verifiedSources?.map((source) => source.id));
 for (const id of requiredSourceIds) {
@@ -38,6 +39,19 @@ for (const boundary of ['full-student-passage', 'u1-w1-lessons-after-l1', 'units
 }
 if (manifest.readiness?.boundedOfficialLessonIds?.join(',') !== 'u1-w1-l1') failures.push('Only u1-w1-l1 may be source-admitted at this stage.');
 
+const evidenceQuestions = manifest.verifiedSources?.find((source) => source.id === 'benchmark-grade3-text-evidence-questions');
+if (evidenceQuestions?.pageCount !== 10) failures.push(`Expected the official text-evidence source to contain 10 pages; found ${evidenceQuestions?.pageCount ?? 'none'}.`);
+if (evidenceQuestions?.sha256 !== 'd33c76c4f751cc647c032b85278f6ac160f76ed06687cb097971ffe7c405b4d6') {
+  failures.push('The official text-evidence source fingerprint changed. Re-audit all 100 questions before accepting the new hash.');
+}
+for (const control of ['unit-question-order', 'selection-to-question-alignment', 'official-question-text']) {
+  if (!evidenceQuestions?.controls?.includes(control)) failures.push(`Text-evidence source no longer controls ${control}.`);
+}
+for (const boundary of ['student-passages', 'answer-keys', 'scores', 'daily-lesson-sequence', 'current-classroom-pacing']) {
+  if (!evidenceQuestions?.doesNotControl?.includes(boundary)) failures.push(`Text-evidence source no longer blocks ${boundary}.`);
+}
+if (manifest.readiness?.officialTextEvidencePracticeReady !== true) failures.push('Verified official text-evidence practice must remain available.');
+
 const missingComponents = manifest.requiredLocalComponents?.filter((component) => !component.present) ?? [];
 const missingLessonComponents = missingComponents.filter((component) =>
   ['daily-lessons', 'student-text-and-page-evidence', 'referenced-lesson-components'].includes(component.requiredFor)
@@ -62,6 +76,7 @@ if (!manifest.releaseRule?.includes('fingerprinted') || !manifest.releaseRule?.i
 
 const result = {
   yearMap: manifest.readiness.yearMapReady ? 'READY' : 'BLOCKED',
+  officialTextEvidencePractice: manifest.readiness.officialTextEvidencePracticeReady ? 'READY' : 'BLOCKED',
   dailyLessonAuthoring: manifest.readiness.dailyLessonAuthoringReady ? 'READY' : 'BLOCKED',
   boundedOfficialLessons: manifest.readiness.boundedOfficialLessonIds ?? [],
   officialAssessmentAuthoring: manifest.readiness.officialAssessmentAuthoringReady ? 'READY' : 'BLOCKED',

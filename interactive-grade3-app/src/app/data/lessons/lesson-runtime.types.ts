@@ -554,6 +554,7 @@ export type ProblemVisualTapeSection = {
     sublabel?: string;
     emphasize?: boolean;
     muted?: boolean;
+    weight?: number;
   }>;
   partAnswers?: string[][];
   braces?: Array<{
@@ -640,8 +641,8 @@ export type ProblemVisualExpressionMatchSection = {
   rightAnswers?: string[][];
   rightLabel?: string;
   orientation?: 'rows' | 'columns' | 'pairs';
-  topShape?: 'card' | 'caterpillar' | 'umbrella' | 'boat' | 'scroll' | 'helicopter' | 'car' | 'mouse' | 'book' | 'sunburst' | 'fish-bowl';
-  bottomShape?: 'card' | 'leaf' | 'raindrop' | 'catch-card' | 'tag' | 'cloud' | 'cheese' | 'flag' | 'fish';
+  topShape?: 'card' | 'caterpillar' | 'umbrella' | 'boat' | 'scroll' | 'helicopter' | 'car' | 'mouse' | 'book' | 'sunburst' | 'fish-bowl' | 'cloud' | 'bucket';
+  bottomShape?: 'card' | 'leaf' | 'raindrop' | 'catch-card' | 'tag' | 'cloud' | 'cheese' | 'flag' | 'fish' | 'balloon' | 'ball';
   matches?: Array<{
     topIndex: number;
     bottomIndex: number;
@@ -905,6 +906,7 @@ export type ProblemVisualSourceCropSection = {
     width: number;
     height: number;
   };
+  displayWidth?: number;
   sketchOverlay?: boolean;
   caption?: string;
 };
@@ -956,6 +958,7 @@ export type ProblemVisualSourceResponseWorkspaceSection = {
   kind: 'source-response-workspace';
   label?: string;
   wide?: boolean;
+  columns?: 1 | 2 | 3 | 4;
   answerEvidence?: string;
   parts: Array<{
     lead?: string;
@@ -969,6 +972,7 @@ export type ProblemVisualSourceResponseWorkspaceSection = {
     responsePlaceholder?: string;
     response?: string;
     dividerBefore?: boolean;
+    columnSpan?: 'all' | 1 | 2 | 3 | 4;
     challenge?: boolean;
     solutionLabel?: string;
   }>;

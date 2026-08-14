@@ -174,6 +174,7 @@ function validateLesson(lessonId) {
       failures.push(`${label}: controlling page image is not fingerprinted Problem Set evidence`);
     }
     validateTeacherEditionRequirements(
+      lessonId,
       label,
       sourceProblem,
       baseline,
@@ -242,6 +243,7 @@ function validateSourceEvidence(
 }
 
 function validateTeacherEditionRequirements(
+  lessonId,
   label,
   sourceProblem,
   baseline,
@@ -302,8 +304,8 @@ function validateTeacherEditionRequirements(
     failures.push(`${label}: screenshot-crop layouts are invalid acceptance evidence; record the source-observed problem structure`);
     return;
   }
-  const blankLayout = canonicalLayout(implementation.blankVisual, implementation, 'blank');
-  const solvedLayout = canonicalLayout(implementation.solvedVisual, implementation, 'solved');
+  const blankLayout = canonicalLayout(implementation.blankVisual, implementation, 'blank', lessonId);
+  const solvedLayout = canonicalLayout(implementation.solvedVisual, implementation, 'solved', lessonId);
   if (!layoutContainsExpected(blankLayout, expectedLayout)) {
     failures.push(`${label}: Blank canonical layout differs from Teacher Edition page evidence; expected ${format(expectedLayout)}, found ${format(blankLayout)}`);
   }
@@ -429,6 +431,9 @@ function implementationEvidenceText(problem, mode) {
     'equationAnswers',
     'expectedAnswer',
     'lineAnswers',
+    'partAnswers',
+    'braceAnswers',
+    'captionAnswers',
     'promptAnswers',
     'topAnswers',
     'topItemAnswers',
@@ -466,9 +471,65 @@ function rejectUnknownFields(label, value, allowedFields) {
   }
 }
 
-function canonicalLayout(visual, problem, mode) {
+function canonicalLayout(visual, problem, mode, lessonId = '') {
   const sections = visual?.sections ?? [];
   const sourcePrompt = normalizeText(problem?.sourcePrompt);
+  const moduleId = lessonId.split('-')[0];
+  if (moduleId === 'm3') {
+    const reviewedBatchLayout = canonicalM3LessonsSixThroughTenLayout(sections, sourcePrompt, mode);
+    if (reviewedBatchLayout) return reviewedBatchLayout;
+    const reviewedSecondBatchLayout = canonicalM3LessonsElevenThroughFifteenLayout(sections, sourcePrompt, mode);
+    if (reviewedSecondBatchLayout) return reviewedSecondBatchLayout;
+    const reviewedThirdBatchLayout = canonicalM3LessonsSixteenThroughTwentyLayout(sections, sourcePrompt, mode);
+    if (reviewedThirdBatchLayout) return reviewedThirdBatchLayout;
+  }
+  if (moduleId === 'm2') {
+    const authoredInteractionLayout = canonicalAuthoredInteractionLayout(
+      mode === 'solved' ? problem?.blankVisual?.sections ?? sections : sections
+    );
+    if (authoredInteractionLayout) return authoredInteractionLayout;
+    const genericLayout = canonicalGenericLayout(
+      mode === 'solved' ? problem?.blankVisual?.sections ?? sections : sections
+    );
+    if (genericLayout) return genericLayout;
+  }
+  const m1InteractionSections = mode === 'solved'
+    ? problem?.blankVisual?.sections ?? sections
+    : sections;
+  const reviewedM1LessonTwentyOneLayout = canonicalM1LessonTwentyOneLayout(
+    m1InteractionSections,
+    sections,
+    problem,
+    mode
+  );
+  if (reviewedM1LessonTwentyOneLayout) return reviewedM1LessonTwentyOneLayout;
+  const reviewedM1FourthBatchLayout = canonicalM1LessonsSixteenThroughTwentyLayout(
+    m1InteractionSections,
+    sections,
+    problem,
+    mode
+  );
+  if (reviewedM1FourthBatchLayout) return reviewedM1FourthBatchLayout;
+  const reviewedM1ThirdBatchLayout = canonicalM1LessonsElevenThroughFifteenLayout(
+    m1InteractionSections,
+    sections,
+    sourcePrompt,
+    mode
+  );
+  if (reviewedM1ThirdBatchLayout) return reviewedM1ThirdBatchLayout;
+  const reviewedM1SecondBatchLayout = canonicalM1LessonsSixThroughTenLayout(
+    m1InteractionSections,
+    sections,
+    sourcePrompt,
+    mode
+  );
+  if (reviewedM1SecondBatchLayout) return reviewedM1SecondBatchLayout;
+  const reviewedM1FirstBatchLayout = canonicalM1LessonsOneThroughFiveLayout(
+    m1InteractionSections,
+    sections,
+    sourcePrompt
+  );
+  if (reviewedM1FirstBatchLayout) return reviewedM1FirstBatchLayout;
   const reviewedM5FirstBatchLayout = canonicalM5LessonsOneThroughFiveLayout(sections, sourcePrompt, mode);
   if (reviewedM5FirstBatchLayout) return reviewedM5FirstBatchLayout;
   const reviewedM5SecondBatchLayout = canonicalM5LessonsSixThroughTenLayout(sections, sourcePrompt, mode);
@@ -505,12 +566,14 @@ function canonicalLayout(visual, problem, mode) {
   if (reviewedM4SecondBatchLayout) return reviewedM4SecondBatchLayout;
   const reviewedM4Layout = canonicalM4LessonsOneThroughFiveLayout(sections, sourcePrompt, mode);
   if (reviewedM4Layout) return reviewedM4Layout;
-  const reviewedBatchLayout = canonicalM3LessonsSixThroughTenLayout(sections, sourcePrompt, mode);
-  if (reviewedBatchLayout) return reviewedBatchLayout;
-  const reviewedSecondBatchLayout = canonicalM3LessonsElevenThroughFifteenLayout(sections, sourcePrompt, mode);
-  if (reviewedSecondBatchLayout) return reviewedSecondBatchLayout;
-  const reviewedThirdBatchLayout = canonicalM3LessonsSixteenThroughTwentyLayout(sections, sourcePrompt, mode);
-  if (reviewedThirdBatchLayout) return reviewedThirdBatchLayout;
+  if (moduleId !== 'm3') {
+    const reviewedBatchLayout = canonicalM3LessonsSixThroughTenLayout(sections, sourcePrompt, mode);
+    if (reviewedBatchLayout) return reviewedBatchLayout;
+    const reviewedSecondBatchLayout = canonicalM3LessonsElevenThroughFifteenLayout(sections, sourcePrompt, mode);
+    if (reviewedSecondBatchLayout) return reviewedSecondBatchLayout;
+    const reviewedThirdBatchLayout = canonicalM3LessonsSixteenThroughTwentyLayout(sections, sourcePrompt, mode);
+    if (reviewedThirdBatchLayout) return reviewedThirdBatchLayout;
+  }
   const authoredInteractionLayout = canonicalAuthoredInteractionLayout(
     mode === 'solved' ? problem?.blankVisual?.sections ?? sections : sections
   );
@@ -576,6 +639,1125 @@ function canonicalLayout(visual, problem, mode) {
     surfaceCount: 1,
     sectionKinds: [section.kind]
   };
+}
+
+function canonicalM1LessonTwentyOneLayout(blankSections, renderedSections, problem, mode) {
+  const sourcePrompt = normalizeText(problem?.sourcePrompt);
+  const key = sourcePrompt.startsWith('jason earns $6 per week') ? '21-1'
+    : sourcePrompt.startsWith('miss lianto orders 4 packs of 7 markers') ? '21-2'
+    : sourcePrompt.startsWith('orlando buys a box of 18 fruit snacks') ? '21-3'
+    : sourcePrompt.startsWith('eudora buys 21 meters of ribbon') ? '21-4'
+    : undefined;
+  if (!key) return undefined;
+
+  const expected = {
+    '21-1': {
+      family: 'source-five-part-earnings-tape',
+      subpartCount: 1,
+      modelPrimitive: 'printed-five-part-horizontal-tape-with-first-and-fifth-part-braces',
+      modelCounts: [5, 4, 6, 4, 28],
+      modelOrientation: 'five-part-tape-with-six-dollar-first-brace-four-dollar-last-brace-and-whole-brace-below',
+      printedEquationLineCount: 0,
+      openWorkspaceCount: 1,
+      dividerCount: 4,
+      responseStructure: 'open-equation-box-and-jason-earns-answer-line'
+    },
+    '21-2': {
+      family: 'source-two-stage-marker-tapes',
+      subpartCount: 1,
+      modelPrimitive: 'printed-four-part-pack-tape-over-handed-out-and-leftover-tape',
+      modelCounts: [4, 7, 28, 22, 6],
+      modelOrientation: 'four-equal-pack-parts-above-two-part-comparison-with-six-marker-right-part',
+      printedEquationLineCount: 0,
+      openWorkspaceCount: 0,
+      dividerCount: 4,
+      responseStructure: 'label-both-tapes-and-complete-student-count-answer-line'
+    },
+    '21-3': {
+      family: 'open-fruit-snack-tape-problem',
+      subpartCount: 1,
+      modelPrimitive: 'student-drawn-tape-diagram',
+      modelCounts: [18, 3, 6, 12],
+      modelOrientation: 'word-problem-over-open-tape-workspace',
+      printedEquationLineCount: 0,
+      openWorkspaceCount: 1,
+      responseStructure: 'draw-label-solve-and-state-fruit-snacks-left'
+    },
+    '21-4': {
+      family: 'open-two-part-ribbon-problem',
+      subpartCount: 2,
+      modelPrimitive: 'student-authored-rdw-space-with-two-response-parts',
+      modelCounts: [21, 3, 7, 12, 5],
+      modelOrientation: 'word-problem-over-part-a-and-part-b-open-workspace',
+      printedEquationLineCount: 0,
+      openWorkspaceCount: 2,
+      responseStructure: 'find-existing-three-meter-pieces-then-find-more-pieces-to-twelve'
+    }
+  }[key];
+
+  const all = flattenVisualSections(blankSections);
+  const renderedAll = flattenVisualSections(renderedSections);
+  const tapes = all.filter((section) => section?.kind === 'tape');
+  const responses = all.filter((section) => section?.kind === 'source-response-workspace');
+  const responseParts = responses.flatMap((section) => section.parts ?? []);
+  const equationSections = all.filter((section) => section?.kind === 'equations');
+  const printedEquationLineCount = equationSections.reduce(
+    (sum, section) => sum + (section.lines?.length ?? 0),
+    0
+  );
+  const openWorkspaceCount = responseParts.filter(
+    (part) => part.openWorkspace || part.sketchWorkspace || part.responsePlaceholder
+  ).length;
+  const renderedTapes = renderedAll.filter((section) => section?.kind === 'tape');
+  const config = {
+    '21-1': { tapes: 1, tapeParts: [5], topParts: [2], braces: [1], responses: 1, responseParts: 2, renderedTapes: 1 },
+    '21-2': { tapes: 2, tapeParts: [4, 2], topParts: [0, 0], braces: [1, 2], responses: 1, responseParts: 1, renderedTapes: 2 },
+    '21-3': { tapes: 0, tapeParts: [], topParts: [], braces: [], responses: 1, responseParts: 1, renderedTapes: 2 },
+    '21-4': { tapes: 0, tapeParts: [], topParts: [], braces: [], responses: 1, responseParts: 2, renderedTapes: 2 }
+  }[key];
+  const valid = tapes.length === config.tapes
+    && responses.length === config.responses
+    && responseParts.length === config.responseParts
+    && openWorkspaceCount === expected.openWorkspaceCount
+    && printedEquationLineCount === expected.printedEquationLineCount
+    && tapes.every((tape, index) => (tape.parts?.length ?? 0) === config.tapeParts[index])
+    && tapes.every((tape, index) => (tape.topParts?.length ?? 0) === config.topParts[index])
+    && tapes.every((tape, index) => (tape.braces?.length ?? 0) === config.braces[index])
+    && (mode !== 'solved' || renderedTapes.length === config.renderedTapes);
+  return valid ? expected : unsupportedLayout(blankSections);
+}
+
+function m1ReviewedSecondBatchLayouts() {
+  return {
+  "6-1": {
+    "family": "source-illustration-division-model",
+    "subpartCount": 1,
+    "modelPrimitive": "printed-tennis-ball-bank",
+    "modelCounts": [
+      15,
+      3,
+      5
+    ],
+    "modelOrientation": "scattered-bank-over-sentence-and-two-equations",
+    "printedEquationLineCount": 2,
+    "openWorkspaceCount": 0,
+    "responseStructure": "circle-five-groups-complete-sentence-two-related-facts",
+    "sourceFirst": true,
+    "sourceCropCount": 1
+  },
+  "6-2": {
+    "family": "open-array-and-related-facts",
+    "subpartCount": 1,
+    "modelPrimitive": "student-drawn-equal-groups",
+    "modelCounts": [
+      15,
+      5,
+      3
+    ],
+    "modelOrientation": "open-drawing-over-sentence-and-two-equations",
+    "printedEquationLineCount": 2,
+    "openWorkspaceCount": 1,
+    "responseStructure": "draw-five-equal-groups-complete-sentence-two-related-facts"
+  },
+  "6-3": {
+    "family": "two-column-array-meaning-response",
+    "subpartCount": 2,
+    "columnCount": 2,
+    "dividerCount": 1,
+    "modelPrimitive": "student-drawn-array",
+    "modelCounts": [
+      5,
+      3,
+      15
+    ],
+    "modelOrientation": "shared-array-above-two-parallel-response-columns",
+    "printedEquationLineCount": 4,
+    "openWorkspaceCount": 3,
+    "responseStructure": "one-array-two-equations-and-one-meaning-line-per-column"
+  },
+  "6-4": {
+    "family": "word-problem-related-facts-and-meaning",
+    "subpartCount": 1,
+    "modelPrimitive": "equation-and-written-response",
+    "modelCounts": [
+      21,
+      7,
+      3
+    ],
+    "modelOrientation": "stacked-related-facts-over-meaning-line",
+    "printedEquationLineCount": 2,
+    "openWorkspaceCount": 1,
+    "responseStructure": "two-related-facts-and-meaning-of-unknown"
+  },
+  "6-5": {
+    "family": "unknown-factor-explanation",
+    "subpartCount": 1,
+    "modelPrimitive": "equation-and-written-explanation",
+    "modelCounts": [
+      4,
+      3,
+      12
+    ],
+    "modelOrientation": "two-related-equations-over-large-explanation-space",
+    "printedEquationLineCount": 2,
+    "openWorkspaceCount": 1,
+    "responseStructure": "complete-factor-and-quotient-explain-why-division-works"
+  },
+  "6-6": {
+    "family": "open-array-construction",
+    "subpartCount": 1,
+    "modelPrimitive": "student-drawn-array",
+    "modelCounts": [
+      4,
+      3,
+      12
+    ],
+    "modelOrientation": "large-open-array-workspace",
+    "printedEquationLineCount": 0,
+    "openWorkspaceCount": 1,
+    "responseStructure": "draw-array-for-problem-five-equations"
+  },
+  "7-1": {
+    "family": "paired-open-array-panel",
+    "subpartCount": 1,
+    "columnCount": 1,
+    "modelPrimitive": "student-drawn-array",
+    "modelCounts": [
+      6,
+      2,
+      12
+    ],
+    "modelOrientation": "left-panel-open-array-over-equation",
+    "printedEquationLineCount": 1,
+    "openWorkspaceCount": 1,
+    "responseStructure": "draw-six-by-two-array-complete-equation"
+  },
+  "7-2": {
+    "family": "paired-open-array-panel",
+    "subpartCount": 1,
+    "columnCount": 1,
+    "modelPrimitive": "student-drawn-array",
+    "modelCounts": [
+      2,
+      6,
+      12
+    ],
+    "modelOrientation": "right-panel-open-array-over-equation",
+    "printedEquationLineCount": 1,
+    "openWorkspaceCount": 1,
+    "responseStructure": "draw-two-by-six-array-complete-equation"
+  },
+  "7-3": {
+    "family": "two-part-written-comparison",
+    "subpartCount": 2,
+    "modelPrimitive": "written-response",
+    "modelCounts": [
+      6,
+      2,
+      12
+    ],
+    "modelOrientation": "two-stacked-response-lines",
+    "printedEquationLineCount": 0,
+    "openWorkspaceCount": 2,
+    "responseStructure": "compare-arrays-then-explain-factor-meaning"
+  },
+  "7-4": {
+    "family": "three-column-related-fact-grid",
+    "subpartCount": 8,
+    "columnCount": 3,
+    "rowCount": 3,
+    "modelPrimitive": "printed-fact-grid",
+    "modelCounts": [
+      2,
+      6,
+      7,
+      9,
+      11,
+      12
+    ],
+    "modelOrientation": "three-columns-with-ab-cd-ef-and-extension-gh",
+    "printedEquationLineCount": 8,
+    "openWorkspaceCount": 0,
+    "responseStructure": "complete-eight-related-multiplication-facts-in-source-order"
+  },
+  "7-5": {
+    "family": "source-two-array-equation-comparison",
+    "subpartCount": 2,
+    "columnCount": 2,
+    "dividerCount": 1,
+    "modelPrimitive": "printed-fish-arrays",
+    "modelCounts": [
+      4,
+      2,
+      8,
+      2,
+      4,
+      8
+    ],
+    "modelOrientation": "four-rows-of-two-beside-two-rows-of-four",
+    "printedEquationLineCount": 2,
+    "openWorkspaceCount": 0,
+    "responseStructure": "read-each-array-complete-one-equation",
+    "sourceFirst": true,
+    "sourceCropCount": 1
+  },
+  "7-6": {
+    "family": "paired-open-array-explanation",
+    "subpartCount": 2,
+    "columnCount": 2,
+    "modelPrimitive": "student-drawn-commutative-arrays",
+    "modelCounts": [
+      2,
+      7,
+      14,
+      7,
+      2,
+      14
+    ],
+    "modelOrientation": "two-open-arrays-above-written-justification",
+    "printedEquationLineCount": 0,
+    "openWorkspaceCount": 3,
+    "responseStructure": "draw-both-arrays-and-explain-agreement"
+  },
+  "7-7": {
+    "family": "four-cloud-missing-factor-row",
+    "subpartCount": 4,
+    "columnCount": 4,
+    "modelPrimitive": "printed-cloud-equations",
+    "modelCounts": [
+      5,
+      2,
+      10,
+      9
+    ],
+    "modelOrientation": "four-horizontal-clouds",
+    "printedEquationLineCount": 4,
+    "blankInputCount": 4,
+    "openWorkspaceCount": 0,
+    "responseStructure": "complete-four-missing-factors-in-source-order",
+    "sourceFirst": true,
+    "sourceCropCount": 1
+  },
+  "7-8": {
+    "family": "three-part-array-and-commutative-facts",
+    "subpartCount": 3,
+    "modelPrimitive": "student-drawn-array",
+    "modelCounts": [
+      2,
+      6,
+      12,
+      6,
+      2,
+      12
+    ],
+    "modelOrientation": "large-open-array-above-two-equation-lines",
+    "printedEquationLineCount": 2,
+    "openWorkspaceCount": 1,
+    "responseStructure": "draw-array-write-fact-write-commutative-fact"
+  },
+  "8-1": {
+    "family": "paired-open-array-panel",
+    "subpartCount": 1,
+    "modelPrimitive": "student-drawn-array",
+    "modelCounts": [
+      5,
+      3,
+      15
+    ],
+    "modelOrientation": "left-panel-open-five-by-three-array",
+    "printedEquationLineCount": 0,
+    "openWorkspaceCount": 1,
+    "responseStructure": "draw-five-by-three-array"
+  },
+  "8-2": {
+    "family": "paired-open-array-panel",
+    "subpartCount": 1,
+    "modelPrimitive": "student-drawn-array",
+    "modelCounts": [
+      3,
+      5,
+      15
+    ],
+    "modelOrientation": "right-panel-open-three-by-five-array",
+    "printedEquationLineCount": 0,
+    "openWorkspaceCount": 1,
+    "responseStructure": "draw-three-by-five-array"
+  },
+  "8-3": {
+    "family": "commutative-equality-label",
+    "subpartCount": 2,
+    "columnCount": 2,
+    "modelPrimitive": "printed-equation-with-problem-labels",
+    "modelCounts": [
+      5,
+      3,
+      3,
+      5
+    ],
+    "modelOrientation": "single-equation-over-two-problem-labels",
+    "printedEquationLineCount": 1,
+    "blankInputCount": 4,
+    "openWorkspaceCount": 0,
+    "responseStructure": "complete-both-sides-and-map-to-problems-one-and-two"
+  },
+  "8-4": {
+    "family": "three-column-related-fact-grid",
+    "subpartCount": 9,
+    "columnCount": 3,
+    "rowCount": 3,
+    "modelPrimitive": "printed-fact-grid",
+    "modelCounts": [
+      2,
+      3,
+      4,
+      7,
+      9,
+      10
+    ],
+    "modelOrientation": "three-by-three-fact-grid",
+    "printedEquationLineCount": 9,
+    "openWorkspaceCount": 0,
+    "responseStructure": "one-given-fact-and-eight-completions-in-source-order"
+  },
+  "8-5": {
+    "family": "two-column-matching-facts",
+    "subpartCount": 6,
+    "columnCount": 2,
+    "rowCount": 3,
+    "modelPrimitive": "printed-equation-matching-bank",
+    "modelCounts": [
+      3,
+      5,
+      8,
+      9
+    ],
+    "modelOrientation": "abc-left-def-right-with-match-lines",
+    "printedEquationLineCount": 6,
+    "blankInputCount": 6,
+    "openWorkspaceCount": 1,
+    "responseStructure": "complete-six-facts-and-connect-three-related-pairs"
+  },
+  "8-6": {
+    "family": "four-step-evolving-array",
+    "subpartCount": 4,
+    "modelPrimitive": "student-drawn-expanded-array",
+    "modelCounts": [
+      7,
+      3,
+      21,
+      3,
+      3,
+      9,
+      10,
+      3,
+      30
+    ],
+    "modelOrientation": "single-large-workspace-progressing-from-circles-to-x-rows",
+    "printedEquationLineCount": 2,
+    "openWorkspaceCount": 1,
+    "responseStructure": "draw-seven-rows-write-fact-add-three-rows-write-ten-times-three"
+  },
+  "8-7": {
+    "family": "two-part-money-equations",
+    "subpartCount": 2,
+    "rowCount": 2,
+    "modelPrimitive": "printed-money-equations",
+    "modelCounts": [
+      3,
+      2,
+      6,
+      6,
+      2,
+      12
+    ],
+    "modelOrientation": "two-stacked-equations",
+    "printedEquationLineCount": 2,
+    "blankInputCount": 6,
+    "openWorkspaceCount": 0,
+    "responseStructure": "complete-two-related-dollar-equations"
+  },
+  "9-1": {
+    "family": "source-add-rows-array-model",
+    "subpartCount": 1,
+    "modelPrimitive": "printed-soccer-ball-array",
+    "modelCounts": [
+      2,
+      5,
+      10,
+      3,
+      5,
+      15,
+      5,
+      5,
+      25
+    ],
+    "modelOrientation": "two-original-rows-above-three-added-rows",
+    "printedEquationLineCount": 3,
+    "openWorkspaceCount": 0,
+    "responseStructure": "complete-two-partial-facts-and-combined-fact",
+    "sourceFirst": true,
+    "sourceCropCount": 1
+  },
+  "9-2": {
+    "family": "source-decomposed-array-model",
+    "subpartCount": 1,
+    "modelPrimitive": "printed-circle-array-with-braces",
+    "modelCounts": [
+      7,
+      2,
+      14,
+      5,
+      2,
+      10,
+      2,
+      2,
+      4
+    ],
+    "modelOrientation": "vertical-seven-by-two-split-after-five-rows",
+    "printedEquationLineCount": 5,
+    "openWorkspaceCount": 0,
+    "dividerCount": 1,
+    "responseStructure": "complete-whole-two-parts-sum-and-final-fact",
+    "sourceFirst": true,
+    "sourceCropCount": 1
+  },
+  "9-3": {
+    "family": "source-subtracted-row-array-model",
+    "subpartCount": 1,
+    "modelPrimitive": "printed-triangle-array-with-braces",
+    "modelCounts": [
+      10,
+      2,
+      20,
+      1,
+      2,
+      2,
+      9,
+      2,
+      18
+    ],
+    "modelOrientation": "vertical-ten-by-two-with-one-row-separated",
+    "printedEquationLineCount": 5,
+    "openWorkspaceCount": 0,
+    "dividerCount": 1,
+    "responseStructure": "complete-whole-removed-row-difference-and-final-fact",
+    "sourceFirst": true,
+    "sourceCropCount": 1
+  },
+  "9-4": {
+    "family": "open-array-and-equation",
+    "subpartCount": 1,
+    "modelPrimitive": "student-drawn-x-array",
+    "modelCounts": [
+      4,
+      3,
+      12
+    ],
+    "modelOrientation": "large-open-four-by-three-array-over-equation",
+    "printedEquationLineCount": 1,
+    "openWorkspaceCount": 1,
+    "responseStructure": "draw-four-rows-of-three-x-and-complete-fact"
+  },
+  "9-5": {
+    "family": "continued-array-add-rows-model",
+    "subpartCount": 1,
+    "modelPrimitive": "student-extended-array",
+    "modelCounts": [
+      2,
+      3,
+      6,
+      12,
+      6,
+      18,
+      6,
+      3,
+      18
+    ],
+    "modelOrientation": "continue-problem-four-array-by-adding-two-circle-rows",
+    "printedEquationLineCount": 3,
+    "openWorkspaceCount": 1,
+    "responseStructure": "extend-array-complete-added-fact-sum-and-six-times-three"
+  },
+  "10-1": {
+    "family": "source-decomposed-array-equation-chain",
+    "subpartCount": 1,
+    "modelPrimitive": "printed-two-tone-square-array-with-braces",
+    "modelCounts": [
+      7,
+      3,
+      21,
+      5,
+      3,
+      15,
+      2,
+      3,
+      6
+    ],
+    "modelOrientation": "vertical-seven-by-three-split-five-and-two",
+    "printedEquationLineCount": 5,
+    "openWorkspaceCount": 0,
+    "dividerCount": 1,
+    "responseStructure": "complete-whole-two-parts-expanded-expression-and-sum",
+    "sourceFirst": true,
+    "sourceCropCount": 1
+  },
+  "10-2": {
+    "family": "source-decomposed-array-equation-chain",
+    "subpartCount": 1,
+    "modelPrimitive": "printed-two-tone-trapezoid-array-with-braces",
+    "modelCounts": [
+      8,
+      3,
+      24,
+      4,
+      3,
+      12,
+      4,
+      3,
+      12
+    ],
+    "modelOrientation": "vertical-eight-by-three-split-four-and-four",
+    "printedEquationLineCount": 5,
+    "openWorkspaceCount": 0,
+    "dividerCount": 1,
+    "responseStructure": "complete-whole-two-equal-parts-expanded-expression-and-sum",
+    "sourceFirst": true,
+    "sourceCropCount": 1
+  },
+  "10-3": {
+    "family": "source-framed-album-decomposition",
+    "subpartCount": 2,
+    "modelPrimitive": "printed-photo-album-frame",
+    "modelCounts": [
+      2,
+      3,
+      6,
+      3,
+      3,
+      9,
+      5,
+      3,
+      15
+    ],
+    "modelOrientation": "single-frame-split-into-two-rows-and-three-rows",
+    "printedEquationLineCount": 3,
+    "openWorkspaceCount": 2,
+    "dividerCount": 1,
+    "responseStructure": "draw-top-and-bottom-arrays-complete-two-part-facts-and-explain-given-decomposition",
+    "sourceFirst": true,
+    "sourceCropCount": 1
+  }
+  };
+}
+
+function m1ReviewedFourthBatchLayouts() {
+  const rows = {
+    '16-1':['source-distributive-array-quadrants',4,'printed-four-column-arrays-split-after-five-rows',[6,7,8,9,4,5,1,2,3,4,20,24,28,32,36],'two-by-two-quadrants-with-vertical-and-horizontal-dividers',24,0,'label-each-array-complete-part-facts-and-distributive-equations',2],
+    '16-2':['source-cloud-balloon-match',4,'printed-expression-clouds-and-hot-air-balloons',[6,7,8,9,4,24,28,32,36],'four-clouds-above-four-balloons',8,0,'match-each-decomposed-expression-to-equal-four-fact'],
+    '16-3':['source-split-array-explanation',1,'printed-ten-by-four-array-split-into-five-and-five',[10,5,4,20,40],'vertical-ten-by-four-array-with-midline-over-open-explanation',0,1,'explain-doubling-five-times-four'],
+    '17-1':['source-butterfly-related-facts',10,'printed-ten-rows-of-four-butterfly-illustrations',[1,2,3,4,5,6,7,8,9,10,4,40],'butterfly-array-left-multiplication-center-division-right',20,0,'complete-ten-related-multiplication-and-division-equation-pairs',0,true,1],
+    '17-2':['open-tape-word-problem',1,'student-drawn-nine-part-tape',[36,4,9],'word-problem-over-open-tape-workspace',0,1,'draw-and-label-tape-find-number-of-boxes'],
+    '17-3':['open-word-problem-response',1,'student-authored-rdw-space',[32,4,8],'word-problem-over-open-workspace',0,1,'find-glasses-in-each-row'],
+    '17-4':['open-word-problem-response',1,'student-authored-rdw-space',[28,4,2,7,14],'word-problem-over-open-workspace',0,1,'find-cost-of-two-notebooks'],
+    '18-1':['source-number-bond-decomposition',1,'printed-number-bond-and-four-equation-chain',[8,10,5,3,50,30,80],'number-bond-above-stacked-distributive-equations',5,0,'complete-three-tens-part-and-equation-chain'],
+    '18-2':['source-number-bond-decomposition',1,'printed-number-bond-and-four-equation-chain',[7,4,5,2,20,8,28],'number-bond-above-stacked-distributive-equations',5,0,'complete-two-fours-part-and-equation-chain'],
+    '18-3':['source-number-bond-decomposition',1,'printed-number-bond-and-four-equation-chain',[9,10,5,4,50,40,90],'number-bond-above-stacked-distributive-equations',5,0,'complete-four-tens-part-and-equation-chain'],
+    '18-4':['source-number-bond-decomposition',1,'printed-number-bond-and-four-equation-chain',[10,10,5,5,50,100],'number-bond-above-stacked-distributive-equations',5,0,'decompose-ten-tens-into-two-equal-five-tens-parts'],
+    '18-5':['open-number-bond-word-problem',1,'student-drawn-distributive-number-bond',[7,10,5,2,50,20,70],'word-problem-over-open-number-bond-workspace',1,1,'draw-break-apart-number-bond-and-complete-children-answer'],
+    '18-6':['open-word-problem-response',1,'student-authored-rdw-space',[8,3,24],'word-problem-over-open-workspace',0,1,'find-total-sides-on-eight-triangles'],
+    '18-7':['open-word-problem-response',1,'student-authored-rdw-space',[12,10,120],'word-problem-over-open-workspace',0,1,'find-total-bottles-in-twelve-rows'],
+    '19-1':['source-distributive-division-array-quadrants',4,'printed-arrays-split-into-known-and-remainder-dividend-parts',[36,30,6,3,25,20,5,28,20,8,4,32,20,12],'two-by-two-quadrants-with-vertical-and-horizontal-dividers',24,0,'label-split-arrays-complete-part-quotients-and-distributive-equations',2],
+    '19-2':['source-bucket-ball-match',4,'printed-division-buckets-and-decomposed-expression-beach-balls',[24,2,36,3,39,26,30,6,9,20,4],'four-buckets-above-four-beach-balls',8,0,'match-each-division-expression-to-equal-decomposed-expression'],
+    '19-3':['source-split-array-explanation',1,'printed-twenty-four-by-two-array-split-into-twelve-and-twelve',[24,2,12,6],'vertical-two-column-array-with-midline-over-open-explanation',0,1,'explain-sum-of-two-twelve-divided-by-two-facts'],
+    '20-1':['source-two-step-money-tape',2,'printed-one-unit-magazine-over-three-unit-book-tape',[3,8,4,24,28],'one-unit-tape-above-three-unit-tape-with-subtotal-and-total-braces',0,2,'find-book-subtotal-then-combined-cost'],
+    '20-2':['source-two-step-sharing-tape',2,'printed-seven-part-tape-with-one-unit-and-three-unit-braces',[28,7,4,3,12],'seven-part-horizontal-tape-with-total-above-and-part-braces-below',0,2,'find-one-child-share-then-three-child-share'],
+    '20-3':['open-two-step-word-problem',1,'student-authored-rdw-space',[18,6,2,3,12],'word-problem-over-open-workspace',0,1,'find-unbroken-cups-after-two-boxes-break'],
+    '20-4':['open-two-step-word-problem',1,'student-authored-rdw-space',[25,15,5,5,3],'word-problem-over-open-workspace',0,1,'divide-each-color-equally-and-report-both-shares'],
+    '20-5':['open-two-step-word-problem',1,'student-authored-rdw-space',[27,3,9,5,4],'word-problem-over-open-workspace',0,1,'find-total-bags-then-subtract-sold-bags']
+  };
+  return Object.fromEntries(Object.entries(rows).map(([key,row])=>{
+    const [family,subpartCount,modelPrimitive,modelCounts,modelOrientation,printedEquationLineCount,openWorkspaceCount,responseStructure,dividerCount=0,sourceFirst=false,sourceCropCount=0]=row;
+    return [key,{family,subpartCount,modelPrimitive,modelCounts,modelOrientation,printedEquationLineCount,openWorkspaceCount,...(dividerCount?{dividerCount}:{}),responseStructure,...(sourceFirst?{sourceFirst:true}:{}),...(sourceCropCount?{sourceCropCount}:{})}];
+  }));
+}
+
+function m1FourthBatchProblemKey(problem) {
+  const sourcePrompt = normalizeText(problem?.sourcePrompt);
+  const pages = (problem?.sourcePageImages ?? []).join(' ');
+  const signatures = [
+    ['16-1','label the array then fill in the blanks below'],
+    ['16-3','nolan draws the array below'],
+    ['17-1','use the array to complete the related equations'],
+    ['17-2','baker packs 36 bran muffins'],['17-3','waitress arranges 32 glasses'],['17-4','janet paid $28'],
+    ['18-1','8 x 10'],['18-2','7 x 4'],['18-3','9 x 10'],['18-4','10 x 10'],
+    ['18-5','7 teams in the soccer tournament'],['18-6','total number of sides on 8 triangles'],['18-7','12 rows of bottled drinks'],
+    ['19-3','nell draws the array below'],
+    ['20-1','ted buys 3 books'],['20-2','seven children share 28 silly bands'],['20-3','eighteen cups are equally packed'],
+    ['20-4','25 blue balloons and 15 red balloons'],['20-5','twenty seven pears are packed']
+  ];
+  const direct = signatures.find(([,needle])=>sourcePrompt.includes(needle))?.[0];
+  if (direct) return direct;
+  if (sourcePrompt.includes('match the equal expressions')) return pages.includes('page-217') ? '16-2' : pages.includes('page-251') ? '19-2' : undefined;
+  if (sourcePrompt.includes('label the array then fill in the blanks to make true number sentences')) return pages.includes('page-250') ? '19-1' : undefined;
+  return undefined;
+}
+
+function canonicalM1LessonsSixteenThroughTwentyLayout(blankSections, renderedSections, problem, mode) {
+  const key = m1FourthBatchProblemKey(problem);
+  if (!key) return undefined;
+  const expected = m1ReviewedFourthBatchLayouts()[key];
+  const all = flattenVisualSections(blankSections);
+  const renderedAll = flattenVisualSections(renderedSections);
+  const responses = all.filter((section)=>section?.kind==='source-response-workspace');
+  const parts = responses.flatMap((section)=>section.parts ?? []);
+  const arrays = all.filter((section)=>section?.kind==='array');
+  const tapes = all.filter((section)=>section?.kind==='tape');
+  const bonds = all.filter((section)=>section?.kind==='number-bond');
+  const matches = all.filter((section)=>section?.kind==='expression-match');
+  const crops = all.filter((section)=>section?.kind==='source-crop');
+  const cardGrids = all.filter((section)=>section?.kind==='card-grid');
+  const answerCount = (rows=[])=>rows.reduce((sum,answers)=>sum+(answers?.length ?? 0),0);
+  const responseInputs = parts.reduce((sum,part)=>sum+answerCount(part.lineAnswers),0);
+  const matchInputs = matches.reduce((sum,match)=>sum+answerCount(match.topItemAnswers)+answerCount(match.bottomItemAnswers),0);
+  const bondInputs = bonds.reduce((sum,bond)=>sum+answerCount(bond.partAnswers)+answerCount(bond.equationAnswers),0);
+  const openWorkspaceCount = parts.filter((part)=>
+    part.sketchWorkspace || part.responsePlaceholder || ((part.printedLineCount ?? 0) === 0 && (part.lines?.length ?? 0) > 0)
+  ).length;
+  const printedEquationLineCount = parts.reduce((sum,part)=>sum+(part.printedLineCount ?? 0),0)
+    + bonds.reduce((sum,bond)=>sum+(bond.equations?.length ?? 0),0)
+    + matches.reduce((sum,match)=>sum+(match.topItems?.length ?? 0)+(match.bottomItems?.length ?? 0),0);
+  const renderedMatch = renderedAll.find((section)=>section?.kind==='expression-match');
+  const config = {
+    '16-1':{arrays:4,responses:4,parts:4,cards:1,inputs:25,arrayRows:[6,7,8,9],arrayColumns:[4,4,4,4],splits:[5,5,5,5]},
+    '16-2':{matches:1,matchItems:4,interactive:true,topShape:'cloud',bottomShape:'balloon'},
+    '16-3':{arrays:1,responses:1,parts:1,inputs:0,arrayRows:[10],arrayColumns:[4],splits:[5]},
+    '17-1':{crops:1,matches:1,matchItems:10,inputs:34,sourceFirst:true},
+    '17-2':{responses:1,parts:1,inputs:0,solvedTapes:1,solvedTapeParts:9},
+    '17-3':{responses:1,parts:1,inputs:0},'17-4':{responses:1,parts:1,inputs:0},
+    '18-1':{bonds:1,bondParts:2,bondEquations:5,inputs:7},'18-2':{bonds:1,bondParts:2,bondEquations:5,inputs:7},
+    '18-3':{bonds:1,bondParts:2,bondEquations:5,inputs:8},'18-4':{bonds:1,bondParts:2,bondEquations:5,inputs:11},
+    '18-5':{responses:1,parts:1,inputs:1,solvedBonds:1},'18-6':{responses:1,parts:1,inputs:0},'18-7':{responses:1,parts:1,inputs:0},
+    '19-1':{arrays:4,responses:4,parts:4,cards:1,inputs:24,arrayRows:[12,5,7,8],arrayColumns:[3,5,4,4],splits:[10,4,5,5]},
+    '19-2':{matches:1,matchItems:4,interactive:true,topShape:'bucket',bottomShape:'ball'},
+    '19-3':{arrays:1,responses:1,parts:1,inputs:0,arrayRows:[12],arrayColumns:[2],splits:[6]},
+    '20-1':{tapes:2,tapeParts:4,responses:1,parts:2,inputs:2,tapeInputs:3},
+    '20-2':{tapes:1,tapeParts:7,responses:1,parts:2,inputs:2,braceCount:2,tapeInputs:2},
+    '20-3':{responses:1,parts:1,inputs:0},'20-4':{responses:1,parts:1,inputs:0},'20-5':{responses:1,parts:1,inputs:0}
+  }[key];
+  const renderedTapes = renderedAll.filter((section)=>section?.kind==='tape');
+  const renderedBonds = renderedAll.filter((section)=>section?.kind==='number-bond');
+  const tapeInputs = tapes.reduce((sum,tape)=>sum+answerCount(tape.partAnswers)+answerCount(tape.braceAnswers),0);
+  const valid = Boolean(config) &&
+    (config.arrays === undefined || arrays.length===config.arrays) &&
+    (config.tapes === undefined || tapes.length===config.tapes) &&
+    (config.bonds === undefined || bonds.length===config.bonds) &&
+    (config.matches === undefined || matches.length===config.matches) &&
+    (config.crops === undefined || crops.length===config.crops) &&
+    (config.responses === undefined || responses.length===config.responses) &&
+    (config.parts === undefined || parts.length===config.parts) &&
+    (config.cards === undefined || cardGrids.length===config.cards) &&
+    (config.inputs === undefined || responseInputs+matchInputs+bondInputs===config.inputs) &&
+    (config.tapeInputs === undefined || tapeInputs===config.tapeInputs) &&
+    (config.bondParts === undefined || bonds.every((bond)=>(bond.parts?.length ?? 0)===config.bondParts)) &&
+    (config.bondEquations === undefined || bonds.every((bond)=>(bond.equations?.length ?? 0)===config.bondEquations)) &&
+    (config.matchItems === undefined || matches.every((match)=>(match.topItems?.length ?? 0)===config.matchItems && (match.bottomItems?.length ?? 0)===config.matchItems)) &&
+    (config.interactive !== true || matches.every((match)=>match.interactive===true)) &&
+    (config.topShape === undefined || matches.every((match)=>match.topShape===config.topShape)) &&
+    (config.bottomShape === undefined || matches.every((match)=>match.bottomShape===config.bottomShape)) &&
+    (config.arrayRows === undefined || arrays.every((array,index)=>array.rows===config.arrayRows[index])) &&
+    (config.arrayColumns === undefined || arrays.every((array,index)=>array.columns===config.arrayColumns[index])) &&
+    (config.splits === undefined || arrays.every((array,index)=>array.splitAfterRows===config.splits[index])) &&
+    (config.tapeParts === undefined || tapes.reduce((sum,tape)=>sum+(tape.parts?.length ?? 0),0)===config.tapeParts) &&
+    (config.braceCount === undefined || tapes.reduce((sum,tape)=>sum+(tape.braces?.length ?? 0),0)===config.braceCount) &&
+    (config.sourceFirst !== true || blankSections[0]?.kind==='source-crop') &&
+    openWorkspaceCount===expected.openWorkspaceCount &&
+    printedEquationLineCount===expected.printedEquationLineCount &&
+    (mode!=='solved' || !config.solvedTapes || (renderedTapes.length===config.solvedTapes && renderedTapes[0]?.parts?.length===config.solvedTapeParts)) &&
+    (mode!=='solved' || !config.solvedBonds || renderedBonds.length===config.solvedBonds) &&
+    (mode!=='solved' || !config.interactive || renderedMatch?.showMatches===true);
+  return valid ? expected : unsupportedLayout(blankSections);
+}
+
+function m1ReviewedThirdBatchLayouts() {
+  const rows = {
+    '11-1': ['guided-array-tape-division', 2, 'printed-six-unit-orange-tape', [12,2,6], 'array-above-six-part-tape', 1, 2, 'draw-array-complete-division-then-label-tape', false, 1],
+    '11-2': ['open-array-tape-division', 1, 'student-drawn-array-and-tape', [18,6,3], 'array-and-tape-over-answer-sentence', 1, 1, 'draw-six-column-array-and-six-part-tape-complete-answer', false, 0],
+    '11-3': ['open-array-tape-division', 1, 'student-drawn-array-and-tape', [14,7,2], 'array-and-tape-over-answer-sentence', 0, 1, 'draw-seven-column-array-and-seven-part-tape-write-answer', false, 0],
+    '11-4': ['open-array-tape-division', 1, 'student-drawn-array-and-tape', [24,8,3], 'array-and-tape-over-answer-sentence', 0, 1, 'draw-eight-column-array-and-eight-part-tape-write-answer', false, 0],
+    '11-5': ['open-word-problem-response', 1, 'student-authored-rdw-space', [16,2,8], 'word-problem-over-open-workspace', 0, 1, 'show-groups-of-two-and-write-weeks-answer', false, 0],
+    '12-1': ['source-object-grouping', 1, 'printed-eight-bird-bank', [8,2,4], 'bird-bank-over-division-and-answer', 2, 0, 'circle-four-groups-complete-equation-and-cages', true, 1],
+    '12-2': ['source-equal-containers', 1, 'printed-five-fish-bowls', [10,5,2], 'five-bowl-tape-over-related-facts-and-answer', 3, 0, 'draw-two-fish-per-bowl-complete-two-facts-and-answer', true, 1],
+    '12-3': ['source-illustration-fact-match', 1, 'printed-rabbits-and-carrots', [10,16,18,14,12,5,8,9,7,6], 'five-rabbits-over-five-carrots', 0, 0, 'match-five-division-facts-to-quotients', true, 1],
+    '12-4': ['source-two-part-tape', 1, 'printed-two-part-ribbon-tape', [14,2,7], 'two-part-horizontal-tape-with-open-labels', 1, 0, 'label-whole-equal-parts-and-complete-length', true, 1],
+    '12-5': ['open-word-problem-response', 1, 'student-authored-rdw-space', [12,2,6], 'word-problem-over-open-workspace', 0, 1, 'show-groups-of-two-and-write-days-answer', false, 0],
+    '12-6': ['open-word-problem-response', 1, 'student-authored-rdw-space', [18,2,9], 'word-problem-over-open-workspace', 0, 1, 'split-cost-into-two-equal-shares-and-write-answer', false, 0],
+    '13-1': ['source-related-fact-cards', 10, 'printed-key-fact-cards', [1,2,3,4,5,6,7,8,9,10,3], 'two-rows-of-five-key-cards', 20, 0, 'complete-multiplication-and-related-division-facts-in-source-order', true, 1],
+    '13-2': ['source-object-grouping-and-tape', 2, 'printed-twelve-tomato-bank', [12,3,4], 'tomato-bank-over-open-tape-and-answer', 3, 1, 'circle-four-groups-skip-count-draw-tape-complete-facts', true, 1],
+    '13-3': ['open-tape-word-problem', 1, 'student-drawn-tape', [15,3,5], 'word-problem-over-open-tape-workspace', 1, 1, 'draw-five-part-tape-and-complete-stamps-answer', false, 0],
+    '13-4': ['open-word-problem-response', 1, 'student-authored-rdw-space', [30,3,10], 'word-problem-over-open-workspace', 0, 1, 'divide-thirty-into-three-vans-and-write-answer', false, 0],
+    '13-5': ['open-word-problem-response', 1, 'student-authored-rdw-space', [24,3,8], 'word-problem-over-open-workspace', 0, 1, 'group-twenty-four-by-three-and-write-answer', false, 0],
+    '14-1': ['source-skip-count-match', 2, 'printed-fruit-rows-count-boxes-and-baskets', [4,8,12,16,20,24,28,32,36,40], 'ten-fruit-rows-between-count-boxes-and-fact-baskets', 10, 0, 'complete-eight-skip-count-boxes-and-match-nine-facts', true, 1],
+    '14-2': ['open-tape-word-problem', 1, 'student-drawn-tape', [7,4,28], 'word-problem-over-open-tape-and-answer', 1, 1, 'draw-seven-part-tape-and-complete-wheels-answer', false, 0],
+    '14-3': ['open-tape-word-problem', 1, 'student-drawn-tape', [4,6,24], 'word-problem-over-open-tape-workspace', 0, 1, 'draw-four-part-tape-and-show-total-beads', false, 0],
+    '14-4': ['open-word-problem-response', 1, 'student-authored-rdw-space', [5,4,20], 'word-problem-over-open-workspace', 0, 1, 'find-total-sides-on-five-rectangles', false, 0],
+    '15-1': ['source-commutative-tape-array', 3, 'printed-three-pairs-of-tape-diagrams', [2,4,8,3,4,12,7,4,28], 'three-stacked-pairs-of-commutative-tapes', 6, 3, 'label-each-tape-pair-complete-equations-and-draw-array', true, 1],
+    '15-2': ['open-commutative-tapes', 2, 'student-drawn-paired-tapes', [4,6,24], 'two-open-tape-diagrams', 0, 2, 'draw-and-label-four-by-six-and-six-by-four-tapes', false, 0],
+    '15-3': ['open-tape-word-problem', 1, 'student-drawn-tape', [4,8,32], 'word-problem-over-open-tape-workspace', 0, 1, 'draw-four-part-tape-and-show-total-petals', false, 0],
+    '15-4': ['open-word-problem-response', 1, 'student-authored-rdw-space', [8,4,32], 'word-problem-over-open-workspace', 0, 1, 'find-total-legs-on-eight-chairs', false, 0]
+  };
+  return Object.fromEntries(Object.entries(rows).map(([key, row]) => {
+    const [family, subpartCount, modelPrimitive, modelCounts, modelOrientation,
+      printedEquationLineCount, openWorkspaceCount, responseStructure, sourceFirst, sourceCropCount] = row;
+    return [key, {
+      family, subpartCount, modelPrimitive, modelCounts, modelOrientation,
+      printedEquationLineCount, openWorkspaceCount, responseStructure,
+      ...(sourceFirst ? { sourceFirst: true } : {}),
+      ...(sourceCropCount ? { sourceCropCount } : {})
+    }];
+  }));
+}
+
+function m1ThirdBatchProblemKey(sourcePrompt) {
+  const signatures = [
+    ['11-1', 'mrs prescott has 12 oranges'], ['11-2', 'mrs prescott arranges 18 plums'],
+    ['11-3', 'fourteen shopping baskets'], ['11-4', 'packs 24 bell peppers'], ['11-5', 'olga saves'],
+    ['12-1', 'there are 8 birds at the pet store'], ['12-2', 'pet store sells 10 fish'],
+    ['12-3', 'match the division facts'], ['12-4', 'laina buys 14 meters'],
+    ['12-5', 'roy eats 2 cereal bars'], ['12-6', 'sarah and esther equally share'],
+    ['13-1', 'fill in the blanks to make true number sentences'], ['13-2', 'mr lawton picks tomatoes'],
+    ['13-3', 'camille buys a sheet of stamps'], ['13-4', 'thirty third graders'], ['13-5', 'friends spend $24'],
+    ['14-1', 'skip count by fours'], ['14-2', 'mr schmidt replaces'],
+    ['14-3', 'trina makes 4 bracelets'], ['14-4', 'total number of sides on 5 rectangles'],
+    ['15-1', 'label the tape diagrams'], ['15-2', 'draw and label 2 tape diagrams'],
+    ['15-3', 'grace picks 4 flowers'], ['15-4', 'michael counts 8 chairs']
+  ];
+  return signatures.find(([, needle]) => sourcePrompt.includes(needle))?.[0];
+}
+
+function m1ReviewedThirdBatchStructure() {
+  return {
+    '11-1': [2,2,4,1,0,1,1,0,0,true], '11-2': [1,1,1,1,0,0,0,0,0,true],
+    '11-3': [1,1,0,1,1,0,0,0,0,true], '11-4': [1,1,0,1,1,0,0,0,0,true],
+    '11-5': [1,1,0,1,1,0,0,0,0,true], '12-1': [1,1,2,0,0,1,1,0,0,true],
+    '12-2': [1,1,3,0,0,1,1,0,0,true], '12-3': [0,0,0,0,0,1,0,1,5,false],
+    '12-4': [1,1,1,0,0,1,0,0,0,true], '12-5': [1,1,0,1,1,0,0,0,0,true],
+    '12-6': [1,1,0,1,1,0,0,0,0,true], '13-1': [0,0,17,0,0,1,0,2,10,false],
+    '13-2': [1,2,6,1,0,1,1,0,0,true], '13-3': [1,1,1,1,0,0,0,0,0,true],
+    '13-4': [1,1,0,1,1,0,0,0,0,true], '13-5': [1,1,0,1,1,0,0,0,0,true],
+    '14-1': [1,1,8,0,0,1,0,1,9,false], '14-2': [1,1,1,1,0,0,0,0,0,true],
+    '14-3': [1,1,0,1,1,0,0,0,0,true], '14-4': [1,1,0,1,1,0,0,0,0,true],
+    '15-1': [1,3,10,3,0,1,0,0,0,true], '15-2': [1,2,0,2,0,0,0,0,0,true,2],
+    '15-3': [1,1,0,1,1,0,0,0,0,true], '15-4': [1,1,0,1,1,0,0,0,0,true]
+  };
+}
+
+function canonicalM1LessonsElevenThroughFifteenLayout(blankSections, renderedSections, sourcePrompt, mode) {
+  const key = m1ThirdBatchProblemKey(sourcePrompt);
+  if (!key) return undefined;
+  const expected = m1ReviewedThirdBatchLayouts()[key];
+  const [responseCount, partCount, inputCountExpected, sketchCountExpected, writtenCountExpected,
+    cropCountExpected, cropSketchCountExpected, matchMode, matchItemCount, requiresSolvedModel, columnsExpected = 1] =
+    m1ReviewedThirdBatchStructure()[key];
+  const all = flattenVisualSections(blankSections);
+  const renderedAll = flattenVisualSections(renderedSections);
+  const responses = all.filter((section) => section?.kind === 'source-response-workspace');
+  const parts = responses.flatMap((section) => section.parts ?? []);
+  const crops = all.filter((section) => section?.kind === 'source-crop');
+  const match = all.find((section) => section?.kind === 'expression-match');
+  const renderedMatch = renderedAll.find((section) => section?.kind === 'expression-match');
+  const responseInputCount = parts.reduce((sum, part) => sum +
+    (part.lineAnswers ?? []).reduce((partSum, answers) => partSum + (answers?.length ?? 0), 0), 0);
+  const matchInputCount = match
+    ? [...(match.topItemAnswers ?? []), ...(match.bottomItemAnswers ?? [])]
+        .reduce((sum, answers) => sum + (answers?.length ?? 0), 0)
+    : 0;
+  const printedResponseCount = parts.reduce((sum, part) => sum + (part.printedLineCount ?? 0), 0);
+  const printedCount = key === '13-1' ? 20 : printedResponseCount;
+  const allowedBlankKinds = new Set(['source-crop', 'source-response-workspace', 'expression-match']);
+  const valid =
+    responses.length === responseCount &&
+    parts.length === partCount &&
+    responseInputCount + matchInputCount === inputCountExpected &&
+    parts.filter((part) => part.sketchWorkspace).length === sketchCountExpected &&
+    parts.filter((part) => part.responsePlaceholder).length === writtenCountExpected &&
+    crops.length === cropCountExpected &&
+    crops.filter((crop) => crop.sketchOverlay).length === cropSketchCountExpected &&
+    printedCount === expected.printedEquationLineCount &&
+    all.every((section) => allowedBlankKinds.has(section?.kind)) &&
+    (!expected.sourceFirst || blankSections[0]?.kind === 'source-crop') &&
+    responses.every((response) => (response.columns ?? 1) === columnsExpected) &&
+    (matchMode === 0 || Boolean(match)) &&
+    (matchMode !== 1 || (match.interactive === true && (mode !== 'solved' || renderedMatch?.showMatches === true))) &&
+    (matchMode !== 2 || Boolean(match && !match.interactive)) &&
+    (matchMode === 0 || (match.topItems?.length ?? 0) === matchItemCount) &&
+    (mode !== 'solved' || !requiresSolvedModel || renderedAll.some((section) => ['array','card-grid','tape'].includes(section?.kind)));
+  return valid ? expected : unsupportedLayout(blankSections);
+}
+
+function m1ReviewedSecondBatchStructure() {
+  return {
+  '6-1': { partCount: 1, columns: 1, inputCount: 3, sketchCount: 0, writtenCount: 0, cropSketchCount: 1, requiresSolvedModel: true },
+  '6-2': { partCount: 1, columns: 1, inputCount: 3, sketchCount: 1, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '6-3': { partCount: 3, columns: 2, inputCount: 4, sketchCount: 1, writtenCount: 2, cropSketchCount: 0, requiresSolvedModel: true },
+  '6-4': { partCount: 1, columns: 1, inputCount: 2, sketchCount: 0, writtenCount: 1, cropSketchCount: 0, requiresSolvedModel: false },
+  '6-5': { partCount: 1, columns: 1, inputCount: 2, sketchCount: 0, writtenCount: 1, cropSketchCount: 0, requiresSolvedModel: false },
+  '6-6': { partCount: 1, columns: 1, inputCount: 0, sketchCount: 1, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '7-1': { partCount: 1, columns: 1, inputCount: 3, sketchCount: 1, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '7-2': { partCount: 1, columns: 1, inputCount: 3, sketchCount: 1, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '7-3': { partCount: 2, columns: 1, inputCount: 0, sketchCount: 0, writtenCount: 2, cropSketchCount: 0, requiresSolvedModel: false },
+  '7-4': { partCount: 8, columns: 3, inputCount: 7, sketchCount: 0, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: false },
+  '7-5': { partCount: 2, columns: 2, inputCount: 6, sketchCount: 0, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '7-6': { partCount: 3, columns: 2, inputCount: 0, sketchCount: 2, writtenCount: 1, cropSketchCount: 0, requiresSolvedModel: true },
+  '7-7': { partCount: 4, columns: 4, inputCount: 4, sketchCount: 0, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '7-8': { partCount: 3, columns: 1, inputCount: 6, sketchCount: 1, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '8-1': { partCount: 1, columns: 1, inputCount: 0, sketchCount: 1, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '8-2': { partCount: 1, columns: 1, inputCount: 0, sketchCount: 1, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '8-3': { partCount: 3, columns: 2, inputCount: 4, sketchCount: 0, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: false },
+  '8-4': { partCount: 9, columns: 3, inputCount: 8, sketchCount: 0, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: false },
+  '8-5': { expressionMatch: true, partCount: 6, columns: 2, inputCount: 6 },
+  '8-6': { partCount: 4, columns: 1, inputCount: 6, sketchCount: 1, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '8-7': { partCount: 2, columns: 1, inputCount: 6, sketchCount: 0, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: false },
+  '9-1': { partCount: 1, columns: 1, inputCount: 5, sketchCount: 0, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '9-2': { partCount: 1, columns: 1, inputCount: 5, sketchCount: 0, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '9-3': { partCount: 1, columns: 1, inputCount: 5, sketchCount: 0, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '9-4': { partCount: 1, columns: 1, inputCount: 1, sketchCount: 1, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '9-5': { partCount: 1, columns: 1, inputCount: 6, sketchCount: 1, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '10-1': { partCount: 1, columns: 1, inputCount: 5, sketchCount: 0, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '10-2': { partCount: 1, columns: 1, inputCount: 9, sketchCount: 0, writtenCount: 0, cropSketchCount: 0, requiresSolvedModel: true },
+  '10-3': { partCount: 2, columns: 1, inputCount: 2, sketchCount: 0, writtenCount: 1, cropSketchCount: 1, requiresSolvedModel: true }
+  };
+}
+
+function m1SecondBatchProblemKey(sourcePrompt) {
+  const signatures = [
+    ['6-1', 'rick puts 15 tennis balls'],
+    ['6-2', 'rick uses 15 tennis balls'],
+    ['6-3', 'use an array to model problem 1'],
+    ['6-4', 'deena makes 21 jars'],
+    ['6-5', 'the teacher gives the equation 4'],
+    ['6-6', 'the blanks in problem 5 represent'],
+    ['7-1', 'draw an array that shows 6 rows of 2'],
+    ['7-2', 'draw an array that shows 2 rows of 6'],
+    ['7-3', 'turn your paper to look at the arrays'],
+    ['7-4', '6 twos'],
+    ['7-5', 'second factor represents the size of the row'],
+    ['7-6', 'ms nenadal writes'],
+    ['7-7', 'find the missing factor to make each equation true'],
+    ['7-8', 'jada gets 2 new packs'],
+    ['8-1', 'draw an array that shows 5 rows of 3'],
+    ['8-2', 'draw an array that shows 3 rows of 5'],
+    ['8-3', 'write multiplication expressions for the arrays'],
+    ['8-4', 'the first one is done for you'],
+    ['8-5', 'draw a line to match related facts'],
+    ['8-6', 'isaac picks 3 tangerines'],
+    ['8-7', 'sarah buys bottles of soap'],
+    ['9-1', 'team organizes soccer balls'],
+    ['9-2', '7 x 2'],
+    ['9-3', '9 x 2'],
+    ['9-4', 'matthew organizes his baseball cards'],
+    ['9-5', 'matthew adds 2 more rows'],
+    ['10-1', '7 x 3 5 x 3 2 x 3'],
+    ['10-2', '8 x 3 4 x 3 4 x 3'],
+    ['10-3', 'ruby makes a photo album']
+  ];
+  return signatures.find(([, needle]) => sourcePrompt.includes(needle))?.[0];
+}
+
+
+function canonicalM1LessonsSixThroughTenLayout(blankSections, renderedSections, sourcePrompt, mode) {
+  const key = m1SecondBatchProblemKey(sourcePrompt);
+  if (!key) return undefined;
+  const expected = m1ReviewedSecondBatchLayouts()[key];
+  const structure = m1ReviewedSecondBatchStructure()[key];
+  const all = flattenVisualSections(blankSections);
+  const renderedAll = flattenVisualSections(renderedSections);
+  const crops = all.filter((section) => section?.kind === 'source-crop');
+
+  if (structure.expressionMatch) {
+    const blankMatch = all.find((section) => section?.kind === 'expression-match');
+    const solvedMatch = renderedAll.find((section) => section?.kind === 'expression-match');
+    const response = all.find((section) => section?.kind === 'source-response-workspace');
+    const solvedResponse = renderedAll.find((section) => section?.kind === 'source-response-workspace');
+    const parts = response?.parts ?? [];
+    const inputCount = parts.reduce(
+      (sum, part) => sum + (part.lineAnswers ?? []).reduce((partSum, answers) => partSum + (answers?.length ?? 0), 0),
+      0
+    );
+    const valid = Boolean(
+      blankMatch && solvedMatch && response && solvedResponse &&
+      blankMatch.interactive === true &&
+      (mode !== 'solved' || solvedMatch.showMatches === true) &&
+      (blankMatch.topItems?.length ?? 0) === 3 &&
+      (blankMatch.bottomItems?.length ?? 0) === 3 &&
+      (blankMatch.matches?.length ?? 0) === 3 &&
+      parts.length === structure.partCount &&
+      (solvedResponse.parts?.length ?? 0) === structure.partCount &&
+      (response.columns ?? 1) === structure.columns &&
+      parts.reduce((sum, part) => sum + (part.printedLineCount ?? 0), 0) === expected.printedEquationLineCount &&
+      inputCount === structure.inputCount
+    );
+    return valid ? expected : unsupportedLayout(blankSections);
+  }
+
+  const responses = all.filter((section) => section?.kind === 'source-response-workspace');
+  const renderedResponses = renderedAll.filter((section) => section?.kind === 'source-response-workspace');
+  if (responses.length !== 1 || renderedResponses.length !== 1) return unsupportedLayout(blankSections);
+  const response = responses[0];
+  const renderedResponse = renderedResponses[0];
+  const parts = response.parts ?? [];
+  const renderedParts = renderedResponse.parts ?? [];
+  const printedLineCount = parts.reduce((sum, part) => sum + (part.printedLineCount ?? 0), 0);
+  const inputCount = parts.reduce(
+    (sum, part) => sum + (part.lineAnswers ?? []).reduce((partSum, answers) => partSum + (answers?.length ?? 0), 0),
+    0
+  );
+  const sketchCount = parts.filter((part) => part.sketchWorkspace).length;
+  const writtenCount = parts.filter((part) => part.responsePlaceholder).length;
+  const cropSketchCount = crops.filter((crop) => crop.sketchOverlay).length;
+  const sourceCropCount = expected.sourceCropCount ?? 0;
+  const solvedModelPresent = renderedAll.some((section) => ['array', 'card-grid', 'source-crop'].includes(section?.kind));
+  const valid =
+    parts.length === structure.partCount &&
+    renderedParts.length === structure.partCount &&
+    (response.columns ?? 1) === structure.columns &&
+    (renderedResponse.columns ?? 1) === structure.columns &&
+    printedLineCount === expected.printedEquationLineCount &&
+    inputCount === structure.inputCount &&
+    sketchCount === structure.sketchCount &&
+    writtenCount === structure.writtenCount &&
+    crops.length === sourceCropCount &&
+    cropSketchCount === structure.cropSketchCount &&
+    (!expected.sourceFirst || blankSections[0]?.kind === 'source-crop') &&
+    (mode !== 'solved' || !structure.requiresSolvedModel || solvedModelPresent);
+  return valid ? expected : unsupportedLayout(blankSections);
+}
+
+function canonicalM1LessonsOneThroughFiveLayout(blankSections, renderedSections, sourcePrompt) {
+  const all = flattenVisualSections(blankSections);
+  const crops = all.filter((section) => section?.kind === 'source-crop');
+  const responses = all.filter((section) => section?.kind === 'source-response-workspace');
+  const responseParts = responses.flatMap((section) => section.parts ?? []);
+  const equations = all.filter((section) => section?.kind === 'equations');
+  const fillableInputCount = responseParts.reduce(
+    (sum, part) => sum + (part.interactiveLines
+      ? (part.lineAnswers ?? []).reduce((partSum, answers) => partSum + (answers?.length ?? 0), 0)
+      : 0),
+    0
+  );
+  const sketchWorkspaceCount = responseParts.filter((part) => part.sketchWorkspace).length;
+  const writtenResponseCount = responseParts.filter((part) => part.responsePlaceholder).length;
+  const sketchOverlayCount = crops.filter((crop) => crop.sketchOverlay).length;
+  const renderedAll = flattenVisualSections(renderedSections);
+  const hasSolvedModel = renderedAll.some((section) =>
+    ['array', 'card-grid', 'number-bond', 'source-crop', 'source-response-workspace'].includes(section?.kind)
+  );
+
+  const sourceModel = (printedEquationLineCount, valid) => valid && hasSolvedModel
+    ? {
+        family: 'source-illustration-model',
+        subpartCount: 1,
+        modelPrimitive: 'source-illustration',
+        modelCounts: [],
+        modelOrientation: 'source-order',
+        printedEquationLineCount,
+        openWorkspaceCount: 0,
+        responseStructure: printedEquationLineCount ? 'model-with-equation-response' : 'model-with-open-response'
+      }
+    : unsupportedLayout(blankSections);
+  const openModel = (printedEquationLineCount, valid) => valid && hasSolvedModel
+    ? {
+        family: 'open-written-response',
+        subpartCount: 1,
+        modelPrimitive: 'student-authored-or-absent',
+        modelCounts: [],
+        modelOrientation: 'open-workspace',
+        printedEquationLineCount,
+        openWorkspaceCount: 1,
+        responseStructure: 'open-response'
+      }
+    : unsupportedLayout(blankSections);
+
+  if (sourcePrompt.includes('equal groups of hands bananas egg cartons')) {
+    const cards = all.find((section) => section?.kind === 'card-grid')?.cards ?? [];
+    const valid = cards.length === 4 && crops.length === 4 && equations.length === 4;
+    return valid ? {
+      family: 'composite-mathematical-model',
+      subpartCount: 4,
+      modelPrimitive: 'source-illustration+source-illustration+source-illustration+source-illustration',
+      modelCounts: [],
+      modelOrientation: 'source-order',
+      printedEquationLineCount: 12,
+      openWorkspaceCount: 0,
+      responseStructure: 'model-with-equation-response'
+    } : unsupportedLayout(blankSections);
+  }
+  if (sourcePrompt.includes('groups of apples') && sourcePrompt.includes('explain why or why not')) {
+    return sourceModel(0, crops.length === 1 && writtenResponseCount === 1);
+  }
+  if (sourcePrompt.includes('draw a picture to show 2 x 3')) {
+    return openModel(0, crops.length === 0 && sketchWorkspaceCount === 1);
+  }
+  if (sourcePrompt.includes('share a box of chocolates')) {
+    return sourceModel(2, crops.length === 1 && sketchOverlayCount === 1 && fillableInputCount === 2);
+  }
+
+  const sourceResponseCases = [
+    ['how many rows of cars', 0, 2],
+    ['what is the number of rows', 0, 2],
+    ['4 spoons in each row', 1, 2],
+    ['5 rows of triangles', 1, 2],
+    ['5 flowers in each bunch', 1, 4],
+    ['candies in each box', 1, 6],
+    ['4 oranges in each row', 1, 6],
+    ['loaves of bread in each row', 1, 7],
+    ['14 flowers are divided', 0, 1],
+    ['28 books are divided', 0, 1],
+    ['30 apples are divided', 0, 2],
+    ['cups are divided into', 1, 4],
+    ['toys in each group', 1, 2],
+    ['9 divided by 3', 1, 1],
+    ['24 colored pencils', 1, 2],
+    ['butterfly stickers', 1, 4],
+    ['divide 6 tomatoes', 1, 1],
+    ['divide 8 lollipops', 1, 2],
+    ['divide 10 stars', 1, 1],
+    ['divide the shells', 1, 2]
+  ];
+  for (const [needle, printedLineCount, expectedFillableLines] of sourceResponseCases) {
+    if (!sourcePrompt.includes(needle)) continue;
+    const needsOverlay = ['divide 8 lollipops', 'divide 10 stars', 'divide the shells'].includes(needle);
+    return sourceModel(
+      printedLineCount,
+      crops.length === 1 && fillableInputCount === expectedFillableLines && (!needsOverlay || sketchOverlayCount === 1)
+    );
+  }
+
+  if (sourcePrompt.includes('dots below show 2 groups of 5')) {
+    return sourceModel(0, crops.length === 1 && sketchWorkspaceCount === 1 && writtenResponseCount === 1);
+  }
+  if (sourcePrompt.includes('emma collects rocks')) {
+    return openModel(1, sketchWorkspaceCount === 1 && fillableInputCount === 1);
+  }
+  if (sourcePrompt.includes('joshua organizes cans')) {
+    return openModel(1, sketchWorkspaceCount === 1 && fillableInputCount === 1);
+  }
+  if (sourcePrompt.includes('multiplication equation for the array shown')) {
+    return sourceModel(1, crops.length === 1 && sketchWorkspaceCount === 1 && fillableInputCount === 1);
+  }
+  if (sourcePrompt.includes('array using factors 2 and 3')) {
+    return openModel(0, sketchWorkspaceCount === 1);
+  }
+  if (sourcePrompt.includes('charlie picks 20 apples')) {
+    return sourceModel(1, crops.length === 1 && sketchOverlayCount === 1 && fillableInputCount === 3);
+  }
+  if (sourcePrompt.includes('rachel has 9 crackers')) {
+    return sourceModel(1, crops.length === 1 && sketchOverlayCount === 1 && sketchWorkspaceCount === 1 && fillableInputCount === 1);
+  }
+  if (sourcePrompt.includes('jameisha has 16 wheels')) {
+    return openModel(2, sketchWorkspaceCount === 1 && fillableInputCount === 2);
+  }
+
+  return undefined;
 }
 
 function canonicalAuthoredInteractionLayout(sections) {

@@ -60,7 +60,11 @@ The source-contract validator enforces the lesson-specific semantic requirements
 Fresh browser captures belong in the temporary audit directory and are not committed. The durable result of the visual pass is recorded here after the final 21-lesson acceptance run.
 
 - Correction: the 2026-07-18 84-state record verified routes, layout, and runtime, but it did **not** prove source fidelity for every lesson. It must not be cited as a complete Module 2 content pass.
-- Current comprehensive Module 2 source-fidelity status: **not yet re-certified lesson by lesson**.
+- Current comprehensive Module 2 source-fidelity status: **passed on 2026-08-13**.
+- Current source review: all seven three-lesson batches were inspected directly against the fingerprinted Problem Set and answer-key page images; 21 schema-v2 visual contracts and all 93 implemented problems passed the fail-closed source/layout validators.
+- Current browser review: 21 lessons × 4 states = 84 fresh desktop captures at 1,920 × 940 CSS pixels in a dedicated agent-owned Chrome session. All states held the viewport width with no document-level horizontal overflow; the compact workbook hierarchy leaves only the lesson title above 32 px.
+- Current interaction review: all 21 Replay animation controls responded; 372 typed response fields across 20 lessons accepted input; 57 drawing canvases across 13 lessons were present; a representative Lesson 10 canvas accepted and cleared a stroke; Blank→Solved and Summary navigation passed; the browser console reported 0 warnings/errors.
+- Current layout correction: full-width drawing canvases now have explicit workbook-scale heights and pair with written responses on wide desktops. The two narrow Lesson 10 source crops retain their printed proportions without stretching into multi-thousand-pixel panels.
 - Lesson 20 corrective pass: **passed on 2026-07-19** against the selected Teacher Edition worked pages.
 - Lesson 20 evidence: exact A/B workbook and four closest estimates; source-specific same/opposite direction distance reasoning; Camden estimate/tape/actual sequence; real Teacher Edition fruit-scale crop; peach `130 g` estimate and `128 g` actual; Blank mode answer isolation; Pause/Play control; 0 horizontal overflow; 0 browser warnings/errors.
 - Lesson 20 viewport: 1,860 × 940 CSS pixels in a dedicated agent-owned Chrome tab.

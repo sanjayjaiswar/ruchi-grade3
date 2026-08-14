@@ -9,10 +9,17 @@
       <a [routerLink]="unitRoute(unit)">← Unit 1</a>
       <span>Week 1</span>
       <strong>Lesson 1 · {{ officialLesson.title }}</strong>
-      <span>{{ lessonProgress }} of 4 source steps</span>
+      <span>{{ lessonProgress }} of 5 source steps</span>
     </nav>
 
-    <nav *ngIf="pageKind !== 'lesson'" class="reading-area-nav" aria-label="Grade 3 Reading and Language Arts sections">
+    <nav *ngIf="pageKind === 'practice'" class="curriculum-tools reading-practice-tools" aria-label="Reading evidence practice navigation">
+      <a [routerLink]="unitRoute(unit)">← Unit {{ unit.number }}</a>
+      <span>Week {{ evidenceQuestion.weekNumber }}</span>
+      <strong>Question {{ evidenceQuestion.questionNumber }} · {{ evidenceQuestion.selectionTitle }}</strong>
+      <span>{{ evidenceQuestion.questionNumber }} of 10</span>
+    </nav>
+
+    <nav *ngIf="pageKind !== 'lesson' && pageKind !== 'practice'" class="reading-area-nav" aria-label="Grade 3 Reading and Language Arts sections">
       <a routerLink="/ruchika/grade3/reading/standards" [class.active]="pageKind === 'standards'" [attr.aria-current]="pageKind === 'standards' ? 'page' : null">Standards</a>
       <a routerLink="/ruchika/grade3/reading" [class.active]="pageKind === 'overview' || pageKind === 'unit'" [attr.aria-current]="pageKind === 'overview' || pageKind === 'unit' ? 'page' : null">Curriculum</a>
       <a routerLink="/ruchika/grade3/reading/assessments" [class.active]="pageKind === 'assessments'" [attr.aria-current]="pageKind === 'assessments' ? 'page' : null">Assessments</a>
@@ -28,13 +35,13 @@
       <div>
         <span class="source-badge">Moreland School District · Benchmark Advance</span>
         <h1 id="reading-title">Grade 3 Reading &amp; Language Arts</h1>
-        <p>Follow the complete publisher-documented Grade 3 year: 10 units, 30 weeks, and 70 named selections. Open any unit to see every published week, text, reading focus, word-study focus, and writing focus.</p>
+        <p>Learn through the complete publisher-documented Grade 3 year: 10 units, 30 weeks, 70 named selections, and 100 official text-evidence questions. Open a unit to read, learn the weekly skills, and practice with the school text.</p>
         <div class="source-links">
           <button type="button" class="primary-curriculum-link" (click)="scrollToCurriculum()">Explore the Grade 3 year ↓</button>
           <a routerLink="/ruchika/grade3/reading/standards">See all California standards →</a>
         </div>
       </div>
-      <dl class="year-summary"><div><dt>10</dt><dd>official publisher units</dd></div><div><dt>30</dt><dd>publisher weeks</dd></div><div><dt>70</dt><dd>named selections</dd></div></dl>
+      <dl class="year-summary"><div><dt>10</dt><dd>official publisher units</dd></div><div><dt>30</dt><dd>publisher weeks</dd></div><div><dt>100</dt><dd>official evidence questions</dd></div></dl>
     </section>
 
     <section id="grade3-year-map" class="year-map" aria-labelledby="year-map-title">
@@ -45,8 +52,8 @@
           <h3>{{ option.title }}</h3>
           <p><strong>Begins with</strong> {{ option.weeks[0].selections[0].title }}</p>
           <p><strong>Ends with</strong> {{ option.weeks[2].selections[0].title }}</p>
-          <div class="unit-meta"><span>3 weeks</span><span>7 selections</span></div>
-          <a class="unit-action" [routerLink]="unitRoute(option)">Explore Unit {{ option.number }} <span aria-hidden="true">→</span></a>
+          <div class="unit-meta"><span>3 weeks</span><span>7 selections</span><span>10 evidence questions</span></div>
+          <a class="unit-action" [routerLink]="unitRoute(option)">Open Unit {{ option.number }} <span aria-hidden="true">→</span></a>
         </article>
       </div>
     </section>
@@ -65,6 +72,23 @@
 
   <section *ngIf="pageKind === 'standards'" class="reading-section standards-page">
     <section class="page-heading standards-heading"><div><span class="source-badge">Official California Grade 3 ELA/Literacy standards</span><h1>What Grade 3 students learn</h1><p>All {{ standardsCount }} official CDE records are shown below. Each card keeps the complete plain-language expectation beside its official California reference code.</p></div><div class="heading-actions"><a [href]="learningSources.californiaStandards" target="_blank" rel="noopener">Open the official CDE register ↗</a><a routerLink="/ruchika/grade3/reading">Back to the 10-unit year →</a></div></section>
+
+    <section class="standards-visual-overview" aria-labelledby="standards-visual-title">
+      <header><div><span>Portal visual study guide · derived from the official standards below</span><h2 id="standards-visual-title">Six ways a Grade 3 learner works with language</h2><p>Choose a visual pathway, then read every official California expectation in that section.</p></div><a [href]="learningSources.californiaStandards" target="_blank" rel="noopener">Verify the complete CDE source ↗</a></header>
+      <div class="standard-visual-grid">
+        <article *ngFor="let domain of standardsDomains" [class]="'standard-visual-card is-' + domain.id">
+          <button type="button" (click)="scrollToStandard(domain.id)"><span class="domain-symbol" aria-hidden="true">{{ domain.id === 'rl' ? '📖' : domain.id === 'ri' ? '🔎' : domain.id === 'rf' ? '🔤' : domain.id === 'w' ? '✍' : domain.id === 'sl' ? '💬' : '🧩' }}</span><span><small>Explore</small><strong>{{ domain.name }}</strong></span><b aria-hidden="true">↓</b></button>
+          <div *ngIf="domain.id === 'rl'" class="mini-model story-model"><span>Character</span><i>→</i><span>Challenge</span><i>→</i><span>Choice</span><i>→</i><span>Message</span></div>
+          <div *ngIf="domain.id === 'ri'" class="mini-model idea-model"><span>Main idea</span><div><i>Detail</i><i>Feature</i><i>Connection</i></div></div>
+          <div *ngIf="domain.id === 'rf'" class="mini-model word-model"><span>prefix</span><b>+</b><span>base word</span><b>+</b><span>suffix</span><i>→ read accurately</i></div>
+          <div *ngIf="domain.id === 'w'" class="mini-model writing-model"><span>Plan</span><i>→</i><span>Draft</span><i>→</i><span>Revise</span><i>→</i><span>Publish</span></div>
+          <div *ngIf="domain.id === 'sl'" class="mini-model talk-model"><span>Listen</span><i>↔</i><span>Ask</span><i>↔</i><span>Explain</span></div>
+          <div *ngIf="domain.id === 'l'" class="mini-model language-model"><span>Words</span><b>fit into</b><span class="sentence-line">a clear sentence.</span></div>
+          <p>{{ domain.plainLanguage }}</p>
+          <a [href]="domain.source" target="_blank" rel="noopener">Official CDE section ↗</a>
+        </article>
+      </div>
+    </section>
 
     <section class="code-guide" aria-label="How to read a California standards code"><div><strong>How to read an official code</strong><p><b>RL</b> means Reading Literature, <b>3</b> means Grade 3, and <b>1</b> identifies the numbered expectation. The full expectation is always shown; the code is never used by itself.</p></div><span>RL . 3 . 1</span></section>
 
@@ -105,80 +129,226 @@
     <section class="source-list">
       <article><span>1</span><div><h2>Moreland School District: adopted curriculum</h2><p>Lists Benchmark Advance for TK–5 English Language Arts, adopted in 2017–18.</p><a [href]="sources.morelandCurriculum" target="_blank" rel="noopener">Open district source ↗</a></div></article>
       <article><span>2</span><div><h2>Benchmark Advance Grade 3: Skills and Strategies</h2><p>The ten-page publisher-authored scope and sequence supplies every unit, week, selection title, genre, Lexile label, reading focus, word-study focus, and writing focus shown here.</p><a [href]="sources.scope" target="_blank" rel="noopener">Open publisher scope ↗</a></div></article>
-      <article><span>3</span><div><h2>California state adoption</h2><p>The California Department of Education’s 2015 ELA/ELD adoption record lists Benchmark Advance as an adopted K–6 Basic ELA/ELD program.</p><a [href]="sources.californiaAdoption" target="_blank" rel="noopener">Open CDE source ↗</a></div></article>
-      <article><span>4</span><div><h2>Baker Elementary context</h2><p>Baker’s public About page names the Benchmark program for English Language Arts. Moreland’s district page remains the governing local adoption source.</p><a [href]="sources.bakerCurriculum" target="_blank" rel="noopener">Open Baker source ↗</a></div></article>
-      <article><span>5</span><div><h2>Santa Clara County standards context</h2><p>SCCOE provides standards information and family/educator resources. It does not replace Moreland’s district curriculum adoption or supply a Baker-specific daily sequence.</p><a [href]="sources.sccoeStandards" target="_blank" rel="noopener">Open SCCOE source ↗</a></div></article>
-      <article><span>6</span><div><h2>California Grade 3 ELA standards</h2><p>The CDE Grade 3 register contains {{ standardsCount }} records across six domains. Standards are learning expectations, not Benchmark unit names.</p><a [href]="learningSources.californiaStandards" target="_blank" rel="noopener">Open CDE Grade 3 standards ↗</a></div></article>
-      <article><span>7</span><div><h2>Baker Elementary 2025–26 school plan</h2><p>The SPSA documents Baker’s schoolwide ELA goal, use of state and local evidence, small-group support, and named assessment systems. It does not publish an individual Grade 3 testing plan.</p><a [href]="learningSources.bakerSpsa" target="_blank" rel="noopener">Open Baker SPSA ↗</a></div></article>
-      <article><span>8</span><div><h2>California CAASPP ELA score guide</h2><p>The February 2026 CDE guide describes the computer-adaptive assessment, performance task, overall achievement levels, and the two current composite reporting areas.</p><a [href]="learningSources.caaspp" target="_blank" rel="noopener">Open CDE score guide ↗</a></div></article>
+      <article><span>3</span><div><h2>Benchmark Grade 3 Text Evidence Questions</h2><p>The ten-page publisher-authored question source supplies 100 questions—ten per unit—aligned to the same verified selections. It does not supply the passages, answers, scores, or daily lesson sequence.</p><a [href]="evidenceQuestionSource" target="_blank" rel="noopener">Open publisher question source ↗</a></div></article>
+      <article><span>4</span><div><h2>California state adoption</h2><p>The California Department of Education’s 2015 ELA/ELD adoption record lists Benchmark Advance as an adopted K–6 Basic ELA/ELD program.</p><a [href]="sources.californiaAdoption" target="_blank" rel="noopener">Open CDE source ↗</a></div></article>
+      <article><span>5</span><div><h2>Baker Elementary context</h2><p>Baker’s public About page names the Benchmark program for English Language Arts. Moreland’s district page remains the governing local adoption source.</p><a [href]="sources.bakerCurriculum" target="_blank" rel="noopener">Open Baker source ↗</a></div></article>
+      <article><span>6</span><div><h2>Santa Clara County standards context</h2><p>SCCOE provides standards information and family/educator resources. It does not replace Moreland’s district curriculum adoption or supply a Baker-specific daily sequence.</p><a [href]="sources.sccoeStandards" target="_blank" rel="noopener">Open SCCOE source ↗</a></div></article>
+      <article><span>7</span><div><h2>California Grade 3 ELA standards</h2><p>The CDE Grade 3 register contains {{ standardsCount }} records across six domains. Standards are learning expectations, not Benchmark unit names.</p><a [href]="learningSources.californiaStandards" target="_blank" rel="noopener">Open CDE Grade 3 standards ↗</a></div></article>
+      <article><span>8</span><div><h2>Baker Elementary 2025–26 school plan</h2><p>The SPSA documents Baker’s schoolwide ELA goal, use of state and local evidence, small-group support, and named assessment systems. It does not publish an individual Grade 3 testing plan.</p><a [href]="learningSources.bakerSpsa" target="_blank" rel="noopener">Open Baker SPSA ↗</a></div></article>
+      <article><span>9</span><div><h2>California CAASPP ELA score guide</h2><p>The February 2026 CDE guide describes the computer-adaptive assessment, performance task, overall achievement levels, and the two current composite reporting areas.</p><a [href]="learningSources.caaspp" target="_blank" rel="noopener">Open CDE score guide ↗</a></div></article>
     </section>
     <section class="assessment-panel"><div><h2>Grade 3 assessment context</h2><p>Moreland’s current public table lists SRI twice yearly, ELA benchmarks three times yearly, and CAASPP ELA yearly for grades 3–8. Fountas &amp; Pinnell Early Literacy is listed for TK–2, not Grade 3.</p><a [href]="sources.morelandAssessments" target="_blank" rel="noopener">Open Moreland assessment source ↗</a></div><p class="assessment-guardrail">This app does not estimate, convert, or invent an F&amp;P level, Lexile score, benchmark result, or CAASPP level.</p></section>
   </section>
 
   <section *ngIf="pageKind === 'unit'" class="reading-section unit-page">
     <section *ngIf="notice" class="source-gate-notice"><strong>Official-source gate</strong><span>{{ notice }}</span></section>
-    <section [class]="'unit-hero ' + unit.accent"><div><span class="source-badge">Publisher Unit {{ unit.number }} of 10</span><h1>{{ unit.title }}</h1><p>Explore all three publisher weeks and every named selection. The official source page stays visible, and the guided view reorganizes only facts transcribed from that page.</p></div><div class="unit-hero-actions"><a routerLink="/ruchika/grade3/reading">All 10 units</a><a [href]="scopePage(unit)" target="_blank" rel="noopener">Open official scope pp. {{ scopePrintedPage(unit) }}–{{ scopePrintedPage(unit) + 1 }} ↗</a></div></section>
+    <section [class]="'unit-hero learning-unit-hero ' + unit.accent">
+      <div>
+        <span class="source-badge">Benchmark Advance · Unit {{ unit.number }} of 10</span>
+        <h1>{{ unit.title }}</h1>
+        <p>Work through three publisher weeks. Each week connects the official selections and skills to Benchmark’s official text-evidence questions.</p>
+        <div class="unit-learning-counts"><span>3 weeks</span><span>7 named selections</span><span>10 official questions</span></div>
+      </div>
+      <div class="unit-hero-actions"><a routerLink="/ruchika/grade3/reading">All 10 units</a><a [href]="scopePage(unit)" target="_blank" rel="noopener">Official unit scope ↗</a></div>
+    </section>
+
+    <section class="unit-official-evidence source-first" aria-labelledby="unit-evidence-title">
+      <header><span>Official sources for this unit</span><strong id="unit-evidence-title">See the publisher pages before using the teaching layer</strong></header>
+      <div class="official-evidence-grid">
+        <article>
+          <a class="source-preview" [href]="scopePage(unit)" target="_blank" rel="noopener"><img [src]="scopeImage(unit)" [alt]="'Official Benchmark Grade 3 Unit ' + unit.number + ' scope page'" /></a>
+          <div><h3>Grade 3 Skills and Strategies</h3><p>Source for this unit’s title, weeks, named selections, reading skills, word study, and writing focus.</p><a [href]="scopePage(unit)" target="_blank" rel="noopener">Open publisher scope · printed pp. {{ scopePrintedPage(unit) }}–{{ scopePrintedPage(unit) + 1 }} ↗</a></div>
+        </article>
+        <article>
+          <a class="source-preview" [href]="questionSourcePage(unit)" target="_blank" rel="noopener"><img [src]="'/source-pages/reading/text-evidence/unit-' + unit.number + '.png'" [alt]="'Official Benchmark Unit ' + unit.number + ' text evidence questions'" /></a>
+          <div><h3>Text Evidence Questions</h3><p>Source for the ten publisher questions. The portal adds tap-and-speak teaching support, but does not invent a passage, answer, or score.</p><a [href]="questionSourcePage(unit)" target="_blank" rel="noopener">Open publisher question page · PDF p. {{ unit.number }} ↗</a></div>
+        </article>
+      </div>
+    </section>
 
     <nav class="unit-week-nav" aria-label="Unit weeks">
       <span>Choose a week</span>
-      <button type="button" *ngFor="let week of unit.weeks" (click)="scrollToWeek(week.number)">Week {{ week.number }} <small>{{ week.selections.length }} selections</small></button>
+      <button type="button" *ngFor="let week of unit.weeks" (click)="scrollToWeek(week.number)">Week {{ week.number }} <small>{{ weekQuestions(week).length }} official questions</small></button>
     </nav>
 
-    <section class="official-scope-page" [attr.aria-label]="'Official publisher scope page for Unit ' + unit.number">
-      <div><span class="source-badge">Source of truth</span><strong>Official publisher source page</strong><p>Benchmark Advance Grade 3 Skills &amp; Strategies · printed pages {{ scopePrintedPage(unit) }}–{{ scopePrintedPage(unit) + 1 }}. This page controls the unit title, selections, genres, Lexile labels, standards, reading, word study, fluency, writing, speaking and listening, language, and English-language-development information.</p><p><b>How to use it:</b> open the image for the complete official wording and codes. The week cards below provide a more readable view of the publisher columns that have been fully transcribed and verified.</p></div>
-      <a [href]="scopePage(unit)" target="_blank" rel="noopener"><img [src]="scopeImage(unit)" [alt]="'Official publisher scope page for Unit ' + unit.number + ': ' + unit.title" /></a>
+    <section class="unit-concept-map" aria-label="Visual map of the three official publisher weeks">
+      <header><div><span>Visual unit path · labels come from the official publisher scope</span><h2>Read → Notice the skill → Use evidence</h2></div><a [href]="scopePage(unit)" target="_blank" rel="noopener">Verify this unit path ↗</a></header>
+      <div class="unit-path-track">
+        <button type="button" *ngFor="let week of unit.weeks; let index = index" (click)="scrollToWeek(week.number)">
+          <span class="week-orb">{{ week.number }}</span>
+          <span class="week-path-copy"><small>Week {{ week.number }}</small><strong>{{ week.selections[0].title }}</strong><b>{{ weekQuestions(week).length }} official evidence questions</b></span>
+          <span *ngIf="index < 2" class="path-arrow" aria-hidden="true">→</span>
+        </button>
+      </div>
     </section>
 
-    <section class="week-grid" aria-label="Publisher scope weeks">
-      <article *ngFor="let week of unit.weeks" [id]="'reading-week-' + week.number" class="week-card">
-        <div class="week-heading"><div><span>Publisher Week {{ week.number }} of 3</span><h2>Week {{ week.number }} source-guided view</h2><p>Named texts and verified instructional columns from the official page above.</p></div><a [href]="scopePage(unit)" target="_blank" rel="noopener">Open official PDF ↗</a></div>
-        <div class="scope-lanes">
-          <section class="scope-lane selections-lane"><span class="lane-label">Student reads</span><h3>Publisher-named selections</h3><ul class="selection-list"><li *ngFor="let item of week.selections"><strong>{{ item.title }}</strong><span>{{ item.role }}</span><span>{{ item.genre }}</span><span>Publisher Lexile label: {{ item.lexile }}</span></li></ul></section>
-          <section class="scope-lane reading-lane"><span class="lane-label">Reading</span><h3>Understand the texts</h3><ul><li *ngFor="let focus of week.readingFocus">{{ focus }}</li></ul></section>
-          <section class="scope-lane word-lane"><span class="lane-label">Word study</span><h3>Study words and spelling</h3><p>{{ week.wordStudy }}</p></section>
-          <section class="scope-lane writing-lane"><span class="lane-label">Writing</span><h3>Write from the unit work</h3><p>{{ week.writingFocus }}</p></section>
+    <section class="week-learning-path" aria-label="Unit learning weeks">
+      <article *ngFor="let week of unit.weeks" [id]="'reading-week-' + week.number" class="learning-week-card">
+        <header class="learning-week-heading">
+          <div><span>Week {{ week.number }} of 3</span><h2>{{ week.selections[0].title }}</h2><p>{{ week.selections.length }} official selections · {{ weekQuestions(week).length }} official evidence questions</p></div>
+          <a class="start-week" [routerLink]="practiceRoute(unit, weekQuestions(week)[0].questionNumber)">Start Week {{ week.number }} →</a>
+        </header>
+
+        <div class="week-learning-grid">
+          <section class="week-read-panel">
+            <span class="learning-label">Read</span><h3>Read these selections in the school text</h3>
+            <ul><li *ngFor="let item of week.selections"><div><strong>{{ item.title }}</strong><span>{{ item.role }} · {{ item.genre }}</span></div><small *ngIf="item.lexile !== 'NP'">Publisher Lexile {{ item.lexile }}L</small><small *ngIf="item.lexile === 'NP'">Publisher label: NP</small></li></ul>
+          </section>
+          <section class="week-learn-panel">
+            <span class="learning-label">Learn</span><h3>What this week teaches</h3>
+            <ul><li *ngFor="let focus of week.readingFocus">{{ focus }}</li></ul>
+          </section>
+          <section class="week-practice-panel">
+            <span class="learning-label">Practice</span><h3>Official questions with a portal guide</h3>
+            <div class="question-launch-grid">
+              <article *ngFor="let question of weekQuestions(week)" class="question-launch-card">
+                <span>Publisher Question {{ question.questionNumber }}</span>
+                <strong>{{ question.learningGoal }}</strong>
+                <small>Use {{ question.selectionRole }} in the school text.</small>
+                <div><a [routerLink]="practiceRoute(unit, question.questionNumber)">Open interactive guide →</a><a [href]="questionSourcePage(unit)" target="_blank" rel="noopener">Official source · PDF p. {{ unit.number }} ↗</a></div>
+              </article>
+            </div>
+          </section>
         </div>
-        <div class="complete-source-reminder"><strong>The official page contains more than these guided cards.</strong><p>Keep the source page above open for the complete standards, fluency, speaking and listening, conventions, vocabulary, and English language development columns. Those official details remain visible rather than being replaced by a portal summary.</p></div>
-        <a *ngIf="unit.id === 'u1' && week.number === 1" class="admitted-lesson-link" [routerLink]="lessonRoute(unit, 1)"><span>Official Benchmark Education sample</span><strong>Lesson 1: Working Together</strong><small>Open the source-faithful teaching layer →</small></a>
+
+        <div class="week-language-row"><div><span>Word study</span><strong>{{ week.wordStudy }}</strong></div><div><span>Writing</span><strong>{{ week.writingFocus }}</strong></div></div>
+        <a *ngIf="unit.id === 'u1' && week.number === 1" class="admitted-lesson-link" [routerLink]="lessonRoute(unit, 1)"><span>Official teacher sample available</span><strong>Lesson 1: Working Together</strong><small>Open the complete teacher-sourced lesson →</small></a>
       </article>
     </section>
-    <section class="source-boundary warning"><strong>What is needed for Math-level daily practice</strong><p>The public scope establishes the year, units, weeks, selections, and instructional columns, but it does not contain the copyrighted selection text or Teacher Resource System directions. Day-by-day reading practice will be released only after those authorized student and teacher materials can control every prompt and visual, just as the Eureka Math Teacher Edition controls every Math lesson.</p></section>
+
     <footer class="unit-footer"><a *ngIf="previousUnitRoute" [routerLink]="previousUnitRoute">← Previous unit</a><a routerLink="/ruchika/grade3/reading">Complete year map</a><a *ngIf="nextUnitRoute" [routerLink]="nextUnitRoute">Next unit →</a></footer>
+  </section>
+
+  <section *ngIf="pageKind === 'practice'" class="reading-section evidence-practice-page">
+    <section [class]="'practice-hero ' + unit.accent">
+      <div><span class="source-badge">Unit {{ unit.number }} · Week {{ evidenceQuestion.weekNumber }} · Official Question {{ evidenceQuestion.questionNumber }}</span><h1>{{ evidenceQuestion.selectionTitle }}</h1><p>{{ evidenceQuestion.learningGoal }}</p></div>
+      <div class="practice-hero-actions"><a [routerLink]="unitRoute(unit)">Unit overview</a><a [href]="questionSourcePage(unit)" target="_blank" rel="noopener">Official question page ↗</a></div>
+    </section>
+
+    <section class="book-gate">
+      <div><span>Before you begin</span><h2>Open the school Benchmark text</h2><p>Use <strong>{{ evidenceQuestion.selectionTitle }}</strong> ({{ evidenceQuestion.selectionRole }}). The official question depends on that selection; the portal does not replace or invent the passage.</p></div>
+      <button type="button" class="gate-action" [class.complete]="practiceBookOpen" (click)="practiceBookOpen = !practiceBookOpen">{{ practiceBookOpen ? '✓ Selection is open' : 'I have the selection open' }}</button>
+    </section>
+
+    <nav class="question-number-nav" aria-label="Official questions in Unit">
+      <a *ngFor="let question of unitQuestions()" [routerLink]="practiceRoute(unit, question.questionNumber)" [class.active]="question.questionNumber === evidenceQuestion.questionNumber" [attr.aria-current]="question.questionNumber === evidenceQuestion.questionNumber ? 'step' : null">{{ question.questionNumber }}</a>
+    </nav>
+
+    <nav class="reading-studio-path" aria-label="Reading lesson stages">
+      <button type="button" (click)="scrollToPracticeStage('learn-the-move')"><span>1</span><strong>Learn</strong><small>Know the reading move</small></button>
+      <button type="button" (click)="scrollToPracticeStage('watch-the-thinking')"><span>2</span><strong>Watch</strong><small>Follow a reader's thinking</small></button>
+      <button type="button" (click)="scrollToPracticeStage('practice-with-text')"><span>3</span><strong>Practice</strong><small>Work in the school text</small></button>
+      <button type="button" (click)="scrollToPracticeStage('say-your-response')"><span>4</span><strong>Respond</strong><small>Say it with evidence</small></button>
+    </nav>
+
+    <section class="teaching-method-source">
+      <div><span>Research-backed teaching sequence</span><strong>Explain and model → guided use → independent use</strong></div>
+      <p>The interaction follows established K–3 comprehension guidance; Benchmark remains the authority for the unit, selection, and question.</p>
+      <div class="method-source-links"><a [href]="teachingSources.iesComprehension" target="_blank" rel="noopener">IES K–3 guidance ↗</a><a [href]="teachingSources.benchmarkProgram" target="_blank" rel="noopener">Benchmark program model ↗</a><a [href]="teachingSources.californiaLiteracy" target="_blank" rel="noopener">California Grades 2–3 literacy ↗</a></div>
+    </section>
+
+    <section id="learn-the-move" class="practice-learning-layout">
+      <article class="strategy-teaching-card">
+        <span class="learning-label">1 · Learn the reading move</span>
+        <h2>{{ strategyGuide.title }}</h2>
+        <p>{{ strategyGuide.learnerMove }}</p>
+        <div class="strategy-flow"><div *ngFor="let step of strategyGuide.steps; let index = index"><span>{{ index + 1 }}</span><strong>{{ step }}</strong></div></div>
+      </article>
+
+      <article class="official-question-card">
+        <span class="learning-label official">Official Benchmark question</span>
+        <h2>Question {{ evidenceQuestion.questionNumber }}</h2>
+        <p class="official-question-text">{{ evidenceQuestion.prompt }}</p>
+        <div class="question-source-proof">
+          <a class="question-source-thumbnail" [href]="questionSourcePage(unit)" target="_blank" rel="noopener"><img [src]="'/source-pages/reading/text-evidence/unit-' + unit.number + '.png'" [alt]="'Official Benchmark Unit ' + unit.number + ' question page'" /></a>
+          <div><strong>Publisher source visible here</strong><p>This prompt is transcribed from the Benchmark Text Evidence Questions page for Unit {{ unit.number }}.</p><a [href]="questionSourcePage(unit)" target="_blank" rel="noopener">Open the exact publisher page · PDF p. {{ unit.number }} ↗</a></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="watch-the-thinking" class="strategy-workspace">
+      <header class="strategy-workspace-header">
+        <div><span>2 · Watch a reader think</span><h2>{{ strategyExample.title }}</h2><p>The passage and think-aloud are original supplemental teaching material. They demonstrate the reading move without supplying an answer to the Benchmark question.</p></div>
+      </header>
+
+      <div class="example-source-card"><span>Original demonstration text</span><p>{{ strategyExample.sourceText }}</p><strong>{{ strategyExample.question }}</strong></div>
+
+      <div class="think-aloud-controls" role="group" aria-label="Reader think-aloud steps">
+        <button type="button" [class.active]="modelStep === 1" [class.complete]="modelStep > 1" (click)="showModelStep(1)"><span>1</span>Read</button>
+        <button type="button" [class.active]="modelStep === 2" [class.complete]="modelStep > 2" (click)="showModelStep(2)"><span>2</span>Notice</button>
+        <button type="button" [class.active]="modelStep === 3" [class.complete]="modelStep > 3" (click)="showModelStep(3)"><span>3</span>Connect</button>
+        <button type="button" [class.active]="modelStep === 4" (click)="showModelStep(4)"><span>4</span>Explain</button>
+      </div>
+
+      <div class="strategy-model-canvas" [attr.data-strategy]="evidenceQuestion.strategy">
+        <div *ngFor="let label of strategyExample.visualLabels; let index = index" class="model-step">
+          <span>{{ index + 1 }}</span><strong>{{ label }}</strong>
+          <p *ngIf="modelStep > index + 1" class="revealed-thinking">{{ strategyExample.modelThinking[index] }}</p>
+          <p *ngIf="modelStep <= index + 1" class="thinking-prompt">Pause here. What would a careful reader notice?</p>
+        </div>
+        <i class="model-connector one" aria-hidden="true">→</i><i class="model-connector two" aria-hidden="true">→</i>
+      </div>
+
+      <div *ngIf="modelStep === 4" class="reader-think-aloud-response"><span>A reader explains</span><strong>{{ strategyExample.modelResponse }}</strong><small>This is a think-aloud for the original demonstration text—not an answer to Official Question {{ evidenceQuestion.questionNumber }}.</small></div>
+      <button *ngIf="modelStep < 4" type="button" class="continue-thinking" (click)="showModelStep(modelStep + 1)">Continue the think-aloud →</button>
+    </section>
+
+    <section id="practice-with-text" class="evidence-builder" [attr.data-strategy]="evidenceQuestion.strategy">
+      <div class="evidence-builder-heading"><span>3 · Practice with guidance</span><h2>Use the move while reading {{ evidenceQuestion.selectionTitle }}</h2><p>Keep the school text open. The prompts organize your thinking; every detail must come from the named Benchmark selection.</p></div>
+      <div class="question-purpose-card"><div><span>My reading focus</span><strong>{{ evidenceQuestion.learningGoal }}</strong></div><div><span>Official question</span><strong>{{ evidenceQuestion.prompt }}</strong></div></div>
+      <div class="tap-evidence-board">
+        <header><span>Tap each move when you find it in the school text</span><small>No typing is required here.</small></header>
+        <div class="tap-evidence-grid">
+          <button type="button" *ngFor="let label of strategyGuide.tapLabels; let index = index" [class.active]="readingActionChecks[index]" (click)="toggleReadingAction(index)">
+            <span>{{ readingActionChecks[index] ? '✓' : index + 1 }}</span><strong>{{ label }}</strong><small>{{ strategyGuide.evidenceLabels[index] }}</small>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="say-your-response" class="independent-response">
+      <div><span>4 · Respond without typing</span><h2>Say your answer and point to the evidence</h2><p>Answer the official question aloud. Point to the strongest evidence in the school text while you explain the connection.</p></div>
+      <div class="speak-response"><div><span>Use this speaking frame</span><strong>{{ strategyGuide.responseFrame }}</strong><small>Replace the blanks aloud with evidence from the school text.</small></div><button type="button" [class.complete]="answeredAloud" (click)="answeredAloud = !answeredAloud">{{ answeredAloud ? '✓ I said my answer' : 'I said my answer aloud' }}</button></div>
+      <div class="practice-checks"><strong>Tap after you say it</strong><button type="button" *ngFor="let check of strategyGuide.checkLabels; let index = index" [class.complete]="practiceSelfChecks[index]" (click)="togglePracticeCheck(index)"><span>{{ practiceSelfChecks[index] ? '✓' : index + 1 }}</span>{{ check }}</button></div>
+    </section>
+
+    <section class="practice-source-boundary"><div><span>Source boundary</span><strong>Official curriculum and question; portal-authored tap-and-speak teaching</strong><p>The unit, week, selection, learning focus, and question come from the verified Benchmark sources. The three tap moves and spoken-response frame are original portal teaching supports. No official answer or learner score is inferred.</p></div><div><a [href]="scopePage(unit)" target="_blank" rel="noopener">Unit scope ↗</a><a [href]="questionSourcePage(unit)" target="_blank" rel="noopener">Question card ↗</a></div></section>
+
+    <footer class="practice-footer"><a *ngIf="previousQuestionRoute" [routerLink]="previousQuestionRoute">← Previous question</a><a [routerLink]="unitRoute(unit)">Unit {{ unit.number }} learning path</a><a *ngIf="nextQuestionRoute" [routerLink]="nextQuestionRoute">Next question →</a></footer>
   </section>
 
   <section *ngIf="pageKind === 'lesson'" class="reading-section lesson-page">
     <section class="lesson-heading official-lesson-heading"><div><span class="source-badge">Official Benchmark Education sample · Unit 1 · Week 1 · Lesson 1</span><h1>{{ officialLesson.title }}</h1><p class="lesson-objective">{{ officialLesson.objective }}</p><div class="lesson-facts"><span>{{ officialLesson.studentBook }}</span><span>{{ officialLesson.studentPages }}</span><span>{{ officialLesson.keyVocabulary.length }} official vocabulary words</span></div></div><a [href]="officialLesson.sourceUrl" target="_blank" rel="noopener">Open the official sample ↗</a></section>
 
-    <section class="material-gate"><div><span>Before you begin</span><h2>Open the school text</h2><p>The official lesson uses <strong>{{ officialLesson.title }}</strong> in <strong>{{ officialLesson.studentBook }}, {{ officialLesson.studentPages }}</strong>. The portal guides the same lesson; it does not replace or invent the passage.</p></div><label><input type="checkbox" [(ngModel)]="openedBook" /> I have the book open to pages 4–5</label></section>
+    <section class="material-gate"><div><span>Before you begin</span><h2>Open the school text</h2><p>The official lesson uses <strong>{{ officialLesson.title }}</strong> in <strong>{{ officialLesson.studentBook }}, {{ officialLesson.studentPages }}</strong>. The portal guides the same lesson; it does not replace or invent the passage.</p></div><button type="button" class="gate-action" [class.complete]="lessonBookOpen" (click)="lessonBookOpen = !lessonBookOpen">{{ lessonBookOpen ? '✓ Pages 4–5 are open' : 'I have pages 4–5 open' }}</button></section>
 
     <nav class="lesson-stage-nav" aria-label="Lesson sections"><button type="button" (click)="scrollToLessonStage('before-reading')">1. Before reading</button><button type="button" (click)="scrollToLessonStage('first-read')">2. First read</button><button type="button" (click)="scrollToLessonStage('reread')">3. Reread</button><button type="button" (click)="scrollToLessonStage('show-understanding')">4. Show understanding</button><button type="button" (click)="scrollToLessonStage('lesson-source')">Official source</button></nav>
 
     <section id="before-reading" class="lesson-stage before-reading-stage">
       <div class="stage-heading"><span>1</span><div><small>Official teacher sequence</small><h2>Read the title. Study the picture and caption.</h2><p>The Benchmark guidance asks the learner to explain what “working together” means, describe what is visible, and predict how people in the reading will work together.</p></div></div>
       <div class="teaching-model-note"><strong>Portal teaching organizer</strong><span>Use the publisher picture and caption in the school book for the actual lesson evidence.</span></div>
-      <div class="prediction-board"><div class="people-visual" aria-label="A portal teaching organizer showing three people working as one team; this is not the publisher picture"><span></span><span></span><span></span><b>One problem · one team</b></div><label><strong>My prediction</strong><textarea [(ngModel)]="prediction" rows="5" placeholder="I predict the people will work together by…"></textarea></label></div>
-      <label class="stage-check"><input type="checkbox" [(ngModel)]="checkedPicture" /> I read the caption, described the picture, and made a prediction.</label>
+      <div class="lesson-tap-grid" aria-label="Before-reading actions"><button type="button" *ngFor="let label of ['I read the title', 'I studied the publisher picture and caption', 'I said my prediction aloud']; let index = index" [class.complete]="lessonBeforeMoves[index]" (click)="toggleLessonBeforeMove(index)"><span>{{ lessonBeforeMoves[index] ? '✓' : index + 1 }}</span><strong>{{ label }}</strong></button></div>
+      <div class="oral-prompt"><span>Say your prediction</span><strong>“I predict the people will work together by ___ because the picture or caption shows ___.”</strong><small>Point to the publisher picture or caption while you speak.</small></div>
     </section>
 
     <section id="first-read" class="lesson-stage first-read-stage">
       <div class="stage-heading"><span>2</span><div><small>Official teacher sequence</small><h2>Read paragraph 1 and notice the key words.</h2><p>Stop when needed to make sense of the terms. These seven words are the exact Key Vocabulary named by the official Lesson 1 sample.</p></div></div>
-      <div class="vocabulary-grid"><article *ngFor="let word of officialLesson.keyVocabulary"><span aria-hidden="true">●</span><strong>{{ word }}</strong><small>Find it in the school text</small></article></div>
+      <div class="vocabulary-grid"><button type="button" *ngFor="let word of officialLesson.keyVocabulary; let index = index" [class.complete]="vocabularyFound[index]" (click)="toggleVocabulary(index)"><span>{{ vocabularyFound[index] ? '✓' : 'Find' }}</span><strong>{{ word }}</strong><small>Tap when you locate it in the school text</small></button></div>
       <div class="cognate-note"><strong>The official sample also identifies these cognates:</strong><span *ngFor="let cognate of officialLesson.cognates">{{ cognate }}</span></div>
-      <label class="stage-check"><input type="checkbox" [(ngModel)]="readParagraph" /> I read paragraph 1 and checked the words against the text.</label>
+      <button type="button" class="stage-action" [class.complete]="readParagraph" (click)="readParagraph = !readParagraph">{{ readParagraph ? '✓ Paragraph 1 read and words checked' : 'I read paragraph 1 and checked the words' }}</button>
     </section>
 
     <section id="reread" class="lesson-stage reread-stage">
       <div class="stage-heading"><span>3</span><div><small>Official teacher sequence</small><h2>Reread the last two sentences of paragraph 1.</h2><p>Circle <strong>sandbags</strong>. Then use the picture on page 5 to discuss how the sandbags were used and what it means to keep the floodwater out.</p></div></div>
       <div class="teaching-model-note"><strong>Portal teaching model</strong><span>This organizer explains the source direction. Use the publisher picture on page 5 for evidence.</span></div>
-      <div class="sandbag-model" aria-label="A portal teaching organizer showing sandbags between floodwater and a place to protect; this is not the publisher picture"><div class="water"><span>floodwater</span></div><div class="bags"><i></i><i></i><i></i><i></i><i></i><strong>sandbags</strong></div><div class="protected"><span>place to protect</span></div></div>
-      <div class="evidence-organizer"><label><span>The problem in the text</span><textarea [(ngModel)]="problem" rows="4" placeholder="Use the school text."></textarea></label><label><span>How people worked together</span><textarea [(ngModel)]="teamwork" rows="4" placeholder="Use the school text."></textarea></label><label><span>Page or picture evidence</span><textarea [(ngModel)]="evidence" rows="4" placeholder="Name the page and detail."></textarea></label></div>
-      <label class="stage-check"><input type="checkbox" [(ngModel)]="rereadSentences" /> I reread, used the page 5 picture, and recorded text evidence.</label>
+      <div class="lesson-tap-grid four" aria-label="Rereading actions"><button type="button" *ngFor="let label of ['I reread the last two sentences', 'I found and circled sandbags', 'I studied the publisher picture on page 5', 'I explained the evidence aloud']; let index = index" [class.complete]="lessonRereadMoves[index]" (click)="toggleLessonRereadMove(index)"><span>{{ lessonRereadMoves[index] ? '✓' : index + 1 }}</span><strong>{{ label }}</strong></button></div>
+      <div class="oral-prompt"><span>Explain what the evidence shows</span><strong>“The sandbags helped by ___ . I know because the words or picture show ___.”</strong><small>Use only the official school text and page 5 picture.</small></div>
     </section>
 
     <section id="show-understanding" class="lesson-stage response-stage">
       <div class="stage-heading"><span>4</span><div><small>Official after-reading question</small><h2>How did the people in Fargo work together to solve a problem?</h2><p>Answer only after reading. Use a detail from the text or picture so the answer is controlled by the official selection.</p></div></div>
-      <label class="response-field"><span>My text-based answer</span><textarea [(ngModel)]="response" rows="7" placeholder="The people worked together by… I know because on page…"></textarea></label>
-      <div class="answer-check"><strong>Check before finishing</strong><label><input type="checkbox" /> I answered how the people worked together.</label><label><input type="checkbox" /> I named the problem.</label><label><input type="checkbox" /> I used evidence from pages 4–5.</label></div>
+      <div class="lesson-speak-panel"><div><span>Say the answer aloud</span><strong>“The people worked together by ___ . I know because page ___ shows ___.”</strong><small>Point to the evidence as you say it.</small></div><button type="button" [class.complete]="lessonAnsweredAloud" (click)="lessonAnsweredAloud = !lessonAnsweredAloud">{{ lessonAnsweredAloud ? '✓ I said my answer' : 'I said my answer aloud' }}</button></div>
+      <div class="answer-check"><strong>Tap after you say it</strong><button type="button" *ngFor="let label of ['I answered how the people worked together', 'I named the problem', 'I pointed to evidence on pages 4–5']; let index = index" [class.complete]="lessonAnswerChecks[index]" (click)="toggleLessonAnswerCheck(index)"><span>{{ lessonAnswerChecks[index] ? '✓' : index + 1 }}</span>{{ label }}</button></div>
     </section>
 
     <section id="lesson-source" class="official-lesson-source"><div><span class="source-badge">Source of truth</span><h2>Official Benchmark lesson evidence</h2><p><strong>{{ officialLesson.sourceLabel }}</strong></p><p>{{ officialLesson.sourceBoundary }}</p><small>{{ officialLesson.sourceFingerprint }}</small><div class="source-actions"><a [href]="officialLesson.sourceUrl" target="_blank" rel="noopener">Open official Benchmark PDF ↗</a><a [href]="scopePage(unit)" target="_blank" rel="noopener">Open official Unit 1 scope ↗</a></div></div><figure><img src="/source-pages/reading/official-samples/grade3-u1-w1-lesson1-guide.png" alt="Official Benchmark Grade 3 Unit 1 Week 1 Guide to Build, Transfer, and Apply sample showing Lesson 1 Working Together" /><figcaption>Official public sample thumbnail; open the linked PDF for the source.</figcaption></figure></section>

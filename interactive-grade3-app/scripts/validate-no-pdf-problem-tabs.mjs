@@ -219,8 +219,16 @@ function flattenSections(sections) {
 function validateAuthoredInteraction(problem, label) {
   const blank = problem.blankVisual?.sections ?? [];
   const solved = problem.solvedVisual?.sections ?? [];
-  const blankSection = blank.length === 1 ? blank[0] : undefined;
-  const solvedSection = solved.length === 1 ? solved[0] : undefined;
+  const blankSection = blank.find((section) =>
+    (section?.kind === 'expression-match' && section.interactive) ||
+    (section?.kind === 'source-response-workspace' && (
+      (section.parts ?? []).some((part) => part.interactiveLines || part.responsePlaceholder) ||
+      (label.startsWith('m3-') && (section.parts ?? []).some((part) => part.openWorkspace))
+    ))
+  );
+  const solvedSection = blankSection
+    ? solved.find((section) => section?.kind === blankSection.kind)
+    : undefined;
   const isInteractiveMatch = blankSection?.kind === 'expression-match' && blankSection.interactive;
   const isInteractiveResponse = blankSection?.kind === 'source-response-workspace' && (
     (blankSection.parts ?? []).some((part) => part.interactiveLines || part.responsePlaceholder) ||

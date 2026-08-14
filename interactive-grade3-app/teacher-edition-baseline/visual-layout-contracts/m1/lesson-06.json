@@ -35,9 +35,20 @@
         ],
         "answerKeyEvidence": "Five groups of 3 circled; 5; 5; 5",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "source-illustration-division-model",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-tennis-ball-bank",
+          "modelCounts": [
+            15,
+            3,
+            5
+          ],
+          "modelOrientation": "scattered-bank-over-sentence-and-two-equations",
+          "printedEquationLineCount": 2,
+          "openWorkspaceCount": 0,
+          "responseStructure": "circle-five-groups-complete-sentence-two-related-facts",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -53,10 +64,18 @@
         ],
         "answerKeyEvidence": "Five groups of 3 drawn and circled; 3; 3; 3",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "open-array-and-related-facts",
+          "subpartCount": 1,
+          "modelPrimitive": "student-drawn-equal-groups",
+          "modelCounts": [
+            15,
+            5,
+            3
+          ],
+          "modelOrientation": "open-drawing-over-sentence-and-two-equations",
+          "printedEquationLineCount": 2,
+          "openWorkspaceCount": 1,
+          "responseStructure": "draw-five-equal-groups-complete-sentence-two-related-facts"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -72,10 +91,20 @@
         ],
         "answerKeyEvidence": "Array of 5 rows of 3 drawn; 5; 5; the number of groups; 3; 3; the size of each group",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "two-column-array-meaning-response",
+          "subpartCount": 2,
+          "columnCount": 2,
+          "dividerCount": 1,
+          "modelPrimitive": "student-drawn-array",
+          "modelCounts": [
+            5,
+            3,
+            15
+          ],
+          "modelOrientation": "shared-array-above-two-parallel-response-columns",
+          "printedEquationLineCount": 4,
+          "openWorkspaceCount": 3,
+          "responseStructure": "one-array-two-equations-and-one-meaning-line-per-column"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -91,10 +120,18 @@
         ],
         "answerKeyEvidence": "3; 3; the number of groups",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "word-problem-related-facts-and-meaning",
+          "subpartCount": 1,
+          "modelPrimitive": "equation-and-written-response",
+          "modelCounts": [
+            21,
+            7,
+            3
+          ],
+          "modelOrientation": "stacked-related-facts-over-meaning-line",
+          "printedEquationLineCount": 2,
+          "openWorkspaceCount": 1,
+          "responseStructure": "two-related-facts-and-meaning-of-unknown"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -110,10 +147,18 @@
         ],
         "answerKeyEvidence": "3; 3; answers will vary",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "unknown-factor-explanation",
+          "subpartCount": 1,
+          "modelPrimitive": "equation-and-written-explanation",
+          "modelCounts": [
+            4,
+            3,
+            12
+          ],
+          "modelOrientation": "two-related-equations-over-large-explanation-space",
+          "printedEquationLineCount": 2,
+          "openWorkspaceCount": 1,
+          "responseStructure": "complete-factor-and-quotient-explain-why-division-works"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -129,10 +174,18 @@
         ],
         "answerKeyEvidence": "Array of 4 rows of 3 drawn",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "open-array-construction",
+          "subpartCount": 1,
+          "modelPrimitive": "student-drawn-array",
+          "modelCounts": [
+            4,
+            3,
+            12
+          ],
+          "modelOrientation": "large-open-array-workspace",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "draw-array-for-problem-five-equations"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],

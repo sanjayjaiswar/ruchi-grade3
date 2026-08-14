@@ -42,13 +42,32 @@
         ],
         "answerKeyEvidence": "Top row: 1; 2; 9; 12, 12; 15, 15; Bottom row: 18, 18; 21, 21; 24, 24; 27, 27; 30, 30",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "source-related-fact-cards",
+          "subpartCount": 10,
+          "modelPrimitive": "printed-key-fact-cards",
+          "modelCounts": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            3
+          ],
+          "modelOrientation": "two-rows-of-five-key-cards",
+          "printedEquationLineCount": 20,
+          "openWorkspaceCount": 0,
+          "responseStructure": "complete-multiplication-and-related-division-facts-in-source-order",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "A tight crop preserves only the official problem-level mathematical scaffold; response fields and solution reveal remain authored HTML."
+        "sourceLayoutNotes": "The fingerprinted crop preserves only the printed mathematical scaffold; compact authored HTML supplies response fields and solved reveal without repeating the prompt."
       }
     },
     {
@@ -60,13 +79,24 @@
         ],
         "answerKeyEvidence": "4 groups of 3 circled; skip-count written as 3, 6, 9, 12; tape diagram drawn and labeled; 12, 4; 4",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "source-object-grouping-and-tape",
+          "subpartCount": 2,
+          "modelPrimitive": "printed-twelve-tomato-bank",
+          "modelCounts": [
+            12,
+            3,
+            4
+          ],
+          "modelOrientation": "tomato-bank-over-open-tape-and-answer",
+          "printedEquationLineCount": 3,
+          "openWorkspaceCount": 1,
+          "responseStructure": "circle-four-groups-skip-count-draw-tape-complete-facts",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "A tight crop preserves only the official problem-level mathematical scaffold; response fields and solution reveal remain authored HTML."
+        "sourceLayoutNotes": "The fingerprinted crop preserves only the printed mathematical scaffold; compact authored HTML supplies response fields and solved reveal without repeating the prompt."
       }
     },
     {
@@ -78,14 +108,22 @@
         ],
         "answerKeyEvidence": "5; tape diagram drawn and labeled",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "open-tape-word-problem",
+          "subpartCount": 1,
+          "modelPrimitive": "student-drawn-tape",
+          "modelCounts": [
+            15,
+            3,
+            5
+          ],
+          "modelOrientation": "word-problem-over-open-tape-workspace",
+          "printedEquationLineCount": 1,
+          "openWorkspaceCount": 1,
+          "responseStructure": "draw-five-part-tape-and-complete-stamps-answer"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The source provides open drawing or written-response space. Blank remains unfilled; Solved reveals only answer-key-supported evidence."
+        "sourceLayoutNotes": "The source prints open learner work space. Blank remains interactive and unfilled; Solved reveals only answer-key-supported mathematical work."
       }
     },
     {
@@ -97,14 +135,22 @@
         ],
         "answerKeyEvidence": "10",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "open-word-problem-response",
+          "subpartCount": 1,
+          "modelPrimitive": "student-authored-rdw-space",
+          "modelCounts": [
+            30,
+            3,
+            10
+          ],
+          "modelOrientation": "word-problem-over-open-workspace",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "divide-thirty-into-three-vans-and-write-answer"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The source provides open drawing or written-response space. Blank remains unfilled; Solved reveals only answer-key-supported evidence."
+        "sourceLayoutNotes": "The source prints open learner work space. Blank remains interactive and unfilled; Solved reveals only answer-key-supported mathematical work."
       }
     },
     {
@@ -116,14 +162,22 @@
         ],
         "answerKeyEvidence": "8",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "open-word-problem-response",
+          "subpartCount": 1,
+          "modelPrimitive": "student-authored-rdw-space",
+          "modelCounts": [
+            24,
+            3,
+            8
+          ],
+          "modelOrientation": "word-problem-over-open-workspace",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "group-twenty-four-by-three-and-write-answer"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The source provides open drawing or written-response space. Blank remains unfilled; Solved reveals only answer-key-supported evidence."
+        "sourceLayoutNotes": "The source prints open learner work space. Blank remains interactive and unfilled; Solved reveals only answer-key-supported mathematical work."
       }
     }
   ]

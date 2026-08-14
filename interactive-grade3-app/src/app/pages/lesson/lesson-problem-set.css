@@ -7964,3 +7964,196 @@ summary.source-pages-heading {
 .problem-centered-lesson-animation .lesson-animation-vertical-line .is-target b {
   font-size: var(--learning-label-size) !important;
 }
+
+/* Module 1 Lessons 1–21 use a compact workbook hierarchy. The model and
+   response fields are primary; repeated activity badges and display-sized
+   prompt text compete with the work students need to do. */
+:is(
+  .problem-centered-workspace[data-module="m1"][data-lesson="1"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="2"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="3"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="4"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="5"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="6"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="7"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="8"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="9"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="10"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="11"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="12"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="13"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="14"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="15"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="16"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="17"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="18"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="19"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="20"],
+  .problem-centered-workspace[data-module="m1"][data-lesson="21"]
+) {
+  --learning-label-size: clamp(0.78rem, 0.75rem + 0.08cqi, 0.88rem);
+  --learning-body-size: clamp(0.9rem, 0.86rem + 0.1cqi, 1rem);
+  --learning-prompt-size: clamp(0.92rem, 0.88rem + 0.12cqi, 1.04rem);
+  --learning-heading-size: clamp(1.05rem, 0.98rem + 0.18cqi, 1.22rem);
+  --learning-math-size: clamp(1rem, 0.94rem + 0.18cqi, 1.2rem);
+  --learning-space: clamp(0.6rem, 0.52rem + 0.18cqi, 0.82rem);
+}
+
+:is(
+  [data-module="m1"][data-lesson="1"],
+  [data-module="m1"][data-lesson="2"],
+  [data-module="m1"][data-lesson="3"],
+  [data-module="m1"][data-lesson="4"],
+  [data-module="m1"][data-lesson="5"],
+  [data-module="m1"][data-lesson="6"],
+  [data-module="m1"][data-lesson="7"],
+  [data-module="m1"][data-lesson="8"],
+  [data-module="m1"][data-lesson="9"],
+  [data-module="m1"][data-lesson="10"],
+  [data-module="m1"][data-lesson="11"],
+  [data-module="m1"][data-lesson="12"],
+  [data-module="m1"][data-lesson="13"],
+  [data-module="m1"][data-lesson="14"],
+  [data-module="m1"][data-lesson="15"],
+  [data-module="m1"][data-lesson="16"],
+  [data-module="m1"][data-lesson="17"],
+  [data-module="m1"][data-lesson="18"],
+  [data-module="m1"][data-lesson="19"],
+  [data-module="m1"][data-lesson="20"],
+  [data-module="m1"][data-lesson="21"]
+) .problem-number {
+  display: none;
+}
+
+:is(
+  [data-module="m1"][data-lesson="1"],
+  [data-module="m1"][data-lesson="2"],
+  [data-module="m1"][data-lesson="3"],
+  [data-module="m1"][data-lesson="4"],
+  [data-module="m1"][data-lesson="5"],
+  [data-module="m1"][data-lesson="6"],
+  [data-module="m1"][data-lesson="7"],
+  [data-module="m1"][data-lesson="8"],
+  [data-module="m1"][data-lesson="9"],
+  [data-module="m1"][data-lesson="10"],
+  [data-module="m1"][data-lesson="11"],
+  [data-module="m1"][data-lesson="12"],
+  [data-module="m1"][data-lesson="13"],
+  [data-module="m1"][data-lesson="14"],
+  [data-module="m1"][data-lesson="15"],
+  [data-module="m1"][data-lesson="16"],
+  [data-module="m1"][data-lesson="17"],
+  [data-module="m1"][data-lesson="18"],
+  [data-module="m1"][data-lesson="19"],
+  [data-module="m1"][data-lesson="20"],
+  [data-module="m1"][data-lesson="21"]
+) .problem-solution-head {
+  gap: 0;
+}
+
+:is(
+  [data-module="m1"][data-lesson="1"],
+  [data-module="m1"][data-lesson="2"],
+  [data-module="m1"][data-lesson="3"],
+  [data-module="m1"][data-lesson="4"],
+  [data-module="m1"][data-lesson="5"],
+  [data-module="m1"][data-lesson="6"],
+  [data-module="m1"][data-lesson="7"],
+  [data-module="m1"][data-lesson="8"],
+  [data-module="m1"][data-lesson="9"],
+  [data-module="m1"][data-lesson="10"],
+  [data-module="m1"][data-lesson="11"],
+  [data-module="m1"][data-lesson="12"],
+  [data-module="m1"][data-lesson="13"],
+  [data-module="m1"][data-lesson="14"],
+  [data-module="m1"][data-lesson="15"],
+  [data-module="m1"][data-lesson="16"],
+  [data-module="m1"][data-lesson="17"],
+  [data-module="m1"][data-lesson="18"],
+  [data-module="m1"][data-lesson="19"],
+  [data-module="m1"][data-lesson="20"],
+  [data-module="m1"][data-lesson="21"]
+) .problem-solution-card {
+  gap: 0.65rem;
+  padding: clamp(0.7rem, 0.62rem + 0.18cqi, 0.9rem);
+}
+
+/* Module 3 uses the same compact workbook hierarchy established for Module 1.
+   Source models and learner responses stay primary; explanatory labels remain
+   readable without competing with the lesson title or the mathematics. */
+.problem-centered-workspace[data-module="m3"] {
+  --learning-label-size: clamp(0.78rem, 0.75rem + 0.08cqi, 0.88rem);
+  --learning-body-size: clamp(0.9rem, 0.86rem + 0.1cqi, 1rem);
+  --learning-prompt-size: clamp(0.92rem, 0.88rem + 0.12cqi, 1.04rem);
+  --learning-heading-size: clamp(1.05rem, 0.98rem + 0.18cqi, 1.22rem);
+  --learning-math-size: clamp(1rem, 0.94rem + 0.18cqi, 1.2rem);
+  --learning-space: clamp(0.6rem, 0.52rem + 0.18cqi, 0.82rem);
+}
+
+[data-module="m3"] .problem-number {
+  display: none;
+}
+
+[data-module="m3"] .problem-solution-head {
+  gap: 0;
+}
+
+[data-module="m3"] .problem-solution-head h3,
+[data-module="m3"] .problem-centered-source-concepts h3 {
+  font-size: var(--learning-heading-size);
+  line-height: 1.25;
+}
+
+[data-module="m3"] .problem-solution-card {
+  gap: 0.65rem;
+  padding: clamp(0.7rem, 0.62rem + 0.18cqi, 0.9rem);
+}
+
+[data-module="m3"] .problem-centered-concept h2 {
+  font-size: clamp(1.35rem, 1.22rem + 0.3cqi, 1.55rem);
+  line-height: 1.2;
+}
+
+[data-module="m3"] .problem-centered-lesson-animation .lesson-animation-copy h3,
+[data-module="m3"] .problem-centered-summary h3 {
+  font-size: clamp(1.16rem, 1.08rem + 0.2cqi, 1.35rem);
+  line-height: 1.25;
+}
+
+/* Module 2 follows the compact workbook hierarchy established for Modules 1
+   and 3. Its measurement models remain primary; repeated source labels and
+   explanatory headings should not grow to display type on a wide desktop. */
+.problem-centered-workspace[data-module="m2"] {
+  --learning-label-size: clamp(0.78rem, 0.75rem + 0.08cqi, 0.88rem);
+  --learning-body-size: clamp(0.9rem, 0.86rem + 0.1cqi, 1rem);
+  --learning-prompt-size: clamp(0.92rem, 0.88rem + 0.12cqi, 1.04rem);
+  --learning-heading-size: clamp(1.05rem, 0.98rem + 0.18cqi, 1.22rem);
+  --learning-math-size: clamp(1rem, 0.94rem + 0.18cqi, 1.2rem);
+  --learning-space: clamp(0.6rem, 0.52rem + 0.18cqi, 0.82rem);
+}
+
+[data-module="m2"] .problem-solution-head {
+  gap: 0;
+}
+
+[data-module="m2"] .problem-solution-head h3,
+[data-module="m2"] .problem-centered-source-concepts h3 {
+  font-size: var(--learning-heading-size);
+  line-height: 1.25;
+}
+
+[data-module="m2"] .problem-solution-card {
+  gap: 0.65rem;
+  padding: clamp(0.7rem, 0.62rem + 0.18cqi, 0.9rem);
+}
+
+[data-module="m2"] .problem-centered-concept h2 {
+  font-size: clamp(1.35rem, 1.22rem + 0.3cqi, 1.55rem);
+  line-height: 1.2;
+}
+
+[data-module="m2"] .problem-centered-lesson-animation .lesson-animation-copy h3,
+[data-module="m2"] .problem-centered-summary h3 {
+  font-size: clamp(1.16rem, 1.08rem + 0.2cqi, 1.35rem);
+  line-height: 1.25;
+}

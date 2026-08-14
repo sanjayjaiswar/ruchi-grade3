@@ -466,6 +466,10 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
     this.interactiveInlineValues.set(this.inlineKey(owner, field, row, column, answerIndex), value);
   }
 
+  inlineValue(owner: object, field: string, row: number, column: number, answerIndex: number): string {
+    return this.interactiveInlineValues.get(this.inlineKey(owner, field, row, column, answerIndex)) ?? '';
+  }
+
   inlineState(
     owner: object,
     field: string,
@@ -672,8 +676,20 @@ export class ProblemVisualWorkspaceComponent implements AfterViewChecked, OnChan
     return `${this.tapeBraceWidthPercent(brace, partCount)}%`;
   }
 
-  tapeBraceStyle(brace: NonNullable<ProblemVisualTapeSection['braces']>[number], partCount: number): string {
-    return `left: ${this.tapeBraceOffsetStyle(brace, partCount)}; width: ${this.tapeBraceWidthStyle(brace, partCount)};`;
+  tapeBraceStyle(brace: NonNullable<ProblemVisualTapeSection['braces']>[number], tape: ProblemVisualTapeSection): string {
+    const weights = tape.parts.map((part) => Math.max(0.25, part.weight ?? 1));
+    const totalWeight = weights.reduce((sum, weight) => sum + weight, 0) || 1;
+    const start = Math.max(0, Math.min(weights.length, Math.round(brace.startPart)));
+    const end = Math.max(start + 1, Math.min(weights.length, start + Math.max(1, Math.round(brace.partCount))));
+    const offset = weights.slice(0, start).reduce((sum, weight) => sum + weight, 0) / totalWeight * 100;
+    const width = weights.slice(start, end).reduce((sum, weight) => sum + weight, 0) / totalWeight * 100;
+    return `left: ${offset}%; width: ${width}%;`;
+  }
+
+  tapeGridTemplate(tape: ProblemVisualTapeSection): string {
+    return tape.parts
+      .map((part) => `minmax(42px, ${Math.max(0.25, part.weight ?? 1)}fr)`)
+      .join(' ');
   }
 
   tapeTopPartGridColumn(topPart: NonNullable<ProblemVisualTapeSection['topParts']>[number]): string {

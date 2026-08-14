@@ -6,7 +6,7 @@ This is the lightweight index of work that is currently active, paused, or block
 
 ## Current Work
 
-- [Grade 3 Multi-Subject Learning Portal](work-items/grade3-multi-subject-learning-portal.md) — The Reading official-source audit is complete. Adoption and the 10-unit/30-week/70-selection year map are verified, but the repository lacks the edition-matched Grade 3 Teacher Resource System, student texts, and assessment package needed for Math-level lesson fidelity. Daily lessons and official assessment practice remain fail-closed until those materials are admitted, fingerprinted, page-mapped, and visually reviewed.
+- [Grade 3 Multi-Subject Learning Portal](work-items/grade3-multi-subject-learning-portal.md) — The Reading source audit verifies the 10-unit/30-week/70-selection year and 100 publisher text-evidence questions. Both governing publisher pages now appear before each Unit learning path; every question launch links to the exact publisher page; and every practice prompt shows its rendered source page beside the separately labeled interactive teaching layer. The learner path is keyboard-free: no digital worksheet inputs or typed answer fields are allowed. All 100 question routes, all 10 Unit routes, representative interaction states, and deep Math Blank/Solved navigation passed live browser review. Complete daily lessons and official assessment practice remain fail-closed until the edition-matched Teacher Resource System, student passages, and assessment/scoring materials are admitted, fingerprinted, page-mapped, and visually reviewed.
 
 ## Tracking Rules
 

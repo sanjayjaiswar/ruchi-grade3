@@ -4,21 +4,62 @@ export const M1_LESSON21_RUNTIME: LessonRuntimeConfig = {
   conceptTerms: [],
   lessonAnimation: {
     kind: "tape-diagram",
-    title: "Lesson 21 animation: choose operations for a two-step story",
-    context: "Show a whole, remove a known part, then divide the remaining amount into equal groups.",
-    equation: "(24 - 6) ÷ 3 = 6",
-    teacherPrompt: "Why do these operations match the order of the story?",
-    groupCount: 3,
-    groupSize: 6,
-    rowCount: 3,
-    columnCount: 6,
-    tapePartCount: 3,
-    tapePartLabel: "6",
-    tapeWholeLabel: "18 after step 1",
+    title: "Model, solve, check, and explain Jason’s earnings",
+    context: "Jason earns $6 in each of the first 4 weeks and $4 in the fifth week.",
+    equation: "4 × 6 = 24; 24 + 4 = 28",
+    teacherPrompt: "How does the tape justify both operations and the $28 answer?",
+    conceptVisual: {
+      title: "Jason’s five-week tape",
+      sourceNote: "Teacher Edition Lesson 21, Problem Set, Problem 1.",
+      sections: [
+        {
+          kind: "tape",
+          label: "Jason",
+          totalLabel: "",
+          hideTotalLabel: true,
+          topParts: [
+            { label: "$6", startPart: 0, partCount: 1 },
+            { label: "$4", startPart: 4, partCount: 1 }
+          ],
+          parts: [
+            { label: "6" },
+            { label: "6" },
+            { label: "6" },
+            { label: "6" },
+            { label: "4" }
+          ],
+          braces: [
+            { label: "Jason earns", boxLabel: "$28", startPart: 0, partCount: 5 }
+          ]
+        },
+        {
+          kind: "equations",
+          label: "Two steps",
+          lines: ["4 × 6 = 24", "24 + 4 = 28"]
+        }
+      ]
+    },
+    conceptSteps: [
+      {
+        label: "Model",
+        action: "Mark the 4 equal $6 weeks and the final $4 week.",
+        result: "The tape preserves every known quantity."
+      },
+      {
+        label: "Solve",
+        action: "Find $24 for the first 4 weeks, then add $4.",
+        result: "Jason earns $28 in 5 weeks."
+      },
+      {
+        label: "Check and explain",
+        action: "Use the tape to verify the total and justify both operations.",
+        result: "$28 is reasonable because it is $2 less than 5 full weeks."
+      }
+    ],
     focus: [
-      "Operation choice",
-      "Two equations",
-      "Reasonableness"
+      "Model",
+      "Two-step solution",
+      "Reasonableness check"
     ]
   },
   teacherEditionSteps: [

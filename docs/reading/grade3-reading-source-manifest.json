@@ -15,6 +15,7 @@
     "unitScopeReady": true,
     "dailyLessonAuthoringReady": false,
     "boundedOfficialLessonIds": ["u1-w1-l1"],
+    "officialTextEvidencePracticeReady": true,
     "officialAssessmentAuthoringReady": false,
     "currentBakerPacingVerified": false
   },
@@ -62,6 +63,16 @@
       "sha256": "191111faa89f9e32fc429d4a5ea5ab630c5b509764d45a6498f788f491ca2a84",
       "controls": ["u1-w1-pacing-sample", "u1-w1-l1-title", "u1-w1-l1-student-source-and-pages", "u1-w1-l1-reading-objective", "u1-w1-l1-vocabulary", "u1-w1-l1-teacher-sequence", "u1-w1-l1-after-reading-question"],
       "doesNotControl": ["full-student-passage", "u1-w1-lessons-after-l1", "units-2-through-10-daily-lessons", "official-assessment-answers", "current-classroom-pacing"]
+    },
+    {
+      "id": "benchmark-grade3-text-evidence-questions",
+      "authority": "publisher-authored-public-school-district-hosted-copy",
+      "title": "Grade 3 Text Evidence Questions for Texts for Close Reading",
+      "url": "https://ruskin.berryessa.k12.ca.us/subsites/Lan-Pham/documents/3rd%20reading%20closely.pdf",
+      "pageCount": 10,
+      "sha256": "d33c76c4f751cc647c032b85278f6ac160f76ed06687cb097971ffe7c405b4d6",
+      "controls": ["unit-question-order", "selection-to-question-alignment", "official-question-text"],
+      "doesNotControl": ["student-passages", "answer-keys", "scores", "daily-lesson-sequence", "current-classroom-pacing"]
     }
   ],
   "requiredLocalComponents": [
@@ -131,5 +142,5 @@
       "requiredFor": "current-classroom-dates-and-order"
     }
   ],
-  "releaseRule": "No daily Reading lesson, official-looking assessment, answer, or learner placement may be released until every source required by that claim is admitted, fingerprinted, page-mapped, and visually reviewed. A bounded public sample may release only the exact lesson fields it controls; it does not unlock the remaining year."
+  "releaseRule": "No daily Reading lesson, official-looking assessment, answer, or learner placement may be released until every source required by that claim is admitted, fingerprinted, page-mapped, and visually reviewed. A bounded public source may release only the exact fields it controls. The verified text-evidence source permits the 100 official questions to be used with the school texts, but does not supply passages, answers, scores, or a daily lesson sequence."
 }

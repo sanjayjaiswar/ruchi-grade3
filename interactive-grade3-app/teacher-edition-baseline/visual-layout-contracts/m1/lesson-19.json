@@ -35,11 +35,34 @@
         ],
         "answerKeyEvidence": "12; 10; 2; 2; 5; 1; 1, 5; 7; 5; 8, 2; 8, 5, 2, 7; 8; 20, 5; 12, 3; 20, 12, 5, 3, 8",
         "layout": {
-          "family": "composite-mathematical-model"
+          "family": "source-distributive-division-array-quadrants",
+          "subpartCount": 4,
+          "modelPrimitive": "printed-arrays-split-into-known-and-remainder-dividend-parts",
+          "modelCounts": [
+            36,
+            30,
+            6,
+            3,
+            25,
+            20,
+            5,
+            28,
+            20,
+            8,
+            4,
+            32,
+            20,
+            12
+          ],
+          "modelOrientation": "two-by-two-quadrants-with-vertical-and-horizontal-dividers",
+          "printedEquationLineCount": 24,
+          "openWorkspaceCount": 0,
+          "dividerCount": 2,
+          "responseStructure": "label-split-arrays-complete-part-quotients-and-distributive-equations"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+        "sourceLayoutNotes": "The source-observed primitive, count, orientation, grouping, dividers, response order, and open-workspace requirements control Blank and Solved rendering."
       }
     },
     {
@@ -51,11 +74,30 @@
         ],
         "answerKeyEvidence": "First bucket matched to fourth ball; second bucket matched to first ball; third bucket matched to second ball; fourth bucket matched to third ball",
         "layout": {
-          "family": "composite-mathematical-model"
+          "family": "source-bucket-ball-match",
+          "subpartCount": 4,
+          "modelPrimitive": "printed-division-buckets-and-decomposed-expression-beach-balls",
+          "modelCounts": [
+            24,
+            2,
+            36,
+            3,
+            39,
+            26,
+            30,
+            6,
+            9,
+            20,
+            4
+          ],
+          "modelOrientation": "four-buckets-above-four-beach-balls",
+          "printedEquationLineCount": 8,
+          "openWorkspaceCount": 0,
+          "responseStructure": "match-each-division-expression-to-equal-decomposed-expression"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+        "sourceLayoutNotes": "The source-observed primitive, count, orientation, grouping, dividers, response order, and open-workspace requirements control Blank and Solved rendering."
       }
     },
     {
@@ -67,11 +109,23 @@
         ],
         "answerKeyEvidence": "24 ÷ 2 broken into two smaller facts: 12 ÷ 2 and 12 ÷ 2",
         "layout": {
-          "family": "composite-mathematical-model"
+          "family": "source-split-array-explanation",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-twenty-four-by-two-array-split-into-twelve-and-twelve",
+          "modelCounts": [
+            24,
+            2,
+            12,
+            6
+          ],
+          "modelOrientation": "vertical-two-column-array-with-midline-over-open-explanation",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "explain-sum-of-two-twelve-divided-by-two-facts"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+        "sourceLayoutNotes": "The source-observed primitive, count, orientation, grouping, dividers, response order, and open-workspace requirements control Blank and Solved rendering."
       }
     }
   ]

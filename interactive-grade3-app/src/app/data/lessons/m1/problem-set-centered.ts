@@ -607,59 +607,67 @@ function twoStepTapeSection(
 }
 
 function lesson21Visual(problemNumber: 1 | 2 | 3 | 4, solved: boolean): ProblemVisualSpec {
-  const sourceNote = solved
-    ? 'Solved view follows the Lesson 21 Teacher Edition two-step answer and keeps the worksheet model visible.'
-    : 'Blank view keeps the Lesson 21 worksheet model and marks the unknowns before solving.';
-
-  if (!solved && problemNumber >= 3) {
-    return {
-      title: `Problem ${problemNumber}: open Teacher Edition RDW workspace`,
-      sourceNote: 'The official Problem Set prints the story and open response space only; no model or equation is prefilled.',
-      sections: [
-        {
-          kind: 'note',
-          label: 'Student workspace',
-          text: 'Read the official story, then draw and label your own tape diagram and equations.'
-        }
-      ]
-    };
-  }
-
   if (problemNumber === 1) {
+    const tape: ProblemVisualSection = {
+      kind: 'tape',
+      label: 'Jason',
+      totalLabel: '',
+      hideTotalLabel: true,
+      topParts: [
+        { label: '$6', startPart: 0, partCount: 1 },
+        { label: '$4', startPart: 4, partCount: 1 }
+      ],
+      parts: Array.from({ length: 5 }, (_, index) => ({
+        label: solved ? (index === 4 ? '4' : '6') : '\u00a0'
+      })),
+      braces: [
+        {
+          label: 'Jason earns',
+          boxLabel: solved ? '$28' : '$ ____',
+          startPart: 0,
+          partCount: 5
+        }
+      ],
+      braceAnswers: solved ? undefined : [['28']]
+    };
     return {
-      title: 'Problem 1: Jason earns for 5 weeks',
-      sourceNote,
+      title: '',
+      sourceNote: '',
       sections: [
+        tape,
         {
-          kind: 'tape',
-          label: 'Tape model',
-          totalLabel: '',
-          hideTotalLabel: true,
-          topParts: [
-            { label: '$6', startPart: 0, partCount: 1 },
-            { label: '$4', startPart: 4, partCount: 1 }
-          ],
-          parts: [
-            { label: solved ? '6' : '\u00a0', sublabel: 'week 1' },
-            { label: solved ? '6' : '\u00a0', sublabel: 'week 2' },
-            { label: solved ? '6' : '\u00a0', sublabel: 'week 3' },
-            { label: solved ? '6' : '\u00a0', sublabel: 'week 4' },
-            { label: solved ? '4' : '\u00a0', sublabel: 'week 5' }
-          ],
-          braces: [
-            { label: 'money', boxLabel: solved ? '? $28' : '?', startPart: 0, partCount: 5 }
-          ],
-          caption: 'Four full weeks at $6, then the fifth week is $4.'
-        },
-        {
-          kind: 'equations',
-          label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
-          lines: solved ? ['4 x 6 = 24', '24 + 4 = 28'] : ['4 x 6 = ____', '____ + 4 = ____']
-        },
-        {
-          kind: 'note',
-          label: solved ? 'Answer sentence' : 'Workspace direction',
-          text: solved ? 'Jason earns $28.' : 'Use four $6 weeks and one $4 week to find the 5-week total.'
+          kind: 'source-response-workspace',
+          label: '',
+          wide: true,
+          parts: solved
+            ? [
+                {
+                  prompt: 'Write and solve an equation.',
+                  lines: ['4 × 6 = 24', '24 + 4 = 28'],
+                  printedLineCount: 0,
+                  response: 'Four full weeks earn $24; adding the fifth week gives $28.'
+                },
+                {
+                  prompt: 'Answer.',
+                  lines: ['Jason earns $28.'],
+                  printedLineCount: 0
+                }
+              ]
+            : [
+                {
+                  prompt: 'Write and solve an equation.',
+                  lines: [],
+                  printedLineCount: 0,
+                  responsePlaceholder: 'Write the equation or equations that match the tape.'
+                },
+                {
+                  prompt: 'Complete the answer.',
+                  lines: ['Jason earns $ ____.'],
+                  lineAnswers: [['28']],
+                  printedLineCount: 0,
+                  interactiveLines: true
+                }
+              ]
         }
       ]
     };
@@ -667,54 +675,89 @@ function lesson21Visual(problemNumber: 1 | 2 | 3 | 4, solved: boolean): ProblemV
 
   if (problemNumber === 2) {
     return {
-      title: 'Problem 2: markers and students',
-      sourceNote,
+      title: '',
+      sourceNote: '',
       sections: [
         {
           kind: 'tape',
-          label: 'Markers',
+          label: solved ? '4 packs' : '____',
           totalLabel: '',
           hideTotalLabel: true,
           parts: Array.from({ length: 4 }, (_, index) => ({
             label: solved || index === 0 ? '7' : '\u00a0'
           })),
           braces: [
-            { label: 'markers', boxLabel: solved ? '? 28' : '?', startPart: 0, partCount: 4 }
+            { label: 'markers', boxLabel: solved ? '28' : '____', startPart: 0, partCount: 4 }
           ],
-          caption: 'Four packs of 7 markers make the total markers.'
+          braceAnswers: solved ? undefined : [['28']]
         },
         {
           kind: 'tape',
-          label: 'Students',
-          totalLabel: solved ? '28 markers' : '? markers',
+          label: solved ? 'markers handed out and left' : '____',
+          totalLabel: '',
+          hideTotalLabel: true,
           parts: [
-            { label: solved ? '22' : '?', sublabel: 'students', emphasize: true },
-            { label: '6', sublabel: 'markers left', muted: true }
+            { label: solved ? '22' : '____', sublabel: 'students', emphasize: true, weight: 3 },
+            { label: '6', sublabel: 'markers left', muted: true, weight: 1 }
           ],
+          partAnswers: solved ? undefined : [['22'], []],
           braces: [
-            { label: 'students', boxLabel: solved ? '? 22' : '?', startPart: 0, partCount: 1 },
+            { label: 'students', boxLabel: solved ? '22' : '____', startPart: 0, partCount: 1 },
             { label: '6 markers', startPart: 1, partCount: 1 }
           ],
-          caption: 'The 6 markers left are not handed out. The handed-out markers match the number of students.'
+          braceAnswers: solved ? undefined : [['22'], []]
         },
         {
-          kind: 'equations',
-          label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
-          lines: solved ? ['4 x 7 = 28', '28 - 6 = 22'] : ['4 x 7 = ____', '____ - 6 = ____']
-        },
-        {
-          kind: 'note',
-          label: solved ? 'Answer sentence' : 'Workspace direction',
-          text: solved ? 'There are 22 students in Miss Lianto’s class.' : 'Find the total markers first. Then subtract the 6 markers left.'
+          kind: 'source-response-workspace',
+          label: '',
+          wide: true,
+          parts: [
+            solved
+              ? {
+                  prompt: 'Solved work.',
+                  lines: ['4 × 7 = 28', '28 − 6 = 22', 'There are 22 students in Miss Lianto’s class.'],
+                  printedLineCount: 0
+                }
+              : {
+                  prompt: 'Complete the answer.',
+                  lines: ['There are ____ students in Miss Lianto’s class.'],
+                  lineAnswers: [['22']],
+                  printedLineCount: 0,
+                  interactiveLines: true
+                }
+          ]
         }
       ]
     };
   }
 
   if (problemNumber === 3) {
+    if (!solved) {
+      return {
+        title: '',
+        sourceNote: '',
+        sections: [
+          {
+            kind: 'source-response-workspace',
+            label: '',
+            wide: true,
+            parts: [
+              {
+                prompt: 'Draw and label a tape diagram to find how many fruit snacks Orlando has left.',
+                lines: [],
+                printedLineCount: 0,
+                openWorkspace: true,
+                sketchWorkspace: true,
+                responsePlaceholder: 'Write your equations and answer.'
+              }
+            ]
+          }
+        ]
+      };
+    }
     return {
-      title: 'Problem 3: fruit snacks left',
-      sourceNote,
+      title: '',
+      sourceNote: '',
       sections: [
         {
           kind: 'tape',
@@ -745,22 +788,59 @@ function lesson21Visual(problemNumber: 1 | 2 | 3 | 4, solved: boolean): ProblemV
           caption: 'Remove the grape-flavored part from the 18 snacks.'
         },
         {
-          kind: 'equations',
-          label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
-          lines: solved ? ['18 ÷ 3 = 6', '18 - 6 = 12'] : ['18 ÷ 3 = ____', '18 - ____ = ____']
-        },
+          kind: 'source-response-workspace',
+          label: '',
+          wide: true,
+          parts: [
+            {
+              prompt: 'Solved work.',
+              lines: ['18 ÷ 3 = 6', '18 − 6 = 12', 'Orlando has 12 fruit snacks left.'],
+              printedLineCount: 0,
+              response: 'The tape has three equal groups of 6. Removing the grape group leaves 12 snacks.'
+            }
+          ]
+        }
+      ]
+    };
+  }
+
+  if (!solved) {
+    return {
+      title: '',
+      sourceNote: '',
+      sections: [
         {
-          kind: 'note',
-          label: solved ? 'Answer sentence' : 'Workspace direction',
-          text: solved ? 'Each flavor has 6 snacks. After eating the 6 grape snacks, Orlando has 12 snacks left.' : 'Find one flavor first. Then subtract the grape snacks Orlando eats.'
+          kind: 'source-response-workspace',
+          label: '',
+          wide: true,
+          parts: [
+            {
+              lead: 'a.',
+              prompt: 'How many 3-meter pieces of ribbon does Eudora have?',
+              lines: [],
+              printedLineCount: 0,
+              openWorkspace: true,
+              sketchWorkspace: true,
+              responsePlaceholder: 'Draw, label, and solve part a.'
+            },
+            {
+              lead: 'b.',
+              prompt: 'How many more pieces does she need to have 12 pieces?',
+              lines: [],
+              printedLineCount: 0,
+              openWorkspace: true,
+              sketchWorkspace: true,
+              responsePlaceholder: 'Use your answer from part a to solve part b.'
+            }
+          ]
         }
       ]
     };
   }
 
   return {
-    title: 'Problem 4: ribbon pieces needed',
-    sourceNote,
+    title: '',
+    sourceNote: '',
     sections: [
       {
         kind: 'tape',
@@ -787,32 +867,25 @@ function lesson21Visual(problemNumber: 1 | 2 | 3 | 4, solved: boolean): ProblemV
         caption: 'Compare the 7 pieces she has to the 12 pieces she needs.'
       },
       {
-        kind: 'solution-parts',
-        label: 'Teacher Edition a/b work',
+        kind: 'source-response-workspace',
+        label: '',
+        wide: true,
         parts: [
           {
-            label: 'a',
+            lead: 'a.',
             prompt: 'How many pieces of ribbon does Eudora have?',
-            equation: solved ? '21 ÷ 3 = 7' : '21 ÷ 3 = ____',
-            answer: solved ? 'Eudora has 7 pieces of ribbon.' : 'Eudora has ____ pieces of ribbon.'
+            lines: ['21 ÷ 3 = 7', 'Eudora has 7 pieces of ribbon.'],
+            printedLineCount: 0,
+            response: 'Twenty-one meters divided into 3-meter lengths makes 7 pieces.'
           },
           {
-            label: 'b',
+            lead: 'b.',
             prompt: 'How many more pieces does she need to reach 12?',
-            equation: solved ? '12 - 7 = 5' : '12 - ____ = ____',
-            answer: solved ? 'She needs 5 more pieces of the shorter ribbon.' : 'She needs ____ more pieces of the shorter ribbon.'
+            lines: ['12 − 7 = 5', 'She needs 5 more pieces of the shorter ribbon.'],
+            printedLineCount: 0,
+            response: 'Twelve pieces minus the 7 she has means she needs 5 more pieces.'
           }
         ]
-      },
-      {
-        kind: 'equations',
-        label: solved ? 'Teacher Edition solved equations' : 'Equation blanks',
-        lines: solved ? ['21 ÷ 3 = 7', '12 - 7 = 5'] : ['21 ÷ 3 = ____', '12 - ____ = ____']
-      },
-      {
-        kind: 'note',
-        label: solved ? 'Answer sentence' : 'Workspace direction',
-        text: solved ? 'She has 7 pieces and needs 5 more pieces.' : 'Find the number of 3-meter pieces first. Then compare that count to 12 pieces.'
       }
     ]
   };
@@ -1309,20 +1382,21 @@ function lesson1ProblemVisual(problemNumber: number, solved: boolean): ProblemVi
     alt,
     imageWidth: 816,
     imageHeight: 1056,
-    crop
+    crop,
+    displayWidth: Math.min(680, Math.max(300, Math.round(crop.width * 1.35)))
   });
   const answerNote = (text: string): ProblemVisualSection => ({
     kind: 'note',
-    label: solved ? 'Teacher Edition reasoning' : 'Student workspace',
+    label: solved ? 'Check' : '',
     text
   });
 
   if (problemNumber === 1) {
     const cards = [
       {
-        label: 'a · 3 hands, with 5 fingers on each hand',
+        label: 'a.',
         sections: [
-          sourceCrop('Official picture: 3 hands', '/source-pages/m1-teacher/page-029.png',
+          sourceCrop('', '/source-pages/m1-teacher/page-029.png',
             { x: 70, y: 215, width: 260, height: 125 },
             'Three official hand drawings, each representing five fingers'),
           {
@@ -1334,9 +1408,9 @@ function lesson1ProblemVisual(problemNumber: number, solved: boolean): ProblemVi
         ]
       },
       {
-        label: 'b · 5 bunches, with 3 bananas in each bunch',
+        label: 'b.',
         sections: [
-          sourceCrop('Official picture: 5 banana bunches', '/source-pages/m1-teacher/page-029.png',
+          sourceCrop('', '/source-pages/m1-teacher/page-029.png',
             { x: 425, y: 255, width: 290, height: 75 },
             'Five official banana-bunch drawings, each representing three bananas'),
           {
@@ -1348,9 +1422,9 @@ function lesson1ProblemVisual(problemNumber: number, solved: boolean): ProblemVi
         ]
       },
       {
-        label: 'c · 4 cartons, with 6 eggs in each carton',
+        label: 'c.',
         sections: [
-          sourceCrop('Official picture: 4 egg cartons', '/source-pages/m1-teacher/page-029.png',
+          sourceCrop('', '/source-pages/m1-teacher/page-029.png',
             { x: 220, y: 480, width: 400, height: 125 },
             'Four official egg-carton photographs, each containing six eggs'),
           {
@@ -1362,9 +1436,9 @@ function lesson1ProblemVisual(problemNumber: number, solved: boolean): ProblemVi
         ]
       },
       {
-        label: 'd · 6 groups, with 4 lemons in each group',
+        label: 'd.',
         sections: [
-          sourceCrop('Official picture: 6 groups of 4 lemons', '/source-pages/m1-teacher/page-029.png',
+          sourceCrop('', '/source-pages/m1-teacher/page-029.png',
             { x: 75, y: 720, width: 655, height: 90 },
             'Six official groups, each containing four lemons'),
           {
@@ -1377,13 +1451,13 @@ function lesson1ProblemVisual(problemNumber: number, solved: boolean): ProblemVi
       }
     ];
     return {
-      title: 'Problem 1: four printed equal-group models',
-      sourceNote: 'Authored from the four official Lesson 1 picture groups and their printed equation blanks.',
+      title: 'Fill in the blanks',
+      sourceNote: '',
       sections: [
-        { kind: 'card-grid', label: 'Read each printed group model', cards },
-        answerNote(solved
-          ? 'For each part, the repeated addition, unit form, and multiplication sentence name the same total.'
-          : 'Count the pictured groups and the amount represented by one pictured group; keep every printed blank open.')
+        { kind: 'card-grid', label: '', cards },
+        ...(solved
+          ? [answerNote('The repeated addition, unit form, and multiplication sentence name the same total.')]
+          : [])
       ]
     };
   }
@@ -1393,12 +1467,22 @@ function lesson1ProblemVisual(problemNumber: number, solved: boolean): ProblemVi
       title: 'Problem 2: compare the two printed apple groups',
       sourceNote: 'The source shows one oval containing 3 apples and a second oval containing 2 apples.',
       sections: [
-        sourceCrop('Official picture: two unequal apple groups', '/source-pages/m1-teacher/page-030.png',
+        sourceCrop('', '/source-pages/m1-teacher/page-030.png',
           { x: 110, y: 165, width: 435, height: 105 },
           'The official model: one oval with three apples and one oval with two apples'),
-        answerNote(solved
-          ? 'No. The picture has 2 groups, but the groups are not equal: one has 3 apples and the other has 2.'
-          : 'Does this model show 2 equal groups of 3? Explain in the open response space.')
+        {
+          kind: 'source-response-workspace',
+          label: solved ? 'Completed explanation' : 'Explain from the picture',
+          parts: [{
+            prompt: 'Does the picture show 2 × 3? Explain why or why not.',
+            lines: [],
+            printedLineCount: 0,
+            responsePlaceholder: solved ? undefined : 'Use the number of groups and the number of apples in each group.',
+            response: solved
+              ? 'No. There are 2 groups, but they are not equal: one group has 3 apples and the other has 2.'
+              : undefined
+          }]
+        }
       ]
     };
   }
@@ -1421,7 +1505,16 @@ function lesson1ProblemVisual(problemNumber: number, solved: boolean): ProblemVi
             answerNote('The drawing has 2 equal groups with 3 objects in each group.')
           ]
         : [
-            answerNote('Draw your own picture to show 2 × 3 = 6. No objects or groups are pre-drawn in the source.')
+            {
+              kind: 'source-response-workspace',
+              label: 'Draw the model yourself',
+              parts: [{
+                prompt: 'Draw a picture with 2 equal groups and 3 objects in each group.',
+                lines: [],
+                printedLineCount: 0,
+                sketchWorkspace: true
+              }]
+            }
           ]
     };
   }
@@ -1430,9 +1523,15 @@ function lesson1ProblemVisual(problemNumber: number, solved: boolean): ProblemVi
     title: 'Problem 4: group the printed chocolate bank',
     sourceNote: 'Blank mode retains 12 ungrouped chocolates; Solved mode reveals 3 equal groups of 4.',
     sections: [
-      sourceCrop('Official chocolate bank', '/source-pages/m1-teacher/page-030.png',
-        { x: 105, y: 640, width: 260, height: 145 },
-        'The official bank of twelve ungrouped chocolates'),
+      {
+        ...sourceCrop('', '/source-pages/m1-teacher/page-030.png',
+          { x: 105, y: 640, width: 260, height: 145 },
+          'The official bank of twelve ungrouped chocolates'),
+        sketchOverlay: !solved,
+        caption: solved
+          ? 'The source bank contains 12 chocolates.'
+          : 'Circle directly on the source bank to make 3 equal groups of 4.'
+      } as ProblemVisualSection,
       ...(solved
         ? [{
             kind: 'card-grid' as const,
@@ -1444,14 +1543,19 @@ function lesson1ProblemVisual(problemNumber: number, solved: boolean): ProblemVi
           }]
         : []),
       {
-        kind: 'equations',
-        lines: solved
-          ? ['4 + 4 + 4 = 12', '3 × 4 = 12']
-          : ['Repeated addition: ____________________', 'Multiplication: ____________________']
+        kind: 'source-response-workspace',
+        label: solved ? 'Completed sentences' : 'Write both requested sentences',
+        parts: [{
+          prompt: 'Represent the 3 equal groups of 4.',
+          lines: solved
+            ? ['Repeated addition: 4 + 4 + 4 = 12', 'Multiplication: 3 × 4 = 12']
+            : ['Repeated addition: ____', 'Multiplication: ____'],
+          lineAnswers: [['4 + 4 + 4 = 12'], ['3 × 4 = 12']],
+          printedLineCount: 2,
+          interactiveLines: !solved
+        }]
       },
-      answerNote(solved
-        ? 'Caroline, Brian, and Marta each receive 4 chocolates.'
-        : 'Circle the ungrouped chocolate bank to show 3 equal groups before writing the equations.')
+      ...(solved ? [answerNote('Caroline, Brian, and Marta each receive 4 chocolates.')] : [])
     ]
   };
 }
@@ -1462,7 +1566,7 @@ type M1ObservedCrop = {
   alt: string;
 };
 
-function observedSourceCrop(observed: M1ObservedCrop): ProblemVisualSection {
+function observedSourceCrop(observed: M1ObservedCrop, sketchOverlay = false): ProblemVisualSection {
   return {
     kind: 'source-crop',
     label: 'Official problem-level mathematical model',
@@ -1470,7 +1574,9 @@ function observedSourceCrop(observed: M1ObservedCrop): ProblemVisualSection {
     alt: observed.alt,
     imageWidth: 816,
     imageHeight: 1056,
-    crop: observed.crop
+    crop: observed.crop,
+    displayWidth: Math.min(680, Math.max(300, Math.round(observed.crop.width * 1.35))),
+    sketchOverlay
   };
 }
 
@@ -1533,7 +1639,7 @@ const M1_OBSERVED_MODEL_CROPS: Record<number, Record<number, M1ObservedCrop>> = 
     3: { page: 138, crop: { x: 175, y: 235, width: 480, height: 335 }, alt: 'Official open photo-album frame split into a two-row top and three-row bottom' }
   },
   11: {
-    1: { page: 157, crop: { x: 235, y: 450, width: 355, height: 195 }, alt: 'Official six-unit tape skeleton with the first pair of oranges supplied' }
+    1: { page: 157, crop: { x: 225, y: 410, width: 360, height: 155 }, alt: 'Official six-unit tape skeleton with the first pair of oranges supplied' }
   },
   12: {
     1: { page: 169, crop: { x: 180, y: 190, width: 500, height: 190 }, alt: 'Official bank of eight ungrouped birds' },
@@ -1543,7 +1649,7 @@ const M1_OBSERVED_MODEL_CROPS: Record<number, Record<number, M1ObservedCrop>> = 
   },
   13: {
     1: { page: 181, crop: { x: 105, y: 175, width: 655, height: 320 }, alt: 'Official ten multiplication-and-division key cards' },
-    2: { page: 181, crop: { x: 120, y: 540, width: 545, height: 185 }, alt: 'Official bank of twelve ungrouped tomatoes' }
+    2: { page: 181, crop: { x: 120, y: 565, width: 545, height: 125 }, alt: 'Official bank of twelve ungrouped tomatoes' }
   },
   14: {
     1: { page: 194, crop: { x: 95, y: 185, width: 655, height: 665 }, alt: 'Official rows of fruit, count boxes, and multiplication-fact baskets' }
@@ -1608,6 +1714,436 @@ function observedM1Lesson16Or17Visual(
     sourceNote: 'Problem-level structure observed directly on the official Module 1 Lesson 17 Problem Set.',
     sections
   };
+}
+
+function reviewedM1Lesson16To20Visual(
+  lessonNumber: number,
+  problem: ProblemSeed,
+  solved: boolean
+): ProblemVisualSpec | undefined {
+  if (lessonNumber < 16 || lessonNumber > 20) return undefined;
+  const sections: ProblemVisualSpec['sections'] = [];
+  const key = `${lessonNumber}-${problem.number}`;
+  type WorkPart = {
+    lead?: string;
+    prompt: string;
+    blankLines?: string[];
+    solvedLines?: string[];
+    answers?: string[][];
+    printedLineCount?: number;
+    sketch?: boolean;
+    placeholder?: string;
+    response?: string;
+    dividerBefore?: boolean;
+  };
+  const addWork = (parts: WorkPart[], columns: 1 | 2 | 3 | 4 = 1): void => {
+    sections.push({
+      kind: 'source-response-workspace',
+      label: '',
+      wide: true,
+      columns,
+      parts: parts.map((part) => ({
+        lead: part.lead,
+        prompt: part.prompt,
+        lines: solved ? part.solvedLines ?? [] : part.blankLines ?? [],
+        lineAnswers: part.answers,
+        printedLineCount: part.printedLineCount ?? 0,
+        interactiveLines: !solved && Boolean(part.answers?.some((answers) => answers.length)),
+        sketchWorkspace: !solved && part.sketch,
+        responsePlaceholder: !solved ? part.placeholder : undefined,
+        response: solved ? part.response : undefined,
+        dividerBefore: part.dividerBefore
+      }))
+    });
+  };
+  const addOpenAnswer = (placeholder: string, response: string, model?: ProblemVisualSection): void => {
+    if (solved && model) sections.push(model);
+    addWork([{ prompt: 'Show your work.', sketch: true, placeholder, response }]);
+  };
+
+  switch (key) {
+    case '16-1': {
+      const facts = [
+        { lead: 'a.', total: 6, extra: 1, product: 24, extraProduct: 4,
+          blank: ['6 × 4 = ____', '(5 × 4) = 20', '(1 × 4) = ____', '(6 × 4) = (5 × 4) + (1 × 4)', '= 20 + ____', '= ____'],
+          answers: [['24'], [], ['4'], [], ['4'], ['24']] },
+        { lead: 'b.', total: 7, extra: 2, product: 28, extraProduct: 8,
+          blank: ['7 × 4 = ____', '(5 × 4) = ____', '(2 × 4) = ____', '(7 × 4) = (5 × 4) + (2 × 4)', '= ____ + ____', '= 28'],
+          answers: [['28'], ['20'], ['8'], [], ['20', '8'], []] },
+        { lead: 'c.', total: 8, extra: 3, product: 32, extraProduct: 12,
+          blank: ['8 × 4 = ____', '(5 × 4) = ____', '(____ × 4) = ____', '(8 × 4) = (5 × 4) + (____ × 4)', '= ____ + ____', '= ____'],
+          answers: [['32'], ['20'], ['3', '12'], ['3'], ['20', '12'], ['32']] },
+        { lead: 'd.', total: 9, extra: 4, product: 36, extraProduct: 16,
+          blank: ['9 × 4 = ____', '(5 × 4) = ____', '(____ × 4) = ____', '(9 × 4) = (5 × 4) + (____ × 4)', '= ____ + ____', '= ____'],
+          answers: [['36'], ['20'], ['4', '16'], ['4'], ['20', '16'], ['36']] }
+      ];
+      sections.push({
+        kind: 'card-grid',
+        label: '',
+        cards: facts.map((fact) => ({
+          label: `${fact.lead} ${fact.total} × 4`,
+          sections: [
+            { kind: 'array', label: '', rows: fact.total, columns: 4, item: 'dot', glyph: '●', splitAfterRows: 5 },
+            {
+              kind: 'source-response-workspace', label: '', columns: 1,
+              parts: [{
+                prompt: 'Use 5 fours and the extra rows.',
+                lines: solved
+                  ? [`${fact.total} × 4 = ${fact.product}`, '(5 × 4) = 20', `(${fact.extra} × 4) = ${fact.extraProduct}`, `(${fact.total} × 4) = (5 × 4) + (${fact.extra} × 4)`, `= 20 + ${fact.extraProduct}`, `= ${fact.product}`]
+                  : fact.blank,
+                lineAnswers: fact.answers,
+                printedLineCount: 6,
+                interactiveLines: !solved
+              }]
+            }
+          ]
+        }))
+      });
+      break;
+    }
+    case '16-2': {
+      const clouds = ['(5 × 4) + (3 × 4)', '(5 × 4) + (1 × 4)', '(5 × 4) + (4 × 4)', '(5 × 4) + (2 × 4)'];
+      const balloons = ['9 × 4 · 36', '8 × 4 · 32', '6 × 4 · 24', '7 × 4 · 28'];
+      sections.push({
+        kind: 'expression-match', label: '', prompt: 'Match the equal expressions.',
+        topItems: clouds, bottomItems: balloons, topShape: 'cloud', bottomShape: 'balloon',
+        interactive: !solved, showMatches: solved,
+        matches: [{ topIndex: 0, bottomIndex: 1 }, { topIndex: 1, bottomIndex: 2 }, { topIndex: 2, bottomIndex: 0 }, { topIndex: 3, bottomIndex: 3 }]
+      });
+      break;
+    }
+    case '16-3':
+      sections.push({ kind: 'array', label: '', rows: 10, columns: 4, item: 'dot', glyph: '●', splitAfterRows: 5, caption: solved ? 'Two 5 × 4 arrays make one 10 × 4 array.' : 'The dashed split separates 5 fours and 5 fours.' });
+      addWork([{ prompt: 'Explain Nolan’s strategy.', placeholder: 'Explain how doubling 5 × 4 finds 10 × 4.', response: 'Nolan breaks 10 fours into 5 fours and 5 fours. Since 5 × 4 = 20, doubling 20 gives 40.' }]);
+      break;
+
+    case '17-1': {
+      const crop = observedSourceCrop(M1_OBSERVED_MODEL_CROPS[17][1]) as Extract<ProblemVisualSection, { kind: 'source-crop' }>;
+      sections.push({ ...crop, label: '', displayWidth: 300 });
+      const multiplicationBlank = ['1 × 4 = 4','2 × 4 = ____','____ × 4 = 12','____ × 4 = 16','____ × ____ = 20','____ × ____ = 24','____ × 4 = ____','____ × 4 = ____','____ × ____ = ____','____ × ____ = ____'];
+      const divisionBlank = ['4 ÷ 4 = 1','____ ÷ 4 = 2','12 ÷ 4 = ____','16 ÷ 4 = ____','20 ÷ ____ = ____','24 ÷ ____ = ____','____ ÷ 4 = ____','____ ÷ 4 = ____','____ ÷ ____ = ____','____ ÷ ____ = ____'];
+      const multiplicationAnswers = [[],['8'],['3'],['4'],['5','4'],['6','4'],['7','28'],['8','32'],['9','4','36'],['10','4','40']];
+      const divisionAnswers = [[],['8'],['3'],['4'],['4','5'],['4','6'],['28','7'],['32','8'],['36','4','9'],['40','4','10']];
+      sections.push({
+        kind: 'expression-match', label: '', orientation: 'pairs', topLabel: 'Multiplication', bottomLabel: 'Related division',
+        topItems: solved ? Array.from({ length: 10 }, (_, i) => `${i + 1} × 4 = ${(i + 1) * 4}`) : multiplicationBlank,
+        bottomItems: solved ? Array.from({ length: 10 }, (_, i) => `${(i + 1) * 4} ÷ 4 = ${i + 1}`) : divisionBlank,
+        topItemAnswers: solved ? undefined : multiplicationAnswers,
+        bottomItemAnswers: solved ? undefined : divisionAnswers
+      });
+      break;
+    }
+    case '17-2':
+      if (solved) sections.push({ kind: 'tape', label: '', totalLabel: '36 muffins', parts: Array.from({ length: 9 }, () => ({ label: '4' })), caption: '9 equal boxes' });
+      addWork([{ prompt: 'Draw and label a tape diagram to find the number of boxes.', sketch: true, placeholder: 'Write the number of boxes.', response: 'The baker packs 9 boxes.' }]);
+      break;
+    case '17-3':
+      addOpenAnswer('Write the number of glasses in each row.', 'There are 8 glasses in each row.');
+      break;
+    case '17-4':
+      addOpenAnswer('Write the cost of 2 notebooks.', 'Two notebooks cost $14.');
+      break;
+
+    case '18-1':
+    case '18-2':
+    case '18-3':
+    case '18-4': {
+      const bonds = {
+        1:{ whole:'8 tens', blankParts:['5 tens','____'], solvedParts:['5 tens','3 tens'], partAnswers:[[],['3 tens']], blank:['8 × 10 = ____','5 tens + ____ = 8 tens','(5 × 10) + (____ × 10) = 8 × 10','50 + ____ = ____','8 × 10 = ____'], solved:['8 × 10 = 80','5 tens + 3 tens = 8 tens','(5 × 10) + (3 × 10) = 8 × 10','50 + 30 = 80','8 × 10 = 80'], answers:[['80'],['3 tens'],['3'],['30','80'],['80']] },
+        2:{ whole:'7 fours', blankParts:['5 fours','____'], solvedParts:['5 fours','2 fours'], partAnswers:[[],['2 fours']], blank:['7 × 4 = ____','5 fours + ____ = 7 fours','(5 × 4) + (____ × 4) = 7 × 4','20 + ____ = ____','7 × 4 = ____'], solved:['7 × 4 = 28','5 fours + 2 fours = 7 fours','(5 × 4) + (2 × 4) = 7 × 4','20 + 8 = 28','7 × 4 = 28'], answers:[['28'],['2 fours'],['2'],['8','28'],['28']] },
+        3:{ whole:'9 × 10', blankParts:['5 × 10','____'], solvedParts:['5 × 10','4 × 10'], partAnswers:[[],['4 × 10']], blank:['9 × 10 = ____','5 tens + ____ = 9 tens','(5 × 10) + (____ × 10) = 9 × 10','____ + ____ = ____','9 × 10 = ____'], solved:['9 × 10 = 90','5 tens + 4 tens = 9 tens','(5 × 10) + (4 × 10) = 9 × 10','50 + 40 = 90','9 × 10 = 90'], answers:[['90'],['4 tens'],['4'],['50','40','90'],['90']] },
+        4:{ whole:'10 × 10', blankParts:['____','____'], solvedParts:['5 × 10','5 × 10'], partAnswers:[['5 × 10'],['5 × 10']], blank:['10 × 10 = ____','____ + ____ = 10 tens','(____ × 10) + (____ × 10) = 10 × 10','____ + ____ = ____','10 × 10 = ____'], solved:['10 × 10 = 100','5 tens + 5 tens = 10 tens','(5 × 10) + (5 × 10) = 10 × 10','50 + 50 = 100','10 × 10 = 100'], answers:[['100'],['5 tens','5 tens'],['5','5'],['50','50','100'],['100']] }
+      } as const;
+      const bond = bonds[problem.number as 1 | 2 | 3 | 4];
+      sections.push({
+        kind: 'number-bond', label: '', whole: bond.whole,
+        parts: (solved ? bond.solvedParts : bond.blankParts).map((label) => ({ label })),
+        partAnswers: solved ? undefined : bond.partAnswers.map((answers) => [...answers]),
+        equations: solved ? [...bond.solved] : [...bond.blank],
+        equationAnswers: solved ? undefined : bond.answers.map((answers) => [...answers])
+      });
+      break;
+    }
+    case '18-5':
+      if (solved) sections.push({ kind: 'number-bond', label: '', whole: '7 × 10', parts: [{ label: '5 × 10' }, { label: '2 × 10' }], equations: ['50 + 20 = 70'] });
+      addWork([{ prompt: 'Use break apart and distribute. Draw a number bond to solve.', blankLines: ['There are ____ children playing in the tournament.'], solvedLines: ['There are 70 children playing in the tournament.'], answers: [['70']], printedLineCount: 1, sketch: true }]);
+      break;
+    case '18-6':
+      addOpenAnswer('Write the total number of sides.', 'There are 24 sides in total.');
+      break;
+    case '18-7':
+      addOpenAnswer('Write the total number of bottles.', 'There are 120 bottles in the vending machine.');
+      break;
+
+    case '19-1': {
+      const divisions = [
+        { lead:'a.', dividend:36, divisor:3, rows:12, columns:3, split:10, parts:[30,6], partials:[10,2], total:12 },
+        { lead:'b.', dividend:25, divisor:5, rows:5, columns:5, split:4, parts:[20,5], partials:[4,1], total:5 },
+        { lead:'c.', dividend:28, divisor:4, rows:7, columns:4, split:5, parts:[20,8], partials:[5,2], total:7 },
+        { lead:'d.', dividend:32, divisor:4, rows:8, columns:4, split:5, parts:[20,12], partials:[5,3], total:8 }
+      ];
+      sections.push({
+        kind:'card-grid', label:'',
+        cards:divisions.map((fact)=>({ label:`${fact.lead} ${fact.dividend} ÷ ${fact.divisor}`, sections:[
+          { kind:'array', label:'', rows:fact.rows, columns:fact.columns, item:'dot', glyph:'●', splitAfterRows:fact.split },
+          { kind:'source-response-workspace', label:'', columns:1, parts:[{
+            prompt:'Divide each friendly part, then add the partial quotients.',
+            lines: solved ? [
+              `${fact.dividend} ÷ ${fact.divisor} = ${fact.total}`,
+              `(${fact.parts[0]} ÷ ${fact.divisor}) = ${fact.partials[0]}`,
+              `(${fact.parts[1]} ÷ ${fact.divisor}) = ${fact.partials[1]}`,
+              `(${fact.dividend} ÷ ${fact.divisor}) = (${fact.parts[0]} ÷ ${fact.divisor}) + (${fact.parts[1]} ÷ ${fact.divisor})`,
+              `= ${fact.partials[0]} + ${fact.partials[1]}`,
+              `= ${fact.total}`
+            ] : [
+              `${fact.dividend} ÷ ${fact.divisor} = ____`,
+              `(${fact.parts[0]} ÷ ${fact.divisor}) = ____`,
+              `(${fact.parts[1]} ÷ ${fact.divisor}) = ____`,
+              `(${fact.dividend} ÷ ${fact.divisor}) = (${fact.parts[0]} ÷ ${fact.divisor}) + (${fact.parts[1]} ÷ ${fact.divisor})`,
+              `= ____ + ____`,
+              '= ____'
+            ],
+            lineAnswers:[[String(fact.total)],[String(fact.partials[0])],[String(fact.partials[1])],[],[String(fact.partials[0]),String(fact.partials[1])],[String(fact.total)]],
+            printedLineCount:6, interactiveLines:!solved
+          }]}
+        ]}))
+      });
+      break;
+    }
+    case '19-2':
+      sections.push({
+        kind:'expression-match', label:'', prompt:'Match the equal expressions.',
+        topItems:['24 ÷ 2','36 ÷ 3','39 ÷ 3','26 ÷ 2'],
+        bottomItems:['(30 ÷ 3) + (6 ÷ 3)','(30 ÷ 3) + (9 ÷ 3)','(20 ÷ 2) + (6 ÷ 2)','(20 ÷ 2) + (4 ÷ 2)'],
+        topShape:'bucket', bottomShape:'ball', interactive:!solved, showMatches:solved,
+        matches:[{topIndex:0,bottomIndex:3},{topIndex:1,bottomIndex:0},{topIndex:2,bottomIndex:1},{topIndex:3,bottomIndex:2}]
+      });
+      break;
+    case '19-3':
+      sections.push({ kind:'array', label:'', rows:12, columns:2, item:'dot', glyph:'●', splitAfterRows:6, caption:solved ? 'Two groups of 12 are divided by 2.' : 'The split shows 12 objects and 12 objects.' });
+      addWork([{ prompt:'Explain Nell’s strategy.', placeholder:'Explain how the two smaller division facts solve 24 ÷ 2.', response:'Nell breaks 24 ÷ 2 into 12 ÷ 2 and 12 ÷ 2. Each quotient is 6, and 6 + 6 = 12.' }]);
+      break;
+
+    case '20-1':
+      sections.push({ kind:'tape', label:'Magazine', totalLabel:'$4', parts:[{label:'$4'}] });
+      sections.push({
+        kind:'tape', label:'Books', totalLabel:solved ? '$24' : 'Book total',
+        parts:Array.from({length:3},()=>({label:solved ? '$8' : '____'})),
+        partAnswers:solved ? undefined : [['$8'],['$8'],['$8']],
+        caption:solved ? '$24 + $4 = $28 altogether' : 'Three equal book units; then combine with the magazine.'
+      });
+      addWork([
+        { lead:'a.', prompt:'What is the total cost of the books?', blankLines:['The books cost $____.'], solvedLines:['The books cost $24.'], answers:[['24']] },
+        { lead:'b.', prompt:'How much does Ted spend altogether?', blankLines:['Ted spends $____ altogether.'], solvedLines:['Ted spends $28 altogether.'], answers:[['28']] }
+      ]);
+      break;
+    case '20-2':
+      sections.push({
+        kind:'tape', label:'Seven children share equally', totalLabel:'28',
+        parts:Array.from({length:7},()=>({label:solved ? '4' : ''})),
+        braces:[
+          {label:'1 child',boxLabel:solved ? '4' : '____',startPart:0,partCount:1},
+          {label:'3 children',boxLabel:solved ? '12' : '____',startPart:3,partCount:3}
+        ],
+        braceAnswers:solved ? undefined : [['4'],['12']]
+      });
+      addWork([
+        { lead:'a.', prompt:'How many silly bands does each child get?', blankLines:['Each child gets ____ silly bands.'], solvedLines:['Each child gets 4 silly bands.'], answers:[['4']] },
+        { lead:'b.', prompt:'How many silly bands do 3 children get?', blankLines:['Three children get ____ silly bands.'], solvedLines:['Three children get 12 silly bands.'], answers:[['12']] }
+      ]);
+      break;
+    case '20-3':
+      addOpenAnswer('Write how many cups are unbroken.', '12 cups are unbroken.');
+      break;
+    case '20-4':
+      addOpenAnswer('Write how many blue and red balloons each child gets.', 'Each child gets 5 blue balloons and 3 red balloons.');
+      break;
+    case '20-5':
+      addOpenAnswer('Write how many bags of pears are left.', '4 bags of pears are left.');
+      break;
+  }
+
+  return { title:'', sourceNote:'', sections };
+}
+
+function reviewedM1Lesson11To15Visual(
+  lessonNumber: number,
+  problem: ProblemSeed,
+  solved: boolean
+): ProblemVisualSpec | undefined {
+  if (lessonNumber < 11 || lessonNumber > 15) return undefined;
+  const observed = M1_OBSERVED_MODEL_CROPS[lessonNumber]?.[problem.number];
+  const sections: ProblemVisualSpec['sections'] = [];
+  const key = `${lessonNumber}-${problem.number}`;
+  type Part = {
+    lead?: string;
+    prompt: string;
+    blankLines?: string[];
+    solvedLines?: string[];
+    answers?: string[][];
+    printedLineCount?: number;
+    sketch?: boolean;
+    placeholder?: string;
+    response?: string;
+  };
+  const addCrop = (sketchOverlay = false): void => {
+    if (!observed) return;
+    const crop = observedSourceCrop(observed, sketchOverlay && !solved) as Extract<
+      ProblemVisualSection,
+      { kind: 'source-crop' }
+    >;
+    sections.push({
+      ...crop,
+      label: '',
+      displayWidth: key === '14-1' ? 420 : key === '15-1' ? 500 : Math.min(crop.displayWidth ?? 620, 620)
+    });
+  };
+  const addResponse = (parts: Part[], columns: 1 | 2 | 3 | 4 = 1): void => {
+    sections.push({
+      kind: 'source-response-workspace',
+      label: '',
+      wide: true,
+      columns,
+      parts: parts.map((part) => ({
+        lead: part.lead,
+        prompt: part.prompt,
+        lines: solved ? part.solvedLines ?? [] : part.blankLines ?? [],
+        lineAnswers: part.answers,
+        printedLineCount: part.printedLineCount ?? 0,
+        interactiveLines: !solved && Boolean(part.answers?.length),
+        sketchWorkspace: !solved && part.sketch,
+        responsePlaceholder: !solved ? part.placeholder : undefined,
+        response: solved ? part.response : undefined
+      }))
+    });
+  };
+  const addArrayTape = (groups: number, size: number, glyph: string, total: number): void => {
+    if (!solved) return;
+    sections.push({
+      kind: 'card-grid',
+      label: '',
+      cards: [
+        { label: `${groups} columns of ${size}`, sections: [{ kind: 'array', rows: size, columns: groups, item: 'dot', glyph }] },
+        { label: `${groups} equal units`, sections: [{ kind: 'tape', totalLabel: `${total}`, parts: Array.from({ length: groups }, () => ({ label: `${size}` })) }] }
+      ]
+    });
+  };
+
+  switch (key) {
+    case '11-1':
+      addResponse([{ lead: 'a.', prompt: 'Draw an array where each column is one bag.', blankLines: ['12 ÷ 2 = ____'], solvedLines: ['12 ÷ 2 = 6'], answers: [['6']], printedLineCount: 1, sketch: true }]);
+      addCrop(true);
+      if (solved) addArrayTape(6, 2, '●', 12);
+      addResponse([{ lead: 'b.', prompt: 'Label the printed tape with the known and unknown information.', blankLines: ['1 unit = ____ oranges', 'Whole = ____ oranges', 'Number of bags = ____'], solvedLines: ['1 unit = 2 oranges', 'Whole = 12 oranges', 'Number of bags = 6'], answers: [['2'], ['12'], ['6']], printedLineCount: 0 }]);
+      break;
+    case '11-2':
+      addArrayTape(6, 3, '●', 18);
+      addResponse([{ prompt: 'Model the problem with both an array and a labeled tape diagram.', blankLines: ['There are ____ plums in each bag.'], solvedLines: ['There are 3 plums in each bag.'], answers: [['3']], printedLineCount: 1, sketch: true, response: 'Six columns of 3 show 18 plums.' }]);
+      break;
+    case '11-3':
+      addArrayTape(7, 2, '▥', 14);
+      addResponse([{ prompt: 'Model the problem with both an array and a labeled tape diagram.', sketch: true, placeholder: 'Write the number of baskets in each pile.', response: 'There are 2 baskets in each pile.' }]);
+      break;
+    case '11-4':
+      addArrayTape(8, 3, '◆', 24);
+      addResponse([{ prompt: 'Model the problem with both an array and a labeled tape diagram.', sketch: true, placeholder: 'Write the number of bell peppers in each bag.', response: 'There are 3 bell peppers in each bag.' }]);
+      break;
+    case '11-5':
+      if (solved) sections.push({ kind: 'tape', label: '', totalLabel: '$16', parts: Array.from({ length: 8 }, () => ({ label: '$2' })) });
+      addResponse([{ prompt: 'Show your work.', sketch: true, placeholder: 'Write how many weeks Olga needs.', response: 'It will take Olga 8 weeks.' }]);
+      break;
+
+    case '13-1': {
+      addCrop();
+      const multipliers = Array.from({ length: 10 }, (_, index) => index + 1);
+      const blankTop = multipliers.map((n) => n <= 3 ? `${n} × 3 = ${n * 3}` : `${n} × 3 = ____`);
+      const blankBottom = multipliers.map((n) => n <= 2 ? `${n * 3} ÷ 3 = ____` : `____ ÷ 3 = ${n}`);
+      sections.push({
+        kind: 'expression-match', label: '', orientation: 'pairs',
+        topItems: solved ? multipliers.map((n) => `${n} × 3 = ${n * 3}`) : blankTop,
+        bottomItems: solved ? multipliers.map((n) => `${n * 3} ÷ 3 = ${n}`) : blankBottom,
+        topItemAnswers: solved ? undefined : multipliers.map((n) => n <= 3 ? [] : [`${n * 3}`]),
+        bottomItemAnswers: solved ? undefined : multipliers.map((n) => n <= 2 ? [`${n}`] : [`${n * 3}`])
+      });
+      break;
+    }
+    case '13-2':
+      addCrop(true);
+      addArrayTape(4, 3, '●', 12);
+      addResponse([
+        { lead: 'a.', prompt: 'Circle groups of 3 and skip-count the total.', blankLines: ['3, ____, ____, ____'], solvedLines: ['3, 6, 9, 12'], answers: [['6', '9', '12']], printedLineCount: 1 },
+        { lead: 'b.', prompt: 'Draw and label a tape diagram.', blankLines: ['____ ÷ 3 = ____', 'Mr. Lawton packs ____ bags.'], solvedLines: ['12 ÷ 3 = 4', 'Mr. Lawton packs 4 bags.'], answers: [['12', '4'], ['4']], printedLineCount: 2, sketch: true }
+      ]);
+      break;
+    case '13-3':
+      addArrayTape(5, 3, '▭', 15);
+      addResponse([{ prompt: 'Draw and label a tape diagram to solve.', blankLines: ['Camille buys ____ stamps.'], solvedLines: ['Camille buys 5 stamps.'], answers: [['5']], printedLineCount: 1, sketch: true }]);
+      break;
+    case '13-4':
+      if (solved) addArrayTape(3, 10, '●', 30);
+      addResponse([{ prompt: 'Show your work.', sketch: true, placeholder: 'Write how many students are in each van.', response: 'There are 10 students in each van.' }]);
+      break;
+    case '13-5':
+      if (solved) sections.push({ kind: 'tape', label: '', totalLabel: '$24', parts: Array.from({ length: 8 }, () => ({ label: '$3' })) });
+      addResponse([{ prompt: 'Show your work.', sketch: true, placeholder: 'Write how many people buy frozen yogurt.', response: '8 people buy frozen yogurt.' }]);
+      break;
+
+    case '14-1': {
+      addCrop();
+      const values = [8, 12, 16, 20, 24, 28, 32, 36, 40];
+      const facts = ['6 × 4', '10 × 4', '5 × 4', '2 × 4', '4 × 4', '9 × 4', '8 × 4', '7 × 4', '3 × 4'];
+      const products = [24, 40, 20, 8, 16, 36, 32, 28, 12];
+      addResponse([{ prompt: 'Skip-count by fours.', blankLines: ['4, 8, ____, ____, ____, ____, ____, ____, ____, ____'], solvedLines: ['4, 8, 12, 16, 20, 24, 28, 32, 36, 40'], answers: [['12','16','20','24','28','32','36','40']], printedLineCount: 10 }]);
+      sections.push({ kind: 'expression-match', label: '', prompt: 'Match each answer to its expression.', topItems: values.map(String), bottomItems: facts, interactive: !solved, showMatches: solved, matches: products.map((product, bottomIndex) => ({ topIndex: values.indexOf(product), bottomIndex })) });
+      break;
+    }
+    case '14-2':
+      if (solved) sections.push({ kind: 'tape', label: '', totalLabel: '28 wheels', parts: Array.from({ length: 7 }, () => ({ label: '4' })) });
+      addResponse([{ prompt: 'Draw and label a tape diagram to solve.', blankLines: ['Mr. Schmidt replaces ____ wheels.'], solvedLines: ['Mr. Schmidt replaces 28 wheels.'], answers: [['28']], printedLineCount: 1, sketch: true }]);
+      break;
+    case '14-3':
+      if (solved) sections.push({ kind: 'tape', label: '', totalLabel: '24 beads', parts: Array.from({ length: 4 }, () => ({ label: '6' })) });
+      addResponse([{ prompt: 'Draw and label a tape diagram to show the total number of beads.', sketch: true, placeholder: 'Write the total shown by your diagram.', response: 'Trina uses 24 beads.' }]);
+      break;
+    case '14-4':
+      if (solved) sections.push({ kind: 'array', label: '', rows: 5, columns: 4, item: 'square', glyph: '▭' });
+      addResponse([{ prompt: 'Show your work.', sketch: true, placeholder: 'Write the total number of sides.', response: '5 rectangles have 20 sides.' }]);
+      break;
+
+    case '15-1':
+      addCrop();
+      if (solved) sections.push({ kind: 'card-grid', label: '', cards: [
+        { label: 'a. 2 rows of 4', sections: [{ kind: 'array', rows: 2, columns: 4, item: 'dot', glyph: '●' }] },
+        { label: 'b. 3 rows of 4', sections: [{ kind: 'array', rows: 3, columns: 4, item: 'dot', glyph: '●' }] },
+        { label: 'c. 7 rows of 4', sections: [{ kind: 'array', rows: 7, columns: 4, item: 'dot', glyph: '●' }] }
+      ] });
+      addResponse([
+        { lead: 'a.', prompt: 'Label both tapes, complete the equations, and draw an array.', blankLines: ['2 × 4 = ____', '4 × 2 = ____'], solvedLines: ['2 × 4 = 8', '4 × 2 = 8'], answers: [['8'], ['8']], printedLineCount: 2, sketch: true },
+        { lead: 'b.', prompt: 'Label both tapes, complete the equations, and draw an array.', blankLines: ['____ × 4 = ____', '4 × ____ = ____'], solvedLines: ['3 × 4 = 12', '4 × 3 = 12'], answers: [['3','12'], ['3','12']], printedLineCount: 2, sketch: true },
+        { lead: 'c.', prompt: 'Label both tapes, complete the equations, and draw an array.', blankLines: ['____ × ____ = 28', '____ × ____ = 28'], solvedLines: ['7 × 4 = 28', '4 × 7 = 28'], answers: [['7','4'], ['4','7']], printedLineCount: 2, sketch: true }
+      ]);
+      break;
+    case '15-2':
+      if (solved) sections.push({ kind: 'card-grid', label: '', cards: [
+        { label: '4 groups of 6', sections: [{ kind: 'tape', totalLabel: '24', parts: Array.from({ length: 4 }, () => ({ label: '6' })) }] },
+        { label: '6 groups of 4', sections: [{ kind: 'tape', totalLabel: '24', parts: Array.from({ length: 6 }, () => ({ label: '4' })) }] }
+      ] });
+      addResponse([
+        { lead: '4 × 6', prompt: 'Draw and label the first tape diagram.', sketch: true, response: '4 equal parts of 6 make 24.' },
+        { lead: '6 × 4', prompt: 'Draw and label the second tape diagram.', sketch: true, response: '6 equal parts of 4 also make 24.' }
+      ], 2);
+      break;
+    case '15-3':
+      if (solved) sections.push({ kind: 'tape', label: '', totalLabel: '32 petals', parts: Array.from({ length: 4 }, () => ({ label: '8' })) });
+      addResponse([{ prompt: 'Draw and label a tape diagram.', sketch: true, placeholder: 'Write the total number of petals.', response: 'The flowers have 32 petals in total.' }]);
+      break;
+    case '15-4':
+      if (solved) sections.push({ kind: 'array', label: '', rows: 8, columns: 4, item: 'dot', glyph: '│' });
+      addResponse([{ prompt: 'Show your work.', sketch: true, placeholder: 'Write how many chair legs there are altogether.', response: 'There are 32 chair legs altogether.' }]);
+      break;
+  }
+
+  return { title: '', sourceNote: '', sections };
 }
 
 function observedM1Lesson11To15Visual(
@@ -1762,109 +2298,261 @@ function observedM1Lesson6To10Visual(
   if (lessonNumber < 6 || lessonNumber > 10) return undefined;
   const observed = M1_OBSERVED_MODEL_CROPS[lessonNumber]?.[problem.number];
   const sections: ProblemVisualSpec['sections'] = [];
-  const blankEquations = problem.blankEquations ?? problem.equations.map(blankEquation);
-  if (observed) {
-    sections.push(observedSourceCrop(observed));
-  }
-
-  const openDrawingProblems = new Set([
-    '6-2', '6-3', '6-6',
-    '7-1', '7-2', '7-6', '7-8',
-    '8-1', '8-2', '8-6',
-    '9-4', '9-5',
-    '10-3'
-  ]);
   const key = `${lessonNumber}-${problem.number}`;
-  if (openDrawingProblems.has(key)) {
-    if (!solved) {
-      sections.push(observedAnswerNote(
-        lessonNumber === 10 && problem.number === 3
-          ? 'Draw the requested photo arrays inside the two open parts of the official album frame.'
-          : 'The official Problem Set leaves this mathematical model for the student to author; no completed drawing is prefilled.',
-        solved
-      ));
-    } else if (lessonNumber === 9 && problem.number === 5) {
-      sections.push({
-        kind: 'card-grid',
-        label: 'Reveal the original and added rows',
-        cards: [
-          { label: 'Original 4 rows', sections: [{ kind: 'array', rows: 4, columns: 3, item: 'dot', glyph: '×' }] },
-          { label: 'Added 2 rows', sections: [{ kind: 'array', rows: 2, columns: 3, item: 'dot', glyph: '○' }] }
-        ]
-      });
-    } else if (lessonNumber === 10 && problem.number === 3) {
-      sections.push({
-        kind: 'card-grid',
-        label: 'Reveal the two requested album arrays',
-        cards: [
-          { label: 'Top: 2 rows of 3', sections: [{ kind: 'array', rows: 2, columns: 3, item: 'dot', glyph: '■' }] },
-          { label: 'Bottom: 3 rows of 3', sections: [{ kind: 'array', rows: 3, columns: 3, item: 'dot', glyph: '■' }] }
-        ]
-      });
-    } else if (!['6-2', '7-6', '8-6', '9-5', '10-3'].includes(key)) {
-      sections.push({
-        kind: 'array',
-        label: 'Reveal one answer-key-supported completed array',
-        rows: problem.knownGroupCount ?? 1,
-        columns: problem.knownGroupSize ?? problem.quotient ?? 1,
-        item: 'dot',
-        glyph: semanticArrayGlyph(problem) ?? (lessonNumber === 9 ? '×' : '●')
-      });
+  type WorkbookPart = {
+    lead?: string;
+    prompt: string;
+    blankLines?: string[];
+    solvedLines?: string[];
+    answers?: string[][];
+    printedLineCount?: number;
+    sketch?: boolean;
+    writtenPrompt?: string;
+    writtenAnswer?: string;
+    dividerBefore?: boolean;
+    columnSpan?: 'all' | 1 | 2 | 3 | 4;
+  };
+  const addCrop = (sketchOverlay = false): void => {
+    if (!observed) return;
+    sections.push({
+      ...observedSourceCrop(observed, sketchOverlay && !solved),
+      label: ''
+    });
+  };
+  const addResponse = (parts: WorkbookPart[], columns: 1 | 2 | 3 | 4 = 1): void => {
+    sections.push({
+      kind: 'source-response-workspace',
+      label: '',
+      wide: true,
+      columns,
+      parts: parts.map((part) => ({
+        lead: part.lead,
+        prompt: part.prompt,
+        lines: solved ? part.solvedLines ?? [] : part.blankLines ?? [],
+        lineAnswers: part.answers,
+        printedLineCount: part.printedLineCount ?? 0,
+        interactiveLines: !solved && Boolean(part.answers?.length),
+        sketchWorkspace: !solved && part.sketch,
+        responsePlaceholder: !solved ? part.writtenPrompt : undefined,
+        response: solved ? part.writtenAnswer : undefined,
+        dividerBefore: part.dividerBefore,
+        columnSpan: part.columnSpan
+      }))
+    });
+  };
+  const addSolvedArray = (rows: number, columns: number, label: string, glyph = '●'): void => {
+    if (!solved) return;
+    sections.push({ kind: 'array', label, rows, columns, item: 'dot', glyph });
+  };
+  const addSolvedArrayPair = (
+    cards: Array<{ label: string; rows: number; columns: number; glyph?: string }>,
+    label = ''
+  ): void => {
+    if (!solved) return;
+    sections.push({
+      kind: 'card-grid',
+      label,
+      cards: cards.map((card) => ({
+        label: card.label,
+        sections: [{ kind: 'array', rows: card.rows, columns: card.columns, item: 'dot', glyph: card.glyph ?? '●' }]
+      }))
+    });
+  };
+
+  switch (key) {
+    case '6-1':
+      addCrop(true);
+      if (solved) addSolvedArrayPair(Array.from({ length: 5 }, (_, index) => ({ label: `Can ${index + 1}`, rows: 1, columns: 3, glyph: '🎾' })));
+      addResponse([{ prompt: 'Circle groups of 3. Then complete the sentence and related facts.', blankLines: ['Rick needs ____ cans.', '____ × 3 = 15', '15 ÷ 3 = ____'], solvedLines: ['Rick needs 5 cans.', '5 × 3 = 15', '15 ÷ 3 = 5'], answers: [['5'], ['5'], ['5']], printedLineCount: 2 }]);
+      break;
+    case '6-2':
+      if (solved) addSolvedArrayPair(Array.from({ length: 5 }, (_, index) => ({ label: `Group ${index + 1}`, rows: 1, columns: 3, glyph: '🎾' })));
+      addResponse([{ prompt: 'Draw 5 equal groups using all 15 tennis balls. Then complete the sentence and facts.', blankLines: ['There are ____ tennis balls in each group.', '5 × ____ = 15', '15 ÷ 5 = ____'], solvedLines: ['There are 3 tennis balls in each group.', '5 × 3 = 15', '15 ÷ 5 = 3'], answers: [['3'], ['3'], ['3']], printedLineCount: 2, sketch: true }]);
+      break;
+    case '6-3':
+      if (solved) addSolvedArray(5, 3, 'One array models both related division meanings.');
+      addResponse([
+        { prompt: 'Use one array to model Problem 1.', sketch: true, columnSpan: 'all' },
+        { lead: 'a.', prompt: 'The unknown is the number of groups.', blankLines: ['____ × 3 = 15', '15 ÷ 3 = ____'], solvedLines: ['5 × 3 = 15', '15 ÷ 3 = 5'], answers: [['5'], ['5']], printedLineCount: 2, writtenPrompt: 'What does the number in the blanks represent?', writtenAnswer: 'The number of groups.' },
+        { lead: 'b.', prompt: 'The unknown is the size of each group.', blankLines: ['5 × ____ = 15', '15 ÷ 5 = ____'], solvedLines: ['5 × 3 = 15', '15 ÷ 5 = 3'], answers: [['3'], ['3']], printedLineCount: 2, writtenPrompt: 'What does the number in the blanks represent?', writtenAnswer: 'The size of each group.' }
+      ], 2);
+      break;
+    case '6-4':
+      addResponse([{ prompt: 'Deena puts 21 jars into boxes of 7. Find the number of boxes and explain the unknown.', blankLines: ['21 ÷ 7 = ____', '____ × 7 = 21'], solvedLines: ['21 ÷ 7 = 3', '3 × 7 = 21'], answers: [['3'], ['3']], printedLineCount: 2, writtenPrompt: 'What do the unknown factor and quotient mean?', writtenAnswer: 'They both mean the number of boxes. Deena needs 3 boxes.' }]);
+      break;
+    case '6-5':
+      addResponse([{ prompt: 'Complete both equations. Then explain why Charlie can use division to find the unknown factor.', blankLines: ['4 × ____ = 12', '12 ÷ 4 = ____'], solvedLines: ['4 × 3 = 12', '12 ÷ 4 = 3'], answers: [['3'], ['3']], printedLineCount: 2, writtenPrompt: 'Why does Charlie’s method work?', writtenAnswer: 'Division finds the missing factor. Four equal groups of 3 make 12.' }]);
+      break;
+    case '6-6':
+      addSolvedArray(4, 3, '4 rows of 3 represent both equations.');
+      addResponse([{ prompt: 'Draw an array that represents the equations from Problem 5.', sketch: true }]);
+      break;
+
+    case '7-1':
+      addSolvedArray(6, 2, '6 rows of 2');
+      addResponse([{ prompt: 'Draw an array that shows 6 rows of 2.', blankLines: ['____ × ____ = ____'], solvedLines: ['6 × 2 = 12'], answers: [['6', '2', '12']], printedLineCount: 1, sketch: true }]);
+      break;
+    case '7-2':
+      addSolvedArray(2, 6, '2 rows of 6');
+      addResponse([{ prompt: 'Draw an array that shows 2 rows of 6.', blankLines: ['____ × ____ = ____'], solvedLines: ['2 × 6 = 12'], answers: [['2', '6', '12']], printedLineCount: 1, sketch: true }]);
+      break;
+    case '7-3':
+      addResponse([
+        { lead: 'a.', prompt: 'What is the same about the arrays in Problems 1 and 2? What is different?', writtenPrompt: 'Compare the two arrays.', writtenAnswer: 'Turning the first array on its side makes the second array. Both have 12 objects.' },
+        { lead: 'b.', prompt: 'Why are the factors in a different order?', writtenPrompt: 'Explain what each factor names.', writtenAnswer: 'The number of rows and the size of each row switch places.' }
+      ]);
+      break;
+    case '7-4': {
+      const blank = ['6 × 2 = 12', '2 × 6 = ____', '7 × 2 = ____', '2 × 7 = ____', '9 × 2 = ____', '2 × 9 = ____', '11 × 2 = ____', '2 × 12 = ____'];
+      const done = ['6 × 2 = 12', '2 × 6 = 12', '7 × 2 = 14', '2 × 7 = 14', '9 × 2 = 18', '2 × 9 = 18', '11 × 2 = 22', '2 × 12 = 24'];
+      const answers = [[], ['12'], ['14'], ['14'], ['18'], ['18'], ['22'], ['24']];
+      addResponse(blank.map((line, index) => ({ lead: `${String.fromCharCode(97 + index)}.`, prompt: '', blankLines: [line], solvedLines: [done[index]], answers: answers[index].length ? [answers[index]] : undefined, printedLineCount: 1 })), 3);
+      break;
     }
+    case '7-5':
+      addCrop();
+      addResponse([
+        { lead: 'a.', prompt: 'Read the left array by rows.', blankLines: ['____ × ____ = ____'], solvedLines: ['4 × 2 = 8'], answers: [['4', '2', '8']], printedLineCount: 1 },
+        { lead: 'b.', prompt: 'Read the right array by rows.', blankLines: ['____ × ____ = ____'], solvedLines: ['2 × 4 = 8'], answers: [['2', '4', '8']], printedLineCount: 1 }
+      ], 2);
+      break;
+    case '7-6':
+      if (solved) addSolvedArrayPair([{ label: '2 rows of 7', rows: 2, columns: 7 }, { label: '7 rows of 2', rows: 7, columns: 2 }]);
+      addResponse([
+        { lead: 'a.', prompt: 'Draw an array for 2 × 7.', sketch: true },
+        { lead: 'b.', prompt: 'Draw an array for 7 × 2.', sketch: true },
+        { prompt: 'Do you agree that 2 × 7 = 7 × 2?', writtenPrompt: 'Explain how the arrays prove your answer.', writtenAnswer: 'Agree. Both arrays contain the same 14 objects; one is a rotation of the other.', columnSpan: 'all' }
+      ], 2);
+      break;
+    case '7-7':
+      addCrop();
+      addResponse([
+        ['5 × 2 = 2 × ____', '5 × 2 = 2 × 5', '5'],
+        ['____ × 8 = 8 × 2', '2 × 8 = 8 × 2', '2'],
+        ['2 × 10 = ____ × 2', '2 × 10 = 10 × 2', '10'],
+        ['2 × ____ = 9 × 2', '2 × 9 = 9 × 2', '9']
+      ].map(([blankLine, solvedLine, answer], index) => ({ lead: `${String.fromCharCode(97 + index)}.`, prompt: '', blankLines: [blankLine], solvedLines: [solvedLine], answers: [[answer]], printedLineCount: 1 })), 4);
+      break;
+    case '7-8':
+      addSolvedArray(2, 6, '2 packs with 6 erasers in each pack');
+      addResponse([
+        { lead: 'a.', prompt: 'Draw an array for 2 packs of 6 erasers.', sketch: true },
+        { lead: 'b.', prompt: 'Write a multiplication sentence.', blankLines: ['____ × ____ = ____'], solvedLines: ['2 × 6 = 12'], answers: [['2', '6', '12']], printedLineCount: 1 },
+        { lead: 'c.', prompt: 'Use commutativity to write the related fact.', blankLines: ['____ × ____ = ____'], solvedLines: ['6 × 2 = 12'], answers: [['6', '2', '12']], printedLineCount: 1 }
+      ]);
+      break;
+
+    case '8-1':
+      addSolvedArray(5, 3, '5 rows of 3');
+      addResponse([{ prompt: 'Draw an array that shows 5 rows of 3.', sketch: true }]);
+      break;
+    case '8-2':
+      addSolvedArray(3, 5, '3 rows of 5');
+      addResponse([{ prompt: 'Draw an array that shows 3 rows of 5.', sketch: true }]);
+      break;
+    case '8-3':
+      addResponse([
+        { prompt: 'Use the arrays in Problems 1 and 2 to complete the commutative equation.', blankLines: ['____ × ____ = ____ × ____'], solvedLines: ['5 × 3 = 3 × 5'], answers: [['5', '3', '3', '5']], printedLineCount: 1, columnSpan: 'all' },
+        { lead: 'Problem 1', prompt: '5 rows of 3' },
+        { lead: 'Problem 2', prompt: '3 rows of 5' }
+      ], 2);
+      break;
+    case '8-4': {
+      const blank = ['2 × 3 = 6', '3 × 2 = ____', '3 × 4 = ____', '4 × 3 = ____', '3 × 7 = ____', '7 × 3 = ____', '3 × 9 = ____', '9 × 3 = ____', '10 × 3 = ____'];
+      const done = ['2 × 3 = 6', '3 × 2 = 6', '3 × 4 = 12', '4 × 3 = 12', '3 × 7 = 21', '7 × 3 = 21', '3 × 9 = 27', '9 × 3 = 27', '10 × 3 = 30'];
+      const values = ['', '6', '12', '12', '21', '21', '27', '27', '30'];
+      addResponse(blank.map((line, index) => ({ lead: `${String.fromCharCode(97 + index)}.`, prompt: '', blankLines: [line], solvedLines: [done[index]], answers: values[index] ? [[values[index]]] : undefined, printedLineCount: 1 })), 3);
+      break;
+    }
+    case '8-5': {
+      const topBlank = ['a. 3 + 3 + 3 + 3 + 3 = ____', 'b. 3 × 9 = ____', 'c. 7 threes + 1 three = ____'];
+      const topDone = ['a. 3 + 3 + 3 + 3 + 3 = 15', 'b. 3 × 9 = 27', 'c. 7 threes + 1 three = 24'];
+      const bottomBlank = ['d. 3 × 8 = ____', 'e. ____ = 5 × 3', 'f. 27 = 9 × ____'];
+      const bottomDone = ['d. 3 × 8 = 24', 'e. 15 = 5 × 3', 'f. 27 = 9 × 3'];
+      addResponse(
+        [...topBlank, ...bottomBlank].map((line, index) => ({
+          prompt: '',
+          blankLines: [line],
+          solvedLines: [[...topDone, ...bottomDone][index]],
+          answers: [[['15'], ['27'], ['24'], ['24'], ['15'], ['3']][index]],
+          printedLineCount: 1
+        })),
+        2
+      );
+      sections.push({
+        kind: 'expression-match',
+        label: '',
+        prompt: 'Now select a letter on the left and its related fact on the right.',
+        topLabel: 'a–c',
+        bottomLabel: 'd–f',
+        topItems: ['a', 'b', 'c'],
+        bottomItems: ['d', 'e', 'f'],
+        orientation: 'pairs',
+        matches: [{ topIndex: 0, bottomIndex: 1 }, { topIndex: 1, bottomIndex: 2 }, { topIndex: 2, bottomIndex: 0 }],
+        interactive: !solved,
+        showMatches: solved
+      });
+      break;
+    }
+    case '8-6':
+      if (solved) addSolvedArrayPair([{ label: 'First 7 days', rows: 7, columns: 3, glyph: '○' }, { label: '3 more days', rows: 3, columns: 3, glyph: '×' }]);
+      addResponse([
+        { lead: 'a.', prompt: 'Draw 7 rows of 3 circles.', sketch: true },
+        { lead: 'b.', prompt: 'Write the fact for the first 7 days.', blankLines: ['____ × ____ = ____'], solvedLines: ['7 × 3 = 21'], answers: [['7', '3', '21']], printedLineCount: 1 },
+        { lead: 'c.', prompt: 'Add 3 rows of 3 using X marks.' },
+        { lead: 'd.', prompt: 'Write the fact for all 10 days.', blankLines: ['____ × ____ = ____'], solvedLines: ['10 × 3 = 30'], answers: [['10', '3', '30']], printedLineCount: 1 }
+      ]);
+      break;
+    case '8-7':
+      addResponse([
+        { lead: 'a.', prompt: 'Find the cost of 3 bottles.', blankLines: ['____ × $____ = $____'], solvedLines: ['3 × $2 = $6'], answers: [['3', '2', '6']], printedLineCount: 1 },
+        { lead: 'b.', prompt: 'Find the cost of 6 bottles.', blankLines: ['____ × $____ = $____'], solvedLines: ['6 × $2 = $12'], answers: [['6', '2', '12']], printedLineCount: 1 }
+      ]);
+      break;
+
+    case '9-1':
+      addCrop();
+      addResponse([{ prompt: 'Use the two rows of 5 and the three added rows of 5 to complete all three facts.', blankLines: ['(5 + 5) + (5 + 5 + 5) = ____', '2 fives + ____ fives = ____ fives', '____ × 5 = ____'], solvedLines: ['(5 + 5) + (5 + 5 + 5) = 25', '2 fives + 3 fives = 5 fives', '5 × 5 = 25'], answers: [['25'], ['3', '5'], ['5', '25']], printedLineCount: 3 }]);
+      break;
+    case '9-2':
+      addCrop();
+      addResponse([{ prompt: 'Use the split 7-by-2 array: 5 rows of 2 and 2 rows of 2.', blankLines: ['7 × 2 = ____', '5 × 2 = ____', '2 × 2 = ____', '10 + 4 = ____', '____ × 2 = 14'], solvedLines: ['7 × 2 = 14', '5 × 2 = 10', '2 × 2 = 4', '10 + 4 = 14', '7 × 2 = 14'], answers: [['14'], ['10'], ['4'], ['14'], ['7']], printedLineCount: 5 }]);
+      break;
+    case '9-3':
+      addCrop();
+      addResponse([{ prompt: 'Use the 10-by-2 array with one row removed to find 9 × 2.', blankLines: ['9 × 2 = ____', '10 × 2 = ____', '1 × 2 = ____', '20 − ____ = 18', '9 × 2 = ____'], solvedLines: ['9 × 2 = 18', '10 × 2 = 20', '1 × 2 = 2', '20 − 2 = 18', '9 × 2 = 18'], answers: [['18'], ['20'], ['2'], ['2'], ['18']], printedLineCount: 5 }]);
+      break;
+    case '9-4':
+      addSolvedArray(4, 3, '4 rows of 3 baseball cards', '×');
+      addResponse([{ prompt: 'Draw an array of 4 rows of 3 using X marks.', blankLines: ['4 × 3 = ____'], solvedLines: ['4 × 3 = 12'], answers: [['12']], printedLineCount: 1, sketch: true }]);
+      break;
+    case '9-5':
+      sections.push({ kind: 'array', label: 'Start with the 4 rows of 3 from Problem 4.', rows: 4, columns: 3, item: 'dot', glyph: '×', mode: 'blank' });
+      if (solved) addSolvedArrayPair([{ label: 'Original 4 rows', rows: 4, columns: 3, glyph: '×' }, { label: 'Added 2 rows', rows: 2, columns: 3, glyph: '○' }]);
+      addResponse([{ prompt: 'Add 2 rows of 3 using circles. Then complete the related facts.', blankLines: ['____ × 3 = ____', '____ + ____ = 18', '____ × ____ = 18'], solvedLines: ['2 × 3 = 6', '12 + 6 = 18', '6 × 3 = 18'], answers: [['2', '6'], ['12', '6'], ['6', '3']], printedLineCount: 3, sketch: true }]);
+      break;
+
+    case '10-1':
+      addCrop();
+      addResponse([{ prompt: 'Read the split 7-by-3 array as 5 rows of 3 plus 2 rows of 3.', blankLines: ['7 × 3 = (5 × 3) + (2 × 3) = ____', '5 × 3 = 15', '2 × 3 = ____', '(5 × 3) + (2 × 3) = 15 + ____', '15 + ____ = ____'], solvedLines: ['7 × 3 = (5 × 3) + (2 × 3) = 21', '5 × 3 = 15', '2 × 3 = 6', '(5 × 3) + (2 × 3) = 15 + 6', '15 + 6 = 21'], answers: [['21'], [], ['6'], ['6'], ['6', '21']], printedLineCount: 5 }]);
+      break;
+    case '10-2':
+      addCrop();
+      addResponse([{ prompt: 'Read the split 8-by-3 array as two equal 4-by-3 parts.', blankLines: ['8 × 3 = (4 × 3) + (4 × 3) = ____', '____ × 3 = ____', '____ × 3 = ____', '(4 × 3) + (4 × 3) = ____ + ____', '____ × 3 = ____'], solvedLines: ['8 × 3 = (4 × 3) + (4 × 3) = 24', '4 × 3 = 12', '4 × 3 = 12', '(4 × 3) + (4 × 3) = 12 + 12', '8 × 3 = 24'], answers: [['24'], ['4', '12'], ['4', '12'], ['12', '12'], ['8', '24']], printedLineCount: 5 }]);
+      break;
+    case '10-3':
+      addCrop(true);
+      if (solved) addSolvedArrayPair([{ label: 'Top album part', rows: 2, columns: 3, glyph: '■' }, { label: 'Bottom album part', rows: 3, columns: 3, glyph: '■' }]);
+      addResponse([
+        { lead: 'a.', prompt: 'Draw 3 photos in each row in the top and bottom parts of the album. Complete both facts.', blankLines: ['____ × 3 = 6', '____ × 3 = 9'], solvedLines: ['2 × 3 = 6', '3 × 3 = 9'], answers: [['2'], ['3']], printedLineCount: 2 },
+        { lead: 'b.', prompt: 'Use your arrays to explain Ruby’s calculation.', blankLines: ['5 × 3 = 6 + 9 = 15'], solvedLines: ['5 × 3 = 6 + 9 = 15'], printedLineCount: 1, writtenPrompt: 'How do the two smaller arrays make the whole array?', writtenAnswer: 'The top has 2 rows of 3 and the bottom has 3 rows of 3. Together they make 5 rows of 3, so 6 + 9 = 15.' }
+      ]);
+      break;
   }
 
-  if (solved && lessonNumber === 6 && problem.number === 1) {
-    sections.push({
-      kind: 'card-grid',
-      label: 'Reveal five circled groups of three',
-      cards: Array.from({ length: 5 }, (_, index) => ({
-        label: `Can ${index + 1}`,
-        sections: [{ kind: 'array', rows: 1, columns: 3, item: 'dot', glyph: '🎾' }]
-      }))
-    });
-  }
-  if (solved && lessonNumber === 6 && problem.number === 2) {
-    sections.push({
-      kind: 'card-grid',
-      label: 'Reveal five equal groups',
-      cards: Array.from({ length: 5 }, (_, index) => ({
-        label: `Group ${index + 1}`,
-        sections: [{ kind: 'array', rows: 1, columns: 3, item: 'dot', glyph: '🎾' }]
-      }))
-    });
-  }
-  if (solved && lessonNumber === 7 && problem.number === 6) {
-    sections.push({
-      kind: 'card-grid',
-      label: 'Read one array in both directions',
-      cards: [
-        { label: '2 rows of 7', sections: [{ kind: 'array', rows: 2, columns: 7, item: 'dot' }] },
-        { label: '7 rows of 2', sections: [{ kind: 'array', rows: 7, columns: 2, item: 'dot' }] }
-      ]
-    });
-  }
-  if (solved && lessonNumber === 8 && problem.number === 6) {
-    sections.push({
-      kind: 'card-grid',
-      label: 'Seven days, then three more days',
-      cards: [
-        { label: 'First 7 days · circles', sections: [{ kind: 'array', rows: 7, columns: 3, item: 'dot', glyph: '○' }] },
-        { label: '3 additional days · x marks', sections: [{ kind: 'array', rows: 3, columns: 3, item: 'dot', glyph: '×' }] }
-      ]
-    });
-  }
-
-  sections.push({
-    kind: 'equations',
-    label: solved ? 'Teacher Edition completed response' : 'Official response structure',
-    lines: solved ? problem.equations : blankEquations
-  });
-  sections.push(observedAnswerNote(solved
-    ? problem.solvedAnswer
-    : 'Complete only the requested model, equation blanks, and written explanation.', solved));
   return {
-    title: `Problem ${problem.number}: Teacher Edition observed workspace`,
-    sourceNote: `Problem-level structure observed directly on the official Module 1 Lesson ${lessonNumber} Problem Set.`,
+    title: '',
+    sourceNote: '',
     sections
   };
 }
@@ -1878,153 +2566,259 @@ function observedM1ProblemVisual(
     return observedM1Lesson6To10Visual(lessonNumber, problem, solved);
   }
   if (lessonNumber >= 11 && lessonNumber <= 15) {
-    return observedM1Lesson11To15Visual(lessonNumber, problem, solved);
+    return reviewedM1Lesson11To15Visual(lessonNumber, problem, solved);
   }
-  if (lessonNumber === 18) {
-    return observedM1Lesson18Visual(problem, solved);
-  }
-  if (lessonNumber === 16 || lessonNumber === 17) {
-    return observedM1Lesson16Or17Visual(lessonNumber, problem, solved);
+  if (lessonNumber >= 16 && lessonNumber <= 20) {
+    return reviewedM1Lesson16To20Visual(lessonNumber, problem, solved);
   }
   if (lessonNumber < 2 || lessonNumber > 5) return undefined;
   const observed = M1_OBSERVED_MODEL_CROPS[lessonNumber]?.[problem.number];
-  const blankEquations = problem.blankEquations ?? problem.equations.map(blankEquation);
   const sections: ProblemVisualSpec['sections'] = [];
-
-  if (observed) {
+  const addCrop = (sketchOverlay = false): void => {
+    if (observed) {
+      sections.push({
+        ...observedSourceCrop(observed, sketchOverlay && !solved),
+        label: ''
+      });
+    }
+  };
+  const addResponse = (config: {
+    prompt: string;
+    blankLines?: string[];
+    solvedLines?: string[];
+    answers?: string[][];
+    printedLineCount: number;
+    sketch?: boolean;
+    responsePlaceholder?: string;
+    response?: string;
+  }): void => {
     sections.push({
-      kind: 'source-crop',
-      label: 'Official problem-level mathematical model',
-      src: `/source-pages/m1-teacher/page-${String(observed.page).padStart(3, '0')}.png`,
-      alt: observed.alt,
-      imageWidth: 816,
-      imageHeight: 1056,
-      crop: observed.crop
+      kind: 'source-response-workspace',
+      label: '',
+      wide: true,
+      parts: [{
+        prompt: config.prompt,
+        lines: solved ? config.solvedLines ?? [] : config.blankLines ?? [],
+        lineAnswers: config.answers,
+        printedLineCount: config.printedLineCount,
+        interactiveLines: !solved && Boolean(config.answers?.length),
+        sketchWorkspace: !solved && config.sketch,
+        responsePlaceholder: !solved ? config.responsePlaceholder : undefined,
+        response: solved ? config.response : undefined
+      }]
     });
+  };
+  const addSolvedArray = (rows: number, columns: number, label: string): void => {
+    if (!solved) return;
+    sections.push({
+      kind: 'array',
+      label,
+      rows,
+      columns,
+      item: 'dot',
+      glyph: semanticArrayGlyph(problem)
+    });
+  };
+
+  if (lessonNumber === 2) {
+    if (problem.number === 1) {
+      addCrop();
+      addResponse({
+        prompt: 'Read the car array by rows.',
+        blankLines: ['a. Number of rows: ____', 'b. Cars in each row: ____'],
+        solvedLines: ['a. Number of rows: 4', 'b. Cars in each row: 2'],
+        answers: [['4'], ['2']], printedLineCount: 0
+      });
+    } else if (problem.number === 2) {
+      addCrop();
+      addResponse({
+        prompt: 'Read the object array by rows.',
+        blankLines: ['a. Number of rows: ____', 'b. Objects in each row: ____'],
+        solvedLines: ['a. Number of rows: 3', 'b. Objects in each row: 6'],
+        answers: [['3'], ['6']], printedLineCount: 0
+      });
+    } else if (problem.number === 3) {
+      addCrop();
+      addResponse({
+        prompt: 'Use the spoon array.',
+        blankLines: ['a. Spoons in 2 rows: ____', 'b. Multiplication expression: ____'],
+        solvedLines: ['a. Spoons in 2 rows: 8', 'b. Multiplication expression: 2 × 4'],
+        answers: [['8'], ['2 × 4']], printedLineCount: 1
+      });
+    } else if (problem.number === 4) {
+      addCrop();
+      addResponse({
+        prompt: 'Use the triangle array.',
+        blankLines: ['a. Triangles in each row: ____', 'b. Multiplication expression: ____'],
+        solvedLines: ['a. Triangles in each row: 4', 'b. Multiplication expression: 5 × 4'],
+        answers: [['4'], ['5 × 4']], printedLineCount: 1
+      });
+    } else if (problem.number === 5) {
+      addCrop();
+      addResponse({
+        prompt: 'Redraw the 2 groups of 5 as a 2-by-5 array, then compare the two arrangements.',
+        printedLineCount: 0,
+        sketch: true,
+        responsePlaceholder: 'Write at least one way the models are the same and one way they are different.',
+        response: 'Both models show 2 groups of 5 and a total of 10. The first model is separated into groups; the array aligns the dots into equal rows and columns.'
+      });
+      addSolvedArray(2, 5, 'One valid redraw: 2 rows of 5');
+    } else if (problem.number === 6) {
+      addResponse({
+        prompt: 'Draw Emma’s 4 rows of 3 rocks, then write the multiplication equation.',
+        blankLines: ['Multiplication equation: ____'],
+        solvedLines: ['Multiplication equation: 4 × 3 = 12'],
+        answers: [['4 × 3 = 12']], printedLineCount: 1, sketch: true
+      });
+      addSolvedArray(4, 3, 'Emma’s completed 4-by-3 rock array');
+    } else {
+      addResponse({
+        prompt: 'Draw Joshua’s 5-by-3 can array and find the total.',
+        blankLines: ['Joshua organizes ____ cans.'],
+        solvedLines: ['Joshua organizes 15 cans.'],
+        answers: [['15']], printedLineCount: 1, sketch: true
+      });
+      addSolvedArray(5, 3, 'Joshua’s completed 5-by-3 can array');
+    }
   }
 
-  const sourceIsOpenDrawing =
-    (lessonNumber === 2 && problem.number >= 6) ||
-    (lessonNumber === 3 && problem.number === 6) ||
-    (lessonNumber === 5 && problem.number >= 2 && problem.number <= 4) ||
-    (lessonNumber === 5 && problem.number === 6);
-  const sourceNeedsStudentModel =
-    sourceIsOpenDrawing ||
-    (lessonNumber === 2 && problem.number === 5) ||
-    (lessonNumber === 3 && problem.number === 5) ||
-    (lessonNumber === 4 && problem.number === 8) ||
-    (lessonNumber === 5 && problem.number === 5);
-
-  if (sourceNeedsStudentModel) {
-    if (!solved) {
-      sections.push({
-        kind: 'note',
-        label: 'Open student model workspace',
-        text: 'Author the requested drawing, grouping, comparison, count-by, or number bond here; no completed response is prefilled.'
+  if (lessonNumber === 3) {
+    const pictureProblems = {
+      1: {
+        prompt: 'Use the flower bunches to name both factors and the total.',
+        blankLines: ['a. Number of groups: ____   Size of each group: ____', 'b. 4 × 5 = ____', 'c. There are ____ flowers altogether.'],
+        solvedLines: ['a. Number of groups: 4   Size of each group: 5', 'b. 4 × 5 = 20', 'c. There are 20 flowers altogether.'],
+        answers: [['4', '5'], ['20'], ['20']]
+      },
+      2: {
+        prompt: 'Use the candy boxes to name both factors and the total.',
+        blankLines: ['Candies in each box: ____', 'a. Number of groups: ____   Size of each group: ____', 'b. 6 × ____ = ____', 'c. There are ____ candies altogether.'],
+        solvedLines: ['Candies in each box: 3', 'a. Number of groups: 6   Size of each group: 3', 'b. 6 × 3 = 18', 'c. There are 18 candies altogether.'],
+        answers: [['3'], ['6', '3'], ['3', '18'], ['18']]
+      },
+      3: {
+        prompt: 'Use the orange rows to name both factors and the total.',
+        blankLines: ['Number of rows in the question: ____', 'a. Number of rows: ____   Size of each row: ____', 'b. ____ × 4 = ____', 'c. There are ____ oranges altogether.'],
+        solvedLines: ['Number of rows in the question: 3', 'a. Number of rows: 3   Size of each row: 4', 'b. 3 × 4 = 12', 'c. There are 12 oranges altogether.'],
+        answers: [['3'], ['3', '4'], ['3', '12'], ['12']]
+      },
+      4: {
+        prompt: 'Use the bread rows to name both factors and the total.',
+        blankLines: ['Loaves in each row: ____', 'a. Number of rows: ____   Size of each row: ____', 'b. ____ × ____ = ____', 'c. There are ____ loaves altogether.'],
+        solvedLines: ['Loaves in each row: 2', 'a. Number of rows: 5   Size of each row: 2', 'b. 5 × 2 = 10', 'c. There are 10 loaves altogether.'],
+        answers: [['2'], ['5', '2'], ['5', '2', '10'], ['10']]
+      }
+    } as const;
+    if (problem.number <= 4) {
+      const config = pictureProblems[problem.number as keyof typeof pictureProblems];
+      addCrop();
+      addResponse({
+        prompt: config.prompt,
+        blankLines: [...config.blankLines],
+        solvedLines: [...config.solvedLines],
+        answers: config.answers.map((answers) => [...answers]),
+        printedLineCount: 1
       });
-    } else if (problem.knownGroupCount && problem.knownGroupSize) {
-      sections.push({
-        kind: 'array',
-        label: 'Reveal one valid completed student model',
-        rows: problem.knownGroupCount,
-        columns: problem.knownGroupSize,
-        item: 'dot',
-        glyph: semanticArrayGlyph(problem)
+    } else if (problem.number === 5) {
+      addCrop();
+      addResponse({
+        prompt: 'Write the multiplication equation, then draw a number bond with one part for each row.',
+        blankLines: ['a. Multiplication equation: ____'],
+        solvedLines: ['a. Multiplication equation: 4 × 3 = 12'],
+        answers: [['4 × 3 = 12']], printedLineCount: 1, sketch: true
       });
-    } else if (problem.knownGroupCount && problem.quotient && !(lessonNumber === 4 && problem.number === 8)) {
-      sections.push({
-        kind: 'array',
-        label: 'Reveal one valid completed student model',
-        rows: problem.knownGroupCount,
-        columns: problem.quotient,
-        item: 'dot',
-        glyph: semanticArrayGlyph(problem)
+      if (solved) sections.push({
+        kind: 'number-bond', label: 'b. Four equal row-parts make 12', whole: '12',
+        parts: Array.from({ length: 4 }, (_, index) => ({ label: '3', sublabel: `row ${index + 1}` })),
+        equations: ['3 + 3 + 3 + 3 = 12']
       });
-    } else if (problem.knownTotal && problem.knownGroupSize && !(lessonNumber === 5 && problem.number === 6)) {
-      sections.push({
-        kind: 'array',
-        label: 'Reveal equal groups from the official quantities',
-        rows: Math.max(1, Math.round(problem.knownTotal / problem.knownGroupSize)),
-        columns: problem.knownGroupSize,
-        item: 'dot',
-        glyph: semanticArrayGlyph(problem)
+    } else {
+      addResponse({
+        prompt: 'Draw an array using factors 2 and 3. Then draw a number bond whose parts are the rows.',
+        printedLineCount: 0, sketch: true
+      });
+      addSolvedArray(2, 3, 'One valid array: 2 rows of 3');
+      if (solved) sections.push({
+        kind: 'number-bond', label: 'One matching number bond', whole: '6',
+        parts: [{ label: '3', sublabel: 'row 1' }, { label: '3', sublabel: 'row 2' }],
+        equations: ['3 + 3 = 6']
       });
     }
   }
 
-  if (solved && lessonNumber === 3 && problem.number === 5) {
-    sections.push({
-      kind: 'number-bond',
-      label: 'Reveal the requested number bond',
-      whole: '12',
-      parts: Array.from({ length: 4 }, (_, index) => ({ label: '3', sublabel: `row ${index + 1}` })),
-      equations: ['3 + 3 + 3 + 3 = 12']
+  if (lessonNumber === 4) {
+    const configs = {
+      1: { blank: ['There are ____ flowers in each group.'], solved: ['There are 7 flowers in each group.'], answers: [['7']], printed: 0 },
+      2: { blank: ['There are ____ books in each group.'], solved: ['There are 7 books in each group.'], answers: [['7']], printed: 0 },
+      3: { blank: ['30 apples are divided into ____ equal groups.', 'There are ____ apples in each group.'], solved: ['30 apples are divided into 3 equal groups.', 'There are 10 apples in each group.'], answers: [['3'], ['10']], printed: 0 },
+      4: { blank: ['____ cups are divided into ____ equal groups.', 'There are ____ cups in each group.', '12 ÷ 2 = ____'], solved: ['12 cups are divided into 2 equal groups.', 'There are 6 cups in each group.', '12 ÷ 2 = 6'], answers: [['12', '2'], ['6'], ['6']], printed: 1 },
+      5: { blank: ['There are ____ toys in each group.', '15 ÷ 3 = ____'], solved: ['There are 5 toys in each group.', '15 ÷ 3 = 5'], answers: [['5'], ['5']], printed: 1 },
+      6: { blank: ['9 ÷ 3 = ____'], solved: ['9 ÷ 3 = 3'], answers: [['3']], printed: 1 },
+      7: { blank: ['There are ____ colored pencils in each group.', '24 ÷ 4 = ____'], solved: ['There are 6 colored pencils in each group.', '24 ÷ 4 = 6'], answers: [['6'], ['6']], printed: 1 },
+      8: { blank: ['There are ____ apples in each basket.', '20 ÷ ____ = ____'], solved: ['There are 4 apples in each basket.', '20 ÷ 5 = 4'], answers: [['4'], ['5', '4']], printed: 1 },
+      9: { blank: ['There are ____ butterflies in each row.', '____ ÷ ____ = ____'], solved: ['There are 3 butterflies in each row.', '15 ÷ 5 = 3'], answers: [['3'], ['15', '5', '3']], printed: 1 }
+    } as const;
+    const config = configs[problem.number as keyof typeof configs];
+    addCrop(problem.number === 8);
+    addResponse({
+      prompt: problem.number === 8
+        ? 'Draw 4 apples in each of the 5 printed baskets, then complete the statements.'
+        : 'Use the printed equal groups to complete every blank.',
+      blankLines: [...config.blank], solvedLines: [...config.solved], answers: config.answers.map((answers) => [...answers]),
+      printedLineCount: config.printed
     });
-  }
-  if (solved && lessonNumber === 4 && problem.number === 8) {
-    sections.push({
+    if (problem.number === 8 && solved) sections.push({
       kind: 'card-grid',
-      label: 'Reveal the requested apples in each basket',
+      label: 'Five baskets with 4 apples in each basket',
       cards: Array.from({ length: 5 }, (_, index) => ({
         label: `Basket ${index + 1}`,
         sections: [{ kind: 'array', rows: 1, columns: 4, item: 'dot', glyph: '🍎' }]
       }))
     });
   }
-  if (solved && lessonNumber === 3 && problem.number === 6) {
-    sections.push({
-      kind: 'number-bond',
-      label: 'Reveal one valid requested number bond',
-      whole: '6',
-      parts: [{ label: '3', sublabel: 'row 1' }, { label: '3', sublabel: 'row 2' }],
-      equations: ['3 + 3 = 6']
-    });
-  }
-  if (solved && lessonNumber === 5 && problem.number === 5) {
-    sections.push({
-      kind: 'number-bond',
-      label: 'Reveal the requested number bond',
-      whole: '9',
-      parts: [
-        { label: '3', sublabel: 'bag 1' },
-        { label: '3', sublabel: 'bag 2' },
-        { label: '3', sublabel: 'bag 3' }
-      ],
-      equations: ['3 + 3 + 3 = 9']
-    });
-  }
-  if (solved && lessonNumber === 5 && problem.number === 6) {
-    sections.push({
-      kind: 'card-grid',
-      label: 'Reveal the requested count-by drawing',
-      cards: Array.from({ length: 4 }, (_, index) => ({
-        label: `Car ${index + 1} · count ${4 * (index + 1)}`,
-        sections: [{ kind: 'array', rows: 1, columns: 4, item: 'dot', glyph: '◉' }]
-      }))
-    });
-  }
 
-  if (
-    !(lessonNumber === 2 && problem.number <= 2) &&
-    !(lessonNumber === 4 && problem.number <= 3)
-  ) {
-    sections.push({
-      kind: 'equations',
-      label: solved ? 'Teacher Edition completed response' : 'Official response structure',
-      lines: solved ? problem.equations : blankEquations
-    });
+  if (lessonNumber === 5) {
+    const configs = {
+      1: { blank: ['There are ____ groups of 3 tomatoes.', '6 ÷ 3 = 2'], solved: ['There are 2 groups of 3 tomatoes.', '6 ÷ 3 = 2'], answers: [['2'], []], printed: 1, overlay: false },
+      2: { blank: ['There are ____ groups.', '8 ÷ 2 = ____'], solved: ['There are 4 groups.', '8 ÷ 2 = 4'], answers: [['4'], ['4']], printed: 1, overlay: true },
+      3: { blank: ['10 ÷ 5 = ____'], solved: ['10 ÷ 5 = 2'], answers: [['2']], printed: 1, overlay: true },
+      4: { blank: ['12 ÷ 3 = ____', 'How many groups are there? ____'], solved: ['12 ÷ 3 = 4', 'There are 4 groups.'], answers: [['4'], ['4']], printed: 1, overlay: true }
+    } as const;
+    if (problem.number <= 4) {
+      const config = configs[problem.number as keyof typeof configs];
+      addCrop(config.overlay);
+      addResponse({
+        prompt: config.overlay ? 'Circle equal groups directly on the printed object bank, then complete the statements.' : 'Read the printed tomato groups and complete the statement.',
+        blankLines: [...config.blank], solvedLines: [...config.solved], answers: config.answers.map((answers) => [...answers]),
+        printedLineCount: config.printed
+      });
+      if (problem.number >= 2) addSolvedArray(problem.quotient ?? 1, problem.knownGroupSize ?? 1, `${problem.quotient} equal groups of ${problem.knownGroupSize}`);
+    } else if (problem.number === 5) {
+      addCrop(true);
+      addResponse({
+        prompt: 'Circle groups of 3 crackers, write the division sentence, and draw the matching number bond.',
+        blankLines: ['a. Division sentence: ____'], solvedLines: ['a. Division sentence: 9 ÷ 3 = 3'],
+        answers: [['9 ÷ 3 = 3']], printedLineCount: 1, sketch: true
+      });
+      if (solved) sections.push({
+        kind: 'number-bond', label: 'b. Three cracker bags', whole: '9',
+        parts: [{ label: '3', sublabel: 'bag 1' }, { label: '3', sublabel: 'bag 2' }, { label: '3', sublabel: 'bag 3' }],
+        equations: ['3 + 3 + 3 = 9']
+      });
+    } else {
+      addResponse({
+        prompt: 'Count by fours to 16, draw one group of wheels for each car, then write the division sentence.',
+        blankLines: ['a. Count-by: ____', 'b. Division sentence: ____'],
+        solvedLines: ['a. Count-by: 4, 8, 12, 16', 'b. Division sentence: 16 ÷ 4 = 4'],
+        answers: [['4, 8, 12, 16'], ['16 ÷ 4 = 4']], printedLineCount: 2, sketch: true
+      });
+      addSolvedArray(4, 4, 'Four cars use 4 wheels each');
+    }
   }
-  sections.push({
-    kind: 'note',
-    label: solved ? 'Answer and meaning' : 'Student response space',
-    text: solved
-      ? problem.solvedAnswer
-      : problem.blankWorkspaceLabel ?? 'Use the official model and leave the final response open.'
-  });
 
   return {
-    title: `Problem ${problem.number}: Teacher Edition observed workspace`,
-    sourceNote: `Problem-level model observed directly on the official Module 1 Lesson ${lessonNumber} Problem Set page.`,
+    title: `Problem ${problem.number}`,
+    sourceNote: '',
     sections
   };
 }
@@ -2218,6 +3012,131 @@ function blankEquation(equation: string): string {
   return `${equation.slice(0, equalsIndex + 1).trimEnd()} ____`;
 }
 
+function conceptSectionsFor(seed: LessonSeed, teacherSource: string): ProblemSetCenteredLesson['conceptSections'] {
+  const lessonSpecific: Partial<Record<number, ProblemSetCenteredLesson['conceptSections']>> = {
+    1: [
+      {
+        title: '1. Multiplication requires equal groups',
+        body: 'Count how many groups there are and how many objects are in one group. A multiplication sentence applies only when every group has the same size.',
+        teacherSource,
+        checkpoints: ['Identify the number of groups.', 'Identify the size of one group.', 'Reject a multiplication description when the groups are unequal.']
+      },
+      {
+        title: '2. Keep four representations connected',
+        body: 'The picture, repeated addition, unit form such as “4 threes,” and the multiplication sentence must all describe the same equal groups and total.',
+        teacherSource,
+        checkpoints: ['Add one addend for each group.', 'Keep every addend equal to the group size.', 'Read the first factor as the number of groups.']
+      },
+      {
+        title: '3. Check the total against the picture',
+        body: 'Count the pictured objects and verify that repeated addition and multiplication produce that same total.',
+        teacherSource,
+        checkpoints: ['Count the visible objects.', 'Compare the two totals.', 'Explain the mismatch if the groups are not equal.']
+      }
+    ],
+    2: [
+      {
+        title: '1. Read an array by horizontal rows',
+        body: 'An array organizes equal groups into aligned rows and columns. In this lesson, read the number of rows first and the number in each row second.',
+        teacherSource,
+        checkpoints: ['Trace one horizontal row.', 'Count all rows.', 'Count the objects in one row.']
+      },
+      {
+        title: '2. Connect rows to the factors',
+        body: 'For a 3-by-4 array, 3 names the rows, 4 names the objects in each row, and 12 names the total.',
+        teacherSource,
+        checkpoints: ['Say “3 rows of 4.”', 'Write 3 × 4.', 'Verify the array contains 12 objects.']
+      },
+      {
+        title: '3. Rearranging does not change the quantity',
+        body: 'Two separated groups of 5 and an array with 2 rows of 5 have the same group count, group size, and total, even though the arrangement looks different.',
+        teacherSource,
+        checkpoints: ['Compare the group count.', 'Compare the group size.', 'Name one visual difference.']
+      }
+    ],
+    3: [
+      {
+        title: '1. Each factor has a meaning',
+        body: 'The first factor tells the number of groups or rows. The second factor tells the size of each group or row.',
+        teacherSource,
+        checkpoints: ['Name the first factor with its unit.', 'Name the second factor with its unit.', 'Name the product as the total.']
+      },
+      {
+        title: '2. Pictures can supply missing factors',
+        body: 'When the printed sentence leaves a factor blank, count the boxes, rows, or objects in one group directly from the source picture before multiplying.',
+        teacherSource,
+        checkpoints: ['Use the picture, not a guess.', 'Distinguish rows from row size.', 'Use the same factors in the equation.']
+      },
+      {
+        title: '3. Rows become number-bond parts',
+        body: 'A number bond can show the array total as equal parts, with one part for each row and each part equal to the row size.',
+        teacherSource,
+        checkpoints: ['Use one bond part per row.', 'Label every part with the row size.', 'Check that the parts compose the product.']
+      }
+    ],
+    4: [
+      {
+        title: '1. Division can find the size of each group',
+        body: 'When the total and the number of equal groups are known, share the total fairly. The quotient tells how many objects belong in each group.',
+        teacherSource,
+        checkpoints: ['Identify the whole.', 'Identify the known number of groups.', 'Place the unknown inside each group.']
+      },
+      {
+        title: '2. Fair-share until every group is equal',
+        body: 'Distribute objects one at a time or read the already divided picture, then count one completed group to find the quotient.',
+        teacherSource,
+        checkpoints: ['Keep the groups equal.', 'Use every object in the whole.', 'Count the size of one group.']
+      },
+      {
+        title: '3. State what the quotient means',
+        body: 'In 18 ÷ 2 = 9, the quotient 9 means 9 objects in each of 2 groups. Multiplying 2 × 9 checks the whole of 18.',
+        teacherSource,
+        checkpoints: ['Attach the correct unit to 9.', 'Multiply quotient by group count.', 'Recover the original whole.']
+      }
+    ],
+    5: [
+      {
+        title: '1. Division can find the number of groups',
+        body: 'When the total and the size of each group are known, make equal groups of that size. The quotient tells how many groups can be made.',
+        teacherSource,
+        checkpoints: ['Identify the whole.', 'Identify the known group size.', 'Place the unknown on the number of groups.']
+      },
+      {
+        title: '2. Group and count by the known size',
+        body: 'Circle equal groups on the object bank or count by the group size until reaching the whole. Each count names one completed group.',
+        teacherSource,
+        checkpoints: ['Circle exactly the known group size.', 'Use every object once.', 'Count the completed groups.']
+      },
+      {
+        title: '3. Contrast the two division meanings',
+        body: 'Lesson 4 found how many were in each group. Lesson 5 finds how many groups there are. The equation alone is not enough; the model and unit determine the quotient’s meaning.',
+        teacherSource,
+        checkpoints: ['Name what is already known.', 'Name what the quotient represents.', 'Check with the related multiplication fact.']
+      }
+    ]
+  };
+  return lessonSpecific[seed.lessonNumber] ?? [
+    {
+      title: `1. ${M1_TEACHER_OBJECTIVES[seed.lessonNumber]}`,
+      body: seed.concept,
+      teacherSource,
+      checkpoints: ['Name the quantities in the model.', 'Keep each quantity tied to its unit.', 'Write the equation after interpreting the model.']
+    },
+    {
+      title: '2. Represent the relationship',
+      body: `Represent the same source relationship in words, a model, and an equation. ${seed.concept}`,
+      teacherSource,
+      checkpoints: ['Preserve every given quantity.', 'Place the unknown where the source places it.', 'Use an operation that matches the model.']
+    },
+    {
+      title: '3. Explain and check',
+      body: seed.contrast,
+      teacherSource,
+      checkpoints: ['Check the operation against the story.', 'Check the model quantities.', 'State the answer with its unit.']
+    }
+  ];
+}
+
 function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
   const teacherEditionBasis = m1TeacherSource(seed.lessonNumber);
   const teacherEditionImages = teacherEditionPageImagesFromBasis(teacherEditionBasis);
@@ -2234,41 +3153,10 @@ function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
     sourcePageImages: teacherEditionImages,
     blankSourcePageImages: teacherEditionImages,
     solvedSourcePageImages: [...teacherEditionImages, ...answerKeyImages],
-    conceptSections: [
-      {
-        title: `1. ${M1_TEACHER_OBJECTIVES[seed.lessonNumber]}`,
-        body: seed.concept,
-        teacherSource: teacherEditionBasis,
-        checkpoints: [
-          'Name the equal groups, array rows, tape units, or story parts before solving.',
-          'Keep every quantity and unit tied to the visible model.',
-          'Write the equation only after identifying what each factor or quotient means.'
-        ]
-      },
-      {
-        title: '2. Represent the relationship',
-        body: `Use the lesson's equal-group, array, tape, or story structure to represent the same relationship in words, a model, and an equation. ${seed.concept}`,
-        teacherSource: teacherEditionSourceNote(seed),
-        checkpoints: [
-          'Preserve the given number of groups and size of each group.',
-          'Place the unknown where the story or diagram places it.',
-          'Use repeated addition, multiplication, or division to describe the same whole.'
-        ]
-      },
-      {
-        title: '3. Explain and check',
-        body: seed.contrast,
-        teacherSource: teacherEditionBasis,
-        checkpoints: [
-          'Check the operation against the story.',
-          'Check that equal groups are actually equal.',
-          'Check the final sentence includes the correct unit.'
-        ]
-      }
-    ],
+    conceptSections: conceptSectionsFor(seed, teacherEditionBasis),
     problems: seed.problems.map((problem) => {
       const alignedProblem = sourcePromptFromWorkbook(seed.lessonNumber, problem);
-      return makeProblem({
+      const builtProblem = makeProblem({
         sourcePageImages: problemSetImages,
         blankSourcePageImages: problemSetImages,
         solvedSourcePageImages: [...problemSetImages, ...answerKeyImages],
@@ -2276,6 +3164,18 @@ function makeLesson(seed: LessonSeed): ProblemSetCenteredLesson {
         blankVisual: observedM1ProblemVisual(seed.lessonNumber, alignedProblem, false) ?? alignedProblem.blankVisual,
         solvedVisual: observedM1ProblemVisual(seed.lessonNumber, alignedProblem, true) ?? alignedProblem.solvedVisual
       });
+      if (seed.lessonNumber > 21) return builtProblem;
+      return {
+        ...builtProblem,
+        sourcePromptInVisual: true,
+        blankPrompts: [],
+        blankVisual: builtProblem.blankVisual
+          ? { ...builtProblem.blankVisual, sourceNote: '' }
+          : builtProblem.blankVisual,
+        solvedVisual: builtProblem.solvedVisual
+          ? { ...builtProblem.solvedVisual, sourceNote: '' }
+          : builtProblem.solvedVisual
+      };
     })
   };
 }
@@ -3830,7 +4730,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 2,
-        sourcePrompt: 'The baker packs 36 bran muffins in boxes of 4. Draw a tape diagram to find the number of boxes.',
+        sourcePrompt: 'The baker packs 36 bran muffins in boxes of 4. Draw and label a tape diagram to find the number of boxes he packs.',
         solvedAnswer: 'The baker packs 9 boxes.',
         equations: ['36 divided by 4 = 9', '9 x 4 = 36'],
         knownTotal: 36,
@@ -4038,7 +4938,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       {
         number: 1,
-        sourcePrompt: 'Label arrays and complete decomposed division sentences for 36 ÷ 3, 25 ÷ 5, 28 ÷ 4, and 32 ÷ 4.',
+        sourcePrompt: 'Label the array. Then, fill in the blanks to make true number sentences.',
         solvedAnswer: 'Answer key: a. 12; 10; 2; 2. b. 5; 1; 1; 5. c. 7; 5; 8; 2; 8; 5, 2, 7. d. 8; 20, 5; 12, 3; 20, 12, 5, 3, 8.',
         equations: [
           '36 ÷ 3 = 12; 10 + 2 = 12',
@@ -4068,7 +4968,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 2,
-        sourcePrompt: 'Match equal division expressions.',
+        sourcePrompt: 'Match the equal expressions.',
         solvedAnswer: 'First bucket matches the fourth ball; second matches the first; third matches the second; fourth matches the third.',
         equations: ['24 ÷ 2 = 12', '36 ÷ 3 = 12', '39 ÷ 3 = 13', '26 ÷ 2 = 13'],
         quotient: 12,
@@ -4093,7 +4993,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 3,
-        sourcePrompt: 'Nell draws an array to find 24 ÷ 2. Explain Nell\'s strategy.',
+        sourcePrompt: 'Nell draws the array below to find the answer to 24 ÷ 2. Explain Nell\'s strategy.',
         solvedAnswer: '24 ÷ 2 is broken into two smaller facts: 12 ÷ 2 and 12 ÷ 2; the sum of the two smaller facts is found to answer the larger fact.',
         equations: ['12 ÷ 2 = 6', '12 ÷ 2 = 6', '6 + 6 = 12', '24 ÷ 2 = 12'],
         knownTotal: 24,
@@ -4180,7 +5080,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
     problems: [
       {
         number: 1,
-        sourcePrompt: 'Ted buys 3 books at $8 each and a $4 magazine. Find the book cost and total cost.',
+        sourcePrompt: 'Ted buys 3 books and a magazine at the book store. Each book costs $8. A magazine costs $4.',
         solvedAnswer: 'The books cost $24. Ted spends $28 altogether.',
         equations: ['3 x 8 = 24', '24 + 4 = 28'],
         knownTotal: 28,
@@ -4206,7 +5106,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 2,
-        sourcePrompt: 'Seven children share 28 silly bands equally. Find each child\'s share and the amount for 3 children.',
+        sourcePrompt: 'Seven children share 28 silly bands equally.',
         solvedAnswer: 'Each child gets 4 silly bands. Three children get 12 silly bands.',
         equations: ['28 ÷ 7 = 4', '3 x 4 = 12'],
         knownTotal: 28,
@@ -4260,7 +5160,7 @@ export const M1_PROBLEM_SET_CENTERED_LESSONS: Record<number, ProblemSetCenteredL
       },
       {
         number: 4,
-        sourcePrompt: 'There are 25 blue balloons and 15 red balloons. Five children get equal numbers of each color. How many blue and red balloons does each child get?',
+        sourcePrompt: 'There are 25 blue balloons and 15 red balloons at a party. Five children are given an equal number of each color balloon. How many blue and red balloons does each child get?',
         solvedAnswer: 'Each child gets 5 blue balloons and 3 red balloons.',
         equations: ['25 ÷ 5 = 5', '15 ÷ 5 = 3'],
         knownTotal: 40,

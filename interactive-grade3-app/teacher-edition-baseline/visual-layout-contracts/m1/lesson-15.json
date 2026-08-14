@@ -42,13 +42,30 @@
         ],
         "answerKeyEvidence": "Top: 8; 8; Bottom: 8; 8; Top: 4, 12; 3, 12; Bottom: 3, 12; 3, 12; array showing 3 rows of 4 or 4 rows of 3; Top: 4, 28; 7, 4; Bottom: 7, 28; 4, 7; array showing 7 rows of 4 or 4 rows of 7",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "source-commutative-tape-array",
+          "subpartCount": 3,
+          "modelPrimitive": "printed-three-pairs-of-tape-diagrams",
+          "modelCounts": [
+            2,
+            4,
+            8,
+            3,
+            4,
+            12,
+            7,
+            4,
+            28
+          ],
+          "modelOrientation": "three-stacked-pairs-of-commutative-tapes",
+          "printedEquationLineCount": 6,
+          "openWorkspaceCount": 3,
+          "responseStructure": "label-each-tape-pair-complete-equations-and-draw-array",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "A tight crop preserves only the official problem-level mathematical scaffold; response fields and solution reveal remain authored HTML."
+        "sourceLayoutNotes": "The fingerprinted crop preserves only the printed mathematical scaffold; compact authored HTML supplies response fields and solved reveal without repeating the prompt."
       }
     },
     {
@@ -60,14 +77,22 @@
         ],
         "answerKeyEvidence": "Two tape diagrams drawn and labeled to model 4 × 6 = 6 × 4",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "open-commutative-tapes",
+          "subpartCount": 2,
+          "modelPrimitive": "student-drawn-paired-tapes",
+          "modelCounts": [
+            4,
+            6,
+            24
+          ],
+          "modelOrientation": "two-open-tape-diagrams",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 2,
+          "responseStructure": "draw-and-label-four-by-six-and-six-by-four-tapes"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The source provides open drawing or written-response space. Blank remains unfilled; Solved reveals only answer-key-supported evidence."
+        "sourceLayoutNotes": "The source prints open learner work space. Blank remains interactive and unfilled; Solved reveals only answer-key-supported mathematical work."
       }
     },
     {
@@ -79,14 +104,22 @@
         ],
         "answerKeyEvidence": "Tape diagram drawn and labeled to represent 32 petals",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "open-tape-word-problem",
+          "subpartCount": 1,
+          "modelPrimitive": "student-drawn-tape",
+          "modelCounts": [
+            4,
+            8,
+            32
+          ],
+          "modelOrientation": "word-problem-over-open-tape-workspace",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "draw-four-part-tape-and-show-total-petals"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The source provides open drawing or written-response space. Blank remains unfilled; Solved reveals only answer-key-supported evidence."
+        "sourceLayoutNotes": "The source prints open learner work space. Blank remains interactive and unfilled; Solved reveals only answer-key-supported mathematical work."
       }
     },
     {
@@ -98,14 +131,22 @@
         ],
         "answerKeyEvidence": "32",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "open-word-problem-response",
+          "subpartCount": 1,
+          "modelPrimitive": "student-authored-rdw-space",
+          "modelCounts": [
+            8,
+            4,
+            32
+          ],
+          "modelOrientation": "word-problem-over-open-workspace",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "find-total-legs-on-eight-chairs"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The source provides open drawing or written-response space. Blank remains unfilled; Solved reveals only answer-key-supported evidence."
+        "sourceLayoutNotes": "The source prints open learner work space. Blank remains interactive and unfilled; Solved reveals only answer-key-supported mathematical work."
       }
     }
   ]

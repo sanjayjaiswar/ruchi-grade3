@@ -121,7 +121,7 @@
           "family": "source-illustration-model",
           "modelPrimitive": "source-illustration",
           "modelOrientation": "source-order",
-          "printedEquationLineCount": 2
+          "printedEquationLineCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -140,7 +140,7 @@
           "family": "open-written-response",
           "modelPrimitive": "student-authored-or-absent",
           "modelOrientation": "open-workspace",
-          "printedEquationLineCount": 2,
+          "printedEquationLineCount": 0,
           "openWorkspaceCount": 1,
           "responseStructure": "open-response"
         },

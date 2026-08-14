@@ -42,13 +42,24 @@
         ],
         "answerKeyEvidence": "4 groups of 2 birds circled; 4; 4",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "source-object-grouping",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-eight-bird-bank",
+          "modelCounts": [
+            8,
+            2,
+            4
+          ],
+          "modelOrientation": "bird-bank-over-division-and-answer",
+          "printedEquationLineCount": 2,
+          "openWorkspaceCount": 0,
+          "responseStructure": "circle-four-groups-complete-equation-and-cages",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "A tight crop preserves only the official problem-level mathematical scaffold; response fields and solution reveal remain authored HTML."
+        "sourceLayoutNotes": "The fingerprinted crop preserves only the printed mathematical scaffold; compact authored HTML supplies response fields and solved reveal without repeating the prompt."
       }
     },
     {
@@ -60,13 +71,24 @@
         ],
         "answerKeyEvidence": "2 fish drawn in each bowl; 2; 2; 2",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "source-equal-containers",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-five-fish-bowls",
+          "modelCounts": [
+            10,
+            5,
+            2
+          ],
+          "modelOrientation": "five-bowl-tape-over-related-facts-and-answer",
+          "printedEquationLineCount": 3,
+          "openWorkspaceCount": 0,
+          "responseStructure": "draw-two-fish-per-bowl-complete-two-facts-and-answer",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "A tight crop preserves only the official problem-level mathematical scaffold; response fields and solution reveal remain authored HTML."
+        "sourceLayoutNotes": "The fingerprinted crop preserves only the printed mathematical scaffold; compact authored HTML supplies response fields and solved reveal without repeating the prompt."
       }
     },
     {
@@ -78,13 +100,31 @@
         ],
         "answerKeyEvidence": "First rabbit matched to 5; Second rabbit matched to 8; Third rabbit matched to 9; Fourth rabbit matched to 7; Fifth rabbit matched to 6",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "source-illustration-fact-match",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-rabbits-and-carrots",
+          "modelCounts": [
+            10,
+            16,
+            18,
+            14,
+            12,
+            5,
+            8,
+            9,
+            7,
+            6
+          ],
+          "modelOrientation": "five-rabbits-over-five-carrots",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 0,
+          "responseStructure": "match-five-division-facts-to-quotients",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "A tight crop preserves only the official problem-level mathematical scaffold; response fields and solution reveal remain authored HTML."
+        "sourceLayoutNotes": "The fingerprinted crop preserves only the printed mathematical scaffold; compact authored HTML supplies response fields and solved reveal without repeating the prompt."
       }
     },
     {
@@ -96,13 +136,24 @@
         ],
         "answerKeyEvidence": "7; labels will vary",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "source-two-part-tape",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-two-part-ribbon-tape",
+          "modelCounts": [
+            14,
+            2,
+            7
+          ],
+          "modelOrientation": "two-part-horizontal-tape-with-open-labels",
+          "printedEquationLineCount": 1,
+          "openWorkspaceCount": 0,
+          "responseStructure": "label-whole-equal-parts-and-complete-length",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "A tight crop preserves only the official problem-level mathematical scaffold; response fields and solution reveal remain authored HTML."
+        "sourceLayoutNotes": "The fingerprinted crop preserves only the printed mathematical scaffold; compact authored HTML supplies response fields and solved reveal without repeating the prompt."
       }
     },
     {
@@ -114,14 +165,22 @@
         ],
         "answerKeyEvidence": "6",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "open-word-problem-response",
+          "subpartCount": 1,
+          "modelPrimitive": "student-authored-rdw-space",
+          "modelCounts": [
+            12,
+            2,
+            6
+          ],
+          "modelOrientation": "word-problem-over-open-workspace",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "show-groups-of-two-and-write-days-answer"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The source provides open drawing or written-response space. Blank remains unfilled; Solved reveals only answer-key-supported evidence."
+        "sourceLayoutNotes": "The source prints open learner work space. Blank remains interactive and unfilled; Solved reveals only answer-key-supported mathematical work."
       }
     },
     {
@@ -133,14 +192,22 @@
         ],
         "answerKeyEvidence": "$9",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "open-word-problem-response",
+          "subpartCount": 1,
+          "modelPrimitive": "student-authored-rdw-space",
+          "modelCounts": [
+            18,
+            2,
+            9
+          ],
+          "modelOrientation": "word-problem-over-open-workspace",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "split-cost-into-two-equal-shares-and-write-answer"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The source provides open drawing or written-response space. Blank remains unfilled; Solved reveals only answer-key-supported evidence."
+        "sourceLayoutNotes": "The source prints open learner work space. Blank remains interactive and unfilled; Solved reveals only answer-key-supported mathematical work."
       }
     }
   ]

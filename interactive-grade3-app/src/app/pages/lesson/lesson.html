@@ -68,7 +68,11 @@
       <button class="quiet-button reset-button" (click)="resetLesson()">Reset</button>
     </aside>
 
-    <section class="problem-centered-workspace" *ngIf="problemSetCenteredLesson as problemLesson">
+    <section
+      class="problem-centered-workspace"
+      [attr.data-module]="module.id"
+      [attr.data-lesson]="lesson.lessonNumber"
+      *ngIf="problemSetCenteredLesson as problemLesson">
       <ng-container [ngSwitch]="activeProblemSection">
         <section [id]="problemSectionId('concept')" class="problem-centered-panel" role="tabpanel" tabindex="-1" *ngSwitchCase="'concept'">
           <div class="problem-centered-concept">

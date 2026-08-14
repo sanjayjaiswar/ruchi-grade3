@@ -11,9 +11,92 @@ const lesson12SolvedSourcePages = [...lesson12ProblemSetPages, ...lesson12Answer
 function withLesson12Visuals(problem: ProblemSetCenteredProblem): ProblemSetCenteredProblem {
   return {
     ...problem,
-    blankVisual: lesson12ObservedVisual(problem, false),
-    solvedVisual: lesson12ObservedVisual(problem, true)
+    sourcePromptInVisual: true,
+    blankPrompts: [],
+    blankVisual: reviewedLesson12Visual(problem, false),
+    solvedVisual: reviewedLesson12Visual(problem, true)
   };
+}
+
+function reviewedLesson12Visual(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec {
+  const crops: Record<number, { page: number; x: number; y: number; width: number; height: number; alt: string }> = {
+    1: { page: 169, x: 175, y: 190, width: 450, height: 150, alt: 'Official bank of eight ungrouped birds' },
+    2: { page: 169, x: 205, y: 445, width: 440, height: 145, alt: 'Official five empty fish-bowl containers with total label' },
+    3: { page: 169, x: 75, y: 685, width: 690, height: 205, alt: 'Official rabbit division facts and carrot quotient matching model' },
+    4: { page: 170, x: 240, y: 235, width: 430, height: 165, alt: 'Official two-part ribbon tape diagram with open labels' }
+  };
+  const crop = crops[problem.number];
+  const sections: ProblemVisualSpec['sections'] = [];
+  const addCrop = (sketchOverlay = false): void => {
+    if (!crop) return;
+    sections.push({
+      kind: 'source-crop', label: '',
+      src: `/source-pages/m1-teacher/page-${String(crop.page).padStart(3, '0')}.png`,
+      alt: crop.alt, imageWidth: 816, imageHeight: 1056,
+      crop: { x: crop.x, y: crop.y, width: crop.width, height: crop.height },
+      displayWidth: Math.min(680, Math.round(crop.width * 1.2)),
+      sketchOverlay: sketchOverlay && !solved
+    });
+  };
+  const response = (
+    prompt: string,
+    blankLines: string[],
+    solvedLines: string[],
+    answers: string[][],
+    printedLineCount: number,
+    sketchWorkspace = false,
+    placeholder?: string,
+    solvedResponse?: string
+  ): void => {
+    sections.push({
+      kind: 'source-response-workspace', label: '', wide: true, columns: 1,
+      parts: [{
+        prompt,
+        lines: solved ? solvedLines : blankLines,
+        lineAnswers: answers,
+        printedLineCount,
+        interactiveLines: !solved && answers.length > 0,
+        sketchWorkspace: !solved && sketchWorkspace,
+        responsePlaceholder: !solved ? placeholder : undefined,
+        response: solved ? solvedResponse : undefined
+      }]
+    });
+  };
+
+  if (problem.number === 1) {
+    addCrop(true);
+    if (solved) sections.push({ kind: 'card-grid', label: '', cards: Array.from({ length: 4 }, (_, index) => ({ label: `Cage ${index + 1}`, sections: [{ kind: 'array', rows: 1, columns: 2, item: 'dot', glyph: '●' }] })) });
+    response('Circle groups of 2, then complete both statements.', ['8 ÷ 2 = ____', 'There are ____ cages of birds.'], ['8 ÷ 2 = 4', 'There are 4 cages of birds.'], [['4'], ['4']], 2);
+  } else if (problem.number === 2) {
+    addCrop(true);
+    if (solved) sections.push({ kind: 'card-grid', label: '', cards: Array.from({ length: 5 }, (_, index) => ({ label: `Bowl ${index + 1}`, sections: [{ kind: 'array', rows: 1, columns: 2, item: 'dot', glyph: '●' }] })) });
+    response('Draw fish in the printed bowls, then complete all three statements.', ['5 × ____ = 10', '10 ÷ 5 = ____', 'There are ____ fish in each bowl.'], ['5 × 2 = 10', '10 ÷ 5 = 2', 'There are 2 fish in each bowl.'], [['2'], ['2'], ['2']], 3);
+  } else if (problem.number === 3) {
+    addCrop();
+    const facts = ['10 ÷ 2', '16 ÷ 2', '18 ÷ 2', '14 ÷ 2', '12 ÷ 2'];
+    const carrots = ['8', '5', '9', '6', '7'];
+    sections.push({
+      kind: 'expression-match', label: '', prompt: 'Match each rabbit fact to its carrot.',
+      topItems: facts, bottomItems: carrots, topShape: 'mouse', bottomShape: 'tag',
+      interactive: !solved, showMatches: solved,
+      matches: [
+        { topIndex: 0, bottomIndex: 1 }, { topIndex: 1, bottomIndex: 0 },
+        { topIndex: 2, bottomIndex: 2 }, { topIndex: 3, bottomIndex: 4 },
+        { topIndex: 4, bottomIndex: 3 }
+      ]
+    });
+  } else if (problem.number === 4) {
+    addCrop();
+    if (solved) sections.push({ kind: 'tape', label: '', totalLabel: '14 meters', parts: [{ label: '7' }, { label: '7' }] });
+    response('Label the tape diagram, including the unknown.', ['Each piece is ____ meters long.'], ['Each piece is 7 meters long.'], [['7']], 1);
+  } else if (problem.number === 5) {
+    if (solved) sections.push({ kind: 'tape', label: '', totalLabel: '12 bars', parts: Array.from({ length: 6 }, () => ({ label: '2' })) });
+    response('Show your work.', [], [], [], 0, true, 'Write how many days Roy needs.', 'It will take Roy 6 days.');
+  } else {
+    if (solved) sections.push({ kind: 'tape', label: '', totalLabel: '$18', parts: [{ label: '$9' }, { label: '$9' }] });
+    response('Show your work.', [], [], [], 0, true, 'Write how much Sarah pays.', 'Sarah pays $9.');
+  }
+  return { title: '', sourceNote: '', sections };
 }
 
 function lesson12ObservedVisual(problem: ProblemSetCenteredProblem, solved: boolean): ProblemVisualSpec {

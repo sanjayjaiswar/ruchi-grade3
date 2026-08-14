@@ -42,13 +42,31 @@
         ],
         "answerKeyEvidence": "12, 16, 20, 24, 28, 32, 36, 40; 8 matched to 2 × 4; 12 matched to 3 × 4; 16 matched to 4 × 4; 20 matched to 5 × 4; 24 matched to 6 × 4; 28 matched to 7 × 4; 32 matched to 8 × 4; 36 matched to 9 × 4; 40 matched to 10 × 4",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "source-skip-count-match",
+          "subpartCount": 2,
+          "modelPrimitive": "printed-fruit-rows-count-boxes-and-baskets",
+          "modelCounts": [
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32,
+            36,
+            40
+          ],
+          "modelOrientation": "ten-fruit-rows-between-count-boxes-and-fact-baskets",
+          "printedEquationLineCount": 10,
+          "openWorkspaceCount": 0,
+          "responseStructure": "complete-eight-skip-count-boxes-and-match-nine-facts",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "A tight crop preserves only the official problem-level mathematical scaffold; response fields and solution reveal remain authored HTML."
+        "sourceLayoutNotes": "The fingerprinted crop preserves only the printed mathematical scaffold; compact authored HTML supplies response fields and solved reveal without repeating the prompt."
       }
     },
     {
@@ -60,14 +78,22 @@
         ],
         "answerKeyEvidence": "Tape diagram drawn and labeled; 28",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "open-tape-word-problem",
+          "subpartCount": 1,
+          "modelPrimitive": "student-drawn-tape",
+          "modelCounts": [
+            7,
+            4,
+            28
+          ],
+          "modelOrientation": "word-problem-over-open-tape-and-answer",
+          "printedEquationLineCount": 1,
+          "openWorkspaceCount": 1,
+          "responseStructure": "draw-seven-part-tape-and-complete-wheels-answer"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The source provides open drawing or written-response space. Blank remains unfilled; Solved reveals only answer-key-supported evidence."
+        "sourceLayoutNotes": "The source prints open learner work space. Blank remains interactive and unfilled; Solved reveals only answer-key-supported mathematical work."
       }
     },
     {
@@ -79,14 +105,22 @@
         ],
         "answerKeyEvidence": "Tape diagram drawn and labeled to show 24 beads used",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "open-tape-word-problem",
+          "subpartCount": 1,
+          "modelPrimitive": "student-drawn-tape",
+          "modelCounts": [
+            4,
+            6,
+            24
+          ],
+          "modelOrientation": "word-problem-over-open-tape-workspace",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "draw-four-part-tape-and-show-total-beads"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The source provides open drawing or written-response space. Blank remains unfilled; Solved reveals only answer-key-supported evidence."
+        "sourceLayoutNotes": "The source prints open learner work space. Blank remains interactive and unfilled; Solved reveals only answer-key-supported mathematical work."
       }
     },
     {
@@ -98,14 +132,22 @@
         ],
         "answerKeyEvidence": "20",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "open-word-problem-response",
+          "subpartCount": 1,
+          "modelPrimitive": "student-authored-rdw-space",
+          "modelCounts": [
+            5,
+            4,
+            20
+          ],
+          "modelOrientation": "word-problem-over-open-workspace",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "find-total-sides-on-five-rectangles"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The source provides open drawing or written-response space. Blank remains unfilled; Solved reveals only answer-key-supported evidence."
+        "sourceLayoutNotes": "The source prints open learner work space. Blank remains interactive and unfilled; Solved reveals only answer-key-supported mathematical work."
       }
     }
   ]

@@ -1,6 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component, OnDestroy } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, NavigationEnd, Router, RouterLink } from '@angular/router';
 import { Subscription, filter } from 'rxjs';
@@ -17,6 +16,20 @@ import {
   readingUnitById,
   scopePrintedPage
 } from '../../data/reading-curriculum.data';
+import {
+  READING_EVIDENCE_QUESTIONS,
+  READING_TEXT_EVIDENCE_SOURCE,
+  ReadingEvidenceQuestion,
+  ReadingStrategyGuide,
+  readingQuestionByNumber,
+  readingQuestionsForUnit,
+  readingQuestionsForWeek,
+  readingStrategyGuide
+} from '../../data/reading-evidence-questions.data';
+import {
+  READING_STRATEGY_EXAMPLES,
+  ReadingStrategyExample
+} from '../../data/reading-strategy-examples.data';
 import {
   ReadingOfficialLesson,
   WORKING_TOGETHER_LESSON,
@@ -35,11 +48,11 @@ import {
   READING_LEVEL_FACTS
 } from '../../data/reading-learning-system.data';
 
-type ReadingPageKind = 'overview' | 'sources' | 'standards' | 'assessments' | 'levels' | 'unit' | 'lesson';
+type ReadingPageKind = 'overview' | 'sources' | 'standards' | 'assessments' | 'levels' | 'unit' | 'lesson' | 'practice';
 
 @Component({
   selector: 'app-reading-home-page',
-  imports: [FormsModule, NgFor, NgIf, RouterLink],
+  imports: [NgFor, NgIf, RouterLink],
   templateUrl: './reading-home.html',
   styleUrl: './reading-home.css'
 })
@@ -51,6 +64,7 @@ export class ReadingHomePage implements OnDestroy {
   readonly assessmentSystem = GRADE3_ASSESSMENT_SYSTEM;
   readonly bakerAssessmentEvidence = BAKER_ASSESSMENT_EVIDENCE;
   readonly readingLevelFacts = READING_LEVEL_FACTS;
+  readonly evidenceQuestionSource = READING_TEXT_EVIDENCE_SOURCE;
   readonly sources = {
     morelandCurriculum: MORELAND_CURRICULUM_SOURCE,
     morelandAssessments: MORELAND_ASSESSMENT_SOURCE,
@@ -66,22 +80,34 @@ export class ReadingHomePage implements OnDestroy {
     bakerSpsa: BAKER_2025_SPSA_SOURCE,
     lexile: LEXILE_FRAMEWORK_SOURCE
   };
+  readonly teachingSources = {
+    iesComprehension: 'https://ies.ed.gov/ncee/rel/reading-comprehension-k-3/teacher-pd-module1',
+    benchmarkProgram: 'https://info.benchmarkeducation.com/benchmark-advance-2022-national-view-virtual-samples',
+    californiaLiteracy: 'https://www.cde.ca.gov/ci/cl/grades2and3lcb.asp'
+  };
 
   pageKind: ReadingPageKind = 'overview';
   unit: ReadingUnit = READING_UNITS[0];
   readingWeek: ReadingWeek = READING_UNITS[0].weeks[0];
   officialLesson: ReadingOfficialLesson = WORKING_TOGETHER_LESSON;
+  evidenceQuestion: ReadingEvidenceQuestion = READING_EVIDENCE_QUESTIONS[0];
+  strategyGuide: ReadingStrategyGuide = readingStrategyGuide(READING_EVIDENCE_QUESTIONS[0].strategy);
+  strategyExample: ReadingStrategyExample = READING_STRATEGY_EXAMPLES[READING_EVIDENCE_QUESTIONS[0].strategy];
+  modelStep = 1;
+  readingActionChecks = [false, false, false];
+  practiceSelfChecks = [false, false, false];
+  practiceBookOpen = false;
+  answeredAloud = false;
   lessonNumber = 1;
   notice = '';
-  prediction = '';
-  problem = '';
-  teamwork = '';
-  evidence = '';
-  response = '';
-  openedBook = false;
-  checkedPicture = false;
+  lessonBookOpen = false;
+  lessonBeforeMoves = [false, false, false];
+  vocabularyFound = WORKING_TOGETHER_LESSON.keyVocabulary.map(() => false);
   readParagraph = false;
-  rereadSentences = false;
+  lessonRereadMoves = [false, false, false, false];
+  lessonAnswerChecks = [false, false, false];
+  lessonAnsweredAloud = false;
+  private activeEvidenceQuestionId = '';
   private readonly subscriptions = new Subscription();
 
   constructor(
@@ -106,6 +132,22 @@ export class ReadingHomePage implements OnDestroy {
 
   lessonRoute(unit: ReadingUnit, lessonNumber: number): string[] {
     return ['/ruchika', 'grade3', 'reading', 'units', unit.id, 'lessons', String(lessonNumber)];
+  }
+
+  practiceRoute(unit: ReadingUnit, questionNumber: number): string[] {
+    return ['/ruchika', 'grade3', 'reading', 'units', unit.id, 'practice', String(questionNumber)];
+  }
+
+  weekQuestions(week: ReadingWeek): ReadingEvidenceQuestion[] {
+    return readingQuestionsForWeek(this.unit.id, week.number);
+  }
+
+  unitQuestions(unit: ReadingUnit = this.unit): ReadingEvidenceQuestion[] {
+    return readingQuestionsForUnit(unit.id);
+  }
+
+  questionSourcePage(unit: ReadingUnit = this.unit): string {
+    return `${READING_TEXT_EVIDENCE_SOURCE}#page=${unit.number}`;
   }
 
   scopePage(unit: ReadingUnit): string {
@@ -141,6 +183,38 @@ export class ReadingHomePage implements OnDestroy {
     document.getElementById(stageId)?.scrollIntoView({ block: 'start', behavior: 'smooth' });
   }
 
+  scrollToPracticeStage(stageId: string): void {
+    document.getElementById(stageId)?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  }
+
+  showModelStep(step: number): void {
+    this.modelStep = Math.max(1, Math.min(4, step));
+  }
+
+  toggleReadingAction(index: number): void {
+    this.readingActionChecks[index] = !this.readingActionChecks[index];
+  }
+
+  togglePracticeCheck(index: number): void {
+    this.practiceSelfChecks[index] = !this.practiceSelfChecks[index];
+  }
+
+  toggleLessonBeforeMove(index: number): void {
+    this.lessonBeforeMoves[index] = !this.lessonBeforeMoves[index];
+  }
+
+  toggleVocabulary(index: number): void {
+    this.vocabularyFound[index] = !this.vocabularyFound[index];
+  }
+
+  toggleLessonRereadMove(index: number): void {
+    this.lessonRereadMoves[index] = !this.lessonRereadMoves[index];
+  }
+
+  toggleLessonAnswerCheck(index: number): void {
+    this.lessonAnswerChecks[index] = !this.lessonAnswerChecks[index];
+  }
+
   get previousUnitRoute(): string[] | null {
     return this.unit.number > 1 ? this.unitRoute(READING_UNITS[this.unit.number - 2]) : null;
   }
@@ -150,18 +224,57 @@ export class ReadingHomePage implements OnDestroy {
   }
 
   get lessonProgress(): number {
-    return [this.openedBook, this.checkedPicture, this.readParagraph, this.rereadSentences].filter(Boolean).length;
+    return [
+      this.lessonBookOpen,
+      this.lessonBeforeMoves.every(Boolean),
+      this.readParagraph && this.vocabularyFound.some(Boolean),
+      this.lessonRereadMoves.every(Boolean),
+      this.lessonAnsweredAloud
+    ].filter(Boolean).length;
+  }
+
+  get previousQuestionRoute(): string[] | null {
+    return this.evidenceQuestion.questionNumber > 1
+      ? this.practiceRoute(this.unit, this.evidenceQuestion.questionNumber - 1)
+      : null;
+  }
+
+  get nextQuestionRoute(): string[] | null {
+    return this.evidenceQuestion.questionNumber < 10
+      ? this.practiceRoute(this.unit, this.evidenceQuestion.questionNumber + 1)
+      : null;
   }
 
   private syncRoute(): void {
     const url = this.router.url.split(/[?#]/)[0];
     const unitId = this.route.snapshot.paramMap.get('unitId');
     const lessonValue = Number(this.route.snapshot.paramMap.get('lessonNumber'));
+    const questionValue = Number(this.route.snapshot.paramMap.get('questionNumber'));
     const routedUnit = readingUnitById(unitId);
+    const routedQuestion = readingQuestionByNumber(unitId, questionValue);
 
     const admittedLesson = admittedReadingLesson(unitId, lessonValue);
 
-    if (routedUnit && admittedLesson) {
+    if (routedUnit && routedQuestion) {
+      if (this.activeEvidenceQuestionId !== routedQuestion.id) {
+        this.modelStep = 1;
+        this.readingActionChecks = [false, false, false];
+        this.practiceSelfChecks = [false, false, false];
+        this.practiceBookOpen = false;
+        this.answeredAloud = false;
+        this.activeEvidenceQuestionId = routedQuestion.id;
+      }
+      this.pageKind = 'practice';
+      this.unit = routedUnit;
+      this.evidenceQuestion = routedQuestion;
+      this.strategyGuide = readingStrategyGuide(routedQuestion.strategy);
+      this.strategyExample = READING_STRATEGY_EXAMPLES[routedQuestion.strategy];
+      this.readingWeek = routedUnit.weeks[routedQuestion.weekNumber - 1];
+      this.title.setTitle(`Question ${routedQuestion.questionNumber}: ${routedQuestion.selectionTitle} | Grade 3 Reading`);
+    } else if (routedUnit && Number.isInteger(questionValue) && questionValue > 0) {
+      void this.router.navigate(this.unitRoute(routedUnit));
+      return;
+    } else if (routedUnit && admittedLesson) {
       this.pageKind = 'lesson';
       this.unit = routedUnit;
       this.officialLesson = admittedLesson;
@@ -197,15 +310,21 @@ export class ReadingHomePage implements OnDestroy {
     }
 
     if (this.pageKind !== 'lesson') {
-      this.prediction = '';
-      this.problem = '';
-      this.teamwork = '';
-      this.evidence = '';
-      this.response = '';
-      this.openedBook = false;
-      this.checkedPicture = false;
+      this.lessonBookOpen = false;
+      this.lessonBeforeMoves = [false, false, false];
+      this.vocabularyFound = WORKING_TOGETHER_LESSON.keyVocabulary.map(() => false);
       this.readParagraph = false;
-      this.rereadSentences = false;
+      this.lessonRereadMoves = [false, false, false, false];
+      this.lessonAnswerChecks = [false, false, false];
+      this.lessonAnsweredAloud = false;
+    }
+    if (this.pageKind !== 'practice') {
+      this.activeEvidenceQuestionId = '';
+      this.modelStep = 1;
+      this.readingActionChecks = [false, false, false];
+      this.practiceSelfChecks = [false, false, false];
+      this.practiceBookOpen = false;
+      this.answeredAloud = false;
     }
     window.scrollTo({ top: 0, behavior: 'auto' });
   }

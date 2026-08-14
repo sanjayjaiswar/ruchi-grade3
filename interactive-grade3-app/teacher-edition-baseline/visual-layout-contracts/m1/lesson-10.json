@@ -42,9 +42,27 @@
         ],
         "answerKeyEvidence": "21; 6; 6; 6; 21",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "source-decomposed-array-equation-chain",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-two-tone-square-array-with-braces",
+          "modelCounts": [
+            7,
+            3,
+            21,
+            5,
+            3,
+            15,
+            2,
+            3,
+            6
+          ],
+          "modelOrientation": "vertical-seven-by-three-split-five-and-two",
+          "printedEquationLineCount": 5,
+          "openWorkspaceCount": 0,
+          "dividerCount": 1,
+          "responseStructure": "complete-whole-two-parts-expanded-expression-and-sum",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -60,9 +78,27 @@
         ],
         "answerKeyEvidence": "24; 4; 12; 4; 12; 12; 12; 8; 24",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "source-decomposed-array-equation-chain",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-two-tone-trapezoid-array-with-braces",
+          "modelCounts": [
+            8,
+            3,
+            24,
+            4,
+            3,
+            12,
+            4,
+            3,
+            12
+          ],
+          "modelOrientation": "vertical-eight-by-three-split-four-and-four",
+          "printedEquationLineCount": 5,
+          "openWorkspaceCount": 0,
+          "dividerCount": 1,
+          "responseStructure": "complete-whole-two-equal-parts-expanded-expression-and-sum",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -78,9 +114,27 @@
         ],
         "answerKeyEvidence": "Array of 2 rows of 3 in upper album; 2; array of 3 rows of 3 in lower album; 3; 2 × 3 = 6; 3 × 3 = 9; 6 + 9; 5 × 3 = 6 + 9 = 15",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "source-framed-album-decomposition",
+          "subpartCount": 2,
+          "modelPrimitive": "printed-photo-album-frame",
+          "modelCounts": [
+            2,
+            3,
+            6,
+            3,
+            3,
+            9,
+            5,
+            3,
+            15
+          ],
+          "modelOrientation": "single-frame-split-into-two-rows-and-three-rows",
+          "printedEquationLineCount": 3,
+          "openWorkspaceCount": 2,
+          "dividerCount": 1,
+          "responseStructure": "draw-top-and-bottom-arrays-complete-two-part-facts-and-explain-given-decomposition",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],

@@ -23,6 +23,7 @@ export const routes: Routes = [
   { path: 'ruchika/grade3/reading/standards', component: ReadingHomePage },
   { path: 'ruchika/grade3/reading/assessments', component: ReadingHomePage },
   { path: 'ruchika/grade3/reading/levels', component: ReadingHomePage },
+  { path: 'ruchika/grade3/reading/units/:unitId/practice/:questionNumber', component: ReadingHomePage },
   { path: 'ruchika/grade3/reading/units/:unitId/lessons/:lessonNumber', component: ReadingHomePage },
   { path: 'ruchika/grade3/reading/units/:unitId', component: ReadingHomePage },
   { path: 'ruchika/grade3/reading/learn', redirectTo: 'ruchika/grade3/reading', pathMatch: 'full' },

@@ -42,11 +42,33 @@
         ],
         "answerKeyEvidence": "8; 8; 3; 3; 4; 4; 5, 4; 4, 5; 6, 4; 4, 6; 7, 28; 28, 7; 8, 32; 32, 8; 9, 4, 36; 36, 4, 9; 10, 4, 40; 40, 4, 10",
         "layout": {
-          "family": "source-illustration-model"
+          "family": "source-butterfly-related-facts",
+          "subpartCount": 10,
+          "modelPrimitive": "printed-ten-rows-of-four-butterfly-illustrations",
+          "modelCounts": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            4,
+            40
+          ],
+          "modelOrientation": "butterfly-array-left-multiplication-center-division-right",
+          "printedEquationLineCount": 20,
+          "openWorkspaceCount": 0,
+          "responseStructure": "complete-ten-related-multiplication-and-division-equation-pairs",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+        "sourceLayoutNotes": "The fingerprinted crop preserves only source illustration evidence; authored controls reproduce the printed response structure without repeating the prompt."
       }
     },
     {
@@ -58,11 +80,22 @@
         ],
         "answerKeyEvidence": "Tape diagram drawn and labeled showing 9 boxes packed",
         "layout": {
-          "family": "open-written-response"
+          "family": "open-tape-word-problem",
+          "subpartCount": 1,
+          "modelPrimitive": "student-drawn-nine-part-tape",
+          "modelCounts": [
+            36,
+            4,
+            9
+          ],
+          "modelOrientation": "word-problem-over-open-tape-workspace",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "draw-and-label-tape-find-number-of-boxes"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+        "sourceLayoutNotes": "The source-observed primitive, count, orientation, grouping, dividers, response order, and open-workspace requirements control Blank and Solved rendering."
       }
     },
     {
@@ -74,11 +107,22 @@
         ],
         "answerKeyEvidence": "8",
         "layout": {
-          "family": "open-written-response"
+          "family": "open-word-problem-response",
+          "subpartCount": 1,
+          "modelPrimitive": "student-authored-rdw-space",
+          "modelCounts": [
+            32,
+            4,
+            8
+          ],
+          "modelOrientation": "word-problem-over-open-workspace",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "find-glasses-in-each-row"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+        "sourceLayoutNotes": "The source-observed primitive, count, orientation, grouping, dividers, response order, and open-workspace requirements control Blank and Solved rendering."
       }
     },
     {
@@ -90,11 +134,24 @@
         ],
         "answerKeyEvidence": "$14",
         "layout": {
-          "family": "open-written-response"
+          "family": "open-word-problem-response",
+          "subpartCount": 1,
+          "modelPrimitive": "student-authored-rdw-space",
+          "modelCounts": [
+            28,
+            4,
+            2,
+            7,
+            14
+          ],
+          "modelOrientation": "word-problem-over-open-workspace",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "find-cost-of-two-notebooks"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
-        "sourceLayoutNotes": "The contract records the directly reviewed problem-level mathematical representation and exact answer-key evidence; no page-screenshot workspace is accepted."
+        "sourceLayoutNotes": "The source-observed primitive, count, orientation, grouping, dividers, response order, and open-workspace requirements control Blank and Solved rendering."
       }
     }
   ]

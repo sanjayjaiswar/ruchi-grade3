@@ -42,10 +42,19 @@
         ],
         "answerKeyEvidence": "Array of 6 rows of 2 drawn; 6, 2, 12",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "paired-open-array-panel",
+          "subpartCount": 1,
+          "columnCount": 1,
+          "modelPrimitive": "student-drawn-array",
+          "modelCounts": [
+            6,
+            2,
+            12
+          ],
+          "modelOrientation": "left-panel-open-array-over-equation",
+          "printedEquationLineCount": 1,
+          "openWorkspaceCount": 1,
+          "responseStructure": "draw-six-by-two-array-complete-equation"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -61,10 +70,19 @@
         ],
         "answerKeyEvidence": "Array of 2 rows of 6 drawn; 2, 6, 12",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "paired-open-array-panel",
+          "subpartCount": 1,
+          "columnCount": 1,
+          "modelPrimitive": "student-drawn-array",
+          "modelCounts": [
+            2,
+            6,
+            12
+          ],
+          "modelOrientation": "right-panel-open-array-over-equation",
+          "printedEquationLineCount": 1,
+          "openWorkspaceCount": 1,
+          "responseStructure": "draw-two-by-six-array-complete-equation"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -80,10 +98,18 @@
         ],
         "answerKeyEvidence": "Same array in Problem 1 turned on its side in Problem 2; the meaning of the factors switched",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "two-part-written-comparison",
+          "subpartCount": 2,
+          "modelPrimitive": "written-response",
+          "modelCounts": [
+            6,
+            2,
+            12
+          ],
+          "modelOrientation": "two-stacked-response-lines",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 2,
+          "responseStructure": "compare-arrays-then-explain-factor-meaning"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -99,10 +125,23 @@
         ],
         "answerKeyEvidence": "6 × 2 = 12; 2 × 6 = 12; 7 × 2 = 14; 2 × 7 = 14; 9 × 2 = 18; 2 × 9 = 18; 11 × 2 = 22; 2 × 12 = 24",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "three-column-related-fact-grid",
+          "subpartCount": 8,
+          "columnCount": 3,
+          "rowCount": 3,
+          "modelPrimitive": "printed-fact-grid",
+          "modelCounts": [
+            2,
+            6,
+            7,
+            9,
+            11,
+            12
+          ],
+          "modelOrientation": "three-columns-with-ab-cd-ef-and-extension-gh",
+          "printedEquationLineCount": 8,
+          "openWorkspaceCount": 0,
+          "responseStructure": "complete-eight-related-multiplication-facts-in-source-order"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -118,9 +157,25 @@
         ],
         "answerKeyEvidence": "4 × 2 = 8; 2 × 4 = 8",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "source-two-array-equation-comparison",
+          "subpartCount": 2,
+          "columnCount": 2,
+          "dividerCount": 1,
+          "modelPrimitive": "printed-fish-arrays",
+          "modelCounts": [
+            4,
+            2,
+            8,
+            2,
+            4,
+            8
+          ],
+          "modelOrientation": "four-rows-of-two-beside-two-rows-of-four",
+          "printedEquationLineCount": 2,
+          "openWorkspaceCount": 0,
+          "responseStructure": "read-each-array-complete-one-equation",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -136,10 +191,22 @@
         ],
         "answerKeyEvidence": "Agree; array of 7 rows of 2 and array of 2 rows of 7 drawn",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "paired-open-array-explanation",
+          "subpartCount": 2,
+          "columnCount": 2,
+          "modelPrimitive": "student-drawn-commutative-arrays",
+          "modelCounts": [
+            2,
+            7,
+            14,
+            7,
+            2,
+            14
+          ],
+          "modelOrientation": "two-open-arrays-above-written-justification",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 3,
+          "responseStructure": "draw-both-arrays-and-explain-agreement"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -155,9 +222,23 @@
         ],
         "answerKeyEvidence": "5; 2; 10; 9",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "four-cloud-missing-factor-row",
+          "subpartCount": 4,
+          "columnCount": 4,
+          "modelPrimitive": "printed-cloud-equations",
+          "modelCounts": [
+            5,
+            2,
+            10,
+            9
+          ],
+          "modelOrientation": "four-horizontal-clouds",
+          "printedEquationLineCount": 4,
+          "blankInputCount": 4,
+          "openWorkspaceCount": 0,
+          "responseStructure": "complete-four-missing-factors-in-source-order",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -173,10 +254,21 @@
         ],
         "answerKeyEvidence": "Array of 2 rows of 6 drawn; 2 × 6 = 12; 6 × 2 = 12",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "three-part-array-and-commutative-facts",
+          "subpartCount": 3,
+          "modelPrimitive": "student-drawn-array",
+          "modelCounts": [
+            2,
+            6,
+            12,
+            6,
+            2,
+            12
+          ],
+          "modelOrientation": "large-open-array-above-two-equation-lines",
+          "printedEquationLineCount": 2,
+          "openWorkspaceCount": 1,
+          "responseStructure": "draw-array-write-fact-write-commutative-fact"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],

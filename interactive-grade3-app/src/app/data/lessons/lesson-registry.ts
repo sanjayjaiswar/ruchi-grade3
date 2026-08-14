@@ -6334,8 +6334,6 @@ function completeLessonAnimationVisualDefaults(
       return {
         rowCount: 4,
         columnCount: 6,
-        firstPart: animation.firstPart ?? 2,
-        secondPart: animation.secondPart ?? 2,
         ...animation
       };
     case 'tape-diagram':

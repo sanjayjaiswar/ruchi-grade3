@@ -42,10 +42,18 @@
         ],
         "answerKeyEvidence": "Array of 5 rows of 3 drawn",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "paired-open-array-panel",
+          "subpartCount": 1,
+          "modelPrimitive": "student-drawn-array",
+          "modelCounts": [
+            5,
+            3,
+            15
+          ],
+          "modelOrientation": "left-panel-open-five-by-three-array",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "draw-five-by-three-array"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -61,10 +69,18 @@
         ],
         "answerKeyEvidence": "Array of 3 rows of 5 drawn",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "paired-open-array-panel",
+          "subpartCount": 1,
+          "modelPrimitive": "student-drawn-array",
+          "modelCounts": [
+            3,
+            5,
+            15
+          ],
+          "modelOrientation": "right-panel-open-three-by-five-array",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "draw-three-by-five-array"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -80,10 +96,21 @@
         ],
         "answerKeyEvidence": "5; 3; 3; 5",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "commutative-equality-label",
+          "subpartCount": 2,
+          "columnCount": 2,
+          "modelPrimitive": "printed-equation-with-problem-labels",
+          "modelCounts": [
+            5,
+            3,
+            3,
+            5
+          ],
+          "modelOrientation": "single-equation-over-two-problem-labels",
+          "printedEquationLineCount": 1,
+          "blankInputCount": 4,
+          "openWorkspaceCount": 0,
+          "responseStructure": "complete-both-sides-and-map-to-problems-one-and-two"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -99,10 +126,23 @@
         ],
         "answerKeyEvidence": "2 × 3 = 6; 3 × 2 = 6; 3 × 4 = 12; 4 × 3 = 12; 3 × 7 = 21; 7 × 3 = 21; 3 × 9 = 27; 9 × 3 = 27; 10 × 3 = 30",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "three-column-related-fact-grid",
+          "subpartCount": 9,
+          "columnCount": 3,
+          "rowCount": 3,
+          "modelPrimitive": "printed-fact-grid",
+          "modelCounts": [
+            2,
+            3,
+            4,
+            7,
+            9,
+            10
+          ],
+          "modelOrientation": "three-by-three-fact-grid",
+          "printedEquationLineCount": 9,
+          "openWorkspaceCount": 0,
+          "responseStructure": "one-given-fact-and-eight-completions-in-source-order"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -118,10 +158,22 @@
         ],
         "answerKeyEvidence": "15; 27; 24; 24; 15; 3",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "two-column-matching-facts",
+          "subpartCount": 6,
+          "columnCount": 2,
+          "rowCount": 3,
+          "modelPrimitive": "printed-equation-matching-bank",
+          "modelCounts": [
+            3,
+            5,
+            8,
+            9
+          ],
+          "modelOrientation": "abc-left-def-right-with-match-lines",
+          "printedEquationLineCount": 6,
+          "blankInputCount": 6,
+          "openWorkspaceCount": 1,
+          "responseStructure": "complete-six-facts-and-connect-three-related-pairs"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -137,10 +189,24 @@
         ],
         "answerKeyEvidence": "7 × 3 = 21; 10 × 3 = 30",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "four-step-evolving-array",
+          "subpartCount": 4,
+          "modelPrimitive": "student-drawn-expanded-array",
+          "modelCounts": [
+            7,
+            3,
+            21,
+            3,
+            3,
+            9,
+            10,
+            3,
+            30
+          ],
+          "modelOrientation": "single-large-workspace-progressing-from-circles-to-x-rows",
+          "printedEquationLineCount": 2,
+          "openWorkspaceCount": 1,
+          "responseStructure": "draw-seven-rows-write-fact-add-three-rows-write-ten-times-three"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -156,10 +222,23 @@
         ],
         "answerKeyEvidence": "3; $2; 6; 6; $2; 12",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "two-part-money-equations",
+          "subpartCount": 2,
+          "rowCount": 2,
+          "modelPrimitive": "printed-money-equations",
+          "modelCounts": [
+            3,
+            2,
+            6,
+            6,
+            2,
+            12
+          ],
+          "modelOrientation": "two-stacked-equations",
+          "printedEquationLineCount": 2,
+          "blankInputCount": 6,
+          "openWorkspaceCount": 0,
+          "responseStructure": "complete-two-related-dollar-equations"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],

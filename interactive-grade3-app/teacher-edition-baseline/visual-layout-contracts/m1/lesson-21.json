@@ -15,19 +15,12 @@
       "sha256": "84171578387b9ac338111610ac0f74f96c1c8fce912cb6d903a3bc77077cb555",
       "pdfPage": 273,
       "documentSection": "problem-set",
-      "role": "Teacher Edition Lesson 21 Problem Set printed-layout evidence"
+      "role": "Teacher Edition Lesson 21 Problem Set open-workspace evidence"
     },
     {
       "image": "/source-pages/m1-teacher/page-328.png",
       "sha256": "6c1e1e9d4547aca60e8b961a0574de60fd6d590439e5ca48bf07768fb6ea5950",
       "pdfPage": 328,
-      "documentSection": "answer-key",
-      "role": "Teacher Edition Lesson 21 Problem Set answer-key evidence"
-    },
-    {
-      "image": "/source-pages/m1-teacher/page-329.png",
-      "sha256": "968322cadbc4a3852fbae3d1767f7afe8f81c8bfebbfd9960c057e93eb7c048c",
-      "pdfPage": 329,
       "documentSection": "answer-key",
       "role": "Teacher Edition Lesson 21 Problem Set answer-key evidence"
     }
@@ -38,15 +31,24 @@
       "sourcePageImage": "/source-pages/m1-teacher/page-272.png",
       "teacherEditionRequirements": {
         "sourceTextEvidence": [
-          "Jason earns $6 per week for doing all his chores."
+          "Jason earns $6 per week for doing all his chores.",
+          "Write and solve an equation to show how much Jason earns in 5 weeks."
         ],
-        "answerKeyEvidence": "4 × 6 = 24; 24 + 4 = 28; $28",
+        "answerKeyEvidence": "Tape diagram labeled; 4 × 6 = 24; 24 + 4 = 28; $28",
         "layout": {
-          "family": "tape-diagram-model"
+          "family": "source-five-part-earnings-tape",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-five-part-horizontal-tape-with-first-and-fifth-part-braces",
+          "modelCounts": [5, 4, 6, 4, 28],
+          "modelOrientation": "five-part-tape-with-six-dollar-first-brace-four-dollar-last-brace-and-whole-brace-below",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "dividerCount": 4,
+          "responseStructure": "open-equation-box-and-jason-earns-answer-line"
         },
-        "blankMustNotContain": [],
-        "solvedMustContain": [],
-        "sourceLayoutNotes": "Reviewed directly against the official problem-level model and response space; no page-screenshot workspace is accepted."
+        "blankMustNotContain": ["24", "28", "4 × 6 = 24", "24 + 4 = 28"],
+        "solvedMustContain": ["4 × 6 = 24", "24 + 4 = 28", "$28"],
+        "sourceLayoutNotes": "The Blank page prints a five-part tape and an empty equation box; it does not print partial equation scaffolds."
       }
     },
     {
@@ -54,15 +56,24 @@
       "sourcePageImage": "/source-pages/m1-teacher/page-272.png",
       "teacherEditionRequirements": {
         "sourceTextEvidence": [
-          "Miss Lianto orders 4 packs of 7 markers."
+          "Miss Lianto orders 4 packs of 7 markers.",
+          "Label the tape diagram to find how many students are in Miss Lianto’s class."
         ],
-        "answerKeyEvidence": "22",
+        "answerKeyEvidence": "Tape diagrams labeled; 22",
         "layout": {
-          "family": "composite-mathematical-model"
+          "family": "source-two-stage-marker-tapes",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-four-part-pack-tape-over-handed-out-and-leftover-tape",
+          "modelCounts": [4, 7, 28, 22, 6],
+          "modelOrientation": "four-equal-pack-parts-above-two-part-comparison-with-six-marker-right-part",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 0,
+          "dividerCount": 4,
+          "responseStructure": "label-both-tapes-and-complete-student-count-answer-line"
         },
-        "blankMustNotContain": [],
-        "solvedMustContain": [],
-        "sourceLayoutNotes": "Reviewed directly against the official problem-level model and response space; no page-screenshot workspace is accepted."
+        "blankMustNotContain": ["22"],
+        "solvedMustContain": ["22"],
+        "sourceLayoutNotes": "Blank mode retains the printed 7 and 6 markers while leaving the tape labels and student answer empty."
       }
     },
     {
@@ -70,15 +81,23 @@
       "sourcePageImage": "/source-pages/m1-teacher/page-273.png",
       "teacherEditionRequirements": {
         "sourceTextEvidence": [
-          "Orlando buys a box of 18 fruit snacks."
+          "Orlando buys a box of 18 fruit snacks.",
+          "Draw and label a tape diagram to find how many fruit snacks he has left."
         ],
-        "answerKeyEvidence": "12",
+        "answerKeyEvidence": "Tape diagram drawn and labeled to represent problem; 12",
         "layout": {
-          "family": "open-written-response"
+          "family": "open-fruit-snack-tape-problem",
+          "subpartCount": 1,
+          "modelPrimitive": "student-drawn-tape-diagram",
+          "modelCounts": [18, 3, 6, 12],
+          "modelOrientation": "word-problem-over-open-tape-workspace",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 1,
+          "responseStructure": "draw-label-solve-and-state-fruit-snacks-left"
         },
-        "blankMustNotContain": [],
-        "solvedMustContain": [],
-        "sourceLayoutNotes": "Reviewed directly against the official problem-level model and response space; no page-screenshot workspace is accepted."
+        "blankMustNotContain": ["12"],
+        "solvedMustContain": ["12"],
+        "sourceLayoutNotes": "No tape or equation scaffold is printed in Blank mode; the student authors the entire model."
       }
     },
     {
@@ -86,15 +105,24 @@
       "sourcePageImage": "/source-pages/m1-teacher/page-273.png",
       "teacherEditionRequirements": {
         "sourceTextEvidence": [
-          "Eudora buys 21 meters of ribbon."
+          "Eudora buys 21 meters of ribbon.",
+          "How many pieces of ribbon does she have?",
+          "how many more pieces of the shorter ribbon does she need?"
         ],
-        "answerKeyEvidence": "a. 7 b. 5",
+        "answerKeyEvidence": "a. 7; b. 5",
         "layout": {
-          "family": "open-written-response"
+          "family": "open-two-part-ribbon-problem",
+          "subpartCount": 2,
+          "modelPrimitive": "student-authored-rdw-space-with-two-response-parts",
+          "modelCounts": [21, 3, 7, 12, 5],
+          "modelOrientation": "word-problem-over-part-a-and-part-b-open-workspace",
+          "printedEquationLineCount": 0,
+          "openWorkspaceCount": 2,
+          "responseStructure": "find-existing-three-meter-pieces-then-find-more-pieces-to-twelve"
         },
-        "blankMustNotContain": [],
-        "solvedMustContain": [],
-        "sourceLayoutNotes": "Reviewed directly against the official problem-level model and response space; no page-screenshot workspace is accepted."
+        "blankMustNotContain": ["7", "5"],
+        "solvedMustContain": ["7", "5"],
+        "sourceLayoutNotes": "The source prints two questions with open work; Blank mode must not preconstruct either tape or equation."
       }
     }
   ]

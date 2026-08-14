@@ -42,9 +42,26 @@
         ],
         "answerKeyEvidence": "25; 3; 5; 5; 25",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "source-add-rows-array-model",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-soccer-ball-array",
+          "modelCounts": [
+            2,
+            5,
+            10,
+            3,
+            5,
+            15,
+            5,
+            5,
+            25
+          ],
+          "modelOrientation": "two-original-rows-above-three-added-rows",
+          "printedEquationLineCount": 3,
+          "openWorkspaceCount": 0,
+          "responseStructure": "complete-two-partial-facts-and-combined-fact",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -60,9 +77,27 @@
         ],
         "answerKeyEvidence": "14; 10; 4; 14; 7",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "source-decomposed-array-model",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-circle-array-with-braces",
+          "modelCounts": [
+            7,
+            2,
+            14,
+            5,
+            2,
+            10,
+            2,
+            2,
+            4
+          ],
+          "modelOrientation": "vertical-seven-by-two-split-after-five-rows",
+          "printedEquationLineCount": 5,
+          "openWorkspaceCount": 0,
+          "dividerCount": 1,
+          "responseStructure": "complete-whole-two-parts-sum-and-final-fact",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -78,9 +113,27 @@
         ],
         "answerKeyEvidence": "18; 20; 2; 2; 18",
         "layout": {
-          "family": "source-illustration-model",
-          "modelPrimitive": "source-illustration",
-          "modelOrientation": "source-order"
+          "family": "source-subtracted-row-array-model",
+          "subpartCount": 1,
+          "modelPrimitive": "printed-triangle-array-with-braces",
+          "modelCounts": [
+            10,
+            2,
+            20,
+            1,
+            2,
+            2,
+            9,
+            2,
+            18
+          ],
+          "modelOrientation": "vertical-ten-by-two-with-one-row-separated",
+          "printedEquationLineCount": 5,
+          "openWorkspaceCount": 0,
+          "dividerCount": 1,
+          "responseStructure": "complete-whole-removed-row-difference-and-final-fact",
+          "sourceFirst": true,
+          "sourceCropCount": 1
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -96,10 +149,18 @@
         ],
         "answerKeyEvidence": "Array of 4 rows of 3 x’s drawn; 12",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "open-array-and-equation",
+          "subpartCount": 1,
+          "modelPrimitive": "student-drawn-x-array",
+          "modelCounts": [
+            4,
+            3,
+            12
+          ],
+          "modelOrientation": "large-open-four-by-three-array-over-equation",
+          "printedEquationLineCount": 1,
+          "openWorkspaceCount": 1,
+          "responseStructure": "draw-four-rows-of-three-x-and-complete-fact"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],
@@ -115,10 +176,24 @@
         ],
         "answerKeyEvidence": "2 rows of 3 circles added; 2; 6; 12; 6; 6; 3",
         "layout": {
-          "family": "open-written-response",
-          "modelPrimitive": "student-authored-or-absent",
-          "modelOrientation": "open-workspace",
-          "openWorkspaceCount": 1
+          "family": "continued-array-add-rows-model",
+          "subpartCount": 1,
+          "modelPrimitive": "student-extended-array",
+          "modelCounts": [
+            2,
+            3,
+            6,
+            12,
+            6,
+            18,
+            6,
+            3,
+            18
+          ],
+          "modelOrientation": "continue-problem-four-array-by-adding-two-circle-rows",
+          "printedEquationLineCount": 3,
+          "openWorkspaceCount": 1,
+          "responseStructure": "extend-array-complete-added-fact-sum-and-six-times-three"
         },
         "blankMustNotContain": [],
         "solvedMustContain": [],

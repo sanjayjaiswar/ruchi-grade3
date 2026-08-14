@@ -6,9 +6,14 @@
 
   <ng-template #sourceResponseTemplate let-response>
     <strong *ngIf="response.label">{{ response.label }}</strong>
-    <div class="visual-source-response-workspace" [class.is-wide]="response.wide">
+    <div
+      class="visual-source-response-workspace"
+      [class.is-wide]="response.wide"
+      [class.is-multi-column]="(response.columns || 1) > 1"
+      [style.gridTemplateColumns]="'repeat(' + (response.columns || 1) + ', minmax(0, 1fr))'">
       <section
         *ngFor="let part of response.parts"
+        [style.gridColumn]="part.columnSpan === 'all' ? '1 / -1' : (part.columnSpan || null)"
         [class.has-divider]="part.dividerBefore"
         [class.has-open-workspace]="part.openWorkspace"
         [class.has-fillable-lines]="part.interactiveLines">
@@ -286,7 +291,7 @@
                 <div
                   class="visual-tape-top-parts"
                   *ngIf="tape.topParts?.length"
-                  [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
+                  [style.gridTemplateColumns]="tapeGridTemplate(tape)">
                   <span
                     *ngFor="let topPart of tape.topParts"
                     [style.gridColumnStart]="tapeTopPartGridColumnStart(topPart)"
@@ -296,7 +301,7 @@
                   </span>
                 </div>
                 <b class="visual-tape-whole-label" *ngIf="!tape.hideTotalLabel">{{ tape.totalLabel }}</b>
-                <div [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
+                <div [style.gridTemplateColumns]="tapeGridTemplate(tape)">
                   <span
                     *ngFor="let part of tape.parts; let partIndex = index"
                     [class.is-emphasis]="part.emphasize"
@@ -316,10 +321,10 @@
                 <div
                   class="visual-tape-braces"
                   *ngIf="tape.braces?.length"
-                  [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
+                  [style.gridTemplateColumns]="tapeGridTemplate(tape)">
                   <span
                     *ngFor="let brace of tape.braces; let braceIndex = index"
-                    [attr.style]="tapeBraceStyle(brace, tape.parts.length)">
+                    [attr.style]="tapeBraceStyle(brace, tape)">
                     <i></i>
                     <b [class.is-answer-box]="brace.boxLabel">
                       <ng-container *ngFor="let token of inlineTokens(brace.boxLabel || brace.label, tape.braceAnswers?.[braceIndex])">
@@ -503,7 +508,7 @@
 
             <ng-container *ngIf="sourceCropSection(child) as sourceCrop">
               <strong *ngIf="sourceCrop.label">{{ sourceCrop.label }}</strong>
-              <figure class="visual-source-crop">
+              <figure class="visual-source-crop" [style.maxWidth.px]="sourceCrop.displayWidth || null">
                 <div [style.aspectRatio]="sourceCropAspect(sourceCrop)">
                   <img
                     [src]="sourceCrop.src"
@@ -693,7 +698,7 @@
         <div
           class="visual-tape-top-parts"
           *ngIf="tape.topParts?.length"
-          [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
+          [style.gridTemplateColumns]="tapeGridTemplate(tape)">
           <span
             *ngFor="let topPart of tape.topParts"
             [style.gridColumnStart]="tapeTopPartGridColumnStart(topPart)"
@@ -703,7 +708,7 @@
           </span>
         </div>
         <b class="visual-tape-whole-label" *ngIf="!tape.hideTotalLabel">{{ tape.totalLabel }}</b>
-        <div [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
+        <div [style.gridTemplateColumns]="tapeGridTemplate(tape)">
           <span
             *ngFor="let part of tape.parts; let partIndex = index"
             [class.is-emphasis]="part.emphasize"
@@ -723,10 +728,10 @@
         <div
           class="visual-tape-braces"
           *ngIf="tape.braces?.length"
-          [style.gridTemplateColumns]="'repeat(' + tape.parts.length + ', minmax(42px, 1fr))'">
+          [style.gridTemplateColumns]="tapeGridTemplate(tape)">
           <span
             *ngFor="let brace of tape.braces; let braceIndex = index"
-            [attr.style]="tapeBraceStyle(brace, tape.parts.length)">
+            [attr.style]="tapeBraceStyle(brace, tape)">
             <i></i>
             <b [class.is-answer-box]="brace.boxLabel"><ng-container *ngFor="let token of inlineTokens(brace.boxLabel || brace.label, tape.braceAnswers?.[braceIndex])">
               <input *ngIf="token.input" class="visual-inline-input" type="text"
@@ -969,6 +974,7 @@
                   class="visual-inline-input"
                   type="text"
                   [attr.inputmode]="inlineInputMode(token.answer)"
+                  [value]="inlineValue(match, 'top', itemIndex, 0, token.answerIndex || 0)"
                   [class.is-correct]="inlineState(match, 'top', itemIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
                   [class.is-incorrect]="inlineState(match, 'top', itemIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
                   (input)="setInlineValue(match, 'top', itemIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
@@ -987,6 +993,7 @@
                   class="visual-inline-input"
                   type="text"
                   [attr.inputmode]="inlineInputMode(token.answer)"
+                  [value]="inlineValue(match, 'bottom', itemIndex, 0, token.answerIndex || 0)"
                   [class.is-correct]="inlineState(match, 'bottom', itemIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
                   [class.is-incorrect]="inlineState(match, 'bottom', itemIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
                   (input)="setInlineValue(match, 'bottom', itemIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
@@ -1003,6 +1010,7 @@
                     class="visual-inline-input"
                     type="text"
                     [attr.inputmode]="inlineInputMode(token.answer)"
+                    [value]="inlineValue(match, 'top', pairIndex, 0, token.answerIndex || 0)"
                     [class.is-correct]="inlineState(match, 'top', pairIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
                     [class.is-incorrect]="inlineState(match, 'top', pairIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
                     (input)="setInlineValue(match, 'top', pairIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
@@ -1016,6 +1024,7 @@
                     class="visual-inline-input"
                     type="text"
                     [attr.inputmode]="inlineInputMode(token.answer)"
+                    [value]="inlineValue(match, 'bottom', pairIndex, 0, token.answerIndex || 0)"
                     [class.is-correct]="inlineState(match, 'bottom', pairIndex, 0, token.answerIndex || 0, token.answer) === 'correct'"
                     [class.is-incorrect]="inlineState(match, 'bottom', pairIndex, 0, token.answerIndex || 0, token.answer) === 'incorrect'"
                     (input)="setInlineValue(match, 'bottom', pairIndex, 0, token.answerIndex || 0, $any($event.target).value)" />
@@ -1438,7 +1447,7 @@
 
     <ng-container *ngIf="sourceCropSection(section) as sourceCrop">
       <strong *ngIf="sourceCrop.label">{{ sourceCrop.label }}</strong>
-      <figure class="visual-source-crop">
+      <figure class="visual-source-crop" [style.maxWidth.px]="sourceCrop.displayWidth || null">
         <div [style.aspectRatio]="sourceCropAspect(sourceCrop)">
           <img
             [src]="sourceCrop.src"
