@@ -13,6 +13,9 @@ interactive-grade3-app/.angular/
 interactive-grade3-app/coverage/
 interactive-grade3-app/out-tsc/
 
+# Confidential local assessment records
+/docs/Grade 2 Final Assessment/
+
 # OS/editor noise
 .DS_Store
 Thumbs.db

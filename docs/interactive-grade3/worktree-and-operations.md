@@ -1,7 +1,7 @@
 # Worktree And Operations Guide
 
 Date: 2026-06-18
-Status: Active operations baseline, updated 2026-07-03
+Status: Active operations baseline, updated 2026-08-13
 
 ## 1. Purpose
 
@@ -66,6 +66,20 @@ Until then, use the existing `main` worktree for local edits and documentation u
 
 ## 5. Task Docs
 
+The repository-wide active-work index lives at:
+
+```text
+docs/active-work.md
+```
+
+Each active, paused, or blocked initiative should have a durable file under:
+
+```text
+docs/work-items/
+```
+
+The active multi-subject portal item is `docs/work-items/grade3-multi-subject-learning-portal.md`. Keep `docs/active-work.md` lightweight; record decisions, progress, validation evidence, and resume instructions in the work-item file.
+
 Canonical task docs live here:
 
 ```text
@@ -82,7 +96,25 @@ Update these docs as work proceeds:
 - `problem-set-centered-lesson-design.md`: active lesson shape and source-backed Problem Set requirements.
 - `lesson-12-implementation-research.md`: Lesson 12 pilot research, animation baseline, and implementation constraints.
 
+The existing `docs/interactive-grade3/task-tracker.md` remains the detailed Eureka Math history and validation record. The repository-wide active-work index and work-item files supplement it; they do not replace or flatten the Math tracker.
+
 Do not store task plans in `AGENTS.md`.
+
+### Portal Migration Operating Rule
+
+- The current `/ruchika-grade3` application is the protected Math baseline.
+- Start the portal migration with a build and full route-manifest baseline, not by moving or renaming the current route.
+- Milestone 1 adds `/ruchika/grade3` as the portal homepage and mounts the unchanged Math application at `/ruchika/grade3/math`.
+- The homepage Math card opens `/ruchika/grade3/math`.
+- Keep all supported `/ruchika-grade3` home and deep links compatible with corresponding Math destinations, including module, lesson, section, and Blank/Solved state.
+- After the route-only restructure, re-run the complete Math build and old/new route checks before beginning Reading work.
+- Do not add Reading or shared progress/resume features in the homepage/Math-route milestone.
+- Treat the Math implementation as sealed. Do not edit its curriculum data, lesson components, renderers, styles, source mappings, or behavior during portal or Reading work.
+- Milestone 1 may change route composition only: register the portal homepage, mount the existing Math shell under the Math prefix, and add precise legacy compatibility. Do not refactor the Math shell while moving its route boundary.
+- Milestone 1 passed its build, 304-route parity, route-state, visual, and console validation gates.
+- Milestone 2 adds only the isolated Reading shell, Reading routes/content, portal-card activation, and Reading documentation. It passed build, Reading interaction, shared-home, representative Math deep-link, legacy redirect, and console validation without editing the sealed Math implementation.
+- Do not create a real branch or git worktree for the portal unless the user explicitly asks for that git action.
+- Use `grade3-learning-portal-architecture.md` for the complete migration, validation, and rollback contract.
 
 ## 6. App Folder
 
@@ -146,8 +178,16 @@ npm start
 Configured local URL:
 
 ```text
-http://localhost:4220/ruchika-grade3/
+http://localhost:4220/ruchika/grade3
 ```
+
+Configured Math URL:
+
+```text
+http://localhost:4220/ruchika/grade3/math
+```
+
+Legacy Math compatibility remains at `http://localhost:4220/ruchika-grade3/` and its supported deep links.
 
 ### Requires Explicit Approval
 
@@ -177,10 +217,10 @@ scripts/grade3_app_start.sh
 Configured local URL:
 
 ```text
-http://localhost:4220/ruchika-grade3/
+http://localhost:4220/ruchika/grade3
 ```
 
-Use a different port if occupied.
+Math URL: `http://localhost:4220/ruchika/grade3/math`. Legacy `/ruchika-grade3/` URLs remain compatible. Use a different port if occupied.
 
 ## 9. Documentation Update Rules
 

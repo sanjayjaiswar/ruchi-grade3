@@ -79,7 +79,7 @@ stop_screen_session() {
 
 write_context() {
   cat > "$CONTEXT_FILE" <<EOF
-Grade 3 Eureka Math Interactive App Context
+Grade 3 Learning Portal Context
 Generated: $(date)
 
 Workspace:
@@ -89,7 +89,9 @@ Angular app:
   $APP_DIR
 
 Dev server:
-  URL: http://${PUBLIC_HOST}:${PORT}/ruchika-grade3/
+  Portal URL: http://${PUBLIC_HOST}:${PORT}/ruchika/grade3
+  Math URL:   http://${PUBLIC_HOST}:${PORT}/ruchika/grade3/math
+  Legacy Math URL: http://${PUBLIC_HOST}:${PORT}/ruchika-grade3/
   Host bind: ${HOST}
   Port: ${PORT}
 
@@ -141,7 +143,8 @@ status() {
   local listener_pid
   listener_pid=$(lsof -t -nP -iTCP:"$PORT" -sTCP:LISTEN 2>/dev/null | head -n1 || true)
   echo "Grade 3 app context: $CONTEXT_FILE"
-  echo "URL: http://${PUBLIC_HOST}:${PORT}/ruchika-grade3/"
+  echo "Portal URL: http://${PUBLIC_HOST}:${PORT}/ruchika/grade3"
+  echo "Math URL: http://${PUBLIC_HOST}:${PORT}/ruchika/grade3/math"
   echo "Log: $APP_LOG"
   if command -v screen >/dev/null 2>&1 && screen -list 2>/dev/null | grep -q "[.]${SCREEN_SESSION}[[:space:]]"; then
     echo "Screen: ${SCREEN_SESSION}"
@@ -239,7 +242,8 @@ start_app() {
   ) >/dev/null 2>&1 &
 
   echo "Launch dispatched; Angular is compiling in the background."
-  echo "URL: http://${PUBLIC_HOST}:${PORT}/ruchika-grade3/"
+  echo "Portal URL: http://${PUBLIC_HOST}:${PORT}/ruchika/grade3"
+  echo "Math URL: http://${PUBLIC_HOST}:${PORT}/ruchika/grade3/math"
   echo "Log: $APP_LOG"
   echo "Context: $CONTEXT_FILE"
   if command -v screen >/dev/null 2>&1; then
@@ -255,7 +259,8 @@ case "$command" in
       generate_local_search_index
       write_context
       echo "Grade 3 app is already running; the Angular watcher will apply source changes automatically."
-      echo "URL: http://${PUBLIC_HOST}:${PORT}/ruchika-grade3/"
+      echo "Portal URL: http://${PUBLIC_HOST}:${PORT}/ruchika/grade3"
+      echo "Math URL: http://${PUBLIC_HOST}:${PORT}/ruchika/grade3/math"
       echo "Use '$0 restart' only when a forced cold restart is needed."
       exit 0
     fi

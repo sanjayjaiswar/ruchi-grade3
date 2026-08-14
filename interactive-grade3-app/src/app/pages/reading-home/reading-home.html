@@ -1,0 +1,188 @@
+<main class="reading-page">
+  <header class="reading-header">
+    <a class="reading-brand" routerLink="/ruchika/grade3/reading" aria-label="Grade 3 Reading and Language Arts year overview">
+      <span class="reading-mark" aria-hidden="true">Aa</span>
+      <span><strong>Ruchika Grade 3 Reading &amp; Language Arts</strong><small>Moreland · Benchmark Advance</small></span>
+    </a>
+
+    <nav *ngIf="pageKind === 'lesson'" class="curriculum-tools admitted-lesson-tools" aria-label="Official Reading lesson navigation">
+      <a [routerLink]="unitRoute(unit)">← Unit 1</a>
+      <span>Week 1</span>
+      <strong>Lesson 1 · {{ officialLesson.title }}</strong>
+      <span>{{ lessonProgress }} of 4 source steps</span>
+    </nav>
+
+    <nav *ngIf="pageKind !== 'lesson'" class="reading-area-nav" aria-label="Grade 3 Reading and Language Arts sections">
+      <a routerLink="/ruchika/grade3/reading/standards" [class.active]="pageKind === 'standards'" [attr.aria-current]="pageKind === 'standards' ? 'page' : null">Standards</a>
+      <a routerLink="/ruchika/grade3/reading" [class.active]="pageKind === 'overview' || pageKind === 'unit'" [attr.aria-current]="pageKind === 'overview' || pageKind === 'unit' ? 'page' : null">Curriculum</a>
+      <a routerLink="/ruchika/grade3/reading/assessments" [class.active]="pageKind === 'assessments'" [attr.aria-current]="pageKind === 'assessments' ? 'page' : null">Assessments</a>
+      <a routerLink="/ruchika/grade3/reading/levels" [class.active]="pageKind === 'levels'" [attr.aria-current]="pageKind === 'levels' ? 'page' : null">Reading levels</a>
+      <a routerLink="/ruchika/grade3/reading/sources" [class.active]="pageKind === 'sources'" [attr.aria-current]="pageKind === 'sources' ? 'page' : null">Sources</a>
+    </nav>
+
+    <a class="portal-link" routerLink="/ruchika/grade3" aria-label="Ruchika Learning Portal — Grade 3" title="All Grade 3 subjects">R</a>
+  </header>
+
+  <section *ngIf="pageKind === 'overview'" class="reading-section overview-page">
+    <section class="overview-hero" aria-labelledby="reading-title">
+      <div>
+        <span class="source-badge">Moreland School District · Benchmark Advance</span>
+        <h1 id="reading-title">Grade 3 Reading &amp; Language Arts</h1>
+        <p>Follow the complete publisher-documented Grade 3 year: 10 units, 30 weeks, and 70 named selections. Open any unit to see every published week, text, reading focus, word-study focus, and writing focus.</p>
+        <div class="source-links">
+          <button type="button" class="primary-curriculum-link" (click)="scrollToCurriculum()">Explore the Grade 3 year ↓</button>
+          <a routerLink="/ruchika/grade3/reading/standards">See all California standards →</a>
+        </div>
+      </div>
+      <dl class="year-summary"><div><dt>10</dt><dd>official publisher units</dd></div><div><dt>30</dt><dd>publisher weeks</dd></div><div><dt>70</dt><dd>named selections</dd></div></dl>
+    </section>
+
+    <section id="grade3-year-map" class="year-map" aria-labelledby="year-map-title">
+      <div class="section-heading curriculum-heading"><div><span class="section-kicker">The complete year</span><h2 id="year-map-title">Choose a curriculum unit</h2><p>These are the ten Grade 3 unit titles in the publisher scope aligned to Moreland’s adopted Benchmark Advance edition.</p></div><a [href]="sources.scope" target="_blank" rel="noopener">Open the complete publisher scope ↗</a></div>
+      <div class="unit-grid">
+        <article *ngFor="let option of units" [class]="'unit-card ' + option.accent">
+          <div class="unit-topline"><span>Unit {{ option.number }} of 10</span><a [href]="scopePage(option)" target="_blank" rel="noopener">PDF pp. {{ scopePrintedPage(option) }}–{{ scopePrintedPage(option) + 1 }} ↗</a></div>
+          <h3>{{ option.title }}</h3>
+          <p><strong>Begins with</strong> {{ option.weeks[0].selections[0].title }}</p>
+          <p><strong>Ends with</strong> {{ option.weeks[2].selections[0].title }}</p>
+          <div class="unit-meta"><span>3 weeks</span><span>7 selections</span></div>
+          <a class="unit-action" [routerLink]="unitRoute(option)">Explore Unit {{ option.number }} <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="learning-system" aria-labelledby="learning-system-title">
+      <div class="section-heading"><div><span class="section-kicker">Understand the same year</span><h2 id="learning-system-title">Learning goals, progress checks, and reading levels</h2><p>The curriculum tells what is taught. California standards define Grade 3 expectations. Moreland and California publish different assessment schedules and reading measures.</p></div></div>
+      <div class="system-grid three-column">
+        <article><span>Official California expectations</span><strong>{{ standardsCount }} Grade 3 ELA standards records</strong><p>Every record is shown in full plain language with its official reference code and CDE source.</p><a routerLink="/ruchika/grade3/reading/standards">Open all standards →</a></article>
+        <article><span>Published progress checks</span><strong>Classroom, district, and state evidence</strong><p>See the published cadence for classroom evidence, SRI, district ELA benchmarks, and CAASPP.</p><a routerLink="/ruchika/grade3/reading/assessments">Open all assessments →</a></article>
+        <article><span>Reading-level measures</span><strong>Text difficulty is not a learner score</strong><p>See how California text complexity, Lexile labels, SRI, and Fountas &amp; Pinnell differ.</p><a routerLink="/ruchika/grade3/reading/levels">Open all reading-level facts →</a></article>
+      </div>
+    </section>
+
+    <section class="source-boundary"><strong>What is verified</strong><p>Unit names, order, weeks, selections, genres, Lexile labels, and instructional columns come from the linked publisher scope. Moreland publicly identifies Benchmark Advance as its TK–5 ELA curriculum. Baker’s current classroom dates and pacing are not public, so this portal does not invent them.</p><a routerLink="/ruchika/grade3/reading/sources">Review every source →</a></section>
+  </section>
+
+  <section *ngIf="pageKind === 'standards'" class="reading-section standards-page">
+    <section class="page-heading standards-heading"><div><span class="source-badge">Official California Grade 3 ELA/Literacy standards</span><h1>What Grade 3 students learn</h1><p>All {{ standardsCount }} official CDE records are shown below. Each card keeps the complete plain-language expectation beside its official California reference code.</p></div><div class="heading-actions"><a [href]="learningSources.californiaStandards" target="_blank" rel="noopener">Open the official CDE register ↗</a><a routerLink="/ruchika/grade3/reading">Back to the 10-unit year →</a></div></section>
+
+    <section class="code-guide" aria-label="How to read a California standards code"><div><strong>How to read an official code</strong><p><b>RL</b> means Reading Literature, <b>3</b> means Grade 3, and <b>1</b> identifies the numbered expectation. The full expectation is always shown; the code is never used by itself.</p></div><span>RL . 3 . 1</span></section>
+
+    <nav class="domain-jump" aria-label="Grade 3 standards domains"><button type="button" *ngFor="let domain of standardsDomains" (click)="scrollToStandard(domain.id)">{{ domain.name }}</button></nav>
+
+    <section *ngFor="let domain of standardsDomains" [id]="'standard-' + domain.id" class="standard-domain">
+      <div class="domain-heading"><div><span>Official California standards area</span><h2>{{ domain.name }}</h2><p><strong>In everyday language:</strong> {{ domain.plainLanguage }}</p></div><a [href]="domain.source" target="_blank" rel="noopener" [attr.aria-label]="'Verify ' + domain.name + ' in CDE'">Open this official CDE area ↗</a></div>
+      <div class="cluster-grid">
+        <article *ngFor="let cluster of domain.clusters" class="standard-cluster"><h3>{{ cluster.name }}</h3><ul><li *ngFor="let standard of cluster.standards"><p>{{ standard.summary }}</p><strong>Official California reference: {{ standard.code }}</strong><small *ngIf="standard.note">{{ standard.note }}</small></li></ul></article>
+      </div>
+    </section>
+
+    <section class="source-boundary"><strong>Standards are not units.</strong><p>California standards define year-end expectations; Moreland’s adopted Benchmark sequence supplies the curriculum path. RL, RI, RF, W, SL, and L are official CDE reference prefixes—not portal modules, lesson names, or invented categories.</p></section>
+  </section>
+
+  <section *ngIf="pageKind === 'assessments'" class="reading-section assessments-page">
+    <section class="page-heading"><div><span class="source-badge">Moreland · Baker · California</span><h1>How Grade 3 Reading &amp; Language Arts progress is checked</h1><p>Each measure below names who publishes it, which students it covers, how often the source says it is used, and what the result can and cannot tell a family.</p></div><div class="heading-actions"><a [href]="sources.morelandAssessments" target="_blank" rel="noopener">Open Moreland’s official assessment table ↗</a><a routerLink="/ruchika/grade3/reading/levels">Understand reading levels →</a></div></section>
+
+    <section class="assessment-system" aria-labelledby="assessment-system-title"><div class="section-heading"><div><span class="section-kicker">The complete published cadence</span><h2 id="assessment-system-title">Four different kinds of evidence</h2><p>These checks work at different scales. None is the curriculum, and none alone describes the complete year.</p></div></div><div class="assessment-grid"><article *ngFor="let assessment of assessmentSystem"><div class="assessment-topline"><span>{{ assessment.confidence }}</span><strong>{{ assessment.cadence }}</strong></div><h3>{{ assessment.name }}</h3><p class="assessment-scope">Who it covers: {{ assessment.scope }}</p><p>{{ assessment.meaning }}</p><a [href]="assessment.source" target="_blank" rel="noopener" [attr.aria-label]="'Open governing source for ' + assessment.name">Open official source ↗</a></article></div></section>
+
+    <section class="baker-evidence"><div><span class="source-badge">Baker Elementary 2025–26 SPSA</span><h2>What Baker’s school plan adds</h2><ul><li *ngFor="let fact of bakerAssessmentEvidence">{{ fact }}</li></ul></div><a [href]="learningSources.bakerSpsa" target="_blank" rel="noopener">Open Baker SPSA ↗</a></section>
+
+    <section class="caaspp-claims"><div class="section-heading"><div><h2>What California’s Grade 3 state ELA assessment samples</h2><p>CAASPP reports an overall ELA result and, under the current adjusted reporting structure, two composite areas.</p></div><a [href]="learningSources.caaspp" target="_blank" rel="noopener">Open 2026 CDE score guide ↗</a></div><div class="claim-grid"><article><span>Composite area 1</span><h3>Reading and Listening</h3><p>Reading analytically across literary and informational text, plus understanding information presented orally and through media.</p></article><article><span>Composite area 2</span><h3>Writing and Research/Inquiry</h3><p>Producing effective writing and investigating, analyzing, organizing, and presenting information.</p></article></div></section>
+
+    <section class="source-boundary warning"><strong>No learner placement is inferred.</strong><p>The Grade 2 reports motivated this architecture by showing that assessment systems contain reporting periods, domains, levels, and growth measures. Their personal values are not copied here, and Grade 2 categories are not presented as Grade 3 facts. Add an official Grade 3 report before this portal displays a learner-specific score, level, target, or trend.</p></section>
+  </section>
+
+  <section *ngIf="pageKind === 'levels'" class="reading-section levels-page">
+    <section class="page-heading"><div><span class="source-badge">California · Moreland · Baker</span><h1>What a Grade 3 reading level can mean</h1><p>“Reading level” is not one universal score. The four official measures below answer different questions, so the portal never combines or converts them without a published district rule.</p></div><div class="heading-actions"><a [href]="learningSources.textComplexity" target="_blank" rel="noopener">Open California’s text-complexity source ↗</a><a routerLink="/ruchika/grade3/reading/assessments">See progress checks →</a></div></section>
+
+    <section class="reading-level-system"><div class="section-heading"><div><span class="section-kicker">Four measures · four meanings</span><h2>Keep the questions separate</h2><p>Each card identifies what the measure can establish and what the public evidence does not establish for an individual Grade 3 learner.</p></div></div><div class="level-grid"><article *ngFor="let item of readingLevelFacts"><h3>{{ item.label }}</h3><p>{{ item.fact }}</p><a [href]="item.source" target="_blank" rel="noopener" [attr.aria-label]="'Open governing source for ' + item.label">Open official source ↗</a></article></div></section>
+
+    <section class="source-boundary warning"><strong>No score conversion or placement is invented.</strong><p>The portal does not translate between Lexile, SRI, Fountas &amp; Pinnell, district benchmark, or CAASPP results. A learner-specific level or target requires an official Grade 3 report or a published Moreland conversion rule.</p></section>
+  </section>
+
+  <section *ngIf="pageKind === 'sources'" class="reading-section sources-page">
+    <section class="page-heading"><div><span class="source-badge">Source library</span><h1>Who establishes each part of the Grade 3 program</h1><p>Moreland establishes the adopted local program. The publisher scope establishes the displayed Grade 3 sequence. California publishes standards and state assessment information. Baker provides school context.</p></div><a class="primary-link" routerLink="/ruchika/grade3/reading">Back to the complete year →</a></section>
+    <section class="source-list">
+      <article><span>1</span><div><h2>Moreland School District: adopted curriculum</h2><p>Lists Benchmark Advance for TK–5 English Language Arts, adopted in 2017–18.</p><a [href]="sources.morelandCurriculum" target="_blank" rel="noopener">Open district source ↗</a></div></article>
+      <article><span>2</span><div><h2>Benchmark Advance Grade 3: Skills and Strategies</h2><p>The ten-page publisher-authored scope and sequence supplies every unit, week, selection title, genre, Lexile label, reading focus, word-study focus, and writing focus shown here.</p><a [href]="sources.scope" target="_blank" rel="noopener">Open publisher scope ↗</a></div></article>
+      <article><span>3</span><div><h2>California state adoption</h2><p>The California Department of Education’s 2015 ELA/ELD adoption record lists Benchmark Advance as an adopted K–6 Basic ELA/ELD program.</p><a [href]="sources.californiaAdoption" target="_blank" rel="noopener">Open CDE source ↗</a></div></article>
+      <article><span>4</span><div><h2>Baker Elementary context</h2><p>Baker’s public About page names the Benchmark program for English Language Arts. Moreland’s district page remains the governing local adoption source.</p><a [href]="sources.bakerCurriculum" target="_blank" rel="noopener">Open Baker source ↗</a></div></article>
+      <article><span>5</span><div><h2>Santa Clara County standards context</h2><p>SCCOE provides standards information and family/educator resources. It does not replace Moreland’s district curriculum adoption or supply a Baker-specific daily sequence.</p><a [href]="sources.sccoeStandards" target="_blank" rel="noopener">Open SCCOE source ↗</a></div></article>
+      <article><span>6</span><div><h2>California Grade 3 ELA standards</h2><p>The CDE Grade 3 register contains {{ standardsCount }} records across six domains. Standards are learning expectations, not Benchmark unit names.</p><a [href]="learningSources.californiaStandards" target="_blank" rel="noopener">Open CDE Grade 3 standards ↗</a></div></article>
+      <article><span>7</span><div><h2>Baker Elementary 2025–26 school plan</h2><p>The SPSA documents Baker’s schoolwide ELA goal, use of state and local evidence, small-group support, and named assessment systems. It does not publish an individual Grade 3 testing plan.</p><a [href]="learningSources.bakerSpsa" target="_blank" rel="noopener">Open Baker SPSA ↗</a></div></article>
+      <article><span>8</span><div><h2>California CAASPP ELA score guide</h2><p>The February 2026 CDE guide describes the computer-adaptive assessment, performance task, overall achievement levels, and the two current composite reporting areas.</p><a [href]="learningSources.caaspp" target="_blank" rel="noopener">Open CDE score guide ↗</a></div></article>
+    </section>
+    <section class="assessment-panel"><div><h2>Grade 3 assessment context</h2><p>Moreland’s current public table lists SRI twice yearly, ELA benchmarks three times yearly, and CAASPP ELA yearly for grades 3–8. Fountas &amp; Pinnell Early Literacy is listed for TK–2, not Grade 3.</p><a [href]="sources.morelandAssessments" target="_blank" rel="noopener">Open Moreland assessment source ↗</a></div><p class="assessment-guardrail">This app does not estimate, convert, or invent an F&amp;P level, Lexile score, benchmark result, or CAASPP level.</p></section>
+  </section>
+
+  <section *ngIf="pageKind === 'unit'" class="reading-section unit-page">
+    <section *ngIf="notice" class="source-gate-notice"><strong>Official-source gate</strong><span>{{ notice }}</span></section>
+    <section [class]="'unit-hero ' + unit.accent"><div><span class="source-badge">Publisher Unit {{ unit.number }} of 10</span><h1>{{ unit.title }}</h1><p>Explore all three publisher weeks and every named selection. The official source page stays visible, and the guided view reorganizes only facts transcribed from that page.</p></div><div class="unit-hero-actions"><a routerLink="/ruchika/grade3/reading">All 10 units</a><a [href]="scopePage(unit)" target="_blank" rel="noopener">Open official scope pp. {{ scopePrintedPage(unit) }}–{{ scopePrintedPage(unit) + 1 }} ↗</a></div></section>
+
+    <nav class="unit-week-nav" aria-label="Unit weeks">
+      <span>Choose a week</span>
+      <button type="button" *ngFor="let week of unit.weeks" (click)="scrollToWeek(week.number)">Week {{ week.number }} <small>{{ week.selections.length }} selections</small></button>
+    </nav>
+
+    <section class="official-scope-page" [attr.aria-label]="'Official publisher scope page for Unit ' + unit.number">
+      <div><span class="source-badge">Source of truth</span><strong>Official publisher source page</strong><p>Benchmark Advance Grade 3 Skills &amp; Strategies · printed pages {{ scopePrintedPage(unit) }}–{{ scopePrintedPage(unit) + 1 }}. This page controls the unit title, selections, genres, Lexile labels, standards, reading, word study, fluency, writing, speaking and listening, language, and English-language-development information.</p><p><b>How to use it:</b> open the image for the complete official wording and codes. The week cards below provide a more readable view of the publisher columns that have been fully transcribed and verified.</p></div>
+      <a [href]="scopePage(unit)" target="_blank" rel="noopener"><img [src]="scopeImage(unit)" [alt]="'Official publisher scope page for Unit ' + unit.number + ': ' + unit.title" /></a>
+    </section>
+
+    <section class="week-grid" aria-label="Publisher scope weeks">
+      <article *ngFor="let week of unit.weeks" [id]="'reading-week-' + week.number" class="week-card">
+        <div class="week-heading"><div><span>Publisher Week {{ week.number }} of 3</span><h2>Week {{ week.number }} source-guided view</h2><p>Named texts and verified instructional columns from the official page above.</p></div><a [href]="scopePage(unit)" target="_blank" rel="noopener">Open official PDF ↗</a></div>
+        <div class="scope-lanes">
+          <section class="scope-lane selections-lane"><span class="lane-label">Student reads</span><h3>Publisher-named selections</h3><ul class="selection-list"><li *ngFor="let item of week.selections"><strong>{{ item.title }}</strong><span>{{ item.role }}</span><span>{{ item.genre }}</span><span>Publisher Lexile label: {{ item.lexile }}</span></li></ul></section>
+          <section class="scope-lane reading-lane"><span class="lane-label">Reading</span><h3>Understand the texts</h3><ul><li *ngFor="let focus of week.readingFocus">{{ focus }}</li></ul></section>
+          <section class="scope-lane word-lane"><span class="lane-label">Word study</span><h3>Study words and spelling</h3><p>{{ week.wordStudy }}</p></section>
+          <section class="scope-lane writing-lane"><span class="lane-label">Writing</span><h3>Write from the unit work</h3><p>{{ week.writingFocus }}</p></section>
+        </div>
+        <div class="complete-source-reminder"><strong>The official page contains more than these guided cards.</strong><p>Keep the source page above open for the complete standards, fluency, speaking and listening, conventions, vocabulary, and English language development columns. Those official details remain visible rather than being replaced by a portal summary.</p></div>
+        <a *ngIf="unit.id === 'u1' && week.number === 1" class="admitted-lesson-link" [routerLink]="lessonRoute(unit, 1)"><span>Official Benchmark Education sample</span><strong>Lesson 1: Working Together</strong><small>Open the source-faithful teaching layer →</small></a>
+      </article>
+    </section>
+    <section class="source-boundary warning"><strong>What is needed for Math-level daily practice</strong><p>The public scope establishes the year, units, weeks, selections, and instructional columns, but it does not contain the copyrighted selection text or Teacher Resource System directions. Day-by-day reading practice will be released only after those authorized student and teacher materials can control every prompt and visual, just as the Eureka Math Teacher Edition controls every Math lesson.</p></section>
+    <footer class="unit-footer"><a *ngIf="previousUnitRoute" [routerLink]="previousUnitRoute">← Previous unit</a><a routerLink="/ruchika/grade3/reading">Complete year map</a><a *ngIf="nextUnitRoute" [routerLink]="nextUnitRoute">Next unit →</a></footer>
+  </section>
+
+  <section *ngIf="pageKind === 'lesson'" class="reading-section lesson-page">
+    <section class="lesson-heading official-lesson-heading"><div><span class="source-badge">Official Benchmark Education sample · Unit 1 · Week 1 · Lesson 1</span><h1>{{ officialLesson.title }}</h1><p class="lesson-objective">{{ officialLesson.objective }}</p><div class="lesson-facts"><span>{{ officialLesson.studentBook }}</span><span>{{ officialLesson.studentPages }}</span><span>{{ officialLesson.keyVocabulary.length }} official vocabulary words</span></div></div><a [href]="officialLesson.sourceUrl" target="_blank" rel="noopener">Open the official sample ↗</a></section>
+
+    <section class="material-gate"><div><span>Before you begin</span><h2>Open the school text</h2><p>The official lesson uses <strong>{{ officialLesson.title }}</strong> in <strong>{{ officialLesson.studentBook }}, {{ officialLesson.studentPages }}</strong>. The portal guides the same lesson; it does not replace or invent the passage.</p></div><label><input type="checkbox" [(ngModel)]="openedBook" /> I have the book open to pages 4–5</label></section>
+
+    <nav class="lesson-stage-nav" aria-label="Lesson sections"><button type="button" (click)="scrollToLessonStage('before-reading')">1. Before reading</button><button type="button" (click)="scrollToLessonStage('first-read')">2. First read</button><button type="button" (click)="scrollToLessonStage('reread')">3. Reread</button><button type="button" (click)="scrollToLessonStage('show-understanding')">4. Show understanding</button><button type="button" (click)="scrollToLessonStage('lesson-source')">Official source</button></nav>
+
+    <section id="before-reading" class="lesson-stage before-reading-stage">
+      <div class="stage-heading"><span>1</span><div><small>Official teacher sequence</small><h2>Read the title. Study the picture and caption.</h2><p>The Benchmark guidance asks the learner to explain what “working together” means, describe what is visible, and predict how people in the reading will work together.</p></div></div>
+      <div class="teaching-model-note"><strong>Portal teaching organizer</strong><span>Use the publisher picture and caption in the school book for the actual lesson evidence.</span></div>
+      <div class="prediction-board"><div class="people-visual" aria-label="A portal teaching organizer showing three people working as one team; this is not the publisher picture"><span></span><span></span><span></span><b>One problem · one team</b></div><label><strong>My prediction</strong><textarea [(ngModel)]="prediction" rows="5" placeholder="I predict the people will work together by…"></textarea></label></div>
+      <label class="stage-check"><input type="checkbox" [(ngModel)]="checkedPicture" /> I read the caption, described the picture, and made a prediction.</label>
+    </section>
+
+    <section id="first-read" class="lesson-stage first-read-stage">
+      <div class="stage-heading"><span>2</span><div><small>Official teacher sequence</small><h2>Read paragraph 1 and notice the key words.</h2><p>Stop when needed to make sense of the terms. These seven words are the exact Key Vocabulary named by the official Lesson 1 sample.</p></div></div>
+      <div class="vocabulary-grid"><article *ngFor="let word of officialLesson.keyVocabulary"><span aria-hidden="true">●</span><strong>{{ word }}</strong><small>Find it in the school text</small></article></div>
+      <div class="cognate-note"><strong>The official sample also identifies these cognates:</strong><span *ngFor="let cognate of officialLesson.cognates">{{ cognate }}</span></div>
+      <label class="stage-check"><input type="checkbox" [(ngModel)]="readParagraph" /> I read paragraph 1 and checked the words against the text.</label>
+    </section>
+
+    <section id="reread" class="lesson-stage reread-stage">
+      <div class="stage-heading"><span>3</span><div><small>Official teacher sequence</small><h2>Reread the last two sentences of paragraph 1.</h2><p>Circle <strong>sandbags</strong>. Then use the picture on page 5 to discuss how the sandbags were used and what it means to keep the floodwater out.</p></div></div>
+      <div class="teaching-model-note"><strong>Portal teaching model</strong><span>This organizer explains the source direction. Use the publisher picture on page 5 for evidence.</span></div>
+      <div class="sandbag-model" aria-label="A portal teaching organizer showing sandbags between floodwater and a place to protect; this is not the publisher picture"><div class="water"><span>floodwater</span></div><div class="bags"><i></i><i></i><i></i><i></i><i></i><strong>sandbags</strong></div><div class="protected"><span>place to protect</span></div></div>
+      <div class="evidence-organizer"><label><span>The problem in the text</span><textarea [(ngModel)]="problem" rows="4" placeholder="Use the school text."></textarea></label><label><span>How people worked together</span><textarea [(ngModel)]="teamwork" rows="4" placeholder="Use the school text."></textarea></label><label><span>Page or picture evidence</span><textarea [(ngModel)]="evidence" rows="4" placeholder="Name the page and detail."></textarea></label></div>
+      <label class="stage-check"><input type="checkbox" [(ngModel)]="rereadSentences" /> I reread, used the page 5 picture, and recorded text evidence.</label>
+    </section>
+
+    <section id="show-understanding" class="lesson-stage response-stage">
+      <div class="stage-heading"><span>4</span><div><small>Official after-reading question</small><h2>How did the people in Fargo work together to solve a problem?</h2><p>Answer only after reading. Use a detail from the text or picture so the answer is controlled by the official selection.</p></div></div>
+      <label class="response-field"><span>My text-based answer</span><textarea [(ngModel)]="response" rows="7" placeholder="The people worked together by… I know because on page…"></textarea></label>
+      <div class="answer-check"><strong>Check before finishing</strong><label><input type="checkbox" /> I answered how the people worked together.</label><label><input type="checkbox" /> I named the problem.</label><label><input type="checkbox" /> I used evidence from pages 4–5.</label></div>
+    </section>
+
+    <section id="lesson-source" class="official-lesson-source"><div><span class="source-badge">Source of truth</span><h2>Official Benchmark lesson evidence</h2><p><strong>{{ officialLesson.sourceLabel }}</strong></p><p>{{ officialLesson.sourceBoundary }}</p><small>{{ officialLesson.sourceFingerprint }}</small><div class="source-actions"><a [href]="officialLesson.sourceUrl" target="_blank" rel="noopener">Open official Benchmark PDF ↗</a><a [href]="scopePage(unit)" target="_blank" rel="noopener">Open official Unit 1 scope ↗</a></div></div><figure><img src="/source-pages/reading/official-samples/grade3-u1-w1-lesson1-guide.png" alt="Official Benchmark Grade 3 Unit 1 Week 1 Guide to Build, Transfer, and Apply sample showing Lesson 1 Working Together" /><figcaption>Official public sample thumbnail; open the linked PDF for the source.</figcaption></figure></section>
+
+    <footer class="lesson-footer"><a [routerLink]="unitRoute(unit)">← Unit 1 overview</a><a routerLink="/ruchika/grade3/reading">Complete Grade 3 year map</a></footer>
+  </section>
+</main>

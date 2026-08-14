@@ -7,6 +7,25 @@
 - External paths, cloud folders, personal folders, mounted drives, browser data, application data, system areas, and synced storage are denied by default.
 - Full Access means technical capability, not authorization.
 
+## Desktop-First Responsive Scope
+
+- Optimize the application primarily for desktop browsers on common 13-inch and 15-inch Mac display sizes.
+- “Responsive” means supporting different desktop viewport widths unless the user explicitly requests mobile or tablet work.
+- Do not spend time optimizing, testing, or polishing tablet or mobile layouts by default.
+- Perform only minimal small-screen safeguards needed to prevent catastrophic breakage; defer dedicated tablet and mobile design until explicitly requested.
+- Prioritize completing and visually validating the desktop experience before considering smaller-device refinements.
+
+## Educational Source Fidelity
+
+- Treat every statement about an official syllabus, curriculum, program, module or unit sequence, grade-level requirement, learning standard, assessment, reading level, placement, district practice, county guidance, school practice, instructional schedule, or required time allocation as a factual claim.
+- Do not invent, infer, extrapolate, or present an app-authored synthesis as official educational content.
+- Before placing a factual educational claim in application code, UI copy, or documentation, verify it against a directly relevant primary source from the responsible state, county, district, school, government research body, or official framework publisher.
+- Put a direct source link beside the claim in the learner-facing or parent-facing UI whenever that claim is displayed there. A source list on a different page is not sufficient.
+- If an official source does not support a claim, omit the claim. If public sources conflict or appear stale, show the discrepancy and mark the matter unverified instead of choosing or guessing.
+- Clearly label app-authored explanations, examples, passages, questions, and practice activities as original supplemental material—not official Baker, Moreland, SCCOE, California, Benchmark Advance, assessment-provider, or publisher content.
+- Creativity is allowed inside clearly labeled supplemental explanations and practice activities. Creativity is not allowed when stating what the official curriculum, syllabus, standards, assessment program, school, district, county, or state requires.
+- Before declaring educational-content work complete, maintain and validate traceability from each displayed factual claim to its exact primary source and implementation location.
+
 ## Agent-Control Policy
 
 - Agent-control files and settings are security-sensitive, including any current or future instruction, policy, configuration, tool, connector, automation, hook, memory, permission, or mechanism that changes agent behavior.

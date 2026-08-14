@@ -6,7 +6,7 @@ APP_DIR="${GRADE3_APP_DIR:-$GRADE3_ROOT/interactive-grade3-app}"
 PORT="${GRADE3_PORT:-4220}"
 CHECK_HOST="${GRADE3_CHECK_HOST:-127.0.0.1}"
 STARTUP_TIMEOUT="${GRADE3_STARTUP_TIMEOUT:-120}"
-READY_URL="http://${CHECK_HOST}:${PORT}/ruchika-grade3/"
+READY_URL="http://${CHECK_HOST}:${PORT}/ruchika/grade3"
 
 if ! command -v curl >/dev/null 2>&1; then
   echo "Error: curl is required to verify the Grade 3 app." >&2

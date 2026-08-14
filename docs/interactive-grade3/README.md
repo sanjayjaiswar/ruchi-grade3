@@ -12,6 +12,10 @@ The active implementation direction is the problem-set-centered Lesson 12 pilot.
 
 Older documents in this folder remain useful for workspace rules, source rules, app history, and reusable implementation patterns. They are not controlling when they conflict with the new Lesson 12 pilot requirement.
 
+2026-08-13 multi-subject portal update:
+
+Milestones 1 and 2 are implemented and validated. `/ruchika/grade3` is the Grade 3 portal homepage, `/ruchika/grade3/math` renders the unchanged Eureka Math application, and `/ruchika-grade3` home and deep links remain compatible. `/ruchika/grade3/reading` exposes the verified 2017 California-edition Benchmark Advance Grade 3 publisher scope: 10 units, 30 weeks, 70 publisher-named selections, and exact PDF-page citations. Moreland and Baker confirm the program but do not publicly confirm current Grade 3 pacing. The 150 repository-authored practice drafts are quarantined from the active Unit path pending authorized material-level validation. The Math search baseline remains 7 modules, 35 topics, 152 lessons, and 673 Blank activities.
+
 This folder is the planning and execution control center for the Grade 3 interactive Eureka Math learning app.
 
 The app must be built inside this Grade3 workspace only:
@@ -29,6 +33,10 @@ The EdZilla projects are references only. Do not edit them for this work:
 
 ## Documents
 
+- [../active-work.md](../active-work.md): Lightweight index of active, paused, and blocked repository work.
+- [../work-items/grade3-multi-subject-learning-portal.md](../work-items/grade3-multi-subject-learning-portal.md): Durable status, decisions, remaining work, and resume instructions for the multi-subject portal.
+- [grade3-learning-portal-architecture.md](grade3-learning-portal-architecture.md): Approved route hierarchy, shell boundaries, non-regression contract, migration gates, Reading research boundary, and rollback rule.
+- [../reading/README.md](../reading/README.md): Reading year-curriculum research, architecture, source boundary, and validation entry point.
 - [requirements.md](requirements.md): Product, curriculum, interaction, scope, and acceptance requirements.
 - [problem-set-source-requirements.md](problem-set-source-requirements.md): Source-of-truth requirements for Concept source pages, Problem Set Blank/Solved authored visuals, no visible PDF/source pages in Blank/Solved, Summary source mapping, and live UI validation.
 - [design-spec.md](design-spec.md): UI, UX, visual component, lesson screen, and interaction design requirements.
@@ -57,3 +65,4 @@ The EdZilla projects are references only. Do not edit them for this work:
 10. Keep reusable lesson and Problem Set CSS shared; add module/lesson-specific CSS only for true customization.
 11. Track work in these docs before and during implementation.
 12. Do not modify `AGENTS.md` or other agent-control files unless explicitly authorized.
+13. Preserve the working `/ruchika-grade3` Math application until the additive portal migration passes every documented route, behavior, and visual regression gate.

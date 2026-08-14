@@ -23,7 +23,9 @@ Status: Active planning
 | First vertical slice | Done | Module 1 overview + Module 1 Lesson 1 implemented in `interactive-grade3-app/`. |
 | App folder | Done | Angular app created at `interactive-grade3-app/`. |
 | Separate module pages | Done | Routes `/modules/m1` through `/modules/m7` render module-specific topic/lesson maps. |
-| Context route prefix | Done | App canonical URL is `/ruchika-grade3/...`; old `/modules/...` routes redirect into the context. |
+| Context route prefix | Done | Preferred Math URL is `/ruchika/grade3/math/...`; `/ruchika-grade3/...` and older `/modules/...` routes preserve compatibility through corresponding redirects. |
+| Multi-subject information architecture | Milestones 1 and 2 done | `/ruchika/grade3` is the portal homepage, the exact existing Math app is available at `/ruchika/grade3/math`, `/ruchika-grade3` compatibility is preserved, and Reading uses its own 10-unit/150-lesson year structure at `/ruchika/grade3/reading`. |
+| Eureka Math change firewall | Required | Route composition may change, but portal and Reading work must not modify existing Math data, components, renderers, styles, source mappings, UI, or behavior. |
 | Page titles | Done | Home, module, and lesson pages set specific browser titles instead of generic route titles. |
 | All lesson routes | Done | All 152 Grade 3 lesson routes render source-backed objective flows. |
 | Curriculum drawer navigation | Done | Left drawer expands/collapses globally and module-by-module. |
@@ -145,6 +147,28 @@ Status: Active planning
 | Module 6 problem-set-centered replication | P0 remediated; richer interaction polish remains | Codex | Module 6 Lessons 1-9 now expose Concept / Problem Set / Summary and `Blank | Solved` controls with authored graph/tape/ruler/line-plot displays and Teacher Edition-derived concept animations. The correction pass fixed Lesson 6 `53 1/2`, Lesson 7 thresholds/absent-student wording, Teacher Edition table-shaped source data for Lessons 7-9, and Lesson 9 grass counts. Follow-up P0 remediation masks the Lesson 2 Blank equation chip as `____ x ____ = ____`; `npm run build` and full Chrome click/regression QA passed. |
 | Module 7 problem-set-centered verification | P0 remediated; deep visual authoring remains | Codex | Module 7 no longer uses Teacher Edition page images as the primary solved problem-card surface. Follow-up remediation keeps Teacher Edition Answer Key evidence in Solved mode and uses Blank templates/source prompts in Blank mode. `npm run build` passed, and Chrome validation in the authorized `Grade3` tab group clicked all 34 lessons through Problem Set Blank/Solved and every Problem bookmark with 127 cards, 65 Blank source images, 57 Solved source images, active animations, 0 Blank equation leaks, 0 broken images, and 0 console errors. Remaining gap: author exact item-specific diagrams/manipulatives for all shape, ruler, grid, data, and constructed-figure items. |
 
+### Phase 5: Incremental Multi-Subject Portal
+
+This phase is governed by `grade3-learning-portal-architecture.md` and `../work-items/grade3-multi-subject-learning-portal.md`. It must proceed additively so the current Eureka Math app remains usable throughout the migration.
+
+| Task | Status | Owner | Validation |
+| --- | --- | --- | --- |
+| Document incremental portal architecture and Math change firewall | Done | Codex | Homepage-first sequencing, separate Reading milestones, immutable Math boundary, validation gates, and rollback are recorded. No app source changed. |
+| Capture current Math build and route baseline | Done | Codex | Pre-change production build passed; local search validation confirmed 7 modules, 35 topics, 152 lessons, and 673 Blank activities. |
+| Add Grade 3 homepage and route-only Math restructure | Done | Codex | `/ruchika/grade3` shows active Math and placeholder Reading cards; `/ruchika/grade3/math` reuses the existing Math shell; legacy routes map to corresponding new destinations. |
+| Revalidate unchanged Math after route restructure | Done | Codex | Post-change build/search checks passed; browser validated 152 new plus 152 legacy lesson routes with 0 failures, representative route state, and 0 console errors. |
+| Add persistent portal navigation | Done | Codex | Portal, Reading, and Math use a compact `R` link for return to `/ruchika/grade3`; Math keeps the control at the far-right, accessible as `All subjects`, preserving lesson-navigation space. Screenshot-backed Chrome QA verified the return from a deep Math route. |
+| Complete visual portal-to-Math click-through | Done | Codex | Inspected saved screenshots for homepage, Math home, Module 1, Lesson 1 Concept, Blank/Solved Problem Set, Summary, search, and homepage return. Clicked all 7 module entries, Next/Previous, search/result, Problem bookmark, and `All subjects`; legacy root/deep URLs redirected correctly and console errors were 0. |
+| Align portal and Reading typography to compact reference | Done | Codex | Adopted the Sanjay reference H1/H2/H3/body scale only; preserved Grade 3 colors, gradients, cards, icons, and layout. Side-by-side desktop QA plus 390px mobile screenshots passed with no overflow or console errors; Math was visually rechecked and no Math implementation file changed. |
+| Use full width and remove portal/Reading layout waste | Done | Codex | Expanded both frames to 1760px, tightened intro/card height, removed forced uppercase labels, balanced the seven-strand grid, and fixed narrow Reading header overflow. Screenshot comparison and live Chrome checks passed at 1840/519/390/320px with zero console errors; Math stayed sealed. |
+| Complete Reading research package | Done | Codex | California, SCCOE, Moreland, Baker, WWC, F&P, i-Ready, and Lexile primary sources are documented under `docs/reading/`; confidential local evidence stayed local and no student values were copied. |
+| Add Reading & Language Arts independently | Done | Codex | `/ruchika/grade3/reading` has its own year, Sources, Unit, and Lesson routes; the portal card is active and Math remains unchanged. |
+| Replace generic Reading shell with official year structure | Done | Codex | Moreland Benchmark Advance adoption and the publisher Grade 3 scope control 10 unit titles, 30 official weeks, 70 named selections, and their genre, publisher Lexile-label, reading, word-study, and writing metadata. |
+| Add useful source-anchored Reading practice | Done and validated | Codex | The rejected five-phase generator was replaced by 150 explicit practices. Each names its within-week school selection(s), binds to one exact published weekly focus, requests a concrete evidence product, and supplies a separate quality check. All 70 official selections are used; no invented passage, official lesson title, answer, or score is presented. |
+| Enforce Reading educational source fidelity | Done | Codex | Removed unsupported timing, invented starter texts, generic Library architecture, and cryptic codes. Current official claims link to Moreland/CDE/Baker/the publisher scope; the supplemental practice boundary is visible. |
+| Validate Reading year-curriculum replacement | Done | Codex | Build, 10/30/70/150 registry, 70-of-70 PDF title match, all 160 live routes, response/checklist state, selector and navigation clicks, compatibility redirects, 1920 desktop visuals, same-input comparison, unchanged Math search baseline, Math entry, and portal return passed. |
+| Add richer portal organization | Not started | Codex | Subject maintenance and progress/resume entry points are introduced one small change at a time after Math and Reading are stable. |
+
 ## 4. Backlog
 
 ### Deep Lesson Authoring Backlog
@@ -200,6 +224,20 @@ Status: Active planning
 
 | Date | Validation | Result | Notes |
 | --- | --- | --- | --- |
+| 2026-08-13 | Multi-subject portal documentation verification | Passed | New local documentation links resolve, new files pass the trailing-whitespace check, and the documentation phase made no application-source or runtime-route changes. |
+| 2026-08-13 | Homepage-first sequencing review | Passed | Tracker and controlling portal docs now seal the current Math implementation and separate homepage, Reading, Reading enhancement, and portal-organization milestones. |
+| 2026-08-13 | Pre-change portal baseline | Passed | `npm run build` and `npm run validate:local-search` passed with 7 modules, 35 topics, 152 lessons, and 673 Blank activities. |
+| 2026-08-13 | Portal homepage visual and interaction check | Passed | `/ruchika/grade3` rendered the subject homepage; Math was the only active subject link and Reading remained a non-navigating placeholder. |
+| 2026-08-13 | Complete old/new lesson route parity | Passed | Authorized Chrome session checked 152 preferred lesson routes and 152 legacy lesson routes; 304 routes passed with 0 failures. |
+| 2026-08-13 | Portal/Math route-state regression | Passed | Root redirect, Math card, module, legacy search query, Concept, Summary, Blank, Solved, anchored problem, titles, shell visibility, and 0 console errors passed. |
+| 2026-08-13 | Portal navigation visual regression | Passed | The far-right portal control was reduced to a 42-pixel home icon with accessible label and tooltip `All subjects`. It returned to the homepage with both subject cards; the Math brand continued to return to Math home, Reading remained a placeholder, and console errors remained at 0. |
+| 2026-08-13 | Reading V1 production and search validation | Passed | Production build completed without warnings; local search remained 7 modules, 35 topics, 152 lessons, and 673 Blank activities. |
+| 2026-08-13 | Retired Reading prototype QA | Superseded | Home/Learn/Library/Levels and the invented texts were tested before rejection and removal; this is not the current baseline. |
+| 2026-08-13 | Post-Reading Math regression | Passed | Portal Math entry and a legacy Module 5 Lesson 4 Solved deep link rendered at canonical Math routes with the existing shell and 0 browser console errors. |
+| 2026-08-13 | Reading fact/source traceability | Passed | Added `docs/reading/grade3-reading-traceability.md`; reconciled the Baker/Moreland program-name distinction, added the official CAASPP ELA reporting source, linked every discussed framework from the app, and mapped each material fact to a decision and implementation surface. |
+| 2026-08-13 | Retired Reading prototype visual review | Superseded | The generic prototype screenshots are historical and do not validate the current year experience. |
+| 2026-08-13 | Desktop-first final portal/navigation review | Passed | At `1280 × 800` and `1728 × 1000`, visually verified the full-width portal identity, compact white subject intro, unchanged subject cards, labeled blue Reading tabs, and `R` portal-return links. Clicked all Reading routes plus Math and a legacy Solved deep link; build, 7/35/152/673 search baseline, zero overflow, and zero browser errors passed. |
+| 2026-08-13 | Reading source-fidelity remediation | Superseded by year rebuild | The partial generic remediation was replaced by the complete 10-unit, 30-week, 70-selection curriculum implementation. |
 | 2026-06-18 | Workspace file scan | Passed | Grade3 contains source PDFs and `tmp/req.txt`. |
 | 2026-06-18 | Git status check | Not a git repo | No git worktree/branch exists in Grade3. |
 | 2026-06-18 | Reference project inspection | Passed | EdZilla Angular/design references identified read-only. |
@@ -302,6 +340,8 @@ Status: Active planning
 
 | Date | Change |
 | --- | --- |
+| 2026-08-13 | Built the first Reading prototype; its invented fiction/informational/poetry texts and Library/Levels structure were subsequently rejected and removed. Current status is recorded in Phase 5 and `design-qa.md`. |
+| 2026-08-13 | Implemented and validated the Grade 3 portal homepage, non-navigating Reading placeholder, route-only placement of the exact working Math app beneath `/math`, and legacy Math URL compatibility. All 304 preferred/legacy lesson routes passed; Reading research has not started. |
 | 2026-06-18 | Created planning docs package under `docs/interactive-grade3/`. |
 | 2026-06-18 | Implemented Angular app skeleton, Module 1 overview, structured curriculum data, and interactive Module 1 Lesson 1. |
 | 2026-06-18 | Added separate module pages for Modules 1-7 and split Module 1 Lesson 1 into 12 small screens. |

@@ -3,6 +3,67 @@
 Date: 2026-06-18
 Status: Historical baseline; current implementation plan is the Lesson 12 pilot addendum and research docs
 
+2026-08-13 multi-subject portal addendum:
+
+The approved next product boundary is a Grade 3 learner portal with separate Eureka Math and Reading & Language Arts subject areas.
+
+Use the following as the controlling portal-migration documents:
+
+```text
+docs/interactive-grade3/grade3-learning-portal-architecture.md
+docs/work-items/grade3-multi-subject-learning-portal.md
+```
+
+The target hierarchy is `/ruchika/grade3`, with the existing Eureka Math application mounted unchanged at `/ruchika/grade3/math` and Reading & Language Arts added later at `/ruchika/grade3/reading`. This is a route-only restructure around a sealed Math application, not a Math refactor.
+
+The next implementation milestone is intentionally limited to:
+
+1. capture the current `/ruchika-grade3` Math build and route baseline;
+2. add only the `/ruchika/grade3` homepage;
+3. mount the existing Math shell unchanged at `/ruchika/grade3/math` and make the homepage Math card open it;
+4. keep `/ruchika-grade3` home and deep links compatible with their corresponding Math destinations;
+5. re-run the complete Math build and old/new route regression checks.
+
+Do not add Reading or introduce broad shared navigation in this milestone. Route definitions and new portal-only files may change, but existing Math implementation files remain untouched. Reading is the next independent milestone, followed by incremental Reading enhancement. Portal-wide organization such as richer section cards and maintained progress/resume entry points comes later, after the earlier layers are stable.
+
+This addendum changes portal sequencing and shell planning only. It does not supersede the Eureka Math curriculum, source-fidelity, lesson, or validation requirements recorded below and in the Math task tracker.
+
+2026-08-13 Milestone 1 implementation result:
+
+- Added an isolated Grade 3 portal homepage at `/ruchika/grade3`.
+- Added an active Eureka Math card and a non-navigating Reading & Language Arts placeholder.
+- Mounted the existing sealed Math shell at `/ruchika/grade3/math` without editing Math pages, data, components, templates, renderers, styles, source mappings, or learner behavior.
+- Added precise compatibility from `/ruchika-grade3` home, search, module, lesson, section, and Problem Set mode routes to corresponding new Math destinations.
+- Updated local start/restart reporting so the portal homepage is primary while Math and legacy URLs remain visible.
+- Pre-change and post-change production builds passed.
+- Pre-change and post-change local search validation passed with 7 modules, 35 topics, 152 lessons, and 673 Blank activities.
+- Authorized browser QA passed the homepage, Math-card handoff, root route, module, legacy search query, Concept, Summary, Blank, Solved, anchored problem, titles, shell visibility, and 0 console errors.
+- Complete browser route parity passed: 152 preferred lesson routes plus 152 legacy lesson routes, 304 total, 0 failures.
+- Added a compact 42-pixel home icon at the far-right of the Math top bar, accessible as `All subjects`, and verified it from Math routes back to the Grade 3 subject homepage without reducing lesson-navigation space unnecessarily.
+- Completed screenshot-backed Chrome validation of the portal-to-Math flow, every module entry, Lesson 1 Concept/Blank/Solved/Summary, Next/Previous, search and a search result, a Problem bookmark, legacy URL redirects, and the return to all subjects with 0 console errors.
+- Reading research and implementation remain out of scope until the completed homepage is reviewed.
+
+2026-08-13 Milestone 2 Reading V1 result:
+
+- Completed and documented primary-source research for California Grade 3 ELA/Literacy, SCCOE, Moreland, Baker, foundational literacy, F&P, i-Ready, Lexile, district benchmarks, and CAASPP.
+- Kept confidential local assessment evidence local and Git-ignored; no student-specific value was copied into source, documentation, screenshots, or external tools.
+- Historical prototype only: first activated `/ruchika/grade3/reading` with Home/Learn/Library/Levels routes; those surfaces are now removed or compatibility redirects.
+- Added a `word -> read -> talk -> write` practice model spanning word analysis, fluency, vocabulary, literary and informational comprehension, writing/language, speaking/listening, and research.
+- Historical prototype only: three invented passages were added and then removed after source-fidelity review.
+- Kept F&P, i-Ready, Lexile, benchmarks, and CAASPP distinct and intentionally omitted unofficial crosswalks and fabricated passage levels.
+- Activated the portal Reading card without changing Math curriculum data, Math lesson components, renderers, styles, source mappings, or learner behavior.
+- Passed the production build, unchanged local-search baseline, visual Reading click-through, portal return, Math entry, legacy Math deep-link redirect, and browser console checks.
+
+2026-08-13 Milestone 2 year-curriculum replacement result:
+
+- Superseded the generic Home/Learn/Library/Levels Reading V1 and removed its three invented starter texts from the active experience.
+- Verified Moreland’s board-adopted TK–5 ELA program as Benchmark Advance, adopted 2017–18.
+- Verified the edition-matched Grade 3 sequence as 10 exact units, 30 official weeks, and 70 publisher-named selections.
+- Added Year overview, Curriculum sources, Unit, and Lesson routes with compatibility redirects from the removed generic routes.
+- Replaced the initial five-phase home-practice generator with 150 explicit, distinct practice records. Every activity stays inside its verified official unit/week/selection coordinates, exposes the exact published focus it uses, asks for a concrete evidence product, and includes a separate quality check. The learner uses the named school text; no invented passage or official lesson title remains.
+- Corrected current Moreland assessment research: F&P Early Literacy TK–2; SRI grades 3–8 twice yearly; ELA benchmarks grades 3–8 three times yearly; CAASPP grades 3–8 annually.
+- Passed production build, Reading registry validation, all 160 unit/lesson routes, five interaction states, source/portal/redirect click-through, same-viewport visual comparison, zero-overflow checks, zero browser errors, unchanged Math search baseline, portal Math entry, and a legacy Math deep link.
+
 2026-07-03 addendum:
 
 Before further implementation, use `problem-set-centered-lesson-design.md` as the controlling plan for the Lesson 12 pilot. The next implementation phase is not a broad redesign across all lessons. It is a Lesson 12 vertical slice that replaces the current tab-heavy lesson experience with a compact concept section, official Problem Set solved explanations, source-backed visuals/animations, and a short summary.

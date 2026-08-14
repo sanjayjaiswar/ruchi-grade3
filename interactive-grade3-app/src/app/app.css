@@ -69,6 +69,33 @@
   min-width: 0;
 }
 
+.portal-home-link {
+  display: inline-grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--google-blue-strong);
+  text-decoration: none;
+}
+
+.portal-home-icon {
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.portal-home-link:hover,
+.portal-home-link:focus-visible {
+  border-color: var(--google-blue);
+  background: var(--google-blue-soft);
+  color: var(--google-blue-deep);
+  outline: none;
+}
+
 .brand-mark {
   display: inline-grid;
   flex: 0 0 auto;
@@ -319,6 +346,26 @@
   display: none;
 }
 
+.app-shell:has(app-portal-home-page) .topbar,
+.app-shell:has(app-portal-home-page) .curriculum-drawer,
+.app-shell:has(app-reading-home-page) .topbar,
+.app-shell:has(app-reading-home-page) .curriculum-drawer {
+  display: none;
+}
+
+.app-shell:has(app-portal-home-page) .app-layout,
+.app-shell.drawer-is-collapsed:has(app-portal-home-page) .app-layout,
+.app-shell:has(app-reading-home-page) .app-layout,
+.app-shell.drawer-is-collapsed:has(app-reading-home-page) .app-layout {
+  display: block;
+  min-height: 100vh;
+}
+
+.app-shell:has(app-portal-home-page) .app-content,
+.app-shell:has(app-reading-home-page) .app-content {
+  min-height: 100vh;
+}
+
 .curriculum-drawer {
   position: relative;
   z-index: 15;
@@ -494,6 +541,10 @@
     flex: 1 1 100%;
   }
 
+  .portal-home-link {
+    width: 42px;
+  }
+
   .topbar-module-info {
     display: none;
   }
@@ -548,6 +599,11 @@
   .topbar-lesson-nav,
   .topbar-select-field {
     width: 100%;
+  }
+
+  .portal-home-link {
+    justify-self: end;
+    margin-left: 0;
   }
 
   .topbar-tools {

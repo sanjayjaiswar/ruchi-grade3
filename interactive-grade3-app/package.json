@@ -5,6 +5,8 @@
     "ng": "ng",
     "generate:local-search": "node scripts/generate-local-search-index.mjs",
     "validate:local-search": "node scripts/validate-local-search.mjs",
+    "validate:reading-curriculum": "node scripts/validate-reading-curriculum.mjs",
+    "validate:reading-source-readiness": "node scripts/validate-reading-source-readiness.mjs",
     "prestart": "npm run generate:local-search",
     "start": "ng serve --port 4220",
     "prebuild": "npm run generate:local-search",

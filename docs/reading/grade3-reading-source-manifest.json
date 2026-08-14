@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "auditedAt": "2026-08-13",
+  "program": {
+    "district": "Moreland School District",
+    "subject": "English Language Arts",
+    "grade": 3,
+    "adoptedProgram": "Benchmark Advance",
+    "adoptionYear": "2017-18"
+  },
+  "readiness": {
+    "localAdoptionVerified": true,
+    "stateAdoptionVerified": true,
+    "yearMapReady": true,
+    "unitScopeReady": true,
+    "dailyLessonAuthoringReady": false,
+    "boundedOfficialLessonIds": ["u1-w1-l1"],
+    "officialAssessmentAuthoringReady": false,
+    "currentBakerPacingVerified": false
+  },
+  "verifiedSources": [
+    {
+      "id": "moreland-curriculum",
+      "authority": "local-governing",
+      "title": "Moreland School District Board Adopted Curriculum",
+      "url": "https://www.moreland.org/apps/pages/index.jsp?pREC_ID=1021541&type=d&uREC_ID=427284",
+      "controls": ["adopted-program", "grade-band", "adoption-year"]
+    },
+    {
+      "id": "cde-adopted-programs",
+      "authority": "state-governing",
+      "title": "CDE 2015 ELA/ELD SBE-Adopted Programs",
+      "url": "https://www.cde.ca.gov/ci/rl/im/sbeadoptedelaeldprogs.asp",
+      "controls": ["state-adoption-status", "program-type"]
+    },
+    {
+      "id": "cde-program-findings",
+      "authority": "state-governing",
+      "title": "Benchmark Advance Program 2 Report of Findings",
+      "url": "https://www.cde.ca.gov/ci/rl/im/documents/benchmarkprogram2.doc",
+      "sha256": "78ff89ccad126259cff904919b53db6c0e3f0f92c39b05a1be4827035c37b0de",
+      "controls": ["reviewed-program-components", "criteria-findings", "required-corrections"]
+    },
+    {
+      "id": "benchmark-grade3-scope",
+      "authority": "publisher-authored-third-party-hosted-copy",
+      "title": "Benchmark Advance Grade 3 Skills and Strategies Scope and Sequence",
+      "url": "https://static1.squarespace.com/static/64cae4391e09f2159371a541/t/64e660c923b355487a21356e/1692819670477/ELA%2B3rd%2BGrade%2BScope%2B%26%2BSequence.pdf",
+      "created": "2016-12-29",
+      "pageCount": 10,
+      "sha256": "11b8c623819067ea07b226d616ddea718bad4d72949841bf048b44b151e7fb6c",
+      "controls": ["unit-order", "publisher-weeks", "selection-metadata", "scope-columns"],
+      "doesNotControl": ["daily-lessons", "teacher-directions", "student-text", "answers", "assessments", "current-classroom-pacing"]
+    },
+    {
+      "id": "benchmark-grade3-u1w1-program-sample",
+      "authority": "publisher-official-public-sample",
+      "title": "Advancing Language Learning Program Guide — Grade 3 Unit 1 Week 1 sample",
+      "url": "https://onlinepublications.s3.us-east-2.amazonaws.com/BEC-eCom/B8107_ALL_Flyer_lores.pdf",
+      "created": "2020-03-10",
+      "pageCount": 8,
+      "sha256": "191111faa89f9e32fc429d4a5ea5ab630c5b509764d45a6498f788f491ca2a84",
+      "controls": ["u1-w1-pacing-sample", "u1-w1-l1-title", "u1-w1-l1-student-source-and-pages", "u1-w1-l1-reading-objective", "u1-w1-l1-vocabulary", "u1-w1-l1-teacher-sequence", "u1-w1-l1-after-reading-question"],
+      "doesNotControl": ["full-student-passage", "u1-w1-lessons-after-l1", "units-2-through-10-daily-lessons", "official-assessment-answers", "current-classroom-pacing"]
+    }
+  ],
+  "requiredLocalComponents": [
+    {
+      "id": "trs-units-1-2",
+      "title": "Grade 3 Teacher Resource System, Units 1-2",
+      "isbnLead": "9781512522990",
+      "present": false,
+      "requiredFor": "daily-lessons"
+    },
+    {
+      "id": "trs-units-3-4",
+      "title": "Grade 3 Teacher Resource System, Units 3-4",
+      "isbnLead": "9781512523003",
+      "present": false,
+      "requiredFor": "daily-lessons"
+    },
+    {
+      "id": "trs-units-5-6",
+      "title": "Grade 3 Teacher Resource System, Units 5-6",
+      "isbnLead": "9781512523010",
+      "present": false,
+      "requiredFor": "daily-lessons"
+    },
+    {
+      "id": "trs-units-7-8",
+      "title": "Grade 3 Teacher Resource System, Units 7-8",
+      "isbnLead": "9781512523027",
+      "present": false,
+      "requiredFor": "daily-lessons"
+    },
+    {
+      "id": "trs-units-9-10",
+      "title": "Grade 3 Teacher Resource System, Units 9-10",
+      "isbnLead": "9781512523034",
+      "present": false,
+      "requiredFor": "daily-lessons"
+    },
+    {
+      "id": "texts-for-close-reading",
+      "title": "Grade 3 Texts for Close Reading, Units 1-10 or exact authorized digital equivalents",
+      "present": false,
+      "requiredFor": "student-text-and-page-evidence"
+    },
+    {
+      "id": "weekly-unit-assessments",
+      "title": "Grade 3 Weekly and Unit Assessments with teacher scoring/answer material",
+      "present": false,
+      "requiredFor": "official-assessment-practice"
+    },
+    {
+      "id": "informal-assessments",
+      "title": "Grade 3 Informal Assessments and oral-reading Level Screener",
+      "present": false,
+      "requiredFor": "official-informal-assessment-and-level-explanation"
+    },
+    {
+      "id": "lesson-referenced-resources",
+      "title": "Grade 3 writing, language, word-study, leveled-text, Reader's Theater, read-aloud, ELD, and intervention resources referenced by admitted lessons",
+      "present": false,
+      "requiredFor": "referenced-lesson-components"
+    },
+    {
+      "id": "baker-moreland-pacing",
+      "title": "Current Baker or Moreland Grade 3 pacing artifact",
+      "present": false,
+      "requiredFor": "current-classroom-dates-and-order"
+    }
+  ],
+  "releaseRule": "No daily Reading lesson, official-looking assessment, answer, or learner placement may be released until every source required by that claim is admitted, fingerprinted, page-mapped, and visually reviewed. A bounded public sample may release only the exact lesson fields it controls; it does not unlock the remaining year."
+}
