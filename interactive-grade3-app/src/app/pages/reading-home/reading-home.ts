@@ -28,8 +28,13 @@ import {
 } from '../../data/reading-evidence-questions.data';
 import {
   READING_STRATEGY_EXAMPLES,
-  ReadingStrategyExample
+  ReadingStrategyExample,
+  readingStrategyExampleFor
 } from '../../data/reading-strategy-examples.data';
+import {
+  ReadingStudioWeek,
+  UNIT1_READING_STUDIOS
+} from '../../data/reading-enrichment.data';
 import {
   ReadingOfficialLesson,
   WORKING_TOGETHER_LESSON,
@@ -49,6 +54,9 @@ import {
 } from '../../data/reading-learning-system.data';
 
 type ReadingPageKind = 'overview' | 'sources' | 'standards' | 'assessments' | 'levels' | 'unit' | 'lesson' | 'practice';
+type PracticeStage = 'learn' | 'watch' | 'practice' | 'respond';
+type LessonStage = 'before' | 'first-read' | 'reread' | 'respond' | 'source';
+type StandardsDomainId = 'rl' | 'ri' | 'rf' | 'w' | 'sl' | 'l';
 
 @Component({
   selector: 'app-reading-home-page',
@@ -93,6 +101,10 @@ export class ReadingHomePage implements OnDestroy {
   evidenceQuestion: ReadingEvidenceQuestion = READING_EVIDENCE_QUESTIONS[0];
   strategyGuide: ReadingStrategyGuide = readingStrategyGuide(READING_EVIDENCE_QUESTIONS[0].strategy);
   strategyExample: ReadingStrategyExample = READING_STRATEGY_EXAMPLES[READING_EVIDENCE_QUESTIONS[0].strategy];
+  selectedWeekNumber = 1;
+  selectedPracticeStage: PracticeStage = 'learn';
+  selectedLessonStage: LessonStage = 'before';
+  selectedStandardDomainId: StandardsDomainId = 'rl';
   modelStep = 1;
   readingActionChecks = [false, false, false];
   practiceSelfChecks = [false, false, false];
@@ -107,6 +119,8 @@ export class ReadingHomePage implements OnDestroy {
   lessonRereadMoves = [false, false, false, false];
   lessonAnswerChecks = [false, false, false];
   lessonAnsweredAloud = false;
+  wordStudyChecks = [false, false, false];
+  writingStudioChecks = [false, false, false];
   private activeEvidenceQuestionId = '';
   private readonly subscriptions = new Subscription();
 
@@ -162,8 +176,8 @@ export class ReadingHomePage implements OnDestroy {
     return `/source-pages/reading/unit-${unit.number}-scope.png`;
   }
 
-  scrollToStandard(domainId: string): void {
-    document.getElementById(`standard-${domainId}`)?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  selectStandardDomain(domainId: StandardsDomainId): void {
+    this.selectedStandardDomainId = domainId;
   }
 
   scrollToCurriculum(): void {
@@ -175,16 +189,27 @@ export class ReadingHomePage implements OnDestroy {
     if (selected) void this.router.navigate(this.unitRoute(selected));
   }
 
-  scrollToWeek(weekNumber: number): void {
-    document.getElementById(`reading-week-${weekNumber}`)?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  selectWeek(weekNumber: number): void {
+    this.selectedWeekNumber = weekNumber;
+    this.readingWeek = this.unit.weeks[weekNumber - 1] ?? this.unit.weeks[0];
+    this.wordStudyChecks = [false, false, false];
+    this.writingStudioChecks = [false, false, false];
   }
 
-  scrollToLessonStage(stageId: string): void {
-    document.getElementById(stageId)?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  selectLessonStage(stage: LessonStage): void {
+    this.selectedLessonStage = stage;
   }
 
-  scrollToPracticeStage(stageId: string): void {
-    document.getElementById(stageId)?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  selectPracticeStage(stage: PracticeStage): void {
+    this.selectedPracticeStage = stage;
+  }
+
+  toggleWordStudyCheck(index: number): void {
+    this.wordStudyChecks[index] = !this.wordStudyChecks[index];
+  }
+
+  toggleWritingStudioCheck(index: number): void {
+    this.writingStudioChecks[index] = !this.writingStudioChecks[index];
   }
 
   showModelStep(step: number): void {
@@ -245,6 +270,22 @@ export class ReadingHomePage implements OnDestroy {
       : null;
   }
 
+  get selectedStandardDomain() {
+    return this.standardsDomains.find((domain) => domain.id === this.selectedStandardDomainId) ?? this.standardsDomains[0];
+  }
+
+  get selectedStandardDomainCode(): string {
+    return this.selectedStandardDomain.id.toUpperCase();
+  }
+
+  get selectedWeek(): ReadingWeek {
+    return this.unit.weeks[this.selectedWeekNumber - 1] ?? this.unit.weeks[0];
+  }
+
+  get selectedStudio(): ReadingStudioWeek | null {
+    return this.unit.id === 'u1' ? UNIT1_READING_STUDIOS[this.selectedWeekNumber] ?? null : null;
+  }
+
   private syncRoute(): void {
     const url = this.router.url.split(/[?#]/)[0];
     const unitId = this.route.snapshot.paramMap.get('unitId');
@@ -268,8 +309,9 @@ export class ReadingHomePage implements OnDestroy {
       this.unit = routedUnit;
       this.evidenceQuestion = routedQuestion;
       this.strategyGuide = readingStrategyGuide(routedQuestion.strategy);
-      this.strategyExample = READING_STRATEGY_EXAMPLES[routedQuestion.strategy];
+      this.strategyExample = readingStrategyExampleFor(routedQuestion.id, routedQuestion.strategy);
       this.readingWeek = routedUnit.weeks[routedQuestion.weekNumber - 1];
+      this.selectedPracticeStage = 'learn';
       this.title.setTitle(`Question ${routedQuestion.questionNumber}: ${routedQuestion.selectionTitle} | Grade 3 Reading`);
     } else if (routedUnit && Number.isInteger(questionValue) && questionValue > 0) {
       void this.router.navigate(this.unitRoute(routedUnit));
@@ -280,6 +322,7 @@ export class ReadingHomePage implements OnDestroy {
       this.officialLesson = admittedLesson;
       this.lessonNumber = admittedLesson.lessonNumber;
       this.readingWeek = routedUnit.weeks[admittedLesson.weekNumber - 1];
+      this.selectedLessonStage = 'before';
       this.title.setTitle(`${admittedLesson.title} | Grade 3 Reading & Language Arts`);
     } else if (routedUnit && Number.isInteger(lessonValue) && lessonValue > 0) {
       this.notice = 'That daily lesson is not published because an edition-matched official lesson source has not been admitted yet.';
@@ -290,10 +333,14 @@ export class ReadingHomePage implements OnDestroy {
       this.unit = routedUnit;
       this.lessonNumber = 1;
       this.readingWeek = routedUnit.weeks[0];
+      this.selectedWeekNumber = 1;
+      this.wordStudyChecks = [false, false, false];
+      this.writingStudioChecks = [false, false, false];
       this.notice = history.state?.sourceGateNotice ?? '';
       this.title.setTitle(`Unit ${routedUnit.number}: ${routedUnit.title} | Grade 3 Reading & Language Arts`);
     } else if (url.endsWith('/standards')) {
       this.pageKind = 'standards';
+      this.selectedStandardDomainId = 'rl';
       this.title.setTitle('California Grade 3 ELA standards | Ruchika Learning Portal');
     } else if (url.endsWith('/assessments')) {
       this.pageKind = 'assessments';

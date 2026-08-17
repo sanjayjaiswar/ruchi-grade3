@@ -27,7 +27,7 @@
       <a routerLink="/ruchika/grade3/reading/sources" [class.active]="pageKind === 'sources'" [attr.aria-current]="pageKind === 'sources' ? 'page' : null">Sources</a>
     </nav>
 
-    <a class="portal-link" routerLink="/ruchika/grade3" aria-label="Ruchika Learning Portal — Grade 3" title="All Grade 3 subjects">R</a>
+    <a class="portal-link" routerLink="/ruchika/grade3" aria-label="Grade 3 home" title="All Grade 3 subjects"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.2 12 4l9 7.2v8.3a.5.5 0 0 1-.5.5H15v-6H9v6H3.5a.5.5 0 0 1-.5-.5z" /></svg></a>
   </header>
 
   <section *ngIf="pageKind === 'overview'" class="reading-section overview-page">
@@ -76,8 +76,8 @@
     <section class="standards-visual-overview" aria-labelledby="standards-visual-title">
       <header><div><span>Portal visual study guide · derived from the official standards below</span><h2 id="standards-visual-title">Six ways a Grade 3 learner works with language</h2><p>Choose a visual pathway, then read every official California expectation in that section.</p></div><a [href]="learningSources.californiaStandards" target="_blank" rel="noopener">Verify the complete CDE source ↗</a></header>
       <div class="standard-visual-grid">
-        <article *ngFor="let domain of standardsDomains" [class]="'standard-visual-card is-' + domain.id">
-          <button type="button" (click)="scrollToStandard(domain.id)"><span class="domain-symbol" aria-hidden="true">{{ domain.id === 'rl' ? '📖' : domain.id === 'ri' ? '🔎' : domain.id === 'rf' ? '🔤' : domain.id === 'w' ? '✍' : domain.id === 'sl' ? '💬' : '🧩' }}</span><span><small>Explore</small><strong>{{ domain.name }}</strong></span><b aria-hidden="true">↓</b></button>
+        <article *ngFor="let domain of standardsDomains" [class]="'standard-visual-card is-' + domain.id" [class.active]="domain.id === selectedStandardDomainId">
+          <button type="button" (click)="selectStandardDomain(domain.id)" [attr.aria-pressed]="domain.id === selectedStandardDomainId"><span class="domain-code" aria-hidden="true">{{ domain.id }}</span><span><small>{{ domain.id === selectedStandardDomainId ? 'Selected' : 'Explore' }}</small><strong>{{ domain.name }}</strong></span><b aria-hidden="true">{{ domain.id === selectedStandardDomainId ? '✓' : '→' }}</b></button>
           <div *ngIf="domain.id === 'rl'" class="mini-model story-model"><span>Character</span><i>→</i><span>Challenge</span><i>→</i><span>Choice</span><i>→</i><span>Message</span></div>
           <div *ngIf="domain.id === 'ri'" class="mini-model idea-model"><span>Main idea</span><div><i>Detail</i><i>Feature</i><i>Connection</i></div></div>
           <div *ngIf="domain.id === 'rf'" class="mini-model word-model"><span>prefix</span><b>+</b><span>base word</span><b>+</b><span>suffix</span><i>→ read accurately</i></div>
@@ -90,14 +90,14 @@
       </div>
     </section>
 
-    <section class="code-guide" aria-label="How to read a California standards code"><div><strong>How to read an official code</strong><p><b>RL</b> means Reading Literature, <b>3</b> means Grade 3, and <b>1</b> identifies the numbered expectation. The full expectation is always shown; the code is never used by itself.</p></div><span>RL . 3 . 1</span></section>
+    <section class="code-guide" aria-label="How to read a California standards code"><div><strong>How to read an official code</strong><p><b>{{ selectedStandardDomainCode }}</b> means {{ selectedStandardDomain.name }}, <b>3</b> means Grade 3, and <b>1</b> identifies the numbered expectation. The full expectation is always shown; the code is never used by itself.</p></div><span>{{ selectedStandardDomainCode }} . 3 . 1</span></section>
 
-    <nav class="domain-jump" aria-label="Grade 3 standards domains"><button type="button" *ngFor="let domain of standardsDomains" (click)="scrollToStandard(domain.id)">{{ domain.name }}</button></nav>
+    <nav class="domain-jump" aria-label="Grade 3 standards domains" role="tablist"><button type="button" *ngFor="let domain of standardsDomains" (click)="selectStandardDomain(domain.id)" [class.active]="domain.id === selectedStandardDomainId" [attr.aria-selected]="domain.id === selectedStandardDomainId" role="tab">{{ domain.name }}</button></nav>
 
-    <section *ngFor="let domain of standardsDomains" [id]="'standard-' + domain.id" class="standard-domain">
-      <div class="domain-heading"><div><span>Official California standards area</span><h2>{{ domain.name }}</h2><p><strong>In everyday language:</strong> {{ domain.plainLanguage }}</p></div><a [href]="domain.source" target="_blank" rel="noopener" [attr.aria-label]="'Verify ' + domain.name + ' in CDE'">Open this official CDE area ↗</a></div>
+    <section class="standard-domain active-standard-domain" role="tabpanel">
+      <div class="domain-heading"><div><span>Official California standards area</span><h2>{{ selectedStandardDomain.name }}</h2><p><strong>In everyday language:</strong> {{ selectedStandardDomain.plainLanguage }}</p></div><a [href]="selectedStandardDomain.source" target="_blank" rel="noopener" [attr.aria-label]="'Verify ' + selectedStandardDomain.name + ' in California source'">Open this official California area ↗</a></div>
       <div class="cluster-grid">
-        <article *ngFor="let cluster of domain.clusters" class="standard-cluster"><h3>{{ cluster.name }}</h3><ul><li *ngFor="let standard of cluster.standards"><p>{{ standard.summary }}</p><strong>Official California reference: {{ standard.code }}</strong><small *ngIf="standard.note">{{ standard.note }}</small></li></ul></article>
+        <article *ngFor="let cluster of selectedStandardDomain.clusters" class="standard-cluster"><h3>{{ cluster.name }}</h3><ul><li *ngFor="let standard of cluster.standards"><p>{{ standard.summary }}</p><strong>Official California reference: {{ standard.code }}</strong><small *ngIf="standard.note">{{ standard.note }}</small></li></ul></article>
       </div>
     </section>
 
@@ -168,13 +168,13 @@
 
     <nav class="unit-week-nav" aria-label="Unit weeks">
       <span>Choose a week</span>
-      <button type="button" *ngFor="let week of unit.weeks" (click)="scrollToWeek(week.number)">Week {{ week.number }} <small>{{ weekQuestions(week).length }} official questions</small></button>
+      <button type="button" *ngFor="let week of unit.weeks" (click)="selectWeek(week.number)" [class.active]="week.number === selectedWeekNumber" [attr.aria-pressed]="week.number === selectedWeekNumber">Week {{ week.number }} <small>{{ weekQuestions(week).length }} official questions</small></button>
     </nav>
 
     <section class="unit-concept-map" aria-label="Visual map of the three official publisher weeks">
       <header><div><span>Visual unit path · labels come from the official publisher scope</span><h2>Read → Notice the skill → Use evidence</h2></div><a [href]="scopePage(unit)" target="_blank" rel="noopener">Verify this unit path ↗</a></header>
       <div class="unit-path-track">
-        <button type="button" *ngFor="let week of unit.weeks; let index = index" (click)="scrollToWeek(week.number)">
+        <button type="button" *ngFor="let week of unit.weeks; let index = index" (click)="selectWeek(week.number)" [class.active]="week.number === selectedWeekNumber" [attr.aria-pressed]="week.number === selectedWeekNumber">
           <span class="week-orb">{{ week.number }}</span>
           <span class="week-path-copy"><small>Week {{ week.number }}</small><strong>{{ week.selections[0].title }}</strong><b>{{ weekQuestions(week).length }} official evidence questions</b></span>
           <span *ngIf="index < 2" class="path-arrow" aria-hidden="true">→</span>
@@ -182,8 +182,9 @@
       </div>
     </section>
 
-    <section class="week-learning-path" aria-label="Unit learning weeks">
-      <article *ngFor="let week of unit.weeks" [id]="'reading-week-' + week.number" class="learning-week-card">
+    <section class="week-learning-path" aria-label="Selected unit learning week">
+      <ng-container *ngFor="let week of unit.weeks">
+      <article *ngIf="week.number === selectedWeekNumber" [class]="'learning-week-card selected-week-panel week-' + week.number">
         <header class="learning-week-heading">
           <div><span>Week {{ week.number }} of 3</span><h2>{{ week.selections[0].title }}</h2><p>{{ week.selections.length }} official selections · {{ weekQuestions(week).length }} official evidence questions</p></div>
           <a class="start-week" [routerLink]="practiceRoute(unit, weekQuestions(week)[0].questionNumber)">Start Week {{ week.number }} →</a>
@@ -211,9 +212,39 @@
           </section>
         </div>
 
-        <div class="week-language-row"><div><span>Word study</span><strong>{{ week.wordStudy }}</strong></div><div><span>Writing</span><strong>{{ week.writingFocus }}</strong></div></div>
+        <div class="week-language-row"><div><span>Official word-study focus</span><strong>{{ week.wordStudy }}</strong><a [href]="scopePage(unit)" target="_blank" rel="noopener">Verify in publisher scope ↗</a></div><div><span>Official writing focus</span><strong>{{ week.writingFocus }}</strong><a [href]="scopePage(unit)" target="_blank" rel="noopener">Verify in publisher scope ↗</a></div></div>
+
+        <section *ngIf="selectedStudio" class="unit-one-studios" aria-label="Unit 1 supplemental Word Study and Writing studios">
+          <header class="studio-section-heading">
+            <div><span>Original supplemental learning · Unit 1 pilot</span><h2>Practice the verified weekly focuses</h2><p>The publisher focus controls what is practiced. The examples and learner moves below are original portal teaching, grounded in California’s Grades 2–3 literacy guidance.</p></div>
+            <div><a [href]="scopePage(unit)" target="_blank" rel="noopener">Publisher focus ↗</a><a [href]="teachingSources.californiaLiteracy" target="_blank" rel="noopener">California literacy guidance ↗</a></div>
+          </header>
+
+          <div class="studio-grid">
+            <article class="word-study-studio">
+              <span class="studio-label">Word Study studio</span>
+              <h3>{{ week.wordStudy }}</h3>
+              <p>{{ selectedStudio.wordStudy.explanation }}</p>
+              <div class="word-sort-board">
+                <section *ngFor="let group of selectedStudio.wordStudy.groups"><strong>{{ group.label }}</strong><div><span *ngFor="let word of group.words">{{ word }}</span></div></section>
+              </div>
+              <div class="studio-checks"><button type="button" *ngFor="let check of selectedStudio.wordStudy.checks; let index = index" [class.complete]="wordStudyChecks[index]" (click)="toggleWordStudyCheck(index)"><span>{{ wordStudyChecks[index] ? '✓' : index + 1 }}</span>{{ check }}</button></div>
+              <p class="studio-boundary">The word examples are original supplemental material. They are not reproduced from the Benchmark Teacher Resource System.</p>
+            </article>
+
+            <article class="writing-studio">
+              <span class="studio-label">Writing studio</span>
+              <h3>{{ selectedStudio.writing.title }}</h3>
+              <p>Use the school writing prompt or the learner’s chosen topic. This organizer supports the official weekly writing focus without replacing or inventing the publisher prompt.</p>
+              <ol class="writing-process"><li *ngFor="let step of selectedStudio.writing.steps; let index = index"><span>{{ index + 1 }}</span><p>{{ step }}</p></li></ol>
+              <div class="studio-checks"><button type="button" *ngFor="let check of selectedStudio.writing.checks; let index = index" [class.complete]="writingStudioChecks[index]" (click)="toggleWritingStudioCheck(index)"><span>{{ writingStudioChecks[index] ? '✓' : index + 1 }}</span>{{ check }}</button></div>
+              <p class="studio-boundary">The organizer is original supplemental material. The official weekly focus and California writing expectations remain the controlling references.</p>
+            </article>
+          </div>
+        </section>
         <a *ngIf="unit.id === 'u1' && week.number === 1" class="admitted-lesson-link" [routerLink]="lessonRoute(unit, 1)"><span>Official teacher sample available</span><strong>Lesson 1: Working Together</strong><small>Open the complete teacher-sourced lesson →</small></a>
       </article>
+      </ng-container>
     </section>
 
     <footer class="unit-footer"><a *ngIf="previousUnitRoute" [routerLink]="previousUnitRoute">← Previous unit</a><a routerLink="/ruchika/grade3/reading">Complete year map</a><a *ngIf="nextUnitRoute" [routerLink]="nextUnitRoute">Next unit →</a></footer>
@@ -234,11 +265,11 @@
       <a *ngFor="let question of unitQuestions()" [routerLink]="practiceRoute(unit, question.questionNumber)" [class.active]="question.questionNumber === evidenceQuestion.questionNumber" [attr.aria-current]="question.questionNumber === evidenceQuestion.questionNumber ? 'step' : null">{{ question.questionNumber }}</a>
     </nav>
 
-    <nav class="reading-studio-path" aria-label="Reading lesson stages">
-      <button type="button" (click)="scrollToPracticeStage('learn-the-move')"><span>1</span><strong>Learn</strong><small>Know the reading move</small></button>
-      <button type="button" (click)="scrollToPracticeStage('watch-the-thinking')"><span>2</span><strong>Watch</strong><small>Follow a reader's thinking</small></button>
-      <button type="button" (click)="scrollToPracticeStage('practice-with-text')"><span>3</span><strong>Practice</strong><small>Work in the school text</small></button>
-      <button type="button" (click)="scrollToPracticeStage('say-your-response')"><span>4</span><strong>Respond</strong><small>Say it with evidence</small></button>
+    <nav class="reading-studio-path" aria-label="Reading lesson stages" role="tablist">
+      <button type="button" (click)="selectPracticeStage('learn')" [class.active]="selectedPracticeStage === 'learn'" [attr.aria-selected]="selectedPracticeStage === 'learn'" role="tab"><span>1</span><strong>Learn</strong><small>Know the reading move</small></button>
+      <button type="button" (click)="selectPracticeStage('watch')" [class.active]="selectedPracticeStage === 'watch'" [attr.aria-selected]="selectedPracticeStage === 'watch'" role="tab"><span>2</span><strong>Watch</strong><small>Follow a reader's thinking</small></button>
+      <button type="button" (click)="selectPracticeStage('practice')" [class.active]="selectedPracticeStage === 'practice'" [attr.aria-selected]="selectedPracticeStage === 'practice'" role="tab"><span>3</span><strong>Practice</strong><small>Work in the school text</small></button>
+      <button type="button" (click)="selectPracticeStage('respond')" [class.active]="selectedPracticeStage === 'respond'" [attr.aria-selected]="selectedPracticeStage === 'respond'" role="tab"><span>4</span><strong>Respond</strong><small>Say it with evidence</small></button>
     </nav>
 
     <section class="teaching-method-source">
@@ -247,7 +278,7 @@
       <div class="method-source-links"><a [href]="teachingSources.iesComprehension" target="_blank" rel="noopener">IES K–3 guidance ↗</a><a [href]="teachingSources.benchmarkProgram" target="_blank" rel="noopener">Benchmark program model ↗</a><a [href]="teachingSources.californiaLiteracy" target="_blank" rel="noopener">California Grades 2–3 literacy ↗</a></div>
     </section>
 
-    <section id="learn-the-move" class="practice-learning-layout">
+    <section *ngIf="selectedPracticeStage === 'learn'" class="practice-learning-layout active-stage-panel" role="tabpanel">
       <article class="strategy-teaching-card">
         <span class="learning-label">1 · Learn the reading move</span>
         <h2>{{ strategyGuide.title }}</h2>
@@ -264,14 +295,33 @@
           <div><strong>Publisher source visible here</strong><p>This prompt is transcribed from the Benchmark Text Evidence Questions page for Unit {{ unit.number }}.</p><a [href]="questionSourcePage(unit)" target="_blank" rel="noopener">Open the exact publisher page · PDF p. {{ unit.number }} ↗</a></div>
         </div>
       </article>
+      <div class="stage-panel-actions"><span>First understand the reading move and the exact official question.</span><button type="button" (click)="selectPracticeStage('watch')">Continue to Watch →</button></div>
     </section>
 
-    <section id="watch-the-thinking" class="strategy-workspace">
+    <section *ngIf="selectedPracticeStage === 'watch'" class="strategy-workspace active-stage-panel" role="tabpanel">
       <header class="strategy-workspace-header">
         <div><span>2 · Watch a reader think</span><h2>{{ strategyExample.title }}</h2><p>The passage and think-aloud are original supplemental teaching material. They demonstrate the reading move without supplying an answer to the Benchmark question.</p></div>
       </header>
 
       <div class="example-source-card"><span>Original demonstration text</span><p>{{ strategyExample.sourceText }}</p><strong>{{ strategyExample.question }}</strong></div>
+
+      <div *ngIf="strategyExample.visualKind" [class]="'question-specific-visual ' + strategyExample.visualKind">
+        <div class="question-specific-copy"><span>Question-specific model</span><strong>{{ strategyExample.visualCaption }}</strong><small>This model matches the kind of visual named by the official question; its places, events, and details are original supplemental material.</small></div>
+        <svg *ngIf="strategyExample.visualKind === 'map'" class="map-schematic" viewBox="0 0 480 170" role="img" aria-label="Original schematic map showing North Creek joining Pine River before the river reaches Milltown">
+          <path class="map-water river" d="M25 88 C110 58 175 110 255 82 S390 52 455 78" />
+          <path class="map-water creek" d="M184 16 C190 48 218 58 255 82" />
+          <circle class="map-town-dot" cx="384" cy="74" r="8" /><circle class="map-town-ring" cx="384" cy="74" r="16" />
+          <text x="32" y="126">Pine River</text><text x="112" y="28">North Creek</text><text x="350" y="44">Milltown</text><text class="map-note" x="260" y="151">Water joins before reaching the town →</text>
+        </svg>
+        <div *ngIf="strategyExample.visualKind === 'timeline'" class="event-timeline" role="img" aria-label="Original timeline from a crosswalk request to approval and painting">
+          <div><span>March</span><strong>Families request a crosswalk</strong></div><i aria-hidden="true">→</i><div><span>April</span><strong>Council approves it</strong></div><i aria-hidden="true">→</i><div><span>May</span><strong>Crosswalk is painted</strong></div>
+        </div>
+        <svg *ngIf="strategyExample.visualKind === 'photograph'" class="photo-reading-frame" viewBox="0 0 480 190" role="img" aria-label="Original visual stand-in showing library steps beside a ramp and handrail">
+          <rect class="photo-sky" x="4" y="4" width="472" height="182" rx="9" /><rect class="photo-building" x="80" y="26" width="320" height="128" rx="4" /><rect class="photo-door" x="214" y="52" width="58" height="102" />
+          <path class="photo-steps" d="M178 154 h128 m-116 10 h104 m-92 10 h80" /><path class="photo-ramp" d="M55 174 L178 136 L178 154 L65 186" /><path class="photo-rail" d="M60 160 L176 124 M60 160 L60 178 M176 124 L176 144" />
+          <text x="292" y="176">ramp + handrail</text><text class="photo-label" x="16" y="24">Original visual stand-in</text>
+        </svg>
+      </div>
 
       <div class="think-aloud-controls" role="group" aria-label="Reader think-aloud steps">
         <button type="button" [class.active]="modelStep === 1" [class.complete]="modelStep > 1" (click)="showModelStep(1)"><span>1</span>Read</button>
@@ -280,7 +330,7 @@
         <button type="button" [class.active]="modelStep === 4" (click)="showModelStep(4)"><span>4</span>Explain</button>
       </div>
 
-      <div class="strategy-model-canvas" [attr.data-strategy]="evidenceQuestion.strategy">
+      <div class="strategy-model-canvas" [attr.data-strategy]="evidenceQuestion.strategy" [attr.data-visual-kind]="strategyExample.visualKind ?? 'general'">
         <div *ngFor="let label of strategyExample.visualLabels; let index = index" class="model-step">
           <span>{{ index + 1 }}</span><strong>{{ label }}</strong>
           <p *ngIf="modelStep > index + 1" class="revealed-thinking">{{ strategyExample.modelThinking[index] }}</p>
@@ -291,9 +341,10 @@
 
       <div *ngIf="modelStep === 4" class="reader-think-aloud-response"><span>A reader explains</span><strong>{{ strategyExample.modelResponse }}</strong><small>This is a think-aloud for the original demonstration text—not an answer to Official Question {{ evidenceQuestion.questionNumber }}.</small></div>
       <button *ngIf="modelStep < 4" type="button" class="continue-thinking" (click)="showModelStep(modelStep + 1)">Continue the think-aloud →</button>
+      <div class="stage-panel-actions"><button type="button" class="secondary" (click)="selectPracticeStage('learn')">← Back to Learn</button><span>Reveal the complete think-aloud before applying the move.</span><button type="button" (click)="selectPracticeStage('practice')">Continue to Practice →</button></div>
     </section>
 
-    <section id="practice-with-text" class="evidence-builder" [attr.data-strategy]="evidenceQuestion.strategy">
+    <section *ngIf="selectedPracticeStage === 'practice'" class="evidence-builder active-stage-panel" [attr.data-strategy]="evidenceQuestion.strategy" role="tabpanel">
       <div class="evidence-builder-heading"><span>3 · Practice with guidance</span><h2>Use the move while reading {{ evidenceQuestion.selectionTitle }}</h2><p>Keep the school text open. The prompts organize your thinking; every detail must come from the named Benchmark selection.</p></div>
       <div class="question-purpose-card"><div><span>My reading focus</span><strong>{{ evidenceQuestion.learningGoal }}</strong></div><div><span>Official question</span><strong>{{ evidenceQuestion.prompt }}</strong></div></div>
       <div class="tap-evidence-board">
@@ -304,12 +355,14 @@
           </button>
         </div>
       </div>
+      <div class="stage-panel-actions"><button type="button" class="secondary" (click)="selectPracticeStage('watch')">← Back to Watch</button><span>Use only evidence from the open school text.</span><button type="button" (click)="selectPracticeStage('respond')">Continue to Respond →</button></div>
     </section>
 
-    <section id="say-your-response" class="independent-response">
+    <section *ngIf="selectedPracticeStage === 'respond'" class="independent-response active-stage-panel" role="tabpanel">
       <div><span>4 · Respond without typing</span><h2>Say your answer and point to the evidence</h2><p>Answer the official question aloud. Point to the strongest evidence in the school text while you explain the connection.</p></div>
       <div class="speak-response"><div><span>Use this speaking frame</span><strong>{{ strategyGuide.responseFrame }}</strong><small>Replace the blanks aloud with evidence from the school text.</small></div><button type="button" [class.complete]="answeredAloud" (click)="answeredAloud = !answeredAloud">{{ answeredAloud ? '✓ I said my answer' : 'I said my answer aloud' }}</button></div>
       <div class="practice-checks"><strong>Tap after you say it</strong><button type="button" *ngFor="let check of strategyGuide.checkLabels; let index = index" [class.complete]="practiceSelfChecks[index]" (click)="togglePracticeCheck(index)"><span>{{ practiceSelfChecks[index] ? '✓' : index + 1 }}</span>{{ check }}</button></div>
+      <div class="stage-panel-actions"><button type="button" class="secondary" (click)="selectPracticeStage('practice')">← Back to Practice</button><span>Finish by checking the explanation, not by guessing an official answer.</span></div>
     </section>
 
     <section class="practice-source-boundary"><div><span>Source boundary</span><strong>Official curriculum and question; portal-authored tap-and-speak teaching</strong><p>The unit, week, selection, learning focus, and question come from the verified Benchmark sources. The three tap moves and spoken-response frame are original portal teaching supports. No official answer or learner score is inferred.</p></div><div><a [href]="scopePage(unit)" target="_blank" rel="noopener">Unit scope ↗</a><a [href]="questionSourcePage(unit)" target="_blank" rel="noopener">Question card ↗</a></div></section>
@@ -322,36 +375,40 @@
 
     <section class="material-gate"><div><span>Before you begin</span><h2>Open the school text</h2><p>The official lesson uses <strong>{{ officialLesson.title }}</strong> in <strong>{{ officialLesson.studentBook }}, {{ officialLesson.studentPages }}</strong>. The portal guides the same lesson; it does not replace or invent the passage.</p></div><button type="button" class="gate-action" [class.complete]="lessonBookOpen" (click)="lessonBookOpen = !lessonBookOpen">{{ lessonBookOpen ? '✓ Pages 4–5 are open' : 'I have pages 4–5 open' }}</button></section>
 
-    <nav class="lesson-stage-nav" aria-label="Lesson sections"><button type="button" (click)="scrollToLessonStage('before-reading')">1. Before reading</button><button type="button" (click)="scrollToLessonStage('first-read')">2. First read</button><button type="button" (click)="scrollToLessonStage('reread')">3. Reread</button><button type="button" (click)="scrollToLessonStage('show-understanding')">4. Show understanding</button><button type="button" (click)="scrollToLessonStage('lesson-source')">Official source</button></nav>
+    <nav class="lesson-stage-nav" aria-label="Lesson sections" role="tablist"><button type="button" (click)="selectLessonStage('before')" [class.active]="selectedLessonStage === 'before'" role="tab">1. Before reading</button><button type="button" (click)="selectLessonStage('first-read')" [class.active]="selectedLessonStage === 'first-read'" role="tab">2. First read</button><button type="button" (click)="selectLessonStage('reread')" [class.active]="selectedLessonStage === 'reread'" role="tab">3. Reread</button><button type="button" (click)="selectLessonStage('respond')" [class.active]="selectedLessonStage === 'respond'" role="tab">4. Show understanding</button><button type="button" (click)="selectLessonStage('source')" [class.active]="selectedLessonStage === 'source'" role="tab">Official source</button></nav>
 
-    <section id="before-reading" class="lesson-stage before-reading-stage">
+    <section *ngIf="selectedLessonStage === 'before'" class="lesson-stage before-reading-stage active-stage-panel" role="tabpanel">
       <div class="stage-heading"><span>1</span><div><small>Official teacher sequence</small><h2>Read the title. Study the picture and caption.</h2><p>The Benchmark guidance asks the learner to explain what “working together” means, describe what is visible, and predict how people in the reading will work together.</p></div></div>
       <div class="teaching-model-note"><strong>Portal teaching organizer</strong><span>Use the publisher picture and caption in the school book for the actual lesson evidence.</span></div>
       <div class="lesson-tap-grid" aria-label="Before-reading actions"><button type="button" *ngFor="let label of ['I read the title', 'I studied the publisher picture and caption', 'I said my prediction aloud']; let index = index" [class.complete]="lessonBeforeMoves[index]" (click)="toggleLessonBeforeMove(index)"><span>{{ lessonBeforeMoves[index] ? '✓' : index + 1 }}</span><strong>{{ label }}</strong></button></div>
       <div class="oral-prompt"><span>Say your prediction</span><strong>“I predict the people will work together by ___ because the picture or caption shows ___.”</strong><small>Point to the publisher picture or caption while you speak.</small></div>
+      <div class="stage-panel-actions"><span>Use the school text for the title, picture, and caption.</span><button type="button" (click)="selectLessonStage('first-read')">Continue to First read →</button></div>
     </section>
 
-    <section id="first-read" class="lesson-stage first-read-stage">
+    <section *ngIf="selectedLessonStage === 'first-read'" class="lesson-stage first-read-stage active-stage-panel" role="tabpanel">
       <div class="stage-heading"><span>2</span><div><small>Official teacher sequence</small><h2>Read paragraph 1 and notice the key words.</h2><p>Stop when needed to make sense of the terms. These seven words are the exact Key Vocabulary named by the official Lesson 1 sample.</p></div></div>
       <div class="vocabulary-grid"><button type="button" *ngFor="let word of officialLesson.keyVocabulary; let index = index" [class.complete]="vocabularyFound[index]" (click)="toggleVocabulary(index)"><span>{{ vocabularyFound[index] ? '✓' : 'Find' }}</span><strong>{{ word }}</strong><small>Tap when you locate it in the school text</small></button></div>
       <div class="cognate-note"><strong>The official sample also identifies these cognates:</strong><span *ngFor="let cognate of officialLesson.cognates">{{ cognate }}</span></div>
       <button type="button" class="stage-action" [class.complete]="readParagraph" (click)="readParagraph = !readParagraph">{{ readParagraph ? '✓ Paragraph 1 read and words checked' : 'I read paragraph 1 and checked the words' }}</button>
+      <div class="stage-panel-actions"><button type="button" class="secondary" (click)="selectLessonStage('before')">← Back</button><span>Locate every word in the official school text.</span><button type="button" (click)="selectLessonStage('reread')">Continue to Reread →</button></div>
     </section>
 
-    <section id="reread" class="lesson-stage reread-stage">
+    <section *ngIf="selectedLessonStage === 'reread'" class="lesson-stage reread-stage active-stage-panel" role="tabpanel">
       <div class="stage-heading"><span>3</span><div><small>Official teacher sequence</small><h2>Reread the last two sentences of paragraph 1.</h2><p>Circle <strong>sandbags</strong>. Then use the picture on page 5 to discuss how the sandbags were used and what it means to keep the floodwater out.</p></div></div>
       <div class="teaching-model-note"><strong>Portal teaching model</strong><span>This organizer explains the source direction. Use the publisher picture on page 5 for evidence.</span></div>
       <div class="lesson-tap-grid four" aria-label="Rereading actions"><button type="button" *ngFor="let label of ['I reread the last two sentences', 'I found and circled sandbags', 'I studied the publisher picture on page 5', 'I explained the evidence aloud']; let index = index" [class.complete]="lessonRereadMoves[index]" (click)="toggleLessonRereadMove(index)"><span>{{ lessonRereadMoves[index] ? '✓' : index + 1 }}</span><strong>{{ label }}</strong></button></div>
       <div class="oral-prompt"><span>Explain what the evidence shows</span><strong>“The sandbags helped by ___ . I know because the words or picture show ___.”</strong><small>Use only the official school text and page 5 picture.</small></div>
+      <div class="stage-panel-actions"><button type="button" class="secondary" (click)="selectLessonStage('first-read')">← Back</button><span>Reread and connect words with the publisher picture.</span><button type="button" (click)="selectLessonStage('respond')">Continue to Show understanding →</button></div>
     </section>
 
-    <section id="show-understanding" class="lesson-stage response-stage">
+    <section *ngIf="selectedLessonStage === 'respond'" class="lesson-stage response-stage active-stage-panel" role="tabpanel">
       <div class="stage-heading"><span>4</span><div><small>Official after-reading question</small><h2>How did the people in Fargo work together to solve a problem?</h2><p>Answer only after reading. Use a detail from the text or picture so the answer is controlled by the official selection.</p></div></div>
       <div class="lesson-speak-panel"><div><span>Say the answer aloud</span><strong>“The people worked together by ___ . I know because page ___ shows ___.”</strong><small>Point to the evidence as you say it.</small></div><button type="button" [class.complete]="lessonAnsweredAloud" (click)="lessonAnsweredAloud = !lessonAnsweredAloud">{{ lessonAnsweredAloud ? '✓ I said my answer' : 'I said my answer aloud' }}</button></div>
       <div class="answer-check"><strong>Tap after you say it</strong><button type="button" *ngFor="let label of ['I answered how the people worked together', 'I named the problem', 'I pointed to evidence on pages 4–5']; let index = index" [class.complete]="lessonAnswerChecks[index]" (click)="toggleLessonAnswerCheck(index)"><span>{{ lessonAnswerChecks[index] ? '✓' : index + 1 }}</span>{{ label }}</button></div>
+      <div class="stage-panel-actions"><button type="button" class="secondary" (click)="selectLessonStage('reread')">← Back</button><span>Complete the response with evidence from pages 4–5.</span><button type="button" (click)="selectLessonStage('source')">Review the official source →</button></div>
     </section>
 
-    <section id="lesson-source" class="official-lesson-source"><div><span class="source-badge">Source of truth</span><h2>Official Benchmark lesson evidence</h2><p><strong>{{ officialLesson.sourceLabel }}</strong></p><p>{{ officialLesson.sourceBoundary }}</p><small>{{ officialLesson.sourceFingerprint }}</small><div class="source-actions"><a [href]="officialLesson.sourceUrl" target="_blank" rel="noopener">Open official Benchmark PDF ↗</a><a [href]="scopePage(unit)" target="_blank" rel="noopener">Open official Unit 1 scope ↗</a></div></div><figure><img src="/source-pages/reading/official-samples/grade3-u1-w1-lesson1-guide.png" alt="Official Benchmark Grade 3 Unit 1 Week 1 Guide to Build, Transfer, and Apply sample showing Lesson 1 Working Together" /><figcaption>Official public sample thumbnail; open the linked PDF for the source.</figcaption></figure></section>
+    <section *ngIf="selectedLessonStage === 'source'" class="official-lesson-source active-stage-panel" role="tabpanel"><div><span class="source-badge">Source of truth</span><h2>Official Benchmark lesson evidence</h2><p><strong>{{ officialLesson.sourceLabel }}</strong></p><p>{{ officialLesson.sourceBoundary }}</p><small>{{ officialLesson.sourceFingerprint }}</small><div class="source-actions"><a [href]="officialLesson.sourceUrl" target="_blank" rel="noopener">Open official Benchmark PDF ↗</a><a [href]="scopePage(unit)" target="_blank" rel="noopener">Open official Unit 1 scope ↗</a></div><div class="stage-panel-actions"><button type="button" class="secondary" (click)="selectLessonStage('respond')">← Back to response</button></div></div><figure><img src="/source-pages/reading/official-samples/grade3-u1-w1-lesson1-guide.png" alt="Official Benchmark Grade 3 Unit 1 Week 1 Guide to Build, Transfer, and Apply sample showing Lesson 1 Working Together" /><figcaption>Official public sample thumbnail; open the linked PDF for the source.</figcaption></figure></section>
 
     <footer class="lesson-footer"><a [routerLink]="unitRoute(unit)">← Unit 1 overview</a><a routerLink="/ruchika/grade3/reading">Complete Grade 3 year map</a></footer>
   </section>

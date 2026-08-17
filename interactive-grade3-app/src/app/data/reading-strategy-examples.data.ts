@@ -7,6 +7,8 @@ export type ReadingStrategyExample = {
   visualLabels: [string, string, string];
   modelThinking: [string, string, string];
   modelResponse: string;
+  visualKind?: 'map' | 'timeline' | 'photograph';
+  visualCaption?: string;
 };
 
 // These short examples are original portal teaching material. They demonstrate a
@@ -110,3 +112,45 @@ export const READING_STRATEGY_EXAMPLES: Record<ReadingStrategy, ReadingStrategyE
     modelResponse: 'The words create a peaceful image of silver moonlight stretching across a still lake.'
   }
 };
+
+// A broad strategy is not always a sufficiently close teaching model. These
+// question-specific examples remain original supplemental material, but match
+// the kind of visual reasoning explicitly named by the admitted Benchmark
+// question. They do not reproduce the school text, image, map, or answer.
+export const READING_QUESTION_EXAMPLES: Record<string, ReadingStrategyExample> = {
+  'u1-q2': {
+    title: 'Read location and direction on a map',
+    sourceText: 'A paragraph says Milltown sometimes floods after heavy rain. A simple map places Milltown beside Pine River, just below the point where North Creek joins it.',
+    question: 'What does the map add to the paragraph?',
+    visualLabels: ['Locate the town and water', 'Read how the places connect', 'Explain the added risk'],
+    modelThinking: ['Milltown is beside Pine River and downstream from North Creek.', 'Water from the creek joins the river before the river reaches the town.', 'The map shows why extra water could reach Milltown after heavy rain.'],
+    modelResponse: 'The map adds that Milltown is beside the river and downstream from a creek, so water from both places can move toward the town.',
+    visualKind: 'map',
+    visualCaption: 'Original schematic: North Creek joins Pine River before the river reaches Milltown.'
+  },
+  'u1-q3': {
+    title: 'Combine words with a timeline',
+    sourceText: 'A paragraph says neighbors kept working until their street became safer. A timeline shows: March—families request a crosswalk; April—the council approves it; May—the crosswalk is painted.',
+    question: 'What message do the paragraph and timeline create together?',
+    visualLabels: ['Read the words', 'Trace change across time', 'State the shared message'],
+    modelThinking: ['The neighbors continue working toward a safer street.', 'The timeline shows their request moving from an idea to approval and action.', 'Working together and staying involved can improve a community.'],
+    modelResponse: 'Together, the paragraph and timeline show that people can improve their community by working together and continuing to act.',
+    visualKind: 'timeline',
+    visualCaption: 'Original timeline: request → approval → completed crosswalk.'
+  },
+  'u1-q4': {
+    title: 'Use a photograph to add visible evidence',
+    sourceText: 'A paragraph says volunteers made the library entrance easier to use. A photograph shows a new ramp beside the front steps and a wide handrail leading to the door.',
+    question: 'How does the photograph deepen the information?',
+    visualLabels: ['Read the paragraph', 'Study visible details', 'Explain what the image adds'],
+    modelThinking: ['The paragraph says the entrance became easier to use.', 'The photograph shows the ramp, its location, and the handrail.', 'The image makes the improvement concrete by showing exactly what changed.'],
+    modelResponse: 'The photograph adds visible details of the new ramp and handrail, showing exactly how the entrance became easier to use.',
+    visualKind: 'photograph',
+    visualCaption: 'Original photo description: front steps beside a ramp and handrail.'
+  }
+};
+
+export const readingStrategyExampleFor = (
+  questionId: string,
+  strategy: ReadingStrategy
+): ReadingStrategyExample => READING_QUESTION_EXAMPLES[questionId] ?? READING_STRATEGY_EXAMPLES[strategy];
